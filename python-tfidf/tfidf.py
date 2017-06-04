@@ -38,27 +38,34 @@ def tokenizePath(path):
 def fit(corpusPath):
     token_dict = tokenizePath(corpusPath)
     tfidf = TfidfVectorizer(tokenizer=tokenize, stop_words='english')
+    print("--- start fit transform ---\n")
     tfidf.fit_transform(token_dict.values())
+    print("--- fit transform ended ---\n")
     return tfidf
 
 def findFeatures(corpusPath, rootPath):
+    print("---- do the fitting ----\n")
     tfidf = fit(corpusPath=corpusPath)
+    print("--- analyze root path ---\n")
     for subdir, dirs, files in os.walk(rootPath):
         for file in files:
             file_path = subdir + os.path.sep + file
             if file_path.endswith("utf8"):
-                file_str = fileString(file_path)
-                file_response = tfidf.transform([file_str])
-                feature_names = tfidf.get_feature_names()
+                out_file_path = file_path + ".csv"
+                if not os.path.isfile(out_file_path):
+                    print("--> " + out_file_path)
+                    file_str = fileString(file_path)
+                    file_response = tfidf.transform([file_str])
+                    feature_names = tfidf.get_feature_names()
 
-                f = {}
-                for col in file_response.nonzero()[1]:
-                    f[feature_names[col]] = file_response[0, col]
+                    f = {}
+                    for col in file_response.nonzero()[1]:
+                        f[feature_names[col]] = file_response[0, col]
 
-                out_file = open(file_path + ".csv", 'w')
-                sf = sorted(f, key=f.__getitem__, reverse=True)
-                for k in sf:
-                    print(k + "\t" + str(f[k]), file=out_file)
+                    out_file = open(out_file_path, 'w')
+                    sf = sorted(f, key=f.__getitem__, reverse=True)
+                    for k in sf:
+                        print(k + "\t" + str(f[k]), file=out_file)
 
 
-findFeatures(corpusPath='/Users/owidder/dev/iteragit/nge/f2-all', rootPath='/Users/owidder/dev/iteragit/nge/f2-all/oci/InkassoServer/AblaufServer')
+findFeatures(corpusPath='/Users/owidder/dev/iteragit/nge/f2-all', rootPath='/Users/owidder/dev/iteragit/nge/f2-all')
