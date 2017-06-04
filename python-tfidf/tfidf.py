@@ -61,4 +61,4 @@ def findFeatures(corpusPath, rootPath):
                     print(k + "\t" + str(f[k]), file=out_file)
 
 
-findFeatures(corpusPath='/Users/owidder/dev/iteragit/nge/f2', rootPath='/Users/owidder/dev/iteragit/nge/f2')
+findFeatures(corpusPath='/Users/owidder/dev/iteragit/nge/f2-all', rootPath='/Users/owidder/dev/iteragit/nge/f2-all/oci/InkassoServer/AblaufServer')
