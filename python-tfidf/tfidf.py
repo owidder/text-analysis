@@ -10,7 +10,6 @@ path = '/Users/owidder/dev/iteragit/nge/f2'
 token_dict = {}
 stemmer = PorterStemmer()
 
-
 def stem_tokens(tokens, stemmer):
     stemmed = []
     for item in tokens:
@@ -20,12 +19,14 @@ def stem_tokens(tokens, stemmer):
 
 def tokenize(text):
     tokens = nltk.word_tokenize(text)
-    stems = stem_tokens(tokens, stemmer)
-    return stems
+    return tokens
 
 def convert(name):
     s1 = re.sub('(.)([A-Z][a-z]+)', r'\1 \2', name)
     return re.sub('([a-z0-9])([A-Z])', r'\1 \2', s1).lower()
+
+def removeSingleChars(string):
+    return ' '.join([w for w in string.split() if len(w) > 1])
 
 def fileString(file_path):
     shakes = open(file_path, 'r')
@@ -33,7 +34,8 @@ def fileString(file_path):
     no_punctuation = text.translate(string.punctuation)
     only_a_to_z = re.sub('[^A-Za-z ]+', ' ', no_punctuation)
     camel_case_split = convert(only_a_to_z)
-    return camel_case_split
+    camel_case_split_no_single_chars = removeSingleChars(camel_case_split)
+    return camel_case_split_no_single_chars
 
 for subdir, dirs, files in os.walk(path):
     for file in files:
@@ -44,12 +46,17 @@ for subdir, dirs, files in os.walk(path):
 # this can take some time
 tfidf = TfidfVectorizer(tokenizer=tokenize, stop_words='english')
 tfs = tfidf.fit_transform(token_dict.values())
-print(tfidf.get_feature_names())
+
+test_str = fileString('/Users/owidder/dev/eos/inkassosystem.entwicklung/src/oci/InkassoServer/BuchungServer/BuchungServer.cc')
+print(test_str)
+test_resp = tfidf.transform([test_str])
 
 feature_names = tfidf.get_feature_names()
+print(feature_names)
+f = {}
+for col in test_resp.nonzero()[1]:
+    f[feature_names[col]] = test_resp[0, col]
 
-str1 = fileString('/Users/owidder/dev/iteragit/nge/f2/AblaufServer/AblaufNachVerpflichtung.cc-utf8')
-res1 = tfidf.transform([str1])
-
-for col in res1.nonzero()[1]:
-    print(feature_names[col], "\t", res1[0, col])
+sf = sorted(f, key=f.__getitem__)
+for k in sf:
+    print(k + ": " + str(f[k]))
