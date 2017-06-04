@@ -10,7 +10,6 @@ path = '/Users/owidder/dev/iteragit/nge/f2'
 token_dict = {}
 stemmer = PorterStemmer()
 
-
 def stem_tokens(tokens, stemmer):
     stemmed = []
     for item in tokens:
@@ -20,8 +19,7 @@ def stem_tokens(tokens, stemmer):
 
 def tokenize(text):
     tokens = nltk.word_tokenize(text)
-    stems = stem_tokens(tokens, stemmer)
-    return stems
+    return tokens
 
 def convert(name):
     s1 = re.sub('(.)([A-Z][a-z]+)', r'\1 \2', name)
@@ -48,20 +46,17 @@ for subdir, dirs, files in os.walk(path):
 # this can take some time
 tfidf = TfidfVectorizer(tokenizer=tokenize, stop_words='english')
 tfs = tfidf.fit_transform(token_dict.values())
-print(tfidf.get_feature_names())
+
+test_str = fileString('/Users/owidder/dev/eos/inkassosystem.entwicklung/src/oci/InkassoServer/BuchungServer/BuchungServer.cc')
+print(test_str)
+test_resp = tfidf.transform([test_str])
 
 feature_names = tfidf.get_feature_names()
+print(feature_names)
+f = {}
+for col in test_resp.nonzero()[1]:
+    f[feature_names[col]] = test_resp[0, col]
 
-m = {}
-for col in tfs.nonzero()[1]:
-    k = feature_names[col]
-    v = tfs[0, col]
-    if k in m:
-        m[k] += v
-    else:
-        m[k] = v
-
-sm = sorted(m, key=m.__getitem__)
-
-for k in sm:
-    print(k + ": " + str(m[k]))
+sf = sorted(f, key=f.__getitem__)
+for k in sf:
+    print(k + ": " + str(f[k]))
