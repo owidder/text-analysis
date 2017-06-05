@@ -24,12 +24,12 @@
 
 <body>
 
-<script id="subfolders" type="text/x-handlebars-template">
-    <h2>Subfolders</h2>
+<script id="subfolders-script" type="text/x-handlebars-template">
+    <h2>Folder: <code>{{@root.currentFolder}}</code></h2>
     <table>
         {{#each subfolders}}
         <tr>
-            <td><a href="/api/folders/{{this}}">{{this}}</a> </td>
+            <td><h5><a href="?folder={{@root.currentFolder}}/{{this}}">{{this}}</a></h5> </td>
         </tr>
         {{/each}}
     </table>
@@ -38,7 +38,7 @@
 <script src="/js/util/simplePromise.js"></script>
 <script src="/js/util/util.js"></script>
 
-<div id="folders"></div>
+<div id="subfolders"></div>
 
 <script>
 
@@ -47,9 +47,22 @@
 
     var SimplePromise = bottle.container.SimplePromise;
 
-    var currentFolder = bottle.container.util.param("folder", "");
+    var currentFolder = bottle.container.util.param("folder", ".");
 
     var BASE = 'api/folder/';
+
+    function showSubfolders(subfolders) {
+        $("#subfolders").empty();
+        var subfoldersTemplateScript = $("#subfolders-script").html();
+        var subfoldersTemplate = Handlebars.compile(subfoldersTemplateScript);
+        var ctx = {
+            currentFolder: currentFolder,
+            subfolders: subfolders
+        };
+        var subfoldersHtml = subfoldersTemplate(ctx);
+        $("#subfolders").append(subfoldersHtml);
+
+    }
 
     function getSubfolders() {
         var p = new SimplePromise();
@@ -64,7 +77,7 @@
     }
 
     getSubfolders().then(function(data) {
-        $('#folders').html(data);
+        showSubfolders(data);
     })
 
 </script>

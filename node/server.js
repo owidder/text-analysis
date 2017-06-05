@@ -4,6 +4,7 @@ var cors = require('cors');
 var bodyParser = require('body-parser');
 var app = express();
 var fs = require('fs');
+var path = require('path');
 
 var router = express.Router();
 
@@ -16,8 +17,11 @@ app.use(bodyParser.json());
 app.use('/', express.static(__dirname + '/client'));
 
 function readFolder(relFolder) {
-    var absFolder = BASE_FOLDER + '/' + relFolder;
-    return fs.readdirSync(absFolder);
+    var absFolder = path.join(BASE_FOLDER, '/', relFolder);
+    var filesAndSubfolders = fs.readdirSync(absFolder);
+    return filesAndSubfolders.filter(function(fileOrSubfolder) {
+        return fs.lstatSync(path.join(absFolder, '/', fileOrSubfolder)).isDirectory();
+    });
 }
 
 router.get('/folder/*', function (req, res) {
