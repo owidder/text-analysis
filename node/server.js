@@ -39,10 +39,20 @@ router.get('/folder/*', function (req, res) {
 });
 
 router.get('/values/*', function (req, res) {
-    var relFolder = req.originalUrl.substr("/api/values".length+1);
-    res.json({
-        content: readContent(path.join(relFolder, '_.csv'))
+    var relFolder = req.originalUrl.substr("/api/values".length + 1);
+    var content = readContent(path.join(relFolder, '_.csv'));
+    var rows = content.split("\n");
+    var values = [];
+    rows.forEach(function(row) {
+        var parts = row.split("\t");
+        var id = parts[0];
+        var value = parts[1];
+        values.push({
+            id: id,
+            value: value
+        })
     });
+    res.json(values);
 });
 
 app.use('/api', router);
