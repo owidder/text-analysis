@@ -39,4 +39,4 @@ def aggregateFolder(folder_path):
             print(k + "\t" + str(values[k]), file=out_file)
 
 
-aggregateFolder('/Users/owidder/dev/iteragit/nge/f2-all/oci/InkassoServer/AblaufServer/nbproject')
+aggregateFolder('/Users/owidder/dev/iteragit/nge/f2-all')
