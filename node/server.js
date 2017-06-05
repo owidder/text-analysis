@@ -17,11 +17,17 @@ app.use(bodyParser.json());
 app.use('/', express.static(__dirname + '/client'));
 
 function readFolder(relFolder) {
-    var absFolder = path.join(BASE_FOLDER, '/', relFolder);
+    var absFolder = path.join(BASE_FOLDER, relFolder);
     var filesAndSubfolders = fs.readdirSync(absFolder);
     return filesAndSubfolders.filter(function(fileOrSubfolder) {
         return fs.lstatSync(path.join(absFolder, '/', fileOrSubfolder)).isDirectory();
     });
+}
+
+function readContent(relPath) {
+    var absPath = path.join(BASE_FOLDER, relPath);
+    var content = fs.readFileSync(absPath, 'utf8');
+    return content;
 }
 
 router.get('/folder/*', function (req, res) {
@@ -29,6 +35,13 @@ router.get('/folder/*', function (req, res) {
     res.json({
         folder: relFolder,
         content: readFolder(relFolder)
+    });
+});
+
+router.get('/values/*', function (req, res) {
+    var relFolder = req.originalUrl.substr("/api/values".length+1);
+    res.json({
+        content: readContent(path.join(relFolder, '_.csv'))
     });
 });
 
