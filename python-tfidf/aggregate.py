@@ -1,17 +1,17 @@
 import os
-import csv
 
 FOLDER_VALUES_FILE_NAME = '_.csv'
 
 def aggregateValuesInFile(file_path, current_values):
-    csvreader = csv.reader(file_path, delimiter="\t")
-    for row in csvreader:
-        k = row[0]
-        v = row[1]
-        if k in current_values:
-            current_values[v] += k
-        else:
-            current_values[v] = k
+    with open(file_path, 'r') as f:
+        for line in f:
+            kv = line.split("\t")
+            k = kv[0]
+            v = float(kv[1])
+            if k in current_values:
+                current_values[k] += v
+            else:
+                current_values[k] = v
 
 
 def aggregateValuesInSubfolder(subdir_path, current_values):
@@ -33,9 +33,10 @@ def aggregateFolder(folder_path):
         else:
             aggregateValuesInSubfolder(full_path, values)
 
-    out_file = open(folder_path + '/' + FOLDER_VALUES_FILE_NAME, 'w')
-    for k in values.keys():
-        print(k + "\t" + values[k], file=out_file)
+    with open(folder_path + '/' + FOLDER_VALUES_FILE_NAME, 'w') as out_file:
+        keys_sorted_after_values = sorted(values, key=values.__getitem__, reverse=True)
+        for k in keys_sorted_after_values:
+            print(k + "\t" + str(values[k]), file=out_file)
 
 
 aggregateFolder('/Users/owidder/dev/iteragit/nge/f2-all/oci/InkassoServer/AblaufServer/nbproject')
