@@ -43,14 +43,17 @@ router.get('/values/*', function (req, res) {
     var content = readContent(path.join(relFolder, '_.csv'));
     var rows = content.split("\n");
     var values = [];
+    var ctr = 0;
     rows.forEach(function(row) {
         var parts = row.split("\t");
         var id = parts[0];
         var value = parts[1];
-        values.push({
-            id: id,
-            value: value
-        })
+        if(ctr++ < 100) {
+            values.push({
+                id: id,
+                value: value
+            })
+        }
     });
     res.json(values);
 });
