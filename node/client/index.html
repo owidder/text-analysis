@@ -15,9 +15,7 @@
     <script src="/bower_components/d3/d3.js"></script>
     <script src="/bower_components/lodash/dist/lodash.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/pouchdb/dist/pouchdb.js"></script>
     <script src="/bower_components/handlebars/handlebars.js"></script>
-    <script src="/bower_components/socket.io-client/dist/socket.io.js"></script>
 
 
 </head>
@@ -30,6 +28,7 @@
         {{#each subfolders}}
         <tr>
             <td><h5><a href="?folder={{@root.currentFolder}}/{{this}}">{{this}}</a></h5> </td>
+            <td><b><a href="bubble.html?folder={{@root.currentFolder}}/{{this}}">bubble</a></b> </td>
         </tr>
         {{/each}}
     </table>
