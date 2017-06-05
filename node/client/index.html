@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tech-Radar</title>
+
+    <link rel="stylesheet" type="text/css" href="/bower_components/materialize/dist/css/materialize.css"
+          media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/material-icons.css"/>
+
+    <script src="/bower_components/bottlejs/dist/bottle.js"></script>
+    <script>var bottle = new Bottle();</script>
+
+    <script src="/bower_components/d3/d3.js"></script>
+    <script src="/bower_components/lodash/dist/lodash.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/pouchdb/dist/pouchdb.js"></script>
+    <script src="/bower_components/handlebars/handlebars.js"></script>
+    <script src="/bower_components/socket.io-client/dist/socket.io.js"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid kobaltblau" id="app-container">
+    <div class="row">
+        <div class="col s4 center-text">
+            <div class="logo" id="logo">
+            </div>
+            <a onclick="switchTheme()"><i class="material-icons switch">cached</i></a>
+        </div>
+        <div class="col s8 center-block text-center">
+            <h1 id="title">Tech-Radar</h1>
+        </div>
+    </div>
+    <div class="row container_canvas">
+        <div class="col s2 menu left" id="menu-left">
+            <div id="form-segments"></div>
+            <br>
+            <div id="form-rings"></div>
+            <br>
+            <a onclick="reset()" class="waves-effect waves-light btn" id="btn-reset">Reset Radar</a>
+            <div id="send-receive-buttons" class="invisible">
+                <br>
+                <br>
+                <a onclick="sendRadar()" class="waves-effect waves-light btn">Send</a>
+                <br>
+                <br>
+                <a onclick="receiveRadar()" class="waves-effect waves-light btn">Receive</a>
+            </div>
+            <button class="toggle left" onclick="toggleLeftMenu()">
+                <i class="material-icons" id="toggle-left-icon">keyboard_arrow_right</i>
+            </button>
+        </div>
+        <div class="col s8" id="content">
+            <div class="svg"></div>
+        </div>
+        <div class="col s2 menu right" id="menu-right">
+            <div id="form-items"></div>
+            <button class="toggle right" onclick="toggleRightMenu()">
+                <i class="material-icons" id="toggle-right-icon">keyboard_arrow_left</i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script id="input-segments" type="text/x-handlebars-template">
+    <h2>Segments</h2>
+    <table>
+        {{#each segments}}
+        <tr class="input">
+            <td class="input">
+                <input onmouseover="highlightBackgroundOn('{{id}}')"
+                       onmouseout="highlightBackgroundOff()"
+                       onkeyup="segmentNameChanged('{{id}}')"
+                       class="input"
+                       placeholder="Segment name"
+                       id="{{id}}"
+                       type="text"
+                       class="validate"
+                       value="{{name}}">﻿
+            </td>
+            <td class="input">
+                <a onmouseover="highlightBackgroundOn('{{id}}')"
+                   onmouseout="highlightBackgroundOff()"
+                   onclick="removeSegment('{{id}}')" class="input" href="#">
+                    <i class="material-icons">delete_forever</i>
+                </a>
+            </td>
+            <td class="input">
+                <a onmouseover="highlightBackgroundOn('{{id}}')"
+                   onmouseout="highlightBackgroundOff()"
+                   onclick="addSegmentAfterId('{{id}}')" class="input" href="#">
+                    <i class="material-icons">note_add</i>
+                </a>
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+</script>
+
+<script id="input-rings" type="text/x-handlebars-template">
+    <h2>Rings</h2>
+    <table>
+        {{#each rings}}
+        <tr class="input">
+            <td class="input">
+                <input onmouseover="highlightBackgroundOn('{{id}}')"
+                       onmouseout="highlightBackgroundOff()"
+                       onkeyup="ringNameChanged('{{id}}')"
+                       class="input"
+                       placeholder="Ring name"
+                       id="{{id}}"
+                       type="text"
+                       class="validate"
+                       value="{{name}}">
+            </td>
+            <td class="input">
+                <a onmouseover="highlightBackgroundOn('{{id}}')"
+                   onmouseout="highlightBackgroundOff()"
+                   onclick="removeRing('{{id}}')" class="input" href="#">
+                    <i class="material-icons">delete_forever</i>
+                </a>
+            </td>
+            <td class="input">
+                <a onmouseover="highlightBackgroundOn('{{id}}')"
+                   onmouseout="highlightBackgroundOff()"
+                   onclick="addRingAfterId('{{id}}')" class="input" href="#">
+                    <i class="material-icons">note_add</i>
+                </a>
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+</script>
+
+<script id="input-items" type="text/x-handlebars-template">
+    <h2>Trends</h2>
+    <table>
+        {{#each items}}
+        <tr class="input">
+            <td class="input">
+                <input onmouseover="highlightItemsOn('{{id}}')"
+                       onmouseout="highlightItemsOff()"
+                       onkeyup="itemNameChanged('{{id}}')"
+                       class="input"
+                       placeholder="Trend name"
+                       id="{{id}}"
+                       type="text"
+                       class="validate"
+                       value="{{name}}">
+            </td>
+            <td class="input">
+                <a onmouseover="highlightItemsOn('{{id}}')"
+                   onmouseout="highlightItemsOff()"
+                   onclick="removeItem('{{id}}')" class="input" href="#">
+                    <i class="material-icons">delete_forever</i>
+                </a>
+            </td>
+            <td class="input">
+                <a onmouseover="highlightItemsOn('{{id}}')"
+                   onmouseout="highlightItemsOff()"
+                   onclick="addItemAfterId('{{id}}')" class="input" href="#">
+                    <i class="material-icons">note_add</i>
+                </a>
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+</script>
+
+<script>
+    var colors = ["#3732F5"];
+    var color = d3.scaleOrdinal(colors);
+</script>
+
+<script src="/js/util/simplePromise.js"></script>
+<script src="/js/util/util.js"></script>
+<script src="/js/services/dbService.js"></script>
+<script src="/js/services/dbSyncService.js"></script>
+<script src="/js/services/syncService.js"></script>
+<script src="/js/context.js"></script>
+<script src="/js/components/SvgLegend.js"></script>
+<script src="/js/components/Background.js"></script>
+<script src="/js/components/Items.js"></script>
+<script src="/js/components/Field.js"></script>
+<script src="/js/util/SvgToPolar.js"></script>
+
+<script>
+
+    /* gobal $ */
+    /* global bottle */
+
+    bottle.container.context.radarId = bottle.container.util.param("radarId", 1);
+
+    var syncService = bottle.container.SyncService;
+    var field = new bottle.container.Field();
+    var background = new bottle.container.Background(field);
+    var items = new bottle.container.Items(field);
+
+    function segmentNameChanged(id) {
+        var newName = $("#" + id).val();
+        background.changeSegmentName(id, newName);
+    }
+
+    function ringNameChanged(id) {
+        var newName = $("#" + id).val();
+        background.changeRingName(id, newName);
+    }
+
+    function removeSegment(id) {
+        background.removeSegment(id);
+    }
+
+    function removeRing(id) {
+        background.removeRing(id);
+    }
+
+    function addSegmentAfterId(id) {
+        background.addSegmentAfterId(id);
+    }
+
+    function addRingAfterId(id) {
+        background.addRingAfterId(id);
+    }
+
+    function itemNameChanged(id) {
+        var newName = $("#" + id).val();
+        items.changeItemName(id, newName);
+    }
+
+    function addItemAfterId(id) {
+        items.addItemAfterId(id);
+    }
+
+    function removeItem(id) {
+        items.removeItem(id);
+    }
+
+    function highlightBackgroundOn(id) {
+        background.highlightOn(id);
+    }
+
+    function highlightBackgroundOff() {
+        background.highlightOff();
+    }
+
+    function highlightItemsOn(id) {
+        items.highlightOn(id);
+    }
+
+    function highlightItemsOff() {
+        items.highlightOff();
+    }
+
+    function reset() {
+        bottle.container.db.deleteFromDb().then(function () {
+            window.location.reload();
+        }, function () {
+            window.location.reload();
+        });
+        syncService.sendReset();
+    }
+
+    function sendRadar() {
+        bottle.container.db.load().then(function (radar) {
+            bottle.container.server.sendRadar(index).then(function (data) {
+                console.log("sent: " + data);
+            });
+        });
+    }
+
+    function receiveRadar() {
+        bottle.container.server.receiveRadar().then(function (data) {
+            console.log(data);
+        });
+    }
+
+    background.load();
+    items.load();
+
+    if (bottle.container.util.param("sr", 0) == 1) {
+        $("#send-receive-buttons").toggleClass("invisible");
+    }
+
+    syncService.socket.on('reset', function () {
+        reset();
+    });
+
+    function getKbmcColor() {
+        return ["#3732F5"];
+    }
+
+    function getIteratecColor() {
+        return ["#A92183"];
+    }
+
+    function setKbmcLogo() {
+        $.ajax({
+            url: "kbmc.svg",
+            dataType: "text",
+            success: function (data) {
+                $("#logo").html(data);
+            }
+        });
+    }
+
+    function setIteratecLogo() {
+        $.ajax({
+            url: "iteratec.svg",
+            dataType: "text",
+            success: function (data) {
+                $("#logo").html(data);
+            }
+        });
+    }
+
+    function switchTheme() {
+        var container = $("#app-container");
+        var activeThemeIsKbmc = container.attr('class').indexOf('kobaltblau') != -1 ? true : false;
+        var titleElement = $("#title");
+        activeThemeIsKbmc = !activeThemeIsKbmc;
+        titleElement.html(activeThemeIsKbmc ? 'Tech-Radar' : 'Tech-Radar');
+        container.toggleClass('kobaltblau');
+        container.toggleClass('iteratec');
+        window.color = d3.scaleOrdinal(activeThemeIsKbmc ? getKbmcColor() : getIteratecColor());
+        activeThemeIsKbmc ? setKbmcLogo() : setIteratecLogo();
+        background.draw();
+    }
+
+    setKbmcLogo();
+
+    function toggleLeftMenu() {
+        var initial =  $('#toggle-left-icon').html().indexOf('keyboard_arrow_left');
+        $('#menu-left').toggleClass('show-left');
+        initial > -1 ?  $('#toggle-left-icon').html('keyboard_arrow_right') : $('#toggle-left-icon').html('keyboard_arrow_left');
+    }
+
+    function toggleRightMenu () {
+        var initial =  $('#toggle-right-icon').html().indexOf('keyboard_arrow_right');
+        $('#menu-right').toggleClass('show-right');
+        initial > -1 ?  $('#toggle-right-icon').html('keyboard_arrow_left') : $('#toggle-right-icon').html('keyboard_arrow_right');
+    }
+</script>
+</body>
+</html>

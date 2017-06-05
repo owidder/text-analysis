@@ -1,0 +1,1 @@
+Techradar für Sonthofen-WKS
