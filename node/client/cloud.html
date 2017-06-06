@@ -17,6 +17,19 @@
 
 <script>
 
+    function ignoreWord(word) {
+        $.ajax({
+            url: '/api/ignore',
+            type: "POST",
+            data: JSON.stringify({word: word}),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function () {
+                window.location.reload(false);
+            }
+        })
+    }
+
     function drawWordCloud(word_count){
 
         var svg_location = "#chart";
@@ -69,9 +82,12 @@
                 .text(function(d) {
                     return d.key;
                 })
+                .on("click", function (d) {
+                    ignoreWord(d.key);
+                })
                 .append("title")
                 .text(function (d, i) {
-                    return "Rank: " + (i+1);
+                    return d.key + " / Rank: " + (i+1);
                 });
         }
 

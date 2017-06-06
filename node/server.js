@@ -44,12 +44,13 @@ function isIgnored(word) {
 }
 
 function addToIgnore(word) {
-    fs.appendFileSync(IGNORE_FILE_NAME, word);
+    ignoreList.push(word.toLowerCase());
+    fs.appendFileSync(IGNORE_FILE_NAME, "\n" + word);
 }
 
 router.post('/ignore', function (req, res) {
     var word = req.body.word;
-    addToIgnore("\n" + word);
+    addToIgnore(word);
     res.json({status: "ok"});
 });
 
