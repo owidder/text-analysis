@@ -38,6 +38,23 @@ router.get('/folder/*', function (req, res) {
     });
 });
 
+router.get('/values/2/*', function (req, res) {
+    var relFolder = req.originalUrl.substr("/api/values/2".length + 1);
+    var content = readContent(path.join(relFolder, '_.csv'));
+    var rows = content.split("\n");
+    var values = {};
+    var ctr = 0;
+    rows.forEach(function(row) {
+        var parts = row.split("\t");
+        var key = parts[0];
+        var value = parts[1];
+        if(ctr++ < 100) {
+            values[key] = Math.round(value);
+        }
+    });
+    res.json(values);
+});
+
 router.get('/values/*', function (req, res) {
     var relFolder = req.originalUrl.substr("/api/values".length + 1);
     var content = readContent(path.join(relFolder, '_.csv'));
