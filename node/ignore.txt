@@ -1,0 +1,6 @@
+service
+const
+hh
+satz
+process
+die

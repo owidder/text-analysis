@@ -16,6 +16,10 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use('/', express.static(__dirname + '/client'));
 
+var IGNORE_FILE_NAME = './ignore.txt';
+
+var ignoreList;
+
 function readFolder(relFolder) {
     var absFolder = path.join(BASE_FOLDER, relFolder);
     var filesAndSubfolders = fs.readdirSync(absFolder);
@@ -29,6 +33,25 @@ function readContent(relPath) {
     var content = fs.readFileSync(absPath, 'utf8');
     return content;
 }
+
+function readIgnore() {
+    var content = fs.readFileSync(IGNORE_FILE_NAME, 'utf8').toLowerCase();
+    return content.split("\n");
+}
+
+function isIgnored(word) {
+    return ignoreList.indexOf(word.toLowerCase()) >= 0;
+}
+
+function addToIgnore(word) {
+    fs.appendFileSync(IGNORE_FILE_NAME, word);
+}
+
+router.post('/ignore', function (req, res) {
+    var word = req.body.word;
+    addToIgnore("\n" + word);
+    res.json({status: "ok"});
+});
 
 router.get('/folder/*', function (req, res) {
     var relFolder = req.originalUrl.substr("/api/folder".length+1);
@@ -48,8 +71,10 @@ router.get('/values/2/*', function (req, res) {
         var parts = row.split("\t");
         var key = parts[0];
         var value = parts[1];
-        if(ctr++ < 100) {
-            values[key] = Math.round(value);
+        if(!isIgnored(key)) {
+            if(ctr++ < 100) {
+                values[key] = Math.round(value);
+            }
         }
     });
     res.json(values);
@@ -74,6 +99,8 @@ router.get('/values/*', function (req, res) {
     });
     res.json(values);
 });
+
+ignoreList = readIgnore();
 
 app.use('/api', router);
 
