@@ -11,7 +11,8 @@ var router = express.Router();
 
 var server = require('http').createServer(app);
 
-var BASE_FOLDER = '/Users/owidder/dev/iteragit/nge/python/f2-all';
+//var BASE_FOLDER = '/Users/owidder/dev/iteragit/nge/python/f2-all';
+var BASE_FOLDER = '/Users/owidder/dev/iteragit/nge/python/erpnext';
 
 app.use(cors());
 app.use(bodyParser.json());

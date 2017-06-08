@@ -2,9 +2,9 @@ import nltk
 import string
 import os
 import re
+import sys
 
 from sklearn.feature_extraction.text import TfidfVectorizer
-from nltk.stem.porter import PorterStemmer
 
 def tokenize(text):
     tokens = nltk.word_tokenize(text)
@@ -68,4 +68,7 @@ def findFeatures(corpusPath, rootPath):
                         print(k + "\t" + str(f[k]), file=out_file)
 
 
-findFeatures(corpusPath='/Users/owidder/dev/iteragit/nge/f2-all', rootPath='/Users/owidder/dev/iteragit/nge/f2-all')
+corpusPath = sys.argv[1]
+rootPath = (sys.argv[2] if len(sys.argv) > 2 else corpusPath)
+
+findFeatures(corpusPath=corpusPath, rootPath=rootPath)

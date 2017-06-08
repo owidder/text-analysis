@@ -1,4 +1,5 @@
 import os
+import sys
 
 FOLDER_VALUES_FILE_NAME = '_.csv'
 
@@ -39,4 +40,4 @@ def aggregateFolder(folder_path):
             print(k + "\t" + str(values[k]), file=out_file)
 
 
-aggregateFolder('/Users/owidder/dev/iteragit/nge/f2-all')
+aggregateFolder(sys.argv[1])
