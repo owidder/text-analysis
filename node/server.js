@@ -20,19 +20,38 @@ var IGNORE_FILE_NAME = './ignore.txt';
 
 var ignoreList;
 
+var SUMMARY_FILENAME = '_.csv';
+var FAKE_SUMMARY_FILENAME = '_SUMMARY_';
+var VALUE_FILE_SUFFIX = '.utf8.csv';
+
+function isSummaryFile(filename) {
+    return filename == SUMMARY_FILENAME;
+}
+
+function isValueFile(filename) {
+    return isSummaryFile(filename) || filename.endsWith(VALUE_FILE_SUFFIX);
+}
+
+function isDirectory(filename, absFolder) {
+    return fs.lstatSync(path.join(absFolder, filename)).isDirectory();
+}
+
 function filterNonValueFiles(filesAndSubfolderNameList, absFolder) {
     return filesAndSubfolderNameList.filter(function(fileOrSubfolderName) {
-        return fileOrSubfolderName.endsWith("utf8.csv") || fs.lstatSync(path.join(absFolder, fileOrSubfolderName)).isDirectory();
+        return isValueFile(fileOrSubfolderName) || isDirectory(fileOrSubfolderName, absFolder);
     });
 }
 
 function adaptValueFilename(filename) {
-    return filename.substr(0, filename.length - ".utf8.csv".length);
+    if(isSummaryFile(filename)) {
+        return FAKE_SUMMARY_FILENAME;
+    }
+    return filename.substr(0, filename.length - VALUE_FILE_SUFFIX.length);
 }
 
 function adaptNames(filesAndSubfolderNameList, absFolder) {
     return filesAndSubfolderNameList.map(function (fileOrSubfolderName) {
-        if(fs.lstatSync(path.join(absFolder, fileOrSubfolderName)).isDirectory()) {
+        if(isDirectory(fileOrSubfolderName, absFolder)) {
             return fileOrSubfolderName + "/";
         }
         else {
@@ -41,11 +60,17 @@ function adaptNames(filesAndSubfolderNameList, absFolder) {
     });
 }
 
+function sortNonCaseSensitive(list) {
+    return list.sort(function (a, b) {
+        return a.toLowerCase().localeCompare(b.toLowerCase());
+    });
+}
+
 function readFolder(relFolder) {
     var absFolder = path.join(BASE_FOLDER, relFolder);
     var filesAndSubfolders = fs.readdirSync(absFolder);
     var onlyFoldersAndValueFiles = filterNonValueFiles(filesAndSubfolders, absFolder);
-    return adaptNames(onlyFoldersAndValueFiles, absFolder);
+    return sortNonCaseSensitive(adaptNames(onlyFoldersAndValueFiles, absFolder));
 }
 
 function readContent(relPath) {
