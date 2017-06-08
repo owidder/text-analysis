@@ -1,5 +1,0 @@
-Grundlagen
-https://en.wikipedia.org/wiki/Cluster_labeling
-
-Beispiele
-http://scikit-learn.org/stable/auto_examples/text/document_clustering.html
