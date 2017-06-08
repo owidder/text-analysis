@@ -28,15 +28,23 @@
 <body>
 
 <script id="subfolders-script" type="text/x-handlebars-template">
-    <h2>Folder: <code>{{@root.currentFolder}}</code></h2>
-    <table>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2>Folder: <code>{{@root.currentFolder}}</code></h2>
+            </div>
+        </div>
         {{#each subfolders}}
-        <tr>
-            <td><h5><a href="?folder={{@root.currentFolder}}/{{this}}">{{this}}</a></h5> </td>
-            <td class="left"><b><a href="cloud.html?folder={{@root.currentFolder}}/{{this}}" target="_blank">cloud</a></b> </td>
-        </tr>
+        <div class="row">
+            <div class="col s10">
+                <h5><a href="?folder={{@root.currentFolder}}{{this}}">{{this}}</a></h5>
+            </div>
+            <div class="col s1">
+                <b><a href="cloud.html?folder={{@root.currentFolder}}{{this}}" target="_blank">cloud</a></b>
+            </div>
+        </div>
         {{/each}}
-    </table>
+    </div>
 </script>
 
 <script src="/js/util/simplePromise.js"></script>

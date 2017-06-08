@@ -11,11 +11,32 @@
 <script src="bower_components/bottlejs/dist/bottle.js"></script>
 <script>var bottle = new Bottle();</script>
 <script src="bower_components/lodash/dist/lodash.js"></script>
+<script src="bower_components/crypto-js/crypto-js.js"></script>
 
 <script src="js/util/simplePromise.js"></script>
 <script src="js/util/util.js"></script>
 
 <script>
+
+    var currentFolder = bottle.container.util.param("folder", ".");
+    var currentFile = bottle.container.util.param("file", "");
+
+    var svgLocation = "#chart";
+    var width = $(document).width();
+    var height = $(document).height();
+
+    function redraw() {
+        if(!_.isEmpty(currentFile)) {
+            d3.json("http://localhost:3000/api/values/file/" + currentFile, function(error, words) {
+                drawWordCloud(words);
+            });
+        }
+        else {
+            d3.json("http://localhost:3000/api/values/folder/" + currentFolder, function(error, words) {
+                drawWordCloud(words);
+            });
+        }
+    }
 
     function ignoreWord(word) {
         $.ajax({
@@ -25,20 +46,26 @@
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function () {
-                window.location.reload(false);
+                redraw();
             }
         })
     }
 
-    function drawWordCloud(word_count){
+    function init() {
+        d3.select(svgLocation).append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .append("g")
+            .attr("transform", "translate(" + [width >> 1, height >> 1] + ")")
+            .attr("class", "root");
+    }
 
-        var svg_location = "#chart";
-        var width = $(document).width();
-        var height = $(document).height();
+    // from: https://bl.ocks.org/blockspring/847a40e23f68d6d7e8b5
+    function drawWordCloud(words){
 
         var fill = d3.scale.category20();
 
-        var word_entries = d3.entries(word_count);
+        var word_entries = d3.entries(words);
 
         var xScale = d3.scale.linear()
             .domain([0, d3.max(word_entries, function(d) {
@@ -54,51 +81,65 @@
                 return xScale(+d.value);
             })
             .text(function(d) { return d.key; })
-            .rotate(function() { return ~~(Math.random() * 2) * 90; })
+            .rotate(function(d) {
+                if(CryptoJS.MD5(d.key).words[0] % 2 == 0) {
+                    return 0;
+                }
+                return 90;
+            })
             .font("Impact")
             .on("end", draw)
             .start();
 
         function draw(words) {
-            d3.select(svg_location).append("svg")
-                .attr("width", width)
-                .attr("height", height)
-                .append("g")
-                .attr("transform", "translate(" + [width >> 1, height >> 1] + ")")
+            var data = d3.select("g.root")
                 .selectAll("text")
-                .data(words)
-                .enter().append("text")
-                .style("font-size", function(d) {
-                    return xScale(d.value) + "px";
-                })
-                .style("font-family", "Impact")
-                .style("fill", function(d, i) {
-                    return fill(i);
-                })
-                .attr("text-anchor", "middle")
-                .attr("transform", function(d) {
-                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-                })
+                .data(words, function (d) {
+                    return d.key;
+                });
+
+            data.enter().append("text")
+                .attr("class", "word")
                 .text(function(d) {
                     return d.key;
                 })
+                .style("font-family", "Impact")
+                .attr("text-anchor", "middle")
                 .on("click", function (d) {
                     ignoreWord(d.key);
                 })
                 .append("title")
+                .attr("class", "word")
                 .text(function (d, i) {
                     return d.key + " / Rank: " + (i+1);
                 });
+
+            d3.selectAll("text.word")
+                .style("font-size", function(d) {
+                    return xScale(d.value) + "px";
+                })
+                .style("fill", function(d, i) {
+                    return fill(i);
+                })
+                .transition()
+                .duration(1000)
+                .attr("transform", function(d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                });
+
+            d3.selectAll("title.word")
+                .text(function (d, i) {
+                    return d.key + " / Rank: " + (i+1);
+                });
+
+            data.exit().remove();
         }
 
         d3.layout.cloud().stop();
     }
 
-    var currentFolder = bottle.container.util.param("folder", ".");
-
-    d3.json("http://localhost:3000/api/values/2/" + currentFolder, function(error, words) {
-        drawWordCloud(words);
-    });
+    init();
+    redraw();
 
 </script>
 </body>

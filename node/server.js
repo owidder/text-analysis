@@ -20,12 +20,32 @@ var IGNORE_FILE_NAME = './ignore.txt';
 
 var ignoreList;
 
+function filterNonValueFiles(filesAndSubfolderNameList, absFolder) {
+    return filesAndSubfolderNameList.filter(function(fileOrSubfolderName) {
+        return fileOrSubfolderName.endsWith("utf8.csv") || fs.lstatSync(path.join(absFolder, fileOrSubfolderName)).isDirectory();
+    });
+}
+
+function adaptValueFilename(filename) {
+    return filename.substr(0, filename.length - ".utf8.csv".length);
+}
+
+function adaptNames(filesAndSubfolderNameList, absFolder) {
+    return filesAndSubfolderNameList.map(function (fileOrSubfolderName) {
+        if(fs.lstatSync(path.join(absFolder, fileOrSubfolderName)).isDirectory()) {
+            return fileOrSubfolderName + "/";
+        }
+        else {
+            return adaptValueFilename(fileOrSubfolderName);
+        }
+    });
+}
+
 function readFolder(relFolder) {
     var absFolder = path.join(BASE_FOLDER, relFolder);
     var filesAndSubfolders = fs.readdirSync(absFolder);
-    return filesAndSubfolders.filter(function(fileOrSubfolder) {
-        return fs.lstatSync(path.join(absFolder, '/', fileOrSubfolder)).isDirectory();
-    });
+    var onlyFoldersAndValueFiles = filterNonValueFiles(filesAndSubfolders, absFolder);
+    return adaptNames(onlyFoldersAndValueFiles, absFolder);
 }
 
 function readContent(relPath) {
@@ -62,9 +82,28 @@ router.get('/folder/*', function (req, res) {
     });
 });
 
-router.get('/values/2/*', function (req, res) {
-    var relFolder = req.originalUrl.substr("/api/values/2".length + 1);
+router.get('/values/folder/*', function (req, res) {
+    var relFolder = req.originalUrl.substr("/api/values/folder".length + 1);
     var content = readContent(path.join(relFolder, '_.csv'));
+    var rows = content.split("\n");
+    var values = {};
+    var ctr = 0;
+    rows.forEach(function(row) {
+        var parts = row.split("\t");
+        var key = parts[0];
+        var value = parts[1];
+        if(!isIgnored(key)) {
+            if(ctr++ < 100) {
+                values[key] = Math.round(value);
+            }
+        }
+    });
+    res.json(values);
+});
+
+router.get('/values/file/*', function (req, res) {
+    var relFile = req.originalUrl.substr("/api/values/file".length + 1);
+    var content = readContent(relFile);
     var rows = content.split("\n");
     var values = {};
     var ctr = 0;
