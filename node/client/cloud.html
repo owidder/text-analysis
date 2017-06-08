@@ -18,24 +18,16 @@
 
 <script>
 
-    var currentFolder = bottle.container.util.param("folder", ".");
-    var currentFile = bottle.container.util.param("file", "");
+    var currentPath = bottle.container.util.param("path", "");
 
     var svgLocation = "#chart";
     var width = $(document).width();
     var height = $(document).height();
 
     function redraw() {
-        if(!_.isEmpty(currentFile)) {
-            d3.json("http://localhost:3000/api/values/file/" + currentFile, function(error, words) {
-                drawWordCloud(words);
-            });
-        }
-        else {
-            d3.json("http://localhost:3000/api/values/folder/" + currentFolder, function(error, words) {
-                drawWordCloud(words);
-            });
-        }
+        d3.json("http://localhost:3000/api/values/file/" + currentPath, function(error, words) {
+            drawWordCloud(words);
+        });
     }
 
     function ignoreWord(word) {

@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var app = express();
 var fs = require('fs');
 var path = require('path');
+var _ = require('lodash');
 
 var router = express.Router();
 
@@ -28,8 +29,8 @@ function isSummaryFile(filename) {
     return filename == SUMMARY_FILENAME;
 }
 
-function isFakeSummaryFile(filename) {
-    return filename == FAKE_SUMMARY_FILENAME;
+function isFakeSummaryFilePath(filePath) {
+    return filePath.endsWith(FAKE_SUMMARY_FILENAME);
 }
 
 function isValueFile(filename) {
@@ -53,11 +54,11 @@ function adaptValueFilename(filename) {
     return filename.substr(0, filename.length - VALUE_FILE_SUFFIX.length);
 }
 
-function backAdaptValueFilename(filename) {
-    if(isFakeSummaryFile(filename)) {
-        return SUMMARY_FILENAME;
+function backAdaptValueFilePath(filePath) {
+    if(isFakeSummaryFilePath(filePath)) {
+        return filePath.substr(0, filePath.length - FAKE_SUMMARY_FILENAME.length) + SUMMARY_FILENAME;
     }
-    return filename + VALUE_FILE_SUFFIX;
+    return filePath + VALUE_FILE_SUFFIX;
 }
 
 function adaptNames(filesAndSubfolderNameList, absFolder) {
@@ -128,7 +129,7 @@ router.get('/values/folder/*', function (req, res) {
         var parts = row.split("\t");
         var key = parts[0];
         var value = parts[1];
-        if(!isIgnored(key)) {
+        if(!_.isEmpty(key) && !isIgnored(key)) {
             if(ctr++ < 100) {
                 values[key] = Math.round(value);
             }
@@ -139,7 +140,8 @@ router.get('/values/folder/*', function (req, res) {
 
 router.get('/values/file/*', function (req, res) {
     var relFile = req.originalUrl.substr("/api/values/file".length + 1);
-    var content = readContent(backAdaptValueFilename(relFile));
+    var relFileAdapted = backAdaptValueFilePath(relFile);
+    var content = readContent(relFileAdapted);
     var rows = content.split("\n");
     var values = {};
     var ctr = 0;
@@ -149,7 +151,7 @@ router.get('/values/file/*', function (req, res) {
         var value = parts[1];
         if(!isIgnored(key)) {
             if(ctr++ < 100) {
-                values[key] = Math.round(value);
+                values[key] = Math.round(value * 100);
             }
         }
     });

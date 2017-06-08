@@ -107,3 +107,15 @@ read
 var
 string
 vector
+xml
+src
+table
+parameter
+statment
+cppunit
+basisklasse
+das
+install
+getgf
+tabelle
+getdscache

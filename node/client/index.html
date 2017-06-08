@@ -37,7 +37,7 @@
         {{#each filenames}}
         <div class="row">
             <div class="col s10">
-                <h5><a href="{{nextPage}}?path={{@root.currentFolder}}{{filename}}">{{filename}}</a></h5>
+                <h5><a href="{{nextPage}}?path={{@root.currentFolder}}{{filename}}" target="{{target}}">{{filename}}</a></h5>
             </div>
         </div>
         {{/each}}
@@ -69,9 +69,11 @@
         var filesTemplate = Handlebars.compile(filesTemplateScript);
         var filenamesWithMetadata = filenames.map(function(filename) {
             var nextPage = filename.endsWith("/") ? "index.html" : "cloud.html";
+            var target = filename.endsWith("/") ? "_self" : "_blank";
             return {
                 filename: filename,
-                nextPage: nextPage
+                nextPage: nextPage,
+                target: target
             }
         });
         var ctx = {
