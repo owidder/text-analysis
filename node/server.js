@@ -183,6 +183,6 @@ ignoreList = readIgnore();
 
 app.use('/api', router);
 
-server.listen(3000, function () {
-    console.log('Radar server listening on port 3000!')
+server.listen(3100, function () {
+    console.log('text-analysis server is listening on 3100!')
 });
