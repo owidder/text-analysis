@@ -28,6 +28,10 @@ function isSummaryFile(filename) {
     return filename == SUMMARY_FILENAME;
 }
 
+function isFakeSummaryFile(filename) {
+    return filename == FAKE_SUMMARY_FILENAME;
+}
+
 function isValueFile(filename) {
     return isSummaryFile(filename) || filename.endsWith(VALUE_FILE_SUFFIX);
 }
@@ -47,6 +51,13 @@ function adaptValueFilename(filename) {
         return FAKE_SUMMARY_FILENAME;
     }
     return filename.substr(0, filename.length - VALUE_FILE_SUFFIX.length);
+}
+
+function backAdaptValueFilename(filename) {
+    if(isFakeSummaryFile(filename)) {
+        return SUMMARY_FILENAME;
+    }
+    return filename + VALUE_FILE_SUFFIX;
 }
 
 function adaptNames(filesAndSubfolderNameList, absFolder) {
@@ -128,7 +139,7 @@ router.get('/values/folder/*', function (req, res) {
 
 router.get('/values/file/*', function (req, res) {
     var relFile = req.originalUrl.substr("/api/values/file".length + 1);
-    var content = readContent(relFile);
+    var content = readContent(backAdaptValueFilename(relFile));
     var rows = content.split("\n");
     var values = {};
     var ctr = 0;

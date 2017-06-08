@@ -34,13 +34,10 @@
                 <h2>Folder: <code>{{@root.currentFolder}}</code></h2>
             </div>
         </div>
-        {{#each subfolders}}
+        {{#each filenames}}
         <div class="row">
             <div class="col s10">
-                <h5><a href="?folder={{@root.currentFolder}}{{this}}">{{this}}</a></h5>
-            </div>
-            <div class="col s1">
-                <b><a href="cloud.html?folder={{@root.currentFolder}}{{this}}" target="_blank">cloud</a></b>
+                <h5><a href="{{nextPage}}?folder={{@root.currentFolder}}{{filename}}">{{filename}}</a></h5>
             </div>
         </div>
         {{/each}}
@@ -63,13 +60,20 @@
 
     var BASE = 'api/folder/';
 
-    function showSubfolders(subfolders) {
+    function showSubfolders(filenames) {
         $("#subfolders").empty();
         var subfoldersTemplateScript = $("#subfolders-script").html();
         var subfoldersTemplate = Handlebars.compile(subfoldersTemplateScript);
+        var filenamesWithMetadata = filenames.map(function(filename) {
+            var nextPage = filename.endsWith("/") ? "index.html" : "cloud.html";
+            return {
+                filename: filename,
+                nextPage: nextPage
+            }
+        });
         var ctx = {
             currentFolder: currentFolder,
-            subfolders: subfolders
+            filenames: filenamesWithMetadata
         };
         var subfoldersHtml = subfoldersTemplate(ctx);
         $("#subfolders").append(subfoldersHtml);
