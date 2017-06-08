@@ -4,7 +4,8 @@ f2-all
 nohup.out
 node_modules
 bower_components
-erpnext
 idempiere
 odoo
 opentaps
+
+/python/erpnext
