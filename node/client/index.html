@@ -47,7 +47,7 @@
 <script src="/js/util/simplePromise.js"></script>
 <script src="/js/util/util.js"></script>
 
-<div id="subfolders"></div>
+<div id="files"></div>
 
 <script>
 
@@ -60,10 +60,10 @@
 
     var BASE = 'api/folder/';
 
-    function showSubfolders(filenames) {
-        $("#subfolders").empty();
-        var subfoldersTemplateScript = $("#subfolders-script").html();
-        var subfoldersTemplate = Handlebars.compile(subfoldersTemplateScript);
+    function showFiles(filenames) {
+        $("#files").empty();
+        var filesTemplateScript = $("#subfolders-script").html();
+        var filesTemplate = Handlebars.compile(filesTemplateScript);
         var filenamesWithMetadata = filenames.map(function(filename) {
             var nextPage = filename.endsWith("/") ? "index.html" : "cloud.html";
             return {
@@ -75,8 +75,8 @@
             currentFolder: currentFolder,
             filenames: filenamesWithMetadata
         };
-        var subfoldersHtml = subfoldersTemplate(ctx);
-        $("#subfolders").append(subfoldersHtml);
+        var filesHtml = filesTemplate(ctx);
+        $("#files").append(filesHtml);
 
     }
 
@@ -93,7 +93,7 @@
     }
 
     getSubfolders().then(function(data) {
-        showSubfolders(data);
+        showFiles(data);
     })
 
 </script>
