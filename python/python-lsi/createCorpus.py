@@ -34,11 +34,11 @@ def readDocuments(path):
             if file_path.endswith("utf8"):
                 content = fileString(file_path)
                 if len(content) > 0:
-                    documents[file] = fileString(file_path)
+                    documents[file_path] = fileString(file_path)
     return documents
 
 
-documents = readDocuments('/Users/owidder/dev/iteragit/nge/python/erpnext/erpnext/crm')
+documents = readDocuments('/Users/owidder/dev/iteragit/nge/python/erpnext/erpnext')
 
 with open('./docnames', 'wb') as dn:
     pickle.dump(list(documents.keys()), dn)

@@ -17,17 +17,12 @@ corpus_tfidf = tfidf[corpus]
 for doc in corpus_tfidf:
     print(doc)
 
-lsi = models.LsiModel(corpus_tfidf, id2word=dictionary, num_topics=10)
+lsi = models.LsiModel(corpus_tfidf, id2word=dictionary, num_topics=100)
 corpus_lsi = lsi[corpus_tfidf]
 lsi.print_topics(10)
 
 with open ('./docnames', 'rb') as dn:
     docnames = pickle.load(dn)
 
-for ic in range(len(corpus_lsi)):
-    for id in range(len(dictionary)):
-        print("%s / %s" % (docnames[ic], dictionary.id2token[id]))
-
-for doc in corpus_lsi:
-    print(doc)
-
+index = similarities.MatrixSimilarity(lsi[corpus])
+index.save('./corpus.100.index')
