@@ -1,3 +1,2 @@
-corpus.*
-docnames
+/python-lsi/data
 __pycache__

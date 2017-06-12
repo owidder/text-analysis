@@ -22,7 +22,7 @@ def readDocuments(path):
 
 documents = readDocuments('/Users/owidder/dev/iteragit/nge/python/erpnext/erpnext')
 
-with open('./docnames', 'wb') as dn:
+with open('./data/docnames', 'wb') as dn:
     pickle.dump(list(documents.keys()), dn)
 
 stoplist = set('if for a of the and to in'.split())
@@ -39,11 +39,11 @@ texts = [[token for token in text if frequency[token] > 1]
          for text in texts]
 
 dictionary = corpora.Dictionary(texts)
-dictionary.save('./corpus.dict')
+dictionary.save('./data/corpus.dict')
 print(dictionary)
 
 print(dictionary.token2id)
 
 corpus = [dictionary.doc2bow(text) for text in texts]
-corpora.MmCorpus.serialize('./corpus.mm', corpus)  # store to disk, for later use
+corpora.MmCorpus.serialize('./data/corpus.mm', corpus)  # store to disk, for later use
 print(corpus)
