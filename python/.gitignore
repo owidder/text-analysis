@@ -1,2 +1,3 @@
 corpus.*
 docnames
+__pycache__
