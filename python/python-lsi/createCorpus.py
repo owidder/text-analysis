@@ -5,6 +5,7 @@ from collections import defaultdict
 import string
 import re
 import os
+import pickle
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
@@ -38,6 +39,9 @@ def readDocuments(path):
 
 
 documents = readDocuments('/Users/owidder/dev/iteragit/nge/python/erpnext/erpnext/crm')
+
+with open('./docnames', 'wb') as dn:
+    pickle.dump(list(documents.keys()), dn)
 
 stoplist = set('if for a of the and to in'.split())
 texts = [[word for word in document.lower().split() if word not in stoplist]
