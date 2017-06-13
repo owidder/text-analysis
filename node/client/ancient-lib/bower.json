@@ -1,0 +1,20 @@
+{
+  "name": "ancient-lib",
+  "authors": [
+    "Oliver Widder <oliver.widder@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "v3.4.13"
+  }
+}

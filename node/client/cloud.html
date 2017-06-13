@@ -25,7 +25,7 @@
     var height = $(document).height();
 
     function redraw() {
-        d3.json("http://localhost:3000/api/values/file/" + currentPath, function(error, words) {
+        d3.json("/api/values/file/" + currentPath, function(error, words) {
             drawWordCloud(words);
         });
     }
