@@ -31,18 +31,14 @@
     <div class="container">
         <div class="row">
             <div class="col s12">
-                <h5><code>{{@root.currentFolder}}</code></h5>
+                <h5><code><a href="cloud.html?path={{@root.path}}" target="_blank">{{@root.path}}</a></code></h5>
+                <h5><code>---------------------------------------------</code></h5>
             </div>
         </div>
         {{#each filenames}}
         <div class="row">
             <div class="col s10">
-                <h5><a href="{{nextPage}}?path={{@root.currentFolder}}{{filename}}" target="{{target}}">{{filename}}</a></h5>
-                {{#if isFile}}
-                {{#if isNotSummary}}
-                <a href="lsiIndex.html?path={{@root.currentFolder}}{{filename}}">similar files</a>
-                {{/if}}
-                {{/if}}
+                <h5><a href="cloud.html?path={{this}}" target="_blank">{{this}}</a></h5>
             </div>
         </div>
         {{/each}}
@@ -61,53 +57,42 @@
 
     var SimplePromise = bottle.container.SimplePromise;
 
-    var currentPath = bottle.container.util.param("path", ".");
-    if(!currentPath.endsWith("/")) {
-        currentPath += "/";
-    }
+    var path = bottle.container.util.param("path", ".");
 
-    var BASE = 'api/folder/';
-    var SUMMARY_NAME = '_SUMMARY_';
+    var BASE = 'api/index/';
 
-    function showFiles(filenames) {
+    function showRelatedFiles(entry) {
         $("#files").empty();
         var filesTemplateScript = $("#subfolders-script").html();
         var filesTemplate = Handlebars.compile(filesTemplateScript);
-        var filenamesWithMetadata = filenames.map(function(filename) {
-            var isFolder = filename.endsWith("/");
-            var nextPage = isFolder ? "index.html" : "cloud.html";
-            var target = isFolder ? "_self" : "_blank";
-            return {
-                filename: filename,
-                nextPage: nextPage,
-                target: target,
-                isFile: !isFolder,
-                isNotSummary: filename != SUMMARY_NAME
-            }
+        var relatedFilenames = [];
+        _.forOwn(entry, function (value, key) {
+            var filename = key.substr(0, key.length - ".utf8".length);
+            relatedFilenames.push(filename);
         });
         var ctx = {
-            currentFolder: currentPath,
-            filenames: filenamesWithMetadata
+            path: path,
+            filenames: relatedFilenames
         };
         var filesHtml = filesTemplate(ctx);
         $("#files").append(filesHtml);
 
     }
 
-    function getFiles() {
+    function getRelatedFiles() {
         var p = new SimplePromise();
-        var url = BASE + currentPath;
+        var url = BASE + path;
         $.ajax(url, {
             success: function (data) {
-                p.resolve(data.content);
+                p.resolve(data);
             }
         });
 
         return p.promise;
     }
 
-    getFiles().then(function(data) {
-        showFiles(data);
+    getRelatedFiles().then(function(data) {
+        showRelatedFiles(data);
     })
 
 </script>

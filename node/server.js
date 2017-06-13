@@ -1,3 +1,5 @@
+'use strict';
+
 var path = require("path");
 var express = require('express');
 var cors = require('cors');
@@ -6,6 +8,8 @@ var app = express();
 var fs = require('fs');
 var path = require('path');
 var _ = require('lodash');
+
+var lsiIndex = require('./server/lsiIndex');
 
 var router = express.Router();
 
@@ -117,6 +121,13 @@ router.get('/folder/*', function (req, res) {
         folder: relFolder,
         content: readFolder(relFolder)
     });
+});
+
+router.get('/index/*', function (req, res) {
+    var relPath = req.originalUrl.substr("/api/index".length + 1);
+    var entry = lsiIndex.getIndexEntry(relPath);
+
+    res.json(entry);
 });
 
 router.get('/values/file/*', function (req, res) {
