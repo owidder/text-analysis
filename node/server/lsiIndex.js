@@ -11,10 +11,11 @@ var index = {};
 function processIndexLine(line) {
     var parts = line.split("\t");
     var entry = {};
-    var i;
+    var i, relPath;
     if(parts.length > 2) {
         for (i = 1; i < parts.length; i+=2) {
-            entry[parts[i]] = parts[i+1];
+            relPath = parts[i].substr(BASE_PATH.length);
+            entry[relPath] = parts[i+1];
         }
         index[parts[0]] = entry;
     }
