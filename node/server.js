@@ -120,25 +120,6 @@ router.get('/folder/*', function (req, res) {
     });
 });
 
-router.get('/values/folder/*', function (req, res) {
-    var relFolder = req.originalUrl.substr("/api/values/folder".length + 1);
-    var content = readContent(path.join(relFolder, '_.csv'));
-    var rows = content.split("\n");
-    var values = {};
-    var ctr = 0;
-    rows.forEach(function(row) {
-        var parts = row.split("\t");
-        var key = parts[0];
-        var value = parts[1];
-        if(!_.isEmpty(key) && !isIgnored(key)) {
-            if(ctr++ < 100) {
-                values[key] = Math.round(value);
-            }
-        }
-    });
-    res.json(values);
-});
-
 router.get('/values/file/*', function (req, res) {
     var relFile = req.originalUrl.substr("/api/values/file".length + 1);
     var relFileAdapted = backAdaptValueFilePath(relFile);
@@ -154,26 +135,6 @@ router.get('/values/file/*', function (req, res) {
             if(ctr++ < 100) {
                 values[key] = Math.round(value * 100);
             }
-        }
-    });
-    res.json(values);
-});
-
-router.get('/values/*', function (req, res) {
-    var relFolder = req.originalUrl.substr("/api/values".length + 1);
-    var content = readContent(path.join(relFolder, '_.csv'));
-    var rows = content.split("\n");
-    var values = [];
-    var ctr = 0;
-    rows.forEach(function(row) {
-        var parts = row.split("\t");
-        var id = parts[0];
-        var value = parts[1];
-        if(ctr++ < 100) {
-            values.push({
-                id: id,
-                value: value
-            })
         }
     });
     res.json(values);
