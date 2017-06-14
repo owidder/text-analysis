@@ -1,2 +1,2 @@
-/python-lsi/data
 __pycache__
+python-lsi/data/corpus.*
