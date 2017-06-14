@@ -130,6 +130,12 @@ router.get('/index/*', function (req, res) {
     res.json(entry);
 });
 
+router.get('/matrix', function (req, res) {
+    var matrix = lsiIndex.readMatrixAndNodes();
+
+    return res.json(matrix);
+});
+
 router.get('/values/file/*', function (req, res) {
     var relFile = req.originalUrl.substr("/api/values/file".length + 1);
     var relFileAdapted = backAdaptValueFilePath(relFile);
