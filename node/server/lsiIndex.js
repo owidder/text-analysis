@@ -19,6 +19,10 @@ function removeSuffix(name) {
     return name.substr(0, name.length - SUFFIX.length);
 }
 
+function makeRelPath(path) {
+    return removeSuffix(removeBasePath(path));
+}
+
 function processIndexLine(line) {
     var parts = line.split("\t");
     var entry = {};
@@ -45,21 +49,28 @@ function initNodes() {
         readIndex();
     }
 
-    _.forOwn(index, function (value, key) {
-        var relPath = removeSuffix(removeBasePath(key));
-        var pathParts = relPath.split("/");
-        var indexOfLastPart = pathParts.length-1;
-        var filename = pathParts[indexOfLastPart];
-        nodes.push({
-            kennzeichen: filename,
-            name: relPath,
-            bundesland: (pathParts[0] == filename ? "." : pathParts[0])
-        })
+    _.forOwn(index, function (_dummy_, absPath) {
+        var relPath = makeRelPath(absPath);
+        addNode(relPath);
     });
 }
 
 function initMatrix() {
+    if(_.isEmpty(index)) {
+        readIndex();
+    }
 
+    _.forOwn(index, function (entry, fromAbsPathWithSuffix) {
+        var fromRelPath = makeRelPath(fromAbsPathWithSuffix);
+        _.forOwn(entry, function (weight, toRelPathWithSuffix) {
+            var toRelPath = removeSuffix(toRelPathWithSuffix);
+            matrix.push({
+                source: fromRelPath,
+                target: toRelPath,
+                count: weight*1000
+            })
+        })
+    })
 }
 
 function readMatrixAndNodes() {
@@ -75,6 +86,37 @@ function readMatrixAndNodes() {
         cities: nodes,
         links: matrix
     }
+}
+
+function findNode(relPath) {
+    nodes.find(function (node) {
+        return node.name == relPath;
+    })
+}
+
+function addNode(relPath) {
+    var pathParts = relPath.split("/");
+    var indexOfLastPart = pathParts.length-1;
+    var filename = pathParts[indexOfLastPart];
+    nodes.push({
+        kennzeichen: filename,
+        name: relPath,
+        bundesland: (pathParts[0] == filename ? "." : pathParts[0])
+    })
+}
+
+function _getCoronaRecursive(relPath, currentDepth) {
+    if(_.isEmpty(findNode(relPath))) {
+        addNode(relPath);
+    }
+
+    if(currentDepth > 0) {
+
+    }
+}
+
+function getCorona(relPath, maxDepth) {
+
 }
 
 function getIndexEntry(relPath) {
