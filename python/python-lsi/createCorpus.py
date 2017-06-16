@@ -20,7 +20,7 @@ def readDocuments(path):
     return documents
 
 
-documents = readDocuments('/Users/owidder/dev/iteragit/nge/python/erpnext/erpnext')
+documents = readDocuments('/Users/owidder/dev/iteragit/nge/python/erpnext')
 
 with open('./data/docnames', 'wb') as dn:
     pickle.dump(list(documents.keys()), dn)
