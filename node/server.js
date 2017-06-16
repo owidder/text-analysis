@@ -136,6 +136,13 @@ router.get('/matrix', function (req, res) {
     return res.json(matrix);
 });
 
+router.get('/corona/*', function (req, res) {
+    var relPath = req.originalUrl.substr("/api/corona".length + 1).split("?")[0];
+    var depth = req.query.depth;
+    var corona = lsiIndex.getCorona(relPath, depth);
+    res.json(corona);
+});
+
 router.get('/values/file/*', function (req, res) {
     var relFile = req.originalUrl.substr("/api/values/file".length + 1);
     var relFileAdapted = backAdaptValueFilePath(relFile);

@@ -108,18 +108,43 @@ function addNode(relPath) {
     })
 }
 
-function _getCoronaRecursive(relPath, currentDepth) {
-    if(_.isEmpty(findNode(relPath))) {
-        addNode(relPath);
+function addLink(fromRelPath, toRelPath, value) {
+    matrix.push({
+        source: fromRelPath,
+        target: toRelPath,
+        count: value*1000
+    });
+}
+
+function _getCoronaRecursive(fromRelPath, currentDepth) {
+    if(_.isEmpty(findNode(fromRelPath))) {
+        addNode(fromRelPath);
     }
 
     if(currentDepth > 0) {
-
+        if(!_.isEmpty(index[fromRelPath])) {
+            _.forOwn(index[fromRelPath], function (value, toRelPath) {
+                var toRelPathWithoutSuffix = removeSuffix(toRelPath);
+                addLink(fromRelPath, toRelPathWithoutSuffix, value);
+                _getCoronaRecursive(toRelPathWithoutSuffix, currentDepth-1);
+            })
+        }
     }
 }
 
 function getCorona(relPath, maxDepth) {
+    if(_.isEmpty(index)) {
+        readIndex();
+    }
 
+    matrix = [];
+    nodes = [];
+
+    _getCoronaRecursive(relPath, maxDepth);
+    return {
+        cities: nodes,
+        links: matrix
+    }
 }
 
 function getIndexEntry(relPath) {
@@ -131,12 +156,8 @@ function getIndexEntry(relPath) {
     return entry;
 }
 
-function getIndexMatrix() {
-
-
-}
-
 module.exports = {
     getIndexEntry: getIndexEntry,
-    readMatrixAndNodes: readMatrixAndNodes
+    readMatrixAndNodes: readMatrixAndNodes,
+    getCorona: getCorona
 };

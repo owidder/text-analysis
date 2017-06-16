@@ -22,7 +22,7 @@
     </style>
 </head>
 <body>
-<input id="quantile-slider" type="range" min="0" max="1000" onchange="sliderChanged()"/>
+<input id="quantile-slider" type="range" min="0" max="10" onchange="drawForce()"/>
 <div id="force"></div>
 <script src="bower_components/d3/d3.min.js"></script>
 <script src="js/util/stuff.js"></script>
@@ -53,11 +53,6 @@
             }))
             .force("charge", d3.forceManyBody().strength(-500))
             .force("center", d3.forceCenter(width / 2, height / 2));
-
-    function sliderChanged() {
-        var quantile = document.getElementById("quantile-slider").value;
-        drawForce();
-    }
 
     function drawForce() {
         if(graph == null) return;
@@ -168,6 +163,9 @@
         }
 
         var quantile = document.getElementById("quantile-slider").value;
+
+        d3.json('/api/matrix')
+
         var threshold = stuff.valueQuantile(graph.links, (1000 - Number(quantile)) / 1000, "count");
         console.log("quantile: " + (1000 - Number(quantile)) / 1000);
         console.log("threshold: " + threshold);
