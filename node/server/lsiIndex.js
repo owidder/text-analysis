@@ -4,7 +4,7 @@ var fs = require('fs');
 var _ = require('lodash');
 
 var INDEX_FILE_PATH = '../python/python-lsi/data/matrix.csv';
-var BASE_PATH = '/Users/owidder/dev/iteragit/nge/python/erpnext/erpnext/';
+var BASE_PATH = '/Users/owidder/dev/iteragit/nge/python/erpnext/';
 var SUFFIX = ".utf8";
 
 var index = {};
@@ -26,13 +26,16 @@ function makeRelPath(path) {
 function processIndexLine(line) {
     var parts = line.split("\t");
     var entry = {};
-    var i, relPath;
+    var i, fromRelPath, fromAbsPath, toRelPath, toAbsPath;
     if(parts.length > 2) {
+        fromAbsPath = parts[0];
+        fromRelPath = makeRelPath(fromAbsPath);
         for (i = 1; i < parts.length; i+=2) {
-            relPath = removeBasePath(parts[i]);
-            entry[relPath] = parts[i+1];
+            toAbsPath = parts[i];
+            toRelPath = removeBasePath(toAbsPath);
+            entry[toRelPath] = parts[i+1];
         }
-        index[parts[0]] = entry;
+        index[fromRelPath] = entry;
     }
 }
 
@@ -60,10 +63,10 @@ function initMatrix() {
         readIndex();
     }
 
-    _.forOwn(index, function (entry, fromAbsPathWithSuffix) {
-        var fromRelPath = makeRelPath(fromAbsPathWithSuffix);
-        _.forOwn(entry, function (weight, toRelPathWithSuffix) {
-            var toRelPath = removeSuffix(toRelPathWithSuffix);
+    _.forOwn(index, function (entry, fromRelPath) {
+        var fromRelPath = makeRelPath(fromRelPath);
+        _.forOwn(entry, function (weight, toRelPath) {
+            var toRelPath = removeSuffix(toRelPath);
             matrix.push({
                 source: fromRelPath,
                 target: toRelPath,
@@ -124,8 +127,7 @@ function getIndexEntry(relPath) {
         readIndex();
     }
 
-    var key = BASE_PATH + relPath + SUFFIX;
-    var entry = index[key];
+    var entry = index[relPath];
     return entry;
 }
 
