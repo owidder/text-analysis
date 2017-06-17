@@ -54,7 +54,7 @@ function initNodes() {
 
     _.forOwn(index, function (_dummy_, absPath) {
         var relPath = makeRelPath(absPath);
-        addNode(relPath);
+        addNode(relPath, nodes);
     });
 }
 
@@ -91,42 +91,55 @@ function readMatrixAndNodes() {
     }
 }
 
-function findNode(relPath) {
-    nodes.find(function (node) {
+function findNode(relPath, _nodes) {
+    _nodes.find(function (node) {
         return node.name == relPath;
     })
 }
 
-function addNode(relPath) {
-    var pathParts = relPath.split("/");
-    var indexOfLastPart = pathParts.length-1;
-    var filename = pathParts[indexOfLastPart];
-    nodes.push({
-        kennzeichen: filename,
-        name: relPath,
-        bundesland: (pathParts[0] == filename ? "." : pathParts[0])
-    })
-}
-
-function addLink(fromRelPath, toRelPath, value) {
-    matrix.push({
-        source: fromRelPath,
-        target: toRelPath,
-        count: value*1000
+function findLink(fromRelPath, toRelPath, _links) {
+    _links.find(function (link) {
+        return (link.source == fromRelPath && link.target == toRelPath) || (link.target == fromRelPath && link.source == toRelPath);
     });
 }
 
-function _getCoronaRecursive(fromRelPath, currentDepth) {
-    if(_.isEmpty(findNode(fromRelPath))) {
-        addNode(fromRelPath);
+function addNode(relPath, _nodes) {
+    if(_.isEmpty(findNode(relPath, _nodes))) {
+        var pathParts = relPath.split("/");
+        var indexOfLastPart = pathParts.length-1;
+        var filename = pathParts[indexOfLastPart];
+        _nodes.push({
+            kennzeichen: filename,
+            name: relPath,
+            bundesland: (pathParts[0] == filename ? "." : pathParts[0])
+        })
     }
+}
+
+function addLink(fromRelPath, toRelPath, value, _links) {
+    if(_.isEmpty(findLink(fromRelPath, toRelPath, _links))) {
+        _links.push({
+            source: fromRelPath,
+            target: toRelPath,
+            count: value*100
+        });
+    }
+}
+
+function _getCoronaRecursive(fromRelPath, currentDepth, _nodes, _links, _processed) {
+    _processed.push(fromRelPath);
+
+    addNode(fromRelPath, _nodes);
 
     if(currentDepth > 0) {
-        if(!_.isEmpty(index[fromRelPath])) {
-            _.forOwn(index[fromRelPath], function (value, toRelPath) {
+        var entry = index[fromRelPath];
+        if(entry != null) {
+            _.forOwn(entry, function (value, toRelPath) {
                 var toRelPathWithoutSuffix = removeSuffix(toRelPath);
-                addLink(fromRelPath, toRelPathWithoutSuffix, value);
-                _getCoronaRecursive(toRelPathWithoutSuffix, currentDepth-1);
+                addLink(fromRelPath, toRelPathWithoutSuffix, value, _links);
+                if(_processed.indexOf(toRelPathWithoutSuffix) < 0) {
+                    _getCoronaRecursive(toRelPathWithoutSuffix, currentDepth-1, _nodes, _links, _processed);
+                }
             })
         }
     }
@@ -137,13 +150,13 @@ function getCorona(relPath, maxDepth) {
         readIndex();
     }
 
-    matrix = [];
-    nodes = [];
+    var _links = [];
+    var _nodes = [];
 
-    _getCoronaRecursive(relPath, maxDepth);
+    _getCoronaRecursive(relPath, maxDepth, _nodes, _links, []);
     return {
-        cities: nodes,
-        links: matrix
+        cities: _nodes,
+        links: _links
     }
 }
 

@@ -24,24 +24,32 @@
 <body>
 <input id="quantile-slider" type="range" min="0" max="10" onchange="drawForce()"/>
 <div id="force"></div>
+<script src="bower_components/bottlejs/dist/bottle.js"></script>
+<script>var bottle = new Bottle();</script>
+<script src="bower_components/lodash/dist/lodash.js"></script>
+<script src="bower_components/crypto-js/crypto-js.js"></script>
+
+<script src="js/util/simplePromise.js"></script>
+<script src="js/util/util.js"></script>
+
 <script src="bower_components/d3/d3.min.js"></script>
 <script src="js/util/stuff.js"></script>
 <link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.css"
       media="screen,projection"/>
 <script>
 
+    var path = bottle.container.util.param("path", "");
+
     var width = window.innerWidth;
     var height = window.innerHeight;
 
     var svg = d3.select("#force").append("svg")
-            .attr("width", width)
-            .attr("height", height);
+            .attr("width", width*2)
+            .attr("height", height*2);
 
     var gLinks = svg.append("g");
     var gTexts = svg.append("g");
     var gNodes = svg.append("g");
-
-    var graph;
 
     var color = d3.scaleOrdinal(d3.schemeCategory20);
 
@@ -51,12 +59,10 @@
             }).distance(function (d) {
                 return -d.count;
             }))
-            .force("charge", d3.forceManyBody().strength(-500))
+            .force("charge", d3.forceManyBody().strength(-60))
             .force("center", d3.forceCenter(width / 2, height / 2));
 
     function drawForce() {
-        if(graph == null) return;
-
         ///////////////////////////////////
         // WKS Start
         ///////////////////////////////////
@@ -151,43 +157,29 @@
         // WKS End
         ///////////////////////////////////
 
-        function startForce() {
+        function startForce(data) {
             simulation
-                    .nodes(graph.cities)
+                    .nodes(data.cities)
                     .on("tick", ticked);
 
             simulation.force("link")
-                    .links(graph.links);
+                    .links(data.links);
 
             simulation.alpha(1).restart();
         }
 
-        var quantile = document.getElementById("quantile-slider").value;
+        var depth = document.getElementById("quantile-slider").value;
 
-        d3.json('/api/matrix')
-
-        var threshold = stuff.valueQuantile(graph.links, (1000 - Number(quantile)) / 1000, "count");
-        console.log("quantile: " + (1000 - Number(quantile)) / 1000);
-        console.log("threshold: " + threshold);
-
-        var filteredLinks = graph.links
-                .filter(function (d) {
-                    return d.count >= threshold;
-                });
-
-        var filteredNodes = stuff.filterNodesFromLinks(filteredLinks, graph.cities);
-
-        drawNodes(filteredNodes);
-        drawTexts(filteredNodes);
-        drawLinks(filteredLinks);
-        startForce();
-
+        d3.json('/api/corona/' + path + '?depth=' + depth, function (error, data) {
+            drawNodes(data.cities);
+            drawTexts(data.cities);
+            drawLinks(data.links);
+            startForce(data);
+        });
     }
 
-    d3.json("/api/matrix", function (error, data) {
-        graph = data;
-        drawForce();
-    });
+    drawForce(path);
+
 </script>
 </body>
 </html>
