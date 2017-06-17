@@ -70,7 +70,7 @@
         var filesTemplate = Handlebars.compile(filesTemplateScript);
         var filenamesWithMetadata = filenames.map(function(filename) {
             var isFolder = filename.endsWith("/");
-            var nextPage = isFolder ? "index2.html" : "force.html";
+            var nextPage = isFolder ? "index2.html" : "force2.html";
             var target = isFolder ? "_self" : "_blank";
             return {
                 filename: filename,
