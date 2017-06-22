@@ -11,16 +11,18 @@ var index = {};
 var matrix = [];
 var nodes = [];
 
+var relPath = require('./relPath');
+
 function removeBasePath(absPath) {
-    return absPath.substr(BASE_PATH.length);
+    return relPath.removeBasePath(absPath);
 }
 
 function removeSuffix(name) {
-    return name.substr(0, name.length - SUFFIX.length);
+    return relPath.removeSuffix(name);
 }
 
 function makeRelPath(path) {
-    return removeSuffix(removeBasePath(path));
+    return relPath.makeRelPath(path);
 }
 
 function processIndexLine(line) {
