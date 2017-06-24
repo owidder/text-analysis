@@ -4,8 +4,6 @@ var fs = require('fs');
 var _ = require('lodash');
 
 var INDEX_FILE_PATH = '../python/python-lsi/data/matrix.csv';
-var BASE_PATH = '/Users/owidder/dev/iteragit/nge/python/erpnext/';
-var SUFFIX = ".utf8";
 
 var index = {};
 var matrix = [];
@@ -13,28 +11,16 @@ var nodes = [];
 
 var relPath = require('./relPath');
 
-function removeBasePath(absPath) {
-    return relPath.removeBasePath(absPath);
-}
-
-function removeSuffix(name) {
-    return relPath.removeSuffix(name);
-}
-
-function makeRelPath(path) {
-    return relPath.makeRelPath(path);
-}
-
 function processIndexLine(line) {
     var parts = line.split("\t");
     var entry = {};
     var i, fromRelPath, fromAbsPath, toRelPath, toAbsPath;
     if(parts.length > 2) {
         fromAbsPath = parts[0];
-        fromRelPath = makeRelPath(fromAbsPath);
+        fromRelPath = relPath.makeRelPath(fromAbsPath);
         for (i = 1; i < parts.length; i+=2) {
             toAbsPath = parts[i];
-            toRelPath = removeBasePath(toAbsPath);
+            toRelPath = relPath.removeBasePath(toAbsPath);
             entry[toRelPath] = parts[i+1];
         }
         index[fromRelPath] = entry;
@@ -55,7 +41,7 @@ function initNodes() {
     }
 
     _.forOwn(index, function (_dummy_, absPath) {
-        var relPath = makeRelPath(absPath);
+        var relPath = relPath.makeRelPath(absPath);
         addNode(relPath, 0, nodes);
     });
 }
@@ -66,9 +52,9 @@ function initMatrix() {
     }
 
     _.forOwn(index, function (entry, fromRelPath) {
-        var fromRelPath = makeRelPath(fromRelPath);
+        var fromRelPath = relPath.makeRelPath(fromRelPath);
         _.forOwn(entry, function (weight, toRelPath) {
-            var toRelPath = removeSuffix(toRelPath);
+            var toRelPath = relPath.removeSuffix(toRelPath);
             matrix.push({
                 source: fromRelPath,
                 target: toRelPath,
@@ -146,7 +132,7 @@ function _getCoronaRecursive(fromRelPath, currentDepth, maxDepth, _nodes, _links
         var entry = index[fromRelPath];
         if(entry != null) {
             _.forOwn(entry, function (value, toRelPath) {
-                var toRelPathWithoutSuffix = removeSuffix(toRelPath);
+                var toRelPathWithoutSuffix = relPath.removeSuffix(toRelPath);
                 addLink(fromRelPath, toRelPathWithoutSuffix, value, _links);
                 updateDepth(toRelPathWithoutSuffix, currentDepth+1, _nodes);
                 if(_processed.indexOf(toRelPathWithoutSuffix) < 0) {
