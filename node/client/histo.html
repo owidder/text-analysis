@@ -15,11 +15,16 @@
         }
 
     </style>
+
+    <script src="/bower_components/bottlejs/dist/bottle.js"></script>
+    <script>var bottle = new Bottle();</script>
+    <script src="bower_components/d3/d3.min.js"></script>
 </head>
 <body>
 <svg width="960" height="500"></svg>
-<script src="bower_components/d3/d3.min.js"></script>
 <script>
+
+    var BASE = 'api/histogram/';
 
     function drawHisto(data) {
         var formatCount = d3.format(",.0f");
@@ -66,8 +71,14 @@
             .call(d3.axisBottom(x));
     }
 
-    var data = d3.range(1000).map(d3.randomBates(10));
-    drawHisto(data);
+    var path = bottle.container.util.param("path", ".");
+    var url = BASE + path;
+
+    $.ajax(url, {
+        success: function (data) {
+            drawHisto(data);
+        }
+    });
 
 </script>
 </body>
