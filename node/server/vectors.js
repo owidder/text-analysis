@@ -2,9 +2,9 @@
 
 var fs = require('fs');
 var _ = require('lodash');
-var math = require('math');
+var math = require('mathjs');
 
-var relPath = require('./relPath');
+var _relPath = require('./relPath');
 
 var VECTORS_FILE_PATH = '../python/python-lsi/data/vectors.csv';
 
@@ -22,9 +22,9 @@ function extractVector(line) {
 
 function extractRelPath(line) {
     var parts = line.split("\t");
-    var relPath = relPath.makeRelPath(parts[0]);
+    var path = _relPath.makeRelPath(parts[0]);
 
-    return relPath;
+    return path;
 }
 
 function processVectorLine(line) {
@@ -45,3 +45,24 @@ function readVectors() {
 function getVectorForFile(fileRelPath) {
     return vectors[fileRelPath];
 }
+
+function createHistoDataForFile(fileRelPath) {
+    if(_.isEmpty(vectors)) {
+        readVectors();
+    }
+
+    var ownVec = getVectorForFile(fileRelPath);
+    var data = [];
+    _.forOwn(vectors, function (vector, relPath) {
+        if(relPath != fileRelPath && !_.isEmpty(relPath) && vector.length == ownVec.length) {
+            var prod = math.multiply(ownVec, vector) / (math.norm(ownVec) * math.norm(vector));
+            data.push(prod);
+        }
+    });
+
+    return data;
+}
+
+module.exports = {
+    createHistoDataForFile: createHistoDataForFile
+};

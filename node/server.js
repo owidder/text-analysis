@@ -10,6 +10,7 @@ var path = require('path');
 var _ = require('lodash');
 
 var lsiIndex = require('./server/lsiIndex');
+var vector = require('./server/vectors');
 
 var router = express.Router();
 
@@ -141,6 +142,12 @@ router.get('/corona/*', function (req, res) {
     var depth = req.query.depth;
     var corona = lsiIndex.getCorona(relPath, depth);
     res.json(corona);
+});
+
+router.get('/histogram/*', function (req, res) {
+    var relPath = req.originalUrl.substr("/api/histogram".length + 1);
+    var histo = vector.createHistoDataForFile(relPath);
+    res.json(histo);
 });
 
 router.get('/values/file/*', function (req, res) {
