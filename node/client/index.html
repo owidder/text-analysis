@@ -21,6 +21,10 @@
         .left {
             text-align: left;
         }
+
+        a.mini {
+            font-size: .4em;
+        }
     </style>
 
 </head>
@@ -40,7 +44,9 @@
                 <h5><a href="{{nextPage}}?path={{@root.currentFolder}}{{filename}}" target="{{target}}">{{filename}}</a></h5>
                 {{#if isFile}}
                 {{#if isNotSummary}}
-                <a href="lsiIndex.html?path={{@root.currentFolder}}{{filename}}">similar files</a>
+                <a class="mini" href="lsiIndex.html?path={{@root.currentFolder}}{{filename}}">[similar files]</a>
+                <a class="mini" href="force.html?path={{@root.currentFolder}}{{filename}}">[force]</a>
+                <a class="mini" href="histo.html?path={{@root.currentFolder}}{{filename}}">[histogram]</a>
                 {{/if}}
                 {{/if}}
             </div>

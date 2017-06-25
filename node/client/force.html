@@ -15,181 +15,189 @@
             opacity: 0.2;
         }
 
+        circle.root {
+            stroke-width: 3px;
+            stroke: black;
+            opacity: 0.7;
+        }
+
         text.city {
-            font-size: .7em;
+            font-size: .4em;
         }
 
     </style>
 </head>
 <body>
-<input id="quantile-slider" type="range" min="0" max="1000" onchange="sliderChanged()"/>
+<input id="quantile-slider" type="range" min="0" max="10" onchange="drawForce()"/>
 <div id="force"></div>
+<script src="bower_components/bottlejs/dist/bottle.js"></script>
+<script>var bottle = new Bottle();</script>
+<script src="bower_components/lodash/dist/lodash.js"></script>
+<script src="bower_components/crypto-js/crypto-js.js"></script>
+
+<script src="js/util/simplePromise.js"></script>
+<script src="js/util/util.js"></script>
+<script src="js/legend.js"></script>
+
 <script src="bower_components/d3/d3.min.js"></script>
 <script src="js/util/stuff.js"></script>
 <link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.css"
       media="screen,projection"/>
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <script>
+
+    var path = bottle.container.util.param("path", "");
+    var Legend = bottle.container.Legend;
 
     var width = window.innerWidth;
     var height = window.innerHeight;
 
+    var legend = new Legend("svg.force");
+
     var svg = d3.select("#force").append("svg")
-            .attr("width", width)
-            .attr("height", height);
+        .attr("class", "force")
+        .attr("width", width * 2)
+        .attr("height", height * 2)
+        .on("click", function () {
+            legend.switchLegend();
+        })
+        .on("mousemove", function () {
+            var evt = d3.mouse(this);
+            legend.mouseMoved(evt[0], evt[1]);
+        })
+        .on("mouseout", legend.hideLegend);
 
     var gLinks = svg.append("g");
     var gTexts = svg.append("g");
     var gNodes = svg.append("g");
 
-    var graph;
-
     var color = d3.scaleOrdinal(d3.schemeCategory20);
 
     var simulation = d3.forceSimulation()
-            .force("link", d3.forceLink().id(function (d) {
-                return d.name;
-            }).distance(function (d) {
-                return -d.count;
-            }))
-            .force("charge", d3.forceManyBody().strength(-500))
-            .force("center", d3.forceCenter(width / 2, height / 2));
-
-    function sliderChanged() {
-        var quantile = document.getElementById("quantile-slider").value;
-        drawForce();
-    }
+        .force("link", d3.forceLink().id(function (d) {
+            return d.name;
+        }).distance(function (d) {
+            return -d.count;
+        }))
+        .force("charge", d3.forceManyBody().strength(-60))
+        .force("center", d3.forceCenter(width / 2, height / 2));
 
     function drawForce() {
-        if(graph == null) return;
-
-        ///////////////////////////////////
-        // WKS Start
-        ///////////////////////////////////
-
         function drawLinks(links) {
             var selectionWithData = gLinks.selectAll("line.travel")
-                    .data(links, function (d) {
-                        return d.source + "#" + d.target;
-                    });
+                .data(links, function (d) {
+                    return d.source + "#" + d.target;
+                });
 
             selectionWithData.enter()
-                    .append("line")
-                    .attr("class", "travel")
-                    .style("stroke-width", function(d) {
-                        return Math.sqrt(d.count / 50)
-                    });
+                .append("line")
+                .attr("class", "travel")
+                .style("stroke-width", function (d) {
+                    return Math.sqrt(d.count / 50)
+                });
 
             selectionWithData.exit().remove();
         }
 
         function drawTexts(nodes) {
             var selectionWithData = gTexts.selectAll("text.city")
-                    .data(nodes, function (d) {
-                        return d.name;
-                    });
+                .data(nodes, function (d) {
+                    return d.name;
+                });
 
             selectionWithData.enter()
-                    .append("text")
-                    .attr("class", "city")
-                    .text(function (d) {
-                        return d.kennzeichen;
-                    });
+                .append("text")
+                .attr("class", "city")
+                .text(function (d) {
+                    return d.kennzeichen;
+                });
 
             selectionWithData.exit().remove();
         }
 
         function drawNodes(nodes) {
             var selectionWithData = gNodes.selectAll("circle.city")
-                    .data(nodes, function (d) {
-                        return d.name;
-                    });
+                .data(nodes, function (d) {
+                    return d.name;
+                });
 
             selectionWithData.enter()
-                    .append("circle")
-                    .attr("class", "city")
-                    .attr("r", 10)
-                    .attr("fill", function(d) {
-                        return color(d.bundesland);
-                    })
-                    .call(stuff.drag)
-                    .append("title")
-                    .text(function (d) {
-                        return d.name;
-                    });
+                .append("circle")
+                .attr("class", function (d) {
+                    var classes = "city forlegend";
+                    if(d.depth == 0) {
+                        return classes + " root";
+                    }
+                    return classes;
+                })
+                .attr("r", 10)
+                .attr("fill", function (d) {
+                    return color(d.bundesland);
+                })
+                .attr("_legend", function (d) {
+                    return d.name + " (" + d.depth + ")";
+                })
+                .call(stuff.drag);
 
             selectionWithData.exit().remove();
         }
 
         function ticked() {
             gNodes.selectAll("circle.city")
-                    .attr("cx", function(d) {
-                        return d.x;
-                    })
-                    .attr("cy", function (d) {
-                        return d.y;
-                    });
+                .attr("cx", function (d) {
+                    return d.x;
+                })
+                .attr("cy", function (d) {
+                    return d.y;
+                });
 
             gTexts.selectAll("text.city")
-                    .attr("x", function(d) {
-                        return d.x;
-                    })
-                    .attr("y", function (d) {
-                        return d.y;
-                    });
+                .attr("x", function (d) {
+                    return d.x;
+                })
+                .attr("y", function (d) {
+                    return d.y;
+                });
 
             gLinks.selectAll("line.travel")
-                    .attr("x1", function (d) {
-                        return d.source.x;
-                    })
-                    .attr("y1", function (d) {
-                        return d.source.y;
-                    })
-                    .attr("x2", function (d) {
-                        return d.target.x;
-                    })
-                    .attr("y2", function (d) {
-                        return d.target.y;
-                    })
+                .attr("x1", function (d) {
+                    return d.source.x;
+                })
+                .attr("y1", function (d) {
+                    return d.source.y;
+                })
+                .attr("x2", function (d) {
+                    return d.target.x;
+                })
+                .attr("y2", function (d) {
+                    return d.target.y;
+                })
         }
 
-        ///////////////////////////////////
-        // WKS End
-        ///////////////////////////////////
-
-        function startForce() {
+        function startForce(data) {
             simulation
-                    .nodes(graph.cities)
-                    .on("tick", ticked);
+                .nodes(data.cities)
+                .on("tick", ticked);
 
             simulation.force("link")
-                    .links(graph.links);
+                .links(data.links);
 
             simulation.alpha(1).restart();
         }
 
-        var quantile = document.getElementById("quantile-slider").value;
-        var threshold = stuff.valueQuantile(graph.links, (1000 - Number(quantile)) / 1000, "count");
-        console.log("quantile: " + (1000 - Number(quantile)) / 1000);
-        console.log("threshold: " + threshold);
+        var depth = document.getElementById("quantile-slider").value;
 
-        var filteredLinks = graph.links
-                .filter(function (d) {
-                    return d.count >= threshold;
-                });
-
-        var filteredNodes = stuff.filterNodesFromLinks(filteredLinks, graph.cities);
-
-        drawNodes(filteredNodes);
-        drawTexts(filteredNodes);
-        drawLinks(filteredLinks);
-        startForce();
-
+        d3.json('/api/corona/' + path + '?depth=' + depth, function (error, data) {
+            drawNodes(data.cities);
+            drawTexts(data.cities);
+            drawLinks(data.links);
+            startForce(data);
+        });
     }
 
-    d3.json("/api/matrix", function (error, data) {
-        graph = data;
-        drawForce();
-    });
+    legend.appendLegend();
+    drawForce(path);
+
 </script>
 </body>
 </html>
