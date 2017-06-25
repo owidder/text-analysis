@@ -105,7 +105,11 @@
         }
 
         setTimeout(function () {
-            bar.append("text")
+            bar.append("a")
+                .attr("href", function (d) {
+                    return "?lower=" + d.x0 + "&upper=" + d.x1;
+                })
+                .append("text")
                 .attr("class", function (d) {
                     if(_tooShort(d)) {
                         return "bin short";
