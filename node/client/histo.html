@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Histogram</title>
+    <link rel="stylesheet" type="text/css" href="/bower_components/materialize/dist/css/materialize.css"
+          media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/material-icons.css"/>
+
     <style>
 
         .bar rect {
@@ -39,7 +44,7 @@
     <div class="container">
         <div class="row">
             <div class="col s12">
-                <h1><code>{{@root.title}}</code></h1>
+                <h3><a href="{{@root.href}}" target="_blank"><code>{{@root.title}}</code></a></h3>
             </div>
         </div>
     </div>
@@ -54,8 +59,13 @@
     </div>
         {{#each relPathWithCosineList}}
         <div class="row">
+            <div class="col s1">
+                {{rank}}
+            </div>
             <div class="col s10">
                 <h5><a href="cloud.html?path={{relPath}}" target="_blank">{{relPath}}</a></h5>
+            </div>
+            <div class="col s1">
                 {{cosine}}
             </div>
         </div>
@@ -147,6 +157,9 @@
             $.ajax(url, {
                 success: function (data) {
                     spinner.stop();
+                    data.forEach(function (entry, index) {
+                        entry.rank = index+1;
+                    });
                     renderFilesOfBin(data, cosineLower, cosineUpper);
                 }
             });
@@ -191,12 +204,13 @@
             .call(d3.axisBottom(x));
     }
 
-    function showTitle(text) {
+    function showTitle(text, href) {
         $("#title").empty();
         var titleTemplateScript = $("#title-script").html();
         var titleTemplate = Handlebars.compile(titleTemplateScript);
         var ctx = {
-            title: text
+            title: text,
+            href: href
         };
         var titleHtml = titleTemplate(ctx);
         $("#title").append(titleHtml);
@@ -222,7 +236,7 @@
     }
 
     var path = bottle.container.util.param("path", ".");
-    showTitle(path);
+    showTitle(path, "/cloud.html?path=" + path);
     showHisto(BASE + path);
 
 </script>

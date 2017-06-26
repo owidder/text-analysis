@@ -65,14 +65,14 @@ function getAllFilesWithCosineBetween(fileRelPath, cosineLower, cosineUpper) {
             if(cosine >= cosineLower && cosine < cosineUpper) {
                 data.push({
                     relPath: relPath,
-                    cosine: cosine
+                    cosine: math.round(cosine, 3)
                 });
             }
         }
     });
 
     return data.sort(function (a, b) {
-        return util.compare(a.cosine, b.cosine);
+        return util.compare(a.cosine, b.cosine) * -1;
     });
 }
 
