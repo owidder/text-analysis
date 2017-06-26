@@ -29,6 +29,7 @@
     <script src="/bower_components/lodash/dist/lodash.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/handlebars/handlebars.js"></script>
+    <script src="lib/spin.js"></script>
 
     <script src="/js/util/util.js"></script>
 </head>
@@ -44,9 +45,29 @@
     </div>
 </script>
 
-<div id="title"></div>
+<script id="files-script" type="text/x-handlebars-template">
+    <div class="container">
+        <div class="col s12">
+            <h5><code>lower = {{@root.lower}} / upper = {{@root.upper}}</code></h5>
+            <h5><code>---------------------------------------------</code></h5>
+        </div>
+    </div>
+        {{#each relPathWithCosineList}}
+        <div class="row">
+            <div class="col s10">
+                <h5><a href="cloud.html?path={{relPath}}" target="_blank">{{relPath}}</a></h5>
+                {{cosine}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</script>
 
+<div id="title"></div>
+<div id="spinner"></div>
 <svg width="960" height="500"></svg>
+<div id="files"></div>
+
 <script>
 
     var BASE = 'api/histogram/';
@@ -104,12 +125,36 @@
                 return _height(d) < 13;
         }
 
+        function renderFilesOfBin(relPathWithCosineList, cosineLower, cosineUpper) {
+            $("#files").empty();
+            var filesTemplateScript = $("#files-script").html();
+            var filesTemplate = Handlebars.compile(filesTemplateScript);
+            var ctx = {
+                relPathWithCosineList: relPathWithCosineList,
+                lower: cosineLower,
+                upper: cosineUpper
+            };
+            var filesHtml = filesTemplate(ctx);
+            $("#files").append(filesHtml);
+
+        }
+
+        function showFilesOfBin(fileRelPath, cosineLower, cosineUpper) {
+            var spinner = _createSpinner();
+
+            var url = "/api/cosineBetween/" + fileRelPath + "?lower=" + cosineLower + "&upper=" + cosineUpper;
+
+            $.ajax(url, {
+                success: function (data) {
+                    spinner.stop();
+                    renderFilesOfBin(data, cosineLower, cosineUpper);
+                }
+            });
+
+        }
+
         setTimeout(function () {
-            bar.append("a")
-                .attr("href", function (d) {
-                    return "?lower=" + d.x0 + "&upper=" + d.x1;
-                })
-                .append("text")
+            bar.append("text")
                 .attr("class", function (d) {
                     if(_tooShort(d)) {
                         return "bin short";
@@ -134,7 +179,10 @@
                         return "";
                     }
                     return formatCount(d.length);
-                });
+                })
+                .on("click", function (d) {
+                    showFilesOfBin(path, d.x0, d.x1);
+                })
         }, TRANSITION_DURATION);
 
         g.append("g")
@@ -154,9 +202,20 @@
         $("#title").append(titleHtml);
     }
 
+    function _createSpinner() {
+        var spinner = new Spinner({
+            color: "grey"
+        }).spin(document.getElementById("spinner"));
+
+        return spinner;
+    }
+
     function showHisto(url) {
+        var spinner = _createSpinner();
+
         $.ajax(url, {
             success: function (data) {
+                spinner.stop();
                 drawHisto(data);
             }
         });

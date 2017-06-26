@@ -52,7 +52,7 @@ function computeCosineBetweenVectors(vector1, vector2) {
     return cosine;
 }
 
-function getAllFilesWithCosineBetween(relPath, cosineLower, cosineUpper) {
+function getAllFilesWithCosineBetween(fileRelPath, cosineLower, cosineUpper) {
     if(_.isEmpty(vectors)) {
         readVectors();
     }
