@@ -5,6 +5,7 @@ var _ = require('lodash');
 var math = require('mathjs');
 
 var _relPath = require('./relPath');
+var util = require('./util');
 
 var VECTORS_FILE_PATH = '../python/python-lsi/data/vectors.csv';
 
@@ -46,6 +47,35 @@ function getVectorForFile(fileRelPath) {
     return vectors[fileRelPath];
 }
 
+function computeCosineBetweenVectors(vector1, vector2) {
+    var cosine = math.multiply(vector1, vector2) / (math.norm(vector1) * math.norm(vector2));
+    return cosine;
+}
+
+function getAllFilesWithCosineBetween(fileRelPath, cosineLower, cosineUpper) {
+    if(_.isEmpty(vectors)) {
+        readVectors();
+    }
+
+    var ownVec = getVectorForFile(fileRelPath);
+    var data = [];
+    _.forOwn(vectors, function (vector, relPath) {
+        if(relPath != fileRelPath && !_.isEmpty(relPath) && vector.length == ownVec.length) {
+            var cosine = computeCosineBetweenVectors(ownVec, vector);
+            if(cosine >= cosineLower && cosine < cosineUpper) {
+                data.push({
+                    relPath: relPath,
+                    cosine: math.round(cosine, 3)
+                });
+            }
+        }
+    });
+
+    return data.sort(function (a, b) {
+        return util.compare(a.cosine, b.cosine) * -1;
+    });
+}
+
 function createHistoDataForFile(fileRelPath) {
     if(_.isEmpty(vectors)) {
         readVectors();
@@ -55,8 +85,8 @@ function createHistoDataForFile(fileRelPath) {
     var data = [];
     _.forOwn(vectors, function (vector, relPath) {
         if(relPath != fileRelPath && !_.isEmpty(relPath) && vector.length == ownVec.length) {
-            var prod = math.multiply(ownVec, vector) / (math.norm(ownVec) * math.norm(vector));
-            data.push(prod);
+            var cosine = computeCosineBetweenVectors(ownVec, vector);
+            data.push(cosine);
         }
     });
 
@@ -64,5 +94,6 @@ function createHistoDataForFile(fileRelPath) {
 }
 
 module.exports = {
-    createHistoDataForFile: createHistoDataForFile
+    createHistoDataForFile: createHistoDataForFile,
+    getAllFilesWithCosineBetween: getAllFilesWithCosineBetween
 };

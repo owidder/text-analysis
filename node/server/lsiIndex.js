@@ -58,7 +58,7 @@ function initMatrix() {
             matrix.push({
                 source: fromRelPath,
                 target: toRelPath,
-                count: weight*1000
+                value: weight*1000
             })
         })
     })
@@ -74,7 +74,7 @@ function readMatrixAndNodes() {
     }
 
     return {
-        cities: nodes,
+        nodes: nodes,
         links: matrix
     }
 }
@@ -105,10 +105,10 @@ function addNode(relPath, depth, _nodes) {
         var indexOfLastPart = pathParts.length-1;
         var filename = pathParts[indexOfLastPart];
         _nodes.push({
-            kennzeichen: filename,
+            shortName: filename,
             name: relPath,
             depth: depth,
-            bundesland: (pathParts[0] == filename ? "." : pathParts[0])
+            folder: (pathParts[0] == filename ? "." : (pathParts.length > 1 ? pathParts[1] : pathParts[0]))
         })
     }
 }
@@ -118,7 +118,7 @@ function addLink(fromRelPath, toRelPath, value, _links) {
         _links.push({
             source: fromRelPath,
             target: toRelPath,
-            count: value*100
+            value: value*100
         });
     }
 }
@@ -153,7 +153,7 @@ function getCorona(relPath, maxDepth) {
 
     _getCoronaRecursive(relPath, 0, maxDepth, _nodes, _links, []);
     return {
-        cities: _nodes,
+        nodes: _nodes,
         links: _links
     }
 }

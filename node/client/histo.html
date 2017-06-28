@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Histogram</title>
+    <link rel="stylesheet" type="text/css" href="/bower_components/materialize/dist/css/materialize.css"
+          media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/material-icons.css"/>
+
     <style>
 
         .bar rect {
@@ -29,6 +34,7 @@
     <script src="/bower_components/lodash/dist/lodash.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/handlebars/handlebars.js"></script>
+    <script src="lib/spin.js"></script>
 
     <script src="/js/util/util.js"></script>
 </head>
@@ -38,15 +44,40 @@
     <div class="container">
         <div class="row">
             <div class="col s12">
-                <h1><code>{{@root.title}}</code></h1>
+                <h3><a href="{{@root.href}}" target="_blank"><code>{{@root.title}}</code></a></h3>
             </div>
         </div>
     </div>
 </script>
 
-<div id="title"></div>
+<script id="files-script" type="text/x-handlebars-template">
+    <div class="container">
+        <div class="col s12">
+            <h5><code>lower = {{@root.lower}} / upper = {{@root.upper}}</code></h5>
+            <h5><code>---------------------------------------------</code></h5>
+        </div>
+    </div>
+        {{#each relPathWithCosineList}}
+        <div class="row">
+            <div class="col s1">
+                {{rank}}
+            </div>
+            <div class="col s10">
+                <h5><a href="cloud.html?path={{relPath}}" target="_blank">{{relPath}}</a></h5>
+            </div>
+            <div class="col s1">
+                {{cosine}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</script>
 
+<div id="title"></div>
+<div id="spinner"></div>
 <svg width="960" height="500"></svg>
+<div id="files"></div>
+
 <script>
 
     var BASE = 'api/histogram/';
@@ -104,6 +135,37 @@
                 return _height(d) < 13;
         }
 
+        function renderFilesOfBin(relPathWithCosineList, cosineLower, cosineUpper) {
+            $("#files").empty();
+            var filesTemplateScript = $("#files-script").html();
+            var filesTemplate = Handlebars.compile(filesTemplateScript);
+            var ctx = {
+                relPathWithCosineList: relPathWithCosineList,
+                lower: cosineLower,
+                upper: cosineUpper
+            };
+            var filesHtml = filesTemplate(ctx);
+            $("#files").append(filesHtml);
+
+        }
+
+        function showFilesOfBin(fileRelPath, cosineLower, cosineUpper) {
+            var spinner = _createSpinner();
+
+            var url = "/api/cosineBetween/" + fileRelPath + "?lower=" + cosineLower + "&upper=" + cosineUpper;
+
+            $.ajax(url, {
+                success: function (data) {
+                    spinner.stop();
+                    data.forEach(function (entry, index) {
+                        entry.rank = index+1;
+                    });
+                    renderFilesOfBin(data, cosineLower, cosineUpper);
+                }
+            });
+
+        }
+
         setTimeout(function () {
             bar.append("text")
                 .attr("class", function (d) {
@@ -130,7 +192,11 @@
                         return "";
                     }
                     return formatCount(d.length);
-                });
+                })
+                .style("cursor", "pointer")
+                .on("click", function (d) {
+                    showFilesOfBin(path, d.x0, d.x1);
+                })
         }, TRANSITION_DURATION);
 
         g.append("g")
@@ -139,27 +205,39 @@
             .call(d3.axisBottom(x));
     }
 
-    function showTitle(text) {
+    function showTitle(text, href) {
         $("#title").empty();
         var titleTemplateScript = $("#title-script").html();
         var titleTemplate = Handlebars.compile(titleTemplateScript);
         var ctx = {
-            title: text
+            title: text,
+            href: href
         };
         var titleHtml = titleTemplate(ctx);
         $("#title").append(titleHtml);
     }
 
+    function _createSpinner() {
+        var spinner = new Spinner({
+            color: "grey"
+        }).spin(document.getElementById("spinner"));
+
+        return spinner;
+    }
+
     function showHisto(url) {
+        var spinner = _createSpinner();
+
         $.ajax(url, {
             success: function (data) {
+                spinner.stop();
                 drawHisto(data);
             }
         });
     }
 
     var path = bottle.container.util.param("path", ".");
-    showTitle(path);
+    showTitle(path, "/cloud.html?path=" + path);
     showHisto(BASE + path);
 
 </script>

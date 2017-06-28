@@ -150,6 +150,14 @@ router.get('/histogram/*', function (req, res) {
     res.json(histo);
 });
 
+router.get('/cosineBetween/*', function (req, res) {
+    var relPath = req.originalUrl.substr("/api/cosineBetween".length + 1).split("?")[0];
+    var lower = req.query.lower;
+    var upper = req.query.upper;
+    var data = vector.getAllFilesWithCosineBetween(relPath, lower, upper);
+    res.json(data);
+});
+
 router.get('/values/file/*', function (req, res) {
     var relFile = req.originalUrl.substr("/api/values/file".length + 1);
     var relFileAdapted = backAdaptValueFilePath(relFile);
