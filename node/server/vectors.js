@@ -93,6 +93,10 @@ function createHistoDataForFile(fileRelPath) {
     return data;
 }
 
+function theWholeCloud() {
+
+}
+
 module.exports = {
     createHistoDataForFile: createHistoDataForFile,
     getAllFilesWithCosineBetween: getAllFilesWithCosineBetween

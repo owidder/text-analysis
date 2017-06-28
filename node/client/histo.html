@@ -26,6 +26,10 @@
             fill: white;
         }
 
+        a.mini {
+            font-size: .4em;
+        }
+
     </style>
 
     <script src="/bower_components/bottlejs/dist/bottle.js"></script>
@@ -45,6 +49,7 @@
         <div class="row">
             <div class="col s12">
                 <h3><a href="{{@root.href}}" target="_blank"><code>{{@root.title}}</code></a></h3>
+                <a class="mini" href="https://github.com/frappe/erpnext/blob/develop/{{@root.title}}" target="_blank">[content]</a>
             </div>
         </div>
     </div>
@@ -64,6 +69,7 @@
             </div>
             <div class="col s10">
                 <h5><a href="cloud.html?path={{relPath}}" target="_blank">{{relPath}}</a></h5>
+                <a class="mini" href="https://github.com/frappe/erpnext/blob/develop/{{relPath}}" target="_blank">[content]</a>
             </div>
             <div class="col s1">
                 {{cosine}}
