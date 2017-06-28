@@ -21,6 +21,10 @@
         .left {
             text-align: left;
         }
+
+        a.mini {
+            font-size: .4em;
+        }
     </style>
 
 </head>
@@ -32,6 +36,7 @@
         <div class="row">
             <div class="col s12">
                 <h5><code><a href="cloud.html?path={{@root.path}}" target="_blank">{{@root.path}}</a></code></h5>
+                <a class="mini" href="https://github.com/frappe/erpnext/blob/develop/{{@root.path}}" target="_blank">[content]</a>
                 <h5><code>---------------------------------------------</code></h5>
             </div>
         </div>
@@ -39,6 +44,7 @@
         <div class="row">
             <div class="col s10">
                 <h5><a href="cloud.html?path={{this}}" target="_blank">{{this}}</a></h5>
+                <a class="mini" href="https://github.com/frappe/erpnext/blob/develop/{{this}}" target="_blank">[content]</a>
             </div>
         </div>
         {{/each}}
