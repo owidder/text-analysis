@@ -193,6 +193,7 @@
                     }
                     return formatCount(d.length);
                 })
+                .style("cursor", "pointer")
                 .on("click", function (d) {
                     showFilesOfBin(path, d.x0, d.x1);
                 })
