@@ -93,11 +93,68 @@ function createHistoDataForFile(fileRelPath) {
     return data;
 }
 
-function theWholeCloud() {
+function addToNodes(relPath, nodes) {
+    var existingNode = nodes.find(util.findFunc("name", relPath));
+    if(_.isEmpty(existingNode)) {
+        nodes.push({
+            name: relPath
+        });
+    }
+}
 
+function addToLinks(fromRelPath, toRelPath, cos, links) {
+    links.push({
+        source: fromRelPath,
+        target: toRelPath,
+        value: cos*100
+    });
+}
+
+function theWholeCloud(minCount) {
+    if(_.isEmpty(vectors)) {
+        readVectors();
+    }
+
+    var allLinks = [];
+    var allNodes = [];
+
+    var relPaths = _.keys(vectors);
+    var i, j;
+
+    for(i = 0; i < relPaths.length - 1; i++) {
+        if(i%10 == 0) {
+            console.log(i + " - " + allNodes.length);
+        }
+        var fromRelPath = relPaths[i];
+        var fromVec = vectors[fromRelPath];
+        for(j = i + 1; j < relPaths.length; j++) {
+            var toRelPath = relPaths[j];
+            var toVec = vectors[toRelPath];
+            if(!_.isEmpty(fromRelPath) && !_.isEmpty(toRelPath) && fromVec.length == toVec.length) {
+                var cos = computeCosineBetweenVectors(fromVec, toVec);
+                if(cos > .5) {
+                    addToNodes(fromRelPath, allNodes);
+                    addToNodes(toRelPath, allNodes);
+                    addToLinks(fromRelPath, toRelPath, cos, allLinks);
+                    if(allNodes.length >= minCount) {
+                        return {
+                            nodes: allNodes,
+                            links: allLinks
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    return {
+        nodes: allNodes,
+        links: allLinks
+    }
 }
 
 module.exports = {
     createHistoDataForFile: createHistoDataForFile,
-    getAllFilesWithCosineBetween: getAllFilesWithCosineBetween
+    getAllFilesWithCosineBetween: getAllFilesWithCosineBetween,
+    theWholeCloud: theWholeCloud
 };
