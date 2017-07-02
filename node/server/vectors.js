@@ -88,7 +88,9 @@ function createHistoDataForFile(fileRelPath) {
     _.forOwn(vectors, function (vector, relPath) {
         if(relPath != fileRelPath && !_.isEmpty(relPath) && vector.length == ownVec.length) {
             var cosine = computeCosineBetweenVectors(ownVec, vector);
-            data.push(cosine);
+            if(cosine > .8) {
+                data.push(cosine);
+            }
         }
     });
 
@@ -112,14 +114,16 @@ function addToLinks(fromRelPath, toRelPath, cos, links) {
     });
 }
 
-function processCloudLine(line, links, fromRelPath, relPaths) {
+function processCloudLine(line, links, fromRelPath, relPaths, threshold) {
     var parts = line.split("\t");
     var i, index, value, toRelPath;
     for(i = 0; i < parts.length; i += 2) {
         index = parts[i];
         value = parts[i+1];
         toRelPath = relPaths[index];
-        addToLinks(fromRelPath, toRelPath, value, links);
+        if(value > threshold) {
+            addToLinks(fromRelPath, toRelPath, value, links);
+        }
     }
 }
 
@@ -134,20 +138,20 @@ function readRelPaths(nodes) {
     return relPaths;
 }
 
-function readCosines(links, relPaths) {
+function readCosines(links, relPaths, threshold) {
     var content = fs.readFileSync(CLOUD_FILE_PATH, 'utf8');
     var lines = content.split("\n");
     lines.forEach(function (line, index) {
         var fromRelPath = relPaths[index];
-        processCloudLine(line, links, fromRelPath, relPaths);
+        processCloudLine(line, links, fromRelPath, relPaths, threshold);
     });
 }
 
-function readTheCloud() {
+function readTheCloud(threshold) {
     var nodes = [];
     var links = [];
     var relPaths = readRelPaths(nodes);
-    readCosines(links, relPaths);
+    readCosines(links, relPaths, threshold);
 
     return {
         nodes: nodes,

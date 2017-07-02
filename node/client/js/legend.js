@@ -4,9 +4,11 @@
 /* global document */
 
 
-bottle.factory("Legend", function (container) {
+bottle.factory("Legend", function (container, _radius) {
 
     var util = container.util;
+
+    var radius = _radius || 10;
 
     function Legend(svgSelector) {
 
@@ -51,7 +53,6 @@ bottle.factory("Legend", function (container) {
             var forlegends = document.querySelectorAll(".forlegend");
             var i, forlegend, boundingRect;
             var nearbyBubblesForlegends = [];
-            var radius = 10;
             for (i = 0; i < forlegends.length; i++) {
                 forlegend = forlegends[i];
                 boundingRect = forlegend.getBoundingClientRect();

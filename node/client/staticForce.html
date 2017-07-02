@@ -16,7 +16,10 @@
     </style>
 </head>
 <body>
-<input id="quantile-slider" value="0" type="range" min="0" max="10"/>
+<div class="progress">
+    <div id="progressbar" class="determinate" style="width: 0%"></div>
+</div>
+<input id="quantile-slider" value="0" type="range" min="0" max="50"/>
 <div id="force"></div>
 <script src="bower_components/bottlejs/dist/bottle.js"></script>
 <script>var bottle = new Bottle();</script>
@@ -34,17 +37,19 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script>
 
+    var PINCH_FACTOR = 7;
+
     var path = bottle.container.util.param("path", "");
     var Legend = bottle.container.Legend;
 
     var width = window.innerWidth;
     var height = window.innerHeight;
 
-    var legend = new Legend("svg.force");
+    var legend = new Legend("svg.force", 1);
 
     var svg = d3.select("#force").append("svg")
         .attr("class", "force")
-        .attr("width", width * 2)
+        .attr("width", width)
         .attr("height", height * 2)
         .on("click", function () {
             legend.switchLegend();
@@ -68,7 +73,7 @@
             return -d.value;
         }))
         .force("charge", d3.forceManyBody().strength(-10))
-        .force("center", d3.forceCenter(width / 2, height / 2));
+        .force("center", d3.forceCenter(width * PINCH_FACTOR/2, height * PINCH_FACTOR/2));
 
     function drawForce() {
         function drawNodes(nodes) {
@@ -86,12 +91,12 @@
                     }
                     return classes;
                 })
-                .attr("r", 5)
+                .attr("r", 1)
                 .attr("fill", function (d) {
                     return color(d.folder);
                 })
                 .attr("_legend", function (d) {
-                    return d.name + " (" + d.depth + ")";
+                    return d.name;
                 })
                 .call(stuff.drag);
 
@@ -101,10 +106,10 @@
         function ticked() {
             gNodes.selectAll("circle.node")
                 .attr("cx", function (d) {
-                    return d.x;
+                    return d.x / PINCH_FACTOR;
                 })
                 .attr("cy", function (d) {
-                    return d.y;
+                    return d.y / PINCH_FACTOR;
                 });
         }
 
@@ -118,22 +123,23 @@
             simulation.alpha(1).restart();
 
             var ctr = 0;
+            var MAX_CTR = 30;
             var interval = setInterval(function () {
                 ctr++;
-                if(ctr > 10) {
+                if(ctr > MAX_CTR) {
                     clearInterval(interval);
                     simulation.stop();
                 }
                 else {
-                    document.getElementById("quantile-slider").value = ctr;
+                    document.getElementById("progressbar").style = "width: " + (ctr/MAX_CTR*100) + "%";
                 }
                 ticked();
-            }, 500);
+            }, 1000);
         }
 
-        var depth = document.getElementById("quantile-slider").value;
+        var threshold = document.getElementById("quantile-slider").value;
 
-        d3.json('/api/corona/' + path + '?depth=10', function (error, data) {
+        d3.json('/api/theWholeCloud/99', function (error, data) {
             drawNodes(data.nodes);
             startForce(data);
         });
