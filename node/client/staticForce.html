@@ -82,6 +82,22 @@
                     return d.name;
                 });
 
+            var currentTransform = null;
+            function zoomed() {
+                currentTransform = d3.event.transform;
+                svg.attr("transform", currentTransform);
+            }
+
+            var zoom = d3.zoom()
+                .scaleExtent([0.5, 5])
+                .translateExtent([
+                    [-width, -height],
+                    [width * 2, height * 2]
+                ])
+                .on("zoom", zoomed);
+
+            svg.call(zoom);
+
             selectionWithData.enter()
                 .append("circle")
                 .attr("class", function (d) {
@@ -93,7 +109,9 @@
                 })
                 .attr("r", 1)
                 .attr("fill", function (d) {
-                    return color(d.folder);
+                    var parts = d.name.split(".");
+                    var type = parts[parts.length-1];
+                    return color(type);
                 })
                 .attr("_legend", function (d) {
                     return d.name;
@@ -123,7 +141,7 @@
             simulation.alpha(1).restart();
 
             var ctr = 0;
-            var MAX_CTR = 30;
+            var MAX_CTR = 20;
             var interval = setInterval(function () {
                 ctr++;
                 if(ctr > MAX_CTR) {
@@ -139,7 +157,7 @@
 
         var threshold = document.getElementById("quantile-slider").value;
 
-        d3.json('/api/theWholeCloud/99', function (error, data) {
+        d3.json('/api/theWholeCloud/50', function (error, data) {
             drawNodes(data.nodes);
             startForce(data);
         });
