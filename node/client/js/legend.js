@@ -4,16 +4,23 @@
 /* global document */
 
 
-bottle.factory("Legend", function (container, _radius) {
+bottle.factory("Legend", function (container) {
 
     var util = container.util;
 
-    var radius = _radius || 10;
+    function Legend(svgSelector, _radius, layer) {
 
-    function Legend(svgSelector) {
+        var radius = _radius || 10;
 
         function svg() {
             return d3.select(svgSelector);
+        }
+
+        function legendLayer() {
+            if(!_.isEmpty(layer)) {
+                return layer;
+            }
+            return svg();
         }
 
         function getSvgBoundingRectOfElement(selector) {
@@ -67,7 +74,6 @@ bottle.factory("Legend", function (container, _radius) {
 
         function createLegendList(elementList) {
             var legendList = [];
-            var path;
             var legendStr;
             var i, svgElement;
             for (i = 0; i < elementList.length; i++) {
@@ -107,7 +113,7 @@ bottle.factory("Legend", function (container, _radius) {
         }
 
         function appendLegend() {
-            var legend = svg().append("g")
+            var legend = legendLayer().append("g")
                 .attr("class", "legend off");
 
             legend.append("rect")

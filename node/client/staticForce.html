@@ -45,13 +45,18 @@
     var width = window.innerWidth;
     var height = window.innerHeight;
 
-    var legend = new Legend("svg.force", 1);
-
     var svg = d3.select("#force").append("svg")
         .attr("class", "force")
         .attr("width", width)
-        .attr("height", height * 2)
-        .on("click", function () {
+        .attr("height", height * 2);
+
+    var gNodes = svg.append("g");
+    var gLegend = svg.append("g")
+        .attr("class", "legend-layer");
+
+    var legend = new Legend("svg.force", 1, gLegend);
+
+    svg.on("click", function () {
             legend.switchLegend();
         })
         .on("mousemove", function () {
@@ -59,10 +64,6 @@
             legend.mouseMoved(evt[0], evt[1]);
         })
         .on("mouseout", legend.hideLegend);
-
-    var gLinks = svg.append("g");
-    var gTexts = svg.append("g");
-    var gNodes = svg.append("g");
 
     var color = d3.scaleOrdinal(d3.schemeCategory20);
 
@@ -85,13 +86,13 @@
             var currentTransform = null;
             function zoomed() {
                 currentTransform = d3.event.transform;
-                svg.attr("transform", currentTransform);
+                gNodes.attr("transform", currentTransform);
             }
 
             var zoom = d3.zoom()
                 .scaleExtent([0.5, 5])
                 .translateExtent([
-                    [-width, -height],
+                    [-1, -1],
                     [width * 2, height * 2]
                 ])
                 .on("zoom", zoomed);
