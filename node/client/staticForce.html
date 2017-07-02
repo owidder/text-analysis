@@ -90,11 +90,7 @@
             }
 
             var zoom = d3.zoom()
-                .scaleExtent([0.5, 5])
-                .translateExtent([
-                    [-1, -1],
-                    [width * 2, height * 2]
-                ])
+                .scaleExtent([1, 500])
                 .on("zoom", zoomed);
 
             svg.call(zoom);
