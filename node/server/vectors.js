@@ -8,6 +8,8 @@ var _relPath = require('./relPath');
 var util = require('./util');
 
 var VECTORS_FILE_PATH = '../python/python-lsi/data/vectors.csv';
+var FILENAMES_FILE_PATH = '../python/python-lsi/data/filenames.csv';
+var CLOUD_FILE_PATH = '../python/python-lsi/data/whole_cloud.csv';
 
 var vectors = {};
 
@@ -110,6 +112,49 @@ function addToLinks(fromRelPath, toRelPath, cos, links) {
     });
 }
 
+function processCloudLine(line, links, fromRelPath, relPaths) {
+    var parts = line.split("\t");
+    var i, index, value, toRelPath;
+    for(i = 0; i < parts.length; i += 2) {
+        index = parts[i];
+        value = parts[i+1];
+        toRelPath = relPaths[index];
+        addToLinks(fromRelPath, toRelPath, value, links);
+    }
+}
+
+function readRelPaths(nodes) {
+    var content = fs.readFileSync(FILENAMES_FILE_PATH, 'utf8');
+    var filenames = content.split("\n");
+    var relPaths = filenames.map(_relPath.makeRelPath);
+    relPaths.forEach(function (fromRelPath) {
+        addToNodes(fromRelPath, nodes);
+    });
+
+    return relPaths;
+}
+
+function readCosines(links, relPaths) {
+    var content = fs.readFileSync(CLOUD_FILE_PATH, 'utf8');
+    var lines = content.split("\n");
+    lines.forEach(function (line, index) {
+        var fromRelPath = relPaths[index];
+        processCloudLine(line, links, fromRelPath, relPaths);
+    });
+}
+
+function readTheCloud() {
+    var nodes = [];
+    var links = [];
+    var relPaths = readRelPaths(nodes);
+    readCosines(links, relPaths);
+
+    return {
+        nodes: nodes,
+        links: links
+    }
+}
+
 function theWholeCloud(minCount) {
     if(_.isEmpty(vectors)) {
         readVectors();
@@ -156,5 +201,6 @@ function theWholeCloud(minCount) {
 module.exports = {
     createHistoDataForFile: createHistoDataForFile,
     getAllFilesWithCosineBetween: getAllFilesWithCosineBetween,
-    theWholeCloud: theWholeCloud
+    theWholeCloud: theWholeCloud,
+    readTheCloud: readTheCloud
 };

@@ -158,10 +158,9 @@ router.get('/cosineBetween/*', function (req, res) {
     res.json(data);
 });
 
-router.get('/theWholeCloud/*', function (req, res) {
-    var minCount = req.originalUrl.substr('/api/theWholeCloud'.length + 1);
-    var theWholeCloud = vector.theWholeCloud(minCount);
-    res.json(theWholeCloud);
+router.get('/theWholeCloud', function (req, res) {
+    var theCloud = vector.readTheCloud();
+    res.json(theCloud);
 });
 
 router.get('/values/file/*', function (req, res) {
