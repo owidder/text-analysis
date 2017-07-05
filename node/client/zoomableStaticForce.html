@@ -9,14 +9,19 @@
             opacity: 0.7;
         }
 
+        #birdsview svg {
+            border-style: solid;
+            border-color: gray;
+        }
+
+        div.container {
+            width:100%;
+            margin: 0%;
+        }
+
     </style>
 </head>
 <body>
-<div class="progress">
-    <div id="progressbar" class="determinate" style="width: 0%"></div>
-</div>
-<input id="quantile-slider" value="0" type="range" min="0" max="50"/>
-<div id="force"></div>
 <script src="bower_components/bottlejs/dist/bottle.js"></script>
 <script>var bottle = new Bottle();</script>
 <script src="bower_components/lodash/dist/lodash.js"></script>
@@ -24,45 +29,92 @@
 
 <script src="js/util/simplePromise.js"></script>
 <script src="js/util/util.js"></script>
-<script src="js/legend.js"></script>
 
 <script src="bower_components/d3/d3.min.js"></script>
 <script src="js/util/stuff.js"></script>
 <link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.css"
       media="screen,projection"/>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+
+<div class="">
+    <div class="row">
+        <div class="col s12">
+            <div class="progress">
+                <div id="progressbar" class="determinate" style="width: 0%"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <input id="quantile-slider" value="0" type="range" min="0" max="50"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s3">
+            <div id="birdsview"></div>
+        </div>
+        <div class="col s9">
+            <div id="zoom"></div>
+        </div>
+    </div>
+</div>
+
 <script>
 
-    var PINCH_FACTOR = 7;
+    var PINCH_FACTOR = 12;
 
     var path = bottle.container.util.param("path", "");
-    var Legend = bottle.container.Legend;
 
-    var width = window.innerWidth;
-    var height = window.innerHeight;
+    var birdviewWidth = window.innerWidth/4.3;
+    var birdsviewHeight = window.innerHeight/4.3;
 
-    var svg = d3.select("#force").append("svg")
+    var width = birdviewWidth*3;
+    var height = birdsviewHeight*3;
+
+    var birdviewSvg = d3.select("#birdsview").append("svg")
         .attr("class", "force")
+        .attr("width", birdviewWidth+20)
+        .attr("height", birdsviewHeight+20);
+
+    var zoomSvg = d3.select("#zoom").append("svg")
+        .attr("class", "zoom")
         .attr("width", width)
-        .attr("height", height * 2);
+        .attr("height", height);
 
-    var gNodes = svg.append("g");
-    var gTexts = svg.append("g");
-    var gLegend = svg.append("g")
-        .attr("class", "legend-layer");
-
-    var legend = new Legend("svg.force", 1, gLegend);
-
-    svg.on("click", function () {
-            legend.switchLegend();
-        })
-        .on("mousemove", function () {
-            var evt = d3.mouse(this);
-            legend.mouseMoved(evt[0], evt[1]);
-        })
-        .on("mouseout", legend.hideLegend);
+    var gNodes = birdviewSvg.append("g");
 
     var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+    function getDimensions(nodes) {
+        var minX = Number.MAX_VALUE;
+        var minY = Number.MAX_VALUE;
+        var maxX = -Number.MAX_VALUE;
+        var maxY = -Number.MAX_VALUE;
+
+        nodes.forEach(function (d) {
+            if(d.x < minX) {
+                minX = d.x;
+            }
+            if(d.y < minY) {
+                minY = d.y;
+            }
+            if(d.x > maxX) {
+                maxX = d.x;
+            }
+            if(d.y > maxY) {
+                maxY = d.y;
+            }
+        });
+
+        return {
+            width: maxX - minX,
+            height: maxY - minY,
+            maxX: maxX,
+            maxY: maxY,
+            minX: minX,
+            minY: minY
+        }
+    }
 
     var simulation = d3.forceSimulation()
         .force("link", d3.forceLink().id(function (d) {
@@ -71,30 +123,9 @@
             return -d.value;
         }))
         .force("charge", d3.forceManyBody().strength(-10))
-        .force("center", d3.forceCenter(width * PINCH_FACTOR/2, height * PINCH_FACTOR/2));
+        .force("center", d3.forceCenter(birdviewWidth * PINCH_FACTOR/2, birdsviewHeight * PINCH_FACTOR/2));
 
     function drawForce() {
-        var zoomFactor = 1;
-
-        var zoom = d3.zoom()
-            .scaleExtent([1, 200])
-            .on("zoom", function () {
-                zoomed();
-                zoomFactor = d3.event.transform.k;
-                drawTexts();
-            });
-
-        svg.call(zoom);
-
-        var textShown = false;
-
-        var currentTransform = null;
-        function zoomed() {
-            currentTransform = d3.event.transform;
-            gNodes.attr("transform", currentTransform);
-            gTexts.attr("transform", currentTransform);
-        }
-
         var nodes;
         var links;
 
@@ -118,65 +149,23 @@
                     var parts = d.name.split(".");
                     var type = parts[parts.length-1];
                     return color(type);
-                })
-                .attr("_legend", function (d) {
-                    return d.name;
-                })
-                .call(stuff.drag);
+                });
 
             selectionWithData.exit().remove();
         }
 
-        function drawTexts() {
-            if(zoomFactor > 10) {
-                textShown = true;
-                var selectionWithData = gTexts.selectAll("text.node")
-                    .data(nodes, function (d) {
-                        return d.name;
-                    });
-
-                selectionWithData.enter()
-                    .append("text")
-                    .attr("class", "node")
-                    .text(function (d) {
-                        return d.shortName;
-                    });
-
-                selectionWithData.exit().remove();
-
-                updateText();
-            }
-            else {
-                textShown = false;
-                gTexts.selectAll("text.node").data([]).exit().remove();
-            }
-        }
-
-        function updateText() {
-            if(textShown) {
-                gTexts.selectAll("text.node")
-                    .attr("x", function (d) {
-                        return d.x / PINCH_FACTOR;
-                    })
-                    .attr("y", function (d) {
-                        return d.y / PINCH_FACTOR;
-                    })
-                    .attr("style", function () {
-                        return "font-size: " + (.4 / zoomFactor) + "em;";
-                    })
-            }
-        }
-
         function ticked() {
+            var dimensions = getDimensions(nodes);
+            var pinchX = birdviewWidth / dimensions.width;
+            var pinchY = birdsviewHeight / dimensions.height;
+
             gNodes.selectAll("circle.node")
                 .attr("cx", function (d) {
-                    return d.x / PINCH_FACTOR;
+                    return (d.x - dimensions.minX) * pinchX + 10;
                 })
                 .attr("cy", function (d) {
-                    return d.y / PINCH_FACTOR;
+                    return (d.y - dimensions.minY) * pinchY + 10;
                 });
-
-            updateText();
         }
 
         function startForce() {
@@ -204,7 +193,7 @@
 
         var threshold = document.getElementById("quantile-slider").value;
 
-        d3.json('/api/theWholeCloud/50', function (error, data) {
+        d3.json('/api/theWholeCloud/70', function (error, data) {
             nodes = data.nodes;
             links = data.links;
             drawNodes();
@@ -212,7 +201,6 @@
         });
     }
 
-    legend.appendLegend();
     drawForce();
 
 </script>

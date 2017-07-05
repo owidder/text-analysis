@@ -100,8 +100,10 @@ function createHistoDataForFile(fileRelPath) {
 function addToNodes(relPath, nodes) {
     var existingNode = nodes.find(util.findFunc("name", relPath));
     if(_.isEmpty(existingNode)) {
+        var shortName = relPath.split("/").slice(-1)[0];
         nodes.push({
-            name: relPath
+            name: relPath,
+            shortName: shortName
         });
     }
 }
