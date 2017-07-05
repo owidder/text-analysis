@@ -61,12 +61,12 @@
 
 <script>
 
-    var PINCH_FACTOR = 12;
-
     var path = bottle.container.util.param("path", "");
 
-    var birdviewWidth = window.innerWidth/4.3;
-    var birdsviewHeight = window.innerHeight/4.3;
+    var BIRDSVIEW_PINCH_FACTOR = 4.3;
+
+    var birdviewWidth = window.innerWidth / BIRDSVIEW_PINCH_FACTOR;
+    var birdsviewHeight = window.innerHeight / BIRDSVIEW_PINCH_FACTOR;
 
     var width = birdviewWidth*3;
     var height = birdsviewHeight*3;
@@ -123,7 +123,7 @@
             return -d.value;
         }))
         .force("charge", d3.forceManyBody().strength(-10))
-        .force("center", d3.forceCenter(birdviewWidth * PINCH_FACTOR/2, birdsviewHeight * PINCH_FACTOR/2));
+        .force("center", d3.forceCenter(birdviewWidth/2, birdsviewHeight/2));
 
     function drawForce() {
         var nodes;
