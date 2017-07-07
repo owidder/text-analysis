@@ -7,6 +7,7 @@
 bottle.factory("Legend", function (container) {
 
     var util = container.util;
+    var svgUtil = container.svgUtil;
 
     function Legend(svgSelector, _radius, layer) {
 
@@ -56,7 +57,7 @@ bottle.factory("Legend", function (container) {
         }
 
         function getNearbyBubblesForlegends(x, y) {
-            var adapted = adaptPositionToSvg(x, y);
+            var adapted = svgUtil.adaptPositionToSvg(x, y, svgSelector);
             var forlegends = document.querySelectorAll(".forlegend");
             var i, forlegend, boundingRect;
             var nearbyBubblesForlegends = [];
