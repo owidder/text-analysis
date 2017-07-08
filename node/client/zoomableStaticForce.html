@@ -67,7 +67,6 @@
 <script>
 
     var path = bottle.container.util.param("path", "");
-    var svgUtil = bottle.container.svgUtil;
 
     var BIRDSVIEW_PINCH_FACTOR = 4.3;
 
@@ -77,19 +76,16 @@
     var width = birdviewWidth*3;
     var height = birdsviewHeight*3;
 
-    var zoomWidth = 15;
-    var zoomHeight = 15;
-
-    var zoomFactorX = (width / zoomWidth);
-    var zoomFactorY = (height / zoomHeight);
-
     var birdviewSvg = d3.select("#birdsview").append("svg")
         .attr("class", "force")
         .attr("width", birdviewWidth+20)
         .attr("height", birdsviewHeight+20)
         .on("mousemove", function () {
             var evt = d3.mouse(this);
-            zoom(evt[0], evt[1]);
+            refresh({
+                zoomX: evt[0],
+                zoomY: evt[1]
+            });
         });
 
     var zoomSvg = d3.select("#zoom").append("svg")
@@ -101,18 +97,43 @@
     var zoomCenterX = zoomSvgRect.width/2;
     var zoomCenterY = zoomSvgRect.height/2;
 
-    var birdsviewNodes = birdviewSvg.append("g");
-
-    var zoomNodes = zoomSvg.append("g");
     var viewfinderrect = birdviewSvg.node().createSVGRect();
+
+    var data = {};
+
+    function refresh(newData) {
+        if(_.isNumber(newData.zoomX)) {
+            data.zoomX = newData.zoomX;
+        }
+
+        if(_.isNumber(newData.zoomY)) {
+            data.zoomY = newData.zoomY;
+        }
+
+        if(_.isNumber(newData.viewfinderFactor)) {
+            data.viewfinderFactor = newData.viewfinderFactor;
+        }
+
+        var viewfinderWidth = birdviewWidth * data.viewfinderFactor;
+        var viewfinderHeight = birdsviewHeight * data.viewfinderFactor;
+        var zoomFactorX = (width / viewfinderWidth);
+        var zoomFactorY = (height / viewfinderHeight);
+
+        var nodeList = computeNodeList(data.zoomX, data.zoomY, viewfinderWidth, viewfinderHeight);
+        drawZoom(nodeList, data.zoomX, data.zoomY, zoomFactorX, zoomFactorY);
+    }
+
+    var birdsviewNodesG = birdviewSvg.append("g");
+
+    var zoomNodesG = zoomSvg.append("g");
 
     var color = d3.scaleOrdinal(d3.schemeCategory20);
 
-    function getNodeList(x, y) {
-        viewfinderrect.x = x - zoomWidth/2;
-        viewfinderrect.y = y - zoomHeight/2;
-        viewfinderrect.width = zoomWidth;
-        viewfinderrect.height = zoomHeight;
+    function computeNodeList(zoomX, zoomY, viewfinderWidth, viewfinderHeight) {
+        viewfinderrect.x = zoomX - viewfinderWidth/2;
+        viewfinderrect.y = zoomY - viewfinderHeight/2;
+        viewfinderrect.width = viewfinderWidth;
+        viewfinderrect.height = viewfinderHeight;
 
         var circleList = birdviewSvg.node().getIntersectionList(viewfinderrect, null);
         var nodeList = [];
@@ -121,11 +142,6 @@
         });
 
         return nodeList;
-    }
-
-    function zoom(x, y) {
-        var nodeList = getNodeList(x, y);
-        drawZoom(nodeList, x, y);
     }
 
     function getDimensions(nodes) {
@@ -174,9 +190,9 @@
         return color(type);
     }
 
-    function drawZoom(nodes, zoomX, zoomY) {
-        var selectionWithData = zoomNodes.selectAll("circle.node")
-            .data(nodes, function (d) {
+    function drawZoom(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY) {
+        var selectionWithData = zoomNodesG.selectAll("circle.node")
+            .data(zoomNodeList, function (d) {
                 return d.name;
             });
 
@@ -189,17 +205,15 @@
 
         function zx(x) {
             var diffX = x - zoomX;
-            var _zx = zoomCenterX + diffX*zoomFactorX;
-            return _zx;
+            return zoomCenterX + diffX*zoomFactorX;
         }
 
         function zy(y) {
             var diffY = y - zoomY;
-            var _zy = zoomCenterY + diffY*zoomFactorY;
-            return _zy;
+            return zoomCenterY + diffY*zoomFactorY;
         }
 
-        zoomNodes.selectAll("circle.node")
+        zoomNodesG.selectAll("circle.node")
             .attr("r", zoomFactorX/2)
             .attr("cx", function (d) {
                 return zx(d.pcx);
@@ -216,7 +230,7 @@
         var links;
 
         function drawNodes() {
-            var selectionWithData = birdsviewNodes.selectAll("circle.node")
+            var selectionWithData = birdsviewNodesG.selectAll("circle.node")
                 .data(nodes, function (d) {
                     return d.name;
                 });
@@ -237,7 +251,7 @@
             var pinchX = birdviewWidth / dimensions.width;
             var pinchY = birdsviewHeight / dimensions.height;
 
-            birdsviewNodes.selectAll("circle.node")
+            birdsviewNodesG.selectAll("circle.node")
                 .attr("cx", function (d) {
                     d.pcx = (d.x - dimensions.minX) * pinchX + 10;
                     return d.pcx;
@@ -246,6 +260,8 @@
                     d.pcy = (d.y - dimensions.minY) * pinchY + 10;
                     return d.pcy;
                 });
+
+            refresh({});
         }
 
         function startForce() {
@@ -282,6 +298,11 @@
     }
 
     drawForce();
+    refresh({
+        zoomX: birdviewWidth/2,
+        zoomY: birdsviewHeight/2,
+        viewfinderFactor: 0.2
+    });
 
 </script>
 </body>
