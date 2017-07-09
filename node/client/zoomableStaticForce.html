@@ -27,6 +27,10 @@
             opacity: .5;
         }
 
+        div.slider-input {
+            font-size: .5em;
+        }
+
     </style>
 </head>
 <body>
@@ -55,11 +59,17 @@
         </div>
     </div>
     <div class="row">
-        <div class="col s6">
-            <input id="viewfinderfactor-slider" value="20" type="range" min="1" max="100" onchange="viewfinderFactorChanged()"/>
+        <div class="col s4 slider-input">
+            Viewfinder size
+            <input id="viewfinderfactor-slider" value="95" type="range" min="1" max="100" onchange="viewfinderFactorChanged()"/>
         </div>
-        <div class="col s6">
+        <div class="col s4 slider-input">
+            Radius size
             <input id="radiusfactor-slider" value="100" type="range" min="10" max="100" onchange="radiusFactorChanged()"/>
+        </div>
+        <div class="col s4 slider-input">
+            Threshold
+            <input id="threshold-slider" value="70" type="range" min="50" max="99" onchange="thresholdChanged()"/>
         </div>
     </div>
     <div class="row">
@@ -74,7 +84,7 @@
 
 <script>
 
-    var path = bottle.container.util.param("path", "");
+    var threshold = bottle.container.util.param("t", "70");
     var Legend = bottle.container.Legend;
 
     var BIRDSVIEW_PINCH_FACTOR = 4.3;
@@ -104,10 +114,6 @@
                 });
             }
         });
-
-    function preventDefault() {
-
-    }
 
     var legend = new Legend("svg.zoom");
 
@@ -166,6 +172,11 @@
         var radiusFactorStr = document.getElementById("radiusfactor-slider").value;
         var radiusFactor = Number(radiusFactorStr) / 100;
         refresh({radiusFactor: radiusFactor});
+    }
+
+    function thresholdChanged() {
+        var thresholdStr = document.getElementById("threshold-slider").value;
+        window.location.href = "/zoomableStaticForce.html?t=" + thresholdStr;
     }
 
     var birdsviewNodesG = birdviewSvg.append("g");
@@ -352,13 +363,20 @@
             }, 1000);
         }
 
-        d3.json('/api/theWholeCloud/70', function (error, data) {
+        d3.json('/api/theWholeCloud/' + threshold, function (error, data) {
             nodes = data.nodes;
             links = data.links;
             drawNodes();
             startForce();
         });
     }
+
+    function init() {
+        var slider = document.getElementById("threshold-slider");
+        slider.value = threshold;
+    }
+
+    init();
 
     legend.appendLegend();
     drawForce();
@@ -368,6 +386,8 @@
         viewfinderFactor: 0.2,
         radiusFactor: 1
     });
+    viewfinderFactorChanged();
+    radiusFactorChanged();
 
 </script>
 </body>
