@@ -20,7 +20,10 @@
         }
 
         .viewfinder {
-            opacity: 0;
+            stroke: black;
+            stroke-width: 2;
+            fill: none;
+            opacity: .5;
         }
 
     </style>
@@ -50,8 +53,11 @@
         </div>
     </div>
     <div class="row">
-        <div class="col s12">
-            <input id="quantile-slider" value="0" type="range" min="0" max="50"/>
+        <div class="col s6">
+            <input id="viewfinderfactor-slider" value="20" type="range" min="1" max="100" onchange="viewfinderFactorChanged()"/>
+        </div>
+        <div class="col s6">
+            <input id="radiusfactor-slider" value="100" type="range" min="10" max="100" onchange="radiusFactorChanged()"/>
         </div>
     </div>
     <div class="row">
@@ -81,12 +87,17 @@
         .attr("width", birdviewWidth+20)
         .attr("height", birdsviewHeight+20)
         .on("mousemove", function () {
+            d3.event.preventDefault();
             var evt = d3.mouse(this);
             refresh({
                 zoomX: evt[0],
                 zoomY: evt[1]
             });
         });
+
+    function preventDefault() {
+
+    }
 
     var zoomSvg = d3.select("#zoom").append("svg")
         .attr("class", "zoom")
@@ -114,20 +125,52 @@
             data.viewfinderFactor = newData.viewfinderFactor;
         }
 
+        if(_.isNumber(newData.radiusFactor)) {
+            data.radiusFactor = newData.radiusFactor;
+        }
+
         var viewfinderWidth = birdviewWidth * data.viewfinderFactor;
         var viewfinderHeight = birdsviewHeight * data.viewfinderFactor;
         var zoomFactorX = (width / viewfinderWidth);
         var zoomFactorY = (height / viewfinderHeight);
 
         var nodeList = computeNodeList(data.zoomX, data.zoomY, viewfinderWidth, viewfinderHeight);
-        drawZoom(nodeList, data.zoomX, data.zoomY, zoomFactorX, zoomFactorY);
+        drawViewfinder();
+        drawZoom(nodeList, data.zoomX, data.zoomY, zoomFactorX, zoomFactorY, data.radiusFactor);
+    }
+
+    function viewfinderFactorChanged() {
+        var viewfinderFactorStr = document.getElementById("viewfinderfactor-slider").value;
+        var viewfinderFactor = Number(viewfinderFactorStr) / 100;
+        refresh({viewfinderFactor: viewfinderFactor});
+    }
+
+    function radiusFactorChanged() {
+        var radiusFactorStr = document.getElementById("radiusfactor-slider").value;
+        var radiusFactor = Number(radiusFactorStr) / 100;
+        refresh({radiusFactor: radiusFactor});
     }
 
     var birdsviewNodesG = birdviewSvg.append("g");
+    var viewfinderG = birdviewSvg.append("g");
 
     var zoomNodesG = zoomSvg.append("g");
 
     var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+    function drawViewfinder() {
+        viewfinderG.selectAll("rect.viewfinder")
+            .data([viewfinderrect])
+            .enter()
+            .append("rect")
+            .attr("class", "viewfinder");
+
+        viewfinderG.selectAll("rect.viewfinder")
+            .attr("x", viewfinderrect.x)
+            .attr("y", viewfinderrect.y)
+            .attr("width", viewfinderrect.width)
+            .attr("height", viewfinderrect.height);
+    }
 
     function computeNodeList(zoomX, zoomY, viewfinderWidth, viewfinderHeight) {
         viewfinderrect.x = zoomX - viewfinderWidth/2;
@@ -135,10 +178,12 @@
         viewfinderrect.width = viewfinderWidth;
         viewfinderrect.height = viewfinderHeight;
 
-        var circleList = birdviewSvg.node().getIntersectionList(viewfinderrect, null);
+        var elementList = birdviewSvg.node().getIntersectionList(viewfinderrect, null);
         var nodeList = [];
-        circleList.forEach(function (circle) {
-            return nodeList.push(circle.__data__);
+        elementList.forEach(function (element) {
+            if(element.tagName == "circle") {
+                nodeList.push(element.__data__);
+            }
         });
 
         return nodeList;
@@ -190,7 +235,7 @@
         return color(type);
     }
 
-    function drawZoom(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY) {
+    function drawZoom(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor) {
         var selectionWithData = zoomNodesG.selectAll("circle.node")
             .data(zoomNodeList, function (d) {
                 return d.name;
@@ -214,7 +259,7 @@
         }
 
         zoomNodesG.selectAll("circle.node")
-            .attr("r", zoomFactorX/2)
+            .attr("r", zoomFactorX * radiusFactor)
             .attr("cx", function (d) {
                 return zx(d.pcx);
             })
@@ -287,8 +332,6 @@
             }, 1000);
         }
 
-        var threshold = document.getElementById("quantile-slider").value;
-
         d3.json('/api/theWholeCloud/70', function (error, data) {
             nodes = data.nodes;
             links = data.links;
@@ -301,7 +344,8 @@
     refresh({
         zoomX: birdviewWidth/2,
         zoomY: birdsviewHeight/2,
-        viewfinderFactor: 0.2
+        viewfinderFactor: 0.2,
+        radiusFactor: 1
     });
 
 </script>
