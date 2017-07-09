@@ -22,13 +22,19 @@
 
         .viewfinder {
             stroke: black;
-            stroke-width: 2;
+            stroke-width: 1;
             fill: none;
             opacity: .5;
         }
 
         div.slider-input {
             font-size: .5em;
+        }
+
+        line.viewfinder {
+            stroke: black;
+            stroke-width: 1;
+            opacity: .2;
         }
 
     </style>
@@ -195,11 +201,38 @@
             .append("rect")
             .attr("class", "viewfinder");
 
+        viewfinderG.selectAll("line.viewfinder.h")
+            .data([viewfinderrect])
+            .enter()
+            .append("line")
+            .attr("class", "viewfinder h");
+
+        viewfinderG.selectAll("line.viewfinder.v")
+            .data([viewfinderrect])
+            .enter()
+            .append("line")
+            .attr("class", "viewfinder v");
+
         viewfinderG.selectAll("rect.viewfinder")
             .attr("x", viewfinderrect.x)
             .attr("y", viewfinderrect.y)
             .attr("width", viewfinderrect.width)
             .attr("height", viewfinderrect.height);
+
+        var viewfinderCenterX = viewfinderrect.x + viewfinderrect.width/2;
+        var viewfinderCenterY = viewfinderrect.y + viewfinderrect.height/2;
+
+        viewfinderG.selectAll("line.viewfinder.h")
+            .attr("x1", "0")
+            .attr("y1", viewfinderCenterY)
+            .attr("x2", birdviewWidth+20)
+            .attr("y2", viewfinderCenterY);
+
+        viewfinderG.selectAll("line.viewfinder.v")
+            .attr("x1", viewfinderCenterX)
+            .attr("y1", 0)
+            .attr("x2", viewfinderCenterX)
+            .attr("y2", birdsviewHeight+20);
     }
 
     function computeNodeList(zoomX, zoomY, viewfinderWidth, viewfinderHeight) {
