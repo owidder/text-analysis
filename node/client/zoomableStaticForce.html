@@ -5,9 +5,9 @@
     <style>
 
         circle.zoom {
-            stroke-width: 2;
+            stroke-width: 1;
             stroke: white;
-            opacity: .7;
+            opacity: .5;
         }
 
         svg {
@@ -37,7 +37,7 @@
 <script src="bower_components/bottlejs/dist/bottle.js"></script>
 <script>var bottle = new Bottle();</script>
 <script src="bower_components/lodash/dist/lodash.js"></script>
-<script src="bower_components/crypto-js/crypto-js.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 
 <script src="js/util/simplePromise.js"></script>
 <script src="js/util/util.js"></script>
@@ -49,7 +49,9 @@
 <link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.css"
       media="screen,projection"/>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/spinner.css">
 
+<div id="spinner" class="loading">Loading&#8230;</div>
 <div class="">
     <div class="row">
         <div class="col s12">
@@ -61,7 +63,7 @@
     <div class="row">
         <div class="col s4 slider-input">
             Viewfinder size
-            <input id="viewfinderfactor-slider" value="95" type="range" min="1" max="100" onchange="viewfinderFactorChanged()"/>
+            <input id="viewfinderfactor-slider" value="30" type="range" min="1" max="100" onchange="viewfinderFactorChanged()"/>
         </div>
         <div class="col s4 slider-input">
             Radius size
@@ -120,7 +122,7 @@
     var zoomSvg = d3.select("#zoom").append("svg")
         .attr("class", "zoom")
         .attr("width", width*2)
-        .attr("height", height)
+        .attr("height", height*2)
         .on("mousemove", function () {
             var evt = d3.mouse(this);
             legend.mouseMoved(evt[0], evt[1]);
@@ -129,7 +131,7 @@
 
     var zoomSvgRect = zoomSvg.node().getBoundingClientRect();
     var zoomCenterX = zoomSvgRect.width/4;
-    var zoomCenterY = zoomSvgRect.height/2;
+    var zoomCenterY = zoomSvgRect.height/4;
 
     var viewfinderrect = birdviewSvg.node().createSVGRect();
 
@@ -363,7 +365,9 @@
             }, 1000);
         }
 
+        $("#spinner").show();
         d3.json('/api/theWholeCloud/' + threshold, function (error, data) {
+            $("#spinner").hide();
             nodes = data.nodes;
             links = data.links;
             drawNodes();
