@@ -24,7 +24,7 @@
             stroke: black;
             stroke-width: 1;
             fill: none;
-            opacity: .5;
+            opacity: .3;
         }
 
         div.slider-input {
@@ -35,6 +35,14 @@
             stroke: black;
             stroke-width: 1;
             opacity: .2;
+        }
+
+        g.move rect {
+            fill: red;
+        }
+
+        g.no-move rect {
+            fill: grey;
         }
 
     </style>
@@ -195,6 +203,8 @@
     var color = d3.scaleOrdinal(d3.schemeCategory20);
 
     function drawViewfinder() {
+        viewfinderG.attr("class", moveMode ? "move" : "no-move");
+
         viewfinderG.selectAll("rect.viewfinder")
             .data([viewfinderrect])
             .enter()
