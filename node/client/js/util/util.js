@@ -46,6 +46,14 @@ bottle.factory("util", function (container) {
         return s4() + s4();
     };
 
+    util.pushIfNotAlreadyThere = function(array, element) {
+        if(array.indexOf(element) < 0) {
+            array.push(element);
+        }
+    };
+
+
+
     util.compare = function(a, b) {
         if(a < b) {
             return -1

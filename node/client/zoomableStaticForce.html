@@ -45,6 +45,12 @@
             fill: grey;
         }
 
+        line.link.zoom {
+            stroke: black;
+            opacity: .3;
+            stroke-width: 1px;
+        }
+
     </style>
 </head>
 <body>
@@ -83,9 +89,20 @@
             Radius size
             <input id="radiusfactor-slider" value="100" type="range" min="10" max="100" onchange="radiusFactorChanged()"/>
         </div>
-        <div class="col s4 slider-input">
+        <div class="col s3 slider-input">
             Threshold
             <input id="threshold-slider" value="70" type="range" min="50" max="99" onchange="thresholdChanged()"/>
+        </div>
+        <div class="col s1 slider-input">
+            Links
+            <div class="switch">
+                <label>
+                    Off
+                    <input type="checkbox" id="linkswitch" onchange="linkSwitchChanged()">
+                    <span class="lever"></span>
+                    On
+                </label>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -102,6 +119,7 @@
 
     var threshold = bottle.container.util.param("t", "70");
     var Legend = bottle.container.Legend;
+    var util = bottle.container.util;
 
     var BIRDSVIEW_PINCH_FACTOR = 4.3;
 
@@ -113,22 +131,29 @@
 
     var moveMode = false;
 
+    function mouseMoved(evt) {
+        if(moveMode) {
+            d3.event.preventDefault();
+            refresh({
+                zoomX: evt[0],
+                zoomY: evt[1]
+            });
+        }
+        else {
+            refresh({});
+        }
+    }
+
     var birdviewSvg = d3.select("#birdsview").append("svg")
         .attr("class", "force")
         .attr("width", birdviewWidth+20)
         .attr("height", birdsviewHeight+20)
         .on("click", function () {
             moveMode = !moveMode;
+            mouseMoved(d3.mouse(this));
         })
         .on("mousemove", function () {
-            if(moveMode) {
-                d3.event.preventDefault();
-                var evt = d3.mouse(this);
-                refresh({
-                    zoomX: evt[0],
-                    zoomY: evt[1]
-                });
-            }
+            mouseMoved(d3.mouse(this));
         });
 
     var legend = new Legend("svg.zoom");
@@ -151,6 +176,24 @@
 
     var data = {};
 
+    function getLinksFromNodeList(nodeList) {
+        var links = [];
+        nodeList.forEach(function (node) {
+            if(!_.isEmpty(node.sourceLinks)) {
+                node.sourceLinks.forEach(function (link) {
+                    util.pushIfNotAlreadyThere(links, link);
+                })
+            }
+            if(!_.isEmpty(node.targetLinks)) {
+                node.targetLinks.forEach(function (link) {
+                    util.pushIfNotAlreadyThere(links, link);
+                })
+            }
+        });
+
+        return links;
+    }
+
     function refresh(newData) {
         if(_.isNumber(newData.zoomX)) {
             data.zoomX = newData.zoomX;
@@ -168,14 +211,19 @@
             data.radiusFactor = newData.radiusFactor;
         }
 
+        if(_.isNumber(newData.linkFactor)) {
+            data.linkFactor = newData.linkFactor;
+        }
+
         var viewfinderWidth = birdviewWidth * data.viewfinderFactor;
         var viewfinderHeight = birdsviewHeight * data.viewfinderFactor;
         var zoomFactorX = (width / viewfinderWidth);
         var zoomFactorY = (height / viewfinderHeight);
 
         var nodeList = computeNodeList(data.zoomX, data.zoomY, viewfinderWidth, viewfinderHeight);
+
         drawViewfinder();
-        drawZoom(nodeList, data.zoomX, data.zoomY, zoomFactorX, zoomFactorY, data.radiusFactor);
+        drawZoom(nodeList, data.zoomX, data.zoomY, zoomFactorX, zoomFactorY, data.radiusFactor, data.linkFactor);
     }
 
     function viewfinderFactorChanged() {
@@ -190,6 +238,16 @@
         refresh({radiusFactor: radiusFactor});
     }
 
+    function linkSwitchChanged() {
+        var checked = document.getElementById("linkswitch").checked;
+        if(checked) {
+            refresh({linkFactor: .1});
+        }
+        else {
+            refresh({linkFactor: 0});
+        }
+    }
+
     function thresholdChanged() {
         var thresholdStr = document.getElementById("threshold-slider").value;
         window.location.href = "/zoomableStaticForce.html?t=" + thresholdStr;
@@ -198,6 +256,7 @@
     var birdsviewNodesG = birdviewSvg.append("g");
     var viewfinderG = birdviewSvg.append("g");
 
+    var zoomLinksG = zoomSvg.append("g");
     var zoomNodesG = zoomSvg.append("g");
 
     var color = d3.scaleOrdinal(d3.schemeCategory20);
@@ -308,13 +367,23 @@
         return color(type);
     }
 
-    function drawZoom(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor) {
-        var selectionWithData = zoomNodesG.selectAll("circle.node")
+    function zx(x, zoomX, zoomFactorX) {
+        var diffX = x - zoomX;
+        return zoomCenterX + diffX*zoomFactorX;
+    }
+
+    function zy(y, zoomY, zoomFactorY) {
+        var diffY = y - zoomY;
+        return zoomCenterY + diffY*zoomFactorY;
+    }
+
+    function drawZoomNodes(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor) {
+        var nodesWithData = zoomNodesG.selectAll("circle.node")
             .data(zoomNodeList, function (d) {
                 return d.name;
             });
 
-        selectionWithData.enter()
+        nodesWithData.enter()
             .append("circle")
             .attr("class", "node forlegend zoom")
             .attr("_legend", function (d) {
@@ -324,31 +393,62 @@
                 return colorForNodeName(d.name);
             });
 
-        function zx(x) {
-            var diffX = x - zoomX;
-            return zoomCenterX + diffX*zoomFactorX;
-        }
-
-        function zy(y) {
-            var diffY = y - zoomY;
-            return zoomCenterY + diffY*zoomFactorY;
-        }
-
         zoomNodesG.selectAll("circle.node")
             .attr("r", zoomFactorX * radiusFactor)
             .attr("cx", function (d) {
-                return zx(d.pcx);
+                return zx(d.pcx, zoomX, zoomFactorX);
             })
             .attr("cy", function (d) {
-                return zy(d.pcy);
+                return zy(d.pcy, zoomY, zoomFactorY);
             });
 
-        selectionWithData.exit().remove();
+        nodesWithData.exit().remove();
+    }
+
+    function drawZoomLinks(zoomLinkList, zoomX, zoomY, zoomFactorX, zoomFactorY, linkFactor) {
+        var linksWithData = zoomLinksG.selectAll("line.link")
+            .data(zoomLinkList, function (d) {
+                return d.source.name + "-" + d.target.name;
+            });
+
+        linksWithData.enter()
+            .append("line")
+            .attr("class", "link zoom");
+
+        zoomLinksG.selectAll("line.link")
+            .attr("style", "opacity: " + linkFactor + ";")
+            .attr("x1", function (d) {
+                return zx(d.source.pcx, zoomX, zoomFactorX);
+            })
+            .attr("y1", function (d) {
+                return zy(d.source.pcy, zoomY, zoomFactorY);
+            })
+            .attr("x2", function (d) {
+                return zx(d.target.pcx, zoomX, zoomFactorX)
+            })
+            .attr("y2", function (d) {
+                return zy(d.target.pcy, zoomY, zoomFactorY);
+            });
+
+        linksWithData.exit().remove();
+    }
+
+    function drawZoom(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor, linkFactor) {
+
+        drawZoomNodes(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor);
+
+        if(linkFactor > 0) {
+            var links = getLinksFromNodeList(zoomNodeList);
+            drawZoomLinks(links, zoomX, zoomY, zoomFactorX, zoomFactorY, linkFactor);
+        }
+        else {
+            drawZoomLinks([], zoomX, zoomY, zoomFactorX, zoomFactorY, linkFactor);
+        }
     }
 
     function drawForce() {
-        var nodes;
-        var links;
+        var nodes, links;
+        var allLinksAddedToNodes = false;
 
         function drawNodes() {
             var selectionWithData = birdsviewNodesG.selectAll("circle.node")
@@ -367,7 +467,46 @@
             selectionWithData.exit().remove();
         }
 
+        function addLinkToNodeSourceList(link) {
+            var node = link.source;
+            if(node.sourceLinks == null) {
+                node.sourceLinks = [];
+            }
+            node.sourceLinks.push(link);
+        }
+
+        function addLinkToNodeTargetList(link) {
+            var node = link.target;
+            if(node.targetLinks == null) {
+                node.targetLinks = [];
+            }
+            node.targetLinks.push(link);
+        }
+
+        function addLinksToNodes() {
+            if(!allLinksAddedToNodes) {
+                allLinksAddedToNodes = true;
+                links.forEach(function (link) {
+                    if(link.source != null) {
+                        if(link.source.sourceLink == null) {
+                            allLinksAddedToNodes = false;
+                            addLinkToNodeSourceList(link)
+                        }
+                        if(link.source.targetLink == null) {
+                            allLinksAddedToNodes = false;
+                            addLinkToNodeTargetList(link);
+                        }
+                    }
+                    else {
+                        allLinksAddedToNodes = false;
+                    }
+                });
+            }
+        }
+
         function ticked() {
+            addLinksToNodes();
+
             var dimensions = getDimensions(nodes);
             var pinchX = birdviewWidth / dimensions.width;
             var pinchY = birdsviewHeight / dimensions.height;
