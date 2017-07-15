@@ -211,8 +211,8 @@
             data.radiusFactor = newData.radiusFactor;
         }
 
-        if(_.isNumber(newData.linkFactor)) {
-            data.linkFactor = newData.linkFactor;
+        if(_.isNumber(newData.withLinks)) {
+            data.withLinks = newData.withLinks;
         }
 
         var viewfinderWidth = birdviewWidth * data.viewfinderFactor;
@@ -241,10 +241,10 @@
     function linkSwitchChanged() {
         var checked = document.getElementById("linkswitch").checked;
         if(checked) {
-            refresh({linkFactor: .1});
+            refresh({withLinks: 1});
         }
         else {
-            refresh({linkFactor: 0});
+            refresh({withLinks: 0});
         }
     }
 
@@ -405,7 +405,7 @@
         nodesWithData.exit().remove();
     }
 
-    function drawZoomLinks(zoomLinkList, zoomX, zoomY, zoomFactorX, zoomFactorY, linkFactor) {
+    function drawZoomLinks(zoomLinkList, zoomX, zoomY, zoomFactorX, zoomFactorY) {
         var linksWithData = zoomLinksG.selectAll("line.link")
             .data(zoomLinkList, function (d) {
                 return d.source.name + "-" + d.target.name;
@@ -416,7 +416,9 @@
             .attr("class", "link zoom");
 
         zoomLinksG.selectAll("line.link")
-            .attr("style", "opacity: " + linkFactor + ";")
+            .attr("style", function (d) {
+                return "opacity: " + ((d.value / 100) * .3) + ";"
+            })
             .attr("x1", function (d) {
                 return zx(d.source.pcx, zoomX, zoomFactorX);
             })
@@ -433,11 +435,11 @@
         linksWithData.exit().remove();
     }
 
-    function drawZoom(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor, linkFactor) {
+    function drawZoom(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor, withLinks) {
 
         drawZoomNodes(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor);
 
-        if(linkFactor > 0) {
+        if(withLinks > 0) {
             var links = getLinksFromNodeList(zoomNodeList);
             drawZoomLinks(links, zoomX, zoomY, zoomFactorX, zoomFactorY, linkFactor);
         }
