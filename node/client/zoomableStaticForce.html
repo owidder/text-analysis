@@ -27,7 +27,7 @@
             opacity: .3;
         }
 
-        div.slider-input {
+        div.slider-input, div.statistics {
             font-size: .5em;
         }
 
@@ -81,6 +81,14 @@
         </div>
     </div>
     <div class="row">
+        <div class="col s12 statistics">
+            Total # of nodes: <span id="totalNoOfNodes"></span> |
+            Total # of links: <span id="totalNoOfLinks"></span> |
+            # of nodes in zoom area: <span id="shownNoOfNodes"></span> |
+            # of links in zoom area: <span id="shownNoOfLinks"></span> |
+        </div>
+    </div>
+    <div class="row">
         <div class="col s4 slider-input">
             Viewfinder size
             <input id="viewfinderfactor-slider" value="30" type="range" min="1" max="100" onchange="viewfinderFactorChanged()"/>
@@ -94,7 +102,7 @@
             <input id="threshold-slider" value="70" type="range" min="50" max="99" onchange="thresholdChanged()"/>
         </div>
         <div class="col s1 slider-input">
-            Links (<span id="numberOfLinks"></span>)
+            Links
             <div class="switch">
                 <label>
                     Off
@@ -186,29 +194,62 @@
     var zoomCenterY = zoomSvgRect.height/4;
 
     var viewfinderrect = birdviewSvg.node().createSVGRect();
-1
+
     var data = {};
+
+    function countShownLinks(nodeList) {
+        return nodeList.reduce(function (sum, node) {
+            var length = 0;
+            if(!_.isEmpty(node.sourceLinks)) {
+                length = node.sourceLinks.length;
+            }
+            return sum + length;
+        }, 0);
+    }
+
+    function collectSourceLinks(nodeList, links) {
+        nodeList.forEach(function (node) {
+            if(!_.isEmpty(node.sourceLinks)) {
+                Array.prototype.push.apply(links, node.sourceLinks);
+            }
+        });
+    }
+
+    function collectTargetLinks(nodeList, links) {
+        nodeList.forEach(function (node) {
+            if(!_.isEmpty(node.targetLinks)) {
+                node.targetLinks.forEach(function (link) {
+                    if(nodeList.indexOf(link.source) < 0) {
+                        links.push(link);
+                    }
+                })
+            }
+        })
+    }
 
     function getLinksFromNodeList(nodeList) {
         var links = [];
-        nodeList.forEach(function (node) {
-            if(!_.isEmpty(node.sourceLinks)) {
-                node.sourceLinks.forEach(function (link) {
-                    util.pushIfNotAlreadyThere(links, link);
-                })
-            }
-            if(!_.isEmpty(node.targetLinks)) {
-                node.targetLinks.forEach(function (link) {
-                    util.pushIfNotAlreadyThere(links, link);
-                })
-            }
-        });
+
+        collectSourceLinks(nodeList, links);
+        collectTargetLinks(nodeList, links);
 
         return links;
     }
 
-    function showNumberOfLinks(numOfLinks) {
-        $("#numberOfLinks").html(String(numOfLinks));
+    function showTotalNumberOfLinks(no) {
+        $("#totalNoOfLinks").html(String(no));
+    }
+
+    function showTotalNumberOfNodes(no) {
+        $("#totalNoOfNodes").html(String(no));
+    }
+
+    function showShownNumberOfLinks(no) {
+        $("#shownNoOfLinks").html(String(no));
+    }
+
+    function showShownNumberOfNodes(no) {
+        $("#shownNoOfNodes").html(String(no));
     }
 
     function refresh(newData) {
@@ -238,11 +279,14 @@
         var zoomFactorY = (height / viewfinderHeight);
 
         var nodeList = computeNodeList(data.zoomX, data.zoomY, viewfinderWidth, viewfinderHeight);
-        var links = getLinksFromNodeList(nodeList);
-        showNumberOfLinks(links.length);
+        var noOfNodes = nodeList.length;
+        var shownLinks = getLinksFromNodeList(nodeList);
+        var noOfLinks = shownLinks.length;
+        showShownNumberOfLinks(noOfLinks);
+        showShownNumberOfNodes(noOfNodes);
 
         drawViewfinder();
-        drawZoom(nodeList, data.zoomX, data.zoomY, zoomFactorX, zoomFactorY, data.radiusFactor, links, data.withLinks);
+        drawZoom(nodeList, data.zoomX, data.zoomY, zoomFactorX, zoomFactorY, data.radiusFactor, data.withLinks);
     }
 
     function viewfinderFactorChanged() {
@@ -459,6 +503,7 @@
         drawZoomNodes(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor);
 
         if(withLinks > 0) {
+            var links = getLinksFromNodeList(zoomNodeList);
             drawZoomLinks(links, zoomX, zoomY, zoomFactorX, zoomFactorY, withLinks);
         }
         else {
@@ -492,6 +537,9 @@
             if(node.sourceLinks == null) {
                 node.sourceLinks = [];
             }
+            else {
+                debugger
+            }
             node.sourceLinks.push(link);
         }
 
@@ -508,11 +556,11 @@
                 allLinksAddedToNodes = true;
                 links.forEach(function (link) {
                     if(link.source != null) {
-                        if(link.source.sourceLink == null) {
+                        if(link.source.sourceLinks == null || link.source.sourceLinks.indexOf(link) < 0) {
                             allLinksAddedToNodes = false;
                             addLinkToNodeSourceList(link)
                         }
-                        if(link.source.targetLink == null) {
+                        if(link.target.targetLinks == null || link.target.targetLinks.indexOf(link) < 0) {
                             allLinksAddedToNodes = false;
                             addLinkToNodeTargetList(link);
                         }
@@ -572,6 +620,8 @@
             $("#spinner").hide();
             nodes = data.nodes;
             links = data.links;
+            showTotalNumberOfLinks(links.length);
+            showTotalNumberOfNodes(nodes.length);
             drawNodes();
             startForce();
         });
