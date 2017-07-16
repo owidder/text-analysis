@@ -150,6 +150,9 @@
     var birdviewWidth = window.innerWidth / BIRDSVIEW_PINCH_FACTOR;
     var birdsviewHeight = window.innerHeight / BIRDSVIEW_PINCH_FACTOR;
 
+    var BIRDSVIEW_WIDTH_EXTRA = 20;
+    var BIRDSVIEW_HEIGHT_EXTRA = 20;
+
     var width = birdviewWidth*3;
     var height = birdsviewHeight*3;
 
@@ -170,8 +173,8 @@
 
     var birdviewSvg = d3.select("#birdsview").append("svg")
         .attr("class", "force")
-        .attr("width", birdviewWidth+20)
-        .attr("height", birdsviewHeight+20)
+        .attr("width", birdviewWidth+BIRDSVIEW_WIDTH_EXTRA)
+        .attr("height", birdsviewHeight+BIRDSVIEW_HEIGHT_EXTRA)
         .on("click", function () {
             moveMode = !moveMode;
             mouseMoved(d3.mouse(this));
@@ -200,31 +203,14 @@
 
     var data = {};
 
-    function collectSourceLinks(nodeList, links) {
+    function getLinksFromNodeList(nodeList) {
+        var links = [];
+
         nodeList.forEach(function (node) {
             if(!_.isEmpty(node.sourceLinks)) {
                 Array.prototype.push.apply(links, node.sourceLinks);
             }
         });
-    }
-
-    function collectTargetLinks(nodeList, links) {
-        nodeList.forEach(function (node) {
-            if(!_.isEmpty(node.targetLinks)) {
-                node.targetLinks.forEach(function (link) {
-                    if(nodeList.indexOf(link.source) < 0) {
-                        links.push(link);
-                    }
-                })
-            }
-        })
-    }
-
-    function getLinksFromNodeList(nodeList) {
-        var links = [];
-
-        collectSourceLinks(nodeList, links);
-        collectTargetLinks(nodeList, links);
 
         return links;
     }
@@ -302,8 +288,8 @@
             data.withLinks = newData.withLinks;
         }
 
-        var viewfinderWidth = birdviewWidth * data.viewfinderFactor;
-        var viewfinderHeight = birdsviewHeight * data.viewfinderFactor;
+        var viewfinderWidth = (birdviewWidth + BIRDSVIEW_HEIGHT_EXTRA) * data.viewfinderFactor;
+        var viewfinderHeight = (birdsviewHeight + BIRDSVIEW_HEIGHT_EXTRA) * data.viewfinderFactor;
         var zoomFactorX = (width / viewfinderWidth);
         var zoomFactorY = (height / viewfinderHeight);
 
@@ -390,14 +376,14 @@
         viewfinderG.selectAll("line.viewfinder.h")
             .attr("x1", "0")
             .attr("y1", viewfinderCenterY)
-            .attr("x2", birdviewWidth+20)
+            .attr("x2", birdviewWidth+BIRDSVIEW_WIDTH_EXTRA)
             .attr("y2", viewfinderCenterY);
 
         viewfinderG.selectAll("line.viewfinder.v")
             .attr("x1", viewfinderCenterX)
             .attr("y1", 0)
             .attr("x2", viewfinderCenterX)
-            .attr("y2", birdsviewHeight+20);
+            .attr("y2", birdsviewHeight+BIRDSVIEW_HEIGHT_EXTRA);
     }
 
     function computeNodeList(zoomX, zoomY, viewfinderWidth, viewfinderHeight) {
@@ -564,18 +550,7 @@
             if(node.sourceLinks == null) {
                 node.sourceLinks = [];
             }
-            else {
-                debugger
-            }
             node.sourceLinks.push(link);
-        }
-
-        function addLinkToNodeTargetList(link) {
-            var node = link.target;
-            if(node.targetLinks == null) {
-                node.targetLinks = [];
-            }
-            node.targetLinks.push(link);
         }
 
         function addLinksToNodes() {
@@ -586,10 +561,6 @@
                         if(link.source.sourceLinks == null || link.source.sourceLinks.indexOf(link) < 0) {
                             allLinksAddedToNodes = false;
                             addLinkToNodeSourceList(link)
-                        }
-                        if(link.target.targetLinks == null || link.target.targetLinks.indexOf(link) < 0) {
-                            allLinksAddedToNodes = false;
-                            addLinkToNodeTargetList(link);
                         }
                     }
                     else {
