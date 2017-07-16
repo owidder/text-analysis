@@ -94,7 +94,7 @@
             <input id="threshold-slider" value="70" type="range" min="50" max="99" onchange="thresholdChanged()"/>
         </div>
         <div class="col s1 slider-input">
-            Links
+            Links (<span id="numberOfLinks"></span>)
             <div class="switch">
                 <label>
                     Off
@@ -114,6 +114,19 @@
         </div>
     </div>
 </div>
+
+<script id="files-script" type="text/x-handlebars-template">
+    <div class="container">
+        {{#each filenames}}
+        <div class="row">
+            <div class="col s10">
+                <h5><a href="cloud.html?path={{this}}" target="_blank">{{this}}</a></h5>
+                <a class="mini" href="https://github.com/frappe/erpnext/blob/develop/{{this}}" target="_blank">[content]</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</script>
 
 <script>
 
@@ -173,7 +186,7 @@
     var zoomCenterY = zoomSvgRect.height/4;
 
     var viewfinderrect = birdviewSvg.node().createSVGRect();
-
+1
     var data = {};
 
     function getLinksFromNodeList(nodeList) {
@@ -192,6 +205,10 @@
         });
 
         return links;
+    }
+
+    function showNumberOfLinks(numOfLinks) {
+        $("#numberOfLinks").html(String(numOfLinks));
     }
 
     function refresh(newData) {
@@ -221,9 +238,11 @@
         var zoomFactorY = (height / viewfinderHeight);
 
         var nodeList = computeNodeList(data.zoomX, data.zoomY, viewfinderWidth, viewfinderHeight);
+        var links = getLinksFromNodeList(nodeList);
+        showNumberOfLinks(links.length);
 
         drawViewfinder();
-        drawZoom(nodeList, data.zoomX, data.zoomY, zoomFactorX, zoomFactorY, data.radiusFactor, data.linkFactor);
+        drawZoom(nodeList, data.zoomX, data.zoomY, zoomFactorX, zoomFactorY, data.radiusFactor, links, data.withLinks);
     }
 
     function viewfinderFactorChanged() {
@@ -417,7 +436,7 @@
 
         zoomLinksG.selectAll("line.link")
             .attr("style", function (d) {
-                return "opacity: " + ((d.value / 100) * .3) + ";"
+                return "opacity: " + ((d.value / 100) * .2) + ";"
             })
             .attr("x1", function (d) {
                 return zx(d.source.pcx, zoomX, zoomFactorX);
@@ -440,11 +459,10 @@
         drawZoomNodes(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor);
 
         if(withLinks > 0) {
-            var links = getLinksFromNodeList(zoomNodeList);
-            drawZoomLinks(links, zoomX, zoomY, zoomFactorX, zoomFactorY, linkFactor);
+            drawZoomLinks(links, zoomX, zoomY, zoomFactorX, zoomFactorY, withLinks);
         }
         else {
-            drawZoomLinks([], zoomX, zoomY, zoomFactorX, zoomFactorY, linkFactor);
+            drawZoomLinks([], zoomX, zoomY, zoomFactorX, zoomFactorY, withLinks);
         }
     }
 

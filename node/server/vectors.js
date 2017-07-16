@@ -3,6 +3,7 @@
 var fs = require('fs');
 var _ = require('lodash');
 var math = require('mathjs');
+var os = require('os');
 
 var _relPath = require('./relPath');
 var util = require('./util');
@@ -131,7 +132,7 @@ function processCloudLine(line, links, fromRelPath, relPaths, threshold) {
 
 function readRelPaths(nodes) {
     var content = fs.readFileSync(FILENAMES_FILE_PATH, 'utf8');
-    var filenames = content.split("\n");
+    var filenames = content.split(os.EOL);
     var relPaths = filenames.map(_relPath.makeRelPath);
     relPaths.forEach(function (fromRelPath) {
         addToNodes(fromRelPath, nodes);
