@@ -82,10 +82,13 @@
     </div>
     <div class="row">
         <div class="col s12 statistics">
-            Total # of nodes: <span id="totalNoOfNodes"></span> |
-            Total # of links: <span id="totalNoOfLinks"></span> |
-            # of nodes in zoom area: <span id="shownNoOfNodes"></span> |
-            # of links in zoom area: <span id="shownNoOfLinks"></span> |
+            # of nodes: <span id="totalNoOfNodes"></span> |
+            # of links: <span id="totalNoOfLinks"></span> |
+            # of nodes in zoom area: <span id="zoomAreaNoOfNodes"></span> |
+            # of links in zoom area: <span id="zoomAreaNoOfLinks"></span> |
+            # of inner links: <span id="zoomAreaInnerLinks"></span> |
+            # of ingoing links: <span id="zoomAreaIngoingLinks"></span> |
+            # of outgoing links: <span id="zoomAreaOutgoingLinks"></span> |
         </div>
     </div>
     <div class="row">
@@ -197,16 +200,6 @@
 
     var data = {};
 
-    function countShownLinks(nodeList) {
-        return nodeList.reduce(function (sum, node) {
-            var length = 0;
-            if(!_.isEmpty(node.sourceLinks)) {
-                length = node.sourceLinks.length;
-            }
-            return sum + length;
-        }, 0);
-    }
-
     function collectSourceLinks(nodeList, links) {
         nodeList.forEach(function (node) {
             if(!_.isEmpty(node.sourceLinks)) {
@@ -236,6 +229,30 @@
         return links;
     }
 
+    function countLinkCategories(nodeList, links) {
+        var innerLinkCount = 0;
+        var ingoingLinkCount = 0;
+        var outgoingLinkCount = 0;
+
+        links.forEach(function (link) {
+            if(nodeList.indexOf(link.source) >= 0 && nodeList.indexOf(link.target) >= 0) {
+                innerLinkCount++;
+            }
+            else if(nodeList.indexOf(link.target) >= 0) {
+                ingoingLinkCount++;
+            }
+            else {
+                outgoingLinkCount++;
+            }
+        });
+
+        return {
+            inner: innerLinkCount,
+            ingoing: ingoingLinkCount,
+            outgoing: outgoingLinkCount
+        }
+    }
+
     function showTotalNumberOfLinks(no) {
         $("#totalNoOfLinks").html(String(no));
     }
@@ -244,12 +261,24 @@
         $("#totalNoOfNodes").html(String(no));
     }
 
-    function showShownNumberOfLinks(no) {
-        $("#shownNoOfLinks").html(String(no));
+    function showZoomaAreaNumberOfLinks(no) {
+        $("#zoomAreaNoOfLinks").html(String(no));
     }
 
-    function showShownNumberOfNodes(no) {
-        $("#shownNoOfNodes").html(String(no));
+    function showZoomAreaNumberOfNodes(no) {
+        $("#zoomAreaNoOfNodes").html(String(no));
+    }
+
+    function showZoomAreaNumberOfInnerLinks(no) {
+        $("#zoomAreaInnerLinks").html(String(no));
+    }
+
+    function showZoomAreaNumberOfIngoingLinks(no) {
+        $("#zoomAreaIngoingLinks").html(String(no));
+    }
+
+    function showZoomAreaNumberOfOutgoingLinks(no) {
+        $("#zoomAreaOutgoingLinks").html(String(no));
     }
 
     function refresh(newData) {
@@ -280,13 +309,17 @@
 
         var nodeList = computeNodeList(data.zoomX, data.zoomY, viewfinderWidth, viewfinderHeight);
         var noOfNodes = nodeList.length;
-        var shownLinks = getLinksFromNodeList(nodeList);
-        var noOfLinks = shownLinks.length;
-        showShownNumberOfLinks(noOfLinks);
-        showShownNumberOfNodes(noOfNodes);
+        var links = getLinksFromNodeList(nodeList);
+        var noOfLinks = links.length;
+        var categoryCount = countLinkCategories(nodeList, links);
+        showZoomaAreaNumberOfLinks(noOfLinks);
+        showZoomAreaNumberOfNodes(noOfNodes);
+        showZoomAreaNumberOfInnerLinks(categoryCount.inner);
+        showZoomAreaNumberOfIngoingLinks(categoryCount.ingoing);
+        showZoomAreaNumberOfOutgoingLinks(categoryCount.outgoing);
 
         drawViewfinder();
-        drawZoom(nodeList, data.zoomX, data.zoomY, zoomFactorX, zoomFactorY, data.radiusFactor, data.withLinks);
+        drawZoom(nodeList, data.zoomX, data.zoomY, zoomFactorX, zoomFactorY, data.radiusFactor, links, data.withLinks);
     }
 
     function viewfinderFactorChanged() {
@@ -498,17 +531,11 @@
         linksWithData.exit().remove();
     }
 
-    function drawZoom(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor, withLinks) {
+    function drawZoom(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor, zoomLinkList, withLinks) {
 
         drawZoomNodes(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor);
 
-        if(withLinks > 0) {
-            var links = getLinksFromNodeList(zoomNodeList);
-            drawZoomLinks(links, zoomX, zoomY, zoomFactorX, zoomFactorY, withLinks);
-        }
-        else {
-            drawZoomLinks([], zoomX, zoomY, zoomFactorX, zoomFactorY, withLinks);
-        }
+        drawZoomLinks(withLinks ? zoomLinkList : [], zoomX, zoomY, zoomFactorX, zoomFactorY, withLinks);
     }
 
     function drawForce() {
