@@ -17,8 +17,6 @@ filenames_out_file = open('./data/filenames.csv', 'w')
 whole_cloud_out_file = open('./data/whole_cloud.csv', 'w')
 
 i = 0
-l = len(docnames)
-already_processed = [[0 for x in range(l)] for y in range(l)]
 
 for docname in docnames:
     print(docname, file=filenames_out_file)
@@ -43,10 +41,9 @@ for docname in docnames:
     tuple_list = []
     for tuple in list(enumerate(ssims)):
         j = tuple[1][0]
-        if j != i and tuple[1][1] > .5:
-            if already_processed[j][i] == 0:
-                tuple_list.append("%d\t%.4f" % (j, tuple[1][1]))
-                already_processed[i][j] = 1
+        # j>i: because of symmetry
+        if j > i and tuple[1][1] > .5:
+            tuple_list.append("%d\t%.4f" % (j, tuple[1][1]))
 
     print("\t".join(matrix_out_list), file=matrix_out_file)
     print("\t".join(vectors_out_list), file=vectors_out_file)
