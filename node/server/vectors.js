@@ -120,12 +120,14 @@ function addToLinks(fromRelPath, toRelPath, cos, links) {
 function processCloudLine(line, links, fromRelPath, relPaths, threshold) {
     var parts = line.split("\t");
     var i, index, value, toRelPath;
-    for(i = 0; i < parts.length; i += 2) {
-        index = parts[i];
-        value = parts[i+1];
-        toRelPath = relPaths[index];
-        if(value > threshold) {
-            addToLinks(fromRelPath, toRelPath, value, links);
+    if(parts.length > 1) {
+        for(i = 0; i < parts.length; i += 2) {
+            index = parts[i];
+            value = parts[i+1];
+            toRelPath = relPaths[index];
+            if(value > threshold) {
+                addToLinks(fromRelPath, toRelPath, value, links);
+            }
         }
     }
 }
@@ -143,7 +145,7 @@ function readRelPaths(nodes) {
 
 function readCosines(links, relPaths, threshold) {
     var content = fs.readFileSync(CLOUD_FILE_PATH, 'utf8');
-    var lines = content.split("\n");
+    var lines = content.split(os.EOL);
     lines.forEach(function (line, index) {
         var fromRelPath = relPaths[index];
         processCloudLine(line, links, fromRelPath, relPaths, threshold);
