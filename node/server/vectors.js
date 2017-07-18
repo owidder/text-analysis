@@ -89,9 +89,7 @@ function createHistoDataForFile(fileRelPath) {
     _.forOwn(vectors, function (vector, relPath) {
         if(relPath != fileRelPath && !_.isEmpty(relPath) && vector.length == ownVec.length) {
             var cosine = computeCosineBetweenVectors(ownVec, vector);
-            if(cosine > .8) {
-                data.push(cosine);
-            }
+            data.push(cosine);
         }
     });
 

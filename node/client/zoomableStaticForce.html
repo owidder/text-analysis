@@ -51,6 +51,11 @@
             stroke-width: 1px;
         }
 
+        div.file-list {
+            line-height: 1.2em;
+            font-size: .4em;
+        }
+
     </style>
 </head>
 <body>
@@ -58,10 +63,12 @@
 <script>var bottle = new Bottle();</script>
 <script src="bower_components/lodash/dist/lodash.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/handlebars/handlebars.js"></script>
 
 <script src="js/util/simplePromise.js"></script>
 <script src="js/util/util.js"></script>
 <script src="js/util/svgUtil.js"></script>
+<script src="js/util/github.js"></script>
 <script src="js/legend.js"></script>
 
 <script src="bower_components/d3/d3.min.js"></script>
@@ -118,6 +125,7 @@
     <div class="row">
         <div class="col s3">
             <div id="birdsview"></div>
+            <div id="file-list"></div>
         </div>
         <div class="col s9">
             <div id="zoom"></div>
@@ -126,14 +134,13 @@
 </div>
 
 <script id="files-script" type="text/x-handlebars-template">
-    <div class="container">
-        {{#each filenames}}
-        <div class="row">
-            <div class="col s10">
-                <h5><a href="cloud.html?path={{this}}" target="_blank">{{this}}</a></h5>
-                <a class="mini" href="https://github.com/frappe/erpnext/blob/develop/{{this}}" target="_blank">[content]</a>
-            </div>
-        </div>
+    <div class="file-list">
+        {{#each relPaths}}
+        <a class="mini" href="{{github}}" title="{{relPath}}" target="_blank">{{shortName}}</a>
+        <a class="mini" href="cloud.html?path={{relPath}}" target="_blank">[cloud]</a>
+        <a class="mini" href="lsiIndex.html?path={{relPath}}" target="_blank">[similar files]</a>
+        <a class="mini" href="histo.html?path={{relPath}}" target="_blank">[histogram]</a>
+        <br>
         {{/each}}
     </div>
 </script>
@@ -170,6 +177,27 @@
         }
     }
 
+    function showFiles(relPaths) {
+        $("#file-list").empty();
+        var filesTemplateScript = $("#files-script").html();
+        var filesTemplate = Handlebars.compile(filesTemplateScript);
+        var relPathsWithMetadata = relPaths.map(function(relPath) {
+            var parts = relPath.split("/");
+            var shortName = parts[parts.length-1];
+            return {
+                relPath: relPath,
+                shortName: shortName,
+                github: bottle.container.github.createContentUrl(relPath)
+            }
+        });
+        var ctx = {
+            relPaths: relPathsWithMetadata
+        };
+        var filesHtml = filesTemplate(ctx);
+        $("#file-list").append(filesHtml);
+
+    }
+
     var birdviewSvg = d3.select("#birdsview").append("svg")
         .attr("class", "force")
         .attr("width", birdviewWidth+BIRDSVIEW_WIDTH_EXTRA)
@@ -188,6 +216,11 @@
         .attr("class", "zoom")
         .attr("width", width*2)
         .attr("height", height*2)
+        .on("click", function () {
+            var evt = d3.mouse(this);
+            var legendList = legend.createLegenListAtPos(evt[0], evt[1]);
+            showFiles(legendList);
+        })
         .on("mousemove", function () {
             var evt = d3.mouse(this);
             legend.mouseMoved(evt[0], evt[1]);
