@@ -10,6 +10,14 @@ function compare(a, b) {
     return 0;
 }
 
+function findFunc(attributeName, valueToFind) {
+    return function (element) {
+        return (element[attributeName] == valueToFind);
+    };
+}
+
+
 module.exports = {
-    compare: compare
+    compare: compare,
+    findFunc: findFunc
 };

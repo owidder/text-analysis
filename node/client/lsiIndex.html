@@ -35,24 +35,28 @@
     <div class="container">
         <div class="row">
             <div class="col s12">
-                <h5><code><a href="cloud.html?path={{@root.path}}" target="_blank">{{@root.path}}</a></code></h5>
-                <a class="mini" href="https://github.com/frappe/erpnext/blob/develop/{{@root.path}}" target="_blank">[content]</a>
+                <h5><code><a href="{{@root.github}}" target="_blank">{{@root.path}}</a></code></h5>
+                <a class="mini" href="cloud.html?path={{@root.path}}" target="_blank">[cloud]</a>
+                <a class="mini" href="histo.html?path={{@root.path}}" target="_blank">[histogram]</a>
                 <h5><code>---------------------------------------------</code></h5>
             </div>
         </div>
-        {{#each filenames}}
+        {{#each relPaths}}
         <div class="row">
             <div class="col s10">
-                <h5><a href="cloud.html?path={{this}}" target="_blank">{{this}}</a></h5>
-                <a class="mini" href="https://github.com/frappe/erpnext/blob/develop/{{this}}" target="_blank">[content]</a>
+                <h5>{{value}}: <a href="{{github}}" target="_blank">{{relPath}}</a></h5>
+                <a class="mini" href="cloud.html?path={{relPath}}" target="_blank">[cloud]</a>
+                <a class="mini" href="lsiIndex.html?path={{relPath}}" target="_blank">[similar files]</a>
+                <a class="mini" href="histo.html?path={{relPath}}" target="_blank">[histogram]</a>
             </div>
         </div>
         {{/each}}
     </div>
 </script>
 
-<script src="/js/util/simplePromise.js"></script>
-<script src="/js/util/util.js"></script>
+<script src="js/util/simplePromise.js"></script>
+<script src="js/util/util.js"></script>
+<script src="js/util/github.js"></script>
 
 <div id="files"></div>
 
@@ -62,6 +66,7 @@
     /* global bottle */
 
     var SimplePromise = bottle.container.SimplePromise;
+    var github = bottle.container.github;
 
     var path = bottle.container.util.param("path", ".");
 
@@ -71,14 +76,19 @@
         $("#files").empty();
         var filesTemplateScript = $("#subfolders-script").html();
         var filesTemplate = Handlebars.compile(filesTemplateScript);
-        var relatedFilenames = [];
+        var relatedRelPaths = [];
         _.forOwn(entry, function (value, key) {
-            var filename = key.substr(0, key.length - ".utf8".length);
-            relatedFilenames.push(filename);
+            var relPath = key.substr(0, key.length - ".utf8".length);
+            relatedRelPaths.push({
+                relPath: relPath,
+                value: value,
+                github: github.createContentUrl(relPath)
+            });
         });
         var ctx = {
             path: path,
-            filenames: relatedFilenames
+            github: github.createContentUrl(path),
+            relPaths: relatedRelPaths
         };
         var filesHtml = filesTemplate(ctx);
         $("#files").append(filesHtml);

@@ -32,15 +32,17 @@
 
     </style>
 
-    <script src="/bower_components/bottlejs/dist/bottle.js"></script>
+    <script src="bower_components/bottlejs/dist/bottle.js"></script>
     <script>var bottle = new Bottle();</script>
+
     <script src="bower_components/d3/d3.min.js"></script>
-    <script src="/bower_components/lodash/dist/lodash.js"></script>
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/handlebars/handlebars.js"></script>
+    <script src="bower_components/lodash/dist/lodash.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/handlebars/handlebars.js"></script>
     <script src="lib/spin.js"></script>
 
-    <script src="/js/util/util.js"></script>
+    <script src="js/util/util.js"></script>
+    <script src="js/util/github.js"></script>
 </head>
 <body>
 
@@ -48,8 +50,9 @@
     <div class="container">
         <div class="row">
             <div class="col s12">
-                <h3><a href="{{@root.href}}" target="_blank"><code>{{@root.title}}</code></a></h3>
-                <a class="mini" href="https://github.com/frappe/erpnext/blob/develop/{{@root.title}}" target="_blank">[content]</a>
+                <h3><a href="{{@root.github}}" target="_blank"><code>{{@root.relPath}}</code></a></h3>
+                <a class="mini" href="cloud.html?path={{@root.relPath}}" target="_blank">[cloud]</a>
+                <a class="mini" href="lsiIndex.html?path={{@root.relPath}}" target="_blank">[similar files]</a>
             </div>
         </div>
     </div>
@@ -68,8 +71,10 @@
                 {{rank}}
             </div>
             <div class="col s10">
-                <h5><a href="cloud.html?path={{relPath}}" target="_blank">{{relPath}}</a></h5>
-                <a class="mini" href="https://github.com/frappe/erpnext/blob/develop/{{relPath}}" target="_blank">[content]</a>
+                <h5><a href="{{github}}" target="_blank">{{relPath}}</a></h5>
+                <a class="mini" href="cloud.html?path={{relPath}}" target="_blank">[cloud]</a>
+                <a class="mini" href="lsiIndex.html?path={{relPath}}" target="_blank">[similar files]</a>
+                <a class="mini" href="histo.html?path={{relPath}}" target="_blank">[histogram]</a>
             </div>
             <div class="col s1">
                 {{cosine}}
@@ -85,6 +90,8 @@
 <div id="files"></div>
 
 <script>
+
+    var github = bottle.container.github;
 
     var BASE = 'api/histogram/';
     var TRANSITION_DURATION = 2000;
@@ -165,6 +172,7 @@
                     spinner.stop();
                     data.forEach(function (entry, index) {
                         entry.rank = index+1;
+                        entry.github = github.createContentUrl(entry.relPath);
                     });
                     renderFilesOfBin(data, cosineLower, cosineUpper);
                 }
@@ -211,13 +219,13 @@
             .call(d3.axisBottom(x));
     }
 
-    function showTitle(text, href) {
+    function showTitle(relPath) {
         $("#title").empty();
         var titleTemplateScript = $("#title-script").html();
         var titleTemplate = Handlebars.compile(titleTemplateScript);
         var ctx = {
-            title: text,
-            href: href
+            relPath: relPath,
+            github: github.createContentUrl(relPath)
         };
         var titleHtml = titleTemplate(ctx);
         $("#title").append(titleHtml);

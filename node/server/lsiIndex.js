@@ -2,6 +2,7 @@
 
 var fs = require('fs');
 var _ = require('lodash');
+var math = require('mathjs');
 
 var INDEX_FILE_PATH = '../python/python-lsi/data/matrix.csv';
 
@@ -21,7 +22,7 @@ function processIndexLine(line) {
         for (i = 1; i < parts.length; i+=2) {
             toAbsPath = parts[i];
             toRelPath = relPath.removeBasePath(toAbsPath);
-            entry[toRelPath] = parts[i+1];
+            entry[toRelPath] = math.round(Number(parts[i+1]), 2);
         }
         index[fromRelPath] = entry;
     }

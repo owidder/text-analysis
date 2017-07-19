@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+
+        circle.zoom {
+            stroke-width: 1;
+            stroke: white;
+            opacity: .5;
+        }
+
+        svg {
+            border-style: solid;
+            border-color: gray;
+        }
+
+        div.container {
+            width:100%;
+            margin: 0%;
+        }
+
+        .viewfinder {
+            stroke: black;
+            stroke-width: 1;
+            fill: none;
+            opacity: .3;
+        }
+
+        div.slider-input, div.statistics {
+            font-size: .5em;
+        }
+
+        line.viewfinder {
+            stroke: black;
+            stroke-width: 1;
+            opacity: .2;
+        }
+
+        g.move rect {
+            fill: red;
+        }
+
+        g.no-move rect {
+            fill: grey;
+        }
+
+        line.link.zoom {
+            stroke: black;
+            opacity: .3;
+            stroke-width: 1px;
+        }
+
+        div.file-list {
+            line-height: 1.2em;
+            font-size: .4em;
+        }
+
+    </style>
+</head>
+<body>
+<script src="bower_components/bottlejs/dist/bottle.js"></script>
+<script>var bottle = new Bottle();</script>
+<script src="bower_components/lodash/dist/lodash.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/handlebars/handlebars.js"></script>
+
+<script src="js/util/simplePromise.js"></script>
+<script src="js/util/util.js"></script>
+<script src="js/util/svgUtil.js"></script>
+<script src="js/util/github.js"></script>
+<script src="js/legend.js"></script>
+
+<script src="bower_components/d3/d3.min.js"></script>
+<script src="js/util/stuff.js"></script>
+<link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.css"
+      media="screen,projection"/>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/spinner.css">
+
+<div id="spinner" class="loading">Loading&#8230;</div>
+<div class="">
+    <div class="row">
+        <div class="col s12">
+            <div class="progress">
+                <div id="progressbar" class="determinate" style="width: 0%"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 statistics">
+            <b># of nodes: </b><span id="totalNoOfNodes"></span> |
+            <b># of links: </b><span id="totalNoOfLinks"></span> |
+            <b># of nodes in zoom area: </b><span id="zoomAreaNoOfNodes"></span> |
+            <b># of links in zoom area: </b><span id="zoomAreaNoOfLinks"></span> |
+            <b># of zoom area inner links: </b><span id="zoomAreaInnerLinks"></span> |
+            <b># of links going out of / into zoom area: </b><span id="zoomAreaInoutGoingLinks"></span> |
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s4 slider-input">
+            Viewfinder size
+            <input id="viewfinderfactor-slider" value="30" type="range" min="1" max="100" onchange="viewfinderFactorChanged()"/>
+        </div>
+        <div class="col s4 slider-input">
+            Radius size
+            <input id="radiusfactor-slider" value="100" type="range" min="10" max="100" onchange="radiusFactorChanged()"/>
+        </div>
+        <div class="col s3 slider-input">
+            Threshold
+            <input id="threshold-slider" value="70" type="range" min="50" max="99" onchange="thresholdChanged()"/>
+        </div>
+        <div class="col s1 slider-input">
+            Links
+            <div class="switch">
+                <label>
+                    Off
+                    <input type="checkbox" id="linkswitch" onchange="linkSwitchChanged()">
+                    <span class="lever"></span>
+                    On
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s3">
+            <div id="birdsview"></div>
+            <div id="file-list"></div>
+        </div>
+        <div class="col s9">
+            <div id="zoom"></div>
+        </div>
+    </div>
+</div>
+
+<script id="files-script" type="text/x-handlebars-template">
+    <div class="file-list">
+        {{#each relPaths}}
+        <a class="mini" href="{{github}}" title="{{relPath}}" target="_blank">{{shortName}}</a>
+        <a class="mini" href="cloud.html?path={{relPath}}" target="_blank">[cloud]</a>
+        <a class="mini" href="lsiIndex.html?path={{relPath}}" target="_blank">[similar files]</a>
+        <a class="mini" href="histo.html?path={{relPath}}" target="_blank">[histogram]</a>
+        <br>
+        {{/each}}
+    </div>
+</script>
+
+<script>
+
+    var threshold = bottle.container.util.param("t", "70");
+    var Legend = bottle.container.Legend;
+    var util = bottle.container.util;
+
+    var BIRDSVIEW_PINCH_FACTOR = 4.3;
+
+    var birdviewWidth = window.innerWidth / BIRDSVIEW_PINCH_FACTOR;
+    var birdsviewHeight = window.innerHeight / BIRDSVIEW_PINCH_FACTOR;
+
+    var BIRDSVIEW_WIDTH_EXTRA = 20;
+    var BIRDSVIEW_HEIGHT_EXTRA = 20;
+
+    var width = birdviewWidth*3;
+    var height = birdsviewHeight*3;
+
+    var moveMode = false;
+
+    function mouseMoved(evt) {
+        if(moveMode) {
+            d3.event.preventDefault();
+            refresh({
+                zoomX: evt[0],
+                zoomY: evt[1]
+            });
+        }
+        else {
+            refresh({});
+        }
+    }
+
+    function showFiles(relPaths) {
+        $("#file-list").empty();
+        var filesTemplateScript = $("#files-script").html();
+        var filesTemplate = Handlebars.compile(filesTemplateScript);
+        var relPathsWithMetadata = relPaths.map(function(relPath) {
+            var parts = relPath.split("/");
+            var shortName = parts[parts.length-1];
+            return {
+                relPath: relPath,
+                shortName: shortName,
+                github: bottle.container.github.createContentUrl(relPath)
+            }
+        });
+        var ctx = {
+            relPaths: relPathsWithMetadata
+        };
+        var filesHtml = filesTemplate(ctx);
+        $("#file-list").append(filesHtml);
+
+    }
+
+    var birdviewSvg = d3.select("#birdsview").append("svg")
+        .attr("class", "force")
+        .attr("width", birdviewWidth+BIRDSVIEW_WIDTH_EXTRA)
+        .attr("height", birdsviewHeight+BIRDSVIEW_HEIGHT_EXTRA)
+        .on("click", function () {
+            moveMode = !moveMode;
+            mouseMoved(d3.mouse(this));
+        })
+        .on("mousemove", function () {
+            mouseMoved(d3.mouse(this));
+        });
+
+    var legend = new Legend("svg.zoom");
+
+    var zoomSvg = d3.select("#zoom").append("svg")
+        .attr("class", "zoom")
+        .attr("width", width*2)
+        .attr("height", height*2)
+        .on("click", function () {
+            var evt = d3.mouse(this);
+            var legendList = legend.createLegenListAtPos(evt[0], evt[1]);
+            showFiles(legendList);
+        })
+        .on("mousemove", function () {
+            var evt = d3.mouse(this);
+            legend.mouseMoved(evt[0], evt[1]);
+        })
+        .on("mouseout", legend.hideLegend);
+
+    var zoomSvgRect = zoomSvg.node().getBoundingClientRect();
+    var zoomCenterX = zoomSvgRect.width/4;
+    var zoomCenterY = zoomSvgRect.height/4;
+
+    var viewfinderrect = birdviewSvg.node().createSVGRect();
+
+    var data = {};
+
+    function getLinksFromNodeList(nodeList) {
+        var links = [];
+
+        nodeList.forEach(function (node) {
+            if(!_.isEmpty(node.sourceLinks)) {
+                Array.prototype.push.apply(links, node.sourceLinks);
+            }
+        });
+
+        return links;
+    }
+
+    function countLinkCategories(nodeList, links) {
+        var innerLinkCount = 0;
+        var inoutGoingLinkCount = 0;
+
+        links.forEach(function (link) {
+            if(nodeList.indexOf(link.source) >= 0 && nodeList.indexOf(link.target) >= 0) {
+                innerLinkCount++;
+            }
+            else  {
+                inoutGoingLinkCount++;
+            }
+        });
+
+        return {
+            inner: innerLinkCount,
+            inoutgoing: inoutGoingLinkCount
+        }
+    }
+
+    function showTotalNumberOfLinks(no) {
+        $("#totalNoOfLinks").html(String(no));
+    }
+
+    function showTotalNumberOfNodes(no) {
+        $("#totalNoOfNodes").html(String(no));
+    }
+
+    function showZoomaAreaNumberOfLinks(no) {
+        $("#zoomAreaNoOfLinks").html(String(no));
+    }
+
+    function showZoomAreaNumberOfNodes(no) {
+        $("#zoomAreaNoOfNodes").html(String(no));
+    }
+
+    function showZoomAreaNumberOfInnerLinks(no) {
+        $("#zoomAreaInnerLinks").html(String(no));
+    }
+
+    function showZoomAreaNumberOfInoutGoingLinks(no) {
+        $("#zoomAreaInoutGoingLinks").html(String(no));
+    }
+
+    function refresh(newData) {
+        if(_.isNumber(newData.zoomX)) {
+            data.zoomX = newData.zoomX;
+        }
+
+        if(_.isNumber(newData.zoomY)) {
+            data.zoomY = newData.zoomY;
+        }
+
+        if(_.isNumber(newData.viewfinderFactor)) {
+            data.viewfinderFactor = newData.viewfinderFactor;
+        }
+
+        if(_.isNumber(newData.radiusFactor)) {
+            data.radiusFactor = newData.radiusFactor;
+        }
+
+        if(_.isNumber(newData.withLinks)) {
+            data.withLinks = newData.withLinks;
+        }
+
+        var viewfinderWidth = (birdviewWidth + BIRDSVIEW_HEIGHT_EXTRA) * data.viewfinderFactor;
+        var viewfinderHeight = (birdsviewHeight + BIRDSVIEW_HEIGHT_EXTRA) * data.viewfinderFactor;
+        var zoomFactorX = (width / viewfinderWidth);
+        var zoomFactorY = (height / viewfinderHeight);
+
+        var nodeList = computeNodeList(data.zoomX, data.zoomY, viewfinderWidth, viewfinderHeight);
+        var noOfNodes = nodeList.length;
+        var links = getLinksFromNodeList(nodeList);
+        var noOfLinks = links.length;
+        var categoryCount = countLinkCategories(nodeList, links);
+        showZoomaAreaNumberOfLinks(noOfLinks);
+        showZoomAreaNumberOfNodes(noOfNodes);
+        showZoomAreaNumberOfInnerLinks(categoryCount.inner);
+        showZoomAreaNumberOfInoutGoingLinks(categoryCount.inoutgoing);
+
+        drawViewfinder();
+        drawZoom(nodeList, data.zoomX, data.zoomY, zoomFactorX, zoomFactorY, data.radiusFactor, links, data.withLinks);
+    }
+
+    function viewfinderFactorChanged() {
+        var viewfinderFactorStr = document.getElementById("viewfinderfactor-slider").value;
+        var viewfinderFactor = Number(viewfinderFactorStr) / 100;
+        refresh({viewfinderFactor: viewfinderFactor});
+    }
+
+    function radiusFactorChanged() {
+        var radiusFactorStr = document.getElementById("radiusfactor-slider").value;
+        var radiusFactor = Number(radiusFactorStr) / 100;
+        refresh({radiusFactor: radiusFactor});
+    }
+
+    function linkSwitchChanged() {
+        var checked = document.getElementById("linkswitch").checked;
+        if(checked) {
+            refresh({withLinks: 1});
+        }
+        else {
+            refresh({withLinks: 0});
+        }
+    }
+
+    function thresholdChanged() {
+        var thresholdStr = document.getElementById("threshold-slider").value;
+        window.location.href = "/zoomableStaticForce.html?t=" + thresholdStr;
+    }
+
+    var birdsviewNodesG = birdviewSvg.append("g");
+    var viewfinderG = birdviewSvg.append("g");
+
+    var zoomLinksG = zoomSvg.append("g");
+    var zoomNodesG = zoomSvg.append("g");
+
+    var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+    function drawViewfinder() {
+        viewfinderG.attr("class", moveMode ? "move" : "no-move");
+
+        viewfinderG.selectAll("rect.viewfinder")
+            .data([viewfinderrect])
+            .enter()
+            .append("rect")
+            .attr("class", "viewfinder");
+
+        viewfinderG.selectAll("line.viewfinder.h")
+            .data([viewfinderrect])
+            .enter()
+            .append("line")
+            .attr("class", "viewfinder h");
+
+        viewfinderG.selectAll("line.viewfinder.v")
+            .data([viewfinderrect])
+            .enter()
+            .append("line")
+            .attr("class", "viewfinder v");
+
+        viewfinderG.selectAll("rect.viewfinder")
+            .attr("x", viewfinderrect.x)
+            .attr("y", viewfinderrect.y)
+            .attr("width", viewfinderrect.width)
+            .attr("height", viewfinderrect.height);
+
+        var viewfinderCenterX = viewfinderrect.x + viewfinderrect.width/2;
+        var viewfinderCenterY = viewfinderrect.y + viewfinderrect.height/2;
+
+        viewfinderG.selectAll("line.viewfinder.h")
+            .attr("x1", "0")
+            .attr("y1", viewfinderCenterY)
+            .attr("x2", birdviewWidth+BIRDSVIEW_WIDTH_EXTRA)
+            .attr("y2", viewfinderCenterY);
+
+        viewfinderG.selectAll("line.viewfinder.v")
+            .attr("x1", viewfinderCenterX)
+            .attr("y1", 0)
+            .attr("x2", viewfinderCenterX)
+            .attr("y2", birdsviewHeight+BIRDSVIEW_HEIGHT_EXTRA);
+    }
+
+    function computeNodeList(zoomX, zoomY, viewfinderWidth, viewfinderHeight) {
+        viewfinderrect.x = zoomX - viewfinderWidth/2;
+        viewfinderrect.y = zoomY - viewfinderHeight/2;
+        viewfinderrect.width = viewfinderWidth;
+        viewfinderrect.height = viewfinderHeight;
+
+        var elementList = birdviewSvg.node().getIntersectionList(viewfinderrect, null);
+        var nodeList = [];
+        elementList.forEach(function (element) {
+            if(element.tagName == "circle") {
+                nodeList.push(element.__data__);
+            }
+        });
+
+        return nodeList;
+    }
+
+    function getDimensions(nodes) {
+        var minX = Number.MAX_VALUE;
+        var minY = Number.MAX_VALUE;
+        var maxX = -Number.MAX_VALUE;
+        var maxY = -Number.MAX_VALUE;
+
+        nodes.forEach(function (d) {
+            if(d.x < minX) {
+                minX = d.x;
+            }
+            if(d.y < minY) {
+                minY = d.y;
+            }
+            if(d.x > maxX) {
+                maxX = d.x;
+            }
+            if(d.y > maxY) {
+                maxY = d.y;
+            }
+        });
+
+        return {
+            width: maxX - minX,
+            height: maxY - minY,
+            maxX: maxX,
+            maxY: maxY,
+            minX: minX,
+            minY: minY
+        }
+    }
+
+    var simulation = d3.forceSimulation()
+        .force("link", d3.forceLink().id(function (d) {
+            return d.name;
+        }).distance(function (d) {
+            return -d.value;
+        }))
+        .force("charge", d3.forceManyBody().strength(-1000))
+        .force("center", d3.forceCenter(birdviewWidth/2, birdsviewHeight/2));
+
+    function colorForNodeName(name) {
+        var parts = name.split(".");
+        var type = parts[parts.length-1];
+        return color(type);
+    }
+
+    function zx(x, zoomX, zoomFactorX) {
+        var diffX = x - zoomX;
+        return zoomCenterX + diffX*zoomFactorX;
+    }
+
+    function zy(y, zoomY, zoomFactorY) {
+        var diffY = y - zoomY;
+        return zoomCenterY + diffY*zoomFactorY;
+    }
+
+    function drawZoomNodes(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor) {
+        var nodesWithData = zoomNodesG.selectAll("circle.node")
+            .data(zoomNodeList, function (d) {
+                return d.name;
+            });
+
+        nodesWithData.enter()
+            .append("circle")
+            .attr("class", "node forlegend zoom")
+            .attr("_legend", function (d) {
+                return d.name;
+            })
+            .attr("fill", function (d) {
+                return colorForNodeName(d.name);
+            });
+
+        zoomNodesG.selectAll("circle.node")
+            .attr("r", zoomFactorX * radiusFactor)
+            .attr("cx", function (d) {
+                return zx(d.pcx, zoomX, zoomFactorX);
+            })
+            .attr("cy", function (d) {
+                return zy(d.pcy, zoomY, zoomFactorY);
+            });
+
+        nodesWithData.exit().remove();
+    }
+
+    function drawZoomLinks(zoomLinkList, zoomX, zoomY, zoomFactorX, zoomFactorY) {
+        var linksWithData = zoomLinksG.selectAll("line.link")
+            .data(zoomLinkList, function (d) {
+                return d.source.name + "-" + d.target.name;
+            });
+
+        linksWithData.enter()
+            .append("line")
+            .attr("class", "link zoom");
+
+        zoomLinksG.selectAll("line.link")
+            .attr("style", function (d) {
+                return "opacity: " + ((d.value / 100) * .2) + ";"
+            })
+            .attr("x1", function (d) {
+                return zx(d.source.pcx, zoomX, zoomFactorX);
+            })
+            .attr("y1", function (d) {
+                return zy(d.source.pcy, zoomY, zoomFactorY);
+            })
+            .attr("x2", function (d) {
+                return zx(d.target.pcx, zoomX, zoomFactorX)
+            })
+            .attr("y2", function (d) {
+                return zy(d.target.pcy, zoomY, zoomFactorY);
+            });
+
+        linksWithData.exit().remove();
+    }
+
+    function drawZoom(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor, zoomLinkList, withLinks) {
+
+        drawZoomNodes(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor);
+
+        drawZoomLinks(withLinks ? zoomLinkList : [], zoomX, zoomY, zoomFactorX, zoomFactorY, withLinks);
+    }
+
+    function drawForce() {
+        var nodes, links;
+        var allLinksAddedToNodes = false;
+
+        function drawNodes() {
+            var selectionWithData = birdsviewNodesG.selectAll("circle.node")
+                .data(nodes, function (d) {
+                    return d.name;
+                });
+
+            selectionWithData.enter()
+                .append("circle")
+                .attr("class", "node")
+                .attr("r", 1)
+                .attr("fill", function (d) {
+                    return colorForNodeName(d.name);
+                });
+
+            selectionWithData.exit().remove();
+        }
+
+        function addLinkToNodeSourceList(link) {
+            var node = link.source;
+            if(node.sourceLinks == null) {
+                node.sourceLinks = [];
+            }
+            node.sourceLinks.push(link);
+        }
+
+        function addLinksToNodes() {
+            if(!allLinksAddedToNodes) {
+                allLinksAddedToNodes = true;
+                links.forEach(function (link) {
+                    if(link.source != null) {
+                        if(link.source.sourceLinks == null || link.source.sourceLinks.indexOf(link) < 0) {
+                            allLinksAddedToNodes = false;
+                            addLinkToNodeSourceList(link)
+                        }
+                    }
+                    else {
+                        allLinksAddedToNodes = false;
+                    }
+                });
+            }
+        }
+
+        function ticked() {
+            addLinksToNodes();
+
+            var dimensions = getDimensions(nodes);
+            var pinchX = birdviewWidth / dimensions.width;
+            var pinchY = birdsviewHeight / dimensions.height;
+
+            birdsviewNodesG.selectAll("circle.node")
+                .attr("cx", function (d) {
+                    d.pcx = (d.x - dimensions.minX) * pinchX + 10;
+                    return d.pcx;
+                })
+                .attr("cy", function (d) {
+                    d.pcy = (d.y - dimensions.minY) * pinchY + 10;
+                    return d.pcy;
+                });
+
+            refresh({});
+        }
+
+        function startForce() {
+            simulation.nodes(nodes);
+
+            simulation.force("link")
+                .links(links);
+
+            simulation.alpha(1).restart();
+
+            var ctr = 0;
+            var MAX_CTR = 20;
+            var interval = setInterval(function () {
+                ctr++;
+                if(ctr > MAX_CTR) {
+                    clearInterval(interval);
+                    simulation.stop();
+                }
+                else {
+                    document.getElementById("progressbar").style = "width: " + (ctr/MAX_CTR*100) + "%";
+                }
+                ticked();
+            }, 1000);
+        }
+
+        $("#spinner").show();
+        d3.json('/api/theWholeCloud/' + threshold, function (error, data) {
+            $("#spinner").hide();
+            nodes = data.nodes;
+            links = data.links;
+            showTotalNumberOfLinks(links.length);
+            showTotalNumberOfNodes(nodes.length);
+            drawNodes();
+            startForce();
+        });
+    }
+
+    function init() {
+        var slider = document.getElementById("threshold-slider");
+        slider.value = threshold;
+    }
+
+    init();
+
+    legend.appendLegend();
+    drawForce();
+    refresh({
+        zoomX: birdviewWidth/2,
+        zoomY: birdsviewHeight/2,
+        viewfinderFactor: 0.2,
+        radiusFactor: 1
+    });
+    viewfinderFactorChanged();
+    radiusFactorChanged();
+
+</script>
+</body>
+</html>

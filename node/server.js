@@ -158,6 +158,13 @@ router.get('/cosineBetween/*', function (req, res) {
     res.json(data);
 });
 
+router.get('/theWholeCloud/*', function (req, res) {
+    var thresholdStr = req.originalUrl.substr("/api/theWholeCloud".length + 1);
+    var threshold = Number(thresholdStr) / 100;
+    var theCloud = vector.readTheCloud(threshold);
+    res.json(theCloud);
+});
+
 router.get('/values/file/*', function (req, res) {
     var relFile = req.originalUrl.substr("/api/values/file".length + 1);
     var relFileAdapted = backAdaptValueFilePath(relFile);

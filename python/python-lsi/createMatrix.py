@@ -13,8 +13,13 @@ index = similarities.MatrixSimilarity.load('./data/corpus.100.index')
 
 matrix_out_file = open('./data/matrix.csv', 'w')
 vectors_out_file = open('./data/vectors.csv', 'w')
+filenames_out_file = open('./data/filenames.csv', 'w')
+whole_cloud_out_file = open('./data/whole_cloud.csv', 'w')
+
+i = 0
 
 for docname in docnames:
+    print(docname, file=filenames_out_file)
     matrix_out_list = [docname]
     vectors_out_list = [docname]
     content = fileString(docname)
@@ -33,5 +38,17 @@ for docname in docnames:
             matrix_out_list.append(rel_docname)
             matrix_out_list.append(str_value)
 
+    tuple_list = []
+    for tuple in list(enumerate(ssims)):
+        j = tuple[1][0]
+        # j>i: because of symmetry
+        if j > i and tuple[1][1] > .5:
+            tuple_list.append("%d\t%.4f" % (j, tuple[1][1]))
+
     print("\t".join(matrix_out_list), file=matrix_out_file)
     print("\t".join(vectors_out_list), file=vectors_out_file)
+    print("\t".join(tuple_list), file=whole_cloud_out_file)
+
+    i += 1
+    if i%100 == 0:
+        print(i)

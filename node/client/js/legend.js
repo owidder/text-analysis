@@ -7,11 +7,21 @@
 bottle.factory("Legend", function (container) {
 
     var util = container.util;
+    var svgUtil = container.svgUtil;
 
-    function Legend(svgSelector) {
+    function Legend(svgSelector, _radius, layer) {
+
+        var radius = _radius || 10;
 
         function svg() {
             return d3.select(svgSelector);
+        }
+
+        function legendLayer() {
+            if(!_.isEmpty(layer)) {
+                return layer;
+            }
+            return svg();
         }
 
         function getSvgBoundingRectOfElement(selector) {
@@ -47,11 +57,10 @@ bottle.factory("Legend", function (container) {
         }
 
         function getNearbyBubblesForlegends(x, y) {
-            var adapted = adaptPositionToSvg(x, y);
+            var adapted = svgUtil.adaptPositionToSvg(x, y, svgSelector);
             var forlegends = document.querySelectorAll(".forlegend");
             var i, forlegend, boundingRect;
             var nearbyBubblesForlegends = [];
-            var radius = 10;
             for (i = 0; i < forlegends.length; i++) {
                 forlegend = forlegends[i];
                 boundingRect = forlegend.getBoundingClientRect();
@@ -66,7 +75,6 @@ bottle.factory("Legend", function (container) {
 
         function createLegendList(elementList) {
             var legendList = [];
-            var path;
             var legendStr;
             var i, svgElement;
             for (i = 0; i < elementList.length; i++) {
@@ -106,7 +114,7 @@ bottle.factory("Legend", function (container) {
         }
 
         function appendLegend() {
-            var legend = svg().append("g")
+            var legend = legendLayer().append("g")
                 .attr("class", "legend off");
 
             legend.append("rect")
@@ -158,10 +166,14 @@ bottle.factory("Legend", function (container) {
             }
         }
 
-        function mouseMoved(x, y) {
+        function createLegenListAtPos(x, y) {
             var nearbyBubblesForlegends = getNearbyBubblesForlegends(x, y);
             var legendList = createLegendList(nearbyBubblesForlegends);
-            updateLegend(legendList);
+            return legendList;
+        }
+
+        function mouseMoved(x, y) {
+            updateLegend(createLegenListAtPos(x, y));
 
             svg().select("g.legend")
                 .attr("transform", "translate(" + (x + 10) + "," + (y + 10) + ")");
@@ -172,6 +184,7 @@ bottle.factory("Legend", function (container) {
         this.showLegend = showLegend;
         this.switchLegend = switchLegend;
         this.appendLegend = appendLegend;
+        this.createLegenListAtPos = createLegenListAtPos;
     }
 
     return Legend;
