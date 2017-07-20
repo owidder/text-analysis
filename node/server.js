@@ -185,6 +185,10 @@ router.get('/values/file/*', function (req, res) {
     res.json(values);
 });
 
+router.get('/ping', function (req, res) {
+    res.send("pong");
+});
+
 ignoreList = readIgnore();
 
 app.use('/api', router);
