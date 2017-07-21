@@ -146,10 +146,13 @@
 
 <script>
 
-    var util = bottle.container.util;
-    var threshold = util.param("t", "70");
-    $("#threshold-value").html(threshold);
     var Legend = bottle.container.Legend;
+    var util = bottle.container.util;
+
+    var threshold = util.param("t", "70");
+    var viewfinderFactor = util.param("vwf", "30");
+
+    $("#threshold-value").html(threshold);
 
     var BIRDSVIEW_PINCH_FACTOR = 4.3;
 
@@ -689,8 +692,8 @@
     }
 
     function init() {
-        var slider = document.getElementById("threshold-slider");
-        slider.value = threshold;
+        $("#threshold-slider").val(threshold);
+        $("#viewfinderfactor-slider").val(viewfinderFactor);
     }
 
     init();
