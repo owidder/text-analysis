@@ -99,15 +99,15 @@
     </div>
     <div class="row">
         <div class="col s4 slider-input">
-            Viewfinder size
+            Viewfinder size: <span id="viewfinderfactor-value"></span> %
             <input id="viewfinderfactor-slider" value="30" type="range" min="1" max="100" onchange="viewfinderFactorChanged()"/>
         </div>
         <div class="col s4 slider-input">
-            Radius size
+            Radius size: <span id="radiusfactor-value"></span> %
             <input id="radiusfactor-slider" value="100" type="range" min="10" max="100" onchange="radiusFactorChanged()"/>
         </div>
         <div class="col s3 slider-input">
-            Threshold
+            Threshold: <span id="threshold-value"></span> %
             <input id="threshold-slider" value="70" type="range" min="50" max="99" onchange="thresholdChanged()"/>
         </div>
         <div class="col s1 slider-input">
@@ -142,14 +142,14 @@
         <a class="mini" href="histo.html?path={{relPath}}" target="_blank">[histogram]</a>
         <br>
         {{/each}}
-    </div>
 </script>
 
 <script>
 
-    var threshold = bottle.container.util.param("t", "70");
-    var Legend = bottle.container.Legend;
     var util = bottle.container.util;
+    var threshold = util.param("t", "70");
+    $("#threshold-value").html(threshold);
+    var Legend = bottle.container.Legend;
 
     var BIRDSVIEW_PINCH_FACTOR = 4.3;
 
@@ -331,14 +331,16 @@
     }
 
     function viewfinderFactorChanged() {
-        var viewfinderFactorStr = document.getElementById("viewfinderfactor-slider").value;
+        var viewfinderFactorStr = $("#viewfinderfactor-slider").val();
         var viewfinderFactor = Number(viewfinderFactorStr) / 100;
+        $("#viewfinderfactor-value").html(viewfinderFactorStr);
         refresh({viewfinderFactor: viewfinderFactor});
     }
 
     function radiusFactorChanged() {
-        var radiusFactorStr = document.getElementById("radiusfactor-slider").value;
+        var radiusFactorStr = $("#radiusfactor-slider").val();
         var radiusFactor = Number(radiusFactorStr) / 100;
+        $("#radiusfactor-value").html(radiusFactorStr);
         refresh({radiusFactor: radiusFactor});
     }
 
@@ -353,7 +355,7 @@
     }
 
     function thresholdChanged() {
-        var thresholdStr = document.getElementById("threshold-slider").value;
+        var thresholdStr = $("threshold-slider").val();
         window.location.href = "/zoomableStaticForce.html?t=" + thresholdStr;
     }
 
@@ -515,9 +517,29 @@
                 return d.source.name + "-" + d.target.name;
             });
 
+        var linksCircleStartWithData = zoomLinksG.selectAll("circle.linkstart")
+            .data(zoomLinkList, function (d) {
+                return d.source.name + "-" + d.target.name;
+            });
+
+        var linksCircleEndWithData = zoomLinksG.selectAll("circle.linkend")
+            .data(zoomLinkList, function (d) {
+                return d.source.name + "-" + d.target.name;
+            });
+
         linksWithData.enter()
             .append("line")
             .attr("class", "link zoom");
+
+        linksCircleStartWithData.enter()
+            .append("circle")
+            .attr("r", 1)
+            .attr("class", "linkstart");
+
+        linksCircleEndWithData.enter()
+            .append("circle")
+            .attr("r", 1)
+            .attr("class", "linkend");
 
         zoomLinksG.selectAll("line.link")
             .attr("style", function (d) {
@@ -536,7 +558,26 @@
                 return zy(d.target.pcy, zoomY, zoomFactorY);
             });
 
+        zoomLinksG.selectAll("circle.linkstart")
+            .attr("cx", function (d) {
+                return zx(d.source.pcx, zoomX, zoomFactorX);
+
+            })
+            .attr("cy", function (d) {
+                return zy(d.source.pcy, zoomY, zoomFactorY);
+            });
+
+        zoomLinksG.selectAll("circle.linkend")
+            .attr("cx", function (d) {
+                return zx(d.target.pcx, zoomX, zoomFactorX)
+            })
+            .attr("cy", function (d) {
+                return zy(d.target.pcy, zoomY, zoomFactorY);
+            });
+
         linksWithData.exit().remove();
+        linksCircleStartWithData.exit().remove();
+        linksCircleEndWithData.exit().remove();
     }
 
     function drawZoom(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor, zoomLinkList, withLinks) {
