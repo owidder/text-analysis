@@ -17,7 +17,7 @@
 
         div.container {
             width:100%;
-            margin: 0%;
+            margin: 0;
         }
 
         .viewfinder {
@@ -63,7 +63,8 @@
 <script>var bottle = new Bottle();</script>
 <script src="bower_components/lodash/dist/lodash.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="/bower_components/handlebars/handlebars.js"></script>
+<script src="bower_components/js-url/url.js"></script>
+<script src="bower_components/handlebars/handlebars.js"></script>
 
 <script src="js/util/simplePromise.js"></script>
 <script src="js/util/util.js"></script>
@@ -182,8 +183,9 @@
     }
 
     function showFiles(relPaths) {
-        $("#file-list").empty();
-        var filesTemplateScript = $("#files-script").html();
+        var fileListeElement = $("#file-list");
+        fileListeElement.empty();
+        var filesTemplateScript = fileListeElement.html();
         var filesTemplate = Handlebars.compile(filesTemplateScript);
         var relPathsWithMetadata = relPaths.map(function(relPath) {
             var parts = relPath.split("/");
@@ -198,7 +200,7 @@
             relPaths: relPathsWithMetadata
         };
         var filesHtml = filesTemplate(ctx);
-        $("#file-list").append(filesHtml);
+        fileListeElement.append(filesHtml);
 
     }
 
@@ -338,6 +340,7 @@
         var viewfinderFactorStr = $("#viewfinderfactor-slider").val();
         var viewfinderFactor = Number(viewfinderFactorStr) / 100;
         $("#viewfinderfactor-value").html(viewfinderFactorStr);
+        util.setSearchParam("rs", viewfinderFactorStr);
         refresh({viewfinderFactor: viewfinderFactor});
     }
 
@@ -359,8 +362,8 @@
     }
 
     function thresholdChanged() {
-        var thresholdStr = $("threshold-slider").val();
-        window.location.href = "/zoomableStaticForce.html?t=" + thresholdStr;
+        var thresholdStr = $("#threshold-slider").val();
+        window.location.href = "/zoomableStaticForce.html#?t=" + thresholdStr;
     }
 
     var birdsviewNodesG = birdviewSvg.append("g");
@@ -695,6 +698,7 @@
     function init() {
         $("#threshold-slider").val(threshold);
         $("#viewfinderfactor-slider").val(viewfinderFactor);
+        $("#radiusfactor-slider").val(radiusSize);
     }
 
     init();
