@@ -21,14 +21,41 @@ bottle.factory("util", function (container) {
         if (!results[2]) return defaultVal;
         return _.isEmpty(results[2]) ? defaultVal : decodeURIComponent(results[2].replace(/\+/g, " "));
     };
-
-    util.setSearchParam = function(paramName, value) {
-        var regexMiddle = new RegExp(paramName + '=.*?\\&');
-        var uri = window.location.href;
-        var newUri;
-        if(uri.test(regexMiddle)) {
-
+    
+    util.adddHash = function (uri) {
+        if(uri.indexOf('#') < 0) {
+            return uri + '#';
         }
+        return uri;
+    };
+
+    util.getHashParam = function(paramName, defaultValue) {
+        var hash = $.url('#');
+        if(_.isEmpty(hash)) {
+            return defaultValue;
+        }
+        var value = $.url('#')[paramName];
+        if(_.isEmpty(value)) {
+            return defaultValue;
+        }
+        return value;
+    };
+
+    util.changeHashParam = function(paramName, newValue) {
+        var currentValue = this.getHashParam(paramName);
+        var newUrl;
+        if(_.isEmpty(currentValue)) {
+            newUrl = this.adddHash($.url()) + "&" + paramName + "=" + newValue;
+        }
+        else {
+            newUrl = $.url().replace(paramName+"="+currentValue, paramName+"="+newValue);
+        }
+
+        this.setHref(newUrl);
+    };
+
+    util.setHref = function(newUrl) {
+        window.location.href = newUrl;
     };
 
     util.getLongestString = function (arrayOfStrings) {

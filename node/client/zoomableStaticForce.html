@@ -150,9 +150,13 @@
     var Legend = bottle.container.Legend;
     var util = bottle.container.util;
 
-    var threshold = util.param("t", "70");
-    var viewfinderFactor = util.param("vwf", "30");
-    var radiusSize = util.param("rs", "100");
+    var PARAM_NAME_THRESHOLD = "t";
+    var PARAM_NAME_VIEWFINDER_FACTOR = "vf";
+    var PARAM_NAME_RADIUS_FACTOR = "rf";
+
+    var threshold = util.getHashParam(PARAM_NAME_THRESHOLD, "70");
+    var viewfinderFactor = util.getHashParam(PARAM_NAME_VIEWFINDER_FACTOR, "30");
+    var radiusSize = util.getHashParam(PARAM_NAME_RADIUS_FACTOR, "100");
 
     $("#threshold-value").html(threshold);
 
@@ -340,7 +344,7 @@
         var viewfinderFactorStr = $("#viewfinderfactor-slider").val();
         var viewfinderFactor = Number(viewfinderFactorStr) / 100;
         $("#viewfinderfactor-value").html(viewfinderFactorStr);
-        util.setSearchParam("rs", viewfinderFactorStr);
+        util.changeHashParam(PARAM_NAME_VIEWFINDER_FACTOR, viewfinderFactorStr);
         refresh({viewfinderFactor: viewfinderFactor});
     }
 
@@ -348,6 +352,7 @@
         var radiusFactorStr = $("#radiusfactor-slider").val();
         var radiusFactor = Number(radiusFactorStr) / 100;
         $("#radiusfactor-value").html(radiusFactorStr);
+        util.changeHashParam(PARAM_NAME_RADIUS_FACTOR, radiusFactorStr);
         refresh({radiusFactor: radiusFactor});
     }
 
@@ -363,7 +368,8 @@
 
     function thresholdChanged() {
         var thresholdStr = $("#threshold-slider").val();
-        window.location.href = "/zoomableStaticForce.html#?t=" + thresholdStr;
+        util.changeHashParam(PARAM_NAME_THRESHOLD, thresholdStr);
+        window.location.reload();
     }
 
     var birdsviewNodesG = birdviewSvg.append("g");
