@@ -16,7 +16,7 @@ bottle.factory("util", function (container) {
         var uri = window.location.href;
         name = name.replace(/[\[\]]/g, "\\$&");
         var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-            results = regex.exec(url);
+            results = regex.exec(uri);
         if (!results) return defaultVal;
         if (!results[2]) return defaultVal;
         return _.isEmpty(results[2]) ? defaultVal : decodeURIComponent(results[2].replace(/\+/g, " "));
