@@ -153,6 +153,8 @@
     var PARAM_NAME_THRESHOLD = "t";
     var PARAM_NAME_VIEWFINDER_FACTOR = "vf";
     var PARAM_NAME_RADIUS_FACTOR = "rf";
+    var PARAM_NAME_VIEWFINDER_X_PROZ = "vx";
+    var PARAM_NAME_VIEWFINDER_Y_PROZ = "vy";
 
     var threshold = util.getHashParam(PARAM_NAME_THRESHOLD, "70");
     var viewfinderFactor = util.getHashParam(PARAM_NAME_VIEWFINDER_FACTOR, "30");
@@ -162,13 +164,13 @@
 
     var BIRDSVIEW_PINCH_FACTOR = 4.3;
 
-    var birdviewWidth = window.innerWidth / BIRDSVIEW_PINCH_FACTOR;
+    var birdsviewWidth = window.innerWidth / BIRDSVIEW_PINCH_FACTOR;
     var birdsviewHeight = window.innerHeight / BIRDSVIEW_PINCH_FACTOR;
 
     var BIRDSVIEW_WIDTH_EXTRA = 20;
     var BIRDSVIEW_HEIGHT_EXTRA = 20;
 
-    var width = birdviewWidth*3;
+    var width = birdsviewWidth*3;
     var height = birdsviewHeight*3;
 
     var moveMode = false;
@@ -176,14 +178,28 @@
     function mouseMoved(evt) {
         if(moveMode) {
             d3.event.preventDefault();
+            var x = evt[0];
+            var y = evt[1];
+
             refresh({
-                zoomX: evt[0],
-                zoomY: evt[1]
+                zoomX: x,
+                zoomY: y
             });
         }
-        else {
-            refresh({});
+    }
+
+    function clicked(evt) {
+        if(!moveMode) {
+            var x = evt[0];
+            var y = evt[1];
+
+            util.changeHashParam(PARAM_NAME_VIEWFINDER_X_PROZ, x/birdsviewWidth);
+            util.changeHashParam(PARAM_NAME_VIEWFINDER_Y_PROZ, y/birdsviewHeight);
         }
+        else {
+            mouseMoved(evt);
+        }
+        refresh({});
     }
 
     function showFiles(relPaths) {
@@ -210,11 +226,11 @@
 
     var birdviewSvg = d3.select("#birdsview").append("svg")
         .attr("class", "force")
-        .attr("width", birdviewWidth+BIRDSVIEW_WIDTH_EXTRA)
+        .attr("width", birdsviewWidth+BIRDSVIEW_WIDTH_EXTRA)
         .attr("height", birdsviewHeight+BIRDSVIEW_HEIGHT_EXTRA)
         .on("click", function () {
             moveMode = !moveMode;
-            mouseMoved(d3.mouse(this));
+            clicked(d3.mouse(this));
         })
         .on("mousemove", function () {
             mouseMoved(d3.mouse(this));
@@ -321,7 +337,7 @@
             data.withLinks = newData.withLinks;
         }
 
-        var viewfinderWidth = (birdviewWidth + BIRDSVIEW_HEIGHT_EXTRA) * data.viewfinderFactor;
+        var viewfinderWidth = (birdsviewWidth + BIRDSVIEW_HEIGHT_EXTRA) * data.viewfinderFactor;
         var viewfinderHeight = (birdsviewHeight + BIRDSVIEW_HEIGHT_EXTRA) * data.viewfinderFactor;
         var zoomFactorX = (width / viewfinderWidth);
         var zoomFactorY = (height / viewfinderHeight);
@@ -413,7 +429,7 @@
         viewfinderG.selectAll("line.viewfinder.h")
             .attr("x1", "0")
             .attr("y1", viewfinderCenterY)
-            .attr("x2", birdviewWidth+BIRDSVIEW_WIDTH_EXTRA)
+            .attr("x2", birdsviewWidth+BIRDSVIEW_WIDTH_EXTRA)
             .attr("y2", viewfinderCenterY);
 
         viewfinderG.selectAll("line.viewfinder.v")
@@ -478,7 +494,7 @@
             return -d.value;
         }))
         .force("charge", d3.forceManyBody().strength(-1000))
-        .force("center", d3.forceCenter(birdviewWidth/2, birdsviewHeight/2));
+        .force("center", d3.forceCenter(birdsviewWidth/2, birdsviewHeight/2));
 
     function colorForNodeName(name) {
         var parts = name.split(".");
@@ -650,7 +666,7 @@
             addLinksToNodes();
 
             var dimensions = getDimensions(nodes);
-            var pinchX = birdviewWidth / dimensions.width;
+            var pinchX = birdsviewWidth / dimensions.width;
             var pinchY = birdsviewHeight / dimensions.height;
 
             birdsviewNodesG.selectAll("circle.node")
@@ -711,9 +727,15 @@
 
     legend.appendLegend();
     drawForce();
+
+    var viewfinder_x_proz = Number(util.getHashParam(PARAM_NAME_VIEWFINDER_X_PROZ, ".5"));
+    var viewfinder_y_proz = Number(util.getHashParam(PARAM_NAME_VIEWFINDER_Y_PROZ, ".5"));
+    var initialZoomX = birdsviewWidth * viewfinder_x_proz;
+    var initialZoomY = birdsviewHeight * viewfinder_y_proz;
+
     refresh({
-        zoomX: birdviewWidth/2,
-        zoomY: birdsviewHeight/2,
+        zoomX: initialZoomX,
+        zoomY: initialZoomY,
         viewfinderFactor: 0.2,
         radiusFactor: 1
     });
