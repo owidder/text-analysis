@@ -203,9 +203,9 @@
     }
 
     function showFiles(relPaths) {
-        var fileListeElement = $("#file-list");
-        fileListeElement.empty();
-        var filesTemplateScript = fileListeElement.html();
+        var fileListElement = $("#file-list");
+        fileListElement.empty();
+        var filesTemplateScript = $("#files-script").html();
         var filesTemplate = Handlebars.compile(filesTemplateScript);
         var relPathsWithMetadata = relPaths.map(function(relPath) {
             var parts = relPath.split("/");
@@ -220,7 +220,7 @@
             relPaths: relPathsWithMetadata
         };
         var filesHtml = filesTemplate(ctx);
-        fileListeElement.append(filesHtml);
+        fileListElement.append(filesHtml);
 
     }
 
