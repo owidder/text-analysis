@@ -40,6 +40,12 @@
             opacity: .2;
         }
 
+        line.guideline {
+            stroke: black;
+            stroke-width: 2;
+            opacity: .2;
+        }
+
         g.move rect {
             fill: red;
         }
@@ -373,6 +379,26 @@
             legend.mouseMoved(evt[0], evt[1]);
         })
         .on("mouseout", legend.hideLegend);
+
+    zoomSvg.append("g")
+        .attr("class", "guidelines")
+        .append("line")
+        .attr("stroke-dasharray", "5,5")
+        .attr("class", "guideline")
+        .attr("x1", 0)
+        .attr("y1", height/2)
+        .attr("x2", width*2)
+        .attr("y2", height/2);
+
+    zoomSvg.append("g")
+        .attr("class", "guidelines")
+        .append("line")
+        .attr("class", "guideline")
+        .attr("stroke-dasharray", "5,5")
+        .attr("x1", width/2)
+        .attr("y1", 0)
+        .attr("x2", width/2)
+        .attr("y1", height*2);
 
     var zoomSvgRect = zoomSvg.node().getBoundingClientRect();
     var zoomCenterX = zoomSvgRect.width/4;
