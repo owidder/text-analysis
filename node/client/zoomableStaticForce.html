@@ -79,7 +79,7 @@
             margin:0;
         }
 
-        a.search {
+        span.search {
             font-size: .5em;
         }
 
@@ -87,7 +87,7 @@
             font-size: .6em;
         }
 
-        span.link:hover {
+        span.link:hover, span.search:hover {
             cursor: pointer;
             cursor: hand;
         }
@@ -170,10 +170,10 @@
                         <input placeholder="Search" id="search-input" type="text" class="validate">
                     </div>
                     <div class="col s1">
-                        <a href="#" onclick="searchClicked()" class="search"><i class="material-icons">search</i></a>
+                        <span onclick="searchClicked()" class="search"><i class="material-icons">search</i></span>
                     </div>
                     <div class="col s1">
-                        <a href="#" onclick="clearSearch()" class="search"><i class="material-icons">delete_forever</i></a>
+                        <span onclick="clearSearch()" class="search"><i class="material-icons">delete_forever</i></span>
                     </div>
                 </div>
             </div>
@@ -319,6 +319,7 @@
 
     function clearSearch() {
         putIntoSearch("");
+        util.removeHashParam(PARAM_NAME_SEARCH_REL_PATH);
     }
 
     function showFiles(relPaths, templateId) {

@@ -54,6 +54,16 @@ bottle.factory("util", function (container) {
         this.setHref(newUrl);
     };
 
+    util.removeHashParam = function (paramName) {
+        var currentValue = this.getHashParam(paramName);
+        var newUrl;
+        if(!_.isEmpty(currentValue)) {
+            newUrl = $.url().replace(paramName+"="+currentValue, "");
+        }
+
+        this.setHref(newUrl);
+    };
+
     util.setHref = function(newUrl) {
         window.location.href = newUrl;
     };
