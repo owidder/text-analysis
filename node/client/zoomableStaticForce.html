@@ -2,6 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.css"
+          media="screen,projection"/>
+
     <style>
 
         circle.zoom {
@@ -64,6 +67,27 @@
             margin: auto;
         }
 
+        div.search imput {
+            font-size: small;
+            margin: 0;
+            height: 1rem;
+        }
+
+        div.input-field, div.input-field input {
+            padding: 0;
+            height: 1em;
+            margin:0;
+        }
+
+        a.search {
+            font-size: .5em;
+        }
+
+        span.link:hover {
+            cursor: pointer;
+            cursor: hand;
+        }
+
     </style>
 </head>
 <body>
@@ -82,8 +106,6 @@
 
 <script src="bower_components/d3/d3.min.js"></script>
 <script src="js/util/stuff.js"></script>
-<link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.css"
-      media="screen,projection"/>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/spinner.css">
 <link rel="stylesheet" type="text/css" href=" css/material-icons.css"/>
@@ -138,6 +160,19 @@
             <span class="legend">
                 Click -> move mouse -> click
             </span>
+            <div class="search">
+                <div class="row">
+                    <div class="input-field col s10">
+                        <input placeholder="Search" id="search-input" type="text" class="validate">
+                    </div>
+                    <div class="col s1">
+                        <a href="#" onclick="searchClicked()" class="search"><i class="material-icons">search</i></a>
+                    </div>
+                    <div class="col s1">
+                        <a href="#" onclick="clearSearch()" class="search"><i class="material-icons">delete_forever</i></a>
+                    </div>
+                </div>
+            </div>
             <div id="file-list"></div>
         </div>
         <div class="col s9">
@@ -153,6 +188,19 @@
         <a class="mini" href="cloud.html?path={{relPath}}" target="_blank">[cloud]</a>
         <a class="mini" href="lsiIndex.html?path={{relPath}}" target="_blank">[similar files]</a>
         <a class="mini" href="histo.html?path={{relPath}}" target="_blank">[histogram]</a>
+        <span class="mini link" onclick="moveToRelPath('{{relPath}}')"><i class="material-icons">arrow_forward</i></span>
+        <br>
+        {{/each}}
+</script>
+
+<script id="search-results-script" type="text/x-handlebars-template">
+    <div class="file-list">
+        {{#each relPaths}}
+        <a class="mini" href="{{github}}" target="_blank">{{relPath}}</a>
+        <a class="mini" href="cloud.html?path={{relPath}}" target="_blank">[cloud]</a>
+        <a class="mini" href="lsiIndex.html?path={{relPath}}" target="_blank">[similar files]</a>
+        <a class="mini" href="histo.html?path={{relPath}}" target="_blank">[histogram]</a>
+        <span class="mini link" onclick="moveToRelPath('{{relPath}}')"><i class="material-icons">arrow_forward</i></span>
         <br>
         {{/each}}
 </script>
@@ -164,6 +212,7 @@
 
     var PARAM_NAME_THRESHOLD = "t";
     var PARAM_NAME_VIEWFINDER_FACTOR = "vf";
+    var PARAM_NAME_SEARCH_REL_PATH = "sf";
     var PARAM_NAME_RADIUS_FACTOR = "rf";
     var PARAM_NAME_VIEWFINDER_X_PROZ = "vx";
     var PARAM_NAME_VIEWFINDER_Y_PROZ = "vy";
@@ -214,10 +263,64 @@
         refresh({});
     }
 
-    function showFiles(relPaths) {
+    function getPosFromfRelPath(partOfRelPath) {
+        for(var i = 0; i < nodes.length; i++) {
+            if(nodes[i].name == partOfRelPath) {
+                return {
+                    x: nodes[i].pcx,
+                    y: nodes[i].pcy
+                }
+            }
+        }
+
+        return undefined;
+    }
+
+    function moveToRelPath(relPath) {
+        if(!_.isEmpty(relPath)) {
+            var pos = getPosFromfRelPath(relPath);
+            if(pos != null) {
+                util.changeHashParam(PARAM_NAME_SEARCH_REL_PATH, relPath);
+                refresh({
+                    zoomX: pos.x,
+                    zoomY: pos.y
+                })
+            }
+        }
+    }
+
+    function search(searchFor) {
+        var relPaths = [];
+        nodes.forEach(function (node) {
+            if(node.name.indexOf(searchFor) >= 0) {
+                relPaths.push(node.name);
+            }
+        });
+
+        return relPaths;
+    }
+
+    function searchClicked() {
+        var searchFor = $("#search-input").val();
+        var relPaths = search(searchFor);
+        if(!_.isEmpty(relPaths)) {
+            showFiles(relPaths, "search-results-script");
+        }
+    }
+
+    function putIntoSearch(searchFor) {
+        $("#search-input").val(searchFor);
+        searchClicked();
+    }
+
+    function clearSearch() {
+        putIntoSearch("");
+    }
+
+    function showFiles(relPaths, templateId) {
         var fileListElement = $("#file-list");
         fileListElement.empty();
-        var filesTemplateScript = $("#files-script").html();
+        var filesTemplateScript = $("#" + templateId).html();
         var filesTemplate = Handlebars.compile(filesTemplateScript);
         var relPathsWithMetadata = relPaths.map(function(relPath) {
             var parts = relPath.split("/");
@@ -229,6 +332,7 @@
             }
         });
         var ctx = {
+            currentHref: window.location.href,
             relPaths: relPathsWithMetadata
         };
         var filesHtml = filesTemplate(ctx);
@@ -236,7 +340,7 @@
 
     }
 
-    var birdviewSvg = d3.select("#birdsview").append("svg")
+    var birdsviewSvg = d3.select("#birdsview").append("svg")
         .attr("class", "force")
         .attr("width", birdsviewWidth+BIRDSVIEW_WIDTH_EXTRA)
         .attr("height", birdsviewHeight+BIRDSVIEW_HEIGHT_EXTRA)
@@ -257,7 +361,7 @@
         .on("click", function () {
             var evt = d3.mouse(this);
             var legendList = legend.createLegenListAtPos(evt[0], evt[1]);
-             showFiles(legendList);
+             showFiles(legendList, "files-script");
         })
         .on("mousemove", function () {
             var evt = d3.mouse(this);
@@ -269,9 +373,10 @@
     var zoomCenterX = zoomSvgRect.width/4;
     var zoomCenterY = zoomSvgRect.height/4;
 
-    var viewfinderrect = birdviewSvg.node().createSVGRect();
+    var viewfinderrect = birdsviewSvg.node().createSVGRect();
 
     var data = {};
+    var nodes, links;
 
     function getLinksFromNodeList(nodeList) {
         var links = [];
@@ -400,8 +505,8 @@
         window.location.reload();
     }
 
-    var birdsviewNodesG = birdviewSvg.append("g");
-    var viewfinderG = birdviewSvg.append("g");
+    var birdsviewNodesG = birdsviewSvg.append("g");
+    var viewfinderG = birdsviewSvg.append("g");
 
     var zoomLinksG = zoomSvg.append("g");
     var zoomNodesG = zoomSvg.append("g");
@@ -457,7 +562,7 @@
         viewfinderrect.width = viewfinderWidth;
         viewfinderrect.height = viewfinderHeight;
 
-        var elementList = birdviewSvg.node().getIntersectionList(viewfinderrect, null);
+        var elementList = birdsviewSvg.node().getIntersectionList(viewfinderrect, null);
         var nodeList = [];
         elementList.forEach(function (element) {
             if(element.tagName == "circle") {
@@ -629,7 +734,6 @@
     }
 
     function drawForce() {
-        var nodes, links;
         var allLinksAddedToNodes = false;
 
         function drawNodes() {
@@ -716,7 +820,7 @@
                 ticked();
             }, 1000);
         }
-
+        
         $("#spinner").show();
         d3.json('/api/theWholeCloud/' + threshold, function (error, data) {
             $("#spinner").hide();
@@ -753,6 +857,11 @@
     });
     viewfinderFactorChanged();
     radiusFactorChanged();
+
+    var searchForRelPath = util.getHashParam(PARAM_NAME_SEARCH_REL_PATH, "");
+    if(!_.isEmpty(searchForRelPath)) {
+        moveToRelPath(searchForRelPath);
+    }
 
 </script>
 </body>
