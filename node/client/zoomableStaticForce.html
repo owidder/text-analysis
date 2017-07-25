@@ -83,6 +83,10 @@
             font-size: .5em;
         }
 
+        span.link {
+            font-size: .6em;
+        }
+
         span.link:hover {
             cursor: pointer;
             cursor: hand;
@@ -818,6 +822,10 @@
                     document.getElementById("progressbar").style = "width: " + (ctr/MAX_CTR*100) + "%";
                 }
                 ticked();
+                var searchForRelPath = util.getHashParam(PARAM_NAME_SEARCH_REL_PATH, "");
+                if(!_.isEmpty(searchForRelPath)) {
+                    moveToRelPath(searchForRelPath);
+                }
             }, 1000);
         }
         
@@ -857,11 +865,6 @@
     });
     viewfinderFactorChanged();
     radiusFactorChanged();
-
-    var searchForRelPath = util.getHashParam(PARAM_NAME_SEARCH_REL_PATH, "");
-    if(!_.isEmpty(searchForRelPath)) {
-        moveToRelPath(searchForRelPath);
-    }
 
 </script>
 </body>
