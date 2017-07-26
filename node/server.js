@@ -193,6 +193,6 @@ ignoreList = readIgnore();
 
 app.use('/api', router);
 
-server.listen(3100, function () {
-    console.log('text-analysis server is listening on 3100!')
+server.listen(80, function () {
+    console.log('text-analysis server is listening on 80!')
 });
