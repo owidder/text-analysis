@@ -2,6 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.css"
+          media="screen,projection"/>
+
     <style>
 
         circle.zoom {
@@ -17,7 +20,7 @@
 
         div.container {
             width:100%;
-            margin: 0%;
+            margin: 0;
         }
 
         .viewfinder {
@@ -34,6 +37,12 @@
         line.viewfinder {
             stroke: black;
             stroke-width: 1;
+            opacity: .2;
+        }
+
+        line.guideline {
+            stroke: black;
+            stroke-width: 2;
             opacity: .2;
         }
 
@@ -56,6 +65,43 @@
             font-size: .4em;
         }
 
+        span.legend {
+            display: flex;
+            font-size: .3em;
+            line-height: 1em;
+            height: 1em;
+            margin: auto;
+        }
+
+        div.search imput {
+            font-size: small;
+            margin: 0;
+            height: 1rem;
+        }
+
+        div.input-field, div.input-field input {
+            padding: 0;
+            height: 1em;
+            margin:0;
+        }
+
+        span.search {
+            font-size: .5em;
+        }
+
+        span.link {
+            font-size: .6em;
+        }
+
+        span.link:hover, span.search:hover {
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        span.odd {
+            background-color: lightgrey;
+        }
+
     </style>
 </head>
 <body>
@@ -63,7 +109,8 @@
 <script>var bottle = new Bottle();</script>
 <script src="bower_components/lodash/dist/lodash.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="/bower_components/handlebars/handlebars.js"></script>
+<script src="bower_components/js-url/url.js"></script>
+<script src="bower_components/handlebars/handlebars.js"></script>
 
 <script src="js/util/simplePromise.js"></script>
 <script src="js/util/util.js"></script>
@@ -73,10 +120,9 @@
 
 <script src="bower_components/d3/d3.min.js"></script>
 <script src="js/util/stuff.js"></script>
-<link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.css"
-      media="screen,projection"/>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/spinner.css">
+<link rel="stylesheet" type="text/css" href=" css/material-icons.css"/>
 
 <div id="spinner" class="loading">Loading&#8230;</div>
 <div class="">
@@ -99,15 +145,15 @@
     </div>
     <div class="row">
         <div class="col s4 slider-input">
-            Viewfinder size
+            Viewfinder size: <span id="viewfinderfactor-value"></span> %
             <input id="viewfinderfactor-slider" value="30" type="range" min="1" max="100" onchange="viewfinderFactorChanged()"/>
         </div>
         <div class="col s4 slider-input">
-            Radius size
+            Radius size: <span id="radiusfactor-value"></span> %
             <input id="radiusfactor-slider" value="100" type="range" min="10" max="100" onchange="radiusFactorChanged()"/>
         </div>
         <div class="col s3 slider-input">
-            Threshold
+            Threshold: <span id="threshold-value"></span> %
             <input id="threshold-slider" value="70" type="range" min="50" max="99" onchange="thresholdChanged()"/>
         </div>
         <div class="col s1 slider-input">
@@ -125,6 +171,22 @@
     <div class="row">
         <div class="col s3">
             <div id="birdsview"></div>
+            <span class="legend">
+                Click -> move mouse -> click
+            </span>
+            <div class="search">
+                <div class="row">
+                    <div class="input-field col s10">
+                        <input placeholder="Search" id="search-input" type="text" class="validate">
+                    </div>
+                    <div class="col s1">
+                        <span onclick="searchClicked()" class="search"><i class="material-icons">search</i></span>
+                    </div>
+                    <div class="col s1">
+                        <span onclick="clearSearch()" class="search"><i class="material-icons">delete_forever</i></span>
+                    </div>
+                </div>
+            </div>
             <div id="file-list"></div>
         </div>
         <div class="col s9">
@@ -140,26 +202,52 @@
         <a class="mini" href="cloud.html?path={{relPath}}" target="_blank">[cloud]</a>
         <a class="mini" href="lsiIndex.html?path={{relPath}}" target="_blank">[similar files]</a>
         <a class="mini" href="histo.html?path={{relPath}}" target="_blank">[histogram]</a>
+        <span class="mini link" onclick="moveToRelPath('{{relPath}}')"><i class="material-icons">arrow_forward</i></span>
         <br>
         {{/each}}
-    </div>
+</script>
+
+<script id="search-results-script" type="text/x-handlebars-template">
+    <div class="file-list">
+        {{#each relPaths}}
+        <span class="{{evenOdd}}">
+            <a class="mini" href="{{github}}" target="_blank">{{relPath}}</a>
+            <a class="mini" href="cloud.html?path={{relPath}}" target="_blank">[cloud]</a>
+            <a class="mini" href="lsiIndex.html?path={{relPath}}" target="_blank">[similar files]</a>
+            <a class="mini" href="histo.html?path={{relPath}}" target="_blank">[histogram]</a>
+            <span class="mini link" onclick="moveToRelPath('{{relPath}}')"><i class="material-icons">arrow_forward</i></span>
+            <br>
+        </span>
+        {{/each}}
 </script>
 
 <script>
 
-    var threshold = bottle.container.util.param("t", "70");
     var Legend = bottle.container.Legend;
     var util = bottle.container.util;
 
+    var PARAM_NAME_THRESHOLD = "t";
+    var PARAM_NAME_VIEWFINDER_FACTOR = "vf";
+    var PARAM_NAME_SEARCH_REL_PATH = "sf";
+    var PARAM_NAME_RADIUS_FACTOR = "rf";
+    var PARAM_NAME_VIEWFINDER_X_PROZ = "vx";
+    var PARAM_NAME_VIEWFINDER_Y_PROZ = "vy";
+
+    var threshold = util.getHashParam(PARAM_NAME_THRESHOLD, "70");
+    var viewfinderFactor = util.getHashParam(PARAM_NAME_VIEWFINDER_FACTOR, "30");
+    var radiusSize = util.getHashParam(PARAM_NAME_RADIUS_FACTOR, "100");
+
+    $("#threshold-value").html(threshold);
+
     var BIRDSVIEW_PINCH_FACTOR = 4.3;
 
-    var birdviewWidth = window.innerWidth / BIRDSVIEW_PINCH_FACTOR;
+    var birdsviewWidth = window.innerWidth / BIRDSVIEW_PINCH_FACTOR;
     var birdsviewHeight = window.innerHeight / BIRDSVIEW_PINCH_FACTOR;
 
     var BIRDSVIEW_WIDTH_EXTRA = 20;
     var BIRDSVIEW_HEIGHT_EXTRA = 20;
 
-    var width = birdviewWidth*3;
+    var width = birdsviewWidth*3;
     var height = birdsviewHeight*3;
 
     var moveMode = false;
@@ -167,44 +255,116 @@
     function mouseMoved(evt) {
         if(moveMode) {
             d3.event.preventDefault();
+            var x = evt[0];
+            var y = evt[1];
+
             refresh({
-                zoomX: evt[0],
-                zoomY: evt[1]
+                zoomX: x,
+                zoomY: y
             });
-        }
-        else {
-            refresh({});
         }
     }
 
-    function showFiles(relPaths) {
-        $("#file-list").empty();
-        var filesTemplateScript = $("#files-script").html();
+    function clicked(evt) {
+        if(!moveMode) {
+            var x = evt[0];
+            var y = evt[1];
+
+            util.changeHashParam(PARAM_NAME_VIEWFINDER_X_PROZ, x/birdsviewWidth);
+            util.changeHashParam(PARAM_NAME_VIEWFINDER_Y_PROZ, y/birdsviewHeight);
+        }
+        else {
+            mouseMoved(evt);
+        }
+        refresh({});
+    }
+
+    function getPosFromfRelPath(partOfRelPath) {
+        for(var i = 0; i < nodes.length; i++) {
+            if(nodes[i].name == partOfRelPath) {
+                return {
+                    x: nodes[i].pcx,
+                    y: nodes[i].pcy
+                }
+            }
+        }
+
+        return undefined;
+    }
+
+    function moveToRelPath(relPath) {
+        if(!_.isEmpty(relPath)) {
+            var pos = getPosFromfRelPath(relPath);
+            if(pos != null) {
+                util.changeHashParam(PARAM_NAME_SEARCH_REL_PATH, relPath);
+                refresh({
+                    zoomX: pos.x,
+                    zoomY: pos.y
+                })
+            }
+        }
+    }
+
+    function search(searchFor) {
+        var relPaths = [];
+        nodes.forEach(function (node) {
+            if(node.name.indexOf(searchFor) >= 0) {
+                relPaths.push(node.name);
+            }
+        });
+
+        return relPaths;
+    }
+
+    function searchClicked() {
+        var searchFor = $("#search-input").val();
+        var relPaths = search(searchFor);
+        if(!_.isEmpty(relPaths)) {
+            showFiles(relPaths, "search-results-script");
+        }
+    }
+
+    function putIntoSearch(searchFor) {
+        $("#search-input").val(searchFor);
+        searchClicked();
+    }
+
+    function clearSearch() {
+        putIntoSearch("");
+        util.removeHashParam(PARAM_NAME_SEARCH_REL_PATH);
+    }
+
+    function showFiles(relPaths, templateId) {
+        var fileListElement = $("#file-list");
+        fileListElement.empty();
+        var filesTemplateScript = $("#" + templateId).html();
         var filesTemplate = Handlebars.compile(filesTemplateScript);
-        var relPathsWithMetadata = relPaths.map(function(relPath) {
+        var relPathsWithMetadata = relPaths.map(function(relPath, i) {
             var parts = relPath.split("/");
             var shortName = parts[parts.length-1];
             return {
+                evenOdd: i%2 == 0 ? "even" : "odd",
                 relPath: relPath,
                 shortName: shortName,
                 github: bottle.container.github.createContentUrl(relPath)
             }
         });
         var ctx = {
+            currentHref: window.location.href,
             relPaths: relPathsWithMetadata
         };
         var filesHtml = filesTemplate(ctx);
-        $("#file-list").append(filesHtml);
+        fileListElement.append(filesHtml);
 
     }
 
-    var birdviewSvg = d3.select("#birdsview").append("svg")
+    var birdsviewSvg = d3.select("#birdsview").append("svg")
         .attr("class", "force")
-        .attr("width", birdviewWidth+BIRDSVIEW_WIDTH_EXTRA)
+        .attr("width", birdsviewWidth+BIRDSVIEW_WIDTH_EXTRA)
         .attr("height", birdsviewHeight+BIRDSVIEW_HEIGHT_EXTRA)
         .on("click", function () {
             moveMode = !moveMode;
-            mouseMoved(d3.mouse(this));
+            clicked(d3.mouse(this));
         })
         .on("mousemove", function () {
             mouseMoved(d3.mouse(this));
@@ -219,7 +379,7 @@
         .on("click", function () {
             var evt = d3.mouse(this);
             var legendList = legend.createLegenListAtPos(evt[0], evt[1]);
-            showFiles(legendList);
+             showFiles(legendList, "search-results-script");
         })
         .on("mousemove", function () {
             var evt = d3.mouse(this);
@@ -227,13 +387,38 @@
         })
         .on("mouseout", legend.hideLegend);
 
+    var zoomLinksG = zoomSvg.append("g");
+    var zoomNodesG = zoomSvg.append("g");
+    var zoomLinesG = zoomSvg.append("g");
+
+    zoomLinesG.append("g")
+        .attr("class", "guidelines")
+        .append("line")
+        .attr("stroke-dasharray", "5,5")
+        .attr("class", "guideline")
+        .attr("x1", 0)
+        .attr("y1", height/2)
+        .attr("x2", width*2)
+        .attr("y2", height/2);
+
+    zoomLinesG.append("g")
+        .attr("class", "guidelines")
+        .append("line")
+        .attr("class", "guideline")
+        .attr("stroke-dasharray", "5,5")
+        .attr("x1", width/2)
+        .attr("y1", 0)
+        .attr("x2", width/2)
+        .attr("y1", height*2);
+
     var zoomSvgRect = zoomSvg.node().getBoundingClientRect();
     var zoomCenterX = zoomSvgRect.width/4;
     var zoomCenterY = zoomSvgRect.height/4;
 
-    var viewfinderrect = birdviewSvg.node().createSVGRect();
+    var viewfinderrect = birdsviewSvg.node().createSVGRect();
 
     var data = {};
+    var nodes, links;
 
     function getLinksFromNodeList(nodeList) {
         var links = [];
@@ -311,7 +496,7 @@
             data.withLinks = newData.withLinks;
         }
 
-        var viewfinderWidth = (birdviewWidth + BIRDSVIEW_HEIGHT_EXTRA) * data.viewfinderFactor;
+        var viewfinderWidth = (birdsviewWidth + BIRDSVIEW_HEIGHT_EXTRA) * data.viewfinderFactor;
         var viewfinderHeight = (birdsviewHeight + BIRDSVIEW_HEIGHT_EXTRA) * data.viewfinderFactor;
         var zoomFactorX = (width / viewfinderWidth);
         var zoomFactorY = (height / viewfinderHeight);
@@ -331,14 +516,18 @@
     }
 
     function viewfinderFactorChanged() {
-        var viewfinderFactorStr = document.getElementById("viewfinderfactor-slider").value;
+        var viewfinderFactorStr = $("#viewfinderfactor-slider").val();
         var viewfinderFactor = Number(viewfinderFactorStr) / 100;
+        $("#viewfinderfactor-value").html(viewfinderFactorStr);
+        util.changeHashParam(PARAM_NAME_VIEWFINDER_FACTOR, viewfinderFactorStr);
         refresh({viewfinderFactor: viewfinderFactor});
     }
 
     function radiusFactorChanged() {
-        var radiusFactorStr = document.getElementById("radiusfactor-slider").value;
+        var radiusFactorStr = $("#radiusfactor-slider").val();
         var radiusFactor = Number(radiusFactorStr) / 100;
+        $("#radiusfactor-value").html(radiusFactorStr);
+        util.changeHashParam(PARAM_NAME_RADIUS_FACTOR, radiusFactorStr);
         refresh({radiusFactor: radiusFactor});
     }
 
@@ -353,15 +542,13 @@
     }
 
     function thresholdChanged() {
-        var thresholdStr = document.getElementById("threshold-slider").value;
-        window.location.href = "/zoomableStaticForce.html?t=" + thresholdStr;
+        var thresholdStr = $("#threshold-slider").val();
+        util.changeHashParam(PARAM_NAME_THRESHOLD, thresholdStr);
+        window.location.reload();
     }
 
-    var birdsviewNodesG = birdviewSvg.append("g");
-    var viewfinderG = birdviewSvg.append("g");
-
-    var zoomLinksG = zoomSvg.append("g");
-    var zoomNodesG = zoomSvg.append("g");
+    var birdsviewNodesG = birdsviewSvg.append("g");
+    var viewfinderG = birdsviewSvg.append("g");
 
     var color = d3.scaleOrdinal(d3.schemeCategory20);
 
@@ -398,7 +585,7 @@
         viewfinderG.selectAll("line.viewfinder.h")
             .attr("x1", "0")
             .attr("y1", viewfinderCenterY)
-            .attr("x2", birdviewWidth+BIRDSVIEW_WIDTH_EXTRA)
+            .attr("x2", birdsviewWidth+BIRDSVIEW_WIDTH_EXTRA)
             .attr("y2", viewfinderCenterY);
 
         viewfinderG.selectAll("line.viewfinder.v")
@@ -414,7 +601,7 @@
         viewfinderrect.width = viewfinderWidth;
         viewfinderrect.height = viewfinderHeight;
 
-        var elementList = birdviewSvg.node().getIntersectionList(viewfinderrect, null);
+        var elementList = birdsviewSvg.node().getIntersectionList(viewfinderrect, null);
         var nodeList = [];
         elementList.forEach(function (element) {
             if(element.tagName == "circle") {
@@ -463,7 +650,7 @@
             return -d.value;
         }))
         .force("charge", d3.forceManyBody().strength(-1000))
-        .force("center", d3.forceCenter(birdviewWidth/2, birdsviewHeight/2));
+        .force("center", d3.forceCenter(birdsviewWidth/2, birdsviewHeight/2));
 
     function colorForNodeName(name) {
         var parts = name.split(".");
@@ -515,9 +702,29 @@
                 return d.source.name + "-" + d.target.name;
             });
 
+        var linksCircleStartWithData = zoomLinksG.selectAll("circle.linkstart")
+            .data(zoomLinkList, function (d) {
+                return d.source.name + "-" + d.target.name;
+            });
+
+        var linksCircleEndWithData = zoomLinksG.selectAll("circle.linkend")
+            .data(zoomLinkList, function (d) {
+                return d.source.name + "-" + d.target.name;
+            });
+
         linksWithData.enter()
             .append("line")
             .attr("class", "link zoom");
+
+        linksCircleStartWithData.enter()
+            .append("circle")
+            .attr("r", 1)
+            .attr("class", "linkstart");
+
+        linksCircleEndWithData.enter()
+            .append("circle")
+            .attr("r", 1)
+            .attr("class", "linkend");
 
         zoomLinksG.selectAll("line.link")
             .attr("style", function (d) {
@@ -536,7 +743,26 @@
                 return zy(d.target.pcy, zoomY, zoomFactorY);
             });
 
+        zoomLinksG.selectAll("circle.linkstart")
+            .attr("cx", function (d) {
+                return zx(d.source.pcx, zoomX, zoomFactorX);
+
+            })
+            .attr("cy", function (d) {
+                return zy(d.source.pcy, zoomY, zoomFactorY);
+            });
+
+        zoomLinksG.selectAll("circle.linkend")
+            .attr("cx", function (d) {
+                return zx(d.target.pcx, zoomX, zoomFactorX)
+            })
+            .attr("cy", function (d) {
+                return zy(d.target.pcy, zoomY, zoomFactorY);
+            });
+
         linksWithData.exit().remove();
+        linksCircleStartWithData.exit().remove();
+        linksCircleEndWithData.exit().remove();
     }
 
     function drawZoom(zoomNodeList, zoomX, zoomY, zoomFactorX, zoomFactorY, radiusFactor, zoomLinkList, withLinks) {
@@ -547,7 +773,6 @@
     }
 
     function drawForce() {
-        var nodes, links;
         var allLinksAddedToNodes = false;
 
         function drawNodes() {
@@ -596,7 +821,7 @@
             addLinksToNodes();
 
             var dimensions = getDimensions(nodes);
-            var pinchX = birdviewWidth / dimensions.width;
+            var pinchX = birdsviewWidth / dimensions.width;
             var pinchY = birdsviewHeight / dimensions.height;
 
             birdsviewNodesG.selectAll("circle.node")
@@ -632,9 +857,13 @@
                     document.getElementById("progressbar").style = "width: " + (ctr/MAX_CTR*100) + "%";
                 }
                 ticked();
+                var searchForRelPath = util.getHashParam(PARAM_NAME_SEARCH_REL_PATH, "");
+                if(!_.isEmpty(searchForRelPath)) {
+                    moveToRelPath(searchForRelPath);
+                }
             }, 1000);
         }
-
+        
         $("#spinner").show();
         d3.json('/api/theWholeCloud/' + threshold, function (error, data) {
             $("#spinner").hide();
@@ -648,17 +877,24 @@
     }
 
     function init() {
-        var slider = document.getElementById("threshold-slider");
-        slider.value = threshold;
+        $("#threshold-slider").val(threshold);
+        $("#viewfinderfactor-slider").val(viewfinderFactor);
+        $("#radiusfactor-slider").val(radiusSize);
     }
 
     init();
 
     legend.appendLegend();
     drawForce();
+
+    var viewfinder_x_proz = Number(util.getHashParam(PARAM_NAME_VIEWFINDER_X_PROZ, ".5"));
+    var viewfinder_y_proz = Number(util.getHashParam(PARAM_NAME_VIEWFINDER_Y_PROZ, ".5"));
+    var initialZoomX = birdsviewWidth * viewfinder_x_proz;
+    var initialZoomY = birdsviewHeight * viewfinder_y_proz;
+
     refresh({
-        zoomX: birdviewWidth/2,
-        zoomY: birdsviewHeight/2,
+        zoomX: initialZoomX,
+        zoomY: initialZoomY,
         viewfinderFactor: 0.2,
         radiusFactor: 1
     });
