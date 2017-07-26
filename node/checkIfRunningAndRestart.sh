@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -x
-export a=`curl -sL -w "%{http_code}\\n" "http://localhost:3100/api/ping" -o /dev/null`
+export a=`curl -sL -w "%{http_code}\\n" "http://localhost:80/api/ping" -o /dev/null`
 echo $a
 
 if [ $a = "200" ]; then
