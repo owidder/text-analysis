@@ -1,0 +1,17 @@
+Breadcrumbs show name of saved list	"In List View: When user saves a List the given name appears somewhere between the buttons at the top. 
+
+ # Erase the name between the buttons
+
+ # Insert the name in the breadcrumbs in the following style (see also example in attachment). The name is not cklickable
+
+
+
+{code:java}
+
+<Buildingblock-type>/<Name of saved List>{code}
+
+The name of the current list should stay in the breadcrumbs until user cklicks ""RESET""."		Improvement	iteraplan PO	29/May/17 12:09 PM	11/Jun/17 3:17 PM														"11/Jun/17 3:17 PM;fka;ITERAPLAN-5370 covers the same change, but for all visualizations.
+
+
+
+We forgot to add it to this ticket ..."																																																						

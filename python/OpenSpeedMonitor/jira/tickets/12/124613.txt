@@ -1,0 +1,19 @@
+prevent logged in user from login page	"With the anonymous access of iteraplan (IPTS-680) the login page is shown whenever the user requests it.
+
+
+
+Before iteraplan 6 the login page was *not* shown, when a user is logged in.
+
+This behaviour should be enabled again:
+
+{code:java}
+
+userSettingsService.loadAllUserSettings().then(function () {
+
+    // don't prevent from login page if an user is logged in already
+
+});
+
+{code}
+
+If the user is not logged in anonymously (flag in permissions). the request for the login page should be ignored or redirected to the home page."		Improvement	iteraplan PO	16/Jun/17 1:42 PM																																																																					

@@ -1,0 +1,5 @@
+Chart implementieren: Senkrechte Violincharts für die Ladezeit	"Senkrechte Violincharts für die Ladezeit zur Visualisierung der Verteilung.
+
+
+
+!Ladezeiten Violin.png|thumbnail!"		Story	OpenSpeedMonitor	10/Feb/17 5:12 PM	09/Mar/17 12:13 PM																																																																				

@@ -1,0 +1,13 @@
+Update start/stop-scripts on Test-Server from SVN	"*IS:*
+
+Start and Stop-scripts are deployed to the server manually on occasion.
+
+Drawback: rollout is not automated and scripts are not under version control.
+
+
+
+*SHOULD:*
+
+* -checkin script files to SVN- already done in ITERAPLAN-4620, folder: {{iteraplan-9/infrastructure/e2e-test}}
+
+* use scripts from SVN on the test server. (e.g. create a new Jenkins job that watches the specifc sub-directory in SVN and scp's the files to the test-server)"		Improvement	iteraplan PO	10/Jun/16 10:59 AM																																																																					

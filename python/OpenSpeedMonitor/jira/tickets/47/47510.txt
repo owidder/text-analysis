@@ -1,0 +1,1 @@
+"IT-Service" should be written with a hyphen in German	Please correct in start screen, list view etc.		Bug	iteraplan PO	19/Mar/15 9:53 AM	21/Mar/15 8:34 PM																																																																				

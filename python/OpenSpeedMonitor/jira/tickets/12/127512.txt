@@ -1,0 +1,33 @@
+Hermes-Messung einrichten	"Gemessen werden soll im Chrome alle 10 Minuten mit DSL 6.000.
+
+
+
+Es soll die folgende Journey gemessen werden:
+
+ * Paketschein-Formular
+
+ * Ajax-Call bei Eingabe der Ausmaße des zu versendenden Päckchens
+
+ (nur bestehende Lösung, in der neuen wird die Ermittlung der Art des Pakets im Client gemacht)
+
+ * Paketschein erstellen - Formularseite
+
+ * Auftragsbestätigungsseite (nach Ausfüllen aller benötigten Formularfelder)
+
+ * PDF-Download des Paketscheins
+
+
+
+Gemessen werden soll diese Journey vergleichsweise für
+
+ * Bestehende Lösung: [https://www.myhermes.de|https://www.myhermes.de/]
+
+ * Neue Lösung: [https://myhermes.pbipattern.de/preview.php?pattern=pages-paketschein_erstellen]"		Task	OpenSpeedMonitor	19/Jul/17 10:31 AM															"24/Jul/17 10:37 AM;sbr;Die richtige URL der neuen Lösung ist: [https://test.myhermes.de/versenden/paketschein-erstellen/]
+
+
+
+ "	24/Jul/17 10:40 AM;sbr;Wir lassen Schritte 1 & 2 erstmal aus, da das neue Portal bisher erst das Formular "Paketschein erstellen" unterstützt und wir die Journeys vergleichbar halten wollen.	"24/Jul/17 2:23 PM;sbr;Eingerichtet auf [https://osm.hermes.iteratec.de
+
+
+
+M|https://osm.hermes.iteratec.de./]essung solltet noch überprüft werden."																																																				

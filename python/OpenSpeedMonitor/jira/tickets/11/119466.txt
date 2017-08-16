@@ -1,0 +1,35 @@
+New icons	"* History view:
+
+
+
+!https://thumb7.shutterstock.com/display_pic_with_logo/419668/457963435/stock-vector-files-time-icon-457963435.jpg|width=39,height=41! ([https://www.shutterstock.com/de/image-vector/files-time-icon-457963435?src=5I45DBUTgoJZCZT5UsboPA-1-5|https://www.shutterstock.com/de/image-vector/files-time-icon-457963435?src=5I45DBUTgoJZCZT5UsboPA-1-5)])
+
+ * Tree view:
+
+
+
+!tree view icon.png|width=36,height=36! ([https://www.iconfinder.com/icons/14676/classic_tree_view_icon]) related to ---IPTS-794---
+
+ * Metamodel tab - in customizing
+
+
+
+!flow_chart1600.png|width=36,height=36!   ([https://icons8.com/icon/1765/flow-chart)] or  !charts-flow-chart-icon.png|width=36,height=36!  ([http://megaicons.net/iconspack-178/5293/])
+
+ * Admin-Tab on the start screen
+
+
+
+ * Visualize + Report Tabs on the start screen
+
+
+
+ * new icon for Business Mappings
+
+ ** needs to be created, request to marketing _(to discuss with Fabian and Marcel)_
+
+ ** my suggestion is sth similar like:  !businessmappingicon.png|width=25,height=25!"		Improvement	iteraplan Speedbird	24/Apr/17 4:49 PM	13/Jun/17 4:37 PM														12/Jun/17 10:27 AM;dmkh;[~sbu], any results regarding History view icon?	"12/Jun/17 11:27 AM;sbu;I added the history_gray button. Do you need anything else?
+
+
+
+I'll commit all the icons for buttons this afternoon."	12/Jun/17 11:41 AM;dmkh;[~sbu], if history icon was specified as gray - then that's all, thanks!	12/Jun/17 11:49 AM;sbu;Yes, it should be gray. Great.	13/Jun/17 9:01 AM;dmkh;There are some console warnings regarding your commit (see attached screenshot), please fix directories for svg-images.	13/Jun/17 9:16 AM;sbu;I'm on it. Andrea changed the svg-directories. 	13/Jun/17 9:56 AM;sbu;[~mkt] Ich habe das Metamodel-Icon auch schon gemacht. Ich hänge es hier an, habe es aber noch nicht comitted, weil es für customizing ja noch keine directories gibt. 																																																

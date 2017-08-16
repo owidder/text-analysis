@@ -1,0 +1,29 @@
+Extend Settings-spec.js in LSD	"please edit the e2e-test tracability excel sheet located in e2etest subfolder after implementing the tests
+
+
+
+
+
+create expects for existing tests in Settings-spec.js
+
+
+
+
+
+there is a special setting called ""show partially connected items"":
+
+change column to connected business processes and row to connected business unit then you can see the new setting. -> test this setting too
+
+
+
+
+
+"	62908	Sub-task	iteraplan PO	09/Nov/15 9:44 AM	18/Nov/15 9:58 AM					LSD	Test								"17/Nov/15 9:12 AM;lwi;edit jsdoc of getTextPromiseOnContentElement if you made a parameter optional and give it a default value,
+
+
+
+you have 2 tests called it('Should display orphans', . rename one!
+
+
+
+change test of it('Should show empty rows' so there is a test where empty rows will be added"																																																						

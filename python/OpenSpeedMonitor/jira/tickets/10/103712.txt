@@ -1,0 +1,1 @@
+Dynamische Auswahl auch für tabularEventResults u.a.	Sollte auch woanders funktionieren, wie bei der Tabelle und bei dem neuen BarChart.	97661	Sub-task	OpenSpeedMonitor	23/Nov/16 5:51 PM	12/Dec/16 11:41 AM																																																																				

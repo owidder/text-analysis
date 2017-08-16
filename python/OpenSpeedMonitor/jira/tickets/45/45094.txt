@@ -1,0 +1,5 @@
+Landscape Diagram - new Option to not scale content to fit into page	"Landscape Diagram:
+Provide another Option to use page-scaling or not.
+Default to current ""Use Page-scaling"".
+Both Visio and SVG"		New Feature	iteraplan PO	19/Aug/11 3:10 PM	29/Aug/11 12:13 PM														19/Aug/11 6:10 PM;kgo;Please, when testing, have a look at the presentation keys for the new feature. If and after these have been adjusted, I will also update the screen shots and the documentation in the user guide.	22/Aug/11 5:07 PM;kvo;Text is ok	"22/Aug/11 6:48 PM;kgo;Documentation has been adjusted.
+@kvo: Could you please have a look if it is alright?"	23/Aug/11 10:01 AM;kvo;done and corrected ;)	23/Aug/11 10:43 AM;kgo;thx																																																		

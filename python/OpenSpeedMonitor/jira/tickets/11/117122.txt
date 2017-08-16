@@ -1,0 +1,20 @@
+Access iteraplan via REST API	"I can't find that functional permission anymore in 5.5 
+
+""Access iteraplan via REST API""
+
+
+
+https://doc.iteraplan.de/display/iteraplan55/Functional
+
++permissions"		Technical question	iteraplan Support	30/Mar/17 12:46 PM	05/Apr/17 1:52 PM														"30/Mar/17 1:57 PM;cst;Dear Mr. Eberle,
+
+thank you for your inquiry.
+
+The permission ""Access iteraplan via REST API"" was removed in version 5.5.
+Every user has in the version 5.5. the permission to access the REST API.
+
+You are right, this is not correct in the documentation.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	05/Apr/17 1:51 PM;martin.eberle@zumtobelgroup.com;you can close this ticket. Thx																																																					

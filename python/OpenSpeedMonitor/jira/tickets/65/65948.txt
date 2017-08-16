@@ -1,0 +1,3 @@
+Menü immer von links einblenden			Task	EAMV15	07/Dec/15 3:07 PM	16/Dec/15 1:08 PM														"16/Dec/15 1:08 PM;pkh;Android Menü unterstützt keine derartige Funktion.
+
+Wird vorerst nicht umgesetzt!"																																																						

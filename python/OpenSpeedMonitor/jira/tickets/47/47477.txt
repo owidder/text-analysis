@@ -1,0 +1,101 @@
+Option to span content elements	"*Update: Remove spanning completely*
+
+
+
+Original issue description below
+
+###
+
+Should span elements both as horizontally and vertically
+
+
+
+Effected parts:
+
+1. Context menu
+
+2. Configuration
+
+3. TableModelBuilder
+
+
+
+
+
+The options for the user are ""no spanning"", ""horizontal"", ""vertical"".
+
+No ""both horizontal and vertical"" option.
+
+
+
+All items in a content cell are boxes in one ""stack"" or column"". No wider columns with two or more boxes side by side.
+
+
+
+For horizontal spans, move the spanning items to the top, and put the non-spanning items below.
+
+
+
+Example: Cell 1,1 has elements A, B, Cell 1,2 has elements B and C.
+
+Make it 
+
+- one wide box for element B, spanning both cells, in the upper half of both cells
+
+- one regular box for A, in Cell 1,1, lower half
+
+- one regular box for C in Cell 1,2, lower half.
+
+
+
+[____B____]
+
+[A]___|___ [C]
+
+
+
+
+
+
+
+For vertical spans, make them from top to bottom as far as possible.
+
+There can be breaks in the spanning box because of additional items ""in the middle"".
+
+
+
+Example
+
+Three cells, from top to bottom, with elements A, B; A, C; A, D.
+
+So A should be spanning all three cells, BUT
+
+C must be drawn in the middle cell as well.
+
+So the box for C breaks the spanning box, and the spanning box should be on the top and middle cell. 
+
+
+
+"		New Feature	iteraplan PO	05/Mar/15 10:27 AM	19/Jan/16 1:56 PM														18/May/15 10:16 AM;msr;Estimate of Alex for the remaining part: 5 Storypoints	"21/May/15 3:10 PM;alvo;WF answer about two groups (non single) vertical spanning
+---
+given two adjacent cells, one on top of the other,
+
+and two elements that are in both cells,
+
+then we can span only one those elements as a single box,
+
+but not the other element,
+
+that will  still be shown as two separate boxes.
+
+ 
+
+So, as my spontaneous decision:
+
+  Take the lexicographically first one.
+
+ 
+
+What is important: the system must be deterministic and predictable for the user.
+
+So choosing randomly is _not_ an option."																																																					

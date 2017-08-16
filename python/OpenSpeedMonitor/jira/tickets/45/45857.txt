@@ -1,0 +1,21 @@
+Bulk unsubscribe sends mails for elements that were not subscribed	"to reproduce:
+
+# ensure notification mails are working
+
+# execute a massupdate query
+
+# select a few elements that you have not subscribed to yet
+
+# More options -> Bulk unsubscribe for the selected elements
+
+=> you get an unsubscription confirmation mail for each element although you were not subscribed.
+
+# Check whether the same holds true for subscription of already subscribed elements, and if easy, fix it."		Bug	iteraplan PO	05/Jul/13 4:03 PM	03/Mar/16 10:44 AM					bulkupdate	massdata	subscriptions							"26/Feb/16 1:40 PM;pzi;(wrong) behavior confirmed - I get Subscription/Unsubscription emails even if the subscription-status has not changed (i.e. I subscribe an already subscribed system). When I make changes, then the behaviour is as expected and I only receive 1 email (not two because of this duplicated subscription), so only sending the subscription/unsubscription email again should be surpressed.
+
+
+
+[~sfe]: How should this case be handled? Is it sufficient just to skip sending the email if I have already (un)subscribed the system or should the user get a feedback message that the system has already been (un)subscribed too?
+
+
+
+[edit] Descision after talking to Fabian is that we just focus on avoiding to send unnecessary emails for now. Later on, when this feature is ported to the Interactive Client, we should probably think of displaying a feedback message for the user so that he is aware that no email will be sent.[/edit]"	29/Feb/16 4:14 PM;pzi;I fixed this and wrote 2 tests to cover both cases causing problems: unsubscribing an element that is not yet subscribed and subscribing an already subscribed element. I refactored the subscription method to make it easier to understand - this should be considered for the review too																																																					

@@ -1,0 +1,5 @@
+Edit Service for text - change JSmodel	"- create angular service to change single values in model (only property values so far) 
+- service should be able to change values in model
+
+only text values in scope of this ticket
+"		New Feature	iteraplan Thunderduck	05/Oct/16 12:51 PM	09/Nov/16 9:49 AM														09/Nov/16 9:49 AM;mse;Review ok.																																																						

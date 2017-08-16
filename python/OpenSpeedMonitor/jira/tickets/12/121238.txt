@@ -1,0 +1,1 @@
+adminGetIteraplan: Generate new captchas	Some captchas are quite difficult to read. A button to generate a new captcha is missing:		Improvement	iteraplan PO	12/May/17 2:53 PM															16/Jun/17 1:26 PM;msr;This ticket can be reviewed *after* the release.																																																						

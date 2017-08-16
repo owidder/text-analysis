@@ -1,0 +1,7 @@
+Move Elastic Update to M3CEL	"use cont. elastic update in new M3 Changes event listener
+
+"		Improvement	iteraplan Thunderduck	07/Sep/16 1:38 PM	20/Apr/17 3:54 PM					M3CEL									"27/Sep/16 2:44 PM;mse;Due to perfomance issues dicovered in ticket IPTT-151, only building blocks with real changes should be updated. E.g. at the moment, also all business mappings are updated when a IS is changed even though the business mappings themselves did not change.
+
+
+
+See TransactionBasedModelUpdater.persistInMemoryModel() around line 116 as starting point and ask Stephan for further details."	13/Apr/17 4:45 PM;sfe;Possible performance improvements, as indicated by Manuel's comment above, and other changes to make use of the now available ModelChange object when updating the elastic model, should be done in an extra ticket.																																																					

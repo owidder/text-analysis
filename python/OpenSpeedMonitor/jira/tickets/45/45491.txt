@@ -1,0 +1,4 @@
+Validation for Number attributes broken in German UI	"If I edit a building block that has number attributes assigned, I can't save it anymore after that (not even if I haven't touched those attributes).
+The Attributes tab shows validation errors on those values because commas are used as decimal separators.
+
+The validation should be locale-dependent and accept commas in such languages, e.g. German and Swedish"		Bug	iteraplan PO	18/Apr/12 6:18 PM	20/Apr/12 9:46 AM					validation																																																															

@@ -1,0 +1,1 @@
+Update the pipeline to handle the self-relations		83118	Sub-task	iteraplan PO	10/May/16 1:05 PM	01/Jun/16 5:30 PM														01/Jun/16 4:32 PM;msr;Review done: https://iteraweb.iteratec.de/fisheye/cru/IP-12	01/Jun/16 4:41 PM;roia;Updated according to review comments																																																					

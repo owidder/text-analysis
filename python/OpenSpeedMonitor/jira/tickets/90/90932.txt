@@ -1,0 +1,17 @@
+Diagrams in interactive client don't link to the items like the PDF reports	it would be great if the items shown in the interactive client would contain the links to e.g. the information systems like it is the case in the PDF report. This would significantly improve the usage of the interactive report.		Fault	iteraplan Support	20/Jul/16 10:18 AM	20/Jul/16 12:50 PM														"20/Jul/16 10:52 AM;cst;Dear Mr. Graßl,
+
+thank you for your enquiry.
+
+We are working full steam to develop the interactive client with new features. 
+In this context, we want to integrate the links to the building blocks for the interactive report. 
+
+There is currently no definite date for this feature.
+ 
+Greetings,
+
+Christoph Stangl - iteraplan Support "	"20/Jul/16 12:11 PM;martin.grassl@allianz.com;Dear Christoph,
+
+thanks for your feedback. Then we'll just wait and look forward to the release.
+
+Best regards,
+Martin"																																																					

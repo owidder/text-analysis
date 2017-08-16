@@ -1,0 +1,13 @@
+Bitte Sven Michael Haase in _JIRA_AUDI_MBTECHNIK_INT aufnehmen	Zugriff auf Confluence und JIRA für MB-Technik erforderlich		Task	Infrastruktur	24/Apr/17 2:34 PM	24/Apr/17 3:16 PM	JIRA													"24/Apr/17 3:16 PM;kti;Hallo Oliver,
+
+
+
+habe entsprechend die Zugriffe erteilt.
+
+
+
+Viele Grüße
+
+
+
+Kathrin"	24/Apr/17 4:07 PM;owi;Danke. Zugriff funktioniert.																																																					

@@ -1,0 +1,3 @@
+Im OTTO-Graphite landen keine daily oder weekly-CSI-Werte	Nur die hourly werden reportet.		Bug	OpenSpeedMonitor	14/Jan/14 9:52 AM	29/Jan/14 10:19 AM														"23/Jan/14 6:03 PM;nkuhn;Umfangreiche unit-Tests geschrieben: de.iteratec.ism.isreport.external.MetricReportingServiceTests
+Laufen alle durch.
+Habe das Logging im de.iteratec.ism.isreport.external.MetricReportingService verstärkt und werde nach dem Deployment auf der seu nechsehen, worans liegt, dass hier keine Werte geschrieben werden."																																																						

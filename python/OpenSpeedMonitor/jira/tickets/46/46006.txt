@@ -1,0 +1,11 @@
+Rest API does not return multivalued attributes as Collection if there is only one value assigned	"to reproduce:
+# ensure the accountability of an informationsystem has only one value assigned
+# query the rest api for this informationsystem (e.g. rest/data.json?content=InformationSystem[@name.contains(""Acc"")]; )
+=> json contains accountability with just the value (no collection brackets)
+# add another value to the accountability attribute
+# again query the rest api for this informationsystem
+=> json contains both accountability values correctly encoded as collection
+
+To fix this we might need to check the attributes cardinality and explicitly call the getValues(...) on the UniversalModelExpression in case of a multivalued attribute. This ensures a Collection being returned.
+
+Hint on a fix: see AbstractDataSerializer#setProperty. We need to check the cardinality here and append a collection for multivalued properties even if only one value is contained in the values Collection."		Bug	iteraplan PO	20/Aug/13 9:49 AM	05/May/14 1:20 PM					json	rest								05/May/14 1:20 PM;bra;no longer applicable to the new mappers																																																						

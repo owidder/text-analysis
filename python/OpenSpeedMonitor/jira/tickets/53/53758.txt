@@ -1,0 +1,3 @@
+Die Ergebnisse eines Jobs werden Nutzerfreundlich dargestellt.	"Aktuell werden die Reports über ein JSON in Elastic Search gespeichert.
+
+Ein Nutzer soll hier tabellarisch die Ergebnisse lesbar angezeigt bekommen."		Story	secureCodeBox	14/Aug/15 2:50 PM																																																																					

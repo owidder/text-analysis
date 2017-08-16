@@ -1,0 +1,9 @@
+REST api ignores header field "format"	"According to test spec in ITERAPLAN-1991, iteraplan's REST api should read request header field ""format"" and react by adjusting its output format or returning response code 400, depending on request and format set.
+
+However, it seems the header field is ignored completely (see also test results in ITERAPLAN-2032)
+
+Requesting of a specific format works fine when using the format URL parameter."		Bug	iteraplan PO	18/Oct/13 2:55 PM	22/Oct/13 7:16 AM					format	REST								"21/Oct/13 10:04 AM;svo;The REST API was intended to listen to the ""Accept"" header field, which is one of the header fields specified by the Http protocol, unlike the ""format"" header. This is probably an error in the (test) specification.
+This is also documented correctly in the user documentation."	"24/Oct/13 9:43 AM;psc;I discussed this topic with Wolfgang. The ""ACCEPT"" Header-Parameter should be used for system-system communication. Whenever a user needs to use the REST-interface via Browser, an additional GET Query Parameter ""format"" can be used to overule the ACCEPT-Parameter. As stated above the later is working. I additionally checked the Query-Parameter works. 
+
+No need for changes. Ticket will be closed.
+Remarks: The REST-testcase should be changed accordingly."																																																					

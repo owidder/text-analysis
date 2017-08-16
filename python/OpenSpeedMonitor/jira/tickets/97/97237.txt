@@ -1,0 +1,23 @@
+Change base type	"*Summary:*
+
+The user should be able to change the base type of the pie chart, ie. the Building Block type.
+
+
+
+*Implementation details:*
+
+* All building block types are selectable, cp. Portfolio diagram
+
+* The currently choosen type is highlighted in bold
+
+* If a new type is selected, coloring and filtering will be reset to the defaults of the new type
+
+* Permissions are handled via a separate ticket
+
+
+
+*UI:*
+
+* Toolarea: Entry ""Element type""/""..."" at the left most position, cp.portfolio diagram
+
+* Legend: Show type on top of legend, with header ""Element Type""/""..."", cp. portfolio diagram"		New Feature	iteraplan Speedbird	26/Sep/16 1:56 PM	28/Sep/16 3:15 PM														26/Sep/16 5:01 PM;dmkh;Described functionality was added in IPTS-153 (not incl. resetting coloring and filtering, they are currently not implemented)	28/Sep/16 3:15 PM;msr;Already implemented by [~dmkh] in IPTS-153. Thanks.																																																					

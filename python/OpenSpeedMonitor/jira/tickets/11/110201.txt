@@ -1,0 +1,5 @@
+Migrate Level-Distrigation Information for Classic Cluster Diagram		108908	Sub-task	iteraplan Thunderduck	01/Feb/17 8:35 AM	09/Feb/17 10:05 AM														"06/Feb/17 3:13 PM;sfe;Two remarks:
+
+* When selecting one of the level ranges in the old Cluster Diagram, its header is displayed hierarchical (similar to the hierarchical display of a Landscape Diagram axis). The new CCD does not display its header hierarchically, so this difference should be logged.
+
+* When selecting ""non hierarchical"" in the old Cluster Diagram, the display is equivalent to the ""flat"" display of a Landscape Diagram axis, meaning all elements of all levels are displayed, but in a non-hierarchical way. In the new CCD, this matches best with the absence of a hierarchical filter, but is migrated as a level filter ""Level 1-1"""																																																						

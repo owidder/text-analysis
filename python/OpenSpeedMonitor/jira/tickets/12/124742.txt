@@ -1,0 +1,19 @@
+Single Element View: strange behavior when update name to more than max size	"Step to reproduces:
+
+ # Open 'Data' -> 'Product' -> 'Credit card'.
+
+ # Change name to  more than max chars(> 255).
+
+ # Apply name(by clicking left mouse button out of editor).
+
+
+
+Actual result: error message appear, name changes to default
+
+
+
+Expected result: error message appear, name changes to previous or nothing happens(like with ""enter"" button)
+
+
+
+Comments: the same for 'Description' field"		Bug	iteraplan Thunderduck	19/Jun/17 1:48 PM	25/Jul/17 2:03 PM														18/Jul/17 5:31 PM;pma;Name is changed to previous always	25/Jul/17 1:35 PM;pma;Cannot reproduce																																																					

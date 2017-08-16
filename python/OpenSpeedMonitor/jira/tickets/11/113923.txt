@@ -1,0 +1,41 @@
+Attributes with XWIKI Syntax crashes in the single element view	"Can be reproduced in version 5.5 and the current trunk 
+
+ # Open iteraplan and change into the classic client 
+
+ # Go into ""Administration"" and ""Attributes"" 
+
+ # Edit the Attribute ""Costs"" 
+
+ # Enter the following part into the part ""Description"" 
+
+{{*The format should be: \{}}{{[[}}{{}//first name//\\\{\\\{\{, }}}//given name//\\\{\\\{\{>>}}}//Notes-Link to entry in Who is Who//\\\{\\\{\{]]}}}**An example: \{{{[[GROER, Michael>>Notes://OVIDNOTES01/C1256A7A00395618/35185D46215ED089C125728A005F8AE1/59301C8BFDDE4411C1256AE20025F6A6]]}}}*}}
+
+ # Save and change into the list view of Information Systems in the interactive client
+
+ # Open the single element view of the ""BI # 1.0"" 
+
+ # The page opens empty with code fragments
+
+
+
+This is reproducible with every attribute and entered XWIKI syntax.  
+
+
+
+Current: The single element view do not opens with attribute and XWIKI syntax"		Bug	iteraplan Speedbird	06/Mar/17 10:54 AM	22/Mar/17 4:14 PM														06/Mar/17 4:29 PM;dmkh;Reproduced with attached description.	"21/Mar/17 5:08 PM;mash;Additional bug appeared:
+
+
+
+Steps to reproduce:
+
+ * Open some BB List.
+
+ * Open description editor of some Building block, for example BI # 1.0.
+
+ * Paste description text from file attached.
+
+ * Save it
+
+ * Open editor again.
+
+ * {color:#ff0000}Exception occurs. (See screenshot){color}"	22/Mar/17 4:14 PM;mash;Review is done																																																				

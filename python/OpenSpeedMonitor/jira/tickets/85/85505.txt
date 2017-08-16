@@ -1,0 +1,7 @@
+Bamboo Deploy Job soll Messungen aktivieren	Der Bamboo Deploy Job soll Messungen nach dem Deployment auf der Dev-Instanz wieder aktivieren		Task	OpenSpeedMonitor	26/May/16 1:01 PM	08/Jun/16 6:23 PM														"08/Jun/16 6:23 PM;nku;Bamboo macht jetzt folgendes beim Deployment:
+
+* Messungen aktivieren
+
+* BatchActivities aktivieren 
+
+* Event schreiben für das Deployment"																																																						

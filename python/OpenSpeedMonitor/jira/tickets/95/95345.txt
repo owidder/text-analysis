@@ -1,0 +1,23 @@
+Set null value properly	"setting empty array as value returns _500 internal Server Error_
+
+
+
+
+
+{code:java}
+
+PUT to http://localhost:8080/iteraplan/api/microedit/InformationSystem/9742
+
+{
+
+  ""Costs"": []
+
+}
+
+{code}
+
+
+
+
+
+should unset costs and return _200 OK_."		Bug	iteraplan Thunderduck	06/Sep/16 3:00 PM	08/Sep/16 9:55 AM																																																																				

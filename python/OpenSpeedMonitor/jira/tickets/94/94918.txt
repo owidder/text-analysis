@@ -1,0 +1,9 @@
+Adjust Admin GUI	"Admin GUI:
+
+* Should obviously use the new database to display all demo instances
+
+* Current functionality should stay, no change needed: Create demo instaces with custom name, change expiredate
+
+* Do not put any effort in layout / look&feel, as this part is used iteratec internally only
+
+"	93358	Sub-task	iteraplan Speedbird	02/Sep/16 11:33 AM	12/Oct/16 2:13 PM														14/Sep/16 3:45 PM;fka;User GUI: Will be done by the munich team																																																						

@@ -1,0 +1,60 @@
+Demo improvements	"1. Make dynamic title in breadcrumbs and title
+2. Move name error messages to right and change the texts
+3. Make state of health optional adding an item 'No value'
+4. Make description multiline
+5. Make validation for numeric values: only numbers and (dot). No other symbols allowed at all even to enter
+
+---- notes ----
+
+On #89 single item view:
+To be: The title of the view in the menu bar should be the name of the information system.
+As is: a constant title “information system” or “200” (return code?)
+
+
+On #101 edit name
+To be: validation message should say the specific reason, for example “Must not contain a colon” or “Must contain a hash sign”.
+For a list, see in the ticket in the list under para “to (4)”.
+As is: constant message: “Value in field is incorrect”.
+
+To be: Message text should be to the right of the field, no below. Other elements in the screen should not shift down.
+As is: Message text is below, rest of the screen shifts down.
+
+To be: invalid value blocks leaving the edit mode.
+As is: invalid values should be accepted but marked as invalid. The user should be able to edit another field.
+
+To be: values should be validated during edit, after each keypress, and a message displayed if invalid.
+As is: values are validated when leaving the the element (“on blur”).
+
+For the sequence of steps, see the ticket description.
+
+Note that the notes above refer to other tickets on validation as well.
+
+
+On #103 edit state of health (dropdown)
+To be: additional entry “no value”, because attribute is optional.
+As is: only entries for the values, user cannot delete or “unset” the value.
+
+
+On #104 edit description
+To be: in the single item view, the description should have line breaks in both view and edit mode.
+As is: the description has only line breaks in edit mode, but not in view mode.
+
+
+Note that the view mode shall _not_ render the wiki annotations, as the traditional iteraplan web UI does. 
+So asterisk (“*”) characters are OK.
+Wiki syntax will be added for a production client in a later ticket.
+
+
+On #105: edit numeric property “strategic value”.
+To be: the system should ignore (swallow) invalid characters, and display only changes with valid keystrokes.
+As is: the system accepts invalid characters and later fails at validation.
+
+
+On #108, #109, #110 edit name, description, status, complexity
+We leave the existing implementation with the “open or edit” context menu for the time being.
+The implementation is exactly as in the tickets, so totally correct understanding.
+Changes may come later when we polish the user interaction.
+
+---- end of notes ----
+"		New Feature	iteraplan PO	17/Sep/14 2:20 PM	09/Oct/14 9:49 AM														"17/Sep/14 4:05 PM;wfr;Leave wiki text as single line in view mode.
+Defer removal of complex white space to extra ticket, that is: later."																																																						

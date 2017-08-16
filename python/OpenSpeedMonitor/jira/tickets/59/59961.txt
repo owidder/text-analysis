@@ -1,0 +1,5 @@
+Create prototype for Protractor with GoJS	"Create prototype for Protractor with GoJS
+
+
+
+Use help of [~wfr]"		Improvement	iteraplan PO	12/Oct/15 5:09 PM	18/Jan/16 12:21 PM					test									22/Oct/15 10:28 AM;thf;All the tests are running (most of the times; somtimes, the browser seems not to load data fast enough). Nontheless, all the tests in the IFD are working.	26/Oct/15 10:51 AM;fka;Review postponed after release 5.1																																																					

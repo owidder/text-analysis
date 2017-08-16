@@ -1,0 +1,51 @@
+Stuttgart Jenkins Release-Problem: Kein Commit auf SVN Repo möglich vom Job aus	"Hallo liebe Admins,
+
+
+
+Ich bin gerade am Release vom Project TACO dran und habe ein Problem mit unserem Jenkins/SVN. Der Jenkins Job kann beim Release kein commit auf das SVN Repo (https://svn.iteratec.de/repos/projects/TACO) absetzen, z.B. http://str-build.iteratec.de:8080/job/ci_taco.se.api/146/. Update und Auschecken gehen. Der User 'tutaco' wird für den Job verwendet
+
+Ich kann mit meinem User(abl) auf das SVN Repo committen.
+
+Gibt es da evtl. Rechteprobleme?
+
+
+
+Viele Grüße
+
+Andreas "		Task	Infrastruktur	06/Feb/17 11:07 AM	28/Feb/17 11:56 AM	svn													"06/Feb/17 4:08 PM;ehi;Hallo Andreas,
+
+
+
+die Rechte für das Repository sind:
+
+
+
+Folgende Rechte-Einträge sind für Projekt TACO definiert.
+
+
+
+[groups]
+
+TACO-group = sas,jec,kti,ehi,jwe,mge,abu,dsh,bal,hst,frwy,{color:red}tutaco{color},pku,mhs,msu,dev,ysh,arlo,sst,ssc,saf,mkn,dal,cdi,abl,dev,fkn,iwa,kkr,juse,jme,gko,rhe,bpf,
+
+...
+
+[TACO:/]
+
+@internal = r
+
+@TACO-group = rw
+
+
+
+Damit sollte ein Commit rein rechtemäßig möglich sein. 
+
+	"	"28/Feb/17 10:31 AM;ehi;Hallo Andreas, kannst du mir bitte Rückmeldung geben, ob das Problem noch besteht oder behoben ist?
+
+
+
+ 
+
+
+
+Grüße, Elke"	28/Feb/17 11:56 AM;sst;Warein Configproblem unsererseits.																																																				

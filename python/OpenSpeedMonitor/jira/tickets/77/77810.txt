@@ -1,0 +1,7 @@
+Jobs lassen sich nicht löschen	"Beim Versuch einen Job zu löschen, wird man auf die Batch-Activity-Seite weitergeleitet, der Job wird aber nicht gelöscht. Dabei spielt es keine Rolle, ob an dem Job Results hängen oder nicht.
+
+Beobachtet wurde der Bug auf der Demo-Instanz mit den Jobs:
+
+*WPR_Applestore_Desktop_Chrome_Homepage_entry_TEST
+
+*WPR_Conrad_Desktop_Chrome_Homepage_entry_TEST"		Bug	OpenSpeedMonitor	21/Mar/16 10:25 AM	23/Mar/16 10:04 AM																																																																				

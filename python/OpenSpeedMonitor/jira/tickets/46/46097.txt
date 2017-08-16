@@ -1,0 +1,23 @@
+Installer can't initialize the database(s)	"The installer must be able to initialize the database.
+
++Cause:+
+Deleting file lib/dev/javaee.jar causes the iteraplan Ant Installer to fail at database initialization (XMI Importer):
+
+Stacktrace:
+{code}
+     [echo] Importing XMI InitialData into the database
+     [java] Exception in thread ""main"" org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'exportService' defined in class path resource [applicationContext.xml]: Cannot create inner bean 'de.iteratec.iteraplan.businesslogic.service.ExportServiceImpl#6580ca84' of type [de.iteratec.iteraplan.businesslogic.service.ExportServiceImpl] while setting bean property 'target'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'de.iteratec.iteraplan.businesslogic.service.ExportServiceImpl#6580ca84' defined in class path resource [applicationContext.xml]: Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: javax/servlet/http/HttpServletRequest
+{code}
+
++Analysis:+
+When javaee.jar is not on the classpath, the classloader can't find the type HttpServletRequest in ExportServiceImpl, which causes the Spring application context to fail.
+
++Quick solution:+
+Restore ""javaee.jar"" in /lib/dev.
+
++Long-term solution:+
+Refactor: remove the presentation-layer type references from service layer classes. (see ITERAPLAN-1960)"		Bug	iteraplan PO	07/Oct/13 9:58 AM	10/Oct/13 11:30 AM														08/Oct/13 7:55 PM;sry;Instead of re-adding {{javaee.jar}}, I've changed the build target that creates the installer. It copies {{servlet-api-2.5.jar}} into the installer package, taking it from our current Maven dependencies. We have that dependency anyway, and it is more focussed. Using the complete Java EE spec is too much, and we don't need that extra binary JAR in SVN.	"10/Oct/13 11:30 AM;svo;(/) {{javaee.jar}} is not included to the antinstaller anymore, instead {{servlet-api-2.5.jar}} is there
+(/) installer works fine
+(/) refactoring api use is not part of this ticket but part of ITERAPLAN-1960
+(/) better solution than just restoring javaee.jar"	"14/Oct/13 1:12 PM;psc;Reviewed. Solution works.
+Ticket will be closed."																																																				

@@ -1,0 +1,12 @@
+Move iturm source and build into iteraplan project	"Move the first part of the iturm project into the main iteraplan project.
+Unify the first part of the project (that is the source and the build up to the exploded war) with the second part of the project that is a subfolder (including an extra build.xml) in iteraplan.
+
+----
+(description before repurposing of the issue)
+sry:
+I would strongly suggest to move the classes {{IteraplanLdapUserDetailsMapper}} and {{IteraplanLdapUserDetails}} to the Spring Security Extensions project. While you're at it, please do also move the class {{AjaxAwareLoginUrlAuthenticationEntryPoint}}
+
+In addition, allow configuring the name of the LDAP attribute which contains the email address. Currently it is hardcoded as {{mail}}, and I'm afraid not every directory conforms to this expectation. Nevertheless, let mail be the default value, and leave it optional to override.
+
+Please do also update other customization sets which rely on LDAP access!
+"		Improvement	iteraplan PO	06/Sep/13 1:51 PM	05/Jun/14 2:51 PM					LDAP	mail								30/Apr/14 3:32 PM;bra;names of fields are already configurable through iteraplan properties (see iteraplan-auth.properties.template of the ldap customization)	08/May/14 1:01 PM;bra;iturm sources moved to iteraplan																																																					

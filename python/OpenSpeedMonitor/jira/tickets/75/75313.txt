@@ -1,0 +1,51 @@
+REST-API getAllSystems funktioniert nicht mehr	"Die lässt bei mir den Firefox komplett abstürzen. Da scheint irgendwas komplett kaputt zu sein.
+
+Bitte fixen und alle REST-Methoden testen."		Bug	OpenSpeedMonitor	01/Mar/16 5:29 PM	04/Mar/16 3:48 PM														"04/Mar/16 11:31 AM;bka;wie sich herausgestellt hat, ist in der Funktion nichts kaputt. Der Code tut genau das, was man von ihm erwartet.
+
+
+
+Bei dieser REST-Methode werden alle JobGruppen mit einer CSICONFIGURATION zu einem JSON serialisiert. Das Problem ist hierbei, dass für jede Gruppe die CSICONFIGURATION mit seinen tausenden Objekten serialisiert werden. Dadurch läuft die Methode sehr lange, und der Browser erhält dadurch einen Timeout.
+
+
+
+Um die Methode weiterhin nutzen zu können, möchte ich folgenden Code vorschlagen:
+
+{code}
+
+public Map<String, Object> allSystems() {
+
+        Set<JobGroup> systems = jobGroupDaoService.findCSIGroups();
+
+        JSON.registerObjectMarshaller(GraphiteServer) {
+
+            return [id: it.id, serverAdress: it.serverAdress, port: it.port]
+
+        }
+
+        JSON.registerObjectMarshaller(JobGroup) {
+
+            return [name:it.name, graphiteServers: it.graphiteServers, csiConfiguration:[id: it.csiConfiguration?.id, name: it.csiConfiguration?.label ] ]
+
+        }
+
+        render systems as JSON
+
+    }
+
+{code}
+
+
+
+Hier wird ein manueller JSON-Marshaller verwendet, der nur die ID und den Namen der CsiConfiguration verwendet. Dadurch kann man im JSON-Objekt weiterhin sehen, welche CsiConfiguration von der JobGruppe verwendet wird, ohne dass man Performance einbüßt.
+
+
+
+Habt ihr dazu eine andere Idee?"	04/Mar/16 11:38 AM;bwo;Meiner Meinung klingt das nach einer guten Lösung. Ich frage mich nur, ob die ganzen Objekte die nun nicht mehr ins JSON kommen wirklich benötigt wurden. Bzw. gibt es weiterhin die Möglichkeit über die API an diese zu kommen? Vielleicht könnte man hierfür eine extra Schnittstelle bieten, an der man einzelne Systeme komplett abfragen kann. Ich habe mich jedoch mit der gesamten API noch nicht auseinander gesetzt, vielleicht existiert so etwas ja auch schon.	04/Mar/16 11:44 AM;bwo;Noch ein anderer Punkt: Ist es überhaupt relevant, dass Firefox abstürzt? Das ist natürlich nicht schön, aber letztendlich wird die API doch sicherlich in anderen Programmen genutzt und wer auch immer diese Methode aufruft, kann in der Dokumentation darauf hingewiesen werden, dass das länger dauern wird. Unter der Annahme, dass tatsächlich nur der Browser Probleme macht. Nichtsdestotrotz wäre ich weiterhin für deine Lösung + der Möglichkeit einzelne Systeme komplett abzufragen.	"04/Mar/16 1:37 PM;bka;Ich habe es im Chrome getestet, der ist nicht abgestürzt aber ist irgendwann  auch in ein Timeout gelaufen.
+
+
+
+Ich habe außerdem, wie @bwo vorgeschlagen hat, eine REST-Methode zum Abfragen von CsiConfigurations zusammengebaut. -> inkl. Test! ;)"	"04/Mar/16 3:15 PM;bka;Wir haben uns eben mit Nils zusammengesetzt: Um die REST-Schnittstelle insgesamt etwas stabiler zu gestalten, soll nicht das DomainClass-Objekt als JSON gerendert werden.
+
+
+
+In Zukunft soll es Klassen geben, die ausschließlich die Attribute enthalten, die für die Ausgabe der REST-Schnittstelle nötig sind."																																																		

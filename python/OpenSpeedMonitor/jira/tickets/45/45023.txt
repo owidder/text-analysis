@@ -1,0 +1,21 @@
+Changesets for subscription emails not correct	"I subscribed to an information system release, then changed said release (with another user, in case that matters) by setting some relations (base components, infrastructure elements, business mappings) and some attributes (Complexity, Accountability, System Size).
+
+The resulting email only contained the notification of a change of Accountability from Alice to Joe, while in fact I only added Joe without removing Alice. The rest of the changes wasn't mentioned.
+As I changed the system a second time, this time only adding another relation, I got the same email again, with the same change of Accountability, without anything else.
+
+In 2.8 the notifications about changes of the element's relations seem to work, but the problem with the attributes exists there, too."		Bug	iteraplan PO	30/Jun/11 3:30 PM	31/Aug/11 10:07 AM					subscriptions									12/Jul/11 12:14 PM;vsh;The problem stems from the incorrect diff computation for multi-valued attributes. Robin's diff implementation assumes incorrectly that there is only one value per attribute.	"13/Jul/11 1:40 PM;sfe;Additional input from external testers:
+
+Subscription of a building block type:
+ * + Works and user is listed as subscriber
+ * - NO confirmation email sent
+ * + when a new element of the subscribed type is created, an according email is sent
+
+Subscription of a single element:
+ * + Works and user is listed as subscriber
+ * + confirmation email sent
+ * - no email sent when changing an element.
+
+note regarding the last item: maybe only changes for multi value attributes are recognized, explaining the difference between the originally described case where an email was sent with a wrong/incomplete changeset and this case without an email sent (assuming there was no multi value attribute changed)."	19/Jul/11 2:10 PM;vsh;stimmt.	26/Jul/11 2:57 PM;sry;If you're subscribed to a building block type (ISR in my case), then you don't get notified when an element is copied. It works only if you're subscribed to the specific element that has been copied. The same problem happens when a new release is created - BBT subscription doesn't work here.	"11/Aug/11 11:06 AM;sip;all tests here are working.
+But there is an other bug:
+ * adding, or deleting an information system domain: You will get an email, which says: No changes.
+ * when changing some additional values: information about changes on information system domain are missing in the email."																																																		

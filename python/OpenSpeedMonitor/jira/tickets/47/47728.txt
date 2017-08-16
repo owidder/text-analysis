@@ -1,0 +1,15 @@
+Wrong behavior with added column "Last modification time" in IE11	"Steps to reproduce:
+
+1. Go to List view page with BO as content type
+
+2. Add columns:
+
+-Accountability
+
+-Last modification user
+
+-Last modification time
+
+Actual: Wrong behavior with added column ""Last modification time"" (information is duplicated 4 times)
+
+Expected: Each date should be displayed only one time"		Bug	iteraplan PO	28/Apr/15 9:47 AM	30/Jul/15 1:21 PM														30/Jul/15 1:21 PM;msr;Cannot reproduce in actual trunk. Must be already been fixed.																																																						

@@ -1,0 +1,15 @@
+Information Flow Diagram - Docking points for Edges	"One of our customers, have following feedback for the Information Flow Diagram.
+
+
+
+_""With new client Information Flow diagram you have only one docking point vertically (right and left) and horizontally (top and bottom) of the IS rectangle._
+
+
+
+_if you have many flows to one central IS you need many docking points, you need to enlarge the rectangle of the IS, ..._
+
+_which is currently not possible._
+
+
+
+_Otherwise the diagram is unclear and not readable.""_"		Improvement	iteraplan PO	06/Apr/17 10:32 AM																																																																					

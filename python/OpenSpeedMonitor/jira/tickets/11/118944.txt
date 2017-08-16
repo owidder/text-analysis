@@ -1,0 +1,79 @@
+Mass Update - No function for Boolean	"Reproduce with trunk
+
+ # Open ""Data"" and ""Technical Component""
+
+ # Add the column ""Available for Interfaces""
+
+ # Open the Mass Update dialog 
+
+ # Click on ""Available for Interfaces"" 
+
+ # You can now choose between set or clear 
+
+ # Both are leading to the mass update summary and show us 48 failed
+
+
+
+Expected: You can change between ""Yes"" and ""No""
+
+ Actual: This function does not work  
+
+
+
+ 
+
+
+
+*UI:*
+
+ * toggle switch to define Yes / No (german: Ja / Nein)
+
+ * toggle colour:
+
+ ** for enabled:
+
+ *** circle #2484C7
+
+ *** background #93C4E7
+
+ ** for disabled:
+
+ *** circle #FAFAFA
+
+ *** background #9E9E9E
+
+ * action button: Set (german:Setzen)
+
+ ** changes all selected rows"		New Feature	iteraplan Speedbird	18/Apr/17 2:17 PM	08/May/17 11:27 AM														26/Apr/17 10:28 AM;roia;I think, there was no task for the boolean field type for the mass update, so this is not a bug, but new feature.	26/Apr/17 3:27 PM;msr;[~mkt], please design UI for this feature.	"27/Apr/17 4:08 PM;roia; 
+
+{quote}toggle colour:
+
+{quote}
+
+*
+
+
+
+ 
+
+{quote}for enabled: #2484C7
+
+{quote} * 
+
+{quote}for disabled: #9E9E9E
+
+{quote}
+
+
+
+[~mkt], [~msr], is it OK that colors will be different than in the other parts of application? I have implemented the colors mentioned in the task description, you can see the implementation in current trunk."	"02/May/17 4:29 PM;vadm;[~mkt], [~msr], do we really need message ""All input will be lost. Do you want to continue?"" in Boolean editor, when we try to close it?
+
+
+
+!image-2017-05-02-17-29-05-594.png!"	"02/May/17 4:44 PM;mkt;As there is no input, I would say: ""All changes will be lost. Do you want to continue?"" (german: ""Alle Änderungen gehen verloren. Möchten Sie fortfahren?"")
+
+We need to warn the user, that we won't save/change anything in case of leaving current editor.
+
+
+
+[~msr], what do you think?"	05/May/17 9:25 AM;msr;[~mkt]: I fully agree :)	05/May/17 11:30 AM;roia;Confirmation message updated in revision *6771*	08/May/17 11:27 AM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-552																																															

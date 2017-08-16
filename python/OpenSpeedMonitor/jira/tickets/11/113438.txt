@@ -1,0 +1,75 @@
+Selection of elements in the list	"*Summary:*
+
+
+
+Create a new column with checkboxes.
+
+
+
+The column should be located on the left side of the list.
+
+
+
+*Scope:*
+
+ * select / deselect all option
+
+ * select / deselect chosen
+
+ * bold text in selected rows
+
+ * checkboxes appear after clicking mass update button [#IPTS-603]
+
+ * if user didn't select any value and want to do action, warning should appear ""No object selected"" (German: ""Kein Objekt ausgewählt"")
+
+ * Default behaviour: Intially all checkboxes are checked
+
+
+
+*UI:*
+
+ * after selection changed colour of rows in a zebra-style
+
+ ** #BECBF7 - main colour (so if one element selected, this colour is used)
+
+ ** #D8DFF9
+
+ * use UI from the attachment
+
+
+
+!mu_selectall.PNG|thumbnail!
+
+
+
+{color:#ff0000}UPDATE: {color} Please use AG-Grid-selection"		New Feature	iteraplan Speedbird	28/Feb/17 2:37 PM	28/Mar/17 8:52 AM														"16/Mar/17 9:49 AM;roia;[~mkt], [~msr], what if we try to use the grid's checkbox-selection feature: [https://www.ag-grid.com/javascript-grid-selection/#gsc.tab=0]
+
+
+
+ "	17/Mar/17 9:54 AM;olal; I've tried to implement it yesterday but there is a big problems with markup so i didn't manage with it. !image-2017-03-17-10-51-53-478.png!!image-2017-03-17-10-53-59-380.png!	20/Mar/17 9:30 AM;mkt;Wouldn't it be easier, if clicking the button activated new column on the left side and on top (in header) there would be another checkbox allowing the user to select all ?	20/Mar/17 11:14 AM;roia;[~mkt], no it's not easier, because we will have to implement that by ourselves. The easier solution is to use the feature, which is already implemented in ag-grid: https://www.ag-grid.com/javascript-grid-selection/#gsc.tab=0	"22/Mar/17 2:37 PM;roia;[~mkt], [~msr]
+
+{quote} * if user didn't select any value and want to do action, warning should appear ""No object selected"" (German: ""Kein Objekt ausgewählt""){quote}
+
+how should we show this warning? Popup window or AlertService?
+
+
+
+ 
+
+
+
+Also, the question about resorting of data after column is removed is still not answered."	"27/Mar/17 6:49 PM;vadm;Missing requirements:
+
+
+
+{quote}
+
+ * bold text in selected rows
+
+ * if user didn't select any value and want to do action, warning should appear ""No object selected"" (German: ""Kein Objekt ausgewählt"")
+
+ {quote}
+
+
+
+Currently message is ""Nothing selected"" without localization."	28/Mar/17 8:46 AM;roia;[~vadm], fixed, revision 6433	28/Mar/17 8:52 AM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-465																																															

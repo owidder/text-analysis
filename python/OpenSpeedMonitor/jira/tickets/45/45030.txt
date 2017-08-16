@@ -1,0 +1,5 @@
+String operators of iteraQl do not fetch an exhaustive result	"For example, the query
+
+IS [@description.CONTAINS ""crm""];
+
+retrieves only one Information System (Cloud Based CRM), whereas three Information Systems (also including the Customer RB releases) should be retrieved. The string operators do function properly with the name attribute, which leads to the assumption that the actual issue is the representation of the description attribute in iteraQl."		Bug	iteraplan PO	08/Jul/11 11:10 AM	11/Jul/11 11:24 AM					iteraQl	query	reports																																																													

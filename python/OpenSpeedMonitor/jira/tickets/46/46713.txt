@@ -1,0 +1,33 @@
+Slashes in iteraQl queries in REST-URLs don't work with Tomcat	"A REST-Request, which includes slashes in the iteraQl-Expression, will lead to a 404 error page or an empty page.
+
+Example:
+/iteraplan/api/data/InformationSystem[count(/businessMappings/product)=0]
+
+Escaping the slashes won't work:
+/iteraplan/api/data/InformationSystem[count(%2FbusinessMappings%2Fproduct)=0]
+
+This happens due to Tomcat behaviour. When the Tomcat system property ""org.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH"" is set to ""true"", then it will work with escaped slashes, but this is a security risk.
+
+Refer to:
+http://tomcat.apache.org/tomcat-7.0-doc/config/systemprops.html#Security
+http://www.tomcatexpert.com/blog/2011/11/02/best-practices-securing-apache-tomcat-7
+http://en.wikipedia.org/wiki/Directory_traversal_attack"		Bug	iteraplan PO	02/Jul/14 6:38 PM	03/Jul/14 3:52 PM					REST	security	Tomcat							02/Jul/14 6:43 PM;fka;First idea: Don't change the tomcat system property, but replace slashes in REST requests with some other character. May even backslash (to be verified, if this works).	"03/Jul/14 10:37 AM;gph;+Workaround+:
+It works, when the slash (respectively the %) is ""double"" encoded. The escaped slash ""%2F"" must be written as ""%252F""
+
++For example+:
+{code}/iteraplan/api/data/InformationSystem[count(/businessMappings/product)=0]{code}
+
+should be written as:
+{code}/iteraplan/api/data/InformationSystem[count(%252FbusinessMappings%252Fproduct)=0]{code}
+
+or fully escaped:
+{code}/iteraplan/api/data/InformationSystem%5Bcount%28%252FbusinessMappings%252Fproduct%29%3D0%5D{code}
+
+
++Please refer to the documentation+:
+http://www.iteraplan.de/wiki/display/iteraplan/REST+API+Resource+Structure
+Section ""Query Resource and Building Block List Resource""
+
+
+
+"																																																					

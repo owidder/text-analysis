@@ -1,0 +1,17 @@
+Delete an attribute group	"*Summary:*
+
+Delete an attribute group except for Default Attribute Group and Toplevel Attribute Group (not deletable).
+
+
+
+*User Interaction:*
+
+* Move the ""info""-icon and new ""delete"" icon on hover for each attribute group - both appear top of the box on the right side
+
+* Use a new angular material icon ""delete""
+
+* After clicking on this icon a confirmation modal-dialog appears (see {{LIST.DELETE.MODAL}} )
+
+* After confirmation all attributes of this list are placed in the same order on the bottom of the default attribute group and the other attribute group is deleted
+
+* Trigger reload-service using {{$scope.$emit(""triggerDataReset"");}} (IPTS-549)"		New Feature	iteraplan Speedbird	20/Feb/17 4:00 PM	10/Mar/17 6:25 PM														10/Mar/17 6:25 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-418																																																						

@@ -1,0 +1,3 @@
+Update query console link to iteraplan docu	"The link target under the query console examples
+http://www.iteraplan.de/wiki/display/iteraplan/Query+Console
+does not exist anymore"		Bug	iteraplan PO	04/Mar/14 4:46 PM	19/Jan/16 11:10 AM																																																																				

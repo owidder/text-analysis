@@ -1,0 +1,3 @@
+Teile des Epics "Detail-Analyse" bereits mit umsetzen?	"Mit dem kommenden Studenten (startet im August) wollen wir die Detail-Datenauswertung angehen (Wasserfall-Daten). Hierfür gibt's bereits ein Epic. 
+
+Fraglich ist's, ob wir vor der open source-Stellung noch etwas hiervon implementiert bekommen."		Task	OpenSpeedMonitor	03/Jun/14 9:56 AM	24/Feb/16 11:03 AM																																																																				

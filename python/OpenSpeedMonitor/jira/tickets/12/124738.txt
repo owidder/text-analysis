@@ -1,0 +1,27 @@
+Single Element View: long name is not fit to breadcrumb and subscriptions 	"Single Element View: long name is not fit to breadcrumb and subscriptions 
+
+
+
+Step to reproduces:
+
+ # Open 'Data' -> 'Product' -> 'Credit card'.
+
+ # Change name to maximum chars(255).
+
+ # Apply name
+
+ # Reload page
+
+
+
+.
+
+
+
+Actual result: name is look ugly in ""Breadcrump"" and ""Subscriptions""
+
+ !image-2017-06-19-14-24-35-372.png|thumbnail! 
+
+
+
+Expected result: name is look nice in ""Breadcrump"" and ""Subscriptions"""		Bug	iteraplan Thunderduck	19/Jun/17 1:25 PM	25/Jul/17 3:53 PM														25/Jul/17 2:48 PM;pma;I adapted the configuration to a minimum of 1000px for the website width																																																						

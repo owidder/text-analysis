@@ -1,0 +1,57 @@
+Create context menu for selecting content type	"Create a context menu with a submenu that contains all available types for the content items.
+
+attach it to the diagram.
+
+call a (dummy) configuration class for each selection action.
+
+read available options (list of types) from the (dummy) configuration class.
+
+new menu is OK, no adaptation of existing context menu needed now. 
+Technical debt is clear and OK for Wolfgang."		New Feature	iteraplan PO	03/Mar/15 4:53 PM	24/Mar/15 1:02 PM														"03/Mar/15 5:17 PM;wfr;could be quick, but we do not know now.
+Research needed on:
+
+How do we find out which (diagram) element was clicked?
+
+Plan B: one (bigger) menu for all part of the diagram, that is content, axes, title, empty space...
+
+Research: about 1 hour.
+after that it is clear what solution can be used.
+
+static context menu, 5 SP"	"12/Mar/15 10:58 AM;wfr;research result:
+there is a way to find out which diagram element (panel, ...) was clicked.
+
+still to do: find an easy way to determine which logical/structural part of the diagram was clicked, that is either one of the axís areas, or the content area, or outside.
+
+looking good"	"19/Mar/15 2:51 PM;dasm;Verified
+revision: 794"	"24/Mar/15 10:33 AM;tam;LsdContextMenuProcessor.js
+	What is type of data? Just data or something special?
+	this.getOptions = function (data)
+
+	Are these function for future because they return an empty option array? Why they are implemented different? Why not return [] for all?
+	var allTableOptions = function () {
+	var diagramTitleOptions = function (data) {
+	var bothAxisesHeadersOptions = function (data) {
+	var xAxisHeadersOptions = function (data) {
+	var yAxisHeadersOptions = function (data) {
+	
+LSDMain.js
+	There are some todo's (probably from Wolfgang) Are these todo's for the next sprints?
+	There are some returns ""@return {*|HTMLElement}"". What / why is * in return?
+
+LSDItemBuilder.js
+	What does @param bo {?} mean? Nullable with no type? If yes, why nullable and why no type?
+	this.buildContentItem = function (bo)
+	this.buildAxisItem = function (bo) {
+
+LSDTableBuilder
+	There are some returns ""@return {*|HTMLElement}"". What / why is * in return?
+
+	Please jsdoc it. At least the param object is not clear. Maybe there is better name for this param
+	var applyLayout = function (object, newProperties) {
+	
+	drawItems-function
+	There are some code parts looking like a magic. Could you please add some comment
+	E.g. in yAxisGroups.forEach(function (g, rix)
+	What are: g and rix?
+		row: 2 + rix // why this?
+"																																																			

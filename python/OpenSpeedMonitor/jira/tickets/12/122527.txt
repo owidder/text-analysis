@@ -1,0 +1,47 @@
+IT-Services - Pre-row is not hidden in Tree view when pop-up message is shown	"h4. Problem Description:
+
+
+
+Pre-row is not hidden in Tree view when ""Subscribers"" pop-up message is shown
+
+
+
+ 
+
+h4. Reproduction Steps:
+
+ * Open application and navigate to IT Services
+
+
+
+ * Activate ""Tree view"" mode
+
+
+
+ * Show Subscribers by using ""IT Service Subscriptions>Show Subscribers""
+
+
+
+ 
+
+h4. Observed Results:
+
+
+
+The ""Subscribers"" pop-up message is shown. But when trying to click ""Ok"" button the mouse icon on the pop-up is changed from ""default"" to ""move icon"". The console shows that the pre-row is not hidden.
+
+h4. Expected Results:
+
+
+
+All background should be hidden when the pop-up massage is shown.
+
+
+
+ 
+
+h4. Note:
+
+ - Used FF/Chrome and #326 nightly bundle
+
+ - See attached  screenshot and gif file."		Bug	iteraplan Speedbird	26/May/17 4:02 PM	29/Jun/17 4:00 PM					usability									29/Jun/17 4:00 PM;mash;Review is done																																																						

@@ -1,0 +1,5 @@
+Als Entwickler möchte ich das Edison Framework für den NMAP SpringBoot µService nutzen.	"Das Edison Framework bringt schon einige hilfreiche Services (healthcheck, status page, ...) mit die für den Betrieb eines µServices unerlässlich sind. Da es auf Spring Boot basiert können wir es für alle darauf basierenden µService einfach nutzen.
+
+
+
+https://github.com/otto-de/edison-microservice"		Story	secureCodeBox	06/May/16 12:57 PM	19/Jun/16 1:57 PM																																																																				

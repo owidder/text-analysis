@@ -1,0 +1,23 @@
+Information System Flow column can be added twice in list view	"Reproduce:
+
+
+
+* Got to IS list view
+
+* Click add column and search for Information Flow
+
+
+
+Expected:
+
+* One Information Flow column can be added
+
+
+
+Actual:
+
+* There is ""Information Flow"" and ""Information Flow 2"" (see screenshot)
+
+
+
+According to [~aan], the ""Information Flow 2"" column should not be visible in the list as it is only used internally to get the connections right."		Bug	iteraplan Speedbird	02/Dec/16 10:22 AM	27/Jan/17 11:43 AM														24/Jan/17 4:28 PM;fka;Currently only left: Information Flow is denoted as "Information Flow 1" in drop down. remove the "1".																																																						

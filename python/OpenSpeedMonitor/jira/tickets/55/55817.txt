@@ -1,0 +1,47 @@
+UNCLEAR: Pin elements & Re-Layout the rest of the elements	"*Summary:*
+
+Add the functionality to ""Pin an Information System & Re-Layout"" the diagram.
+
+
+
+*Affected parts of the system:*
+
+* ifdConfiguration (to save the pinned Information Systems)
+
+* ifdDataService (to exclude them for the partial diagram)
+
+* ifdGraphBuilder or ifdDiagramBuilder (to exclude the pinned elements from the ""normal"" layouting of GoJs)
+
+* toolArea (UI to pin elements)
+
+* ifdLegendBuilder (to show it in the legend)
+
+* ifdController (to redraw the diagram)
+
+
+
+*Approach:*
+
+The user can pin a single or multiple Information Systems but no Information Flow. After pinning Information Systems the diagram is re-layouted by GoJS. The new GoJS layout takes into account the pinned Information Systems as fixed nodes.
+
+
+
+*UI:*
+
+See https://iteraweb.iteratec.de/confluence/pages/viewpage.action?pageId=52134452
+
+
+
+*Acceptance criteria:*
+
+* The user opens a new Information Flow Diagram
+
+* The users selects multiple Information Systems and Information Flows
+
+* The toolarea opens
+
+* The user clicks on the ""Pin""-Button
+
+* The diagram is redrawn the pinned Informations Flows are on the same fixed position. The Information Flows are eventualy on new positions. The rest of the diagram is relayouted with the standard layout. The information about the pinned Information Systems is shown in the legend and in the url.
+
+"		New Feature	iteraplan PO	02/Sep/15 11:32 AM	19/Jan/16 4:06 PM					ifd	layout																																																														

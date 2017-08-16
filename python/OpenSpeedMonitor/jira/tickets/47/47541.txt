@@ -1,0 +1,25 @@
+The legend doesn't display coloring for current content type	"Steps to reproduce:
+1. Go to LSD page
+2. Use coloring by ""Maintenance activity from dark to light)
+3. Change content type to Technical Component
+
+Actual: The legend doesn't display coloring for current content type
+Expected: The legend should be updated according to used content type
+
+"	47465	Sub-task	iteraplan PO	31/Mar/15 9:42 AM	07/Apr/15 1:30 PM													"Workspace: Windows 8.1
+Browser: Google chrome 39.0, IE 11,Mozilla Firefox 36.0.4 
+"	01/Apr/15 9:44 AM;dasm;Verified (revision 854)	"02/Apr/15 10:09 AM;tam;LSDConfiguration.js: 107
+LSDConfiguration.prototype.defaults = [
+    {
+        contentType: ""InformationSystem"",
+        contentTypeText: ""Information System"",
+        xAxisProperty: ""informationSystemDomains"",
+        yAxisProperty: ""technicalComponentReleases"",
+        coloringProperty: ""typeOfStatus""
+    }
+	
+Why InformationSystem's default object doesn't have coloringPalette and other two do?
+
+LSDTableModelBuilder.js
+172: else if (configuration.get('coloringPalette')) { // numeration property
+is it really numeration property?"																																																					

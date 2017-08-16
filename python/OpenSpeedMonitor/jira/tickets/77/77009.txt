@@ -1,0 +1,9 @@
+AggregatorTypes werden nicht korrekt aktuell gehalten	"Bisher wird in der Bootstrap dafür gesorgt, dass die AggregatorTypes, die benötigt werden auch existieren. Es gibt aber keinen Mechanismus, der dafür sorgt, dass veraltete oder alte Namen gelöscht werden.
+
+
+
+Diese alten AggregatorTypes können zu Problemen führen (wenn sie z.B. wie bein OTTO geschehen an GraphitePaths hängen).
+
+
+
+Wir sollten die CSI-Datenerzeugung in der Bootstrap überdenken und sehen, ob nicht ein Teil oder alle diese Daten in ein DATA-Chengalog gehören/verlegt werden sollten."		Task	OpenSpeedMonitor	15/Mar/16 10:34 AM	15/Mar/16 4:35 PM														15/Mar/16 4:35 PM;nku;Stattdessen setzen wir die IT-36 um																																																						

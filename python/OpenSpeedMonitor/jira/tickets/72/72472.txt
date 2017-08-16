@@ -1,0 +1,11 @@
+Encoding issues in iTURM	"_Reproduce:_
+
+# Create new user in iTURM with special characters, for example with first name ""André""
+
+# Save
+
+
+
+_Expected:_ Correctly created user
+
+_Actual:_ The special character in the user's first name is displayed broken."		Bug	iteraplan PO	08/Feb/16 2:11 PM	11/Feb/16 10:23 AM					iturm									11/Feb/16 10:23 AM;lwi;tested it before and after the fix and now it works correctly																																																						

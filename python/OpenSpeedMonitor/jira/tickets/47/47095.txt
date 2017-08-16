@@ -1,0 +1,11 @@
+EMF-Import: Business Mapping not deleted on EMF-import when part of Business Mapping missing	"After deleting a part of a existing Business Mapping (e.g. Information System Release) and importing via EMF-Import as overwrite, the adapted Business Mapping should be deleted as it is incomplete. But no changes are applied.
+
+REPRODUCE:
+- Export full model as XMI
+- Edit iteraplan.xmi: Delete an InformationSystemRelease for any Business Mapping
+- Import this changed data with overwrite-strategy
+- ""No Changes"" are applied
+
+SHOULD:
+The adapted Business Mapping should be deleted as it is incorrect (missing Information System Release). "		Bug	iteraplan PO	28/Oct/14 4:31 PM	29/Oct/14 2:01 PM					emf	import	xmi							"29/Oct/14 1:39 PM;sfe;This works as expected if the XMI file is changed correctly: Not only the Business Mapping object has to be modified. The formerly referenced Information System needs to be adjusted, to remove the reference to the Business Mapping here as well.
+I've adjusted the test sheet to make this more clear."																																																						

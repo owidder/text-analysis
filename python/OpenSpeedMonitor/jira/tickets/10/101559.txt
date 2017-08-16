@@ -1,0 +1,69 @@
+Ich benötige MS Visio!	"Hallo,
+
+
+
+ich benötige MS Visio für meine Arbeit.
+
+Die Anschaffung ist mit Marc Offman abgesprochen!
+
+
+
+Viele Grüße
+
+Ben"		Task	Infrastruktur	04/Nov/16 3:56 PM	07/Nov/16 10:16 AM	Sonstiges													"07/Nov/16 8:34 AM;kti;Guten Morgen Ben,
+
+
+
+welche Visio-Version benötigst du?
+
+
+
+Viele Grüße
+
+Kathrin"	"07/Nov/16 9:27 AM;bhi;Guten Morgen Kathrin,
+
+
+
+wenn möglich Visio Professional für Windows.
+
+
+
+Viele Grüße 
+
+Ben"	"07/Nov/16 9:30 AM;kti;Hallo Ben,
+
+
+
+benötigst du die Version 2010, 2013 oder 2016?
+
+Dann kann ich dir den richtigen Installationspfad + Lizenzkey schicken.
+
+
+
+VG
+
+Kathrin"	"07/Nov/16 9:55 AM;bhi;Hallo Katrin,
+
+
+
+ich benötige die Version 2016!
+
+Vielen Dank schon einmal!
+
+
+
+VG
+
+Ben"	"07/Nov/16 10:16 AM;kti;Hallo Ben,
+
+
+
+der Lizenzschlüssel lautet 2VX6C-NGKX6-DFG9G-GFVX9-2YVCB, die Installationsdateien findest du unter \\PRINTSRV-MUC\instdir\Systemsoftware\_Microsoft\Visio-2016-Pro.
+
+
+
+Grüße
+
+Kathrin
+
+"	07/Nov/16 10:27 AM;bhi;Vielen Dank!																																																	

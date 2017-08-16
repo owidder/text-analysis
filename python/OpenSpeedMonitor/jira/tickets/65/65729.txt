@@ -1,0 +1,1 @@
+Operator´s in URI	display filter incl operator in URI and read it from there	65408	Sub-task	iteraplan PO	04/Dec/15 1:27 PM	16/Dec/15 3:59 PM																																																																				

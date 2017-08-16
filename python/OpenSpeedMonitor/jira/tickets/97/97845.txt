@@ -1,0 +1,5 @@
+Single Element View of Attribute (Edit)	"in-list edit should be possible
+
+- editing of ""Activated for the following BB Types"" like relationship edit in list view
+
+"		New Feature	iteraplan Thunderduck	30/Sep/16 5:02 PM	21/Feb/17 9:56 AM																																																																				

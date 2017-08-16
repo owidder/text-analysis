@@ -1,0 +1,6 @@
+Kommen die CSI-Daten in Graphite an?	Prüfen, ob die CSI-Daten daily und weekly nach Graphite geschrieben werden. Wenn dies nicht der Fall ist analysieren, warum.		Task	OpenSpeedMonitor	03/Mar/14 11:37 AM	25/Jul/14 11:32 AM														"03/Mar/14 11:39 AM;nkuhn;Live und in der SEU-Instanz develop sind die Logging-Level für den MetricReportingService auf DEBUG gesetzt.
+In den kommenden Tagen, spätestens kommende Woche sollte demnach genauer zu erkennen sein, ob die CSI-Daten daily und weekly korrekt zum Graphite-Server geschickt werden."	"25/Jul/14 11:32 AM;nku;Funktioniert mit der graphite-Aggregation, die wir auf unserem Monitoring-Server einsetzen. Aggregierte Daily- und Weekly-CSI-Werte werden zu unserem Graphite-Sever geschrieben und lassen sich darstellen.
+
+
+
+2014-07-25: Bei OTTO wurde die Graphite-Konfiguration noch immer nicht entsprechend angepasst :( "																																																					

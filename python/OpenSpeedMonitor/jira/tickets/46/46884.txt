@@ -1,0 +1,16 @@
+Highlight box of interest	"Visually highlight one or more boxes, outer, inner or nested inner, by an explicit user action.
+
+Add an item ""Highlight"" to the context menu of the boxes. Add it at the end.
+
+If highlited, the context menu has the item ""Clear highlight"" instead.
+
+For visual highlighting, add a ""iteragenta"" (that special iteratec magenta) border frame.
+Do not change the layout, that is the position of the elements by highlighting.
+
+There can be more than one highlighted boxes in the diagram.
+
+Note on development priority within this ticket:
+Highlight one is more important than highlight two or more
+Highlight inner box is more important than outer box, and that more imporant than nested inner box.
+
+Global action ""Clear all highlights"" in the menu bar"		New Feature	iteraplan PO	20/Aug/14 11:09 AM	29/Sep/14 10:12 AM														21/Aug/14 11:07 AM;sepr;Est. 1 PD																																																						

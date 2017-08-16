@@ -1,0 +1,25 @@
+Portfolio Diagram sind nicht identisch PDF / Visio	Wenn ich ein Portfolio Diagramm einmal als PDF und das 2. mal als Visio generieret, mit gleichen Einstellungen werden unterschiedliche Daten angezeigt.		Fault	iteraplan Support	09/Jun/16 10:25 AM	21/Jun/16 12:46 PM														"09/Jun/16 10:25 AM;hansrudi.ruoss@allianz.com;
+
+!portfolio_pdf_bug.PNG|thumbnail!
+
+!portfolio_visio_bug.PNG|thumbnail!"	"14/Jun/16 9:49 AM;msr;Sehr geehrter Herr Ruoss,
+
+vielen Dank für Ihre Meldung.
+
+Wir teilen Ihre Erkenntnis: Es handelt sich um einen Softwarefehler. Die angezeigte PDF-Graphik ist falsch, die Visio-Graphik ist korrekt. Dieses Problem tritt nur auf, wenn es sich nicht um den kontinuierlichen Fall handelt. Also durch Aktivieren der Option ""Always use continuous display"" tritt er nicht auf.
+Wir werden den Fehler durch die Neu-Implementierung des Portfolio-Diagramms im interaktiven Client beheben.
+
+Mit freundlichen Grüßen
+
+M. Schrumpf"	"20/Jun/16 1:57 PM;hansrudi.ruoss@allianz.com;Danke für die Rückmeldung.
+Ich kann bestätigen dass dann die Graphiken gleich sind wenn die Option aktiviert ist.
+Allerdings kann die Graphik dann nicht mehr verwendet werden das sich alle werde dann überdecken. Somit für mein Szenario keine Option.
+
+
+!portfolio_pdf_bug_option_on.PNG|thumbnail!"	"21/Jun/16 8:38 AM;msr;Sehr geehrter Herr Ruoss,
+
+wie angekündigt werden wir den Fehler durch die Neu-Implementierung des Portfolio-Diagramms im interaktiven Client beheben.
+
+Mit freundlichen Grüßen
+
+M. Schrumpf"	21/Jun/16 12:34 PM;hansrudi.ruoss@allianz.com;und wie schließen wir jetzt diese Ticket? Ich kann nur Anhänge hinzufügen, oder Kommentare hinzufügen.	21/Jun/16 12:46 PM;msr;Ich schließe es mit Ihrer Erlaubnis.																																																	

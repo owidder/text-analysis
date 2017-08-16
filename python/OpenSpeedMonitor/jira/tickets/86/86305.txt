@@ -1,0 +1,29 @@
+PDF Download	"* Do this task in pair-programming (for the server-side) with a developer from the Munich-team, e.g. [~sfe], [~tam] or [~ach]
+
+
+
+*Summary:*
+
+Implement PDF Download for the Masterplan Diagram
+
+
+
+*As-Is:*
+
+* PDF-Download is not working (exception from the server)
+
+
+
+*To-Be:*
+
+* PDF-Download works.
+
+
+
+*Implementation Details:*
+
+* The PDF-Generation is done on the server with the help of Batic, i.e. a Masterplan SVG is generated in the new client, this SVG is sent to the iteraplan-server, the server transforms the SVG to a PDF-File, the PDF-File is sent to the new client, the Download is offered by the new client
+
+* Use the Information Flow Diagram as blueprint
+
+"		New Feature	iteraplan Speedbird	04/Jun/16 3:57 PM	18/Jul/16 3:13 PM														16/Jun/16 2:17 PM;msr;The pdf-download works great. Let's wait for the implementation of the SVG-Download to check if it works with the selection or zooming.	14/Jul/16 2:13 PM;dmkh;Note for reviewer: there are minor changes regarding this ticket in revisions #3815, #3830 ({{headerDownloadService.js}} file).	18/Jul/16 3:13 PM;mada;Reviewed in scope of IPTS-6																																																				

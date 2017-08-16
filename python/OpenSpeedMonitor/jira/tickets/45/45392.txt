@@ -1,0 +1,7 @@
+New Option in Information Flow Diagram to show Attributes of BusinessObject	"Within an Information Flow Diagram it should be possible to see Attribute Values next to a BusinessObject, based on the relation attributes (IS-BO).
+Suggestion: 
+IS1
+GO1 (AttValue1)
+GO2 (AttValue2, AttValue3)"		New Feature	iteraplan PO	29/Feb/12 1:37 PM	27/Mar/12 5:24 PM														12/Mar/12 12:47 PM;sfe;There is a trailing whitespace behind the list of the shown attribute values within the brackets (see screenshot).	"13/Mar/12 3:22 PM;lci;Functionality and code are fine. 
+
+Please add tests for the new functionality."	27/Mar/12 5:24 PM;lci;Fine																																																				

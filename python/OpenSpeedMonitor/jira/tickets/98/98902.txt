@@ -1,0 +1,15 @@
+Build helper projects	"Build and release helper projects as described here:
+
+https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-2.1Helper-Projekte
+
+
+
+These are:
+
+* iteraplan common base (/)
+
+* Elastic MI (/)
+
+* Spring Security Extensions (/)
+
+* iTurm (/)"	98901	Sub-task	iteraplan PO	12/Oct/16 9:06 AM	26/Oct/16 4:12 PM														26/Oct/16 2:42 PM;mse;The elastic release jenkins job failed during deployment. We decided to deploy the release tag 4.13.0 manually which worked fine. But this should be fixed before the next release (ITERAPLAN-4971).																																																						

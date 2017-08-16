@@ -1,0 +1,10 @@
+Update libraries in iteraplan	"Update some of the third-party libraries that iteraplan uses, namely:
+* Spring LDAP 1.3.1
+* Twitter Bootstrap (at least 2.0.4, newer version depending on effort)
+* Google Guava
+* SLF4J 1.7.x
+* add JavaMail dependency in latest version
+* Spring 3.2 (improves Java 7 compatibility, amongst other news)
+* ZXING QR code generator library
+
+"		Task	iteraplan PO	31/Jan/13 2:42 PM	10/Oct/13 11:28 AM														03/Jun/13 11:35 AM;sry;Oops, forgot that there is already another ticket for updates. When testing this issue, please have a look at ITERAPLAN-1586 as well	10/Oct/13 11:28 AM;kgo;Some of the updates were made during the development of iteraplan 3.2. The updates which are still to be accomplished are addressed in ITERAPLAN-1983																																																					

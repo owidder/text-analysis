@@ -1,0 +1,8 @@
+Submenu for enumeration property doesn't appear 	"Steps to reproduce:
+1. go to LSD page
+2. Open Context menu
+3. Open sub menu for enumeration property
+Actual: submenu doesn't appear
+Expected: submenu appears with attribute list for x and y axis"	47470	Sub-task	iteraplan PO	31/Mar/15 1:01 PM	07/Apr/15 1:33 PM													"Workspace: Windows 8.1 
+Browser: Google chrome 39.0, IE 11,Mozilla Firefox 36.0.4 "	"01/Apr/15 12:02 PM;dasm;Verified
+revision 857"																																																						

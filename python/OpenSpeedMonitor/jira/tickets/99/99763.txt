@@ -1,0 +1,79 @@
+Use XWiki-Library-Parser or existing List-Description-Parser for Description	Use XWiki-Library-Parser or existing List-Description-Parser for the Description field of the Single Element View.		Improvement	iteraplan Speedbird	19/Oct/16 3:16 PM	04/Nov/16 1:18 PM														"27/Oct/16 4:19 PM;madu;1. Which syntax version of Xwiki is used on our side?
+
+xwiki/1.0, xwiki/2.0, xwiki/2.1 ?
+
+
+
+2. Is it ok to use a third-party js lib with permitting license to have xwiki syntax parsed & transformed to html?
+
+
+
+3. As far as I found out - xwiki offers rendering api which could be utilized by issuing http post requests of the form http[s]://endpoint/xwiki/rest/render that will return rendered data upon java's backend xml configuration for this rest endpoint.
+
+The question is - do we have xwiki api rest endpoint set up & what's URI for this if so?
+
+This approach looks like the right one in case we'll be utilizing xwiki markup containing fields so maybe it would be right to have it set up if it's not
+
+
+
+4. I don't have an idea which part(s) of the xwiki syntax we should handle. If it's only basic things like headings & text formatting - this wouldn't be hard to handle it manually by written on our own small class. Here's the link for the reference: https://ext.eurocontrol.int/aixmwiki_public/bin/view/XWiki/XWikiSyntax 
+
+
+
+But if we should handle things like links, images, lists, tables, groups - we should consider providing rest api endpoint (point 3) or use a third-party js lib (btw I couldn't find any xwiki specialized, only mediawiki parsers https://www.mediawiki.org/wiki/Alternative_parsers which could solve the basic syntax transformation)
+
+
+
+In case I'm making things complicated, please, specify which parts of xwiki syntax should be handled (see the reference above) and I'll write some code to handle those. Thanks"	"27/Oct/16 6:05 PM;msr;1) I don't know. You could test it by using syntax which is only available for one version and not the other. I just know, we use the following java-libs to generate xwiki-code: xwiki-commons-text-4.1.3.jar
+
+2) Yes, it is a great idea to use a third-party library. Much better than rewriting the same code. There is just one condition for third party libraries: The license. It should be MIT or Apache 2.0 or BSD license.
+
+But I would prefer this option
+
+Marcel Schrumpf: 3. Sounds like a good idea to me.
+
+No, we do not have any xwiki-endpoint in the java-backend. But you could specify the requirements for a java-backend-endpoint which will be implemented by a Java developer. You would be responsible for the frontend
+
+4) I guess that is is only basic parts, but I'm not sure. Please go to the classic client and edit the ""Description""-field of any Information System. Everything which is possible there, should be correctly displayed in the new client.
+
+
+
+*To sum it up:*
+
+No, you are not making things complicated. You did a great analysis of the situation. This is exactely the options I'd like to see.
+
+So,
+
+
+
+*I) I would prefer to use an external JS-library to parse the XWiki-syntax in the new client directly (under one of the licenses which we already use: https://iteraweb.iteratec.de/confluence/display/ITPL/Used+Libraries ). You made already very good suggestions with the mediawiki-parsers. This would be the best solution.*
+
+
+
+II) If I) does not work, we could implement a XWiki-REST-service (which you mention under number 2.) This approachs needs extra work on the java-backend and an extra REST-call just for this small description field. I don't like this approach because it seems to me like a huge implementation for a small xwiki-field. But if I) does not work, we need to find an alternative.
+
+
+
+III) To remove only the xwiki-symbols is probably not a good idea because we need to display the formatting sooner or later anyhow. Not an option!"	"01/Nov/16 11:23 AM;madu;#4945
+
+
+
+The closest to the xwiki markup syntax is creole  v1.0. At least they state so here: [https://ext.eurocontrol.int/aixmwiki_public/bin/view/XWiki/XWikiSyntax?syntax=2.0]
+
+
+
+Despite I initially wrote some basic parsing / transforming to html functionality (handling formatting of text & lists), I have decided to use the js library for this finally:
+
+[https://github.com/codeholic/jscreole]
+
+
+
+It was the best I was able to locate but mb there would be a better suggestion from anyone.
+
+
+
+Anyway if any of Iteraplan clients use xwiki markup heavily - we should consider using xwiki rendering engine for this.
+
+
+
+Thanks to suggestion from Rost - this functionality is exposed as an angular filter - which makes it easy to use in the future from any template we might utilize."	03/Nov/16 2:28 PM;roia;Review: https://iteraweb.iteratec.de/fisheye/cru/IP-157																																																			

@@ -1,0 +1,7 @@
+Microservice konfigurierbar machen	"Legt man in den .grails-Ordner eine OsmDetailAnalysis-config.yml so wird diese ignoriert.
+
+Dieses sollte wie im OSM umgesetzt sein."		Improvement	OpenSpeedMonitor	03/Aug/16 8:36 AM	11/Aug/16 6:16 PM														"11/Aug/16 6:16 PM;msk;Ich habe die Application.groovy im OsmDetailAnalysis-Mikroservice so angepasst, dass nun die Properties aus dem Home-Verzeichnis ausgelesen werden. 
+
+
+
+Die Datei muss OsmDetailAnalysis-config.yml heißen."																																																						

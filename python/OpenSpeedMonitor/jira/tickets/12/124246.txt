@@ -1,0 +1,1 @@
+Improve localisation of users & roles	see my commit		Improvement	iteraplan Speedbird	13/Jun/17 3:58 PM	13/Jun/17 4:17 PM														13/Jun/17 4:06 PM;msr;Commit #7043 was assigned to wrong ticket. Please review it in scope of this ticket.																																																						

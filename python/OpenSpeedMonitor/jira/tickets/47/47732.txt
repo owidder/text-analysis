@@ -1,0 +1,21 @@
+Highlighting by modified items aren't canceled with changing inner type	"Summary: Highlighting by modified items aren't canceled with changing inner/outer type
+
+
+Steps to reproduce: 
+1. Go to NCD page
+2. Use highlighting by modified items for inner elements
+3. Change inner type
+Actual: Highlighting aren't canceled
+Expected: Highlighting should be canceled
+
+Comment: Is the highlighting by modified items should be only for inner elements?  Or this option should be in the context menu for outer elements too?"		Bug	iteraplan PO	30/Apr/15 1:39 PM	27/Jul/15 2:46 PM														"17/Jul/15 10:39 AM;isc;The behavior has been adjusted as follows: 
+
+* if you change the inner element, only the highlighting  for the inner elements is removed
+
+* if you change the outer element, the complete highlighting is cleared
+
+"	"20/Jul/15 10:33 AM;gph;Two little details left:
+
+* Refactor redundant code in methods ""clearHighlights"" and ""clearHighlightsInnerElements"".
+
+* Express the fact, that inner elements are filtered out by looking for a dot ""."" (comment?)"																																																					

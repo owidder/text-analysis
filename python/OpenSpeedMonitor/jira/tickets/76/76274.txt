@@ -1,0 +1,11 @@
+[Persistenz] Logik Detail-Daten im Nachhinein holen/persistieren 	"Es soll möglich sein auch für Jobs, die nicht zur Persistierung von Detail-Daten konfiguriert sind/waren im Nachhinein Detail-Daten zu persistieren.
+
+
+
+Hierfür muss die REST-API des/der WPT-Server angefragt werden pro JobResult.
+
+Das wird eine länger laufende BatchActivity werden. Diese muss auch als solche getrackt werden."		Task	OpenSpeedMonitor	08/Mar/16 5:55 PM	05/Sep/16 5:05 PM														"05/Sep/16 5:05 PM;msk;Es gibt jetzt einen neuen Button im EventResultDashboard. Über diesen können nachträglich alle zur aktuellen Auswahl passenden Assets nachgeladen werden. 
+
+
+
+Man kann den Fortschritt als BatchActivity verfolgen"																																																						

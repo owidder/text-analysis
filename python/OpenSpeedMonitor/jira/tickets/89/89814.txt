@@ -1,0 +1,11 @@
+Implement subscribeFor in plugin api	"* Implemtent subscribeFor('buildingblockType', reactionFunction) in PluginApi.
+
+* On corresponding event: the specified reactionFunction should be invoked with change event (empty event for the beginning)"	89430	Sub-task	iteraplan Thunderduck	08/Jul/16 11:22 AM	18/Jul/16 4:42 PM														12/Jul/16 3:11 PM;aan;The functions are registered in the api.js, as otherwise there could be problems, because in Java they are stored in a Rhino-specific format (We want to be able to deal with Rhino and Nashorn)	"18/Jul/16 11:09 AM;ach;review comments:
+
+- add simple tests for {{subscriveFor}} and {{receiveEvent}} functions of _api.js_ into _\testScriptsForScriptContainer\apiReadAccess.js_
+
+- use {{api.datamodel.getAllTypeNames()}} instead of {{api.allTypeNames}} in _scripts\plugins\script1.js_"	"18/Jul/16 2:53 PM;aan;Simple Tests are omitted as decided with sfe
+
+Second problem is already resolved by  a commit on a different ticket
+
+"																																																				

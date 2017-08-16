@@ -1,0 +1,25 @@
+Change texts in the query console	"Instead of ""Please enter the query in the text box below etc."" insert the text
+
+
+
+ENG: ""Enter your query here..."" GER: ""Geben Sie hier Ihre Abfrage ein..."" 
+
+(with the three dots to show, the user can type here.)
+
+
+
+Change the Text on the button from
+
+
+
+ENG: ""Send Query"" to ""GO"" and GER: ""Abfrage abschicken"" to ""LOS""
+
+
+
+and last but not least:
+
+
+
+ENG: ""Queries history"" --> ""HISTORY""
+
+GER: ""AbfrageVerlauf"" --> ""VERLAUF"""		Improvement	iteraplan Speedbird	25/Jul/17 4:17 PM																																																																					

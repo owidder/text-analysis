@@ -1,0 +1,27 @@
+Download-Message for IFD disappears	"*Summary:*
+
+When download the PDF in the Landscape Diagram, the modal dialog ""Please wait ..."" is automatically closed after a few seconds. But it should be closed after the download is offered.
+
+
+
+*Reproduce:*
+
+* Open the default LSD / IFD / NCD
+
+* Click on ""Download\PDF""
+
+
+
+*Actual:*
+
+* The modal dialog appears ""Please wait ..."" and closed automatically *before* the file for download appears
+
+
+
+*Expected:*
+
+* The modal dialog appears ""Please wait ..."" and stays *until* the file for download appears and closes *afterwards* automatically
+
+
+
+Please check this for all diagrams"		Bug	iteraplan PO	12/Oct/16 5:05 PM	24/Oct/16 5:26 PM														24/Oct/16 5:26 PM;dmkh;Review is done, bug is fixed: https://iteraweb.iteratec.de/fisheye/cru/IP-112																																																						

@@ -1,0 +1,1 @@
+Single Element View Building Block: description field	Single Element View Building Block: description field width is so small and when put large text, it does not fit to the page 		Bug	iteraplan Thunderduck	19/Jun/17 4:06 PM	25/Jul/17 3:52 PM														25/Jul/17 3:38 PM;pma;Cannot reproduce																																																						

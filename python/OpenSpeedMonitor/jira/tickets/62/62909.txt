@@ -1,0 +1,23 @@
+Create type change test cases in LSD	"please edit the e2e-test tracability excel sheet located in e2etest subfolder after implementing the tests
+
+
+
+edit the file Element-type-spec.js in LSD.
+
+(you could rename it with something like type-change-spec.js )
+
+
+
+create the following test cases:
+
+- click on inner element and change content type to different values
+
+- click on column axis -> change column association -> relation -> <different values here>
+
+- click on row axis -> change row association -> attribute -> <different values here>
+
+
+
+
+
+"	62908	Sub-task	iteraplan PO	09/Nov/15 9:06 AM	18/Nov/15 8:42 AM					LSD	Test								16/Nov/15 5:43 PM;lwi;first two commits 1922 and 1923 can be found at ITERAPLAN-4139 ...	16/Nov/15 5:46 PM;lwi;accidently committed under wrong ticket! see comment section																																																					

@@ -1,0 +1,8 @@
+Query Console: Error page when changing the language	"I get error page when I try to change the language after I have execute a iteraQl query.
+
+Reproduction:
+#	Copy a query example into the iteraQl console and execute them
+#	You get an result list
+#	Change the language
+# =>	You get an exception
+"		Bug	iteraplan PO	24/Apr/14 2:27 PM	28/Apr/14 2:20 PM					iteraQL									28/Apr/14 3:35 PM;fka;Wonderful!																																																						

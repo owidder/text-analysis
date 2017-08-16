@@ -1,0 +1,9 @@
+Custom Dashboards EE / Win7 / FF24 / mysql / default language: german		46148	Sub-task	iteraplan PO	23/Oct/13 3:19 PM	24/Oct/13 4:44 PM					test									"23/Oct/13 4:39 PM;isc;*The following deviations from the test cases are occurred:*
+
+Dashboard Template Tests
+* TC1 Step 7: -> ITERAPLAN-2067
+
+Dashboard Instance Tests
+* TC1 Step 4: -> ITERAPLAN-2024, ITERAPLAN-2025, ITERAPLAN-2026
+* TC2 Step 17 – 19: -> ITERAPLAN-2028 But I mean that is a feature (not a bug) and the test is not correct. The saved query is the basic for dashboard instance. On the basis of the return type (from the saved query) is decided which templates are available. If you change the query, the BBT can also modify and thus the selection of templates. Therefore, when you delete the saved query, a new dashboard is created. Because it's a totally different dashboard as before.
+"	24/Oct/13 4:44 PM;bra;please mark unsuccessful testcases as not ok for future tests																																																					

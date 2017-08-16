@@ -1,0 +1,15 @@
+Provide APIs and extension points for plugins	"Provide documented and stable APIs and extension points
+
+so that teams outside of the iteraplan core team
+
+can develop plugins and add them to an iteraplan installation.
+
+
+
+Note that the development of actual plugins is out of scope of this epic,
+
+except for demonstration and testing plugins.
+
+
+
+The purpose, technology and location of execution and/or interaction with the iteraplan core is not limited in this epic, as long as this epic is in the discussion phase. It may be split into ""on the roadmap"" and ""off the roadmap"" later."		Epic	iteraplan Thunderduck	19/Oct/15 10:53 AM																																																																					

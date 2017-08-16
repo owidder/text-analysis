@@ -1,0 +1,7 @@
+iTURM: Redirect to iteraplan after password change	"{quote}
+Nach erzwungener Passwortänderung landet man auf der iturm Login Seite, was für > 99 % der Fälle vollkommener Unsinn ist, und zu typischen Fehlern führt. Das iteraplan Login wäre der richtige Landeplatz.
+{quote}
+The reason is how {{referrerUrl}} is constructed in {{PasswordServlet}}. 
+Please add an optional URL parameter for the password change page, which allows passing in where the user should be redirected to after he changed his password.
+
+"		Improvement	iteraplan PO	29/Apr/13 1:53 PM	30/Dec/15 2:32 PM					iturm																																																															

@@ -1,0 +1,40 @@
+Create pageobject-methods for E2E-Tests	"Create pageobjects-methodes (helpers) for automated testing.
+[~dasm] defines which methods are needed."		New Feature	iteraplan PO	01/Apr/15 8:52 AM	19/Jan/16 1:49 PM														"03/Apr/15 10:39 AM;dasm;List of methods  in scope of Sprint 10
+
+-Context menu for content:
+*switching the content type 
+*changing the coloring
+*changing the column associacion
+*changing the row associacion
+*seting the enumeration property as X axis
+*seting the enumeration property as Y axis
+
+-Comparing all applied options with data in the Legend (Content type,
+Horizontal and Vertical axis, Coloring)
+
+-Context menu for X axis
+*changing the column associacion
+*seting the enumeration property as X axis
+
+-Context menu for Y axis
+*changing the column associacion
+*setine the enumeration property as Y axis
+
+-Legend
+*current color for each settings line
+*current text content
+
+-Diagram title (current text content)"	"06/Apr/15 11:35 AM;sepr;Estimated as 8 SP without
+
+-Comparing all applied options with data in the Legend (Content type,
+Horizontal and Vertical axis, Coloring)
+
+-Legend
+*current color for each settings line
+*current text content
+
+-Diagram title (current text content)
+
+These three items to be discussed
+
+"																																																					

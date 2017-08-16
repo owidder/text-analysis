@@ -1,0 +1,28 @@
+Saved queries: Better distinguish between Save and Save As	"Currently a saved query is overwritten, if it is saved under the identical name. In this case the ID is unchanged. If the name is altered, a new saved query with a new ID is created - the ""Save"" implicitly does a ""Save As"".
+
+This should be changed:
+Save and Save As should be separate commands / buttons. If there is no saved query loaded, only ""Save As"" should be active.
+
+UI mockup to follow.
+"		New Feature	iteraplan PO	10/Apr/14 7:23 PM	26/Jun/14 1:13 PM					savedquery									05/May/14 4:05 PM;bra;for nesting cluser, please disable the save as button if the save button is disabled, as saving an insufficiently configured NCD causes an exception to be thrown.	05/May/14 4:07 PM;bra;a user feedback after saving would be nice too	"12/May/14 9:57 AM;dop;There are some inconsistencies between the different queries. For example between nesting-cluster-query and portfolio query. 
+
+Now after fixing this ticket, the ""Save As"" button of the nesting-cluster-query is disabled, if the query isn't configured properly. 
+
+However in the portfolio query the user can click the ""Save As"" Button despite missing settings (e.g. the axis). In this case an error message appears on top of the screen. 
+
+Maybe we should unify the behavior of generating queries and graphics in error cases. "	"13/May/14 11:40 AM;gph;SaveAs doesn't work for Spreadsheet reports and Bulk updates.
+
+{code}
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1004E:(pos 32): Method call: Method saveQueryAs(de.iteratec.iteraplan.businesslogic.reports.query.options.ManageReportMemoryBean) cannot be found on de.iteratec.iteraplan.presentation.dialog.TabularReporting.TabularReportingFrontendServiceImpl type
+	at org.springframework.expression.spel.ast.MethodReference.findAccessorForMethod(MethodReference.java:202)
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:118)
+	at org.springframework.expression.spel.ast.MethodReference.access$100(MethodReference.java:44)
+	at org.springframework.expression.spel.ast.MethodReference$MethodValueRef.getValue(MethodReference.java:258)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:82)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getTypedValue(SpelNodeImpl.java:102)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:98)
+	at org.springframework.binding.expression.spel.SpringELExpression.getValue(SpringELExpression.java:84)
+{code}"	14/May/14 9:39 AM;dop;I accidentally used the wrong ticket number in the commit message. The adoptions for the standard.jsp can be found here: https://www.iteraplan.de/code/changelog/iteraplan-SVN?cs=22898	"14/May/14 11:45 AM;gph;Working as expected in diagrams, spreadsheet report and bulk update.
+Code looks good.
+UI is consistent."	26/Jun/14 1:09 PM;dop;Save / Save as don't work as expected. Misbehavior is documented in Ticket ITERAPLAN-2577.	"26/Jun/14 1:13 PM;wfr;Inadvertently reopened.
+Reason for the reopening is now in new improvement ITERAPLAN-2577 "																																															

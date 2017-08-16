@@ -1,0 +1,8 @@
+Setup WPT-Server und WPT-Agent mit Multi-Step-Fähigkeit für die Entwicklung	"Der Server für multistep-Messungen ist unter 
+    /var/www/vhosts/ottowptserver211_multistep/
+auf unserem SEU installiert. Er besteht auch PHP-Skripten, die schliecht ersetzt werden müssen. Wichtig: Nach kopieren der neuen Dateien in das genannte Verzeichnis müssen die Dateien und Ordner der Gruppe ""www-data"" und dem Benutzer ""www-data"" gehören.
+
+Der WPT-Agent für multistep-Messungen ist auf dem Host WPT1 bei Hetzner, IP-Adresse: 5.9.117.75, VNC-Port: 5900 installiert. Passwort findet sich in der Testcenter-KeyPass-Datei unter ""/OTTO_KPO/wpt_extern_hetzner"", Eintrag ""VNC"". Das Installationsverzeichnis des Agenten ist: ""C:\wpt_2.11_multistep""."	10318	Technical task	OpenSpeedMonitor	15/Jul/13 12:54 PM	30/Jul/13 11:19 AM													In Zusammenarbeit mit Christian hier eine geeignete Server-Umgebung aufbauen	"23/Jul/13 10:19 AM;mzeimer;Agent-Host ""WPT1"":
+TeamViewer-ID: 138 052 914
+Installiert TeamViewer 7 Host
+Passwort in meiner key-pass-file: Wir brauchen einen zentralen, sicheren Platz für sowas. TeamDrive geht bei mir grad nicht, ich reiche das Passwort noch an Nils weiter."	29/Jul/13 12:53 PM;mzeimer;Neue Server-Version ins Puppet-Repo	30/Jul/13 10:56 AM;mzeimer;Wichtig: results ordner des servers NICHT löschen!	30/Jul/13 11:12 AM;mzeimer;Wichtig: Ordner settings nicht ersetzen!	30/Jul/13 11:19 AM;mzeimer;Heute zwischen 10:45 und 11:15 noch mal server und agent aktualisiert.																																																		

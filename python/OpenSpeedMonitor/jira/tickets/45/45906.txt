@@ -1,0 +1,11 @@
+Changing the language in edit mode causes error if the input fields have a format that depends on the localization	"Easy to reproduce with the following steps:
+1) Choose a BB
+2) Go to the attributes tab
+3) Choose edit mode
+4) Change language (de -> en)
+5) A date field for example has in .de the format dd.mm.yy but in .en mm/dd/yy, the displayed date will not change it's format in an input box.
+6) Change the dates to there correct format and save -> error: wrong date format.
+Changing the format in the input box doesn't do an update to the correct format.
+
+This situation appears everywhere in iteraplan while changing the language in edit mode.
+It is a rather unlikely scenario but still would need a fix."		Bug	iteraplan PO	18/Jul/13 2:19 PM	18/Jul/13 11:48 PM					attribute	gui	visualization							18/Jul/13 11:48 PM;sry;Minor corner cases - Language is hardly ever switched in such a step, but typically earlier in the user workflow.																																																						

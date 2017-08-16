@@ -1,0 +1,59 @@
+UI design cleanup	"Adjust layout of list view:
+
+
+
+Page header:
+
+* Headline (""Showing..."") smaller
+
+* Filter button on the very left side
+
+* Text filter next to it on the left
+
+* Add column form on the right
+
+
+
+List (see also screenschot from ""old new"" list):
+
+* Complete table
+
+** Margin on the left and right
+
+** No 2 scrollbars on the right
+
+** No empty space on the right if not enough columns are shown: one column (default: description) should get the remaining space
+
+* Table header
+
+** Background dark-grey
+
+** Remove drag'n'drop icon
+
+** Column name aligned left (with sorting icon on the very left if sorting is active for this column)
+
+** Delete cutton (""X"") aligned right and always above text
+
+** Column separator between header cells
+
+** Column groups:
+
+*** When there are grouped columns and non-grouped columns at the same time, the top half of the header of non-grouped columns is inactive and doesn't react to clicking and dragging
+
+*** Possible fix: Change the look of the top half of the header (which is a separate div from the bottom half) to blend with the background, so no attempts to click it are made.
+
+*** Mouse pointer changes to drag icon when hovered
+
+* Rows
+
+** No column separators
+
+** Zebra look (alternating white and light-grey background)
+
+
+
+Check layout in all browsers!
+
+
+
+Usage of magic bootstrap will be discussed in separate ticket ITERAPLAN-4758."		New Feature	iteraplan PO	10/May/16 12:58 PM	05/Jul/16 11:48 AM																																																																				

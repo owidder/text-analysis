@@ -1,0 +1,26 @@
+Missing elements of LSD	"*List of missing elements:*
+
+* Scaling of boxes, diagram (we won't do it)
+
+* Line-breaking, text cut-off (already doing line-breaking)
+
+* Long names in legend (we won't do it)
+
+* Hierarchical names (we won't do it)
+
+* ""Zeiss-Schalter"" - ITERAPLAN-3790
+
+* Remove empty columns, rows (already done)
+
+
+
+What is the actual status?"		New Feature	iteraplan PO	27/Jan/15 2:35 PM	10/Jul/15 4:50 PM														"04/Mar/15 4:17 PM;wfr;rough estimate, 
+needs splitting and clarification
+
+probably parts of it are left out of April release."	"06/Mar/15 3:28 PM;wfr;already split off into extra tickets
+* orphans: -383 - 8 SP
+* span content elements: -374 - 5 SP
+* orientation: -382 - 5 SP
+
+sum 23 SP
+remaining (calculated, not estimated: 27 SP)"																																																					

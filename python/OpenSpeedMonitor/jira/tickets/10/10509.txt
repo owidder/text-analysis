@@ -1,0 +1,9 @@
+CSI Graph kleiner darstellen	"Den Highchart-Graph (samt Legende) kleiner darstellen, damit er auf eine Bildschirmseite passt. Ggf. Größe dynamisch an Platz anpassen. Wertebereich (y-Achse) nicht ändern!
+
+Wenn einfach möglich: Knopf anbieten um die Ansicht zu vergrößeren. Dieses sollte dann auch in der URL sichtbar sein, damit ein Lesezeichen auf die ""große Version"" möglich ist."	10010	Sub-task	OpenSpeedMonitor	03/Sep/13 9:38 AM	05/Sep/13 1:02 PM														"05/Sep/13 12:10 PM;mzeimer;Chart-Höhe lässt sich für nun wie folgt anpassen:
+<iteratec:chart /*...*/ heightOfChart=""600"" />
+
+Angabe leider nur in Pixel möglich."	"05/Sep/13 12:57 PM;mzeimer;Die Ansicht per Knopf zu vergrößern geht. Der Code ist in der GSP (""makeChartLargerButton""). Allerdings habe ich diesen erst einmal auskommentiert, weil der Effekt nicht gut aussieht und sich das auch nicht gut anfühlt. Wenn die Anforderung kommen sollte, haben wir eine Muster, wie es geht. 
+
+Bei der Gelegenheit könnten wir dann die Tag-Lib aufräumen, denn derzeit scheint das Chart sehr umständlich erstellt zu werden, im Vergleich zum Vorgehen in der Doku."	"05/Sep/13 12:58 PM;mzeimer;Resize Doku:
+http://api.highcharts.com/highcharts#Chart.setSize%28%29"																																																				

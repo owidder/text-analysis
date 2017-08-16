@@ -1,0 +1,14 @@
+gespeicherte Abfragen im Reactor nutzen	Hi, wie nutze ich denn gespeicherte Abfragen als Input für den Reaktor in 6.0? Die lange, neue ID frisst er mir nicht ...		Technical question	iteraplan Support	28/Jun/17 12:24 PM	18/Jul/17 7:00 AM														"29/Jun/17 8:18 AM;cst;Hallo Daniel,
+
+für die Reactor-Abfrage in Version 6.0 werden noch die alten ID´s verwendet. 
+Denke ab Version 6.0 können die neuen Eingeben werden.
+
+In Version 6.0 ist der Classic Client noch enthalten.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+ 
+
+ "																																																						

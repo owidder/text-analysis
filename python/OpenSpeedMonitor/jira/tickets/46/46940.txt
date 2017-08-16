@@ -1,0 +1,3 @@
+Edit description in list	"To the list view, add editing of the description in-place in the list.
+
+Same as editing the description in the single item view, and start of editing as in 108."		New Feature	iteraplan PO	10/Sep/14 12:52 PM	29/Sep/14 10:29 AM														10/Sep/14 2:04 PM;sepr;Est. 0.5 PD																																																						

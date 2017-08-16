@@ -1,0 +1,3 @@
+Deactivate url-encoding		103465	Sub-task	iteraplan Speedbird	23/Nov/16 9:53 AM	02/Dec/16 3:27 PM														24/Nov/16 11:23 AM;ants;Revision 5244 should be added to review.	"02/Dec/16 3:27 PM;viol;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-203
+
+no any comments"																																																					

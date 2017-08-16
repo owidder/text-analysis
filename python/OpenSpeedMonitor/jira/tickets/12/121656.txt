@@ -1,0 +1,6 @@
+Abmelden aus iteraplan	"Wenn man iteraplan mit iTurm installiert hat, konnte man jeweils die Session abmelden. Dieser Eintrag gibt es nicht mehr!
+
+
+
+Ist dies wirklich so, dass der Eintrag ""Abmelden"" in dieser Version ganz eliminiert wurde? "		Technical question	iteraplan Support	17/May/17 5:27 PM	18/May/17 12:37 PM														"18/May/17 11:01 AM;alfred.studer@emmi.com;Jetzt habe ich es gesehen.
+Abmelden darf man sich nur im interaktiven Client. Im  Classic Client darf man dies nicht."	18/May/17 11:03 AM;alfred.studer@emmi.com;Somit kan dieses Ticket geschlossen werden																																																					

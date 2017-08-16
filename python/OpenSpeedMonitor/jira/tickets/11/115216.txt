@@ -1,0 +1,22 @@
+Error by removing a relation to a location	"Error-Message when trying to update attribute.
+
+ 
+
+I tried to remove ""JP"" from sites where system BRIGHTWORK is used. ""Edit"" - ""Save"".
+
+After a moment an error message is displayed, the update not done:"		Fault	iteraplan Support	17/Mar/17 11:05 AM	03/Apr/17 8:39 AM														"17/Mar/17 11:05 AM;richard.hermle@boehringer-ingelheim.com;
+
+[^ProblemReport_2017-03-17_104736.zip] _(18 kB)_
+
+!errror-message.png|thumbnail!"	"20/Mar/17 8:51 AM;cst;Dear Mr. Hermle,
+
+thank you for your inquiry.
+
+The cause for this problem is that the software cannot write a input statement in the database. 
+To validate the next steps, could you please send me a screenshot from ""Brightwork"" and the ""Business Mappings"". 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support 
+
+ "	03/Apr/17 8:40 AM;cst;Was fixed in Ticket IPS342																																																				

@@ -1,0 +1,23 @@
+EmbeddedReportService	"see also https://iteraweb.iteratec.de/confluence/pages/viewpage.action?title=GoJS+im+Hintergrund&spaceKey=ITPL
+
+
+
+- probably should be splitted in several tickets
+
+
+
+- embeddedReportService to be called with saved query UID and target format
+
+- should start PhantomJS with interactive Client and return the generated file
+
+
+
+- add functionality to IC"		Improvement	iteraplan Thunderduck	07/Mar/17 5:32 PM	20/Mar/17 3:04 PM														"16/Mar/17 11:32 AM;tsc;Issues to be solved:
+
+ * integration of PhantomJS in iteraplan distribution
+
+ * configuration (file system access, phantomjs executable)
+
+ * ElasticMiContext needs to be available for anonymous access
+
+ * uage of interactive client js?"																																																						

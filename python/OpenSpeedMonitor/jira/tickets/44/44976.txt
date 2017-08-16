@@ -1,0 +1,1 @@
+Excel import of attributes for interfaces does not work properly	When importing new interfaces via Excel, it is not possible to immediately assign attributes (e.g. accountability, complexity, etc.)		Bug	iteraplan PO	31/May/11 6:41 AM	28/Jun/11 10:13 AM					excel	import																																																														

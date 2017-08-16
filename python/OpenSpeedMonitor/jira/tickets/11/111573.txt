@@ -1,0 +1,5 @@
+chart implementieren: Senkrechte Violincharts für den SpeedIndex	"Senkrechte Violincharts für den SpeedIndex zur Visualisierung der Verteilung.
+
+
+
+!Ladezeiten Violin.png|thumbnail!"		Story	OpenSpeedMonitor	10/Feb/17 5:12 PM	08/Mar/17 8:35 AM														08/Mar/17 8:35 AM;jwi;Wird mit Ticket IT-1553 zusammen erledigt.																																																						

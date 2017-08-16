@@ -1,0 +1,25 @@
+localization for values in IFD legend	"*Summery*
+
+* implement localization in ifd legend 
+
+
+
+*Reproduce*
+
+* select a item
+
+* click on coloring and select coloring by status
+
+* now the color values with the name of the literal will show in a panel
+
+* text´s aren´t localized
+
+
+
+*Actual*
+
+*text won´t localized or translated
+
+
+
+bug is maybe in ifdLegendBuilder in drawColoring()"		Bug	iteraplan PO	28/Sep/15 10:42 AM	29/Sep/15 2:18 PM																																																																				

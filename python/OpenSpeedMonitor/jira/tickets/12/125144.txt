@@ -1,0 +1,11 @@
+User x6KBwHsEZP im Servicedesk bearbeiten	Sorry, ich habe bei der Anlage meines Service Desk Users einen Fehler gemacht, den ich nicht korrigieren darf. Ich müsste meinen Realen Namen und das Passwort ändern.		Technical question	iteraplan Support	23/Jun/17 11:20 AM	15/Jul/17 7:00 AM														23/Jun/17 3:53 PM;msr;[~cst]: Keine Ahnung, ob und wie das in Jira Service Desk geht. Ich hab nur gefunden, wie man den ganzen User löscht. Das könnten wir machen, wenn sein Ticket fertig bearbeitet ist.	"26/Jun/17 8:45 AM;cst;Guten Tag,
+
+vielen Dank für Ihre Anfrage.
+
+Ein ändern des Accounts ist im Service Desk nicht möglich. 
+Wir können wie folgt vorgehen, wenn wir das Ticket zum Thema iturm gelöst haben, löschen wir diesen Account 
+und Sie erstellen diesen neu. 
+
+Viele Grüße, 
+
+Christoph Stangl - iteraplan Support"																																																					

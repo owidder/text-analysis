@@ -1,0 +1,9 @@
+WptDownloadWorker automatisch starten, auch wenn Threads gestorben sind	"Derzeit wird ein Threadpool angelegt bei dem 10 WptDownloadWorker gestartet werden, die jeweils unendlich laufen. Stirbt ein Thread, erstellt der ThreadPool auch neue Threads, jedoch wird kein neuer WptDownloadWorker gestartet. Dies passiert nämlich nur beim Start der Applikation.
+
+
+
+Entweder muss regelmäßig geguckt werden ob neue WptDownloadWorker gestartet werden können, oder man arbeitet direkt mit einer Queue (siehe https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ThreadPoolExecutor.html). Es würde dann pro Job ein neues WptDownloadWorker in die Queue gehängt werden, welches dann *nicht* unendlich lange läuft, sondern genau einen Download-Job ausführt."		Bug	OpenSpeedMonitor	08/Feb/17 4:05 PM	09/Feb/17 4:54 PM														"09/Feb/17 4:54 PM;mmi;Es wird jetzt ein ThreadPool beim Initialisieren des Services Erstellt und ein Thread gestartet, der alle 30 Sekunden aus der Datenbank fetchJobs holt.
+
+Aus diesen werden DownloadTasks (Runnable) erstellt, die am Pool gequeued werden (pool.execute). Der Pool arbeitet die Queue selbständig ab.
+
+Die Queue ist nach oben hin begrenzt."																																																						

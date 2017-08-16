@@ -1,0 +1,54 @@
+Geschäftsprozess - During history retrieval, an error occurred	"Beim Laden der Historie eines Geschäftsprozesses kann die Historie nicht aufgerufen werfen. Bei anderen (zufällig stichprobenartig ausgewählten) Geschäftsprozessen funktioniert der Aufruf der Historie jedoch.
+
+Der Stacktrace aus den Logfiles wurde angehängt."		Fault	iteraplan Support	13/Apr/16 3:47 PM	03/May/16 10:38 AM														"13/Apr/16 3:47 PM;ip.manuel.straesser;
+
+[^stacktrace.txt] _(13 kB)_"	"14/Apr/16 1:27 PM;sfe;Eine Frage: Gab es, seitdem Sie die History-Funktionalität verwenden, auch Zeiten, in denen die History temporär ausgeschaltet war, und in denen Änderungen am Datenbestand erfolgt sein könnten?
+
+Eine Bitte: Können Sie mir bitte die Datenbank-ID des Geschäftsprozesses, bei dem das Problem auftritt, nennen? Sie können diese ermitteln, indem Sie den Geschäftsprozess in der iteraplan-Oberfläche öffnen, und dann in der Browser-Adressleiste die ID auslesen.
+z.B. könnte die Adresse wie folgt lauten:
+{{https://www.iteraplan.de/iteraplan_ee_release/show/businessprocess/29?execution=e1s1}}
+In diesem Fall wäre die ID dann *29*
+
+Mit Hilfe dieser ID kann ich Ihnen ein SQL-Script zur Verfügung stellen, welches zusätzliche Informationen zum Datenbestand Ihrer History bezüglich dieses Problems zusammenstellt."	"14/Apr/16 2:44 PM;ip.manuel.straesser;Ja, durch einen Konfigurationsfehler beim Deployment auf den Tomcat-Server hatten wir für eine kurze Zeit iteraplan mit ausgeschalteter History-Funktion betrieben. Es wäre möglich, dass es Änderungen am Datenbestand in diesem Zeitraum gegeben haben könnte.
+Ich habe vorhin alle unsere Geschäftsprozesse kontrolliert und bei insgesamt 13 davon ist der Fehler aufgetreten, wobei teilweise leicht andere Fehlermeldungen in den Logdateien aufzufinden waren. Die entsprechenden Stacktraces kann ich gerne zur Verfügung stellen.
+Bei 12 Geschäftsprozessen handelt es sich um Elemente der ersten Hierarchieebene, welche Geschäftsprozesse untergeordnet haben. Der 13. betroffene Geschäftsprozess befindet sich auf der zweiten Hierarchieebene und hat keine Geschäftsprozesse untergeordnet.
+Die IDs der betroffenen Geschäftsprozesse sind:
+15670, 1475, 1509, 1483, 1500, 1492, 5393, 1477, 1457, 5432, 6417, 4598
+
+"	18/Apr/16 10:24 AM;sfe;Vielen Dank für die Informationen. Wenn tatsächlich teilweise verschiedene Fehlermeldungen im Log auftauchen, dann hätte ich gerne auch zumindest Beispiele der anderen Varianten, oder vielleicht am besten gleich die Stacktraces aller Elemente.	"18/Apr/16 3:47 PM;ip.manuel.straesser;Ich habe für alle genannten Geschäftsprozesse die entsprechenden Stacktraces angehängt. Die im Dateinamen angegebene ID entspricht der ID in iteraplan zur besseren Zuordnung. Im letzten Kommentar fehlte die ID des Geschäftsprozesses auf der zweiten Hierarchieebene, welche 1489 lautet.
+
+[^stacktrace-id-1457.txt] _(13 kB)_
+
+[^stacktrace-id-1475.txt] _(13 kB)_
+
+[^stacktrace-id-1477.txt] _(13 kB)_
+
+[^stacktrace-id-1483.txt] _(13 kB)_
+
+[^stacktrace-id-1489.txt] _(12 kB)_
+
+[^stacktrace-id-1492.txt] _(13 kB)_
+
+[^stacktrace-id-1500.txt] _(13 kB)_
+
+[^stacktrace-id-1509.txt] _(13 kB)_
+
+[^stacktrace-id-4598.txt] _(13 kB)_
+
+[^stacktrace-id-5393.txt] _(13 kB)_
+
+[^stacktrace-id-5432.txt] _(13 kB)_
+
+[^stacktrace-id-6417.txt] _(13 kB)_
+
+[^stacktrace-id-15670.txt] _(13 kB)_"	"20/Apr/16 2:49 PM;sfe;Die Stacktraces legen die Vermutung nahe, dass tatsächlich Änderungen in der Zeit, in der die History ausgeschaltet war, passiert sind.
+Dadurch kann es zu Inkonsistenzen im History-Verlauf kommen, der dann bei der Berechnung der Unterschiede zwischen den verschiedenen vergangenen Zuständen zu den angegebenen Fehlern führt.
+Spontan kann ich als ""Lösung"" nur anbieten, das History-Initialisierungsskript von iteraplan auf der Datenbank auszuführen. Dabei wird aber sämtliche History-Information resettet.
+Alternativ ist es vielleicht möglich, nur die History-Daten der betroffenen Elemente zu resetten, und damit die Inkonsistenzen zu beseitigen ohne die restlichen History-Daten zu verlieren. Das ist aber etwas aufwendiger und erfordert zusätzliche Analyse und Design auf meiner Seite. Ich kann Ihnen hier keine Lösung innerhalb der nächsten paar Tage versprechen."	20/Apr/16 3:49 PM;ip.manuel.straesser;Falls die History bzgl. der betroffenen Elemente (Geschäftsprozesse) gelöscht wird, würde bei den verbundenen Informationssystemen, die über fachliche Zuordnungen mit diesen Geschäftsprozessen verbunden sind, auch die History gelöscht werden?	21/Apr/16 8:03 AM;ip.manuel.straesser;Würde sich der Fehler auch dadurch beheben lassen, dass die betroffenen Elemente gelöscht und neu angelegt werden?	"21/Apr/16 1:46 PM;sfe;Die History bei verbundenen Elementen würde, bei einer datenbankseitigen Löschung der History der betroffenen Elemente, größtenteils bestehen bleiben. Eventuell würden die Historyeinträge bezüglich der Beziehungen zu den betroffenen Geschäftsprozessen verloren gehen.
+
+
+
+Den Fehler zu beheben, indem die betroffenen Elemente gelöscht und neu angelegt werden, ist eine gute Idee. Da hätte ich selbst darauf kommen sollen. Das wird ebenfalls funktionieren, und sogar die History der verbundenen Informationssysteme vollständig intakt lassen.
+
+Das ist also der Weg, den ich empfehlen würde."	25/Apr/16 9:35 AM;ip.manuel.straesser;Gibt es eine Möglichkeit automatisiert festzustellen, ob weitere Elemente in anderen Bebauungsgruppen (z.B. Technische Bausteine) betroffen sind?	"29/Apr/16 4:04 PM;sfe;Bitte entschuldigen Sie die verzögerte Antwort.
+Leider ist mir keine Möglichkeit bekannt, automatisiert Elemente auf dieses Problem hin zu überprüfen."	02/May/16 1:48 PM;ip.manuel.straesser;Bitte schließen Sie dieses Ticket.																																											

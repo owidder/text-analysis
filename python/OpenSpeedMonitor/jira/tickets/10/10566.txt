@@ -1,0 +1,7 @@
+Diskussion mit WPTDriver-Entwickler starten	"Ziel: Rückübergabe unserer Multistep-Anpassung zum WPT-Entwickler
+Besprechung/Diskussion des möglichen Vorgehens
+"		Task	OpenSpeedMonitor	25/Sep/13 12:54 PM	07/Nov/13 2:20 PM														"08/Oct/13 4:12 PM;jwerschmoeller;Fokus der Mail auf:
+- Tolle Lösung/ Lösung würden wir gerne übergeben
+- Auf Kundenwunsch umgesetzt
+- Screenshots der Oberfläche bereitstellen
+- Einschränkung: funktioniert nur mit dem WPTDriver"	04/Nov/13 10:29 AM;nkuhn;Erste Mail an Patrick Meenan siehe Anhang.	04/Nov/13 10:30 AM;nkuhn;2013-11-04 - Mail an Pat Meenan	06/Nov/13 4:10 PM;jwerschmoeller;Agent ist gemerged / Deployment auf Testumgebung durchgeführt.	07/Nov/13 2:20 PM;nkuhn;Wird in OT-55 weiter bearbeitet.																																																		

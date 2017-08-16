@@ -1,0 +1,3 @@
+WebDriver-Tests implementieren	"Wir brauchen dringend Oberflächentests.
+Wir sollten das geb-plugin einsetzen: http://grails.org/plugin/geb
+Die Tests sollten der Einfachheit halber ohne weitere Infrastruktur auf der seu im Jenkins ausgeführt werden können. Als Browser sollten wir daher vermutlich PhantomJS einsetzen."		New Feature	OpenSpeedMonitor	24/Apr/14 9:42 AM	23/Jun/16 4:26 PM																																																																				

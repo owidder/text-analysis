@@ -1,0 +1,13 @@
+Error message in JSPs (on demo system)	"The logfile of the demo system contains error messages:
+
+{noformat} 
+[ERROR] 02-May-2012 14:24:22 [iteratecLogTag] org.apache.tiles.impl.CannotRenderException: JSPException including path '/jsp/BusinessMapping/Manage.jsp'.
+[ERROR] 02-May-2012 14:24:22 [iteratecLogTag] org.apache.tiles.impl.CannotRenderException: JSPException including path '/jsp/BusinessMapping/Manage.jsp'.
+[ERROR] 02-May-2012 14:24:22 [iteratecLogTag] org.apache.tiles.impl.CannotRenderException: JSPException including path '/jsp/common/TransactionBar.jsp'.
+[ERROR] 02-May-2012 17:38:35 [iteratecLogTag] org.apache.tiles.impl.CannotRenderException: JSPException including path '/jsp/BusinessMapping/Manage.jsp'.
+[ERROR] 02-May-2012 17:38:35 [iteratecLogTag] org.apache.tiles.impl.CannotRenderException: JSPException including path '/jsp/BusinessMapping/Manage.jsp'.
+[ERROR] 02-May-2012 17:38:35 [iteratecLogTag] org.apache.tiles.impl.CannotRenderException: JSPException including path '/jsp/common/TransactionBar.jsp'.
+{noformat} 
+
+See attachment.
+"		Bug	iteraplan PO	04/May/12 1:24 PM	08/May/12 8:15 AM														07/May/12 4:56 PM;gph;The error happend, when a user logged in without administrator status and tried to execute a business mappings query. Then a not existing method has been called via JSP EL, because BusinessMappingsComponentModel wasn't in the same inheritance hierarchy like the other building block types. Moved it to extend BuildingBlockComponentModel. Shouldn't cause any problems.	08/May/12 2:58 PM;tse;ok																																																					

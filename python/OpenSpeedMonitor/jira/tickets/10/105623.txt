@@ -1,0 +1,9 @@
+Update of the Model is not working for parent and children relation	"Go to the InformationSystem page.
+
+Add a relation to a sub InformationSystem or a superordinate Information System
+
+Delete or rename the corresponding connected Information System.
+
+Expected: the corresponding row is updated
+
+Actual: it is not updated"		Bug	iteraplan Speedbird	13/Dec/16 11:21 AM	24/Jan/17 4:32 PM																																																																				

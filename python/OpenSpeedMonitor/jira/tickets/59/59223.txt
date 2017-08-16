@@ -1,0 +1,3 @@
+Loading indicator for IFD		59211	Sub-task	iteraplan PO	06/Oct/15 10:46 AM	07/Oct/15 2:35 PM														"07/Oct/15 11:16 AM;ach;reject:
+
+* use _setTimeout_ (just like in lsd), so angular has some time to apply changes and to redraw the template"	07/Oct/15 1:42 PM;dam;now timeout will used and i adjust scroll-bar 																																																					

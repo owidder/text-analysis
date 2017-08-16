@@ -1,0 +1,5 @@
+Edit field as "pop-out"	"* Edit field as ""pop-out"", i.e. overlay of the normal grid, so that the editing field is not covered by other columns (if possible not only usable with ag-grid but also in single element view)
+
+* focus on edit start
+
+* resize of popup field"	102732	Sub-task	iteraplan Thunderduck	12/Dec/16 8:12 AM	23/Dec/16 10:01 AM																																																																				

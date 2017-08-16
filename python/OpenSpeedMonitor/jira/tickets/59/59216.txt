@@ -1,0 +1,5 @@
+Configuration switch for Interactive Client	"Add a configuration switch and make all links in the Classic Client leading to the Interactive Client switchable. 
+
+
+
+The access to the Interactive Client must not be blocked. A user that enters the URI manually may reach the Interactive Client."		New Feature	iteraplan PO	06/Oct/15 10:21 AM	09/Oct/15 10:35 AM																																																																				

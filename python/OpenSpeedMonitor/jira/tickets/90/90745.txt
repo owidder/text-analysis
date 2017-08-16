@@ -1,0 +1,7 @@
+SIH-MapTiler: Automatische Kartierung von Hochgeladenen SVG-Grafiken und Persistierung der internen ID-Informationen	"Als Nutzer möchte ich neue Kartierungsbilder hochladen, die dann automatisch in den notwendigen Zoomstufen aufgeteilt und bereitgestellt werden. 
+
+DoD
+* Uploadfunktion
+* Automatische Umwandlung in PNG
+* Nutzung des Kartierungsdienstes für PNG-Bilder (siehe Story)
+* Speicherung der in der SVG liegenden Boundary-INformationen (x,y,Breite, Höhe) der geometrischen Figuren und der zugehörigen IDs aus iteraplan / Bebauungselemente"		Story	EAM-Visualisierung	18/Jul/16 11:41 AM																																																																					

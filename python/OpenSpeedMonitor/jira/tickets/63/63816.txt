@@ -1,0 +1,5 @@
+Umrechnungs-Methode Ladezeit->Kundenzufriedenheit konfigurierbar machen	"Die Umrechnung von Ladezeit in Kundenzufriedenheit erfolgt bislang _by rank_ anhand von Customer Frustrations. Zukünftig soll die Umrechnung _by mapping_ erfolgen. Hierfür soll die Umrechnungsmethode zunächst per Konfiguration einstellbar sein.
+
+
+
+ "		Task	OpenSpeedMonitor	17/Nov/15 1:35 PM	20/Nov/15 10:13 AM																																																																				

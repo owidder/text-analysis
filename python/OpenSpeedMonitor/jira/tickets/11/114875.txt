@@ -1,0 +1,217 @@
+Summary pop-up dialog	"*Summary:*
+
+
+
+After mass update summary dialog is being showed, containing information about number of successful and unsuccessful updates.
+
+
+
+*Scope:*
+
+ * title: Summary (german: ""Zusamenfassung"")
+
+ * number of successfully updated elements
+
+ ** [number] successfully executed (german: ""[number] erfolgreich durchgeführt"")
+
+ * number of usuccessfully updated elements
+
+ ** [number] failed (german: ""[number] fehlgeschlagen"")
+
+ * underneath results there should be text box with fixed size and scrollbar
+
+ ** text box should be wide, so that there is not to much white space around
+
+ ** containing main info about errors - //ID, Name, Error message// - HTML-format
+
+ ** possibility to copy the content
+
+ *** either with mouse and keyboard shortcut
+
+ *** or by clicking button next to the text box - located on the right bottom side
+
+ **** icon before description of this button (content copy from Angular Materials)
+
+ **** Primary text-button ""Copy results"" (german: ""Ergebnise kopieren"")
+
+ * another section of this dialog as it has already been done
+
+ ** Select:
+
+ * {color:#d04437}*UPDATE:*{color} 3 radio buttons underneath:
+
+ ** Current selection (number of elements) (german: ""Derzeitige Auswahl (number of elements)"") - selected by default
+
+ ** All successful (number of elements) (german: ""Alle erfolgreiche Elemente (number of elements)"")
+
+ ** All unsuccessful (number of elements) (german: ""Alle fehlgeschlagene Elemente (number of elements)"")
+
+ * button to take action: (description of buttons - [#IPTS-640])
+
+ ** Action-Button violett
+
+ *** Continue (german: ""Weiter"")
+
+ *** *{color:#ff0000}UPDATE:{color}*  For ""delete"": Please show radio button ""All successful"" greyed out (it is not possible to choose deleted elements)
+
+
+
+*UI:*
+
+ * after summary screen mass update still active
+
+ * same dialog for update and delete"		New Feature	iteraplan Speedbird	14/Mar/17 3:34 PM	08/May/17 10:27 AM														"15/Mar/17 10:49 AM;roia; 
+
+{quote}text box with fixed size and scrollbar
+
+{quote}
+
+*
+
+
+
+ 
+
+{quote}containing main info about errors
+
+{quote}
+
+so, for example, I get following response from the server, which contains the errors information:
+
+
+
+{{""UPDATESFAILEDFOR"": [\{}}
+
+ {{  ""ID"": 1,}}
+
+ {{  ""ERRORS"": [\{}}
+
+ {{    ""ERRORCODE:""17"",}}
+
+ {{    ""ERRORMESSAGES"":""Building Block not found""}}
+
+ {{  }]}}
+
+ {{},}}
+
+ \{   ""ID"": 2,
+
+ {{  ""ERRORS"": [\{}}
+
+ {{      ""ERRORCODE: ""8"",}}
+
+ {{      ""ERRORMESSAGES"": ""Field value too long""}}
+
+ {{    },}}
+
+ {{    \{}}
+
+ {{      ""ERRORCODE"": ""9"",}}
+
+ {{      ""ERRORMESSAGES"": ""Some other error message""}}
+
+ {{  }]}}
+
+ {{},}}
+
+ \{
+
+ {{  ID: 3,}}
+
+ {{  ""ERRORS"": [\{}}
+
+ {{    ""ERRORCODE"": ""15"",}}
+
+ {{    ""ERRORMESSAGES"": ""Numeric value out of bounds""}}
+
+ {{  }]}}
+
+ {{}]}}
+
+
+
+*Question 1*: should be display errors in plain text format (e.g., in <textarea> or <pre> container), or in formatted HTML (e.g., in <table>).
+
+
+
+*Question 2*: how exactly this should look, how to we group multiple error messages, which are related to one building block.
+
+
+
+ 
+
+
+
+If we use HTML-formatted output, then we can merge cells, use table header (""Id"", ""Name"", ""Errors""),
+
+
+
+If we use plain text, then we should use different format.
+
+
+
+With HTML-formatted solution we may achieve more readable format for the user, but if he copies it to the plain-text application, like Notepad, it will become much less readable.
+
+
+
+With plain-text solution we should perform text formatting by ourselves, the formatting possibilities are very limited, but when pasted to Notepad, will look almost the same (old-school-style) as in the popup dialog.
+
+
+
+ 
+
+
+
+ "	"15/Mar/17 11:30 AM;mkt;*One question*: Will plain-text (in case of using HTML-formating) look like this, which you put here as an example?
+
+
+
+*If so:* _(to be confirmed with Fabian and Marcel)_
+
+ # Use HTML-formated view for user, not everyone wants to copy errors and user will have the possibility to see what went wrong without big effort :)
+
+ # In this case, as you already said, we can merge cells and list all error messages, when there are more for one Building Block"	"30/Mar/17 3:25 PM;olal;{quote} * Select all successful (german: ""Alle erfolgreiche Elemente auswählen"")
+
+
+
+ * Select all unsuccessful (german: ""Alle fehlgeschlagene Elemente auswählen""){quote}
+
+What if user wants to select *all* checkboxes ? Does he need to press two buttons?"	"30/Mar/17 3:34 PM;olal;* 
+
+{quote}default button weiß - shows the list with marked checkboxes * Select all successful (german: ""Alle erfolgreiche Elemente auswählen"")
+
+ * Select all unsuccessful (german: ""Alle fehlgeschlagene Elemente auswählen""){quote}
+
+ * 
+
+{quote}Action-Button violet Continue (german: ""Weiter"") (with checkboxes marked as for the first action){quote}So if I understood correct, user need to press the button foe showing the list, after press the one of buttons to select some checkboxes, and then press 'continue'. I think it's has a low usability. And what if user wants to press 'continue' immediately?"	"24/Apr/17 1:51 PM;roia;[~mkt], how should the [ALL UNSUCCESSFUL] button work in case there're no failed records?
+
+
+
+!all_updated.jpg!"	"24/Apr/17 3:39 PM;roia;[~olal], I'd try to combine  $scope.selectSuccessful and $scope.selectFailed into one function, because there's only one word of difference in them.
+
+
+
+Also, there's one review comment. https://iteraweb.iteratec.de/fisheye/cru/IP-489#CFR-42953
+
+
+
+--------------------------------------------
+
+
+
+I see potential performance bottlenecks in this task if we have large amount of data in ag-grid, because there're few places in the code, which loop through all grid nodes, like:
+
+
+
+{{$scope.api.forEachNode(function(node)\{}}
+
+ \{\{ if($scope.data.failed.elements.find(function(element)\{}}
+
+
+
+[~msr], is the performance critical for this task? If not, we can leave current implementation as is, if it is, we should, probably, test on large amount of data and, if necessary, make some optimization.
+
+
+
+ "	24/Apr/17 5:33 PM;mkt;[~olal] and [~roia], I have described some changes in this task, I think it will solve some of our problems with buttons and it's length.	04/May/17 1:44 PM;olal;Updated documentation for mass-update: https://doc.iteraplan.de/display/iteraplan60/List+view	05/May/17 12:29 PM;roia;Some questions in the review are not answered. https://iteraweb.iteratec.de/fisheye/cru/IP-489#CFR-42953	08/May/17 10:22 AM;roia;[~olal], one more question regarding \{\{!important}} directive: https://iteraweb.iteratec.de/fisheye/cru/IP-489#CFR-45068																																													

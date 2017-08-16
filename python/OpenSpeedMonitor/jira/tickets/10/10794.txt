@@ -1,0 +1,5 @@
+Controller nicht aufrufbar	Beispiel: http://seu.hh.iteratec.de:8070/iteraSpeedMonitor/graphitePath/index		Bug	OpenSpeedMonitor	26/Nov/13 2:49 PM	26/Nov/13 3:25 PM														"26/Nov/13 3:25 PM;rhe;Resolved: http://stackoverflow.com/questions/20183258/grails-2-3-2-3-upgrade-unable-to-map-urls-ending-in-html
+
+&&
+
+http://grails.org/doc/2.3.0/guide/upgradingFromPreviousVersionsOfGrails.html ""Scaffolding moved to a plugin and rewritten"""																																																						

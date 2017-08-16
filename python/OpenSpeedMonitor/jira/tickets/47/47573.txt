@@ -1,0 +1,1 @@
+Implement context menu for all filter types	description in IPNINE-379		New Feature	iteraplan PO	06/Apr/15 11:58 AM	22/Apr/15 3:48 PM														14/Apr/15 10:15 AM;dasm;Verified	20/Apr/15 9:37 AM;msr;Reviewed. Ok.																																																					

@@ -1,0 +1,31 @@
+Lite-Edition: New Client does not work in the lite-bundle	"*Summary:*
+
+New Client does not work in the lite-bundle
+
+
+
+*Reproduce:*
+
+* Create a lite-bundle (ant-job or jenkins)
+
+* Start the tomcat
+
+
+
+*Actual:*
+
+* The new client is not loaded but a exception is thrown (500 - for api/administration/generalInformation) (see screenshot)
+
+* The classic client works correctly
+
+
+
+*Expected:*
+
+* The new client is loaded without exceptions
+
+
+
+*First idea:*
+
+* Maybe a missing permission for the liteuser (=mainuser)?"		Bug	iteraplan Speedbird	02/Feb/17 10:28 AM	10/Feb/17 11:31 AM														10/Feb/17 11:32 AM;mse;Commit 26786 also belongs here!																																																						

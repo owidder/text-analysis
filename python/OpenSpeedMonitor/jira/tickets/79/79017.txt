@@ -1,0 +1,1 @@
+Deployment Version mit aktualisierter Detail-Daten-Persistenz	Zuerst auf dev und nach erfolgreichem Lauf auf demo.openspeedmonitor.org laufen lassen.		Task	OpenSpeedMonitor	04/Apr/16 10:41 AM	29/Jun/16 12:04 PM																																																																				

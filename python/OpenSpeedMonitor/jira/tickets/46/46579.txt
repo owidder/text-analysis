@@ -1,0 +1,27 @@
+reload model after changes via REST API have been merged to db to ensure an up-to-date model	"Ask SFE for the idea, how to change the already happening reload so that it will affect the model read too.
+
+WAS:
+Example with iteraplan and external system:
+
+Case 1: ES creates a building block and works on it.
+
+es creates IS1
+es updates IS1 at property P1
+
+as is: update OK, because the micro import process loads a new model before processing the update.
+
+
+Case 2: ES creates a building block and reads it.
+
+work-around 1: wait long enough for reload to happen
+
+work-around 2: ES remembers what it created. 
+
+tidy but expensive: trigger an immediate and synchronous update
+
+economical, but complex: es triggers reload with a request parameter, or suppress reload.
+
+not quite RESTful: add reload as an explicit operation (that is a POST on some new resource
+
+over-engineering: control reloading by global parameter, overrride by request parameter, and offer a reload-POST, and add the ""try again with reload"" URI in every ""not found"" reply on a read/GET.
+"		Bug	iteraplan PO	16/Apr/14 10:33 AM	13/May/14 2:45 PM																																																																				

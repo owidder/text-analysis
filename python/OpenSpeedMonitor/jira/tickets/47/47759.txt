@@ -1,0 +1,5 @@
+"No filter" menu item in special font or similar?	"As is: the special menu item ""no filter"" looks like all ""real"" enum values.
+
+To be: display it in a way so that it can be seen as ""special"".
+
+Minor, to be discussed and done as part of a major UI enhancemnt."		Improvement	iteraplan PO	13/May/15 11:32 AM	19/Jan/16 1:57 PM																																																																				

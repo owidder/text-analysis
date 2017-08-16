@@ -1,0 +1,9 @@
+Range calculation for coloring according to number attributes in visualizations should consider type or selection of elements to display	"At the moment the ranges are calculated based on all of the attribute's values found in the database.
+This means, for example, if you have 100 information systems with Cost values between 1 and 10, and 10 projects with Cost values around 1000, the calculated ranges most likely will be something like ""<= 3"", ""4-6"", ""7-9"", "">= 10"".
+For visualizations of projects that means, their Cost values will always fall into the same range (>= 10) even though they might be very different from each other.
+
+The calculation of ranges should either be based only on the attribute values assigned to elements of the same type as the elements to display, or only on the values assigned to the selected elements.
+This would create more meaningful visualizations."		Improvement	iteraplan PO	26/Feb/13 3:15 PM	26/Feb/13 6:16 PM					attribute	number	ranges	visualization						"26/Feb/13 6:16 PM;sry;Won't fix for iteraplan 3, as this 
+* is a rare corner case
+* no customer has reported it yet
+* the diagram is still correct, no error"																																																						

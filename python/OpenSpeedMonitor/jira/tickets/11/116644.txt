@@ -1,0 +1,33 @@
+MeasurementSetup Wizard verbessern	"Set Job Group:
+
+ - Input bei ""Create New"" ist rechts eckig. Und gefühlt zu kurz.
+
+ Es sollte außerdem ein ""placeholder"" gesetzt werden:
+
+ `Job Grpup name, e.g. My Great WebApp`
+
+ - Rechts im i18n ist Job Group mal groß und mal klein geschrieben
+
+
+
+Create Script
+
+ - Job Group sollte als Preset für Script Name gesetzt werden
+
+ - Es sollte validiert werden, dass das Script nicht leer ist (besser: das es mindestens 1 Step hat)
+
+ - Das label mit ""by writing $\{variable}"" sollte mit dem ""<code>"" Tag hervorgehoben werden, damit es absichtilich technisch aussieht (und nicht wie ei versehentlich nicht ersetzter Text)
+
+
+
+Create Job
+
+ - Cron-String in read-only auch bei preset anzeigen => Lerneffekt
+
+ - Cron-String input Feld hat kein Bootstrap-Style
+
+ - Der Cron-String sollte direkt validiert werden wie im Job Controller
+
+ - Die Cront-Hilfe aus dem Job-Controller sollte rechts unter Informationen auftauchen.
+
+ - Wenn es noch Validierungs-Fehler gibt, sollte nicht nur der Submit-Button disabled werden, sondern zusätzlich noch eine Fehlermeldung angezeigt werden, dass es in manchen SChritten noch Fehler gibt."		Improvement	OpenSpeedMonitor	27/Mar/17 10:56 AM	29/Mar/17 8:25 AM																																																																				

@@ -1,0 +1,5 @@
+[Job-Schedule-Asicht] Location-Lanes ohne Jobs wwerden angezeigt	"Hier wird als Job _[object Object]_ angezeigt. Leere Lanes sollten gar nicht angezeigt werden. Stattdessen sollte ein Text angezeigt werden:
+
+
+
+Aktuell keine aktiven Jobs."		Bug	OpenSpeedMonitor	04/Nov/15 5:56 PM	05/Nov/15 5:20 PM																																																																				

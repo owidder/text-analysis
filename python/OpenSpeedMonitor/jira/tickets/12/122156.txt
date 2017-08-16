@@ -1,0 +1,35 @@
+Default language	"Not only UI - also implementation of the functionality.
+
+
+
+First section on Standard Configuration page
+
+
+
+Name: Default language {color:#14892c}(german: Defaultsprache){color}
+
+
+
+Create radio buttons to select default language:
+
+ * User selection {color:#14892c}(german: Benutzer Auswahl){color}
+
+ ** this button doesn't change anything in users view - everyone can choose any language
+
+ * English
+
+ * German
+
+
+
+Two last language buttons (as well as other languages specified in the future) should cause following action:
+
+ * language choice disappears from menu
+
+ * chosen language is set as default for all users since next log in,
+
+ ** language chosen and saved earlier for particular user needs to be deleted and replaced with choice made by admin
+
+
+
+Buttons should be placed next to each other in one line."		New Feature	iteraplan Speedbird	23/May/17 2:11 PM	17/Jul/17 9:58 AM														13/Jul/17 5:23 PM;roia;[~olal], [~msr], can't we have different kinds of errors when we save the data? Wouldn't showing the same error message in all cases useless?	14/Jul/17 11:39 AM;mash;Review is done with couple of comments	17/Jul/17 9:58 AM;mash;Review is done																																																				

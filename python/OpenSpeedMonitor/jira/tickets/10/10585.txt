@@ -1,0 +1,1 @@
+Anker in Dashboards einbauen	Beide Dashboards (CSI und Result) sollten Anker oberhalb der Highchart-Diagramme haben, sodass die Seite auf Höhe der Diegramme aufgerufen werden kann. Per Mail angefragt durch Sascha.Haarbrandt@otto.de.		Task	OpenSpeedMonitor	15/Oct/13 4:06 PM	21/Oct/13 6:07 PM																																																																				

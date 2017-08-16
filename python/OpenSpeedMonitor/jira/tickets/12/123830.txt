@@ -1,0 +1,17 @@
+Change Interface/InfoFlow structure	"Change the meta model structure regarding Interfaces and Information Flows: See the structure image attached. (Blue color denotes current structure in elastic.) Elastic and Hibernateo/DAOs should have the same structure, as far as possible.
+
+
+
+Especially: Promote the Interface element, make it a fully fledged stand-alone element. It's now called Information Flow, other tickets still refer to it as Interface.
+
+
+
+Also: Cleanup all special handlings in iteraplan (and the NIC code) regarding info flows and interfaces. Be aware that all relations are now attributable.
+
+
+
+ 
+
+
+
+!image-2017-06-11-16-24-45-733.png!"		Improvement	iteraplan Thunderduck	08/Jun/17 5:32 PM																																																																					

@@ -1,0 +1,13 @@
+Ad-hoc-Messung per REST ermöglichen (für CI-Build-Strecken)	"(Idee bei Breuninger mit Uwe entstanden)
+
+
+
+Erste Idee:
+
+
+
+Pro Mess-Job kann man sich ein Skript (Groovy oder Bash?) in den Zwischenspeicher kopieren, welches dann im CI-Server verwendet werden kann für einen einzelnen Run des Jobs. Wobei das Skript solange nachfragt, bis der Test gelaufen ist und ein Ergebnis zurückgeliiefert hat. Dieses Ergebnis könnte dann in der Build-Strecke einen Performance-Status rot/gelb/grün definieren und ab gewisser Grenzen ggf. ein Deployment verhindern.
+
+
+
+Ausbau: Diese Grenzen sind im OSM hinterlegt und der Status kommt mit dem Ergebnis gleich mit."		Story	OpenSpeedMonitor	04/May/17 2:31 PM																																																																					

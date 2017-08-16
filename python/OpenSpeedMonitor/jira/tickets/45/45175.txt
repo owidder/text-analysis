@@ -1,0 +1,11 @@
+Improve permissions' names	"Check all Permission Names if they could be clarified, e.g.:
+The difference between ""Create queries for Diagram Reports"" and ""Create, save and delete queries for Diagram Reports"" is not clear from the name. The name of the first permission should be changed, maybe to ""Execute queries for Diagram Reports"". The improvement refers to the German version too.
+Please also note that there are two permission related changes coming:
+ITERAPLAN-437 and ITERAPLAN-438"		Improvement	iteraplan PO	05/Oct/11 3:45 PM	08/Mar/12 12:42 PM					gui	language								17/Jan/12 8:37 PM;sry;Can we make this part of 3.0.M1, Olga?	18/Jan/12 9:20 AM;ogr;That's fine with me.	"22/Feb/12 4:18 PM;sry;thx so far. I've added a few tiny tweaks to permissions label, hope that's ok with you.
+Please update the labels in http://www.iteraplan.de/wiki/display/iteraplan/Default+Roles as well. While I worked on that page yesterday, I was wondering why some rows are empty -- do you think it would make sense to insert some into the sample data set?
+
+I'll take care of the remaining changes that you listed :-)"	"23/Feb/12 9:54 AM;ogr;Tweaks are ok :) thanks
+
+I'll take care of the documentation of default roles and empty rows. 
+
+There is one TODO I forgot in my last comment: would you mind to make the text boxes shown in edit mode for permissions wider? Otherwise some permission names won't be readable/visible completely."	28/Feb/12 10:17 AM;ogr;Documentation (http://www.iteraplan.de/wiki/display/iteraplan/Default+Roles) and sample data set are up-to-date :)	29/Feb/12 4:54 PM;sry;Removing the permission keys for building block permissions would be risky as they are referenced in TypeOfFuntionalPermission, and expected to be present in Application Resources. Replacing those references seems to be a larger effort. I've removed them from custom language files, however, as they are hardly any longer used in visible areas.	29/Feb/12 4:56 PM;sry;Siegfried will widen the select boxes as part of ITERAPLAN-511. Thx for that :-)	08/Mar/12 12:42 PM;lci;Ok, clear permission names.																																															

@@ -1,0 +1,39 @@
+Line type: Use user-defined attribute ranges for numeric attributes	"*Summary:*
+
+Use user-defined ranges of numeric attributes for the line type in the Landscape Diagram and the Information Flow Diagram
+
+
+
+*Details:*
+
+* The Toolarea for line type is split into two entries:
+
+** 0. {color:red}UPDATE:{color} at first place ""Default line type""
+
+** 1. ""Line type"" with a list of all attributes (German: ""Linientyp"") 
+
+** 2. ""Line type scheme"" (German: ""Linientyp Schema""):
+
+*** If user-defined-ranges exists: ""Attribute ranges"" (German: ""Merkmals-Intervalle"") (numeric line style supports from 1 to 5 ranges) (if not exists, hide it)
+
+*** ""Min-Max"" (German: ""Min-max"")
+
+* Attribute ranges is default line type, if it exists
+
+
+
+* Legend:
+
+** The legend shows the user defined ranges
+
+
+
+Similar to IPTS-399"		Improvement	iteraplan Speedbird	12/Dec/16 4:44 PM	10/Jan/17 6:36 PM														"23/Dec/16 2:10 PM;dmkh;Some changes needed to the ticket description (clarify with Fabian on the next standup):
+
+- main toolarea entry should be called *Line type*;
+
+- the first sub-entry with list of attributes should be called *Line type by* (Line type by concrete attribute).
+
+
+
+Also it is needed to specify line type for elements with unspecified values (currently there are no border lines for such content elements)"	04/Jan/17 4:07 PM;dmkh;Added same icons as in appropriate entries of IFD toolarea for line types(clarify with Fabian on the next standup).																																																					

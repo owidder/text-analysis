@@ -1,0 +1,9 @@
+rickshaw: ausgewählte Intervalle ohne Daten anzeigen	"Rickshaw skaliert die x-Achse automatisch so, dass links und rechts der Kurven kein Zeitintervall ohne Datenpunkte ist.
+
+
+
+Ansatz: im Rickshaw.Graph.Renderer die Funktion .domain() manipulieren. Diese wird als Grundlage für eine Skalierung benutzt, welche x-Werte auf [0,1] mappt (später wird dann [0,1] auf [0, graph.Width] gemappt). Die Funktion .domain() geht über alle in den aktiven Series (angezeigte Kurven) vorhandenen Tupel und sucht xMin und xMax. Stattdessen muss xMin und xMax auf das gewünschte Zeitintervall gesetzt werden.
+
+
+
+Problem: damit wird das angezeigte Zeitintervall statisch."		Task	OpenSpeedMonitor	14/Nov/14 4:47 PM	18/Jan/17 4:04 PM																																																																				

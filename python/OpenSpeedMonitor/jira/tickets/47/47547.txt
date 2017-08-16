@@ -1,0 +1,8 @@
+Impossible to select axis from second line	"Steps to reproduce:
+1. Go to LSD page
+2. Navigate to second line in the x axis/ y axis
+3. Open Context menu
+Actual: Context menu doesn't appears
+Expected: Context menu appears"	47466	Sub-task	iteraplan PO	31/Mar/15 12:08 PM	07/Apr/15 1:31 PM													"Workspace: Windows 8.1 
+Browser: Google chrome 39.0, IE 11,Mozilla Firefox 36.0.4 "	"01/Apr/15 11:57 AM;dasm;Verified
+revision 857"																																																						

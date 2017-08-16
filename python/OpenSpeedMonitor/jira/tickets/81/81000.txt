@@ -1,0 +1,9 @@
+Partial diagram display in N3CD	"Similar to the old NCD and the current LSD and IFD, set a limit of a maximum number of elements to display in the N3CD and cut off the displayed elements at the first toplevel element exceeding the limit.
+
+
+
+Add a warning message like in LSD or IFD, to make clear the diagram does not display the whole data, in case of a cut-off happening.
+
+
+
+Also: full download button, as for example in LSD."		New Feature	iteraplan PO	19/Apr/16 7:42 AM	26/Apr/16 3:05 PM																																																																				

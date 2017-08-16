@@ -1,0 +1,18 @@
+UI does not respond to user actions after executing a specific command (e.g., generating a diagram visualization)	"What steps will reproduce the problem?
+1. In Navigation Menu go to Visualisations -> and choose, e.g., Landscape Diagram
+2. For ""content"" chose Information Systems
+3. In Column association choose for example Relation:Business Processes; in Row association choose Attribute:Status
+4. Choose any Output format, e.g., PDF
+5. Click at ""Generate diagram"" button
+6. Pop-up shows to save the file, ... , discard it.
+7. Now click at ""Save query..."" button
+8. Pop-up shows. Enter a name for the query
+9. Click at ""Save query"" button
+
+What is the expected output? What do you see instead?
+It should hide the ""Save query"" pop-up and save the query.
+But it doesn't. 
+All you can do is, close the pop-up, refresh the page (or click again at Visualisations Menu) and repeat the steps 7-9 to get it to work.
+
+Also if you try steps 5-6 twice in succession, it will not regenerate the diagram until you have refreshed the page.
+"		Bug	iteraplan PO	25/Jul/13 3:11 PM	08/Aug/13 4:11 PM														02/Aug/13 10:02 AM;smo;Already fixed by ITERAPLAN-1736; still, please test the issue.	08/Aug/13 4:11 PM;bra;works																																																					

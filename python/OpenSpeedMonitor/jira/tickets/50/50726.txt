@@ -1,0 +1,75 @@
+Unsere WPT-Server via ApiKey absichern	"Wir fangen jetzt an Test-Accounts für demo.openspeedmonitor.org herauszugeben. Da sollten wir die Agenten dahinter etwas absichern.
+
+
+
+Man müsste den entsprechenden Eintrag in der settings/settings.ini (oder so ähnlich ;) ) via Puppet setzen können und den Api Key dann auch aus dem OSM heraus für Server setzen können."		Task	OpenSpeedMonitor	13/Jul/15 10:02 AM	14/Oct/16 8:45 PM														"14/Aug/15 6:16 PM;hmt;wpt-server: http://dev.server03.wpt.iteratec.de/getTesters.php
+
+openspeedmonitor: http://dev.openspeedmonitor.wpt.iteratec.de/job/list
+
+
+
+server: mno@projekt.hh.iteratec.de:10022"	"19/Aug/15 3:14 PM;mno;In der REST API kann ein vom Anbieter ausgestellter ""Api Key"" angegeben werden
+
+Parameter ""k"", optional, ""(required for public instance)	API Key (if assigned) - applies only to runtest.php calls. Contact the site owner for a key if required (http://www.webpagetest.org/getkey.php for the public instance)""
+
+https://sites.google.com/a/webpagetest.org/docs/advanced-features/webpagetest-restful-apis
+
+
+
+Wie dieser vom Anbieter gesetzt werden kann ist nicht dokumentiert (beim Aufsetzen privater Instanzen usw.).
+
+Wann immer von einem ""key"" gesprochen wird, ist der ""location key"" gemeint.
+
+
+
+In Foren wird aber eine spezielle ""key.ini""-Konfiguration erwähnt und soll bei den anderen Konfigurationsdatein (locations.ini) liegen. (Wo diese bei euch sind weiß ich noch nicht)"	"20/Aug/15 9:18 AM;nku;Es gibt im WPT-Server einen settings-Ordner. Hier liegen configs/inis.
+
+Hier gibt es eine keys.ini. In dieser wird der vom Server zu verwendende key konfiguriert. 
+
+Wie diese Konfiguration genau funktioniert habe ich mir nie angesehen. Das webpagetest-Forum sollte Hilfe bieten (wenn es dazu noch nichts gibt kannst Du auch fragen. In der Regel reagiert Pat Meenan schnell):
+
+http://www.webpagetest.org/forums/
+
+"	"21/Aug/15 6:32 PM;mno;/var/www/vhosts/dev-wptserver0X/settings/keys.ini 
+
+
+
+[server]
+
+secret=Anything
+
+key=KeyToBeUsedByTheWebUI
+
+
+
+[KeyToBeUsedByTheWebUI]
+
+description=SomeDescription
+
+contact=mno@iteratec.de
+
+limit=500
+
+"	"21/Aug/15 6:35 PM;mno;""KeyToBeUsedByTheWebUI"" ist dann der allgemeine Server Key
+
+Weitere Keys können für locations in der locations.ini vergeben werden.
+
+
+
+Beispielaufruf:
+
+http://dev.server03.wpt.iteratec.de/runtest.php?url=www.otto.de&k=KeyToBeUsedByTheWebUI
+
+
+
+Limit:
+
+Pageloads pro Tag
+
+
+
+Secret:
+
+im sample steht dazu nur: ""AnyRandomSecretKeyOrHash"""	"01/Mar/16 4:42 PM;bka;Habe angefangen in Puppet umzusetzen.
+
+Was noch fehlt, ist dass das key.ini-file korrekt getemplated wird und dass der OSM einen API-Key mitsendet."																																																	

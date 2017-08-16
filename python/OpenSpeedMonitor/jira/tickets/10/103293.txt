@@ -1,0 +1,281 @@
+Fehler in Web Mail Optionen	"Ich wollte eine Abwesenheitsbenachrichtigung im Web Mail Client einstellen, da ich morgen im Urlaub bin und habe folgendes auf der Seite (https://owa.system-hoster.com/ecp/?rfr=owa&owaparam=modurl%3D0&p=account#) bekommen (Chrome 54.0.2840.98 (64-bit)):
+
+Kritischer Fehler
+
+Die Webseite ist nicht ordnungsgemäß geladen. Laden Sie die Seite neu, indem Sie den Browser aktualisieren.
+
+Technische Informationen: Uncaught SecurityError: Blocked a frame with origin ""https://owa.system-hoster.com"" from accessing a cross-origin frame.
+
+Der gesamte Fehlerbericht wird unten aufgelistet: 
+
+Client Information
+
+------------------
+
+User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.98 Safari/537.36
+
+CPU Class: undefined
+
+Platform: MacIntel
+
+System Language: undefined
+
+User Language: de-DE
+
+CookieEnabled: true
+
+-----------------
+
+Exception Details
+
+-----------------
+
+Date: Mon Nov 21 2016 17:23:20 GMT+0100 (CET)
+
+Message: Uncaught SecurityError: Blocked a frame with origin ""https://owa.system-hoster.com"" from accessing a cross-origin frame.
+
+Url: https://owa.system-hoster.com/ecp/15.0.1210.3/scripts/common.js
+
+Line: 1
+
+
+
+Call Stack
+
+----------
+
+Error
+
+    at Function.ErrorHandling.$EM (https://owa.system-hoster.com/ecp/15.0.1210.3/scripts/common.js:1:172926)
+
+    at ErrorHandling.showUnhandledException (https://owa.system-hoster.com/ecp/15.0.1210.3/scripts/common.js:1:172011)
+
+
+
+
+
+
+
+
+
+Dump Event
+
+----------
+
+	isTrusted = true
+
+	message = Uncaught SecurityError: Blocked a frame with origin ""https://owa.system-hoster.com"" from accessing a cross-origin frame.
+
+	filename = https://owa.system-hoster.com/ecp/15.0.1210.3/scripts/common.js
+
+	lineno = 1
+
+	colno = 373014
+
+	error = SecurityError: Blocked a frame with origin ""https://owa.system-hoster.com"" from accessing a cross-origin frame.
+
+	NONE = 0
+
+	CAPTURING_PHASE = 1
+
+	AT_TARGET = 2
+
+	BUBBLING_PHASE = 3
+
+	MOUSEDOWN = 1
+
+	MOUSEUP = 2
+
+	MOUSEOVER = 4
+
+	MOUSEOUT = 8
+
+	MOUSEMOVE = 16
+
+	MOUSEDRAG = 32
+
+	CLICK = 64
+
+	DBLCLICK = 128
+
+	KEYDOWN = 256
+
+	KEYUP = 512
+
+	KEYPRESS = 1024
+
+	DRAGDROP = 2048
+
+	FOCUS = 4096
+
+	BLUR = 8192
+
+	SELECT = 16384
+
+	CHANGE = 32768
+
+	type = error
+
+	target = [object Window]
+
+	currentTarget = [object Window]
+
+	eventPhase = 2
+
+	bubbles = false
+
+	cancelable = true
+
+	defaultPrevented = false
+
+	timeStamp = 512.345
+
+	path = [object Window]
+
+	srcElement = [object Window]
+
+	returnValue = true
+
+	cancelBubble = false
+
+	stopPropagation = function stopPropagation() { [native code] }
+
+	stopImmediatePropagation = function stopImmediatePropagation() { [native code] }
+
+	preventDefault = function preventDefault() { [native code] }
+
+	initEvent = function initEvent() { [native code] }
+
+	composed = false
+
+	composedPath = function composedPath() { [native code] }
+
+
+
+Detailed Call Stack
+
+-------------------
+
+"		Task	Infrastruktur	21/Nov/16 5:28 PM	28/Nov/16 11:09 AM	Mailserver													"21/Nov/16 5:33 PM;kti;Hallo Michael,
+
+
+
+ich habe den Fehler weitergegeben.
+
+Bisher ist uns nichts bekannt, aber ein anderer Kollege hat uns auch ein Problem mit OWA in Verbindung mit Chrome gemeldet.
+
+
+
+Ich gebe Bescheid, sobald ich was höre.
+
+
+
+Viele Grüße
+
+Kathrin"	"22/Nov/16 9:35 AM;kti;Hallo Michael,
+
+
+
+anbei die Rückmeldung. Kannst du das bitte mal testen?
+
+Danke!
+
+VG
+
+Kathrin
+
+
+
+Hallo Frau Tiefenbacher,
+
+
+
+bisher war uns hier kein Problem bekannt.
+
+Wir haben vorsorglich gestern Abend unsere Client-Access Server gebootet um hier ein temporäres Problem ausschließen zu können.
+
+Funktioniert der Zugriff über einen anderen Webbrowser normal oder wird dort auch eine Fehlermeldung angezeigt?
+
+Bitte fügen Sie mal die URL in den Bereich Trusted Sites hinzu und prüfen Sie ob die Seite danach normal aufgerufen werden kann.
+
+(In Chrome: Einstellungen -> Erweiterte Einstellungen -> Netzwerk -> Proxy-Einstellungen ändern -> Sicherheit -> Vertrauenswürdige Sites -> hinzufügen)
+
+
+
+Mit freundlichen Grüßen
+
+"	"23/Nov/16 11:26 AM;mwe;Scheinbar liegt es am Chrome Browser, denn im Firefox 49.0.2 komme ich ohne Probleme auf die Seite.
+
+
+
+Bei Andrea tritt der Fehler im Chrome unter Windows 10 ebenfalls auf. Als sie die URL https://owa.system-hoster.com/ zu den vertrauenswürdigen Seiten hinzugefügt hatte, bekam sie den Fehler nicht mehr.
+
+In macOS gibt es die Vertrauenswürdigen Seiten nicht und ich habe auch nichts vergleichbares gefunden. Ich habe auch nochmals den Adblocker ausgeschaltet, leider ohne Erfolg.
+
+
+
+Für mich sieht das so aus, als ob hier von Outlook.com etwas gemacht wird, das im Chrome geblockt wird. Wie bekomme ich die Seite https://owa.system-hoster.com/ zu so etwas wie vertrauenswürdige Seiten?"	"28/Nov/16 10:29 AM;kti;Hallo Michael,
+
+nachfolgende Rückmeldung habe ich erhalten:
+
+
+
+Hallo Frau Tiefenbacher,
+
+
+
+bitte gehen Sie wie folgt vor:
+
+
+
+rufen Sie mit Chrome auf dem Mac die URL https://mail.system-hoster.com auf und klicken Sie oben in der URL-Zeile auf das Schloss-Symbol.
+
+Wählen Sie „Details“ und dann rechts Zertifikat anzeigen.
+
+Ziehen Sie das Zertifikat auf den Arbeitsplatz und doppelklicken Sie dann auf die Datei „outlook.sytem-hoster.com.cer“ 
+
+In der Schlüsselbundverwaltung suchen Sie in der Liste der aufgeführten Zertifikate nach dem Dateinamen.
+
+Wählen Sie das Zertifikat aus -> Aktuell wird das Zertifikat wahrscheinlich noch nicht als vertrauenswürdig eingestuft und mit einem roten x gekennzeichnet.
+
+Doppelklick auf das Zertifikat:
+
+PIC1
+
+Wählen Sie für die Verwendung des Zertifikates „immer vertrauen“ und schließen Sie das Fenster. 
+
+Nun sollte das Zertifikat mit einem blauen + als vertrauenswürdig markiert sein:
+
+PIC2
+
+Schließen Sie die Schlüsselbundverwaltung und starten Sie Chrome neu.
+
+Wenn Sie nun OWA aufrufen sollten Sie sich normal anmelden können.
+
+
+
+
+
+Kannst du bitte die Einstellungen vornehmen und Bescheid geben, ob es jetzt passt?
+
+
+
+Danke!
+
+VG
+
+Kathrin"	"28/Nov/16 11:07 AM;mwe;Hallo Kathrin,
+
+
+
+nachdem ich den Schlüssel als vertrauenswürdig eingestuft habe, kann ich die Optionen ohne Fehler aufrufen.
+
+Auch wenn es umständlich war, für mich ist das Problem gelöst.
+
+Danke!
+
+
+
+Gruß,
+
+Michael"																																																		

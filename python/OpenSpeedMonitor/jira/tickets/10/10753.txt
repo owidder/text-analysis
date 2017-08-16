@@ -1,0 +1,19 @@
+Graphite: Basis-Services zum Senden von Ergebnissen an einen Graphite-Server	"Untergliedert in 2 Schichten:
+
+- TOP: MetrikMonitoringService zur Übermittlung von ism-Results (Rohdaten oder aggregierte Werte) an externe Monitoring-Systeme, initiert das Senden aller relevanten Metriken eines übergebenen Ergebnisses unter Nutzung des GraphiteService.
+
+- BELOW: GraphiteService zum Versand von Werten an Graphite (TCP oder UDP), 1 Datensatz pro Aufruf."		Task	OpenSpeedMonitor	06/Nov/13 12:58 PM	19/Nov/13 6:06 PM														"06/Nov/13 1:05 PM;mzeimer;Der untere Layer ist bis auf die Art der Erstellung (provider um auf config zuzugreifen) für TCP fertig.
+Siehe: 
+interface: de.iteratec.ism.graphite.GraphiteSocket
+TCP-Impl: de.iteratec.ism.graphite.GraphiteTCPSocket
+
+Offener provider draft: de.iteratec.ism.graphite.provider.GraphiteSocketProvider "	"06/Nov/13 1:14 PM;mzeimer;Unklar ist noch das genaue, erlaubte Format für Graphite-paths, also welche Zeichen zulässig sind.
+Siehe hierzu FIXME in:
+de.iteratec.ism.graphite.GraphitePathName.valueOf(String)"	"12/Nov/13 5:44 PM;rhe;Added GraphiteServer domain, kann dann auf JobGruppen gelinkt werden, Zuordnung GraphiteServer, GraphitePath -> Rohdaten ist zu klären.
+
+Socket Provider implementiert, brauchen wir Pooling?"	"19/Nov/13 4:43 PM;rhe;Für die GraphitePathes werden momentan folgende regex benutzt:
+
+{code}
+pathName.replaceAll(""\\s"",""_"");
+pathName.replaceAll(""[^\\w\\.]"", ""-"");
+{code}"																																																			

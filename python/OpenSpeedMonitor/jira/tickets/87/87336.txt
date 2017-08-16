@@ -1,0 +1,1 @@
+Update pipeline to handle additional date intervals	Pipeline from the MpdDataService to the MpdDiagramBuilder	85219	Sub-task	iteraplan PO	15/Jun/16 2:41 PM	30/Jun/16 4:27 PM														30/Jun/16 2:26 PM;dmkh;Reviewed, no comments for pipeline: https://iteraweb.iteratec.de/fisheye/cru/IP-42																																																						

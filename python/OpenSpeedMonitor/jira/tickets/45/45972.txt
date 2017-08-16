@@ -1,0 +1,6 @@
+Null pointer Exception in InformationFlow-Diagramm	"To Reproduce:
+-pick an enumeration-attribute (of an information system) and delete all of it's possible attribute values
+-create a information flow diagram and pick as colour settings the enumeration attribute
+-save the graphic (as svg)
+-now change the value of the colour setting -->NPE
+"		Bug	iteraplan PO	06/Aug/13 5:50 PM	30/Dec/15 3:17 PM																																																																				

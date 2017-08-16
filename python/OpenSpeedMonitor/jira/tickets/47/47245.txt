@@ -1,0 +1,13 @@
+Some times error appears with "Show nested diagram" button	"IP9-230
+
+Summary:
+Some times error appears with ""Show nested diagram"" button  on the ""Planned Information System"" building block list 
+
+Steps to reproduce:
+1. Go to ""Planned Information System"" building block list 
+2. Click on ""Show nested diagram"" button in the menubar
+
+Actual result: Error appears 
+Expected result: Page goes to NCD page
+
+"		Bug	iteraplan PO	18/Dec/14 1:31 PM	05/Jan/15 3:12 PM														05/Jan/15 3:12 PM;dasm;Verified (revision 489)																																																						

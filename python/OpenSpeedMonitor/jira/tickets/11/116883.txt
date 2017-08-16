@@ -1,0 +1,21 @@
+Interaktiver Client: "Spalte hinzufügen" in Abfragekonsole ohne Funktion	"In der Ergebnisliste der Abfragekonsole im interaktiven Client ist es nicht möglich eine Spalte hinzuzufügen.
+
+Im entsprechenden Feld sind werden alle Attribute des abgefragten Bebauungselements angezeigt.
+
+Aber weder mit <Enter>, <Tab> oder Mausaktionen wird ein Attribut ausgewählt und die entsprechende Spalte in der Trefferliste angezeigt"		Fault	iteraplan Support	28/Mar/17 4:24 PM	30/Mar/17 6:23 PM														"30/Mar/17 6:23 PM;cst;Sehr geehrter Herr Schweer,
+
+
+
+vielen Dank für Ihre Anfrage.
+
+
+
+Dieses Fehler ist uns bekannt, wird mit Version 6.0 gelöst.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support "																																																						

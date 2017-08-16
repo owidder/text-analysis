@@ -1,0 +1,9 @@
+Wrong button name on "Save diagram dialog"	"Steps to reproduce:
+
+1. Go to NCD page
+2. Click on ""Save/Share"" button
+Actual: Save diagram dialog appears with ""Close"" button
+Expected: Save diagram dialog appears with ""Cancel"" button
+
+(in discussion between Marcel&Daria on 04/02/2015)"		Bug	iteraplan PO	04/Feb/15 8:36 PM	13/Feb/15 3:57 PM														"13/Feb/15 3:57 PM;dasm;Verified
+revision 650"																																																						

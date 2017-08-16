@@ -1,0 +1,27 @@
+Exceptions after reordering columns in ag-grid	"*Summary:*
+
+ When user tries to move any column on Actions column - exceptions appears in the console (see attached screenshot)
+
+
+
+*Steps to reproduce:*
+
+ 1) Open any list (e.g. BB list)
+
+ 2) Drag any column (e.g. Description) to the right, so it is placed above Actions column.
+
+
+
+*Actual result:*
+
+ Dragged column is placed back, before Actions column. Exceptions appear (see attached screenshot)
+
+
+
+*Expected result:*
+
+ It is not possible to replace Actions column. No exceptions.
+
+
+
+*Note*: It is an ag-grid ticket already existing (feature *AG-121* in [https://www.ag-grid.com/ag-grid-pipeline/]), so this issue is going to be fixed. Please check it as soon as it is developed and is available in newer version of ag-grid. Then remove all code added as workaround in {{ipList-component.js}} ({{onColumnMoved}} and {{onColumnPinned}} event handlers in {{gridOptions}})."		Bug	iteraplan PO	26/Jul/17 4:05 PM																																																																					

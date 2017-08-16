@@ -1,0 +1,11 @@
+Add names of connected elements to tables of association history	"Association types, for example Isr2BoAssociation, have columns for the IDs of the building blocks they connect in their history table.
+
+Additionally add columns for the names of the connected elements and adjust the history entities and HistoryEntryBuilder accordingly.
+
+
+
+Also, when creating the Json for the history, use the names of those connected elements instead of the ids.
+
+
+
+This also applies to Business Mappings (whose history table gets four more columns this way)."		Bug	iteraplan Thunderduck	18/Oct/16 3:02 PM	19/Oct/16 4:08 PM														19/Oct/16 2:08 PM;mse;Commit 26339 does not belong here, sorry!																																																						

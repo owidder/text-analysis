@@ -1,0 +1,1 @@
+UTF-8 problem in iTurm	In iTurm there are still some wrongly encoded characters. (see attachment)		Bug	iteraplan PO	16/Jul/15 10:06 AM	20/Jul/15 10:19 AM					iTurm									17/Jul/15 7:40 AM;isc;Unfortunately, when .properties files are read via a ResourceBundle, it is expecting ISO-8859-1 always. 																																																						

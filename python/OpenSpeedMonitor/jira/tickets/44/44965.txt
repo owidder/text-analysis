@@ -1,0 +1,6 @@
+Proper error handling in reporting when permissions restricted permissions apply 	"Several reproting mechanism fail if a the logged in user does not have access permissions for building blockk types like products, business processes or business units. 
+
+Specifically, missing permission for products means that saved queries involving business mappings cannot be executed any longer. This impacts masterplan graphics, information flow graphics, spredsheet report and others.
+
+Evaluations on business mappings should be possible even if not all components are accessible. Inaccessible components should be greyed out. If a saved query includes inaccessible elements, an instructive error message (business exception!) should be displayed.
+Graphics generation should not fail with an internal/technical error just because permissions are missing. Instead, a meaningful error message should appear."		Improvement	iteraplan PO	24/May/11 12:14 PM	13/Oct/11 6:28 PM					permissions	reports								11/Oct/11 10:34 AM;vsh;When you request a diagram through the fast export/visualisation tab and you don't have permission to perform the operation, the whole iteraplan error page is shown in the visualisation frame. A better solution will be to display only the error message.	13/Oct/11 6:28 PM;sry;Works as desired, good work																																																					

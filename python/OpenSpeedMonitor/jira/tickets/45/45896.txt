@@ -1,0 +1,3 @@
+Cleanup of WEB-INF/classes directory	"The WEB-INF/classes directory became a little messy. It would be nice, if only property-files would be there. All other artifacts should be inside self-explaining subfolders, like (for example) ""templates/visio"", ""templates/svg"", ""schemas"", ""ecore"" ...
+
+The properties inside this directory are often modified by customers, so it would be much easier to work in a clean directory."		Task	iteraplan PO	16/Jul/13 3:38 PM	24/Jul/14 8:13 AM																																																																				

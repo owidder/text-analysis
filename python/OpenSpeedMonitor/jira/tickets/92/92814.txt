@@ -1,0 +1,7 @@
+Release iteraplan	"* Prepare helper projects
+
+* Create branch and tag
+
+* Builde Release"	92213	Sub-task	iteraplan Quickfox	09/Aug/16 9:58 AM	19/Aug/16 9:56 AM														11/Aug/16 7:24 PM;tam;Revisions 25774-25813 can be ignored, since they were done by jenkins and had to be reverted because of failed build.	"11/Aug/16 7:27 PM;tam;Please also take look at revisions 25828, 25827, 25826, 25825, 25823, 25820
+
+Unfortunately they commited to wrong ticket IPTQ-92."																																																					

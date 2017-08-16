@@ -1,0 +1,5 @@
+Migration for Spread Sheet Reports	"convert saved spread sheet report queries to list views in IC
+
+
+
+Filter configuration + Columns configuration"		New Feature	iteraplan Thunderduck	08/Dec/16 4:33 PM	01/Feb/17 3:57 PM																																																																				

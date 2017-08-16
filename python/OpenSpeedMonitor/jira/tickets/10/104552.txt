@@ -1,0 +1,37 @@
+Filter Extension: Input boxes and no limits for range slider	"*Summary:*
+
+Filter Extension: Create input boxes and no limits for range slider
+
+
+
+*Details:*
+
+* Create small text input boxes left and right of the range slider (see screenshot)
+
+* Only numbers are allowed in the text input boxes
+
+* The text input boxes are synchronised with the range slider, i.e. if the text input boxes has a new value, the rangeslider is updated immediately and vice versa if the rangeslider is update, the number within the text input box is updated immediately
+
+
+
+""NaN"", ""XX"" or infinity-sign for rangeslider without a limit 
+
+
+
+* Remove lower and upper bound of range slider
+
+* Legend:
+
+** No lower bound removes ""from""
+
+** No upper bound removes ""to"" in the legend
+
+
+
+Scope: Building Block- & Attribute-Filter
+
+Scope: between and ""not between""-operator
+
+
+
+Note: If you experience some unsolvable problems with the current rangeslider-library, please feel free to replace the existing library with another. First contact [~msr] please."		Improvement	iteraplan Speedbird	02/Dec/16 3:02 PM	17/Jan/17 9:22 AM														17/Jan/17 9:22 AM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-299																																																						

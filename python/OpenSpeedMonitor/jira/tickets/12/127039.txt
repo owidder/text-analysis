@@ -1,0 +1,5 @@
+Problem with 996 Interfaces with transported BOs	"When there are 996 Interfaces with transported BOs the new client cannot be loaded and there are exceptions.
+
+
+
+Expected: There should not be exceptions."		Bug	iteraplan Thunderduck	13/Jul/17 4:06 PM	17/Jul/17 9:02 AM																																																																				

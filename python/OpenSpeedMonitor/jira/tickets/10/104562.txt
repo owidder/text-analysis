@@ -1,0 +1,49 @@
+Login: Check special cases of Login	"*Summary:*
+
+After implementing the standard login-functionality
+
+ 
+
+* Check, if LDAP-installation still works (to be done by [~msr] or [~cst] )
+
+* Check, if SSO-installation still works (to be done by [~msr] or [~cst] )
+
+* Check, if all custom installer still work (to be done by [~msr] or [~cst] )
+
+* And adapt login-functionality (if necessary)
+
+
+
+* Create two templates:
+
+** one standard login-template
+
+** and one custom login-template with demo-user and demo-password on the login-page
+
+* Create an additional grunt-job ""createDemoLoginPage"" with copies and replace the standard template with the custom template
+
+** See Grunt-Task ""createProtractorLocalConf"" with 
+
+{code:java}
+
+grunt.file.copy(
+
+            './tests/e2etest/local.conf.template.js',
+
+            './tests/e2etest/local.conf.js');
+
+{code}
+
+"		New Feature	iteraplan Speedbird	02/Dec/16 5:14 PM	06/Feb/17 12:12 PM														19/Jan/17 9:26 AM;msr;Tests should be done by [~cst] . Login-Template can be adapted by [~roia]	"23/Jan/17 1:26 PM;roia;{quote}Create an additional grunt-job ""createDemoLoginPage"" with copies and replace the standard template with the custom template{quote}
+
+Implemented in revision 5747. There're 2 tasks: {{createDemoLoginPage}} - sets the login template with demo information, {{removeDemoLoginPage}} - sets login page without demo login."	"26/Jan/17 1:40 PM;cst;Tested the current installation (TRUNK)  with LDAP and Oracle 12c 
+
+Loginscreen is not be loaded, following errors appear in the browser console:
+
+
+
+!LDAP.PNG|thumbnail!
+
+
+
+I added the localhost.log from the tomcat, other logs were not written"																																																				

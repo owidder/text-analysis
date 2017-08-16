@@ -1,0 +1,111 @@
+Packages umbenennen	"Die Package-Struktur und Benennung stammt noch aus den Plugins. Die Packages sollten einheitlich benannt werden. Einige Klassen können verlegt werden, da diese z.T. nur aufgrund der Auflösung von Abhängigkeiten zwischen den Plugins in bestimmten Packages gelandet sind. Folgende Packages sollte es fachlich geben:
+
+
+
+
+
+* *de.iteratec.osm*
+
+Basis-Package der ganzen Applikation.
+
+
+
+* *de.iteratec.osm.csi*
+
+Das alte iteraSpeedOttoCsi-Plugin (isocsi).
+
+Alles customer satisfaction index(=CSI)-spezifische.
+
+* de.iteratec.osm.csi.weight
+
+
+
+* *de.iteratec.osm.jmx*
+
+* de.iteratec.osm.jmx.beans
+
+
+
+
+
+* *de.iteratec.osm.measurement*
+
+* de.iteratec.osm.measurement.environment
+
+Das alte iteraSpeedServerConfig-Plugin. Hierher gehören z.B. Domains wie die Location, Browser und WebPageTestServer
+
+* de.iteratec.osm.measurement.environment.wptserverproxy
+
+Das alte iteraSpeedProxy-Plugin. Hierher kommen der WPT-Server-Proxy (Publisher) und seine Observer.
+
+* de.iteratec.osm.measurement.schedule
+
+Das alte Job-Plugin
+
+* de.iteratec.osm.measurement.script
+
+Das alte Script-Plugin
+
+
+
+* *de.iteratec.osm.report*
+
+Bisher kaum genutzt. Hierher könnte man Dashboard-bezogenes aus de.iteratec.osm.results und de.iteratec.osm.csi verlagern.
+
+* de.iteratec.osm.report.chart
+
+Alles Darstellungs-spezifische, die Diagramm-Darstellung betreffende.
+
+Ursprünglich sollte dieses Package außerhalb von de.iteratec.osm liegen, weil hieraus vielleicht nochmal ein SpeedMonitor-unabhängiges Charting-Pugin werden sollte.
+
+Mit der open source-Stellung ist dies hinfällig.
+
+* de.iteratec.osm.report.external
+
+Reporting an externe Tools.
+
+* de.iteratec.osm.report.external.graphite
+
+Graphite-Spezifisches (Socket-Provider, ...).
+
+* de.iteratec.osm.report.ui
+
+Was bisher unter de.iteratec.isr.ui liegt
+
+
+
+* *de.iteratec.osm.result*
+
+Das alte iteraSpeedResults-Plugin.
+
+* de.iteratec.osm.result.detail
+
+Wasserfall-/har-Daten und Ergebnis-bezogenes.
+
+
+
+* *de.iteratec.osm.api*
+
+Spezifisches für die REST-API der Anwendung.
+
+* de.iteratec.osm.api.json
+
+Was bisher in de.iteratec.osm.json liegt
+
+
+
+* *de.iteratec.osm.util*
+
+Hier sollten alle querschnittlich eingesetzten Helper-Services landen (wenn sie denn in dieser Form ihre Berechtigung haben). Derzeit haben wir mehrere util-packages (aus den alten Plugins).
+
+
+
+* *de.iteratec.osm.persistence*
+
+Hier kommt alles DataSource-bezogene hinein.
+
+
+
+Die Umbenennung funktioniert leider in Eclipse nicht fehlerfrei als Refactoring, so dass man vermutlich einige Umbenennungen manuell machen muss :-(
+
+Wir sollten diesen Schritt aber angehen, wenn wir den Jobsteuerungs-Branch in den develop/master übernehmen."		Improvement	OpenSpeedMonitor	19/Feb/14 9:38 AM	09/Nov/14 4:34 PM																																																																				

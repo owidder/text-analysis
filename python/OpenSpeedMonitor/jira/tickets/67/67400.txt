@@ -1,0 +1,5 @@
+[Rickshaw] Hover-Info aktualisieren auch wenn Mauszeiger innerhalb des Textes ist	"Wenn mehrere Daten-Punkte nah beieinander sind ist es aktuell schwierig (vor allem am Rande des ganzen Diagramms) den Hover-Text mancher Punkte anzuzeigen.
+
+
+
+Die Hover-Info-Anzeige sollte die angezeigte Information auch dann auf die Daten des Punktes unterhalb des Mauszeigers anpassen, wenn die Maus sich innerhalb des Hover-Info-Bereichs bewegt."		Bug	OpenSpeedMonitor	18/Dec/15 11:20 AM	07/Mar/16 12:21 PM														07/Mar/16 12:21 PM;bwo;Ich habe zusätzlich die opacity der Box leicht verändert, sodass die Kurven weiter ersichtlich sind.																																																						

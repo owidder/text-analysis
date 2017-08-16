@@ -1,0 +1,13 @@
+Bei Neuanlage eines mattermost Teams sollen die Admins automatisch hinzugefügt werden	"Bei Neuanlage eines Teams im iterachat sollen
+
+
+
+Kathrin, Elke, Sami und Jakob 
+
+
+
+dem Team hinzugefügt werden. 
+
+
+
+ "		Task	Infrastruktur	27/Jun/17 2:46 PM	04/Jul/17 9:14 AM	iterachat													04/Jul/17 9:14 AM;mpa;Die Admins können sich jetzt mit dem Mattermostbot selbst hinzufügen. 																																																						

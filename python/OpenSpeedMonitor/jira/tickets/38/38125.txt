@@ -1,0 +1,5 @@
+Erweiterte Aggregations-Ebenen für das CSI-Dashboard	"Punkt 4. aus dem Scribble (Siehe PDF im Anhang).
+
+
+
+Genauere Spezifikation steht aus."		Epic	OpenSpeedMonitor	17/Apr/15 10:26 AM	18/Jan/17 4:54 PM																																																																				

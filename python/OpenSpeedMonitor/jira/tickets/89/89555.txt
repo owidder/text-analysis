@@ -1,0 +1,7 @@
+Konfiguration osmDetailService im OSM	"Es soll zwei Konfigurations-Einstellungen geben:
+
+
+
+* Eine zum de/aktivieren der Detail-Daten-Persistenz (default=false)
+
+* Die URL des Detail-Daten-Services"		Task	OpenSpeedMonitor	06/Jul/16 3:58 PM	08/Jul/16 4:11 PM																																																																				

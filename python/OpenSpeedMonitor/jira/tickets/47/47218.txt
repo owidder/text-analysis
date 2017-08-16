@@ -1,0 +1,6 @@
+Adjust demo data	"Adjust demo data: Add an attribute (""apportionment"") and add some values (between 0 and 100). 
+
+Ask FKA for details.
+
+User iteraplan's GUI for modifying the data based on our bankdata.
+After modifying use the URL {{[server]/iteraplan/xmideserialization/init.do}} (needs to be entered manually) to export an XMI file to replace the current _iteraplanData.xmi_ in the folders {{src/java/tools/de/iteratec/iteraplan/xmi}} and {{src/java/test/xmi}}."	47165	Sub-task	iteraplan PO	01/Dec/14 4:09 PM	10/Dec/14 9:16 AM														08/Dec/14 6:23 PM;fam;Added new XMI's to repository																																																						

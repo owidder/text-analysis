@@ -1,0 +1,8 @@
+Include details of saved queries in the printout, incl. Link and QRCode to get newest diagram	"Include details of saved queries in the printouts (Visio/SVG/PDF/...) including:
+ * Name
+ * Description
+ * click-able URL"		Improvement	iteraplan PO	16/May/11 3:00 PM	28/Sep/11 2:21 PM														20/Jul/11 4:55 PM;kvo;Please also highlight the selected saved query in the list after picking it.	"23/Aug/11 10:45 AM;kgo;Everything works fine, with the exception of the following:
+ * Cluster Diagram: Sometimes the ""include query info"" is not visible in the configuration page of the diagram, e.g. with the second predefined saved query of the bank data set.
+ * The saved query info overlaps with the diagram content in the Visio Landscape and Information Flow diagrams.
+
+Documentation is also fine."	28/Sep/11 11:08 AM;sfe;Highlighting of the selected saved query to be done.	28/Sep/11 2:21 PM;kvo;highlight passt																																																			

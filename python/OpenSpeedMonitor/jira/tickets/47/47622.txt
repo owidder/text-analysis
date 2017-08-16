@@ -1,0 +1,8 @@
+Applied filtering option isn't marked in the Context menu for axis	"Steps to reproduce:
+1. Go to LSD page
+2. Use, for example, Business function as content type
+3. Use any self-related filtering for Business Object as Y axis by enumeration properties
+4. Open Context menu for Y axis with applied filtering option
+Actual: Applied filtering option isn't marked in the Context menu for axis
+Expected: All applied options should be  always marked in the context menu"	47593	Sub-task	iteraplan PO	16/Apr/15 6:02 PM	22/Apr/15 3:54 PM													"Workspace: Windows 8.1
+Revision: 939"	20/Apr/15 9:30 AM;dasm;Verified (revision 951)																																																						

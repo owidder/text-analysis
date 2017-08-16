@@ -1,0 +1,1 @@
+small design errors in interface Dialog	folgenden Darstellungsfehler gibt es bei der Zuordnung Geschäftsobjekte in Schnittstellendialog (siehe Anhang)		Bug	iteraplan PO	31/Oct/14 11:44 AM	03/Nov/14 8:49 AM																																																																				

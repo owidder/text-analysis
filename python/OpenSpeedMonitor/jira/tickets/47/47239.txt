@@ -1,0 +1,12 @@
+Parts of some names of inner boxes are missing (Interface as inner element)	"IPNINE-204
+
+Steps to reproduce:
+1. Open NCD page
+2. Select ""Interface"" as inner element
+Actual result: Parts of some names of inner boxes are missing 
+Expected: Text should be shown with full name
+
+Comments: Please, check all names of inner boxes for Interface as inner element ( The screenshot is used as example)
+
+Workspace: Windows 8.1
+Browser: Google Chrome 39.0"		Bug	iteraplan PO	10/Dec/14 1:36 PM	22/Dec/14 9:44 AM														22/Dec/14 9:44 AM;alvo;Not a bug. In current implementation of NCD the inner box size is fixed, it the name of system is too long, it'll be cropped. In future (See IPNINE-222) the size of inner block is going to floated to house full system's name. 																																																						

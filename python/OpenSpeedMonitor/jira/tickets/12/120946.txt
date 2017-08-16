@@ -1,0 +1,21 @@
+Create a prototype for lazy loading in ag-grid	"h1. Timebox: 1 PD
+
+
+
+*Summary:*
+
+Create a prototype for lazy loading in ag-grid
+
+
+
+*Details:*
+
+To prepare the XWiki-syntax translation in the Building Block Lists build the following prototype:
+
+* Create a handler which checks if a description cell is visible on the screen or not
+
+* As soon as it is visible for more than 1 second and not yet translated send the translation requests of all visible cells to the server
+
+* Optional: Try to send them sequentially, i.e. first visible cell sends first request and so on
+
+* Result: After the screen is loaded one description cell after another gets translated"		Task	iteraplan Speedbird	09/May/17 12:05 PM	22/May/17 10:16 AM														16/May/17 10:53 AM;dmkh;Also take a look here: https://www.ag-grid.com/javascript-grid-infinite-scrolling	22/May/17 9:41 AM;dmkh;After implementation in lists - JsCreole have to be removed from the client completely (check if is used somewhere else)	22/May/17 10:16 AM;dmkh;Attached WebStorm patch as result of prototype ticket																																																				

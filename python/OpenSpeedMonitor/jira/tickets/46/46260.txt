@@ -1,0 +1,7 @@
+Pressing Enter in overview page filter forms leads to unexpected results	"On a building block overview page (e.g. for IS), the default tab above the result table is _Full-text search_. If you enter a search-term into the query box, pressing the Enter key causes the form to be submitted and the expected results are shown.
+
+However, that does not work on the second tab _Query_. If you select e.g. property _Name_ and enter some search text into the free-text query field, pressing the Enter key _does not invoke the Search button_ next to it. Instead, still the full-text search is triggered, taking into account whatever value has been entered (or not) on that tab.
+If no search text was entered on the full-text search tab, it will always return ""0 results"", regardless of the Query criterion entered on the second tab.
+
+Expected behaviour: 
+As a user, I can enter query words for full-text search or for query criteria and press Enter. Then the browser should trigger the search functionality for that tab that I have actually viewed in that moment."		Bug	iteraplan PO	28/Oct/13 2:46 PM	30/Dec/15 4:54 PM					keyboard	shortcuts	usability																																																													

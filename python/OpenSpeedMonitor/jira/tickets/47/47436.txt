@@ -1,0 +1,12 @@
+Text input bar should disappear with "remove" action	"IP9-234
+
+Steps to reproduce:
+1. Use any filtering by text attribute
+2. Navigate to settings line in legend and click ""X"" button
+
+Actual: Text input bar still opened
+Expected: Text input bar should disappears from Menu bar
+
+Please also remove the search text. "		Bug	iteraplan PO	25/Feb/15 12:46 PM	07/Apr/15 1:20 PM														03/Apr/15 10:47 AM;isc;1 file committed: Committed revision 888.	"07/Apr/15 1:20 PM;fam;Checked Sulution. Fix fits the problem.
+ticket closed.
+"																																																					

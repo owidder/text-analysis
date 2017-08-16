@@ -1,0 +1,49 @@
+Administration - two error messages are shown	"h4.Problem Description:
+
+
+
+Two error messages are shown when creating new Date Interval Attribute with the same start/end dates.
+
+
+
+h4.Reproduction Steps:
+
+ * Open application and navigate to ""Administration > Attributes"" page
+
+ * Click on the ""New"" button and select ""Date Interval""
+
+ * Try to create Attribute with the same Start and End dates
+
+
+
+h4.Observed Results:
+
+
+
+Two error messages are shown:
+
+
+
+""Unknown error. See logs for further information.""
+
+""The modification...
+
+
+
+
+
+h4.Expected Results:
+
+
+
+ Only one proper error message should be shown.
+
+
+
+h4.Note:
+
+- used #354 and dev in FF
+
+- see attached screenshot"		Bug	iteraplan Speedbird	19/Jun/17 11:46 AM	04/Jul/17 5:19 PM														"19/Jun/17 4:27 PM;naba;Additional duplication:
+
+!image-2017-06-19-17-27-07-821.png!"	30/Jun/17 1:29 PM;anhv;Review is done: one comment https://iteraweb.iteratec.de/fisheye/cru/IP-742#general-comments																																																					

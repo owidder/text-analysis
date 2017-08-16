@@ -1,0 +1,15 @@
+Job/Task als eigenes Konfigurationsobjekt einführen	"Aktuell werden Spider, Scanner und Reporting Ergebnisse nur per Namenkonvention und Zeitstempel als Name für Verzeichnisse abgelegt. Zukünftig sollte es für einen Auftrag/Job/Task ein einheitliches Objekt geben, dass von allen Komponenten transparent genutzt werden kann.
+
+
+
+Der Auftrag/Job/Task sollte Referenzen auf die einzelnen Ergebnisse enthalten und beschreiben was teil des Auftrags war:
+
+* Zeitstempel
+
+* Name
+
+* Ziel
+
+* Ziel-Konfiguration
+
+..."		Story	secureCodeBox	24/Jul/15 7:20 PM	29/Feb/16 9:24 PM																																																																				

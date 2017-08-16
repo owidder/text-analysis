@@ -1,0 +1,5 @@
+Dynamic nesting cluster diagram	"The user must be able to create and modify a nesting cluster diagram in a dynamic way.
+
+Based on the existing nesting cluster diagram, the new diagram demonstrates several configuration options. The user selects and modifies an option directly in the diagram, and the diagram changes immediately according to the new option.
+
+See tickets of this epic for options to implement and options to mock or leave out."		Epic	iteraplan PO	09/Jul/14 2:38 PM	30/Dec/15 12:07 PM																																																																				

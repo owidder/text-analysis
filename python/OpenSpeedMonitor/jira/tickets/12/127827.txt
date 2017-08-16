@@ -1,0 +1,134 @@
+Warum können wir kein übergeordnetes IT-Service in unserem System anlegen?	"Meine Mail vom 20.07.17 10:10 Uhr:
+
+
+
+
+
+Guten Tag Herr Stangl,
+
+
+
+ 
+
+
+
+ich möchte gerne wissen, warum ich in unserem System kein
+
+über-/untergeordnetes IT-Service anlegen kann.  Im neuen interaktiven
+
+Client sind bei uns die beiden Felder Selbs-Beziehungen und Beziehungen
+
+ausgegraut.
+
+
+
+ 
+
+
+
+Eigentlich sollte es einfach sein, einen IT-Service als
+
+über-oder untergeordnet umzuhängen oder? Im alten Client habe ich bei uns
+
+entdeckt, dass bei uns ein übergeordnetes (virtuelles) IT-Service namens –
+
+vorhanden ist, welsches als Wurzel für IT-Service-Hierarchie dient (s.u.
+
+Screenshot). Wir haben über 70 IT-Services in unserem System. Wenn ich jetzt
+
+den o.g. Hinweis richtig verstanden habe, habe ich momentan gar keine Chance
+
+die zusammengehörende IT-Service zu gruppieren! Dies ist äußerst unglücklich für
+
+uns.
+
+
+
+ 
+
+
+
+Übrigens im neuen interaktiven Client sehe ich den o.g.
+
+IT-Service(-) gar nicht!
+
+
+
+ 
+
+
+
+Wie können wir dieses Problem lösen? 
+
+
+
+ 
+
+
+
+Vielen Dank für Ihre Untersützung.
+
+
+
+"		Fault	iteraplan Support	24/Jul/17 1:01 PM															"24/Jul/17 1:01 PM;olga.welsch@kvno.de;
+
+!IT-Service-ausgegraut.PNG|thumbnail!
+
+!IT-Service-uebergeordnet.PNG|thumbnail!"	"24/Jul/17 6:17 PM;fka;Sehr geehrte Frau Welsch,
+
+
+
+vielen Dank für die Eröffnung des Tickets im Ticketsystem. Dies ist immer der schnellste Weg, um das Support-Team zu erreichen.
+
+
+
+Zu ihrem Anliegen:
+
+Das virtuelle root-Element '-' war früher im Classic Client aus technischen Gründen nötig. Im interaktiven Client ist dies nicht mehr der Fall, daher wird das Element nicht angezeigt.
+
+
+
+Die Hierarchie bei Elementen des Typs IT-Service ist natürlich nach wie vor vorhanden. In der Einzelelementansicht können Sie im Tab 'Alles' (oder in den Tabs 'Selbst-Beziehungen' bzw. 'Beziehungen') zu jedem Element ein übergeordnetes oder untergeordnetes Element festlegen. Einfach den Namen des anderen Elementes tippen und dann wählen, welche Art der Beziehung es sein soll.
+
+
+
+Komfortabler geht es in der Listenansicht. Nach dem Aktivieren der Baumdarstellung werden die Elemente in der Hierarchie angezeigt. Mittels Drag&Drop kann die Hierarchie direkt verändert werden.
+
+
+
+Hilft Ihnen das weiter?
+
+
+
+Mit besten Grüßen
+
+Fabian Kainzinger"	"25/Jul/17 10:36 AM;olga.welsch@kvno.de;Guten Morgen Herr Kainzinger,
+
+die von Ihnen beschriebene Vorgehensweise habe ich als erste am
+letzten Donnerstag ausprobiert und war deswegen etwas frustriert, da die u.g.
+Felder ausgegraut waren. Ich hatte gar keine Möglichkeit gehabt, die
+Hierarchie-Ebene zu ändern. Gestern Nachmittag ging es plötzlich ?!
+
+Gestern habe ich ein ähnliches Phänomen mit Geschäftsprozessen
+beobachtet, es scheint so zu sein, dass unser System mit Hierarchie-Ebenen
+durcheinander kommt, sobald ich versuche die neu angelegten Elementen
+hierarchisch zuzuordnen. Am nächsten Tag/Tagen können diese Änderungen
+reibungslos durchgeführt werden.
+
+Könnte es sein, dass wir unsere SQL-Datenbank tunen müssen?
+Evtl. läuft die Indexierung o.ä. nicht korrekt.
+Haben Sie Einleitungen dafür? 
+
+Unser System läuft irgendwie sehr langsam à die
+Reaktionszeiten sind sehr langsam. Z.B haben wir lediglich 314
+Informationssysteme eingegeben, ich glaube die Zahl ist nicht besonders hoch.
+Wenn ich im Suchfeld ganz schnell ein paar Buchstaben tippe und nur eine sehe
+und die Listenansicht sich sehr langsam aufbaut, dann habe ich  ein
+subjektives Gefühl, mit sehr langsamen System arbeiten zu müssen.
+
+Danke für Ihre Unterstützung.
+
+Mit freundlichen Grüßen
+Olga Welsch
+
+"																																																				

@@ -1,0 +1,6 @@
+Import/Export CE / Win7 / IE9 / hsql / default language: english		46148	Sub-task	iteraplan PO	24/Oct/13 4:19 PM	25/Oct/13 5:03 PM					test									"25/Oct/13 9:53 AM;isc;*Bugs:*
+*  ITERAPLAN-2087 - Excel export is not available in the CE 
+*  ITERAPLAN-2096 - Nesting Cluster Graphics / iteraQL has problems with special character in attribute names"	"25/Oct/13 1:27 PM;isc;In the CE the Excel import is not available. Therefore, many test cases could not be performed.
+According to the product description it should be an export function, but this was not available through the UI. -> ITERAPLAN-2087"	"25/Oct/13 6:10 PM;psc;All test steps performed and documented. Identified issues were furthermore documented in dedicated tickets.
+
+Ticket can be closed."																																																				

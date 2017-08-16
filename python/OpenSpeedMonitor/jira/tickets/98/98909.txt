@@ -1,0 +1,23 @@
+Test installer	"Test different versions of the iteraplan ant installer as described here:
+
+https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-3.2.2Installer
+
+
+
+* [~mse]: basis-MS-installer (/)
+
+* [~mse]: basis-installer (tested with MySQL) (/)
+
+* [~cst]: premium-installer (LDAP + Oracle 12 / Oracle 11 / MYSQL) (/)
+
+* [~aan]: corporate-installer
+
+* (/) [~cst]: corporate-installer (LDAP + SSO MSQL)
+
+* (/) [~cst]: corporate-installer (Linux)
+
+The installer are located on our build server in /var/iteraplan/releases/5.4.0
+
+
+
+Please test also the database migration scripts from 5.3 to 5.4 (ask [~cst] for details)."	98906	Sub-task	iteraplan PO	12/Oct/16 9:15 AM	27/Oct/16 3:21 PM																																																																				

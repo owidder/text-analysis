@@ -1,0 +1,7 @@
+E-104 - iteraplan interfaces - changed import configuration is not applied & LDAP auth not used	"Mail from Manuel Achterberg / E-104:
+
+1. The PPM import configuration [of integration app ""iteraplan interfaces""] does not work. When uploading the config xml, nothing happens and the attribute mappings stay the same.
+2. Another customization issue: integration app ""iteraplan interfaces"" should also use LDAP auth."		Bug	iteraplan PO	12/Jul/13 11:20 AM	29/Aug/13 1:20 PM														"15/Jul/13 1:15 PM;sfe;bq. 1. The PPM import configuration [of integration app ""iteraplan interfaces""] does not work. When uploading the config xml, nothing happens and the attribute mappings stay the same.
+
+This is confirmed to be the result of trying to upload a syntactically incorrect config xml file. A commit for ITERAPLAN-1561 added an error message for that case to make users aware of the faulty file."	"19/Jul/13 10:16 AM;sfe;1. As mentioned above, the failing import of the PPM configuration was due to an error in the configuration file. Feedback to the user in this case has been improved in ITERAPLAN-1561
+2. Using LDAP is a configuration matter and can be achieved by exchanging the applicationContext-spring-security.xml file and setting the proper values in the iteraplan-auth.properties file."	25/Jul/13 2:22 PM;sfe;Testing by E-104	03/Sep/13 11:33 AM;psc;Successfully tested and accepted by customer according to Tobias.																																																			

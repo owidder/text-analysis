@@ -1,0 +1,3 @@
+Remove unnecessary business mapping queries	"In some cases, we request business mappings from the database via explicit query, instead of using the collection of the related building block (which is what we are actually interested in).
+
+Ask [~wfr] about hints where this happens in our code."		Improvement	iteraplan PO	15/Apr/16 5:45 PM																																																																					

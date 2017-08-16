@@ -1,0 +1,9 @@
+Java8 Update: Datum kann nicht augewählt werden	"Versucht man ein Dashboard aufzurufen, oder sich die Einzelerbniss-Seite anzuzeigen, so bekommt man folgende Meldung:
+
+
+
+Bitte überprüfen Sie Ihre Auswahl, Sie haben die folgenden Fehler gemacht:
+
+*Die Eigenschaft from muss ein gültiges Datum sein
+
+*Die Eigenschaft to muss ein gültiges Datum sein"		Bug	OpenSpeedMonitor	10/Jun/16 2:36 PM	10/Jun/16 4:08 PM														10/Jun/16 4:08 PM;mmi;Das Databinding der ShowAllCmds hat für java.util.Date nicht mehr funktioniert.																																																						

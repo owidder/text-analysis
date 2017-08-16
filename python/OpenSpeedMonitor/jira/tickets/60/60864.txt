@@ -1,0 +1,3 @@
+Statische CSI-Ansicht prüfen	"In der ersten deployten Version nach dem Update zu Grails 2.5 ist die statische Ansicht erst mal leer:
+
+http://dev.openspeedmonitor.wpt.iteratec.de/csiDashboard/showDefault"		Task	OpenSpeedMonitor	20/Oct/15 11:50 PM	04/Nov/15 4:23 PM																																																																				

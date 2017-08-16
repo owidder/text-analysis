@@ -1,0 +1,25 @@
+RELEASE: Partial message & Full Download in IFD always show	"*Summary:*
+
+Partial message in IFD is always show
+
+
+
+*Reproduce:*
+
+* Open the default Information Flow Diagram
+
+* Click on ""Node Filter\Edit Filter""
+
+* Click on ""Manual Selection"" and select 1 Information System
+
+
+
+*As-Is:*
+
+* Partial message and full download is still shown
+
+
+
+*Expected:*
+
+* Partial message and full download are only shown when the shown elements are above the partial limit"		Bug	iteraplan Speedbird	11/Oct/16 1:21 PM	13/Oct/16 4:04 PM														12/Oct/16 2:55 PM;madu;Revision #4635																																																						

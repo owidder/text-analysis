@@ -1,0 +1,17 @@
+[WPT-Agent] Zusatz "monitor/webpagetest" wieder in den UA aufnehmen	"OTTO stellt an alle testenden Systeme die Anforderung, dass diese den String _monitor_ in den User Agent schreiben, damit alle BI/Auswertungssysteme diesen Traffic herausfiltern können. Unsere Webpagetest-Messungen schreiben daher _monitor/webpagetest_ in den User Agent. Dies ist für alle Browser unterschiedlich realisiert. 
+
+
+
+Aktuell funktiniert  es nicht mehr für Firefox- und Chrome-Messungen. 
+
+
+
+*Firefox*
+
+Für den Firefox gibt es eine *.pref-Datei in der Installation auf dem Agenten, in welche FF-preferences eingetragen werden können. Hier haben wir in Puppet für den entsprechend angepassten UA gesorgt. Das scheint für die neuesten (Multistep-)Versionen verloren gegangen zu sein.
+
+
+
+*Chrome*
+
+Hier bin ich nicht 100% sicher. Ich meine, wir haben in der `wptdriver.ini` den angepassten UA direkt als Startparameter mitgegeben. Auch das scheint in der aktuellsten Version in Puppet verloren gegangen zu sein. "		Task	OpenSpeedMonitor	23/Feb/17 3:37 PM																																																																					

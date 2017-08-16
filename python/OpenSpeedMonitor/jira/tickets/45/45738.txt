@@ -1,0 +1,16 @@
+Systematic permissions for import and export	"At the moment, there are three permissions in iteraplan which relate to only one menu entry:
+* Ausführen von Export (Excel)
+* Ausführen von Import (XMI)
+* Ausführen von Export (XMI)  _(these two for XMI were originally created for the pre-elastic XMI im/export implementation)_
+
+There is no permission for performing Excel imports, though. And finally, Excel and XMI imports share the same UI anyway.
+
+To improve this situation, these permissions should be consolidated into:
+* *Run EA Data Imports* (by renaming the existing permission)
+* *Run EA Data Exports* (by merging both existing permissions and renaming)
+
+If either of these two permissions is granted, the {{Export/Import}} menu entry shall be visible. Depending on which of these permissions is granted, the Export/Import page shall show only the export section, only the import section, or both sections. The same applies to the time series import/ export operations.
+
+Consider these changes for migrations, too!
+There still the hidden dialogs for pre-elastic Excel and XMI import around. Change their permissions check so that they rely on the new Import permission as well.
+"		Improvement	iteraplan PO	29/May/13 4:57 PM	12/Apr/17 1:37 PM					excel	export	import	permissions	xmi					12/Apr/17 1:37 PM;fka;Will be done via the new interactive client and revised roles & permissions there.																																																						

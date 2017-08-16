@@ -1,0 +1,19 @@
+Execute Testsheet Administration\System-Page	"*Summary:*
+
+Execute Testsheet
+
+
+
+*Details:*
+
+* Ensure you have all the actual branch code
+
+* Perform all steps carefully
+
+* If the system is different than the testcases, check, if it is a bug or if the testsheet needs to be corrected.
+
+** If it is a bug, create immediately a bugticket in the epic ""Release 5.4""
+
+** If it is not a bug, correct the testsheet. "		Task	iteraplan PO	14/Oct/16 1:41 PM	25/Oct/16 11:42 AM														25/Oct/16 8:13 AM;ddu;Tests executed. No errors detected. A few steps has to be checked / re-executed, as I do not have a direct access to the server (i.e. the steps that require check of tables directly in Database).	"25/Oct/16 11:42 AM;cst;Checked the missing testcases 
+
+No errors appeared"																																																					

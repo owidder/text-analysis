@@ -1,0 +1,9 @@
+Treemap: negative values	"When the basic implementation is done, check how it works with negative values.
+
+Possibly, some discussion will be needed, depending on the investigation results.
+
+
+
+Zero and negative values are not used in the diagram.
+
+Document this in documentation."		New Feature	iteraplan Speedbird	27/Oct/16 11:24 AM	07/Nov/16 11:22 AM					TreeMap																																																															

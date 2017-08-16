@@ -1,0 +1,5 @@
+Klasse HttpArchive entfernen	"Nachdem wir alles was im Code der Result-Persitenz zum harfile enthalten war ausgebaut haben sollten wir diese Klasse (de.iteratec.osm.result.HttpArchive) ganz entfernen. Diese Informationen halten wir künftig nur noch in der mongodb.
+
+
+
+Die Klasse wird aktuell noch in Tests und auch in Produktiv-Code verwendet. "		Task	OpenSpeedMonitor	17/Mar/16 4:20 PM	22/Mar/16 5:00 PM																																																																				

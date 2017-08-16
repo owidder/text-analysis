@@ -1,0 +1,2 @@
+Tiles for all list of Building Blocks	Create on the recent view page of the new client tiles for all Building Block List Views sorted by colours.		New Feature	iteraplan PO	25/Apr/15 10:15 AM	25/Apr/15 4:09 PM					newClient									"25/Apr/15 11:34 AM;msr;Design approved by FKA.
+IT-Service icon sill missing."																																																						

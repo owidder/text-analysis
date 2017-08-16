@@ -1,0 +1,1 @@
+Pie chart: Saved query and description overlap	Information about the saved query and description overlap in pie chart and composite bar/pie chart.		Bug	iteraplan PO	28/Oct/13 4:51 PM	30/Dec/15 4:54 PM					composite	pie																																																														

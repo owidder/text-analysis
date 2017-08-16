@@ -1,0 +1,74 @@
+iteraplan Historie aktivieren	"Hallo Hr Wüst, 
+
+
+
+Wir auf Produktion gerne die Historie in iteraplan aktivieren. Soweit ich das gelesen habe müssen dazu einige Scripts und einen DB-initialisierung ausgeführt werden, haben Sie dazu evtl. eine Dokumentation und die Scripts dich ich dazu benötige?
+
+
+
+Vielen Dank im voraus. 
+
+
+
+Mit freundlichen Grüßen 
+
+Benedikt Schmaler
+
+
+
+BSH Hausgeräte GmbH
+
+CIT-UFI 
+
+
+
+Carl-Wery-Straße 34
+
+81739 München
+
+Tel.: + 49 89 4590-2086
+
+Mobil: +49 (171) 1031874
+
+benedikt.schmaler@bshg.com
+
+www.bsh-group.com
+
+
+
+BSH Hausgeräte GmbH, Carl-Wery-Str. 34, 81739 München 
+
+Vorsitzender des Aufsichtsrats: Uwe Raschke 
+
+Geschäftsführung: Dr. Karsten Ottenberg (Vorsitzender), Matthias Ginthum, Johannes Närger, Dr. Michael Schöllhorn 
+
+Sitz: München; Registergericht: Amtsgericht München, HRB 75534 
+
+
+
+Diese Mitteilung ist ausschließlich für den beabsichtigten Empfänger bestimmt. Sie kann Betriebs- oder Geschäftsgeheimnisse oder sonstige vertrauliche Informationen enthalten. Jede(r) unberechtigte Gebrauch, Kopie, Weitergabe oder Veröffentlichung ist untersagt. Sollten Sie diese E-Mail irrtümlich erhalten haben, benachrichtigen Sie uns bitte sofort durch Antwortmail und löschen Sie diese E-Mail nebst etwaigen Anlagen und einschließlich aller angefertigten Kopien von Ihrem System. 
+
+"		Technical question	iteraplan Support	23/May/16 12:23 AM	21/Jun/16 7:00 AM														"23/May/16 5:25 PM;tam;Hallo Björn,
+
+die Skripts können registrierte Nutzer im Forum finden:
+https://forum.iteraplan.de/forum/client-area/downloads-database-scripts/33-history-initialization
+
+Sonst die Schritte, um die History einzuschalten, sind im UserGuide beschrieben:
+https://www.iteraplan.de/doc/display/iteraplan52/History
+
+Ich hoffe, das hilft weiter.
+
+Viele Grüße
+Timur"	"23/May/16 5:28 PM;tam;Für den Fall, dass Herr Schmaler im Forum noch nicht registriert ist, füge ich eine kurze Anleitung hinzu:
+
+{quote}Das iteraplan Community Forum startet neu! Sie finden unter
+
+[http://forum.iteraplan.de ]
+
+ab sofort die Plattform zum Austausch mit anderen Anwendern, Interessierten, mit unseren Beratern und natürlich auch dem Entwicklungsteam. Diskutieren Sie über Ihre Erfahrungen mit dem erstaunlich effizienten EAM-Tool iteraplan. Klären Sie schnell Fragen und entwickeln Sie Lösungen zusammen mit anderen Teilnehmern und den Experten von iteratec.
+
+Zuerst sollten Sie sich registrieren. Der Link dazu finden Sie rechts oben auf der Plattform. Nutzen Sie Ihren realen Namen oder ein Pseudonym, ganz wie Sie möchten. Neben dem öffentlichen Forum existiert ein Bereich exklusiv für Kunden. Dort finden Sie zum Beispiel Downloads, Datenbank-Migrationsskripte und einen Platz für Diskussionen zu den Features der Corporate Edition, wie den Graphics Reactor.
+
+Teilen Sie uns nach Registrierung Ihren Benutzernamen mit, dann schalten wir Sie umgehend für den zusätzlichen Kundenbereich im Forum frei: iteraplan.support@iteratec.de
+
+Ihre Fragen, Bemerkungen, kritischen Anmerkungen und Verbesserungsvorschläge sind wertvolles Feedback. Sie helfen uns damit, iteraplan stetig zu verbessern.{quote}"																																																					

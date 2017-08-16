@@ -1,0 +1,13 @@
+Dropping of something, which is not supposed to be dropped into ip-list produces error	"Have a grid with drag-n-drop on a page (building blocks list in tree view mode, or enumeration attribute page).
+
+
+
+Try to drag something, which is not a grid row into list (some selected text from outside the list, text from browser's address bar, file from explorer...)
+
+
+
+Result: exception in console
+
+
+
+Expected result: list does not accept all the dragged mess, should accept only its rows. No exceptions in console."		Bug	iteraplan Speedbird	05/Jul/17 12:12 PM	17/Jul/17 11:36 AM																																																																				

@@ -1,0 +1,17 @@
+Deleting an BM in ListView leads to error when changing the view	"Delete a BM in the list view by using the trash can.
+
+
+
+Change the view before the response arrives at the new client (use for example a breakpoint in the backend), for example to the start page
+
+
+
+Expected behaviour: Everything is fine and the response is used if it is needed and ignored otherwise
+
+
+
+Current behaviour: This leads to an error as the function for deleting works with "".then"" and some of the necessary variables are not available anymore
+
+
+
+(Does also happen when deleting standalone BOs, for example BusinessObjects)"		Bug	iteraplan Speedbird	11/Apr/17 8:38 AM	05/May/17 2:44 PM																																																																				

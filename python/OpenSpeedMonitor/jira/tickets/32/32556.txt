@@ -1,0 +1,31 @@
+Mess-Ergebnisse Dashboard und CSI Dashboard: unverständliche Fehlermeldung	"Beim Absenden des Formulars auf CSI > Dashboard ohne Eingaben in Filter > Job Gruppe und/oder Page und/oder Browser kommt folgende, unverständliche Fehlermeldung, welche zwar aus technischer Sicht präzise den Fehler benennt, aber den Benutzern keine Hinweise gibt was sie ändern sollen.
+
+
+
+ Bitte überprüfen Sie Ihre Auswahl, Sie haben die folgenden Fehler gemacht:
+
+    Die Eigenschaft [selectedFolder] des Typs [class de.iteratec.osm.csi.CsiDashboardController$ShowAllCommand] mit dem Wert [[]] unterschreitet den Mindestwert von [1]
+
+    Die Eigenschaft [selectedPage] des Typs [class de.iteratec.osm.csi.CsiDashboardController$ShowAllCommand] mit dem Wert [[]] ist ungültig
+
+    Die Eigenschaft [selectedBrowsers] des Typs [class de.iteratec.osm.csi.CsiDashboardController$ShowAllCommand] mit dem Wert [[]] ist ungültig
+
+
+
+Dasselbe beim Absenden des Formulars auf Mess-Ergebnisse > Dashboard ohne Eingaben in Jobs Filtern und/oder Meßgröße auswählen - hierbei wird ein Default-Wert eingetragen bei Meßgröße auswählen > First View; soll das so sein?
+
+
+
+Bitte überprüfen Sie Ihre Auswahl, Sie haben die folgenden Fehler gemacht:
+
+    Die Eigenschaft [selectedAggrGroupValuesCached] des Typs [class de.iteratec.osm.result.EventResultDashboardController$ShowAllCommand] mit dem Wert [[]] ist ungültig
+
+    Die Eigenschaft [selectedFolder] des Typs [class de.iteratec.osm.result.EventResultDashboardController$ShowAllCommand] mit dem Wert [[]] ist ungültig
+
+    Die Eigenschaft [selectedPage] des Typs [class de.iteratec.osm.result.EventResultDashboardController$ShowAllCommand] mit dem Wert [[]] ist ungültig
+
+    Die Eigenschaft [selectedBrowsers] des Typs [class de.iteratec.osm.result.EventResultDashboardController$ShowAllCommand] mit dem Wert [[]] ist ungültig
+
+
+
+"		Bug	OpenSpeedMonitor	18/Feb/15 4:47 PM	27/Feb/15 10:41 AM														26/Feb/15 3:01 PM;rkr;Gleiches Problem bei: browserAlias/save -und im csiDashboardController-																																																						

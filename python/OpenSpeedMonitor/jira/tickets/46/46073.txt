@@ -1,0 +1,8 @@
+False positive when trying to create ISR/TCR without release number	"to reproduce:
+# create an ISR with name A and release number 1
+# create a new release for this IS without release number
+=> error
+
+if you first create the release without number, the creation of another ISR with a release number works as expected. This behavior is somehow inconsistent, as the result may or may not be achieved depending on the order of actions taken.
+
+Same applies to creation of TCRs."		Bug	iteraplan PO	18/Sep/13 10:29 AM	30/Dec/15 3:20 PM																																																																				

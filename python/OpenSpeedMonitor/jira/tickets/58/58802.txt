@@ -1,0 +1,49 @@
+names of axis attributes are not always correctly displayed in the ToolArea	"In the new *LSD*: When filtering, names of axis attributes are not always correctly translated or properly displayed in the Tool Area.
+
+
+
+*Reproduce*
+
+* Open the LSD with the default configuration.
+
+* open the Tool Area for the X-Axis (Based on Technical Component)
+
+* use the Tool Area to create a new filter 
+
+
+
+*Expected*
+
+* in the dropdown list the entry for typeOfStatus is shown as “Status (TC)”
+
+
+
+*Actual*
+
+* the dropdown list show the persistent name “typeOfStatus” 
+
+
+
+The same problem exist for the view “current Filter”.
+
+
+
+I think that something went wrong in “lsdToolAreaViewModelBuild.js”
+
+Take a look to the functions:
+
+* getAllAttributes
+
+* getMenuEntriesForFilters
+
+
+
+
+
+
+
+
+
+
+
+"		Bug	iteraplan PO	01/Oct/15 10:06 AM	05/Oct/15 8:45 AM														01/Oct/15 3:35 PM;fro;already translated current filter, so only the value in the dropdown list needs to be translated	02/Oct/15 3:37 PM;msr;Fixed attribute values for dropdownlist in filter-dialog																																																					

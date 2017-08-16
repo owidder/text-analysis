@@ -1,0 +1,15 @@
+1.4.1 Anpassen der Dokumentation im Wiki	"1.4.1  Anpassen im Wiki
+
+
+
+*  Die Versionsnummer auf der Seite ""Version"" in der Doku aktualisieren, so dass die nun aktuelle Release-Version eingetragen ist. Alle anderen Referenzen werden darauf basierend automatisch angepasst.
+
+ *  Nur bei Major Releases: Neuen Wiki-Space für die Doku anlegen, für die kommende Development Version (genaue Beschreibung auf der Unterseite Wiki Spaces für die Doku):
+
+   **     Einen neuen Space für die neue Development-Version anlegen (Beispiel: Wenn Release 5.0 erstellt werden soll, einen neuen Docu-Space ""iteraplan51"" für die Weiterentwicklung fürs folgende Release 5.1 anlegen).
+
+     **   Das Format ""iteraplan<major><minor>"", ohne Punkte oder Unterstriche, ist wichtig, damit die Links aus der Applikation stimmen.
+
+      **  Inhalt des Space für die zu releasende Version in diesen neuen Space kopieren, als Grundlage für die zukünftige Doku.
+
+      **  ""work in progress""-Anzeige im Space der zu releasenden Version entfernen und im neuen Space hinzufügen."		Task	iteraplan PO	26/Oct/15 2:25 PM	03/Nov/15 11:10 AM																																																																				

@@ -1,0 +1,5 @@
+scripts which have an file extension in capital letters can not be executed from the filemanager	"If you right click at an script with an file extension in capital letters, the menu entry to execute the script is not shown.
+
+
+
+The config edit button is not shown, if the file extension has both capital and lower case letters (like script.XsLt)"		Bug	iteraplan Quickfox	09/Aug/16 4:53 PM	09/Aug/16 6:16 PM																																																																				

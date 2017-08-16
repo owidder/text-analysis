@@ -1,0 +1,17 @@
+Inner/inner nesting	"* max 3 level inner/inner nesting
+
+* entry in the according tool area to select the self relationship for nesting
+
+* Consult [~wfr] or [~sfe] before starting this issue
+
+
+
+# tool area -> configuration
+
+# item builder creates hierarchical items
+
+# color shading in item decorator _after_ base color is determined
+
+# layouter modification"		New Feature	iteraplan PO	10/Mar/16 11:04 AM	21/Apr/16 4:57 PM														"21/Apr/16 4:52 PM;pzi;NcdLegendMain:
+
+configuration.getTypeConfiguration().<property> is used frequently. This makes the code less readable and triggers the generation of the typeConfig object on each call which seems unnecessary. Please fix this for the whole file (~10 occurences)"	21/Apr/16 4:57 PM;pzi;refactoring will be committed in the outer/outer ticket as it affects both tickets																																																					

@@ -1,0 +1,13 @@
+After switching language rows names and filter name were not translated.	"Steps to reproduce:
+
+1. Open ""Cluster Diagram""
+
+2. Add content type row.
+
+3. Add filter for content type row.
+
+4. Open legend.
+
+5. Set language.
+
+"		Bug	iteraplan Speedbird	26/Oct/16 8:45 AM	26/Oct/16 11:52 AM					cluster									26/Oct/16 11:52 AM;madu;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-121																																																						

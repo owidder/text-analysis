@@ -1,0 +1,87 @@
+Option "Hierachical name as content element's name."	"*Summary:*
+
+New option: Display hierachical names
+
+
+
+*As-Is:*
+
+* No other displaying options are possible
+
+
+
+*To-Be:*
+
+* The user can choose between ""normal"" (=non-hierachical) and hierarchical names as criterion for displaying.
+
+
+
+*Implementation Details:*
+
+* Save in the actual state in the url
+
+* Default is normal names
+
+* If the user choose hierachical sorting, all Building Blocks are displayed with hierarchical name (grandparent (if exists) : parent (if exists) : parent (if exists) : ... : actual element) 
+
+
+
+*UI:*
+
+* Legend: Nothing is displayed
+
+* Toolarea: Create a new main entry on the last position:
+
+** Main entry: ""Display"" (German: ""Anzeige"")
+
+** Sub-entries: Toogle-Button: ""Non-hierarchical names"" / ""Hierarchical names"" (German: ""Nicht-hierarchische Namen"" / ""Hierarchische Namen""
+
+"		New Feature	iteraplan Speedbird	13/Jul/16 5:05 PM	05/Aug/16 1:58 PM														"03/Aug/16 9:23 AM;msr;Sorting is out of scope for this ticket.
+
+"	"05/Aug/16 11:23 AM;roia;*REVIEW:*
+
+
+
+*pfdItem.js*
+
+{code}
+
+PfdItem.prototype.createItem
+
+{code}
+
+here we always retrieve hierarchical name regardless on whether we need it or not. I'd pass the config parameter to this method and retrieved the hierarchical name only if it's configured. E.g:
+
+{code}
+
+PfdItem.prototype.createItem = function (businessObject, retrieveHierarchicalName) {
+
+    var item = {
+
+        id: businessObject.id,
+
+        text: businessObject.name
+
+
+
+    };
+
+    if( retrieveHierarchicalName ) {
+
+        item.hierarchicalName = businessObject.getHierarchicalName();
+
+    }
+
+{code}"	"05/Aug/16 11:23 AM;roia;*pfdToolAreaViewModelBuilder.js*
+
+{code}
+
+* @typedef {?Object[]} Entries
+
+{code}
+
+
+
+the type Entries is already defined in ncdToolAreaViewModelBuilder.js. Don't use the same name here, it will be confusing is this type will be used in JSDoc in some other files."	05/Aug/16 1:16 PM;dmkh;[~msr], regarding Rost's comment on *pfdItem.js*: will we need a hierarchical name in the future for some other features or do we use it only for displaying names of bubbles?	"05/Aug/16 1:20 PM;msr;At the momet, I don't see any further requirement for the hierarchical names. They are only used in the bubbles.
+
+Does this help for the implementation?"	05/Aug/16 1:24 PM;dmkh;[~msr], thanks for specifying this moment, I will modify related functionality.																																																	

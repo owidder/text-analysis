@@ -1,0 +1,13 @@
+Recent view page: UI bug with tile's name on Recent view page	"Steps to reproduce: 
+1. Go to NCD page
+2. Click ""Save/Share"" button
+3. Enter new diagram name with lenght 50 characters
+4. Click ""Save""
+5. Go to Recent view page
+Actual: UI bug with tile's name 
+Expected: Diagram's name should be croped
+"		Bug	iteraplan PO	26/Mar/15 2:04 PM	09/Jun/15 5:05 PM														"15/Apr/15 10:48 AM;wfr;Recommendation: defer
+
+cosmetic
+
+defer even it should be an easy CSS solution"	22/May/15 10:43 AM;dasm;was fixed under another ticket																																																					

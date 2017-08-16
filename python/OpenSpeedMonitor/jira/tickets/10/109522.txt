@@ -1,0 +1,290 @@
+Excel Import	"Hallo
+
+Ich bin wieder einmal daran, Daten in iteraplan zu importieren. Dazu habe ich eine Auswertung der Schnittstelle gemacht und in ein Excel abgespeichert. Darin habe ich nun meine Änderungen gemacht und will diese nun mit dem exportierten Template hochladen.
+
+Die Schnittstellen spezifische Daten komme ich klar. Der Nächste Schritt ist dann das zu verwendete TC. Das geht auch noch. Dann aber die Beziehung zwischen dem IS A zu IS B. Finde keine Möglichkeit, dies einzutragen.
+
+Ich erachte das Excel als ziemlich aufwendig, bis alle vermeintliche Informationen eingetragen sind. Damit nicht wieder Informationen fälschlicherweise gelöscht werden.
+
+
+
+Lege noch die beiden Excel Dateien bei, mit denen ich den Import verwenden müsste.
+
+Könnten Sie mir die Informationen vom Excel ""ImportSchnittstellen.xlsx"" in das beigefügte Template hineinfügen? Damit ich dann entdecken kann, wo die Eintrage alle gemacht werden sollten.
+
+Besten Dank
+
+
+
+MFG A. Studer"		Fault	iteraplan Support	24/Jan/17 3:06 PM	02/Mar/17 1:48 PM														"24/Jan/17 3:06 PM;alfred.studer@emmi.com;
+
+[^AuswertungSchnittstellen.xlsx] _(32 kB)_
+
+[^ImportSchnittstellen.xlsx] _(233 kB)_"	24/Jan/17 3:21 PM;alfred.studer@emmi.com;Dier Schnittstellen Richtung habe ich nun Tab "Schnittstellen (SS)" gefunden. In meinem aktuellen Fall, darf ich 135 Schnittstellen aktualisieren. Im Download der Auswertung bekomme ich für die Schnittstellen Richtung das Zeichen "->", für den Import muss ich nun z.B.  "FIRST_TO_SECOND" eintragen.	"26/Jan/17 1:26 PM;alfred.studer@emmi.com;Darf ich Sie bitten, mir eine Antwort zukommen zu lassen!
+Besten Dank"	"27/Jan/17 8:54 AM;cst;Sehr geehrter Herr Studer,
+
+vielen Dank für Ihre Anfrage. 
+
+In der Spalte ""SS"" werden die Attribute der Schnittstellen eingetragen. 
+
+Jede Schnittstelle benötigt einen Informationsfluss, dieser wird in der Spalte ""IFI"" eingetragen,
+dieser ist in Ihrer Datei nicht eingetragen. 
+
+Ich habe Ihnen an diesem Ticket noch ein Beispiel unserer Beispieldaten angehängt. 
+Hier ist eine Schnittstelle + Informationsfluss zu finden.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+"	"30/Jan/17 7:52 AM;alfred.studer@emmi.com;Können sie bitte noch das Beispiel anhängen?
+Besten Dank"	"30/Jan/17 7:54 AM;cst;[^Beispiel.xlsx]
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"30/Jan/17 7:56 AM;alfred.studer@emmi.com;Also ich muss sagen, dies ist extrem aufwendig.
+Muss nun 135 Schnittstellen anpassen!"	"30/Jan/17 8:26 AM;cst;Vielen Dank für Ihre Antwort, 
+
+haben Sie noch weitere Fragen zu diesem Thema,
+sonst würde ich das Ticket hierzu schließen. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"30/Jan/17 9:00 AM;alfred.studer@emmi.com;Im Export, wird z.B. für die Flussrichtung das Zeichen ""->"" ausgegeben. Für den Import muss nun ""FIRST_TO_SECOND"" eintragen werden.
+Ist dies so? Oder würde der Import auch das Zeichen -> verstehen?
+Wenn Nein, warum wird dies nicht auch im Export so ausgegeben?"	30/Jan/17 9:37 AM;alfred.studer@emmi.com;Was ist der Grund, dass man die Flussrichtung zweimal eintrage muss? Im Tabellenblatt Informationsfluss (IFl) in der Spalte "Richtung" und im Tabellenblatt in der Spalte "Schnittstellen-Richtung"?	"30/Jan/17 9:44 AM;alfred.studer@emmi.com;in Ihrem Beispiel, haben sie alle Tabellenblätter gefüllt. 
+
+Wenn ich für die Schnittstelle IS 1 zu IS 2 eintrage mit einem entsprechenden TC. Muss ich nun alle verwendeten IS in das Tabellenblatt IS eintragen und alle TC welche mit der Schnittstelle transportiert werden, in das Tabellenblatt TC?
+
+Dann brauche ich definitiv einen 1/2 Tag, bis ich endlich mein Excel bereit habe!"	"30/Jan/17 10:50 AM;alfred.studer@emmi.com;Das Informationsfluss (IFl) Tabellenblatt hat in der ersten Spalte eine ID. Woher kommt diese?
+Bei einer Schnittstelle kann das verwendete TC im Feld ""Wird realisiert durch folgende Technische Bausteine"" mitgegeben werden. In welchem Tabellenblatt kann ich dies eintragen?"	"30/Jan/17 10:53 AM;alfred.studer@emmi.com;OK das TC habe ich gefunden! Dies ist wieder in einem anderen Tabellenblatt!
+
+Das Excel ist definitiv nicht Userfreundlich. Wenn man eine oder 2 Schnittstellen aktualisieren muss geht dies noch knapp. Ich habe deren 133 und mit all den zusätzlichen Tabellenblättern!"	"30/Jan/17 11:42 AM;cst;Zu Ihrer ersten Fragen zum Thema Import, es muss im Schema z.B. ""FIRST_TO_SECOND"" eingetragen werden. 
+
+Beim Export wird dies zur Veranschaulichung in ""->"" umgewandelt. 
+
+---------------
+
+Es gibt zwei Flüsse zum Thema Schnittstellen siehe Screenshot:
+
+!BeispielFluss.PNG|thumbnail!
+
+Flussrichtung der Schnittstelle 
+
+Flussrichtung der Transportierte Geschäftsobjekte zwischen IS und TC
+
+---------------
+
+Zu Ihrer dritten Fragen, es muss die Referenz zum TC und IS vorhanden sein. 
+
+---------------
+
+Die ID wird vom iteraplan vergeben, bei Neuanlage kann man diese leer lassen.
+
+---------------
+
+Mit Version 5.5 wird das List - Edit / Create in die Software implementiert. Hier ist es möglich Interfaces direkt in der Listenansicht anzulegen. 
+
+Eine andere Möglichkeit außer Excel und UI so viele Elemente anzulegen ist über die technische REST-Schnittstelle.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support "	"30/Jan/17 2:45 PM;alfred.studer@emmi.com;Sorry Hr. Stangl, wenn ich nun sehr kritisch werde, aber ich empfinde das Excel als hoch komplex und nicht sehr bedienungsfreundlich. Von Einstein habt ihr den Spruch: 'Mache die Dinge so einfach wie möglich - aber nicht einfacher.'. Aber das gilt wohl nicht für das Excel! Ich habe das Gefühl, dass das frühere Excel um einiges einfacher war im Aufbau und im Handling. Ich stelle mir vor, dass man ein Export aus iteraplan machen kann, Anpassungen vornehmen und dann wieder mit dem gleichen Excel importieren könnte. Die ganzen transformationsarbeiten würden dann entfallen.
+
+Um das Excel mit den 130 Schnittstellen auszufüllen, bin ich sicher schon 2-3 Stunden dran. Und ich bin noch nicht fertig! Das mit der Rest Schnittstelle ist schon korrekt, aber wenn ich in diesem Falle Schnittstellen importieren muss, muss ich zuerst die Rest Schnittstelle für diese Anwendung konfigurieren lassen. So dynamisch ist dies definitiv nicht, wie so vieles!
+
+- Das Feld ""Schnittstellen-Richtung"" hat direkt nichts mit der Schnittstelle zu tun, sondern ist lediglich für die Flussrichtung des Geschäftsobjekts verantwortlich. Dagegen die Flussrichtung der Schnittstelle ist im Informationsfluss mit der Überschrift ""Richtung"". Jedoch das transportierte Geschäftsobjekt ist im Tabellenblatt Informationsfluss!
+
+- Als Versuch habe ich eine Schnittstelle erstellt und diese mit zusätzlichen Informationen im Excel abgefüllt. Im zweiten Gang, wollte ich das IS B ändern. Aber dies lies der Import nicht zu (Siehe das angehängte Dokument). 
+
+- Wo das Feld ist, mit welchem TC die Schnittstelle realisiert wird, habe ich noch nicht herausgefunden.
+
+[^Import_Schnittstelle_30012017.docx] _(29 kB)_"	"02/Feb/17 3:48 PM;cst;Guten Tag Herr Studer,
+
+wir arbeiten an einer Vereinfachung für das Thema Excel Import und Export. Sie haben an der Stelle recht, dies kann sehr aufwendig werden.
+Mit Version 5.5 wird das ""List Edit"" mit eingeführt und hier ist eine direkte Anlage möglich. Hier werden die ""Flüsse"" automatisch erzeugt. 
+
+Auch werden wir im laufe des Jahres das Thema Schnittstellen und Flüsse im Datenmodell angehen und dies auf Verbesserungen prüfen.
+Wir bitten hier aber um etwas Geduld und geben Ihnen bescheid, wenn ich hierzu neue Information habe. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"08/Feb/17 9:02 AM;alfred.studer@emmi.com;Guten Tag
+Ich würde gerne eine Antwort auf diese Fragen haben:
+◾Wo das Feld ist, mit welchem TC die Schnittstelle realisiert wird, habe ich noch nicht herausgefunden.
+◾Als Versuch habe ich eine Schnittstelle erstellt und diese mit zusätzlichen Informationen im Excel abgefüllt. Im zweiten Gang, wollte ich das IS B ändern. Aber dies lies der Import nicht zu (Siehe das angehängte Dokument). Warum kann ich das IS A oder IS B nicht ändern?
+
+Besten Dank"	"09/Feb/17 10:45 AM;alfred.studer@emmi.com;Guten Tag
+
+Sorry, wenn ich etwas nervig bin, brauche die Antwort.
+
+ Ich würde gerne eine Antwort auf diese Fragen haben:
+◾Wo das Feld ist, mit welchem TC die Schnittstelle realisiert wird, habe ich noch nicht herausgefunden.
+◾Als Versuch habe ich eine Schnittstelle erstellt und diese mit zusätzlichen Informationen im Excel abgefüllt. Im zweiten Gang, wollte ich das IS B ändern. Aber dies lies der Import nicht zu (Siehe das angehängte Dokument). Warum kann ich das IS A oder IS B nicht ändern?
+
+Besten Dank
+"	"09/Feb/17 12:51 PM;cst;Guten Tag Herr Studer,
+
+wir arbeiten an einer Vereinfachung für das Thema Excel Import und Export. Sie haben an der Stelle recht, dies kann sehr aufwendig werden.
+Mit Version 5.5 wird das ""List Edit"" mit eingeführt und hier ist eine direkte Anlage möglich. Hier werden die ""Flüsse"" automatisch erzeugt. 
+
+Auch werden wir im laufe des Jahres das Thema Schnittstellen und Flüsse im Datenmodell angehen und dies auf Verbesserungen prüfen.
+Wir bitten hier aber um etwas Geduld und geben Ihnen bescheid, wenn ich hierzu neue Information habe. 
+
+Zu Ihrer ersten Frage: 
+
+* In der Tabelle SS_TB können die TC´s angegeben werden die durch Schnittellen realisiert werden.
+
+Zu Ihrer zweiten Frage:
+
+* Beim Ändern eines Informationssystems zu einer Schnittstelle muss es nicht nur bei der Schnittstelle, sondern auch beim Informationsfluss geändert werden.
+
+Bei weiteren Fragen wie das EAM-Modell an dieser Stelle aufgebaut ist, kontaktieren Sie gerne unseren Berater. 
+Es handelt sich hier nicht um ein technisches Problem mit der Software, deshalb können wir Ihnen nur bedingt bei Modellierungsfragen weiter helfen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"15/Feb/17 3:29 PM;alfred.studer@emmi.com;In iteraplan ist es möglich, Schnittstellen mit gleichen Namen zu eröffnen. Dies jedoch mit unterschiedlichen ID's und mit unterschiedlichen Informationssystemen, die dafür verwendet werden. Und nun wird ein Import der Schnittstellen durchgeführt. 
+
+Iteraplan meldet nun den folgenden Fehler:
+•Die Schnittstelle (Test schnittstelle AFS ) hat angehängte Informationsflüsse ([ - , Test schnittstelle AFS , TEST IS AFS 02 # 5.0, Affinage Standort ] - [ - , Test schnittstelle AFS , TEST IS AFS 01 # 5.0, TEST IS AFS 02 # 5.0]), die sich in ihren Informationssystemen unterscheiden. Alle Informationsflüsse einer Schnittstelle müssen die selben beiden Informationssysteme als Endpunkte haben.
+•Das Bebauungselement ""Test schnittstelle AFS "" vom Typ Schnittstelle existiert bereits.
+
+Damit sie nachvollziehen können, lege ich ihnen noch das Excel Import bei."	"15/Feb/17 3:30 PM;alfred.studer@emmi.com;Hier noch das File
+
+[^Import IF in der TEST Umgebung.xlsx] _(230 kB)_"	15/Feb/17 3:32 PM;alfred.studer@emmi.com;Wenn im Tabellenblatt "Informationsfluss" in der Spalte "Zugewiesene Schnittstelle" auf die ID der Schnittstelle referenziert würde, so wäre dies vermutlich kein Problem.	"17/Feb/17 12:18 PM;cst;Sehr geehrter Herr Studer,
+
+der Name der Schnittstelle darf an dieser Stelle nur einmalig beim Import vorkommen.
+Dieser wird wie folgt beim Anlegen in iteraplan automatisch generiert: 
+
+""Name [Verbundenes Informationssystem 1, Verbundenes Informationssystem 2, Schnittstellen-ID]"".
+
+Bitte beachten Sie, dass in der Übersicht in iteraplan nur der Abschnitt ""Name"" angezeigt wird. 
+
+Wie oben geschrieben, wird das Thema Schnittstellen dieses Jahr überarbeiten. Gerne können Sie sich aus unserer Online-Demo ein Excel-Export herunterladen, in diesem finden Sie die Informationen um den Import erfolgreich durchführen zu können. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"20/Feb/17 8:51 AM;alfred.studer@emmi.com;Zur Verständigung:
+Eine Schnittstelle heisst: MDG Adressdaten
+Schnittstellen ID: 12345
+IS A: HR System
+IS B: SAP ERP MDG B
+
+Heisst der Name nun ""MDG Adressdaten"" oder heisst er ""MDG Adressdaten [ HR System, SAP ERP MDG B, 12345]""
+
+Ansonsten hätten wir ein grosses Problem.
+Danke für die Klärung
+"	"20/Feb/17 10:58 AM;cst;Guten Morgen, 
+
+in der Oberfläche wird die Schnittstelle wie folgt angezeigt ""MDG Adressdaten"".
+Technisch wie auch beim Excel-Export/Import lautet der Name ""MDG Adressdaten [ HR System, SAP ERP MDG B, 12345]"".
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+"	"23/Feb/17 10:11 AM;alfred.studer@emmi.com;Bin wirklich langsam aber sicher am verzweifeln mit diesem Excel.
+Angehängt habe ich die Fehlermeldung und mein Excel, welches ich importieren will.
+
+•	Die Schnittstelle (SAP QM an MES[SAP ERP Modul QM,MES Integration Server (SUH Prod),37680]) hat angehängte Informationsflüsse 
+([ - , SAP QM an MES[SAP ERP Modul QM,MES Integration Server (SUH Prod),37680], SAP ERP Modul QM, MES Integration Server (SUH Prod)] - [Prüfvorgaben, SAP QM an MES[SAP ERP Modul QM,MES Integration Server (SUH Prod),37680], SAP ERP Modul QM, MES Integration Server (SUH Prod)]), die sich in ihren Informationssystemen unterscheiden. Alle Informationsflüsse einer Schnittstelle müssen die selben beiden Informationssysteme als Endpunkte haben.
+
+Das Zeichen ""-"" musste ich einführen, da man kein leeres Feld bei ""Wird realisiert durch folgende Technische Bausteine"" importieren darf"	"23/Feb/17 10:15 AM;alfred.studer@emmi.com;Als Beilage noch die Dateien
+
+[^Fehlermeldung Import Schnittstelle.docx] _(16 kB)_
+
+[^ImportSchnittstellen_Sibille.xlsx] _(332 kB)_"	"24/Feb/17 2:26 PM;cst;Guten Tag Herr Studer,
+
+vielen Dank für Ihre Antwort.
+
+Um den Vorgang weiter bearbeiten zu können, benötigen wir weitere Informationen zu dem gewünschten Ergebnis.
+
+Welchen Anwendungsfall möchten Sie mit diesem Import durchführen? 
+Welche Datengrundlage war die Basis für die angehängte Excel-Datei ""ImportSchnittstellen_Sibille.xlsx""? 
+Mit welcher Importstrategie haben Sie diese importiert und in welchem Schritt sind die angehängten Fehlermeldungen erschienen?
+
+Bei unserer bisherigen Analyse ist uns aufgefallen, dass die Schnittstellen bereits eine ID in der Excel-Datei besitzen - die Informationsflüsse aber nicht. Das deutet darauf hin, dass die Schnittstellen bereits angelegt waren.
+
+Viele Grüße
+
+Christoph Stangl - iteraplan Support"	"27/Feb/17 7:55 AM;alfred.studer@emmi.com;Guten Morgen
+- Wir importieren die Daten immer mit der Import Strategie Additiv
+- Die Grundlage, war ein Export aus iteraplan. Dieser wurde angepasst. Dies dauerte seine Zeit. In der Zwischenzeit wurden Namen von IS's angepasst. Somit mussten die einzelnen Beziehungen innerhalb des Excel's angepasst werden.
+- Die Schnittstellen sind alle vorhanden und es wurde lediglich Anpassungen bei einigen Feldern vorgenommen. Nach meinem Wissen, können wir die Informationsfluss ID nicht kennen. 
+- Diese Frage (Welchen Anwendungsfall möchten Sie mit diesem Import durchführen?)verstehe ich nicht wirklich. Wir wollen die Daten aktualisieren und mittels dem Excel Import sollte es doch einfacher und rascher gehen, als jede einzelne Schnittstelle von Hand zu aktualisieren. Aber im Moment müsste ich sagen, dass ich diese von Hand schon längstens drin hätte.
+- Als Beilage, wann der Fehler eintrifft.
+
+Vielen Dank für ihre rasche Antwort. Der Druck, die Daten endlich zu importieren steigt bei uns an.
+Freundliche Grüsse
+A. Studer
+
+[^Fehlermeldung Import Schnittstelle_Error.docx] _(209 kB)_"	"28/Feb/17 4:31 PM;msr;Sehr geehrter Herr Studer,
+
+danke für Ihre schnelle und präzise Antwort.
+
+*Unser Analyse-Ergebnis:*
+ ""??Die Grundlage war ein Export aus iteraplan"" - ??
+Im iteraplan-Export sollten die IDs der Informationsflüsse vorhanden sein. Sollten Sie nicht (mehr) vorhanden sein, kann der Import diese nicht mehr zuordnen. Deshalb versucht er fälschlicherweise diese Informationsflüsse neu anzulegen und zeigt diese Fehlermeldungen.
+
+ 
+
+Um Ihre Schnittstellen möglichst schnell in iteraplan zu importieren, schlagen wir eine Telefonkonferenz vor. Hätten Sie am Donnerstag oder Freitag kurzfristig Zeit dafür?
+
+ 
+
+Mit freundlichen Grüßen
+
+ 
+
+C. Stangl - iteraplan Support"	"28/Feb/17 4:37 PM;cst;Sehr geehrter Herr Studer,
+
+
+danke für Ihre schnelle und präzise Antwort.
+
+*Unser Analyse-Ergebnis:*
+
+""??Die Grundlage war ein Export aus iteraplan"" - ??
+Im iteraplan-Export sollten die IDs der Informationsflüsse vorhanden sein. Sollten Sie nicht (mehr) vorhanden sein, kann der Import diese nicht mehr zuordnen. Deshalb versucht er fälschlicherweise diese Informationsflüsse neu anzulegen und zeigt diese Fehlermeldungen.
+
+Um Ihre Schnittstellen möglichst schnell in iteraplan zu importieren, schlagen wir eine Telefonkonferenz vor. Hätten Sie am Donnerstag oder Freitag kurzfristig Zeit dafür?
+
+Mit freundlichen Grüßen
+
+C. Stangl - iteraplan Support"	"01/Mar/17 10:17 AM;alfred.studer@emmi.com;Habe die Rückmeldung auf die meine Antwort erhalten.
+Sie haben eine E-Mail an iteratec-noreply@iteratec.de gesendet.
+Dies ist ein nicht genutztes E-Mail-Konto, Ihre E-Mail wurde von unserem System
+gelöscht. Bitte benutzen Sie das iteraplan Support-Ticketing-System unter www.iteraplan.de/support, um uns zu kontaktieren.
+
+So antworte ich über diesen Weg:
+
+Am Donnerstag habe ich am Morgen eher Zeit als am Nachmittag. Am
+Freitag arbeite ich nicht."	"02/Mar/17 11:08 AM;cst;Guten Tag Herr Studer,
+
+wir würden Sie heute so ca. 13:00 Uhr anrufen. 
+
+Unter welcher Nummer können wir Sie dann erreichen. 
+
+Vielen Dank,
+
+Christoph Stangl - iteraplan Support"	02/Mar/17 11:20 AM;alfred.studer@emmi.com;+41 58 227 13 38	02/Mar/17 1:18 PM;alfred.studer@emmi.com;Sorry, war eben jetzt vom Mittag zurück gekommen. Wäre jetzt erreichbar	"02/Mar/17 1:48 PM;cst;Wie telefonisch besprochen, werden wir dieses Ticket schließen und das besprochene an unsere Berater weitergeben. 
+
+
+
+Wir werden uns hierzu nächste Woche kontaktieren.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support "																			

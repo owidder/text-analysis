@@ -1,0 +1,15 @@
+Customization for F-104	"Die folgenden Namen sind in der deutschen Version anzupassen:
+
+* Geschäftseinheit -> Kunde 
+
+* Informationssystem -> Applikation
+
+* Infrastrukturelement -> IT-System
+
+* Technischer Baustein -> Technologie
+
+* IT-Service -> Vertrag
+
+"		Task	iteraplan Thunderduck	07/Jul/16 12:28 PM	11/Jul/16 12:26 PM														"08/Jul/16 1:28 PM;mse;Wiki page of customizing:
+
+https://iteraweb.iteratec.de/confluence/pages/viewpage.action?pageId=80740867"	11/Jul/16 10:17 AM;mse;"IS-Domäne" was renamed to "App-Domäne" to be in agreement with the other changes.	11/Jul/16 12:08 PM;mse;The changes suggested during review will *not* be applied and all glossary entries will be kept as they are (just with the names replaced) not matter if the do not make much sense anymore.																																																				

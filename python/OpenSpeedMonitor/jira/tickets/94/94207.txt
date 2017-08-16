@@ -1,0 +1,11 @@
+"Missing permission"- message for url	"If diagram is loaded from the url, check if user has the permission for this Building Block Type or attribute. If not, display a message (no dialog) instead of the diagram (like in the Masterplan Diagram).
+
+Use the same message like in the Masterplan Diagram.
+
+
+
+Permissions are not set to single attributes, but to whole attribute groups. If the user has no permission for the whole attribute group, all single attributes of this group are not available in the REST interface (i.e. in the New Client)."		New Feature	iteraplan Speedbird	26/Aug/16 9:24 AM	12/Sep/16 4:55 PM														26/Aug/16 11:11 AM;msr;Ticket already discussed on 26th August	"12/Sep/16 4:55 PM;viol;Review is done.
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-37
+
+No comments."																																																					

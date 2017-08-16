@@ -1,0 +1,32 @@
+Release 5.5 for Microsoft SQL Server	"Hello,
+
+
+
+we tried to conduct a release upgrade to 5.5 but there was no possibity to select database vendor Microsoft SQL Server.
+
+
+
+Therefore we are not able to upgrade to the newest release. 
+
+
+
+
+
+
+
+"		Technical question	iteraplan Support	01/Mar/17 3:17 PM	27/Mar/17 8:49 AM														"06/Mar/17 8:11 AM;cst;Dear Mr. Behrendt,
+
+thank you for your inquiry. 
+
+The download link for your custom iteraplan version is the following:
+
+[https://www.iteraplan.de/downloads/premium/5.5.0/iteraplan-5.5.0-rrpowersystems-premium-sqlserver-installer.zip]
+
+Login: corporate
+Password: nbAT01Qx
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+
+ "	27/Mar/17 8:47 AM;johannes.behrendt@rrpowersystems.com;Ticket can be closed. Testinstallation works successfully.																																																					

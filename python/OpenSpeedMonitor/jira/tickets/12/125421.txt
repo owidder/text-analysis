@@ -1,0 +1,21 @@
+LIST-VIEW UI: Change 'new element' dialogue	"Current state: If you cklick NEW a new line in the list appears in green. But it does not invite you to take further action. You have to click on one of the columns yourself to enter name, description etc.
+
+
+
+{color:red}UPDATE: {color} Exclude Business Mappings and Interfaces, i.e. do not open any editors in theses lists.
+
+{color:red}UPDATE: {color} Also implement it for literals in attribute single page.
+
+
+
+ToDo: 
+
+ 1. The textfield for ""Name"" should be activated as default since it is required. (see Screenshot) This dialogue-colour is red and it shows the text eng: ""required"" ger: ""erforderlich"". The other dialogues stay the same. Other dialogs are not opened automatically.
+
+
+
+2. Make the entire column-width clickable, not only the pen in order to open the textfield.(only in this mode)
+
+
+
+4. Change the background-colour of the interactive row from the current green to corporate green #55C163"		Improvement	iteraplan Speedbird	26/Jun/17 12:01 PM	26/Jul/17 3:41 PM					GUI	usability								24/Jul/17 7:16 PM;mash;Review is done: see comments here: https://iteraweb.iteratec.de/fisheye/cru/IP-801	26/Jul/17 3:41 PM;mash;Review is done																																																					

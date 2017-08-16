@@ -1,0 +1,5 @@
+It should not be required to write the whole path of an output file into the script configuration	"At the moment you have to write the whole path of an outputfile to the script configuration to access it over the published url.
+
+
+
+You should only write the name of the outputfile into the config and to access it over the published url the path to the script should be used."		Bug	iteraplan Quickfox	10/Aug/16 11:34 AM	10/Aug/16 4:03 PM																																																																				

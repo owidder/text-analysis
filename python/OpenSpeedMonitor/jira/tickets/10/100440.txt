@@ -1,0 +1,55 @@
+Manual selection filter is not saved in queries	"Reproduce:
+
+
+
+# Open Information System list view in interactive client
+
+# Add a ""Manual selection"" filter and an additional column (e.g. Costs)
+
+# Click on ""Save as"" and save list view as private query
+
+# Got ot ""Visualize+Report"" tab and open ""All saved queries"" list
+
+# Click on the query saved before
+
+
+
+Expected:
+
+* The list view as saved is loaded (with additional column and with manual selection)
+
+
+
+Result:
+
+* The list is opened, but the manual selection is ignored.
+
+* The query is not recoginized, so no ""Save"" button and no query name next to the iteraplan logo"		Bug	iteraplan PO	25/Oct/16 1:11 PM	26/Oct/16 11:20 AM														"26/Oct/16 9:47 AM;msr;Please check this, too:
+
+Another defect with probably the same root cause appeared:
+
+* Open the Landscape Diagram
+
+* Filter by Complexity = high
+
+* Click on Filter\Manual Selection and select on the first three entries
+
+* Click on ""Apply"" and ""Close""
+
+* Reopen Filter\Manual Selection
+
+
+
+Actual: All Checkboxes are active
+
+
+
+Expected: Only the first three checkboxes should be active"	26/Oct/16 11:00 AM;madu;#4852 for review in trunk	"26/Oct/16 11:07 AM;madu;Marcel,
+
+
+
+I can't reproduce filters issue with LSD under IE edge (in IE10 emulation) and Google Chrome 56.0.2899.0 canary (64-bit) with the current trunk.
+
+Could you please double check?
+
+"	26/Oct/16 11:14 AM;msr;The problem in the comment is not reproducible anymore. Thanks.	26/Oct/16 11:20 AM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-120																																																		

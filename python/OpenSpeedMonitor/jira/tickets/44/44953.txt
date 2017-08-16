@@ -1,0 +1,6 @@
+Visualization of processes does not follow logic sequence in diagrams	"It shall be possible to give a logic sequence of e.g. processes in diagrams. Otherwise it could happen that the sequence of processes could be
+
+Sales => Production => Product development => Purchase => ...
+
+
+Especially when presenting towards senior management, this could be a ""red flag"" for a project."		Improvement	iteraplan PO	19/May/11 9:59 AM	19/May/11 5:41 PM					diagram									19/May/11 5:41 PM;kvo;Worksforme - Reports use the order of the elements																																																						

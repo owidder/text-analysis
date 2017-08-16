@@ -1,0 +1,29 @@
+Delete of selfrelations	"Go to SingleElementViwe of Funds txs # r12
+
+
+
+Add ""Funds tx"" in the field for adding relations.
+
+
+
+Funds tx # r13 is shown once
+
+
+
+Delete the successor Funds tx # r13
+
+
+
+Add ""Funds tx"" in the field for adding relations.
+
+
+
+Expected: Funds tx # r13 is shown once
+
+
+
+Current: Funds tx # r13 is shown twice, one of them adds the just the deleted relation, the other one is working correctly
+
+
+
+Probably the delete function is not working correctly in this case"		Bug	iteraplan Thunderduck	04/Apr/17 9:22 AM	10/Apr/17 12:21 PM																																																																				

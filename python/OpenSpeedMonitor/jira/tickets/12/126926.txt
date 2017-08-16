@@ -1,0 +1,5 @@
+TBD: Supporting Queries in Admin GUI	"Implement very simple and basic supporting queries with directly visible results similar to the classic client:
+
+https://doc.iteraplan.de/display/iteraplan55/Supporting+Queries
+
+"		New Feature	iteraplan Speedbird	12/Jul/17 10:27 AM																																																																					

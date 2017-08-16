@@ -1,0 +1,1 @@
+Metamodel extensions Q3 2017			Epic	iteraplan Thunderduck	09/Jun/16 3:59 PM						metamodel									08/May/17 1:04 PM;aan;For changes in the elastic model in the old client compare ITERAPLAN-3040																																																						

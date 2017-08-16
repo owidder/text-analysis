@@ -1,0 +1,7 @@
+WptServer in der Location-Spalte der Job-Liste mit anzeigen	"Es sollten zwei Zeilen angezeigt werden:
+
+
+
+<WptServer>
+
+<Location>"		Improvement	OpenSpeedMonitor	31/Jan/17 10:22 AM																																																																					

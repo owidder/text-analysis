@@ -1,0 +1,11 @@
+ConnectivityProfile Management verbessern	"Der ConnectivityProfileController hat im Moment folgende Eigenarten:
+
+* Man kann Connectivities nur deaktivieren, nicht löschen. Dies ist aus Datenkosistenz-Gründen richtig, allerdings sollte der Benutzer das nicht wissen. Der Knopf ""Deaktivieren"" impliziert, dass man die Connectivity auch wieder aktivieren kann, was nicht möglich ist.
+
+* Obwohl eine Connectivity gelöscht (dekativiert) wird, hängt sie weiterhin an Jobs.
+
+* Werden Connectivities editiert, werden sie in Wahrheit kopiert und die alte Connecitivity ist inaktiv und heißt ""_old_X"". Das ist uncool und hilft niemanden. Insbesondere da die Jobs danach noch die *alte* Connectivity referenzieren
+
+
+
+Wir sollten daher einfach mal neu überdenken, was editieren/löschen von Connectivities eigentlich bedeutet und wie sich dies zB auf die ResultSelection und den JobController auswirkt."		Story	OpenSpeedMonitor	27/Mar/17 10:12 AM																																																																					

@@ -1,0 +1,2 @@
+SQL-Script: Umstellung Generierung MeasuredEvent-Name	"Entsprechend der Beschreibung von Punkt 1) in IT-68 muss der im Zuge der Datenmigration erzeugte MeasuredEvent-Name angepasst werden:
+Statt {code}[Page.name]:::[Job.label]{code}soll jetzt nur noch {code}[Job.label]{code}als MeasuredEvent.name gesetzt werden"	10449	Sub-task	OpenSpeedMonitor	13/Aug/13 1:53 PM	13/Aug/13 2:13 PM														13/Aug/13 2:13 PM;rhe;Gehört dazu																																																						

@@ -1,0 +1,18 @@
+integrate Context Overview Diagram into UI	"Integrate the Context Overview Diagram in to the Context Visualizations of ISR, below Neighborhood.
+
+Add item to dropdown.
+Block below might work without changes:
+* graphics type SVG, JPG, ...
+* create link for ...
+* download
+
+Selenium test is extra."	46567	Sub-task	iteraplan PO	07/May/14 4:03 PM	08/Jul/14 10:03 AM														"24/Jun/14 2:10 PM;fam;Following revisions belong to this ticket
+
+23064
+23101
+23102
+23105"	"27/Jun/14 10:17 AM;dop;The following issues have been detected while reviewing:
+
+# TabFastExport.jsp: According to [~sfe] it is possible to do the case selection whether to render the select menu with visio option or without it in the jsp file. That would be nicer instead of rendering two different select lists and hide one. 
+
+Other comments for review has been recorded in Ticket ITERAPLAN-2506."	07/Jul/14 11:38 AM;dop;Review: The id of the nodes in SVG are always the same. Please remove the ids if they are not used or provide unique id's, if they are used. 																																																				

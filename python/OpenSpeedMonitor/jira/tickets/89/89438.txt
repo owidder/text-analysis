@@ -1,0 +1,43 @@
+> Zeichen wird nicht dargestellt.	"Wir verwenden in Merkmalen das > Zeichen. Dieses wird jedoch lediglich durch eine leichten grauen Balken dargestellt. Das < Zeichen wird korrekt angezeigt.
+
+
+
+Siehe Beilage"		Fault	iteraplan Support	05/Jul/16 10:43 AM	08/Aug/16 7:00 AM														"05/Jul/16 10:43 AM;alfred.studer@emmi.com;
+
+[^Fehlendes Zeichen.docx] _(44 kB)_"	"06/Jul/16 9:23 AM;cst;Hallo Kollegen und Kolleginnen,
+
+konnte das Verhalten nachvollziehen, wenn in einem ""Text Attribute"" Feld das  Zeichen > eingegeben
+wird, wird dieses nach Speichern nicht mehr angezeigt. 
+
+Wird diese z.B. so in die Zeile eingebeben "">"" funktioniert dieses. Solange ein anderes Sonderzeichen vor dem > steht wird dieses angezeigt. Ein Leerschritt führte nicht zum gewünschten Ergebnis. 
+
+Habe den Vorgang in folgenden Browsern geprüft:
+
+- IE 11
+- Firefox 47.0.1
+- Google Chrome Version 51.0.2704.106 
+
+Viele Grüße,
+
+Christoph
+"	"06/Jul/16 10:32 AM;cst;!Zeichenfehlt.PNG|thumbnail!
+
+!Zeichenfehlt2.PNG|thumbnail!
+
+
+
+"	"06/Jul/16 5:17 PM;cst;Sehr geehrter Herr Studer,
+
+vielen Dank für Ihre Anfrage zum oben genannten Thema.
+
+Das Verhalten konnte hier im ""Classic Client"" der Version 5.2 nachvollzogen werden. 
+Es wird hier keine technische Lösung, für das gemeldete Verhalten, in Version 5.2 geben. Der Grund dafür ist, dass wir das Problem im neuen interaktiven Client direkt beheben werden, so dass Sie dort mit Ihren Attributnamen besser umgehen können.
+
+Folgender ""Work a round"" kann durchgeführt werden, um sich das Symbol trotzdem anzeigen zu lassen. 
+Würden Sie bitte das Zeichen > mit Anführungsstrichen "">"", oder mit einem anderen Sonderzeichen  z.B: _>_  / ( >) im Textfeld eintragen. 
+Danach wird das Symbol mit ausgegeben. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+"																																																			

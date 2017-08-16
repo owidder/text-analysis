@@ -1,0 +1,8 @@
+Small design issues on the import page	"Steffen R. report the following issues to the support:
+
+On the Import Page (Mass Data > Export/Import) the PopUp to the Import Strategies contains the information that there are three strategies, but there are only two.
+
+Furthermore, Steffen proposes to rename the German title of the PopUp into “Import-Strategien”.
+The last point, he has reported is that a click on the label ""Include Metamodel changes"", in addition to the selection of import strategies, is not working.
+
+The value of the ""for"" on the <label> not fit to the ID of the checkbox <input>."		Bug	iteraplan PO	09/Apr/14 6:59 AM	29/Apr/14 9:53 AM					gui	import																																																														

@@ -1,0 +1,7 @@
+Reduce the memory consumption of the component model	"The component model contain at the moment the Building Block entities, which are serialized/deserialized. In most case we just need the name and id. 
+Check if is possible to reduce the memory consumtion."		Improvement	iteraplan PO	12/Oct/11 6:24 PM	18/Jul/14 7:44 AM					components	performance								23/May/12 2:39 PM;tse;will be obsolete - new iteraplan client will not use component models any more.	"18/Jul/14 7:43 AM;wfr;Close.as a ticket, 
+
+Optimizations _must_ be done top down, from a problem of the emergent system down to a property of the component.
+
+Do not optimize components without a problem.
+"	18/Jul/14 7:44 AM;wfr;no optimization, no apparent problem																																																				

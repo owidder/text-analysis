@@ -1,0 +1,1 @@
+Job anlegen mit nur einem Tag führt zu Exception	Beim Anlegen eines Jobs können Tags vergeben werden. Gibt man nur einen Tag an, kommt es zu einer Exception: "Cannot cast string to list".		Bug	OpenSpeedMonitor	18/Aug/16 9:33 AM	18/Aug/16 11:38 AM																																																																				

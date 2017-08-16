@@ -1,0 +1,17 @@
+Attributes with XWIKI Syntax crashes in the attributes and the attribute single page	"Can be reproduced in the current trunk 
+
+ # Open iteraplan and change into the classic client 
+
+ # Go into ""Administration"" and ""Attributes"" 
+
+ # Edit the Attribute ""Costs"" 
+
+ # Enter the following part into the part ""Description"" 
+
+{{*The format should be: \{}}{{[[}}{{}//first name//\\\{\\\{\{, }}}//given name//\\\{\\\{\{>>}}}//Notes-Link to entry in Who is Who//\\\{\\\{\{]]}}}**An example: \{{{[[GROER, Michael>>Notes://OVIDNOTES01/C1256A7A00395618/35185D46215ED089C125728A005F8AE1/59301C8BFDDE4411C1256AE20025F6A6]]}}}*}}
+
+ # Save and change into the attribute list and the attribute single page
+
+ # The page opens empty with code fragments
+
+"		Bug	iteraplan Speedbird	07/Mar/17 10:50 AM	21/Mar/17 2:30 PM																																																																				

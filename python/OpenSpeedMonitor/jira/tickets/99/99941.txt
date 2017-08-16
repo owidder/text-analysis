@@ -1,0 +1,49 @@
+iteraplan Classic: Adapt Graphics Reactor-REST API and create one new	"Add backend REST API functionality to reply to the polling of the New Client.
+
+Architecture details by [~sfe] or [~ach]"		Bug	iteraplan PO	20/Oct/16 1:19 PM	25/Oct/16 4:46 PM														"25/Oct/16 2:16 PM;aan;POST api/reactor/scripts
+
+Respond with 200 
+
+{code}
+
+{
+
+  success: true/false, (execution could been started or not)
+
+  messages: [""responseMessage"", ""responseMessage2""]
+
+}
+
+{code}
+
+if script could be started: responseMessage = 'Script ""' + path + '"" execution started.'
+
+if script could not be started: responseMessage = 'Script ""' + path + '"" cannot be executed, a different script is running'
+
+
+
+GET api/reactor/scripts
+
+Respond with 200 
+
+{code}
+
+{
+
+  isRunning: true/false,
+
+  success: true/false, (only send if calling user is the starter of the last script)
+
+  messages: [""responseMessage"", ""responseMessage2""]
+
+}
+
+{code}
+
+If reactor is running return username and name of running script and time started.
+
+If ready and the last script was started by the user the result is returned.
+
+Otherwise only isRunning = false
+
+"																																																						

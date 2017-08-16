@@ -1,0 +1,5 @@
+Trim above/below in Dashboards anzeigen	"Wenn hier Werte eingetragen sind sollte oberhalb des angezeigten Dashboards ein deutlich sichtbarer Hint stehen, welche Einschränkungen aktuell ausgewählt wurden. 
+
+
+
+Ansonsten passiert es sehr leicht, dass man dies vergisst und sich über fehlende Daten wundert."		New Feature	OpenSpeedMonitor	19/Feb/16 11:02 AM	06/Oct/16 3:05 PM																																																																				

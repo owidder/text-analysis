@@ -1,0 +1,11 @@
+Filtering doesnt work	"Adding more then 1 filter ""removes"" the function of the filter before. 
+
+Test with Filter ""Show with properties of"" too!
+
+
+
+Add inner filter:
+
+""Show with enumeration properties"" - ""System size"" - ""big"" -> 4 outer boxes
+
+""Show with numeric properties"" - ""Value added"" - ""1-10"" -> 6 outer boxes"		Bug	iteraplan PO	22/Oct/15 10:03 AM	23/Oct/15 10:18 AM					filter	ncd								23/Oct/15 10:18 AM;lwi;seems to work now! checked code and tested manually with different combinations of filters. hard to check every combination of all possible filters ;) 																																																						

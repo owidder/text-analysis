@@ -1,0 +1,5 @@
+PageAggregation Chart Sortierung nach Customer Journey kaputt	"Zum Beispiel in [diesem Graph|http://dev.openspeedmonitor.wpt.iteratec.de/pageAggregation/show?setFromHour=&setToHour=&from=08.12.2016&fromHour=0%3A00&to=20.01.2017&toHour=11%3A43&selectedFolder=7&selectedPages=4&selectedPages=11&selectedPages=2&measurand=%7B%22values%22%3A%5B%22docCompleteTimeInMillisecsUncached%22%5D%7D#] einfach mal nach einer Customer Journey sortieren lassen.
+
+
+
+Dan verschwindet das Grid und die Achsenbeschriftung, es gibt viele Fehler auf der Javascript Konsole beim Hovern eines Balkens."		Bug	OpenSpeedMonitor	20/Jan/17 11:45 AM	23/Jan/17 2:19 PM																																																																				

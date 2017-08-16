@@ -1,0 +1,1 @@
+Tab Reportings using HTML Buttons instead of GIFs	The and/or buttons in Tab.Reportings are Buttons, which are translated to German, but all the other languages are missing and it is not really state of the art.		Bug	iteraplan PO	25/Aug/13 1:39 AM	30/Dec/15 3:17 PM																																																																				

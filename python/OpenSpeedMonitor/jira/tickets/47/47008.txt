@@ -1,0 +1,21 @@
+Error when setting the version for similar TC with Excel Import	"Tobias report the following error:
+
+??...Der zweite ProblemReport ist entstanden, weil ich bei bestehenden technischen Bausteinen in den Namen noch ein Raute eingeführt habe. Da hat es dann im Stacktrace Duplikatfehler gegeben. Nun ist tatsächlich ein Spezialfall....??
+
+Reproduction:
+# add two similar Technical Components like “Apache 2.0” and “Apache 3.0”
+# download the current data model as excel
+# separate the version number with an # in the excel sheet and import the file 
+# after the last import step you get an error
+
+Tobias reported the error for iteraplan 3.3.2.
+But iteraplan 3.3.2 you get an different error message as in the trunk.
+"		Bug	iteraplan PO	30/Sep/14 9:19 AM	20/Oct/14 11:17 AM														01/Oct/14 1:50 PM;sfe;Please add a simple example to the documentation, as it may be hard to understand otherwise	02/Oct/14 7:53 AM;isc;Ok, I have added a simple example to the documentation. 	"13/Oct/14 7:39 PM;a.bosch;Same error occurs if you try to import programming languages as TC and you try to create the following three records:
+- C
+- C++
+- C#
+
+It seems that C# is interpreted as another release of C but as it has no version number it reported to be duplicate."	"20/Oct/14 11:26 AM;sfe;@[~a.bosch]:
+As '#' is not a valid character for names of building blocks in iteraplan, you cannot create a TC named 'C#' using the iteraplan GUI either.
+Therefore you need to create this TC with a different name in any case, for example ""C Sharp"" as [wikipedia|http://en.wikipedia.org/wiki/C_Sharp_%28programming_language%29] does, for example."	"20/Oct/14 11:50 AM;a.bosch;@sfe :
+Thanks, I already bypassed that issue like you mentioned ... (/)"																																																		

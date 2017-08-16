@@ -1,0 +1,33 @@
+Remove the Dashboard	"Not the custom Dashboard, but the Classic dashboard: Remove it completely from iteraplan. (JAVA BACKEND)
+
+
+
+It will be replaced by a customizable Graphics Reactor script. A page in the new client (like the one for the customizable Info Flow) should explain some details. The menu entry in the classic client and a new tile in the new client should bring up this new page.
+
+
+
+* route: ""#/classicDashboard/
+
+
+
+
+
+See attached file for the XSL script.
+
+"		Improvement	iteraplan PO	09/Mar/16 5:37 PM	26/Oct/16 4:12 PM					dashboard									"14/Oct/16 3:28 PM;msr;Done:
+
+* Tile and Dummy page created in the New Client
+
+* Xsl-Script incorporated
+
+* Create English & German text
+
+* Link from classic client menu to new route
+
+
+
+Follow-up-ticket:
+
+* Remove classic client code of classic dashboard: Follow-Up-Ticket: IPTS-248"	"25/Oct/16 11:16 PM;msr;Still missing:
+
+Delete link from Classic Client Visualisation\Overview to new client dashboard."																																																					

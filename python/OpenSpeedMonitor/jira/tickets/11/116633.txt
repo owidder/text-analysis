@@ -1,0 +1,213 @@
+History for element type	"*Summary:*
+
+
+
+History of changes for element type.
+
+
+
+*Scope and UI:*
+
+
+
+New button for history
+
+ * icon (needs to be created IPTS-820)
+
+ * located between filter button and tree view (replacing mass update button)
+
+ * pop-up window
+
+* After clicking on the button a loading indicator is shown
+
+
+
+Mass Update button:
+
+ * needs to be moved up to buttons save, new etc.
+
+ * at the end of this line
+
+ * changing icon to: *playlist and check*
+
+ * text next to icon: Mass Update (german: Massenupdate)
+
+
+
+Tabular layout, as it is in case of single element history view
+
+
+
+Sorting and reordering of columns
+
+ Quicksearch on the left side
+
+
+
+Download function
+
+ * icon *file download*
+
+ * Export (german: Export)
+
+ * located on the right side, same line as quicksearch
+
+ * exports only those element which are currently shown, not the whole history as it could be very long process
+
+
+
+Information, that need to be included:
+
+ * Time (german: Zeitpunkt)
+
+ * Author (german: Autor)
+
+ * Change Type (german: Änderungstyp)
+
+ * Changes (german: Ändernungen)
+
+
+
+Pagination: Step-by-step loading is necessary, as the amount of data might be huge
+
+ * secondary text button
+
+ * Load more (german: Mehr laden)
+
+ * shows another 50 elements - to be confirmed!
+
+* The pagination should be done on the client-side
+
+* Either use next-50-elements-button or try to use ag-grid-infinite-scrolling: https://www.ag-grid.com/javascript-grid-infinite-scrolling/#gsc.tab=0
+
+
+
+
+
+h1. {color:red}UPDATE: {color} Updated specifications:
+
+
+
+1) Specify change types to be displayed in Change Type column for:
+
+- element delete
+
+- element create
+
+- attribute assigment
+
+- assigned attribute delete
+
+
+
+
+
+Answer: 1)
+
+- DELETE 7 GER: ""LÖSCHEN""
+
+- CREATE / ""ERSTELLEN""
+
+- ATTRIBUTE ASSIGNMENT / GER:""MERKMAL HINZUFÜGEN""
+
+- ATTRIBUTE REMOVEMENT / GER: ""MERKMAL ENTFERNEN""
+
+
+
+2) Specify view of cell in Changes column for deleted/created elements
+
+
+
+Answer 2)
+
+NAME deleted / GER: NAME gelöscht
+
+NAME created / GER: NAME erstellt
+
+
+
+3) Specify view of cell in Changes column for attribute ""assigned to""/""deleted from"" type
+
+
+
+Answer 3)
+
+ATTRIBUTE-NAME assigned / GER: ATTRIBUTE-NAME hinzugefügt
+
+ATTRIBUTE-NAME removed / GER: ATTRIBUTE-NAME entfernt
+
+
+
+
+
+4) Do we need showing ""activated/deactivated history"" item in the history list (like we do for element history)?
+
+
+
+Answer 4) Yes
+
+UPD:
+
+So, ag grid infinity (or as it is called in newer ag grid version - ""virtual) scrolling works correctly and pretty fast. But some of properties are not supported in this mode. 
+
+
+
+E.g. in case of mass delete: multiple elements can be shown in Changes cell and height of row needs to be updated. But unfortunately ag-grid ""getRowHeight()"" callback is not called when infinity/virtual mode is active.
+
+(Found an answer here: https://github.com/ceolter/ag-grid/issues/693)
+
+
+
+So I have used ag grid pagination, and try to continue with it.
+
+
+
+What do yo think?
+
+How it looks now:
+
+
+
+Answer to UPD:
+
+Yes, the pagination looks good
+
+
+
+5) also the case when user has not turned historization and there is nothing to show yet: what have to be displayed when history button is pressed?
+
+
+
+Answer 5): Do not show the history-button if the history is empty because it has never been activated
+
+
+
+6) any permission handling for type history?
+
+
+
+Answer 6) The Building-Block-Type read-permission and the viewPermission are necessary
+
+
+
+7) ""exports only those element which are currently shown"": currently current page is exported (max. 50 elements per page)
+
+
+
+Answer 7): Perfect
+
+
+
+{color:red}UPDATE; {color} how it should work if history has been enabled before, but now is disabled. Shoud the button be shown or not?
+
+The button should be shown in this case
+
+"		New Feature	iteraplan Speedbird	27/Mar/17 10:39 AM	19/Jun/17 10:27 AM														"15/Jun/17 1:37 PM;roia;[~msr]
+
+
+
+Answer 5): Do not show the history-button if the history is empty because it has never been activated
+
+
+
+There's no answer how it should work if history has been enabled before, but now is disabled. Shoud the button be shown or not?"	16/Jun/17 12:56 PM;msr;In this case the button should be shown.																																																					

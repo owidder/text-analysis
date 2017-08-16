@@ -1,0 +1,1 @@
+Aktueller Dump funktioniert nicht mit den Changelogs des Feature Branches			Bug	OpenSpeedMonitor	16/Jun/16 10:37 AM	16/Jun/16 4:22 PM																																																																				

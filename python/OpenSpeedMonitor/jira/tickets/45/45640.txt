@@ -1,0 +1,16 @@
+Create a DateInterval Hibernate entity	"Create a {{DateInterval}} entity class with corresponding mapping etc. It should have following properties:
+* Name
+* Default colour (like {{EnumAV}} objects have them)
+* Start date - reference to a {{DateAT}} attribute type
+* End date - reference to a {{DateAT}} attribute type
+
+When one of the referenced {{DateAT}} objects is deleted, this should cascade to the DateInterval as well.
+
+Then, create a corresponding DAO and Service implementation that allow retrieving all available DateInterval objects.
+
+----
+
+The idea is to have several of such DateIntervals defined and use them in masterplan diagram configuration later on.
+In a first step, we only need these DateIntervals as read-only objects, i.e. we provide the customer some SQL to prepare the desired DateIntervals and that's it - no UI for creating and changing those objects.
+"	45634	Sub-task	iteraplan PO	08/Mar/13 1:57 PM	08/Apr/13 5:47 PM					dateinterval	hibernate	masterplan							08/Apr/13 5:47 PM;sfe;looks good	"10/Apr/13 3:42 PM;sry;Nice. 
+There is one side-effect, though, reported in ITERAPLAN-1497. Please have a look at it soon."																																																					

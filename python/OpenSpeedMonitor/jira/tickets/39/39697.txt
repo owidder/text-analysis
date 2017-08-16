@@ -1,0 +1,5 @@
+Rickshaw-Datenpunkte werden alle am oberen Rand des Diagramm-Bereichs dargestellt 	"Wenn man mit der Maus über die Datenpunkte fährt erscheinen die Hervorhebungen der Datenpunkte und das Popup mit den Infos zum Datenpunkt am oberen Rand des Diagramm-Bereichs statt wie bisher über dem Punkt.
+
+
+
+Siehe Screenshot"		Bug	OpenSpeedMonitor	05/May/15 12:11 AM	05/May/15 9:50 AM														05/May/15 9:53 AM;rkr;Commit 8cd192b4ba64871490c579c61a3ee61b8ff43992																																																						

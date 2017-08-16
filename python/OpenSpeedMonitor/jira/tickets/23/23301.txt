@@ -1,0 +1,3 @@
+Option imageCaching mit aufnehmen	"Christian Wißmach hat im Multistep-WPT-Server eine Option vorgesehen, die Wasserfälle und Connection-Ansichten in der Detail-View schon beim Erstellen des Results als jpg's zu erzeugen (statt dies jedes Mal beim Aufrufen zu tun). Dadurch wird das Result auf der Platte natürlidch deutlich größer. Die Anzeige dafür performanter.
+
+Wir sollten prüfen wie viel das jeweils ausmacht und wenn's passt diese Option zum default im OSM machen. Auf jeden Fall sollte in den Advanced-Reiter des Jobs eine Checkbox für diese Option."		Bug	OpenSpeedMonitor	24/Oct/14 8:45 AM	18/Jan/17 4:14 PM																																																																				

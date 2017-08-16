@@ -1,0 +1,6 @@
+Users have to have 'delete' permission on IS to change relationships	"I gave users create/modify but not delete permission on IS, and they were unable to add or remove relationships to the IS. When I added delete permissions, they were able to update the IS.
+
+Modify permission should include modifying relationships (interfaces, etc.).
+
+As a workaround I am giving all users delete permission, but that does not follow our governance model."		Bug	iteraplan PO	18/Oct/13 6:13 PM	15/Jul/14 9:24 AM														25/Jun/14 2:42 PM;fka;Is this still applicable? needs to be reproduced.	"15/Jul/14 9:24 AM;sfe;Business Mappings have their own permission which determines whether they can be created or deleted, even from the edit mask of, for example an Information System. This is intended.
+Aside from that I was able to add or remove relations."	15/Jul/14 9:24 AM;sfe;Probably fixed within the scope of another issue.																																																				

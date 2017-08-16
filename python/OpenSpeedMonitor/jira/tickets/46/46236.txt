@@ -1,0 +1,8 @@
+Nesting Cluster test EE / Win7 / IE9 / oracle / default language: english	"Test the iteraplan Nesting Cluster Diagram against the current test specification with the following environment:
+
+. iteraplan EE
+. Windows 7 (32 bit)
+. Internet Explorer 9
+. oracle
+. English
+"	46148	Sub-task	iteraplan PO	25/Oct/13 3:12 PM	25/Oct/13 3:19 PM																																																																				

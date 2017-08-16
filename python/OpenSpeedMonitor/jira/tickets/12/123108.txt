@@ -1,0 +1,21 @@
+URL of the IFD changed	"In iteraplan 5.5 in the IFD the layout parameters (e.g. Stiffness) were not in the URL. Now the loading mechanism of the IFD is not working without this parameters in the URL. This probably causes saved queries of release 5.5 to be not working in 6.0.
+
+
+
+Reproduce:
+
+
+
+Go to the demo of 5.5 and add a filter to the IFD. Then copy the URL that you obtain to the current trunk. It won't open, and there is the following error:
+
+
+
+{color:#ff0000}TypeError: An exception occurred: Cannot read property 'split' of undefined at e.create (+ng-slider.min.js:6+){color}
+
+
+
+Expected behaviour: The diagram is opened.
+
+
+
+ "		Bug	iteraplan PO	01/Jun/17 9:14 AM	16/Jun/17 5:11 PM														14/Jun/17 2:22 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-687																																																						

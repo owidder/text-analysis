@@ -1,0 +1,17 @@
+Attribute - "Activated for the following Building Block Types" permission handling	"*Reproduce:*
+
+ * Login with user which doesn't have permissions for some Building Block Types
+
+ * Open some single attribute view page (e.g Accountability)
+
+
+
+*Actual:* in ""Activated for the following Building Block Types"" section displayed translation keys for building block types without permissions (see screenshoot)
+
+ *Expected:* in ""Activated for the following Building Block Types"" section all building block types will be displayed/named correctly
+
+(Every user with permission to edit attributes, can activate an attribute for all generally available building blocks, not only for the ones he has the building block permission for)
+
+
+
+Blocked by IPTS-833 and IPTS-834"		Improvement	iteraplan Speedbird	12/Apr/17 10:42 AM	22/May/17 6:37 PM														28/Apr/17 11:51 AM;anhv;also I found it in Administration -> Roles and Permissions(single view) !screenshot-1.png|thumbnail! 																																																						

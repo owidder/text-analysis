@@ -1,0 +1,2 @@
+Information Flow Diagram - PDF Export: Line Types (solid, dotted,...) in Legend wrong	In the PDF output of an information flow diagram, the line samples in the legend appear to be solid		Bug	iteraplan PO	19/Mar/13 4:22 PM	30/Dec/15 2:32 PM					diagram	pdf								"19/Mar/13 4:56 PM;sry;When printed to paper, it looks fine. This is rather a PDF reader rendering issue on screen.
+The fine background line should be removed from the legend, though."																																																						

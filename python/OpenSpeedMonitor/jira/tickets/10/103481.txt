@@ -1,0 +1,25 @@
+Zoom	"*Summary*
+
+Add GoJS zooming for the Explorer (Same as in Portfolio diagram). 
+
+
+
+*Implementation details*
+
+* Initially diagram is scaled to whole window size ({{initialAutoScale}} property is set to {{go.Diagram.Uniform}}), but not bigger then 100%.
+
+* If user starts zooming diagram - zoom value is saved in URL.
+
+* Steps of 5%, minimum: 5%, maximum: 200%
+
+
+
+*UI*
+
+Legend: 
+
+* Zoom is always shown in the legend with percents. 
+
+* As in all diagrams, in the last position, before timestamp. 
+
+* Default 100% Zoom is not shown in the legend."		New Feature	iteraplan Speedbird	22/Nov/16 4:59 PM	21/Dec/16 3:15 PM														14/Dec/16 10:40 AM;dmkh;Review is done, minor comments here: https://iteraweb.iteratec.de/fisheye/cru/IP-223	14/Dec/16 3:25 PM;viol;Please, add this revision to review #5482																																																					

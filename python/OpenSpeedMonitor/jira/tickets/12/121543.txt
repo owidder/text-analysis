@@ -1,0 +1,23 @@
+Attribute - Numeric Attribute - Language Change shows old values	"Reproduce with trunk an
+
+ # Open ""Administration"" and ""Attributes""
+
+ # Open ""Costs""
+
+ # Change ""Lower bound"" to ""10.00"" 
+
+ # Change the language to ""German"" 
+
+ # The side will be reloaded and shows ""Untere Schranke: 0,00"" 
+
+ # After reloading the page it will be shown correctly
+
+
+
+Actual:  On switching the language the old value of the edited attribute will be shown
+
+Expected: After change the language the current value will be shown 
+
+
+
+Check, if it is related to the delay of the server response."		Bug	iteraplan Speedbird	16/May/17 2:54 PM	25/May/17 5:49 PM																																																																				

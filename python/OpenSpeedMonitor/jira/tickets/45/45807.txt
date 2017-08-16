@@ -1,0 +1,48 @@
+pdf diagram creation writes weird stuff to sysout	"to reproduce:
+configure a diagram and generate a pdf.
+=> weird console output:
+{code}
+resolve data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAYAAACI7Fo9AAAGpklEQVR42u3dUY7b
+MAxF0ex/0+0aBhIfSflcoF+ZTp3ERwUI2/r9k/R8Px+BBLok0CWBLgl0SaBLAl0S
+6JJAl0CXBLok0CWBLgl0SaBLAl0S6BLokkCXBLok0CWBLgl0SaBLAl0CXRLokkCX
+BLok0CWBLgl0SaBLAl0Cvelgfr/on78eT/f7v318p7//r69Xf/6nx5M+v0AHHXTQ
+QQcddNBBBx100DdBT//+29CqT7zpC+u086X7/AIddNBBBx100EEHHXTQQX8J+umJ
+dnpipOHdHm5VD8vSx9M9rAMddNBBBx100EEHHXTQQQe97os4/X3VC0n38K97YUkP
+T0EHHXTQQQcddNBBBx100EGf+0VsWwi6bwJKwwYddNBBBx100EEHHXTQQQc9B33a
+QtJ900n1QlY9TPva+QU66KCDDjrooIMOOuigg74Zenq45PVvve7hkKB7HXTQQfc6
+6KCD7nXQQd9T9YMYbv989TAu/f5fggY66KCDDjrooIMOOuigg/71Ydw2KNPgpL/f
+14Z/oIMOOuiggw466KCDDjrohnF1w7T0iXr6/qYdX/eGG7c/TxfMgA466KCDDjro
+oIMOOuhfGsZ1D/eqT4zuYeW2hx9O30DCMA500EEHHXTQQQcddNBB/9Iw7jbE6uPp
+3lCgG9L2hfilm2ZABx100EEHHXTQQQcddNDTw7TuYVj3cO30eLdtiti9cBnGgQ46
+6KCDDjrooIMOOugvQ58+/Jh2k0X3+532oI/tD+cEHXTQQQcddNBBBx100EH/t7g0
+vNvDtDSs6uOf9h9B9QU4hnGggw466KCDDjrooIMOumFcHYxpkKdvuND9sMzpFyyB
+DjrooIMOOuiggw466KC/BL17WDUNRvXP3/68pg0n0+cj6KCDDjrooIMOOuiggw76
+l6Bve/ji7eHStGFleqGq/vvV/x7ooIMOOuiggw466KCDDvpk6N3DvPRwqXsTxO03
+taQXJhfMgA466KCDDjrooIMOOuig1w2rqqFvg1c9jHp9wwnQQQcddNBBBx100EEH
+HfQvQ0//qV5Yut9feuHoHp558ATooIMOOuiggw466KCDDnrdcKf6QQPTjje90FQP
+D9PfX3phAh100EEHHXTQQQcddNBBBz33RaVPtOkbXnQPX29/vptggw466KCDDjro
+oIMOOuigT18Yqocx24d704Z52xZa0EEHHXTQQQcddNBBBx30l6F339RQfaJNv2kj
+PWyb/vkYxoEOOuiggw466KCDDjroX4Levcnd9gt0ujcomLZJZvWw1yaLoIMOOuig
+gw466KCDDrphXN0X033iT1tYum+iSf98+j8W0EEHHXTQQQcddNBBBx30TcO4aRdw
+dP9897ApPQy8/XlUHx/ooIMOOuiggw466KCDDvqXhnHdJ9bthaP7Jov0TT7pTSy3
+bbIJOuiggw466KCDDjrooIP+8jDOBTe9N2WkP580NDe1gA466KCDDjrooIMOOuhf
+gl49HEsP+9Kw0sOt6cebHraCDjrooIMOOuiggw466KC/PIybdoHHtgtwTt9v9/Cw
+G74HT4AOOuiggw466KCDDjrooM/ZhG/acC/9eXcPV6ffxAQ66KCDDjrooIMOOuig
+g/4y9NdP3GnDy+rjTz/IYfoFS6CDDjrooIMOOuiggw466JOhpyFO21Cg+kEb0xbS
+7g0bpi0UoIMOOuiggw466KCDDjrom+BO2xDg9okxfUODagjpC6a6zz/QQQcddNBB
+Bx100EEHHfTJ0NMnRvpBFtPgdT84o/tBGt3DWNBBBx100EEHHXTQQQcd9E3DuGnD
+v+rhUfrnu4dh0zZZfPlBFaCDDjrooIMOOuiggw466Lc/6GkPe0y/3zTMNOzuC5JA
+Bx100EEHHXTQQQcddNBBz31w3Zswphe6aQtt9fAzfYHTqkEz6KCDDjrooIMOOuig
+gw568QfdfYHH6Ykw/aaW6gd7dC+E3Q+fBB100EEHHXTQQQcddNBBBz1308n0E2H6
+BTK3oXU/eAN00EEHHXTQQQcddNBBBx30e79/O9TpJ3r3wvHywg466KCDDjrooIMO
+Ouigg149XEnDSH/x2zaYmAYjPawzjAMddNBBBx100EEHHXTQX4be/SCE6uFM96Z+
+029q2f7vgQ466KCDDjrooIMOOuigb4YuCXRJoEsCXQJdEuiSQJcEuiTQJYEuCXRJ
+oEsCXQJdEuiSQJcEuiTQJYEuCXRJoEugSwJdEuiSQJcEuiTQJYEuCXQJdEmgSwJd
+EuiSQJcEuqTT/gNdabAHU7PrhAAAAABJRU5ErkJg
+{code}"		Bug	iteraplan PO	27/Jun/13 4:05 PM	05/Dec/13 12:06 PM					QR									"27/Jun/13 4:10 PM;sry;This is caused by Batik -ZXING , the library for generating QR codes-. May an Update of that lib will help.
+It happens while Batik transforms an SVG with a barcode to some other format"	"20/Aug/13 2:44 PM;jmi;Updating the libraries didn't resolve it.
+Decided to wait for now, hopefully a future ZXING-update will fix this issue.
+
+Hence it was also put back on the Roadmap."	"31/Oct/13 6:45 PM;sry;That text is printed during PDF conversion by class {{AbstractFOPTranscoder}} in method {{setupImageInfrastructure}}. That class lives in {{fop-patched-1.0.jar}}.
+
+@[~kgo] Can you recall where the patch file can be found that you have applied against the original FOP sources? I'm afraid we need to patch them again..."																																																				

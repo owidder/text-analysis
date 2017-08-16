@@ -1,0 +1,7 @@
+Deactivate logging of GET-requests to /api/hasChanges in Tomcat-console (Server)	"*Summary:*
+
+Deactivate logging of all GET-requests to {{/api/hasChanges}} in the Tomcat-console and in the Tomcat-Log
+
+
+
+{color:red}UPDATE:{color} INFO-Level and create a property for it to turn it off & on"		New Feature	iteraplan Speedbird	17/Feb/17 11:33 AM	09/Mar/17 4:39 PM																																																																				

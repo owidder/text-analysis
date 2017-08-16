@@ -1,0 +1,11 @@
+Show orphan elements for attributes	"If you activate ""Show orphan elements""
+
+AND attribute is the outer element,
+
+
+
+then show all undefined elements in a new outer box.
+
+
+
+Orphan elements = inner elements without an outer element, i.e. these inner elements have no connection to any outer element"	94301	Sub-task	iteraplan Speedbird	11/Oct/16 11:49 AM	18/Oct/16 10:30 AM														13/Oct/16 4:28 PM;roia;Review done: https://iteraweb.iteratec.de/fisheye/cru/IP-76																																																						

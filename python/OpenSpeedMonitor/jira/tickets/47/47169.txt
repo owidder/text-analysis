@@ -1,0 +1,10 @@
+Business Object as inner element in landscape diagram 	"
+Extend internal diagram Type
+Add new type and relations
+
+Check saving and loading of visualisations
+Extend unit tests
+
+Adjust user documentation
+Add a case to the demo data set
+"		New Feature	iteraplan PO	13/Nov/14 1:50 PM	08/Feb/15 10:53 PM					diagram	landscape								08/Feb/15 10:53 PM;fka;Will be done via the new client																																																						

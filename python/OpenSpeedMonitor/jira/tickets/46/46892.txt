@@ -1,0 +1,3 @@
+Change outer boxes order and update the diagram	"- Change boxes order in a model
+- Recalculate dimentions
+- Redraw the diagram"	46877	Sub-task	iteraplan PO	21/Aug/14 11:00 AM	29/Sep/14 10:10 AM																																																																				

@@ -1,0 +1,6 @@
+Make Reactor log output area scroll automatically	"Reactor log output area should always show the last message. 
+
+*possible solution:*
+* see http://stackoverflow.com/questions/7373081/how-to-have-a-textarea-to-keep-scrolled-to-the-bottom-when-updated"		Improvement	iteraplan PO	17/Jun/15 10:44 AM	02/Jul/15 2:25 PM					reactor									"02/Jul/15 2:25 PM;fam;Checked code and function successful.
+
+Ticket closed."																																																						

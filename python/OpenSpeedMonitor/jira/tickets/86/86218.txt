@@ -1,0 +1,53 @@
+Interactive Client -> Cluster Diagram -> Setzen eines Custom Colorings	"Guten Tag,
+
+
+
+ich befinde mich gerade im Interaktiven Client und konfiguriere ein Cluster Diagram. Als Colouring für das Outer Element kann ich nur ""Default Color"" auswählen. Diese Farbe möchte ich jedoch ändern, um eine Diagramm-übergreifende Farblogik der Inneren Elemente beizubehalten, unabhängig vom Äußeren Element (sprich Technologische Bausteine immer in den gleichen Farbschattierungen von Blau, Infrastrukturelemente immer in den gleichen Farbschattierungen von Grün etc.).
+
+
+
+Die Default-Farben der angezeigten Elemente lassen sich nicht verändern, obwohl der Color-Picker-Dialog angezeigt wird (siehe Screenshot).
+
+
+
+Über eine zeitnahe Rückmeldung, ob und wenn ja wie ich die Farbe ändern kann freue ich mich sehr.
+
+Telefon: +49 40 27076-2584
+
+Mobil: +49 162 2008875
+
+
+
+Mit freundlichen Grüßen
+
+Johannes Püster"		Fault	iteraplan Support	03/Jun/16 11:23 AM	06/Jun/16 3:01 PM														"03/Jun/16 11:23 AM;j.puester@fielmann.com;
+
+!Screenshot.png|thumbnail!"	"03/Jun/16 2:23 PM;msr;Sehr geehrter Herr Püster,
+
+die vorgegebene Standardfarbe (""Default Color"") können Sie nicht ändern. Diese Standardfarben sind für jeden Building Block Type fest vorgegeben (siehe auch Farben im Startbildschirm, z.B. Rot für Informationssysteme, grün für Technische Bausteine oder gelb für die fachlichen Typen). Diese Standardfarben werden konsequent in allen Graphiken und Listen im interaktiven Client verwendet.
+Dass der Colorpicker hier angezeigt wird, ist ein Softwarefehler. Ich habe ein entsprechendes Bugfix-Ticket erstellt. Der Colorpicker darf nur angezeigt werden, wenn ein Coloring nach einem Aufzählungsmerkmal oder Zahlenmerkmal aktiv ist. Sonst nicht. Da Ihre Informationsystem-Domänen kein Coloring nach einem Attribut aktiviert haben, sollte es auch keinen Colorpicker geben.
+
+Mit freundlichen Grüßen
+
+M. Schrumpf"	"03/Jun/16 4:18 PM;j.puester@fielmann.com;Guten Tag Herr Schrumpf,
+
+das wäre soweit gut, wenn der technische Baustein nicht rot werden würde, wenn er nach Informationssystemen geclustered wird (siehe Anhang Screenshot2).
+Umgekehrt werden die Informationssysteme blau, wenn sie nach technischen Bausteinen geclustered werden (siehe Anhang Screenshot3)
+
+Ist dieses Verhalten intendiert?
+
+Mit freundlichen Grüßen
+Johannes Püster
+
+!Screenshot2.png|thumbnail!
+
+!Screenshot3.png|thumbnail!"	03/Jun/16 4:26 PM;msr;[~sfe]: Sieht nach einem Bug aus, wenn mich nicht alles täuscht? Richtig?	"06/Jun/16 3:01 PM;msr;Sehr geehrter Herr Püster,
+
+danke für den Hinweis.
+
+Nein, es handelt sich um einen Softwarefehler, den wir beheben werden. Anbei der Link zum Entwicklungsticket, falls Sie den aktuellen Stand verfolgen möchten:
+https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-4676
+
+Mit freundlichen Grüßen
+
+M. Schrumpf"																																																		

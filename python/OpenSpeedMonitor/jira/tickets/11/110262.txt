@@ -1,0 +1,9 @@
+Verbesserte Default-CSI-Mappings einpflegen	"Die CSI Kurven haben aktuell eine unschöne Einbuchtung:
+
+!Screen Shot 2017-02-01 at 14.57.41.png|thumbnail!
+
+
+
+Die Werte für die Kurven sollten neu interpoliert und in den OSM eingepflegt werden.
+
+"		Task	OpenSpeedMonitor	01/Feb/17 2:59 PM	24/Mar/17 1:59 PM														24/Mar/17 1:59 PM;jwi;Wird im Prinzip von IT-1584 beschrieben.																																																						

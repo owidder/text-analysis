@@ -1,0 +1,3 @@
+Breadcrumbs on Attributetypes not working	"On the detail page of an attribute, the breadcrumb part for the attributetype does not point to the correct url.
+
+Neither for User, User Group, Role, Object-related permissions and attribute groups management pages"		Bug	iteraplan PO	25/Jun/13 12:09 PM	08/Jul/13 6:24 PM					breadcrumbs									08/Jul/13 6:24 PM;gph;Breadcrumb links on these pages are ok now.																																																						

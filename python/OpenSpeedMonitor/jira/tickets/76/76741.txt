@@ -1,0 +1,15 @@
+Create page object for the filter dialog (needed for E2E tests)	"Create an object which provides methods to interact with
+
+the new filter dialog.
+
+Make it sufficiently generic, so that it can be used without modifications in either
+
+of the diagram-specific E2E tests.
+
+
+
+Put it into: "".\tests\e2etest\helpers""
+
+You can find examples of page objects there
+
+"		Improvement	iteraplan PO	11/Mar/16 1:31 PM																																																																					

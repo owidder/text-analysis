@@ -1,0 +1,13 @@
+Wrong coloring with the same properties for outer and inner elements	"Summary: When user selects the same properties for coloring for inner and outer element - the colour takes only from outer elements
+
+Before:
+Use Information System as outer type
+Use Interface as inner type
+
+Steps to reproduce:
+1. Use coloring by complexity for inner element
+2. Use coloring by complexity for outer element
+
+Actual: colours for coloring was taked only from outer elements
+Actual: Colours for colouring should be taked from outer and inner elements"		Bug	iteraplan PO	20/Jan/15 1:37 PM	04/Feb/15 2:28 PM														"04/Feb/15 2:28 PM;dasm;Verified
+(revision 593)"																																																						

@@ -1,0 +1,8 @@
+Date values before (ca.) the year 1800 are not saved correctly	"E.g. try to set the runtime period to 2.2.1701
+It will be saved as 1.2.1701
+
+*Update:*
+This ticket affects setting the runtime period within iteraplan (GUI). Excel Import does not accept dates before 01.01.1900. "		Bug	iteraplan PO	15/Sep/14 5:06 PM	24/Sep/14 12:54 PM					date									"18/Sep/14 8:51 AM;dop;Updated documentation (last sentences on page): http://www.iteraplan.de/wiki/display/upcomingIteraplan/How+to+use+Import+and+Export
+"	"18/Sep/14 9:15 AM;dop;Excel isn't able to handle dates before January 1st 1900. So a warning message has been implemented which indicates that the date format is wrong and should be checked. 
+http://office.microsoft.com/en-in/excel-help/data-types-in-data-models-HA102836946.aspx
+"																																																					

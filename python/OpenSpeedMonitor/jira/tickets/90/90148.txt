@@ -1,0 +1,11 @@
+upload files		80573	Sub-task	iteraplan Quickfox	11/Jul/16 2:34 PM	28/Jul/16 5:00 PM														"28/Jul/16 4:42 PM;msr;Review:
+
+* Code is reviewed and ok
+
+* Tested in New Client: ok
+
+
+
+TODO:
+
+* Test in combination with backend (could not update my backend because build-server is down)"	28/Jul/16 5:00 PM;mwe;Tested functionality: Upload works as expected!																																																					

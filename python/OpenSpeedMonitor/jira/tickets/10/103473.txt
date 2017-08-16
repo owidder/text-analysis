@@ -1,0 +1,15 @@
+Remove code from classic client login	"*Summary:*
+
+Remove uneeded code from classic client login and logout, e.g.
+
+* login.jsp
+
+* logout-menu-entry
+
+* jsp for uploading the license
+
+* ... (maybe more?)"		New Feature	iteraplan Speedbird	22/Nov/16 4:16 PM	11/Jan/17 5:37 PM														"29/Dec/16 8:22 PM;ants;Unmanaged server side exceptions for non-existing pages.
+
+"	"29/Dec/16 8:30 PM;ants;Review done with minor comment:
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-261"																																																					

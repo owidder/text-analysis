@@ -1,0 +1,1 @@
+Remove object related permissions	Remove the object related permissions completely, including DB tables/entries. Put it in a prominent place in the release notes!		New Feature	iteraplan Thunderduck	28/Jun/17 11:47 AM	26/Jul/17 10:17 AM																																																																				

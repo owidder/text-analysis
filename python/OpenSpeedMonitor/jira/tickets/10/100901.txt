@@ -1,0 +1,11 @@
+Treemap: Squarified layout	"The treemap layout from GoJS (http://gojs.net/latest/extensions/TreeMap.html) is ugly when the tree has only one level (our case) - all sections have the same height (or widtht) of a container and the whole diagram looks like zebra :).
+
+
+
+We need to implement  squarified treemap. Some resources.
+
+http://www.cs.umd.edu/hcil/treemap-history/
+
+https://github.com/nicopolyptic/treemap
+
+http://www.win.tue.nl/~vanwijk/stm.pdf"		New Feature	iteraplan Speedbird	28/Oct/16 10:19 AM	02/Nov/16 4:36 PM					TreeMap																																																															

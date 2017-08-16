@@ -1,0 +1,1 @@
+Jenkins slave auf dem SEU projects server einrichten		21405	Sub-task	secureCodeBox	06/Oct/14 10:05 AM	14/Oct/14 1:53 PM														14/Oct/14 1:53 PM;bwo;Jenkins läuft auf projekt.hh.iteratec.de:833, jedoch als eigenständiger Jenkins und nicht, wie ursprünglich geplant als Slave.																																																						

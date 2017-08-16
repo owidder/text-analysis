@@ -1,0 +1,5 @@
+[Landscape Diagrams] text shrinking does not work correctly	"Text shrinking for Landscape diagrams in iteraplan 3.4 does not works anymore like in iteraplan 3.3.x.
+In iteraplan 3.3.0, the text size was for all content elements (in Landscape Diagrams) the same.  In iteraplan 3.4.0 all elements have a different text size. 
+
+With activated text shrinking, the text size of content elements should be for all elements the same. 
+"		Bug	iteraplan PO	18/Dec/14 3:39 PM	18/Dec/14 4:16 PM														18/Dec/14 4:16 PM;fam;Will be solved with new client																																																						

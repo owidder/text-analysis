@@ -1,0 +1,7 @@
+vc85, vc90, vc95, vc99 als neue Metriken aufnehmen	"Ist gibt die neuen Metriken visually complete 85, 90, 95, 99:
+
+[https://github.com/iteratec/webpagetest/commit/9e7ef347d74cc5c10dd2000089da45448f451e2b]
+
+
+
+DIese sollten wir ins EventResult aufnehmen. Bei der Gelegenheit sollten wir auch die TTI aufnehmen: IT-1454"		Story	OpenSpeedMonitor	09/May/17 11:17 AM	18/Jul/17 3:32 PM																																																																				

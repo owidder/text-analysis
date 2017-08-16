@@ -1,0 +1,3 @@
+Sort by date interval column	Sorting is done by start day and then by end date in case of equal start dates.		New Feature	iteraplan PO	10/May/16 11:11 AM	10/Jun/16 1:37 PM														11/May/16 1:54 PM;mwe;Tbd: Sort by start or end date?	"25/May/16 11:42 AM;mwe;Add custom comparator: See the comparator implementation in [ITERAPLAN-4576] and [https://www.ag-grid.com/javascript-grid-sorting/index.php]
+
+Add the date interval comparator to feature columns with type date interval."	08/Jun/16 12:41 PM;mse;Sorting logic defined (see description).	10/Jun/16 1:37 PM;abo;Review OK.																																																			

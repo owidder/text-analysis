@@ -1,0 +1,9 @@
+Check serialization of ModelChangeEventListener	"Timebox 0.5 Day
+
+{{ModelChangeEventListener}} currently contains a transient map whose contents are lost on serialization/deserialization.
+
+Check whether serialization and deserialization of event listeners can happen at times where this is an issue.
+
+
+
+See also {{ModelChangeEventListener#readObject(java.io.ObjectInputStream)}}."		Improvement	iteraplan Thunderduck	16/Sep/16 11:10 AM	07/Nov/16 10:45 AM																																																																				

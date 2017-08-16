@@ -1,0 +1,17 @@
+RELEASE: Filter with operator 'Arbitrary value' won't be display in the legend	"# Open the filter dialog
+
+# Add a filter with the 'Arbitrary value' operator
+
+
+
+*Expected*
+
+The filter also occurs in the legend
+
+
+
+*Actual*
+
+The filter is applied, but there is no entry in the legend"		Bug	iteraplan Quickfox	08/Sep/16 5:02 PM	18/Oct/16 12:01 PM														"12/Oct/16 10:43 AM;pma;* also occurs with operators ""ends with"" and ""no value""
+
+* only occurs while choosing these operators on text attributes"																																																						

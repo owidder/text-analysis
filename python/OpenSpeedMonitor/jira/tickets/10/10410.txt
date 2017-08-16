@@ -1,0 +1,1 @@
+Anpassung Abfrage-Methoden WSMV	Um die weekly Shop-MeasuredValues im Dashboard als Kurven anzeigen zu können, müssen die Abfrage-Methoden in den entsprechenden Services angepasst werden.	10010	Sub-task	OpenSpeedMonitor	05/Aug/13 10:46 AM	27/Aug/13 9:42 AM																																																																				

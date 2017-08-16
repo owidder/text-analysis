@@ -1,0 +1,6 @@
+InformationFlow: Cannot create same InformationFlow with different output format	"When I create an InformationFlow, say in Visio format, and choose a different format afterwards, e.g. PDF, and press the Generate-Button, nothing happens.
+
+Only if I jump to another page (iteraplan start page) and back to the InformationFlow it is possible to create the visualization.
+"		Bug	iteraplan PO	23/Jul/13 10:07 AM	07/Aug/14 4:40 PM					diagram	gui	usability	visualization						"23/Jul/13 10:16 AM;jme@iteratec.de;The same applies for all buttons.
+
+After a refresh (F5) the buttons are working again."																																																						

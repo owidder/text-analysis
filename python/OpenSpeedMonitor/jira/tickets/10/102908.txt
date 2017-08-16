@@ -1,0 +1,9 @@
+#/system is available via direct URL even if user does not have permissions	"As is:
+
+http://localhost:8080/client/#/system is available via direct URL even if user does not have permissions for that - /api/administration/permissions returns {system:false}
+
+To be:
+
+Permissions warning message should be displayed.
+
+"		Bug	iteraplan Speedbird	17/Nov/16 6:17 PM	10/Jan/17 3:09 PM														10/Jan/17 3:09 PM;dmkh;Review is done																																																						

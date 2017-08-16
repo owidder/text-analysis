@@ -1,0 +1,35 @@
+Import in New Client (Client)	"*Summary:*
+
+Implement Import in the New Client
+
+
+
+*Details:*
+
+* {color:red}UPDATE: {color} Every time the tile is opened, please send an initial GET-request to check, which is the actual server-status (e.g. busy by another user, busy by this user, waiting for user input, free, ...)
+
+* Implement the sequence of IPTS-642, i.e.
+
+* Send initial POST-request with the file uploaded
+
+* Polling: Send every 3 seconds a GET-request until a stage is done
+
+* Offer ""Cancel"" and ""Next""-Buttons
+
+* Send another POST-request with body:
+
+*** {code:java}
+
+{ 
+
+	""importAction"": ""NEXT-STAGE"" OR ""CANCEL"",
+
+        ""nextStage"": STRING (see importStages)
+
+}
+
+{code}
+
+* Polling: Send every 3 seconds a GET-request until a stage is done
+
+* Display the import progress bar in stage 5"		New Feature	iteraplan Speedbird	07/Mar/17 11:26 AM	10/Apr/17 2:01 PM														10/Apr/17 9:31 AM;dmkh;Review is done: [https://iteraweb.iteratec.de/fisheye/cru/IP-496,] check comments.																																																						

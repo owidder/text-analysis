@@ -1,0 +1,1 @@
+Measurand Selection der Charts im LocalStorage merken	Ähnlich wie die Zeit sollten wir die Auswahl des Measurands im LocalStorage speichern. Ich hab keine Lust das bei jedem Chart neu einzustellen.		Improvement	OpenSpeedMonitor	04/Apr/17 1:53 PM																																																																					

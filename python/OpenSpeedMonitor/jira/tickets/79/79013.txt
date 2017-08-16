@@ -1,0 +1,23 @@
+Let GoJS do the scrolling	"Currently, in our GoJS diagrams, we set the dimensions of the div containing the content part of the diagram to the size of the GoJS canvas, and let the browser do the scrolling.
+
+This has a few disadvantages:
+
+* Need to calculate the diagram bounds in an extra step -> performance hit
+
+* Possible issues with double scroll bars when activating GoJS scrolling => GoJS scrolling deactivated despite offering some comfort functionality like dragging the diagram
+
+* Beyond a certain size, browsers don't show canvas elements anymore. If we set the div to the diagram bounds size, GoJS tries to display the complete diagram regardless of canvas size. Not yet tested, but suspected: With smaller div, GoJS has some handling to show the proper section of the diagram even with very large diagram dimensions.
+
+
+
+Thus the following proposal:
+
+* Set content div width and height to 100% so the div fills the available space in the browser window, but not more
+
+* Enable GoJS diagram scrolling and if necessary fix margins so no browser window scrollbars are shown
+
+* Change the legend to have an absolute position shown over the diagram content
+
+* Make it possible to hide/retract the legend to allow unobstructed view of the diagram content
+
+* The downloaded diagram should not change (after first tests the current code only exports the part of the diagram currently visible when doing the changes as above, so this has to be fixed)"		Improvement	iteraplan PO	04/Apr/16 10:30 AM						performance	usability																																																														

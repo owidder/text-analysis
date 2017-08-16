@@ -1,0 +1,11 @@
+Translate locale-de.json	translate app/locales/locale-de.json into german	49816	Sub-task	iteraplan PO	30/Jul/15 10:16 AM	21/Aug/15 10:59 AM														"17/Aug/15 11:14 AM;msr;Missing entries:
+
+* NCD: Outer element context menu: ""Highlight this item"", ""Remove highlight"" , ""Show with enumeration properties""
+
+* NCD: Inner element context menu: ""Show with enumeration properties"", ""Default coloring""
+
+* NCD: Legend: ""Applied inner filters"", ""Applied outer filters"", ""from"", ""to""
+
+* LSD: Legend: ""Content type"""	"18/Aug/15 2:30 PM;ach;added missing keys to code and to translation map.
+
+changes related to ITERAPLAN-3808"	21/Aug/15 10:59 AM;msr;Correct																																																				

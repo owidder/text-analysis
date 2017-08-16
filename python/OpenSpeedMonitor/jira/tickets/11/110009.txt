@@ -1,0 +1,3 @@
+Single Element View: Description as Mouseover for Toplevel-attributes	"*Summary:*
+
+Put the description of the attributes on top of the Single Element View (e.g. Status) as mouseover."		Improvement	iteraplan Speedbird	30/Jan/17 9:13 AM	15/Feb/17 1:21 PM																																																																				

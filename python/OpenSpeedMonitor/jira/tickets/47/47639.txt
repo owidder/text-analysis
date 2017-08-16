@@ -1,0 +1,10 @@
+Unit Tests of Sprint 11	"Create or update unit tests for all tickets in scope of Sprint 11, e.g.
+
+* Filter for axes elements (context menu, computation, legend)
+* Filter for content elements (context menu, computation, legend)
+* Options for orphans
+* Border line types
+* All Building Blocks as content elements
+* (and more, if needed)
+
+Create subtasks for each unit testsuite to work in parallel"		New Feature	iteraplan PO	20/Apr/15 4:58 PM	08/May/15 3:59 PM					lsd	test																																																														

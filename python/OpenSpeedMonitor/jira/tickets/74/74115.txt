@@ -1,0 +1,1 @@
+[CRUD CsiSystem] Löschen von CSI-Systemen funktioniert nicht	Es kommt immer die Meldung _CsiSystem X could not be deleted_, auch bei einem System was gerade erst erstellt wurde.		Bug	OpenSpeedMonitor	19/Feb/16 10:08 AM	19/Feb/16 5:54 PM																																																																				

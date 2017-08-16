@@ -1,0 +1,34 @@
+Page .../licensing/update.do does not work with SSO configuration	"Apparently can be reproduced on any SSO installation without license in the database.
+
+Trying to access the page .../licensing/update.do to upload the iteraplan license results in the following stacktrace in the tomcat localhost log:
+{noformat}
+SEVERE: Exception Processing ErrorPage[errorCode=500, location=/onError.do]
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.apache.tiles.impl.CannotRenderException: ServletException including path '/jsp/layouts/standard.jsp'.
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:965)
+...
+Caused by: org.apache.tiles.impl.CannotRenderException: ServletException including path '/jsp/layouts/standard.jsp'.
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:692)
+...
+Caused by: org.apache.tiles.util.TilesIOException: ServletException including path '/jsp/layouts/standard.jsp'.
+	at org.apache.tiles.servlet.context.ServletUtil.wrapServletException(ServletUtil.java:241)
+...
+Caused by: org.apache.tiles.util.TilesIOException: JSPException including path '/jsp/Navigation.jsp'.
+	at org.apache.tiles.servlet.context.ServletUtil.wrapServletException(ServletUtil.java:241)
+	at 
+...
+Caused by: javax.servlet.ServletException: javax.servlet.jsp.JspException: Could not find bean 'userContext' in any scope.
+	at org.apache.jasper.runtime.PageContextImpl.doHandlePageException(PageContextImpl.java:916)
+...
+Caused by: javax.servlet.jsp.JspException: Could not find bean 'userContext' in any scope.
+	at de.iteratec.iteraplan.presentation.tags.TagUtils.lookup(TagUtils.java:250)
+...
+{noformat}
+
+The iteraplan logfile only reports the following:
+{noformat}
+[WARN ] 29-Mai-2015 11:03:14 [iteraplan.presentation.UserContextInitializationServiceImpl] Tried to log in without a valid license.
+[WARN ] 29-Mai-2015 11:03:14 [iteraplan.presentation.UserContextInitializationServiceImpl] Tried to log in without a valid license.
+[WARN ] 29-Mai-2015 11:03:14 [web.context.HttpSessionSecurityContextRepository] Failed to create a session, as response has been committed. Unable to store SecurityContext.
+{noformat}
+
+Suspect is the spring security configuration. Apparently there's an attempt to access licensing information which of course fails and results in an error."		Bug	iteraplan PO	29/May/15 11:31 AM	16/Jun/15 2:13 PM														16/Jun/15 2:13 PM;fam;Fix fits the problem																																																						

@@ -1,0 +1,3 @@
+QR Code in diagram reports should be made larger	"Currently the provided QR Code cannot be recognized on printed versions, even on DIN A1. Recognition on a screen works beginning with 100% zoom level. Depending on the smart phone, higher zoom level might be necessary. 
+
+Suggestion: make the QR-picture larger."		Improvement	iteraplan PO	04/Nov/11 3:08 PM	07/Nov/11 10:12 AM					code	QR							Enterprise Edition Build-v2.10.SNAPSHOT-r14635 (2011-11-04-04-32-05)	07/Nov/11 10:12 AM;sfe;Stays like this, the general increase of the code's size is enough for now.																																																						

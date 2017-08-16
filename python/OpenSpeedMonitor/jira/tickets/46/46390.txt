@@ -1,0 +1,1 @@
+Two time copying of an attribute doesn't work	When you copy an attribute two times, the second copy doesn't show when you open the attribute group at the element details page.		Bug	iteraplan PO	16/Dec/13 4:28 PM	19/Jan/16 11:20 AM																																																																				

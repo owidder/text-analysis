@@ -1,0 +1,65 @@
+[Resultlist] Messergebnisse -> Einzelergebnisse funktioniert nicht mehtr	"Error processing GroovyPageView Error processing GroovyPageView gsp_openSpeedMonitor_tabularResultPresentationlistResults_gsp has problem at line 527
+
+
+
+
+
+
+
+org.codehaus.groovy.grails.web.pages.exceptions.GroovyPagesException: Error processing GroovyPageView: Error executing tag <g:render>: Cannot invoke method keySet() on null object
+
+
+
+	at grails.plugin.springsecurity.web.filter.GrailsAnonymousAuthenticationFilter.doFilter(GrailsAnonymousAuthenticationFilter.java:53)
+
+
+
+	at grails.plugin.springsecurity.web.authentication.RequestHolderAuthenticationFilter.doFilter(RequestHolderAuthenticationFilter.java:53)
+
+
+
+	at grails.plugin.springsecurity.web.authentication.logout.MutableLogoutFilter.doFilter(MutableLogoutFilter.java:62)
+
+
+
+	at com.googlecode.psiprobe.Tomcat70AgentValve.invoke(Tomcat70AgentValve.java:38)
+
+
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+
+
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+
+
+
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+Caused by: org.codehaus.groovy.grails.web.taglib.exceptions.GrailsTagException: Error executing tag <g:render>: Cannot invoke method keySet() on null object
+
+
+
+	at gsp_openSpeedMonitor_tabularResultPresentationlistResults_gsp$_run_closure2.doCall(gsp_openSpeedMonitor_tabularResultPresentationlistResults_gsp.groovy:65)
+
+
+
+	at gsp_openSpeedMonitor_tabularResultPresentationlistResults_gsp.run(gsp_openSpeedMonitor_tabularResultPresentationlistResults_gsp.groovy:146)
+
+
+
+	... 7 more
+
+
+
+Caused by: java.lang.NullPointerException: Cannot invoke method keySet() on null object
+
+
+
+	at srv_tomcat07_8085_webapps_OpenSpeedMonitor_WEB_INF_grails_app_views_eventResultDashboard__selectMeasurings_gsp.run(srv_tomcat07_8085_webapps_OpenSpeedMonitor_WEB_INF_grails_app_views_eventResultDashboard__selectMeasurings_gsp:21)
+
+
+
+	... 9 more"		Bug	OpenSpeedMonitor	19/Feb/16 9:12 AM	19/Feb/16 4:59 PM																																																																				

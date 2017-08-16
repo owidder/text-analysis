@@ -1,0 +1,5 @@
+Aussehen der y-Achse verbessern	"Pretty much self explanatory. Idee:
+
+
+
+!chart achse.png!"	114514	Sub-task	OpenSpeedMonitor	10/Mar/17 10:14 AM																																																																					

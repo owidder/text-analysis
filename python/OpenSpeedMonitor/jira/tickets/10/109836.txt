@@ -1,0 +1,1 @@
+Filter dialog UI improvements	1. Move option "Include Information Systems connected over an Interface" to the bottom of the dialog (see screenshot).		Improvement	iteraplan PO	27/Jan/17 4:17 PM	31/Jan/17 8:36 AM																																																																				

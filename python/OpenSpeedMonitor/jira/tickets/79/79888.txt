@@ -1,0 +1,75 @@
+Fix failing Unit tests in util-spec.js	"Timebox: 1 day
+
+
+
+May be reason is in different time zone. Need deeply investigate String.parseToDate funtion.
+
+
+
+PhantomJS 1.9.8 (Windows 7 0.0.0) utils.js test suite should parse date FAILED
+
+	Expected 1262296800000 to equal 1262300400000.
+
+	    at D:/PROJECTS/Iteratec/svn/iteraplan-9/trunk/tests/unit/common/utils-spec.js:51
+
+	Expected 1262296800000 to equal 1262300400000.
+
+	    at D:/PROJECTS/Iteratec/svn/iteraplan-9/trunk/tests/unit/common/utils-spec.js:53"		Bug	iteraplan PO	11/Apr/16 3:35 PM	21/Jun/16 12:56 PM														"15/Apr/16 2:41 PM;roia;{{String.parseToDate}} calls {{Date.parse}}
+
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse: 
+
+{quote}
+
+The *local time zone is used* to interpret arguments in format that do not contain time zone information
+
+{quote}
+
+
+
+{{Date.parse(""Jan 1, 2010"")}} in Ukrainian timezone gives  1262296800000, in German timezone:  1262300400000
+
+
+
+When time zone on local PC is changed to Berlin's timezone tests pass successfully.
+
+"	"30/May/16 1:37 PM;roia;Another failing test, related to regional settings:
+
+
+
+{code}
+
+PhantomJS 2.1.1 (Windows 7 0.0.0) utils.js test suite should return localized numbers FAILED
+
+Expected '123.123' to equal '123,123'.
+
+D:/Iteratec/Code/SVN/repos/projects/iteraplan-9/trunk/tests/unit/common/utils-spec.js:52:70
+
+Expected '-123.123' to equal '-123,123'.
+
+D:/Iteratec/Code/SVN/repos/projects/iteraplan-9/trunk/tests/unit/common/utils-spec.js:53:78
+
+Expected '123.12' to equal '123,12'.
+
+D:/Iteratec/Code/SVN/repos/projects/iteraplan-9/trunk/tests/unit/common/utils-spec.js:54:73
+
+Expected '-123.12' to equal '-123,12'.
+
+D:/Iteratec/Code/SVN/repos/projects/iteraplan-9/trunk/tests/unit/common/utils-spec.js:55:81
+
+{code}"	"30/May/16 2:12 PM;roia;and one more:
+
+
+
+{code}
+
+PhantomJS 2.1.1 (Windows 7 0.0.0) utils.js test suite should parse compactDateString into date FAILED
+
+	Expected '23:59:59 GMT+2' to equal '23:59:59 MEZ'.
+
+	D:/Iteratec/Code/SVN/repos/projects/iteraplan-9/trunk/tests/unit/common/utils-spec.js:99:31
+
+{code}"	"16/Jun/16 4:51 PM;abo;Fixed tests with date formatting.
+
+Number format already fixed in Rev. #3206."	17/Jun/16 11:41 AM;roia;Variable {{endOfDay}} in the unit test is redundant, the other code looks good.	21/Jun/16 11:21 AM;abo;@[~roia]: yes it is not really necessary, I also was inclined to inline it, first. But then I didn't because it supports readability by expressing _what_ is true - when reading the test you don't have to take a look at the method-spec first.																																																	

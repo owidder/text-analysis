@@ -1,0 +1,3 @@
+Job kann nicht aktiviert werden obwohl fehlernder Cron-String laut Formular als minütliche Ausführung gilt	"Job kann nicht aktiviert werden, obwohl laut anzeige unter dem (leeren) Cron-String Feld der Cron minütlich gelte
+
+Anzeige unter Feld cron-String anpassen"		Bug	OpenSpeedMonitor	25/Mar/15 1:02 PM	25/Mar/15 5:56 PM																																																																				

@@ -1,0 +1,5 @@
+UI bug with row length for Mozilla Firefox	"Steps to reproduce:
+1. Go to List view page with any business object as content type
+Actual: UI bug with row length "	47647	Sub-task	iteraplan PO	27/Apr/15 9:33 AM	05/May/15 2:09 PM													"Workspace: Windows 8.1
+Browser: Mozilla Firefox 37.0.2
+revision: 1034"	28/Apr/15 10:32 AM;dasm;Verified (rev 1049)																																																						

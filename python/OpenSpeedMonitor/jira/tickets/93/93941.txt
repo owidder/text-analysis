@@ -1,0 +1,5 @@
+Search Index with Plugin API	"Create a new Buildingblock with plugin.
+
+e.g. InformationSystem with name ""TestIS1""
+
+the new building block can not be found by classic client search because search index is not updated."		Bug	iteraplan Thunderduck	23/Aug/16 2:43 PM	09/Sep/16 9:33 AM																																																																				

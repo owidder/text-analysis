@@ -1,0 +1,10 @@
+Fixing for date attributes	"#1 Change the date format in the legend (as in Europe)
+#2  It is impossible to use filtering by date for self-related filtering options
+
+#3 Bug with time zones
+Steps to reproduce:
+1. Use any filtering by date
+2. Select any range
+Actual: different values in the date picker and in the legend
+"	47576	Sub-task	iteraplan PO	22/Apr/15 9:58 AM	22/Apr/15 3:52 PM													"Workaspace: Windows 8.1
+revision: 987"	22/Apr/15 11:38 AM;dasm;Verified (rev 996)																																																						

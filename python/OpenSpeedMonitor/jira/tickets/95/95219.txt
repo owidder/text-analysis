@@ -1,0 +1,5 @@
+Remove envers	"clean up - timebox 0.5 day
+* remove historicizing by envers
+* remove envers from iteraplan"		Improvement	iteraplan Thunderduck	05/Sep/16 10:29 AM	07/Nov/16 10:42 AM														27/Sep/16 1:00 PM;mse;When the whole "old" history is removed, please rename "NewHistoryService", "NewHistoryDAO" and so by removing the "New".	"17/Oct/16 9:07 AM;sfe;A lot has already be done in IPTT-185
+
+But there may still be remains in, for example, text resources or other places that were overlooked."																																																					

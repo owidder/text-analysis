@@ -1,0 +1,1 @@
+Create function to remove a building block from dataModel		101408	Sub-task	iteraplan Thunderduck	21/Nov/16 10:54 AM	28/Nov/16 9:45 AM														24/Nov/16 2:43 PM;mwe;Commit [5255|https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-9?cs=5255] belongs to this Ticket IPTT-262																																																						

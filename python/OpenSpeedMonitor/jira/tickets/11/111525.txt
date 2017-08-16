@@ -1,0 +1,33 @@
+Diagram doesn't open after saving query	"*Summary:*
+
+User can't open diagram after saving query.
+
+Reproduces on: CCD, MPD, TMD, BCD, PCD
+
+
+
+*Reproduce:*
+
+* Open one of the listed diagram
+
+* Save query
+
+* Back to home page
+
+* Open same diagram on ""visualize + report"" tab
+
+
+
+*Actual:*
+
+* Diagram does not open
+
+* An exceptions is thrown (see screenshot)
+
+
+
+*Expected:*
+
+* Diagram opens correctly
+
+"		Bug	iteraplan Speedbird	10/Feb/17 11:20 AM	13/Feb/17 2:29 PM																																																																				

@@ -1,0 +1,27 @@
+Add "related elements" column	"* elements connected via selected relationship end
+
+* not Business Mappings
+
+
+
+simple one-column table within the cell as a substructure, render with a cell template (Angular)
+
+
+
+set row height according to number of elements.
+
+
+
+Please start with a table now (in this ticket) because we will have more columns for business mappings and for association attributes. text with line breaks will not be sufficient."		New Feature	iteraplan PO	10/May/16 11:14 AM	20/Jun/16 3:29 PM														"25/May/16 5:02 PM;mwe;See [https://www.ag-grid.com/javascript-grid-row-height/index.php] for setting the row height.
+
+See [https://www.ag-grid.com/javascript-grid-cell-template/index.php] for cell templating.
+
+See [https://www.ag-grid.com/javascript-grid-cell-rendering/index.php] for cell rendering."	"08/Jun/16 10:53 AM;wfr;Names of relationship endpoints should be in the same list as names of attributes.
+
+
+
+Reason: a user sees both related elements (represented by the name of the element) and attribute values as the same thing.."	10/Jun/16 1:33 PM;tsu;The two commits 3393 and 3379 of the ticket ITERAPLAN-4604 are related to this ticket. I accidentally committed them for the wrong ticket.	"15/Jun/16 4:13 PM;sfe;* ipList-component#getMaxRowHeight - use constants instead of magic numbers
+
+* Use page object in sort-columns-spec.js where easily possible
+
+* ListConfiguration#updateUri: no ""columnDef.qualifiedName"" needed when using {{var relEnd = this.config.type.relationshipEndBy(columnDefs\[index\].field);}} in ColumnDefsBuilder#getColumnDefs"	17/Jun/16 6:06 PM;pma;refactored all the aforementioned aspects																																																		

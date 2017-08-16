@@ -1,0 +1,25 @@
+Building block: with empty description is not possible to create copy	"Steps to reproduce:
+
+ # open any list of building blocks
+
+ # open any building block with empty description
+
+ # try to make copy of this building block
+
+ # get server side error:
+
+
+
+[ERROR] [2017-07-26 17:29:35] (resource.data.BuildingBlockResource)
+
+java.lang.IllegalStateException
+
+ at com.google.gson.JsonArray.getAsString(JsonArray.java:133)
+
+ at de.iteratec.iteraplan.businesslogic.exchange.microedit.MicroEditManager.isValueLengthIncorrect(MicroEditManager.java:538)
+
+ at de.iteratec.iteraplan.businesslogic.exchange.microedit.MicroEditManager.checkValuesForValidity(MicroEditManager.java:519)
+
+ at de.iteratec.iteraplan.businesslogic.exchange.microedit.MicroEditManager.performPost(MicroEditManager.java:220)
+
+ at de.iteratec.iteraplan.businesslogic.exchange.microedit.MicroEditServiceImpl.performPost(MicroEditServiceImpl.java:50)"		Bug	iteraplan Speedbird	26/Jul/17 4:35 PM																																																																					

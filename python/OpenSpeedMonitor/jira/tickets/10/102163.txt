@@ -1,0 +1,5 @@
+Fehler bei der Datumsauswahl in tabularResultPresentation	"Wenn man manuell ein Datum Auf der TabularResultPresentation-Seite auswählt(z.B.: [hier|http://demo.openspeedmonitor.org/tabularResultPresentation/showListResultsForJob]), wir der Monat ausgeschrieben angezeigt. Sobald man dann auf Show klickt, wird der Monat wieder als Zahl angezeigt.
+
+
+
+!exampleTabularResultPresentation.png|thumbnail!"		Bug	OpenSpeedMonitor	09/Nov/16 3:15 PM	09/Dec/16 3:36 PM																																																																				

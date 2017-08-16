@@ -1,0 +1,169 @@
+Create REST-API for single role view (Server)	"*Summary:*
+
+Create a new REST-API for the single role view
+
+
+
+*Details:*
+
+* *Take into account that permission could either be directly assigned or inherited*
+
+* Permission handling excluded of this task (in scope of IPTS-577)
+
+* new uri: {{api/administration/roles/ID}}
+
+* GET, PUT, POST, DELETE-Requests (blueprint is: IPTS-445)
+
+* Document error-handling in this ticket (for the frontend-devloper)
+
+* JSON-structure:
+
+
+
+
+
+{code:java}
+
+  {
+
+    ""id"": INTEGER,
+
+    ""persistentName"": STRING,
+
+    ""name"": {
+
+      ""en"": STRING,
+
+      ""de"": STRING
+
+    },
+
+    ""description"": {
+
+      ""en"": STRING,
+
+      ""de"": STRING
+
+    },
+
+    ""lastModUser"":STRING,
+
+    ""lastModTime"": STRING,
+
+    ""subordinateRoles"": [
+
+      {
+
+        ""id"": INTEGER,
+
+        ""persistentName"": STRING
+
+      },
+
+     {...}
+
+    ],
+
+   ""inheritedSubordinateRoles"": [
+
+      {
+
+        ""id"": INTEGER,
+
+        ""persistentName"": STRING
+
+      },
+
+     {...}
+
+    ],
+
+   ""bbtPermissions"": [
+
+      {
+
+        ""persistentName"": STRING,
+
+        ""typePermissions"": [""R"",""U"",""C"",""D""]
+
+      },
+
+      {...}
+
+    ],
+
+    ""inheritedBBTPermissions"": [
+
+      {
+
+        ""persistentName"": STRING,
+
+        ""typePermissions"": [""R"",""U"",""C"",""D""]
+
+      },
+
+      {...}
+
+    ],
+
+    ""functionalPermissions"": {
+
+        ""configAttributeGroups"": BOOLEAN,
+
+        ""configAttributes"": BOOLEAN,
+
+        ""editPublicSavedQueries"": BOOLEAN,
+
+        .... (all of https://iteraweb.iteratec.de/confluence/pages/viewpage.action?pageId=94798389)
+
+    },
+
+    ""inheritedFunctionalPermissions"": {
+
+        ""configAttributeGroups"": BOOLEAN,
+
+        ""configAttributes"": BOOLEAN,
+
+        ""editPublicSavedQueries"": BOOLEAN,
+
+        .... (all of https://iteraweb.iteratec.de/confluence/pages/viewpage.action?pageId=94798389)
+
+    },
+
+     ""atgPermissions"": [
+
+      {
+
+        ""atgPersistentName"": STRING,
+
+        ""atgID"": INTEGER,
+
+        ""atgPermissions"": [""V"",""E""]
+
+     },
+
+     {...}
+
+    ],
+
+    ""inheritedATGPermissions"": [
+
+      {
+
+        ""atgPersistentName"": STRING,
+
+        ""atgID"": INTEGER,
+
+        ""atgPermissions"": [""V"",""E""]
+
+     },
+
+     {...}
+
+    ]
+
+  }
+
+{code}
+
+"		New Feature	iteraplan Speedbird	23/Feb/17 9:32 AM	15/Mar/17 9:59 AM														10/Mar/17 12:46 PM;ants;Revision 26963 should be added to change set of current ticket (wrong ticket reference in revision commit message).	15/Mar/17 9:59 AM;dmkh;Review is done, no comments																																																					

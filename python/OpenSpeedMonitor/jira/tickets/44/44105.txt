@@ -1,0 +1,5 @@
+Dashboards: Liste der Job-Gruppen sortieren und filtern	"# Die Liste sollte alphabetisch sortiert sein
+
+# Es sollte ein boolean-Attribut _active_ eingeführt werden für die JobGroup. In der Liste der Job-Gruppen in den Dashboards werden dann nur noch die aktiven gelistet.
+
+"		New Feature	OpenSpeedMonitor	18/Jun/15 10:24 AM	18/Jan/17 4:18 PM																																																																				

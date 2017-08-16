@@ -1,0 +1,18 @@
+Saved landscape diagrams cannot be loaded through menu form a BB overview page	"When the browser shows a building block overview page, e.g. Information Systems, it's impossible to load a saved landscape diagram through the Visualizations menu. It will always end up in a blank error page, as shown in the attached screenshot. Other diagram types do seem to work.
+
+A short analysis showed that all form fields from the current page (i.e. the overview page) plus some added fields for loading the saved query are sent via a GET request. Some of the form fields cannot be matched to the _ManageLandscapeDiagramMemoryBean_ that is used for loading the query, and that leads to an exception.
+
+A potential solution is that the JS function _preLoadSavedQuery()_ constructs a more targeted URI for loading the query, instead of using _flowActionRedirect()_. The edit/ delete quick action in the building block overview pages are probably a good example."		Bug	iteraplan PO	18/May/12 6:12 PM	21/May/12 4:10 PM					javascript	savedquery								18/May/12 6:13 PM;sry;Blank page and an excessively long URI for loading the saved query.	"18/May/12 6:34 PM;sry;Here's the stack trace for the error page:
+{code}
+[ERROR] 18-Mai-2012 17:09:59 [presentation.flow.FlowExceptionHandler] Exception thrown in state 'selectcontent' of flow 'graphicalreporting/landscapediagram/start'
+org.springframework.webflow.execution.FlowExecutionException: Exception thrown in state 'selectcontent' of flow 'graphicalreporting/landscapediagram/start'
+	at org.springframework.webflow.engine.impl.FlowExecutionImpl.wrap(FlowExecutionImpl.java:571)
+[....]
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E:(pos 0): Field or property 'queryForm' cannot be found on object of type 'de.iteratec.iteraplan.businesslogic.reports.query.options.GraphicalReporting.Landscape.ManageLandscapeDiagramMemoryBean'
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:208)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:72)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:52)
+	at org.springframework.expression.spel.standard.SpelExpression.getValueType(SpelExpression.java:117)
+	at org.springframework.binding.expression.spel.SpringELExpression.getValueType(SpringELExpression.java:100)
+	... 56 more
+{code}"	21/May/12 4:10 PM;sry;perfect!																																																				

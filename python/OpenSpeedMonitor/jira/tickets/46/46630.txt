@@ -1,0 +1,30 @@
+Implement diagram creation	"open to detailed design: test with data from the database, or with a model provider independent of the hibernate side and the model bridge?
+
+included: unit and component tests
+not included: integration in UI, Selenium tests
+
+open for analysis: how much SVG template is useful?"	46567	Sub-task	iteraplan PO	07/May/14 3:52 PM	07/Jul/14 1:24 PM														"27/Jun/14 9:44 AM;dop;Following issues have been detected while review:
+
+# ContextOverviewWorker.java: remove comment method if not needed
+# InfoContainer.java: the name is too general, please use a more specific name if this class is only used for context overview diagrams
+# ExportServiceImpl.java: change the name of the method ""generateContextOverviewDiagram"" to ""generateSvgContextOverviewDiagram"" to match the naming scheme 
+# ContextOverviewCreator.java: is it useful to include the base64 coded image string in source code? Wouldn't be a link to a resource file better?
+# ContextOverviewDiagram.java: 
+#* Split long methods to smaller ones. There is much redundant code e.g. in method createListPart()
+#* How do did you calculate the X and Y offset? Is there any algorithm. Please document this methods, how to get to these values. It would be more maintainable if you could calculate these values dynamically.
+#* There's a method called getStringFromDocument. You have commented this method, that this could will be only used in testing environment. Wouldn't it be useful, to move this code to a testclass?
+
+
+In General:
+
+# Document public methods
+# Use fluent interface for Builder (MetaModel, Model). Please discuss with [~wfr] first. 
+# use /** */ to comment classes and methods instead of //
+# All the offsets are static. Does it work it this way? Or do you have to scale these values dependent on the size of the diagramm?
+# Are the methods for creating a Test Metamodel and Model at its right place or does it belong to test source code folder?
+# Added some new tests"	"01/Jul/14 3:55 PM;dop;Furthermore:
+
+# implement linebreak for long BB names (e.g. COD for Clearing Inland -> Interfaces)
+# the font of the BB is not the same as in other diagrams
+# delete the configure button
+"																																																					

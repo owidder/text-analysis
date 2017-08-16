@@ -1,0 +1,33 @@
+OMITTED!! Filter Interfaces	"*Summary*
+
+Filter Interfaces by enumeration, numeration, text or date attributes (analogue to ITERAPLAN-3766 and following tickets).
+
+
+
+*Affected parts*
+
+* Toolarea
+
+* Legend (read-only)
+
+* URL
+
+* ifdDataService
+
+* ifdConfiguration
+
+
+
+*Approach*
+
+* Use filtering for Information Systems in the Information Flow Diagram as blueprint.
+
+* Filter Interfacese directly in the ifdDataService.
+
+
+
+*UI*
+
+* Set the filter in the toolarea .
+
+* Delete the actual set filter via the toolarea (current filter)."		New Feature	iteraplan PO	02/Sep/15 2:00 PM	19/Jan/16 4:06 PM					filter	ifd																																																														

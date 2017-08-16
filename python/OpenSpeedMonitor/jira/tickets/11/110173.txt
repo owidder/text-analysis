@@ -1,0 +1,13 @@
+Empty result set while performing search in new client causes JS exceptions.	"AS IS:
+
+When searching query returns empty result set, JS exception appears.
+
+See screenshot.
+
+For empty result set REST API responses plain text string ""Empty result."" with code 200OK, but client expects an array of results.
+
+
+
+TO BE:
+
+Proper empty result set handling."		Bug	iteraplan PO	31/Jan/17 6:29 PM	02/Mar/17 5:59 PM																																																																				

@@ -1,0 +1,7 @@
+Statische Graphen verwaltbar und anzeigbar machen	"Es soll möglich werden:
+
+
+
+* Neue statische Graphen zu erzeugen. Möglicherweise funktioniert das (zumindest für Linien-Graphen) über die bestehenden CRUD-Views bereits. Das müsste getestet werden.
+
+* In beiden Dashboards (Ergebnis und CSI) statische Graphen zur Anzeige mit auszuwählen. Die erforderlichen Controls sollten im Bereich _measurands/Messgrößen_ untergebracht werden."		Task	OpenSpeedMonitor	16/Feb/16 10:46 AM																																																																					

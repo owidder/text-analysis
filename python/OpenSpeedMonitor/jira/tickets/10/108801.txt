@@ -1,0 +1,17 @@
+License key cannot be activated	"Reproduce with the current Trunk and Nightly:
+
+
+
+# Open Iteraplan
+
+# Click on ""Administration"" 
+
+# Enter a valid key and ""Activate License"" 
+
+# A error appears -  The license you entered is invalid. Please provide a new license.
+
+
+
+Expected: To save the license key
+
+Actual: License cannot be saved"		Bug	iteraplan PO	19/Jan/17 8:28 AM	01/Feb/17 9:54 AM														31/Jan/17 12:27 PM;mse;The problem was that there were two different scopes for the page and the textarea component. I have refactored the success and error callbacks into separate functions where the correct scope is available. Not really sure why but it works...																																																						

@@ -1,0 +1,69 @@
+Creating new building block without permission should not be possible	"One big bug and small one:
+
+
+
+*Big Bug:*
+
+
+
+Steps:
+
+ # Disable CREATE permission for some BB type.
+
+ # Access some single element view page of this type.
+
+ # Press button from new element.
+
+ # Press CREATE
+
+
+
+Actual:
+
+
+
+Element is created and user is redirected to single view of a new element.
+
+
+
+Expected:
+
+
+
+It is not possible to create new element. Creation dialog should not be opened.
+
+
+
+Instead error message should be shown the same as when trying to create new element from list view.
+
+
+
+*Small Bug:*
+
+
+
+Steps: 
+
+ # Disable CREATE permission for some BB type.
+
+ # Access some single element view page of this type. (The same applies to copy in list)
+
+ # Click on copy icon.
+
+ # Click copy.
+
+
+
+Actual:
+
+
+
+Nothing happens. Error in console
+
+
+
+Expected:
+
+
+
+Add warning message the same when creating new element in list."		Bug	iteraplan PO	20/Jun/17 3:57 PM															21/Jun/17 10:27 AM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-719																																																						

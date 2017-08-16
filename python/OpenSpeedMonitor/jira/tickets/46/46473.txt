@@ -1,0 +1,9 @@
+Changing enum attribute values doesn't work properly for IE9, IE10 and IE11	"Reproduce:
+Open a building block element (for example InformationSystem) and try to change an enum attribute value in IE9 or IE10. After saving, the value will still be the same.
+
+The error doesn't occur, when IE is running in IE8 Document Mode.
+IE 8 and other browsers like Firefox or Chrome are not affected.
+
+Workaround:
+Configure IE8 Document Mode in Internet Explorer 9/10 or use another browser."		Bug	iteraplan PO	18/Feb/14 2:28 PM	24/Feb/14 11:25 AM					attribute	gui								21/Feb/14 2:41 PM;sfe;@Tester: Please test with several browsers, not only different IEs.	"24/Feb/14 11:25 AM;isc;Tests OK!
+Tested Browsers IE 11 (Document Mode 8, 9 and 10); FF 27.0.1; Chrome 33.0.1750.117 m"	27/Feb/14 4:41 PM;fka;Ticket closed																																																				

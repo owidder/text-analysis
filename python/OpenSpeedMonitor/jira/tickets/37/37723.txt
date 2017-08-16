@@ -1,0 +1,7 @@
+Graphite-Server lässt sich nicht entfernen	In der CRUD-Oberfläche der JobGroups lassen sich assoziierte GraphiteServers snicht entfernen. Nach Entfernen und Speichern bleibt der GraphiteServer assoziiert.		Bug	OpenSpeedMonitor	14/Apr/15 11:26 AM	23/May/16 5:28 PM														"25/Feb/16 11:33 AM;bka;Kann ich in der aktuellen Version mit einem aktuellen Dump nicht nachstellen.
+
+Wenn ich dort einen GraphiteServer in einer JobGroup abwähle, dann wird er auch so gespeichert.
+
+
+
+Ist das Ticket noch aktuell?"																																																						

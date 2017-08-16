@@ -1,0 +1,13 @@
+Move column (reordering)	"Add a visual hint that the column header is draggable. 
+
+Mouse cursor changes, for example.
+
+Note that the drag source is the full area of the header cell. 
+
+
+
+Note that the ""one step left"" and so on buttons are not needed.
+
+
+
+Reordering triggers change of column ordering in ListConfiguration. Don't rerender the columnDefs and rowData."		New Feature	iteraplan PO	10/May/16 11:12 AM	07/Jun/16 11:32 AM														18/May/16 10:16 AM;mwe;In ag-grid drag'n'drop reordering comes out of the box.	07/Jun/16 11:32 AM;tam;Als subtasks are closed																																																					

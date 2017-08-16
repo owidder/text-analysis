@@ -1,0 +1,17 @@
+Add new error to REST-Resources	"Changes in the metamodel lead now to a new error, compare Ticket -IPTT-130-.
+
+
+
+Please add seperate handling of this error to the REST-Resources that give information about errors that are thrown.
+
+
+
+When the corresponding rest-resource is used in the frontend update this as well.
+
+
+
+Candidates are the following Rest-Resources:
+
+
+
+""/icd"",""/icmm"",""/icdi"",""/icdi/\{id}"",""/atg"",""/atg/\{id}"",""/attributes"" ,""/administration/system"",""/administration/users"",""/administration/users/\{id}"",""/attributes/\{id}"",""/data"", ""/data/\{iteraQlQuery}"",""/data/\{iteraQlQuery}/\{id}"", ""/element/\{buildingBlockType}/\{id}"",""/element/\{buildingBlockType}"",""/massupdate/elements/\{method}/\{buildingBlockType}"", ""/metamodel"""		New Feature	iteraplan Thunderduck	21/Apr/17 4:01 PM															20/Jul/17 10:18 AM;ip-laptop;Probably already implemented for BBTs. Now all other types need this as well.																																																						

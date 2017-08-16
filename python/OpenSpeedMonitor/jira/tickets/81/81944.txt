@@ -1,0 +1,15 @@
+[Integrationstests] fix Performance	"... von den Tests:
+
+* de.iteratec.osm.csi.WeeklyPageIntTests
+
+* de.iteratec.osm.csi.WeeklyShopIntTests
+
+Die Tests wurden erstmal deaktiviert, damit die Integrationstests überhaupt verwendbar sind.
+
+
+
+Das Test-Setup dauert 30 Minuten. Diese Zeit wird beim Einlesen des CSV-Files gebraucht. Von Zeile zu Zeile braucht er länger."		Bug	OpenSpeedMonitor	25/Apr/16 6:44 PM	28/Apr/16 1:58 PM														27/Apr/16 10:37 AM;msk;Das Problem scheinen  die .save() Aufrufe zu sein. Wenn man die rausnimmt, ist der Test nach 1 min fertig. Es scheint auch nicht an der H2-Datenbank zu liegen, weil das gleiche Verhalten auch auftritt, wenn man eine MySQL-Datenbank dahinter klemmt.	"27/Apr/16 3:47 PM;nku;Todo:
+
+Der Code zur Erzeugung der Testdaten anhand der csv (TestDataUtil) ist ungünstig geschrieben. Diesen sollten wir umbauen.
+
+Wenn das Erzeugen der ca. 1.400 Objekte danach immer noch zu lange dauert sollten wir weiter recherchieren, woran das liegt. "	28/Apr/16 1:58 PM;bwo;Das Performance Problem konnte gelöst werden, indem auf unnötige Datenbankzugriffe verzichtet wurde. Jedoch schlägt der zweite Test noch fehl, siehe IT-1059																																																				

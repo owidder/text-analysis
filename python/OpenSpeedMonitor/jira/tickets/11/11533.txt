@@ -1,0 +1,1 @@
+Jobeditierungs-UI: Gruppierung von webpagetest.org nachempfinden	Die logische Gruppierung der Optionen von http://www.webpagetest.org/ für die einzelnen Felder und Checkboxen übernehmen. Visuell z.B. in einem Accordion oder Tabs anordnen.		Task	OpenSpeedMonitor	05/Feb/14 4:24 PM	14/Mar/14 4:34 PM																																																																				

@@ -1,0 +1,15 @@
+[GUI] Assets via Regex Filtern	"Die Assets werden oft nach einem bestimmten Muster zusammengefasst. Ändern sich z.B. die Bilder einer Slideshow, so werden immer Bilder eines bestimmten Pfades geladen.
+
+
+
+Beispiel:
+
+http://image.otto.de/images/slideshow/1830931_slide.png
+
+http://image.otto.de/images/slideshow/3133141_slide.png
+
+http://image.otto.de/images/slideshow/5435245_slide.png
+
+
+
+Um diese nicht per Hand auswählen zu müssen, sollte ein Regex-Feld implementiert werden, anhand dessen eine Auswahl getroffen wird"		Task	OpenSpeedMonitor	21/Sep/15 11:06 AM																																																																					

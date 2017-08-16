@@ -1,0 +1,11 @@
+The empty page	"Summary: The empty pages with Technical Component and Business Functions as content on List view page
+
+Steps to reproduce:
+1. Go to List view page with Technical Component/Business Functions
+2. Click on ""Show landscape diagram""
+Actual: Empty page
+Expected: Should be displayed diagram according to content from List View page"	47325	Sub-task	iteraplan PO	31/Mar/15 10:14 AM	07/Apr/15 1:32 PM													"Workspace: Windows 8.1 
+Browser: Google chrome 39.0, IE 11,Mozilla Firefox 36.0.4 "	01/Apr/15 3:24 PM;sepr;fixed in rev 864	"01/Apr/15 4:01 PM;dasm;Verified
+revision 865
+
+(In scope of this ticket were checked only List view pages for Information System, Technical Component, Business Function (which were implemented already as content types)"																																																					

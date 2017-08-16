@@ -1,0 +1,35 @@
+Filter Information Systems by numeric attributes with range slider	"*Summary*
+
+Filter Information Systems by numeric attributes with the help of the range slider.
+
+
+
+*Affected parts*
+
+* Toolarea
+
+* Range slider in the filtering dialog
+
+* URL
+
+* Legend (read-only)
+
+* ifdDataService
+
+* ifdConfiguration
+
+
+
+*Approach*
+
+Filter Information Systems by numeric attributes directly in the ifdDataService.
+
+Use ifdConfiguration to notice other components about filtering.
+
+
+
+*UI*
+
+Set the filter  in the toolarea. After selecting a filter in the dialog, open the range slider in this dialog.
+
+"		New Feature	iteraplan PO	09/Jul/15 9:47 AM	15/Sep/15 9:52 AM					filter	ui								14/Jul/15 8:57 AM;msr;First enumeration filtering, then numeric filtering																																																						

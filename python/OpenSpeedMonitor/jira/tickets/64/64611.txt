@@ -1,0 +1,9 @@
+Feedback: Sensor-Darstellung verbessern	"- Induktionsschleifen: Statt Pyramiden flachere Symbole, ggf. andere Symbole (besser verständlich)
+
+- Kameras mit Laternenmast darstellen
+
+"		Task	EAMV15	23/Nov/15 3:01 PM	03/Dec/15 2:27 PM														"03/Dec/15 2:27 PM;pkh;Feedback wurde eingearbeitet.
+
+
+
+Als Nice-To-Have können noch Fähnchen zu den Elementen hinzugefügt werden."																																																						

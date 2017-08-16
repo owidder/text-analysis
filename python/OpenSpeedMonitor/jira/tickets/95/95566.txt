@@ -1,0 +1,27 @@
+RELEASE: CorporateInfoFlow.zip is missing in the example for the Information Flow Diagram	"Summary:
+
+CorporateInfoFlow.zip cant be downloaded on the Page Customizable IF
+
+
+
+Reproduce:
+
+◾Open the interactive Client 
+
+◾Click on ""Information Flow Diagram""
+
+◾Click on the Button ""Show customizable Information Flow"" 
+
+◾Click on ""Download""
+
+◾HTTP 404 appears description The requested resource is not available.
+
+
+
+Actual:
+
+• CorporateInfoFlow.zip can not be downloaded
+
+Expected:
+
+• CorporateInfoFlow.zip can be downloaded"		Bug	iteraplan Quickfox	08/Sep/16 11:55 AM	13/Oct/16 3:50 PM														13/Oct/16 3:31 PM;pma;was already fixed	13/Oct/16 3:50 PM;pma;was already fixed																																																					

@@ -1,0 +1,6 @@
+Wrong color for inner elements on NCD for AD and TC	"Steps to reproduce:
+1. Use Technical Components as inner type
+2. Use Architectural Domain as inner type
+Actual: wrong color for inner elements
+Expected: inner elements should be colored by green color according to created new icons
+"		Bug	iteraplan PO	17/Mar/15 2:54 PM	07/Apr/15 1:29 PM																																																																				

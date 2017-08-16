@@ -1,0 +1,31 @@
+Reactor - Problem with saving Query Ids	"Summary: The Id´s of a saved query can not be saved when only the option ""Execute saved queries prior to the script"" is used.
+
+
+
+Reproduce:
+
+◾ Open Reactor
+
+◾ Upload a XML-File 
+
+◾ Click on ""Edit"" and activate the checkbox ""Execute saved queries prior to the script""
+
+◾ Enter the ID e.g. 26
+
+◾ Click on Save
+
+◾ In the Script Configuration Box the ID 26 is not displaying
+
+◾ Click on ""Edit"" and the ID 26 is missing
+
+
+
+When the part ""Publish output file"" is completely filled, you can save the ID 26 in the saved queries.
+
+
+
+Actual: It is not possible to save the query ID with the activated checkbox ""Execute saved queries prior to the script"". 
+
+Expected:  To save the query ID with the activated checkbox ""Execute saved queries prior to the script""."		Bug	iteraplan PO	09/Aug/16 12:25 PM	09/Aug/16 5:34 PM														"09/Aug/16 3:49 PM;mwe;The outputFileName could not be null, now it could be null, for the case that the user only wants to save saved queries as configuration.
+
+Fixed the file extension check. To test create two script files with the endings "".xsl"" and "".XSL"" and save a configuration. After deleting the files the configuration has to been deleted, too."																																																						

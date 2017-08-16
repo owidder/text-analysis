@@ -1,0 +1,112 @@
+AD authentication timeouts	"Hi.
+
+
+
+NTE has deployed a set of new domain controllers off-prem. Ever since this has been put in production, iteraplan authentications randomly fail.
+
+From the server CLI I've seen that there are SYN timeouts towards the new DC's.
+
+
+
+AD Sites and services have been defined correctly, but that does not seem to have an impact of the way iteraplan queries AD during the authentication process.
+
+
+
+Is there a way to have iteraplan prioritize some DC's over other when performing LDAP authentication ? Or even better - lock authentication to specific IP addresses of certain DC's ?
+
+The alternative is obviously to open the firewalls for traffic towards the new DC's, but it would be preferrable to solve this issue within the application."		Fault	iteraplan Support	23/May/17 9:02 AM	26/Jun/17 7:00 AM														"23/May/17 11:43 AM;cst;Dear Mr. Lukassen,
+
+thank you for your inquiry. 
+
+The LDAP-Servers will be configured and prioritized in the data ""iteraplan-auth.properties"".
+Here can you change the order how the servers are connect. 
+
+_# A list of LDAP server URLs. *Servers will be connected to in the specified order.*_
+_# An url should start with 'ldap://' and should preferably include the port number._ 
+_# Omit any trailing slashes. Unused properties must not be commented out! Leave their values empty._
+_ldap.url1=_
+_ldap.url2=_
+_ldap.url3=_
+_ldap.url4=_
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"29/May/17 8:42 AM;jorn.lukassen@evry.com;Hi.
+
+I've tried implementing what you suggested here. 
+
+The config file now looks as follows:
+  ldap.url1=ldap://10.67.50.53:389
+  ldap.url2=ldap://10.67.50.52:389
+  ldap.url3=
+  ldap.url4=
+
+However, the same behaviour occurs - TCP SYNs are sent to the other DC's aswell. Hence, login either takes a very long time or times out completely.
+
+jorn.lukassen@nteitpa01:/$ netstat -an | grep 389
+tcp        0      0 10.210.4.15:57601       10.67.50.52:389         ESTABLISHED
+tcp        0      0 10.210.4.15:53520       10.67.50.53:389         ESTABLISHED
+tcp        0      1 10.210.4.15:40860       10.53.0.6:389           SYN_SENT
+tcp        0      1 10.210.4.15:57676       10.53.0.5:389           SYN_SENT
+
+"	"30/May/17 9:48 AM;cst;Good Morning, 
+
+I have talked to our developers and we have at the moment no possibility to prioritise different LDAP-Server.
+With one Server in the configuration, the loading time is better or stays the long loading time? 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+
+ "	"30/May/17 10:52 AM;jorn.lukassen@evry.com;Hi.
+
+Initially there was only one server configured, like this:
+  ldap.url1=ldap://10.67.50.53:
+  ldap.url2=
+  ldap.url3=
+  ldap.url4=
+
+Login times seem to be the same.
+
+So this means we probably have to solve the problem by different means ?
+
+
+/Jørn"	"30/May/17 11:00 AM;cst;Hello,
+
+could you please do following steps
+ #  Open your Browser
+ # Press F12 
+ # Go into the tab ""Network""
+ # Start iteraplan and enter the login dates
+ # Create a screenshot from the ""Network"" tab when the client is loaded completly 
+
+Addittionaly you can higher the log-level for more informations
+
+If the login does not work, then a higher log level is very useful for diagnosis. Add the following four lines to the file {{$TOMCAT_HOME\webapps\iteraplan-ldap\WEB-INF\classes\log4j.properties}}, within the section ""Spring logging"" in that file:
+|{{log4j.logger.org.springframework.security.ldap=DEBUG}}
+{{log4j.logger.org.springframework.security.ui.webapp=DEBUG}}
+{{log4j.logger.org.springframework.security.web.authentication=DEBUG}}
+{{log4j.logger.org.springframework.ldap=DEBUG}}|
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"30/May/17 4:01 PM;jorn.lukassen@evry.com;Hi.
+
+Roughly 106 seconds to complete this time (please see attached screenshot). This was one of the times it didn't time out, though.
+
+If there is no way to prioritize DC's, or avoid certain DC's, I think our best option is to have the firewall guy open port 389 for LDAP authentication towards the new DC's.
+
+Jorn
+
+!image.png|thumbnail!"	"31/May/17 6:27 AM;cst;Hi Jorn,
+
+thank you for your reply.
+
+No we have no possibility to prioritize DC's at the moment.
+I will create a ""improvement"" Ticket for that case.
+
+Greetings,
+
+Christoph - iteraplan Support  
+
+ "																																																

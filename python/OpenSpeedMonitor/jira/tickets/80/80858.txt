@@ -1,0 +1,1 @@
+CSI-Dashboard kann nicht geladen werden	Bei Aufruf des CSI-Dashboards (http://localhost:8080/csiDashboard/showAll) wird der angehängte Fehler geworfen.		Bug	OpenSpeedMonitor	18/Apr/16 1:42 PM	27/Apr/16 3:26 PM														27/Apr/16 3:26 PM;nku;Nicht mehr reproduzierbar.																																																						

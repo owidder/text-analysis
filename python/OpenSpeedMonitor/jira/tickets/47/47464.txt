@@ -1,0 +1,9 @@
+Create ItemDecorator for enums	"Create ItemDecorator that changes TableModel and sets choosen color palette and properties.
+
+Input: [TableModel] from TableModelBuilder, [coloring configuration settings] from LstConfiguration
+Output: [updated TableModel with coloring] to TableBuilder
+
+Implement enumeration coloring options ONLY.
+
+Numeric options is not in scope of this story."		New Feature	iteraplan PO	04/Mar/15 10:39 AM	07/Apr/15 1:27 PM														24/Mar/15 1:14 PM;sepr;This story is dependent from IPNINE-370	"31/Mar/15 3:07 PM;dasm;verified
+revision: 852"	02/Apr/15 9:50 AM;tam;Reviewed																																																				

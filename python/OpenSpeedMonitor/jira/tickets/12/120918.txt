@@ -1,0 +1,33 @@
+Jasmine Tests: Dom Interaktion ermöglichen	Recherchieren wie wir die Interaktion ermöglichen können und exemplarisch einen Test implementieren.		Improvement	OpenSpeedMonitor	09/May/17 10:26 AM	15/Jun/17 3:55 PM														"09/May/17 2:38 PM;bwo;Ich habe nun den ersten Jasmine Test geschrieben, welcher auch mit den DOM Elementen interagiert. 
+
+
+
+Das Vorgehen ist dabei recht simpel:
+
+
+
+Unsere Charts setzen meist eine DIV mit einer ID voraus, in welcher das Chart am Ende angezeigt wird. Diese müssen wir zuerst z.B. mit jQuery erstellen. Anschließend rufen wir gewohnt die Draw Methode auf. Wichtig ist hier, dass Jasmine nicht auf den Abschluss der d3 Transitionen wartet, hierfür habe ich folgende Hilfsmethode gefunden:
+
+
+
+function flushAllD3Transitions() \{
+
+ //source: http://stackoverflow.com/a/22552228
+
+ var now = Date.now;
+
+ Date.now = function () \{
+
+ return Infinity;
+
+ };
+
+ d3.timer.flush();
+
+ Date.now = now;
+
+ }
+
+
+
+Anschließend können wir mit den normalen Selektoren die Elemente selektieren und prüfen. Das erste Beispiel ist in groupedBarchartHorizontal.js"																																																						

@@ -1,0 +1,7 @@
+Partial reload of MM changes	"* Calculate metamodel changes in ElasticUpdateEventListener etc. (see de.iteratec.iteraplan.elasticmi.metamodel.MMChange)
+
+* Reload only metamodel
+
+* call model.updateWithPropertyChanges(MMChange diff)
+
+* Removing a property from a type counts as deleting that property for that type"		Task	iteraplan Thunderduck	07/Sep/16 1:36 PM	04/Oct/16 10:25 AM					M3CEL																																																															

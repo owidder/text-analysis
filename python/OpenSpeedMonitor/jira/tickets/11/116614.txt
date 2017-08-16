@@ -1,0 +1,5 @@
+Move language selection to user menu	Language selection is located in menu bar on top of the page, it needs to be moved to user menu as one of options (so hidden from main view)		Improvement	iteraplan Speedbird	27/Mar/17 10:11 AM	04/May/17 4:04 PM														"21/Apr/17 2:22 PM;fka;Also fix the error shown in the console:
+
+
+
+icon $default:COUNTRY_FLAG_PATH not found"	02/May/17 12:01 PM;olal;Should the current language is presented on view? like we have now? !image-2017-05-02-13-01-17-092.png!	04/May/17 4:04 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-571																																																				

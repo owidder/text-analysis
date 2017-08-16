@@ -1,0 +1,35 @@
+Logging	"make sure all the ""not migrated"" and ""partial migrated"" information is logged by QueryMigrationLogger and is shown in UI
+
+
+
+Add titel and id of the query and a timestamp to the ""start""-logging and add 
+
+""======================================""
+
+after the end of the logging
+
+
+
+The logging messages for the following (diagrams) have to be tested:
+
+
+
+LSD (/)
+
+NCD
+
+IFD
+
+MPD (/)
+
+PFD (/)
+
+CCD (/)
+
+PCD (/)
+
+BCD (/)
+
+List (/)
+
+"		Improvement	iteraplan Thunderduck	20/Jan/17 11:07 AM	09/Feb/17 10:19 AM																																																																				

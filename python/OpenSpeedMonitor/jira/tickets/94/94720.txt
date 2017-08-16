@@ -1,0 +1,1 @@
+Logging beim Laden der Assets verbessern	Die Logs sind zum Teil noch hilfreich oder irreführend. Es sollte geprüft werden, wie diese sinnvoll genutzt werden können.		Improvement	OpenSpeedMonitor	31/Aug/16 11:59 AM	02/Sep/16 1:24 PM																																																																				

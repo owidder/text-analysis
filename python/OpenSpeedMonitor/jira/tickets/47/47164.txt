@@ -1,0 +1,18 @@
+Excel import cannot handle formulas in data cells	"_Reproduce (with sample data):_
+# iteraplan->Import/Export->Download Excel Data
+# Edit the downloaded Excel file, replace a data cell value with a formula producing a valid result. For example replace the value for a number attribute with ""=5+5""
+# Save and then import the file into iteraplan
+
+_Expected:_ Import either working or a useful error/warning message displayed
+_Actual:_ Generall error, due to
+{noformat}
+Caused by: java.lang.IllegalStateException: Cannot get a text value from a numeric formula cell
+{noformat}
+
+_Reason:_
+{{XlsMappingUtil#deserialize}} assumes a string value in a cell if it is not a numeric cell. Formulas are a separate cell type and not handled correctly here.
+
+_Fix:_
+Desired behavior needs to be clarified. One of two possibilities:
+* No formulas supported: Update documentation accordingly and adjust code to return an ""invalid"" value for cells with formulas, thus causing the import to ignore those cells. Also add a useful warning message on the GUI.
+* Formulas supported (*preferred*): Find a way to read the value a formula evaluates to, and use this value."		Bug	iteraplan PO	12/Nov/14 10:19 AM	27/Nov/14 1:52 PM					excel	import								19/Nov/14 9:05 AM;fka;No source check in ?	27/Nov/14 1:52 PM;tam;Import is working now with (either number or text) formulas																																																					

@@ -1,0 +1,2 @@
+kombinierte Twitter-Bootstrap-Inputs stimmen in der Höhe nicht	"Bei den Trim-above / Trim-below-Inputs auf dem Result-Dashboard ist das bereits gefixt. Fehlerhaft ist es z.B. beim Adjust-chart-Akkordeon.
+Bitte idealerweise so anpassen, dass der Fix überall greift, wo die Bootstrap-classes input-prepend oder input-append eingesetzt werden."		Bug	OpenSpeedMonitor	06/May/14 9:47 AM	05/Mar/15 12:12 PM																																																																				

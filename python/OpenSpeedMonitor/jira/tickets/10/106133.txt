@@ -1,0 +1,11 @@
+Integration in OSM als neuer Chart-Typ	"Der Detail-Analyse-Service sollte im OSM als weiterer Chart-Typ neben ""Time Series"", ""Page Aggregation"" und der Tabelle auftauchen und nicht etwa im ""Show""-Dropdown Menü von Time Series.
+
+
+
+Folglich sollten wir die Ergebnis-Auswahl auch direkt unter dem Detail-Daten Dashboard anzeigen. Damit Elemente wiederverwendet werden können, sollten diese im OSM-Rahmen für diese Seite implementiert werden, nicht im Detail-Analyse-Service.
+
+Die UI-Elemente sollten dann auf die Felder eingeschränkt werden, die auch wirklich einen Einfluss auf die Auswahl der Detail-Daten haben.
+
+
+
+Der Knopf ""Change Selection"" kann dementsprechend entfernt werden. ""Load Assets"" sollte entsprechend auch auf dieser neuen Seite untergebracht werden."		Improvement	OpenSpeedMonitor	19/Dec/16 11:57 AM	18/Jan/17 11:33 AM																																																																				

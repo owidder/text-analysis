@@ -1,0 +1,1 @@
+Document updated REST API of Graphics Reactor	Please document the updated REST API of the Graphics Reactor in the User Guide.		Improvement	iteraplan PO	25/Oct/16 11:27 AM	25/Oct/16 9:32 PM																																																																				

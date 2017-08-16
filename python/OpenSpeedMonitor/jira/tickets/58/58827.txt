@@ -1,0 +1,1 @@
+Refactor Templates of IFD	Delete not needed templates and controller-constructions in ifdTemplate.		Bug	iteraplan PO	01/Oct/15 1:32 PM	05/Oct/15 8:30 AM																																																																				

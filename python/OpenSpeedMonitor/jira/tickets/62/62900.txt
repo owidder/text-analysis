@@ -1,0 +1,9 @@
+Create new Protractor tests for IFD	"please edit the e2e-test tracability excel sheet located in e2etest subfolder after implementing the tests
+
+
+
+create new protractor tests and test cases for IFD.
+
+
+
+please see the sub-task tickets for more informations."		Improvement	iteraplan PO	09/Nov/15 8:09 AM	17/Nov/15 8:23 AM					IFD	Test																																																														

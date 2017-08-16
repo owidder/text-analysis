@@ -1,0 +1,44 @@
+Implement boolean-filter	"*Summary:*
+Implement a filter for the one boolean attribute ""available for interfaces"".
+
+*Details:*
+* Extend CombinedFilter with a single boolean filter
+* Operators: is, is_not, arbitrary value
+* Values in the UI are ""Yes"" (German: ""Ja""), ""No"" (German: ""Nein"")
+* Values in the config/url are true/false
+* Ensure the legend is working correctly
+* ensure migrated boolean filter is wokring correctly"		New Feature	iteraplan Speedbird	20/Jan/17 4:29 PM	03/Feb/17 3:32 PM														"26/Jan/17 6:53 PM;pma;* go to technical components
+
+* filter available for interfaces yes/no
+
+* refresh  
+
+
+
+CURRENTLY: No matches found
+
+EXPECTED: matches found
+
+
+
+* also, after closing the filter, the filter opens without a value, even when entered one before
+
+* hardcoded ""yes"" and ""true"" in SingleBooleanFilter.js
+
+* hardcoded entries in filterdialogdataprovider.js (getDialogEntriesForBooleanAttribute)
+
+* please test"	"31/Jan/17 1:25 PM;roia;When list is filtered and language is changed, the result set is re-filtered incorrectly.
+
+Steps to reproduce:
+
+1. Filter list using boolean filter
+
+2. Change the language
+
+
+
+Result - items are not filtered properly, when you edit the filter the value in the value input is blank (should be Yes/No)
+
+
+
+Code review: https://iteraweb.iteratec.de/fisheye/cru/IP-317"																																																					

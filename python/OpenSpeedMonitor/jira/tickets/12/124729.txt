@@ -1,0 +1,25 @@
+Single view "Breadcrump" and "Subscriptions" is not updated	"Single view in  ""Breadcrump"" and ""Subscriptions"" name is not updated
+
+
+
+Step to reproduces:
+
+ # Open 'Data' -> 'Product' -> 'Credit card'.
+
+ # Change name to 'new test Credit card'.
+
+ # Apply name
+
+.
+
+
+
+Actual result: name is not updated in ""Breadcrump"" and ""Subscriptions""
+
+
+
+Expected result: name is updated in ""Breadcrump"" and ""Subscriptions""
+
+
+
+Comments: also success message is not appear(not sure if it`s bug)"		Bug	iteraplan Speedbird	19/Jun/17 12:31 PM	30/Jun/17 8:18 AM																																																																				

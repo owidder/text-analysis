@@ -1,0 +1,9 @@
+Javascript und CSS dependencies mit bower installieren	"Hier ist ein Weg beschrieben, der sogar die Installation von node, npm und bower via gradle erledigt:
+
+https://objectpartners.com/2015/04/29/using-gradle-and-bower-to-manage-jscss-dependencies/
+
+
+
+Sieht venünftig aus."		Improvement	OpenSpeedMonitor	04/Jul/16 11:47 PM	26/Aug/16 12:06 PM														"06/Jul/16 9:27 AM;nku;Für den osmDetailService umgesetzt.
+
+Funktioniert sehr gut, sollten wir nach und nach auch im osm einbauen."	26/Aug/16 12:06 PM;msk;Wir haben jetzt auch im OSM bower.																																																					

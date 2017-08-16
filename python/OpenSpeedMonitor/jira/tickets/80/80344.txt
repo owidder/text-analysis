@@ -1,0 +1,9 @@
+Integration-Tests unter  Grails 3.1 zum laufen bringen			Task	OpenSpeedMonitor	13/Apr/16 9:45 AM	27/Apr/16 3:16 PM														"26/Apr/16 4:54 PM;msk;Probleme:
+
+# WeeklyShopIntTests werden momentan ignoriert, da sie extrem lange Ausführungszeiten (~30) benötigen. Birger vermutet, dass die H2-Datenbank dahinter steckt. ([IT-1052|https://iteraweb.iteratec.de/jira/browse/IT-1052])
+
+# Der Test JobProcessingServiceSpec.scheduleAllJobs läuft alleine durch und wenn man ihn innerhalb der TestKlasse an erste Stelle schiebt. Wenn der Test zwischen den anderen Tests liegt, schlägt er fehl.
+
+# In CloseExpiredUpdateEventsIntTests schlagen 4 Tests fehl, wenn man die ganze Klasse in der IDE ausführt. Wenn die Tests einzeln in der IDE oder alle zusammen von der Grails-Konsole ausgeführt werden, werden sie grün. Der Grund ist nicht ganz klar, in der Methode createCsiAggregationsWithUpdateEventOutdated soll eine CsiAggregation mit dem AggregatorType ""page"" erstellt werden. Die Parameter stimmen alle, aber die new CsiAggregation() Methode gibt trotzdem eine CsiAggregation mit dem AggregatorType ""measuredEvent"" zurück."	"27/Apr/16 3:16 PM;nku;In einzelne Tickets aufgebrochen.
+
+"																																																					

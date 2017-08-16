@@ -1,0 +1,1 @@
+Absichern gegen API missbrauch	Wir können den Server gegen missbrauch absichern, in dem wir selber Keys hinterlegen und in unserem OSM einen entsprechenden API Key hinterlegen.	120466	Sub-task	OpenSpeedMonitor	04/May/17 1:51 PM																																																																					

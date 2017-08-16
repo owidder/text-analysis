@@ -1,0 +1,15 @@
+More precise and correct REST HTTP response status codes 	"When a user has insufficient rights to create/update or delete an element vie REST, the returned status code is 200 and not 4xx. Behaviour in iteraplan (no changes) and returned message via REST are correct.
+
+
+
+This might only occur if there is an additionally set restriction on attribute group for the user using the REST.
+
+
+
+See the test sheet in the related ticket for details.
+
+
+
+Status code should be 403 instead of 200. (Not 401, as proposed in the test sheet, chage that as well.) Some error messages should also be improved, e.g. in German half of the sentence is sometimes missing. Moreover placeholders are not always replaced by the actual strings.
+
+"		Improvement	iteraplan PO	26/Oct/15 5:10 PM						REST																																																															

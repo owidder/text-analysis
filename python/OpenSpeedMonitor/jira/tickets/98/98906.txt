@@ -1,0 +1,3 @@
+3. Release iteraplan (internally)	"Perform tasks for internal release of iteraplan (release guide, chapter 3).
+
+See sub-tickets for details."		Task	iteraplan PO	12/Oct/16 9:11 AM	03/Nov/16 8:05 AM																																																																				

@@ -1,0 +1,9 @@
+Sekunden werden vom cron-Ausdruck mehrfach abgeschnitten	"In der Job-Liste wird der erste Eintrag des cron-Ausdrucks mehrfach abgeschnitten. 
+
+Um dies zu verhindern bitte beim ersten Aufruf von updatePrettyCrons() der abbreviation folgendes Attribut hinzufügen:
+
+{code}data-seconds-cutted=""true""{code}
+
+
+
+Bei folgenden Aufrufen von updatePrettyCrons() dann auf dieses Attribut prüfen."		Bug	OpenSpeedMonitor	01/Apr/15 6:28 PM	02/Apr/15 11:36 AM																																																																				

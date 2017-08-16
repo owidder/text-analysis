@@ -1,0 +1,5 @@
+Zeitauswahl bleibt nicht erhalten	Im Result-Dashboard. Bei Folgerequests steht die Zeit wieder auf 12:00 Uhr.		Bug	OpenSpeedMonitor	24/Oct/13 4:03 PM	31/Oct/13 11:54 AM														31/Oct/13 12:22 AM;rhe;Problem mit 0 Uhr?	"31/Oct/13 11:52 AM;mzeimer;Die null-Prüfung in 
+    de.iteratec.isr.EventResultDashboardController.ShowAllCommand.copyRequestDataToViewModelMap(Map<String, Object>)
+war fehlerhaft. Groovy interpretiert 0 als false, korrekt daher:
+    this.fromHour.is(null) ? 12 : this.fromHour
+(ebenso für toHour)"																																																					

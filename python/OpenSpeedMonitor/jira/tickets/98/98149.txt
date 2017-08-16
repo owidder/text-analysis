@@ -1,0 +1,22 @@
+Question on LDAP authentication	"We have LDAP authentication and sometimes SSL is very slow. Microsoft is asking us to see the code which creates this issue. 
+
+
+
+Can you deliver the 5-10 lines of code you use to query ldap server and authenticate the user ? 
+
+
+
+Regards "		Fault	iteraplan Support	04/Oct/16 1:19 PM	25/Oct/16 7:00 AM														"06/Oct/16 11:37 AM;cst;Dear Sir and Madam, 
+
+thank you for your inquiry.
+
+We using for the LDAP authentication ""Spring Security"" Version 3.2.2. 
+http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+
+You could check the settings, in the file ""applicationContext-spring-security.xml"" on the path ""$TOMCAT\iteraplan instance\WEB-INF"".
+
+Greetings,
+
+Christoph Stangl - iteraplan Support 
+
+"																																																						

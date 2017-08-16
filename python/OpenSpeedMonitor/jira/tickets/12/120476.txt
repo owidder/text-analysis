@@ -1,0 +1,1 @@
+URL Handling pageAggregationChart: Comparative Timeframe nur erlauben wenn nur ein Measurand ausgewählt ist und umgekehrt	Die Basisfunktionalität wurde mit -IT-1683- eingebaut und muss nun auch bei Seitenaufruf gecheckt werden.	114501	Sub-task	OpenSpeedMonitor	04/May/17 2:05 PM																																																																					

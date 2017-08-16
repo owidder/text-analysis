@@ -1,0 +1,13 @@
+Add loupe to go.js diagrams	"Add a loupe feature to the diagrams based on go.js and canvas.
+
+
+
+Sample: http://gojs.net/latest/samples/magnifier.html
+
+
+
+Caution: could need an upgrade.
+
+
+
+http://forum.nwoods.com/t/gojs-version-1-5-0/5859"		Improvement	iteraplan PO	03/Jul/15 7:37 AM	19/Jan/16 4:06 PM																																																																				

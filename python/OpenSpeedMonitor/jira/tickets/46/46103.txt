@@ -1,0 +1,6 @@
+Language of information regarding filter configuration of a nesting cluster diagram is not reset after switch between languages	"Example:
+* Create new Nesting Cluster configuration
+* Add outer element ""information systems""
+* Add inner element ""technical components""
+* When language is currently set to german, both boxes contain an information like ""All elements"".
+* Changing the language at that point does not lead to an update of this information. Even if the page is left and revisted later on."		Bug	iteraplan PO	08/Oct/13 4:48 PM	28/Aug/14 4:02 PM																																																																				

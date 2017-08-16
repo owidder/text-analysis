@@ -1,0 +1,181 @@
+Extend REST-API /api/element to support mass update	"*Summary:*
+
+ Extend REST-API /api/element to support mass update
+
+
+
+*Actual:*
+
+ * You can only PUT/DELETE changes of *one* to {{api/element/<building block type>/<id>}} (see [https://doc.iteraplan.de/display/iteraplan60/Single+Element+API] )
+
+
+
+*Expected:*
+
+ * You can PUT changes of *multiple elements* to {{api/massupdate/elements/<method>/<building block type>}}
+
+
+
+h1. PUT
+
+
+
+*Request-body:*
+
+
+
+*use API:* api/massupdate/elements/update/<building block type>
+
+{code:java}
+
+[
+
+ {
+
+    ""id"": NUM (null is not allowed),
+
+    ""propertyPersistentName"" : [""value1"",""value2"",...] (all future values need to be specified here, e.g. we have already ""A"" and want to add ""B"", then enter [""A"",""B""])
+
+OR ""relationshipEnd"":[{""id"": NUM},{""id"": NUM}, ...] (all future values need to be specified here, e.g. we have already ""A"" and want to add ""B"", then enter [""A"",""B""])
+
+ },
+
+ {
+
+    ""id"": NUM (null is not allowed),
+
+    ""propertyPersistentName"" : [""value1"",""value2"",...] (all future values need to be specified here, e.g. we have already ""A"" and want to add ""B"", then enter [""A"",""B""])
+
+OR ""relationshipEnd"":[{""id"": NUM},{""id"": NUM}, ...] (all future values need to be specified here, e.g. we have already ""A"" and want to add ""B"", then enter [""A"",""B""])
+
+ },
+
+ {...}
+
+]
+
+{code}
+
+*Response-body:*
+
+{code:java}
+
+[
+
+  {""id"": NUM,
+
+  ""result"": <MicroEditResult as Json>},
+
+  {""id"": NUM,
+
+  ""result"": <MicroEditResult as Json>},
+
+ ...],
+
+
+
+{code}
+
+||Error code||http status code||Messsage||
+
+||200|Success|
+
+|-1|500|General server error|
+
+|3|500|Building Block Type is invalid|
+
+|4|403|No permission|
+
+|5|400|The syntax of JSON is invalid|
+
+|7|400|The data integrity of the model is violated|
+
+|8|400|A model constraint is violated|
+
+|10|400|Body is missing|
+
+|11|422|The change would lead to a cycle|
+
+|12|422|The time span is invalid, start date is after end date|
+
+| |401|User not logged in|
+
+|17|422|New Value can't be applied|
+
+
+
+@developer: Please add more exceptions if needed.
+
+h1. DELETE
+
+
+
+For delete please use PUT to {{api/massupdate/elements/delete/<building block type>}}
+
+
+
+*Request-body:*
+
+{code:java}
+
+[
+
+ {
+
+    ""id"": NUM (null is not allowed)
+
+ },
+
+ {
+
+    ""id"": NUM (null is not allowed)
+
+ },
+
+ {...}
+
+]
+
+{code}
+
+*Response-body:*
+
+{code:java}
+
+[
+
+  {""id"": NUM,
+
+  ""result"": <MicroEditResult as Json>},
+
+  {""id"": NUM,
+
+  ""result"": <MicroEditResult as Json>},
+
+ ...],
+
+
+
+{code}
+
+||Error code||http status code||Messsage||
+
+||200|Success|
+
+|-1|500|General server error|
+
+|3|500|Building Block Type is invalid|
+
+|4|403|No permission|
+
+|5|400|The syntax of JSON is invalid|
+
+|7|400|The data integrity of the model is violated|
+
+|8|400|A model constraint is violated|
+
+|10|400|Body is missing|
+
+
+
+@developer: Please add more exceptions if needed."		New Feature	iteraplan Speedbird	09/Mar/17 4:51 PM	22/Mar/17 11:39 AM														22/Mar/17 11:38 AM;vadm;Review is done, see minor comments [https://iteraweb.iteratec.de/fisheye/cru/IP-455] 																																																						

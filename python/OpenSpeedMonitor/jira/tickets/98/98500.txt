@@ -1,0 +1,118 @@
+Import error when date attribute is blank	"When importing a file that has an attribute of the type date and has blank values, warning erros are shown.  Example:
+
+1. exported from the infrastructure elements building block
+
+2. did NOT make any changes to the exported file
+
+3. imported the same file
+
+4. received warning errors
+
+See attached screen shots and the data file.
+
+
+
+Impact:  for a small file, such as the attached example, it is easy to scroll-down the warnings, ensure that the ""consistent""  message is there, and then proceed with the upload.  HOWEVER, if it is a normal file with possibly 20,000 blank date-values, then it takes an hour for the iteraplan screen to load all the warnings (sorry, this is unacceptable) and it is difficult to scroll down to see whether there are other types of warnings or errors and to ensure that the file is ""consistent"".
+
+
+
+Please advice how not to obtain these warnings when nothing was changed in the data file.
+
+
+
+Thank you, hannes callisen"		Fault	iteraplan Support	09/Oct/16 4:16 PM	13/Oct/16 3:01 PM														"09/Oct/16 4:16 PM;hannes.callisen@boehringer-ingelheim.com;
+
+[^iteraplanExcelData`161009bi-IE.xlsx] _(325 kB)_
+
+[^upload-1.pdf] _(18 kB)_
+
+[^upload-2.pdf] _(38 kB)_
+
+[^upload-3.pdf] _(13 kB)_"	"10/Oct/16 11:53 AM;cst;Dear Mr. Callisen, 
+
+Dear Mr. Siebel, 
+
+
+
+thank you for your inquiry.
+
+
+
+I checked the problem and here is the work a round for this behavior.
+
+The reason for the warning is the column type ""General"" in Excel. 
+
+
+
+Would you please change the column type into ""date"", afterwards the warnings disappear on the import.
+
+
+
+I created a improvement ticket for this issues and it will be fixed in the upcoming versions. 
+
+Could you please check the attached Excel file?
+
+
+
+[^iteraplanExcelData`161009bi-IEDateType.xlsx]
+
+
+
+Greetings,
+
+
+
+Christoph Stangl 
+
+"	"10/Oct/16 8:50 PM;hannes.callisen@boehringer-ingelheim.com;Thank you Mr. Stangl for helping.  
+Sorry to say, but the workaround did not help.  See attached screen shot.
+Greetings, hannes
+
+[^upload-4.pdf] _(65 kB)_"	"11/Oct/16 8:26 AM;cst;Hello Hannes,
+
+thank you for your reply. 
+
+The atteched xlsx file didnt work with your iteraplan? Thats really strange, 
+I could reproduce the problem and solve the warnings with the change of the column type in Excel. 
+
+I'm going to check the issues with our developers.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "	"13/Oct/16 9:53 AM;cst;Hello Hannes,
+
+
+
+could you please upload the attaced Excel-File and check for warnings on the import.
+
+[^iteraplanExcelData`161009bi-IEDateType2.xlsx]
+
+
+
+Greetings,
+
+
+
+Christoph Stangl - iteraplan Support
+
+
+
+"	"13/Oct/16 2:03 PM;hannes.callisen@boehringer-ingelheim.com;Hello Christoph - success !
+The last file you sent worked well.  See attached screen shot.
+Just interested ... what was changed?
+greetings,  hannes
+
+[^upload-5.pdf] _(29 kB)_"	"13/Oct/16 2:45 PM;cst;Hello Hannes,
+
+thank your for your feedback. 
+
+I changed the column types in ""Date"" in every empty row, entered a fake Date, copied these in every row and delete it afterwards. 
+Why this is necessary, I dont know. It could be a Excel ""speciality"". 
+
+For this issues I created a Bug-Ticket and it will be fixed in the upcoming versions. 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "	"13/Oct/16 2:59 PM;hannes.callisen@boehringer-ingelheim.com;Thank you Christoph.  Looking forward to the next release.
+Greetings, hannes
+"																																															

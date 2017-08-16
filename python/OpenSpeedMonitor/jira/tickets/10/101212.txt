@@ -1,0 +1,3 @@
+Separate properties for tomcat lib directory and tomcat webapps directory	"Our target system may have a distributed tomcat installation, where lib directory and webapps directory are not in a common folder.
+
+Currently, those directories are treated as sub-folders of tomcat installation directory. This needs to be changed. Use separate properties for lib and webapps folders."	93358	Sub-task	iteraplan Speedbird	02/Nov/16 12:55 PM	03/Nov/16 3:41 PM																																																																				

@@ -1,0 +1,37 @@
+Download Custom Dashboard	"*Summary:*
+
+ Include download function for Custom Dashboards:
+
+
+
+*Details:*
+
+ * In scope the diagram itself (not the text input on the top) *{color:#14892c}DONE{color}*
+
+ * all format which are easily generated from html and also supported by IE10 (may consult [~roia] ) (png?) *{color:#14892c}DONE{color}*
+
+ * no legend, but include Saved Query name (if any), creation datetime, iteraplan + version, licensed for ""licensee"" -on top- *{color:#14892c}DONE{color}*
+
+ * the inner diagrams remain unchanged (incl. legend) *{color:#14892c}DONE{color}*
+
+
+
+{color:#FF0000}UPDATE: {color} Changed requirements: Make ""preview""-container-width depending on the width of the actual content and put common download information on the bottom right side of the preview-container *{color:#14892c}DONE{color}*"		New Feature	iteraplan Speedbird	27/Mar/17 4:28 PM	05/May/17 3:18 PM														24/Apr/17 8:22 PM;mash;Update bower: npm run-script init 	"04/May/17 7:41 AM;viol;Please check next scenario:
+
+ 1. Add a few diagrams to dashboard editor
+
+
+
+2. Refresh page and press ""Download"" button.
+
+
+
+ 
+
+
+
+Expected: that all diagrams on the page must be saved
+
+
+
+Actual: only some part of image saved (png image in attachment)"																																																					

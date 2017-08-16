@@ -1,0 +1,27 @@
+Statische Code-Analyse	"* Javadocs prüfen
+
+* Allgemein: Checkstyle, PMD, findbugs u.ä.
+
+
+
+Idealerweise sollte dies automatisiert erfolgen.
+
+Matthias: sonarqube kann groovy-code lesen, javadocs hat er bisher nicht hinbekommen"		New Feature	OpenSpeedMonitor	27/Jun/14 5:40 PM	13/Nov/14 12:51 PM														"27/Jun/14 5:40 PM;nkuhn;von oliver:
+
+
+
+Codenarc angebunden (zunächst nur für github)
+
+
+
+Siehe Anhang: [^CodeNarcReport-2014-06-11.html]"	"30/Jun/14 9:12 AM;nkuhn;Für alle von Codenarc gefundenen ""Fehler"" werden Lösungen gefunden und nachfolgend dokumentiert. 
+
+
+
+|| Problem || Lösung || Bearbeiter || erledigt am || CodeNarc nach Bearbeitung ||
+
+| | | | | |
+
+
+
+Trivialitäten werden einfach abgearbeitet, ansonsten Abstimmung."	24/Oct/14 2:17 PM;nku;Vor der OS-Stellung einmal sichten ob noch etwas ganz wichtiges zu tun ist.																																																				

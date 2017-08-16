@@ -1,0 +1,26 @@
+Home screen - Design	"Home screen is a mix of a android home screen and a Windows modern homescreen:
+
+* scrolls horizontally
+* has tiles, boxes with small images of recent views in a group
+* has tiles in different groups
+
+A tile for a recent view should combine:
+* a thumbnail image of the view itself
+* an icon for the category of the view: 
+** if it is a list or a single item view, the icon from the (old) start screen
+** if it is a diagram, a (new) icon for the diagram. => we need an icon for nested  cluster diagram.
+** if it is something else, even more new icons (favorites, users, ...) , BUT not now in the scope of this ticket
+* the icon (or the full tile or both) could have a background color that indicates the architecture area: yellow for business, red for information system,  
+* the title of the view and/or the element, for example ""Account-Sys #3.14"" or ""Information Systems"" or ""Nested Clluster Diagram"" or ""Current ISs and BOs"".
+
+All tiles have the same size. (as opposed to Windows, where more important or more recent tiles are bigger)
+
+
+Idea, not a requirement:
+
+relatively large thumbnail image as the background, of the tile
+Colors and contrast of thumbnail corrected towards a light grey
+Forground: icon for category, icon has logical area color, and title of the view
+
+on hover, thumbnail image goes back to original colors and contrast, text fades out to invisible"		New Feature	iteraplan PO	09/Jul/14 3:37 PM	06/Oct/14 11:33 AM														"06/Oct/14 11:33 AM;wfr;Ticket successfully done.
+Closed directly because done before Kanban pipeline was set up."																																																						

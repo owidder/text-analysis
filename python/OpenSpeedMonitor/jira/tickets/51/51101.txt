@@ -1,0 +1,41 @@
+Table Pdf-User Guide is cropped	"The table for the REST API Resource Structure is cropped in the pdf export of the user guide. See page 232 in the user guide for version 5.0
+
+
+
+Maybe it's possible to adapt the pdf-stylesheet of wiki?
+
+
+
+Maybe a linebreak in the links?"		Bug	iteraplan PO	17/Jul/15 8:01 AM	31/Aug/15 3:47 PM					documentation	pdf								30/Jul/15 8:48 AM;sfe;Possible location to fix this: Confluence -> Space Admin -> PDF Layout or PDF Stylesheet	"24/Aug/15 2:50 PM;dam;I didn´t take hand on the version 5.0. Because i shouldn´t change old versions.
+
+
+
+In version 5.1 the REST API Resource Structure istn´t cropped. But the other images and tables are cropped. This is a known bug in confluence https://jira.atlassian.com/browse/CONF-34390. 
+
+I fixed it for the tables and images with a work around.
+
+
+
+"	"31/Aug/15 3:47 PM;tam;The solution is
+
+/* workaround for wide tables: CONF-17424 */  
+
+table.confluenceTable {  
+
+    width: 100%;  
+
+    table-layout: fixed;  
+
+}  
+
+  
+
+/* workaround for width images*/  
+
+img  
+
+{  
+
+ -fs-fit-images-to-width: 99%  !important;  
+
+}  "																																																				

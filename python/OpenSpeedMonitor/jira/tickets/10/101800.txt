@@ -1,0 +1,37 @@
+Permission for iteraQl (Server & Client)	"*Summary:*
+
+* Server: Extend REST-API /api/administration/permissions with new entry in the JSON:
+
+
+
+{code:java}
+
+{""iteraQl"" : true/false}
+
+{code}
+
+
+
+* Client:
+
+** On initial load of the New Client, check this permission
+
+** If this permission is false, hide the iteraQl-tile
+
+** If the url to the iteraQl is directly entered, display a no-permission-warning"		New Feature	iteraplan Speedbird	07/Nov/16 4:11 PM	28/Nov/16 12:14 PM														"17/Nov/16 5:37 PM;ants;Currently REST resource responses {{403}} status code and JSON - {code}{system: false}{code} if user does not have permissions for configuration (classic - {{/configuration/init.do}}, new - {{api/administration/system}}).
+
+As now resource should response multiple values {{system: true/false, iteraQl: true/false}}, I suppose that status code should be {{200 OK}} in each case, and just JSON property values should indicate the status of specific permission.
+
+Please confirm this assumption."	"18/Nov/16 9:02 AM;msr;Yes, I fully agree. Let's use {code:java}200 OK{code} as default answer.
+
+Only for internal server errors we use {code} 5XX{code}
+
+"	"18/Nov/16 1:10 PM;ants;Please, specify error message if user tries to access page for query console via direct URL and there are no permissions for that.
+
+
+
+Currently the following message is displayed (taken from classic client):
+
+en: You do not have the necessary permission to perform this action.
+
+de: Ihre Rechte reichen nicht aus, um diese Aktion durchzuführen."	18/Nov/16 2:54 PM;msr;Ok for me	28/Nov/16 12:14 PM;mada;Review is dene: https://iteraweb.iteratec.de/fisheye/cru/IP-196#CFR-35328																																																		

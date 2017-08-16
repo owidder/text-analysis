@@ -1,0 +1,21 @@
+Hover Info cron-expression kaputt	"In der Job-Liste bekommt der Mechanismus zum Anzeigen der Hover-Info offensichtlich den cron-Aisdruck ohne Sekunden + Minuten.
+
+"		Bug	OpenSpeedMonitor	27/Apr/15 9:52 AM	05/May/15 3:53 PM														27/Apr/15 11:55 AM;rkr;Schau bitte mal, ob es jetzt geht. Ich habe die Reihenfolge der Kommandos geändert, welche die Cronstrings zur Anzeige kürzen / an PrettyCron geben. Grund: Das Problem scheint auf dem Server nur bei manchen Strings aufzutreten, so als ob die Werte per Referenz übergeben und die Kommandos wegen der Laufzeiten der Verarbeitung unterschiedlich lange dauern und Werte überschreiben können, was zu falschen Ergebnissen führt.	"04/May/15 10:59 PM;nku;Habe hier die neue Version deployt:
+
+http://dev.openspeedmonitor.wpt.iteratec.de/job/list
+
+
+
+Auf der Jobliste wird für folgenden Job jetzt die Hover-Info für den Cron-Ausdruck ""5 * * * ? *"" korrekt angezeigt: ""Every 5th minute past every hour"" 
+
+Job=""Amazon multi-step mobile""
+
+
+
+Leider stimmt jetzt die Anzeige beim editieren des Jobs wieder nicht. Hier wird für den selben Cron-Ausdruck jetzt ""05:00 every day "" angezeigt :("	05/May/15 11:30 AM;rkr;Also - an PrettyCron scheint es nicht zu liegen - falls wir die neueste Version verwenden: http://jsfiddle.net/1yudn47c/1/ (Ausgabe auf der Konsole).	"05/May/15 12:40 PM;nku;Da war ich auch nicht von ausgegangen.
+
+Ich nehme an, dass Dein Fix für die Jobliste die Anzeige auf der edit-Seite kaputt gemacht hat?"	"05/May/15 1:27 PM;rkr;Wieso hattest Du das Ticket wieder aufgemacht?
+
+Der Fix ist in Commit 1cbecbe5df89ffe68e71b9592e3ed15df08b301a „FIXED preparation of parameter for prettycron“ – gibt es damit ein Problem?
+
+"																																																		

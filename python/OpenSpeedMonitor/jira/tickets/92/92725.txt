@@ -1,0 +1,15 @@
+Als Entwickler möchte ich den TaskService als eigenständige Lib einbinden können	"Bisher ist die Integration der einzelnen secureBox Komponenten mit der SecureBoxEngine via Copy&Paste mehrmals implementiert. 
+
+
+
+Hier macht es Sinn eine eigenständige Komponente als Library auszulagern und diese dann als Dependency in die einzelnen SecureBox Kompontenten zu integrieren.
+
+
+
+Da es sich bei der Integration der Camunda Engine um eine von der SecureBox komplett unabhängige Funktionalität handelt, sollte diese entsprechend dem Edison Framework auch als eigenständige Edison Komponente benannt und behandelt werden: edison-camunda.
+
+
+
+Für die Speicherung der gebauten Artefakte sollte das iteratec Artifactory genutzt werden.
+
+"		Story	secureCodeBox	08/Aug/16 12:00 PM						students																																																															

@@ -1,0 +1,20 @@
+Second level of the Context menu doesn't open after removing options from legend in the IE 11	"Summary: The second level of Context doesn't open after removing of  applied options from legend in the IE11
+
+Steps to reproduce:
+1. Go to NCD page with IE11
+2. Use any filtering option by enumeration properties for inner elements
+3. Use any filtering option by numeric properties for inner elements
+4. Use any coloring for inner elements
+5. Remove applied option from legend
+6. Open context menu for inner elements
+Actual: The second level of Context doesn't open
+Expected: The full menu should be available
+"		Bug	iteraplan PO	24/Apr/15 10:49 AM	06/May/15 9:00 AM														24/Apr/15 1:06 PM;msr;Workaround is to reload the full page.	24/Apr/15 1:54 PM;msr;Related to ITERAPLAN-3079	"25/Apr/15 5:10 PM;fam;Did some tests but without success.
+tam is informed about the current state of investigation.
+Basically, with IE10 a new version was working. Also a special configuration of fka was temporary working.
+But, updated versions with IE11 don't work. Obviously a problem when a coloring is set.
+Please do some further investigations."	"28/Apr/15 10:53 AM;tam;Asked at StackOverflow
+http://stackoverflow.com/questions/29898426/angularjs-ie11-and-mouse-events"	28/Apr/15 10:58 AM;tam;-There is a workaround: change the 'simulated' version to 10 in the Developer Tools (F12).-	28/Apr/15 12:45 PM;tam;Maybe this http://stackoverflow.com/questions/27062978/rendering-bugs-ie11-in-windows-7	28/Apr/15 1:24 PM;tam;Maybe even this http://stackoverflow.com/questions/24075266/svg-click-using-d3-freezes-ie11	"05/May/15 4:56 PM;fam;This Problem seems to be caused by IE and SVG operations.
+It is planned to replace the SVG usage in NCD with GoJS, so the remaining Problem here will be solved within this refactoring.
+ "	"06/May/15 9:00 AM;sfe;This is fine, since the documentation was updated here:
+http://www.iteraplan.de/wiki/display/iteraplan50/Known+Bugs"																																														

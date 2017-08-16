@@ -1,0 +1,27 @@
+Implement Unit Tests for the data model 	"Based on the existing code for the user tests in iteraplan-9 (using Jasmine and Karma) update the unit tests for the data model.
+
+You have two possible options how to do that:
+
+# Create a new test file based on the already existing code
+
+# Update the existing code
+
+
+
+These tests include tests on the BusinessObject and BusinessObjectList"		Improvement	iteraplan PO	01/Oct/15 10:37 AM	18/Jan/16 9:32 AM														"01/Oct/15 4:30 PM;thf;After some considerations, I have decided to create new test files in the following structure:
+
+* dataModelSpec: This contains all test cases that treat the dataModel
+
+* dataModelBusinessObjectSpec: This file contains all tests considering the BusinessObject (contained in the dataModel)
+
+* dataModelBusinessObjectsListSpec: This file contains all tests considering the BusinessObjectsList (also contained in the dataModel)
+
+* dataModelConstants: This file contains the basic mockup objects that are necessary for performing the tests under the previously described files."	"02/Oct/15 3:44 PM;thf;* Tests implemented for the dataModel
+
+* Tests implemented for the businessModel
+
+* Tests implemented for the businessModelList
+
+* Extracted the constants (i.e. mock data) to dataModelConstants
+
+* Renamed the files according to the naming convention ($FILENAME + ""-spec.js"")"	14/Oct/15 11:37 AM;thf;In agreement with SFE, created the issue https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-3994. Therefore, I finalized the test cases.	26/Oct/15 10:50 AM;fka;Review postponed after release 5.1																																																			

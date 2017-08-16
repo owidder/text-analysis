@@ -1,0 +1,43 @@
+Behaviour of edit components	"# there still some small bugs with edit components:
+
+-- apply button = enter, cancel button = esc. In some components (e.g. num, date) you can still enter some invalid value and submit it with ""enter"". A REST call will be done.
+
+# Som make sure for every component that shortcuts behave exactly like UI-buttons (if buttons are disabled, key downs should be ignored)
+
+# check it for every editor type
+
+# Double-check: Enum editor in coulmn groups (e.g. CRUD) does not send requests or does it work again?
+
+# Association columns aren't unlocked when an invalid value is sent"		Bug	iteraplan Thunderduck	16/Jan/17 11:41 AM	23/Jan/17 10:09 AM														18/Jan/17 2:56 PM;mse;Please wait until IPTT-242 is done as the error handling for some editors will change there.	"19/Jan/17 10:16 AM;mse;1./2.: Won't fix: it is out-of-scope to disable ENTER key when invalid value is in editor, see IPTT-242 for discussion and implementation of improved error messages
+
+
+
+3. Checked that error message is shown, editing is canceled and no request is sent when editor contains invalid value and either ENTER is pressed or the user clicks out of the editor for:
+
+* Name editor
+
+* Single line text editor
+
+* Multi line text editor
+
+* Date editor
+
+* Number editor
+
+* Multi-value enum editor (accountability)
+
+* Single-value enum editor
+
+* Multi-value relation editor
+
+* Single-value relation editor
+
+* Date interval editor (productive period)
+
+
+
+4. Fixed by [~sfe]
+
+
+
+5. Fixed"																																																					

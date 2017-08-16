@@ -1,0 +1,20 @@
+Special columns for orphans elements	"Summary: Columns for orphans elements shouldn't be displayed as empty column for diagram which hasn't orphans elements for displaying on LSD page
+
+Steps to reproduce:
+1. Go to LSD page
+2. Use Technical Component as content type and Architectural Domain as x axis and Information System as y axis
+
+Actual: The empty column for orphans elements displayed on the right side
+Expected: Columns for orphans elements shouldn't be displayed as empty column for diagram which hasn't orphans elements for displaying
+
+"		Bug	iteraplan PO	01/Apr/15 11:49 AM	15/Apr/15 4:15 PM														"15/Apr/15 11:25 AM;wfr;Not a problem
+
+Correction for expected behavior:
+
+If the orphans column (or row, for the same reason) is displayed is controlled by the settings of the diagram, NOT of the underlying data.
+The user might have to versions of the diagram, created at different dates with different model data states.
+Both diagrams must have the same _structure_, so that one can compare them visually.
+It may be important to see that the orphan column (or row) is empty, for example because all content elements are properly attached to their respective categories.
+
+VERY much later, we might think of a HINT ""Would you like to hide the empty column"" as a kind of toast or a floating action button or...
+"	15/Apr/15 4:15 PM;dasm;Implemented under IP9-383																																																					

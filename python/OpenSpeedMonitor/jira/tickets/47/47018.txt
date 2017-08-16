@@ -1,0 +1,5 @@
+Move column one step left or right in IS list view	"to be discussed: control for action
+
+ideas: 
+* menu entries in context menu of column header
+* button in column header (but only visible on hover over column header)"	47011	Sub-task	iteraplan PO	30/Sep/14 6:19 PM	09/Jun/15 5:06 PM																																																																				

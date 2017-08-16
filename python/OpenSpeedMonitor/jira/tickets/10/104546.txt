@@ -1,0 +1,67 @@
+Filter Extension: Filter by Business Mapping	"*Summary:*
+
+Filter Extension: Filter by (a complete) Business Mapping (and not the separate parts of it)
+
+
+
+*Details:*
+
+* Re-Implement filter functionality of classic client for Business Mappings
+
+* Filter by all attributes of the related Business Mapping and all attributes of Business Processes, Business Units and Products (if you have selected an Information System as basis)
+
+* Filter by ""No Associations""
+
+
+
+{color:red}UPDATE: {color} Don't include watchers.
+
+
+
+(CHANGE) marks behaviour which is different in the classic client
+
+BM = Business Mapping
+
+
+
+General maxim: The semantic of clauses is ""there exists at least one which...."", not ""all fufill the criteria""!
+
+
+
+*(New) Behaviour in detail:*
+
+* global option ""No associations"": Elements fullfill this option, if they have no BM at all
+
+* (CHANGE) 4 clauses (attributes of BM and 3 relations to other ends of the BM) are connected by AND
+
+* (CHANGE) New Option ""No associations"" for each of the 3 relations end points. Elements fullfil this condition, if they have at least one BM, which has this end point not set. Cp. the maxim above.
+
+* With the 3 end point clauses: <Some attibute>/<some operator>: Elements do not fulfill this condition, if the respective endpoint is not set.
+
+(CHANGE) ""No value""/""is not""/""contains not"" behavior in the old client was different, as the empty relation end point was modelled differently
+
+* With the 3 end points: For each end point 3 different options should be available: (1) ""Don't care"", (2) ""No Associations"", (3) ""According to the following clauses""
+
+(1) This corresponds to not adding a relation filter extension in the classic filter dialog. With the BM filter the 3 end points are always visible, so ""not adding"" the clause is not possible. We have to explicitely add this option.
+
+(2) Cp. above, new option
+
+(3) Only in this case the clauses are shown. Filtering as in the standard filter dialog resp. see above.
+
+Default is (1)
+
+Maybe some radio button options (left to right) might be useful for providing these three options. Ideas are welcome ;-)
+
+Captions: (1) ""Any"" / ""Beliebig"" (2) ... (3) ""According to attributes"" / ""Entsprechend der Eigenschaften""
+
+
+
+"		Improvement	iteraplan Speedbird	02/Dec/16 2:31 PM	01/Feb/17 4:44 PM														12/Dec/16 10:55 AM;msr;Postponed to the next Sprint because Authentication has higher priority	"30/Dec/16 4:13 PM;mada;Code review done:
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-271#CFR-36639
+
+"	04/Jan/17 10:15 AM;roia;Assigning this to Fabian to confirm that filtering logic works as it should. From my point of view, it works correct.	13/Jan/17 1:36 PM;dmkh;[~fka], [~roia], [~msr], I have noticed strange duplicates in relations list of filter dialog for Information Systems (see attached screenshots). This issue probably appeared after changes related to this ticket.	13/Jan/17 4:16 PM;fka;[~dmkh] Duplicates not visible in nightly build. Therefore some other change from today might be responsible for the duplicates. Please open a separate defect ticket.	13/Jan/17 4:16 PM;fka;[~roia] Filtering logic works as expected! Thanks.	"13/Jan/17 4:47 PM;dmkh;[~fka], after deeper investigation I have found the revision that started causing the issue: *5667* made today by [~sfe].
+
+
+
+Created defect ticket IPTS-500"	30/Jan/17 10:21 AM;msr;Please do a *code-review* as Fabian tested it only from a functional point of view.																																															

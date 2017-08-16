@@ -1,0 +1,13 @@
+Remove Option "Purge index before rebuilding."	"*Summary:*
+
+Remove the option ""Purge index before rebuilding."" in Administration\configuration completely, i.e.
+
+* in the classic client incl. the jsp
+
+* in the ""/administration/system""-REST interface
+
+* in the new client incl. System-tile
+
+
+
+In future it is always activated (always purged)"		Improvement	iteraplan Speedbird	07/Oct/16 3:42 PM	04/Nov/16 9:53 AM																																																																				

@@ -1,0 +1,33 @@
+Refactor NCD configuration URL reading	"We use {{queryParams = queryProcessor.read();}} to read the URL and 
+
+
+
+{{queryProcessor.setParametersToUrl(queryParams);}} to write it.
+
+
+
+Looks like this does not work well with storing complex objects, like coloring, etc.
+
+
+
+I'd suggest that we rewrite it with the use of 
+
+
+
+{{queryProcessor.readUrlAsObject()}} and {{queryProcessor.writeObjectToUrl()}}
+
+
+
+Also, when we process the URL, we loop:
+
+
+
+{{for (var param in queryParams)}}  , but inside the loop we check the
+
+
+
+{{that.configurationParameters}} . For me it looks inconsistent and leads to incorrect URLs stored, which later cannot be restored and produce errors.
+
+
+
+ "		Bug	iteraplan PO	10/Apr/17 1:26 PM	19/Apr/17 11:46 AM														19/Apr/17 9:57 AM;roia;[~msr], this task is duplicate of IPTS-716. I think, you can close this one.																																																						

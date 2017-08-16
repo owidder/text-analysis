@@ -1,0 +1,21 @@
+Distrigation for rows in LSD not working	"Reproduce:
+
+Add a third level to a Information System Hirachy (for example add a element with superordinate SAP CO-P10 # 6.0) and make sure the new element is connected with a Project. Also add a Project to SAP CO-P10 # 6.0.
+
+Then open the LSD page and use Project as content type, the Information Systems as rowtype and accountability for the columns. 
+
+If in the hirachy level ""flat"" is true, the newly created element is shown. 
+
+
+
+When opening the hirachy level filter for the rows (Information Systems) only 1 and 2 are possible to choose in the filter, and the new element disapperars. When setting the filter in the uri to 3, It is show correctly in the view, but the point in the middel is missing and by using the slider one can change the number so 2 takes the place of 3 and it is not possible to choose aggregation. => It is broken again.
+
+
+
+Expected: The silder goes form 1 to 3 and all the levels can be choosen "		Bug	iteraplan PO	13/Feb/17 11:10 AM	14/Feb/17 3:46 PM														"14/Feb/17 10:51 AM;dmkh;While opening default LSD from ""VISUALIZE + REPORT"" tab or using saved queries or URL, the exception appears (see attached screenshots).
+
+Everything is OK when resetting the view.
+
+Reproduced from revision 5993 (by [~aan])."	"14/Feb/17 3:46 PM;viol;Review is done.
+
+Created follow-up ticket for additional refactoring"																																																					

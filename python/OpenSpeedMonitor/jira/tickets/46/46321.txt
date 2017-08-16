@@ -1,0 +1,27 @@
+Information Flow Diagram: No edges displayed if interfaces are not filtered (default)	"After choosing the information systems for the information flow diagram the ""Relevant Interfaces"" tab in step 2 doesn't show any interfaces to display.
+
+""The selection is empty. At least one element or value has to be selected in order to generate the diagram. Please click on 'Filter' to change the selection.""
+
+The generated visualization therefore displays no edges (as all interfaces get filtered). Setting an empty filter returns all interfaces and the vis is fine!
+
+Is related to ITERAPLAN-2252"		Bug	iteraplan PO	08/Nov/13 4:36 PM	09/Jan/14 12:34 PM					visualization									"18/Dec/13 3:18 PM;sfe;I found two remaining issues:
+
+1. JSP error when sending filter query:
+* Navigate to Information Flow Diagram page
+* Click ""Send query & use results""
+* On configuration page 2, click ""Filter Interfaces"" in the ""Relevant Interfaces"" accordion
+* On the filter page, click ""Send Query"", *NOT* ""Send query & use results""
+This results in a technical error due to a property not found in the memory bean despite being referenced by the JSP.
+
+2. Empty Interfaces selection after saving the query
+* Navigate to Information Flow Diagram page
+* Click ""Send query & use results""
+* On configuration page two, do *NOT* filter interfaces
+* If you create the diagram now, all interfaces are displayed
+* Now save the query under an arbitrary name
+* After saving, the interfaces selection is now empty, and creating the diagram does not show interfaces anymore
+* After loading the diagram again, all interfaces are selected and displayed when the diagram is generated.
+
+Both cases also apply to business object filtering."	20/Dec/13 10:04 AM;bra;current solution is to execute the interfaces and businessobjects queries upfront. This however causes issues with permissions (see ITERAPLAN-2252)	"03/Jan/14 11:18 AM;sfe;The issues I've commented on above are fixed now.
+There is, however, another thing I've noticed: When filtering interfaces or business objects, then switching back to step 1 (maybe to adjust the information system filter/the selected elements) then going back to step 2 of the diagram again, the interfaces and business object filters are reset.
+In my opinion, the configured filters should remain in this case, since other configuration settings on page 2 remain as well."	08/Jan/14 6:08 PM;lba;It Works!	09/Jan/14 3:30 PM;fka;Reviewed, various diagrams generated																																																		

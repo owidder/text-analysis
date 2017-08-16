@@ -1,0 +1,23 @@
+List Edit - Edit Dialog cannot be closed 	"Reproduce with trunk 
+
+
+
+# Open the list view for ""Information Systems""
+
+# Open the edit dialog of a random column 
+
+# Then change the content of the column 
+
+# Click on the end of the list 
+
+# The Dialog stays open, when you click left, right and above the dialog will be saved
+
+
+
+Expected: The dialog will be closed and saved
+
+Actual: The dialog will be not closed when you click under the dialog "		Bug	iteraplan PO	01/Feb/17 11:06 AM	14/Feb/17 11:38 AM														"03/Feb/17 1:31 PM;pma;Dialog does not open in following cases:
+
+* clicking directly under the dialog (probably frame is bigger because of the buttons on the right side)
+
+* clicking outside of the list: Open a list with less entries e.g. ""Architectural Domains"". Open the edit dialog for any column and click on a space ""under"" the list."	14/Feb/17 10:18 AM;mash;Revision #5999																																																					

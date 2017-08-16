@@ -1,0 +1,33 @@
+Server-Side	"* PDF-Generation via Batic
+
+* REST
+
+* first approach: synchronous POST with direct response of PDF. All asynchronous handling is on the client side only.
+
+
+
+Try and verify that there are no resource problems in the client that might be caused by handling the PDF as JS data (from GET/$resource to String to encoded href-data).
+
+Next approach if needed: optimize with following steps:   
+
+* Link generation: Link contains diagram name and actual timestamp, 
+
+* link is valid for 30 minutes (see excel-export) 
+
+* ""ring-buffer"" for upper bound on resource usage"	55882	Sub-task	iteraplan PO	05/Oct/15 1:33 PM	22/Oct/15 10:41 AM														"20/Oct/15 10:40 AM;gph;* Problem with Batik in client-side SVG:
+
+{{<... fill=""transparent"">}} cannot be processed by Batik.
+
+Resolved by server-side preprocessing:
+
+Substitute with {{<... fill=""none"" fill-opacity=""0"">}}
+
+
+
+* Another problem with Batik processing of client SVG:
+
+See bug ticket _BATIK-1127: BridgeException for SVGs with clip-path=""url(...)""_
+
+https://issues.apache.org/jira/browse/BATIK-1127
+
+Occurred sometimes in one developer's environment, but cannot be reproduced steadily."																																																						

@@ -1,0 +1,31 @@
+Excel import: cell reference in error and warning messages	Cell reference should be shown in error and warning messages		Improvement	iteraplan PO	30/Apr/11 7:38 PM	12/Oct/11 3:41 PM														"01/Jun/11 2:09 PM;sry;I don't see this issue as completed at all. If I run an import of a freshly exported Excel file, I get so many log entries that only refer to the name of the offending element, but not the cell reference.
+
+Example: {noformat}[WARN ] An element ""Migration DB"" of type project.singular exists already with a different ID than specified{noformat}
+
+Please make the cell coordinates easier to spot. I'd suggest to put them in square brackets, e.g. *\[G38\]*
+
+In general, I was hoping that you use the _BuildingBlockHolder, BuildingBlockAttributes, CellValueHolder_ etc. classes from the interfaces project. IMHO, these make it easier to have the reference information always available, without passing them around explicitly. Or did you see any other constraints?
+
+The current technical state is good, I want to make that clear as well. Valentin's string cleanup was particularly valueable."	"30/Jun/11 6:54 PM;sry;I have three more remarks/wishes:
+* In {{ExcelImportServiceImpl}} you've included a lot of lines to get {{CellValueHolders}}s from a map, check for null and get the contained value eventually. I'd suggest to bundle this ever-repeating logic in a helper method that returns the correct String or an empty String. This would make the code less cluttered.
+* I believe it would be good to switch the {{SheetImporter#getRuntimePeriod}} method to use {{CellValueHolder}}s or similar as parameters.
+* And finally there's currently a lot of good stuff in {{ExcelImportUtilities}} and in the same class in the interfaces project, but they are (still) quite different. Would be a big plus if you could merge some of those things from the interfaces project, not necessarily everything. Thx :-)"	31/Aug/11 3:18 PM;sry;From my point of view, the code is ok. Please review my changes as well.	23/Sep/11 12:12 PM;sry;any progress on this, Valentin?	23/Sep/11 12:19 PM;vsh;There were some problems with the Excel import because of the QL synchronization, I will test it today.	"23/Sep/11 4:17 PM;vsh;There are still some issues to be improved:
+
+1) I encountered the following error message: ""[WARN ] Invalid timespan, end date before start date: Information System --> a --> 03.01.00 00:00 - 02.01.00 00:00, cells [G7] and [{5}]"", the last parameter is not substituted with a cell reference
+2) Importing a freshly downloaded template file with only one new IS ""a"" and a new TC ""a"" creates way too many (over 4000) ""[WARN ] Empty Name, not saved. [WARN ] Skipping Import of Row [8]"" messages
+ "	23/Sep/11 4:34 PM;vsh;In some error messages (e.g. in ExcelImportUtilities) there is still no reference to the cell although the CellValueHolder is passed as argument. 	"29/Sep/11 3:08 PM;mba;Finished Testing; Results:
+* Log-level is hard coded to DEBUG. I think this is not a perfect solution, but as the DEBUG logs are quite useful, I'd rather change some logs from debug to info than simply changing the log-level (or make it configurable) before a release will be built.
+* Should the references be contained in the Attributes and Object-Related-Permissions import as well? (Currently they're not!):
+** ATTRIBUTES
+*** {noformat} [ERROR] Current Sheet: Enumeration Attribute {noformat} 
+*** {noformat} [ERROR] A BuildingBlockType for the value ""ArchitecturalsssDomain"", does not exist. {noformat} 
+*** {noformat} [WARN ] Group not found ""someStrangeGroup"". Set to default group. {noformat} 
+** OBJECT-RELATED-PERMISSIONS
+*** {noformat} [WARN ] The building block with ID 55.556 and type businessDomain.singular was not found in database {noformat}
+* Some warn/error logs still do not contain references:
+** {noformat} [WARN ] Related building block test of type informationSystemRelease.singular not found, ignoring {noformat}
+** {noformat}  [ERROR] Could not find related BuildingBlocks for Interface 'Test2' [Test # 1.4] <-> [Test # 1.5]. Not importing. {noformat}"	29/Sep/11 4:07 PM;sry;Please open a new ticket re cell coordinates in attribute and obj-related permission import. Your last finding is fine, I'll take care of those messages and the DEBUG suggestions.	"11/Oct/11 2:05 PM;mba;* created ITERAPLAN-294 for AttributeTypes import
+* created ITERAPLAN-295 for Object-Related-Permissions import"	"12/Oct/11 2:08 PM;mba;Tested again:
+* the two previously mentioned logs are working now
+* found another warning that doesn't contain a reference: {noformat}[WARN ] Direction ""->"" not recognized{noformat} in InformationSystemInterfaceSheetImporter.save(Line 101). 
+Sorry for not recognizing this in first place"	12/Oct/11 3:41 PM;mba;tested!																																											

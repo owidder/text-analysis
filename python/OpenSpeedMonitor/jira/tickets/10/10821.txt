@@ -1,0 +1,18 @@
+Multistep-Results mit Delimitter im stepname werden falsch persistiert	"Der delimitter, der im stepname die Page vom eigentlichen Stepname trennt ist ':::'.
+Aktuell führt das folgende Script:
+{code}
+ignoreErrors	1
+setCookie	http://www.otto.de	TestGroupLhotse=lhotse_Monitoring
+setCookie	http://a1.www.otto.de	TestGroupLhotse=lhotse_Monitoring
+setEventName	HP:::LH_Homepage
+navigate	https://www.otto.de
+setEventName	MES:::LH_Moduleinstieg
+navigate https://www.otto.de/damenmode/
+{code}
+zur Erzeugung von zwei Events 
+* LH_HomepageHP:::LH_Homepage (Page undefined)
+* LH_ModuleinstiegMES:::LH_Moduleinstieg (Page undefined)
+
+Eigentlich hätten folgende Events erzeugt werden sollen
+* LH_Homepage (Page HP)
+* LH_Moduleinstieg (Page MES)"		Bug	OpenSpeedMonitor	11/Dec/13 4:44 PM	17/Dec/13 10:59 AM														16/Dec/13 6:05 PM;nkuhn;Fehlerursache war ein doppeltes tag <eventName> im result-xml-tag <stepName>. Dieses wird seit dem letzten Fix von Christian geschrieben. Habe den LocationAndResuiltPersisterService angepasst, sodass er mit doppelten <eventName>-tags umgehen kann. Zudem soll Christian das Fixen: Siehe hierzu OT-62																																																						

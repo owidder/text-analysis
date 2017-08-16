@@ -1,0 +1,11 @@
+Administration > All Controller > EventResultController ist nicht verfügbar	"Administration > All Controller > EventResultController:
+
+http://localhost:8080/OpenSpeedMonitor/eventResult/index
+
+ist nicht verfügbar - 404."		Bug	OpenSpeedMonitor	18/Feb/15 3:38 PM	24/Feb/15 5:54 PM														"20/Feb/15 10:45 AM;rkr;Der EventResultController soll in der Liste des Menu-Punktes Administration nicht mehr enthalten sein. Die Logik zur Generierung dieser Controller-Liste soll nur anzuzeigende Controller enthalten, um den EventResultController auszuschließen.
+
+
+
+Dieser Controller soll zusätzlich umbenannt werden.
+
+Neuer Name: TabularResultPresentationController"																																																						

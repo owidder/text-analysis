@@ -1,0 +1,1 @@
+Database-Exceptions werden in den CRUD-Views nicht abgefangen	Wenn z.B. ein NotNullable Feld vor dem Speichern nicht gesetzt wird, fliegt eine Database-Exception. D.h. momentan funktioniert die Validierung in den CRUD-Views nicht		Bug	OpenSpeedMonitor	10/May/16 11:13 AM	17/May/16 10:05 AM																																																																				

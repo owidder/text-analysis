@@ -1,0 +1,31 @@
+Undo-Button in Filter does not work	"*Summary:*
+
+The undo-button just closes the filter-dialog but does not ""undo"" anything in the Masterplan Diagram.
+
+
+
+*Reproduce:*
+
+* Set the filter ""name contains SAP""
+
+* Close the filter
+
+* Click on Filter\Level 1 in the Toolare
+
+* Click on ""OR""
+
+* Set additionally ""Complexity is high""
+
+* Click on ""Undo""
+
+
+
+*Actual:*
+
+The filter is ""complexity is high"" is also applied
+
+
+
+*Expected:*
+
+The filter is ""complexity is high"" should not be applied because the diagram should be rolled-back to the state before the user has set this second filter."		Bug	iteraplan Speedbird	25/Jul/16 2:32 PM	27/Jul/16 11:29 AM														27/Jul/16 10:50 AM;dmkh;Code review is here: https://iteraweb.iteratec.de/fisheye/cru/IP-86																																																						

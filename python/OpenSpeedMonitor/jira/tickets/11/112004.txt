@@ -1,0 +1,63 @@
+Test release artifacts	"https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-3.2Testen
+
+
+
+Bitte sobald ihr mit dem Testen einer Variante beginnt, die entsprechenden Punkte unten abhaken, z.B. mit (/) {{\(/\)}} für erfolgreich durchgeführt und (!) {{\(!\)}} für ""in progress""
+
+
+
+_Bundles_
+
+* (/) Basic + Initialdaten
+
+* (/) Lite + Beispieldaten
+
+* (/) Wichtig: Überprüfen, ob der Code des Interactive Client erfolgreich uglified wurde!
+
+
+
+_Installer_
+
+* (/) Linux: LDAP und automatisches Erstellen der superuser-Gruppe! 
+
+* (/) Windows: in der GUI Variante
+
+* (/) Deployment im ROOT-Kontext
+
+* (/) Wichtig: Überprüfen, ob für der Code des Interactve Client erfolgreich uglified wurde!
+
+
+
+_Datenbanken_
+
+* (/) MySQL
+
+* (/) HSQLDB
+
+* (/) Oracle 11g / 12c
+
+* (/) MSSQL Server
+
+
+
+Zum Testen mit LDAP siehe auch [hier|https://iteraweb.iteratec.de/confluence/display/ITPL/LDAP#LDAP-Mini-How-TozumTestenbeiiteratec]."	111804	Sub-task	iteraplan Thunderduck	16/Feb/17 8:18 AM	16/Feb/17 2:38 PM														"16/Feb/17 9:03 AM;cst;Tested the following configurations: 
+
+
+
+(/) iteraplan premium / Tomcat 8 / Oracle 11g / LDAP (Windows 10) 
+
+(/) iteraplan corporate / Tomcat 7  / Oracle 12c / iturm (Windows 10) 
+
+(/) iteraplan corporate / Tomcat 8  / MYSQL / iturm (Windows 10)
+
+(/) iteraplan basis / Tomcat 7 / MYSQL / iturm (Linux)
+
+(/) iteraplan corporate / Tomcat 8  / MSSQL / LDAP SSO (Server 2012 R2)"	"16/Feb/17 12:56 PM;cst;(/) iteraplan-basic-bundle-5.5.0
+
+(/) iteraplan-basic-bundle-sampledata-5.5.0
+
+(/) iteraplan-lite-bundle-5.5.0 (Sampledata included not correct)
+
+(/) iteraplan-lite-bundle-sampledata-5.5.0
+
+(/) iteraplan-premium-ldap-bundle-5.5.0"																																																					

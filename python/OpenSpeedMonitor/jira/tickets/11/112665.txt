@@ -1,0 +1,15 @@
+Permission handling for Roles & Permissions (Server & Client)	"*Server:*
+
+* Extend: {{api/administration/permissions}} with new key ""editRolesPerm"" (see No. 12 in https://iteraweb.iteratec.de/confluence/pages/viewpage.action?pageId=94798389 )
+
+* The apis {{administration/roles}} and {{administration/roles/ID}} are only permitted for if ""editRolesPerm"" is true
+
+
+
+*Client:*
+
+* On initial start check for ""editRolesPerm""
+
+* If this is false, hide tile ""Roles and Permissions""
+
+* Prohibit direct url-access with the message ""GENERAL_PERMISSIONS_WARNING"""		New Feature	iteraplan Speedbird	22/Feb/17 5:44 PM	20/Mar/17 4:43 PM														20/Mar/17 4:42 PM;mash;Review is done. No any comments																																																						

@@ -1,0 +1,9 @@
+Saxon jar on the classpath changes SVG output and hence corrupts diagram display	"Adding the Saxon XSLT processor to Maven dependencies changes the SVG output, although there is no configuration. With the Saxon library present on the classpath, some elements get an additional XML-attribute in the SVG output:
+{code}
+<a xmlns="""" ...>
+{code}
+
+This attributes hides the symbols, so that the diagram results seem to be empty, which they are not. The elements are present in the SVG output, but the symbols are not displayed.
+
+The Saxon implementation is used automatically due to the ServiceLoader mechanism. This mechanism is triggered by the replacement of the default XSLT TransformerFactory implementation with the class specified in ""META-INF/services/javax.xml.transform.TransformerFactory"" inside the Saxon JAR.
+"		Bug	iteraplan PO	27/May/15 11:03 AM	03/Jun/15 1:44 PM					diagram	diagrams	svg	xslt																																																												

@@ -1,0 +1,5 @@
+NGNIX um SSL für alle Verbindungen erweitern mit "Let's Encript"	"Mit dem Dienst Let's Encrypt gibt es heute einfach die Möglichkeit kostenlose und anerkannte SSL Zertifikate zu beantragen und diese kontinuierlich auszutauschen.
+
+
+
+Für die SecureCodeBox als Cloud Variante ist es ebenfalls zwingend notwendig eine SSL basierte Kommunikation einzusetzen. Inzwischen gibt es bereits Anleitungen zu finden wie auf Basis von Docker + NGNIX + Lets Encript genau das einfach erreicht werden kann, das sollte wir aus so machen."		Story	secureCodeBox	01/Sep/16 12:23 AM	21/Dec/16 8:44 PM	secureBoxProxy (Nginx)				students																																																															

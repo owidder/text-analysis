@@ -1,0 +1,21 @@
+Num-Filter-Slider does not have the preselected values after page refresh	"# Go to ncd diagram.
+
+# Select filter costs and between 1000 and 4000. (the exact numbers are not really important only they should be not 1 and 5000)
+
+# Click Close button
+
+# Refresh page
+
+# Open filter dialog
+
+
+
+Expected: The filter costs with between 1000 and 4000 is selected.
+
+
+
+Reality: The filter costs with between 1 and 5000 is selected.
+
+
+
+Observation: The values are read from the URI correctly and also executed on the diagram. Only the slider is not set properly."		Bug	iteraplan Quickfox	11/May/16 6:06 PM	08/Aug/16 2:55 PM														14/Jul/16 1:54 PM;fka;Still broken?	08/Aug/16 2:55 PM;mwe;It works now.																																																					

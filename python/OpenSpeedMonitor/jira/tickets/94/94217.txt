@@ -1,0 +1,21 @@
+Download incl. legend as SVG, PNG, JPEG, PDF	"*Summary:*
+
+Create download feature for diagram incl. legend for SVG, PNG, JPEG and PDF. 
+
+Zoom is always 100%
+
+
+
+*Implementation Details:*
+
+* Use common class ""HeaderDownloadService.js""
+
+* Url: nothing to do
+
+
+
+*UI:*
+
+* Legend:nothing to do
+
+* Toolarea:nothing to do"		New Feature	iteraplan Speedbird	26/Aug/16 11:36 AM	06/Sep/16 11:56 AM														06/Sep/16 11:56 AM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-28																																																						

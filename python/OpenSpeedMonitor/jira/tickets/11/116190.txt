@@ -1,0 +1,49 @@
+Option to anonymously access iteraplan	"The option should be located within the admininstration\system.
+
+After activating this option, the admin has to select a role for anonymous login.
+
+The option needs to be saved in the database.
+
+
+
+
+
+With the option disabled, the standard login screen and procedure should be active.
+
+
+
+With the option active, an iteraplan role has to be configured for the anonymous access. Whenever anyone accesses iteraplan without a prior login, this user has the selected role in iteraplan. On the top right corner of iteraplan, where the login-name is displayed, just show ""iteraplan""
+
+
+
+A dedicated login (for power-users) is possible: When you open the url ITERAPLAN/login or ITERAPLAN/client/#/login, you can change to the role without any logout (and logout with fallback to the anonymouse role). Also replace the ""Logout""-menu-entry with ""Login as"" / GER: ""Login als""
+
+
+
+ 
+
+
+
+ Only iTurm and LDAP. SSO is excluded"		New Feature	iteraplan Speedbird	24/Mar/17 4:29 PM	16/Jun/17 2:55 PM														"15/Jun/17 11:02 AM;roia;{code:java}
+
+userSettingsService.loadAllUserSettings().then(function () {
+
+    // don't prevent from login page if an user is logged in already
+
+});
+
+{code}
+
+Shouldn't this be conditional and depend on anonymous login setting? I think, if anonymous login is disabled this should work like before – do not allow logged in user go to login page."	"16/Jun/17 10:20 AM;tsc;The client does not know if the anonymous access is enabled or not. The client only gets the information (via permissions), if the current user is anonymous or not. (Anonymous access is based an the automatic login with a configured user).
+
+
+
+In the above code the login page can be not allowed if an explicit user is logged in. From my point of view this can be a future feature.
+
+
+
+
+
+"	16/Jun/17 10:25 AM;roia;I think, we can add the information if the anonymous access is enabled or not to the administration/permissions response. The question is just if we need it work like before (redirect logged in user to home) or not. [~msr], your thoughts?	"16/Jun/17 1:00 PM;msr;Thank you for this detailed discussion.
+
+Because of the time pressure with release we should leave it like it is right now. But please create a follow-up ticket with [~roia]'s suggestion to hide the login and redirect to home in the case of non-anonymous-access."	16/Jun/17 1:43 PM;tsc;Created follow up: ITERAPLAN-5387																																																		

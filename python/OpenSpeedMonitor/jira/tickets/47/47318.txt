@@ -1,0 +1,81 @@
+Checkpoint/Reference - Landscape Diagram - basic diagram	"*Summary:*
+Create a basic version of the Landscape Diagram (LSD) with Information Systems as Inner Element, Information System Domain as X-Axis and Technical Component as Y-Axis.
+
+Note: IS is the more important type for inner element, ISD and TC are both directly connected.
+
+*As-Is:*
+There exists no Landscape Diagram.
+
+*To-Be:*
+A basic Landscape Diagram can be created.
+
+*Affected parts of the system:*
+* Landscape Diagram (newly created)
+
+*Approach:* 
+Create the basic layout with
+* inner boxes
+* axis boxes
+* axis titles
+* diagram title
+* legend
+* header with logo, back & forward, save/share, download (included, as-is)
+* footer with version (included, as-is)
+* Basic context menu (like in Nesting Cluster Diagram) without any (working) actions, dummy items only
+
+* No additional lines or dotted lines for ordering
+* one tile in home screen that leads directly to the diagram
+* no attribute-related coloring
+* no filters on anything
+* no hierarchy in axes
+
+For background color of the boxes, use the ""type colors"" of IS, ISD and TC, that is red, red and green, resp.
+As in the  NCD: no border lines, please.
+
+
+As a first design, see Tanya's mockup in ticket IPNINE-231: 
+Note: the design with titles for the axes, without hiearchy, without selected elements.
+
+For the title of the left-hand-side, row title elements, take the design with the type name _above_ the building block names, so that the type name is in normal, horizontal orientation, not rotated and vertical. 
+
+Use information from the metamodel of the REST API, no hard-coded information.
+*Ensure all information is always presented in the same order, i.e. building block types with predefined order in their order and all other building block types in an alphabetical way.*
+
+*Acceptance Criteria:*
+The users opens the url of the Landscape Diagram.
+A correct landscape diagram appears with Information System as inner element and Infrastructure Element and Technical Component as axis elements.
+The html page has all above specified elements.	
+There are no actions implemented (not yet).
+
+----
+Starting point at start of sprint 8:
+* on JS file with LSD main controller
+* LSD main controller does initDiagram itself
+* initDiagram creates hard-coded diagram definition with two axes and legend
+* LSD main controller buids table with getTable
+* getTable builds one big Table with axes and content
+* getTable uses row and column defs from diagram config and data
+* layout it by nesting Panels items, cells, rows, ...
+* not used: node template, nodes in graph data, layout computation on graph
+
+major steps/actions:
+* create diagram template on mock data
+* use real data
+* render independently,  partially
+
+minor steps and actions:
+(1) pull out LSD diagram configuration into a JS class and extra JS file: returns a go Diagram with node template
+(2)  use LSD diagram configuration in main LSD controller and show (empty) diagram in view 
+(3) create a mocked graph, already with hard coded layout properties.
+(4) create the LSD layouter as a JS class and exra JS file: logic (""counting"") and concrete (""coordinates"") layout of the graph.
+(5) create hard coded mocked graphs nodes _without_ layout information and run the layouter on it, and use it in the LSD main controller.
+(6) create a LSD graph builder as an extra class and JS file: creates graph nodes in graph model, takes ""raw"" business objects (already filtered).
+(7) create hard coded business objects (as complete as required, not totally complete) and run the graph builder and all subsequent steps on them.
+"		New Feature	iteraplan PO	23/Jan/15 2:52 PM	11/Mar/15 9:32 PM					diagram	landscape								"12/Feb/15 2:02 PM;wfr;First actions: 
+* infrastructure for new view (routing, template, controller, subfolder ""lsd""
+* download/include lib
+* ""hello, world"" diagram, no connnection with real LSD.
+
+WFR: in parallel: design notes on ""pieces of code"".
+"	"11/Mar/15 9:32 PM;wfr;Checkpoint OK
+actually a bit more features than in the scope of this ticket originally specified."																																																					

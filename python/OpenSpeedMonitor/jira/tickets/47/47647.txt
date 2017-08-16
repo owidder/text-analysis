@@ -1,0 +1,12 @@
+Manual regression test for List view	"After the implementation of the updated list view (by Munich team ITERAPLAN-3100):
+
+Test major features of the list view *always with the actual trunk*,
+e.g.
+
+* Different content elements
+* Add columns
+* Search
+* Buttons to Nested Cluster Diagram and Landscape Diagram
+* Remove columns
+* Move columns
+* Sorting"		New Feature	iteraplan PO	21/Apr/15 8:32 AM	05/May/15 2:08 PM					test																																																															

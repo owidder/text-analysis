@@ -1,0 +1,7 @@
+Mapping von Namen zu IDs	"Die Daten in der MongoDB werden mit den IDs zu Page, Browser, Connectivty etc. persistiert. Mithilfe dieser kann der OSM auch die Daten vom Microservice abfragen. Nun muss der Microservice beim Anzeigen dieser Daten jedoch wissen, welche Bezeichnungen zu den IDs gehören.
+
+
+
+Hierfür sollte eine Domain existieren, in welche jede OSM-Instanz zu jeder Domain, welche für eine Detailanalyse benötigt wird, die entsprechenden Namen zu einer ID zu konfigurieren.
+
+In einem späteren Schritt sollte dann überdie REST-API die Möglichkeit bestehen, diese zu Updaten."		Task	OpenSpeedMonitor	25/May/16 11:38 AM	11/Jul/16 3:29 PM														06/Jul/16 8:00 AM;bwo;Die Domain OSMInstance existiert bereits. Weiterhin existiert ein MappingService für einige Operationen. Die RESTT-API fehlt allerdings noch.	11/Jul/16 3:29 PM;bwo;Rest Api existiert nun auch																																																					

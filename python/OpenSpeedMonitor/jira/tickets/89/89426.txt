@@ -1,0 +1,22 @@
+5.2 Iteraplan download	"Grüß Gott,
+
+
+
+bitte senden Sie mir den Link für den Download der Enterprise Version 5.2 von Iterplan.
+
+
+
+Gruß Jörg Schnur"		Technical question	iteraplan Support	05/Jul/16 9:56 AM	06/Jul/16 11:50 AM														"05/Jul/16 4:37 PM;cst;Sehr geehrter Herr Schnur,
+
+vielen Dank für Ihre Anfrage.
+
+Sie können sich die Installationsdateien für iteraplan5.2.0 Premium unter folgenden Adressen herunterladen:
+
+https://www.iteraplan.de/downloads/premium/5.2.0/iteraplan-5.2.0-premium-installer.zip
+
+Login: premium
+Password: iSDiTL4P
+
+Viele Grüße,
+
+Christoph Stangl "	06/Jul/16 9:22 AM;joerg.schnur@wacker.com;Vielen Dank Herr Stangl																																																					

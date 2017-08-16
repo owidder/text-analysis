@@ -1,0 +1,13 @@
+Mass Update - Remove button is not disabled when user types invalid data	"# Go to 'Data' - 'IT-sevices'
+
+ # Add column 'Service provider'
+
+ # Open mass update and open editor for service provider
+
+ # Clear input and set '12345'
+
+
+
+Expected: 'Set' and 'Remove' buttons are disabled
+
+Actual: Only 'Set' button is disabled"		Bug	iteraplan Speedbird	19/Jun/17 11:57 AM	29/Jun/17 2:35 PM																																																																				

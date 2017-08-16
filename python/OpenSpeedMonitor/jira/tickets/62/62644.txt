@@ -1,0 +1,39 @@
+Masterplan-Diagram: Project Self-relations do not appear	"Please contact [~msr] after fixing this bug. Then [~msr] will contact the customer F-102.
+
+
+
+*Summary:*
+
+In the Masterplan Diagram the self-relations for projects are not shown as new rows.
+
+
+
+*Reproduce:*
+
+* Open a Masterplan Diagram
+
+* Select projects as content
+
+* Level 2: ""relates to""
+
+* Generate SVG-output
+
+
+
+*Actual*
+
+* The SVG does not contain any yellow rows for the related projects
+
+
+
+*Expected:*
+
+* The SVG contains yellow rows for the related projects
+
+
+
+Additionally, please have a look at all new relations for Projects and similiar for IT-Services.
+
+
+
+Have a look at {{AbstractMasterPlanRelatedGetter}}."		Bug	iteraplan PO	05/Nov/15 4:43 PM	24/Nov/15 10:52 AM					masterplan									05/Nov/15 4:43 PM;msr;Important for F-102																																																						

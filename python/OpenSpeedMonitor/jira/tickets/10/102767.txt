@@ -1,0 +1,7 @@
+Weitere Messgrößen anzeigen	"Aktuell wird nur 'DocComplete' angezeigt.
+
+Der Nutzer soll wählen können, welche Messgröße( n) angezeigt werden sollen.
+
+Dazu ist zu überlegen, ob es weiterhin eine ""MultiSelectBox"" sein soll oder etwas anderes.
+
+Des Weiteren muss überlegt werden, welche Daten ""stacked"" oder ""voreinander"" dargestellt werden sollen."		Task	OpenSpeedMonitor	16/Nov/16 5:16 PM	30/Nov/16 3:09 PM																																																																				

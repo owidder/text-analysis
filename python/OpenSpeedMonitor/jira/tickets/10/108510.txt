@@ -1,0 +1,77 @@
+Erreichbarkeit ICA Netzwerk über FRA VPN Gateway	"Bitte das FRA VPN Gateway so konfigurieren, dass bei bestehender VPN Verbindung auch das ICA Netz erreicht werden kann.
+
+
+
+Die Netzwerk-Adresse des ICA Netzes ist *192.168.45.0*. "		Task	Infrastruktur	16/Jan/17 10:58 AM	02/Mar/17 3:05 PM	Routing													"17/Jan/17 10:38 AM;sas;Hallo Tobias,
+
+
+
+ich brauche bitte einen Server den ich pingen/erreichen kann ( Dienst Port). Bis jetzt sind nur die Netze 192.168.39.0 und 192.168.44.0 für iteratec freigeschalten worden sind.
+
+
+
+"	"17/Jan/17 10:43 AM;tsh;Folgende Dienste sind erreichbar:
+
+
+
+per SSH
+
+192.168.45.39 
+
+
+
+Per HTTP Port:
+
+http://192.168.45.52/chip/secure
+
+
+
+Ping geht leider nicht."	"17/Jan/17 4:28 PM;sas;Ich mache morgen ein Ticket bei dem FW Support auf, auf Anhieb funktioniert es nicht.
+
+
+
+"	24/Jan/17 9:43 AM;tsh;Gibt es was neues dazu?	"27/Feb/17 4:49 PM;iterajiraadmin;Hallo Tobias, leider noch nicht, ich hatte keine Zeit gehabt, da Jira/Fisheye-Update viel Zeit in Anspruch genommen hat. Ich rufe morgen beim Support an, eventuell finden sie das Problem. /Gruß
+
+
+
+ "	"01/Mar/17 3:08 PM;sas;Ich war gestern über eine Stunde mit dem FW-Support am Telefon gehangen, leider ohne tragbare Lösung. Ich habe heute alle möglichen Konfigurationen ausprobiert und eine Konfiguration hat geklappt.
+
+
+
+Normalerweise hat man einen globalen Zugriff auf alle Geschäftsstellen der Firma, wenn man einen VPN-Tunnel aufgebaut  hat. Jetzt ist so in Offenbach realisiert, dass einen Client-VPN-Tunnel den Zugriff auf ""ICA-Netze"" und das Netz von Offenbach ermöglicht, sonst nichts. 
+
+
+
+Möchtest du es bitte testen und eine kurzes Feedback geben?
+
+
+
+Gruß/Sami"	"01/Mar/17 3:20 PM;tsh;Hallo Sami,
+
+
+
+habe getestet.
+
+
+
+Zugriff auf ICA Netze funktioniert. :) Aber dann halt kein Zugriff auf iteratec-Dienste (z.B. Gitlab) in MUC möglich :(. Was auch nicht so geschickt ist. Lass uns mal telefonieren, wie wir damit umgehen.
+
+
+
+Viele Grüße
+
+
+
+Tobias"	"01/Mar/17 3:54 PM;sas;wir gerade vereinbart, das Netz vom FRA-Tunnel-LAN: 
+
+
+
+10.12.40.0/255.255.255.0"	"02/Mar/17 3:05 PM;sas;Hallo Tobias, ich wollte dir wieder berichten, und sagen, dass der Client-VPN-Zugriff auf ICA und das gesamte iteratec Netz ab jetzt funktionieren soll. Der Consulting hatte heute angerufen und mir gezeigt, wo man noch Schrauben drehen kann. 
+
+
+
+Ich mache das Tickt zu. /Gruß und schönen Tag
+
+
+
+ "	02/Mar/17 10:20 PM;tsh;Habe es von zu Hause getestet. Funktioniert perfekt. Vielen Dank nochmals.																																													

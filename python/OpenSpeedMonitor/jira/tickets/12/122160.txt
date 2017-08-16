@@ -1,0 +1,59 @@
+Partial limits in visualizations	"Third section on Standard configuration page
+
+
+
+Name: Partial limits in visualisations {color:#14892c}(german: Elemente-Beschränkungen der Visualisierungen){color}
+
+
+
+table with 3 columns:
+
+ * Diagram {color:#14892c}(german: Diagramm){color}
+
+ ** all diagrams listed
+
+ * Internet Explorer
+
+ ** input fields to set partial limits in particular visualisations and reset-icon (""undo"") right of the input-field
+
+ * Other browsers ({color:#14892c}german: Andere Browser){color}
+
+ ** input fields to set partial limits in particular visualisations and reset-icon right of the input-field
+
+
+
+{color:red}UPDATE: {color} If reset-button is clicked with active editor, close the editor and save the default value.
+
+
+
+this action sets partial limits for visualisations
+
+
+
+Move partial limits from the constants to database as default values
+
+
+
+Additionally, please test, if it is possible to increase for IE11-partial limits or even merge all browser-limmits if the differences are not too big (about 10%)
+
+
+
+*Test results*: [https://docs.google.com/spreadsheets/d/1jCBnpI9QFoU3RShKiySqGMIaLU68-tkpN6_f-f_fEUI/edit?usp=sharing]
+
+
+
+Differences are too big to merge them.
+
+
+
+{color:red}UPDATE: {color} Client: Validation-check on client-editor:
+
+* Do only allow numbers greater than 0.
+
+* In all other cases the editor cannot be closed with check. Show a red warning underline ""Invalid value"" / GER: ""Ungültiger Wert""
+
+* By clicking outside of the editor, the editor is closed: A valid value is saved, an invalid value is *not* saved. In this case show a warning alert service message ""Value cannot be saved"" / GER ""Der Wert konnte nicht gespeichert werden"""		New Feature	iteraplan Speedbird	23/May/17 2:31 PM															"17/Jul/17 3:46 PM;roia;[~msr], how the application should behave when user tries to save invalid value (blank, negative, zero...).
+
+
+
+Also, please, confirm the position of reset button. Should it really be to the left of a value? Placing it to the left will be inconsistent with the ""Corporate Design"" tab, where reset buttons are to the right of color values."																																																						

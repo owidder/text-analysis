@@ -1,0 +1,1 @@
+Responsibility attributes as diagram-header	Follow-up ticket for IPTS-121		New Feature	iteraplan Speedbird	07/Sep/16 4:54 PM	06/Oct/16 11:52 AM														07/Sep/16 4:59 PM;roia;would be great if we extend the metamodel and return these values, like we do for enums																																																						

@@ -1,0 +1,3 @@
+Info-Hub mit Dashboard-Sicht (Wechsel zwischen den Grafiken/Sichten möglich)	"* Überführung des Click-Dummies zu einem Zusammenspiel mit React.
+
+* Konzept und Prototyp: Klärung Daten-Repository für die Landscape-Bilder (d.h. wie wollen wir diese zukünftig aktuell halten und aktualisieren?)"		Story	EAM-Visualisierung	23/Mar/16 4:50 PM	05/Apr/16 4:56 PM														05/Apr/16 4:56 PM;jwr;Modus gewechselt auf ein Map-UI mit seemless Zoomstufen-Modell d.h. Wechsel zwischen den Ebenen durch Zoom und UnZoom (später dann Shortcuts für die Zoom-Stufen)																																																						

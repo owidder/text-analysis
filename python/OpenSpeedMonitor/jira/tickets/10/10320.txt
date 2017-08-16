@@ -1,0 +1,2 @@
+DUMP aus der Kundenumgebung	Bereitstellung eines aktuellen Produktiv-Dumps, um hier eine spätere Migration zu ermöglichen	10321	Technical task	OpenSpeedMonitor	22/Jul/13 10:31 AM	06/Aug/13 2:44 PM														"06/Aug/13 2:44 PM;nkuhn;Struktur-Dumps liegen in teamdrive: Spaces/iteraSpeed/iteraSpeedMonitor/mysqldumps/struktur/
+Daten-Dumps aufgrund ihrer Größe nur bei mir/Rüdiger lokal."																																																						

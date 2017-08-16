@@ -1,0 +1,35 @@
+Edit on Single Attribute View - Single-Line Text field (Client)	"*Summary:*
+
+Create Edit-Functionality for Single-Line-Text-Fields on all Single Attribute Views.
+
+
+
+*Scope:*
+
+* In scope: All text fields with one line
+
+* In scope: All Single Attribute Views
+
+* Example: ""Name""-field
+
+
+
+*UI:*
+
+* Use UI and interactions from Building Block List and Single Building Block View as blueprint (including error-handling)
+
+* If user sets string to null-string, the text field shows ""not assigned"" (German: ""nicht zugeordnet"")
+
+** one exception: The ""Name""-field is mandatory, i.e. do not allow to set the ""Name""-field to null-string
+
+
+
+*Technology:*
+
+* Try to reuse common edit-components from Building Block List and Single Building Block View
+
+* Send REST-request to the correct REST-API (attributes, icresp or icdi)
+
+* Trigger reload-service using {{$scope.$emit(""triggerDataReset"");}} (IPTS-447)
+
+"		New Feature	iteraplan Speedbird	22/Dec/16 8:49 AM	28/Feb/17 9:09 AM																																																																				

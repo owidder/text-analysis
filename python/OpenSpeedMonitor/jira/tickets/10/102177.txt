@@ -1,0 +1,47 @@
+str-build.iteratec.de nicht via SSH errecihbar	"Unser Build-Server str-build.iteratec.de scheint Probleme zu haben. Stellenweise nicht erreichbar. SSH bringt ein connection closed.
+
+
+
+Könnt Ihr bitte mal auf der VM schauen was da los ist.
+
+
+
+Wir bauen gerade ein Hot-Fix fuer den Kunden und brauchen daher die Maschine dringend."		Task	Infrastruktur	09/Nov/16 4:24 PM	18/Nov/16 2:30 PM	Sonstiges													09/Nov/16 4:26 PM;sst;Bitte unbedingt vorher Rücksprache bevor ein Reboot gemacht wird, falls einer notwendig sein sollte.	09/Nov/16 4:29 PM;sst;Kollegen berichten auch von anderen Netzwerkproblemen: Bsp. E-Mailserver.	"09/Nov/16 4:48 PM;ehi;Hallo Sven,
+
+
+
+ich habe den Server neu gestartet, sorry, aber den Kommentar bezüglich der vorherigen Rücksprache habe ich nicht mit bekommen. Aber die ssh-Verbindung bei uns klappt.
+
+
+
+Was der mailserver damit zu tun haben könnte erschließt sich mir nicht, der ist extern gehostet. Es kann natürlich sein, dass es auf der Leitung Probleme gibt, aber das entzieht sich dann unserem Einfluss, bzw. wir werden nur bei längerfristigen Störungen aktiv."	"09/Nov/16 5:01 PM;sst;Ich bekomme nachwievor ein connection closed:
+
+{code}
+
+sst@LT523 ~ $ ssh str-build.iteratec.de
+
+Connection closed by 192.168.1.199
+
+{code}
+
+
+
+Vermutlich sind das eherNetzwerkprobleme.
+
+
+
+Und bitte: Immer vor einem Reboot Ruecksprache halten. Am besten in den Jabber-Raum taco.cc reinkommen und fragen. Wenn der Reboot im falschen Moment waehrend einem Release passiert, dann haben wir richtig viel mehr Aufwand."	10/Nov/16 10:20 AM;ehi;Hallo Sven, ok, das mit dem reboot werde ich beherzigen, das war leider eine unglückliche Überschneidung. Ist der Server denn jetzt erreichbar?	10/Nov/16 10:24 AM;sst;SSH connection geht wieder.	"11/Nov/16 3:58 PM;sst;Yves und ich komen nicht per ssh auf dieMaschine:
+
+sst@LT523 ~ $ ssh str-build.iteratec.de
+
+Connection closed by 192.168.1.199
+
+
+
+Ping geht.
+
+
+
+Ansonsten laeuft der Server (Jenkins,Sonar,Nexus etc.).
+
+Ist da ein Netzwerk/VPN/Firewall-Problem?"	11/Nov/16 4:01 PM;sst;Jetzt geht es wieder. Kann es sein, dass da ein Netzwerkproblem besteht?	09/May/17 2:39 PM;sst;Hab Logfiles angehängt.																																														

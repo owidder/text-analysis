@@ -1,0 +1,11 @@
+Extend Line-type-spec.js in LSD	"please edit the e2e-test tracability excel sheet located in e2etest subfolder after implementing the tests
+
+
+
+extend the existing file and insert expects.
+
+
+
+only one property
+
+"	62908	Sub-task	iteraplan PO	09/Nov/15 9:52 AM	17/Nov/15 8:59 AM					LSD	Test																																																														

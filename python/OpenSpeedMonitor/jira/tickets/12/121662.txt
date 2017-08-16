@@ -1,0 +1,29 @@
+Errror while downloading Diagram	"h4. Problem Description:
+
+
+
+An exception occurs while downloading Diagram.
+
+h4. Reproduction Steps:
+
+ * Open Application and navigate to Landscape Diagram
+
+ * Click on the ""Download"" button and select ""SVG"" type of file to download
+
+
+
+h4. Observed Results:
+
+
+
+An exception occurs in Console. See attached error_while_downloading.png file. Error appeared very quickly. Looks like it is blinking.
+
+h4. Expected Results:
+
+
+
+Pop-up window with instructions how to save file with selected type should be shown without any errors.
+
+h4. Note:
+
+ - Used Firefox and ""iteraplan-basic-bundle-sampledata-6.0.SNAPSHOT-2017-05-17"" bundle/ #312 build"		Bug	iteraplan Speedbird	17/May/17 6:57 PM	04/Jul/17 9:21 AM					diagram									23/May/17 4:45 PM;fka;Download works in all tested cases, file is correct. Error could only be reproduced in Chrome, not in Firefox.	29/Jun/17 8:31 PM;viol;Could not reproduce in any of the browsers (Chrome, Firefox, IE 11)																																																					

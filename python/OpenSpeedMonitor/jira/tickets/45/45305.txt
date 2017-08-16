@@ -1,0 +1,7 @@
+Dashboard improvement	"Can we add this small improvement to the Dashboard page:
+ - remove the ""Select value"" option
+ - if there aren't any available attributes for a BBT, disable the attribute dropdown list upon selection
+ - if there are available attributes, select ""Status"" or the first option in the list as default
+
+In my opinion these changes will improve the usability of the page."		Improvement	iteraplan PO	19/Dec/11 12:10 PM	28/Dec/11 1:30 PM					dashboard									19/Dec/11 5:12 PM;kvo;Wrong labels in Dashboard	"27/Dec/11 12:59 PM;sfe; * Always the first entry in the list of available attributes is selected as default. Since ""Status"", if available, always is the first entry in the list in the current implementation, this works, but it would be better if it would work even without this condition.
+ * Some unnecessary code remained after the changes (the whole second for-loop in the function ""createInitialPieChart"")."																																																					

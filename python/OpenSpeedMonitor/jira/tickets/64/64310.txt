@@ -1,0 +1,5 @@
+Outdoor und Indoor in eine App integrieren	"- Refactoring der Module, ggf. Dependency-Injection Framework notwendig
+
+
+
+- Indoor und Outdoor im selben APK, auch wenn hartcodiert nur eines ausgeführt wird"		Task	EAMV15	20/Nov/15 5:36 PM																																																																					

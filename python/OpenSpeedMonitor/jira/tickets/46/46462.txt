@@ -1,0 +1,12 @@
+Accessing custom dashboard instances can lead to error page	"to reproduce:
+# Create a custom dashboard template with some diagrams
+# Create a custom dashboard instance for that template and save
+# Log out and restart tomcat
+# Log in and open the custom dashboard instance
+
+=> Error message like
+{quote}
+Object of class \[de.iteratec.iteraplan.model.queries.CustomDashboardInstance\] with identifier \[2\]: optimistic locking failed; nested exception is org.hibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): \[de.iteratec.iteraplan.model.queries.CustomDashboardInstance#2\]
+{quote}
+
+Seems to also happen without the tomcat restart, but less likely. It's not 100% with restart either, for me."		Bug	iteraplan PO	12/Feb/14 11:06 AM	13/Feb/14 10:18 AM					dashboard																																																															

@@ -1,0 +1,1 @@
+publish script fix_null_parentIDs_mysql.sql on community page	http://www.iteraplan.de/wiki/display/IC/Migration+scripts		Task	iteraplan PO	31/Jul/13 3:50 PM	31/Jul/13 6:35 PM														31/Jul/13 3:51 PM;wfr;bitte	20/Aug/13 10:11 AM;psc;Published correctly. Download link is working.																																																					

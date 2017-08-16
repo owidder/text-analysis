@@ -1,0 +1,30 @@
+Restlet Excel Import	A customer requires an interface for the Excel import which can be easily be used via command line scripts or other automation tools. 		New Feature	iteraplan PO	23/Nov/12 6:36 PM	13/Dec/12 5:19 PM					excel	import								23/Nov/12 7:09 PM;bco;To-do: implement this in similar fashion for version 4.	"29/Nov/12 1:23 PM;isc;For version 3.0.3, I tested the changes successfully.
+Only the error messages will not be returned in any case.
+Often just the success is confirmed. In the log you can see exactly if the update was successful."	03/Dec/12 2:24 PM;sry;Should be added for 4.0 as well. It's basically adding another HTTP method handler resource to the /iteraplan/data/model.xls resource	"07/Dec/12 3:04 PM;bco;The Restlet interface for the Excel export has been implemented for verison 4.
+
+*Summary of Excel import/export cURL commands*
+
+iteraplan version 3:
+
+{noformat}#Login
+curl -k -v --data ""j_username=USERNAME&j_password=PASSWORD"" PROTOCOL://HOST:PORT/iteraplan/j_iteraplan_security_check --cookie-jar cookies.txt
+
+#Upload / Import
+curl -X POST -k -v --cookie cookies.txt --data-binary @iteraplanExcelData.xls PROTOCOL://HOST:PORT/iteraplan/rest/excelImport
+
+#Download / Export
+curl -X POST -k -L -v --cookie cookies.txt -d ""_eventId=downloadAllData"" -o downloaded_model.xls PROTOCOL://HOST:PORT/iteraplan/show/import
+{noformat}
+
+
+iteraplan version 4:
+
+{noformat}#Login
+curl -k -v --data ""j_username=system&j_password=password"" PROTOCOL://HOST:PORT/CONTEXT/j_iteraplan_security_check --cookie-jar cookies.txt
+
+#Upload / Import
+curl -X POST -k -v --cookie cookies.txt -H ""Content-Type: application/vnd.ms-excel"" --data-binary @model.xls PROTOCOL://HOST:PORT/CONTEXT/data/model
+
+#Download / Export
+curl -k -L -v --cookie cookies.txt -o downloaded_model.xls PROTOCOL://HOST:PORT/CONTEXT/data/model.xls
+{noformat}"																																																			

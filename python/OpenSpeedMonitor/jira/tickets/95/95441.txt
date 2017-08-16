@@ -1,0 +1,1 @@
+Create Angular Rest Resource	See IPTQ-132		New Feature	iteraplan Quickfox	07/Sep/16 11:18 AM	19/Sep/16 11:42 AM														16/Sep/16 3:29 PM;tsu;the commit 4370 of the ticket IPTQ-129 belongs to this ticket																																																						

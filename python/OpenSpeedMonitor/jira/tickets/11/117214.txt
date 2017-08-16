@@ -1,0 +1,1 @@
+Attribute details page looks bad in IE10	!attributes_detail_IE10.png!		Bug	iteraplan Speedbird	31/Mar/17 2:19 PM	20/Apr/17 9:27 AM																																																																				

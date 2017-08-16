@@ -1,0 +1,27 @@
+Metamodel methods for getting Types	"as improvement for ITERAPLAN-4563
+
+
+
+* add methods to Metamodel that return
+
+** all Types (all building block types, no enumeration value types)
+
+** all substantial Types (standalone building block types)
+
+** all substantial Types + BusinessMapping
+
+* use the 3. method for _\listViewIncorrectTypeModalDialog.html_"		Improvement	iteraplan PO	01/Jun/16 12:30 PM	02/Jun/16 11:44 AM					metamodel									"01/Jun/16 12:34 PM;wfr;Could have been done within the ticket that lead to this one.
+
+Both tickets should be reviewed in tandem.
+
+Please link them.
+
+"	"01/Jun/16 12:38 PM;wfr;added to the current sprint because it is a ""remaining things to do in the right place""-kind of ticket, so that the original ticket can be closed and reviewed.
+
+
+
+It has no estimated effort on its own, because it is part of the original ticket, which is completely done only after this one."	"02/Jun/16 11:44 AM;mse;Some small corrections to ticket description+JSdoc and renaming of one method (getTypeForDisplay -> getTypeToDisplay) during review.
+
+
+
+Otherwise: review ok."																																																				

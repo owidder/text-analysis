@@ -1,0 +1,15 @@
+Excel import fails in Oracle and MySql with large data cells containing more than 4000 characters	"When a cell in an Excel sheet contains more then 4000 characters (i.e. DESCRIPTION), then the Excel import will fail on the last step ""Write Data"" of the import. The MySql-Exception is clear, but the Oracle-Exception is misleading:
+
+Oracle:
+{code}
+java.sql.SQLException: ORA-01461: Ein LONG-Wert kann nur zur Einfügung in eine LONG-Spalte gebunden werden
+or
+java.sql.SQLException: ORA-01461 can bind a LONG value only for insert into a LONG column
+{code}
+
+MySql:
+{code}
+com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'DESCRIPTION' at row 1
+{code}
+
+Oracle uses the VARCHAR2(4000) datatype, which is limited to maximal 4000 character."		Bug	iteraplan PO	09/Jan/13 5:23 PM	19/Aug/14 12:08 PM					excel									07/Aug/14 3:45 PM;fka;A nicer error message would be good	12/Aug/14 11:34 AM;dop;Nice message has been implemented for description and also for too long names. Limit for names: 255 characters, Limit for descriptions: 4000 characters. 																																																					

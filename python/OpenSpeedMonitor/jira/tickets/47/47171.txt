@@ -1,0 +1,20 @@
+Update user guide structure	"In discussion with FKA and WFR, we came up with a new structure for the user guide (see attached screenshot and presentation).
+
+Please restructure the user guide and move the pages into the new structure.
+
+Some pages may occur multiple times within different contexts,
+e.g. how to edit a BB occurs in A ""Quick Start"" with a short description, in B ""Edit BB"" longer described and in C ""BBs and attributes"" for further details.
+
+Please consult MSR before restructuring. Feedback is welcome.
+
+Additionally, create a sample page with good examples for other developers within the user guide."		Improvement	iteraplan PO	13/Nov/14 3:18 PM	05/Dec/14 1:26 PM					documentation									"04/Dec/14 4:30 PM;msr;Restructured user guide:
+http://www.iteraplan.de/wiki/display/upcomingIteraplan/User+Guide
+
+Restructured installation guide:
+http://www.iteraplan.de/wiki/display/upcomingIteraplan/Installation+Guide
+
+Created sample page:
+https://iteraweb.iteratec.de/confluence/display/ITPL/Dokumentation%3A+User-Guide
+
+Updated Definition of Done:
+https://iteraweb.iteratec.de/confluence/display/ITPL/Definition+of+Done"																																																						

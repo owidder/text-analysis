@@ -1,0 +1,225 @@
+iteraplan Reactions now also log their output to the iteraplan log file	Das kann ich bei mir leider nicht feststellen, es wird weiterhin nur auf stdout geloggt :-(		Fault	iteraplan Support	12/Jul/17 6:09 PM															"14/Jul/17 7:56 AM;cst;Guten Morgen Herr Joachimsmeyer,
+
+vielen Dank für Ihre Anfrage.
+
+Ist in der ""log4j.properties"" bei Ihnen folgende Zeile zu finden
+
+""log4j.logger.de.iteratec.iteraplan.businesslogic.service.scriptContainer=WARN, logfile"".
+
+Sollte dies nicht der Fall sein, können Sie diese gerne ergänzen, dann wird der log auch im iteraplan.log geschrieben.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"14/Jul/17 8:50 AM;armin.joachimsmeyer@axa.de;Hallo, das ist unsere Logkonfiguration.
+Laut des letzten Eintrags solltn alle Ausgaben per log4j im Logfile landen, was aber für ""log4j.logger.de.iteratec.iteraplan.businesslogic.service.scriptContainer"" wohl nicht klappt.
+<?xml version=""1.0"" encoding=""iso-8859-1"" ?>
+<!DOCTYPE log4j:configuration SYSTEM ""http://axacfg/HOST_ENV/PROD/log4j/log4j.dtd"">
+<!-- Template Datei fuer das perl script log4j.pl. -->
+<log4j:configuration debug=""false"" xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+<!-- PROD + TEST Version -->
+
+<!--
+APPENDER Section
+-->
+
+<!-- console appender -->
+<appender name=""STDOUT"" class=""org.apache.log4j.ConsoleAppender"">
+  <param name=""Threshold"" value=""INFO""/>
+    <layout class=""org.apache.log4j.PatternLayout"">
+<!-- %X{sesclient} wird von ""de.axa.alert.monitor.ExceptionFilter"" durch den SES Clientcorrelator ersetzt.
+     Nur wenn die Klasse ""ExceptionFilter"" auf DEBUG gestellt wird, oder SES Clientcorrelator null ist, 
+     wird %X{session} vom ExceptionFilter durch die SessionId mit xxx am Ende ersetzt. -->  
+      <param name=""ConversionPattern"" value=""%d{ISO8601} [%-12t] %-5p %c  %X{sesclient} %X{session} %M %L   - %m%n""/>
+    </layout>
+</appender>
+
+<!-- Dieser Appender liefert den Dateinamen f�r die zur Laufzeit generierten Tracking und Webco Appender -->
+<!-- daily rolling file appender - iteraplan wird durch perl beim holen ersetzt-->
+<appender name=""APPLICATION_APPENDER"" class=""biz.minaret.log4j.DatedFileAppender"">
+  <param name=""Directory"" value=""${axa.rt.applog.dir}""/>
+  <param name=""Prefix"" value=""app_iteraplan_${axa.rt.env}_${axa.rt.host.name}_${axa.rt.instance.no}.""/>
+  <param name=""Suffix"" value="".log""/>
+  <layout class=""org.apache.log4j.PatternLayout"">
+    <param name=""ConversionPattern"" value=""%d{ISO8601} [%-12t] %-5p %c  %X{sesclient} %X{session} %M %L   - %m%n""/>
+  </layout>
+</appender>
+
+<!-- mail appender -->
+<appender name=""SMTP"" class=""org.apache.log4j.net.SMTPAppender"">
+  <param name=""Threshold"" value=""DEBUG""/>
+    <param name=""To"" value=""armin.joachimsmeyer@axa.de""/>
+    <param name=""From"" value=""monitoring@iteraplan""/>
+    <param name=""Subject"" value=""${axa.rt.env} ${axa.rt.host.name} - iteraplan Monitoring Event""/>
+    <param name=""SMTPHost"" value=""smtp-nedc.applications.services.axa-tech.intraxa""/>
+    <param name=""BufferSize"" value=""10""/>
+    <param name=""EvaluatorClass"" value=""de.axa.alert.monitor.util.MailEventPriorityEvaluator""/>
+    <layout class=""org.apache.log4j.HTMLLayout""/>
+</appender>
+
+<!--
+LOGGER Section
+-->
+
+<!-- Logger fuer die Applikation -->
+<logger name=""de.iteratec.iteraplan"" additivity=""false"">
+  <level value=""INFO""/>
+  <appender-ref ref=""APPLICATION_APPENDER""/>
+  <appender-ref ref=""SMTP""/>
+</logger>
+
+<!--
+FRAMEWORK Logger
+-->
+<!-- Ausgabe der Aufrufparameter jedes Requests bei debug -->
+<logger name=""de.axa.alert.monitor.ExceptionFilter"" additivity=""false"">
+<level value=""INFO""/>
+<appender-ref ref=""APPLICATION_APPENDER""/>
+<appender-ref ref=""SMTP""/>
+</logger>
+
+<!-- Ausgabe der MQ Inhalte bei debug -->
+<logger name=""de.axa.alert.connection.mq.pool.MQTransmitter"" additivity=""false"">
+<level value=""INFO""/>
+<appender-ref ref=""APPLICATION_APPENDER""/>
+<appender-ref ref=""SMTP""/>
+</logger>
+
+<!-- Spring -->
+<!-- Logs an incoming remote call as well as the finished processing of a remote call at DEBUG level. 
+If the processing of a remote call results in a checked exception, the exception will get logged at INFO level; 
+if it results in an unchecked exception (or error), the exception will get logged at WARN level.   -->
+<logger name=""org.springframework.remoting.support.RemoteInvocationTraceInterceptor"" additivity=""false"">
+  <level value=""ERROR""/>
+  <appender-ref ref=""APPLICATION_APPENDER""/>
+  <appender-ref ref=""SMTP""/>
+</logger>
+
+<!-- HIBERNATE -->
+<!-- SQL Ausgabe -->
+<logger name=""org.hibernate.SQL"" additivity=""false"">
+  <level value=""INFO""/>
+  <appender-ref ref=""APPLICATION_APPENDER""/>
+</logger>
+
+<!-- SQL Binding Parameter Ausgabe -->
+<logger name=""org.hibernate.type.descriptor.sql.BasicBinder"" additivity=""false"">
+  <level value=""INFO""/>
+  <appender-ref ref=""APPLICATION_APPENDER""/>
+</logger>
+
+<!-- 
+STANDARD logger 
+-->
+<logger name=""de.axa"" additivity=""false"">
+  <level value=""INFO""/>
+  <appender-ref ref=""APPLICATION_APPENDER""/>
+  <appender-ref ref=""SMTP""/>
+</logger>
+
+<logger name=""org"" additivity=""false"">
+  <level value=""WARN""/>
+  <appender-ref ref=""APPLICATION_APPENDER""/>
+  <appender-ref ref=""SMTP""/>
+</logger>
+
+<logger name=""com"" additivity=""false"">
+  <level value=""WARN""/>
+  <appender-ref ref=""APPLICATION_APPENDER""/>
+</logger>
+
+<!--
+ROOT Logger
+-->
+<root>
+  <level value=""WARN""/>
+  <appender-ref ref=""APPLICATION_APPENDER""/>
+  <appender-ref ref=""SMTP""/>
+</root>
+
+</log4j:configuration>
+
+	
+	
+	
+	
+	
+	
+	
+"	"14/Jul/17 9:49 AM;cst;Würden Sie mir bitte Ihre verwendete log4j.properties zukommen lassen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"18/Jul/17 8:45 AM;armin.joachimsmeyer@axa.de;Hier unsere log4j.properties
+
+[^log4j.properties] _(5 kB)_"	"20/Jul/17 2:36 PM;cst;Guten Tag Herr Joachimsmeyer, 
+
+die log4j.properties schaut soweit gut aus. 
+
+Somit sollte wenn diese normal verwendet wird, die Daten in der iteraplan.log geschrieben werden (habe dies auch nochmal gegen geprüft)
+Wie das jetzt mit der von Ihnen verwendete XML Logging verhält, ist von unserer Seite schwer zu Supporten. 
+
+ 
+
+Es kann hier an der Log-Stufe liegen, das die geschriebenen ""Meldungen"" nicht angezeigt werden, da Sie wegen dem eingestellten Log-Level nicht beachtet werden. 
+
+Standardmäßig verwenden wir ""log4j.logger.de.iteratec.iteraplan.businesslogic.service.scriptContainer=WARN, logfile"". Wenn Sie dies von DEBUG, auf WARN ändern, wird das Verhalten das gleiche sein, dies könnte man noch testen. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"20/Jul/17 6:00 PM;armin.joachimsmeyer@axa.de;Hallo,
+zur Laufzeit siehts bei uns so aus (siehe Anhang):"	"20/Jul/17 6:01 PM;armin.joachimsmeyer@axa.de;Hallo, 
+zur Laufzeit siehts bei uns so aus (siehe Anhang):
+
+!Unbenannt.JPG|thumbnail!"	"21/Jul/17 4:53 PM;cst;Das Logging ist auf der Ebene Debug.
+
+Hier ein kleines Beispiel:
+
+DEBUG] [2017-07-21 12:48:57] (service.scriptContainer.ScriptServiceImpl) Script file found: apiReadWriteTest.js
+[DEBUG] [2017-07-21 12:48:57] (service.scriptContainer.ScriptServiceImpl) Script file found: EventHandlingScript.js
+[DEBUG] [2017-07-21 12:48:57] (service.scriptContainer.ScriptServiceImpl) Script file found: eventWrapTest.js
+[DEBUG] [2017-07-21 12:48:57] (service.scriptContainer.ScriptServiceImpl) Script file found: SimpleTestScript.js
+[DEBUG] [2017-07-21 12:48:57] (service.scriptContainer.ScriptServiceImpl) Received event for building block type NoOneRegistered
+[DEBUG] [2017-07-21 12:48:57] (service.scriptContainer.ScriptServiceImpl) Script file found: apiReadWriteTest.js
+[DEBUG] [2017-07-21 12:48:57] (service.scriptContainer.ScriptServiceImpl) Script file found: EventHandlingScript.js
+[DEBUG] [2017-07-21 12:48:57] (service.scriptContainer.ScriptServiceImpl) Script file found: eventWrapTest.js
+[DEBUG] [2017-07-21 12:48:57] (service.scriptContainer.ScriptServiceImpl) Script file found: SimpleTestScript.js
+[DEBUG] [2017-07-21 12:48:57] (service.scriptContainer.ScriptServiceImpl) Received event for building block type EventWrapTest
+[DEBUG] [2017-07-21 12:48:57] (service.scriptContainer.ScriptServiceImpl) Script file found: apiReadWriteTest.js
+
+Somit sollte nach den geschickten Einstellungen die Log-Files nicht geschrieben werden, da DEBUG über INFO liegt. Könnten Sie das testweise ändern, um zu prüfen ob dann die LOG-Files wie gewünscht geschrieben werden.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"21/Jul/17 8:51 PM;armin.joachimsmeyer@axa.de;Hallo,
+wenn ich auf debug setzte sehe ich im logfile:
+2017-07-21 20:46:55,391 [http-nio-8080-exec-3] DEBUG de.iteratec.iteraplan.businesslogic.service.scriptContainer.ScriptServiceImpl  null / null 1A13A9120D50AAF0D30E1B0023801xxx debug 127   - Script file found: AxaPlausis.js
+
+ABER:
+Die print Ausgaben landen immer noch auf stdout.
+gehen die über System.out?
+
+loading api...
+Modul AxaPlausis.js wurde geladen
+Sonderzeichen-Test:ä-ö-ü-ß-Ä-Ö-Ü
+und diese Ausgaben auch:
+
+Jul 21, 2017 8:46:55 PM org.restlet.engine.log.LogFilter afterHandle
+INFORMATION: 2017-07-21	20:46:55	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8080	POST	/iteraplan/api/plugins/discover	-	200	-	2	637	http://localhost:8080	Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0	http://localhost:8080/iteraplan/client/
+"	"24/Jul/17 6:03 PM;msr;Hallo Herr Joachimsmeyer,
+
+
+
+danke für Ihr ""Dranbleiben"" an diesem Thema.
+
+
+
+Anscheinend gab es hier ein Missverständnis mit dem Entwicklerteam: Stand heute sind nur die Meldungen aus dem Java-Service in das Logfile geloggt, aber nicht die ""print""-Ausgaben aus dem JavaScript-Skript selbst. Das wird in den nächsten Releases nachgebessert.
+
+
+
+Eine schöne Woche
+
+
+
+Marcel Schrumpf"																																													

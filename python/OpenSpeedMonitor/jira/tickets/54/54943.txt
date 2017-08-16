@@ -1,0 +1,5 @@
+Logic and Context Menu	"* Context menu entry sets outer nesting relationship variable
+
+* Extend NCD diagramElementProcessor -> extractSubItems to use that variable"	47125	Sub-task	iteraplan PO	25/Aug/15 2:52 PM	01/Sep/15 12:37 PM														"01/Sep/15 10:23 AM;fro;with the code changes n-level inner nesting works. 
+
+n-level outer nesting will be implemented with ITERAPLAN-3020"																																																						

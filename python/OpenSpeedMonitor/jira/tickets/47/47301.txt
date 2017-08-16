@@ -1,0 +1,52 @@
+New Client: Create links between classic & new client	"*Summary:*
+Create a link between the nesting cluster configuration page in the classic iteraplan client and the nesting cluster diagram in the new client.
+Create a link between the landscape configuration page in the classic iteraplan client and the landscape diagram in the new client.
+
+*As-Is:*
+No linkage is existing.
+
+*To-Be:*
+The user can directly switch from the configuration pages of the classic client to the diagrams of the new client and back. But no information (e.g. about parameters, settings, etc.) is exchanged.
+
+*Affected parts of the system:*
+Classic client:
+* Nesting Cluster Configuration Page
+* Landscape Diagram Configuration Page
+
+New Client:
+* Nesting Cluster Diagram
+* Landscape Diagram
+
+If you have any questions, please contact WFR or MSR.
+
+*Splitting/Dependencies*
+Note that this ticket intentionally affects both the classic web UI and the new JS client. The changes in both clients can be done independently.
+
+*IXD*
+Static navigation goes into the navigation menu, generally. 
+These navigation actions are always available, but not visible.
+
+In addition, an important navigation action is a global action in the app/menu bar.
+Here only the locally relevant navigation is visible, that is the link to the peer view in the classic client, but not the link to the other diagram configuration page.
+
+The new client should have the naviation action in both places, navigation menu and app/menu bar
+
+
+
+
+"		New Feature	iteraplan PO	20/Jan/15 10:23 AM	23/Apr/15 6:48 AM					diagram	landscape	nesting	newClient						"14/Apr/15 3:37 PM;wfr;Call with Nico
+
+Example: https://iteraplan.iteratec.de/iteraplan-devel/client/index.html
+
+that is:
+root from config + client + index.html + # + local path
+
+
+Visual
+
+button/link goes right of title ""Landscape Diagram"" and ""Nesting Cluster Diagram"", resp.
+
+render a href element,
+style it as a link with slight emphasis, that is bigger
+OR as a button, if more emphasis is needed."	"20/Apr/15 4:15 PM;nle;The links will work, as soon as ticket ITERAPLAN-3088 is done.
+"																																																					

@@ -1,0 +1,69 @@
+AD-Logins mit Permission-Gruppen für Freiday Server	"Hi Admins,
+
+
+
+könnt ihr für die Permissions mit einem AD Login in Linux auf
+
+ * freiday-int.iteratec.de
+
+ * freiday-prod.iteratec.de
+
+
+
+folgende neue Regelung einführen?
+
+ * Alle Nutzer der Gruppe _WIKI_Studenten_LABOR (info vom Anton; sollten neben den Studenten dst, abr, diu, shs etc. sein) sollen SUDO-Rechte mit ihrer LDAP-Kennung haben. z.B. die Gruppe FREIDAY_SERVER_SUDO
+
+ * Alle anderen bekommen nur einen normalen Linux-Zugang ohne SUDO-Rechte. z.B. die Gruppe FREIDAY_SERVER_GAST
+
+
+
+Grüße & Danke
+
+ De Long"		Task	Infrastruktur	12/May/17 2:00 PM	15/May/17 1:43 PM	vm				permissions									"15/May/17 9:51 AM;ehi;Hallo DeLong,
+
+
+
+der Einfachheit halber würde ich die Wiki-Gruppe mit sudo-Rechten  ausstatten, eine extra Gruppe lege ich dafür nicht an, sonst müssten da zukünftig zwei Gruppen gepflegt werden.
+
+Den normalen Zugang ohne sudo-Rechte kann ich auch anlegen, aber wer sind alle anderen? iteratec-MA oder alle Studenten? Bitte um Klärung.
+
+
+
+"	"15/May/17 11:05 AM;diu;Hey Elke,
+
+
+
+das mit der Wiki-Gruppe passt gut.
+
+
+
+Die normalen AD-Kennungen funktionieren meines Wissens schon. Allerdings hatte ich direkt SUDO-Rechte. D.h. für iterate-MA soll es kein SUDO (was auch immer die nächste sinnvolle Stufe ist) liegen - es sei denn natürlich sie sind in der Wiki-Gruppe drinnen :)
+
+
+
+Danke!
+
+De Long"	"15/May/17 1:34 PM;ehi; !screenshot-1.png|thumbnail! 
+
+
+
+Hallo DeLong,
+
+ich habe jetzt auf freiday-int.iteratec die Rechte eingerichtet (siehe Screenshot), iteratec-MA sind aber keine sudoer. Für freiday-prod habe ich die Berechtigungen (Login und sudo) nur für die Gruppe _WIKI_Studenten_Labor eingerichtet, auf einer Produktivmaschine möchte ich nicht jedem Zugriff geben ( auch wenn er kein sudoer ist).
+
+
+
+Grüße, Elke"	"15/May/17 1:43 PM;diu;Hi Elke,
+
+
+
+ich hab's mit meiner AD-Kennung getestet und geht wie du beschrieben hast :)
+
+
+
+Danke!
+
+De Long"	"15/May/17 2:13 PM;ehi;Ich konnte die sudoers-Datei reparieren, es funktioniert jetzt wieder wie gewünscht.
+
+"																																																		

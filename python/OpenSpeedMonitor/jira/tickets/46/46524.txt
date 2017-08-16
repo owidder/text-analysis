@@ -1,0 +1,16 @@
+Import: Missing uniqueness validation for relators	"*Reproduce with sample data:*
+# Navigate to iteraplan -> Mass Data -> Export/Import#
+# Download Excel data
+# Edit Excel file and add two rows on the Tcr2IeAssociation sheet, adding the same relation between two elements (for example ""Cluster 1"" and ""z/OS"") twice.
+# Import file
+
+*Expected:*
+Validator complains either in step 1 of the import, or at the latest in step 4 (if adding a relator only once, but there is one between the same building blocks in the database already).
+
+*Actual:*
+No validation error, but in step 5 of the import, a database constraint violation happens.
+
+*To do:*
+* Add a new validator which checks the uniqueness over the domain identity of object expressions of the same type. Should be similar to the already existing {{UniquenessConstraintValidator}}.
+* For domain identity see {{RStructuredTypeExpression#getDomainIdentityValue(ObjectExpression)}}
+* Since the new validator will also check the uniqueness over names in standalone structured types, the UniquenessConstraintValidator, which also checks this, should be modified not to check name uniqueness anymore. This is to avoid double error messages. How to do this still needs to be discussed: [~wfr], [~sfe]."		Bug	iteraplan PO	17/Mar/14 2:12 PM	19/Jan/16 11:04 AM					import	unique	validation																																																													

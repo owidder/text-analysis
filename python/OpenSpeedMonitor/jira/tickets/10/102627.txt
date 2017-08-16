@@ -1,0 +1,19 @@
+Problem with Nested Cluster and Show in the classic Client 	"After following setup, the button ""Show in classic Client"" jumps to the Nested Cluster diagram in the classic client.
+
+
+
+# Open the interactive Client
+
+# Open the Nested Cluster diagram
+
+# Click on the iteraplan logo 
+
+# Click on ""Show in classic Client"" 
+
+# The classic client opens in the Nested Cluster diagram (classic) 
+
+
+
+Expected: After clicking on ""Show in classic Client"" the iteraplan start screen of the classic client appears 
+
+Actually:  After clicking on ""Show in classic Client"" the Nested Cluster diagram opens in the classic client"		Bug	iteraplan PO	15/Nov/16 3:38 PM	07/Dec/16 10:05 AM																																																																				

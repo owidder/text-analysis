@@ -1,0 +1,39 @@
+Messungen für Performance-Radar einrichten	"Wir wollen zu Werbungs-Zwecken ein Beispiel-Wettbewerber-Benchmarking durchführen. Dieses soll in erster Instanz die 10 im deutsch-sprachigen Raum Umsatzstärksten e-Commerce-Anwendungen vergleichend messen.
+
+
+
+Im Anhang findet sich eine Excel-Tabelle mit den zu berücksichtigenden Shops. Es sollen die wichtigsten Seiten-Typen berücksichtigt werden:
+
+
+
+* Homepage
+
+* Kategorie-Einstieg
+
+* Suche
+
+* Ggf. Produktliste separat?
+
+* Artikel-Detailseite
+
+* Warenkorb
+
+* ...
+
+
+
+Zudem sollen einige der Seiten als Einstieg _und_ als Folgeseite gemessen werden. Dafür benötigen wir ggf. pro Shop zwei unterschiedliche Customer Journeys.
+
+
+
+Es soll auch ein CSI berechnet werden. Hierfür müssen wir uns Übersetzungen für die Seitentypen überlegen und auch Gewichtungsfaktoren.
+
+
+
+In erster Instanz richten wir Messungen auf dem Desktop ein. Mobile sollte möglichst bald folgen. "		Task	OpenSpeedMonitor	16/Mar/16 11:08 AM	22/Mar/16 5:03 PM														16/Mar/16 3:47 PM;nku;Mail von Wibke	16/Mar/16 5:34 PM;bka;Es wurde bereits ein Skript angelegt. Das Skript wird bereits in einem Job für Amazon (http://demo.openspeedmonitor.org/job/edit/86) verwendet. Der nächste Schritt ist, den Job für die anderen Anbieter zu kopieren und anzupassen.	"18/Mar/16 2:49 PM;mmi;Es sind nun Messungen für die zehn Shops eingerichtet.
+
+Jeweils eine Messung mit der Homepage als Einstiegsseite und eine mit einer ProductDetail-Seite als Einstieg.
+
+Alle Messungen werden aktuell in Chrome und Firefox ausgeführt.
+
+Die Messungen werden einmal pro Stunde durchgeführt"																																																				

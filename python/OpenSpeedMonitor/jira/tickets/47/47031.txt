@@ -1,0 +1,16 @@
+Query search on overview pages with an enum attribute and a leading asterisk leads to error page	"Reproduce:
+* Go to an element overview page (for example ""IS"")
+* Open the search tab ""Queries""
+* Select an enum attribute (for example ""Complexity"")
+* Select something like ""Contains""
+* Enter a search value with a leading asterisk, for example ""*age""
+* Press Enter / Click ""Search""
+=> Error page
+
+The error is caused by the check in mehtod:
+de.iteratec.iteraplan.businesslogic.reports.query.node.EnumAttributeLeafNode.createNode(Type<?>, Extension, int, Comparator, String)
+
+Another issue happens in this search:
+When a enum attribute has a enum literal called ""null"", and this value is assigned to a building block, then the query search with empty search value finds these elements.
+
+"		Bug	iteraplan PO	07/Oct/14 11:42 AM	22/Oct/14 2:56 PM					gui	query	queryform	search																																																												

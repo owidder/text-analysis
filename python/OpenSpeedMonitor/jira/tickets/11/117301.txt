@@ -1,0 +1,116 @@
+Iteraplan license issue	"Hi.
+
+
+
+The Iteraplan installation at NTE have suddenly begun complaining about the license, and noone are able to log in.
+
+
+
+Upon logon, the following message is presented: ""Invalid or missing license. The license can be uploaded here [link to license key input page]"".
+
+Further, when trying to activate the license the following error is given ""License update failed (invalid or expired).""
+
+
+
+I've double checked the license key, which was sent to me by Olga Krieger.
+
+
+
+What to do ?"		Fault	iteraplan Support	02/Apr/17 10:42 PM	22/Apr/17 7:00 AM														"03/Apr/17 7:41 AM;cst;Dear Mr. Lakassen,
+
+thanks for your inquiry. 
+
+Your current License-Key is the following: 
+
+Tm9yZC1UcsO4bmRlbGFnIEVsZWt0cmlzaXRldHN2ZXJrIEFTIChOVEUpADaI4LjAyLjIwMTgAMzcwNzc4MkZDOTFERDc1MDk4NUQzRTc2NzJDMzczREU3N0I0NzM5NTcwM0VEMkYxRTVFQTY1NkYwNjk3MkQ0QQ==
+
+Is the error the same? When yes, you can replace the key in the database table ""License"". After this the software has again a valid license. 
+
+
+Greetings,
+
+Christiph Stangl - iteraplan Support"	"03/Apr/17 8:55 AM;jorn.lukassen@evry.com;Hi.
+
+I've tried inserting this one using the WEB UI, but it gives the same error message - ""License update failed (invalid or expired).""
+
+The one currently present in the database is identical to the one Olga sent, but differs from the one you are referring to.
+
+Can you please elaborate as to why this happens ? Is this normal behaviour ?
+
+Thanks.
+Jorn."	"03/Apr/17 9:03 AM;cst;Hi Jorn,
+thank you for your reply. 
+
+The key from my first post, is the license for NTW 2017. 
+In our release mail for version 5.5 was this key was sended to your iteraplan release contact person.
+
+When you want, I add you to the  iteraplan release contact persons of your company.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+
+ "	"03/Apr/17 9:14 AM;jorn.lukassen@evry.com;Hi.
+
+Is this key for version 5.5 only ?
+
+To my knowledge, NTE's installation of Iteraplan has not been upgraded from 5.3. Or am I missing something here ?
+
+Yes, please add me as a recipient for these kind of notifications.
+
+Thanks.
+Jorn."	"03/Apr/17 9:25 AM;jorn.lukassen@evry.com;Update: I've tried updating the 'license' table with the key you provided, and restarted the Tomcat service.
+
+However, I still get the same error message:
+""Invalid or missing license. The license can be uploaded here [link to license key input page]"".
+
+Thanks.
+Jorn."	"03/Apr/17 9:34 AM;cst;I checked the license and it works correcty. 
+
+[^license.txt]
+
+ ^Your license was successfully updated. Licensee: ""Nord-Trøndelag Elektrisitetsverk AS (NTE)"", valid through 02/28/2018 
+
+Please check that no blanks are on the end of the string.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"03/Apr/17 9:45 AM;jorn.lukassen@evry.com;Hi.
+
+This last one worked. Great.
+
+As you can see, there is a difference between the one you sent earlier today and the one from your last post (one character that has slipped in there somehow).
+
+1. Originally sent from Olga Krieger @ Iteratec
+2. Present in the database
+3. Sent from Christoph Stangl 2017.04.03 07:41
+4. Sent from Christoph Stangl 2017.04.03 09:34
+
+1. Tm9yZC1UcsO4bmRlbGFnIEVsZWt0cmlzaXRldHN2ZXJrIEFTADMxLjAzLjIwMTcAMTI4NERDNjM0OEU5RTg3QkQ3MzUyQzM3QkQxMjM4MEE0NzNEMTY2NjExQjdFQ0U3RENBMTE5QUYzNzUyRERDQQ====
+
+2. Tm9yZC1UcsO4bmRlbGFnIEVsZWt0cmlzaXRldHN2ZXJrIEFTADMxLjAzLjIwMTcAMTI4NERDNjM0OEU5RTg3QkQ3MzUyQzM3QkQxMjM4MEE0NzNEMTY2NjExQjdFQ0U3RENBMTE5QUYzNzUyRERDQQ====
+
+3. Tm9yZC1UcsO4bmRlbGFnIEVsZWt0cmlzaXRldHN2ZXJrIEFTIChOVEUpADaI4LjAyLjIwMTgAMzcwNzc4MkZDOTFERDc1MDk4NUQzRTc2NzJDMzczREU3N0I0NzM5NTcwM0VEMkYxRTVFQTY1NkYwNjk3MkQ0QQ==
+
+4. Tm9yZC1UcsO4bmRlbGFnIEVsZWt0cmlzaXRldHN2ZXJrIEFTIChOVEUpADI4LjAyLjIwMTgAMzcwNzc4MkZDOTFERDc1MDk4NUQzRTc2NzJDMzczREU3N0I0NzM5NTcwM0VEMkYxRTVFQTY1NkYwNjk3MkQ0QQ==
+
+
+Now - is there any possibility that this will occur again in the future ?
+
+Thanks.
+Jorn."	"03/Apr/17 10:01 AM;cst;Hi Jorn,
+
+thank you for your reply.
+
+I will add you to the release mails, then have you the key 1 month before it expires.
+You can add a new key over the interactive client - Administration and the tab ""System"".
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+
+ "	"23/Apr/17 1:20 PM;jorn.lukassen@evry.com;Hi.
+
+You can go ahead and close this case.
+
+Thank you for helping."																																														

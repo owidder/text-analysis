@@ -1,0 +1,31 @@
+Tree view for list			Epic	iteraplan Speedbird	20/Jan/17 10:47 AM															"17/Feb/17 9:23 AM;msr;Comment from [~feca]:
+
+
+
+Die commits im Tree View Branch sind zweigeteilt:
+
+1) Für die DnD Tests 
+
+2) Für die Tree View Demo
+
+1) Habe in den editierten Dateien (wo es Sinn gemacht hat) Kommentare hinterlegt
+
+Commits: 6048 | 6049 und 6050
+
+Ich habe einen DnD playground unter '/drag-test' erstellt in den man mittels einem wohlbenannten Controller: ""testController"" in der iteraplan module Datei Logik reindrücken kann. 
+
+Hier habe ich versucht mit dem cellRenderer callback elemente in den Row Cells zu erstellen die doch zumindest events propagieren. Ich habe noch auf eine andere Vorangehensweise hingewiesen mittels einem anderen gridOptions callback.
+
+Ist in der Datei app/js/iteraplan9-module.js über dem controller dokumentiert.
+
+
+
+2) Hier ist es alles in einer Datei, nämlich: app/components/ipList/ipList-component.js
+
+Da ist alles ausführlich dokumentiert - habe die letzten Tage ja auch daran gearbeitet.
+
+
+
+Ich hoffe das ist alles lesbar und macht auch Sinn...
+
+"																																																						

@@ -1,0 +1,10 @@
+EE on iteraplan.de: NullPointerException when creating a custom dashboard	"In the Enterprise Edition on iteraplan.de the following  NullPointerException occurs when creating a custom dashboard:
+
+java.lang.NullPointerException
+        at de.iteratec.iteraplan.businesslogic.service.wiki.IteraplanSyntaxParserServiceImpl.parseDiagramElement(IteraplanSyntaxParserServiceImpl.java:259)
+        at de.iteratec.iteraplan.businesslogic.service.wiki.IteraplanSyntaxParserServiceImpl.convertIteraplanSyntaxElements(IteraplanSyntaxParserServiceImpl.java:219)
+        at de.iteratec.iteraplan.businesslogic.service.wiki.IteraplanSyntaxParserServiceImpl.extractAndConvertIteraplanElements(IteraplanSyntaxParserServiceImpl.java:113)
+        at de.iteratec.iteraplan.businesslogic.service.wiki.IteraplanSyntaxParserServiceImpl.convertIteraplanSyntax(IteraplanSyntaxParserServiceImpl.java:103)
+
+When choosing the spreadsheet report from the saved queries the application crashes."		Bug	iteraplan PO	06/Aug/13 3:04 PM	07/Aug/13 1:57 PM					creation	dashboard	savedquery							"07/Aug/13 1:55 PM;smo;After a db.reset on the demo server the problem doesn't occur anymore.
+Attached is the db-dump before the reset"	07/Aug/13 2:09 PM;sry;strange, but ok. Thx.																																																					

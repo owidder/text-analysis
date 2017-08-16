@@ -1,0 +1,11 @@
+[Integrationstests] Klären was nötig ist für ein sauberes Cleanup zwischen den Testmethoden	"Brauchen wir wirklich die Basisklasse NonTransactionalIntegrationSpec?
+
+Brauchen wir die Rollback-Annotation?"		Task	OpenSpeedMonitor	20/Apr/16 11:28 AM	26/Apr/16 8:08 AM														"26/Apr/16 8:08 AM;bka;Was es mit der _@Rollback_-Annotation auf sich hat, ist ""sehr gut"" hier zusammengefasst: http://grails.github.io/grails-doc/latest/guide/testing.html#integrationTesting
+
+
+
+TLDR: Die _@Rollback_-Annotation greift nur bei der eigentlichen Testmethode und NICHT bei der vorbereitenden _setup_-Methode. Ein Workaround der genannt wird ist, dass man IN der Testmethode im _setup:_-Block die Testdaten erstellt. Nachdem die Testmethode gelaufen ist, wird die Persistenz durch die _@Rollback_-Annotation dann wieder aufgeräumt. Ein Beispiel dazu habe ich in der de.iteratec.osm.result.dao.QueryEventResultsByConnectivitySpec vorbereitet.
+
+
+
+_@Rollback_-Annotation fässt eine Methode in einer Transaktion zusammen, die dann wieder zurückgerollt wird. In den Tests, wo wir _Nontransaktionale_-Methoden verwenden, können wir diese Methode also nicht verwenden! Dort sind wir weiterhin auf unsere angepasste Test-Oberklasse angewiesen."																																																						

@@ -1,0 +1,7 @@
+UI Improvements for big data - BusinessMappings and Reports	"With lots of data in iteraplan, some functionality is causing performance issues (especially with old IE Browsers), such as
+ * editing Elements with lots of Business Mappings
+ * configure graphical reports - Confirming all elements
+
+Therefore the following adjustments are proposed:
+ * no dropdowns/filter for existing business mappings, so changing an existing businessmapping requires delete and new
+ * new Button in reports ""Send query & use results"", which directly jumps to the next step"		Improvement	iteraplan PO	28/Jun/11 11:51 AM	07/Jul/11 2:09 PM														30/Jun/11 2:47 PM;kgo;Functionality and code are fine. An adjustment of the documentation is left to do.	04/Jul/11 3:21 PM;sfe;Documentation of the graphical reports adjusted. I didn't find anything about the editing of business mappings in the user guide, only about their creation, so there was nothing to update.																																																					

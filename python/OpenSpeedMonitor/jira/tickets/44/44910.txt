@@ -1,0 +1,1 @@
+Rename Database table "RANGE"	Since range is a key word in some databases, the table should be renamed to AV_RANGE		Improvement	iteraplan PO	28/Apr/11 2:27 PM	17/May/11 4:29 PM																																																																				

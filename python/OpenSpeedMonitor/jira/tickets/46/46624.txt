@@ -1,0 +1,19 @@
+Import: Mandatory attributes in business mappings too strict	"_Reproduce (with sample data):_
+# Navigate to iteraplan
+# Create a new attribute, for example number attribute
+# Make the attribute mandatory and assign it to Business Mappings
+# Download Excel data (make sure the new attribute is in the Excel-File on the BM sheet
+# Import the Excel file without changes, strategy shouldn't matter
+
+_Expected:_ Warning messages for all business mappings, that the newly created attribute does not have a value assigned. It should still be possible to continue the import
+
+_Actual:_ Error messages about the same thing. It is not possible to continue the import.
+
+_Why?_
+Business Mappings, as all relationship types, seem to not derive their properties from Mixin-Types. This, however, is the criterium the CardinalityConstraintValidator checks whether or not the property is from a user-defined attribute, for which the ""mandatory""-check should only cause warnings, not errors.
+
+_Fix?_
+Either find a better way to check for user-defined attributes, or make sure relationship types also derive their user-defined properties from mixins.
+
+_Suggestive KGO_
+In the WMetamodel, the Mixin is added correctly and in the CardinalityConstraintValidator the RStructuredType does not have a corresponding RFeatureGroup. Possibly, the PojoRMetamodelCopyUtil should, in its copyFeatureGroups() method, also copy feature groups for relationship types."		Bug	iteraplan PO	05/May/14 3:55 PM	06/May/14 3:28 PM					import	validation																																																														

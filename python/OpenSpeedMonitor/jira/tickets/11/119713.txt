@@ -1,0 +1,74 @@
+Error LDAP-Binding in Active Directory - Test works!	"I want to switch from iturm to Active Directory via LDAP (username & password). The first test in our test data center was succesful. Then we configured our productive AD. I switched my test-iteraplan to the this Prod-AD-LDAP an have now a problem! Details are descriped in the attached Files (in German).
+
+I am not able to create an error-report, because I can't log in!"		Technical question	iteraplan Support	27/Apr/17 9:22 AM	04/May/17 7:31 AM														"27/Apr/17 9:22 AM;gerald.rueck@schwaebisch-hall.de;
+
+[^Beschreibung-AD-Fehler.docx] _(18 kB)_
+
+[^iteraplan-5.5.0.log] _(19 kB)_
+
+[^iteraplan-auth.properties] _(5 kB)_"	"27/Apr/17 9:55 AM;cst;Guten Tag Herr Rück,
+
+vielen Dank für Ihre Anfrage.
+
+ist es möglich das wir uns hierzu telefonisch unterhalten können. 
+Würden Sie mir hierzu bitte einen Termin nennen, an dem ich Sie zurück rufen kann? 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"27/Apr/17 2:41 PM;gerald.rueck@schwaebisch-hall.de;Hallo Herr Stangl,
+gerade ist es schwierig, ich wäre heute (27.4.) ab 16:00 Uhr erreichbar, und morgen bin ich bis 13:00 Uhr in einem Workshop.
+Telefonsich bin ich unter 0791-46-2489 oder 0172-733 91 22 erreichbar.
+mfg Gerald Rück"	"27/Apr/17 2:57 PM;cst;Hallo Herr Rück,
+
+ich rufe Sie um 16:00 Uhr ca zurück. 
+
+Es scheint hier entweder ein Problem mit der ""applicationContext-spring-security.xml"" zu geben, den Einstellungen für das LDAP, oder der Datenbank zu geben.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"28/Apr/17 7:45 AM;gerald.rueck@schwaebisch-hall.de;Hallo Herr Stangl,
+danke für das Telefonat gestern, ich habe danach ein paar Untersuchungen auch Richtung unseres LDAPs unternommen. Folgendes habe ich getan:
+1. Statt nochmals Iteraplan auf der ""grünen Wiese zu installieren"" habe ich meine Testinstallation nur auf mein Test-LDAP umgebogen. Anmeldung mit User&PW funktionierte problemlos. Sie haben mir auch gestern bestätigt, dass in der Konfiguration keine Fehler erkennbar sind.
+2. Danach habe ich mit JXplorer und via SSH auf dem Linux-Server mit ldapsearch ein paar Tests gemacht. Auffällig war, dass abfragen innerhalb der Kreditwerk-Domäne funktionierten - ich konnte Benutzer suchen, Gruppen abfragen. Habe ich jedoch nach meiner User-ID in der anderen Domäne gesucht, bekam ich nie ein Ergebnis. Und beim JXPlorer komme ich auch nicht in Untergruppen dieser BSH-Domäne, jedoch in der anderen Kreditwerk-Domäne kann ich Gruppen auflösen.
+3. Ich habe mir die ein oder andere Fehlermeldung angesehen. Es gab ab und zu Hinweise auf einen Mengenproblem. Wir haben evtl. zu viele Einträge in der BSH-Domäne und überschreiten ein Limit. Oder wurde für LDAP-Abfragen am System ein Limit definiert. Das ist meine Vermutung.
+
+Zwischenfazit: Ich glaube nicht mehr, dass im Iteraplan etwas falsch konfiguriert ist. Daher bitte ich Sie nicht weiter in die Richtung zu forschen.
+Wenn sie jedoch Ihren Experten fragen könnten, ob es unter Umständen Parameter über Mengen gibt. Häufig tauchen bei den Tools Parameter auf für maximale Anzahl gefundener Einträge. Gibt's dies evtl. auch bei Spring-Security?
+
+mfg Gerald Rück"	"28/Apr/17 8:59 AM;gerald.rueck@schwaebisch-hall.de;Hallo Herr Stangl,
+jetzt habe ich das Problem gefunden, habe einen Experten gefunden. 
+Das Problem ist, dass wir zwei getrennte LDAPs je Domäne haben, und einen vorgeschalteten LDAP der die Reference auf die anderen beiden weiter gibt. Es gibt die Möglichkeit über ""follow referals always"" sich durch die Domänen zu suchen. Das können wohl aber nicht alle Clients. Ich versuche heute mal direkt in meinen LDAP-Server direkt einzusteigen.
+mfg Rück "	"28/Apr/17 3:46 PM;gerald.rueck@schwaebisch-hall.de;Hallo Herr Stangl,
+ein Teilerfolg habe ich jetzt vor zuweisen, und jedoch auch ein eindeutiges Problem!
+Ich bin jetzt in der Lage mich gegen eine AD-Domäne direkt zu authentifizieren. Jedoch komme ich daher nicht in die Nachbar-Domäne unserers Tochterunternehmens. Details habe ich in dem angehängten Word-Dokument aufgeführt.
+mfg Gerald Rück
+
+[^Beschreibung-AD-Problem-2Domains.docx] _(18 kB)_"	"03/May/17 8:50 AM;cst;Guten Morgen Herr Rück,
+
+vielen Dank für Ihre Antwort.
+
+_Kann ich die beiden Domänen direkt hinter einander angeben?_
+
+Dies sollte kein Problem sein, wie verhält sich im Moment der Login von iteraplan? 
+Funktioniert Ihre Konfiguration so weit, oder treten hier andere Fehler auf? 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"03/May/17 10:12 AM;gerald.rueck@schwaebisch-hall.de;Hallo Herr Stangl,
+aktueller Stand funktioniert die LDAP-Authentifzierung direkt gegen die untergeordnete bsh.dsroot.net. Ein Fehler hatten wir noch, und zwar muss die Groß-/Kleinschreibung von Rollennamen in Iteraplan und die Gruppennamen im AD identisch sein! Sonst kann ein Benutzer nicht einer Gruppe zugeordnet werden!
+
+Gestern hatte ich einen Java-Entwickler mit Spezialgebiet IAM bei mir. Der hat mir die Lösung präsentiert. Und zwar gibt es bei uns im Haus für die verteilten AD-Domänen einen übergeordenten ""Global Catalog""-Dienst welcher über dsroot.net ereichbar ist. Über den kann ich alle Benutzer aus allen nachgelagerten AD-Domänen über LDAP und Port 3268 binden. Das funktioniert! Jedoch muss ich noch dafür sorgen, dass die Gruppen im Global Catalog ebenfalls aufgenommen werden. Momentan sehe ich nur die Anwender, aber keine Gruppe.
+
+In der iteraplan-auth.properties habe ich versucht via URL1 und URL2 auf die beiden Domänen-LDAPs zu gehen, jedoch klappte dies nicht, denn ich müsste für jede URL eine eigene BaseDN definieren, und das bekomme ich nicht hin.
+
+Gruß Rück"	"03/May/17 3:45 PM;gerald.rueck@schwaebisch-hall.de;Hallo Herr Stangl,
+soweit Sie keine weiteren Infos oder Möglichkeiten sehen, können Sie den Task zu machen. Ich würde dann meine AD-Gruppen in den Global Catalog replizieren lassen und zukünftig via LDAP:3268 abfragen.
+mfg Gerald Rück"	"04/May/17 7:31 AM;cst;Vielen Dank für Ihre Antwort. 
+
+
+
+Ticket ist somit geschlossen.
+
+
+
+ "																																												

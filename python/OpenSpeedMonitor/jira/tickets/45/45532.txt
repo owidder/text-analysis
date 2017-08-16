@@ -1,0 +1,22 @@
+Bar chart configuration	"(Use bank data)
+
+* Bar or Pie Chart
+* load saved query number 1 (""1. Data quality assurance: maintenance of IT-Support for business processes"")
+* Send Query and Use Results
+* Generate diagram
+-> produces a NumberFormatException.
+
+{noformat}
+Caused by: java.lang.NumberFormatException: For input string: ""null""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+	at java.lang.Integer.parseInt(Integer.java:449)
+	at java.lang.Integer.valueOf(Integer.java:528)
+	at java.lang.Integer.decode(Integer.java:958)
+	at java.awt.Color.decode(Color.java:707)
+	at de.iteratec.iteraplan.businesslogic.exchange.common.dimension.ColorDimension.setDefaultValue(ColorDimension.java:61)
+	at de.iteratec.iteraplan.businesslogic.exchange.DimensionExport.createColorDimension(DimensionExport.java:112)
+	at de.iteratec.iteraplan.businesslogic.exchange.svg.SvgPieDiagramExport.initializeColors(SvgPieDiagramExport.java:140)
+	at de.iteratec.iteraplan.businesslogic.exchange.svg.SvgPieDiagramExport.createDiagram(SvgPieDiagramExport.java:95)
+	at de.iteratec.iteraplan.businesslogic.service.SvgExportServiceImpl.generateSvgPieDiagram(SvgExportServiceImpl.java:284)
+	at de.iteratec.iteraplan.businesslogic.service.SvgExportServiceImpl.generateSvgPieBarDiagramExport(SvgExportServiceImpl.java:269)
+{noformat}"		Bug	iteraplan PO	10/May/12 9:33 AM	10/May/12 3:26 PM					diagram									10/May/12 3:22 PM;vsh;Fixed in changeset [16485|https://iteraplan.iteratec.de/projects/iteraplan/changeset/16485]	10/May/12 4:10 PM;tse;ok																																																					

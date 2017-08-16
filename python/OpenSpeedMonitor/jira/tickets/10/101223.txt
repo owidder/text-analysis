@@ -1,0 +1,23 @@
+Saved Query squuid is not saved to URL	"Reproduce:
+
+# Open a building block list (e.g. Products)
+
+# Click ""Reset View"" button to reset the view
+
+# Click ""Save As"" button and save the list.
+
+# Click on the iteraplan logo to go to the home page (user settings were saved)
+
+# Click on the Products tile
+
+
+
+Failure:
+
+* The title of the saved query is not shown to the right of the iteraplan logo.
+
+
+
+Expected:
+
+* The title of the saved query is shown to the right of the iteraplan logo."		Bug	iteraplan PO	02/Nov/16 2:09 PM	03/Nov/16 9:01 AM														02/Nov/16 3:11 PM;mwe;The squuid was missing in the URI. After the saved query was saved the squuid will now be written into the URI and so it will be saved in the user settings.																																																						

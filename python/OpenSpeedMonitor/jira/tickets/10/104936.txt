@@ -1,0 +1,96 @@
+Arbeiten mit iteraplan 5.4	"Hallo,
+
+
+
+momentan sind wir damit beschäftigt unsere Anwendungssystematik 2017 in iteraplan 5.4 umzusetzen…zumindest versuchen wir es.
+
+
+
+Beim Komponententest der Tomcat Webapp`s  stürzt die Anwendung ständig ab und steigt aus mit der Fehlermeldung:
+
+
+
+„500 interner Serverfehler – Problem bei der gesuchten Ressource. Sie kann nicht angezeigt werden“
+
+
+
+Unter diesen Umständen ist ein zügiger Aufbau des oben genannten Vorhabens nahezu unmöglich, zudem bindet dies unnötig hausinterne Ressourcen.
+
+
+
+Im Anhang sende ich Ihnen  entsprechende Log´s zur Prüfung 
+
+
+
+Danke & Grüße
+
+
+
+Volker Simon
+
+"		Fault	iteraplan Support	07/Dec/16 12:02 PM	31/Dec/16 7:00 AM														"07/Dec/16 12:02 PM;volker.simon@huk-coburg.de;
+
+[^iteraplan-5.2.0.log] _(6 kB)_
+
+[^iteraplan-5.4.0.log] _(1 kB)_"	"08/Dec/16 9:20 AM;cst;Sehr geehrter Herr Simon,
+
+vielen Dank für Ihre Anfrage.
+
+Also um den Fall weiter bearbeiten zu können, benötigen wir eine genauere Beschreibung was, wie genau passiert.
+
+Anwendungssystematik 2017 ? Heißt das es werden Daten in die Software eingepflegt und bei diesem Vorgang stürzt die Software ab?
+Wie schaut bei Ihnen der ""Komponententest"" aus? Stützt die Software nur dann ab wenn dieser läuft, oder hat es damit nichts zu tun?
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+
+"	"08/Dec/16 2:51 PM;volker.simon@huk-coburg.de;Hallo Herr Stangl,
+
+die Software stürzt bspw. beim einpflegen von Daten ab, dies hat zur Folge das ich jedes mal den Anwendungsbetreuer kontaktieren muss (wovon dieser natürlich schwer begeistert ist) und ich nicht weiterarbeiten kann.
+
+Der Komponententest hat mit dem hier geschilderten Verhalten der Software nichts zu tun.
+
+Es sieht so aus, als hätte iteraplan ein Problem mit größeren Datenmengen, sowohl bei Upload als auch bei Auswertungen
+
+Beste Grüße aus Coburg
+
+Volker Simon
+
+"	"09/Dec/16 8:18 AM;cst;Hallo Herr Simon,
+
+vielen Dank für Ihre Antwort.
+
+Ich würde Sie zu diesem Fall gerne telefonisch zurück rufen. 
+Gerne können Sie mir hierzu Ihre Telefonnummer und Termin nennen, wann ich Sie zurück rufen soll.
+
+In diesem Gespräch, können wir das Problem nochmals im Detail besprechen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"09/Dec/16 9:38 AM;volker.simon@huk-coburg.de;Hallo Herr Stangl,
+
+das können wir gerne am Montag machen.
+
+Mein Vorschlag wäre 13.30 Uhr. 
+
+Wenn das bei Ihnen geht erreichen Sie mich unter folgender Nummer: 09561 9615323
+
+Viele Grüße und ein schönes Wochenende
+
+Volker Simon"	"12/Dec/16 7:26 AM;volker.simon@huk-coburg.de;Hallo Herr Stangl,
+
+unseren für heute geplanten Telefontermin müssen wir verschieben. Ich melde mich mit einem neuen Terminvorschlag bei Ihnen
+
+Grüße
+
+Volker Simon"	"12/Dec/16 9:03 AM;msr;Hallo Herr Simon,
+
+vielen Dank für Ihre Nachricht.
+
+Bitte melden Sie sich, sobald Sie einen neuen Terminvorschlag haben.
+
+Ein schöne Woche
+
+M. Schrumpf"																																																

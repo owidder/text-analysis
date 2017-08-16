@@ -1,0 +1,21 @@
+Execute Testsheet Saved Queries	"*Summary:*
+
+Execute Testsheet
+
+
+
+*Details:*
+
+* Ensure you have all the actual branch code
+
+* Perform all steps carefully
+
+* If the system is different than the testcases, check, if it is a bug or if the testsheet needs to be corrected.
+
+** If it is a bug, create immediately a bugticket in the epic ""Release 5.4""
+
+** If it is not a bug, correct the testsheet. "		Task	iteraplan PO	14/Oct/16 1:35 PM	26/Oct/16 7:49 AM														"25/Oct/16 2:14 PM;mse;* Test results are attached
+
+* Bug tickets were created where needed
+
+* Test specs were updated slightly (improve wording) and commited to svn (only to trunk)"																																																						

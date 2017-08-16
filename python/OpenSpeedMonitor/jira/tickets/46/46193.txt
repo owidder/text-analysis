@@ -1,0 +1,8 @@
+REST EE / WinXP / IE8 / mssql	testing REST with the given parameters	46148	Sub-task	iteraplan PO	23/Oct/13 10:03 AM	23/Oct/13 5:27 PM														23/Oct/13 1:52 PM;jmi;GET-requests without a declared format ("GET /api/metamodel", "GET /api/metamodel", "GET /api/data/InformationSystem", "GET /api/data/InformationSystem/199", etc.) returned a 400-error and did not offer the expected response.	23/Oct/13 5:27 PM;kgo;Seems fine.	"24/Oct/13 10:44 AM;jmi;most of the errors (all except TC8 step 10, which now gives a 400-error instead of the expected 404) could be fixed by adding ""http"" to the accept-header of the IE 8.
+See ITERAPLAN-2073 for details."	"24/Oct/13 10:55 AM;psc;I checked the complained issues. 
+
+1) some error codes are not expected (400 instead of 404): will be handled in ITERAPLAN-2072
+
+2) documentation needed for special IE8 behavior regarding the ACCEPT-parameter: will be handled in ITERAPLAN-2073
+
+Test-Ticket can be closed."																																																			

@@ -1,0 +1,45 @@
+Partial Import "ObjectDeleteException"	"Test case 10 of the partial import test sheet:
+
+
+
+# Start with bank data
+
+# Download partial data for type Information System (without filter)
+
+# Edit excel, make ""Callcenter # 3.2"" parent of ""CRM # 3.2"" 
+
+# Set some relationships from ""Callcenter # 3.2"" to any project
+
+# Delete the enum sheet ""State of Health"" and the according column in the IS sheet
+
+# Delete IS ""Clearing Inland # 3.0"", as well as BMs and Isr2IeAssociations containing the IS
+
+# Save the excel file, and make an overwriting import with the file
+
+
+
+_Expected:_ no changes to ""State of Health"", all other changes applied
+
+
+
+_Actual:_ In 5th import step
+
+{noformat}
+
+Caused by: de.iteratec.iteraplan.common.error.IteraplanTechnicalException: Der Import-Vorgang endete mit Fehlern. Es wurden keine Änderungen in die Datenbank übernommen.	
+
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticImport.tasks.AbstractImportTask.call(AbstractImportTask.java:60)
+
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticImport.tasks.AbstractImportTask.call(AbstractImportTask.java:1)
+
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+
+	... 3 more
+
+Caused by: org.springframework.dao.InvalidDataAccessApiUsageException: deleted object would be re-saved by cascade (remove deleted object from associations): [de.iteratec.iteraplan.model.attribute.AttributeValueAssignment#693]; nested exception is org.hibernate.ObjectDeletedException: deleted object would be re-saved by cascade (remove deleted object from associations): [de.iteratec.iteraplan.model.attribute.AttributeValueAssignment#693]	
+
+	at org.springframework.orm.hibernate3.SessionFactoryUtils.convertHibernateAccessException(SessionFactoryUtils.java:689)
+
+{noformat}"		Bug	iteraplan PO	26/Oct/15 10:41 AM	28/Oct/15 4:18 PM																																																																				

@@ -1,0 +1,15 @@
+Check Single-Responsibility-Attribute-REST-API (Server)	"*Summary:*
+
+Check Single-Responsibility-Attribute-REST-API on the Server for all responsibility attributes.
+
+
+
+*Details:*
+
+1. Check, if exisiting ""/api/icresp"" is still needed or if all information is included in ""/api/attributes""
+
+2. If all information is included in ""/api/attributes"", please remove ""/api/icresp"" from the server and refactor the new client accordingly
+
+
+
+Take care, on the metamodel creation in the New Client: Responsibility attributes need to be added to the metamodel to the list of enumeration attributes (in future from /api/attributes)"		New Feature	iteraplan Speedbird	22/Dec/16 9:26 AM	09/Mar/17 4:47 PM																																																																				

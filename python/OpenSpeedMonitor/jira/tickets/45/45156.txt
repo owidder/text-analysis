@@ -1,0 +1,4 @@
+Change layout of diagram overview page	"Change layout of diagram overview page to a 3x3 view instead of 2x4
+ | Landscape | Cluster | Nesting Cluster |
+ | InformationFlow | Portfolio | Masterplan |
+ | Bar or Pie Chart | Composite |  | "		Improvement	iteraplan PO	23/Sep/11 9:49 AM	23/Sep/11 2:39 PM																																																																				

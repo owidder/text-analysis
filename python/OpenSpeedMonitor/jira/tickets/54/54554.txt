@@ -1,0 +1,3 @@
+Execute migrationscripts from installer	"*Summary:*
+
+Include the migration scripts of the 2 previous major releases in the installer. The installer automatically executes these scripts based on a user interaction from which version the migration should start."		Improvement	iteraplan PO	20/Aug/15 4:54 PM	19/Jan/16 4:06 PM					installer	migration																																																														

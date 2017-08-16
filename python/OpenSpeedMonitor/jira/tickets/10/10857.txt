@@ -1,0 +1,17 @@
+Anmeldung nicht möglich	"Die Anmeldung funktioniert live nicht mehr.
+Da das bisher niemand außer uns verwendet ist dieser Bug nicht so hoch priorisiert."		Bug	OpenSpeedMonitor	20/Jan/14 3:29 PM	24/Jan/14 3:27 PM														21/Jan/14 4:57 PM;nkuhn;Lokal tritt der Fehler nicht auf. Könnte ein Problem mit dem DNS-Namen der Anwendung im tomcat sein. Zuerst auf der seu zu testen.	"24/Jan/14 3:27 PM;nkuhn;War ein Problem des apache2-ReverseProxies hinter dem die Anwendung produktiv läuft: Die Cookies zur Anmeldung fanden ihren Weg zurück nicht durch den Proxy.
+Die folgenden apache2-Direktiven (in der vhost-conf der Anwendung) haben das Problem glöst:
+
+Auf der seu:
+{code}
+ProxyPassReverseCookiePath /iteraSpeedMonitor /
+ProxyPassReverseCookieDomain seu.hh.iteratec.de iteraSpeedMonitor
+{code}
+
+Zu Testzwecken habe ich auf der seu einen vhost für den ism eingerichtet, der als ReverseProxy fungiert. Die Anwendung ist dann unter der Adresse test.iteraspeedmonitor.wpt.otto.iteratec.de zu erreichen. Dies ist allerdings kein offiziell eingetragener DNS-Name. Zum Testen ist der Name daher in der /etc/hosts einzutragen.
+
+live:
+{code}
+ProxyPassReverseCookiePath /iteraSpeedMonitor /
+ProxyPassReverseCookieDomain 80.69.33.179 iteraSpeedMonitor
+{code}"																																																					

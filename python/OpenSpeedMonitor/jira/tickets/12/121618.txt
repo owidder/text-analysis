@@ -1,0 +1,41 @@
+Siegel erstellen führt zu Fehlermeldung	"Wenn ein Informationssystem gesiegelt werden soll (wenn Siegel nicht vorhanden/ Siegel ungültig), erscheint folgende Fehlermeldung:
+
+""Beim Ausführen Ihrer Anfrage trat ein Fehler auf.
+
+
+
+Ein allgemeiner technischer Fehler ist aufgetreten.
+
+			
+
+Mögliche Gründe:
+
+Sie haben mehrfach auf einen Knopf oder Link gedrückt, ohne die Antwort abzuwarten.Sie haben versucht, auf einen Link zuzugreifen, der in der 
+
+aktuellen Session nicht gültig ist. Insbesondere URLs mit einer Endung 
+
+wie ""?execution=e4s2"" gelten nur innerhalb einer Session.Ein anderer allgemeiner technischer Fehler ist aufgetreten.
+
+
+
+Der aktuelle Menüpunkts-Flow wurde geschlossen, um Inkonsistenzen oder 
+
+Beschädigungen am Datenbestand zu vermeiden. Falls der Fehler bei 
+
+erneuten Versuchen weiter auftritt, können Sie auch versuchen, sich ab- 
+
+und wieder anzumelden.""
+
+
+
+Bei veralteten Siegel geht es erstaunlicherweise."		Fault	iteraplan Support	17/May/17 12:18 PM	17/May/17 1:00 PM														"17/May/17 12:18 PM;martin.weidemann@l-bank.de;
+
+[^ProblemReport_2017-05-17_121538.zip] _(9 kB)_"	"17/May/17 1:00 PM;cst;Lösen das Verhalten in Ticket IPS-444 
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support"																																																					

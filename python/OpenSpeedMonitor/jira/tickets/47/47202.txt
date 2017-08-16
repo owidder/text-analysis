@@ -1,0 +1,6 @@
+bulk run of consistency checks fails	"Trying to run several consistency checks at once fails with the standard error:
+
+{{A general technical error occurred. To continue, please click Close or Cancel, or clear the current session.}}
+
+This can be reproduced when navigating to / Governance / Consistency Checks and clicking ""Run"" for the first block ""Consistency Checks - Information System Landscape"" (or some other ""Run"" button that executes several checks). Singles checks worked well so far.
+"		Bug	iteraplan PO	28/Nov/14 11:43 AM	03/Dec/14 11:10 AM														03/Dec/14 11:10 AM;gph;Works.																																																						

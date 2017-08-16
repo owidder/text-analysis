@@ -1,0 +1,1 @@
+JPEG export produces images with a black background	This occurs in the following diagrams: LSD, N3CD, IFD		Bug	iteraplan PO	26/Apr/16 11:07 AM	26/Apr/16 4:44 PM																																																																				

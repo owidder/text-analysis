@@ -1,0 +1,8 @@
+[Excel Import] Exception, if a cell has not the correct cell type	"I tried to import an Excel File with a new Information System.
+The cell-type for the cost  I have change to text and have added the value 500.
+When trying to import the file it comes to a technical error."		Bug	iteraplan PO	19/Aug/14 10:39 AM	29/Aug/14 11:39 AM					excel	import								"19/Aug/14 5:13 PM;fka;Please fix this for all sensible conversions:
+Date / Text & enum / Number
+
+If the conversion via standard Java classes is possible, use the value. If not, show an appropriate warning and continue importing with ignoring the values. Be careful: Ignored values must not lead to a deletion of an value in iteraplan."	27/Aug/14 11:06 AM;dop;Can not be reproduced. 	"29/Aug/14 9:33 AM;sfe;After consulting fka, we've decided not to attempt parsing dates from cells formatted as text, as the multitude of possible date formats could lead to wrongly interpreted data.
+Instead, add a section to the documentation to emphasize the importance of dates being represented in properly formatted cells in the Excel file.
+If cells formatted as texts are encountered while expecting to read a date, add an according warning message and ignore the value of the cell."	29/Aug/14 10:48 AM;dop;Update of documentation: http://www.iteraplan.de/wiki/display/upcomingIteraplan/Excel+EA+Data+Format																																																			

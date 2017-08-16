@@ -1,0 +1,10 @@
+Make Visio diagrams and templates compatible with Visio 2003 again	"The Visio templates (*.vdx) contain namespaces of Visio 2006 and Visio 2010. Hence the generated diagrams can't be viewed in Visio 2003.
+
+Possible ""solution"":
+* Save as binary *.vds with Visio 2010.
+* Open this binary with Visio 2003 and save as *.vdx with Visio 2003 again.
+
+(/) worked"		Task	iteraplan PO	17/Jul/13 2:12 PM	03/Sep/13 3:34 PM					diagram	reports	visualization						Visio 2003 on Windows XP (=Win7 + XP-Mode)	"19/Jul/13 9:43 AM;smo;* Checked implementation
+* Generated Visio Charts and sent it to Gerhard to open them (he is the only one that has Visio 2003)
+
+There is still a macros warning that could be fixed."	03/Sep/13 3:34 PM;psc;Reviewed with Gerhard.	03/Sep/13 3:35 PM;psc;Solution accepted. Issue closed.																																																				

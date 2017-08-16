@@ -1,0 +1,27 @@
+NCD page: Range slider doesn't display correct range (filtering by numeric properties)	"Steps to reproduce:
+1. Go to NCD page
+2. Use filtering by numeric properties ""Strategic value"" (or any other) for inner elements
+3. Change range with range slider several times
+Actual: Range slider doesn't display correct range
+Expected: Range slider should display correct range after each changing"		Bug	iteraplan PO	26/Mar/15 2:13 PM	25/Apr/15 6:43 AM														"15/Apr/15 9:11 AM;msr;Take in April-Release 2015?
+Maybe"	"15/Apr/15 10:52 AM;wfr;Recommendation: fix now
+
+This leads to a diagram, even exported, with a wrong legend.
+So the diagram may be misleading and causing massive financial damage if major business decisions are based on said faulty diagram.
+
+AGAIN
+analyze the signalling and control flow and update/refresh mechanism between these two views of the filter setting (model).
+ 
+
+
+ "	"23/Apr/15 10:15 AM;msr;This ticket is maybe related with the caching of UI controls:
+
+https://www.iteraplan.de/issues/browse/IPNINE-491
+
+"	23/Apr/15 11:40 AM;fka;"Disconnet" between slider position and displayed numeric values below	"24/Apr/15 6:56 PM;tam;The bug still exists, but it only occurs after selecting numeric filter after another one.
+If you select first numeric filter, then the for example a text filter and then the numeric filter again slider ends will be displayed correct.
+
+Probably a bug in the slider or some magic in the angular we don't know about.
+I sent an email and the bug report to the developer https://github.com/darul75/ng-slider/issues/96
+
+Also a new improvement ticket was created ITERAPLAN-3130"																																																		

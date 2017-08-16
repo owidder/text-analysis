@@ -1,0 +1,23 @@
+Attribute - Responsibility Attribute -  "New" and false Name value crashes the database	"Reproduce with trunk
+
+ # Open ""Administration"" and ""Attributes""
+
+ # Open the attribute ""Accountability""
+
+ # Click on ""NEW"" - the green row appears
+
+ # Open the the dialog for name, enter ""VVV"" and press enter
+
+ # Now click on ""Back to List"" 
+
+
+
+Now iteraplan interactive client is blocked.
+
+ After restart the tomcat server no login is possible. 
+
+
+
+Expected: That you can not save ""entered"" inputs and the ""Back to list"" is not possible
+
+Actual: When you enter a own ""Name"" and click on ""Back to list"" the software crashes"		Bug	iteraplan PO	12/Apr/17 3:25 PM	21/Apr/17 4:32 PM																																																																				

@@ -1,0 +1,25 @@
+ID for all html-elements in iteraplan 9	"*Summary:*
+For the purpose of automated webtesting add an ID to all html-elements in iteraplan 9.
+
+*As-Is:*
+No html-element has an ID.
+
+*To-Be:*
+All ""clickable"" / interactive parts of the system have an unique ID.
+
+*Affected parts of the system:*
+* Recent view page
+* List view page
+* Detail view page
+* Nesting cluster diagram
+
+*Approach:* 
+For the automated webtests the ""simulated browser"" needs to interact with parts of the system to test their functionality. Therefore each html-element in iteraplan 9 should be equipped with an unique ID. This ID should be in most cases a descriptive, meaningful name, in some cases (e.g. many boxes in an diagram) a name + number.
+
+In the recent view page the logo, the navigation bar and the recent list items should have an ID.
+In the list view the button ""show nested diagram"", the ""add column""-button, the search text field, the ""reset filter"" button, each column, the sorting and the ""open/edit"" dialog should have an ID. The edit mode boxes need an ID.
+In the detail view the clickable html-elements need an ID.
+In the nesting cluster diagram all clickable html-elements like the buttons, the menus, all boxes and so on need an ID.
+
+*Acceptance Criteria:*
+When opening the iteraplan 9 application in a webbrowser any html inspection tool like firebug identifies the above mentioned html-elements by ID."		New Feature	iteraplan PO	22/Dec/14 3:41 PM	13/Jan/15 11:11 AM					test	webtests																																																														

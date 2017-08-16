@@ -1,0 +1,9 @@
+Spinner auf das Distribution-Chart	"Wenn viele Daten ausgewählt sind sieht man nicht, dass die Daten geladen werden, da weder die chart-card, noch ein Spinner zu sehen sind. Kann auch beim neuen Switchen auf das Chart von einem anderen passieren.
+
+
+
+Es sollten analog zum PageAggregation-Chart die Chart-Card mit einem Spinner angezeigt werden, wenn man über einen Switch zum Chart wechselt oder auch nach Klick auf den _Show_-Button.
+
+
+
+Den Spinner könnten wir bei dieser Gelegenheit etwas kleiner machen (Distribution- und PageAggregation-Chart).  "	114514	Sub-task	OpenSpeedMonitor	09/Mar/17 4:34 PM	24/Mar/17 2:46 PM																																																																				

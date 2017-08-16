@@ -1,0 +1,13 @@
+Vergleichsmessung mobile vs. mobile Emulation einrichten	"Mit den neuen Chrome Optionen gibt es die Möglichkeit mobileDevices zu emulieren.
+
+Ich würde gerne sehen wie die Chrome-Emulation gegen echte Devices bei einer HTTPS-Messung abschneidet.
+
+
+
+Also iPhone 5c vs. Emulation iPhone 5c
+
+Samsung Galaxy S4 vs Emulation Samsung Galaxy S4/S5
+
+
+
+Nach Möglichkeit sollten wir dies auf der DEMO Instanz tun um diese Messungen hinterher Marketing-technisch Verarbeiten zu können. Dazu müssten jedoch die mobilen Agenten erst auf der DEMO Instanz verfügbar gemacht werden."		Story	OpenSpeedMonitor	22/Jun/17 10:22 AM															22/Jun/17 10:39 AM;sbr;Singlestep-Vergleiche könnten wir bereits mit webpagetest.org einrichten.																																																						

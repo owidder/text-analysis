@@ -1,0 +1,35 @@
+Parent-relation input columns (update for [#IPTS-612])	"All columns that contain parent-child relation and need to be disabled in Mass Update:
+
+ * Business Domains - Subordinate Business Domains
+
+ * Business Processes - Subordinate Business Processes
+
+ * Business Units - Subordinate Business Units
+
+ * Products - Subordinate Products
+
+ * Business Objects - Subordinate Business Objects
+
+ * Business Functions - Subordinate Business Functions
+
+ * Projects - Subordinate Projects
+
+ * Information System Domains - Subordinate Information System Domains
+
+ * Information Systems - Sub Information Systems
+
+ * IT Services - Subordinate IT Services
+
+ * Architectural Domains - Subordinate Architectural Domains
+
+ * Infrastructure Elements - Subordinate Infrastructure Elements
+
+
+
+No parent-relations or disabled for Mass Update:
+
+ * Business Mappings
+
+ * Interfaces
+
+ * Technical Components"		Improvement	iteraplan Speedbird	10/Apr/17 2:55 PM	04/May/17 2:19 PM														04/May/17 2:19 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-569																																																						

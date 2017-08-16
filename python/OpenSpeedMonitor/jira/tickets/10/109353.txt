@@ -1,0 +1,23 @@
+Undefined value displayed wrongly when coloring by Accountability	"_Reproduce (with sample data):_
+
+# Unset the value for ""Accountability"" of ""CRM # 3.1""
+
+# Define a Cluster Diagram with the header ""Attribute->Complexity"" and a row ""Information System""
+
+# Choose as coloring for Information System ""Accountability""
+
+
+
+_Expected:_ CRM # 3.1 displayed in the ""undefined"" color
+
+_Actual:_ CRM # 3.1 is displayed in black
+
+
+
+Also:
+
+* When using Information Systems as header and coloring the header according to Accountability, CRM # 3.1 is not the undefined color, but the default header color
+
+* Similarly, when configuring a Masterplan Diagram for Information Systems as Level 1 elements, and the Level 1 coloring is for Accountability CRM # 3.1 is not displayed as the undefined color, but white."		Bug	iteraplan Thunderduck	23/Jan/17 12:02 PM	01/Feb/17 4:24 PM														"01/Feb/17 4:24 PM;mada;Review done.
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-322#CFR-38460"																																																						

@@ -1,0 +1,15 @@
+Wechsel Classic Client - Interaktiver Client	"Guten Tag
+
+Wir stellen fest, wenn wir vom Classic Client auf den Interaktiven Client wechseln, braucht der eine Ewigkeit.
+
+Wir vermuten, dass beim Wechsel der unterschiedlichen Client die Berechtigung erneut abgefragt werden. Sprich Verifizierung im LDAP, ob und in welcher Gruppe der User enthalten ist.
+
+Danke für die Klärung."		Technical question	iteraplan Support	06/Apr/17 4:24 PM	26/Apr/17 7:00 AM														"07/Apr/17 7:21 AM;cst;Guten Tag Herr Studer,
+
+vielen Dank für Ihre Anfrage.
+
+Das hat an der Stelle nichts mit der Authentifizierung zu tun. Beim wechsel zwischen Classic Client auf den interaktiven Client, wird das Datenmodell neu gebaut das für den Einsatz des interactiven Clients notwendig ist. Beim Login in den interactiven Client wird mit 6.0 die Performance verbessert, für Version 5.5. wird hier nichts mehr geändert werden. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"																																																						

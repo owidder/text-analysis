@@ -1,0 +1,13 @@
+Add tool area option to show or hide segment labels	"*Summary*
+Add option to toolarea to show or hide segment labels
+
+*Details*
+* The value of the toolarea entry will be toggled. Two possible options are:
+*# show segment labels (in German ""Beschriftungen der Segmente anzeigen"")
+*# hide segment labels (in German ""Beschriftungen der Segmente ausblenden"")
+* By default segment labels are displayed
+* There is no legend entry
+* Store in the URL
+* Create a ""Display"" top level toolarea entry for this option
+
+Implementation for showing labels will be done in IPTS-159"		New Feature	iteraplan Speedbird	06/Sep/16 11:47 AM	11/Oct/16 9:37 AM														11/Oct/16 9:36 AM;dmkh;Review is done, one comment is here: https://iteraweb.iteratec.de/fisheye/cru/IP-71	11/Oct/16 9:44 AM;vadm;Review changes done in revision #4599.																																																					

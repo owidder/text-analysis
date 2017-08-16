@@ -1,0 +1,18 @@
+Wrong information about used outer and inner element in Diagram Title on NCD page	"IPNINE-204
+
+#1 ""Information system""
+Steps to reproduce:
+1. Go to NCD page
+2. Select ""Information System"" as inner element
+3. Look at the Diagram Title
+Actual: wrong title ""Nested Cluster Diagram - Business Domains with supporting information systems""  
+Expected: Should be ""Nested Cluster Diagram - Information System Domains with supporting information systems"" 
+
+#2 ""Infrastructure Element""
+Steps to reproduce:
+1. Go to NCD page
+2. Select ""Infrastructure Element"" as inner element
+3. Look at the Diagram Title
+Actual: Text is missing : ""Nested Cluster Diagram - Information system with supporting"" 
+Expected: Should be ""Nested Cluster Diagram - Information system with supporting Infrastructure element"" 
+"		Bug	iteraplan PO	10/Dec/14 11:53 AM	22/Dec/14 10:33 AM														22/Dec/14 10:33 AM;dasm;verified																																																						

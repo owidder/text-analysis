@@ -1,0 +1,53 @@
+Build Prozess und Service Verbesserungen nachziehen	"Im Zuge von SDO-245 und SDO-255 sind einige Verbeserungen entstanden für die Projekte secureBoxSSLyze und secureBoxZap die nun auch auf alle anderen Edison basierten microservices (Nikto, SQLMap, Nmap, Spider) adaptiert werden sollten.
+
+
+
+Folgende Änderungen sind hierfür relevant (siehe git commit historie):
+
+* SDO-245 Refactored the job scheduler cron expression to use a application.property (securebox.zap.jobsSchedulerCron) instead of an hard coded expression. _GIT Commit (ZAP): d75375d1833f66b60d7364dc9ee2a4223d7f2ca8_
+
+* Refactoring the gradle build to use gradle.properties instead of hard coded environment variables to be more ci system independent. _GIT Commit (ZAP): b9aaf1b3da913d927e37f511bcde1e1add365cda_
+
+* SDO-245 SDO-258 Refactored Services to implement a StatusDetailIndicator and removed unused code. _GIT Commit (ZAP): 3331dc0c46339cbb181e95f9fd6efe5e669438ca_
+
+* SDO-245 SDO-258 Refactored health checks and job definition. _GIT Commit (ZAP): 094b2fa8849d630442ebe9231402fcc796bb992b_
+
+* SDO-245 Added new springBoot application profiles to distinguish better between different environments. _GIT Commit (ZAP): 65b6348f2d08a31ea7e463c27f777898ba5157b9_
+
+* SDO-245 Updated the dockerfile with some springboot specific optimizations. _GIT Commit (SSLyze): 7c81562b0c6d1d06073d1f16a92c120a6c871e50_
+
+* SDO-257 Added a UID as appID to identify each unique service. _GIT Commit (SSLyze): 124f5b01775238ddeacbc69fa385dca4f1a94b6d_
+
+* SDO-257 Refactored the task specific taskLockDuration time to be configurable by property. _GIT Commit (SSLyze): 8ba3080be48938edb4e729c94c500ac9116cff7a_"		Improvement	secureCodeBox	15/Aug/16 1:39 PM	12/Sep/16 8:29 AM					students									"29/Aug/16 11:46 PM;rfe;Dein aktueller Stand bzgl. _secureBoxSqlMap_ schaut schon gut aus. Am Code selbst musste ich nichts mehr ändern, auch die Umgebungsparameter für den Java Build in Bamboo waren bereits korrekt eingestellt:
+
+
+
+{code:java}
+
+clean build artifactoryPublish -x test -Pvcs_commit=${bamboo.repository.revision.number} -Pvcs_url=${bamboo.repository.git.repositoryUrl} -Pbuild_url=${bamboo.buildResultsUrl} -Pbuild_timestamp=${bamboo.buildTimeStamp} -Partifactory_user=${bamboo.artifactory.user} -Partifactory_password=${bamboo.artifactory.password}
+
+{code}
+
+
+
+Was nur fehlte war im ""Docker"" Task im Schritt „Integration Test“ die folgende Umgebungsvariable zu definieren (Container environment variables):
+
+
+
+{code:java}
+
+SPRING_PROFILES_ACTIVE=ci
+
+{code}
+
+
+
+Damit erzwingst Du ein spezifisches *Spring Profile* für den Integrationstest, d.h. das eine spezifische Properties Datei (*application-ci.properties*) aktiv ist. 
+
+Das wiederum ist notwendig, da sonst die falschen URLs/Hostnamen für die Healthchecks während des Integrationstests benutzt werden… 
+
+
+
+Insofern würde ich dich bitten die Anpassungen analog auch für die übrigen µServices nachzuziehen (nmap, ...).
+
+"	31/Aug/16 3:53 PM;jbo;Die Änderungen sind nun für SQLmap, Nikto und Nmap übernommen.																																																					

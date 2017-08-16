@@ -1,0 +1,29 @@
+Navigator mit Reporting Rechte	"Hallo
+
+Wir werden eine Rolle erstellen, in der nur das Lesen der Daten zur Verfügung gestellt wird.
+
+Welche Option muss zugewiesen werden, damit der Navigator funktioniert?
+
+Danke"		Technical question	iteraplan Support	24/Jul/17 11:44 AM	26/Jul/17 5:05 PM														"25/Jul/17 2:06 PM;msr;Sehr geehrter Herr Studer,
+
+
+
+um das Navigator-Diagramm zu verwenden, braucht Ihre Rolle folgende Rechte:
+
+
+
+* Leserechte für die jeweils beteiligten Building Block Types
+
+* die funktionale Berechtigung ""Option to create Context Overview Diagram""
+
+
+
+Mit freundlichen Grüßen
+
+
+
+Marcel"	"25/Jul/17 4:49 PM;alfred.studer@emmi.com;Hallo Marcel
+Passt und hat funktioniert. So kann ich dies für unseren Chef dies freigeben.
+
+Somit kannst du dieses Ticket schliessen
+Gruss Alfred"																																																					

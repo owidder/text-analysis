@@ -1,0 +1,35 @@
+Sort der History Daten	"die Einträge in der History in 5.5 kann/ sind nicht nach der Zeit sortiert/sortierbar.
+
+Dies macht es nicht möglich die History sinnvoll zu nutzen"		Fault	iteraplan Support	05/Apr/17 3:04 PM	30/Apr/17 7:00 AM														"05/Apr/17 3:04 PM;wolfgang.zerrer@festo.com;
+
+!History.png|thumbnail!"	"06/Apr/17 8:54 AM;cst;Sehr geehrter Herr Zerrer, 
+Sehr geehrter Herr Banzhaf,
+
+vielen Dank für Ihr Feedback. 
+
+Das von Ihnen gemeldete Verhalten wird mit Version 6.0 gelöst. Sie haben Recht, die Sortierung ist an dieser Stelle nicht benutzerfreundlich. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"06/Apr/17 9:22 AM;wolfgang.zerrer@festo.com;Die Version 6.0 ist für uns, auch durch den kompletten Wechsel des User Interfaces noch nicht in der  kurzfristigen Zeitplanung. 
+Da aber ab 5.5 die History nur noch im neuen Client verfügbar ist, brauchen wir eine Lösung innerhalb von 5.5 (Patch ?) "	"06/Apr/17 9:27 AM;cst;Hallo Herr Zerrer,
+
+vielen Dank für Ihre Antwort.
+
+Habe dies zur weiteren Prüfung bei uns weiter gegeben. 
+Werde hierzu Anfang der nächsten Woche eine Antwort bekommen.  
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"10/Apr/17 10:01 AM;cst;Guten Morgen Herr Zerrer,
+
+haben das Thema intern besprochen und es wird zur 5.5 für das Verhalten kein Service Release geben. 
+Um hier das Problem mit dem Anzeigen der Spalten, wie auch das Datumsformat zu umgehen, können Sie hier den Excel/CSV Export der History nutzen. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+ 
+
+ "																																																		

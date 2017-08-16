@@ -1,0 +1,83 @@
+Hibernate upgrade	"Upgrade Hibernate to the current version.
+
+
+
+Version: Latest 5.x
+
+
+
+Upgrade all libraries used by or using hibernate as well, as far as necessary.
+
+
+
+Open:
+
+* how much test?
+
+* Patch or not?
+
+
+
+# Analyze to answer the above mentioned open questions
+
+# Implement
+
+
+
+Is the reason for the patch solved by Hibernate or Oracle?
+
+
+
+----
+
+*Status as of Plannung Dec. 2*
+
+
+
+remaining effort cannot be estimated, so keep it at 8 PD for the *remaining* effort
+
+---- 
+
+
+
+"		Improvement	iteraplan PO	11/Nov/15 10:11 AM	09/Mar/16 10:45 AM														"11/Nov/15 2:14 PM;wfr;Question: https://iterahub.iteratec.de/#/thread/5605
+
+"	"14/Dec/15 10:15 AM;gph;Feature branch for Hibernate 4 migration is here:
+
+https://iteraplan.iteratec.de/svn/iteraplan/branches/RB_5_1_0-FeatureBranch_Hibernate4
+
+
+
+Working code state with Hibernate 4.3.11 is here:
+
+https://iteraplan.iteratec.de/svn/iteraplan/tags/Release_5_1_0-working_Hibernate4_3_11_withReducedPatch"	"04/Feb/16 1:26 PM;gph;Suggestions for review/testing. These parts were affected by Hibernate migration:
+
+
+
+* Transactions and transaction handling in general
+
+* Behavior of: Hibernate Search Index / Fulltext Search
+
+* Behavior of History
+
+* Reduced Hibernate Patch and patched classes
+
+* Neighborhood Diagram (because Point2D has changed from deprecated API to own implementation)
+
+* Elastic loading (especially after Hibernate 5 migration)
+
+* BBCreateDeleteLogger"	"04/Feb/16 2:52 PM;gph;Two nitpicks left over from Hibernate 4 migration:
+
+
+
+* Hibernate Search cannot be disabled in LocalApplicationContextUtil.getApplicationContext(), because it cannot be accessed as Spring Bean anymore.
+
+* HSQL 2.x driver writes too many warnings (in Hibernate SqlExceptionHelper) when integration tests are executed:
+
+{code}
+
+     [WARN ] (jdbc.spi.SqlExceptionHelper) SQL Warning Code: -1100, SQLState: 02000
+
+     [WARN ] (jdbc.spi.SqlExceptionHelper) no data
+
+{code}"																																																			

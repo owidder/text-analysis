@@ -1,0 +1,5 @@
+Landscape Diagram: minor improvements	"see ITERAPLAN-619:
+
+* The legend is sometimes not formatted properly (see attached screenshot)
+* Maybe change the default value of the extended option ""Inhaltselemente verkleinern, so dass die Achsen-Elemente gleich groß bleiben."" to false, else rows in large datasets become unreadable.
+"		Bug	iteraplan PO	19/Apr/12 6:36 PM	07/Aug/14 3:42 PM					diagram									07/Aug/14 3:42 PM;fka;Won't do any improvements in scope of this ticket.																																																						

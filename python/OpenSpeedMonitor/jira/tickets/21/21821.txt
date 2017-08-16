@@ -1,0 +1,5 @@
+Discovery für ZAP Spider	"- Fehlerbild nachstellen
+
+- Verbesserungspotential ausarbeiten
+
+- Entscheidungsvorlage: Anpasen/Fixing oder Eigenentwicklung/anderes Tool"		Story	secureCodeBox	10/Oct/14 3:21 PM	14/Nov/14 11:35 AM					ITMC																																																															

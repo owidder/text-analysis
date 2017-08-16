@@ -1,0 +1,11 @@
+Excel Import: Renamed ISR/TCR are not properly linked to existing IS/TC	"Steps for reproduction:
+# Create an Excel Export with at least two ISRs, let's call them _foo # 1.0_ and _bar # 2.0_
+# Edit the file and rename _foo # 1.0_ to _bar # 1.0_ (assuming that no element with that name exists yet). Leave the ISR ID unchanged.
+# Save and import that file again
+
+Effect:
+ * The import crashes with a generic internal error message, and the log contains a ConstraintViolationException from the DB.
+ * The importer tried to create yet another IS named _bar_, instead of linking the release to the already existing IS.
+
+The same problem probably applies to TCRs as well, and probably also if an element is created anew instead of renaming.
+"		Bug	iteraplan PO	27/Oct/11 3:04 PM	04/Apr/12 10:46 AM					excel	import								04/Apr/12 10:46 AM;kvo;Works with new Import ITERAPLAN-439																																																						

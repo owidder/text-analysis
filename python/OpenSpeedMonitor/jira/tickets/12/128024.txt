@@ -1,0 +1,11 @@
+Reihenfolge in json für mehrfach-Werte umgekehrt	"Die Reihenfolge der Werte entspricht nicht jener im user interface, sondern ist umgekehrt. Ist bei allen Attributen mit mehrfachen Werten so, ein Beispiel siehe Screenshots.
+
+
+
+lg Stefan Neubauer"		Fault	iteraplan Support	26/Jul/17 11:14 AM															"26/Jul/17 11:15 AM;stefan.neubauer@hackhofer.at;
+
+!attribute-productline-definition.jpg|thumbnail!
+
+!multiplevalues-json.jpg|thumbnail!
+
+!multiplevalues-screen.jpg|thumbnail!"																																																						

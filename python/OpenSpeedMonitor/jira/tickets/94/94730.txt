@@ -1,0 +1,19 @@
+Fix dependencies for license generator build	"Currently, the license generator java app has a dependency to a class in the iteraplan project, and transitively to iteraplan-common-base.
+
+This is no big issue to run the license generator from for example eclipse. You can just add the iteraplan project to the build path.
+
+If you want to create an executable license generator jar file, however, maven can't find the necessary dependencies.
+
+Right now, this means to build a license generator jar file, one needs to do the following steps:
+
+* Install iteraplan-base.jar of the appropriate version in your local maven repository
+
+* Add maven dependencies to the license generator pom file, for:
+
+** The mentioned iteraplan-base.jar
+
+** iteraplan-common-base
+
+
+
+Please devise a way for the license generator to be build-able out of the box."		Improvement	iteraplan PO	31/Aug/16 1:29 PM																																																																					

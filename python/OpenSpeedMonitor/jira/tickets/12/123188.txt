@@ -1,0 +1,1 @@
+Zeitvergleich im JobGroup-Aggregation-Chart einführen	Sollte analog zum Zeitvergleich im Page-Aggregation-Chart implementiert werden.	118615	Sub-task	OpenSpeedMonitor	01/Jun/17 4:06 PM																																																																					

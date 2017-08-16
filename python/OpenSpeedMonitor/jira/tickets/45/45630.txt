@@ -1,0 +1,91 @@
+Add support for Excel 2007 file format (XLSX) for the legacy Export (Tabular Reports and Successor Report)	"* Update the POI library to v3.9
+* Make sure that everything Excel-related uses the format-independent interfaces types, not the specific HSSF implementation types. The Excel2 implementation parts are relatively clean already, the Excel(1) impl probably needs more work. Do not invest any effort into the old XLS import code
+* On the Spreadsheet report dialog, add an output format selection for XLSX (Excel 2007) format
+
+The file contents and table structures should be identical, regardless whether it is the binary Excel 2003 or the XML-based 2007 file format.
+
+Most importantly, test import and export carefully, as we don't know yet how well POI supports the new file format. Keep a close eye on (at least) the following aspects:
+* performance
+* date fields/ cells
+* numbers in text cells
+* empty cells
+* leading or trailing whitespace for text or numbers or dates
+* identical visual appearance for exported files, i.e. correct functionality of row hiding, formula computation, cell heights, colouring, worksheet naming and ordering, range name definition, dropdown and validation constraint definition, hyperlinks
+* ..."		Improvement	iteraplan PO	04/Mar/13 5:10 PM	18/Apr/13 4:41 PM					excel	format								14/Mar/13 10:59 AM;jme@iteratec.de;POI library is on v3.9 (thanx Steffen).	"14/Mar/13 3:45 PM;jme@iteratec.de;Verwendung der Excelfiles aus dem Ordner ""testFiles"" für die Unittests:
+
+excel:
+attributesActivatedTypesMultiWithWhitespacesTest.xls
+dateAttributesTest.xls
+enumAttributesActivatedTypesInvalidTest.xls
+enumAttributesActivatedTypesMultiTest.xls
+enumAttributesActivatedTypesNotAvailableTest.xls
+enumAttributesActivatedTypesTest.xls
+enumAttributesCreateTest.xls
+enumAttributesDoubleTest.xls
+enumAttributesEmptyLinesTest.xls
+enumAttributesGroupTest.xls
+enumAttributesRenameTest.xls
+enumAttributesRenameToBlankTest.xls
+enumAttributesTest.xls
+enumAttributesUpdateTest.xls
+enumAttributesValuesDoubleTest.xls
+enumAttributesValuesEmptyLinesTest.xls
+enumAttributesValuesRenameTest.xls
+enumAttributesValuesTest.xls
+enumAttributesValuesUpdateTest.xls
+numberAttributesRangeInvalidTest.xls
+numberAttributesRangeMultiTest.xls
+numberAttributesRangeMultiWithWhitespacesTest.xls
+numberAttributesRangeTest.xls
+numberAttributesRangeToManyTest.xls
+numberAttributesTest.xls
+responsibilityAttributeTest.xls
+responsibilityAttributeUserGroupValueTest.xls
+responsibilityAttributeUserValueTest.xls
+responsibilityAttributeValuesWithWhitespacesTest.xls
+textAttributesTest.xls
+
+
+excel2: 
+iteraplanExcelData_BankData.xls"	"14/Mar/13 3:49 PM;jme@iteratec.de;Verwendung der Excelfiles aus dem Ordner ""compareFiles"" für die Unittests:
+
+excel2:
+iteraplanExcelData_initial.xls
+iteraplanExcelData_one-tc-added.xls
+
+Ohne Verwendung:
+iteraplanExcelData_initial_propertyChanged.xls"	"21/Mar/13 9:59 AM;jme@iteratec.de;Design decision (open for discussion):
+The templateLocatorService is called inside the ExcelWorkbook.
+Reasons: all file- and streamhandling for the Excel-templates in one place and the implementation of the successor-reports and the tabular reports can be harmonized."	"21/Mar/13 9:59 AM;jme@iteratec.de;Open question: 
+Exceptions to be thrown on the various occasions."	"21/Mar/13 10:00 AM;jme@iteratec.de;Open ToDos: 
+- As a user I want to add a Excel 2007 template
+- Unit-Tests"	21/Mar/13 10:07 AM;jme@iteratec.de;templateType is used by ExcelResponseGenerator. So it is still neccessary in the ExcelWorkbook.	21/Mar/13 10:32 AM;jme@iteratec.de;Die Settings in den template Files (Sheet: ExcelTemplateSheet) werden nicht genutzt, oder?	"21/Mar/13 3:36 PM;jme@iteratec.de;Current completion state:
+ - DONE: Update the POI library to v3.
+ - DONE: Make sure that everything Excel-related uses the format-independent interfaces types, not the specific HSSF implementation types. The
+         Excel2 implementation parts are relatively clean already, the Excel(1) impl probably needs more work. Do not invest any effort into the
+         old XLS import code
+ - DONE: On the Spreadsheet report dialog, add an output format selection for XLSX (Excel 2007) format
+
+ - OPEN: Update upload validation logic etc. so that xlsx and xlsm files are accepted and fed into the normal import logic.
+ - OPEN: On the Export/Import page, add another button column which offers export in xlsx format
+
+ - OPEN: Create Unittests for the Excel 2007 format (""old"" export)
+ - OPEN: Create tests for the specified issues (see ticket description)"	"22/Mar/13 12:13 PM;jme@iteratec.de;Styling information in the template files:
+ - The styling information in the template files is not used by iteraplan. This bug is a known bug and won't be fixed during the development of this ticket
+ - The styling information should be removed from the template files
+"	22/Mar/13 12:20 PM;jme@iteratec.de; - DONE: The styling information should be removed from the template files	"22/Mar/13 9:35 PM;jme@iteratec.de;Unit-Test is missing:
+ProjectReportTest
+
+I have created the unit test."	"25/Mar/13 1:22 PM;jme@iteratec.de;TemplateFile for the legacy excel export:
+
+The included macros are a input mask for data. So it is only neccessary for the excel import.
+But the legacy import is not extended to the excel 2007 format.
+
+This means, that the macros can be deleted from the excel 2007 template file and the format can be changed to xlsx."	"26/Mar/13 9:35 AM;jme@iteratec.de;There is a excel sheet for the business mappings in the code (along with a unit test).
+Hence there is no Report and no Unit Test for the report.
+
+The report could be created as ""simple list"" or ""xml""-file. But it is not visible in the gui.
+
+To clarify: 
+- is it correct, that the report cannot be chosen at the gui?
+- if the Excelsheet is not neccessary - should I delete it from the code?"	26/Mar/13 9:02 PM;sry;The business mappings sheet is part of IS, BU, BP and Product reports. It is not intended to have a BM report of its own, but it must be part of the connected types' reports.	16/Apr/13 8:31 AM;sfe;looks fine	16/Apr/13 10:48 AM;sry;I have one more request for improving clarity for the average user.  Please change the labels from "Excel" to "Excel 2003 (XLS)" and "Excel 2007" to "Excel (XLSX)". This affects at least the import/export page and the spreadsheet report output select box.	18/Apr/13 4:41 PM;sry;Moved the renaming request to ITERAPLAN-1531. So this issue is complete, thx																																					

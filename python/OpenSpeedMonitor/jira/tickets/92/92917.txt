@@ -1,0 +1,37 @@
+Correct coloring in Nested Cluster 	"Reproduce:
+
+
+
+Error changing the inner color:
+
+
+
+Go to Nested Cluster
+
+Change the inner coloring to Costs (from red to green)
+
+Select an outer element, so ""outer color"" is shown in the toolbar
+
+Try to change a color of the inner coloring
+
+=> TypeError: An exception occured: Cannot read property 'getValue' of undefined
+
+
+
+Outer color is deleted:
+
+
+
+""outer color"" mit (from red to green)
+
+inner color with different values ""Coloring by Complexity""
+
+choose a outer element
+
+change a value for a inner color 
+
+=> The outer coloring is set to default
+
+
+
+"		Improvement	iteraplan PO	10/Aug/16 10:55 AM	10/Aug/16 3:48 PM														10/Aug/16 3:48 PM;pma;Review comment: ok																																																						

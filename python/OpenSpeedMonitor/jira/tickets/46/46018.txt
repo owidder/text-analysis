@@ -1,0 +1,9 @@
+Uniqueness of BB names defined with and without case in different DBMSs.	"Names of BBs must be unique. For the normal EA Data entry, this is implemented as a DB constraint. Running on Oracle, the constraint is case sensitive, on HSQLDB and MySQL it is case insensitive. The constraint during (Excel) import is case insensitive, too.
+
+This could result in a model entered (on Oracle), exported, but failing during import.
+
+Idea for fix: Do check in program code, not in the DB, and always case insenstive.
+Immediate: add a note to the user docs.
+Quite soon: add note to modeling guidelines.
+
+reported by Dr. S - thx "		Bug	iteraplan PO	23/Aug/13 5:27 PM																																																																					

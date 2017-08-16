@@ -1,0 +1,7 @@
+TABS: Change colour of active-state to iteragenta	"The active Tab in the Main Menu and Single Element View are indicated by the blue text and pink bar beneath the text.
+
+
+
+ToDo:
+
+Please change the colour of the bar in both cases from pink to iteragenta: #A70075"		Improvement	iteraplan Speedbird	06/Jul/17 3:05 PM	19/Jul/17 1:57 PM																																																																				

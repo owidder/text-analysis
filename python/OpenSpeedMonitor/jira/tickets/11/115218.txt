@@ -1,0 +1,7 @@
+Synchronize editors in Single View	"In the Single View of information systems you can add transported business objects, while the arrows are not updated due to the new added element.
+
+
+
+CURRENTLY: old arrows than transported business objects are shown after adding
+
+EXPECTED: a new arrow with default value ""NO_DIRECTION"" should be shown next to the new added business object"		Bug	iteraplan Thunderduck	17/Mar/17 11:12 AM	04/Apr/17 10:59 AM														03/Apr/17 2:48 PM;pma;To check: the new synchronized arrow cannot be edited before a refresh due to the missing informationflow. Please check after IPTT-440																																																						

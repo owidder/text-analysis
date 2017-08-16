@@ -1,0 +1,27 @@
+New attribute creation: On leaving without saving no warning	"*Summary:*
+
+During new attribute creation: On leaving the new page without saving you do not get any warning like ""All input will be lost""
+
+
+
+*Reproduce:*
+
+* Create a new attribute
+
+* Enter a name
+
+* Click on the iteraplan logo
+
+
+
+*Actual:*
+
+* You leave the attribute page without any warning
+
+
+
+*Expected:*
+
+* Before leaving the page you get a warning:
+
+""All input will be lost."" ""Cancel"" ""Ok""/ GER: ""Beim Verlassen gehen alle Informationen verloren"" ""Abbrechen"" ""Ok"""		Bug	iteraplan Speedbird	12/Jun/17 1:43 PM	29/Jun/17 6:11 PM														14/Jun/17 1:50 PM;fka;Implement like it is curently implemented with the role creation screen.	29/Jun/17 6:11 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-731																																																					

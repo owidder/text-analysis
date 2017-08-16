@@ -1,0 +1,7 @@
+Graphics Reactor title string missing	"Reactor page and navigation right beside the iteraplan logo both show ""REACTOR.TITLE""
+
+
+
+Expected:
+
+""Graphics Reactor"" or something similar"		Bug	iteraplan PO	26/Oct/15 1:23 PM	26/Oct/15 2:45 PM																																																																				

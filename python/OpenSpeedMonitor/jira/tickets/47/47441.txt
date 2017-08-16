@@ -1,0 +1,20 @@
+Diagram should be updated immediately after each letter	"IP9-234
+
+Summary:
+Diagram should be updated  immediately after inputing or removing each letter in the Text input bar
+
+Steps to reproduce:
+1. Use IS as outer type and Interface as inner type
+2. Use any filtering by text attribute
+3. Start to enter ""broker"" keyword
+
+Actual: the diagram will not be updated until that time when user will click ""search"" or ""enter""
+Expected: Diagram should be updated  immediately after inputing each letter in the Text input bar
+
+4. Start to remove letter from ""broker"" keyword
+Actual: the diagram will not be updated until that time when user will click ""search"" or ""enter""
+Expected: Diagram should be updated  immediately after removing each letter in the Text input bar"		Bug	iteraplan PO	25/Feb/15 2:01 PM	13/May/15 3:04 PM														"26/Mar/15 2:29 PM;wfr;no functional  restriction
+
+BUT better experience
+"	04/May/15 9:43 AM;fka;Please pay attention that the update of the diagram is non-blocking, the user should be able to continue typing	07/May/15 11:37 AM;fka;Please invest no more work; checkin and postpone remaining part	"11/May/15 12:22 PM;nle;The continuous textfiltering works, but should be refactored by refactoring pipline.
+At the moment it will work quite slow, if there are many objects in the diagram."																																																			

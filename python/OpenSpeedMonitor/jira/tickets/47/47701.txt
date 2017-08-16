@@ -1,0 +1,9 @@
+Overlaps of links for Classic Client	"Steps to reproduce:
+1. Go to LSD
+2. Use any filtering by numeric/text/date attribute
+Actual: Overlaps of links for Classic Client
+Expected: Is it ok? Because if user changes page size - toolbar is moving
+
+"	47645	Sub-task	iteraplan PO	24/Apr/15 11:51 AM	05/May/15 2:06 PM													"Workspace: Windows 8.1
+Browser: Google chrome 42.0, IE 11
+rev 1013"	28/Apr/15 5:00 PM;dasm;Verified (rev 1061)																																																						

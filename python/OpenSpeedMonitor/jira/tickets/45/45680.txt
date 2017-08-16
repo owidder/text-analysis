@@ -1,0 +1,86 @@
+Implement saving/ loading of new masterplan options		45634	Sub-task	iteraplan PO	17/Apr/13 2:42 PM	14/Jun/13 11:24 AM					saved_filters									"12/Jun/13 1:58 PM;bra;selecting a relation on level 3 of the masterplan configuration leads to following NPE:
+
+{code}
+Caused by: java.lang.NullPointerException
+	at de.iteratec.iteraplan.businesslogic.reports.query.options.ViewConfiguration.<init>(ViewConfiguration.java:99)
+	at de.iteratec.iteraplan.businesslogic.service.InitFormHelperServiceImpl.getCustomColumnsForTypeOfBuildingBlock(InitFormHelperServiceImpl.java:1259)
+	at de.iteratec.iteraplan.businesslogic.service.InitFormHelperServiceImpl.createMasterplanRowType(InitFormHelperServiceImpl.java:1281)
+	at sun.reflect.GeneratedMethodAccessor563.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:319)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy107.createMasterplanRowType(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor563.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:319)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.interceptor.AbstractTraceInterceptor.invoke(AbstractTraceInterceptor.java:113)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.AbstractTraceInterceptor.invoke(AbstractTraceInterceptor.java:113)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy107.createMasterplanRowType(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor563.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:319)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy108.createMasterplanRowType(Unknown Source)
+	at de.iteratec.iteraplan.presentation.dialog.GraphicalReporting.masterplan.MasterplanGraphicFrontendServiceImpl.selectLevelType(MasterplanGraphicFrontendServiceImpl.java:299)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.springframework.expression.spel.support.ReflectiveMethodExecutor.execute(ReflectiveMethodExecutor.java:69)
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:84)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:57)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getTypedValue(SpelNodeImpl.java:102)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:97)
+	at org.springframework.binding.expression.spel.SpringELExpression.getValue(SpringELExpression.java:84)
+	at org.springframework.webflow.action.EvaluateAction.doExecute(EvaluateAction.java:75)
+	at org.springframework.webflow.action.AbstractAction.execute(AbstractAction.java:188)
+	at org.springframework.webflow.execution.AnnotatedAction.execute(AnnotatedAction.java:145)
+	at org.springframework.webflow.execution.ActionExecutor.execute(ActionExecutor.java:51)
+	... 65 more
+[ERROR] [2013-06-12 13:44:55] (iteraplan.model.TypeOfBuildingBlock) This enum has no constant with the specified name  from key : .product.singular
+{code}
+
+to reproduce:
+# load the 'all available IS' saved masterplan
+# select 'Products' for level 2
+# select 'subordinate Products' for level 3
+=> aforementioned NPE occurs"	"12/Jun/13 4:22 PM;bra;level 3 is not completely discarded after a change on level 2
+to reproduce:
+# configure a masterplan for informationsystems
+# select superordindate informationsystem for level2
+# select sub informationsystems for level 3
+# change level2 to products => the relationship selection is reset, but the configuration for level 3 remains
+# generate the diagram
+=> error (stacktrace below)
+
+{code}
+
+Caused by: de.iteratec.iteraplan.common.error.IteraplanTechnicalException: An internal error occurred. Please see the log file for details. To continue, please click Close or Cancel, or clear the current session.
+	at de.iteratec.iteraplan.businesslogic.reports.query.options.GraphicalReporting.Masterplan.MasterplanRowTypeOptions$RuntimePeriodTimeline.retrieveRuntimePeriod(MasterplanRowTypeOptions.java:313)
+	at de.iteratec.iteraplan.businesslogic.reports.query.options.GraphicalReporting.Masterplan.MasterplanRowTypeOptions$RuntimePeriodTimeline.getFrom(MasterplanRowTypeOptions.java:322)
+	at de.iteratec.iteraplan.businesslogic.exchange.common.masterplan.MasterplanDiagramCreator.createTimespanRow(MasterplanDiagramCreator.java:235)
+	at de.iteratec.iteraplan.businesslogic.exchange.common.masterplan.MasterplanDiagramCreator.createRow(MasterplanDiagramCreator.java:229)
+	at de.iteratec.iteraplan.businesslogic.exchange.common.masterplan.MasterplanDiagramCreator.createRows(MasterplanDiagramCreator.java:205)
+	at de.iteratec.iteraplan.businesslogic.exchange.common.masterplan.MasterplanDiagramCreator.createMasterplanDiagram(MasterplanDiagramCreator.java:96)
+	at de.iteratec.iteraplan.businesslogic.service.SvgExportServiceImpl.generateSvgMasterplanExport(SvgExportServiceImpl.java:227)
+{code}"																																																					

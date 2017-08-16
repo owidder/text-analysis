@@ -1,0 +1,1 @@
+HUB-Layer (CRUD)	Als Benutzer möchte ich unterschiedliche Sichten auf die Applikationslandschaften haben, um unterschiedliche Fragen beantworten zu können.		Story	EAM-Visualisierung	22/Jul/16 9:39 AM																																																																					

@@ -1,0 +1,79 @@
+User-specific saved queries	"Personal saved queries with output type list and diagram.
+
+
+
+*In Header:*
+
+* Add saved query name: directly next to the building block name/report category, truncated to 30 characters with ...
+
+* Add save button(s), directly next to the saved query name
+
+** ""Save As"": Add metainformation (see below under visible to the user) and save query
+
+** ""Save"": only show if a saved query is loaded; saves the query immediately without metainformation change
+
+* Add Modaldialog for saving the diagram/list
+
+* Metainformation:
+
+** visible to the user: name (input, 255, mandatory, unique), description (textarea, 2048)
+
+** internally: automatically generate UID, lastUpdatedTimestamp, lastLoadedTimestamp 
+
+* Show warning if the name already exists (add validation to name input field, message should warn the user that if he saves there will be an other saved query with the same name)
+
+
+
+*New Overview page*
+
+* Add overview page
+
+* Show list of saved queries (use ag-grid)
+
+** Columns: Name (as Link to List/Diagram), Description, Report-Type, Building Block Type, Actions (Edit-Icon,Delete-Icon)
+
+*** Report-Types: (can be read from the URL during loading of list)
+
+**** Landscape: Content Element Type
+
+**** NCD: Outer Elements
+
+**** Information Flow: Node Type
+
+**** Masterplan: Type of Level 1
+
+**** Portfolio: Bubble Type or Content Type 
+
+**** CCD: Type of header row
+
+**** List: ""List""
+
+* Add quicksearch over all fields (like in the list view)
+
+* Add column-sorting
+
+* Add column-resize
+
+
+
+*On Start screen*
+
+* Add new tile ""My Saved Queries"" after ""All Saved Queries"" (same icon as ""All Saved Queries"") as access point to the overview page
+
+
+
+*Loading Saved Query*
+
+* The UID of the saved query has to be in the URL
+
+
+
+Test with 1000 saved queries from different types.
+
+
+
+Out of scope:
+
+* Share with certain roles and other specific users.
+
+* Edit status of list or diagram (saved query)"		Epic	iteraplan Quickfox	13/Jul/16 2:01 PM	24/Nov/16 10:02 AM														24/Nov/16 10:02 AM;fka;All done																																																						

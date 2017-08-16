@@ -1,0 +1,59 @@
+Keine Anmeldung mit kobaltblau-Adresse möglich	"Hallo zusammen,
+
+
+
+ich habe nach wie vor eine iteratec-Adresse und ein Alias für kobaltblau. Über das iteratec-Konto erhalte ich auch EMail an harald.meyer@kobaltblau.de.
+
+
+
+Um eine Email von kobaltblau zu senden, wollte ich in Outlook ein neues entsprechendes Profil anlegen, aber es ist bei der Eingabe des Passworts gescheitert. Auch über die Web-Oberfläche geht nur die Anmeldung mit der iteratec-Adresse.
+
+
+
+(Bei der Anmeldung mit der kobaltblau-Adresse habe ich sowohl mein iteratec-Passwort als auch das Standardpasswort aus dem Wiki (Start123!) versucht).
+
+
+
+Könnt ihr mir sagen, wie ich Emails wahlweise von iteratec und von kobaltblau verschicken kann?
+
+
+
+Besten Dank
+
+Harald"		Task	Infrastruktur	02/Dec/16 7:07 PM	06/Dec/16 8:49 AM	Mailserver													"05/Dec/16 8:43 AM;kti;Guten Morgen Harald,
+
+
+
+du kannst nur Mails als Harald.Meyer@kobaltblau.de versenden, wenn du ein Postfach dafür hast. Das steht dir bisher nicht zur Verfügung, daher ist das noch nicht möglich.
+
+
+
+Soll ich dir ein entsprechendes Postfach noch anlegen?
+
+
+
+Viele Grüße
+
+Kathrin"	"05/Dec/16 7:40 PM;hme;ja bitte.
+
+
+
+Viele Grüße
+
+Harald"	"06/Dec/16 8:49 AM;kti;Guten Morgen Harald,
+
+
+
+ich habe dir ein Postfach für kobaltblau angelegt.
+
+Harald.Meyer@kobaltblau.de
+
+
+
+Kennwort ist das Initial-Kennwort, bitte über OWA ändern.
+
+
+
+Viele Grüße
+
+Kathrin"																																																				

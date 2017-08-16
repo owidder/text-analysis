@@ -1,0 +1,7 @@
+Create tests for color picker	"Create tests for color picker functunality in the different diagrams:
+
+
+
+* Unit tests for calculation of min/max values in the case of numeric attributes
+
+* e2e tests "		Improvement	iteraplan PO	03/May/16 2:48 PM																																																																					

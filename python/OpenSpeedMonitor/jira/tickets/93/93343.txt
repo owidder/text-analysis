@@ -1,0 +1,3 @@
+Reactor remains in status Running when reactor script execution error	"Should not be.
+
+If an execution error occurs the reactor should switch back to status not running."		Bug	iteraplan Quickfox	16/Aug/16 3:30 PM	16/Aug/16 4:20 PM																																																																				

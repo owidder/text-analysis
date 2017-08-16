@@ -1,0 +1,18 @@
+More diagram file formats	"For existing (nesting cluster) and future diagrams, add more export file formats to the client.
+
+Exisitng: 
+ * SVG (non-interactive variant of diagram view)
+ * PDF (preliminary)
+ * PNG (internal only)
+
+To be:
+ * SVG with links back to diagram and elements in interactive client
+ * PDF as scalable/vector format, not based on PNG
+ * PNG external too
+ * JPEG (less important)
+ * Visio (only modern 2012? format, not older)
+
+Visio is open to discussion on feasability.
+
+PNG/JPEG/PDF should be rendered with a SVG to library."		Epic	iteraplan PO	03/Nov/14 3:26 PM	30/Dec/15 12:03 PM														"07/Nov/14 3:50 PM;sepr;RE ~50 SP without Visio.
++ ~20 SP for Visio"																																																						

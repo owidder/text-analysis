@@ -1,0 +1,1 @@
+Cancelling element edit does not work	Edit any element, then click "Cancel". Then screen is shown grayed, but the dialog box is not shown.		Bug	iteraplan PO	24/Feb/15 2:28 PM	27/Feb/15 1:59 PM					edit									24/Feb/15 2:43 PM;tam;It seems that "Cancel" only doesn't work for the information systems																																																						

@@ -1,0 +1,71 @@
+Single Attribute View: Completely new ranges throws exception	"*Summary:*
+
+Single Attribute View: Completely new ranges throws exception
+
+
+
+*Reproduce:*
+
+* Open Single Attribute Page of ""Value added""
+
+* Click on ""Range uniform distributed:"" No
+
+* Click on ""Add a new range""
+
+* Enter ""1""
+
+
+
+*Actual:*
+
+* An exception is thrown:
+
+
+
+{code:javascript}
+
+TypeError: An exception occurred: arr.every is not a function
+
+    at indexOfObjectInArray (http://localhost:8080/trunk/app/js/common/utils.js:901:9)
+
+    at Scope.$scope.addNewRange (http://localhost:8080/trunk/app/admin/attributes/detail/attributesDetail-controller.js:515:68)
+
+    at fn (eval at compile (http://localhost:8080/trunk/app/bower_components/angular/angular.js:14268:15), <anonymous>:4:318)
+
+    at destination.(anonymous function) (http://localhost:8080/trunk/app/bower_components/angular/angular.js:9739:22)
+
+    at EditorApplyCancelController.onApply (http://localhost:8080/trunk/app/components/editors/editorApplyCancel-component.js:19:35)
+
+    at fn (eval at compile (http://localhost:8080/trunk/app/bower_components/angular/angular.js:14268:15), <anonymous>:4:271)
+
+    at expensiveCheckFn (http://localhost:8080/trunk/app/bower_components/angular/angular.js:15281:18)
+
+    at callback (http://localhost:8080/trunk/app/bower_components/angular/angular.js:24808:17)
+
+    at Scope.$eval (http://localhost:8080/trunk/app/bower_components/angular/angular.js:17025:28)
+
+    at Scope.$apply (http://localhost:8080/trunk/app/bower_components/angular/angular.js:17125:25)
+
+(anonymous) @ angular.js:13424
+
+$delegate.error @ logger.js:77
+
+(anonymous) @ angular.js:10137
+
+(anonymous) @ app.js:537
+
+$apply @ angular.js:17130
+
+(anonymous) @ angular.js:24813
+
+defaultHandlerWrapper @ angular.js:3417
+
+eventHandler @ angular.js:3405
+
+{code}
+
+
+
+*Expected:*
+
+* Range is added"		Bug	iteraplan Speedbird	20/Apr/17 4:29 PM	22/Apr/17 10:27 AM																																																																				

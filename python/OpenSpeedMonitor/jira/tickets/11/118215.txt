@@ -1,0 +1,57 @@
+Enumeration Attribute - Cannot be created correctly and crashes iteraplan (server & client)	"Reproduce with trunk
+
+ # Open ""Administration"" and ""Attributes""
+
+ # Create a ""Enumeration Attribute""
+
+ # Edit the Name to ""Test"" 
+
+ # Click on ""NEW"" - the green row appears
+
+ # Enter the ""Name"" - ""Change the color"" and ""Save""
+
+ (Colorpicker dont open and in the IE no edit is possible in general)
+
+ # Nothing happens and a error appears in the browser console 
+
+
+
+TypeError: An exception occurred: a.every is not a function
+
+ at indexOfObjectInArray (combined1491578057530.js:1)
+
+ at findObjectInArray (combined1491578057530.js:1)
+
+ at b.a.updateAttributeLiteralColor (combined1491578057530.js:76)
+
+ at fn (eval at compile (combinedBower1491578057530.js:26), <anonymous>:4:426)
+
+ at b.$eval (combinedBower1491578057530.js:24)
+
+ at combinedBower1491578057530.js:26
+
+ at combinedBower1491578057530.js:26
+
+ at f (combinedBower1491578057530.js:22)
+
+ at xg.$$writeModelToScope (combinedBower1491578057530.js:26)
+
+ at b (combinedBower1491578057530.js:26)
+
+
+
+When you click on the button ""Back to List"" the ""Attribute"" will created corrupt and the list view of the Attributes is broken too. After restart the tomcat server no login is possible. 
+
+
+
+Expected: That you can create ""Enumeration"" attribute
+
+ Actual: The save of an ""Enumeration"" attribute crashes the software
+
+
+
+*Server:* check what data comes to server in the request, verify the data, do not save the data which can break everything, return the response with error status/message.
+
+
+
+*Client:* fix exception(s), send correct data."		Bug	iteraplan Speedbird	10/Apr/17 10:18 AM	08/Jun/17 4:21 PM																																																																				

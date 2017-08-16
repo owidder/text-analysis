@@ -1,0 +1,5 @@
+All Building Block Types as content elements	All Building Block Types should be available as content elements (see IPNINE-302 ).		Bug	iteraplan PO	25/Mar/15 2:22 PM	22/Apr/15 3:48 PM					lsd									15/Apr/15 12:37 PM;sepr; I implemented "Interface" by "interfaceDirection", "technicalComponentReleases" because flows does not have name attr.	20/Apr/15 5:42 PM;dasm;Verified (rev 966)	"21/Apr/15 2:32 PM;msr;Reviewed:
+
+""resolvePath"" is implemented in businessObject.js and in dataModel.js
+Can you please put it into one place, so we don't have any duplicate code?"	"22/Apr/15 10:39 AM;msr;Defect:
+InfrastructureElement not possible as content element with updated metamodel"	14/May/15 4:18 PM;anma;businessObject.js is just mock of Object created by Wolfgang. Now this file is deleted																																																		

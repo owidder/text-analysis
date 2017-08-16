@@ -1,0 +1,21 @@
+Extract directive for similar code in filterDialogTemplate	"Copied from parent-issue:
+
+
+
+the behavior of primary filter and relationship-end-filter is almost identical - is it possible to have a more generic usage of the both.
+
+** e.g. in singleFilterRowTemplate.html there is lots of duplication - is it possible to extract a directive?
+
+** probably makes it necessary to remove  the differentiation of primary-filter and relationship-end-filter to a certain extent - a caller may get the top-level filter for either the primary type or any other relEnd, and operates on the resulting object, instead of calling methods like _addRelEndFilter()_."	78754	Sub-task	iteraplan PO	20/Apr/16 2:38 PM	22/Apr/16 7:00 PM					nic									"22/Apr/16 10:27 AM;mwe;Todo:
+
+* singleFilterRowTemplate.html:
+
+** Please use '===' instead of '==' and '!==' instead of '!=' (line 3, 12, 17)
+
+* filterDialogTemplate.html
+
+** Don't know if it has some influence but 'or-filter-key= ""key2""' should be 'or-filter-key=""key2""' (line 25, 62)
+
+** Please use <tag></tag> because empty tags like <tag/> doesn't work in some browsers. (line 35, 72) 
+
+* The OR-Button is overlapped by the following input field with german language selected: Please remove the ""width: 50px;"" from the CSS class .divOr"	22/Apr/16 3:57 PM;abo;Incorporated changes from review-comments.																																																					

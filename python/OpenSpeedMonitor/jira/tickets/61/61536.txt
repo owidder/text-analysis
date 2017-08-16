@@ -1,0 +1,11 @@
+remove not used ipMenu & context menu	"check ipMenu for usage. should it not be used delete ipMenu. Don´t delte ipMenu_new!
+
+
+
+check lsd for rests of the context menu and delete them. Don´t delete contextMenu from NCD!
+
+LSD.displayxxx functions only used in contextMenu. please delete
+
+
+
+rename in locals LSD.MENU into LSD.TOOL_AREA. "		Improvement	iteraplan PO	26/Oct/15 4:41 PM	02/Nov/15 9:31 AM																																																																				

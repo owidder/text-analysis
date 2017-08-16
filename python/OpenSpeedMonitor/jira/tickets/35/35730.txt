@@ -1,0 +1,3 @@
+Measurements>Jobs: Ausgabe Cron String mit führender Null zuviel	"In Measurements>Jobs>Listenansicht wird ""Execution Schedule (Cron String)"" mit einer führenden Null mehr angegeben als in Measurements>Jobs>Edit Job>Job Setting
+
+Ausgabe in Listenansicht anpassen"		Bug	OpenSpeedMonitor	25/Mar/15 12:57 PM	25/Mar/15 2:27 PM																																																																				

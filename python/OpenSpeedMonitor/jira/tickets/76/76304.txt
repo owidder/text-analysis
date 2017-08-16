@@ -1,0 +1,7 @@
+[dc.js Dashboard] Erweiterung Filter-Controls für die OSM-Vorauswahl	"Die Attribute, die in der OSM-Vorauswahl selektiert wurden müssen auch im dc-Dashboard wieder auftauchen:
+
+
+
+* Attribute, für die nur exakt eine Ausprägung ausgewählt wurden (z.B. JobGroup=otto.de_live) müssen nur angezeigt werden. Dies kann z.B. wie bisher auch auf dem eingeklappten Akkordion erfolgen.
+
+* Attribute, für die mehrere Ausprägungen vorausgewählt wurden (z.B. Page=HP_entry+MES+PL+SE) müssen auch im dc-Dashboard filterbar sein. Ob die entsprechenden Filter-Controls immer Tortendiagramme sein müssen oder ob es bessere/anschaulichere gibt können wir uns ansehen "		Task	OpenSpeedMonitor	08/Mar/16 6:41 PM	18/Aug/16 2:22 PM																																																																				

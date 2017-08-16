@@ -1,0 +1,27 @@
+Hierarchical name is used as identifying string in model change object	"_Reproduce (with sample data):_
+
+# Activate history in iteraplan
+
+# Open business process ""Clearing""
+
+# Change something and save
+
+=> Database shows, in the HISTORY_BP table, the hierarchical name ""Core : Clearing"" in IDENTIFIER_BB column of the according row.
+
+
+
+Expected is the use of the non-hierarchical name.
+
+
+
+This comes from how the ""identityString"" value of {{BBChange}} in {{ModelChangeBuilder}} is set.
+
+Please fix and also add migration scripts to replace existing hierarchical names in the IDENTIFIER_BB column of history tables with their non-hierarchical counterparts (if there is a colon, replace with the part after the last colon. if not, don't change anything)."		Bug	iteraplan Thunderduck	05/Dec/16 1:53 PM	10/Feb/17 5:52 PM														"06/Feb/17 8:46 AM;sfe;I've neglected to mention one important information in the ticket's description:
+
+The reproducer only shows one example. This issue is not restricted to business processes, but affects all types which have a hierarchy. Consequently, the migration scripts have to adjust the history for all those types.
+
+The easiest way to identify all affected types is to look at all classes implementing the interface {{de.iteratec.iteraplan.model.interfaces.HierarchicalEntity}}.
+
+
+
+Also: make sure to write table names in all caps, in MySQL scripts (except for table 'hibernate_sequences' which you probably won't need in this issue)."	10/Feb/17 5:45 PM;ants;Review done: https://iteraweb.iteratec.de/fisheye/cru/IP-357																																																					

@@ -1,0 +1,31 @@
+Wrong behaviour of Breadcrumbs	"how to reproduce:
+
+* Go to Projects -> Breadcrumbs view changes to ""Project""
+
+* Now go back to the start screen (Back button in Browser | Breadcrumbs back button | iteraplan logo)
+
+
+
+Should: Breadcrumbs changes to ""Home"" 
+
+Is: Breadcrumbs view do not change"		Bug	iteraplan PO	14/Jul/15 10:56 AM	16/Jul/15 3:27 PM														"15/Jul/15 10:31 AM;ach;* problem caused by 
+
+{code}
+
+$scope.getBreadcrumbItemText = function(){
+
+return  $scope.breadcrumbItemText ? $scope.breadcrumbItemText : $scope.breadcrumb;
+
+};
+
+{code}
+
+                            in *commonHeader directive*, after visiting Category *breadcrumbItemText* stays setted.
+
+* there are *two* ways: 
+
+    ** to set breadcrumbItemText to undefined explicitly on each route change.
+
+    ** to use $scope.breadcrumb only (no short breadcrumbs text any more)
+
+* decided to second solution because of the upcoming localisation (hard coded text will be replaced anyway)   "																																																						

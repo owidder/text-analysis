@@ -1,0 +1,5 @@
+[CRUD] JobGroup: CsiConfiguration wird nicht entfernt	"Wenn aus einer JobGruppe mit groupType CSI_AGGREGATION eine mit RAW_DATA_SELECTION gemacht wird bleibt die CSI-Configuration angehängt. Diese sollte dann entfernt werden.
+
+
+
+Erst recht, da wir JobGroupType bereits deprecated haben und demnächst nur noch das Vorhandensein einer CSI-Configuration darüber entscheidet, ob eine CSI-Berechnung/-Aggregation vorgenommen wird oder nicht."		New Feature	OpenSpeedMonitor	19/Feb/16 11:12 AM	22/Feb/16 10:19 AM																																																																				

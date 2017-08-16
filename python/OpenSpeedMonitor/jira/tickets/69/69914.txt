@@ -1,0 +1,11 @@
+Graphics Reactor: file list doesn't update	"Reported by a customer and recreated in our test SSO installation:
+
+# Open Graphics Reactor in IE (tested with version 11, may happen in other versions or browsers, too)
+
+# Upload a file to or delete a file from Graphics Reactor
+
+
+
+_Expected:_ File list updates accordingly
+
+_Actual:_ File is created/deleted on server, but reactor file list doesn't update"		Bug	iteraplan PO	18/Jan/16 10:31 AM	28/Jan/16 1:31 PM					reactor									28/Jan/16 1:31 PM;lwi;a nice one liner :) 																																																						

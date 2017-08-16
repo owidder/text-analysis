@@ -1,0 +1,23 @@
+IFD Filter for date didn´t work	"*Reproduce*
+
+Add a ""Development(Start) in filterdialog. Then change the date attribute to ""Development(End)"" without leaving the dialog (do so by fully clearing the attribute field. This Bug will
+
+not occur if only say the last letters of ""Development(Start)"" are deleted to have the dropdown menu show ""Development(End)"") add values in Development(End). 
+
+
+
+*Expect*
+
+a new Development(End) filter will set
+
+
+
+*Actual*
+
+nothing happen. the page doesn´t reload after entering values.
+
+
+
+
+
+maybe dialog didn´t reload after attribute change. after reset min&max date the new filter will accept"		Bug	iteraplan PO	23/Oct/15 10:23 AM	28/Oct/15 2:49 PM														28/Oct/15 1:45 PM;msr;Please refactor with "switch-case". Thanks.																																																						

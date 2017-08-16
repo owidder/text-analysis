@@ -1,0 +1,7 @@
+Fix equals/hashCode contract in PojoROrdinalEnumeration	"(Local) Findbugs Plugin shows:
+""PojoROrdinalEnumeration overrides equals in PojoRNominalEnumeration and may not be symmetric.""
+http://findbugs.sourceforge.net/bugDescriptions.html#EQ_OVERRIDING_EQUALS_NOT_SYMMETRIC
+
+This may lead to undefined behavior in collections.
+
+Fix the contract."		Bug	iteraplan PO	16/Jun/14 10:02 AM	17/Jun/14 1:47 PM																																																																				

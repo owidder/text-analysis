@@ -1,0 +1,15 @@
+Can't apply default color in CCD diagram	"Steps to reproduce:
+
+1. Open Cluster Diagram and press ""Reset View""
+
+2. Add row for any building block, e.g. ""Technical Component""
+
+3. Apply coloring for this row by some attribute e.g. ""Manufactured""
+
+4.Click somwhere else
+
+5. Apply default coloring for this row.
+
+
+
+"		Bug	iteraplan Speedbird	01/Feb/17 4:21 PM	03/Feb/17 2:44 PM														02/Feb/17 3:31 PM;aan;Check tomorrow, today its working.	03/Feb/17 11:14 AM;aan;Is working now (with current new client)	03/Feb/17 2:43 PM;dmkh;Was a part of IPTS-399, now working																																																				

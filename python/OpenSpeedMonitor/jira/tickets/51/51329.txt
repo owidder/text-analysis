@@ -1,0 +1,5 @@
+Menü Mouseover	Die Untermenüs des Hauptmenüs sollten bei Mouseover bereits ausklappen, aktuell geschieht dies nicht.		Bug	OpenSpeedMonitor	20/Jul/15 10:01 AM	27/Jul/15 10:12 AM														22/Jul/15 10:14 AM;nku;Funktioniert in der Jobliste nicht. Bitte überall prüfen, bzw. so implementieren, dass es in allen Views funktioniert.	"27/Jul/15 9:48 AM;bwo;Der Fehler hängt mit dem JavaScript-Fehler
+
+uncaught TypeError: $(...).datepicker is not a function
+
+zusammen und wird wahrscheinlich mit dem beheben des Datepickers verschwinden"	27/Jul/15 10:12 AM;bwo;Der TypeError aus dem vorherigen Kommentar verursachte den Fehler, bzw. blockierte das gesamte JavaScript. Der Fehler tauchte auf, da früher die Datepicker.js in allen Views eingebunden waren, das ist nun wieder über die application.js der Fall.																																																				

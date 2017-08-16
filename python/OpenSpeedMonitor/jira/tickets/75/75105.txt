@@ -1,0 +1,7 @@
+Konzeption	"Sichtung des multi-tenant-single-db-Plugins und ...
+
+
+
+* Bewertung der Einsetzbarkeit für den OSM
+
+* Bei Eignung: Ableitung/Konzeption der Schritte, die für eine Umsetzung erforderlich wären. Erstellung der Tasks hier im Jira."		Task	OpenSpeedMonitor	29/Feb/16 10:23 AM																																																																					

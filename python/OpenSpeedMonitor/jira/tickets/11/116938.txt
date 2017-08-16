@@ -1,0 +1,76 @@
+Unique Constraint Error bei Infrastrukturelementen nach Reactions	"Hallo,
+
+wenn ich eine Infrastrukturelement ändere, bekkomme ich eine unique Constraint Exception.
+
+Dass passiert nicht, wenn die Reactions abgeschaltet sind.
+
+Und bei dem ersten Testelement trat er bei der 2. identischen Änderung nicht mehr auf, beim 2. Element auch bei der 2. Änderung.
+
+Logfiles und Scripte im Anhang.
+
+
+
+"		Fault	iteraplan Support	29/Mar/17 10:56 AM	17/Apr/17 7:00 AM														"29/Mar/17 10:56 AM;armin.joachimsmeyer@axa.de;
+
+[^AxaPlausis.js] _(24 kB)_
+
+[^app_iteraplan_KOMO_ARMINS_RECHNER_1.2017-03-29.log] _(100 kB)_"	"29/Mar/17 11:57 AM;cst;Hallo Herr Joachimsmeyer,
+
+würden Sie bitte folgenden Befehl in Ihrer Datenbank ausführen, das sollte das Problem beheben.
+
+*Alter table HISTORY_BM MODIFY IDENTIFIER_BB varchar2(1050char);* 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"29/Mar/17 12:46 PM;armin.joachimsmeyer@axa.de;Leider tuts das nicht :-(
+Oder muss ich danach rebooten?
+Beste Grüße
+Armin Joachimsmeyer"	29/Mar/17 12:52 PM;armin.joachimsmeyer@axa.de;Die Column Size war vorher schon auf 1050	"29/Mar/17 2:10 PM;armin.joachimsmeyer@axa.de;Hier der Log der vielen Versuche ein Infrastrukturelement anzulegen.
+Das letzte mal sogar mit abgeschalteten Reactions.
+Bitte dringend um Hilfe, da wir zur Zeit keinen Infrastrukturelemente mehr anlegen können.
+
+[^app_iteraplan_PROD_ldvappaa_01.2017-03-28.rar] _(75 kB)_"	"29/Mar/17 3:19 PM;armin.joachimsmeyer@axa.de;Hiere der Constraint:
+ALTER TABLE ITERAPLAN_ADM.HISTORY_IE  DROP CONSTRAINT SYS_C00169031;ALTER TABLE ITERAPLAN_ADM.HISTORY_IE ADD (CONSTRAINT SYS_C00169031 PRIMARY KEY ( ID ));"	29/Mar/17 3:44 PM;armin.joachimsmeyer@axa.de;Wenn die History ausgeschaltet wirdt gibts auch kein Problem :-(	"29/Mar/17 3:58 PM;armin.joachimsmeyer@axa.de;Das:
+alter table HISTORY_IE MODIFY IDENTIFIER_BB varchar2(1050char); 
+war es nicht, ich hab immer noch den Constraint Fehler."	"29/Mar/17 4:21 PM;cst;Okay, wir haben jetzt mehrere Verdächtige.
+
+Wenn Sie an einem anderen Bebauungselement was ändern, kommt hier eine ähnliche Fehlermeldung? 
+ Unsere Vermutung, ist durch die Logs nicht ganz klar ist, das er versucht einen Historyeintrag mit einer ID zu erstellen die schon vergeben ist. 
+
+Hier könnte man festweise den letzten Eintrag in der ""HISTORY_IE"" herausnehmen, um zu prüfen ob er die letzte ID nicht erneut schreiben möchte.
+ Wie auch in der Tabelle ""HISTORY_IE_ADDED_VAL"" und ""HISTORY_IE_REMOVED_VAL"".
+
+Zusätzlich könnte man noch über die Software den Datenbank-Cache leeren
+
+ 
+
+ "	"29/Mar/17 4:52 PM;armin.joachimsmeyer@axa.de;Andere Elemente können wir seit dem Patch gestern anlegen.
+Es ist ein Problem mit den Sequences.
+Die höchste ID ist vom Oktober letzten Jahres, aber jetzt wird mit kleineren Nummern gearbeitet.
+Da ist bei der Historykonvertierung vielleicht was falsch gelaufen.
+
+!error1.JPG|thumbnail!
+
+!error2.JPG|thumbnail!"	"29/Mar/17 6:59 PM;cst;Also so wie ich das sehe, kann es durch aus sein das der Wert in der Tabelle ""Hinbernate_Sequences"" nicht korrekt ist. 
+
+Habe das Szenario nachgebaut und konnte das Verhalten 1zu1 nachvollziehen, so konnte ich das Problem lösen:
+ * Die höchste ID aller neuen HISTORY_Tables herausgeschrieben (es geht um das Feld ID) 
+ * Diese ID +1 genommen, somit ist dieser höher als alle anderen ID´s in der History 
+ * Den neuen Wert, tragen Sie bitte die Spalte ""NEXT_VAL"" in der Reihe ""History"" ein (In der Tabelle Hibernate_Sequences)
+
+
+Damit sollten wir den Fehler beseitigt habe. Ich werde nächste Woche Montag genauer analysieren. 
+
+Erklärung hierfür, die Software addiert auf den Wert nach jedem schreiben +1 und somit ist gewährleistet das keine ID´s doppelt geschrieben werden. In unserem Fall (wahrscheinlich durch History Migration) stimmt dieser Wert nicht mehr und kollidiert mit schon angelten ID´s in der History. 
+
+Hoffe das hilft Ihnen weiter, da wir Donnerstags und Freitags auf einen ganztägigen Workshop sind und somit bin ich nicht den ganzen Tag im Support tätig. Ich bitte hier um Ihr Verständnis. 
+
+Schönen Abend noch,
+
+Christoph Stangl 
+
+ 
+
+ 
+
+ "																																												

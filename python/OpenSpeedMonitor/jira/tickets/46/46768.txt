@@ -1,0 +1,7 @@
+Iteraplan Import crash when XLSX has multiple errors (name-field not filled)	"When I try to import the attached XLSX file I get an  general error instead of a proper error message.
+
+{quote}A general technical error occurred. To continue, please click Close or Cancel, or clear the current session.{quote}
+
+The mistake in the file is that the mandatory ""name"" field is not filled for multiple records, but some of the optional attributes are filled.
+
+This error occurs also in version 3.3.1 (but wasn't able to select)"		Bug	iteraplan PO	28/Jul/14 2:43 PM	04/Aug/14 2:55 PM																																																																				

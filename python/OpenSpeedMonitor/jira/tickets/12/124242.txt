@@ -1,0 +1,37 @@
+Keine Grafik mehr erstellbar	Wiederum können keine bestehende noch neue Grafiken erstellt werden!		Fault	iteraplan Support	13/Jun/17 3:35 PM	27/Jun/17 10:16 AM														"13/Jun/17 3:35 PM;alfred.studer@emmi.com;
+
+[^ProblemReport_2017-06-13_153023.zip] _(9 kB)_
+
+[^iteraplan-5.4.0.log] _(219 kB)_"	"14/Jun/17 12:20 PM;msr;Sehr geehrter Herr Studer,
+
+
+
+danke für Ihre Anfrage.
+
+Wir haben das aktuelle Ticket mit einem vergangenen Ticket ( https://iteraweb.iteratec.de/jira/browse/IPS-431 ) verglichen. Die Ursache ist wiederum die gleiche:
+
+
+
+{code:java}
+
+Caused by: java.io.IOException: The system cannot find the path specified
+
+{code}
+
+
+
+Diese Fehlermeldung zeigt an, dass ihre Java Virtual Machine des Tomcats nicht das TEMP-Verzeichnis finden kann oder nicht darin schreiben kann. Das kann verschiedene Ursachen haben, wie z.B. Rechtevergabe auf dem Server, Umgebungsvariablen auf dem Server, Speicher, etc. Dies kann aber nur ein lokaler Server-Administrator erkennen.
+
+
+
+Deshalb können wir aus dem iteraplan-Support-Team dieses Server-Problem nicht lösen, da wir nur die Hoheit über unsere eigene Software und nicht über die lokalen Server bei den Kunden vor Ort haben. Bitte geben Sie Ihrem lokalen Server-Administrator unser Analyse-Ergebnis mit, damit er es lösen kann.
+
+
+
+Mit freundlichen Grüßen
+
+
+
+Marcel Schrumpf
+
+iteraplan Support"	26/Jun/17 2:09 PM;alfred.studer@emmi.com;Ticket kann geschlossen werden																																																				

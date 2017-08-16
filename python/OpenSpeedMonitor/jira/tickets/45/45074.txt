@@ -1,0 +1,1 @@
+Information flow diagram shows '#'-Sign in legend, without release	An information system without release number. But in the legend from the information flow diagram is a '#'-Sign. This Bug is not in Visio.		Bug	iteraplan PO	05/Aug/11 2:16 PM	08/Aug/11 10:47 AM														08/Aug/11 10:47 AM;kvo;fachlich ok																																																						

@@ -1,0 +1,2 @@
+Include Element Icons/Visuals in UI	Include in all BuildingBlockType Specific pages small icons to visualise the context		New Feature	iteraplan PO	14/Dec/11 2:28 PM	15/Dec/11 11:11 AM														"15/Dec/11 11:11 AM;lci;Looks good.
+Icons for infrastructure elements and technical components may need some rework, as they are either too small or too detailed compared to their size."																																																						

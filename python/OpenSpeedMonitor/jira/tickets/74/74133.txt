@@ -1,0 +1,5 @@
+Button-Beschriftung bei fehlender Berechtigung	"Getestet im Chrome und als Admin angemeldet.
+
+
+
+Öffnet man mit fehlenden Berechtigungen bspw. den ApiKeyController, dann erhält man die Ansicht im angehängten Screenshot. Dort ist die Beschriftung des grünen Buttons lediglich ""error.button.login""."		Bug	OpenSpeedMonitor	19/Feb/16 11:32 AM	26/Feb/16 5:48 PM																																																																				

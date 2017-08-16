@@ -1,0 +1,9 @@
+MM related cleanups	"Several things to do:
+
+ * Promote the Boolean attribute type (currently used as ""Available to interfaces"") to an official custom attribute type.
+
+ * IT Services are not translated in /icmm. Probably it is not correct in the Elastic. Correct this.
+
+ * Remove all fixed/mandatory fields from all elements (besides name and description), convert them to custom attributes. This applies to Status @ Information System, for example.
+
+ * Clean up the special attribute ""Productive from / to"", convert it to two custom date attributes and one date interval."		New Feature	iteraplan Thunderduck	09/Jun/16 4:42 PM						cleanup	metamodel																																																														

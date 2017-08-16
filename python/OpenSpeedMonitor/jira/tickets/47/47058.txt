@@ -1,0 +1,1 @@
+Webtest for Context Menu improvement	Create a webtest for the context menu improvements of the ticket ITERAPLAN-2742, i.e. for the count of open or watched elements.		Task	iteraplan PO	15/Oct/14 2:38 PM	10/Nov/14 7:54 AM					context	gui								07/Nov/14 11:35 AM;fam;implemented 																																																						

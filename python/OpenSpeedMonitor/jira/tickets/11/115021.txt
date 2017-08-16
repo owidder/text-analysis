@@ -1,0 +1,1 @@
+Logik bauen für PageComparisonSelectionCard	Auf besagter Karte sollen nur Pages angezeigt werden, die zur gewählten JobGroup passen.		Task	OpenSpeedMonitor	15/Mar/17 11:57 AM	15/Mar/17 4:47 PM																																																																				

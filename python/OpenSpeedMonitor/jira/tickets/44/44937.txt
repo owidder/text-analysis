@@ -1,0 +1,14 @@
+NullPointerException while rendering business mapping view	"Under some circumstance, business mapping member fields seem to be null. Hence, viewing an element which is part of that business mapping leads to a NullPointerException.
+
+{code}
+Caused by: java.lang.NullPointerException
+        at com.google.common.base.Joiner.toString(Joiner.java:317)
+        at com.google.common.base.Joiner.appendTo(Joiner.java:90)
+        at com.google.common.base.Joiner.appendTo(Joiner.java:124)
+        at com.google.common.base.Joiner.join(Joiner.java:156)
+        at com.google.common.base.Joiner.join(Joiner.java:173)
+        at de.iteratec.iteraplan.model.BusinessMapping.getNameForHtmlId(BusinessMapping.java:287)
+        at de.iteratec.iteraplan.presentation.dialog.common.model.businessmapping.SingleBusinessMappingComponentModelPart.<init>(SingleBusinessMappingComponentModelPart.java:92)
+        at de.iteratec.iteraplan.presentation.dialog.common.model.businessmapping.ClusterComponentModelPart.initializeFrom(ClusterComponentModelPart.java:76)
+        at de.iteratec.iteraplan.presentation.dialog.common.model.businessmapping.BusinessMappingsComponentModel.initializeFrom(BusinessMappingsComponentModel.java:185)
+{code}"		Bug	iteraplan PO	17/May/11 2:06 PM	20/May/11 9:20 AM														17/May/11 2:16 PM;sry;The underlying reason seems to be that two business mappings have a NULL value for business units. This should in fact not happen. If possible, investigate how these NULL values crept in.	20/May/11 9:20 AM;agu;It is hard to find such bugs, so we wait for the reproducable one. Fix is ok.																																																					

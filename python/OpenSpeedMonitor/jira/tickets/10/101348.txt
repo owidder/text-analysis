@@ -1,0 +1,5 @@
+Edit Service for Date values	"- JSmodel adjustment 
+
+- REST calls 
+
+- rollback on fail"	101345	Sub-task	iteraplan Thunderduck	03/Nov/16 11:36 AM	14/Nov/16 11:54 AM																																																																				

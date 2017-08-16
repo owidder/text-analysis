@@ -1,0 +1,11 @@
+Logik Beschriftung X-Ache RICKSHAW ändern 	"Die Skalierung der X-Achsen-Beschriftung erfolgt momentan komplett frei je nach Zoom-Ausschnitt.
+
+Das soll so bleiben, mit der Änderung, dass diesem Mechanismus die folgenden Parameter mitgegeben werden können:
+
+
+
+* Kleinste Skalierung: Wird dies auf 1 Woche gestellt sind auf der X-Achse keine kleineren Beschriftungs-Intervalle als 7 Tage möglich.
+
+* Startwert bei kleinste Skalierung ""wöchentlich"": Kann auf einen Index des Tages der Woche gesetzt werden. Wird z.B. Freitag eingestellt, so landen die Beschriftungen der X-Achse immer auf den Freitagen."		Task	OpenSpeedMonitor	12/May/15 11:47 AM	20/May/15 3:53 PM														13/May/15 10:39 AM;rkr;Rückfrage: "Wird dies auf [..] gestellt" und "Kann auf [..] gesetzt werden" impliziert, daß eine Eingabe erfolgt. Wo und wie soll die geschehen?	20/May/15 11:57 AM;rkr;Es gibt einen neuen URL-Parameter "dayForLabel", welcher für Intervall:weekly ("selectedInterval" == 10080) einen Tagesnamen [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday " ] annimmt und die Achsenbeschriftung auf diesen einschränkt. Sollte der Parameter fehlen oder der Name nicht erkannt werden, wird als Default-Wert "Friday" verwendet.	20/May/15 1:01 PM;rkr;Status: Ist eingebaut für CSI > Statische Ansicht, CSI > Dashboard und Mess-Ergebnisse > Dashboard.	"20/May/15 1:57 PM;nku;Deine Frage haben wir geklärt ,oder?
+
+Soll für alle drei Dashboards eingebaut werden,"																																																			

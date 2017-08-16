@@ -1,0 +1,30 @@
+Bug bei Customized Installer 5.4	"Hallo,
+
+
+
+ich möchte Sie nur unterrichten, dass wenn die 5.4-Installation durchgeführt wird ein Bug bei der DB-Einrichtung in der iteraplan-db.properties auftritt.
+
+
+
+Der Datenbankconnection-String lautet nun: database.url=jdbc:oracle:thin:@Servername:Port/DB-Name
+
+
+
+davor war es so:
+
+
+
+Der Datenbankconnection-String lautet nun: database.url=jdbc:oracle:thin:@Servername:Port:DB-Name
+
+
+
+D.h. der "":"" wurde durch den ""/"" ersetzt, dadurch hat bei uns der Aufruf der Webseite nicht mehr funktioniert."		Fault	iteraplan Support	08/Nov/16 8:25 AM	08/Nov/16 9:10 AM														"08/Nov/16 9:01 AM;cst;Sehr geehrter Herr Deichmüller,
+
+das Zeichen richtet sich danach, ob Oracle mit ""SID"" oder ""Service Name"" installiert wird. 
+Bei der Auswahl der SID wird ein "":"" verwendet, bei Verwendung des ""Service Name der ""/"". 
+
+Dies kann bei der Installation ab Version 5.4 ausgewählt werden.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	08/Nov/16 9:09 AM;christian.deichmueller@huk-coburg.de;ok, Incident kann geschlossen werden.																																																					

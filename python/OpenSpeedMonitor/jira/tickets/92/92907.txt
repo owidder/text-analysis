@@ -1,0 +1,5 @@
+Create the Upgrade Guide	"Create the upgrade guide (former migration guide)
+
+
+
+See https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-1.2.2Anleitungerstellen"	92213	Sub-task	iteraplan Quickfox	10/Aug/16 9:18 AM	10/Aug/16 2:39 PM														10/Aug/16 2:12 PM;fka;see /scripts/v5.2To5.3																																																						

@@ -1,0 +1,1 @@
+Line type by in LSD, IFD		110804	Sub-task	iteraplan PO	08/Feb/17 12:08 PM	09/Feb/17 1:36 PM														08/Feb/17 12:27 PM;dmkh;For developer: use already included {{alertService}} in diagram configs and localized message {{NON_EXISTING_ATTRIBUTE_OR_LITERAL_MESSAGE}}.																																																						

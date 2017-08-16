@@ -1,0 +1,7 @@
+Excecute manual filter test	filter-test-specification.xlsx		Task	iteraplan Quickfox	29/Jul/16 8:30 AM	11/Aug/16 2:40 PM														"29/Jul/16 3:40 PM;cst;Test was not succesful.  
+
+Ticket 4803
+
+Ticket 4804
+
+Ticket 4805"	29/Jul/16 3:52 PM;cst;Test-Protocol attached on the Ticket 	11/Aug/16 1:28 PM;cst;Tested again - Protocol attached on the Ticket 																																																				

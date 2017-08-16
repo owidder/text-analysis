@@ -1,0 +1,7 @@
+CSV Upload für CSI Configuration funktioniert nicht mehr	"Auf dem JAM2016 haben wir festgestellt das mindestens der PageWeight CSV Upload für die CSI Konfigurationen nicht mehr funktioniert. Es sollte überprüft werden ob auch andere CSV-Uploads betroffen sind.
+
+
+
+Dieser muss repariert werden.
+
+http://openspeedmonitor.wpt.iteratec.de/csiConfiguration/configurations#csiPageWeightDetailsTabContent"		Bug	OpenSpeedMonitor	19/Dec/16 11:36 AM	30/Dec/16 12:02 PM														21/Dec/16 2:22 PM;nku;Siehe auch IT-821	30/Dec/16 12:02 PM;msk;Ich habe Page, Time und Connectivity Weights heruntergeladen, modifiziert und erneut hochgeladen. Das hat in verschiedensten Kombinationen problemlos funktioniert.																																																					

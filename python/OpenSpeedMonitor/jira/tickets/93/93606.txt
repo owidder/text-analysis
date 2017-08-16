@@ -1,0 +1,3 @@
+Test the Plugin API in a corporate installer	"* Download a newly built corporate installer
+
+* Test the Plugin API with an example script"	92213	Sub-task	iteraplan Quickfox	19/Aug/16 8:42 AM	19/Aug/16 3:39 PM														19/Aug/16 1:39 PM;cst;Build tested with Plugin API - No Problems occurred																																																						

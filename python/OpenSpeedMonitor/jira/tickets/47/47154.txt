@@ -1,0 +1,20 @@
+Defect when using attributes for Cluster Diagram	"FMA has reported the following defect:
+{noformat}
+Ich versuche gerade für S-103 ein Cluster Diagramm zu erstellen. 
+1.	Konfiguration klappt und das Resultat entsprecht meinen Erwartungen. 
+2.	Dann speichere ich die Abfrage ab.
+3.	Dann will ich die gespeicherte Abfrage aufrufen und bekomme eine Fehler (Fehlerbericht im Anhang)
+4.	Wenn ich die Konfiguration lade, bekomme ich den Hinweis „The following errors occurred:
+The number of elements in a graphical export is restricted to a maximum of 500 elements. Please narrow search parameters to get fewer results.”, was aber nicht korrekt ist (siehe Ergebnis unter 1.)
+
+{noformat}
+He tried to create a Cluster Diagram with following settings:
+Criterion which used to display the diagram: Attributes
+He chose an enumeration Attribute with a lot of enumeration values and selected only a few of this. 
+
+After confirming the selection, he could create the diagram. After saving and reloading he get an error. 
+
+You can reproduce the error with the Bank Data if you set the propertie “export.graphical.maxElementNumber” in the iteraplan.properties to a lower value (e.g. 30)
+"		Bug	iteraplan PO	11/Nov/14 9:40 AM	17/Nov/14 5:00 PM														"17/Nov/14 4:59 PM;fam;Bug fixed. Behaviour now fits the requirement.
+Now, only the export.graphical.maxElementNumber property can cause this error (if too many elements). 
+Closed"																																																						

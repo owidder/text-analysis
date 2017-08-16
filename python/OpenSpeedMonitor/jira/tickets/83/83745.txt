@@ -1,0 +1,19 @@
+Sort by enum column	"* Use rank of literal
+
+* Implement also sorting of multi-value enums"		New Feature	iteraplan PO	10/May/16 11:11 AM	10/Jun/16 1:14 PM														"25/May/16 11:38 AM;mwe;Add custom comparator: See the comparator implementation in [ITERAPLAN-4576] and [https://www.ag-grid.com/javascript-grid-sorting/index.php]
+
+Add the enum comparator to feature columns with type enum."	"02/Jun/16 2:04 PM;mse;How to sort enums?
+
+
+
+* by rank? -> difficult
+
+* by text? -> works out of the box"	06/Jun/16 1:55 PM;tam;Decision to the last comment => by rank	06/Jun/16 5:35 PM;tam;Did some refactoring	"07/Jun/16 10:55 AM;mse;Andreas' review comment (moved here from ITERAPLAN-4581):
+
+
+
+""I'm missing unit tests for getRankForEnumValue() - especially corner cases like null values or literals with length > 1."""	07/Jun/16 11:49 AM;mse;Unit tests for  getRankForEnumValue() created.	"09/Jun/16 1:50 PM;mse;There were a lot of switches back and forth during developement. So please, don't got through all single commits during review, but only check the final version of the code.
+
+
+
+Don't hestiate to ask me in case of questions!"	10/Jun/16 1:14 PM;abo;Review OK																																															

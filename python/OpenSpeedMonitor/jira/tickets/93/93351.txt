@@ -1,0 +1,23 @@
+Improve legend text for sizing	"*Summary:*
+
+Legend text for sizing should be either next to bubbles (as-is) or within bubbles (for small zoom-factor)
+
+
+
+*Implementation Details:*
+
+* For big zoom-factors (please check fitting zoom-level): put legend-size-text within a bubble. If easily possible, let the text overlap over the borders of the circle otherwise the text is cut off
+
+* For small zoom-factors: put legend-size-text next to the bubbles (as-is at the moment)
+
+* Url: nothing to 
+
+
+
+*UI:*
+
+* Toolarea: nothing to do"		Improvement	iteraplan Speedbird	16/Aug/16 4:51 PM	14/Jun/17 1:15 PM														26/Aug/16 8:08 PM;viol;#4188	"29/Aug/16 4:24 PM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-19, but implementation is not applicable for all cases and looks not elegant. After analyzing GoJS code I noticed that for implementing this feature we need too many calculations for positioning text in the bubble, even then it may not work fine. 
+
+
+
+So it was decided to leave current (common for all cases) implementation - text next to the bubble in the legend, before new ideas will appear."																																																					

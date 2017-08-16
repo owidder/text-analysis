@@ -1,0 +1,5 @@
+Migrate Classic Client Saved Queries to New Client Saved Queries within Demo (Bank) Data set	"Migrate Classic Client Saved Queries to New Client Saved Queries within Demo (Bank) Data set, so all new installers with demo data have this new client saved queries.
+
+
+
+And test them afterwards."		Task	iteraplan Thunderduck	19/Jun/17 9:44 AM	26/Jun/17 9:35 AM														22/Jun/17 5:27 PM;msr;Tasks is on hold because the XMI-Import will be removed during the next sprints. After the removal of the XMI-Import a new import for this ticket is needed.	26/Jun/17 9:35 AM;aan;Is solved by IPTT-521																																																					

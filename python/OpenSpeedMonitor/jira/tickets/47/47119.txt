@@ -1,0 +1,13 @@
+Coloring of inner elements	"Add the functionality to color all inner elements by all (predefined or user defined) numeric or enumeration properties (attribute-based coloring).
+
+The inner elements (building blocks) have different properties. Create a menu for choosing the coloring of inner elements within the Nesting Cluster Diagram.
+The coloring type (continuos or default) is dependant on the property type (see below). Color the inner elements accordingly. The available attributes can be found in the metamodel. A legend shows the coloring.
+
+* Case 1: Numeric properties: Use a continues color scheme (light to dark or green to red) for the coloring of the inner elements
+* Case 2: Enumeration properties: Use the default colors from the metamodel.
+* No other property types can be chosen for coloring.
+
+ACCEPTANCE CRITERIA:
+
+In the Nesting Cluster Diagram the user can select within the menu for inner elements, by which property all inner elements should be colored. The users selects a property and the diagram (incl. legend) is updated accordingly. Example: The user opens the menu for an Information System (inner element). He selects ""coloring by status"" and the diagram as well as the legend is updated accordingly, i.e. the default colors from the metamodel for status are shown, e.g. current IS are green (to be checked?) and so on.
+"		New Feature	iteraplan PO	04/Nov/14 8:16 AM	09/Dec/14 1:23 PM																																																																				

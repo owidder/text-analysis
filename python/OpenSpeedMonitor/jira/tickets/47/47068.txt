@@ -1,0 +1,6 @@
+Test direct CSV export	"Create test sheet in sub folder of {{doc/test}}.
+
+* Add test cases to test the direct CSV export functionality of building block list views (spreadsheet reports and overview pages)
+
+* Install iteraplan using one of the not yet or lesser tested configurations in the installer test sheet
+* Perform the testcases from the test sheet and attach the results to this ticket"	47060	Sub-task	iteraplan PO	17/Oct/14 2:13 PM	24/Oct/14 2:29 PM														24/Oct/14 10:23 AM;isc;Tests were OK!																																																						

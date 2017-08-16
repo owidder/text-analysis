@@ -1,0 +1,11 @@
+Metamodel in Reactions	"Provide Metamodel access functionality in Reactions
+
+
+
+in scope of this ticket:
+
+- getAllProperties(buildingBlockType) - returns persistent names of properties of the given type
+
+- getAllRelations(buildingBlockType) - returns persistent names of relationshipEndPoints of the given type
+
+"		New Feature	iteraplan Thunderduck	19/Jul/16 4:40 PM	22/Jul/16 2:02 PM														22/Jul/16 2:02 PM;mse;Review ok.																																																						

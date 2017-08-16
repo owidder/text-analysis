@@ -1,0 +1,23 @@
+UI for admin functions	"* config
+
+* attribute groups
+
+* attributes
+
+* date interval
+
+* doc template
+
+
+
+all: REST API and UI
+
+
+
+not now: Elastic WMM
+
+"		Epic	iteraplan Speedbird	21/Jan/16 1:58 PM															"01/Feb/16 9:47 AM;sfe;Dependencies: none
+
+* self contained with REST and UI
+
+* no elastic touched"	12/Jul/16 4:56 PM;msr;22 PD																																																					

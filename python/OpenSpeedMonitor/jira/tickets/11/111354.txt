@@ -1,0 +1,3 @@
+Beschreibung für den Schritt "Create Script" erstellen	"Um dem (Erst-)Nutzer das Erstellen eines Skriptes zu vereinfachen sollte eine Beschreibung der Syntax und ein Beispiel angezeigt werden.
+
+(Ein Bild existiert schon)"	111352	Sub-task	OpenSpeedMonitor	08/Feb/17 3:05 PM	27/Mar/17 12:13 PM																																																																				

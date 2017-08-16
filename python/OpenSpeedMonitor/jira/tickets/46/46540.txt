@@ -1,0 +1,38 @@
+Technical Exceptions Importing Corrupted Excel Files	"Various cases when the user deletes sheets from an exported (and otherwise edited) workbook and import it.
+
+1) Delete a type sheet. Relationship changes are ignored if the rel.ship connects the deleted type. No warning.
+
+Ignore changes: works as designed.
+
+No warning: TODO retest if the same case leads to a warning in 3.2
+Then discuss with DM. A specific warning might be tricky.
+
+TODO: explicit user docs for this particular case.
+
+2) sheet for the main type of a partial export is deleted, reimport fails with tech exception.
+
+reimport not possible: acceptable, even if technically possible.
+tech exception: TODO error message.
+
+TODO user docs: ""do not delete main type sheet"".
+
+
+3) META-TODO: go to MRe and ask for more tech exceptions.
+TODO fix them so that 
+
+
+
+
+"		Bug	iteraplan PO	26/Mar/14 6:05 PM	08/Aug/16 1:45 PM														28/May/14 9:49 AM;fka;At least certain cases should be solved by updating the user documentation	17/Feb/16 12:57 PM;fka;Only user documentation left to do.	"08/Aug/16 1:23 PM;mse;1) I cannot completely reproduce this case, because a error message is shwon in this case now (see screenshot). I have added a description and solution for this error to the user documentation (in the middle ""Object not found""):
+
+https://www.iteraplan.de/doc/display/iteraplan53/How+to+use+Import+and+Export
+
+
+
+2) Added a error description and solution to (at the very bottom):
+
+https://www.iteraplan.de/doc/pages/viewpage.action?pageId=7209629
+
+
+
+3) Ignored as ""MRe"" does not exist anymore..."																																																				

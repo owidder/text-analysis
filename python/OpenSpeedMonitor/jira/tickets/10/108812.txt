@@ -1,0 +1,5 @@
+Time Series Chart  'Download as PNG' ist defekt	"Wenn man das Chart downloaded bekommt man ein JPEG und kein PNG.
+
+Im erhaltenen Bild ist der Y-Achsen-Titel abgeschnitten."		Bug	OpenSpeedMonitor	19/Jan/17 10:30 AM	23/Jan/17 12:57 PM														"23/Jan/17 12:57 PM;mmi;Das Problem der abgeschnittenen y-Achsen konnte nicht reproduziert werden.
+
+Das falsche Bild-Format ist gefixt."																																																						

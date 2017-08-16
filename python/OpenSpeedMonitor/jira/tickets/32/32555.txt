@@ -1,0 +1,21 @@
+Select-Boxen zu schmal zur Anzeige von Werten	"Folgende Select-Boxen sind zu schmal zur vollständigen Anzeige von in ihnen enthaltenen Werten:
+
+* _DemoPageController: My Time Zone, My Locale
+
+* GraphiteServerController: Graphite Paths
+
+* JobGroupController: Graphite Servers
+
+* LocationController: Wpt Server, Browser
+
+* MeasuredValueController: Interval, Aggregator
+
+* Mess-Ergebnisse > Dashboard > Jobs filtern > Browser
+
+* Mess-Ergebnisse > Dashboard > Messgröße auswählen > First View
+
+* Mess-Ergebnisse > Dashboard > Messgröße auswählen > Repeated View
+
+* CSI > Dashboard > Filter > Browser"		Bug	OpenSpeedMonitor	18/Feb/15 4:45 PM	23/Feb/15 3:04 PM														19/Feb/15 4:54 PM;rkr;Ich habe die Breite aller Select-Boxen auf Auto gesetzt. Ist das okay?	"20/Feb/15 9:58 AM;rkr;* -application.css aus Kickstarter resource entfernen-
+
+* -testen ob less die min-width für Browser bei Neustart kompiliert-"																																																					

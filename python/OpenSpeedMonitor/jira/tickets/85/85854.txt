@@ -1,0 +1,115 @@
+After Upgrade from iteraplan 5.1 to 5.2 Spring error raises	"We try to upgrade from iteraplan 5.1 to 5.2 but when restarting the system Spring errors raises (see attached logs)
+
+
+
+Perhaps a problem of outdated spring libraries? (Was told me by our System & Network Team)"		Fault	iteraplan Support	30/May/16 4:20 PM	21/Jun/16 8:27 AM														"30/May/16 4:20 PM;thomas.liskow@coface.com;
+
+[^Iteraplan_logs_5.1.0_to_5.2.0.zip] _(10 kB)_"	"31/May/16 12:40 PM;msr;Dear Mr. Liskow.
+
+This is a known upgrade problem of version 5.2. We're already investigating this issue to fix it.
+
+Could you please provide the following additional information to start the analysis for your environment:
+
+Could you please additionally provide the following information for further investigation?
+
+* Database-Type and version, e.g. Oracle v11.XXX
+* Java-Version, e.g. Oracle Java Version 1.8.XXX
+* Tomcat-Version
+* Authentication method, e.g. iTurm or LDAP or Single-Sign-On
+* From the conf-directory of your Tomcat-Installation:
+        ** server.xml
+        ** web.xml
+* From Tomcat/webapps/iteraplan directory/WEB-INF""
+        ** All files starting with “applicationContext”
+  *  From Tomcat/webapps/iteraplan directory/META-INF:
+        ** context.xml (This file can contain passwords -> please remove the passwords)
+
+Thank you in advance."	"01/Jun/16 3:03 PM;thomas.liskow@coface.com;Here are the requested infos:
+
+◦Database-Type and version, e.g. Oracle v11.XXX ---> Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+◦Java-Version, e.g. Oracle Java Version 1.8.XXX ---> java version ""1.6.0_37""
+◦Tomcat-Version ---> Apache Tomcat 6.0.36 Server 
+◦Authentication method, e.g. iTurm or LDAP or Single-Sign-On ---> ITURM
+◦From the conf-directory of your Tomcat-Installation: ◾server.xml ◾web.xml ---> attached to SR
+◦From Tomcat/webapps/iteraplan directory/WEB-INF"" ◾All files starting with “applicationContext” ---> attached to SR
+◦From Tomcat/webapps/iteraplan directory/META-INF: ◾context.xml ---> attached to SR"	"01/Jun/16 3:05 PM;thomas.liskow@coface.com;
+
+[^context - Kopie.xml] _(0,7 kB)_
+
+[^server.xml] _(7 kB)_
+
+[^web.xml] _(53 kB)_
+
+[^WEB-INF.zip] _(18 kB)_"	"02/Jun/16 6:12 AM;msr;Thank you for the quick answer.
+For iteraplan 5.2 Java 6 is no longer supported. Could you please upgrade your java version to 7 (at least update 25) or 8 (at least update 65)?
+This may be related to this error."	"06/Jun/16 2:18 PM;thomas.liskow@coface.com;We updated to Java 8 - but further errors raises up
+
+See attachment
+
+[^Iteraplan_logs_5.1.0_to_5.2.0_java_1.8.zip] _(12 kB)_"	"09/Jun/16 12:55 PM;msr;Dear Mr. Liskow.
+
+It looks like some problems with the database connection.
+Could you please provide the file called ""iteraplan-db.properties"" from ""[tomcat-folder]\webapps\iteraplan\WEB-INF\classes""?
+
+Thanks."	"13/Jun/16 7:36 AM;thomas.liskow@coface.com;* INFO: connection string is different to iteraplan-version before (made by installer)
+NEW (5.2): database.url=jdbc:oracle:thin:@uatscan1.coface.dns:1521:tekdepre
+OLD (5.1): database.url=jdbc:oracle:thin:@uatscan1.coface.dns:1521/tekdepre
+
+[^iteraplan-db.properties] _(2 kB)_"	"13/Jun/16 1:36 PM;msr;Dear Mr. Liskow.
+
+From my point of view you've already identified the problem:
+The database url for Service Names must be starting with a ""/"". Please use the old database url:
+
+""jdbc:oracle:thin:@uatscan1.coface.dns:1521/tekdepre""
+
+Please tell me, if this does not fix your problem. I'll update the documentation accordingly.
+
+Thanks."	"13/Jun/16 4:06 PM;thomas.liskow@coface.com;Reassignment - 13.06.2016 15:56 - BAUMGARTEN Andre:
+ group CDE-721-Systems and Network to CDE-723-Enterprise-Architecture
+* tested already. don't work with ""/"" instead of "":"""	"13/Jun/16 4:51 PM;msr;Could you please re-send the logfiles with database-url containing the ""/"" (database.url=jdbc:oracle:thin:@uatscan1.coface.dns:1521/tekdepre)?
+So we can check the full stacktrace again with the correct url."	"14/Jun/16 1:34 PM;thomas.liskow@coface.com;Attached the log files
+
+[^Iteraplan_logs_5.2.0_with_changed_DB_Paramss.zip] _(62 kB)_"	"14/Jun/16 2:29 PM;msr;I found the following explaination: http://www.dba-oracle.com/t_ora_01033_initialization_shutdown_progress.htm
+
+and http://www.buggybread.com/2013/03/error-ora-01033-oracle-initialization.html"	"15/Jun/16 11:05 AM;msr;Dear Mr. Liskow.
+
+The error in the attached log files changed. In the iteraplan-5.2.0.log you see the causing error is
+
+{{ORA-01033: initialisation ou fermeture d'ORACLE en cours}}
+
+After some research it looks like a problem with the database (see for example here: http://www.buggybread.com/2013/03/error-ora-01033-oracle-initialization.html ). Could you please check the possible reasons for this message?
+
+Thank you."	"15/Jun/16 4:30 PM;thomas.liskow@coface.com;Could you directly contact the colleague who is in charge of the upgrade? I think it is better to do it in such way (phone and teamviewer) to be more effective.
+
+Andre Baumgarten
+Team Network and Systems
+T.: +49 (0) 6131 / 323 - 513
+andre.baumgarten-ext@coface.com
+"	16/Jun/16 1:29 PM;thomas.liskow@coface.com;We need further support. Could you contact my colleague directly?	"16/Jun/16 2:04 PM;msr;I have called Mr. Baumgartner this morning and agreed next steps for today.
+
+I'll inform you as soon as we have solved the problem."	16/Jun/16 2:52 PM;msr;Problem beim Kompilieren von JSP. Das deutet auf Java oder Tomcat hin oder beides zusammen. Es könnte folgender Bug sein: https://bz.apache.org/bugzilla/show_bug.cgi?id=56613	"17/Jun/16 4:50 PM;msr;Actual status:
+I'm waiting for the response of Mr. Baumgarten:
+
+Mail from Thursday, 14:51h:
+""Hallo Herr Baumgarten,
+
+danke für das schnelle Zuschicken der Logs.
+In den neuen Logs taucht der Datenbank-Fehler nicht mehr auf. Das Fehlerbild besagt, dass die JSP-Dateien nicht vom Java-Compiler kompiliert werden können. Das deutet also in Richtung Tomcat oder Java.
+
+Könnten Sie mir bitte folgende Informationen zur Verfügung stellen?
+•	Exakte Java-Version (Oracle-Java oder OpenJDK-Java?)
+•	Exakte Tomcat-Version
+
+Es gibt einen Bug in Tomcat 6 bei der Verwendung von Java 8 (siehe https://bz.apache.org/bugzilla/show_bug.cgi?id=56613 ). Wäre es möglich, dass Sie es mit dem neuesten Tomcat 7 (7.0.69) testen?
+
+Danke schön."""	"20/Jun/16 4:41 PM;thomas.liskow@coface.com;Konnte jetzt gelöst werden. 
+
+Mit dem Upgrade vom Tomcat auf die Version 7.0.69 hat es dann funktioniert.
+
+Mit freundlichen Grüßen,
+Andre Baumgarten
+Team Network and Systems
+T.: +49 (0) 6131 / 323 - 513
+andre.baumgarten-ext@coface.com
+
+"																																			

@@ -1,0 +1,33 @@
+Filter Diagram and List - Datefield is corrupt	"Reproduce with trunk or nightly
+
+ # Open the Landscape Diagram
+
+ # Open the ""Column filter"" and set Productive period - between
+
+ # Now try to enter a date in the first or second field like 05/01/2000
+
+ # The date will be changed to 01/05/2000  
+
+ # When you want to edit the 2000 the date picker opens, when you close it and try to change the 2000 to 2001 he makes a random 0 into the date 
+
+ # Other strange things happens too, that the date was set to 01/01/200 
+
+
+
+Expected: That the date will correctly set
+
+Actual: Strange things are occurring
+
+
+
+{color:red}UPDATE: {color} Please use the format DD.MM.YYYY in the filter dialog for date attributes."		Bug	iteraplan Speedbird	05/May/17 10:37 AM	02/Jun/17 9:35 AM														"01/Jun/17 4:18 PM;roia;Not sure if it's in scope of this task, but now date format in filters and legend is inconsistent. [~msr], I need your opinion on this ""feature""
+
+
+
+ 
+
+
+
+!image-2017-06-01-17-17-44-390.png!"	"02/Jun/17 9:34 AM;msr;Hi [~roia].
+
+Thank you for this detailed analysis. The legend format is wrong, but I would see that in scope of IPTS-859 and out of scope for this task."																																																					

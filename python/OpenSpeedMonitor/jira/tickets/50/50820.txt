@@ -1,0 +1,11 @@
+UI Element for switching the locale	Include an UI Element in every header to switch the locale.		New Feature	iteraplan PO	14/Jul/15 3:01 PM	03/Aug/15 9:41 AM					ui									"20/Jul/15 1:39 PM;ach;possible improvement:
+
+* http://angular-translate.github.io/docs/#/guide/10_storages"	"23/Jul/15 10:37 AM;ach;* language setting is strored as url parameter now (locale=xx) 
+
+* synchronize url parameter with current language in $translate on application start and on every route change 
+
+*NOTICE:* there are two cases: 
+
+** translation json is already resolved: than _$translate.use()=current language_, _translate.proposedLanguage()=undefined_ 
+
+**translation json is not resolved yet: than _$translate.use()=undefined, translate.proposedLanguage()=current language_"	30/Jul/15 5:00 PM;tam;A constant string for 'locale' should be added and used then	31/Jul/15 4:13 PM;tam;A constant for 'locale' was added to constants-class and in the code	03/Aug/15 9:41 AM;ach;reviewed changes from [~tam]. 																																																		

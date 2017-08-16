@@ -1,0 +1,15 @@
+Sort the data sets in Excel	"*minimal requirement:*
+
+Output of Excel data in a deterministic stable order.
+With each export, the data in the Excel files should be exported in the same order.
+
+
+*extended requirement:*
+
+* generally should be sorted by name
+* hierarchical names should not be considered
+* dropdowns in the excel file should be sorted
+* enumeration attributes should not be sorted, because they have a (own) custom order
+* Relations should be sorted according to the names of the elements, taking into account the column order
+** empty cells / without name (for example in business mappings) should come first"		Improvement	iteraplan PO	16/Dec/14 4:21 PM															"17/Dec/14 1:54 PM;sfe;Content of the dropdowns in iteraplan's Excel export files currently is ordered according to the ordering in the column the information comes from. Dropdowns containing Business Domains, for example, are ordered according to the name column of the Business Domain sheet.
+Changing the ordering on the sheet also simultaneously changes the ordering in the dropdown."																																																						

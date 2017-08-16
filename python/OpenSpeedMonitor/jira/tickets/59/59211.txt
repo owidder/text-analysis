@@ -1,0 +1,11 @@
+Show a loading indicator before home screen and for all diagrams 	"Show an indicator for all three current diagrams, that is NCD, LSD, IFD after changing the configuration and during (re-)drawing. NCD and LSD already exists.
+
+
+
+Also show an indicator during model loading from REST before the home screen (like a splash screen ""in front of"" the home screen). The splash screen appears only if promise for REST request is not yet resolved.
+
+
+
+The indicator can be simple, a message that disappears. No animation.
+
+"		New Feature	iteraplan PO	06/Oct/15 10:19 AM	14/Oct/15 2:57 PM																																																																				

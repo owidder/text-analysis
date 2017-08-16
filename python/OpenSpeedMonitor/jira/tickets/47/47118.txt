@@ -1,0 +1,4 @@
+Rel2-2015: D3 Layout	"+++++++++++++++++
+POSTPONED AFTER APRIL 2015
++++++++++++++++++
+Refactor current Nesting Cluster Layout to the D3 Layout."		New Feature	iteraplan PO	04/Nov/14 8:07 AM	11/Mar/15 9:06 AM					refactoring									11/Mar/15 9:06 AM;fka;Now using GoJS																																																						

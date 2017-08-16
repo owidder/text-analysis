@@ -1,0 +1,41 @@
+Logout-Link ohne Funktion	"Der Logout-Link im klassischen Client hat bei E.ON keine Funktion. Die Erwartung wäre gewesen, dass das Verhalten dem Link ""Session aufräumen"" gleicht (da SSO).
+
+
+
+In meinem lokalem Bundle gibt es den Logout-Link überhaupt nicht. Woher rühren die Unterschiede?"		Fault	iteraplan Support	06/Jun/17 2:25 PM	08/Jun/17 4:10 PM														08/Jun/17 2:31 PM;fka;Über welche iteraplan Version sprechen wir? In 5.5 soll es die Logout-Funktion eigentlich nur noch im neuen Client geben.	08/Jun/17 2:34 PM;dne;Der Link ist in der E.ON 5.5 zumindest noch da	"08/Jun/17 2:35 PM;fka;Tja.
+
+
+
+Sollte nicht da sein. Vielleicht ein Problem mit dem Customzing. Machen wir jetzt aber nichts mehr dran..."	08/Jun/17 3:05 PM;dne;Dann sag mir bitte, wo ich den Link entfernen kann.	"08/Jun/17 4:06 PM;fka;War tatsächlich ein Problem mit den Customizings. Ist nun behoben.
+
+
+
+Per Hand in der 5.5 entfernen via:
+
+
+
+\WebContent\jsp\Navigation.jsp
+
+
+
+Remove the following code at the end oft the file:
+
+
+
+ 
+
+
+
+                        <li><a id=_""menu.Logout""_ href=_""#""_ onclick=_""confirmLogout('_<c:url value=_""/j_iteraplan_logout""_ />_');""_><i class=_""icon-off""_></i>
+
+
+
+                                   +<++itera:message+ +key++=+_+""menu.logout""+_ +/>+
+
+
+
+                                   </a></li>
+
+
+
+ "	08/Jun/17 4:09 PM;dne;Merci :)																																																	

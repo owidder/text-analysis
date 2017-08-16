@@ -1,0 +1,7 @@
+Update Excel Import template to solve Partially Missing Customization for E-104 (old excel importer)	"Go to Mass Data --> Import (Excel) Beta
+Click ""Download template"" in the ""Excel Import of Landscape Data""-block.
+Save the template and import it. Look at the textlog if everything imported successfully.
+
+Import of empty template fails partially due to non-customized sheet names for sheets Business Functionalities (should be Business Capabilities) and Business Information Objects (should be Information Objects):
+[WARN ] Unknown Sheet Name Business Functionalities(different Locale?). Skipping.
+[WARN ] Unknown Sheet Name Business Information Objects(different Locale?). Skipping."		Task	iteraplan PO	05/Jul/13 3:17 PM	16/Jul/13 8:24 PM					excel	import	template						3.0.4 with old Excel importer activated for roundtrip compatibility reasons	08/Jul/13 11:39 AM;tdi;E-104 naming customizations also not in template for"excel import of object-related permissions. Please also check this template.	10/Jul/13 4:28 PM;tdi;Please also add column for relationship "uses business applications"																																																					

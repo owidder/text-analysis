@@ -1,0 +1,21 @@
+Sub information Systems cannot be choosen in as self relations	"Go to the single element view of an Information System.
+
+
+
+Go to add relation and choose a different Information System.
+
+
+
+Expected behaviour: Sub information System is given as an option.
+
+
+
+Current behaviour: Only the other six options are given.
+
+
+
+ 
+
+
+
+It looks like this could be a problem of the view, when the browser window is made very small for example only one option is shown and no scrolling is possible."		Bug	iteraplan PO	30/May/17 3:40 PM	11/Jun/17 1:47 PM																																																																				

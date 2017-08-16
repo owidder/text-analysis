@@ -98,8 +98,13 @@
             cursor: hand;
         }
 
-        span.odd {
+        div.odd {
             background-color: lightgrey;
+        }
+
+        div.search-entry {
+            border-bottom: solid 1px;
+            border-top: solid 1px;
         }
 
     </style>
@@ -205,20 +210,22 @@
         <span class="mini link" onclick="moveToRelPath('{{relPath}}')"><i class="material-icons">arrow_forward</i></span>
         <br>
         {{/each}}
+    </div>
 </script>
 
 <script id="search-results-script" type="text/x-handlebars-template">
     <div class="file-list">
         {{#each relPaths}}
-        <span class="{{evenOdd}}">
+        <div class="{{evenOdd}} search-entry">
             <a class="mini" href="{{github}}" target="_blank">{{relPath}}</a>
             <a class="mini" href="cloud.html?path={{relPath}}" target="_blank">[cloud]</a>
             <a class="mini" href="lsiIndex.html?path={{relPath}}" target="_blank">[similar files]</a>
             <a class="mini" href="histo.html?path={{relPath}}" target="_blank">[histogram]</a>
             <span class="mini link" onclick="moveToRelPath('{{relPath}}')"><i class="material-icons">arrow_forward</i></span>
             <br>
-        </span>
+        </div>
         {{/each}}
+    </div>
 </script>
 
 <script>
@@ -233,7 +240,7 @@
     var PARAM_NAME_VIEWFINDER_X_PROZ = "vx";
     var PARAM_NAME_VIEWFINDER_Y_PROZ = "vy";
 
-    var threshold = util.getHashParam(PARAM_NAME_THRESHOLD, "70");
+    var threshold = util.getHashParam(PARAM_NAME_THRESHOLD, "95");
     var viewfinderFactor = util.getHashParam(PARAM_NAME_VIEWFINDER_FACTOR, "30");
     var radiusSize = util.getHashParam(PARAM_NAME_RADIUS_FACTOR, "100");
 
@@ -378,8 +385,8 @@
         .attr("height", height*2)
         .on("click", function () {
             var evt = d3.mouse(this);
-            var legendList = legend.createLegenListAtPos(evt[0], evt[1]);
-             showFiles(legendList, "search-results-script");
+            var legendList = legend.createLegendListAtPos(evt[0], evt[1]);
+            showFiles(legendList, "search-results-script");
         })
         .on("mousemove", function () {
             var evt = d3.mouse(this);
@@ -420,14 +427,31 @@
     var data = {};
     var nodes, links;
 
-    function getLinksFromNodeList(nodeList) {
-        var links = [];
-
+    function fillLinksWithNodeListAllSourceLinks(nodeList, links) {
         nodeList.forEach(function (node) {
             if(!_.isEmpty(node.sourceLinks)) {
                 Array.prototype.push.apply(links, node.sourceLinks);
             }
         });
+    }
+
+    function fillLinksWithNodeListMissingTargetLinks(nodeList, links) {
+        nodeList.forEach(function (node) {
+            if(!_.isEmpty(node.targetLinks)) {
+                node.targetLinks.forEach(function (link) {
+                    if(links.indexOf(link) < 0) {
+                        links.push(link);
+                    }
+                });
+            }
+        });
+    }
+
+    function getLinksFromNodeList(nodeList) {
+        var links = [];
+
+        fillLinksWithNodeListAllSourceLinks(nodeList, links);
+        fillLinksWithNodeListMissingTargetLinks(nodeList, links);
 
         return links;
     }
@@ -496,7 +520,7 @@
             data.withLinks = newData.withLinks;
         }
 
-        var viewfinderWidth = (birdsviewWidth + BIRDSVIEW_HEIGHT_EXTRA) * data.viewfinderFactor;
+        var viewfinderWidth = (birdsviewWidth + BIRDSVIEW_WIDTH_EXTRA) * data.viewfinderFactor;
         var viewfinderHeight = (birdsviewHeight + BIRDSVIEW_HEIGHT_EXTRA) * data.viewfinderFactor;
         var zoomFactorX = (width / viewfinderWidth);
         var zoomFactorY = (height / viewfinderHeight);
@@ -800,6 +824,14 @@
             node.sourceLinks.push(link);
         }
 
+        function addLinkToNodeTargetList(link) {
+            var node = link.target;
+            if(node.targetLinks == null) {
+                node.targetLinks = [];
+            }
+            node.targetLinks.push(link);
+        }
+
         function addLinksToNodes() {
             if(!allLinksAddedToNodes) {
                 allLinksAddedToNodes = true;
@@ -808,6 +840,10 @@
                         if(link.source.sourceLinks == null || link.source.sourceLinks.indexOf(link) < 0) {
                             allLinksAddedToNodes = false;
                             addLinkToNodeSourceList(link)
+                        }
+                        if(link.target.targetLinks == null || link.target.targetLinks.indexOf(link) < 0) {
+                            allLinksAddedToNodes = false;
+                            addLinkToNodeTargetList(link)
                         }
                     }
                     else {
@@ -846,7 +882,7 @@
             simulation.alpha(1).restart();
 
             var ctr = 0;
-            var MAX_CTR = 20;
+            var MAX_CTR = 30;
             var interval = setInterval(function () {
                 ctr++;
                 if(ctr > MAX_CTR) {

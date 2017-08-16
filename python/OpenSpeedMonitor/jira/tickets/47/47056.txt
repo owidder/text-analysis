@@ -1,0 +1,31 @@
+Decrease log level of log messages in certain methods	"A customer (A-103) complained about verbose log messages in INFO level, particularly in the following methods (and maybe in some others):
+
+* de.iteratec.iteraplan.businesslogic.service.SearchServiceImpl.saveBBTypeToDTO(String, String, SearchRowDTO)
+
+* de.iteratec.iteraplan.businesslogic.common.URLBuilder.getEntityURL(IdentityEntity, String, EntityRepresentation)
+
+* de.iteratec.iteraplan.businesslogic.common.URLBuilder.getEntityURL(ObjectExpression, RStructuredTypeExpression, String)
+
+
+The info messages in these methods could (imho) be in debugging level.
+"		Improvement	iteraplan PO	15/Oct/14 1:45 PM	28/Jan/15 9:59 AM					logging									"17/Dec/14 2:10 PM;sfe;Generally, log level should be DEBUG whenever a single simple action, like saving or displaying a building block or generating a diagram, would result in multiple lines of (repetitive) log, for example something like this (in case of generating a diagram):
+{noformat}
+- Rendering building block ""IS 1""
+- Rendering building block ""IS 2""
+- Rendering building block ""IS 3""
+- Rendering building block ""IS 4""
+- Rendering building block ""IS 5""
+- ...
+{noformat}
+
+Log level INFO should produce something more like a brief summary of the happening, similar to this:
+{noformat}
+- Initializing abstract diagram
+- Layouting diagram
+- Rendering building blocks
+{noformat}
+
+For complex operations like an import, I think it is acceptable if INFO consists of one or two lines of log per building block handled, while DEBUG would go into more detail what happens for each building block.
+Try to apply common sense. When in doubt, ask [~sfe]
+
+To see where you have to make adjustments, simply set the root log level to INFO and perform some common iteraplan use cases to check the log output."	23/Dec/14 1:25 PM;msr;Could not start the ticket because of high workload.	27/Jan/15 2:38 PM;gph;"Wrong file type" log message in ExcelImportController should (imho) have log level "info" instead of "debug".	28/Jan/15 8:19 AM;isc;THX Gerhard, I have changed the log level to "info"																																																			

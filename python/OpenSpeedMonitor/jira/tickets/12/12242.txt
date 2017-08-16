@@ -1,0 +1,80 @@
+MeasuredValue.result_ids enthält doppelte ID's	"Es gibt result_ids bis zu einer Länge von bis zu 7.000.000 zeichen(!):
+
+{code}
+mysql> select * from aggregator_type where id<5;
++----+---------+-----------------+----------------+
+| id | version | measurand_group | name           |
++----+---------+-----------------+----------------+
+|  1 |       0 | NO_MEASURAND    | measuredEvent  |
+|  2 |       0 | NO_MEASURAND    | page           |
+|  3 |       0 | NO_MEASURAND    | pageAndBrowser |
+|  4 |       0 | NO_MEASURAND    | shop           |
++----+---------+-----------------+----------------+
+4 rows in set (0.00 sec)
+
+mysql> select * from measured_value_interval;
++----+---------+---------------------+--------+
+| id | version | interval_in_minutes | name   |
++----+---------+---------------------+--------+
+|  1 |       0 |                  60 | hourly |
+|  2 |       0 |                1440 | daily  |
+|  3 |       0 |               10080 | weekly |
++----+---------+---------------------+--------+
+3 rows in set (0.00 sec)
+
+mysql> select aggregator_id,interval_id,min(CHAR_LENGTH(result_ids)) as min_laenge_result_ids,max(CHAR_LENGTH(result_ids)) as max_laenge_result_ids,avg(CHAR_LENGTH(result_ids)) avg_laenge_result_ids from measured_value where aggregator_id<5 group by aggregator_id,interval_id order by aggregator_id,interval_id;
++---------------+-------------+-----------------------+-----------------------+-----------------------+
+| aggregator_id | interval_id | min_laenge_result_ids | max_laenge_result_ids | avg_laenge_result_ids |
++---------------+-------------+-----------------------+-----------------------+-----------------------+
+|             1 |           1 |                     0 |                   647 |               16.0878 |
+|             2 |           2 |                     0 |               1594639 |             4039.4733 |
+|             2 |           3 |                     0 |                596767 |             6629.0592 |
+|             4 |           2 |                     0 |               2473823 |            30145.5237 |
+|             4 |           3 |                     0 |               7231671 |           176787.9163 |
++---------------+-------------+-----------------------+-----------------------+-----------------------+
+5 rows in set (6.91 sec)
+{code}
+
+Dies hat in der OTTO-live-Umgebung zu einer OutOfMemoryException geführt und der tomcat ist ausgestiegen. Ein Heapdump hat ergeben, das über 70% des Heaps mit Strings gefüllt war. Riesig viel Platz wurde von den result_ids-Strings der MeasuredValues belegt."		Bug	OpenSpeedMonitor	15/May/14 9:44 AM	22/May/14 11:27 PM														"15/May/14 9:57 AM;nkuhn;*Fix:*
+
+* Sicherstellen, dass bei neuen MeasuredValues keine doppelten ID's mehr geschrieben werden.
+{color:blue}
+Realisierung:
+Für Page- und Shop-MV's werden gar keine result_ids mehr geschrieben. Für Event-MV's werden weiterhin result_ids geschrieben. Wird eine doppelte EventResult-ID eingefügt erfolgt ein ERROR-Log. 
+{color}
+
+* Prüfen/Sicherstellen, dass null im Feld result_ids beim Klicken auf einen solchen Punkt nicht zu einem Fehler führt, bzw. temporär eine Meldung zeigen ""... Feature noch nicht unterstützt"".
+{color:blue}
+Realisierung:
+Shop/Weekly -> funktioniert 
+Shop/Daily -> funktioniert
+Page/Weekly -> funktioniert
+Page/Daily -> funktioniert
+{color}
+
+* Für alle daily und weekly-MV's den result_ids-Inhalt komplett löschen.
+{color:blue}
+Realisierung:
+{code}update measured_value set result_ids = '' where aggregator_id in (2,4);{code}
+{color}
+
+-> Deployment
+
+Nachgelagert:
+
+Klick auf Daily oder Weekly-Datenpunkte im CSI-Dashboard soll zu einer Diagramm-Darstellung höherer Detail-Tiefe führen und erst der Klick auf einen hourly-Punkt führt dann zu einer Liste der Rohdaten (wie bisher immer).
+Folgende Aktionen sollen beim Klicken auf Datenpunkte passieren:
+* Wochenwert Shop -> Tageswerte Shop der angeklickten Woche
+* Tageswert Shop -> Tageswerte Pages des angeklickten Tages
+* Wochenwert Page -> Tageswerte Page der angeklickten Woche
+* Tageswerte Page -> Stundenwerte aller Messschritte der angeklickten Page und innerhalb des angeklickten Tages
+* Stundenwerte Messschritt -> NUR DIESES FÜHRT NOCH ZU EINER TABELLARISCHEN AUFLISTUNG DER ROHDATEN"	"15/May/14 12:07 PM;ubessle;Fürs Erste ist das genau richtig. Für die Zukunft brauchen wir noch Zwischenschritte
+Tageswert Page -> Stundenwerte pro Page und Browser des angeklickten Tages
+Stundenwerte pro Page und Browser -> Stundenwerte aller Messschritte der angeklickten Page/Browser-Kombination für gleichen Zeitraum (Tag)"	"19/May/14 10:49 AM;nkuhn;Änderung der obigen Liste, wohin Datenpunkte verlinken sollen:
+
+* Wochenwert Shop -> Tageswerte Shop der angeklickten Woche
+* Tageswert Shop -> {color: red}Stundenwerte aller Messschritte des angeklickten Shops/Systems innerhalb des angeklickten Tages{color}
+* Wochenwert Page -> Tageswerte Page der angeklickten Woche
+* Tageswerte Page -> Stundenwerte aller Messschritte der angeklickten Page und innerhalb des angeklickten Tages
+* Stundenwerte Messschritt -> NUR DIESES FÜHRT NOCH ZU EINER TABELLARISCHEN AUFLISTUNG DER ROHDATEN
+"																																																				

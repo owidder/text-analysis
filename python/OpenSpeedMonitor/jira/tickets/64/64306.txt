@@ -1,0 +1,7 @@
+App draußen ausprobieren	"Realistische Testdaten (GIS-Daten) anlegen
+
+Kann es zu überlappung der Infos kommen?
+
+Wie genau ist das GPS an den Testpositionen?
+
+ggf. Skalierungsfaktoren anpassen / konfigurierbar machen"		Task	EAMV15	20/Nov/15 5:25 PM	17/Dec/15 10:44 AM														17/Dec/15 10:44 AM;fbe;Siehe offene Punkte unter "Projektüberblick" im Wiki																																																						

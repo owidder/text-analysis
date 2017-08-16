@@ -1,0 +1,23 @@
+Erweiterung Abfrage-Logik MeasuredValues für zwei CSI-Varianten	"Mit Abfrage-Logik ist an dieser Stelle auch die Berechnung der noch nie aufgerufenen Werte gemeint, da diese im Rahmen der Abfrage erfolgt. Es geht also hier nicht um die HOURLY-EventMeasuredValues (werden in IT-731 behandelt), sondern um alle höher aggregiertem MeasuredValues: DAILY/WEEKLY für Page, Shop und CsiCystem.
+
+
+
+Die Berechnung von visuallyComplete-basierten Kundenzufriedenheiten in höher aggregierten MeasuredValues muss zum Einen in den folgenden Services ergänzt werden:
+
+* de.iteratec.osm.csi.PageMeasuredValueService
+
+* de.iteratec.osm.csi.ShopMeasuredValueService
+
+* de.iteratec.osm.csi.CsiSystemMeasuredValueService
+
+
+
+Es bleibt hierbei dabei, dass es pro Interval und Aggregation *ein* MeasuredValue gibt und die Logik in den genannten Services prüft, ob dieses MeasuredValue existiert und berechnet ist. Wenn das nicht der Fall ist muss es neu berechnet werden für csByWptDocCompleteInPercent und csByWptVisuallyCompleteInPercent. 
+
+
+
+Zudem muss auch die nächtlichen Berechnung der MeasuredValues angepasst werden. Die Invalidierung von höher aggregierten MeasuredValues beim Eintreffen entsprechender EventResults sollte aber unabhängig vom vorliegen einer visuallyComplete-Zeit immer erfolgen. Wir invalidieren MeasuredValues für csByWptDocCompleteInPercent und/oder csByWptVisuallyCompleteInPercent nicht unabhängig voneinander.
+
+
+
+"		New Feature	OpenSpeedMonitor	24/Sep/15 2:00 PM	15/Feb/16 12:41 PM														10/Feb/16 9:23 AM;mmi;Der nächtliche Job, der "outdated Measuredvalues" berechnet muss nicht weiter angepasst werden, da ein MeasuredValue unabhängig der Csi-Variante als outdated makiert wird. Der nächtliche Job sammelt somit alle betroffenen Measured Values																																																						

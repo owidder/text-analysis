@@ -1,0 +1,1 @@
+Create Scss (part of Sass)-prototype for the customizings	Should be done by [~scz] after 6.0		New Feature	iteraplan Thunderduck	26/Apr/17 5:12 PM	12/Jul/17 2:06 PM																																																																				

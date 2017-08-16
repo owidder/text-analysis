@@ -1,0 +1,5 @@
+DC Dashboard erste Version	"Die erste Version des DC-Dashboards wieder lauffähig machen und dabei die javascript-Dateien aufräumen.
+
+OSM-Referenzen suchen und entfernen.
+
+Eentuell fehlende Dependencies mit Bower installieren."		Task	OpenSpeedMonitor	27/Jul/16 4:49 PM	05/Aug/16 8:25 AM																																																																				

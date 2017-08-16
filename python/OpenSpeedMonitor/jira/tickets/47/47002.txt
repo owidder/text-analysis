@@ -1,0 +1,7 @@
+Invalid values must not block editing	"If the user edits a field so that it has an invalid value, he must be able to edit another field.
+
+The field with the invalid value is hightlighted as invalid and has a validation error message, but it is not in an edit mode.
+
+The user can go back to the invalid field and correct the value.
+
+As-is: on can go to another field, but the focus handling is confusing and/or wrong."	47009	Sub-task	iteraplan PO	29/Sep/14 1:09 PM	09/Jun/15 5:06 PM																																																																				

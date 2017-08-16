@@ -1,0 +1,9 @@
+Check and cleanup Sub-/SuperRole related code in ElasticMi	"In classic iteraplan, the super-ordinate role is consisting of its sub-ordinate roles. This means, that the super-ordinate role ""inherits"" the permissions of all sub-ordinate roles.
+
+In ElasticMi, the role and permission hierarchy seems to work correctly like in classic iteraplan, but there might be some code in RoleImpl, which seems to be orphaned and is misleading, because it looks like if the sub-ordinate roles ""inherited"" the permissions for their super-ordinate role(s).
+
+For example, in class ""de.iteratec.iteraplan.elasticmi.permission.impl.RoleImpl"", there are several methods with if-blocks like ""if (superRole != null) { ... }"". These methods depend on properties like ""role2Super"" in StakeholderManagerImpl. The only method, which sets these properties, is ""addSubRole()"", -which is called by test classes only.-
+
+Check, if this first analysis is correct and is this case, cleanup the orphaned and misleading code."		Improvement	iteraplan PO	02/Oct/14 3:08 PM	08/Dec/14 11:45 AM					cleanup	elasticmi	permissions							"08/Dec/14 9:31 AM;msr;The code for inheritance of permissions in ElasticMi is not used.
+In ""/iteraplan/src/java/main/de/iteratec/iteraplan/businesslogic/service/ElasticMiContextAndStakeholderManagerInitializationServiceImpl.java"" the method ""grantBbtPerms"" grants all permissions. This method already uses the classic iteraplan permission inheritance. That's why the ElasticMi permission inheritance code can be eliminated. "	08/Dec/14 10:27 AM;msr;Tests with Nesting Cluster Diagram and iteraQL were successful.	"08/Dec/14 11:45 AM;fam;No problem with role inheritance found.
+Ticket closed"																																																				

@@ -1,0 +1,5 @@
+Change text in visualization tab	"Change text in visualization tab from:
+""This Building Block has no content of the selected type.""/""Diesem Bebauungselement fehlt der ausgewählte Inhalt.""
+to
+""This Building Block has no valid content to render the selected report. Either edit to insert corresponding relations or select another report.""/
+""Dieses Bebauungselement fehlen die Beziehungen für die gewählte Grafik. Fügen Sie die entsprechenden Beziehungen hinzu oder wählen Sie eine andere Grafik."""		Improvement	iteraplan PO	01/Oct/11 9:17 AM	06/Oct/11 9:41 AM														04/Oct/11 9:59 AM;vsh;Spelling mistake, it should read "Diesem Bebauungselement fehlen die Beziehungen für die gewählte Grafik. Fügen Sie die entsprechenden Beziehungen hinzu oder wählen Sie eine andere Grafik."																																																						

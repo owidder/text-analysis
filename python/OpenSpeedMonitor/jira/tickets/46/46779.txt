@@ -1,0 +1,21 @@
+Structured filter by status/complexity	"Add a structured filter to the list of information systems for the property Status"".
+
+When the user clicks the column title ""Status"", the system displays a menu of actions, including ""only current"", ""only planned"", only inactive"", ""only target"".
+In the same way, if the user clicks ""Complexity"", the actions in the menu are ""only high"" and so on.
+
+Note that in the scope of this ticket, only these two columns must work. Name and Description columns do not have the same functions.
+
+When the user selects on of these actions, the list will only show items that match this filter. Others disappear with a small transition.
+
+This filter must work in combination with the text search.
+
+When the filter is selected, a box/button/badge is displayed to the right of the title ""7 of 9 Information Systems"".
+The badge has the text of the form ""Status: current"". 
+The badge has a small ""remove"" icon on the right hand side.
+
+When the user clicks the remove icon, the filter is removed, and the rows appear again (with transition).
+
+
+ "		New Feature	iteraplan PO	04/Aug/14 2:43 PM	18/Aug/14 4:18 PM														07/Aug/14 5:47 PM;sepr;rough estimate 2 PD	"18/Aug/14 4:18 PM;wfr;OK
+
+minor: capitalization in menu"																																																					

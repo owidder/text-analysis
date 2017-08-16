@@ -1,0 +1,17 @@
+Single Element Edit - Much text without line brake creates a scroll bar on the bottom of the page	"Reproduce with trunk and a big description field in the single element vie
+
+
+
+When you have a big text in the description field, you must scroll down (vertically) to use the horinzontal scrollbar for edit the field. 
+
+
+
+The scrollbar is on the bottom of page and not on the bottom of the screen.
+
+
+
+ "		New Feature	iteraplan Speedbird	03/May/17 10:09 AM	19/May/17 12:23 PM														05/May/17 5:49 PM;fka;Reproduced also with IE 11	19/May/17 10:26 AM;mash;For me it is not fixed. Please check screenshots. Also description editor is very narrow, I think it shouldn't be like this. Please discuss it with Marcel or Fabian	"19/May/17 11:33 AM;viol;please add revision #6851
+
+
+
+was fixed for bbSingleElementView,, attribute SEV, attribute Groups SEV, roles SEV   "	19/May/17 12:22 PM;mash;Review is done																																																			

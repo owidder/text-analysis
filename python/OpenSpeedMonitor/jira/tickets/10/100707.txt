@@ -1,0 +1,19 @@
+Coloring by attribute	"*Implementation details:*
+
+* By default diagram should be colored by content type color.
+
+* User can also color each bar by an numeric or enumeration attribute (see attached screenshots). 
+
+* Each segment has a label with number of items in segment
+
+* Each segment has a tooltip wit the name of corresponding attribute value by which coloring is applied.
+
+* Save coloring info in URL
+
+
+
+*UI:*
+
+* Legend: show coloring info after attribute name (or filter), add colorpicker
+
+* Toolarea: add new toolarea entry for coloring"		New Feature	iteraplan Speedbird	26/Oct/16 6:18 PM	07/Nov/16 12:14 PM														07/Nov/16 12:14 PM;mash;Review is Done: https://iteraweb.iteratec.de/fisheye/cru/IP-163																																																						

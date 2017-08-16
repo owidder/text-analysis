@@ -1,0 +1,11 @@
+>Trim below< beschneidet alle Graphen und nicht nur die/den Betroffenen	"Will man, wie bei diesem Beispiel:
+
+!ohneBeschnitt.png|thumbnail!
+
+den Graphen so einschränken, dass nur noch Datenpunkte für 'doc complete' angezeigt werden, die über einem bestimmten Wert x liegen (hier 1600ms) erhält man folgenden Graphen:
+
+!mitBeschnitt.png|thumbnail!
+
+
+
+Da fast alle 'ttfb' Zeiten unter x liegen, werden weder die Datenpunkte für 'ttfb' noch für 'doc complete' angezeigt. "		Bug	OpenSpeedMonitor	28/Sep/16 12:04 PM	30/Sep/16 2:04 PM																																																																				

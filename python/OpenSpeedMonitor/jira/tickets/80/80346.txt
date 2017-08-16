@@ -1,0 +1,29 @@
+taggable-Plugin 2.0.1 zum Laufen bringen und veröffentlichen	"Todo's
+
+
+
+* Prüfen, was ggf. noch nicht funktioniert und fixen
+
+* Das github-repo mit unserem Fork einbinden
+
+* Leere Grails 3.1-Anwendung mit taggable 2.0.1 testen
+
+* Wenn alles funktioniert auf github PR erstellen"		Task	OpenSpeedMonitor	13/Apr/16 9:54 AM	27/Jun/16 10:08 AM														18/Apr/16 11:32 AM;msk;Der verwendete Tabellenname hat sich geändert. Statt tag.links heißt es jetzt tags.links. Bei mir hatte hibernate eine leere tags.links tabelle angelegt, weshalb es keinen Fehler beim hochfahren der Anwendung gab.	20/Apr/16 11:38 AM;nku;In der GUI sieht das taggable Control noch "kaputt" aus.	"27/Apr/16 9:14 AM;bwo;Das kaputte Layout resultiert aus einem Fehler im JavaScript, wodurch das Script abbricht.
+
+jobs/list.js:287 macht aktuell Probleme, die Methode popover existiert zur Laufzeit nicht."	27/Apr/16 11:07 AM;bwo;Das Layout funktioniert nun wieder korrekt, siehe IT-1053	"27/Apr/16 3:38 PM;nku;Todo: 
+
+In einer leeren Grails 3.1.5-Anwendung testen:
+
+
+
+* In die Doku sehen und testen was dort beschrieben ist
+
+* Evtl. vorhandene Tests ausführen.
+
+
+
+Wenn alles funktioniert wie es soll PR stellen."	02/May/16 5:21 PM;msk;Pullrequest wurde gestellt, wir warten jetzt, dass dieser angenommen wird.	17/May/16 11:44 AM;nku;Bitte nochmal nachsehen, warum der Travis-CI-Build mit unserem PR scheitert und fixen.	18/May/16 9:40 AM;msk;Das Problem waren die Skripts zum Veröffentlichen des Plugins auf z.B. Bintray. Diese haben einen weiteren install task definiert, was den Build failen ließ. Ich habe die Skripts auskommentiert, woraufhin der Travis-CI-Build jetzt grün ist. Wir warten jetzt wieder, dass der [PR|https://github.com/gpc/taggable/pull/10] angenommen wird.	"25/May/16 5:21 PM;nku;Graeme Rocher kontaktieren
+
+"	"08/Jun/16 4:43 PM;nku;Von Graeme Rocher gemergt nur noch nicht auf bintray published.
+
+Bis das soweit ist benutzen wir unsere eigene Version."	27/Jun/16 10:08 AM;msk;The merged version is released as a snapshot, which we are using from now on.																																												

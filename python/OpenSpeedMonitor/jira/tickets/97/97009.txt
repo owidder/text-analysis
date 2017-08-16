@@ -1,0 +1,27 @@
+RELEASE: Graphic Reactor creates a folder by upload an empty html	"Reproduce (with Nightly Build):
+
+# Open the Graphic Reactor
+
+# Upload a empty *.html* file 
+
+# A new folder was created
+
+
+
+Expected: He upload the file and dont create a folder
+
+Actual: He dont not upload the file and create a folder
+
+"		Bug	iteraplan Quickfox	23/Sep/16 10:22 AM	02/Nov/16 4:30 PM														04/Oct/16 1:38 PM;mwe;Also fix via REST upload service	05/Oct/16 12:37 PM;mwe;Created new REST interface and adjusted documentation: https://www.iteraplan.de/doc/display/iteraplan54/Rest+API+of+the+Graphics+Reactor#RestAPIoftheGraphicsReactor-Createfolder	"18/Oct/16 3:51 PM;mwe;Observation:
+
+* curl -X POST -T _empty.html http://localhost:8080/iteraplan/api/reactor/files\?path\=""/newFolder/123"" -u system:password
+
+** From the request the path parameter ""/newFolder/123"" will be read (wrong for this use case)
+
+** A File ""123"" will be created if the folder does not exist and path param ""/newFolder/123"". This should not happen.
+
+* Only this works: curl -X POST -T _empty.html http://localhost:8080/iteraplan/api/reactor/files\?path\=""/newFolder/123/"" -u system:password
+
+** Then from the request the path parameter ""/newFolder/123/_empty.html"" will be read"	"19/Oct/16 2:47 PM;msr;Please fix in scope of this ticket:
+
+Post a new empty file to a folder without an ""/"" at the end of the path should lead to an error message (not success)"	02/Nov/16 4:30 PM;mse;Review ok.																																																		

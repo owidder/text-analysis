@@ -1,0 +1,13 @@
+Export incl. Partial in New Client (Client)	"*Summary:*
+
+Implement the export incl. partial export with iteraQL in the New Client.
+
+
+
+*Details:*
+
+* After selecting one of the different exports send a GET-request to {{/api/data/...}} or {{/api/metamodel}}
+
+* Show a loading indicator until you receive the file
+
+* After receiving it offer the file to download"		New Feature	iteraplan Speedbird	07/Mar/17 11:26 AM	24/Apr/17 3:08 PM														20/Apr/17 9:30 AM;dmkh;[~viol], seems that ticket is not implemented, please, write down all revisions related to it.	24/Apr/17 11:33 AM;viol;revision #6602																																																					

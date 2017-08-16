@@ -1,0 +1,4 @@
+Load Attribute Type descriptions using Ajax	"Each building block has attributes tab. All attributes will be shown there. For each attribute type the user can get the description. Those descriptions will be sent together with the response. We could load descriptions using AJAX and reduce the response size.
+
+* Firstly all descriptions must be put in a tiles template and inserted where they are needed. This also helps to reduce the duplicated code.
+* Then load the descriptions using AJAX"		Improvement	iteraplan PO	11/Aug/11 12:58 PM	07/Nov/11 2:56 PM					ajax	attribute								07/Nov/11 2:56 PM;bsi;OK																																																						

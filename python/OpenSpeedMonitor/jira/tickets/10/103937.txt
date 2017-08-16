@@ -1,0 +1,1 @@
+Full Text Search improvements	Include information about attributable relations (and their attribute values) in the full text search.		Improvement	iteraplan PO	25/Nov/16 1:00 PM																																																																					

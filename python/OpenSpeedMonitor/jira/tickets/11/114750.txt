@@ -1,0 +1,43 @@
+Query for meta information of features in Plugin API (backend)	"As plugin developer, I want to be able to query the api for meta information of given properties (and maybe relationship ends), for example whether or not they allow multiple assignments, are mandatory, or their value type.
+
+
+
+Suggestion (via example):
+
+{code}
+
+api.getPropertyInfo(""InformationSytem"", ""Costs"")
+
+=> {
+
+     mandatory: false,
+
+     multiple: false,
+
+     type: number
+
+   }
+
+{code}
+
+
+
+to be discussed:
+
+Should a similar (or the same) query be possible from a building block for properties of the building block's type? For example:
+
+{code}
+
+informationSystemBB.getPropertyInfo(""Costs"")
+
+=> {
+
+     mandatory: false,
+
+     multiple: false,
+
+     type: number
+
+   }
+
+{code}"		Improvement	iteraplan Speedbird	13/Mar/17 2:07 PM																																																																					

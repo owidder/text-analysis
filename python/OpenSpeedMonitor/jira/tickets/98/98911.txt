@@ -1,0 +1,5 @@
+REST API um Status Abfragen erweitern	"Die Detailanalyse funktioniert aktuell nicht, dabei ist aufgefallen dass uns Möglichkeiten zum Abfragen des Status fehlen.
+
+
+
+Es muss eine Schnittstelle implementiert werden um diesen Abzufragen. Diese sollte im ersten Schritt Aussagen über die Auslastung der treffen können. Im nächsten Schritt sollte überprüft werden können ob die Worker aktuell noch laufen und evtl. auch was diese gerade tun."		Bug	OpenSpeedMonitor	12/Oct/16 9:17 AM	12/Oct/16 2:26 PM																																																																				

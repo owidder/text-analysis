@@ -1,0 +1,93 @@
+Refresh search  index ends in error	"When I try to refresh the search index (http://iteraplan.coface.dns/iteraplan/configuration/refreshIndex.do) the following error occurs: 
+
+
+
+""Could not get property value""
+
+
+
+
+
+Error report is attached
+
+"		Fault	iteraplan Support	28/Nov/16 2:18 PM	09/Dec/16 1:45 PM														"28/Nov/16 2:18 PM;thomas.liskow@coface.com;
+
+[^ProblemReport_2016-11-28_141416.zip] _(9 kB)_"	"29/Nov/16 2:00 PM;cst;Dear Mr. Liskow,
+
+thank you for your inquiry.
+
+Could you please check following points:
+
+# Go into the menue ""Administration"" - ""Configuration"" and click on the button ""Clear Cache"" 
+# On the path ""[TOMCAT7]\work\Catalina\localhost\"" clear the iteraplan instance folder
+# Clear the the index path, which was defined in the setup of iteraplan 
+# As last step, create the index again
+
+When the error shown up again, we need the iteraplan.log and the catalina.log for the next analyse steps.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+
+"	"05/Dec/16 2:00 PM;thomas.liskow@coface.com;Dear Mr. Stangl,
+
+the error raise up again. So I attached the mentioned logs.
+
+Regards,
+Thomas Liskow
+
+[^iteraplan-5.3.0.log] _(180 kB)_
+
+[^catalina.2016-12-05.log] _(27 kB)_"	"07/Dec/16 1:00 PM;cst;Hello Mr. Liskow,
+
+could you please execute the following sql statements and send me the result in form of screenshots or text:
+
+# Table AV_DATE // select * from AV_DATE where ID_AT='null';
+# Table AV_ENUM // select * from AV_ENUM where ID_AT='null';
+# Table AV_NUM //  select * from AV_NUM where ID_AT='null';
+# Table AV_RESP // select * from AV_RESP where ID_AT='null';
+# Table AV_TEXT //  select * from AV_TEXT where ID_AT='null';
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+
+"	"09/Dec/16 9:29 AM;thomas.liskow@coface.com;Hallo  Herr Stangl,
+
+hier die Abfragedaten.
+Select statements angepasst, da Datentyp nicht zu ID_AT='null' passt. Stattdessen ID_AT=0 abgefragt.
+
+MfG
+T. Liskow
+
+[^SR148770.log] _(1,0 kB)_"	"09/Dec/16 9:52 AM;cst;Hallo Liskow,
+
+mir ist hier ein Fehler unterlaufen.
+Wir müssen prüfen, ob in diesen Felder eine null vorhanden ist. 
+
+Table AV_DATE // select * from AV_DATE where ID_AT is null;
+Table AV_ENUM // select * from AV_ENUM where ID_AT is null;
+Table AV_NUM // select * from AV_NUM where ID_AT is null;
+Table AV_RESP // select * from AV_RESP where ID_AT is null;
+Table AV_TEXT // select * from AV_TEXT where ID_AT is null;
+
+Das sagt uns der Fehler beim erstellen des Indexes, das er hier eine Null vorhanden ist und deswegen das Problem ensteht. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+"	"09/Dec/16 1:20 PM;thomas.liskow@coface.com;Hallo Herr Stangl,
+
+hier die korrekte Abfrage. Es ist aber kein NULL vorhanden.
+
+Gruß,
+T. Liskow
+
+[^SR148770_2.log] _(0,4 kB)_"	"09/Dec/16 1:43 PM;thomas.liskow@coface.com;Hallo Herr Stangl,
+
+Sie können den Incident schließen. Ich habe den Refresh des Search Indexes nochmals versucht durchzuführen. Er wurde jetzt ohne Fehler beendet.
+
+Mit freundlichem Gruß
+
+Thomas Liskow"																																															

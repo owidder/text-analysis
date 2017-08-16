@@ -1,0 +1,7 @@
+Create test(s) to ensure that all image elements in all Go.js diagrams have data URIs	"If an image element with an explicit (relative or absolute) path to an image resource is put into a Go.js diagram, and when this diagram content is sent to the server as SVG for PDF creation, then the Apache Batik framework on the server will try to send a request for this image and most likely cause a server error. This must be prevented.
+
+
+
+The best way to prevent this would be a (E2E- ?) test for all Go.js diagrams, which checks all image links in the diagram content and ensures that all images are embedded as data URIs. If any paths are found, these test(s) should fail.
+
+"		Improvement	iteraplan PO	05/Nov/15 3:08 PM						diagram	diagrams	newClient	pdf	svg	test				11/Jun/17 1:05 PM;fka;Still relevant?																																																						

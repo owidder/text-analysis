@@ -1,0 +1,27 @@
+Relationship editor is closed when auto-select menu is clicked 	"Reproduce:
+
+
+
+* Got to list view
+
+* Start editing a relationship cell
+
+* Click in the editor behind all chips to open the auto-complete menu
+
+* Select a item from the menu
+
+
+
+Expected:
+
+* Selected item is added to the chips of relations
+
+
+
+Actual:
+
+* The editor is closed, the item is not added
+
+
+
+First analysis: It seems that ag-grid interprets the cklick into the auto-complete menu as a click outside the cell editor. This causes the editing to step without an update of the cell content."		Bug	iteraplan Thunderduck	30/Nov/16 12:24 PM	14/Dec/16 9:14 AM																																																																				

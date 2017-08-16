@@ -1,0 +1,2 @@
+Keep action buttons side-by-side in IS list view	"as is: action buttons are stacked vertically when window is narrower.
+"	47011	Sub-task	iteraplan PO	02/Oct/14 3:22 PM	09/Jun/15 5:06 PM																																																																				

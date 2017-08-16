@@ -1,0 +1,1 @@
+Vollständige Ablösung des WPT-Monitors durch den iteraSpeedMonitor			Epic	OpenSpeedMonitor	15/Jul/13 12:56 PM	19/Jan/17 9:32 AM																																																																				

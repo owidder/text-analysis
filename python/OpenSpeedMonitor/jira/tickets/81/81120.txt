@@ -1,0 +1,5 @@
+[Integrationstests] Lassen sich grundsätzlich nicht starten mit installiertem mongodb-Plugin	Es kommt eine Exception beim Starten der Tests.		Task	OpenSpeedMonitor	20/Apr/16 10:59 AM	21/Apr/16 1:49 PM														21/Apr/16 12:19 PM;bwo;Die Exception erscheint, da wir scheinbar Fehler in unserer application.groovy haben. Ich werde diese nun durchgehen und dabei in das neue yml Format übertragen. Dieses ist wohl der neue Standard und somit sollte eine Umstellung ohnehin früher oder später von Vorteil sein.	"21/Apr/16 1:49 PM;bwo;Umstellung auf application.yml, siehe IT-1050
+
+
+
+Ich habe auch gleich das Plugin auf Version 5.0.5 aktualisiert. "																																																					

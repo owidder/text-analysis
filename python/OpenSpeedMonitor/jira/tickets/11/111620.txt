@@ -1,0 +1,5 @@
+Additional columns in Masterplan migration	"Two issues:
+
+* Some additional columns don't seem to be migrated (tested on TESTDATA5, saved query ""Masterplan - Release 2016.3""). Can also be reproduced by creating a Masterplan diagram with an additional ""Successor"" column. Possibly other self relationships are affected, too.
+
+* Even if not explicitly selected, classic Masterplan diagrams with, for example, Information System as type, have columns like ""Status"" and productive period as default columns, as opposed to the Masterplan diagram in the interactive client."		Bug	iteraplan PO	13/Feb/17 9:43 AM	16/Feb/17 2:24 PM																																																																				

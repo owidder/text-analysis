@@ -1,0 +1,18 @@
+Add ordering to the feature columns in the Excel (Template) Export	"Currently the order the columns on an Excel sheet are displayed in is determined as follows:
+
+For SubstantialTypeExpressions:
+Properties first, not ordered/used in the order the type returns them.
+RelationshipEnds with upper bound == 1 in the order the type returns them.
+
+For other TypeExpressions:
+RelationshipEnds with upper bound == 1 and properties in the order the type returns them.
+
+This makes working with exported files rather cumbersome, as column positions are unpredictable.
+
+* It would be nice to have an explicit ordering (maybe alphabetically, or name first, then other properties alphabetically, then relationshipends alphabetically, all according to persistent name, or any other ordering that makes sense).
+
+In 3.0.4:
+* The order of the Relationship sheets on the Introduction-page varies. Should be the same order after each export.
+* The column order sometimes changes. For example the ""runtime period"" and the ""last modification"" columns in ""InformationSystem"" sheet changed position in two different exports. Column order should be predictable.
+
+Note: These different orderings appear after a reload of the elastic metamodel."		New Feature	iteraplan PO	11/Jan/13 10:52 AM	30/Dec/15 2:20 PM					cfnr	excel	export	ordering	template					08/Jan/14 4:26 PM;fka;Prerequisite: Ordering must be clearly defined, no "maybe" ;-)	30/Dec/15 2:20 PM;fka;Done with some release prior to 3.4																																																					

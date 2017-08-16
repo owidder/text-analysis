@@ -1,0 +1,9 @@
+Change inner background-color of legend-filter	"*Summary:*
+
+Change inner background-color for all filters in the legend from white to the same greytone as the inner grey box.
+
+
+
+We change the common code for all diagrams.
+
+"		Improvement	iteraplan Speedbird	19/Jul/16 8:38 PM	21/Jul/16 10:42 AM																																																																				

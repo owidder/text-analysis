@@ -1,0 +1,27 @@
+Single Element History: Remove Type-History-Entries before the single element got created (server)	"*Summary:*
+
+For the Single Element History:
+
+Remove Type-History-Entries *before* the single element got created
+
+
+
+*Reproduce:*
+
+* Activate the history
+
+* Assign an attribute to Information Systems
+
+* Create a new Information System
+
+
+
+*Actual:*
+
+* The history of the new Information System already contains a history entry for attribute assiged before itself exists
+
+
+
+*Expected:*
+
+* There are no history entries before the element exists"		Improvement	iteraplan PO	12/Jun/17 4:27 PM																																																																					

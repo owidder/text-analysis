@@ -1,0 +1,7 @@
+Document Classic Cluster Diagram in the User Guide	"Document the Cluster Diagram in the User Guide.
+
+Use the Portfolio Diagram as template: https://www.iteraplan.de/doc/display/iteraplan54/Portfolio+Diagram
+
+
+
+If you have questions (e.g. section ""Limitations""), contact [~msr]"	98460	Sub-task	iteraplan PO	12/Oct/16 10:01 AM	25/Oct/16 10:14 PM														25/Oct/16 2:37 PM;mash;Link to Classic Cluster Diagram in the User Guide: https://www.iteraplan.de/doc/display/iteraplan54/Cluster+Diagram																																																						

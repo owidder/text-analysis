@@ -1,0 +1,3 @@
+Element list view should be able to include productive from / to	"Currently, there is no possibility to add the two attributes ""productive from / until"" to the element list view (and subsequent netto list exports).
+
+Both values from / until should be available in the list view and the netto list exports."		Improvement	iteraplan PO	08/Apr/14 3:56 PM	19/Jan/16 11:08 AM																																																																				

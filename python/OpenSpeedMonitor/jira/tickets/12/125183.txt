@@ -1,0 +1,29 @@
+Attribute single page is broken after save	"*Reproduce:*
+
+* Create a new attribute
+
+* Enter a name
+
+* Click on ""Save"" button
+
+* Return to this attribute
+
+* Try to edit something(also you can see that ""group"" field is changed ""[Default Attribute Group]"" -> ""Lifecycle Group"")
+
+
+
+*Actual:*
+
+* You cannot edit anything and get some error message without description and server error in console.
+
+
+
+*Expected:*
+
+* Editable fields is editing
+
+
+
+*Comments:*
+
+After reload the same situation only after editing ""Group"" field everything is work."		Bug	iteraplan PO	23/Jun/17 2:43 PM															23/Jun/17 3:14 PM;msr;Please fix it with high priority and merge only this commit to the branch of 6.0	26/Jun/17 1:33 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-725																																																					

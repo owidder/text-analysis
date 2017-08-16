@@ -1,0 +1,13 @@
+Ersten Entwurf für das Format des "Automatischen Reports" erstellen	"Der erste Report geht an Otto für Februar 2017.
+
+
+
+Dieser soll die folgenden Charts beinhalten:
+
+ * CSI-Benchmark (Ladezeiten-Benchmark - bisher noch nicht implementiert)
+
+ * Page Aggregations
+
+ * Distribution Chart
+
+ * Vergleich Einstiegs-/Folgeseiten"		Task	OpenSpeedMonitor	15/Mar/17 9:30 AM	23/Mar/17 11:36 AM																																																																				

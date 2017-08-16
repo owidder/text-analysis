@@ -1,0 +1,4 @@
+Test neighborhood diagram	"Test sheets in {{doc/test/neighborhooddiagram}}.
+
+* Install iteraplan using one of the not yet or lesser tested configurations in the installer test sheet
+* Perform the testcases from the test sheets and attach the results to this ticket"	47060	Sub-task	iteraplan PO	17/Oct/14 2:18 PM	24/Oct/14 2:09 PM					diagram	test								22/Oct/14 3:44 PM;isc;Test was OK!																																																						

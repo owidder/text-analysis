@@ -1,0 +1,5 @@
+Execution Schedule Help	"Getestet unter Firefox und angemeldet als Admin.
+
+
+
+Auf der Job-Übersicht gibt es über der Spalte ""Execution Schedule"" einen ""?""-Button um Information zur ""Execution Schedule"" anzuzeigen. Intuitiver wäre es, wenn das Fragezeichen nicht ÜBER, sondern INNERhalb der Spaltenüberschrift ist."		Improvement	OpenSpeedMonitor	19/Feb/16 10:17 AM	23/May/16 2:45 PM																																																																				

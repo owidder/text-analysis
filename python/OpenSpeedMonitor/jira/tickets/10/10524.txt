@@ -1,0 +1,7 @@
+Bug im CSV-Export	"Der CSV-Export hat in der momentan bei OTTO deployten Version 1.0.16 einen Bug:
+
+Wenn in den Daten der Graphen (z.B. hourly job-MV's) Lücken enthalten sind fehlen in den entsprechenden CSV-Zeilen delimitter (Semikolons).
+
+Siehe Screenshot und CSV in den Anlagen.
+
+Zu fixen als ggf. als Hotfix und parallel im Multistep-Branch."		Bug	OpenSpeedMonitor	12/Sep/13 3:42 PM	27/Sep/13 4:06 PM																																																																				

@@ -1,0 +1,15 @@
+Language Dropdown	Das Language-Dropdown wird aktuell nicht angezeigt. Die entsprechenden Zeilen wurden von mir während der Umstellung auskommentiert, da diese ihr Bild aus dem Kickstart Plugin gezogen haben. Die Images müssen manuell in unsere Anwendung übernommen werden. Evtl. existiert auch ein Plugin mit den Flaggen.		Bug	OpenSpeedMonitor	20/Jul/15 10:03 AM	30/Sep/15 3:59 PM														"22/Jul/15 9:47 AM;nku;Das Dropdown ist wieder da. Folgendes fehlt noch:
+
+
+
+* Layout:
+
+** Text rechts von der Flagge
+
+** Flaggen haben Border Dieser sollte wieder verschwinden.
+
+* Momentan werden die Sprachen hart im Code gesetzt (_menu/_language.gsp). Idealerweise dieses wieder dynamisch anhand der locales setzen. "	"30/Sep/15 3:59 PM;nku;Locales werden jetzt in der Config.groovy gesetzt:
+
+grails.i18n.locales
+
+"																																																					

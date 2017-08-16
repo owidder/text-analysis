@@ -1,0 +1,69 @@
+Linientyp	"Guten Tag
+
+Ich hatte bereits unter iteraplan 5.1 dieses Problem gemeldet. Nun findet ich dieses auch unter der Version 5.2 vor.
+
+Heisst dies, dass ich das Vorgehen von 5.1 wiederum anwenden muss?
+
+Danke für die Rückmeldung.
+
+
+
+Mfg Alfred Studer
+
+"		Fault	iteraplan Support	16/Sep/16 2:04 PM	22/Sep/16 1:48 PM														16/Sep/16 5:28 PM;alfred.studer@emmi.com;Ich habe versucht, da es das gleiche Muster ist, die gleiche Datei wie bei der Version 5.1 zu verwenden. Anscheinend ist die Datei nicht kompatibel mit der Version 5.2.	"19/Sep/16 9:09 AM;cst;Sehr geehrter Herr Studer,
+
+vielen Dank für Ihre Anfrage.
+
+Würden Sie uns bitte die Datei applicationContext.xml aus dem WEB-INF-Verzeichnis zukommen lassen. 
+Anschließend prüfen wir den Vorgang und passen die Datei an die Version 5.3 an.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+"	"20/Sep/16 3:00 PM;alfred.studer@emmi.com;Anbei die gewünschte Datei.
+Zur Info, wir haben immer noch die Version 5.2!
+
+[^Test applicationContext.xml] _(64 kB)_"	"22/Sep/16 9:06 AM;cst;Sehr geehrter Herr Studer,
+
+
+
+vielen Dank für die Zusendung der Datei.
+
+
+
+Mit dieser Antwort, erhalten Sie die angepasste Datei für Version 5.2 zurück.
+
+
+
+[^applicationContext.xml]
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support "	"22/Sep/16 1:35 PM;alfred.studer@emmi.com;Hat funktioniert
+Muss ich schon mal ein File für die 5.3 iteraplan Version vorbestellen?
+
+Vielen Dank für die Unterstützung."	"22/Sep/16 1:42 PM;cst;Hallo Herr Studer,
+
+
+
+vielen Dank für Ihre Antwort. 
+
+
+
+Hier die Datei für die Version 5.3 - in Version 5.4 wurde der Eintrag standardmäßig mit übernommen.
+
+
+
+[^applicationContext53.xml]
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl "	22/Sep/16 1:47 PM;alfred.studer@emmi.com;ok, dann habe ich die schon mal, wenn wir dann auf die neue Version umsteigen.																																																

@@ -1,0 +1,53 @@
+Context visualization	"Enable context visualization, roughly comparable to the old client 'visualisation' tab in the single element view.
+
+ * Add it to the single element view of all elements
+
+ ** as primary text button
+
+ ** located on the right side in the same line as first header in ""All"" tab   !visualisation single.PNG|width=125,height=30!
+
+ * No new business logic, just links to visualizations
+
+
+
+Text
+
+ * 'Show in diagram: {color:#14892c}[dropdown list 1]{color}, as {color:#59afe1}[dropdown list 2]{color}' (german: Im Diagramm [dropdown list 1], als [dropdown list 2] zeigen)
+
+ * in {color:#14892c}dropdown list 1{color} there should be list of all diagrams (9) - with translations for german version:
+
+ ## Landscape Diagram
+
+ ## Nested Cluster
+
+ ## Information Flow
+
+ ## Masterplan Diagram
+
+ ## Portfolio Diragram
+
+ ## Cluster Diagram
+
+ ## Pie Chart Diagram
+
+ ## Bar Chart Diagram
+
+ ## Tree Map Diagram
+
+ * in {color:#59afe1}dropdown list 2{color} should be shown depending on chosen diagram from first dropdown list
+
+ ** +example+: if Landscape diagram was chosen, in dropdown list 2 there should be:
+
+ *** X axis
+
+ *** Y axis
+
+ *** Content
+
+
+
+When both chosen, open a diagram with the type set as selected and an active filter for name is yyyy, so that only the element from the single view is shown.
+
+
+
+ "		New Feature	iteraplan Speedbird	27/Mar/17 10:37 AM	30/May/17 9:50 AM														29/May/17 2:13 PM;dmkh;Review is done, some comments need to be fixed here: https://iteraweb.iteratec.de/fisheye/cru/IP-630																																																						

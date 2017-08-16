@@ -1,0 +1,31 @@
+Erweiterung Server-Logik zur Abfrage EventResults	"Bisher werden die EventResults zur Anzeige im Result-Dashboard (oder auch zur Berechnung der HOURLY MeasuredValues) anhand der folgenden fünf Attribute abgefragt:
+
+* JobGroup
+
+* MeasuredEvent
+
+* Page
+
+* Browser
+
+* Location
+
+
+
+Diese Attribute sind im (String-)Attribut de.iteratec.osm.result.EventResult#tag kodiert:
+
+[JobGroup.id];[MeasuredEvent.id];[Page.id];[Browser.id];[Location.id]
+
+
+
+Die Connectivity, mit der gemessen wurde, wird im EventResult in einem neuen String-Attribut gespeichert (siehe IT-643). 
+
+TODO's:
+
+* Dieses Attribut muss zusätzlich zur Abfrage verwendet werden
+
+* Es müssen entsprechende Service-Methoden geschrieben werden
+
+* Tests müssen angepasst / erweitert werden.
+
+* Performance-Analyse/-Tests der neuen Abfrage-Logik mit größeren Datenmengen!!!"		Task	OpenSpeedMonitor	03/Jun/15 4:11 PM	16/Jul/15 5:50 PM																																																																				

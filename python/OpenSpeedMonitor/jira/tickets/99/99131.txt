@@ -1,0 +1,31 @@
+Execute Testsheet History Migration	"*Summary:*
+
+Migrate the three (by [~cst]) prepared databases and check if the result is the same.
+
+
+
+*Details:*
+
+* Ensure you have all the actual branch code
+
+* Perform all steps carefully
+
+* If the system is different than the testcases, check, if it is a bug or if the testsheet needs to be corrected.
+
+** If it is a bug, create immediately a bugticket in the epic ""Release 5.4""
+
+** If it is not a bug, correct the testsheet. "		Task	iteraplan PO	14/Oct/16 1:40 PM	26/Oct/16 1:04 PM														"24/Oct/16 2:44 PM;cst;(x) Test Oracle 11 from 5.3 to 5.4 (https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-4951)
+
+"	"24/Oct/16 3:24 PM;cst;(x) Test Oracle 12 from 5.3 to 5.4 (Ticket https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-4951) 
+
+
+
+"	24/Oct/16 3:59 PM;cst;(x) Test MySQL from 5.3 to 5.4 (TIcket https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-4951)	24/Oct/16 4:00 PM;cst;Waiting for ticket https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-4951 and after that checking all databases + MSQL again 	"26/Oct/16 10:24 AM;cst;(/) Test MySQL from 5.3 to 5.4 
+
+Checked History with additionall settings and no differences found."	"26/Oct/16 11:26 AM;cst;(/) Test MSQL from 5.3 to 5.4 
+
+Checked History with additionall settings and no differences found."	"26/Oct/16 12:40 PM;cst;(/) Test Oracle 11gc from 5.3 to 5.4 
+
+Checked History with additionall settings and no differences found."	"26/Oct/16 1:00 PM;cst;(/) Test Oracle 12c from 5.3 to 5.4 
+
+Checked History with additionall settings and no differences found."																																															

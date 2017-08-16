@@ -1,0 +1,7 @@
+Kann man den IC auch auf “Read Only” setzen?	Kann man den IC auch auf “Read Only” setzen?		Technical question	iteraplan Support	26/Jun/17 3:03 PM	27/Jun/17 12:52 PM														"27/Jun/17 8:12 AM;cst;Hallo Daniel, 
+
+der interactive Client benutzt die gleichen Rechte und Rollen wie der classic Client. Somit müsste man einen Benutzer erstellen der nur Lese-Rechte hat. Das bedeutet aber auch, das er nur Lese-Rechte im classic Client hat. 
+
+ Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	27/Jun/17 12:30 PM;dne;Ok, danke -> Close																																																					

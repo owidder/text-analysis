@@ -1,0 +1,1 @@
+Post standalone - REST	add post methods to resource, service and manager	91844	Sub-task	iteraplan Thunderduck	28/Jul/16 4:40 PM	05/Sep/16 10:59 AM																																																																				

@@ -1,0 +1,21 @@
+Excel Vorlage	Ich tue mich etwas schwer mit der "Excel Vorlage". Was kann ich dort genau machen ? Nur die Textgrösse, Art, Farbe ? Kann ich dort auch Inhalte filtern (weglassen) oder Reihenfolgen ändern ?		Technical question	iteraplan Support	29/Sep/16 9:48 AM	12/Oct/16 8:32 AM														"29/Sep/16 9:57 AM;cst;Sehr geehrter Herr Zerrer,
+
+vielen Dank für Ihre Anfrage.
+
+Um welche ""Excel Vorlage"" handelt sich bei Ihrer Anfrage?
+Geht es um die Vorlage für den Export und Import? 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	29/Sep/16 10:57 AM;wolfgang.zerrer@festo.com;bei "tabellarischen Auswertungen" kann man, wenn die Ausgabe auf Excel steht eine Vorlage auswählen. Um diese Vorlage dreht sich meine Frage	"29/Sep/16 2:27 PM;cst;Sehr geehrter Herr Zerrer,
+
+vielen Dank für Ihre Antwort.
+
+In der Vorlage können nur die Textgrösse, Art und Farbe eingestellt werden.
+Ein Filtern in der Vorlage selbst, ist nicht möglich.
+
+Dafür können Sie auf der Seite ""Tabellarische Auswertungen"" das Ergebnis ja vor selektieren.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	12/Oct/16 7:44 AM;wolfgang.zerrer@festo.com;den Request kann man schließen																																																			

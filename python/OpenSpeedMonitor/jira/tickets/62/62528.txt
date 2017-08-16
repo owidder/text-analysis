@@ -1,0 +1,1 @@
+Der Tab "Connectivity" wird unter "Measurement results" -> "Results" nicht angzeigt	Es erscheint "Page | Measured Step" und "Browser | Location", aber kein "Connectivity".		Bug	OpenSpeedMonitor	04/Nov/15 6:01 PM	05/Nov/15 10:34 PM																																																																				

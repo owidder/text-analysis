@@ -1,0 +1,35 @@
+Rel2-2015: Recent filters for context menu	"+++++++++++++++++
+POSTPONED AFTER APRIL 2015
++++++++++++++++++
+Follow-Up Ticket to IPNINE-226.
+*Summary:*
+Show the last two used filters in the context menu on the first level.
+
+*As-Is:*
+All filters are shown in the context menu on the second level.
+
+*To-Be:*
+The last two filters the user used are shown on the first level. All other filters are still shown on the second level.
+
+*Affected parts of the system:*
+- Nesting cluster diagram
+- context menu
+
+*Approach:* 
+The first and second filter stay on the first level of the context menu. The ordering is dynamic dependant on recent usage by the user. These two filters are no longer shown on the second level (see attached mockup). This mockup informs about positioning and content, it is no styleguide for the layout. Leave the current layout as is.
+
+*Acceptance Criteria:*
+The user starts with the view of an open NCD with IS as inner elements.
+The user opens the context menu for inner boxes with secondary click. 
+In the menu, he hover over ""Show with status"" (Note: Status was recently used filter by user). 
+A second level menu opens immediately on hover.
+The user selects ""Current"".
+The menu structure disappears.
+The diagram is filtered immediately.
+
+The steps above must work with every attribute defined for all building block types available for the inner boxes.
+The steps must work starting with no filtering by attribute, or starting with an existing filtering by attribute.
+
+
+
+"		New Feature	iteraplan PO	24/Nov/14 2:21 PM	13/Jul/15 9:51 AM					context	filter	nesting							13/Jul/15 9:51 AM;sfe;not within our scope for now																																																						

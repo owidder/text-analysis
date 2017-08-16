@@ -1,0 +1,1 @@
+Option "Private" gibt es zweimal in den Advanced Job Settings	!image-2017-06-15-16-48-06-140.png!		Bug	OpenSpeedMonitor	15/Jun/17 4:48 PM	28/Jun/17 9:44 AM														15/Jun/17 4:50 PM;sbr;Anscheinend ist nur das Label von der zweiten Checkbox falsch.																																																						

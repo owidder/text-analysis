@@ -1,0 +1,15 @@
+Range slider should disappears from Menu bar	"Precinditions:
+Use IS as outer type
+Use BF as inner type
+
+Steps to reproduce:
+1. Open Context menu for inner element
+2. Select filtering by numeric properties ->Strategic value
+3. Navigate to filtering settings line in legend
+4. Remove used filtering option
+
+Actual: Range picker stays open in the Menu bar
+Expected: Range picker should disappears from Menu bar eith filtering removing"	47134	Sub-task	iteraplan PO	05/Feb/15 2:33 PM	09/Feb/15 4:17 PM													"Workspace: Windows 8.1
+Browser: Google Chrome 39.0
+Revision: 611"	"09/Feb/15 4:17 PM;dasm;Verified
+Revision 631"																																																						

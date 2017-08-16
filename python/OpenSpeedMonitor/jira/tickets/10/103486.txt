@@ -1,0 +1,5 @@
+On hover/mouseover tooltip with description	"*Summary:*
+
+Show the description of every element on hover
+
+The description is wrapped after 10 lines (line ends with ""\n"" or ""\r"")"		New Feature	iteraplan Speedbird	22/Nov/16 5:02 PM	16/Dec/16 4:12 PM														16/Dec/16 4:12 PM;ants;https://iteraweb.iteratec.de/fisheye/cru/IP-228																																																						

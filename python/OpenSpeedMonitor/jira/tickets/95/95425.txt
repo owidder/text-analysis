@@ -1,0 +1,15 @@
+Coloring of the pie chart	"*Summary*
+The pie chart segments should be colored by selected attribute values.
+By default the pie chart should be colored by the first attribute value (numeric or enum) from the list depending on selected language
+There should be a segment for undefined values
+
+*Implementation Details:*
+* Use common classes for coloring like in the Masterplan Diagram etc.
+* Implement the colorpicker in the legend like in the Masterplan Diagram etc.
+* Present coloring option in the menu link in the Masterplan/Poertfolio diagram etc. (dark/light & red/green)
+* Highlight actual selection in the toolarea coloring section
+* Url: Save coloring the url
+
+*UI:*
+* Legend: Show the coloring in the legend
+* Toolarea: Add entry ""Coloring""/""Einfärbung"" with icon (cp. portfolio diagram)"		New Feature	iteraplan Speedbird	07/Sep/16 9:48 AM	19/Oct/16 4:06 PM														28/Sep/16 3:14 PM;msr;If a new type is selected, coloring and filtering will be reset to the defaults of the new type																																																						

@@ -1,0 +1,5 @@
+Enable clipping in Landscape diagram (SVG)	Enable clipping in Landscape diagram for output format SVG. 	46784	Sub-task	iteraplan PO	04/Sep/14 3:13 PM	26/Sep/14 11:06 AM														"26/Sep/14 11:06 AM;sfe;Two things I've noticed:
+* Texts on both top and side axes are not affected by the clipping setting. When too long, the texts are shortened with a reference to the according names legend entry.
+* When disabling clipping AND text shrinking, texts in content elements can overflow despite activated names legend
+
+After discussion with [~wfr], it was decided that these points are acceptable as of now."																																																						

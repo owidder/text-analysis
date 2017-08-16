@@ -1,0 +1,1 @@
+CRUD-Views für JobGroup-assoziierte Events: shortName und HtmlDescription einschränken	in shortName und HtmlDescription soll kein HTML enthalten sein; alle Tags (erkennbar an <...>) werden vor dem Speichern entfernt		Bug	OpenSpeedMonitor	05/May/15 3:29 PM	11/May/15 6:02 PM																																																																				

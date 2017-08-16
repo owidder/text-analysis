@@ -1,0 +1,13 @@
+Jobs können keine Tags zugewiesen werden	"Versucht man einen Job zu erstellen und diesen dabei Tags zu geben, so wird folgende Exception geworfen:
+
+
+
+Caused by: groovy.lang.MissingPropertyException: No such property: tagService for class: de.iteratec.osm.measurement.schedule.Job
+
+	at grails.plugins.taggable.Taggable$Trait$Helper$_findAllTagsWithCriteria_closure11.doCall(Taggable.groovy:196)
+
+	at grails.plugins.taggable.Taggable$Trait$Helper.findAllTagsWithCriteria(Taggable.groovy:194)
+
+	at de.iteratec.osm.measurement.schedule.JobController.tags(JobController.groovy:390)
+
+	... 6 common frames omitted"		Bug	OpenSpeedMonitor	15/Jun/16 11:26 AM	15/Jun/16 11:53 AM																																																																				

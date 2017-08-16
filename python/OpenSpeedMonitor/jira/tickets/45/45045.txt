@@ -1,0 +1,1 @@
+New release produces a copy of sub-systems	Doing an "new release" should produce new releases of the corresponding sub-systems, not copies of them.		Improvement	iteraplan PO	19/Jul/11 1:41 PM	25/Aug/11 10:41 AM														25/Aug/11 10:41 AM;kvo;Fixed mit neuem Verhalten von ITERAPLAN-155																																																						

@@ -1,0 +1,23 @@
+Als Anwender möchte ich eine geeignete Ergebnisspräsentation der SSLyze Ergebnisse	"Aktuell werden die SSLyze Ergebnisse im Rahmen der secureBoxEngine Prozesse nur als einfache JSON Strings ausgegeben. Schöner wäre hier eine passende HTML Aufbereitung mittels AngularJs und Bootstrap CSS.
+
+
+
+Umgesetzt werden müsste das in folgendem Formular:
+
+https://iteragit.iteratec.de/iterasecurity/secureBoxEngine/blob/develop/src/main/webapp/forms/sslscan/approve-ssl-scanner-results.html (vgl. portScannerResult)
+
+
+
+Als Beispiel kann man sich dazu die NMAP Umsetzung anschauen:
+
+https://iteragit.iteratec.de/iterasecurity/secureBoxEngine/blob/develop/src/main/webapp/forms/portscan/approve-port-scanner-results.html (vgl. sslScannerResult)
+
+
+
+Für die Aufbereitung kann z.B. eine Tabelle, Icons usw. verwendet werden.
+
+
+
+Visuelle vorlagen könnten z.B. folgende sein:
+
+* https://observatory.mozilla.org/analyze.html?host=iteratec.de&third-party=false (TLS Observatory)"		Story	secureCodeBox	13/Sep/16 4:33 PM	21/Dec/16 8:45 PM					Energy	iteratec	students																																																													

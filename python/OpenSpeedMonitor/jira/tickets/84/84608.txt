@@ -1,0 +1,21 @@
+iteraplan 5.2	"Guten Tag
+
+Muss die Oracle DB für iteraplan 5.2 angepasst werden, respektive migriert werden?
+
+Besten Dank für die Rückmeldung
+
+
+
+FG A. Studer"		Technical question	iteraplan Support	17/May/16 9:43 AM	20/May/16 8:32 AM														"17/May/16 4:31 PM;msr;Guten Tag Herr Studer,
+
+
+
+ja, die Oracle-Datenbank muss von iteraplan Version 5.1 nach 5.2 migriert werden.
+
+
+
+Mit freundlichen Grüßen
+
+
+
+M. Schrumpf"	19/May/16 11:14 AM;alfred.studer@emmi.com;Wo finde ich die Migrationsscript. Im Mail, welches ich erhalten habe bezüglich der neuen Version, sind diese Angaben nicht drin.	19/May/16 12:29 PM;sfe;In dem Installationspaket der neuen iteraplan-Version finden Sie einen Ordner "upgrade", in welchem sich Upgradeinformationen und Migrationsskripte befinden.	19/May/16 2:39 PM;alfred.studer@emmi.com;super danke, kann somit geschlossen werden																																																			

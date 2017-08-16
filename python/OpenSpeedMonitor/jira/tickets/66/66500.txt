@@ -1,0 +1,59 @@
+Separate relationPath into relationshipEnd and property	"*Summary:*
+
+Separate relationPath into relationshipEnd and property
+
+
+
+*Actual:*
+
+The relationshipEnd and the property are concated into 1 string separated by a ""/"".
+
+
+
+*To-Be:*
+
+Separate in 2 different strings in the whole code.
+
+By reading from the url in the lsdConfiguration separate the url-string directly in the 2 strings.
+
+The relationshipEnd part may still contain several relationshipEnd persistent names joined by ""/"", but the property has to be separate.
+
+
+
+*Affected js-files:*
+
+* FilterDialogBuilder: Put the relationPath out of the persistentName and in a new field. Transfer this new field to the lsdConfiguration
+
+* lsdConfiguration: Adapt the ""setFilter""-function with new field *AND* adapt the ""Read & apply parameters from query"" to parse the url
+
+* combinedFilter: Adapt ""addFilter""
+
+* SingleFilterObject: Constructor with new parameter for path"		Improvement	iteraplan PO	12/Dec/15 12:24 PM	21/Dec/15 1:04 PM														16/Dec/15 7:51 PM;msr;@reviewer: I'm available for questions from 21st Dec on.	"21/Dec/15 8:17 AM;dam;code looks good. 
+
+I don´t like overwriting of parameter at IfdConfiguration, setFilter() and deleteFilter();
+
+
+
+Current Filters not localized. 
+
+
+
+Attributes on LSD Axis not possible
+
+
+
+PropertyOf Filer for text fail.  
+
+*Reproduce* default LSD -> propertyOf  filter -> interface -> Discription with any Value"	21/Dec/15 9:10 AM;dam;commit 2187 was wrong 	"21/Dec/15 1:03 PM;msr;None of the bugs was related to this ticket.
+
+
+
+1) Current Filters not localized: No longer reproducable:
+
+
+
+2) Attributes on LSD Axis not possible: ITERAPLAN-4270
+
+
+
+3) PropertyOf Filer for text fail: ITERAPLAN-4269"																																																			

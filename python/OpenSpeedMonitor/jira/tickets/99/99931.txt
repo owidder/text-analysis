@@ -1,0 +1,17 @@
+Check 2nd half of third party libraries	"Download the excel file *Library-Versions-iteraplan_5_4.xlsx* attached to the following wiki page:
+
+https://iteraweb.iteratec.de/confluence/display/ITPL/Used+Libraries
+
+
+
+Check for the second half of the dependencies (starting from *Bibliothek Restlet*):
+
+* Were there any critical security updates since iteraplan 5.3?
+
+** If yes, create ticket to update the library
+
+
+
+Update the excel file and merge with the file on the wiki page again.
+
+"		Task	iteraplan PO	20/Oct/16 11:20 AM	21/Oct/16 5:06 PM																																																																				

@@ -1,0 +1,3 @@
+Fix Bug 2: URL is always "one value behind"		82258	Sub-task	iteraplan PO	27/Apr/16 11:25 PM	03/May/16 11:22 AM														"28/Apr/16 3:23 PM;tam;Fixed by adding $scope.$apply
+
+Unfortunately I cann't explain why do we need this fix."	03/May/16 11:22 AM;mse;Bug fix tested successfully.																																																					

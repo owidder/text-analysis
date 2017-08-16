@@ -1,0 +1,11 @@
+Escape from "no elements to display" in LSD	"In the LSD, the message ""no elements to display"" is displayed if one of the two axes has the length 0. This can happen if there are no building blocks of the type of the axis, or if none of the building blocks fulfills the selected axis filter.
+
+
+
+To get back to a state where a diagram is displayed, the user should be able to change the axis association and axis filters for both x and y axis.
+
+
+
+Build an according tool area which is displayed in the ""no elements to display"" case."		Improvement	iteraplan PO	30/Sep/15 10:09 AM	30/Sep/15 3:42 PM														"30/Sep/15 2:07 PM;dam;with filtering it´s not possible to have no axis title. because of this logic we could always show both axes and could  open the toolArea in every case.
+
+i removed ""no elements to display"" and the messagePanel. they were not longer used"																																																						

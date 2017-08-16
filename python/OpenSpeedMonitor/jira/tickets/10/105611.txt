@@ -1,0 +1,33 @@
+Migration for Filter	"EBNF for serialized Combined Filter
+
+
+
+
+
+{code:java}
+
+combinedFilter = primaryFilter C/ levelFilter C/ relEndFilters;
+
+primaryFilter= andFilter;
+
+levelFilter = filterValue;
+
+relEndFilters = relEndFilter C/ relEndFilter C/...;
+
+relEndFilter = relEndPersistentName R/ connected R/ andFilter;
+
+connected = 0  1;  //is connected-filter or noConnection-filter?
+
+andFilter = orFilter A/ orFilter A/ ...;
+
+orFilter = singleFilter O/ singleFilter O/ ...;
+
+singleFilter = filterType S/ propertyPersistentName S/ operator S/ filterValues;
+
+filterType= text  enum  num  date  duration;
+
+{code}
+
+
+
+filterValue, propertyPersistentName, relEndPersistentName, operator, filterValues are string values"		New Feature	iteraplan Thunderduck	13/Dec/16 10:23 AM	26/Jan/17 4:13 PM																																																																				

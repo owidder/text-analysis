@@ -1,0 +1,3 @@
+Update legend to show additional date intervals	See parent task for details	85219	Sub-task	iteraplan PO	15/Jun/16 2:44 PM	30/Jun/16 10:50 AM														16/Jun/16 10:41 PM;dmkh;Please, when review this ticket, see also revision *"3526, TERAPLAN-4723: Updated legend to show additional date intervals, modofied unit tests"*, commit not included because of typo	"24/Jun/16 11:20 AM;roia;Couple of minor comments:
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-32"	29/Jun/16 11:57 AM;dmkh;Fixed after code review																																																				

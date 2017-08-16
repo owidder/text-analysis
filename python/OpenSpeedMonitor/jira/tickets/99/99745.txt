@@ -1,0 +1,15 @@
+1.2 Upgrade-Guide auf den aktuellen Stand überprüfen	"1.2.2 Upgrade-Guide auf den aktuellen Stand überprüfen
+
+
+
+Bitte im History Migration Guide ergänzen:
+
+* Folgende Logs werden geschrieben und enthalten diese Daten
+
+* Execption handling: Wenn ein Changeset nicht migriert werden kann, wird es übersprungen
+
+* Datenbank-Timeouts müssen hoch gesetzt werden?
+
+* Eine Empfehlung für die Speichereinstellung
+
+* Im Falle eines Fehlers bitte sofort den iteraplan-Support einschalten"		Task	iteraplan PO	19/Oct/16 2:12 PM	26/Oct/16 11:24 AM																																																																				

@@ -1,0 +1,6 @@
+Repair History in Business Functions	"Currently the history in the Building Blocks from Business Function doesn't work properly, when adding and removing relations to Business Objects and Informationsystem-Releases. Most of the time a ""No known changes "" appears in the History with the date and time of the change, and sometimes an empty  ""Superordinate Business Function"" box appears in the history when changing the relations.
+
+Expected behaviour:
+ - The history should display what happend to a relation (added/remove) and what the name of this relation is.
+
+"		Bug	iteraplan PO	04/Sep/13 3:08 PM	23/Sep/13 7:52 PM					history									23/Sep/13 3:30 PM;lba;Solved with ITERAPLAN-1891																																																						

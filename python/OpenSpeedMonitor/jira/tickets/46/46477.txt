@@ -1,0 +1,19 @@
+Localize error messages for Import/Export	"In Import/Export, the messages are hard-coded english strings. Convert these strings to messages & message keys.
+
+{code}
+ExportFrontendServiceImpl.java
+187: memBean.addErrorMessage(""The partial export does not support a Filter with a Binding-Set as result"");  
+197: memBean.addErrorMessage(""Invalid query, further information can be found in the iteraplan documentation"");  
+FileDownloadActions.java (4 matches)
+89: memBean.addErrorMessage(""The partial export does not support a Filter with a Binding-Set as result"");  
+99: memBean.addErrorMessage(""Invalid query, further information can be found in the iteraplan documentation"");  
+
+ImportFrontendServiceImpl.java
+112: memBean.addErrorMessage(""No File Selected"");  
+122: memBean.addErrorMessage(""Wrong File Type (use .xls or .xlsx)"");  
+169: memBean.addErrorMessage(""No File Selected"");  
+173: memBean.addErrorMessage(""No Import Strategy Selected"");  
+183: memBean.addErrorMessage(""File too large, at most "" + MAX_FILESIZE_BYTE + "" bytes are supported."");  
+227: memBean.addErrorMessage(""Wrong File Type (use .xls, .xlsx, .xlsm or .zip)"");  
+{code}"		Improvement	iteraplan PO	19/Feb/14 1:00 PM	22/Apr/14 10:46 AM					export	import	message	ui						"22/Apr/14 10:11 AM;bra;localized ImportFrontendServiseImpl
+the other classes do not contain nonlocalized strings anymore"	22/Apr/14 10:46 AM;lba;In the ImportFrontendServiceImpl the messages were replaced with localized messages, in the ExportFrontendServiceImpl, no messages found --> none were replaced																																																					

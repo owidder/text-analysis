@@ -1,0 +1,39 @@
+Add relation property column	"Properties of a relationship type which already is displayed in a column.
+
+The properties should be shown in the same order as the related elements.
+
+Sorting should be turned off for this column.
+
+To get the properties you have to resolve the relations with association objects (like Isr2BoAssociation).
+
+
+
+Sequence for a new relation property column: 
+
+1) add column with (names of) related elements
+
+2) add column with property for that relation.
+
+Before step 1), the column in step 2) is not avaliable in the list of additional columns.
+
+
+
+The new column in step 2) is placed right of its related element (names) column.
+
+Note that the rightmost relationship property column might be anywhere in the column list, if we reorder those columns.
+
+
+
+The relationship column and the corresponding property columns are placed in one column group.
+
+
+
+
+
+"		New Feature	iteraplan PO	10/May/16 11:15 AM	04/Jul/16 1:16 PM														"01/Jul/16 4:47 PM;pma;Review Comments:
+
+Everything fine, a few notes refering jsdoc only:
+
+* ListRowDataBuilder: jsdoc: please add  {Parameter type} + nullable and @function /@public/@method  to all the functions
+
+* ListColumnDefsBuilder: please add jsdoc for the function prepareColumnDef"	04/Jul/16 1:16 PM;mse;Re-review ok.																																																					

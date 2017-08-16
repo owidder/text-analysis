@@ -1,0 +1,14 @@
+Dashboard does not work if an attribute with type enum has a value with a single quote	"If an attribute is defined with type enum and there exist a value with a single quote (e.g. O'Brian) and the value is used by a building block then the dashboard visualisations does no longer work correctly.
+
+This is a general bug. It's also not working for the releases 5.*"		Fault	iteraplan Support	25/May/16 10:00 AM	18/Jun/16 7:00 AM														"30/May/16 1:59 PM;tam;Dear Mr. Haberhauer,
+
+I could reproduce the issue you reported to us.
+
+However the dashboard in the classic client won't be developed anymore, because we will be build the new one in the interactive client in the next releases.
+
+As a workaround I can only suggest not to use speicial characters in the enum values.
+
+With best regards,
+Timur Ametov
+
+"																																																						

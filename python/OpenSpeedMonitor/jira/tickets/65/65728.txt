@@ -1,0 +1,5 @@
+integrate Dialog & new filterCase.js´s into CombinedFilter	"this ticket include the connection between new filterCase.js and the dialog.
+
+
+
+not included is displayed URI,Legend and the usage of operator"	65408	Sub-task	iteraplan PO	04/Dec/15 1:26 PM	15/Mar/16 9:47 AM														15/Jan/16 5:04 PM;msr;Please commit to FilterBranch	15/Mar/16 9:47 AM;sfe;Integration of single filter cases with the filter dialog was done in ITERAPLAN-4340																																																					

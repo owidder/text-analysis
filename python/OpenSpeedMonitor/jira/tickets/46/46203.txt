@@ -1,0 +1,4 @@
+saved Nesting Cluster without any selected element is loaded with all elements selected	"# configure a nesting cluster and deselect all elements on the outer filter.
+# save the nesting cluster
+# load the nesting cluster again
+# filter is reset to all elements being seleted"		Bug	iteraplan PO	23/Oct/13 5:35 PM	15/Sep/14 3:54 PM					cluster	filter	nesting							24/Oct/13 4:35 PM;psc;Minor issue whilst fix would have to be done at the Nesting-Cluster-codebase and thus would imply a further round of intense regression tests to avoid side-effects. Since this issue has been identified in the late phase of the release, it has to be postponed to later version (after 3.2). 																																																						

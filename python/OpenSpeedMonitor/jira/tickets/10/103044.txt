@@ -1,0 +1,55 @@
+Outlook-Webclient: Kennwort ändern nicht möglich	"Derzeit ist es mir nicht möglich mein Kenntwort für Outlook zu ändern. Ich bekomme folgende Meldung (bzw. Screen).
+
+Das funktioniert weder im Office noch mit VPN.
+
+Mein Passwort für „dla“ hatte ich gestern geändert – ist ja mal wieder soweit.
+
+
+
+Client Information
+
+------------------
+
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+
+CPU Class: undefined
+
+Platform: Win32
+
+System Language: undefined
+
+User Language: de-DE
+
+CookieEnabled: true
+
+-----------------
+
+Exception Details
+
+-----------------
+
+Date: Fri Nov 18 2016 14:02:55 GMT+0100
+
+Message: Error: Permission denied to access property ""frameElement""
+
+Url: https://owa.system-hoster.com/ecp/15.0.1210.3/scripts/common.js
+
+Line: 1
+
+
+
+Call Stack
+
+----------
+
+ErrorHandling.$EM@https://owa.system-hoster.com/ecp/15.0.1210.3/scripts/common.js:1:172926
+
+ErrorHandling.showUnhandledException@https://owa.system-hoster.com/ecp/15.0.1210.3/scripts/common.js:1:171997
+
+
+
+Detailed Call Stack"		Task	Infrastruktur	18/Nov/16 2:23 PM	18/Nov/16 3:29 PM	Mailserver													"18/Nov/16 2:35 PM;ehi;Hallo Danny,
+
+
+
+der Fehlermeldung entnehme ich, dass du Firefox verwendest. Bitte versuche die Kennwortänderung über den Internet Explorer. Wenn es dann nicht klappt, bitte ebenfalls den genauen Fehler schicken, ich leite das dann ggfs. an unseren Provider weiter."	18/Nov/16 3:29 PM;dla;InternetExplorer funktioniert!																																																					

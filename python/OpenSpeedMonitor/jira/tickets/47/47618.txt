@@ -1,0 +1,6 @@
+Add icons for NCD and LSD	"New icons by Tanya.
+
+Used on start screen tiles.
+
+PNG-Files are in the ticket:
+https://www.iteraplan.de/issues/browse/IPNINE-453"		Improvement	iteraplan PO	16/Apr/15 2:07 PM	19/Jan/16 1:56 PM					newClient																																																															

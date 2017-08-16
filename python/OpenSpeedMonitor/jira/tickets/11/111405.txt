@@ -1,0 +1,21 @@
+Benutzerdefiniertes Dashboard lässt sic nicht erstellen	"Aufggetreten auf der OTTO-Instanz:
+
+Versuch, das folgende Dashboard abzuspeichern unter dem Namen _otto.de | mobile | HP_entry | letzter Tag_
+
+
+
+https://iteraspeedmonitor.otto.wpt.iteratec.de//eventResultDashboard/showAll?_toEnableLabel=&_toEnableMarker=&graphName=otto.de_Tablet+%7C+OTTO_Homepage_entry_L+%7C+otto-prod-iPad4%3AiPad4+%7C+UMTS+-+HSDPA&alias=&_action_showAll=Anzeigen&selectedInterval=-1&selectedTimeFrameInterval=86400&selectedFolder=48&selectedFolder=49&selectedPages=1&_selectedAllMeasuredEvents=&selectedAllMeasuredEvents=on&_selectedAllBrowsers=&selectedAllBrowsers=on&_selectedAllLocations=&selectedAllLocations=on&_selectedAllConnectivityProfiles=&selectedAllConnectivityProfiles=on&includeNativeConnectivity=false&includeCustomConnectivity=false&customConnectivityName=&selectedAggrGroupValuesUnCached=docCompleteTimeInMillisecsUncached&trimBelowLoadTimes=&trimAboveLoadTimes=&trimBelowRequestCounts=&trimAboveRequestCounts=&trimBelowRequestSizes=&trimAboveRequestSizes=#
+
+
+
+Angemeldet als root. Es kommt die folgende Fehlermeldung und das Dashboard wird nicht angelegt.
+
+
+
+{code}
+
+Beim Speichern trat ein Fehler auf - bitte versuchen Sie es erneut!
+
+{code}
+
+"		Bug	OpenSpeedMonitor	09/Feb/17 9:44 AM	09/Feb/17 12:51 PM																																																																				

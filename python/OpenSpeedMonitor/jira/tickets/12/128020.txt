@@ -1,0 +1,5 @@
+Im Firefox funktioniert der Link auf die Bausteinkachel nicht in der Structure View	"Stellt man in der Datensicht auf Strukturansicht um, so kann man bei Verwendung von Firefox (45.9) nicht über die Bausteinkachel auf die Liste der Bausteine kommen. Die Seite wird einfach nur neu aufgebaut.
+
+
+
+Das Verhalten ist auch in der Demo-Version."		Fault	iteraplan Support	26/Jul/17 10:34 AM																																																																					

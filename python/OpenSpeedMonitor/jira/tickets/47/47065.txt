@@ -1,0 +1,11 @@
+Create Installer test sheet	"Create new test sheet for our installer in a sub folder of {{doc/test/}}.
+
+possible cases:
+* single-authentication method installer
+* multi-authentication method installer
+** LDAP
+** iTURM
+* single-authentication method installer with customized authentication method (look in customizations for one of those)
+* https/http
+* databases
+* ..."	47060	Sub-task	iteraplan PO	17/Oct/14 2:07 PM	24/Oct/14 1:14 PM																																																																				

@@ -1,0 +1,8 @@
+Bulk operations hit Tomcat limits	"iteraplan uses POST parameters to post the IDs in Bulk-Deletes, Bulk-Updates, and maybe more places (Reports/Diagrams?)
+Some Tomcat versions (e.g. from RedHat - see URL below) have a MAX_COUNT limit of 512 although the default Tomcat limit is 10000 (which still can be exceeded).
+
+Is there another technical option possible that is not hitting these limits?
+Can we update the docs?
+
+See:
+http://www.redhat.com/archives/enterprise-watch-list/2012-April/msg00007.html"		Improvement	iteraplan PO	19/Aug/13 4:23 PM	30/Dec/15 3:17 PM					bulk								Redhat, iteraplan 3.1, security concerned IT operations	19/Aug/13 11:05 PM;laird;It should be possible (i.e. typical AJAX style) to break the deletes into individual deletes or smaller batches. This would have the advantage of not freezing the UI until the entire process completes, but instead display incremental progress.																																																						

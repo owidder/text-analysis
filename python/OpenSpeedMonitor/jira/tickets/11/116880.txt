@@ -1,0 +1,23 @@
+Interaktiver Client unterstützt XWiki-Syntax nicht	"In Bebauungselementen nutzen wir sowohl im Beschreibungsfeld als auch in eigenen Textfeldern die von iteraplan unterstütze XWiki-Syntax
+
+
+
+Erwartetes Verhalten:
+
+- XWiki-Markup wird im interaktiven Client korrekt interpretiert
+
+
+
+Tatsächliches Verhalten:
+
+- es wird der XWiki-Quellcode angezeigt"		Fault	iteraplan Support	28/Mar/17 4:03 PM	29/Mar/17 7:56 AM														"28/Mar/17 4:03 PM;CSchweer@VHV.de;
+
+!grafik.png|thumbnail!"	"29/Mar/17 7:56 AM;cst;Sehr geehrter Herr Schweer,
+
+vielen Dank für Ihre Anfrage.
+
+In Version 5.5. wird die XWiki-Syntax noch nicht korrekt überall interpretiert. Mit Version 6.0 wird diese wieder vollständig im interactiven Client angezeigt werden.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"																																																					

@@ -1,0 +1,28 @@
+Adding of enumeration literals via Excel import causes Error if an attribute group has restricted visibility	"Reproducer (with sample data):
+1. Excel template export
+2. Add a enumeration literal to for example ""Strategic drivers"" (which visibility restrictions for at least one role) in the Excel file
+3. Import the template
+=> LazyInitializationException
+
+"		Bug	iteraplan PO	06/Feb/13 2:03 PM	15/Feb/13 11:04 AM					3.0.5-candidate	Excel	ExcelImport	import	template					"06/Feb/13 2:04 PM;sfe;{noformat}
+Caused by: org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: de.iteratec.iteraplan.model.attribute.AttributeTypeGroup.permissionsRole, no session or session was closed
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:383)
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationExceptionIfNotConnected(AbstractPersistentCollection.java:375)
+	at org.hibernate.collection.AbstractPersistentCollection.readSize(AbstractPersistentCollection.java:122)
+	at org.hibernate.collection.PersistentSet.size(PersistentSet.java:162)
+	at java.util.AbstractSet.equals(AbstractSet.java:75)
+	at org.hibernate.collection.PersistentSet.equals(PersistentSet.java:430)
+	at org.apache.commons.lang.builder.EqualsBuilder.append(EqualsBuilder.java:379)
+	at de.iteratec.iteraplan.model.attribute.AttributeTypeGroup.equals(AttributeTypeGroup.java:405)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.MetamodelExport$ExportRun.addPropertyPermissions(MetamodelExport.java:968)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.MetamodelExport$ExportRun.addPermissions(MetamodelExport.java:935)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.MetamodelExport$ExportRun.addReadPermissionsForMasterDsRoles(MetamodelExport.java:923)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.MetamodelExport$ExportRun.<init>(MetamodelExport.java:224)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.MetamodelExport.loadMetamodel(MetamodelExport.java:202)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.IteraplanMetamodelLoaderImpl.loadConceptualMetamodelMapping(IteraplanMetamodelLoaderImpl.java:88)
+	at de.iteratec.iteraplan.businesslogic.exchange.common.ImportProcess.loadModelAndMetamodelFromDb(ImportProcess.java:133)
+	at de.iteratec.iteraplan.businesslogic.exchange.common.ImportProcess.writeMetamodel(ImportProcess.java:212)
+	at de.iteratec.iteraplan.businesslogic.exchange.excel2.excelimport.ImportServiceImpl.mergeMetamodel(ImportServiceImpl.java:78)
+...
+{noformat}"	06/Feb/13 2:12 PM;sfe;Doesn't seem to happen for other metamodel changes.	"15/Feb/13 11:04 AM;isc;Adding enumaeration literals over the excel import works.
+However, the changes were visible only after cleaning up the session in iteraplan."																																																				

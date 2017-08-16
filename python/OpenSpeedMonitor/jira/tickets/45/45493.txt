@@ -1,0 +1,5 @@
+Fix permission-check for watches	"In the menu, there is ""Watched Elements"" shown, even when the user does not have the appropriate permissions.
+
+On the overview-pages for e.g. the information systems, the actions ""Watch"" and ""Watches"" are shown, even when the user does not have the appropriate permissions.
+
+See Bug #ITERAPLAN-622 for reference"		Bug	iteraplan PO	19/Apr/12 11:42 AM	20/Apr/12 11:00 AM					permissions									19/Apr/12 3:14 PM;pac;Fixed in #16369.	20/Apr/12 10:59 AM;sfe;The "Watch" and "Watches" elements are not shown anymore without the according permission. The "Watched Elements" are still there, but I think that's correct, since a user should be able to see the elements he's subscribed to.																																																					

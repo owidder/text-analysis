@@ -1,0 +1,10 @@
+Tests for Release 3.4	"Super-issue for the release tests.
+
+Priority according to the ordering of the sub-tasks.
+
+How to use the *installer test sheet* (to be created in sub-task 1):
+# The installer test sheet should contain various configurations of installing iteraplan mostly regarding authentication methods
+# When performing the tests from a test sheet, you should use a freshly installed iteraplan according to one of those configurations, preferrably an untested or lesser tested one. If the installation calls for database initialization, but the tests you want to do demand bankdata, you can still create bankdata after the installation.
+# Mark in the installer test sheet which configuration you've used by adding the test ticket number in the first line of the testcase, where either ""Not yet done"" or the other ticket numbers are written
+# If there are issues during installation, add them in the ""Actual"" column of the installer testsheet; if installation is not possible for some reason, you can use your normal development environment to perform the actual test cases
+# Commit the updated installer test sheet under the test issue you are working on."		Task	iteraplan PO	17/Oct/14 1:23 PM	31/Oct/14 10:14 AM					test																																																															

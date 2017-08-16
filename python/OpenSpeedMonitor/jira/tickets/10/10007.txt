@@ -1,0 +1,8 @@
+Anpassung Persistierung WPMV	"Beim Aufrufen des CSI-Dashboards werden die wöchentlichen Page-MeasuredValues (WPMV) berechnet, falls diese noch nicht existieren oder den Status Calculated.Not haben. 
+Zur Berechnung werden für die Kombination CSI-Group/Page für die entsprechende Woche alle HJMV's gelesen und aus diesen ein gewichteter Mittelwert errechnet.
+Die Auswahl der HJMV's erfolgt bisher nach CsiGroup/WptJobConfig. Diese Auswahl muss an das Refactoring der Domains im Zuge der Integration der Multistep-Messung (siehe IT-9) angepasst werden."	10414	Sub-task	OpenSpeedMonitor	28/May/13 5:19 PM	20/Aug/13 10:09 AM														"10/Jul/13 2:03 PM;mzeimer;Der Aufwand für den Berechnungsdienst dürfte vergleichbar mit IT-5 sein (1-2 PT).
+
+Der Aufwand für Anpassung bei der Auswahl ist schwieriger Einzuschätzen. Dieser hängt von Design-Entscheidungen bei IT-4 ab, so z.B. wird es ""nur"" ein abgewandelte Suchanfrage fertiger Datensätze oder muss hier ""manuell"" nachgruppiert werden?"	05/Aug/13 10:31 AM;nkuhn;Die Auswahl der HJMV, die in die Berechnung eines weekly Page-MV eingehen ist anzupassen. Die eigentliche Berechnung sollte sich nicht ändern. Dies ist zu prüfen.	"12/Aug/13 3:05 PM;mzeimer;Tests müssen aufgrund der geänderten Struktur angepasst werden.
+
+Erledigt bei:
+de.iteratec.isocsi.WeeklyPageIntTests"	14/Aug/13 6:34 PM;rhe;Übergabe																																																			

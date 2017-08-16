@@ -1,0 +1,13 @@
+Allow escaping in iteraQl	"Copied from customer question:
+
+
+
+I have Business Processes that contain "" characters in their name. Is there a possibility to use escape characters in IteraQL so that the "" is not handeld as special charcter (which breaks the statement).
+
+
+
+Complete query:
+
+BusinessProcess[@name=""Create brand / TA strategy ""shape the brand""""|@name=""Remove market barriers""|@name=""Manage Partner Relations""|@name=""Produce promotional / media material""|@name=""Plan sales actions / manage customer value""|@name=""Ensure Sales Force Excellence""|@name=""Create tactical marketing plans 'shape the product & market!'""|@name=""Deliver and engage through multiple channels""].unfold(/children)/businessMappings/informationSystemRelease[@standard class=""Standard"" & @typeOfStatus=""Current""];
+
+"		New Feature	iteraplan PO	13/May/16 3:57 PM						iteraql																																																															

@@ -1,0 +1,29 @@
+Remove right-click-functionality in Graphics Reactor	"In the Graphics Reactor, you can right-click on the folders and files. 
+
+ Since this is an unusual operation in a browser, let's put these operations into the gray header.
+
+
+
+*ToDo:*
+
+ # *Instead of right-click on folder*
+
+ put the delete-icon into the header. Drop the open-operation (there are already two other ways of opening a folder)
+
+ *Instead of right-click on a file*
+
+ #  Put the Download-icon into the header, the delete button from 1. should be able to delete both, files and folders.
+
+ Icons in this order from left to right: Upload, Download, Delete, New Folder, Refresh, List/Icons, Search
+
+ # The Execute-Button becomes an action-button (see [https://iteraweb.iteratec.de/confluence/display/ITPL/Buttons] ) and have a look at the position of this button in the *PPT-mockup attached.--> New-Execute-Button.ppt*
+
+ *execute*: active when an xsl-file is selected. If User clicks the inactive button though, he gets a note: ENG: Please select an xsl file. GER: Bitte wählen Sie eine xsl-Datei aus.
+
+ # Please add tooltips to the new Icons in the header --> use the texts that are used in the right-click-menu.
+
+ # These icon-buttons should have active and inactive states as follows:
+
+ *download*: active when a file is selected (folders can't be downloaded)
+
+ *delete*: active when a folder or file is selected."		Improvement	iteraplan Speedbird	24/Jul/17 4:15 PM																																																																					

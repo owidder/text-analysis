@@ -1,0 +1,9 @@
+Check and fix transaction boundaries	"For example in {{TimeseriesCMBaseFrontendService#saveComponentModel}}, two transactions are opened in succession, since our transaction boundary is upon calling certain service methods (not frontend service).
+
+
+
+When doing a single save action, only one transaction should be used.
+
+
+
+This could be happen in other frontend services as well."		Improvement	iteraplan PO	15/Apr/16 5:43 PM																																																																					

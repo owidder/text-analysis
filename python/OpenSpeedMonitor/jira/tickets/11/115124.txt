@@ -1,0 +1,25 @@
+WebEx für 25 Personen für MB Technik bestellen	"Servus zusammen, für das Projekt ""MB Technik"", Kürzel ""mbt"", aus dem Audi-Umfeld benötigen wir ebenfalls wie das myAudi-Team eine WebEx von Cisco, nach Rücksprache mit [~nse] ebenfalls für 25 Personen.
+
+
+
+Im Moment existiert nur ""mbt.team"" als Mailverteiler, eventuell bietet sich hier ein ""mbt.meet@iteratec.de"" als Benutzer an. Primärer Ansprechpartner ist [~tgo].
+
+
+
+Die Konferenzen werden dauernd genutzt und laufen teilweise parallel, so dass hier ein eigener Zugang notwendig ist."		Task	Infrastruktur	16/Mar/17 11:39 AM	22/Mar/17 3:33 PM	Sonstiges													"20/Mar/17 4:54 PM;tgo;Servus [~ehi], servus [~sas]. Bin ich mit dieser Anforderung bei Euch richtig? Benötigt Ihr noch etwas von mir?
+
+
+
+Das nächste Sprint Review ist am Horizont sichtbar, noch ist es nach Sonthofen, aber ich denke nicht dass Ihr nächste Woche allzuviel Zeit und Muße für solch ein Ticket habt, deshalb frage ich jetzt noch einmal nach."	"22/Mar/17 12:13 PM;ehi;Hallo Thorsten,
+
+
+
+ich habe das Paket bestellt, Aktivierungsmail geht an [mbt.team@iteratec.de.|mailto:mbt.team@iteratec.de.] Das ist auch der Anmeldename (für [mbt.meet@iteratec.de|mailto:mbt.meet@iteratec.de] hätten wir eine eigene Mailbox bestellen müssen, da es nicht möglich ist für Verteiler Aliase zu erstellen). Das Kennwort schicke ich dir in einer separaten Mail.
+
+
+
+ 
+
+
+
+Grüße, Elke"	22/Mar/17 3:33 PM;tgo;Meeting aufgesetzt, sieht prima aus.																																																				

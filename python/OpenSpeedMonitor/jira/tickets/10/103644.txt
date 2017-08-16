@@ -1,0 +1,15 @@
+Display query result "bindingSet" and "synthetic"		101798	Sub-task	iteraplan Speedbird	23/Nov/16 1:00 PM	30/Dec/16 3:20 PM														12/Dec/16 12:48 PM;madu;#5437	"19/Dec/16 4:28 PM;mada;Not implement:
+
+- Link from the name-field of the List to Single Element View
+
+- Export as csv or excel
+
+- Quick Search"	"20/Dec/16 8:06 AM;madu;#5519
+
+
+
+Excuse me, but I don't think this comment is applicable here as we don't provide mentioned features for ""bindingSet"" & ""synthetic"".
+
+
+
+Please, specify some applicable arguments"	27/Dec/16 4:01 PM;madu;As per today's discussion with Fabian - no link to single element view should be provided within columns for result types "bindingSet" & "synthetic", no export & quick search features, just two raw tables.																																																			

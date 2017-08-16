@@ -1,0 +1,3 @@
+Change clear symbol in single-value editor	The clear symbol ("x") of the single-value editor in the list view should be replaced by another symbol (e.g. a rubber symbol), which cannot be confused with the cancel symbol (also "x" below the editor pop-up (see screenshot).		Improvement	iteraplan Speedbird	16/Jan/17 2:00 PM	17/Feb/17 3:42 PM														"17/Feb/17 2:22 PM;roia;I haven't found a rubber symbol, so I've used minus.
+
+[~msr], you can select another icon from this set https://material.io/icons/ and let me know which one to use."	17/Feb/17 3:42 PM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-380																																																					

@@ -1,0 +1,37 @@
+Unify English & German date format in the New Client	"""mm/dd/yyyy"" as English date format everywhere in the new client
+
+""dd.mm.yyyy"" as German date format everywhere in the new client
+
+Ensure that the bug https://iteraweb.iteratec.de/jira/browse/IPTS-767 will not appear again
+
+
+
+Please use e.g. 01/02/2017 (""leading zero""). (2nd Jan)
+
+
+
+Please use e.g. 02.01.2017 (""leading zero""). (2nd Jan)
+
+"		Improvement	iteraplan Speedbird	12/May/17 2:57 PM	15/Jun/17 10:56 AM														"06/Jun/17 4:21 PM;pma;DONE: unified dates in all fields in iteraplan
+
+
+
+TODO: export of list in csv format shows sometimes point notation for english dates, see attached. Dates whree the date is >12 will be formed correctly. Otherwise they are shown in point notation. This only appears in date columns and not in duration columns due to the fact that duration columns are stored in strings with ""-""  between the dates.
+
+
+
+Reproduce:
+
+* choose english as global language
+
+* Add the column ""Live (Start)"" to the list of information systems
+
+* enter ""SAP"" in quick search
+
+* export to CSV format
+
+* the dates which have a day value <=12 are shown with point notation
+
+
+
+Note: in ipList-component the function cellCallBack (~l.1683) is the processCellCallBack which is configuring the style in the grid of the csv file. the value of cells.value is at this point in a correct format (03/02/2013), but exporting causes the point notation (03.02.2013)"	13/Jun/17 2:18 PM;msr;Please finish this ticket as Mai will be available earliest next week.	14/Jun/17 4:25 PM;anhv;Cannot reproduce, but found that date format wasn`t unified in filters after refresh page for German localization(appeared English date format).																																																				

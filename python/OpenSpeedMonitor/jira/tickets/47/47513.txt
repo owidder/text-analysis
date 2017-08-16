@@ -1,0 +1,12 @@
+Default coloring in the legend	"Summary: If any coloring profile hasn't defined/selected content elements should be displayed with default (to content type) colors and coloring block in legend shouldn't be displayed
+
+
+Steps to reproduce:
+1. Go to LSD
+2. Select Business function as content type
+Expected: Content elements should be displayed with default (to content type) colors. Information about default colors for used content should be displayed in the legend only with Content and axes lines (coloring block in legend shouldn't be displayed)
+
+(In discussion with Marcel 24.03.2015)
+"		New Feature	iteraplan PO	23/Mar/15 9:22 AM	22/Apr/15 1:59 PM													"Workspace: Windows 8.1
+Browser: Google chrome 39.0
+revision:812"																																																							

@@ -1,0 +1,17 @@
+Implementation: Output format PDF	"*Summary:*
+
+Implement the solution of ITERAPLAN-3889.
+
+
+
+=> Client sends SVG to server. Server returns PDF.
+
+
+
+1. Create a diagram as SVG (exists already)
+
+2. Send the SVG via REST (extend REST interface)
+
+3. Transform the SVG on the server via Batic (maybe new Batik version needed?)
+
+4. Send the pdf asynchronously (as promise) to the client"		New Feature	iteraplan PO	02/Sep/15 3:42 PM	09/Nov/15 11:45 AM					download	ifd	pdf																																																													

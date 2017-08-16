@@ -1,0 +1,1 @@
+Persistenz/Datenmodell CSI-Mapping pro CsiConfiguration			New Feature	OpenSpeedMonitor	24/Sep/15 1:45 PM	15/Dec/15 10:51 AM														15/Dec/15 10:51 AM;bwo;Die Domain de.iteratec.osm.csi.CsiConfiguration besitzt nun eine Liste von TimeToCsMappings. Die Beziehung ist unidirektional und geht von CsiConfiguration aus.																																																						

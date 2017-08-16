@@ -1,0 +1,3 @@
+Vereinfachung Filter Joblist	"Die Filter auf der Jobliste sollen vereinfacht werden. Es soll nur noch ein input geben in das der Filter-Wert eingetragen werden kann. Per Default greift der Filter dann auf allen Attributen, die man aktuell einzeln filtern kann. 
+
+Es gibt Toggle-Buttons, mit denen man die Attribute einschränken kann, auf die der Filter angewendet wird."		Task	OpenSpeedMonitor	16/Nov/16 4:41 PM	06/Jan/17 8:57 AM																																																																				

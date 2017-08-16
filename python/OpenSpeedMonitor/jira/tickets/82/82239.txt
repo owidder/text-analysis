@@ -1,0 +1,1 @@
+Persistenz um den Teamfilter erweitern, d.h. mit den Ergebnissen zusammen persistieren	Ziel ist das Feld in elasticsearch/kibana als filter für die Ergebnisse nutzen zu können.	82237	Sub-task	secureCodeBox	27/Apr/16 1:03 PM	29/Apr/16 2:13 PM																																																																				

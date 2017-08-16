@@ -1,0 +1,9 @@
+Login without layout due to missing session cookie	"Behaviour:
+A user logs in. Sometimes only the credential fields are cleared and nothing else happens. Sometimes it takes a lot of time and then the start page appears without any layout. IE console shows ""SEC7113: Das CSS wurde aufgrund eines fehlerhaften MIME-Typs ignoriert."" In the URL always the session ID is provided. Log with debug level regarding security classes shows that at the time of the login, within a second, several sessions are opened, many of those anonymously authenticated. The cookie information shows no saved session cookie."		Bug	iteraplan PO	29/Jan/14 1:27 PM	29/Jan/14 1:30 PM					cookie	css	permissions							"29/Jan/14 1:30 PM;sfr;Root cause
+IE does not accept cookies if the subdomain contains an underscore or any other character not specified in RFC 883. Therefore the session cookie could not been saved and provided for subsequent requests after login.
+
+Resolution
+Renaming of URL following RFC specification (in this case avoid the underscore).
+
+Workaround
+Maybe a workround would be to change IE's properties so that all cookies are allowed, but this could not been tested."																																																						

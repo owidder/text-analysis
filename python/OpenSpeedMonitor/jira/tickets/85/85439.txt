@@ -1,0 +1,69 @@
+Mapping von der OSM API	"Die REST-API vom OSM muss so angepasst werden, dass die Mappings von beliebigen Domains abgefragt werden können, z.B.:
+
+
+
+Es existiert in der Datenbank des OSM ein Job. Über die API muss nun abefragt werden können, welchen Namen die der Job mit der entsprechenden ID besitzt. 
+
+
+
+Hierfür sind aktuell die Domains wichtig, welche für die Detaildaten abgefragt werden:
+
+* Browser
+
+* Job
+
+* JobGroup
+
+* Page
+
+* Location
+
+* Connectivity
+
+
+
+Weiterhin sollte es eine Möglichkeit geben, mehrere Domainmappings in einem Request zu bekommen, z.B. eine Anfrage mit folgendem JSO:
+
+{""JobGroup"":[1,2,52],
+
+ ""Browser"":[3]}
+
+
+
+Als Antwort bräuchten wir dann alle Mappings die aufgelöst wurden, und eine Map mit IDs die nicht aufgelöst wurden konnten, z.B:
+
+
+
+{""Resolved"":{
+
+                    ""JobGroup"":{
+
+                                        1:""JobName"",
+
+                                        2:""Another Job""
+
+                     },
+
+                     ""Browser"":{
+
+                                      1:""Firefox""
+
+                                      },
+
+""Missing"":{
+
+                   ""JobGroup"":[52]
+
+                }
+
+}
+
+
+
+ "		Task	OpenSpeedMonitor	25/May/16 2:13 PM	22/Jul/16 2:12 PM														"22/Jul/16 10:27 AM;bwo;Job und Connectivity werden nicht mehr benötigt.
+
+
+
+Außerdem muss die Abfrage für Page, Browser und Location umgedreht werden -> Der Service schickt die Namen und erwartet als Antwort die ID. 
+
+Die JobGroup wird weiterhin anhand der ID Abgefragt und die Antwort enthält den Namen."																																																						

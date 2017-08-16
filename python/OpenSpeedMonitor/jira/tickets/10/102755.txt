@@ -1,0 +1,19 @@
+Spring security configuration + exception handling	"*Summary:*
+
+Adapt Spring Security Configuration to use new login-page and route.
+
+Adapt exception handling.
+
+
+
+*Details:*
+
+* Adapt {noformat} applicationContext-Spring-Security.xml {noformat} to use new login-page and route
+
+* Also adapt login-page to show correct localisation-keys for different server-exceptions (by url-configuration)
+
+* Take care, some exceptions are thrown with different mechanisms like UserContextInitialisationServiceImpl.java contains some of this errors (reproducable with missing license)
+
+* For incorrect license-message include a link to enter this license (ticket: IPTS-343)"		New Feature	iteraplan Speedbird	16/Nov/16 4:34 PM	19/Dec/16 7:14 PM														15/Dec/16 3:07 PM;mada;Important note: security for customizing resources	"19/Dec/16 7:14 PM;ants;Review done with comments:
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-244"																																																					

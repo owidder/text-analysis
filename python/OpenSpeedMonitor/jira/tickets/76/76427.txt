@@ -1,0 +1,5 @@
+NMAP Port-Scan asynchron ausführen (external service task pull)	"Da ein Port-Scan ziemlich lange dauern kann (wenn z. B. alle Ports gescannt werden), sollte er asynchron ausgeführt werden.
+
+
+
+Dies ist eine gute Möglichkeit die ""external service task"" Funktion der Camunda Engine auszuprobieren. Hierbei dreht sich die Verwantwortung von Push zu Pull um und der µServie pullt aktiv offene Tasks."		Improvement	secureCodeBox	09/Mar/16 9:55 AM	19/Jun/16 1:03 PM	secureBoxNmap				iteratec	OTTO																																																														

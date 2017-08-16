@@ -1,0 +1,1 @@
+iteraQl - Next Generation	iteraQl2 is to be developed on the basis of the elasticeam package.		New Feature	iteraplan PO	16/Mar/12 1:18 PM	16/Mar/12 2:26 PM					elasticeam	iteraQl	query	reporting																																																												

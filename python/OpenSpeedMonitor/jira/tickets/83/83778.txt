@@ -1,0 +1,3 @@
+Update GoJS implementation to handle additional columns	"Define the data structure, which is necessary for GoJS
+
+Update the mpdGraphBuilder and mpdDiagramBuilder to handle the updated data format."	83118	Sub-task	iteraplan PO	10/May/16 1:07 PM	30/May/16 2:14 PM														20/May/16 12:11 PM;dmkh;These tickets are related and also functionality for diagram was already implemented in GoJS.	30/May/16 2:14 PM;msr;Functionality implemented in ITERAPLAN-4601																																																					

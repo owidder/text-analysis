@@ -1,0 +1,11 @@
+Support for soft ranges (upper and lower limits) and "strongly recommended" attributes	"The iteraplan user's guide states the following regarding mandatory attributes and ranges:
+
+Mandatory Attribute: this attribute serves as a notice field. If the user omits an entry from a mandatory field when defining or modifying Building Blocks, no error message is issued. However, a Consistency Check can be performed to flag this error (see Consistency Checks).
+
+Numeric attributes: it is possible to specify a lower and upper limit for attribute values, and a unit. Attribute values are still accepted even
+if they are outside the permitted range, but are shown in red font in the view mode of the Building Block. The use of colour enables iteraplan to indicate a possible inconsistency in attribute values without getting in users' way unnecessarily. Out-of-range attribute values can also be revealed by a Consistency Check (see Consistency Checks). Limit values can be defined for each Numeric Attribute. These are relevant in diagram reports, in which colours can be assigned to defined ranges. With the default values, the ranges are selected such that the instances of the attribute are evenly distributed. However these limits are user-definable (see Defining Ranges for Numeric Attributes).
+
+To support this understanding of soft ranges and mandatory attributes the following changes are neccessary:
+- Change single edit of information at EA data
+- Analyze impact on visualizations
+- new concept of ""model Warning"" for the elastic me core"		New Feature	iteraplan PO	24/Sep/13 11:04 AM	30/Dec/15 3:34 PM					cfnr																																																															

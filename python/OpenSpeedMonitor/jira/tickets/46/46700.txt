@@ -1,0 +1,26 @@
+Using REST to write single building block information (Json Format): 500 Error related to attribute permissions	"_Reproduce (with sample data):_
+1. Log into iteraplan as system
+2. Change role mainUser to include permission to use REST API
+3. Log out and log in as mainuser (or any other user with mainUser role)
+4. GET request for a building block, for example {{../iteraplan/api/data/informationsystem/224}}
+5. PUT the json data you got in step 4 to the same URL again, no changes necessary
+
+_Expected:_
+200, message ""no changes""
+
+_Actual:_
+500 Internal Server Error. Html code for an error page in the response.
+Logs show stacktrace with:
+{noformat}
+...
+Caused by: de.iteratec.iteraplan.elasticmi.exception.ElasticMiSecurityException: property State of health[0,1]: de.iteratec.iteraplan.model.attribute.EnumAT.State of health (unique: false, temporal: false, suitableForDisplay: true, technical: false){RPropertyExpression} is not ediable
+...
+{noformat}
+
+_Reason:_
+Role MainUser has view, but no write permissions for attribute group Strategic measurement categories.
+The {{JsonModelMapper}}, in this instance more specifically {{JsonBasePropertyMapper}}, tries to build the right-sided model by setting the property values of the right-sided objects, which isn't allowed due to the permission settings.
+
+_Solution:_
+When building the right-sided models, edit and create permissions mustn't have an effect. This could be achieved, for example, by introducing a ""technical properties setter"", or by using a permisson-unaware metamodel for building the right-sided model.
+To be discussed with [~wfr]."		Bug	iteraplan PO	23/Jun/14 12:41 PM	01/Jul/14 12:58 PM					import	permissions								26/Jun/14 1:19 PM;dop;The REST import has now the same behavior as the excel import. If a user wants to update an attribute value in an attribute group for which he doesn't have the permission, this attribute value will be ignored by the import. The same behavior applies if the right-sided model for import is built up; the non editable attributes will be masked. 																																																						

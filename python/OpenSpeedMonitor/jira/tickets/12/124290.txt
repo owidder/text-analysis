@@ -1,0 +1,23 @@
+Saved Queries (Testlink)		124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:20 PM	20/Jun/17 11:44 AM														"15/Jun/17 9:37 PM;naba;Test cases: Saved Queries ip-35, 36, 37, 38, 39
+
+ For smoke test please use
+
+ [https://doc.iteraplan.de/display/iteraplan60/Saved+Queries] (examples and tips)
+
+
+
+Please be creative and progressive.
+
+
+
+*Note*:
+
+ - Work with documentation is still in progress
+
+ - Due to some technical issues some test cases are still out of date."	"20/Jun/17 11:44 AM;pma;Note for the documentation: 
+
+In the column ""content"" of the save queries page, all building block types are displayed of an ncd diagram, see attached. The documentation has to be adapted if this behavior is wished. Further details will be discussed with [~msr] and Rost as the situation is no blocking issue.
+
+
+
+(documentation already updated see https://doc.iteraplan.de/display/iteraplan60/Saved+Queries)"																																																					

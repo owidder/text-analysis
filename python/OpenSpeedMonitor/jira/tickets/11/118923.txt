@@ -1,0 +1,26 @@
+Download 5.2 Corporate	"Hallo Supportteam,
+
+
+
+können Sie uns den Downloadlink für die 5.2 Corporate Version zur Verfügung stellen? Wir können derzeit keinen Releasewechsel durchführen und wollen gerne mit der Corporate-License SSO mit AD einsetzen.
+
+
+
+Viele Grüße
+
+Karsten Horn"		Technical question	iteraplan Support	18/Apr/17 11:43 AM	18/Apr/17 1:27 PM														"18/Apr/17 1:09 PM;cst;Guten Tag Herr Horn,
+
+vielen Dank für Ihre Anfrage.
+
+Hier finden Sie den Download für die Version 5.2 mit benötigten Zugangsdaten:
+
+[https://download.iteraplan.de/corporate/5.2.0/iteraplan-5.2.0-corporate-installer.zip]
+
+Login: corporate
+Password: nbAT01Qx
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+ "	18/Apr/17 1:25 PM;karsten.horn@allianz.de;Prima. Vielen Dank. Der Download hat geklappt. Sie können das Ticket schließen.																																																					

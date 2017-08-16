@@ -1,0 +1,21 @@
+[Job Schedule-Ansicht] Kleinere Layout-Anpassungen	"Die folgenden Anpassungen würde ich gerne noch einbauen:
+
+
+
+* {color:green}SCHON UMGESETZT{color}
+
+Bezeichner vor die Überschriften:
+
+WPT-Server: \[Server-name\]
+
+Location: \[Location-Name\]
+
+* Zeitraum von/bis soll rechts ausgerichtet werden und zwischen der Auswahl _1 Stunde, 2 Stunden, ..._ und der Auswahl _Überschneidungen anzeigen_ angezeigt werden
+
+* Die Auswahl _1 Stunde, 2 Stunden, ..._ und die Auswahl _Überschneidungen anzeigen_ bitte statt als radio buttos als toggable button-groups anzeigen (siehe http://getbootstrap.com/2.3.2/components.html#buttonGroups)
+
+* {color:green}SCHON UMGESETZT{color}
+
+horizontal rulers bitte nur jeweils einen unter die Überschrift des WPT-Servers
+
+* Bitte die Auswahl _Überschneidungen anzeigen_ beim Laden der Seite initial anschalten."		Bug	OpenSpeedMonitor	04/Nov/15 6:08 PM	06/Nov/15 11:28 AM																																																																				

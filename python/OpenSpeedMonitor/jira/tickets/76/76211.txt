@@ -1,0 +1,37 @@
+Cleanup dependency-usage	"*IS:*
+
+* a bower configuration exists and is checked into SVN
+
+* the downloaded bower components are checked into SVN, too
+
+* _bower install_ is _not_ part of the grunt build
+
+* still some libs in _iteraplan-9/app/js/libs_ folder
+
+
+
+*BACKGROUND:*
+
+The dependencies are checked into SVN because the online source for their resolution is not reliable (WFR) .
+
+
+
+*SHOULD:*
+
+* now libs-folder (dependencies should be managed by bower only)
+
+* dependencies are defined in bower-config
+
+* the path to dependencies should be nicer than 'bower-components' (e.g. 'libs')
+
+* dependencies are _not_ checked in
+
+* resolving dependencies is part of the (grunt-) build
+
+* we use a company repository to proxy and share used dependencies (is this possible with the nexus-installation we already have?)
+
+* analyze if the same can be done with the checked-in node-modules
+
+
+
+*Talk to TGO!*"		Improvement	iteraplan PO	08/Mar/16 10:33 AM	14/Jun/16 11:07 AM					build_process	nic																																																														

@@ -1,0 +1,9 @@
+APK erstellen und installieren	"Installations-Doku (Wiki) anlegen
+
+
+
+Auf nicht-S6 installieren => welche Geräte funktionieren auch?
+
+
+
+Deployment-Prozess einmal testen"		Task	EAMV15	20/Nov/15 5:29 PM	13/Jan/16 9:17 AM														13/Jan/16 9:17 AM;pkh;Apk-Dateien für Indoor und Outdoor Variante wurden erstellt (mit Signatur) und auf CD gebrannt.																																																						

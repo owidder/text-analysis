@@ -1,0 +1,17 @@
+Coloring (Diagram and Colorpicker)		124266	Sub-task	iteraplan Speedbird	16/Jun/17 11:57 AM	19/Jun/17 5:03 PM														"16/Jun/17 11:59 AM;naba;Test cases: Coloring (Diagram and Colorpicker) - ip-25, 26, 73, 74
+
+For smoke test please use
+
+https://doc.iteraplan.de/display/iteraplan60/Coloring (examples and tips)
+
+
+
+Please be creative and progressive.
+
+
+
+*Note*:
+
+ - Work with documentation is still in progress
+
+ - Due to some technical issues some test cases are still out of date."	19/Jun/17 4:59 PM;dmkh;Used IE-11 for testing, one issue found in PCD: ITERAPLAN-5414																																																					

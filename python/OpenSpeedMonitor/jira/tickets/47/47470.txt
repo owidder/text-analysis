@@ -1,0 +1,58 @@
+Add to menu two submenus for attributes as axis	"for x and y axis
+
+one list for of enum  attributes, alfabetically sorted
+
+menu saves choice in configuration.
+
+scope of this ticket: both menu and configuration class.
+
+Note: date attributes taken from the scope of this ticket, because they are not needed now. See comments below.
+"		New Feature	iteraplan PO	04/Mar/15 3:05 PM	07/Apr/15 1:28 PM														"25/Mar/15 2:22 PM;wfr;TODO WFr discuss with Andrii:
+
+date attributes for axes are farer down the backlog.
+So the menu should NOT show these attributes.
+
+This ticket should be easier without date attributes
+
+alternative: keep it in the ticket scope, and the code, but hide it by a hard coded feature switch.
+
+TODO WFr: 
+* discuss
+* change ticket text
+* add ticket for menu change
+* refer to this ticket
+
+
+Discussion with Andrii:
+* reduce scope of this ticket: no date attributes (yet)
+* create new ticket to add date attributes to the menu, later
+
+Also discussed: attribute lists must be dynamic, not hard coded.
+Reason: almost all attributes are user defined, and can be totally different from one installation (for client A) to another (for client B).
+
+"	"02/Apr/15 12:41 PM;dasm;Verified
+revision 873"	"02/Apr/15 3:35 PM;msr;lsdContextMenuProcessor.js:
+
+* I don't find a unit test in contextMenuProcessor-spec for the method ""getEnumAxisPropertyOptions"". Could you please add one or is it already existing?
+* Why is function ""diagramTitleOptions"" (line 55) unused? Maybe no longer needed? Or preparation for later?"	"02/Apr/15 3:59 PM;msr;Please change the naming of the menu entries:
+
+1. Level of context menu:
+
+Change column association >
+
+2. Level of context menu:
+
+Relation >
+Attribute >
+
+3. Level of context menu:
+
+Upper path (Relation):
+Business Functions
+Information Systems
+... (dynamically calculated)
+
+Lower path (Attribute):
+Complexity
+State of Health
+... (dynamically calculated)"	07/Apr/15 8:12 AM;msr;As in IPNINE-374 : It should not be possibel to select the same attribute (like Complexity) on both axes. Please disable this option.	07/Apr/15 10:51 AM;anma;The options has been disabled																																																	

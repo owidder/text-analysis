@@ -1,0 +1,42 @@
+Permissions for Interactive Client	Considering the commercial contract that FMS signed with Iteratec for Iteraplan application, and the delegation of the responsibility towards IBM, please provide support  on the following topic:- What are the permissions that a role must have in order to have access to the Interactive Client? Issue:   Interactive Client can't be accessed by user with a normal user role (see first image). Users with administrator role (full rights) are able to access the Interactive Client.   User is authenticated via Classic Client, but the switch to the Interactive Client fails following error message "NOT_LOGGED_IN" but no possibility to log-in again. Only a link to get back to the Classic Client is available(see second image).The version in production is : Build ID: Corporate Edition v5.4.0-r26432 (Licensed for FMS Wertmanagement Service GmbH)The upgrade to Iteraplan Release 5.5 is planned, and we would like to clarify and make the Interactive Client available for all clients as this will be the last version that will have both clients available. 		Technical question	iteraplan Support	10/May/17 5:06 PM	11/May/17 11:12 AM														"10/May/17 5:06 PM;romulus.marian.handaric1@ro.ibm.com;
+
+!2017-5-4-18-1-54-368.png|thumbnail!
+
+!2017-5-4-18-2-3-638.png|thumbnail!"	"11/May/17 8:24 AM;cst;Good Morning,
+
+thank you for your requiry. 
+
+For using the interactive client, set the permission ""Access iteraplan via REST API""
+on the affected user.
+
+After that, the interacitve client opens.
+
+For your information:
+
+_The permission ""Access iteraplan via REST API"" was removed in version 5.5._
+_Every user has in the version 5.5. the permission to access the REST API._
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"11/May/17 11:05 AM;romulus.marian.handaric1@ro.ibm.com;Hello Mr. Stangl,
+
+Thank you for your help! My colleagues are able to access now the Interactive Client.
+
+For version 5.4 they are getting the message ""scripts with long run-time"" often, I hope this will get better with version 5.5.
+
+Have a great day!
+
+Best regards,
+Romulus Handaric"	"11/May/17 11:12 AM;cst;Dear Mr. Handaric,
+
+
+
+we optimised the performance in the interactive client of version 5.5 a lot. 
+
+
+
+Greetings,
+
+
+
+Christoph Stangl - iteraplan Support"																																																			

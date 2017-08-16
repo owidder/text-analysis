@@ -1,0 +1,15 @@
+Handling for not critical attribute type misses	"- if an no longer existing attribute is chosen for a not critical configuration feature, the configuration should be migrated without this feature
+
+
+
+- example:
+
+- costs is chosen for coloring in lsd.
+
+- costs is removed
+
+- diagram should be migrated with default coloring
+
+
+
+- AXIS is the only feature type (see class Usage in SavedQueryMigrationUtils) that is critical at the moment. "		Improvement	iteraplan PO	31/Jan/17 4:23 PM	07/Feb/17 4:15 PM																																																																				

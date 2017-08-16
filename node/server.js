@@ -11,15 +11,19 @@ var _ = require('lodash');
 
 var lsiIndex = require('./server/lsiIndex');
 var vector = require('./server/vectors');
+var forceMgr = require('./server/forceMgr');
 
 var router = express.Router();
 
 var server = require('http').createServer(app);
 
-var BASE_FOLDER = './data/erpnext';
+var BASE_FOLDER = './data/OpenSpeedMonitor';
 
 app.use(cors());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.use('/', express.static(__dirname + '/client'));
 
 var IGNORE_FILE_NAME = './ignore.txt';
@@ -163,6 +167,53 @@ router.get('/theWholeCloud/*', function (req, res) {
     var threshold = Number(thresholdStr) / 100;
     var theCloud = vector.readTheCloud(threshold);
     res.json(theCloud);
+});
+
+router.post('/start', function (req, res) {
+    var width = req.body.width;
+    var height = req.body.height;
+    var forceRefresh = req.body.forceRefresh;
+    var thresholdStr = req.body.threshold;
+    var threshold = Number(thresholdStr) / 100;
+
+    var result = forceMgr.start(width, height, threshold, forceRefresh);
+
+    res.json(result);
+});
+
+router.get('/getSvg/*', function (req, res) {
+    var forceId = req.originalUrl.substr("/api/getSvg".length + 1);
+    var svg = forceMgr.getSvg(forceId);
+
+    res.json({svg: svg});
+});
+
+router.get('/getNodesAndLinks/*', function (req, res) {
+    var forceId = req.originalUrl.substr("/api/getNodesAndLinks".length + 1);
+    var nodesAndLinks = forceMgr.getNodesAndLinks(forceId);
+
+    res.json(nodesAndLinks);
+});
+
+router.get('/getNodes/*', function (req, res) {
+    var forceId = req.originalUrl.substr("/api/getNodesAndLinks".length + 1);
+    var nodesAndLinks = forceMgr.getNodesAndLinks(forceId);
+
+    res.json({nodes: nodesAndLinks.nodes});
+});
+
+router.post('/stop/*', function (req, res) {
+    var forceId = req.originalUrl.substr("/api/stop".length + 1);
+    forceMgr.stop(forceId);
+
+    res.json({stopped: forceId});
+});
+
+router.post('/remove/*', function (req, res) {
+    var forceId = req.originalUrl.substr("/api/remove".length + 1);
+    forceMgr.remove(forceId);
+
+    res.json({removed: forceId});
 });
 
 router.get('/values/file/*', function (req, res) {

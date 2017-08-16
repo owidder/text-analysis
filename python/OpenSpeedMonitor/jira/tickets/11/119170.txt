@@ -1,0 +1,33 @@
+Fehlende Berechtigungen Jira/Fisheye	"Hallo zusammen,
+
+
+
+wenn ich versuche, mir die Commits in einem Jira-Issue des BMWAID-Projekts anzusehen, bekomme ich die Meldung aus dem angehängten Screenshot: ""You don't have access to view all related commits.""
+
+
+
+Ich hätte gerne Zugriff auf die Commits."		Task	Infrastruktur	20/Apr/17 4:01 PM	04/May/17 10:00 AM	JIRA													"21/Apr/17 2:54 PM;sas;Hallo Stephan,
+
+
+
+wir haben dich bei dem AIDA-SVN-Projekt berechtigt. Kannst du jetzt auf die Commits ansehen.
+
+
+
+ 
+
+
+
+Viele Grüße
+
+
+
+Sami
+
+
+
+ "	"04/May/17 9:58 AM;sfe;Entschuldige bitte die späte Nachricht, ich hatte das Ticket ganz vergessen.
+
+
+
+Ja, es geht jetzt, vielen Dank!"																																																					

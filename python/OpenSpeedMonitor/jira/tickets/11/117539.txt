@@ -1,0 +1,25 @@
+Lizenz	"Seit heute können wir das Iteraplan nicht mehr starten, es wird die Fehlermeldung ausgegeben, dass die Lizenz ungültig ist. Wie es aussieht, ist diese am 31.3.17 abgelaufen, am Freitag habe ich nämlich noch gearbeitet damit.
+
+Muss die Lizenz jedes Jahr erneuert werden ?
+
+Wenn ja, wie kommen wir zu der neuen Lizenz ?
+
+
+
+Für Ihre Hilfe danke ich Ihnen bestens.
+
+
+
+PIT Stadt Luzern
+
+Joe Steiner"		Fault	iteraplan Support	03/Apr/17 2:40 PM	22/Apr/17 7:00 AM														"03/Apr/17 2:40 PM;pit.applikationsbetreuung@stadtluzern.ch;
+
+!Lizenz-Fehler.jpg|thumbnail!"	"03/Apr/17 3:36 PM;cst;Guten Tag Herr Steiner,
+
+die Lizenz wurde mit dem letzten Release-Mail verschickt. Die Lizenz muss einmal im Jahr erneuert werden:
+
+[^license.txt]
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"																																																					

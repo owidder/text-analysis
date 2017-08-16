@@ -1,0 +1,5 @@
+Abfrage-Logik für die Assets schreiben 	"Wir brauchen einen Service zum Abfragen der MongoDb-Daten.
+
+Wir haben diesen in Ansätzen.
+
+Der Code muss erweitert und optimiert werden."		Task	OpenSpeedMonitor	25/May/16 4:32 PM	11/Aug/16 10:31 AM																																																																				

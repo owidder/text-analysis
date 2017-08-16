@@ -1,0 +1,13 @@
+Internet-Verbindungen lassen sich nicht anlegen	"Es kommt der Hinweis _Verbindung mit der id null wurde nicht gefunden_.
+
+Die neue Verbindung ist NICHT vorhanden."		Bug	OpenSpeedMonitor	04/Dec/15 4:54 PM	10/Dec/15 3:09 PM														"10/Dec/15 3:09 PM;bwo;Das Erstellen, sowie das Updaten einer Verbindung nutzten die Gleiche Methode. Ein Update verlangt jedoch eine bereits persistierte Verbindung. Da das Updaten jedoch noch Logik zum Kopieren der Verbindung beinhaltet habe ich diese beiden Methoden getrennt, so wie es auch bei den Jobs der Fall ist
+
+Die Methode update dient nun zum Updaten und save zum Erstellen.
+
+
+
+Dabei ist mir aufgefallen dass die Nachricht beim Updaten fehlt, ein passender Text zu dem code ""savedacopy"" ist mir nicht eingefallen.
+
+
+
+Außerdem ist mir aufgefallen, dass man nach dem Deaktivieren einer Verbindung keine Möglichkeit besitzt diese über die GUI wieder zu aktivieren. Hier sollte vielleicht eine Warnmeldung erfolgen."																																																						

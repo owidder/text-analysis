@@ -1,0 +1,45 @@
+E2E Tests run against old code	"Sometimes the e2e tests fail, because a change in productive code that is being tested is not visible to the test.
+
+There are two reasons this can happen:
+
+# The browser on our virtual machine which performs the tests often seems to show a cached version of the client, sometimes several days or even weeks old.
+
+# -When the E2E test instance is built, maven doesn't always seem to download the newest snapshot version of the interactive client. That is why the E2E test instance doesn't always have the latest changes deployed.- should be fixed with new e2e test client deployment. Ask [~sfe] for details, if there are issues.
+
+
+
+Please fix both."		Bug	iteraplan PO	12/May/16 10:20 AM	13/Jun/16 2:51 PM														"09/Jun/16 11:52 AM;abo;Chromedriver-Options are specified here: https://sites.google.com/a/chromium.org/chromedriver/capabilities
+
+Details on _args_ can be found here: http://peter.sh/experiments/chromium-command-line-switches/#chrome-frame
+
+
+
+*Analysis on why the Browser is not shown when I open a remote desktop connection*:
+
+First analysis showed that chrome is started by chromedriver on the test-server using the following command and arguments: 
+
+{code}
+
+""C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"" --disable-background-networking --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --disable-hang-monitor --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-logging --full-memory-crash-report --ignore-certificate-errors --load-extension=""C:\Users\svo\scoped_dir5892_27985\internal"" --logging-level=1 --metrics-recording-only --no-first-run --no-sandbox --password-store=basic --remote-debugging-port=12215 --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --test-type=browser --use-mock-keychain --user-data-dir=""C:\Users\svo\scoped_dir5892_8217"" data:,
+
+{code}
+
+
+
+_chromedriver.exe_ is started as background-process, and thus (that's my guess) the chrome instances spawned by chromedriver, too. It seems the process is started as background process when started via ssh, but it is a normal process ('App' with ui-window) when started on the command line but via remote-desktop 'locally'.
+
+
+
+I've created a ticket on stackoverflow, but I'm not sure if this is the right question and don't think there will be a good answer soon.
+
+http://stackoverflow.com/questions/37729505/why-does-cygstart-start-my-browser-as-background-process
+
+
+
+*Final thoughts:*
+
+* the sshd server is registered as a service, thus all processes it spawns are also background-processes.
+
+* one solution could be to either start the sshd-server itself as a user (i.e. 'svo') instead of a service, OR start the _chromedriver.exe_ as a user (i.e. 'svo'). However, this must be done after every reboot.
+
+* Another way _could_ be to start the _chromedriver.exe_ on demand, only (but also via remote desktop). This will cause a bind exception when Jenkins executes the start-script, but _maybe_ the error is not that bad, and the test can still be executed because there is an already running chromedriver."																																																						

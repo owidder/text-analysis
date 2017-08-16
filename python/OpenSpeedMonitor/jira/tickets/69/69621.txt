@@ -1,0 +1,13 @@
+Design solution for parallel REST-Writing and Excel-Import	"Design a technical solution for parallel REST-Writing and Excel-Import.
+
+
+
+At the moment a parallel call of them leads to problems.
+
+
+
+Desired outcome:
+
+* A high-level solution design
+
+* No code"		Bug	iteraplan PO	14/Jan/16 12:42 PM																																																																					

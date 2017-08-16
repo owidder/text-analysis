@@ -1,0 +1,5 @@
+Empty axes for LSD in the IE11	"Steps to reproduce:
+1. Go to LSD page
+Actual: Empty axes for LSD in the IE11
+Expected: should have information according to selected content for Horizontal and Vertical axes"		Bug	iteraplan PO	24/Mar/15 9:29 AM	24/Mar/15 10:36 AM					LSD									"24/Mar/15 10:36 AM;dasm;Verified
+revision 819"																																																						

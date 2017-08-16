@@ -1,0 +1,19 @@
+Auto-Login on Log-Out IE 11 	"Reproduce with a fresh installation of iteraplan (trunk) and only IE 11
+
+
+
+# Open iturm and create a new ""User""
+
+# Login with the new ""User"" and click on ""Logout"" 
+
+# Login mask opens 
+
+# Click on ""Logout"" again, the login mask appears and iteraplan opens
+
+# Its not possible to logout again, except to close the browser 
+
+
+
+Expected: No re-Login after ""Logout"" the second time
+
+Actual: After the second ""Logout"", automatic login"		Bug	iteraplan PO	04/Feb/17 10:35 AM	09/Feb/17 7:47 AM														04/Feb/17 11:32 AM;cst;Same on LDAP Installation 																																																						

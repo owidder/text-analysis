@@ -1,0 +1,46 @@
+Löschen eines Attributs, das in der Reaction gesetzt wird führt zu Fehlern.	"Ich gehe in der Reaction generisch durch die Liste aller Attribute. Dort ist das Attribut noch vorhanden.
+
+Dann wird per Reaction (wegen z.B. Plausi) der Inhalt zurückgesetzt und dabei knallt es.
+
+Das Attribut ist nicht gelöscht.
+
+Stacktrace im Anhang.
+
+Beste Grüße
+
+Armin Joachimsmeyer + Andreas Klees
+
+"		Fault	iteraplan Support	27/Mar/17 5:06 PM	05/May/17 12:50 PM														"27/Mar/17 5:06 PM;armin.joachimsmeyer@axa.de;
+
+[^app_iteraplan_TEST_ldwappaf_30.2017-03-27.log] _(67 kB)_"	"03/Apr/17 4:11 PM;cst;Hallo Herr Joachimsmeyer,
+
+um ein Problem mit den Rechten wie in de Logs geschrieben ausschließen zu können, können Sie uns bitte folgende Frage beantworten.
+
+Tritt der Fehler auch auf, wenn Sie direkt ein Änderung durchführen und die ""Plausi"" gestartet wird? 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"03/Apr/17 5:55 PM;armin.joachimsmeyer@axa.de;Hallo Herr Stangl,
+die Plausis sind alle korrekt, da wir am Anfang manuell immer den PlausiBatch starten, d.h. die Plausi auf allen ca. 2500 Informationssystemen fehlerfrei durchläuft und auch Änderungen macht.
+Nur wenn ich unter Merkmale ein Merkmal lösche, werden alle IS per UPdate getriggert und das bleibt dann irgendweann stehen.
+Diesmal ist es auch eine andere Fehlermeldung.
+Anbei nochmal den Iteraplan und Javascript log Output dazu, letzterer hört wirklich nach 1117 Elementen auf!
+
+Und haben sie vielleicht einen Himweis warum Javascript manchmal Probleme mit dem ""ß"" hat? Der fehler kommt ja nur 24 mal vor.
+""AuÃŸer Betrieb Kategorie"" is not a property of type InformationSystem
+
+Beste Grüße
+Armin Joachimsmeyer
+
+
+[^wrapper-30.rar] _(24 kB)_
+
+[^app_iteraplan_TEST_ldwappaf_30.2017-04-03.log] _(33 kB)_"	"05/May/17 12:50 PM;cst;Das Problem konnte analysiert werden und ist mit Version 6.0 behoben. 
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support"																																																			

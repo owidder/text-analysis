@@ -1,0 +1,21 @@
+Query Console Basic Page	"*Summary:*
+
+Create a basic page for the Query Console
+
+
+
+*Components:*
+
+* Central Input Box for Query with Execute-Button
+
+* Placeholder for the pre-defined queries on the right
+
+* List on the bottom
+
+
+
+*Details:*
+
+* Similar layout to the Building Block Lists
+
+* Use common list component"		New Feature	iteraplan Speedbird	07/Nov/16 3:56 PM	22/Nov/16 4:33 PM														22/Nov/16 4:32 PM;madu;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-191																																																						

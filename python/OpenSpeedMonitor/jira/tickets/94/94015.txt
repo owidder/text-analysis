@@ -1,0 +1,1 @@
+Tabs in Detaildatenanalyse auflösen	Die drei Tabs die wir momentan haben fördern nicht gerade die Übersicht. Die Daten sollen untereinander aufgelistet werden. Dabei soll natürlich wo möglich Platz gespart werden.		Improvement	OpenSpeedMonitor	24/Aug/16 10:57 AM	29/Aug/16 8:46 AM																																																																				

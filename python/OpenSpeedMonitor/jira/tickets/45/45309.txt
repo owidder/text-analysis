@@ -1,0 +1,1 @@
+Link to UserDetails from LastChange-User and History	Link to UserDetails from LastChange-User and History to enable a quick lockup of contact info or similar.		New Feature	iteraplan PO	19/Dec/11 11:56 AM	13/Jan/12 1:17 PM														13/Jan/12 1:17 PM;vsh;Works perfectly!!!																																																						

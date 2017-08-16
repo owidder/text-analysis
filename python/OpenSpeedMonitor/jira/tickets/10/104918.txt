@@ -1,0 +1,15 @@
+Errors are thrown when loading the single view of an element without description	"Go to the Information Systems Page
+
+Choose the element ""Document archiving # 2.0""
+
+
+
+Expected Behavior:
+
+No errors are trown
+
+
+
+Current Behavior:
+
+There are errors caused by the Creole Parser."		Bug	iteraplan Thunderduck	07/Dec/16 10:19 AM	12/Dec/16 11:09 AM														12/Dec/16 8:09 AM;aan;Cannot reproduce, problem is fixed now the text "no assigned is shown".																																																						

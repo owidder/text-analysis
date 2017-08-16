@@ -1,0 +1,7 @@
+Show indirectly related types in masterplan	"The masterplan allows already to show ""related building blocks"" on the report, along with their runtime periods etc. This setting is found under _Advanced settings_.
+
+Now we need this functionality extended to indirectly related types.
+
+more tbd
+
+"	45634	Sub-task	iteraplan PO	17/Apr/13 2:52 PM	12/Jun/13 1:56 PM					masterplan																																																															

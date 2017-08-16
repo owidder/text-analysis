@@ -1,0 +1,5 @@
+Administration > All Controller > DynamicDelegateController ist nicht verfügbar	"Administration > All Controller > DynamicDelegateController:
+
+http://localhost:8080/OpenSpeedMonitor/dynamicDelegate/index
+
+ist nicht verfügbar - 404."		Bug	OpenSpeedMonitor	18/Feb/15 3:39 PM	24/Feb/15 5:31 PM																																																																				

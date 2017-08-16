@@ -1,0 +1,21 @@
+Unset of single select item not possible	"Reproduce:
+
+
+
+Go to the single element view, BI # 1.0 and try to unset the value of ""Complexity"" (delete the value from the dropdown and press enter)
+
+
+
+Current behaviour: The value selected before is still there
+
+
+
+Expected behaviour: The value is deleted an ""not assigned"" is shown
+
+
+
+ 
+
+
+
+sp 0.5"		Bug	iteraplan Thunderduck	21/Mar/17 2:31 PM	27/Mar/17 3:02 PM																																																																				

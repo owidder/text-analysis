@@ -1,0 +1,23 @@
+MPD: Level2 and Level3 do not show all related elements of interfaces	"*Summary:*
+
+MPD: Level2 and Level3 do not show all related elements of interfaces
+
+
+
+*Reproduce:*
+
+* Open the default Masterplan Diagram
+
+* Select Interfaces as Level 1
+
+
+
+*Actual:*
+
+* Only Technical Components are offered as Level 2
+
+
+
+*Expected:*
+
+* Technical Components, Information Systems and Business Objects are offered as Level 2"		Bug	iteraplan Speedbird	13/Dec/16 11:20 AM	03/Jan/17 4:18 PM														29/Dec/16 12:32 PM;fka;Maybe the (outdated) check for duration attributes is still in effect	03/Jan/17 4:18 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-279																																																					

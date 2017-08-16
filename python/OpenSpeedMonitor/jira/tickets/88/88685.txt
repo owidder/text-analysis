@@ -1,0 +1,16 @@
+Installation iteraplan + iturm mit Oracle	"Hallo Support-Team,
+
+
+
+kann ich für iteraplan und iturm auch dasselbe Datenbankschema nutzen? Gibt es einen wichtigen Grund, wieso im Installation Guide steht man soll für iturm ein eigenes Schema anlegen?
+
+
+
+Viele Grüße,
+
+Daniel"		Technical question	iteraplan Support	28/Jun/16 3:52 PM	13/Jul/16 1:21 PM														"30/Jun/16 11:07 AM;iteraplan-support;Hallo Daniel,
+
+einen wichtige Grund gibt es dafür aus unserer Sicht nicht. Kannst du mal ausprobieren, ob es funktioniert, wenn beide dasselbe Schema nutzen?
+
+Schöne Grüße
+Manuel - iteraplan Support"	30/Jun/16 11:17 AM;dne;OK, schaue mir das mal an und gebe Rückmeldung.	30/Jun/16 12:43 PM;iteraplan-support;Super, danke!	13/Jul/16 11:14 AM;dne;Funktioniert wohl :) Hat Christoph im Zuge der Migration für die Swiss Life erfolgreich getestet.	13/Jul/16 1:21 PM;msr;Gelöst im Ticket IPS-119																																																		

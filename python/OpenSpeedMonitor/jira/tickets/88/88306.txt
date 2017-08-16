@@ -1,0 +1,5 @@
+Undo button for filter in list doesn't work	see configuration with url #updateUri		Bug	iteraplan PO	24/Jun/16 9:30 AM	29/Jun/16 2:26 PM														24/Jun/16 11:12 AM;pma;~1 PD	"27/Jun/16 6:23 PM;abo;Fixed the bug.
+
+
+
+However, seems as queryProcessor.js needs an overhaul..."																																																					

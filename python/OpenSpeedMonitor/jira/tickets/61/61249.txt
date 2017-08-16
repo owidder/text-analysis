@@ -1,0 +1,31 @@
+LSD: Toolarea shows wrong current date filter	"*Summary:*
+
+LSD: Toolarea shows wrong current date filter
+
+
+
+*Reproduce:*
+
+* Open the Landscape Diagram
+
+* Set content filter ""Development (End)"" from 31st May 1996 to  31st May 2041
+
+
+
+*Actual:*
+
+The current filter in the toolarea shows ""Development (End)"" from *06th* May 1996 to  *06th* May 2041
+
+
+
+*Expected:*
+
+Correct dates are shown.
+
+
+
+*Remark:*
+
+Legend shows correct dates. The defect appears for date and duration attributes."		Bug	iteraplan PO	23/Oct/15 4:27 PM	28/Oct/15 10:17 AM					filter	toolArea								26/Oct/15 9:53 AM;dam;shown date formats in all diagrams now depending on chosen language	"28/Oct/15 10:17 AM;msr;Everything ok.
+
+Just one inconsitency with the English LSD-Legend - but not in scope of this ticket."																																																					

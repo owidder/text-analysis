@@ -1,0 +1,5 @@
+Activate Edit-Mode if no dashboard exists in Custom Dashboard	"Go to Report > Custom Dashboard. If there is no Custom Dashboard to be shown, please activate the edit mode automatically.
+
+
+
+ "		Bug	iteraplan Speedbird	24/Jul/17 11:52 AM																																																																					

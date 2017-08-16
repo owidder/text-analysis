@@ -1,0 +1,37 @@
+Edit on Single Attribute View - Multi-Element Selection (Client)	"*Summary:*
+
+Create Edit-Functionality for Multi-Element-Selection-Fields on all Single Attribute Views.
+
+
+
+*Scope:*
+
+* In scope: All fields with multi element selection
+
+* In scope: All Single Attribute Views
+
+* Example: ""Activated for the following Building Block Types""-field
+
+
+
+*UI:*
+
+* Use UI and interactions from Building Block List and Single Building Block View as blueprint (including error-handling)
+
+* If the user selects no elements at all, show ""not assigned"" (German: ""nicht zugeordnet"")
+
+* Special case:""Activated for the following Building Block Types"":
+
+** When the user removes one Building Block Type or Relation, a modal dialog is shown
+
+** ""All attribute values of ""ATTRIBUTE-NAME"" for ""BUILDING BLOCK TYPE"" will be removed."" (German: ""All Merkmalswerte von ""ATTRIBUTE-NAME"" für ""BUILDING BLOCK TYPE"" werden entfernt."" with Ok and Cancel-Button
+
+
+
+*Technology:*
+
+* Try to reuse common edit-components from Building Block List and Single Building Block View
+
+* Send REST-request to the correct REST-API (attributes, icresp or icdi)
+
+* Trigger reload-service (IPTS-447)"		New Feature	iteraplan Speedbird	22/Dec/16 9:06 AM	13/Mar/17 3:05 PM														13/Mar/17 12:30 PM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-424#general-comments																																																						

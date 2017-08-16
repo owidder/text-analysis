@@ -1,0 +1,32 @@
+Error after deleting an element of an enumeration atribute	"After deleting an entry of an enumeration attribute the attribute group can't be displayed.
+The order ID (ID_ATG) of the enumeration attribute is not correct after the deletion."		Bug	iteraplan PO	20/Jul/11 5:55 PM	23/Aug/11 11:37 AM														01/Aug/11 9:46 AM;vsh;Can you provide a more detailed description of the problem, I can't reproduce it either on the nightly build or locally.	01/Aug/11 1:18 PM;vsh;Neither I nor Karsten could reproduce this problem.	"11/Aug/11 9:09 AM;cte;Example:
+Enum-Attribute with following values:
+A
+B
+C
+D
+
+After deleting B the Values in the Database are
+A
+C
+D
+
+but the index for the position doesn't change
+A - 0
+C - 2
+D - 3
+
+The error occurs in using or editing the attribute.  "	11/Aug/11 10:20 AM;vsh;In the current nightly build no attribute values can be deleted at all.	"12/Aug/11 2:57 PM;vsh;The ID_ATG contains the id of the attribute type group the attribute is assigned to and shouldn't change when an attribute value is deleted. The position is stored in the POS column and it is properly updated when a value is deleted. I couldn't reproduce the bug either in the current trunk version or in the 2.9.M2 release version.
+
+Another bug found concerning attribute value deletion is that attribute values cannot be deleted unless the attribute type is assigened to a building block type. It's a JavaScript error."	"17/Aug/11 11:21 AM;rfe;This issue is easy to reproduce in the current trunk:
+
+1) visit: http://www.iteraplan.de/iteraplan_ce_demo/
+2) open: Attribute Groups: ""Strategic measurement categories""
+3) Edit: Attribute: ""Strategic drivers""
+4) CHANGE: assigned Attribute Groups to [Default Group] or DELETE the Attribute ""Strategic drivers""
+5) open: Attribute Groups: ""Strategic measurement categories""
+6) Enjoy the error :-)"	17/Aug/11 11:24 AM;rfe;Screenshot für Build ID: Community Edition Build-v2.9.SNAPSHOT-r14075 (2011-08-17-06-06-49)	"17/Aug/11 11:31 AM;rfe;You can proof the error with: SELECT iteraplan.AT WHERE ID_ATG = 1 ORDER BY ID_ATG, POS ASC;
+
+(ID_ATG=1 -> ""Strategic measurement categories"")
+
+"																																															

@@ -1,0 +1,3 @@
+History disables "last modifier"	"When history is enabled, ""last modifier"" and ""last modification date"" are not displayed.
+
+Affects iteraplan 3.0.4"		Bug	iteraplan PO	10/Sep/13 4:51 PM	11/Sep/13 4:09 PM														11/Sep/13 4:09 PM;bwu;Communitation mismatch between project members.	11/Sep/13 4:09 PM;bwu;fine																																																					

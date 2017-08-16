@@ -1,0 +1,53 @@
+Tooltip picture does not appear when running iteraplan without a explicit context root	"When focusing some buttons (e.g. the full-text search button) with the mouse, the tool tip will be displayed with a broken image (see attached file).
+
+A look in the html code, shows the image location:
+
+{code}
+<a href=""#"" rel=""tooltip"" data-original-title=""Hotkey: <img src='images/shift-key_invert.png'/> +F"">
+<input type=""submit"" id=""sendSearchquery"" value=""Search"" onclick=""createHiddenField('requestType', 'search');"" class=""btn btn-primary""/>
+</a>
+{code}
+
+The right image souce should be: <img src='/images/shift-key_invert.png'/>
+
+
+After some research, I found the problem:
+
+We run iteraplan on a tomcat in the webapps root directory without a explicit context root. So we have the following URL: https://iteraplan.easycredit.intern/start/start.do
+
+Every tooltip will be modified with a Java-Script in page standard.jsp:
+
+{code}
+<script type=""text/javascript"">
+	if ($(""[rel=tooltip]"").length > 0) {
+		$(""[rel=tooltip]"").tooltip({
+			'placement' : 'right'
+		});
+		var pathnameSplitLength = (location.pathname.split(""/"")).length;
+		var counter = 0;
+		var pathDepthAddition = """";
+		while (counter < pathnameSplitLength - 3) {
+			pathDepthAddition = pathDepthAddition + ""../"";
+			counter++;
+		}
+		var shiftKeyImageSrc = ""<img src='"" + pathDepthAddition + ""images/shift-key_invert.png'/>"";
+
+		$(""[rel=tooltip]"").each(
+				function(index) {
+					$(this).attr(
+							'data-original-title',
+							function() {
+								return ($(this).attr('data-original-title')
+										.replace(""<img/>"", shiftKeyImageSrc));
+							});
+				});
+	}
+</script>
+{code}
+
+In our case, the variable location.pathname.split has the value ""/search/globalsearch.do"", so the while loop doesn't set the necessary ""../"" bevor the image path.
+Because a static resource (shift key_invert.png) is referenced, it might consider why the path must be changed on client side. In my opinion, a path to a static image should never be changed on client side.
+
+"		Bug	iteraplan PO	03/Sep/12 3:51 PM	07/Jan/13 2:26 PM					gui									"17/Sep/12 7:27 PM;sry;Thank you for researching the reason for that problem. Deployments without context root are not considered in our test setups.
+
+This has a very low priority, but we'll try to get it right for iteraplan 4."	07/Jan/13 2:26 PM;ase;Installed as ROOT.war (/ root context) on my localhost and it works fine.																																																					

@@ -1,0 +1,16 @@
+Cluster diagram shows wrong subordinate elements (only for BBT Project)	"Reproduce:
+* Go to cluster diagram configuration page
+* Select all elements and proceed
+* On 2nd page: Generate diagram with checkbox ""Subordinate Projects"" activated
+
+Expected:
+The child elements are shown in the row for subordinate projects
+
+Actual:
+The parent element (superordinate project) is shown instead.
+
+
+This behavior seems to occur for Building Block Type ""Project"" only.
+"		Bug	iteraplan PO	09/Mar/15 4:25 PM	10/Mar/15 3:04 PM					cluster	diagram	diagrams							"10/Mar/15 3:04 PM;gph;Cluster diagram shows children correctly now.
+
+Nice refactoring.  ;)"																																																						

@@ -1,0 +1,11 @@
+Context menu improvements 	"Improve the context menu shown on the left hand side with almost all pages in the application
+
+The two items ""open elements"" and ""watched elements"" should both show the number of entries in the title. Put the number at front, e.g.""5 watched elements"".
+
+Whenever the number is zero, the user should not be able to expand the element. Remove the down arrow in this case.
+
+The default state when opening a page should be as it is currently: ""Open elements"" is expanded, ""watched elements"" is collapsed.
+
+The third, top element ""Context action"" should not be changed at all.
+
+"		Improvement	iteraplan PO	06/Oct/14 11:45 AM	16/Oct/14 9:47 PM					context	gui																																																														

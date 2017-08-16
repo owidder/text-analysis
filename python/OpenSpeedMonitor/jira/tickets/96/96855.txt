@@ -1,0 +1,19 @@
+Activate continous configuration saving for CCD	"*Summary:*
+
+The configuration of the CCD should automatically be saved in the user profile of the current user.
+
+
+
+*Implementation details:*
+
+The features is already active with all other diagrams and list view in the new client. Ask [~mwe] how to add it to the CCD. This includes adding the ""Reset view"" button and functionality.
+
+
+
+*UI:*
+
+nothing to do
+
+
+
+"		New Feature	iteraplan Speedbird	21/Sep/16 4:28 PM	26/Sep/16 3:11 PM														26/Sep/16 3:11 PM;dmkh;Review is done, no comments: https://iteraweb.iteratec.de/fisheye/cru/IP-49																																																						

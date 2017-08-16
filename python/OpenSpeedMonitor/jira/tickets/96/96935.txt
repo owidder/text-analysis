@@ -1,0 +1,5 @@
+RELEASE: 500 error on PUT user/settings in Browser console	"One request works well, and another one (just after the previous one) gives error. See screenshots.
+
+Has something to do with ""featureName1"" parameter."		Bug	iteraplan Quickfox	22/Sep/16 1:21 PM	25/Oct/16 9:25 AM														27/Sep/16 3:50 PM;mwe;I saw the error before but I cannot reproduce it.	"21/Oct/16 12:51 PM;roia;[~mwe] I've attached a screenshot of a good and bad request. The difference is that {{setting}} property is once a string-type property (which gives and error) and, in the other case, it's object which is handled well.
+
+Hope, this information helps and looks like it's UserSettings service issue."	24/Oct/16 2:44 PM;sfe;Issue seems to be only with HSQLDB																																																				

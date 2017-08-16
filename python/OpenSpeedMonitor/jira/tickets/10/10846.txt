@@ -1,0 +1,2 @@
+Ansicht zur Darstellung der existierenden MeasuredEvents 	"Diese Ansicht muss den Namen der Events sowie die zugeordnete Page darstellen. Wird für die Editierung von Scripten benötigt.
+Siehe IT-20"		New Feature	OpenSpeedMonitor	10/Jan/14 1:50 PM	16/Jan/14 5:38 PM																																																																				

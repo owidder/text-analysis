@@ -1,0 +1,13 @@
+Remove limitation of date intervals, that each date attribute can only be used once	"Currently, when a date attribute is used in a date interval, then it can't be used in another date interval. It was implemented in this way to avoid cycles in validation checks.
+
+For example:
+date attributes: ""A"", ""B""
+date interval 1:  ""A"" to ""B""  (=> ""A"" should be before ""B"")
+date interval 2:  ""B"" to ""A""  (=> ""B"" should be before ""A"")
+This usage will lead to an error, no matter which date values are entered.
+
+This drawback is considered smaller than the limitation, that each date attribute can only be used once. Therefore it should be changed in a sensible way.
+
+
+
+"		Improvement	iteraplan PO	17/Jul/14 4:27 PM	17/Mar/15 10:04 AM					dateinterval	diagram	masterplan	visualization						11/Mar/15 3:55 PM;sfe;After consulting with [~wfr] it seems there is no technical reason to keep the limitation.																																																						

@@ -1,0 +1,8 @@
+wrong place of submenu label for "Group by" menu	"IP9-204
+
+Steps to reproduce:
+1. Go to NCD page
+2. Open Context menu for outer  element
+3. Navigate to ""Group by""  drop-down menu
+
+Actual result: wrong place of submenu label"		Bug	iteraplan PO	22/Dec/14 10:41 AM	12/Jan/15 2:00 PM														12/Jan/15 2:00 PM;dasm;Verified (revision: 503)																																																						

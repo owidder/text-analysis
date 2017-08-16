@@ -1,0 +1,1 @@
+Datenauswahl als seitliche Leiste realisieren	Um den Platz auf der Seite für die Charts besser ausnutzen zu können und für eine bessere Usability soll die Datenauswahl von unten in eine ausklappbare seitliche Leiste umgelagert werden.		Epic	OpenSpeedMonitor	01/Feb/17 3:08 PM																																																																					

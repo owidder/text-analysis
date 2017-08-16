@@ -1,0 +1,14 @@
+Excel import may introduce new building block with name of existing one	"Following situation:
+
+- Create Excel import file
+- Create new building block with the name of an already existing building block of same type
+- Assign the ID of an existing building block of same type to the newly created one
+- Import the Excel file
+
+Result:
+
+- The Excel file is imported without complains
+- There are two building blocks of same type with the same name
+- Future modifications on one building block in the UI affects the other building block as well, e.g. renaming
+- Future modifications on one building block from Excel import just affects the one building block"		Bug	iteraplan PO	19/May/11 7:45 AM	19/May/11 2:59 PM					excel	import								"19/May/11 2:31 PM;agu;This is relevant only for Information System and Technical Components Releases. 
+Maybe we should add DB Contraint to prevent duplicate releases?"	19/May/11 2:59 PM;kvo;It is in general (also through Web-UI) possible to have same ISR twice (name is shared with releases).																																																					

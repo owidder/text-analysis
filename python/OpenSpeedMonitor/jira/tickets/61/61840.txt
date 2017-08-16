@@ -1,0 +1,5 @@
+Remove the blue border	"Both the LSD and IFD show an blue border around the GoJS canvas, whenever you interact with them
+
+
+
+Expected: This border is never shown"		Improvement	iteraplan PO	29/Oct/15 10:42 AM	02/Nov/15 8:49 AM														30/Oct/15 10:39 AM;dam;border is only shown in chrome. 	30/Oct/15 12:24 PM;dam;disable borders with help from this page: http://error.news/question/2191929/how-to-remove-border-of-diagram-when-clicking-it/																																																					

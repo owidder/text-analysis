@@ -1,0 +1,5 @@
+Edit Date values	"use ipDateEditor component (ipPropertyEditor-component)
+
+
+
+also consider topLevelAttributes"		New Feature	iteraplan Thunderduck	07/Dec/16 5:27 PM	07/Mar/17 12:49 PM														03/Mar/17 1:12 PM;aan;Adaptions for adding dates to relations are done in IPTT-304.																																																						

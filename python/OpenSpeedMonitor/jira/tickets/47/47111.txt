@@ -1,0 +1,18 @@
+Edit all elements in all places	"*Priority 6*
+
+To the existing edit functions in the single item, list of items and diagram views, add the remaining editing functions for
+
+* all types of elements
+* all attributes (note: used defined)
+* all types of attributes (more enumerations, ...)
+* all relationships
+* all relationships with attributes (about 2)
+* hard: business mapping 3+1-arity!
+
+* in all diagrams
+* in all lists
+* as single item
+
+Idea: Downsize ticket: ""edit in single item view and tabular list""
+
+ "		Epic	iteraplan PO	03/Nov/14 4:09 PM	06/Oct/16 4:29 PM														06/Oct/16 4:29 PM;fka;Will be done via separate epics and on a smaller scale																																																						

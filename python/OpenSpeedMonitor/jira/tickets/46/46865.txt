@@ -1,0 +1,10 @@
+Make problem reports accessible without errors	"In some support cases it would be very useful to get the environment and configuration information about an iteraplan instance without causing an error page.
+
+This ""system info"" should be accessible only for iteraplan admins, just as the normal problem report. Of course, this report doesn't contain a ""stacktrace.txt"" and doesn't need to be stored in the (servlet) context.
+
+The system info should be accessible via Administration -> Configuration. On this page add a new panel at the bottom with title ""System Info"" and a button. Add a text for  explanation below the button. Clarify this text with FKA or WFR.
+
+Small improvement, also to be done in this context:
+The environment variables and system properties in ""java.txt"" should be sorted for better readability.
+
+"		Improvement	iteraplan PO	14/Aug/14 10:28 AM	03/Oct/14 1:00 PM					problemreport									19/Sep/14 4:11 PM;fam;UI Implemented. Function of Button still to do. 																																																						

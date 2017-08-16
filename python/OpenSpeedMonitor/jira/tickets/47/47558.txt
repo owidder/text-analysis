@@ -1,0 +1,11 @@
+All attributes should be sorted alfabetically 	"Steps to reproduce:
+1. Go to LSD
+2. Use Technical Component as content type
+3. Open submenus for enum attributes
+4. Use Information System as content type
+5. Open submenus for enum attributes
+
+Actual: All attributes aren't  sorted alfabetically
+Expected: All attributes should be sorted alfabetically"	47470	Sub-task	iteraplan PO	01/Apr/15 12:55 PM	07/Apr/15 1:33 PM													"Workspace: Windows 8.1
+Browser: Google Chrome 39.0, IE11, Mozilla Firefox 36.0.4"	"02/Apr/15 11:42 AM;dasm;Verified 
+revision 870"																																																						

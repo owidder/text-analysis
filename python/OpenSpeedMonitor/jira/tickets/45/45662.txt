@@ -1,0 +1,8 @@
+Additional Header in the responseGenerators are not neccessary any more	"With the ticket
+ITERAPLAN-410
+
+two additional headers were introduced in some ResponseGenerators:
+    response.setHeader(""Cache-Control"", ""private, must-revalidate, max-age=1800"");
+    response.setHeader(""Pragma"", ""token-prevent-IE-from-hickup"");
+
+These headers are not neccessary any more and can be removed."		Improvement	iteraplan PO	28/Mar/13 4:15 PM	05/Apr/13 2:12 PM					export									05/Apr/13 2:12 PM;gph;Download of spreadsheet reports as Excel in IE8 + SSL works without the headers.																																																						

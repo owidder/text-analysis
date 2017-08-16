@@ -1,0 +1,3 @@
+Drag & drop reording in hierarchy tree view	"Allow rearranging elements in tree view via drag & drop.
+It shall be possible to change parent, change order of siblings. Optionally, entire subtrees shall be movable.
+"		New Feature	iteraplan PO	05/Apr/13 5:08 PM	16/Jul/13 4:33 PM					hierarchy	treeview								16/Jul/13 4:33 PM;sry;Has been implemented as part of ITERAPLAN-1502 already. Nice, thx.																																																						

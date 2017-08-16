@@ -1,0 +1,79 @@
+Loading from URL: NCD-Coloring by Manufacturer throws exception	"*Summary:*
+
+Loading from URL: NCD-Coloring by Manufacturer throws exception
+
+
+
+*Reproduce:*
+
+* Open the default NCD
+
+* Cluster by Technical Component
+
+* Color by Manufacturer
+
+* Press ""F5""
+
+
+
+*Actual:*
+
+* Exception is thrown:
+
+{code}
+
+colorUtils.js:13 Uncaught TypeError: Cannot read property 'indexOf' of undefinedColorUtils.splitColorToRGB @ colorUtils.js:13ColorUtils.calculateColor @ colorUtils.js:79ColorUtils.calculateIconColorProperty @ colorUtils.js:73setColors @ ncdItemDecorator.js:44calculateColorForNcdItem @ ncdItemDecorator.js:69enumColorCalculation @ ncdItemDecorator.js:90NcdItemDecorator.applyItemStyle @ ncdItemDecorator.js:172NcdContentMain.runPipeline @ ncdContentMain.js:63NcdContentMain.createGoJSDiagram @ ncdContentMain.js:46createGoJSDiagram @ ncdContentController.js:21(anonymous function) @ ncdContentController.js:57trigger @ angular.js:3127
+
+angular.js:13424 Route Changed to js/ncd/ncdTemplate.html
+
+{code}
+
+
+
+*Expected:*
+
+* Diagram is correctly colored without any exception
+
+
+
+*URL on local machine:*
+
+http://localhost:8080/branches/app/#/ncd?featureName=%2Fncd&relationFromInnerToOuter=informationSystemReleases%2FinformationSystemDomains&innerTypePersistentName=C9&C0=businessObject&C1=businessObject&outerTypePersistentName=A8&innerColoringProperty=C16&innerColoringPalette.Apache=rgb(175,206,168)&innerColoringPalette.HP=rgb(246,223,149)&innerColoringPalette.IBM=rgb(215,157,173)&innerColoringPalette.Inhouse=rgb(136,174,217)&innerColoringPalette.JBoss%20Inc.=rgb(172,161,200)&innerColoringPalette.Microsoft=rgb(211,221,147)&innerColoringPalette.Novell=rgb(232,187,158)&innerColoringPalette.Oracle=rgb(175,206,168)&innerColoringPalette.SAP=rgb(246,223,149)&innerColoringPalette.SAS=rgb(215,157,173)&innerColoringPalette.Software%20AG=rgb(136,174,217)&innerColoringPalette.VM%20Ware=rgb(172,161,200)&innerColoringPalette.Fujitsu%20Technology%20Solutions=rgb(211,221,147)&innerColoringPalette.Object%20Management%20Group%20(OMG)=rgb(232,187,158)&innerColoringPalette.iteratec%20GmbH=rgb(175,206,168)&innerColoringPalette.KEY_FOR_LEGEND_UNDEFINED=rgb(153,153,153)&innerColoringType=enum"		Bug	iteraplan PO	24/Oct/16 4:03 PM	25/Oct/16 12:27 PM														"25/Oct/16 11:05 AM;roia;Current implementation only handles the situation when dot is at the end.
+
+The issue is fixed for manufacturer, but it persist for the other cases when enumeration value has dots.
+
+Steps to reproduce - create enum attribute with dots not at the end (or add such value to an existing one) and color by it.
+
+
+
+See the attached attr_with_dots.png
+
+
+
+[~msr] should we create a follow-up ticket or fix in scope of this one?"	"25/Oct/16 11:18 AM;roia;[~mada], I'd suggest this workaround in case we're sure that proper params should not consist of more than 2 parts and first part has no dots:
+
+{code}
+
+                        // Fix for defect ITERAPLAN-4952: If name of inner element ended by '.' we should add it after splitting.
+
+/*
+
+                        if (param.slice(-1) === ""."") {
+
+                            keys[1] = keys[1] + ""."";
+
+                        }
+
+*/
+
+                        if(keys.length > 2){
+
+                            keys = [keys[0], keys.slice(1).join(""."")]
+
+                        }
+
+{code}"	"25/Oct/16 11:26 AM;roia;Another option - use the URL parsing method which we have used in new diagrams: {{paramsToObject()}} and {{objectToParams()}} functions.
+
+
+
+But in this case old saved/bookmarked URLs will not be parsed properly."	25/Oct/16 11:36 AM;msr;Please fix it in scope of this ticket - take first approach																																																			

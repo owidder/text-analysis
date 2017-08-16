@@ -1,0 +1,29 @@
+The Excel import via REST does not work anymore.	"The Excel import via REST does not work anymore.
+Step 3 is executed twice if there are no changes to the Methamodell."		Bug	iteraplan PO	23/Aug/13 3:52 PM	28/Aug/13 3:00 PM					excel	import								"23/Aug/13 4:36 PM;aer;Thank you Ingo for filing this.
+
+There are two customers in Vienna that both need this Excel ReST import to function. The multi-tenancy concept is blocked as long as this does not work.
+
+Hope, the pre-work by Ingo makes it easier to fix the problem."	26/Aug/13 10:59 AM;sry;Are you sure that this issue was not yet part of version 3.0.4? I can't see any convincing reason yet (in the code) why 3.1 should behave differently. That aside, I agree that it is a nasty issue and should be fixed. Investigation ongoing.	"26/Aug/13 11:07 AM;aer;I cannot tell since I wasn't exploring the Excel import via ReST that much after you told me it wouldn't be working in 3.0.4. Maybe [~isc] can. I can only give the information that the same file that cannot be imported through ReST can be imported through the web interface without any problems. There were no changes at all in the data set, i.e. export file = import file, and the import did not cause any problems.
+
+Thank you for investigating the issue!"	"26/Aug/13 5:44 PM;sry;While working on this issue, I ran into another exception which is thrown while adding an enum attribute type through the import. Needs further investigation, and maybe a new tickets needs to be raised.
+{code}
+[ERROR] [2013-08-26 17:42:09] (rest.resource.ExcelImportResource) Failed in step 3: Write Metamodel changes
+java.lang.NullPointerException
+        at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.MetamodelExport$AttributeTypePositonComparator.compare(MetamodelExport.java:1285)
+        at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.MetamodelExport$AttributeTypePositionComparator.compare(MetamodelExport.java:1279)
+        at java.util.Arrays.mergeSort(Unknown Source)
+        at java.util.Arrays.mergeSort(Unknown Source)
+        at java.util.Arrays.legacyMergeSort(Unknown Source)
+        at java.util.Arrays.sort(Unknown Source)
+        at java.util.Collections.sort(Unknown Source)
+        at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.MetamodelExport$ExportRun.createPropertiesForAttributeTypes(MetamodelExport.java876)
+        at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.MetamodelExport$ExportRun.<init>(MetamodelExport.java:228)
+        at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.MetamodelExport.loadMetamodel(MetamodelExport.java:207)
+        at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.IteraplanMetamodelLoaderImpl.loadConceptualMetamodelMapping(IteraplanMetamodelLoaderImpl.java:88)
+        at de.iteratec.iteraplan.businesslogic.exchange.common.ImportProcess.loadModelAndMetamodelFromDb(ImportProcess.java:130)
+        at de.iteratec.iteraplan.businesslogic.exchange.common.ImportProcess.writeMetamodel(ImportProcess.java:225)
+        at de.iteratec.iteraplan.businesslogic.exchange.elasticExcel.excelimport.ImportServiceImpl.mergeMetamodel(ImportServiceImpl.java:78)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+{code}
+
+EDIT: (/) Above NPE has been fixed as part of ITERAPLAN-701. No ticket needs to be raised any more."	27/Aug/13 9:34 PM;sry;Also merged the fix into the 3.1 branch	28/Aug/13 3:00 PM;isc;works fine																																																	

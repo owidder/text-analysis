@@ -1,0 +1,15 @@
+Analyse PFD problems with Accountabilty	"Time-box: 0,5 PD
+
+
+
+Analyze in detail, why the portfolio diagram has problems (grid offset, labels on axes etc.) when Accountability is selected. This is obviously an effect of IPTS-170.  If a quick fix is possible, do it, otherwise create a follow-up ticket.
+
+
+
+Idea from [~sfe]: Maybe the problems arise from the fact that Accountability has no ordering like other enums have. [~sfe] might have more details."		Bug	iteraplan Speedbird	25/Sep/16 3:10 PM	05/Oct/16 2:58 PM														"28/Sep/16 3:04 PM;msr;Additionally:
+
+Check, if all multiple values are shown."	28/Sep/16 3:07 PM;msr;The translation problem also occurs in other diagrams like the Landscape Diagram.	"28/Sep/16 6:52 PM;ants;Quick fix to translation issues is possible.
+
+All other issues of pfd (grid offset, cropping, bubble size) still have to be analyzed."	29/Sep/16 12:23 PM;ants;JSON representation of responsibility attributes changed to be corresponding to representation of enumeration attributes in metamodel REST resource - keys for "en" and "de" locales added, so names and descriptions have now not string values, but are objects with the following structure: {"en": "value", "de": "value"}	"29/Sep/16 1:07 PM;ants;Translation issues are resolved in this ticket.
+
+Other issues concerning PDF are moved to follow-up ticket IPTS-190."																																																		

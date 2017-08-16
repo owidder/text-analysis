@@ -1,0 +1,13 @@
+List Edit - Date interval cannot be edited anymore	"Reproduce with trunk and only in the IE 11
+
+ # Open ""Data"" and ""Information Systems""
+
+ # Add the column ""Dev. Interval""
+
+ # You cannot edit ""Dev. Interval"" or other Date interval attributes
+
+
+
+Expected: That you can edit the date interval in the list view
+
+Actual: No edit possible"		Bug	iteraplan PO	19/Apr/17 9:51 AM	21/Apr/17 3:58 PM														21/Apr/17 3:58 PM;fka;Only productive period can be edited right now, no other date interval in the list view.																																																						

@@ -1,0 +1,6 @@
+Wrong Results with BusinessMapping as QueryExtension in TabularReporting	"Bei Tabellarischen Auswertungen - Informationssysteme (Kundendaten):
+Beim ersten Mal ohne weiteren Filter erhalte ich alle 109 IS (alle sind im Status = „Ist"").
+Wenn ich dann die IS filtere über „Eigenschaften zugeordneter Fachlicher Zuordnungen - Geschäftsprozesse/Geschäftseinheiten/Produkte"" und kein Häkchen setze bei „keine Zuordnungen"" bekomme ich als Ergebnis 19 IS, setze ich den Haken, sind es 73.
+Frage: Wo sind dann die restlichen 17 IS?
+
+Vermutung: Da Fehler genauso auch bei BusinessFunctions auftritt, filtert der Punkt ""No Association"" auf die Tabelle, in der BusinessFunctions und BusinessMapping zusammen abgelegt sind."		Bug	iteraplan PO	20/Jul/11 5:04 PM	26/Jul/11 5:41 PM														22/Jul/11 2:24 PM;vsh;The problem is that business functions are saved internally as businessmappings so adding a business function to an entity adds automatically a business mapping. Selecting "No association" in the Business Mapping filter refers only to "standard" business mappings (=the triple business process/business unit/product).																																																						

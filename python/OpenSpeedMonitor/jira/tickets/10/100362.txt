@@ -1,0 +1,5 @@
+Timepicker durch Clockpicker ersetzen	"Der Timepicker, welcher zB für das eventResultDashboard verwendet wird, ist nicht schön und nicht sehr funktional.
+
+
+
+Wir sollten ihn durch den clockpicker ersetzen: http://weareoutman.github.io/clockpicker/"		Improvement	OpenSpeedMonitor	24/Oct/16 7:27 PM	04/May/17 3:01 PM																																																																				

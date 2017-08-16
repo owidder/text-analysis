@@ -1,0 +1,43 @@
+Authorization failed downloading 5.4 version for MucHyp	"Dear support,
+
+
+
+I'm trying to download the package 5.4 for Münchener Hypothekenbank eG
+
+
+
+From the following URL and credentials you send to customer and we are not able to download.
+
+
+
+HTTP request sent, awaiting response... 401 Unauthorized
+
+Authorization failed.
+
+
+
+https://www.iteraplan.de/downloads/corporate/5.4.0/iteraplan-5.4.0-MucHyp-corporate-installer.zip 
+
+ 
+
+Login: corporate
+
+Passwort: WiayLe4i
+
+
+
+Could you please give us the property credentials to download the 5.4 instance?
+
+
+
+Cheers,
+
+Borja"		Technical question	iteraplan Support	11/Jan/17 4:50 AM	11/Jan/17 8:23 AM														"11/Jan/17 5:49 AM;admin@mcongroup.net;Dears,
+
+Please close this ticket, there was a typo when copy&paste
+
+No action need
+
+Sorry for inconvenience
+
+Thanks"																																																						

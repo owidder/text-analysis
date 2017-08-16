@@ -1,0 +1,24 @@
+Filtering Accountability with "*" leads to error	"Schritte:
+1) Login
+2) Menü EA-Daten > Fachliche Domänen
+3) Reiter Abfragen
+4) Merkmal Accountability
+5) Wert unten (Freitext) eingeben: ""*"" (Stern)
+6) Return
+-> Fehlermeldung
+Bitte geben Sie für diese Abfrage einen Wert an oder wählen Sie einen Wert
+aus der Liste der bereits für dieses Merkmal vorhandenen Werte.
+
+Meldung OK, aber
+
+A) unter Kontextaktionen ein Text ??????????
+B) darunter null in Text ""null neu anlegen""
+C) Menü-Punkt Fachliche Domänen führt wieder Fehlermeldung.
+
+
+Logout/Login behebt Problem.
+
+Bei anderen Bebauungselementen tritt das Problem analog auf, z. B.
+Geschäftsobjekt aber nicht bei allen nachgetestet.
+
+Bei anderen Attributen führt ""*"" nicht einem Flow-Abbruch."		Bug	iteraplan PO	30/Apr/12 4:46 PM	02/May/12 9:42 AM																																																																				

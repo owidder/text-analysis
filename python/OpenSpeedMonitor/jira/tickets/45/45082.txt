@@ -1,0 +1,10 @@
+New Clusterdiagram (nesting elements)	New Clusterdiagram with nesting elements. Output is SVG.		New Feature	iteraplan PO	16/Aug/11 10:52 AM	19/Oct/11 6:17 PM					diagram	reports								26/Aug/11 4:15 PM;kgo;Revision #14157 also concerns this issue.	23/Sep/11 10:34 AM;kvo;Please also include a possibility to save and directly execute configurations.	"19/Oct/11 11:15 AM;sfe;The basic implementation is now done.
+ * A nesting cluster diagram can be created by choosing outer and inner element types, and, in case more than one possible relationship between the chosen types exists in our metamodel, by selecting which of those relationships is used.
+ * It is possible to select a fixed colour for outer and inner elements each.
+ * The configuration can be saved and loaded as well as directly executed.
+
+not included:
+ * Colouring of the elements by attributes
+ * Hyperlinked elements
+ * Iteraplan ""look"" of the diagram with title, corners etc.
+ * Other additional features to come"	19/Oct/11 6:17 PM;vsh;I like it.																																																			

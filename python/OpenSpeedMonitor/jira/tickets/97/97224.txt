@@ -1,0 +1,7 @@
+LATER: Install on production	"After all tests and the review, install the new personal demo system on our external server www.iteraplan.de.
+
+
+
+[~mada] and [~sfe] should discuss, when to do what, and by whom."	93358	Sub-task	iteraplan Speedbird	26/Sep/16 12:59 PM	07/Nov/16 11:49 AM														"03/Nov/16 3:23 PM;sfe;Application was deployed on demo server and developer documentation updated here: https://iteraweb.iteratec.de/confluence/display/ITPL/PersonalDemo-System
+
+However, it is a German documentation, so maybe better if [~msr] reviewed it."																																																						

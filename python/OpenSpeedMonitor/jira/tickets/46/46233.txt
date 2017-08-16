@@ -1,0 +1,12 @@
+It is not possible to save building blocks with number attribute values which are "out of bounds"	"Reproducer (with sample data):
+# Open arbitrary business process and edit
+# Change value of ""Strategic value"" to 50 -> validation error displayed
+# Click save => nothing happens (not even an error message)
+# Change value of ""Strategic value"" to something between 1 and 10 -> validation error vanishes
+# Click save => save works
+
+What should happen:
+Saving should work in step 3, too. The number attribute value which is ""out of bounds"" should then be displayed in red."		Bug	iteraplan PO	25/Oct/13 2:34 PM	19/Jan/16 11:30 AM					number	validation								25/Jun/14 2:51 PM;fka;Expected behaviour needs to be clarified	"25/Jun/14 3:09 PM;sfe;In step 3 of the reproducer, Instead of nothing happening, the building block should be saved successfully. Attribute values ""out of bounds"" should then be displayed in red.
+In the example above, the value for ""Strategic value"" is outside the bounds 1-10. It should still have been saved, with the attribute value ""50"" then being displayed in red in the building block detail view.
+
+If this explanation is not clear enough, please specifically name the part which needs to be clarified further."																																																					

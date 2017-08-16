@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.css"
+          media="screen,projection"/>
+
+    <style>
+
+        circle.zoom {
+            stroke-width: 1;
+            stroke: white;
+            opacity: .5;
+        }
+
+        div.container {
+            width:100%;
+            margin: 0;
+        }
+
+        .viewfinder {
+            stroke: black;
+            stroke-width: 1;
+            fill: none;
+            opacity: .3;
+        }
+
+        div.slider-input, div.statistics {
+            font-size: .5em;
+        }
+
+        line.viewfinder {
+            stroke: black;
+            stroke-width: 1;
+            opacity: .2;
+        }
+
+        line.guideline {
+            stroke: black;
+            stroke-width: 2;
+            opacity: .2;
+        }
+
+        g.move rect {
+            fill: red;
+        }
+
+        g.no-move rect {
+            fill: grey;
+        }
+
+        line.link.zoom {
+            stroke: black;
+            opacity: .3;
+            stroke-width: 1px;
+        }
+
+        div.search-results, div.words {
+            line-height: 1.2em;
+            font-size: .4em;
+        }
+
+        a.filename {
+            color: black;
+            font-weight: bolder;
+        }
+
+        span.legend {
+            display: flex;
+            font-size: .3em;
+            line-height: 1em;
+            height: 1em;
+            margin: auto;
+        }
+
+        div.search imput {
+            font-size: small;
+            margin: 0;
+            height: 1rem;
+        }
+
+        div.input-field, div.input-field input {
+            padding: 0;
+            height: 1em;
+            margin:0;
+        }
+
+        span.search {
+            font-size: .5em;
+        }
+
+        span.link {
+            font-size: .6em;
+        }
+
+        span.link:hover, span.search:hover {
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        div.odd {
+            background-color: lightgrey;
+        }
+
+        div.search-entry {
+            border-bottom: solid 1px;
+            border-top: solid 1px;
+        }
+
+        line.svgborder {
+            stroke: grey;
+            stroke-width: 1px;
+        }
+
+        #words-elements {
+            height: 4em;
+            background-color: lightgrey;
+            border-width: 1px;
+        }
+
+        span.total {
+            font-size: 2em;
+            font-weight: bolder;
+        }
+
+        span.all {
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+<script src="bower_components/bottlejs/dist/bottle.js"></script>
+<script>var bottle = new Bottle();</script>
+<script src="bower_components/lodash/dist/lodash.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/js-url/url.js"></script>
+<script src="bower_components/handlebars/handlebars.js"></script>
+
+<script src="js/util/simplePromise.js"></script>
+<script src="js/util/SimpleEvent.js"></script>
+<script src="js/util/util.js"></script>
+<script src="js/util/svgUtil.js"></script>
+<script src="js/util/github.js"></script>
+<script src="js/legend.js"></script>
+<script src="js/BirdsviewRenderer.js"></script>
+<script src="js/NodesAndLinks.js"></script>
+<script src="js/Viewfinder.js"></script>
+<script src="js/ZoomArea.js"></script>
+<script src="js/proxy.js"></script>
+<script src="js/handlers.js"></script>
+<script src="js/words.js"></script>
+
+<script src="bower_components/d3/d3.min.js"></script>
+<script src="js/util/stuff.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/spinner.css">
+<link rel="stylesheet" type="text/css" href=" css/material-icons.css"/>
+
+<div id="spinner" class="loading">Loading&#8230;</div>
+<div class="">
+    <div class="row">
+        <div class="col s12">
+            <div class="progress">
+                <div id="progressbar" class="determinate" style="width: 0%"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 statistics">
+            <b># of nodes: </b><span id="totalNoOfNodes"></span> |
+            <b># of links: </b><span id="totalNoOfLinks"></span> |
+            <b># of nodes in zoom area: </b><span id="zoomAreaNoOfNodes"></span> |
+            <b># of links in zoom area: </b><span id="zoomAreaNoOfLinks"></span> |
+            <b># of zoom area inner links: </b><span id="zoomAreaInnerLinks"></span> |
+            <b># of links going out of / into zoom area: </b><span id="zoomAreaInoutGoingLinks"></span> |
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <div id="words-elements"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s4 slider-input">
+            Viewfinder size: <span id="viewfinderfactor-value"></span> %
+            <input id="viewfinderfactor-slider" value="30" type="range" min="1" max="100" onchange="viewfinderFactorChanged()"/>
+        </div>
+        <div class="col s4 slider-input">
+            Radius size: <span id="radiusfactor-value"></span> %
+            <input id="radiusfactor-slider" value="100" type="range" min="10" max="100" onchange="radiusFactorChanged()"/>
+        </div>
+        <div class="col s3 slider-input">
+            Threshold: <span id="threshold-value"></span> %
+            <input id="threshold-slider" value="70" step="5" type="range" min="50" max="99" onchange="thresholdChanged()"/>
+        </div>
+        <div class="col s1 slider-input">
+            Links
+            <div class="switch">
+                <label>
+                    <input type="checkbox" id="linkswitch" onchange="linkSwitchChanged()">
+                    <span class="lever"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s3">
+            <div id="birdsview"></div>
+            <span class="legend">
+                Click -> move mouse -> click
+            </span>
+            <div class="search">
+                <div class="row">
+                    <div class="input-field col s10">
+                        <input placeholder="Search" id="search-input" type="text" class="validate">
+                    </div>
+                    <div class="col s1">
+                        <span onclick="searchClicked()" class="search"><i class="material-icons">search</i></span>
+                    </div>
+                    <div class="col s1">
+                        <span onclick="clearSearch()" class="search"><i class="material-icons">delete_forever</i></span>
+                    </div>
+                </div>
+            </div>
+            <div id="search-results-element"></div>
+        </div>
+        <div class="col s9">
+            <div id="zoom"></div>
+        </div>
+    </div>
+</div>
+
+<script id="search-results-script" type="text/x-handlebars-template">
+    <div class="search-results">
+        {{#each relPaths}}
+        <div class="{{evenOdd}} search-entry">
+            <a class="mini filename" href="{{github}}" target="_blank">{{relPath}}</a><br>
+            <a class="mini" href="cloud.html?path={{relPath}}" target="_blank">[cloud]</a>
+            <a class="mini" href="lsiIndex.html?path={{relPath}}" target="_blank">[similar files]</a>
+            <a class="mini" href="histo.html?path={{relPath}}" target="_blank">[histogram]</a>
+            <span class="mini link" onclick="moveToRelPath('{{relPath}}')"><i class="material-icons">arrow_forward</i></span>
+            <br>
+        </div>
+        {{/each}}
+    </div>
+</script>
+
+<script id="words-script" type="text/x-handlebars-template">
+    <div class="words">
+        <span class="total">{{total}}</span>:
+        {{#each words}}
+        {{#if all}}
+        <span class="all">{{key}}</span>
+        {{else}}
+        <span class="mini">{{key}}</span>
+        {{/if}}
+        <span class="mini"> ({{weight}} / {{occurrence}}) | </span>
+        {{/each}}
+    </div>
+</script>
+
+<script>
+
+    var ZOOM_AREA_FACTOR = 3;
+
+    var ID_BIRDSVIEW = "birdsview";
+
+    var Legend = bottle.container.Legend;
+    var util = bottle.container.util;
+    var SimplePromise = bottle.container.SimplePromise;
+
+    var SEARCH_RESULTS_SCRIPT_ID = "search-results-script";
+    var SEARCH_RESULTS_ELEMENT_ID = "search-results-element";
+
+    var WORDS_SCRIPT_ID = "words-script";
+    var WORDS_ELEMENT_ID = "words-elements";
+
+    var PARAM_NAME_THRESHOLD = "t";
+    var PARAM_NAME_FORCE_REFRESH = "f";
+    var PARAM_NAME_VIEWFINDER_REL_X = "vx";
+    var PARAM_NAME_VIEWFINDER_REL_Y = "vy";
+    var PARAM_NAME_VIEWFINDER_FACTOR = "vf";
+    var PARAM_NAME_RADIUS_FACTOR = "rf";
+    var PARAM_NAME_SEARCH_REL_PATH = "srp";
+
+    var threshold = util.getHashParam(PARAM_NAME_THRESHOLD, "70");
+    var forceRefresh = util.getHashParam(PARAM_NAME_FORCE_REFRESH, "");
+    var viewfinderFactorStr = util.getHashParam(PARAM_NAME_VIEWFINDER_FACTOR, "30");
+    var radiusFactorStr = util.getHashParam(PARAM_NAME_RADIUS_FACTOR, "100");
+    var searchForRelPath = util.getHashParam(PARAM_NAME_SEARCH_REL_PATH, "");
+
+    var BIRDSVIEW_PINCH_FACTOR = 4.3;
+
+    var birdsviewWidth = window.innerWidth / BIRDSVIEW_PINCH_FACTOR;
+    var birdsviewHeight = window.innerHeight / BIRDSVIEW_PINCH_FACTOR;
+    var zoomWidth = birdsviewWidth * ZOOM_AREA_FACTOR;
+    var zoomHeight = birdsviewHeight * ZOOM_AREA_FACTOR;
+
+    var viewfinderFactorChangedEvent = new bottle.container.SimpleEvent();
+    var radiusFactorChangedEvent = new bottle.container.SimpleEvent();
+    var linkSwitchChangedEvent = new bottle.container.SimpleEvent();
+
+    function thresholdChanged() {
+        var thresholdStr = $("#threshold-slider").val();
+        util.changeHashParam(PARAM_NAME_THRESHOLD, thresholdStr);
+        window.location.reload();
+    }
+
+    function viewfinderFactorChanged() {
+        var viewfinderFactorStr = $("#viewfinderfactor-slider").val();
+        var viewfinderFactor = Number(viewfinderFactorStr) / 100;
+        $("#viewfinderfactor-value").html(viewfinderFactorStr);
+        util.changeHashParam(PARAM_NAME_VIEWFINDER_FACTOR, viewfinderFactorStr);
+        viewfinderFactorChangedEvent.startWhenFirstListenerReady(viewfinderFactor);
+    }
+
+    function radiusFactorChanged() {
+        var radiusFactorStr = $("#radiusfactor-slider").val();
+        var radiusFactor = Number(radiusFactorStr) / 100;
+        $("#radiusfactor-value").html(radiusFactorStr);
+        util.changeHashParam(PARAM_NAME_RADIUS_FACTOR, radiusFactorStr);
+        radiusFactorChangedEvent.startWhenFirstListenerReady(radiusFactor);
+    }
+
+    function linkSwitchChanged() {
+        var checked = document.getElementById("linkswitch").checked;
+        linkSwitchChangedEvent.startWhenFirstListenerReady(checked);
+    }
+
+    function showTotalNumberOfLinks(no) {
+        $("#totalNoOfLinks").html(String(no));
+    }
+
+    function showTotalNumberOfNodes(no) {
+        $("#totalNoOfNodes").html(String(no));
+    }
+
+    function showZoomaAreaNumberOfLinks(no) {
+        $("#zoomAreaNoOfLinks").html(String(no));
+    }
+
+    function showZoomAreaNumberOfNodes(no) {
+        $("#zoomAreaNoOfNodes").html(String(no));
+    }
+
+    function showZoomAreaNumberOfInnerLinks(no) {
+        $("#zoomAreaInnerLinks").html(String(no));
+    }
+
+    function showZoomAreaNumberOfInoutGoingLinks(no) {
+        $("#zoomAreaInoutGoingLinks").html(String(no));
+    }
+
+    function putRelPositionIntoUrlParam(relPosition) {
+        util.changeHashParam(PARAM_NAME_VIEWFINDER_REL_X, relPosition.relX);
+        util.changeHashParam(PARAM_NAME_VIEWFINDER_REL_Y, relPosition.relY);
+        util.removeHashParam(PARAM_NAME_SEARCH_REL_PATH);
+    }
+
+    function initViewfinderRelPosition(viewfinder) {
+        var relX = Number(util.getHashParam(PARAM_NAME_VIEWFINDER_REL_X, ".5"));
+        var relY = Number(util.getHashParam(PARAM_NAME_VIEWFINDER_REL_Y, ".5"));
+        viewfinder.setRelPosition({
+            relX: relX,
+            relY: relY
+        })
+    }
+
+    var ready = new SimplePromise();
+    var handlersReady = new SimplePromise();
+
+    function zoomAreaClicked(relPaths) {
+        bottle.container.handlers.showFiles(relPaths, SEARCH_RESULTS_SCRIPT_ID, SEARCH_RESULTS_ELEMENT_ID);
+    }
+
+    function zoomAreaMouseMoved(relPaths) {
+        if(!_.isEmpty(relPaths)) {
+            bottle.container.words.showTopWordsFromRelPathList(relPaths, WORDS_SCRIPT_ID, WORDS_ELEMENT_ID);
+        }
+    }
+
+    function zoomAreaMouseOut() {
+        bottle.container.words.clearTopWords(WORDS_ELEMENT_ID);
+    }
+
+    function clearSearch() {
+        $("#search-input").val("");
+
+        bottle.container.handlers.showFiles([], SEARCH_RESULTS_SCRIPT_ID, SEARCH_RESULTS_ELEMENT_ID);
+    }
+
+    var searchClicked = function () {};
+    var moveToRelPath = function() {};
+    ready.promise.then(function () {
+
+        searchClicked = function() {
+            bottle.container.handlers.searchClicked(nodesAndLinks, "#search-input", SEARCH_RESULTS_SCRIPT_ID);
+        };
+
+        moveToRelPath = function (relPath) {
+            util.removeHashParam(PARAM_NAME_VIEWFINDER_REL_X);
+            util.removeHashParam(PARAM_NAME_VIEWFINDER_REL_Y);
+            util.changeHashParam(PARAM_NAME_SEARCH_REL_PATH, relPath);
+            bottle.container.handlers.moveToRelPath(nodesAndLinks, viewfinder, birdsviewWidth, birdsviewHeight, relPath);
+        };
+
+        handlersReady.resolve();
+    });
+
+    var nodesAndLinks;
+    var zoomArea;
+    var viewfinder;
+
+    var birdsViewRenderer = new bottle.container.BirdsviewRenderer(ID_BIRDSVIEW, birdsviewWidth, birdsviewHeight, threshold, forceRefresh, {
+        progressChangedCallback: function(percent) {
+            document.getElementById("progressbar").style = "width: " + percent + "%";
+        },
+        loadStartedCallback: function () {
+            $("#spinner").show();
+        }
+    });
+
+    birdsViewRenderer.ready().then(function (forceId) {
+        nodesAndLinks = new bottle.container.NodesAndLinks(forceId);
+
+        nodesAndLinks.ready().then(function(nodes) {
+            bottle.container.proxy.remove(forceId);
+
+            showTotalNumberOfLinks(nodesAndLinks.getNumberOfLinks());
+            showTotalNumberOfNodes(nodes.length);
+
+            var svg = d3.select("#" + ID_BIRDSVIEW + " svg");
+
+            zoomArea = new bottle.container.ZoomArea("zoom", zoomWidth, zoomHeight, zoomAreaClicked, zoomAreaMouseMoved, zoomAreaMouseOut);
+
+            function updateZoom(nodes, links, x, y, viewfinderFactor) {
+
+                var zoomFactor = ZOOM_AREA_FACTOR / viewfinderFactor;
+                zoomArea.draw(nodes, links, x, y, zoomFactor);
+            }
+
+            viewfinder = new bottle.container.Viewfinder(svg, nodes, birdsviewWidth, birdsviewHeight, updateZoom, {
+                numberOfLinksCallback: showZoomaAreaNumberOfLinks,
+                numberOfNodesCallback: showZoomAreaNumberOfNodes,
+                numberOfInnerLinksCallback: showZoomAreaNumberOfInnerLinks,
+                numberOfInoutGoingLinksCallback: showZoomAreaNumberOfInoutGoingLinks,
+                relPositionChangedCallback: putRelPositionIntoUrlParam
+            });
+
+            initViewfinderRelPosition(viewfinder);
+            ready.resolve();
+
+            viewfinderFactorChangedEvent.on(function (viewfinderFactor) {
+                viewfinder.setFactor(viewfinderFactor);
+            });
+
+            radiusFactorChangedEvent.on(function (radiusFactor) {
+                zoomArea.changeRadiusFactor(radiusFactor);
+            });
+
+            linkSwitchChangedEvent.on(function (showLinks) {
+                zoomArea.changeShowLinks(showLinks);
+            })
+        });
+    });
+
+    function init() {
+        $("#threshold-value").html(threshold);
+
+        $("#threshold-slider").val(threshold);
+
+        $("#viewfinderfactor-slider").val(viewfinderFactorStr);
+        viewfinderFactorChanged();
+
+        $("#radiusfactor-slider").val(radiusFactorStr);
+        radiusFactorChanged();
+
+        if(!_.isEmpty(searchForRelPath)) {
+            moveToRelPath(searchForRelPath);
+        }
+
+        $("#spinner").hide();
+    }
+
+    handlersReady.promise.then(function () {
+        init();
+    });
+
+</script>
+</body>
+</html>

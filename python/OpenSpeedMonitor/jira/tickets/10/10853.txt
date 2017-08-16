@@ -1,0 +1,2 @@
+CSI-Dashboard: Tagesmittel pro Job funktioniert nicht	"Tritt live auf:
+Bei entsprechender Auswahl wird die Wochenkurve pro Shop angezeigt."		Bug	OpenSpeedMonitor	20/Jan/14 10:37 AM	22/Jan/14 4:24 PM																																																																				

@@ -1,0 +1,7 @@
+Double click to initialize edit in multi line cells doesn't work correctly	"Editing a cell can be initialized by clicking the ""on hover"" edit icon and by double clicking the cell.
+
+The latter does not work correctly for multi line cells, as the ag-grid context variable indicating which of the ""lines"" in the cell is to be edited, is only set in the click handler of the edit icon.
+
+
+
+Find a way to make double click work, or possibly disable it."		Bug	iteraplan Thunderduck	14/Dec/16 9:28 AM	26/Jan/17 4:44 PM														13/Jan/17 11:22 AM;mse;Double clicking to start editing was disabled for multi-line cells where the lines must be editable seprately (i.e. attributes of associations). For all other columns, it is still possible.	16/Jan/17 1:29 PM;mse;After discussion with [~fka]: Disable editing by double-click completely in list view.	25/Jan/17 2:41 PM;mse;I double-checked again after this ticket was rejected during sprint review and double-click is disabled in the nightly (checked in Firefox, Chrome and IE).	26/Jan/17 1:36 PM;mse;The refactoring of MultiLineEditableCellRenderer was reverted following a review comment from [~sfe].																																																			

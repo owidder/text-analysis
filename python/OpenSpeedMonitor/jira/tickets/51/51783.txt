@@ -1,0 +1,1 @@
+ElasticSearch (PP) - Rückgabe der gespeicherten Daten implementieren		51768	Sub-task	secureCodeBox	24/Jul/15 8:06 PM	19/Jun/16 1:29 PM																																																																				

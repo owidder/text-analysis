@@ -1,0 +1,123 @@
+Installation Iteraplan 5.2 not working	"Dear support,
+
+
+
+We've followed the manual for the upgrade to iteraplan 5.2 and the requirements.
+
+The installation was ok, tomcat is up and running but cannot access to iteraplan instance.
+
+
+
+Could you please support us?
+
+
+
+java 1.8
+
+tomcat 7
+
+centos 7.2
+
+
+
+Cheers"		Technical question	iteraplan Support	08/Jul/16 1:34 PM	15/Jul/16 5:58 PM														08/Jul/16 1:57 PM;msr;Bitte sagen, dass wir wissen müssen, welcher iteraplan-Kunde es ist	"11/Jul/16 9:01 AM;cst;Dear Sir / Madam,
+
+thank you for your enquiry. 
+
+Would you please give me Name of our customer and the following LOG-Files so we can check the problem.
+
+From the conf-directory of your Tomcat-Installation:
+
+* server.xml
+* web.xml
+
+ The “catalina.out” and “localhost.log” files from your tomcat installation (just for the period, when the error occurred).
+ From [Tomcat]/webapps/[iteraplan directory]/WEB-INF/classes:
+
+* log4j.properties
+
+ From [Tomcat]/webapps/[iteraplan directory]/META-INF:
+ 
+* context.xml (This file can contain passwords -> please remove the passwords)*
+ 
+The iteraplan log files from the period, when the error occurred. The files are called “iteraplan-[version].log” (for today) or „iteraplan-[version].log.[TIMESTAMP]” (for past days). The location of these file was specified during installation and is documented in the file “log4j.properties”.
+
+Greetings, 
+
+Christoph Stangl iteraplan Support
+
+"	"12/Jul/16 11:47 AM;admin@mcongroup.net;Dear Christoph,
+
+The Name of customer is Engie. 
+
+Customer sends to us few weeks ago the Iteraplan 5.2 version and ask for an upgrade.
+
+The files you need I've attached.
+
+Please let me know if need anything else.
+
+Thanks for your support.
+
+[^engie-qa.tar.gz] _(21 kB)_"	"12/Jul/16 4:46 PM;cst;Dear Sir / Madam,
+
+thank you for sending us the log files. 
+
+To continue the analysis we need the files ""iteraplan-[version].log"", ""iteraplan-[version].log.[TIMESTAMP]"" and the 
+""localhost_access_log.[TIMESTAMP].txt"".
+
+A Screenshot with the exact error message on login page would be very helpful.
+
+Greetings, 
+
+Christoph Stangl iteraplan Support
+"	"13/Jul/16 3:56 PM;admin@mcongroup.net;Dear support,
+As I told you, the installation process was ok, and tomcat is up and running but the login page does not load.
+
+The logs I sent you are with timestamp.
+
+Let me know how we proceed"	"13/Jul/16 4:54 PM;cst;Dear Sir / Madam,
+
+the tomcat is starting as you described it.
+
+We need the ""*iteraplan.logs*"" to check why the software is not loading the login page.
+Without these we cannot verify your Problem and in your ZIP-File these logs are not include. 
+The location of these file was specified during installation and is documented in the file “log4j.properties”.
+
+Is the login screen White or does it show any error? A Screenshot on login page woud be very helpful. 
+
+Greetings, 
+
+Christoph Stangl iteraplan Support
+
+"	"14/Jul/16 3:28 PM;admin@mcongroup.net;Dear Christoph, I've attached the iteraplan log and a screenshot.
+
+Cannot attach empty file iteraplan-5.2.0-login.csv.
+Cannot attach empty file iteraplan-5.2.0-nc.log.
+Cannot attach empty file iteraplan-5.2-audit.log.
+
+Regards
+
+!screenshot.png|thumbnail!
+
+[^iteraplan-5.2.0.log] _(38 kB)_"	"15/Jul/16 12:36 PM;cst;Dear Sir / Madam,
+
+thank you for sending us the missing information.
+
+Woud you please connect to the tomcat server and open these URL'S locally:
+
+http://localhost:8081/yourinstancename
+https://localhost:8443/yourinstancename
+
+Will now the login page be displayed, or is the page white again?
+
+When the Page is displayed only with http and port 8081, check the ""<connector>"" configuration in the server.xml. 
+The reason can be found in the missing adjustments for https and port 8443. 
+
+Did you reinstall the tomcat before the update 5.1 -> 5.2 or is it the same version and instance as 5.1? 
+
+If this does not work, please send us the ""localhost_access_log.[TIMESTAMP].txt"" to further isolate the error.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+"	15/Jul/16 4:13 PM;admin@mcongroup.net;Dear Christoph, I had a redirection in apache and problem solved. I'm able to load website																																														

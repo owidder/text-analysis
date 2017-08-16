@@ -1,0 +1,11 @@
+Bug beim Generieren von Changesets	"Es gibt ein Problem beim Generieren der ChangeLogs. Boolische Defaultwerte werden immer wieder generiert, obwohl sie in der Datenbank schon gesetzt sind. Dafür habe ich ein [Bug-Report|https://github.com/grails-plugins/grails-database-migration/issues/69] bei den database-migration-plugin Entwicklern eingereicht.
+
+
+
+Einige Indizes werden auch immer wieder generiert, dafür konnte ich allerding kein Beispielprojekt erstellen.
+
+"		Open Point	OpenSpeedMonitor	19/May/16 10:33 AM	28/Apr/17 6:32 PM														25/Oct/16 4:34 PM;msk;Bug wurde an Liquibase weitergeleitet. Scheint [dort|https://liquibase.jira.com/browse/CORE-2831] gefixt worden zu sein.	"31/Oct/16 11:50 AM;msk;Bug wurde geclosed. Der offizielle Fix ist ein Update auf Liquibase3, wo der Fehler nur noch leicht abgeändert auftritt. In der Version will Liquibase die Indizes für boolische Werte jedes mal droppen und dann re-adden. 
+
+
+
+Wir können das Update momentan sowieso nicht ohne Probleme verwenden, da Liquibase3 Hibernate5 benötigt. Der OSM verwendet momentan Hibernate4."	28/Apr/17 6:32 PM;nku;Würde sich (hoffentlich) ergeben, wenn wir auf Grails 3.2 updaten.																																																				

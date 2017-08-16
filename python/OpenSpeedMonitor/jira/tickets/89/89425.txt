@@ -1,0 +1,3 @@
+Front-End Connection	"Start with Server side.
+
+Don't forget _tests_, _logging_, _exception handling_ !"		New Feature	iteraplan Thunderduck	05/Jul/16 9:55 AM	19/Jul/16 10:08 AM																																																																				

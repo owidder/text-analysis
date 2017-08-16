@@ -1,0 +1,100 @@
+IS, TC, IF  oder andere Objekte nicht bearbeitbar	"Hallo
+
+Die Anmeldung über LDAP-SSO funktioniert. Der Benutzer wird angemeldet und hat seine Ansicht, die durch die Rollen und Berechtigung zugewiesen werden.
+
+Ich als Administrator, habe durch den Supervisor alle Rechte. Habe aber trotzdem alle mögliche Objekte zugewiesen.
+
+
+
+Wenn ich nun ein Objekt auswähle und auf den Button ""Ändern"" klicke, erfolgt eine Fehlermeldung (Ein allgemeiner technischer Fehler ist aufgetreten). Im iteraplan Log erscheint kein Eintrag.
+
+Die Anmeldung LDAO-SSO ist aus meiner Sicht durch. Hier hat iteraplan irgendwelche Probleme! Oder?
+
+Danke für die Bearbeitung
+
+Lg A. Studer"		Fault	iteraplan Support	03/Apr/17 10:28 AM	06/Apr/17 11:10 AM														"03/Apr/17 10:28 AM;alfred.studer@emmi.com;
+
+[^ProblemReport_2017-04-03_101216.zip] _(9 kB)_"	"03/Apr/17 10:41 AM;cst;Guten Morgern Herr Studer,
+
+vielen Dank für Ihre Anfrage.
+
+Tritt das Problem auch im interaktiven Client auf, können Sie bitte test weise in der Listenansicht Elemente ändern? 
+Zu weiteren Analyse würde ich einen DUMP der Datenbank benötigen, um das Verhalten hier nachbauen zu können.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"03/Apr/17 11:13 AM;alfred.studer@emmi.com;Im interaktiven Client, kann ich keine Änderungen vornehmen. Bei einem IS heisst es dann immer z.B. Abfm. Contitherm [schreibgeschützt]
+Von daher kann ich hier keine Änderungen vornehmen. "	"03/Apr/17 11:32 AM;cst;In der Listenansicht der Version 5.5 können Sie direkt Änderungen vornehmen, ohne die einzel Ansicht von Elementen zu öffnen:
+
+https://doc.iteraplan.de/display/iteraplan55/List+Edit 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+"	03/Apr/17 2:03 PM;alfred.studer@emmi.com;Das ist richtig, dass man den Namen und die Beschreibung in der Listenansicht ändern kann. Aber es hat ja noch einige andere Informationen, die man ändern würde. Merkmale, Beziehungen, etc.	"03/Apr/17 2:31 PM;cst;Korrekt, dies ist auch möglich. Sie können Spalten ""Attribute"" / ""Beziehungen"" usw. zur Listenansicht hinzufügen. 
+Mir ging es nur darum, das man dies testet um zu prüfen ob hier der gleiche Fehler erzeugt wird. 
+
+Gerne können Sie mir auch einen Datebank Dump zukommen lassen, dann prüfe ich das auch gerne hier.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"03/Apr/17 3:00 PM;alfred.studer@emmi.com;OK, habe es gefunden. Ist es so, dass die einzelnen Angaben in den Auswahlfeldern nicht angezeigt werden. Respektive, erst wenn man den ersten Buchstaben schreibt. Dies setzt aber voraus, dass man den Inhalt der Auswahlfelder kennt. Ist dies so?
+
+Ich konnte ein neue Spalte hinzufügen und bearbeiten und abspeichern."	03/Apr/17 3:04 PM;alfred.studer@emmi.com;Anbei der DB Oracle Dump	03/Apr/17 3:06 PM;alfred.studer@emmi.com;[^IteraLDAPExpDP03.04.2017.DMP.zip] _(3,36 MB)_	"04/Apr/17 11:07 AM;cst;Guten Tag Herr Studer,
+
+wir prüfen gerade die Ursache des Fehlers, tritt dieser in Ihrer live Umgebung auch auf?
+Um wirklich alle Eventualitäten ausschließen zu können, haben Sie mir auch den Datenbank-DUMP vor der LDPA-Umstelung Ihres Testsystems? 
+
+Viele Grüße,
+
+Christoph Stangl - iterapan Support"	"04/Apr/17 11:17 AM;alfred.studer@emmi.com;Guten Tag
+Der DB Dump kommt von der LDAP Installation. In der aktuellen Prod und der Test 5.4 Umgebung funktioniert dies so wie es muss."	"04/Apr/17 1:00 PM;cst;Für die LDAP SSO Umsetzung war die Datenbank ""Test 5.4 Umgebung"" die Grundlage?
+
+Wenn ja, könnten Sie mir diese auch als DUMP zukommen lassen. 
+Dann führe ich das Update nochmals durch und füge die LDAP-Gruppen ein.
+ Möchte sicherstellen, das wir hier hier kein Datenbank-dreher enthalten haben. 
+
+Im Moment kann ich das Problem nicht korrekt debuggen und mir würde ein DUMP von der der Grundlage der LDAP-Datenbank sehr weiterhelfen.
+
+Vielen Dank,
+
+Christoph Stangl - iterapan Support"	"04/Apr/17 4:16 PM;alfred.studer@emmi.com;Anbei der DB-Dump von der Test Umgebung 5.4
+
+[^IteraTESTExpDP04.04.2017.DMP.zip] _(3,37 MB)_"	"05/Apr/17 8:53 AM;cst;Guten Morgen,
+
+also es scheint das wir beim umsetzen und rumprobieren hier eine Datenbank Inkonsistenz erzeugt haben.
+Habe jetzt die Datenbank von gestern von 5.4 auf 5.5. angehoben und die LDAP-Gruppen/Rollen eingetragen.
+
+Die anderen Rollen aus dem iturm, habe ich erstmal stehen gelassen. Wenn diese nicht mehr benötigt werden, kann man diese in der Software entfernen. 
+Habe Ihnen den DUMP-Datei hochgeladen. Habe das hier lokal gegen getestet und die IS, TC, IF lassen sich wieder bearbeiten.
+
+ [^LDAP.zip] 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"06/Apr/17 11:02 AM;alfred.studer@emmi.com;Den zugesendeten DB Dump konnten wir nicht gebrauchen. Stellten fest, dass der User und das Passwort darin geändert wurden. 
+Hätten erwartet, dass man uns darauf hinweist. So musste unser DB Admin zuerst der Fehler suchen um festzustellen, dass unsere User & PW geändert wurde.
+Es sind dann noch das eine oder andere dazugekommen, dass wir uns dann entschlossen haben, eine neue Migration zu erstellen und die entsprechenden Gruppen einzutragen.
+
+Darf ich sie auch bitten, unsere DB Dumps wieder zu löschen. "	"06/Apr/17 11:06 AM;alfred.studer@emmi.com;Die Einträge können wieder bearbeitet werden. Somit kann dieses Ticket geschlossen werden.
+Danke für die Unterstützung"	"06/Apr/17 11:10 AM;cst;Sehr geehrter Herr Studer,
+
+
+
+vielen Dank für Ihre Antwort.
+
+
+
+Mir ist zwar schleierhaft, wie sich hier Benutzernamen und Passwörter in der iteraplan Datenbank geändert haben können, da dieser Teil nicht angefasst wurde und uns hier gar keine Informationen dazu vorliegen (iturm / LDAP).
+
+
+
+Gerne schicke ich Ihnen beim nächsten mal eine LOG-Datei mit all meinen Änderungen, um Missverständnisse hier vorzubeugen. 
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support"																																						

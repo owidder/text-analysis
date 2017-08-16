@@ -1,0 +1,1 @@
+Jobtabelle: Filter für laufende Jobs hinzufügen	Filter, der nur Jobs anzeigt, die entweder pending oder running sind.		Task	OpenSpeedMonitor	26/Feb/14 5:32 PM	27/Feb/14 2:20 PM																																																																				

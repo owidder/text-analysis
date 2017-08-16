@@ -1,0 +1,18 @@
+Enable Netto-Excel-Export for Building Block Overviews and Spreadsheet Reports	"Spreadsheet reports as well as Building block Overviews already allow users to show a simple list (browser-based) for certain elements that are of interest. These simple lists can be adapted:
+* the displayed columns can be selected
+* the order of displayed columns can be configured
+* the displayed elements can be filtered
+* the order of displayed elements can be configured
+
+In the future, users should be able to transfer these simple lists into an exact 1:1 copy in excel-file format, meaning:
+* only one sheet
+* same amount and order of columns
+* same amount and order of elements
+
+The transfer and file-download should be available over a simple button.
+There is explicitly no need for those sheets to be re-importable.
+Paging from the respective simple list should not play any role in corresponding excel-file. 
+
+"		New Feature	iteraplan PO	04/Nov/13 3:08 PM	03/Dec/13 12:53 PM														"25/Nov/13 4:44 PM;laird;Note that this has a large overlap with DM-250. The differences are:
+- Able to save the ""report"" for later reuse. That is, the selection and order of columns.
+- Include the minimal set of attributes to allow for re-import."	03/Dec/13 12:53 PM;jmi;Seems fine (but it's easy to miss the button in the Spreadsheet Report since the LandscapeReport is also labeled "Excel" in the Output-Dropdown).	17/Dec/13 2:36 PM;fka;Virtual top level element is not being exported - which is okay.	17/Dec/13 2:40 PM;fka;Reviewed with PSC, tested with IE, Chrome and FF. Both spreadsheet reports and EA data reviewed.																																																			

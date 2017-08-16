@@ -1,0 +1,23 @@
+Layout of Information Flow Diagram is non-deterministic	"*Summary:*
+
+The layout of the Information Flow Diagram is non-deterministic, i.e. the position of the boxes and lines changes every time, you open it.
+
+
+
+*Reproduce:*
+
+* Open the Information Flow Diagram
+
+* Press ""F5""
+
+
+
+*Actual:*
+
+The boxes and lines are on different positions.
+
+
+
+*Expected:*
+
+The boxes and lines are on the same positions."		Bug	iteraplan PO	10/Aug/16 8:51 AM	10/Aug/16 10:49 AM														10/Aug/16 10:49 AM;msr;Small improvement in follow-up ticket: ITERAPLAN-4824																																																						

@@ -1,0 +1,6 @@
+Settings line for self-related filters by numeric attributes isn't displayed in the legend	"Steps to reproduce:
+1. Go to LSD
+2. Use any self-related filters by numeric attributes
+Actual: Settings line for self-related filters by numeric attributes isn't displayed in the legend
+Expected: Settings line for self-related filters by numeric attributes appears in the legend"	47474	Sub-task	iteraplan PO	20/Apr/15 9:28 AM	22/Apr/15 3:53 PM													"Workspace: Windows 8.1
+Revision: 951"	21/Apr/15 4:06 PM;dasm;Verified (revision 983)																																																						

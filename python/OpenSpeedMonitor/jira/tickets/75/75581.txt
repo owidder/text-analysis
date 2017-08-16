@@ -1,0 +1,3 @@
+CRUD View JobGroup ist kaputt	"Nachdem Du enum und Attribut GroupType entfernt hast hättest Du suchen sollen nach _groupType_ im gesamten Code.
+
+Es gibt 15 Treffer. Die allermeisten in der CRUD-View der JobGroup."		Bug	OpenSpeedMonitor	03/Mar/16 7:40 PM	03/Mar/16 8:29 PM																																																																				

@@ -1,0 +1,5 @@
+Marker setzen	"In den Diagrammen als senkrechte Linien sichtbar machen. 
+
+Mit Tip-Text bei MouseOver.
+
+Wunsch kam von Jan Vogel."		New Feature	OpenSpeedMonitor	27/Jun/14 5:07 PM	08/Jun/15 1:02 PM																																																																				

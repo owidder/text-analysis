@@ -1,0 +1,1 @@
+Tabular Result List: Page und MeasuredEvent anzeigen.	In der "tabularResultList" wird pro EventResult nur der JobName angezeigt. Dabei wären das assoziierte measuredEvent und die page auch sehr wichtige Informationen.		Bug	OpenSpeedMonitor	01/Dec/16 8:24 AM	09/Dec/16 3:34 PM																																																																				

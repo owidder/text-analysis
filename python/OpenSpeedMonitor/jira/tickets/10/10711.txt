@@ -1,0 +1,5 @@
+WPTServer-WPTAgent-Live-Umgebung aufsetzen	"- Vorschlag für die Job-Neuausrichtung an Uwe vor dem Umzug!!!
+- 2 von den 12 Agents sollen hier entsprechend umkonfiguriert werden 
+- Server wird auf eines der bestehender HW neu innstalliert
+- Classic sollte nur noch durch 2 Agents gemessen werden"		Task	OpenSpeedMonitor	28/Oct/13 8:33 AM	05/Nov/13 4:55 PM														"01/Nov/13 3:40 PM;mzeimer;Server ist aufgesetzt:
+http://server8.wpt.otto.iteratec.de/"	05/Nov/13 4:55 PM;mzeimer;Vorerst wurde nur ein Agent (agent1) umgesetzt und auf die queue netlab_multistep gesetzt.																																																					

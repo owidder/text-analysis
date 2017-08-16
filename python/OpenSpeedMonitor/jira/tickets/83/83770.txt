@@ -1,0 +1,9 @@
+performance test with many elements	"Tbd: Define criteria for performance test.
+
+possible problems:
+- check performance of angular watches within relEnd columns 
+- implementation of text sorting for german umlauts
+
+test in IE
+
+just analyse: create new issue, if problems appear"		New Feature	iteraplan PO	10/May/16 12:57 PM	06/Jul/16 3:09 PM														13/Jun/16 4:18 PM;mwe;Commit 3441 does belong to Issue [ITERAPLAN-4692].																																																						

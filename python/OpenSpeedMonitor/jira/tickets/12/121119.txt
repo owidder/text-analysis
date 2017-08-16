@@ -1,0 +1,5 @@
+Check if backened is prepared for Mass Create and Mass Delete of Business Mappings	If not, please discuss new JSON-structure with [~msr]	116156	Sub-task	iteraplan Speedbird	11/May/17 10:07 AM	01/Jun/17 2:25 PM														"18/May/17 11:46 AM;mada;Mass Create feature is not implemented on backend
+
+
+
+Mass Delete feature is implemented on backend"																																																						

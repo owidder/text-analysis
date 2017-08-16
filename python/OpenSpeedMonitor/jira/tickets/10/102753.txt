@@ -1,0 +1,49 @@
+Create a logout functionality	"*Summary:*
+
+Create a logout-button (Style like ""show in classic client"") in the header.
+
+Rearrange actions in the header (from left to right):
+
+1. Show in classic client
+
+2. language
+
+3. help
+
+4. logout
+
+
+
+*Details:*
+
+* use attached icon
+
+* Same functionality like classic client logout
+
+* After clicking on the button open a modal dialog.
+
+
+
+*Further details:*
+
+* Force page refresh after logout"		New Feature	iteraplan Speedbird	16/Nov/16 4:33 PM	16/Dec/16 5:32 PM														"23/Nov/16 1:37 PM;msr;Logout-dialog:
+
+
+
+Header:
+
+""Logout"" (German: ""Logout"")
+
+
+
+Body:
+
+""Do you want to log out?"" (German: ""Wollen Sie sich abmelden?"")
+
+
+
+Buttons:
+
+""Ok"" (German: ""Ok"")
+
+Cancel (German: ""Abbrechen"")"	30/Nov/16 2:49 PM;msr;Same endpoint server but different status code for error handling.	16/Dec/16 5:32 PM;vadm;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-230																																																				

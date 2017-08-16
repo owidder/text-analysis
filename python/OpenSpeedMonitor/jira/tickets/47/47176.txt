@@ -1,0 +1,12 @@
+Rel2-2015: View state in url: robust against too many changes of the ordering	"+++++++++++++++++
+POSTPONED AFTER APRIL 2015
++++++++++++++++++
+
++Existing:+ The moves of the user to re-order elements within the Nesting Cluster Diagram are stored in the url as view state. If the user does too many changes (number is unknown), the *view state information is longer than the maximum length of the url* (2000 characters). The last moves are not stored, but all other until the maximum length is exceeded.
+
++To-Be:+ The ordering of elements is stored in any case.
+
++Possible solution:+ After a high number of moves it takes less space (characters in the url) to *store* the complete information of the *end state* than all (unlimited number of) moves. Calculate this ""turnover-point"". After the ""turnover"" only save the end-state-information, i.e. which permutation of the initial ordering is the end-state.
+Analyse the possibility to compress information with a common *compression method*.
+
++Open Question:+ What is the expected behaviour, if an element gets inserted or deleted?"		New Feature	iteraplan PO	18/Nov/14 9:57 AM	19/Jan/16 10:35 AM					diagram	url																																																														

@@ -1,0 +1,11 @@
+REST API for iteraQl (Server) - Permission handling on the server	"*Summary:*
+
+REST API for iteraQl (Server)
+
+
+
+*Details:*
+
+* Check, if user has iteraQl-permission
+
+* Check, if the user has the permission for all Building Block Types and all attributes which are part of the query"		New Feature	iteraplan Speedbird	09/Nov/16 10:43 AM	19/Dec/16 1:12 PM																																																																				

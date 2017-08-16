@@ -1,0 +1,7 @@
+Mehrere "Session"Cookies unterstützen	"Es können mehrere Cookies bei Login eine Session repräsentieren.
+
+Es sollen daher auch mehrere Cookies als Sessioncookies unterstützt werden.
+
+
+
+Bsp.: lcId, llId Cookie "		Improvement	secureCodeBox	09/Oct/14 11:36 AM																																																																					

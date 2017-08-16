@@ -1,0 +1,7 @@
+Grails-Fehler beim bauen eines war-files	"Beim Bauen treten die folgenden Fehler auf:
+
+1) 
+via log4j wird versucht auf die prod-Appender zu loggen. Da die konfigurierten Pfade zu den logfiles nicht existieren kommt es zu einer FileNotFoundException. Der Fehler ist seit Grails 1.3.7 bekannt und als fixed markiert. Habe reportet, dass der Fehler mit der 2.3.3 wieder auftritt: http://jira.grails.org/browse/GRAILS-7291
+
+2)
+Aus Eclipse heraus werden die Dependencies nicht aufgelöst und es landen keine Plugin-Artefakte mehr im war :-( Von der Konsole funktioniert's."		Bug	OpenSpeedMonitor	17/Dec/13 11:05 AM	24/Feb/16 11:04 AM														17/Dec/13 11:38 AM;nkuhn;2) hat sich erledigt. Ich hatte die .settings-Änderungen, die Matthias vorgenommen hatte wieder entfernt. Grund: Ich habe den Monitor mit "grails integrate-with --eclipse" neu initialisiert.	29/Jan/14 10:20 AM;nkuhn;1) ist zwar unschön, hat aber keinen Effekt auf das gebaute war.	24/Feb/16 11:04 AM;nku;Mit Grails 2.5 nicht mehr relevant.																																																				

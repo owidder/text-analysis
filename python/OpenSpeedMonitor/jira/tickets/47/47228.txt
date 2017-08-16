@@ -1,0 +1,14 @@
+Adjust visualizations	"Make sure the changed relation works properly for Landscape Diagram, Cluster Diagram, Bar/Pie Diagrams and the Masterplan Diagram.
+The attributes of the relation don't have to be available for reports, but the relation itself should work where available.
+Adjust where necessary to make it work properly."	47165	Sub-task	iteraplan PO	04/Dec/14 1:59 PM	15/Dec/14 4:37 PM														"12/Dec/14 8:23 AM;isc;I discovered two problems:
+
+# *Landscape Diagram*
+I have selected as ""content"" IS and as ""column association"" IE. The filtering based only of the relationship but I would expect a filtering of IE. See also screenshot number 1
+# *Bar/Pie Chart*
+Content: IE
+On the second configuration page -> in the box for “colour settings”:
+* Choose in the first dropdown “Association”,
+* in the second dropdown “IS”,
+* In the third dropdown I missing the option “Number of assignments”. 
+"	12/Dec/14 2:48 PM;isc;Both problems could be fixed with one change.	"15/Dec/14 4:37 PM;fam;Tested both Problems.
+Solution is ok. Problems don't occure any more."																																																				

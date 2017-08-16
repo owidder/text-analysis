@@ -1,0 +1,6 @@
+Error with action of sorting  on Information System page	"IPNINE-229
+Steps to reproduce:
+1. Go to Recent veiw page-> click on Information System tile 
+2. Click on ""Name"" title 
+Actual result: Error is appear 
+Expected result: The data in column should be sorted "		Bug	iteraplan PO	28/Nov/14 2:56 PM	18/Dec/14 4:24 PM														18/Dec/14 4:24 PM;alvo;looks like resolved under #254, Can't reproduse	19/Dec/14 12:13 PM;dasm;Verified. Bug was fixed.																																																					

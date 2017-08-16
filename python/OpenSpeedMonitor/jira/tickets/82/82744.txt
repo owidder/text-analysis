@@ -1,0 +1,17 @@
+HUB-Basis-Details (Infos, TRUST-Details) auf Kartierungen	"Als Benutzer möchte ich auf ein Bebauungselement in der Architekturdarstellung klicken, so dass ich dessen ID, Typ und Beschreibung angezeigt bekomme, damit ich weiß, um welches Bebauungselement es sich handelt.
+
+
+
+Die Informationen sollten die Basisinformationen enthalten (siehe Mockup / Issue-Links). Dargestellt werden im ersten Schritt nur die 
+
+* Basisinformationen: Aktuelle Beschreibung
+
+* Basisinformationen: Interne Dokumentationslinks
+
+* Basisinformationen: Ansprechpartner 
+
+* Schnittstellen: In Tabellenform Von, Zu
+
+* Fachlichkeit: In Tabellenform Hierarchie-Name, Beschreibung
+
+"		Story	EAM-Visualisierung	02/May/16 1:31 PM																																																																					

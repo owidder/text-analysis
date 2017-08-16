@@ -1,0 +1,27 @@
+Mess-Strecke Menüplaner	"Für den folgenden von apetito vorgegebenen Klickpfad sollen Skripte und Jobs erstellt werden:
+
+ # Login (meinapetito) 
+
+jana.wernsmann@apetito.de 
+
+apetito123
+
+ # Menüplaner -> Meine Speisepläne
+
+ # Bestehenden Speiseplan öffnen (MP Unternehmen Vorschlag 2 Nord)
+
+ # In die Tagesansicht wechseln: Montag anklicken:
+
+ # Kategorie wählen (Geflügel)
+
+ # 1. Artikel hinzufügen (Hähnchenfilets in einer Tomaten-Balsamicosoße)
+
+ # Artikel löschen (Hacksteak „Pljeskavica“)
+
+ # Zurück zur Wochenansicht
+
+ # Woche wechseln (Pfeil nach rechts)
+
+
+
+  "	113727	Sub-task	OpenSpeedMonitor	03/Mar/17 11:25 AM	08/Mar/17 9:28 AM																																																																				

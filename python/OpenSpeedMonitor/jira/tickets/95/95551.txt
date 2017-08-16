@@ -1,0 +1,54 @@
+Update Business Processes (partly update!)	"guten Tag
+
+
+
+Wir haben die Geschäftsprozess in für eine Geschäftseinheit (CH) neu definiert und möchten dies nun in iteraplan abbilden. Die Geschäftsprozesse in iteraplan gelten bis dato für alle Geschäftseinheiten. Die für CH neu definierten Geschäftsprozesse werden sukzessive in die anderen  Länder ausgerollt (und werden daher in Zukunft auch wieder für alle Geschäftseinheiten gültig sein), mit jeweils individuellem Rolloutterminplan. Stand heute gelten die Prozesse jedoch nur für die CH.
+
+
+
+Wie bilden wir diese neuen Geschäftsprozesse, gültig vorerst für CH, am einfachsten in iteraplan ab?
+
+
+
+Mit freundlichen Grüssen / Kind regards
+
+
+
+Corinne Felber
+
+Senior Manager
+
+CIO Office
+
+
+
+RONAL AG
+
+Lerchenbühl 3
+
+4624 Härkingen
+
+Switzerland
+
+Phone  +41 62 389 06 05
+
+corinne.felber@ronalgroup.com
+
+www.ronalgroup.com
+
+
+
+
+
+"		Technical question	iteraplan Support	08/Sep/16 10:41 AM	12/Sep/16 10:57 AM														"08/Sep/16 11:57 AM;cst;Sehr geehrte Frau Felber,
+
+vielen Dank für Ihre Anfrage.
+
+Diese wird im Moment von unserer Fachabteilung geprüft, 
+bei Antwort werde ich Sie umgehend informieren.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"12/Sep/16 10:57 AM;cst;E-Mail von Fabian Kanzinger zu dem Thema erhalten.
+
+"																																																					

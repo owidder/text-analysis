@@ -1,0 +1,9 @@
+Remove legacy Excel import & export implementation	"Remove the old Excel import & export implementation. Its UI has been hidden in iteraplan 3.0 already, and we should avoid any useless maintenance efforts for that code base. The UI can be reached via e.g. https://iteraplan.iteratec.de/iteraplan_nightly_build/excelimport/init.do
+
+
+
+NB: Still need to clarify whether _Excel Import of Attribute Definitions (Beta)_ and _Excel Import of Object-related permissions (Beta)_ have a sufficient counterpart implementation already or still need to be preserved.
+
+"		Improvement	iteraplan Thunderduck	04/Mar/13 5:15 PM	18/Aug/16 9:51 AM					excel	maintenance								"21/Mar/13 3:32 PM;jme@iteratec.de;The Unittest:
+ExcelRoundtripTest
+has to be cleaned up as well."	18/Aug/16 9:51 AM;mse;Review ok.																																																					

@@ -1,0 +1,16 @@
+Ignored error in Jenkins build	"Console output of Jenkins build shows ERROR lines for JUnit tests,
+but the JUnit task reports zero errors and zero failures.
+
+Example:
+ [junit] Running de.iteratec.iteraplan.persistence.ApplicationLandscape.InformationSystemInterfaceDAOTest
+ [junit] ERROR  invokeUnderTrace, Exception thrown in: saveOrUpdate
+... stacktrace omitted
+ [junit] Tests run: 11, Failures: 0, Errors: 0, Time elapsed: 0,518 sec
+
+from https://iteraplan.iteratec.de/hudson/job/TestBuilder/5212/console
+
+Investigate if these errors are ignored correctly, and clarify, for example by a message in the console output ""the error below/above is ignored intentionally""."		Task	iteraplan PO	27/Jul/12 10:58 AM	17/Sep/12 7:46 PM														"17/Sep/12 7:46 PM;sry;This happens whenever a proper error response is tested for. In many cases, such situations are also logged (even before an exception is thrown). When the expected exception has been caught, the log message has been written already.
+
+Unexpected exceptions make tests really fail, as far as I know them.
+
+The particular test for which you quoted the output has been deleted already ;)"																																																						

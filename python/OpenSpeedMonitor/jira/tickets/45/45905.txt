@@ -1,0 +1,7 @@
+Saved Queries from a BBType can be loaded in the Linechart Diagram even if there are no Timeseries defined for that BBType	"To Reproduce:
+1.) Create a Saved Query for a BBType in the Linechart Diagramm
+2.) Remove the Timeseries Attribute from the BBType
+3.) Load the Saved Query
+
+(?) Is there a specific behaviour defind for this case?"		Bug	iteraplan PO	18/Jul/13 1:24 PM	30/Dec/15 2:53 PM														"07/Aug/14 4:36 PM;fka;One (possible, to be discussed) behaviour would be to load any saved query ""as far as possible"", but to show explicit warnings that not every filter etc. could be restored. In reality this might be really difficult, so in some cases loading might not be possible at all.
+"																																																						

@@ -1,0 +1,1 @@
+Visualisierung CSI-Gewichtungen	Die Gewichtungs-Faktoren der CSI-Berechnung sollen statt tabellarisch als d3-Grafiken dargestellt werden.		Epic	OpenSpeedMonitor	16/Oct/15 1:30 PM																																																																					

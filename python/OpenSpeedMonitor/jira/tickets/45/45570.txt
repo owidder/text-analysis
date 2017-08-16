@@ -1,0 +1,21 @@
+Enum attribute values of an element can't be changed if another element has the same value assigned and hibernate second level cache is deactivated	"Example:
+
+* Enum AT with values AV1 and AV2 assigned to infrastructure elements
+* Infrastructure elements IE1 and IE2, both having the value AV1 assigned in said enum
+* Hibernate second level cache deactivated
+
+Trying to set value of the Enum AT to AV2 in IE1 (or IE2) =>
+
+{noformat}
+...
+Caused by: org.springframework.dao.InvalidDataAccessApiUsageException: deleted object would be re-saved by cascade (remove deleted object from associations): [de.iteratec.iteraplan.model.attribute.AttributeValueAssignment#1946]; nested exception is org.hibernate.ObjectDeletedException: deleted object would be re-saved by cascade (remove deleted object from associations): [de.iteratec.iteraplan.model.attribute.AttributeValueAssignment#1946]
+	at org.springframework.orm.hibernate3.SessionFactoryUtils.convertHibernateAccessException(SessionFactoryUtils.java:674)
+	at org.springframework.orm.hibernate3.HibernateAccessor.convertHibernateAccessException(HibernateAccessor.java:412)
+	at org.springframework.orm.hibernate3.HibernateTemplate.doExecute(HibernateTemplate.java:411)
+	at org.springframework.orm.hibernate3.HibernateTemplate.executeWithNativeSession(HibernateTemplate.java:374)
+	at org.springframework.orm.hibernate3.HibernateTemplate.bulkUpdate(HibernateTemplate.java:1141)
+	at org.springframework.orm.hibernate3.HibernateTemplate.bulkUpdate(HibernateTemplate.java:1133)
+	at de.iteratec.iteraplan.persistence.dao.AttributeValueDAOImpl.deleteOrphanedDateAttributeValues(AttributeValueDAOImpl.java:58)
+	at de.iteratec.iteraplan.businesslogic.service.AttributeValueServiceImpl.removeOrphanedAttributeValuesAndAssignments(AttributeValueServiceImpl.java:322)
+...
+{noformat}"		Bug	iteraplan PO	07/Aug/12 6:20 PM	09/Aug/12 3:19 PM					attribute	cache	enum	hibernate						09/Aug/12 3:19 PM;sry;Fine																																																						

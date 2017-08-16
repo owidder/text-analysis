@@ -1,0 +1,1 @@
+Update sample data with custom dashboard examples			Task	iteraplan PO	25/Jul/13 3:28 PM	22/Aug/13 5:57 PM					dashboard									20/Aug/13 3:55 PM;sfe;After updating the bank data creator to be able to handle custom dashboard instances and templates, one template and one instance were added to the bank-data in ITERAPLAN-1841																																																						

@@ -1,0 +1,1 @@
+Add the filter to all diagrams	Add the filter to all diagrams where it is not 		Improvement	iteraplan PO	26/Jan/17 4:02 PM	07/Feb/17 2:08 PM														06/Feb/17 2:46 PM;ach;review together with ITERAPLAN-5060																																																						

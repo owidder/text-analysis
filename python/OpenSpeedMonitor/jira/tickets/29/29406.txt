@@ -1,0 +1,1 @@
+Diagramme zentrieren bei Änderung der Breite	Beim Anpassen der Breite von Diagrammen sollen diese vertikal zentriert werden. Betrifft Diagramme, welche über Highchart oder über Rickshaw erzeugt werden.		Improvement	OpenSpeedMonitor	14/Jan/15 10:38 AM	15/Jan/15 5:41 PM																																																																				

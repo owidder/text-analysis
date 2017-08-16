@@ -1,0 +1,11 @@
+Löschen von DefaultTimeToCsMappings ermöglichen	"Wenn man als root angemeldet ist soll es einen Button zum Löschen von DefaultTimeToCsMappings geben. Es sollte ein ähnlicher modaler Dialog wie zur Auswahl und Übertragung der default Mappings auf konkrete Pages aufgehen. In diesem kann man dann einzelne default-Mappings löschen. Es müssen dann alle DefaultTimeToCsMappings dieses Namens gelöscht werden.
+
+
+
+Wurden diese Default-Mappings in der Vergangenheit bereits auf Pages übertragen müssen die Mappings dieser Page natürlich erhalten bleiben. Sollte entsprechend des Datenmodells aber auch eh so laufen."		Task	OpenSpeedMonitor	09/Dec/15 10:48 AM	05/Jan/16 3:13 PM														"03/Jan/16 9:17 PM;bwo;Die Logik für das Löschen ist bereits implementiert. 
+
+Wir hatten besprochen, dass sich der Button zum Löschen auf der Seite der Default Werte befinden soll. Das würde jedoch dazu führen, dass sich ein Dialog öffnet, in dem der gleiche Graph des unterliegenden Fensters öffnet. Ist das Verhalten so gewollt?
+
+Da die Implementierung so und an dieser Stelle einige Umstrukturierungen benötigt, habe ich die Arbeit an diesem Ticket zunächst eingestellt, bis die Frage geklärt ist."	"05/Jan/16 3:13 PM;bwo;Der Button ist nun unter OpenSpeedMonitor/csiDashboard/weights
+
+zu sehen, jedoch nur für den root Account."																																																					

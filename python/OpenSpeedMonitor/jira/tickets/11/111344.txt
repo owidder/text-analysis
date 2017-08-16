@@ -1,0 +1,7 @@
+User Guide: Document History REST-API	Please document the REST-API of the history.		Task	iteraplan PO	08/Feb/17 2:01 PM	14/Feb/17 1:26 PM														"10/Feb/17 11:28 AM;mse;Was already done in IPTT-361.
+
+
+
+Please double-check if docs are sufficient:
+
+ https://www.iteraplan.de/doc/display/iteraplan55/Historization"	14/Feb/17 1:26 PM;mse;Realized by IPTT-361.																																																					

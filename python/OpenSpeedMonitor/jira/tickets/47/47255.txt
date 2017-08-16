@@ -1,0 +1,3 @@
+If outer element has only one inner element- the "Move Item" menu is empty.	"IP9-204
+
+If outer element has only one inner element- the ""Move Item"" menu is empty."		Bug	iteraplan PO	23/Dec/14 2:59 PM	12/Jan/15 2:04 PM														12/Jan/15 2:04 PM;dasm;Verified (revision: 503)																																																						

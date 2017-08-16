@@ -1,0 +1,25 @@
+Current Reactor Status => Console in Graphics Reactor	"*Summary:* Go to Report > Graphics Reactor. The ""Current Reactor Status"" container should look a little more like a console.
+
+
+
+*Use Graphics Reactor:* Download the publicDemo_htmlTable.xsl and upload it to a folder. You can execute it by right-mouse-click. The logs of the console are written in ""Current Reactor Status"".
+
+
+
+*ToDo:*
+
+*See ppt mockup Console-new*
+
+ #  The Console goes beneath the folders-field. 
+
+ # It has the same width as folders-div. The rest of the formatting of the container stays the same.
+
+ # The header is ENG: ""Console""/ GER: ""Konsole""
+
+ # Insert a gray container for the Console-output. The background of the this inner container has the colour: #f2f2f2.
+
+ # Please use some typewriter/serif font like courier in this inner container.
+
+ # The buttons ""Clear log"" and ""Export"" should become *default buttons* (Please use the same style as the buttons in List View. Or see default buttons: https://iteraweb.iteratec.de/confluence/display/ITPL/UI-UX+Styleguide)
+
+ # The ""Edit"" Button in the container ""Script Configuration"" should be a default button, too."		Improvement	iteraplan Speedbird	25/Jul/17 4:09 PM						UI																																																															

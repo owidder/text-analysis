@@ -1,0 +1,20 @@
+Seemingly empty cells in spreadsheet report are not interpreted by Excel as empty	"Create a spreadsheet report for e.g. information systems in Excel.
+Then, create an pivot table for information systems in Excel, that counts ""how many IS have a value for a certain releationship, e.g. projects"".
+
+Problem: The values in the pivot table are not correct, as empty cells are not interpreted by Excel pivot table as empty. When clearing the source cells, or simply editing the cells the pivot works as expected. The problem occurs for at least for attributes and 1:n relationship cells.
+
+Desired solution: Adapt Excel generation so that generated Excel spreadsheet is interpreted by Excel correctly when opening it, without having the user to force Excel to ""re-calculate"" manually."		Improvement	iteraplan PO	24/Jul/14 9:57 AM						excel	sfe							Excel 2007	"24/Jul/14 3:19 PM;tdi;It may help to let POI reevaluate all cells. Please see http://poi.apache.org/spreadsheet/eval.html
+
+FileInputStream fis = new FileInputStream(""/somepath/test.xls"");
+Workbook wb = new HSSFWorkbook(fis); //or new XSSFWorkbook(""/somepath/test.xls"")
+FormulaEvaluator evaluator = wb.getCreationHelper().createFormulaEvaluator();
+for(int sheetNum = 0; sheetNum < wb.getNumberOfSheets(); sheetNum++) {
+    Sheet sheet = wb.getSheetAt(sheetNum);
+    for(Row r : sheet) {
+        for(Cell c : r) {
+            if(c.getCellType() == Cell.CELL_TYPE_FORMULA) {
+                evaluator.evaluateFormulaCell(c);
+            }
+        }
+    }
+}"																																																						

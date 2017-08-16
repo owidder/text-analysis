@@ -1,0 +1,4 @@
+Interface creation: the description of the selected IS is not refreshed	"When you create a new interface you can select the left and right IS.
+The description of the IS is shown underneath the dropdown box where you select the IS.
+
+If you choose a different IS the description is not refreshed. It shows the description of the initially selected IS."		Bug	iteraplan PO	10/Jul/13 11:17 AM	30/Dec/15 2:53 PM					gui																																																															

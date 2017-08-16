@@ -1,0 +1,35 @@
+Other cleanup of datamodel	"in addition to metamodel carveout, make all other parts of the datamodel squeaky clean.
+
+
+
+----
+
+still 2 days, work to do"		Improvement	iteraplan PO	11/Nov/15 1:35 PM	14/Dec/15 9:46 AM														"30/Nov/15 8:37 AM;dam;made first clean up steps. 
+
+during this ticket i realized that i´m not finished with ITERAPLAN-4185"	"12/Dec/15 2:24 PM;msr;Review Comments:
+
+
+
+Please find attached some minor review comments. The rest is good.
+
+
+
+*FilterPredicateBuilder.js:
+
+- JSDoc (lines 9-12): Missing nullable or not; missing description for parameters; missing @method
+
+
+
+*dataModel.js:
+
+-JSDoc for this.resolvePath (lines 563-567): return type not specified
+
+- Unit-Test line-coverage for this.resolvePath
+
+"	"14/Dec/15 8:44 AM;dam;filterPredicateBuilder.js is deprecated and its methods moved to other .js files. jsDoc for this won´t fix
+
+
+
+made new test for resolvePath in dataModel.js line-coverage now 3% higher.
+
+also made jsDoc for return values"	14/Dec/15 9:45 AM;msr;Review-Comments implemented.																																																			

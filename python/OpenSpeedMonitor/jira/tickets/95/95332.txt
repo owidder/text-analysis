@@ -1,0 +1,67 @@
+Permission Handling	"*Summary:*
+
+Include permission handling in the Pie Chart
+
+
+
+*As-Is:*
+
+* No permission handling, i.e. 
+
+** the Pie Chart always starts with Information Systems, even if the user has no permission for this Building Block Type
+
+** any Building Block Type can be selected, even if the user has no permission for this Building Block Type  
+
+
+
+*To-Be:*
+
+* The Pie Chart starts with the first Building Block Type from a list of all Building Block Types, for which the user has the permission
+
+* Building Block Types without a permission do not appear in the element-type selection in the ToolArea 
+
+
+
+*Implementation Details:*
+
+* Please check the Portfolio Diagram (IPTS-57) or Cluster Diagram (IPTS-128) implemenation.
+
+
+
+*Ordered list of Building Block Types: (same as Masterplan and Portfolio)*
+
+""InformationSystem"",
+
+ ""Project"",
+
+""TechnicalComponent"",
+
+""InfrastructureElement"",
+
+""ITService"",
+
+""InformationSystemInterface"",
+
+""BusinessObject"",
+
+""BusinessProcess"",
+
+""BusinessUnit"",
+
+""Product"",
+
+""BusinessFunction"",
+
+""BusinessDomain"",
+
+""InformationSystemDomain"",
+
+ ""ArchitecturalDomain""
+
+
+
+*Unit Test:*
+
+* Not in controllers
+
+* Only for new functions in the pipeline"		New Feature	iteraplan Speedbird	06/Sep/16 11:48 AM	07/Oct/16 10:41 AM														07/Oct/16 10:43 AM;dmkh;Review is done, no comments: https://iteraweb.iteratec.de/fisheye/cru/IP-61																																																						

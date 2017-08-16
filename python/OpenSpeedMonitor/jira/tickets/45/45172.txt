@@ -1,0 +1,1 @@
+Date format not automatically updated after locale switch	Date formats are not automatically updated when a new locale is chosen. Only after a refresh is the correct format used.		Bug	iteraplan PO	04/Oct/11 2:45 PM	04/Apr/12 7:17 PM					date	format								04/Apr/12 7:17 PM;kvo;Rare usecase, wontfix																																																						

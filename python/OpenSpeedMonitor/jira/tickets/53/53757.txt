@@ -1,0 +1,10 @@
+Jobs, die abgeschlossen wurden, in einer Ergebnisliste zusammenfassen	"Um mir die Ergebnisse eines Jobs anzuschauen und zu bewerten möchte ich als Nutzer alle Jobs in einer Liste ansehen und auswählen können.
+
+Einen Job, der bereits gelaufen ist, soll durch einen einfachen Klick noch einmal gestartet werden können.
+
+Akzeptanzkriterien:
+
+* Alle Gelaufenen Jobs werden in einer Liste mit dem Zeitpunkt aufgelistet.
+* Ein einmal gelauferner Job kann mit der selben Konfiguration über einen Button noch einmal gestartet werden.
+* Ein Link führt auf die Reporting Seite, auf der ich mir die Job Reports ansehen kann.
+"		Story	secureCodeBox	14/Aug/15 2:46 PM	27/Apr/16 1:14 PM														27/Apr/16 1:14 PM;rfe;Already implemented as build camunda in feature.																																																						

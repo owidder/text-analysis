@@ -1,0 +1,9 @@
+Error in the IS search (and propable all others, too)	"1. navigate to the IS-page
+2. in the search bar enter ""-"" and press ""Search""
+
+Link zum Fehlerbericht (nur Administratoren):
+http://www.iteraplan.de/iteraplan_ee_release/miscellaneous/requestProblemReport.do?reportKey=911dc6d9-e8f3-43b2-b323-ff27f569fa56
+
+Enterprise Edition Build-v3.3.0-r22793 (2014-04-29-15-50-51) "		Bug	iteraplan PO	30/Jun/14 12:43 PM	07/Jul/14 3:17 PM														01/Jul/14 7:42 PM;fka;Most probably related to other search issues with non alphanumeric characters	"07/Jul/14 1:08 PM;dop;Commit: 23151
+
+previous behavior: the search term had been deleted after searching for an invalid searchterm and all building blocks had been shown as searching result. With this commit, an invalid searchterm is resulting in an error message and the list of shown search results is empty. Furthermore the invalid search term is also shown to the user, so that he's able to correct them with the given information from the error message. "																																																					

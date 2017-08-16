@@ -1,0 +1,45 @@
+datamodel	Please provide the datamodel of the tables and their relation/logical. We need this for an reporting solution and want to use this without the api request or the data export function.		Technical question	iteraplan Support	11/Oct/16 11:34 AM	06/Dec/16 7:00 AM														"11/Oct/16 2:59 PM;cst;Dear Mr. Siebel, 
+
+we are not recommending the use of the datamodel (of the database) for tools and reports. 
+The datamodel is not a public interface and will potentially change in the future (i.e. is not stable). 
+
+With every new iteraplan release we cannot guarantee, that your reports and tools are working anymore.
+
+Our advise is to use the public and stable REST API, iteraQL or the Graphics Reactor for reporting.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support 
+
+"	11/Oct/16 3:44 PM;stephan.siebel@boehringer-ingelheim.com;We know about the challange of chaning datamodels from vendors, nevertheless please provide us with the datamodel. THX	"17/Oct/16 11:11 AM;fka;For setting up a reporting solution we recommend to use the new Single Element REST API, which will be included in iteraplan 5.4. This API is built to support. and is much faster than the existing Massdata REST API. See here for details: https://www.iteraplan.de/doc/display/iteraplan54/Single+Element+API 
+
+The version 5.4 of iteraplan is scheduled to be released end of October 2016. Your iteraplan consultant Harald Meyer will be happy to discuss how your planned reporting solution can make use of the REST API.
+
+
+"	"18/Oct/16 8:07 AM;cst;For setting up a reporting solution we recommend to use the new Single Element REST API, which will be included in iteraplan 5.4. This API is built to support. and is much faster than the existing Massdata REST API. See here for details: https://www.iteraplan.de/doc/display/iteraplan54/Single+Element+API 
+
+The version 5.4 of iteraplan is scheduled to be released end of October 2016. Your iteraplan consultant Harald Meyer will be happy to discuss how your planned reporting solution can make use of the REST API."	04/Nov/16 2:50 PM;stephan.siebel@boehringer-ingelheim.com;Dear Mr. Stangl, could you please send us as requested the datamodel. We currently do not plan to migrate to version 5.4.	"17/Nov/16 10:51 AM;cst;Dear Mr. Siebel,
+
+
+
+Sorry for our late answer. We’ve attached some (automatically generated) overview over the DB tables and the relations. 
+
+Unfortunately, there’s nothing more we could or will provide regarding the DB data model schema.
+
+
+
+We talked to our developers and they said, that they themselves would never access the data in DB directly. 
+
+Please use one of the various official interfaces of iteraplan to read and write data.
+
+
+
+[^iteraplan-5.4.0-dbschema.zip]
+
+
+
+Greetings,
+
+
+
+Christoph Stangl - iteraplan Support "																																																	

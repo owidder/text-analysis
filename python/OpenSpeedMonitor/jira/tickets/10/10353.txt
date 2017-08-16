@@ -1,0 +1,8 @@
+Architektur: MeasuredValue Arten in separate Klassen aufteilen	"Derzeit werden die Messwerte durch ein Klasse MeasuredValue repräsentiert. Diese Klasse hat ein Feld ""aggregator"" vom Typ AggregatorType. Durch dieses wird die Art des Messwertes angegeben und aus dieser Art folgt die Struktur des identifizierenden Tags (Feld: tag).
+
+Dieses soll umgestellt werden, so dass jede Art eine eigenen Klasse erhält (hierzu bitte auch IT-36 beachten).
+
+!soll-Vererbung-mv.jpg!
+(Darstellung soll Vererbung zeigen, Diagramm steht leider ""auf dem Kopf"". Langfristig wird die Hierachie wohl noch um einen sich weiter verzweigenden Baum für aggregierte Rohdaten EventMeasuredValue erweitert.)
+
+Hierbei ist zu beachten, dass GORM mit Hierarchien Probleme hat. Daher sollte die Abstraktion keine Domain-Klasse sein, ggf. nur ein Interface. Felder und Operationen müssen leider dupliziert werden (Hintergrund: GORM erstellt einen Proxy, der nicht auf die sub-typen gecastet werden kann, dies unterscheidet sich von JPA)."		Improvement	OpenSpeedMonitor	01/Aug/13 11:45 AM																																																																					

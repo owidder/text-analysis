@@ -1,0 +1,3 @@
+Nach Export des Default-CSI-Diagramms Layout der Seite kaputt	"Getestet mit FF und Chrome.
+
+siehe Screenshot"		Bug	OpenSpeedMonitor	04/May/15 11:33 PM	05/May/15 1:19 PM																																																																				

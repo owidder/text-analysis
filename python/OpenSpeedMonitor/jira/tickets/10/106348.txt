@@ -1,0 +1,19 @@
+Routing für Host b2vservices-emea.bmwgroup.net eintragen	"Hallo Admins,
+
+könnt ihr bitte das Routing für oben genannten Host eintragen. Firewall-Freischaltung bei BMW ist bereits erfolgt.
+
+Die IP-Adresse ist: 160.48.104.57
+
+Danke, Carmen."		Task	Infrastruktur	21/Dec/16 11:40 AM	24/Jan/17 3:49 PM	Routing													"21/Dec/16 2:37 PM;ehi;Hallo Carmen,
+
+
+
+die Namensauflösung läuft und das Routing auch, da das ganze Netz bereits freigeschaltet ist. Die Maschine lässt sich jedenfalls anpingen."	"22/Dec/16 1:30 PM;ehi;Hallo Carmen,
+
+
+
+ist die Maschine für euch erreichbar? Bitte um kurze Rückmeldung, damit ich das Ticket ggfs. schließen kann."	"10/Jan/17 8:51 AM;cpi;Hallo Elke,
+
+
+
+der Zugriff funktioniert. Danke."																																																				

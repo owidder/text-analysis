@@ -1,0 +1,4 @@
+Simple Dashboard does not work in IE9	"Open Visualisations -> Dashboard (not Custom Dashboard) in IE9 and IE11
+=> neither bar nor pie chart are displayed correctly or at all
+
+Works in IE8 and Firefox."		Bug	iteraplan PO	13/Nov/13 2:36 PM	30/Dec/15 4:54 PM					Dashboard	ie9																																																														

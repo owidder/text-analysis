@@ -1,0 +1,1 @@
+old NCD Webtests fail	Probably due to a recent change in the structure of the NCD page, clicking the "reset" button fails because it can't be found anymore with the selector the test uses.		Bug	iteraplan PO	11/May/15 10:22 AM	18/May/15 8:58 AM					webtests																																																															

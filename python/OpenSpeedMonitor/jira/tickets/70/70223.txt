@@ -1,0 +1,243 @@
+Migrate saved queries from server/classic to interactive client	"* https://iteraweb.iteratec.de/confluence/display/ITPL/Alle+Diagramme - overview of options to be migrated
+
+* https://iteraweb.iteratec.de/confluence/pages/viewpage.action?title=URL+parameters+for+new+client&spaceKey=ITPL) overview of new configuration json structure
+
+
+
+Migrate saved diagrams and spreadsheet reports.
+
+
+
+Not in scope: iteraQL (not saved currently) and Dashboards
+
+Aim for big bang, one button solution
+
+----
+
+Notes after talk FKa WFr 2016-08-12
+
+----
+
+*User's view*
+
+Migrate all saved spreadsheet queries and saved diagram configurations from the classic client part to the interactive client part of iteraplan. These are
+
+* spread sheet reports
+
+** all building block types
+
+** with descriptive/extra attributes
+
+*** name
+
+*** description
+
+*** nothing else (created by, used by, last executed by)
+
+** query tree
+
+*** main type
+
+*** filter criteria, including ""query extensions""
+
+* diagrams
+
+** name and description as for queries 
+
+** all existing diagram types in the interactive client, so far
+
+*** for example NOT yet bar/pie chart
+
+*** can be added later, needs a re-run of the migration
+
+** with specific settings for each diagram configuration
+
+*** maybe partial, if settings are not re-implemented in interactive client
+
+** with one to three queries
+
+
+
+*Partial migration*
+
+For saved spreadsheat queries, there may be filters that cannot be migrated, if there is no corresponding filter setting in the new interactive client. Examples:
+
+* ID of IS (head element) of a given ISR
+
+* extra ISs connected by an Interface
+
+For saved diagrams, there are settings not possible or not required in the new diagram. 
+
+Classify those as
+
+* irrelevant: ""show legend for long names""
+
+* relevant, but obsolete: for example special line captions in Information Flow Diagram
+
+
+
+Relevant but obsolete settings must be logged.
+
+Consider ignoring irrelevant settings, not logging them.
+
+
+
+*Migration Log*
+
+The user that runs the migration may not have access to the system log files.
+
+The migration run should log its messages into an extra report.
+
+The user shall be able to view this report on a screen (or dialog) and download this report as file.
+
+Plain text with basic formatting is sufficient.
+
+
+
+*Source of migration*
+
+The migration reads all saved spreadsheet queries and diagram configurations from the respective DAOs.
+
+To be decided: as input into the migration function, use 
+
+* XML document tree of a query OR
+
+* query tree built from XML document tree
+
+Only the structure of the tree is required.
+
+
+
+*Target of migration*
+
+The migrations creates new items of saved configurations for the new interactive client.
+
+
+
+*Duplication Java/Javascript code for new configurations*
+
+The code to serialize and deserialize a configuration in the new interactive client is already implemented in Javascript.
+
+To create new items on the server, this logic can be 
+
+* re-implemented in Java
+
+* extracted and run in an encapsulated way in the JS engine in the JVM, similar to the plugins.
+
+Because the migration code will live only about one year, and then will be obsolete and removed, the duplication of logic is no long-term problem.
+
+Even if re-use looks more elegant theoretically, consider the extraction effort.
+
+Do re-implement the logic.
+
+
+
+*Ways to cut this epic*
+
+For a given state of development of the target side, this epic splits naturally into
+
+* migration that can be done now, because the target is already there
+
+* migration the must be postponed
+
+
+
+The major axis to split is the functionality of the migration function, or the big case distinction in it:
+
+* diagram by diagram
+
+* spreadsheet reports
+
+* in a diagram by feature (maybe common subfeatures like coloring)
+
+* in the spreadsheet reports by regular cases and by special cases (Transport/Flow)
+
+
+
+Additional things to split off: formatted and downloadable report
+
+
+
+*Open questions, to be decided*
+
+The ID of the query is referenced in other parts of the system, or externally in a URI.
+
+Should it be migrated, so that it can be referenced further?
+
+
+
+Should a saved query or diagram ""vanish"" in the classic client once it is migrated?
+
+It may still be used on the classic side directly, or in an indirect way, for example as part of a Dashboard configuration, or even externally by URI.
+
+
+
+If a saved query is migrated once, then lives on and is edited (maybe), and migrated a second time:
+
+What should happen?
+
+* Second item on the interactive client side for the same query on the classic side?
+
+* Only if edited since last migration? (so we need a ""last migration date"" in the system?)
+
+* Ignore if it already exists on the target side (so we need to match items of both sides, for example by original ID)
+
+* Ask the user, one by one.
+
+* Allow for an explicit migration of single items, selected and triggered by the user.
+
+"		Epic	iteraplan Thunderduck	21/Jan/16 1:36 PM															"25/Jan/16 4:15 PM;wfr;to be migrated: diagrams and spreadsheet reports
+
+
+
+OPEN: custom dashboards and their templates as well?
+
+
+
+No migration needed for iteraQL queries, not saved in classic client
+
+
+
+existing: 
+
+* DAO / data structures for all source elements
+
+* DAO / data structures for the new target elements
+
+* Logging
+
+
+
+UI 
+
+* simple ""migrate now"" button in the classic client (so that it will disappear with the classic client later
+
+* NO UI log, not details, no result list
+
+* details in log messages in file only"	"01/Feb/16 10:08 AM;wfr;Dependencies
+
+* needs all ""saved things"" on the new client to be complete
+
+* can be done step by step, as new features on the client are added
+
+"	"08/Dec/16 4:27 PM;ach;Queries/Configurations to migrate:
+
+Spread Sheet Reports
+
+Landscape Diagram
+
+Cluster Diagram
+
+Nesting Cluster Diagram
+
+Inforflow Diagram
+
+Portfolio Diagram
+
+Masterplan Diagram (IPTT-285)
+
+Bar Chart
+
+Pie Chart
+
+Composite Bar/Pie Chart"																																																				

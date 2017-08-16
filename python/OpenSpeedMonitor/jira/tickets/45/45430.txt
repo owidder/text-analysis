@@ -1,0 +1,43 @@
+New UI: Feedback & Improvements to new UserInterface	Collect feedback & improvements to the new UserInterface as well as track changes done.		New Feature	iteraplan PO	15/Mar/12 2:28 PM	02/Apr/12 5:58 PM					gui									"15/Mar/12 4:36 PM;kvo;The following Feedback from different tests (ITERAPLAN-554, ITERAPLAN-557, ITERAPLAN-558) is still valid:
+* Positioning of the closing ""x""-button under ""open elements"" mostly broken
+* switching tab (e.g. from reports to attributes) resets the scrolling of the page
+* If you change the language to Bulgarian, the language options has character errors.
+* There are two different DatePickers in iteraplan, for example:
+** Arbitrary InformationSystem, edit, ""Provided:""
+** Timeline Diagram (beta), ""Start/End Date"""	"15/Mar/12 4:43 PM;kvo;Diagram Reports: Convert from table to modules to enable responsive design on mobile devices of 
+https://iteraplan.iteratec.de/iteraplan_nightly_build/graphicalreporting/init.do"	15/Mar/12 10:23 PM;kvo;Download-Icons einbauen in die entsprechenden Buttons der Export/Import Seiten von XMI und Excel sowie die neue Dokumentenverwaltung unter Administration	"16/Mar/12 9:49 AM;kvo;Linke contextNavigation etwas breiter machen
+In Beispieldaten bitte zum System-User noch die Emailadresse system@iteraplan.de hinterlegen."	20/Mar/12 3:37 PM;kvo;Redesign Diagram Report Page to show all Visualisations (incl. Dashboard), make all Icons visible on first display.	"20/Mar/12 5:35 PM;sry;Shortcuts for moving between tabs on BB detail pages don't work any longer: Shift+Left/ Shift+Right should switch to neighbouring left/ right tab
+"	"20/Mar/12 11:09 PM;kvo;The capitalization for the blocks inside the relations tabs seems to be uneven:
+
+""Contains ...""
+""Used by ...""
+
+""contains ...""
+""belongs to ...""
+""is ...""
+
+Always use Capital at beginning."	"22/Mar/12 10:27 AM;kvo;* Hintergrundfarbe im linken Context-Menu etwas heller machen, damit man es besser lesen kann und auch die Icons besser rauskommen
+* Kann man das Haupt-Menu etwas schmaller machen, damit bei breiten Bildschirmen nicht so viel Fläche verloren geht?
+* es ist im Linken Menü nicht mehr erkennbar ob ein offenes Bebauungselement noch nicht gespeichert wurde, da es nicht mehr farblich abgehoben wird, das ist aber bisher eine sehr hilfreiche Funktion, die Kunden vermissen würden (wichtig)"	"22/Mar/12 10:47 AM;sry;Spreadsheet reports to Excel doesn't work - the page fragment for selecting the export template is not shown, and the export commands fails as not template file could be found.
+
+In the error message, the actual error text (Exception-Specific) should be more eye-catching, e.g. red color."	22/Mar/12 1:40 PM;lci;These is the current color (#00C489). Please provide a better one, I kind of lack the visual design skills	"22/Mar/12 2:50 PM;lci;New behavior: the color of the active open element's text is always white, just in italics if it's in edit mode; inactive unsaved elements are in italics + #330099.
+This may be the best, since the active element is actually displayed and its editable state is obvious anyway. 
+
+I also tried the standard pinkish color (#AC007C) used in links and menus, but I find its usage for this purpose kind of ""semantically confusing"" when taking account of the standard meaning."	22/Mar/12 3:39 PM;lci;- Breadcrumbs not working correctly in IE8	27/Mar/12 1:19 PM;sry;The Description text box is too wide for the page, at least for Interfaces (other BBTs not tested). Happens in FF1 and IE9	"27/Mar/12 6:40 PM;kvo;* ContextActions von TechnicalComponents und InfrastructureElements zu Spreadsheet Reports und BulkUpdates gehen nicht (bei allen anderen Elementen klappt es!)
+* Doppelte Option in Landscape Diagram ""In case the graphic is too big, scale it down to fit into a DIN A1 page.""
+* Wenn man auf <Mehr> bei <Über iteraplan> geht, sollte die Homepage in einem separaten Fenster aufgehen, damit man seinen Ursprung in iteraplan behält. Genauso beim <Anwenderhandbuch>. Letztlich analog zur Seite <Definitionen>, wo ich beim Anklicken der 3 Dokumente auch jeweils in einem neuen Fenster lande.
+* Tabellenformatierung in Governance / Supporting Queries -> beim Ergebnis, viel Platz für 1 und 2 ;)
+* InternetExplorer Dropdown zu klein, z.B. bei Abfrageerweiterungen
+* Popover bei ""Details"" der Merkmale auf den Attributseiten funktioniert nicht bei allen/immer
+* Abstand zwischen ContextMenu und Content etwas kleiner und Context Menu etwas breiter
+* Leeres ContextMenu - Das Context-Menü sollte immer die Überschriften „Kontext Aktionen“, „Offene Elemente“, ""Abonnierte"" enthalten, ggf. alle gleich ""ausklappbar""
+* Suchfeld und –Button horizontal zentrieren/angleichen
+* iteraplan-Logo wirkt an die angrenzenden Bereiche gepresst. Mind. 2 Pixel oben und unten freilassen.
+* History-Tab noch unschön
+* Beta bei NestingClustergrafik rausnehmen"	"30/Mar/12 9:59 AM;kvo;* Reinit Graphical Report Configuration - done
+* Reinit Tabular Reporting and Massupdate - gph
+* Close all elements (within same type, just like in 2.9) - gph
+* working on resolution 1024x768
+* ToolTip on SearchPage is missing"	30/Mar/12 2:50 PM;sry;In IE7, switching between tabs (e.g. Attributes) does not work. Nothing happens. In IE8+9 it works	30/Mar/12 6:36 PM;sry;Confirming modal dialogs (like do you really want to log off?) with Enter works fine in Firefox (cool!), but not in IE (9). Would be nice to have that working as well :-)	"02/Apr/12 10:38 AM;kvo;* IE7 is not supported anymore (see http://iteraplan.de/wiki/display/iteraplan/Installation+Prerequisites), so tab switching (Comment Steffen) no issue
+* Menüleiste: geringere Höhe (3-4 Pixel weniger), weniger Abstand zum Rand (14px statt 20px links und rechts)
+* On VisualisationTab - show selected Visualisation-Name with displaying diagram (maybe next to Preview)"	02/Apr/12 11:04 AM;kvo;In Wiki-Enabled text areas the icon is missing: There was a small icon that is displayed in the top right corner of the text input box.	02/Apr/12 2:05 PM;kvo;Please move work to ITERAPLAN-626 and log which issues are still open in RC1 here and in #626	02/Apr/12 3:20 PM;lci;The close all functionality's name isn't very clear. Upon reading "close" I thought of some duplicate of the x-icon in open elements at first. Shouldn't it read something like "Close all $category"?	02/Apr/12 5:58 PM;kvo;Further Work in ITERAPLAN-626																																	

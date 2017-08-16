@@ -1,0 +1,11 @@
+Queue Status Page ist nicht erreichbar	"http://dev.openspeedmonitor.wpt.iteratec.de/queueStatus/list
+
+Führt zu einem Fehler:
+
+
+
+Error 500	Error processing GroovyPageView: [views/queueStatus/list.gsp:31] [views/queueStatus/_allQueues.gsp:98] Template not found for name [../job/timeago] and path [/queueStatus/../job/_timeago.gsp]
+
+Servlet	
+
+URI	/OpenSpeedMonitor/queueStatus/list"		Bug	OpenSpeedMonitor	29/Jun/16 9:42 AM	30/Jun/16 8:27 AM														29/Jun/16 11:40 AM;nku;Diese Seite austoggeln. 	30/Jun/16 8:27 AM;bwo;Der Fehler konnte auf dem Branch feature/detailAnalysis nicht reproduziert werden																																																					

@@ -1,0 +1,6 @@
+Selenium Webtests don't work correctly with Searchable Dropdown elements	"The method to select an item from a searchable dropdown doesn't work correctly. It only enters the desired value in the search-field, but doesn't select it.
+
+Example:
+In ""CreateBusinessUnitAction"" used for ""CreateBusinessUnitTest"", after creating two business units, a third is created which should have assigned one parent and one child (the previously created BUs). If you watch the test-run you can see the according business unit names appearing in the searchable dropdown boxes, but they vanish again when the test triggers form commit and page refresh, because they weren't really selected. Only the search-filter of the searchable dropdown was set."		Bug	iteraplan PO	12/Apr/13 10:42 AM	09/Jan/14 11:39 AM					selenium	webtests								"05/Dec/13 1:05 PM;jmi;The problem was the changed behavior of the combobox-element.
+Was already corrected in ITERAPLAN-2230.
+(It's necessary to actually select the element from the dropdown by clicking on it, not only writing the element's name in the combobox-field)."	09/Jan/14 11:38 AM;lba;The new Selenium Tests that were developed don't have this issue anymore e.g. BOsCreateChangeDeleteTest uses the combobox element successfull multiple times.	09/Jan/14 6:52 PM;fka;Accepted																																																				

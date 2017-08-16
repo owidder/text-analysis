@@ -1,0 +1,15 @@
+Multiple values are not placed correctly in the cell	"Steps to reproduce:
+
+1) Open default Masterplan
+
+2) Add column Accountability
+
+3) Set Color by Accountability
+
+
+
+Actual result: text values are not placed correctly in colored rows
+
+Expected result: each value is on its colored row
+
+"		Bug	iteraplan Speedbird	19/Jun/17 2:58 PM	17/Jul/17 2:18 PM																																																																				

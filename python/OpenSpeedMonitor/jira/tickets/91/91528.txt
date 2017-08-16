@@ -1,0 +1,42 @@
+Problem with import of information systems	"I have a problem with the Additive Import of Information systems. I tried that in a test environment.
+
+If I charge info for a subset of the systems the import deletes many links parent-child that I didn’t asked.
+
+For Example, if in Iteraplan 5.1  I have:
+
+•	An information System level 1 : X
+
+•	These information systems level2 : X1, X2, X3, X4 all children of X
+
+•	This information system level3: X3A children of X3
+
+If in the Excel file (the Empty Metamodel export) is filled with X, X3, X3A for importing, it updates X, X3, X3A, but X1, X2, X4 have lost the link with parent X.
+
+
+
+Is it this fixed in 5.2 ? 
+
+
+
+Could you please help, 
+
+
+
+regards
+
+"		Fault	iteraplan Support	25/Jul/16 4:15 PM	28/Jul/16 9:30 AM														"25/Jul/16 4:52 PM;cst;Dear Mr. Benoit,
+
+thank you for your enquiry.
+
+That fix solves another problem and has nothing to do with your request.
+
+Relationship assignments such as ""parent"" inInformation System or assigned Information Systems in Business Functions will
+be updated to represent the state described in the imported file. This means that connections existing in iteraplan, but missing in the imported file, will be removed when importing.
+
+That’s the reason why the links are missing after the import. More information about the Importer, find you on the following page:
+
+https://www.iteraplan.de/doc/display/iteraplan52/Import+Strategies 
+
+Greetings,
+
+Christoph Stangl, iteraplan-Support "																																																						

@@ -1,0 +1,2 @@
+ConsistencyCheck - wrong results, wrong links	"The Consistency Checks - General Landscape - Nr4: shows all the InformationSystems without the releases, Links are not working, since they are the BaseInformationSystem type and not the release type.
+Also the BusinessMappings and the Relationships make no sense either."		Bug	iteraplan PO	12/Jul/13 6:29 AM	15/Jul/13 6:26 PM																																																																				

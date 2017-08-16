@@ -1,0 +1,13 @@
+Immediate elastic load	"Currently, loading the elastic data model is handled as follows:
+* Each time when someone logs in, check whether there is an elastic model loaded for the current datasource
+* If not, schedule an asynchronous load of the elastic model
+* This load is executed within 10-15 seconds and can take a few seconds up to a few minutes, depending on model size
+* Until the load is finished, accessing the elastic data nets no data at all, but also no error.
+
+2 improvements:
+* Instead of scheduling an elastic load, trigger one immediately if there is no data loaded for the current datasource
+* When accessing elastic data and there is no loaded data present, wait for the current loading process to finish and use its result.
+
+This way there will be less confusing behavior, especially of the new client, after iteraplan was restarted."		Improvement	iteraplan PO	24/Jun/15 2:15 PM	30/Jun/15 12:40 PM					elastic	load	ship-it-day							"30/Jun/15 12:40 PM;fam;Checked code and funktion.
+
+Feature working, ticket closed."																																																						

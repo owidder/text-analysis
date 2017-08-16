@@ -1,0 +1,7 @@
+Subscription - Remove link to deleted element	"When I delete a e.g. Information System a mail will be created with a link to the deleted element. That makes in this context no sense, because when you click the link, a stacktrace in the console will be shown and that the element is not longer available. 
+
+
+
+Just remove the link in the email for this case.
+
+ "		Bug	iteraplan Speedbird	23/May/17 3:31 PM	21/Jun/17 10:02 AM														21/Jun/17 10:02 AM;vadm;Code review is done https://iteraweb.iteratec.de/fisheye/cru/IP-646																																																						

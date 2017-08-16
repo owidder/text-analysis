@@ -1,0 +1,62 @@
+After migrate to a new server	"Dear Support, 
+
+Recently we migrated a database and content to a new server.
+
+The Iteraplan application seems to work fine but for some reason, when the user login.
+
+It appears this error.
+
+User delete history and cookies and tried with IE + Mozilla.
+
+I've not this problem with system admin user.
+
+
+
+Could you please support Ronal Group for this.
+
+
+
+Thanks"		Technical question	iteraplan Support	07/Mar/17 11:14 AM	09/Mar/17 7:47 AM														"07/Mar/17 11:14 AM;admin@mcongroup.net;
+
+!aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.png|thumbnail!"	"07/Mar/17 11:34 AM;cst;Hello,
+
+thank you for your inquiry.
+
+
+ # Go into the menue ""Administration"" - ""Configuration"" and click on the button ""Clear Cache""
+ # On the path ""[TOMCAT7]\work\Catalina\localhost\"" clear the iteraplan instance folde
+
+When the problems is the same, could you please send us following logs.
+From the conf-directory of your Tomcat-Installation:
+
+server.xml
+web.xml
+
+The “catalina.out” and “localhost.log” files from your tomcat installation (just for the period, when the error occurred).
+
+From [Tomcat]/webapps/[iteraplan directory]/WEB-INF/classes:
+
+log4j.properties
+
+From [Tomcat]/webapps/[iteraplan directory]/META-INF:
+
+context.xml (This file can contain passwords -> please remove the passwords)*
+
+The iteraplan log files from the period, when the error occurred. The files are called “iteraplan-[version].log” (for today) or „iteraplan-[version].log.[TIMESTAMP]” (for past days). The location of these file was specified during installation and is documented in the file “log4j.properties”.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"08/Mar/17 11:25 AM;admin@mcongroup.net;I've execute these actions and waiting for RONAL to test again the application
+
+Thanks for you help master Christoph
+:)
+
+Will inform you soon if everything it is fine.
+"	"09/Mar/17 4:09 AM;admin@mcongroup.net;Dear Christoph,
+
+The application works perfectly now.
+
+Thanks again for your super support!
+
+You can close this ticket
+:)"																																																			

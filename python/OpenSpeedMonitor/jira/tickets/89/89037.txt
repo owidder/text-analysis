@@ -1,0 +1,19 @@
+Get rid of 1500ms timeouts in the headerDownloadService.js	"In the current implementation we call diagram redraw and then wait 1.5 sec for it to be drawn and then save it:
+
+
+
+{code}
+
+controller.redrawDiagram(true, false); //draws the diagram without size limits
+
+window.setTimeout(function () {
+
+   // save diagram to file
+
+}, 1500);
+
+{code}
+
+
+
+Investigate if it's possible to get rid of these timeouts and use callback or event which is triggered when diagram is actually drawn, e.g. {{LayoutCompleted}}  (http://gojs.net/latest/api/symbols/DiagramEvent.html)"		Improvement	iteraplan Thunderduck	01/Jul/16 3:53 PM	20/Jan/17 11:40 AM					diagram	newClient								20/Jan/17 11:40 AM;mse;Timeouts could not be removed completely but are set to 150 ms instead of 1500 ms.																																																						

@@ -1,0 +1,27 @@
+Fragen zur Informationsflussgrafik 	"Aber da fehlen mir doch definitiv einige Punkte:
+
+ -> Ich erstelle nun ein Informationsflussgrafik mit allen Kriterien. Das Diagramm wird mir hübsch angezeigt.
+
+ Aber,
+
+ - das Diagramm kann nicht in ein Visio überführen
+
+ - wenn ich ein Informationsflussgrafik zusammenstellen will und z.B. den Lebenszyklus auswählen will, dann bekomme ich die Auswahl (Ist ein Aufzählungs-Merkmal) nicht angezeigt.(Vielleicht mache ich das ja was falsch)
+
+ - die Geschäftsobjekte auf den Schnittstellen werden nicht dargestellt, auch nicht wenn man dies als PDF ausgibt. Dies ist für uns wichtig
+
+
+
+."		Technical question	iteraplan Support	18/May/17 12:33 PM	07/Jun/17 7:00 AM														"19/May/17 1:17 PM;cst;Sehr geehrter Herr Studer,
+
+vielen Dank für Ihre Anfrage.
+ * Der Visio-Export wird mit einem der Versionen nach Version 6.0 kommen. Im Moment gibt es für diesen keinen konkreten Termin. 
+ * Wenn es sich hier um Filter handelt, sollte die folgende Einstellung Ihnen die konkrete Werte anzeigen:
+
+ * !image-2017-05-19-13-15-41-256.png!
+ * Zu dem letzten Punkt haben wir einen Part in Dokumentation geschrieben, diese Feature steht im Moment nicht zur Verfügung.
+ [https://doc.iteraplan.de/display/iteraplan55/Visualizations] unter dem Punkt Information Flow Diagram.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "																																																						

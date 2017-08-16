@@ -1,0 +1,37 @@
+Period filter does not work	"Reproduce: 
+
+
+
+# Go to IFD
+
+# Add filter ""Productive period between 01/01/2010 and 01/10/2010""
+
+
+
+Result: empty diagram
+
+
+
+Expected: At least some elements are showm
+
+
+
+Debug: Seems to be a problem with a wrong delimiter (""/"" instead of "";"") in {{SingleDurationFilter.prototype.matches}} function.
+
+
+
+Please, create also a unit test for this function! "		Bug	iteraplan PO	25/Apr/16 1:06 PM	26/Apr/16 9:14 AM														25/Apr/16 1:23 PM;sfe;There were tests already, but they used old test data. I've updated this.	"25/Apr/16 1:53 PM;tam;There is still an error. At least in LSD.
+
+
+
+Chrome:
+
+singleDurationFilter.js:84 Uncaught TypeError: Cannot read property 'split' of undefined
+
+
+
+Firefox:
+
+TypeError: dt is undefined singleDurationFilter.js:84:21
+
+"																																																					

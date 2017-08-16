@@ -1,0 +1,41 @@
+Fix initial data creation	"* there should be no saved queries in an initial data set
+* attributes should be omitted completely, or should be complete with enum/responsibility values. Align with previous version's initial data.
+* Add Overview permission for CommunityUser
+* For bank data: saved landscape diagram query ""Compliance of technical components"" does not work/ invalid contents"		Bug	iteraplan PO	27/Jan/12 6:13 PM	21/Feb/12 1:33 PM					data	installer								"02/Feb/12 9:17 AM;sfe;When using the ant installer with database initialization, a lot of the following errors appear in the installer's error window:
+
+{noformat}
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(Unknown Source)
+	at java.util.zip.ZipFile.<init>(Unknown Source)
+	at org.apache.tools.ant.AntClassLoader.getResourceURL(AntClassLoader.java:919)
+	at org.apache.tools.ant.AntClassLoader.getResource(AntClassLoader.java:832)
+	at org.apache.log4j.helpers.Loader.getResource(Loader.java:97)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:107)
+	at org.apache.log4j.Logger.getLogger(Logger.java:117)
+	at de.iteratec.iteraplan.common.Logger.init(Logger.java:64)
+	at de.iteratec.iteraplan.common.Logger.getIteraplanLogger(Logger.java:77)
+	at de.iteratec.iteraplan.xmi.XmiImport.<clinit>(XmiImport.java:71)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.tools.ant.taskdefs.ExecuteJava.execute(ExecuteJava.java:119)
+	at org.apache.tools.ant.taskdefs.Java.run(Java.java:710)
+	at org.apache.tools.ant.taskdefs.Java.executeJava(Java.java:178)
+	at org.apache.tools.ant.taskdefs.Java.execute(Java.java:84)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:275)
+	at org.apache.tools.ant.Task.perform(Task.java:364)
+	at org.apache.tools.ant.Target.execute(Target.java:341)
+	at org.apache.tools.ant.Target.performTasks(Target.java:369)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1216)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1185)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:40)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1068)
+	at org.tp23.antinstaller.antmod.Main.runBuild(Main.java:704)
+	at org.tp23.antinstaller.antmod.Main.startAnt(Main.java:216)
+	at org.tp23.antinstaller.antmod.Launcher.run(Launcher.java:215)
+	at org.tp23.antinstaller.runtime.exe.AntLauncherFilter.exec(AntLauncherFilter.java:76)
+	at org.tp23.antinstaller.runtime.ExecInstall.exec(ExecInstall.java:85)
+	at org.tp23.antinstaller.selfextract.SelfExtractor.main(SelfExtractor.java:370)
+{noformat}
+
+Installation and databank initialization seems to work properly, though, judging from the ability to log into iteraplan and see the initial data."	20/Feb/12 5:30 PM;sip;default roles should also be changed in wiki: http://iteraplan.de/wiki/display/iteraplan/Default+Roles	22/Feb/12 11:55 AM;sry;Documentation has been updated, please close ticket.																																																				

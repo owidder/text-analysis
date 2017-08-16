@@ -1,0 +1,27 @@
+Filtering for Bar Chart	"*Summary:*
+
+Add filtering capability, as in Pie Chart diagram and IPTS-155
+
+
+
+*Implementation details:*
+
+* Filter only the base element type of the Bar Chart
+
+* Use combined filters with all the standard filter possibilities
+
+* Store in URL
+
+
+
+*UI:*
+
+* Toolarea: Add Filter entry with standard icon, after Attributes entry (3-rd position)
+
+* Legend: If a filter is applied, show the section ""Applied filters""/""Angewendete Filter"" (e.g. in Pie Chart diagram), just below the attrubute name. Ensure filter panels are shown correctly, and manual selection panel is displayed with correct numbers (if manual selection is activated).
+
+
+
+"		New Feature	iteraplan Speedbird	26/Oct/16 5:47 PM	02/Nov/16 1:51 PM														02/Nov/16 1:32 PM;dmkh;updated position of filter panel of the legend (after the attribute name) in the ticket description	"02/Nov/16 1:51 PM;ants;Review done:
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-147"																																																					

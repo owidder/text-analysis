@@ -1,0 +1,10 @@
+Sortierreihenfolge bei History	In der neuen History sind die Einträge bei Sortierung über Datum alphabetisch und nicht nach Datum sortiert.		Fault	iteraplan Support	18/May/17 7:35 AM	18/May/17 8:33 AM														"18/May/17 8:33 AM;cst;Sehr geehrter Herr Meister,
+
+vielen Dank für Ihre Anfrage.
+
+Sie haben Recht und dies ist nicht korrekt. Die Sortierung der History wird mit dem kommenden Update Version 6.0 wieder korrekt sortiert werden. 
+Ein Service-Release für Version 5.5. wird es hier nicht geben.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"																																																						

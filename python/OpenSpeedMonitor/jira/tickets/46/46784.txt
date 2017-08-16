@@ -1,0 +1,7 @@
+Enable Clipping of text in diagrams for Visio and SVG output format	"This ticket only affects the diagram types Landscape  (Visio and SVG) and Nesting Cluster (only SVG). 
+
+Currently the label in the nesting cluster boxes are cut off, if the text is too long for the box. The disadvantage with this solution is, that the text can't be used anymore for any kind of post processing. SVG provides the ability for _clipping_. This means, that a overlapping text will be cut off by the viewer and must not be done in iteraplan. The text can be used for post processing, e.g. copying the full text. 
+
+Scope of this ticket is to use the clipping mechanism in SVG to cut off overlapping texts. Furthermore this option shouldn't be set permanently. Provide an option in the diagram configuration page to turn this feature on and off. In case of Visio diagram creation, the SVG clipping mechanism can't be used. Analyse in which way clipping can be realized in Visio and implement this mechanism for it. 
+
+In Ticket ITERAPLAN-2644, a linebreak for too long inner labels in boxes of the nesting diagram is implemented. This feature here should be available independently from linebreak. Clipping would then be done on the last line of the ""linebroken"" text."		New Feature	iteraplan PO	04/Aug/14 2:56 PM	30/Sep/14 4:15 PM																																																																				

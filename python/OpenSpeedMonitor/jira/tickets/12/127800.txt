@@ -1,0 +1,35 @@
+First Step - Connect Business Domain with Information System	"Add an attributable relation between Business Domain and Information System.
+
+
+
+Thie contains the following tasks:
+
+ * create the entity for the relation
+
+ * create hibernate mappings
+
+ * DAO
+
+ * Service Layer
+
+ * History
+
+ * Check if changes at the plugin API are necessary
+
+
+
+---ITERAPLAN-2908--- and the following phases can be used as hints what has to be done.
+
+
+
+Please document what needs to be done so this documnetation can be used for the remaining relations.
+
+
+
+acceptance criteria:
+
+ * It is possible to add an attribute to the relation via rest
+
+ * It is possible to change the value of the added attribute via rest
+
+ * In the Excel-Export the relation is shown under ""Types"" like ISR-BO and has the properties like Last Modification time and user (via [http://localhost:8080/iteraplan/api/data?format=xlsx] this can be exported even if the client is not working)"		New Feature	iteraplan Thunderduck	24/Jul/17 8:32 AM																																																																					

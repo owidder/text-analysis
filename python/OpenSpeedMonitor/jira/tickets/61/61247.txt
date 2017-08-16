@@ -1,0 +1,23 @@
+LSD: "Status (IS)" on axis creates empty diagram	"*Summary:*
+
+LSD: ""Status (IS)"" on axis creates empty diagram
+
+
+
+*Reproduce:*
+
+* Open a Landscape Diagram
+
+* Set ""Status (IS)"" on the vertical axis
+
+
+
+*Actual:*
+
+The resulting diagram is empty.
+
+
+
+*Expected:*
+
+The resulting diagram is ordered by status."		Bug	iteraplan PO	23/Oct/15 4:08 PM	24/Oct/15 8:31 PM														24/Oct/15 12:07 PM;sfe;If you select "show empty rows", the diagram is actually visible.																																																						

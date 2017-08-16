@@ -1,0 +1,31 @@
+Saved query name and "Save" missing when query is loaded	"Reproduce:
+
+
+
+# Go to LSD
+
+# Change some settings
+
+# Click ""Save as"" and save a private query
+
+# Got to ""All saved queries"" list and open the query
+
+
+
+Expect:
+
+* LSD is loaded as before
+
+* Name of query and ""Save"" button is shown next to iteaplan logo
+
+
+
+Result:
+
+* Query name and save button are missing"		Bug	iteraplan PO	25/Oct/16 1:29 PM	26/Oct/16 2:44 PM														"26/Oct/16 2:44 PM;viol;Review is done:
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-124
+
+no any comments.
+
+"																																																						

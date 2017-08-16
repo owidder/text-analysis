@@ -1,0 +1,8 @@
+Test EMF import	"Test sheet in doc/test/importexport: empf-import-test-specification.xlsx
+
+Previously the tests could not be executed due to a bug, see also ITERAPLAN-2754, ITERAPLAN-2777
+
+* Install iteraplan using one of the not yet or lesser tested configurations in the installer test sheet
+* Perform the testcases from the test sheets and attach the results to this ticket
+* If necessary adjust test cases to changed functionality and commit the updated test sheet"	47060	Sub-task	iteraplan PO	27/Oct/14 4:15 PM	29/Oct/14 2:41 PM					emf	import	test							"27/Oct/14 5:39 PM;fam;Tried first TC but failed.
+Please clarify with sfe."	29/Oct/14 9:10 AM;msr;All TCs executed. 2 defects found: ITERAPLAN-2786 and ITERAPLAN-2788	29/Oct/14 2:41 PM;sfe;Tickets for issues found were created																																																				

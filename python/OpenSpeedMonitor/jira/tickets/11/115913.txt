@@ -1,0 +1,1 @@
+Hervorheben des neuen Jobs	Erstellt man erfolgreich einen Job über den JobCreationWizard, gelangt man auf die JobList-View. Hier wäre es schön, wenn der neue Job hervorgehoben wird, wie es der Fall ist, wenn man Jobs aktiviert oder ausführt.	116644	Sub-task	OpenSpeedMonitor	23/Mar/17 11:30 AM																																																																					

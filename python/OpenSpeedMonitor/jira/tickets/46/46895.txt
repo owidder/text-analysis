@@ -1,0 +1,18 @@
+Long name of inner box in 2 or 3 lines.	"Break a long name of an element into 2 or 3 lines of text in an inner box in a NCD.
+
+This is only a design/layout improvement, no direct user interaction.
+
+If the text of the inner box is too long, break it into two parts, and display it as two lines of text in the box. 
+Make the line break at a space "" "" or a dash ""-"".
+The first line must fit into the box and must be as long as possible.
+
+If there is no breaking character in the name that would lead to a fitting first line, then make a hard break after n characters.
+Do not try to make orthographical correct word hyphenazation.
+
+For the width of a line, compute an approximation with the width of an ""x"" character.
+Do not try to compute the exact width with font metrics.
+
+If the second line is still to long, repeat this step and add a third line of text in the box.
+
+If the third line is still to long, clip it with a clipping path in SVG.
+For an example of a clipping path, see the comment in IPNINE-7"		New Feature	iteraplan PO	21/Aug/14 9:28 PM	29/Sep/14 10:14 AM														22/Aug/14 4:18 PM;sepr;Est. 1 PD																																																						

@@ -1,0 +1,6 @@
+bad server adress in url of direct link to visualization	"tried to use the direct link feature in Informationsystems -> Visualisation 
+Got wrong link in nightly build and in demosystem of iteratec.
+
+<%= URLBuilder.getApplicationURL(request)  %>/iteraplan_nightly_build/fastexport/generate.do?id=233&buildingBlockType=InformationSystem&savedQueryType=Landscape&diagramVariant=BusinessLandscapeByBusinessUnits&resultFormat=Svg&outputMode=attachment&keepfresh=1325497406983#
+
+when changed the script block to url all was working correct "		Bug	iteraplan PO	02/Jan/12 10:51 AM	13/Jan/12 5:12 PM														03/Jan/12 6:29 PM;sry;The fix will be included in the next nightly that gets pushed to www.iteraplan.de	13/Jan/12 5:12 PM;vsh;tested with Chrome and Safari, English and German																																																					

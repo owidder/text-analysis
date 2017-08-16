@@ -1,0 +1,5 @@
+Improve filter display in interactive client	"See picture (aproximately).
+
+[~fka] gave the ok, so it just needs to be reviewed from a technical perspective."		Improvement	iteraplan PO	22/Apr/16 3:20 PM	25/Apr/16 11:42 AM														"25/Apr/16 11:42 AM;abo;Review comments:
+
+Ok from a functional and technical perspective, layouting can be improved, though."																																																						

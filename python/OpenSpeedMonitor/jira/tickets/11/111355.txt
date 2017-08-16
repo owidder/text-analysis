@@ -1,0 +1,1 @@
+Beschreibung für den Schritt "Select Location and Connectivity" erstellen	Um dem (Erst-)Nutzer das Auswählen einer Location und einer Connectivity zu vereinfachen sollte eine Beschreibung der beiden Variablen angezeigt werden.	111352	Sub-task	OpenSpeedMonitor	08/Feb/17 3:06 PM	27/Mar/17 12:13 PM																																																																				

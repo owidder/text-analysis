@@ -1,0 +1,8 @@
+Marker mit 2D-Texturen belegen	"Im Outdoor-Szenario sollen die Kamera-, und Brückensensoren mit einer 2D-Textur angezeigt werden.
+
+GIS-Daten des Adapters benutzen
+
+Annahme: 
+- fixe GPS-Position (noch keine echten GPS-Daten)
+- Sensor-Positionen sind hartcodiert
+"		Task	EAMV15	20/Nov/15 5:12 PM	07/Dec/15 11:34 AM														01/Dec/15 6:19 PM;fbe;kann erst geschlossen werden, wenn bekannt ist, wie welche Sensortypen dargestellt werden sollen. Hierzu Daniel und Phillip angeschrieben. 																																																						

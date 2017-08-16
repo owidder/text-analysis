@@ -1,0 +1,8 @@
+Visualisierungsoptionen im Infofluss-Diagramm falsch angewendet	"Informationsflussdiagramme werden zweistufig konfiguriert. Im ersten Bildschirm werden die anzuzeigenden Informationssysteme gefiltert. Im zweiten Bildschirm wird das Diagramm konfiguriert. Teil der Konfiugration ist eine Filterung auf ""Relevante Geschäftsobjekte"". Wendet man diesen Filter an, so werden nur die ausgewählten Geschäftsobjekte in der Zuordnung GO<=>IS im Diagramm angezeigt. Die über Schnittstellen übertragenen Geschäftsobjekte werden hingegen nicht über diesen Filter ausgewählt. Stattdessen werden stets alle über eine Schnittstelle ausgetauschen Geschäftsobjekte dargestellt.
+
+Verhalten kann mit beigefügtem iteraplan.script nachgestellt werden. In der Visualisierung soll an der Schnittstelle das GO GO2 nicht angezeigt werden.
+
+
+Erwartetes Verhalten: wenn ein Filter auf ""Relevante Geschäftsobjekte"" konfiguriert ist, so sollen auch nur diese Geschäftsobjekte im Diagramm angezeigt werden.
+
+Verbessertes Verhalten: zusätzlich zum erwarteten Verhalten gibt es in den ""Erweiterten Einstellungen"" eine Auswahlbox, mit der das jetzige Verhalten herbeigeführt werden kann."		Bug	iteraplan PO	01/Oct/14 3:55 PM	22/Oct/14 2:23 PM																																																																				

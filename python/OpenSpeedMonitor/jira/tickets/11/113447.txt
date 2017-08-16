@@ -1,0 +1,61 @@
+New date-type input	"*Summary:*
+
+
+
+Changing date-values
+
+
+
+*Scope:*
+
+ * All date-type values except for lastModificationTime (not editable)
+
+ * All date-span values
+
+ * Existing dates should be overwritten by new ones
+
+ * Buttons for action on chosen / all rows:
+
+ ** Set (german: Setzen) - change existing date to the new one
+
+ ** Clear (german: Löschen) - remove existing date and leave fields empty
+
+ * Dialog should appear 'Do you want to update chosen data?' ('Möchten Sie die ausgewählten Daten aktualisieren?')
+
+ ** Yes / No (german: Ja / Nein) answer
+
+ * validation - input must in date format
+
+ ** if it is not, information underneath input field: 'Invalid date format' (german: 'Ungültiges Datumsformat')
+
+ ** same as during changing single row
+
+
+
+*UI:*
+
+ * There should appear window with calendar icon on the left side and suggestion which date format is being used (datepicker)
+
+ * in case of date-span values, show two datepickers with dash between two dates
+
+ * loading indicator is shown until all changes are applied
+
+ * mass update still active after reloading the list
+
+ * {color:#333333}Underneath the text field there should be located buttons to implement action (described in -IPTS-640-){color}
+
+ ** use primary text button for action *set*
+
+ ** {color:#333333}use seconadry text button for other actions{color}
+
+
+
+ 
+
+
+
+*{color:#333333}p.s. whoever will be reviewing this task, please add revision 6405 to the changeset - I forgot to comment this commit.{color}*"		New Feature	iteraplan Speedbird	28/Feb/17 3:16 PM	27/Mar/17 6:10 PM														"24/Mar/17 1:53 PM;roia;[~mkt], please split this into two separate tasks - date type and duration type (date-span)
+
+
+
+For durations the requirements and implementation is more complicated: we need to implement validation of start-end values depending on each other, different data format for REST API, etc."	27/Mar/17 6:10 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-464																																																					

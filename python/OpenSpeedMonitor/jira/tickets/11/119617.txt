@@ -1,0 +1,37 @@
+XWiki in Diagram (server + client)	"First analyse, if GoJS now supports html in tooltips.
+
+ If yes, please refactor diagrams to use html in tooltips.
+
+
+
+If no:
+
+ * Adapt server to return strings in this special case
+
+ * Implement in all diagrams (tooltips or content)
+
+
+
+{color:#ff0000}UPDATE: {color}3 lines restriction for tooltip"	113713	Sub-task	iteraplan Speedbird	26/Apr/17 11:14 AM															"17/May/17 4:13 PM;dmkh;??First analyse, if GoJS now supports html in tooltips.??
+
+??If yes, please refactor diagrams to use html in tooltips??
+
+
+
+Looks like yes: http://gojs.net/latest/intro/HTMLInteraction.html"	"18/May/17 11:12 AM;dmkh;[~msr], I have put this ticket to ""On Hold"" till tooltips unification will be made in all diagrams (ITERAPLAN-5026 and/or IPTS-701):
+
+- LSD, NCD, IFD have no tooltips;
+
+- MPD, CCD, PFD have BB names or attribute value names as tooltips;
+
+
+
+- BDC, PCD have atribute values tooltips;
+
+- TMD has BB _name+value_ tooltip;
+
+- NVD has BB description tooltip (implemented in IPTS-357, currently not XWiki translated)
+
+
+
+Agreed with [~fka]"																																																					

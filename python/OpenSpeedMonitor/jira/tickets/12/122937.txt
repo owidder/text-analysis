@@ -1,0 +1,23 @@
+Multi Mode (former Mass update) active/inactive 	"The MULTI MODE Button (ex-Mass update button) should look like a default button ([ style guide|[https://iteraweb.iteratec.de/confluence/display/ITPL/Buttons] ] when inactive.
+
+
+
+When clicked the button becomes *activated*:
+
+ * background-colour: #A70075 (iteragenta)
+
+ * Icon and text change colour from gray to white
+
+ * border changes: the button should look like it is pressed down (e.g. by shadow on inner side of the border?) --> like this the user knows, that he can ""release"" it by clicking it again
+
+
+
+When cklicked again, the button looks again like default button.
+
+
+
+User Story:
+
+
+
+the user changes into Multi Mode by cklicking the button once, makes his changes on the data and leaves multi mode by klicking the button again."		Improvement	iteraplan PO	31/May/17 10:30 AM	16/Jun/17 5:06 PM																																																																				

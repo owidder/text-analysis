@@ -1,0 +1,31 @@
+Performance improvement when opening filter dialog	"With large data (3000+ building blocks), opening a filter dialog can take a few seconds.
+
+Improve this as follows:
+
+Remove number in the header of the manual-selection tab.
+
+Priority 1:
+
+* When opening the filter dialog, do not render the second tab for manual selection
+
+* Only when switching to the second tab, render it according to the then selected filters.
+
+
+
+Priority 2:
+
+* When switching to the manual selection tab, show a ""loading indicator"" until the manual selection list is completely rendered.
+
+* Use a similar loading indicatorlike in the diagrams, e.g. with another material component.
+
+
+
+Database with large data can be provided by [~cst]"		Improvement	iteraplan Speedbird	10/Jan/17 12:26 PM	13/Feb/17 3:18 PM														"10/Feb/17 8:34 PM;feca;I messed up on that last commit and accidentally commited some changes I shouldn't have... including the one that you are never supposed to check in...
+
+
+
+I recommited constants.js - in its pristine form.
+
+
+
+Again, sorry for the caused inconvenience "																																																						

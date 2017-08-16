@@ -1,0 +1,9 @@
+Erzeugung Mockup			Task	OpenSpeedMonitor	27/May/15 2:37 PM	27/May/15 5:45 PM														27/May/15 5:16 PM;rkr;Anbei die Montage der aktuellen und möglicher neuer Elemente	27/May/15 5:16 PM;rkr;Bitte um Kommentar und Anlage von Sub-Tasks	"27/May/15 5:37 PM;nku;Zu den Mockups:
+
+* Es soll zum Aufrufen der benutzerdefinierten Dashboards kein einfaches select geben, sondern ein dropdown button von bootstrap (siehe http://getbootstrap.com/2.3.2/components.html#buttonDropdowns)
+
+* Dieses muss für die RAW-Dashboards auf dem bestehenden Ergebnis-Dashboard eingebaut werden zwischen den Buttons ""Dashboard"" und ""Einzelergebnisse"". Für das CSI-Dashboard soll der neue dropdown Button den ""static sight""-Button ersetzen.
+
+* Zur Erstellung neuer Objekte der neuen UserspecificDashboard-Domain bauen wir gar keine neue (CRUD-)View. Wir fügen auf den beiden Dashboards (CSI und Ergebnis) jeweils einen Button ""aktuelle Sicht als Dashboard speichern"" hinzu. Dieser führt zur Persistenz eines neuen Dashboards. Dieese Funktion steht nur bei admin-Login zur Verfügung. Es öffnet sich ein Layer, in dem weitere Infos angegeben werden können (erst mal wahrscheinlich nur der Name). "	"27/May/15 5:39 PM;nku;Package für die neue Domain:
+
+de/iteratec/osm/report"																																																			

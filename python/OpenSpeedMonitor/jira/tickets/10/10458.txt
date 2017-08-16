@@ -1,0 +1,1 @@
+Fix: WeeklyPageMultiCSIGroupsIntTest		10316	Technical task	OpenSpeedMonitor	19/Aug/13 11:45 AM	20/Aug/13 3:52 PM														19/Aug/13 11:46 AM;rhe;Test muss laufen, sonst kann IT-8 nicht abgeschlossen werden																																																						

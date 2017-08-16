@@ -1,0 +1,21 @@
+Login with other Users is not possible at the moment 	"You cannot login with other users except system on the trunk.
+
+
+
+# Open the iteraplan nightly
+
+# Login with the login dates tom and ""password"" 
+
+# He changed the login data to ""system"" and ""password"" without a note
+
+
+
+{color:red}UPDATE: {color} Please activate the permission for the REST-API for all users, please remove the permission from all UIs (*:jsp-files). Please check, if this error still occurs.
+
+"		Bug	iteraplan Thunderduck	11/Jan/17 2:40 PM	23/Jan/17 1:20 PM														"13/Jan/17 8:44 AM;cst;The ""User"" needs the permission ""Access iteraplan via REST API"".
+
+With this permission the login is possible.
+
+
+
+But no hint is shown, that the permission will be needed. "																																																						

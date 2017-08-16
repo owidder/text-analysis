@@ -1,0 +1,9 @@
+Editing in list and SEV throws error even when saving the changes	"* List: Edit the name and save it. Unknown error occurs. Refresh the site -> Changes saved
+
+* SEV: same as before. Errorcode of undefined set. The editor pops up again Refresh the site -> changes saved.
+
+
+
+Error message coems from ipList-component.js l. 1442 (function failureHandler)
+
+when the function updateCurrentView  in commonHeaderController.js is called, this is undefined. therefore this.currentViewCtrl cannot be called which causes the behavior above for the list."		Bug	iteraplan Speedbird	11/Jul/17 4:16 PM	20/Jul/17 2:23 PM														19/Jul/17 1:53 PM;dmkh;[~pma], cannot reproduce																																																						

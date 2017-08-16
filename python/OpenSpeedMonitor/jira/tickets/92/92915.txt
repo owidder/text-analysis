@@ -1,0 +1,91 @@
+IFD Layout immediately deterministic after Layout-changes	"h1. Try again with a new try. Maybe a new version of GoJS helps here. Timebox: 1 PD
+
+
+
+*Summary:*
+
+The IFD layout should be immediately deterministic after Layout changes.
+
+
+
+*Reproduce:*
+
+* Open the Information Flow Diagram
+
+* Change Repulsion to (ca.) 100
+
+* Press ""F5""
+
+
+
+*Actual:*
+
+The position of the boxes and lines changes
+
+
+
+*Expected:*
+
+The position of boxes and lines does not change
+
+
+
+*Remarks:*
+
+* It is related to the ""randomNumberGenerator = null;"" in the ifdDiagramBuilder
+
+* First suspicion, if you change the layout, it activates the randomNumberGenerator somehow again. And it is random for the first reload, but for all reloads afterwards it is deterministic again."		Improvement	iteraplan PO	10/Aug/16 10:48 AM															"08/Sep/16 1:48 PM;fka;Might be a GoJs bug, please have a look at the code first
+
+
+
+It worked correctly before we added the control of the three layouting parameters"	08/Sep/16 3:12 PM;fka;Tested with 5.2, the layout is stable there	"20/Sep/16 12:49 PM;dmkh;Maybe this can help:
+
+{code}
+
+informationFlowDiagram.addDiagramListener(""LayoutCompleted"", function(e){
+
+        e.diagram.layout.randomNumberGenerator = null;        
+
+    });
+
+{code}"	"27/Sep/16 3:36 PM;dmkh;Somehow {{randomNumberGenerator}} becomes defined again after changing repulsion in toolarea and updating layout properties (so the problem is not in refreshing of the page, the diagram is already displayed randomly after changing layou properties). I used diagram listeners to catch the event were {{randomNumberGenerator}} becomes defined, also in each diagram listener I manually have set it to {{null}}. But Anyway, after updating layout properties of IFD diagram (in {{this.updateLayout}} method of {{ifdDiagramBuilder.js}}) {{randomNumberGenerator}} becomes defined again (""ViewportBoundsChanged"" event in attached screenshot). Unfortunately I can't find out the issue, because something happens deep inside of GoJS code. 
+
+
+
+So, I suggest to ask GoJS support what is happening when some value of {{layout}} property of diagram (e.g. ""{{defaultElectricalCharge}}"") is updated?
+
+What chain of events is ran by GoJS?
+
+Where {{randomNumberGenerator}} can be defined again and can we avoid this?
+
+"	"29/Sep/16 4:40 PM;msr;Comment from GoJS support:
+
+""Setting ForceDirectedLayout.randomNumberGenerator to null causes that property to get an instance of our internal random number generator class so that the numbers generated are repeatable.  However, that null property value is not replaced immediately, but only when needed.  That time may come at various times, depending on the input graph.
+
+
+
+I believe it’s important for the property to be an instance of a random number generator so that repeated performance of the ForceDirectedLayout continue in a repeatable manner.  I’m not sure why we didn’t immediately replace the null value when the property value changes from non-null to null, but that should not make any difference to the layout’s behavior.
+
+
+
+You should make sure that you set the ForceDirectedLayout.randomNumberGenerator property to null only once.  If you change it to null later you will be re-seeding the generator back to the beginning again.
+
+
+
+You can supply your own JavaScript object with a random() function defined on it, as you have already read at http://gojs.net/latest/api/symbols/ForceDirectedLayout.html#randomNumberGenerator."""	03/Oct/16 4:56 PM;dmkh;After defining a custom randomNumberGenerator function, result is the same – other diagram after changing layout properties in toolarea and refreshing the page. BUT the value of customly defined randomNumberGenerator remains the same. It is strange, and is also an argument  for internal instance of randomNumberGenerator being used.	"05/May/17 4:12 PM;roia;Results are the same with GoJS version *1.7.9*
+
+
+
+When diagrams are loaded using the same URLs they look the same in Firefox and IE-10 (initial load). If user changes layout slider(s) and then refreshes the page, the diagram looks different. But when refreshed the initial layout will be the same in Firefox and IE. In Chrome it is different than in IE and Firefox, but again, remains unchanged upon page refresh (but different then in IE/FF).
+
+
+
+Like mentioned above, if the randomNumberGenerator object always produces the same fixed number, the behavior of a diagram is still not deterministic enough - initial load of a diagram is deterministic (in scope of the same browser), but it is not after layout parameter changes.
+
+
+
+ We should probably send the code sample to GoJS support.
+
+
+
+*Another (important?) note:* open the default diagram, change some slider a few times (e.g., Repulsion) and then return it to the initial value (150). Result - diagram is quite different than at the beginning. You can see this effect on the ForceDirectedLayout demo page too [http://gojs.net/latest/samples/fdLayout.html] – make a screenshot of initial page then change Electrical Charge to 15 then change back to 150."																																																

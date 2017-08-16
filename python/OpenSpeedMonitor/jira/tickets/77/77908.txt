@@ -1,0 +1,1 @@
+Initialisierung des Proxies korrigieren	Wenn der Proxy mit seiner Default-Konfiguration intialisiert wird, kann er unter Umstanden in einen fehlerhaften Zustand geraten, in dem er nicht zu benutzen ist. 	75551	Sub-task	secureCodeBox	22/Mar/16 9:30 AM	22/Mar/16 3:11 PM																																																																				

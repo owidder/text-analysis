@@ -1,0 +1,2 @@
+UI-Improvement in Massupdate	"Beim Massenupdate steht bei der Auswahl der zu pflegenden Merkmale, Eigenschaften und Beziehungen das anzukreuzende Kasterl auf der rechten Seite, wohingegen bei allen anderen Auswahlen es links vom Text steht. Das führt manchmal dazu, dass man das falsche Merkmal ankreuzt.
+Sollte vereinheitlicht werden!"		Improvement	iteraplan PO	17/Nov/11 2:43 PM	09/Dec/11 8:55 AM																																																																				

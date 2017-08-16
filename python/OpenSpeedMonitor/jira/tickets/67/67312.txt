@@ -1,0 +1,11 @@
+unit tests show error when reactor test is not on last position	"if the unit test for the reactor is not on last position in karma conf the following error occurs:
+
+""Some of your tests did a full page reload!"" 
+
+
+
+analyze this problem and find possible solutions.
+
+
+
+Also test changes done here in all supported browsers."		Bug	iteraplan PO	17/Dec/15 1:32 PM	08/Feb/16 4:11 PM					Test									17/Dec/15 5:31 PM;lwi;the problem really was, that a page reload was done during the reactor test. but you could only notice this problem, if this test is NOT on last position of the karma tests. if it was on last position, everything was as usual. i changed the service.reactor.js to not make a page reload. please verify that the file downloading still works. i edited the unit test but now the coverage is not 100% anymore. 	08/Jan/16 4:04 PM;msr;"Upload file" in Reactor does not work in IE 9.	05/Feb/16 11:20 AM;lwi;new ticket for upload file bug: see ITERAPLAN-4344																																																				

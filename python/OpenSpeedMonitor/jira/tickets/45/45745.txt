@@ -1,0 +1,9 @@
+Wrongly displayed date formats after adding a column in the result view	"To Reproduce:
+- set locale = Deutsch
+- go to 'Tabellarische Auswertungen'
+- create a Query with a few results
+- add column Development(End)
+The default shown value ""von"" and ""bis"" is correctly formatted(dd.mm.yyyy) the new added column is formatted in the pattern yyyy-mm-dd.
+
+Expected behaviour:
+Date attribute values are shown in the locale-specific date format and are consistent with runtime period date formats."		Bug	iteraplan PO	04/Jun/13 6:19 PM	12/Jun/13 4:53 PM					date	format								12/Jun/13 4:53 PM;kgo;Works fine.																																																						

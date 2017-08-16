@@ -1,0 +1,5 @@
+Date Picker not working	"The Date Picker is partially or completely not working, depending on Browser.
+The browser IE 10/11 and Firefox must be supported.
+Actual: No adjustmend of date possible
+Expected: Date can be edited via Inputfield or by clicking calender-button and selecting day by click.
+Please fix the problem."		Bug	iteraplan PO	23/Apr/15 2:30 PM	25/Apr/15 9:22 AM																																																																				

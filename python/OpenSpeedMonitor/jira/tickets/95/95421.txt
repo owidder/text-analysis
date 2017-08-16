@@ -1,0 +1,3 @@
+Test fixen	"Seit Erstellung/Anpassung des FetchBatch-Mechanismus hängt folgender Test:
+
+'de.iteratec.osm.da.wpt.WptDetailResultDownloadServiceTest'"		Task	OpenSpeedMonitor	07/Sep/16 8:15 AM	07/Sep/16 11:56 AM														07/Sep/16 11:56 AM;msk;Ist kaputt gegangen, als das Queueing umgestellt wurde.																																																						

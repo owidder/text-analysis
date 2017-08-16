@@ -1,0 +1,13 @@
+Tags für Docker-Image	"Wie sollen die Docker-Images betaggt werden?
+
+
+
+Ich schlage folgendes vor:
+
+:latest zeigt (wie immer) auf die aktuellste Release-Version
+
+:latest-develop zeigt auf die aktuellste Develop-Version
+
+
+
+Wollen wir Docker-Images für ältere Versionen anbieten?"		Task	OpenSpeedMonitor	13/Jul/16 12:01 PM																																																																					

@@ -1,0 +1,1 @@
+ElasticSearch als eigenständigen PersistenceProvider implementieren		51768	Sub-task	secureCodeBox	24/Jul/15 8:04 PM	19/Jun/16 1:28 PM																																																																				

@@ -1,0 +1,5 @@
+N3CD Filter for arbitrary value is not serialized	"When I add a filter to a text attribute in the N3CD and choose arbitrary value the filter is applied. However, when i reload the page (by pasting the url), then an empty page is shown.
+
+
+
+The reason for this is, that the filter with the arbitrary value is not serialized properly and thus cannot be deserialized. This is caused by singleTextFilter.toUriPart() as the arbitrary value is not recognized as true in the if statement"		Bug	iteraplan PO	22/Apr/16 11:44 AM	09/May/16 3:00 PM																																																																				

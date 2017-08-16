@@ -1,0 +1,17 @@
+NCD: UI bug with menu for coloring in legend	"Before
+Use any coloring for inenr or outer element
+
+Steps to reproduce:
+1. Navigate to settings line for used coloring in the legend
+2. Make primary click
+Actual result: Menu appears in the right side of legend and bad vissible
+Expected: Menu should be good visible"		Bug	iteraplan PO	10/Feb/15 12:15 PM	01/Jun/15 1:21 PM														"15/Apr/15 10:39 AM;wfr;Recommendation: fix now
+
+AND
+reproduce if issue still exists
+
+Menu not usable if not visible and no workaround because there is no ""scroll more to the right"" right of the legend.
+
+Alex(or Andrew?) showed me a fix to his context menu that makes the menu show left of the click position if there is no horizontal space to the right of it.
+Maybe this was only for the _second_ level submenu, and the first level context menu opens always to the right of the click.
+But this should not be that hard for Alex."	15/Apr/15 1:24 PM;msr;First analyse and check, if workaround exists.	01/Jun/15 1:21 PM;sfe;Seems to have been fixed already																																																				

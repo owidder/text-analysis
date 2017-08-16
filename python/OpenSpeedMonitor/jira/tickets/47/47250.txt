@@ -1,0 +1,16 @@
+Tabellarische Auswertungen: Neuer Eigenschaftenfilter beeinflusst bestehende	"In der Funktion ""Tabellarische Auswertungen"" führt das Hinzufügen einer weiteren Filtereigenschaft dazu, dass die Checkbox aller bereits existierenden Filtereigenschaften in die zweite Zeile springt und damit die Abfrage zerstört.
+
+Schritte zum Reproduzieren:
+1. Öffnen der Seite ""Tabellarische Auswertungen""
+2. Auswertungen für Objekte ""Informationssysteme"" auswählen
+3. Unter ""Eigenschaften der gesuchten Informationssysteme"" das Merkmal ""Name"" auswählen und ein Element der vorhanden Namen aus der Dropdownbox auswählen
+4. Durch Klicken auf ""und"" eine weitere Eigenschaft hinzufügen
+5. Das weitere Merkmal ""Version"" auswählen
+
+Erwartetes Ergebnis:
+Das 2. Merkmal steht auf Version und das 1. Merkmal ""Name"" bezieht sich auf das ausgewählte Element
+
+Tatsächliches Ergebnis:
+Für das 1. Merkmal ""Name"" springt der selektierte Radiobutton auf das Freitextfeld; damit werden alle Informationssysteme gefunden
+
+Das Verhalten ist auch in den Online-Demos (http://www.iteraplan.de/editionen/online-demo/) reproduzierbar."		Bug	iteraplan PO	22/Dec/14 1:55 PM	17/Feb/15 10:51 AM														17/Feb/15 10:51 AM;sfe;Was fixed in 3.4.1																																																						

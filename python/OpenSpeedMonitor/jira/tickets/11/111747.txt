@@ -1,0 +1,59 @@
+Refactor Level Filter in LSD	"In the LSD the level filters are at the moment updated for new minimum and maximium values whenever new values for the levelfilter are set. Refactor this to create new level filters when the building block type is changed.
+
+
+
+The idea of [~viol] was to use a class like this:
+
+{code}
+
+LSDConfiguration.prototype.initLevelFilters = function () {
+
+    //init level filters
+
+    var extContent = getHierarchyLevelFilterExtremes(this.dataModel.getType(this.getContentType()).items());
+
+    this.contentLevelFilter = new HierarchyLevelFilter(false, this.translate, extContent);
+
+
+
+    var xAxisType = this.metamodel.typeBy(this.getContentType()).getTargetTypeByPath(this.getXAxisProperty());
+
+    var xAxisPersistentName = xAxisType ? xAxisType.persistentName : null;
+
+
+
+    if (xAxisPersistentName) {
+
+        var xAxisItems = this.dataModel.getType(xAxisPersistentName).items(this.contentCombinedFilter.filterWithoutLevelFilterAsPredicate(), true);
+
+        var extX = getHierarchyLevelFilterExtremes(xAxisItems);
+
+        this.xAxisLevelFilter = new HierarchyLevelFilter(true, this.translate, extX);
+
+    }
+
+
+
+    var yAxisType = this.metamodel.typeBy(this.getContentType()).getTargetTypeByPath(this.getYAxisProperty());
+
+    var yAxisPersistentName = yAxisType ? yAxisType.persistentName : null;
+
+
+
+    if (yAxisPersistentName) {
+
+        var yAxisItems = this.dataModel.getType(yAxisPersistentName).items(this.contentCombinedFilter.filterWithoutLevelFilterAsPredicate(), true);
+
+        var extY = getHierarchyLevelFilterExtremes(yAxisItems);
+
+        this.yAxisLevelFilter = new HierarchyLevelFilter(true, this.translate, extY);
+
+    }
+
+};
+
+{code}
+
+
+
+And call it at all the classes where the types are reset."		Bug	iteraplan Speedbird	14/Feb/17 3:31 PM	23/Feb/17 9:26 AM														21/Feb/17 6:59 PM;viol;Please add revision #6073																																																						

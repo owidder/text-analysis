@@ -1,0 +1,45 @@
+Import: double standard in validation and execution for some db collations	"Situation:
+
+In our documenation we recommend different collations for different database systems:
+
+* MySQL: utf8_general_ci which is accent insensitive
+
+* SQL Server: Latin1_General_CI_AS which is accent sensitive
+
+* Oracle: We don't make any statement at all
+
+
+
+Imagine two building blocks with the following names:
+
+* File System
+
+* File Systém
+
+
+
+In MySQL these two names are considered identical, thus a unique constraint is violated if you try to create two building blocks with those names and the same type.
+
+In SQL Server the names are considered different from each other, thus you can create two building blocks of the same type with those names.
+
+
+
+During import, in the validation steps, we follow the ""accent sensitive"" way.
+
+This means in case a MySQL database is used:
+
+It is possible that an imported file is reported as valid in step 4 of the import while it triggers database constraints in step 5 of the import.
+
+
+
+Possible solutions:
+
+* Change our collation recommendations to be consistent, and if necessary change the validation during import and other ways to edit the data to reflect the database collation recommendation.
+
+* Change the validation (during import and other ways to edit the data) to follow the stricter collation and offer a migration procedure to customers
+
+* Other ideas?
+
+
+
+This issue is primarily for analyzing and deciding on what to do. Depending on that decision it may also be used for actual implementation."		Improvement	iteraplan PO	15/Oct/15 3:45 PM						collation	import								11/Nov/15 11:08 AM;msr;[~fka] : Use accent sensitive. Both "File System" and "File Systém" should be possible.																																																						

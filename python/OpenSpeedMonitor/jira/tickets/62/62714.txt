@@ -1,0 +1,17 @@
+Create new filtering test case in NCD	"please edit the e2e-test tracability excel sheet located in e2etest subfolder after implementing the tests
+
+
+
+
+
+
+
+create the following new test cases for outer items:
+
+- filter by ""show with text properties -> version"" 
+
+
+
+one new test case for inner items:
+
+- show properties of ..."	62712	Sub-task	iteraplan PO	06/Nov/15 10:46 AM	18/Jan/16 9:42 AM					NCD	Test								18/Jan/16 9:42 AM;msr;Won't fix SVG-NCD-Tests.																																																						

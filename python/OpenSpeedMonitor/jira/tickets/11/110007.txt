@@ -1,0 +1,3 @@
+Bar Chart: Put some horizontal whitespace between colored bar-sections	"*Summary:*
+
+After activating the coloring in the Bar Chart, please put some whitespace between the different colored bar-sections."		Improvement	iteraplan Speedbird	30/Jan/17 9:05 AM	15/Feb/17 3:11 PM																																																																				

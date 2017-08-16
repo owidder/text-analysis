@@ -1,0 +1,4 @@
+Bad layout in nesting cluster diagrams with little content	"If a nesting cluster diagram is created which contains only few boxes the layout is ""broken"" (see attachement).
+
+A possible example for such a diagram is clustering of interfaces according to architectural domains."		Improvement	iteraplan PO	18/Nov/11 2:12 PM	30/Dec/15 2:32 PM					cluster	diagram	nesting	VBB					Enterprise Edition Build-v2.10.SNAPSHOT-r14709 (2011-11-18-04-31-52), Firefox 8.0	"01/Aug/14 6:11 PM;fka;Is this still applicable?
+If yes, implement a minimum size of the diagram."																																																						

@@ -1,0 +1,59 @@
+Exception bei Aufruf des "Last Runs" über Jobs	"Ich habe die Jobs gefiltert und bei einem auf die Zeitangabe bei ""Last Run"" geklickt.
+
+Dabei bin ich auf folgende Seite gekommen:
+
+http://openspeedmonitor.wpt.iteratec.de/tabularResultPresentation/showListResultsForJob?selectedTimeFrameInterval=0&job.id=95&from=04.07.2016&fromHour=11%3A37&to=05.07.2016&toHour=11%3A25
+
+
+
+{noformat}
+
+org.codehaus.groovy.grails.web.pages.exceptions.GroovyPagesException: Error processing GroovyPageView: Error executing tag <g:render>: Index: 3, Size: 3
+
+	at grails.plugin.springsecurity.web.filter.GrailsAnonymousAuthenticationFilter.doFilter(GrailsAnonymousAuthenticationFilter.java:53)
+
+	at grails.plugin.springsecurity.web.authentication.RequestHolderAuthenticationFilter.doFilter(RequestHolderAuthenticationFilter.java:53)
+
+	at grails.plugin.springsecurity.web.authentication.logout.MutableLogoutFilter.doFilter(MutableLogoutFilter.java:62)
+
+	at com.googlecode.psiprobe.Tomcat70AgentValve.invoke(Tomcat70AgentValve.java:38)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+Caused by: org.codehaus.groovy.grails.web.taglib.exceptions.GrailsTagException: Error executing tag <g:render>: Index: 3, Size: 3
+
+	at gsp_openSpeedMonitor_tabularResultPresentationlistResults_gsp$_run_closure2.doCall(gsp_openSpeedMonitor_tabularResultPresentationlistResults_gsp.groovy:93)
+
+	at gsp_openSpeedMonitor_tabularResultPresentationlistResults_gsp.run(gsp_openSpeedMonitor_tabularResultPresentationlistResults_gsp.groovy:146)
+
+	... 7 more
+
+
+
+Caused by: java.lang.IndexOutOfBoundsException: Index: 3, Size: 3
+
+	at java.util.LinkedList.checkElementIndex(LinkedList.java:553)
+
+	at java.util.LinkedList.get(LinkedList.java:474)
+
+	at java.util.Collections$CheckedList.get(Collections.java:2516)
+
+	at gsp_openSpeedMonitor_tabularResultPresentation_pagination_gsp.run(gsp_openSpeedMonitor_tabularResultPresentation_pagination_gsp.groovy:36)
+
+	... 9 more
+
+{noformat}
+
+
+
+"		Bug	OpenSpeedMonitor	05/Jul/16 1:07 PM	12/Sep/16 3:47 PM														"12/Sep/16 3:47 PM;msk;Das Problem war, dass das die Anzahl der Pages falsch berechnet wurde. Die Formel war AnzahlAllerElemente/AnzahlElementeProPage. Falls das Ergbnis hier eine gerade Zahl ist, wurde eine Page zuviel aufgemacht, für die es gar keine Elemente gibt.
+
+
+
+Ich habe außerdem einen Link zur ersten und zur letzten Page hinzugefügt, damit man bei vielen Elementen nicht so viel blättern muss."																																																						

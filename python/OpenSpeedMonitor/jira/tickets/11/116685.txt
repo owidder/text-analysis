@@ -1,0 +1,27 @@
+Create sceleton for Custom Dashboard	"*Summary:*
+
+ Create a sceleton implementation for Custom Dashboards, i.e.
+
+ * an html-page which can include multiple diagrams as SVG
+
+ * text input box for XWiki-Syntax
+
+ * a loading indicator on inital opening
+
+ * no legend
+
+
+
+{color:#ff0000}UPDATE: {color}Textarea should be expandable when clicking on it. 
+
+
+
+{color:#ff0000}UPDATE: {color}Put button for adding diagram on top right corner of the textarea. Use ""poll"" icon from material desing.
+
+
+
+{color:#ff0000}UPDATE: {color}Text in the input should start from the row under the icon 
+
+
+
+{color:#ff0000}UPDATE: {color}Clear button opens confirmation dialog"		New Feature	iteraplan Speedbird	27/Mar/17 3:53 PM	05/Apr/17 5:08 PM														05/Apr/17 4:18 PM;dmkh;Review is done, two comments are here: https://iteraweb.iteratec.de/fisheye/cru/IP-485																																																						

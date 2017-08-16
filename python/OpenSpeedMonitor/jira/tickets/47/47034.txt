@@ -1,0 +1,17 @@
+Unexpected behavior during imports	"The following steps are made:
+
+# Download all Information Systems (partial download)
+# Select the downloaded file for upload without changing it. Strategy “additive”.
+# Upload the file
+
+Expected behavior: the file is imported (uploaded) successfully. 
+
+Actual behavior: the import fails sometimes, sometimes it’s successful. The error message is “Import process terminated with errors. No changes were made to the database.” Especially a repeated import of the same file seems to cause errors.
+
+The behavior has to be tested with other strategies as well. 
+
+------
+May be fixed already in ITERAPLAN-2783, but please verify.
+"	47147	Sub-task	iteraplan PO	08/Oct/14 1:02 PM	16/Dec/14 9:00 AM					ie11	import							"nightly build:  Enterprise Edition Build-v3.4.SNAPSHOT-r23795 (2014-10-08-03-44-47), IE 11 (reported)
+tested with IE 11.0.15"	"13/Oct/14 2:38 PM;sfe;This is an issue with IE11 which does not treat certain redirect responses correctly.
+We do currently not support IE11, which is why this issue will be marked as improvement to be solved at a later time."	15/Dec/14 4:11 PM;msr;Tested several times with all import strategies in English & German. All ok.																																																					

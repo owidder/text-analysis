@@ -1,0 +1,41 @@
+error when using "is not" in a query	"using the ""is not"" condition in a query of a spreadsheet report (see attached fig. 1) yields an error message (see attached fig. 2).  The same query but using the ""is"" condition works fine and yields 24 hits (see attached fig. 3).  If this condition is removed entirely from the query, it return with 114 hits (see attached fig. 4).  Therefore, we expect the query with the ""is not"" condition to return 90 hits, which is certainly not a problem due to volume.  Instead, we consistently get the message ""a general technical error has occured"".  This message does not explain why.
+
+
+
+the error message does have the blue button to create a link to a problem report.  as a power user, however, i do not have system access to view the report and, since we often have to restart the application in order to overcome its shortcomings, the report may no longer exist, according to the message in the email.
+
+
+
+please advice on how to fix this problem."		Technical question	iteraplan Support	09/Mar/16 11:29 PM	23/Mar/16 10:13 AM														"09/Mar/16 11:29 PM;hannes.callisen@boehringer-ingelheim.com;
+
+[^is_not fig 1.pdf] _(39 kB)_
+
+[^is_not fig 2.pdf] _(31 kB)_
+
+[^is_not fig 3.pdf] _(41 kB)_
+
+[^is_not fig 4.pdf] _(43 kB)_"	"10/Mar/16 5:00 PM;tam;Hello Hannes,
+
+
+
+I couldn't to reproduce the issue you have described. 
+
+
+
+That's why we need either the problem report or logs (iteraplan and tomcat logs) from the time period when this issue occured to analyse this problem.
+
+
+
+Could you please provide them? 
+
+
+
+Thank you in advance.
+
+
+
+Timur"	"16/Mar/16 2:30 PM;richard.hermle@boehringer-ingelheim.com;See log file
+
+[^iteraplan-5.1.0.log] _(242 kB)_"	"17/Mar/16 4:08 PM;tam;I analysed the logs. It seems, it's the already known problem - restrictions of the MS SQL Server RPC request, that only 2100 Parameters are allowed in the where clause.
+
+The fix for this issue will come in the iteraplan 5.2."	17/Mar/16 10:08 PM;hannes.callisen@boehringer-ingelheim.com;I don't understand how the difference of using "is" and "is not" is related to exceeding the limit on parameters, but then I don't know how it was programmed.  I'm looking forward to test the fix in the new version.																																																		

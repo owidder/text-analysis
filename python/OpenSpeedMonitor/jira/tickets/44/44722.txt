@@ -1,0 +1,251 @@
+Anwendung Migrations-Skript auf die OTTO-DB vor Deployment	Es ist zu klären, ob wir Arbeitspaket 1 inkl. Update zur Grails-Version 2.5 so ausrollen können, oder ob wir eine DB-Migration benötigen. 		Task	OpenSpeedMonitor	23/Jun/15 11:46 AM	12/Nov/15 2:51 PM														"20/Oct/15 6:34 PM;nku;Es wird keine Migration des Schemas erforderlich sein. Die Daten müssen aktualisiert werden, sonst sehen wir keine bestehenden Ergebnisse mehr auf dem Dashboard. Hier die Release notes des neuen OSM-Releases:
+
+
+
+In event result dashboard, results to show in chart can be limited by internet connectivity now. This connectivity is persisted for every incoming result with this version of OpenSpeedMonitor.
+
+So to show results measured with a previous OpenSpeedMonitor version correctly, you will have to add this connectivity to exisiting results. 
+
+
+
+1. Add custom connectivity names in jobs with a custom connectivity.
+
+
+
+    For these Jobs a name for the custom connectivity has to be defined now. So you need to add these names manually. With {code}select id,label from job where custom_connectivity_profile=1;{code} you get all affected jobs. You can add names for the custom connectivity for the jobs in OpenSpeedMonitors job/edit view of respective jobs.
+
+
+
+2. Set connectivity for event results measured with a custom connectivity
+
+
+
+        {code}update event_result er 
+
+        inner join job_result jr on er.job_result_id=jr.id
+
+        inner join job j on jr.job_id=j.id
+
+        set er.custom_connectivity_name=j.custom_connectivity_name, er.no_traffic_shaping_at_all=0
+
+        where j.connectivity_profile_id is null and cast(j.no_traffic_shaping_at_all as unsigned)=0;{code}
+
+
+
+3. Set connectivity for event results measured with a predefined connectivity
+
+
+
+        {code}update event_result er 
+
+        inner join job_result jr on er.job_result_id=jr.id
+
+        inner join job j on jr.job_id=j.id
+
+        set er.connectivity_profile_id=j.connectivity_profile_id, er.no_traffic_shaping_at_all=0
+
+        where j.connectivity_profile_id is not null;{code}
+
+
+
+4. Set connectivity for event results measured without traffic shaping at all
+
+
+
+        {code}update event_result er 
+
+        inner join job_result jr on er.job_result_id=jr.id
+
+        inner join job j on jr.job_id=j.id
+
+        set er.no_traffic_shaping_at_all=1
+
+        where cast(j.no_traffic_shaping_at_all as unsigned)=1;{code}
+
+
+
+Zusätzlich müssen die Passwörter aller user umgeschrieben werden (SHA-512 statt SHA-256):
+
+
+
+        {code}update user set password=SHA2('[user-password]',512) where id=[user-id];{code}
+
+
+
+"	"09/Nov/15 5:14 PM;nku;*Test-Deployment auf dem Projekt-Server (Hetzner Root-Server EX40-SSD):*
+
+
+
+* * Einspielen Dump 20151108_iteraspeedmonitor.sql (3,9 GB).
+
+-> 24 Minuten
+
+* Start des OSM Version 3.2.0
+
+14:50 -> 16:00 Uh
+
+* SQL-Migration
+
+Statement 1: 30 sec.
+
+Statement 2:  sec.
+
+{code}
+
+ERROR 1205 (HY000): Lock wait timeout exceeded; try restarting transaction
+
+ERROR 2006 (HY000): MySQL server has gone away
+
+No connection. Trying to reconnect...
+
+{code}
+
+Statement 3:  sec."	"10/Nov/15 1:50 PM;nku;*Test-Deployment Lokal auf meinem Laptop:*
+
+
+
+_Ohne Constraints im EventResult:_
+
+
+
+* Einspielen Dump 20151108_iteraspeedmonitor.sql (3,9 GB).
+
+->  64 Minuten
+
+* Start des OSM Version 3.2.0
+
+14:10 Uhr -> 16:32 Uhr
+
+-> 2 Std 22 Min
+
+* SQL-Migration
+
+Statement 1: 34 Sekunden
+
+Statement 2: Lost Connection to mysql  server during query (from workbench)
+
+Statement 3: "	"10/Nov/15 3:23 PM;nku;*Test-Deployment auf otto-wpt03 (Hetzner Root-Server EX40-SSD):*
+
+
+
+_Mit Constraints und indices in event_result:_
+
+
+
+* Einspielen Dump 20151108_iteraspeedmonitor.sql (3,9 GB).
+
+-> 23 Minuten
+
+* Start des OSM Version 3.2.0
+
+16:11 Uhr -> 17:09
+
+-> 58 Minuten
+
+* SQL-Migration
+
+Statement 1: 16 Sekunden
+
+Statement 2: 30 Minuten
+
+Statement 3: 0,7 Sekunden
+
+
+
+_Mit stark vereinfachten Constraints in event_result:_
+
+
+
+* Einspielen Dump 20151108_iteraspeedmonitor.sql (3,9 GB).
+
+-> ? (sollte kein Unterschied sein)
+
+* Start des OSM Version 3.2.0
+
+22:00 Uhr -> 22:55 Uhr
+
+-> 55 Minuten
+
+* SQL-Migration
+
+Statement 1: 17 Sekunden
+
+Statement 2: 31 Minuten
+
+Statement 3: 1,6 Sekunden
+
+
+
+_Mit stark vereinfachten Constraints in event_result und ohne DB-Indices:_
+
+
+
+* Einspielen Dump 20151108_iteraspeedmonitor.sql (3,9 GB).
+
+-> 21 Minuten
+
+* Löschen Indices in der event_result-Tabelle
+
+-> 0,08 Sekunden
+
+* Start des OSM Version 3.2.0 ohne constraints und indices in EventResult
+
+9:42 Uhr -> 10:30 Uhr
+
+-> 48 Minuten
+
+* SQL-Migration
+
+Statement 1: 17 Sekunden
+
+Statement 2: 30 Minuten
+
+Statement 3: 0,26 Sekunden
+
+* Stop OSM und Start mit Constraints und Indices (letztere müssen dann in der DB erzeugt werden)
+
+-> 2 Minuten"	"11/Nov/15 11:46 AM;nku;Die manuelle Datenmigration werden wir auf einer separaten Maschine vornehmen (otto-wpt-03).
+
+Die Versuche auf diesem performanten Server haben ergeben, dass weder das Herausnehmen der Constraints, noch das Löschen der Indices im EventResult vor der Migration einen deutlichen Performance-Vorteil bringen (siehe Kommentare in diesem Issue). 
+
+Dasher werden wir die Migration mit constraints und mit Indices vornehmen.
+
+
+
+Deployment-Plan:
+
+
+
+
+
+||Aktion||Erwartete Zeit in Minuten||Tatsächliche Zeit in Minuten||
+
+|Ziehen eines live-Dumps|2|3|
+
+|Übertragen des Dumps auf Maschine otto-wpt-03|6|8|
+
+|Einspielen des Dumps|25|20|
+
+|Start OSM|60|80|
+
+|Manuelles SQL-Statement 1|0,5|0,5|
+
+|Manuelles SQL-Statement 2|30|34|
+
+|Manuelles SQL-Statement 3|0|0|
+
+|Ziehen eines Dumps der migrierten DB|2| |
+
+|Übertragen des Dumps auf die Ziel-Maschine|6| |
+
+|Stoppen + Undeployen des OSM|1| |
+
+|Alte DB dropen|0| |
+
+|Neuen, migrierten Dump einspielen|25| |
+
+|Deployment OSM Version 3.2.0 via Jenkins-Job|3| |
+
+|*Summe Datenverlust*|*160,5*| |
+
+|*Summe Downtime*|*29*| |"																																																		

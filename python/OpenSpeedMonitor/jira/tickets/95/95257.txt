@@ -1,0 +1,19 @@
+Add saved query name and save buttons with dialog to list and diagram pages	"# Add saved query name in the header: directly next to the building block name/report category, truncated to 30 characters with ...
+
+# Add buttons in the header: directly next to the saved query name, only show buttons for list and diagram views:
+
+## ""Save As..."" button: Opens a modal dialog for saving the saved query with its metainformation (Translation: ""Speichern unter...)
+
+## ""Save"" button: only shown if a saved query is loaded; saves the query immediately without change of name and description
+
+# Build modal dialog
+
+## See [^Modal_dialog_Save_query_as.jpg] but use Angular Material Style
+
+## Fields: name (input, max 255 characters), description (textarea, max 4000 characters)
+
+## ""Save"" button
+
+## ""Discard"" button
+
+## Because the name is unique if a 409 (Conflict, ""Name already exists"") is returned by the REST API show a warning to the user below the name input field and disable save button."		New Feature	iteraplan Quickfox	05/Sep/16 4:02 PM	30/Sep/16 3:53 PM																																																																				

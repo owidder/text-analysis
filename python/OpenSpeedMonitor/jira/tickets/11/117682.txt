@@ -1,0 +1,9 @@
+Response of MicroEdit when adding two a second parent	"Take a Information System that has a parent and try to add a second one via MicroEditRestAPI.
+
+
+
+Expected behaviour: the response has status code 400
+
+
+
+Current behaviour: Status code 200, but no changes in the database"		Bug	iteraplan PO	04/Apr/17 2:59 PM																																																																					

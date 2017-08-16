@@ -1,0 +1,13 @@
+iTURM does not work on MySQL with binary logging enabled	"iTURM fails to create or delete users and roles if the underlying MySQL DB has the system option {{log_bin}} enabled and {{binlog_format}} is set to {{STATEMENT}}. Each such operation causes following error message:
+{quote}
+Beim Kommunizieren mit der Datenbank ist ein Fehler aufgetreten. Mehr
+java.sql.SQLException: Cannot execute statement: impossible to write to binary log since BINLOG_FORMAT = STATEMENT and at least one table uses a storage engine limited to row-based logging. InnoDB is limited to row-logging when transaction isolation level is READ COMMITTED or READ UNCOMMITTED.
+{quote}
+
+The reason is that class {{BaseDao}} contains a statement to increase the tx isolation level
+{code}conn.setTransactionIsolation(Connection.TRANSACTION_READ_COMMITTED);{code}
+
+Given the simplicity of iTURM, setting an increased tx isolation level is sheer overkill.
+
+While fixing that class, also look into simplifying the whole datasource handling with default Spring tools."		Bug	iteraplan PO	26/Nov/13 6:16 PM	07/Mar/14 1:28 PM					iturm	mysql								04/Mar/14 3:25 PM;sry;ok, finished introducing Spring's JdbcTemplate. This simplifies the whole datasource handling quite a bit and makes it easier to read and maintain.	"07/Mar/14 1:28 PM;gph;Could reproduce the problem and the solution.
+Code looks good."																																																					

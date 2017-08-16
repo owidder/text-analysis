@@ -1,0 +1,8 @@
+Jenkins job "test_performance" fails	"Jenkins job ""test_performance"" fails since October 31st.
+Before that it seems the results were not correct either, for some time, as the import for trunk was reported to last only few seconds.
+
+I suspect the changes to asynchronous import processes are at least part of the reason.
+
+Please investigate why the job fails and fix it. Make sure it shows plausible numbers for trunk."		Bug	iteraplan PO	05/Nov/14 3:59 PM	17/Nov/14 4:08 PM					jenkins	performance	test							"17/Nov/14 4:07 PM;fam;Code adjustment okey.
+Since last commit, the jenkins job was running 5 times without failure.
+Ticket closed."																																																						

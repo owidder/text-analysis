@@ -1,0 +1,1 @@
+Rename "Graphik-Reaktor" -> "Graphics Reactor"	The German locale should also use the English term		Improvement	iteraplan PO	26/Apr/16 11:20 AM	26/Apr/16 1:24 PM																																																																				

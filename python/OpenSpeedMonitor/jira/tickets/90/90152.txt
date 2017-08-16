@@ -1,0 +1,125 @@
+Ccustomization of PROD and DEV instances	"Hi all,
+
+
+
+we do have a 2-system iteraplan landscape in order to separate development/testing activities from the productive environment.
+
+Separat tomcats, separate db schemas.
+
+
+
+I would appreciate a possibility to set some GUI attributes (logos, background colors, etc...) to make it clear to the enduser in which environment he's currently working. So e.g. a background in ugly-green and a logo indicating ""this is the test system"" ... that's what we need.
+
+
+
+Thanks for your support...
+
+
+
+   Christof Ettl
+
+___________________________________
+
+
+
+- Senior Architect / Chief Software Engineer
+
+
+
+  CSFP-Architecture
+
+
+
+Takeda GmbH
+
+Byk-Gulden-Str. 2
+
+78467 Konstanz, Germany
+
+
+
+Phone +49 (0) 7531 84-4903
+
+Mobile +49 151-58066709
+
+Fax +49 (0) 7531 84-94903
+
+mailto:christof.ettl@takeda.com
+
+web: http:// www.takeda.com
+
+"		Technical question	iteraplan Support	11/Jul/16 2:35 PM	03/Aug/16 7:00 AM														"11/Jul/16 3:41 PM;cst;Weitere Klärung erfolgt über Olga.
+
+Viele Grüße,
+
+Christoph Stangl iteraplan Support"	"14/Jul/16 11:23 AM;cst;Sehr geehrter Herr Ettl, 
+
+
+
+vielen Dank für Ihre Anfrage zum Thema Customising Ihrer iteraplan Instanz.
+
+
+
+Wie schon ab mit Frau Krieger besprochen, werden wir für Sie das Logo und die Farbe der Menüleiste anpassen. 
+
+Würden Sie mir bitte den gewünschten Farbcode in HEX z.B. #f0f8ff zukommen lassen.
+
+
+
+Das Logo was Sie verwenden möchten, hängen Sie mir bitte an das Ticket mit an. Standardmäßig wird ja folgendes Logo verwendet.
+
+
+
+!iteraplanLogo200x49.gif|thumbnail!
+
+
+
+Dieses können Sie anpassen, oder ein individuelles in der gleichen Größe verwenden. 
+
+
+
+Bei Fragen stehe ich Ihnen gerne zur Verfügung.
+
+
+
+Mit freundlichen Grüße,
+
+
+
+Christoph Stangl - iteraplan Support "	"14/Jul/16 12:09 PM;christof.ettl@takeda.com;Danke Herr Stangel,
+
+ich verstehe, was Sie meinen und ich werde Ihnen sicher auch das Logo+Farbton zukommen lassen.
+
+Aber ich habe heute beides noch nicht und würde bitte trotzdem gerne wissen, wo ich das selbst konfigurieren kann.
+
+Denn das würde mir helfen, damit ich selbst etwas probieren/spielen kann. Und sobald ich die endgültige Farbe ausgewählt und ein fertiges Logo habe, dann kriegen sie das gerne auch 
+
+Ich hoffe, das macht Sinn
+
+Viele Grüße
+
+   Christof Ettl
+"	"15/Jul/16 11:47 AM;cst;Hallo Herr Ettl,
+
+ich verstehe was Sie meinen.
+
+Die benötigten Informationen:
+
+-	Logo: liegt im Verzeichnis <tomcat-Installation>\webapps\iteraplan\images\iteraplanLogo200x49.gif
+
+-	Farbe der Menüleiste lässt sich im css einstellen. Sie werden 2 css-Dateien benötigen
+
+o	<tomcat-Installation>\webapps\iteraplan\ui\common\iteraplanContentLayout.css als die Originalversion, die nur als Vorlage dient und nicht geändert werden sollte.
+o	<tomcat-Installation>\webapps\iteraplan\ui\custom\custom.css als diejenige, wo Sie Ihre Anpassungen vornehmen können.
+
+Ich habe im Anhang ein Beispiel für die custom.css angehängt, mir der Sie folgendes Ergebnis erreichen können (#ee2d54 ist die rote Farbe).
+ 
+
+Wenn Sie die Einstellungen fürs Logo und die Menüleiste konfiguriert haben, schicken Sie diese bitte wie vereinbart an das iteraplan-Support-Team.
+
+Wenn Sie weitere Fragen haben, melden Sie sich bitte.
+
+Viele Grüße
+
+Olga Krieger
+"																																																			

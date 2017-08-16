@@ -1,0 +1,31 @@
+Content highlighting in LSD	"What I want to do:
+
+# Left click a content item in LSD
+
+# Choose ""highlight"" in tool area
+
+
+
+=> All content items representing the same building block as the one I have selected are highlighted
+
+
+
+Notes:
+
+* If you click on an element, the element is selected via GoJS.
+
+* Highlight all occurences
+
+* Implement possiblity to clear highlights
+
+* Include in Download
+
+* Legend does not show this highlighting
+
+* No mutiple highlighting. That is only one kind of building block is highlighted at a time
+
+
+
+----
+
+Status planning Dec. 2: only cosmetics and review"		New Feature	iteraplan PO	29/Oct/15 10:04 AM	07/Dec/15 8:07 AM					highlighting																																																															

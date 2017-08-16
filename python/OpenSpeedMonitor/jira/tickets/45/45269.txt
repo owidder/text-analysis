@@ -1,0 +1,7 @@
+excel import fails if there are too many brackets in the attribute name	"When trying to import applications, the Excel import would not allow the attribute:
+{tmp} YYY (XXX) (ZZZ (temporary))
+
+Further investigation showed the problem to be with the ""("" and "")"" characters. I changed the attribute name to:
+{tmp} YYY [XXX] (ZZZ (temporary))
+
+And the import functioned correctly. The import should not fail even if brackets are used for attribute names!"		Improvement	iteraplan PO	16/Nov/11 2:07 PM	19/Aug/14 5:28 PM					excel	import								13/Jan/12 3:08 PM;kvo;New Import has to be completed before this.	05/Jul/13 4:03 PM;tdi;E-104 uses old Excel importer to keep roundtrip compatibility, so this problem will remain for E-104	16/Jul/13 4:31 PM;sry;No guarantee that this will actually ever be fixed, as that code is a dead end.	19/Aug/14 5:28 PM;fka;No more work will be done with this part of the code (old import)																																																			

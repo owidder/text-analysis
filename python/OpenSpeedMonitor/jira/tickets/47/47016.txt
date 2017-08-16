@@ -1,0 +1,1 @@
+Breadcrumb should have constant width, ">"-Button should not jump		47011	Sub-task	iteraplan PO	30/Sep/14 5:01 PM	09/Jun/15 5:05 PM																																																																				

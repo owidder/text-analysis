@@ -1,0 +1,7 @@
+Deployment 4-A	"# Deployment dev.openspeedmonitor
+
+## Hier sollte einer der CSI-relevanten Test-Mess-Jobs mit Video-Aufzeichnung laufen.
+
+# Nach mindestens 2 Tagen manuelle Tests um zu verifizieren, dass in den Dashboards zwei unterschiedliche CSI-Metriken zu finden sind und diese valide aussehen. Das also bei doc ready Zeiten < visually complete Zeiten dann auch der csi nach visually complete schlechter ist als der nach doc ready.
+
+# Alle anderen Instanzen inkl. OTTO deployen"		Task	OpenSpeedMonitor	17/Feb/16 12:10 PM	25/Feb/16 4:42 PM																																																																				

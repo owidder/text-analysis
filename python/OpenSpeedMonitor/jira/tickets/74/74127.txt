@@ -1,0 +1,9 @@
+[Resultlist] Letztes Job-Einzelergebnis wird nicht gefunden	"Getestet im Chrome und angemeldet als Admin.
+
+
+
+In der Job-Übersicht wird unter ""Zuletzt ausgeführt"" ein Link zum letzten Einzelergebnis des Jobs geliefert. Bei einem Klick auf diesen Link erhält man ein vorgefertigtes Formular, das einem das letzte Einzelergebnis raussucht.
+
+
+
+Leider wird hier ein leeres Einzelergebnis angezeigt!"		Bug	OpenSpeedMonitor	19/Feb/16 10:59 AM	22/Feb/16 10:16 AM														22/Feb/16 10:05 AM;bwo;Wenn wir einen Dump erstellen, werden die aktuellen Jobs kopiert, jedoch nur JobResults innerhalb des gewählten Zeitraumes. Dadurch passiert es, dass der Job behauptet es gibt aktuellere Jobs und dann jedoch keine Jobs angezeigt werden. Somit tritt der Fehler nur bei uns Entwicklern mit einem Dump auf.																																																						

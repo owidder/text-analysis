@@ -1,0 +1,13 @@
+Undeploy demo iteraplan instance	"Undeploy (and delete the data of the instance from the database) 120 days after the instance expired.
+
+Some kind of cronjob will be needed, preferably from within the application. Running the job automatically once a week is sufficient."	93358	Sub-task	iteraplan Speedbird	19/Aug/16 3:35 PM	27/Sep/16 10:09 AM														"26/Sep/16 4:28 PM;sfe;Nevermind, it was my mistake: it works
+
+
+
+\* Old comment *
+
+The query for expired logins in {{DemoDAOImpl#getExpiredLogins(int)}} does not seem to work. It always returns an empty list for me, even with rows in the database that have an expiry date of one year ago."	"26/Sep/16 5:57 PM;sfe;Please create a follow-up ticket for handling of the ""cleanup"" after undeploying the application:
+
+* dropping of demo instance databases
+
+* deletion of log and index files/directories"	27/Sep/16 10:09 AM;sfe;Open items to do will be done in IPTS-182																																																				

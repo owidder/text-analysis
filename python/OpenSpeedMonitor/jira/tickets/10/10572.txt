@@ -1,0 +1,5 @@
+Static view: Offene Fragen ggf. Tasks	"- Table auch wie im CSI Dashboard initial ausblenden?
+- Chart wieder höher wie derzeit auf LIVE?"		Bug	OpenSpeedMonitor	07/Oct/13 5:04 PM	08/Oct/13 4:37 PM														"08/Oct/13 4:36 PM;nkuhn;Tabelle initial ausblenden?
+NEIN
+Chart höher?
+NEIN (nur auf Anfrage)"																																																						

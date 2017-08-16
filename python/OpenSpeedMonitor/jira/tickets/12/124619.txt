@@ -1,0 +1,33 @@
+Reaction System version 1.5	"Extend the iteraplan Reaction system with the following features:
+
+ * Implement a *GUI* page, located under Administration as a separate tile. SBU to provide layout. List style. Features:
+
+ filen name of scripts, BBT(s) they are subscriped to.
+
+ Upload, delete, download of script
+
+ *Enable/Disable* for each script
+
+ If easily possible: Directly edit scripts in the GUI. Editor with maybe simple syntax highlighting. Also: Create new script function. ( https://ace.c9.io/
+
+http://codemirror.net/)
+
+ * If easily possible: Move all scripts from filesystem to DB storage. So there's one directory less to consider when upgrading. If implemented, also implement name and description field for each script, which are shown in the GUI-
+
+ * Make *direct execution* for each script possible. Should be simply a button in the GUI. In this case the script executes immediately, the change set provided to the script is empty.
+
+ * Make it possible to *schedule the execution* of each script. Schedule should be something like for cronjobs. Use whatever Java directly provides / is already used in other parts of iteraplan. The change set provided to the script is also empty in this case.
+
+ * Enable *http/REST-Calls* from the plugins. Provide a simply API for that.
+
+ * If not done via the point above (beware of reentrant issues), provide an API to the script to query history entries. Single element and type history.
+
+ * Provide a simple API to *send emails* from the script. Recepient(s), subject, content (plain-text) is suffient. Use the general configured email service in iteraplan, like it is used for subscription emails.
+
+ * For each script: Show log messages from any execution of this script. Button with pop-up window and copy to clipboard. Maybe store the log from the execution in the DB?
+
+ * Implement IPTS-707
+
+
+
+ "		Epic	iteraplan Speedbird	16/Jun/17 2:01 PM																																																																					

@@ -1,0 +1,13 @@
+Newly created Attribute Groups cannot be edited at once	"Reproduce: create new attribute group
+
+ edit ""description"" or edit ""isTopLevelGroup""
+
+ Result:
+
+ an error ""You do not have the necessary permission to perform this action."" appears
+
+ Expected:
+
+ edit will be successful
+
+ Note: edit is successfull after reloading the attribute group page."		Bug	iteraplan PO	12/Jul/17 12:50 PM																																																																					

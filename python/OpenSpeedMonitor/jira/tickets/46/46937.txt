@@ -1,0 +1,38 @@
+Edit a direct relationship to elements of another type.	"To the single item view, add editing of a relationship to elements of another type (not IS). 
+
+Decicsion: for this ticket, use Information System Domain. (in a later ticket, maybe another realationship.)
+
+Behavior as in previous edit tickets, and in addition:
+
+(0) initially, the system shows a list of names of the connected elements, sorted lexicographically
+
+(1) user clicks on one of the names
+
+(2) system shows 
+* the list of names as before, but with delete buttons (""x""-icon) on the right hand side
+* a scrollable list of names of the elements that can be connected. This list is the list of all elements of that type, minus the elements already connected to the current IS, sorted lexicographically.
+* above this list a filter field with a clear-icon on the right. If the user enters text into the filter field, the list of connectable elements shows only the matching elements. Matching by substring, case insensitive (not by prefix).
+
+Layout: 
+* The list of connected elements with delete buttons (in view-only mode) should be in exact the same space as the list without delete buttons (in edit mode). So this list does not change the layout of the screen when switching from view to edit mode.
+* the additional list of elements to connect and the filter field above should be to right of the list of elements. It hides elements that are right of the list, for example in another column. So this list-with-search-field does not change the layout either.
+ 
+(3) The user clicks an entry in the list of elements to connect.
+Note that there is no 2 step ""select element in the list and click add"" 
+
+(4) The system shows the item in the list of connected elements, and removes it from the list of elements to connect. Note that the list stays sorted.
+As the list is one line longer, elements on the screen below move down.
+
+The element in the left list should have an ""appear"" transition. In the right list, no transistion is required.
+
+(5) The user clicks a delete button
+
+(6) The system removes the item from the list of connected elements, and shows it in the list of elements to connect.
+As the list ist one line shorter, elements on the screen below move up.
+
+The element in the left list should have an ""disappear"" transition. In the right list, no transition is required.
+
+(7) The user stops the editing, by clicking somewhere else.
+
+(8) The system changes the data locally in the browser and writes the IS back to the server, asynchronously.
+"		New Feature	iteraplan PO	09/Sep/14 6:17 PM	29/Sep/14 10:36 AM														10/Sep/14 2:00 PM;sepr;Est. 2 PD																																																						

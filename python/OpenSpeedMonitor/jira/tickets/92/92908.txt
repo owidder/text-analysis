@@ -1,0 +1,71 @@
+Test migration scripts	Test migartion scripts for all three databases	92213	Sub-task	iteraplan Quickfox	10/Aug/16 9:19 AM	19/Aug/16 10:54 AM														"10/Aug/16 2:38 PM;cst;In Oracle 12c the update script is running correctly.
+
+"	10/Aug/16 5:00 PM;cst;In MYSQL the update script is running correctly. 	"11/Aug/16 10:55 AM;cst;In SQL the update script is running not correctly.
+
+A bracket is missing on the end.
+
+
+
+-- -----------------------------------------------------------------
+
+-- ITERAPLAN MIGRATION SCRIPT FROM iteraplan 5.2 to iteraplan 5.3 (MS SQL Server)
+
+-- -----------------------------------------------------------------
+
+
+
+CREATE TABLE [REACTOR_SCRIPT_CONFIG](
+
+	[ID] [int] NOT NULL,
+
+	[VERSION] [int] NOT NULL,
+
+	[PUBLISHED_NAME] [varchar](100) NULL,
+
+	[SCRIPT_FILE_NAME] [varchar](255) NOT NULL,
+
+	[OUTPUT_FILE_NAME] [varchar](255) NULL,
+
+	[SAVED_QUERIES] [varchar](100) NULL,
+
+	[ROLES] [varchar](255) NULL,
+
+	[CACHE_TIME] [int] NULL,
+
+	[LAST_MOD_USER] [varchar](255) NULL,
+
+	[LAST_MOD_TIME] [datetime2](7) NULL,
+
+PRIMARY KEY CLUSTERED 
+
+(
+
+	[ID] ASC
+
+),
+
+CONSTRAINT [UK_SCRIPT_FILE_NAME] UNIQUE NONCLUSTERED 
+
+(
+
+	[SCRIPT_FILE_NAME] ASC
+
+)
+
+
+
+{color:red}*)*{color}
+
+
+
+GO 
+
+-----------------
+
+
+
+"	"11/Aug/16 11:05 AM;cst;Was fixed.
+
+
+
+"	11/Aug/16 12:36 PM;cst;In Oracle 11gc the update script is running correctly.																																																		

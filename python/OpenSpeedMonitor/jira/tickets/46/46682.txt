@@ -1,0 +1,3 @@
+Document the permissions for associations	"In addition to the ticket in ITERAPLAN-2551, the composition of the permissions for attributes and associations should be documented.
+
+A good place would be the page ""Permission to view and edit EA data"" in the manual."		Bug	iteraplan PO	13/Jun/14 8:47 AM	09/Jul/14 3:25 PM														09/Jul/14 2:23 PM;sfe;Updated: https://www.iteraplan.de/wiki/display/upcomingIteraplan/Permission+to+view+and+edit+EA+data																																																						

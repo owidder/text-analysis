@@ -1,0 +1,1 @@
+Cluster diagram with []-brackets	Clustering according to attribute values results in [] being displayed as \&#91;\&#93; in the value list, SVG and PDF		Bug	iteraplan PO	06/Nov/13 1:20 PM	30/Dec/15 4:54 PM					cluster																																																															

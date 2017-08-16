@@ -1,0 +1,23 @@
+mass update missing in New Client	mass update missing in New Client		Fault	iteraplan Support	05/Apr/17 10:37 AM	05/Apr/17 10:44 AM														"05/Apr/17 10:44 AM;cst;Dear Mrs. Marsiske,
+
+
+
+thanks for your inquriy.
+
+
+
+The mass update is not implemented in the interactive client of version 5.5.
+
+In version 6.0 the mass update can be used in the interactive client. 
+
+
+
+Greetings,
+
+
+
+Christoph Stangl - iteraplan Support
+
+
+
+"																																																						

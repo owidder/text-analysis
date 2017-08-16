@@ -1,0 +1,13 @@
+Fehlerrate für Jobs anzeigen	"Es kommt immer wieder vor, dass WPT Messungen nicht erfolgreich sind, da sie abgebrochen werden, keine Ergebnisse liefern, oder der OSM beim Warten auf Ergebnisse in ein Timeout läuft.
+
+
+
+Wir haben jedoch keine Ahnung, wie viele Messungen davon betroffen sind.
+
+
+
+Es wäre deshalb gut zu wissen, wie viel Prozent von ausgelösten Mess-Jobs erfolgreich und fehlerhaft waren. Dies sollten wir also zum Beispiel in der Job-Liste anzeigen, sowie in den Job Details anzeigen.
+
+
+
+Es sollte also zunächst sichergestellt werden, dass in jedem Szenario (Bsp: Timeout beim Warten auf Ergebnisse) der Fehlschlag auch als fehlerhaftes JobResult gespeichert wird, sodass wir effizient aus den JobResults die Prozentuale Anzahl der Fehlschläge für einen Job abfragen können."		Bug	OpenSpeedMonitor	16/Nov/16 10:15 AM	07/Dec/16 12:23 PM																																																																				

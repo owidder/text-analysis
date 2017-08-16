@@ -1,0 +1,14 @@
+Download as PDF	"Add a global action to the menu bar ""Download as PDF"".
+
+If the user clicks the action, the browser downloads the current diagram to a PDF file. The user interaction is the same as for a SVG file, but the file content is converted to PDF first.
+
+For a conversion to PDF
+* extract the SVG as text or as DOM subtree
+* convert it to PDF text with a library
+* base64 encode the PDF text
+* put it into a data URI
+
+Starting point for the search for a good SVG-to-PDF converter lib:
+https://github.com/ahwolf/jsPDF
+
+or as a list with more options: http://stackoverflow.com/questions/5913338/embedding-svg-in-pdf-exporting-svg-to-pdf-using-js"		New Feature	iteraplan PO	21/Aug/14 10:40 PM	29/Sep/14 10:18 AM														22/Aug/14 4:35 PM;sepr;Est. 2 PD (We are not sure about libs and time for research)	29/Sep/14 10:18 AM;fka;Real PDF (not PNG)  will be done later																																																					

@@ -1,0 +1,15 @@
+Dashboard Detail-Analyse erstellen	"Hiermit ist alles gemeint, was noch nicht dc.js ist:
+
+
+
+* Datums-Auswahl (Gesamt-Zeitraum)
+
+* Bestehendes Template zur Job-Auswahl
+
+
+
+Die Auswahl der WPT-Messgrößen brauchen wir hier nicht.
+
+Die GUI soll im Bereich _Mess-Ergebnisse_ liegen.
+
+"		Task	OpenSpeedMonitor	23/Mar/16 11:28 AM	01/Apr/16 12:34 PM																																																																				

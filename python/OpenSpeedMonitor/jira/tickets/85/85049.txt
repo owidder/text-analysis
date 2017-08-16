@@ -1,0 +1,1 @@
+Beim Speichern eines JobResult tritt eine Exception auf			Bug	OpenSpeedMonitor	20/May/16 4:34 PM	23/May/16 4:06 PM																																																																				

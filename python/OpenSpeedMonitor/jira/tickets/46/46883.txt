@@ -1,0 +1,28 @@
+Color legend	"Add a color legend to the nesting cluster diagram.
+
+The color legend is an extra panel on the bottom right corner of the diagram.
+
+For the initial coloring with two of the five colors of the architecture domains, 
+the legend has two items: 
+* box with the icon and color of the outer element type, and with the name of the outer element type
+* box with icon, color and name for the inner element type
+
+Note that the text in the box is the type name, not a name of a single element of that type.
+Examples: ""Information System"", ""Business Object"" 
+
+The boxes are stacked, box for outer above the box for inner. 
+
+When the inner boxes have a color according to an attribute, for example Complexity, the legend has 
+* the box for the outer element as before
+* the box for the inner element with icon and type name, but without text
+* a one-column table of colored fields with a title above the table: Complexity with rectangles with
+** value as text
+** background color of the value
+
+The rectangles have no border line, as usual, and no spacing.
+The color table is to the right of the outer/inner box group of the legend.
+
+The color legends for other attibutes is similar, for example for Status with four rectangles.
+
+
+"		New Feature	iteraplan PO	20/Aug/14 1:23 PM	29/Sep/14 10:15 AM														22/Aug/14 4:13 PM;sepr;Est. 1 PD																																																						

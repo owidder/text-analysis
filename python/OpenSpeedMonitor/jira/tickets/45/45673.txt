@@ -1,0 +1,14 @@
+Update bundled Tomcat to the latest v7.0.x	"Our bundle version are currently built with Tomcat 6. Now that iteraplan runs on Tomcat 7, it's time to update our bundle builder mechanism.
+
+Be sure to tweak the Tomcat that it contains no clutter in {{webapps}} and that the Connector configurations are set to UTF-8 encoding. The AJP connector shall be disabled.
+Test the whole thing on Windows as well as Linux and Mac OS X (Markus can do that).
+
+Also, we got an improved iteraplan launcher script for Windows. It is able to auto-determine where a JRE is installed and does not need any environment variable set. Test that script and improve where necessary. If it works fine, replace the current runIteraplan.bat with it.
+
+"		Task	iteraplan PO	11/Apr/13 6:09 PM	23/May/13 8:01 PM					bundles	update								"02/May/13 4:39 PM;lba;(/) Tested iteraplan 3 on Tomcat 7 + Windows 7. No problems detected yet.
+Tomcat was configured as in the developement-guide described. "	07/May/13 4:01 PM;lba;When testing the Ticket, make sure that it automatically sets the tomcat start parameter: -Dorg.apache.el.parser.SKIP_IDENTIFIER_CHECK=true (especially on Linux and Mac)	08/May/13 12:34 PM;sry;last paragraph in description was skipped, please implement it as well	08/May/13 12:37 PM;sry;According to Gerhard, the option {{-Dorg.apache.el.parser.SKIP_IDENTIFIER_CHECK=true}} should no longer be necessary, please remove it. sorry...	"08/May/13 1:58 PM;sry;Bundle is not yet built with Tomcat 7, because {{bundle.properties}} contains
+{{bundle.input.tomcatZip=apache-tomcat-6.0.35.zip}}, pls update and test. Do not commit bundle_local.properties, it is blacklisted in svn:ignore."	"22/May/13 7:52 PM;sry;The improved startup script is fine, but we need the shutdown script adapted to the same JRE detection mechanism.
+
+At the moment it is possible that someone can start iteraplan easily (thanks to the nice startup script), but won't be able to stop it via shutdown.bat if that script cannot find the Java installation.
+
+It can probably be tested easily, if you unset the JAVA_HOME and JRE_HOME variables in a terminal windows and launch the scripts from there. Unset the variables again after running runIteraplan.bat!"	23/May/13 8:01 PM;sry;Thx!																																																

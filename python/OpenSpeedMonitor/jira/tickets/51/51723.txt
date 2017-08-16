@@ -1,0 +1,9 @@
+Dynamic Service Discovery initial mit Consul als Microservice aufsetzen	"Als Dienst für eine dynamische Service Discovery können wir z.B. Consul benutzen, das bereits gut in Docker als eigenständer Container integriert ist.
+
+
+
+siehe Docker Registry: 
+
+* image: progrium/consul
+
+* image: progrium/registrator"		Story	secureCodeBox	24/Jul/15 12:49 PM	31/Jul/15 10:20 PM														31/Jul/15 10:20 PM;rfe;Für den aktuellen Stand implementiert. D.h. aktuell werden der Zap Spider und der Zap Scanner, sowie die elasticsearch Kooridinaten (host, name, port,...) dynamisch mit Consul ermittelt.																																																						

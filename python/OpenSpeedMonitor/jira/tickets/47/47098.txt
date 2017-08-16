@@ -1,0 +1,12 @@
+Query extension for Interfaces	Spreadsheet Reports for Interfaces currently include only a query extension for "connected Information Systems". It would be useful to be able to query the Information Systems connected by an Interface separately from each other, for example, in order to find all Interfaces between IS in different lifecycle phases. 		Improvement	iteraplan PO	29/Oct/14 12:24 PM	19/Jan/16 10:35 AM														"16/Dec/14 1:57 PM;sfe;If I understood this correctly, it would be similar to the already existing query extension for information systems regarding business mappings.
+It would be something like the following example:
+
+{quote}
+Properties of one connected Information System: Status=Current
+Properties of the other connected Information System: Status=Planned
+{quote}
+
+And it would find all interfaces where one of the connected systems is of status ""Current"" and the other one of status ""Planned"".
+Whichever is technically the ""first"" or ""second"" of the connected systems should not matter.
+
+Please clarify if this is not what you'd like to see."																																																						

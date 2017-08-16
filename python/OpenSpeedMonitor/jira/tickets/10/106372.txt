@@ -1,0 +1,9 @@
+Add possibility to switch directly from old to new Single Element View	"As of 5.4 the history is only available in the New Client, but almost all users still stick with the Old Client. Editing data is only available with the Old Client currently...
+
+
+
+Add a button in the single element view of the Classic client, which will always directly link to the respective single element view in the New Client. See sketch for where to place the button.
+
+
+
+Also change the button/link in the single element view of the Interactive, so that it always directly links to the respective single element page in the Classic client."		Improvement	iteraplan Thunderduck	21/Dec/16 2:37 PM	13/Jan/17 9:32 AM														09/Jan/17 1:26 PM;aan;Check customization																																																						

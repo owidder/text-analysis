@@ -1,0 +1,2 @@
+Migration 3.0 -> 3.1 script error	"The oracle migration script shows an error upon attempting to create the {{TIMESERIES}} column in the {{AT_ENUM}} and {{AT_NUM}} tables when there is already data present.
+The MySQL script still needs to be checked."		Bug	iteraplan PO	02/Jul/13 10:00 AM	16/Jul/13 8:52 PM					migration	script								16/Jul/13 8:52 PM;sry;Looks good, thx.																																																						

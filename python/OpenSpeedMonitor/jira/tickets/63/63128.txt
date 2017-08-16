@@ -1,0 +1,23 @@
+Anzeige verschiedener Sensortypen	"
+
+Objekttyp:
+
+- Kamera
+
+- Induktionsschleife
+
+- Wlan
+
+- Verbindungsleitungen
+
+- Gebäude / Stromkasten etc.
+
+
+
+Je Typ 2 Objekte darstellen an einer definierten Position mit verschiedenen Icons.
+
+- einfache Variante: flaches Bild
+
+- etwas komplexer: kleines 3D-Objekt"		Task	EAMV15	11/Nov/15 10:55 AM	19/Nov/15 4:03 PM														"19/Nov/15 4:03 PM;pkh;Erledigt.
+
+3D Objekte, wobei Senoren ein 2D Bild (Kamera, Induktionsschleife, Wlan) als Identifier haben."																																																						

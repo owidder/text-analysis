@@ -1,0 +1,13 @@
+Attributes: User defined Ranges for numeric attributes	"*Summary:*
+
+Include user defined ranges for numeric ranges in
+
+
+
+* the REST-API of ""/api/attributes""
+
+* the metamodel
+
+* the datamodel of attributes
+
+* the Single Element View of numeric attributes"		Improvement	iteraplan Speedbird	02/Dec/16 4:38 PM	28/Dec/16 2:19 PM														22/Dec/16 11:23 AM;ants;Clone of IPTS-437																																																						

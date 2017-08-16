@@ -1,0 +1,7 @@
+StackOverflowError in elastic model clone	"The clone method of the elastic ModelImpl can cause a stack overflow error for large models of a certain structure.
+
+This is when the model clone traverses the model graph along a very long path so the available stack size is exceeded.
+
+
+
+To fix this, change the model clone implementation to not use a recursive depth-first approach."		Bug	iteraplan PO	14/Jan/16 10:48 AM	28/Jan/16 4:21 PM					elasticmi									28/Jan/16 4:21 PM;lwi;verified the unit test. the test failed with old code and worked with the new code. 																																																						

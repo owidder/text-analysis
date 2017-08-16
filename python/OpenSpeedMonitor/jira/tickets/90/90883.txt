@@ -1,0 +1,1 @@
+Remove border lines of timespan-bars and make grid-lines dark grey	Remove border lines of timespan-bars and make grid-lines dark grey (2 pixel or 1 pixel both in the same color)		Improvement	iteraplan Speedbird	19/Jul/16 8:41 PM	21/Jul/16 10:45 AM																																																																				

@@ -1,0 +1,5 @@
+Post standalone - simpleDiff	"check for mandotory fields for new created building block (e.g name and typeOfStatus for IS)
+
+set default values for this fields with timestamps
+
+not in scope: interfaces/ infoFlows (extra treatments)"	91844	Sub-task	iteraplan Thunderduck	28/Jul/16 4:40 PM	02/Sep/16 1:20 PM																																																																				

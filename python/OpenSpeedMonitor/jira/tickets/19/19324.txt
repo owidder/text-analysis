@@ -1,0 +1,5 @@
+Initiale Dokumentation des iteraSpeedMonitor aktualisieren und vervollständigen	"Noch vor der OS-Stellung benötigen wir eine README-md mit einer Installations-Anleitung
+
+
+
+* Installationsanleitung"		Task	OpenSpeedMonitor	12/Sep/14 4:47 PM	14/Nov/14 3:14 PM																																																																				

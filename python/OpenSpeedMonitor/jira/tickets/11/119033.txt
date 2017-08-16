@@ -1,0 +1,15 @@
+drag & drop of enum-literals on attribute single pages	"On attribute single pages, for attributes with enumeration values and Tree-View.
+
+
+
+There should be an icon indicating drag&drop possibility:
+
+ * *drag handle* from Angular Material on the left side of an element
+
+ * please deactivate column swapping, so that there is always the same cloumn order
+
+
+
+While dragging there should be line indicating future position of an element:
+
+ * thin line in -#A70075- ({color:red}*UPDATE*{color}) #9B9B9B color"		Improvement	iteraplan Speedbird	19/Apr/17 1:32 PM	18/May/17 10:13 AM																																																																				

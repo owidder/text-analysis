@@ -1,0 +1,1 @@
+Legend for the IFD	Create a legend for the IFD, which reflects the changes in the diagram		New Feature	iteraplan PO	17/Jun/15 3:57 PM	16/Jul/15 1:03 PM					legend																																																															

@@ -1,0 +1,5 @@
+Nesting Cluster Graphics / iteraQL has problems with special character in attribute names	"I created attributes with following characters in the name: “(){}[]~;”
+The creation and use in buildingblocks worked without problems.
+But if I want to use the attributes in a nesting cluster graphic, I get the following error message:
+{{The entered query is not syntactically correct: mismatched input '(' expecting NAME}}
+"		Bug	iteraplan PO	25/Oct/13 11:02 AM	30/Dec/15 4:54 PM					diagram	elasticeam																																																														

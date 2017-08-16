@@ -1,0 +1,16 @@
+New interactive client shows wrong (technical) names on the start screen	"I checked the browser specific subjects as reported on your KB - problem still remains unchanged.
+
+"		Fault	iteraplan Support	06/Apr/16 4:43 PM	20/May/16 8:42 AM														"06/Apr/16 5:44 PM;sfe;To help analyzing the issue, please provide screenshots of the network activity when accessing the interactive client.
+To do so, you can follow these steps:
+# Access the interactive client in your browser
+# Open the developer tools window of the browser (usually by pressing F12 on the keyboard).
+** The developer tools may not open as separate window, but occupy a section of your browser window
+# Change to the network tab in the developer tools window
+# Now reload the browser tab with the iteraplan interactive client
+
+Multiple entries in the network overview window should appear.
+Please attach a screenshot or screenshots showing all of these entries to this ticket.
+If no entries appear, please attach a screenshot of your complete developer tools window."	"03/May/16 1:13 PM;sfe;Da eine MCON-Standardinstallation von iteraplan vorliegt, und dennoch die REST-Requests des interaktiven Clients mit einem 401 Status-Code abgelehnt werden, kann ich mir nur noch vorstellen, dass Ihr iteraplan-Benutzer nicht die Berechtigung hat, auf die iteraplan REST-Schnittstelle zuzugreifen. Der interaktive Client verwendet die REST-Schnittstelle.
+Wenn es das nicht ist, würde ich gerne mit Ihrer Zustimmung bei MCON Logdateien und ähnliche Informationen zur Analyse einholen.
+"	"20/May/16 8:43 AM;sfe;Das issue wurde aufgrund von Problemen mit den Jira Benachrichtigungen über E-Mail weiterbearbeitet und gelöst.
+Das Problem waren fehlende Berechtigungen zum nutzen der REST-Schnittstelle"																																																				

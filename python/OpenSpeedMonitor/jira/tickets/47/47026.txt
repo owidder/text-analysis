@@ -1,0 +1,3 @@
+Submitting a query search on an overview page by using the ENTER key works incorrect	"On an element type's overview page, on tab ""Queries"", when you configure a query and submit it by hitting ""Enter"", then the result is incorrect, because the wrong search strategy is used (""SEARCH_BY_INDEX"" instead of ""SEARCH_BY_QUERY_FORM"").
+
+Clicking on the ""Search"" button instead of hitting ENTER works, because the button's javascript action sets the right search strategy. This is the current ""workaround""."		Bug	iteraplan PO	02/Oct/14 2:53 PM	07/Oct/14 1:53 PM					gui	overview	search																																																													

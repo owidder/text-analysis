@@ -1,0 +1,3 @@
+Analyse: Possible solutions for Visio 2013 compatibility	"It is possible to open and edit infoflow diagrams in Visio 2013, but the saved diagrams cannot be used in iteraplan as templates.
+
+Analyse and document possibilities (third-party libraries etc.) to use Visio 2013 files as templates and export in Vision 2013 format."		Improvement	iteraplan PO	28/Oct/13 4:49 PM	19/Jan/16 11:33 AM					template	visio							Windows 7 & Chrome																																																							

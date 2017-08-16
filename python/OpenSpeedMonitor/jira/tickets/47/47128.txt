@@ -1,0 +1,38 @@
+User defined colours for enumeration	"*Requested by B-108 and FKA:*
+
+*Summary:*
+Add user-defined colours for enumerations and add to url
+
+*As-Is:*
+Colouring of attributes cannot be changed by the user.
+
+*To-Be:*
+The user can change the colouring of enumeration attributes directly in the diagram. No validation necessary (double colours allowed).
+
+*Affected parts of the system:*
+* Nesting Cluster Diagram
+* Inner Elements
+* Outer Elements
+* Colouring legend
+
+*Approach:*
+Use a colour picker directly in the colouring legend to change the colouring. The user can select the colours for all enumeration entries.
+
+*Acceptance Criteria:*
+The user starts with the view of an open NCD with IS as inner elements and ISD as outer elements. Colouring by status is activated.
+The user clicks with primary click on the colouring legend on the colour for ""Target"".
+A colour picker windows opens immediately.
+The users selects a colour with primary click.
+The colour picker window disappears immediately.
+The diagram is updated immediately: The colouring legend and all boxes with ""Target"" parameter are newly coloured.
+When another user uses the same url, the diagram is colored the same.
+
+The steps above must work for all colours and all enumeration attributes.
+"		New Feature	iteraplan PO	04/Nov/14 8:35 AM	26/Jan/15 2:06 PM					color									"20/Jan/15 9:36 AM;msr;Update by MSR in discussion with Andrii:
+The user defines a custom coloring for an attribute like type of status. After choosing the coloring for another attribute like state of health, all specific user-defined colours for type of status are lost. When he selects again type of status the colouring is again default.
+The same applies for navigating to any other page. Again all user-defined colouring is lost.
+BUT the information of user-specific colouring is encoded in the url. So the only possibility to ""save"" the colouring is to bookmark the url."	"21/Jan/15 1:49 PM;msr;2nd update by MSR in discussion with Andrii & Daria:
+
+Changing outer element cancels outer-element-options, but inner element stays coloured (if still connected).
+Changing inner element cancels inner-element-options, but outer element stays coloured (if still connected).
+"	26/Jan/15 2:06 PM;dasm;Verified (revision 546)																																																				

@@ -1,0 +1,23 @@
+Removing filter in list view doesn't update URI	"_Reproduce (with sample data):_
+
+# Open list view (for example for Business Objects)
+
+# Edit filter, configure for example {{name contains 'c'}}
+
+# Apply and close -> List contains less elements
+
+# Edit filter and remove the configured filter line -> List shows all elements
+
+# Close
+
+# Refresh (F5)
+
+
+
+_Expected:_ List shows all elements after the refresh
+
+_Actual:_ List shows less elements, and when clicking ""Edit filter"", the filter configured in 2. is shown.
+
+
+
+Possible reason: URL may not be synchronized on filter removal, maybe {{$scope.$apply}}"		Bug	iteraplan Speedbird	05/Jul/16 2:07 PM	22/Jul/16 9:02 AM					filter	list								22/Jul/16 9:02 AM;dmkh;Review is complete and bug is fixed: https://iteraweb.iteratec.de/fisheye/cru/IP-77.																																																						

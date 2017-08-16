@@ -1,0 +1,215 @@
+RELEASE: Create REST-Interface for Administration	"*Summary:*
+
+Create REST-Interface for Adminstration
+
+
+
+*Details:*
+
+* The new REST resource structure should be:
+
+** /api/administration/system/
+
+
+
+* JSON-structure should be:
+
+{
+
+    ""searchIndex"" : [{""purge"": ""true""},{""createNew"": ""true""/""false""}], purge is always true
+
+    ""clearDatabaseCache"" : [""true""/""false""],
+
+    ""createSystemInfo"": [""true""/""false""],
+
+    ""updateLicense"": [""LICENSE-TEXT""]
+
+}
+
+
+
+* Behaviour on PUT: If a key (like ""searchIndex"") is missing, this option is just ignored and not updated.
+
+* Use this REST interface as blueprint:
+
+https://www.iteraplan.de/doc/display/iteraplan54/Single+Element+API
+
+* Ask [~ach] if you need some support
+
+"		New Feature	iteraplan Speedbird	07/Oct/16 2:12 PM	19/Oct/16 4:59 PM														"13/Oct/16 7:23 PM;ants;Example of JSON:
+
+{
+
+""searchIndex"" : { ""createNew"": ""true"", ""purge"": ""true"" },
+
+""clearDatabaseCache"": ""true"",
+
+""createSystemInfo"": ""true"",
+
+""updateLicense"": ""LICENSE-TEXT""
+
+}
+
+"	"13/Oct/16 8:41 PM;ants;Currently response handling of REST resource is not described, so this should be clarified.
+
+For creating new search index and clearing database cache there is nothing to put into server response.
+
+For license updating server might response if license was successfully uploaded or not.
+
+For creating system info option server should send the zip-file with report as response.
+
+Also the response for request with multiple options should be clarified (e.g. in case of PUT: {""createSystemInfo"": ""true"", ""updateLicense"": ""LICENSE-TEXT""})"	"14/Oct/16 12:21 PM;mse;I renamed some methods in AdministrationSystemResource.java (commit 26296) to fix some PMD warnings which appeared during the build process:
+
+http://iteraplan.iteratec.de/jenkins/job/_Build_Server/11121/
+
+
+
+Please, have a look and feel free to change this again."	"14/Oct/16 1:09 PM;msr;*Server respones:*
+
+
+
+PUT on ""searchIndex"" or ""clearDatabaseCache"":
+
+* 204 = Successfull without any content
+
+* 403 = No permission (put the error message in the body of the response)
+
+* 400 = Syntax of JSON is invalid/missing (put the error message in the body of the response)
+
+* 500 = all other error cases (put the error message in the body of the response)
+
+
+
+PUT on ""createSystemInfo"":
+
+* 200 = Successfull and the zip-file is the content
+
+* 403 = No permission (put the error message in the body of the response)
+
+* 400 = Syntax of JSON is invalid/missing (put the error message in the body of the response)
+
+* 500 = all other error cases (put the error message in the body of the response)
+
+
+
+PUT on ""updateLicense"":
+
+* 200 = Successfull and return licensee and license-end-date in the response-body
+
+* 403 = No permission (put the error message in the body of the response)
+
+* 400 = Syntax of JSON is invalid/missing (put the error message in the body of the response)
+
+* 500 = all other error cases (put the error message in the body of the response)
+
+
+
+*Multiple keys:*
+
+
+
+PUT on ""searchIndex"" and ""clearDatabaseCache"" and ""createSystemInfo"":
+
+* 200 = Successfull and the zip-file is the content
+
+* 403 = No permission (put the error message in the body of the response)
+
+* 400 = Syntax of JSON is invalid/missing (put the error message in the body of the response)
+
+* 500 = all other error cases (put the error message in the body of the response)
+
+
+
+PUT on ""searchIndex"" and ""clearDatabaseCache"" and ""updateLicense"":
+
+* 200 = Successfull and return licensee and license-end-date in the response-body
+
+* 403 = No permission (put the error message in the body of the response)
+
+* 400 = Syntax of JSON is invalid/missing (put the error message in the body of the response)
+
+* 500 = all other error cases (put the error message in the body of the response)
+
+
+
+PUT on ""createSystemInfo"" and updateLicense"" together is not possible (because you cannot put both information in the response)."	"18/Oct/16 11:53 AM;msr;[~ants]: NEW REQUIREMENT:
+
+Please handover the date (of updateLicense) in the UTC-format. Thanks."	"18/Oct/16 4:58 PM;mada; NEW REQUIREMENT:
+
+PUT on ""searchIndex"" with value ""createNew"": ""false"" is not possible.
+
+Server should return CLIENT_ERROR_BAD_REQUEST responce."	"18/Oct/16 4:59 PM;mada;Review
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-81#general-comments"	"18/Oct/16 6:54 PM;ants;Well, I suggested that ""action"":""false"" key pair just means that action is not performed. In this case any combinations of key pairs (that produce empty or single value response) are acceptable and could be processed.
+
+For example:
+
+1.
+
+{ ""searchIndex"" : { ""createNew"": ""true"", ""purge"": ""true"" },
+
+""clearDatabaseCache"": ""true"",
+
+""createSystemInfo"": ""true""
+
+}
+
+Server side correctly process JSON; performs following actions: creating new search index, clearing database cache, creating system info report.
+
+2.
+
+{
+
+""searchIndex"" : { ""createNew"": ""true"", ""purge"": ""true"" },
+
+""clearDatabaseCache"": ""false"",
+
+""createSystemInfo"": ""true""
+
+}
+
+Server side correctly process JSON; performs following actions: creating new search index, creating system info report; skips following action: clearing database cache
+
+3.
+
+{
+
+""searchIndex"" : { ""createNew"": ""false"", ""purge"": ""true"" },
+
+""clearDatabaseCache"": ""false"",
+
+""createSystemInfo"": ""false""
+
+}
+
+Server side correctly process JSON; performs no actions; skips following actions: creating new search index, clearing database cache, creating system info report
+
+In every case we response 2xx status code, because request was correct and was processed.
+
+
+
+But if we treat ""false"" value of ""createNew"" as bad request, as is described in comment as New Requirement, than should also ""clearDatabaseCache"": ""false"" and ""createSystemInfo"": ""false"" to treated respectively as bad request?
+
+And if so, than any multi-key request with false value should be bad request?
+
+For example:
+
+Should produce bad request status? 
+
+{
+
+""searchIndex"" : { ""createNew"": ""false"", ""purge"": ""true"" },
+
+""clearDatabaseCache"": ""true"",
+
+""createSystemInfo"": ""true""
+
+}
+
+If yes, than should actions of clearing database cache and creating system info report be performed?"	"19/Oct/16 3:28 PM;msr;Thank to both of you for your feedback.
+
+I have to admit, I didn't think about all possibilities - especially in combining different keys.
+
+Let's stick to the suggested solution of Anatolii. I see there some advantages."	"19/Oct/16 4:59 PM;mada;Review
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-90#CFR-32387"																																													

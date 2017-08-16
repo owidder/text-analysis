@@ -1,0 +1,34 @@
+Chrome-Tests mit dem WPTDriver und dem ISM durchführen			Task	OpenSpeedMonitor	09/Oct/13 3:12 PM	04/Nov/13 9:43 AM														"22/Oct/13 2:47 PM;mzeimer;Die Verwendung von setDOMElement führt beim Chrome dazu, das die Ausführung des Skripts ""stehen bleibt"".
+
+Siehe hierzu:
+https://github.com/WPO-Foundation/webpagetest/issues/95
+
+Dieses ist beseitigt in:
+https://github.com/WPO-Foundation/webpagetest/commit/69428d17386ceb7d0d3213256b765ce1e54c372f
+
+Leider ist der Commit in der Version 2.12 (wptdriver 124) nicht enthalten, dieses war der commit:
+https://github.com/WPO-Foundation/webpagetest/commit/b6984f20dfde95635f3eab94d094876baf1caa6c"	"22/Oct/13 5:07 PM;mzeimer;Drei wichtige command-line args für Chrome:
+
+--disable-zero-browsers-open-for-tests   -> ""Some tests seem to require the application to close when the last browser window is closed.[...]"" (und genau das brauchen wir)
+
+--no-first-run   -> ""Skip First Run tasks, whether or not it's actually the First Run."" (zu Beginn würde Chrome sonst eine google-seite zeigen)
+
+--browser-test   -> ""Tells Content Shell that it's running as a content_browsertest."" (das ist, was wir tun)
+
+
+
+"	"23/Oct/13 4:04 PM;mzeimer;Auch interessant hierzu:
+Der Foreneintrag von Christian:
+http://www.webpagetest.org/forums/showthread.php?tid=12423"	28/Oct/13 10:47 AM;mzeimer;Am 28.10.2013 Kontakt zu P. Meenon aufgenommen bzgl. neuer Version.	"30/Oct/13 11:56 AM;mzeimer;Ich habe folgendes probiert:
+
+in den multistep_211 habe ich ""von Hand"" (nur lokal mit copy und paste) den WPT-Head (e35bf66cbd72fd26050a21cf6b9a06c200d327a5) hinein geklebt und:
+
+http://ottoserver.wpt.hh.iteratec.de/result/131030_BB_a94b2352791cee69cbd06ef8813145ae/
+
+... ein erfolgreicher Chrom-Lauf ABER ohne multistep. Mit multistep geht es noch nicht."	"30/Oct/13 12:42 PM;mzeimer;Multistep mit IE10
+
+http://ottoserver.wpt.hh.iteratec.de/result/131030_Z2_5c69bbcedd639aa1cb98d4ef4c9f0a9e/
+
+(Simples script, aber geht - mit ""Spezialversion"" -> siehe Kommentar zuvor)"	"04/Nov/13 9:43 AM;mzeimer;Ohne multistep ist der Chrome einsetzbar, mit noch nicht. Der Chrome-Prozess wird nicht immer korrekt beendet, was zu einer Überlastung des Testmaschine führt. Hier sollte eine Erweiterung von Christian Wißmach ergänzt werden, welche die Chrome-Prozesse ""von Hand"" beendet.
+
+Weitere Tests sollten nach einem vollständigen merge unserer Multistep-Version mit dem aktuellen HEAD (bzw. Release 2.13) folgen."																																																

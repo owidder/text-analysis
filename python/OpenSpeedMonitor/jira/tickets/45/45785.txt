@@ -1,0 +1,16 @@
+Localization: the first line of a custom ressource-property-file is ignored	"Create a custom ressource-file for a customer in the directory
+iteraplan\apache-tomcat-6.0.35\webapps\iteraplan\WEB-INF\classes\de\iteratec\iteraplan\presentation\resources\custom
+
+e.g. ApplicationResourcesCustomJUWI.properties
+
+If the first line is already a valid customization (and not a comment of course) then it has no effect on the iteraplan instance.
+
+e.g. 
+informationSystemRelease.to.informationSystemDomains=THIS TEXT DOES NOT APPEAR IN ITERAPLAN
+"		Bug	iteraplan PO	21/Jun/13 2:46 PM	08/Mar/16 3:25 PM														"29/Feb/16 3:53 PM;gph;As already guessed, this effect takes place only when the customized file is created with UTF-8 encoding and ByteOrderMark (BOM).
+
+The custom file(s) must be saved in UTF-8 encoding *without* BOM (just as the regular resource files). Then a key in the very first line will not be ignored."	"08/Mar/16 3:25 PM;abo;To make it clearer: there is no code-change. The *solution* is to instruct developers and customers to *use UTF-8 encoding +without+ BOM for properties-files*.
+
+
+
+Background information for a better understanding: iteraplan uses Spring's _ReloadableResourceBundleMessageSource_ which itself uses Java's _java.io.InputStreamReader.InputStreamReader_ to load properties-files. The encoding can be configured, however, neither Java 7 nor Java 8 support UTF-8 with BOM, (see: https://docs.oracle.com/javase/7/docs/technotes/guides/intl/encoding.doc.html, https://docs.oracle.com/javase/8/docs/technotes/guides/intl/encoding.doc.html)"																																																					

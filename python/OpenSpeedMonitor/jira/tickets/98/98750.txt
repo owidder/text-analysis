@@ -1,0 +1,25 @@
+AFTER-RELEASE: Nested Cluster Diagram cannot save specific color settings 	"Summary:
+
+After following setup, the diagram cannot be reloaded and a error appears in the browser console: 
+
+
+
+dataModel.js:554 Uncaught TypeError: Cannot read property 'getValue' of undefined
+
+
+
+Reproduce:
+
+# Open the Nested Cluster diagram on the interactive client
+
+# Click on ""Cluster"" - ""Bulding Block"" and ""Business Object"" 
+
+# Click on ""Inner Color"" and ""Coloring by Accountability""
+
+# Now reload the diagram, a white page appears 
+
+
+
+Expected:
+
+Its possible to reload the diagram (User Profiles) "		Bug	iteraplan Speedbird	11/Oct/16 3:29 PM	21/Oct/16 3:16 PM														21/Oct/16 3:16 PM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-99	21/Oct/16 3:46 PM;vadm;"Coloring by Accountability" option was disabled according to [IPTS-212|https://iteraweb.iteratec.de/jira/browse/IPTS-212].																																																					

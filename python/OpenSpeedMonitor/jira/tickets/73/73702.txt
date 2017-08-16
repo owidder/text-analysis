@@ -1,0 +1,1 @@
+CsiDashboard CSI-Diagramm, Legenden Hintergrund zu groß	Siehe !Screen Shot 2016-02-15 at 16.48.22.png|thumbnail!		Bug	OpenSpeedMonitor	17/Feb/16 8:52 AM	17/Feb/16 12:00 PM																																																																				

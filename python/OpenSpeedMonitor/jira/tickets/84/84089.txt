@@ -1,0 +1,27 @@
+BatchActivity Refactoring	"Die BatchActivites dienen zur Fortschrittsüberwachung bei längeren Aktivitäten (z.B. Datenbank aufräumen). Mit jedem Fortschritt innerhalb der Aktivität wird auch die BatchAtivity geupdatet. Das Speichern des Updates geschieht in einem anderen Thread, um die ohnehin schon langen Prozesse nicht zu blockieren. Außerdem werden die Updates nur alle X Sekunden ausgeführt, hierum kümmert sich der BatchActivityService.
+
+
+
+Probleme in der aktuellen Implementierung:
+
+* Das Domain Objekt wird von verschiedenen Threads genutzt, Updates führen zu Konflikten
+
+* Die Benutzung der BatchActivity ist umständlich und missverständlich
+
+
+
+Mein Plan zur Lösung der Probleme:
+
+* Die BatchActivity wird gesplittet, in ein Domain Objekt und ein ""Proxy""
+
+* Die BatchActivity wird hierbei wie gewohnt zum Persistieren genutzt
+
+* Der Proxy speichert ""snapshots"" der Activity und speichert alle X Sekunden den aktuellsten Snapshot
+
+* Somit sind alle Zugriffe auf das Domain Objekt in einem Thread
+
+
+
+Der Proxy so modelliert werden, dass eine falsche Nutzung ausgeschlossen ist, was wiederum die Entwicklung erleichtert.
+
+Außerdem können wir so leicht dafür sorgen, dass lediglich ein Thread auf der Domain arbeitet."		Bug	OpenSpeedMonitor	12/May/16 2:11 PM	25/May/16 10:14 AM																																																																				

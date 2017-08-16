@@ -1,0 +1,33 @@
+Data structure view	"Third section in Metamodel tab
+
+
+
+Two radio buttons:
+
+ * Standard ({color:#14892c}german: Standard){color}
+
+ * My image ({color:#14892c}german: Mein Bild){color}
+
+ ** next to this option - button to chose new image for data structure (default weiß)
+
+ *** icon *file* *upload* text: Browse {color:#14892c}(german: Wählen){color}
+
+ ** if this option chosen, activate button to upload new file, if not chosen - button inactive
+
+
+
+restrictions according to:
+
+ * format: .svg
+
+ * size: width 1000px height 810px
+
+ * background - without
+
+
+
+ 
+
+
+
+All changes are saved imediately, users can see them after next log in. Inform the user about this in a note."		New Feature	iteraplan Speedbird	23/May/17 3:12 PM																																																																					

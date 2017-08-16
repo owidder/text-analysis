@@ -1,0 +1,47 @@
+List View - Add column creates a error	"Reproduce with trunk and IE 11
+
+ # Open ""Business Processes"" 
+
+ # Click on ""Add column""
+
+ # Choose ""ID"" 
+
+ # Nothing happens, the window freezes and a error appears in the log 
+
+
+
+ReferenceError: An exception occurred: ""getVisibleGridWidth"" ist undefiniert
+
+ at fitColumnWidthsToGrid (http://localhost:8080/client/components/ipList/ipList-component.js:400:9)
+
+ at addColumn (http://localhost:8080/client/components/ipList/ipList-component.js:938:9)
+
+ at fn (Function code:2:294)
+
+ at destination[scopeName] (http://localhost:8080/client/bower_components/angular/angular.js:9739:15)
+
+ at announceItemChange (http://localhost:8080/client/bower_components/angular-material/angular-material.js:25129:46)
+
+ at selectedItemChange (http://localhost:8080/client/bower_components/angular-material/angular-material.js:25122:48)
+
+ at Scope.prototype.$digest (http://localhost:8080/client/bower_components/angular/angular.js:16869:23)
+
+ at processQueue (http://localhost:8080/client/bower_components/angular-material/angular-material.js:1724:21)
+
+ at Anonymous function (http://localhost:8080/client/bower_components/angular/angular.js:18953:11)
+
+ at completeOutstandingRequest ([http://localhost:8080/clien]
+
+
+
+Expected To add a column
+
+Actual: A error appears by adding a column"		Bug	iteraplan Thunderduck	03/May/17 8:56 AM	16/May/17 1:17 PM														"04/May/17 8:38 AM;cst;With the update from this morning this error is gone.
+
+
+
+Greetings,
+
+
+
+Christoph Stangl - iteraplan Support"	04/May/17 10:07 AM;cst;it is back again 	16/May/17 12:59 PM;pma;Was fixed in the following commit: https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-9?cs=6736 																																																				

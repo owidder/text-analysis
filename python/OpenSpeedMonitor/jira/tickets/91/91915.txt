@@ -1,0 +1,60 @@
+Information Flow diagram shows no interfaces	"Information flow diagram should show information systems and the interfaces between them in Visio.
+
+Generated diagrams (also those which worked well before) do not show the arrows which represent the interfaces.
+
+
+
+See attachment for examples.
+
+
+
+best regards
+
+Ansgar Marsiske"		Fault	iteraplan Support	29/Jul/16 11:16 AM	20/Aug/16 7:00 AM														"29/Jul/16 11:16 AM;ansgar.marsiske@coface.com;
+
+[^error infor flow diagram.docx] _(179 kB)_"	"01/Aug/16 9:32 AM;cst;Dear Mr. Marsiske, 
+
+thank you for your enquiry.
+
+Would you please check the ""Configuration"" of your ""Information Flow Diagram"",
+because single settings can be changed with version 5.2.
+
+When you generate the ""Information Flow Diagram"" in the ""interactiv client"",
+is the diagram shown complete? 
+
+You can open the diagram, with the button ""Visualize in interactiv client "".
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "	"01/Aug/16 10:42 AM;ansgar.marsiske@coface.com;Dear Mr. Stangl,
+
+- interactive client diagram shows interfaces (but without name)
+- Visio diagram does not show any interface
+
+see also attachment for further explanation.
+
+kind regards
+Ansgar Marsiske
+
+[^error infor flow diagram 2.docx] _(200 kB)_"	"01/Aug/16 11:53 AM;ansgar.marsiske@coface.com;Dear Mr. Stangl,
+
+correction to my request:
+Visio diagram shows the interfaces if I choose ""Extras / Layout neu anordnen"".
+Obviously it's a problem of Visio 2007 and not of iteraplan.
+
+For that point we can close the request.
+
+The other issue about interactive client is more general problem:
+configuration settings are not taken from classic view, it has to be set additionally in interactive client, there is no way to save and reopen a saved diagram ...
+
+Kind regards
+Ansgar Marsiske"	"01/Aug/16 1:37 PM;cst;Dear Mr. Marsiske,
+
+that is right, settings cannot be taken over from the classic view. 
+In the future it is possible to save the diagrams, but at the moment this feature is not implemented.
+
+There is currently no definite date for this feature.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "																																																		

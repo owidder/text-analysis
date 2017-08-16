@@ -1,0 +1,79 @@
+Errors in imported Excel should lead to informative messages.	"If the user edits an exported Excel workbook and re-imports it,
+iteraplan should give informative messages (warnings or errors).
+It must not ignore the problem silently, nor must it display a technical error only (even if the stacktrace shows the problem clearly).
+
+Several cases found so far, all together in this ticket.
+Split off single tickets from this one if analysis shows that the fix is independent of the other cases.
+
+Case 1: Invalid ID ""AA"" (or special charactes ""~!#"") leads to ""name not unique"" in step 4
+expected: ""invalid ID: AA"" or similar in step 1.
+Tested with fresh export, edit ID of first row of FD, re-import
+
+Case 2: Invalid name "":"" leads to multiple messages ""Missing or invalid value for relationship end businessDomains."" or similar rel. end name.
+expected: one single message
+tested with FD and IS
+
+Case 3: Empty name leads to technical error with IllegalArgumentException: multiplicity of values to be checked for domain equivalence must be exactly one""
+expected: message, but no technical error
+tested with IS and FD
+
+Case 4: Invalid accountability value leads to DataIntegrityViolationException => BatchUpdateException: Duplicate entry ... for key 'ID_AV'
+expected: warning or error, but no technical error
+tested with FD
+
+Case 5: invalid value in position is silently ignored
+tested with ""AA"" and ""###"" in FD and GP
+expeced: warning (to be discussed, silent ignore could be OK, too)
+
+Case 6: Invalid date value (format) leads to technical error with underlying NumberFormatException
+Tested with PROD and development start
+Expected warning
+
+Case 7: Invalid date value (ordering) silently ignrored
+Tested with PORD and development start after development end.
+Expected warning
+
+Case 8: Invalid value for enumeration leads to technical error with underlying MySQLIntegrityConstraintViolationException: Duplicate entry ' ... for key 'NAME'
+expected: warning
+tested with IS complexity ""other""
+
+Case 9: Invalid status silently ignored
+expected warning
+tested with IS status ""AWESOME""
+
+Case 10: Invalid direction of interface leads to no warning messages in steps 1 to 4, but to message ""2 changes"" in step 5.
+expected warning in step 1, ignored afterwards
+tested with IF, direction ""OUTSIDE IN""
+
+
+
+
+
+
+
+"		Bug	iteraplan PO	08/Jul/14 11:45 AM	14/Jul/14 1:33 PM														08/Jul/14 1:03 PM;wfr;The problems in this ticket were found when testing the issue 2210.	09/Jul/14 10:42 AM;frank.reiter;I fully agree, I suffer from the same error in iteraplan  - see my tickets DM-468 and DM-476.	09/Jul/14 10:46 AM;dop;Linked two related issues reported by Frank Reiter.	10/Jul/14 2:13 PM;dop;Case 3 could not be reproduced	"10/Jul/14 2:21 PM;dop;Case 4 could not be reproduced. After changing the accountability of a FD, a message appears that one FD has been changed. In step 5, nothing happens (Keine Änderungen)
+
+Edit: In Discussion with [~wfr] and [~sfe] a new improvement ticket has been created to handle this issue: ITERAPLAN-2605
+"	"10/Jul/14 2:26 PM;dop;case 5 could not be reproduced, a warning message is displayed. 
+
+{noformat}
+Fehler in Sheet Fachliche Domäne (FD) H-8: Der Wert ""###"" der Eigenschaft ""position"" des Objekts vom Typ ""Fachliche Domäne"" mit der id 57 ist ungültig.
+{noformat}"	"10/Jul/14 3:25 PM;dop;case 6 could not be reproduced, a warning message is displayed:
+
+{noformat}
+Fehler in Sheet Produkt (PROD) E-11: Der Wert ""31-09-2009"" der Eigenschaft ""Development (End)"" des Objekts vom Typ ""Produkt"" mit der id 50 ist ungültig.
+{noformat}"	"10/Jul/14 3:47 PM;dop;case 7 could not be implemented, because of missing information (dependency of dates)
+
+Edit: A validation of the order of the runtimePeriod dates is possible and has been improved in this ticket."	"10/Jul/14 3:49 PM;dop;case 8 could not be reproduced, a warning message is displayed:
+
+{noformat}
+Fehler in Sheet Informationssystem (IS) E-8: Der Wert ""other"" der Eigenschaft ""Complexity"" des Objekts vom Typ ""Informationssystem"" mit der id 243 ist ungültig.
+{noformat}"	"10/Jul/14 3:51 PM;dop;case 9 could not be reproduced, a warning message is displayed:
+
+{noformat}
+Fehler in Sheet Informationssystem (IS) X-15: Der Wert ""AWESOME"" der Eigenschaft ""typeOfStatus"" des Objekts vom Typ ""Informationssystem"" mit der id 207 ist ungültig.
+{noformat}"	"10/Jul/14 3:53 PM;dop;case 10 could not be reproduced, a warning message is displayed:#
+
+{noformat}
+Fehler in Sheet InformationFlow (IF) C-13: Der Wert ""OUTSIDE IN"" der Eigenschaft ""Flussrichtung"" des Objekts vom Typ ""InformationFlow"" mit der id -261 ist ungültig.
+{noformat}"	11/Jul/14 9:17 AM;dop;Added testfiles.zip, which contains excel files for the different cases to test the new error handling. Please consider also the comments on this ticket for review.	14/Jul/14 10:41 AM;sfe;Some minor improvements/fixes I talked about with dop are still to be done.	14/Jul/14 1:33 PM;sfe;seems fine																																									

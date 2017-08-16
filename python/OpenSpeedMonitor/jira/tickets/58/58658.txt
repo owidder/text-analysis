@@ -1,0 +1,23 @@
+Change display of "on/off" entries in tool area	"Currently, on/off entries are displayed as in following example for orphans in LSD:
+
+
+
+* ""Show orphan items"" - means currently orphan items are not shown. Click to display them.
+
+* ""Hide orphan items"" - means currently orphan items are shown. Click to hide them.
+
+
+
+Click on the option changes the display to the other one.
+
+
+
+To make it easier to grasp which the current status of the option is, change this according to following example:
+
+* Text doesn't change anymore. Display only ""Show orphan items""
+
+* Also display one of the following in the same menu entry:
+
+** on/off switch symbol on the right side. Do this only if possible without much effort, meaning if possible with what our frameworks offer.
+
+** Checkbox in front of the text"		Improvement	iteraplan PO	29/Sep/15 5:32 PM	27/Aug/16 11:34 AM														27/Aug/16 11:34 AM;fka;Done with other work on the tool area																																																						

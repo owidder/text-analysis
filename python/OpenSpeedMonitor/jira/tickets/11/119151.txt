@@ -1,0 +1,19 @@
+Style Improvement Custom Dashboard	"* Remove text ""Preview""
+
+* Remove ""Reset View""-Button
+
+* Hide text editor and ""Done""-Button after clicking on a newly created ""Edit""-Button
+
+** icon ""edit""
+
+** text: ""Edit"" / ""Bearbeiten""
+
+* Rename ""Done"" to ""Show"" / ""Anzeigen""
+
+
+
+When you click on the ""edit""-button, the following features open:
+
+* input field
+
+* right of the input field the done and clear-buttons"		Improvement	iteraplan Speedbird	20/Apr/17 1:35 PM	24/Apr/17 4:51 PM														24/Apr/17 4:11 PM;viol;review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-528																																																						

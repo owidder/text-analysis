@@ -1,0 +1,4 @@
+Change sorting order for Statuses by workflow	"1. Target
+2. Planned
+3. Current
+4. Inactive"	46866	Sub-task	iteraplan PO	18/Aug/14 7:38 PM	29/Sep/14 9:50 AM																																																																				

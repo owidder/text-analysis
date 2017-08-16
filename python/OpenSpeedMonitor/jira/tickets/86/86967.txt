@@ -1,0 +1,23 @@
+Sorting of multi value text columns doesn't work correctly	"_Reproduce (with sample data):_
+
+# In classic client, add for at least one information system multiple values under ""Accountability"", for example ""joe, max, alice""
+
+# Change to interactive client and display information system list
+
+# Add column ""Accountability""
+
+
+
+_Expected:_
+
+* Independent from the order in which the values were added, the Accountability values should be sorted alphabetically. In our example: ""alice, joe, max""
+
+* Sorting of rows should treat each assigned value like a ""letter"". For example ""alice, joe"" would be sorted before ""alice, max"" because it compares ""alice"" with ""alice"" first, and since those two are the same, it then compares ""joe"" with ""max"".
+
+
+
+_Actual:_
+
+* No sorting of multiple values within one row
+
+* Sorting of rows treats multiple values as one concatenated string"		Bug	iteraplan PO	10/Jun/16 3:53 PM	14/Jun/16 11:08 AM														14/Jun/16 5:07 PM;sfe;Revision [3471|https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-9?cs=3471] belongs to ITERAPLAN-4707, was commited wrongly on this ticket.																																																						

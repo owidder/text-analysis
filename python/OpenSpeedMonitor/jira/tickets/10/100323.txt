@@ -1,0 +1,13 @@
+Handling von überlaufenden Queues	"Aktuell stellt der OSM unkontrolliert weiter Jobs in WPT-Server-Queues, die nicht mehr hinterherkommen und bereits am überlaufen sind. 
+
+
+
+Dabei pollt der OSM selbst nur 60 Minuten nach Ergebnissen. Wenn eine Queue übergelaufen ist kann das dazu führen, dass diese immer weiter anwachsen und nicht wieder soweit abgearbeitet werden, bis der OSM in 60 Minuten ein Ergebnis bekommen kann.
+
+
+
+Der OSM sollte überlaufende Qeues erkennen. Dies kann durch Anfrage der Queue-Size beim WPT-Server erfolgen oder auch durch die Häufung von in 60 Minuten nicht erfolgreich abgeschlossenen Jobs im OSM.
+
+
+
+Wenn überlaufende Queues erkannt sind sollte der OSM die Polling time erhöhen und das weitere Einstellen von Jobs in die entsprechenden Queues pausieren."		Task	OpenSpeedMonitor	24/Oct/16 10:30 AM																																																																					

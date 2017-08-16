@@ -1,0 +1,7 @@
+LSD Slider	The slider is shown but the value cant be changed. 		Bug	iteraplan PO	14/Sep/15 8:52 AM	17/Sep/15 10:08 AM					lsd	ranges								"16/Sep/15 10:40 AM;dam;the slvalue doesn´t contain the right value. it must be an object with value = ranges.
+
+i think the template was changed by integrating the slider in the ncd
+
+
+
+extended the documentation for slider and datepicker. this wasn´t doe"																																																						

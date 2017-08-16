@@ -1,0 +1,44 @@
+Consistent Naming for Base/Release Names, IDs, ...	"Discussion with H/DM MRe:
+
+""name"" in context IS: name of IS, no #, no version/release
+""name"" in context ISR: dito name of IS
+
+""IS name"", ""ISR name"": long for ""name""
+
+same for name in context TC/TCR
+
+""release name"", ""Versionsname"": name + ""#"" + release/Version
+""ISR release name"": long for ""release name""
+""IS release name"": not defined
+
+same for TC/TCR
+
+""release"" in context ISR: stuff after ""#""
+""release"" in context IS: not defined
+
+""version"", ""Version"" is not used in English/German. Term is not defined.
+
+""ID"" in context IS: ID of IS itself
+""ID"" in context ISR: ID of ISR
+""IS ID"": ID of IS, regardless of context
+""ISR ID"": ID of ISR, regardless of context
+
+""Release ID"": generic for ""ISR ID"" or ""TCR ID""
+""Base ID"": generic for ""IS ID"" or ""TC ID""
+
+""parent"" in context ISR: parent ISR of current ISR
+""parent"" in context IS: undefined
+
+Note: an ISR with a parent has a parent-base, ""base of parent"" as a derived/implicit relationship.
+
+""parent name"" in context IS or ISR: ""name"" or ""IS name"" or ""ISR name"" of parent, that is without #...
+""parent release name"" in context IS or ISR: release name of parent, that is with #...
+
+""hierarchical name"" in context ISR: short and preferred for hierarchical release name
+""hierarchical release name"" in context ISR: hierarchical release name of parent + "":"" + release name, that is with #...
+Note: Recursion, no separator if no parent.
+
+""hierarchical name"" or ""hierarchical release name"" in context IS: not defined
+
+
+Note: contrary to popular belief, in both German and English the part after the hash is called ""release"", and only in French and Spanish Version or similar."		New Feature	iteraplan PO	11/Jun/14 3:40 PM	19/Jan/16 11:08 AM																																																																				

@@ -1,0 +1,27 @@
+Attribute - Enumeration Attribute - Nr. starts with 2	"Reproduce with trunk
+
+ # Create a ""Enumeration"" attribute
+
+ # Click on ""New"" in the part ""Possible Values"" 
+
+ # Create a new Value
+
+ # Now the new created value is shown but in the column ""Nr."" he shows a ""2""
+
+
+
+When you create more than one value and use the drag and drop options. The ""Nr."" column shows the false ""Nr."". It is possible to have numbers two times. 
+
+
+
+Expected: Numbering starts with 1 
+
+ Actual: Starts with 2  "		Bug	iteraplan PO	29/May/17 1:12 PM	16/Jun/17 6:02 PM														05/Jun/17 6:28 PM;fka;During adding (green row) number shown is 0. Maybe show no number during adding.	"13/Jun/17 4:29 PM;roia;{quote}During adding (green row) number shown is 0. Maybe show no number during adding.
+
+{quote}
+
+ 
+
+
+
+Now the green row shows ""-1"" - fixed this with CSS (rev. 7048)"																																																					

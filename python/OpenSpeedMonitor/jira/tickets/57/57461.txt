@@ -1,0 +1,11 @@
+Measure PartialDiagram Limit	Configure Limit to run in worst case environment (IE)	50814	Sub-task	iteraplan PO	17/Sep/15 3:06 PM	21/Sep/15 12:10 PM														"18/Sep/15 9:23 AM;fro;||Browser||250||500||
+
+|FF|24s|34s|
+
+|Chrome|18s|23s|
+
+|IE|20-40s (sometimes ""not enough memory"")|34s+ everything is lagging|
+
+
+
+larger diagram -> longer loading (drawing) time (regardless of the number of elements)"																																																						

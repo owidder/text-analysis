@@ -1,0 +1,48 @@
+Error when trying to add business mapping	It is not possible to add or delete business mapping		Fault	iteraplan Support	22/Mar/17 2:10 PM	27/Mar/17 7:29 AM														"22/Mar/17 2:10 PM;stephan.siebel@boehringer-ingelheim.com;
+
+[^ProblemReport_2017-02-23_114822.zip] _(14 kB)_
+
+[^_IE9505.tmp] _(64 kB)_
+
+[^_IE9516.tmp] _(70 kB)_
+
+[^_IE9517.tmp] _(52 kB)_"	"22/Mar/17 2:50 PM;clemens.utschig-utschig@boehringer-ingelheim.com;Dear Iteratec - this is a blocker - we cannot change a single mapping - so cleaning up the integration landscape does NOT work
+"	"22/Mar/17 3:28 PM;cst;Dear Mr. Siebel,
+
+thank your for your inquiry. 
+
+Could please do following steps:
+ * Open the tab ""Administration"" and ""Configuration""
+ * Click on ""Clear cache""
+ * After the cache was cleared retry to add or delete a business mapping
+
+In addition, our developers check the reason for this behavior and I will inform you when I have new information.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	22/Mar/17 3:39 PM;clemens.utschig-utschig@boehringer-ingelheim.com;done it - no changes.	22/Mar/17 3:40 PM;clemens.utschig-utschig@boehringer-ingelheim.com;done (at non admin user) - clearing the local session. Is it needed @admin level?	"22/Mar/17 3:53 PM;cst;You need the permission ""Edit configuration of iteraplan"" then the menu ""Administration"" and ""Configuration"" appears. 
+Here you will find the part ""Database cache"" and ""Clear cache"".
+
+Greetings,
+
+Christoph Stangl - iteraplan Support 
+
+ "	"23/Mar/17 11:03 AM;stephan.siebel@boehringer-ingelheim.com;Seems to be a problem with the new history function 
+
+Caused by: org.springframework.dao.DataIntegrityViolationException: could not execute batch; SQL [/* insert de.iteratec.iteraplan.persistence.history.BusinessMappingHistoryEntity */ insert into HISTORY_BM (TIMESTAMP, AUTHOR, ID_BB, IDENTIFIER_BB, CHANGE_TYPE, ID_FEATURE, NAME_FEATURE, FEATURE_TYPE, MULTI_VALUE, ID_BP, ID_BU, ID_P, ID_ISR, NAME_BP, NAME_BU, NAME_P, NAME_ISR, ID) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]; nested exception is org.hibernate.exception.DataException: could not execute batch"	"23/Mar/17 12:00 PM;stephan.siebel@boehringer-ingelheim.com;Trying to find the error myself I have made the following observations
+If you start IE and request http://capry/iteraplan/api/data/InformationSystem you get the 401 error
+If you start IE an log into iteraplan http://capry/iteraplan you get an result on an second tab for the same request"	"23/Mar/17 1:12 PM;cst;Dear Mr. Siebe,
+
+thank you for your reply. 
+
+Could you please execute the following command in your MS SQL Database:
+
+
+
+*ALTER TABLE HISTORY_BM ALTER COLUMN IDENTIFIER_BB VARCHAR (1050) NULL;* 
+
+When this was succeeded, restart the iteraplan instance and retry the progress.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "	24/Mar/17 3:25 PM;stephan.siebel@boehringer-ingelheim.com;FIXED CAN BE CLOSED																																													

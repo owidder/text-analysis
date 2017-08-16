@@ -1,0 +1,5 @@
+Show with text properties legend is wrong	"Context menu - Show with text properties - name - ""a"":
+
+
+
+legend shows something like ""metamodel.string ..."" instead of ""a"""		Bug	iteraplan PO	22/Oct/15 9:58 AM	23/Oct/15 10:39 AM					filter	ncd								23/Oct/15 10:39 AM;lwi;works! 																																																						

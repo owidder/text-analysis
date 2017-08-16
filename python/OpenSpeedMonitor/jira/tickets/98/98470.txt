@@ -1,0 +1,5 @@
+Show zoom level in the legend	"*Summary:*
+
+Show the actual zoom level at the bottom of the legend in the PorfolioDiagram if it is not 100%.
+
+Use the Masterplan Diagram implementation in the legend as template."		Improvement	iteraplan Speedbird	07/Oct/16 3:35 PM	21/Oct/16 2:43 PM														20/Oct/16 2:45 PM;mash;Commit 4750 was done by Dmytro Khomych svn credentials by mistake. 																																																						

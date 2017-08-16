@@ -1,0 +1,14 @@
+Same Memory Bean used in different Tabs in Iteraplan	"To Reproduce:
+- Go to DateIntervals
+- create new DateInterval
+- open new Tab also with ""create new DateInterval""
+- Configure and save one DI
+- now try to save the other one
+---> NPE
+
+Expected Behaviour:
+- User should be able to save the 2nd DI too
+
+Investigate:
+- This problem occurs because the user accesses the same memory bean
+- Investigate if the problem occurs on different pages in iteraplan"		Bug	iteraplan PO	26/Aug/13 5:49 PM	30/Dec/15 3:17 PM					concurrency	dateinterval																																																														

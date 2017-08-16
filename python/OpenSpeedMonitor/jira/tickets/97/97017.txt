@@ -1,0 +1,17 @@
+Build wrapper for elastic model to be used by the plugins	"At the moment, the plugins work on a clone of the current model, but cloning is relatively slow. So instead, wrappers for Model and ObjectExpression should be implemented.
+
+
+
+* The model wrapper holds information about created and deleted ObjectExpressions
+
+* The model wrapper wrapps ObjectExpressions on demand when they are requested and holds the wrappers.
+
+* ObjectExpression wrapper holds all changes on an ObjectExpression on write access and, when property values or relationship assignments are requested, returns the values of the base object merged with those changes.
+
+** pay attention especially to relationships: both ends need to be adjusted.
+
+** For that, ObjectExpression wrapper has a reference to the model wrapper which adjusts the other end of the relationship accordingly.
+
+* Have a mini transaction managment which merges the saved changes into the actual Model and ObjectExpressions when the changes are commited successfully to the database (and deletes them otherwise).
+
+* Avoid using the metamodel API for accessing the model here, as accessing model data that way is slow."		Improvement	iteraplan PO	23/Sep/16 11:36 AM															21/Feb/17 10:01 AM;fka;Time box 1 PD																																																						

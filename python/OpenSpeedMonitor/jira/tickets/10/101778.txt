@@ -1,0 +1,1 @@
+Show multiple values in separate lines	Show multiple values in separate lines without brackets ("[]") or quotation marks ("")		Improvement	iteraplan Speedbird	07/Nov/16 2:40 PM	10/Nov/16 3:06 PM														10/Nov/16 3:06 PM;mash;Review is Done: https://iteraweb.iteratec.de/fisheye/cru/IP-175																																																						

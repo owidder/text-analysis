@@ -1,0 +1,63 @@
+Masterplan mit Projekten	"Problem gemeldet für 5.0 und 5.1
+
+In 5.2 immer noch vorhanden
+
+
+
+[From: Zerrer, Wolfgang 
+
+Sent: Wednesday, November 04, 2015 5:03 PM
+
+To: 'iteraplan.support@iteratec.de' <iteraplan.support@iteratec.de>
+
+Subject: Masterplan Graphik in 5.0 und 5.1
+
+
+
+Hallo lieber Support,
+
+
+
+wir haben mal wieder ein Problem.
+
+
+
+Wir pflegen beim Object „Project“ die Relationen „bezieht sich auf“ und „hat einen Bezug von“  
+
+Diese Relationen wollen wir in einer Masterplan-Graphik darstellen.
+
+Leider geht es nicht !
+
+Es scheint als ob bei der gewählten Abhänigkeit nicht das „Project“ sonder das „InfrastructureElement“ angezogen wird.
+
+Wir brauchen diese Funktion. Wir haben 5.0 im Einsatz und brauchen für diese Version einen Patch.
+
+Beispiel unten ist aus eurer Standalone-Version.
+
+
+
+Mit freundlichen Grüßen
+
+Wolfgang Zerrer
+
+"		Fault	iteraplan Support	23/Jun/16 11:35 AM	27/Jun/16 1:03 PM														23/Jun/16 1:25 PM;msr;Wurde in ITERAPLAN-4113 bereits gefixt und funktioniert in 5.2	"23/Jun/16 1:29 PM;msr;Hallo Herr Zerrer,
+
+danke für Ihre Meldung.
+Ich habe in der iteraplan 5.2 Online Demo versucht das zitierte Problem nachzustellen. Dabei konnte ich die angehängten Graphiken mit Projekt inkl.""bezieht sich auf"" und ""hat einen Bezug von"" Beziehungen erstellen. Daher scheint mir das ursprüngliche Problem behoben zu sein.
+Besteht ein neues Problem in diesem Bereich?
+
+Mit freundlichen Grüßen
+
+M. Schrumpf"	23/Jun/16 1:46 PM;wolfgang.zerrer@festo.com;wenn Sie bei der Beziehung auf einfärben gehen, stellen Sie fest, daß Sie die Attribute der Infrastrukturelemente und nicht der Projekte angezeigt bekommen. Ist dieses „Beziehung“ nur für Infrastrukturelemente gedacht ?	"23/Jun/16 1:57 PM;msr;Hallo Herr Zerrer,
+
+danke für die Klarstellung.
+Die Beziehungen selbst (also Namen) sind inzwischen korrekt. Die Attribute zum Einfärben sind falsch (werden fälschlicherweise von den Infrastruktur-Elementen genommen). Ich werde ein entsprechendes Bug-Ticket erstellen und es dann hier direkt verlinken.
+Trifft meine Beschreibung nun zu und ist vollständing?"	23/Jun/16 2:10 PM;wolfgang.zerrer@festo.com;Beschreibung trifft zu. Wie geht es der IPS-98 ?	"23/Jun/16 4:54 PM;msr;Frage an [~fka]:
+
+Würde durch den neuen Client gelöst. Aber ist leider fachlich falsch im Classic Client. Fixen oder nicht?
+
+Ja, fixen, da falsch und nur Kleinigkeit"	"27/Jun/16 1:03 PM;msr;Hallo Herr Zerrer,
+
+das Bug-Ticket wurde angelegt: ITERAPLAN-4752
+
+Ich schließe damit den Support-Fall."																																																

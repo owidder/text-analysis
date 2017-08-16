@@ -1,0 +1,5 @@
+Parallellisierung des bulkCall()	"Den bulkCall() des HttpCallHandlers mittels AsyncHttpBuilder mit einem Threadpool parallelisieren.
+
+
+
+http://groovy.codehaus.org/modules/http-builder/doc/async.html"		Improvement	secureCodeBox	02/Oct/14 4:13 PM	06/Oct/14 5:41 PM																																																																				

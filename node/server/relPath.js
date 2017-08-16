@@ -1,6 +1,6 @@
 'use strict';
 
-var BASE_PATH = '/Users/owidder/dev/iteragit/nge/python/erpnext/';
+var BASE_PATH = '/Users/owidder/dev/iteragit/nge/python/OpenSpeedMonitor/';
 var SUFFIX = ".utf8";
 
 function removeBasePath(absPath) {

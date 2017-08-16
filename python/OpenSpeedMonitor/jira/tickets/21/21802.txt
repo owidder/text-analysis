@@ -1,0 +1,5 @@
+Testcase für HTTP Requesthandler implementieren	"- Mock des HTTP Requesthandlers
+
+- Testcase für eine Funktion erstellen, die den HTTP Requesthandler benutzt
+
+- Testcases für mögliche Rücckgabewerte erstellen: Fehlerseiten, Mimetypes, fehlende Mimetypes, Timeouts, ..."		Story	secureCodeBox	10/Oct/14 8:48 AM	11/Nov/14 3:06 PM																																																																				

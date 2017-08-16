@@ -1,0 +1,19 @@
+Deleting all business objects of one information flow causes errors	"1. case
+
+ * Go to the information system list and click on the SEV of Account Sys RB # 3.1
+
+ * delete all business objects of the interface TX Clearing
+
+ * click on TX Clearing without refresh
+
+ * Currently: The Name of TX Clearing does not contain information about the 2 connected information systems in the title as expected. If you now click on ""Back To List"" you get an error
+
+
+
+2. case
+
+ * Go to the interface list and delete all business objects of an interface
+
+ * click on that interface to get to the SEV
+
+ * the same error occurs, again, due to the fact that the 2 connected information systems cannot be found if the information flow is a dummy flow"		Bug	iteraplan Thunderduck	25/Apr/17 2:56 PM	05/May/17 4:27 PM																																																																				

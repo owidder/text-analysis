@@ -1,0 +1,17 @@
+Add quick Search and Export to CSV, XLSX to History List	"*Summary:*
+
+Add
+
+* Quick Search and 
+
+* Export to CSV, XLSX
+
+
+
+* No user setting (i.e. do not save conf in url)
+
+
+
+to History List
+
+{color:red}UPDATE:{color} on all-tab and on history-tab"		New Feature	iteraplan Speedbird	22/Nov/16 3:12 PM	20/Jan/17 5:49 PM														18/Jan/17 1:19 PM;msr;Already started by [~madu] . Please finish his work.	19/Jan/17 12:18 PM;mash;[~msr], add quick Search and Export to CSV, XLSX to History tab only or for All tab( history section) as well?																																																					

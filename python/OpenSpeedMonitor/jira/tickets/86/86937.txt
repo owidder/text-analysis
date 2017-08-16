@@ -1,0 +1,30 @@
+Zeichenbegrenzung bei der Darstellung von Listen	"Hallo,
+
+
+
+ich habe folgende Frage: Beim Ausführen einer IteraQL Abfrage erhalte ich eine Liste von Eintzrägen unserer Systeme mit Beschreibung zurück. Leider wird die Beschreibung nach einer bestimmten Anzahl Zeichen mit ... abgeschnitten (siehe angehängten Screenshot). Gibt es eine Möglichkeit, hier auch den gesamten Beschreibungstext auszugeben?
+
+
+
+Mit freundlichen Grüßen,
+
+Thorsten Köhler"		Technical question	iteraplan Support	10/Jun/16 1:51 PM	28/Jun/16 11:12 AM														"10/Jun/16 1:51 PM;thorsten.koehler@boehringer-ingelheim.com;
+
+!Unbenannt.PNG|thumbnail!"	"14/Jun/16 2:56 PM;tam;Hallo Herr Köhler,
+
+ich konnte das von Ihnen beschriebene Verhalten nachstellen. Allerdings gibt es leider keine Möglichkeit in der Anfragekonsole die gesamte Beschreibung mit sehr langen Texten anzuzeigen.
+
+Helfen Ihnen vielleicht folgende zwei Alternativen:
+# Sie können iteraQL-Abfragen auch über REST ausführen 
+https://www.iteraplan.de/doc/display/iteraplan52/REST+API+Resource+Structure#RESTAPIResourceStructure-QueryResourceandBuildingBlockListResource
+# Eine andere Möglichkeit wäre der partielle Excel-Export, bei dem Sie auch iteraQL-Abfragen verwenden können.
+https://www.iteraplan.de/doc/pages/viewpage.action?pageId=6848788
+
+Auch nehme ich diesen Punkt für die Implementierung in unserem interactiven Client auf.
+
+Mit freundlichen Grüßen
+Timur Ametov"	"27/Jun/16 9:18 AM;thorsten.koehler@boehringer-ingelheim.com;Hallo Herr Ametov,
+danke für diese zwei Alternativen. Ich denke per REST werde ich weiter kommen.
+
+Viele Grüße,
+Thorsten Köhler"	27/Jun/16 9:19 AM;thorsten.koehler@boehringer-ingelheim.com;Der Request kann dann geschlossen werden.																																																			

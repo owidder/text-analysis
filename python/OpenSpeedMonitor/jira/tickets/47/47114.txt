@@ -1,0 +1,5 @@
+Stream changes from server to client	"*Priority 5*
+
+To the existing server and the existing model data on the client, add a change notification so that all changes on the server are reflected on the client eventually, and without blocking.
+
+"		Epic	iteraplan PO	03/Nov/14 4:13 PM	11/Jun/17 12:51 PM																																																																				

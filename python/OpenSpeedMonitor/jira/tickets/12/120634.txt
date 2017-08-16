@@ -1,0 +1,53 @@
+Waiting for the response for Interfaces has to be marked	"When creating an interface via ""connectViaInterface"" it takes some time until the response is added to the view.
+
+
+
+In the meantime add an intermediate element.
+
+
+
+Add its creation to the addInformation function (or create an extra function, if necessary) and give it an good id so it can be deleted when adding the interface after the response.
+
+
+
+The entry is shown as inactive entry like the other intermediate entries.
+
+
+
+Also update the shown selections.
+
+
+
+If this is not working show an alert (the grey one, like the loading data) with text ""Please waite, the interface is created"" and ""Bitte warten, das Interface wird erstellt"".
+
+
+
+User story:
+
+
+
+The user is in the SEV of an IS.
+
+
+
+The user adds an Interface by choosing a different IS in the addRelations dropdown and choosing ""via interface"".
+
+
+
+Immediately and intermidate entry for an interface without name is shown in the view with direction ""no direction"",  no ""transporting Business objects"" and no ""implementing technical components"".
+
+
+
+This row is shown as inactive row so the user nows that it is not editable yet.
+
+
+
+After a while the row is replaced by a new row that is shown as all other rows, so the user knows that it is editable now.
+
+
+
+ 
+
+
+
+ "		Improvement	iteraplan Thunderduck	05/May/17 12:46 PM															26/Jun/17 8:28 AM;aan;This should be done after the metamodel changes, then it is probably different and hopefully easier.																																																						

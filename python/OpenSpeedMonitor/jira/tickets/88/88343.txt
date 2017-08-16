@@ -1,0 +1,45 @@
+All Building Block Types as Content Type	"*Summary:*
+
+Enable all Building Block Types as Content Type even if they do not have any date interval.
+
+
+
+*As-Is:*
+
+* Only Building Block Types with a date interval can be selected.
+
+
+
+*To-Be:*
+
+* All Building Block Types and all related Building Block Types can be selected.
+
+* If a Building Block Type without a date interval is selected, show the normal mpdDataDiagram and just do not display any timebar for this type.
+
+
+
+*Implementation Details:*
+
+* Url: Nothing to do in the url
+
+* Additionally: Adapt the selection of date intervals: It is now possible to remove the last date interval.
+
+* Additionally: Delete the logic to find an initial Building Block Type with a date interval. Information System is the initial Building Block Type if the user has the permission independently of the date intervals.
+
+
+
+*UI:*
+
+* Legend: Ensure that the legend works without any date interval
+
+* Toolarea: Remove the different grey tones and the different mouse icons -> everything is selectable.
+
+* Toolarea: Date Intervals: If there are no date intervals, remove the arrow to the right.
+
+"		Improvement	iteraplan Speedbird	24/Jun/16 2:04 PM	12/Jul/16 8:47 AM														"04/Jul/16 1:59 PM;msr;We still need permission handling, but no handling for missing date intervals, i.e.
+
+
+
+* if user has no permission for Information Systems, please show the next Building Block Type with permission on the existing list"	04/Jul/16 2:02 PM;msr;If there are no date intervals on any level, please show current year.	"11/Jul/16 4:56 PM;dmkh;The major part of requirements are implemented, but still it is impossible to remove the last date interval. Also maybe some additional unit tests are needed.
+
+The code review is here: https://iteraweb.iteratec.de/fisheye/cru/IP-58"	11/Jul/16 6:24 PM;mada;change code due review comments	12/Jul/16 8:47 AM;dmkh;All functionality is implemented. Review is complete. Good job!																																																		

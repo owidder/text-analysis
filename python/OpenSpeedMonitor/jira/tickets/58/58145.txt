@@ -1,0 +1,17 @@
+Im-/Export CSI-Mapping	"Vor einem Import soll eine Validierung des CSV's erfolgen.
+
+Diese soll folgendes prüfen:
+
+* Das Format: Alle Zeilen müssen folgende Werte enthalten: String;Integer;Double
+
+* Pro Name soll es von 0 bis 20.000 ms Werte in 50ms Schritten geben. Es muss also pro Name exakt 400 Werte geben.
+
+
+
+Die Validierung soll zuerst mittels einem Ajax-Call passieren. Wenn es Namen aus der zu importierenden CSV bereits in der DB gibt soll eine Nchfrage erfolgen, ob diese Mappings überschrieben werden sollen. 
+
+Neue Mappings werden einfach übernommen.
+
+
+
+Ein Funktion zum Löschen bestehender Mappings kommt noch. "		New Feature	OpenSpeedMonitor	24/Sep/15 1:46 PM	14/Dec/15 12:39 PM																																																																				

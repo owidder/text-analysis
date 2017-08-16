@@ -1,0 +1,53 @@
+Fehler beim Öffnen eines Links für einen Fehlerbericht	"Hallo Herr Stangl,
+
+
+
+wie in IPS-265 erwähnt, kann ich Links auf Fehlerberichte wegen fehlenden Rechten nicht öffnen. Die mir zugeordnete Admin-Rolle besitzt allerdings sämtliche Pflege- und funktionalen Berechtigungen.
+
+
+
+Vorab vielen Dank für die Unterstützung.
+
+
+
+Viele Grüße
+
+Matthias Habermann"		Fault	iteraplan Support	11/Jan/17 11:14 AM	12/Jan/17 11:49 AM														"11/Jan/17 11:14 AM;matthias.habermann@wacker.com;
+
+!Fehler_Link_zum_Fehlerbericht.PNG|thumbnail!
+
+[^Fehler_Link_zum_Fehlerbericht.log] _(7 kB)_
+
+!Rechte_Admin_User.PNG|thumbnail!"	"11/Jan/17 2:33 PM;cst;Sehr geehrter Herr Habermann,
+
+vielen Dank für Ihre Anfrage.
+
+Der Fehlerbericht, wie auch die System-Info kann im iteraplan nur von der Gruppe ""iteraplan_Supervisor"" erzeugt werden,
+oder eine Gruppe die mit der ""iteraplan_Supervisor"" Gruppe verknüpft ist. 
+
+Um dies durchzuführen, gehen Sie bitte wie folgt vor:
+
+#	Öffnen Sie Ihre Datenbank 
+#	Gehen in die Tabelle „role“
+#	Hier sollte der Datensatz „Iteraplan_Test_Admin“ und „iteraplan_Supervisor“ angelegt sein   
+#	Notierten Sie sich von beiden die ID´s 
+#	Jetzt gehen Sie in die Tabelle „role_role“ und erzeugen einen neuen Eintrag
+#	Die erste ID ist die vom „iteraplan_admin“ und danach die ID des „iteraplan_Supervisor“
+#	Damit sind die Rollen miteinander verknüpft
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+
+"	"12/Jan/17 9:21 AM;matthias.habermann@wacker.com;Guten Morgen Herr Stangl,
+
+vielen Dank für den Hinweis. Ich werde die Verknüpfung einrichten lassen und mich dann nochmals melden.
+
+Beste Grüße
+Matthias Habermann"	"12/Jan/17 11:15 AM;matthias.habermann@wacker.com;Hallo Herr Stangl,
+
+funktioniert! Das Ticket kann geschlossen werden. Vielen Dank.
+
+Beste Grüße
+Matthias Habermann"																																																			

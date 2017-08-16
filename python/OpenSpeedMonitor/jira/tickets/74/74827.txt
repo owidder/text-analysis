@@ -1,0 +1,17 @@
+Custom metrics messbar machen	"Es gibt in WPT die Möglichkeit, custom metrics zu definieren und zu messen.
+
+Diese Funktion ist [hier|https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/custom-metrics] beschrieben.
+
+
+
+Wir sollten das auch aus dem OSM heraus ermöglichen. 
+
+Hierfür sind die folgenden Dinge zu implementieren:
+
+
+
+* Wir bräuchten wir in der GUI des Jobs Controls, über die custom metrics definiert werden können.
+
+* Zudem müssen wir im LocationAndResultPersister auch die custom metrics aus dem result-XML des Servers persistieren. [Hier|http://prod.server01.wpt.iteratec.de/xmlResult.php?test=160226_MN_4] ist ein Beispiel-XML, in dem die folgenden drei custom-Metrics gemessen wurden: {code}<custom><value>iframe-count</value><value>script-tag-count</value><value>meta-viewport</value></custom><iframe-count>1</iframe-count><script-tag-count>18</script-tag-count><meta-viewport>width=device-width, initial-scale=1.0</meta-viewport>{code}
+
+* Die custom metrics müssen im Ergebnis-Dashboard auswählbar sein und zur Anzeige gebracht werden können."		Improvement	OpenSpeedMonitor	26/Feb/16 11:16 AM						idea																																																															

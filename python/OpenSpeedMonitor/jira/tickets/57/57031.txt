@@ -1,0 +1,1 @@
+Show actual min/max numbers in legend for numeric coloring			Improvement	iteraplan PO	14/Sep/15 1:26 PM						color																																																															

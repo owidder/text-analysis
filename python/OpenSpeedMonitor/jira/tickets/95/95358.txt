@@ -1,0 +1,7 @@
+Post with properties in body	"POST requests with properties in requset body should be processed
+
+- accept only full set of mandatory properties or no body at all.
+
+
+
+Either standalone and associativ building block types! (split in two tickets if necessary)"		Improvement	iteraplan Thunderduck	06/Sep/16 6:00 PM	09/Sep/16 10:56 AM																																																																				

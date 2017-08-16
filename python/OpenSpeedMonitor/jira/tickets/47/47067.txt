@@ -1,0 +1,10 @@
+Test "save/save as" functionality	"Create simple test sheet in sub folder of {{doc/test}}.
+
+* Add a few simple test cases to test the new ""save/save as"" functionality in reports (spreadsheet and graphical)
+** save (overwriting existing)
+** save as (create new)
+** save as (name collision)
+** ...
+
+* Install iteraplan using one of the not yet or lesser tested configurations in the installer test sheet
+* Perform the testcases from the test sheet and attach the results to this ticket"	47060	Sub-task	iteraplan PO	17/Oct/14 2:12 PM	24/Oct/14 4:26 PM					save	test								23/Oct/14 5:00 PM;msr;All test cases are ok	24/Oct/14 4:21 PM;fam;Test-sheet is ok. Successful tested, so it's fine.																																																					

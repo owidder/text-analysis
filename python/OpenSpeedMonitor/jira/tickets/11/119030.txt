@@ -1,0 +1,13 @@
+Deletion of contained date attribute also deletes date interval -> confirmation	"Administration >> Attributes
+
+
+
+While deleting one of interval attributes, i.e. Development (Start), Development Interval is being deleted automatically, without any warning.
+
+
+
+While deleting any attribute, that is a part of a date interval, please change warning message:
+
+ * Do you really want to delete? This will also cause deletion of [name of interval element]. (if more than one, list those intervals in bullet points)
+
+ ** german: Möchten Sie wirklich löschen? Dadurch werden automatisch folgende Elemente gelöscht [name of interval element]."		Improvement	iteraplan Speedbird	19/Apr/17 1:21 PM	17/May/17 3:42 PM																																																																				

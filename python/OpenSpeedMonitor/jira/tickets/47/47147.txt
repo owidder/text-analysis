@@ -1,0 +1,3 @@
+IE11 compatibility	"iteraplan currently has a few problems when used with IE 11.
+
+This is a super-issue for all issues dealing with that."		Improvement	iteraplan PO	07/Nov/14 1:37 PM	16/Jan/15 12:01 PM					IE11																																																															

@@ -1,0 +1,5 @@
+[2] Verbesserung der Messmöglichkeiten	"Hierunter sind Anpassungen an der WPT-Kernkomponente (WPT-Server und -Agenten) zusammengefasst, die im Rahmen des Device-übergreifenden CSI mit beauftragt wurden. 
+
+
+
+Neben den beiden eher kleineren Tasks, die als Issues an diesem Epic hängen ist der größte Block als issue im Projekt WPT-Entwicklung zu finden: WPTSA-55"		Epic	OpenSpeedMonitor	26/Jun/15 1:51 PM	19/Jan/17 10:24 AM																																																																				

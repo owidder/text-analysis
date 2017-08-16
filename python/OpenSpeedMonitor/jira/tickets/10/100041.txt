@@ -1,0 +1,7 @@
+Do not show "Connected Information Systems" and show "Transported Business Objects" direct in the Interfaces-section	"*Summary:*
+
+Single Element View:
+
+* Self-Relation-Section: Do not show ""Connected Information Systems""-Section
+
+* Relation-Section: Show ""Transported Business Objects"" direct to their interface in the Interfaces-section"		Improvement	iteraplan PO	21/Oct/16 2:52 PM	24/Oct/16 3:19 PM																																																																				

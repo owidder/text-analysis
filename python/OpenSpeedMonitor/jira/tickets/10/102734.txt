@@ -1,0 +1,283 @@
+Volltextsuche	"Guten Tag
+
+
+
+Können Sie mir ev. sagen wieso die Suchfunktion nach der Installation von 5.0 auf 5.3 nicht funktioniert?
+
+
+
+MFG
+
+Stefan Moser"		Fault	iteraplan Support	16/Nov/16 2:25 PM	26/Dec/16 7:00 AM														"16/Nov/16 2:37 PM;cst;Sehr geehrter Herr Moser,
+
+vielen Dank für Ihre Anfrage.
+
+Würden Sie bitte den Suchindex neu erstellen, die können Sie über den Punkt ""Administration"" -> ""Konfiguration"" und ""Create new Index"" durchführen. 
+Anschließend sollten die Einträge wieder korrekt bei der Suche angezeigt werden.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+"	"21/Nov/16 8:35 AM;stefan.moser@post.ch;Guten Tag Herr Stangl
+
+Dies führte leider zu keinem Erfolg.
+
+MFG
+Stefan Moser"	"21/Nov/16 8:46 AM;cst;Sehr geehrter Herr Moser,
+
+Um den Vorgang weiter prüfen zu können, benötigen wir folgende Dateien.
+
+Aus dem conf-Verzeichnis Ihrer Tomcat-Installation:
+•	server.xml
+•	web.xml
+
+Die catalina.out und localhost.log Logdateien Ihrer Tomcat-Installation aus dem Zeitraum, in dem der Fehler aufgetreten ist.
+Aus [Tomcat]/webapps/[iteraplan Installationsverzeichnis]/WEB-INF:
+
+•	Sämtliche Dateien, deren Name mit applicationContext beginnt.
+
+Aus [Tomcat]/webapps/[iteraplan Installationsverzeichnis]/WEB-INF/classes:
+
+•	log4j.properties
+
+Aus [Tomcat]/webapps/[iteraplan Installationsverzeichnis]/META-INF:
+
+•	context.xml (Die Datei kann Passwörter enthalten, bitte entfernen oder verfremden)
+
+Die iteraplan Logdatei bzw. Dateien aus dem Zeitraum, in dem der Fehler aufgetreten ist. Diese Dateien tragen üblicherweise den Namen iteraplan-[version].log (für den aktuellen Tag) bzw. iteraplan-[version].log.[TIMESTAMP] für vergangene Tage. Der Ablageort dieser Logdateien wurde bei der iteraplan-Installation angegeben und kann bei Bedarf in der Datei log4j.properties nachgesehen werden.
+
+Die iteraplan System-Info. Diese kann von iteraplan-Benutzern mit der Rolle „iteraplan_Supervisor“ direkt von der iteraplan-Oberfläche unter dem Menüpunkt Administration->Konfiguration abgerufen werden.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"21/Nov/16 9:08 AM;stefan.moser@post.ch;
+
+[^support iteraplan.zip] _(32 kB)_"	"22/Nov/16 9:46 AM;cst;Guten Tag Herr Moser,
+
+vielen Dank für Ihre Antwort. 
+Die Ursache für das Verhalten ist ein Problem mit der Aktualität des Indexes.
+
+Hier die weiteren Schritte woher das Verhalten auftauchen kann:
+
+# Im Menü ""Administration"" und ""Configuration"" den Punkt ""Cache Leeren"" 
+# Zusätzlich wählen Sie nochmals den Punkt ""Index neu Erstellen"" und setzen den Haken ""Index löschen, bevor Index neu erzeugt wird."" 
+# Im ""[TOMCAT7]\work\Catalina\localhost\"" Verzeichnis den Ordner mit dem Namen Ihrer ""iteraplan"" Instanz löschen
+# Zusätzlich leeren Sie bitte das an der Installation angegebene ""Index-Verzeichnis""
+
+Sollte dies nicht zur gewünschten Lösung führen, benötigen wir zur weiteren Prüfung einen DUMP Ihrer Datenbank, um hier ein Problem ausschließen zu können. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"22/Nov/16 12:45 PM;stefan.moser@post.ch;Guten Tag Herr Stangl
+
+Anbei der DB Dump, alles andere war leider erfolglos,
+
+MFG
+Stefan Moser
+
+[^I70ITR1_ITERA.zip] _(1.21 MB)_"	"23/Nov/16 8:49 AM;cst;Guten Morgen Herr Moser,
+
+vielen Dank für die Zusendung des DUMPS. 
+Habe diesen eingespielt und anschließend diese mit einer neu installierten iteraplan Version 5.3 verknüpft.
+
+Danach habe ich den ""Index neu Erstellt"" und einige Suchbegriffe eingegeben. Es wurde mir hier immer das korrekte Ergebnis angezeigt.
+Würden Sie mir bitte zwei, oder drei Begriffe nennen, die Sie für die Suche verwendet haben.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"23/Nov/16 10:45 AM;stefan.moser@post.ch;Hallo Herr Stangl
+
+Ich hoffe diese Daten (Dump) sind nicht öffentlich und einsehbar?
+
+z.B BGG oder LOEB.
+
+MFG
+Stefan Moser
+"	"23/Nov/16 1:39 PM;cst;Hallo Herr Moser,
+
+
+
+dies läuft auf einer virtuellen Maschine und steht nur lokal zur Verfügung (Kein Zugriff von außen möglich).
+
+Habe die Suchkriterien eingegeben und die Screenshots an das Ticket mit angehängt.
+
+
+
+Ist es die selbe Maschine, wie bei unserem ersten Support-Fall zur Installation? 
+
+Wenn ja, scheint es wieder ein ähnliches Problem zu sein. Er holt sich irgendwoher Informationen die gar nicht aktuell, oder den korrekten Bezug haben.
+
+
+
+Ein Problem mit der Datenbank kann man hier definitiv ausschließen, die Installation 5.3 läuft ja auch soweit.
+
+
+
+Welches Server Betriebssystem setzen Sie ein und gibt es hier spezielle Konfiguration? 
+
+
+
+[^Screenshots.zip]
+
+
+
+Haben Sie die Möglichkeit Version 5.3 auf einem anderen System / virtuellen Gerät zu installier um hier ein Problem mit dem aktuellen Server ausschließen zu können?
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support
+
+"	"23/Nov/16 2:07 PM;stefan.moser@post.ch;Hallo Herr Stangl
+
+Ja das ist die selbe Installation zu unserem ersten Fall. Wir setzen Windows Server 2008R2 Ent. ein und haben keine spezielle Konfiguration.
+
+Ich habe noch folgendes im Log gefunden:
+
+[WARN ] 23-Nov-2016 13:58:35 [reader.impl.ManagedMultiReader] HSEARCH000289: Requested sort field(s) buildingBlockType.name are not configured for entity type de.iteratec.iteraplan.model.BusinessFunction mapped to index index.BusinessFunction, thus an uninverting reader must be created. You should declare the missing sort fields using @SortableField.
+[WARN ] 23-Nov-2016 13:58:35 [reader.impl.ManagedMultiReader] HSEARCH000289: Requested sort field(s) buildingBlockType.name are not configured for entity type de.iteratec.iteraplan.model.TechnicalComponentRelease mapped to index index.TechnicalComponentRelease, thus an uninverting reader must be created. You should declare the missing sort fields using @SortableField.
+[WARN ] 23-Nov-2016 13:58:35 [reader.impl.ManagedMultiReader] HSEARCH000289: Requested sort field(s) buildingBlockType.name are not configured for entity type de.iteratec.iteraplan.model.ArchitecturalDomain mapped to index index.ArchitecturalDomain, thus an uninverting reader must be created. You should declare the missing sort fields using @SortableField.
+[WARN ] 23-Nov-2016 13:58:35 [reader.impl.ManagedMultiReader] HSEARCH000289: Requested sort field(s) buildingBlockType.name are not configured for entity type de.iteratec.iteraplan.model.InformationSystemRelease mapped to index index.InformationSystemRelease, thus an uninverting reader must be created. You should declare the missing sort fields using @SortableField.
+[WARN ] 23-Nov-2016 13:58:35 [reader.impl.ManagedMultiReader] HSEARCH000289: Requested sort field(s) buildingBlockType.name are not configured for entity type de.iteratec.iteraplan.model.Product mapped to index index.Product, thus an uninverting reader must be created. You should declare the missing sort fields using @SortableField.
+[WARN ] 23-Nov-2016 13:58:35 [reader.impl.ManagedMultiReader] HSEARCH000289: Requested sort field(s) buildingBlockType.name are not configured for entity type de.iteratec.iteraplan.model.ITService mapped to index index.ITService, thus an uninverting reader must be created. You should declare the missing sort fields using @SortableField.
+[WARN ] 23-Nov-2016 13:58:35 [reader.impl.ManagedMultiReader] HSEARCH000289: Requested sort field(s) buildingBlockType.name are not configured for entity type de.iteratec.iteraplan.model.InformationSystemDomain mapped to index index.InformationSystemDomain, thus an uninverting reader must be created. You should declare the missing sort fields using @SortableField.
+[WARN ] 23-Nov-2016 13:58:35 [reader.impl.ManagedMultiReader] HSEARCH000289: Requested sort field(s) buildingBlockType.name are not configured for entity type de.iteratec.iteraplan.model.InformationSystemInterface mapped to index index.InformationSystemInterface, thus an uninverting reader must be created. You should declare the missing sort fields using @SortableField.
+[WARN ] 23-Nov-2016 13:58:35 [reader.impl.ManagedMultiReader] HSEARCH000289: Requested sort field(s) buildingBlockType.name are not configured for entity type de.iteratec.iteraplan.model.BusinessProcess mapped to index index.BusinessProcess, thus an uninverting reader must be created. You should declare the missing sort fields using @SortableField.
+[WARN ] 23-Nov-2016 13:58:35 [reader.impl.ManagedMultiReader] HSEARCH000289: Requested sort field(s) buildingBlockType.name are not configured for entity type de.iteratec.iteraplan.model.InfrastructureElement mapped to index index.InfrastructureElement, thus an uninverting reader must be created. You should declare the missing sort fields using @SortableField.
+[WARN ] 23-Nov-2016 13:58:35 [reader.impl.ManagedMultiReader] HSEARCH000289: Requested sort field(s) buildingBlockType.name are not configured for entity type de.iteratec.iteraplan.model.BusinessDomain mapped to index index.BusinessDomain, thus an uninverting reader must be created. You should declare the missing sort fields using @SortableField.
+[WARN ] 23-Nov-2016 13:58:35 [reader.impl.ManagedMultiReader] HSEARCH000289: Requested sort field(s) buildingBlockType.name are not configured for entity type de.iteratec.iteraplan.model.Project mapped to index index.Project, thus an uninverting reader must be created. You should declare the missing sort fields using @SortableField.
+[WARN ] 23-Nov-2016 13:58:35 [reader.impl.ManagedMultiReader] HSEARCH000289: Requested sort field(s) buildingBlockType.name are not configured for entity type de.iteratec.iteraplan.model.BusinessObject mapped to index index.BusinessObject, thus an uninverting reader must be created. You should declare the missing sort fields using @SortableField.
+[WARN ] 23-Nov-2016 13:58:35 [reader.impl.ManagedMultiReader] HSEARCH000289: Requested sort field(s) buildingBlockType.name are not configured for entity type de.iteratec.iteraplan.model.BusinessUnit mapped to index index.BusinessUnit, thus an uninverting reader must be created. You should declare the missing sort fields using @SortableField.
+
+
+Sagt Ihnen dies etwas?
+
+Eine Installation auf einem anderen Server ist leider nicht einfach so möglich. ev. probiere ich es am bsten mit einer Neuinstallation.
+
+MFG
+Stefan Moser"	"23/Nov/16 2:21 PM;cst;Das bedeutet, das die Index-Dateien die vom Tomcat beim start geschrieben werden nicht mit den Daten in der Datenbank übereinstimmen. 
+Dies passiert wenn ein alter Stand gecached wird, deswegen habe ich Sie das Index-Verzeichnis löschen und den Index über die Software neu erstellen lassen.
+
+Eine Neuinstallation, kann natürlich an der Stelle auch weiterhelfen.
+Es wäre zu empfehlen, für das Index-Verzeichnis einen neuen Ordner anzulegen und diesen für die neue Installation zu benutzen. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	23/Nov/16 3:28 PM;stefan.moser@post.ch;Nach der Neuinstallation mit einem neu angelegten Index Ordner habe ich dasselbe Problem. Ich habe nun probiert das ganze lokal auf meinem Gerät zu installieren, leider komme ich natürlich nicht auf die DB, da die Firewall dies nicht zulässt...	"24/Nov/16 9:52 AM;cst;Guten Morgen Herr Moser,
+
+würden Sie mir bitte folgendes noch zur Verfügung stellen,
+anschließen prüfe ich alles nochmals und werde Sie hierzu zurück rufen. 
+
+Unter Administration - ""System Info erstellen"" und diese ZIP-Datei hängen Sie mir bitte das das Ticket mit an. 
+
+Wann kann ich Sie den heute Nachmittag - morgen telefonisch erreichen?
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"24/Nov/16 10:06 AM;stefan.moser@post.ch;Hallo Herr Stangl
+
+Ich habe diese System Info nicht zur Verfügung, auch nicht mit der Version 5.0 welcher sich auf der Produktion befindet.
+
+Ich bin heute Nachmittag erreichbar.
+
+MFG
+Stefan Moser
+"	"24/Nov/16 3:22 PM;stefan.moser@post.ch;Hallo Herr Stangl
+
+Ich kann Sie telefonisch leider nicht erreichen.
+
+MFG
+Stefan Moser"	"25/Nov/16 8:56 AM;cst;Sehr geehrter Herr Moser,
+
+vielen Dank für das nette Gespräch.
+
+Um den Fall weiter für eine Team-Viewer Sitzung vorzubereiten, benötigen wir folgende LOG-Dateien. 
+Führen Sie bitte folgendes durch:
+
+#       Öffnen Sie Ihre Datenbank 
+#       Gehen in die Tabelle „role“ 
+#       Hier sollte der Datensatz „iteraplan_Supervisor“ und ""LDAP-Gruppe"" angelegt sein   
+#       Notierten Sie sich von beiden die ID´s 
+#       Jetzt gehen Sie in die Tabelle „role_role“ und erzeugen einen neuen Eintrag 
+#       Die erste ID ist die von Ihrer ""LDAP-Gruppe“ und danach die ID des „iteraplan_Supervisor“ 
+#       Damit sind die Rollen miteinander verknüpft 
+#       Nach erneutem Login, sollte Ihnen der Punkt ""System Info erstellen"" zur Verfügung stehen
+
+Nachdem Sie die System Info erstellt haben, genieren Sie bitte den Index über ""Create new Index"".
+Sollte die Suche nach diesen Schritte immer noch nicht funktionieren, schicken Sie uns bitte folgende aktuelle Log-Dateien zu:
+
+- Catalina.out und localhost.log aus dem Tomcat Log Verzeichnis 
+- Die aktuelle iteraplan.log Datei und die System Info 
+- Den Zeitpunkt an dem Sie den Index neu erstellt haben
+
+Anschließend prüfen wir diese und ich werde Sie für einen Termin zur Team Viewer Sitzung kontaktieren.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+"	"05/Dec/16 3:49 PM;stefan.moser@post.ch;Guten Tag Herr Stangl
+
+Ich kann die Systeminfo nach der Anpassung auf der DB immer noch nicht sehen.
+
+Die Suche funktioniert weiterhin nicht, ich habe festgestellt das diese auch nicht immer auf der Produktion funktioniert.
+
+MFG
+Stefan Moser"	"06/Dec/16 8:56 AM;cst;Sehr geehrter Herr Moser,
+
+vielen Dank für Ihre Antwort. 
+Okay, dann machen wir das ohne die System Info.
+
+Die aktuellen Logs zur Vorbereitung plus Zeitpunkt wann der Index erstellt werden sollte benötigen wir hier.
+Wenn wir diese haben, sende ich Ihnen einen Zeitnahen Termin (sollten wir die Logs heute haben, werden wir die Sitzung morgen durchführen)
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"06/Dec/16 9:09 AM;stefan.moser@post.ch;
+
+[^iteraplan-5.3.0.log] _(33 kB)_"	"06/Dec/16 9:10 AM;stefan.moser@post.ch;Guten Tag Herr Stangl
+
+Index wurde am 09:07:44 erstellt.
+
+MFG
+Stefan Moser
+"	"06/Dec/16 9:37 AM;cst;Guten Morgen Herr Moser,
+
+
+
+vielen Dank für die Zusendung der Dateien.
+
+
+
+Können wir Sie morgen um halb 10 hierzu zurück rufen und die Team-Viewer Sitzung durchführen?
+
+Um das Verhalten zu prüfen und eine Lösung für Sie zu erarbeiten.
+
+
+
+Wir benötigen bei der Sitzung Zugriff auf die Datenbank, um Tabellen im Bedarfsfall zu checken.
+
+
+
+Vielen Grüße,
+
+
+
+Christoph Stangl - iteraplan Support 
+
+
+
+"	"06/Dec/16 10:00 AM;stefan.moser@post.ch;Hallo Herr Stangl
+
+Kein Problem.
+
+MFG
+Stefan Moser"	"07/Dec/16 2:20 PM;cst;Wie telefonisch besprochen, werden wir das Ticket schließen wenn in der Produktiv Umgebung
+die Updates erfolgreich eingespielt wurden.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "																																

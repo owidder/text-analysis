@@ -1,0 +1,11 @@
+Query console problems	"Several problems occure using the query console
+
+- InformationSystemInterface[view(/informationSystemReleaseB@name) = ""System1""]; answers with ""No such relationship end: informationSystemReleaseB for universal type InformationSystemInterface""
+
+- InformationSystem[@name != ""System1""]; answers with ""The objects to compare are of a type not supported by the current operator""
+
+- It remains unclear to us how to test for an unset property. We tried different queries like, e.g. InformationSystem[@Hersteller = null]; but the result is incorrect."		Bug	iteraplan PO	18/Jun/12 9:31 AM	18/Jun/12 10:28 AM					query									"18/Jun/12 10:27 AM;csh;The syntax of the iteraQL has been adapted, such that the queries should read as follows:
+-	InformationSystemInterface[view(/informationFlows/informationSystemRelease2@name) = ""System1""];
+-	InformationSystem[!(@name=“System1“)];
+-	InformationSystem[count(@Hersteller)=0];
+We will discuss alternative ways of writing the queries for the next iteration of the iteraQL."	18/Jun/12 10:28 AM;csh;Closed by presenting suitable queries. Discussions on future iteraQL iterations to provide relevant extensions.																																																					

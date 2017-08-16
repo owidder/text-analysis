@@ -1,0 +1,6 @@
+Infrastrukturelement.Verwendungsbeziehung: Resultiert tlw. in Fehler	"Erwartetes Verhalten: Ich kann Infrastrukturelemente mit beliebigen IE in Verwendungs-Beziehung setzen.
+
+Tatsächliches Verhalten:
+1. Wähle WebApp-Prod1
+2. Edit
+3. Verwendet: RZ1 : DB-Prod1 --> Fehler"		Bug	iteraplan PO	09/Aug/13 4:44 PM	09/Oct/13 11:00 AM					cfnr									19/Sep/13 1:34 PM;sfe;Logfile for the observed error	09/Oct/13 11:00 AM;sfe;see ITERAPLAN-1979																																																					

@@ -1,0 +1,115 @@
+ListView von Applications/Infrastructure Settings bringt JavaScript Error	"Leere Liste / JavaScript Error im interactive client bei Listenanzeige der Applikationen (Information Systems):.
+
+Das iteraplan-5.5.1.jar wurde schon ausgetauscht, leider ohne Effekt.
+
+Der komplette Dum der MySQL-DB kann -i wie von Christoph Stangl gewünscht - hier heruntergeladen werden:
+
+https://transfer.mcon.com.cn/sendfile.php?fid=2458&vercode=b53481eb "		Fault	iteraplan Support	27/Mar/17 12:51 PM	12/Apr/17 12:28 PM														"27/Mar/17 12:51 PM;bal;
+
+!2017-3-2-12-47-48-604.png|thumbnail!"	"28/Mar/17 5:40 PM;cst;Hallo Bernd,
+
+vielen Dank für die Bereitstellung der Daten.
+Habe das Verhalten nachvollziehen können und es wird sich morgen ein Entwickler den Fall anschauen.
+
+Werde dich morgen über das weitere vorgehen informieren.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"04/Apr/17 8:02 AM;cst;Hallo Bernd, 
+
+das Problem wurde gefunden und gelöst.
+Habe es mit dem DUMP gegen getestet. 
+
+[^iteraplan-client-5.5.1.jar]
+ # Laden Sie die angehängte Datei herunter: ""iteraplan-client-5.5.1.jar""
+ # Fahren Sie Ihren Tomcat-Server herunter
+ # Öffnen Sie das Verzeichnis [TOMCAT]\webapps[ITERAPLAN]\WEB-INF\lib
+ # Prüfen Sie, ob in diesem Verzeichnis eine Datei mit dem Namen ""iteraplan-client-5.5.1.jar"" oder ""iteraplan-client-5.5.2.jar"" existiert
+ # Löschen Sie die alte Datei und kopieren Sie die heruntergeladene Datei in das Verzeichnis (falls die alte Datei auf 5.5.2 geendet hat, benennen Sie bitte die heruntergeladene Datei auch auf 5.5.2 um)
+ # Löschen Sie das work-Verzeichnis (temporäres Verzeichnis) des Tomcats unter [TOMCAT]work\Catalina\localhost[ITERAPLAN]
+ # Fahren Sie den Tomcat wieder hoch
+ # Löschen Sie den Browsercache
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+ "	"05/Apr/17 1:21 PM;cst;Hallo Bernd, 
+
+finde ich komisch. Ein Kunde hat das identisches Problem gemeldet und dies wurde mit dem Fix gelöst. 
+Hoffe die MCON hat hier den Tomcat-Cashe geleert. 
+
+Hat an der Stelle nichts mit dem Customizing zu tun. 
+
+Werde mit MCON kontakt aufnehmen. 
+
+Viele Grüße,
+
+Christoph 
+"	"06/Apr/17 8:48 AM;cst;Good Morning Support Team,
+
+ 
+
+I added you the current service release and next steps:
+
+ 
+ # Download the data: iteraplan-client-5.5.1.jar
+ # Shut down the Tomcat-Server
+ # Open the path [TOMCAT]\webapps[ITERAPLAN]\WEB-INF\lib
+ # Check if ""iteraplan-client-5.5.1.jar"" or ""iteraplan-client-5.5.2.jar"" is exist
+ # Delete the old data and copy the downloaded service release in the current path (if the old data is ending on 5.5.2, rename these to 5.5.2 too)
+ # Delete the work directory (temporary directory) of the Tomcat server in the path [TOMCAT]work\Catalina\localhost[ITERAPLAN]
+ # Start up the Tomcat server
+ # Clear your browser cache
+ # Check the attributes again
+
+ 
+
+Mr. Albersmann send me the DUMP of the customer Database and I checked it with the attached file. The issue is fixed J  
+
+If this should not work, you can change test wise the name of “iteraplan-client-5.5.2.jar” to “iteraplan-client-5.5.1.jar”, clear the work directory of the tomcat server and check the attributes again.
+
+ 
+
+When the patch is not working, please send me a screenshot from the folder “[TOMCAT]\webapps[ITERAPLAN]\WEB-INF\*lib*”.
+
+ 
+
+Greetings,
+
+Christoph Stangl
+
+____________________________________________
+
+ 
+
+iteratec GmbH
+
+Inselkammerstraße 4
+
+82008 München-Unterhaching
+
+Germany
+
+ 
+
+mailto: [iteraplan.support@iteratec.de|mailto:iteraplan.support@iteratec.de]
+ ____________________________________________
+
+Sitz und Registergericht München: HRB 113 519
+
+Geschäftsführer: Klaus Eberhardt, Mark Goerke, Michael Schulz"	"06/Apr/17 8:48 AM;cst;Dem MCON-Support per Mail geantwortet.
+
+Christoph Stangl - iteraplan Supprot "	"12/Apr/17 12:28 PM;cst;Hat ja mit dem neuen Setup funktioniert.
+
+
+
+Somit ist das Ticket erledigt.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support"																																																

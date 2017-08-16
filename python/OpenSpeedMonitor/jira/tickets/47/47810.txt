@@ -1,0 +1,19 @@
+iTURM database info wrong in bundle build	"Building a basic (enterprise edition) bundle includes a war file for the iturm application.
+in the file {{META-INF/context.xml}} there is following line:
+{noformat}
+url=""jdbc:hsqldb:hsql://${database.address}/${database.name}""
+{noformat}
+
+The placeholders for database address and name should have been replaced, however, for the URL to read as follows:
+{noformat}
+jdbc:hsqldb:hsql://localhost/iteraplan
+{noformat}
+
+Reason is most likely how properties are handled in the {{pom.xml}} of the iturm build."		Bug	iteraplan PO	08/Jun/15 11:18 AM	07/Jul/15 5:01 PM					build	bundles	iturm							"08/Jun/15 11:28 AM;sfe;Apparently this issue cannot be reproduced when building a bundle while a _build_local.properties_ file containing database properties exists in the turm directory.
+This is because the file _build_local.properties_ is read by the maven build one additional time."	"07/Jul/15 5:01 PM;fam;Checked code and tested bundle.
+
+Now it's working and the context.xml contains ""localhost/iteraplan"".
+
+Ticket closed.
+
+"																																																					

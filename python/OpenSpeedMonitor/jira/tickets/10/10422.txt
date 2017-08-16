@@ -1,0 +1,3 @@
+Integration des ResultDashboards in WPTMonitor	"Das neue WptResultDashboard muss aus dem WPTMonitor heraus erreichbar sein. Solange noch keine Job-Steuerung existiert wird der WPTMonitor weiter im Einsatz bleiben.
+Noch zu klären ist, ob das WptResultDashboard als iFrame in den WPTMonitor integriert wird oder (wie das CSI-Dashboard) extern verlinkt wird. 
+Verlinkung und/oder iFrame-Einbindung müssen in Puppet integriert werden (ggf. mit konfigurierbarem Pfad)."		Task	OpenSpeedMonitor	05/Aug/13 2:41 PM	21/Oct/13 1:55 PM														08/Oct/13 4:42 PM;nkuhn;Externe Verlinkung des ResultDashboards (wie das CSI-Dashboard): "Reports NEW". Die bisherige Reports-Seite des PHP-Monitors bleibt vorerst bestehen.																																																						

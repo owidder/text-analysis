@@ -1,0 +1,11 @@
+Add functionality to empty parts of the pipeline	"Currently, ncdClusterModelBuilder and ncdLayouter are still without any function.
+
+
+
+* Implement function of ncdClusterModelBuilder
+
+** Aggregate ncdItems to clusters with goJS relevant properties
+
+* Implement function of ncdLayouter
+
+** Generate the layout of the styled cluster model"		Improvement	iteraplan PO	09/Feb/16 3:16 PM	18/Mar/16 11:22 AM														11/Feb/16 11:57 AM;mag;Criteria of ITERAPLAN-4336 already implemented by this ticket.	29/Feb/16 9:02 AM;mag;{{ncdClusterModelBuilder}} and {{ncdLayouter}} have their specific functionality now.	18/Mar/16 11:22 AM;pzi;fixed with small refactoring																																																				

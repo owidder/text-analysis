@@ -1,0 +1,9 @@
+Horizontal and vertical moves in attribute groups use /api/attributes/id (server)	"*Summary:*
+
+Horizontal and vertical moves in the attribute group-page use /api/attributes/<<id>> ,
+
+i.e.
+
+* the client sends for these moves the new attribute group and position to the server (please check, if already implemented)
+
+* the server updates the attribute group field and changes all affected positions of the old and new (if existing) attribute group"		Improvement	iteraplan Speedbird	27/Mar/17 2:39 PM	24/Apr/17 4:45 PM														24/Apr/17 4:45 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-530																																																						

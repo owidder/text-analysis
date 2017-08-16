@@ -1,0 +1,14 @@
+Link to EAM Sharepoint	we would like to place a link on the iteraplan main panel to link our users to our internal sharepoint. Have you any idea how we can do that ?		Technical question	iteraplan Support	13/Sep/16 5:04 PM	21/Sep/16 8:39 AM														"14/Sep/16 9:05 AM;cst;Dear Mr. Zerrer,
+
+thank you for your enquiry.
+
+For this we must customize your iteraplan installation. 
+We can create a menue item, with your link, in one of our menue bars like ""EA Data"".
+
+On the graphic and the starting page, this not possible. 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support 
+"	"21/Sep/16 8:37 AM;wolfgang.zerrer@festo.com;We had placed the link behind some text on the start page, so it is integrated in our customizing. 
+We need no action from your side"																																																					

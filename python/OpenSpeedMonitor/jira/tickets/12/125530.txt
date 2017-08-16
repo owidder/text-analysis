@@ -1,0 +1,9 @@
+Create error pages in the new client	"For the following cases:
+
+ * no permission
+
+ * error
+
+
+
+ "	125402	Sub-task	iteraplan Thunderduck	27/Jun/17 1:16 PM	12/Jul/17 2:05 PM																																																																				

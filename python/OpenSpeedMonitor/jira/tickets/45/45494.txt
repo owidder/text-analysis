@@ -1,0 +1,3 @@
+Fix permission	"The permission ""Einsicht der abonnierenden Benutzer per Bebauungselement"" does not seem to have any effect.
+
+See Bug #ITERAPLAN-622 for reference."		Bug	iteraplan PO	19/Apr/12 11:45 AM	20/Apr/12 10:54 AM					permissions									19/Apr/12 3:14 PM;pac;Fixed in #16369.																																																						

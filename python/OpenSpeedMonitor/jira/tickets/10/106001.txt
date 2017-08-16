@@ -1,0 +1,19 @@
+Fehler bei der Historymigration	"Hallo,
+
+bei der Migration heute Nacht sind in den ca. 3 Stunden 63 Fehler aufgetreten.
+
+
+
+Beste Grüße
+
+Armin Joachimsmeyer"		Fault	iteraplan Support	17/Dec/16 10:19 AM	07/Jan/17 7:00 AM														"17/Dec/16 10:19 AM;armin.joachimsmeyer@axa.de;
+
+[^iteraplan.log] _(336 kB)_
+
+[^migration.log] _(155 kB)_"	"19/Dec/16 9:54 AM;cst;Sehr geehrter Herr Joachimsmeyer,
+
+wie im Ticket IPS-254 schon beschrieben, sind das Datensätze die schon in der alten History nicht funktionsfähig sind. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "																																																					

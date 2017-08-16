@@ -1,0 +1,7 @@
+Manuelle Testausführung verhindern	"Zu dem Thema gibt es 3 Ansätze:
+
+* WPT bietet dazu bereits einen sogenannten ""Headless""-Modus, wo alle Möglichkeiten über die GUI Tests zu starten explizit ausgeschlossen werden. Das heißt aber auch dass wir nicht testweise mal manuell einen Test starten könnten.
+
+* Man könnte eine neue Option einführen um ""Re-run"" aus den Testergebnissen zu deaktivieren und wir schützen die anderen Seiten (index.php, easy.php) per OAuth, sodass nur wir drauf zu greifen können
+
+* Wir lassen den WPT Headless laufen und erstellen einen Test-Server, der alle unsere WPT-Server als Relay-Server anbindet, d.h. er sendet Befehle an diese Server und bekommt auch die Ergebnisse"	120466	Sub-task	OpenSpeedMonitor	04/May/17 1:54 PM	10/May/17 8:59 AM														10/May/17 8:59 AM;sbr;Wir elauben Mandanten vorerst manuell Tests auszuführen																																																						

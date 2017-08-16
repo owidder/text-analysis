@@ -1,0 +1,27 @@
+TBD: Improve layouting algorithm	"Improve the layouting algorithm for the Information Flow Diagram with the help of GoJS's LayoutNetwork.
+
+For spefic requirements to the layout, check the wiki-page for the layout ""Blockbildung"" on https://iteraweb.iteratec.de/confluence/pages/viewpage.action?pageId=52134452#InformationFlowDiagram%28IFD%29-ParadigmaBlockbildung .
+
+
+
+With the help of LayoutNetwork you can (independently of nodes and edges) set your own ""priorities"" for a Standard Layout (we use: ForceDirectedLayout)
+
+
+
+Please refer to:
+
+http://gojs.net/latest/api/symbols/LayoutNetwork.html
+
+
+
+Outsource the existing layoutNetwork code from the ifdDiagramBuilder to the Layouter.
+
+
+
+(*Update:*
+
+Please have a look at the bottom of the diagram. At the moment the two elements on the bottom are cropped. Please correct the size of the canvas.
+
+-> This is already fixed)
+
+"		New Feature	iteraplan PO	06/Jul/15 3:57 PM	31/Aug/16 4:25 PM														22/Jul/15 1:08 PM;fam;Adjusted padding to fix the problem with cropping the bottom.	23/Jul/15 7:59 AM;msr;Changeset 1280 belongs to ITERAPLAN-3766	31/Aug/16 4:25 PM;fka;No longer relevant																																																				

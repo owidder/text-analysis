@@ -1,0 +1,12 @@
+iteraQl greater than & lesser than operators return elements with unset value	"To reproduce in iteraQl-console and/or partial export:
+
+The *greater & lesser* operators return the correct elements, where the value is set and the condition appies:
+{code}InformationSystem[@costs>4999];    => returns 1 element with value ""5000""{code}
+
+The *greater than & lesser than operators return the correct elements where  the condition appies *plus* all elements with unset values:
+{code}InformationSystem[@costs>=4999];   => returns 1 element with value ""5000"" and 9 more elements with unset values = 10 elements{code}
+
+The same happens with:
+InformationSystem\[@costs<50];
+InformationSystem\[@costs<=50];
+"		Bug	iteraplan PO	25/Apr/14 2:03 PM	28/Apr/14 10:40 AM					iteralq	iteraql	iteraQl	iteraQL						28/Apr/14 10:40 AM;gph;Works.																																																						

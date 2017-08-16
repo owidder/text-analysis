@@ -1,0 +1,21 @@
+In numeric attribute single element view the last editor for the range is broken	"Go to the SEV of Costs.
+
+
+
+Deactivate ""Range uniform distributed""
+
+
+
+Add two values for bounds
+
+
+
+Expected behaviour: The last editor is working ( > value)
+
+
+
+Current behaviour its not working and the following stack trace appears:
+
+
+
+{color:#222222}+angular.js:14525+ {color}{color:#FF0000}TypeError: An exception occurred: Cannot read property '$$state' of undefined at HTMLElement.apply (+http://localhost:8080/client/components/ipPropertyEditor/ipPropertyEditor-component.js:652:37+) at +http://localhost:8080/client/bower_components/angular/angular.js:3954:14+ at forEach (+http://localhost:8080/client/bower_components/angular/angular.js:403:20+) at triggerHandler (+http://localhost:8080/client/bower_components/angular/angular.js:3952:7+) at JQLite.(anonymous function) [as triggerHandler] (+http://localhost:8080/client/bower_components/angular/angular.js:3968:17+) at IpNumEditorController.applyChange (+http://localhost:8080/client/components/editors/ipNumEditor/ipNumEditor-component.js:33:18+) at fn (eval at compile (+http://localhost:8080/client/bower_components/angular/angular.js:15358:15+), <anonymous>:4:181) at destination.(anonymous function) (+http://localhost:8080/client/bower_components/angular/angular.js:10552:22+) at EditorApplyCancelController.onApply (+http://localhost:8080/client/components/editors/editorApplyCancel-component.js:20:39+) at fn (eval at compile (+http://localhost:8080/client/bower_components/angular/angular.js:15358:15+), <anonymous>:4:177){color}"		Bug	iteraplan Speedbird	19/Jun/17 1:06 PM															19/Jul/17 2:25 PM;dmkh;[~aan], cannot reproduce described issue. But fixed another one: case when user saves incorrect bound (lower > upper and vice versa). Editor crashed after getting failed response.	19/Jul/17 2:38 PM;aan;[~dmkh], I just tried to reproduce it and I did not obtain an error, but I could noch change the value. I add I image where the editor is marked. Is this one working at your computer?	19/Jul/17 2:41 PM;dmkh;[~aan], I missunderstood you in the ticket description: "_Add two values for bounds_". I thought you are talking about lower and upper bounds of attribute, but not attribute ranges	25/Jul/17 4:13 PM;mash;Review is done with minor comments: https://iteraweb.iteratec.de/fisheye/cru/IP-813#general-comments	26/Jul/17 10:12 AM;dmkh;Fixed in revision 7447	26/Jul/17 5:25 PM;mash;Review is done with 1 comment: https://iteraweb.iteratec.de/fisheye/cru/IP-813#general-comments																																																	

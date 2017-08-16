@@ -1,0 +1,53 @@
+Push notifications for Changes	"show only ""model was modifies, press this button to refresh the page""  as push notification and reload the page on click
+
+
+
+*Server:*
+
+* Sends with every REST-request to the client in the header the ETag-field with the actual lastModificationTime
+
+* The lastModificationTime is saved as global static variable on the server
+
+* The servers sets the initial lastModificationTime as startup-time of the server
+
+* The server changes the lastModificatonTime on every datamodel or metamodel-change
+
+* On Request to /api/hasChanges the server compares the timestamps and replies either 304 - not modified (no changes) or 200 - ok (has changes) without any content
+
+
+
+* Which lastModificatonTime is answered by the server?
+
+** If the client wants to GET /api/icd, the server always returns the latest lastModificationTime
+
+** If the client wants to PUT or POST to /api/element:
+
+*** the server sends a new/updated lastModificationTime to the client has sent the lastModificationTime
+
+*** the server sends the old lastModificationTime of the client to the client if the lastModificationTime is older than the latest on server (client gets only partly updated)
+
+
+
+*Client*
+
+* The client saves the lastModificationTime global variable
+
+* The client set the lastModificationTime initially with the reply of one of the first GET-requests (e.g. /api/icd)
+
+* The client updates the lastModificationTime with every response of a PUT or POST request to api/element/...
+
+* The clients sends its lastModificationTime with every PUT or POST request on api/element/...
+
+* The client sends every 30 seconds a GET-request with its lastModificationTime as ETag to /api/hasChanges (polling)
+
+** For the answer 304, nothing is done
+
+** For the answer 200, the client displays a modal dialog
+
+* The modal dialog states:
+
+** EN: ""Please refresh your browser window to get updated data""
+
+** GER: ""Bitte laden Sie Ihr Browserfenster neu, um die aktuellen Daten zu erhalten""
+
+* The user can close the dialog with any primary click without any refresh"		New Feature	iteraplan Thunderduck	28/Jul/16 4:15 PM	17/Feb/17 1:21 PM														09/Feb/17 8:57 AM;mse;Please close this tickets, as soon as all sub-tasks are done.																																																						

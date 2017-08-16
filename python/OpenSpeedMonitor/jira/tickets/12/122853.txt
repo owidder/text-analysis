@@ -1,0 +1,25 @@
+single element view: collapsed attribute sections and relation sections are not displayed after reload	"Use case:
+
+ * open single element view
+
+ * collapse one or more section (attribute and/or relations)
+
+ * reload page in browser
+
+
+
+Result:
+
+ * the collapsed sections are not shown anymore
+
+ * the sections come back with reset view
+
+
+
+Expected:
+
+ * the collapsed sections are shown as collapsed after reload
+
+
+
+ "		Bug	iteraplan PO	30/May/17 1:44 PM	11/Jun/17 1:46 PM																																																																				

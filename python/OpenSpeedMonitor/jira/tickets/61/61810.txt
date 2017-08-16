@@ -1,0 +1,265 @@
+Add possibility to download whole diagram	"*Problem Statement:*
+
+Currently, when a diagram is too large, it is only displayed partially.
+
+When downloading the diagram, only the displayed section of the diagram is contained in the downloaded file.
+
+
+
+The interactive client should offer the possibility to download the complete diagram. The configuration, filtering etc.should be according to the current configuration, filtering etc. in the interactive client, but the downloaded diagram should include all elements, and not only a subset of them.
+
+
+
+The option for downloading the full diagram should be available in addition to the download of the partial diagram. It should only be available, when the a partial diagram is rendered. As a large diagram might take some time to ""generate"", consider giving the user feedback that some work is being done in the background (spinner etc.)
+
+
+
+*Technical solution:*
+
+* Independent of the canvas size the full GoJS-diagram exists. On this non-displayed diagram the method {{makeSVG()}} can be called and then downloaded.
+
+* After clicking on the ""Full download button"" create with the help of the existing pipeline a full (non-partial) diagram in a separate canvas and create a SVG file out of that.
+
+* In scope:SVG for Landscape Diagram and Information Flow Diagram."		New Feature	iteraplan PO	29/Oct/15 10:15 AM	03/Dec/15 2:29 PM					download	partial								"17/Nov/15 11:21 AM;wfr;Do we need to optimize the LSD structure first? 
+
+There are a lot of elements for empty table cells, that could lead to large SVG files.
+
+ 
+
+This could be a separate, but connected ticket."	"30/Nov/15 2:21 PM;tam;A copy of comments in german:
+
+
+
+***
+
+Allgemein: Wenn es möglich bzw. sinnvoll ist, die Commit-Kommentare vielleicht etwas ausführlicher schreiben. 
+
+Revision 1981: ""bugfix"" => für was? :)
+
+Revision 1986: *fix small bug => was für einen? Fehlte DataModel als Parameter?
+
+Und ja, ich verstehe beide Bugfixs nicht :)
+
+
+
+***
+
+Revision: 1987
+
+ITERAPLAN-4086
+
+""waiting for download"" message
+
+----
+
+Modified : /trunk/app/locales/locale-de.json
+
+Modified : /trunk/app/locales/locale-en.json
+
+Das ist OK und gut.
+
+
+
+Kann man das nicht allgemeiner lösen? Denn die beiden Templates sind identisch, nur die Meldung ist anders?
+
+Aber eigentlich OUT OF SCOPE, aber ... vielleicht hast du auch schon darüber nachgedacht
+
+Modified : /trunk/app/js/common/headerDownloadService.js
+
+Added : /trunk/app/templates/fullDownload.html (Copy from path: /trunk/app/templates/startScreenLoading.html, Revision, 1982)
+
+
+
+***
+
+/trunk/app/js/common/headerDownloadService.js
+
+getSVGDownloadFull
+
+mehr Kommentare? Z.b. warum werden zwei redraws ausgeführt.
+
+
+
+            /**
+
+             * Gets a list with all available download methods
+
+             *
+
+             * @public
+
+             * @param {!String} diagramTypeName - the name of the diagram in CamelCaps (for the filename)
+
+             * @param {!String} tabTitle - the title of the diagram
+
+             * @param {!String} divIdOfDiagram - the DIV-ID of the diagram
+
+             * @param {!String} divIdOfLegend - the DIV-ID of the legend
+
+             * @param {?String} divIdOfTitle - the DIV-ID of the legend
+
+             * @param {?String} divIdOfAdditionalInformation - the DIV-ID of the legend
+
+             * @param {!Object} controller - the controller of the diagram
+
+             */
+
+            this.getDownloadsFull = function(diagramTypeName, tabTitle, divIdOfDiagram, divIdOfLegend, divIdOfTitle, divIdOfAdditionalInformation, controller) {
+
+Die JsDoc-Beschreibung ist nicht ganz vollständig bzw. korrekt? Oder? Erbsenzählerei.
+
+
+
+Revision: 1997
+
+Author: fro
+
+Date: Dienstag, 24. November 2015 11:36:06
+
+Message:
+
+ITERAPLAN-4086
+
+longer waiting times for download dialog
+
+----
+
+Modified : /trunk/app/js/common/headerDownloadService.js
+
+Warum diese Zeiten? 
+
+
+
+***
+
+/trunk/app/js/lsd/lsdTableBuilder.js
+
+    this.draw = function (targetElementId, tableModel, fullDownload) {
+
+        var maxCanvasSize = getBrowserSpecificCanvasMaxPixels() * (fullDownload ? 100 : 1);
+
+Warum * 100? Woher kommt 100?
+
+
+
+***
+
+/trunk/app/js/lsd/lsdTableModelBuilder.js
+
+LSDTableModelBuilder.prototype.assignContent = function (contentItems, structure, fullDownload) {
+
+    var partialDiagramLimit = 250 * (fullDownload === true ? 100 : 1);
+
+Gleiche Frage.
+
+
+
+Vielleicht Kommentar für beide Zeilen.
+
+
+
+***
+
+/trunk/app/js/lsd/controller.lsd.js
+
+        /**
+
+         * Applies the Scope
+
+         *
+
+         * public
+
+         * @param {function} myFct - creates a diagram for full download
+
+         */
+
+        this.isScopeApplied = function(myFct){
+
+            $scope.$apply(myFct);
+
+        };
+
+Irreführende Signatur?
+
+
+
+/trunk/app/js/ifd/ifdController.js
+
+        this.isScopeApplied = function(myFct){
+
+            $scope.$apply(myFct);
+
+        };
+
+Irreführende Signatur? isScopeApplied klingt für mich wie eine Frage, ob Scope Applied ist oder nicht.
+
+
+
+***
+
+/trunk/app/js/ifd/ifdContent/ifdDiagramBuilder.js
+
+Allgemein: die id ""fullDownload-container-diagram"" wird an mehreren Stellen verwendet. Evtl. macht es Sinn draus eine Konstante zu machen?
+
+
+
+Entweder ein neues Kommentar zu
+
+var ifdDivIdFull = 'fullDownload-container-diagram';
+
+oder Kommentar anpassen zum gesamten Block
+
+
+
+***
+
+/trunk/app/js/ifd/ifdContent/ifdDataService.js
+
+    /**
+
+     * Reduce the number of InformationSystems if they are more as defined and
+
+     * set the partial flag in the ifdConfiguration.
+
+     *
+
+     * @private
+
+     * @param {Array} informationSystems
+
+     * @param {boolean} fullDownload - true = full download; false/undefined/... = normal download
+
+     * @return {Array} informationSystems
+
+     */
+
+    var trimNumberOfNodes = function (informationSystems, fullDownload) {
+
+JSDoc anpassen?
+
+Signatur anpassen?
+
+Bzw. braucht man überhaupt einen Return?
+
+ODER vielleicht den Aufruf nur dann machen, wenn nicht FullDownload. Dann muss man die ersten drei Punkte nicht beachten
+
+    if (!fullDownload) {
+
+		trimNumberOfNodes(relevantInformationSystems, fullDownload);          // reduce number of displayed nodes if to much
+
+	}
+
+und too much anstatt to much ;) Sorry. Erbsenzählerei :)
+
+
+
+***
+
+/trunk/app/js/ifd/ifdTemplate.html
+
+/trunk/app/js/lsd/template.html
+
+Vielleicht wäre es gut ein Kommentar zum <div id=""fullDownload-container-diagram""> zu schreiben.
+
+Damit wir es auch später wissen, dass in dem div nichts angezeigt wird."																																																					

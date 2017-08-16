@@ -1,0 +1,69 @@
+Extend the start page	"Add a second row:
+
+
+
+Recently accesses saved queries (generally, not only from the user logged in)
+
+
+
+Maybe 5 tiles (depends on the first row)
+
+
+
+{color:#FF0000}*UPDATE:*{color}
+
+Display this text as header for row section:
+
+- ""Recently accessed saved queries"" / ""Kürzlich ausgeführten gespeicherten Abfragen""
+
+- When no saved queries are accessed yet, display text: ""No recently accessed saved queries"" / ""Keine kürzlich ausgeführten gespeicherten Abfragen"""		Improvement	iteraplan Thunderduck	17/May/17 9:52 AM	19/Jun/17 11:03 AM														"15/Jun/17 11:25 AM;dmkh;1) ??Recently accesses saved queries (generally, not only from the user logged in)??
+
+ Means all public ones and from current user?
+
+
+
+-2) Please provide localized text to be displayed-
+
+
+
+3) Any permission handling?
+
+
+
+4) Color for tiles?
+
+
+
+-5) Any text for not existing recently loaded saved queries?-
+
+
+
+6) What is displayed on the tile? (name or name+date accessed)
+
+  
+
+ 7) The newest query is on the left or on the right?
+
+
+
+8) Number of tiles on the first row is 6, so the same is for the second, correct?"	"16/Jun/17 1:20 PM;fka;1) Yes.
+
+
+
+3) Yes, public ones and the ones from the current user. But no special functional persmission for this ""feature"".
+
+
+
+4) Blue like the saved queries tile.
+
+
+
+6) Name only
+
+
+
+7) Newest on the left
+
+
+
+8) Yes."	16/Jun/17 4:53 PM;vadm;See review comment https://iteraweb.iteratec.de/fisheye/cru/IP-698#general-comments	19/Jun/17 11:03 AM;vadm;Review done https://iteraweb.iteratec.de/fisheye/cru/IP-698																																																			

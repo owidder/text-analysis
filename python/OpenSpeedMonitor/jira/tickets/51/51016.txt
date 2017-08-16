@@ -1,0 +1,21 @@
+Implementation of loading indicator blocks changing of lsd content elements	"The implementation of loading indicator ( 
+
+ITERAPLAN-3734 ) blocks changing of lsd content elements.
+
+"		Bug	iteraplan PO	16/Jul/15 5:03 PM	17/Jul/15 1:55 PM					load	lsd								"17/Jul/15 10:47 AM;ach;notice:
+
+
+
+* showLoadingIndicator() and drawDiagram() methods are used in:
+
+(1) $scope.drawAll in controller
+
+(2) LSDMain.prototype.update inLSDMain
+
+(3) LSDMain.prototype.setProp in LSDMain
+
+
+
+in case (1) - drawDiagram() should be invoked *within* setTimeout (otherwise angular has no time to update the template - show ""loading diagram"")
+
+in cases (2) and (3) drawDiagram() should be invoked *after* setTimeout. (there are another things to do between showing loading indicator and redrawing)"	17/Jul/15 1:55 PM;msr;Dirty fix works as expected. Maybe some refactoring in future necessary.																																																					

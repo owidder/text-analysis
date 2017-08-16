@@ -1,0 +1,63 @@
+GUI zur Verwaltung von CSI-Konfigurationen (inkl. Assoziierter Gewichtungen und CSI-Mapping)	"*Marcus per Mail:*
+
+
+
+Zu Anhang _prototyp2.png_:
+
+
+
+Ich habe mal prototypisch die Buttons für die unterschiedlichen csi configurations in die weight seite eingebaut.
+
+
+
+Diese Seite wäre meiner Ansicht nach dann für die Erstellung/Bearbeitung der unterschiedlichen Csi-Konfigurationen zuständing. Vielleicht noch mit einer Funktion ""Diese Konfiguration einer JobGruppe zuweisen"".
+
+
+
+Zu Anhang _Mockup.pdf_:
+
+
+
+In der JobGruppenView (/jobGroup/show/) müsste dann ja die zur Gruppe gehörende Csi Configuration dargestellt werden und beim Klick auf edit dann eine andere auswählbar sein?! (siehe Mockup)
+
+
+
+Dann muss man jedoch wissen, welche Konfiguration man gerade verwenden will. Oder man macht es wie beim PageController. Wenn man da ein Mapping zuweisen will, kommt ja ein Vorschau-Popup. Ähnliches könnte man auch für das Zuweisen einer Csi-Configuration zu einer JobGruppe machen.
+
+
+
+*-> Umsetzung*
+
+
+
+Wie beschrieben/skizziert sollten wir (auch in Abstimmung mit Uwe) es umsetzen. 
+
+Bitte die ganze Detail-Darstellung der Csi-Configuration wie sie jetzt in der weights.gsp ist zu einem template machen und dieses dann read-only in der jobGroup/show-View verwenden.
+
+In der CsiConfiguration-View möchte ich oben, neben dem Dropdown zur Auswahl der anzuzeigenden CsiConfiguration noch einen kleinen Info-Button/-Link haben, der in einem Hover-Info die jeweils assoziierten Job-Gruppen anzeigt.
+
+Zudem sollten wir die view der Form halber umbenennen in csiConfiruration statt wie bisher weights (an SpringSecurity in der Config.groovy denken!).
+
+
+
+*Zur Neu-Erstellung von Csi-Configurations:*
+
+
+
+Alle Buttons bitte nur anzeigen, wenn User angemeldet ist (admin-Gruppe reicht aber).
+
+
+
+Wenn keine bestehende Configuration als Vorlage verwendet wird sollten:
+
+* Die bisher in der Bootstrap erzeugten 5 DefaultTimeToCsMapping-Kurven erzeugt und angehängt werden
+
+* Gar keine BrowserConnectivityWeights erzeugt werden. Der CSV-Export sollte für alle möglichen Browser/ConnectivityProfile-Kombinationen eine leere Spalte ausgeben, die für einen Import genutzt werden kann
+
+* Gar keine PageWeights erzeugt werden. Der Export sollte in diesem Fall pro Page eine Zeile ohne weight pro existierender Page ausgeben
+
+* 24 HourOfDayWeights erzeugt werden jeweils mit dem weight 1."		New Feature	OpenSpeedMonitor	24/Sep/15 1:46 PM	06/Jan/16 12:42 PM														"04/Jan/16 1:10 PM;mmi;Löschen einer CsiConfiguration soll nur möglich sein, wenn es im Anschluss noch mindestens eine andere CsiConfiguration gibt.
+
+Beim Löschen einer CsiConfiguration soll gewarnt werden, wenn an der CsiConfiguration noch JobGroups hängen. Wird trotz Warnung gelöscht, muss auch bei den JobGroups die Zuweisung entfernt werden."	04/Jan/16 3:10 PM;nku;CsiConfiguration Dropdown static url ->dynamic. 	"04/Jan/16 4:45 PM;mmi;Überschrift, welche csiConfiguration gerade gewählt ist.
+
+[Die Auswahl der CsiConfiguration ist noch zu unscheinbar]"	05/Jan/16 1:20 PM;bwo;Der Link zum Auswählen der CsiConfiguration wird nun dynamisch erzeugt und referenziert nicht länger statisch auf localhost.	06/Jan/16 12:42 PM;bwo;Rest in verschiedene Tickets aufgeteilt																																																		

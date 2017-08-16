@@ -1,0 +1,16 @@
+Error in cluster diagram while switching from building blocks to attributes	"The following steps result in an unexpected error:
+# switch to cluster diagrams
+# select ""Building Blocks"" as clustering criterion
+# select ""Information Systems"" as the element to be used for clustering
+# filter for information systems in with all possible status values (current, plan, ...) and empty the productive-dates; the result set should contain more than 50 elements, i.e. more than allowed
+# select ""Attributes"" as clustering criterion
+# select ""Accountability"" as the attribute to be used for clustering
+# press ""Confirm selection""
+
+*Expected behavior*: the visible values for Accountability are taken as the selection for configuration of the cluster diagram
+
+*Actual behavior*: an error message ""Too many entities to display (amount: 52) Currently no more than 50 entities are allowed"" is shown (see attachement).
+
+A similar error might occure for other diagram types as well - this hasn't been tested.
+
+"		Bug	iteraplan PO	17/Nov/11 2:06 PM	31/Jan/12 3:38 PM					diagram									31/Jan/12 3:38 PM;lci;Fixed now. Also went through the other diagram frontend services implementing the problem-method; the results were & are resetted properly everywhere else. 																																																						

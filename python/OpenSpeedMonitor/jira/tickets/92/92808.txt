@@ -1,0 +1,108 @@
+REST API: Access via basic auth isn't working	"User group ""ServiceNow"" set up in LDAP
+
+User assigned to Group in LDAP
+
+
+
+In Iteraplan
+
+Role ""ServiceNow"" created
+
+Role permission set up (see attached screenshot)
+
+
+
+Error when accessing rest.api:
+
+HTTP Status 401 - No AuthenticationProvider found for org.springframework.security.authentication.UsernamePasswordAuthenticationToken
+
+--------
+
+Authentication method via BasicAuth in http-Header:
+
+GET https://test-eam-tool.intranet.eon.com/iteraplan-eoitest/api/data/InformationSystem HTTP/1.1
+
+Accept-Encoding: gzip,deflate
+
+Authorization: Basic QTQzNjc3OlNuMHdUM3N0
+
+Host: test-eam-tool.intranet.eon.com
+
+Connection: Keep-Alive
+
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+Cookie: SessionID=10.252.207.5.1470213938529738
+
+Cookie2: $Version=1
+
+-----
+
+user/pass encryption is correct"		Technical question	iteraplan Support	09/Aug/16 9:23 AM	09/Sep/16 11:32 AM														"09/Aug/16 9:23 AM;ip.daniel.robinson;
+
+!ServiceNow_role.JPG|thumbnail!"	"11/Aug/16 2:50 PM;cst;Dear Mr. Robinson,
+
+we are checking your problem at the moment. 
+At the start of the next week, we send you an answer for the theme REST and LDAP. 
+
+Best regards and thank you for your patience,
+
+Christoph Stangl - iteraplan Support "	"17/Aug/16 10:52 AM;cst;Hallo Alex,
+
+habe den Vorgang weiter geprüft und folgende Dateien benötigen wir für die weitere analyse. 
+Die iteraplan Logdateien die zeitlich zum Aufruf geschrieben werden und die Konfigurationsdatei ""applicationContext-spring-security.xml""
+
+Diese findest du im ""WEB-INF"" Verzeichnis der iteraplan Instanz. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+"	"17/Aug/16 3:07 PM;ip.daniel.robinson;Hallo Christian,
+
+hier die Log files.
+
+[^sl00737.iteraplan-test.logs.tar.gz] _(5 kB)_"	"17/Aug/16 3:08 PM;ip.daniel.robinson;Vergessen zu sagen: 11:43 CET wurde der request gesendet
+
+Gruss
+Alex"	"18/Aug/16 9:29 AM;cst;Hallo Alex,
+
+wir haben uns die LOG-Datei angeschaut und es deutet darauf hin, 
+das die REST Anfrage gar nicht erst iteraplan erreicht. 
+
+Um dieses weiter verfolgen zu können benötigen wir die ""localhost_access_log"" aus dem Tomcat LOG Verzeichnis.
+Es kann sein das der Tomcat diese nicht standardmäßig schreibt, dann müsste das LOG im Tomcat aktiviert werden.
+
+Viele Grüße,
+
+Christoph - iteraplan Support "	"31/Aug/16 8:45 AM;ip.daniel.robinson;Hi Christoph,
+wir sind dran. Habe gleich ein conference call mit allen beteiligten, da wir auf den neuen Servern eh Probleme mit der alten CMDB connection haben.
+Werde das File gleich rueber schicken 
+Alex"	"31/Aug/16 11:53 AM;ip.daniel.robinson;Hi Christoph,
+anbei das log file.
+
+Datum war 24/08/2016
+
+[^request.txt] _(0,3 kB)_
+
+[^response.txt] _(1 kB)_
+
+[^UAT.localhost.logs.tar.gz] _(134 kB)_"	"09/Sep/16 11:32 AM;cst;Hallo Alex,
+
+
+
+habe den Vorgang in der 5.3 nachgestellt und die Abfrage funktioniert ohne Probleme.
+
+ 
+
+Die Version 3.4 wird von uns auch nicht mehr supportet.
+
+Um das Verhalten zu lösen, müsste hier ein Update auf Version 5.3 durchgeführt werden. 
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support"																																														

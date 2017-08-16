@@ -1,0 +1,43 @@
+Layout improvements	"Please implement the following 3 layout improvements:
+
+
+
+1. Attribute names in header of the mpdDataDiagram:
+
+* Show the localised attribute names in all levels where they are applied, show it one, two or three times
+
+* e.g. Costs is applied to Level 2 and 3, so show it in the header of level 2 and 3
+
+* Only unit for this subtask 1
+
+
+
+2. Icons in the header of the mpdDataDiagram:
+
+* Put the icon for the Building Block Type at the beginning of each row of the header
+
+* e.g. ""ICON FOR INFORMATION SYSTEM"" Information System
+
+
+
+3. Remove empty rows in the mpdTimeSpanHeader:
+
+* Do not create empty rows for Level 2 and 3, -but put the years and months directly above the mpdTimeSpanDiagram- but increase the heigth of both rows (months and years) of the mpdTimeSpanHeader line"		Improvement	iteraplan Speedbird	24/Jun/16 2:02 PM	12/Jul/16 10:45 AM														24/Jun/16 4:53 PM;msr;2. is already implemented	"07/Jul/16 12:09 PM;dmkh;??Show the localised attribute names in all levels where they are *applied*??
+
+- Should we show names *only* where user *applied* them with the help of tool-area? E.g. user selects Costs for 3 level as additional column, so show Costs in header *only* for 3 level.
+
+- Or should we show names where the attribute is *applicable* to level? E.g. user selects Costs for 3 level as additional column, so show Costs in header for 1 and 3 levels, where these attributes are applicable, but do not show for second level, where Costs is not supported. Such situation you can see in the attached screenshot
+
+
+
+[~msr], please, specify this case."	"07/Jul/16 1:36 PM;msr;Please implement 2nd approach:
+
+Show the attribute name on each level where it is actually applied (not where it was selected)"	"08/Jul/16 2:10 PM;roia;[~dmkh], [~msr] is the indentation of field names intentional (see attached indentation.jpg)?
+
+
+
+Review complete: https://iteraweb.iteratec.de/fisheye/cru/IP-54
+
+[~msr], I have one question regarding coding style, not specifically related to this task, but which is well demonstrated in this implementation. https://iteraweb.iteratec.de/fisheye/cru/IP-54#CFR-23839
+
+"	08/Jul/16 4:40 PM;dmkh;[~msr], please, specify indentation of field names, should we indent them in the same way as building block type names?	11/Jul/16 9:02 AM;msr;Please do not use any indentation for the attribue field names.																																																	

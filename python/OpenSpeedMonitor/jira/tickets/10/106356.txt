@@ -1,0 +1,124 @@
+5.4	"Hallo Herr Stangl,
+
+
+
+in 5.4 kommt es nach dem hinzufügen von Spalten im interaktiven Client zu einem Problem mit der Sortierung. Im exportierten Excel sind Inhalte von bestimmten Spalten vertauscht (sieh Anhang)
+
+
+
+Beste Grüße
+
+
+
+Volker Simon
+
+
+
+"		Fault	iteraplan Support	21/Dec/16 12:20 PM	04/Feb/17 7:00 AM														"21/Dec/16 12:20 PM;volker.simon@huk-coburg.de;
+
+[^pro_itera.xlsx] _(195 kB)_"	"22/Dec/16 3:05 PM;cst;Sehr geehrter Herr Simon, 
+
+vielen Dank für Ihre Anfrage.
+
+Wir haben die Excel Datei geprüft und die Beschreibung <-> Anwendungskategorie sind die Felder welche vertauscht sind?
+Also der Titel passt nicht zum Inhalt.
+
+Würden Sie uns bitte einen Screenshot der Listview zukommen lassen, welche Filter / Spalten in der Übersicht gesetzt sind.
+Zusätzlich um welches Attribute sich es bei der Anwendungskategorie handelt, gerne können Sie uns hier auch einen Screenshot zukommen lassen. 
+
+Tritt das Verhalten immer auf, oder nur in einer bestimmten Konstellation. Habe hier einige Tests gemacht und das Verhalten nicht reproduzieren können. 
+z.B. nur in einer bestimmten Liste / mit bestimmten Spalten / bestimmten Filter usw. 
+
+Die letzte Frage lautet, tritt das Verhalten beim CSV genauso auf? 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+"	"23/Dec/16 12:50 PM;juergen.schmelzing@huk-coburg.de;Hallo Herr Stangl,
+ich hätte 2 Anliegen:
+
+1. Herr Simon hat die HUK-COBURG verlassen. Daher bitte seinen User-Account löschen. 
+2. Mein Kollege Herr Wohnig wird Ihnen nach seinem Urlaub in KW2 antworten.
+
+Wünsche Ihnen schöne Weihnachtsfeiertage und einen guten Rutsch nach 2017.
+
+Viele Grüße
+Jürgen Schmelzing (BO32)"	"23/Dec/16 1:16 PM;cst;Hallo Herr Schmelzing,
+
+vielen Dank für Ihre Antwort.
+
+Die Accounts von Herr Simon wurden deaktiviert. 
+
+Vielen Dank für die netten Grüße, 
+wünsche Ihnen auch ein schönes Fest und einen guten Rutsch ins Jahr 2017.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"12/Jan/17 11:56 AM;erich.wohnig@huk-coburg.de;Hallo Herr Stangl,
+
+der Fehler tritt nach meiner Beobachtung bei Beschreibungen mit Semikolon auf. Ich habe den Fehler reproduziert und zwei Screenshots der View und des zugehörigen exportierten Excels beigefügt.
+<HUK link:T:\3 UAM operativ\32 Werkzeuge\322 AMS\Probleme\Excel Export verschiebt Spalten>
+
+!IPS-258 Semikolon in Beschreibung vor Export.PNG|thumbnail!
+
+!IPS-258 Spaltentrennung in Excel nach Export.PNG|thumbnail!"	"12/Jan/17 12:02 PM;erich.wohnig@huk-coburg.de;Anhänge 2. Versuch
+
+!IPS-258 Semikolon in Beschreibung vor Export.PNG|thumbnail!
+
+!IPS-258 Spaltentrennung in Excel nach Export.PNG|thumbnail!"	"12/Jan/17 12:02 PM;erich.wohnig@huk-coburg.de;Anhänge 3. Versuch
+
+!IPS-258 Semikolon in Beschreibung vor Export.jpg|thumbnail!
+
+!IPS-258 Spaltentrennung in Excel nach Export.jpg|thumbnail!"	"12/Jan/17 12:03 PM;erich.wohnig@huk-coburg.de;
+
+!IPS-258 Semikolon in Beschreibung vor Export.PNG|thumbnail!
+
+!IPS-258 Spaltentrennung in Excel nach Export.PNG|thumbnail!"	"12/Jan/17 12:09 PM;erich.wohnig@huk-coburg.de;Upload der Screenshot Attachments klappt nicht. Also als Text mit Excel Anlage: 
+
+Die Beschreibung ""Suchmöglichkeit in medizinischen Kodierungssystemen;Dieses Programm soll die Arbeit bei der Diagnose (...)"" ist im Excel beim Semikolon getrennt und auf zwei Spalten verteilt, also: ""Suchmöglichkeit in medizinischen Kodierungssystemen"" und ""Dieses Programm soll die Arbeit bei der Diagnose (...)""
+
+<HUK link:T:\3 UAM operativ\32 Werkzeuge\322 AMS\Probleme\Excel Export verschiebt Spalten>
+
+[^Information System_17-01-12_11-51-35.xlsx] _(8 kB)_"	"12/Jan/17 4:14 PM;cst;Hallo Herr Wohning,
+
+
+
+gutes neues Jahr.
+
+
+
+Das Problem liegt an dem "";"" dieser wird als Trennzeichen interpretiert und deswegen verschiebt sich die Spalte nach Rechts.
+
+Würden Sie bitte den "";"" aus der Beschreibung entfernen als Work a round.
+
+
+
+Dies wird mit Version 5.5 gelöst. 
+
+
+
+Vielen Dank,
+
+
+
+Christoph Stangl - iteraplan Support"	"13/Jan/17 8:31 AM;erich.wohnig@huk-coburg.de;Hallo Herr Stangl,
+Ihnen auch ein Gutes Neues!
+
+Die Trennzeichen in den Beschreibungen kommen aus unserem Vorsystem. So lässt sich der Workaround nicht umsetzen.
+
+Stattdessen klappt der Excel Export über den Classic Client (siehe Anlage). Dieser Workaround hilft mir bis 5.5. 
+
+Übrigens werden im interaktiven Client die Spaltentitel unterschiedlich exportiert (z.B. Description statt Beschreibung). Wird das in 5.5 behoben?
+
+Viele Grüße
+Erich Wohnig
+
+[^iteraplanExcelData_Anwendung_2017-01-13.xlsx] _(8 kB)_"	"16/Jan/17 1:19 PM;cst;Sehr geehrter Herr Wohning,
+
+vielen Dank für Ihren Hinweis.
+
+Ich werde dem Nachgehen und Ihnen bescheid geben, ob dies mit 5.5 behoben wird.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "																																											

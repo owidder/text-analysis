@@ -1,0 +1,13 @@
+Let local.conf.js completely overwrite conf.js	"*IS:*
+
+For running local UI-tests it is necessary to create and customize _local.conf.js_ AND you need to adapt the property _seleniumAddress_ of _conf.js_, which is checked-in into SVN but must not be changed to execute tests on Jenkins.
+
+
+
+*SHOULD:*
+
+_seleniumAddress_ can be configured in _local.conf.js_, without changing _conf.js_.
+
+
+
+BTW: remove commented-out code in _conf.js_."		Improvement	iteraplan PO	08/Mar/16 10:46 AM						nic	protractor																																																														

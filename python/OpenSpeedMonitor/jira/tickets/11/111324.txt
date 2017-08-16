@@ -1,0 +1,1 @@
+filtering in diagrams and lists		110804	Sub-task	iteraplan PO	08/Feb/17 12:08 PM	14/Feb/17 12:07 PM														08/Feb/17 12:27 PM;dmkh;For developer: use already included {{alertService}} in diagram configs and localized message {{NON_EXISTING_ATTRIBUTE_OR_LITERAL_MESSAGE}}.																																																						

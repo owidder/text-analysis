@@ -1,0 +1,37 @@
+Recherche Frameworks	"Welche Frameworks gibt es, die folgendes ermöglichen:
+
+
+
+* plattformübergreifender Einsatz (Windows Phone, iOS, Android, (Desktop-Browser))
+
+* Darstellung Karte
+
+* Kamerabild darstellen
+
+* Auf Karte oder Kamerabild AR-Objekte darstellen
+
+* Interaktive AR-Objekte (d.h. Klick -> Aktion)
+
+* Geo-Position abgreifen
+
+* Kompass/Accelerometer (Ausrichtung)
+
+* Rest-Services ansprechen
+
+* Programmiersprache / Frameworks realistisch zu erlernen in der Zeit
+
+* Entwicklungs-Barrieren? (wie einfach zu installieren, wie stabil, wie gut dokumentiert...)
+
+* Visualisierungsmöglichkeiten
+
+
+
+Akzeptanzkriterien
+
+
+
+* Steckbriefe im Wiki
+
+* Hello-World ausprobiert
+
+* Vergleichstabelle für die aussichtsreichsten Kandidaten"		Task	EAMV15	20/Oct/15 11:56 AM	29/Oct/15 3:20 PM																																																																				

@@ -1,0 +1,25 @@
+Error Page for not accessable reactor scripts cannot be loaded (server)	"Reproduce:
+
+
+
+Load a reactor script to the reactor.
+
+
+
+Execute the script and publish the output field with the following data:
+
+ * Output Filename publicDemo_strategicBuildingBlock.html 
+
+ * URL /published/TestURL 
+
+ * Access Roles Test1234 
+
+ * Cache Time 10 hours
+
+
+
+Expected: an error page is shown
+
+
+
+Current: The browser does not stop loading and there are errors in the backend."		Bug	iteraplan Speedbird	20/Jun/17 8:03 AM	26/Jul/17 11:47 AM																																																																				

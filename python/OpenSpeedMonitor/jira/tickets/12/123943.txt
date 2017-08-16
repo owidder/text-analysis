@@ -1,0 +1,15 @@
+[OSM-Dump-Script] Manchmal sind einzelne Tabellen leer	"Ist hier aufgetreten:
+
+
+
+[https://iteraweb.iteratec.de/bamboo/browse/OSM-SQLDUM-362]
+
+
+
+In diesem Dump sind z.B. keine WebPagetestServer enthalten:
+
+
+
+mysql> select * from web_page_test_server;
+
+Empty set (0.00 sec)"		Bug	OpenSpeedMonitor	09/Jun/17 4:18 PM																																																																					

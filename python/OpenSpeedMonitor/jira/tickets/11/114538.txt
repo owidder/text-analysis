@@ -1,0 +1,9 @@
+Extend REST-API /metamodel to support xlsx and ecore-format (Server)	"*Summary:*
+
+* Extend REST-API {{/metamodel}} for GET-requests to support xlsx and ecore-format
+
+* Update https://doc.iteraplan.de/display/iteraplan60/Metamodel+API
+
+* Use parameter to distinguish between the different formats: ""format = ""ecore"""" or ""format = ""xlsx""""
+
+"		Improvement	iteraplan Speedbird	10/Mar/17 3:27 PM	11/Apr/17 3:29 PM																																																																				

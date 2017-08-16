@@ -1,0 +1,3 @@
+Improve LDAP authentication error messages	"Whenever an authentication fails, a clear error message should be displayed in the log, indicating the party responsible for the error.
+
+For example, in an SSO configuration, if the necessary token is missing during authorization, a ""token was not provided"" error should be shown, indicating that the problem lies outside iteraplan."		Improvement	iteraplan PO	12/May/14 10:57 AM						authentication	error	message																																																													

@@ -1,0 +1,9 @@
+New Interface element breaks new client	"_Reproduce (in online demo):_
+# Go to interactive client -> NCD
+# Cluster by: Information System; Cluster: Interface => correct Diagram
+# Go to classic client
+# Create new Interface between Account-Sys RB # 3.1 and Broker # 5.1
+# Switch back to interactive client and recreate NCD with F5
+
+=> no display/error"		Bug	iteraplan PO	01/Jun/15 2:15 PM	16/Jun/15 4:40 PM														16/Jun/15 10:26 AM;fam;Fixed problem of ITERAPLAN-3212 within this ticket.	16/Jun/15 10:45 AM;fam;Also fixed the problem which occured after adjusting the max. length in ITERAPLAN-2995.	"16/Jun/15 1:59 PM;fam;Fixed this tickets problem. Problem was empty transport object from classic client, which was not supported in new client.
+A negativ id is the indicator of an InformationFlow without transport object. Now, when negative id is recognized, InformationFlow object is returned. "																																																				

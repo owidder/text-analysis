@@ -1,0 +1,29 @@
+Dragging of box size	"*Summary:*
+Implement user interaction (i.e. dragging) for sizing of inner boxes.
+
+*As-Is:*
+No user interaction for box sizing.
+
+*To-Be:*
+User can drag inner boxes to change box size.
+
+*Affected parts of the system:*
+* Nesting Cluster Diagram
+
+*Approach:*
+* Make the frame of the boxes ""editable"", i.e. the user can drag all 4 sides of a frame to make all boxes wider or taller (and more narrow and smaller). Depending on the new size of the boxes, use text clipping or not.
+* Add the symbol for dragging in any case, when the user hovers over a box.
+* There should be a limit for dragging of boxes. This limit can be hard-coded. Use a large pixel number.
+* If a user drags a box, only this box is updated immediately. All other boxes are unchanged during the dragging. If the user drags the box to a bigger size, this box may overlap with the surrounding boxes, which is ok for the time during the dragging. The other boxes are in the background and are not readable during the dragging. As soon as the user stops dragging, the size of all other boxes gets recalculated and the diagram gets updated immediately.
+* If the boxes are getting bigger and there is much space left in the boxes, please automatically increase the font size. 
+
+*Acceptance Criteria:*
+The user starts with the view of an open NCD with IS as inner elements.
+The user hovers over a frame of a box.
+A symbol for editing appears (e.g. <->).
+The user click and holds on one side of the box with primary click (""dragging"").
+The box width/length is updated immediately during dragging.
+The user stops dragging.
+All boxes in the diagram are updated to the new size and text clipping is used if necessary.
+
+The steps above work for all inner boxes."		New Feature	iteraplan PO	19/Feb/15 8:42 AM	13/Jul/15 9:52 AM					nesting									13/Jul/15 9:52 AM;sfe;not in our scope for now																																																						

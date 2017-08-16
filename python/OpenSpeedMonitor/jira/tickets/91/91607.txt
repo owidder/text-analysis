@@ -1,0 +1,7 @@
+Check User Documentation if it fits to Code	"Please check the user guide of version 5.3, if it fits to the code.
+
+
+
+* Especially the part {{Main Features\New client\Visualisations}} as the Speedbird-Team did not update their changes"		Task	iteraplan Quickfox	26/Jul/16 9:04 AM	10/Aug/16 3:36 PM														10/Aug/16 12:53 PM;fka;Updated all four user guide pages for diagrams in the new client.	"10/Aug/16 3:35 PM;pma;Review comments: ok
+
+* note: in some pages I refactored spelling a bit"																																																					

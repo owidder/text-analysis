@@ -1,0 +1,23 @@
+2.1.1 Release iteraplan common base	"Es muss sichergestellt sein, dass alle Helper-Projekte Release-Status haben (keine Snapshots). Falls es keine Änderungen seit dem letzten iteraplan Release gab, dann sollte natürlich die letzte Release-Version des Helper-Projekts im iteraplan-POM verwendet werden.
+
+
+
+2.1.1  iteraplan common base
+
+
+
+* Den Job Build_iteraplan-common-base_Release im Projekt Release 3.x mit dem Menüpunkt ""Perform Maven Release"" ausführen. Wichtig: nicht mit ""Build with Parameters"".
+
+  *  In der Eingabemaske folgende Werte ausfüllen:
+
+   **     Release Version auf <major>.<minor>.0 setzen. Wenn z.B. die aktuelle Snapshot-Version 1.1-SNAPSHOT ist, wäre hier typischerweise 1.1.0 einzutragen.
+
+     **   Development Version auf die nächste Snapshot-Version setzen, im obigen Beispiel also auf 1.2-SNAPSHOT
+
+      **  Username und Password (Checkbox ""Specify SCM login/password"" aktivieren): Kürzel und Passwort wie bei der Windows-Anmeldung, wird für erstellen eines Tags benötigt. Die Daten werden nach erfolgreicher Durchführung des Jobs gelöscht.
+
+       ** Checkbox ""Specify custom SCM tag"" aktivieren, falls nicht vorausgewählt, und einen Tagnamen nach folgender Konvention eintragen: <major>_<minor>_<maintenance> (z.B. 1_1_0). Als Ergebnis sollte es nach Ausführen des Jobs dann z.B. ein Verzeichnis iteraplan/common-base/tags/1_0_0/iteraplan-common-base geben.
+
+      **  Unter JIRA_RELEASE_TICKET_NUMBER die Ticketnummer für den Release-Bau angeben. Für Ticket ITERAPLAN-2219 wäre hier also 2219 einzutragen.
+
+   * Nun ""Schedule Maven Release Build"" klicken, um den Job auszuführen."		Task	iteraplan PO	26/Oct/15 4:17 PM	29/Oct/15 3:00 PM																																																																				

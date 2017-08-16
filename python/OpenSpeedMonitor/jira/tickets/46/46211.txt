@@ -1,0 +1,2 @@
+Nesting Cluster Diagram CE / WinXP / IE8 / hsql / english	Testing the NC with IE 8 and Win XP (CE-version with hsql)	46148	Sub-task	iteraplan PO	24/Oct/13 2:13 PM	24/Oct/13 4:17 PM														"24/Oct/13 4:00 PM;jmi;all tests OK
+(TC5 step 1 ""Log into iteraplan with user tom"" not available to CE)"	24/Oct/13 4:17 PM;svo;TC6 irrelevant for CE as noted by Jana. apart from that, nothing to test here.																																																					

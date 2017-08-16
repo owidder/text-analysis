@@ -1,0 +1,13 @@
+TBD: grid data resorted atfer column is removed	"To reproduce: 
+
+ # Sort list of building blocks by some column
+
+ # Remove this column
+
+
+
+Result - the data in grid gets resorted by first visible column.
+
+
+
+I think, this could be confusing, especially when mass update mode is on and there're rows selected."		Bug	iteraplan Speedbird	24/Mar/17 9:46 AM	30/Mar/17 4:50 PM														28/Mar/17 1:51 PM;mkt;I discussed this issue with Fabian and the decision is to leave sorting as it is now, as it can only be based on columns that are visible.	28/Mar/17 1:58 PM;roia;Great. Nothing to do :)																																																					

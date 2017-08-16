@@ -1,0 +1,8 @@
+Cardinality Constraing Violation in german localization is missing information	"English example:
+{{Cardinality constraint violation: ""[attribute type]"" of [building block type] ""[name]"" has not been set, but needs a value assigned.}}
+
+German:
+{{Verletzung der Kardinalitätsbegrenzung: ""[attribute type]"" von ""[building block type]"" hat keinen Wert zugewiesen.}}
+
+As you can see, the name of the offending building block type is missing.
+The resource file should be fixed so the german message matches the english one."		Bug	iteraplan PO	08/Jul/14 11:31 AM	10/Jul/14 9:42 AM																																																																				

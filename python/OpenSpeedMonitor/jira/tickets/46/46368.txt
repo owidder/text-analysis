@@ -1,0 +1,9 @@
+Massenimport (Excel): Workaround für den Schnittstellenimport funktioniert nicht	"Auf der Seite http://www.iteraplan.de/wiki/display/iteraplan/Known+Bugs wird für den fehlerhaften Schnittstellenimport ein Workaround vorgeschlagen wo man jeder Schnittstelle (Interface) ein BusinessObject zuordnen und einen Namen geben muss.
+
+Wenn ich versuche im Sheet ""InformationFlow"" den Namen einer Schnittstelle, die im Sheet ""Interface"" steht, zuzuteilen erhalte ich folgende Fehlermeldung beim Upload:
+Cardinality constraint violation: ""informationFlows"" of InformationSystemInterface ""<interfacename>"" has 0 values assigned, but must be between 1 and 2,147,483,647
+Wobei <interfacename> ein in iteraplan bereits existierender Schnittstellenname ist und im Excel-Sheet nicht vorkommt.
+
+Lasse ich das Sheet ""Interface"" leer und gebe bei ""InformationFlow"" keine Namen an, tauchen beim Import wieder dieselben, bekannten Fehler/Inkonsistenzen auf."		Bug	iteraplan PO	28/Nov/13 8:09 AM	01/Jul/14 3:17 PM														25/Jun/14 2:16 PM;fka;Is this still applicable?	"01/Jul/14 3:17 PM;sfe;In der aktuellen iteraplan-Version 3.3.0 wird der hier angesprochene Workaround nicht mehr benötigt, da der Schnittstellenimport gefixt wurde.
+
+Zudem wurde, anhand der gegebenen Beschreibung, der Workaround missverstanden: Die Zuweisung von einem ""Dummy""-Geschäftsobjekt zu der Schnittstelle musste in iteraplan, nicht in der Excel-Datei, erfolgen."																																																					

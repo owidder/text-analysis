@@ -1,0 +1,6 @@
+Better Feedback on which Characters can be used in FullTextSearch	"Provide a better Feedback on which Characters can be used in FullTextSearch by
+ * Improving ErrorMessage
+ * Improving Documentation
+ * Improving Mouse-Over Explanations on what's possible and what's not
+
+Original ticket in Trac: https://iteraplan.iteratec.de/projects/iteraplan/ticket/2321"		Improvement	iteraplan PO	30/Aug/11 5:33 PM	14/Oct/11 11:31 AM					documentation									13/Oct/11 3:05 PM;sry;Documentation was updated in https://www.iteraplan.de/wiki/display/iteraplan/Global+search	14/Oct/11 11:31 AM;mba;Error messages contain general information and link to updated online demo which provides detailed instructions (in all languages) => worksforme																																																					

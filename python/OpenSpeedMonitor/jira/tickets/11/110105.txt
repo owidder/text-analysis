@@ -1,0 +1,3 @@
+Skript-Validierung um Prüfung auf Variablen im measuredEvent erweitern	"Momentan werden Variablen im measuredEvent also {code}setEventName ${my_custom_event}:::...{code} nicht unterstützt. Deshalb sollte dieser Fall bei der Validierung im Skript-Editor auch abgefangen werden.
+
+"		Bug	OpenSpeedMonitor	31/Jan/17 9:22 AM	31/Jan/17 4:03 PM																																																																				

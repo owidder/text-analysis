@@ -1,0 +1,19 @@
+Create manual system tests for new Building Block Lists	"*Summary:*
+
+Create manual system tests for new Building Block Lists.
+
+
+
+Use excel template of classic client.
+
+
+
+Ensure you cover *all major* functionality including error-prone combinations of functionalities.
+
+
+
+Execute the specified tests and create Defect-Tickets if necessary."		Task	iteraplan PO	21/Oct/15 4:46 PM	26/Oct/15 2:02 PM					test									"26/Oct/15 1:58 PM;mbr;In the test specification the column ""Expected"" twice contains the value ""CRASH: no diagram is loaded"". Definition of the real expected value is postponed and will be done in ITERAPLAN-4033
+
+
+
+"																																																						

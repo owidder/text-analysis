@@ -1,0 +1,15 @@
+Create manual system tests for new Landscape Diagram	"*Summary:*
+
+Create manual system tests for new Landscape Diagram.
+
+
+
+Use excel template of classic client.
+
+
+
+Ensure you cover *all major* functionality including error-prone combinations of functionalities.
+
+
+
+Include download, localisation and ""link to classic client"" - functions."		Task	iteraplan PO	21/Oct/15 4:44 PM	27/Oct/15 1:01 PM					test									26/Oct/15 7:53 AM;msr;Waiting for ITERAPLAN-4029	27/Oct/15 11:15 AM;msr;Done by [~mse] and [~msr]																																																					

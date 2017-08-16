@@ -1,0 +1,4 @@
+Mail address validation in user management fails on dashes in domain names	When editing a user, the Javascript validation does not accept mail addresses with a dash in the domain component, like user@company-foo.com, even though such mail addresses are legal and frequently used.		Bug	iteraplan PO	07/Aug/12 10:50 AM	21/Aug/12 11:46 AM					email	validation								"07/Aug/12 10:51 AM;sry;The regular expression needs to be enhanced trivially:
+{code}
+/^[^\W][a-zA-Z0-9\_\-\.]+([a-zA-Z0-9\_\-\.]+)*\@[a-zA-Z0-9\_\-]+(\.[a-zA-Z0-9\_\-]+)*\.[a-zA-Z]{2,4}$/
+{code}"	07/Aug/12 11:40 AM;sry;These is no equivalent dialog in the Wicket-based UI yet, so it has been fixed in the release 3.0.x branch only.	21/Aug/12 5:03 PM;kvo;thx																																																				

@@ -1,0 +1,15 @@
+Line style by enumeration attribute of interface	"*Summary:*
+
+Add a new feature to the Information Flow Diagram: Change the linestyle of edges by enumeration attribute.
+
+
+
+*Details:*
+
+* The dotting of the line and the legend should be the same as the line type in the Landscape diagram
+
+* The configuration must be saved in the url
+
+* The naming of the entries in the toolarea should be similar to the toolarea in the Landscape Diagram
+
+* The should be an entry for ""Default line type"" to reset any active dotting"		New Feature	iteraplan PO	02/Sep/15 1:56 PM	26/Apr/16 10:51 AM					ifd																																																															

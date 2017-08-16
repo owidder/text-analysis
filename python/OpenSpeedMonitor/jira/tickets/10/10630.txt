@@ -1,0 +1,13 @@
+EventNames ohne Multistep werden uneinheitlich gesetzt	"Problem:
+
+Im Zuge der Migration werden die Namen der Scripts als EventNames gesetzt. Wenn nach der Migration dann EventResults von alter Infrastruktur (ohne Multistep) reinkommen wird der Name des Jobs als EventName gesetzt. So landen die Ergebnisse der (vor der Migration) bereits bestehenden Jobs unter einem anderen EventName im System.
+
+Lösung:
+
+Die Domain Job im ism bekommt ein neues Attribut EventNameIfNoOneIsSetInScript. Dieses Attribut wird abgefragt, wenn ein NICHT-MULTISTEP-Result reinkommt. Wenn es gesetzt ist, wird dieses Attribut als Eventname verwendet. 
+Teilvorgang A (Verarbeitung des EventNames):
+Es wird zuerst geguckt, ob dieses Eventname einen Page-Prefix hat (z.B. ""HP:::""). Wenn ja wird er abgeschnitten. Für den verbleibenden Eventname wird nachgesehen, ob es ein Event mit diesem name schon gibt. Wenn ja wird das neue Result hieran gehängt. Wenn nicht wird ein neues Event mit entsprechendem Namen und Page erzeugt und das Result angehängt.
+
+Teilvorgang A greift in dieser Form auch bei eintreffenden EventResults neuer Infrastruktur, die bereits einen Eventname aus dem Script haben."		Bug	OpenSpeedMonitor	21/Oct/13 9:07 AM	21/Oct/13 12:34 PM														"21/Oct/13 10:25 AM;rhe;- Migrations-Script muss Feld anlegen
+- Java-Tool Einträge erstelllen
+"	21/Oct/13 11:05 AM;rhe;Name des Feldes: eventNameIfUnknown																																																					

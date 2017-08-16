@@ -1,0 +1,9 @@
+Attribute popups show displaced descriptions	"Reproduce:
+* Add descriptions for the literals in an enumeration attribute (Screenshot ""attrdesc1.png"").
+* Open a details page of an according building block element.
+* Open the attributes tab and click on the info-popover.
+=> In read mode, everything is ok (Screenshot ""attrdesc2.png"").
+
+* Open edit mode and click on the info-popover again.
+=> The descriptions for the enum literals are displaced (Screenshot ""attrdesc3.png"").
+"		Bug	iteraplan PO	20/Jan/14 2:23 PM	23/Jan/14 4:48 PM					attribute	gui								23/Jan/14 9:58 AM;fka;Please analyse first and estimate the effort	23/Jan/14 4:48 PM;mba;Problem has been identified and solved	23/Jan/14 5:27 PM;fka;Reviewed																																																				

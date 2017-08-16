@@ -1,0 +1,49 @@
+Partiality incl. Full Download as SVG and PDF	"*Summary:*
+
+Implement partial diagram and full download for SVG and PDF.
+
+Same implementation as in the Masterplan Diagram
+
+
+
+*Implementation Details:*
+
+* Partial limit on number of cells and *not* on Business Objects (same as in Masterplan Diagram)
+
+* Leave partial limit check in the ccdDataService
+
+* Count number of rows and columns
+
+* Please test new limit for Internet Explorer and other browsers
+
+* Make the limit browser dependant, i.e. one limit for the Internet Explorer and another limit for all other browsers
+
+* Url: nothing to do
+
+
+
+*UI:*
+
+* Diagram Header: Show partial limit warning and offer ""Full Download""-Button. Use same warning text like in the Masterpland Diagram
+
+* Legend: nothing to do
+
+* Toolarea: nothing to do"		New Feature	iteraplan Speedbird	26/Aug/16 9:32 AM	13/Sep/16 6:39 PM														26/Aug/16 11:19 AM;msr;Ticket already discussed on 26th August	"12/Sep/16 2:35 PM;dmkh;??Count number of rows and columns??
+
+Counting cells from *rows* x *columns* can be confusing when we have a concrete partial limit in Cluster diagram, for example:
+
+- partial limit is 10
+
+- we have 3 columns with 3 rows = 9 cells
+
+
+
+Limit is reached and next row(column) will not be built. Partial message tells us that 10 table cells are displayed but actually 9 are. Also because of tabular layout we can't distinguish cells of a ""table"" in case when some of values are unspecified and not displayed. 
+
+
+
+So I decided to count ""actual"" cells, which represents some defined value in Cluster diagram, doing this partial message make sense and do not confuse a user."	13/Sep/16 8:55 AM;dmkh;[~viol], I have added minor fix for unit tests in revision *4323*, please check	"13/Sep/16 4:23 PM;viol;Review is done.
+
+A few comments are here: 
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-39"																																																			

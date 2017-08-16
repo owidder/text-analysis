@@ -1,0 +1,17 @@
+Enhance saved query overviews	"The following applies both to the overview ""all saved queries"" and the individual saved query overview with each visualisation.
+
+
+
+* Add the (internal) ID of the query to the panel, between ""Execute"" and ""Name""
+
+* Make the overview panels sortable after all columns with individual information (not the columns with icons like ""Execute"")
+
+
+
+
+
+
+
+
+
+"		New Feature	iteraplan PO	10/Apr/14 7:08 PM	11/Aug/16 9:15 AM					savedquery									11/Aug/16 9:15 AM;fka;Partly done with the Graphics Reactor enhancements in 5.3																																																						

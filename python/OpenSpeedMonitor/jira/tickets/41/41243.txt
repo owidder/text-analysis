@@ -1,0 +1,1 @@
+X-Achse: Position der Beschriftung und der Datenpunkte stimmt nicht präzise überein.			Bug	OpenSpeedMonitor	20/May/15 4:30 PM	20/May/15 4:36 PM																																																																				

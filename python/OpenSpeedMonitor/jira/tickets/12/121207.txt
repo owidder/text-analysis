@@ -1,0 +1,5 @@
+Restrict upload filesize for import to 26 MB on frontend and backend	"Restrict upload filesize for import to 26 MB on frontend and backend (for all REST-import-calls)
+
+
+
+{color:red}UPDATE: {color} message: ""The upload file size is restricted to 26 MB"" / ""Das Upload-Volumen ist auf 26 MB begrenzt"""		Bug	iteraplan Speedbird	12/May/17 9:45 AM	04/Jul/17 11:25 AM														23/May/17 5:49 PM;fka;26MB?	24/May/17 8:41 AM;msr;26 MB was the limit in the classic client.	24/May/17 9:15 AM;fka;;)																																																				

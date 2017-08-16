@@ -1,0 +1,13 @@
+Filter dialog UI update	"The UI of filter dialog should be updated to support filters with many comditions.
+
+Currently the [Undo], [Close] buttons are not accessible. Also, the dropdowns are displayed in the invisible area of the screen.
+
+
+
+See the attached screenshot.
+
+
+
+So as we're getting rid of the bootstrap UI, replacing this dialog popup with the Agular Material's one could resolve the issue."		Bug	iteraplan Speedbird	12/Dec/16 11:09 AM	05/Jan/17 4:19 PM														"19/Dec/16 4:16 PM;roia;[~vadm], when working on this, please get rid of duplication of IDs of HTML elements:
+
+!sameIDs.png|thumbnail!"	22/Dec/16 10:08 AM;roia;Current solution is not usable if user has mouse without wheel - the vertical scrollbar is below overlay and cannot be dragged/clicked with mouse.	05/Jan/17 4:19 PM;dmkh;Review is done																																																				

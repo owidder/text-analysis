@@ -1,0 +1,25 @@
+Create REST resource (frontend)	"See IPTQ-82 for API definition.
+
+Create resource.
+
+Add saving and loading the user settings from db to the service.
+
+"		New Feature	iteraplan Quickfox	03/Aug/16 2:24 PM	01/Sep/16 11:03 AM														"11/Aug/16 6:01 PM;mwe;See Reactor resource and https://docs.angularjs.org/api/ngResource/service/$resource as example.
+
+For mocking the backend see https://iteraweb.iteratec.de/confluence/display/ITPL/Mock+Backend"	"25/Aug/16 3:38 PM;pma;Please test following refresh issue:
+
+* go to ifd and configure (Color, borderline)
+
+* go to home
+
+* go to ncd and configure
+
+* refresh the ncd page (color, cluster by)
+
+* go to ifd again
+
+--> ifd configuration is deleted
+
+problem: ifd configuration is deleted
+
+should be:ifd configuration is still saved"																																																					

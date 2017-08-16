@@ -1,0 +1,25 @@
+Assemble MicroEditManager	"Estimation: 3/15
+Check if IPTT-48, IPTT-49, IPTT-50, IPTT-51 work together.
+possibly you have to:
+* add left side OE
+* create simple diff with left/right side OE, inject modelImporter and create/use simpleDiffWriter in MicroEditManager
+
+*Important*: check performace of the spike solution"	91839	Sub-task	iteraplan Thunderduck	23/Aug/16 3:35 PM	01/Sep/16 9:26 AM														"24/Aug/16 9:57 AM;mse;DONE:
+
+* Get left OE from model
+
+* Get right OE from JSON
+
+* Create UpdateDiff
+
+
+
+TODO (see also TODO comments in the code):
+
+* Insert DiffWriter (see IPTT-51)
+
+* Handle error case when no building block with given id exists
+
+* Implement meaningful return value
+
+* Tests for MicroEditManager and/or MicroEditService if sensible?"																																																						

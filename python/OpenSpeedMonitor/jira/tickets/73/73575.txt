@@ -1,0 +1,1 @@
+Export von Skripten mit eingesetzten Parametern	Als Button/Link im Skript-Tab der job/edit-view.		New Feature	OpenSpeedMonitor	15/Feb/16 4:16 PM	29/Sep/16 10:26 AM																																																																				

@@ -1,0 +1,13 @@
+LoadAssets Command funktioniert nicht mehr	"Wenn man über das DetailAnalyse-Dashboard neue Assets in den DAS laden möchte, funktioniert dies nicht mehr.
+
+
+
+Grund hierfür ist, dass es keinen Connectivity-Tab mehr gibt, der Controller aber entsprechende Parameter braucht um die richtigen Jobs zu filtern (de/iteratec/osm/result/DetailAnalysisController.groovy:128:133).
+
+
+
+Derzeit muss man manuell `selectedAllConnectivityProfiles=On&includeNativeConnectivity=false&includeCustomConnectivity=false` an die URL hängen, damit FetchAsstes funktioniert.
+
+
+
+Der entsprechende Logik-Block sollte angepasst werden, sodass diese Parameter nicht zwingend notwendig sind."		Bug	OpenSpeedMonitor	26/Jan/17 11:26 AM	08/Feb/17 10:44 AM																																																																				

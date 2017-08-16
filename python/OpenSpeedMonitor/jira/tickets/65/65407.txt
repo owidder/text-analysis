@@ -1,0 +1,135 @@
+And/Or composition in combined filter	"Target:
+
+
+
+CombinedFilter
+
+* has RelationshipFilter objects (for example for ""own properties"" or ""related Type xyz""), only one per relationship
+
+** each of which has a list of AND-connected filters or ""not connected""
+
+*** each of which has a list of OR-connected single filters
+
+
+
+_Add filters:_
+
+addAndFilter(relationship, other filter parameters)
+
+addOrFilter(relationship, OR-block id, other filter parameters)
+
+
+
+_Execute filters:_
+
+Combined filter can return a predicate object.
+
+Sub-queries (relationship filters) should be pre-computed once and cached
+
+Details: [~wfr] or [~sfe]
+
+
+
+Includes configuration object."		New Feature	iteraplan PO	01/Dec/15 11:08 AM	12/Apr/16 7:02 PM														"09/Dec/15 4:30 PM;wfr;simplified structure, for warm up:
+
+
+
+Combined Filter ::= AndFilter *
+
+AndFilter ::= OrFilter +
+
+OrFilter ::= SinglePropertyFilter +
+
+
+
+Combined Filter has a primary type, and one (or no) AndFilter for that type.
+
+
+
+An AndFilter (except the first one for the primary type) has a relationship end, starting at the primary type and implying a type for the sub-query.
+
+
+
+For each relationship end is at most one AndFilter.
+
+
+
+A sub-query with an AndFilter means: ""and there is an element related to by R and AndFilter""
+
+
+
+As an alternative to the ""there is"" quantor, a subquery can have the form ""an there is no element connected via R"".
+
+
+
+more complete structure:
+
+
+
+CombinedFilter ::=  PrimaryTypeFilter RelationshipEndFilter+
+
+PrimaryTypeFilter ::= AndFilter (for the primary type)
+
+RelationshipEndFitler has a relationship end of the primary type
+
+RelationshipEndFilter ::= NoConnectedFilter | ExistenceConnectedFilter
+
+ExistenceConnectedFilter ::= AndFilter (for the type of the relationship end)
+
+AndFilter ::= OrFilter+
+
+OrFilter ::= SinglePropertyFilter+
+
+SinglePropertyFilter ::= NumericFilter | DateFilter | .... (exact names see code)
+
+
+
+Note that the filter nodes need to keep the order of elements for presentation, even if there is no semantic difference.
+
+"	"09/Dec/15 4:57 PM;wfr;CombinedFilter is facade for the tree of filter nodes.
+
+
+
+Example: given a CombinedFilter for IS with a sub-query for ISDs, with 2 OrFilters and the second OrFilter with 3 PropertyFilters.
+
+
+
+The facade method looks like this:
+
+cf.add('informationSystemDomains', 1, 'name', 'contains', 'SAP')
+
+with an implicit ""add at the end of the OR filter""
+
+and obvious index values for the relationship end and the OrFilter.
+
+"	"09/Dec/15 5:12 PM;wfr;The CombinedFilter is a primarily structural class that deals with modification.
+
+In addition, it converts itself to a predicate that can be applied and used as a filter.
+
+
+
+The CF should provide useful methods for the UI to offer exactly the admissable actions, for example all unused relationship ends.
+
+
+
+For an efficient evaluation, the sub-queries must be evaluated exactly once. They are not correlated by definition.
+
+
+
+"	"09/Dec/15 5:34 PM;wfr;subtask candidates:
+
+
+
+* structure 1: create
+
+* structure 2: modify (and delete parts)
+
+* to predicate
+
+* to URI format
+
+
+
+structure 1 first, all others second.
+
+2 to 4 should be easy to merge, hopefully."	28/Jan/16 9:24 AM;sfe;Originally 5 PD (but was more anyway)																																																		

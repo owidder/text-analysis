@@ -1,0 +1,12 @@
+Icon for BD doesn't displayed on Recent view page	"Steps to reproduce:
+1. Go to NCD page
+2. Use Business Domain as inner type
+3. Save diagram with ""Save/Share"" button
+4. Go to Recent view page
+5. Navigate to new tile with saved diagram
+
+Actual: Icon for BD doesn't displayed
+Expected: Icon should be displayed"		Bug	iteraplan PO	13/Mar/15 12:04 PM	03/Aug/15 11:19 AM														"15/Apr/15 10:41 AM;wfr;Recommendation: fix it IF the save (and formerly ""/share"") feature is in the release
+
+should be easy, because icons exist, mechanism for controlling the icons exists, ...
+"	15/Apr/15 1:26 PM;msr;Not very important, but please fix in combination with new icons of Tania.	03/Aug/15 11:19 AM;msr;Already fixed.																																																				

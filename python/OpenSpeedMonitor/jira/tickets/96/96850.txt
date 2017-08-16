@@ -1,0 +1,31 @@
+Überwachende Performance-Messungen einrichten	"Da es sich bei dieser Story um ein Refactoring handelt, welches ausschließlich auf Performance-Optimierung abzielt sollten wir diese unbedingt auch messen. So können wir kontrollieren, ob wir auch tatsächlich eine Optimierung erzielt haben.
+
+
+
+Wir sollten auf mehreren Ebenen messen:
+
+
+
+# Auf Applikations-Ebene im Browser
+
+Hier sollten wir auf der laufend deployten dev-Instanz Performance-Messungen einrichten, die EventResult- und CsiAggregation-Dashboards mit unterschiedlich großem Datenumfang auf der eigenen Instanz aufrufen. So können wir dann über die Tage der Entwicklung sehen, ob wir schneller werden. 
+
+# Auf Applikations-Ebene im Development 
+
+Wir sollten den de.iteratec.osm.util.PerformanceLoggingService nutzen, um die entscheidenden Service-Methoden zur Abfrage von EventResults/CsiAggregations manuell zu messen.
+
+# Auf Ebene von Datenbank-Abfragen
+
+Wie bereits in IT-1283 beschrieben lassen sich mit mysqldumpslow die SQL-Statements tracken und auswerten, die länger als X Sekunden dauern. Das sollten wir vergleichsweise in einer alten und einer neuen deployten Instanz tun (z.B. dev und release). Zudem können wir identifizierte Statements natürlich auch manuell messen. "	96849	Sub-task	OpenSpeedMonitor	21/Sep/16 4:03 PM	13/Oct/16 11:42 AM														"04/Oct/16 11:58 AM;mmi;Zu 3.
+
+Das Tool mysqldumpslow hat bei mir nicht funktioniert, da die Zeiten, die ein Query gelaufen ist, nicht korrekt geparsed wurden. So wurde zum Beispiel die queryTime immer als N.N angezeigt.
+
+Dieses Problem ist scheinbar bekannt, ist aber ein Problem ;-)
+
+Es wird empfohlen ein anderes Tool zu nutzen, um die Slow-Logs von Mysql auszuwerten, bspw das pt-query-digest:
+
+http://www.ovaistariq.net/768/profiling-your-slow-queries-using-pt-query-digest-and-some-love-from-percona-server/#.V_N8WnWLT4Z"	"13/Oct/16 11:42 AM;msk;Es gibt jetzt auf der dev eine Messung, die die eigene Instanz misst.
+
+
+
+Alle Tag-Relevanten SQL-Befehle werden jetzt mit dem Performance-Loggin-Service geloggt."																																																					

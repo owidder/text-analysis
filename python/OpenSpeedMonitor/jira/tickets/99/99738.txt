@@ -1,0 +1,21 @@
+Coloring for Business Mappings in LSD	"If several Business Mappings fullfill the mapping of a cell (i.e. have the value of both axes and the content cell) and a coloring by an attribute of a Business Mapping is active,
+
+
+
+* use Multi-value-coloring for every attribute value of all Business Mappings fullfilling the condition of the cell
+
+* Show also undefined-values
+
+* color the cell with many colored stripes in a predefined order (do not aggregate the colored stripes or re-order them)
+
+* The order is by ID of the Business Mapping ascending
+
+
+
+* There is a limit for colors of multi-value coloring. Please ensure that this limit is set to 20.
+
+* Ensure this solution also works for coloring for attributes on Business Mappings, even if one axis does not belong to a Business Mapping
+
+* Take care, that it is possible that one Business Object appears multiple times in one diagram"		Improvement	iteraplan Speedbird	19/Oct/16 12:46 PM	20/Oct/16 3:06 PM														"20/Oct/16 1:26 PM;pma;Review comments: 
+
+OK"																																																						

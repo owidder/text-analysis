@@ -1,0 +1,17 @@
+Administration - Users [FF]		124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:22 PM	20/Jun/17 1:19 PM														"15/Jun/17 6:45 PM;naba;For smoke test please use the https://doc.iteraplan.de/display/iteraplan60/Users (examples and tips).
+
+Please be creative and progressive.
+
+*Note*: work with documentation is still in progress."	"20/Jun/17 12:50 PM;roia;Tickets created:
+
+
+
+https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-5429
+
+
+
+https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-5430
+
+
+
+ "																																																					

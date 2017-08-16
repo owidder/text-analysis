@@ -1,0 +1,1 @@
+Resultlist layout is broken on Chrome			Bug	iteraplan PO	07/Jun/13 10:18 AM	28/May/14 10:11 AM					gui	ui								28/May/14 10:11 AM;fka;Chrome is unfortunately not supported by iteraplan																																																						

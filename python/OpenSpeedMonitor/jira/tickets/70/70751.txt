@@ -1,0 +1,11 @@
+Customizing in interactive Client	"Maintained in client project
+
+* CSS
+
+* Logos
+
+* Switches"		Epic	iteraplan PO	26/Jan/16 4:53 PM	11/Jun/17 12:50 PM														"01/Feb/16 9:34 AM;sfe;Dependencies:
+
+* Basic mechanism first, no dependencies.
+
+* Migration of customizings: step by step. First migrate the parts the client supports at that moment. When the client grows, add customizing options accordingly."																																																						

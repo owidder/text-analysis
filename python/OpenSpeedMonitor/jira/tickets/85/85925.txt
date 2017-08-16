@@ -1,0 +1,19 @@
+Jobs nach Serverneustart eingefroren	"Wenn man einen Job startet und dann den OSM beendet bevor der Job ""finished"" ist, wird beim nächsten Start des OSMs der JobRun noch als Pending|Running angezeigt. Da der dazugehörige QuartzJob aber nicht mehr läuft, verändert sich das auch nicht mehr.
+
+
+
+Wir müssen uns überlegen, wie wir darauf reagieren wollen. Man könnte z.B. alle noch offenen JobRuns beim Start abräumen oder die entsprechenden QuartzJobs neustarten."		Bug	OpenSpeedMonitor	31/May/16 2:32 PM	13/Jun/16 4:01 PM														"13/Jun/16 4:01 PM;msk;Es hat sich herausgestellt, dass sich auch im laufenden Betrieb pending/running JobResults mit einem HttpStatusCode < 200 ansammeln.
+
+
+
+Ich habe einen handleOldJobResults-Methode in dem JobProcessingService geschrieben. Von dem werden:
+
+* ganz alte ({code:java} date < 2 * de.iteratec.osm.measurement.schedule.JobProcessingService#declareTimeoutAfterMaxDownloadTimePlusSeconds {code}) JobResults werden jetzt gelöscht
+
+* Jobs die jünger als 2h sind und deren maximale Downloadzeit noch nicht abgelaufen ist, werden rescheduled.
+
+* Jobs die jünger als 2h sind und deren maximale Downloadzeit schon abgelaufen ist, werden noch ein letztes mal gepollt und dann auf 504 gesetzt.
+
+
+
+Um den Mechanismus auszulösen, gibt es eine Rest-Api-Schnittstelle."																																																						

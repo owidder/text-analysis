@@ -1,0 +1,1 @@
+Replace name fields for start and end to id fields.	Update server and client to use id field instead name for data attribute	106421	Sub-task	iteraplan Speedbird	17/Feb/17 10:24 AM	10/Mar/17 6:31 PM														10/Mar/17 6:31 PM;vadm;Reviewed is done https://iteraweb.iteratec.de/fisheye/cru/IP-419																																																						

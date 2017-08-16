@@ -1,0 +1,59 @@
+Adaption of Context Menu & Menu Bar for changing inner BBTs	"Follow-Up Ticket of IPNINE-204 :
+*Summary:*
+Adapt the context menu and add actions to the menu bar to change the Building Block Type for the inner element of a Nesting Cluster Diagram.
+
+*As-Is:*
+No possibility to change a Building Block Type within a Nesting Cluster Diagram.
+
+*To-Be:*
+Switch from any inner Building Block Type to another by clicking on the context menu.
+
+*Note - deferred*: 
+Actions via a menu bar or toolbar will be added later.
+
+*Affected parts of the system:*
+* Nesting Cluster Diagram
+* Context menu
+* Menu bar
+
+*Approach:*
+Menu bar in the Nesting Cluster Diagram: Add a button ""Change inner element"". After clicking this button the user can select all available inner Building Block Types from a list.
+
+Context menu: Add an entry ""Change inner element"" and on hover a list of all available inner Building Block Types on a second level.
+
+*Acceptance Criteria:*
+The user opens a Nesting Cluster Diagram with Information System as inner element and Information System Domain as outer element.
+
+The users clicks on the button ""Change inner element"" in the menu bar.
+
+A list of available Building Block Types opens immediately.
+
+The user selects ""Technical Component"" with primary click.
+
+The menu structure disappears immediately.
+
+The diagram is updated immediately: All inner elements are now Technical Components. Information System Domain is not available as outer element for Technical Component, therefore automatically the default outer type for Technical Component, which is Information System, is selected.
+
+The user opens with secondary click on any Technical Component the context menu.
+
+In the context menu the user hovers over ""Change inner element"".
+
+On the second level a list of available Building Block opens immediately.
+
+The user selects ""Information System"".
+
+The context menu structure disappears immediately.
+
+The diagram is updated immediately: All inner elements are now Information System. The outer type is again Information System Domain.
+
+More general: in every NCD with inner element type X, the user can switch to any other element type Y.
+
+For each type T, the NCD will have the specified default outer type intially.
+
+When switching the inner type, the outer type is unchanged if it is connected to the new inner type."		New Feature	iteraplan PO	27/Nov/14 8:50 AM	12/Jan/15 3:20 PM					bar	context	nesting	ui						"09/Jan/15 12:59 PM;wfr;after disussion with Alex:
+
+Removed the ""menu bar"" part from the spec, because the concept of how to display action on the menu bar is not yet ready for impl.
+
+We will add all actions that are now in the context menu only to the menu bar (or some other component very much like a menu bar),
+For that there will be extra tickets."	"12/Jan/15 3:20 PM;dasm;Tested on revision 503
+(without menu bar)"																																																					

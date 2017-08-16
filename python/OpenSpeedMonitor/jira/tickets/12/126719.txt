@@ -1,0 +1,135 @@
+Upgrade auf 6.0 / Neue Infrastruktur	"Sehr geehrter Herr Stangl
+
+
+
+Vor knapp 3 Wochen wurde bekanntlich die Iteraplan Version 6.0 ausgeliefert, welche sich nun ja ziemlich von den Vorgängern unterscheidet, zumindest die Client-Oberfläche.
+
+
+
+Ein anderer Iteraplan-Kunde sagte uns bei einem Gespräch, dass er diese Applikation auf einem «dedizierten» Server betreibt, somit bei Updaten flexibler ist.
+
+Bei uns ist der Webteil (Tomcat) auf einem Applikationsserver installiert, auf welchem diverse andere Applikationen laufen.
+
+
+
+Im Zuge des Upgrades auf Iteraplan 6 möchten wir nun Iteraplan auch auf einem eigenen Server installieren, gleichzeitig auch eine Testumgebung aufbauen, welche aber auf einem Server mit anderen Testsystemen laufen soll.
+
+
+
+Diesbezüglich habe ich einige Fragen:
+
+
+
+•	Kann Iteraplan 6.0 auf einem Windows 2016 Server installiert werden ?
+
+•	Welche Tomcat Version (64 Bit) wird empfohlen, kann Iteratec uns diese zur Verfügung stellen ?
+
+•	Welche Java Version wird empfohlen ?
+
+•	Meine gewünschtes Vorgehen wäre, den Tomcat auf einem neuen Server zu installieren, auf einem SQL-Server eine neue Datenbank anzulegen, dort das Update (von aktuell 5.4) auf 5.5 und 6.0 zu machen.
+
+Danach das Ganze zu testen, den neuen Client kennenzulernen, und unsere Benutzer-Doku auf die Version 6.0 anzupassen. Am Tag X noch einmal die aktuellen Daten der bis dahin Produktiven 5.4 Umgebung in die neuen 6.0 Umgebung zu Restoren, die Update-Skripts (5.4 -> 6.0) wieder laufen zu lassen, und die neue Umgebung für die Benutzer freizugeben.
+
+Wäre dieses Vorgehen so möglich ?
+
+•	Wenn man eine Test- und ein Produktiv-Umgebung hat, muss dann auch die iTurm Datenbank doppelt vorhanden sein, oder könnte ein iTurm für beide Umgebungen verwendet werden ?
+
+•	Können die Datenbanken-Namen beliebig gewählt werden (z. B. Iteraplan_PRD / Iteraplan_TST), oder sollte sie von Vorteile «Iteraplan» heissen ?
+
+
+
+Ich bin Ihnen sehr dankbar, wenn Sie mir diese Fragen beantworten, und allenfalls auf speziell zu beachtende Punkte hinweisen könnten.
+
+
+
+Wenn es für Sie einfacher ist, könnten Sie mich auch anrufen (+41 41 208 84 24), ich konnte Sie leider telefonisch nicht erreichen.
+
+
+
+Für Ihre Bemühungen danke ich Ihnen schon zum voraus bestens !
+
+
+
+Freundliche Grüsse
+
+
+
+Joe Steiner
+
+Applikations-Verantwortlicher
+
+
+
+Stadt Luzern
+
+Prozesse und Informatik
+
+Ruopigenplatz 1
+
+6015 Luzern
+
+
+
+Telefon: 041 208 84 24 ; Fax: 041 208 82 29
+
+E-Mail: joe.steiner@stadtluzern.ch
+
+"		Technical question	iteraplan Support	10/Jul/17 11:19 AM	10/Jul/17 3:02 PM														"10/Jul/17 12:58 PM;cst; Sehr geehrter Herr Steiner,
+
+vielen Dank für Ihre Anfrage.
+
+Diesbezüglich Ihrer Fragen: 
+
+• Kann Iteraplan 6.0 auf einem Windows 2016 Server installiert werden ?
+
+*Ja dies ist möglich, solange die eingesetzte Tomcat Version diese unterstützt. Iteraplan selbst, ist nicht an das Server-Betriebssystem gebunden, da diese auf dem Tomcat läuft.*
+
+• Welche Tomcat Version (64 Bit) wird empfohlen, kann Iteratec uns diese zur Verfügung stellen ?
+
+ latest Apache Tomcat 8.0.x or 7.0.x|
+ *Da Sie einen Server 2016 betreiben wollen, empfehle ich an der Stelle die letzte Version von Tomcat 8.0.*
+
+• Welche Java Version wird empfohlen ?
+
+
+
+any OS supported by Java 7 or 8 (64 Bit)
+Java SE Runtime Environment version 7 (Update 25) or version 8 (Update 65)
+
+
+
+ (always 64bit) by Oracle/SUN
+
+ latest update of Java SE 7 or 8 (64bit) by Oracle/SUN
+
+
+
+• Meine gewünschtes Vorgehen wäre, den Tomcat auf einem neuen Server zu installieren, auf einem SQL-Server eine neue Datenbank anzulegen, dort das Update (von aktuell 5.4) auf 5.5 und 6.0 zu machen.
+Danach das Ganze zu testen, den neuen Client kennenzulernen, und unsere Benutzer-Doku auf die Version 6.0 anzupassen. Am Tag X noch einmal die aktuellen Daten der bis dahin Produktiven 5.4 Umgebung in die neuen 6.0 Umgebung zu Restoren, die Update-Skripts (5.4 -> 6.0) wieder laufen zu lassen, und die neue Umgebung für die Benutzer freizugeben.
+
+Wäre dieses Vorgehen so möglich ?
+
+*Ja, dies wäre möglich.* 
+
+• Wenn man eine Test- und ein Produktiv-Umgebung hat, muss dann auch die iTurm Datenbank doppelt vorhanden sein, oder könnte ein iTurm für beide Umgebungen verwendet werden ?
+
+*Sie können für mehrere iteraplan Instanzen die gleiche iTurm Datenbank nutzen.* 
+
+• Können die Datenbanken-Namen beliebig gewählt werden (z. B. Iteraplan_PRD / Iteraplan_TST), oder sollte sie von Vorteile «Iteraplan» heissen ?
+
+*Diese können beliebig gewählt werden, es gibt nur im Moment ein Problem mit dem Userguide.* 
+
+*Einen Work a round dies zu beheben, ist den Pfad in Ihrem Tomcat-Server anzulegen und die Datei ""UserGuide.pdf"" in diesen Pfad zu kopieren:*
+
+*tomcat7/webapps/iteraplan/manuals/UserGuide.pdf*
+
+*und hier noch die Rechte / Owner anpassen.*
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"10/Jul/17 3:00 PM;pit.applikationsbetreuung@stadtluzern.ch;Sehr geehrter Herr Stangl
+Vielen Dank für Ihre schnelle Antwort !
+Ich werde somit die Infrastruktur intern erstellen lassen, und mich danach an die Installation wagen.
+Ich denke, dass es dann noch die eine oder andere Frage geben wird, worauf ich mich wieder melden werde.
+Freundliche Grüsse
+Joe Steiner"																																																					

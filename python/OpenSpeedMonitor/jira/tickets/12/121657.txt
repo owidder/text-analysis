@@ -1,0 +1,43 @@
+An exception occurs when selecting attribute for Column type after filtering	"h4. Problem Description:
+
+
+
+An exception occurs when selecting attribute for Column type after filtering by ""Produktivzeitraum"" 
+
+h4. Reproduction Steps:
+
+ * Open Application and navigate to Landscape Diagram
+
+
+
+ * Set ""Column type"">""Relation"" to ""Based on technical Components""
+
+ * Click on System, select Language and choose ""Deutsch""
+
+ * Click on ""Anzeige"" and select the ""Zeige nicht zugeordnete Elemente an""
+
+ * Set ""Spaltentyp"">""Merkmal"" to ""Stratetic drivers""
+
+ * Set ""Inhalts-Filter""> ""Filter ändern"" to ""Produktivzeitraum zwischen 02/05/2000 to 01/01/2001"" and click on ""Ok"" button
+
+ * Set ""Zeiltentyp""> ""Beziehung"" to ""Verbundene Produkte""
+
+
+
+h4. Observed Results:
+
+
+
+Beziehung/ Relation is not selected.  An exception occurs in Console. See attached exception.png file.
+
+h4. Expected Results:
+
+
+
+Beziehung/ Relation should be selected without any errors.
+
+h4. Note:
+
+
+
+Used Firefox and ""iteraplan-basic-bundle-sampledata-6.0.SNAPSHOT-2017-05-17"" bundle/ #312 build"		Bug	iteraplan PO	17/May/17 5:44 PM	23/May/17 5:42 PM					diagram	filter								23/May/17 5:42 PM;fka;Works with current nightly build and Chrome/Firefox																																																						

@@ -1,0 +1,147 @@
+Excel Import - Hierarchy Issue	As seen in the conference call on Thursday we have issues with a bug in iteraplan 5.5. If a column is not present in the import file this content should not be touched 		Fault	iteraplan Support	17/Jul/17 8:44 AM															"19/Jul/17 11:05 AM;cst;Hi,
+
+in our session you have created a Excel-Document for show us the problem.
+This file was edited and imported into iteraplan.
+
+It is possible to send me the edited Excel data, which we used for the import? 
+
+I want to rebuild it here with our testdata. 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+
+ "	"19/Jul/17 12:48 PM;ip.daniel.robinson;Hallo Christoph,
+hier das import file
+
+Gruss
+Alex
+
+[^import_test_h_test_2.xlsx] _(39 kB)_"	"20/Jul/17 9:10 AM;cst;Guten Morgen,
+
+vielen Dank für die Zusendung der Datei. 
+
+Habe hier 1zu1 eins das Verhalten versucht nachzubauen, kann aber den bei euch auftretenden Effekt nicht mehr nachvollziehen. 
+ Ich habe langsam das Gefühl, das dies unter anderen Begebenheiten auftritt. 
+
+Ist es möglich, mir von den zwei Beispielobjekten einen Screenshot der jeweiligen Hicharchie zu schicken. 
+
+Im Moment und nach unzähligen Versuchen, habe ich zwei Punkte im Verdacht:
+ # Es muss eine spezielles Set Up der Hicharchie gesetzt sein, um das Verhalten auszulösen 
+ # Es liegt an der Umbenennung des Informartion System zu Business Application (werde ich im laufe des Tages testen) 
+(Baue mir ein Installer mit dem EON Customizing, ohne Zertifikats-Authentifizierung)
+
+Wenn du noch weitere Informationen, oder Einfälle hast, kannst du Sie mir gerne mitteilen. Der Import sollte wie in Version 3.4 durchgeführt werden, es gab zwar Anpassungen am Import, aber das waren Bug-Fixe für andere Import-Arten und anderen ""Nebeneffekte"". 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"20/Jul/17 11:35 AM;ip.daniel.robinson;Gruess Got Christoph,
+
+anbei die Screenshots aus unserem PROD system (3.4) weil die Hirarchie in TEST ja geloescht wurde bei der Demo.
+
+Ich habe das ganze uebrigens auf der Uniper TEST instanz getestet und da bleibt die Hirarchie unangetastet (wie es sein sollte)
+
+Gruss
+Alex"	"20/Jul/17 11:36 AM;ip.daniel.robinson;Hier die Screenshots aus 3.4
+
+!dds1.JPG|thumbnail!
+
+!dds2.JPG|thumbnail!
+
+!jira2.JPG|thumbnail!
+
+!jira1.JPG|thumbnail!"	"21/Jul/17 9:50 AM;cst;Hallo Alex,
+
+bin etwas verwirrt :) 
+
+Habe für den heutigen Test die Daten für die History Migration in eine separate Datenbank eingespielt und die EON instanz ohne ""Zertifikats Authentifizierung"" eingespielt. 
+ Nur finde ich die oben genannten Datensätze nicht. Gibt es mehrere Instanzen mit verschiedenen Daten? 
+
+Teste jetzt weiter, würde mich nur interessieren, ob ich auf der richtigen Arbeite.
+
+Können wir heute hierzu einen Telefontermin machen? Dann besprechen wir zusammen das weitere vorgehen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"21/Jul/17 9:59 AM;ip.daniel.robinson;Hi,
+
+Einladung kommt
+
+Gruss
+Alex"	"21/Jul/17 12:20 PM;cst;[https://iteratec.ftapi.com/submit/iteraplan_support] 
+
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+ "	"21/Jul/17 2:16 PM;ip.daniel.robinson;Hallo Christoph,
+
+Sowohl TEST als auch PROD Datenbank ist auf dem Share
+
+Gruss
+Alex"	"21/Jul/17 2:18 PM;cst;Hallo Alex,
+
+vielen Dank.
+
+Bin schon dabei :) das Verhalten nachzustellen. 
+
+Viele Grüße, 
+
+Christoph Stangl "	"21/Jul/17 2:44 PM;cst;!image-2017-07-21-14-44-08-738.png!
+
+Hattet Ihr die Probleme nach dem Update auch? 
+
+Grüße,
+
+Christoph "	21/Jul/17 2:55 PM;ip.daniel.robinson;ob das der gleiche Fehler war, Weiss ich nicht, aber wir hatten Probleme mit den root Elementen	"21/Jul/17 4:45 PM;cst;Okay hier ein  Zwischenstand. 
+ Instanz neu installiert - und den DUMP  ""test-eam-tool.intranet.eon.com-db-170721-1251.sql"" eingespielt
+ # Datenbank schrittweise upgedatet auf Version 5.5
+ # Das Attribute ""Status"" umbenannt in ""–Status"" 
+ # Erst Excel-Versuch erhielt ich die oben genannten Fehler
+ # Diese beseitigt 
+ # Zweiter Excel-Versuch mit dem von dir angehängten Excel-File und die Änderungen wurde eingespielt ohne das die Hierarchie gelöscht wurde 
+ # Dritter Versuch, Excel-Datei neu generiert und die Beschreibung komplett geändert (anderen Benutzer verwendet beim Import) 
+ # Dieser läuft ohne Fehlermeldung durch und die Hierarchie bleibt bestehen
+
+!image-2017-07-21-16-17-49-664.png!
+
+So jetzt sind wir beim Thema - was ist in eurerer Instanz anders? Habe dir mein Excel-File mit angehangen.
+
+[^Testimporteon2.xlsx]
+
+Wir müssten uns zusammen die Instanz anschauen, um das Problem näher analysieren zu könne. Ich kann dir einen längeren Termin erst ab dem 31.07.2017 anbieten. Da ich von Montag bis Freitag nächste Woche nicht im Hause bin. 
+
+Habe auch einen DUMP erstellt und es dir per FTAPI zugeschickt.
+
+Funktioniert der Import meiner Excel-Datei bei euch? Zusätzlich könnt Ihr testweise meine Datenbank einspielen und den Import mit eurer erneut durchführen. Auch habe ich gesehen das ich mit einer aktuelleren Version 5.5 arbeite als bei euch installiert ist. Habe dir die Version aktualisiert hochgeladen du findest dieser unter folgendem Link:
+
+[https://download.iteraplan.de/corporate/5.5.0/iteraplan-5.5.0-eon-x509-installerr27367.zip] 
+
+Login: corporate
+ Password: sa4Ekachu
+
+Grüße,
+
+Christoph Stangl -iteraplan Support
+
+ 
+
+ "	"21/Jul/17 5:26 PM;ip.daniel.robinson;Hi Christoph,
+
+jetzt bin ich verwirrt. Eigentlich sollte die ""test-eam-tool.intranet.eon.com-db-170721-1251.sql"" bereits auf 5.5 migriert sein."	"23/Jul/17 2:29 PM;cst;Hallo Marcel,
+
+kannst du den DUMP von FTAPI herunterladen und diesen testweise einspielen. 
+Bin mir 100% sicher das dieser aus einer älteren Version stammte. 
+
+Sehen uns Freitag
+
+Grüße,
+
+Christoph"	"24/Jul/17 6:05 PM;msr;Hallo Herr Zindl,
+
+wir entwirren nun die Unklarheiten bzgl. der verschiedenen DUMPs und melden uns dann wieder bei Ihnen.
+
+Eine schöne Woche
+
+Marcel Schrumpf"																																							

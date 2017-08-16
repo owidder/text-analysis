@@ -1,0 +1,90 @@
+SQL-Skript für die Aktivierung der History benötigt.	"Für unsere Iteraplan-Installation möchten wir die Historisierung aktivieren. Hierzu wird in den Properties darauf hingewiesen, dass ein SQL-Skript dafür benötigt wird.
+
+
+
+Ich bitte um Bereitstellung des SQL-Skripts und der Installationsanleitung (oder Hinweis auf Benutzerhandbuch mit den notwendigen Schritten).
+
+
+
+Corporate Edition v5.2.0-r25485
+
+"		Technical question	iteraplan Support	17/Aug/16 11:00 PM	22/Aug/16 9:31 AM														"18/Aug/16 8:25 AM;cst;Sehr geehrter Herr Meister,
+
+vielen Dank für Ihre Anfrage.
+
+Für die Aktivierung der History, gehen Sie bitte auf folgende Seite:
+
+https://www.iteraplan.de/doc/display/iteraplan52/History 
+
+Zusätzlich hier der direkte Link zum Forum und den benötigten Skripten: 
+
+https://forum.iteraplan.de/forum/client-area/downloads-database-scripts/33-history-initialization 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+
+"	"19/Aug/16 4:29 PM;Gerd.Meister@f-i-solutions-plus.de;Hallo Herr Stangl,
+
+ich kann auf den Link zum Download im Forum nicht zugreifen. Muss ich mich da zusätzlich registrieren?
+
+Mit freundlichen Grüßen,
+Gerd Meister.
+
+If this is your first visit, you may want to register to be able to post: click the register link above to proceed. To start viewing messages, select the forum that you want to visit from the selection below.
+
+Sorry, you are not authorized to view this page.
+Please try logging in or logging in as different user Login or send a message to the admin "	"19/Aug/16 4:47 PM;Gerd.Meister@f-i-solutions-plus.de;Ich habe mich registriert, aber scheinbar keine Berechtigung auf den Link:
+
+Auch an den Admin kann ich im Forum keine Fehlermeldung schicken, da ich keine Nachrichten an ibadmin schicken darf.
+
+Wie kommen wir denn hier weiter?
+
+Hier meine Mail an den Admin des Forums und ein Screenshot.
+
+MfG
+Gerd Meister
+
+!Problem_Iteraplan_Forum.png|thumbnail!"	"19/Aug/16 4:47 PM;Gerd.Meister@f-i-solutions-plus.de;Hallo,
+
+aus dem Support habe ich die Information erhalten, dass ich hier die SQL-Skripte für den Download der Historisierungsfunktion finde.
+
+Leider bekomme ich eine Fehlermeldung beim Zugriff auf::
+
+
+https://forum.iteraplan.de/forum/client-area/downloads-database-scripts/33-history-initialization
+
+Entschuldigung, du darfst diese Seite nicht betrachten.
+Bitte melde dich an oder melde dich mit einem anderen Benutzerkonto Anmelden an oder schicke dem Administrator eine Nachricht.
+
+Wie komme ich denn an das SQL-Skript.
+
+Mit freundlichen Grüßen,
+Gerd Meister"	"19/Aug/16 4:48 PM;Gerd.Meister@f-i-solutions-plus.de;Können Sie mir das SQL-Skript hier an das Ticket anhängen? Das Problem mit dem Forum kann dann gerne nachgelagert gelöst werden.
+
+viele Grüße,
+Gerd Meister"	"19/Aug/16 4:54 PM;Gerd.Meister@f-i-solutions-plus.de;Hallo,
+
+so zufrieden ich mit dem Tool bin, so unzufrieden bin ich mit dem Forum. Nach dem Passwortreset wird mein Login immer noch abgelehnt. Das verstehe ich nicht ....
+
+!Password_reset_error.png|thumbnail!"	"19/Aug/16 5:06 PM;Gerd.Meister@f-i-solutions-plus.de;Habe gerade herausgefunden, dass ich meinen Namen und nicht die Email für das Login im Forum nehmen muss (weicht von der User-Experience von dieser Web-Site ab...).
+
+Der Download des Skripts funktioniert aber immer noch nicht, weil mir da scheinbar Berechtigungen auf die Client-Area fehlen.
+
+Mit freundlichen Grüßen,
+Gerd Meister."	"22/Aug/16 8:20 AM;cst;Hallo Meister,
+
+vielen Dank für Ihre Antworten.
+
+Habe Ihren Account für diesen Bereich des Forums frei geschalten. 
+Sollte dies dennoch nicht funktionieren, sagen Sie mir bitte für welche Datenbank Sie das Skript benötigen (Oracle, MYSQL, SQL).
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"22/Aug/16 9:22 AM;Gerd.Meister@f-i-solutions-plus.de;Hallo Herr Stangl,
+
+vielen Dank. Nun konnte ich das Skript (für mySQL) herunterladen.
+
+Mit freundlichen Grüßen,
+Gerd Meister."																																														

@@ -1,0 +1,4 @@
+Punkte im Result-Dashboard snd nicht mehr klickbar	"Funktioniert nur noch aus dem CSI-Dashboard.
+Liegt vermutlich an der Umstellung auf EventResultRow-Objekten."		Bug	OpenSpeedMonitor	21/Nov/13 11:24 PM	22/Nov/13 10:09 AM														"22/Nov/13 10:09 AM;nkuhn;Klasse EventResultListing war nur in der Methode für das Aufrufen der Einzelresults aus dem CSI-Dashboard (de.iteratec.isr.HighchartPointDetailsController.listAggregatedResults(Long, Integer, Boolean)) eingeführt worden.
+
+Habe das in der entsprechenden Methode für das Result-Dashboard (de.iteratec.isr.HighchartPointDetailsController.listAggregatedResultsByQueryParams(Long, Long, String, String, Integer, Boolean)) nachgezogen."																																																						

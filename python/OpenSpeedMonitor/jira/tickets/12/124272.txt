@@ -1,0 +1,7 @@
+Subscribe List & Single Element View		124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:13 PM	19/Jun/17 2:28 PM														"15/Jun/17 6:33 PM;naba;For smoke test please use the [https://doc.iteraplan.de/display/iteraplan60/Single+Element+View] (examples and tips).
+
+ Please be creative and progressive.
+
+
+
+*Note*: work with documentation is still in progress."	19/Jun/17 10:33 AM;mada;Lviv team can't perform this task due technical reasons.	19/Jun/17 2:21 PM;aan;I subscribed and unsubscribed and got the e-mails when I was subscribed and none when I was not. The number subscribers where shown correctly. Also subscribing a BBT worked																																																				

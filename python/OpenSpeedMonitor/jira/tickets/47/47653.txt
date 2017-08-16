@@ -1,0 +1,7 @@
+It is impossible to use the same filters for content and axis	"Steps to reproduce:
+1. Go to LSD with IS as content type
+2. Use filtering by ""Cost"" for content elements
+3. Use filtering by ""Cost"" for x axis
+Actual: It is impossible to use the same filters for content and axis
+Expected: Should it be possible?"	47576	Sub-task	iteraplan PO	21/Apr/15 1:05 PM	22/Apr/15 3:55 PM													"Workspace: 8.1
+revision: 977"	21/Apr/15 1:39 PM;dasm;Not a bug																																																						

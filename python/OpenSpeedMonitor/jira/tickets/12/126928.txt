@@ -1,0 +1,1 @@
+Fehlermeldungen: Stacktrace weglassen	momentan wird bei Fehlern (zB im EventResultDashboard) die komplette Stacktrace angezeigt. Es wäre schön stattdessen eine sprechende Fehlermeldung zu erhalten		Improvement	OpenSpeedMonitor	12/Jul/17 10:28 AM																																																																					

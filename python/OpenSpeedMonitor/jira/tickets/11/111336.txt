@@ -1,0 +1,19 @@
+Disfunctional login page on logout when using SSO configuration	"_Reproduce:_
+
+# Access iteraplan on http://sql-iteraplan.iteratec.de/iteraplanSSO (or another instance using SSO)
+
+# Switch to interactive client (if not already there)
+
+# Log out
+
+
+
+_Expected:_ User is automatically logged in again
+
+_Actual:_ Login page is shown
+
+
+
+The issue seems to be that there is no request done that triggers the windows authentication of the IIS webserver.
+
+For more details ask [~sfe]."		Bug	iteraplan PO	08/Feb/17 12:53 PM																																																																					

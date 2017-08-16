@@ -1,0 +1,5 @@
+Parametrisierung von Scripten in Jobs	"Wir verwenden die Groovy-GString-Syntax zur Einbindung von Variablen in Scripten. Diese lassen sich in Jobs belegen. 
+Variablen, die im Script verwendet werden aber im Job nicht belegt werden sollen mit einem leeren String ausgewertet werden. 
+Der Job darf beliebig viele Variablen enthalten.
+
+"		Story	OpenSpeedMonitor	10/Jan/14 2:24 PM	16/Jan/14 5:37 PM																																																																				

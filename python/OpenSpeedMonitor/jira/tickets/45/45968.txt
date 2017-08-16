@@ -1,0 +1,3 @@
+Masterplan Diagram Missing Relationship to Business Function	A Masterplan Diagram with Information System selected as Level 1 Building Block does not offer related Business Functions as Level 2.		Bug	iteraplan PO	06/Aug/13 4:24 PM	09/Aug/13 4:29 PM					diagram	materplan	visualization							09/Aug/13 1:53 PM;bra;seems to be the iteraplan way of getting the associated BFs. Still i would like to talk to wfr regarding this.	"06/Sep/13 1:18 PM;sry;Fix is ok for 3.1.x, thanks.
+
+However, due to the changes made in ITERAPLAN-1891 it can (luckily) be reverted (change will be committed there)."																																																					

@@ -1,0 +1,13 @@
+Finish filter dialog with respect to composition of filters	"To do:
+
+* Delete of a filter/part of a filter triggers a diagram redraw
+
+* Primary Type Filter cannot be removed completely:
+
+** Attempts to remove the last AND, OR or Single Filter result in a single empty single filter line
+
+** Attempts to remove the complete Primary Type Filter instead cause a reset to a single empty single filter line. For this also add the [x] for the primary type filter
+
+* Names of relationship ends for relationship end filters need to be localized. Primary type name in Primary Type Filter possibly, too.
+
+* It should not be possible to add a relationship end filter without selecting an actual relationship end. Disable the ""and"" button as long as no relationship end is selected"	57925	Sub-task	iteraplan PO	05/Feb/16 10:55 AM	11/Feb/16 3:47 PM																																																																				

@@ -1,0 +1,3 @@
+Alert Message problems	"- message shown even if it is undefined
+
+- alert message is aligned right"		Bug	iteraplan Thunderduck	10/Aug/16 4:30 PM	10/Aug/16 4:58 PM														10/Aug/16 4:33 PM;aan;Alert is like it is because it is necessary in the Graphics Reactor and will be changed later anyway																																																						

@@ -1,0 +1,3 @@
+Table header is not displayed properly in Crome browser	"After installing ITERAPLAN 3.1, any sortable table headers is not displayed properly. This behavior can be represented only in Chrome browser (current version v.31).
+
+For reproducing, open  http://www.iteraplan.de/iteraplan_ce_release/informationsystem/init.do in a Chrome browser"		Bug	iteraplan PO	22/Oct/13 1:01 PM	28/May/14 10:07 AM														14/Nov/13 10:04 PM;sbu;Thank you very much for submitting this bug. iteraplan is optimised for Microsoft Internet Explorer 8 (or later) and for Mozilla Firefox 3.5.x (or later). Can you use one of these browsers as a workaround?	28/May/14 10:07 AM;fka;Chrome is unfortunately not supported by iteraplan																																																					

@@ -1,0 +1,241 @@
+Downloading list in CSV does not show unified dates	"Reproduce: 
+
+* choose english as global language
+
+* Add the column ""Live (Start)"" to the list of information systems
+
+* export to CSV format
+
+* the dates which have a day value <=12 are shown with point notation
+
+
+
+CURRENTLY: dates are shown in point notation mm.dd.yyyy
+
+EXPECTED: All dates are shown as follows: mm/dd/yyyy"		Bug	iteraplan PO	20/Jun/17 10:24 AM															"21/Jun/17 12:05 PM;roia;Works well for me. Downloaded with English locale:
+
+
+
+{code}
+
+""Name"";""Live (Start)""
+
+""Account-Sys RB # 3.1"";""01/30/2008""
+
+""BI # 1.0"";""01/01/2014""
+
+""Broker # 5.1"";""01/01/2013""
+
+""Callcenter # 3.2"";""03/01/2013""
+
+""Claim & benefit management assurance"";""06/01/2025""
+
+""Clearing Inland # 3.0"";""01/01/2012""
+
+""CRM # 3.1"";""01/01/2012""
+
+""CRM # 3.2"";""10/01/2016""
+
+""CRM RB # 3.1"";""01/01/2012""
+
+""CRM RB # 3.2"";""03/01/2017""
+
+""Deposits-Manager # 2.0"";""01/01/2013""
+
+""Distribution Support"";""06/01/2024""
+
+""DMS # 1.9"";""05/01/2012""
+
+""Document archiving # 2.0"";""05/02/2000""
+
+""DSS"";""05/01/2015""
+
+""DWH # 2.3"";""05/28/2013""
+
+""EAM System"";""05/02/2015""
+
+""Electronic banking # 2.3"";""06/01/2014""
+
+""Electronic funds transfer # r12"";""01/01/2012""
+
+""ERP # 3.9"";""05/01/2015""
+
+""Funds txs # r12"";""01/01/2012""
+
+""Funds txs # r13"";""09/01/2016""
+
+""Homepage # 1.1"";""06/01/2011""
+
+""HR # 2.3"";""01/01/2011""
+
+""HR # 4.0cloud"";""06/01/2019""
+
+""Insurance & Contract Management"";""06/01/2024""
+
+""Insurance App"";""06/01/2021""
+
+""Integrated BI # 1.0"";""01/01/2020""
+
+""International txs # r12"";""01/01/2012""
+
+""Intranet # 2.0"";""03/01/2011""
+
+""Loan Management # 1.6"";""06/01/2013""
+
+""Market Analysis"";""05/18/2014""
+
+""MIS # 1.2"";""05/01/2014""
+
+""Monetary txs # r12"";""01/01/2012""
+
+""Monetary txs RB # 2.0"";""01/01/2013""
+
+""Neuronal Network # 12.0"";""06/01/2019""
+
+""PLM # 3.7"";""05/01/2012""
+
+""Registration # 3.0"";""01/01/2012""
+
+""RM # 1.0"";""01/01/2014""
+
+""Salesforce.com"";""06/01/2020""
+
+""SAP Classic-P10"";""03/02/2013""
+
+""SAP CO-P10 # 6.0"";""03/02/2013""
+
+""SAP Fi-P10 # 6.0"";""03/02/2013""
+
+""SAP RD-P20"";""05/01/2013""
+
+""Scanengine # 5.1"";""05/01/2014""
+
+""SCM # 3.7"";""05/01/2015""
+
+""Securities tx system # 1.2"";""06/01/2013""
+
+""Solvency check # 1.0"";""04/01/2005""
+
+""Solvency check # 1.1"";""12/15/2016""
+
+""SWIFT clearing # 4.0"";""01/01/2011""
+
+""Treasury # 1.0"";""01/01/2017""
+
+""VISA clearing # 3.0"";""01/01/2013""
+
+{code}
+
+
+
+German:
+
+{code}
+
+""Name"";""Live (Start)""
+
+""Account-Sys RB # 3.1"";""30.01.2008""
+
+""BI # 1.0"";""01.01.2014""
+
+""Broker # 5.1"";""01.01.2013""
+
+""Callcenter # 3.2"";""01.03.2013""
+
+""Claim & benefit management assurance"";""01.06.2025""
+
+""Clearing Inland # 3.0"";""01.01.2012""
+
+""CRM # 3.1"";""01.01.2012""
+
+""CRM # 3.2"";""01.10.2016""
+
+""CRM RB # 3.1"";""01.01.2012""
+
+""CRM RB # 3.2"";""01.03.2017""
+
+""Deposits-Manager # 2.0"";""01.01.2013""
+
+""Distribution Support"";""01.06.2024""
+
+""DMS # 1.9"";""01.05.2012""
+
+""Document archiving # 2.0"";""02.05.2000""
+
+""DSS"";""01.05.2015""
+
+""DWH # 2.3"";""28.05.2013""
+
+""EAM System"";""02.05.2015""
+
+""Electronic banking # 2.3"";""01.06.2014""
+
+""Electronic funds transfer # r12"";""01.01.2012""
+
+""ERP # 3.9"";""01.05.2015""
+
+""Funds txs # r12"";""01.01.2012""
+
+""Funds txs # r13"";""01.09.2016""
+
+""Homepage # 1.1"";""01.06.2011""
+
+""HR # 2.3"";""01.01.2011""
+
+""HR # 4.0cloud"";""01.06.2019""
+
+""Insurance & Contract Management"";""01.06.2024""
+
+""Insurance App"";""01.06.2021""
+
+""Integrated BI # 1.0"";""01.01.2020""
+
+""International txs # r12"";""01.01.2012""
+
+""Intranet # 2.0"";""01.03.2011""
+
+""Loan Management # 1.6"";""01.06.2013""
+
+""Market Analysis"";""18.05.2014""
+
+""MIS # 1.2"";""01.05.2014""
+
+""Monetary txs # r12"";""01.01.2012""
+
+""Monetary txs RB # 2.0"";""01.01.2013""
+
+""Neuronal Network # 12.0"";""01.06.2019""
+
+""PLM # 3.7"";""01.05.2012""
+
+""Registration # 3.0"";""01.01.2012""
+
+""RM # 1.0"";""01.01.2014""
+
+""Salesforce.com"";""01.06.2020""
+
+""SAP Classic-P10"";""02.03.2013""
+
+""SAP CO-P10 # 6.0"";""02.03.2013""
+
+""SAP Fi-P10 # 6.0"";""02.03.2013""
+
+""SAP RD-P20"";""01.05.2013""
+
+""Scanengine # 5.1"";""01.05.2014""
+
+""SCM # 3.7"";""01.05.2015""
+
+""Securities tx system # 1.2"";""01.06.2013""
+
+""Solvency check # 1.0"";""01.04.2005""
+
+""Solvency check # 1.1"";""15.12.2016""
+
+""SWIFT clearing # 4.0"";""01.01.2011""
+
+""Treasury # 1.0"";""01.01.2017""
+
+""VISA clearing # 3.0"";""01.01.2013""
+
+{code}"																																																						

@@ -1,0 +1,31 @@
+List: Filters are loaded from user-setting and not from url	"*Summary:*
+
+List: Filters are loaded from user-setting and not from url
+
+
+
+*Reproduce:*
+
+* Open the default list of Information Systems
+
+* Copy the url: (e.g. http://iteraplan.iteratec.de:8080/iteraplan-devel/client/#/list/InformationSystem?featureName=%2Flist%2FInformationSystem&columns=fieldK%2FnameP%2FpropertyTypeK%2FstringP%2FwidthK%2F210P%2FsortK%2FascP%2FsortedAtK%2F0B%2FfieldK%2FdescriptionP%2FpropertyTypeK%2FrichtextP%2FwidthK%2F1169 )
+
+* Add a filter like ""name contains SAP""
+
+* Paste the original url to a new tab in the same browser
+
+* Wait for about 1 minute (until the user setting is saved)
+
+
+
+*Actual:*
+
+* The filtered list is loaded (from the user setting service)
+
+
+
+*Expected:*
+
+* The unfiltered list from the url should be loaded"		Bug	iteraplan Speedbird	31/Jan/17 5:01 PM	02/Feb/17 9:59 AM														"01/Feb/17 9:28 AM;cst;AT the moment the ""Cancel"" Button from the ""Filter Dialog"" has no function 
+
+"																																																						

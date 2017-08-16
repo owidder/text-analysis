@@ -1,0 +1,7 @@
+Selenium-Test: start-URI-configuration	"mba  commented on ITERAPLAN-2187 ( 09/Dec/13 10:25 AM ) :
+
+""[Configuration of the start-URI] must currently be done by manually changing the field baseurl withinSeleniumMultipleBrowserTest.java. This should be made configurable somewhere outside the source code (e.b. property-files)"""		Improvement	iteraplan PO	16/Dec/13 2:24 PM	22/Apr/14 1:13 PM														"17/Dec/13 1:07 PM;lba;See: https://www.iteraplan.de/code/changelog/iteraplan-SVN?cs=21952 and https://www.iteraplan.de/code/changelog/iteraplan-SVN?cs=21953
+commited in ITERAPLAN-2187.
+
+How to test: 
+Add as VM-Argument -DbaseUrlSelenium=""<my_iteraplan_instance>/"" it should then connect to this specific server."	17/Dec/13 3:07 PM;fka;Was splitted from ITERAPLAN-2187	22/Apr/14 1:13 PM;bra;uri can be specified as jvm parameter (/)																																																				

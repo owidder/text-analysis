@@ -1,0 +1,44 @@
+Ungültige Lizenz in allen Umgebungen	"Wir bekommen folgende Fehlermeldung aktuell in allen Umgebungen:
+
+
+
+[WARN ] 04-Apr-2017 11:29:51 [iteraplan.presentation.UserContextInitializationServiceImpl] Tried to log in without a valid license.
+
+
+
+Bitte senden Sie uns so schnell wie möglich einen neuen gültigen Lizenzkey.
+
+
+
+Danke"		Fault	iteraplan Support	04/Apr/17 11:35 AM	04/Apr/17 2:51 PM														"04/Apr/17 12:02 PM;cst;Sehr geehrter Herr Deichmüller,
+
+vielen Dank für Ihre Anfrage.
+
+Hier Ihr aktueller Lizenzschlüssel:
+
+[^license.txt]
+
+Der Lizenzschlüssel kann wie folgt in die Software eingetragen werden. 
+
+[https://doc.iteraplan.de/display/iteraplan54/License|https://doc.iteraplan.de/display/iteraplan55/License] 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"04/Apr/17 12:12 PM;christian.deichmueller@huk-coburg.de;Hallo Herr Stangl,
+
+wie lange ist dieser Key gültig?
+
+Können Sie bitte sicherstellen, dass wir zukünftig rechtzeitig vor Ablaufen der Lizenz den Key zugesendet bekommen.
+
+VG
+
+Christian Deichmüller"	"04/Apr/17 12:44 PM;cst;Hallo Herr Deichmüller,
+
+vielen Dank für Ihre Antwort.
+
+Der Key ist bis zum 28.02.2017 gültig, zusätzlich wurde die Lizenz mit dem letzten Release versendet. 
+Sie können dies gern in der letzten Release-Mail (5.5) gegen prüfen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	04/Apr/17 2:46 PM;christian.deichmueller@huk-coburg.de;danke, kann geschlossen werden.																																																			

@@ -1,0 +1,53 @@
+Excel Import ignoring create operation for element of type Isr2BoAssociation, Tcr2IeAssociation and InformationFlow	"For users who are not iteraplan_Supervisor but have all rights, no Information Flows, Isr2BoAssociation and Tcr2IeAssoiciations are imported.
+
+*Reproducing of the problem*
+* Login with a user who has all rights but is not iteraplan_Supervisor
+* Export a full model as Excel file
+* add a new Tce2IeAssociation into the excel file and save it
+* import the excel file
+* after the dry run / validate data you get the following message
+“Ignoring a create operation for element of type Tcr2IeAssociation due to missing create permission for the current user.”
+
+*behavior expected*
+With full rights, the import of Tcr2IeAssociation and InformationFlow is possible.
+"		Bug	iteraplan PO	06/Jun/14 12:16 PM	16/Jun/14 2:43 PM					excel	import	permissions							"10/Jun/14 11:25 AM;wfr;Please clarify:
+
+@Ingo: Prime Directive: Elastic should mimic the classic side.
+What are the cases on the classic side?
+
+@Michael: Please fill the matrix.
+
+@Both
+
+For two given building block types A and B and an association A2B, the permission on A2B must be determined from the permissions on A and B.
+There is no way to set the permission on A2B directly opn the classic side.
+
+For each BBT A and B, a user may have either no permission, read, update, create or delete, in ascending implication order.
+
+There are 25 combinations.
+
+Obvious cases and rules:
+* no permissions on both BBTs => no permission on association
+* full permissions (delete) on both BBTs => full permission (delete) on association
+* symmetric: the combination of perm1 on A and perm2 an B  and the symmetrical combination perm2 on A and permission 1 on B result in the same permission on the association.
+* monotonous: a higher permission on one type leads to at least the same or a higher permission on the association.
+
+
+||A/B||no||R||U||C||D
+||no|no|no|no|no|no
+||R|no|R|?|?|?|
+||U|no|?|U|?|?|
+||C|no|?|?|C|?|
+||D|no|?|?|?|D|
+"	"10/Jun/14 11:35 AM;wfr;
+
+Business mapping is different, because it has 4 ends and explicit permissions.
+In this sense it is more like a regular BBT w.r.t. permissions, and less like an association."	"11/Jun/14 8:47 AM;isc;The cases on the classic side is the following:
+
+||A/B||no||R||U||C||D
+||no|no|R|D|D|D
+||R|R|R|D|D|D|
+||U|D|D|D|D|D|
+||C|D|D|D|D|D|
+||D|D|D|D|D|D|"	"12/Jun/14 3:41 PM;isc;In coordination with the Demand Management:
+The import of Isr2BoAssociation, Tcr2IeAssociation and InformationFlows should work the same as on the classic side."																																																			

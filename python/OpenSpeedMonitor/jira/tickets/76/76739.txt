@@ -1,0 +1,13 @@
+Client build process improvements	"Things possibly to improve:
+
+* Running of a local development build
+
+* Dependencies
+
+* Automatic inclusion of JS files
+
+* ..."		Improvement	iteraplan PO	11/Mar/16 1:22 PM	27/Mar/17 1:14 PM					build_process									"15/Mar/16 10:52 AM;abo;Somehow relates to ITERAPLAN-4381, ITERAPLAN-4382, ITERAPLAN-4383, ITERAPLAN-4384.
+
+
+
+Please have a look at those, too."																																																						

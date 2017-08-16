@@ -1,0 +1,22 @@
+Uses/Used by-relation with interfaces	"Einführen einer Verwendungsbeziehung auf Schnittstellen
+
+Die Informationssysteme, die bei den Schnittstellen, die über Verwendungsbeziehungen miteinander verknüpft werden, beteiligt sind, können beliebig sein.
+
+1. Verwendungsbeziehung zw. Schnittstellen kann gesetzt werden und ist in der Ansicht eines Elements im Bereich ""Hierarchie"" sichtbar (analog wie bei Informationssystemen).
+2. Anfrageerweiterungen ""Eigenschaften der Schnittstellen, welche die gesuchten Schnittstellen verwenden (nur direkte Zuordnungen)"" (und Gegenrichtung) sind an den entsprechenden Stellen nutzbar (bei Tabellarischen Auswertungen und allen Visualisierungen).
+3. Cluster-Grafik: ""Benutzt von Schnittstellen"" bzw. ""verwendete Schnittstellen"" ist vorhanden.
+4. Export/Import der Beziehung nach/von Excel & XMI, klar
+5. iteraQL-Abfrage-Möglichkeit, klar
+6. Aufnahme in Bulk-Update
+7. Notification und History müssen funktionieren
+8. Siegelbruch muss berücksichtigt werden
+9. Rollen & Rechte berücksichtigen
+10. Beispieldaten anpassen
+11. DB-Migrationsskripte
+
+Nicht im Fokus, also nicht umzusetzen:
+- Erweiterung der Konsistenzchecks
+- Übernahme der Verwendungsbeziehung beim Kopieren einer Schnittstelle
+- Berücksichtigung in der Nachbarschaftsgrafik
+- Übernahme in alle Classic-Visualisierungen (Ausnahme siehe oben)
+"		New Feature	iteraplan PO	26/May/14 11:22 AM	11/Jun/17 1:04 PM					interfaces	metamodel								11/Jun/17 1:04 PM;fka;Currently no longer in focus																																																						

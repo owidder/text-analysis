@@ -1,0 +1,89 @@
+text filter by name	"Text filter should work as a usual CTRL+F search. This means specifically:
+
+
+
+* Filter only applied to visible columns?
+
+** Yes.
+
+* How does the filter behave if a column is added or deleted?
+
+** Filter shall remain and be applied to new columns and be removed from deleted columns, respectively.
+
+* Serialized to URI?
+
+** Yes.
+
+* Case sensitive?
+
+** No, search string and list data should be normalized before filtering (only to lower case for the moment)
+
+** Wildcards and more advanced stuff can be added later, but not for the time being
+
+* How should the filter input form look like (With search symbol? With reset button?)? 
+
+** With search symbol and reset button as in list before. 
+
+* How to test the quick filter?
+
+** Unit test for doesQuickFilterPass() method and e2e test for a few cases (Check number of rows before and after filtering and after reseting filter)
+
+* UI layout of search box:
+
+** To be followed up in ITERAPLAN-4595"		New Feature	iteraplan PO	10/May/16 12:52 PM	20/Jun/16 4:22 PM														"14/Jun/16 9:57 AM;ach;Review Comments:
+
+* should it work on every column? if yes: i can't filter by date
+
+* after adding and deleting of a column, quick filtering remains for data in this column
+
+* quick filtering and deleting of a column should reapply quickfilter on extant columns
+
+* use translate service for Placeholder ""Filter...""
+
+
+
+optional:
+
+* add a delete (cross) button behind input field for quick input remove (for example see old new list view https://www.iteraplan.de/iteraplan_ee_release/client/#/InformationSystem?locale=en)
+
+"	14/Jun/16 1:48 PM;mse;Commit 3459 belongs to this ticket!	"17/Jun/16 10:14 AM;mse;Quick filter as sepcified above is (or should be) implemented.
+
+
+
+ITERAPLAN-4588 should be realized by the implemented solution as well. Please, check this during review.
+
+"	"17/Jun/16 2:10 PM;abo;*Review-Comments:*
+
+* in _ListConfiguration.js_ you added a comment ""Add a starting '""' to URI parameter to have correct behaviour for numbers"" - that makes clear, it was intentional and has something to do with numbers. Please also explain _why_ this is necessary.
+
+* in _QuickFilterChecker-spec.js_
+
+** please use {{.toBeTruthy()}} instead of {{.toEqual(true)}}
+
+** please inline {{quickFilterText}} - it's better readable, and you can easily re-arrange the lines without side-effects.
+
+** please test special cases: a) visiblecolumns is an empty array b) ... is null c) quickfiltertext is  an empty String d) ... is null
+
+* UI is ugly - is there a separate ticket for cleanup? If UI is not an issue, it should be stated in the ticket description!
+
+* in _ipList.html / app.css_ - I think the group's width can be set on the div, it's not necessary to define an extra class for that
+
+
+
+*Hint:* I also did a commit with a refactoring of _Quickfilter-spec.js_ as it seemed easier to actually do the refactoring than explaining it."	"20/Jun/16 9:23 AM;mse;Thanks for the useful review comments! Let me quickly comment on some of them:
+
+
+
+2. QuickFilterChecker-spec.js:
+
+* I hope I got the meaning of ""inline"" correctly. Otherwise just let me know, please!
+
+* Special test case d) (search string is null) will not be tested because there is an additional isQuickFilterPresent() method before the QuickFilterChecker.matches() method is applied, where this case is catched
+
+
+
+3. UI ticket is linked and mentioned in the description
+
+
+
+(I made a mistake in the commit message, sorry for that! The changes can be found in commit 3567)"																																																		

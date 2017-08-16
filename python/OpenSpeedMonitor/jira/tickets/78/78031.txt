@@ -1,0 +1,3 @@
+Nebenläufige Ausführung des iteraSpiders implementieren	"Als Benutzer möchte ich beim iteraSpider mehrere Spiderläufe starten können, die anschließend parallel ausgeführt werden ohne sich dabei in die Quere zu kommen.
+
+Hierzu muss wahrscheinlich das Singleton-Konzept bei mehreren Klassen aufgegeben werden (Configuration, Proxy, BlacklistController, CompareController)."		Story	secureCodeBox	22/Mar/16 2:20 PM		secureBoxSpider				iteratec																																																															

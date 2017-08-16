@@ -1,0 +1,47 @@
+SVG\image download	"*Summary:*
+
+Create a Download-Button to download the masterplan Diagram incl. legend as SVG\image.
+
+
+
+*Details:*
+
+* Use the GoJS built-in functionality
+
+* Use the headerDownloadService.js
+
+* Diagram is downloaded only for current selected date range (which is currently visible on the screen). Date range can be changed by user with zooming feature, scrolling timespan or changing size of timespan part by dragging a resizer
+
+* Diagram is downloaded with default scale factor and all months visible
+
+* JPEG/PNG download also in the scope of this ticket
+
+* PDF download is in IPTS-7"		New Feature	iteraplan Speedbird	03/May/16 10:35 AM	18/Jul/16 3:10 PM														05/May/16 4:54 PM;dmkh;Fully implemented download functionality for masterplan diagram, but it is needed to create additional ticket(s) for fixing layout\styling issues of downloaded SVG files. Please, contact me for more information.	"18/May/16 4:32 PM;msr;[~dmkh] discussed with [~msr] the following:
+
+* MPDiagram has fixed borders to use the scrolling/panning features of GoJS
+
+* That's why the download-solution of the other diagrams does not work
+
+* *Solution:* Use the ""Full Download"" as blueprint, i.e. render the diagram the a new div without fixed borders and download from this new div"	31/May/16 4:46 PM;msr;The Toolarea only opens when clicking on the table or on the dateranges (but *not* on both headers).	"04/Jun/16 3:06 PM;msr;I have a written a mail to the GoJS-support today.
+
+Let's wait for their answer."	04/Jun/16 4:06 PM;msr;PDF is excluded from this ticket.	"05/Jun/16 4:14 PM;msr;Answer from GoJS-support:
+
+
+
+""If you could supply a small reproduction example, we should be able to fix it.
+
+
+
+Are you using a Diagram grid? RowColumnDefinition separators?
+
+
+
+Simon""
+
+
+
+[~dmkh]: Could please try to create an example for them to reproduce (as small as possible???)? Thanks."	"08/Jun/16 9:59 AM;wfr;currently waiting for GoJS Support, 
+
+still possible in sprint under planning.
+
+"	18/Jul/16 3:10 PM;mada;In scope of review also include tickets: IPTS-3, IPTS-7																																															

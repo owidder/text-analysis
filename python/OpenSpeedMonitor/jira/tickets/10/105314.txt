@@ -1,0 +1,7 @@
+Letzte Auswahl in Javascript-Modell halten	"Beispiel:
+
+Man wählt die JobGroups ""A"", ""B"", und ""C"" aus. Durch einen  FIlter auf den Pages werden nur noch die JobGroups ""A"" und ""C"" angezeigt. Damit verfällt natürlich auch die effektive Auswahl der JobGroup ""B"".
+
+
+
+Wählt man nun aber wieder alle Pages aus, sollte auch JobGroup ""B"" wieder markiert sein. D.h. zusätzlich zur effektiven Auswahl, sollte die theoretische Auswahl im Modell gespeichert werden und als Selektion beim Updaten der Auswahl genommen werden. Die theoretische Auswahl sollte nur dann geändert werden, wenn der User auch wirklich selber die Auswahl verändert."		Bug	OpenSpeedMonitor	12/Dec/16 9:26 AM																																																																					

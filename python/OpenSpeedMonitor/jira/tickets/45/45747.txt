@@ -1,0 +1,6 @@
+Excel Export and Excel Import template don't respect localization for column headers	"Especially the columns for runtime period and type of status should use the localized texts for their headers. Possible other built-in properties where localized texts exist which aren't used for the column headers yet should receive the same treatment.
+This way possible customizations will be respected automatically, too.
+
+Note: this is only about the visible headers meant for human readers, not the ""hidden"" headers with technical information."		Improvement	iteraplan PO	04/Jun/13 12:37 PM	30/Dec/15 2:32 PM					Excel	localization	Template							"28/Jul/14 2:30 PM;sfe;This issue also affects the introduction sheet:
+There are still technical names like ""Isr2BoAssociation"" in the Excel file, despite localized names existing for them (see building block type assignment dropdown field when editing an attribute).
+Especially the last example is hard to understand for some customers, even more so if they have customized names for the related building block types."																																																						

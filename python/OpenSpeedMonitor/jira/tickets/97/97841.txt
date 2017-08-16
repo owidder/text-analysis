@@ -1,0 +1,157 @@
+REST API for Attributes	"*Summary:*
+
+Create REST-Interface for Attributes
+
+
+
+*Details:*
+
+* The new REST resource structure should be:
+
+{code}/api/attributes/{code}
+
+
+
+* Result for GET request (see IPTS-203 as an example for the attributes JSON structure):
+
+{code}
+
+[
+
+  {
+
+    ""id"": 123,
+
+    ""persistentName"": ""State of health""
+
+    ""type"": ""de.iteratec.iteraplan.model.attribute.EnumAT.State of health"",
+
+    ""name"":{
+
+      ""en"":""State of health"",
+
+      ""de"":""State of health""
+
+    },
+
+    ""pluralName"":{
+
+      ""en"":""State of health"",
+
+      ""de"":""State of health""
+
+    },
+
+    ""description"":{
+
+      ""en"":""State of health based on functionality of the given element."",
+
+      ""de"":""State of health based on functionality of the given element.""
+
+    },
+
+    ""mandatory"": false,
+
+    ""multiple"": false,
+
+    ""position"": 0,
+
+    ""id_atg"": 1,
+
+    ""last_mod_user"": XmiImport,
+
+    ""last_mod_time"": ""2016-10-25 17:59:17"" // format to UTC
+
+    ""activatedBBTRelations"": [{""persistentName"": ""Product""},{""persistentName"": ""InformationSystem""}],
+
+    // the following only for ""enum"" attributes
+
+    ""possibleValues"": [
+
+      see comment below for value structure
+
+    ]
+
+    // the following only for ""num"" attributes
+
+    ""lowerBound"": 0,
+
+    ""upperBound"": 15,
+
+    ""unit"": ""thousand EUR"",
+
+    ""rangeUniformDistributed"": true
+
+  }
+
+]
+
+{code}
+
+* Include permission handling: The use has permission to view an attribute group or not. If the user does not have the right to view the attribute group he must not get the attributes of this attribute group from the attributes interface.
+
+
+
+For system see: IPTS-204"		New Feature	iteraplan Thunderduck	30/Sep/16 5:00 PM	15/Nov/16 5:53 PM														"09/Nov/16 12:43 PM;ants;This ticket contains reference to use JSON structure for attributes from IPTS-203, so here is a copy of comment regarding to JSON structure from IPTS-203:
+
+
+
+Marcel Schrumpf added a comment
+
+Please use exactely the same JSON-structure and content like a property in the ""/api/icmm"".
+
+Stephan provided a mapping for the classic-Java-types to the Elastic-types. Please include this in the REST-interface
+
+Classic -> Elastic
+
+Number -> Decimal (normal numeric properties)
+
+Number -> Integer (System numeric properties: Id and position)
+
+Single text line -> text
+
+Mulit-line text -> richtext"	"10/Nov/16 5:48 PM;mwe;Structure of ""possibleValues"" for enum as an example (see literals structure in metamodel):
+
+{code}
+
+      {
+
+        ""persistentName"": ""good"",
+
+        ""name"": {
+
+          ""en"": ""good"",
+
+          ""de"": ""good""
+
+        },
+
+        ""pluralName"": {
+
+          ""en"": ""good"",
+
+          ""de"": ""good""
+
+        },
+
+        ""description"": {
+
+          ""en"": ""The component provides the expected functionality."",
+
+          ""de"": ""The component provides the expected functionality.""
+
+        },
+
+        ""color"": ""rgb(175,206,168)"",
+
+        ""index"": 0
+
+      }
+
+{code}
+
+
+
+There are different possible values for date, enum, num, range, resp and text attributes."	10/Nov/16 5:59 PM;ants;For single line text attribute types rest resource responses attribute type {{"string"}} as is currently responded by {{/api/icmm}}	"10/Nov/16 6:49 PM;ants;What should be responded for {{upperBound}} and {{lowerBound}} of numeric attribute types in case if bound is not set?
+
+Suggestion is that property should be absent."	11/Nov/16 11:26 AM;mwe;Yes, leave it out of the response if {{upperBound}} or {{lowerBound}} is not set.																																																		

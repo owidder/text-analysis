@@ -1,0 +1,49 @@
+Add technical property columns	"* ID: is text string, but sort as number (/)
+
+* last modification infos: user (simple text) and last mod. timestamp: date-time, extra format, no locale here, must be sortable (/)
+
+* position of child in list of siblings in hierarchy: numeric, make it non-sortable (/)
+
+
+
+not possible: ID of information system for information system release
+
+write an understandable ticket for ""not possible"", talk to WFr or SFe"		New Feature	iteraplan PO	10/May/16 11:04 AM	07/Jun/16 11:15 AM														01/Jun/16 3:26 PM;mse;The "not possible" item is specified in ITERAPLAN-4657.	"06/Jun/16 1:57 PM;abo;*Review-Comments:*
+
+* _ListConfiguration.js_ is already outdated - it doesn't make sense to do a review for that based on this ticket.
+
+* _ListRowDataBuilder-spec.js_ - it's irritating to configure the builder in between tests - either do the configuration at 1 central location or move it to the appropriate test as 'given' part.
+
+* Tests in _ListColumnDefsBuilder-spec.js_ should test more special cases, e.g. input for number comparator is not a string but float, or it is formatted with a German decimal-separator (i.e. ',') or NaN; string comparator should ordering of German Umlauts in contrast to their 'normal' letters (e.g. 'a' and 'ä').
+
+* In _ListColumnDefsBuilder.js_:
+
+** why do we need a text-comparator at all? I thought this is the default behaviour of ag-grid.
+
+** Please further document pre-conditions of _numberComparator()_, especially the format of the string that should be provided. 
+
+** Please also document _why_ the input for the comparators always is of type String."	"06/Jun/16 3:09 PM;mse;* _ListRowDataBuilder-spec.js_ was refactored so that the MetaModelBuilder is completely defined at the beginning for better overview.
+
+* _ListColumnDefsBuilder-spec.js_
+
+** Test cases for number strings with commas have been added 
+
+** The number comparator cannot compare real numbers (or NaN) but is built for number strings as the cells of the grid contain always strings
+
+** Test cases for German umlauts have been added
+
+* _ListColumnDefsBuilder.js_
+
+** A text comparator is necessary as ag-grid always sorts capital letters before small letters otherwise (as far as I remember)
+
+** JSdoc of numberComparator is updated
+
+** The values of the cells are always strings in our implementation of ag-grid -> JSdoc adjusted"	"06/Jun/16 4:17 PM;abo;*Review Comments #2:*
+
+* Thanks for clarifications and adaptions!
+
+* I've commited changes to some unit tests to make borders of the implementation explicit. Please review my test-cases whether that behavior was intended."	"07/Jun/16 11:15 AM;mse;Thanks for the additional review comments and the additional unit tests. They look good!
+
+
+
+One additional comment: At the moment, German umlauts are not treated well, when a text column is sorted. This will be followed up in ITERAPLAN-4682."																																																		

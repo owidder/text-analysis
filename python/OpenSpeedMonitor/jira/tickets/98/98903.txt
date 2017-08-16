@@ -1,0 +1,3 @@
+Update license comments and README 	"Update license comments and README as described here:
+
+https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-2.2LizenzenundREADMEs"	98901	Sub-task	iteraplan PO	12/Oct/16 9:07 AM	26/Oct/16 2:49 PM																																																																				

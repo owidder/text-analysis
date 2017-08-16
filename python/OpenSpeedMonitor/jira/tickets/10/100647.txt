@@ -1,0 +1,47 @@
+Core Modul aus OSM extrahieren	"Die Domain ""EventResult"", sowie alle abhängigen Domains, Services, und Klassen müssen aus OSM in ein extra Modul verschoben werden.
+
+Auch die templates ""eventResultDashboard/_select*"" sollten dorthin verschoben werden.
+
+
+
+Neue PresentationModules, so wie das Bar Chart, können so diese Funktionalität benutzen."		Task	OpenSpeedMonitor	26/Oct/16 1:36 PM	15/Mar/17 2:07 PM														"16/Nov/16 1:13 PM;nku;Bitte noch mal auf Stackoverflow nachfragen.
+
+"	"17/Nov/16 1:57 PM;bwo;Das Problem konnte eingegrenzt werden und ich konnte den OSM mit der gewünschten Struktur starten. Wenn ich compile 'org.grails.plugins:spring-security-ui:3.0.0.M2' entferne und dementsprechend die Controller. Hier scheint es einen Bug zu geben und es muss geklärt werden ob es hier für eine Lösung gibt oder ob wir ein Ticket bei den Plugin-Entwicklern eröffnen.
+
+Folgende Schritte waren notwendig:
+
+cd OpenSpeedMonitor
+
+echo include \""plugins/core\"" >> settings.gradle
+
+mkdir plugins
+
+cd plugins
+
+grails create-app core
+
+rm core/grails-app/init/core/Application.groovy //Brauchen wir nicht und führt in grails 3.1.5 zu fehlern
+
+Über den dependencies block in der build.gradle des OSM folgendes einfügen:
+
+grails {
+
+    plugins {
+
+        compile project('plugins/core')
+
+    }
+
+}
+
+Aus eben jener compile 'org.grails.plugins:spring-security-ui:3.0.0.M2' auskommentieren und unter controller/../security alles löschen. Das sollte in Zukunft natürlich nicht mehr nötig sein.
+
+Anschließend können die Domains ins Plugin refactored werden. Hierbei ist zu beachten dass dependencies, welche in der build.gradle definiert wurden und von den betroffenen Klassen genutzt werden, auch in die build.gradle des Plugins verschoben werden müssen.
+
+
+
+
+
+"	"18/Nov/16 9:56 AM;nku;Hast Du das core-Plugin wirklich mit {code}grails create-app core{code} generiert?
+
+Oder doch mit create-*plugin*?"	15/Mar/17 2:07 PM;sbr;Zug ist abgefahren - Wird in dieser Form nicht umgesetzt																																																			

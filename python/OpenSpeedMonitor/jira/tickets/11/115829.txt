@@ -1,0 +1,189 @@
+API did not work	"since update to version 5.5 our interfaces using API did not work any longer
+
+
+
+""The remote server returned an error: (401) Unauthorized."" ---> System.Net.WebException: The remote server returned an error: (401) Unauthorized.
+
+
+
+
+
+22.03.2017 11:36:39: { ""result"": [ {       ""name"": [         ""BI-SW-CHEMAXON-MARVIN-TOOLS:-SWITCH-OLE-STANDARD-EDITOR-TO-MARVIN""       ],       ""CMDB description"": [         ""The installed registry keys switch the OLE standard editor for chemical structures from ISIS to Marvin Tools""       ],       ""typeOfStatus"": [         ""current""       ], 	  ""runtimePeriod"": [         ""2016-12-16;""       ], 	  ""old plan start (c)"": [         ""2014-06-17""       ],       ""CMDB physical status"": [         ""In Production""       ],       ""CMDB supported by"": [                ],       ""CMDB system lead"": [         ""Gullini, Ruben""       ],       ""CMDB item type"": [         ""Software Package and Modules""       ],       ""CMDB registered users"": [                ],       ""CMDB data classification"": [                ],       ""CMDB system lead org"": [         ""IT RDM Enabling""       ],       ""alias"": [         ""Marvin Tools: Switch OLE Standard Editor to Marvin""       ],       ""CMDB code"": [         ""BI-SW-CHEMAXON-MARVIN-TOOLS:-SWITCH-OLE-STANDARD-EDITOR-TO-MARVIN""       ], 	  ""technicalComponentReleases"": [                ], 	  ""availableForInterfaces"": [         false       ], 	  ""standard class"": [ 	   ""non-standard"" 	  ], 	  ""CMDB vendor"": [ 	    	  ] 	  }   ] }
+
+22.03.2017 11:36:39: http://capry:8080/iteraplan/api/data/technicalcomponent?format=json
+
+22.03.2017 11:36:39: IMPORTNEWCMDBENTRIES ITERAPLANID: 
+
+22.03.2017 11:36:39: System.Management.Automation.MethodInvocationException: Exception calling ""UploadString"" with ""3"" argument(s): ""The remote server returned an error: (401) Unauthorized."" ---> System.Net.WebException: The remote server returned an error: (401) Unauthorized.
+
+   at System.Net.WebClient.UploadDataInternal(Uri address, String method, Byte[] data, WebRequest& request)
+
+   at System.Net.WebClient.UploadString(Uri address, String method, String data)
+
+   at UploadString(Object , Object[] )
+
+   at System.Management.Automation.DotNetAdapter.AuxiliaryMethodInvoke(Object target, Object[] arguments, MethodInformation methodInformation, Object[] originalArguments)
+
+   --- End of inner exception stack trace ---
+
+   at System.Management.Automation.DotNetAdapter.AuxiliaryMethodInvoke(Object target, Object[] arguments, MethodInformation methodInformation, Object[] originalArguments)
+
+   at System.Management.Automation.DotNetAdapter.MethodInvokeDotNet(String methodName, Object target, MethodInformation[] methodInformation, Object[] arguments)
+
+   at System.Management.Automation.Adapter.BaseMethodInvoke(PSMethod method, Object[] arguments)
+
+   at System.Management.Automation.ParserOps.CallMethod(Token token, Object target, String methodName, Object[] paramArray, Boolean callStatic, Object valueToSet)
+
+   at System.Management.Automation.MethodCallNode.InvokeMethod(Object target, Object[] arguments, Object value)
+
+   at System.Management.Automation.MethodCallNode.Execute(Array input, Pipe outputPipe, ExecutionContext context)
+
+   at System.Management.Automation.AssignmentStatementNode.Execute(Array input, Pipe outputPipe, ExecutionContext context)
+
+   at System.Management.Automation.StatementListNode.ExecuteStatement(ParseTreeNode statement, Array input, Pipe outputPipe, ArrayList& resultList, ExecutionContext context)
+
+"		Fault	iteraplan Support	22/Mar/17 12:57 PM	29/Mar/17 12:58 PM														22/Mar/17 3:01 PM;clemens.utschig-utschig@boehringer-ingelheim.com;We checked - also the release notes - and the permission "Access iteraplan via REST API" does NOT exist in our installation ...	"22/Mar/17 3:48 PM;cst;Thank you for your inquiry.
+
+Do you use the ""Basic Authentication"" or authentification with the session of LDAP + SSO?
+Appears the (401) Unauthorized only on ""PUT"" or is a ""GET"" request working with REST API.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	22/Mar/17 4:41 PM;stephan.siebel@boehringer-ingelheim.com;See initial answer at create AuthenticationLDAP / SSO ;-(	23/Mar/17 8:49 AM;clemens.utschig-utschig@boehringer-ingelheim.com;folks . we URGENTLY need a solution for this - all our interfaces don't work anymore.	"23/Mar/17 9:00 AM;cst;Do you use for the REST Request the ""Basic Authentification"" - Username and Password?
+
+or 
+
+Do you use for the REST Request a opened Session / Cookie of iteraplan?
+
+We don't know your interface and how it authenticate with iteraplan. 
+On iteraplan 5.5. the permission ""Access iteraplan via REST API"" is not longer available, because every user has this permission now.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+
+ 
+
+ "	"23/Mar/17 9:05 AM;clemens.utschig-utschig@boehringer-ingelheim.com;you use for the REST Request the ""Basic Authentification"" - Username
+and Password?
+
+- NO we use SSO
+
+you use for the REST Request a opened Session / Cookie of iteraplan?
+
+- I guess so
+
+""On iteraplan 5.5. the permission ""Access iteraplan via REST API"" is
+not longer available, because every user has this permission now."" - then the documentation is wrong.
+
+Secondly : 
+going to : http://capry/iteraplan/api  - throws a 401 back.
+while http://capry/iteraplan/client -> which uses the API works.
+
+So there is something seriously wrong. 
+
+
+"	"23/Mar/17 9:05 AM;hannes.callisen@boehringer-ingelheim.com;to be clear ... this problem came with the update of vers. 5.5 .... everything worked well before .... what has changed in iteraplan that has caused the interface to not work anymore as it did before ?????
+"	23/Mar/17 12:00 PM;stephan.siebel@boehringer-ingelheim.com;Trying to find the error myself I have made the following observations If you start IE and request http://capry/iteraplan/api/data/InformationSystem you get the 401 error If you start IE an log into iteraplan http://capry/iteraplan you get an result on an second tab for the same request	"23/Mar/17 1:22 PM;cst;You are right, the documentation has not been updated with regards to the removal of the REST api permission. This will be corrected.
+
+ As for authentication of iteraplan in general:
+
+All requests to iteraplan/api/** are meant to be done via Basic authentication, or use an existing session. This is why in your example you get a result when logging into iteraplan in IE, then accessing the api using the same browser (even though in a separate tab): The browser sends a session cookie and the api call is handled within that same session.
+
+This is also how the interactive client works.
+
+Now for the changes in iteraplan 5.5 regarding authentication:
+
+Some server responses to unauthorized requests or authorization failures when accessing the REST api have been changed.
+
+I don’t know how your interfaces work, but I can imagine this to have an effect on your interfaces application, for example as follows.
+Formerly, on accessing the REST api without being authorized, this could have happened:
+ # iteraplan redirects to its login page.
+ # In your SSO configuration this results in an automatic login (if your interfaces application is capable of handling the webserver’s request for an authentication token)
+ # This is followed by another redirect to the REST resource that was originally accessed.
+
+With 5.5.0, iteraplan sends the mentioned 401 instead of the redirect (for unauthorized access to /api/** URLs)
+
+If the scenario described above is true, there would be, for example, the following possibilities:
+ * Your interfaces application could send a request to, for example, the iteraplan homepage (or any other iteraplan page outside of /api/**) to trigger the login, then use the granted session for accessing the api
+ * Change to using basic authentication when accessing the REST api
+
+ If this does not help you, I’d like to request the following logfiles for further analysis:
+ * iteraplan log file (its location is configured in the iteraplan application’s file WEB-INF/classes/log4j.properties, and it is usually called iteraplan-[version].log)
+ * tomcat access logs
+ * BonCode log files (assuming you are using the IIS + BonCode combination together with iteraplan). A description how to configure BonCode to write more detailed log files can be found in the last paragraph of our documentation for Single Sign On configuration: [https://doc.iteraplan.de/display/iteraplan55/Single+Sign+On]
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	23/Mar/17 3:02 PM;clemens.utschig-utschig@boehringer-ingelheim.com;Christoph - where is ANY of this documented? changing the entire way the auth does work is killing rest based interfaces.	23/Mar/17 3:03 PM;clemens.utschig-utschig@boehringer-ingelheim.com;Can we preemtitvely send the http auth headers and that will do the trick, or can we only use a granted session with the API?	"24/Mar/17 8:37 AM;cst;Good Morning,
+
+to use the API, it is possible to:
+
+* Send a basic auth header with each API request
+
+ or
+
+* use a granted session
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"24/Mar/17 2:39 PM;clemens.utschig-utschig@boehringer-ingelheim.com;so pre-emptive and SSO does NOT work ...
+we used 
+
+$webclient = new-object System.Net.WebClient
+$credCache = new-object System.Net.CredentialCache
+$creds = new-object System.Net.NetworkCredential(""un"",""pw"")
+$credCache.Add(""url"", ""Basic"", $creds)
+$webclient.Credentials = $credCache 
+
+and still get the 401
+
+Next try: curl
+"	"24/Mar/17 3:24 PM;stephan.siebel@boehringer-ingelheim.com;Tried curl here are the results
+C:\TOOLS>curl -X PUT -k --verbose --user ""system:password"" --data @C:/TOOLS/94331.json http://capry:8080/api/data*   Trying 10.183.178.68...* TCP_NODELAY set* Connected to capry (10.183.178.68) port 8080 (#0)* Server auth using Basic with user 'system'> PUT /api/data HTTP/1.1> Host: capry:8080> Authorization: Basic c3lzdGVtOnBhc3N3b3Jk> User-Agent: curl/7.53.1> Accept: */*> Content-Length: 3767> Content-Type: application/x-www-form-urlencoded> Expect: 100-continue>< HTTP/1.1 100 Continue< HTTP/1.1 403 Forbidden< Server: Apache-Coyote/1.1< Content-Type: text/html;charset=utf-8< Content-Language: en< Content-Length: 961< Date: Fri, 24 Mar 2017 14:21:29 GMT* HTTP error before end of send, stop sending<<html><head><title>Apache Tomcat/7.0.57 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR{color : #525D76;}--></style> </head><body><h1>HTTP Status 403 - </h1><HR size=""1"" noshade=""noshade""><p><b>type</b> Status report</p><p><b>message</b> <u></u></p><p><b>description</b> <u>Access to the specified resource has been forbidden.</u></p><HR size=""1"" noshade=""noshade""><h3>Apache Tomcat/7.0.57</h3></body></html>* Closing connection 0"	"27/Mar/17 8:29 AM;cst;Hello Mr. Siebel,
+
+I talked with our lead developer and is it possbile that we call you at 2:00 PM?
+
+Additionally we need the log files like in your message above described:
+ * iteraplan log file (its location is configured in the iteraplan application’s file WEB-INF/classes/log4j.properties, and it is usually called iteraplan-[version].log)
+ * tomcat access logs
+ * BonCode log files (assuming you are using the IIS + BonCode combination together with iteraplan). A description how to configure BonCode to write more detailed log files can be found in the last paragraph of our documentation for Single Sign On configuration: [https://doc.iteraplan.de/display/iteraplan55/Single+Sign+On]
+
+A mail with the current information was sended to you too. 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"27/Mar/17 11:30 AM;stephan.siebel@boehringer-ingelheim.com;USER FOR INTERFACE IS X2IASJOB
+
+[^iteraplan-5.5.0-login.csv] _(118 kB)_
+
+[^iteraplan-5.5.0.log] _(14 kB)_
+
+[^catalina.2017-03-27.log] _(1,32 MB)_
+
+[^localhost_access_log.2017-03-27.txt] _(443 kB)_
+
+[^tomcat7-stderr.2017-03-23.log] _(5,52 MB)_"	"27/Mar/17 12:49 PM;stephan.siebel@boehringer-ingelheim.com;BONCODE LOG WAS TO BIG THERFORE AN EXTRACT
+2017-03-27 12:26:30 New Connection 1 of 200 to tomcat: ::1:8009 ID: 6 [T-5]2017-03-27 12:26:30 BonCodeAJP13.ServerPackets.BonCodeAJP13ForwardRequest PUT /api/data 585 bytes < appl-physical-path : C:\inetpub\wwwroot\ < Content-Length : 19 < Content-Type : application/x-www-form-urlencoded < gateway-interface : CGI/1.1 < https : off < instance-id : 1 < local-addr : 10.183.178.185 < path-info : /api/data < remote-port : 58178 < script-name : /api/data < server-name : capryq < server-port : 80 < server-port-secure : 0 < server-protocol : HTTP/1.1 < server-software : Microsoft-IIS/7.5 < url : /api/data < Accept : */* < Host : capryq < User-Agent : curl/7.53.1 begin of packet ====> Type:18User Data High:52User Data Low:2E?? ?HTTP/1.1   /api/data  ?172.31.7.74  ?172.31.7.74  ?capryq  P  ? ?xajp-path-info     ?xajp-managedthreadid  ?5  ?appl-physical-path  ?C:\inetpub\wwwroot\ �? ?19 �? !application/x-www-form-urlencoded  ?gateway-interface  ?CGI/1.1  ?https  ?off  ?instance-id  ?1  local-addr  ?10.183.178.185   path-info   /api/data  ?remote-port  ?58178  ?script-name   /api/data  ?server-name  ?capryq  ?server-port  ?80  ?server-port-secure  ?0  ?server-protocol  ?HTTP/1.1  ?server-software  ?Microsoft-IIS/7.5  ?url   /api/data �? ?*/* �? ?capryq �? ?curl/7.53.1  ?AJP_REMOTE_PORT  ?55288  <==== end of packet2017-03-27 12:26:30 BonCodeAJP13.ServerPackets.BonCodeAJP13ForwardRequest   25 bytes begin of packet ====> Type:18User Data High:52User Data Low:0? ?C:/TOOLS/94331.jso <==== end of packet2017-03-27 12:26:30 BonCodeAJP13.TomcatPackets.TomcatSendHeaders 60 bytes > Content-Type : text/html;charset=utf-8 > Content-Language : en > Content-Length : 961 begin of packet ====> Type:4User Data High:1User Data Low:147  Forbidden  ?�? ?text/html;charset=utf-8 �? ?en �? ?961 <==== end of packet2017-03-27 12:26:30 BonCodeAJP13.TomcatPackets.TomcatSendBodyChunk  965 bytes begin of packet ====> Type:3User Data High:3User Data Low:193<html><head><title>Apache Tomcat/7.0.57 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 403 - </h1><HR size=""1"" noshade=""noshade""><p><b>type</b> Status report</p><p><b>message</b> <u></u></p><p><b>description</b> <u>Access to the specified resource has been forbidden.</u></p><HR size=""1"" noshade=""noshade""><h3>Apache Tomcat/7.0.57</h3></body></html> <==== end of packet2017-03-27 12:26:30 BonCodeAJP13.TomcatPackets.TomcatEndResponse  2 bytes begin of packet ====> Type:5?? <==== end of packet2017-03-27 12:26:30 Failed Nothing received from the tomcat. Closing the Connection.2017-03-27 12:26:30 1.0.20 ERROR TCP Client level -- Server/Port:localhost/8009connection between Tomcat and IIS experienced error. Please check log. Failed:Nothing received from the tomcat. Closing the Connection.   at BonCodeAJP13.BonCodeAJP13ServerConnection.ConnectionError(String message, String messageType)   at BonCodeAJP13.BonCodeAJP13ServerConnection.ComunicateWithTomcat()   at BonCodeAJP13.BonCodeAJP13ServerConnection.HandleConnection()   at BonCodeAJP13.BonCodeAJP13ServerConnection.p_CreateConnection(BonCodeAJP13PacketCollection packetsToSend)2017-03-27 12:26:30 One Connection raised an error2017-03-27 12:32:39 New Connection 2 of 200 to tomcat: ::1:8009 ID: 7 [T-5]2017-03-27 12:32:39 BonCodeAJP13.ServerPackets.BonCodeAJP13ForwardRequest PUT /api/data 638 bytes < appl-physical-path : C:\inetpub\wwwroot\ < Content-Length : 0 < Content-Type : application/x-www-form-urlencoded < gateway-interface : CGI/1.1 < https : off < instance-id : 1 < local-addr : 10.183.178.185 < path-info : /api/data < remote-port : 58242 < script-name : /api/data < server-name : capryq < server-port : 80 < server-port-secure : 0 < server-protocol : HTTP/1.1 < server-software : Microsoft-IIS/7.5 < url : /api/data < Accept : */* < Authorization : NTLM TlRMTVNTUAABAAAABoIIAAAAAAAAAAAAAAAAAAAAAAA= < Host : capryq < User-Agent : curl/7.53.1 begin of packet ====> Type:18User Data High:52User Data Low:2z?? ?HTTP/1.1   /api/data  ?172.31.7.74  ?172.31.7.74  ?capryq  P  ? ?xajp-path-info     ?xajp-managedthreadid  ?5  ?appl-physical-path  ?C:\inetpub\wwwroot\ �? ?0 �? !application/x-www-form-urlencoded  ?gateway-interface  ?CGI/1.1  ?https  ?off  ?instance-id  ?1  local-addr  ?10.183.178.185   path-info   /api/data  ?remote-port  ?58242  ?script-name   /api/data  ?server-name  ?capryq  ?server-port  ?80  ?server-port-secure  ?0  ?server-protocol  ?HTTP/1.1  ?server-software  ?Microsoft-IIS/7.5  ?url   /api/data �? ?*/* �? 1NTLM TlRMTVNTUAABAAAABoIIAAAAAAAAAAAAAAAAAAAAAAA= �? ?capryq �? ?curl/7.53.1  ?AJP_REMOTE_PORT  ?55292  <==== end of packet2017-03-27 12:32:39 BonCodeAJP13.TomcatPackets.TomcatSendHeaders 60 bytes > Content-Type : text/html;charset=utf-8 > Content-Language : en > Content-Length : 961 begin of packet ====> Type:4User Data High:1User Data Low:147  Forbidden  ?�? ?text/html;charset=utf-8 �? ?en �? ?961 <==== end of packet2017-03-27 12:32:39 BonCodeAJP13.TomcatPackets.TomcatSendBodyChunk  965 bytes begin of packet ====> Type:3User Data High:3User Data Low:193<html><head><title>Apache Tomcat/7.0.57 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 403 - </h1><HR size=""1"" noshade=""noshade""><p><b>type</b> Status report</p><p><b>message</b> <u></u></p><p><b>description</b> <u>Access to the specified resource has been forbidden.</u></p><HR size=""1"" noshade=""noshade""><h3>Apache Tomcat/7.0.57</h3></body></html> <==== end of packet2017-03-27 12:32:39 BonCodeAJP13.TomcatPackets.TomcatEndResponse  2 bytes begin of packet ====> Type:5?? <==== end of packet"	"27/Mar/17 3:26 PM;cst;Thank your for the call.
+
+It is possible to create a slim version of our current script for our second session? 
+We need for our tests only one""put"". 
+
+Then we have a smaller Error-Log and this saves time for analysing.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	29/Mar/17 10:00 AM;stephan.siebel@boehringer-ingelheim.com;after the exchange of the applicationContext-spring-security.xml the interactive client didn't shown any data	"29/Mar/17 11:54 AM;cst;Dear Mr. Siebel, 
+
+what for a error occurs in the browser console, the catalina and iteraplan.logs? 
+A reason for white page in the interactive client can be cache problem with the browser too.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"29/Mar/17 12:00 PM;clemens.utschig-utschig@boehringer-ingelheim.com;500 internals server error ...
+
+Failed to load resource: the server responded with a status of 500 (Internal Server Error)http://capry/iteraplan/api/user/settings Failed to load resource: the server responded with a status of 500 (Internal Server Error)"	"29/Mar/17 12:55 PM;cst;Could you send me please the iteraplan and the catalina.log with the timestamp the error appears.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	29/Mar/17 12:56 PM;stephan.siebel@boehringer-ingelheim.com;after dismantling the provided solution from Mr.Zoltan for the interactive client (spezial request from Mr.Utschig Utschig) the system is now able to work with the interfaces and also start the interactive client																																

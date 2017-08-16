@@ -1,0 +1,1 @@
+Field Wrapper für Date erstellen	Z.B. in http://localhost:8080/csTargetValue/create / http://localhost:8080/csTargetValue/edit/1 wird die Date-Auswal unter und nicht neben dem Label angezeigt.		Bug	OpenSpeedMonitor	12/May/16 10:56 AM	12/May/16 4:20 PM																																																																				

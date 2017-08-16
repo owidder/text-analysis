@@ -1,0 +1,91 @@
+Abfrage (egal ob neu oder bestehend) zu speichern, tritt reproduzierbar diese Fehlermeldung	"Guten Tag iteratec support Team
+
+Beim Versuch, eine Abfrage (egal ob neu oder bestehend) zu speichern, tritt reproduzierbar diese Fehlermeldung auf:
+
+Freundliche Grüsse
+
+Peter Sniaschek"		Fault	iteraplan Support	09/Aug/16 8:29 AM	22/Aug/16 3:50 PM														"09/Aug/16 8:29 AM;beu-unix@visana.ch;
+
+!2016-08-08 11_29_53-Fehlerseite - iteraplan.png|thumbnail!
+
+[^ProblemReport_2016-08-08_112721.zip] _(10 kB)_"	"09/Aug/16 9:30 AM;cst;Sehr geehrter Herr Sniaschek,
+
+vielen Dank für Ihre Anfrage.
+
+Die von Ihnen geschickten Fehler-Logs wurden geprüft und die Ursache ist der ""ojdbc""-Treiber.
+Würden Sie bitte folgendes prüfen:
+
+https://www.iteraplan.de/doc/pages/viewpage.action?pageId=8126806 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"22/Aug/16 2:33 PM;beu-unix@visana.ch;Guten Tag Herr Stangl
+
+Der OJDBC Driver existiert.
+{code}
+/opt/iteraplan_tomcat # find . -name ""ojdbc6.jar""
+./lib/ojdbc6.jar
+{code}
+
+Beste Grüsse
+Marc Barth"	"22/Aug/16 2:44 PM;cst;Sehr geehrter Herr Barth,
+
+vielen Dank für Ihre Antwort.
+
+Würden Sie mir bitte mitteilen, welche Oracle Version bei Ihnen im Einsatz ist. 
+
+Das von Ihnen beschriebene Verhalten, ist wie oben beschrieben, auf ein Problem zwischen Treiber und Datenbank zurück zu führen. 
+Haben Sie schon versucht, den Treiber erneut herunterzuladen und diesen test-weise auszutauschen? 
+
+Wichtig dabei ist, das der Treiber direkt in der ""lib"" des Tomcat Servers zu finden ist und nicht im ""lib"" der iteraplan Instanz. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"22/Aug/16 3:12 PM;beu-unix@visana.ch;Guten Tag
+
+Iterplan wurde von ORACLE_11_2_0_4 auf ORACLE_12_1_0_2 migriert.
+Das File ojdbc6.jar entspricht der Version von Oracle welche mit 12.1.0.2 kompatibel ist: http://www.oracle.com/technetwork/database/features/jdbc/default-2280470.html
+
+Grüsse
+Marc Barth
+"	22/Aug/16 3:13 PM;beu-unix@visana.ch;Wie schon erwähnt ist die Datei zu finden im Folder /opt/iteraplan_tomcat/lib. Könnte es sein das diese sonst irgendwo vorhanden sein muss?	"22/Aug/16 3:20 PM;cst;Sehr geehrter Herr Barth,
+
+Um den Vorgang weiter prüfen zu können, benötigen wir folgende Dateien.
+
+Aus dem conf-Verzeichnis Ihrer Tomcat-Installation:
+
+•	server.xml
+•	web.xml
+
+Die catalina.out und localhost.log Logdateien Ihrer Tomcat-Installation aus dem Zeitraum, in dem der Fehler aufgetreten ist.
+
+Aus [Tomcat]/webapps/[iteraplan Installationsverzeichnis]/WEB-INF:
+•	Sämtliche Dateien, deren Name mit applicationContext beginnt.
+
+Aus [Tomcat]/webapps/[iteraplan Installationsverzeichnis]/WEB-INF/classes:
+•	log4j.properties
+
+Aus [Tomcat]/webapps/[iteraplan Installationsverzeichnis]/META-INF:
+•	context.xml (Die Datei kann Passwörter enthalten, bitte entfernen oder verfremden)
+
+Die iteraplan Logdatei bzw. Dateien aus dem Zeitraum, in dem der Fehler aufgetreten ist. Diese Dateien tragen üblicherweise den Namen iteraplan-[version].log (für den aktuellen Tag) bzw. iteraplan-[version].log.[TIMESTAMP] für vergangene Tage. Der Ablageort dieser Logdateien wurde bei der iteraplan-Installation angegeben und kann bei Bedarf in der Datei log4j.properties nachgesehen werden.
+
+Die iteraplan System-Info. Diese kann von iteraplan-Benutzern mit der Rolle „iteraplan_Supervisor“ direkt von der iteraplan-Oberfläche unter dem Menüpunkt Administration->Konfiguration abgerufen werden.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"22/Aug/16 3:35 PM;beu-unix@visana.ch;Guten Tag
+
+Bitte um Entschuldigung. 
+Hab gerade bemerkt das dieser Case inzwischen gelöst wurde durch den neuen ojdbc6 driver.
+Der Fehler tratt ja schon am 9. August auf.
+
+Wir haben letzte Woche einen neuen Case eröffnet. Ich habe gemeint es handle sich um diesen Case.
+
+Nichts für Ungut & Beste Grüsse
+Marc Barth"	"22/Aug/16 3:35 PM;beu-unix@visana.ch;Guten Tag
+
+Diese Case können sie schliessen.
+
+Grüsse
+Marc Barth"																																														

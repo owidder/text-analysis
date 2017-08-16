@@ -1,0 +1,19 @@
+LATER: Hide and Show Sections	"*Summary:*
+
+Hide and show sections
+
+
+
+*Implementation Details:*
+
+* Intially all sections are shown
+
+* By clicking on the title the section is shown or hidden (toggle button)
+
+* Insert an icon left of the title to indicate that it is possible to show/hide
+
+* Sections where this is applied: Attribute Groups, Self-Relation-Groups and Relation-Groups
+
+* The showing or hiding of section is saved to the url"		New Feature	iteraplan Speedbird	07/Oct/16 11:36 AM	24/Oct/16 3:02 PM														"24/Oct/16 2:08 PM;mada;After refresh page or open one in new tab icon arrow is incorrect, for hide section shows as for open.
+
+See screenshot."	24/Oct/16 2:30 PM;roia;fixed in the revision 4797 along with the other task																																																					

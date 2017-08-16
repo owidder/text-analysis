@@ -1,0 +1,43 @@
+Benutzergruppe "_JIRA_Stuttgart_Mitarbeiter" anlegen	"Servus, die Stuttgarter Kollegen haben mehrere Projekte, welche alle Stuttgarter sehen können sollen, also alle iteratecler, alle kobaltblauen, und auch die dortigen Studenten.
+
+
+
+Da es keine entsprechende AD-Gruppe gibt, bitte ich darum, die obige Gruppe anzulegen. Die zuzuordnenden Mitarbeiter sind alle Mitarbeiter aus den jetzigen Email-Verteilern 
+
+
+
+•	iteratec-str <iteratec-str@iteratec.de>; 
+
+•	iteratec-str-studenten <iteratec-str-studenten@iteratec.de>; 
+
+•	kobaltblau-str kobaltblau-str@kobaltblau.de
+
+
+
+Geht das?"		Task	Infrastruktur	20/Jul/17 5:03 PM	24/Jul/17 4:33 PM	Sonstiges				Active-Directory									"21/Jul/17 10:57 AM;kti;Hallo Thorsten,
+
+
+
+ich überlege gerade, ob es sinnvoll ist, eine neue AD-Gruppe iteratec-str anzulegen und zukünftig diese Gruppe gleich bei Neueintritten zu befüllen.
+
+Wir haben das auch schon für München. Dann wäre das einheitlich und wir haben wirklich alle Standordmitarbeiter in der Gruppe hinterlegt und können die auch für zukünftige Berechtigungen nutzen. Sonst muss jemand den Hut auf haben, um die JIRA-Gruppe zu pflegen.
+
+Was meinst du?"	"21/Jul/17 11:04 AM;tgo;Hatte ich auch überlegt, allerdings sollen in dieser Gruppe auch alle Kobaltblauen und die Studenten enthalten sein. Bei iteratec-muc sind ja definitiv eben nicht die Studenten enthalten und auch nicht die Koboaltblauen.
+
+
+
+Kann eine Gruppe eine andere Gruppe beinhalten? Also so etwas wie ""_JIRA_Stuttgart_Mitarbeiter"" besteht aus ""iteratec-str"", ""iteratec-str-students"" und ""kobaltblau-str""? Das wäre die sauberste Lösung."	"24/Jul/17 4:33 PM;kti;Hallo Thorsten,
+
+
+
+ich habe jetzt auch dahingehend unser AD aufgeräumt und die Standortgruppen definiert.
+
+
+
+Wie gewünscht habe ich jetzt die Gruppe _JIRA_Stuttgart_Mitarbeiter angelegt.
+
+
+
+Viele Grüße
+
+Kathrin"																																																				

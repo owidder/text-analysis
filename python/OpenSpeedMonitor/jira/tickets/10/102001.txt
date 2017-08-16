@@ -1,0 +1,561 @@
+myAudi WebEx für 25 Personen aufsetzen	Muss anscheinend gelöscht und neu aufgesetzt werden. Upgrade auf 25 Benutzer von 8 Benutzern funktioniert einfach nicht.		Task	Infrastruktur	08/Nov/16 4:57 PM	13/Feb/17 11:37 AM	Sonstiges													"18/Nov/16 8:42 AM;tgo;Wurde gelöscht und neu aufgesetzt. Die Beschränkung bleibt. Support angerufen. Nach einem Tag kam eine Rückmeldung:
+
+
+
+-----Ursprüngliche Nachricht-----
+
+Von: Cisco WebEx Support [mailto:webex.caseupdate@external.cisco.com] 
+
+Gesendet: Donnerstag, 17. November 2016 15:24
+
+An: Thorsten Göckeler <Thorsten.Goeckeler@iteratec.de>
+
+Betreff: WebEx Support Request: HD0009309015 [ ref:_00DU0LgEw._5000BYvQm9:ref ]
+
+
+
+Sehr geehrter Herr Goeckeler, 
+
+
+
+im Anschluss an unser Telefongespräch nun meine Frage: 
+
+Passiert das mit ein und demselben Meeting oder immer mit unterschiedlichen Meetings, dass nicht mehr als 8 Leute teilnehmen können. 
+
+Und mein zweiter Vorschlag wäre, dass Sie alle Dateien, die hochgeladen sind, löschen oder irgendwo anders runterladen, denn manchmal machen die auch Probleme. 
+
+
+
+Sollten Sie noch weitere Fragen haben, stehe ich Ihnen selbstverständlich gerne zur Verfügung.
+
+
+
+
+
+Mit freundlichen Grüßen / Kind regards,
+
+
+
+Nora Pavlova
+
+Technical Support
+
+DE: +49 (0)811 554 3558
+
+webex_kundendienst@cisco.com
+
+===============================================================
+
+
+
+Subject Customer has changed from Premium 8 to Premium 25, they purchased it in August. Unfortunately they can't make meetings with more than 8 people, but they can send invitations to more than 8.     
+
+Description Customer has changed from Premium 8 to Premium 25, they purchased it in August. Unfortunately they can't make meetings with more than 8 people, but they can send invitations to more than 8.
+
+"	"18/Nov/16 8:42 AM;tgo;Von: Thorsten Göckeler 
+
+Gesendet: Donnerstag, 17. November 2016 17:07
+
+An: 'Cisco WebEx Support' <webex.caseupdate@external.cisco.com>
+
+Betreff: AW: WebEx Support Request: HD0009309015 [ ref:_00DU0LgEw._5000BYvQm9:ref ]
+
+
+
+Sehr geehrte Frau Pavlova,
+
+
+
+es passiert mit allen Meetings. Im Moment haben wir überhaupt kein Meeting geplant. Wenn wir es neu ansetzen, wird uns bescheinigt nur 8 Teilnehmer einladen zu können. Außerdem haben wir überhaupt keine Dateien hochgeladen, insofern können wir auch keine löschen.
+
+
+
+Dementsprechend können wir das System nur eingeschränkt nutzen bzw. nicht im zugesicherten Rahmen.
+
+
+
+Fragen habe ich nur eine: Am Montag muss die Konferenz laufen. Bekommen Sie das hin?
+
+
+
+Mit besten Grüßen,
+
+
+
+Thorsten Göckeler
+
+"	"18/Nov/16 9:51 AM;tgo;-----Ursprüngliche Nachricht-----
+
+Von: Cisco WebEx Support [mailto:webex.caseupdate@external.cisco.com] 
+
+Gesendet: Freitag, 18. November 2016 09:21
+
+An: Thorsten Göckeler <Thorsten.Goeckeler@iteratec.de>
+
+Betreff: RE: AW: WebEx Support Request: HD0009309015 [ ref:_00DU0LgEw._5000BYvQm9:ref ]
+
+
+
+Sehr geehrter Herr Goeckeler, 
+
+
+
+danke für die schnelle Rückmeldung.
+
+Ich hätte da folgenden Vorschlag für Sie: auf unserer Homepage /www.webex.de/ haben Sie die Möglichkeit so einen Basic-Account zu buchen, der ist kostenfrei für 2 Wochen und ist praktisch wie Premium 25, hat also die gleichen Funktionen. Das können Sie noch heute machen, damit Sie am Montag problemlos das Meeting abhalten können. 
+
+Die andere Möglichkeit wäre, dass ich den Fall eskaliere an unser Second Level Technical Team, das kann dann aber ziemlich lange dauern und ich kann Ihnen nicht versprechen, dass es bis Montag wieder funktioniert. 
+
+
+
+Sollten Sie noch weitere Fragen haben, stehe ich Ihnen selbstverständlich gerne zur Verfügung.
+
+
+
+
+
+Mit freundlichen Grüßen / Kind regards,
+
+
+
+Nora Pavlova
+
+Technical Support
+
+DE: +49 (0)811 554 3558
+
+webex_kundendienst@cisco.com
+
+"	"18/Nov/16 9:57 AM;tgo;Von: Thorsten Göckeler 
+
+Gesendet: Donnerstag, 17. November 2016 17:07
+
+An: 'Cisco WebEx Support' <webex.caseupdate@external.cisco.com>
+
+Betreff: AW: WebEx Support Request: HD0009309015 [ ref:_00DU0LgEw._5000BYvQm9:ref ]
+
+
+
+Sehr geehrte Frau Pavlova,
+
+
+
+es passiert mit allen Meetings. Im Moment haben wir überhaupt kein Meeting geplant. Wenn wir es neu ansetzen, wird uns bescheinigt nur 8 Teilnehmer einladen zu können. Außerdem haben wir überhaupt keine Dateien hochgeladen, insofern können wir auch keine löschen.
+
+
+
+Dementsprechend können wir das System nur eingeschränkt nutzen bzw. nicht im zugesicherten Rahmen.
+
+
+
+Fragen habe ich nur eine: Am Montag muss die Konferenz laufen. Bekommen Sie das hin?
+
+
+
+Mit besten Grüßen,
+
+
+
+Thorsten Göckeler
+
+"	"18/Nov/16 5:23 PM;tgo;Hallo Frau Pavlova,
+
+
+
+dann werde ich das erst einmal so machen und mit zwei Accounts arbeiten damit die Meetings angesetzt werden können. Innerhalb der nächsten beiden Wochen löst sich das Problem ja notfalls. Ich habe im aktuellen Premium-Konto alle Konferenzen bis auf eine heute Vormittag gelöscht.
+
+
+
+Notfalls können wir auch das bestehende Konto löschen, und als Premium 25-Konto neu anlegen, solange keine weiteren Kosten damit verbunden sind.
+
+
+
+Vielen Dank und frohes Schaffen,
+
+
+
+Thorsten Göckeler
+
+____________________________________________________
+
+Thorsten Göckeler
+
+
+
+iteratec GmbH
+
+Inselkammerstraße 4
+
+82008 München-Unterhaching
+
+
+
+email: thorsten.goeckeler@iteratec.de
+
+phone: +49 89 614551 314  fax: -10
+
+http://www.iteratec.de
+
+http://twitter.com/iteratec
+
+____________________________________________________
+
+Sitz und Registergericht der iteratec GmbH: München HRB 113 519
+
+Geschäftsführer: Klaus Eberhardt, Mark Goerke
+
+
+
+
+
+
+
+
+
+-----Ursprüngliche Nachricht-----
+
+Von: Cisco WebEx Support [mailto:webex.caseupdate@external.cisco.com] 
+
+Gesendet: Freitag, 18. November 2016 09:21
+
+An: Thorsten Göckeler <Thorsten.Goeckeler@iteratec.de>
+
+Betreff: RE: AW: WebEx Support Request: HD0009309015 [ ref:_00DU0LgEw._5000BYvQm9:ref ]
+
+
+
+Sehr geehrter Herr Goeckeler, 
+
+
+
+danke für die schnelle Rückmeldung.
+
+Ich hätte da folgenden Vorschlag für Sie: auf unserer Homepage /www.webex.de/ haben Sie die Möglichkeit so einen Basic-Account zu buchen, der ist kostenfrei für 2 Wochen und ist praktisch wie Premium 25, hat also die gleichen Funktionen. Das können Sie noch heute machen, damit Sie am Montag problemlos das Meeting abhalten können. 
+
+Die andere Möglichkeit wäre, dass ich den Fall eskaliere an unser Second Level Technical Team, das kann dann aber ziemlich lange dauern und ich kann Ihnen nicht versprechen, dass es bis Montag wieder funktioniert. 
+
+
+
+Sollten Sie noch weitere Fragen haben, stehe ich Ihnen selbstverständlich gerne zur Verfügung.
+
+
+
+
+
+Mit freundlichen Grüßen / Kind regards,
+
+
+
+Nora Pavlova
+
+Technical Support
+
+DE: +49 (0)811 554 3558
+
+webex_kundendienst@cisco.com
+
+"	"18/Nov/16 5:25 PM;tgo;Servus Jungs,
+
+
+
+Cisco hat uns zwar das Geld für 25 Teilnehmer abgeluchst, aber liefern tun sie nur 8 Teilnehmer. Damit sie da umstellen können ist momentan keine WebEx-Konferenz aktiv. Ich werde am Montag eine Ersatzkonferenz einrichten mit einem Testkonto, ich hoffe, das ist okay für Euch.
+
+
+
+Schönes Wochenende, Thorsten
+
+"	"21/Nov/16 11:08 AM;tgo;Sehr geehrter Herr Goeckeler, 
+
+
+
+danke für Ihre schnelle Rückmeldung. 
+
+Vielleicht habe ich mich falsch ausgedrückt, wofür ich mich entschuldige. 
+
+Wir bekommen jeden Tag eine Menge an Anrufen und E-Mails, die werden dann bei uns im System Tickets genannt und als solche registriert. Meine Idee war, dass Sie sich nach 1-2 Wochen jederzeit wieder mit uns in Verbindung setzen können, falls es irgendein Problem mit WebEx gibt. Dieses Problem wird dann erneut als Ticket registriert und geht in unser System rein. Außerdem haben wir unsere Datenbank, wo alle Tickets gespeichert werden, d. h. wir können ganz leicht auf Informationen aus der Vergangenheit zurückgreifen. Deswegen benutzen wir den Ausdruck ""Ticket schließen"". 
+
+
+
+Sollten Sie noch weitere Fragen haben, stehe ich Ihnen selbstverständlich gerne zur Verfügung.
+
+
+
+
+
+Mit freundlichen Grüßen / Kind regards,
+
+
+
+Nora Pavlova
+
+Technical Support
+
+DE: +49 (0)811 554 3558
+
+webex_kundendienst@cisco.com
+
+======================================================================
+
+
+
+--------------- Original Message ---------------
+
+From: Thorsten Göckeler [thorsten.goeckeler@iteratec.de]
+
+Sent: 11/21/2016 1:37 AM
+
+To: webex.caseupdate@external.cisco.com
+
+Subject: AW: AW: AW: WebEx Support Request: HD0009309015    [ ref:_00DU0LgEw._5000BYvQm9:ref ]
+
+
+
+Hallo Frau Pavlova,
+
+
+
+wenn Sie das Ticket jetzt schließen, wer kümmert sich dann darum, dass das Premium-25-Konto tatsächlich ein Konto mit 25 Teilnehmern wird? 
+
+
+
+Der Basic-Account ist zwar jetzt eingerichtet, aber auch nur ein Workaround für die nächsten beiden Wochen.
+
+
+
+Vielen Dank für eine Rückmeldung, und mit besten Grüßen,
+
+
+
+
+
+Thorsten Göckeler
+
+____________________________________________________
+
+Thorsten Göckeler
+
+
+
+iteratec GmbH
+
+Inselkammerstraße 4
+
+82008 München-Unterhaching
+
+
+
+email: thorsten.goeckeler@iteratec.de
+
+phone: +49 89 614551 314  fax: -10
+
+http://www.iteratec.de
+
+http://twitter.com/iteratec
+
+____________________________________________________
+
+Sitz und Registergericht der iteratec GmbH: München HRB 113 519
+
+Geschäftsführer: Klaus Eberhardt, Mark Goerke
+
+
+
+-----Ursprüngliche Nachricht-----
+
+Von: Cisco WebEx Support [mailto:webex.caseupdate@external.cisco.com] 
+
+Gesendet: Montag, 21. November 2016 10:32
+
+An: Thorsten Göckeler <Thorsten.Goeckeler@iteratec.de>
+
+Betreff: RE: AW: AW: WebEx Support Request: HD0009309015 [ ref:_00DU0LgEw._5000BYvQm9:ref ]
+
+
+
+Sehr geehrter Herr Goeckeler, 
+
+
+
+danke für Ihre Rückmeldung. 
+
+Ja, so sollte es gehen mit dem Basic-Account für 2 Wochen. 
+
+Ich werde das Ticket somit bei uns im System schließen. 
+
+
+
+Wenn Sie weiterhin Probleme mit dem Premium 25-Konto haben sollten, können Sie sich selbstverständlich  wieder bei uns melden, damit wir gemeinsam nach anderen Lösungsvorschlägen suchen. 
+
+
+
+Einen schönen Tag noch!
+
+
+
+
+
+Mit freundlichen Grüßen / Kind regards,
+
+
+
+Nora Pavlova
+
+Technical Support
+
+DE: +49 (0)811 554 3558
+
+webex_kundendienst@cisco.com
+
+======================================================================="	08/Dec/16 3:03 PM;tgo;Meldung an Elke: Geld zurückfordern!	26/Jan/17 2:15 PM;tgo;Meldung an Elke ist jetzt erfolgt, der letzte Eintrag vom Support auch.	"26/Jan/17 2:58 PM;tgo;Hallo Thorsten, laut Protokoll hat gestern ein Meeting mit 10 Teilnehmern stattgefunden. Hat das auch für alle funktioniert?
+
+Ich möchte das wissen, wenn mich der Support kontaktiert.
+
+
+
+Grüße, Elke"	"26/Jan/17 3:36 PM;tgo;Rückmeldungen von Elke:
+
+
+
+Hallo Thorsten, ... ich habe heute schon mit dem Support telefoniert, sie überprüfen den Account nochmal. Ich halte dich auf dem Laufenden bzw. ich beiße denen jetzt solange in die Waden, bis was passiert. Habt ihr das zwischenzeitlich tatsächlich nochmal mit mehr als 8 teilnehmern getestet? Wann? Ich frage nur, damit ich Antworten habe, wenn die mich fragen....
+
+
+
+...
+
+
+
+Ich frage mich nur, warum im Protokoll dann 9 eingeladene und 10 tatsächliche Teilnehmer für gestern drinstehen?
+
+"	"26/Jan/17 3:38 PM;tgo;Mail bzgl. Auftreten in den letzten Wochen:
+
+
+
+Hallo Elke, im Prinzip alle zwei Wochen, das letzte Mal gestern. Nur das am gestrigen Tage die Kunden fast alle abgesagt haben, also sich nicht eingewählt haben. In zwei Wochen sieht das anders aus. Das letzte und vorletzte Treffen war dadurch geprägt, dass sich nicht alle einwählen konnten. Davor haben wir die Workarounds genommen, d.h. eine Serie von Triallizensen.
+
+"	"26/Jan/17 3:39 PM;tgo;Mail bzgl. 10 angezeigten Teilnehmern:
+
+
+
+Hallo Elke, man kann beliebige viele Teilnehmer einladen, bekommt dann immer eine Warnung ab dem 9. Teilnehmer. Tatsächlich teilgenommen haben gestern nur 6 (Teilnahme | Online teilgenommen). Wenn es 8 Teilnehmer gewesen wären, dann wird der 9. Teilnehmer ablehnt.
+
+
+
+Traue keiner Statistik, die Du nicht selber gefälscht hast. ;-)
+
+"	"02/Feb/17 2:42 PM;tgo;Rückmeldung vom 27.01.17:
+
+
+
+-----Ursprüngliche Nachricht-----
+
+Von: Cisco WebEx Support [mailto:webex.caseupdate@external.cisco.com] 
+
+Gesendet: Freitag, 27. Januar 2017 17:00
+
+An: myaudi.support <myaudi.support@iteratec.de>; Administratoren <admins@iteratec.de>
+
+Betreff: WebEx Support Request: HD0009404139 [ ref:_00DU0LgEw._5000Ba3AK4:ref ]
+
+
+
+Dear Elke,
+
+
+
+My name is Raheela, with the Cisco WebEx Corporate Support Team. Your concerns have been escalated to me to ensure they are addressed with the appropriate level of care, attention and action.
+
+
+
+I understand that you are unable to invite more than 8 participants to the meeting though you have upgraded the account to Meeting Center 25.
+
+
+
+I am working with the backend team to get the issue resolved, as soon as I have an update I will keep you posted.
+
+
+
+Thanks,
+
+Raheela
+
+UA-Escalation
+
+CISCO Webex
+
+Escalations Team
+
+Working time: 10.30pm to 7.30am PST
+
+Phone: +1 408-570-4730
+
+"	"03/Feb/17 4:33 PM;tgo;Rückmeldung vom 03.02.17:
+
+
+
+Hallo Thorsten,
+
+
+
+zu deiner Information. Bitte überprüfen und mir Rückmeldung geben, ob sich das dann erledigt hat....oder ob ich weiter dranbleiben muss.
+
+
+
+Grüße, Elke
+
+
+
+-----Ursprüngliche Nachricht-----
+
+Von: Cisco WebEx Support [mailto:webex.caseupdate@external.cisco.com] 
+
+Gesendet: Donnerstag, 2. Februar 2017 18:36
+
+An: myaudi.support <myaudi.support@iteratec.de>; Administratoren <admins@iteratec.de>
+
+Betreff: RE: WebEx Support Request: HD0009404139 [ ref:_00DU0LgEw._5000Ba3AK4:ref ]
+
+
+
+Hello,
+
+
+
+I have made the changes to your account. Please verify the fix.
+
+
+
+Best Regards,
+
+
+
+Matt Kerestes
+
+
+
+--------------- Original Message ---------------
+
+From: Cisco WebEx Support [webex.caseupdate@external.cisco.com]
+
+Sent: 2/2/2017 6:16 AM
+
+To: myaudi.support@iteratec.de; admins@iteratec.de
+
+Subject: RE: WebEx Support Request: HD0009404139    [ ref:_00DU0LgEw._5000Ba3AK4:ref ]
+
+
+
+Hello,
+
+
+
+My name is Matt Kerestes and I am the Cloud Support Engineer investigating your case ID HD0009404139. I have received the request to change your account to make sure MC is set to the proper settings. Please give me some time to complete the whole process. I will reach out as soon as this has been completed.
+
+
+
+Best Regards,
+
+
+
+Matt Kerestes
+
+"	13/Feb/17 11:36 AM;tgo;Ja, es funktioniert jetzt! Zumindest lässt sich eine Konferenz mit mehr als 8 Teilnehmer ohne Probleme einrichten.																																							

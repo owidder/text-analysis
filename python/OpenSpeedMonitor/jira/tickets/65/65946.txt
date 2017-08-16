@@ -1,0 +1,35 @@
+Remove Hibernate Entity from serialized beans.	"If a Hibernate entity is serialized as a part of a presentation-level bean, this can lead to SQL queries with joins over too many tables.
+
+
+
+Notes from the analysis during the Hibernate upgrade: ask [~gph].
+
+
+
+Even if the problem can be avoided by setting a system property, the basic problem is that view state must not contain persistent entities directly.
+
+
+
+Cut this dependency by
+
+* transient fields
+
+* fields with the ID of entities
+
+* resolving the object reference by the ID after deserialization (maybe lazy)
+
+
+
+Do this AT LEAST for the BBT as part of the Saved Query.
+
+Look for similar cases and fix them."		Improvement	iteraplan PO	07/Dec/15 3:04 PM															"07/Dec/15 4:11 PM;gph;This behavior can be reproduced by setting the following System property on Tomcat startup
+
+""-Dsun.io.serialization.extendedDebugInfo=true""
+
+and then open a page which loads saved queries (like Spreadsheet reports, any diagram, Bulk update ...).
+
+
+
+This flag leads to a .toString()-call on a Hibernate (lazy loading) PersistentCollection in ObjectOutputStream when Spring Webflow tries to create a snapshot of the current flow (=> serialize). A StackOverflowError / SpringBean-not-loadable or a similar consequential exception should appear.
+
+"																																																						

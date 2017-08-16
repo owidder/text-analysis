@@ -1,0 +1,12 @@
+Coloring legend adaption - 2nd part of 207	"Color legend should provide information about diagram elements coloring.
+
+If inner and outer elements have coloring by default (by type): Display the coloring legend with default type colors: 1 for outer and 1 for inner elements.
+
+If one of elements (inner or outer) have coloring by some property and other have coloring by default: Just display the coloring legend for colored element only, no default legend
+
+If inner and outer elements by some properties: Display the coloring legend for the outer element above and directly below the coloring legend for the inner element
+
+Add grey color in non-default coloring legend for undefined value of property.
+
+Color legend for outer element should have lighter colors.
+"		New Feature	iteraplan PO	09/Dec/14 1:22 PM	23/Dec/14 10:29 AM																																																																				

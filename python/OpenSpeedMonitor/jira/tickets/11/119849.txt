@@ -1,0 +1,13 @@
+Update auf grails 3.2	"Das Update bringt eine neue GORM-Version 6 und hibernate 5. Mit hibernate 5 könnten wir Liquibase aktualisieren und damit sollen unsere dbm-migration-Probleme behoben werden. 
+
+
+
+Diese Probleme sind in diesem Ticket von uns beschrieben: https://iteraweb.iteratec.de/jira/browse/IT-1104
+
+
+
+Hier ist der Bug-Report von Marko, in dem es heißt, hibernate5 und die Liquibase-Version 3.5.2 würden diese Probleme beheben:
+
+
+
+https://github.com/grails-plugins/grails-database-migration/issues/69"		Task	OpenSpeedMonitor	28/Apr/17 6:30 PM																																																																					

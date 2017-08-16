@@ -1,0 +1,1 @@
+TBD: Import-Progress in New Client	* Polling of status of new REST-API for progress		New Feature	iteraplan Speedbird	07/Mar/17 11:27 AM	10/Mar/17 3:33 PM														10/Mar/17 3:33 PM;msr;Duplicate to IPTS-638																																																						

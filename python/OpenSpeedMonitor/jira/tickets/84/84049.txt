@@ -1,0 +1,5 @@
+[CRUD] Beim Editieren werden die Eingaben nicht validiert	"Beipiel http://localhost:8080/graphiteEventSourcePath/create -> Target Metric Name setzen -> create -> edit -> das Feld target metirc name leeren -> update
+
+
+
+Das update wird nicht wirklich ausgeführt, aber dem Nutzer wird das halt suggeriert. "		Bug	OpenSpeedMonitor	12/May/16 11:30 AM	25/May/16 5:45 PM														17/May/16 11:20 AM;bka;Die Tickets IT-1078, IT-1080, IT-1084 und IT-1086 hängen zusammen. Das Problem ist, dass der gescaffoldete Controller auftretende Validation-Fehler nicht mehr an die View weitergibt.																																																						

@@ -1,0 +1,7 @@
+Re-importing a newly exported XLSX without modifications shows changes	"To reproduce:
+* Export sample data as XLSX (NOT as 2003 XLS!)
+* Import the XLSX without modifying anything
+=> Importer shows changes in step 4 ""Validate data"" (see attachment).
+
+The diffs in the ""dry run"" occur because of different newline-formats in the description field: Database has ""\r\n"", imported file has ""\n"""		Bug	iteraplan PO	20/Jun/13 1:28 PM	31/Jul/13 6:31 PM					excel									21/Jun/13 4:58 PM;sry;Can we normalize the date that is read in from the XLSX file? Or is another solution preferred?	"26/Jul/13 11:12 AM;svo;Data is normalized for comparison only now. This should be sufficient. Effect is that \r\n and \n will be treated as equal.
+Btw, problem also occurred when first adding a newline to some String property via web interface, then exporting xslx and reimporting without changes."	03/Sep/13 1:47 PM;psc;Reviewed with Sebastian. Ticket will be closed.																																																				

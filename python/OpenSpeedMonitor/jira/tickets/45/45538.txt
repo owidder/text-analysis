@@ -1,0 +1,4 @@
+Special charachters in saved queries break visualization sub-menus 	"Special characters in saved query names are not properly escaped in the Javascript handlers of the Visualization sub-menus.
+Example: Create a saved query with a ' in its name; It will mistakenly seen as a Javascript string terminator. See also sample data query 4 in Landscape diagrams.
+
+Solution: Proper escaping, like it happens already in the saved query table of each diagram type."		Bug	iteraplan PO	16/May/12 11:39 AM	21/May/12 2:20 PM					javascript																																																															

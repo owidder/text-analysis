@@ -1,0 +1,9 @@
+Integration Detail-Analyse Benjamin	"* Integration des Stands von Benjamins Arbeit. 
+
+* Lauffähig machen.
+
+* Tests fixen
+
+* Recherche Performance mongodb (was können wir Grails < 3.0 beeits tun).
+
+* Stand den anderen präsentieren."		Task	OpenSpeedMonitor	29/Feb/16 11:44 AM	02/Mar/16 1:47 PM																																																																				

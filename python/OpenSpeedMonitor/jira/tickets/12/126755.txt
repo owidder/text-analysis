@@ -1,0 +1,114 @@
+Attribute können nicht bearbeitet werden	"Guten Tag
+
+Seit dem Update auf Iteraplan 6.0 können keine Attribute mehr erstellt bzw. nicht mehr geändert werden.
+
+Wenn ich auf ein Attribut klicke oder ein neues generieren will, passiert einfach nichts...Seite wird nicht geöffnet..."		Fault	iteraplan Support	10/Jul/17 4:17 PM	19/Jul/17 7:55 AM														"10/Jul/17 4:17 PM;laeser.moritz@ch.sika.com;
+
+!2017-07-10 16_11_30-Attributes.png|thumbnail!"	"11/Jul/17 8:24 AM;cst;Guten Morgen Herr Läser,
+
+vielen Dank für Ihre Anfrage. 
+
+Würden Sie bitte nach dem klicken auf ein Element einen kurzen Moment warten, es gibt im Moment ein bekanntes Problem das der Wartebildschirm nicht angezeigt wird, sollten Elemente länger zum laden brauchen. Sollte dies nicht zum gewünschten Erfolg führen, benötige ich die folgenden Log-Dateien um das Verhalten weiter prüfen zu können. 
+
+localhost Log  (im Tomcat Log-Verzeichnis)
+catalina Log  (im Tomcat Log-Verzeichnis)
+host-manager Log (im Tomcat Log-Verzeichnis)
+iteraplan Log (im eingestellten iteraplan Log-Verzeichnis)
+iteraplan-nc Log (im eingestellten iteraplan Log-Verzeichnis)
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"12/Jul/17 3:41 PM;laeser.moritz@ch.sika.com;Hallo Herr Stangl
+Leider werden die Attribute gar nie geladen...auch längerees Warten nützt nichts.
+im Anhang finden Sie die Logs..."	"12/Jul/17 3:41 PM;laeser.moritz@ch.sika.com;logs
+
+[^New folder.7z] _(23 kB)_"	"13/Jul/17 8:44 AM;cst;Guten Morgen,
+
+vielen Dank für die Zusendung der Log-Datei.
+
+Es sieht so aus, als würde das Datenbank-Update von Version 5.5 auf 6.0 nicht vollständig durchgelaufen sein. 
+Ist es möglich, das Datenbank-Skript erneut durch zu führen? 
+
+Sollte dies zur keiner Lösung führen, benötigen wir für die weitere Prüfung einen DUMP der aktuell eingesetzten Datenbank 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"13/Jul/17 10:21 AM;laeser.moritz@ch.sika.com;Hallo Herr stangl
+Funktioneirt leider nicht...da die Records bereits geschrieben wurden (oder zumindest teilweise...
+
+(0 row(s) affected)
+Msg 2714, Level 16, State 6, Line 20
+There is already an object named 'URL_PARAMS' in the database.
+
+im Anhang finden Sie das Backup unserer Datenbank.
+Vielen Dank
+Freundliche Grüsse
+
+[^eam] _(8,11 MB)_"	"13/Jul/17 1:47 PM;cst;Vielen herzlichen Danke,
+
+habe mir die Datenbank angeschaut und konnte hier kein Problem fest stellen.
+ In meiner frischen Installation der 6.0 konnte ich Attribute bearbeiten und Anlegen.
+
+Folgende Punkte könnten dieses Verhalten auslösen:
+ * Fügen Sie test-weise den Link zu iteraplan in die vertrauenwürdigen Seiten Ihres Browsers hinzu, um ein Problem mit diesem ausschließen zu können
+ * Testen Sie zusätzlich einen anderen Browser, sollte Punkt 1 nicht zur gewünschten Lösung führen
+ * Leeren Sie bitte das Work-Verzeichnis des Tomcat Servers um ein Problem mit diesem ausschließen zu können
+ * Führen Sie folgendes Datenbankskript durch um ein Fehlverhalten mit den User_Settings gegen zu testen (dies kann ich direkt nicht prüfen, da mir die Zugangsdaten Ihrer Benutzer nicht vorliegen)
+
+""TRUNCATE TABLE USER_SETTINGS;"" 
+
+Sollte dies nicht zum gewünschten Erfolg führen, könnten wir eine Team-Viewer Sitzung durchführen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+ "	"13/Jul/17 5:14 PM;laeser.moritz@ch.sika.com;Hallo Herr Stangl
+Vielen Dank fürIhre Antwort...
+
+Fügen Sie test-weise den Link zu iteraplan in die vertrauenwürdigen Seiten Ihres Browsers hinzu, um ein Problem mit diesem ausschließen zu können
+=> bei uns sind *.Sika.com in den IE Settings bei local 
+
+
+Testen Sie zusätzlich einen anderen Browser, sollte Punkt 1 nicht zur gewünschten Lösung führen
+=>funktioniert mit IE und FF nicht
+
+
+Leeren Sie bitte das Work-Verzeichnis des Tomcat Servers um ein Problem mit diesem ausschließen zu können
+=> habe ich nochmals gemacht und auch direkt nach dem Upgrade
+
+
+Führen Sie folgendes Datenbankskript durch um ein Fehlverhalten mit den User_Settings gegen zu testen (dies kann ich direkt nicht prüfen, da mir die Zugangsdaten Ihrer Benutzer nicht vorliegen)
+=> habe ich ausgeführt...brachte aber diesbezüglich keinen Effekt, muss ich etwas rückgänig machen?
+
+=> ja sehr gerne können wir eine Teamviewer session machen. Bin morgen und auch Montag gut verfügbar...
+
+Vielen Dank
+Freundliche Grüsse
+
+"	"14/Jul/17 7:51 AM;cst;Guten Morgen Herr Läser,
+
+vielen Dank für Ihre Antwort.
+
+Würden Sie mir bitte Ihre Telefonnummer mitteilen, dann werde ich Sie um 11:00 Uhr hierzu zurück rufen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"14/Jul/17 8:51 AM;laeser.moritz@ch.sika.com;Hallo Herr Stangl
+Vielen Dank für Ihre Antwort.
+Mirist heute etwas dazwischen gekommen, hätten sie nächsten Montag ebenfalls zeit?
+mine Nr ist +41584365889"	"14/Jul/17 8:54 AM;cst;Kein Problem, hier kann ich Ihnen erst einen Termin ab 13 Uhr anbieten.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	14/Jul/17 9:02 AM;laeser.moritz@ch.sika.com;Hallo Herr Stangl, 13.00 passt perfekt...freundliche GRüsse	"17/Jul/17 1:47 PM;cst;Server Manager 2012 - Skript lies sich nicht vollständig durchführen 
+ * Jetzt gehen die Attribute -
+ * Werde das Ticket morgen schließen "	"19/Jul/17 7:55 AM;cst;Problem konnte durch individuelles einspielen des Updates-Skripts durchgeführt werden.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support"																																									

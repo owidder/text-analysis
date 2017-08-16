@@ -1,0 +1,2 @@
+printing with other css themes is not correct	"printing with blue or joomla theme doesn't work correctly. The menue on the left side will be shown, instead of the information's from selected building block.
+This Problem exists only for internet explorer."		Bug	iteraplan PO	22/Dec/11 3:46 PM	28/Dec/11 3:58 PM					gui																																																															

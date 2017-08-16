@@ -1,0 +1,3 @@
+Add permission handling for responsibility attributes REST endpoint	Responsibility attributes REST endpoint should returns attributes that are allowed for current user.		Task	iteraplan Speedbird	08/Nov/16 9:25 AM	19/Dec/16 5:53 PM														"19/Dec/16 5:53 PM;ants;Review done:
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-241"																																																						

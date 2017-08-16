@@ -1,0 +1,7 @@
+Grenze für Auswahl bei hourly Aggregation einführen	"Bei der Auswahl von Werten soll der Bereich für hourly values eingeschränkt werden um Rechenzeit einzusparen.
+
+Die geschätzte Anzahl an Werten sollte nicht 5-stellig werden.
+ 
+Beispielzahlen: 1 Monat = ca. 720 Werte => 3 Monate, 10 Steps mögliches Maximum."	10010	Sub-task	OpenSpeedMonitor	03/Sep/13 9:53 AM	10/Sep/13 12:42 PM														"06/Sep/13 4:48 PM;mzeimer;Grenzwert also bei 7200 möglichen Werten. 
+Skizze: Benutzer wird gefragt ob er die Anfrage wirklich beabsichtigt hat und das dies dauern kann. Anschließend je nach Benutzerentscheidung trotzdem durchführen oder halt nicht."	"06/Sep/13 5:23 PM;mzeimer;Added new Op:
+de.iteratec.isocsi.CsiDashboardController.shouldWarnAboutLongProcessingTime(Interval, int)"																																																					

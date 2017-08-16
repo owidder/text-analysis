@@ -1,0 +1,25 @@
+Oracle DB allows names which are only different in case	"_Reproduce with iteraplan using oracle database:_
+
+ # Navigate to iteraplan -> Infrastructure Elements
+
+ # Create IE named ""TEST"" and save
+
+ # Create IE named ""test"" and save
+
+
+
+_Expected:_ Error message about duplicate names.
+
+
+
+_Actual:_ Element is created.
+
+
+
+Possible fix is to control the NLS_COMP and NLS_SORT variable of the oracle DB session either by configuration, or possibly from iteraplan (investigate possibilities in hibernate etc.).
+
+
+
+{color:#ff0000}UPDATE: {color}not only Infrastructure Elements, but all BBts, attributes,... everywhere, where user can input a name in iteraplan (e.g. user names must not be handled)
+
+ We need check-scripts for existing databases with entries in mixed case."		Improvement	iteraplan Thunderduck	16/Apr/14 11:44 AM						oracle																																																															

@@ -1,0 +1,91 @@
+Analysis: Interactive resizing of Axes	"*Check, if this feature is possible within 1 Person Day. If not, send this ticket back to backlog*
+
+
+
+*Summary.*
+
+The length of the axes can be interactively resized by dragging the axes-line.
+
+
+
+*Implementation Details:*
+
+* Dragging point should be top left and bottom right
+
+* If the user drags the axes-line, this deactivates the automatic calculation of the size cells (and therefore for the whole axes-line)
+
+* The user can drag any axes (independently of the other axes). The resulting diagram will no longer have quadratic cells.
+
+* There is no maximum length for the axes-line
+
+* The minium length for the axes-line is 120 pixel
+
+* Url: The user-defined length is saved in the url.
+
+
+
+*UI:*
+
+* Legend: Nothing to show
+
+* Toolarea: Nothing to show"		Improvement	iteraplan Speedbird	25/Aug/16 9:29 AM	17/Feb/17 4:01 PM														26/Aug/16 8:21 AM;msr;This ticket was already discussed with the developers on 26th Aug	"01/Sep/16 11:45 AM;dmkh;??If the user drags the axes-line, this deactivates the automatic calculation of the size cells (and therefore for the whole axes-line)??
+
+1. Currently we use one value for both height and width of the cell - {{cellSize}}. It depends on number of bubbles and is calculated in {{*pfdLayoyter.js*}}.
+
+So we need to separate it to {{cellHeight}}, {{cellWidth}}, deactivate their recalculation if diagram is resized by user and use saved value from URL.
+
+
+
+??The minium length for the axes-line is 120 pixel??
+
+2. Minimum length of axis should be more or equal to maximum size of the bubble, to nest bubble of maximum size *OR* it is needed to specify update of bubble and font sizes  in diagram and legend (so they still look like circles and diagram will not be broken).
+
+
+
+3. According to current implementation of diagram layout when user resizes diagram it is needed to update:
+
+* new relative positions for bubbles
+
+* size of bubbles?
+
+* size of panel with bubbles
+
+* size of grid
+
+* size of panels for labels on axes (additionally margins, used for numeric labels)
+
+
+
+4. At the moment I see few ways for implementing this feature:
+
+* As portfolio diagram is layouted in a table we can use _Masterplan resizing of data columns_ approach (IPTS-14, IPTS-96, http://gojs.net/latest/extensions/ColumnResizing.html). But with some changes to use custom dragging points at top-left, bottom-right corners (it is needed to specify dragging point look)
+
+* Use custom GoJS resizing tools: 
+
+** like for shapes here: http://gojs.net/latest/extensions/FloorPlanEditor.html. We add additional shape to background of panel with bubbles, and with help of diagram's {{*commandHandler*}} and {{*ResizeMultipleTool.js*}} catch new dimensions of resized diagram. According to these new values we update all needed elements described in item 3
+
+** like for table panels (which represent entity) here: http://gojs.net/latest/samples/entityRelationship.html
+
+
+
+
+
+"	"16/Feb/17 12:18 PM;vadm;The GoJS solution of resizing diagram is implemented in attached patch:
+
+* Draggable points
+
+* Resize handling function and updating table size accordingly
+
+
+
+Need to do:
+
+* Split cellSize property to two parameters (height and width)
+
+* Update cell size within resize handling function (maybe will be needed to add 'cellSize' property to model refactor diagram builder with binding it to 'width' property of elements if needed)
+
+* Recalculate bubbles size and position
+
+* Change draggable points size according to diagram size (by default they are too small)
+
+"																																																				

@@ -1,0 +1,69 @@
+Error in full text search	"_Reproduce (with sample data):_
+
+# Go to information system overview list in classic client
+
+# Enter ""SAP"" as search term -> four IS found, one of them ""SAP CO-P10 # 6.0""
+
+# Enter ""SAP CO"" as search term
+
+
+
+_Expected:_ System ""SAP CO-P10 # 6.0"" found
+
+_Actual:_ Nothing found
+
+
+
+_*Edit:* see Comment by [~gph] for more details on the expected search-behavior_
+
+
+
+Seems to be related to the space between SAP and CO."		Bug	iteraplan PO	01/Dec/15 4:51 PM	12/Apr/16 2:07 PM					classic									31/Mar/16 1:18 PM;abo;Same issue for v 5.0.0 (SVN: tags/Release_5_0_0)	"04/Apr/16 9:55 AM;abo;Fixed by adding wildcards to the beginning and the end of the search-term. But not in between (e.g. ""Softw Sys"" will never find ""Software System"" but ""Softw Sysiphus"").
+
+
+
+Documentation does not need an update, does it? 
+
+(http://www.iteraplan.de/doc/display/iteraplan51/Finding)
+
+"	"04/Apr/16 12:56 PM;gph;The desired behavior (according to [~fka]) is:
+
+
+
+A search term should work like:
+
+* the splitted (by whitespaces) parts
+
+* with wildcards around them and
+
+* combined with ""AND""
+
+
+
+For example:
+
+The term ""sap xyz fi"" (without quotes) should work like
+
+\*sap\* AND \*xyz\* AND \*fi\*
+
+
+
+Currently, the clauses inside the LuceneQuery object work like
+
+\*sap AND xyz AND fi\*
+
+
+
+The documentation should be adjusted accordingly.
+
+
+
+Additionally, the documentation text should be cleaned from:
+
+* Information about previous releases (""In previous versions ..:""). This is just confusing. Only the current state should be described in the documentation.
+
+* Errors (like: ""But this also mean ..."")
+
+* The hint, that the search works ""like Google"" and that ""words are not searched literally"" but ""similar words ... as well"". This is not true.
+
+"	05/Apr/16 11:34 AM;abo;Removed alternative search - this is not reachable anymore.	12/Apr/16 2:07 PM;tam;Reviewed. Everything works																																																		

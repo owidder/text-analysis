@@ -1,0 +1,45 @@
+Excel import doesn't work if there are empty date cells in the excel file	"_Reproduce (with sample data):_
+
+# Download Excel data from iteraplan's Export/Import page
+
+# Delete the contents of an date cell in the Excel file, for example a runtime period date on the Information System sheet
+
+# Import the file
+
+
+
+_Expected:_ File is read and, depending on strategy, no changes or an unsetting of the date value is done
+
+_Actual:_ NullPointerException resulting in a general error reported on the import page
+
+
+
+The import should be able to handle empty date cells.
+
+
+
+{color:red}UPDATE:{color} For the ""name"" column please throw a meaningul exception, but for all other columns it is depending on the import strategy:
+
+* If you just add the value, please ignore the empty cells.
+
+* But if you overwrite a value, please delete the old value."		Bug	iteraplan Speedbird	01/Oct/14 1:52 PM	07/Jun/17 6:07 PM					date	import								02/Oct/14 3:49 PM;sfe;After extended testing with multiple combinations of cell formatting and contents, the error still doesn't appear anymore.	"13/Mar/17 11:25 AM;cst;One of our customer reported this error in version 5.3 / 5.4 and 5.5.
+
+
+
+https://iteraweb.iteratec.de/jira/browse/IPS-319
+
+
+
+and the original ticket https://iteraweb.iteratec.de/jira/browse/IPS-194
+
+
+
+Here are the excel files for reproducing the problem."	26/Apr/17 2:32 PM;msr;[~msr] needs to provide excel file to reproduce.	29/May/17 1:56 PM;cst;Test Excel-Document was added on this ticket.	01/Jun/17 2:49 PM;msr;The excel contains different metamodel. Need to be updated again to reproduce the error.	"07/Jun/17 2:20 PM;msr;This error is not repoducible with the actual trunk (as Stephan commented). You already get meaningful warnings for empty date cells:
+
+ !screenshot-1.png|thumbnail! 
+
+
+
+You get meaningful errors for missing name:
+
+ !error-message-missing-name.png|thumbnail! "	07/Jun/17 6:07 PM;fka;Nothing more to do here, closing ticket																																																

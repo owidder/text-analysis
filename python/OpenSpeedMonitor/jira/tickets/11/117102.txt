@@ -1,0 +1,45 @@
+Stacktrace bei falscher URL	"Hallo,
+
+wenn in der 5.5 Version unsere Anwender mit der alten login URL aufrufen gibt es immer einen riesen Error output und Stacktrace:
+
+Hier ein Auszug:
+
+879 
+
+2017-03-30 09:19:19,297 [ajp-nio-10.174.68.230-10018-exec-3] ERROR 
+
+de.axa.alert.monitor.ExceptionFilter  null / null 
+
+E804345D8FAFE5D8A154245D53712xxx doFilter 129   - Now the stacktrace of 
+
+the ServletException:880 javax.servlet.ServletException: Could not resolve view with name 'login' in servlet with name 'springmvc'881 	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1226)882 	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027)883 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971)884 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)885 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)886 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:860)887 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)888 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)889 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)890 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)891 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)892 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)893 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)894 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)895 	at de.iteratec.iteraplan.presentation.ContextFilter.doFilter(ContextFilter.java:83)
+
+
+
+Und das nervt, wenn wir so wie wir auch echte Fehler haben!
+
+
+
+Beste Grüße
+
+Armin Joachimsmeyer
+
+"		Fault	iteraplan Support	30/Mar/17 9:50 AM	05/Apr/17 1:05 PM														"05/Apr/17 1:05 PM;cst;Guten Tag Herr Joachimsmeyer,
+
+
+
+vielen Dank für Ihre Hinweis.
+
+
+
+Wir werden dieses mit der Version 6.0 verhindern. 
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support
+
+"																																																						

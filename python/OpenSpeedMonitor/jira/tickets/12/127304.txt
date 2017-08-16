@@ -1,0 +1,21 @@
+Enumeration Attribute - Cannot be changed in the single element view	"A customer ticket and can be reproduced in version 6.0
+
+ # Open Administration - Attributes 
+
+ # Activate the attribute group option ""*Show these attributes next to the core attributes""*.
+
+ # Go in the single element view of a element 
+
+ # Try to change a enumeration attribute of the attribute group
+
+ # The changes will be saved in the database, but the value of the enumeration attribute do not change to current value
+
+
+
+When the option  ""*Show these attributes next to the core attributes""* is deactivated, then this effect dont appear. 
+
+
+
+Actual: On core attributes, the single element view dont update the view on enumeration attributes 
+
+Expected: That the page will be updated correctly"		Bug	iteraplan PO	17/Jul/17 9:27 AM																																																																					

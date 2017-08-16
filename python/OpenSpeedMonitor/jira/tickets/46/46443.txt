@@ -1,0 +1,4 @@
+Make ElasticMiContext aware of locale changes	The ElasticMiContext's locale is not changed when a user changes the locale using the UI 		Bug	iteraplan PO	03/Feb/14 11:45 AM	15/Jul/14 9:28 AM														"15/Jul/14 9:28 AM;sfe;* Logging in with english locale -> Download Excel Data -> English names in Excel file
+* Changing locale to german -> Immediatetly Download Excel Data again -> German names in Excel file
+
+Probably fixed within the scope of another issue."																																																						

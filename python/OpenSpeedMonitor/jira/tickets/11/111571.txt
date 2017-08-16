@@ -1,0 +1,5 @@
+Chart implementieren: CSI-Werte als senkrechte Balken	"CSI-Werte als senkrechte Balken
+
+
+
+!csi übersicht.png|thumbnail!"		Story	OpenSpeedMonitor	10/Feb/17 5:11 PM	23/Feb/17 2:16 PM																																																																				

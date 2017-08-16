@@ -1,0 +1,9 @@
+Change behaviour of StartScreenLoading dialog	"The user has to wait for the startScreenLoading dialog.
+
+
+
+The modal dialog shall be shown if the data loading lasts longer than 1 second and be closed if the data loading is complete.
+
+
+
+See ""readAPIData"" function in common.js"		Improvement	iteraplan PO	01/Jun/16 5:24 PM																																																																					

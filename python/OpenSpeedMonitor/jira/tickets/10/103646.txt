@@ -1,0 +1,7 @@
+Apply received changes From Server	"Improve Edit Service to be able to merge received model changes from server to JS-Model (and into Raw-JSON-Data)
+
+
+
+- extra method to merge JSON represented Data into Model
+
+- implement the merge asynchronously"		Improvement	iteraplan Thunderduck	23/Nov/16 1:13 PM	29/Nov/16 9:50 AM																																																																				

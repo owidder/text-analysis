@@ -1,0 +1,5 @@
+Dynamischer Auswahl passiert immer über HTTPS	"Auch wenn die Seite über HTTP aufgerufen wird, passieren die AJAX Requests über HTTPS. Dies kann dazu führen, dass die dynamische Auswahl nicht mehr funktioniert, wenn man zB das Root-Certificate nicht hat und der Browser die HTTPS Verbindung nicht für sicher hält.
+
+
+
+Dies ist zB bei Otto der Fall, wenn man das Otto Zertifikat nicht explizit importiert hat."		Bug	OpenSpeedMonitor	26/Jan/17 9:41 AM																																																																					

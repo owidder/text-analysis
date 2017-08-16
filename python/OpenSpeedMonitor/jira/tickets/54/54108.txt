@@ -1,0 +1,5 @@
+Job-Set (de)aktivieren	"Es sollte in der Job-Liste möglich sein sich die Auswahl an Jobs merken zu können, die man deaktiviert. Es kommt relativ häufig vor, dass man eine Reihe von Jobs temporär deaktivieren möchte. Möchte man hinterher wieder genau diese Jobs aktivieren gibt es momentan keine Möglichkeit diese wieder zu finden.
+
+
+
+Hierfür sollte beim Betätigen der Buttons ""Markierte Jobs aktivieren"" und ""Markierte Jobs deaktivieren"" eine Nachfrage kommen, in der man die Möglichkeit bekommt, einen Kommentar für die Aktion zu vergeben. Später kann man diese Aktionen dann auswählen und wieder rückgängig machen. Sprich alle deaktivierten Jobs wieder aktivieren oder alle aktivierten wieder zu deaktivieren. "		New Feature	OpenSpeedMonitor	18/Aug/15 11:10 AM	16/Nov/15 2:32 PM																																																																				

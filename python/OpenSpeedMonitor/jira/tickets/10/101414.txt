@@ -1,0 +1,33 @@
+LSD: Distrigation-Feature does not work	"*Summary:*
+
+LSD: Distrigation-Feature does not work : https://www.iteraplan.de/doc/display/iteraplan55/Distrigation
+
+
+
+*Reproduce:*
+
+* Open the default LSD
+
+* Filter content by ""name contains SAP""
+
+* Show with hiearchy level -> Only level 1
+
+
+
+*Actual:*
+
+* Multiple cells are missing, e.g. X: Quality, Y: Investment, Content: SAP Classic-P10
+
+
+
+*Expected:*
+
+* The aggregated cells exists (see !Correct_Release_5.3.png|thumbnail!)
+
+
+
+*Hint:*
+
+This is a regression bug. In iteraplan 5.3 this feature was working.
+
+5.3"		Bug	iteraplan Speedbird	03/Nov/16 4:13 PM	08/Nov/16 10:01 AM																																																																				

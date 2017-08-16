@@ -1,0 +1,29 @@
+Deleting connection to IT Service from IS detail page is not possible	"*Reproduce:*
+
+* Open a IS with an assigned IT Service (""IS Architecture / Supports the following IT Services"")
+
+* Switch to edit mode
+
+* Remove the IT Service
+
+* Save the IS
+
+
+
+*Expected:*
+
+The connection to the IT Service is gone / deleted
+
+
+
+*Actual:*
+
+After saving, the IT Service is not gone
+
+
+
+
+
+Workaround:
+
+Delete the connection on the IT Service page."		Bug	iteraplan PO	21/Aug/15 11:11 AM	31/Aug/15 10:41 AM					gui	informationsystem	itservice																																																													

@@ -1,0 +1,3 @@
+Delete "Configuration by left click" and change to R5.3	"* Delete ""Configuration by left click"" from all files
+
+*  and change R5.2 to R5.3 and change its color to grey"		Improvement	iteraplan PO	08/Aug/16 5:13 PM	09/Aug/16 9:53 AM														09/Aug/16 9:52 AM;pma;Reiew comment: ok																																																						

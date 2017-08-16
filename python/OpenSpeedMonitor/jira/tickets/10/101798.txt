@@ -1,0 +1,73 @@
+Display iteraQl result as table	"*Summary:*
+
+Display iteraQl result as table
+
+
+
+*Details:*
+
+* Result can either be a simple table or a tuple
+
+* Use common list component with the following features
+
+** Export as csv or excel
+
+** Add Column
+
+** Quick Search
+
+** Show X of Y elements
+
+** No filtering
+
+** No legend
+
+*  Consult [~mwe] how to adapt common list component
+
+* Initially Name and Description are shown
+
+* Link from the name-field of the List to Single Element View
+
+{color:red}UPDATE: {color} Message for empty result set: ""Keine Ergebnisse"" (German) and ""No results"""		New Feature	iteraplan Speedbird	07/Nov/16 4:05 PM	30/Dec/16 3:41 PM														"29/Nov/16 5:41 PM;msr;Please include the query history in this ticket. It should include the last 5 queries of the user.
+
+
+
+Please adjust the layout so the query console is in the focus (centered) and the input box of the query console should have grey background.
+
+"	"02/Dec/16 1:50 PM;msr;1. Show as default columns: Name, Description
+
+2. All available columns: All properties assigned to this Building Block Type
+
+3. Quick Search should be performed on all visible columns"	"02/Dec/16 1:51 PM;msr;* fromIQLExpression: header of left table
+
+* toIQLExpression: header of the right table
+
+sizeFrom: number of results of left table
+
+sizeTo: analogue"	12/Dec/16 12:47 PM;madu;#5437	"20/Dec/16 9:56 AM;vadm;I think after ""clear"" button clicking, should be cleared result table and url, not only input box.
+
+After page reloading with configured url result table disappears.
+
+Please check."	27/Dec/16 3:38 PM;madu;In regards of prior comment - this behavior had been fixed.	"27/Dec/16 3:53 PM;madu;The literals that I had introduced which should be translated are following (*I took translations from translate.google.com, please validate & edit if necessary*):
+
+
+
+||English literal||German translation||
+
+|Execute query|Abfrage ausführen|
+
+|Copy query text to input field|Abfragetext in Eingabefeld kopieren|
+
+|Remove the query from list|Abfrage aus der Liste entfernen|
+
+|Query succeeded|Abfrage erfolgreich|
+
+|Query executed|Abfrage ausgeführt|
+
+|Query failed|Abfrage fehlgeschlagen|
+
+|Queries history|Abfrageverlauf|"	"28/Dec/16 11:28 AM;fka;Remove the query from list	Abfrage aus der Liste entfernen
+
+
+
+Everything else in the comment above is okay. Thanks."	29/Dec/16 3:30 PM;madu;#5577, #5585																																														

@@ -1,0 +1,13 @@
+Wrong coloring in BCD.	"Steps to reproduce:
+
+1. Create new enum attribute with some literals and make it available for some bbt (i.e. information systems).
+
+2. Open bcd with Information System as content type and this attribute as attribute - BCD with one bar (unspecified) is created with default coloring (light red color for information systems)
+
+3. Select coloring by any attribute (i.e Accountability) - bar turns to grey (as if all information systems has no accountability specified).
+
+
+
+To Be:
+
+Bar should be colored into colors of literals of accountability according to assigned values."		Bug	iteraplan PO	25/May/17 12:58 PM	08/Jun/17 11:58 AM														08/Jun/17 11:58 AM;fka;Works with current nightly build, tested with Chrome and FF.																																																						

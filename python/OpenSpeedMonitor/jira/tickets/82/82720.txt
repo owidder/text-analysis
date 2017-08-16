@@ -1,0 +1,3 @@
+Create pipeline interfaces documentation	"Create a documentation for the data structure in the interfaces within the pipeline.
+
+Use JsDoc."		New Feature	iteraplan Speedbird	02/May/16 11:11 AM	24/Jun/16 8:34 AM														24/Jun/16 8:34 AM;msr;Not needed anymore as Masterplan Diagram is already completed.																																																						

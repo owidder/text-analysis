@@ -1,0 +1,39 @@
+User Settings and deleting a attribute	"Reproduce with trunk
+
+ # Open ""Bar Chart Diagram"" -
+
+ # Open to the ""Administration"" - ""Attribute"" list
+
+ # Delete the attribute ""Accountability"" 
+
+ # Reopen the ""Bar Chat Diagram"" 
+
+ # A error appears 
+
+
+
+TypeError: An exception occurred: Die Eigenschaft ""presentationType"" eines undefinierten oder Nullverweises kann nicht abgerufen werden.
+
+ at BcdDataService.prototype.getBusinessObjects (http://localhost:8080/client/js/bcd/bcdContent/bcdDataService.js:39:5)
+
+ at BcdContentMain.prototype.runPipeline (http://localhost:8080/client/js/bcd/bcdContent/bcdContentMain.js:83:17)
+
+ at BcdContentMain.prototype.createGoJSDiagram (http://localhost:8080/client/js/bcd/bcdContent/bcdContentMain.js:59:5)
+
+ at createGoJSDiagram (http://localhost:8080/client/js/bcd/bcdContent/bcdContentController.js:21:13)
+
+ at Anonymous function (http://localhost:8080/client/js/bcd/bcdContent/bcdContentController.js:34:13)
+
+ at invoke (http://localhost:8080/client/bower_components/angular/angular.js:4625:9)
+
+ at $controllerInit (http://localhost:8080/client/bower_components/angular/angular.js:10027:11)
+
+ at nodeLinkFn (http://localhost:8080/client/bower_components/angular/angular.js:8965:11)
+
+ at compositeLinkFn (http://localhost:8080
+
+
+
+Expected: That a dialog opens with the hint that the attribute is deleted
+
+Actual: A error appears and you must click on reset view "		Bug	iteraplan Speedbird	11/May/17 4:29 PM	25/May/17 5:47 PM																																																																				

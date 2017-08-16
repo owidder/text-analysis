@@ -1,0 +1,17 @@
+Hovering on empty values of Lists does not work in IE10	"*To reproduce:*
+
+1) Open BB list in IE10
+
+2) Hover on any empty attribute value or relation to edit
+
+
+
+Expected result:
+
+- edit icon appears
+
+
+
+Current result:
+
+- edit icon does not appear, cannot edit attribute or relation value"		Bug	iteraplan Speedbird	03/Feb/17 1:42 PM	06/Feb/17 11:55 AM														06/Feb/17 11:38 AM;vadm;Fixed in scope of [IE10: No scrolling of all lists|https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-5063]																																																						

@@ -1,0 +1,3 @@
+PNG größe definierbar	"Beim Download des Charts als png wird aktuell immer die Größe des im Browser angezeigten Charts genommen.
+
+Dieses sollte man beim downloaden ändern können."		Task	OpenSpeedMonitor	16/Nov/16 5:27 PM	30/Nov/16 4:55 PM																																																																				

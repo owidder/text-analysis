@@ -1,0 +1,41 @@
+Add responsibility type to REST	"In the metamodel type ResponsibilityAT the literals type property is missing.
+
+
+
+The type is either User or Usergroup. See the attribute Accountability in the classic client.
+
+
+
+1. Please provide the type in the following format:
+
+* for user literals
+
+{code}
+
+...
+
+""en"": ""User"",
+
+""de"": ""Anwender""
+
+...
+
+{code}
+
+* for user group literals
+
+{code}
+
+...
+
+""en"": ""User Group"",
+
+""de"": ""Anwendergruppe""
+
+...
+
+{code}
+
+2. Check if the type translation is added to the translationMap in mmLocalization.js
+
+3. Check if the ""User"" translation is correctly displayed in the possible values of the attribute details of Accountability."		Improvement	iteraplan Thunderduck	17/Nov/16 9:35 AM	02/Dec/16 11:00 AM														01/Dec/16 3:13 PM;mwe;Commit [26494|https://iteraweb.iteratec.de/fisheye/changelog/iteraplan?cs=26494] belongs to IPTT-273.																																																						

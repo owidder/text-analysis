@@ -1,0 +1,5 @@
+2 small list improvements	"* Die Spalten-Header sollten „vertikal mittig“ und nicht „vertikal unten“ ausgerichtet sein
+
+* Bei Listen, die breiter als die Fenstergröße sind, entsteht ein „weißer Strich“ in der grauen Header-Zeile. Dieser sollte nicht angezeigt werden.
+
+"		Improvement	iteraplan Thunderduck	11/Jul/16 5:11 PM	16/Aug/16 10:21 AM														11/Aug/16 1:02 PM;fka;Part two does not appear any more in 5.3	16/Aug/16 10:21 AM;mse;Review ok.	23/Aug/16 1:29 PM;fka;Sorry, part 2 does again appear.																																																				

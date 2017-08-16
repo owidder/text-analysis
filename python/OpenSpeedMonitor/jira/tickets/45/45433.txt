@@ -1,0 +1,12 @@
+Make loading of Cluster Diagram definitions more robust for definitions from older versions	"We observed a problem with a query definition from an older iteraplan version (pre-2.9) which did not yet have an element that is now expected.
+
+The stacktrace when loading such an old query is this:
+{code}
+....
+Caused by: java.lang.NullPointerException
+	at de.iteratec.iteraplan.businesslogic.reports.query.options.GraphicalReporting.Dimension.ColorDimensionOptionsBean.matchValuesFromSavedQuery(ColorDimensionOptionsBean.java:113)
+	at de.iteratec.iteraplan.businesslogic.service.InitFormHelperServiceImpl.setSecondOrderBeansData(InitFormHelperServiceImpl.java:675)
+	at de.iteratec.iteraplan.businesslogic.service.InitFormHelperServiceImpl.initClusterDiagramForm(InitFormHelperServiceImpl.java:590)
+	at de.iteratec.iteraplan.businesslogic.service.InitFormHelperServiceImpl.initIfLoadedCluster(InitFormHelperServiceImpl.java:1377)
+	at de.iteratec.iteraplan.businesslogic.service.InitFormHelperServiceImpl.loadSavedGraphicalReport(InitFormHelperServiceImpl.java:1226)
+{code}"		Bug	iteraplan PO	16/Mar/12 5:22 PM	18/Apr/12 3:58 PM					cluster	savedquery								16/Mar/12 8:30 PM;kvo;Maybe a fix should also include the migration script?	18/Apr/12 3:58 PM;sry;duplicate of ITERAPLAN-656																																																					

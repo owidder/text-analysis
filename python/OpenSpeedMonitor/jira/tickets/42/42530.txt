@@ -1,0 +1,7 @@
+Auswahl Connectivity im Ergebnis-Dashboard	"Im Ergebnis-Dashboard muss die Connectivity, mit der gemessen wurde ausgewählt werden können. Hierfür wird ein Select rechts von Browser/Location eingebaut. In diesem sind alle vordefinierten ConnectivityProfiles auszuwählen.
+
+Wie bei den anderen Selects gibt es eine Checkbox ""select all"", die per default gesetzt ist und automatisch deaktiviert wird, wenn man eine (oder mehrere) Connectivities aus dem select anklkickt/auswählt.
+
+
+
+Zusätzlich zu den vordefinierten Profiles gibt es ein Control zur Auswahl der custom Profiles aus den Jobs. Dieses könnte eine Textbox sein, in der ein regex eingegeben werden kann oder auch ein Select, in dem alle existierenden custom Profiles enthalten sind."		Task	OpenSpeedMonitor	03/Jun/15 3:13 PM	16/Jul/15 5:50 PM																																																																				

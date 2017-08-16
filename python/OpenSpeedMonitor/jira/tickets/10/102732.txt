@@ -1,0 +1,25 @@
+Improve UI for list editing	"Create subtickets.
+
+
+
+The following points were raised during sprint review on November 16:
+
+
+
+* Edit field as ""pop-out"", i.e. overlay of the normal grid, so that the editing field is not covered by other columns (if possible not only usable with ag-grid but also in single element view) (/)
+
+* On-blur for all edit fields: apply changes (/)
+
+* Cancel editing when ESC is pressed (/)
+
+* focus on edit start (/)
+
+* resize of popup field (x)
+
+* handle keys, enter = apply (enter->no stop editing for rich text field) ,  block arrows (/)
+
+* make technical properties not editable (/)"		Improvement	iteraplan Thunderduck	16/Nov/16 2:22 PM	10/Jan/17 10:42 AM														"02/Dec/16 9:17 AM;mse;One additional point to think about: At the moment, a request is sent to the server even if the user did not perform any real change but just started editing and closed it again. As I can see, this is done for all column types. I think it should not cause any problems as the server returns a proper response and it also should not cause major performance issues. But maybe we can still do better here without too much effort (Compare also comments to IPTT-215).
+
+
+
+-> Followed-up in IPTT-346"	10/Jan/17 10:46 AM;mse;Resizing of editor pop-up to be followed-up in IPTT-348.																																																					

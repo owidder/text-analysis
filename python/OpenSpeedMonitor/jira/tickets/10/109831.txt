@@ -1,0 +1,9 @@
+Validation for input fields of numeric filter	"1. Please, add validation for input fields of numeric filter (only numbers can be typed with one dot (or comma for German) separator).
+
+2. Additionally check if dots/commas are localized and displayed correctly for German/English (currently user cannot type comma when German language is chosen).
+
+3. Add a *delay of 3 seconds* after typing a character before applying the number of the input box, i.e. before applying the filter in the background and the synchronisation between the second input field and the first input field.
+
+{color:red}UPDATE:{color} No length limitations
+
+{color:red}UPDATE:{color} No comparison between left and right input field"		Bug	iteraplan PO	27/Jan/17 2:29 PM	06/Feb/17 11:00 AM																																																																				

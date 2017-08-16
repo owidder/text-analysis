@@ -1,0 +1,1 @@
+POSTING an arbirtrary (non-iteraplan) Excel Sheet caused IllegalArgumentException	When I post an arbitrary excel file (which is not related to iteraplan), then I get an IllegalArgumentException. This should be handled in a different way.		Bug	iteraplan PO	25/Apr/16 12:40 PM																																																																					

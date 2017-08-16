@@ -1,0 +1,1 @@
+iteratec Buildserver (Bamboo) und Jobs zur Build-Automatisierung einrichten			Story	secureCodeBox	10/Jul/15 4:12 PM	29/Feb/16 9:25 PM														29/Feb/16 9:25 PM;rfe;läuft unter: https://iteraweb.iteratec.de/bamboo/browse/SECBO																																																						

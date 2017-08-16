@@ -1,0 +1,13 @@
+Excel Export: Problem exporting template/data with enum attributes with long names	"Since the name of an Excel sheet has a restricted length, the sheets created for enum attributes will have their names truncated if the attribute name is above this maximum length.
+The truncated name is not guaranteed to be unique anymore, and if a duplicate name occurs, this happens:
+
+{noformat}
+Caused by: java.lang.IllegalArgumentException: The workbook already contains a sheet of this name
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.createSheet(HSSFWorkbook.java:790)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.createSheet(HSSFWorkbook.java:76)
+	at de.iteratec.iteraplan.businesslogic.exchange.excel2.export.template.AbstractSheetGenerator.createSheet(AbstractSheetGenerator.java:123)
+	at de.iteratec.iteraplan.businesslogic.exchange.excel2.export.template.AbstractSheetGenerator.generateSheet(AbstractSheetGenerator.java:105)
+	at de.iteratec.iteraplan.businesslogic.exchange.excel2.export.template.ExcelTemplateGeneratorServiceImpl.generateSheets(ExcelTemplateGeneratorServiceImpl.java:142)
+	at de.iteratec.iteraplan.businesslogic.exchange.excel2.export.template.ExcelTemplateGeneratorServiceImpl.generateTemplate(ExcelTemplateGeneratorServiceImpl.java:96)
+...
+{noformat}"		Bug	iteraplan PO	18/Apr/12 1:48 PM	08/May/12 3:18 PM					excel	export								27/Apr/12 2:55 PM;sfe;Fixed in Changeset [16383|https://iteraplan.iteratec.de/projects/iteraplan/changeset/16383].	08/May/12 3:18 PM;vsh;OK.																																																					

@@ -1,0 +1,21 @@
+EAM-Sensorinfos nach Markerauswahl anzeigen	"- View für die EAM-Infos bauen => erstmal Fake-Daten
+
+- View anzeigen, erstmal immer gleich groß (unabhängig von Distanz)
+
+- TODO: Wie wählt man den Marker aus?
+
+- Wann wird die View automatisch ausgeblendet? (Bei Blickfeldwechsel?)
+
+- Soll die View immer vollständig angezeigt werden?
+
+- Design?"		Task	EAMV15	20/Nov/15 5:20 PM	07/Dec/15 11:37 AM														"01/Dec/15 6:19 PM;fbe;Es kann Text auf eine Textur gerendert werden.
+
+
+
+ausstehend:
+
+- Ausrichtung des Textes auf den User
+
+- Auswahl des Markers; eventuell Infos standardmäßig für den dichtesten Sensor anzeigen
+
+"	07/Dec/15 11:37 AM;fbe;Infobox integriert; Infobox auf User ausgerichtet																																																					

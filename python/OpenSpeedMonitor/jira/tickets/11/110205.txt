@@ -1,0 +1,1 @@
+Infoanzeige über Nicht-Defaultwerte über dem TimeSeriesChart ist verschwunden	Die Anzeige rechts über dem TimeSeries Chart wenn z.B. TrimValues angegeben oder Nicht-Default Werte ausgewählt sind ist mit dem neuen Layout verschwunden.		Bug	OpenSpeedMonitor	01/Feb/17 8:52 AM	02/Feb/17 2:28 PM																																																																				

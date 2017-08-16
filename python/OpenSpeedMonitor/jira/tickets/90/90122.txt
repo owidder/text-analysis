@@ -1,0 +1,11 @@
+Das BodgeIT Beispiel um HTTPS mit selfsigned certificate erweitern	"Um ein funktionierendes Beispiel für den SSLyze Scanner zu haben soll der BodgeIT Store um HTTPS erweitert werden.
+
+
+
+Hierfür ist grob folgendens zu tun:
+
+* Ein selfsigned SSL Zertifikat erzeugen (company: iteratec GmbH)
+
+* Die Tomcat Konfiguration erweitern um auch HTTPS auszuliefern, mit dem erzeugten Zertifikat
+
+* Dockerfile entsprechend erweitern, um das Zertifikat und die Tomcat Konfiguration entsprechend zu berücksichtigen"		Improvement	secureCodeBox	11/Jul/16 11:36 AM	13/Jul/16 11:46 AM					students																																																															

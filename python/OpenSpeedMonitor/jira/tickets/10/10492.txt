@@ -1,0 +1,13 @@
+Tag-service ändern, dass pattern bei Anfrage mit leerer ID-Menge alle IDs finden statt keine	"Derzeit führte ein Anfrage mit einer leeren ID-Liste zum Beispiel zu dem folgenden pattern:
+
+(1|2);;(3|4)
+
+der mittlere Teil ist ""leer"", daher würde eine rlike-Anfrage nichts finden.
+
+Dieses soll wie folgt geändert werden:
+
+(1|2);[^;]*;(3|4)
+
+Durch das * werden an dieser Position alle IDs ""gefunden"".
+
+Betrifft: de.iteratec.isr.MeasuredValueTagService"	10010	Sub-task	OpenSpeedMonitor	27/Aug/13 11:27 AM	27/Aug/13 2:16 PM																																																																				

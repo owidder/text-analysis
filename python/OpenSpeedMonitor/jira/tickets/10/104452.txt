@@ -1,0 +1,1 @@
+Fix test of customisable IFD			Bug	iteraplan Speedbird	01/Dec/16 4:48 PM	05/Dec/16 10:23 AM														05/Dec/16 10:23 AM;ants;https://iteraweb.iteratec.de/fisheye/cru/IP-204																																																						

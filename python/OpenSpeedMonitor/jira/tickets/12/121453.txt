@@ -1,0 +1,13 @@
+Selection changes when quickfilter is applied	"# Open list of business objects, click mass update button.
+
+ # Do not select all records (select one or no records)
+
+ # Type some letter in quickfilter
+
+
+
+Result - all records are selected
+
+
+
+Expected results - the records which have been not selected should remain not selected. Selected records should remain selected unless they are filtered out."		Bug	iteraplan PO	15/May/17 4:37 PM	16/Jun/17 5:37 PM														05/Jun/17 6:37 PM;fka;Reproduced with current nightly and Chrome	14/Jun/17 12:44 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-678																																																					

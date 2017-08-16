@@ -1,0 +1,13 @@
+Structure 1: Create Structure	"Create the basic structure, i. e. classes  for 
+
+* CombinedFilter,
+
+* RelationShipEndFilter (NoConnectedFilter | ExistenceConnectedFilter),
+
+* AndFilter,
+
+* OrFilter
+
+
+
+Implement the relations between them."	65407	Sub-task	iteraplan PO	09/Dec/15 6:35 PM	10/Dec/15 5:23 PM																																																																				

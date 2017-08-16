@@ -1,0 +1,13 @@
+User docs	"* don't forget multiple level sorting feature
+
+
+
+User doc can now be found here:
+
+https://www.iteraplan.de/doc/display/iteraplan53/List"		New Feature	iteraplan PO	10/May/16 12:58 PM	04/Jul/16 12:24 PM														24/Jun/16 1:06 PM;pma;Documentation mostly done, screenshots missing. Will be added after https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-4595 is done	01/Jul/16 11:38 AM;pma;User Guide: Main Features -> New Client -> List	"04/Jul/16 8:05 AM;sfe;I've made some changes to some of the formulations, see also here:
+
+https://www.iteraplan.de/doc/pages/diffpagesbyversion.action?pageId=8126498&selectedPageVersions=20&selectedPageVersions=19
+
+
+
+Please someone else review again."	04/Jul/16 12:24 PM;mse;Just corrected some typos. Re-review ok now, nice doc page!																																																			

@@ -1,0 +1,3 @@
+Time series: Design of input form	"Scrollbar within input form should be removed.
+Reduce the width of some fields, e.g. the calendar field, so that everything fits into the modal.
+Vertical scrolling is ok, of course."		Bug	iteraplan PO	08/Jul/13 12:05 PM	11/Jul/13 6:07 PM					timeseries									10/Jul/13 3:06 PM;bra;(x) on FF there is still a horizontal scrollbar if there is a vertical scrollbar 	11/Jul/13 1:52 PM;lba;(?) Please let me know if the width of the input boxes is still to large so that a horizontal scrollbar appears when there is vertical scrollbar.	11/Jul/13 6:07 PM;bra;(/) width is ok now even with FF																																																				

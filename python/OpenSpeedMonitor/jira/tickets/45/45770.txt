@@ -1,0 +1,17 @@
+Excel Import - additional BuildingBlocks (such as BO) cannot directly be used in an relationship	"If a BuildingBlock is added in the Excel-File an used in a relationship in one step, the import of the file is not possible.
+
+The following steps are needed:
+1. Add new Buildung Block in Excel
+2. Import File
+3. Export File
+4. Add the relationships
+5. Import File
+
+The reason is, that the newly created BB are in transient state when iteraplan tries to build up the relationships. Ususally it stops when the hierachy is established (virtual element as parent).
+
+Solution: persist the BB before establishing the hierarchy/relationship"		Improvement	iteraplan PO	17/Jun/13 1:46 PM	28/Jun/13 11:10 AM					excel	import								"23/Jun/13 9:54 PM;jme@iteratec.de;When adding a new hierarchical BB the relationship to the virtual root element (""-"") was established explicitely. This ran into an error as the new BB is in transient state and cannot be used to link the virtual element.
+
+However, it is not necessary to explicitely establish this relationship, because it is already done in the factory method.
+"	"28/Jun/13 11:10 AM;ase;I have done some import test adding a Building Block and a relation to it at the same time. 
+With an older version I always get to an error page ""An error occurred while processing your request.""
+With the fixed version and it works fine. "																																																					

@@ -1,0 +1,7 @@
+Should be displayed used attribute/relation in the context menu	"Summary: Attribute/relation which was applied as axis doesn't displayed in the Context menu for Content/axis
+
+Steps to reproduce:
+1. Go to LSD
+2. Use Infrastructure Element  as content type
+3. Open context menu for Content/Y axis
+Actual: Menu for row association isn't displayed with used  relation connection"		Bug	iteraplan PO	16/Apr/15 10:09 AM	22/Apr/15 1:57 PM																																																																				

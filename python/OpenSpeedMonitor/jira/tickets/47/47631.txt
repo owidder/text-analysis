@@ -1,0 +1,8 @@
+Wrong behavior after changing applied self-related filter	"Steps to reproduce:
+1. Go to LSD
+2. Use any self-related filter for axis
+3. Change filter to any other self-related
+Actual: Wrong behavior after changing applied self-related filter
+Expected: It is possible to change filter form applied to any other"	47481	Sub-task	iteraplan PO	20/Apr/15 9:34 AM	22/Apr/15 3:53 PM													"Workspace: Windows 8.1
+Revision: 951"	20/Apr/15 4:11 PM;alvo;fixed under IPNINE-478	"20/Apr/15 4:17 PM;dasm;Verified
+(revision 960)"																																																					

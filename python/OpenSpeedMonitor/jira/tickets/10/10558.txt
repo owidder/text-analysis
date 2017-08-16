@@ -1,0 +1,3 @@
+Verlinkung der Messpunkte optimieren (Performance, Darstellung)	"- Übersetzung auf Deutsch
+- Performance bei großer Datenbasis noch unzureichend (Paging möglich?)
+- Alternative Verlinkung zur Stundenansicht der zugrundeliegenden Woche"		Task	OpenSpeedMonitor	25/Sep/13 10:07 AM	28/Oct/13 8:55 AM																																																																				

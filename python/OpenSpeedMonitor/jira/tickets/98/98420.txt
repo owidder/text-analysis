@@ -1,0 +1,47 @@
+RELEASE: Create Basic "Single Element View"-Page	"*Summary:*
+
+Create basic page
+
+
+
+*Implementation Details:*
+
+* Do *not* use the REST-API, but use directly the businessObjects from the datamodel
+
+* -Use this REST-interface: https://www.iteraplan.de/doc/display/iteraplan54/Single+Element+API-
+
+* Use Angular Material Design, similar to ""/system""
+
+* Structure from attached screenshot, i.e.
+
+
+
+""Name:"" NAME-STRING""
+
+DESCRIPTION-TEXT
+
+""Productive:"" PRODUCTIVE-DATES (if available productivPeriod)
+
+""Status:"" STATUS-VALUE (if available)
+
+
+
+<---- TABS ------>
+
+
+
+""Attributes""
+
+ATTRIBUTE-GROUP-NAME-sections in 2-column-layout (if Attribute Group is not empty)
+
+
+
+""Self-Relations"" (German: Selbst-Beziehungen)
+
+SELF-RELATION-sections in 2-column-layout (if self relation is not empty)
+
+
+
+""Relations""
+
+RELATION-sections in 2-column-layout (if relation is not empty)"		New Feature	iteraplan Speedbird	07/Oct/16 11:31 AM	18/Oct/16 1:58 PM														14/Oct/16 1:47 PM;msr;No Single Element View for Business Mappings but for all other Tiles in the "DATA"-Tab	20/Oct/16 3:08 PM;roia;Documentation: https://www.iteraplan.de/doc/display/iteraplan54/Single+Element+View																																																					

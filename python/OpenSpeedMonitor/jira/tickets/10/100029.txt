@@ -1,0 +1,17 @@
+IFD - Click is reseting the view on IE11	"Reproduce (with sample data):
+
+
+
+# Open IFD in the interactive Client
+
+# Click on a random box 
+
+# The View is reset to default
+
+(Onyl appears in the IE11)
+
+
+
+Expected: To click on elements
+
+Actual: No click possible"		Bug	iteraplan PO	21/Oct/16 11:29 AM	22/Oct/16 11:09 AM														22/Oct/16 11:09 AM;msr;Duplicate to ITERAPLAN-4944																																																						

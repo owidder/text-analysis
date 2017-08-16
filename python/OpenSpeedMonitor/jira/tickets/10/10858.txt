@@ -1,0 +1,6 @@
+Übersichts-View Queues	"Wir brauchen eine Übersicht aller Queues aller konfigurierten WPT-Server. Ähnlich der STATUS-Seite des WPT-Monitors.
+Zusätzlich zu den Größen der Queues (aktuell eingestellte Jobs) wie im WPTMonitor hätte ich gerne die folgenden Informationen:
+
+* Anzahl der Jobs
+* Test-Ausführungen pro Minute
+* Anzahl der Agenten (müsste sich über die getTesters.php des zugehörigen WPTServers herausbekommen lassen)"		New Feature	OpenSpeedMonitor	21/Jan/14 9:03 AM	20/Feb/14 4:40 PM														20/Feb/14 4:40 PM;nkuhn;duplicate of IT-296																																																						

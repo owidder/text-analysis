@@ -1,0 +1,10 @@
+Excel Importer should be able to handle empty rows and coloumns	"This problem is split in two parts, both having caused trouble for customers previously.
+
+The first part causes the excel importer to stop looking for further attributes when encountering an empty cell in the hidden machine-readable part of the header definitions. All attributes behind this attribute will be ignored without further notice.
+This can cause trouble when a customer manually adds a new attribute in XML, but fails to add content of the hidden header, since he will not get an error notification of any kind.
+It could easily be fixed by, instead of breaking when encountering an empty cell, iterating to the last filled cell. The number of this cell can be obtained by {{Row#getgetLastCellNum()}}. Occurrences of empty cells could easily be logged and proper error messages indicating false formatting should be displayed.
+
+The second part is a problem that can cause trouble if a customer has, for some formatting or filtering reasons, empty lines in an Excel Sheet containing a number of elements that should be changed via Excel import.
+A possible fix would be, just like in part one, to iterate until the last row. The number of this row can be obtained by {{Sheet#getLastRowNum()}}. 
+However, since the sheet is set to have a high pre-defined number of rows in order to provide formatting for manually added elements, this would cause way more operations than necessary.
+Explicitly initializing these rows might not be necesary though, since a default cell style can be set by {{Sheet#setDefaultCell()}}"		Improvement	iteraplan PO	01/Jul/13 3:24 PM	30/Dec/15 2:53 PM					error	excel	import	message	usability																																																											

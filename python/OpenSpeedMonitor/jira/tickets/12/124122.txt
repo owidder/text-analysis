@@ -1,0 +1,33 @@
+For missing BBT-permission: BBT is missing on attribute creation process	"*Summary:*
+
+If you miss the read permission for a Building Block Type, this Building Block Type cannot be selected during the creation process of a new attribute.
+
+
+
+*Reproduce:*
+
+* Login with a user of a role which does *not* have the read-permission for Business Domain, but the permission to create an attribute
+
+* Navigate to Administration\attributes
+
+* Click on ""Create Element"" and ""Text Attribute""
+
+* Click on ""Activated for the following Building Block Types""
+
+
+
+*Actual:*
+
+* Business Domain does not exist in this list
+
+
+
+*Expected:*
+
+* Business Domain is part of this list
+
+
+
+*Solution idea:*
+
+* Create a new (hidden? / at least not officially documented) REST API which sends the full localised metamodel to the new client"		Bug	iteraplan Speedbird	12/Jun/17 1:53 PM	04/Jul/17 5:19 PM														04/Jul/17 5:19 PM;mash;Review is done																																																						

@@ -1,0 +1,51 @@
+Handle ATG permission on single attribute views	"When disabling VIEW permission for any Attribute Group it is possible to still see it on Attribute list and all attributes that it has.
+
+
+
+Remove this information from UI if user user doesn't have VIEW permission for ATG.
+
+
+
+Discuss further solution with [~msr],
+
+
+
+First idea:
+
+
+
+For list: leave blank space in list.
+
+
+
+For Single attribute page: remove attribute group editor if this attribute has ATG with disabled VIEW permission
+
+
+
+ 
+
+
+
+How the problem can be reproduced (Thanks to Max):
+
+
+
+create some test attribute and some test attribute group. Set this attribute for new attribute group. disable VIEW permission for some user (I did for mainuser). Login as mainuser ->attribute list page -> this new attribute group is visible for me
+
+and attribute is visible too
+
+Disabling VIEW permission for Default attribute group and life cycle group has no effect in attribute list for me as well
+
+
+
+ "		Improvement	iteraplan Thunderduck	10/Jul/17 4:04 PM															"21/Jul/17 1:47 PM;scz; 
+
+{code:java}
+
+api/administration/permissions.attributeGroupPermissions.attributeGroupId === api/attributes/(colDef.fieldID).id_atg
+
+.readPermission
+
+{code}
+
+ "																																																						

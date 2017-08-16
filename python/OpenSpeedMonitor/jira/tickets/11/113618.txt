@@ -1,0 +1,9 @@
+Attribute Groups: UI Improvements - Part 2	"* Fix the width of all attribute groups to 350 pixels
+
+* Change drag-icon:
+
+** Shrink the size to make it smaller
+
+** Brighten the color
+
+** Make it vertically centered to the text"		New Feature	iteraplan Speedbird	02/Mar/17 3:43 PM	07/Mar/17 4:00 PM														07/Mar/17 4:00 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-403																																																						

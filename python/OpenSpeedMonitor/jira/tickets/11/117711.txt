@@ -1,0 +1,33 @@
+Tree View?	Where is the Tree View in new Client?		Fault	iteraplan Support	05/Apr/17 10:31 AM	05/Apr/17 10:49 AM														"05/Apr/17 10:31 AM;ansgar.marsiske@coface.com;
+
+!2017-4-4-10-30-55-524.png|thumbnail!"	"05/Apr/17 10:49 AM;cst;Dear Mrs. Marsiske,
+
+
+
+thanks for your inquriy.
+
+
+
+The Tree view is not implemented in the interactive client of version 5.5.
+
+In version 6.0 the Tree View can be choosed in the list view. 
+
+
+
+For more informations you can check the following link:
+
+
+
+https://doc.iteraplan.de/display/iteraplan55/Migration+to+the+Interactive+Client 
+
+
+
+Greetings,
+
+
+
+Christoph Stangl - iteraplan Support
+
+
+
+"																																																					

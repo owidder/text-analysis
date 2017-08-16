@@ -1,0 +1,83 @@
+Empty search result leads to exception	"Reproduce:
+
+
+
+# Got to global search tab
+
+# Search for some random string which does not give any results
+
+
+
+Result:
+
+* ""Results: 0 elements"" is shown correctly, but there is an exception in the logs:
+
+
+
+{code}
+
+TypeError: An exception occurred: j.searchResults.forEach is not a function
+
+    at h (combined1487587176262.js:2)
+
+    at h (combinedBower1487587176262.js:21)
+
+    at combinedBower1487587176262.js:21
+
+    at n.$eval (combinedBower1487587176262.js:21)
+
+    at n.$digest (combinedBower1487587176262.js:21)
+
+    at n.$apply (combinedBower1487587176262.js:21)
+
+    at f (combinedBower1487587176262.js:20)
+
+    at q (combinedBower1487587176262.js:21)
+
+    at XMLHttpRequest.v.onload (combinedBower1487587176262.js:21)
+
+Error: An exception occurred: [ngRepeat:dupes] Duplicates in a repeater are not allowed. Use 'track by' expression to specify unique keys. Repeater: searchResult in $ctrl.searchResults, Duplicate key: string:t, Duplicate value: t
+
+http://errors.angularjs.org/1.5.3/ngRepeat/dupes?p0=searchResult%20in%20%24ctrl.searchResults&p1=string%3At&p2=t
+
+    at combinedBower1487587176262.js:19
+
+    at combinedBower1487587176262.js:24
+
+    at d (combinedBower1487587176262.js:21)
+
+    at n.$digest (combinedBower1487587176262.js:21)
+
+    at n.$apply (combinedBower1487587176262.js:21)
+
+    at f (combinedBower1487587176262.js:20)
+
+    at q (combinedBower1487587176262.js:21)
+
+    at XMLHttpRequest.v.onload (combinedBower1487587176262.js:21)
+
+{code}"		Bug	iteraplan Speedbird	20/Feb/17 2:08 PM	17/Mar/17 2:28 PM														"15/Mar/17 12:03 PM;roia;[~msr], this error happens because in case of empty search result the backend returns response body with string ""{{Empty result.}}""
+
+
+
+Frontend is written in the way that it expects successful response to be JSON with an array of records found. In case of no results - empty array.
+
+
+
+I have talked to [~mada] about this behavior and it's easy to fix the backend to return empty array. 
+
+
+
+Also we can check the response on frontend, if it's string and its value is ""Empty result."", it's easy too.
+
+
+
+So we would like you to make a final decision where it should be implemented - frontend or backend."	"16/Mar/17 1:32 PM;roia;[~mada], here's the response from Alexei:
+
+{quote}the best solution for IPTS-627 is to adjust the Server side to return an empty array if nothing was found. The front end should be adjusted to Show the empty searching result message in this case. 
+
+{quote}"	"17/Mar/17 2:28 PM;ants;Reviews done:
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-440
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-441"																																																				

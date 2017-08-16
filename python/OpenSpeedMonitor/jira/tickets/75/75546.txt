@@ -1,0 +1,5 @@
+Integration der secureBox in die OTTO Continuous Delivery (CI)	"Die secureBox soll in die Scale Build-Pipeline integriert und damit vollständig automatisiert aus- geführt werden können. *Hierzu wird ein entsprechender Job in dem von dem Scale Team ver- antworteten Build-Server (Jenkins) aufgesetzt und mit entsprechenden Konfigurationen für die secureBox versehen.*
+
+
+
+Abgrenzung: Die secureBox versendet aktuell noch keine Reporting E-Mails. Dies kann über ei- nen solchen Build-Job autark implementiert werden, ist aber nicht Bestandteil dieses Angebotes."		Story	secureCodeBox	03/Mar/16 3:14 PM						OTTO																																																															

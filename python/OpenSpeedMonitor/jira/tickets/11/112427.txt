@@ -1,0 +1,77 @@
+VPN-Zertifikat für "dmkh" revoked	"Liebe Admins,
+
+
+
+das VPN-Zertifikat für den Nutzer ""dmkh"" wird abgelehnt (siehe Screenshot).
+
+
+
+Könnt ihr es euch bitte anschauen?
+
+
+
+Danke
+
+
+
+Marcel"		Task	Infrastruktur	20/Feb/17 10:18 AM	21/Feb/17 2:10 PM	Routing													"20/Feb/17 11:18 AM;kti;Hallo Marcel,
+
+
+
+der Login auf der Firewall wie auf das Zertifikat sind noch gültig.
+
+Anbei nochmal das Zertifikat.
+
+
+
+Könnt ihr den Login bitte nochmal checken?
+
+
+
+Danke!
+
+
+
+VG
+
+Kathrin
+
+"	"20/Feb/17 11:22 AM;msr;Hallo Kathrin,
+
+
+
+danke für die schnelle Reaktion.
+
+Er testet es gleich nochmal.
+
+
+
+VG
+
+
+
+Marcel"	"20/Feb/17 2:08 PM;msr;Hallo Kathrin,
+
+
+
+das Problem besteht weiterhin. Siehe neuer Screenshot.
+
+Ich schaue, ob ich dich persönlich antreffe, um über eine mögliche Lösung zu beraten.
+
+Bis gleich
+
+
+
+Marcel"	20/Feb/17 2:57 PM;msr;Das Problem ist gelöst. Danke.	"21/Feb/17 2:10 PM;kti;Hallo Marcel,
+
+
+
+danke für deine Rückmeldung.
+
+Da jetzt alles klappt, schließe ich das Ticket.
+
+
+
+VG
+
+Kathrin"																																																		

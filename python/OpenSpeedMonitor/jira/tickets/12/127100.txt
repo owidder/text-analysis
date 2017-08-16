@@ -1,0 +1,13 @@
+Singel Element View - Create new element and relations (IE 11) 	"When a new element is created over the single element view, the relation field has no effect in IE 11.
+
+ # Open a Information System in the single element view 
+
+ # Click on the create new button 
+
+ # Click in the field ""Add relation"" 
+
+ # Nothing happens
+
+
+
+This problem occurs only in IE "		Bug	iteraplan PO	14/Jul/17 8:38 AM																																																																					

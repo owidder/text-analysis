@@ -1,0 +1,1 @@
+Persistierung der Spider-Ergebnisse zum Microservice verlagern		81947	Sub-task	secureCodeBox	27/Apr/16 9:04 AM	27/Apr/16 3:33 PM																																																																				

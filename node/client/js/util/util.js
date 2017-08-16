@@ -45,7 +45,11 @@ bottle.factory("util", function (container) {
         var currentValue = this.getHashParam(paramName);
         var newUrl;
         if(_.isEmpty(currentValue)) {
-            newUrl = this.adddHash($.url()) + "&" + paramName + "=" + newValue;
+            var _url = this.adddHash($.url());
+            if(!_url.endsWith("&")) {
+                _url = _url + "&";
+            }
+            newUrl = _url + paramName + "=" + newValue;
         }
         else {
             newUrl = $.url().replace(paramName+"="+currentValue, paramName+"="+newValue);
@@ -56,12 +60,19 @@ bottle.factory("util", function (container) {
 
     util.removeHashParam = function (paramName) {
         var currentValue = this.getHashParam(paramName);
-        var newUrl;
         if(!_.isEmpty(currentValue)) {
-            newUrl = $.url().replace(paramName+"="+currentValue, "");
+            var url = $.url();
+            var woAmpersand = paramName + "=" + currentValue;
+            var wAmpersand = "&" + woAmpersand;
+            var newUrl;
+            if(url.indexOf(wAmpersand) > -1) {
+                newUrl = url.replace(wAmpersand, "");
+            }
+            else {
+                newUrl = url.replace(woAmpersand, "");
+            }
+            this.setHref(newUrl);
         }
-
-        this.setHref(newUrl);
     };
 
     util.setHref = function(newUrl) {

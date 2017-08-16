@@ -1,0 +1,73 @@
+Color Scheme	"The client must use a consistent color scheme.
+It should be based on the currently fashionable colors as in:
+* Windows Modern,  see comment below
+* flat colors: http://flatuicolors.com/
+* Android default colors
+* iteratec color scheme: see attachment
+* existing iterplan color scheme
+
+The colors must
+* be modern, fresh, flat
+* indicate that iteraplan is by iteratec.
+
+The colors might look like the flat colors, but with more magenta,
+or like iteraplan, but a bit more colorful.
+
+The color scheme must define colors for two purposes:
+* contextual colors in Bootstrap
+* simply for giving elements different colors, without a fixed semantics.
+
+Bootstrap contextual colors are: primary, muted,error, warning, info, success, active and so on.
+See http://getbootstrap.com/css/  section Helper classes, Contextual colors
+
+In addition, the color scheme must provide 8 colors to give elements in a diagram a background color.
+These colors must not be the same as the contextual colors.
+
+The least important requirment ist that we use the existing iteraplan colors.
+
+Process for the scope of this ticket: prepare three variants, present to product owner, internal discussion in Munich, then decision.
+
+
+TODO wfr  iteraplan colors as-is as a file or as text."		New Feature	iteraplan PO	11/Jul/14 8:25 AM	06/Oct/14 11:35 AM														"11/Jul/14 8:25 AM;wfr;windows modern default colors are
+according to http://stackoverflow.com/questions/11578867/is-there-a-list-of-standard-tile-colors-for-metro-style-windows-8-apps
+
+PURPLE
+RGB 162 0 255
+A200FF
+
+MAGENTA
+RGB 255 0 151
+FF0097
+
+TEAL
+RGB 0 171 169
+00ABA9
+
+LIME
+RGB 140 191 38
+8CBF26
+
+BROWN
+RGB 160 80 0
+A05000
+
+PINK
+RGB 230 113 184
+E671B8
+
+ORANGE
+RGB 240 150 9
+F09609
+
+BLUE
+RGB 27 161 226
+1BA1E2
+
+RED
+RGB 229 20 0
+E51400
+
+GREEN
+RGB 51 153 51
+339933"	"06/Oct/14 11:35 AM;wfr;Done successfully.
+Closed directly because work was before Kanban workflow set up."																																																					

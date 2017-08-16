@@ -1,0 +1,21 @@
+Geb-Tests gegen deployte Release-Instanz laufen lassen	"Hintergrund:
+
+
+
+Wir haben zu oft Probleme mit Links gehabt, die nur in der (hinterm reverse-proxy) deployten Instanz auftereten. Das würde ich gerne hiermit abfangen.
+
+
+
+Umsetzung:
+
+
+
+Das sollte ein neuer Bamboo-Plan werden, der nach jedem release-Deployment automatisch läuft. Ein Teil der Geb-Tests lässt sich per Annotation ignorieren, wenn gegen eine externe Instanz getestet wird. Das ist bereits für viele Tests geschehen. Wenn der Plan läuft müssten wir sehen,  ob die richtigen Tests laufen und alle grün sind.
+
+
+
+Damit erzeugte Objekte (z.B. Skripte und Jobs) nicht zu Problemen und scheiternden Tests bei Folge-Läufen führen muss das docker-Deployment angepasst werden, sodass die release-Instanz ohne mySQL-Volume deployt wird. So wäre die Instanz nach jedem Deployment blank. Hierbei sollte großer Wert darauf gelegt werden, dass diese Art  Deployment nicht aus Versehen bei anderen Instanzen erfolgen kann!!!
+
+
+
+Abschließend sollte dann nach einem Lauf und komplett grünen Tests noch gesichert werden, dass die nach den Tests verbleibenden Objekte keine aktiven Mess-Jobs beinhalten. Wenn dem nicht so ist müssten die Tests/Testdaten angepasst werden um dies sicherzustellen."		Story	OpenSpeedMonitor	01/Mar/17 9:06 AM																																																																					

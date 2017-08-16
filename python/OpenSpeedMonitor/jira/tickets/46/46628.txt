@@ -1,0 +1,2 @@
+Refactor Context to Neighborhood	"The existing Neighborhood diagram is also known as Context diagram.
+Change all keys, identifiers and names in the code from context to neighborhood, so that the name ""context overview"" is free."	46567	Sub-task	iteraplan PO	07/May/14 3:43 PM	13/May/14 10:33 AM														13/May/14 10:33 AM;gph;Ok.																																																						

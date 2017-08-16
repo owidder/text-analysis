@@ -1,0 +1,5 @@
+Bei der Erstellung eines Jobs gehen die Variablen für ein Skript verloren wenn man den Tab wechselt	"Erstellt man einen Job und wählt ein Skript aus, dass mit Variablen befüllt wird und hat diese eingegeben, gehen diese verloren wenn man den Tab auf ""Job Settings"" oder ""Advanced Settings"" wechselt.
+
+
+
+D.h. aktuell muss man den Job mit der Skript Tab Ansicht speichern."	116644	Sub-task	OpenSpeedMonitor	24/Mar/17 11:55 AM																																																																					

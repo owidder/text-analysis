@@ -1,0 +1,15 @@
+Changes in the Saved Queries causes error in Dashboad Diagramm	"If a Saved Queries ContentType changes, it will lead to an exception if the Saved Query is part of a Dashboard.
+
+To Repoduce:
+ 
+ - --> Visualisations -->Landscape Diagamm  create a Query --> Save Query
+ - Administation --> Document Templates
+ - Create a Template
+ - Use the Saved Query in the Template
+ - --> Visualistaions Custom Dashboard --> Create Dashboard
+ - Save Dashboard
+ - --> Visualisations -->Landscape Diagamm  edit the Query (change BB Type) --> Save Query (name should be the same as before)
+ - --> Visualisations Custom Dashboard --> error
+e.g.:
+ de.iteratec.iteraplan.model.TechnicalComponentRelease cannot be cast to de.iteratec.iteraplan.model.InformationSystemRelease
+References ITERAPLAN-1702"		Bug	iteraplan PO	09/Jul/13 3:23 PM	10/Jul/13 3:39 PM					consistency	dashboard	database	savedquery						10/Jul/13 3:39 PM;bra;(/) works now	10/Jul/13 6:58 PM;sry;It is still possible that existing installation contain such broken saved queries. For now it was decided that we do not repair such queries as part of a migration, as such cases are most probably rather rare. The workaround is to re-create such queries.																																																					

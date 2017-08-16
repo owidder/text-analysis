@@ -1,0 +1,9 @@
+Landscape Diagram Layout problem. The Landscape Diagram configuration is not adjusted correctly if one switches between BuildingBlocks and Attributes for the vertial axis.	"to reproduce:
+1. choose a hierarchical BBType for the vertical axis of a landscape diagram and choose to only display level 2
+2. generate the report => (/) report layout ok
+3. change the type of the vertical axis to be an attribute
+4. generate the report => (x) axis label and values of the attribute overlap
+5. save the report
+6. execute the saved report => (/) layout of axis label and attribute values ok
+
+this seems just to be an insufficient reset on the underlying memBean when switching between BBTypes and Attributes"		Bug	iteraplan PO	28/May/13 12:16 PM	30/Dec/15 2:32 PM																																																																				

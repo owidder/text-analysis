@@ -1,0 +1,44 @@
+Make relation IS to IE attributable	"Includes:
+* New entity, service and DAO
+* Adjust relation end at IS and IE
+* Adjust IS and IE service accordingly 
+* HistoryBBChangeSet: Adjust
+* Adjust JSPs: Editing, viewing etc.
+* Tabular reports: Probably not much to do ...
+* Check consistency checks for adjustments
+* Check if elastic bridge needs to be adjusted 
+* Query extensions: Do not include possibility to query for attributes of the relation, but adjust current possibility to query for attributes of related elements
+
+In subtasks:
+* Adjust all relevant visualizations: Landscape, Cluster, Masterplan, Bar/Pie
+* Migration scripts
+* Documentation
+** As the excel format changes, pay extra attention that there's helpful information for the user how to handle old excel files. Include a step-by-step guide. 
+** Do the same for REST/JSON format.
+* Adjust demo data: Add an attribute (""apportionment"") and add some values (between 0 and 100). Ask FKA for details.
+* Adjust the start screen
+
+Do not forget to extend the user documentation.
+
+See also the two other attributable relations, ISR to BO and TCR to IE, for reference
+
+If appropriate, create independent sub-tasks."		New Feature	iteraplan PO	12/Nov/14 11:43 AM	26/Jan/15 10:00 AM					metamodel									"19/Jan/15 3:38 PM;fam;Following issues to clarify or fix:
+
+-Isr2IeAssociationType.java : In the method of line 32 is twice used the same parameter for single and plural. Is this ok?
+-iteraplanModel.ecore & iteraplanModelForTabularReporting.ecore : Old references to ISR & IE removed, but no new reference to Isr2IeAssociation added. Is this ok?
+-Please clarify questions of all left ""TODO TAM"" blocks, fix issues (if necessary) and remove this lines.
+-The new schema of structured type relations is currently not documented, as there will come some more changes. But, is any other documentation done, e.g. about the new attributable relations?   "	"23/Jan/15 10:50 AM;tam;{quote}-Isr2IeAssociationType.java : In the method of line 32 is twice used the same parameter for single and plural. Is this ok?{quote}
+Yes, that's ok because there ist´no plural value (see also isr2bo or tcr2ie), but constructor need both values, so we use singular instead of null.
+
+
+{quote}-iteraplanModel.ecore & iteraplanModelForTabularReporting.ecore : Old references to ISR & IE removed, but no new reference to Isr2IeAssociation added. Is this ok?{quote}
+An improvement ticket was created ITERAPLAN-2900
+
+
+{quote}-Please clarify questions of all left ""TODO TAM"" blocks, fix issues (if necessary) and remove this lines.{quote}
+Done.
+
+
+{quote}-The new schema of structured type relations is currently not documented, as there will come some more changes. But, is any other documentation done, e.g. about the new attributable relations?{quote}
+Because the chages and new relation are similar to isr2bo or tcr2ie documentation was short with references to the old relations.
+The most important notes were done with http://www.iteraplan.de/issues/browse/ITERAPLAN-2856"	26/Jan/15 10:00 AM;fam;Checked solutions and it's all okey																																																				

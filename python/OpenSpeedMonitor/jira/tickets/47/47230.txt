@@ -1,0 +1,32 @@
+Sprint 6? Nesting by Hierarchy for same BBT	"Analogue to story IPNINE-225 .
+*Requested by B-108 and FKA:*
+
+*Summary:*
+Cluster & nest elements by hierarchy, if both are of the same Building Block Type for 4 levels.
+
+*As-Is:*
+To be checked
+
+*To-Be:*
+Cluster and nest same Building Block Types by hierarchy.
+
+*Affected parts of the system:*
+* Nesting Cluster Diagram
+* Inner Elements
+* Outer Elements
+
+*Approach:*
+ Always select the highest level of hierarchy as outer element, the second level as inner element, the third level as nested inner element and the fourth level as nested inner element of the already nested inner element. The limit is 4 levels of hierarchy.
+
+*Acceptance Criteria:*
+The user starts with the view of an open NCD with IS as inner elements and ISD as outer elements.
+The user opens the context menu for outer boxes with secondary click. 
+The user hovers over ""Change outer element"".
+A second level menu opens immediately on hover.
+The users clicks on ""Information System"" with primary click.
+The menu structure disappears.
+The diagram is updated immediately: All outer element are now also Information System. The nesting criterion is hierarchy relationship. The highest level of Information Systems is used as outer elements.
+
+The steps above must work for all outer elements. The steps above must work independently of any grouping before or not.
+"		New Feature	iteraplan PO	04/Dec/14 1:54 PM	09/Feb/15 4:24 PM														"09/Feb/15 4:24 PM;dasm;Verified
+Revision 631"																																																						

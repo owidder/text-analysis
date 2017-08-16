@@ -1,0 +1,75 @@
+"SQLServerException: Too many parameters" in some classic queries	"_Reproduce (needs more than 2100 building blocks of one type, in this example information systems):_
+
+# Database: MS SQL Server
+
+# Go to spreadsheet reports, select Business Processes as type
+
+# Add query extension ""Properties of assigned Information Systems""
+
+# Select all status values and clear the dates from the ""Productive"" condition
+
+# Send query
+
+
+
+_Expected:_ List of all Business Processes which have a connection to an Information System
+
+
+
+_Actual:_ 
+
+{noformat}
+
+[ERROR] 23-Nov-2015 17:43:44 [presentation.flow.IteraplanTechnicalExceptionHandler] A technical exception occurred
+
+org.springframework.webflow.execution.ActionExecutionException: Exception thrown executing [AnnotatedAction@5923288f targetAction = [EvaluateAction@133bf201 expression = tabularReportingFrontendService.addColumn(flowScope.memBean, flowRequestContext, flowExecutionContext), resultExpression = flowScope.memBean], attributes = map[[empty]]] in state 'show' of flow 'tabularreporting/start' -- action execution attributes were 'map[[empty]]'
+
+	at org.springframework.webflow.execution.ActionExecutor.execute(ActionExecutor.java:60)
+
+...
+
+Caused by: de.iteratec.iteraplan.common.error.IteraplanTechnicalException: A general technical error occurred.
+
+	at de.iteratec.iteraplan.persistence.dao.QueryDaoImpl$RunCriteriaCallback.doInHibernate(QueryDaoImpl.java:257)
+
+	at de.iteratec.iteraplan.persistence.dao.QueryDaoImpl$RunCriteriaCallback.doInHibernate(QueryDaoImpl.java:245)
+
+	at org.springframework.orm.hibernate3.HibernateTemplate.doExecute(HibernateTemplate.java:407)
+
+...
+
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:92)
+
+...
+
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: The incoming tabular data stream (TDS) remote procedure call (RPC) protocol stream is incorrect. Too many parameters were provided in this RPC request. The maximum is 2100.
+
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+
+...
+
+{noformat}
+
+
+
+The Information Systems fulfilling the query extensions are more than 2100. Their IDs are used as parameters in the main query, thus causing the error.
+
+
+
+_Fix:_
+
+For now, fix by splitting the sub-query results in small-enough chunks and execute the main query several times, merging the results."		Bug	iteraplan PO	25/Nov/15 3:25 PM	09/Mar/16 11:36 AM					mssql	query								"08/Mar/16 4:58 PM;tam;Added JavaDoc to modified method _loadFilteredElementList_
+
+Removed commented block in ConsistencyCheckDaoImpl 
+
+
+
+About refactoring: probably we need another ticket for this, since PMD-Build fails by adding even one new method to GenericBaseDao 
+
+
+
+No changes to comparator variable, only JavaDoc."	09/Mar/16 11:36 AM;pzi;I can confirm the PMD Error - the Problem is that with the changes the GenericBaseDao has too many methods (according to PMD), so we should skip this refactoring for now and move it to a serparate ticket.																																																					

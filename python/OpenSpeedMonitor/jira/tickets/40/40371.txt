@@ -1,0 +1,1 @@
+Doppelung fillWithAnnotations raus	fillWithAnnotations kommt nahezu identisch vor in EventResultDashboardController und CsiDashboardController	38318	Sub-task	OpenSpeedMonitor	11/May/15 3:42 PM	12/May/15 1:04 PM														12/May/15 1:04 PM;bwo;Methode in AnnotationUtil extrahiert. 																																																						

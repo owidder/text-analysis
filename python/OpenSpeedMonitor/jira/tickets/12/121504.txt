@@ -1,0 +1,17 @@
+Attribute - All Attributes - Click on the button (✔) not possible in the attribute Name Field (IE11)	"Reproduce with trunk and only in the IE 11
+
+ # Open ""Administration"" and ""Attributes""
+
+ # Open a random attribute 
+
+ # Edit the name of the attribute
+
+ # Try to click on the button ""✔""
+
+ # Nothing happens 
+
+
+
+Actual: It is not possible to click on the button ""✔"" 
+
+Expected: That the changes will be saved on clicking the button ""✔"" "		Bug	iteraplan PO	16/May/17 9:30 AM	23/May/17 5:45 PM														23/May/17 5:45 PM;fka;Works with current nightly and IE11																																																						

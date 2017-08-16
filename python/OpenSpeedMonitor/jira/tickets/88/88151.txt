@@ -1,0 +1,15 @@
+ConnectivityProfiles auf der Otto-Datenbank umbenennen	"Wegen eines fehlgeschlagenem Grails-Change liegen momentan falsch benannte Connectivity-Profiles in der Otto-Datenbank. Konkret müssen die inaktiven Profile ubenannt werden. Diese sind die original Version von editierten Profilen.
+
+
+
+{code}
+
+UPDATE `DATABASENAME`.`connectivity_profile` SET `name`='DSL 6.000_old_1' WHERE `id`='1';
+
+UPDATE `DATABASENAME`.`connectivity_profile` SET `name`='UMTS_old_3' WHERE `id`='3';
+
+UPDATE `DATABASENAME`.`connectivity_profile` SET `name`='DSL 16.000_old_7' WHERE `id`='7';
+
+UPDATE `DATABASENAME`.`connectivity_profile` SET `name`='DSL 2.000_old_8' WHERE `id`='8';
+
+{code}"		Task	OpenSpeedMonitor	22/Jun/16 6:14 PM	24/Aug/16 6:14 PM																																																																				

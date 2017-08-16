@@ -1,0 +1,23 @@
+Assoziierte Objekte lassen sich in CRUD-View nicht wieder entfernen	Ich kann zwar aus der select-Box die bisher assoziierten Objekte deselektieren. Nach Speichern der Änderung bleiben die assoziierten Objekte bestehen.		Bug	OpenSpeedMonitor	07/May/15 1:07 PM	27/May/15 4:50 PM														"13/May/15 2:38 PM;rkr;Betrifft:
+
+* -EventController bei Abwahl aller Einträge für Job Group-
+
+* -GraphiteServerController bei Abwahl aller Einträge für Graphite Paths-
+
+* -JobGroupController bei Abwahl aller Einträge für Graphite Servers-
+
+
+
+Ursache: In jenem Fall wird der entsprechende Parameter nicht ans Backend übertragen; dies wird vom Backend nicht von selbst korrekt verarbeitet.
+
+Lösung: Controller und views angelegt und generierte Update-Funktionen modifiziert um Parameter im Backend zu verarbeiten."	"27/May/15 2:14 PM;nku;Bitte:
+
+* die generierten Views wieder löschen.
+
+* In den Controllern wieder {code}static scafold = true{code} setzen.
+
+* Nur die angepasste update-Methode ""überschreiben""
+
+
+
+-> Testen, ob es damit auch funktioniert."																																																					

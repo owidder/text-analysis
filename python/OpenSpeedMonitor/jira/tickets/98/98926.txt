@@ -1,0 +1,5 @@
+LATER: Include Attribute Groups in the metamodel	"* Use $resource to get the information of /api/atg/ when the application is loaded
+
+* Extend the metamodel with a new class for attribute groups
+
+* Extend the ""SimplePropertyType"" with a new field ""attributeGroup"""		New Feature	iteraplan Speedbird	12/Oct/16 11:42 AM	07/Nov/16 4:04 PM																																																																				

@@ -1,0 +1,8 @@
+Remove presentation layer related dependencies from service classes	"In ExportServiceImpl, the type HttpServletRequest is references by ""import"". Presentation layer related classes generally should not have any references to presentation layer types. This can have various side effects, like errors when starting the spring application context, which instantiates service types as beans. In this case, these service classes would need presentation *.jar libraries on the classpath.
+
+Example: Initialize database in ant installer fails with ""ClassNotFoundException"", when ""javaee.jar"" is removed from ""lib/dev"" directory.
+
+Compare:
+https://www.iteraplan.de/issues/browse/ITERAPLAN-1579?focusedCommentId=16749&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-16749
+
+Refactor the service classes by removing HttpServletRequest (and other presentation layer classes?). This type is handed down deep into the call stack just to get the server/application URL. This could be passed as String."		Task	iteraplan PO	30/Sep/13 9:26 AM	19/Jan/16 11:33 AM																																																																				

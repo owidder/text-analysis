@@ -1,0 +1,12 @@
+Excel-Import: Removing a BusinessObject from a Information Flow is not detected by the DiffBuilder and not persistet	"Situation:
+Interface with an attached BO
+
+Path:
+- Export the model to Excel
+- Remove the BO in the sheet ""Information Flow"" from the Information Flow corresponding to the Interface
+- Save the changement
+- Import the Excel-File in iteraplan
+
+Result:
+- No changes detected.
+- The BO is still attached to the interface"		Improvement	iteraplan PO	17/Jun/13 9:51 AM	30/Dec/15 2:34 PM					excel	import								17/Jun/13 11:01 AM;sry;Removing relations is not supported at all by the importer concept/ implementation, neither in other areas. In so far, it is consistent (but still questionable) behaviour.	30/Dec/15 2:34 PM;fka;With some release prior to 3.3																																																					

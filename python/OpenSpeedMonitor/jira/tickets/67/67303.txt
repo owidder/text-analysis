@@ -1,0 +1,1 @@
+Outdoor: Bugfixes	- Einfärbung der Anzeigen u.U. unleserlich		Task	EAMV15	17/Dec/15 10:59 AM																																																																					

@@ -1,0 +1,1 @@
+Analyse drag&drop functionaliy in AG-Grid	*Timebox: 1 day*	125416	Sub-task	iteraplan Speedbird	19/Jul/17 9:28 AM	24/Jul/17 1:51 PM																																																																				

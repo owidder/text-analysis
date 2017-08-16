@@ -1,0 +1,3 @@
+JUnit test TestExcelFormatCompatibilityBankModel fails and is not executed with ant task	"The test TestExcelFormatCompatibilityBankModel in the classic client is not executed by the ant task, because its name does not end with 'Test' (the name should be *Test.java).
+
+If you run the test without ant, the test fails. It should be checked, if the test is neccessary or can be deleted. If it is neccessary and should not be deleted, you should find out why the test fails."		Bug	iteraplan PO	12/Jul/16 11:13 AM																																																																					

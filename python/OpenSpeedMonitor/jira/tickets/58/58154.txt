@@ -1,0 +1,5 @@
+Aufnahme csBasedOnVisuallyCompleteInPercent als Measurand zur Anzeige im ResultDashboard	"Wir brauchen einen neuen AggregatorType mit measurandGroup de.iteratec.osm.report.chart.MeasurandGroup#PERCENTAGES.
+
+
+
+Um die neue Messgröße auch im Result-Dashboard auswählen zu können, müssen auch i18n-Einträge für die neue Messgröße ergänzt werden."		New Feature	OpenSpeedMonitor	24/Sep/15 1:58 PM	10/Feb/16 2:11 PM																																																																				

@@ -1,0 +1,17 @@
+Refactor New Client to work with new authentication mechanism	"*Summary:*
+
+Refactor New Client to work with new authentication mechanism
+
+
+
+*Details:*
+
+* Refactor localisation-service to load metadata after login
+
+* Ensure all initil GET-requests are done after login
+
+* upon page load we should check if user is logged in (except login page). If not, redirect the user to login page
+
+* ... (maybe more points entered by [~roia]
+
+"		New Feature	iteraplan Speedbird	13/Dec/16 10:22 AM	19/Dec/16 2:17 PM														19/Dec/16 2:17 PM;vadm;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-235																																																						

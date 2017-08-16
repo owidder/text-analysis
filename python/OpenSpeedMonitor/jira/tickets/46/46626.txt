@@ -1,0 +1,11 @@
+Extra messages for partial import of out-of-filter elements	"After a partial export, importing an element with a change that moves it out of the filter (the filter predicate does not hold), leads to extra messages on updated elements.
+
+The model is updated correctly.
+
+Two different errors observed:
+1) after dry run: 5 elements, after import: 1 element, correct: 1 element
+2) after dry run: 5 elements, after import 5 elements, correct: 1 element 
+
+tested with BusinessObject[@accountability=max], one line decription updated, one line accountability set to sue.
+
+"		Bug	iteraplan PO	06/May/14 1:06 PM	08/May/14 2:13 PM																																																																				

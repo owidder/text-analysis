@@ -1,0 +1,7 @@
+Create Ant tasks to create new iteraplan DB and deploy iteraplan application	"* Ant task to create and initialize iteraplan and iturm DB (/)
+
+* Ant task to deploy iteraplan application (/)
+
+* Ant task to generate and import iteraplan license key (/)
+
+* Send emails with correct URLs for the deployed application (/)"	93358	Sub-task	iteraplan Speedbird	19/Aug/16 3:35 PM	16/Sep/16 10:21 AM																																																																				

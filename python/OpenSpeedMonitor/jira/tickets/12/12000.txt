@@ -1,0 +1,5 @@
+Jobliste: Animation für laufende Jobs fehlt manchmal	"Ab und zu wird bei einem Job neben dem Status ""Pending"" oder ""Running"" keine Animation angezeigt und in der Chrome-Konsole taucht folgende Meldung auf:
+
+GET http://localhost:8080/iteraSpeedMonitor-Jobsteuerung/images/loading_indicator.gif 404 (Not Found)
+
+Womöglich passiert dies nur nach einem ändern von Ressourcen, die durch das Grails Resources Plugin verwaltet werden. "		Bug	OpenSpeedMonitor	19/Mar/14 10:47 AM	21/Mar/14 12:23 PM														21/Mar/14 12:23 PM;drieger;Der Fehler scheint tatsächlich nur bei Ressourcenänderungen aufzutreten, ist also für den Live-Betrieb irrelevant.																																																						

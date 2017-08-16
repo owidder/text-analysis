@@ -1,0 +1,13 @@
+Wrong timestamp in History	"- Make change on some building block (e.g status of IS from PLANNED to TARGET) in classic client
+
+- Look at the corresponding history entry in single element view: the timestamp is 2 hours later
+
+
+
+NOTE: the corresponding REST-JSON returns proper timestamps (sse pic)
+
+!pic.png|thumbnail!"		Bug	iteraplan Thunderduck	20/Oct/16 1:37 PM	24/Oct/16 3:19 PM														"21/Oct/16 11:10 AM;roia;I cannot reproduce this issue locally. 
+
+I have pushed potential fix in the revision 4768 - replaced the JS date parsing with moment.js parsing, but I'm not sure if it helps or not.
+
+If it does not help then someone who can reproduce it should work on this issue. Functions to look at: {{translateDateOrTime()}} and {{translateDateTime()}} in {{utils.js}}"	21/Oct/16 11:16 AM;msr;I can confirm that it is fixed now on my local machine. @reviewer: Please double-check.	24/Oct/16 3:19 PM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-109																																																				

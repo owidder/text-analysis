@@ -1,0 +1,13 @@
+Desktop Jobs umziehen	"Am wenigsten Aufwand wird ein manuelles Übertragen machen.
+
+
+
+Die zuvor angelegten Scripte müssen jeweils verwendet werden.
+
+
+
+Die Job-Gruppen müssen ebenfalls angelegt werden.
+
+
+
+Mess-Frequenz erstmal nicht so oft (4 mal am Tag)."	113721	Sub-task	OpenSpeedMonitor	03/Mar/17 11:05 AM	24/Mar/17 1:54 PM														24/Mar/17 1:54 PM;jwi;Desktop Jobs sind umgezogen und werden aktiviert wenn die neuen Agenten auf der Produktiv-Instanz vorhanden sind (siehe Ticket IT-1641).																																																						

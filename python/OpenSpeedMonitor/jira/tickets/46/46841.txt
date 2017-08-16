@@ -1,0 +1,5 @@
+Create context menu on innerbox click	"Create context menu on inner box click with filters on first level and sublevel buttons where it is needed.
+
+- Search field (input with a button common to header search button)
+- Complexity folder with sublevel items for each variant
+- Status folder with sublevel items for each variant"	46837	Sub-task	iteraplan PO	13/Aug/14 4:28 PM	29/Sep/14 9:55 AM																																																																				

@@ -1,0 +1,52 @@
+Attempt to create new attribute via Excel Import leads to error page	"Steps to reproduce (with iteraplan sample data):
+1. Log into iteraplan
+2. Go to MassData -> Import/Export
+3. Export Excel Data
+4. Go to Administration -> Attributes
+5. Delete attribute ""System Size""
+6. Go to MassData -> Import/Export again
+7. Attempt to import the previously exported file
+=> Error page in Step 3 of the import when trying to apply the metamodel changes (adding of attribute ""System Size"")"		Bug	iteraplan PO	26/Aug/13 2:20 PM	01/Jul/14 12:54 PM					attribute	excel								25/Jun/14 3:27 PM;fka;Is this still applicable?	"27/Jun/14 10:31 AM;dop;No it isn't. I've just tried to reproduce this issue and executed the steps described above. The attribute ""System size"" wasn't existent in the bank data example, so I have deleted the attribute ""Complexity"". As expected, import progress succeeded. In step 2 the following messages appeared:
+
+{noformat}
+There are changes to the current Metamodel necessary to proceed:
+Create Enumeration Attribute Complexity.
+Assign attribute type Complexity to building block type Information System.
+Assign attribute type Complexity to building block type Interface.
+Add literal high to enumeration attribute type Complexity.
+Add literal low to enumeration attribute type Complexity.
+Add literal average to enumeration attribute type Complexity.
+{noformat}
+
+Step 3: 
+
+{noformat}
+Following changes were applied to the current Metamodel:
+Create Enumeration Attribute Complexity.
+Assign attribute type Complexity to building block type Information System.
+Assign attribute type Complexity to building block type Interface.
+Add literal high to enumeration attribute type Complexity.
+Add literal low to enumeration attribute type Complexity.
+Add literal average to enumeration attribute type Complexity.
+{noformat}
+
+Step 4:
+
+{noformat}
+When importing, following changes will be applied:
+Information Systems changed: 44
+Interfaces changed: 45
+{noformat}
+
+Step 5:
+
+{noformat}
+Following changes were applied:
+Information Systems changed: 44
+Interfaces changed: 45
+{noformat}
+
+
+The color of the enum literals got lost during this process. The color of all enum literals is now the same (green). 
+
+@Reviewer: Please decide if it is worthy to create a new improvement ticket to assign different color to newly created enum literals during excel import process. "	01/Jul/14 12:54 PM;sfe;Issue most likely vanished with new import implementation.																																																				

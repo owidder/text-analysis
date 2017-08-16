@@ -1,0 +1,21 @@
+Multimode is not responding correctly	"Reproduce:
+
+
+
+Go to the single element view of the information Systems.
+
+
+
+Open the multi mode and prepend something to the name.
+
+
+
+Expected behaviour: After this was successful a window opens that says how many elements where changed an the list is updated.
+
+
+
+Current behaviour: No window opens and the list is not updated, only after a reload the values are changed
+
+
+
+ "		Bug	iteraplan PO	12/Jul/17 9:20 AM																																																																					

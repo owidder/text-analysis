@@ -1,0 +1,23 @@
+Filter	"*Summary:*
+
+Add filters for Building Block Types
+
+
+
+*Implementation details:*
+
+* The filter is always based on the Building Block Type of the selected element
+
+* It only appears when an element is selected
+
+* Use combined filters with all the standard filter possibilities
+
+* Store in URL
+
+
+
+*UI:*
+
+* Toolarea: Add Filter entry with standard icon, after Attributes entry (3-rd position)
+
+* Legend: If a filter is applied, show the section ""Applied filters""/""Angewendete Filter"" (e.g. in Pie Chart diagram), just below the attrubute name. Ensure filter panels are shown correctly, and manual selection panel is displayed with correct numbers (if manual selection is activated)."		New Feature	iteraplan Speedbird	22/Nov/16 4:56 PM	23/Nov/16 10:57 AM																																																																				

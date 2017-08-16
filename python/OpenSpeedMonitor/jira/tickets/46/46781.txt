@@ -1,0 +1,14 @@
+Provide possibility to disable hierarchical name in Cluster diagram & Landscape diagram	"This ticket affects the diagram types cluster diagram (3 PD) and landscape diagram (3 PD). 
+
+In the current implementation of the cluster diagram, the hierarchical name is used to label a box. If the predecessor name is too long, the label get cut off in between and the real name of a building block might no be visible. 
+
+*Solution:* Scope of this ticket is to provide a possibility to disable the usage of the hierarchical name as label in the boxes of cluster diagrams. The solution should be a checkbox in the configuration page, which indicates whether to use ""short"" names or not. "		New Feature	iteraplan PO	04/Aug/14 2:54 PM	26/Sep/14 11:53 AM														09/Sep/14 4:10 PM;dop;Documentation: http://www.iteraplan.de/wiki/display/upcomingIteraplan/Common+Diagram+Functions	"11/Sep/14 11:42 AM;dop;Additional information about this ticket:
+
+Before this ticket, many diagrams have had an option *Use an extra legend for long names.* The semantic of this option was, first to use hierarchical names of building blocks instead of the ""short"" names, and second to display a name legend. This option has been separated in two different options:
+
+1. Use an extra legend for long names.
+2. Hierarchical name as elements name.
+
+Because of that separation, the original semantic must be changed and now it only triggers the name legend. So all other diagrams that have this option must also be adopted, otherwise the feature *Display hierarchical names instead of short names"" wouldn't be available anymore. Now these two options can be triggered individually. 
+
+For the diagram type Masterplan the hierarchical name option is not available. "	26/Sep/14 11:53 AM;iteraplan;Nothing more to review here																																																				

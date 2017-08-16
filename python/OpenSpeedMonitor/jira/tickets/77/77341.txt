@@ -1,0 +1,13 @@
+Add possibility to cancel an import	"As iteraplan user I want to be able to cancel an Excel import during the last import step.
+
+That last step usually takes quite some time and it should be possible to cancel it, disregarding all work done up to that point, if I notice too late to have uploaded a wrong file, or for any other reason.
+
+
+
+Solution principle:
+
+* Allow cancel button to be active during last import step
+
+* When activating the cancel button, a confirmation dialog appears
+
+* When cancellation is confirmed, the import process is stopped and the transaction rolled back"		Improvement	iteraplan PO	17/Mar/16 1:12 PM						cancel	import																																																														

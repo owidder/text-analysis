@@ -1,0 +1,9 @@
+Edit Richt Text values	"* use the ipRichTextEditor
+
+ * every rich text value should be editable (user defined)
+
+ * edit for description
+
+ * also consider topLevelAttributes
+
+ * attributes of attributable relations"		New Feature	iteraplan Thunderduck	07/Dec/16 5:25 PM	07/Mar/17 11:15 AM																																																																				

@@ -1,0 +1,15 @@
+No radiobox preselected in query search on overview pages	"On an overview page: Open tab ""Queries"" and select an attribute.
+
+Expected:
+The lower of the two radioboxes on the right side of the form (the one with the dropdown options) is preselected (since 3.4.1).
+
+Actual:
+None of the two radioboxes is preselected. When the ""Send query"" button is clicked, you get a NPE:
+{code}
+java.lang.NullPointerException
+        at de.iteratec.iteraplan.businesslogic.reports.query.options.TabularReporting.QPart.getPattern(QPart.java:210)
+{code}
+
+The workaround is easy: Select one of the two radiobuttons manually.
+
+Fix it, so that the upper radiobox is preselected."		Bug	iteraplan PO	30/Mar/15 3:57 PM	13/Apr/15 8:37 AM					query	queryform	search	ui						10/Apr/15 3:47 PM;nle;Requirements from ITERAPLAN-2848 should still be valid.																																																						

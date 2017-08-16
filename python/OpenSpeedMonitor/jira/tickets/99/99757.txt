@@ -1,0 +1,41 @@
+Document 4 features in the user guide	"Missing features, please document:
+
+
+
+* LSD: Coloring by an attribute on a relation or a Business Mapping
+
+* Admin\System-Page
+
+* ""Installer now correctly accepts Oracle service names"" -> Is this correctly documented?
+
+* Remove classic dashboard page ( https://www.iteraplan.de/doc/display/iteraplan54/Dashboard ) and create a new user guide page which states that there is now a dashboard reactor-script"		Task	iteraplan PO	19/Oct/16 2:32 PM	26/Oct/16 11:34 AM														"26/Oct/16 9:46 AM;mse;The following wiki pages have been modified:
+
+
+
+* LSD:
+
+Changed the first paragraph of the section ""Coloring by"" on this page:
+
+https://www.iteraplan.de/doc/display/iteraplan54/Landscape+Diagram
+
+
+
+* New system pages:
+
+https://www.iteraplan.de/doc/display/iteraplan54/System+Administration
+
+https://www.iteraplan.de/doc/display/iteraplan54/System+Settings
+
+
+
+* Installer with oracle:
+
+Updated the screenshot ""Form for entering the iteraplan database parameters"" and the info box below. Please check the installation guide (around the middle of the page):
+
+https://www.iteraplan.de/doc/display/iteraplan54/iteraplan+installer
+
+
+
+* Dashboard:
+
+Moved and adjusted: https://www.iteraplan.de/doc/display/iteraplan54/Dashboard"																																																						

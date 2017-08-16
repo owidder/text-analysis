@@ -1,0 +1,29 @@
+Select "Superordinate Information Systems" as additional column leads to an error	"*Summary:*
+
+Select ""Superordinate Information Systems"" as additional column leads to an error.
+
+
+
+*Reproduce:*
+
+* Open the Masterplan Diagram
+
+* Add ""Superordinate Information Systems"" as additional column
+
+
+
+*Actual:*
+
+{{mpdItem.js:65 Uncaught TypeError: Cannot read property 'items' of null(anonymous function)@ mpdItem.js:65MpdItem @ mpdItem.js:64(anonymous function) @ mpdItemBuilder.js:40MpdItemBuilder.MpdItemBuilder.buildMasterPlanItems @ mpdItemBuilder.js:38MpdContentMain.runPipeline @ mpdContentMain.js:76MpdContentMain.createGoJSDiagram @ mpdContentMain.js:56(anonymous function) @ mpdContentController.js:22}}
+
+
+
+*To-Be:*
+
+* The additional column is correctly added
+
+
+
+*Important:*
+
+*Please check, if this error can occur for any other single element instead of an array or with any unassigned property values.*"		Bug	iteraplan PO	14/Jun/16 12:59 PM	29/Jun/16 11:13 AM														17/Jun/16 11:37 AM;dmkh;Fix also contains changes related to ITERAPLAN-4675.	24/Jun/16 3:57 PM;msr;Review done. Good solution. Only 1 comment: https://iteraweb.iteratec.de/fisheye/cru/IP-30																																																					

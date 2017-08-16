@@ -1,0 +1,21 @@
+Usage relation in InfrastructureElements	"As an IT focussed Enterprise Architect I want to model different dependecies between InfrastructureElements.
+E.g. a HW-Cluster as well as a Virtual Cluster
+The strict hierarchy is not sufficient, but an additional usage relation (similar to InformationSystems) would help.
+
+Check list of functionality to be adapted:
+* Data model (Hibernate mapping), SQL scripts
+* EA Data details view in read and edit mode, and documentation
+* Spreadsheet reports query forms (and thus implicitly all report query forms)
+* bulk update
+* start screen meta-model diagram
+* elastic Model reader and writer
+** iteraQl support, and corresponding documentation
+** Excel export
+** Excel import
+** Visualization in nesting cluster diagrams??
+* Cluster diagram
+* Pie charts
+* email notifications
+* history changeset presentation; SQL migration script for history tables
+"		New Feature	iteraplan PO	26/Mar/13 2:33 PM	16/Apr/13 11:20 AM					relation									"27/Mar/13 1:03 PM;sfe;elastic Model reader and writer works out of the box, after implementation of the data model was done. The related functionality (Excel import/export, iteraQL, nesting cluster diagram) works without further changes as well.
+Documentation of iteraQL already handles the usage relationship on a general basis (meaning it is not especially mentioned for each building block type supporting this relation), and since the usage relation of Infrastructure Elements follows the same syntax, I don't see the need to extend the documentation."	16/Jul/13 9:01 PM;sry;Very well done!																																																					

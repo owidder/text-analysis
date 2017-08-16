@@ -1,0 +1,5 @@
+DistributionChart Controller Performance	"Die Performance des DistributionChartControillers sollte noch verbessert werden.
+
+
+
+Das finden der Daten für einen Monat für otto.de braucht deutlich zu lange."		Improvement	OpenSpeedMonitor	22/Mar/17 3:15 PM																																																																					

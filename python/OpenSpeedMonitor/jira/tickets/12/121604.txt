@@ -1,0 +1,9 @@
+Configs of Reactor Scripts in server	"Adapt the server and the database to using the uuids in the configs of reactor scripts.
+
+
+
+Save the config (PUBLISHED_NAME, OUTPUT_FILE_NAME, SAVED_QUERIES, ROLES, CACHE_TIME) in one object like the config of the user settings (or increase the size of the SAVED_QUERIES field and check the sizes of the other values in the new client)
+
+
+
+Additionally adapt the resource to new format (array of uuids?)"		Improvement	iteraplan Thunderduck	17/May/17 8:59 AM																																																																					

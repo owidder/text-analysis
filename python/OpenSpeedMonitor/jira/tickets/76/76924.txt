@@ -1,0 +1,29 @@
+Open LSD for ISD or AD causes an JS-Exception	"Steps to reproduce:
+
+# Open interactive client
+
+# Open InformationSystem Domains or Architectural Domains
+
+# Click on 'Show landscape diagram'
+
+
+
+LSD will be opened but nothing happen besides 'Loading diagram'
+
+
+
+The reason: both InformationSystem Domains and Architectural Domains have connection only to building block of one type (technical component or information system), but the LSD in current implementation need two building block types for its axes.
+
+
+
+After consultation with [~wfr] here are two possible solutions:
+
+- The simple one: to disable possibility or to forbid to open LSD for both ISD and AD (also from URL) + modify documentation
+
+- The complicated one: if ISD or AD are selected as content type for LSD, one of the axis should be attribute of the content type."		Bug	iteraplan PO	14/Mar/16 4:09 PM	17/Feb/17 3:56 PM					lsd	newClient								"14/Mar/16 6:02 PM;fka;Low prio, as builiding blocks lists will be heavily extended in a future release anyway.
+
+
+
+If this is the case: I like the complicated solution :-)
+
+"																																																						

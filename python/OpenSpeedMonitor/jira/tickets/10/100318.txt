@@ -1,0 +1,23 @@
+Cluster Diagram -  Save Query cannot be saved	"Reproduce (with sample data):
+
+
+
+# Open Cluster Diagram in the interactive client
+
+# Click on Save Query
+
+# Enter a ""Name"" and ""Description""
+
+# Click on Save
+
+# Nothing happens
+
+
+
+Expected: To save the Query
+
+Actual: No save possible
+
+
+
+"		Bug	iteraplan PO	24/Oct/16 10:10 AM	24/Oct/16 3:51 PM																																																																				

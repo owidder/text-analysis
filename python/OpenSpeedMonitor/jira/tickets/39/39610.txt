@@ -1,0 +1,5 @@
+job/nextExecution nach Anmeldung	"Meldet man sich von der Jobliste aus an passiert es -gelegentlich- *immer, wenn zuvor nextExecution vom JS in der Seite mit der Jobliste aufgerufen wurde*, dass die URL des  AJAX-Calls job/nextExecution nach der Anmeldung angezeigt wird. Dies funktioniert logischerweise nicht und man landet auf einer weißen Seite. Ursache: Nach dem Login passiert ein Redirect per Angabe der Location im Antwort-Header. Dieser enthält eigentlich eine Default-Adresse (z.B. 	
+
+http://localhost:8080/OpenSpeedMonitor/ ), in diesem Fall aber die der nextExecution (z.B. 	
+
+http://localhost:8080/OpenSpeedMonitor/job/nextExecution )"		Bug	OpenSpeedMonitor	04/May/15 10:30 AM	13/May/15 2:35 PM														13/May/15 1:39 PM;rkr;...ist vermutlich eine Eigenschaft von Spring: "The authentication mechanism in Spring Security works by keeping track of a referral URL" http://stackoverflow.com/a/20714533/2067690	13/May/15 2:19 PM;rkr;Erledigt - ich habe die Zugriffsrechte auf nextExecution in Config.groovy bei der springsecurity.interceptUrlMap auf permitAll gesetzt.																																																					

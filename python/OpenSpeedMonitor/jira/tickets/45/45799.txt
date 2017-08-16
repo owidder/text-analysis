@@ -1,0 +1,20 @@
+New and saved IF of IS is not displayed in IS in view mode	"steps to recreate:
+
+1) create new information system X
+2) save it
+3) create new interface
+4) save it
+5) go to information system X, still open and in open elements on left hand side 
+expected: saved interface is displayed as an interface of IS
+actual: no interfaces in list.
+
+"		Bug	iteraplan PO	26/Jun/13 4:01 PM	26/Jun/13 4:18 PM					gui	usability								"26/Jun/13 4:18 PM;sry;This is a known issue and caused by our architecture with component models backing a user transaction. These component models are only updated from the database upon explicit request.
+
+Workaround: 
+# On the  information system X page, click _More_ and _Refresh_"	"26/Jun/13 4:23 PM;wfr;Second thoughts:
+
+I thought ""refresh"" was for seeing the edits of _other_ users, not my own.
+
+I would keep this as an aspect for usability improvements.
+
+"																																																					

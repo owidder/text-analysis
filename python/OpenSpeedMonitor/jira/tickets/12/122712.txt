@@ -1,0 +1,49 @@
+Information Systems - Error message is missing	"h4. Problem Description:
+
+
+
+When saving not existing Complexity the error message is missing.
+
+
+
+ 
+
+h4. Reproduction Steps:
+
+ * Open application and navigate to Information System
+
+ * Add ""Complexity"" column
+
+ * For any System input not existing object into just added column (""a1b1c1"")
+
+ * Press ""Enter"" button
+
+
+
+ 
+
+h4. Observed Results:
+
+
+
+The Edit field(dialog) is closed, the ""Complexity"" field is empty and no error message is shown.
+
+
+
+ 
+
+h4. Expected Results:
+
+
+
+Error message ""The modification could not be saved."" should be shown at the right top of the page.
+
+
+
+ 
+
+
+
+Note:
+
+ - Occurs on dev setup and #327 build with FF"		Bug	iteraplan PO	29/May/17 11:19 AM	11/Jun/17 1:43 PM														08/Jun/17 6:21 PM;olal;Fixed in scope of https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-5307																																																						

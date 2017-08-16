@@ -1,0 +1,29 @@
+Create manual system tests for Partial Diagrams and define new maximum borders for the partiality	"*Summary:*
+
+Create manual system tests for partial diagrams, i.e. with big data
+
+* the ""data loading dialog"" at the beginning
+
+* functions in a partial Nested Clusted Diagram
+
+* functions in a partial Landscape Diagram
+
+* functions in a partial Information Flow Diagram
+
+* the reactor
+
+* the building block lists.
+
+
+
+Use excel template of classic client.
+
+
+
+*And define new maximum borders for the partial diagrams.*
+
+
+
+Ensure you cover *all major* functionality including error-prone combinations of functionalities."		Task	iteraplan PO	22/Oct/15 7:36 AM	27/Oct/15 10:19 AM					test									"27/Oct/15 8:40 AM;dam;please add TC/comment for ""data loading dialog""
+
+and adjust in docu the new partial diagram borders"																																																						

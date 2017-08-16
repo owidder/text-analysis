@@ -1,0 +1,16 @@
+Masterplan diagram configuration - semantics of option should be clarified	"The semantics of the second (and third) level checkbox option ""nur direkt benachbarte Elemente berücksichtigen"" (see screenshot) should be clarified. 
+
+Suggestion for a better checkbox label:
+{quote}
+EN: In addition, include elements that can be reached by following the chosen relation more than once. For example: include successors of successors (and their successors).
+DE: Stelle zusätzlich die Elemente dar, die durch mehrfaches Abgehen der gewählten Beziehung erreicht werden können. Beispiel: Nachfolger von Nachfolgern werden mit berücksichtigt.
+{quote}
+
+By default, the reverse setting should be active, that is the checkbox is checked and only directly related elements will be shown. 
+
+As that checkbox only makes sense for self-relations, please investigate whether you can easily hide the checkbox for inter-type relations."		Bug	iteraplan PO	21/Jun/13 2:13 PM	12/Jul/13 9:51 AM					masterplan	usability								"11/Jul/13 4:00 PM;kgo;Modified Masterplan Diagram UI and Behaviour as follows:
+ * The checkbox is displayed only for self-relationships.
+ * The checkbox has the semantics of 'build transitive closure' and is disabled by default. While this is exactly the opposite of the semantics the checkbox has had so far, it is, in my opinion, more intuitive like this. I.e. previously we had 'only include directly connected' enabled by default, while now we have 'include indirectly connected' disabled by default.
+ * The text has been adjusted so that the meaning of the checkbox is easily accessible for the users."	"12/Jul/13 9:51 AM;bra;(/) looks fine to me
+
+maybe tobias could have a short look at the labels of the checkbox to see if the options are clearly understandable now"	15/Jul/13 10:54 AM;sry;perfect, thx!																																																				

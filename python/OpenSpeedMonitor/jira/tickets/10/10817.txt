@@ -1,0 +1,7 @@
+Performance REST-API	"In der folgenden Methode werden JobResults aus der db geholt, diese iteriert und dann für jedes die EventResults geholt:
+
+de.iteratec.ism.RestApiController.getResults(ResultsRequestCommand)
+
+Die EventResults via tag direkt zu holen wäre WESENTLICH performanter. Zumal im Konstruktor de.iteratec.ism.json.Result.Result(JobResult, EventResult) nochmal die EventResults des JobResults geholt werden!
+
+Eine Altlast aus der Zeit vor de.iteratec.isr.EventResult.tag ???"		Improvement	OpenSpeedMonitor	09/Dec/13 2:35 PM	17/Jul/14 3:55 PM														17/Jul/14 3:55 PM;nku;In der Response müssen (zumindest seit IT-404) Informationen aus Domains zurückgegeben werden, die nur über die Assoziation EventResult->JobResult->Job->WebPageTestServer geholt werden können. Von daher ist es sogar performanter, die JobResults vorab alle zu holen, als erst nur die EventResults zu holen und dann (in der Klasse de.iteratec.ism.json.Result) für jedes EventResult einzeln das JobResult zu holen.																																																						

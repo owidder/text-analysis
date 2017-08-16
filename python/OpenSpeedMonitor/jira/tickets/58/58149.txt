@@ -1,0 +1,1 @@
+GUI zur Verwaltung von CSI-Systemen			New Feature	OpenSpeedMonitor	24/Sep/15 1:50 PM	03/Feb/16 3:13 PM																																																																				

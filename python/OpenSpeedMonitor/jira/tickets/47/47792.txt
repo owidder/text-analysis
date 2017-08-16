@@ -1,0 +1,9 @@
+in free space under horizontal spanned elements context menu doesn't open	"Summary: in free space under horizontal spanned elements context menu doesn't open
+
+Steps to reproduce:
+1. Go to LSD page
+2. Use Horizontal span
+3. Try to open context menu for content elements in free space under horizontal spanned elements
+Actual: Context menu doesn't open"	47477	Sub-task	iteraplan PO	22/May/15 12:08 PM	09/Jun/15 5:05 PM													"Workspace: Windows 8.1
+revision: 1147
+Browser: IE 11, Mozilla Firefox 38.0"	25/May/15 12:56 PM;alvo;committed rev #1153 under IPNINE-384	25/May/15 2:56 PM;dasm;Verified (rev 1153)																																																					

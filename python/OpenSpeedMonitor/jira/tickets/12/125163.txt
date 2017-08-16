@@ -1,0 +1,21 @@
+Wider description editor	"Open single view page of some business object.
+
+
+
+Edit description and type lots of text.
+
+
+
+Result: the textarea is much narrower than available space.
+
+
+
+I think, we can use the available space to display wider the editor. Yes, please use the full available space
+
+
+
+!desc-edit.png!
+
+
+
+ "		Bug	iteraplan Speedbird	23/Jun/17 1:18 PM	18/Jul/17 11:46 AM																																																																				

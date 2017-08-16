@@ -1,0 +1,1 @@
+Passwort ändern Funktion	Aktuell ist es dem Nutzer nicht möglich das Passwort zu ändern, diese Funktion muss implementiert werden. Der Nutzer sollte den Vorgang mit seinem alten Passwort bestätigen.		Improvement	OpenSpeedMonitor	18/Oct/16 1:29 PM																																																																					

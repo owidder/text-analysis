@@ -1,0 +1,1 @@
+[CRUD]-JobGroup: Default-Mappings nicht anzeigen	In der show-View werden im Template der CSI-Mappings und -Weights unterhalb der Page-Mappings auch die Default-Mappings angezeigt. Diese sollten hier nicht sichtbar sein.		Bug	OpenSpeedMonitor	19/Feb/16 10:53 AM	22/Feb/16 10:19 AM																																																																				

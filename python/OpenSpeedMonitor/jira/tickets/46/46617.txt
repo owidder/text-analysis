@@ -1,0 +1,11 @@
+Parent reconnect is wrongly executed in partial import	"Refer to Testcase4 (TC4) of import strategies test sheet.
+
+Reproduce:
+* Create IS ""AParent"", ""BParent"", ""AChild""
+* Make ""AChild"" a child of ""BParent""
+* Partial export IS @name.beginsWith(""A"")
+* Change parent of ""AChild"" from ""BParent"" to ""AParent""
+* Import Excel
+
+=> is executed, but shouldn't be executed
+"		Bug	iteraplan PO	28/Apr/14 4:26 PM	28/Apr/14 5:48 PM					excel	import	strategy																																																													

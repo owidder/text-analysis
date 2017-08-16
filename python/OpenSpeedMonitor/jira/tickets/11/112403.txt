@@ -1,0 +1,19 @@
+IFD - Settings from the tab Display will not be saved by User-Settings and Saved Queries	"Reproduce with trunk or nightly
+
+
+
+# Open the IFD Diagram 
+
+# Click on Display and ""Hide Sub Information System""
+
+# Click on the iteraplan logo or create a save query
+
+# Reopen the diagram or saved query  
+
+# The setting was not saved 
+
+
+
+Actuel: the setting will not be saved 
+
+Expected: the setting will be saved"		Bug	iteraplan Speedbird	20/Feb/17 9:25 AM	21/Feb/17 1:01 PM														21/Feb/17 1:01 PM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-381																																																						

@@ -1,0 +1,39 @@
+Filter-Extension: Option "Include IS connected over an IF"	"*Summary:*
+
+Move option ""Include IS connected over an IF"" from the diagrams to the Filter Dialog
+
+
+
+*Details:*
+
+* This option must be performed *after* all other filters (including manual filter) are performed
+
+* This option only appears if the Building Block is Information System
+
+* Remove the option from the toolareas of all diagrams
+
+* Ensure that all diagrams can work with this option (even if they did not have it before)
+
+
+
+*UI*
+
+* Put it as a checkbox on the bottom of the light grey area (see screenshot)
+
+* default is deactivated
+
+{color:red}UPDATE: {color} Put the legend-entry to the common filter legend builder and use the key: LEGEND.IS_CONNECTED_OVER_INTERFACE_SETTING"		Improvement	iteraplan Speedbird	02/Dec/16 2:23 PM	13/Jan/17 6:42 PM														"10/Jan/17 3:45 PM;dmkh;??Ensure that all diagrams can work with this option (even if they did not have it before)??
+
+[~msr], please confirm adding ""Include IS connected over an IF"" option to Landscape, Nested Cluster and Treemap diagrams (where the option is not included)."	"10/Jan/17 5:01 PM;dmkh;[~msr], please, see attached screenshot with UI for this option in filter dialog window. Do you have any comments?
+
+
+
+Also, update description with specifications for text displayed near the checkbox.
+
+
+
+Thanks"	"10/Jan/17 5:21 PM;msr;Yes, add it to LSD, NCD and TMD
+
+UI is great"	"11/Jan/17 10:53 AM;dmkh;[~msr], the corresponding text in the legend is currently shown separately in Settings section if this option is activated.
+
+Do we need to move it to the legend filter panel?"	12/Jan/17 12:22 PM;dmkh;Also updated User guide documentation for filtering: https://www.iteraplan.de/doc/display/iteraplan55/Filtering. Removed all mentions of this feature from diagrams.	13/Jan/17 6:42 PM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-296																																																	

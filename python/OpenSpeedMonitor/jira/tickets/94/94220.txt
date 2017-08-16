@@ -1,0 +1,49 @@
+Option to activate swimlanes for Building Block Types and Relation Rows	"*Summary:*
+
+Create a new option to activate swimlanes for Building Block Types and Relation rows
+
+(attribute rows do not have swimlanes)
+
+
+
+*Implementation Details:*
+
+* This option ensures that the same elements (within a row) are always in the same line. This makes the diagram in most cases much higher.
+
+* Default: This option is deactivated
+
+* Url: This option is saved in the url
+
+
+
+*UI:*
+
+* Legend: (Show only, if option is active)
+
+** Main entry (on last postion): ""Settings"" (German: ""Einstellungen"")
+
+** Subentry: ""Swimlanes: Same element always in the same row"" (German: ""Swimlanes: Das gleiche Element immer in der gleichen Zeile"")
+
+* Toolarea: (Show only if option is active)
+
+** Main entry (last position): ""Display"" (German: ""Anzeige"")
+
+** Sub-entry: Toggle-Button: ""Activate swimlanes: Same element in same rows"" vs. ""Deactivate swimlanes: Different elements in one row"" (German: ""Aktiviere Swimlanes: Gleiches Element in gleicher Zeile"" vs. ""Deaktiviere Swimlanes: Verschiedene Elemente in gleicher Zeile"")"		New Feature	iteraplan Speedbird	26/Aug/16 12:02 PM	21/Sep/16 11:56 AM														20/Sep/16 1:57 PM;dmkh;[~fka], please, specify the order of values in the row when the *swimlanes* option is activated. Should we *sort them alphabetically?*	20/Sep/16 3:26 PM;dmkh;For reviewer: revision *4403* was mistakenly not included to this ticket.	"20/Sep/16 6:24 PM;ants;When attribute is selected as header, then after selecting additional building blocks as rows - not all values are shown in normal (non-swimlane) mode.
+
+For example:
+
+1. Select Accountability as header.
+
+2. Select Business Domain as additional row.
+
+3. Select Business Function as additional row - only one cell is shown.
+
+4. Activate Swimlane option - all cells for Business Function are shown.
+
+See screenshots attached.
+
+"	"20/Sep/16 7:04 PM;ants;Review: https://iteraweb.iteratec.de/fisheye/cru/IP-45
+
+"	"21/Sep/16 9:09 AM;dmkh;??When attribute is selected as header, then after selecting additional building blocks as rows - not all values are shown in normal (non-swimlane) mode.??
+
+[~ants], it seems that the problem occurred after revision *4328* (changes to {{*buildAttributeItem()*}} of {{*CcdItemBuilder*}} made in scope of IPTS-123). All values are shown in non-swimlane mode, but the are all in one cell. Let's see if fix to that issue will solve the bug. "	21/Sep/16 11:56 AM;ants;Review done.																																																	

@@ -1,0 +1,64 @@
+Migration der History bricht ab (5.3.0 -> 5.4.0)	"Beim Aufruf des Skripts migrateHistory.bat gibt es einen Java-Abbruch mit Stacktrace nach ca. 1 Minute.
+
+
+
+Anbei das Protokoll (mit mehreren nacheinander folgenden Aufrufen).
+
+
+
+Die DB ist eine Mysql 5.7. Der JDBC-Treiber liegt im gleichen Verzeichnis wie das Batch und wurde auch nach db-connector.jar kopiert. 
+
+
+
+Auf dem Rechner ist eine Java JRE 1.8.0.91 (kein JDK) installiert. "		Fault	iteraplan Support	11/May/17 6:00 PM	15/May/17 10:44 AM														"11/May/17 6:00 PM;Gerd.Meister@f-i-solutions-plus.de;
+
+[^iteraplan.log] _(26 kB)_"	"12/May/17 8:07 AM;cst;Sehr geehrter Herr Meister,
+
+vielen Dank für Ihre Anfrage.
+
+Wann haben Sie sich die das Tool zur History Migration heruntergeladen? Unter folgendem Link finden Sie die aktuelle Datei.
+
+[https://www.iteraplan.de/downloads/basis/iteraplan-historyMigrationTool.zip]
+
+Login: basis
+Password: YUAT12uP
+
+Es wurde ab dem Zeitpunkt des Releases noch einiges an der History Migration aktualisiert. Sollte dies nicht zum gewünschten Ergebnis führen, Antworten Sie mir einfach in dieses Ticket. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"12/May/17 12:15 PM;Gerd.Meister@f-i-solutions-plus.de;Hallo Herr Stangl,
+
+vielen Dank für die schnelle Rückmeldung. Ich hatte tatsächlich noch eine Version vom letzten Jahr als ich die Benachrichtigung für Release 5.4.0 bekam.
+
+Aufgrund der Fehlermeldung 
+
+java.net.ConnectException: Connection timed out
+
+habe ich aber auch noch unseren mySQL-Server-Admin gebeten die Einstellungen für die Connection-Timeout zu prüfen und der Stand auf 10 Sekunden. Wegen der Info, dass die Migration u. U. ein Langläufer ist, habe ich den Wert dann auf 1 Tag einstellen lassen. 
+
+Mit der Kombination dieser beiden Punkte lief das Skript dann problemlos.
+
+Vielleicht ist ein Hinweis auf die Konfiguration des DB-Timeouts auch für andere Kunden hilfreich - so dass diese Info als weitere Prüfpunkt unter 3.2 im Upgrade-Guide aufgenommen werden kann. 
+
+Sie können dieses Ticket somit schließen. 
+
+Mit freundlichen Grüßen,
+Gerd Meister
+"	"15/May/17 10:44 AM;cst;Hallo Herr Meister,
+
+
+
+vielen Dank für Ihren Hinweis. 
+
+
+
+Wir werden das für das Update 6.0 ergänzen. 
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support"																																																			

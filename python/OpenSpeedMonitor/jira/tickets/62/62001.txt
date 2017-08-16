@@ -1,0 +1,21 @@
+change .forEach loops in LSD into for(w;x;y;z) loops where usefull	"normal  for(w;x;y;z) loops are much faster than .forEach loops. 
+
+see https://coderwall.com/p/kvzbpa/don-t-use-array-foreach-use-for-instead for more information
+
+
+
+
+
+be aware that forEach and for are not equal in special cases. please see http://zef.me/blog/2843/javascript-the-scope-pitfall"		Improvement	iteraplan PO	30/Oct/15 8:42 AM	02/Nov/15 1:52 PM					LSD									"02/Nov/15 9:47 AM;lwi;changed some forEach loops in 4 files.
+
+most time when drawing lsd is lost during building contentItems in LSDItemBuilder.js. But there are no for loops used. 
+
+second most time is lost in tableBuilder and i changed all loops there. 
+
+third most time is lost in LSDDataservice.getContentBos and i changed the only loop there.
+
+other loops are not necessary to be changed cause they just last a couple of ms."	"02/Nov/15 1:52 PM;ach;*Time measurements* (LSD default configuration, default test data, Chrome):
+
+* with _forEach_: 1027.883ms
+
+* with _for_: 907.272ms "																																																					

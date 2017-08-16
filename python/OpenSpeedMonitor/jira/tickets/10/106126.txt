@@ -1,0 +1,5 @@
+"Save as PNG" als Download-Button in Chart platzieren	"Im Moment befindet sich die Möglichkeit ein Chart als PNG zu speichern im ""Show""-Dropdown Button. Dies ist jedoch irreführend, da bei ""Save as PNG"" der derzeitige Graph gespeichert wird. Alle anderen Aktionen in ""Save as PNG"" beziehen sich auf die aktuelle *Auswahl* und interpretieren diese neu.
+
+
+
+Wenn das ""Save as PNG"" also ein Download-Button im Chart ist (ähnlich wie die Settings), dann ist es klarer für den Benutzer was wirklich passiert."		Bug	OpenSpeedMonitor	19/Dec/16 11:30 AM	04/Jan/17 3:23 PM																																																																				

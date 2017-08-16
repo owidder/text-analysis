@@ -1,0 +1,7 @@
+X-Achse der CSI-Mapping-Diagramme bis -2 statt bis 0	"Die X-Achse der Linien-Diagramme der CSI-Mapping-Kurven wird aktuell von den Kurven im Bereich längerer Ladezeiten überlagert.
+
+Das sieht nicht so gut aus und sollte durch eine Änderung des angezeigten Bereichs auf der X-Achse behoben werden können: Statt bei 0 sollten wir bei -2 (oder sowas) anfangen.
+
+
+
+Sollte bei der Darstellung der Default-Mappings und auch bei der (momentan noch nicht umgesetzten) Darstellung der Page-Kurven berücksichtigt werden."		Task	OpenSpeedMonitor	04/Jan/16 5:32 PM	25/Jan/16 12:57 PM														25/Jan/16 12:57 PM;bwo;Die X-Ache befindet sich nun auf höhe von -2 der Y-Achse. Die Kurven sind nun leichter lesbar, jedoch wirkt die Verschiebung ungewollt. Eine Alternative wäre die X-Achse stets über den Kurven zu zeichnen.																																																						

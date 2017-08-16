@@ -1,0 +1,3 @@
+Regelmäßigen Dump	"Jnkins-Job einrichten, der regelmäßig einen OSM-Dump zieht.
+
+2 Wochen oder 1 Monat."		New Feature	OpenSpeedMonitor	02/Mar/15 9:34 AM	30/Mar/15 9:33 AM														30/Mar/15 9:33 AM;nku;duplicates IT-521																																																						

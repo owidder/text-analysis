@@ -1,0 +1,13 @@
+New icon for Tree / List View	"Replace existing icon (an eye) with following:
+
+ * for list view from Angular Material  !list view icon.PNG|width=75,height=38! 
+
+ ** *list*
+
+
+
+ * for tree view
+
+ ** an icon needs to be created, there is no icon in Angular Material
+
+ ** an icon similar to (will be listed also in IPTS-820 ): !tree view icon.png|width=46,height=46!"		Improvement	iteraplan Speedbird	20/Apr/17 11:08 AM	05/May/17 12:31 PM																																																																				

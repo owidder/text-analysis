@@ -1,0 +1,19 @@
+Singel Element Edit - Empty Numeric field enters "nan" 	"Reproduce with trunk
+
+ # Open the list view for ""Information Systems""
+
+ # Open the single element view of eg ""Intranet # 2.0""
+
+ # Then open the edit dialog for costs 
+
+ # Clear the input field and press enter 
+
+ # The Dialog dissapears and in  the field costs stands ""not assigned""
+
+ # After open the edit dialog for costs again there stans ""nan"" 
+
+
+
+Expected: The dialog will be empty
+
+Actual: The dialog shows ""nan"""		Bug	iteraplan Thunderduck	09/Mar/17 1:17 PM	22/Mar/17 2:39 PM																																																																				

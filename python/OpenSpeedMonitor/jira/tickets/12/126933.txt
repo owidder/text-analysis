@@ -1,0 +1,21 @@
+ Transform responsiblity attributes of classic to enum attributes in elastic - backend	"*Summary:*
+
+ Rebuild the bridge between classical iteraplan and elastic MI for responsibilty attributes: Ensure that they are transformed to enumeration attributes (not to text).
+
+
+
+*As-Is:*
+
+ * Responsibility attributes are transformed to text attributes
+
+
+
+*To-Be:*
+
+ * Responsibility attributes are transformed to enumeration attributes with usernames as literals
+
+
+
+*Caution:*
+
+ * The elastic metamodel could be changed by the excel or REST-import process (or a future edit function in the new client). So, you could add a ""new literals"" for responsibility attributes, i.e. new users. But these changes should be ignored."		Improvement	iteraplan Thunderduck	12/Jul/17 11:13 AM																																																																					

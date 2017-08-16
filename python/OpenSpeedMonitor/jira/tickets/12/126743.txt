@@ -1,0 +1,1 @@
+avoid too much logs in ant builds	The ant build needs a log4j configuration.		Improvement	iteraplan Thunderduck	10/Jul/17 2:46 PM	10/Jul/17 4:00 PM																																																																				

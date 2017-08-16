@@ -1,0 +1,1 @@
+Chrome: Rickshaw chart label summary wird immer angezeigt	rickshaw_chart_label_summary wird immer angezeigt, auch wenn diese leer ist. In Firefox wird das Element in diesem Fall ausgeblendet.		Bug	OpenSpeedMonitor	15/Feb/16 2:22 PM	18/Jan/17 4:24 PM																																																																				

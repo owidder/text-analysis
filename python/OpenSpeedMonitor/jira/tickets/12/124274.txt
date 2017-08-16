@@ -1,0 +1,19 @@
+Single Element View Building Block: Edit (Testlink) {Browser: IE11}	"Testlink: Single View / Edit
+
+
+
+*also test the copy-feature*"	124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:16 PM	19/Jun/17 4:07 PM														"15/Jun/17 9:19 PM;naba;Test cases: Single view/ Edit  ip-88, 89, 90, 98, 99, 100, 101, 112
+
+ For smoke test please use
+
+ [https://doc.iteraplan.de/display/iteraplan60/Single+Element+View] (examples and tips)
+
+
+
+Please be creative and progressive.
+
+
+
+*Note*:
+
+ - Work with documentation is still in progress"																																																						

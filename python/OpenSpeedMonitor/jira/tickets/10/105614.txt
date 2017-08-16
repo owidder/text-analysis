@@ -1,0 +1,21 @@
+NCD: Include paths via Information System to/back Interface	"{color:red}UPDATED:{color} Timeboxed: 2 Days.
+
+*Summary:*
+
+Include paths starting from Information System to Interface and back to Information System as 1 step in the Nested Cluster Diagram (like in the Classic Client).
+
+
+
+*Details:*
+
+* This special case ""from IS to IF to IS"" should be counted as 1 step for the path-algorithm in the Nested Cluster Diagram
+
+* Aggregate both InformationFlows1 and InformationFlows2
+
+* One good example is the Configuration:
+
+** Outer element: Information System
+
+** Inner element: Product
+
+** new path to inner elements: InformationFlows*/InformationSystem/product"		Improvement	iteraplan Speedbird	13/Dec/16 10:58 AM	12/Jan/17 2:01 PM														12/Jan/17 12:10 PM;ants;More generalized solution was implemented that covers not only described case, but also adds much more additional 2-step paths with "IS-IF-IS" step, that were not available earlier, i.e. "IS-IF-IS" and self-relations, "IS-IF-IS" and "IS-IF-IS", "IS-IF-IS" and relation through non-substantial business object type etc.	12/Jan/17 2:00 PM;dmkh;Great work! Review is here: https://iteraweb.iteratec.de/fisheye/cru/IP-293																																																					

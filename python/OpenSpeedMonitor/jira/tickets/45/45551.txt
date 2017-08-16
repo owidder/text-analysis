@@ -1,0 +1,1 @@
+Missing Building Block-ID	IDs of building blocks (especially if information systems) should be visible (not only in URL) as in ealier version sof iteraplan		Improvement	iteraplan PO	11/Jun/12 10:39 AM	17/Sep/12 8:35 PM					attribute																																																															

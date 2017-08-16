@@ -1,0 +1,27 @@
+Add to legend: display types content and axes.	"now dynamic, 
+but still only three types with name and (default-by-type) color."		New Feature	iteraplan PO	03/Mar/15 5:02 PM	23/Mar/15 12:26 PM														"23/Mar/15 12:26 PM;dasm;Verified
+revision 812"	"24/Mar/15 1:33 PM;tam;filter.capitalize.js
+	// What is this for? What are parameters and their types?
+	Maybe kind reference to the doc in util-class to not repeat the whole jsdoc?
+	
+lsdMain.js
+	Could todo and the statement be removed?
+	43
+	// todo remove here, dependency already passed in constructor.
+	//this.configuration.applyParameters(queryParameters);
+	
+lsdItemDecorator.js
+    LSDItemDecorator.applyLayout = function(styleObject, applyStyle) {
+        Object.getOwnPropertyNames(applyStyle).forEach(function(property){
+            styleObject[property] = applyStyle[property];
+        });
+    };
+
+	there is almost the same function in LSDTableBuilder.js
+	var applyLayout = function (object, newProperties) {
+		Object.getOwnPropertyNames(newProperties).forEach(function (property) {
+			object[property] = newProperties[property];
+		});
+	};
+		
+	Should it be moved to a kind of common layout class?"																																																					

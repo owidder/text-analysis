@@ -1,0 +1,42 @@
+Excel-Import error	"""Import process terminated with errors. No changes were made to the database.""
+
+
+
+The import process was started by user xxx with the strategy 'Conservative'.
+
+Read file and check plausibility of the data done 
+
+Determine Metamodel changes skipped 
+
+Write Metamodel changes skipped 
+
+Validate data error 
+
+Write data - 
+
+-----------------------------------------------------------
+
+File with a single line was imported (attached)"		Fault	iteraplan Support	01/Sep/16 3:11 PM	09/Sep/16 11:33 AM														"01/Sep/16 3:11 PM;ip.daniel.robinson;
+
+[^import_test1.xlsx] _(40 kB)_"	"01/Sep/16 3:33 PM;ip.daniel.robinson;additional information:
+Excel file correct and internally consistent.
+
+Validate data error "	"09/Sep/16 11:33 AM;cst;Hallo Alex,
+
+
+
+habe den Import in der 5.3 durchgeführt und erzeugt hier keine Fehlermeldung
+
+ 
+
+Die Version 3.4 wird wie im anderen Ticket von uns nicht mehr supportet.
+
+Um das Verhalten zu lösen, müsste hier ein Update auf Version 5.3 durchgeführt werden. 
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support"																																																				

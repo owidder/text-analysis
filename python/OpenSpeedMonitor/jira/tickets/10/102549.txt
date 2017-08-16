@@ -1,0 +1,19 @@
+History not shown in classic client	After migrating to iteraplan 5.4 we observed that the History-Tab is only shown in the new client. How can we activate the display of the history in the classic client?		Fault	iteraplan Support	14/Nov/16 3:35 PM	03/Dec/16 7:00 AM														"14/Nov/16 4:00 PM;cst;Dear Mr. and Mrs., 
+
+
+
+thank your for your inquiry. 
+
+
+
+After the History Migration and using the Version 5.4 of iteraplan, the history in the old client is not longer availlible.
+
+
+
+
+
+Greetings,
+
+
+
+Christoph Stangl - iteraplan Support"																																																						

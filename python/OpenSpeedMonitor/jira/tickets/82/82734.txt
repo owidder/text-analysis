@@ -1,0 +1,1 @@
+Erstellung des Minimal Viable Product (MVP)	Als Benutzer möchte ich die grundsätzliche Funktionalität des Produkts ausprobieren können, damit ich entscheiden kann, ob es für mich nützlich ist.		Epic	EAM-Visualisierung	02/May/16 1:23 PM																																																																					

@@ -1,0 +1,56 @@
+Update seal data via mass update or REST API	Is it possible to update/set the seal using mass update or REST API		Technical question	iteraplan Support	20/Sep/16 11:35 AM	26/Sep/16 8:35 AM														"20/Sep/16 11:56 AM;cst;Dear Mr. Liskow, 
+
+thank you for your enquiry.
+
+No it is not possible to update/set the seal with using the mass update or REST API. 
+The function ""seal"" must be done on the gui.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "	"20/Sep/16 1:31 PM;thomas.liskow@coface.com;Hello Mr. Stangl, 
+
+Thanks for your quick answer. Is there a plan to integrate it in mass update or REST API?
+Or do you have a reason for the gui only entry?
+
+Kind regards
+T. Liskow"	"21/Sep/16 10:31 AM;cst;Hello Mr. Liskow,
+
+thank you for your reply. 
+
+There is at the moment no plan to integrate a mass update for the seal function. 
+In the future it can be possible, with the change to the interactive client, that this feature is removed.  
+
+What are you requirements for a similar feature in the interactive client?
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+"	"21/Sep/16 11:05 AM;thomas.liskow@coface.com;Hello Mr. Stangl,
+
+We use it for our rolling Quality Audit on InformationSystems. With such a feature it is easy to validate these building blocks every year and see whether there were changes on them.
+
+So the requirements are:
+1. Have a validation marker (with date and comment) which outdated after a configurable time. Maybe also for other building blocks than InformationSystems.
+2. Each change on the building block should set this marker to invalid. This as a default behavior but having the configuration possibility to exclude attributes or relations.
+3. The possibility for bulk updating this validation marker especially necessary when starting with EA activities. 
+
+Today we are very comfortable with this feature and it would be a regress to loose it.
+
+Kind regards;
+Thomas Liskow"	"26/Sep/16 8:35 AM;cst;Dear Mr. Liskow,
+
+
+
+thank you for your feedback. 
+
+
+
+We are going to check these points for future updates. 
+
+
+
+Greetings,
+
+
+
+Christoph Stangl - iteraplan Support "																																																		

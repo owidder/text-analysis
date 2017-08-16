@@ -1,0 +1,63 @@
+Filter Interfaces	"*Summary:*
+
+Filter interfaces with the help of the combinedFilter.
+
+
+
+*As-Is:*
+
+Only Information Systems are filtered at the moment.
+
+
+
+*To-Be:*
+
+Information Systems and Interfaces can be filtered.
+
+
+
+*Affected JS-Files:*
+
+* ifdToolAreaViewModelBuilder
+
+* ifdConfiguration
+
+* ifdDataService
+
+* ifdController
+
+* ifdLegendMain (potentially)
+
+* ifdLegendBuilder (potentially)
+
+
+
+* PersistentName of Interfaces (can be hard-coded) is ""InformationFlow""
+
+
+
+*Acceptance criteria:*
+
+* User opens toolarea for nodes or for edges or for edges & nodes
+
+* A new toolarea entry ""Edge Filter"" occurs ""Node Filter""
+
+* After clicking on ""Edit filter"" the CombinedFilter-Template opens
+
+* After selecting one or mulitple filters, the diagram is immediately filtered and redrawn, the legend is updated as well as the url"		New Feature	iteraplan Speedbird	06/Apr/16 1:57 PM	18/Jul/16 9:45 AM														"11/Jul/16 12:39 PM;dmkh;??PersistentName of Interfaces (can be hard-coded) is ""InformationSystemInterface""??
+
+As I see in {{ifdDataService.js}} persistent name of edges is ""InformationFlow"". So I implemented filtering using this one and it seems to work well. 
+
+
+
+??User opens toolarea for nodes or for edges(=link) or toolarea for edges & nodes (=both)??
+
+Added Edge Filter to all toolareas, as Node Filter is, so if user adds filtering for edges he still can undo or edit Edge Filter settings. 
+
+Even if all edges are filtered and Edge Filter Entry is not displayed for any selection type.
+
+
+
+[~msr], can I use the implementation described above and update description of the ticket?
+
+"	11/Jul/16 12:41 PM;msr;Yes, please do so.	11/Jul/16 4:13 PM;dmkh;Interface ID property in Edge Filter causes exception(see the attachment). Do we need this ID to be visible for user in the filter?	11/Jul/16 5:28 PM;msr;Please remove ID from filter-list																																																			

@@ -1,0 +1,45 @@
+vm für MB-Technik als "mbt.iteratec.de" anlegen	"Servus Admins,
+
+
+
+für das Projekt MB-Technik (mbt) bräuchten wir eine VM, um die Anwendung zu demonstrieren und zu vertesten. 
+
+
+
+URL   mbt.iteratec.de
+
+OS     Ubuntu 16.04.1 LTS
+
+Contact Andreas Netter (ane)
+
+
+
+Die Anwendung ist hauptspeicherintensiv, Plattenplatz kann hingegen ""normal"" dimensioniert werden:
+
+
+
+CPU   2
+
+MEM  8 GB (wenn das gar nicht geht mindestens 4 GB, denn sonst läuft sie nicht)
+
+HD    20 GB frei ...
+
+
+
+Geht das? Gruß, Thorsten"		Task	Infrastruktur	19/Jan/17 4:15 PM	23/Jan/17 10:13 AM	vm													"19/Jan/17 4:29 PM;kti;Hallo Thorsten,
+
+
+
+bitte deine Anforderung für eine VM in der Liste in SharePoint erfassen:
+
+https://iterasp.iteratec.de/Projekte/Projektadministration/Lists/UebersichtVM/AllItems.aspx 
+
+
+
+Wir brauchen noch weitere Angaben, dann können wir die VM zur Verfügung stellen.
+
+
+
+Viele Grüße
+
+Kathrin"	19/Jan/17 4:38 PM;tgo;Alle Angaben sind in Sharepoint hinterlegt. Für mich ist die Aufgabe übrigens erst dann erledigt (=Resolved), wenn die VM verfügbar ist oder Ihr es ablehnt ...	23/Jan/17 10:13 AM;kti;VM wurde angelegt																																																				

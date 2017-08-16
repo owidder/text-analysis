@@ -1,0 +1,31 @@
+Name editor for new attribute is not working	"*Reproduce:*
+
+ * Click CREATE ELEMENT button on attributes list page
+
+ * Select any attribute type
+
+ * On new page enter new attribute name to Name editor
+
+ * Click apply button on name editor
+
+
+
+*Actual result:* 
+
+ * Nothing happens (same is for cancel button)
+
+ * Also exceptions appear in the console after clicking on other elements or empty space (see attached screenshot)
+
+
+
+*Expected result:* 
+
+ * Name editor is closed, name is applied
+
+
+
+*Note*: bug is not always reproduced for name editor of new attribute but was noticed at least on two clients, please check this."		Bug	iteraplan Speedbird	20/Apr/17 12:14 PM	27/Apr/17 2:27 PM														21/Apr/17 4:42 PM;fka;Could reproduce bug with new text attribute. New date attribute seems to work for me.	"24/Apr/17 1:05 PM;roia;For me it is always reproducible.
+
+
+
+Also, with another steps: create new attribute, enter name and click [Back To List] (*do not* click apply button in the editor)."	25/Apr/17 1:50 PM;dmkh;For me it is reproduced since revision *6595,* check it for more information.	27/Apr/17 9:45 AM;anhv;bug has fixed in IPTS-772 (revision 6679)	27/Apr/17 2:26 PM;dmkh;Review was done in scope of IPTS-772																																																		

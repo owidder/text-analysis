@@ -1,0 +1,17 @@
+Confluence-Seiten sind nicht von JIRA aus erreichbar	"Wenn einem Ticket in JIRA Seiten aus dem Wiki/Confluence zugeordnet sind, dann werden die im Moment nicht angezeigt bzw. der Link dazu. In den ""Application Links"" wird aufgelistet, dass Confluence die Zusammenarbeit derzeit verweigert, weil nicht die entsprechenden Rechte vergeben sind.
+
+
+
+Jetzt sind aber unsere Testfälle alle im Wiki beschrieben, und keiner kommt mehr direkt ran. Könnt Ihr den Link bitte wieder aktivieren?
+
+
+
+Ich kann es leider nicht machen, denn dazu muss man Admin in Confluence sein."		Task	Infrastruktur	06/Apr/17 4:41 PM	09/May/17 3:59 PM	JIRA													"06/Apr/17 4:48 PM;ehi;Hallo Thorsten, ich habe ein Pflaster draufgeklebt, jetzt geht es wieder :)
+
+
+
+Bitte testen."	"09/May/17 2:39 PM;ehi;Hallo Thorsten,
+
+
+
+kann ich das Ticket schließen?"	09/May/17 3:59 PM;tgo;Hallo [~ehi], die Verbindung von Confluence mit Jira funktioniert wieder einwandfrei. Haben es gleich noch einmal getestet, Oliver ist schon seit geraumer Zeit sehr zufrieden (er was am meisten betroffen).																																																				

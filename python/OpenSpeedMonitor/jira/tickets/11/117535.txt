@@ -1,0 +1,25 @@
+Reaction-Test-Reaction	"Create an sample reaction script, which works idependently from the configured metamodel.
+
+
+
+This script should be used for testing the Reaction System, when customers or consultants report problems with the system.
+
+
+
+The script should basically dump the change info to the log file together with the output of
+
+||Function (of {{api.datamodel}})||Description||
+
+|getAllTypeNames()|returns the names of all building block types in the metamodel.|
+
+|getAllPropertyNamesByType(string typePersistentName)|returns the names of all properties of a building block type.|
+
+|getAllRelationshipNamesByType(string typePersistentName)|
+
+
+
+Moreover it should have some change code block - which is by default commented out. This code block changes the name of the element, which triggered the reaction, e.g. by adding some string like 'Test of Reaction System' and the current date to the description field of that element.
+
+
+
+If ticket IPTS-707 is already implemented, consider dumping such information, too."		Improvement	iteraplan PO	03/Apr/17 2:30 PM															31/May/17 8:41 AM;msr;Phone Call between [~msr] and [~dne]: This ticket is postponed after Release 6.0. [~fka] will contact [~dne] in the next months if there is support needed.																																																						

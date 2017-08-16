@@ -1,0 +1,41 @@
+getOutputStream() has already been called for this response	"Tritt auf beim Aufruf von REST-Funktionen seit ca. 2 Monaten.
+
+
+
+Birger:
+
+Das liegt daran, dass im RestApiController in der Funktion sendSimpleResponseAsStream() einmal direkt in den Outputstream geschrieben wird, und danach AUCH noch per render() der leere String in den Outputstream geschrieben wird.
+
+
+
+Hat das einen bestimmten Grund? Eigentlich würde etwas wie folgt völlig reichen:
+
+{code}
+
+private void sendSimpleResponseAsStream(javax.servlet.http.HttpServletResponse response, Integer httpStatus, String message) {
+
+  response.setContentType('text/plain;charset=UTF-8')
+
+  response.status=httpStatus
+
+
+
+  render message
+
+ }
+
+{code}"		Bug	OpenSpeedMonitor	12/Jan/16 2:08 PM	12/Jan/16 2:59 PM														"12/Jan/16 2:10 PM;nku;Ich meine der Aufruf von render() war nötig, um aus der aufrufenden action-Methode auszusteigen. Warum wir vorher noch manuell in den outputstream schreiben weiß ich nicht mehr. 
+
+
+
+Bitte wie beschrieben ändern. 
+
+
+
+Dann aber unbedingt alle REST-Methoden manuell lokal mit dem OTTO-Dump testen. 
+
+Wir haben leider noch keine Integrations- oder Oberflächen-Tests für die REST-API und diese ist bei OTTO viel im Einsatz. Daher bis wir diese Tests haben die ganze API einmal manuell testen. "	"12/Jan/16 2:59 PM;bka;Wie beschrieben geändert.
+
+
+
+Beim Testen der REST-API wurden alle Bestätigungen und Fehler korrekt ausgegeben."																																																					

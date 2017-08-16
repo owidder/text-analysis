@@ -1,0 +1,9 @@
+Level-Distrigation Migration	"Migrate Level-Distrigation Information for
+
+* Classic Cluster Diagram
+
+* Landscape Diagram
+
+
+
+Important: In the interactive client, the axes of the landscape diagram can be displayed ""flat"" even if a hierarchy is present. This is not possible in the classic landscape diagram, so make sure to disable the ""flat"" flag during migration, if the axis has a hierarchy."		Improvement	iteraplan Thunderduck	20/Jan/17 11:06 AM	02/Feb/17 9:00 AM														01/Feb/17 8:36 AM;aan;I created a subtask for The CCD so this can already be reviewed																																																						

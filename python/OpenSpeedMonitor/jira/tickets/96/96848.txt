@@ -1,0 +1,9 @@
+Versionierung für Skripte implementieren	"Momentan gibt es eine Liste von Skripten, die man editieren kann, diese Änderungen lassen sich aber nicht nachvollziehen. 
+
+
+
+Damit man alte Versionen wiederherstellen kann brauchen wir eine art Versionierung. D.h. wenn ein Skript gespeichert wird, soll eine Kopie mit einer neuen Version erstellt und als aktuell gekennzeichnet werden. Das Original wird dann deaktiviert. Alte Versionen müssen einsehbar sein. 
+
+
+
+Weiterhin wäre es gut wenn ein Feld für eine Beschreibung hinzukommt und der Benutzer, der die Änderung angestoßen hat protokolliert wird ( so dass jede Version einem Benutzer zugeordnet werden kann)"		Task	OpenSpeedMonitor	21/Sep/16 3:26 PM	20/Feb/17 10:11 AM																																																																				

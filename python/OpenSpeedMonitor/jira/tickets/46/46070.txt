@@ -1,0 +1,6 @@
+Dashboard- there is no Information displayed on the Dashboard screen	"Experienced:
+
+I selected the Dashboard Visualization option in the Online Demo version using Internet Explorer. No Information was displayed on the resulting screen.
+
+Expected:
+A bar chart and a pie chart are expected to be shown."		Bug	iteraplan PO	11/Sep/13 5:04 PM	30/Dec/15 3:17 PM					dashboard									18/Sep/13 7:01 PM;sry;The problem is Javascript, not SVG. That particular dashboard impl relies on Dojo UI, which is a rather old version by the time already. It is obviously incompatible with more recent IEs, while Firefox is happy with it.																																																						

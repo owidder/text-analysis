@@ -1,0 +1,19 @@
+Include filter dialog	The same filter dialog as in the diagrams.		New Feature	iteraplan PO	10/May/16 11:09 AM	03/Jun/16 12:14 PM														"02/Jun/16 1:29 PM;mse;Only some very minor *review comments*:
+
+
+
+* Will the filter tests be implemented in the context of ITERAPLAN-4575?
+
+* I don't understand the meaning (and get a warning...) of the following line:
+
+{{preCloseCallback: dialogScope.dialogResetFullDialog}}
+
+(l. 83 in ipList-component.js)
+
+* The getFilter() function in ListConfigurations.js seems to be a duplicate of getCombinedFilter()."	"03/Jun/16 9:22 AM;pma;Comments on review comments:
+
+* while the filter dialog is mainly implemented in the list controller, the filter tests will be included in ITERAPLAN-4575
+
+* deleted preCloseCallback
+
+* deleted getFilter()"	03/Jun/16 12:14 PM;mse;Review ok.																																																				

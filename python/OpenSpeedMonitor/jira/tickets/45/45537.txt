@@ -1,0 +1,4 @@
+Changing the ends of an existing Interface has no effect after Save	"Open the detail view of an existing interfaces, let's assume it connects ISRs ""ABC # 1.0"" and ""XYZ # 2.1"".
+If you change one of the ISRs, e.g. ""DEF # 10.5"" instead of  ""ABC # 1.0"", this change is silently discarded when you click Save. No error is shown or logged.
+
+Expected: When I click save, the modified interfaces ends should be persisted."		Bug	iteraplan PO	18/May/12 12:33 PM	21/May/12 1:27 PM																																																																				

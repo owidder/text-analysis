@@ -1,0 +1,18 @@
+LDAP / iturm: User's e-mail address is not transferred to iteraplan	When a user configured in LDAP / iturm logs in to iteraplan his/her e-mail address isn't transferred to iteraplan as well.		Bug	iteraplan PO	31/Jul/13 4:43 PM	30/Sep/13 5:25 PM					iturm	ldap	mail							02/Aug/13 11:22 AM;bra;iturm does not contain email information for users. Therefore this is only relevant for ldap	"02/Aug/13 3:34 PM;bra;with [changeset 21000|https://iteraplan.iteratec.de/projects/iteraplan/changeset/21000] the email address is retrieved from the ldap on first login of the user.
+
+Do we need to update email addresses of existing users according to the directory?"	05/Aug/13 11:36 AM;sfe;looking good	26/Aug/13 9:24 AM;bra;email should be updated according to directory even if user already exists in iteraplan	03/Sep/13 12:15 PM;sbu;What is the current status of this issue? Are E-Mails updated if changed in LDAP?	"03/Sep/13 4:01 PM;sry;Looks cool. Though, I would strong suggest to move the classes {{IteraplanLdapUserDetailsMapper}} and {{IteraplanLdapUserDetails}} to the Spring Security Extensions project. While you're at it, please do also move the class {{AjaxAwareLoginUrlAuthenticationEntryPoint}}
+
+In addition, allow configuring the name of the LDAP attribute which contains the email address. Currently it is hardcoded as _mail_, and I'm afraid not every directory conforms to this expectation. Nevertheless, let _mail_ be the default value, and leave it optional to override.
+
+Please do also update other customization sets which rely on LDAP access!"	"06/Sep/13 1:53 PM;sfe;Please test the current functionality again, after Steffen's changes.
+The additional points and improvements Steffen mentioned will be tracked here: ITERAPLAN-1923"	"11/Sep/13 11:41 AM;gph;Tested successfully on trunk3x.
+
+Test setup:
+Deployed with ""deploy.localFull"" to a local Tomcat with ""ldap"" customization and applied the ""iteraplan-auth.properties"". Used a local LDAP-Server (Apache Directory Server + Apache Directory Studio) with test data, because I could change email addresses there.
+
+Test results:
+* (/) If ""mail"" attribute doesn't exists or has a different name, the login works without error. In this case, the email in the User element is not set, because the ""mail"" attribute name is hard-coded in IteraplanLdapUserDetails. 
+* (/) If ""mail"" attribute exists, the email is set at login time.  
+* (/) If ""mail"" attribute value changes, the value is changed in the User element at login time.  
+
+(?) Only question: Why is it necessary to override equals() and hashCode() with super-implementation (and therefore supress the warning) in IteraplanLdapUserDetails?"	11/Sep/13 6:20 PM;psc;Reviewed. Ticket will be closed.	23/Sep/13 6:01 PM;sfe;Reopened to add some additional log output and for merging into 3.1 patches branch	30/Sep/13 5:25 PM;bra;(/) works as expected																																												

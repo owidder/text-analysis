@@ -1,0 +1,49 @@
+Migrierte Abfrage funktioniert im neuem Client nicht mehr 	"Das Problem ist bei der VIG
+
+aufgetreten kann aber auch am Demo System nachgestellt werden.
+
+
+
+ 
+
+
+
+1.       Lege
+
+eine gespeicherte Abfrage für IS an. -> Für die Konfiguration siehe Bild
+
+„GespeicherteAbfrage.png“
+
+
+
+2.       Migriere
+
+diese Abfrage in den neuen Client:
+
+Logausgabe war wie folgt:
+
+
+
+Starting Migration at Wed May 17 09:37:20 CEST 2017Starting Migration for Spreadsheet Report for Type InformationSystem ""Test IS Abfrage"" (id: 33)Feature BusinessMappings filter for InformationSystem was migrated with Note: migrate setting with correct behaviour of the filterMigration for list ""Test IS Abfrage"" (id: 33) as ""Test IS Abfrage"" complete==============================
+
+
+
+
+
+3.       Beim
+
+Aufrufen der gespeicherten Abfrage im neuem Client erhalte ich folgende
+
+Fehlermeldung:
+
+„An attribute or value does not exist anymore and was
+
+removed from the query.“ 
+
+
+
+"		Fault	iteraplan Support	17/May/17 9:47 AM	08/Jun/17 2:06 PM														"17/May/17 9:47 AM;isc;
+
+!GespeicherteAbfrage.PNG|thumbnail!"	"19/May/17 3:31 PM;cst;Konnte das Verhalten nachvollziehen und habe hierzu ein Ticket erstellt. 
+
+https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-5279 "	08/Jun/17 2:06 PM;fka;Wird mit Release 6.0 gefixt																																																				

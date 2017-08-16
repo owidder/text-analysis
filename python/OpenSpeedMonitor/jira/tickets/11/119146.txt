@@ -1,0 +1,33 @@
+Weird reordering of enum attribute values	"*Steps to reproduce:*
+
+
+
+Go to Administration - Attributes and open a page for some enumeration attribute with large list of values. In example, Manufacturer.
+
+
+
+Drag the first item (Apache) to the bottom of the list.
+
+
+
+*Expected result*: ""Apache"" is at the bottom, the order of the rest of elements remains unchanged.
+
+
+
+*Actual result:* the item, which is at the position where you drag to jumps to the position of a dragged item: (the ""Iteratec GmbH"" will become the first one).
+
+
+
+!enum-attribute.jpg|thumbnail!
+
+
+
+So, to achieve the desired result you have to reorder that ""jumped"" element, get another one jumped, that drives you mad and you smash your monitor with a keyboard, especially when you have lots of items in the list.
+
+
+
+!actual-result.jpg!
+
+
+
+ "		Bug	iteraplan Speedbird	20/Apr/17 12:53 PM	03/May/17 4:02 PM														21/Apr/17 3:07 PM;fka;Relevant: https://www.youtube.com/watch?v=sN37Fn3Hw8E																																																						

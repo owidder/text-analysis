@@ -1,0 +1,39 @@
+Error occurs when deleting self relations	"* go to the list view of information systems
+
+ * go to the single view of ""Callcenter # 3.2""
+
+ * go to the relations tab
+
+ * add ""Account-Sys RB # 3.1"" as Sub ordinate IS
+
+ * add ""BI # 1.0"" as ""Super ordinate IS
+
+ * delete ""BI # 1.0""
+
+
+
+Currently: Error occurs: ""removed"" of null object not possible
+
+ Expected: Deletion successful
+
+
+
+ 
+
+
+
+Another problem:
+
+
+
+Delete ""Account-Sys RB # 3.1"" then the backend returns error 500
+
+
+
+ "		Bug	iteraplan Thunderduck	02/May/17 2:47 PM	22/May/17 11:13 AM														05/May/17 5:35 PM;fka;Element BI # 1.0 is removed, but error is shown	"11/May/17 10:20 AM;dmkh;[~fka], [~msr], I suggest to move out this ticket from Speedbirds team, because it is not responsible for BB single pages (see attached screenshot with commits history).
+
+
+
+I have already spent a half of a day to view code and fix a client exception, but then the server error appeared.
+
+"	17/May/17 9:23 AM;aan;First commit and problem where already reviewed by Mai, so the second part has to be reviewed																																																				

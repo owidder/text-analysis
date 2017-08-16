@@ -1,0 +1,11 @@
+Trim mit mehreren Load Times	Wird trim above und trim below auf dem Mess-Ergebnisse Dashboard gesetzt und es werden zwei load times ausgewählt, von denen eine keine Daten innerhalb des der Trim-Werte besitzt, werden auch die vorhandenen Daten der anderen load time nicht angezeigt		Bug	OpenSpeedMonitor	19/Feb/16 11:04 AM	08/Mar/16 11:20 AM														"07/Mar/16 11:05 AM;bwo;Der Code liest sich so, als wäre diese Funktionalität gewollt.
+
+Es werden alle EventResults gefiltert, auf diese die Einschränkungen nicht zutreffen. Das kann auch durchaus Sinn ergeben, wenn man z.B. nur die Ladezeiten sehen möchte, für Seiten die mindestens X kb groß waren.
+
+
+
+Bevor ich das Ganze umbaue möchte ich noch einmal sicher gehen: Ist es wirklich ein Bug oder ist die Funktion so gewollt und nur ungünstig in der GUI beschrieben?"	"07/Mar/16 1:51 PM;bwo;Die Funktion bleibt so wie sie ist, es wäre jedoch als neues Feature denkbar, die Filter auf die Kategorien zu beschränken.
+
+
+
+Es sollte jedoch noch eine Beschreibung neben der Trim Einstellung sein, da diese aktuell nicht selbsterklärend ist."																																																					

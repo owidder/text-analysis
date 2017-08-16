@@ -1,0 +1,10 @@
+Create TableModelBuilder	"Create the TableModelBuilder that transforms a Items from the ItemBuilder into a TableModel.
+
+Jasmine tests,
+
+Integration with  input mock data.
+
+
+
+
+"		New Feature	iteraplan PO	03/Mar/15 4:09 PM	11/Mar/15 9:30 PM														11/Mar/15 9:30 PM;wfr;thanks, now with unit test																																																						

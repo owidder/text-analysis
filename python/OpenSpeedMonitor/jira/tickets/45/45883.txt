@@ -1,0 +1,1 @@
+User with functional permission on subscriptions gets an empty reports menu			Bug	iteraplan PO	10/Jul/13 5:37 PM	20/Jul/16 9:21 AM					gui																																																															

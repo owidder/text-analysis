@@ -1,0 +1,10 @@
+UI bug with too long name	"Steps to reproduce:
+1. Go to LSD page
+2. Click on ""Save/Share"" button
+3. Remove old name
+4. Enter new name which will be equal to 50 characteres
+5. Click on ""Save"" button
+6. Go to Recent view page
+Actual: UI bug with name"	47468	Sub-task	iteraplan PO	02/Apr/15 1:48 PM	07/Apr/15 1:33 PM													"Workspace: Windows 8.1
+revision: 874"	02/Apr/15 1:56 PM;sepr;fixed in rev 877	"02/Apr/15 1:58 PM;dasm;Verified
+revision 877"																																																					

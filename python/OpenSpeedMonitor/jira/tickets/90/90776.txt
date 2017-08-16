@@ -1,0 +1,19 @@
+PNG, JPEG for Full Download	"Currently for all diagrams we use document.getElementsByTagName('canvas') to get canvases and then draw them to another canvas which is downloaded as JPEG/PNG file (using toBlob method). This causes an issue in IE: canvases are loaded not fully. 
+
+
+
+The main reason is that there is limitation of height\width in IE: 8,192 pixels.
+
+For Chrome and Firefox this limit is 32,767 pixels.
+
+
+
+Please use GoJS approach to load images (http://gojs.net/latest/intro/makingImages.html) as we are doing for loading SVG. So browser limits will not effect on downloaded image dimensions."		New Feature	iteraplan PO	18/Jul/16 4:16 PM															"21/Jul/16 5:08 PM;msr;{color:red}*The results of our analysis:*{color}
+
+
+
+* You cannot use the canvas for the full Download of images because it is very limited in the Internet Explorer (ca. 8000 pixels).
+
+* You cannot use GoJS-native functions to create images out of GoJS-diagrams because you cannot concat/combine the two images of the diagram and legend into one image.
+
+* Best solution for full download of images: Create one SVG and use Batik on the Server to convert it to an image. (what we already do for pdf)"																																																						

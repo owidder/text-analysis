@@ -1,0 +1,101 @@
+Tomcat Service consumes 100 % CPU and Memora fully allocated	"This week we are facing the issue with the system's availibility.
+
+
+
+Tomcat Service causes 100 % CPU load and / or Server Memory Allocation is up to max.
+
+
+
+Restarting Tomcat Service solves the issue only for a limited time (~4h).
+
+
+
+As our users are heaviliy complaining, please assist how to solve this issue!"		Fault	iteraplan Support	13/Apr/17 2:11 PM	28/May/17 7:00 AM														"18/Apr/17 10:20 AM;cst;Dear Mr. Hermle,
+
+thank you for your inquiry. 
+
+Are you running only ""iteraplan"" on your Tomcat server, or are other instances deployed? 
+
+
+Have you find a pattern, when the service starts to use the 100% CPU and max Memory ussage? 
+
+Which function in iteraplan causes the problems, or is this random?
+
+Become you a error message in the Tomcat - Logs before the server ""crashes""? 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"21/Apr/17 9:12 AM;richard.hermle@boehringer-ingelheim.com;From the observations so far, it seems that TOMCAT is not closing old Threads ""in short time"" which causes more and more memroy consumption. When in this case, users execute an intensive report, the system runs out of memory.
+
+Please see attached the Memory Usage of the machine.
+
+Last occurency was this week wednesday (19.04.2017 @ 2:10PM)
+
+
+Application popup: Windows - Out of Virtual Memory :
+Your system is low on virtual memory. To ensure that Windows runs properly,
+increase the size of your virtual memory paging file. For more
+information, see Help.
+
+Our current workaround was to assign additional memory to the server, which is now 32GB.
+
+
+In case of contact to customer today, please reach out to Christian Henning +496132774070
+
+
+
+!MemoryUsageTrendView1.png|thumbnail!
+
+!MemoryUsageTrendView2.png|thumbnail!"	"21/Apr/17 9:41 AM;cst;Did the iterplan log or tomcat log produce errors or warnings?
+ We need following log files to check for a problem with iteraplan:
+ * The “*catalina.out”* and “*localhost.log”* files from your tomcat installation (just for the period, when the error occurred).
+
+ * The iteraplan log files from the period, when the error occurred. The files are called “*iteraplan-[version].log*” (for today) or „*iteraplan-[version].log.[TIMESTAMP]*” (for past days). The location of these file was specified during installation and is documented in the file “log4j.properties”.
+ * The iteraplan *System-Info*. A user with the role “_iteraplan_Supervisor_” can download this file directly in the iteraplan-GUI in the menu Administration/Configuration.
+
+Please note, our support is only for the iteraplan software. On other problems with the tomcat server we cannot help you. 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"09/May/17 11:26 AM;stephan.siebel@boehringer-ingelheim.com;here are the log files
+
+[^ProblemReport_2017-05-09_112152.zip] _(10 kB)_
+
+[^localhost.2017-05-08.log] _(1,27 MB)_
+
+[^iteraplan-5.5.0-login.csv] _(2,29 MB)_
+
+[^catalina.2017-05-09.log] _(14,22 MB)_
+
+[^tomcat7-stderr.2017-05-02.log.zip] _(1,28 MB)_"	"09/May/17 11:40 AM;cst;Dear Mr. Siebel,
+
+thank you for your reply. 
+
+I checked the logs and found two suspects for this issue. 
+
+Could you please execute the following script.
+
+[^msql.sql]
+
+The second step is to clear the Table ""USER_SETTINGS"", you can use the command:
+
+""TRUNCATE TABLE USER_SETTINGS;""
+
+(A database backup before you do the steps above is recommended)
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"09/May/17 11:50 AM;stephan.siebel@boehringer-ingelheim.com;I have my doubts
+(0 row(s) affected)
+
+(0 row(s) affected)
+
+(0 row(s) affected)
+
+(0 row(s) affected)"	"09/May/17 11:57 AM;cst;Okay, the are the attributes all right (he creates two entries in the log, that he has a problem with the attributes and the script repairs the defect ones).
+
+On which use case in iteraplan, is the tomcat increase the CPU? 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"																																																

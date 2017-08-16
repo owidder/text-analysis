@@ -1,0 +1,6 @@
+Sometimes Error is appears with diagram construction when user add more two columns	"IPNINE-229
+Steps to reproduce:
+1.Go to Recent view page-> Click on  Information System tile 
+2. Click on ""Add column"" button-> Choose any three columns
+Actual result: Sometimes Error is appears 
+Comments: But if I scroll page to down- it is ok."		Bug	iteraplan PO	28/Nov/14 2:14 PM	22/Dec/14 1:41 PM					IE									22/Dec/14 1:41 PM;dasm;verified																																																						

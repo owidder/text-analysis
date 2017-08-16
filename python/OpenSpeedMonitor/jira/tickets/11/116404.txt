@@ -1,0 +1,13 @@
+Reactions: add seal example in user docu	"Add a propiate example to the user docu. Move all reaction examples to a separate page in the docu.
+
+
+
+Ask FKA for details about the example."		New Feature	iteraplan Thunderduck	26/Mar/17 6:00 PM	12/May/17 2:46 PM														"10/May/17 2:47 PM;aan;There are two additional examples now, the example with the seal and how to obtain a set of multivalue enums the way it was before the changes that lead to this call of the plugin where made.
+
+
+
+The following page was created:
+
+
+
+https://doc.iteraplan.de/display/iteraplan60/Example+Scripts+for+the+Plugin+API"																																																						

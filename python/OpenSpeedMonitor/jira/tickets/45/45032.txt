@@ -1,0 +1,5 @@
+iteraplan 2.9M2	"Make Release 2.9M2
+ * Quality Testing
+ * Remove QS-Seal
+ * Try Migration (iteraplan 2.8)
+ * Try Installer"		Task	iteraplan PO	11/Jul/11 12:18 PM	19/Jul/11 8:31 AM																																																																				

@@ -1,0 +1,27 @@
+LSD: Business Mapping coloring is offered without a Business Mapping on the axes	"*Summary:*
+
+LSD: Business Mapping coloring is offered without a Business Mapping on the axes
+
+
+
+*Reproduce:*
+
+* Open Default LSD
+
+* Set ""Complexity"" on the rows
+
+* Set ""Connected Business Units"" on the columns
+
+* Set Coloring by: ""Business Mappings - Support Degree""
+
+
+
+*As-Is:*
+
+lsdItemBuilder.js:76 Uncaught TypeError: Cannot read property 'persistentName' of undefined(anonymous function) @ lsdItemBuilder.js:76(anonymous function) @ lsdItemBuilder.js:75(anonymous function) @ lsdItemBuilder.js:62LSDItemBuilder.buildContentItem @ lsdItemBuilder.js:61LSDItemBuilder.buildContentItems @ lsdItemBuilder.js:25LSDMain.drawDiagram @ lsdMain.js:115(anonymous function) @ lsdController.js:116
+
+
+
+*Expected:*
+
+* Coloring by Business Mapping is not offered because there is no Business Mapping on the axes"		Bug	iteraplan Speedbird	07/Oct/16 9:40 AM	07/Oct/16 11:32 AM														07/Oct/16 11:32 AM;dmkh;Issue has been fixed, code review: https://iteraweb.iteratec.de/fisheye/cru/IP-64																																																						

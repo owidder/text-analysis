@@ -1,0 +1,7 @@
+User can not login without permission for "Information System"	"Steps to reproduce:
+
+1) Disable ""Information System"" permission (""Interface"" permission should be enabled)
+
+2) Try to login
+
+3) Exception is thrown in console (see screenshot)"		Bug	iteraplan Speedbird	07/Feb/17 9:44 AM	08/Feb/17 8:13 AM																																																																				

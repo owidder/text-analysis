@@ -1,0 +1,87 @@
+ich kann keine Abfragen oder visualisierungen speichern	"siehe oben
+
+Iteraplan logfile:
+
+	... 85 more
+
+[ERROR] 22-Jun-2016 11:04:20 [batch.internal.AbstractBatchImpl] HHH000352: Unable to release batch statement...
+
+[ERROR] 22-Jun-2016 11:07:25 [presentation.flow.FlowExceptionHandler] Exception thrown executing [AnnotatedAction@13f34f54 targetAction = [EvaluateAction@4add1e07 expression = landscapeDiagramFrontendService.saveQueryAs(flowScope.memBean, flowRequestContext), resultExpression = [null]], attributes = map[[empty]]] in state 'selectcontent' of flow 'graphicalreporting/landscapediagram/start' -- action execution attributes were 'map[[empty]]'
+
+org.springframework.webflow.execution.ActionExecutionException: Exception thrown executing [AnnotatedAction@13f34f54 targetAction = [EvaluateAction@4add1e07 expression = landscapeDiagramFrontendService.saveQueryAs(flowScope.memBean, flowRequestContext), resultExpression = [null]], attributes = map[[empty]]] in state 'selectcontent' of flow 'graphicalreporting/landscapediagram/start' -- action execution attributes were 'map[[empty]]'
+
+	at org.springframework.webflow.execution.ActionExecutor.execute(ActionExecutor.java:60)"		Fault	iteraplan Support	22/Jun/16 11:13 AM	05/Jul/16 12:22 PM														"23/Jun/16 9:03 AM;wolfgang.zerrer@festo.com;
+
+[^logfile-speichern.txt] _(14 kB)_"	23/Jun/16 9:03 AM;wolfgang.zerrer@festo.com;hab ihr es euch mal angeschaut ?	24/Jun/16 1:23 PM;msr;Bitte Stephan fragen.	"27/Jun/16 9:32 AM;iteraplan-support;Sehr geehrter Herr Zerrer,
+
+vielen Dank für Ihre Anfrage. Können Sie uns wohl die iteraplan System-Info schicken, damit wir den Fehler genauer analysieren können? Diese kann von iteraplan-Benutzern mit der Rolle „iteraplan_Supervisor“ direkt von der iteraplan-Oberfläche unter dem Menüpunkt Administration->Konfiguration abgerufen werden.
+
+Vielen Dank.
+
+Schöne Grüße
+Manuel Schreyer - iteraplan Support"	"27/Jun/16 11:20 AM;wolfgang.zerrer@festo.com;Hallo Herr Schreyer, die Systeminfo habe ich angehängt
+
+[^ProblemReport_2016-06-27_111334-TEST.zip] _(10 kB)_"	"28/Jun/16 11:35 AM;iteraplan-support;Hallo Herr Zerrer,
+
+vielen Dank für die Zusendung der Systeminfo. Die Konfiguration Ihres System sieht gut aus.
+
+Ich kann Ihr Problem lokal bei uns allerdings nicht nachstellen und erhalte keine entsprechende Fehlermeldung beim Speichern von Abfragen oder Visualisierungen.
+
+Können Sie uns bitte einen Dump Ihrer Datenbank schicken, falls das möglich ist? Dann werde ich versuchen, das Problem mit Ihren Daten bei uns nachzustellen und eine Lösung zu finden. 
+
+Mit dem Datenbank-Dump können wir Ihnen auch sagen, ob das Skript zur Bereinigung der Projekt-Historie (Ticket IPS-100) für Ihren aktuellen Fall geeignet ist.
+
+Vielen Dank für Ihre Hilfe.
+
+Schöne Grüße
+Manuel Schreyer - iteraplan Support
+
+"	"28/Jun/16 11:48 AM;wolfgang.zerrer@festo.com;Das Iteraplan Logile hilft nicht. (DB.DUMP ist eher schwierig)
+
+[^iteraplan-5.2.0.log] _(14 kB)_"	"29/Jun/16 1:40 PM;iteraplan-support;Hallo Herr Zerrer,
+
+
+
+ich habe mit unserem Datenbank-Experten gesprochen. Er meinte, dass wir auf Grund der hohen Vernetzung der Daten in iteraplan ohne DB-Dump das Problem sehr schwer nachstellen können. Besteht die Möglichkeit, dass Sie uns einen anonymisierten Dump der Datenbank schicken können? Falls ja, können Sie das angehängte Sql-Skript dafür verwenden. Wir haben es unter Oracle getestet. ACHTUNG: Ausführen dieses Skripts wird die iteraplan-Daten irreversibel anonymisieren, also bitte nicht das Backup vergessen.
+
+
+
+[^anonymize_oracle_5_2.sql]
+
+
+
+Können Sie generell keine Abfragen und Visualisierungen speichern oder tritt der Fehler nur bei bestimmten Typen auf?
+
+
+
+Vielen Dank für Ihre Hilfe.
+
+
+
+Schöne Grüße
+
+Manuel Schreyer - iteraplan Support"	"30/Jun/16 9:37 AM;wolfgang.zerrer@festo.com;db-dump als anhang
+
+[^UNIP_O_ITERAPLAN_TEST_exp_anonymized_20160630_01 - Kopie.zip] _(2.98 MB)_"	"30/Jun/16 5:14 PM;iteraplan-support;Hallo Herr Zerrer,
+
+vielen Dank für den zugeschickten Dump. Ich füge vorsichtshalber den Import-Log ([^IMPORT.LOG]) hinzu. Vielleicht können Sie kurz reinschauen, ob die Anzahl der importierten Datensätze korrekt ist.
+
+Leider konnte ich den von Ihnen geschilderten Fehler nicht reproduzieren.
+
+Ich möchte Sie deshalb bitten, uns eine Beschreibung zu schicken, welche Schritte Sie ausführen, wenn das Problem auftritt.
+
+Vielen Dank im Voraus.
+
+Mit freundlichen Grüßen
+Timur Ametov"	30/Jun/16 5:28 PM;wolfgang.zerrer@festo.com;Egal bei welcher Visualisierung oder Abfrage. Sobald ich Sie speichern will tritt der Fehler auf	"30/Jun/16 5:33 PM;tam;Ein internes Kommentar:
+Sollte man vielleicht Work-Verzeichnis löschen und Server neustarten?
+Ansonsten müssen wir am Montag Stephan fragen"	"04/Jul/16 4:28 PM;iteraplan-support;Hallo Herr Zerrer,
+
+meine Recherche hat ergeben, dass das Problem durch die veralteten JDBC-Treiber verursacht zu sein scheint.
+
+Könnten Sie bitte in dem lib-Verzeichnis Ihres Tomcat-Servers schauen, welche ojdbc-Treiber dort abgelegt sind? Vielleicht hilft es, wenn Sie den Treiber löschen und durch die aktuelle Version ersetzen.
+
+Vielen Dank im Voraus,
+Timur Ametov
+
+"	04/Jul/16 4:58 PM;wolfgang.zerrer@festo.com;Bingo, das war es. 																																									

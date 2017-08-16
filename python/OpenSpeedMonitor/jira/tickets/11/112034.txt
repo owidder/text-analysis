@@ -1,0 +1,19 @@
+Wrong display of sub-ordinate information systems in hierarchical row axis of LSD	"_Reproduce (with sample data):_
+
+# Go to LSD in interactive client
+
+# Configure IS-Domain for content
+
+# Configure Accountability for columns
+
+# Configure hierarchical level filter for rows -> disable ""flat"" and set all levels to be displayed
+
+# Configure row filter {{""Name"" contains ""r12""}} (this is not necessary for the bug to appear, but makes it easier to see the effect)
+
+
+
+=> subordinate information systems are not shown correctly within their parent element, see [^with_filter.png]
+
+Might be related to sorting, see also [^without_filter.png] where axis seems to be sorted alphabetically instead of according to the hierarchy"		Bug	iteraplan PO	16/Feb/17 10:18 AM	16/Feb/17 2:06 PM														"16/Feb/17 12:53 PM;viol;This issue is also reproduced for X axis in current trunk and in version 5.4
+
+After dipper investigation the possible place in code where the problem occurres was localised to {{lsdDiagramBuilder.js}}, especially the loops which are using descendants of cell item from the diagram model. But definitely it is needed to reimplement the hierarchy nesting for axis from the very beginning."																																																						

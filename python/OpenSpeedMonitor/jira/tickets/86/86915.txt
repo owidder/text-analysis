@@ -1,0 +1,5 @@
+CSI-Gewichtungen für Browser/Connectivity werden falsch dargestellt	"Auf der Seite mit den Gewichtungen werden Felder in der d3-Matrix farbig (blass rot) dargestellt, wenn es ein BrowserConnectivityWeight mit weight=0 gibt. Wenn es für die betreffende Kombination gar kein BrowserConnectivityWeight gibt wird das Matrix-Feld gar nicht farbig, sprich hellgrau dargestellt.
+
+
+
+Ziel: Auch bei vorliegendem, BrowserConnectivityWeight sollte das Feld hellgrau bleiben, wenn weight=0."		Bug	OpenSpeedMonitor	10/Jun/16 11:02 AM	10/Jun/16 12:18 PM														10/Jun/16 12:18 PM;msk;Duplicate of IT-1030																																																						

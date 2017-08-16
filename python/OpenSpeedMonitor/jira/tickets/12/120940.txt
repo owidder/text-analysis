@@ -1,0 +1,25 @@
+Subscription - Link in Mail is not correct	"At the Moment when the Mail of the subscription is created, they have the links of the classic client in it. 
+
+
+
+e.g. 
+
+
+
+InformationSystemDomain ""Centrally managed systems"" updated (/show/informationsystemdomain/88)
+
+
+
+ 
+
+
+
+Correct would be ""https://SERVERNAME:PORT/ITERAPLANNAME/client/#/single/informationSystemDomain/88""
+
+
+
+ "		Bug	iteraplan Speedbird	09/May/17 11:15 AM	13/Jun/17 4:26 PM														"12/Jun/17 10:50 AM;msr;With Windows-10-update [~mada] cannot reproduce it anymore.
+
+The ticket should be taken by another developer.
+
+Please contact [~mada] to get this local fix."	13/Jun/17 10:51 AM;mada;Can't reproduced on Lviv's side. 	13/Jun/17 4:05 PM;tsc;Already fixed with IPTT-143, revision 27167.																																																				

@@ -1,0 +1,33 @@
+iTurm Problem Nr.2	"Hallo Support,
+
+
+
+nachdem am Montag der iTurm wieder funktionierte, kann ich mich heute an iTurm nicht mehr anmelden. Die Anmeldung an unsere Iteraplan Instanz funktioniert aber noch. folgenden Fehler sehe ich im Accesslog des Tomcat:
+
+10.33.115.250 - - [06/Jul/2017:06:55:08 +0200] ""GET /iturm/jsp/Login.jsp?errorKey=error.datasourceNotAvailable HTTP/1.1"" 200 2900
+
+Die Datenbank ist aber da:
+
+root@siguv-iteraplan-mysql:~# mysqlshow -u root -pEnter password:+--------------------+|     Databases      |+--------------------+| information_schema || ipln_52_bghw       || ipln_bgetem        || ipln_bgv           || ipln_kuvb          || ipln_ukh           || ipln_ukt           || ipln_vgplus        || ipln_vpnds         || iturm              || mysql              || performance_schema || sys                |+--------------------+root@siguv-iteraplan-mysql:~#
+
+
+
+Fyi: Die Installation der anderen Iteraplan Instanzen ist soweit fertig, sie wollten mir noch einen Patch zukommen lassen.
+
+Grüße aus BN
+
+A. Ostenkötter
+
+0228-5406-5734"		Fault	iteraplan Support	06/Jul/17 7:22 AM	07/Jul/17 7:45 AM														"06/Jul/17 7:22 AM;a.ostenkoetter@bghw.de;
+
+[^BGHW-Iturm.7z] _(30 kB)_"	"06/Jul/17 8:41 AM;a.ostenkoetter@bghw.de;Hi,
+nach Neustart des Servers läuft iTurm wieder?!
+MfG A.O."	"07/Jul/17 7:45 AM;cst;Sollte das erneut auftreten, müssten wir hier zeitlich Dokumentieren und analysieren woher das Verhalten kommt.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support"																																																				

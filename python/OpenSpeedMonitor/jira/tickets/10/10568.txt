@@ -1,0 +1,9 @@
+Systemintegrationstests mit kompletter SEU-Testumgebung: In der aktuellen ism-Version kommen nicht mehr alle Calls durch den Proxy	"Auf der Results-Seite des PHP-Monitors funktioniert z.B. das Aktualisieren des Status nicht mehr. Möglicherweise kommt der Aufruf dafür nicht mehr durch den Proxy (Spring-Security). Aufgerufen wird die /xmlResult.php des WPT-Servers.
+
+Wir sollten alle WPT-Monitor-Funktionen, die den Server ansprechen noch mal mit der aktuellen ism-Version testen."		Bug	OpenSpeedMonitor	26/Sep/13 5:10 PM	18/Oct/13 4:12 PM														08/Oct/13 5:12 PM;mzeimer;Erfordert aufsetzen der Testumgebung für SEU!	"18/Oct/13 11:49 AM;mzeimer;Der WPT Agent im Kontor, Notebook im Server-Raum hat jetzt einen TeamViewer-Zugang:
+ID: 424 092 038
+PW: iter583Xp
+Hostname: WPTA_KONTOR_NORMAL"	"18/Oct/13 4:11 PM;hmettendorf;-Windows voll ""geupdated""
+-URL-Blast/WPT-Driver funktionsfähig
+-Windows Internet Explorer auf Version 8 zurück gesetzt
+-Bluescreens können noch auftreten, Laptop fährt anschließend jedoch vollkommen hoch und nimmt Betrieb wieder auf"	18/Oct/13 4:12 PM;hmettendorf;Agent läuft und testet																																																			

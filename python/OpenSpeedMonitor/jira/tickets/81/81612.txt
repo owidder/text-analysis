@@ -1,0 +1,15 @@
+Installieren der Karma-Dependencies zusammenführen	"Aktuell gibt es 2 Gradle-Tasks, die gemeinsam die nötigen npm-Dependencies installieren, damit man Karma-Tests ausführen kann.
+
+
+
+Das sind die Tasks:
+
+* setupNpmDependencies (installiert die Dependencies aus package.json)
+
+* setupJasmine (installiert die Dependencies aus der Variable _jasmineDependencies_)
+
+
+
+Es ist zu empfehlen, dass man die Dependencies aus dem Gradle-Skript herausnimmt und stattdessen nachwievor die Dependencies in der package.json verwaltet. Hier muss man beachten, dass in der package.json bestimmte Package-Versionen verlangt werden. Es ist zu prüfen, welche Versionen genutzt werden sollen.
+
+Anschließend kann die Task _setupNpmDependencies_ gelöscht werden, und die Task _setupJasmine_ installiert in Zukunft die package.json-Dependencies."		Bug	OpenSpeedMonitor	22/Apr/16 2:02 PM	22/Apr/16 2:14 PM																																																																				

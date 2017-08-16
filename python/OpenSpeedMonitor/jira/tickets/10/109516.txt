@@ -1,0 +1,25 @@
+Migration dab.iteratec.de auf neue VM-Umgebung	"Hi Sami,
+
+
+
+könntest du bitte bei Gelegenheit noch die VM dab.iteratec.de auf die neuere VM-Umgebung umziehen? Wir hatten das ja letzte Woche schon versucht und wegen Problemen und aus zeitlichen Gründen abgebrochen.
+
+
+
+Danke und Gruß
+
+Fabian"		Task	Infrastruktur	24/Jan/17 2:02 PM	26/Jan/17 12:41 PM	vm													"26/Jan/17 12:41 PM;sas;Hallo Fabian,
+
+
+
+die VM läuft jetzt auf die neue Umgebung und ist aktiv. Die alte VM-Umgebung wird runtergefahren.
+
+
+
+Viele Grüße
+
+Sami
+
+
+
+"	26/Jan/17 1:11 PM;fkn;Super, danke für die Unterstützung!																																																					

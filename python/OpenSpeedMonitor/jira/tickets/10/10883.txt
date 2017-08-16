@@ -1,0 +1,3 @@
+Default-Einstellungen Result-Dashboard	"* Datum: letzte 3 Tage
+* Messgrößen: first view doc_complete
+* Die abhängigen selects (Messschritte und Location) werden beim initialen Laden des Dashboards nicht gefiltert. Diese selects enthalten dann immer alle Einträge."		New Feature	OpenSpeedMonitor	31/Jan/14 3:38 PM	30/Jun/14 9:16 AM														30/Jun/14 9:16 AM;nkuhn;umgesetzt mit einer woche als default-zeitraum																																																						

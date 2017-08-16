@@ -1,0 +1,23 @@
+(Backend) Wrong encoding in GET-response saved query in a diagram	"*Summary:*
+
+The title of a saved query is wrongly encoded in a diagram.
+
+{color:red}*UPDATE:*{color}: also in saved queries list (incl. description column), and all messages regarding saved queries saving/updating.
+
+
+
+*Reproduce:*
+
+* Save a query containing ""Ü"" or other umlauts
+
+
+
+*Actual:*
+
+* See screenshot
+
+
+
+*Expected:*
+
+* Correct name of the saved query"		Bug	iteraplan PO	04/Feb/17 9:43 AM	07/Feb/17 2:20 PM														07/Feb/17 9:26 AM;dmkh;[~msr], probably this is REST or DB problem (in POST name and description is passed correctly, but in GET it is returned with decoding issues, see second screenshot).																																																						

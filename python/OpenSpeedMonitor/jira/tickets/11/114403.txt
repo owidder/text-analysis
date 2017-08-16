@@ -1,0 +1,5 @@
+Regelmäßige Überprüfungen der Wettbewerber Messungen	"Da sich das Angebot auf den verschiedenen Seiten ändert (speziell bei Anbietern wie etwa Tchibo) fallen Produkte aus dem Sortiment und sind nicht mehr verfügbar. Daraus folgt, dass wir teilweise falsche Seitentypen messen (betrifft vor allem Product Detail Entry Seiten oder auch spezielle Suchanfragen).
+
+
+
+Hierfür sollten wir uns eine Lösung überlegen, wie wir dies regelmäßig überprüfen und anpassen können."		Service Request	OpenSpeedMonitor	09/Mar/17 8:56 AM																																																																					

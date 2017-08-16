@@ -1,0 +1,47 @@
+unwanted entry in history	"After migration of the history in 5.5 there are unwanted entries in the history table:
+
+first entry is the date where the migration tokk place.
+
+
+
+Then any new attribute attached to an Building block left an entry which seems to be unnecessary
+
+
+
+see atached file"		Fault	iteraplan Support	31/May/17 8:36 AM	27/Jun/17 2:52 PM														"31/May/17 8:36 AM;wolfgang.zerrer@festo.com;
+
+!history.PNG|thumbnail!"	"31/May/17 4:45 PM;msr;Hallo Herr Zerrer,
+
+danke für Ihre Anfrage.
+Der erste (älteste) History-Eintrag zeigt, wann die Historisierung der Daten ein und ggfs. wieder ausgeschaltet wurde. Dies persistent zu speichern, ist eine Anforderung von den Audit & Compliance-Abteilungen mehrerer Kunden. Somit kann nachvollzogen werden, ob alle Daten über einen ganzen Zeitraum in die History geschrieben wurden oder ob sie dazwischen mal aus- und wieder eingeschaltet wurde.
+Der neueste Eintrag zeigt, wenn ein Merkmal einem Bebauungselement-Typen neu hinzugefügt wurde und zeigt damit eine bessere Übersicht, was sich alles verändert hat.
+
+Mit freundlichen Grüßen
+
+Marcel Schrumpf - iteraplan Support"	"31/May/17 5:08 PM;wolfgang.zerrer@festo.com;Den punkt eins kann ich einigermassen nachvollziehen. Beim zweiten Punkt tue ich mich da schwerer. Bei existierenden Objekten ist er nachvollziehbar. Bei Objekten die erst nach solchen Aktionen angelegt wurden ist es eher verwirrend.
+
+Es sieht dann in der History so aus:
+
+History eingeschaltet
+..
+..
+..  Attribut hinzugefügt (oder weggenommen ?)
+Objekt erzeugt
+
+Alles was nach der Erzeugung geschieht ist für die Dokumentation okay. Alles davor ist nicht wirklich sinnvoll. 
+"	"01/Jun/17 4:03 PM;msr;INTERN:
+Konnte Punkt 2 im Nightly nachvollziehen. Das macht wenig Sinn. Bei den Entwicklern nachfragen, ob man das unterbinden kann."	"02/Jun/17 10:22 AM;msr;INTERN:
+[~fka]: Ist dieses Verhalten aus Punkt 2 fachlich gewollt. Technisch wäre es mit etwas Aufwand lösbar."	"08/Jun/17 4:31 PM;fka;Nein, das Verhalten in Punkt zwei ist nicht gewollt. Eine Element-History, die vor der Erstellung des Elementes selbst beginnt, ist nicht sinnvoll.
+ Ich würde auch die Aktivierung/Deaktivierung der History, wenn sie außerhalb der Lebensdauer des Elementes liegt, nicht anzeigen. Das ist aber optional."	"12/Jun/17 4:24 PM;msr;Hallo Herr Zerrer,
+
+
+
+nach interner Analyse haben wir beschlossen, das beschriebene Verhalten in Punkt 2 (""Events *VOR* dem Erzeugen des Objekts selbst sollen nicht in der History angezeigt werden"") für Release 6.1 zu ändern.
+
+
+
+Danke für Ihr Feedback
+
+
+
+Marcel Schrumpf - iteraplan Support"	27/Jun/17 1:14 PM;wolfgang.zerrer@festo.com;close																																															

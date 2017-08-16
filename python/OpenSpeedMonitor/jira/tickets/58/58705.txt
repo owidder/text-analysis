@@ -1,0 +1,19 @@
+date attributes for axes don´t work	"LSDDataService.prototype.getAxisDateGroups should handle coordinates
+
+
+
+*Reproduce*
+
+*select in axis  ""change row/column association"" with content_menu or toolArea attribute and pick a date attribute
+
+
+
+*Expected*
+
+the date attribute should be shown in  the chosen axis
+
+
+
+*Actual*
+
+TypeError: Cannot read property '0' of undefined       lsdDataService.js.389"		Bug	iteraplan PO	30/Sep/15 10:36 AM	30/Sep/15 3:03 PM																																																																				

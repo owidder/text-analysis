@@ -1,0 +1,44 @@
+Setting up Dashboard	"in new client under Visualisation is entry 
+
+""Dashboard"". It provides to user download of the corporate_dashboard.xsl. 
+
+
+
+What steps must be done so ""Dashboard"" show the generated html file from reactor instead?
+
+
+
+Attached are setting we tried w/o success"		Technical question	iteraplan Support	31/Mar/17 10:21 AM	19/Apr/17 7:00 AM														"31/Mar/17 10:21 AM;michal.klima@infineon.com;
+
+!2017-03-31 10_19_30-Dashboard.png|thumbnail!
+
+!2017-03-31 10_20_11-Graphics Reactor.png|thumbnail!"	"31/Mar/17 10:28 AM;cst;Dear Mr. Klima,
+
+thank you for your inquiry.
+
+You execute the script with the right mouseclick and ""Execute File"".
+After that, the URL can be clicked and the result will be shown.
+
+On the follwoing link find you our documentation of the Graphics Reactor:
+
+[https://doc.iteraplan.de/display/iteraplan55/Graphics+Reactor] 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+
+ "	"31/Mar/17 11:10 AM;michal.klima@infineon.com;I know how to execute the reactor file.
+
+Question is, what must be setup in the reactor script config so
+when the user clicks the Dashbouard button he gets the real dashboard.
+
+
+!home page.png|thumbnail!"	"31/Mar/17 11:13 AM;cst;Ahh okay, this feature is not implemented in version 5.5. 
+ The dashboard feature will be availible in version 6.0
+
+To open the executed dashboard in the reactor, you must use the link whitch is created for the output.
+These link can be opened from your iteraplan users.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "																																																			

@@ -1,0 +1,22 @@
+IE10 not supported message	"If a user displays the iteraplan start screen using IE 10, the system must display a warning message.
+
+Note that:
+
+- The message is only displayed for the start screen, not for later screens in the application.
+- The browser is only checked for being IE 10, not for any other unsupported browser or browser with known issues.
+- The system must not block the user from working with IE 10.
+
+---- 
+was:
+
+If a user browses iteraplan with IE10 a message should be shown that IE10 ist not supported and there are known issues for IE10"		New Feature	iteraplan PO	10/Sep/13 11:26 AM	10/Oct/13 11:00 AM					compatibility	IE	usability							"16/Sep/13 1:34 PM;sry;Pls do not use the <center> tag ever, this old-fashioned HTML. You have center-aligned that block via CSS anyway already. The same goes for the align attribute on the <div> element. Do it via CSS, and that's it.
+
+Using a table (even with a {{bgcolour}} attribute!) for this hint box is also discouraged. CSS should be used for alignment.
+
+Finally, please disable Eclipse's Auto-Format for lines that you haven't actually edited. It was really confusing to find the actual changes between all those line wrapping changes. I'll happily assist you to make that setting."	16/Sep/13 1:38 PM;sry;Fixed some of the mentioned issues, but the {{<table>}} is still left to be replaced.	"09/Oct/13 5:52 PM;svo;solution inspired by this thread: http://stackoverflow.com/questions/15657614/identify-ie9-ie10-using-jquery
+
+checking document mode instead of version."	"10/Oct/13 9:23 AM;bra;(x) hint is displayed when using firefox or chrome
+(x) do not change bootstrap.css as this is part of a third-party library. define the css class within iteraplanContentLayout.css instead"	10/Oct/13 11:00 AM;bra;(/) works, although i only get the warning if i explicitly change to standards or quirks document mode in IE10. A short test did not show up any problems with IE10 running in IE9-Standards document mode (which is the default due to our X-UA-Compatible meta configuration).	"11/Oct/13 1:12 PM;psc;Reviewed. Solution works for IE10 Standard Mode. 
+Ticket will be closed."	"11/Oct/13 1:15 PM;psc;One remark:
+* Currently warning always shows up in german language
+* This will be fixed in a dedicated ticket"																																																

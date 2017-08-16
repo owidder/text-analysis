@@ -1,0 +1,29 @@
+GUI Funktionalität zum Filtern	"Die Oberfläche zum Filtern der Assets muss angepasst werden. Folgende Filter werden benötigt:
+
+
+
+Vorauswahl:
+
+* Page
+
+* Browser
+
+* Anbindung
+
+
+
+Weitere Filter:
+
+* Asset Host
+
+* MimeType
+
+** Media Type
+
+** Subtype
+
+* Value
+
+* Graph
+
+* Group By"		Task	OpenSpeedMonitor	21/Sep/15 10:55 AM	07/Mar/16 3:58 PM														07/Mar/16 3:58 PM;nku;Definieren wir neu.																																																						

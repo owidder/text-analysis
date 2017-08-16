@@ -1,0 +1,13 @@
+Testmethoden in TimeToCsMappingServiceTests finden Ressourcen nicht.	"Wir die Testsuite TimeToCsMappingServiceTests gestartet sind alle Tests grün.
+
+
+
+Startet man die beiden Testmethoden
+
+ * ""get customer satisfaction (cs) in percent via mapping"" und
+
+ * ""get customer satisfaction (cs) in percent via the rank""
+
+
+
+einzeln finden diese die CSV Dateien nicht."		Bug	OpenSpeedMonitor	07/Jun/17 10:04 AM	15/Jun/17 3:53 PM																																																																				

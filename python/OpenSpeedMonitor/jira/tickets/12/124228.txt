@@ -1,0 +1,113 @@
+Landscape Diagram - An error occurs after deleting Attribute for "Color by" filter	"h4. Problem Description:
+
+
+
+Landscape Diagram - An error occurs after deleting Attribute for ""Color by"" filter
+
+h4. Reproduction Steps:
+
+ * Open application and navigate to ""Administration > Attributes""
+
+ * Select ""CRUD"" attribute and change it name to ""CRUE""
+
+ * Navigate to ""Data > Information Systems""
+
+ * Add ""Relations to Business Object"" column
+
+ * Add ""Relations IS-BO - CRUE"" column
+
+ * Navigate to ""Visualize > Landscape Diagram"" page
+
+ * Filter diagram with:
+
+ -- Content type: Business Object
+
+ -- Column type: Relation + Using Information Systems
+
+ -- Row type: Relation + Connected Information Systems
+
+ -- Content type: Coloring by ""Relations IS-BO - CRUE""
+
+ * Navigate to ""Administration > Attributes""
+
+ * Delete the ""CRUE"" Attribute
+
+ * Navigate back to ""Visualize > Landscape Diagram"" page
+
+
+
+h4. Observed Results:
+
+
+
+The following error ""LOADING_DIAGRAM"" occurs:
+
+
+
+""TypeError: An exception occurred: findObjectInArray(...) is undefined (caused by ""<div class=""main-container content-container ng-scope"" ng-view="""" data-ng-animate=""1"">"")
+
+ Stack trace:
+
+ DecoratorFactory.prototype.buildColorDecorator@[http://localhost:8080/iteraplan/client/js/combined1496989171914.js:27:19744]
+
+ DecoratorFactory.prototype.buildObjectFromQuery@[http://localhost:8080/iteraplan/client/js/combined1496989171914.js:27:21438]
+
+ LSDConfiguration.prototype.init@[http://localhost:8080/iteraplan/client/js/combined1496989171914.js:39:937]
+
+ LSDConfiguration@[http://localhost:8080/iteraplan/client/js/combined1496989171914.js:7:7804]
+
+ @[http://localhost:8080/iteraplan/client/js/combined1496989171914.js:40:21623]
+
+ h@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:23:2444]
+
+ Cb/this.$get</<@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:23:29332]
+
+ link@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:40:9811]
+
+ V/<@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:22:17850]
+
+ wa@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:23:24341]
+
+ n@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:23:16668]
+
+ g@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:23:12182]
+
+ Q/<@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:23:11699]
+
+ ca/<@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:23:14597]
+
+ d@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:23:12957]
+
+ m@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:23:15044]
+
+ k@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:40:9385]
+
+ $broadcast@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:24:27387]
+
+ p/</<@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:40:6859]
+
+ i@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:24:18426]
+
+ k/<@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:24:18848]
+
+ $digest@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:24:24475]
+
+ $apply@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:24:26287]
+
+ hc/this.$get</<@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:24:11268]
+
+ cb@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:22:31060]
+
+ c@[http://localhost:8080/iteraplan/client/js/combinedBower1496989171914.js:22:31009]""
+
+h4. Expected Results:
+
+
+
+The Diagram should be opened with proper error that stored value is deleted.
+
+h4. Note:
+
+
+
+ - Used #346 build and dev in FF"		Bug	iteraplan Speedbird	13/Jun/17 1:37 PM	30/Jun/17 10:45 AM																																																																				

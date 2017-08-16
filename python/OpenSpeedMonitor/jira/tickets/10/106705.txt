@@ -1,0 +1,23 @@
+List cannot be loaded after empty relation-filters are set	"Open the list of business objects.
+
+Add some relation-type filter.
+
+In the relation filter section click AND button and then click OR in each of AND-sections (see attached !relation-filters-AND-OR.jpg|thumbnail!).
+
+Close the filter dialog.
+
+Navigate to home page by clicking on Iteraplan logo.
+
+Navigate back to the same list by clicking on the Building Block tile.
+
+
+
+Result - list is not loaded.
+
+
+
+_I suspect the CombinedFilter cannot restore its state properly from the ""filter"" parameter in the URL or UserSettingsService ._
+
+"		Bug	iteraplan Speedbird	28/Dec/16 3:20 PM	30/Dec/16 3:48 PM														"30/Dec/16 3:48 PM;mada;Review done
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-270#CFR-36630"																																																						

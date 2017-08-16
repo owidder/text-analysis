@@ -1,0 +1,24 @@
+Download Link für Iteraplan 5.4	"Hallo Iteraplan-Support,
+
+
+
+ich benötige einen Download-Link und die Zugangsdaten für die aktuelle iteraplan Version 5.4. Können Sie mir hierbei helfen?"		Technical question	iteraplan Support	05/Dec/16 11:55 AM	05/Dec/16 1:11 PM														"05/Dec/16 1:07 PM;cst;Sehr geehrter Herr Eggert,
+
+vielen Dank für Ihre Anfrage.
+
+Hier der gewünschte Link + Login:
+
+https://www.iteraplan.de/downloads/corporate/5.4.0/iteraplan-5.4.0-corporate-installer.zip
+
+Login: corporate
+Password: WiayLe4i
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"05/Dec/16 1:10 PM;mathias.eggert@gothaer-systems.de;Hallo Herr Stangl,
+
+perfekt. Vielen Dank für die schnelle Reaktion.
+
+Viele Grüße
+
+Mathias Eggert"																																																					

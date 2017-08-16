@@ -1,0 +1,10 @@
+NCD: Downloading doesn't work with IE11 	"Steps to reproduce:
+1. Use browser Internet Explorer 11
+2. Go to NCD page 
+3. Click on ""Download"" button
+4.Select ""PDF""/ ""SVG""
+
+Actual: Downloading doesn't work
+Expected: Diagram is downloading as PDF/SVG"		Bug	iteraplan PO	26/Mar/15 1:21 PM	01/Jun/15 1:49 PM														"15/Apr/15 9:11 AM;msr;Take in April-Release 2015?
+YES"	15/Apr/15 10:46 AM;wfr;concur	23/Apr/15 9:28 AM;fka;IE 10 might also be affected	23/Apr/15 4:30 PM;fam;Added fix for SVG-Download. Fix PDF-Download still todo.	"25/Apr/15 2:04 PM;fam;Stopped Progress as I have not found a quick solution for download PDF failure.
+Reason for fail is incompatibility of canvas.toDataURL method and IE."	01/Jun/15 1:49 PM;sfe;Will be fixed during "PDF from server" implementation																																																	

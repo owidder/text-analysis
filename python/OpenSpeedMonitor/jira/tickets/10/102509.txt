@@ -1,0 +1,347 @@
+Fehler in OTTO-Instanz	"Der folgende Fehler tritt in den OTTO-Logs regelmäßig auf (Frequenz zwischen 5 Minuten und einer Stunde):
+
+{code}
+
+1409 - Field error in object 'de.iteratec.osm.result.MeasuredEvent' on field 'name': rejected value [null]; codes [de.iteratec.osm.result.MeasuredEvent.name.nullable.error.de.iteratec.osm.result.MeasuredEvent.name,de.iteratec.osm.result.MeasuredEvent.name.nullable.error.name,de.iteratec.osm.result.MeasuredEvent.name.nullable.error.java.lang.String,de.iteratec.osm.result.MeasuredEvent.name.nullable.error,measure     dEvent.name.nullable.error.de.iteratec.osm.result.MeasuredEvent.name,measuredEvent.name.nullable.error.name,measuredEvent.name.nullable.error.java.lang.String,measuredEvent.name.nullable.error,de.iteratec.osm.result.MeasuredEvent.name.nullable.de.iteratec.osm.result.MeasuredEvent.name,de.iteratec.osm.result.MeasuredEvent.name.nullable.name,de.iteratec.osm.result.MeasuredEvent.name.nullable.java.lang.String     ,de.iteratec.osm.result.MeasuredEvent.name.nullable,measuredEvent.name.nullable.de.iteratec.osm.result.MeasuredEvent.name,measuredEvent.name.nullable.name,measuredEvent.name.nullable.java.lang.String,measuredEvent.name.nullable,nullable.de.iteratec.osm.result.MeasuredEvent.name,nullable.name,nullable.java.lang.String,nullable]; arguments [name,class de.iteratec.osm.result.MeasuredEvent]; default message [P     roperty [{0}] of class [{1}] cannot be null]
+
+1410 
+
+1411         at sun.reflect.GeneratedConstructorAccessor541.newInstance(Unknown Source)
+
+1412         at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+1413         at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+1414         at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+
+1415         at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+
+1416         at groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1714)
+
+1417         at groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1531)
+
+1418         at org.codehaus.groovy.runtime.InvokerHelper.invokeConstructorOf(InvokerHelper.java:954)
+
+1419         at org.codehaus.groovy.runtime.DefaultGroovyMethods.newInstance(DefaultGroovyMethods.java:15640)
+
+1420         at org.grails.orm.hibernate.AbstractHibernateGormInstanceApi.save(AbstractHibernateGormInstanceApi.groovy:131)
+
+1421         at org.grails.datastore.gorm.GormEntity$Trait$Helper.save(GormEntity.groovy:140)
+
+1422         at org.grails.datastore.gorm.GormEntity$Trait$Helper$save$4.call(Unknown Source)
+
+1423         at de.iteratec.osm.result.MeasuredEvent.save(MeasuredEvent.groovy)
+
+1424         at de.iteratec.osm.result.MeasuredEvent.save(MeasuredEvent.groovy)
+
+1425         at org.grails.datastore.gorm.GormEntity$save.call(Unknown Source)
+
+1426         at de.iteratec.osm.measurement.environment.wptserverproxy.ResultPersisterService.persistNewMeasuredEvent(ResultPersisterService.groovy:557)
+
+1427         at sun.reflect.GeneratedMethodAccessor2672.invoke(Unknown Source)
+
+1428         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+1429         at java.lang.reflect.Method.invoke(Method.java:498)
+
+1430         at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+
+1431         at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+
+1432         at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:174)
+
+1433         at de.iteratec.osm.measurement.environment.wptserverproxy.ResultPersisterService.getMeasuredEvent(ResultPersisterService.groovy:551)
+
+1434         at de.iteratec.osm.measurement.environment.wptserverproxy.ResultPersisterService.$tt__persistResultsOfOneTeststep(ResultPersisterService.groovy:249)
+
+1435         at de.iteratec.osm.measurement.environment.wptserverproxy.ResultPersisterService$_persistResultsOfOneTeststep_closure4.doCall(ResultPersisterService.groovy)
+
+1436         at sun.reflect.GeneratedMethodAccessor2940.invoke(Unknown Source)
+
+1437         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+1438         at java.lang.reflect.Method.invoke(Method.java:498)
+
+1439         at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+
+1440         at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+
+1441         at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+
+1442         at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+
+1443         at groovy.lang.Closure.call(Closure.java:426)
+
+1444         at groovy.lang.Closure.call(Closure.java:442)
+
+1445         at grails.transaction.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:96)
+
+1446         at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+
+1447         at grails.transaction.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:93)
+
+1448         at de.iteratec.osm.measurement.environment.wptserverproxy.ResultPersisterService.persistResultsOfOneTeststep(ResultPersisterService.groovy)
+
+1449         at sun.reflect.GeneratedMethodAccessor1829.invoke(Unknown Source)
+
+1450         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+1451         at java.lang.reflect.Method.invoke(Method.java:498)
+
+1452         at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+
+1453         at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+
+1454         at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:384)
+
+1455         at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+
+1456         at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:69)
+
+1457         at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:174)
+
+1458         at de.iteratec.osm.measurement.environment.wptserverproxy.ResultPersisterService$_persistResultsForAllTeststeps_closure3.doCall(ResultPersisterService.groovy:219)
+
+1459         at sun.reflect.GeneratedMethodAccessor2939.invoke(Unknown Source)
+
+1460         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+1461         at java.lang.reflect.Method.invoke(Method.java:498)
+
+1462         at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+
+1463         at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+
+1464         at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+
+1465         at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+
+1466         at groovy.lang.Closure.call(Closure.java:426)
+
+1467         at groovy.lang.Closure.call(Closure.java:442)
+
+1468         at org.codehaus.groovy.runtime.DefaultGroovyMethods.times(DefaultGroovyMethods.java:14338)
+
+1469         at org.codehaus.groovy.runtime.dgm$642.invoke(Unknown Source)
+
+1470         at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:274)
+
+1471         at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+
+1472         at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+
+1473         at de.iteratec.osm.measurement.environment.wptserverproxy.ResultPersisterService.persistResultsForAllTeststeps(ResultPersisterService.groovy:214)
+
+1474         at de.iteratec.osm.measurement.environment.wptserverproxy.ResultPersisterService$persistResultsForAllTeststeps$2.callCurrent(Unknown Source)
+
+1475         at de.iteratec.osm.measurement.environment.wptserverproxy.ResultPersisterService.listenToResult(ResultPersisterService.groovy:86)
+
+1476         at de.iteratec.osm.measurement.environment.wptserverproxy.iResultListener$listenToResult$0.call(Unknown Source)
+
+1477         at de.iteratec.osm.measurement.environment.wptserverproxy.ProxyService$_fetchResult_closure2.doCall(ProxyService.groovy:172)
+
+1478         at sun.reflect.GeneratedMethodAccessor2993.invoke(Unknown Source)
+
+1479         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+1480         at java.lang.reflect.Method.invoke(Method.java:498)
+
+1481         at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+
+1482         at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+
+1483         at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+
+1484         at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+
+1485         at groovy.lang.Closure.call(Closure.java:426)
+
+1486         at groovy.lang.Closure.call(Closure.java:442)
+
+1487         at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2030)
+
+1488         at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2015)
+
+1489         at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2056)
+
+1490         at org.codehaus.groovy.runtime.dgm$162.invoke(Unknown Source)
+
+1491         at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:274)
+
+1492         at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+
+1493         at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+
+1494         at de.iteratec.osm.measurement.environment.wptserverproxy.ProxyService.fetchResult(ProxyService.groovy:162)
+
+1495         at de.iteratec.osm.measurement.environment.wptserverproxy.ProxyService$fetchResult$2.call(Unknown Source)
+
+1496         at de.iteratec.osm.measurement.schedule.JobProcessingService$__tt__pollJobRun_closure12.doCall(JobProcessingService.groovy:379)
+
+1497         at de.iteratec.osm.measurement.schedule.JobProcessingService$__tt__pollJobRun_closure12.doCall(JobProcessingService.groovy)
+
+1498         at sun.reflect.GeneratedMethodAccessor1556.invoke(Unknown Source)
+
+1499         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+1500         at java.lang.reflect.Method.invoke(Method.java:498)
+
+1501         at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+
+1502         at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+
+1503         at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+
+1504         at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+
+1505         at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)
+
+1506         at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+
+1507         at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:57)
+
+1508         at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)
+
+1509         at de.iteratec.osm.util.PerformanceLoggingService.logExecutionTime(PerformanceLoggingService.groovy:46)
+
+1510         at sun.reflect.GeneratedMethodAccessor1509.invoke(Unknown Source)
+
+1511         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+1512         at java.lang.reflect.Method.invoke(Method.java:498)
+
+1513         at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrap.invoke(PogoMetaMethodSite.java:190)
+
+1514         at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:71)
+
+1515         at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+
+1516         at de.iteratec.osm.measurement.schedule.JobProcessingService.$tt__pollJobRun(JobProcessingService.groovy:378)
+
+1517         at de.iteratec.osm.measurement.schedule.JobProcessingService$_pollJobRun_closure5.doCall(JobProcessingService.groovy)
+
+1518         at sun.reflect.GeneratedMethodAccessor1555.invoke(Unknown Source)
+
+1519         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+1520         at java.lang.reflect.Method.invoke(Method.java:498)
+
+1521         at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+
+1522         at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+
+1523         at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+
+1524         at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+
+1525         at groovy.lang.Closure.call(Closure.java:426)
+
+1526         at groovy.lang.Closure.call(Closure.java:442)
+
+1527         at grails.transaction.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:96)
+
+1528         at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+
+1529         at grails.transaction.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:93)
+
+1530         at de.iteratec.osm.measurement.schedule.JobProcessingService.pollJobRun(JobProcessingService.groovy)
+
+1531         at de.iteratec.osm.measurement.schedule.JobProcessingService.pollJobRun(JobProcessingService.groovy)
+
+1532         at de.iteratec.osm.measurement.schedule.JobProcessingService$pollJobRun$2.call(Unknown Source)
+
+1533         at de.iteratec.osm.measurement.schedule.quartzjobs.CronDispatcherQuartzJob$_execute_closure1$_closure4.doCall(CronDispatcherQuartzJob.groovy:64)
+
+1534         at de.iteratec.osm.measurement.schedule.quartzjobs.CronDispatcherQuartzJob$_execute_closure1$_closure4.doCall(CronDispatcherQuartzJob.groovy)
+
+1535         at sun.reflect.GeneratedMethodAccessor1554.invoke(Unknown Source)
+
+1536         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+1537         at java.lang.reflect.Method.invoke(Method.java:498)
+
+1538         at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+
+1539         at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+
+1540         at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+
+1541         at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+
+1542         at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)
+
+1543         at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+
+1544         at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:57)
+
+1545         at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)
+
+1546         at de.iteratec.osm.util.PerformanceLoggingService.logExecutionTime(PerformanceLoggingService.groovy:46)
+
+1547         at sun.reflect.GeneratedMethodAccessor1509.invoke(Unknown Source)
+
+1548         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+1549         at java.lang.reflect.Method.invoke(Method.java:498)
+
+1550         at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrap.invoke(PogoMetaMethodSite.java:190)
+
+1551         at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:71)
+
+1552         at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+
+1553         at de.iteratec.osm.measurement.schedule.quartzjobs.CronDispatcherQuartzJob$_execute_closure1.doCall(CronDispatcherQuartzJob.groovy:63)
+
+1554         at sun.reflect.GeneratedMethodAccessor1524.invoke(Unknown Source)
+
+1555         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+1556         at java.lang.reflect.Method.invoke(Method.java:498)
+
+1557         at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+
+1558         at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+
+1559         at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+
+1560         at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+
+1561         at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)
+
+1562         at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+
+1563         at org.grails.orm.hibernate.HibernateGormStaticApi$2.doInHibernate(HibernateGormStaticApi.groovy:195)
+
+1564         at org.grails.orm.hibernate.GrailsHibernateTemplate.doExecute(GrailsHibernateTemplate.java:196)
+
+1565         at org.grails.orm.hibernate.GrailsHibernateTemplate.execute(GrailsHibernateTemplate.java:140)
+
+1566         at org.grails.orm.hibernate.GrailsHibernateTemplate$execute$0.call(Unknown Source)
+
+1567         at org.grails.orm.hibernate.HibernateGormStaticApi.withNewSession(HibernateGormStaticApi.groovy:193)
+
+1568         at org.grails.datastore.gorm.GormEntity$Trait$Helper.withNewSession(GormEntity.groovy:984)
+
+1569         at org.grails.datastore.gorm.GormEntity$Trait$Helper$withNewSession$17.call(Unknown Source)
+
+1570         at de.iteratec.osm.measurement.schedule.Job.withNewSession(Job.groovy)
+
+1571         at de.iteratec.osm.measurement.schedule.Job$withNewSession$4.call(Unknown Source)
+
+1572         at de.iteratec.osm.measurement.schedule.quartzjobs.CronDispatcherQuartzJob.execute(CronDispatcherQuartzJob.groovy:41)
+
+1573         at sun.reflect.GeneratedMethodAccessor1522.invoke(Unknown Source)
+
+1574         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+1575         at java.lang.reflect.Method.invoke(Method.java:498)
+
+1576         at grails.plugins.quartz.GrailsJobFactory$GrailsJob.execute(GrailsJobFactory.java:102)
+
+1577         at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+
+1578         at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+
+{code}
+
+Offensichtlich passiert es beim Schreiben von EventResults, dass ein MeasuredEvent mit _name=null_ persistiert werden soll. "		Bug	OpenSpeedMonitor	14/Nov/16 9:53 AM	14/Nov/16 12:01 PM																																																																				

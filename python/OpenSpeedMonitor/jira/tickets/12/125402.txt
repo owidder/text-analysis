@@ -1,0 +1,31 @@
+New Pages for errors at the backend	"In the backend we have pages for no permission and for errors.
+
+
+
+Please add pages for this cases in the new client and replace the old ones when the errors in the backend occure.
+
+
+
+For an example compare (A case where the page should be changed): ITERAPLAN-5419."		Improvement	iteraplan Thunderduck	26/Jun/17 8:48 AM	12/Jul/17 2:04 PM														28/Jun/17 9:48 AM;scz;[~sbu] schaut sich das UI vorher nochmal an	"29/Jun/17 4:14 PM;sbu;I'll attach a mockup for new error-messages. 
+
+
+
+
+
+By the way the messages can be changed in ApplicationResources.properties "	"05/Jul/17 2:50 PM;aan;An easy way to obatain an error in the old client:
+
+
+
+Go to the single element view of an element. The end of the url is ""?execution=e1s1"". Increasing the last number (so it becomes for example ""?execution=e1s7"") an reloading the page leads to an error"	"06/Jul/17 11:43 AM;aan;The following links are added in the backend:
+
+
+
+/client/#/authenticationError
+
+
+
+/client/#/error
+
+
+
+It is not much effort to change the URLs. In case there are good reasons for other URLs, this can be done."	07/Jul/17 8:16 AM;aan;We do not need the possible reasons for internal server errors as they belong to the old client.																																																		

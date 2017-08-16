@@ -1,0 +1,9 @@
+Browser Check IE 11	"IP9-229
+
+#1 Diagram doesn't displayed on NCD, Information System, Planned Information system  pages
+
+#2 ""Downlad"" button doesn't work on NCD page
+
+#3 ""Save/Share"" button doesn't work on NCD page
+
+"		Bug	iteraplan PO	25/Dec/14 1:02 PM	09/Jan/15 1:29 PM														09/Jan/15 1:17 PM;alvo;Fixed w/o download PDF, as have discussed with Wolfgang (09 Jan 2015), this feature would be implemented by means of a server-side service.	09/Jan/15 1:29 PM;dasm;Verified																																																					

@@ -1,0 +1,11 @@
+Create Test Specification	"Create specifications for testing diverse new features of iteraplan 3.2. The test specifications should have the form of Excel Workbooks, as specified by WFR. The Excel files should be checked into the iteraplan repository under /doc/test
+
+Following topics should be addressed:
+* Nesting Cluster
+* Import / Export
+* REST
+* Custom Dashboard
+* History
+* Neighborhood Diagram
+"		Task	iteraplan PO	14/Oct/13 5:29 PM	24/Oct/13 11:32 AM					specification	test								"24/Oct/13 11:32 AM;psc;Initial Testsheets for all requested topics have been created and checked. 
+Ticket can be closed."																																																						

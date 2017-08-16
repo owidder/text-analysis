@@ -1,0 +1,27 @@
+Attributes: Renaming of an attribute + routechange shows attribute wrongly	"*Summary:*
+
+After renaming of an attribute and routechange it displays the attribute wrongly.
+
+
+
+*Reproduce:*
+
+* Open the single attribute view for Accountability
+
+* Rename it to ""Accountability2""
+
+* Navigate back to the homescreen (this triggers an internal reload)
+
+* Go back to the attribute list (or any other list or diagram)
+
+
+
+*Actual:*
+
+* It shows as name ""metamodel.attributes.Accountability2.name""
+
+
+
+*Excpected:*
+
+* It shows as name ""Accountability2"""		Bug	iteraplan Speedbird	02/Mar/17 3:58 PM	13/Mar/17 11:57 AM														13/Mar/17 11:57 AM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-422																																																						

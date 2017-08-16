@@ -1,0 +1,1 @@
+Anzeige von Min, Max, Avg, evtl Median, ... im Timeseries Chart	Es wäre nützlich wenn man sich diese Informationen im Timeseries Chart anzeigen lassen könnte um "Pi Mal Daumen Aussagen" durch exakte Aussagen zu ersetzen.		Improvement	OpenSpeedMonitor	06/Jul/17 5:31 PM																																																																					

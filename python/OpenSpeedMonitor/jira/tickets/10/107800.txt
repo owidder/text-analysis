@@ -1,0 +1,41 @@
+issue with search function	"Dear support,
+
+
+
+The system looks good. The data looks ok and the functionality is basically working.
+
+
+
+There is one issue with the search function... it's not working when I key in parts of the search string...
+
+
+
+Example: when I key in “A-Tru” it should find the entry’s"		Fault	iteraplan Support	10/Jan/17 4:24 AM	04/Feb/17 7:00 AM														"10/Jan/17 4:24 AM;admin@mcongroup.net;
+
+!asdf.png|thumbnail!"	"10/Jan/17 8:49 AM;cst;Dear Sir / Madam,
+
+thank you for your enquiry.
+
+Would you please give me Name of our customer.
+Could you please check following points, with this steps the index will be completely created new:
+
+# Go into the menue ""Administration"" - ""Configuration"" and click on the button ""Clear Cache""
+# On the path ""[TOMCAT7]\work\Catalina\localhost\"" clear the iteraplan instance folder
+#Clear the the index path, which was defined in the setup of iteraplan
+# Restart you TOMCAT Server
+# As last step, create the index again
+
+After that, check the search function of iteraplan again.
+
+Greetings, 
+
+Christoph Stangl - iteraplan Support "	"11/Jan/17 4:55 AM;admin@mcongroup.net;Dear Christoph,
+
+I will inform customer to do first action, because we have no control against the instance.
+Following actions will be done by us.
+
+Will let you know if issue is solved.
+
+The customer is conoco / JET Tankstellen Deutschland GmbH
+
+Thanks"																																																				

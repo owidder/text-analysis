@@ -1,0 +1,19 @@
+Import with "include metamodel changes" does not respect changed metamodel	"_Reproduce (with sample data):_
+
+# Export Excel data from Export/Import page
+
+# Delete an attribute in iteraplan, for example ""Complexity""
+
+# Import the Excel file from step 1, with ""include metamodel changes"" checked
+
+
+
+_Expected:_ Step 4 and 5 show multiple changes, and after import building blocks have values in Complexity according to the Excel file.
+
+_Actual:_ Step 4 and 5 show no changes, and while the according building blocks have the attribute Complexity, none of them has values assigned
+
+
+
+_Reason:_ in {{MiImportProcess#writeMetamodel()}} the import attempts to synchronously reload the metamodel after the database was updated with metamodel changes. This is to reload the Excel data with the new metamodel, as otherwise new attributes would remain invisible.
+
+The method {{ElasticMiContext.getCurrentContext().synchronizeAndGetMetamodelAndModelContainer()}} however, despite its name, triggers an asynchronous reload, which means that the following re-read of Excel data happens before the metamodel was updated."		Bug	iteraplan PO	14/Mar/16 10:02 AM	21/Apr/16 1:57 PM					import																																																															

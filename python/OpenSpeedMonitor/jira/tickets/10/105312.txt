@@ -1,0 +1,13 @@
+Fehlermeldung auf Developer-Console beim Filtern	"Beim Filtern und nach Anwenden des AdjustChart-Dialogs muss das Barchart neu gezeichnet werden.
+
+Dabei werden die Daten ggf. aktualisiert.
+
+Wenn dann in einer Series weniger Daten vorhanden sind, als vorher, so kommt es zu folgender Fehlermeldung auf der Browser-Console:
+
+
+
+{{barchart.js:1 Error: <rect> attribute x: Expected length, ""NaN"".}}
+
+
+
+Das Barchart wird trotzdem korrekt gezeichnet."		Task	OpenSpeedMonitor	12/Dec/16 9:21 AM	18/Jan/17 3:15 PM																																																																				

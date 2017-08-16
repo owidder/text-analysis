@@ -1,0 +1,9 @@
+CSI-Konfiguration anlegen / übernehmen	"Die CSI-Configuration _Web Performance Radar_ von der [http://demo.openspeedmonitor.org/] sollten wir in unsere prod-Instanz übernehmen. Bei der Gelegenheit sollten wir diese nochmal etwas optimieren:
+
+ * Zuordnung Seiten zu Mappings überprüfen / mit der empirisch belegten Zuordnung aus der OTTO-Instanz abgleichen.
+
+ * Gewichtung Browser/Seiten und Tageszeiten möglichst realisitisch gestalten
+
+
+
+Alle WB-JobGruppen müssen die neue Csi-Konfiguration zugeordnet bekommen."	113721	Sub-task	OpenSpeedMonitor	03/Mar/17 11:09 AM															24/Mar/17 1:59 PM;jwi;Außerdem haben die aktuellen CSI-Mappings eine Delle (beschrieben in -IT-1509)-																																																						

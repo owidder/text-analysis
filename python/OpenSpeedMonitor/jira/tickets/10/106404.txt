@@ -1,0 +1,127 @@
+Create Single-Attribute-REST-API (Server)	"*Summary:*
+
+ Create Single-Attribute-REST-API on the Server for all attributes except for hard-coded attributes, date intervals and responsibility attributes = all attributes in scope of ""/api/attributes/""
+
+
+
+*Details:*
+
+ * Use""/api/attributes/ID""
+
+ * Use the Single Element REST API ( [https://www.iteraplan.de/doc/display/iteraplan55/Single+Element+API] ) as blueprint for the http status codes and handling of REST commands
+
+ * JSON-structure is defined by /api/attributes/
+
+ * Include permission handling which is defined by permissions on attribute groups
+
+ * New behaviour (-different- same than in the actual classic client UI): *the fix -IPTT-230- was done in the ComponentModel and not in the service* - ensure that the REST-API has the same behaviour
+
+ ** For the field ""Activated for the following Building Block Types"": When one Building Block Type or Relation is removed, also remove all attribute values of this attribute for this Building Block Type in the database
+
+
+
+{color:#FF0000}UPDATE: {color} For unassigned values we use """"
+
+
+
+{color:#FF0000}UPDATE: {color} Nullable fields are
+
+ * ""description""
+
+ * ""activatedBBTRelations""
+
+ * ""literals""
+
+ * ""lowerBound""
+
+ * ""upperBound""
+
+ * ""unit""
+
+
+
+{color:#FF0000}UPDATE:{color}
+
+ *Use Case 1: Client wants to change the name:*
+
+ * Client sends a PUT to the attributes/ID with
+
+
+
+{code:java}
+
+{
+
+    ""name"": {
+
+      ""de"": STRING (or ""en"":STRING)
+
+     }
+
+  }
+
+{code}
+
+ * Server returns 200
+
+{code:java}
+
+{
+
+    ""success"": true/false,
+
+    ""errorCode"": X,
+
+    ""errorMessages"": [
+
+        ""message1"",
+
+        ""message2""
+
+    ]
+
+}
+
+{code}
+
+
+
+ * The corresponding database-field of name is updated (localisation is ignored)
+
+ * The elasticModel and the classic model is being updated
+
+
+
+*Use Case 2: Update of persistentName:*
+
+ * The client is not allowed to send POST or PUT to the field persistentName
+
+
+
+*Use Case 3: Update of both localised name at the same time:*
+
+ * The client is not allowed to send POST or PUT to both localised name at the same time
+
+
+
+{color:#FF0000}UPDATE: {color}
+
+""id"" field was added to literals of enumeration and responsibility attributes, so PUT requests should include it in JSON body for existing literals.
+
+
+
+{color:#FF0000}UPDATE: {color}
+
+""id"" field was added to range values of numeric attributes, so PUT requests should include it in JSON body for existing range values.
+
+
+
+{color:red}UPDATE: {color}
+
+New requirement: On successfull PUT or PUST please return a new field ""resource"" in the JSON which returns the full created or edited object
+
+
+
+{color:red}UPDATE: {color}
+
+PUT, POST, DELETE should only be accessible if the user has the permission to edit attributes."		New Feature	iteraplan Speedbird	22/Dec/16 8:46 AM	10/Mar/17 11:32 AM														12/Jan/17 5:00 PM;msr;The bug IPTT-230 could be fixed by the new behaviour of ticket IPTS-445.	10/Mar/17 11:32 AM;dmkh;Great job was done :) no review comments.	11/Apr/17 2:31 PM;aan;I assume commit [27018|https://iteraweb.iteratec.de/fisheye/changelog/iteraplan?cs=27018] also belongs to this ticket?	11/Apr/17 3:49 PM;ants;[~aan], yes, definitely.																																																			

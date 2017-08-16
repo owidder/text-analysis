@@ -1,0 +1,13 @@
+Integrate Angular Filemanager lib into iteraplan code	"* Copy CSS files from bower_components/angular-filemanager/src/css to the directory app/css/reactor/filemanager
+
+* Add css files to index.html
+
+* Copy JS files from bower_components/angular-filemanager/src/js to the directory app/js/reactor/filemanager
+
+* Add js files to index.html
+
+* Make it work (without translations first)
+
+* Refactor filemanager translations so that they work with the iteraplan translations.
+
+"	80573	Sub-task	iteraplan Quickfox	12/Jul/16 9:33 AM	19/Jul/16 11:35 AM														12/Jul/16 1:04 PM;pma;When integrated translation of file manager to our json file, i sometimes changed a few words which were in lower case, but should be written in upper case. (example: Entpackung instead of entpackung)	18/Jul/16 3:49 PM;mwe;TODO: Go through the whole filemanager and adjust translation keys to the ones that can be found in the locale.json files	19/Jul/16 9:28 AM;msr;Changed all translation-keys in all reactor-templates except for upload-modal and permissions-modal in modals.html																																																				

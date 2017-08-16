@@ -1,0 +1,13 @@
+Fix sorting by Costs	"Go to the Information System List
+
+Add the costs column if it is not there
+
+Click on the header to sort 
+
+
+
+Expected Behaviour: The list is sorted according to the Costs
+
+
+
+Actual Behaviour: The list is not sorted at all, the order does not matter"		Bug	iteraplan Speedbird	09/Dec/16 4:30 PM	26/Jan/17 9:27 AM																																																																				

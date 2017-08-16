@@ -1,0 +1,2 @@
+The field "Sub Information System of" of an Information System cannot be deleted.	"In an Information System: If you clear the value of the field ""Sub Information System of"" and click on save, the content is still there. Even worse, if you focus anothere field before saving, the first element in the list will be saved to the field (at least in Firefox 11).
+"		Bug	iteraplan PO	20/Apr/12 3:11 PM	23/Apr/12 2:06 PM					gui																																																															

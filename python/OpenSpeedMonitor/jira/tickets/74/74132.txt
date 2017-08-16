@@ -1,0 +1,7 @@
+Einzelresults lassen sich nicht aufrufen	"Getestet im Chrome.
+
+
+
+Über die statischen Links oben in der Leiste lässt sich nicht die Seite ""Einzelergebnisse"" aufrufen.
+
+Hängt möglicherweise mit IT-940 zusammen."		Bug	OpenSpeedMonitor	19/Feb/16 11:26 AM	19/Feb/16 1:41 PM														19/Feb/16 1:41 PM;nku;IT-919																																																						

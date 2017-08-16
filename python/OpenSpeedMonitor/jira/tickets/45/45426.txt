@@ -1,0 +1,33 @@
+Align tabs in elements to reflect same schema	"The tabs in elements detail view should always reflect the same schema:
+Hierarchy/Self-Relations - Relations - Attributes - Viz - History
+
+* in Business Objects, the Self-Relations should be on the hierarchy tab
+* in Technical Components a new hierarchy tab should contain self relations
+* in InformationSystem, the Interfaces should move to the Relations and all IS-Self-Relations should be on a hierarchy tab
+* verify that in all other elements this separation is clearly done
+"		Improvement	iteraplan PO	14/Mar/12 10:20 AM	20/Mar/12 5:56 PM														"14/Mar/12 5:58 PM;kvo;Please also reoder the relations within the relation tab of
+* BusinessDomains
+1. BusinessProcess
+2. BusinessUnit
+3. Product
+4. BusinessFunction
+5. BusinessObject
+* BusinessFunction
+1. BusinessDomain
+2. BusinessObject
+* TechnicalComponent
+1. IS
+2. AD
+3. Inf.Elem.
+* InformationSystem
+1. BusinessArchitecture moved to top, rest is ordered ok."	"15/Mar/12 9:48 AM;gph;The capitalization for the blocks inside the relations tabs seems to be uneven:
+
+""Contains ...""
+""Used by ...""
+
+""contains ...""
+""belongs to ...""
+""is ...""
+"	"20/Mar/12 5:34 PM;sry;* Would it make sense for Information system to move the line ""Sub IS of"" from the Core property part to the hierarchy tab, right above ""consists of the following Sub IS""? This would make appearance more similar to hierarchies.
+* Wouldn't it be good to apply this ordering on Excel export files as well? The columns are sometimes order very arbitrarily.
+* I'd second Gerhard's suggestion regarding consistent capitalization of block headings."	20/Mar/12 5:54 PM;sry;Well done. All open question above are for Karsten.	20/Mar/12 11:11 PM;kvo;Suggestions moved to ITERAPLAN-592 (Capital) and ITERAPLAN-439 (Excel).																																																		

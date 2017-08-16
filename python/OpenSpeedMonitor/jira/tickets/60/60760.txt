@@ -1,0 +1,11 @@
+Intransparent background for Toolarea	"Ensure that the toolarea in the LSD and IFD is easy to distinguish from the background. You could use an intransparent background for the toolarea.
+
+
+
+Please ask [~wfr] for design details.
+
+
+
+*Result:*
+
+It should look like a new ""layer"" in front of the diagram."		Improvement	iteraplan PO	19/Oct/15 3:02 PM	04/Nov/15 5:10 PM					layout	toolArea																																																														

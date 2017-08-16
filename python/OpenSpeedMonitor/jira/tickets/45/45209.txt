@@ -1,0 +1,22 @@
+Enhance History functionality, make it robust 	"The implementation of history functionality that shipped with iteraplan 2.9 is still alpha quality and by no means complete.
+It must be enhanced so that
+* History can be enabled on an already database
+* changesets are computed correctly, including enum and responsibility changes and changes in relations
+* querying works fundamentally
+* all features implemented by Robin initially are merged into trunk
+* ..."		Improvement	iteraplan PO	19/Oct/11 3:47 PM	26/Jan/12 1:49 PM					hibernate	history								20/Oct/11 4:37 PM;sfe;There is a problem with date attributes: if you set a previously not assigned date attribute, it works, but if you then change this attribute to another value, the history tab shows the iteraplan error page and the logs show a NullPointerException in the HistoryBBChangeset class.	"21/Oct/11 2:17 PM;vsh;The following issues are still open:
+1) The problem described above is also valid for text attributes.
+2) Changes of enum or responsibility attributes are not displayed, regardless whether they are multi- or single-valued.
+3) Of all relations that a building block can participare in only modifications of the children are dispayed.
+4) For business units, changing the children cause an error and no text is dispayed in the history tab."	"25/Jan/12 7:41 PM;sry;Wrapping up this ticket for the M1 milestone. Following issues mentioned above have been resolved:
+* Text, date and number attributes can be compared properly. The problem described by Stephan does no longer occur.
+* Changes to the superordinate element in hierarchical entities are correctly reflected on both ends of the relation. Changes to the children list do sometime lead to an error (IndexOutOfBoundsException in Envers). Not yet sure how to make it reproducible...
+* Basically all relevant changes made by Robin have been integrated. Only some minor changes might be left to merge.
+* Some more tests have been added.
+* Nightlies and public demos have history turned on and seem to work relatively stable.
+
+Known remaining issues:
+* Most normal inter-building block relations are not yet displayed. This seems to be incomplete UI implementation, not a bug. The changeset seems to be computed correctly.
+* Migration script for turning on History is still missing.
+* Enum and responsibility attribute changes are not properly audited -> incomplete history data. Still not sure whether we use Envers incorrectly or Envers is buggy. Attribute Type Groups are also never linked to the attributes.
+* no work has been done on querying."	26/Jan/12 1:49 PM;sfe;Works within the bounds mentioned by Steffen's comment above.																																																			

@@ -1,0 +1,53 @@
+New attribute groups missing in interactive client	"After creating new attributes clustered in a new attribute group the group is not shown in interactive client although it is visible in classic client.
+
+When assigning new attributes to existing attribute groups the new attributes are shown.
+
+The problem is not restricted to aspecific building block e.g. technical component.
+
+How to create new attribute groups that are visible in interactive client?"		Fault	iteraplan Support	09/Mar/17 8:36 AM	13/Mar/17 1:15 PM														"09/Mar/17 8:36 AM;isabelle.reick@schwaebisch-hall.de;
+
+!Attributes - Classic Client.png|thumbnail!
+
+!Attributes - Interactive Client.png|thumbnail!"	"09/Mar/17 9:25 AM;cst;Good Morning Mrs. Reick,
+
+thank you for your inquiry. 
+
+Here are the steps to solve the problem.
+ # Stop the tomcat Server
+ # Copy the ""iteraplan-client-5.5.1.jar"" from ZIP-File into the path ""TOMCAT\iteraplan instance\WEB-INF\lib\""
+ # Start the tomcat Server
+ # Clear your browser cache  
+ # Check the single element view again
+
+[^iteraplan5.5.0_Service Release.zip]
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+
+PS: When you want we can write in German too"	"10/Mar/17 11:16 AM;isabelle.reick@schwaebisch-hall.de;Guten Tag Herr Stangl,
+
+vielen Dank für die schnelle Rückmeldung.
+Durch den Austausch der lib wird die neue Merkmalsgruppe inkl. Merkmale nun angezeigt.
+
+Im Interaktiven Client werden jedoch im Gegensatz zum Classic Client Sonderzeichen (z.B. > oder <) nicht aufgelöst. Im Anhang finden Sie ein Bespiel eines Aufzählungs-Merkmals. Gibt es hierfür auch eine Lösung?
+
+Mit freundlichen Grüßen
+Isabelle Reick
+
+!Attributes - Interactive Client - nach Patch.png|thumbnail!
+
+!Attributes - Classic Client - nach Patch.png|thumbnail!
+
+!Attributelist - Interactive Client - nach Patch.png|thumbnail!"	"13/Mar/17 11:44 AM;cst;Guten Tag Frau Reick,
+
+vielen Dank für Ihre Antwort.
+
+Wir konnten das Verhalten nachvollziehen und dieses wird in Version 6.0 behoben.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"13/Mar/17 1:11 PM;isabelle.reick@schwaebisch-hall.de;Hallo Herr Stangl,
+danke für die Rückmeldung. Damit hat sich die Anfrage für mich bis V6.0 erledigt.
+Viele Grüße
+Isabelle Reick"																																																		

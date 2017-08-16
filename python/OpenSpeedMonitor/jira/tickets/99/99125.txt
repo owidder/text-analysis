@@ -1,0 +1,21 @@
+Execute Testsheet Portfolio Diagram	"*Summary:*
+
+Execute Testsheet
+
+
+
+*Details:*
+
+* Ensure you have all the actual branch code
+
+* Perform all steps carefully
+
+* If the system is different than the testcases, check, if it is a bug or if the testsheet needs to be corrected.
+
+** If it is a bug, create immediately a bugticket in the epic ""Release 5.4""
+
+** If it is not a bug, correct the testsheet. "		Task	iteraplan PO	14/Oct/16 1:35 PM	25/Oct/16 8:34 AM														"20/Oct/16 1:09 PM;cst;Test not succesful - Ticket ITERAPLAN-4880
+
+
+
+"	24/Oct/16 4:57 PM;cst;Test succesful - Ticket 4880 was solved 																																																					

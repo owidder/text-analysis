@@ -1,0 +1,5 @@
+Als Anwender möchte ich mein Projekt/Team/System als Filterkriterium für die Ergebnisse nutzen können	"Als Anwender möchte ich mein Projekt/Team/System als Filterkriterium für die Ergebnisse nutzen können.
+
+
+
+Ziel ist es einen Scan Prozess Mandantenfähig nutzen zu können und die Ergebnisse entsprechend auswerten zu können. Beispiel: ein zentrale SecureBox Cluster für iteratec oder ein Cluster für alle Teams bei OTTO. Die Teams müssen hierbei jeweils die möglichkeit haben Prozesse für ihr Team/Projekt/System starten zu können und die Ergebnisse ihrer Scan-Jobs geeignet in Kibana/auf einem Dashboard filtern zu können."		Story	secureCodeBox	27/Apr/16 12:56 PM	07/May/16 8:57 PM					OTTO																																																															

@@ -1,0 +1,35 @@
+After editing a attribute - the list view will no be updated immediately	"Reproduce with trunk
+
+ # Open ""Administration"" and ""Attributes""
+
+ # Open a ""Attribute""
+
+ # Change the ""Name"" of the Attribute 
+
+ # Click on the button ""Back to List"" 
+
+ # It happens that the old ""Name"" is shown in the list 
+
+
+
+Expected: That the change will be shown immediately 
+
+Actual: It happens that you need one ore more reloads to see the changed name"		Bug	iteraplan Speedbird	07/Apr/17 11:08 AM	04/May/17 10:18 AM														"07/Apr/17 11:11 AM;cst;On a special setup you can self lock the database,
+
+because you can create or change a attribute twice. 
+
+
+
+Then you must reset the the database or delete the corrputed database entry! 
+
+
+
+ "	03/May/17 3:50 PM;mash;Revision #6745	"04/May/17 10:17 AM;viol;Review is done: [https://iteraweb.iteratec.de/fisheye/cru/IP-566]
+
+
+
+no any comments
+
+
+
+ "																																																				

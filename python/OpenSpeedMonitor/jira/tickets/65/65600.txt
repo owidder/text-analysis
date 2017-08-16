@@ -1,0 +1,35 @@
+Create simple test if patch is needed for empty/null string problem... - and fix it.	"Create a simple runnable test for the empty/null string problem, 
+
+test and proceed accordingly with migration or patching.
+
+
+
+Test question: How do Hibernate and Oracle treat empty string properties of entities?
+
+
+
+a) as old behavior, old Hibernate, before patch: empty string -> write -> read -> null
+
+
+
+b) as hoped for, even without patch: empty string -> write -> read -> empty string
+
+
+
+
+
+If b), document and create scripts for data migration
+
+
+
+if a) split off the relevant part of the old patch, modify it as required, reapply it, retest.
+
+
+
+DISCUSS and CLARIFY the way to patch Hibernate with @sfe and/or @wfr if the patch is needed. "	63118	Sub-task	iteraplan PO	03/Dec/15 8:03 AM	22/Dec/15 10:26 AM														"10/Dec/15 2:31 PM;gph;Moved this part of the patch into a Hibernate Interceptor which changes the state of the entity before saving and after loading. This approach has been recommended in several articles/threads as the best solution for the Oracle empty string handling.
+
+"	"14/Dec/15 9:37 AM;gph;Decision:
+
+Keep the patch for empty string handling. The hibernate Interceptors modify the state, which is ok on save and load events. But when updating, the changed entity state is synchronized to both, the database and the entity object. This makes it impossible to substitute empty strings to a replacement string and vice versa.
+
+"																																																					

@@ -1,0 +1,13 @@
+ic.afterloginoldclient.enabled=true - iteraplan cannot login (LDAP	"Reproduce with a fresh installation of iteraplan (trunk) and LDAP
+
+
+
+# Open iteraplan
+
+# A error appears ""This request requires HTTP authentication.""
+
+
+
+Expected: The login Screen appears 
+
+Actual: A error appears and you cannot work with iteraplan "		Bug	iteraplan PO	04/Feb/17 11:51 AM	09/Feb/17 1:55 PM																																																																				

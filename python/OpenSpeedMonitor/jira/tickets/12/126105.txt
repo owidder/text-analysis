@@ -1,0 +1,35 @@
+NPE bei last results	"Beispiel:
+
+
+
+[http://openspeedmonitor.wpt.iteratec.de/tabularResultPresentation/listResultsForJob?job.id=177]
+
+
+
+ 
+
+
+
+java.lang.NullPointerException 
+
+ at java.lang.Class.forName(Class.java:264) 
+
+ at grails.artefact.Controller$Trait$Helper.redirect(Controller.groovy:223) 
+
+ at de.iteratec.osm.result.TabularResultPresentationController.listResultsForJob(TabularResultPresentationController.groovy:155) 
+
+ at grails.plugin.springsecurity.web.UpdateRequestContextHolderExceptionTranslationFilter.doFilter(UpdateRequestContextHolderExceptionTranslationFilter.groovy:64) 
+
+ at grails.plugin.springsecurity.web.filter.GrailsAnonymousAuthenticationFilter.doFilter(GrailsAnonymousAuthenticationFilter.groovy:53) 
+
+ at grails.plugin.springsecurity.web.authentication.logout.MutableLogoutFilter.doFilter(MutableLogoutFilter.groovy:62) 
+
+ at grails.plugin.springsecurity.web.SecurityRequestHolderFilter.doFilter(SecurityRequestHolderFilter.groovy:58) 
+
+ at com.googlecode.psiprobe.Tomcat70AgentValve.invoke(Tomcat70AgentValve.java:38) 
+
+ at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) 
+
+ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) 
+
+ at java.lang.Thread.run(Thread.java:745)"		Bug	OpenSpeedMonitor	03/Jul/17 9:50 AM	03/Jul/17 11:01 AM														03/Jul/17 11:01 AM;sbr;Deployter OSM war generell kaputt, kein direkter Fehler im Code.																																																						

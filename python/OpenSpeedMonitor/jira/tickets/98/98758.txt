@@ -1,0 +1,31 @@
+Create a Testsheet for manual testing of Classic Cluster Diagram	"Create a Testsheet for manual testing of Classic Cluster Diagram.
+
+
+
+Use the Masterplan Diagram testsheet as template
+
+
+
+Show the result to [~cst]"		Task	iteraplan Speedbird	11/Oct/16 3:59 PM	17/Oct/16 3:17 PM														13/Oct/16 1:45 PM;vadm;Revision #4650: cluster-test-specification.xlsx	"14/Oct/16 9:03 AM;cst;Good Morning Vasyl,
+
+
+
+I checked the test sheet and one point is missing:
+
+
+
+- When you have more than one attribute, you can mark e.g. elements and with drag and drop change the position 
+
+
+
+For the ""Params and Outputs"" you can youse for ""iteraplan logo"" - ""Close and Open"" :-) 
+
+The User Profile is a new feature in Version 5.4 and saves the last stand in the diagrams and lists. 
+
+
+
+Greetings,
+
+
+
+Chris"																																																					

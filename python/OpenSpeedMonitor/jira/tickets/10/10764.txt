@@ -1,0 +1,1 @@
+Graphite: Wochenmittelwerte einer Job-Gruppe / eines Systems aus Rohdaten	Sendett (Service aus 1) die UNGEWICHTETEN Wochenmittelwerte aus Rohdaten an Graphite. Die Logik wird aus dem  Reports-Dashboard herausgelöst und dann gemeinsam gentutzt. (Cron-Job)		Task	OpenSpeedMonitor	06/Nov/13 1:04 PM	18/Jan/17 3:01 PM																																																																				

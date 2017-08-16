@@ -1,0 +1,5 @@
+LSD: Put "Abfrageerweiterungen" in the toolarea and deactivate context menu	"*Summary:*
+
+1. Put ""Abfrageerweiterungen"" (Show with properties of) in the toolarea of the LSD as new entry. After clicking on ""Show with Properties of ...> Assigned Business Objects"" open the existing filter dialog
+
+2. Deactivate context menu of the LSD"		Improvement	iteraplan PO	23/Oct/15 11:22 AM	27/Oct/15 2:18 PM					toolArea																																																															

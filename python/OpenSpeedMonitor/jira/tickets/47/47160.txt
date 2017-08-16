@@ -1,0 +1,21 @@
+Spreadsheet reports direct links do not work	"_Reproduce (with sample data):_
+# Navigate to iteraplan -> Reports -> Spreadsheet Reports
+# In saved query list, click on the link icon for saved query ""Future information systems"" and copy the link from the appearing popup window.
+# Try to open the link in a new browser tab/window
+
+_Expected:_ iteraplan spreadsheet reports page opens, with the query ""Future information systems"" loaded, executed and its result list displayed.
+
+_Actual:_ General error page.
+
+_Reason:_ The link is not correct. What iteraplan offers as links is as follows:
+{noformat}
+[server]/iteraplan/show/graphicalreporting/fastexport/generateSavedQuery.do?[parameters]
+{noformat}
+Correct would be either
+{noformat}
+[server]/iteraplan/show/graphicalreporting/../fastexport/generateSavedQuery.do?[parameters]
+{noformat} (important, the *../* part, as in direct links for graphical reports)
+or
+{noformat}
+[server]/iteraplan/show/fastexport/generateSavedQuery.do?[parameters]
+{noformat} (as links for tabular reports in 3.3)"		Bug	iteraplan PO	11/Nov/14 11:20 AM	14/Nov/14 2:13 PM					report	savedquery	spreadsheet							14/Nov/14 10:12 AM;isc;I have tested the changes locally and on the nightly. On both system I couldn't open the links. I get everytime a 404.																																																						

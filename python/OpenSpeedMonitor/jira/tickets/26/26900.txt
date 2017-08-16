@@ -1,0 +1,11 @@
+Scanqualität des ZAP Scanners verbessern	"Wie kann erkannt werden, dass ein vorheriger Lauf korrekt durchgeführt wurde?
+
+Dass das Ziel korrekt gescannt wurde und nicht jeder Request gegen den Login lief oder eine Fehlerseite weil die Applikation in einen Fehlerzustand gegangen ist?
+
+
+
+Muss ggf. der Normalzustand zwischendurch geprüft werden?
+
+Bsp. alle 20 Requests/ x sekunden ein ""Health-Check"" durchgeführt werden?
+
+Wie sähe so ein ""Health""-Check aus?"		Story	secureCodeBox	03/Dec/14 9:20 AM															05/Dec/14 12:47 PM;bwo;Die ZAP Api scheint einen Logincheck zu besitzen. Hier kann ein Indikator und eine Login URL + Parameter gesetzt werden. Ich werde Überprüfen ob es sich wie erwartet verhält.																																																						

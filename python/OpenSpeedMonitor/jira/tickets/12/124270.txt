@@ -1,0 +1,13 @@
+Filter (Testlink) [Browser - FF]	Testlink: Filter	124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:11 PM	19/Jun/17 1:54 PM														"15/Jun/17 8:03 PM;naba;Test cases: Filter ip-80, 81, 83, 84, 87, 86
+
+ For smoke test please use
+
+[https://doc.iteraplan.de/display/iteraplan60/Filtering] (examples and tips)
+
+
+
+Please be creative and progressive.
+
+
+
+*Note*: work with documentation is still in progress."	19/Jun/17 1:53 PM;mash;Tested in FF browser -> bugs found IPTS-994																																																					

@@ -1,0 +1,6 @@
+Cluster diagram: Usability	"see ticket ITERAPLAN-479:
+
+* Small appearance bug: the long texts in color legends are outside the legend boundaries
+* Usability: when I want to show diagram grouped by attributes, there are some situations, were I could not generate diagram, because the Building Block count was to high (the error message was shown). And there is no possibility to limit this count (you dont have the filtering in this mode).
+"		Improvement	iteraplan PO	30/Jan/12 11:15 AM	15/Mar/12 1:28 PM					diagram									15/Mar/12 12:32 PM;lci;The legend text bug is adressed in ITERAPLAN-445	"15/Mar/12 1:28 PM;kvo;Legend done in other issue;
+Max. Value possible to change in properties. Filtering too tedious."																																																					

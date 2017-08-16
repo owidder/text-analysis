@@ -1,0 +1,1 @@
+Arachni als "Scanner" Komponente in die SecureBox integrieren.	Analog zu Zap soll der Scanner Arachni integriert werden und via REST API gesteuert werden können. Die REST API ist glücklicherweise ähnlich zu der API von ZAP.	83300	Sub-task	secureCodeBox	07/May/16 9:10 PM						students																																																															

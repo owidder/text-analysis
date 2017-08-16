@@ -1,0 +1,55 @@
+Layout for exact positioning (num-num or num-enum)	"*Summary:*
+
+Implement new layout for num-num or num-enum cases.
+
+
+
+*Implementation Details:*
+
+* The length of all sides is the same; we calculate the biggest side and take it for all others
+
+* All quadrants are quadratic (and therefore the diagram is no longer quadratic)
+
+* The size of quadrants (and of the whole diagram) is dynamically depending on the number of bubbles
+
+* The biggest bubble range defines the size of the quadrant, i.e.
+
+** exact positioning (num-num or num-enum):
+
+*** count number of bubbles, where the centre is within the range of a quadrant
+
+*** take this maximum number for the following calculation
+
+*** Take ( sqrt(maximumNumber) * size in pixel of average bubble ) as length of all quadrants = side of cell
+
+*** exception: if this maximum number is higher than 100, take 100 bubbles for the size of quadrant
+
+* The size of bubbles is absolutely defined
+
+
+
+* Url: nothing to do
+
+
+
+*UI:*
+
+* Legend: nothing to do
+
+* Toolarea: nothing to do
+
+
+
+*Two open points for the sprint Planning:*
+
+
+
+*  Bubble min/max size, size of cell (number of bubbles in the cell)
+
+*  Scaling min/max limits
+
+
+
+p.s. quadrants/sections calculation is described in IPTS-64"	93345	Sub-task	iteraplan Speedbird	17/Aug/16 9:57 AM	23/Aug/16 2:17 PM														"23/Aug/16 2:16 PM;roia;Reviewed: https://iteraweb.iteratec.de/fisheye/cru/IP-14
+
+"																																																						

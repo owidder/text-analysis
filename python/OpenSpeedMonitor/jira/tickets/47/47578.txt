@@ -1,0 +1,5 @@
+Icons for Nested Cluster and for Landscape Diagram	"Please create
+
+* colored icons for the Nested Cluster Diagram for all Building Block Types (except for Information System) analogue to Information System Nested Cluster Diagram icon
+
+* colored icons for the Landscape Diagram for all Building Block Types as presented to Wolfgang. Please show *upfront* the prototype to Marcel."		New Feature	iteraplan PO	08/Apr/15 10:39 AM	19/Jan/16 1:56 PM																																																																				

@@ -1,0 +1,29 @@
+RELEASE: Add toolarea option "Include Information Systems connected over an Interface"	"*Summary:*
+
+Create a new option, only available in the toolarea, when Information Systems are selected as base type. This option is called ""Include Information Systems connected over an Interface"" (analogous IPTS-61, IPTS-135)
+
+
+
+*Implementation Details:*
+
+* It is deactivated by default
+
+
+
+* This option has the effect, that Information Systems which are *not* in the result set (e.g. filtered out by some filter) are nevertheless in the diagram when they are connected over an Interface to an Information System in the result set.
+
+* The connection ""over an Interface"" is technically called ""informationFlows1"" and ""informationFlows2"" in the dataModel.js. Please include both
+
+* This option is saved to the url
+
+
+
+*UI:*
+
+* Legend: The legend shows this option only if it is activated
+
+* Toolarea: As soon as Information System is selected as Element Type in the Toolarea a sub-entry appears on the last position of the menu
+
+* It is called  ""Include Information Systems connected over an Interface"" or ""Exclude Information Systems connected over an Interface"" -> Toggle-Button (German: ""Füge über Schnittstellen verbundene Informationssysteme hinzu"" or ""Entferne über Schnittstellen verbundene Informationssysteme"")"		New Feature	iteraplan Speedbird	06/Sep/16 11:45 AM	19/Oct/16 3:22 PM														"18/Oct/16 11:34 AM;dmkh;Reviewed without unit tests
+
+"																																																						

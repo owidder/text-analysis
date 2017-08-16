@@ -1,0 +1,9 @@
+Bessere Filter für Script Liste	"Es wäre cool wenn die Script-Liste besser filterbar wäre. Dazu gibt es folgende Ideen:
+
+* Filter in LocalStorage merken, wie bei Job Liste
+
+* FIlter-Buttons für folgende Filter:
+
+    * Active: Script hängt an einem Job, der aktiv ist
+
+    * In use: Script hängt an einem Job, egal ob aktiv oder nicht (aber nicht gelöscht)"		New Feature	OpenSpeedMonitor	10/Jul/17 2:10 PM																																																																					

@@ -1,0 +1,39 @@
+REST interface: strange HTTP Accept behavior	"Querying the REST API with a iteraQL expression (Restlet: QueryResource) should work with HTTP Accept header ""application/json"".
+
+_Works:_
+Accept:
+Accept: text/html
+Accept: application/xhtml
+Accept: application/xhtml+xml
+
+_Doesn't work:_
+Accept: \*/\*
+Accept: application/json
+Accept: <any other value>
+when ""Accept"" header is missing
+
+When it doesn't work, the server returns a 500 server error. Shouldn't it be 400 (Bad request)?"		Bug	iteraplan PO	15/Nov/13 3:28 PM	07/Apr/14 5:51 PM					rest									"12/Mar/14 2:59 PM;wfr;To-be - high level:
+a) works with browser and shows JSON
+b) works with regular format for a regular adjacent system
+c) works with colloquial formats: xls, xlst
+d) degrades gracefully
+
+ad a): text/html,  application/xhtml, application/xhtml+xml: JSON all 3 (/)
+ad b) application/json, application/<<<Excel formats see below>>>: all TODO, 
+ad c) must still work, even if the format of the format value is quite non-standard.
+ad d) \*/\*, empty value, missing header: default to JSON
+
+all other cases, for example Accept: application/wordperfect-6.0 ==> 415 unsupported media type
+[W3 Spec|http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.16]
+
+According to this [inofficial source: http://filext.com/faq/office_mime_types.php], we should accept:
+xls as application/vnd.ms-excel
+xlsx as application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+
+For now out of scope: what about xlsm, that is workbook with macros enabled?
+"	"18/Mar/14 3:41 PM;sry;related issue: When using the _format_ request parameter, the value is interpreted in a case-sensitive fashion. The consequence is that
+http://iteraplan-server/iteraplan/api/data?format=XLS does not work (400 Bad request) while http://sql-iteraplan/iteraplan/api/data?format=xls works.
+
+I don't see any good reason to treat a format specifier case-sensitive and think it should be changed to case-insensitive."	"07/Apr/14 1:31 PM;lba;Works fine, but maybe we need to adjust the documentation, because the xls output format is currently only available for a full model export. The documentation doesn't mention this in the paragraph ""Formats and Media Types""
+
+Rejected because the error code should be 415(unsupported media type) not 400(bad request)."	07/Apr/14 5:51 PM;lba;(/) Unsupported media types return now a 415 error code																																																			

@@ -1,0 +1,57 @@
+Not possible to set attributes on axes	"*Summary:*
+
+Setting any attribute on an axis throws an error.
+
+
+
+*Reproduce:*
+
+* Set ""Complexity"" on X-Axis
+
+
+
+*Actual:*
+
+* Error thrown
+
+
+
+*Expected:*
+
+* Complexity on axis
+
+
+
+*Analysis:*
+
+lsdConfiguration.setFilter does not work with attributes on axes, it only works with Substantial Types.
+
+
+
+*Stacktrace:*
+
+TypeError: An exception occured: Cannot read property 'persistentName' of null
+
+    at LSDConfiguration.setFilter (lsdConfiguration.js:352)
+
+    at Object.attributeOptions.push.click (lsdConfiguration.js:499)
+
+    at entries.push.onClick (lsdToolAreaViewModelBuilder.js:740)
+
+    at Scope.$scope.callFn (toolAreaController.js:27)
+
+    at $parseFunctionCall (angular.js:12332)
+
+    at callback (angular.js:22949)
+
+    at Scope.$eval (angular.js:14383)
+
+    at Scope.$apply (angular.js:14482)
+
+    at HTMLAnchorElement.<anonymous> (angular.js:22954)
+
+    at HTMLAnchorElement.eventHandler (angular.js:3011)"		Bug	iteraplan PO	21/Dec/15 1:00 PM	08/Jan/16 3:02 PM														21/Dec/15 1:06 PM;dam;after bugfix. reactivate all  e2e test in e2etest/Landscape Diagram/Inner/changing-types-spec.js	"22/Dec/15 4:50 PM;msr;Finished code for this ticket.
+
+Because of 2 week break I created another ticket for unit and protractor tests: ITERAPLAN-4277 . So this ticket can be reviewed now."	"23/Dec/15 11:40 AM;sfe;Made some minor adjustments/fixes.
+
+Please review again."																																																				

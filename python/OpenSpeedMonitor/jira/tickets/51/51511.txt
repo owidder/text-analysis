@@ -1,0 +1,7 @@
+Manueller Test nach Update auf Grails 2.5	Nach dem Umsetzen aller noch offenen Tickets sollten wir alle Views noch mal manuell testen und auf Fehler prüfen.		Bug	OpenSpeedMonitor	22/Jul/15 10:07 AM	05/Nov/15 9:15 AM														"05/Nov/15 9:15 AM;nku;Alle wichtigen Funktionen auf Firefox und Chrome durchgegangen.
+
+Alle noch aufgefallenen Defects sind als Tickets erzeugt.
+
+
+
+Teinahme: Hauke, Marcus, Nils"																																																						

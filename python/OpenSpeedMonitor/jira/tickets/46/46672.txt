@@ -1,0 +1,14 @@
+Excel import error in step 4 when column "Last Modification Time" is removed	"_Reproduce (with sample data):_
+# Navigate to iteraplan -> Mass Data -> Export/Import
+# Download Excel data
+# Change Excel file: Remove column ""Last Modification Time"" on, for example, Information System sheet
+# Also change some values in other columns on the same sheet
+# Import the file with overwrite strategy
+
+_Expected:_ In step 4 the changes are reported and it is possible to continue the import process
+
+_Actual:_ Technical error page in step 4, reason: Last Modification Time Property was not found in {{TimestampBasedMergeStrategy}}, see also attached problem report
+
+_Reason:_ TimestampBasedMergeStrategy assumes, that a last modification time property is always present, and if not, throws an exception. However, with masking metamodel and if the Last Modification Time column is removed from the Excel file, it is possible for the property to not exist.
+
+_Possible fix:_ Use the {{getLastModificationTime}} method of ObjectExpression instead of the property to get the last modification time, see {{TimestampBasedMergeStrategy#isValidTimestamp(RStructuredTypeExpression, ObjectExpression)}}."		Bug	iteraplan PO	04/Jun/14 2:19 PM	17/Jun/14 1:51 PM					import	lastmodification	timestamp																																																													

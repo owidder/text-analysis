@@ -1,0 +1,8 @@
+Create DataService	"Create DataService.
+
+Integrate with rest of pipeline.
+
+Should accept configuratoin, but only hard coded config in the scope of this ticket.
+config only for 3 types, not yet for 1 or 2 properties.
+
+Jasmine tests."		New Feature	iteraplan PO	03/Mar/15 4:11 PM	11/Mar/15 4:40 PM														03/Mar/15 4:43 PM;wfr;only proxy	11/Mar/15 4:40 PM;wfr;Minor todos on docs, to be discussed in Sprint 9.																																																					

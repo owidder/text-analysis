@@ -1,0 +1,24 @@
+ElasticCore throws error if an attribute is named like a BuildingBlock	"ElasticCore throws error if an attribute is named like a BuildingBlock:
+
+{code}
+[ERROR] 05-Jun-2013 13:38:41 [exchange.elasticeam.IteraplanMetamodelAndModelLoader] IteraQl model and data loading failed
+de.iteratec.iteraplan.elasticeam.exception.MetamodelException: Duplicate locale name Business Process in locale en.
+	at de.iteratec.iteraplan.elasticeam.util.I18nMap.set(I18nMap.java:104)
+	at de.iteratec.iteraplan.elasticeam.emfimpl.EMFMetamodel.update(EMFMetamodel.java:1048)
+	at java.util.Observable.notifyObservers(Observable.java:142)
+	at de.iteratec.iteraplan.elasticeam.emfimpl.EMFNamedExpression.setName(EMFNamedExpression.java:109)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.MetamodelExport$ExportRun.addAttributeType(MetamodelExport.java:1062)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.MetamodelExport$ExportRun.createPropertiesForAttributeTypes(MetamodelExport.java:870)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.MetamodelExport$ExportRun.<init>(MetamodelExport.java:223)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.MetamodelExport.loadMetamodel(MetamodelExport.java:202)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.IteraplanMetamodelLoaderImpl.loadConceptualMetamodelMapping(IteraplanMetamodelLoaderImpl.java:88)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.IteraplanMetamodelAndModelLoader.loadMetamodel(IteraplanMetamodelAndModelLoader.java:132)
+	at de.iteratec.iteraplan.elasticeam.concurrent.ElasticeamLoadTask.call(ElasticeamLoadTask.java:67)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.IteraplanMetamodelAndModelLoader.call(IteraplanMetamodelAndModelLoader.java:104)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.IteraplanMetamodelAndModelLoader.call(IteraplanMetamodelAndModelLoader.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:662)
+{code}"		Bug	iteraplan PO	05/Jun/13 9:13 PM	01/Jul/14 12:48 PM					elasticeam									14/Jun/13 1:42 AM;sry;Workaround is to avoid such names for now.	25/Jun/14 4:34 PM;fka;Is this still applicable?	27/Jun/14 11:05 AM;dop;This issue couldn't be reproduced by me anymore. You can name a Building Block for exampe "Business Process", but not "BusinessProcess". Some names were blocked and couldn't be used as attribute names anymore. Please see Ticket ITERAPLAN-2513 for further information. The documentation had been updated properly as well: http://www.iteraplan.de/wiki/display/upcomingIteraplan/Building+Block+Attributes																																																				

@@ -1,0 +1,7 @@
+Berechnung und Persistenz csBasedOnVisuallyCompleteInPercent im EventResult	"Für den Fall, dass es eine visuallyComplete-Zeit gibt soll eine alternative Kundenzufriedenheit berechnet werden. Diese wird ein weiteres Attribut des MeasuredValues.
+
+
+
+Die Berechnung soll analog zum bisherigen value berechnet werden (also BY_MAPPING).
+
+"		New Feature	OpenSpeedMonitor	24/Sep/15 1:58 PM	11/Feb/16 9:28 AM																																																																				

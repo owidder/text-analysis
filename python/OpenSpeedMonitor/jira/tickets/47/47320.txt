@@ -1,0 +1,3 @@
+Cluster diagram legend sometimes black on black	"Using the demo data: Directly execute the first saved Cluster Diagram ""Input for technical standardization""
+
+The titles in the legend can't be read, they are black font on black background."		Bug	iteraplan PO	23/Jan/15 7:16 PM	26/Jan/15 10:02 AM														26/Jan/15 10:02 AM;fka;Probably was a temporary issue with the nightly build																																																						

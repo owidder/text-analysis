@@ -1,0 +1,24 @@
+Some problems / improvements for Excel Export/Import.	"There are some problems / improvements for Excel Export/Import.
+
+*1. error messages*
+
+Error messages are very general. 
+For example, if something is wrong with the syntax, there are missing required fields, duplicate project names, etc. Then you get only a generic error message (See figure ""Fehler2.png""). In the log there is often a better error message. 
+It would be better if you give the user a more detailed information about the error.
+
+*2. Problems with duplicate entries*
+
+For example, you have two information systems with the same name.
+Both have an association to different business objects. 
+Then Export all data and import this in an initial database (see attachment iteraplanExcelData-2.xls).
+After this, one of the two information systems have both associations and the other one have no association.  
+
+*3.*
+
+You add a building block in the second line to the template (the first line remains blank), it is not imported.
+"		Bug	iteraplan PO	19/Apr/12 3:01 PM	14/May/12 11:00 AM					excel	export								"24/Apr/12 8:52 AM;sfe;2. Problems with duplicated entries:
+This only happens if you try to create more than one release (ISR or TCR) with the same name and version, and try to assign those releases different relations, since the entries in the relationship sheets can't be related unambiguously to the according release, so the first one found is used.
+It shouldn't be possible to create two or more releases with the same name and version to begin with, and this problem will be tackled on that and.
+
+3.:
+That's working as intended, as the excel importer uses 'empty line' to determine the end of the data of an excel sheet."	14/May/12 11:00 AM;mba;Works, but user interaction (flow) is still being modified (ITERAPLAN-717)																																																					

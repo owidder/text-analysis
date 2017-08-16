@@ -1,0 +1,5 @@
+Nesting Cluster: A Report that has an Attribute with the character "/" can't be used in a group	"This is most likely a problem with the parsing. A ""/"" is not foreseen as a character that a name of Relationship/Attribute/BuildingBlock can contain.
+Normally a ""/"" instructs the parser that the following characters are a relationship name.
+Normally to resolve this issue you have to rewrite parts of the iteraQl(-parser) and introduce a new rule that especially parses attribute names. 
+Maybe problems with the objectify-modifier could occur but I am not sure of that.
+"		Bug	iteraplan PO	21/May/13 5:31 PM	30/Dec/15 2:32 PM					cluster	escaping	iteraQl	nesting																																																												

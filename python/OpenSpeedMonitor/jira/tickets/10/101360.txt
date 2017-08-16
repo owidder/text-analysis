@@ -1,0 +1,15 @@
+Change default ag grid edit directive to custom	"- for text and num. in future -> blueprint for other types
+- custom edit directive
+-- highligh on mouse over
+-- edit icon on the right
+-- opt: apply, cancel icons
+
+@[~ach] to be discussed in detail with [~fka]
+
+discuss with [~mwe] for best practies:
+- http://codepen.io/joshwood/pen/kHydI (may be too simple)
+-http://vitalets.github.io/angular-xeditable/ (powerfull, only bootstrap?)"		Improvement	iteraplan Thunderduck	03/Nov/16 11:53 AM	21/Nov/16 9:58 AM														"16/Nov/16 2:18 PM;mse;Comments from sprint review on Novermber 16:
+
+
+
+* Cancel & Apply buttons should always be visible with background colored as the row"																																																						

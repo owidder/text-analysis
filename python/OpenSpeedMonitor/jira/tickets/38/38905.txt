@@ -1,0 +1,25 @@
+Spalte maxDataStorageTimeInMonths in der Tabelle osm_configuration wird nicht/ mit falschem default-Wert erzeugt	"Zielzustand:
+
+Spalte wird erzeugt und mit korrektem Default-Wert (13 Monate) erzeugt."		Bug	OpenSpeedMonitor	27/Apr/15 10:16 AM	04/May/15 11:53 AM														"28/Apr/15 2:14 PM;rhc;* Default-Wert ins Mapping der Domain-Klasse übernommen, da dieser vorher in der Bedinnung definiert wurde.
+
+* Änderung wurde lokal getestet und funktioniert"	"04/May/15 9:54 AM;nku;Bitte testen:
+
+Mit dem github-Stand Anwendung starten mit neuer mySQL-DB.
+
+Dann mit aktuellem Stand Anwendung gegen die selbe DB starten. 
+
+Ist hinterher 13 Monate eingetragen."	"04/May/15 11:52 AM;bwo;Ich konnte bestätigen dass der Wert korrekt eingetragen wird.
+
+Vorgehen:
+
+* Leere Datenbank erstellt
+
+* OSM Version 3.0.36 von github gepullt
+
+* OSM gestartet, via phpmyadmin überprüft ob die Spalte nicht existiert -> sie existierte nicht
+
+* OSM beendet
+
+* OSM aus dem develop-since-github gepullt und  mit der gleichen DB gestartet
+
+* via phpmyadmin festgestellt, dass die Spalte nun mit dem Eintrag '13' existiert"																																																				

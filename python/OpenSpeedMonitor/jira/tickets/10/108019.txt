@@ -1,0 +1,83 @@
+Fehler beim Löschen eines Merkmals	"Hallo Herr Stangl,
+
+
+
+ich habe versucht, ein Merkmal zu löschen, das Informationssystemen zugeordnet ist. Dabei bekomme ich einen allgemeinen technischen Fehler. Der Stacktrace deutet auf ein Problem mit dem SQL-Statement hin, falls mehr als 1000 Elemente betroffen sind. Wir haben 1385 Informationssysteme. Der Link mit dem Fehlerbericht lässt sich leider nicht öffnen, aber dafür werde ich ein separates Issue erstellen.
+
+
+
+Vorab vielen Dank für die Unterstützung.
+
+
+
+Viele Grüße
+
+Matthias Habermann"		Fault	iteraplan Support	11/Jan/17 11:10 AM	16/Jan/17 1:21 PM														"11/Jan/17 11:10 AM;matthias.habermann@wacker.com;
+
+!Fehler_Merkmal_loeschen.PNG|thumbnail!
+
+[^Fehler_Merkmal_loeschen.log] _(19 kB)_"	11/Jan/17 11:21 AM;matthias.habermann@wacker.com;Ich habe jetzt alle Zuordnungen des Merkmals zu Bebauungselement-Typen gelöscht, was funktioniert hat. Das Merkmal lässt sich jedoch noch immer nicht löschen.	"11/Jan/17 2:21 PM;cst;Sehr geehrter Herr Habermann,
+
+
+
+vielen Dank für Ihre Anfrage. 
+
+
+
+Wir haben den Vorgang geprüft und in Oracle gibt es eine bekannte Einschränkung, das nicht mehr als 1000 Elemente in einem Zug gelöscht werden können. 
+
+Mit der Umstellung auf den interactiven Client in Version 6.0 werden wir die Einschränkung von Oracle umgehen. 
+
+
+
+Eine schnelle Lösung für Version 5.4 und 5.5 können wir Ihnen nicht bereit stellen.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support "	"12/Jan/17 9:26 AM;matthias.habermann@wacker.com;Guten Morgen Herr Stangl,
+
+vielen Dank für die Antwort. Das ist natürlich unschön, aber es lässt sich damit leben.
+
+Ich werde noch versuchen, per Massenupdate die Werte des betroffenen Merkmals für alle Informationssysteme zu löschen, evtl. lässt sich das Merkmal dann löschen. Update folgt.
+
+Beste Grüße
+Matthias Habermann"	"16/Jan/17 1:21 PM;cst;Guten Tag Herr Habermann,
+
+
+
+ich würde das Ticket hierzu schließen, bei uns wurde hierzu ein Entwicklungs-Ticket  für Version 6.0 erstellt.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support 
+
+
+
+"	"16/Jan/17 1:26 PM;matthias.habermann@wacker.com;Hallo Herr Stangl,
+
+ist OK. Es kam heute bei uns im Team nur die Frage auf, ob diese Einschränkung auch in unserem Produktivsystem besteht (iteraplan 5.1). Meine starke Vermutung wäre Ja, aber es wäre nett, wenn Sie mir das bestätigen könnten - dann müsste ich nicht im Produktivsystem zum Testen extra ein Merkmal anlegen. Vielen Dank.
+
+Beste Grüße
+Matthias Habermann"	"16/Jan/17 1:29 PM;cst;Hallo Herr Habermann,
+
+
+
+das Problem besteht in dem Moment, wenn mehr als 1000 Elemente über die Oracle Datenbank gelöscht werden.
+
+Wenn dies bei Ihnen zutrifft dann ist die Antwort ""Ja"".
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support "	16/Jan/17 2:02 PM;matthias.habermann@wacker.com;OK danke.																																															

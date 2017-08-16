@@ -1,0 +1,5 @@
+2 Custom Dashboard enhancements/fixes	"* Remove the autodraw feature permanentely. Users always need to click on ""Show"" to redraw the diagram.
+
+ * Diagrams (Tags <DIAGRAM> </DIAGRAM>) are not always inserted at cursor position. But they should!
+
+To reporduce (in Chrome): Enter some text, press enter two times, then add a diagram. It's added directly after the text, not two lines below as it should be."		Bug	iteraplan PO	16/Jun/17 5:47 PM															20/Jun/17 10:37 AM;dmkh;Fixed item 1 in revision 7142	20/Jun/17 12:27 PM;dmkh;Review is done																																																					

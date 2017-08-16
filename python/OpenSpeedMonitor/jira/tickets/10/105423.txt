@@ -1,0 +1,1 @@
+Reset-Button vereinheitlichen	Statt pro Karte einen, sollte es einen allgemeinen geben.	97661	Sub-task	OpenSpeedMonitor	12/Dec/16 8:05 PM	12/Dec/16 9:22 PM																																																																				

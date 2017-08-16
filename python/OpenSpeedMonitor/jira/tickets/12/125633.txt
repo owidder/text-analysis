@@ -1,0 +1,63 @@
+Design a solution for the import of the bank data	"Find a solution for the import of Demo data and the other data we currently import via XMI.
+
+
+
+Ideas up to now:
+
+
+
+Use SQL statements if possible (check if Blob or Clob are needed in the data, then SQL is not working), if this is not possible use JSON.
+
+
+
+For JSON add a data mapper,or check if there is already something to map JSON to the DB. SQL is probably easier.
+
+
+
+CLOBs are used in:
+
+ * user_settings
+
+ * timeseries
+
+ * saved queries (not in stored queries)
+
+ * dashb_templ
+
+ * application_settings
+
+
+
+ 
+
+
+
+Talked to [~msr] about the tables containing CLOBs and if they are needed for the import.
+
+
+
+Result: These tables are not necessary"		New Feature	iteraplan Thunderduck	28/Jun/17 11:24 AM															"06/Jul/17 9:48 AM;tsc;Key question is: Why do we want to retire the XMI import?
+
+
+
+Requirements were:
+
+1. use defined object ids (for usage in saved queries)
+
+2. enable additional entities for import (e.g. saved queries in the interactive client)
+
+
+
+Both requirements can be achieved with the XMI import:
+
+1. the current xmi data files already contain object ids
+
+2. the xmi import can be extended for addtional entities (tested with application settings)
+
+
+
+Some advantages of the XMI Import:
+
+- xmi files can be exported from an existing iteraplan database
+
+- the xmi import is independent from any special database (a must requirement for the import)"																																																						

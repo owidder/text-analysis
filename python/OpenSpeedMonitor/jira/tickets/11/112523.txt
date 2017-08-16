@@ -1,0 +1,1 @@
+Attribute groups dragging is not working in FF and IE		112142	Sub-task	iteraplan Speedbird	21/Feb/17 1:14 PM	22/Feb/17 1:28 PM														22/Feb/17 1:28 PM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-383																																																						

@@ -1,0 +1,31 @@
+Change URL of published script results	"Currently the URL is .../iteraplan/api/reactor/scripts/hugo
+
+
+
+Should be .../iteraplan/published/hugo
+
+
+
+Check in BE how much this is to do.
+
+Change it on the GR frontend script info card and the modal."		Bug	iteraplan Quickfox	02/Aug/16 5:13 PM	08/Aug/16 12:46 PM														"05/Aug/16 11:38 AM;mse;Solution discussed with Fabian:
+
+
+
+I have implemented a new filter which is mapped to the URL ""/published/..."". This filter redirects the requests to ""/api/reactor/published/..."" which is the URL of the REST api. This means that the user can get the reactor result via both URLs:
+
+
+
+/[IteraplanBaseURL]/published/{config}
+
+and 
+
+/[IteraplanBaseURL]/api/reactor/published/{config}
+
+
+
+This was relatively easy to do while implementing another restlet with a secon REST-Api was out-of-scope (maybe I have overlooked another simple solution...). The frontend was already adjusted accordingly by [~mwe] in IPTQ-76.
+
+
+
+*Caveat:* I have also changed the URL to get reactor results from the REST Api from ""/api/reactor/scripts/hugo/"" to ""/api/reactor/published/hugo/"". This was discussed with [~mwe] and [~tsu] and should not have any impact on the rest of the application."																																																						

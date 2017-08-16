@@ -1,0 +1,38 @@
+Sort list view by columns	"Add a sorting to the list of information systems by all columns.
+
+Initially, the list of information systems is sorted lexicographically ascending by the name column.
+
+The name column is marked by a small icon (triangle pointing down).
+
+When the user clicks a column header, the system displays a menu with the actions ""sort ascending"" and ""sort descending"". 
+Note that this actions are an addition to existing actions for filtering.
+
+For text columns, the sorting is lexicographical. 
+For enumeration values as complexity or status, the sorting is in the defined order of the values within the enumeration.
+For the prototype implementation the values and their order can be hard coded into the JS client. 
+
+Out of the scope of this ticket: The order can be read from the iteraplan server.
+Look there only for the definition of enumerations and values.
+
+The ordering marker must be displayed in the column header, either ascending or descending.
+The old ordering marker must be removed.
+
+If the sorting is by a column other than name, the second sorting criterion must be by name always.
+After that, the sorting should be stable, but this is optional.
+The secondary sorting is not displayed by a marker or anything else.
+
+The sorting and the filtering must work in combination.
+
+Note that there is no ""unsorted"" mode for the list. The list is always sorted.
+
+No animation for changing the sort order.
+
+Filtering and sorting in the same context action menu will need some (preliminary) design. 
+Click on the column header must display a compact menu of icons, so that the user can select the action with only one more click.
+Ordering actions and filtering should be two groups in the action menu bar.
+
+Maybe we need more visual design here."		New Feature	iteraplan PO	04/Aug/14 5:44 PM	18/Aug/14 4:20 PM														07/Aug/14 5:47 PM;sepr;rough estimate 1 PD	"18/Aug/14 4:20 PM;wfr;OK
+
+minor: sort order is not alphabetical but:
+* complexity: (nothing) < low < average < high
+* status: target < planned < current < inactive"																																																					

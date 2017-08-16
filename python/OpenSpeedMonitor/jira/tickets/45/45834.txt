@@ -1,0 +1,3 @@
+Singular used in context actions "close all x" link	"to reproduce:
+# open a bb (e.g. a BP)
+=> context actions contain a link ""Close all Business Process"", should be ""Close all Business Processes"""		Bug	iteraplan PO	03/Jul/13 6:14 PM	04/Jul/13 11:14 AM														04/Jul/13 11:14 AM;sry;This is addressed in ITERAPLAN-1468 already																																																						

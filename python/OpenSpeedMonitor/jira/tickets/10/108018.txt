@@ -1,0 +1,7 @@
+"Globale" unter Graph anzeigen	"Es wäre wirklich praktisch, wenn man den Min/Avg/Max Wert aller angezeigten Messpunkte unter dem Graph sieht.
+
+
+
+Beispiel:
+
+Man guckt sich für bestimmte Bilder die Avg und Min Werte an. Unter dem Graph sollte man sehen, was der Durchschnitt und das Minimum aller angezeigten Daten (respektive der Avg und Min) ist. So kann man einfach Aussagen treffen wie ""Bilder vom Server XY brauchen im Schnitt 1300ms um zu laden und immer mehr als 1000ms""."		Bug	OpenSpeedMonitor	11/Jan/17 10:51 AM	18/Jan/17 11:28 AM																																																																				

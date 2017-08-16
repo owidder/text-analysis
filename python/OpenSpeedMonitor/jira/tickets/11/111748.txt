@@ -1,0 +1,17 @@
+Change loglevels by uri	"Implement the functionality to change both log levels by uri (as described in the user guide: https://www.iteraplan.de/doc/display/iteraplan55/Increase+log+level ).
+
+
+
+First idea: Check {{queryprocessor.js}}
+
+
+
+{code:java}
+
+loggerlevel=<LEVEL>
+
+loggerappenderlevel=<LEVEL> 
+
+{code}
+
+"		New Feature	iteraplan PO	14/Feb/17 3:47 PM	14/Feb/17 5:35 PM														14/Feb/17 5:35 PM;msr;Already fixed																																																						

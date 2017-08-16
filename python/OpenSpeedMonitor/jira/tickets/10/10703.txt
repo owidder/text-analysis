@@ -1,0 +1,54 @@
+Fehlerhafte MeasuredValue-Tags korrigieren	"Fehlerhafte EventResult- und MeasuredValue-Tags durch unzugeordnete Locations (Browser-Zuordnung fehlte) nach Migration aktualisieren (gegen korrekte Tags tauschen).
+
+Kommen Ergebnisse für Jobs rein, die jetzt auf einer anderen Location laufen, so wird diese Änderung jetzt in der ism-db nachgetragen. Bei diesem Update der Jobs werden Locations erzeugt, wenn diese noch nicht existeieren. Diese neuen Locations bekommen im Moment immer den Browser ""unknown"". Den Browser haben wir für alle Locations manuell nachgetragen (Stand: 25.10.2013). In den tags von EventResults und MeasuredValues muss der Browser angepasst werden.
+"		Bug	OpenSpeedMonitor	25/Oct/13 10:51 AM	12/Nov/13 12:48 PM														"28/Oct/13 9:54 AM;jwerschmoeller;MeasuredValue Fehler dürften durch die BootStrap-Operation (siehe IT-178) behoben sein, wenn und nur wenn die Locations/Browser korrekt zu den Event-/JobResults zugeordnet sind.
+
+Die EventResult-Tag-Problematik ist ungelöst!"	"28/Oct/13 10:03 AM;rhe;Ein zug in der Bootstrap update Methode
+"	05/Nov/13 5:44 PM;mzeimer;@Nils ich habe Dir das Ticket rübergeschoben, weil das Morgen sicher nicht mehr fertig wird. Wir können dann Morgen (6.11.2013) absprechen, was zu tun ist.	06/Nov/13 4:19 PM;jwerschmoeller;DB-Script mit rLike umsetzen ...	"12/Nov/13 12:27 PM;rhe;Scheinbar ist nur die Location (ID: 88; Name: lhotsePhysNet02-wptdriver:Firefox) neuer Browser: 3 (Firefox) betroffen.
+
+{code:sql}
+SELECT DISTINCT tag FROM `event_result` WHERE `tag` rlike ""[^;]*;[^;]*;[^;]*;1;88""
+SELECT count(*), tag FROM `event_result` WHERE `tag` rlike ""[^;]*;[^;]*;[^;]*;1;88"" group by tag
+{code}
+|| Tags || count ||
+| 9;270;7;1;88 | 78 | 
+| 9;272;7;1;88 | 78 |
+| 9;273;7;1;88 | 78 |
+| 9;275;7;1;88 | 78 |
+
+{code:sql}
+SELECT count(*), tag FROM `event_result` WHERE `tag` = ""9;270;7;1;88"" group by tag
+{code}
+|| Tag || count ||
+| 9;270;7;1;88 | 78 |
+
+{code:sql}
+SELECT count(*), tag FROM `event_result` WHERE `tag` = "" 9;272;7;1;88"" group by tag
+{code}
+|| Tag || count ||
+|  9;272;7;1;88 | 78 |
+
+{code:sql}
+SELECT count(*), tag FROM `event_result` WHERE `tag` = ""9;273;7;1;88"" group by tag
+{code}
+|| Tag || count ||
+| 9;273;7;1;88 | 78 |
+
+{code:sql}
+SELECT count(*), tag FROM `event_result` WHERE `tag` = ""9;275;7;1;88"" group by tag
+{code}
+|| Tag || count ||
+| 9;275;7;1;88 | 78 |"	"12/Nov/13 12:45 PM;rhe;Update auf Live-DB:
+
+{code:sql}
+UPDATE `event_result` SET `tag`=""9;270;7;3;88"" WHERE `tag`=""9;270;7;1;88"";
+UPDATE `event_result` SET `tag`=""9;272;7;3;88"" WHERE `tag`=""9;272;7;1;88"";
+UPDATE `event_result` SET `tag`=""9;273;7;3;88"" WHERE `tag`=""9;273;7;1;88"";
+UPDATE `event_result` SET `tag`=""9;275;7;3;88"" WHERE `tag`=""9;275;7;1;88"";
+{code}"	"12/Nov/13 12:47 PM;rhe;Nach Ausführung:
+{code:sql} 
+UPDATE `event_result` SET `tag`=""9;270;7;3;88"" WHERE `tag`=""9;270;7;1;88"";# 78 Datensätze betroffen.
+UPDATE `event_result` SET `tag`=""9;272;7;3;88"" WHERE `tag`=""9;272;7;1;88"";# 78 Datensätze betroffen.
+UPDATE `event_result` SET `tag`=""9;273;7;3;88"" WHERE `tag`=""9;273;7;1;88"";# 78 Datensätze betroffen.
+UPDATE `event_result` SET `tag`=""9;275;7;3;88"" WHERE `tag`=""9;275;7;1;88"";# 78 Datensätze betroffen.
+{code}"	12/Nov/13 12:48 PM;rhe;Der Rest sollte durch die Update-Methode von Matthias behoben werden.																																															

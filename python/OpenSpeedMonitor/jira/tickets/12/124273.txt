@@ -1,0 +1,19 @@
+Mass update (Testlink) - IE11	Testlink: "List View / Edit" / Mass Update	124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:14 PM	19/Jun/17 4:16 PM														"15/Jun/17 6:57 PM;naba;""Mass Update"" = ""MULTI MODE""
+
+Test cases: List View/ Edit/ Mass Update ip-102-107, 110
+
+ For smoke test please use
+
+ [https://doc.iteraplan.de/display/iteraplan60/List+view] (examples and tips)
+
+
+
+Please be creative and progressive.
+
+
+
+*Note*: work with documentation is still in progress."	"19/Jun/17 4:16 PM;olal;Testing is done. Used IE11. Found bugs:
+
+ # ITERAPLAN-5395
+
+ # ITERAPLAN-5397"																																																					

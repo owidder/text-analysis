@@ -1,0 +1,21 @@
+Reserved keywords	"[~bwu] reports:
+
+++++++++++
+
+Habe eine Inkonsistenz zwischen GUI und Excel Import gefunden.
+
+Warnmeldung beim Import:
+
+„Product ist ein reservierter Begriff und kann nicht als Name für ein Merkmal verwendet werden.“
+
+In der Folge wird der Merkmalswert auch nicht importiert.
+
+
+
+Wenn ich dem Merkmal den Wert „Product“ aber über die GUI hinzufüge geht das und die Merkmalswerte werden dann auch alle ordentlich importiert.
+
+++++++++
+
+
+
+Fix the attribute (enum value) edit via GUI, so that no reserved keywords are allowed."		Bug	iteraplan Thunderduck	04/Apr/16 3:06 PM	19/Sep/16 1:23 PM					attribute	keyword																																																														

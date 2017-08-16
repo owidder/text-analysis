@@ -1,0 +1,51 @@
+BMW Adresse kann nicht aufgelöst werden	"Hi Admins,
+
+
+
+Manfred kann diese Seite ohne Probleme aufrufen: https://asc.bmwgroup.net/wiki/display/B2V/Kommunikation
+
+
+
+Ich konnte das bis gestern auch noch. Jetzt bekomme ich den Fehler im Anhang. 
+
+
+
+Was ich schon kontrolliert/probiert habe:
+
+* Browserwechsel hilft auch nichts. 
+
+* Ich hab keinen Proxy eingestellt
+
+* Ich bin über Kabel im Netz
+
+* Ein ipconfig /flushdns hat auch nichts geholfen.
+
+
+
+Hat das was mit dem Netzwerkfehler von gestern zu tun?
+
+
+
+Grüße
+
+De Long"		Task	Infrastruktur	19/Jan/17 11:48 AM	19/Jan/17 12:09 PM	Routing													"19/Jan/17 11:54 AM;ehi;Hallo De Long,
+
+
+
+ich kann zugreifen und ich denke auch nicht, dass das mit den Problemen von gestern zu tun hat. Kannst du mal ein ipconfig /renew in der CMD absetzen? Vielleicht hat deine Netzwerkverbindung einen Hänger (evtl. aus dem Ruhezustand gestartet?).
+
+An der Namensauflösung liegt es auch nicht, ein nslookup liefert die korrekte IP-Adresse für b2b.bmwgroup.net.
+
+
+
+Grüße, Elke"	"19/Jan/17 12:09 PM;diu;Hi Elke,
+
+
+
+ipconfig /renew hat gezogen.
+
+
+
+Danke dir!
+
+De Long"																																																					

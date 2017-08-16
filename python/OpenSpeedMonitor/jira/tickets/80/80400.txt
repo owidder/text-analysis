@@ -1,0 +1,7 @@
+Filter -> Interceptors	"In Grails 3.1 wurden die Filter aus Grails < 3 (https://grails.github.io/grails-doc/2.5.0/guide/single.html#filters) ersetzt durch Interceptors:
+
+http://grails.github.io/grails-doc/latest/guide/single.html#interceptors
+
+
+
+Aus Gründen der Abwärtskompatibilität lässt sich das alte Filters-Plugin noch einbinden, es wurde aber deprecated. Da wir nur zwei Filter haben sollte eine Migration schnell möglich sein."		Task	OpenSpeedMonitor	13/Apr/16 5:37 PM	25/Apr/16 11:14 PM																																																																				

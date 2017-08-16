@@ -1,0 +1,1 @@
+Überarbeitung JobResult-Queuing	Wir haben eine Reihe von Unzulänglichkeiten im Mechanismus, mit dem wir das Job-Queuing und -Processing derzeit machen. 		Epic	OpenSpeedMonitor	24/Oct/16 10:16 AM																																																																					

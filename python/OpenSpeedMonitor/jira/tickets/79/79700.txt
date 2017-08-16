@@ -1,0 +1,10 @@
+Active sheets in Excel template	"The ability to define an Excel template for spreadsheet reports that includes a sheet with additional calculations is a great feature.  This works well if only one additional sheet is defined.
+
+If two additional sheets are defined, then the resulting spreadsheet will show BOTH sheets active (in focus).  When more than one sheet is active, some Excel functions do not work, such as the auto-filter.  As soon as only one sheet is active, then all works well.
+
+Question: when iteraplan creates the spreadsheet report, would it be possible to have only ONE sheet active, for example, the first one on the left ?
+
+"		Technical question	iteraplan Support	09/Apr/16 5:05 PM	13/Apr/16 4:10 PM														"09/Apr/16 5:58 PM;hannes.callisen@boehringer-ingelheim.com;Workaround.  I just discovered, by accident, a workaround to the question below ... it depends on which sheet is active at the time that the template is saved.
+If the second sheet is active while saving the template, then the first and second sheet will be selected when the spreadsheet is created ... the issue that was reported.  However, if the first sheet is active when the template is saved, then only the first sheet will be selected when the spreadsheet is created.  This workaround works for me."	"13/Apr/16 4:10 PM;sfe;Hello,
+thanks for your report. I am glad you have found a workaround that works for you.
+I will note the provided information for future implementations of similar features in the interactive client."																																																					

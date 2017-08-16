@@ -1,0 +1,37 @@
+Automatisches Reporting	"Für unterschiedliche Anbieter (OTTO, Audi, Apetito) bieten wir automatische Reports an. Hierfür müssen unterschiedliche neue Diagramme mit d3 gebaut werden. Für den Anfang sollen dies sein:
+
+
+
+* Ladezeiten-Mittelwerte gesamter Anwendung als waagerechte Balken. Für die egene Anwendung und für Wettbewerber.
+
+!Ladezeiten WB.png|thumbnail!
+
+* Ladezeiten-Mittelwerte einzelne Seiten der eigenen Anwendung als waagerechte Balken. Darstellung analog zu 
+
+!Ladezeiten WB.png|thumbnail!
+
+* SpedIndex-Mittelwerte gesamter Anwendung als waagerechte Balken. Für die egene Anwendung und für Wettbewerber
+
+* SpeedIndex-Mittelwerte einzelne Seiten der eigenen Anwendung als waagerechte Balken.
+
+* CSI-Werte als senkrechte Balken
+
+!csi übersicht.png|thumbnail!
+
+* Senkrechte Violincharts für die Ladezeit zur Visualisierung der Verteilung 
+
+!Ladezeiten Violin.png|thumbnail!
+
+* Senkrechte Violincharts für den SpeedIndex zur Visualisierung der Verteilung 
+
+!Ladezeiten Violin.png|thumbnail!
+
+* Ladezeiten Einstiegs- und Folgeseiten als waagerechte Balken.
+
+!Ladezeit Entry Folgeseite.png|thumbnail!
+
+* Für Audi: Waagerechte Balken mit DocComplete und TTFB-Zeiten. 
+
+
+
+Zusätzlich zu den Charts müssen wir uns ein Format  für den Report überlegen. Das könnte PDF sein oder auch HTML. HTML könnte man sowohl im OSM aufrufen und anzeigen, als auch per Mail versenden."		Epic	OpenSpeedMonitor	10/Feb/17 1:25 PM																																																																					

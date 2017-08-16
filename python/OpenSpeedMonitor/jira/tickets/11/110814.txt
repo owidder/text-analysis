@@ -1,0 +1,27 @@
+Distrigation: LSD: Hierarchy Level Filter is offered for Technical Components	"*Summary:*
+
+Distrigation: LSD: Hierarchy Level Filter is offered for Technical Components although they do not have any hierarchy
+
+
+
+*Reproduce:*
+
+* Open default LSD
+
+* Set content type to ""Technical Component""
+
+
+
+*Actual:*
+
+* Hierarchy Level Filter is offered
+
+
+
+*Expected:*
+
+* No Hierarchy Level Filter for Technical Components as they do not have any hierarchy
+
+
+
+Please check the CCD, too."		Bug	iteraplan PO	04/Feb/17 12:15 PM	07/Feb/17 9:20 AM																																																																				

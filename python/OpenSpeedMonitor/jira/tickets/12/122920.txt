@@ -1,0 +1,19 @@
+Problem with History Migration	Wir wollen ab dem 14.6 unsere Iteraplan 5.2 aif 5.5 migrieren. Ist es möglich bei der History migration das "," (das Komma) zwischen Datum und Uhrzeit wegzulassen (es scheint dann kommt auch Excel mit dem Wert als datum klar)		Technical question	iteraplan Support	31/May/17 10:07 AM	27/Jun/17 2:53 PM														"31/May/17 4:55 PM;msr;Hallo Herr Zerrer,
+
+danke für Ihre Anfrage.
+
+Zur Klärung, ob ich Ihre Anfrage richtig einordne:
+Sie schlagen folgendes Feature für zukünftige iteraplan-Versionen vor:
+Das angezeigte Datumsformat der Historie soll ohne Komma dargestellt werden, z.B. ""31.05.2017 16:40:56"". Der Vorteil wäre, dass die Excel-Zellen dieses History-Export direkt als Datum erkannt würden. Ist das soweit korrekt?
+
+Mit freundlichen Grüßen
+
+Marcel Schrumpf - iteraplan Support"	31/May/17 4:55 PM;msr;!image-2017-05-31-16-55-48-811.png|thumbnail!	31/May/17 4:59 PM;wolfgang.zerrer@festo.com;Genau, solange es in Iteraplan nicht möglich ist die Einträge zeitlich zu sortieren (vielleicht das gleiche Problem) ist es dann ohne "ändern" der daten möglich wenigstens im Excel zu sortieren.	31/May/17 5:04 PM;wolfgang.zerrer@festo.com;Sorry, nicht nur in künftigen Versionen, sondern bereits bei der 5.5. Die nicht sortierbarkeit werte ich ausserdem nicht nur als Schönheitsfehler, sondern eigentlich als bösen Bug, der gefixt werden sollte	"12/Jun/17 4:56 PM;msr;Hallo Herr Zerrer,
+
+danke für Ihr Feedback.
+Wir haben es bereits in Version 6.0 eingearbeitet, die in den kommenden 2 Wochen erscheint.
+Für vorherige Versionen setzen wir diesen Feature-Request nicht um, da es sich bereits in den vorherigen Versionen um eine Datumsspezifikation handelt.
+
+Mit freundlichen Grüßen
+
+Marcel Schrumpf"	27/Jun/17 1:15 PM;wolfgang.zerrer@festo.com;close																																																	

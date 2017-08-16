@@ -1,0 +1,7 @@
+Properties not read as UTF-8	"From a support case (see linked ticket):
+
+
+
+In some environments, properties files are not correctly read as UTF-8 encoded files.
+
+This results in, for example, strange characters being displayed in the ""line style"" select fields on some classic diagram configuration pages."		Bug	iteraplan Thunderduck	22/Sep/16 10:51 AM	22/Sep/16 11:43 AM																																																																				

@@ -1,0 +1,13 @@
+NCD: Multiple whitespace between keywords (filtering by text attributes)	"IP9-234
+Summary: multiple whitespace should be ignored 
+
+Steps to reproduce:
+1. Go to NCD page
+2. Use any filter by text properties
+3. Enter several keywords according to current diagram with multiple whitespace between keywords
+4. Click on ""Search"" button
+Actual: empty diagram
+Expected: multiple whitespace should be ignored"		Bug	iteraplan PO	26/Mar/15 4:50 PM	09/Jun/15 5:06 PM														"15/Apr/15 11:12 AM;wfr;Recommendation: defer
+
+avoidable
+even if confusing and hard to detect for a user"	22/May/15 10:23 AM;dasm;Verified (rev 1145)																																																					

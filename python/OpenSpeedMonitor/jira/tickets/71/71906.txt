@@ -1,0 +1,7 @@
+Weekly mean per page Aggregation funkioniert nicht mehr	"Die Auswahl von ""Weekly mean per page"" auf dem CsiDashboard resultiert in folgendem Fehler: 
+
+
+
+java.lang.IllegalArgumentException: The tag is not an hourly aggregation tag, the segment count is not 2; current segment count: 5, passed argument: 2;845;11;2;151
+
+"		Bug	OpenSpeedMonitor	05/Feb/16 10:03 AM	05/Feb/16 2:56 PM																																																																				

@@ -1,0 +1,22 @@
+XWiki-Links in interaktivem Client defekt	"Im interaktiven Client wird in der Beschreibung eines Bausteins die XWiki-Syntax im Grundsatz unterstützt.
+
+Allerdings funktionieren XWiki-Links z.B. [[Test>>http://www.iteratec.de]] nicht.
+
+Zum einen werden sie als Hyperlink mit dem Text ""Test>>http://www.iteratec.de"" angezeigt
+
+Zum anderen führen sie zu einer Fehlerseite ""Diese Ansicht wird momentan nicht unterstützt."""		Fault	iteraplan Support	12/May/17 9:44 AM	31/May/17 7:00 AM														"12/May/17 9:44 AM;CSchweer@VHV.de;
+
+!grafik.png|thumbnail!"	12/May/17 9:46 AM;CSchweer@VHV.de;!grafik.png|thumbnail!	"12/May/17 9:49 AM;cst;Sehr geehrter Herr Schweer,
+
+vielen Dank für Ihre Anfrage.
+
+In Version 5.5, wird die XWiki-Syntax noch nicht korrekt überall interpretiert. Mit Version 6.0 wird diese wieder vollständig im interactiven Client angezeigt werden.
+Dies finden Sie auch in unserer Dokumentation zur Version 5.5:
+
+""Currently only a sub set of the XWiki syntax is supported"". 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+ "																																																				

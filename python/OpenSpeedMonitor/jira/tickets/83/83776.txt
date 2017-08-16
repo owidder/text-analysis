@@ -1,0 +1,5 @@
+Update the pipeline to handle additional columns (attributes)	"Update the pipeline steps up to mpdGraphBuilder to produce proper data for goJS.
+
+See more details in the parent task."	83118	Sub-task	iteraplan PO	10/May/16 1:04 PM	01/Jun/16 4:39 PM														"01/Jun/16 2:00 PM;msr;Code looks good.
+
+Small review comments: https://iteraweb.iteratec.de/fisheye/cru/IP-11"	01/Jun/16 2:16 PM;roia;Updated the code according to the review notes.																																																					

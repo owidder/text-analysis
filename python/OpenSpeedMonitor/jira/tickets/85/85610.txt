@@ -1,0 +1,4 @@
+HUB-Zeichen-Funktionen (Linien, Markierungen, Text) 	"Als Benutzer möchte ich eigene Elemente wie Linien, Vierecke und Marker in die Karten zeichnen können. 
+
+Dabei soll es eine Möglichkeit geben die Zeichenelemente zu beschriften, um die Bedeutung und Zuordnung genau beschreiben zu können. Die Textbeschriftung ist dabei auch singular nutzbar d.h. es kann ein freies Textelement überall hinzugefügt werden.
+"		Story	EAM-Visualisierung	27/May/16 4:30 PM																																																																					

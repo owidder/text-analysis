@@ -1,0 +1,21 @@
+Betriebsdokumentation erstellen	"Es existiert ein Dokument, welches den initialen Aufbau und den Betrieb der Anwendung beschreibt.
+
+
+
+Das Dokument ist im Projektwiki oder als HTML-Dokument abgelegt.
+
+
+
+Das Dokument beschreibt die Hardware und Softwarevoraussetzungen. Benötigte Lizenzen, Konfigurationen und Start- bzw. Betriebsparameter.
+
+
+
+Das Dokument listet in Handbuchform alle notwendigen Schritte auf, um eine lauffähige Umgebung aufzusetzen und zu betreiben.
+
+
+
+Das Dokument beschreibt das Logformat der Findings und gibt Hinweise zur Interpretation.
+
+
+
+Im Dokument wird auf alle benötigten Artefakte und den Quellcode referenziert."		Task	secureCodeBox	06/Oct/14 1:59 PM	01/Dec/14 10:18 AM														01/Dec/14 10:18 AM;bwo;https://iteraweb.iteratec.de/confluence/display/SDO/Betriebsdokumentation																																																						

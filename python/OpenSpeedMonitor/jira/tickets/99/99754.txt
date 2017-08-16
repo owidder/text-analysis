@@ -1,0 +1,9 @@
+AFTER-RELEASE: 4.2  Download-Bereich	"https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess
+
+
+
+4.2  Download-Bereich durchführen"		Task	iteraplan PO	19/Oct/16 2:19 PM	04/Nov/16 3:40 PM														"27/Oct/16 3:04 PM;mse;4.2.1 done: the passwords have been reset and updated here:
+
+https://iteraweb.iteratec.de/confluence/display/ITPL/iteraplan+Downloads
+
+https://iteraweb.iteratec.de/confluence/display/ITPL/Zugangsdaten"	02/Nov/16 3:28 PM;cst;4.2.3 - updated 	04/Nov/16 3:29 PM;cst;Custom installer uploaded																																																				

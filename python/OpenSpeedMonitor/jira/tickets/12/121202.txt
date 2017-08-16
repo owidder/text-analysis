@@ -1,0 +1,25 @@
+Direction of Information Flows is shown as text, not with icon, in the list view	"Use case:
+
+ * open Interface list view
+
+ * add column ""Interface Direction""
+
+ * add column ""Information Flows - Direction""
+
+
+
+Result:
+
+ * values in the column ""Interface Direction"" are shown as icon
+
+ * values in the column ""Information Flows - Direction"" are shown as text
+
+
+
+Should be:
+
+ * values in the column ""Information Flows - Direction"" are shown as icon
+
+
+
+ "		Bug	iteraplan PO	12/May/17 8:43 AM	11/Jun/17 1:45 PM																																																																				

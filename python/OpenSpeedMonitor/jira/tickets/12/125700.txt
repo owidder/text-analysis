@@ -1,0 +1,117 @@
+Install of Iteraplan 6 	"When I install Iteraplan It doesn't give me the ability to administer anything.  I'm in the AD Group (through LDAP) that was specified during install for super user access.  
+
+
+
+I pasted a screenshot. "		Technical question	iteraplan Support	28/Jun/17 7:24 PM															"28/Jun/17 7:24 PM;brendan.kennedy@aeso.ca;
+
+!2017-6-4-11-24-23-206.png|thumbnail!"	"29/Jun/17 8:41 AM;cst;Dear Mr. Kennedy,
+
+thanks for your inquiry. 
+
+Could please do the following steps to connect the roles in the database:
+ # Open the table ""ROLE"" in the database, here see you all created roles.
+ # Please insert the name of the Active Directory Group, later this group will have all permissions in iterplan
+ # Note the ID from the this group (e.g. 5) and the id of the iteraplan_Supervisor (e.g. 2)
+ # Open the table ""ROLE_ROLE"" and link both ID´s together. First comes the id of the ADG and the second ID is the iteraplan_Supervisor 5 - 2
+ # Now have the AD Group the iteraplan_Supervisor role 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "	"06/Jul/17 10:03 PM;brendan.kennedy@aeso.ca;I've done that, but it still won't give me rights.   I've checked that the AD group has the roles, and it will let me log in so I know it's hitting the LDAP.   I'll paste some screenshots. 
+
+
+
+!2017-7-5-14-2-42-373.png|thumbnail!
+
+!2017-7-5-14-3-0-895.png|thumbnail!
+
+!2017-7-5-14-3-22-427.png|thumbnail!"	"07/Jul/17 7:58 AM;cst;Dear Mr. Kennedy,
+thanks for your reply.
+
+Please clear cache and cookies, not that your browser is shown you a older version of the page.
+
+The second point is to increase the log level, for analyse the problem.
+
+If the login does not work correctly, then a higher log level is very useful for diagnosis. Add the following four lines to the file {{$TOMCAT_HOME\webapps\iteraplan-instance\WEB-INF\classes\log4j.properties}}, within the section ""Spring logging"" in that file:
+|{{log4j.logger.org.springframework.security.ldap=DEBUG}}
+{{log4j.logger.org.springframework.security.ui.webapp=DEBUG}}
+{{log4j.logger.org.springframework.security.web.authentication=DEBUG}}
+{{log4j.logger.org.springframework.ldap=DEBUG}}|
+
+Near the end of this file you can also see into which file iteraplan is logging. Additionally, $TOMCAT_HOME\logs\catalina-YYYY-MM-DD.log and $TOMCAT_HOME\logs\localhost-YYYY-MM-DD.log can be useful for a diagnosis.
+
+If you have increased the log level, be sure to reduce it again by removing the relevant lines!
+
+Could you send me the created log files (iterplan.log / localhost /catalina) to check the problem. 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support 
+
+ "	"13/Jul/17 12:51 AM;brendan.kennedy@aeso.ca;I've attached the logs.   
+
+[^localhost.2017-07-12.log] _(16 kB)_
+
+[^iteraplan-6.0.0.log] _(34 kB)_
+
+[^catalina.2017-07-12.log] _(184 kB)_"	"13/Jul/17 8:32 AM;cst;Good Morning,
+
+thank you for the log-files. 
+
+It seemsm that he cannot match the role ""G-APPIteraplan_Prod_Admin"" between the database and LDAP. 
+ Is your user in the LDAP-Group ""G-APPIteraplan_Prod_Admin""? 
+
+Please note, that the name must be case sensitive. 
+
+You can test the login process with a other LDAP-Group, when you change it in the database. 
+
+[DEBUG] 12-Jul-2017 16:49:07 [ldap.userdetails.DefaultLdapAuthoritiesPopulator] Roles from search: []
+
+Here a example from our LDAP instance. My user is in the LDAP-Groups ""iteraplan-Team, iteratec-MA, iteratec-muc"". In the database I added the role ""iteratec-muc"". 
+ On the login the log looks like:
+
+[DEBUG] 13-Jul-2017 08:22:46 [ldap.userdetails.DefaultLdapAuthoritiesPopulator] Getting authorities for user cn=Christoph Stangl,cn=Users,dc=iteratec,dc=de
+ [DEBUG] 13-Jul-2017 08:22:46 [ldap.userdetails.DefaultLdapAuthoritiesPopulator] Searching for roles for user 'cst', DN = 'cn=Christoph Stangl,cn=Users,dc=iteratec,dc=de', with filter (member=\{0}) in search base ''
+ [DEBUG] 13-Jul-2017 08:22:46 [security.ldap.SpringSecurityLdapTemplate] Using filter: (member=cn=Christoph Stangl,cn=Users,dc=iteratec,dc=de)
+ [DEBUG] 13-Jul-2017 08:22:46 [ldap.core.LdapTemplate] The returnObjFlag of supplied SearchControls is not set but a ContextMapper is used - setting flag to true
+ [DEBUG] 13-Jul-2017 08:22:46 [core.support.AbstractContextSource] Got Ldap context on server 'ldap://dc-muc.iteratec.de:389/dc=iteratec,dc=de'
+ [DEBUG] 13-Jul-2017 08:22:46 [ldap.userdetails.DefaultLdapAuthoritiesPopulator] Roles from search: [ReportingGroup \{91c79436-3ae2-4d66-be1e-be96a730c64e}, iteraplan-Team, iteratec-MA, iteratec-muc]
+ [DEBUG] 13-Jul-2017 08:22:46 [authentication.session.SessionFixationProtectionStrategy] Invalidating session with Id 'FFD226E9FE2C9D187D71AAB7693052DC' and migrating attributes.
+ [DEBUG] 13-Jul-2017 08:22:46 [authentication.session.SessionFixationProtectionStrategy] Started new session: F472691E43E56D30D922268701D837EB
+
+After that I have the correct permissions for using iteraplan.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"20/Jul/17 12:32 AM;brendan.kennedy@aeso.ca;I've done everything you've suggested.  I even added different groups.  Is there somewhere else that checks this?  
+
+It allows me to login, but it doesn't allow me to have supervisor access.  I've mapped the group to ROLE_ROLE.   Also.. I've added different groups to ROLE and mapped them as well and it still doesn't work.  
+
+Why would it let me log in if the group wasn't in the table being read? "	"20/Jul/17 8:06 AM;cst;Hello Brendan
+
+When your Login-Information are correct and iteraplan can connect to the LDAP-Server, you have the permission to login on iteraplan. 
+ But which roles your user is use, will be checked with the AD-Groups/Roles and the entries in the database.
+
+Could your LDAP-Administrator check the ""iteraplan-auth.properties"" for the settings of the ""Roles"" again.
+
+In our LDAP configuration we have following settings for the Groups/Roles
+
+ldap.roles.membershipfilter=(member=\{0})
+ ldap.roles.searchbase=
+ ldap.roles.nameprefix=
+ ldap.roles.defaultrole=_.-._ 
+ sv.group=iteratec-ma
+
+Every LDAP is different and must be adjusted to your IT infrastructure. 
+When you try the login with a other user, the same problem appears?
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"26/Jul/17 5:33 PM;brendan.kennedy@aeso.ca;I have confirmed Iteraplan is recognizing the Group.   It's just not recognizing it as a supervisor group.    
+Could there be an issue with: 
+- special characters  like _ or - ?  
+- ITURM issues. We don't use ITURM, but maybe that's causing problems.  
+
+I know it's recognizing the group because it lets me in and I'm in the group.  It doesn't let users outside the group in but it lets me in.  
+
+Can you help?   Is there a way I could call you?   I could work around your schedule and time zone. "																																														

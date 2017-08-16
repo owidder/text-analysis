@@ -1,0 +1,21 @@
+Execute Testsheet Reactor	"*Summary:*
+
+Execute Testsheet
+
+
+
+*Details:*
+
+* Ensure you have all the actual branch code
+
+* Perform all steps carefully
+
+* If the system is different than the testcases, check, if it is a bug or if the testsheet needs to be corrected.
+
+** If it is a bug, create immediately a bugticket in the epic ""Release 5.4""
+
+** If it is not a bug, correct the testsheet. "		Task	iteraplan PO	14/Oct/16 1:35 PM	20/Oct/16 3:02 PM														18/Oct/16 12:31 PM;ddu;Test performed - TC4 failed, but rather because of changes in configuration and not an error in iteraplan itself.	"20/Oct/16 3:02 PM;mse;I re-tested the last steps of TC4 where Daniel suspected some problems with his configuration and got failing tests.
+
+
+
+In my configuartion the saved query needed for the test was there and the test succeeded."																																																					

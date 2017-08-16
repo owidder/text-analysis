@@ -1,0 +1,9 @@
+mass update should only trigger one reaction (with several changes)	"In scope of this ticket: Create only a prototype which works for an certain case
+
+
+
+Should lead to gret speed up when reactions are triggered by mass updates.
+
+
+
+Idea: Reuse changes-collection-service of the ETAG-service to collect all changes of the massupdate."		Improvement	iteraplan PO	08/Jun/17 1:59 PM																																																																					

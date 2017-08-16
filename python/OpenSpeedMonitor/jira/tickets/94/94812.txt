@@ -1,0 +1,46 @@
+SSO Kostenview	"Grüß Gott,
+
+
+
+wir haben gestern die Iteraplan 5.1 Installation im Produktivsystem auf Single Sign On umgestellt. Wir verwenden das Produkt NetIQ Access Manager als Single Sign On Lösung.
+
+
+
+Wir haben nun noch das Problem, dass die von Ihnen als Zusatz zu Iteraplan entwickelte Lösung Portman2 (Kostenview im Objekt Project) nicht angezeigt wird. Bitte analysieren und korrigieren Sie den Sourcecode, damit wir die Lösung verwenden können.
+
+
+
+Zusätzlich habe ich die Bitte an Sie, mir den letzten Stand des Sourcecodes und der Dokumentation von Portman2 zuzusenden, da ich nicht weiss, ob ich wirklich den letzten Stand besitze.
+
+
+
+Mit freundlichem Gruß
+
+Jörg Schnur
+
+Wacker Chemie AG
+
+"		Fault	iteraplan Support	01/Sep/16 9:19 AM	26/Sep/16 7:00 AM														"05/Sep/16 1:30 PM;cst;Fabian ruft den Kunden hierzu zurück.
+"	"07/Sep/16 1:43 PM;fka;Bitte an den Kunden zurückmelden, ich kann das nicht über das Ticketsystem:
+
+Wir haben unsere Repositories bzgl. Portman2 überprüft. Wir haben keine neuere Version vorliegen. Genauer gesagt, haben wir gar keine Version mehr vorliegen. Der Sourcecode samt Dokumentation wurde am Ende des Projektes komplett übergeben. 
+
+Zu den Erweiterung der SSO-Konfiguration zur Inkludierung der Portman2-Anwendung hat der Support folgende schnelle Ideen:
+* In der Dokumentation ist ein möglicher Weg zur Konfoguration SSO beschrieben, siehe: https://www.iteraplan.de/doc/display/iteraplan53/Single+Sign+On   
+Der Abschnitt ""Step-by-Step: Configuring IIS to forward to iteraplan"" am besten für die weitere Anwendung entsprechend ausführen, so dass dann 2 Konfigurationen parallel vorhanden sind.
+* Eventuell führt auch eine Konfiguration entsprechend des Abschnittes zur REST-Schnittstelle (anonymer Zugriff) zum ERfolg.
+"	"07/Sep/16 1:49 PM;cst;Sehr geehrter Herr Schnur,
+
+vielen Dank für Ihre Geduld. 
+
+Wir haben unsere Repositories bzgl. Portman2 überprüft. Wir haben keine neuere Version vorliegen. Genauer gesagt, haben wir gar keine Version mehr vorliegen. Der Sourcecode samt Dokumentation wurde am Ende des Projektes komplett übergeben.
+
+Zu den Erweiterung der SSO-Konfiguration zur Inkludierung der Portman2-Anwendung hat der Support folgende schnelle Ideen:
+
+* In der Dokumentation ist ein möglicher Weg zur Konfiguration SSO beschrieben, siehe: https://www.iteraplan.de/doc/display/iteraplan53/Single+Sign+On 
+Der Abschnitt ""Step-by-Step: Configuring IIS to forward to iteraplan"" am besten für die weitere Anwendung entsprechend ausführen, so dass dann 2 Konfigurationen parallel vorhanden sind.
+* Eventuell führt auch eine Konfiguration entsprechend des Abschnittes zur REST-Schnittstelle (anonymer Zugriff) zum Erfolg.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"																																																				

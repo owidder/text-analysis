@@ -1,0 +1,3 @@
+Remove "Definitions" and link "Release Notes" to online version	"* Remove the ""Definitions"" menu entry and the html page
+
+* Link the ""Release Notes"" to https://www.iteraplan.de/doc/display/additionalTopics/Release+Notes"		Improvement	iteraplan Speedbird	08/Dec/16 11:12 AM	19/Dec/16 1:32 PM																																																																				

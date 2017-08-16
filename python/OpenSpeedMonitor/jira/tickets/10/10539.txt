@@ -1,0 +1,2 @@
+Result-Dashboard: Einheitliche Benennung	"Uwe:
+Uneinheitliche Benennung ""Measured Steps:"" und ""Alle Messschritte auswählen"""		Bug	OpenSpeedMonitor	23/Sep/13 9:40 AM	23/Sep/13 5:13 PM																																																																				

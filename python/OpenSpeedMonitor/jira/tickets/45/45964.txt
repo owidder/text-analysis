@@ -1,0 +1,8 @@
+Metamodell Erweiterung: Attributierbare Verwendungsbeziehung zwischen Zielen	"Erweiterung des iteraplan Metamodells um eine Verwendungsbeziehung zwischen Zielen, welche zusätzlich mit Merkmalen (sogenannte attributierbare Beziehung) genauer spezifiziert werden kann. Die attributierbare Verwendungsbeziehung zwischen Zielen kann mithilfe der Zuordnungstabellen (siehe Erweiterung 3) analysiert werden. Die neue Verwendungsbeziehung zwischen Zielen wird unterstützt bei 
+- den Listen- und Detailansichten unter dem Menüpunkt EA Data (Erstellen, Ansehen, Bearbeiten, Löschen) sowie Berechtigungsvergabe und -prüfung,
+- Filterungs-Abfragen im Sinne der Tabellarischen Auswertungen,
+- iteraQL-Abfragen,
+- Cluster-Grafiken und Nesting Cluster Diagramme
+
+Abgrenzung: Keine Funktionaliätten zur Bearbeitung von Massendaten (Export-/Import-Schnittstellen und Massenupdates).
+"		New Feature	iteraplan PO	06/Aug/13 12:23 PM	30/Dec/15 3:17 PM																																																																				

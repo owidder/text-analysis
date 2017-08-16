@@ -1,0 +1,8 @@
+Issue with size of spaned by horizonlal of content elements	"Summary: Issue with size of span of content elements
+
+Steps to reproduce: 
+1. Go to LSD page
+2. Use Infrastructure Element as content type
+3. Use horizontal span
+Actual: Issue with size of span of content elements"	47477	Sub-task	iteraplan PO	22/May/15 11:39 AM	19/Jan/16 4:06 PM													"Workspace: Windows 8.1
+revision: 1147"																																																							

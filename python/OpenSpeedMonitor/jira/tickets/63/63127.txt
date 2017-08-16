@@ -1,0 +1,7 @@
+Hello Spiddar!	"In  neuer Projektstruktur:
+
+
+
+- App zeigt Karte an
+
+- ein Sensor wird an einer fixen Position angezeigt"		Task	EAMV15	11/Nov/15 10:44 AM	18/Nov/15 5:20 PM														18/Nov/15 5:20 PM;dse;Projekt wurde in vorgesehener Projektstruktur neu angelegt. 																																																						

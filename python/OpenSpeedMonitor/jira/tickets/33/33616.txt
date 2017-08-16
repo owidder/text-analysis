@@ -1,0 +1,49 @@
+REST-API JobGroup-assoziierte Events	"Neben der manuellen Erstellung sollten Events auch automatisiert von außen persistiert werden können. Hierfür benötigen wir eine REST-API. Funktionen dieses API's sollten mittels apikey abgesichert sein.
+
+
+
+
+
+*Parameter der REST-API-Funktion:*
+
+
+
+Für die einzelnen Attribute von de.iteratec.osm.report.chart.Event:
+
+* date/fromHour (bzw. eventDate/eventTime)
+
+Das Datum soll optional sein. Wenn keines mitgeschickt wird soll der aktuelle Zeitpunkt gesetzt sein. 
+
+* shortName
+
+Muss da sein, sonst 500
+
+* htmlDescription
+
+Optional. Erstmal lassen wir alles zu.
+
+* globallyVisible
+
+Optional. Default-Wert ist false.
+
+
+
+Zusätzlich muss es einen Parameter geben system geben. Dieser beinhaltet den JobGroup-Namen als (URL-Encodierten) Klartext. Dieser Parameter ist obligatorisch."		New Feature	OpenSpeedMonitor	02/Mar/15 11:19 AM	12/May/15 3:44 PM														"20/Apr/15 11:23 AM;rkr;Die Anzeige der Events in Rickshaw arbeitet mit zwei Parametern pro Event:
+
+ * Unix Timestamp, wie in den Daten zur Darstellung im Graph - Beispiel: 1414846610 für 2014-11-01T13:56:50+01:00
+
+ * der Text-Nachricht, welche ausgegeben werden soll - Länge ist theoretisch unbegrenzt, aber nach ca. 17 Zeichen in einer Zeile (je nach Zeichenbreite) läuft die Zeile über die PopUp-Box (width: 160px) hinaus. Zeilenumbrüche sind mit simplen HTML möglich. Es ist offenbar möglich, den kompletten HTML-Satz zu verwenden. Bitte bei der Eingabe / Annahme der Text-Nachrichten sinnvoll einschränken auf Zeilenumbrüche und sinnvolle Text-Formatierungen (sowie weiteres HTML welches an der stelle sinnvoll brauchbar ist.)"	04/May/15 2:15 PM;rkr;-Schau noch mal was das Standard HTTP-Verb ist für die Erzeugung neuer Objekte.- POST	04/May/15 6:13 PM;rkr;Status: Übertragen und Speichern aller Parameter funktioniert; -Auslesen der Uhrzeit bei Anzeige im Frontend funktioniert noch nicht.-	05/May/15 5:52 PM;rkr;Die Spezifikation der Parameter der REST-API-Funktion unterscheidet sich von den Vorgaben für das CRUD-Frontend. Dort sind date und fromHour Pflichtangaben, alles weitere ist optional. Sollte das nicht identisch zueinander sein?	"06/May/15 9:00 AM;nku;Nein.
+
+
+
+Pflichtfelder auf Domain-Ebene sind es, weil nie ein Event persistiert werden darf ohne Datum und Uhrzeit. Das macht inhaltlich keinen Sinn.
+
+
+
+Beim Nutzen der REST-API zum Schreiben eines Events wird es aber oft vorkommen, dass bei den automatisierten Deployments in dem Moment das Event geschrieben wird, wenn das Deployment geschieht. Dann kann die REST-API-Methode ruhig so komfortabel sein kein Datum zu benötigen. 
+
+
+
+* Das sollte im Manual der REST-API stehen
+
+* Die POST-Methode sollte das erzeugte Event als JSON zurückliefern."																																																		

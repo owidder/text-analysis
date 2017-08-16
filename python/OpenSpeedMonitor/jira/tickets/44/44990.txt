@@ -1,0 +1,1 @@
+Excel import template does not show attributes	It would be nice to have the Excel import template to contain the defined attributes.		Improvement	iteraplan PO	10/Jun/11 8:26 AM	30/Sep/11 10:31 PM					excel	import								30/Sep/11 10:31 PM;kvo;Aufwand-Nutzen -> wontfix																																																						

@@ -1,0 +1,1 @@
+Jobtabelle: Häckchen werden bei Filterung falsch gesetzt	Wird aufgrund eines Filters nur ein Teil der Jobs angezeigt und klickt man auf  "Alle markieren" werden alle (also auch die durch den Filter ausgeblendeten) Jobs ausgewählt.		Bug	OpenSpeedMonitor	28/Feb/14 12:24 PM	28/Feb/14 12:31 PM																																																																				

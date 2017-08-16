@@ -1,0 +1,5 @@
+Navigation from diagram to single element view	"As iteraplan user I want to be able to navigate from a diagram in the interactive client directly to the detail view of an element displayed in the diagram, to easily access detailed properties of building blocks of interest.
+
+
+
+In the classic client this was solved by linking each diagram element to the corresponding single element view in iteraplan."		New Feature	iteraplan PO	03/May/16 3:19 PM	27/Mar/17 1:41 PM																																																																				

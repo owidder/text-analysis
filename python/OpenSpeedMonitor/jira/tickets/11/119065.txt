@@ -1,0 +1,29 @@
+Response of backend is not correct for one to many relations	"For changes of one-to-many relations the response from the server is not complete.
+
+
+
+Example for parent-child:
+
+
+
+Updates for the child and the new parent are shown, the change of the old parent is missing.
+
+
+
+This also happens for generalisation-specialication that is also one-to-many
+
+
+
+Reproduce:
+
+
+
+Change the child by adding it as a child to a new parent (when changing the parent of the child itself the response is correct)
+
+
+
+ 
+
+
+
+3 sp"		Bug	iteraplan Thunderduck	19/Apr/17 3:43 PM	26/Apr/17 11:12 AM																																																																				

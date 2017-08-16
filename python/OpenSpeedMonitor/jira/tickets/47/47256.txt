@@ -1,0 +1,17 @@
+URL link doesn't save contains of  "Highlight all modified in..." highlighting	"IP9-211
+
+SetUp:
+Open Google Chrome 39.0
+Open Mozilla Firefox 34.0
+
+Steps to reproduce:
+1. Go to NCD page with Google Chrome browser
+2. Open context menu for inner element
+3. Use  ""Highlight all modified in...""
+4. Copy Url link and past it to FF browser
+
+Actual: URL link doesn't save contains of  ""Highlight all modified in..."" highlighting in second browser
+Expected: URL should shows the contains of all view states
+
+
+"		Bug	iteraplan PO	24/Dec/14 1:51 PM	21/Jan/15 3:38 PM														21/Jan/15 3:38 PM;dasm;Verified (revision: 525)																																																						

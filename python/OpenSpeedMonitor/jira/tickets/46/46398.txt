@@ -1,0 +1,22 @@
+Watch/Unwatch misbehaves	"to reproduce:
+# open a building block
+# select ""watch"" from the ""more"" menu
+=> ""unwatch"" option is available in the ""more"" menu
+# select ""unwatch"" from the ""more"" menu
+=> success message is displayed
+=> ""watch"" option is available in the ""more"" menu
+=> watches in the more menu still claims one watcher (""watches (1)"")
+# select ""watches"" from the ""more"" menu
+=> popup states ""no watchers""
+# select ""watch"" option from ""more"" menu
+=> javascript error message 
+""Could not execute JDBC batch update; SQL [/* insert collection row de.iteratec.iteraplan.model.BuildingBlock.subscribedUsers */ insert into BB_SU (ID_BB, ID_UE) values (?, ?)]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: Could not execute JDBC batch update""
+# open a different building block
+# select ""watch"" from the ""more"" menu
+=> ""unwatch"" option is available in the ""more"" menu
+# select ""refresh"" from the ""more"" menu
+=> ""unwatch"" option is not available in the ""more"" menu
+=> ""watch"" option is available in the ""more"" menu
+# select ""watch"" from the ""more"" menu
+=> javascript error message as above"		Bug	iteraplan PO	09/Jan/14 1:04 PM	19/Jan/16 11:33 AM					subscriptions									"17/Mar/15 11:34 AM;gph;A-103 has the same problem in 3.3.2. Could reproduce the issue with multiple datasources:
+Subscribing tries to insert a row in BB_SU, but this table has a FK constraint to USERS, and that table doesn't contain the required users in the secondary datasource."																																																						

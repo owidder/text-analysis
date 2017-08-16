@@ -1,0 +1,77 @@
+TACO Mailverteiler einrichten	"Hallo könnt ihr für unser Projekt TACO einen Mailverteiler einrichten?
+
+
+
+Name: taco@iteratec.de
+
+
+
+mit folgenden Personen:
+
+
+
+Andreas Baumann <Andreas.Baumann@iteratec.de>;
+
+
+
+Andreas Blezu <Andreas.Blezu@iteratec.de>; 
+
+
+
+David Schowalter <David.Schowalter@iteratec.de>; 
+
+
+
+Johannes Merkert <Johannes.Merkert@iteratec.de>; 
+
+
+
+Karsten Krüger <Karsten.Krueger@iteratec.de>;
+
+
+
+Kay Schwieger <Kay.Schwieger@iteratec.de>;
+
+
+
+Michael Knödler <Michael.Knoedler@iteratec.de>;
+
+
+
+Michael Schüle <Michael.Schuele@iteratec.de>;
+
+
+
+Patric Schirrmann <Patric.Schirrmann@iteratec.de>;
+
+
+
+Sven Strittmatter <Sven.Strittmatter@iteratec.de>;
+
+
+
+Sebastian Haas <Sebastian.Haas@kobaltblau.de>;
+
+
+
+Imke Wagner <Imke.Wagner@iteratec.de>;
+
+
+
+Dimitri Evcenko <dimitri.evcenko@iteratec.de>;"		Task	Infrastruktur	09/May/17 12:23 PM	09/May/17 2:04 PM	Mailserver													"09/May/17 2:04 PM;ehi;Hallo Michael,
+
+
+
+der Mailverteiler iteratec-taco@iteratec.de wurde angelegt. Wenn ihr Personen hinzufügen wollt bzw. rausnehmen, dann bitte einfach Anfrage per Mail an admins@iteratec.de.
+
+
+
+Grüße, Elke"	"09/May/17 2:12 PM;ehi;Hallo Kollegen,
+
+
+
+könnt ihr euch bitte intern zukünftig besser vorher abstimmen? Wir müssen Mailverteiler beim Provider beauftragen und jede Änderung generiert einen Aufwand, der völlig unnötig ist, wenn ihr euch intern vorher besprecht. Ich werde jetzt bei Cojama die Umbenennung anstossen auf taco@iteratec.de. Bitte vermeidet solche ""Schleifen"" in Zukunft."	09/May/17 2:16 PM;sst;Tut mir leid, das hätten wir in der Tat vorher überlegen sollen. Hatte nicht gesehen, dass das Ticket schon in Bearbeitung ist.	"10/May/17 9:41 AM;ehi;Hallo allerseits,
+
+
+
+der Verteiler wurde jetzt umbenannt auf taco@iteratec.de."																																																			

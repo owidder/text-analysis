@@ -1,0 +1,67 @@
+Javascript-Fehler auf Ergebnis-Dashboard	"Bei Aufruf [dieses Dashboards|http://openspeedmonitor.wpt.iteratec.de/eventResultDashboard/showAll?selectedInterval=-1&selectedTimeFrameInterval=0&_setFromHour=&from=10.09.2016&fromHour=0%3A00&_setToHour=&to=19.09.2016&toHour=23%3A59&selectedFolder=18&selectedPages=21&_selectedAllMeasuredEvents=&selectedAllMeasuredEvents=on&_selectedAllBrowsers=&selectedAllBrowsers=on&_selectedAllLocations=&selectedAllLocations=on&_selectedAllConnectivityProfiles=&selectedAllConnectivityProfiles=on&_includeNativeConnectivity=&_includeCustomConnectivity=&selectedAggrGroupValuesUnCached=docCompleteTimeInMillisecsUncached&trimBelowLoadTimes=&trimAboveLoadTimes=&trimBelowRequestCounts=&trimAboveRequestCounts=&trimBelowRequestSizes=&trimAboveRequestSizes=&_action_showAll=Show&selectedChartType=0] kommt die folgende JS-Fehlermeldung:
+
+
+
+{code}
+
+Uncaught series data needs to be sorted on x values for series name: fv doc complete | Audi New WPT | Additionalwork-Live | iteratec-dev-hetzner-win7:Firefox | DSL 6.000
+
+{code}
+
+"		Bug	OpenSpeedMonitor	21/Sep/16 3:19 PM	18/Jan/17 3:22 PM														"21/Sep/16 3:39 PM;nku;Stefan hat ein englisches Locale auf Betriebssystem-Ebene eingestellt.
+
+Bei ihm kam es in der Folge bei Aufruf eines weiteren Dashboards zu folgendem Fehler:
+
+http://openspeedmonitor.wpt.iteratec.de/eventResultDashboard/showAll?_overwriteWarningAboutLongProcessingTime=&overwriteWarningAboutLongProcessingTime=on&_action_showAll=Yes%2C+I+want+to+proceed+even+if+it+takes+some+time&selectedInterval=-1&selectedTimeFrameInterval=0&_setFromHour=&from=Sat+Sep+17+00%3A00%3A00+CEST+2016&fromHour=0%3A00&_setToHour=&to=Mon+Sep+19+00%3A00%3A00+CEST+2016&toHour=23%3A59&selectedFolder=18&selectedPages=27&selectedPages=21&selectedPages=24&selectedPages=37&selectedPages=18&selectedPages=25&selectedPages=29&selectedPages=19&selectedPages=10&selectedPages=20&selectedPages=14&selectedPages=33&selectedPages=2&selectedPages=3&selectedPages=4&selectedPages=34&selectedPages=23&selectedPages=13&selectedPages=32&selectedPages=11&selectedPages=35&selectedPages=28&selectedPages=17&selectedPages=7&selectedPages=30&selectedPages=36&selectedPages=16&selectedPages=26&selectedPages=15&selectedPages=22&selectedPages=31&selectedPages=5&selectedPages=8&selectedPages=6&selectedPages=1&selectedPages=12&selectedPages=9&selectedPages=38&_selectedAllMeasuredEvents=&selectedAllMeasuredEvents=on&_selectedAllBrowsers=&selectedAllBrowsers=on&_selectedAllLocations=&selectedAllLocations=on&_selectedAllConnectivityProfiles=&selectedAllConnectivityProfiles=on&_includeNativeConnectivity=&_includeCustomConnectivity=&selectedAggrGroupValuesUnCached=docCompleteTimeInMillisecsUncached&trimBelowLoadTimes=&trimAboveLoadTimes=&trimBelowRequestCounts=&trimAboveRequestCounts=&trimBelowRequestSizes=&trimAboveRequestSizes=&selectedChartType=0
+
+
+
+Hier werden die Datumsangaben falsch formatiert übertragen.
+
+Nämlich so:
+
+{code}
+
+selectedInterval=-1
+
+selectedTimeFrameInterval=0
+
+_setFromHour=
+
+from=Sat+Sep+17+00%3A00%3A00+CEST+2016
+
+fromHour=0%3A00
+
+_setToHour=
+
+to=Mon+Sep+19+00%3A00%3A00+CEST+2016
+
+toHour=23%3A59  
+
+{code}
+
+statt so:
+
+{code}
+
+selectedInterval=-1
+
+selectedTimeFrameInterval=0
+
+_setFromHour=
+
+from=15.09.2016
+
+fromHour=0%3A00
+
+_setToHour=
+
+to=17.09.2016
+
+toHour=23%3A59
+
+{code}
+
+
+
+Meine Vermutung ist, dass das Datum normalerweise per Javascript formatiert wird. Durch den auftretenden JS-Fehler erfolgt diese Formatierung nicht und es wird das falsch formatierte Datum übertragen. "																																																						

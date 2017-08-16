@@ -1,0 +1,11 @@
+Issues with angular material md-toolbar and IE-10	"Header and ipLIst buttons look ugly in IE-10. Probably, because of flex issues in md-toolbar and, maybe, some other components.
+
+
+
+[https://material.angularjs.org/1.0.0/layout/tips] says:
+
+{quote}As you use the Layout features, you may encounter scenarios where the layouts do not render as expected; especially with IE 10 and 11 browsers.
+
+{quote}
+
+See attached  !ie10.png!"		Bug	iteraplan Speedbird	24/Mar/17 3:59 PM	20/Apr/17 9:26 AM																																																																				

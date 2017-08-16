@@ -1,0 +1,25 @@
+H2 und Hibernate - Plugins aktualisieren	"*H2*
+
+Die aktuelle Version ('com.h2database:h2:1.4.186) testen.
+
+Zuerst mit Grails 2.3.7, nach der Migration auch mit der 2.5
+
+
+
+*Hibernate*
+
+hibernat4 testen
+
+Zuerst mit Grails 2.3.7, nach der Migration auch mit der 2.5"		Task	OpenSpeedMonitor	06/Jul/15 11:42 AM	28/Sep/15 5:05 PM														"03/Aug/15 10:12 AM;bwo;Das Hibernate-Plugin wurde auf Version 3.6.10.19 aktualisiert. Die Anwendung startet weiterhin scheinbar fehlerfrei. Lediglich zwei Tests schlagen fehl:
+
+MeasuredValueDaoServiceSpec. testGetUpdateEventsForSpecificMeasuredValues 
+
+DefaultMeasuredEventDaoServiceTests. testGettingEventsForPages 
+
+
+
+Beide benutzen Methoden, die jeweils eine DetachedCriteria erzeugen. Es ist zu prüfen ob es ein Problem in der aktuellen Hibernate Version und DetachedCriterias in Unit-Tests existiert."	"28/Sep/15 5:05 PM;nku;Die beiden Tests wurden auskommentiert. Es gibt einen Bug in GORM, der aktuell dazu führt, dass Criterias mit 'in'-Syntax keine results liefern:
+
+https://github.com/grails/grails-core/issues/9279#issuecomment-143683143
+
+Soll in der Grails-Version 2.5.2 wieder funktionieren."																																																					

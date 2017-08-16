@@ -1,0 +1,6 @@
+Excel Export: Try to introduce "Contents" page	Try to introduce "Contents" page: Jump from "Intro" page to selected sheet.		New Feature	iteraplan PO	15/May/12 1:19 PM	22/May/12 2:31 PM					excel									"16/May/12 10:51 AM;tse;I saw the intermediate results - very nice!
+
+Please find attached an idea for the layout of the Introduction page."	"16/May/12 10:52 AM;tse;1. Headings for Type, Relationships, Enumerations
+2. second column for relationships: Give full names
+3. column widths
+4. logo size"	16/May/12 10:55 AM;tse;Another idea (minor priority - just nice to have): In relationship column, add a link in the header line (e.g. line 7) so that you can jump directly to the related sheet.	18/May/12 12:22 PM;sry;just noticed that the Logo PNG is inserted twice into the workbook - intentionally? lines 216 & 221 in ExcelTemplateGeneratorServiceImpl	18/May/12 1:16 PM;lci;It was a complete oversight. Thanks for noticing :)	22/May/12 2:31 PM;tse;ok																																																	

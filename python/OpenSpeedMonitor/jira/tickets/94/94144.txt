@@ -1,0 +1,13 @@
+First keystroke in quicksearch in filter dialogue swallowed 	"When using the filter dialogue in the new client, click in the relation search field at the bottom and begin to type.
+
+
+
+As is:
+
+The first keystroke is swallowed, only the second keystroke is displayed and used for searching the options.
+
+
+
+Should be:
+
+The first keystroke should not be swallowed."		Bug	iteraplan Quickfox	25/Aug/16 5:20 PM	01/Sep/16 8:30 AM																																																																				

@@ -1,0 +1,37 @@
+New combined filters ("combinedFilter_2") in IFD	"*Summary:*
+
+Integrate new combined filter and filterDialog in the Information Flow Diagram.
+
+This includes:
+
+* Initialization of combinedFilter object (when opening IFD by pasting URI, when opening IFD by UI, when changing nodetype (?))
+
+* Including the new filterDialog in IFD's toolArea.
+
+* Adaptation of the transferAction methods. 
+
+* Writing the combinedFilter in the URI
+
+* Application of the combinedFilter
+
+
+
+
+
+*Affected js-files:*
+
+* ifdConfiguration (mainly)
+
+* ifdToolAreaViewModelBuilder
+
+* ifdController (maybe ""transferAction""?)
+
+* ifdLegendBuilder (include new LegendFilterBuilder)
+
+
+
+* Some file(s) in the folder ifdContent. Most likely: ifdDataService.js
+
+
+
+Ask [~mbr] for his status in the Landscape Diagram."		New Feature	iteraplan PO	20/Jan/16 10:31 AM	13/Apr/16 2:59 PM																																																																				

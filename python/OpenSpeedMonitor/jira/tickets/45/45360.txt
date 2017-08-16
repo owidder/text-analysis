@@ -1,0 +1,33 @@
+E-mail subscription: improve usability	"see ITERAPLAN-477.
+
+Bugs:
+ * NullPointerException when adding and deleting some functional relations (Fachliche Zuordnungen) of a subscribed element (e.g. business units) at the same time (see stack trace below).
+ * An error shows after pressing save, when I subscribe to an element while editing it (in the edit-mode) (see error message below).
+
+Improvements:
+
+ * Mail-Exceptions should be catched (org.springframework.mail.MailSendException, etc.) and logged properly.
+ * The usernames in the list of subscribed users should be clickable.
+ * Create a view where one can see a list of elements a user is subscribed to.
+ * Fix the signature delimiter in the generated eMail (use ""-- "" instead of ""--"" - note the additional whitespace in the correct delimiter) (see http://en.wikipedia.org/wiki/Signature_block).
+
+Documentation:
+
+ * Fix the following sentence in the documentation: ""email address ?(to be used for notification purposes) is""
+ * Make clear that subscribers to the list of elements only get notified when an element is added or deleted, not when it changes.
+ * Make clear that subscribers to hierarchical elements don't get notified on sub-element changes.
+
+
+"		Improvement	iteraplan PO	31/Jan/12 2:27 PM	16/Apr/12 11:09 AM					subscriptions									"12/Apr/12 12:14 AM;sry;Documentation has been updated and improved: https://www.iteraplan.de/wiki/display/iteraplan/Watch+Element+Changes+with+Email I've also changed the page title -- better ideas, anyone?
+
+* The NullPointerException has been fixed.
+* The error in save mode cannot happen any longer, as the new UI doesn't offer _Watch_ in edit mode.
+* Exception handling looked proper already -- nothing changed.
+* The list of watched elements is now always visible in the left-hand accordion, below context actions.
+* The sig delimiter has been fixed.
+* All emails do now consistently show links to the changed elements; this was inconsistent before, as the base URI was not always available for generating links."	"12/Apr/12 12:28 AM;sry;I see little value in making the watching users clickable in the list. At the moment, there is simply too little information about a user stored in his profile to be really useful for other users.
+
+Therefore, I belive this ticket is completed."	"16/Apr/12 11:09 AM;isc;The list of watched elements shows new subscribed building blocks only after refresh. In addition, it contains only building blocks but no subscribed list of elements of one building block type.
+
+Otherwise everything is fine.
+"																																																				

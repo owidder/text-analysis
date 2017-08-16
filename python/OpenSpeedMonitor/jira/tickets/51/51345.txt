@@ -1,0 +1,27 @@
+View for Toolarea Directive	"*Summary:*
+
+Create a DropDown/Menu Directive. This directive displays a menu structure of items. The menu can have nested submenus. The menu items are provided by the ToolAreaViewModelBuilder.
+
+
+
+*Architecture:*
+
+This directive inherits from the ToolAreaDirective (by ""require"").
+
+The template works with a generic structure of menu items (with the help of ""ng-repeat"" and ""ng-style"").
+
+Some menu css properties have to be manipulated by javascript (nested submenus).
+
+
+
+*Interaction:*
+
+This directive deals with onClick-events on its menu items. The functions for these events are provided by ToolAreaViewModelBuilder. On click: this directive hands over an event (incl. function) to the ToolAreaController.
+
+"	47838	Sub-task	iteraplan PO	20/Jul/15 10:40 AM	04/Aug/15 8:28 AM					ifd	template								"04/Aug/15 8:28 AM;msr;Functional test in IE, FF and Chrome worked. Code is fine.
+
+
+
+Open TODOs: 
+
+Find fitting items"																																																						

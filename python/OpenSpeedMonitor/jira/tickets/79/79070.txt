@@ -1,0 +1,43 @@
+Create architecture documentation	Create architecture documentation for MPD		New Feature	iteraplan PO	04/Apr/16 2:38 PM	23/May/16 3:00 PM														"23/May/16 3:00 PM;wfr;Ideas for next architecture document:
+
+
+
+1) top-down refinement with external and internal interfaces
+
+
+
+here: 
+
+MPD view is shared stuff plus diagram plus legend 
+
+(picture for that: big box with shared three inner boxes)
+
+diagram is ...
+
+legend is...
+
+
+
+
+
+2) tabular Class Reponsiibility Collaboration (CRC) card structure
+
+
+
+as is now: bullet list
+
+to be: two columns, 
+
+left: responsibility as a sentence
+
+right: list of collaborators (other classes or similar things)
+
+
+
+
+
+
+
+
+
+"																																																						

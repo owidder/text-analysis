@@ -1,0 +1,29 @@
+LSD: Coloring isnt shown for multivalue enumeration values	"*summary:*
+
+Coloring isnt shown for multivalue enumeration values in lsd
+
+
+
+*reproduce:*
+
+*set complexity to multivalue
+
+*set one informationsystem a high and an average value
+
+*open lsd in new client
+
+*context menu: coloring by -> show complexity as color
+
+
+
+
+
+*actually result:*
+
+*all elements have undefined color
+
+
+
+*expected:*
+
+*all elements have different colors as shown in the legend"		Bug	iteraplan PO	21/Aug/15 1:45 PM	10/Sep/15 1:37 PM					color	enum	lsd	multivalue																																																												

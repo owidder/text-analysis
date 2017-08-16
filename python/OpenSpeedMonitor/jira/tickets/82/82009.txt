@@ -1,0 +1,7 @@
+LSD. Colorpicker occurs by click within the legend	"* Open Landscape Diagram
+
+* Go to the legend and click somewhere within the legend
+
+
+
+Colorpicker always occurs"		Bug	iteraplan PO	26/Apr/16 9:00 AM	26/Apr/16 9:49 AM																																																																				

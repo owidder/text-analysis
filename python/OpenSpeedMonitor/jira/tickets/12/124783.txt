@@ -1,0 +1,25 @@
+Reset view button breaks whole list in Custom Dashboard	"Steps:
+
+ # Open saved diagram list in Custom Dashboard.
+
+ # Press Reset View button.
+
+
+
+Actual:
+
+
+
+List data disappeared completely.
+
+
+
+Expected:
+
+
+
+Data is present. Remove the Reset-View button completely for the diagram-list of saved diagram queries (Screenshot attached)
+
+
+
+ "		Bug	iteraplan Speedbird	19/Jun/17 5:05 PM	30/Jun/17 3:44 PM														30/Jun/17 3:44 PM;mash;Looks like it was removed in scope of another ticket																																																						

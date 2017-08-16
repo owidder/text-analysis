@@ -1,0 +1,13 @@
+Define recommendations for thread and connection pool parameters	"For various installation setups, define recommendations for Tomcat's ""max(Spare)Threads"" and DBCP's ""maxActive/maxIdle"" parameters in iteraplan.
+
+Background: ITERAPLAN-1727
+
+Because configuration of thread/ connection pool behavior has an effect on all installed webapps (iteraplan and others), we should be able to give a recommendation.
+
+Possible setups are:
+1,) single instance of iteraplan
+2.) single instance of iteraplan and other webapp(s)
+3.) multiple instances of iteraplan
+4.) multiple instances of iteraplan and other webapp(s)
+
+The recommendation should be included in the iteraplan Installation Guide."		Task	iteraplan PO	16/Sep/13 3:41 PM	30/Dec/15 3:19 PM					configuration	performance																																																														

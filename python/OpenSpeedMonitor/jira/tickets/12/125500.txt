@@ -1,0 +1,17 @@
+LIST VIEW: Add Tooltips in Column "Actions"	"In the List View, users have the possibility to use the Actions-column for quick functionality. For subscribe and copy there are tooltips, when the mouse is hovering over the icons.
+
+
+
+ToDo: Please add the tooltips for:
+
+ 1. ""Navigator/Navigator"" and
+
+ 2. ""Delete/Löschen""
+
+ 3. All our tooltips should begin with capital letters: Please change this for
+
+ ""Copy/Kopieren""
+
+
+
+4. Make sure your changes are made in all tables (e.g. Roles&Permissions (and maybe elsewhere?), too."		Improvement	iteraplan Speedbird	27/Jun/17 7:33 AM	20/Jul/17 9:59 AM																																																																				

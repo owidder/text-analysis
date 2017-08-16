@@ -1,0 +1,7 @@
+Action column not visible on Saved Queries page	"Navigate to ""Saved Queries"", *reset view and refresh the page*.
+
+Result - Actions column is not visible.
+
+When you Reset View, the column becomes visible."		Bug	iteraplan Speedbird	01/Feb/17 10:12 AM	14/Feb/17 1:16 PM														01/Feb/17 12:59 PM;mash;Looks like revision 5789 created this issue	01/Feb/17 3:28 PM;roia;Then we can ask [~mse] to look at his changes in scope of IPTT-354	"02/Feb/17 2:04 PM;mada;Review done
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-325#CFR-38517"	13/Feb/17 9:37 AM;sfe;In current trunk (revision 5975) the action column in saved queries list is not visible.																																																			

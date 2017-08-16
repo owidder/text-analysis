@@ -1,0 +1,43 @@
+Checkpoint/Reference -- All Building Block types as inner elements	"*Summary:*
+Implement all Building Block types as inner elements.
+
+*As-Is:*
+Only Information Systems exists as inner element.
+
+*To-Be:*
+All Building Block types can be selected as inner elements.
+
+*Affected parts of the system:*
+* Landscape diagram
+
+*Approach:* 
+The building block type of the inner elements can be changed via the context menu entry ""Change inner element"" (to be created). If the axis-elements are directly connected to the inner element, the axis-elements remain unchanged. If one of the axis-element is not connected to the inner element, use the default axis-elements:
+
+* -(1) Inner element: Information System, Axis elements: Technical Component, Infrastructure Element-
+* (2) Inner element: Technical Component , Axis elements: Information System, Infrastructure Element
+* (3) Inner element: Infrastructure Element , Axis elements: Information System, Technical Component
+* -(4) Inner element: Interface , Axis elements: Information System, Business Object-
+   -Caution: spec uses ""classic schema"", not ""elastic metamodel""; interface has no direct connection to IS-
+   -corrected to: Interface by Flow and TC-
+* (5) Inner element: Business Object , Axis elements: Information System, Business Domain
+* (6) Inner element: Business Function , Axis elements: Information System, Business Object
+* (7) Inner element: Business Domain , Axis elements: Business Object, Business Process
+* (8) Inner element: Business Process , Axis elements: Business Domain, Information System
+* (9) Inner element: Business Unit , Axis elements: Business Domain, Information System
+* (10) Inner element: Product , Axis elements: Business Domain, Information System   
+
+Numbers (1) to (10) for reference in tests. Do not change this numbering.
+
+*Acceptance Criteria:*
+The user opens the landscape diagram with Information System as inner and Technical Component and Infrastructure Elements as axis elements.
+The user uses secondary click on an Information System.
+The context menu opens immediately.
+The user selects ""Change inner element"".
+All Building Block types (except for Architectural Domain, Information System Domain and Project) are offered in a second level context menu.
+The user selects Business Object.
+The context menu disappears immediately and the diagram is updated accordingly.
+
+This works for all possible inner elements independently of any filtering, coloring, etc. 
+"		New Feature	iteraplan PO	26/Jan/15 8:50 AM	19/Mar/15 2:12 PM					buildingblock	landscape								"21/Apr/15 9:17 AM;msr;(1) Default configuration is now:
+Content element: Information System, Axis elements: Technical Component, Information System Domain"	"21/Apr/15 4:20 PM;msr;(4) Default configuration is now:
+ Inner element: Interface , Axis elements: Information System 1, Information System 2"																																																					

@@ -1,0 +1,34 @@
+login requested for change to interactive client after SSO in classic client	Are there any additional Directory Access permissions necessary for successful Change from classic to interactive Client?		Technical question	iteraplan Support	01/Sep/16 5:01 PM	19/Sep/16 1:44 PM														"01/Sep/16 5:01 PM;erich.wohnig@huk-coburg.de;
+
+!interactive client_additional permissions.PNG|thumbnail!"	"06/Sep/16 8:47 AM;cst;Dear Sir or Madam,
+
+thank you for your enquiry.
+
+For this problem, the actual ticket is IPS-152: 
+
+https://iteraweb.iteratec.de/jira/browse/IPS-152 
+
+Yesterday I called Mr. Deichmüller and we analysed the problem.
+When the Ticket IPS-52 is resolved, I close this Ticket too. 
+
+Greetings, 
+
+Christoph Stangl - iteraplan Support
+
+"	19/Sep/16 1:37 PM;erich.wohnig@huk-coburg.de;How can I change the state of my request? Do expect a comment by me or do I need additional permissions as creator for changing to state "closed"?	"19/Sep/16 1:37 PM;erich.wohnig@huk-coburg.de;
+
+!iteraplan support IPS-155 pending closure.PNG|thumbnail!"	"19/Sep/16 1:39 PM;erich.wohnig@huk-coburg.de;
+
+!iteraplan support IPS-155 pending closure.jpg|thumbnail!"	"19/Sep/16 1:44 PM;cst;You must have a additonal permission to close the ticket. 
+
+
+
+Tank you for your answer, I closed the ticket. 
+
+
+
+Greetings,
+
+
+
+Christoph Stangl - iteraplan Support "																																																	

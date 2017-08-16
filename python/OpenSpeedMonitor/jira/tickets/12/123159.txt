@@ -1,0 +1,39 @@
+Proper error handling in ipPropertyEditor component	"There was some temporary patch implemented in scope of https://iteraweb.iteratec.de/jira/browse/IPTS-772
+
+
+
+ The code in this.apply method:
+
+{code:java}
+
+updateResult.then(
+
+    function () {
+
+        ...
+
+    },
+
+    function (error) {
+
+        if (!!error) {
+
+            console.warn(""update error"", error);
+
+            alertService('danger', $translate.instant(error.message), 10);
+
+            that.showEditor();
+
+        }
+
+    }
+
+);
+
+{code}
+
+The error handling here is not correct. It will not process the errors which do not have expected JSON body with ""message"" property. E.g., server timeout, 500 error with HTML body, etc. Also, if there's an empty error (no idea when it is possible), but if it is, we still need to show some message yo user.
+
+
+
+I'd suggest to check if AlertErrorService can handle this situation, but I have no background, when the error can be falsy. Probably [~anhv] khows better."		Bug	iteraplan PO	01/Jun/17 1:29 PM	16/Jun/17 5:17 PM																																																																				

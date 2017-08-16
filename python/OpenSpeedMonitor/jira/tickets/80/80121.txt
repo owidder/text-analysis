@@ -1,0 +1,1 @@
+Authentifizierung des Zap-Spiders reaktivieren/testen		78821	Sub-task	secureCodeBox	12/Apr/16 2:36 PM	21/Apr/16 2:27 PM														21/Apr/16 2:27 PM;kkt;Die alte Lösung wurde NICHT reaktiviert, weil an anderer Ansatz gewählt wurde. Somit beschränkte sich dieser Task auf das Testen.																																																						

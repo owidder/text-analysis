@@ -1,0 +1,5 @@
+Job-Tags einheitlich anzeigen	"Getestet im Chrome und angemeldet als admin.
+
+
+
+Mal werden die Tags eines Job neben dem Jobnamen und mal darunter angezeigt. Besser wäre, wenn es einheitlich angezeigt wird. Beispielsweise nur noch unterhalb des Jobnamens. Vielleicht sogar noch unter dem Skriptnamen!"		Improvement	OpenSpeedMonitor	19/Feb/16 10:54 AM	25/Feb/16 4:24 PM																																																																				

@@ -1,0 +1,3 @@
+Einzel-Ergebnis-Seite schränkt nicht korrekt auf Pages ein	"Mail von Mirko Ebert:
+Wenn ich mir im ISM Einzelergebnisse geben lasse, sehe ich alle Messungen obwohl ich hier auf HP eingeschränkt habe.
+"		Bug	OpenSpeedMonitor	30/Apr/14 5:14 PM	23/May/16 3:11 PM														15/Apr/15 4:20 PM;rkr;Problem läßt sich nicht reproduzieren - ist das noch akut?																																																						

@@ -1,0 +1,15 @@
+Move Spring Security Extentions into iteraplan svn	"Move the spring security extensions project to the iteraplan svn and adjust related jenkins jobs.
+Add it as one of the ""iteraplan helpers"" to https://iteraplan.iteratec.de/svn/iteraplan-helper
+
+Close down the SSE project on sourceforge with a friendly goodbye message.
+
+##########
+_old:_
+Move the spring security extensions into the main iteraplan source tree (maybe into a new source folder, or in an existing one) and replace in iturm the library dependency with the jar file from the enclosing iteraplan project.
+
+Note that an ""upward"" dependency on a product of an enclosing project is a bit of a workaround, but far cleaner than ""build locally, copy war, commit"".
+
+After that, the SSE is no longer depended on as a separate project and/or JAR.
+
+Close down the SSE project with a friendly goodbye message."		Improvement	iteraplan PO	12/May/14 11:34 AM	27/Apr/15 9:55 AM					extension	security								05/Nov/14 3:04 PM;gph;Because SSE is used for iteraplan and iturm, it will (probably) be integrated as maven module. Therefore, ITERAPLAN-2718 should be done first.	"25/Apr/15 2:41 PM;sfe;* Jenkins Job https://iteraplan.iteratec.de/hudson/job/Spring%20Security%20Extensions%20Library/ adjusted
+* https://iteraweb.iteratec.de/confluence/display/ITPL/iteraplan-Hilfsprojekte updated"																																																					

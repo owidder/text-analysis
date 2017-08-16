@@ -1,0 +1,15 @@
+Problems while async. loading of translation map	"*How to reproduce*
+
+* go to LSD
+
+* change language to german
+
+* click on content element, tool area -> new filter (to edit combined filter)
+
+* names of relationshipends are not translated!
+
+
+
+Problem probably occurs because translation map loading  is still not ready, when combinedFilter2 tries to translate keys. 
+
+route change and diagram configuration creating should happen after language is actualy changed (after map is loaded)"		Bug	iteraplan PO	11/Feb/16 3:58 PM	21/Apr/17 4:58 PM					translate																																																															

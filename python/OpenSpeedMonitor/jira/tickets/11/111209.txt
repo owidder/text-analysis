@@ -1,0 +1,37 @@
+CCD: Header: Numeric range calculation does not work together with numeric filter	"*Summary:*
+
+CCD: Header: Numeric range calculation does not work together with numeric filter
+
+Please adapt the numeric range calculation in the header.
+
+
+
+*Reproduce:*
+
+* Open the default CCD
+
+* Set Costs in the header and Projects in the rows
+
+* Filter the header by ""Costs between 0 to 100""
+
+
+
+*Actual:*
+
+* Still all projects are shown because the columns/ranges in the header are recalculated and all projects with big costs are shown in the column "">=50""
+
+
+
+*Expected:*
+
+* The projects with costs > 100 are not shown
+
+
+
+*Solution:*
+
+* Re-implement the ranges-algorithm which creates the column headers:
+
+** The intial implementation is ok
+
+** If a numeric filter is active in the header, do explictely ignore this range and do not show it in the header"		Bug	iteraplan PO	07/Feb/17 4:02 PM	13/Feb/17 11:43 AM														13/Feb/17 11:43 AM;dmkh;Review is done																																																						

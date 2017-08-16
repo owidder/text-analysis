@@ -1,0 +1,3 @@
+Adjust definitions	"Delete the following sentence from the building block definitions in all languages (and in all affected customizations): ""Geschäftsobjekte werden von Geschäftsprozessen verwendet und können durch Informationsobjekte realisiert werden.""
+
+"		Bug	iteraplan PO	27/Nov/14 1:48 PM	03/Dec/14 11:09 AM																																																																				

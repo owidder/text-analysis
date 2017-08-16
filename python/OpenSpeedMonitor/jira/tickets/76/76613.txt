@@ -1,0 +1,15 @@
+Add coloring	"Add coloring by attributes to outer and inner type elements.
+
+* Tool area entry
+
+* Actual coloring in pipeline
+
+* Legend entry
+
+
+
+Refactor and use according code from IFD.
+
+
+
++ numeric coloring"		New Feature	iteraplan PO	10/Mar/16 9:44 AM	26/Apr/16 1:14 PM																																																																				

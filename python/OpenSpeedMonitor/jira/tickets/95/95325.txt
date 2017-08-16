@@ -1,0 +1,45 @@
+Implement basic functionality of Pie Chart	"Implement basic functionality of Pie Chart.
+
+The sample, which can be used: https://gojs.net/latest/samples/dynamicPieChart.html
+
+
+
+* Default Configuration:
+
+** Building Block Type: Information System
+
+** Colored by Status. 
+
+Later by default it should be colored by the first attribute from the attribute list (depending on language). See tickets IPTS-156 and IPTS-157
+
+
+
+* Requirements for diagram
+
+** Show pie chart in the top left corner of the diagram area
+
+** -Automatically zoom to fit to the screen. No zooming by the user needed. Maybe a maximum zoom factor would be good, if the user has a very large screen.-
+
+** Loading indicator will be shown
+
+** Toolarea exists without any functionality
+
+** Legend shows actual configuration
+
+** Url: Save configuration in url
+
+** Use UserSettingsService to read and write user settings
+
+
+
+* Requirements for pie chart
+
+** No labels are shown. 
+
+Later by default labels should be shown. See tickets IPTS-158 and IPTS-159
+
+** There is no borderline for pie chart itself
+
+** There is a separator betwenn the segments, 1 pixel, background color. (cp. portfolio diagram)"		New Feature	iteraplan Speedbird	06/Sep/16 11:45 AM	28/Sep/16 8:47 AM														"26/Sep/16 3:44 PM;dmkh;??Automatically zoom to fit to the screen. No zooming by the user needed. Maybe a maximum zoom factor would be good, if the user has a very large screen??
+
+No zooming, just calculating size of diagram according to the user's screen."	27/Sep/16 2:37 PM;roia;[~dmkh] I've made some optimizing refactoring (mostly in the PcdDataService) in revision 4469. Please review if you don't mind them. Also I've left some parts of code commented to be able to compare new implementation with the previous one.	27/Sep/16 3:52 PM;dmkh;[~roia], thanks! Everything looks now even better, committed my changes in 4476 and 4487.																																																				

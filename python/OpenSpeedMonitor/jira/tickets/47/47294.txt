@@ -1,0 +1,10 @@
+Diagram proportions 	"Steps to Reproduce: 
+1. Go to NCD page
+2. Use  Interface as outer type and Information System as inner type
+
+Actual:  Diagram displayed with too much width
+Expected: What is the expected behavior?
+
+"		Bug	iteraplan PO	15/Jan/15 4:36 PM	21/Jan/15 6:00 PM														"21/Jan/15 6:00 PM;dasm;Issues with diagram's width was fixed (revision: 527)
+
+Comments: For some preview screen (for printing) the size of diagram doesn't change as expected (to A4 format). We can't fix this issue (we discussed with Alex). But from our side everything is good."																																																						

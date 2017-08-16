@@ -1,0 +1,23 @@
+Extend metamodel for Cluster Diagram	"1. Extend metamodel: getAllBuildingBlockTypesRelatedTo(attribute)
+
+Loop through all Building Block Types and save the resulting map locally. If this map already exists (is cached), use the existing one.
+
+
+
+2. GetListOfAllAttributes()
+
+Use same caching mechanism as above"		New Feature	iteraplan Speedbird	26/Aug/16 10:47 AM	02/Sep/16 1:24 PM														26/Aug/16 10:48 AM;msr;Ticket already discussed on 26th August	"02/Sep/16 11:38 AM;roia;Review: https://iteraweb.iteratec.de/fisheye/cru/IP-25
+
+Suggestion after review: also add method {{getAllBuildingBlockTypeNamesRelatedTo()}}, which would return already cached array of building block names for an attribute.
+
+Suggestion implemented in revision 4235"	"02/Sep/16 11:40 AM;roia;{quote}
+
+getAllBuildingBlockTypesRelatedTo...
+
+save the resulting map locally. If this map already exists (is cached), use the existing one.
+
+{quote}
+
+-- currently the result is not cached."	"02/Sep/16 12:12 PM;ants;Revision 4237.
+
+Changes made according to review comments."																																																			

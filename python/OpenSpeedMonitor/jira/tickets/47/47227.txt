@@ -1,0 +1,59 @@
+All Building Block types as outer elements	"Analogue story to IPNINE-224 (now for outer elements):
+*Requested by new client B-108 and FKA:*
+
+*Summary:*
+For the existing implementation of the Nesting Cluster Diagram, add the function to use all types of building blocks as outer elements.
+
+*As-Is:*
+Information System Domain and Business Object are available as outer element of the Nesting Cluster Diagram.
+
+*To-be:*
+All standalone Building Block Types are available as outer elements. But no connections are necessary, i.e. only use default inner type. The connections will be implemented with follow-up tickets.
+
+*Affected parts of the system:*
+* Nesting Cluster Diagram
+* Inner boxes
+* Outer boxes
+* Context menu
+* Menu bar (Wolfgang: deferred until we have concept for the menu bar actions. Will be extra ticket)
+
+*UI:*
+In the NCD view, add actions (in context menu and in menu bar) to switch to a different building block type for the outer element.
+
+*Diagram:*
+Structure of the diagram unchanged, but different content.
+
+List of all outer elements and their default inner element:
+The inner types are all direct one-step-connections without any attributes on the relationship.
+
+* Information System Domain (existing) - Information System
+* Business Object (existing) - Business Function
+* Architectural Domain - Technical Component
+* Technical Component - Information System
+* Infrastructure Element - Information System
+* Interface - Technical Component
+* Information System - Technical Component
+* Business Function - Information System
+* Project - Information System
+* Product - Business Domain
+* Business Unit - Business Domain
+* Business Process - Business Domain
+* Business Domain - Business Object
+
+*Acceptance criteria:*
+The user is starting with a Nesting Cluster Diagram (inner element: IS, outer element: ISD)
+The user opens with secondary click the context menu of an outer element.
+The user hovers over ""Change outer element"".
+On the second level a list of available Building Block opens immediately.
+The user selects ""Project"".
+The context menu structure disappears immediately.
+The diagram is updated immediately: All inner elements are still Information Systems. The outer type is now Project.
+The users clicks on the button ""Change outer element"" in the menu bar.
+A list of available Building Block Types opens immediately.
+The user selects ""Information System Domain"" with primary click.
+The menu structure disappears immediately.
+The diagram is updated immediately: All outer elements are now Information System Domains. Information Systems are still the inner elements.
+More general: in every NCD with outer element type X, the user can switch to any other element type Y.
+For each type Y, the NCD will have the specified default inner type intially.
+When switching the outer type, the inner type is unchanged if it is connected to the new inner type."		New Feature	iteraplan PO	04/Dec/14 1:23 PM	23/Jan/15 2:30 PM					buildingblock	nesting								"23/Jan/15 2:30 PM;dasm;Verified (revision 538)
+some part of this functionality (about Reset of all already applied coloring/filtering options on outer type is changed) has been implemented by Andrey under Story IP9-217 (see your 2nd comment )"																																																						

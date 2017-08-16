@@ -1,0 +1,161 @@
+Excel Template is very large	"When exporting the Excel Template of an iteraplan installation with our sample data, the resulting xls file is larger than 7 MB.
+Please investigate why it is that large and whether something can be done about that.
+
+Doesn't seem to be the case in iteraplan 4.0"		Task	iteraplan PO	11/Jan/13 9:56 AM	18/Jul/13 6:10 PM					excel	export	template							"15/Apr/13 10:03 AM;jme@iteratec.de;The generated Excel-Template-File contains several sheets with 3000 (DEFAULT_DATA_SIZE) empty (means no content) but formatted rows (e.g. borders, dropdown-boxes, ...)
+These rows have to be stored explicitely in Excel and are in that way responsible for the size of the template file.
+
+If you remove these empty, bordered rows the size of the template-file is reduced to 150 kb.
+"	"15/Apr/13 2:18 PM;jme@iteratec.de;A full Excel export of a model is done in two steps:
+1. Export the metamodel (a.k.a. template file)
+2. Fill the template file with the model data
+
+Unfortunately there is no formatig done in the second step. It relies on the preformated cells of the template file (DEFAULT_DATA_SIZE).
+
+So in order to reduce the size of the template file, the formatting of the data of the model had to be done in step 2 (or afterwards). 
+The effort for the refactoring is not small."	"09/Jul/13 4:44 PM;jme@iteratec.de;Now the template file is created with 10 empty, formated rows.
+
+During the export of the model the rows are formated in conjunction of the number of rows to be exported.
+10 empty, formated rows are always appended.
+"	"09/Jul/13 4:47 PM;jme@iteratec.de;xlsx template is now 97 kb (used to be 1,8 MB).
+xls template is 156 kb (used to be 7,7 MB)"	"12/Jul/13 8:41 PM;jme@iteratec.de;Created two Excel-Files with 300 rows for each BB (each file).
+
+The Excel-Files are attached to this ticket, as well as the resulting SQL-Script (so you can bypass the import-process if you have a MySQL-Database running)."	12/Jul/13 8:42 PM;jme@iteratec.de;300 BB	12/Jul/13 8:42 PM;jme@iteratec.de;Another 300 BB	"12/Jul/13 9:31 PM;jme@iteratec.de;Measured time for the export with the given test data set. 
+
+Environment: 
+Dell Latitude E6420 Laptop with SSD, 8 GB RAM, Windows 7 64 Bit 
+
+Browser: Google Chrome 
+
+Measurement: 
+The measurement begins with the klick on the export button. 
+The measurement ends when Chrome shows the file in the bottom bar. 
+
+iteraplan is running on a local Tomcat (6.0.36) (https enabled). 
+
+iteraplan version: Revision 20817 
+(this means after changing the way the exported files are formatted) 
+
+XLS: 
+Template export 
+1. 2,5 s 
+2. 1,4 s 
+3. 1,1 s 
+
+Model export 
+1. 2,6 s 
+2. 1,8 s 
+3. 1,8 s 
+
+
+XLSX: 
+Template export 
+1. 2,1 s 
+2. 0,8 s 
+3. 0,8 s 
+
+Model export: 
+1. 7,0 s 
+2. 5,7 s 
+3. 4,1 s 
+
+There seems to be some cache effective (even though the browser cache was cleared after each request). 
+At most the first measurement of each type is accurate."	"12/Jul/13 9:50 PM;jme@iteratec.de;*iteraplan version: Revision 20817*
+(this means after changing the way the exported files are formatted)
+
+
+JMeter: 2.5.1
+
+
+Test settings:
+10 Threads for Template download, 4 Threads for FullModel download
+Ramp up period 1 sec
+Loop count: 1
+
+
+Environment: 
+Dell Latitude E6420 Laptop with SSD, 8 GB RAM, Windows 7 64 Bit
+
+iteraplan is running on a local Tomcat (6.0.36) (https).
+
+
+XLSX: 
+
+||Label||Samples||Average||Min||Max||Std. Dev.||Error %||Throughput||KB/sec||Avg. Bytes||
+|Request Excel 2007 Template|	10	|841	|341	|1402	|315.3872381692066|	0.0	|6.108735491753207|	499.4249198228467|	83718.0|
+|Request Excel 2007 FullModel	|4	|10376	|9520	|11282	|853.0938913742144	|0.0	|0.3462304163420757	|234.3922438976889	|693231.0|
+
+XLS:
+
+||Label||Samples||Average||Min||Max||Std. Dev.||Error %||Throughput||KB/sec||Avg. Bytes||
+|Request Excel 2003 Template	|10	|380	|125	|827	|187.7646066222279	|0.0	|9.474182851729038	|1291.2645073424915	|139564.0|
+|Request Excel 2007 FullModel	|4	|4717	|3525	|5704	|804.0560847975718	|0.0	|0.7012622720897616	|1771.240576788219	|2586408.0|"	"16/Jul/13 10:08 AM;jme@iteratec.de;*iteraplan version: 3.1-RC1*
+(this means before changing the way the exported files are formatted)
+
+
+JMeter: 2.5.1
+
+
+Test settings:
+different thread settings due to memory problems
+Ramp up period 1 sec
+Loop count: 1
+
+
+Environment: 
+Dell Latitude E6420 Laptop with SSD, 8 GB RAM, Windows 7 64 Bit
+
+iteraplan is running on a local Tomcat (7.0.39) (http).
+
+
+XLSX: 
+
+||Label||Samples||Average||Min||Max||Std. Dev.||Error %||Throughput||KB/sec||Avg. Bytes||
+|Request Excel 2007 Template	|1	|8112	|8112	|8112	|0.0	|0.0	|0.1232741617357002	|219.14173254129685	|1820342.0|
+|Request Excel 2007 FullModel	|2	|182917	|179211	|186624	|3706.5	|0.0	|0.010685473099321474	|11.158305283966449	|1069312.0|
+
+XLS:
+
+||Label||Samples||Average||Min||Max||Std. Dev.||Error %||Throughput||KB/sec||Avg. Bytes||
+|Request Excel 2003 Template	|10	|9928	|7019	|16276	|3015.1223010020685	|0.0	|0.5319714863283328	|3928.7652775561232	|7562540.0|
+|Request Excel 2003 FullModel	|4	|13007	|11575	|13742	|847.7981407740878	|0.0	|0.288704438830747	|2420.437116564417	|8585000.0|"	"16/Jul/13 10:53 AM;jme@iteratec.de;h2.Summary
+
+h3.Template
+
+h4.XLSX
+
+||Way of formatting||Average time to create (s)||
+|pre formatted| 8,1|
+|dynamically formatted|0,8|
+
+h4.XLS
+
+||Way of formatting||Average time to create (s)||
+|pre formatted| 9,9|
+|dynamically formatted|0,4|
+
+h3.FullModel
+
+h4.XLSX
+
+||Way of formatting||Average time to create (s)||
+|pre formatted| 182,9|
+|dynamically formatted|10,4|
+
+h4.XLS
+
+||Way of formatting||Average time to create (s)||
+|pre formatted| 13|
+|dynamically formatted|4,7|"	16/Jul/13 12:09 PM;sry;Wow, these are excellent results!! Thanks a lot!	"18/Jul/13 3:06 PM;jme@iteratec.de;SQL-Export after the import of the two Excel-files (PerformanceTest).
+Can be used to directly setup a MySQL-Database. No need to do the import again :)"	18/Jul/13 4:55 PM;lba;Had some problems with the sql-dump, fixed the sql file and added it	"18/Jul/13 4:56 PM;lba;Working version of the sql dump
+"	"18/Jul/13 6:10 PM;lba;Tested with DELL PRECISION 4500 with HDD 4GB RAM (95% Memory Load)
+
+iteraplan is running on a local Tomcat (7.0.39) (https).
+
+||Label||Samples||Average||Min||Max||Std. Dev.||Error %||Throughput||KB/sec||Avg. Bytes||
+|Request Excel 2007 FullModell|4|16058|15990|16234| 101,72| 0,00%|14,4/min|161,95|692595,0|
+|Request Excel 2007 Template|10|5210|2561|7718|2067,91|0,00%|1,4/sec|114,30|83629,0|
+|Request Excel 2003 Fullmodell|4|8397|8027|8750|281.85|0,00%|27,4min|1154.24|2588456.0|
+|Request Excel 2003 Template|10|1895|1642|2215|176.20|0,00%|3.7/sec|500.16|139564.0|
+
+
+Size of Excel Files is significantly smaller."	11/Oct/13 3:10 PM;sry;Works great. Just added some more javadoc and made a couple of mini-refactorings																																						

@@ -1,0 +1,53 @@
+4 additional Building Block types as inner elements	"For the existing implemenation of the Nesting Cluster Diagram,
+add the function to use the 4 additional types of building blocks as inner elements.
+
+As-is: only IS as inner element.
+To-be: The following building block types: 
+
+* Business Object
+* Information System (existing)
+* Interface
+* Technical Component
+* Infrastructure Element
+
+
+UI
+
+In the list of elements view, the action ""as Nesting Cluster Diagram"" is unchanged,
+but it works for above building block types, list see above.
+
+In the NCD view, add actions (in context menu and in menu bar) to switch to a different building block type for the inner element.
+
+
+Diagram
+
+Structure of the diagram unchanged, but different content:
+
+Behavior
+
+If the user switches the inner element type from X to Y in a Nesting Cluster DIagram with outer element type Z, and if Z is connected to Y, then Z is used for the new NCD. The user may change Z later. 
+If Z is not connected, the default outer type for Y is used in the NCD, just as coming form a list view of type Y.
+
+The list of default outer types for inner types will be defined at the beginning of development.
+Default outer types for inner types:
+* Inner type: Business Object - Outer type: Information System
+* Inner type: Information System (existing) - Outer type: Information System Domain
+* Inner type: Interface - Outer type: Information System
+* Inner type: Technical Component - Outer type: Information System
+* Inner type: Infrastructure Element - Outer type: Information System
+
+Acceptance criteria:
+
+In the item list view of Technical Components, the user can click the action ""As NCD"", and the system displays a NCD with the TCs from the list, grouped by IEs.
+
+More general, the user can do this for every list of elements. 
+
+In a NCD, the user can click an action ""use Interfaces as inner elements"", and the diagram updates accordingly.
+
+More general: in every NCD with inner element type X, the user can switch to any other element type Y.
+
+For each type T, the NCD will have the specified default outer type intially.
+
+When switching the inner type, the outer type is unchanged if it is connected to the new inner type.
+
+The solution uses the metamodel information from the REST API."		New Feature	iteraplan PO	04/Nov/14 8:10 AM	09/Dec/14 1:23 PM					buildingblock									26/Nov/14 4:59 PM;msr;As agreed between Sergii and Marcel: Leave all changes to menu bar or context menu bar out of this ticket. Any changes to these bars are capsulated in a new follow-up ticket.																																																						

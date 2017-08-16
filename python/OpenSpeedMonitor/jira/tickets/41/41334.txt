@@ -1,0 +1,689 @@
+Löschen von Jobs funktioniert nicht mehr	"Bitte noch mal testen.
+
+Bei mir trat grade mit der neuen Version ein Fehler auf:
+
+
+
+{code}
+
+/usr/java/jdk1.7.0_55/bin/java -Dgrails.home=/home/nkuhn/.gvm/grails/2.3.7 -Dbase.dir=/home/nkuhn/iteratec/projekte/WPT/ws/iteraSpeedMonitor -Dtools.jar=/usr/java/jdk1.7.0_55/lib/tools.jar -Dgroovy.starter.conf=/home/nkuhn/.gvm/grails/2.3.7/conf/groovy-starter.conf -Xmx768M -Xms768M -XX:MaxPermSize=256m -XX:PermSize=256m -javaagent:/home/nkuhn/.gvm/grails/2.3.7/lib/org.springframework/springloaded/jars/springloaded-1.1.5.RELEASE.jar -noverify -Dspringloaded=profile=grails -Dfile.encoding=UTF-8 -classpath /home/nkuhn/.gvm/grails/2.3.7/lib/org.codehaus.groovy/groovy-all/jars/groovy-all-2.1.9.jar:/home/nkuhn/.gvm/grails/2.3.7/dist/grails-bootstrap-2.3.7.jar org.codehaus.groovy.grails.cli.support.GrailsStarter --main org.codehaus.groovy.grails.cli.GrailsScriptRunner --conf /home/nkuhn/.gvm/grails/2.3.7/conf/groovy-starter.conf ""run-app -plain-output --stacktrace -Dgrails.project.fork.test.debugArgs=-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=51576 -Dgrails.project.fork.run.debugArgs=-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=51576""
+
+|Loading Grails 2.3.7
+
+|Configuring classpath
+
+.
+
+|Environment set to development
+
+.................................
+
+|Packaging Grails application
+
+..
+
+|Compiling 1 source files
+
+........................................................................Error 
+
+|
+
+log4j:ERROR Property missing when configuring log4j: appName
+
+Error |
+
+log4j:ERROR Property missing when configuring log4j: appName
+
+Error |
+
+log4j:ERROR Property missing when configuring log4j: appName
+
+Error |
+
+log4j:ERROR Property missing when configuring log4j: appName
+
+.
+
+|Running Grails application
+
+Listening for transport dt_socket at address: 51576
+
+Connected to the target VM, address: '127.0.0.1:51576', transport: 'socket'
+
+| Error log4j:ERROR Property missing when configuring log4j: appName
+
+| Error log4j:ERROR Property missing when configuring log4j: appName
+
+| Error log4j:ERROR Property missing when configuring log4j: appName
+
+| Error log4j:ERROR Property missing when configuring log4j: appName
+
+Configuring Spring Security Core ...
+
+... finished configuring Spring Security Core
+
+| Using LESS files to generating CSS files!
+
+dynamiccontroller.DynamicControllerManager No destination controller specified in the 'controller' property or 'grails.plugins.dynamicController.mixins' config attribute for SpringControllerMixin, ignoring
+
+dynamiccontroller.DynamicControllerManager No destination controller specified in the 'controller' property or 'grails.plugins.dynamicController.mixins' config attribute for PropertiesControllerMixin, ignoring
+
+| Kickstart found 2 locales usable in the language selector (excluding the default ""locale"" messages.properties).
+
+|Server running. Browse to http://localhost:8080/OpenSpeedMonitor
+
+..
+
+|Compiling 1 source files
+
+.....| Compiling 1 source files
+
+| Compiling 1 source files.
+
+| Compiling 1 source files..
+
+| Compiling 1 source files
+
+| Compiling 1 source files.
+
+| Compiling 1 source files..
+
+Error |
+
+log4j:ERROR Property missing when configuring log4j: appName
+
+Error |
+
+log4j:ERROR Property missing when configuring log4j: appName
+
+Error |
+
+log4j:ERROR Property missing when configuring log4j: appName
+
+Error |
+
+log4j:ERROR Property missing when configuring log4j: appName
+
+| Compiling 1 source files...
+
+.......| Compiling 1 source files....
+
+| Compiling 1 source files.....
+
+| Compiling 1 source files
+
+| Compiling 1 source files.
+
+| Compiling 1 source files..
+
+| Compiling 1 source files
+
+| Compiling 1 source files.
+
+| Compiling 1 source files..
+
+| Compiling 1 source files...
+
+GRAILS-7799: Subtype 'de.iteratec.osm.util.PerformanceLoggingService$$EnhancerBySpringCGLIB$$a84c5df2' of reloadable type de.iteratec.osm.util.PerformanceLoggingService is not reloadable: may not see changes reloaded in this hierarchy (please comment on that jira)
+
+GRAILS-7799: Subtype 'de.iteratec.osm.util.PerformanceLoggingService$$EnhancerBySpringCGLIB$$a84c5df2' of reloadable type de.iteratec.osm.util.PerformanceLoggingService is not reloadable: may not see changes reloaded in this hierarchy (please comment on that jira)
+
+GRAILS-7799: Subtype 'de.iteratec.osm.util.PerformanceLoggingService$$EnhancerBySpringCGLIB$$a84c5df2' of reloadable type de.iteratec.osm.util.PerformanceLoggingService is not reloadable: may not see changes reloaded in this hierarchy (please comment on that jira)
+
+GRAILS-7799: Subtype 'de.iteratec.osm.util.PerformanceLoggingService$$EnhancerBySpringCGLIB$$a84c5df2' of reloadable type de.iteratec.osm.util.PerformanceLoggingService is not reloadable: may not see changes reloaded in this hierarchy (please comment on that jira)
+
+.......| Compiling 1 source files....
+
+| Compiling 1 source files.....
+
+| Compiling 1 source files
+
+| Compiling 1 source files.
+
+| Compiling 1 source files..
+
+| Compiling 1 source files
+
+| Compiling 1 source files.
+
+| Compiling 1 source files..
+
+| Compiling 1 source files...
+
+GRAILS-7799: Subtype 'org.grails.taggable.TaggableService$$EnhancerBySpringCGLIB$$c312808c' of reloadable type org.grails.taggable.TaggableService is not reloadable: may not see changes reloaded in this hierarchy (please comment on that jira)
+
+GRAILS-7799: Subtype 'de.iteratec.osm.measurement.environment.QueueAndJobStatusService$$EnhancerBySpringCGLIB$$4d78ff91' of reloadable type de.iteratec.osm.measurement.environment.QueueAndJobStatusService is not reloadable: may not see changes reloaded in this hierarchy (please comment on that jira)
+
+GRAILS-7799: Subtype 'org.grails.taggable.TaggableService$$EnhancerBySpringCGLIB$$c312808c' of reloadable type org.grails.taggable.TaggableService is not reloadable: may not see changes reloaded in this hierarchy (please comment on that jira)
+
+GRAILS-7799: Subtype 'de.iteratec.osm.measurement.environment.QueueAndJobStatusService$$EnhancerBySpringCGLIB$$4d78ff91' of reloadable type de.iteratec.osm.measurement.environment.QueueAndJobStatusService is not reloadable: may not see changes reloaded in this hierarchy (please comment on that jira)
+
+GRAILS-7799: Subtype 'org.grails.taggable.TaggableService$$EnhancerBySpringCGLIB$$c312808c' of reloadable type org.grails.taggable.TaggableService is not reloadable: may not see changes reloaded in this hierarchy (please comment on that jira)
+
+GRAILS-7799: Subtype 'org.grails.taggable.TaggableService$$EnhancerBySpringCGLIB$$c312808c' of reloadable type org.grails.taggable.TaggableService is not reloadable: may not see changes reloaded in this hierarchy (please comment on that jira)
+
+GRAILS-7799: Subtype 'de.iteratec.osm.measurement.environment.QueueAndJobStatusService$$EnhancerBySpringCGLIB$$4d78ff91' of reloadable type de.iteratec.osm.measurement.environment.QueueAndJobStatusService is not reloadable: may not see changes reloaded in this hierarchy (please comment on that jira)
+
+GRAILS-7799: Subtype 'org.grails.taggable.TaggableService$$EnhancerBySpringCGLIB$$c312808c' of reloadable type org.grails.taggable.TaggableService is not reloadable: may not see changes reloaded in this hierarchy (please comment on that jira)
+
+errors.GrailsExceptionResolver NullPointerException occurred when processing request: [GET] /OpenSpeedMonitor/batchActivity/getUpdate
+
+Stacktrace follows:
+
+java.lang.NullPointerException
+
+	at java.util.ArrayList.addAll(ArrayList.java:559)
+
+	at java_util_List$addAll$1.call(Unknown Source)
+
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+
+	at de.iteratec.osm.batch.BatchActivityController.getUpdate(BatchActivityController.groovy:91)
+
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+	at java.lang.reflect.Method.invoke(Method.java:606)
+
+	at org.springsource.loaded.ri.OriginalClassInvoker.invoke(OriginalClassInvoker.java:47)
+
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1283)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.MixedGrailsControllerHelper.invoke(MixedGrailsControllerHelper.java:154)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.handleAction(AbstractGrailsControllerHelper.java:354)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.executeAction(AbstractGrailsControllerHelper.java:231)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.handleURI(AbstractGrailsControllerHelper.java:197)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.handleURI(AbstractGrailsControllerHelper.java:121)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.SimpleGrailsController.handleRequest(SimpleGrailsController.java:72)
+
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+
+	at org.codehaus.groovy.grails.web.servlet.GrailsDispatcherServlet.doDispatch(GrailsDispatcherServlet.java:355)
+
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:953)
+
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:844)
+
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620)
+
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:829)
+
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:748)
+
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:486)
+
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:411)
+
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:338)
+
+	at org.codehaus.groovy.grails.web.util.WebUtils.forwardRequestForUrlMappingInfo(WebUtils.java:332)
+
+	at org.codehaus.groovy.grails.web.util.WebUtils.forwardRequestForUrlMappingInfo(WebUtils.java:297)
+
+	at org.codehaus.groovy.grails.web.util.WebUtils.forwardRequestForUrlMappingInfo(WebUtils.java:288)
+
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:217)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.executeFilterChainWithWrappedResponse(GrailsPageFilter.java:233)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.obtainContent(GrailsPageFilter.java:208)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.doFilter(GrailsPageFilter.java:153)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+
+	at org.grails.plugin.resource.DevModeSanityFilter.doFilter(DevModeSanityFilter.groovy:45)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:369)
+
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:109)
+
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:97)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:78)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:119)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:187)
+
+	at org.codehaus.groovy.grails.plugins.springsecurity.RequestHolderAuthenticationFilter.doFilter(RequestHolderAuthenticationFilter.java:40)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.codehaus.groovy.grails.plugins.springsecurity.MutableLogoutFilter.doFilter(MutableLogoutFilter.java:79)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:79)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:168)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+
+	at java.lang.Thread.run(Thread.java:745)
+
+errors.GrailsExceptionResolver NullPointerException occurred when processing request: [GET] /OpenSpeedMonitor/batchActivity/getUpdate
+
+Stacktrace follows:
+
+java.lang.NullPointerException
+
+	at java.util.ArrayList.addAll(ArrayList.java:559)
+
+	at java_util_List$addAll$1.call(Unknown Source)
+
+	at de.iteratec.osm.batch.BatchActivityController.getUpdate(BatchActivityController.groovy:91)
+
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+	at java.lang.reflect.Method.invoke(Method.java:606)
+
+	at org.springsource.loaded.ri.OriginalClassInvoker.invoke(OriginalClassInvoker.java:47)
+
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1283)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.MixedGrailsControllerHelper.invoke(MixedGrailsControllerHelper.java:154)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.handleAction(AbstractGrailsControllerHelper.java:354)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.executeAction(AbstractGrailsControllerHelper.java:231)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.handleURI(AbstractGrailsControllerHelper.java:197)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.handleURI(AbstractGrailsControllerHelper.java:121)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.SimpleGrailsController.handleRequest(SimpleGrailsController.java:72)
+
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+
+	at org.codehaus.groovy.grails.web.servlet.GrailsDispatcherServlet.doDispatch(GrailsDispatcherServlet.java:355)
+
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:953)
+
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:844)
+
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620)
+
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:829)
+
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:748)
+
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:486)
+
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:411)
+
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:338)
+
+	at org.codehaus.groovy.grails.web.util.WebUtils.forwardRequestForUrlMappingInfo(WebUtils.java:332)
+
+	at org.codehaus.groovy.grails.web.util.WebUtils.forwardRequestForUrlMappingInfo(WebUtils.java:297)
+
+	at org.codehaus.groovy.grails.web.util.WebUtils.forwardRequestForUrlMappingInfo(WebUtils.java:288)
+
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:217)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.executeFilterChainWithWrappedResponse(GrailsPageFilter.java:233)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.obtainContent(GrailsPageFilter.java:208)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.doFilter(GrailsPageFilter.java:153)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+
+	at org.grails.plugin.resource.DevModeSanityFilter.doFilter(DevModeSanityFilter.groovy:45)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:369)
+
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:109)
+
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:97)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:78)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:119)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:187)
+
+	at org.codehaus.groovy.grails.plugins.springsecurity.RequestHolderAuthenticationFilter.doFilter(RequestHolderAuthenticationFilter.java:40)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.codehaus.groovy.grails.plugins.springsecurity.MutableLogoutFilter.doFilter(MutableLogoutFilter.java:79)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:79)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:168)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+
+	at java.lang.Thread.run(Thread.java:745)
+
+errors.GrailsExceptionResolver NullPointerException occurred when processing request: [GET] /OpenSpeedMonitor/batchActivity/getUpdate
+
+Stacktrace follows:
+
+java.lang.NullPointerException
+
+	at java.util.ArrayList.addAll(ArrayList.java:559)
+
+	at java_util_List$addAll$1.call(Unknown Source)
+
+	at de.iteratec.osm.batch.BatchActivityController.getUpdate(BatchActivityController.groovy:91)
+
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+	at java.lang.reflect.Method.invoke(Method.java:606)
+
+	at org.springsource.loaded.ri.OriginalClassInvoker.invoke(OriginalClassInvoker.java:47)
+
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1283)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.MixedGrailsControllerHelper.invoke(MixedGrailsControllerHelper.java:154)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.handleAction(AbstractGrailsControllerHelper.java:354)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.executeAction(AbstractGrailsControllerHelper.java:231)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.handleURI(AbstractGrailsControllerHelper.java:197)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.handleURI(AbstractGrailsControllerHelper.java:121)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.SimpleGrailsController.handleRequest(SimpleGrailsController.java:72)
+
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+
+	at org.codehaus.groovy.grails.web.servlet.GrailsDispatcherServlet.doDispatch(GrailsDispatcherServlet.java:355)
+
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:953)
+
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:844)
+
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620)
+
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:829)
+
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.OncePerRequest"		Bug	OpenSpeedMonitor	21/May/15 3:48 PM	26/May/15 11:32 AM														26/May/15 11:31 AM;bwo;Der Fehler trat auf, wenn ein BatchActivity-Update geordert wurde, jedoch keine ID übergeben wurde. Der Fall ist nun abgedeckt, sodass dieser lediglich eine leere Liste erzeugt wird.																																																						

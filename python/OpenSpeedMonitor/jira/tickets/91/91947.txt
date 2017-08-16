@@ -1,0 +1,1 @@
+DetailService Logging	Es sollte eine Möglichkeit zum Erstellen von Logausgaben existieren. So wie es auch im OSM der Fall ist.		Improvement	OpenSpeedMonitor	29/Jul/16 2:58 PM	18/Aug/16 9:21 AM																																																																				

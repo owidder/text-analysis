@@ -1,0 +1,3 @@
+re-set of full row-data	" * Don't re-set full row data or column defs too often but use other appropriate methods of the grid API where possible
+
+ ** See addColumn() in ipList-component.js, for example"	111840	Sub-task	iteraplan PO	23/Jun/17 1:45 PM																																																																					

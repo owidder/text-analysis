@@ -1,0 +1,41 @@
+Error occurs when changing language after filtering	"h4. Problem Description:
+
+
+
+An exception occurs when selecting attribute for Column type after filtering
+
+h4. Reproduction Steps:
+
+ * Open Application and navigate to Landscape Diagram
+
+ * Content type>Content Filter>Edit filter: select ""Productive period"" as attribute, ""between"" as operator and any date as value.
+
+
+
+ * Click on System, select Language and choose ""Deutsch""
+
+
+
+h4. Observed Results:
+
+
+
+""LOADING_DIAGRAM"" message is displayed. An exception occurs in Console. See attached exception_language.png file.
+
+h4. Expected Results:
+
+
+
+Language should be changed without any errors.
+
+h4. Note:
+
+
+
+- Used Firefox and ""iteraplan-basic-bundle-sampledata-6.0.SNAPSHOT-2017-05-17"" bundle/ #312 build
+
+- Also is reproducible for filtering by ""Cost"" ""Development(End)"" attributes. 
+
+Additional check for other attributes can be done if this is needed.
+
+- The same behaviour for changing language ""English => Deutsch"" and  ""Deutsch => English""."		Bug	iteraplan PO	17/May/17 6:08 PM	23/May/17 5:26 PM					diagram	filter								23/May/17 5:26 PM;fka;Works with current trunk and chrome&firefox																																																						

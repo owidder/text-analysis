@@ -1,0 +1,3 @@
+Querreferenzen MeasuredEvent 	"MeasuredEvent enthält folgende und nur foldende Referenzen: 
+- Name: Name des Events wie im Script oder durch den Agenten vergeben
+- Page: Ref auf die Page (ggf. undefined, dann NULL, wie beschriben in IT-39)."	10411	Sub-task	OpenSpeedMonitor	05/Aug/13 10:53 AM	23/May/16 5:12 PM																																																																				

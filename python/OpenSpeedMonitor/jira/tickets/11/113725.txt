@@ -1,0 +1,5 @@
+Mess-Agenten auf prod-Instanz umlegen	"Aktuell haben wir 4 Mess-Agenten. Diese sollten wir folgendermaßen verteilen:
+
+ * 1 Agent auf der dev (demo)
+
+ * 3 Agenten auf unserer prod-Instanz"	113721	Sub-task	OpenSpeedMonitor	03/Mar/17 11:10 AM	23/Mar/17 3:46 PM														23/Mar/17 2:50 PM;jwi;hetzner-04 wurde heute von DEMO auf PROD umgehängt																																																						

@@ -1,0 +1,3 @@
+Footer info shorter and in Header	see parent ticket, discussed on skype	79300	Sub-task	iteraplan PO	26/Apr/16 12:14 PM	26/Apr/16 4:29 PM														"26/Apr/16 4:11 PM;mwe;Review results:
+
+* Empty Tags are not good practice because some browsers don't know them: commonHeaderTemplate.html (line 41)"																																																						

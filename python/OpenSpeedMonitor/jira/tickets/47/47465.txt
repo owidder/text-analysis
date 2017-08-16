@@ -1,0 +1,24 @@
+Add coloring settings to legend	"add the setting for coloring (numeric and enumeration) to the (existing) legend
+
+legend is (still) read only, no interaction here.
+
+
+Color pickers to change the color for a given value will come in a later ticket.
+The risk of no finding an easy way to determine the Diagram block that was clicked is clear and accepted."		New Feature	iteraplan PO	04/Mar/15 1:46 PM	07/Apr/15 1:27 PM														"24/Mar/15 12:58 PM;msr;*Summary:*
+Implement the coloring for inner elements.
+
+*As-Is:*
+There exists just default coloring.
+
+*To-Be:*
+Inner Elements can be coloured by enumeration and numeric attributes.
+
+*Affected parts of the system:*
+* Landscape Diagram
+
+*Approach:* 
+Implement the same coloring options for enumeration and numeric attributes *of the inner boxes only* as in the Nested Cluster Diagram (pre-defined and user-defined). Use the same legend options, context menu and url.
+
+*Acceptance Criteria:*
+The user can do exactly the same coloring of inner elements as in the Nested Cluster Diagram, i.e. same context menu actions, same legend, same url, ..."	"02/Apr/15 4:21 PM;dasm;Verified
+revision 882"	07/Apr/15 11:34 AM;isc;reviewed																																																				

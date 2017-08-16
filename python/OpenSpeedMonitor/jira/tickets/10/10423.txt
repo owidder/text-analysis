@@ -1,0 +1,12 @@
+Datenpunkte klickbar / Realisierung EventResult-Liste	"Wie auf der Reports-Seite des WPTMonitors muss es möglich sein, die Graphen im WptResultsDashboard anzuklicken. Daraufhin muss man die hinter dem Datenpunkt stehenden Einzelresults erreichen können.
+
+Im WPTMonitor erreicht man zunächst eine Listen-Darstellung der Results und kann von dieser aus den WPTServer mit den Detail-Daten eines Results aufrufen. Eine vergleichbare Funktionalität muss im iteraSpeedMonitor implementiert sein. Es ist hierbei zu prüfen, was weniger Aufwand bedeutet:
+
+a) 
+Die bestehende Results-Page des WPTMonitors anzupassen, so dass diese auch Multistep-Results enthalten kann 
+
+ODER
+
+b)
+Die Scaffolding-UI der EventResults ausimplementieren und erweitern, so dass eine Verlinkung auf die Detail-Results im WPTServer möglich ist.
+"		Story	OpenSpeedMonitor	05/Aug/13 2:54 PM	25/Sep/13 10:19 AM																																																																				

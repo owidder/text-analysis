@@ -1,0 +1,5 @@
+Create sceletion implementation including new update mechanism	"Create sceletion implementation including new update mechanism from GoJS.
+
+
+
+Timebox: 3 Person Days"		New Feature	iteraplan Speedbird	22/Jul/16 8:31 AM	31/Aug/16 8:37 AM																																																																				

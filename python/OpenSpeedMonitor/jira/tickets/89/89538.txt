@@ -1,0 +1,47 @@
+List should be loaded faster	"h1. Timebox: 1 PD to analyse the actual performance
+
+
+
+On Chrome:
+
+
+
+For 3000 rows, the time for setting up the list, adding columns and reordering them as well as filtering with the quickfilter is ok.
+
+(one has to wait, but not very long)
+
+For 3500 Rows setting up the list (RowDataBuilder.getRowData()) takes more then 1 min (compared to about 10s with 3000 rows, with smaller numbers of rows the increase of the running time something like linear).
+
+For setting up all 4670 IS more than 20 min were not enough.
+
+
+
+The difference between in and excluding the RelEnds is very small.
+
+I have a timeline for loading the 3000 entries.
+
+
+
+One problems seems to be at the end of the RowData Builder or that the Row Data builder stops the generation of rows at a certain point.
+
+
+
+
+
+With the internet Explorer:
+
+
+
+the maximum seems to be around 1000 rows (sometimes its working, sometimes not), then adding and deleting columns is also working in
+
+
+
+Here the functions after the row data builder are also slower.
+
+
+
+Please contact [~cst] for acccess to *big data*
+
+
+
+Please also test the tree view with at least 3000 rows"		Improvement	iteraplan Speedbird	06/Jul/16 1:16 PM	23/May/17 8:31 AM														06/Jul/16 1:18 PM;aan;This ticket follows ITERAPLAN-4592.	27/Mar/17 2:37 PM;fka;Anything still to do?	23/May/17 8:28 AM;viol;All result are added in attachment "Ip List Perf Test.docx"	23/May/17 8:32 AM;dmkh;Review is done, great job!																																																			

@@ -1,0 +1,9 @@
+Update technically required version to Java 6	"Currently all of iteraplan's code is still compiled with compatibility for Java 5, even though we recommend Java 7 already and Java 6 is the official minimum version for a 3-4 years already. In fact, iteraplan will most probably not run on a JRE 5 anyway, as we use some methods that have only been added to the JRE6 API.
+
+This should not have any visible effect, except that the compile is maybe able to generate slightly more efficient bytecode.
+This task involves setting the source and target parameters for Ant and Maven builds and analysis tools to ""6""
+
+However, one positive side-effect is that we can review which additional JAR files have official become part of the Java 6 standard and do not need to be included any longer. The following list is probably not exhaustive  and should be extended where appropriate:
+* Java Common Annotations (JSR250) 
+* javax.activation"		Task	iteraplan PO	14/Oct/13 2:12 PM	05/Nov/13 4:32 PM					compatibility									"21/Oct/13 4:37 PM;sry;This is the main needed step for updating the source and target Java version to 6.
+It does not yet cover any removal of libraries that have become part of the standard JRE."	04/Nov/13 3:51 PM;sry;I could not remove JAXB as Java SE 6 includes only JAXB 2.0, but iteraplan depends on v2.2. Xerces is also unavoidable, as some parts of XWiki depend on it. The Xerces JAR contains packages that are definitely not part of the JRE.	05/Nov/13 4:32 PM;sfe;seems fine																																																				

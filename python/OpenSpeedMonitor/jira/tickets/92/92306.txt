@@ -1,0 +1,9 @@
+Clarify and implement layout requirements	"A reserve ticket for layout improvements
+
+
+
+*Questions:*
+
+- Bubble min/max size, size of cell (number of bubbles in the cell)
+
+- Scaling min/max limits"		Improvement	iteraplan Speedbird	03/Aug/16 8:40 AM	16/Aug/16 3:46 PM														16/Aug/16 3:46 PM;msr;Done in another ticket																																																						

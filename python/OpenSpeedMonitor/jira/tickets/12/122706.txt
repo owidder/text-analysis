@@ -1,0 +1,21 @@
+Nightly Tests schlagen mit OutOfMemoryError fehl	"Der Jenkins Job für die Nightly Tests schlägt zuletzt fehl.
+
+
+
+ Der Test SearchServiceImplTest.searchWithSpaceAndIncompleteSearchTerm endet mit ""java.lang.OutOfMemoryError: Java heap space"".
+
+
+
+ Zwischendurch gibt es aber auch einen erfolgreichen Lauf (z.B. am 26.05.).
+
+
+
+ 
+
+
+
+Hinweis: Wenn der Nightly Test nicht erfolgreich ist, werden die Nightly Builds nicht gestartet (Bauen und Deployen der Testinstanz unter {color:#333333}https://iteraplan.iteratec.de/iteraplan_devel/{color})."		Bug	iteraplan Thunderduck	29/May/17 10:13 AM	30/May/17 9:13 AM														"30/May/17 8:06 AM;tsc;Mit der bisherigen Einstellung -Xmx768m laufen die Integrationstests reproduzierbar nicht mehr durch.
+
+
+
+Einstellung wurde auf -Xmx1024m geändert."																																																						

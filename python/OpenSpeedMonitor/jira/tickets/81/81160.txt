@@ -1,0 +1,1 @@
+LoginManager ausbauen	Da die Authentifizierung von Zap übernommen wird, kann der LoginManager ausgebaut werden.	75552	Sub-task	secureCodeBox	20/Apr/16 3:12 PM	21/Aug/16 12:56 PM	secureBoxEngine	secureBoxZap												21/Aug/16 12:56 PM;rfe;Durch die neue Implementierung im Rahmen des Zap Microservice nicht mehr notwendig.																																																						

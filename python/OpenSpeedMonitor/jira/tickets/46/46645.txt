@@ -1,0 +1,24 @@
+Extend premium installer for the configuration of the authentication methods' parameters	"Analyse, which parameters are necessary for the supported authentication methods:
+
+* Username / Password
+* SingleSignOn against ActiveDirectory (Kerberos)
+* X.509 client certificate
+
+In the next step, adjust the installer wizard's GUI and the underlying Ant scripts to handle these parameters during installation.
+
+(!) CLARIFY:
+Manual changes to configuration files should no longer be necessary after installation. To reach this goal, the installer furthermore should ask for the default admin role and create it in iteraplan (as subordinate role of ""iteraplan-Supervisor"").
+
+Until now, the creation of this admin role for iteraplan with LDAP was a little fiddly, because you had to install a temporary iTurm instance to do this:
+http://www.iteraplan.de/wiki/display/iteraplan/User+Authentication+with+LDAP
+
+Finally adjust the user documentation to reflect the new situation"		New Feature	iteraplan PO	12/May/14 11:24 AM	04/Aug/14 2:09 PM					authentication	installer	security							"24/Jul/14 2:01 PM;fam;LDAP config and request header name setting included.
+Also, some labels got modified.
+Please review documentation, too."	"25/Jul/14 10:28 AM;dop;Review: 
+
+* If iTurm is selected in the authentication method screen, the next screen shows the LDAP configuration screen. But if iTurm is used, no LDAP configuration should be shown.
+* Path to logfile: A little improvement would to add a directory button, as on the next screen where the tomcat directory is specified. So the user hasn't to type in the path manually. 
+* When selected LDAP, the ant installer builds the war-file, which contains apart from the iteraplan-auth.properties the iteraplan-auth.properties.template file. Is this template needed?
+"	"31/Jul/14 10:54 AM;fam;LDAP screen not shown any more.
+Path to logfile button added.
+iteraplan-auth.properties.template is necessary, as there are configuration options used during installation process. "																																																				

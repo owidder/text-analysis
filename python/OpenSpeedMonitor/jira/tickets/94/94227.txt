@@ -1,0 +1,25 @@
+Filter for Building Block Types & Relations (header + rows)	"*Summary:*
+
+Implement the combinedFilter for all Building Block Types & Relations in the header and in the rows.
+
+This is just the standard combinedFilter. The extension to select and deselect is in another ticket.
+
+Attributes in header or rows are out of scope in this ticket.
+
+
+
+*Implementation Details:*
+
+* Check, if combinedFilter works with Relations. If not, fix it.
+
+* Url: Save filtering in the url
+
+
+
+*UI:*
+
+* Legend: Use the existing LegendFilterBuilder, put the legend-filter-entry under the header or the respective  row (like in the Masterplan Diagram)
+
+* Toolarea: *remember the header and each row have a separate toolarea*
+
+** Mainentry (2nd position): ""Filter"" (German: ""Filter"") with filter-icon"		New Feature	iteraplan Speedbird	26/Aug/16 1:28 PM	18/Oct/16 12:25 PM														06/Oct/16 6:04 PM;dmkh;Review is done, few comments and improvements here: https://iteraweb.iteratec.de/fisheye/cru/IP-60	10/Oct/16 4:21 PM;viol;Review changes done in revision #4589 	10/Oct/16 10:37 PM;viol;added after review changes in revision #4596	12/Oct/16 10:24 AM;msr;Remove filter-toolarea-entry for attributes in header and in rows.	17/Oct/16 8:55 AM;viol;changes added in revision #4668	18/Oct/16 12:25 PM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-60																																																	

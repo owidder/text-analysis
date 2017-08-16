@@ -1,0 +1,1 @@
+Update swedish localization according to the contributed file	see attachement		Task	iteraplan PO	06/Aug/13 2:23 PM	06/Aug/13 4:30 PM					localization									06/Aug/13 2:35 PM;bra;merge into 3.1 branch as well	06/Aug/13 4:30 PM;svo;looks good.																																																					

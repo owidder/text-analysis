@@ -1,0 +1,3 @@
+Als User möchte ich im Prozess sehen welche URLs gescannt (Scanner) wurden.	"Der Nutzer soll sehen, welche URLs während des Laufs gescannt wurden.
+
+Hierfür soll im BPMN-Prozess ein optionaler  ""Approve"" User Task eingeführt werden. Dieser zeigt dem Benutzer das Ergebnis in JSON Format (nur lesen), das ebenfalls in elasticsearch als Ergebnis gespeichert wurde."		Story	secureCodeBox	14/Aug/15 3:12 PM		secureBoxEngine	secureBoxZap			iteratec																																																															

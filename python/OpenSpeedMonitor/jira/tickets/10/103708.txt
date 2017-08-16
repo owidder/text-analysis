@@ -1,0 +1,1 @@
+Reset Button zum zurücksetzen der Einstellungen einbauen		97661	Sub-task	OpenSpeedMonitor	23/Nov/16 5:47 PM	08/Dec/16 6:51 PM																																																																				

@@ -1,0 +1,17 @@
+NCD: Wrong attribute list for numeric filters in the Legend settings (Filtering)	"Summary: Enumeration attribute list appears in the legend setting instead of numeric attributes
+
+Steps to reproduce:
+1. Go to NCD page
+2. Use any filtering by numeric properties for inner elements
+3. Navigate to settings line for applied filtering option in the legend
+Actual: Enumeration attribute list appears in the legend setting instead of numeric attributes
+Expected: Numeric attribute list should appears
+
+Comment: actual for text filters and by date
+"		Bug	iteraplan PO	26/Mar/15 2:21 PM	23/Apr/15 9:20 AM														"15/Apr/15 9:10 AM;msr;Take in April-Release 2015?
+YES in combination with ITERAPLAN-3001"	"15/Apr/15 10:55 AM;wfr;Recommendation: fix now
+
+Correction on the expected behavior
+in the legend, all attributes should be available for setting more filters,
+that is all _kind_ of attributes: text, numeric, enumeration
+"	23/Apr/15 9:20 AM;fka;No longer reproducible as of 2015-04-23 in trunk																																																				

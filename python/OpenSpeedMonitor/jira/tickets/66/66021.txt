@@ -1,0 +1,1 @@
+ensure line-coverage in lsdTableModelBuilder.js with unit tests		65042	Sub-task	iteraplan PO	08/Dec/15 9:11 AM	12/Dec/15 4:11 PM					LSD	Test																																																														

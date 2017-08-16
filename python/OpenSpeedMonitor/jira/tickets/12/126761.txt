@@ -1,0 +1,1 @@
+Trim below/above greift nicht bei SpeedIndex	Nach der Einordnung des SpeeIndex zu den LoadTimes scheint dies noch nicht zu greifen.		Bug	OpenSpeedMonitor	10/Jul/17 5:46 PM	11/Jul/17 12:00 PM																																																																				

@@ -1,0 +1,5 @@
+WptDownloadWorker kann bei markJobAsFailed sterben	"Wenn ein Download Job fehl schlägt und der Job mit markJobAsFailed als Fehler markiert werden soll, kann der Thread sterben, wenn die Exception oder die message der Exception null ist.
+
+
+
+Beide Fälle sollten behandelt werden. Zusätzlich wäre ein genereller try/catch Block um die Funktion nicht verkehrt, dass im Zweifel nur ein Fehler geloggt wird, aber der Thread nicht stirbt."		Improvement	OpenSpeedMonitor	08/Feb/17 3:57 PM	09/Feb/17 4:54 PM																																																																				

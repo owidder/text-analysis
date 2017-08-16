@@ -1,0 +1,1 @@
+HTTPService	Wir benötigen im detaildaten-Service einen HTTPService, um mit den WPT Instanzen oder den OSM Instanzen zu kommunizieren. Dieser sollte zumindest die Möglichkeit geben, via URL das HTTPArchive von einer WPT  Instanz zu laden.		Task	OpenSpeedMonitor	25/May/16 3:56 PM	07/Jul/16 8:38 AM																																																																				

@@ -1,0 +1,1 @@
+Delete "description"-column in search-result	Delete "description"-column in search-result		Improvement	iteraplan Speedbird	12/Jan/17 5:15 PM	24/Jan/17 4:38 PM																																																																				

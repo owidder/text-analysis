@@ -1,0 +1,9 @@
+Main-Layouts vereinheitlichen	"Es ist zu prüfen, ob wir wirklich die beiden folgenden Layouts benötigen:
+
+* layouts/kickstart.gsp
+
+* layouts/kickstart_osm.gsp
+
+
+
+Idealerweise vereinheitllichen wir diese, so dass wir nur noch eines osm.gsp haben."		Improvement	OpenSpeedMonitor	22/Jul/15 10:13 AM	18/Jan/17 4:18 PM																																																																				

@@ -1,0 +1,3 @@
+Checkbox _inaktive Jobs anzeigen_ lädt diese nur beim Klicken nach	"Wenn die Checkbox schon gesetzt ist wenn die Seite geladen wird werden die inaktiven Jobs nicht mit angezeigt. 
+
+Und, was noch schlimmer ist: Sie lassen sich auch nicht laden, wenn man die Checkbox dis- und wieder enablet. "		Bug	OpenSpeedMonitor	18/Dec/15 3:08 PM	26/Jan/16 1:07 PM														26/Jan/16 1:07 PM;nku;Duplicate von IT-848																																																						

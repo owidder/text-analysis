@@ -166,17 +166,20 @@ bottle.factory("Legend", function (container) {
             }
         }
 
-        function createLegenListAtPos(x, y) {
+        function createLegendListAtPos(x, y) {
             var nearbyBubblesForlegends = getNearbyBubblesForlegends(x, y);
             var legendList = createLegendList(nearbyBubblesForlegends);
             return legendList;
         }
 
         function mouseMoved(x, y) {
-            updateLegend(createLegenListAtPos(x, y));
+            var legend = createLegendListAtPos(x, y);
+            updateLegend(legend);
 
             svg().select("g.legend")
                 .attr("transform", "translate(" + (x + 10) + "," + (y + 10) + ")");
+
+            return legend;
         }
 
         this.mouseMoved = mouseMoved;
@@ -184,7 +187,7 @@ bottle.factory("Legend", function (container) {
         this.showLegend = showLegend;
         this.switchLegend = switchLegend;
         this.appendLegend = appendLegend;
-        this.createLegenListAtPos = createLegenListAtPos;
+        this.createLegendListAtPos = createLegendListAtPos;
     }
 
     return Legend;

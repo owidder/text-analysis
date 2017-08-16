@@ -1,0 +1,3 @@
+Bei zeitlich aggregierter Darstellung ist die Legenden-Darstellung defekt	"Die Legendeneinträge beinhalten merkwürdige Zahlenwerte statt der Connectivities (siehe anhängender Screenshot). 
+
+Datengrundlage ist ein Monats-Dump auf den die Datenmigration angewendet wurde (siehe IT-662)."		Bug	OpenSpeedMonitor	15/Jul/15 9:34 AM	16/Jul/15 5:51 PM																																																																				

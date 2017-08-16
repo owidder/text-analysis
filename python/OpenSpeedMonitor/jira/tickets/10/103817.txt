@@ -1,0 +1,53 @@
+Testticket - Probleme mit Upload von Dateien	"Testticket
+
+
+
+Upload Bild via Firefox
+
+"		Task	Infrastruktur	24/Nov/16 11:06 AM	07/Dec/16 11:54 AM	JIRA													24/Nov/16 11:09 AM;kti;Problem bei Drag&Drop	"30/Nov/16 9:12 AM;kti;Hallo zusammen,
+
+
+
+ich habe leider auf meine Nachricht vom 24.11. von euch bisher keine Rückmeldung per Mail erhalten, daher jetzt hier in dem Ticket.
+
+Könnt ihr mir bitte noch Feedback dazu geben? Besteht das Problem bei euch auch nur in Verbindung mit FF?
+
+
+
+Danke und viele Grüße
+
+Kathrin
+
+_________________________
+
+
+
+Nach unseren Tests hier ist das ein Browserproblem.
+
+Mit dem IE und Chrome gibt es keine Probleme, bei einem Upload eines Anhangs per Drag&Drop über den Firefox kommt es bei der Version 50.0 zu dem unten genannten Fehler.
+
+
+
+Welchen Browser und welche Version nutzt ihr?
+
+"	"06/Dec/16 4:59 PM;tlu;Hallo Kathrin,
+
+
+
+ja das Problem besteht bei mir nur in FF. Ich habe aktuell die Version 50.0.2"	"07/Dec/16 11:54 AM;kti;Hallo zusammen,
+
+
+
+wir haben in JIRA das Drag&Drop-Plugin aktualisiert, das Problem ist jetzt behoben.
+
+
+
+https://answers.atlassian.com/questions/44353823/jira-drag-and-drop-creates-multiple-files-firefox-browser 
+
+https://jira.atlassian.com/browse/JRA-63219 
+
+
+
+Viele Grüße
+
+Kathrin"																																																			

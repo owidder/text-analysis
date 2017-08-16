@@ -1,0 +1,9 @@
+show cookie and account information on login page of demo systems	"The personal demo should contain the cookie information on the login page.
+
+
+
+The public demo should contain the cookie and account information on the login page.
+
+
+
+Both changes were already done with IPTS-1071 in the trunk, and reverted in the trunk because the information is relevant only for the demo systems."		New Feature	iteraplan Thunderduck	12/Jul/17 4:21 PM	17/Jul/17 3:41 PM														17/Jul/17 1:39 PM;tsc;The SVN repository now has 2 branches for personal and public demo.																																																						

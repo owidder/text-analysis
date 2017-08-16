@@ -1,0 +1,14 @@
+Lines for coloring  are duplicate each other in the Legend	"Steps to reproduce:
+1. go to LSD page
+2. Use Technical Component as content type and Architectural Domain as x axis and Information System Releases as y axis 
+3. Use coloring by Type of Status
+Actual: There are two lines in the legend which duplicate each other 
+- Undefined
+- Is null or undefined
+Expect: Do we need both of them?"	47465	Sub-task	iteraplan PO	31/Mar/15 2:03 PM	07/Apr/15 1:31 PM													"Workspace: Windows 8.1 
+Browser: Google chrome 39.0, IE 11,Mozilla Firefox 36.0.4 "	"01/Apr/15 3:48 PM;dasm;Remove one line for ""undefined"" elements in this case.
+
+Please use ""Undefined"" as name for settings line in all other cases instead of  ""Is null or undefined""
+
+(in discussion with Marcel 01/04/15)"	"02/Apr/15 1:56 PM;dasm;Verified
+revision 877"																																																					

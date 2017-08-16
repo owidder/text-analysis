@@ -1,0 +1,7 @@
+test layout on all browsers	"Before this ticket, all developers will check each step in all 3 browsers in one version each.
+
+For IE, test in IE 11 and in IE 11 with IE 10 compatibility mode. 
+
+
+
+In this ticket, test in Chrome (last version), Firefox (last version), IE 10 (real one), too."		New Feature	iteraplan PO	10/May/16 12:57 PM	22/Jun/16 2:30 PM														11/May/16 11:52 AM;mwe;If you need IE10 and you have IE11 see [https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/windows/] for a virutal machine with WIN7 and IE10.																																																						

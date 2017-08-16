@@ -1,0 +1,33 @@
+VPN-Zertifikat abgelaufen	"Liebe Admins,
+
+
+
+mein VPN-Zertifikat ist abgelaufen.
+
+{noformat}
+
+""Connection Failed: Certificate has expired in Sat Oct 8 14:28:01 2016. CN=msr,OU=users,O=policy.iteratec.de.78casb""
+
+{noformat}
+
+
+
+Könnt ihr es bitte verlängern?
+
+
+
+Danke schön
+
+
+
+Marcel"		Task	Infrastruktur	25/Nov/16 8:18 AM	28/Nov/16 9:11 AM	Routing													"28/Nov/16 9:10 AM;kti;Guten Morgen Marcel,
+
+
+
+ich schicke dir dein neues Zertifikat per Mail.
+
+
+
+VG
+
+Kathrin"																																																						

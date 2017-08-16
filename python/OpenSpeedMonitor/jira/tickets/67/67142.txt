@@ -1,0 +1,15 @@
+Rename table AT	"""at"" is a reserved keyword in many database systems, which from time to time causes problems (for example: migration with Oracle, upgrading HSQLDB ...).
+
+
+
+Solution:
+
+Rename the table in the hibernate mapping(s) and any other referenced locations from ""AT"" to something else.
+
+
+
+A migration script should exists as well.
+
+
+
+"		Improvement	iteraplan PO	16/Dec/15 1:32 PM	22/Dec/15 11:10 AM					attribute	hibernate	mapping																																																													

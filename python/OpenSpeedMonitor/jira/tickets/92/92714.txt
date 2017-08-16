@@ -1,0 +1,5 @@
+Execute Test Sheet Colorpicker	..\tests\manualTests\Colorpicker\colorpicker-test-specification.xlsx		Bug	iteraplan PO	08/Aug/16 10:13 AM	09/Aug/16 1:28 PM														"09/Aug/16 12:58 PM;mse;No problems found, I have attached the test results: [^colorpicker-test_results.xlsx]
+
+
+
+I have also changed the wording in the test spec slightly and commited the changed xlsx file."																																																						

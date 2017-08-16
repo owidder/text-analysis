@@ -1,0 +1,23 @@
+Filter: Checkbox "Include Information Systems connected over Interface" default should be off	"In the filter dialog the checkbox ""Include Information Systems connected over Interface"" should be default deactivated.
+
+
+
+Reproduce with trunk
+
+
+
+# Change into the tab search
+
+# Search after ""callcenter"" 
+
+# Choose the first ""Take over to list"" 
+
+# The list of the Information System will be loaded but with 5 entrys
+
+# Click on ""Edit Filter"" here is the checkbox ""Include Information Systems connected over Interface"" checked in
+
+
+
+Expected: only that ""Callcenter # 3.2"" is shown
+
+Actual: 5 Entrys are shown"		Bug	iteraplan PO	01/Feb/17 2:25 PM	02/Feb/17 12:01 PM														02/Feb/17 11:20 AM;roia;Testing of this task is blocked by IPTS-522 at the moment.	02/Feb/17 12:01 PM;roia;[~mash], I've added unit test for this case																																																					

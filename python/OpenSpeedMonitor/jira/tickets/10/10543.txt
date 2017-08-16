@@ -1,0 +1,1 @@
+Highchart-Services zusammenführen	Derzeit gibt es mehrere Highchart-Servcies. Um Code-Duplizierungen zu minimieren sollten diese soweit möglich zusammengeführt werden.		Task	OpenSpeedMonitor	23/Sep/13 10:08 AM	18/Jan/17 2:41 PM																																																																				

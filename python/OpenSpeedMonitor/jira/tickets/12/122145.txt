@@ -1,0 +1,35 @@
+Customizing tile and page	"Add new tile to Administration section
+
+ * at the end of the line
+
+ * visible only for users with new permission: IPTS-980
+
+ * Customizing {color:#14892c}(german: Customizing){color}
+
+
+
+ 
+
+
+
+On the Customizing page, there should be 3 tabs created:
+
+ * Standard Configuration {color:#14892c}(german: Standardkonfiguration){color}
+
+ ** icon on the left side of text - *settings*
+
+ * Corporate Design ({color:#14892c}german: Corporate Design){color}
+
+ ** icon on the left side of text - *palette*
+
+ * Metamodel ({color:#14892c}german: Metamodel){color}
+
+ ** icon on the left side of text - -needs to be created, mentioned in IPTS-820-
+
+ ** *{color:#d04437}UPDATE{color}*: use icon [^Metamodell_gray.svg]
+
+
+
+*UI*
+
+ * designed as it is in Single Element View"		New Feature	iteraplan Speedbird	23/May/17 1:27 PM	14/Jul/17 2:04 PM														06/Jul/17 2:04 PM;olal;Do you have image for Customizing tile?																																																						

@@ -1,0 +1,5 @@
+Aufräumen der Karte zum Auswählen von Measurand-Series	"Die Select-Felder sollten in das bootstrap Theme überführt werden.
+
+Außerdem ist es verwirrend, dass die Add Measurand Series and Remove Measurand Series gleich aussehen und so nahe beieinander liegen.
+
+Ob die Balken stacked oder voreinander sind sollte kein Slelect Menü sein"		Task	OpenSpeedMonitor	23/Dec/16 2:57 PM	23/Jan/17 2:20 PM																																																																				

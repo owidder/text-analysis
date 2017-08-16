@@ -1,0 +1,27 @@
+Decide: ID of information system for information system release	"There is a descrepancy between old and new client at the moment concerning the building block which is shown to the user as ""Information System"":
+
+
+
+*Situation in old client:*
+
+In the data model, there are two entities, InformationSystem and Release, which are related (see picture). The InformationSystem has only one property (name), while the details are stored in Release. The two entities have different IDs, of course.
+
+
+
+In the list view, the information from InformationSystem and Release is put togehther and presented to the user as InformationSystemRelease (e.g. ""CRM # 3.1""). The ID of the parent InformationSystem can be added to the list as an extra column.
+
+
+
+*Situation in new client:*
+
+In the elastic meta model and thus also in the new client, there is no separation between InformationSystem and Release but the information is combined into an InformationSystemRelease. Therefore, the ID of the parent InformationSystem is not available in the new client and cannot be added to the lists as an extra column.
+
+
+
+*To be decided:*
+
+Should this feature (show ID of the parent InformationSystem in the list view for InformationSystemRelease) be dropped in the new client? Or should the data model be changed so that this information is also accessible in the new client.
+
+
+
+([~wfr]'s recommendation: Drop it!)"		Task	iteraplan PO	01/Jun/16 3:24 PM						sfe																																																															

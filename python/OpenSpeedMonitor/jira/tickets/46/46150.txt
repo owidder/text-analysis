@@ -1,0 +1,9 @@
+Improve readability of change notification emails	"There are a number of aspects that can be improved in notification emails, some of them also having been brought up by customers already.
+* Send localized emails. As long as there is no user-specific locale preference, a first simple step could be to configure an application-wide default language (i.e. corporate language)
+* Send HTML emails with nicer formatting
+* Print runtime date in localized date format, not in full-length ISO format. (I received an email with {{Runtime from changed: from ""2009-01-01T00:00:00.000+01:00""  to ""2009-02-01T00:00:00.000+01:00"" }})
+* include change information particles in the same order as they are found on the UI, e.g. attributes after relations, successors before predecessors etc.
+* When a relation with attributes has been added (e.g. IS-BO), include the attached attributes with the email.
+* Send notifications for indirectly affected BBs as well. Example: User A subscribed to changes on IS CRM 3.1, and user B edits Project XY to add a relation to IS CRM 3.1. Right now, User A is not notified of that change to his watched IS, even though there has been a relevant addition. He could only be notified if he also subscribed to Project XY (which might even be newly created by User B...).
+* For changes to interfaces, use the explicit interface name whenever possible, and include the connected ISs only for better orientation.
+* For changes to interfaces, include changes to BO flow directions."		Improvement	iteraplan PO	17/Oct/13 1:51 PM	30/Dec/15 3:34 PM					email	notification																																																														

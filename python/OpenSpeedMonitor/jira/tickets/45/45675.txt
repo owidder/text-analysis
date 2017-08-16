@@ -1,0 +1,48 @@
+Portfolio diagram: overlap-free positioning for discrete axes values	Implement a layouting for portfolio diagrams which positions all bubbles within _value sectors_ without overlapping the bubbles.		Improvement	iteraplan PO	05/Apr/13 5:13 PM	14/Jun/13 2:00 PM					portfolio									06/Jun/13 10:42 AM;sry;Please add an explicit note to the legend, that bubble positions do not represent exact positions, and that only containment in a given sector is relevant. (probably you'll find better phrasing)	12/Jun/13 3:43 PM;kgo;Testing the SVG export only.	12/Jun/13 3:55 PM;kgo;SVG Portfolio Diagrams in 3.0.4 and the current 3.1-candidate implementation.	"12/Jun/13 4:00 PM;kgo;I have tested the generation of the following SVG Portfolio Diagram:
+ * Content: All Information Systems (Current, Planned, Target, Inactive over any Runtime Period)
+ * X-Axis: Status
+ * Y-Axis: Maintenance Activity
+ * Colour: Status
+ * Size: Maintenance Activity
+
+The resulting diagram, as well as a reference diagram from 3.0.4 are attached to the ticket.
+
+The new diagram has the following issues:
+ * Incorrect scaling and positioning in both X and Y directions (possibly something to do with the cm2inch/inch2cm conversion?).
+ * The scale in the Y direction seems to be in the wrong direction (the smallest value is at the top and the largest at the bottom)."	"13/Jun/13 11:36 AM;kgo;Used the following test cases:
+
+Test Case 1: Discrete Attributes on both axes.
+Test Case 2: One discrete Attribute and Status on the axes.
+Test Case 3: One discrete and one continuous Attribute on the axes.
+Test Case 4: Continuous Attributes on both axes.
+
+Remarks by priority (in my opinion):
+
+Priority 1 (needs fixing):
+ * Missing undefined values for both axes. Occurs in test cases 1 and 2.
+ * Positioning of bubbles w.r.t. the status axis is wrong. Occurs in test case 2.
+ * Missing line legend, although a line dimension is selected. Occurs in test cases 3 and 4.
+
+Priority 2 (possible improvements):
+ * The line figures in the line legend are not centered. Concerns all test cases in which a line legend is present.
+ * Ordering of literals of discrete axes doesen't seem to be defined by the ordering of the literals in the corresponding enumeration. In particular, literals are always ordered (i.e. average is always in the middle), but the direction can be one way or the other (i.e. it can be good - average - bad or bad-average-good).
+
+Further remarks (just suggestions):
+ * Is it convenient to always create the background grid in accordance with the number of literals in a discrete dimension? In this manner we obtain something like a grid of 15 x 3 boxes. On the other hand, the grid defines the boxes in which the discrete values are spread to avoid overlapping.
+ * In the case of one continuous and one discrete dimension it might be possible to order the bubbles along a line, which represents the corresponding continuous value, while still avoiding (or at least minimizing) overlapping in the discrete dimension.
+ * Finally, a behaviour which is inadequate in both the current code and in iteraplan 3.0.4: When a saved query is loaded, the configuration is modified and a graphic is generated, the saved query information is still added to the graphic, although the graphic no longer represents the saved query. It would be better, if possible, to drop the saved query information if the graphic configuration is modified. This might also concern other iteraplan diagrams.
+"	"14/Jun/13 10:15 AM;smo;* Fixed the remarks with priority 1 in the comment above
+* Regarding the other remarks: 
+
+    ** The line figures in the line legend are not centered. Concerns all test cases in which a line legend is present. - fixed
+    ** Ordering of literals of discrete axes doesn't seem to be defined by the ordering of the literals in the corresponding enumeration. In particular, literals are always ordered (i.e. average is always in the middle), but the direction can be one way or the other (i.e. it can be good - average - bad or bad-average-good). - it should use the ordering in the corresponding enumeration; if necessary could be analyzed at a later time.
+
+
+    ** Is it convenient to always create the background grid in accordance with the number of literals in a discrete dimension? In this manner we obtain something like a grid of 15 x 3 boxes. On the other hand, the grid defines the boxes in which the discrete values are spread to avoid overlapping. - since for the continuous attributes we only display a maximum of 5 values it can only come the a grid of 5x5 which is acceptable; also it is better to use the same mechanism to draw the grid for the discrete and continuous attributes
+    ** In the case of one continuous and one discrete dimension it might be possible to order the bubbles along a line, which represents the corresponding continuous value, while still avoiding (or at least minimizing) overlapping in the discrete dimension. - discussed this already with Steffen, we will keep this implementation for now.
+    ** Finally, a behaviour which is inadequate in both the current code and in iteraplan 3.0.4: When a saved query is loaded, the configuration is modified and a graphic is generated, the saved query information is still added to the graphic, although the graphic no longer represents the saved query. It would be better, if possible, to drop the saved query information if the graphic configuration is modified. This might also concern other iteraplan diagrams. - this should be analyzed also for other diagrams, an extra ticket would be more appropriate. 
+"	"14/Jun/13 10:44 AM;gph;The generated Visio diagram doesn't open with Visio 2003 (like the other diagrams). See screenshot.
+
+In the template XML, the 2006 and the 2010 Visio namespaces are referenced. It seems likely that 2006 won't work for this reason either.
+
+In Visio 2010 everything works fine."	14/Jun/13 2:00 PM;gph;Look ok in all tested variations in Visio 2010.	17/Jun/13 9:40 AM;kgo;The issue with the saved query information is addressed in ITERAPLAN-1626.																																														

@@ -1,0 +1,12 @@
+Inserted additional columns in Master plan graphic shown as black cells	"Repro: 
+1. Master plan query
+2. Confirm selection
+3. Advanced Settings
+4. Insert additional column
+
+Result:
+
+1. The background colour of the additional column cell appears black
+
+
+The problem is in {{SvgMasterplanExport#createContentRow}}. When setting the label using the method {{createCustomRectangle()}} {{colorClass}} is used instead of {{color}} (line 376)."		Bug	iteraplan PO	14/Nov/11 3:13 PM	14/Nov/11 4:03 PM																																																																				

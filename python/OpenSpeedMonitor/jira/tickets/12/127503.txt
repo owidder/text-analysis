@@ -1,0 +1,118 @@
+Probleme bei Installation von Iteraplan 6.0.0	"Hallo Iteratec-Support-Team
+
+ 
+
+Nachdem ich die ToDo-Liste fast durch hatte, scheiterte es zum Schluss…
+
+
+
+OK      Tomcat (Version 7.0.71) anhalten
+
+OK      Backup ziehen von Datenbank und Server
+
+OK      Iteraplan 5.1 – Sicherheitskopie anlegen
+
+OK      Auf letzte Version von Java 8.131 updaten
+
+OK      Iteraplan 5.1 durch 6.0 ersetzen 
+
+OK      Datenbank von MS SQL Server 2008 auf 2012 umziehen.
+
+OK      Datenbank nacheinander auf 5.2, .5.3, 5.4, 5.5 und 6.0 migrieren
+
+FAIL    Alles wieder starten
+
+
+
+Fehlermeldung im Tomcat Web Application Manager:  “FAIL - Application at context path
+
+/iteraplan could not be started”
+
+
+
+Installationsdatei: iteraplan-6.0.0-corporate-installer.zip
+
+
+
+Wir nutzten vorher problemlos  die Iteraplan-Version 5.1 mit MS-SQL und SS0. Diese wurde, wie empfohlen, undeployed.
+
+
+
+Danach wurde das Installationsfile ausgeführt und
+
+Einstellungen in iteraplan-auth.properties und iteraplan-db.properties angepasst.
+
+
+
+Die Konfiguration des Apache Tomcat hatte sich durch diese Aktion ja nicht geändert.
+
+
+
+Leider lässt sich die Iteraplan nicht starten. Die Log-Files habe ich dieser Mail angehängt.
+
+ 
+
+Vielleicht können sie mir einen Tipp geben, wie wir
+
+Iteraplan 6.0.0 doch noch zum Laufen bringen können.
+
+ 
+
+Hier noch ein Hinweis  à   Fehler in migration_iteraplan_550_to_60_sqlserver.sql
+
+
+
+ 
+
+
+
+CREATE TABLE [VERSION] (
+
+[ID] INT NOT NULL,
+
+[IP_VERSION] NVARCHARiteraplan_mssql6iteraplan_mssql6(255) NOT NULL,
+
+PRIMARY KEY CLUSTERED
+
+([ID] ASC)
+
+)
+
+
+
+Freundliche Grüße, Wolf-Thielo Thiele
+
+
+
+"		Fault	iteraplan Support	19/Jul/17 8:56 AM	19/Jul/17 11:06 AM														"19/Jul/17 8:56 AM;wolf-thielo.thiele@bs-card-service.com;
+
+[^localhost.2017-07-18.log] _(238 kB)_
+
+[^localhost_access_log.2017-07-18.txt] _(9 kB)_
+
+[^manager.2017-07-18.log] _(10 kB)_"	"19/Jul/17 9:33 AM;cst;Guten Tag Herr Thiele,
+
+vielen Dank für Ihre Anfrage.
+
+Wurde wären der Installation das Verzeichnis geleert, in welchen die Index-Dateien von iteraplan angelegt werden?
+In den Logfiles taucht hier ein Problem auf, das er versucht einen alten Index zu laden, der nicht mehr gültig ist.
+
+Den Pfad zu diesem, dieses finden Sie in der ""iteraplan.properties"" unter dem Punkt:
+
+###############################################################################
+# Hibernate Search's index location (typically a relative path)
+###############################################################################
+hibernate.search.index= *Pfad zum Index*
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+ "	"19/Jul/17 11:05 AM;wolf-thielo.thiele@bs-card-service.com;Hallo Herr Stangl
+
+Danke für die schnelle Antwort.
+Ja, das war es. Verzeichnis gelöscht. Anwendung startet. Alles gut.
+
+Beste Grüße, Wolf-Thielo Thiele
+
+"																																																				

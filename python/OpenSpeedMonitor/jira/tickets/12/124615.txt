@@ -1,0 +1,5 @@
+Breadcrumbs flicker	reproduce in all diagrams when change some params		Bug	iteraplan PO	16/Jun/17 1:48 PM	19/Jun/17 3:56 PM														"19/Jun/17 1:08 PM;mash;Review is done: [https://iteraweb.iteratec.de/fisheye/cru/IP-701]
+
+
+
+For next bug ticket please create proper description with steps to reproduce and expected results and so on..."																																																						

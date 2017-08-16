@@ -1,0 +1,9 @@
+Emf-Export: Access without permission to Attribute Group	"In TC4 of the Emf-Export tests, the user without permission can access new created Attribute Group.
+Take a look at the attachments."		Bug	iteraplan PO	23/Oct/14 4:25 PM	28/Oct/14 1:29 PM														23/Oct/14 4:34 PM;fam;Error recognized during Test-Ticket	"28/Oct/14 10:31 AM;sfe;Clarified the expected result of the test sheet here:
+The logged-in user should not be able to see the attribute group (and its attributes) he doesn't have permissions for only when looking at building block views (overview or detail view).
+In the administration menu however, when given permission to configure attributes or attribute type groups, all ATGs and attributes should be visible.
+I've confirmed this behavior.
+
+I've also been able to download an XMI bundle according to the last step of TC4 and to verify the not visible building block type and attribute were not exported. The comment ""no right for doing that"" in the attached test sheet seems to indicate that no export was possible due to permission issues, the ""OK"" flag however disagrees.
+
+Please clarify, [~fam]."	28/Oct/14 1:29 PM;isc;I've retested the TC4 successfully.																																																				

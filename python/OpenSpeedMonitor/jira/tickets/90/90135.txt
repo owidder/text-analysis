@@ -1,0 +1,233 @@
+Datenbankmigration MySQL -> Oracle	"Hallo zusammen,
+
+
+
+habe für die Swiss Life versucht, die iteraplan und iturm Datenbank von MySQL nach Oracle zu migrieren (in ein Schema). Bin dabei der Anleitung aus dem iteraplanWiki so gut es ging gefolgt (andere SQL Developer Version) und konnte die Daten auch mit einigen Ausnahmen migrieren. Die Ausnahmen waren die Tabellen atg, bb, bbt, ins, tc und ue - dort erhielt ich eine Fehlermeldung (wird bei Bedarf nachgeliefert).
+
+
+
+Wenn ich iteraplan nun starte und die Oracle DB angebe kann ich mich zwar einloggen, sehe allerdings keinerlei Bebauungselemente. Hat das mit den fehlenden / nicht vollständigen Tabellen zu tun?
+
+
+
+Viele Grüße,
+
+Daniel"		Technical question	iteraplan Support	11/Jul/16 1:07 PM	30/Aug/16 7:00 AM														"12/Jul/16 9:36 AM;cst;Hallo Daniel,
+
+
+
+ja genau das ist die Ursache das die Inhalte nicht korrekt angezeigt werden. 
+
+Um die Datenmigration sauber durchführen zu können, benötige ich folgende Angaben und den aktuellen Datenbank-Dump des Kunden:
+
+
+
+- Welche Version von MYSQL setzt der Kunde ein?
+
+- In welche Version von Oracle möchte der Kunde die Daten einspielen? 
+
+- Welche Version von iteraplan ist auf dem System des Kunden im Einsatz?  
+
+
+
+Um eine Dateninkonsistenz zu vermeiden, sollte er solange die Migration durchgeführt wird, keine neuen Datensätze im iteraplan anlegen. 
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl iteraplan Support 
+
+"	"12/Jul/16 10:17 AM;dne;Hallo Christoph, 
+
+* die MySQL Version ist 5.5.3-m3-community und 
+* soll nach Oracle 11g migriert werden. 
+* Auf Seiten iteraplan sind wir bei der aktuellen 5.2. 
+
+Habe den Dump angehängt. Beide Datenbanken sollen zusammengefasst werden, da wir auf Seiten Oracle nur einen Nutzer d.h. ein Schema haben. 
+
+Wann wirst du dich denn darum kümmern können? Ruf mich bitte kurz an (-862, wird auf's Handy weitergeleitet).
+
+Vielen Dank für deine Unterstützung!
+
+[^20160712_iteraplan_iturm.zip] _(2,08 MB)_"	"12/Jul/16 4:30 PM;cst;Hallo Daniel,
+
+
+
+habe die Dantebank in Oracle unter einem Schema erstellt und die Daten aus den MYSQL-Dumps übernommen.
+
+Mir ist jetzt nach unzähligen Tests kein Problem mit der migrierten Datenbank aufgefallen. 
+
+
+
+Würdest du dir die Datenbank für Oracle 11g einmal bei dir einspielen und den Datensatz gegen prüfen.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support "	"13/Jul/16 1:08 PM;dne;Hi Christoph,
+
+kann ich machen, wenn du mir deinen Export schickst bzw. hier anhängst.
+
+Viele Grüße,
+Daniel"	"13/Jul/16 1:31 PM;cst;Hallo Daniel,
+
+sorry hier die Sicherungsdatei:
+
+[^oracle11gSwissLife.zip]
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"14/Jul/16 11:25 AM;dne;Hallo Christoph,
+
+habe mal einen Blick in die SQL-Datei geworfen und dort ist immer von ""iteraplan"" die Rede. Wenn mein Schema nun iteraplantest heißt, reicht es die Namen konsequent umzubenennen (wenn auch tatsächlich das Schema gemeint ist)? Hatte erwartet, dass die Import-Datei dahingehen neutral wäre.
+
+Viele Grüße,
+Daniel"	"14/Jul/16 12:04 PM;cst;Hallo Daniel,
+
+habe den Vorgang nochmal geprüft und einen Schemafreien Export erstellt.
+Diesen habe ich gegen geprüft und hier taucht ""Iteraplan"" (was mein Schema war) nicht mehr auf.
+
+[^exportswisslifeohneschema.zip]
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"19/Jul/16 5:57 PM;dne;Hi Christoph,
+
+habe leider noch keinen Erfolg beim Import. Kannst du mir kurz die Schritte schreiben, die bei dir nötig waren, um das SQL File zu importieren? SQL Developer -> Verbinden -> ...
+
+Viele Grüße,
+Daniel"	"20/Jul/16 8:43 AM;cst;Hallo Daniel,
+
+bist du heute im Haus? 
+Dann komme ich kurz runter und wir schauen uns das mal zusammen an.
+
+Was kriegst du für eine Fehlermeldung? 
+
+Hier aber nochmals die Schritte:
+
+- SQL Developer starten 
+- Neuen Benutzer anlegen 
+- Bei den Rollen und Systemberechtigung habe ich alles auf erlaubt gestellt was ging 
+- Dann mit dem USER verbinden 
+- Das Skript in das Programm ziehen und auswählen welches Schema damit gefüttert werden soll 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"21/Jul/16 11:40 AM;dne;Hallo Christoph,
+
+der Punkt ""Bei den Rollen und Systemberechtigung habe ich alles auf erlaubt gestellt was ging"" hat mich wohl ausgebremst. Sehr wahrscheinlich hatte ich nicht die nötigen Rechte das zu tun was ich hätte tun sollen. Bin gerade auf der Suche noch einem Oracle Admin, der mit das aktuelle Schema platt macht und die Daten neu einspielt ...
+
+Viele Grüße,
+Daniel"	"22/Jul/16 10:37 AM;dne;Hi Christoph,
+
+folgende Rückmeldung kam vom DBA: 
+""Ich habe für die Installation ein Logfile erzeugt, Sie können es unter H:\oracle\ablage\iteraplantest.log anschauen, es ist zu groß um es zu verschicken. Ich glaube es gibt noch Fehler bei Packages."" - Zugriff habe ich darauf erst am Dienstag :(
+
+In iteraplan sieht es folgendermaßen aus (Rückmeldung Daniel Goetze):
+
+Teilerfolg:
+Anmelden kann ich mich
+
+Sobald ich über EA-Daten – Informationssysteme auf das erste Inofrmationssystem in der Liste klicke, kommt die Fehlermeldung
+Ein allgemeiner technischer Fehler ist aufgetreten“
+
+Bei Schnittstellen derselbe Fehler wie oben.
+
+Bei Geschäftsobjekten:
+No row with the given identifier exists: [de.iteratec.iteraplan.model.BusinessObject#4865]; nested exception is org.hibernate.ObjectNotFoundException: No row with the given identifier exists: [de.iteratec.iteraplan.model.BusinessObject#4865]
+
+Bei Geschäftsprozessen scheint es zu gehen
+Noch nicht ganz das, was ich erwartet hätte ;-). Weiter habe ich dann auch noch nicht mehr getestet.
+
+
+
+Spontan eine Idee dazu?"	"22/Jul/16 10:43 AM;cst;Hallo Daniel,
+
+würdest du bitte mal den Index neu erzeugen.
+Habe die Datenbank hier und kann die Verhalten nicht nachvollziehen. 
+
+Spiele die Daten bei mir erneut in ein leeres Schema ein und schaue mir das nochmals an.
+
+Grüße,
+
+Christoph 
+"	22/Jul/16 10:47 AM;dne;Stimmt, ein Hoffnungsschimmer :) Gebe ich direkt weiter. Kannst mit dem Einspielen noch warten, bis ich Rückmeldung habe.	"22/Jul/16 10:57 AM;dne;beim Erzeugen des Index kommt die Fehlermeldung „No row with the given identifier exists: [de.iteratec.iteraplan.model.BusinessObject#4800]“
+
+Die Fehlermeldung kommt auch, wenn ich den DB-Cache vor dem Neuerzeugen des Index leere.
+
+
+
+Log findest du anbei "	"25/Jul/16 4:56 PM;cst;Hallo Daniel,
+
+
+
+das von dir beschriebene Verhalten, konnte ich jetzt nachvollziehen (habe nicht das erste Element gewählt, sondern das zweite) 
+
+Hier scheint eine Tabelle bei der Datenmigration doppelt rein gelaufen zu sein.
+
+
+
+Mit dieser Nachricht kriegst du eine komplett neu erstellte Datensicherung ohne Schema. Habe den Vorgang hier nochmals in ruhe von vorne bis hinten geprüft und getestet
+
+Die Fehlverhalten tauchen nicht mehr auf.
+
+
+
+[^swisssicherung2.zip]
+
+
+
+Viele Grüße,
+
+
+
+Christoph 
+
+
+
+"	"26/Jul/16 9:24 AM;dne;Hallo Christoph,
+
+was bedeutet ""ohne Schema""? In der angehängten Datei stehen doch create table Statements.
+Sollte man das bestehende Schema doch platt machen und komplett neu aufsetzen oder das neue Skript drüber laufen lassen, oder alle vorhandenen Daten löschen und dann das Skript laufen lassen?
+
+Viele Grüße,
+Daniel"	26/Jul/16 9:25 AM;dne;Nur zur Info das Log vom Donnerstag	"26/Jul/16 9:28 AM;cst;Hallo Daniel,
+
+
+
+sollte auch schon funktionieren, wenn du alle Daten löscht und dann das Skript drüber laufen lässt.
+
+Die saubere Variante ist natürlich das bestehende Schema zu löschen und dies neu an zu legen.
+
+
+
+Viele Grüße,
+
+
+
+Christoph "	26/Jul/16 9:46 AM;dne;Ahh, ok, Schema im Sinne User ... Gebe das mal weiter und melde mich wieder. Danke!	"11/Aug/16 11:48 AM;dne;So, mal wieder ein Update von mir ... Kam die letzte Zeit leider nicht dazu das Thema weiter zu treiben.
+
+Letzte Info, die ich vom Oracle Admin bekommen habe:
+""der Tablespace heißt bei uns ITERAPLAN nicht USERS. Ich habe das Skript angepaßt und gerade noch mal gestartet.""
+
+Ergebnis davon steht im Log (angehängt als iteraplan52Import_20160725.log.zip).
+
+Habe danach Tomcat neu gestartet und den Index neu erstellen lassen mit dem Ergebnis, dass beim Seiten-Refresh eine Fehlermeldung kommt (No row with the given identifier exists: [de.iteratec.iteraplan.model.InformationSystemRelease#7178], ProblemReport_2016-08-11_113531.zip).
+
+Ähnliches wenn ich auf die Übersichtsseite der Geschäftsobjekte wechsle (No row with the given identifier exists: [de.iteratec.iteraplan.model.BusinessObject#4865]).
+
+Alle anderen Übersichtsseiten kann ich aufrufen. Möchte ich dann jedoch ein Informationssystem direkt ansehen kommt wieder eine (andere) Fehlerseite (ProblemReport_2016-08-11_113745.zip)."	"11/Aug/16 12:32 PM;cst;Hallo Daniel,
+
+bist du heute im Haus?
+Kannst du hierzu mal kurz vorbei kommen, oder mir genau die Objekte mitteilen die den Fehler verursachen.
+
+Hast du den aktuellen Dump genommen? swisssicherung2.zip?
+
+Grüße Christoph 
+"																																		

@@ -1,0 +1,19 @@
+Remove mockup elements from UI	"*Summary:*
+Remove mockup elements from User Interface in all screens.
+
+*As-Is:*
+Several mockups (""Doris edited ..."", ""8 Alarms"", ""24 Messages"", ""Tutorial"", ""Save/Share"", ...) without functionality are still on different screens in the client.
+
+*To-Be:*
+All information on any screen is used, i.e. has a function and is no mockup.
+
+*Affected parts of the systems:*
+Almost all:
+* Start screen
+* Building Block list
+* Building Block individual view
+* Nesting Cluster Diagram
+* ....
+
+*Acceptance Criteria:*
+All information shown on any screen is either ""real"" information on the screen or directly clickable, i.e. has a function."		New Feature	iteraplan PO	24/Nov/14 8:42 AM	23/Dec/14 10:28 AM																																																																				

@@ -1,0 +1,19 @@
+Edit boolean switch on Attribute Groups	"*Summary:*
+
+Create Edit-Functionality for boolean switch (show next core attributes) of Attribute Groups.
+
+
+
+*UI:*
+
+* Use UI and interactions from Single Attribute View as blueprint (including error-handling)
+
+* Except for Toplevel attribute groups (always on)
+
+
+
+*Technology:*
+
+* Try to reuse common edit-components from Single Attribute View
+
+* Trigger reload-service using {{$scope.$emit(""triggerDataReset"");}} (IPTS-549)"		New Feature	iteraplan Speedbird	17/Feb/17 3:53 PM	13/Mar/17 3:31 PM														10/Mar/17 2:35 PM;olal;Resolved in other task	13/Mar/17 11:56 AM;dmkh;[~olal], please mention revision in which task is implemented.	13/Mar/17 11:57 AM;dmkh;One comment yet: https://iteraweb.iteratec.de/fisheye/cru/IP-429#c6957																																																				

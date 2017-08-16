@@ -1,0 +1,5 @@
+Beliebige statische Graphen in benutzerdefinierten Dashboards anzeigen 	"Für jedes benutzerdefinierte Dashboard sollte man festlegen können, welche statischen Graphen mit zur Anzeige kommen.
+
+
+
+Siehe IT-908"		Task	OpenSpeedMonitor	16/Feb/16 10:37 AM	18/Jan/17 2:31 PM														18/Jan/17 2:31 PM;sbr;duplicates IT-908																																																						

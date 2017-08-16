@@ -1,0 +1,75 @@
+Execute Saved queries before script	"As a Reactor user I want to specify a list of saved queries which are always executed before a XSLT script is executed.
+
+
+
+Already there:
+
+* UI components for configuration done in IPTQ-43
+
+* The configuration of the saved queries to be executed is already there. The saved queries comma separated string can be retrieved by a DAO. (IPTQ-26)
+
+* Execution of script is already implemented.
+
+
+
+Make the following points work (all server tasks):
+
+# Before the execution of the XSLT script read the saved queries from the config and execute them in the given order.
+
+
+
+# The result of a saved query is a XML file to be placed next to the XSLT script.
+
+# The content of the XML file is a list of building block ids (e.g. list of information system ids) in the following format: 
+
+{code}
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+<id>1</id>
+
+<id>2</id>
+
+{code}
+
+# The XML file should be named after the position of the saved query in the list. First executed saved query generates the file ""1.xml"" and the second the file ""2.xml"". overwrite existing files without warning.
+
+# If the user wants to use the generated XML files he has to know in what file the results of a saved query is stored"		New Feature	iteraplan Quickfox	14/Apr/16 7:16 PM	10/Aug/16 4:15 PM														06/Jul/16 10:55 AM;mwe;Assumption: The REST interface is already there to generate a xml-file into a specific graphics reactor directory.	"22/Jul/16 2:47 PM;msr;First ideas from sfe:
+
+* Check {{ReportBaseFrontendServiceImpl.java}} to see an example how to work with SavedQueryService. Check in this method the {{loadSavedQuery}}-method and {{requestEntityList}}-method
+
+* in {{ReportXML.java}} you see the {{queryResults}}
+
+
+
+* Use {{QueryServiceImpl}} to load queryResults and process them (maybe it's necessary to extend {{QueryServiceImpl}} to not only work with memBeans)
+
+* Create your own functionality to write a flat xml-file"	"08/Aug/16 6:13 PM;tsu;I changed the format of the xml file to 
+
+{code:java}
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+<ids>
+
+    <id>1</id>
+
+    <id>2</id>
+
+</ids>
+
+{code}
+
+
+
+because xml files can only have one root node"	09/Aug/16 4:08 PM;tsu;There is a separate ticket for the unit tests. For the release the saved query execution has to be tested manually.	"10/Aug/16 1:42 PM;mse;Review comment:
+
+
+
+I get a FileNotFundException after the query is executed and when the id list should be written to the xml file which can be reproduced by Christoph. I tried to fix it (see commit 25752) and for me it works now.
+
+
+
+Does that work on all windows and unix based systems now?
+
+"																																																		

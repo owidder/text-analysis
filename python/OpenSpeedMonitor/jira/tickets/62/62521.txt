@@ -1,0 +1,1 @@
+Auflistung der verwendeten Variablen bei Skripterstellung fehlt			Bug	OpenSpeedMonitor	04/Nov/15 5:12 PM	05/Nov/15 11:43 PM																																																																				

@@ -1,0 +1,5 @@
+Filter TB by infrastructure	"When filtering technical components by infrastructure, I receive an error message for the attached log file.
+
+How to reproduce:
+
+Define any query on technical components, extend query by associated infrastructure and select ""no association""."		Bug	iteraplan PO	05/Jul/11 6:40 PM	06/Jul/11 10:41 AM					query																																																															

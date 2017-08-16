@@ -1,0 +1,17 @@
+Changes of ENUM attribute don't get saved reliably	"Workflow (tested with an IS):
+1. click edit 
+2. change an enumeration attribute to a different value
+3. click save
+
+Result:
+New selection only gets saved occasionally.
+
+More details:
+The POST request doesn't contain the corresponding line, i.e. componentModel.attributeModel.atgParts[7].atParts[0].avIdToSet=12449
+It isn't empty, it simply doesn't exist.
+
+The reasons seems to be, that the hidden HMTL-select is not updated along with the visible dropdown (see image 1)
+
+This issue could be reproduced with IE 9, not with Chrome 33.
+
+"		Bug	iteraplan PO	20/Mar/14 2:16 PM	25/Mar/14 3:34 PM																																																																				

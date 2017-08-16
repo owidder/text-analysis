@@ -1,0 +1,11 @@
+Create a Test Scheme for the LSD	"Based on the model of the test description files located under iteraplan/doc/test/ create a test scheme for the LSD.
+
+This includes the following steps:
+
+* Create a matrix of the input parameters and their possible values
+
+* Define a matrix of the possible output parameters and their values
+
+* Create test cases which describe the steps one has to perform to configure the creation of a LSD based on these input parameters
+
+* Match the test cases and the input and output parameters so that every cell in the matrix appears at least once in a test"		Improvement	iteraplan PO	01/Oct/15 10:43 AM	06/Nov/15 7:23 AM																																																																				

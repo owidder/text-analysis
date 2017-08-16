@@ -1,0 +1,21 @@
+Create go.js Diagram with node template for content and axes boxes.	"In the LSD diagram configuration (D), add to the go.js Diagram a node template for the colored boxes of the LSD content matrix and the category axes.
+
+Details:
+1.
+* Remove static dummy elements of the LSD diagram configuration (D).
+* The node template should have a data binding for 
+** coordinates (x,y) and 
+** dimensions (height, width) and
+** text (one line)
+** background color
+** not yet: icon
+** not yet: multiline label
+
+2.
+* create statically in the LSD main class (C) a mockup graph with nodes that contain all properties that are data-bound in the node template of the LSD diagram configuration (D)
+* the resulting diagram should be simple
+** 2 rows, 2 columns
+** 5 items, because one cell has 2 items, the other three cells have exactely 1 item
+* the names of the building block types of the axes are also variable texts. It should be part of the graph nodes, too.
+* Note: the type of the vertical axis (e.g. Technical Component) should be horizontal (normal) text, not vertical. it should be placed above the items of the axis. (See Tanias 4mockup of 15th Dec in the ticket IPNINE-231)"	47318	Sub-task	iteraplan PO	26/Feb/15 3:07 PM	11/Mar/15 4:44 PM														"11/Mar/15 4:44 PM;wfr;Basic LSD ticket now split in a different way.
+"																																																						

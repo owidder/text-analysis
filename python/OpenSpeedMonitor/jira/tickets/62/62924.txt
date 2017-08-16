@@ -1,0 +1,13 @@
+Create new test cases: switch between classic and interactive client in LSD	"please edit the e2e-test tracability excel sheet located in e2etest subfolder after implementing the tests
+
+
+
+create a new test file.
+
+
+
+create the following test cases:
+
+- from LSD classic to LSD interactive
+
+- from LSD interactive to LSD classic"	62908	Sub-task	iteraplan PO	09/Nov/15 9:46 AM	09/Nov/15 4:01 PM					LSD	Test																																																														

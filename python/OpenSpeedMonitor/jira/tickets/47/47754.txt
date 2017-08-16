@@ -1,0 +1,4 @@
+License-related log warning when there are exceptions in LITE edition	"iteraplan LITE edition should work without license.
+Thus the above-mentioned warn message in the log file may be confusing.
+
+Please change the problem report generation (where this log warning is generated) so that no license-related messages are generated for the LITE edition."		Bug	iteraplan PO	11/May/15 5:17 PM	18/May/15 9:10 AM					license																																																															

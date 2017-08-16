@@ -1,0 +1,27 @@
+Option: "Show orphaned elements"	"*Summary:*
+
+Create a new option to show orphaned elements, i.e. outer elements *without* an inner element.
+
+
+
+*Implementation Details:*
+
+* Default is deactivated
+
+* If no inner elements exist, please use for the orphaned outer element the same size as for the inner element.
+
+* Url: Save configuration in URL
+
+
+
+*UI:*
+
+* Legend: Show only the activated option in the url:
+
+** New main entry:""Settings"" (German: ""Einstellungen"")
+
+** New sub-entry ""Including outer elements without an inner element"" (German: ""Enthält äußere Elemente ohne ein inneres Element"")
+
+* Toolarea: New subentry for ""Cluster"":
+
+** Toggle-Button: ""Show orphaned elements"" vs. ""Hide orphaned elements"" (German: ""Zeige verwaiste Elemente an"" vs. ""Blende verwaise Elemente aus"""		New Feature	iteraplan Speedbird	08/Aug/16 8:55 AM	08/Aug/16 5:32 PM														08/Aug/16 1:24 PM;msr;No icon for the toolarea																																																						

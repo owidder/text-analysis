@@ -1,0 +1,127 @@
+Installation von iteraplan 5.4 schlägt fehl	"Was bisher geschah:   ;-)
+
+
+
+Datenbank:
+
+Das Upgrade der Test-Datenbank von 3.41 auf 5.4 haben wir wie vorgeschrieben durchgeführt. Ergebnis: keine Fehlermeldungen und die Datenbank ist erreichbar. Die DB-Version ist Oracle12c und alle notwendigen Support-Packages sind eingespielt.
+
+
+
+Anwendung:
+
+Ziel war, zunächst eine Testinstallation der Anwendung in der Version 5.4 zu machen und diese mit der Test-DB zu verbinden. Während die Test-DB und die Prod-DB jeweils einen eigenen Server haben, haben wir nur einen App-Server zur Verfügung, auf dem wir bisher - und so wollten wir es wieder machen - sowohl die Test- als später dann auch die Prod-Anwendung laufen lassen. Hierzu deployen wir die Anwendungen in die Verzeichnisse $TOMCAT_HOME/webapps/iteraplan-t1 bzw. iteraplan-p1.
+
+
+
+Leider ist die Anwendung nach Installation nicht erreichbar. Die Logs sowie einige weitere Dateien, die vielleicht von Interesse sein könnten, füge ich an. Bitte lassen Sie mich wissen, wenn Sie noch weitere Informationen benötigen.
+
+
+
+Vielen Dank für Ihre Hilfe und freundliche Grüße,
+
+Christian Imme
+
+
+
+
+
+
+
+Christian Imme
+
+IT Architect
+
+ 
+
+Techem Energy Services GmbH
+
+Hauptstraße 89
+
+65760 Eschborn
+
+ 
+
+Tel.: +49 (0) 6196 / 522 - 2556
+
+Fax: +49 (0) 6196 / 522 - 34 - 2556
+
+Email: christian.imme@techem.de
+
+internet: www.techem.de
+
+
+
+"		Technical question	iteraplan Support	27/Dec/16 5:16 PM	29/Dec/16 5:06 PM														"27/Dec/16 5:16 PM;christian.imme@techem.de;
+
+[^Logs20161228.zip] _(18 kB)_"	"28/Dec/16 11:47 AM;fka;Hallo Herr Imme,
+
+vielen Dank für die Beschreibung des Problems und die verschiedenen Logdateien.
+
+Nach einer ersten Analyse sieht es aus, als ob ein Teil des Tomcat Application Servers nicht gefunden werden kann. Konkret wird eine Klasse (BasicDataSourceFactory) aus der Datei tomcat\lib\tomcat-dbcp.jar nicht gefunden. Die Datei ist Teil der Standardinstallaltion von Tomcat.
+
+In Ihrer Liste tomcat-lib.content ist die Datei tomcat-dbcp.jar nicht aufgeführt. Ist die Datei bei Ihrer Tomcat-Installation vorhanden? Für den Betrieb von iteraplan ist sie nötig.
+
+Mit besten Grüßen
+Fabian Kainzinger"	"29/Dec/16 9:45 AM;christian.imme@techem.de;Hallo,
+
+offenbar ist die Datei tomcat-dbcp.jar nicht Bestandteil der Pakete, die mit RHEL 7 ausgeliefert werden. Ich habe daher den Tomcat 7.0.69 deinstalliert und Tomcat 8.5.9 direkt von Apache installiert. Dort ist die Datei vorhanden. 
+
+Nach der Installation startet Tomcat korrekt (http://plas-eam-01:8080 liefert die Tomcat-Demoseite). Aber: sobald ich die in der iteraplan-Installationsanleitungen vorgeschriebenen Änderungen an server.xml mache, ist dies nicht mehr der Fall. Mit der modifizierten server.xml erscheint in den Logs u.a. ein Fehler, der auf die Zeile 'keystorePass=""iteraplan"" ' hinweist.
+
+Ist das ein Fehler, oder funktioniert nur die iteraplan-Anwendung mit diesen Einstellungen (Executor name=""iteraplanThreadPool"", usw.), die Demo-App dagegen dann nicht mehr? In der Hoffnung, dass letzteres der Fall sei, habe ich iteraplan erneut installiert: leider kein Erfolg.
+
+Als Versuch habe ich dann iteraplan deinstalliert, im Tomcat die Original server.xml wieder hergestellt und danach iteraplan erneut installiert, diesmal allerdings ohne TLS, also nur http. Ergebnis: Es öffnete sich zumindest die iteraplan-Anmeldeseite, auch wenn die Anmeldung nicht möglich war, wahrscheinlich, weil die Datenbank nicht erreicht werden konnte. (Logs bis Zeitstempel 17:22)
+
+
+Offenbar habe ich hier also zwei Probleme:
+1. Einstellungen in der server.xml sind entweder falsch oder führen dazu, dass mit diesen Einstellungen Tomcat nicht starten kann
+2. Die Datenbankverbindung kommt nicht zustande
+
+
+Ich füge wieder die aktuellen Logs an. Wenn Sie dort jetzt keinen neuen Hinweis finden, so würde ich um eine Live-Session bitten, in der Sie direkt am System den Fehler analysieren und beheben können.
+
+Vielen Dank und Grüße,
+
+Christian Imme  
+
+
+
+PS: Frage am Rande: muss die Installation von iteraplan denn so kompliziert sein? Ich bin zwar kein Entwickler, aber wäre nicht eine Version sinnvoll, die z.B. auf Spring Boot basiert, wo der Tomcat embedded läuft? Oder noch besser, ein Docker-File, damit man sich dieses umständliche Herumgeschraube an Config-Files sparen kann?
+
+
+[^logs3.zip] _(13 kB)_"	"29/Dec/16 11:01 AM;fka;Hallo Herr Imme,
+
+tut mir leid, dass Sie weiterhin Probleme mit dem Upgrade auf iteraplan 5.4 haben.
+
+Wir haben die Logfiles analysiert und haben folgende Punkte gefunden:
+* In der server.xml im Connector für SSL im Attribut ""protocol"" statt dem aktuellen Wert ""HTTP/1.1"" eintragen. Wir haben die Beispiele in unserer Doku ebenfalls entsprechend angepasst, da dies mit Tomcat 8 nicht immer funktioniert. Sorry für das ""falsche"" Beispiel. 
+* Für SSL & Tomcat können wir leider nur begrenzt Support leisten. Die Dokumentation von Tomcat zu dem Thema bietet einiges an Informationen: 
+https://tomcat.apache.org/tomcat-8.0-doc/ssl-howto.html
+Der Fehler mit der server.xml muss nicht unbedingt mit der letzten Zeile (dem Keystore) etwas zu tun haben, sondern betrifft wahrscheinlich das gesamte Connector-Element.
+
+Eine Live-Session können wir bei Bedarf vss. kurzfristig morgen durchführen.
+
+Ja, die Installation von iteraplan sollte einfacher werden. Dies treiben wir bereits voran. Mit dem Release 5.5 ca. Ende Januar 2017 wird ein Docker-Image zur Verfügung gestellt. Eine SaaS-Lösung ist in der Konzeption und kommt im 1. HJ 2017.
+
+Mit besten Grüßen
+Fabian Kainzinger
+"	"29/Dec/16 2:26 PM;christian.imme@techem.de;Hallo Herr Kainzinger,
+
+ok, das hat den Tomcat wieder starten lassen. Aktuell sieht es so aus:
+
+iteraplan startet, wenn bei der Installation HTTP ausgewählt wurde. Eine Datenbankverbindung gelingt jedoch nicht.
+
+iteraplan startet gar nicht, wenn bei der Installation HTTPS ausgewählt wurde.
+
+Inzwischen denke ich, dass etwas mit unserer Netzwerkonfiguration nicht stimmt. Bevor wie eine Live-Session machen - danke für das kurzfristige Angebot, allerdings bin ich morgen nicht im Büro - will ich daher erst einmal abklären, ob alle notwendigen Ports frei sind. Da wir einen externen Provider haben, kann das ein paar Tage dauern (wer weiß, vielleicht warte ich dann auf das Docker-Image?). Ich werde mich wieder melden, wenn dieser Punkt geklärt ist. Bis dahin erst einmal vielen Dank und einen Guten Rutsch ins neue Jahr.
+
+Freundliche Grüße,
+Christian Imme"	"29/Dec/16 5:05 PM;fka;Hallo Herr Imme,
+
+gut zu hören, dass Sie etwas weitergekommen sind - auch wenn iteraplan noch immer nicht komplett läuft bzw. auf die DB zugreifen kann. Ich schließe jetzt erstmal das Support-Ticket und warte auf Ihre Rückmeldung.
+
+Ihnen auch einen guten Start ins neue Jahr 2017!
+
+Mit besten Grüßen
+Fabian Kainzinger"																																																	

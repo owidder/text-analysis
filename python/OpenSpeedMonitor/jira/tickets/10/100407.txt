@@ -1,0 +1,59 @@
+Implement permission handling for Saved Queries	"*Summary:*
+
+There exists no permission handling for (public or private) Saved Queries, i.e. when you load a query where you have no permission, you'll get an exception.
+
+Furthermore, if there is no content type specified in the saved url (e.g. default Pie Chart), you get another exception.
+
+
+
+*Details:*
+
+* Implement permission handling in SQipList-component.js \ function getBBTypeFromQuery()
+
+* In this switch-case there exists already a permission handling for the NCD. This is needed for all other cases, too
+
+* *This means, if the user who loads the saved query (=url) and has not the permission for a Building Block in the url, the user gets a message stating no permission*
+
+* Ensure, that this permission handling can also deal with a default diagram and a default url (""#/pcd?featureName=%2Fpcd"")
+
+
+
+*Exemplary stacktrace:*
+
+{code}
+
+angular.js:13424 TypeError: An exception occurred: Cannot read property 'persistentName' of undefined
+
+    at getBBTypeFromQuery (http://localhost:9002/savedQueries/SQipList-component.js:161:44)
+
+    at http://localhost:9002/savedQueries/SQipList-component.js:191:26
+
+    at Array.forEach (native)
+
+    at processQueriesForRowData (http://localhost:9002/savedQueries/SQipList-component.js:190:17)
+
+    at http://localhost:9002/savedQueries/SQipList-component.js:76:17
+
+    at processQueue (http://localhost:9002/bower_components/angular/angular.js:15757:28)
+
+    at http://localhost:9002/bower_components/angular/angular.js:15773:27
+
+    at Scope.$eval (http://localhost:9002/bower_components/angular/angular.js:17025:28)
+
+    at Scope.$digest (http://localhost:9002/bower_components/angular/angular.js:16841:31)
+
+    at Scope.$apply (http://localhost:9002/bower_components/angular/angular.js:17133:24)(anonymous function) @ angular.js:13424
+
+{code}
+
+
+
+*UPDATE:*
+
+- Just handle permissions of diagram queries to avoid exception on query list page.
+
+- If diagram is attribute based, let query be loaded. 
+
+- Or if diagram is based on several bb types (axis, or rows/columns), check only permission for the main element type (e.g. header in CCD or 1 level of MPD diagram). 
+
+When the diagram is loaded with query it should check all other permissions itself."		Improvement	iteraplan PO	25/Oct/16 9:38 AM	26/Oct/16 12:04 PM																																																																				

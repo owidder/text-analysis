@@ -1,0 +1,11 @@
+Das dump-Tool erzeugt fehlerhafte Dumps	"Per Jenkins-Job wird nächtlich ein Dump der OTTO-DB erzeugt:
+
+http://seu.hh.iteratec.de:8081/view/OpenSpeedMonitor/job/DUMP_OTTO_OSM_DB_LAST_30_DAYS/
+
+
+
+Dieser nutzt ein sql-Skript, welches Thomas Heigl geschrieben hat (gitolite-repo: ssh://git@git.hh.iteratec.de:10022/utilities).
+
+
+
+Bei dessen Ausführung kommt es zu einem {code}Lock wait timeout exceeded{code} Fehler. Es sind im Dump keine Daten für measured_value enthalten. Ein manueller Dump der gesamten DB per mysqldump dauert zwar 7 Minuten und produziert ein 3,8 GB Dumpfile, funktioniert aber. "		Bug	OpenSpeedMonitor	22/Oct/15 3:42 PM	18/Dec/15 12:07 PM														18/Dec/15 12:07 PM;nku;Hat Marcus bereits umgesetzt.																																																						

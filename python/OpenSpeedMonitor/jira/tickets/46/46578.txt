@@ -1,0 +1,4 @@
+BPartialMetamodel does not allow RelationshipTypes as main type	"therefore, the writeable REST API cannot operate on RelationshipTypes
+
+Expected: 
+The writeable REST API should be able to operate also on RelationshipTypes"		Bug	iteraplan PO	16/Apr/14 10:03 AM	16/Apr/14 3:00 PM																																																																				

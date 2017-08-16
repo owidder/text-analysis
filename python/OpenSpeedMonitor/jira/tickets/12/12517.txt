@@ -1,0 +1,15 @@
+OTTO-Spezifika aus Javadoc-Kommentaren herausnehmen	"Aus den Javadocs sollen alle OTTO-Spezifika heraus.
+
+Bitte nach den folgenden Worten suchen (Eclipse-Filesearch in allen Files: *):
+
+* otto
+
+* ottogroup
+
+
+
+Ersetzen mit sinnvollem Begriff, z.B. ""owner of the site"" oder ""mycompany"", je nach Inhalt des Javadocs."		Task	OpenSpeedMonitor	04/Jun/14 11:44 AM	05/Nov/14 10:06 AM														05/Nov/14 10:03 AM;rhc;Wurde mit Ticket: IT-415 erledigt	"05/Nov/14 10:06 AM;rhc;Alle Javadoc-Kommentare, die Otto Spezifika enthalten hatten wurde entfernt oder durch Begriffe wie example.de, mycompany ersätzt. Damit der inhaltliche Kontext bestehen bleibt.
+
+
+
+Wurde mit dem Ticket: IT-415 gelöst"																																																					

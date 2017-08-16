@@ -1,0 +1,97 @@
+Distrigation: Create new UI	"*Summary:*
+
+Create new UI for Distrigation/Level Filter
+
+
+
+*Details:*
+
+* In scope of this ticket only do the UI components, functionality is in a separate ticket: IPTS-395
+
+*  Use a third-party library to display vertical slider (similiar to Angular Materials Style, no bootstrap)
+
+** Check license in collaboration with [~msr] (MIT, Apache 2, ...)
+
+* Create common code which can be used in all other diagrams, too
+
+
+
+*Interaction:*
+
+* In LSD: Content Toolarea\Conent Filter: 2. entry ""Hierarchy Level Filter"" (German: Hierarchie-Stufen Filter"")
+
+* After clicking on this entry a new modal dialog opens
+
+* Same applies for both axes
+
+
+
+*UI:*
+
+* UI of this dialog:
+
+** header: ""Hierarchy Level Filter"" (German: Hierarchie-Stufen Filter"")
+
+** content:
+
+** ""Level"" (German: ""Stufe"")
+
+** vertical slider which is draggable from bottom and top
+
+** values for the vertical slider are the existing hierarchy levels
+
+** 2 draggable points
+
+** Default all values are selected of the slider
+
+** right next to the slider are two checkboxes (one on top, one on bottom)
+
+** Text right of the upper checkbox: ""Distribution"" (German: ""Distribution"") 
+
+** Text right of the lower checkbox: ""Aggregation"" (German: ""Aggregation"")
+
+** Bottom of the dialog:
+
+** Tow buttons: ""Undo"" and ""Close""
+
+
+
+Height of the slider is fixed
+
+Check case with only one level.
+
+
+
+* Axis-dialog has one additional checkbox-option ""Flat"" (German:""Flach"") which when activated, deactivates the silder and all other checkboxes of the dialog
+
+
+
+{color:red}UPDATE: {color}
+
+
+
+*     alignment of elements on dialog window (is everything on its place? Also, please specify position of ""Flat"" checkbox):
+
+** Move ""Flat""-option in the next line right under ""Level""
+
+*     color of slider points (currently colored in the same way as ""Close"" button);
+
+** Great
+
+*     color of checked checkboxes (currently colored in the same way as ""Close"" button);
+
+** Great
+
+*     icon for this filter in toolArea.
+
+** Please re-use the existing filter icon
+
+"		Improvement	iteraplan Speedbird	02/Dec/16 4:15 PM	19/Dec/16 2:33 PM														"15/Dec/16 3:36 PM;dmkh;[~msr], the UI of Hierarchy level filter is almost finished, there are few things to clarify (please, see the attached screenshots of current implementation of filter dialog):
+
+- alignment of elements on dialog window (is everything on its place? Also, please specify position of ""Flat"" checkbox);
+
+- color of slider points (currently colored in the same way as ""Close"" button);
+
+- color of checked checkboxes (currently colored in the same way as ""Close"" button);
+
+- icon for this filter in toolArea."	16/Dec/16 3:17 PM;dmkh;Used https://github.com/angular-slider/angularjs-slider element (as discussed on planning) which is under MIT license.	19/Dec/16 9:56 AM;msr;[~dmkh]: Please send the information about the new library to [~mwe]. He'll include this in our overview of used libraries. Thanks.	19/Dec/16 1:29 PM;mwe;Sent the email with the mentioned new library to [~mse].	19/Dec/16 2:33 PM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-236																																																		

@@ -1,0 +1,5 @@
+Merge Feature-Branches	Wenn die Oberflächentests laufen, kann der extra Feature-Branch in den feature/detailAnalysis-Branch gemerged werden.		Task	OpenSpeedMonitor	29/Jun/16 2:15 PM	03/Aug/16 8:32 AM														"27/Jul/16 4:33 PM;mmi;Den Test-PLan des Bamboo dann auch übernehmen.
+
+Gemerged wird in den develop-Branch, nicht in den anderen Feature-Branch.
+
+Alter Branch und Bamboo-Plan können dann gelöscht werden."																																																						

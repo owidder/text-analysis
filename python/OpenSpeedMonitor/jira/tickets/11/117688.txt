@@ -1,0 +1,9 @@
+Graphics Reactor: "Saved queries before" in the NC	"""Execute saved queries before"": Switch from old client queries to queries in the new client. Instead of a text field, present a multi select input field with all saved queries to the user. Be aware that the order of saved queries is relevant.
+
+
+
+Use IPTT-399 for generating the list of IDs.
+
+
+
+No migration of currently configured saved queries necessary. So all configurations will have no configured saved queries after implementation of this ticket."		Epic	iteraplan Thunderduck	04/Apr/17 5:28 PM																																																																					

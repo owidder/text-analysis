@@ -1,0 +1,63 @@
+Add REST interface	"As an adjacent system I want to access the iteraplan Graphics Reactor's functions via REST:
+
+* upload / download / delete a single file
+
+* get a file list of a specific directory within the reactor
+
+* create and delete directories
+
+* start a script, get the log of the execution
+
+* Configure ""Saved queries before"" 
+
+
+
+The functionality above is the same as the one that the interactive Client uses, so it could be the same resource in the REST API.
+
+
+
+Here included:
+
+* documentation for the system integrator
+
+* a simple example (script with wgets for example).
+
+"		New Feature	iteraplan Quickfox	14/Apr/16 6:59 PM	01/Sep/16 11:12 AM														22/Jul/16 11:38 AM;mwe;For documentation check http://swagger.io/	"28/Jul/16 1:15 PM;mwe;Already done:
+
+* upload / download / delete a single file
+
+* get a file list of a specific directory within the reactor
+
+* create and delete directories
+
+* start a script with execution log (e.g. success or error messages)
+
+* Configure ""Saved queries"" and ""published URL""
+
+
+
+TODO:
+
+* Independent configuration of Saved Queries and Publishing
+
+** Define REST API
+
+** 2 new REST interfaces
+
+* Documentation of the graphics reactor REST API including simple examples"	03/Aug/16 5:40 PM;fka;swagger.io out of scope for now	"16/Aug/16 10:41 AM;mwe;Documentation: https://www.iteraplan.de/doc/display/iteraplan54/Graphics+Reactor
+
+Section REST API"	16/Aug/16 4:23 PM;mwe;Issue with documentation of script config REST API: IPTQ-26	"18/Aug/16 6:00 PM;pma;DONE
+
+* interface extended
+
+* resource, key and hanlder added
+
+* all neccessarry classes added
+
+* resource type added
+
+
+
+TO DO
+
+* specification of methods in handler classes (similar to the existing rest interface classes)"	01/Sep/16 11:09 AM;tsu;I adjusted the documentation. Now the paths to the files are starting with "/" everywhere.																																																

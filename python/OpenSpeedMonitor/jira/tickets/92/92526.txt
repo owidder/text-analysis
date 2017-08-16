@@ -1,0 +1,19 @@
+Daten in der Mongo sind nicht korrekt	"Sieht man sich einmal den MongoDump an, stehen da beispielsweise fogende daten für ein asset drin:
+
+
+
+bytesIn: 8881
+
+bytestOut: 8881
+
+connectTimeMs: 64
+
+downloadTimeMs: 22
+
+indexWithinHar: 8881
+
+loadTimeMs: 8881
+
+
+
+Da ist also ein Fehler beim Persistieren der Ergebnisse"		Bug	OpenSpeedMonitor	05/Aug/16 11:15 AM	05/Aug/16 2:23 PM																																																																				

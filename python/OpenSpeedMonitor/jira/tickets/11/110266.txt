@@ -1,0 +1,13 @@
+Duration in Filter	"Go to the technical components and filter them according to 
+
+
+
+Productive period - between - 02/01/2017 - to (last not set)
+
+
+
+Expected outcome: all elements with productive period that is at least partly after this time are shown
+
+Actual outcome: only elements with end time are shown, those without endtime are neglected
+
+"		Bug	iteraplan PO	01/Feb/17 3:32 PM	03/Feb/17 12:38 PM														03/Feb/17 12:38 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-332																																																						

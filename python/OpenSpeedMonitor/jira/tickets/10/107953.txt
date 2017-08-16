@@ -1,0 +1,17 @@
+Quick Filter fails with grouped attribute columns	"_Reproduce (with sample data):_
+
+# In interactive client, open list view for Information Systems
+
+# Add ""Relation to Business Objects"" column group
+
+# Add ""Relation IS-BO - CRUD""
+
+# Type anything in quick search
+
+
+
+Problem: quick filter doesn't work
+
+
+
+Possible reason: Cells in attribute columns inside column groups can contain an Array of Arrays, and the search function might have to be adjusted for this case."		Bug	iteraplan Thunderduck	10/Jan/17 4:57 PM	16/Jan/17 10:23 AM																																																																				

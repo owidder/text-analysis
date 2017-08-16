@@ -1,0 +1,1 @@
+Zap-Spider & Zap-Scanner als Komponente auslagern in den secureBoxZap (microservice) Container			Story	secureCodeBox	10/Jul/15 4:10 PM	08/Sep/16 11:19 PM	secureBoxEngine	secureBoxZap			iteratec																																																															

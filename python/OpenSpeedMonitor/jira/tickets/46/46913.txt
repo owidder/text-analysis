@@ -1,0 +1,7 @@
+Repair script 3.3.0 to 3.3.1 for MySQL doesn't handle version duplicates correctly	"_Reproduce (with sampledata version 3.3.0, MySQL):_
+# Edit the database so that in the table ISR there are two rows with the same values in columns ID_INS and VERSION.
+# Execute the repair script on the database
+
+_Expected:_ The VERSION-value in both rows was renamed by adding a suffix. ""(1)"" in the first, and ""(2)"" in the second row.
+
+_Actual:_ Both rows got the suffix ""(1)""."		Bug	iteraplan PO	27/Aug/14 1:11 PM	28/Aug/14 1:54 PM					sql																																																															

@@ -1,0 +1,1 @@
+Rest-API um nicht CSI-Werte erweitern			Improvement	OpenSpeedMonitor	25/Jun/14 12:34 PM	23/May/16 5:03 PM														23/May/16 5:03 PM;nku;Wir haben bereits einige REST-API-Methoden, die NICHT-CSI-Daten ausgeben (.B. resultsbetween).																																																						

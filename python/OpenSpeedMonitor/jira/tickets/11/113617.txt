@@ -1,0 +1,39 @@
+Migrate usergroups to users (Database-scripts + Server)	"*Summary:*
+
+Migrate all usergroups (deprecated feature) to users in the database.
+
+
+
+*Database-scripts:*
+
+* Create a migration script for all 4 DBMS to move the following data from table ""ug"" to ""users"" the columns
+
+**  ""ID_UE"" to ""ID_UE"" and
+
+**  ""NAME"" to ""LOGIN_NAME"" with prefix ""USERGROUP: "" (e.g. ""my usergroup"" to ""USERGROUP: my usergroup"")
+
+**  (Description is ignored)
+
+
+
+* Mark major java methods calling ""ug"" and ""ug_ue"" as deprecated
+
+
+
+* Create a new table ""version"" with two columns
+
+** ""ID"" (primary key, INT, length(11))
+
+** ""IP_VERSION"" (VARCHAR, length(255))
+
+* Fill this table initially with (1, 6.0)
+
+
+
+{color:red}UPDATE: {color} Please update also init_db-scripts and rename to ""60"".
+
+
+
+*Server:*
+
+* Ensure that both tables ""ug"" and ""ug_ue"" are not called from the code which is triggered by the new client (old client is not included in the next release)"		New Feature	iteraplan Speedbird	02/Mar/17 3:20 PM	21/Jun/17 10:42 AM														11/May/17 9:11 AM;msr;Please contact [~tsc] to discuss the code/architecture.																																																						

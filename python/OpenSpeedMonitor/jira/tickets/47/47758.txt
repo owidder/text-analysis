@@ -1,0 +1,33 @@
+Excel import fails after validation - duplicate value(s)	"Trying to import the attached Excel file into a sample data bundle with strategy overwrite throws an exception:
+
+Violation of unique constraint SYS_CT_122: duplicate value(s) for column(s) NAME in statement [/* insert de.iteratec.iteraplan.model.BusinessProcess */ insert into BP (NAME, DESCRIPTION, ID_PARENT, ID_BB) values (?, ?, ?, ?)]
+
+For Business Processes there are no duplicate entries. Where do the ???? come from?
+
+Validation result was fine:
+
+    Durch den Importvorgang werden folgende Änderungen vorgenommen:
+    Projekte hinzugefügt: 423
+    Geschäftsobjekte hinzugefügt: 103
+    Isr2BoAssociation hinzugefügt: 1.996
+    Geschäftseinheiten hinzugefügt: 110
+    IT-Services hinzugefügt: 48
+    Informationssysteme hinzugefügt: 1.304
+    Geschäftsprozesse hinzugefügt: 533
+    Projekte gelöscht: 17
+    Geschäftsobjekte gelöscht: 20
+    Produkte gelöscht: 8
+    Technische Bausteine gelöscht: 44
+    Tcr2IeAssociation gelöscht: 2
+    Fachliche Funktionen gelöscht: 9
+    Geschäftsprozesse gelöscht: 21
+    Geschäftseinheiten gelöscht: 13
+    Isr2BoAssociation gelöscht: 53
+    IT-Services gelöscht: 7
+    IS-Domänen gelöscht: 6
+    Fachliche Zuordnungen gelöscht: 147
+    Informationssysteme gelöscht: 52
+    Architekturdomänen gelöscht: 7
+    Isr2IeAssociation gelöscht: 59
+    Infrastrukturelemente gelöscht: 12
+    Fachliche Domänen gelöscht: 8"		Bug	iteraplan PO	13/May/15 11:50 AM	29/May/15 11:02 AM					excel	import	overwrite							13/May/15 12:27 PM;dne;Data basis for this overwrite import has been sample data. Doing the same import on a blank bundle seems to run well (no error so far, but takes some time).	29/May/15 11:01 AM;isc;Currently, the problem can not reproduced, so the ticket is time being closed.																																																					

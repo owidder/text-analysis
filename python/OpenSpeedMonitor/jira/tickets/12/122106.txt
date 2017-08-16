@@ -1,0 +1,50 @@
+Error + Stacktrace beim aufruf eines nicht vorhandenen Elements	"Hallo,
+
+man bekommt zum Beispiel beim Löschen eine Mail mit Link:
+
+
+
+Interface ""CIDS : CIDS-Export-Batches-SM81 ->
+
+FOSDB : FO01"" deleted (https://iteraplanprod:443/iteraplan/show/interface/88886)
+
+User: x.yr@axa.de
+
+Time: 23.05.2017 08:53:01
+
+-- 
+
+EAM Tool iteraplan
+
+Wenn man dann auf diesen Link klickt, gibt es eine Fehlermeldung 
+
+""Das gewählte Bebauungselement wurde nicht gefunden. Möglicherweise wurde es von einem anderen Anwender zwischenzeitlich gelöscht oder es ist wegen einem Filter nicht mehr sichtbar. Bitte wählen Sie ein anderes Bebauungselement."" 
+
+auf der Iteraplan Oberfläche, was OK ist.
+
+
+
+Aber im Logfile gibt es einen Error mit Stacktrace, der völlig unnötig ist. 
+
+  de.iteratec.iteraplan.presentation.flow.IteraplanTechnicalExceptionHandler  A technical exception occurred
+
+<Stacktrace>
+
+
+
+
+
+Bitte diesen Stacktrace in diesen fällen unterdrücken und wenn es geht, dien Level im Log von Error auf Warn (fachlicher Fehler) reduzieren.
+
+
+
+Besten Dank
+
+Armin Joachimsmeyer"		Fault	iteraplan Support	23/May/17 9:38 AM	20/Jun/17 7:00 AM														"23/May/17 10:59 AM;cst;Sehr geehrter Herr Joachimsmeyer,
+
+werde das für Version 6.0 und den neuen Subscription gegen testen.
+Sollte das Verhalten nach wie vor wie von Ihnen beschrieben sein, dann werde ich hierzu ein Bug-Ticket erstellen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"																																																						

@@ -1,0 +1,25 @@
+Manuellen Testfall schreiben: BY_RANK / BY_MAPPING	"Erstellung eines Testfalls, der absichert, dass die Umrechnung BY_MAPPING sehr ähnliche CSI-Werte liefert wie die (bisherige) Umrechnung BY_RANK.
+
+
+
+Testfall: de.iteratec.osm.csi.TimeToCsMappingServiceTests"		Task	OpenSpeedMonitor	01/Dec/15 5:59 PM	16/Dec/15 11:40 AM														09/Dec/15 10:40 AM;mmi;Wartet auf Umzug des OSM auf neue Maschine und Behebung des Bugs beim Rest-Call "Frustrations", welcher doppelte Einträge aus der Liste der Frustrations entfernt	"16/Dec/15 12:22 AM;nku;Nach der Umstellung der Schrittweite für die Mapping-Daten auf 20ms ergibt der Test  mit den ""private_""-Test-Ressourcen (siehe Anhang dieses Tickets) die folgenden mittleren Abweichungen von der Berechnung BY_RANK:
+
+
+
+* HP_entry: 0.09439012970297171
+
+* MES: 0.13186323864583738
+
+* ADS: 0.0895898414107883
+
+* SE: 0.050881114415954096
+
+* PL: 0.07907974603448234
+
+* WK: 0.06941895915789371
+
+
+
+Datengrundlage waren als expected Values die letztern 1.000 Messergebnisse, die in der OTTO-Instanz in CSI-Werte umgerechnet wurden.
+
+"	16/Dec/15 12:24 AM;nku;Testdaten (aus der OTTO-Instanz), die aus rechtlichen Gründen nicht im git landen.																																																				

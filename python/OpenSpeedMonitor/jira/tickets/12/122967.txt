@@ -1,0 +1,39 @@
+Saved Queries - "Bad Request" when trying to save more than 4000 symbols to Query's Description 	"h4. Problem Description:
+
+
+
+""Bad Request"" is shown when try to save more than 4000 symbols to Query's Description
+
+
+
+ 
+
+h4. Reproduction Steps:
+
+ * Open application and navigate to Saved Queries page
+
+ * Open Edit mode for any existing query
+
+ * Enter more than 4000 symbols to Description field
+
+
+
+h4. Observed Results:
+
+
+
+""Bad Request"" is shown in console. For user nothing happens.
+
+
+
+ 
+
+h4. Expected Results:
+
+
+
+""Save"" button should be inactive in that case.
+
+h4. Note:
+
+ - Used dev and #330 build with FF"		Bug	iteraplan PO	31/May/17 3:03 PM	16/Jun/17 5:27 PM																																																																				

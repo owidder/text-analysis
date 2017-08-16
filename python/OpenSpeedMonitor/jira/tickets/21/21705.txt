@@ -1,0 +1,9 @@
+CSV Report	"Um die False Positive Liste manuell pflegen zu können, soll ein csv Report erzeugt werden.
+
+
+
+Der Report soll die folgenden Felder enthalten: alert, description, param, url
+
+
+
+Der Report soll parallel zum json Report erstellt werden."		Task	secureCodeBox	09/Oct/14 11:24 AM	14/Oct/14 1:55 PM														14/Oct/14 1:55 PM;bwo;Sowohl Export als auch Test sind fertig. Code review am Donnerstrag mit Ben																																																						

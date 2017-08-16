@@ -1,0 +1,33 @@
+Configuration for Embedded reports	"* Talk to Fabian about configuration
+
+ * integration of PhantomJS in iteraplan distribution
+
+ * configuration (file system access, phantomjs executable)
+
+ * Should it be in Lite Edition?
+
+ * PhantomJS provided by us or by the customer?
+
+ * (Customer) Docu according to decisions
+
+
+
+ 
+
+
+
+Results:
+
+
+
+Serverside image creation will be included in every iteraplan instance.
+
+ * iteraplan distribution will contain phantomjs installation files for Windows, MacOS, Linux 64-bit and Linux 32-bit.
+
+ Prerequisites are:
+
+ ** Windows/MacOS: none
+
+ ** Linux 64-bit/32-bit: [Fontconfig|https://www.freedesktop.org/wiki/Software/fontconfig/] (the package {{fontconfig}} or {{libfontconfig}}, depending on the distribution), GLIBCXX_3.4.9 and GLIBC_2.7
+
+ * depending on the environment the correct installation will be done with every tomcat start"		Improvement	iteraplan Thunderduck	20/Mar/17 10:59 AM	20/Apr/17 3:35 PM																																																																				

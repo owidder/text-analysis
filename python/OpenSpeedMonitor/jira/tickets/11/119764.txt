@@ -1,0 +1,9 @@
+[CSI-Benchmark-Chart] Bei sehr vielen Balken laufen diese aus der Kachel	"Wenn die Balken horizontal nicht mehr in die Kachel passen müssten wir die Balkenbreite doch dynamisch verringern. 
+
+
+
+Hier sieht man, was ansonsten passiert:
+
+
+
+http://demo.openspeedmonitor.org/csiBenchmark/show?setFromHour=&setToHour=&from=24.04.2017&fromHour=&to=27.04.2017&toHour=&selectedFolder=2&selectedFolder=8&selectedFolder=16&selectedFolder=14&selectedFolder=13&selectedFolder=15&selectedFolder=17&selectedFolder=12&selectedFolder=11&selectedFolder=10&selectedFolder=18&selectedFolder=22&selectedFolder=21&selectedFolder=20&selectedFolder=3&selectedFolder=34&selectedFolder=19&selectedFolder=6&selectedFolder=9&selectedFolder=7&selectedFolder=1&selectedFolder=31&selectedFolder=35&selectedFolder=38&selectedFolder=23&selectedFolder=36&selectedFolder=37&selectedFolder=32&selectedFolder=33&selectedFolder=39&selectedFolder=40&selectedFolder=29&selectedFolder=42&selectedFolder=41&selectedFolder=30&selectedFolder=44&selectedFolder=43&selectedFolder=27&selectedFolder=46&selectedFolder=45&selectedFolder=26&selectedFolder=48&selectedFolder=47&selectedFolder=24&selectedFolder=50&selectedFolder=49&selectedFolder=28&selectedFolder=51&selectedFolder=52&selectedFolder=25&selectedFolder=54&selectedFolder=53&selectedFolder=4"		Bug	OpenSpeedMonitor	27/Apr/17 11:50 PM																																																																					

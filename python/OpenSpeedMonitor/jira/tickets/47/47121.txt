@@ -1,0 +1,22 @@
+Coloring of outer elements	"ANALOGOUS TO INNER ELEMENTS
+
+Add the functionality to color all outer elements by all (predefined or user defined) numeric or enumeration properties (attribute-based coloring).
+
+The outer elements (building blocks) have different properties. Create a menu for choosing the coloring of outer elements within the Nesting Cluster Diagram.
+The coloring type (continuos or default) is dependant on the property type (see below). Color the inner elements accordingly. The available attributes can be found in the metamodel. A legend shows the coloring.
+
+* Case 1: Numeric properties: Use a continues color scheme (light to dark or green to red) for the coloring of the outer elements
+* Case 2: Enumeration properties: Use the default colors from the metamodel.
+* No other property types can be chosen for coloring.
+
+ACCEPTANCE CRITERIA:
+
+In the Nesting Cluster Diagram the user can select within the menu for outer elements, by which property all outer elements should be colored. The users selects a property and the diagram (incl. legend) is updated accordingly. Example: The user opens the menu for a Project (as outer element). He selects ""coloring by costs"" and the diagram as well as the legend is updated accordingly, i.e. the colors as defined in a continuous color scheme for costs are shown.
+"		New Feature	iteraplan PO	04/Nov/14 8:18 AM	23/Dec/14 10:28 AM					color									"10/Dec/14 10:56 AM;msr;Update to description:
+1. Context menu update:
+The options for coloring should be dynamic, i.e. all attributes come dynamically from the Metamodel. These attributes are dynamically dependent on the actual building block type.
+
+2. Coloring of outer boxes independent of coloring of inner boxes:
+The coloring of outer boxes, which is activated by the context menu of outer boxes, is totally independent of the coloring for inner boxes. The coloring options are dynamically offered for the outer building block type. These boxes are colored independently of any coloring of inner boxes. The outer boxes have their own coloring legend."	"11/Dec/14 10:18 AM;msr;Wiki-page for colouring created:
+http://www.iteraplan.de/wiki/display/IPNINE/Colouring+of+Nesting+Cluster+Diagram
+"																																																					

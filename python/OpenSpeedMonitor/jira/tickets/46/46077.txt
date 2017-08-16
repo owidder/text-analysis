@@ -1,0 +1,15 @@
+Removal of user from accountability attribute changes history	"Precondition:
+- User A is a valid value for an accountability attribute
+- Information System B is assigned accountable user A
+
+Steps:
+- Change Information System B to a different accountable user (or null)
+- Change accountability attribute and remove user A from the list of values
+
+Effect:
+- History does not show change of accountability for Information System B
+
+Expected behaviour:
+- History shows the change of accountability"		Bug	iteraplan PO	18/Sep/13 4:48 PM	11/Nov/14 1:37 PM														25/Jun/14 3:23 PM;fka;Is this still applicable with 3.4?	"10/Nov/14 1:50 PM;fam;Tried to trace the error, but could't.
+No error occured. During execution the expected behaviour was happening.
+For review, please verify that this is no bug any more."																																																					

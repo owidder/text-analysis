@@ -1,0 +1,18 @@
+Stacktrace auf der SEU beim reinkommen neuer Locations	"[30.10.2013 16:31:00,050] ERROR StackTrace (line 213): Full Stack Trace:
+grails.validation.ValidationException: Validation Error(s) occurred during save():
+- Field error in object 'de.iteratec.isj.Job' on field 'jobGroup': rejected value [null]; codes [de.iteratec.isj.Job.jobGroup.nullable.error.de.iteratec.isj.Job.jobGroup,de.iteratec.isj.Job.jobGroup.nullable.error.jobGroup,de.iteratec.isj.Job.jobGroup.nullable.error.de.iteratec.isj.JobGroup,de.iteratec.isj.Job.jobGroup.nullable.error,job.jobGroup.nullable.error.de.iteratec.isj.Job.jobGroup,job.jobGroup.nullable.error.jobGroup,job.jobGroup.nullable.error.de.iteratec.isj.JobGroup,job.jobGroup.nullable.error,de.iteratec.isj.Job.jobGroup.nullable.de.iteratec.isj.Job.jobGroup,de.iteratec.isj.Job.jobGroup.nullable.jobGroup,de.iteratec.isj.Job.jobGroup.nullable.de.iteratec.isj.JobGroup,de.iteratec.isj.Job.jobGroup.nullable,job.jobGroup.nullable.de.iteratec.isj.Job.jobGroup,job.jobGroup.nullable.jobGroup,job.jobGroup.nullable.de.iteratec.isj.JobGroup,job.jobGroup.nullable,nullable.de.iteratec.isj.Job.jobGroup,nullable.jobGroup,nullable.de.iteratec.isj.JobGroup,nullable]; arguments [jobGroup,class de.iteratec.isj.Job]; default message [Property [{0}] of class [{1}] cannot be null]
+
+        at de.iteratec.ispc.LocationAndResultPersisterService.listenToResult(LocationAndResultPersisterService.groovy:88)
+        at de.iteratec.ispc.ProxyService$_fetchResult_closure2_closure3.doCall(ProxyService.groovy:133)
+        at de.iteratec.ispc.ProxyService$_fetchResult_closure2.doCall(ProxyService.groovy:132)
+        at org.grails.datastore.gorm.GormStaticApi.withTransaction(GormStaticApi.groovy:678)
+        at de.iteratec.ispc.ProxyService.fetchResult(ProxyService.groovy:131)
+        at de.iteratec.ispc.WptProxyController.xmlResult(WptProxyController.groovy:116)
+        at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:195)
+        at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+        at com.googlecode.psiprobe.Tomcat70AgentValve.invoke(Tomcat70AgentValve.java:38)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+        at java.lang.Thread.run(Thread.java:724)
+"		Bug	OpenSpeedMonitor	31/Oct/13 12:46 PM	31/Oct/13 12:49 PM														"31/Oct/13 12:49 PM;rhe;Typo! JobGroup: jobGroup statt: jobGroup: jobGroup
+"																																																						

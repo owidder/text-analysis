@@ -1,0 +1,9 @@
+Outdoor: Kabel nach Verbindungsart einfärben	"Die Verbindungsart soll über verschiedene Farben visualisiert werden.
+
+
+
+(Lichtwelle, Kupfer, Umts, etc.)
+
+
+
+Übers Menü lässt sich eine Legenden-View öffnen, die die Farben erklärt."		Task	EAMV15	17/Dec/15 10:58 AM	11/Jan/16 1:50 PM																																																																				

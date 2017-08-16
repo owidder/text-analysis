@@ -1,0 +1,4 @@
+Change "no groups" to "no nesting" in the Context menu for inner element	"Summary: Change ""no groups"" to ""no nesting"" in the Context menu for inner element.
+Legend can stay as it is (""none"")
+
+(in discussion with marcel on 18.02.2015)"		New Feature	iteraplan PO	19/Feb/15 9:22 AM	14/Apr/15 7:36 AM																																																																				

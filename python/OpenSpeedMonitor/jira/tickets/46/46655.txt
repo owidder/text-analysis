@@ -1,0 +1,24 @@
+iteraplan cannot be installed with Tomcat ROOT context due to JAWR bug	"If iteraplan is installed with Tomcat ROOT context (as ROOT.war), then the application will be broken. The following stacktrace occurs:
+
+{code}
+[ERROR] 15-Mai-2014 14:49:35 [config.jmx.JmxUtils] Unable to instanciate the Jawr MBean for resource type 'js'
+java.lang.NullPointerException
+	at net.jawr.web.config.jmx.JmxUtils.getMBeanObjectName(JmxUtils.java:163)
+	at net.jawr.web.config.jmx.JmxUtils.getJawrConfigMBeanObjectName(JmxUtils.java:131)
+	at net.jawr.web.config.jmx.JmxUtils.getMBeanObjectName(JmxUtils.java:117)
+	at net.jawr.web.config.jmx.JmxUtils.initJMXBean(JmxUtils.java:74)
+	at net.jawr.web.servlet.JawrRequestHandler.initializeJawrContext(JawrRequestHandler.java:320)
+	at net.jawr.web.servlet.JawrRequestHandler.initRequestHandler(JawrRequestHandler.java:272)
+	at net.jawr.web.servlet.JawrRequestHandler.<init>(JawrRequestHandler.java:205)
+	at net.jawr.web.servlet.JawrServlet.init(JawrServlet.java:66)
+{code}
+
+This bug occurs due to a bug in JAWR 3.5.0, which has been fixed in 3.5.1:
+https://java.net/jira/browse/JAWR-259
+
+=> Update to the latest version (3.5.2 at the moment of writing) might fix this bug.
+
+Workarounds:
+1. Don't install iteraplan with ROOT context.
+or
+2. Exchange the JAWR 3.5 iles with the newer versions from 3.5.2 in ""WEB-INF/lib/"""		Bug	iteraplan PO	15/May/14 5:10 PM	19/May/14 9:42 AM					jawr																																																															

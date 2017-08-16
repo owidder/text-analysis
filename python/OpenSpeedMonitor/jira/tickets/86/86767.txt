@@ -1,0 +1,5 @@
+Date intervals - Clientside/Datamodel	"add a way to access the endpoints of date intervals via the artificial values.
+
+
+
+{{BusinessObject#getPropertyValues(propertyPersistentName)}} and {{BusinessObject#resolvePath(path, property)}} should work with the persistent names of the artificial date interval properties from ITERAPLAN-4696 as if they were normal duration properties."	85416	Sub-task	iteraplan PO	08/Jun/16 4:04 PM	14/Jun/16 12:54 PM					date-intervals																																																															

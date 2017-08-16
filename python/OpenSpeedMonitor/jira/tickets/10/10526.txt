@@ -1,0 +1,1 @@
+Fehlermeldungen UTF-8	Deutsche Umlaute werden in den Fehlermeldungen nicht korrekt angezeigt.	10010	Sub-task	OpenSpeedMonitor	13/Sep/13 1:23 PM	16/Sep/13 10:13 AM														16/Sep/13 10:13 AM;nkuhn;In einigen views standen falsche encoding-einträge (8859-1 statt UTF-8).																																																						

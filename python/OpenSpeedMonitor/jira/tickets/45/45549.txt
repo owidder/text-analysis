@@ -1,0 +1,1 @@
+Build iteraplan 3.0.2	Build release 3.0.2. Merge all the relevant tickets' changes into the 3.0 release branch		Task	iteraplan PO	05/Jun/12 2:33 PM	05/Jul/12 10:03 PM					release									05/Jun/12 2:38 PM;sry;#16597, #16609 and #16610 from  ITERAPLAN-605 have been merged																																																						

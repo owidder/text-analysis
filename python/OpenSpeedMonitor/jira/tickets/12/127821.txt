@@ -1,0 +1,1 @@
+Capture Dev Tools Timeline bei Jobs per Default aktivieren	Wir sollten die Option "Capture Dev Tools Timeline" immer aktivieren, sodass alle Chrome Messungen per Default die Dev Tools Timeline (und somit auch Javascript Execution) mitnehmen.		Improvement	OpenSpeedMonitor	24/Jul/17 12:02 PM																																																																					

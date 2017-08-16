@@ -1,0 +1,1 @@
+Validierung gemessene Seite einbauen	Hier geht es um eine Validierung pro gemessenem Schritt. Diese Validierung soll erkennen, ob die richtige Seite aufgerufen/gemessen wurde.		Story	OpenSpeedMonitor	27/Jun/14 5:06 PM															25/Feb/16 7:04 PM;bka;und wie wirds so definiert? ;)	18/Jan/17 4:13 PM;sbr;Siehe auch IT-1439																																																					

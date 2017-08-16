@@ -1,0 +1,40 @@
+Coloring in Nesting Cluster based on Number Attributes	Allow coloring in Nesting Cluster based on attributes with the same functionality as in all other SVG-based visualizations		New Feature	iteraplan PO	16/Feb/12 10:57 AM	04/Apr/12 4:17 PM														07/Mar/12 6:08 PM;pac;Assigning to csh as long as I'm on holiday.	"04/Apr/12 1:39 PM;isc;In many classes I miss documentation. Some other classes have checkstyle errors and open todo’s. Please check it again.
+
+*DerivedMetamodelFactory.java*
+* Please document the class.
+
+*MetamodelExport.java*
+* any checkstyle errors
+* open TODO’s
+
+*ObjectifyingSubstantialType.java*
+* open TODO’s
+
+*ElasticeamContext.java*
+* Please document the class.
+
+*DerivedMetamodelFactory.java*
+* Please document the class.
+
+*XMIImportService.java*
+* Please document the class.
+
+*XmiImportServiceImpl.java*
+* Please document the class.
+
+*EPackageConverter.java*
+* Please document the class.
+
+*ElasticeamContextUtil.java*
+* any checkstyle errors
+* Please document the class.
+* open TODO’s
+
+*MetamodelExplorerService.java*
+* any checkstyle errors
+
+*FeaturePermissions.java*
+* Please document the class.
+
+*EditableMetamodel.java*
+* Please document the class."																																																					

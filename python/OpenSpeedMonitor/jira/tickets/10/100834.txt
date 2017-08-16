@@ -1,0 +1,21 @@
+Option to show/hide bar labels	"*Summary:*
+
+Add an option in toolarea to show/hide bar labels.
+
+
+
+*Implementation details:* 
+
+* Initially this option is active (show bar labels)
+
+* State is saved in URL
+
+* State is not reset after content type change or attribute change
+
+
+
+*UI:*
+
+Toolarea: add new ""Display"" entry (German: ""Anzeige"") with toggle button in it - ""Hide bar labels/Show bar labels"" (German: ""Blende Bar-Etiketten aus/Zeige Bar-Etiketten""). Position it after ""Show empty bars"" option.
+
+Legend: nothing to show"		New Feature	iteraplan Speedbird	27/Oct/16 11:00 AM	02/Nov/16 11:09 AM														02/Nov/16 11:09 AM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-141																																																						

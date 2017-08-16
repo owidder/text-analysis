@@ -1,0 +1,15 @@
+RangeSlider can't be changed after deserialization from URI	"WHEN I browse to a URI with a predefined filter that contains a range-slider (e.g. http://localhost:8080/client/#/lsd?locale=en&E24=A13&E25=B19&F0=B18&F19=Information%20Systems%20by%20Based%20on%20Technical%20Components%20and%20Assigned%20Information%20System%20Domains&partiallyConnectedItems=binary&rows=hide&columns=hide&contentFilter=numS%2FCostsS%2FbetweenS%2F896;3625C%2FflatC%2F)
+
+AND I click on ""Content Filter"" > ""add new filter""
+
+THEN the filter gets deserialized from the URI-part correctly
+
+BUT I _can not_ change the values of the range-slider
+
+
+
+SHOULD: I _can_ change the values of the range-slider
+
+
+
+Tested in Chrome 48.0"		Bug	iteraplan PO	23/Mar/16 12:59 PM	05/Apr/16 11:15 AM					filter									29/Mar/16 3:29 PM;abo;Same problem with Firefox 43.0.1																																																						

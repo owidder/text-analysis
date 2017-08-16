@@ -1,0 +1,2 @@
+Query Console: Link to the manual does not work anymore	"Applies the query console:
+The link to the manual under the examples (to the site for the query console) does not work anymore. The name of the wiki site has changed."		Bug	iteraplan PO	24/Apr/14 2:50 PM	25/Apr/14 9:32 AM					gui									25/Apr/14 9:32 AM;gph;Link works.																																																						

@@ -1,0 +1,39 @@
+Refreshing issue for Landscape diagram	"h4. Problem Description:
+
+
+
+An exception occurs when refreshing diagram after resetting to default state.
+
+h4. Reproduction Steps:
+
+ * Open Application and navigate to Landscape Diagram
+
+ * Set any Relation for Column or Row type.
+
+ * Press ""Reset View"" button
+
+ * Refresh page by using the ""Page reload"" button
+
+
+
+h4. Observed Results:
+
+
+
+""LOADING_DIAGRAM"" message is displayed. An exception occurs in Console. See attached exception_null.png file.
+
+h4. Expected Results:
+
+
+
+Page should be reloaded without any errors.
+
+h4. Note:
+
+ - Used Firefox and ""iteraplan-basic-bundle-sampledata-6.0.SNAPSHOT-2017-05-17"" bundle/ #312 build
+
+ - Additional check for other diagrams can be done if this is needed."		Bug	iteraplan Speedbird	17/May/17 6:21 PM	17/Jul/17 12:02 PM					diagram									23/May/17 5:23 PM;fka;Work with current nightly build and chrome&firefox	"26/May/17 9:27 AM;naba;After additional investigation I should reopen this ticket since this issue is reproducible but ONLY when console is opened in Firefox. This is very strange issue but I would recommend to fix it.
+
+Thank, 
+
+Natalya"	26/May/17 9:41 AM;fka;Indeed strange behavior. We should fix it. Low prio, I'll put it in the long term backlog.																																																				

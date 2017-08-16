@@ -1,0 +1,4 @@
+Adjust start screen: Show that IS-GO and TB-IE are attributable	"Update the start screen image:
+The two relations IS-GO and TB-IE are attributable and should be marked with an '*'
+
+Changing the PNG might be sufficient"		Improvement	iteraplan PO	24/Feb/14 1:57 PM	08/Feb/15 10:32 PM					startpage									08/Feb/15 10:32 PM;fka;Fixed with MMX																																																						

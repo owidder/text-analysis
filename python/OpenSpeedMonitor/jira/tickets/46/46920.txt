@@ -1,0 +1,10 @@
+Error when saving Landscape diagram after changing attribute-based association	"_Reproduce (with sample data):_
+# Log into iteraplan, navigate to Visualizations->Landscape Diagram
+# Load one of the saved queries
+# Edit row or column association, select an attribute
+# Save the query (same or different name)
+
+_Expected:_ Diagram saved successfully.
+_Actual:_ Technical error page, see also attached ProblemReport
+
+_Possible reason:_ Missing or wrong initialization of timeseries query objects when selecting an attribute association. Start investigating in {{LandscapeDiagramFrontendServiceImpl#selectRowType}} or {{..#selectColumnType}} respectively."		Bug	iteraplan PO	02/Sep/14 5:26 PM	03/Sep/14 11:35 AM					landscape	savedquery																																																														

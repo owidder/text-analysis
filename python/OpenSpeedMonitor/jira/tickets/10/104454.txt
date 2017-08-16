@@ -1,0 +1,77 @@
+Abonnemente - Versenden von Mails	"Guten Tag
+
+Auf der produktiven Umgebung, habe ich über alle IS, TC, IF oder ISE ein Abonnement erstellt. Wenn ich ein neues IS erstelle oder dieses lösche, werde ich mittels einem Mail informiert.
+
+Wenn ich aber einen Inhalt ändere, bekomme ich kein Mail dazu. 
+
+
+
+Auf der Test Umgebung bekomme ich bei allen Änderungen, Neuerstellung und Löschen die Information.
+
+
+
+An was liegt dies?
+
+Danke für die Rückmeldung."		Fault	iteraplan Support	01/Dec/16 4:51 PM	06/Dec/16 9:21 AM														"05/Dec/16 11:04 AM;cst;Hallo Herr Studer,
+
+im Moment wird dieser Vorgang geprüft. 
+Werde Ihnen hierzu zeitnah Rückmeldung geben. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+"	"05/Dec/16 3:30 PM;cst;Sehr geehrter Herr Studer,
+
+wenn Sie z.B. in der Übersicht der IS den Button Abonnieren betätigen, werden Sie über das Erstellen und Löschen von Informationssysteme informiert.
+Über Änderungen von diesen werden Sie nicht per Mail informiert, dies wird auch in unserem User Guide so beschrieben:
+
+https://www.iteraplan.de/doc/display/iteraplan54/Watch+Element+Changes+with+Email
+
+_An additional use case is to watch the list of elements of one building block type. If you choose to watch the list of Business Processes, for example, you will receive a notification as soon as a new Business Process is created or an existing Business Process is deleted. Note however, that you will not be notified about simple changes to individual Business Processes. You still need to watch each process individually._
+
+Wenn Sie ein einzelnes Informationssystem ""Abonnieren"", werden Sie über Änderung von diesen Informiert. Zusätzlich können Sie über die Massenupdate Funktion für alle z.B. Informationssysteme ein Massenabonnement durchführen. Dann werden Sie bei jeder Änderung von diesen informiert.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support  "	"05/Dec/16 3:49 PM;alfred.studer@emmi.com;Ihre Aussage:
+wenn Sie z.B. in der Übersicht der IS den Button Abonnieren betätigen, werden Sie über das Erstellen und Löschen von Informationssysteme informiert.
+ Über Änderungen von diesen werden Sie nicht per Mail informiert, dies wird auch in unserem User Guide so beschrieben:
+
+Wie können sie sich dann erklären, dass wir dies vor dem Update (5.4) auf der Prod. Umgebung hatten und dass wir dies auf der Test Umgebung mit dem Update 5.4 definitiv haben. In der Test Umgebung werde ich über alle Änderungen informiert. Das Abo ist auf der gleichen Stufe wie auf der Prod Umgebung.
+Installiert habe ich beide Umgebungen genau gleich."	"05/Dec/16 5:30 PM;cst;Würden Sie bitte in der Prod. ein Informationssysteme öffnen, bei dem Sie einen ""Änderungs-hinweis"" per Mail zu geschickt bekommen haben
+und führen folgenden Schritt durch.
+
+Öffnen Sie das Informationssytem und klicken auf Button ""Mehr"" und ""Abonnenten Anzeigen"".
+Jetzt werden Ihnen alle Benutzer die dieses Element abonniert haben angezeigt. 
+
+Wenn ein Benutzer mit der von Ihnen genutzten E-Mail Adresse hinterlegt wurde, 
+ist dies die Ursache warum Sie den Hinweis bei Änderungen per Mail zugeschickt bekommen. 
+"	"06/Dec/16 7:56 AM;alfred.studer@emmi.com;Da haben sie wohl recht
+Habe dies immer mit dem gleichen IS oder TC gestestet und da habe ich gesehen, dass ich noch zusätzlich ein Abo gesetzt hatte.
+
+Aber somit möchte ich gerne den Antrag stellen, dass man über den ganzen Building Block diese Möglichkeit zur Verfügung steht wie bei einem einzelnen Abo.
+
+Begründung:
+Wir haben unterschiedliche Gruppen, die z.B. für die alle Schnittstellen verantwortlich sind oder eben wie ich, ein Interesse über alle IS, TC und ISE haben.
+Wir haben 851 IS, 627 TC, 3884 ISE und 980 IF - damit wir die gleiche Möglichkeit haben, ist es ein Unding alle IS, TC, ISE und IF das Abo zu aktivieren
+Für mich ist es auch ein Qualitätshinweis, welche Objekte in welcher Form bearbeitet werden.
+
+Danke für die Berücksichtigung dieses Antrages."	"06/Dec/16 9:21 AM;cst;Habe Ihre als Verbesserungsvorschlag für den Interactiven Client mit aufgenommen. 
+
+Im Classic Client wird es hierzu keine Änderung mehr geben.
+
+
+
+Wie schon oben geschrieben, ist eine schnelle Lösung über das Massenupdate alle Elemente zu abonnieren. 
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan 
+
+
+
+"																																																	

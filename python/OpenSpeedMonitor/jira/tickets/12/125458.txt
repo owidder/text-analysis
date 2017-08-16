@@ -1,0 +1,1 @@
+WPT Server mit Archiving auf allen relevanten Instanzen installieren	Mit settings in dem Archivierung aktiviert ist müssen alle (neuen) WPT Server neu deployt und die Archivierungsfunktion überprüft werden.		Task	OpenSpeedMonitor	26/Jun/17 6:14 PM																																																																					

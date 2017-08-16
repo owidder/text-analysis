@@ -1,0 +1,15 @@
+Nächtliche Berechnung CsiAggregations funktioniert nicht	"Tritt auf bei OTTO.
+
+
+
+In der Übersicht der BatchActivities sieht man, das das nächtliche Berechnen jede Nacht erfolgreich läuft: https://iteraspeedmonitor.otto.wpt.iteratec.de//batchActivity/list?max=100
+
+
+
+Der Prozess dauert allerdings nur 0 Minuten und wenn man ein Dashboard mit CsiAggregations aufruft dauert das sehr lange beim ersten Mal und geht danach sehr schnell. Scheint also so, als wenn nächtlich keine CsiAggregations berechnet werden.
+
+
+
+Das sollten wir beheben. Zudem wäre es gut, wenn man den einzelnen BatchActivities entnehmen könnte, wie viele Objekte berechnet/gelöscht/bearbeitet wurden. Wir bräuchten also an der BatchActivity eine Möglichkeit Kommentare/eine Zusammenfassung unterzubringen, die man dann auch in der GUI sehen  kann.
+
+ "		Bug	OpenSpeedMonitor	22/Feb/17 10:31 AM	09/Mar/17 10:34 AM																																																																				

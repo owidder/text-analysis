@@ -1,0 +1,11 @@
+Save-button for new role creation	"The ""save""-action of a newly created role is triggered by the route-change. Please create a ""Save""-Button like for the new attributes.
+
+
+
+Suggestion of [~mash]
+
+
+
+{color:red}UPDATE: {color} If user leaves the page without saving, show the following message: ""All input will be lost"" / GER: ""Beim Verlassen gehen alle Informationen verloren"" with ""Ok"" and ""Cancel"" / GER: ""Abbrechen"""		Improvement	iteraplan Speedbird	22/May/17 5:05 PM	09/Jun/17 10:47 AM														30/May/17 3:49 PM;roia;At the moment it is blocked, because new role page is not working	"03/Jun/17 11:45 AM;olal;After clicking on 'Save' button item saves, but modal dialog appears anyway.
+
+!image-2017-06-03-12-45-20-763.png!"	09/Jun/17 9:22 AM;roia;Modal dialog after save removed in revision 6992	09/Jun/17 10:47 AM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-653																																																			

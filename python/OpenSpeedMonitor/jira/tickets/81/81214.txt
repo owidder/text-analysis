@@ -1,0 +1,1 @@
+Engine fachlich schneiden	Die SecureBox-Engine ist momentan hauptsächlich technisch geschnitten. Übersichtlicher wäre eine fachlicher Schnitt, der intern technisch geschnitten ist.		Story	secureCodeBox	21/Apr/16 10:14 AM		secureBoxEngine				iteratec																																																															

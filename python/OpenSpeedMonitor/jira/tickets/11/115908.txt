@@ -1,0 +1,19 @@
+Andre Jäger von Audi der Gruppe "_WIKI_myAudiCommons-EXT" zuweisen	"Andre Jäger soll auf unseren Bereich myAudi Commons im Wiki zugreifen dürfen, da wir dort unsere Dokumentationspflichten ihm gegenüber erfüllen.
+
+
+
+Dafür fehlt ihm noch die Zuweisung zur Gruppe ""_WIKI_myAudiCommons-EXT"".
+
+
+
+Könnt Ihr das bitte machen? Danke, Thorsten"		Task	Infrastruktur	23/Mar/17 9:47 AM	23/Mar/17 10:21 AM	Confluence													"23/Mar/17 10:21 AM;kti;Hallo Thorsten,
+
+
+
+habe ihn eben der Gruppe hinzugefügt.
+
+
+
+Viele Grüße
+
+Kathrin"	23/Mar/17 3:37 PM;tgo;(y)																																																					

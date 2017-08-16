@@ -1,0 +1,5 @@
+Disable edit for BM and Infoflow	"Disable edit for BM and Infoflow and their attributes in related type views
+
+it should be editable only in BM and Interfaces list view
+
+make not possible to add column Infoflows2"		Improvement	iteraplan Thunderduck	11/Jan/17 10:04 AM	12/Jan/17 4:06 PM																																																																				

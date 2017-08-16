@@ -1,0 +1,13 @@
+TMD: empty diagram crashes on page reload	"*Reproduce:*
+
+* Open TMD
+
+* Choose some content type without numeric attributes e.g. Interface
+
+* Reload the page
+
+
+
+*Actual:* diagram crashed, error in console
+
+*Expected:* diagram should open correctly"		Bug	iteraplan Speedbird	19/Jun/17 4:40 PM	29/Jun/17 2:21 PM																																																																				

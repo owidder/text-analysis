@@ -1,0 +1,1 @@
+General integration Tests for Micro Edit	Check if there are [integration] tests for microEdit feature. If not -> create them		Task	iteraplan Thunderduck	22/Aug/16 11:34 AM	15/Sep/16 2:01 PM																																																																				

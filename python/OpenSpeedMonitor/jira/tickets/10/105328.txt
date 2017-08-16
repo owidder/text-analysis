@@ -1,0 +1,31 @@
+Improve UI for direction-fields	"*Summary:*
+
+Improve the UI for all directions-fields:
+
+
+
+* For no direction use ""-""
+
+* For both directions use *one* icon with an bidirectional arrow
+
+
+
+Please use it for all directions-fields on all Single Element Views (e.g. Interfaces Single Element View and Information System Single Element View)"		Improvement	iteraplan Speedbird	12/Dec/16 11:28 AM	30/Dec/16 3:48 PM														19/Dec/16 10:55 AM;roia;Suggestion: do not use images, use the CSS classes and font glyphs, like it's done in md-icon or bootstrap's glyphicon.	19/Dec/16 3:37 PM;msr;Good idea.	26/Dec/16 1:21 PM;mash;Please check if used icon are good solution for showing direction	"30/Dec/16 3:33 PM;roia;I'd use icons which look more like arrows:
+
+{code}
+
+ <i class=""material-icons"">arrow_back</i>
+
+<i class=""material-icons"">arrow_forward</i>
+
+{code}
+
+
+
+Not sure, but we can also try for both directions this one:
+
+{code}
+
+<i class=""material-icons"">compare_arrows</i>
+
+{code}"																																																			

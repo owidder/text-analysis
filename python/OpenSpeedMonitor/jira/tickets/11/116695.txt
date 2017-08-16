@@ -1,0 +1,7 @@
+Url-parameters + Saved Query	"*Summary:*
+
+Save configuration (text input) in the url and include save, save as and load query-functionality.
+
+
+
+Long url is in scope of IPTS-466"		New Feature	iteraplan Speedbird	27/Mar/17 4:27 PM	14/Apr/17 12:45 PM														14/Apr/17 12:45 PM;dmkh;Review is done, no comments																																																						

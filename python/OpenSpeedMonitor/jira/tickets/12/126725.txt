@@ -1,0 +1,29 @@
+GoJS evaluation Lizenz	"Sie wollten mir noch einen Patch für unsere Iteraplaninstanzen zukommen lassen. Aktuell gibt es die Anforderungen zu bestimmte Dinge zu visualisieren, das geht aber nicht!
+
+
+
+Bitte lassen sie mir den Patch zukommen.
+
+
+
+by the way: Ich musste heute morgen um 12:28 den Tomcat neustarten, weil iTurm wieder die Anmeldung verweigerte: The database is not responding. (natürlich lief die DB, Anmeldung an Iteraplan ging) Nach ""service tomcat7 restart"" ging auch iTurm wieder.
+
+
+
+MfG A. Ostenkötter"		Fault	iteraplan Support	10/Jul/17 12:58 PM	12/Jul/17 9:12 AM														"10/Jul/17 12:58 PM;a.ostenkoetter@bghw.de;
+
+!2017-7-2-12-55-55-964.png|thumbnail!"	"10/Jul/17 1:37 PM;cst;Sehr geehrter Herr Ostenkötter,
+
+vielen Dank für Ihre Anfrage.
+
+Mit diesem Ticket erhalten Sie die Austauschdatei für die GoJS Anzeige mit der Lizenzinformation.
+
+[^iteraplan-client-6.0.0.jar.zip]
+
+Die ""iteraplan-client-6.0.0.jar"" - Datei muss im VErzeichneis ""/var/lib/tomcat7/webapps/iteraplan instanz/WEB-INF/lib"" ausgetauscht werden.
+
+Zusätzlich haben wir einen neuen Installer online gestellt, in diesem wurde der Fix mit implementiert. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	12/Jul/17 9:07 AM;a.ostenkoetter@bghw.de;Ist eingespielt und funktioniert																																																				

@@ -1,0 +1,11 @@
+SVG to PDF rendering	"+++++++++++++++++
+POSTPONED AFTER APRIL 2015
++++++++++++++++++
+Base the PDF on the vector format, so that magnified PDF has no visible pixels.
+
+For the demo-prototype in October a quick technical solution was necessary and fine. For the long term a strategical solution must be found.
+As-Is: Via a library the svg-format is transferred to a png/jpeg and then to a pdf. Therefore the pdf-graphics are based on pixels and not on vectors (as within the svg).
+
+To-Be: Find a new way (e.g. a new library) to directly export vector graphics from svg to pdf. The vector based pdf is then scalable and can be printed out on papers with big format.
+
+Take care on the ""Adobe Reader Bug"": http://www.iteraplan.de/wiki/display/IPNINE/Demand+Management"		New Feature	iteraplan PO	04/Nov/14 8:39 AM	19/Jan/16 10:09 AM					pdf																																																															

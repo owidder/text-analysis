@@ -1,0 +1,54 @@
+upgrade process	"Hello Support team,
+
+
+
+we are going to upgrade our instance of iteraplan form version 5.2 to 5.5.
+
+I could only find documents to upgrade from 5.3 to  5.4 and 5.4 to 5.5.
+
+
+
+But for 5.3, I got only an installation guide. Is there an upgrade guide from 5.2 to 5.3?
+
+
+
+Regards Matthias"		Technical question	iteraplan Support	24/Feb/17 3:51 PM	27/Feb/17 9:34 AM														"27/Feb/17 7:47 AM;cst;Good Morning Matthias,
+
+thank you for your inquiry.
+
+The Upgrade Guide + Scripts are attached to this ticket.
+
+ [^v5.2To5.3.zip] 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+
+ 
+
+ "	"27/Feb/17 8:23 AM;matthias.roth@dekra.com;Good Morning Christoph,
+
+in the attachment was a users guide included, not an upgrade guide.
+Can you check it again.
+
+Matthias"	"27/Feb/17 8:26 AM;cst; 
+
+Hello Matthias,
+
+thank you for your reply. 
+
+Here the correct document:
+
+""[^Upgrade Guide iteraplan 5.2 to 5.3.docx]"".
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"27/Feb/17 9:22 AM;matthias.roth@dekra.com;Hello Christoph,
+
+thank you, it looks better.
+Now, I can make an migration plan for it.
+
+You can close the ticket.
+
+Regards Matthias
+"																																																			

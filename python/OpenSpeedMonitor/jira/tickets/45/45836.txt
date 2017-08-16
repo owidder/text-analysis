@@ -1,0 +1,7 @@
+Wrong error message in spreadsheet repords for enumeration values starting with "*"	"Reproducer (with sample data, one enumeration attribute, for example ""Complexity"", extended by creating a new value starting with ""*"", for example ""*Test""):
+1. Create spreadsheet report with following query: ""Complexity"" contains ""*Test"" (it doesn't matter whether you use the select or the freetext input for the value)
+2. ""Send Query""
+=>
+bq. Please provide a valid value for this query or choose a value from the list of attribute values that have already been created for the queried attribute.
+
+Works if ""is"" is chosen as operator instead of ""contains""."		Bug	iteraplan PO	04/Jul/13 8:46 AM	30/Dec/15 2:40 PM					query	spreadsheet																																																														

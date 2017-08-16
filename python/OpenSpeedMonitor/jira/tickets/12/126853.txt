@@ -1,0 +1,25 @@
+LIST VIEW: edit-icon is displayed above content	"In the List view of Business Processes, add the column Strategic values.
+
+
+
+*Problem*:
+
+
+
+Hover over the values --> the edit icon is displayed. Unfortunately it is displayed above the values in the column. (see Screenshot)
+
+
+
+*Solution*:
+
+
+
+1. Position the numbers a little further left in order to make space for the edit button. The numbers should still be right-aligned, but with enough space for the edit button, when you hover over the column. You can find an example in the second screenshot. 
+
+
+
+2. Please check if this problem occurs for any other numeric column-types in other Lists. 
+
+
+
+3. *Another Scenario:* The User clicks on ""New""-button: In the green edit-line this icon should also not obscure anything. "		Improvement	iteraplan Speedbird	11/Jul/17 4:10 PM						gui	usability																																																														

@@ -1,0 +1,5 @@
+Burp-Scanner in einem Docker Container verpacken	"Aktuell funktioniert Burp als Scanner Komponente nicht mehr, da der secureBox Code Burp nicht mehr anspricht. Um Burp wieder aktiv als Mikroservice einzubinden muss die aktuelle Jar (aus dem Projekt oder als Download) in einem eigenen Docker Container verpackt und betrieben werden können.
+
+
+
+Der Docker Container muss anschließend ebenfalls in dem Docker-Compose File ergänzt werden und gemeinsam mit dem restlichen Stack verknüpft und gestartet werden können."	50439	Sub-task	secureCodeBox	24/Jul/15 7:27 PM																																																																					

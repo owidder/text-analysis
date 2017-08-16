@@ -1,0 +1,27 @@
+Jobliste zerschossen, wenn auch inaktive Jobs angezeigt werden	"siehe screenshot
+
+
+
+Tritt auch schon deployt auf: http://demo.openspeedmonitor.org/job/list"		Bug	OpenSpeedMonitor	14/Apr/15 12:08 AM	20/Apr/15 9:25 AM														14/Apr/15 4:48 PM;rkr;Welcher Browser? sieht alles OK aus in FF, IE und Chrome.	"15/Apr/15 11:32 AM;nku;Tritt bei mir in Chrome und FF auf:
+
+http://demo.openspeedmonitor.org/job/list
+
+
+
+Tritt aber nur auf, wenn Du die inaktiven Jobs dazuschaltest."	15/Apr/15 11:53 AM;rkr;Ist dort die aktuellste Version deployt? Mit der kann ich das Problem nicht nachvollziehen!	15/Apr/15 1:11 PM;rkr;Beim Aufruf der Funktion loadJobs in js/job/list.js sind die Ergebnisse unterschiedlich zwischen den beiden Servern / Versionen - bei beiden wird offenbar view/Jobs/_jobTable.gsp ausgeliefert (obwohl job/list aufgerufen wird - ich habe nichts gefunden was das umleitet) - aber auf dem demo-Server ist der Inhalt, welchen der Browser erhält, in die HTML-Tags <html><body> eingebettet, außerdem sind nach dem Einfügen diese Tags keine tr und td-Tags aus der Response zu sehen.	16/Apr/15 3:36 PM;rkr;Ich habe als Patch die Lösung von Benjamin eingebaut. Kannst Du bitte mal testen, ob es damit auf dem Server funktioniert?	"16/Apr/15 4:05 PM;nku;Ist deployt: http://dev.openspeedmonitor.wpt.iteratec.de/job/list
+
+
+
+Funktioniert, aber ich möchte das anders lösen."	"16/Apr/15 4:09 PM;rkr;Habe noch keine Lösung gefunden. http://stackoverflow.com/questions/29676842/why-does-groovy-gsp-add-additional-html-tags-around-output-and-how-to-avoid-t
+
+
+
+Was meinst Du zu diesem Hinweis?
+
+??Usually different behavior between different servers is more of a configuration issue than coding issue. I would suggest you check any profile/config type of files.??"	"20/Apr/15 9:25 AM;nku;Statt einem replace im Client streame ich das gerenderte template jetzt als plaintext in die response.
+
+
+
+Ist ein workaround. Scheint ein Grails-Bug zu sein.
+
+"																																															

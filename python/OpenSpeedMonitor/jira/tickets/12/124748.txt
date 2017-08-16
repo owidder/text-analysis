@@ -1,0 +1,13 @@
+IFD: Title of "Hide Sub Information Systems" button does not changing on applying	"*Reproduce:*
+
+* Open IFD diagram
+
+* Open ""Display"" menu
+
+* Select ""Hide Sub Information Systems"" entry
+
+* Open ""Display"" menu again
+
+*Actual:* diagram updated, but entry title is still ""Hide Sub Information Systems"", after refresh it changes to ""Show Sub Information Systems""
+
+*Expected:* title should be changed to ""Show Sub Information Systems"" immediately"		Bug	iteraplan Speedbird	19/Jun/17 2:33 PM	29/Jun/17 2:13 PM																																																																				

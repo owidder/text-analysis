@@ -1,0 +1,19 @@
+Create a buildingblock	"service:
+-- create a new element in JSmodel
+
+UI:
+- create Button on each list view page
+- creates new element in JS Model with empty name
+- new element appears in the first row, name  editing ist started
+- if name-column was not visible -> add name column first.
+- if the default name was not changed (e.g missclick) -> building block should not be created, the edited row dissapears
+
+make element row not editable until the rest call succeed"		New Feature	iteraplan Thunderduck	03/Nov/16 3:19 PM	12/Dec/16 10:11 AM														"07/Dec/16 3:27 PM;aan;Some changes comnpared with the description above:
+
+There is a floating row  containing all attributes for the new created element.
+
+They are sent in one request (besides associative Relations)
+
+Editing of name is not automatically started.
+
+Line can only be removed by clicking the ""X"""																																																						

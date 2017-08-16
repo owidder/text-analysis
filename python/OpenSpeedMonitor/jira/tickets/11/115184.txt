@@ -1,0 +1,23 @@
+Abfrageerweiterung IS über SS funktioniert nicht bei Reactor preprocessing	"Eine gespeicherte Abfrage von IS mit der Option über SS angebundene IS hinzuzufügen enthält bei der Ausführung im Reactor nur die ursprünglich selektierten IS, nicht die über SS verbundenen.
+
+
+
+Beispiel: Wählt man in den Demodaten den Filter Name = DWH bekommt man ein IS zurück. Mit der Erweiterung über die Schnittstellen sind es sieben. In der vom Reactor erzeugten 1.xml steht jedoch nur die ID des DWH."		Fault	iteraplan Support	16/Mar/17 5:47 PM	10/Apr/17 7:00 AM														"21/Mar/17 9:00 AM;cst;Hallo Daniel,
+
+welches Skript hast du für den oben durchgeführten ""Test"" benutzt? 
+
+Dann werde ich das hier nachstellen und weiter prüfen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	21/Mar/17 10:05 AM;dne;Das ist egal, du kannst irgendein Skript nehmen. Der Fehler tritt ja schon auf, bevor das Skript überhaupt startet.	"22/Mar/17 8:16 AM;cst;Hallo Daniel, 
+
+habe das Verhalten nachvollziehen können und hierzu ein BUG-Ticket erstellt.
+
+https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-5160 
+
+Bei weiteren Infos bis wann dies passiert gebe ich dir in diesem Ticket bescheid.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"																																																				

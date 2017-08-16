@@ -1,0 +1,8 @@
+Wrong behavior for selecting range for filters by date property	"Steps to reproduce: 
+1. Go to LSD
+2. Use filtering by ""Life (end)"" date property
+3. Select ""4/23/15"" as from 
+4. Select ""4/1/15""  as until
+Actual: It is possible to select  incorrect date for range
+Expected: It is impossible to select incorrect date for range"	47574	Sub-task	iteraplan PO	20/Apr/15 11:12 AM	22/Apr/15 3:53 PM													"Workspace: Windows 8.1
+revision: 951"	22/Apr/15 11:37 AM;dasm;Actual for filtering for self-related	22/Apr/15 12:04 PM;dasm;not fixed (rev 997)	22/Apr/15 12:58 PM;dasm;Verified																																																				

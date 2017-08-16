@@ -1,0 +1,7 @@
+Add date interval column			New Feature	iteraplan PO	10/May/16 11:02 AM	31/May/16 11:24 AM														"25/May/16 12:49 PM;mwe;Add button is already implemented.
+
+Check that all date interval values can be added as columns.
+
+The complete rowData will be built when loading the list page. You have to make sure that all possible date interval values are set into the rowData in RowDataBuilder."	"27/May/16 3:54 PM;pma;*Review Comment(s):*
+
+OK"																																																					

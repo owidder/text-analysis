@@ -1,0 +1,39 @@
+Browser scrolling is not working when hovering ag-grid	"*Reproduce:*
+
+ - open Manufacturer attribute in Administration->Attributes;
+
+ - if browser scroller does not appear, add some literals or multiline description;
+
+ - hold mouse cursor on literals list.
+
+ - scroll
+
+
+
+*Actual result:*
+
+ - nothing happens, browser scrolling is not working
+
+
+
+*Expected result:*
+
+ - page is scrolled.
+
+
+
+*Note:*  when hovering ag-grid header or actions column everything works as expected.
+
+ Problem is also reproduced with other pages where ag-grid is used and browser scroller appears.
+
+
+
+Check if it is ag-grid feature (for example here [https://www.ag-grid.com/] for first table issue is reproduced only when hovering Name or Country columns).
+
+
+
+
+
+ If yes - disable this feature for all columns of all lists.
+
+If not - there is a workaround to put literals list to the bottom of the page and fix its height, so there will be no browser scroller at all."		Bug	iteraplan Speedbird	12/May/17 1:34 PM	26/May/17 1:24 PM																																																																				

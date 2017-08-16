@@ -1,0 +1,15 @@
+Name uniqueness validation works case sensitive, thus doesn't find all violations	"_Reproduce (with sample or initial data):_
+# iteraplan -> Mass Data -> Export/Import
+# Import attached Excel file
+
+_Expected:_ Import step 1 showing a uniqueness constraint violation for Business Processes ""test"" and ""Test""
+
+_Actual:_ No warnings or errors in step 1-4.
+Using Oracle, step 5 doesn't show any warnings either, and both Business Processes were created.
+Using MySQL or HSQLDB, in step 5 a technical error page reporting a constraint violation exception of hibernate appears.
+
+_Why?_
+UniquenessConstraintValidator compares the values to check implicitely using equals by inserting them into a map. As names are represented by simple Strings, this comparison is case sensitive.
+
+_Solution idea:_
+Use the equals operator of the property's value type to check for uniqueness."		Bug	iteraplan PO	24/Jul/14 11:39 AM	28/Jul/14 11:23 AM					import	validation																																																														

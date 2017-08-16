@@ -1,0 +1,15 @@
+Date and Numeric attribute filter dialogs show incorrect datepicker values	"*Summary:*
+
+Date and Numeric attribute filter dialogs show incorrect input values after second opening of attribute filter:
+
+- no dates are shown in datepickers for date attributes;
+
+- no slider is shown for numeric attributes;
+
+- Exception appears (see attached screenshot).
+
+
+
+*To be:*
+
+After each new opening of attribute filter dialog all date and numeric values are shon correctly (dates in datepickers and slider for numeric ranges)"		Bug	iteraplan Speedbird	14/Dec/16 1:33 PM	14/Dec/16 3:34 PM																																																																				

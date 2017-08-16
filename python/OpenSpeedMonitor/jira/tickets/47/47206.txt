@@ -1,0 +1,7 @@
+"Remove" button don't work with added column on Information System page	"IPNINE-229
+Steps to reproduce:
+1. Go to Recent view page -> Click on Information System tile 
+2. Click on ""Add column"" button-> Choose any column
+3. Navigate to added column and click on ""Remove"" button
+Actual result: Error is appear 
+Expected result: Column should be removed"		Bug	iteraplan PO	28/Nov/14 2:08 PM	22/Dec/14 10:55 AM					IE									22/Dec/14 10:55 AM;dasm;verified																																																						

@@ -1,0 +1,8 @@
+Analyse and fix behaviour of new client on IE 10	"* Please check, if the new client (especially the Nested Cluster Diagram) works on Internet Explorer 9 and 10. Please have a look of the attached screenshot of the Nested Cluster Diagram in Internet Explorer 10.
+
+* If it does not work, please fix unwanted behaviour.
+
+*NEW:* For this issue, IE9 compatibility is no concern anymore."		Task	iteraplan PO	08/Apr/15 3:28 PM	24/Apr/15 12:11 PM					newClient									"22/Apr/15 11:01 AM;fam;Fixed following problems:
+-Accessing NCD did not work.
+-Remove buttons had been invisible when some filter were selected as they had been out of the range of the containing svg
+-y coordinate of inner filter label is adjusted now as it had been null due to wrong declaration"	22/Apr/15 11:46 AM;isc;I have IE 9 installed. The new client does not work in IE 9. I get only the screen from the attached screenshot.	22/Apr/15 1:06 PM;isc;It also does not work with IE10.	23/Apr/15 8:20 AM;fka;IE 9 out of scope for now. Do not test or report bugs regarding IE 9 and the new client.	23/Apr/15 2:20 PM;fam;Added implementation for time functions to enable also native IE 10 usage																																																		

@@ -1,0 +1,7 @@
+1.4 User Guide, Known Bugs & Export to PDF	"https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-1.4Dokumentation
+
+"		Task	iteraplan Speedbird	13/Jun/17 4:58 PM	21/Jun/17 10:32 AM														"16/Jun/17 4:53 PM;tsc;[~ip.fabian.kainzinger] will take a look on the user guide.
+
+ 1 known bugs.
+
+ Export will be done by the ticket-owner"																																																						

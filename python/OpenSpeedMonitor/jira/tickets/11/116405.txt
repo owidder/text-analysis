@@ -1,0 +1,5 @@
+MPD: Color according to timespan / chooseable	"The default color of al displayed timespans should be the color configured for that timespan.
+
+
+
+Moreover the color should be changeable: Legend, color picker, as usual and then be saved in the url."		New Feature	iteraplan Speedbird	26/Mar/17 6:01 PM	22/May/17 4:44 PM														12/May/17 2:00 PM;roia;On hold until we find out if backend can return color property for the runtimePeriod attribute.																																																						

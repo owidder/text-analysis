@@ -1,0 +1,3 @@
+Planung Anomalie-Detection	"Max hat (bisher n Friday-Zeit) mit den OSM-Daten geespielt und eine erste Ausreißer-Statistik in R gemacht.
+
+Er würde gerne mit daran arbeiten, bräuchte dann aber auch Budget. Wir sollten am kommenden Mittwoch mal sehen, in welcher Form eine Aausreißer-/Anomalie/Trend-Statistik einbauen möchten und wie der Anteil von Max aussehen kann. "		Task	OpenSpeedMonitor	30/Jan/17 3:21 PM	15/Feb/17 10:43 AM																																																																				

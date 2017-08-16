@@ -1,0 +1,1 @@
+Some error-codes need to be revised for REST-interface	see results in ITERAPLAN-2032.		Task	iteraplan PO	24/Oct/13 10:16 AM	19/Jan/16 11:33 AM																																																																				

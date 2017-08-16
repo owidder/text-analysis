@@ -1,0 +1,1 @@
+Treat Responsibility Attributes as Enums in Elastic	If Responsibility Attributes will be treated as Enums in Elastic, it would have many advantages, e.g. no extra validation for wrong responsibility attributes while importing from excel, etc. 		Improvement	iteraplan Thunderduck	10/Jul/14 5:17 PM	29/Jun/17 3:12 PM																																																																				

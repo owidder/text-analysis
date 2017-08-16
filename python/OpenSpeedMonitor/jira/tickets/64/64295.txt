@@ -1,0 +1,5 @@
+Aufrufen von benutzerdefinierten Dashboards dauert immer noch zu lange	"Das Aufrufen eines benutzerdefinierten Dashboards dauert gefühlt 10 mal so lange wie das Aufrufen des selben Dashboards manuell :(
+
+
+
+Habe in der offiziellen OTTO-Instanz mit EventResult-Dashboards getestet."		Bug	OpenSpeedMonitor	20/Nov/15 4:50 PM	23/Nov/15 12:29 PM																																																																				

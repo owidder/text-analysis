@@ -1,0 +1,79 @@
+User profiles	"If the user opens a feature (e.g. list of informationsystems) the user has to be presented with the last settings of the feature.
+
+
+
+# Continuously *save* feature settings per user on the client and save it every minute on server (with a timer) and at route change. (last setting save wins)
+
+# *Load* the complete settings on session start.
+
+# Add possibility to reset config to default per feature.
+
+
+
+To do:
+
+# Add technology base
+
+#* Backend
+
+#** DB table (generic scheme, so that the db table have not to be altered when an additional feature config has to be saved) with DAO -> speak with [~mwe]
+
+#** REST
+
+#* Frontend
+
+#** Resource for REST requests
+
+#** Service storing the current configuration to localStorage and for checking the timer. Check how long it would take to do it with a timer. Then decide if the timer will be implemented or every change will  be saved to the database.
+
+#** Reset button in header
+
+# Add handling of settings for the following features (including reset)
+
+#* Settings of list view per building block type (sorting, selection, etc.: use URL without language)
+
+#* Language (at language change and global for whole application)
+
+#* Settings per diagram type (use URL without language)"		Epic	iteraplan Quickfox	01/Feb/16 1:41 PM	20/Sep/16 1:37 PM														27/Jul/16 4:24 PM;mwe;Try https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval for the timer.	"28/Jul/16 2:00 PM;mwe;Check [~mwe]: What happens when user opens saved URL with parameters (feature settings change? language change?). -> Users exchange links for iteraplan and have different languages saved. The English person gets the german translation. Should the setting be updated?
+
+Check [~mwe]: Loading at session or feature start if user has two browsers open.
+
+
+
+-> Changes added to epic description."	"05/Aug/16 10:43 AM;wfr;As long as the items saved are small enough, and the save action is asynchronous and reliable, there is no need to accumulate changes on the server side.
+
+
+
+If one of the assumptions above does not hold, we can add more sophisticated timer logic later.
+
+
+
+A simple configuration change has these steps:
+
+# a user drags a column in a list/grid.
+
+# the UI (ag grid) notifies the controller
+
+# the controller changes the configuration
+
+# the configuration change is written to the address line($location)
+
+# NEW the configuration object (or the controller) writes the new configuration String to the NEW service for storing, asynchronously, and returns immediately.
+
+# the UI shows the new configuration both in the list and the address line
+
+# the user goes on interacting
+
+# the service writes via a $resource put
+
+# LATER the $resource put is completed successfully
+
+
+
+If the $resource put fails for whatever reason, this configuration change is lost.
+
+The next change within the same view (here: list) will write the lost change to the server and mend the loss.
+
+
+
+Whenever the user makes several changes in a row, the service, network, server, DB will have to deal with a few small writes. No big deal, no reason to tune the performance beforehand."	20/Sep/16 1:37 PM;fka;all done																																																			

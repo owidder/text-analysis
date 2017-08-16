@@ -1,0 +1,61 @@
+Create Attribute list (read-only)	"Assume REST-API on server works as designed. If it is does not exist yet, use a mockup.
+
+
+
+*Summary:*
+
+Create a list of all attributes similar to the Building Block Lists.
+
+
+
+*Implementation details:*
+
+* Scope of this ticket is view-only - edit is in another ticket
+
+* Use AG-Grid
+
+* Use the same Look & Feel like the Building Block lists
+
+* Date Intervals are part of this list and not in a separate list
+
+
+
+*Features:*
+
+* Quicksearch + Show number of attributes (""Showing x of y attributes"")
+
+* Add column (incl. search for column names)
+
+* Sort columns
+
+* Delete columns
+
+* Re-order columns by Drag & Drop
+
+* Default columns: ""Name"", ""Description"", ""Attribute Group"""		New Feature	iteraplan Thunderduck	30/Sep/16 4:18 PM	24/Nov/16 9:36 AM														"13/Oct/16 5:41 PM;mwe;DONE:
+
+* I generalized the list, so the following features are included automatically:
+
+** Quicksearch + Show number of attributes (""Showing x of y attributes"")
+
+** Add column (incl. search for column names)
+
+** Sort columns
+
+** Delete columns
+
+** Re-order columns by Drag & Drop 
+
+* Default columns: ""Name"", ""Description"", ""Attribute Group"" (Attribute Group is shown as ""Group"", because we are already on the attributes page and ""Attribute"" would be redundant. Agreed with [~msr]
+
+* Added link to attribute detail view
+
+
+
+TODO:
+
+* Add date intervals (after the REST API is clear)
+
+* Implement Resource to get the real attributes from the backend (after the REST API is clear) -> See saved queries list for an example of the usage of a resource with the list component"	14/Nov/16 1:50 PM;mwe;Also review [revision 5110|https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-9?cs=5110]	15/Nov/16 5:59 PM;mwe;The date intervals are missing currently.	"18/Nov/16 4:34 PM;mwe;Date intervals added.
+
+Discussed with [~fka]: Removed possibility to remove column because all columns should be shown all the time. So the type column is shown, too."																																																			

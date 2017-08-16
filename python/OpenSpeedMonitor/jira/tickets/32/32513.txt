@@ -1,0 +1,7 @@
+Kein Abbrechen-Button beim Bearbeiten von Verbindungen	Im Formular von Messungen > Verbindungen > Verbindung bearbeiten fehlt ein Abbrechen-Button		Bug	OpenSpeedMonitor	18/Feb/15 11:53 AM	24/Feb/15 3:52 PM														"20/Feb/15 11:40 AM;rkr;Für alle Fronten-Views zur Bearbeitung von Domains:
+
+
+
+edit: reset + cancel
+
+create: nur cancel"																																																						

@@ -1,0 +1,39 @@
+Review and improve Code Quality in NIC according filters	"Do a timeboxed review (e.g. 2 days for review + 3 days for most important fixes) of all filter-related code, preferably in pair of experienced (iteraplan) developers.
+
+
+
+Here some points that already are known to could be improved:
+
+* name functions consistently, e.g.: all single*Filter.js define a function {{toUriPart()}} and its counterpart which is called {{init()}}. The latter should be renamed to something like {{initByUriPart}}
+
+** the way how these functions perform an initialisation is different. Unify them! (see also next point)
+
+* determine necessary/used functions and remove unused ones, e.g. most single*Filter.js define methods _updateOperator(), updateTranslationData() and updateFilterValues() _ in contrast singleTextFilter.js only defines the first 2. 
+
+** Check whether updateTranslationData() is needed, or the functionality can be moved into the other 2 methods
+
+** Make sure to have a consistent API (where applicable)
+
+* name variables consistently - every single*Filter.js defines {{filterValue}} but it is used in different ways, e.g. singleDateFilter uses it to store string-representations of the dates, while it defines {{dateValues}} to store Date objects that are also used in the view.
+
+* the behavior of primary filter and relationship-end-filter is almost identical - is it possible to have a more generic usage of the both.
+
+** e.g. in singleFilterRowTemplate.html there is lots of duplication - is it possible to extract a directive?
+
+** probably makes it necessary to remove  the differentiation of primary-filter and relationship-end-filter to a certain extinct- a caller may get the top-level filter for either the primary type or any other relEnd, and operates on the resulting object, instead of calling methods like _addRelEndFilter()_.
+
+* some filter define a range-separator - check whether it makes sense to extract it to a more generic place.
+
+* rethink the package-hierarchy
+
+** filter definition (the model) is in 'app/js/common/filter'
+
+** used directives (including the controller and template) are in 'app/js/common/commonHeader/filterDialog'
+
+** generic directives usually reside in 'app/js/directives'
+
+* there are lots of switch-statements to determine the filter type, or handle certain filter types differently - maybe we can put all those methods in different types with the same interface (OO-way).
+
+
+
+... maybe more."		Improvement	iteraplan PO	30/Mar/16 2:51 PM						filter	filtering	nic																																																													

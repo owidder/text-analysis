@@ -1,0 +1,62 @@
+print()-Ausgaben einer Reaction	"Hi Christoph,
+
+
+
+wo landen print()-Ausgaben einer Reaction? Hab das Demo-Skript SetBefore.js ausprobiert und die Verantwortlichen nicht gefunden."		Technical question	iteraplan Support	24/May/17 12:01 PM	07/Jun/17 1:39 PM														"24/May/17 12:36 PM;msr;Hallo Daniel,
+
+die landen natürlich in der Umgebung, in der sie ausgeführt werden - also im Rhino/Nashorn innerhalb der Java-Virtual-Machine ;)
+
+Entschuldige, Spaß beiseite. Sie landen zuerst mal auf der Tomcat-Console. Du kannst sie also live im Tomcat-Fenster verfolgen. Danach landen sie in einem Tomcat-Log. Ich bin mir aber nicht sicher, ob es localhost, catalina oder host-manager ist. Soll ich das noch für dich herausfinden?
+
+VG
+
+Marcel"	"24/May/17 4:28 PM;dne;Hallo Marcel, ja bitte, ich stell mich echt zu blöd an ...
+
+Im Tomcat Fenster habe ich den Eintrag nun gefunden (geht aber schnell unter weil alle 5 Sekunden ein hasChanges kommt):
+
+INFORMATION: 2017-05-24 16:17:24        0:0:0:0:0:0:0:1 -       0:0:0:0:0:0:0:1 8080    GET     /iteraplan/api/icresp-       200     3549    0       373     http://localhost:8080   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36     http://localhost:8080/iteraplan/client/
+Mai 24, 2017 4:17:24 PM org.restlet.engine.log.LogFilter afterHandle
+
+INFORMATION: 2017-05-24 16:17:24        0:0:0:0:0:0:0:1 -       0:0:0:0:0:0:0:1 8080    GET     /iteraplan/api/icd-       200     1046095 0       606     http://localhost:8080   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36     http://localhost:8080/iteraplan/client/
+The set before the changes: joe,sue,bob
+Mai 24, 2017 4:17:44 PM org.restlet.engine.log.LogFilter afterHandle
+
+INFORMATION: 2017-05-24 16:17:44        0:0:0:0:0:0:0:1 -       0:0:0:0:0:0:0:1 8080    PUT     /iteraplan/api/element/InformationSystem/203    -       200     225     32      2078    http://localhost:8080   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36     http://localhost:8080/iteraplan/client/
+Mai 24, 2017 4:17:53 PM org.restlet.engine.log.LogFilter afterHandle
+
+
+In den Logs dagegen nicht. Am nächsten dran ist noch catalina:
+
+INFORMATION: 2017-05-24 16:17:24 0:0:0:0:0:0:0:1 - 0:0:0:0:0:0:0:1 8080 GET /iteraplan/api/icresp - 200 3549 0 373 http://localhost:8080 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 http://localhost:8080/iteraplan/client/
+Mai 24, 2017 4:17:24 PM org.restlet.engine.log.LogFilter afterHandle
+
+INFORMATION: 2017-05-24 16:17:24 0:0:0:0:0:0:0:1 - 0:0:0:0:0:0:0:1 8080 GET /iteraplan/api/icd - 200 1046095 0 606 http://localhost:8080 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 http://localhost:8080/iteraplan/client/
+Mai 24, 2017 4:17:44 PM org.restlet.engine.log.LogFilter afterHandle
+
+INFORMATION: 2017-05-24 16:17:44 0:0:0:0:0:0:0:1 - 0:0:0:0:0:0:0:1 8080 PUT /iteraplan/api/element/InformationSystem/203 - 200 225 32 2078 http://localhost:8080 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 http://localhost:8080/iteraplan/client/
+Mai 24, 2017 4:17:53 PM org.restlet.engine.log.LogFilter afterHandle
+
+host-Manager ist leer, in localhost ist nichts brauchbares."	"26/May/17 10:24 AM;msr;Hallo Daniel,
+
+danke für die schnelle Rückmeldung.
+
+Ich habe hier lokal dasselbe Verhalten: Auf der Tomcat-Konsole sehe ich es, aber in dern 3 genannten Tomcat-Logfiles taucht es nicht auf.
+
+Ich werde Andrea am Montag danach fragen, da sie hier mitentwickelt hat. Heute ist sie leider nicht da.
+
+Schönes Wochenende
+
+Marcel"	30/May/17 2:37 PM;dne;*push*	"31/May/17 9:05 AM;msr;Hi Daniel.
+
+Andrea hat es recherchiert: Diese Zeile musst du in die log4j.properties übernehmen, damit die print-Ausgaben im iteraplan-Log auftauchen:
+
+""log4j.logger.de.iteratec.iteraplan.businesslogic.service.scriptContainer=WARN, logfile""
+
+Passt das für dich?
+VG
+
+Marcel"	"06/Jun/17 9:16 AM;dne;Your request status changed to Requester action Needed.
+Wednesday 9:05 AM
+
+In wie fern?"	"06/Jun/17 12:00 PM;msr;Du hast eine Antwort erhalten und kannst entweder darauf reagieren (""Requester Action needed""), z.B. ""Thema erledigt - bitte Ticket schließen""
+oder nichts machen, dann schließt es sich auch nach 10 Tagen ohne Reaktion, weil der Kunde ausreichend Gelegenheit hatte zu reagieren."	06/Jun/17 1:42 PM;dne;Achso, du meinst unser Telefonat Ende Mai. War da nicht noch eine finale Klärung ausgestanden?! Irgendwas wolltest du doch nicht nachschauen (lassen), oder nicht?																																															

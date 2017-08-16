@@ -1,0 +1,11 @@
+[Integrationstests] Tests in der Klasse WeeklyPageIntTests fixen	"Fixen heißt hier:
+
+
+
+* Auf Spock umstellen
+
+* IntegrationSpec als Basisklasse verwenden
+
+* Tests fachlich fixen
+
+* Es sollten keine Exceptions mehr geworfen werden"		Task	OpenSpeedMonitor	30/Mar/16 11:37 AM	31/Mar/16 6:31 PM																																																																				

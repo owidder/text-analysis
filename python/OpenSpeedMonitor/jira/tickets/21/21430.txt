@@ -1,0 +1,5 @@
+Einführung eines Mocking Frameworks für Testzwecke	"Um einfach und schnell gegen ZAP testen zu können wollen wir ein Mocking framework verwenden. 
+
+Im ersten schritt muss ich auf ein Mockingframework festgelegt werden. 
+
+Danach werden tests für die verschiedenen Funktionalitäten geschrieben"		Story	secureCodeBox	06/Oct/14 2:10 PM	14/Nov/14 11:32 AM																																																																				

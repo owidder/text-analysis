@@ -1,0 +1,26 @@
+iteraplan does not ensure unique names for Information Systems	"I have an information system named ""app42"" with the release 1.0 (making the full name app42 # 1.0) and a successor with the same name and release 2.0 (app42 # 2.0).
+When I delete the release from app42 # 1.0 and from app42 # 2.0, there are two different information systems with the exact same name (app42). When I try to change the name from one of those afterwards, the change also occur in the other information system."		Bug	iteraplan PO	03/Dec/13 8:04 AM	01/Jul/14 12:56 PM														"05/Dec/13 8:37 AM;wfr;Suggestion:
+- reproduce UI actions 
+- close this ticket as invalid
+- create a ticket for a UI improvement ""clarify the structure of base and release BB _visually_"".
+ 
+
+Analysis only (that is: not reproduced).
+
+The user observes the correct behavior (correct meaning as specified),
+but his interpretation is different, based on a different mental metamodel.
+
+The initial situation is actually
+- 2 ISRs (app42#1.0, app42#2.0)
+- 1 IS (app42). 
+But the user sees this as two different ISs.
+
+After deleting the releases, there still is only one IS, not two.
+This IS has a unique name.
+Changing this name in one view (as IS of the deleted ISR 1.0) is visible from the other view (IS of ISR 2.0) as well."	05/Dec/13 11:05 AM;LHM-User;When releases are deleted afterwards, iteraplan interprets both views as two information systems with the same name. For example, when I try to import data via Excel file, iteraplan responds with an error message that indicates that there are two information systems with the name "app42".	25/Jun/14 2:15 PM;fka;Is this still applicable?	"27/Jun/14 11:14 AM;dop;Seems to be fixed. I have created two ISR (1.0 and 2.0) and wanted to delete the release. iteraplan says:
+
+{noformat}
+The following errors occurred:
+An element of this type with the release identification app42 already exists. Please enter a different version number and press Save again.
+{noformat}
+"																																																			

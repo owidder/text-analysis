@@ -1,0 +1,33 @@
+Computation for filtering content elements	"Depends on IPNINE-378, IPNINE-379 (configuration attributes names are required)
+========================
+
+*Summary:*
+Create a filter for content elements.
+
+*As-Is:*
+There exists no filtering.
+
+*To-Be:*
+Content elements can be filtered by enumeration, numeric, text or date attributes.
+
+*Affected parts of the system:*
+* Landscape diagram
+
+*Approach:* 
+Implement the filtering analogue to the filtering in the Nested Cluster Diagram. Use the the same logic and the same legend.
+
+*Acceptance Criteria:*
+The user can do exactly the same filtering of inner elements as in the Nested Cluster Diagram, i.e. same legend, same url, ..."		New Feature	iteraplan PO	26/Jan/15 10:40 AM	22/Apr/15 3:48 PM					attribute	filter	landscape							"07/Apr/15 9:18 AM;msr;-Use the following wording for menu entries:-
+
+* -Show from Default attribute group-
+* -Show from Strategic measurement categories-
+* -... (all availabe attribute groups)-
+
+-Use second level menu for attribute names like in the Nested Cluster Diagram and the third level menu for attribute values like in the Nested Cluster Diagram.-"	09/Apr/15 2:32 PM;msr;Please use existing sub-menu entries from Nested Cluster Diagram instead of my previous comment.	"22/Apr/15 3:56 PM;tam;*lsdConfiguration.js*
+Do we need this 'code' or not? If yes, please also comment what it is and what is its value 'no'
+{code}//configurationParameters.code = ""no"";{code}
+
+{code}LSDConfiguration.prototype.setContentElementsFilter = function(filters){code}
+would it better to rename this function into LSDConfiguration.prototype.setContentElementsFilter*s*"	"14/May/15 4:24 PM;anma;this parameter is for developers. if code = no you have 'clear' query URL string without any coding
+
+method has been renamed"																																																			

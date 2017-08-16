@@ -1,0 +1,2237 @@
+Tests aufräumen	"* Tests laufen nicht stabil (unterschiedliche Ergebnisse auf unterschiedlichen Umgebungen)
+
+* Fehlerhaft Tests
+
+* Int-Tests laufen zu lange"		Task	OpenSpeedMonitor	27/Jun/14 4:55 PM	23/May/16 5:31 PM														"30/Jun/14 8:58 AM;nkuhn;Aus Jira-Rescue:
+
+
+
+Für Test-Logs auf unterschiedlichen Umgebungen siehe IT-377"	"30/Jun/14 9:07 AM;nkuhn;Jira-recovery:
+
+
+
+Ergebnis lokaler Testlauf:
+
+\
+
+\
+
+{code}
+
+\
+
+objc[17827]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/bin/java and /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre/lib/libinstrument.dylib. One of the two will be used. Which one is undefined.
+
+\
+
+| Compiling 1 source files
+
+\
+
+| Compiling 1 source files.
+
+\
+
+| Compiling 1 source files..
+
+\
+
+| Compiling 1 source files
+
+\
+
+| Compiling 1 source files.
+
+\
+
+| Compiling 1 source files..
+
+\
+
+| Compiling 1 source files...
+
+\
+
+| Compiling 1 source files....
+
+\
+
+| Compiling 1 source files.....
+
+\
+
+| configuring joda-time support for simple datastore
+
+\
+
+| configuring joda-time support for simple datastore.
+
+\
+
+| configuring joda-time support for simple datastore..
+
+\
+
+| configuring joda-time support for simple datastore...
+
+\
+
+| configuring joda-time support for simple datastore....
+
+\
+
+| configuring joda-time support for simple datastore.....
+
+\
+
+| Compiling 1 source files
+
+\
+
+| Compiling 1 source files.
+
+\
+
+| Running 287 unit tests...
+
+\
+
+| Running 287 unit tests... 1 of 287
+
+\
+
+| Running 287 unit tests... 2 of 287
+
+\
+
+| Running 287 unit tests... 3 of 287
+
+\
+
+| Running 287 unit tests... 4 of 287
+
+\
+
+| Running 287 unit tests... 5 of 287
+
+\
+
+| Running 287 unit tests... 6 of 287
+
+\
+
+| Running 287 unit tests... 7 of 287
+
+\
+
+| Running 287 unit tests... 8 of 287
+
+\
+
+| Running 287 unit tests... 9 of 287
+
+\
+
+| Running 287 unit tests... 10 of 287
+
+\
+
+| Running 287 unit tests... 11 of 287
+
+\
+
+| Running 287 unit tests... 12 of 287
+
+\
+
+| Error 2014-06-12 10:34:04,554 [main] ERROR chart.MeasuredValue  - EventResult was added to MeasuredValue although it was already in the list! (EventResult-ID=3, MeasuredValue-ID=1)
+
+\
+
+| Error 2014-06-12 10:34:04,560 [main] ERROR chart.MeasuredValue  - EventResults were added to MeasuredValue although some of them were already in the list! (id's which were already in the list=[5, 6, 7], MeasuredValue-ID=1)
+
+\
+
+| Running 287 unit tests... 13 of 287
+
+\
+
+| Running 287 unit tests... 14 of 287
+
+\
+
+| Running 287 unit tests... 15 of 287
+
+\
+
+| Running 287 unit tests... 16 of 287
+
+\
+
+| Running 287 unit tests... 17 of 287
+
+\
+
+| Running 287 unit tests... 18 of 287
+
+\
+
+| Running 287 unit tests... 19 of 287
+
+\
+
+| Running 287 unit tests... 20 of 287
+
+\
+
+| Running 287 unit tests... 21 of 287
+
+\
+
+| Running 287 unit tests... 22 of 287
+
+\
+
+| Running 287 unit tests... 23 of 287
+
+\
+
+| Running 287 unit tests... 24 of 287
+
+\
+
+| Running 287 unit tests... 25 of 287
+
+\
+
+| Running 287 unit tests... 26 of 287
+
+\
+
+| Running 287 unit tests... 27 of 287
+
+\
+
+| Running 287 unit tests... 28 of 287
+
+\
+
+| Running 287 unit tests... 29 of 287
+
+\
+
+| Running 287 unit tests... 30 of 287
+
+\
+
+| Running 287 unit tests... 31 of 287
+
+\
+
+| Running 287 unit tests... 32 of 287
+
+\
+
+| Running 287 unit tests... 33 of 287
+
+\
+
+| Running 287 unit tests... 34 of 287
+
+\
+
+| Running 287 unit tests... 35 of 287
+
+\
+
+| Running 287 unit tests... 36 of 287
+
+\
+
+| Running 287 unit tests... 37 of 287
+
+\
+
+| Running 287 unit tests... 38 of 287
+
+\
+
+| Running 287 unit tests... 39 of 287
+
+\
+
+| Running 287 unit tests... 40 of 287
+
+\
+
+| Running 287 unit tests... 41 of 287
+
+\
+
+| Running 287 unit tests... 42 of 287
+
+\
+
+| Running 287 unit tests... 43 of 287
+
+\
+
+| Running 287 unit tests... 44 of 287
+
+\
+
+| Running 287 unit tests... 45 of 287
+
+\
+
+| Running 287 unit tests... 46 of 287
+
+\
+
+| Running 287 unit tests... 47 of 287
+
+\
+
+| Running 287 unit tests... 48 of 287
+
+\
+
+| Running 287 unit tests... 49 of 287
+
+\
+
+| Running 287 unit tests... 50 of 287
+
+\
+
+| Running 287 unit tests... 51 of 287
+
+\
+
+| Running 287 unit tests... 52 of 287
+
+\
+
+| Running 287 unit tests... 53 of 287
+
+\
+
+| Running 287 unit tests... 54 of 287
+
+\
+
+| Running 287 unit tests... 55 of 287
+
+\
+
+| Running 287 unit tests... 56 of 287
+
+\
+
+| Running 287 unit tests... 57 of 287
+
+\
+
+| Running 287 unit tests... 58 of 287
+
+\
+
+| Running 287 unit tests... 59 of 287
+
+\
+
+| Running 287 unit tests... 60 of 287
+
+\
+
+| Running 287 unit tests... 61 of 287
+
+\
+
+| Running 287 unit tests... 62 of 287
+
+\
+
+| Running 287 unit tests... 63 of 287
+
+\
+
+| Running 287 unit tests... 64 of 287
+
+\
+
+| Running 287 unit tests... 65 of 287
+
+\
+
+| Running 287 unit tests... 66 of 287
+
+\
+
+| Running 287 unit tests... 67 of 287
+
+\
+
+| Running 287 unit tests... 68 of 287
+
+\
+
+| Running 287 unit tests... 69 of 287
+
+\
+
+| Running 287 unit tests... 70 of 287
+
+\
+
+| Running 287 unit tests... 71 of 287
+
+\
+
+| Running 287 unit tests... 72 of 287
+
+\
+
+| Running 287 unit tests... 73 of 287
+
+\
+
+| Running 287 unit tests... 74 of 287
+
+\
+
+| Running 287 unit tests... 75 of 287
+
+\
+
+| Running 287 unit tests... 76 of 287
+
+\
+
+| Running 287 unit tests... 77 of 287
+
+\
+
+| Running 287 unit tests... 78 of 287
+
+\
+
+| Running 287 unit tests... 79 of 287
+
+\
+
+| Running 287 unit tests... 80 of 287
+
+\
+
+| Running 287 unit tests... 81 of 287
+
+\
+
+| Running 287 unit tests... 82 of 287
+
+\
+
+| Running 287 unit tests... 83 of 287
+
+\
+
+| Running 287 unit tests... 84 of 287
+
+\
+
+| Running 287 unit tests... 85 of 287
+
+\
+
+| Running 287 unit tests... 86 of 287
+
+\
+
+| Running 287 unit tests... 87 of 287
+
+\
+
+| Running 287 unit tests... 88 of 287
+
+\
+
+| Running 287 unit tests... 89 of 287
+
+\
+
+| Running 287 unit tests... 90 of 287
+
+\
+
+| Running 287 unit tests... 91 of 287
+
+\
+
+| Running 287 unit tests... 92 of 287
+
+\
+
+| Running 287 unit tests... 93 of 287
+
+\
+
+| Running 287 unit tests... 94 of 287
+
+\
+
+| Running 287 unit tests... 95 of 287
+
+\
+
+| Running 287 unit tests... 96 of 287
+
+\
+
+| Running 287 unit tests... 97 of 287
+
+\
+
+| Running 287 unit tests... 98 of 287
+
+\
+
+| Running 287 unit tests... 99 of 287
+
+\
+
+| Running 287 unit tests... 100 of 287
+
+\
+
+| Running 287 unit tests... 101 of 287
+
+\
+
+| Running 287 unit tests... 102 of 287
+
+\
+
+| Running 287 unit tests... 103 of 287
+
+\
+
+| Running 287 unit tests... 104 of 287
+
+\
+
+| Running 287 unit tests... 105 of 287
+
+\
+
+| Running 287 unit tests... 106 of 287
+
+\
+
+| Running 287 unit tests... 107 of 287
+
+\
+
+| Running 287 unit tests... 108 of 287
+
+\
+
+| Running 287 unit tests... 109 of 287
+
+\
+
+| Running 287 unit tests... 110 of 287
+
+\
+
+| Running 287 unit tests... 111 of 287
+
+\
+
+| Running 287 unit tests... 112 of 287
+
+\
+
+| Running 287 unit tests... 113 of 287
+
+\
+
+| Running 287 unit tests... 114 of 287
+
+\
+
+| Running 287 unit tests... 115 of 287
+
+\
+
+| Running 287 unit tests... 116 of 287
+
+\
+
+| Running 287 unit tests... 117 of 287
+
+\
+
+| Running 287 unit tests... 118 of 287
+
+\
+
+| Running 287 unit tests... 119 of 287
+
+\
+
+| Running 287 unit tests... 120 of 287
+
+\
+
+| Running 287 unit tests... 121 of 287
+
+\
+
+| Running 287 unit tests... 122 of 287
+
+\
+
+| Running 287 unit tests... 123 of 287
+
+\
+
+| Running 287 unit tests... 124 of 287
+
+\
+
+| Running 287 unit tests... 125 of 287
+
+\
+
+| Running 287 unit tests... 126 of 287
+
+\
+
+| Running 287 unit tests... 127 of 287
+
+\
+
+| Running 287 unit tests... 128 of 287
+
+\
+
+| Running 287 unit tests... 129 of 287
+
+\
+
+| Running 287 unit tests... 130 of 287
+
+\
+
+| Running 287 unit tests... 131 of 287
+
+\
+
+| Running 287 unit tests... 132 of 287
+
+\
+
+| Running 287 unit tests... 133 of 287
+
+\
+
+| Running 287 unit tests... 134 of 287
+
+\
+
+| Running 287 unit tests... 135 of 287
+
+\
+
+| Running 287 unit tests... 136 of 287
+
+\
+
+| Running 287 unit tests... 137 of 287
+
+\
+
+| Running 287 unit tests... 138 of 287
+
+\
+
+| Running 287 unit tests... 139 of 287
+
+\
+
+| Running 287 unit tests... 140 of 287
+
+\
+
+| Running 287 unit tests... 141 of 287
+
+\
+
+| Running 287 unit tests... 142 of 287
+
+\
+
+| Running 287 unit tests... 143 of 287
+
+\
+
+| Running 287 unit tests... 144 of 287
+
+\
+
+| Running 287 unit tests... 145 of 287
+
+\
+
+| Running 287 unit tests... 146 of 287
+
+\
+
+| Running 287 unit tests... 147 of 287
+
+\
+
+| Running 287 unit tests... 148 of 287
+
+\
+
+| Running 287 unit tests... 149 of 287
+
+\
+
+| Running 287 unit tests... 150 of 287
+
+\
+
+| Running 287 unit tests... 151 of 287
+
+\
+
+| Running 287 unit tests... 152 of 287
+
+\
+
+| Error 2014-06-12 10:34:43,592 [main] ERROR ispc.LocationAndResultPersisterService  - Failed to get or update Location!
+
+\
+
+Message: data/runs missing or no integer in XML result
+
+\
+
+   Line | Method
+
+\
+
+->> 176 | persistNewJobConfig                                      in de.iteratec.ispc.LocationAndResultPersisterService
+
+\
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+\
+
+|   103 | listenToResult                                           in     ''
+
+\
+
+|   664 | listenToResultAndProofCreatedDomains . . . . . . . . . . in de.iteratec.ispc.LocationAndResultPersisterServiceTests
+
+\
+
+|   490 | doCall                                                   in de.iteratec.ispc.LocationAndResultPersisterServiceTests$_testCreationOfDomainsAfterListenToIncomingInvalidResults_closure8
+
+\
+
+|   204 | shouldFail . . . . . . . . . . . . . . . . . . . . . . . in grails.test.mixin.support.GrailsUnitTestMixin
+
+\
+
+|   490 | testCreationOfDomainsAfterListenToIncomingInvalidResults in de.iteratec.ispc.LocationAndResultPersisterServiceTests
+
+\
+
+|    47 | runReflectiveCall . . . . . . . . . . . . . . . . . . .  in org.junit.runners.model.FrameworkMethod$1
+
+\
+
+|    12 | run                                                      in org.junit.internal.runners.model.ReflectiveCallable
+
+\
+
+|    44 | invokeExplosively . . . . . . . . . . . . . . . . . . .  in org.junit.runners.model.FrameworkMethod
+
+\
+
+|    17 | evaluate                                                 in org.junit.internal.runners.statements.InvokeMethod
+
+\
+
+|    26 | evaluate . . . . . . . . . . . . . . . . . . . . . . . . in org.junit.internal.runners.statements.RunBefores
+
+\
+
+|    27 | evaluate                                                 in org.junit.internal.runners.statements.RunAfters
+
+\
+
+|   271 | runLeaf . . . . . . . . . . . . . . . . . . . . . . . .  in org.junit.runners.ParentRunner
+
+\
+
+|    70 | runChild                                                 in org.junit.runners.BlockJUnit4ClassRunner
+
+\
+
+|    50 | runChild . . . . . . . . . . . . . . . . . . . . . . . . in     ''
+
+\
+
+|   238 | run                                                      in org.junit.runners.ParentRunner$3
+
+\
+
+|    63 | schedule . . . . . . . . . . . . . . . . . . . . . . . . in org.junit.runners.ParentRunner$1
+
+\
+
+|   236 | runChildren                                              in org.junit.runners.ParentRunner
+
+\
+
+|    53 | access$000 . . . . . . . . . . . . . . . . . . . . . . . in     ''
+
+\
+
+|   229 | evaluate                                                 in org.junit.runners.ParentRunner$2
+
+\
+
+|    26 | evaluate . . . . . . . . . . . . . . . . . . . . . . . . in org.junit.internal.runners.statements.RunBefores
+
+\
+
+|    27 | evaluate                                                 in org.junit.internal.runners.statements.RunAfters
+
+\
+
+|   309 | run . . . . . . . . . . . . . . . . . . . . . . . . . .  in org.junit.runners.ParentRunner
+
+\
+
+|   127 | runChild                                                 in org.junit.runners.Suite
+
+\
+
+|    26 | runChild . . . . . . . . . . . . . . . . . . . . . . . . in     ''
+
+\
+
+|   238 | run                                                      in org.junit.runners.ParentRunner$3
+
+\
+
+|    63 | schedule . . . . . . . . . . . . . . . . . . . . . . . . in org.junit.runners.ParentRunner$1
+
+\
+
+|   236 | runChildren                                              in org.junit.runners.ParentRunner
+
+\
+
+|    53 | access$000 . . . . . . . . . . . . . . . . . . . . . . . in     ''
+
+\
+
+|   229 | evaluate                                                 in org.junit.runners.ParentRunner$2
+
+\
+
+|   309 | run . . . . . . . . . . . . . . . . . . . . . . . . . .  in org.junit.runners.ParentRunner
+
+\
+
+|   160 | run                                                      in org.junit.runner.JUnitCore
+
+\
+
+^   138 | run . . . . . . . . . . . . . . . . . . . . . . . . . .  in     ''
+
+\
+
+| Running 287 unit tests... 153 of 287
+
+\
+
+| Running 287 unit tests... 154 of 287
+
+\
+
+| Running 287 unit tests... 155 of 287
+
+\
+
+| Running 287 unit tests... 156 of 287
+
+\
+
+| Running 287 unit tests... 157 of 287
+
+\
+
+| Running 287 unit tests... 158 of 287
+
+\
+
+| Running 287 unit tests... 159 of 287
+
+\
+
+| Running 287 unit tests... 160 of 287
+
+\
+
+| Running 287 unit tests... 161 of 287
+
+\
+
+| Running 287 unit tests... 162 of 287
+
+\
+
+| Running 287 unit tests... 163 of 287
+
+\
+
+| Running 287 unit tests... 164 of 287
+
+\
+
+| Running 287 unit tests... 165 of 287
+
+\
+
+| Running 287 unit tests... 166 of 287
+
+\
+
+| Running 287 unit tests... 167 of 287
+
+\
+
+| Running 287 unit tests... 168 of 287
+
+\
+
+| Running 287 unit tests... 169 of 287
+
+\
+
+| Running 287 unit tests... 170 of 287
+
+\
+
+| Running 287 unit tests... 171 of 287
+
+\
+
+| Running 287 unit tests... 172 of 287
+
+\
+
+| Running 287 unit tests... 173 of 287
+
+\
+
+| Running 287 unit tests... 174 of 287
+
+\
+
+| Running 287 unit tests... 175 of 287
+
+\
+
+| Running 287 unit tests... 176 of 287
+
+\
+
+| Running 287 unit tests... 177 of 287
+
+\
+
+| Running 287 unit tests... 178 of 287
+
+\
+
+| Running 287 unit tests... 179 of 287
+
+\
+
+| Running 287 unit tests... 180 of 287
+
+\
+
+| Running 287 unit tests... 181 of 287
+
+\
+
+| Running 287 unit tests... 182 of 287
+
+\
+
+| Running 287 unit tests... 183 of 287
+
+\
+
+| Running 287 unit tests... 184 of 287
+
+\
+
+| Running 287 unit tests... 185 of 287
+
+\
+
+| Running 287 unit tests... 186 of 287
+
+\
+
+| Running 287 unit tests... 187 of 287
+
+\
+
+| Running 287 unit tests... 188 of 287
+
+\
+
+| Running 287 unit tests... 189 of 287
+
+\
+
+| Running 287 unit tests... 190 of 287
+
+\
+
+| Running 287 unit tests... 191 of 287
+
+\
+
+| Running 287 unit tests... 192 of 287
+
+\
+
+| Running 287 unit tests... 193 of 287
+
+\
+
+| Running 287 unit tests... 194 of 287
+
+\
+
+| Running 287 unit tests... 195 of 287
+
+\
+
+| Running 287 unit tests... 196 of 287
+
+\
+
+| Running 287 unit tests... 197 of 287
+
+\
+
+| Running 287 unit tests... 198 of 287
+
+\
+
+| Running 287 unit tests... 199 of 287
+
+\
+
+| Running 287 unit tests... 200 of 287
+
+\
+
+| Running 287 unit tests... 201 of 287
+
+\
+
+| Running 287 unit tests... 202 of 287
+
+\
+
+| Running 287 unit tests... 203 of 287
+
+\
+
+| Running 287 unit tests... 204 of 287
+
+\
+
+| Running 287 unit tests... 205 of 287
+
+\
+
+| Running 287 unit tests... 206 of 287
+
+\
+
+| Running 287 unit tests... 207 of 287
+
+\
+
+| Running 287 unit tests... 208 of 287
+
+\
+
+| Running 287 unit tests... 209 of 287
+
+\
+
+| Running 287 unit tests... 210 of 287
+
+\
+
+| Running 287 unit tests... 211 of 287
+
+\
+
+| Running 287 unit tests... 212 of 287
+
+\
+
+| Running 287 unit tests... 213 of 287
+
+\
+
+| Running 287 unit tests... 214 of 287
+
+\
+
+| Running 287 unit tests... 215 of 287
+
+\
+
+| Running 287 unit tests... 216 of 287
+
+\
+
+| Running 287 unit tests... 217 of 287
+
+\
+
+| Running 287 unit tests... 218 of 287
+
+\
+
+| Running 287 unit tests... 219 of 287
+
+\
+
+| Running 287 unit tests... 220 of 287
+
+\
+
+| Running 287 unit tests... 221 of 287
+
+\
+
+| Running 287 unit tests... 222 of 287
+
+\
+
+| Running 287 unit tests... 223 of 287
+
+\
+
+| Running 287 unit tests... 224 of 287
+
+\
+
+| Running 287 unit tests... 225 of 287
+
+\
+
+| Running 287 unit tests... 226 of 287
+
+\
+
+| Running 287 unit tests... 227 of 287
+
+\
+
+| Running 287 unit tests... 228 of 287
+
+\
+
+| Running 287 unit tests... 229 of 287
+
+\
+
+| Running 287 unit tests... 230 of 287
+
+\
+
+| Running 287 unit tests... 231 of 287
+
+\
+
+| Running 287 unit tests... 232 of 287
+
+\
+
+| Running 287 unit tests... 233 of 287
+
+\
+
+| Running 287 unit tests... 234 of 287
+
+\
+
+| Running 287 unit tests... 235 of 287
+
+\
+
+| Running 287 unit tests... 236 of 287
+
+\
+
+| Running 287 unit tests... 237 of 287
+
+\
+
+| Running 287 unit tests... 238 of 287
+
+\
+
+| Running 287 unit tests... 239 of 287
+
+\
+
+| Running 287 unit tests... 240 of 287
+
+\
+
+| Running 287 unit tests... 241 of 287
+
+\
+
+| Running 287 unit tests... 242 of 287
+
+\
+
+| Running 287 unit tests... 243 of 287
+
+\
+
+| Running 287 unit tests... 244 of 287
+
+\
+
+| Running 287 unit tests... 245 of 287
+
+\
+
+| Running 287 unit tests... 246 of 287
+
+\
+
+| Running 287 unit tests... 247 of 287
+
+\
+
+| Running 287 unit tests... 248 of 287
+
+\
+
+| Running 287 unit tests... 249 of 287
+
+\
+
+| Running 287 unit tests... 250 of 287
+
+\
+
+| Error 2014-06-12 10:35:05,586 [main] ERROR utils.PerformanceLoggingService  - descriptionOfClosureToMeasure  -> Elapsed Sec: 1.103
+
+\
+
+| Running 287 unit tests... 251 of 287
+
+\
+
+| Running 287 unit tests... 252 of 287
+
+\
+
+| Running 287 unit tests... 253 of 287
+
+\
+
+| Running 287 unit tests... 254 of 287
+
+\
+
+| Running 287 unit tests... 255 of 287
+
+\
+
+| Running 287 unit tests... 256 of 287
+
+\
+
+| Running 287 unit tests... 257 of 287
+
+\
+
+| Running 287 unit tests... 258 of 287
+
+\
+
+| Running 287 unit tests... 259 of 287
+
+\
+
+| Running 287 unit tests... 260 of 287
+
+\
+
+| Running 287 unit tests... 261 of 287
+
+\
+
+| Running 287 unit tests... 262 of 287
+
+\
+
+| Running 287 unit tests... 263 of 287
+
+\
+
+| Running 287 unit tests... 264 of 287
+
+\
+
+| Running 287 unit tests... 265 of 287
+
+\
+
+| Running 287 unit tests... 266 of 287
+
+\
+
+| Running 287 unit tests... 267 of 287
+
+\
+
+| Running 287 unit tests... 268 of 287
+
+\
+
+| Running 287 unit tests... 269 of 287
+
+\
+
+| Running 287 unit tests... 270 of 287
+
+\
+
+| Running 287 unit tests... 271 of 287
+
+\
+
+| Running 287 unit tests... 272 of 287
+
+\
+
+| Running 287 unit tests... 273 of 287
+
+\
+
+| Running 287 unit tests... 274 of 287
+
+\
+
+| Running 287 unit tests... 275 of 287
+
+\
+
+| Running 287 unit tests... 276 of 287
+
+\
+
+| Running 287 unit tests... 277 of 287
+
+\
+
+| Running 287 unit tests... 278 of 287
+
+\
+
+| Running 287 unit tests... 279 of 287
+
+\
+
+| Running 287 unit tests... 280 of 287
+
+\
+
+| Running 287 unit tests... 281 of 287
+
+\
+
+| Running 287 unit tests... 282 of 287
+
+\
+
+| Running 287 unit tests... 283 of 287
+
+\
+
+| Completed 283 unit tests, 0 failed in 1m 33s
+
+\
+
+Configuring Spring Security Core ...
+
+\
+
+... finished configuring Spring Security Core
+
+\
+
+| Using LESS files to generating CSS files!
+
+\
+
+| Kickstart found 2 locales usable in the language selector (excluding the default ""locale"" messages.properties).
+
+\
+
+| Error 2014-06-12 10:35:39,888 [main] ERROR dynamiccontroller.DynamicControllerManager  - No destination controller specified in the 'controller' property or 'grails.plugins.dynamicController.mixins' config attribute for PropertiesControllerMixin, ignoring
+
+\
+
+| Error 2014-06-12 10:35:39,889 [main] ERROR dynamiccontroller.DynamicControllerManager  - No destination controller specified in the 'controller' property or 'grails.plugins.dynamicController.mixins' config attribute for SpringControllerMixin, ignoring
+
+\
+
+| Running 25 integration tests...
+
+\
+
+clearDatabase()...
+
+\
+
+clearDatabase()... DONE
+
+\
+
+| Running 25 integration tests... 1 of 25
+
+\
+
+| Running 25 integration tests... 2 of 25
+
+\
+
+| Running 25 integration tests... 3 of 25
+
+\
+
+| Running 25 integration tests... 4 of 25
+
+\
+
+| Running 25 integration tests... 5 of 25
+
+\
+
+| Running 25 integration tests... 6 of 25
+
+\
+
+| Running 25 integration tests... 7 of 25
+
+\
+
+| Running 25 integration tests... 8 of 25
+
+\
+
+| Running 25 integration tests... 9 of 25
+
+\
+
+| Running 25 integration tests... 10 of 25
+
+\
+
+| Running 25 integration tests... 11 of 25
+
+\
+
+| Running 25 integration tests... 12 of 25
+
+\
+
+| Running 25 integration tests... 13 of 25
+
+\
+
+| Running 25 integration tests... 14 of 25
+
+\
+
+| Running 25 integration tests... 15 of 25
+
+\
+
+| Running 25 integration tests... 16 of 25
+
+\
+
+| Running 25 integration tests... 17 of 25
+
+\
+
+| Running 25 integration tests... 18 of 25
+
+\
+
+| Running 25 integration tests... 19 of 25
+
+\
+
+| Failure:  testDeleteWaterfallsBefore(de.iteratec.de.ism.persistence.DbCleanupIntSpec)
+
+\
+
+|  java.lang.AssertionError: 
+
+\
+
+Expected: is <7>
+
+\
+
+     but: was <14>
+
+\
+
+\	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+
+\
+
+\	at org.junit.Assert.assertThat(Assert.java:865)
+
+\
+
+\	at org.junit.Assert.assertThat(Assert.java:832)
+
+\
+
+\	at de.iteratec.de.ism.persistence.DbCleanupIntSpec.testDeleteWaterfallsBefore(DbCleanupIntSpec.groovy:66)
+
+\
+
+| Running 25 integration tests... 20 of 25
+
+\
+
+| Running 25 integration tests... 21 of 25
+
+\
+
+| Failure:  testPersistingOfWaterfallsWhileFetchingNoMultistepResult(de.iteratec.ism.measurement.infrastructure.proxy.ProxyServiceIntSpec)
+
+\
+
+|  java.lang.AssertionError: 
+
+\
+
+Expected: is <2>
+
+\
+
+     but: was <0>
+
+\
+
+\	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+
+\
+
+\	at org.junit.Assert.assertThat(Assert.java:865)
+
+\
+
+\	at org.junit.Assert.assertThat(Assert.java:832)
+
+\
+
+\	at de.iteratec.ism.measurement.infrastructure.proxy.ProxyServiceIntSpec.testPersistingOfWaterfallsWhileFetchingNoMultistepResult(ProxyServiceIntSpec.groovy:108)
+
+\
+
+| Running 25 integration tests... 22 of 25
+
+\
+
+| Failure:  testPersistingOfWaterfallsWhileFetchingMultistepResult(de.iteratec.ism.measurement.infrastructure.proxy.ProxyServiceIntSpec)
+
+\
+
+|  java.lang.AssertionError: 
+
+\
+
+Expected: is <12>
+
+\
+
+     but: was <0>
+
+\
+
+\	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+
+\
+
+\	at org.junit.Assert.assertThat(Assert.java:865)
+
+\
+
+\	at org.junit.Assert.assertThat(Assert.java:832)
+
+\
+
+\	at de.iteratec.ism.measurement.infrastructure.proxy.ProxyServiceIntSpec.testPersistingOfWaterfallsWhileFetchingMultistepResult(ProxyServiceIntSpec.groovy:210)
+
+\
+
+| Running 25 integration tests... 23 of 25
+
+\
+
+| Failure:  testPersistingOfWaterfallsWhileFetchingNoMultistepResult(de.iteratec.ism.result.detail.PersistingWaterfallsIntSpec)
+
+\
+
+|  java.lang.AssertionError: 
+
+\
+
+Expected: is <2>
+
+\
+
+     but: was <0>
+
+\
+
+\	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+
+\
+
+\	at org.junit.Assert.assertThat(Assert.java:865)
+
+\
+
+\	at org.junit.Assert.assertThat(Assert.java:832)
+
+\
+
+\	at de.iteratec.ism.result.detail.PersistingWaterfallsIntSpec.testPersistingOfWaterfallsWhileFetchingNoMultistepResult(PersistingWaterfallsIntSpec.groovy:113)
+
+\
+
+| Running 25 integration tests... 24 of 25
+
+\
+
+| Failure:  testPersistingOfWaterfallsWhileFetchingMultistepResult(de.iteratec.ism.result.detail.PersistingWaterfallsIntSpec)
+
+\
+
+|  java.lang.AssertionError: 
+
+\
+
+Expected: is <4>
+
+\
+
+     but: was <0>
+
+\
+
+\	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+
+\
+
+\	at org.junit.Assert.assertThat(Assert.java:865)
+
+\
+
+\	at org.junit.Assert.assertThat(Assert.java:832)
+
+\
+
+\	at de.iteratec.ism.result.detail.PersistingWaterfallsIntSpec.testPersistingOfWaterfallsWhileFetchingMultistepResult(PersistingWaterfallsIntSpec.groovy:82)
+
+\
+
+| Running 25 integration tests... 25 of 25
+
+\
+
+| Failure:  testCalculationOfDailyShopMv(de.iteratec.isocsi.ShopMeasureValueCalculationIntSpec)
+
+\
+
+|  java.lang.AssertionError: expected:<2> but was:<0>
+
+\
+
+\	at org.junit.Assert.fail(Assert.java:88)
+
+\
+
+\	at org.junit.Assert.failNotEquals(Assert.java:743)
+
+\
+
+\	at org.junit.Assert.assertEquals(Assert.java:118)
+
+\
+
+\	at org.junit.Assert.assertEquals(Assert.java:555)
+
+\
+
+\	at org.junit.Assert.assertEquals(Assert.java:542)
+
+\
+
+\	at de.iteratec.isocsi.ShopMeasureValueCalculationIntSpec.testCalculationOfDailyShopMv(ShopMeasureValueCalculationIntSpec.groovy:126)
+
+\
+
+| Completed 25 integration tests, 6 failed in 61m 47s
+
+\
+
+| Tests FAILED  - view reports in /Users/oliverwidder/dev/git/iteraSpeedMonitor/target/test-reports
+
+\
+
+| Error Forked Grails VM exited with error
+
+\
+
+\
+
+{code}
+
+"	"30/Jun/14 9:08 AM;nkuhn;Jira-recovery:
+
+
+
+* Integrationstests: Nur Test testCalculationOfDailyShopMv interessant, da er allein augerufen grün ist. Alle anderen Integrationstests sind rot weil z.Zt. die Wasserfälle ausgeschaltet sind."	"30/Jun/14 9:09 AM;nkuhn;Jira-recovery:
+
+
+
+* Alle Tests ansehen, die auf Travis oder Codeship (siehe IT-377) aufgrund von Datumsproblemen Fehler produziert haben
+
+* testCalculationOfDailyShopMv korrigieren, so dass er auch dann grün ist, wenn er nicht alleine läuft
+
+*  wasserfallabhängige Tests ausschalten"	"07/Nov/14 12:12 PM;rhc;Es ist bekannt, dass de.iteratec.isocsi.ShopMeasureValueCalculationIntSpec und de.iteratec.isocsi.HighfrequencyMeasuredValueUpdateIntSpec fehlschlagen.
+
+Jedoch laufen beide Test im seperaten durchlauf ohne Probleme durch.
+
+
+
+Lösung:
+
+Integrationstest mit Hilfe von [bisectGrailsTests.groovy|http://naleid.com/blog/2012/05/22/fixing-grails-tests-that-pass-in-isolation-but-fail-when-run-as-a-suite]
+
+
+
+Ausgeführter Befehl: 
+
+{quote}groovy bisectGrailsTests.groovy -f testorder.txt -p integration -t de.iteratec.isocsi.HighfrequencyMeasuredValueUpdateIntSpec
+
+{quote}
+
+
+
+Ergebnis:
+
+{code:xml}
+
+The test that's causing pollution: de.iteratec.ism.measurement.infrastructure.proxy.ProxyServiceIntSpec
+
+Here's the command to execute to see if you've fixed things:
+
+grails test-app integration: de.iteratec.ism.measurement.infrastructure.proxy.ProxyServiceIntSpec de.iteratec.isocsi.HighfrequencyMeasuredValueUpdateIntSpec
+
+{code}"	"07/Nov/14 12:24 PM;rhc;Beim Ausführen von:
+
+{quote}grails test-app integration: de.iteratec.ism.measurement.infrastructure.proxy.ProxyServiceIntSpec de.iteratec.isocsi.HighfrequencyMeasuredValueUpdateIntSpec
+
+{quote}
+
+
+
+Erscheinen folgende Fehlermeldungen:
+
+{code:xml}
+
+| Completed 4 integration tests, 1 failed in 0m 6s
+
+| Error Exception in thread ""Thread-41"" 
+
+| Error grails.validation.ValidationException: Validation Error(s) occurred during save():
+
+- Field error in object 'de.iteratec.osm.report.chart.MeasuredValue' on field 'aggregator': rejected value [null]; codes [de.iteratec.osm.report.chart.MeasuredValue.aggregator.nullable.error.de.iteratec.osm.report.chart.MeasuredValue.aggregator,de.iteratec.osm.report.chart.MeasuredValue.aggregator.nullable.error.aggregator,de.iteratec.osm.report.chart.MeasuredValue.aggregator.nullable.error.de.iteratec.osm.report.chart.AggregatorType,de.iteratec.osm.report.chart.MeasuredValue.aggregator.nullable.error,measuredValue.aggregator.nullable.error.de.iteratec.osm.report.chart.MeasuredValue.aggregator,measuredValue.aggregator.nullable.error.aggregator,measuredValue.aggregator.nullable.error.de.iteratec.osm.report.chart.AggregatorType,measuredValue.aggregator.nullable.error,de.iteratec.osm.report.chart.MeasuredValue.aggregator.nullable.de.iteratec.osm.report.chart.MeasuredValue.aggregator,de.iteratec.osm.report.chart.MeasuredValue.aggregator.nullable.aggregator,de.iteratec.osm.report.chart.MeasuredValue.aggregator.nullable.de.iteratec.osm.report.chart.AggregatorType,de.iteratec.osm.report.chart.MeasuredValue.aggregator.nullable,measuredValue.aggregator.nullable.de.iteratec.osm.report.chart.MeasuredValue.aggregator,measuredValue.aggregator.nullable.aggregator,measuredValue.aggregator.nullable.de.iteratec.osm.report.chart.AggregatorType,measuredValue.aggregator.nullable,nullable.de.iteratec.osm.report.chart.MeasuredValue.aggregator,nullable.aggregator,nullable.de.iteratec.osm.report.chart.AggregatorType,nullable]; arguments [aggregator,class de.iteratec.osm.report.chart.MeasuredValue]; default message [Die Eigenschaft [{0}] des Typs [{1}] darf nicht null sein]
+
+| Error 	at org.codehaus.groovy.grails.orm.hibernate.metaclass.AbstractSavePersistentMethod.doInvokeInternal(AbstractSavePersistentMethod.java:190)
+
+| Error 	at org.codehaus.groovy.grails.orm.hibernate.metaclass.AbstractDynamicPersistentMethod.invoke(AbstractDynamicPersistentMethod.java:63)
+
+| Error 	at org.codehaus.groovy.grails.orm.hibernate.HibernateGormInstanceApi.save(HibernateGormInstanceApi.groovy:196)
+
+| Error 	at de.iteratec.osm.report.chart.MeasuredValue.save(MeasuredValue.groovy)
+
+| Error 	at de.iteratec.osm.report.chart.MeasuredValue$save$0.call(Unknown Source)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService.ensurePresence(PageMeasuredValueService.groovy:298)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService.this$2$ensurePresence(PageMeasuredValueService.groovy)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+
+| Error 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+| Error 	at java.lang.reflect.Method.invoke(Method.java:606)
+
+| Error 	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+
+| Error 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+
+| Error 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
+
+| Error 	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1031)
+
+| Error 	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:149)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService$_ensurePresenceAndCalculation_closure8.doCall(PageMeasuredValueService.groovy:280)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService$_ensurePresenceAndCalculation_closure8.doCall(PageMeasuredValueService.groovy)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+
+| Error 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+| Error 	at java.lang.reflect.Method.invoke(Method.java:606)
+
+| Error 	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:272)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:64)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:69)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+
+| Error 	at de.iteratec.isr.utils.PerformanceLoggingService.logExecutionTime(PerformanceLoggingService.groovy:45)
+
+| Error 	at de.iteratec.isr.utils.PerformanceLoggingService$$FastClassBySpringCGLIB$$393ed62b.invoke(<generated>)
+
+| Error 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+
+| Error 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+
+| Error 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+
+| Error 	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+
+| Error 	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+
+| Error 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+
+| Error 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+
+| Error 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+
+| Error 	at de.iteratec.isr.utils.PerformanceLoggingService$$EnhancerBySpringCGLIB$$7c461e77.logExecutionTime(<generated>)
+
+| Error 	at de.iteratec.isr.utils.PerformanceLoggingService$logExecutionTime.call(Unknown Source)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService.ensurePresenceAndCalculation(PageMeasuredValueService.groovy:279)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+
+| Error 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+| Error 	at java.lang.reflect.Method.invoke(Method.java:606)
+
+| Error 	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+
+| Error 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+
+| Error 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
+
+| Error 	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1031)
+
+| Error 	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:731)
+
+| Error 	at groovy.lang.GroovyObjectSupport.invokeMethod(GroovyObjectSupport.java:44)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService$_getOrCalculatePageMvs_closure5.invokeMethod(PageMeasuredValueService.groovy)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethodOnGroovyObject(MetaClassImpl.java:1151)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1045)
+
+| Error 	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService$_getOrCalculatePageMvs_closure5_closure15.doCall(PageMeasuredValueService.groovy:239)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+
+| Error 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+| Error 	at java.lang.reflect.Method.invoke(Method.java:606)
+
+| Error 	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+
+| Error 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+
+| Error 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
+
+| Error 	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+
+| Error 	at groovy.lang.Closure.call(Closure.java:411)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService$_getOrCalculatePageMvs_closure5_closure15.call(PageMeasuredValueService.groovy)
+
+| Error 	at groovy.lang.Closure.call(Closure.java:427)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService$_getOrCalculatePageMvs_closure5_closure15.call(PageMeasuredValueService.groovy)
+
+| Error 	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:1325)
+
+| Error 	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:1297)
+
+| Error 	at org.codehaus.groovy.runtime.dgm$148.invoke(Unknown Source)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:271)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService$_getOrCalculatePageMvs_closure5.doCall(PageMeasuredValueService.groovy:236)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+
+| Error 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+| Error 	at java.lang.reflect.Method.invoke(Method.java:606)
+
+| Error 	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+
+| Error 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+
+| Error 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
+
+| Error 	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+
+| Error 	at groovy.lang.Closure.call(Closure.java:411)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService$_getOrCalculatePageMvs_closure5.call(PageMeasuredValueService.groovy)
+
+| Error 	at groovy.lang.Closure.call(Closure.java:427)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService$_getOrCalculatePageMvs_closure5.call(PageMeasuredValueService.groovy)
+
+| Error 	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:1325)
+
+| Error 	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:1297)
+
+| Error 	at org.codehaus.groovy.runtime.dgm$148.invoke(Unknown Source)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:271)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService.getOrCalculatePageMvs(PageMeasuredValueService.groovy:234)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService.this$2$getOrCalculatePageMvs(PageMeasuredValueService.groovy)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+
+| Error 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+| Error 	at java.lang.reflect.Method.invoke(Method.java:606)
+
+| Error 	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+
+| Error 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+
+| Error 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
+
+| Error 	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1031)
+
+| Error 	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService$_getOrCalculatePageMeasuredValues_closure4.doCall(PageMeasuredValueService.groovy:218)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService$_getOrCalculatePageMeasuredValues_closure4.doCall(PageMeasuredValueService.groovy)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+
+| Error 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+| Error 	at java.lang.reflect.Method.invoke(Method.java:606)
+
+| Error 	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:272)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:64)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:69)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+
+| Error 	at de.iteratec.isr.utils.PerformanceLoggingService.logExecutionTime(PerformanceLoggingService.groovy:45)
+
+| Error 	at de.iteratec.isr.utils.PerformanceLoggingService$$FastClassBySpringCGLIB$$393ed62b.invoke(<generated>)
+
+| Error 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+
+| Error 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+
+| Error 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+
+| Error 	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+
+| Error 	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+
+| Error 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+
+| Error 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+
+| Error 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+
+| Error 	at de.iteratec.isr.utils.PerformanceLoggingService$$EnhancerBySpringCGLIB$$7c461e77.logExecutionTime(<generated>)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+
+| Error 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+| Error 	at java.lang.reflect.Method.invoke(Method.java:606)
+
+| Error 	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrap.invoke(PogoMetaMethodSite.java:252)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:64)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService.getOrCalculatePageMeasuredValues(PageMeasuredValueService.groovy:207)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService$$FastClassBySpringCGLIB$$4fc1e89b.invoke(<generated>)
+
+| Error 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+
+| Error 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+
+| Error 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+
+| Error 	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+
+| Error 	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+
+| Error 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+
+| Error 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+
+| Error 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService$$EnhancerBySpringCGLIB$$af2ed2e7.getOrCalculatePageMeasuredValues(<generated>)
+
+| Error 	at de.iteratec.isocsi.PageMeasuredValueService$getOrCalculatePageMeasuredValues$1.call(Unknown Source)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+
+| Error 	at de.iteratec.isocsi.HighfrequencyMeasuredValueUpdateIntSpec$_MeasuredValueCalculator_run_closure1.doCall(HighfrequencyMeasuredValueUpdateIntSpec.groovy:255)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+| Error 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+
+| Error 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+| Error 	at java.lang.reflect.Method.invoke(Method.java:606)
+
+| Error 	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+
+| Error 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+
+| Error 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
+
+| Error 	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+
+| Error 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:910)
+
+| Error 	at groovy.lang.Closure.call(Closure.java:411)
+
+| Error 	at de.iteratec.isocsi.HighfrequencyMeasuredValueUpdateIntSpec$_MeasuredValueCalculator_run_closure1.call(HighfrequencyMeasuredValueUpdateIntSpec.groovy)
+
+| Error 	at groovy.lang.Closure.call(Closure.java:427)
+
+| Error 	at de.iteratec.isocsi.HighfrequencyMeasuredValueUpdateIntSpec$_MeasuredValueCalculator_run_closure1.call(HighfrequencyMeasuredValueUpdateIntSpec.groovy)
+
+| Error 	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:62)
+
+| Error 	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:131)
+
+| Error 	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:59)
+
+| Error 	at org.grails.datastore.gorm.GormStaticApi.withTransaction(GormStaticApi.groovy:712)
+
+| Error 	at de.iteratec.osm.report.chart.MeasuredValue.withTransaction(MeasuredValue.groovy)
+
+| Error 	at de.iteratec.osm.report.chart.MeasuredValue$withTransaction$5.call(Unknown Source)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+
+| Error 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+
+| Error 	at de.iteratec.isocsi.HighfrequencyMeasuredValueUpdateIntSpec$MeasuredValueCalculator.run(HighfrequencyMeasuredValueUpdateIntSpec.groovy:248)
+
+| Error 	at java.lang.Thread.run(Thread.java:745)
+
+| Tests FAILED  - view reports in /home/rhc/workspace/iteratec/iteraSpeedMonitor/target/test-reports
+
+| Error Forked Grails VM exited with error
+
+{code}"	"14/Nov/14 11:30 AM;rhc;Um separate Datenbank Dumps nutzen zu können muss die DataSource on the fly verändert werden:
+
+
+
+Mit {{def dataSourceUnproxied}} wird die DateSource injeziert und kann on the fly verändert werden.
+
+
+
+Beispiel:
+
+
+
+{code:java}
+
+def dataSourceUnproxied
+
+
+
+@Before
+
+    void setUp() {
+
+        dataSourceUnproxied.url = ""neue url""
+
+	dataSourceUnproxied.close()
+
+	dataSourceUnproxied.closed = false
+
+    }
+
+{code}
+
+
+
+durch {{dataSourceUnproxied.close()}} wird erzwungen, dass alle Datenbank Verbindungen geschlossen werden.
+
+durch {{dataSourceUnproxied.closed = false}} wird erzwungen, dass die Datenbank Verbindung neu aufgebaut wird. In diesem Fall dann mit der neuen URL
+
+"	23/May/16 5:31 PM;nku;Nicht mehr aktuell.																																															

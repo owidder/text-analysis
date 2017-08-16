@@ -1,0 +1,19 @@
+Building Blocks with more than 1 enumeration value are not shown in the Landscape Diagram	"*Summary:*
+
+Building Blocks with more than 1 enumeration value are not shown in the Landscape Diagram, when you choose this enumeration attribute as axis element.
+
+
+
+*Reproduce:*
+
+* Create an enumeration attribute, which allows multi-values
+
+* Assign a Building Block 2 enumeration attribute values
+
+* Create a new Landscape Diagram with this Building Block Type as Content Type and the enumeration type as axis type.
+
+
+
+Actual result: The Building Block is not shown.
+
+Expected result: The Building Block should be shown twice (one in column of value 1, one in column of value 2)."		Bug	iteraplan PO	16/Jul/15 9:40 AM	20/Aug/15 1:01 PM					lsd	multivalue	newClient							17/Aug/15 2:00 PM;sfe;Needs to be done for x-axis as well.																																																						

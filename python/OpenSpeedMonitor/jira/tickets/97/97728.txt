@@ -1,0 +1,5 @@
+Analyse PFD problems with attributes of responsibility type (multivalue attributes) (i.e. Accountability)	"This is follow up ticket for IPTS-179 (in which translation issues of responsibility attributes where fixed).
+
+Analyze in detail, why the portfolio diagram has problems (grid offset, bubble size, bubble positions, cropping etc.) when Accountability is selected.
+
+"		Bug	iteraplan Speedbird	29/Sep/16 12:32 PM	10/Oct/16 12:13 PM														04/Oct/16 6:23 PM;dmkh;*After analyzing Portfolio diagram*: currently Portfolio diagram does not support business objects with multiple attribute values (e.g. Accountability), so there is only one bubble per business object in the diagram. I will extend item builder, so there will be same multiple bubbles for different attribute values on axis. It will take *less then 1 PD*. 	10/Oct/16 12:13 PM;ants;Review done: https://iteraweb.iteratec.de/fisheye/cru/IP-56																																																					

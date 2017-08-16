@@ -1,0 +1,5 @@
+Threadfix Docker Container bereitstellen	"Auch für Threadfix benötigen wir einen geeigneten Docker Container. Im Idealfall können wir erstmal einen benutzen der bereits über die Docker Community bereitgestellt wird, oder wir bauen einen eigenen.
+
+
+
+https://hub.docker.com/r/bitslayer/threadfix_fullstack/"	82236	Sub-task	secureCodeBox	07/May/16 8:35 PM	09/May/16 5:19 PM																																																																				

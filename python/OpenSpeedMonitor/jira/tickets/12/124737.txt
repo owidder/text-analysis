@@ -1,0 +1,27 @@
+Months are not shown in timespan	"Summary:
+
+Months are not show in timespan header of masterplan diagram
+
+
+
+Steps to reproduce:
+
+1) Open default MPD
+
+2) Select Project as level 1
+
+3) If timespan is not scrolled to first month, move timespan scroller to the beginning
+
+4) Select Business Unit as level 2
+
+
+
+Actual result: months are not visible in timespan header of masterplan diagram
+
+(at least till we scrool timespan to the end)
+
+Expected result: months are visible in the header
+
+
+
+"		Bug	iteraplan Speedbird	19/Jun/17 1:20 PM	21/Jun/17 9:23 AM																																																																				

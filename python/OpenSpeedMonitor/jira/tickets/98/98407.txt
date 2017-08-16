@@ -1,0 +1,27 @@
+LSD: After selecting a relation-attribute-coloring, an axis-change lead to an error	"*Summary:*
+
+LSD: After selecting a relation-attribute-coloring, an axis-change lead to an error
+
+
+
+*Reproduce:*
+
+* Open default LSD
+
+* Set ""Assigned Business Objects"" as columns
+
+* Set Coloring by ""Relation IS-BO - CRUD""
+
+* Set ""Affecting Projects"" as columns
+
+
+
+*Result:*
+
+lsdItemBuilder.js:107 Uncaught TypeError: Cannot read property 'resolvePath' of undefined(anonymous function) @ lsdItemBuilder.js:107(anonymous function) @ lsdItemBuilder.js:62LSDItemBuilder.buildContentItem @ lsdItemBuilder.js:61LSDItemBuilder.buildContentItems @ lsdItemBuilder.js:25LSDMain.drawDiagram @ lsdMain.js:115(anonymous function) @ lsdController.js:116
+
+
+
+*Expected:*
+
+No error, coloring is resetted and projects are on the columns"		Bug	iteraplan Speedbird	07/Oct/16 9:29 AM	07/Oct/16 11:33 AM														07/Oct/16 11:25 AM;dmkh;Issue has been fixed, code review: https://iteraweb.iteratec.de/fisheye/cru/IP-63																																																						

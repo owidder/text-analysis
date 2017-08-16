@@ -1,0 +1,15 @@
+Check, if Creole = XWiki	"*Summary*
+
+Check, if creole is the same as XWiki
+
+
+
+*Details:*
+
+* JsCreole is implemented as XWiki-parser on the single-Elment-View
+
+* Check, if it is exactely the same syntax
+
+* If yes, please link from the user guide to XWiki (and not creole)
+
+* If not, please remove JsCreole and implement a XWiki-Parser"		Bug	iteraplan Speedbird	20/Jan/17 4:03 PM	15/Feb/17 10:53 AM														30/Jan/17 6:24 PM;fka;Please talk to [~msr] or [~fka] before implementing an XWiki-Parser	03/Feb/17 3:34 PM;pma;Creole is another syntax than xwiki. Unfortunately, I have not found a xwiki-parser which could be included into iteraplan. Being a bit limited, creole is the nearest syntax of all listed here: http://lod.springer.com/wiki/bin/view/XWiki/XWikiSyntax?syntax=2.0. Nevertheless, it is almost the same syntax as xwiki for the given possibillites.																																																					

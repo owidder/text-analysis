@@ -1,0 +1,25 @@
+mass-update of relations	"what is the best way to perform a mass-update of relations?  for example, i need to update the relation between 500 systems to a business function.  The options that I know are:
+
+
+
+1. assign the relation one-by-one by editing a system element and assigning or correcting the respective business function.  this takes approx. 30 sec. per element.  that means about 4 hours of busy work if i don't make any mistakes or click too quickly (clicking too quickly creates error messages)
+
+2. cannot use the ""business mapping"" function.  it does not support the business function elements
+
+3. cannot use the ""bulk update"" function.  relations can be queried but cannot be edited (only attributes can be edited).
+
+4. cannot use the database export/import function.  it does not work.  see problem request IPS-31.  waiting for a solution.
+
+
+
+what other option can i use, other than nr. 1?"		Technical question	iteraplan Support	10/Mar/16 10:35 PM	18/Mar/16 9:22 AM														"11/Mar/16 8:42 AM;sfe;A bulk update for relations should be possible, see also here:
+
+!bulkupdates_relation_BF.PNG|thumbnail!
+
+
+
+As for the mass data export/import function:
+
+As far as I understood, export currently does not work for the complete data or when you select Systems as type to be exported.
+
+As workaround, maybe it works if you select Business Functions for export, and add the new relations there."	11/Mar/16 1:30 PM;hannes.callisen@boehringer-ingelheim.com;thank you.  i will try it again.  maybe i did something else differently.	16/Mar/16 2:03 PM;sfe;Hello, did you encounter any further issues regarding your relations update?	17/Mar/16 10:10 PM;hannes.callisen@boehringer-ingelheim.com;I am able to work again.  thank you.																																																			

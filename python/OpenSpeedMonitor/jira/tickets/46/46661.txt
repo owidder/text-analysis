@@ -1,0 +1,16 @@
+Print output shouldn't contain link URLs	"When printing building block pages, next to associated elements and to attribute types and other html links, the URL they link to is displayed.
+
+This causes the printing of building blocks with many associated building blocks to become cluttered with links and hard to read.
+
+Please remove the display of the URLs.
+
+Cause:
+CSS style in bootstrap.css
+{noformat}
+@media print {
+  ...
+  a[href]:after {
+    content: "" ("" attr(href) "")"";
+  }
+  ...
+{noformat}"		Bug	iteraplan PO	21/May/14 9:30 AM	04/Aug/14 2:14 PM					printing	url																																																														

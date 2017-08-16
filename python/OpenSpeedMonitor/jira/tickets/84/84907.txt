@@ -1,0 +1,5 @@
+e2e test for n3cd dummy element	"no-elements-to-display-spec.js
+
+fix click on dummy element.
+
+the result of the function n3cdPage.clickOnElement('outer element', 'nestedClusterDiagram'); is a click on the legend."		Bug	iteraplan PO	19/May/16 10:59 AM																																																																					

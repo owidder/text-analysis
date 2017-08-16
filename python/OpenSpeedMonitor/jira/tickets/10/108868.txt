@@ -1,0 +1,23 @@
+Technischen Benutzer "tuaudimbt" anlegen	"Hallo Admins, wir bräuchten einen technischen Benutzer, der berechtigungstechnisch im AD angesiedelt ist, damit wir ihn sowohl für JIRA als auch Bamboo, SonarQube usw. für das Projekt ""MB-Technik"" bei AUDI verwenden können.
+
+
+
+User: tuaudimbt
+
+Passwort: Nie ablaufend, bitte mitteilen.
+
+Gruppen: _JIRA_ALL, _JIRA_AUDI_MBTECHNIK_INT
+
+
+
+Herzlichen Dank!"		Task	Infrastruktur	19/Jan/17 4:50 PM	20/Jan/17 11:41 AM	Sonstiges													"20/Jan/17 11:41 AM;kti;Hallo Thorsten,
+
+
+
+ich habe die die Anmeldedaten per Mail weitergeleitet.
+
+
+
+Viele Grüße
+
+Kathrin"																																																						

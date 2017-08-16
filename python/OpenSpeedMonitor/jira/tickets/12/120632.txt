@@ -1,0 +1,5 @@
+[Geb] Logik aus Testklassen in die Page-Objekte verlagern	"Zum einen gehört Code, der zu Aktionen wie z.B. dem Klicken eines Codes dazugehört wie ein sleep o.ä. mit in eine Page-Methode für die Aktion. Dadurch bekommen wir weniger Duplikationen und der Testfall-Code lässt sich besser lesen.
+
+
+
+Zudem sollten wir auch höher abstrahierte Methoden in den Page-Klassen unterbringen. Wenn z.B. viele Tests ein von- und ein bis-Datum setzen müssen und dafür jeweils mehrere Klick- oder input-Methoden o.ä. nötig sind, dann sollte man der Page-Klasse vielleicht eine setRange(Date from, Date to) Methode spendieren."		Task	OpenSpeedMonitor	05/May/17 12:16 PM																																																																					

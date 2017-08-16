@@ -1,0 +1,1 @@
+Check Status Migration for other BBT	Status field (not for IS) can be unassigned. It could make problems with migration. Check it		Bug	iteraplan PO	08/Feb/17 1:25 PM	09/Feb/17 12:58 PM																																																																				

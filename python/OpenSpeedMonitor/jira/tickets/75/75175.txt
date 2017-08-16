@@ -1,0 +1,11 @@
+UserGuide - some text not visible in browser - solution must save pdf	"With IE 11 and Firefox #31 http://www.iteraplan.de/doc/display/iteraplan51/Operators 
+
+The example before the string ""Given Building Block Information System and the Predicate ""@costs < 1000"" doesn't appear in the browser. Many examples are not visible.
+
+
+
+Solution: Record de pdf guide by right clic on the link http://www.iteraplan.de/doc/download/attachments/5603342/iteraplan51-UserGuide.pdf?version=1&modificationDate=1446737169000&api=v2"		Fault	iteraplan Support	29/Feb/16 6:31 PM	16/Mar/16 2:45 PM														"01/Mar/16 1:22 PM;tam;I can not reproduce the issues you have with the documentation. I guess there are some restrictions either in your browser or in your network.
+
+
+
+Please contact your administrator."																																																						

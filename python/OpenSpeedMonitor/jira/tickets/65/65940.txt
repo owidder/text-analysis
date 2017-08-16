@@ -1,0 +1,3 @@
+Darstellung der Sensorinfos optimieren	"- bei Überlappung übereinander darstellen (z-Achse)
+
+- weiter entfernte Symbole kleiner darstellen?"		Task	EAMV15	07/Dec/15 2:45 PM	17/Dec/15 10:46 AM														17/Dec/15 10:46 AM;fbe;Objekte perspektivisch eingezeichnet; Überlappungsproblem in offene Punkte verschoben																																																						

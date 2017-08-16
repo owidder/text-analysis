@@ -1,0 +1,3 @@
+Respect permissions	"*Priority 3*
+
+Respect existing permission settings  in the new client."		Epic	iteraplan PO	03/Nov/14 4:17 PM	30/Dec/15 12:05 PM														07/Nov/14 6:17 PM;sepr;RE ~100 SP	30/Dec/15 12:05 PM;fka;For now, as only reading access is implemented in new client																																																					

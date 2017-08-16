@@ -1,0 +1,39 @@
+JobGroup-assoziierte Events aus DB holen zum darstellen in Diagrammen 	JobGroup-assoziierte Events aus DB holen zum darstellen in Diagrammen 		Task	OpenSpeedMonitor	20/Apr/15 1:46 PM	18/May/15 10:29 AM														28/Apr/15 11:42 AM;rkr;Bin beim holen der annotations / Events aus der DB an die Grenzen meiner Kenntnisse gestoßen. Habe die Work in Progress ins Repo gestellt. Können wir uns das zusammen anschauen?	"28/Apr/15 1:10 PM;nku;Wenn sich noch eine Lücke ergibt. Sehe aber für heute und die ganze Woche momentan eher schwarz... 
+
+Kümmere Dich bitte erst um die anderen Tickets im Sprint oder stimme Dich mit Roman ab, der kennt sich auch schon ganz gut aus."	28/Apr/15 4:13 PM;rkr;Ich habe das fertig montiert. Es kommt mir aber sehr langsam vor. Kannst Du mal diesen git Patch bei Dir einspielen und schauen ob die Ladezeit ok ist?	"04/May/15 10:01 AM;nku;Zusätzlich zur Performance-Kontrolle:
+
+* fachlich definieren, welche Events anzuzeigen sind."	"04/May/15 11:50 PM;nku;Fachlich solllen in Ergebnis- und CSI-Dashboard folgende Events dargestellt werden:
+
+* Events mit globallyVisible=true
+
+Alle im selektierten Zeitraum
+
+* Events mit globallyVisible=false
+
+Alle Events, der darzustellenden Job-Gruppe\(n\). In jeder Konstellation werden auf den Dashboards des OSM immer JobGruppe\(n\) ausgewählt, die zur Anzeige kommen sollen. Alle Events im darzustellenden Zeitraum dieser ausgewählten Job-Gruppen sollen angezeigt werden.
+
+
+
+Alle Events sollen nur als Punkte in der Leiste unterhalb des Diagramms zu sehen sein. Erst beim Anklicken sollen senkrechte Linie und Hoverr-Info angezeigt werden. Die Events sollen generell in Ergebnis- und CSI-Dashboard angezeigt werden. Einzig im default-CSI-Dashboard sollen sich nicht angezeigt werden. Im Export brauchen die Events nicht enthalten sein. Wenn senkrechte Linien durch Klicken sichtbar sind können und sollten diese auch in der exportierten Grafik zu sehen sein. "	05/May/15 9:05 AM;nku;Performance würde ich dann checken, wenn das für Ergebnis- und CSI-Dashboard eingebaut ist.	05/May/15 9:33 AM;rkr;Bitte gib mir das OK für diesen Lösungsweg, bevor ich damit weiter arbeite. Falls die Performance zu langsam ist, muß ich im schlechtesten Fall eine komplett andere Lösung bauen.	"05/May/15 10:00 AM;nku;Mit Lösungsweg meinst Du die folgende Funktion, nehme ich an?
+
+de.iteratec.osm.csi.CsiDashboardController#fillWithAnnotations
+
+
+
+Folgendes hierzu:
+
+Diese Methode, oder zumindest das Lesen der Events aus der DB würde ich gerne in einen eigenen Service auslagern: de.iteratec.osm.report.chart.EventDaoService oder sowas. Den Code wirst Du auch für das EventResultDashboard wieder benötigen. 
+
+Zur Performance: 
+
+* Das ""fixen"" des timeframes auf die Interval-Grenzen pasiert momentan einmal für das Holen der MeasuredValues (in de.iteratec.osm.csi.CsiDashboardController#fillWithShopValuesAsHighChartMap) und für das Holen der Annotations (in Deiner Methode de.iteratec.osm.csi.CsiDashboardController#fillWithAnnotations). Da könnte man noch mal sehen, ob man das extrahiert bekommt, so dass dies nur noch einmal passieren muss.
+
+* Man kann im mapping der Domains auch DB-Indizes definieren. Wenn klar ist, anhand welcher Felder wir meist nach Events suchen (z.B. eventDate, eventTime und jobGroups) können wir überlegen, ob wir einen Index einführen.
+
+"	05/May/15 10:12 AM;rkr;Mit Performance meine ich eigentlich die gesamte Zeitdauer vom Anklicken des "Show"-Buttons bis zum Abschluß des Renderns der Grafik im Frontend. es kommt mir vor als ob das länge dauert. Geht das in Ordnung?	"05/May/15 10:42 AM;nku;Die Performance des Default-Dashboards ist schlecht, das stimmt. 
+
+Eine erste Optimierung haben wir mit dem Ausschließen des aktuellen, unfertigen Intervals eingebaut. Weitere Optimierungen können nötig werden, sind aber nicht Aufgabe dieses Tickets.
+
+
+
+Hier geht es darum, das Holen und Bereitstellen der Events so effizient wie möglich zu implementieren. Auf dem langsamen Default-Dashboard lassen wir die Annotations am besten erst mal weg (nicht lesen, nicht anzeigen)."																																													

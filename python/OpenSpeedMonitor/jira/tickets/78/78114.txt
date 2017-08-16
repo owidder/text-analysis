@@ -1,0 +1,9 @@
+[Persistenz] Zeitraum des Vorhaltens von Detaildaten konfigurierbar	"Es gibt bereits ein Attribut in der OSM-Konfiguration für diesen Zeitraum.
+
+Dieses bitte nutzen für eine Grenze. 
+
+Ältere Detail-Daten müssen nächtlich gelöscht werden. Analog zum bestehenden Mechanismus der OSM-Daten.
+
+
+
+Soll ein separater Quartz-Job sein."		Task	OpenSpeedMonitor	23/Mar/16 10:29 AM	29/Mar/16 4:20 PM																																																																				

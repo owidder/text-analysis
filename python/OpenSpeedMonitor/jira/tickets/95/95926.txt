@@ -1,0 +1,13 @@
+Benedikt Schmaler	BSH Hausgeräte GmbH		Access	iteraplan Support	13/Sep/16 11:55 AM	02/Oct/16 7:00 AM														13/Sep/16 4:15 PM;fka;ip.benedikt.schmaler	13/Sep/16 4:15 PM;fka;https://iteraweb.iteratec.de/jira/	"13/Sep/16 4:21 PM;cst;Dear Mr. Schmaler,
+
+with this link you can acces the development ticketing system. 
+
+https://iteraweb.iteratec.de/jira/
+
+Your login is: ip.benedikt.schmaler 
+Password: was sent by mail 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+ "																																																				

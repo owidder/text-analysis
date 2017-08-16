@@ -1,0 +1,11 @@
+Prüfen, ob Tests mit RV funktionieren	"Ich bin nicht sicher, ob der aktuelle dev.server02 mit repeated view in multistep-tests klarkommt.
+
+
+
+Bitte folgendes Manuell aus lokalem OSM (detailsAnalysis-Branch) testen:
+
+* Job mit mehreren Schritten und aktiviertem Repeated View. 
+
+
+
+Kommen Ergebnisse an?"		Task	OpenSpeedMonitor	10/Jun/16 12:21 PM	13/Jun/16 4:32 PM														13/Jun/16 4:32 PM;msk;Ich bin Amazon multi-step mobile 2 mal auf der dev.server02 mit Repeated View aktiv gefahren. Das hat auch funktioniert, ich konnte mir die Daten im EventResultDashboard anschauen.																																																						

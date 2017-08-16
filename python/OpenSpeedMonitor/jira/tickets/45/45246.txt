@@ -1,0 +1,3 @@
+Use semicolon as delimiter in object related permission import	Make object related permission import consistent with the other imports by using semicolon ; as delimiter for the user list. Now used: comma ,		Improvement	iteraplan PO	07/Nov/11 3:47 PM	10/Nov/11 1:08 PM					object	permissions	related							"10/Nov/11 1:08 PM;sfe;works fine
+
+during testing I noticed some other things mentioned in ITERAPLAN-376 now."																																																						

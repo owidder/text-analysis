@@ -1,0 +1,5 @@
+Make Nesting Cluster Diagram recursive	Make nesting cluster diagram display outer elements recursively.		Improvement	iteraplan PO	08/Dec/11 4:36 PM	03/Apr/12 10:57 AM					diagram	VBB								"25/Jan/12 4:27 PM;sfe;User guide on iteraplan.de is not updated. Once this is done this issue can be considered complete.
+
+There are, however, two issues maybe related to this described in ITERAPLAN-486 and ITERAPLAN-487."	27/Jan/12 2:03 PM;sfe;User guide updated: http://www.iteraplan.de/wiki/display/iteraplan/Nesting+Cluster+diagram	"16/Feb/12 3:03 PM;sip;This could be improved:
+- if changing the inner element, the outer2outer value should not be changed.
+- there should be inserted some space between the header of the outer element and the outer elements inside."																																																				

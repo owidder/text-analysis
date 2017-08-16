@@ -1,0 +1,21 @@
+Edit descriptions on Attribute Groups	"*Summary:*
+
+Create Edit-Functionality for descriptions of Attribute Groups.
+
+
+
+*UI:*
+
+* Use UI and interactions from Single Attribute View as blueprint (including error-handling)
+
+* If user sets string to null-string, the text field shows ""not assigned"" (German: ""nicht zugeordnet"")
+
+* Ensure it still support Wiki-Syntax
+
+
+
+*Technology:*
+
+* Try to reuse common edit-components from Single Attribute View
+
+* Trigger reload-service using {{$scope.$emit(""triggerDataReset"");}} (IPTS-549)"		New Feature	iteraplan Speedbird	17/Feb/17 3:52 PM	13/Mar/17 11:37 AM														13/Mar/17 11:24 AM;anhv;Created follow - up ticket for bug: IPTS-648																																																						

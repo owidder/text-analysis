@@ -1,0 +1,20 @@
+har-files im ISM verarbeiten	"Die Detail-Daten der WPT-Messergebnisse (""Wasserfall-Informationen"") liegen im ISM als har-files vor. Dies ist eine JSON-Struktur, in der die Informationen persistiert sind.
+Um die Daten für eine Auswertung nutzbar zu machen muss das har-file geparst werden. Die folgenden Informationen müssen zugänglich werden:
+
+Pro Wasserfall:
+
+???
+
+Pro Wasserfall-Eintrag:
+
+* URL
+* Host/Domain
+* Status code
+* Start offset time
+* DNS-Lookup-time
+* Initial Connection time
+* SSL negotiation time
+* TTFB
+* Content download time
+* Bytes down
+* Bytes up"		Task	OpenSpeedMonitor	18/Feb/14 10:43 AM	27/Feb/14 12:28 PM														18/Feb/14 11:15 AM;nkuhn;Auch der Index jedes Wasserfall-Eintrags sollte zugänglich werden. So dass aggregtierte Auswertungen (siehe IT-286, IT-287, IT-289) auch die Ladereihenfolge bestimmter Resourcen betreffen können.	27/Feb/14 12:28 PM;mkrueger;Implementiert mit dem HarParserService																																																					

@@ -1,0 +1,49 @@
+change buttons and their order in List View	"The action-buttons in LV should be rearranged. The result should look like the example in the attachment.
+
+ #  *Save, Save As, Export*: Default Buttons without text but with tooltips with the name in it. ""Save"" is inactive until the user saves an instance of the current list by ""Save As"" button. 
+
+ # *Filter:* becomes a Default button (see [Style Guide|[https://iteraweb.iteratec.de/confluence/display/ITPL/Buttons])] ] ) 
+
+ # *Tree/List-View*: Please create a new Toggle-Button for these functions. If one is clicked, that button becomes inactive, the other one is acitvated. The Toggle should be as wide as the default buttons (i.e. 180px). The toggle contains only icons, no text. (Icons are not the right colour in this example.)
+
+    !image-2017-05-29-13-15-03-854.png!
+
+ # *Reset/Zurücksetzen*: The name should be set to ""RESET"" in English _and_ German. The button becomes a default button instead of text-button. Use the new Icon in the attachment reset.svg.
+
+ # *New Element*: Please change the name to ""NEW/NEU"" 
+
+ # *Mass Update*: Add the name ""MULTI MODE/ MULTI MODUS"" on the button and use the new icon multi-edit.svg.
+
+ # *History*: Add a new default button: ""HISTORY/HISTORIE""  with the icon.
+
+ # *Diagram*: Add the new dropdown-button (should look like the default button with the additional arrow for the dropdown). Name: ""DIAGRAM/DIAGRAMM"" with the diagram icon. 
+
+ # *Subscription* stays the same. 
+
+ # *Textfileds*: In List View textfields for Search and Add Column differ in size, text-colour etc.
+
+
+
+Please apply the style for textfields that is specified in the Style Guide in iterawiki: [https://iteraweb.iteratec.de/confluence/display/ITPL/Buttons] 
+
+ * adjust text-colour
+
+ * if screen is too small for all buttons to show, both text-fields should minimize to an equal size. I suggest: half of the original width as minimum (at the moment search field becomes shorter than add column-field)
+
+ * Make sure the icons have the same size
+
+
+
+       11. The Text ""Shows all 13 Business Units"" which is displayed above the table should be erased.
+
+
+
+Instead we display this information right behind the search-field as in the attachment ""Search-bar"" 13 out of 13 are listed
+
+
+
+ "		Improvement	iteraplan PO	29/May/17 1:35 PM	19/Jun/17 2:41 PM														"12/Jun/17 5:10 PM;sbu;[~aan] orange-mode.svg is in directory svg-icons-buttons-gray :)
+
+
+
+ "	14/Jun/17 8:42 AM;aan;[~fka]  for reasons of the space "Im Diagramm zeigen" was changed to "Diagramme" and the nglish version to "Diagrams"	15/Jun/17 10:08 AM;dmkh;Review is node, comments are here: https://iteraweb.iteratec.de/fisheye/cru/IP-691#general-comments	16/Jun/17 9:44 AM;dmkh;If UI changes for list view are completed, please, also update User guide documentation: https://doc.iteraplan.de/display/iteraplan60/List+view																																																			

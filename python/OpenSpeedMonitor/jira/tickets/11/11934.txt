@@ -1,0 +1,11 @@
+Job-Queue-Übersicht	"Nach dem Vorbild der Status-Seite im WPT Monitor wird eine Seite erstellt, die für jede Queue folgende Informationen anzeigt:
+
+# Host
+# ID
+# Label
+# Anzahl Agenten aktuell in der Queue
+# Anzahl Jobs aktuell in der Queue und derzeit ausgeführte (=pending und running) (jeweils Information vom WPT Server und aus unserer Datenbank)
+# Anzahl Jobs und Anzahl eingetroffener EventResults der letzten Stunde
+# Anzahl Jobs, die in der nächsten Stunde ausgeführt werden werden
+
+In der Liste werden nur Locations angezeigt, die auch von der getLocations.php eines WPT Servers zurückgegeben werden. Alle anderen Locations in der ISM-DB werden nicht angezeigt."		Task	OpenSpeedMonitor	20/Feb/14 9:44 AM	25/Feb/14 5:46 PM														25/Feb/14 5:41 PM;drieger;Job-Queue-Seite nach obigen Angaben ist erstellt. Es werden nur Locations von WptServern ausgewertet, die auf aktiv gesetzt sind.																																																						

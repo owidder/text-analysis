@@ -1,0 +1,43 @@
+Use "amazing" icons for toolarea-actions	"* Ask [~fka], if and how to create icons for toolarea-actions
+
+* Replace existing icon placeholders with created icons"		Task	iteraplan PO	06/Oct/15 4:33 PM	29/Oct/15 10:00 AM														"16/Oct/15 2:42 PM;fka;FKA: Please ask me on Monday, 19th
+
+"	19/Oct/15 1:29 PM;sfe;Once [~fka] provides the icons (they'll be attached to this issue) this can be implemented.	"20/Oct/15 2:48 PM;fka;Bitte hauptsächlich Glyphicons aus Bootstrap verwenden, denn Bootstrap wird schon genutzt.
+
+
+
+Doku zu den Glyphicons ist hier: http://getbootstrap.com/components/
+
+
+
+Für weiteres bitte Flaticon nutzen (see external Link).
+
+
+
+|| Menueintrag | Glyphicon-Klasse / externer Link ||
+
+|| Content element type | glyphicon-th ||
+
+|| Filter | glyphicon-filter ||
+
+|| Coloring by /Coloring | glyphicon-tint ||
+
+|| Line type by | glyphicon-edit ||
+
+|| Settings | glyphicon-cog ||
+
+|| Change r/c assoc. | glyphicon-menu-hamburger ||
+
+|| Add new filter | glyphicon-plus-sign ||
+
+|| Aktuelle Filter | glyphicon-ok-circle ||
+
+|| Hierarchical | http://www.flaticon.com/free-icon/hierarchical-structure_59309#term=hierarchical&page=1&position=3 ||
+
+
+
+Bitte beachten bei Flaticon:
+
+How to credit the authorship of the icons?, http://support.flaticon.com/hc/en-us/articles/202798381-How-to-attribute-the-icons-to-their-authors
+
+Entsprechenden Hinweis in die Liste der genutzen Libaries bei iteraplan mit aufnehmen."	22/Oct/15 11:59 AM;fka;maybe currently used icons should be deleted	28/Oct/15 3:21 PM;tam;Also updated 3RD-PARTY_LICENSE.txt and UsedLibraries in Excel																																																		

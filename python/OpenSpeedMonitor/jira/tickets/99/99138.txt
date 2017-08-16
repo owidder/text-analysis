@@ -1,0 +1,3 @@
+Deactivate old history	"- ask [~sfe]
+
+- remove history listener"		Task	iteraplan Thunderduck	14/Oct/16 2:27 PM	18/Oct/16 10:20 AM																																																																				

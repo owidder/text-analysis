@@ -1,0 +1,7 @@
+Paginations pagesize gets reset on "reset and show all"	"to reproduce:
+# navigate to a bb-list
+# change pagesize for pagination
+# execute search
+=> pagesize remains the same
+# reset and show all
+=> pagesize gets reset"		Bug	iteraplan PO	03/Jul/13 6:12 PM	19/Sep/13 3:56 PM					paging									19/Aug/13 4:57 PM;isc;This ticket has already been fixed by ITERAPLAN-1869 and can be closed.																																																						

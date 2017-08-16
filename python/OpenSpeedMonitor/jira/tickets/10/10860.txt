@@ -1,0 +1,1 @@
+Typo auf der Ergebnisliste	"Einzelergebnisse die dem berechnet*t*en Wert zu Grunde liegen"		Bug	OpenSpeedMonitor	23/Jan/14 11:42 AM	23/Jan/14 6:06 PM														23/Jan/14 6:06 PM;nkuhn;Korrigiert in /iteraSpeedOttoCsi/grails-app/i18n/isocsi_de.properties																																																						

@@ -1,0 +1,2 @@
+Changing pages of the result list on Building Block sites doesn't work in IE7	"Using IE7, if you have a list of building blocks on any of the building block listings (for example information systems), and this list is longer than the results to be displayed per page, changing the page is not possible.
+IE7 reports an error, see attached screenshot."		Bug	iteraplan PO	05/Dec/11 1:45 PM	07/Dec/11 11:42 AM					ie7									07/Dec/11 11:42 AM;lci;Works fine.																																																						

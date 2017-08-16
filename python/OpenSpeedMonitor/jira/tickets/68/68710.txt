@@ -1,0 +1,21 @@
+DefaultMapping Pages zuordnen können	"In der Grafik der DefaultMappings soll es einen Button geben ""selektieres Mapping einer Page zuordnen.""
+
+Beim Klick auf diesen geht ein modaler Dialog auf, in dem eine Page auswählbar ist.
+
+In Grau wird hier das alte Mapping der Page dargestellt und farbig das ausgewählte DefaultMapping.
+
+Nach bestätigung der neuen Auswahl, wird der Dialog geschlossen und die Seite muss neu geladen/aktualisiert werden."		Task	OpenSpeedMonitor	06/Jan/16 12:27 PM	14/Jan/16 12:34 PM														"07/Jan/16 3:19 PM;bwo;Ich habe den Button bereits eingefügt. Dieser wird nur dann aktiv, wenn eine Kurve ausgewählt wurde.
+
+
+
+Im nächsten Schritt wollte ich das Template _common/modals/_chooseCsiMapping.gsp
+
+einbinden. In dem Select sollten dann die Namen der Pages auftauchen. Dabei ist mir jedoch aufgefallen, dass die Optionen des Selects nicht mehr angezeigt werden. Es wird wird ausschließlich der Default-Wert dargestellt. Die Optionen sind dem HTML-Dokument jedoch an der richtigen Stelle.
+
+
+
+Bevor also das Template eingebunden/angepasst werden kann, muss dieser Fehler gefixt werden."	"14/Jan/16 12:34 PM;bwo;Unter den Default Mappings befindet sich nun ein Button zum Aufrufen eines Dialoges. Dort sieht man das zuvor ausgewählte Mapping. Im unteren Bereich befindet sich ein Select und ein deaktivierter Apply-Button. Wählt man in dem Select eine Page aus, so taucht, falls vorhanden, dass aktuelle Mapping der Page als graue Kurve in dem Graphen auf. Außerdem wird der Apply-Button aktiviert. Nach der Betätigung des Buttons taucht ein Spinner auf und das Mapping wird übertragen, anschließend lädt die Seite neu. 
+
+Hierfür habe ich die bereits vorhandene ApplyMapping Methode aus dem DefaultTimeToCsService angepasst. 
+
+Aus der Page edit/create Ansicht wurde die Möglichkeit ein Mapping zu wählen entfernt.."																																																					

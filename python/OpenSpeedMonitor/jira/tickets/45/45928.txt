@@ -1,0 +1,25 @@
+Portofolio diagram in Visio can have other orientation on Y-axis like the other formats	"Reproduce:
+Create Portfolio diagram with IS, with:
+X-axis: Seal
+Y-axis: Status 
+
+Result:
+Visio: Y-axis is top->down
+others: Y-axis is bottom->up
+
+(see attachements)"		Bug	iteraplan PO	25/Jul/13 1:44 PM	27/Aug/13 10:37 AM					diagram	visualization								"21/Aug/13 10:41 AM;lba;||Values Y|Num AT|Enum AT|Num AT|Enum AT|
+||Values X|Num AT|Num AT|Enum AT|Enum AT|
+||Behaviour|Visio: Y-Axis is revert|SVG: Y-Axis is revert|Visio: Y-Axis is revert|Correct Behaviour|
+"	"21/Aug/13 2:55 PM;lba;||Values Y|Num AT|Enum AT|Num AT|Enum AT|
+||Values X|Num AT|Num AT|Enum AT|Enum AT|
+||Behaviour|Correct Behaviour|SVG: Y-Axis is revert*|Correct Behaviour|Correct Behaviour|
+
+*The graphic looks like the Visio, but the mapping is reversed. Actually the Visio Mapping for EnumATs  on the Y-Axis is always reversed.
+"	"22/Aug/13 2:05 PM;lba;||Values Y|Num AT|Enum AT|Num AT|Enum AT|
+||Values X|Num AT|Num AT|Enum AT|Enum AT|
+||Behaviour|Correct Behaviour|Correct Behaviour|Correct Behaviour|Correct Behaviour|
+
+Also the text in the Visio graphic is now rotated in the same direction as in the svg
+
+When testing, please validate these results."	"11/Oct/13 1:41 PM;psc;Reviewed. Could reproduce in 3.1. Issue is fixed in current nightly.
+Ticket will be closed."																																																			

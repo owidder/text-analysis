@@ -1,0 +1,23 @@
+Add check for uniqueness of  query names on "Save as" 	"Follow-up ticket for ITERAPLAN-4959
+
+
+
+Actual: 
+
+Currently,  when we try to save query by pressing ""SAVE AS""  we can save queries with the same names.
+
+
+
+Expected:
+
+Add check for uniqueness of  query names.
+
+Prevent user from adding already existing names.
+
+When user try to add existing name show popup window."		Improvement	iteraplan Speedbird	26/Oct/16 2:57 PM	16/Dec/16 2:31 PM														27/Oct/16 2:27 PM;roia;[~msr], I think, there should be server-side validation for this to be 100% sure that the same names will not be saved by different users. In case of validation error, server should return the response with some 4xx status and error code/message.	"08/Nov/16 9:31 AM;mada;Additional requirement:
+
+The names should be unique for one user, i.e. the private queries of this user and all public queries. But it is possible, that two private queries of different users have the same name."	"18/Nov/16 11:25 AM;msr;Clarification about ""uniqueness""
+
+If want to save private query, check if there exists already a public query or another private query of this user
+
+If want to save a public query, check if there exists any other private or public query"	16/Dec/16 2:31 PM;ants;Review done: https://iteraweb.iteratec.de/fisheye/cru/IP-227																																																			

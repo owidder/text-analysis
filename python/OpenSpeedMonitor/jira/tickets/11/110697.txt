@@ -1,0 +1,15 @@
+Fehler bei pageAggregation	"Wenn man zum Beispiel auf der Demo Instanz sich Daten von der alternate_desktop JobGroup angucken möchte, kommt der REST Aufruf mit einem 500er Fehler zurück:
+
+{code}
+
+Cannot get property 'navigationScript' on null object SecurityRequestHolderFilter has problem at line 58
+
+{code}
+
+
+
+Unter bestimmten Umständen sieht kommt dieser Fehler und wird sehr hässlich angezeigt. Fehlgeschlagene REST calls sollten nur einen Fehler zurückgeben.
+
+
+
+[Beispiel|http://demo.openspeedmonitor.org/pageAggregation/show?setFromHour=on&setToHour=on&from=06.01.2017&fromHour=16%3A03&to=03.02.2017&toHour=16%3A03&selectedFolder=31&selectedFolder=23&selectedFolder=32&selectedFolder=29&selectedPages=25&selectedPages=20&selectedPages=26&measurand=%7B%22values%22%3A%5B%22docCompleteTimeInMillisecsUncached%22%2C%22firstByteInMillisecsUncached%22%5D%7D#]"		Bug	OpenSpeedMonitor	03/Feb/17 4:12 PM	09/Feb/17 12:49 PM																																																																				

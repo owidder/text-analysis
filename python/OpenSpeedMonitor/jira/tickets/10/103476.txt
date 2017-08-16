@@ -1,0 +1,3 @@
+Document "Navigator" in the User Guide	"*Summary:*
+
+Document the Navigator as new diagram type in the user guide."		New Feature	iteraplan Speedbird	22/Nov/16 4:55 PM	19/Dec/16 1:34 PM														19/Dec/16 12:46 PM;mash;Link to Navigator diagram User Guide: https://www.iteraplan.de/doc/display/iteraplan55/Navigator+Diagram																																																						

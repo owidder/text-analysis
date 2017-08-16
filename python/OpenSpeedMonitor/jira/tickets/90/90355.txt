@@ -1,0 +1,51 @@
+Sizing by attribute	"*Summary:*
+
+The elements are sized by *single valued* numeric or enumeration attributes.
+
+
+
+*Implementation Details:*
+
+* There is a absolut minimum and a maxium size in pixel
+
+* Undefined values have minimum size with a dashed line
+
+* Numeric attributes: The sizing is exact within the limits
+
+* Enum: The interval between minium and maximum size is divided in equal sections depending on the number of intervals, e.g.
+
+** if minSize = 2, maxSize = 6 and we have three literals, then literal1 has size 2, literal2 has size 4 and literal3 has size 6
+
+* Url: Save attribute for sizing in the url
+
+* Remove border line around circles (except for dashed line of undefined values)
+
+* Sorting:
+
+** If sizes are equal, use the name or (if activated) the hiearchical name as criterion.
+
+
+
+*UI:*
+
+* Synchronise zoom-factor of the diagram with sizes of circles in the legend
+
+* BUT limit sizes of circle to a minimum and maxium
+
+* Legend: Show in the legend:
+
+** Numeric: ""Size by"" (German: ""Größe bestimmt durch"") localised attribute name, 5 circles starting with min and ending with max and 1 circle for undefined
+
+** Enumeration: ""Size by"" (German: ""Größe bestimmt durch"") localised attribute name, 1 circle for each literal and 1 circle for undefined
+
+* Toolarea:
+
+** New main entry (3. position): ""Size"" (German: ""Größe"")
+
+** First subentry: ""Default sizing"" (German: ""Standard Größe"") to reset the sizing
+
+** Subentries: All single-valued numeric and enumeration attributes order alphabetically by their localised names. The actual seleceted is highlighted in bold
+
+
+
+"		New Feature	iteraplan Speedbird	13/Jul/16 5:03 PM	16/Aug/16 10:34 AM																																																																				

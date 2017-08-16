@@ -1,0 +1,16 @@
+Edit name in list	"To the existing list view of information systems, add direct in-place editing of the names.
+
+Editing is as in the previous features on editing a property of an Information system, only in a different place in the UI.
+
+(0) intially: list of information systems, one line per item.
+
+(1) user clicks (left/main button) the name cell of an IS
+
+(2) system shows menu ""open"", ""edit""
+
+(3) user selects edit
+
+(4) system shows editable text box.
+
+(...) next steps excactly as in editing in the single item view, including validation and highlighting invalid names.
+..."		New Feature	iteraplan PO	10/Sep/14 12:50 PM	29/Sep/14 10:28 AM														10/Sep/14 2:04 PM;sepr;Est. 0.5 PD																																																						

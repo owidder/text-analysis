@@ -1,0 +1,49 @@
+New parent-relation input	"*Summary:*
+
+
+
+Changing parent relations
+
+
+
+*Scope:*
+
+ * only single values
+
+ * Searchable drop-down list
+
+
+
+*User Story:*
+
+ * User clicks on button
+
+ * new line appears immediately
+
+ * users enters string
+
+ * user clicks on one of the following buttons:
+
+ ** Set (german: Setzen) - set new relation, delete existing one
+
+ ** Remove (german: Entfernen) - delete chosen value from all selected rows
+
+ ** Clear (german: Löschen) - remove existing values and leave fields empty
+
+ * dialog appears: 'Do you want to update chosen data?' ('Möchten Sie die gewählte Daten aktualisieren?')
+
+ ** Yes / No (german: Ja / Nein) answer
+
+ * loading indicator is shown until all changes are applied
+
+ * list is reloaded
+
+
+
+*UI*
+
+ * {color:#333333}Underneath the text field there should be located buttons to implement action (described in IPTS-640){color}
+
+ ** use primary text button for action *set*
+
+ ** {color:#333333}use seconadry text button for other actions{color}"		New Feature	iteraplan Speedbird	28/Feb/17 3:43 PM	05/Apr/17 3:31 PM																																																																				

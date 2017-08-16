@@ -1,0 +1,8 @@
+Transition for rows appearing and disappearing when filter changes	"When the user changes the filter, the affected rows must appear or disappear smoothly in a transition.
+
+The user changes the filter either
+* by a menu ""Only ...""
+* by the text search
+
+
+"	47009	Sub-task	iteraplan PO	29/Sep/14 12:59 PM	09/Jun/15 5:06 PM																																																																				

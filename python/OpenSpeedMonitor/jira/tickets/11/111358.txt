@@ -1,0 +1,1 @@
+Controller für den Wizard implementieren	Pretty much self explanatory. ;)	111352	Sub-task	OpenSpeedMonitor	08/Feb/17 3:23 PM	23/Mar/17 3:21 PM																																																																				

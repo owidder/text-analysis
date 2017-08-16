@@ -1,0 +1,11 @@
+Checksum failed by downloading from nexus for batik	"If batik will be downloaded by maven from nexus checksum failed. See attached screenshot
+
+
+
+According to [~sfe] since this library wasn't available on public repositories, it was uploaded manually.
+
+
+
+*Possible solution*
+
+also to upload checksum files to nexus"		Bug	iteraplan Thunderduck	15/Sep/16 2:00 PM															01/Mar/17 9:57 AM;fka;Timebox 0.125 PD																																																						

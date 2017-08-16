@@ -1,0 +1,21 @@
+installation errors	"hello, 
+
+
+
+I am getting an error when installing Iterplan. I have attached the error log and a screenshot. 
+
+
+
+Not all of the SQL statements are executing correctly during the installation. 
+
+
+
+please assist. "		Technical question	iteraplan Support	10/Mar/16 12:45 PM	23/Mar/16 10:15 AM														"10/Mar/16 12:45 PM;asingh3@csir.co.za;
+
+!iteraplan Error.png|thumbnail!
+
+[^iteraplan Errors.txt] _(42 kB)_"	"10/Mar/16 4:14 PM;tam;I guess, it was a fresh installation of iteraplan and the database you have created for installation was empty.
+
+
+
+That was the reason for SQL errors you've got. When initializing a database, the Installer first attempts to delete existing tables from the database. If a new schema is being created for the database (meaning no tables as yet exist for iteraplan), the Installer issues an error message stating that it is unable to locate the tables to delete. You can safely ignore this message here. (see [http://www.iteraplan.de/doc/display/iteraplan51/iteraplan+installer])"	23/Mar/16 7:26 AM;asingh3@csir.co.za;hi guys how do I close this request as solved?	23/Mar/16 10:15 AM;tam;We closed this Ticket as Done																																																			

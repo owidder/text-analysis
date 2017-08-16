@@ -1,0 +1,25 @@
+Environment in Daimler-Proplan-SAB einblenden	"Im Projekt Proplan/SAB wollen wir zukünftig JIRA Issue Collectors einsetzen und damit auch die Umgebungen tracken. Leider haben unsere Bugs keine Environment-Informationen um diese anzuzeigen. Also ist unser Problem, wir haben die Informationen von den Issue-Collectors, aber kein Feld im Issue-Type Bug um diese Info anzuzeigen. Könnt Ihr bitte dieses Feld hinzufügen?
+
+
+
+Folgender Bug wurde mit dem Issue-Collector erstellt und sollte die Environment-Informationen beinhalten, sofern der Issue-Collector korrekt funktionierte.
+
+
+
+Bug: https://iteraweb.iteratec.de/jira/browse/DAIMPA-402
+
+Issue-Collector: https://iteraweb.iteratec.de/jira/secure/ViewCollector!default.jspa?projectKey=DAIMPA&collectorId=bbf1bdd2
+
+Story-Board: https://iteraweb.iteratec.de/jira/secure/RapidBoard.jspa?rapidView=217&view=planning&selectedIssue=DAIMPA-402&epics=visible
+
+"		Task	Infrastruktur	09/May/17 2:50 PM	12/May/17 4:02 PM	JIRA													"09/May/17 2:53 PM;tgo;Wenn Du auf ein Issue gehst und dies editiers, kannst Du oben rechts in der Ecke Dir anzeigen lassen, warum ein Feld nicht angezegt wird.
+
+
+
+In diesem Fall wird das Feld anscheinend durch eine Field Configuration ausgeblendet. Nun die Frage, warum nicht die Field Configuration verwendet wurde, die anscheinend für alle Daimlerprojekte aufgesetzt wurde.
+
+
+
+Leider kann ich die Konfigurationen nicht auf die Schnelle vergleichen und muss Euch auf nächste Woche vertrösten. Die nächsten drei Tage bin ich anderweitig verbucht."	"12/May/17 4:01 PM;mhs;Hallo [~tgo], ich danke dir für die Hilfe. Gerade sind [~nse] und ich beim Aufräumen der Proplan-Projekte. In diesem Zusammenhang wurde auch die Field-Konfiguration angepasst. Daher kann dieses Issue als erledigt geschlossen werden.
+
+Viele Grüße und ein schönes Wochenende."																																																					

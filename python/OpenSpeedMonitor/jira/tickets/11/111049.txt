@@ -1,0 +1,23 @@
+No History after upgrade to 5.4	"After Upgrading from 5.3 to 5.4, even with adding ""history.enabled=true"" to iteraplan.properties, there's no ""History""-Tab available f.e. on the IS page.
+
+Regarding the documentation, a ""Administration-System""-page is described(https://www.iteraplan.de/doc/display/iteraplan54/Single+Element+View , last paragraph ""History"") - but we don't have such a menu-entry under ""Administration"". 
+
+(Note that history was always enabled in previous versions via the iteraplan.properties entry described above, and the history was migrated to version 5.4, runtime of the historyMigrationTool.jar was >24 hours). "		Fault	iteraplan Support	06/Feb/17 11:32 AM	07/Feb/17 7:50 AM														"06/Feb/17 1:29 PM;cst;Dear Mr. Schwabl,
+
+thank your for your inquiry. 
+
+After the History Migration and using the Version 5.4 of iteraplan, the history in the old client is not longer availlible.
+When you change into the ""Interactive Client"" and the tab ""Administatrion"" -> ""System"" is it possible to activate the history. 
+
+The setting ""history.enabled=true"" in the file ""iteraplan.propierties"" has no longer a effect in version 5.4.
+
+After you activated the history in the interactive client, you have the tab ""History"" in the single element view of the interactive client.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "	"06/Feb/17 5:13 PM;michael.schwabl@uniqa.at;Dear Mr. Stangl,
+
+thanks for the Information, it works now like expected.
+
+Kind Regards,
+Michael Schwabl"																																																					

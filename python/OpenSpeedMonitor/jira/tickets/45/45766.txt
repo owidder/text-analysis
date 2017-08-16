@@ -1,0 +1,23 @@
+Massenupdate in Firefox - kein Update von Beschreibung	"Bericht der DAB bank (dort auf deren Rechner gesehen)
+
+
+Nachstellen:
+1) Auswahl von einigen IS, update von Name, Status und Beschreibung
+2) Massenupdate definieren
+
+Ergebnis:
+A) im Internet Explorer lassen sich alle Felder bearbeiten
+B) im Firefox wird für die Beschreibung keine editiertbare Textbox gezeigt, damit kann die Beschreibung nicht bearbeitet werden."		Bug	iteraplan PO	17/Jun/13 7:41 AM	10/Jul/13 9:59 PM					Firefox	IE								20/Jun/13 12:31 PM;bra;cannot reproduce with Firefox 21.0 on Enterprise Edition Build-v3.1.SNAPSHOT-r20587 (2013-06-20-04-32-24)	"28/Jun/13 11:01 AM;bwu;-----Ursprüngliche Nachricht-----
+Von: Emil.Jusifov@dab.com [mailto:Emil.Jusifov@dab.com] 
+Gesendet: Freitag, 28. Juni 2013 10:34
+An: Björn Wüst
+Cc: Karl.Brandner@dab.com
+Betreff: AW: [JIRA] Vorgang kommentiert: (ITERAPLAN-1625) Massenupdate in Firefox - kein Update von Beschreibung
+
+Hallo Herr Wüst,
+
+ich habe die Firefox-Version 21.0 verwendet. 
+
+Viele Grüße
+Emil Jusifov
+"	10/Jul/13 9:59 PM;sry;Closing, as there is no new information available how this report could be reproduced.	16/Jul/13 8:28 PM;sry;still no news - closed as we cannot reproduce it																																																			

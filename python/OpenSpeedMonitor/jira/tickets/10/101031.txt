@@ -1,0 +1,1 @@
+Treemap: make the diagram accessible from the home page 	Add the tile TreeMap diagram at the home page		New Feature	iteraplan Speedbird	31/Oct/16 1:28 PM	02/Nov/16 4:38 PM					TreeMap									01/Nov/16 10:51 AM;roia;[~msr], I have drawn some icons for this diagram, but we may need a better ones from a true designer.																																																						

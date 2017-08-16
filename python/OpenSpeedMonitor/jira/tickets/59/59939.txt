@@ -1,0 +1,15 @@
+headerDownloadService exports text with partial warning always	"*how to reproduce:*
+
+* set partial constant to a low value (_constants.js_ PARTIAL.NUMBER_OF.CONTENT = 20; e.g)
+
+* go to ifd
+
+* add new filter, that returns an small result set (e.g. filter by name: ""funds"" returns only 3 elements, partial-warning does not appear)
+
+* export diagram as svg (Download SVG)
+
+* open it: 
+
+** *actual:* partial warning is here. 
+
+** *expected:* partial warning is only exported if filter result is larger than partial constant"		Bug	iteraplan PO	12/Oct/15 2:19 PM	28/Oct/15 1:31 PM																																																																				

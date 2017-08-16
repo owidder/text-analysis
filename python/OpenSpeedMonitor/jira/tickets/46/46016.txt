@@ -1,0 +1,1 @@
+Filtering Elements in Nesting Cluster Diagrams	When configuring a nesting cluster diagram, the user wants to filter the elements selected for inner and outer elements. Similar filter functionality as provided in other visualizations is desired.		New Feature	iteraplan PO	23/Aug/13 5:00 PM	01/Aug/14 6:08 PM																																																																				

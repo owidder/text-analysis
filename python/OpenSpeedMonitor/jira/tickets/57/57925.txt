@@ -1,0 +1,129 @@
+Extend tool area filter dialog for combined filters	"This issue is now for completing the combined filter dialog with respect to the composition of single filters.
+
+
+
+Scope of this issue:
+
+* Adding and removing relationship end filters, ""and"" and ""or"" combined filters.
+
+* Update of the diagram on adding/removing filters (in some cases clicking ""apply"" may be necessary)
+
+* Primary filter always at least contains one empty single filter
+
+
+
+Not: ""no connection"" relationship end filter. This will be done in ITERAPLAN-4373
+
+
+
+##############
+
+*Old and really confusing and chaotic description. Please disregard.*
+
+
+
+* Filter dialog should always display all configured filter
+
+* Filters can be removed from filter dialog display (no extra listing of ""current filters"" anymore)
+
+* All configured filters can be modified
+
+
+
+Add a button like  ""more"" or ""advanced settings"" for related type filters in the ToolAreaDialog.
+
+No extra submenu for related type filters anymore.
+
+
+
+(""Simple"" view:
+
+* Only main type properties available for filtering
+
+* AND/OR composition possible)
+
+
+
+""Advanced"" view:
+
+* Related types filters are selectable, too
+
+* Change to simple mode only possible, if no advanced filters are configured
+
+
+
+see attached mockups (need to be updated)
+
+
+
+Also: Legend"		Improvement	iteraplan PO	22/Sep/15 5:06 PM	09/Mar/16 1:24 PM														"23/Dec/15 3:12 PM;sfe;*sfe: old comment, please see description instead*
+
+
+
+####
+
+
+
+Currently:
+
+* Single filter handling by functions in $scope
+
+* inputDropdown patched to work for preselected items (comments mark the patched parts)
+
+* ""Unused"" functions to be deleted after completion of the issue are marked with TODO comments (may not be exhaustive)
+
+
+
+TODO:
+
+* Move CSS to own file(s)
+
+* Adapt and use functionality of relationshipEnd filters also in primary type filter
+
+* Fix add button for new relationshipEnd filters
+
+* Move/Refactor operator definitions and assignment to attribute value types + localization of operator names
+
+* Check value select widgets after operator selection
+
+* SingleFilterObject \{property, actualFilter\}: ask [~sfe]
+
+** Move attributeIsSelectedFunction here from $scope
+
+* Clean up temporary functions ""getFiltersForRelatedBB2"" and possibly others in lsd tool area view model builder
+
+* Necessary parameters in ""openDialog"" may change
+
+* Fix/complete JS doc"	07/Jan/16 10:56 AM;sfe;Originally estimated: 8	15/Jan/16 5:04 PM;msr;Please commit to FilterBranch	"27/Jan/16 10:26 AM;msr;*sfe: old comment. Please see description instead.*
+
+
+
+####
+
+Proposal for new split of functionality:
+
+
+
+*General:*
+
+* This ticket is responsible for filterDialogTemplate and toolAreaController, i.e. the filterDialogTemplate provides combinedFilters in a correct structure to the backend
+
+* This might include changes in combinedFilter and singleFilters
+
+
+
+*Details:*
+
+* Move addFilterOnRelationshipEnd to SingleFilterHolder.js (but without any parameters -> SingleFilters should know their initial values) 
+
+* move $scope.updateSingleFilter to SingleFilterHolder.js
+
+* see also https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-3933?focusedCommentId=94506&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-94506"	"29/Jan/16 11:14 AM;ach;Todos from ITERAPLAN-4229:
+
+* datepicker and rangeslider do not work: Create ""updateSingleFilter""-method in SingleFilterHolder, which creates borders for datepicker and rangeslider
+
+* enum-literal-list does not work: Create ""updateSingleFilter""-method in SingleFilterHolder, which creates borders for datepicker and rangeslider
+
+
+
+sfe: Will be done in ITERAPLAN-4340"																																																		

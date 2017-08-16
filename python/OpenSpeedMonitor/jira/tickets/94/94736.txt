@@ -1,0 +1,13 @@
+Mozilla HTTP-Observatory als Scanner integrieren	"Basierend auf der Analyse aus SDO-263 soll der ""Mozilla HTTP-Observatory"" Scanner als (Python3) Container in die SecureBox integriert werden.
+
+Dieser Scanner bietet einen guten ersten Überblick und bietet sich somit gut als initaler Security Quickcheck an, bevor ein lang laufender intensiver Scan gestartet.
+
+Anforderungen:
+* Der Container sollte offline, d.h. ohne Verbindung zu einem Mozilla Server vollständig funktionieren.
+* Der Container sollte möglichst direkt auf den Mozilla GIT Reposity basieren und den entsprechenden Code einbinden, um später einfache Updates der Container zu ermöglichen.
+* Für die Integration mit der SecureBox muss eine Pull Schnittstelle zur Camunda ""External Service Task"" API implementiert werden, die selbstständig regelmäßig neue Tasks abfragt, die Bearbeitung anstößt und den Prozess mit Ergebnissen (als Prozessvariable) beendet.
+
+*Rahmenbedingungen*:
+Für die Umsetzung kann das bisher erfolgreich genutzte Spring Boot basierte Framework genutzt werden. Falls eine andere Implementierungsvariante effizienter ist (z.B. mit Dropwizard oder dierekt in Python3) ist dies ebenfalls ok. Nur sollten weiterhin die µService bezogenen Features wie REST-API, Healthcheck, Statuspage, Metriken, Umgebungsprofile und Jobsteuerung möglich sein.
+
+Folgendes Repo kann genutzt werden: https://iteragit.iteratec.de/iterasecurity/SecureBoxMozillaObservatory"		Story	secureCodeBox	31/Aug/16 2:27 PM						iteratec	students								13/Sep/16 4:39 PM;rfe;Da sich die rein lokale Umsetzung basieren auf Docker Containern noch als Buggy erweist setzen wir zuerst mal auf die CLI Variante, die im Hintergrund mit dem Mozilla API Server interagiert. D.h. für den Anfang funktioniert dieser Scanner nur für Online verfügbare Sites.																																																						

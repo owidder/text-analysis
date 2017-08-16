@@ -1,0 +1,4 @@
+Test iteraQL console	"Test sheet in {{doc/test/iteraqlconsole}}.
+
+* Install iteraplan using one of the not yet or lesser tested configurations in the installer test sheet
+* Perform the testcases from the test sheet and attach the results to this ticket"	47060	Sub-task	iteraplan PO	17/Oct/14 2:17 PM	22/Oct/14 5:01 PM					iteraQl	test								22/Oct/14 1:35 PM;msr;All Test Cases ok																																																						

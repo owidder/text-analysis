@@ -1,0 +1,5 @@
+Remove excel import warnings regarding empty date cells	"See attached screenshot.
+
+
+
+Remove these warnings permanetely. It's absolutely okay to have empty date cells. Do not chnage any functionality, just remove the warnings."		Bug	iteraplan PO	07/Jun/17 6:12 PM	16/Jun/17 6:10 PM																																																																				

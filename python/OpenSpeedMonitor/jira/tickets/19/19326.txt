@@ -1,0 +1,3 @@
+Mini-Profiler einbauen	"Ist ein Tool, für das es ein Plugin gibt:
+
+https://github.com/tomdcc/miniprofiler-jvm"		Task	OpenSpeedMonitor	12/Sep/14 4:56 PM																																																																					

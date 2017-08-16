@@ -1,0 +1,21 @@
+Add slide-in legend	"Prerequisite: The sliding mechanism is already implemented in mpd.
+
+
+
+Only add Filter (no quick filter)
+
+Look if the legend is already a directive and easily importable?
+
+
+
+TODO:
+
+Add the sliding legend which displays only the filter from common legendFilterBuilder.
+
+
+
+Initially collapsed and collapsing-state is not saved to the uri
+
+
+
+Headline: [Building Block Type. localised plural name]"		New Feature	iteraplan Speedbird	10/May/16 12:54 PM	25/Jul/16 10:17 AM														22/Jul/16 4:26 PM;roia;[~dmkh] you've disabled animation for legend before drawing, which is good, but not enabled it back after it's drawn, which is not as good as expected. Please see my commit :)	25/Jul/16 9:05 AM;dmkh;[~roia], thanks for your note and assist!																																																					

@@ -1,0 +1,1 @@
+[violinchart] Ampel hinzufügen	Analog zu den Baslkencharts würde auch hier eine Ampel Sinn machen. Diese könnte z.B. als senkrechte Rechtecke rechts vom Chart platziert werden.  		Task	OpenSpeedMonitor	04/May/17 2:26 PM																																																																					

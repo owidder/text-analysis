@@ -1,0 +1,1 @@
+Dashboard: Slow on large data set	See ITERAPLAN-621: loading takes several minutes.		Improvement	iteraplan PO	19/Apr/12 6:46 PM	19/Apr/12 10:55 PM														19/Apr/12 10:55 PM;kvo;old known improvement																																																						

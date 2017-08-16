@@ -1,0 +1,1 @@
+Zap-Spider als Komponente aus secureBoxHub auslagern in den ZAP-Container (microservice)			Story	secureCodeBox	10/Jul/15 4:08 PM	19/Jun/16 1:17 PM																																																																				

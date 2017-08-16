@@ -1,0 +1,21 @@
+Timestamp only for one BB changed when updating relations	"Connect a ISR to a PROJ in the single view of the ISR.
+
+
+
+Then only the last Modification time of the ISR changes, not for PROJ.
+
+
+
+New or the old client work, it happens in both cases.
+
+
+
+This is not logical, the timestamp should be updated for both elements."		Improvement	iteraplan PO	25/Apr/17 11:44 AM															"08/Jun/17 11:40 AM;fka;Needs to be discussed in detail after R 6.0. Could be a a quite big effort to implement.
+
+
+
+Currently the history ""on the other end"" shows the change, but the timestamp of the element itself is not changed. This is not completely unlogical, because the element on the other end was not directly changed...
+
+
+
+ "																																																						

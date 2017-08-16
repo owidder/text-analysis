@@ -1,0 +1,12 @@
+All Built-in properties should be available as additional column on overview pages	"Follow-up on ITERAPLAN-1485.
+
+On building block overview pages, you can only add columns for some of the built-in properties.
+Columns for following properties should be add-able as well (they are available in Spreadsheets reports already...):
+* Last modified by [user] (if activated in iteraplan.properties)
+* Last modified on [date/ time] (if activated in iteraplan.properties)
+* runtime period (where applicable)
+* Seal state (for IS)
+
+Ideas which require deeper consideration:
+* self-relations
+* other relations (which aren't available in Spreadsheet reports either)"		Improvement	iteraplan PO	14/Jun/13 7:34 PM	30/Dec/15 2:53 PM					consistency	overview	usability																																																													

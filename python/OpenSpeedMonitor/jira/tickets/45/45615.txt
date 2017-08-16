@@ -1,0 +1,3 @@
+After Excel-Import the database contains text AVs with the "« nU1l »" value	"Excel Importer seems to import text attribute cells without content as text AV with the null string as value.
+This leads to ""deleted object would be re-saved by cascade""-errors upon trying to save changes to building blocks referencing one of those null values."		Bug	iteraplan PO	26/Feb/13 1:38 PM	02/Apr/13 12:58 PM					ExcelImport									"02/Apr/13 12:58 PM;gph;Could reproduce it with 3.0.4 and an initial database.
+The nU1l-value didn't occur in the current version anymore."																																																						

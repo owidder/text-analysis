@@ -1,0 +1,17 @@
+Search element	"*Summary:*
+
+Search the element to start with
+
+
+
+*User story:*
+
+* User selects first entry in the toolarea ""Start with"" (German: ""Beginne mit"")
+
+* After clicking on this entry a modal dialog opens with a quick search field
+
+* Using the REST-API from IPTS-335 a list of matching Building Blocks is shown
+
+* The user selects the starting Building Block from the list and the diagram is drawn with this Building Block
+
+* Save the ID of the starting Building Block in the url"		New Feature	iteraplan Speedbird	22/Nov/16 5:12 PM	23/Nov/16 10:28 AM																																																																				

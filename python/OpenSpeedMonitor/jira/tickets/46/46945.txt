@@ -1,0 +1,1 @@
+Create abstract directive for select editing (editing handler)		46935	Sub-task	iteraplan PO	10/Sep/14 1:39 PM	29/Sep/14 10:26 AM																																																																				

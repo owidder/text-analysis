@@ -1,0 +1,65 @@
+Bulk Delete of ISRs fails under some conditions	"We received an error report that executing a bulk delete on a single ISR fails reproducibly. The stack trace is as follows:
+{noformat}
+[ERROR] 09-Dez-2011 15:24:17 [presentation.flow.FlowExceptionHandler] Exception thrown executing [AnnotatedAction@3b2312f9 targetAction = [EvaluateAction@7bb2b7c3 expression = businessObjectFrontendService.saveComponentModel(flowScope.memBean, id, flowRequestContext, flowExecutionContext), resultExpression = [null]], attributes = map[[empty]]] in state 'edit' of flow 'businessobject/start' -- action execution attributes were 'map[[empty]]'
+org.springframework.webflow.execution.ActionExecutionException: Exception thrown executing [AnnotatedAction@3b2312f9 targetAction = [EvaluateAction@7bb2b7c3 expression = businessObjectFrontendService.saveComponentModel(flowScope.memBean, id, flowRequestContext, flowExecutionContext), resultExpression = [null]], attributes = map[[empty]]] in state 'edit' of flow 'businessobject/start' -- action execution attributes were 'map[[empty]]'
+	at org.springframework.webflow.execution.ActionExecutor.execute(ActionExecutor.java:60)
+	at org.springframework.webflow.engine.support.ActionTransitionCriteria.test(ActionTransitionCriteria.java:82)
+	at org.springframework.webflow.engine.support.TransitionCriteriaChain.test(TransitionCriteriaChain.java:71)
+	at org.springframework.webflow.engine.Transition.canExecute(Transition.java:195)
+...
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.springframework.dao.InvalidDataAccessApiUsageException: deleted object would be re-saved by cascade (remove deleted object from associations): [de.iteratec.iteraplan.model.attribute.AttributeValueAssignment#64974]; nested exception is org.hibernate.ObjectDeletedException: deleted object would be re-saved by cascade (remove deleted object from associations): [de.iteratec.iteraplan.model.attribute.AttributeValueAssignment#64974]
+	at org.springframework.orm.hibernate3.SessionFactoryUtils.convertHibernateAccessException(SessionFactoryUtils.java:657)
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.convertHibernateAccessException(HibernateTransactionManager.java:793)
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doCommit(HibernateTransactionManager.java:664)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:754)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:723)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:393)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:120)
+... [AOP stuff]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy55.saveOrUpdate(Unknown Source)
+	at de.iteratec.iteraplan.presentation.dialog.BusinessObject.BusinessObjectFrontendServiceImpl.saveComponentModel(BusinessObjectFrontendServiceImpl.java:158)
+	at de.iteratec.iteraplan.presentation.dialog.BusinessObject.BusinessObjectFrontendServiceImpl$$FastClassByCGLIB$$891e99db.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:191)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:688)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:80)
+	at de.iteratec.iteraplan.businesslogic.common.SubscriptionsAdvice.saveComponentModelAdvice(SubscriptionsAdvice.java:150)
+	at sun.reflect.GeneratedMethodAccessor1064.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:65)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:89)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:621)
+	at de.iteratec.iteraplan.presentation.dialog.BusinessObject.BusinessObjectFrontendServiceImpl$$EnhancerByCGLIB$$e4afa6df.saveComponentModel(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.expression.spel.support.ReflectiveMethodExecutor.execute(ReflectiveMethodExecutor.java:69)
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:83)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:57)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getTypedValue(SpelNodeImpl.java:102)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:97)
+	at org.springframework.binding.expression.spel.SpringELExpression.getValue(SpringELExpression.java:78)
+	at org.springframework.webflow.action.EvaluateAction.doExecute(EvaluateAction.java:75)
+	at org.springframework.webflow.action.AbstractAction.execute(AbstractAction.java:188)
+	at org.springframework.webflow.execution.AnnotatedAction.execute(AnnotatedAction.java:145)
+	at org.springframework.webflow.execution.ActionExecutor.execute(ActionExecutor.java:51)
+	... 63 more
+Caused by: org.hibernate.ObjectDeletedException: deleted object would be re-saved by cascade (remove deleted object from associations): [de.iteratec.iteraplan.model.attribute.AttributeValueAssignment#64974]
+	at org.hibernate.impl.SessionImpl.forceFlush(SessionImpl.java:1230)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:188)
+{noformat}
+
+I could not yet reproduce the problem, but my guess is that it occurs under specific conditions only, regarding the data that is associated with the ISR."		Bug	iteraplan PO	19/Dec/11 12:55 PM	02/Jan/12 11:18 AM					hibernate									"29/Dec/11 3:04 PM;sip;This error occurs on some other places. For example, we have two building blocks (I tested with information system release). Both need a reference to the same attribute value (in my case, an enum attribute 'system size'). So isr1 has 'system size' = small and isr2 also has 'system size' = small. Now edit the first. Then delete the second. Go back to the first, remove an other attribute value, and save.
+
+The problem: When deleting, we have to remove all references manually. This happens in onBeforeDelete() in DAO's. But if some entities gets deleted by cascade or by deleteOrphaned()-methods, all references to this entity still exists. Within the next merge() of an other object, we try to save deleted entities again, which causes the error.
+
+Solving this is not so easy, because for deleting orphaned attribute values, we do not have an java object, where we can remove the references."	02/Jan/12 11:17 AM;bsi;The bulk update error doesn't occur anymore. The second problem that sip has reported is still reproducible (according to agu it could be solved later).																																																					

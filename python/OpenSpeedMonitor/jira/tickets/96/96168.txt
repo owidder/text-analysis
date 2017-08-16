@@ -1,0 +1,22 @@
+& im IS Namen gibt Probleme bei der Selektion in Attributfeldern	"Hallo,
+
+wir haben ein Informationssystem ""P&C-IDV""
+
+(property and casualty IDV) benannt.
+
+Allerdings wird es in den Suchfeldern z.B. ""Teil-Informationssystem von: ""
+
+nicht gefunden, wenn ich P&C eingebe.
+
+Die Suche nach / das eingeben von C-IDV findet es natürlich!
+
+Es liegt also am & im Namen."		Fault	iteraplan Support	15/Sep/16 7:15 PM	10/Oct/16 7:00 AM														"21/Sep/16 8:10 AM;cst;Sehr geehrter Herr Joachimsmeyer,
+
+vielen Dank für Ihre Anfrage.
+
+Der Vorgang konnte hier nachgestellt werden und wir im Moment geprüft. 
+Bei Antwort, werde ich Sie umgehend informieren.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "																																																						

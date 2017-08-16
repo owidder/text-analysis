@@ -1,0 +1,8 @@
+Create a README.txt for each customization	"Each customization folder should contain a README.txt including the following contents:
+* Intended purpose
+* Technical specifics
+* Responsible contact person (internal; consultant)
+* other technical details like customer's color codes, fonts, date formats, language choices ... (if existent)
+
+The mapping of renamed terms should be on top of the customized ""ApplicationResource*.properties"" file. 
+"		Task	iteraplan PO	07/Aug/13 11:26 AM	17/Jul/14 6:17 PM					customization									17/Jul/14 6:17 PM;fka;Done via wiki pages																																																						

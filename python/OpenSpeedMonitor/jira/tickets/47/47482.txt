@@ -1,0 +1,25 @@
+show filter for axis elements in legend	"addtion to legend
+
+spec see 307
+
+allocated 2 out of 8 SP"		New Feature	iteraplan PO	06/Mar/15 4:41 PM	09/Jun/15 5:05 PM														"01/Apr/15 10:27 AM;msr;All functionality split up into 387, 388, 389, 390
+estimated effort allocated to these tickets.
+
+*Summary:*
+Create a filter for axes elements.
+
+*As-Is:*
+There exists no filtering for axes elements.
+
+*To-Be:*
+Axes elements (if they are building block types and no attributes) can be filtered by enumeration, numeric, text or date attributes. Furthermore the axes elements can be filtered by attributes directly connected building block types (1-step connections) and by attributes of self-related building block types (self-relationship). For example:
+Technical Component as axis element can be filtered by attributes of Technical Components
+OR Technical Component as axis element can be filtered by attributes of Architectural Domains (e.g.)
+OR Technical Component as axis element can be filtered by attributes of successor Technical Components (e.g.)
+Please see the classical iteraplan system for concrete specification.
+
+*Affected parts of the system:*
+* Landscape diagram
+
+*Approach:* 
+Use the same context menu actions (""Show with ...""), the same logic, same url and the same legend. Filtering is only available, if an axis element is a Building Block."	21/Apr/15 4:47 PM;dasm;Verified (rev 983)	22/Apr/15 4:46 PM;tam;Reviewed. Ok.																																																				

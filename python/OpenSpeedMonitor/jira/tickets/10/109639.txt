@@ -1,0 +1,19 @@
+Wrong permission handling in saved query list for NCD diagram	"When NCD diagram has outer or inner type as attribute diagram cannot be loaded due permission.
+
+
+
+Steps to reproduce:
+
+1. Create new NCD diagram with attribute in outer or inner type and save it.
+
+2.Open ""Save query"" list and try to open this diagram."		Bug	iteraplan Thunderduck	25/Jan/17 12:00 PM	01/Feb/17 9:42 AM														"31/Jan/17 8:42 AM;mse;The bug is due to a change in the URI serialization between 5.4 and 5.5.
+
+
+
+* *NCD URI in 5.4*: #/ncd?featureName=%2Fncd&outerTypePersistentName=B11&C1=attribute
+
+* *NCD URI in 5.5*: #/ncd?featureName=%2Fncd&outerTypePersistentName=Complexity&outerType=attribute
+
+
+
+The problem will be analyzed in a bigger context in IPTS-518, so nothing to do here."																																																						

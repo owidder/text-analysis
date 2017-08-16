@@ -1,0 +1,15 @@
+X.509 certificate-based authentication does not initialize the user context	"When using cerificate-based authentication, the UserContext is not properly set up after authentication succeeded. The following stacktrace appears in the logs
+{noformat}
+08.06.2011 14:39:07 org.apache.catalina.core.ApplicationDispatcher invoke
+SCHWERWIEGEND: Servlet.service() for servlet jsp threw exception
+javax.servlet.jsp.JspException: Could not find bean 'userContext' in any scope.
+        at de.iteratec.iteraplan.presentation.tags.TagUtils.lookup(TagUtils.java:266)
+        at de.iteratec.iteraplan.presentation.tags.LinkToElementTag.doStartTag(LinkToElementTag.java:112)
+        at org.apache.jsp.jsp.Navigation_jsp._jspx_meth_itera_005flinkToElement_005f0(Navigation_jsp.java:176)
+        at org.apache.jsp.jsp.Navigation_jsp._jspx_meth_c_005fset_005f0(Navigation_jsp.java:144)
+        at org.apache.jsp.jsp.Navigation_jsp._jspService(Navigation_jsp.java:77)
+        at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+...
+{noformat}
+"		Bug	iteraplan PO	09/Jun/11 1:41 AM	21/Jun/11 2:29 PM					authenication																																																															

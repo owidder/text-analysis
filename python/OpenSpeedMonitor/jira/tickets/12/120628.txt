@@ -1,0 +1,1 @@
+[Geb] PhantomJS durch Chrome ersetzen	Die Geb-Tests sollen in Zukunft statt im PhantomJS in einem headless Chrome laufen. Dafür muss der auf dem Bamboo verwendete Docker-Container entsprechend umgebaut werden.		Task	OpenSpeedMonitor	05/May/17 11:50 AM	16/Jun/17 3:02 PM														16/Jun/17 3:02 PM;sbr;Duplicates [IT-1682]																																																						

@@ -1,0 +1,4 @@
+Rel2-2015: Improvements on legend	"+++++++++++++++++
+POSTPONED AFTER APRIL 2015
++++++++++++++++++
+Add improvements on legend (Tanyas idea with number badges, gray-scale printing)"		New Feature	iteraplan PO	04/Nov/14 8:37 AM	13/Jul/15 9:52 AM					legend									13/Jul/15 9:52 AM;sfe;not in our scope for now																																																						

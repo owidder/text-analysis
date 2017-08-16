@@ -1,0 +1,17 @@
+Last Modification Time for newly created user has wrong format	"# Navigate to Administration - Users.
+
+ # Add ""Last Modification Time"" column to grid.
+
+ # Create new user
+
+
+
+Result: newly added row has ""Last Modification Time"" in wrong format
+
+
+
+ 
+
+
+
+!new_user_time.png!"		Bug	iteraplan PO	20/Jun/17 12:21 PM																																																																					

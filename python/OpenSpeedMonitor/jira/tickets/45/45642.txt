@@ -1,0 +1,14 @@
+Display error in filter-query forms of loaded Landscape diagrams	"Example:
+# Go to Landscape Diagram.
+# Choose Information Systems as content.
+# Click ""Filter"" for content and add query extension ""Properties of assigned business mappings"".
+# In the query form select Property ""name"" for Business Processes to be equal (operator) to an arbitrarily selected entry of the according dropdown choice.
+# Send query and use results.
+# Choose arbitrary column and row associations.
+# Save diagram.
+# Reset diagram form (context actions: reset).
+# Load the saved diagram and change to the content filter page again.
+
+=> Result as in attached screenshot: The chosen value for ""name"" of the Business Processes is not displayed and the dropdown box disabled. The query result itself is still correct, though.
+
+When changing the operator, the form is refreshed and shows the value again."		Bug	iteraplan PO	12/Mar/13 1:59 PM	30/Dec/15 2:32 PM					diagram	landscape	queryform																																																													

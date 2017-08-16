@@ -1,0 +1,13 @@
+Page doesn't refresh when NCD Date Filter is active	"How to reproduce:
+
+* in NCD right click on inner box -> ""Show with date property""
+
+* take any filter you like
+
+* change at least one date with the appearing datepickers
+
+* refresh the page (F5)
+
+
+
+Result should look like the posted picture in this ticket. "		Bug	iteraplan PO	26/Oct/15 8:14 AM	28/Oct/15 10:53 AM					Datepicker	DEFECT	NCD	URL						28/Oct/15 9:36 AM;lwi;as agreed with SFE no unit tests. reason: RELEASE 																																																						

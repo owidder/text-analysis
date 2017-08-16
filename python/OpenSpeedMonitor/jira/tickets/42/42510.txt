@@ -1,0 +1,7 @@
+Persistenz Anbindung im EventResult	"Die Anbindung, mit der gemessen wurde muss im de.iteratec.osm.result.EventResult persistiert werden. Hierfür wird ein ConnectivityProfile lazy an das EventResult gehängt. Beim Persistieren von Results muss dieses Attribut gesetzt werden. 
+
+Bei custom connectivites steht das neue Attribut customConnectivityName in einem String-Feld des EventResults. 
+
+
+
+ConnectivityProfiles müssen immutable werden. Sind diese einmal erstellt dürfen sie nicht mehr verändert werden. Zudem bekommen sie ein active-flag, damit man veraltete aus der Anzeige nehmen kann."		Task	OpenSpeedMonitor	03/Jun/15 10:55 AM	24/Jun/15 6:05 PM																																																																				

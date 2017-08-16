@@ -1,0 +1,59 @@
+Layout for discrete positioning (enum - enum)	"*Philosophy:*
+
+As less as possible whitespace by minimising quadrants.
+
+
+
+*Summary:*
+
+Implement new layout.
+
+
+
+*Implementation Details:*
+
+* The length of all sides is the same; we calculate the biggest side and take it for all others
+
+* All quadrants are quadratic (and therefore the diagram is no longer quadratic)
+
+* The size of quadrants (and of the whole diagram) is dynamically depending on the number of bubbles
+
+* The biggest bubble range defines the size of the quadrant, i.e.
+
+** discrete positioning (enum-enum):
+
+*** -the size is ignored, e.g. if you have 5 big bubbles in one cell and 6 small bubbles in another cell, please take still the 6 small bubbles and the 5 big bubbles will overlap-
+
+*** we use the average size between minimal and maximum size
+
+*** check maximum number of bubbles in all quadrants
+
+*** set size of quadrant so, that this maximum number of bubbles *in an average size* fits in
+
+*** exception: if maximum number of bubbles is higher than 100, take 100 bubbles *in an average size* for the size of quadrant
+
+
+
+* The size of bubbles is absolutely defined
+
+
+
+* Url: nothing to do
+
+
+
+*UI:*
+
+* Legend: nothing to do
+
+* Toolarea: nothing to do
+
+
+
+*Two open points for the sprint Planning:*
+
+
+
+*  Bubble min/max size, size of cell (number of bubbles in the cell)
+
+*  Scaling min/max limits"	93345	Sub-task	iteraplan Speedbird	17/Aug/16 9:57 AM	23/Aug/16 2:20 PM														23/Aug/16 2:16 PM;roia;Reviewed: https://iteraweb.iteratec.de/fisheye/cru/IP-14																																																						

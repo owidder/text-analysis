@@ -1,0 +1,1 @@
+Quick Search does not support language settings	The search field still shows "Quick Search" after choosing language other than English.		Bug	iteraplan PO	28/Oct/13 4:28 PM	06/Nov/13 11:20 AM					language	search								06/Nov/13 11:20 AM;gph;Looks good.	23/Jan/14 5:44 PM;fka;Reviewed																																																					

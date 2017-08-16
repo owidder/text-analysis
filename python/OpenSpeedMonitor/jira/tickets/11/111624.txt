@@ -1,0 +1,11 @@
+Special characters in enum literals are displayed wrongly	"_Reproduce:_
+
+# Create a new enum literal in an enum attribute, or rename an existing one, to contain '<>' characters
+
+# Assign that literal to a building block
+
+# Display that building block in the list view of the interactive client
+
+
+
+_Result:_ See screenshot"		Bug	iteraplan PO	13/Feb/17 10:01 AM	14/Feb/17 10:48 AM																																																																				

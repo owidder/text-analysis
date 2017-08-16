@@ -1,0 +1,41 @@
+DATA-Tab UI: switch to Structure View, scroll bar	"*Scenario:*
+
+ A User with small browser window (width<1100px) doesn't see the switch-button to Structure View, because it is hidden on the right. If the screen is not wide enough for all tiles, tiles are hidden, too The Problem: There is no way they can be reached. The users can only reach them by making the browser window wider. 
+
+ *New:*
+
+ Switch-button for structure view is always available.
+
+ User can also scroll from left to right using the horizontal scroll-bar on the bottom of the page.
+
+
+
+*TO DO:*
+
+ # The switch button should be above the tiles, floating at the right border of the tiles. Look at the attached ppt. The top margin between the tabs and the tiles should be constantly 50px (see if that size fits).
+
+ # Please insert the same distance between the upper border and the content in start-, visualize-, report-, admin-tabs.
+
+ # Add a horizontal scroll bar in all tabs, when screen becomes too narrow for all tiles.
+
+ # Please make sure that the Report tiles really have the same distance as the others (at the moment they have a wider top-margin or padding)
+
+
+
+*Additional fix*
+
+R.6.1 changes position when vertically scrolling"		New Feature	iteraplan Speedbird	26/Jun/17 1:18 PM	26/Jul/17 12:43 PM					UI									"24/Jul/17 2:52 PM;dmkh;Review is done (Chrome and IE):
+
+ *1, 2, 4)* Height is not 50px on every tab (e.g. on Data tab it is 57px and on Report tab even 65px, see attached screenshots ""_Height..._""). Please, unify this for all tabs. (Fixed)
+
+
+
+*3)* Narrow screens are still breaking body of home page (see corresponding screenshot above)
+
+
+
+*Additional fix)* Bottom border is not displayed as under the tabs section. It is fixed by removing CSS _display property_ from md-tabs element (see attached GIF) (Fixed)
+
+
+
+Please, doublecheck if this problems will not be reproduced in all browsers"																																																						
