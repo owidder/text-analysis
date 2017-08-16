@@ -1,3 +1,0 @@
-Beim Anlegen/Aktualisieren von Skripten werden die gemessenen Schritte/Seiten nicht zuverlässig ermittelt	"z.B. 
-
-https://iteraspeedmonitor.otto.wpt.iteratec.de/script/edit/243"		Bug	OpenSpeedMonitor	26/May/15 2:31 PM	25/Feb/16 6:27 PM																																																																				

@@ -1,1 +1,0 @@
-Job erweiterte Einstellungen firstViewOnly umstellen funktioniert nicht	In der Datenbank wird der Wert beim Job nicht gesetzt, wenn die Checkbox im Front-End sich ändert. Der Wert des Jobs bleibt beim Default (dieser ist true)		Bug	OpenSpeedMonitor	21/Jun/17 2:47 PM																																																																					

@@ -1,9 +1,0 @@
-1.2.1 Test Database-Scripts	"All 3 Database management Systems - preferrable with realistic Data:
-
-
-
-https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-1.2.1Skriptetesten"		Task	iteraplan Speedbird	13/Jun/17 4:55 PM	21/Jun/17 10:26 AM														"16/Jun/17 6:39 PM;tsc;What's left?
-
-- test Oracle db init script
-
-- test Oracle migration script (db.reset with 5.5 branch, then upgrade script)"																																																						

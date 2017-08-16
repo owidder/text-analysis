@@ -1,1 +1,0 @@
-Build-Artefakte auf Fileserver kopieren	3.6 siehe: https://iteraweb.iteratec.de/confluence/pages/viewpage.action?title=Release-Prozess&spaceKey=ITPL#Release-Prozess-3.6Build-ArtefakteaufFileserverkopieren	92213	Sub-task	iteraplan Quickfox	16/Aug/16 9:38 AM	19/Aug/16 4:41 PM																																																																				

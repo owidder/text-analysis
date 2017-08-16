@@ -1,3 +1,0 @@
-Timeout für Ajax Spider	"Der Ajax Spider hat einen internen Timeout. Dieser ist fest auf einen Wert (1,5h?) gesetzt und bricht den Spider Vorgang mit der Meldung ""time is up"" ab. 
-
-Dieses Timeout sollte am besten deaktiviert werden damit der Spider den vollen Umfang der Seite spidert"		Bug	secureCodeBox	06/Oct/14 12:04 PM	14/Nov/14 11:43 AM														10/Oct/14 10:47 AM;bpf;Keine Prio. Wird bei der Spiderevaluierung behandelt.	14/Nov/14 11:43 AM;bbr;Ist obsolete da ein neues Spiderkonzept in Arbeit																																																					

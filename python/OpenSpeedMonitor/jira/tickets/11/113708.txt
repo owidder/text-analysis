@@ -1,1 +1,0 @@
-Minor adjustments on project setup	Some small improvements which came to the light of day during the latest dev environment setup.		Task	iteraplan Thunderduck	03/Mar/17 9:18 AM	06/Mar/17 12:50 PM																																																																				

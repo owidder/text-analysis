@@ -1,3 +1,0 @@
-Date pickers		56430	Sub-task	iteraplan PO	08/Sep/15 1:20 PM	16/Sep/15 11:04 AM														14/Sep/15 4:48 PM;dam;date picker is integrated but it is not clear which date formate the filter needs.	"15/Sep/15 8:06 AM;isc;I get an error, when I select a date attribute:
-
-An exception occured: [ng:areq] Argument 'dateRangeFilterController' is not a function, got undefined"	16/Sep/15 9:00 AM;dam;DatePicker workes. But it still needs a solution what to do in ifdConfiguration with dateParseFn()																																																				

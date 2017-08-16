@@ -1,9 +1,0 @@
-Add reactor link to classic client	In classic client, visualization menu, add a menu entry consisting of a link to the graphics reactor in the interactive client.		New Feature	iteraplan PO	21/Oct/15 9:28 AM	22/Oct/15 3:34 PM					reactor									"22/Oct/15 8:02 AM;lwi;Edited the docs under http://www.iteraplan.de/doc/display/iteraplan51/New+Client
-
-
-
-added:
-
-
-
-Access the new Reactor feature directly over the list entry ""Reactor"" in the ""Visualisations"" dropdown menu. This entry is only shown if the user has the permission to use it."																																																						

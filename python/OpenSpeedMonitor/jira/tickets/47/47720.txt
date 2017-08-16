@@ -1,8 +1,0 @@
-Different  row width after sorting columns  for Mozilla Firefox 	"Steps to reproduce: 
-1.  Go to List view page with Interface as content type
-2. Add all available columns
-3. Start to sort  ""Interface direction"" and ""data exchange""
-Actual: Different  row width after sorting columns"	47647	Sub-task	iteraplan PO	27/Apr/15 10:36 AM	05/May/15 2:09 PM													"Workspace: Windows 8.1
-revision: 1034
-Browser: Mozilla Firefox 37.0.2"	30/Apr/15 4:06 PM;alvo;Can't reproduce in FF 37.0.1 Ubuntu 64 bit	"30/Apr/15 4:21 PM;dasm;Probably this issue was fixed under other ticket
-Verified (rev 1078)"																																																					

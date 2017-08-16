@@ -1,1 +1,0 @@
-Build bugfix release 3.0.4	Build a bug fix release 3.0.4. All relevant changesets have been merged already, so it's mainly a matter of updating documentation and metadata.		Task	iteraplan PO	20/Dec/12 4:23 PM	21/Dec/12 3:44 PM					release																																																															

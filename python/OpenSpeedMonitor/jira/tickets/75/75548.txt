@@ -1,9 +1,0 @@
-Erweiterung um False / Positive Handling	"Ziel dieses Leistungspaketes ist die Umsetzung einer grafischen und klickbaren False Positive Auswertung.
-
-
-
-Aktuell unterstützt die secureBox eine über JSON pflegbare False Positive Auswertung an. Wir bieten in diesem Paket eine entsprechende Erweiterung der secureBox um eine einfache grafi- sche Auswertungskomponente an.
-
-
-
-Diese dient als erste prototypische Umsetzung für ein mögliches umfangreicheres Meta- Reporting mit False Positive Markierung, siehe Kapitel 1.5."		Epic	secureCodeBox	03/Mar/16 3:28 PM						OTTO																																																															

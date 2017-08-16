@@ -1,3 +1,0 @@
-Tables are to small	I add 5 attributes to association IS-BO. When editing information systems, it could not display all of my attributes.		Bug	iteraplan PO	16/Apr/12 2:03 PM	30/Apr/12 9:07 AM														26/Apr/12 1:46 PM;kvo;Might be caused by the same problem as in ITERAPLAN-663	27/Apr/12 5:38 PM;gph;Removed class "collapse", which has the style property "overflow-x: hidden". Didn't make sence anyway, to include CSS-Classes "collapse" and "in" in the same element, because accordion toggles between these two.	"30/Apr/12 9:07 AM;mba;Works as expected now:
- * Table content size gets smaller, the more columns it contains
- * Inner Box does not break borders of wrapper"																																																				

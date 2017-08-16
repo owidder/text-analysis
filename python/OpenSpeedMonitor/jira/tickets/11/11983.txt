@@ -1,5 +1,0 @@
-Applikationsstart: scheduleAllActiveJobs korrigieren	"de.iteratec.isj.JobProcessingService.scheduleAllActiveJobs() startet alle aktiven Jobs. Dies ist für den ersten Anwendungsstart sinnvoll.
-Beim nächsten Anwendungsstart laufen bereits Jobtrigger (nach Umsetzung von IT-327) und durch den Aufruf von scheduleAllActiveJobs() werden diese rescheduled.
-Sollten sie gescheduled werden, bevor Quartz die alten Trigger wiederhergestellt hat, werden die alten Trigger überschrieben und dadurch geht ihre MisfireHandlingInstruction verloren.
-
-Lösung: scheduleAllActiveJobs() muss erweitert werden. Vor dem schedulen jedes aktiven Jobs muss geprüft werden, ob für diesen bereits ein Trigger vorliegt."		Task	OpenSpeedMonitor	27/Feb/14 5:31 PM	28/Feb/14 11:32 AM																																																																				

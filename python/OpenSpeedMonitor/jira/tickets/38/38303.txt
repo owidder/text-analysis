@@ -1,5 +1,0 @@
-Jobliste: Header-Infos kompakter darstellen	"* Zeile ""Markierte Jobs ..."" inline mit dem Button ""Job anlegen""
-
-* Information "" Die letzten Ausführungen der gelisteten Jobs werden automatisch aktualisiert. "" nur noch bei Klick auf Info-Fragezeichen anzeigen. Info-Icon rechts
-
-* Info-icon statt als Anchor als icon mit onclick-event "		Task	OpenSpeedMonitor	20/Apr/15 9:43 AM	20/Apr/15 2:49 PM														20/Apr/15 2:49 PM;rkr;Das Pop-Up vom Info-Icon wird von groovy verwaltet und gerendert. Habe es deswegen als Anchor belassen, aber den Unterstrich ausgeblendet.																																																						

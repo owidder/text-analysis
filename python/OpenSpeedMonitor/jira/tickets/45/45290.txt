@@ -1,2 +1,0 @@
-Sorting of Attributes in Attribute Groups	"While sorting or re-ordering attributes within an attribute group, after pressing save the attributes are still in the original order.
-Expected: It should be possible to rearrange order of attributes and persist this order"		Bug	iteraplan PO	06/Dec/11 9:35 AM	07/Dec/11 12:42 PM														07/Dec/11 12:42 PM;lci;Works fine now.																																																						

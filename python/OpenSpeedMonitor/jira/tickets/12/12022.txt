@@ -1,4 +1,0 @@
-Skripteditierung: Letzte Warnung wird nicht korrekt angezeigt.	"Manchmal wird für die letzte Warnung in einem Skript oder die Warnung in der letzten Codezeile der Tooltip nicht als Bootstrap-Popover angezeigt, sondern als normaler Tooltip aus dem title-Attribut, der dann HTML-Code enthält:
-{code}
-<ul><li>Dieses setEventName-Statement ...
-{code}"		Bug	OpenSpeedMonitor	24/Mar/14 7:10 PM	27/Mar/14 12:31 PM														27/Mar/14 12:31 PM;drieger;Wahrscheinlich traft der Fehler nur durch die Änderung von HTML/CSS/Javascript-Ressourcen bei der Entwicklung auf. Konnte ihn nicht reproduzieren.																																																						

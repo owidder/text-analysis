@@ -1,9 +1,0 @@
-Reactivate attributes-page and pin Toplevel + Default ATG on the left side	"1 .Reactivate attributes-page (href: '#/attributeGroups' in {{admin-tiles.js}}
-
-
-
-2. and pin Toplevel (first position) + Default Attribute Group(second position) on the left side
-
-
-
-3. {color:red}UPDATE:{color} Remove ""Drag-Symbol"" for Toplevel and Default Attribute Group"		New Feature	iteraplan Speedbird	17/Feb/17 3:44 PM	22/Feb/17 1:25 PM														22/Feb/17 1:25 PM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-382																																																						

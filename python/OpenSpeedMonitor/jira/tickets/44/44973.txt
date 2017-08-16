@@ -1,3 +1,0 @@
-Hibernate query exceeds Oracle SQL limitations for IN clauses	"The query executed by {code}GeneralBuildingBlockDAOImpl#LoadBuildingBlocksCallback{code} fails on Oracle databases if more than 1000 identifiers are passed in. The problem is that Oracle doesn't like more than 1000 elements in IN clauses (see Restrictions.in in code)
-
-We have a generic helper method somewhere which makes sure that such long queries are properly broken into smaller pieces (dunno where a.t.m.)."		Bug	iteraplan PO	26/May/11 5:06 PM	10/Jun/11 2:55 PM					database	oracle																																																														

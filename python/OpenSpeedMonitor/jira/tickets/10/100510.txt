@@ -1,1 +1,0 @@
-Modaler Dialog lässt sich nicht mehr öffnen	Ein Klick auf _Menu >> Administration >> Personalize application_ friert die Anwendung ein und man kann nur die Seite neu laden.		Bug	OpenSpeedMonitor	25/Oct/16 10:53 PM	01/Nov/16 10:37 AM																																																																				

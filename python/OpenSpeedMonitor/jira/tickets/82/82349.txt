@@ -1,3 +1,0 @@
-Technical and architecture questions related to the current implementation of Iteraplan	"This is the task where we're going to create subtasks with questions, related to the current implementation and architecture of Iteraplan. 
-
-I believe, this would be good starting point for the *""Questions and Answers""* page in the wiki, we've discussed earlier."		Task	iteraplan Speedbird	28/Apr/16 11:57 AM	05/Jul/16 8:32 PM					newClient									05/Jul/16 8:32 PM;msr;Too late to implement this task as this diagram is almost finished																																																						

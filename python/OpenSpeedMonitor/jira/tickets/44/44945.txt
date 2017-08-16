@@ -1,1 +1,0 @@
-Excel import template file unspecific regarding comma-separation of lists	E.g. for subscribers, they shall be separated by semi-colons (;) instead of comma. This could be appended in the comment of the Excel file.		Improvement	iteraplan PO	19/May/11 7:46 AM	06/Sep/11 2:56 PM					excel	import																																																														

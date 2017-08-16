@@ -1,5 +1,0 @@
-Skeleton	"all libs
-
-
-
-uses virtual repeat"		New Feature	iteraplan PO	10/May/16 10:52 AM	25/May/16 11:29 AM														25/May/16 11:29 AM;mwe;Done in [ITERAPLAN-4562] and [ITERAPLAN-4563]																																																						

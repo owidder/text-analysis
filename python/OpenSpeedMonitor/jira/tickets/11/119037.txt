@@ -1,1 +1,0 @@
-Reset view button for role-list	Implement the reset-view-button for the roles-list. Position it right next to the counter "Showing XXX roles"		Improvement	iteraplan Speedbird	19/Apr/17 1:38 PM	04/May/17 4:12 PM																																																																				

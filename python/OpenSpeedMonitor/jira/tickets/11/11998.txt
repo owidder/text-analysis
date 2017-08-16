@@ -1,2 +1,0 @@
-Jobliste beschleunigen	"Die Jobliste lädt aktuell alle Jobs aus der Datenbank und braucht damit zum Rendern ca. 1,3 Sekunden.
-Es sollen nur noch die aktiven Jobs synchron geladen werden. Bei document.ready kann dann asynchron die Liste aller Jobs abgerufen werden, welche im DOM dann die erste Liste ersetzt. "		Improvement	OpenSpeedMonitor	18/Mar/14 4:38 PM	18/Mar/14 6:11 PM																																																																				

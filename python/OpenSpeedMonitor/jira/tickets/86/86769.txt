@@ -1,7 +1,0 @@
-BatchActivity werden nicht abgebrochen	Wenn eine BatchActivity nach einer Zeit t kein ProgressUpdate erhalten hat, soll die Activity als abgebrochen und nicht mehr laufend angezeigt werden		Improvement	OpenSpeedMonitor	08/Jun/16 4:06 PM	10/Jun/16 12:26 PM														"08/Jun/16 5:40 PM;bwo;Die BatchActivites laufen aktuell in einem anderen Thread. Ursprünglich kam die Idee daher, dass die Activites selbst nicht durch die BatchActivity ausgebremst werden sollen.
-
-Der Aufwand und die zusätzliche Komplexität dürften jedoch in keinem guten Verhältnis zu dem Performance-Gewinn sein, falls dieser überhaupt Messbar ist.
-
-
-
-Ich habe mit Nils abgesprochen, dass wir auf die extra Threads verzichten. Stattdessen rufen wir innerhalb des Updaters direkt die BatchActivity auf und speichern ohne flush. Da die eigentlich Aktivitäten in Batches laufen und eh mit jedem Durchlauf die Session flushen, wird hier eh dafür gesorgt, dass die BatchActivity direkt mit persistiert wird. Die done Methode wird so umgebaut, dass sie nun final mit einem flush das Objekt speichert."	10/Jun/16 12:26 PM;bwo;Die BatchActivites sollen nicht automatisiert abgebrochen werden.																																																					

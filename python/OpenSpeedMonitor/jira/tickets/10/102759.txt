@@ -1,9 +1,0 @@
-Backward navigation from diagram to 2nd tab, from admin to 3rd tab, ...	"*Summary:*
-
-Save the last active tab of the homescreen. As soon as user clicks on the ""iteraplan-icon"" the last active tab is shown.
-
-Save the last active tab as user setting.
-
-Use locale as template."		New Feature	iteraplan Speedbird	16/Nov/16 4:38 PM	05/Dec/16 2:53 PM														"05/Dec/16 1:34 PM;roia;Review and some questions: https://iteraweb.iteratec.de/fisheye/cru/IP-205#CFR-35692
-
-"																																																						

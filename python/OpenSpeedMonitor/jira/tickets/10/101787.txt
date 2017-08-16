@@ -1,1 +1,0 @@
-Navigate back to parent list	Implement link on Single Element page to navigate back to parent list		Improvement	iteraplan Speedbird	07/Nov/16 2:59 PM	21/Nov/16 6:09 PM														21/Nov/16 6:08 PM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-187																																																						

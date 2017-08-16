@@ -1,5 +1,0 @@
-Error page when attempting to import XMI bundle with insufficient permissions	"When attempting to import an XMI bundle where the user does not have sufficient read/write permissions, a general error page is shown.
-As user I want to see a meaningful error message in this case."		Bug	iteraplan PO	02/Aug/13 4:55 PM	20/Aug/14 10:10 AM					import	XMI								07/Aug/14 4:41 PM;fka;Is this still applicable?	"20/Aug/14 10:10 AM;sfe;This doesn't seem to be applicable anymore.
-
-_Tested:_ Import containing Architectural Domains and changes to Business Domains as user without any permissions for Architectural Domains and only Read, but no Update/Create/Delete permissions for Business Domains
-_Result:_ There were no issues at all: Import showed ""no changes"""																																																					

@@ -1,1 +1,0 @@
-CSI > Dashboard > Tabellendarstellung: Überschriften scrollen weg	CSI > Dashboard > Tabellendarstellung: Die Überschriften scrollen weg.		Bug	OpenSpeedMonitor	18/Feb/15 2:17 PM	20/Feb/15 11:14 AM																																																																				

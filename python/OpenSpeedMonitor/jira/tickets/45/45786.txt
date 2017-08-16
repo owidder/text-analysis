@@ -1,6 +1,0 @@
-Masterplan diagram - some date intervals are not labelled the same way	"Create the masterplan diagram for level 1 IS and choose productive from/until, development interval and replacement interval as time intervals. Create masterplan diagram. Some date intervals are shown differently than others.
-
-The bar in the masterplan diagram shown for productive from/until shows the name of the IS
-The bars in the masterplan diagram  shown for development interval and replacement interval show the name of the interval
-
-This should be harmonized, e.g. my proposal: always show interval name as text in the bars."		Bug	iteraplan PO	21/Jun/13 2:05 PM	26/Jun/13 11:32 AM					dateinterval	masterplan																																																														

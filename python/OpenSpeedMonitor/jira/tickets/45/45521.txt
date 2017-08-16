@@ -1,5 +1,0 @@
-Full-text search strange results	"Full-text search delivers strange results.
-Searching for ""13"" gives back OracleDB but without any visible reason (also missing ""found in"").
-See attached Screenshot.
-Additionally it was not possible to search for ""suse"" or ""SUSE"" and get back the TechnicalComponent ""Linux# SUSE Linux"".
-Created the search indexes just before, and rest of results is ok -> please clarify"		Bug	iteraplan PO	03/May/12 6:31 PM	05/Jul/12 11:39 PM					full-text	search								05/Jul/12 11:39 PM;kvo;cannot reproduce with new search																																																						

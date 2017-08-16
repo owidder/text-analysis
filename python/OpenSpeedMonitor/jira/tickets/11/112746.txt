@@ -1,9 +1,0 @@
-Editor for last modification user can be opended in List-View for relations columns	"Go to the Information System List and add columns to a relation (e.g. Isr-Bo)
-
-add the column for the last modification user in the relation.
-
-
-
-For this column the editor can be opened. (But changing anything leads to an error at the server).
-
-Expected behavior: The editor can not be opened"		Bug	iteraplan Speedbird	23/Feb/17 2:26 PM	23/Mar/17 5:36 PM														23/Mar/17 5:36 PM;dmkh;Review is done																																																						

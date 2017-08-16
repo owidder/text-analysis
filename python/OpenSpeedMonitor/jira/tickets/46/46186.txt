@@ -1,9 +1,0 @@
-Nesting-Cluster-Generation leads to stackoverflow for large-scale data constellations	When using > 1500 inner Elements, I get a stackoverflow error on generation of a nesting cluster.		Bug	iteraplan PO	22/Oct/13 1:16 PM	22/Oct/13 10:07 PM					nesting									"22/Oct/13 5:09 PM;bra;fixed by not passing the filter to the iteraQl Parser which fails due to stackoverflow when parsing a lot of predicates composed with or (as the nesting cluster does).
-Instead a predicate, checking against all ids in question is directly instantiated."	22/Oct/13 5:53 PM;kgo;Please test with 32 bit Java.	"22/Oct/13 9:57 PM;psc;Checked again with same customer data and same query constellation. 
-Stackoverflow error does no longer occur. Nesting Cluster diagram is generated quickly.
-Code look clean from my perspective."	22/Oct/13 10:07 PM;psc;@Steffen: Since I already had the necessary test-setup in place, I performed the test myself. Could you please have a second look on the code and - if you agree - resolve the issue? Thanks.	"23/Oct/13 7:25 PM;sry;As far as I can tell, these changes are meaningful and correct. In order to help me understand the code I did a few local refactorings, decomposing long statements into smaller steps and extracted the Predicate instantiation.
-
-If Bernhard could confirm that my changes are harmless, I can close this ticket afterwards.
-
-EDIT: During review I wondered whether it wouldn't be more meaningful to work with a Set of IDs, not a List. This could make searching the collection faster. Should be clarified before closing this issue."	"24/Oct/13 1:31 PM;bra;refactoring seem fine.
-using set instead of list now"																																																	

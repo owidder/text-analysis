@@ -1,4 +1,0 @@
-Report "Fulfillment of business objectives" is not working in latest demo data	"See attached log.
-
-
-Reproduce by running the saved query (diagrams => cluster diagram => fulfillment of business objectives"""		Bug	iteraplan PO	05/Jul/11 6:41 PM	06/Jul/11 10:33 AM					reports																																																															

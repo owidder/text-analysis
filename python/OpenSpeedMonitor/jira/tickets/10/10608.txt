@@ -1,1 +1,0 @@
-Improvement der Cleanup-Scripts	Der Cleanup läuft mit 2h zu lange		Improvement	OpenSpeedMonitor	18/Oct/13 1:40 PM	18/Oct/13 6:28 PM														18/Oct/13 1:42 PM;rhe;Geparkt, Testrun ausstehend!	18/Oct/13 6:28 PM;rhe;Evaluation hat keine zeitliche Verbesserung gebracht																																																					

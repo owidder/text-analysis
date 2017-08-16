@@ -1,1 +1,0 @@
-Server: Create custom handler for logout without redirects		102753	Sub-task	iteraplan Speedbird	06/Dec/16 3:55 PM	20/Dec/16 12:25 PM														20/Dec/16 11:46 AM;mada;Changes for this ticked was committed in 26532 SVN revision.	20/Dec/16 12:25 PM;ants;Review done in scope of https://iteraweb.iteratec.de/jira/browse/IPTS-331																																																					

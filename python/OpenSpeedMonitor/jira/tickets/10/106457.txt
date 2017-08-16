@@ -1,9 +1,0 @@
-Long names are not wrapped in diagram cells of IFD	"*Summary:*
-
-Long names are not wrapped (see attached screenshot).
-
-
-
-Please add wrapping to all cells in the diagram and optionally tooltips (discuss with Fabian if needed)"		Bug	iteraplan Speedbird	22/Dec/16 6:58 PM	02/Feb/17 2:17 PM														"02/Feb/17 2:17 PM;mada;Review done
-
-https://iteraweb.iteratec.de/fisheye/cru/IP-326#CFR-38518"																																																						

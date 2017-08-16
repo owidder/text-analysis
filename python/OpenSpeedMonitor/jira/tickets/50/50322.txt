@@ -1,5 +1,0 @@
-Kundenzufriedenheits-Werte werden in Result-Dashboard falsch angezeigt	"Hier ist die Einheit der Kundenzufriedenheits-Achse %.
-
-Die Werte werden aber zwischen 0 und 1 angezeigt.
-
-So lassen sich die Werte nicht sinnvoll anzeigen. Diese müssen, wenn es vom Typ her _percentages_ sind mit 100 multipliziert werden. Dies funktionierte definitiv auch schon mal."		Bug	OpenSpeedMonitor	09/Jul/15 3:24 PM	23/May/16 5:29 PM														25/Feb/16 4:29 PM;bka;In der aktuellen Version funktioniert es. Evtl ist das Ticket nicht mehr aktuell?(s.Screenshot)	23/May/16 5:29 PM;nku;veraltet																																																					

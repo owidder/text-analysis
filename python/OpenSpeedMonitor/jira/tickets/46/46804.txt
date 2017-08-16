@@ -1,8 +1,0 @@
-Implement footer design		46774	Sub-task	iteraplan PO	06/Aug/14 5:37 PM	18/Aug/14 4:25 PM														12/Aug/14 11:10 AM;sepr;Back Inprogress to change elements sizes for 1024px screen	"18/Aug/14 4:25 PM;wfr;OK
-
-Tipp: You can set the controller of a custom directive with the ng-controller field in the controller definition. 
-
-
-
-
-"																																																					

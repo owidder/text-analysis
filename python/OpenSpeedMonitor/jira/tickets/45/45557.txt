@@ -1,2 +1,0 @@
-Composite Diagrams require write permission to execute	"Users with only read permissions for all building block types currently cannot execute composite diagram reports.
-At least one update permission for an arbitrary building block type is needed."		Bug	iteraplan PO	22/Jun/12 11:58 AM	26/Apr/13 7:43 PM					composite	diagram	permissions							13/Aug/12 10:51 AM;kvo;Composite will get replaced by new dashboard functionality -> wontfix																																																						

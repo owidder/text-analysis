@@ -1,7 +1,0 @@
-Wrong value on the range slider	"Steps to reproduce:
-1. Go to LSD
-2. Use filtering by ""Value added""
-3. Select range from 4 to 8
-Actual: The range slider shows wrong value
-Expected: The range slider should shows current range"	47576	Sub-task	iteraplan PO	21/Apr/15 10:40 AM	22/Apr/15 4:07 PM													"Workspace: Windows 8.1
-revision: 971"	22/Apr/15 4:03 PM;sepr;Duplicates IPNINE-491																																																						

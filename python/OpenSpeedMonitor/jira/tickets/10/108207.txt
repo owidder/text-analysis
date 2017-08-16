@@ -1,7 +1,0 @@
-First name in IS list is undefined	"After refreshing or first time clicking into the Information System list view, the first name of the list is always undefined. If you do any action (scrolling, clicking on the name etc) the name appears as usual.
-
-
-
-RECENTLY: Name is undefined
-
-EXPECTED: Name is shown immediatly"		Bug	iteraplan Thunderduck	12/Jan/17 10:50 AM	16/Jan/17 2:33 PM																																																																				

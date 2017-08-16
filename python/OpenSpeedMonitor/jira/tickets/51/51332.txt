@@ -1,5 +1,0 @@
-Datepicker 	"Auf dem EventResultDashboard wird folgender Fehler ausgegeben:
-
-Uncaught TypeError: $(...).datepicker is not a functioninitDatepicker @ osm-date-time-picker.js?compile=false:34doOnDomReady @ showAll.js?compile=false:24(anonymous function) @ showAll:2505
-
-"		Bug	OpenSpeedMonitor	20/Jul/15 10:06 AM	20/Jul/15 1:13 PM														20/Jul/15 1:13 PM;nku;bootstraps datepicker fehlte schlicht noch																																																						

@@ -1,3 +1,0 @@
-PageAggregation BarChart per URL aufrufbar	"Damit Barcharts geteilt (und gebookmarked) werden können, sollen Charts auch über die URL /pageAggregation/show?<PARAMS> aufrufbar sein.
-
-Ebenso sollte sich die URL anpassen, wenn ein Chart angezeigt wird, damit diese URL geteilt werden kann."		Task	OpenSpeedMonitor	30/Nov/16 3:17 PM	13/Dec/16 2:43 PM														08/Dec/16 4:33 PM;bwo;Links können nun genutzt werden, jedoch werden sie noch nicht dynamisch erzeugt.																																																						

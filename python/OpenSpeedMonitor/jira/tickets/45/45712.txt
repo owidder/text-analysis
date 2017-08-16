@@ -1,1 +1,0 @@
-Adding user-defined columns invalidates existing search filter	Go to EA Data -> Information Systems. Search for Information Systems with "e". Add arbitrary column, e.g. Application Type. The search filter "e" is not adhered any longer, but should be.		Bug	iteraplan PO	13/May/13 5:18 PM	08/Jul/13 6:23 PM					gui																																																															

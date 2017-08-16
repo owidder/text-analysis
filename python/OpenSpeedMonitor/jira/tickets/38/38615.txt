@@ -1,4 +1,0 @@
-Prüfung Quartz-Job MeasuredValueUpdateEventCleanupJob	"Dieser Job soll eine BatchActivity erzeugen (siehe IT-557).
-Er läuft täglich um 5:30 Uhr  und erzeugt auf der OTTO-Maschine 80.69.33.179 derzeit viel Last (siehe Monitoring-Screenshot). 
-
-Kann sein, dass die Maschine ein io-Problem hat. Wir sollten aber auch prüfen, ob der Code Performance-optimiert werden kann."		Task	OpenSpeedMonitor	23/Apr/15 11:04 AM	26/May/15 1:42 PM														26/May/15 1:42 PM;nku;Analysiert und refaktoriert, um performanter laufen zu können.																																																						

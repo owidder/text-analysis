@@ -1,5 +1,0 @@
-Initiales Anlegen des openspeedmonitor.org-WPTServers funktioniert nicht	"Wenn der OSM gestartet wird und es keinen WptServer gibt soll webpagetest.org automatisch  als Instanz angelegt werden und dessen Locations gefetcht werden.
-
-
-
-Das funktioniert nicht. Zumindest nicht beim Starten via docker. "		Bug	OpenSpeedMonitor	01/Feb/17 11:37 AM	08/Feb/17 2:21 PM																																																																				

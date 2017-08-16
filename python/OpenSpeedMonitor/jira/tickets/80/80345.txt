@@ -1,3 +1,0 @@
-JS/Karma-Tests unter  Grails 3.1 zum laufen bringen			Task	OpenSpeedMonitor	13/Apr/16 9:45 AM	18/Apr/16 4:01 PM														"13/Apr/16 9:48 AM;nku;Das Karma-Plugin (org.grails.plugins:karma-test-runner:0.2.4 ) gibt es in der 3.1 nicht mehr.
-
-Es ist zu prüfen, wie der Karma-Testrunner unter Grails 3 zu verwenden ist, bzw. wie sonst der Standardweg ist um unter 3.1 Jasmine/JS-Tests zu schreiben und ablaufen zu lassen."																																																						

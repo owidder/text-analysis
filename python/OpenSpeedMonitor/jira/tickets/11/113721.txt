@@ -1,1 +1,0 @@
-Wettbewerbermessungen umziehen	Die WB-Messungen sollen von der Demo-Instanz auf unsere prod-Instanz umgezogen werden. Nur so können wir diese aktuell für Kundenbezogene Standard-Reports verwenden.		Story	OpenSpeedMonitor	03/Mar/17 11:01 AM																																																																					

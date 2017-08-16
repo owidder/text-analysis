@@ -1,1 +1,0 @@
-Create unit test and activate protractor test for ITERAPLAN-4270	Create unit test and activate protractor test for ITERAPLAN-4270		Task	iteraplan PO	22/Dec/15 4:48 PM																																																																					

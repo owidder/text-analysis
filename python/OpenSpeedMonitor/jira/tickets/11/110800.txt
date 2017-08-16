@@ -1,3 +1,0 @@
-IE10: No scrolling of all lists	"In the Internet Explorer 10 no scrolling is possible.
-
-Please fix it. Please consult first [~sfe] as he fixed already some scrolling issues in ag-grid."		Bug	iteraplan PO	04/Feb/17 9:40 AM	06/Feb/17 11:54 AM																																																																				

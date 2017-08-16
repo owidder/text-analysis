@@ -1,7 +1,0 @@
-NPE bei Aufruf von Dashboard mit falschen ID's	"Ruft man das CsiDashboard auf mit ID's für JobGruppen, die es gar nicht (mehr) gibt fliegt eine Null Pointer Exception und man sieht einen Stacktrace im Browser.
-
-
-
-# Man sollte diesen Fall abfangen.
-
-# Es sollte eine Fehlerseite angezeigt werden."		Bug	OpenSpeedMonitor	08/Feb/16 4:30 PM	31/Jan/17 1:22 PM					reevaluate									31/Jan/17 1:22 PM;bwo;Es kommt nun die korrekte Meldung dass für diese Auswahl keine Messdaten zur Verfügung stehen.																																																						

@@ -1,1 +1,0 @@
-REST API for Admin/Governance (Server): PUT, POST, DELETE	Date Intervals are part of this list and not in a separate list		New Feature	iteraplan Quickfox	30/Sep/16 5:00 PM	07/Oct/16 5:02 PM														07/Oct/16 5:02 PM;msr;Duplicate to IPTQ-164																																																						

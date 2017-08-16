@@ -1,9 +1,0 @@
-Filterspeicherung bei Treemap defekt	In der Treemap filtern wir auf die Elemente, die keine weiteren Unterelemente haben (Blätter des Baums). Wenn man die gespeicherte Abfrage wieder aufruft ist diese Filtereinstellung leider wieder weg.		Fault	iteraplan Support	15/May/17 9:57 AM	03/Jun/17 7:00 AM														"15/May/17 3:21 PM;cst;Sehr geehrte Frau Haase,
-
-vielen Dank für Ihre Anfrage.
-
-Wir haben das Verhalten nachstellen können und dieses wird mit Version 6.0 behoben sein. 
-
-Viele Grüße,
-
-Christoph Stangl - iteraplan Support"																																																						

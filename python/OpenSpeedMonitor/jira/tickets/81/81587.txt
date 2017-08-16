@@ -1,9 +1,0 @@
-The color picker is not working	"Timebox: 2
-
-
-
-The color picker will be displayed if you click anywhere in the legend. I think the color picker should only be displayed if you have clicked on the element in the legend.
-
-
-
-The color of the color picker can not be applied to the elements. There is no button or something like that."		Bug	iteraplan PO	22/Apr/16 12:45 PM	01/Jul/16 11:43 AM					lsd																																																															

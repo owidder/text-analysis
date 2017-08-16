@@ -1,9 +1,0 @@
-Feature Sprint January 2015	"Epic for the issues of the feature sprint from 8th of January to 28th of January.
-
-Main topics:
-* Mavenize build process (ongoing)
-* Finish attributable IE-IS relation
-* IE11 compatibility
-* Continuous Elastic model update
-* Test environment for new client
-* Bugfix release 3.4.1"		Epic	iteraplan PO	07/Jan/15 2:14 PM	12/Feb/15 10:36 AM					feature	sprint																																																														

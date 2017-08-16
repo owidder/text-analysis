@@ -1,3 +1,0 @@
-"Clear all highlights" option	"Summary: ""Clear all highlights"" option appears at once in the context menu for inner/outer elements. Maybe better if ""Clear all highlights"" appears in the context menu for inner/outer elements only after applying highlighting options?
-"	47646	Sub-task	iteraplan PO	27/Apr/15 5:09 PM	05/May/15 2:07 PM													"Workspace: Windows 8.1
-revision: 1036"	29/Apr/15 2:47 PM;dasm;Verified (rev 1073)																																																						

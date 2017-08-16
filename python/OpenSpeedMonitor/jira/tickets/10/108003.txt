@@ -1,9 +1,0 @@
-Partial message sometimes displays wrong numbers	"_Reproduce:_
-
-# Change partial limit for LSD in constants js, for example to ""10""
-
-# Start iteraplan and navigate to LSD
-
-_Expected:_ Partial message stating that only the first 10 elements are displayed
-
-_Actual:_ Partial message stating that only the first 1000 elements are displayed"		Bug	iteraplan Thunderduck	11/Jan/17 8:01 AM	11/Jan/17 8:58 AM																																																																				

@@ -1,5 +1,0 @@
-Add link to license upload page	"When you try to log into iteraplan without valid license, the login page shows an according error.
-
-
-
-Add a link, possibly within that error message, to the {{.../iteraplan/licensing/update.do}} page where the license can be uploaded."		Improvement	iteraplan PO	06/Nov/15 2:29 PM	09/Nov/15 4:22 PM					license																																																															

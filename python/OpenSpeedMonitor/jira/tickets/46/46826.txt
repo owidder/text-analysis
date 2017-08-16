@@ -1,3 +1,0 @@
-Increase the quality of the generated diagrams for the JPEG format	"The JPEG resolution of big diagrams are too bad, to include them in a powerpoint presentation or a word document as a picture. Increasing the quality of the jpeg picture does not very well, because of the fonts. 
-
-Scope of this ticket is to determine and to implement a method to increase the quality of generated exports. Evaluate, if a bigger font size would solve problems regarding of reading problems. "		New Feature	iteraplan PO	11/Aug/14 11:05 AM	19/Jan/16 10:35 AM																																																																				

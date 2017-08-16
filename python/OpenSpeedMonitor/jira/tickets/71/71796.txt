@@ -1,3 +1,0 @@
-Make integration tests run with minified code, too	"Currently, the lsd pipeline integration tests for the interactive client don't run against minified code because of some issue with injecting the angular module ""commons"" into the test.
-
-Make this work."		New Feature	iteraplan PO	04/Feb/16 4:19 PM						integration									09/Mar/16 5:40 PM;fka;Really neccessary?																																																						

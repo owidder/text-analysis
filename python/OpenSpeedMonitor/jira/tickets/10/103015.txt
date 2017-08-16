@@ -1,1 +1,0 @@
-Update LSD architecture document	Update old architecture document (_lsdArchitectureDetails.docx) and architecture diagram (_lsdArchitectureDiagram.svg, can be replaced with .png) for Landscape Diagram according to new changes.	98457	Sub-task	iteraplan Speedbird	18/Nov/16 11:48 AM	29/Nov/16 1:14 PM																																																																				

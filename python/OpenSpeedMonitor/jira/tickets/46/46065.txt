@@ -1,5 +1,0 @@
-Line charts cause an error message in the Dashboard.	"Line charts cause an error message in the Dashboard.
-The line graphs are generated correctly.
-The problem lies in the iteratecFunctions.js.
-The function 'onSvgGraphicLoaded' is always looking for the ID ""svg2"". But line graphs have no id, because they are generated differently than the other charts.
-"		Bug	iteraplan PO	11/Sep/13 11:14 AM	30/Dec/15 3:17 PM					Dashboard																																																															

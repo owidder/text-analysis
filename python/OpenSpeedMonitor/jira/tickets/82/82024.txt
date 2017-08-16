@@ -1,1 +1,0 @@
-Change header of IFD from "work-in-progress" to "configuration by left click"	Change header of IFD from "work-in-progress" to "configuration by left click"		Improvement	iteraplan PO	26/Apr/16 10:45 AM	26/Apr/16 1:16 PM					ifd																																																															

@@ -1,6 +1,0 @@
-REST-API Zugang freischalten	"Um den Zugang zur REST-API ohne Login zu ermöglichen:
-In 
-  /iteraSpeedMonitor/grails-app/conf/Config.groovy
-in der Map 
-  grails.plugins.springsecurity.interceptUrlMap
-einen Eintrag (permitAll()) für RestApiController hinzufügen (siehe dortiges TODO)."		Task	OpenSpeedMonitor	16/Sep/13 11:49 AM	07/Oct/13 1:42 PM																																																																				

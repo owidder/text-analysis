@@ -1,7 +1,0 @@
-Add download functionality to N3CD	"* Download-Button next to ""language"" in header section
-
-* see also LSD or IFD for download implementations for GoJS diagrams
-
-
-
-NOT full download. Full download button is part of ITERAPLAN-4470"		New Feature	iteraplan PO	19/Apr/16 8:59 AM	25/Apr/16 4:29 PM																																																																				

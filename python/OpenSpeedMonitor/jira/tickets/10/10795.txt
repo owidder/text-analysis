@@ -1,1 +1,0 @@
-Rest-API-Dependency-Problem	Der JSON-Builder der Rest-API wird scheinbar unter Grails 2.3.2 nicht geladen.		Bug	OpenSpeedMonitor	26/Nov/13 2:50 PM	26/Nov/13 5:51 PM																																																																				

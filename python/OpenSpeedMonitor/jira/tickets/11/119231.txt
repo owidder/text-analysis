@@ -1,9 +1,0 @@
-use ag grid components for custom headers	"Open an element list.
-
-
-
-ag grid says, in the console: ""combined1492708462286.js:55 ag-Grid: since v8, custom headers are now done using components. Please refer to the documentation https://www.ag-grid.com/javascript-grid-header-rendering/. Support for the old way will be dropped in v9.""
-
-
-
-So we should do so and use components."		Improvement	iteraplan Thunderduck	21/Apr/17 2:00 PM	19/Jul/17 8:59 AM														19/Jul/17 8:59 AM;scz;The component is implemented like ag-grid suggested on their website.																																																						

@@ -1,5 +1,0 @@
-Re-order and improve LSD legend	"Re-order and improve LSD legend
-
-* by 3 areas
-
-* rename to columns and rows"		Improvement	iteraplan PO	09/Aug/16 2:29 PM	09/Aug/16 5:46 PM														09/Aug/16 5:46 PM;mwe;Everything ok.																																																						

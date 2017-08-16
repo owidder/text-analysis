@@ -1,3 +1,0 @@
-No checkbox to select runtime-period for massupdate	"see screenshot. The checkbox seems to be there, nevertheless, though it's invisible in Chrome.
-
-Works fine in FF22. In IE9, the checkbox is present but looks a bit strange (as if an extra box was drawn around it)"		Bug	iteraplan PO	04/Jul/13 2:02 PM	28/May/14 10:09 AM					ui									28/May/14 10:09 AM;fka;Chrome is unfortunately not supported by iteraplan 																																																						

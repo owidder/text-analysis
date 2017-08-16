@@ -1,8 +1,0 @@
-Test Context Overview Diagram	"Create new test sheet in sub folder of {{doc/test}}.
-
-* Add test cases to test the context overview diagram
-** permissions
-** various model states
-
-* Install iteraplan using one of the not yet or lesser tested configurations in the installer test sheet
-* Perform the testcases from the test sheets and attach the results to this ticket"	47060	Sub-task	iteraplan PO	17/Oct/14 2:16 PM	24/Oct/14 4:11 PM					context	diagram	test							24/Oct/14 1:58 PM;msr;All ok except for 1 Defect: ITERAPLAN-2782 (already fixed)	24/Oct/14 4:10 PM;fam;Detected error reported and fixed, no further irritation, so fine ;-)																																																					

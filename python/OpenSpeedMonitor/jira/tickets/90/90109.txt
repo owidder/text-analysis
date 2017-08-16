@@ -1,1 +1,0 @@
-Das BodgeIT Docker Image auf Alpine Linux umstellen und Größe minimieren	Das Dockerfile liegt unter secureBox/securebox-dockerfiles/bodgeit		Improvement	secureCodeBox	11/Jul/16 10:11 AM	11/Jul/16 5:41 PM	secureBox				iteratec	students																																																														

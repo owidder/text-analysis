@@ -1,6 +1,0 @@
-Undocumented functionality: Document Templates for Excel and Visio	There is the page Administration -> Document Templates where users can upload templates for Visio and Excel. I have not found documentation on this functionality, neither in the Users Guide nor on iteraplan.de: http://www.iteraplan.de/wiki/display/iteraplan/iteraplan+Documentation+Home. The two features and their limitations, incl. constraints should be described.		Task	iteraplan PO	13/May/13 5:15 PM	18/Jul/13 5:28 PM					usability									"18/Jul/13 11:46 AM;jme@iteratec.de;created: 
-http://www.iteraplan.de/wiki/display/upcomingIteraplan/Customizing+Spreadsheet+Reports
-
-changed:
-http://www.iteraplan.de/wiki/display/upcomingIteraplan/Saving+and+loading+Spreadsheet+Reports
-http://www.iteraplan.de/wiki/display/upcomingIteraplan/Information+Flow+Diagrams"	18/Jul/13 5:28 PM;svo;Documentation is helpful and without errors.	18/Jul/13 11:31 PM;sry;Nice, thx.																																																				

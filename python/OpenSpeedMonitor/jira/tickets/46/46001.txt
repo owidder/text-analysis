@@ -1,8 +1,0 @@
-Resetting a search on building block overview pages forces display of the result list to "all displayed on one page"	"Reproduce:
-1. Open iteraplan and navigage to, for example, information system overview page
-2. Make sure pagination is set to ""20 per page""
-3. Click ""Reset and show all""
-=> Pagination changes to ""All""
-
-This is a problem particularly for customers with large lists using older browsers (especially IE) since rendering the complete building block list can take very long.
-The pagination settings should be kept when resetting the search."		Bug	iteraplan PO	16/Aug/13 10:28 AM	19/Aug/13 4:51 PM					paging	search								19/Aug/13 3:40 PM;isc;It is no longer possible to change the number of the displayed elements. When I try to change the pagination, the pagination is reset automatically to "20 per page".	21/Aug/13 9:04 AM;psc;Reviewed with Stephan. Solution accepted.																																																					

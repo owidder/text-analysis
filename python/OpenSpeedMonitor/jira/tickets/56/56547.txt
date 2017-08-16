@@ -1,1 +1,0 @@
-Free text field		56430	Sub-task	iteraplan PO	08/Sep/15 1:03 PM	10/Sep/15 3:52 PM														10/Sep/15 3:52 PM;ach;renamed view-model variable of the text field from "searchRequest" to "input"																																																						

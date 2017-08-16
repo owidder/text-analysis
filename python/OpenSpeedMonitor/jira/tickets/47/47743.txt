@@ -1,3 +1,0 @@
-Check asynchronous elastic import for needed "synchronized" code	"Since there can only be one single import process at one time for imports started by the GUI, possible writing access (including creation of the process) may have to be synchronized.
-
-Please check and make necessary adjustments."		Improvement	iteraplan PO	08/May/15 8:46 AM	19/Jan/16 1:53 PM					import																																																															

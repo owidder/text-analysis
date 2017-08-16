@@ -1,1 +1,0 @@
-Create Filter with help of Combined Filter			New Feature	iteraplan Speedbird	13/Jul/16 4:57 PM	14/Jul/16 9:27 AM														14/Jul/16 9:27 AM;msr;Implemented by IPTS-33																																																						

@@ -1,1 +1,0 @@
-Testsheet for Colorpicker		91619	Sub-task	iteraplan PO	26/Jul/16 12:41 PM	08/Aug/16 11:02 AM														08/Aug/16 10:46 AM;fka;TC2 should be with another diagram, e.g. Landscape	08/Aug/16 10:52 AM;cst;TC2 is now on the Landscape Diagram																																																					

@@ -1,1 +1,0 @@
-Business Process name in landscape diagram (PDF) row axes	Business Process name are missing in landscape diagram row axes when SVG/PDF format is used.		Bug	iteraplan PO	04/Aug/11 1:27 PM	23/Sep/11 2:14 PM					export	pdf	reports																																																													

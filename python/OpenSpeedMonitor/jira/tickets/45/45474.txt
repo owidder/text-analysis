@@ -1,2 +1,0 @@
-TechnicalComponent saved despite validation error	"A TechnicalComponent gets saved despite validation error in available for interface.
-This is not reproducable in Nightly, but on setup of kgo."		Bug	iteraplan PO	11/Apr/12 7:15 PM	24/Apr/12 12:00 PM														24/Apr/12 12:00 PM;vsh;The issue cannot be reproduced in any environment.																																																						

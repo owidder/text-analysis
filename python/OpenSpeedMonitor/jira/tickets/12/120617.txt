@@ -1,5 +1,0 @@
-Return image for url containing format	Add functionality to the new client that allows to call an URL containing an UUID of an saved query (of an diagram) and the format and then the corresponding file is returned.		New Feature	iteraplan Thunderduck	05/May/17 10:52 AM	15/May/17 9:51 AM														10/May/17 9:03 AM;aan;At the moment only for SVG and PDF, as for the other formats the full download is not working	"12/May/17 1:22 PM;tsc;All downloads have several error messages on the browser console (nightly build). Downloads in local environment with current trunk have no error messages.
-
-
-
-Check again on Monday, 15.05."																																																					

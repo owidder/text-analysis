@@ -1,3 +1,0 @@
-[REST-API] httpArchiveUrl fehlt in resultsbetween	"Dieses Attribut ist aus dem DTO fälschlicherweise entfernt worden mit dem Entfernen der Domain HttpArchive.
-
-Hat aber hiermit nichts zu tun. Das DTO-Attribut httpArchiveUrl beinhaltete die URL zum Herunterladen eines WPT-Ergebnisses als HTTP-Archive vom WPT-Server."		Bug	OpenSpeedMonitor	01/Apr/16 12:07 PM	01/Apr/16 12:08 PM																																																																				

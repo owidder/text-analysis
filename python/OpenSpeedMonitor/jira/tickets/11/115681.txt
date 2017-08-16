@@ -1,9 +1,0 @@
-Reset View in Single Element View is not working	"Click the button ""reset view"" in the single element view
-
-
-
-Current behaviour: the view is broken (nothing is shown)
-
-
-
-Expected behaviour: the view is in its basic configuration shown"		Bug	iteraplan Speedbird	21/Mar/17 2:52 PM	24/Apr/17 1:54 PM														23/Mar/17 9:37 AM;msr;The reset-view-button on the Building Block List is also broken. Maybe this could be related.	20/Apr/17 1:19 PM;anhv;Reset View in Single Element View and in the Building Block List has been already working, but It was not worked for nvd diagrams	22/Apr/17 10:22 AM;dmkh;Review is done, two comments here: https://iteraweb.iteratec.de/fisheye/cru/IP-521#general-comments																																																				

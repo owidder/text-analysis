@@ -1,1 +1,0 @@
-Die Beschriftungen der Gewichtungs-Seite müssen noch internationalisiert werden			Improvement	OpenSpeedMonitor	16/Oct/15 1:31 PM	19/Oct/15 1:03 PM																																																																				

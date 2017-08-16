@@ -1,5 +1,0 @@
-Option to mark attributes as automatically calculated	"There should be the option to mark custom attributes as automatically calculated.
-
-
-
-This should be available for all types of attributes. Only plugin scripts should be able to modify the value(s) of such attributes, nothing else."		Improvement	iteraplan PO	26/Aug/16 9:42 AM																																																																					

@@ -1,3 +1,0 @@
-Tabellarische Auswertung erzeut „allgemeinen technischen Fehler“	"Die tabellarische Auswertung aller IS als XLSX-Ausgabe läuft hin und wieder auf einen „allgemeinen technischen Fehler“.
-
-Der Fehlerbericht beim Auftreten ist angehängt."		Bug	iteraplan PO	03/Jun/14 12:01 PM	11/Jun/14 1:50 PM														04/Jun/14 2:45 PM;dop;The logs shows a NPE, which happens when no filename for the excel export template is set. I could not reproduce the error. For the fix I checked if the filename for the template is set, otherwise the default template name will be used. 																																																						

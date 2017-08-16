@@ -1,1 +1,0 @@
-Error Handling bei Scan-Durchläufen verbessern	Wie genau das Error Handling geschehen soll, d. h. wie welche Fehlerfälle behandelt werden, muss zuvor noch geklärt werden.		Story	secureCodeBox	19/Apr/16 10:21 AM		secureBoxEngine	secureBoxZap			Energy	iteratec																																																														

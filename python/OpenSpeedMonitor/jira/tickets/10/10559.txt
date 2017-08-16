@@ -1,1 +1,0 @@
-Measuring Results Dashboard: Graph Trim-Funktion	Ausreißer sollten getrimmt werden können		Task	OpenSpeedMonitor	25/Sep/13 10:16 AM	25/Sep/13 11:01 AM														25/Sep/13 11:01 AM;jwerschmoeller;IT-137																																																						

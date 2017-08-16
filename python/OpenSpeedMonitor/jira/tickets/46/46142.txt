@@ -1,4 +1,0 @@
-Standard Customizing for iteraplan	"In the future iteraplan will offer a standardized set of customizing features. This ticket is the summary ticket that contains all the tasks necessary to provide an easy way for building customized installers via configuration files.
-An overview of the available list of customizing features can be found at 
-https://iteraweb.iteratec.de/confluence/pages/viewpage.action?pageId=28968396
-"		New Feature	iteraplan PO	15/Oct/13 5:00 PM	30/Dec/15 3:31 PM																																																																				

@@ -1,1 +1,0 @@
-Grails-Changeset 1459346200213-69	So umschreiben, dass auf sämtliche GORM/Hibernate Logik verzichtet wird. Siehe change 1460040092001-1 für Beispiel		Task	OpenSpeedMonitor	08/Jun/16 6:18 PM	09/Jun/16 8:43 AM																																																																				

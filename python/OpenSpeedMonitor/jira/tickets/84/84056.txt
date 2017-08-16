@@ -1,7 +1,0 @@
-[CRUD] GraphiteServer View fixen	"Es lassen sich unter http://localhost:8080/graphiteServer/create beliebige Werte für die URL eintragen, evtl. sollte hier eine Validierung der URL stattfinden.
-
-
-
-Das editieren des Ports zu einem negativen Wert führt zu einem 500er Fehler"		Bug	OpenSpeedMonitor	12/May/16 11:47 AM	25/May/16 5:45 PM														"13/May/16 2:42 PM;bka;Der 500er Fehler wurde bereits gefixt.
-
-Die Tickets IT-1078, IT-1080, IT-1084 und IT-1086 hängen zusammen. Das Problem ist, dass der gescaffoldete Controller auftretende Validation-Fehler nicht mehr an die View weitergibt."																																																						

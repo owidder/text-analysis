@@ -1,1 +1,0 @@
-NCD link in classic client leads to old NCD, not N3CD	Change the link to lead to N3CD.		Bug	iteraplan PO	13/Jun/16 9:50 AM	14/Jun/16 4:58 PM																																																																				

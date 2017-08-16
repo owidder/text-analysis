@@ -1,5 +1,0 @@
-Messungen apetito einrichten	"Alle Messungen sollen im Chrome auf dem Desktop erfolgen.
-
-
-
-Mess-Frequenz: stdl. von 07:00 bis 22:00 Uhr. "		Story	OpenSpeedMonitor	03/Mar/17 11:13 AM	17/Mar/17 1:56 PM																																																																				

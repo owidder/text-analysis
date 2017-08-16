@@ -1,9 +1,0 @@
-Clean the UI design			Improvement	iteraplan Quickfox	11/Jul/16 2:35 PM	28/Jul/16 4:44 PM														"19/Jul/16 12:02 PM;mwe;Todo:
-
-* Fix Startscreen.
-
-* Move parser info below reactor status"	27/Jul/16 5:10 PM;mwe;Startscreen was already fixed and parser info moved to reactor status sub-headline.	28/Jul/16 3:46 PM;msr;!Same_line_in_IE10.png!	"28/Jul/16 3:48 PM;msr;Review:
-
-* IE10 displays parser-information in the same line. Ok?
-
-* User Guide needs to be adapated, but maybe in scope of another ticket?"	28/Jul/16 4:19 PM;mwe;Moved reactor info.																																																		

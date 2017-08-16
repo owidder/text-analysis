@@ -1,1 +1,0 @@
-Handle drag'n'drop functionality			Bug	iteraplan Quickfox	01/Aug/16 3:38 PM	02/Aug/16 11:49 AM														01/Aug/16 5:56 PM;mwe;Was very quick to implement.	02/Aug/16 10:41 AM;tsu;File upload from the outside of the file browser works, but there is a not working drag and drop function for files inside the file browser.																																																					

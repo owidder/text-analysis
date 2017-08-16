@@ -1,7 +1,0 @@
-Anzeige des unique-identifiers für Locations	In der Show- und Edit-View des Jobs soll für Locations das Attribut uniqueIdentifierForServer statt des Labels angezeigt werden.		Bug	OpenSpeedMonitor	24/Feb/14 12:31 PM	24/Feb/14 2:44 PM														"24/Feb/14 2:44 PM;drieger;Da uniqueIdentifierForServer nullable ist, wird folgender Ausdruck ausgewertet: 
-{code}
-location.uniqueIdentifierForServer ?: location.location
-{code}
-Sortiert wird in der Jobtabelle unabhängig davon nach uniqueIdentifierForServer.
-
-"																																																						

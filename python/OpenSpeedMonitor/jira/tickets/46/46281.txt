@@ -1,1 +1,0 @@
-Visio lists old iteraplan version as author	Author of Visio files exported from iteraplan is "iteraplan 2.5"		Bug	iteraplan PO	28/Oct/13 4:30 PM	05/Nov/13 5:26 PM					visio									23/Jan/14 5:43 PM;fka;Reviewed, ticket closed																																																						

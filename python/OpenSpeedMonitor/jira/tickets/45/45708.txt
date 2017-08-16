@@ -1,8 +1,0 @@
-Unify the naked function for the graphic generation	"In the task ITERAPLAN-1527 the http service was expanded.
-The naked function based on an existing function. But this function has not the same effect in all graphics.
-
-Define an uniform standard for this function and implement it. "	45668	Sub-task	iteraplan PO	10/May/13 12:42 PM	10/Jul/13 4:04 PM					dashboard									"20/Jun/13 3:40 PM;isc;Now, the naked function has for all graphics the same result.
-The title, description, QR Code and the corners are are hidden if the naked export is used.
-In addition, the legends were decoupled from the naked function."	"10/Jul/13 4:04 PM;bra;(/) works
-(/) legends are created for dashboard graphics
-(/) legends are not created for fastExport via BBDetails"																																																					

@@ -1,5 +1,0 @@
-Add support for XLSM files (Spreadsheet report, Successor report, Document templates)	"As a user I want to upload XLSM-Template files.
-
-I want to use this templates in the spreadsheet reports and successor reports.
-
-Note: The JUnit-Tests need to be extended, too."	45630	Sub-task	iteraplan PO	21/May/13 2:07 PM	30/Dec/15 2:32 PM					excel	gui	test																																																													

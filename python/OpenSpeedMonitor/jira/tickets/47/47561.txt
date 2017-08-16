@@ -1,2 +1,0 @@
-Property "urlbuilder.application.address" doesn't work in REST API	"In classic iteraplan, the URL prefix for Links to building blocks (in diagrams, for example) can be configured by the property ""urlbuilder.application.address"". This doesn't work in REST API requests.
-"		Bug	iteraplan PO	01/Apr/15 1:31 PM	16/Apr/15 11:11 AM					properties	rest	url																																																													

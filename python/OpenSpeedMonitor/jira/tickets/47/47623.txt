@@ -1,8 +1,0 @@
-Display of success message in bulk updates is corrupted	"The title describes the problem, the attachment shows it.
-Happens with EN and DE."		Bug	iteraplan PO	17/Apr/15 11:10 AM	20/Apr/15 9:48 AM					bulkupdate	gui	massupdate	ui						"20/Apr/15 8:44 AM;sfe;Error messages can be longer than even the new width of the labels.
-_Reproduce:_
-# Define bulk update for at least two Architectural Domains involving the ""superordinate"" relation
-# Attempt to introduce a hierarchical cycle by setting the superordinate element for two Architectural Domains to the respective other Domain.
-# Run Bulk Update
-
-See attached screenshot"																																																						

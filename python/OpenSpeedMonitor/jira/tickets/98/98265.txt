@@ -1,1 +1,0 @@
-Autodiscover on Tomcat restart	plugins should be discovered on iteraplan start		Bug	iteraplan Thunderduck	05/Oct/16 4:48 PM	11/Oct/16 1:20 PM																																																																				

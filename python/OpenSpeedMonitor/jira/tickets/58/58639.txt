@@ -1,7 +1,0 @@
-Notification on "no elements to display"	"Create a notification in the Information Flow Diagram which shows ""No elements to display"" if actual filters lead to an empty result set.
-
-Use Landscape Diagram as blueprint."		New Feature	iteraplan PO	29/Sep/15 1:11 PM	05/Oct/15 9:48 AM														"02/Oct/15 8:19 AM;msr;Development done by [~ach]
-
-Unit test done by [~msr]"	"02/Oct/15 10:33 AM;msr;Review done and ok.
-
-[~ach]: Please review my last 2 commits"																																																					

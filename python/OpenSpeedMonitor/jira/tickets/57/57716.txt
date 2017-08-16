@@ -1,9 +1,0 @@
-[Persistenz] Einteilung der Assets in die Phasen	Zu einem Asset sollte persistiert werden, in welche Phase die Ladezeit startete und in welche Phase es fertig geladen wurde.		Task	OpenSpeedMonitor	21/Sep/15 11:07 AM	16/Aug/16 11:44 AM														"29/Feb/16 11:36 AM;nku;Es geht hierbei um die drei Phasen:
-
-
-
-* Vor dem ready
-
-* Zwischen ready und onload
-
-* Nach onload"																																																						

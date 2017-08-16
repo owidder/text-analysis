@@ -1,3 +1,0 @@
-Funktion "Neues Release" für IS liefert Fehler	"Erwartetes Verhalten: Ich kann ein neues Release für ein Informationssystem über die Funktion ""Neues Release"" erstellen und speichern.
-
-Tatsächliches Verhalten: Standardfehler"		Bug	iteraplan PO	09/Aug/13 4:38 PM	15/Jul/14 9:11 AM														25/Jun/14 3:43 PM;fka;Is this still applicable?	15/Jul/14 9:11 AM;sfe;Probably fixed within the scope of other issues.																																																					

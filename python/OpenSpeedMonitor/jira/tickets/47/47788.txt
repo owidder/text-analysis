@@ -1,7 +1,0 @@
-NCD - types in title not click-able	"# Log into iteraplan
-# Go to NCD in interactive client
-=> In title {{Nested Cluster Diagram - Information System Domain clusters Information Systems}} the type names are not click-able
-# Change outer or inner type by right-clicking an element in the diagram
-=> In the new title, the type names are click-able and in that way allow type changes
-
-Please fix, so that the type names are click-able on the first access to the diagram already."		Bug	iteraplan PO	21/May/15 4:47 PM	22/May/15 11:26 AM					ncd									22/May/15 11:26 AM;tam;Fixed and tested																																																						

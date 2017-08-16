@@ -1,8 +1,0 @@
-Support more than two languages in the GUI	"Enable iteraplan to switch between more than the two default languages in the GUI and to alter the predefined languages German and English.
-
-The strings for the different languages should be configured via property files, one for each language, as of today. Additional files should be placed in the same directory as the German and English files and follow a file name pattern. The names of the languages in the ""select language"" menu are _not_ localized, but always in their respective locale/language. For example Deutsch, English, Italiano. Therefore each language file should defines its name itself via a key/value pair at the top of the file.
-
-Update the user documentation. Explain where to find the default language files, how to translate one of them and where to put the translated file.
-
-"		Improvement	iteraplan PO	09/Feb/15 9:06 PM	20/Apr/15 8:46 AM					language									"13/Apr/15 11:06 AM;ach;the definition of the language name is not on the top of file, but in the existing section ##### Languages as language.current
-"																																																						

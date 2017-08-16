@@ -1,5 +1,0 @@
-URL Handling zum wechseln zwischen den Charts an die neuen Parameter from/to und fromComparative/toComparative anpassen	"Nachdem die URL Parameter fromHour, toHour, ... weggefallen sind und from/to von Date auf DateTime umgestellt worden sind, muss das Wechseln zwischen den Charts bei dem die Daten erhalten werden daran angepasst werden.
-
-
-
-Zudem sind mit from/Comparative/toComparative zwei neue URL Parameter dazugekommen, welche ebenfalls berücksichtigt werden müssen."	118615	Sub-task	OpenSpeedMonitor	27/Apr/17 8:21 AM																																																																					

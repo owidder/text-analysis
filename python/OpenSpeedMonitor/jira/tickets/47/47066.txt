@@ -1,7 +1,0 @@
-Test history	"Test sheet in {{doc/test/history}}.
-
-* Install iteraplan using one of the not yet or lesser tested configurations in the installer test sheet
-* Perform the testcases from the test sheets and attach the results to this ticket"	47060	Sub-task	iteraplan PO	17/Oct/14 2:10 PM	31/Oct/14 8:57 AM														"24/Oct/14 4:41 PM;abo;When using _timeseries_ attributes together with _history_, there is not one entry for each save, but 2 - one that shows the change, the other says ""no changes"".
-I fixed that on my installation by deleting those attributes from iteraplan."	29/Oct/14 9:44 AM;abo;On Hold in favour of ITERAPLAN-2731	"30/Oct/14 5:32 PM;abo;Retest done on 2014-10-30 - OK.
-
-Environment: Win7, IE9, iteraplan Enterprise Edition Build-v3.4.SNAPSHOT-r23947 (2014-10-30-12-43-35)"																																																				

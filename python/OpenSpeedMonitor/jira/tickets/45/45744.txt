@@ -1,2 +1,0 @@
-Date and Text attributes missing in Bar-Chart (Maintenance)	"To get an overview of data maintenance in iteraplan of attributes the Bar-Charts are very usefull.
-Unfortunately the date and text attributes are missing here. Description is the only text attribute that shows up."		Bug	iteraplan PO	05/Jun/13 2:25 PM	05/Jun/13 7:08 PM					bar	maintenance																																																														

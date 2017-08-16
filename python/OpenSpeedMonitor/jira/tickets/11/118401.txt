@@ -1,9 +1,0 @@
-MPD diagram needs to be updated for GoJS 1.7.x	"After GoJS update from version 1.6.11 to 1.7.7 MPG diagram is rendered not properly:
-
- # the timespan header is not rendered properly. Maybe, related to {{""InitialLayoutCompleted""}} in {{mpdDataDiagramHelper.js}}
-
- # -The exported image (JPEG, PNG) has no gridlines (probably, GoJS bug, and support contact is needed)- - already fixed
-
-
-
-!mpd-gojs1.7.7.jpg!"		Bug	iteraplan Speedbird	11/Apr/17 4:00 PM	27/Apr/17 10:13 AM																																																																				

@@ -1,7 +1,0 @@
-Historize metamodel changes	"- changes (incl. remove) of metamodel should be historized in own table and affect corresponding bb history
-
-- only for creates and removes of attributes"		Improvement	iteraplan Thunderduck	05/Oct/16 2:12 PM	18/Oct/16 2:12 PM														"18/Oct/16 10:12 AM;mse;The attribute changes are correctly written to DB and also already available via REST.
-
-
-
-A follow-up ticket (IPTT-192) was created to make sure, this information can be used by the client correctly."																																																						

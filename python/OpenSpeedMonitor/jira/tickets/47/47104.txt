@@ -1,5 +1,0 @@
-NPE when creating Information Flow Diagram	"The following error was reported by TSH
-
-{quote}
-wenn man in der neuen iteraplan Version im VisualisierungsTab eines Informationssystems die Informationsflußgrafik auswählt wird statt der SVG Datei die iteraplan-Fehlerseite angezeigt.
-{quote}"		Bug	iteraplan PO	31/Oct/14 11:40 AM	31/Oct/14 4:48 PM														31/Oct/14 4:48 PM;gph;Solution is valid to avoid this NPE.																																																						

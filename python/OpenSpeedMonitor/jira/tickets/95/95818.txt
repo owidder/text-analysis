@@ -1,7 +1,0 @@
-User setting to change the max elements that are displayed on interactive client diagrams	"Summary:
-Change the maximum elements that are displayed on the interactive client diagrams with a setting. 
-
-Actual:
-• You can not change the maximum elements that are displayed in the diagrams. This number is set for the browser in the code. 
-Expected:
-• Be able to change the maximum number of elements per diagramm in a user profile menu "		Improvement	iteraplan PO	12/Sep/16 10:18 AM																																																																					

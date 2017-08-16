@@ -1,5 +1,0 @@
-Als Entwickler möchte ich das der ZAP µService um echte Integrationstests erweitert wird.	"Bisher gibt es nur wenige Testfälle für die einzelnen µServices. Dies soll für die stabile Weiterentwicklung und Open Source Stabilität geändert werden.
-
-
-
-Beispielhaft soll für den ZAP µService ein SpringBoot basierter Integrationstest mit JUnit implementiert werden um die einzelnen ZAP Services zu testen mit echten Test-Seiten und einer laufenden ZAP Instanz. Diese Testfälle sollen die echten Benutzungsszenarien testen und absichern. Idealerweise werden diese Tests ebenfalls innerhalb eines Containers ausgeführt, um diese für alle Umgebungen transparent nutzen zu können (lokal, CI, Cloud)."		Improvement	secureCodeBox	21/Aug/16 1:07 PM	14/Sep/16 10:29 AM																																																																				

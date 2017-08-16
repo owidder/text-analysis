@@ -1,5 +1,0 @@
-Hibernate error during mass delete with blank template	"how to reproduce:
-* make sure you have sample data in the database (if necessary ant-target db.reset)
-* export blank template (metamodel as xlsx)
-* try to import the exported file (overwrite)
-* after step ""Write data"" get hiberante errors in catalina log (error during continuous elastic model update)"		Bug	iteraplan PO	15/Jun/15 1:58 PM	19/Jan/16 4:06 PM																																																																				

@@ -1,3 +1,0 @@
-I18N DC-Dashboard	"Für das Dashboard sind noch keine I18N Einträge vorhanden.
-
-Diese müssten in der Postload der Javascript-Funktion zur Verfügung gestellt werden (vlg. OSM)"		Improvement	OpenSpeedMonitor	05/Aug/16 8:54 AM	01/Sep/16 1:37 PM																																																																				

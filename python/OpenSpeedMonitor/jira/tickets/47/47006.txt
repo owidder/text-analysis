@@ -1,7 +1,0 @@
-Edit connected elements - various	"Various points on the editing of connected elements:
-
-* Delete (click on ""x""-icon) does not work
-
-* Start of edit mode must be by click on *content* (or placeholder ""no elements""), instead of title of list. Click on title is already taken for expand/collapse.
-
-* Leave edit mode by a click anywhere else."	47009	Sub-task	iteraplan PO	29/Sep/14 1:23 PM	09/Jun/15 5:06 PM																																																																				

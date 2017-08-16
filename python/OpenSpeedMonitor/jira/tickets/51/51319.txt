@@ -1,3 +1,0 @@
-Static text translation	"Replace all static texts with the new translate service for static texts.
-
-The static non-MM texts are JSON files similar to Java resource bundles."	49816	Sub-task	iteraplan PO	20/Jul/15 9:44 AM	30/Jul/15 5:41 PM														29/Jul/15 10:19 AM;ach;IFD-Translation in extra ticket																																																						

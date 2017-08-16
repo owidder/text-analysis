@@ -1,7 +1,0 @@
-Firmen Lizensschlüssel	Ich bitte um die Zusendung unseres Firmen Lizensschlüssel.		Fault	iteraplan Support	05/Jul/16 9:05 AM	05/Jul/16 10:58 AM														"05/Jul/16 10:15 AM;iteraplan-support;Hallo Herr Siebel,
-
-Ihr Lizenzschlüssel lautet:
-Qm9laHJpbmdlciBJbmdlbGhlaW0gUGhhcm1hIEdtYkggJiBDby4gS0cAMzEuMTIuMjAxNgA1Q0E4MTVBQTcwMDRFNjE4M0JDQ0NBM0U2OEYyNUI2RTk3RjI1QTI5MTFBMjI3RUQ4M0U0RkIxQzFFNjUyMTI0
-
-Mit freundlichen Grüßen
-Timur Ametov"	05/Jul/16 10:35 AM;stephan.siebel@boehringer-ingelheim.com;Vielen Dank. Ticket kann geschlossen werden.																																																					

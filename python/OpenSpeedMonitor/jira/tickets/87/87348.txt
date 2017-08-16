@@ -1,1 +1,0 @@
-Zweite Instanz für nightly builds/deployments	Wir bauen eine weitere Instanz auf für ein nightly Deployment eines dev-Stands.  		Task	OpenSpeedMonitor	15/Jun/16 3:40 PM	28/Jun/16 10:48 AM														28/Jun/16 10:48 AM;nku;Gibt es jetzt.																																																						

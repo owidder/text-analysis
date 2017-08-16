@@ -1,5 +1,0 @@
-Implement Distrigation in the rows		104557	Sub-task	iteraplan Speedbird	21/Dec/16 9:19 AM	10/Feb/17 11:31 AM														03/Feb/17 8:35 AM;viol;Implemented in scope of IPTS-434	06/Feb/17 11:52 AM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-341	09/Feb/17 11:35 AM;dmkh;Two comments left: https://iteraweb.iteratec.de/fisheye/cru/IP-341	"09/Feb/17 9:02 PM;viol;URL parameters for new client updated:
-
-https://iteraweb.iteratec.de/confluence/display/ITPL/URL+parameters+for+new+client
-
-(was added ""levelFilterURI"" in CCD)"																																																			

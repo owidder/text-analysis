@@ -1,7 +1,0 @@
-Unspecified elements coloring bug	"to reproduce:
-
-- open PFD
-
-- select Element type -> ""Business Function""
-
-- select Coloring -> ""Coloring by Accountability"""		Bug	iteraplan Speedbird	26/Oct/16 2:00 PM	26/Oct/16 2:46 PM					portfolio									26/Oct/16 2:46 PM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-125																																																						

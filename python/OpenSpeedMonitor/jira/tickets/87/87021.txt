@@ -1,3 +1,0 @@
-CRUD Oberfläche UserspecificDashboards	"Die CRUD Oberflächen der UserspecificDashboards sollen überarbeitet werden, da diese zu überladen sind und so nicht mehr sinnvoll eingesetzt werden können.
-
-Dazu muss zunächst geklärt werden, welche Atrribute man in der CRUD-View bearbeiten möchte und für welche das nur auf der Dashboard-Seite möglich sein soll."		Improvement	OpenSpeedMonitor	13/Jun/16 10:57 AM	19/Jan/17 1:11 PM														18/Jan/17 3:26 PM;sbr;CRUD View entfernen.																																																						

@@ -1,3 +1,0 @@
-Editing a saved query in diagram reports (e.g. landscape diagram) causes a problem due to disabled filter options 	"Filter options are disabled in a saved query. Please compare with the attachment.
-
-Original Ticket in Trac: #2271"		Bug	iteraplan PO	10/Jun/11 2:14 PM	24/Jun/11 9:14 AM														15/Jun/11 9:59 AM;kvo;trunk oder 2.8?																																																						

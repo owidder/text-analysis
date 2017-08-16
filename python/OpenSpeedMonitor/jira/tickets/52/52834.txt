@@ -1,5 +1,0 @@
-Create unit test to check if locales-keys are equal	"In the classic client: Improve the PropertiesTest.java
-
-Create a unit test to check, if all locales (de, en and more) have exacetly the same keys."		Task	iteraplan PO	05/Aug/15 2:17 PM	27/Mar/17 1:32 PM					language									"17/Aug/15 10:30 AM;sfe;{{PropertiesTest}} already checks this for the resource files _ApplicationResources.properties_ and _ApplicationResources_de.properties_.
-
-It should be possible to parametrize the test class to perform the test twice. Once for _ApplicationResources.properties_ and _ApplicationResources_de.properties_, and once for _ApplicationResourcesMM.properties_ and _ApplicationResourcesMM_de.properties_."	25/Aug/15 9:28 AM;sfe;Test for localisation files in new client will be done in linked issue.	27/Mar/17 1:32 PM;fka;No longer relevant																																																				

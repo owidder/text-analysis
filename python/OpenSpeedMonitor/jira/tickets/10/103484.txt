@@ -1,5 +1,0 @@
-User Settings	"*Summary:*
-
-Save last configuration from url as user setting.
-
-Ensure the user setting also work with an initial diagram (some bugs in the past)."		New Feature	iteraplan Speedbird	22/Nov/16 5:01 PM	23/Nov/16 11:13 AM																																																																				

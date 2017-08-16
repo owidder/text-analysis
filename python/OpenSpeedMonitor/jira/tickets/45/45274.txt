@@ -1,4 +1,0 @@
-Include MetaInformation of Attributes in Excel-Export	Es wäre hilfreich, wenn die Beschreibung von Attributen/Beziehungen als Kommentare an den entsprechenden Header-Zellen mit rausgeschrieben werden. Bei Attributen sind zusätzlich die möglichen Werte interessant. Dieses Feature würde helfen, wenn ein Mitarbeiter eine Excel-Ausgabe neu befüllen/aktualisieren möchte.		Improvement	iteraplan PO	17/Nov/11 5:53 PM	23/Nov/11 5:12 PM					excel	export								"21/Nov/11 5:18 PM;vsh;Can we add some additional information in the comments of the header cells:
- - whether the attribute is mandatory or not
- - whether multiple values are accepted (enum/responsibility attributes)
- - lower, upper bound and unit (number attributes)"	23/Nov/11 5:12 PM;kvo;weitere Punkte nicht relevant																																																					

@@ -1,1 +1,0 @@
-Add "user defined ranges" to attribute details page			New Feature	iteraplan Thunderduck	29/Nov/16 4:48 PM	21/Feb/17 9:56 AM																																																																				

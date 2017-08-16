@@ -1,9 +1,0 @@
-Wrong behaviour of colorpicker in NCD	"*how to reproduce:*
-- go to NCD in the new client
-- set any coloring by numeric properties (e.g. by strategic value from red to green)
-- pick a new color for ""Parameter is null or undefined""
-
-*expected:*
-  only coloring for undefined parameter changes (coloring min->max stay red to green)
-*actual:*
-  whole coloring min->max changes to _white_ to green"		Bug	iteraplan PO	08/May/15 11:12 AM	11/May/15 10:29 AM					Coloring	NCD								11/May/15 10:29 AM;tam;fixed																																																						

@@ -1,3 +1,0 @@
-Umwandlung des ISM in ein Open Source-Projekt	"Wir sollten den IteraSpeedMonitor öffentlich machen und in ein Open Source-Projekt umwandeln. Sicher können andere Entwickler etwas beitragen und weitere Anwender das Tool einsetzen.
-
-Für eine Veröffentlichung sind eine Reihe von Dingen zu klären und im Code noch einiges zu refactorn und zu erweitern."		Epic	OpenSpeedMonitor	08/May/14 9:08 AM																																																																					

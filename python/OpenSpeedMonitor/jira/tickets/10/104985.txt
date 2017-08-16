@@ -1,9 +1,0 @@
-Edit boolean values	"use ipBooleanEditor
-
-
-
-edit for available for interfaces
-
-
-
- "		New Feature	iteraplan Thunderduck	07/Dec/16 5:32 PM	07/Mar/17 11:09 AM																																																																				

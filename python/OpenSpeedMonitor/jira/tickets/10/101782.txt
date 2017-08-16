@@ -1,1 +1,0 @@
-Show all localised names / values	Show all localised names / values e.g. "Außer Betrieb" instead of "INACTIVE"		Improvement	iteraplan Speedbird	07/Nov/16 2:47 PM	17/Nov/16 5:00 PM														17/Nov/16 5:00 PM;mash;Review is Done: https://iteraweb.iteratec.de/fisheye/cru/IP-183																																																						

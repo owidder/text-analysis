@@ -1,5 +1,0 @@
-github-issue _Page löschen_ checken	"Das sollten wir mal prüfen und entweder fixen oder, wenn das aus unserer Sicht bereits zufriedenstellend gelöst ist, das Ticket so schließen:
-
-
-
-https://github.com/iteratec/OpenSpeedMonitor/issues/9"		Bug	OpenSpeedMonitor	14/Oct/16 8:45 PM	18/Jan/17 3:21 PM																																																																				

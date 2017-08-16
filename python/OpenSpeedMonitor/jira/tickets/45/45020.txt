@@ -1,8 +1,0 @@
-Permission denied: cannot execute a saved clsuter diagram query defined by me	"Reproduction: 
-# Create a cluster diagram query for information system interfaces (other building block types seem to be unaffected)
-# Save the diagram configuration and try to re-load that saved query
-
-Effect:
- An error message is shown: *An error occurred: You are not entitled to load this saved query.*
-
-The log file is attached."		Bug	iteraplan PO	29/Jun/11 12:43 PM	30/Jun/11 8:52 AM					permissions									29/Jun/11 4:30 PM;sry;Please write ticket summaries and descriptions always in English.																																																						

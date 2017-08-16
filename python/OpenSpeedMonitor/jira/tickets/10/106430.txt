@@ -1,5 +1,0 @@
-Fehler in der dynamischen Auswahl im Result Dashboard	Wenn man auf der [dev|http://dev.openspeedmonitor.wpt.iteratec.de/eventResultDashboard/showAll] den ExampleJob als JobGroup auswählt und dann Catergory ODER Homepage auswählt, wird die andere JobGroup "SelfMeasurement" ausgeblendet. Wenn man aber Category UND Homepage auswählt, wird sie wieder angezeigt. 		Bug	OpenSpeedMonitor	22/Dec/16 12:40 PM	25/Jan/17 10:55 AM														"19/Jan/17 8:40 PM;sbr;Beispiel für den Fehler:
-
-Man wählt eine JobGroup aus und sieht deshalb nur noch wenige Pages. Wählt man alle Pages aus, wird dies von der Logik genauso behandelt als wäre keine ausgewählt, d.h. es wird kein Page Filter angewandt. Dies ist falsch, und wirkt sich falsch auf das Updaten der JobGroups aus. Auch wenn alle Optionen selektiert sind, sollte der entsprechende Filter explizit gesetzt werden.
-
-Dies gilt nicht nur für Pages, sondern für alle Selects."																																																						

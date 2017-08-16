@@ -1,4 +1,0 @@
-Print views are not CSS-styled	"Since we integrated JAWR, there are no CSS instructions for printing iteraplan pages. Pages are completely un-styled when printed.
-This is probably because of the additional `media=""screen""` attributes that are now included.
-
-iteraplan pages in print mode should look similar to the print views available in iteraplan 2.7."		Bug	iteraplan PO	03/May/11 2:44 PM	18/May/11 10:11 AM					css	printing								04/May/11 8:06 AM;sfe;General CSS mediatype was changed to "all", while ensuring all elements of the CSS-class "hiddenRows" (like collapsed attribute type groups at the building block views)  are still shown in print.																																																						

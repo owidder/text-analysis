@@ -1,8 +1,0 @@
-UI for Query Migration	"extra JSP
-
-action button for migration
-
-log on then bottom of jsp:
-- for all features, which not exist in new client
-- for features, which can not be migrated is they are (e.g coloring with ranges)
-- log output, save to file"		New Feature	iteraplan Thunderduck	08/Dec/16 4:57 PM	30/Jan/17 2:52 PM																																																																				

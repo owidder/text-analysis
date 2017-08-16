@@ -1,7 +1,0 @@
-Improve query structure for spreadsheet reports with respect to query extensions	"See whether the issue from ITERAPLAN-4205 can be fixed properly by using joins in queries instead of subqueries.
-
-Some rough ideas in attached picture.
-
-
-
-Details: ask [~sfe]"		Improvement	iteraplan PO	25/Nov/15 3:50 PM	31/Aug/16 11:12 AM					query									31/Aug/16 11:12 AM;fka;Spreadsheet reports will be removed from iteraplan next year																																																						

@@ -1,1 +1,0 @@
-Duplizieren eins Jobs mit Tags wirft Exception	Möchte man einen Job als Kopie speichern, der mit einem oder mehreren Tags versehen ist, erhält man eine org.grails.taggable.TagException exception: "You need to save the domain instance before tagging it"		Bug	OpenSpeedMonitor	19/Mar/14 2:58 PM	19/Mar/14 3:31 PM																																																																				

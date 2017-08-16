@@ -1,9 +1,0 @@
-It should not be possible, to create interfaces with the same name and same used information systems.	"In iteraplan 3.x it is possible, to create interfaces with the same name and same used information systems.
-This should not be possible.
-About the Excel import is not possible.
-When Excel Import, there is another validation than creating through the user interface.
-The validation should be uniform.
-
-For migration to ""iteraplan 4.0"" it is problematic when there are multiple same interfaces exist."		Bug	iteraplan PO	14/Jan/13 8:48 AM	25/Jun/14 4:45 PM					gui	interfaces	validation							"05/Nov/13 1:43 PM;sry;Note: It is desired that there can be more than one interface between the same pair of information systems. I'm not sure about the original requirements and whether even identical names on such interfaces were requested. At least the corner case of ""no name"" but identical pairs of IS is needed for sure.
-
-I agree that it is problematic to have different validation rules in place."	25/Jun/14 4:45 PM;fka;Current status is by design																																																					

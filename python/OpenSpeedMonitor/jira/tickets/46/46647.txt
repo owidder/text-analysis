@@ -1,7 +1,0 @@
-update DoR and DoD	Update the Definition of Done and Ready and the ticket types in the Dev Guide/Project Rules		Task	iteraplan PO	13/May/14 5:10 PM	14/Jul/14 11:37 AM														"08/Jul/14 1:38 PM;wfr;See DoD here:
-https://iteraweb.iteratec.de/confluence/display/ITPL/Definition+of+Done
-
-DoR is here
-https://iteraweb.iteratec.de/confluence/display/ITPL/Definition+of+Ready
-
-Previous page for DoR is now background to current DoR."																																																						

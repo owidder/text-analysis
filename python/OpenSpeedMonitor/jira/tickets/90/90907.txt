@@ -1,3 +1,0 @@
-Add export of list to user documentation			Task	iteraplan Quickfox	20/Jul/16 9:20 AM	08/Aug/16 11:43 AM														"04/Aug/16 9:13 AM;mse;I have added a paragraph about the export to the list doc page (at the very bottom):
-
-https://www.iteraplan.de/doc/display/iteraplan53/List"																																																						

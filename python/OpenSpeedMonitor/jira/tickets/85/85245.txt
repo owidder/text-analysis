@@ -1,9 +1,0 @@
-Add drag icon	"Add a visual hint that the column header is draggable.
-
-Mouse cursor changes when hovering the drag icon.
-
-tbd.: drag icon"	83747	Sub-task	iteraplan PO	23/May/16 4:21 PM	03/Jun/16 9:50 AM														"01/Jun/16 3:28 PM;mwe;Review:
-
-* Habe das CSS angepasst, da CSS additiv ist brauchen wir nur die zusätzlichen Properties bzw. die, die wir ändern wollen in die app.css eintragen. (Siehe Commit [https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-9?cs=3248])
-
-* Damit der Nutzer weiß, dass er die Spalte verschieben kann, soll er das sofort sehen. Deshalb bitte noch das Drag-Icon (app/images/drag32.png) rechts vom Löschen-Button hinzufügen."	02/Jun/16 5:46 PM;abo;Added icon as requested in 1st review-comments.																																																					

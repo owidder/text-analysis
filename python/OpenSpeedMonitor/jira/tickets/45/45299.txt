@@ -1,9 +1,0 @@
-Hibernate exception in XMI Importer when importing data	"When trying to import data using the XMI importer a Hibernate Excetion occurs.
-
-{noformat}
-org.springframework.orm.hibernate3.HibernateSystemException: A collection with cascade=""all-delete-orphan"" was no longer referenced by the owning entity instance: de.iteratec.iteraplan.model.BuildingBlock.attributeValueAssignments; nested exception is org.hibernate.HibernateException: A collection with cascade=""all-delete-orphan"" was no longer referenced by the owning entity instance: de.iteratec.iteraplan.model.BuildingBlock.attributeValueAssignments
-        at de.iteratec.iteraplan.persistence.dao.AttributeValueDAOImpl.checkForBuildingBlocksWithMoreThanOneEnumAVs(AttributeValueDAOImpl.java:48)
-        at de.iteratec.iteraplan.businesslogic.service.AttributeTypeServiceImpl.checkForMultipleAssignments(AttributeTypeServiceImpl.java:212)
-        at de.iteratec.iteraplan.businesslogic.service.AttributeTypeServiceImpl.saveOrUpdate(AttributeTypeServiceImpl.java:230)
-        at de.iteratec.iteraplan.businesslogic.service.AttributeTypeServiceImpl.saveOrUpdate(AttributeTypeServiceImpl.java:73)
-{noformat}"		Bug	iteraplan PO	12/Dec/11 2:43 PM	15/Feb/12 11:33 AM					import	xmi																																																														

@@ -1,7 +1,0 @@
-"new release" functionality incomplete?	"iteraplan trunk provides a different ""new release"" implementation. Expectation:
-* Direct properties, attributes, relations, permissions will be copied. 
-* Business mappings will be copied.
-* Hierarchy link to superordinated application will be copied.
-* Deep copy of sub-applications: currently removed, but this functional change should be discussed first!
-* Deep copy of interfaces & transported business objects: currently removed, but this functional change should be discussed first!
-"		Bug	iteraplan PO	14/Sep/11 10:56 AM	21/Sep/11 1:59 PM					copy	usability																																																														

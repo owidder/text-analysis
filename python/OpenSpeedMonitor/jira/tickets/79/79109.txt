@@ -1,9 +1,0 @@
-[Integrationstests] fix EventResultDaoServiceTests	"- Das TestMixin muss weg
-
-- IntTestWithDBCleanup muss durch NonTransactionalIntegrationSpec ersetzt werden
-
-- Die Tests müssen von JUNIT zu SPOCK umgeschrieben werden, d.h.:
-
-   - @Before, @After und @Test muss weg
-
-   - Assert-Statements müssen zu boolschen Ausdrücken (s. andere Tests)"		Bug	OpenSpeedMonitor	05/Apr/16 11:25 AM	05/Apr/16 4:18 PM																																																																				

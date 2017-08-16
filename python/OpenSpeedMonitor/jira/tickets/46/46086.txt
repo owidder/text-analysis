@@ -1,5 +1,0 @@
-Enable the specification of default values for attributes	"If a user defines a new attribute via the administration button, he/she wants to be able to define a default value. A default value is specified as follows (ordering reflects priority):
-* enumeration attribute: at the same place where the user can specify the possible attribute values (name, default color, default description) a new check box is added that defines the value as default value (single select)
-* numeric values: a new input field is placed on the screen below the upper and lower bound which can be used to specify a default value.
-* date attribute: selection of a ""relative"" default value, e.g. today
-"		New Feature	iteraplan PO	24/Sep/13 12:39 PM																																																																					

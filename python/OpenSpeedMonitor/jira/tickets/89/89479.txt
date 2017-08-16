@@ -1,7 +1,0 @@
-Highlighting in coloring menu does not work (NCD)	"# click on an inner element
-
-# Choose inner Color: Coloring by Costs (from red to green)
-
-# click again on an inner element
-
--> at the list where you can choose the inner color Coloring by Costs (from dark to light) is highlighted"		Bug	iteraplan PO	05/Jul/16 4:29 PM	09/Aug/16 1:05 PM														09/Aug/16 9:33 AM;fka;Still broken with the current nightly build	09/Aug/16 1:05 PM;mse;Review ok.																																																					

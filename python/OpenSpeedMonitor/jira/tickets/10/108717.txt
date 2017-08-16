@@ -1,1 +1,0 @@
-Saved Queries View is broken	saved queries in IC can not be shown and executed		Bug	iteraplan Thunderduck	18/Jan/17 10:50 AM	19/Jan/17 5:02 PM																																																																				

@@ -1,9 +1,0 @@
-Page wird im Microservice manchmal nicht richtig zugeordnet	"Der Mikroservice scheint ein Problem zu haben, wenn im Skript nur MeasuredEvents angegeben werden, dann aber im MeasuredEventController manuell eine Page verlinkt wird. Dadurch ordnet der Microservice alle Dokumente der Page ""undefined"" zu.
-
-
-
-Ein Beispiel wäre der ExampleJob auf der dev."		Bug	OpenSpeedMonitor	22/Dec/16 1:02 PM	23/Dec/16 1:25 PM														"23/Dec/16 1:25 PM;msk;Das Problem ist, dass der Mikroservice die Page aus dem WptResult extrahiert. Wenn die Page nicht im Skript, sondern manuell im MeasuredEventController (im OSM) angelegt wird, kann der DetaildatenService die Page nicht zuordnen und weißt dem Result die Page undefined zu.
-
-
-
-Wir wollen das Standartverhalten vom OSM demnächst ändern, sodass es den Spezialfall nicht mehr geben wird. Daher wird das TIcket geschlossen."																																																						

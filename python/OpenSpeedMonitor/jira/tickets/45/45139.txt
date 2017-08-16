@@ -1,9 +1,0 @@
-Bulk Updates: the message background color is misleading	"By updating the entity the message background color is misleading. For example:
-1. Define bulk update for Information System with Name and date attribute
-2. Change the name and set the invalid date (i.e. 09/13/0211)
-3. Run Bulk Update
-4. The message will be shown in green, though the attribute could not be updated.
-
-I see here 2 solutions:
-1. Take another color for such messages. For example orange
-2. Update all entity properties or none. "		Improvement	iteraplan PO	13/Sep/11 2:42 PM	09/Mar/12 2:01 PM					bulkupdate									09/Mar/12 2:01 PM;kvo;Works now																																																						

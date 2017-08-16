@@ -1,1 +1,0 @@
-An empty diagram with Architectural Domain  as content type	Summary: when user goes to LSD from List view page with Architectural Domain  as content type - an empty diagram appears		Bug	iteraplan PO	24/Apr/15 9:28 AM	19/Jan/16 1:56 PM																																																																				

@@ -1,7 +1,0 @@
-History Migration, Step2	"convert old history entries to new history entries
-
-extend migration tool from IPTT-122
-
-- create new tables
-- migrate history
-- remove old history tables (if simple possible)"		Improvement	iteraplan Thunderduck	16/Sep/16 3:07 PM	21/Oct/16 3:45 PM																																																																				

@@ -1,1 +1,0 @@
-Legend slides in and out for N3CD, IFD and LSD	Implement the solution of IPTS-9 to all other diagram, i.e. N3CD, IFD and LSD		Improvement	iteraplan Speedbird	05/Jul/16 9:08 PM	22/Jul/16 9:46 AM														22/Jul/16 9:46 AM;dmkh;All legends are now sliding, review is here: https://iteraweb.iteratec.de/fisheye/cru/IP-80																																																						

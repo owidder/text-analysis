@@ -1,9 +1,0 @@
-4.1 Public environments	https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-4.1Public-Umgebung		Task	iteraplan Speedbird	13/Jun/17 5:02 PM	22/Jun/17 3:21 PM														22/Jun/17 1:41 PM;scz;REST PUT-Call failed, because APPLICATION_SETTINGS in iteraplan_ee_release was missing. We created an empty table from an working demo.	"22/Jun/17 3:20 PM;sbu;[~scz] finished  4.1.2  Personal Demo 
-
-
-
-[~sbu] uploaded Demo instance to demo-server (4.1.1  Demo-Instanzen)
-
-
-
- "																																																					

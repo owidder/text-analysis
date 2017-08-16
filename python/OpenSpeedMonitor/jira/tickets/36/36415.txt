@@ -1,1 +1,0 @@
-Action for selected jobs wirken sich auch auf nicht sichtbare Jobs aus.	Wenn man unter Measurement > Job eine "Action for selected jobs" ausführt, wirkt sich diese auch auf Jobs aus, welche durch die Filter gerade nicht sichtbar sind.		Bug	OpenSpeedMonitor	01/Apr/15 5:23 PM	16/Apr/15 10:28 AM																																																																				

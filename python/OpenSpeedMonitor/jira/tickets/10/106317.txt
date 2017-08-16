@@ -1,5 +1,0 @@
-Landscape Diagram	{color:red}UPDATE: {color} Please implement the toolarea-menu entry of the Landscape Diagram also in the Informationflow Diagram.	105406	Sub-task	iteraplan Speedbird	21/Dec/16 9:50 AM	10/Jan/17 6:36 PM														"06/Jan/17 10:02 AM;mash;Clarification to [~msr], [~fka] about UI part of the tool area: please Compare IFD and LSD UI implementation for Line Type and document requirements.
-
-* Note: ifd tool area was clarified with Fabian but not everything was updated in requirements
-
-"	10/Jan/17 12:35 PM;dmkh;[~mash], modified IFD toolarea after clarifying requirements with Marcel (*revision 5638)*.	10/Jan/17 6:35 PM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-291																																																				

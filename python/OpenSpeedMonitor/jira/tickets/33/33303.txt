@@ -1,3 +1,0 @@
-MeasuredValueController: Feld Started nicht editierbar	"Im MeasuredValueController wird das Feld Started editierbar und als Pflichtfeld angezeigt. -Jedoch wird es nicht validiert und dort eingegebene Werte werden nicht gespeichert. Welches Verhalten soll diesem Feld zugeordnet werden - soll es editiertbar sein oder nicht? Im ersteren Fall: Soll es ein Pflichtfeld sein?-
-
-*EDIT:* Wert des Feld strted wird abhängig von der locale ausgegeben, im Backend wird aber immer das Format dd.mm.yyyy erwartet, sonst schlägt die Validierung fehl."		Bug	OpenSpeedMonitor	27/Feb/15 11:18 AM	17/Apr/15 11:33 AM														17/Apr/15 11:20 AM;nku;MeasuredValueController bitte komplett rausnehmen (gar nicht mehr anzeigen).																																																						

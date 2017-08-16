@@ -1,1 +1,0 @@
-Sort the legend in the Nested Cluster Diagram	Right now, the values in the legend are unordered. Order the content of the legend so that the colour/values form a nice transition.		Improvement	iteraplan PO	20/Aug/13 9:13 AM	30/Dec/15 3:17 PM					cluster	diagram	legend	nesting	visualization																																																											

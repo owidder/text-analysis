@@ -1,1 +1,0 @@
-Remove row-name in the filter-legend of CCD	Remove the row-name in the filter-legend of CCD, *only if it is an attribute-row*.		Improvement	iteraplan Speedbird	27/Jan/17 4:23 PM	17/Feb/17 9:27 AM																																																																				

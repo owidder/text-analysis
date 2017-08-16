@@ -1,3 +1,0 @@
-Edit Service for number values	"- JSmodel changes
-
-- REST calls incl. callback function"	101339	Sub-task	iteraplan Thunderduck	03/Nov/16 11:27 AM	09/Nov/16 12:47 PM																																																																				

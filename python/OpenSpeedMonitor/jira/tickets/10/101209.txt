@@ -1,5 +1,0 @@
-JS Exception for all diagrams when option "Include information systems connected over an Interface"	"If user without permission for Interface building block selects option """"Include information systems connected over an Interface"", then he/she gets JS exception.
-
-It occurs in all diagrams where this option is available: MPD, PFD, CCD, PCD, BCD.
-
-Probably defect also occurs in IFD, but currently is unavailable for checking as is blocked by ITERAPLAN-4977 defect."		Bug	iteraplan Speedbird	02/Nov/16 12:34 PM	07/Nov/16 3:11 PM																																																																				

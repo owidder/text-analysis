@@ -1,6 +1,0 @@
-Scaling of boxes, diagram	"All cells should have exactly the same size without dependence of content elements.
-
-Effected parts:
-- context menu
-- configuration
-- taiblebuilder"		New Feature	iteraplan PO	05/Mar/15 10:36 AM	10/Jul/15 4:37 PM																																																																				

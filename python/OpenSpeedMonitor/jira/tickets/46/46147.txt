@@ -1,5 +1,0 @@
-Remove unnecessary "Unknown changes"-entries on the History Page	"Currently the history contains entries that state ""Unknown changes"" these shouldn't be displayed. To solve this problem, the history has to be filtered and the paging must be rewritten.
-
-In the appendix are 2 patches, one that handles the paging, and the second that tests the new functionality.
-
-It exists a performance problem in this implementation. If many history entires exist, it takes longer to filter the entires that are positcous."		Improvement	iteraplan PO	17/Oct/13 1:46 PM	30/Dec/15 3:31 PM																																																																				

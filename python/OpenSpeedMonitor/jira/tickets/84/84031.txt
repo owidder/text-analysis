@@ -1,7 +1,0 @@
-Doppelte Elemente in csTargetGraph/create 	Elemente in Liste von Point One* in http://localhost:8080/csTargetGraph/create sind doppelt vorhanden.		Bug	OpenSpeedMonitor	12/May/16 10:43 AM	13/May/16 1:22 PM														"13/May/16 1:22 PM;bka;Es wird doppelt angezeigt, weil es doppelt in der Datenbank vorhanden ist.
-
-In einer blanken DB werden die Einträge durch unser Bootstrap erzeugt. Auch nach einem erneuten Starten der blanko-App ist der Eintrag nicht doppelt.
-
-
-
-Es liegt also nahe, dass die Einträge _versehentlich_ doppelt im DB-Dump existieren. Falls es sehr stört, müsste man das direkt in der prod-Umgebung korrigieren."																																																						

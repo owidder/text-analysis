@@ -1,3 +1,0 @@
-Relations: No Lexicographical Ordering on Building Block Details Page	"In the _Relations_ tab of a building block's details page the lists of associated building blocks are not ordered. If the number of relations exceeds a certain amount this becomes confusing. 
-
-E.g., in an unordered list of 200 Business Units as part of a Business Domain it is very hard to find the one you want to delete."		Improvement	iteraplan PO	24/Oct/13 10:26 AM	30/Dec/15 4:54 PM					gui	usability							Enterprise Edition Build-v3.2.RC1-r21533 (2013-10-11-16-22-19)																																																							

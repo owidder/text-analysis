@@ -1,5 +1,0 @@
-Festes Mapping zwischen Measured Event und Page auflösen	"Momentan wird jedem Measured Event statisch eine Page zugewiesen. Diese Beziehung soll aufgelöst werden - es soll möglich sein mehrere gleichnamige ME zu erstellen, die verschiedenen Pages angehören.
-
-
-
-"		Task	OpenSpeedMonitor	28/Sep/16 2:31 PM	18/Jan/17 4:31 PM																																																																				

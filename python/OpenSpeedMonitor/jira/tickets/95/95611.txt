@@ -1,7 +1,0 @@
-Rename Route	"change route in applicationContext-rest.xml
-
-api/*microedit*/{type}/{id} -> api/*element*/{type}/{id}
-
-
-
-don't forget lite customization"		Improvement	iteraplan Thunderduck	08/Sep/16 4:14 PM	20/Sep/16 10:46 AM																																																																				

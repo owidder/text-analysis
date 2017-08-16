@@ -1,1 +1,0 @@
-Camunda auf die aktuelle Version 7.4 updaten	Die Camunda-Version der SecureBox-Engine sollte auf die aktuelle Version (momentan 7.4) aktualisiert werden, um neue Feature wie Business Rules oder Case Management nutzen zu können.		Story	secureCodeBox	19/Apr/16 9:32 AM	04/Jun/16 4:11 PM																																																																				

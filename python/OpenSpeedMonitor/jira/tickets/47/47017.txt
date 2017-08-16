@@ -1,8 +1,0 @@
-Titles in breadcrumb	"Titles in breadcrumb component:
-
-* home screen: ""Home""
-* list of IS: ""Information Systems""
-* single IS: name of element, for example ""Account-Sys RB # 3.1""
-* NC diagram: ""Nesting Cluster"" without diagram
-
-"	47011	Sub-task	iteraplan PO	30/Sep/14 5:05 PM	09/Jun/15 5:05 PM																																																																				

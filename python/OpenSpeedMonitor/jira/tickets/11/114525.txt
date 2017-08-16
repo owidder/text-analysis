@@ -1,5 +1,0 @@
-Ändern der Größe im PNG Download Dialog führt zu verzerrten Bildern	"Im Page Aggregation und Distribution Chart kann man im Download Dialog die Größe angeben.
-
-
-
-Dabei wird das Chart aber nicht neu gerendert, sondern einfach vergrößert was zu einer Verzerrung des heruntergeladenen Bildes führt."		Bug	OpenSpeedMonitor	10/Mar/17 10:42 AM																																																																					

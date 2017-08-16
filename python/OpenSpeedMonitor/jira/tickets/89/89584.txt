@@ -1,5 +1,0 @@
-Diagram is redrawn after closing colorpicker without changing a color	"When user do not change the color in the colorpicker and closes it, then diagram redraws. See the MPD solution (IPTS-17), where we check if the color of attribute is changed and only then call diagram redraw.
-
-
-
-Please, handle this case in all diagrams."		Improvement	iteraplan PO	06/Jul/16 5:05 PM																																																																					

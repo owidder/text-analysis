@@ -1,3 +1,0 @@
-Aktualisierung der Locations beim Eintreffen von Locations einfügen	"Beim Eintreffen von Locations werden noch nicht existierende Locations bisher angelegt. Wenn sich der Browser inzwischen geändert hat erfolgt kein Update. Dieses Update ist zu implementieren.
-
-de.iteratec.ispc.LocationAndResultPersisterService.listenToLocations(GPathResult, WebPageTestServer)"		Bug	OpenSpeedMonitor	25/Oct/13 11:18 AM	05/Nov/13 12:06 PM														05/Nov/13 12:06 PM;rhe;Wenn eine Location mit einem abweichenden Browser rein kommt, wird eine neue Location mit dem passenden Browser angelegt.																																																						

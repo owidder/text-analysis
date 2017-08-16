@@ -1,1 +1,0 @@
-Check source code distribution	Generate a source code distribution of the current version, compile and test it		Task	iteraplan PO	19/Jul/13 11:28 AM	20/Jul/13 1:53 AM														19/Jul/13 12:47 PM;svo;done, works fine.	20/Jul/13 1:53 AM;sry;No effective changes, closing.																																																					

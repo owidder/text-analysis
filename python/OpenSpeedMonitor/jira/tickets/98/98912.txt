@@ -1,3 +1,0 @@
-Create release tag	"Create svn release tag as described here:
-
-https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-3.4Release-Tagerstellen"	98906	Sub-task	iteraplan PO	12/Oct/16 9:24 AM	02/Nov/16 11:43 AM																																																																				

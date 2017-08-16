@@ -1,5 +1,0 @@
-Use only filtered IS elements from list in NCD	"To the existing list of information system list view and the nesting cluster diagram, add a transfer of the filter settings from the list to the diagram. Transfer means: 
-* if the list is filtered and shows only a set of elements, than the diagram must show exactly that set of elements as inner boxes.
-* if the list is filtered and the diagram too, the context menu of the diagram shows the correct filter settings too, even if it is displayed at the first time after the switch from list to diagram view.  For example, if the list is filtered by a name substring, the context menu must show this substring in the top ""text filter"" item.
-
-"		New Feature	iteraplan PO	26/Sep/14 4:56 PM	09/Oct/14 9:35 AM														29/Sep/14 2:14 PM;sepr;Est. 1 PD																																																						

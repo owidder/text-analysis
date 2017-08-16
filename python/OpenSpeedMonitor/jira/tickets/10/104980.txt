@@ -1,9 +1,0 @@
-Edit Number values	"* use the ipTextEditor
-
- * every simple text value should be editable
-
- * make Name (page title) editable too
-
- * also consider topLevelAttributes
-
- * attributes of attributable relations"		New Feature	iteraplan Thunderduck	07/Dec/16 5:24 PM	07/Mar/17 12:04 PM																																																																				

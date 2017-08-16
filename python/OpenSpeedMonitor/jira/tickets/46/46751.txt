@@ -1,7 +1,0 @@
-Completely remove xls (Excel 2003) support	"Remove xls support from iteraplan, everywhere (import, export, lists, ...). Also remove all then unnecessary code.
-
-Also adjust the user documentation. Don't forget to make new screenshots where applicable."		Improvement	iteraplan PO	23/Jul/14 4:40 PM	26/Sep/14 2:43 PM														"01/Sep/14 11:16 AM;dop;Updated documentation:
-
-http://www.iteraplan.de/wiki/display/upcomingIteraplan/Spreadsheet+Reports
-http://www.iteraplan.de/wiki/display/upcomingIteraplan/Output+formats
-"																																																						

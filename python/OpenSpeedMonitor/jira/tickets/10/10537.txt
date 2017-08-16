@@ -1,4 +1,0 @@
-Zeitraumauswahl erweitern	"Uwe:
-Zeitraum-Auswahl bietet nur ""Manuell"" an.
-
--> letzte Woche/letzter Monat ..."	10005	Sub-task	OpenSpeedMonitor	23/Sep/13 9:38 AM	24/Sep/13 4:26 PM														24/Sep/13 10:13 AM;nkuhn;Beim initialen Aufruf soll die letzte Woche in den Datums-Auswahlfeldern vorausgewählt sein.	24/Sep/13 4:26 PM;rhe;veraltete bootstrap datepicker ui im Projekt!																																																					

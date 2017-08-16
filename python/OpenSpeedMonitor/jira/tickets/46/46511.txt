@@ -1,5 +1,0 @@
-ElasticMI localization fallbacks	"Use the following fallbacks for meta-elements in elasticMI
-
-* if no locale is available: use english locale (nullsafe against context, useful especially for testing purposes)
-* if no value (i.e. empty string) is available for current locale: use english locale
-* if even no value is available for the english locale: use persistent name"		Bug	iteraplan PO	05/Mar/14 1:11 PM	19/Jan/16 11:33 AM																																																																				

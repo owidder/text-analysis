@@ -1,3 +1,0 @@
-Spalten mit eindeutigen Werten aus der Assettabelle extrahieren	Momentan werden alle Attribute, die wir für Assets speichern in der Assettabelle angezeigt. Eindeutige Spalten sollen extrahiert werden, um die Breite zu begrenzen. Diese Werten sollen dann über der Tabelle aufgelistet werden.		Improvement	OpenSpeedMonitor	24/Aug/16 11:03 AM	26/Aug/16 4:51 PM														"26/Aug/16 4:51 PM;msk;Die Assettabelle ist jetzt eine jQuery DataTable. Dadurch wird sie sortierbar.
-
-Vorselektierte Parameter werden in eine 2. Tabelle extrahiert."																																																						

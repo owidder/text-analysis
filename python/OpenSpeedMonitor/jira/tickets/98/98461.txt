@@ -1,3 +1,0 @@
-Inner pie chart labels near the circle borders	"*Summary:*
-
-Place the inner pie chart label near the circle borders."		Improvement	iteraplan Speedbird	07/Oct/16 3:00 PM	12/Oct/16 9:28 AM														12/Oct/16 9:28 AM;msr;Already fixed																																																						

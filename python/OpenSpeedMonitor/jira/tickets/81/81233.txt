@@ -1,5 +1,0 @@
-Update and activate filter-related e2e tests	"E2E tests which involved filtering elements apparently were x'ed out when the new filter implementation was introduced.
-
-
-
-Write new tests for the combined filter functionality and/or fix and reactivate the x'ed out tests."		Improvement	iteraplan PO	21/Apr/16 11:28 AM																																																																					

@@ -1,9 +1,0 @@
-Betamax-Tests wieder reparieren	"In allen Tests, die Betamax verwenden sollten wir:
-
- # checken, ob statt betamax nicht auch einfach der Service, der den HTTP-Call macht gemockt werden kann. Nur in Integrationstests oder unit-Tests des Codes, der unmittelbar HTTP-Requests macht sollten wir betamax einsetzen.
-
- # Wenn betamax erforderlich ist sollten wir den Test mit betamax 2.0 realisieren. Leider gibt es bisher keine Doku zu Version 2. Laut Benjamin verwenden wir diese aber bereits im Detail-Daten-Service."		Task	OpenSpeedMonitor	05/May/17 2:12 PM															"24/Jul/17 7:02 PM;nku;Statt dem Vorgehen in der Beschreibung sollten wir Betamax ganz ausbauen. Statt die für die Tests erforderlichen HTTP-Requests mit einer Capture/Replay-Library wie Betamax aufzuzeichnen sollten wir die XML/JSON-Response des entsprechenden Services direkt mocken. Dieses haben wir im OsmDetailAnalysis-Service bereits getan. Funktioniert und vereinfacht die Tests, bzw. wir müssen uns nicht mehr um den Ersatz/das Update von Betamax kümmern. 
-
-
-
-Zusätzlich zu allen Tests, die aktuell noch ignoriert werden, da sie Betamax verwenden sollte mit diesem Ticket auch dieser Test repariert werden, der ignoriert wird, seit wir statt dem HttpBuilder den http-builder-ng-core einsetzen: de.iteratec.osm.measurement.schedule.JobProcessingServiceSpec#launchJobAndPoll test"																																																						

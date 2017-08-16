@@ -1,3 +1,0 @@
-Import in some cases can't handle unsetting of values for single assignment enumeration attributes	"Sometimes when attempting to import a file where enumeration values in building blocks are unset and the enumeration attribute is a single assignment attribute, a technical error appears.
-
-Apparently the AttributeValueSetter wrongly recognizes an empty value as a collection, reporting an error because an attempt was made to assign a collection to a single value attribute."		Bug	iteraplan PO	23/Apr/14 3:05 PM	24/Apr/14 11:03 AM																																																																				

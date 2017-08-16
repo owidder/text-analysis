@@ -1,2 +1,0 @@
-Change the heading on category page	"1. Put ""information systems"" instead of ""InformationSystem""
-2. If any filters applied show a whole number of items near to sorted number - ex. ""23 of 52"""	46866	Sub-task	iteraplan PO	18/Aug/14 7:34 PM	29/Sep/14 9:48 AM																																																																				

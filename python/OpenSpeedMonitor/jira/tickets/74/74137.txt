@@ -1,3 +1,0 @@
-Feedback beim Fetchen von Locations	"Es müsste auf der show-View des WebPagetestServers eine Rückmeldung erfolgen über den Erfolg der geholten (und im OSM ggf. erzeugten) Locations.
-
-Aktuell muss man einen Job anlegen oder bearbeiten um zu sehen, ob Locations angekommen sind."		Improvement	OpenSpeedMonitor	19/Feb/16 11:43 AM	03/May/16 1:51 PM																																																																				

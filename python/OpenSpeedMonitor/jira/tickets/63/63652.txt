@@ -1,1 +1,0 @@
-Falsche Zeitzone in der Jobliste	Die Cron-Ausführungszeiten werden in der Vergangenheit angezeigt. Könnte an einer falschen Zeitzone auf dem Server liegen.		Bug	OpenSpeedMonitor	16/Nov/15 4:13 PM	18/Nov/15 9:54 AM																																																																				

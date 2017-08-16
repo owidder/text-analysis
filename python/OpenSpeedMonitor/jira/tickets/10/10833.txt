@@ -1,2 +1,0 @@
-Zeitauswahl bei der Einzelergebnisseite fehlerhaft	"Wird bei der Einzelergebnisseite derselbe Tag mit unerschiedlichen Uhrzeiten ausgewählt, z.B. 20:00 bis 23:59, so wird diese gültige Auswahl als ungültig abgelehnt.
-!bug-Uhrzeitauswahl.png!"		Bug	OpenSpeedMonitor	06/Jan/14 11:20 AM	05/Mar/15 3:36 PM																																																																				

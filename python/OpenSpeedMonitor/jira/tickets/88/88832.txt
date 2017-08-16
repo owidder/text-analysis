@@ -1,5 +1,0 @@
-Listener für DetailDaten-Persistenz schreiben	"Dieser sollte sich am ProxyService registrieren, wenn das DetailDaten-Feature aktiv ist.
-
-
-
-Dieser Listener soll die Persistenz der zugehörigen Assets im DetailDatenService per RETS-API anstoßen (siehe IT-1181)."		Task	OpenSpeedMonitor	29/Jun/16 1:10 PM	08/Jul/16 4:11 PM														06/Jul/16 3:59 PM;nku;Dieser Listener sollte sich nur dann am ProxyService registrieern, wenn die Detail-Daten-Persistenz grundsätzlich aktiviert ist (siehe IT-1196).																																																						

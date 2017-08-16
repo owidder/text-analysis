@@ -1,8 +1,0 @@
-Font in IE often Times instead of Arial	"Open the new client
-
-As-is:
-The menu bar, the tiles on the homepage, the context menus in both diagrams, the footer line and possibly some other text elements use a times font
-
-To-be:
-Arial font type should be used everywhere"		Bug	iteraplan PO	25/Apr/15 11:42 AM	27/Apr/15 9:48 AM					newClient									"25/Apr/15 4:33 PM;tam;The solution is to embed font over the link from google fonts:
-https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans"																																																						

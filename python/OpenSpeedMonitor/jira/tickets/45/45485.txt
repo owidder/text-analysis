@@ -1,1 +1,0 @@
-Select-Dropdowns broken in Bulk update	The select dropdowns are broken in Bulk update, both taking over standard values as well as in each row.		Bug	iteraplan PO	15/Apr/12 1:20 PM	17/Apr/12 8:56 AM																																																																				

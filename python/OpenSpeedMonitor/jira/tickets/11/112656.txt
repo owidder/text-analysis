@@ -1,5 +1,0 @@
-Fetchen von Locations scheitert mit Stacktrace	"Wenn man auf den Button _Fetch Locations_ klickt für einen WPT-Server, auf dem (noch) keine Locations eingerichtet sind bekommt man eine häßliche Exception mit Stacktrace zu sehen.
-
-
-
-Das sollten wir abfangen und eine entsprechende Meldung anzeigen."		Bug	OpenSpeedMonitor	22/Feb/17 4:42 PM	20/Mar/17 11:32 AM																																																																				

@@ -1,1 +1,0 @@
-Support Export of Nesting Cluster Diagrams to MS Visio	After configuring a nesting cluster diagram it should be possible to select MS Visio as output format.		New Feature	iteraplan PO	29/Aug/13 2:51 PM	30/Dec/15 3:17 PM																																																																				

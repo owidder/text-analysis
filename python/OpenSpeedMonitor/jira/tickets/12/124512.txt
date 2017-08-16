@@ -1,5 +1,0 @@
-Das Formular zur Job Erstellung mithilfe des Bootstrap-Validator bei Eingabe prüfen	"* Tabs hervorheben in denen Fehler aufgetreten sind
-
- * Cron String validieren
-
- * `chosen-select` wird noch nicht rot umrandet"		Improvement	OpenSpeedMonitor	15/Jun/17 4:47 PM																																																																					

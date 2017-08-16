@@ -1,3 +1,0 @@
-LSD Legend Filter too high	"The selected filter in the legend are drawn too high
-
-"		Bug	iteraplan PO	03/Nov/15 5:36 PM	04/Nov/15 4:17 PM					filter	legend	lsd																																																													

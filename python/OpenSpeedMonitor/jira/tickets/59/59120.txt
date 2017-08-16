@@ -1,1 +1,0 @@
-Delete "Pin"-entry in Toolarea of IFD	Delete the entry "Pin" in the toolarea of the Information Flow Diagram		Bug	iteraplan PO	05/Oct/15 11:07 AM	07/Oct/15 3:31 PM					toolArea																																																															

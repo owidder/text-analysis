@@ -1,2 +1,0 @@
-Unit-Tests for ITERAPLAN-3079	"Create Unit-Tests for ITERAPLAN-3079.
-SVG-Export should be tested."	47569	Sub-task	iteraplan PO	05/May/15 10:44 AM	26/May/15 10:56 AM					newClient																																																															

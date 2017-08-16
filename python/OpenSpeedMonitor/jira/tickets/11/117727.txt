@@ -1,7 +1,0 @@
-IFD sliders broken	"Layout sliders in IFD diagram throw exception.
-
-
-
-!ifd-sliders.png!"		Bug	iteraplan Speedbird	05/Apr/17 11:47 AM	26/May/17 8:44 AM														12/Apr/17 10:16 AM;roia;Fixed in scope of IPTS-667	23/May/17 4:48 PM;fka;Anything still to do?	23/May/17 4:48 PM;roia;I guess not, but let QA's double-check.	"24/May/17 4:46 PM;naba;Checked with nightly bundle (#320 build) and with DEV environment in Firefox/Chrome/IE11. Works without exceptions.
-
-Issue can be closed."																																																			

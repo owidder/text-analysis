@@ -1,9 +1,0 @@
-Exception when collapsing the sections in the single element view	"When collapsing a section in the Single element view, the following error occures, but in general the collapsing is working.
-
-
-
-It looks like this is a problem with saving the collapsed sections in the URL/the user settings
-
-
-
-TypeError: An exception occurred: Cannot create property 'attr-tab' on string '[object Object]'"		Bug	iteraplan Speedbird	02/Mar/17 4:28 PM	21/Mar/17 6:45 PM														21/Mar/17 6:45 PM;mash;Review is done																																																						

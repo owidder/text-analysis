@@ -1,6 +1,0 @@
-Schreibtischtests der Infrastruktur			Task	OpenSpeedMonitor	21/Oct/13 3:41 PM	23/Oct/13 6:52 PM														"21/Oct/13 5:43 PM;rhe;Soweit OK
-
-Multistep-Agent hat Probleme mit js clicks."	"22/Oct/13 10:20 AM;mzeimer;Jobergebnisse auf WPT Test-Monitor: User: otto_monitoring, Folder: iteratec_seu_tests gesichtet (Ergebnisse in Liste).
-Unter Reports Graph angesehen und mit Test-ISM verglichen (Event-Result-Dashboard)"	"22/Oct/13 11:47 AM;mzeimer;Die Agenten wurden getauscht:
-Im Kontor steht nun der multistep Agent und auf WPT1 der ""normale"" Agent. Details siehe: 
-https://iteraweb.iteratec.de/confluence/display/ispeed/Test-Infrastruktur+iteraSpeed"																																																				

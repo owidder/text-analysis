@@ -1,5 +1,0 @@
-Modalen Dialog zum Bearbeiten des Time Series Charts überarbeiten	"Man sollte die Input Felder mehr aufräumen und einheitlicher gestalten.
-
-Außerdem sollte die Checkboxen im ""neuen OSM Style"" als Buttons die eingedrückt werden können realisiert sein.
-
-Global ist inzwischen ein Colorpicker im Bootstrap Design verfügbar. Dieser sollte nun auch hier verwendet werden."		Bug	OpenSpeedMonitor	19/Jan/17 10:20 AM	02/Feb/17 5:20 PM														19/Jan/17 10:23 AM;jwi;Zur Funktionalität des **graph alias** Buttons siehe IT-1465																																																						

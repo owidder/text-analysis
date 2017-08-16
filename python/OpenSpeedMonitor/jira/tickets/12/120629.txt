@@ -1,5 +1,0 @@
-Testdaten-Erzeugung vereinfachen	"Durch den Einsatz des folgenden Plugins sollte die Generierung von Testdaten sich deutlich vereinfachen lassen:
-
-
-
-http://plugins.grails.org/plugin/longwa/build-test-data "		Task	OpenSpeedMonitor	05/May/17 11:53 AM															10/May/17 2:24 PM;nku;Exemplarisch umgesetzt in der Testklasse CsiConfigIOControllerSpec. Für alle Unit-Testkestklassen wird das jetzt umgesetzt in IT-1701																																																						

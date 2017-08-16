@@ -1,8 +1,0 @@
-Create Unit-Tests for the Excel 2007 file format exports (legacy version)	"Change the existing Unit-Tests so that they test both, the excel 2003 and the excel 2007 export files.
-
-Create Unit-Test for the Project-Report."	45630	Sub-task	iteraplan PO	22/Mar/13 10:14 PM	16/Apr/13 8:43 AM					excel	test								"25/Mar/13 11:42 AM;jme@iteratec.de;Decision:
-For all ...SheetTest and ...ReportTest:
-Explicit @Test-method for each excel format.
-Reason: You can see each test run in the result.
-
-Alternatively you could iterate over a list of excel templatetypes and test each version from within one test method."	25/Mar/13 3:08 PM;jme@iteratec.de;DONE: Existing unit tests extended to Excel 2007	15/Apr/13 3:35 PM;sfe;Project report test still missing.	16/Apr/13 8:43 AM;sfe;Looks fine.	16/Apr/13 10:39 AM;sry;Thx.																																																		

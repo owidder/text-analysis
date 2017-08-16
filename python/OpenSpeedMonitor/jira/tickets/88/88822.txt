@@ -1,3 +1,0 @@
-Fix Queue Status-Seite	"Siehe IT-1177
-
-Die Seite soll danach wieder eingetoggelt werden."		Task	OpenSpeedMonitor	29/Jun/16 11:41 AM	21/Sep/16 11:33 AM																																																																				

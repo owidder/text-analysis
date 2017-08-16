@@ -1,7 +1,0 @@
-Nesting Cluster Diagram should have a minimal size	"Currently, the Nesting Cluster Diagram has no minimal size (height or width). As a result, if a diagram without content is created, it is displayed as a blank SVG file. The file does contain the title and logos, but has a negative width, which results in the contents not being visible. If PDF is chosen as an output format instead of SVG, the Batik transcoder fails with an exception regarding the negative length of the diagram.
-
-To Reroduce:
-1. Configure a Nesting Cluster Diagram with any outer and inner Universal Types
-2. Filter the outer type and make sure that no elements are selected. Confirm the selection.
-3. Make sure that orphaned elements are not displayed.
-4. Generate a diagram."		Bug	iteraplan PO	07/Oct/13 6:40 PM	10/Oct/13 11:09 AM					cluster	nested	nesting	vbb	visualization					10/Oct/13 11:09 AM;bra;(/) works	11/Oct/13 9:18 AM;psc;Reviewed. Ticket will be closed.																																																					

@@ -1,1 +1,0 @@
-Unterstützung von Websites die erst mittel AJAX nachgeladen werden	Als Nutzer möchte ich auch in der Lage sein Seiten scannen zu können, die erst erst nach einem loading Screen per ajax nachgeladen werden.		New Feature	secureCodeBox	25/Jan/17 9:07 AM	28/Feb/17 9:10 AM					Energy																																																															

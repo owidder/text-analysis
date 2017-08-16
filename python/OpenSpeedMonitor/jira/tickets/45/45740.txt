@@ -1,1 +1,0 @@
-"Filter by saved query" dropdown on building block overview pages doesn't correctly display saved queries with a slash in their name	Possible reason: wrong escaping of names		Bug	iteraplan PO	31/May/13 10:24 AM	04/Jun/13 12:58 PM					saved_filters																																																															

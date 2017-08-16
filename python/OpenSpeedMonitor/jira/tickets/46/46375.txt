@@ -1,5 +1,0 @@
-searched for ACT!	"Searching for ACT! fails, with this error message:
-
-maxClauseCount is set to 1024
-
-Perhaps the input isn't scrubbed, so the exclamation point is being treated as a special character?"		Bug	iteraplan PO	04/Dec/13 10:52 PM	26/Aug/14 3:05 PM														11/Aug/14 10:32 AM;dop;This issue was fixed and should be fixed after Ticket ITERAPLAN-2655 has been implemented. 	21/Aug/14 2:13 PM;dop;Major change of search functionality: ITERAPLAN-2667 																																																					

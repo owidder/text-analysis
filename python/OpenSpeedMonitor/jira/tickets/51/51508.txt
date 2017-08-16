@@ -1,9 +1,0 @@
-table-fixed-header funktioniert noch nicht wieder	"Die Header-Spalten werden schmaler, wenn man nach unten scrollt.
-
-Der Fehler tritt in geringerem Umfang auch in bisherigen Versionen auf:
-
-http://demo.openspeedmonitor.org/job/list
-
-
-
-Möglicherweise also gar kein Fehler aufgrund des Umbaus Asset-Pipeline."		Bug	OpenSpeedMonitor	22/Jul/15 9:56 AM	09/Oct/15 5:50 PM														09/Oct/15 5:50 PM;nku;Funktioniert nach Umstellung IT-698/Javascript-Synchronisierung wieder.																																																						

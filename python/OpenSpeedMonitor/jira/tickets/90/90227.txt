@@ -1,5 +1,0 @@
-Listen trotz ausgewähltem Element nach "Show" ausgegraut	"Wenn man im Browser|Location - Tab oder im Connectivity - Tab ein  Element aus der Liste auswählt und sich dann den Graphen anzeigen lässt, werden die Listen wieder ausgegraut, als ob ""select all"" ausgewählt wäre.
-
-
-
-Das tritt sowohl unter Measurment results, als auch unter CSI auf."		Bug	OpenSpeedMonitor	12/Jul/16 12:22 PM	12/Sep/16 11:07 AM																																																																				

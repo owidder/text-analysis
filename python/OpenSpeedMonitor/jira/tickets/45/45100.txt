@@ -1,2 +1,0 @@
-Some hotkeys don't work	"Hotkeys for Copy and Save don't seem to work. Other hotkeys work as expected (but I didn't check all of them)
-Firefox and IE9 have been tested."		Bug	iteraplan PO	25/Aug/11 12:06 PM	08/Sep/11 11:06 AM					hotkeys									07/Sep/11 4:04 PM;vsh;Only copy doesn't work. Investigating.	08/Sep/11 11:05 AM;bsi;OK.																																																					

@@ -1,7 +1,0 @@
-setUserAgent by location	"Ein initiales setUserAgent sollte man für eine location konfigurieren können.
-
-So wäre für Agenten-Arten, die nicht fix einen UA setzen können sicher gestellt, dass alle Tests diesen UA setzen. Aktuell können wir für mobile Agenten den UA z.B. nur per Skript setzen.
-
-
-
-Wenn für eine location ein UA konfiguriert ist würde bei jeder Job-Ausführung auf dieser location dem Test-Script vor dem Absetzen ein setUserAgent vorangestellt. Setzt jemand im Skript auch einen UA würde dieser den gesetzten location-Default vermutlich in WPT überschreiben. "		Improvement	OpenSpeedMonitor	01/Oct/15 9:44 AM																																																																					

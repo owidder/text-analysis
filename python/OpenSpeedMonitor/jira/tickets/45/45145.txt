@@ -1,3 +1,0 @@
-output formats for spreadsheet reports not readable with IE	Internet Explorer 8, spreadsheet reports: the dropdown for "output" is too small in size, so that long entries can't be read / distinguished. Example: "Microsoft Project 2003/2007 XML Format" and "Microsoft Project 2003/2007 XML Format including Subordinated Buildingblocks". In IE 8, both entries seem to be the same. Please double the width of dropdowns for "output", "template" and "add new column", and test also with IE.		Bug	iteraplan PO	14/Sep/11 2:48 PM	23/Sep/11 10:56 AM					reports									"21/Sep/11 2:24 PM;kvo;We should file this bug with Microsoft ;)
-Anyway we will simply make the dropdowns wider
-"	22/Sep/11 2:23 PM;agu;Doubled the wide.																																																					

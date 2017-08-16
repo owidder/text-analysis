@@ -1,5 +1,0 @@
-Save user settings at browser window/tab close			Improvement	iteraplan Quickfox	06/Sep/16 2:18 PM	16/Sep/16 2:06 PM														06/Sep/16 2:20 PM;tsu;see https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onunload	"13/Sep/16 3:46 PM;tsu;Review Comments:
-
-if I close the tab the beforeunload eventlistener function is called, but nothing is send to the server"	"16/Sep/16 2:06 PM;mwe;There is only the possibility to do synchronous stuff in the onbeforeunload event. Because we use async REST it is not possible to save the user settings at browser window/tab close without building a new synchronous interface.
-
-Source: http://stackoverflow.com/questions/12571705/getting-onbeforeunload-to-work-with-a-settimeout"																																																				

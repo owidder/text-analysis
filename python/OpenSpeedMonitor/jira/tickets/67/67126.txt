@@ -1,7 +1,0 @@
-Karma Dependency Script	Es sollte ein Script existieren, welches alle benötigten Karma dependencies über npm installiert.		Task	OpenSpeedMonitor	16/Dec/15 11:14 AM	16/Dec/15 11:18 AM														"16/Dec/15 11:18 AM;bwo;Folgendes Script wurde erstellt:
-
-/test/unit/javascript/scripts/karma-install.sh
-
-
-
-Es beinhaltet ausschließlich die karma dependencies über npm. Sowohl nodejs als auch npm müssen zuvor installiert werden. Außerdem muss das script mit sudo Rechten ausgeführt werden."																																																						

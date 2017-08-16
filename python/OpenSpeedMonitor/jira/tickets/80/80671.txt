@@ -1,7 +1,0 @@
-Remove overhead from single element changes via REST	"Currently we are using an adjusted import process for writing single element changes via REST.
-
-This introduces a lot of overhead, for example during construction of a MiIteraplanDiffWriter.
-
-
-
-This should be changed to an own process for single element changes, instead of re-using an ill-fitting process from mass imports."		Improvement	iteraplan PO	15/Apr/16 5:50 PM																																																																					

@@ -1,4 +1,0 @@
-Custom Dashboards CE/Win7/IE9/hsql		46148	Sub-task	iteraplan PO	24/Oct/13 4:22 PM	25/Oct/13 3:14 PM														24/Oct/13 5:12 PM;svo;In CE, the document templates page is not visible. Thus, no dashboard templates can be created, edited, etc. No template tests will be executed here.	"25/Oct/13 11:13 AM;svo;Some of the tests could not be executed properly, because in CE, no dashboard templates can be edited, so I had to work with the demo one. 
-However, most tests worked fine. 
-Identified some issues with empty reports in TC1 step 4 (see tickets ITERAPLAN-2024 and ITERAPLAN-2025). 
-Also, TC2 steps 17-19 do not work according to Test Spec. This is covered in ITERAPLAN-2028."																																																					

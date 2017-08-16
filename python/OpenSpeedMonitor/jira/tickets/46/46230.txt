@@ -1,4 +1,0 @@
-Neighbourhood Diagram: long names slightly out of bounds	"When creating a nbh-diagram and the name of one of the components is too long, it gets shortened to fit into the diagram-box.
-But right now, the shortened name is still a little bit too long.
-
-Example: see attached jpg"		Bug	iteraplan PO	25/Oct/13 1:04 PM	30/Dec/15 4:54 PM					diagram	visualization																																																														

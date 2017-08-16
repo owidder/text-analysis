@@ -1,5 +1,0 @@
-With the Excel import, it is possible to create information systems, with invalid names.	"With the Excel import, it is possible to create information systems, with invalid names.
-So it is possible, to create an information system with a "":"" in the name.
-The problem exists in version 3.x.
-The GUI is not the problem.
-The problem only occurs when importing."		Bug	iteraplan PO	13/Jan/13 3:16 PM	09/Apr/13 3:00 PM					excel	import																																																														

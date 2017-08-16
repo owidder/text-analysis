@@ -1,1 +1,0 @@
-Fix: WeeklyShopMultiCSIGroupsIntTest		10316	Technical task	OpenSpeedMonitor	19/Aug/13 11:44 AM	20/Aug/13 5:30 PM														19/Aug/13 11:46 AM;rhe;Test muss laufen, sonst kann IT-43 nicht abgeschlossen werden																																																						

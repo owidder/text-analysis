@@ -1,9 +1,0 @@
-Integration environment	"Update the integration environment as described here:
-
-https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-3.3Integrationsumgebung"	98906	Sub-task	iteraplan PO	12/Oct/16 9:17 AM	27/Oct/16 3:39 PM														"27/Oct/16 11:31 AM;mse;Iteraplan 5.4 was deployed to the integartion tomcat with a new database. It's available here:
-
-http://iteraplan.iteratec.de:8081/iteraplan_5_4_0
-
-
-
-The personal demo system was *not* updated and GetIteraplanDemo was not deployed as it is currenty reviewed. Will be followed-up by [~sfe]. The Release guide was updated to make this clearer."																																																						

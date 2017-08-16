@@ -1,9 +1,0 @@
-Build DataModelBuilder	"Build a DataModelBuilder similar to the MetaDataBuilder.
-
-
-
-It makes the building of data for the tests easier.
-
-
-
-See the tests of the linked Issue for the structure of the dataModel to build."		Improvement	iteraplan PO	13/Apr/16 9:00 AM																																																																					

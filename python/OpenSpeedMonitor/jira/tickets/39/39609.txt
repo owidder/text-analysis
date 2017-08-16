@@ -1,5 +1,0 @@
-Pro Quartz-Job konfigurierbar machen, ob BatchActivities erzeugt werden   	Fachlich noch genauer zu definieren, wwie das umgesetzt werden soll.		Task	OpenSpeedMonitor	04/May/15 10:16 AM	12/May/15 3:10 PM														"12/May/15 3:10 PM;bwo;Es gibt nun die Möglichkeit via boolean zu bestimmen um die BatchActivity persistiert wird. In allen Quartzjobs steht ein boolean zum Einstellen. 
-
-
-
-Es sollte noch eine Möglichkeit den Wert via über das Interface zu verändern."																																																						

@@ -1,2 +1,0 @@
-Level settings are not preserved during landscape diagram configuration	When configuring a landscape diagram, level settings (e.g. only level 1) are not preserved when deciding x-axis, y-axis, filtering. You have to reset desired levels before saving / executing the report.		Bug	iteraplan PO	16/Nov/11 10:54 AM	01/Feb/12 10:10 AM					diagram									"01/Feb/12 10:10 AM;lci;The levers are not resetted anymore.
-The new behavior is to adopt the levels already set for content or other axes."																																																						

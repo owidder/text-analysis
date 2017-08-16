@@ -1,1 +1,0 @@
-Das Ausklappen der Untermenüs in der Sidebar animieren	Die Untermenüs sollten nicht einfach verschwinden sondern mit einer Transition versehen werden.		Improvement	OpenSpeedMonitor	01/Feb/17 1:52 PM																																																																					

@@ -1,5 +1,0 @@
-Excel import - "speaking" log messages	"Currently the log messages during Excel import are quite ""technical"". E.g. there are ""DEBUG"" messages presented to the user.
-
-Would propose to show meaningful log messages, without leading DEBUG, INFO etc. but just tell the user what happened. In his language preferably, of course (see ITERAPLAN-42)"		Improvement	iteraplan PO	19/May/11 7:41 AM	27/Jun/12 1:26 PM					excel	import								"31/Jan/12 2:16 PM;tse;Also make sure that the error messages are understandable.
-
-See e.g. ITERAPLAN-474, error message for cycles in import."	27/Jun/12 1:26 PM;tse;Status , info, and error messages are way more meaningful with the new Excel importer.																																																					

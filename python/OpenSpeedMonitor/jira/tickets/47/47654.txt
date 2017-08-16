@@ -1,1 +1,0 @@
-Menu for Content type appears instead of menu for axis	Summary: Sometimes when user clicks on second line in the axis (system's list) the Context menu for content elements appears instead of Context menu for axis		Bug	iteraplan PO	21/Apr/15 2:53 PM	19/Jan/16 1:57 PM																																																																				

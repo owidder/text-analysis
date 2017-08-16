@@ -1,9 +1,0 @@
-4.3 EAM area	https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-4.3EAM-Bereich		Task	iteraplan Speedbird	13/Jun/17 5:03 PM	22/Jun/17 3:35 PM														"22/Jun/17 3:35 PM;sbu;[~sbu] uploaded migration scripts (4.3.1  Migrationsskripte und -Anleitung online stellen)
-
-
-
-[~scz] updated the iteraplan documentation files for R6.0 (4.3.2 Dokumentations-Page anpassen) and added missing steps to the the Release-Process Article 4.3.2.
-
-
-
- "																																																						

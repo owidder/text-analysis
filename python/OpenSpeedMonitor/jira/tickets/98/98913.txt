@@ -1,3 +1,0 @@
-Copy build artefacts to file server	"Copy build artefacts to file server as described here:
-
-https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-3.5Build-ArtefakteaufFileserverkopieren"	98906	Sub-task	iteraplan PO	12/Oct/16 9:24 AM	03/Nov/16 8:05 AM														27/Oct/16 11:55 AM;mse;* The record of the release 5.4 presentation will be uploaded by [~msr]																																																						

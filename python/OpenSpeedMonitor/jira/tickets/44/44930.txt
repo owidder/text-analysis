@@ -1,3 +1,0 @@
-Bulk delete of technical components	" When the user tries to perform a bulk delete of all existing technical components, this is not possible due to an error that occurs: ""not-null property references a null or transient value"". 
-Problem seems to be caused by trying to delete technnical components, whose parents have already been deleted."		Bug	iteraplan PO	11/May/11 4:17 PM	07/Jun/11 9:36 AM					components	technical								"20/Jul/11 5:32 PM;sry;	ITERAPLAN-150: Übernahme von ITERAPLAN-30 in den 2.8-Branch: changesets [13578], [13666], [13667].
-* problem of deleting the technical components solved "																																																						

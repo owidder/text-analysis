@@ -1,1 +1,0 @@
-CodeMirror Breite dynamisch anpassen			Improvement	OpenSpeedMonitor	24/Mar/14 6:52 PM	26/Mar/14 12:40 PM																																																																				

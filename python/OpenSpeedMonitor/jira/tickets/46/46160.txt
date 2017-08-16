@@ -1,4 +1,0 @@
-Dashboard Template allows linking of Attribute Cluster Diagrams	"Currently, a Cluster Diagram for Attributes can be added to a Dashboard Template. While this is generally OK, it may lead to confusion a particular case:
-If the selected Attribute is enabled for the Builting Block Type of the Dashboard Template, the Building Blocks of this type will be added to the resulting diagram (in a Custom Dashboard) not in accordance with the Saved Spreadsheet Report used for the Custom Dashboard, but rather with all Building Blocks which have a value set for the selected Attribute.
-
-Note: It should also be documented somewhere that the Saved Spreadsheet Report is used to replace the filter in each Saved Graphical Report, with the exception of Nesing Cluster Diagrams."		Bug	iteraplan PO	17/Oct/13 3:45 PM	30/Dec/15 3:34 PM					cluster	dashboard																																																														

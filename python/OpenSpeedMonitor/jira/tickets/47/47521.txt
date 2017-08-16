@@ -1,7 +1,0 @@
-Wrong color for tile on Recent view page	"Steps to reproduce:
-1. Go to NCD page
-2. Select the Business Object as inner type
-3. Save the diagram
-4. Go to Recent view page
-Actual: Tile for saved diagram colored by red color
-Expected: Tile should be colored by yellow color"		Bug	iteraplan PO	24/Mar/15 10:05 AM	07/Apr/15 1:29 PM																																																																				

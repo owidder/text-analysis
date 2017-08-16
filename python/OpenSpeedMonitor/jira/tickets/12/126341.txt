@@ -1,5 +1,0 @@
-Refactor BBT list		124430	Sub-task	iteraplan Speedbird	05/Jul/17 10:16 AM	14/Jul/17 10:15 AM														13/Jul/17 7:27 AM;viol;[~dmkh] please fix on [URL parameters for new client|https://iteraweb.iteratec.de/confluence/display/ITPL/URL+parameters+for+new+client]	"13/Jul/17 8:56 AM;dmkh;[~viol], revisions *7270, 7287, 7292* are related to ticket IPTS-1090 and were mistakenly added to this ticket
-
-
-
-URL parameters for diagrams will be added after IPTS-1090 will be completed"	14/Jul/17 10:15 AM;viol;Review is done. All comments are resolved																																																				

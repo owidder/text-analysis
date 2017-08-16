@@ -1,9 +1,0 @@
-Support for diagram macros	"For the rich editor (dashboard templates) implements a support for diagram macros.
-This should be a pop up where I can choose saved query (diagram).
-It should be only this saved query / diagrams displayed, which have the chosen buildingblock type as content.
-
-When the user has selected an saved query / diagram, the id of this saved query surrounded with the <Diagram> tag is to paste into the text area / rich editor.
-
-Example:
- <Diagram>[ID]</Diagram> 
-"	45668	Sub-task	iteraplan PO	24/May/13 2:16 PM	12/Jun/13 1:28 PM					dashboard	usability								12/Jun/13 1:28 PM;bra;works fine																																																						

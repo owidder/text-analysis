@@ -1,6 +1,0 @@
-Script.testedPageNames in List<Page> umwandeln	"testedPageNames sind im Moment Strings:
-{code}
-static hasMany = [ testedPageNames: String ]
-{code}
-
-Nach der Umwandlung sollen Eventnamen, die sich nicht auf Pages mappen lassen, auf die Page 'UNDEFINED' verweisen, die immer in der Datenbank vorhanden ist."		Task	OpenSpeedMonitor	17/Mar/14 6:22 PM	28/Mar/14 1:54 PM																																																																				

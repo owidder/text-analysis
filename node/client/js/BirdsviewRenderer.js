@@ -60,7 +60,7 @@ bottle.factory("BirdsviewRenderer", function (container) {
         }
 
         function waitAndDraw(id) {
-            wait(30, function () {
+            wait(0, function () {
                 return draw(id);
             }).then(function () {
                 stopAndDraw(id);
@@ -92,7 +92,7 @@ bottle.factory("BirdsviewRenderer", function (container) {
                     funcDoEachTick().then(function () {
                         setTimeout(function () {
                             waitOneTickOrStop(tickCtr+1);
-                        }, 2000);
+                        }, 60000);
                     });
                 }
             }

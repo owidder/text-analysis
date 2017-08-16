@@ -1,5 +1,0 @@
-Permanently remove all links "Show in Classic Client"	Permanently remove all links "Show in Classic Client" - e.g. in the header		Improvement	iteraplan Speedbird	27/Mar/17 10:12 AM	04/May/17 12:18 PM														"04/May/17 10:33 AM;viol;Review is done: [https://iteraweb.iteratec.de/fisheye/cru/IP-565]
-
-
-
- "																																																						

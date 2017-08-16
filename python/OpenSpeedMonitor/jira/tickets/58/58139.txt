@@ -1,1 +1,0 @@
-Anpassung CSI-Berechnung mit Berücksichtigung des Browser/Connectivity-Gewichts			New Feature	OpenSpeedMonitor	24/Sep/15 1:38 PM	30/Nov/15 4:37 PM																																																																				

@@ -1,7 +1,0 @@
-Paketstruktur anpassen	"Die Packagetstruktur der Klassennamen enthält zur Zeit die Mavenstruktur: src.main.groovy.*
-
-
-
-Stattdessen sollte die Packagestruktur den Java Conventions folgen. Bsp.:
-
-de.iteratec.securitydevops.*"		Improvement	secureCodeBox	05/Nov/14 9:05 AM	14/Nov/14 1:10 PM																																																																				

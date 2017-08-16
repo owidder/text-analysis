@@ -1,5 +1,0 @@
-Statische Code-Analyse einrichten	"Wir sollten ein Tool einrichten, was automatisch statische Code-Analyse fährt. Was wir zu diesem Zweck schonmal eingerichtet hatten ist Cobertura für Testabdeckung ([https://jenkins.hh.iteratec.de/view/OpenSpeedMonitor/job/TEST%20COBERTURA%20OpenSpeedMonitor%20DEVELOP/)] und CodeNarc ([http://codenarc.sourceforge.net/codenarc-HtmlReportWriter.html).] 
-
-
-
-Wir sollten aber recherchieren, was es hier für Groovy/Grails gibt, bzw. ob Standard-Java-Lösungen für uns in Frage kommen."		Task	OpenSpeedMonitor	05/May/17 2:17 PM																																																																					

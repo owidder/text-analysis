@@ -1,5 +1,0 @@
-Release Notes v 3.4 schreiben	"Mit der Umsetzung von 4-A werden wir auf Github ein neues Release veröffentlichen.
-
-Hierfür brauchen wir Release notes in der selben Form wie für die bisherigen Releases:
-
-https://github.com/IteraSpeed/OpenSpeedMonitor/releases "		Task	OpenSpeedMonitor	15/Feb/16 11:24 PM	25/Feb/16 4:44 PM																																																																				

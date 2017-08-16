@@ -1,4 +1,0 @@
-Nesting Cluster Diagram: relations	"Currently you cannot, for example, cluster Technical Components by Infrastructure Elements, because they are, internally, not directly related to each other, instead by the tcr2ie association building block.
-It is similar with the relations between the elements of Business Mappings.
-
-These relations should be available to select."		Improvement	iteraplan PO	15/Nov/11 2:49 PM	20/Jan/12 2:10 PM					cluster	nesting								18/Nov/11 1:17 PM;csh;a related problem occurs when businessobjects and interfaces are considered, effectively rendering several "two-hop" relationships (TCR-Interf-BO) as three hops (TCR-interf-transport-BO)																																																						

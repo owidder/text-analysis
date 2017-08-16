@@ -1,9 +1,0 @@
-Masterplan Diagram: Productive period is not shown if starting point is unassigned	"Summary:
-
-Masterplan Diagram: Productive period is not shown if starting point is unassigned
-
-
-
-Reproduce:
-
-* Ensure that the timespan bars are shown even if starting point or end point is not assigned (=-infinity or +infinity)"		Bug	iteraplan PO	08/Feb/17 1:44 PM	08/Feb/17 4:44 PM																																																																				

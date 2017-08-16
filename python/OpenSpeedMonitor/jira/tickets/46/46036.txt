@@ -1,5 +1,0 @@
-Error handling and logging for XMI import	"Currently the XMI import does not write error log entries within the first import step and also does not show a precise error messsage in the GUI. The error is only desribed as a general ""technical error"".
-
-Therefore it is very difficult and time consuming to find out what causes an import error. 
-
-The error handling and logging should be improved for the XMI import."		Improvement	iteraplan PO	28/Aug/13 12:54 PM	30/Dec/15 3:17 PM					import																																																															

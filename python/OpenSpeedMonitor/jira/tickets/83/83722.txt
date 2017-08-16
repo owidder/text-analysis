@@ -1,3 +1,0 @@
-All building block types			New Feature	iteraplan PO	10/May/16 10:59 AM	01/Jun/16 12:32 PM														17/May/16 6:23 PM;mwe;Commit [3106|https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-9?cs=3106] belongs to this Issue.	"18/May/16 9:58 AM;mwe;Waiting for answer of [~wfr] to the question: What should happen if the user enters a non-type-string into the url?
-
-The answer of [~wfr] and [~sfe] agreed with [~mwe] is that there should be a modal dialog that says that the user misspelled the building block type in the URL or does not have sufficient permission to view is."																																																					

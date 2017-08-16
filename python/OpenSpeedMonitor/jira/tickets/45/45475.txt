@@ -1,8 +1,0 @@
-Broken popover with detail information	"In the detail information are missing or incorrect labels for enumeration attributes. (picture: Fehler.png -> 1)
-
-Detail information on the right side cannot be considered as they go over the side of the screen. (picture: Fehler.png -> 2)
-
-In the read mode of building blocks, in the popover are listed the ""Possible Attribute Values"". In fact, it contains only the current value. In some cases, this value is unspecified. (picture: Fehler2.png)
-In the read mode, a better name for ""Possible Attribute Values"" is for example ""Current Attribute Values"".
-
-"		Bug	iteraplan PO	12/Apr/12 10:05 AM	20/Apr/12 1:15 PM														20/Apr/12 11:17 AM;gph;Popups in the last column are still not readable.	20/Apr/12 1:15 PM;gph;Looks ok now.																																																					

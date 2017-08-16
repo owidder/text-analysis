@@ -1,9 +1,0 @@
-3.2 Test Bundles and Installers	"[https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-3.2Testen]
-
- * Basic Bundle
-
- * Corporate Installer - MS-SQL (Mac OS)
-
- * Premium Installer - Oracle (Windows) & LDAP
-
- * Basic Installer - MySQL (Windows)"		Task	iteraplan Speedbird	13/Jun/17 5:00 PM	22/Jun/17 10:17 AM																																																																				

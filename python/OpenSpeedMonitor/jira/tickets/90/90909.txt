@@ -1,1 +1,0 @@
-Migration scripts for ReactorScriptConfig	Since there is new db entity, migration scripts should be created for all three databases (MySQL, Oracle, MS SQL Server)		Improvement	iteraplan Quickfox	20/Jul/16 9:25 AM	02/Aug/16 10:37 AM																																																																				

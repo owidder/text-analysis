@@ -1,2 +1,0 @@
-[Excel Import] wrong format of the Error Status	"I have created an error while Excel Import.
-The status of the individual import steps is always written flush with each other. With the exception of ""Error"". This status is moved to the left and not bold. See attached image."		Bug	iteraplan PO	15/Sep/14 3:43 PM	22/Sep/14 3:17 PM																																																																				

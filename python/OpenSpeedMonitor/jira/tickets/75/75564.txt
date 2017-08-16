@@ -1,1 +1,0 @@
-Ngnix als reverseProxy einführen, um den Zugriff auf die Tools zu vereinfachen			Improvement	secureCodeBox	03/Mar/16 4:28 PM	11/Jul/16 3:09 PM	secureBox				iteratec																																																															

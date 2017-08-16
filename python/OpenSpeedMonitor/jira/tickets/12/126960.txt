@@ -1,1 +1,0 @@
-CC: Migrate Saved Queries: 2 distinct "Select All"	Create *2* "Select All" - one for each table (Saved Queries & Templates) which are fully independent of each other.		Improvement	iteraplan Thunderduck	12/Jul/17 2:21 PM	20/Jul/17 8:59 AM																																																																				

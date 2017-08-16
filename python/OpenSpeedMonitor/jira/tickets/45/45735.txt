@@ -1,3 +1,0 @@
-Searchable dropdown comboboxes too slow/unusable with large lists in IE8	"When using IE8 with large lists to be displayed in the combobox (1000+ of elements) the display and handling becomes very slow and eventually unresponsive.
-Please find a solution."		Improvement	iteraplan PO	29/May/13 11:25 AM	30/Dec/15 2:32 PM					combobox	gui	javascript							"14/Jun/13 3:48 PM;sfe;Performance is better now, but still not acceptable for 1000+ element lists displayed in IE8.
-Stopping development it was decided to implement another, customized solution for the main customer in need of this."																																																						

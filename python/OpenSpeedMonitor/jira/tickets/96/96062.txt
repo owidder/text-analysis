@@ -1,9 +1,0 @@
-Update Look&Feel of Personal Demo	"*Timebox 4h, 1 person*
-
-
-
-Update the look and feel of the personaldemo user dialog. Use something similiar to the Material Design like in the GraphicsReactor. See attached screenshot.
-
-
-
-Affects only one JSP with 6 input fields, 1 checkbox and one button. Do not touch the admin part of the personal demo system."		Improvement	iteraplan Quickfox	14/Sep/16 4:07 PM	06/Oct/16 11:47 AM														20/Sep/16 2:34 PM;mwe;Use Bootstrap with the Material Design theme: http://fezvrasta.github.io/bootstrap-material-design/																																																						

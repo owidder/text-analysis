@@ -1,1 +1,0 @@
-Kaputtes Dashboard Handling reparieren	Das speichern und überschreiben von Dashboards funktioniert gerade nicht mehr		Bug	OpenSpeedMonitor	02/Nov/16 3:03 PM	03/Nov/16 1:17 PM																																																																				

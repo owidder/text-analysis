@@ -1,5 +1,0 @@
-Strukturierung und Umbenennung Messwerte	"Uwe:
-* Auswahl der Messwerte schlecht strukturiert, klarere Trennung zwischen Zeiten, Anzahlen und Größen wäre hilfreich
-* Benennung der Messwerte viel zu lang, weil gedoppelt zur Struktur (...UnCached und ...Cached bereits aus First View und Repeated View ersichtlich), oder weil fehlende Struktur (...Time..., ...IncommingBytes..., ...Requests...) ==> dadurch unübersichtlich
-
-Zudem ersetzen wir den Begriff ""Messwerte"" durch ""Messgröße"""		Bug	OpenSpeedMonitor	23/Sep/13 9:51 AM	25/Sep/13 10:54 AM														23/Sep/13 10:28 AM;nkuhn;Im AggregatorType Attribut group hinzufügen. Dies soll eine enum sein. Es muss einen Wert UNDEFINED geben. Dieses Attribut wird verwendet um die <option>'s der <select>'s zu gruppieren (<optgroup>) und auch die Messgrößen einer Y-Achse zuzuordnen.																																																						

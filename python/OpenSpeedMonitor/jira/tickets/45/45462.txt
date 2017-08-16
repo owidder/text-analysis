@@ -1,4 +1,0 @@
-Improve new searchable dropdowns	"Our new JQuery-based searchable dropdowns (introduced with ITERAPLAN-593) need the following improvements:
-* Style same as other dropdowns
-* No line-break between Button and input field
-* Fetch details via AJAX"		Improvement	iteraplan PO	03/Apr/12 3:12 PM	16/Apr/12 6:07 PM					javascript	jquery								11/Apr/12 3:09 PM;kvo;Different Style is ok at the moment. The usage/functionality is different -> different style just reflects this.																																																						

@@ -1,3 +1,0 @@
-UTF-8 problem in ApplicationResources.properties	"In ApplicationResources.properties there are still some wrongly encoded characters like ""donâ€™t"" (see attachment).
-
-"		Bug	iteraplan PO	16/Jul/15 9:54 AM	16/Jul/15 2:11 PM					encoding	gui	utf8																																																													

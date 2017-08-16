@@ -1,4 +1,0 @@
-Job Runs: Nicht mehr URL des Tests im wptStatus speichern	"Stattdessen soll die URL des Tests folgendermaßen zusammengesetzt werden: 
-
-base_url des Servers + /result/ + testID
-Beispiel: http://dev.server02.wpt.iteratec.de/result/140327_DC_18/"		Improvement	OpenSpeedMonitor	28/Mar/14 9:56 AM	28/Mar/14 11:02 AM																																																																				

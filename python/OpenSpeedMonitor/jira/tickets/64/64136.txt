@@ -1,3 +1,0 @@
-Use new metamodel in LSD	"start with _app/js/lsd/lsdDataService.js_
-
-adjust tests"	63140	Sub-task	iteraplan PO	19/Nov/15 4:43 PM	07/Dec/15 9:21 AM																																																																				

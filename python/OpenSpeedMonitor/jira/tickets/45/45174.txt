@@ -1,3 +1,0 @@
-Empty cells in iteraplan interfaces for PPM import results in error	iteraplan interfaces import does not distinguish between empty "virgin" cells and cells that seem empty, but have "empty string" as content. This leads to a general error message when trying to import projects (review phase). Arturas knows the details. 		Bug	iteraplan PO	05/Oct/11 12:08 PM	11/Jan/12 12:18 PM					import									"02/Nov/11 9:06 AM;tdi;Clearing of cells is also a problem, but maybe a separate one... 
-
-Importing an excel with empty, but not cleared cells leads to problems with the import (it fails). We tested that (Arturas and me) for the iteraplan interfaces 2.9M1 for EON (PPM import functionality)."																																																						

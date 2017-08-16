@@ -1,5 +1,0 @@
-Execute IFD tests	"Test cases see in attached Excel file.
-
-Please document the results of the tests in the Excel file and attach the file with the results to this issue."		Task	iteraplan PO	21/Apr/16 11:31 AM	25/Apr/16 3:56 PM					test									"25/Apr/16 1:29 PM;mse;* Tests completed, one defect ticket created.
-
-* Small updates to test sheet (update names and results of filters) commited to svn"	25/Apr/16 3:56 PM;pzi;1 failing test - ticket created: ITERAPLAN-4503																																																					

@@ -1,3 +1,0 @@
-Correct colors (MetaModel)	"Summary: To fix wrong colors which were taken for NCD, LSD, Recent View pages from MetaModel
-
-(in discussion with Marcel 01/04/15)"		Bug	iteraplan PO	01/Apr/15 3:34 PM	07/Apr/15 1:29 PM																																																																				

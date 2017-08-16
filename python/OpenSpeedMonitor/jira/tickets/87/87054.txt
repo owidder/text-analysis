@@ -1,5 +1,0 @@
-Create PNG, JPEG and SVG-Full Download for NCD, IFD and LSD	Create PNG, JPEG and SVG-Full Download for NCD, IFD and LSD		Improvement	iteraplan PO	13/Jun/16 3:53 PM	01/Jul/16 2:39 PM														"01/Jul/16 12:48 PM;roia;Some general comments regarding Eslint errors and warnings: https://iteraweb.iteratec.de/fisheye/cru/IP-45#general-comments
-
-
-
-I would think about getting rid of 1.5 sec timeouts and use of some callbacks or diagram event handlers instead, like {{LayoutCompleted}}  (http://gojs.net/latest/api/symbols/DiagramEvent.html), but it's out of scope of this task."	01/Jul/16 1:32 PM;roia;[~msr] my review of this task is done																																																					

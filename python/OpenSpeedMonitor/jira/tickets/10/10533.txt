@@ -1,4 +1,0 @@
-CSI static view funktioniert nicht	"Die static view im CSI hat folgende Fehler:
-- es werden keine Graphen außer der Zielkurve dargestellt
-- das Chart ist zu niedrig."		Bug	OpenSpeedMonitor	19/Sep/13 3:24 PM	08/Oct/13 4:36 PM														"08/Oct/13 4:36 PM;jwerschmoeller;Chart zu niedrig wird nicht gefxit
-Download der Charts arbeitet korrekt"																																																						

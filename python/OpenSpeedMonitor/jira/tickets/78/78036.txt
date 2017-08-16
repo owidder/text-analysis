@@ -1,9 +1,0 @@
-Camunda UI ohne Contextpfad bereitstellen	"Um Camunda als Basistechnologie nicht zu sehr in den Vordergrund zu Rücken sollte der context-pfad der Camunda-Engine umbennant werden. 
-
-
-
-d.h. aus _yourdomain:2000/camunda/app/tasklist_ wird _yourdomain:2000/app/tasklist_ 
-
-
-
-(/) Dies geht indem camunda.war als ROOT.war deployed wird, dies muss im Dockerfile nur entsprechend berücksichtigt werden."	77928	Sub-task	secureCodeBox	22/Mar/16 3:11 PM	25/Apr/16 9:16 AM																																																																				

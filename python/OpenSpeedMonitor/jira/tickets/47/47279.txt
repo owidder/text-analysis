@@ -1,9 +1,0 @@
-Wrong title for diagram with ISD as outer and IS as inner	"IP9-204
-
-Step to reproduce:
-
-1. Go to NCD page
-
-Actual result: diagram displayed with  ISD as outer and IS as inner type, but the title is wrong
-Expected: Nested Cluster Diagram - Information System Domains with supporting information systems
-"		Bug	iteraplan PO	09/Jan/15 1:17 PM	21/Jan/15 4:24 PM														21/Jan/15 4:24 PM;alvo;It's not a bug, specified NCD title connected to coincident Recent Pages tile that emulates already saved NCD view.																																																						

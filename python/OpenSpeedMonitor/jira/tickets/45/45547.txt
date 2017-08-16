@@ -1,1 +1,0 @@
-Popovers with Type Descriptions do not disappear.	Sometimes, popovers with Type Descriptions do not disappear.		Bug	iteraplan PO	30/May/12 8:19 AM	08/Jun/12 10:19 AM					gui																																																															

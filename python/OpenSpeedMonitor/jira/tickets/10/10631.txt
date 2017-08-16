@@ -1,1 +1,0 @@
-Zoomen funktioniert in Highchart-Diagrammen nur für die Y-Achse	Auf jeden Fall ist dies im Result-Dashboard der Fall. Im CSI-Dashboard nicht getestet.		Bug	OpenSpeedMonitor	21/Oct/13 11:44 AM	21/Oct/13 2:34 PM														21/Oct/13 2:34 PM;rhe;Kein Bug im ISM, Highchart verhalten ist auch in der Online-Demo ähnlich.																																																						

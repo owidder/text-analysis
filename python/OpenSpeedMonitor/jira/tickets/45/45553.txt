@@ -1,5 +1,0 @@
-Business objects in relation with information systems cannot be deleted when history is enabled	"If you try to delete a business object which is related to one or more information systems via an Isr2BoAssociation, a constraint violation exception from the database appears, if the history is enabled.
-Apparently there's an attempt to write an incomplete Isr2BoAssociation object into one of the history tables."		Bug	iteraplan PO	20/Jun/12 11:55 AM	14/Jul/14 6:17 PM					associations	constraint	history	isr2bo						25/Jun/14 4:50 PM;fka;Is this still valid?	"26/Jun/14 9:14 AM;sfe;This should be the same as ITERAPLAN-1916
-But the scripts created there were not part of any migration procedure yet, as far as I know, and have been applied on demand so far.
-There hasn't been any support case about this issue in quite a while, so I suspect that for the customers affected by this (using iteraplan prior to version 2.9, with enabled history) the issue was fixed in that way."	"14/Jul/14 6:17 PM;fka;Closing for now
-Customers affected by this problem will receive individual help from support"																																																				

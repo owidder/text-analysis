@@ -1,1 +1,0 @@
-REST API Excel export doesn't work	After ITERAPLAN-2697, the Excel export with REST doesn't work anymore ("An internal server error has occurred.").		Bug	iteraplan PO	16/Sep/14 1:08 PM	19/Sep/14 8:38 AM					export	rest																																																														

@@ -1,3 +1,0 @@
-Multi value coloring in N3CD	"For multi value enumeration properties, use coloring with ""stripes"" as in LSD.
-
-To be clarified: How do we do the shading for different nesting levels in this case?"		New Feature	iteraplan PO	01/Apr/16 2:26 PM																																																																					

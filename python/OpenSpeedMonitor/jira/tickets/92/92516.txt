@@ -1,3 +1,0 @@
-Gruppierung der Assets	"Aktuell geht jede Information verloren, zu welchen Ergebnissen die Assets gehören.
-
-Somit werden beispielsweise nicht die LoadTimes aller Assets zu einem Ergebniss aufaddiert, sondern als einzelne Ergebnisse dargestellt."		Improvement	OpenSpeedMonitor	05/Aug/16 9:12 AM	05/Aug/16 2:54 PM																																																																				

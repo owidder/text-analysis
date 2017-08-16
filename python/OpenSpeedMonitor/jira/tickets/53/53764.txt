@@ -1,1 +1,0 @@
-Die Scantiefe konfigurierbar machen	Über die UI soll bei einem Spider die Scantiefe konfigurierbar sein.		Story	secureCodeBox	14/Aug/15 3:09 PM	25/Apr/16 9:25 AM																																																																				

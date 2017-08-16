@@ -1,9 +1,0 @@
-Upgrade Spring to version 4	"Upgrade the version of the spring framework we are using to 4.1.7 (current release).
-
-Maybe of help for the major version jump 3->4:
-
-http://docs.spring.io/spring/docs/current/spring-framework-reference/html/new-in-4.0.html
-
-
-
-Part of this ticket are code changes necessary to use the new spring version properly, but only those."		Improvement	iteraplan PO	02/Jul/15 10:16 AM	30/Jul/15 4:50 PM					spring																																																															

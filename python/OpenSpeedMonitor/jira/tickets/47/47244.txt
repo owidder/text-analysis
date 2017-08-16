@@ -1,8 +1,0 @@
-"Create new Interface" button should be removed	"IP9-230
-
-Steps to reproduce:
-1. Go to ""Information System""  Building Block list
-2. Scroll page to down
-
-Actual result: There is ""Create new interface"" button
-Expected result: ""Create new Interface"" button should be removed"		Bug	iteraplan PO	18/Dec/14 12:02 PM	08/Jan/15 5:13 PM														08/Jan/15 5:13 PM;dasm;Verified																																																						

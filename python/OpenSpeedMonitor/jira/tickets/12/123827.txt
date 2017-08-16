@@ -1,1 +1,0 @@
-ShopCsiAggregationService.findAll wird nur von Integrations Tests genutzt	Die Methode sollte entfernt und die Integrationstests aufgeräumt werden.		Task	OpenSpeedMonitor	08/Jun/17 4:39 PM																																																																					

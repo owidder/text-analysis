@@ -1,9 +1,0 @@
-Opening saved Spreadsheet Report Queries can lead to unintentionally enabled field combinations	"Apparently there can be saved queries that where - before the query is reopened - certain constellations lead to disabled fields but - after the query is reopened - the respective fields are shown in enabled state.
-
-For example:
-* Query for informationsystems whose names have arbitrary value
-* Save the query
-* Reopen the query
-* The field for selecting a name value is now enabled
-
-When opening saved queries field constellations should initially be checked regarding mandatory field disablement."		Bug	iteraplan PO	30/Aug/13 4:49 PM	30/Dec/15 3:17 PM																																																																				

@@ -1,9 +1,0 @@
-2.1.4 Release  iTurm	"Es muss sichergestellt sein, dass alle Helper-Projekte Release-Status haben (keine Snapshots). Falls es keine Änderungen seit dem letzten iteraplan Release gab, dann sollte natürlich die letzte Release-Version des Helper-Projekts im iteraplan-POM verwendet werden.
-
-
-
-2.1.4  iTurm
-
-
-
-    Sicherstellen, dass die iTURM-Version, zu finden in der Datei build.properties im turm-Unterverzeichnis des iteraplan-Projekts, keine Snapshot-Version ist, und gegebenenfalls auf die nächste Version setzen."		Task	iteraplan PO	27/Oct/15 8:16 AM	29/Oct/15 3:21 PM														28/Oct/15 6:37 PM;sfe;Nothing to do, current iTURM is no snapshot																																																						

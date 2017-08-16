@@ -1,9 +1,0 @@
-HashCorp Vault einführen	"Wir sollten die Credentials, die wir für die Continuous Integration benötigen und aktuell im Gitlab-Repository osm_credentials halten in einer HashiCorp Vault-Instanz ([https://www.vaultproject.io|https://www.vaultproject.io/]) spechern.
-
-
-
-Bei der Einrichtung einer Instanz sollte uns Jan unterstützen können.
-
-
-
- "		Story	OpenSpeedMonitor	12/Jul/17 11:11 AM																																																																					

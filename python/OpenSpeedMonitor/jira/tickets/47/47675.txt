@@ -1,6 +1,0 @@
-Strange diagram with nesting	"Steps to reproduce:
-1. Go to NCD page
-2. Use Project as outer type and Business Unit as inner type
-3. Use nesting by parent
-Actual: The diagram looks strange
-Expected: Is it correct scheme?"		Bug	iteraplan PO	23/Apr/15 3:57 PM	19/Jan/16 1:56 PM																																																																				

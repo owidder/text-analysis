@@ -1,1 +1,0 @@
-Landscape Diagram: top axis can appear displaced in Visio Export	When doing a Visio Export of a Landscape Report, the top axis sometimes is displaced so the axis elements don't match the columns.		Bug	iteraplan PO	22/Jul/11 1:50 PM	28/Jul/11 7:44 PM					diagram	landscape																																																														

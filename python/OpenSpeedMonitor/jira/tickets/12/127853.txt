@@ -1,5 +1,0 @@
-Filter: Text-fields with searchable dropdown	"Improve the filter dialog for text-fields:
-
-
-
-* For the operator ""is"" offer a list of possible values in form of a searchable dropdown"		Improvement	iteraplan PO	24/Jul/17 6:29 PM																																																																					

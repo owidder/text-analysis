@@ -1,5 +1,0 @@
-Rickshaw: History-Slider leert die Diagramm-Anzeige	"Betrifft: Rickshaw
-
-Sofort nach Bewegen des History-Sliders ist die Anzeige des Diagramms leer. Auf der Konsole erscheint eine Fehlermeldung das einer Funktion translate ein NaN-Wert übergeben worden sei.
-
-Reproduzierbar mit IE, FF und Chrome Canary"		Bug	OpenSpeedMonitor	15/Jan/15 3:27 PM	15/Apr/15 4:22 PM														15/Apr/15 4:22 PM;rkr;Fehler tritt nur auf wenn pro Meßkurve maximal ein (1) Meßpunkt sich im Anzeigebereich befindet.																																																						

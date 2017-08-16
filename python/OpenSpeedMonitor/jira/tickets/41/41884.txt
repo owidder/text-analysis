@@ -1,7 +1,0 @@
-Die Hover-Info über dem Annotations-Punkt wird nicht angezeigt.	"Die Hover-Info über dem Annotations-Punkt wird nicht angezeigt.
-
-
-
-https://iteraspeedmonitor.otto.wpt.iteratec.de/eventResultDashboard/showAll?selectedInterval=-1&selectedTimeFrameInterval=0&_setFromHour=&from=20.05.2015&fromHour=0%3A00&_setToHour=&to=23.05.2015&toHour=23%3A59&selectedFolder=2&selectedPages=1&_selectedAllBrowsers=&selectedAllBrowsers=on&_selectedAllMeasuredEvents=&selectedAllMeasuredEvents=on&_selectedAllLocations=&selectedAllLocations=on&selectedAggrGroupValuesUnCached=docCompleteTimeInMillisecsUncached&trimBelowLoadTimes=&trimAboveLoadTimes=&trimBelowRequestCounts=&trimAboveRequestCounts=&trimBelowRequestSizes=&trimAboveRequestSizes=&_action_showAll=Anzeigen&selectedChartType=0
-
-"		Bug	OpenSpeedMonitor	26/May/15 5:17 PM	26/May/15 5:25 PM																																																																				

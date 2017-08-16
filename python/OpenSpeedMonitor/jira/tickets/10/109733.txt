@@ -1,5 +1,0 @@
-Artikel für die Zeitschrift eCommerce schreiben	"Für die Zeitschrift [eCommerce|http://www.e-commerce-magazin.de/] soll ein Artikel zum Thema Web Performance Radar / OSM / ... geschrieben werden. Dieser soll einen fachlichen Schwerpunkt haben um auf Management Ebene Interesse zu wecken.
-
-
-
-Die grundlegende Story ist im [Wiki |https://iteraweb.iteratec.de/confluence/display/ispeed/Web+Performance+Radar] dokumentiert."		Task	OpenSpeedMonitor	26/Jan/17 3:55 PM	24/Mar/17 4:32 PM																																																																				

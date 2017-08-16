@@ -1,1 +1,0 @@
-Context overview diagram download file type selection does not work	Whatever you choose, you always get a SVG		Bug	iteraplan PO	29/Jul/14 12:58 PM	04/Aug/14 9:03 AM					context	diagram																																																														

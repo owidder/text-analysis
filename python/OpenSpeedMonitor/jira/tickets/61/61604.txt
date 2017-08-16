@@ -1,9 +1,0 @@
-3.2.1 Testen der Bundles	"3.2.1  Bundles
-
-
-
-    Verschiedene Bundle-Versionen:
-
-  *      Basic & Lite
-
-   *     Initaldaten & Beispieldaten"		Task	iteraplan PO	27/Oct/15 8:44 AM	30/Oct/15 12:30 PM														30/Oct/15 10:19 AM;lwi;no problems found																																																						

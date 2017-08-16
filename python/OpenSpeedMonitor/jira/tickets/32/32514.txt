@@ -1,1 +1,0 @@
-IE: OSM Logo pixelig	Das OSM-Logo sieht im IE sehr pixelig aus		Bug	OpenSpeedMonitor	18/Feb/15 11:54 AM	16/Apr/15 10:28 AM																																																																				

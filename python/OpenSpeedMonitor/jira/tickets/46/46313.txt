@@ -1,8 +1,0 @@
-Global search fails at []-brackets	"When searching for a term containing square brackets, iteraplan produces ""invalid syntax"" message:
-
-Your search query has an invalid syntax. Try changing the search string. Example: Cust* would find Customer or customs.
-Question mark (?) and asterisk (*) are always treated as wildcards and must appear next to further characters; you cannot search for these two special characters.
-Each opening bracket must be matched by a closing bracket.
-Following characters have a special meaning and should only be used after careful consideration: + - & | ! ( ) { } [ ] ^ "" ~ * ? : \
-Other special characters may get silently ignored or lead to unexpected results.
-Please refer to the online documentation for more details."		Bug	iteraplan PO	06/Nov/13 1:18 PM	26/Aug/14 3:03 PM					search									01/Jul/14 1:48 PM;dop;Online documentation already contains the above described hints. 	21/Aug/14 2:12 PM;dop;Ticket is realized by ITERAPLAN-2667 																																																					

@@ -1,7 +1,0 @@
-"copy" functionality incomplete?	"Copy implementation was changed in trunk, e.g. for business applications. Expectation:
-* Direct properties, attributes, relations and permissions will be copied. 
-* If applicable: business mappings will be copied.
-* If applicable: hierarchy link to superordinated element will be copied
-* If applicable: deep copy of sub-elements  / sub-specializations: requirement should be discussed in iteraplan JF before functionality is removed in trunk
-* If applicable: deep copy of interfaces & transported business objects: requirement should be discussed in iteraplan JF before functionality is removed in trunk
-"		Bug	iteraplan PO	14/Sep/11 11:02 AM	21/Sep/11 1:58 PM					copy	usability																																																														

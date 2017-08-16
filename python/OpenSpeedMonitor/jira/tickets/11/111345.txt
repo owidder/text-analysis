@@ -1,1 +1,0 @@
-Create link between Single Attribute View and List Attribute View	Create link between Single Attribute View and List Attribute View		New Feature	iteraplan Speedbird	08/Feb/17 2:03 PM	17/Feb/17 1:29 PM														16/Feb/17 9:03 AM;roia;This has been done in scope of IPTS-447, revision *5902*																																																						

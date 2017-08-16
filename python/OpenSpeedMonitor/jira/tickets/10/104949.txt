@@ -1,3 +1,0 @@
-Validation des Scripts / Page	"Beim Erstellen eines Scripts werden Pages angelegt, wenn die nicht existieren.
-
-Damit Typos ausgeschlossen werden können, sollte der Nutzer darauf hingewiesen, dass die angegebenen Pages nicht existieren."		Improvement	OpenSpeedMonitor	07/Dec/16 1:24 PM	30/Dec/16 4:51 PM														30/Dec/16 4:51 PM;msk;Es gibt jetzt ein blaues Infofenster über dem Save Button, in dem alle neuen Pages/ME angezeigt werden																																																						

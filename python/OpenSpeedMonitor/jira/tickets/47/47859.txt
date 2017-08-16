@@ -1,5 +1,0 @@
-Make Iteraplan wise	"Ship it Day:
-hint of iteraplan logo in new client should show an fortune coockie quote for each day
-"		Improvement	iteraplan PO	24/Jun/15 3:32 PM	30/Jun/15 11:31 AM														"30/Jun/15 11:31 AM;fam;Checked code and function successful.
-
-Ticket closed."																																																						

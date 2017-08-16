@@ -1,7 +1,0 @@
-Improve insert diagram GUI in custom dashboard templates	"To improve usability:
-
-When a custom dashboard template is created, and the insert button is clicked, then:
-* The column with the ""execute/play"" button is misleading.
-* The filter text field should have cursor focus.
-* The filter text field should be empty before re-opening or after closing.
-"		Improvement	iteraplan PO	25/Oct/13 6:25 PM	30/Dec/15 4:54 PM					dashboard	gui	usability																																																													

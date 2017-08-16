@@ -1,7 +1,0 @@
-chart implementieren: SpeedIndex gesamter Anwendung als waagerechte Balken	"SpedIndex-Mittelwerte gesamter Anwendung als waagerechte Balken. Für die egene Anwendung und für Wettbewerber.
-
-
-
-Darstellung analog zu 
-
-!Ladezeiten WB.png|thumbnail!"		Story	OpenSpeedMonitor	10/Feb/17 5:10 PM	16/Mar/17 8:01 AM																																																																				

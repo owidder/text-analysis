@@ -1,6 +1,0 @@
-Zeitreihen-Feature auch für Textfelder	"Aktuell werden Zeitreihen, soweit ich es in der 3.4.1 Version sehen konnte, nur für Zahlenwerte und Aufzählungs-Merkmale unterstützt. Wir würden aber gerne in verschiedenen Use-Cases auch Freitext-Felder in Zeitreihen nutzen können:
-
-Use-Cases im Umfeld von OTTO:
-* Wir verwenden die Zeitreihen im Kontext vom Product-Lifecycle-Management zur Historisierung von Bewertungsergebnissen und zur Erkennung von zeitlichen Veränderungen in den Bewertungen der Applikationen. Dabei wäre es extrem hilfreich auch die jeweiligen Erkenntnisse und Schritte in jeweiligen Frei-Textfelder zu führen.
-* Der Mehrwert von Zeitreihen für Textfelder geht darüber hinaus, da wir auch projektierte Changes betrachten pro Applikation. Hier würden Zeitreihen helfen, die Entwicklung einer Komponente einfacher nachvollziehen zu können.
-* Auch für regelmäßig durchgeführten Interviews wäre es hilfreich hier pro Interview einen eigenen Datensatz pflegen zu können. Dies macht die Zuordnung einfacher, auch wenn aktuell alles in einem Feld zusammen gepflegt werden kann "		Improvement	iteraplan PO	19/Feb/15 4:30 PM	19/Jan/16 1:56 PM					timeseries								3.4.1 Enterprise-Edition mit mySQL/LDAP-Anbindung																																																							

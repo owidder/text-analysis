@@ -1,2 +1,0 @@
-Replacement for the not really pretty Details icon	Please find a nice looking replacement for the Details icon :).		Improvement	iteraplan PO	01/Aug/12 5:35 PM	01/Aug/12 10:37 PM					gui	lookAndFeel								"01/Aug/12 10:37 PM;kvo;If you can suggest one within Twitter Bootstrap Framework, ok.
-Otherwise icon is ok."																																																						

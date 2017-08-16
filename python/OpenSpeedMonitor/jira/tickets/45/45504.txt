@@ -1,5 +1,0 @@
-Bar chart configuration	"see ITERAPLAN-621
-
-1. colour settings don't get resetted under certain circumstances: under colour settings choose associations -> any bbt -> # of assignments. Then under diagram type switch to ""attributes"" and under colour settings to attribute values -> check all -> the colour choice refers to the old # of assignments instead of available attribute values.
-
-2. see stack trace in ITERAPLAN-621: reproducable?"		Bug	iteraplan PO	19/Apr/12 6:57 PM	08/May/12 3:52 PM														08/May/12 3:52 PM;lci;Both bugs fixed.	10/May/12 9:14 AM;tse;ok																																																					

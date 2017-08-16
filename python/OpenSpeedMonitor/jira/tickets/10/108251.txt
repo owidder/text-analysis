@@ -1,7 +1,0 @@
-Treemap: Show units and not drag & drop	"* Show the units of the attributes in
-
-** the diagram box
-
-** the tooltip
-
-* Set the property of the GoJS diagram to not allow dragging & dropping of the whole diagram"		Improvement	iteraplan Speedbird	12/Jan/17 4:49 PM	23/Jan/17 10:14 AM														20/Jan/17 5:31 PM;dmkh;Review is done. Please, make inner nodes not selectable (see screenshot).																																																						

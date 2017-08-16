@@ -1,3 +1,0 @@
-Edit Service	"- add and remove assoc. relations
-
-- changes of properties - out of scope"	101356	Sub-task	iteraplan Thunderduck	03/Nov/16 11:47 AM	07/Dec/16 3:09 PM																																																																				

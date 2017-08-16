@@ -1,3 +1,0 @@
-Suche für CRUD-Listen einführen	"Zumindest für die CRUD-Types mit vielen Elementen wie z.B. die MeasuredSteps ist es momentan sehr nervig nach Objekten zu suchen.
-
-Ideal wären Klartext-Filter für alle angezeigten Attribute. Vermutlich gibt's dafür ein Plugin."		Task	OpenSpeedMonitor	20/Jun/16 4:12 PM	28/Sep/16 3:04 PM														28/Sep/16 3:04 PM;msk;Durch IT-1291 gefixt																																																						

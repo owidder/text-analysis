@@ -1,1 +1,0 @@
-Anpassung Abfrage-Methoden HJMV	Um die hourly Event-MeasuredValues (ehemals HJMV) im Dashboard als Kurven anzeigen zu können, müssen die Abfrage-Methoden in den entsprechenden Services angepasst werden.	10010	Sub-task	OpenSpeedMonitor	05/Aug/13 10:44 AM	27/Aug/13 9:41 AM																																																																				

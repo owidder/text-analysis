@@ -1,3 +1,0 @@
-BrowserAliasController: unverständliche Fehlermeldung beim Neuanlegen wenn Alias bereits vorhanden	"1) BrowserAliasController: unverständliche Fehlermeldung beim Neuanlegen wenn Alias bereits vorhanden
-
-2) Fatal Error wenn Alias leer und dieser Alias bereits vorhanden"		Bug	OpenSpeedMonitor	27/Feb/15 11:27 AM	27/Feb/15 5:47 PM														27/Feb/15 5:39 PM;rkr;Default Fehlermeldungen können überschrieben werden: http://stackoverflow.com/a/20386620/2067690																																																						

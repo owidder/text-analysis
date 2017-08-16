@@ -1,3 +1,0 @@
-Persistieren der Waterfall URL ausbauen	"Follow up zum Ticket [IT-1308].
-
-Man kann die URLs nun dynamisch zusammenbauen, deswegen ist es nicht mehr nötig die URL zu persistieren."		Task	OpenSpeedMonitor	01/Nov/16 8:37 AM															01/Nov/16 3:13 PM;nku;Wir geben eine URL zur Detail-Daten-Ansicht auch in der REST-API mit raus. Bitte diese Stellen beachten und entsprechend mit umsetzen/anpassen.																																																						

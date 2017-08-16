@@ -1,1 +1,0 @@
-Treemap: Saved queries	Be able to save the TreeMap diagram configuration and restore it, using the common Saved Queries feature		New Feature	iteraplan Speedbird	27/Oct/16 11:22 AM	02/Nov/16 4:52 PM					TreeMap									02/Nov/16 11:38 AM;roia;review: https://iteraweb.iteratec.de/fisheye/cru/IP-144																																																						

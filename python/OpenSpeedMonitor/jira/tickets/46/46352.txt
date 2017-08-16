@@ -1,6 +1,0 @@
-IE10 workaround does not work	"We applied the patched version of iteraplan's layout (standard.jsp) as described in:
-https://www.iteraplan.de/wiki/display/iteraplan/Known+Bugs
-
-After removal of the tomcat work directory and a tomcat start the navigation menu is still not visible and therfore not useable.
-
-Due to the fact that IE10 sould be rolled out in the first months of 2014, the fix of the layout is critical for the future usage of iteraplan for the client."		Bug	iteraplan PO	20/Nov/13 12:03 PM	28/Nov/13 12:00 PM					usability	visualization								28/Nov/13 12:00 PM;sfr;IE10 works with iteraplan 3.2. The client will update its iteraplan to version 3.2 Therefore the workaorund is not neccessary anymore.	28/Nov/13 3:19 PM;sfr;Tested with client IE10 and iteraplan 3.2 EE online																																																					

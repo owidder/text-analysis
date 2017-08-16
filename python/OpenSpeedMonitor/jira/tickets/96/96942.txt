@@ -1,9 +1,0 @@
-remote file storage für das console plugin herausnehmen	"Das war (wieder) aktiviert. 
-
-
-
-Ist ein grauenvolles Security-Problem: Man kann dann beim Speichern über die Web-GUI alles auf dem File-System des Servers sehen, was auch der tomcat sehen darf!!!
-
-
-
-Haben wir aus diesem Grund vor langer Zeit in prod deaktiviert gehabt. Ist offensichtlich mit dem Update auf Grails 3 nicht in die yml-Datei übernommen worden :( "		Bug	OpenSpeedMonitor	22/Sep/16 1:57 PM	22/Sep/16 1:58 PM																																																																				

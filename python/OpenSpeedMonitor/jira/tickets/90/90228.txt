@@ -1,5 +1,0 @@
-Locationliste wird nicht aktualisiert	"Wenn man im Browser|Location - Tab einen Browser ausgewählt hat, werden unter Locations nur noch die zu dem Browser passenden Locations angezeigt. Wenn man nun auf den ""Select all Browsers"" - Button klickt, werden weiterhin nur einige Locations angezeigt - abhängig von dem zuvor gewählten Browser.
-
-
-
-Tritt sowohl unter Measurement results als auch unter CSI auf."		Bug	OpenSpeedMonitor	12/Jul/16 12:29 PM	12/Sep/16 1:33 PM														12/Sep/16 1:33 PM;msk;Konnte mit einem on change handler gefixit werden.																																																						

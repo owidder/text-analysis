@@ -1,7 +1,0 @@
-Permission for granting of object related permissions	"Currently it is possible to grant object related permissions in two ways:
-* via the menu 'Object related permissions' (mapping of elements to users)
-* via the 'Permissions' tab in the overview of an element (mapping of users to this specific element)
-
-Additionally it is possible to grant a permission for granting of object related permissions. At the moment this permission only influences the appearance of the menu entry, not of the tab. Hence a user can still grant object related permissions althought he or she doesn't have the corresponding permission. Further side effect is the possibility to grant object related permissions via the tab in the community edition which shouldn't be the case at all. 
-
-Suggestion: the permission for granting of object related permissions should also influence the editing of the 'Permissions' tab."		Improvement	iteraplan PO	21/Feb/12 10:48 AM	17/Sep/12 8:32 PM					object	permissions	related							17/Sep/12 8:32 PM;sry;no longer applicable																																																						

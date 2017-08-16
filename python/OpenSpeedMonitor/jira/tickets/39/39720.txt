@@ -1,5 +1,0 @@
-CRUD-Views für JobGroup-assoziierte Events: Speichern mit Datum bei locale != de	"CRUD-Views für JobGroup-assoziierte Events: Speichern mit Datum bei locale != de
-
-
-
-Idealerweise speichern wir in der Domain Event nur ein Date , welches die Zeit mit enthält. In der GUI müssen dann die Controls für Date und time separat befüllt werden."		Bug	OpenSpeedMonitor	05/May/15 3:30 PM	12/May/15 9:26 AM														11/May/15 5:49 PM;rkr;Speichern klappt nicht bei locale == de	12/May/15 9:26 AM;bwo;Es sollte nun wieder für beide Formate funktionieren.																																																					

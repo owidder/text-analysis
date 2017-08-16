@@ -1,2 +1,0 @@
-Symbol für collapses	"Uwe:
-Fehlendes Symbol vor ""Zeitraum Auswählen"", ""Jobs filtern"" und ""Messwerte auswählen"", dass dem Benutzer kenntlich macht, dass diese Bereiche auf- und zugeklappt werden können"		Bug	OpenSpeedMonitor	23/Sep/13 9:41 AM	23/Sep/13 6:25 PM																																																																				

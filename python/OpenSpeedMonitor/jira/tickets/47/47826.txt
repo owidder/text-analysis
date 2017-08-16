@@ -1,4 +1,0 @@
-Information Flow Diagram	"Create the (new) Information Flow Diagram in the new client.
-
-Wiki-page:
-https://iteraweb.iteratec.de/confluence/display/ITPL/%28New%29+Information+Flow+Diagram"		Epic	iteraplan Speedbird	15/Jun/15 4:45 PM						diagram	ifd	newClient																																																													

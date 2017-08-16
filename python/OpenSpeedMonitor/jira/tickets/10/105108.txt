@@ -1,5 +1,0 @@
-Create Business Mapping-Coloring Patch	"Merge all changes of IPTS-326 manually from the trunk to https://svn.iteratec.de/repos/projects/iteraplan-9/branches/RB_5_4_0_BMW-BM-Coloring-Fix
-
-
-
-This branch is based on the code of Release 5.4 and the changes of the fix for distrigation."		Task	iteraplan Speedbird	09/Dec/16 9:54 AM	20/Dec/16 12:43 PM														13/Dec/16 8:40 PM;ants;The revision 5420 was enough and was reapplied.																																																						

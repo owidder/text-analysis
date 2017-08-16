@@ -1,5 +1,0 @@
-Die Default Werte der Joberstellung beim Wizard sind evtl. nicht korrekt	"Beim Workshop in Sonthofen ist aufgefallen, dass der DetailDatenService und die Standard CSI Mappings nicht als Defaultwerte gesetzt sind.
-
-
-
-Die sollte geprüft werden."	116644	Sub-task	OpenSpeedMonitor	30/Mar/17 5:12 PM																																																																					

@@ -1,1 +1,0 @@
-EventResult Listenansicht in der GUI ausblenden			Improvement	OpenSpeedMonitor	18/Oct/13 1:40 PM	18/Oct/13 1:46 PM																																																																				

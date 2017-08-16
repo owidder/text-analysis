@@ -1,5 +1,0 @@
-Remove MutationObserver-shim	"We are using MutationObserver-shim to support IE-10.
-
-
-
-As long as we officially stop supporting IE-10, this dependency can be removed."		Improvement	iteraplan Speedbird	12/May/17 1:58 PM	29/Jun/17 3:26 PM																																																																				

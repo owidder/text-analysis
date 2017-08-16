@@ -1,3 +1,0 @@
-Create iteraplan branch	"Create iteraplan branch as described here:
-
-https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-2.4iteraplanBranchziehen"	98901	Sub-task	iteraplan PO	12/Oct/16 9:09 AM	27/Oct/16 8:29 AM																																																																				

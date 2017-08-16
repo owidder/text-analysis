@@ -1,2 +1,0 @@
-Update Twitter Bootstrap to 2.0.3	Update Twitter Bootstrap to 2.0.3		Improvement	iteraplan PO	26/Apr/12 1:48 PM	07/May/12 10:10 AM														26/Apr/12 1:48 PM;kvo;https://github.com/twitter/bootstrap/wiki/Changelog	"02/May/12 1:39 PM;gph;Update causes some layout problems (like damaged navigationbar, buttons not working properly, damaged selectbox). Didn't commit yet.
-Is update really necessary? => Need for clarification."	07/May/12 9:57 PM;kvo;thx.																																																				

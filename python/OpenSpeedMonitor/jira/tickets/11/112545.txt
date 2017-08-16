@@ -1,9 +1,0 @@
-Attribute Groups: UI Improvements	"Implement the following UI improvements:
-
-
-
-1. ""Move icon"" (=) in a lighter grey: #9B9B9B
-
-2. Remove white box, i.e. list of attributes is directly within attribute group
-
-3. Change background color of the attribute groups to #F2F2F2"		Improvement	iteraplan Speedbird	21/Feb/17 4:51 PM	23/Feb/17 11:07 AM																																																																				

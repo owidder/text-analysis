@@ -1,2 +1,0 @@
-Can not delete Attribute Group with Attributes 	Can not delete Attribute Group if Attributes are included - at least a meaningful error should be shown		Bug	iteraplan PO	19/Sep/11 11:15 AM	20/Sep/11 4:35 PM					attribute									"20/Sep/11 3:53 PM;agu; * The attribute type groups can be deleted now
- * Also fixed another bug: the attribute types could not be removed"	20/Sep/11 4:35 PM;vsh;OK.																																																					

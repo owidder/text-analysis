@@ -1,2 +1,0 @@
-Dashboards: Images that have been inserted via the wiki syntax are scaled automatically	"Images that have been inserted via the wiki syntax are scaled automatically.
-Thus it may be that the graphics are not readable."		Bug	iteraplan PO	02/Jul/13 12:47 PM	08/Jul/13 1:54 PM					gui									02/Jul/13 5:39 PM;sry;Wouldn't it be nicer to move the {{<div}} element into the method {{includeIterplanElements()}}?	08/Jul/13 1:54 PM;sry;ok, thx																																																					

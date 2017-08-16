@@ -1,5 +1,0 @@
-Button Delete should not delete data physical in DB	"today often data is deleted through our subunits in iteraplan caused by misunderstanding it.
-
-In this case i get notification by mail but cannot ""repair"" data easily ... I have to add a new information-system with all interfaces and references to other elements in iteraplan to ""rollback"" the deletion (very error-prone, information often is hard to find after this). 
-
-Please provide new function/method so that  button ""delete"" only ""virtual delete"" this systems (set flag ""deleted"" after that only specific user are able to see them - they should habe permissions to recover our physical delete these systems). "		Improvement	iteraplan PO	06/Apr/12 9:32 AM	05/Jul/12 11:39 PM														11/Apr/12 7:19 PM;kvo;Not of interest to the product, due to high impact (also in Maintenance) and low gain.																																																						

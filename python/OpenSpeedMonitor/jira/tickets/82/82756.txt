@@ -1,1 +1,0 @@
-Laden der Merkmalsausprägungen von iteraplan	Die Ausprägungen der Merkmale für PLM (?) müssen aus iteraplan geladen werden	82751	Sub-task	EAM-Visualisierung	02/May/16 1:47 PM																																																																					

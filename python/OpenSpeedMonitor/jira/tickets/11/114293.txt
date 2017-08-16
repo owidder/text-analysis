@@ -1,1 +1,0 @@
-Chart PNG-Download übernimmt die CSS-Styles falsch			Bug	OpenSpeedMonitor	08/Mar/17 4:52 PM	08/Mar/17 4:58 PM																																																																				

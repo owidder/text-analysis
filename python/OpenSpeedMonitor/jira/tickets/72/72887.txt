@@ -1,5 +1,0 @@
-Create Integrationtests for the basic functionality N3CD Pipeline	"Create Integrationtests that cover the basic functionality of the N3CD pipeline.
-
-
-
-* Test for the default case of ""Information Systems clustered by Information System Domains"""		Task	iteraplan PO	10/Feb/16 10:58 AM	18/Mar/16 11:22 AM														29/Feb/16 9:06 AM;mag;Integrationtest covers the default state of the n3cd																																																						

@@ -1,5 +1,0 @@
-1.4.2 Known Bugs aktualisieren	"1.4.2  Known Bugs aktualisieren
-
-
-
-Die Liste der Known Bugs sollte im Wiki aktualisiert werden, da diese in die Dokumentation mit eingebunden werden."		Task	iteraplan PO	26/Oct/15 2:27 PM	29/Oct/15 3:37 PM														27/Oct/15 1:44 PM;fka;Done.	29/Oct/15 3:37 PM;wfr;Removed outdated entries for iteraplan version 3.2 and older																																																					

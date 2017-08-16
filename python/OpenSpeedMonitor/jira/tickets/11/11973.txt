@@ -1,2 +1,0 @@
-Release-Notes-Seite	"Wir sollten eine Seite mit den Release-Notes hinzufügen.
-Diese kann im Info-Menü eingehängt werden."		Task	OpenSpeedMonitor	26/Feb/14 10:12 AM	26/Jun/15 2:25 PM														26/Jun/15 2:25 PM;nku;Duplicates IT-667																																																						

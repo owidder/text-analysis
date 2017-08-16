@@ -1,1 +1,0 @@
-Adjust Default column settings for List of BM	remove id-column from default columns of Busines Mappings (start screen -> Business Mappings)		Improvement	iteraplan PO	22/Jun/16 10:43 AM	23/Jun/16 11:24 AM																																																																				

@@ -1,7 +1,0 @@
-List edit - Docu			Improvement	iteraplan Thunderduck	03/Nov/16 11:54 AM	10/Jan/17 11:07 AM														"22/Dec/16 2:25 PM;pma;Link to the user guide: https://www.iteraplan.de/doc/display/iteraplan55/List+Edit
-
-"	"22/Dec/16 4:33 PM;pma;* all ""?"" Buttons lead to the new doc page ""List Edit"" where the syntax of xwiki is described
-
-* I also uploaded all screenshots of the doc side ""List View"" due to the new fixed  column ""Actions"" 
-
-* Please update the screenshots if any changes occur (multiline edit is still saved as one line in the list view)"																																																					

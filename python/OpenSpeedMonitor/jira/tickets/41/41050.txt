@@ -1,1 +1,0 @@
-RICKSHAW: nach Resize ist Slide-preview zu schmal, echter Slide-Handle ist nicht zu sehen	RICKSHAW: nach Resize ist Slide-preview zu schmal, echter Slide-Handle ist nicht zu sehen		Bug	OpenSpeedMonitor	18/May/15 4:56 PM	19/May/15 12:14 PM																																																																				

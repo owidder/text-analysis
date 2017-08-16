@@ -1,5 +1,0 @@
-Speichern von UserspecificDashboard auf den beiden Dashboards (CSI und Ergebnis) ermöglichen	"Zur Erstellung neuer Objekte der neuen UserspecificDashboard-Domain bauen wir gar keine neue (CRUD-)View. Wir fügen auf den beiden Dashboards (CSI und Ergebnis) jeweils einen Button ""aktuelle Sicht als Dashboard speichern"" hinzu. Dieser führt zur Persistenz eines neuen Dashboards _per AJAX_. Diese Funktion steht nur bei admin-Login zur Verfügung. Es öffnet sich ein Layer, in dem weitere Infos angegeben werden können (erst mal wahrscheinlich nur der Name).
-
-
-
-Package für die neue Domain: de/iteratec/osm/report"		Task	OpenSpeedMonitor	27/May/15 5:44 PM	05/Jun/15 10:49 AM																																																																				

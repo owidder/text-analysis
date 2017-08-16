@@ -1,6 +1,0 @@
-Improve layout of color selection in the Nesting Cluster Diagram configuration	"The dialog for configuring the color of inner or outer elements is visually unstable because of the placement of the radio buttons.
-
-Initially static coloring is selected and directly below the radio button is first the color selection and then the radio button for attribute based coloring.
-If then attribute based coloring is selected, the color selection for static coloring disappears and the freshly selected radio button ""jumps"" to the top of the dialog to a spot directly below the static radio button.
-
-Better would be to have both radio buttons placed together, not changing their position relative to each other, with the color selection area below both."		Improvement	iteraplan PO	22/Oct/13 2:16 PM	30/Dec/15 4:54 PM					cluster	color	configuration	nesting																																																												

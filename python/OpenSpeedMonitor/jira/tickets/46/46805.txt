@@ -1,1 +1,0 @@
-Implement recent tiles design (just a static tiles only with hover effect)		46774	Sub-task	iteraplan PO	06/Aug/14 5:37 PM	18/Aug/14 4:40 PM														08/Aug/14 11:36 AM;sepr;rough 0.5 PD																																																						

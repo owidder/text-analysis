@@ -1,9 +1,0 @@
-Filter auf Jobliste erweitern	"Auf der Jobliste sollten die folgenden beiden neuen Filter-Felder hinzugefügt werden:
-
-
-
-* Skript: Filtert die Jobs nach dem Namen ihres Skripts. Das Filter-Feld sollte unter dem Jobname-Filter-Feld stehen.
-
-* Browser: Filtert die Jobs nach dem Browser. Das Filter-Feld sollte unter dem Location-Filter-Feld stehen."		Improvement	OpenSpeedMonitor	19/Feb/15 5:17 PM	24/Mar/15 3:57 PM														"17/Mar/15 5:57 PM;nku;Die eingetragenen Filter-Werte werden im localstorage gespeichert.
-
-Dies sollte für Browser und -Location- _Skript_ ebenfalls implementiert werden."																																																						

@@ -1,5 +1,0 @@
-3-Level Nesting	"Add the functionality for 3-level nesting for inner and outer boxes (not in scope: n-level nesting), i.e. super-element nests a middle-element, which nests a sub-element itself.
-
-Add different coloring for all elements (light to dark from inner to outer)
-
-Add correct colors in the legend."		New Feature	iteraplan PO	04/Nov/14 8:31 AM	08/Sep/15 10:37 AM					nesting									25/Aug/15 3:36 PM;sfe;NCD diagramElementProcessor -> extractSubItems: Replace currentDeep with appropriate description of the kind of base element (for example: outer, outer nested, inner, inner nested)																																																						

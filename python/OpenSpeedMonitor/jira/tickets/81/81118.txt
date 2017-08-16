@@ -1,7 +1,0 @@
-Betamax-Tests fixen	"Eine Reihe von unit-Tests schlagen fehl, da Betamax in Grails 3 die alten Binär-Formate nicht mehr lesen kann. Die Tapes wegnehmen und neu schreiben lassen geht leider auch nicht, da die Ergebnisse in unseren Test-WPT-Servern nicht mehr existieren.
-
-
-
-Dieses sind die betroffenen Tapes:
-
-https://iteratec.slack.com/archives/D0UQWRLAZ/p1461142342000003"		Task	OpenSpeedMonitor	20/Apr/16 10:53 AM	21/Apr/16 4:44 PM																																																																				

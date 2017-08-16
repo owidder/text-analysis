@@ -1,5 +1,0 @@
-GIS-Datenformat definieren	"- Adapter schreiben, der erstmal Fake-Daten zurückgibt
-
-
-
-- ggf. Integration mit Visualisierung"		Task	EAMV15	11/Nov/15 10:57 AM	23/Nov/15 10:49 AM														23/Nov/15 10:49 AM;pkh;GIS-Datenformat definiert und Daten sind in Adapter integriert. GEO-Daten wurden per Hand aus Google-Maps übernommen. Die genaue Schnittstelle und die Integration in die Visualisierung muss noch abgestimmt werden.																																																						

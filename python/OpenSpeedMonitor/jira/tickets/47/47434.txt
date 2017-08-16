@@ -1,3 +1,0 @@
-Installationsroutine kann eine externe Konfigurationsdatei für die LDAP, DB-Parameter nutzen	"Da wir regelmäßig die Updates nachziehen und hierfür den Installer nutzen, müssen die LDAP und die Datenbank-Verbindungen jedesmal neu hinterlegt werden. Dies benötigt unnötig viel Zeit, da dies insg. ein Dutzend Werte betrifft und diese entsprechend übernommen (kopiert) werden müssen.
-
-Idee: Die Installationsroutine kann diese Werte als Parameter aus einer übergebenen Konfigurationsdatei auslesen und ""wiederverwenden"". "		Improvement	iteraplan PO	19/Feb/15 4:33 PM	19/Jan/16 1:57 PM																																																																				

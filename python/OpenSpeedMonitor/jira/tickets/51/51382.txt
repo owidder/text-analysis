@@ -1,3 +1,0 @@
-Font-Awesome Ressourcen werden nicht geladen	"Failed to load resource: the server responded with a status of 404 (Not Found)
-
-http://localhost:8080/fonts/fontawesome-webfont.woff?v=4.3.0"		Bug	OpenSpeedMonitor	20/Jul/15 4:09 PM	20/Jul/15 4:54 PM														20/Jul/15 4:54 PM;bwo;Downgrade auf Font-Awesome-Resources 4.2.0.0 konnte den Fehler beheben.																																																						

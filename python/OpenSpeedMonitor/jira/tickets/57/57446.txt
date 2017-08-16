@@ -1,3 +1,0 @@
-Lazy initialisation and caching of BusinessObjects	"Load the FieldNames in the datamodel only when they are needed 
-
-Cache already loaded FieldNames"	50814	Sub-task	iteraplan PO	17/Sep/15 1:02 PM	21/Sep/15 2:55 PM																																																																				

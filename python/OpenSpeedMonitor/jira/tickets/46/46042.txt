@@ -1,9 +1,0 @@
-Generating a nesting cluster diagram causes SVG related warning messages	"Reproduce:
-Configure a nesting cluster diagram (for example with ""IS"" and ""Project""), click on ""Generate diagram"" (SVG).
-
-Multiple occurrences of the following line are printed to the log:
-{code}
-[WARN ] [2013-09-02 12:41:36] (impl.svg.SVGRenderingVisitor) Cant serialize attribute vertical of Text
-{code}
-
-Clarify, if this is a problem."		Bug	iteraplan PO	02/Sep/13 12:46 PM	05/Aug/14 12:37 PM					diagram									04/Aug/14 8:57 AM;gph;The tickets are independent. This message is caused in the part of the code, where the visualization model is transformed into SVG. It is a separate code part, which is not affected by the changes in ITERAPLAN-2148.																																																						

@@ -1,1 +1,0 @@
-Jenkins-Jobs anpassen	Alle Jenkins-Jobs auf der SEU müssten angepasst werden.		New Feature	OpenSpeedMonitor	15/Feb/16 4:33 PM	26/Feb/16 2:40 PM														26/Feb/16 2:40 PM;bka;Da die CI auf den Bamboo umgezogen wird, wird nichts auf Jenkins mehr eingerichtet.																																																						

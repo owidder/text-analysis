@@ -1,3 +1,0 @@
-4. Make bars day-precise	"
-
-* Refactor implemenation for bar-width and bar-offset to show the bars on a position where they should be placed with correct starting-day and not starting month"	89483	Sub-task	iteraplan Speedbird	07/Jul/16 11:30 AM	18/Jul/16 9:49 AM														08/Jul/16 3:25 PM;roia;I have a few suggestions: https://iteraweb.iteratec.de/fisheye/cru/IP-55																																																						

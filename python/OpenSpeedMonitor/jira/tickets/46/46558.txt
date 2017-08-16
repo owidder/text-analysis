@@ -1,8 +1,0 @@
-Error page when attempting to view the user profile from secondary datasource	"Reproduce:
-# Set up two iteraplan databases. One Master with sample data, one scenario database with initial data.
-# Enter the scenario database info in the datasource table of the master database as described in our [Installation Guide|https://www.iteraplan.de/wiki/display/iteraplan/Other+Configuration+Options+and+Notes].
-# Log in with system and give the permission to change datasource to role IT-Architect
-# Log out and log in with Tom/password (or any other user who has the role IT-Architect)
-# Display profile => should work
-# Change datasource to the scenario datasource
-# Display profile => error page"		Bug	iteraplan PO	02/Apr/14 1:44 PM	19/Jan/16 11:08 AM					datasources	userManagement								02/Apr/14 1:46 PM;sfe;Apparently iteraplan looks for the user in the active datasource, where it wasn't created in this example, hence the "row not found" exception.																																																						

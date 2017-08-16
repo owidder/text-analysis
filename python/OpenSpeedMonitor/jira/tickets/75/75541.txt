@@ -1,1 +1,0 @@
-Prozess ID im Kibana-Link als Filter für das Dashboard benutzen (approve-results.html)			Bug	secureCodeBox	03/Mar/16 2:57 PM	08/Mar/16 4:28 PM																																																																				

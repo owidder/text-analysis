@@ -1,3 +1,0 @@
-add enter event at toolArea dialog for text attributes	"add for text attributes in toolAreaDialog an apply event by push the enter key.
-
-at the moment new filters will by set by push the apply button"		Improvement	iteraplan PO	27/Oct/15 10:01 AM	03/Nov/15 10:36 AM																																																																				

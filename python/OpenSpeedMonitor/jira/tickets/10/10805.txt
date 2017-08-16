@@ -1,5 +1,0 @@
-UnitTest-Fix: In Unit-Tests wird ein leerer String nach NULL ausgewertet und sonstiges	http://jira.grails.org/browse/GRAILS-10474		Bug	OpenSpeedMonitor	02/Dec/13 4:57 PM	06/Jan/14 2:55 PM														"03/Jan/14 5:00 PM;drieger;Mit der org.grails.databinding.BindUsing-Annotation lässt sich verhindern, dass leere Strings bei der Auswertung automatisch zu NULL-Werten konvertiert werden. Beispiel:
-{code:java}
-@BindUsing({ obj, source -> source['field'] })
-String field
-{code}"																																																						

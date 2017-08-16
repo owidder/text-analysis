@@ -1,9 +1,0 @@
-1.2 Datenbankskripte testen	"https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess
-
-
-
-1.2.1  Skripte testen
-
-
-
-    Migrationsskripte testen, auch mit Datenbeständen von Kunden und Initialdaten. Unsere Beispieldaten nutzen nicht alle Features und haben nicht alle denkbaren ""Merkwürdigkeiten"". Abwärts-Kompatibilität von gespeicherten Abfragen durchtesten. Bei MySQL-Migrationsskripten darauf achten, dass alle ""create table""-Statements als engine explizit ""InnoDB"" angegeben haben (siehe auch ""important.txt"" im migration-Ordner des iteraplan Projekts)."		Task	iteraplan PO	19/Oct/16 2:11 PM	26/Oct/16 10:41 AM																																																																				

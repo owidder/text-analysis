@@ -1,1 +1,0 @@
-Loading indicator for IFD			New Feature	iteraplan PO	02/Sep/15 2:57 PM	06/Oct/15 4:58 PM					ifd	load								06/Oct/15 4:58 PM;msr;Duplicate to ITERAPLAN-3973																																																						

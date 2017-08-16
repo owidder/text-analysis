@@ -1,5 +1,0 @@
-Scroll in IE	"When scrolling in IE the actions column is faster than the data. 
-
-This is caused by Ag-grid, so check if there will be a fix or if there is somenthing else we can do.
-
-"		Improvement	iteraplan Thunderduck	19/Jan/17 2:04 PM	25/Jan/17 11:00 AM														25/Jan/17 11:00 AM;fka;Current state is okay for now																																																						

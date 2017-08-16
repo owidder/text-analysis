@@ -1,5 +1,0 @@
-Zeitunabhängige Ansichten / Dashboards	"Punkt 5. aus dem Scribble (Siehe PDF im Anhang).
-
-
-
-Genauere Spezifikation steht aus."		Epic	OpenSpeedMonitor	17/Apr/15 10:27 AM	19/Jan/17 10:25 AM																																																																				

@@ -1,3 +1,0 @@
-Additional language packs for download	"The iteraplan default installation should only contain the supported language packs (tested and quality assured). Supported Language packs for iteraplan are only German and English.
-Further language packs that are provided by the community are offered as download (exluding support or bug fixes for these packs) on a wiki page of the iteraplan community. 
-An installation routine for the additional language packs has to be provided."		New Feature	iteraplan PO	05/Sep/13 6:31 PM	09/Feb/15 9:07 PM					cfnr																																																															

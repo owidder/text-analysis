@@ -1,1 +1,0 @@
-Exception Handling für AssetPersistenceWorker			Improvement	OpenSpeedMonitor	11/Aug/16 10:35 AM	18/Aug/16 9:22 AM																																																																				

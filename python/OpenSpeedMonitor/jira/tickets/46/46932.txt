@@ -1,5 +1,0 @@
-Implement templates using real data		46925	Sub-task	iteraplan PO	09/Sep/14 10:40 AM	29/Sep/14 10:27 AM														"12/Sep/14 3:55 PM;alvo;We have some questions about data binding on single item view. Problems with following blocks:
-1. All sub blocks in Hierarchy section
-2. Relations all blocks and sub items
-
-Could you please explain objects relations and data sources binding rules for listed sections"																																																						

@@ -1,1 +1,0 @@
-Speichern der Ergebnisse in elasticsearch (via Engine)		75551	Sub-task	secureCodeBox	15/Mar/16 6:13 PM	22/Mar/16 9:17 AM																																																																				

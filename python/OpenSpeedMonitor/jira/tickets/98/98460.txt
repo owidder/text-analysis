@@ -1,5 +1,0 @@
-DOCUMENTATION: Document Portfolio Diagram, Classic Cluster Diagram and Pie Chart in the User Guide	"*Summary:*
-
-Document Portfolio Diagram, Classic Cluster Diagram and Pie Chart in the User Guide.
-
-Use the Masterplan Diagram as template: https://www.iteraplan.de/doc/display/iteraplan54/Masterplan+Diagram"		New Feature	iteraplan PO	07/Oct/16 2:58 PM	26/Oct/16 9:41 AM																																																																				

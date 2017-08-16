@@ -1,1 +1,0 @@
-Collapse legend initially	Please collapse legend initially		Improvement	iteraplan Speedbird	16/Aug/16 4:57 PM	17/Aug/16 5:07 PM														17/Aug/16 5:07 PM;dmkh;Review is done, a few comments are here: https://iteraweb.iteratec.de/fisheye/cru/IP-10																																																						

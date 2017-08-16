@@ -1,1 +1,0 @@
-DATA-Tab: change the svg-icons to uniform line-strength	The Icons on the tiles have different line strengths. Use similar width for the lines. Business Process has a good width. 		Task	iteraplan Thunderduck	26/Jun/17 12:53 PM						graphics	icons																																																														

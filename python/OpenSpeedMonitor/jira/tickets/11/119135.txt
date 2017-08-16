@@ -1,9 +1,0 @@
-Remove "featureName" parameter from the URL	"At the moment this parameter is used in app.js on route change to detect whether UserSettingsService should save the page settings and to get the ""featureName"" of a setting.
-
-
-
-The featureName is also stored in the current scope, so we can use the setting(s) from scope and do not pollute URL with the extra data, if we can avoid this.
-
-
-
-To cleanup the URL, the scope property should be used."		Improvement	iteraplan Speedbird	20/Apr/17 11:20 AM	24/Apr/17 4:46 PM																																																																				

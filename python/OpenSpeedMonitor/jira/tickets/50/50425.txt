@@ -1,3 +1,0 @@
-Check the content of fortune coockies	"in \app\js\quotes\quotes.js
-
-NOTE: this is a part of iteraplan 5.0.5 release. update the 5.0.5 branch! ([~ach])"		Bug	iteraplan PO	10/Jul/15 2:47 PM	16/Jul/15 3:33 PM																																																																				

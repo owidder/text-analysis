@@ -1,3 +1,0 @@
-Problem with new colours for undefined parameters	Summary: in some cases colours for undefined parameters stay unchanged 	47128	Sub-task	iteraplan PO	23/Jan/15 12:33 PM	23/Jan/15 2:16 PM													"Workspace: Windows 8.1
-Browser: Google Chrome 39.0
-Revision: 538"	23/Jan/15 2:16 PM;dasm;Verified (revision 543)																																																						

@@ -1,3 +1,0 @@
-Saved reports in interactive client	"This epic is a container for all issues to do with saved diagram configuration or other reports in the interactive client.
-
-Also the migration of classic reports to the interactive client."		Epic	iteraplan PO	19/Jan/16 10:54 AM	01/Feb/16 10:16 AM																																																																				

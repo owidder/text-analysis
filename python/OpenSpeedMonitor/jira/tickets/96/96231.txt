@@ -1,5 +1,0 @@
-After browser refresh button click diagram not loading correctly	"Test in every diagram.
-
-
-
-Possibly there is something incorrect in reading the current URL after the reload. Has something to do with complex objects."		Bug	iteraplan Quickfox	16/Sep/16 10:38 AM	16/Sep/16 4:22 PM														16/Sep/16 1:05 PM;mwe;Fixed it and tested it in LSD, NCD, IFD, MPD and PFD.	16/Sep/16 4:22 PM;roia;Review done. No comments.																																																					

@@ -1,5 +1,0 @@
-Create the update script for the database		112745	Sub-task	iteraplan Thunderduck	21/Apr/17 8:32 AM	02/May/17 10:50 AM														"25/Apr/17 4:19 PM;ip-laptop;* Oracle Lines added
-
- * MYSQL Lines added
-
- * MSQL Lines added"																																																						

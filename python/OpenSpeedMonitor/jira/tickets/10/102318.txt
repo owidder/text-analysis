@@ -1,1 +1,0 @@
-Realisierung eines einheitlichen Spinner-Calls	Es sollte möglich sein einen einheitlichen Spinner durch einen {{startSpinner()}} und {{stopSpinner()}} JS Aufruf starten und stoppen zu können.		Improvement	OpenSpeedMonitor	11/Nov/16 10:46 AM	25/Nov/16 5:12 PM																																																																				

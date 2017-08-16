@@ -1,9 +1,0 @@
-Sort by boolean column			New Feature	iteraplan PO	10/May/16 11:11 AM	08/Jun/16 11:14 AM														"25/May/16 11:41 AM;mwe;Add custom comparator: See the comparator implementation in [ITERAPLAN-4576] and [https://www.ag-grid.com/javascript-grid-sorting/index.php]
-
-Add the boolean comparator to feature columns with type boolean."	06/Jun/16 1:51 PM;mse;Can be easily review together with ITERAPLAN-4571.	"06/Jun/16 3:28 PM;abo;Review Comments:
-
-* Instead of a _ENUM_COLUMNSUFFIX_ and _BOOLEAN_COLUMNSUFFIX_ I'd rather use a _ORIGINAL_VALUE_COLUMN_SUFFIX_ for both enums and booleans. (using different suffixes for different datatypes seems a bit like hungarian notation to me).
-
-* I'm missing unit tests for _getRankForEnumValue()_ - especially corner cases like null values or literals with length > 1."	"07/Jun/16 11:00 AM;mse;* First review comment implemented
-
-* Deconde review comment moved to ITERAPLAN-4580 where it fits better"	08/Jun/16 11:14 AM;abo;Review OK.																																																		

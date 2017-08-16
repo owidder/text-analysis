@@ -1,4 +1,0 @@
-Wrong place for "switch" and "remove" buttons	"Steps to reproduce:
-1. Go to List view page with Architectural Domain as content type
-2. Add all columns
-Actual: Wrong place for ""switch"" and ""remove"" buttons for column which was added as last column"		Bug	iteraplan PO	27/Apr/15 9:28 AM	19/Jan/16 1:57 PM																																																																				

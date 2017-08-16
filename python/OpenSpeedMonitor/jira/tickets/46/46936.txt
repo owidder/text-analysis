@@ -1,9 +1,0 @@
-Edit description	"To the existing single item view of IS, add editing of the description text.
-
-Behavior as in previous tickets on edit.
-
-Use a text area as input component.
-
-No validation, all characters are valid, empty description is valid, too.
-
-An empty description should have a placeholder text like ""no description"" in the single item view, so there is already something to click on to start editing."		New Feature	iteraplan PO	09/Sep/14 6:02 PM	29/Sep/14 10:24 AM														10/Sep/14 1:44 PM;sepr;Est. 1 PD																																																						

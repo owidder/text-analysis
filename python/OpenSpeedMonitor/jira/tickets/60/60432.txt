@@ -1,5 +1,0 @@
-LSD: Legend should show colored axis of hierarchical elements	"*Summary:*
-
-The Legend of the Landscape Diagram should show colored axis of hierarchical elements, i.e. the grey boxes should be explained in the legend."		Improvement	iteraplan PO	16/Oct/15 2:46 PM	03/Nov/15 3:49 PM					axis	hierarchy	lsd							"03/Nov/15 11:29 AM;dam;rename HIERARCHY in locals into HIERARCHY_COLORING;
-
-refactor duplicate code in lsdLegendBuilder & lsdTableModelBuilder"																																																						

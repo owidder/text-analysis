@@ -1,5 +1,0 @@
-ReactionEvents	"Create the Event Objcet as Map
-
-
-
-Make sure the JS functions can handle it"	89430	Sub-task	iteraplan Thunderduck	12/Jul/16 3:35 PM	14/Jul/16 12:55 PM														14/Jul/16 12:55 PM;mse;Review ok.																																																						

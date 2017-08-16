@@ -1,3 +1,0 @@
-Deployment demo- und iteratec-Instanz	Für Tests des aktuellen Stands.		Task	OpenSpeedMonitor	04/May/15 10:07 AM	04/May/15 11:16 PM														"04/May/15 11:16 PM;nku;Habe hier zu Testzewcken den aktuellen Stand deployt:
-
-http://dev.openspeedmonitor.wpt.iteratec.de/"																																																						

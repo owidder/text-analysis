@@ -1,9 +1,0 @@
-JobGroup-Tags abschaffen	"JobGroup Tags kann man bisher nur pber den Controller vergeben.
-
-Wir sollten sie abschaffen und stattdessen nur Job-Tags verweden.
-
-
-
-Bei der Dataenauswahl werden dann unter den JobGruppen einfach die Tags angezeigt, die zu zugehörigen Jobs gehören.
-
-Das vereinheitlicht das Tag-System."		Task	OpenSpeedMonitor	24/Apr/17 1:49 PM																																																																					

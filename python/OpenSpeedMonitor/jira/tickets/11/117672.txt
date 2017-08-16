@@ -1,1 +1,0 @@
-Alle Charts dynamisch skalierbar machen	Wenn man die Größe des Browser-Fensters ändert, sollten alle Charts neu skaliert werden, sodass sie sie ihre Größe dynamisch mit-verändern, wie das Time Series Chart.		Story	OpenSpeedMonitor	04/Apr/17 1:48 PM	11/Apr/17 11:31 AM																																																																				

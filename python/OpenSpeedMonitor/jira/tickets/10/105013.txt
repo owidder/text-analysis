@@ -1,5 +1,0 @@
-Update view model for BB list view	"Update view model for building block list view when REST request is successful.
-
-
-
-See super ticket for details."	104222	Sub-task	iteraplan Thunderduck	08/Dec/16 11:00 AM	13/Dec/16 11:35 AM																																																																				

@@ -1,7 +1,0 @@
-Anzeige von HUB-Karten-Overlays von Merkmalen (Bewertungen)	"Wir benötigen eine Funktionalität, um einen grafischen Overlay erzeugen zu können für die spätere Darstellung von ""Einschätzungen"" von Eigenschaften z.B. NFA - Erfüllt etc.
-
-
-
-* siehe http://leafletjs.com/examples/choropleth.html 
-
-* siehe Draw-IO-Link: https://www.draw.io/?client=1#DSIH-BF-HUB-User-Authentifizierung.html"		Story	EAM-Visualisierung	05/Apr/16 5:03 PM																																																																					

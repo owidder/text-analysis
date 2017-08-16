@@ -1,5 +1,0 @@
-Pro Test Javascript-Abhängigkeiten definieren können	"Das könnte über separate  config-files pro Test-Datei erfolgen. Dann sollte in dieser config aber nur die fils-Liste überschrieben werden.
-
-
-
-Oder man bindet die erforderlichen Javascript-Dateien direkt in der Test-JS-Datei ein."		Task	OpenSpeedMonitor	16/Dec/15 9:15 AM	16/Dec/15 1:57 PM														16/Dec/15 1:41 PM;mmi;Nicht ohne weiteres möglich, da Javascript keinen import/include weiterer javascript-dateien anbietet.																																																						

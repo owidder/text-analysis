@@ -1,1 +1,0 @@
-Ausgewählte Datenpunkte sollen hervorgehiben werden	Wenn man einen Datenpunkt im Linechart auswählt, wird die Assettabelle gefüllt. Es muss ersichtlich sein, welcher Datenpunkt zu der Tabelle gehört.		Improvement	OpenSpeedMonitor	24/Aug/16 11:06 AM	29/Aug/16 8:55 AM																																																																				

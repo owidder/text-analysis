@@ -1,3 +1,0 @@
-Editierbare Konnektivitätsprofile einführen	"Egal ob ein Standard-Konnektivitätsprofil verwendet wird oder ""Custom"" ausgewählt ist, sollen die einzelnen Parameter des Profils (bwUp, bwDown, ...) immer als Custom zum Server übertragen werden.
-
-Bisher sind die Konnektivitätsprofile, die man für einen Job auswählen kann fest verdrahtet. Es soll möglich sein, die Namen und Werte der Profile zu ändern und zu speichern. "		Task	OpenSpeedMonitor	20/Feb/14 11:10 AM	14/Mar/14 2:15 PM																																																																				

@@ -1,1 +1,0 @@
-Job-Group-Names müssen im JobResult eingefügt werden (blocks IT-52)	Es ist eine neue Column angelegt worden von Nils am JobResult (jobGroupName) diese muss auch migriert werden!	10321	Sub-task	OpenSpeedMonitor	08/Aug/13 6:01 PM	12/Aug/13 11:51 AM																																																																				

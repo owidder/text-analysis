@@ -1,1 +1,0 @@
-LSD: toolarea items are not sorted alphabetically	!lsd-col-type.jpg!		Bug	iteraplan PO	16/May/17 12:16 PM	16/Jun/17 5:35 PM														13/Jun/17 3:37 PM;olal;Review is done, tested on chrome/ie11/firefox																																																						

@@ -1,3 +1,0 @@
-Master plan levels 2-3 should be filtered to plan's date range	"A master plan has a date range. The master plan should only display elements that are productive during that date range. Currently all level 2-3 elements are displayed, leading to visualizations that are filled with blank rows.
-
-For example, see attached master plan. It runs from 12/2013 to 12/2014, but contains numerous projects completed in 2011 and 2012 and earlier in 2013 that aren't relevant or useful."		Improvement	iteraplan PO	10/Dec/13 6:57 PM	19/Jan/16 11:33 AM																																																																				

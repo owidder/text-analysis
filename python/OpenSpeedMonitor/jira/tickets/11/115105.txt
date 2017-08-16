@@ -1,9 +1,0 @@
-Farbliches Hervorheben eines Balken ermöglichen	"In den Charts:
-
- * CSI Benchmark
-
- * Job Group Aggregation
-
-
-
-sollte ein Balken farblich hervorgehoben werden können, indem man auf diesen klickt und die anderen Balken danach grau werden."		New Feature	OpenSpeedMonitor	16/Mar/17 9:37 AM	16/Mar/17 12:59 PM																																																																				

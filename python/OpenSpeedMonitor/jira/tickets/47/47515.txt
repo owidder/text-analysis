@@ -1,6 +1,0 @@
-Context menu doesn't appear in the Mozilla Firefox	"Steps to reproduce:
-1. Go to LSD page
-2. Open context menu
-Actual: Context menu doesn't appear in the Mozilla Firefox
-Expected: Context menu appears"	47460	Sub-task	iteraplan PO	24/Mar/15 9:13 AM	24/Mar/15 1:03 PM													"Windows 8.1
-Browser: Mozilla Firefox 35.0.1"																																																							

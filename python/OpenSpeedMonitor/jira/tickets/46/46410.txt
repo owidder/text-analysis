@@ -1,9 +1,0 @@
-Serialize R-MM (MI) to JSON	"The Metamodel must be serialized to the same JSON format as in 3.2, but based on the MI R-MM instead of the EAM MM.
-
-Based on: existing GSON type adapter by MBa based on the EAM MM.
-
-JSON output format: see User Guide and existing 3.2 behavior.
-
-Replaces the concept of a MM-Mapper as in ITERAPLAN-2159, ITERAPLAN-2161, ITERAPLAN-2202 
-A Metamodel is _not_ mapped (that is read and written) the same way as a Model is."		Improvement	iteraplan PO	16/Jan/14 6:06 PM	24/Jan/14 3:03 PM					export									"22/Jan/14 5:42 PM;mba;In accordance with [~sbu] and [~wfr], the values for a property's ""type"" entry changes from the encapsulated java-type's name (e.g. ""java.math.BigInteger"" for INTEGER or ""java.lang.String"" for STRING or RICHTEXT) to the persistent name of the AtomicDataType (e.g. ""integer"", ""string"" and ""richtext"".
-Additionally, the possible (and public available) values for this type-field have been added to the [REST API Resource Structure|http://www.iteraplan.de/wiki/display/upcomingIteraplan/REST+API+Resource+Structure] in the UserGuide."																																																						

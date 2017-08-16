@@ -1,7 +1,0 @@
-REST-API Methode allLocations sollte nur noch aktive Locations anzeigen	"Per Default sollte die Methode nur noch aktive Locations von aktiven Servern anzeigen.
-
-Per Parameter showInactive=true sollte man die inaktiven mit anzeigen lassen können.
-
-
-
-Idealerweise implementieren wir zudem einen update/create-Hook für die Domain WebPageTestServer, der alle assoziierten Locations deaktiviert (_active=false_), wenn der WebPageTestServer inaktiv ist."		Task	OpenSpeedMonitor	01/Nov/16 4:18 PM	11/Jan/17 5:08 PM																																																																				

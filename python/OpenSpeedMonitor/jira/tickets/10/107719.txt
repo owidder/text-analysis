@@ -1,5 +1,0 @@
-Moadle Dialoge von PageAggregation layouten	"Die modalen Dialoge haben noch kein sauberes Layout, einige Input-Felder benutzen kein form-control und sind deshalb nicht im Bootstrap Design. Diese sollten also verbessert werden.
-
-
-
-"		Improvement	OpenSpeedMonitor	09/Jan/17 10:12 AM	23/Jan/17 2:20 PM														12/Jan/17 4:46 PM;jwi;Bootstrap Colorpicker: https://github.com/itsjavi/bootstrap-colorpicker/																																																						

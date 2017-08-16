@@ -1,4 +1,0 @@
-*.command not working	"Line endings are broken, the 2 startup files in the bundle do currently not run under MacOS
-
-Problem has been diagnosed and already fixed by CTE and BDO, you might want to ask them for details"		Bug	iteraplan PO	14/Nov/14 9:38 AM	20/Nov/14 3:00 PM					mac									19/Nov/14 5:41 PM;isc;currently fixed on trunk	20/Nov/14 10:59 AM;isc;I have committed the changes also on 3.4 branche	"20/Nov/14 2:59 PM;fam;Linefeed adjusted to unix (LF). Now working. 
-Ticket closed."																																																				

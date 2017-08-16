@@ -1,3 +1,0 @@
-Reset of a filter doesn't work	If you configure an Information Flow Diagram and filter on the second configuration page interfaces with a query option, you don’t can reset the configuration. Because the reset button is out of function or works only if you have selected individual items from a list. 		Bug	iteraplan PO	10/Nov/14 6:54 AM	17/Nov/14 3:24 PM														14/Nov/14 2:29 PM;abo;According to [~wfr] _Reset_ means "reset to defaults" (in contrast to "reset to settings from saved query").	17/Nov/14 11:35 AM;abo;attached mylyn context.	"17/Nov/14 3:24 PM;fam;So far, current code is okey, but further developement of this issue is stopped.
-Functionality will be covered by new client.
-"																																																				

@@ -1,3 +1,0 @@
-Possible primary key constraint problem in migration scripts	"In the migration scripts from 3.1 to 3.2, a new table ISR_BF is created with column-values from BM. Then a primary key (=unque constraint) is added to these columns, but the values may not be unique. => The migration script fails.
-
-Make sure, that ISR_BF is created in a way, that a unique constraint over these columns doesn't cause errors (use ""select distinct ..."")."		Bug	iteraplan PO	09/Jan/14 4:05 PM	09/Jan/14 5:12 PM					migration	sql								09/Jan/14 5:12 PM;sfe;seems fine																																																						

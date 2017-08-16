@@ -1,7 +1,0 @@
-Installer should incorporate pre-defined authentication settings	"Some customers with customized installers provide authentication settings to be included in the installer.
-Currently this is done by using a predefined iteraplan-auth.properties file, disregarding the input for i.e. LDAP configuration during the installation process.
-However, the configuration page still appears during the installation.
-This can be confusing and is less than elegant.
-
-Better:
-If existing, the predefined iteraplan-auth.properties file (or a file created from it during building of the installer) provides preallocated values for the configuration page during the installation process."		Improvement	iteraplan PO	08/May/15 8:51 AM	19/Jan/16 1:57 PM					installer																																																															

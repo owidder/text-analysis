@@ -1,3 +1,0 @@
-wording: *HighChart*-Klassen umbennen	Klassen wie HighChartTagLib.groovy umbenennen. Generischer, (z.B. in ChartTagLib) da nun je nach Konfiguration Rickshaw- oder Highcharts-Charts erzeugt werden.		Task	OpenSpeedMonitor	06/Nov/14 8:41 AM															"25/Feb/16 6:33 PM;bka;Ist das noch aktuell?
-
-Auf die Schnelle konnte ich nur noch den HighchartPointDetailsController finden, der wohl auch nur noch für HighChart verwendet wird. ?"	18/Jan/17 4:02 PM;sbr;Bitte nicht ChartTagLib.																																																					

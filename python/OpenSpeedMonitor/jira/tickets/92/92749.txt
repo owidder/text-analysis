@@ -1,7 +1,0 @@
-Digest Cycle Error when loading list	"Happens when loading the list of informationSystems the first time:
-
-https://docs.angularjs.org/error/$rootScope/inprog?p0=$digest
-
-
-
-There is an error showing up in the browser console."		Bug	iteraplan Quickfox	08/Aug/16 4:16 PM	09/Aug/16 10:06 AM														08/Aug/16 4:28 PM;mwe;Fixed with $timeout.	09/Aug/16 10:06 AM;pma;Review comment: ok																																																					

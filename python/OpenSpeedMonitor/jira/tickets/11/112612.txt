@@ -1,7 +1,0 @@
-Fehlermeldung beim Anzeigen des CSI Graphen	"Der CSI Graph auf der Dev-Instanz lässt sich nicht mehr anzeigen und es wird ein 500 Fehler geworfen: {code}no protocol SecurityRequestHolderFilter{code}
-
-
-
-Beispiel URL mit Stacktrace:
-
-https://dev.openspeedmonitor.wpt.iteratec.de/csiDashboard/showAll?_action_showAll=Show&aggrGroupAndInterval=measured_event&selectedTimeFrameInterval=604800&_includeInterval=&selectedFolder=2&csiTypeDocComplete=on&selectedPages=3&_selectedAllMeasuredEvents=&selectedAllMeasuredEvents=on&_selectedAllBrowsers=&selectedAllBrowsers=on&_selectedAllLocations=&selectedAllLocations=on&_selectedAllConnectivityProfiles=&selectedAllConnectivityProfiles=on"		Bug	OpenSpeedMonitor	22/Feb/17 10:13 AM	01/Mar/17 1:41 PM														27/Feb/17 3:01 PM;bwo;Der Fehler scheint tatsächlich nur auf der Dev-Instanz aufzutreten. Lokal konnte ich es weder normal, noch über Docker reproduzieren.																																																						

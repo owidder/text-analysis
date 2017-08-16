@@ -1,7 +1,0 @@
-Error Codes for Customization (Backend + Frontend)	"Check the current error codes for the {color:red}UPDATE{color} two existing customization REST APIs on the backend:
-
-* Check if these fit
-
-* If they do not fit, extend the error codes in collaboration with [~msr]
-
-"		New Feature	iteraplan Speedbird	17/Jul/17 9:53 AM	25/Jul/17 2:14 PM														24/Jul/17 1:45 PM;mash;Please add revision (server) 27459 to review																																																						

@@ -1,2 +1,0 @@
-Spreadsheet Reports: the "Add New Column:" select box is not rendered	"This can be reproduced for iteraplan-ee-bundle-initialdata package.
-The ""Add New Column:"" select box is rendered only for Information systems, for other building blocks not."		Bug	iteraplan PO	31/Aug/11 6:13 PM	05/Sep/11 11:06 AM					reporting																																																															

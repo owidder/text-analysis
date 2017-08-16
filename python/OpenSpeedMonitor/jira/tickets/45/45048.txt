@@ -1,2 +1,0 @@
-New Release has no predecessor relation	"New Release has no predecessor relation
-Still open despite new functionality for NewRelease."		Bug	iteraplan PO	19/Jul/11 1:53 PM	06/Sep/11 11:57 AM														16/Aug/11 11:29 PM;kvo;Will be done with ITERAPLAN-155																																																						

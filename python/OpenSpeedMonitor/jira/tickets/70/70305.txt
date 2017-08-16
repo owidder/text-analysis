@@ -1,3 +1,0 @@
-Add missing operator locales	"Ensure all operators (see filterDialogUtils.js) exist in locale-de.json and locale-en.json.
-
-Keys should look like ""LEGEND.""<<Operator>> , e.g. LEGEND.IS"	65408	Sub-task	iteraplan PO	22/Jan/16 10:23 AM	22/Jan/16 11:02 AM														22/Jan/16 11:02 AM;msr;Duplicate to ITERAPLAN-4304																																																						

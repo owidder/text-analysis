@@ -1,9 +1,0 @@
-Filter-Deserialization from URI does not work for Enum with 'contains'	"WHEN I open an URL containing a filter on an Enum-Value (e.g. starts-with), e.g. http://localhost:8080/client/#/lsd?locale=en&E24=A13&E25=B19&F0=B18&F19=Information%20Systems%20by%20Based%20on%20Technical%20Components%20and%20Assigned%20Information%20System%20Domains&partiallyConnectedItems=binary&rows=hide&columns=hide&contentFilter=enumS%2FComplexityS%2FcontainsS%2FaC%2FflatC%2FitServicesR%2F1R%2FtextS%2FnameS%2FcontainsS%2Fx
-
-THEN the filter is constructed, but the value is not set (empty string)
-
-
-
-*SHOULD:*
-
-The text-value should be set to the text-field according to the filter-part in the URI."		Bug	iteraplan PO	24/Mar/16 1:33 PM	05/Apr/16 11:07 AM					filter	nic																																																														

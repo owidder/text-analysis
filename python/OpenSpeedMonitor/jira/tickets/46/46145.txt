@@ -1,1 +1,0 @@
-Create Test Specification for Custom Dashboards	Create test specification for custom dashboards. The user documentation should serve as a base.	46121	Sub-task	iteraplan PO	16/Oct/13 1:21 PM	22/Oct/13 1:38 PM														22/Oct/13 1:38 PM;sfe;seems fine																																																						

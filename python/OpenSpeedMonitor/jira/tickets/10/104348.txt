@@ -1,9 +1,0 @@
-Last modification time values are not displayed in CCD (IE10)	"*Summary:* 
-
-Values of Last modification time attribute (selected as row or header) are not displayed in Internet Explorer.
-
-
-
-Please fix displaying of such values (probably issue happened when using not supported JS methods)."		Bug	iteraplan Speedbird	30/Nov/16 4:51 PM	19/Dec/16 11:33 AM														16/Dec/16 5:30 PM;viol;Still reproduced on IE 10	"19/Dec/16 11:31 AM;viol;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-231
-
-no any comments "																																																					

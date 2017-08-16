@@ -1,1 +1,0 @@
-Make closing of the tool area more obvious	E.g.: Add a close Icon to the very right		Improvement	iteraplan PO	21/Apr/16 5:10 PM	27/Aug/16 11:27 AM														27/Aug/16 11:27 AM;fka;Tool area can't be closed any more																																																						

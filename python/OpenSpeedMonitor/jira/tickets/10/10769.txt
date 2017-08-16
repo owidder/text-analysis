@@ -1,3 +1,0 @@
-Einige Punkte im HighChart-Graph sind nicht klickbar	"Punkte im HighChart-Graph, die sich unter einem Schriftzug befinden, sind nicht klickbar. 
-
-Das beigefügte Bild zeigt einen Graphen aus der static sight des CSI Dashboards. Die Punkte unterhalb des grauen Schriftzuges sind nicht anklickbar, die anderen schon."		Bug	OpenSpeedMonitor	06/Nov/13 2:04 PM	05/Mar/15 3:35 PM													FF 23.0.1 / Windoof 7	05/Mar/15 3:35 PM;rkr;entfällt mangels HighChart																																																						

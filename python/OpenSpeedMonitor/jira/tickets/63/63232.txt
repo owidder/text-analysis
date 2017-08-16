@@ -1,3 +1,0 @@
-[Job Schedule Darstellung] Es werden nicht alle aktiven Jobs pro Location angezeigt	"In der OTTO-Instanz (https://iteraspeedmonitor.otto.wpt.iteratec.de/jobSchedule/schedules) werden z.B. für die Location _hetzner (1 agents)_ des Severs _exp.server03.otto.wpt.iteratec.de_ nur drei Jobs angezeigt. Wenn man die Jobliste (https://iteraspeedmonitor.otto.wpt.iteratec.de/job/list) nach der Location _otto-exp-hetzner_ filtert sieht man sehr viel mehr aktive Jobs in dieser Location.
-
-Die sollten auch in der Schedule-Darstellung alle auftauchen."		Bug	OpenSpeedMonitor	12/Nov/15 3:39 PM	12/Nov/15 5:01 PM																																																																				

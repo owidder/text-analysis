@@ -1,5 +1,0 @@
-Twitter Bootstrap aktualisieren	"Wir haben die Version 2 im Einsatz (2.3 ?). 
-Aktuell ist die 3.3.4.
-https://grails.org/plugin/twitter-bootstrap
-
-Viele Änderungen in Fluid Grid usw. Styles und Html müssen angepasst werden."		Task	OpenSpeedMonitor	06/May/14 9:43 AM	01/Nov/16 10:37 AM																																																																				

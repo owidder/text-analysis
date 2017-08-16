@@ -1,3 +1,0 @@
-Zeitraum-Auswahl auf Ergebnis-Dashboard kaputt	"Das (de)aktivieren der Datums- und Zeit-Felder funktioniert momentan nicht bei Auswahl von ""Manuelle Auswahl"" oder einer Preselection.
-
-Zudem funktioniert der timepicker nicht. "		Bug	OpenSpeedMonitor	21/Jul/15 12:03 AM	27/Jul/15 12:11 PM														27/Jul/15 12:11 PM;bwo;Die init Methoden für den Datepicker und den Timepicker waren in doOnDomReady Funktion noch auskommentiert.																																																						

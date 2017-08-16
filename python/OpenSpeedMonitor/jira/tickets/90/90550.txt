@@ -1,7 +1,0 @@
-Recherche Plugins		90549	Sub-task	OpenSpeedMonitor	15/Jul/16 5:52 PM	18/Jan/17 3:52 PM														"09/Aug/16 2:27 PM;msk;Es gibt das Spring-Security-UI Plugin, welches auch von Grails unterstützt wird. Hier die [Doku|https://grails-plugins.github.io/grails-spring-security-ui/]. Das Plugin integriert auch Mailbenachrichtigungen und Access Control Lists. 
-
-
-
-Leider läuft das Plugin sehr instabil, d.h. es fliegen alle Nase lang mal ein Exception und einige Funktionen funktionieren schlicht nicht. Die Menüführung insbesondere für die Acl-Administration ist teilw. seltsam. Einzelne GSPs und Controller des Plugins lassen sich überschreiben.
-
-"																																																						

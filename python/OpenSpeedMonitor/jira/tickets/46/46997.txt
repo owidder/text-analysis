@@ -1,1 +1,0 @@
-Remove contrib languages	Only German and English should stay as GUI language		Improvement	iteraplan PO	29/Sep/14 11:24 AM	16/Oct/14 9:56 PM																																																																				

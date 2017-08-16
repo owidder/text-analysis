@@ -1,9 +1,0 @@
-Link von Job zu Dashboard	Die Job Liste sollte so erweitert werden, dass zu jedem Job ein Link existiert, über welche das EventResultDashboard der letzten 7 Tage angezeigt wird.		Improvement	OpenSpeedMonitor	30/Nov/16 2:23 PM															"07/Dec/16 1:37 PM;nku;Die Verlinkung funktioniert aktuell nicht, wenn im Skript Steps vorkommen, die keine Page vorangestellt haben. Um dies zu berücksichtigen müsste das Parsen der Skripte überarbeitet werden.
-
-
-
-Das Parsen liefert nur noch die EventNames. Nur diese gehen auch in die Selektion. Das alte Parsen muss erhalten bleiben.
-
-
-
-Siehe auch IT-1409  "																																																						

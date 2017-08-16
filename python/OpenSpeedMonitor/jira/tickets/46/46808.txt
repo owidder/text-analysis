@@ -1,7 +1,0 @@
-Unrobust input field with consistency check	"The textbox for consistency checks in section _Consistency Checks - Information System Landscape_ row 3 is not robust for wrong inputs. If, for example the user types in an ""a"", a _NumberFormatException_ occurs. 
-
-This textbox can also used for cross site scripting. If you insert _<script>alert('hi');</script>_, a number format exception occures and the ""wrong string"" is outputted on the screen => alert Popup appears. 
-
-Fix this possible security issue and make the input filed more robust against wrong inputs.  
-
-"		Bug	iteraplan PO	07/Aug/14 8:29 AM	19/Aug/14 3:24 PM																																																																				

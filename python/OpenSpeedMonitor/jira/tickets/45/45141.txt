@@ -1,6 +1,0 @@
-The saved queries with result type Excel cannot be used in Bulk Updates	"How to reproduce:
-1. Go to Spreadsheet Reports
-2. Create a saved query with the result type other than ""simple list""
-3. Go to Bulk Updates
-4. Load the newly created saved query
-5. Click on ""Send query"""		Bug	iteraplan PO	12/Sep/11 12:56 PM	13/Sep/11 12:47 PM					bulkupdate	savedquery																																																														

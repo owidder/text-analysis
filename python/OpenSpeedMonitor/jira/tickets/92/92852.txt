@@ -1,3 +1,0 @@
-DC-Dashboard Keine Daten vorhanden Meldung	"Wenn für ausgwählte Parameter keine Daten vorhanden sind, sollte es eine entsprechende Meldung geben.
-
-Akutell wird dann ein leeres DC-Dashboard angezeigt."		Improvement	OpenSpeedMonitor	09/Aug/16 3:37 PM	23/Aug/16 12:15 PM																																																																				

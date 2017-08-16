@@ -1,9 +1,0 @@
-Make iturm webtests run again (and ideally execute them as maven integration test)	"Try to execute iturm webtests in the maven module ""turm-server-webtests"".
-Review the existing tests, if they make sense.
-Find a way to run the tests automatically in Maven's ""integration-test"" phase (maybe with a special plugin and an embedded Tomcat?)."		Task	iteraplan PO	10/Feb/15 2:36 PM	04/Feb/16 9:35 AM					iturm	test	webtests							19/Jan/16 1:41 PM;msr;[~fka]: Hi, sag mal, ist im Testteam "gegen Ende" vielleicht noch Zeit für dieses Ticket? VG Fabian 	"02/Feb/16 1:32 PM;lwi;Edited the Release-Process TODO List under following link (see section iTURM):
-
-https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-2.1.4iTurm
-
-
-
-The tests now work again with a MySQL DB. As aggreed with FKA & SFE it is not worth it to run these 3 tests automatically. Please see the link above for instructions to run the tests."																																																					

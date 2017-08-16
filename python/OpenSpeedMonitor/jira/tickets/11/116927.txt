@@ -1,9 +1,0 @@
-Null value in numeric input	"Numeric value fields, for example _costs,_ show empty field when typing in value ""0"".
-
-
-
-Not only in case of Mass Update, in single edit too.
-
-
-
-""0"" is not equal empty."		Improvement	iteraplan Speedbird	29/Mar/17 9:14 AM	07/Apr/17 2:49 PM																																																																				

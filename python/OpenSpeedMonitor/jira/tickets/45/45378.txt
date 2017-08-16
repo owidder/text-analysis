@@ -1,5 +1,0 @@
-Create customization that grants unauthenticated access to all saved reports	"Some customers want to embed digram reports directly into other intranet pages, portals or similar. This is currently difficult as such request do almost always get redirected to iteraplan's login form. Hence, it is desired that diagram reports are excluded from authentication requirements and return a result right away.
-
-URLs like {{/iteraplan/show/fastexport/**}} (saved reports) and {{/iteraplan/fastexport/**}} (context visualizations) should be auto-authenticated and executed with the permissions of a pre-defined role."		New Feature	iteraplan PO	16/Feb/12 6:30 PM	29/Feb/12 2:01 PM					authentication	diagram							iTURM authentication	"20/Feb/12 4:40 PM;sry;This new customization can be used to tweak an iTURM-based iteraplan to allow unauthenticated access to saved reports. That makes it possible to embed such diagrams in portal pages etc.
-
-It cannot be used with earlier releases without further modifications, as it depends on Spring Security 3.1 (after the recent library update)."																																																						

@@ -1,3 +1,0 @@
-CSS resources are not UTF8-encoded but JAWR expects UTF8	"Some of our CSS resources are encoded in ISO8859-1, but JAWR is configured to read them as UTF-8. This leads to incorrect output from JAWR and browser cannot render the iteraplan UI properly.
-
-All CSS and JavaScript resources must be re-encoded as UTF-8. Ideally, a step in the build-process should ensure that all these file have the correct encoding."		Bug	iteraplan PO	10/May/11 7:34 PM	24/May/11 2:42 PM					css																																																															

@@ -1,9 +1,0 @@
-Performance measurement	"(Timebox: 0,5 Day!)
-
-- compare duration of microedit operations
-
-- check which parts of architekture takes which time (db operations / microedit code/ rest handling)
-
-- first ideas for speed up (if needed) as follow up tickets or immediate implementation
-
-- with local set up - <= 500 ms"		Task	iteraplan Thunderduck	06/Sep/16 5:57 PM	20/Sep/16 11:03 AM														20/Sep/16 11:03 AM;mse;Review ok.																																																						

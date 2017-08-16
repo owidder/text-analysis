@@ -1,4 +1,0 @@
-Sending out emails in german from iteraplan	Is it possible to modify iteraplan so that it sends out emails in german?		Technical question	iteraplan Support	05/Apr/16 4:18 PM	07/Apr/16 10:22 AM														"06/Apr/16 12:53 PM;sfe;iteraplan cannot be easily modified to send notification emails in German, as the texts are part of template files.
-You would have to modify the template files directly, but we can not offer any support for doing so.
-
-By the way: I am replying in English since your question was in English as well. I still wanted to say that all our support staff speaks German, so there is no reason you cannot use German for reporting issues or asking questions here, if you wish so."	07/Apr/16 9:44 AM;ip.manuel.straesser;Vielen Dank für Ihre Antwort. Dieses Ticket kann geschlossen werden.																																																					

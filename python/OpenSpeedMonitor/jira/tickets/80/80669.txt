@@ -1,3 +1,0 @@
-Remove unnecessary uniqueness validation	"In some cases, we explicitly check whether a name or name|version of a building block to save are unique.
-
-Instead we should rely on the database for this, and catch according constraint violations to produce a legible error for the user."		Improvement	iteraplan PO	15/Apr/16 5:46 PM																																																																					

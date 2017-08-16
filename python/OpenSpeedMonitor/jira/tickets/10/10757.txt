@@ -1,3 +1,0 @@
-Graphite: Stundenmittelwerte einer Page aus CSI	"Regelmäßige Übermittlung des Stundenmittel der CSI-Werte pro Page per MetrikMonitoringService an Graphite. 
-Nutzt vorhandene Logik des CSI-Dashboards, geringfügige Anpassungen. (Cron-Job)"		Task	OpenSpeedMonitor	06/Nov/13 1:01 PM	10/Dec/13 4:08 PM														03/Dec/13 6:17 PM;mzeimer;@Nils: Habe bisher nur aufgeräumt.	"10/Dec/13 11:43 AM;mzeimer;Doku der cron-Einstellungen des Quartz-PlugIns:
-http://quartz-scheduler.org/documentation/quartz-1.x/tutorials/crontrigger"																																																					

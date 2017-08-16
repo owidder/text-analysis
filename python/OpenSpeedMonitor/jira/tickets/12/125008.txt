@@ -1,1 +1,0 @@
-Fix Docker Build	Jenkins Docker build fails due to 404 on download link for JRE8.		Bug	iteraplan Thunderduck	22/Jun/17 10:31 AM	22/Jun/17 5:24 PM														22/Jun/17 11:47 AM;scz;ToDo: Document steps in Release Process	22/Jun/17 5:24 PM;msr;Done :)																																																					

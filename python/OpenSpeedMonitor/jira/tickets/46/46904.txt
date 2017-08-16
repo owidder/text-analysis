@@ -1,1 +1,0 @@
-Create color legend for default coloring (by type)		46883	Sub-task	iteraplan PO	22/Aug/14 4:13 PM	29/Sep/14 10:15 AM																																																																				

@@ -1,1 +1,0 @@
-Aktivierung BatchActivity-Liste optimieren 	Bitte anpassen, sodass nur noch ein call für das update erfolgt, statt einer pro Zeile.		Improvement	OpenSpeedMonitor	20/Apr/15 9:26 AM	20/Apr/15 12:58 PM																																																																				

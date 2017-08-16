@@ -1,9 +1,0 @@
-setEventName sollte den Page-Namen per default persistieren und nicht den MeasuredEventName	"Bei der Benennung `setEventName` wird momentan MeasuredEvent vor Pagename priorisiert. D.h. wird nur ein Wert angegeben und nicht (per `:::` getrennt) MeasuredEvent und Page explizit, so wird dies per Default zum MeasuredEventName.
-
-
-
-Im Hinblick auf die Erweiterung unseres Kundenkreises und das die Kunden immer mehr ihren ""eigenen"" OSM bekommen und dadurch auch selber Skripte schreiben sollten wir dies überdenken und evtl umstellen. Hintergrund:
-
-
-
-Ist nur MeasuredEventName gesetzt und dadurch Page `undefined` tauchen die Messungen nicht mehr in den Charts aus was zu großer Verwirrung führen kann. Das Szenario ist nicht unwahrscheinlich, da die Unterscheidung in MeasuredEvent und Page sich als kompliziert für Neu-User herausgestellt hat."		Improvement	OpenSpeedMonitor	14/Jul/17 9:24 AM																																																																					

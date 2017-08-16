@@ -1,1 +1,0 @@
-[REST] resultsbetween liefert keine results für NICHT-CSI-JobGroups	Das sollte gehen. resultsbetween sollte keine JobGroup mit CsiConfiguration erfordern.		Bug	OpenSpeedMonitor	22/Sep/16 3:23 PM	22/Sep/16 3:23 PM																																																																				

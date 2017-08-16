@@ -1,5 +1,0 @@
-Nexus-Messungen laufen nicht	"Habe das Nexus umgehängt auf den http://dev.server02.wpt.iteratec.de/
-
-Messungen brechen ab.
-
-@Hauke: Lass uns das mal zusammmen durchgehen, wie man am besten einen nodejs-Agenten umhängt."		Bug	OpenSpeedMonitor	13/Jul/15 9:56 AM	18/Dec/15 12:09 PM																																																																				

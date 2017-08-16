@@ -1,6 +1,0 @@
-Fix for highlight in NC diagram	"Fix the ""highlight element"" feature.
-
-As is: box of highlighted element has black background
-To be: box has ""iteragenta"" thick border frame
-
-"		New Feature	iteraplan PO	18/Sep/14 10:34 AM	29/Sep/14 10:32 AM																																																																				

@@ -1,9 +1,0 @@
-[Persistenz] Datenmodell mongo/dc optimieren	"Wir müssen uns ansehen,
-
-
-
-* in welcher Form dc.js/crossfilter.js die Daten benötigt.
-
-* Wie wir diese Daten am besten aus der mongoidb bekommen.
-
-* Ggf. das bestehende mongodb-Schema anpassen, sodass es die Daten in dc-kompatibler Form liefert"		Task	OpenSpeedMonitor	07/Mar/16 4:19 PM	29/Jun/16 11:58 AM														23/Mar/16 11:17 AM;nku;Wir analysieren die Performance unserer Lösung nachdem wir eine erste Version eines Dashboards haben.																																																						

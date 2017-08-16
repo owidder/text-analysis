@@ -1,7 +1,0 @@
-Neues VPN-Zertifikat für GS Offenbach benötigt	"Mein VPN-Zertifikat für GS-Offenbach ist abgelaufen und das Renewal schlägt fehl. Könnt ihr mir bitte ein neues Zertifikat schicken?
-
-
-
-Besten Dank
-
-Harald"		Task	Infrastruktur	15/Nov/16 5:33 PM	18/Nov/16 9:47 AM	Routing													16/Nov/16 8:47 AM;sas;Ich habe für dich ein neues Zertifikat generiert, dies ist gültig für zwei Jahre. Das Passwort ist gleich geblieben.																																																						

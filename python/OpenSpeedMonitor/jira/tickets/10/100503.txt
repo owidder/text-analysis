@@ -1,1 +1,0 @@
-Permission handling in NCD	Add a permission handling for NCD diagram, both for inner and outer types. Use an alertService as a hot fix in {{NcdConfiguration}} where the {{throw}} is called for this cases.		Bug	iteraplan PO	25/Oct/16 5:41 PM	26/Oct/16 11:57 AM																																																																				

@@ -1,3 +1,0 @@
-Hibernate Search index is always empty in bundles	"Found while working on ITERAPLAN-1579:
-Hibernate Search index creation does not work in the bundle creation process right now. Probably because LocalApplicationContextUtil resets the Configuration internally."		Bug	iteraplan PO	27/Sep/13 3:26 PM	09/Oct/13 6:40 PM					bundles	full-text	search							"09/Oct/13 5:40 PM;svo;Cannot reproduce.
-Created a bundle from current trunk version. Full Text search returned proper results."	09/Oct/13 6:40 PM;sry;Cannot reproduce either any more. Works ok on latest nightly bundle build.																																																					

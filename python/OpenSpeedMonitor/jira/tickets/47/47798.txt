@@ -1,3 +1,0 @@
-Set footer above scrollbar	"Set the footer ""Copyright iteratec GmbH 2015 - ..."" just above the horizontal scrollbar in the bottom right corner.
-
-Please test your solution in Internet Explorer, Firefox and Chrome."		Improvement	iteraplan PO	28/May/15 10:33 AM	23/Jun/15 1:23 PM														23/Jun/15 1:23 PM;msr;Already fixed by [~isc] in ITERAPLAN-3262																																																						

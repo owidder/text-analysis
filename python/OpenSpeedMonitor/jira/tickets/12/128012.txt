@@ -1,1 +1,0 @@
-Absicherung per Basic-Auth	Gleiche Basic-Auth wie vorher auf Prod; IP der Geschäftsstelle als Ausnahme hinzufügen	128009	Sub-task	OpenSpeedMonitor	26/Jul/17 7:01 AM	26/Jul/17 7:58 AM																																																																				

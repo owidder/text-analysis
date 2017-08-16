@@ -1,4 +1,0 @@
-Improve UI of Elements with Icons	"Improve UI of Elements with Icons aligned right in Headline (where ""subscribe"" is now)
- * Print & Link (only icons, no text)
- * Show Subscribers/Subscribe -> new icons, no text
- * QSeal (Two Icons, one History other Action)"		Improvement	iteraplan PO	02/Aug/11 12:55 PM	12/Aug/11 10:37 AM																																																																				

@@ -1,5 +1,0 @@
-Entwicklung umziehen zu github	"* Codefreeze
-
-* Umzug
-
-* Berechtigungen: Bitte alle Nils die github-User schicken"		Task	OpenSpeedMonitor	15/Feb/16 4:42 PM	25/Feb/16 4:44 PM																																																																				

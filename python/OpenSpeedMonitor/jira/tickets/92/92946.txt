@@ -1,7 +1,0 @@
-Fix minified frontend build			Bug	iteraplan Quickfox	10/Aug/16 2:39 PM	11/Aug/16 4:38 PM														"11/Aug/16 4:38 PM;tam;Uglifying works.
-
-We need documentation for uglifying within build process.
-
-A ticket IPTQ-107 was created
-
-"																																																						

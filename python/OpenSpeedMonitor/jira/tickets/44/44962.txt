@@ -1,3 +1,0 @@
-Hyperlinks are not rendered / visible as hyperlink	"E.g. ""Diagram reports => Download visio certificate"" is rendered as normal text. Just a mouseover reveals the text as link.
-
-Wouldn't it be more intuitive to display hyperlinks as such?"		Improvement	iteraplan PO	19/May/11 10:35 AM	19/May/11 5:42 PM					usability									19/May/11 5:42 PM;kvo;Depends on CSS and current UI doesn't want to highlight links that much																																																						

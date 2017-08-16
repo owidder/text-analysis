@@ -1,4 +1,0 @@
-History: Implement display of changes to inter-type relations plus further tests	"The current state of history implementation seems to compute the correct differences of relations between two revisions. However, the UI does not show those differences, probably being a gap in the JSPs.
-
-In addition, more tests should be implemented that check for correct diff computation."		Improvement	iteraplan PO	31/Jan/12 11:59 AM	15/Mar/12 11:46 AM					history	test								"13/Mar/12 9:43 PM;sry;Wrapping up this ticket to signify the state that became part of 3.0.M2. Changes in relations should be properly displayed. Some core property changes are not yet displayed, but are saved correctly in the DB. Changes on enum and responsibility attributes are still ignored.
-Any issues that come up while testing this ticket should go into a follow-up ticket - ITERAPLAN-587"	15/Mar/12 11:46 AM;lci;see ITERAPLAN-587 for details.																																																					

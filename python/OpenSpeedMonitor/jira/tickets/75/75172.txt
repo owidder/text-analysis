@@ -1,5 +1,0 @@
-Benutzerdefinierte Dashboards aktualisieren	"Aktuell kommt eine Fehlermeldung, wenn man von einem Dashboard aus eine Ansicht als benutzerdefiniertes Dashboard abspeichern möchte und bereits ein Dashboard mit dem Namen existiert. 
-
-
-
-Besser wäre es, wenn wir vom modalen Dialog aus zunächst per Ajax prüfen, ob es den Namen bereits gibt. Wenn ja sollte ein Info-Text sichtbar werden, dass dieses Dashboard überschrieben wird, wenn man das Dashboard so speichert."		New Feature	OpenSpeedMonitor	29/Feb/16 5:23 PM	09/Mar/16 11:24 AM														07/Mar/16 1:49 PM;mmi;Es soll zusätzlich einen "Update CustomDashboard"-Button geben, der genau das tut	07/Mar/16 1:50 PM;mmi;Es muss der Fall abgefangen werden, dass beispielsweise ein "User" ein Dashboard von "Root" überschreibt																																																					

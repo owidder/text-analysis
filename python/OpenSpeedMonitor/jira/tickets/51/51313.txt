@@ -1,5 +1,0 @@
-Add module angular-translate.	"* install and inject module angular-translate.
-* use the StaticFilesLoader to load english and german languages
-"	49816	Sub-task	iteraplan PO	20/Jul/15 9:41 AM	22/Jul/15 10:48 AM														"22/Jul/15 10:48 AM;fam;Checked Code.
-
-Ticket closed."																																																						

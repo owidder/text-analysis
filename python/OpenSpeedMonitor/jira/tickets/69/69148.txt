@@ -1,9 +1,0 @@
-Create prototypical unit integration testcases for the IFD Pipeline	"- create a new unit integration test folder
-
-- create a new karmaIntegration.conf.js
-
-- make sure a testreport is created after the execution of the tests
-
-- write comments about what your testcases cover
-
-- create an excelsheet much like the existing e2etest sheet or manual test sheets which gives an overview of possible feature combinations and highlight covered ones"		New Feature	iteraplan PO	11/Jan/16 4:11 PM	05/Feb/16 2:07 PM					IFD	Test								27/Jan/16 5:25 PM;msr;This prototype should be reviewed by [~sfe] or [~wfr] or [~msr] . Reason: Information about background discussion of unit integration tests in JS																																																						

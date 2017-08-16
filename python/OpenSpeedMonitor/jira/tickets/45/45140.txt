@@ -1,7 +1,0 @@
-Duplicated error message in Business Mappings block	"How to reproduce:
-1. Create new BusinessUnit with the name of already existing entity
-2. Click save
-3. The error message will be shown at the top (""An element of this type with the name..."") and this is correct. The same message will be shown also in Businness Mappings block. See the attached screenshot."		Bug	iteraplan PO	13/Sep/11 1:47 PM	14/Sep/11 5:14 PM					error	message								13/Sep/11 1:56 PM;agu;attached screenshot	"14/Sep/11 5:14 PM;mba;Successfully tested:
-* Duplicate error message has been removed
-* Could not produce any situation in which the error would not be displayed twice => the removal in the JSP was totally right 
-"																																																					

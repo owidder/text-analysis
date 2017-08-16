@@ -1,9 +1,0 @@
-Numeric field (strategic value) must accept decimal format	"The field must accept a decimal format like ""123.45"" with a decimal point.
-
-As-is: accepts only integral numbers, but no point."	47009	Sub-task	iteraplan PO	29/Sep/14 1:06 PM	09/Jun/15 5:05 PM														"02/Oct/14 5:37 PM;wfr;Sorry, I was not clear.
-
-As a shortcut, the field must still accept a format _without_ decimal point.
-
-So both ""14"" and ""14.0"" should be accepted.
-
-As in the original ticket, keys that are never part of the format (""a"", ""$"") should be ignored alltogether."																																																						

@@ -1,5 +1,0 @@
-Duplicated business objects in LSD. (Distrigation)	"Please, prevent duplicate of business objects after using distrigation feature
-
-
-
-If another developer than Vitaliy is working on this ticket, please ask [~viol] how to reproduce this issue."		Bug	iteraplan Speedbird	31/Jan/17 8:26 AM	06/Feb/17 12:20 PM					LSD									06/Feb/17 12:20 PM;dmkh;Fixed																																																						

@@ -1,6 +1,0 @@
-Import Tests - Testcase 5 #17 fails	"During Execution of the import/export tests in ITERAPLAN-2043, Step#17 of TC 5 fails.
-Subject is change of Business Processes and Information Systems without Permissions for Business Processes by excel import.
-During the import, the hierarchy of several Business Processes should be changed and a new Information System should be created. 
-All permissions for Information Systems are granted, but for Business Processes only read permissions are granted.
-The Test expects the Information System to be created successfully and the Business Processes to be updated accordingly.
-However, an exception is returned stating that the user does not have sufficient permissions and nothing is updated."		Bug	iteraplan PO	24/Oct/13 4:59 PM	25/Oct/13 3:59 PM																																																																				

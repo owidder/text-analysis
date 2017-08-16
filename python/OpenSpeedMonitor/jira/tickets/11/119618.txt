@@ -1,1 +1,0 @@
-GetBarchartCommand um zweiten Timeframe erweitern		118615	Sub-task	OpenSpeedMonitor	26/Apr/17 11:29 AM	03/May/17 6:19 PM																																																																				

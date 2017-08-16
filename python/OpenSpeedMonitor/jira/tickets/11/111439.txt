@@ -1,1 +1,0 @@
-Umstellung Betrieb aller OSM-Instanzen auf docker	Alle Vorbedingungen (docker, compose, reverse-proxy, ...) werden via Ansible auf der osm-Maschine ausgerollt. Das Deployment der Instanzen erfolgt mittels docker-compose. Ausgeführt wird dieses Deployment vom Bamboo.		Story	OpenSpeedMonitor	09/Feb/17 5:26 PM																																																																					

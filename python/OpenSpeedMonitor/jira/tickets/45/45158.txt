@@ -1,1 +1,0 @@
-Interface diagrams should show links/URLs not in Wiki-Syntax	In interface diagrams (Visio), existing file links / URLs (e.g. in description fields) are shown in wiki syntax, not as links / URLs		Improvement	iteraplan PO	21/Sep/11 2:37 PM	01/Aug/12 10:48 AM					diagram								Visio																																																							

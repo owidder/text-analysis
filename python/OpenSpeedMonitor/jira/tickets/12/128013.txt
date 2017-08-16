@@ -1,1 +1,0 @@
-SQL Dump Script anpassen.	Das Script, welches der Bamboo nächtlich ausführt um Datenbank Dumps zu erstellen, wird nicht ohne weiteres mit Docker Instanzen funktionieren. Wir müssen dieses Script/diesen Job in Bamboo anpassen.	128009	Sub-task	OpenSpeedMonitor	26/Jul/17 7:02 AM																																																																					

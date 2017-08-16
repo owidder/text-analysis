@@ -1,3 +1,0 @@
-Fix bundle stop script	Doesn't seem to work after hsqldb upgrade.		Bug	iteraplan PO	10/Feb/16 3:39 PM	24/Feb/16 11:59 AM														"17/Feb/16 5:32 PM;abo;Works on Windows and Linux (bash in Ubuntu 15.04).
-
-Does _not_ work in Cygwin shell. Error-msg.: _""Fehler: Hauptklasse org.hsqldb.cmdline.SqlTool konnte nicht gefunden oder geladen werden_"""	18/Feb/16 11:18 AM;fka;Cygwin not that important. Please defer ....	18/Feb/16 2:43 PM;abo;Assigned to [~sfe] as he will be testing the scripts on a Mac.																																																				

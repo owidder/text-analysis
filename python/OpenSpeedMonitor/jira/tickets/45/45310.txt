@@ -1,9 +1,0 @@
-Filtering IS based on their Interface direction gives wrong results	"Filtering IS based on their Interface direction (In Spreadsheet Reports) gives wrong results.
-Filtering Interfaces itself is working correctly."		Improvement	iteraplan PO	19/Dec/11 4:56 PM	04/Jan/12 3:58 PM														"21/Dec/11 11:55 AM;kvo;The Filtering itself is working correctly:
- * it filters (independently from IS) all Interfaces with chosen direction
-
-One could argue, that a user wants to filter:
- * dependently from chosen IS
- * the direction has to be taken from the perspective of the filtered IS
-
-This is not how all other filters are working but probably more intuitive."	21/Dec/11 12:01 PM;vsh;Implementation: relatively low, half a day maybe; Maintenance: none	22/Dec/11 12:49 PM;vsh;This should only apply for the direction attribute in case the chosen value is "->" or "<-". For all other interface attributes and for the directions "-" and "<->" the current semantic should be retained.	22/Dec/11 3:12 PM;vsh;What about the interface extension in Technical Components?	28/Dec/11 4:45 PM;vsh;The interface extension in Technical Components doesn't need correction as it returns the expected results.	02/Jan/12 9:54 AM;vsh;There were problems with the unchecked casting in QueryGeneratorTest which was fixed in the last checkin	04/Jan/12 3:58 PM;lci;Works as intended.	23/Jan/12 3:03 PM;bsi;In some of the graphical exports the result set of filtered interfaces is different than for example in spreadsheet reports or landscape graphic.																																															

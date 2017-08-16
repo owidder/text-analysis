@@ -1,9 +1,0 @@
-BulkUpdate: update of an element already modified by an update of a building block before fails	"When in the process of a bulk update an element modifies another element (via bidirectional relations) which is to be updated afterwards, this later update fails with a org.hibernate.StaleObjectStateException.
-
-Simple reproducer:
-
-1. Select Bulk Updates
-2. Choose, for example, business objects; click ""send query"" and select 2 elements, also select the relation ""superordinate Business Object is""
-3. Click ""define bulk update for the selected elements"", then set the superordinate business object of the first element to the second element and the superordinate business object of the second element to any other object.
-4. Run bulk update"		Bug	iteraplan PO	19/May/11 3:54 PM	03/Jun/11 11:47 AM					bulkupdate									"30/May/11 7:34 PM;agu;I fixed this bug, but for the parent/child relations sometimes I get inconsistent data. All other relations seem to function.
-I will check, why this happens."	31/May/11 5:14 PM;agu;Now it seems to work.																																																					

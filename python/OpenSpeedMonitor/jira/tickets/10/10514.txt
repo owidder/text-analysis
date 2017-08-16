@@ -1,2 +1,0 @@
-Die Labels für die Aggregators oben rechts prüfen und ggf. korrigieren 	Job ist z.B. kein erlaubtes Label mehr, dies wäre nun measured step.	10010	Sub-task	OpenSpeedMonitor	03/Sep/13 10:06 AM	05/Sep/13 2:08 PM														"05/Sep/13 1:08 PM;mzeimer;Neuer Schlüssel in i18n-Dateien:
-de.iteratec.isocsi.csi.per.measured_event"																																																						

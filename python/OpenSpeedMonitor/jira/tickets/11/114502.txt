@@ -1,9 +1,0 @@
-Refactoring der Chart Switch Funktionalität	"Um die Datenauswahl von einem Chart auf das andere zu übertragen, muss aktuell für jedes Chart (im Falle, dass die Daten per AJAX nachgeladen werden) eine JS Klasse implementiert (kopiert) werden.
-
-
-
-Das erzeugt sehr viel duplicate code und sollte durch eine generalisierte Lösung vereinfacht werden."		Task	OpenSpeedMonitor	10/Mar/17 8:42 AM															"10/Mar/17 3:43 PM;nku;Beispiel-JS-Module wären:
-
- * grails-app/assets/javascripts/pageAggregation/pageAggregation.js
-
- * grails-app/assets/javascripts/distributionChart/distributionChartUrlHandling.js"																																																						

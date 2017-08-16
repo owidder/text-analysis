@@ -1,9 +1,0 @@
-Gewichtung der Page pro System	"Es soll eine neue Domäne PageWeightPerSystem geben mit zugeordneter Page und JobGroup. So lassen sich den Pages pro System unterschiedliche Gewichte zuordnen.
-Ermöglicht das Speichern neuer Pages aufgrund einer Erst-Nennung im Script, da diese neuen Pages nicht sofort in der CSI-Berechnung berücksichtigt werden. 
-Ergebnisse für Pages werden für ein System nur dann in der CSI-Berechnung berücksichtigt, wenn es ein PageWeightPerSystem für die Page-/System-Kombination gibt.
-Siehe IT-20
-
-PageWeightPerSystem:
-+ system : JobGroup
-+ page : Page
-+ weight : Double"		New Feature	OpenSpeedMonitor	10/Jan/14 1:41 PM	25/Feb/16 7:02 PM														25/Feb/16 7:02 PM;bka;Durch die Einführung der Domänen PageWeight und CsiSystem ist dieses Ticket überflüssig geworden.																																																						

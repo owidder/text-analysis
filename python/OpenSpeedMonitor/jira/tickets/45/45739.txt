@@ -1,5 +1,0 @@
-Commenting & Refactoring OrthogonalEdgeLayouting	"The OrthogonalEdgeLayout class is widely uncommented and has way to many methods in a single class. In order to get a better understanding and to make future improvements easier the methods need to be commented and a partial refactoring might be helpful, too.
-
-Other classes shall not be affected."		Improvement	iteraplan PO	03/Jun/13 6:33 PM	18/Jul/13 4:19 PM					InformationFlow	OrthogonalEdgeLayout								"28/Jun/13 6:32 PM;fkl;Refactoring finished, both commited in 3.1 and 4.1
-the InformationFlow Viewpoint does still not work correctly in iteraplan 4.1, but from my point of view it makes sense to move this issue to another ticket as it exceeds the task of a refactoring"	"18/Jul/13 4:19 PM;svo;javadoc was formatted badly (no tags for line breaks), fixed that.
-Looks good, well-documented and clearly structured now."	18/Jul/13 11:58 PM;sry;Excellent, many thx!																																																				

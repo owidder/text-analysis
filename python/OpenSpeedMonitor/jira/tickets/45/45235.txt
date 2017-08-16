@@ -1,5 +1,0 @@
-Improve Nesting Cluster Diagram Output	"There are a few improvements of the output of the Nesting Cluster Diagram to be made:
-
- * Add title, generated-information and the corner-logos similar to the other graphical reports
- * Add other SVG-based export formats: JPEG, PDF, PNG
- * Make elements of the Diagram hyperlinked/clickable if they represent a building block (similar to the other svg diagrams)"		Improvement	iteraplan PO	04/Nov/11 11:58 AM	14/Nov/11 8:43 AM					cluster	nesting								14/Nov/11 8:33 AM;bsi;If the graphic is too narrow then the heading (Nesting Cluster Diagram (Beta)) is cut.																																																						

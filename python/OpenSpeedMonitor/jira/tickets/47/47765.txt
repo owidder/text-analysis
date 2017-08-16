@@ -1,8 +1,0 @@
-Client-side logging service	"- include log4javascript
-- decorate the angular $log service. it should:
-   - keep printing log messages in the console
-   - send log messages as http requests to server via log4javascript AJAXAppender
-   - make it possible to change severity levels via parameters in startscreen-URL
-   - create unit tests for new functionality
-
-Notes: see http://statelessprime.blogspot.de/2013/10/send-logging-and-exceptions-to-server.html"	47303	Sub-task	iteraplan PO	14/May/15 2:12 PM	09/Jun/15 11:22 AM																																																																				

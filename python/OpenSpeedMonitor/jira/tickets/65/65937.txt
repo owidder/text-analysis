@@ -1,8 +1,0 @@
-iteraplan-Daten erweitern um Info zu "Wo gehen die Daten hin"	"- welche Daten gibt es?
-ggf. Uli kontaktieren, wenn Daten fehlen
-
-gemeint ist:
-In welches Rechenzentrum gehen die Daten?
-Ist das intern oder extern?
-
-DataService anpassen"		Task	EAMV15	07/Dec/15 2:38 PM	22/Dec/15 9:06 AM																																																																				

@@ -1,4 +1,0 @@
-Problems in the Attribute Type Group page	"Two problems in the attribute type page:
-
-1) User with only read permission for an ATG can edit it without problems.
-2) If an ATG has a role assigned and one wants to change the permission type from read to read-write, the changes are not persisted in the database."		Bug	iteraplan PO	06/Oct/11 11:18 AM	11/Oct/11 10:07 AM					attribute	edit	group	type						06/Oct/11 5:13 PM;vsh;Point 2) solved. Only 1) still needs consideration.	10/Oct/11 12:06 PM;vsh;Point 1) is not valid, user needs only func permissions for the menu "Attribute Type Group" to be able to edit any attribute type group	10/Oct/11 12:06 PM;vsh;To test: only item 2 " If an ATG has a role assigned and one wants to change the permission type from read to read-write, the changes are not persisted in the database."																																																				

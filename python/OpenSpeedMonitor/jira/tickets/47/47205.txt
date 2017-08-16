@@ -1,4 +1,0 @@
-Error of display of the NCD	"IPNINE-229
-Steps to reproduce:
-1. Go to Recent view page-> Click on  Nested Cluster Diagram tile
-Actual result: Error of display of the NCD"		Bug	iteraplan PO	28/Nov/14 1:49 PM	05/Jan/15 11:22 AM					IE									05/Jan/15 11:22 AM;dasm;Verified (revision 488)																																																						

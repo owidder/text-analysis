@@ -1,6 +1,0 @@
-Custom Dashboards not possible in Community Edition	"Since templates management page of iteraplan is not available in the community edition, but custom dashboard templates are defined using that page, custom dashboards cannot be used in the community edition.
-This should be fixed either by introducing a separate page for custom dashboard templates, or by allowing the custom dashboard part of the templates management page to be displayed for the community user, too."		Bug	iteraplan PO	13/Aug/13 5:22 PM	04/Jul/16 11:29 AM					dashboard									25/Jun/14 3:35 PM;fka;Remove custom dashboards from Community Edition completely	"22/Jun/16 2:59 PM;ach;Check if it's possible to disable custom dashboard with permissions
-
-
-
-If yes modify data for lite version"	29/Jun/16 5:53 PM;msr;No, it's not possible with exisiting permissions																																																				

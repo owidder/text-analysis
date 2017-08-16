@@ -1,5 +1,0 @@
-Remove no-longer used start screen icons from the SVN-repository	Remove no-longer used start screen icons from the SVN-repository		Improvement	iteraplan Speedbird	19/Jun/17 9:40 AM	19/Jun/17 11:31 AM														"19/Jun/17 11:20 AM;sbu;The ""old"" start-screen icons are still used for the diagrams. So I cannot remove these files without bigger changes in the code. To look through every single icon in the folder  ""glyphicons"" would take too long, so i'll postpone this ticket. 
-
-
-
-After R 6.0 we will add some more new icons in svg-format. after that we can remove all the pngs."																																																						

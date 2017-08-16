@@ -1,8 +1,0 @@
-Diagrams in custom dashboards show uneven or uncorrect results with empty elements	"Some diagrams
-* are not shown at all (ITERAPLAN-2108, ITERAPLAN-2024, ITERAPLAN-2025)
-* show only the legend(s): NCD, InfoFlow;  (?) is this the expected behavior?
-* Cluster shows a lot of elements (see screenshot) ; used saved query ""2. Strategic areas of our Enterprise Architecture""
-* Masterplan shows empty table (see screenshot)
-* Pie chart shows empty circle (see screenshot) and ""0 Information Systems""
-
-Shouldn't diagrams behave the same way?"		Bug	iteraplan PO	28/Oct/13 9:53 AM	19/Jan/16 11:33 AM					dashboard	diagram	visualization																																																													

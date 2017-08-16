@@ -1,3 +1,0 @@
-Excel Import: More intelligent attribute name parsing/matching	"Column headers for attribute names are currently parsed rather rigidly. Leading/trailing whitespace, opening/closing braces etc. in attribute names make it impossible to import attribute values.
-
-Attribute name matching should be more flexible, and be able to deal with attribute group names, units in number attributes. Probably this means that several interpretations/decompositions of the table header name should be tested against attributes in iteraplan."		Improvement	iteraplan PO	28/Oct/11 1:08 PM	08/Jun/12 10:49 AM					excel	import								08/Jun/12 10:49 AM;kvo;Obsolete with new Import and Metadata-Information																																																						

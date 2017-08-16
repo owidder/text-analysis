@@ -1,7 +1,0 @@
-Button "Switch to interactive client" is not shown to user.	"As Is:
-
-If user has no functional permission ""Run global search on Building Blocks"" then button ""Switch to interactive client"" in the header of classic client is not shown.
-
-To Be:
-
-Button is shown regardless of this permission."		Bug	iteraplan Speedbird	30/Nov/16 2:29 PM	05/Jan/17 5:29 PM														05/Jan/17 5:29 PM;dmkh;Review is done, issue is fixed.																																																						

@@ -1,6 +1,0 @@
-Spreadsheet doesn't work while searching with business mappings	"If you want to seach all information system for which there is no  business mapping (by selecting first ""Properties of assigned Business Mappings"" and then  ""no associations"") then you'll get the error:
-
-""An error occurred while processing your request. 
-A general technical error occurred. To continue, please click Close or Cancel, or clear the current session. 
-""
-"		Bug	iteraplan PO	19/Dec/13 12:24 PM	22/Jan/14 2:36 PM																																																																				

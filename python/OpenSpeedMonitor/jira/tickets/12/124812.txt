@@ -1,9 +1,0 @@
-Refactoring REST Methoden idsForNames und namesForIds	"Die beiden GET Methoden erwarten ein JSON-Objekt in der URL. Das ist für Clients weder gut verständlich/lesbar, noch wirklich REST-konform.
-
-
-
-Wir sollten die einzelnen Objekte aus dem JSON stattdessen als einzelne GET-(Listen-)Parameter übergeben.
-
-
-
-Achtung: Dieses Ticket erfordert Anpassungen in OSM und OsmDetailAnalysis."		Task	OpenSpeedMonitor	20/Jun/17 10:17 AM																																																																					

@@ -1,1 +1,0 @@
-Generation of ids-xml in the server	Adapt the server-code so the new client on the server is used for obtaining the ids.		Improvement	iteraplan Thunderduck	11/May/17 2:07 PM																																																																					

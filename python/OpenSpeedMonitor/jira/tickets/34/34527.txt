@@ -1,3 +1,0 @@
-Sekunde aus quartz-Ausdruck rausnehmen	"Die Sekunde sollte immer 0 sein.
-
-Das erste Feld des Quartz-Ausdrucks (Sekunden) sollte man also nicht eingeben müssen/können. Es wird intern automatisch hinzugefügt und auch mit persistiert. "		New Feature	OpenSpeedMonitor	12/Mar/15 5:14 PM	16/Mar/15 9:02 AM																																																																				

@@ -1,1 +1,0 @@
-Beschreibung für den Schritt "Create Job" erstellen	Um dem (Erst-)Nutzer das finale Erstellen eines Jobs zu vereinfachen sollte eine Zusammenfassung der bisherigen Schritte im Wizard angezeigt werden und eine Hilfe zu den Cron Strings.	111352	Sub-task	OpenSpeedMonitor	08/Feb/17 3:07 PM	27/Mar/17 12:14 PM																																																																				

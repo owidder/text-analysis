@@ -1,1 +1,0 @@
-Treemap: user settings	Use the UserSettings service to save/restore the configured settings		New Feature	iteraplan Speedbird	27/Oct/16 10:46 AM	03/Nov/16 2:20 PM					TreeMap									03/Nov/16 12:22 PM;madu;#4999 in trunk	03/Nov/16 2:20 PM;vadm;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-156																																																					

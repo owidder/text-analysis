@@ -1,9 +1,0 @@
-Localise Reactor, Category-Page, Recent-View page and all other	Seems fine, aside from issues with list view which are addressed in ITERAPLAN-3854	49715	Sub-task	iteraplan PO	04/Aug/15 2:35 PM	24/Aug/15 2:58 PM														"05/Aug/15 5:14 PM;ach;ITERAPLAN-3837
-
-* use metamodel translation in whole Project (except LSD, NCD, IFD) 
-
-* deleted _fixedData.js_ (not used anymore) 
-
-* translated some static text 
-
-NOTES: decomment _REST_-paths for review (in _common.js_)"																																																						

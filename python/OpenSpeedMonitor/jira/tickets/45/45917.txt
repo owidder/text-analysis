@@ -1,2 +1,0 @@
-falsch Verlinkung im Dashboard	"In der ersten Grafik im Dashboard (Anzahl einzelner Bebauungselemente) sind die Verweise zu fachliche Funktionen, Schnittstellen und Technischen Bausteinen bei bestimmten Nutzergruppen falsch gesetzt. Man landet bei ganz anderen Bebauungselementen.
-Eventuell nur ein Rollenproblem?"		Bug	iteraplan PO	23/Jul/13 12:41 PM	25/Jun/14 4:27 PM																																																																				

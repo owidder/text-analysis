@@ -1,5 +1,0 @@
-Mattermost-Integration Jira erstellen	"Sollte per Hook aus einem Projekt alles in ein Matermost Team/Channel posten.
-
-
-
-Anschließend sollte eine Middleware per Ansible installiert sein, mit der alle iteratec'ler sich selber Hooks im JIRA einrichten lassen können."		Task	OpenSpeedMonitor	26/Jun/17 2:05 PM																																																																					

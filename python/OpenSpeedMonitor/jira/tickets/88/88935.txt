@@ -1,5 +1,0 @@
-Refactoring the comparison methods	"Code for Comparing is in the ListColumnDefsBuilder one of these functions is copied to the RowDataBuilder. 
-
-Check if this is the best method.
-
-Compare ITERAPLAN-4584."		Improvement	iteraplan PO	30/Jun/16 2:17 PM	06/Jul/16 9:48 AM														06/Jul/16 9:48 AM;mse;Review ok.																																																						

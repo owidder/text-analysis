@@ -1,1 +1,0 @@
-Split all API communication functionality to a separate service		47039	Sub-task	iteraplan PO	13/Oct/14 11:24 AM	09/Jun/15 5:05 PM																																																																				

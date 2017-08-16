@@ -1,1 +1,0 @@
-Creating the manual test for History without Migration	created the test sheet for History without migration 		Task	iteraplan PO	20/Oct/16 9:51 AM	26/Oct/16 7:50 AM														24/Oct/16 10:56 PM;msr;Questions for reviewer: Are all relevant cases of the history covered in this testsheet?																																																						

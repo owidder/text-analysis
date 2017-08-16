@@ -1,7 +1,0 @@
-Problem mit Audi-Messungen und wptserver 3.0.10 debuggen	"Die Haupt-Customer Journey von Audi ist mit dem WPT docker Image 3.0.10 reproduzierbar nicht mehr richtig durchgelaufen. Der erste Step war immer leer.
-
-Dieses Verhalten sollte mit dev.server01 und der OSM dev Instanz nachgestellt und debuggt werden."		Bug	OpenSpeedMonitor	19/Jul/17 10:47 AM	24/Jul/17 12:19 PM														21/Jul/17 9:10 AM;sbr;Wahrscheinlich wird das Problem von [https://github.com/WPO-Foundation/webpagetest/pull/908] gefixt. Nach dem merge sollten wir ein neues WPT Image bauen und das ausprobieren.	"24/Jul/17 12:19 PM;sbr;Fixed via 3afc8842e4f210a7494de1c3108e53b190bda64f, aus Pull Request [https://github.com/WPO-Foundation/webpagetest/pull/908.]
-
-
-
-Teil von unserem WPT Docker Image ab Version 3.0.11."																																																					

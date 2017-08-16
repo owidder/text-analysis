@@ -1,5 +1,0 @@
-Mess-Ergebnisse > Einzelergebnisse: 0:00 als Startzeit wird nicht übernommen	"Unter Mess-Ergebnisse > Einzelergebnisse wird im Abschnitt Zeitraum im Feld für Start > Uhrzeit der Eintrag entfernt sofern man ihn manuell auf 0:00 setzt.
-
-
-
-Diese Eingabefelder im Abschnitt Zeitraum sind verbunden mit denen unter Mess-Ergebnisse > Dashboard (Änderung an den einen werden identisch in den anderen dargestellt). Soll das so sein?"		Bug	OpenSpeedMonitor	18/Feb/15 1:58 PM	24/Feb/15 3:11 PM																																																																				

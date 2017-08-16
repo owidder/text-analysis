@@ -1,1 +1,0 @@
-Beim Editieren bestehender Skripte wird vor der ersteen Zeile ein Tab angezeigt			Bug	OpenSpeedMonitor	04/Nov/15 5:12 PM	05/Nov/15 11:43 PM																																																																				

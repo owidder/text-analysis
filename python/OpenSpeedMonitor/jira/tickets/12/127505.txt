@@ -1,5 +1,0 @@
-Auswertung	"Seiten auswerten und Dokumentation/Report erstellen in diesem Repo:
-
-
-
-git@iteragit.iteratec.de:webperformance/performance-check-cnouch-und-co.git"	126360	Sub-task	OpenSpeedMonitor	19/Jul/17 9:08 AM																																																																					

@@ -1,1 +1,0 @@
-Performance improvement on adding/removing columns, step 1	Find a quick way to improve the performance when adding and removing columns in the list view. Currently in IE 11, it takes 5+ seconds for each of these actions.		Improvement	iteraplan PO	14/Feb/17 2:21 PM	14/Feb/17 2:52 PM																																																																				

@@ -1,6 +1,0 @@
-Als Entwickler möchte ich das OTTO Edison Framework für den iteraSpider nutzen.	"Das Edison Framework bringt schon einige hilfreiche Services (healthcheck, status page, ...) mit die für den Betrieb eines µServices unerlässlich sind. Da es auf Spring Boot basiert können wir es für alle darauf basierenden µService einfach nutzen.
-
-https://github.com/otto-de/edison-microservice
-
-* Bisher nutzt der iteraSpider zwar SpringBoot, aber noch nicht alle notwendigen Features des Edison Frameworks, dies ist im Rahmen dieses Tickets bitte zu ändern.
-* Zudem soll der iteraspider ebenfalls auf die asynchrone ""Service Task"" Mechanik umgestellt werden, die von den anderen Services bereits erfolgreich genutzt wird."		Story	secureCodeBox	06/May/16 12:57 PM		secureBoxSpider				students																																																															

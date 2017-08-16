@@ -1,5 +1,0 @@
-Validate MD flex layout in IE 10	"as far as intended to use:
-
-
-
-horizontal row of cells, all with min width, ""description"" with (kind of) line wrapping, all with max width."		New Feature	iteraplan PO	10/May/16 1:59 PM	25/May/16 5:07 PM														11/May/16 11:50 AM;mwe;See [http://caniuse.com/#search=flexbox] -> Known Issues  	25/May/16 5:07 PM;wfr;not needed, we use ag grid, not md.																																																					

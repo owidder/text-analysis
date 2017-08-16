@@ -1,5 +1,0 @@
-Konsolidierung der Ergebnisse verschiedener Scan-Tools	"Da verschiedene Tools ggf. die selbe potentielle Schwachstelle finden, diese aber nicht mehrfach reported und ggf. als False Positive markiert werden soll, sollen die Ergebnisse für den Reportkonsolidiert werden.
-
-
-
-Ein Ansatz dafür könnte das Tool ThreadFix sein."		Story	secureCodeBox	14/Aug/15 3:15 PM		secureBoxEngine				iteratec	OTTO																																																														

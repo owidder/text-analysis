@@ -1,7 +1,0 @@
-Plugin Container	"* Skeleton of Plugin Container
-** should discover the plugin folder
-** plugin folder path is to be discussed
-** get a javascript engine, run every file in the plugin folder
-** only simplest scripts at this moment (e.g. ""console.log('hallo iteraplan');"")
-
-Don't forget _tests_, _logging_, _exception handling_ !"		New Feature	iteraplan Thunderduck	05/Jul/16 9:59 AM	08/Jul/16 2:51 PM																																																																				

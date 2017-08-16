@@ -1,3 +1,0 @@
-measrementSetup Wizard legt keine Pages und MeasuredEvents an	"Wenn man im Wizard ein neues Script mit neuen Pages and MeasuredEvents schreibt, werden diese nicht automatisch angelegt.
-
-Genau wie beim ScriptController sollte dies automatisch passieren."		Bug	OpenSpeedMonitor	06/Apr/17 11:46 AM	12/Apr/17 2:21 PM																																																																				

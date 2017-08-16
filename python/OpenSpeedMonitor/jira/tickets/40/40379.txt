@@ -1,1 +1,0 @@
-RICKSHAW: CSI Default Export an Seitenverhältnis für PPT anpassen	RICKSHAW: CSI Default Export an Seitenverhältnis für PPT anpassen, dabei Abstand nach oben wegen des nicht mit exportierten Titels korrigieren		Improvement	OpenSpeedMonitor	11/May/15 5:36 PM	12/May/15 10:29 AM																																																																				

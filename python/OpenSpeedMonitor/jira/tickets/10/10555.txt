@@ -1,5 +1,0 @@
-Measuring Results Dashboard: Vertikale Achsenbeschriftung 	"Links Zeit
-Rechts Request-Informationen"		Bug	OpenSpeedMonitor	25/Sep/13 10:03 AM	01/Oct/13 7:15 PM														25/Sep/13 12:08 PM;nkuhn;Labels aus i18n holen	"25/Sep/13 12:17 PM;nkuhn;Als schnelle Lösung Mapping AggregatorType.measurandGroup -> Achsentyp erstmal hart in der taglib verdrahtet.
-siehe auch IT-141 für spätere Optimierung"	30/Sep/13 6:27 PM;rhe;Basisfunktionalität implementiert, wenn man jedoch eine die unknown-Achseentfernt wird nichts mehr gerendert! Zurückgestellt, wegen Zeitmangel.	"01/Oct/13 7:15 PM;rhe;Vollständig gefixt: 
-* Nicht im Diagram enthaltene Achsen werden ausgeblendet.
-* Die Graphen werden auch ohne ""Unbekannte Einheit"" korrekt dargestellt."																																																			

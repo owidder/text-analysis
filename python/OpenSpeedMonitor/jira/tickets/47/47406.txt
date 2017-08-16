@@ -1,1 +1,0 @@
-Nesting for inner elements	Menu for nesting should has only available items for nesting according to used inner type		Bug	iteraplan PO	10/Feb/15 1:20 PM	11/Feb/15 10:54 AM														11/Feb/15 10:54 AM;dasm;Duplicate of 334																																																						

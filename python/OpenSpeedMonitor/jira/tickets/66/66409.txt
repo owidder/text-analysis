@@ -1,7 +1,0 @@
-Umrechnung BY_MAPPING auf 50ms-Schrittweite umstellen	"Bisher erwarten wir, dass Mapping-Daten eine Schrittweite von 100ms haben.
-
-Zur Umstellung auf 50ms muss:
-
-* Die Methode de.iteratec.osm.csi.transformation.TimeToCsMappingService#getCustomerSatisfactionInPercentViaMapping umgestellt werden
-
-* Ein changelog zum Umschreiben der bestehenden default-mappings erzeugt werden. Ob das ein Liquibase-changelog ist oder wir das in der Bootstrap machen ist noch offen"		Task	OpenSpeedMonitor	11/Dec/15 11:11 AM	14/Dec/15 2:46 PM																																																																				

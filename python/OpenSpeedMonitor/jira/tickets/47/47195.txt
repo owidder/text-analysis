@@ -1,8 +1,0 @@
-Sprint 6? Connections and (connected) types: 2-steps	"To the existing NCD,
-add the function to use all connections to other building block types for grouping.
-
-Use a generic solution that uses the metamodel information for
-* determining the connections for a given inner building block type
-* access the model data for the connected elements and/or the grouping structure.
-
-Make only 2-step connections to the items listed in IPNINE-204 (not connections via Business Mapping)"		New Feature	iteraplan PO	25/Nov/14 1:25 PM	26/Jan/15 4:44 PM														26/Jan/15 4:44 PM;msr;IPNINE-308																																																						

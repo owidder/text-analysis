@@ -1,5 +1,0 @@
-ON/OFF History	"- REST ""commands"" for on and off history (PUT for set history enabled state, GET for getting this state)
-- new table for tracking timestamps of history enabling / disabling
-- REST GET - for getting entries of this table
-- create history entries only if history is enabled
-"		Improvement	iteraplan Thunderduck	16/Sep/16 3:23 PM	17/Oct/16 8:43 AM																																																																				

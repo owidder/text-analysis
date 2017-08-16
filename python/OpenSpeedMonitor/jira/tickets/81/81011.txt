@@ -1,3 +1,0 @@
-Camunda REST-API fachlich erweitern	"Die REST-Schnittstelle von Camunda sollte um eine Möglichkeit erweitert werden, um einfacher Nachrichten an bestimmte Prozessinstanzen schicken zu können. 
-
-Im Moment muss man bei einer Nachricht den Correlation Key im Message Body mitschicken. Um die Kommunikation zwischen den Microservices noch leichtgewichtiger zu gestalten, wäre es schön, wenn der Correlation Key in der URL übermittelt werden kann (ähnlich wie bei Trigger Events)."		Story	secureCodeBox	19/Apr/16 9:40 AM		secureBoxEngine				iteratec																																																															

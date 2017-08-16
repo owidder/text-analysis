@@ -1,1 +1,0 @@
-JSESSIONID-Cookie Expires Date	JSESSIONID-Cookie sollte ein Expires Date haben, sofern nicht "angemeldet bleiben" ausgewählt wurde.		Improvement	OpenSpeedMonitor	18/Oct/16 1:38 PM																																																																					

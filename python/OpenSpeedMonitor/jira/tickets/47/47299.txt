@@ -1,5 +1,0 @@
-Portfolio config doesn't load the correct state of 'scaling' option	"On the 2nd page of Portfolio diagram configuration, in the 'Advanced' section:
-When the option for scaling is set to ""Scaling (local context), the option is saved correctly.
-But when it is loaded, the option will show ""No scaling (Global context)"" again.
-
-Make the configuration load the option correctly."		Bug	iteraplan PO	19/Jan/15 1:18 PM	20/Jan/15 12:26 PM					configuration	portfolio	savedquery																																																													

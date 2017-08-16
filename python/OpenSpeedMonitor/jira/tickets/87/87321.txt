@@ -1,1 +1,0 @@
-Manuelle Auswahl von Browser / ConnectivityProfile führt zur Auswahl von Select All	Wenn man ein einzelnen Browser auswählt, wird das Feld ausgegraut und wieder "Select All" ausgewählt.		Bug	OpenSpeedMonitor	15/Jun/16 12:31 PM	15/Jun/16 1:35 PM																																																																				

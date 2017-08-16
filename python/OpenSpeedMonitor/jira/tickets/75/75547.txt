@@ -1,7 +1,0 @@
-Dynamisches Erzeugen von (Spider-/Scanner) Docker Containern	"OTTO hat die Anforderung, dass die Docker Container, die in dem Security-Scan Prozess als relevante Scan oder Spider Komponenten involviert sind, dynamisch gestartet, gestoppt und ent- fernt werden können. Hierfür wird die secureBox-Engine entsprechend um Container on Demand (in Process) erweitert.
-
-Notwendige Beistellungen:
-
-
-
-* Für die erfolgreiche Umsetzung ist seitens OTTO sicherzustellen, dass die hierfür notwendige REST-API des Docker Hosts selbst (oder über Mesos Plattform) bereitgestellt und entspre- chend von der secureBox genutzt werden kann."		Story	secureCodeBox	03/Mar/16 3:24 PM		secureBoxEngine				iteratec	OTTO																																																														

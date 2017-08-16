@@ -1,5 +1,0 @@
-Tooltip for role list: Delete, Copy	"On roles list create two tooltips
-
-""delete"" / ""löschen""
-
-""copy"" / ""kopieren"""		Improvement	iteraplan Speedbird	19/Apr/17 1:37 PM	02/May/17 4:55 PM														02/May/17 4:55 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-554																																																						

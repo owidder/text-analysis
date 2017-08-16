@@ -1,8 +1,0 @@
-Excel-Export: Improve template layout	"(this is a follow-up ticket on ITERAPLAN-439)
-
-* Order of sheets for types and relations should follow order in ""EA Data""-Navigation.
-* use the ""Introduction"" sheet for useful information about the export:
-  ** iteraplan Logo
-  ** date of export
-  ** e.g. version and something like an ID of the exporting system
-"		New Feature	iteraplan PO	16/Apr/12 3:36 PM	07/May/12 10:57 AM					excel	export								10/May/12 8:49 AM;tse;ok																																																						

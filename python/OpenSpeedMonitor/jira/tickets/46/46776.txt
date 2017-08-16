@@ -1,1 +1,0 @@
-Discontinue support for adding network share links to description fields			Improvement	iteraplan PO	03/Aug/14 7:48 PM	11/Sep/14 12:54 PM					description									03/Sep/14 12:46 PM;dop;Deleted page in userguide																																																						

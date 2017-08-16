@@ -1,3 +1,0 @@
-Fix Bug 1: Colorpicker opens on any click on the legend		82258	Sub-task	iteraplan PO	27/Apr/16 11:24 PM	03/May/16 1:29 PM														"28/Apr/16 11:25 AM;tam;Only the dirty fix.
-
-Color picker still occurs, but the color won't be applied anymore if user clicked not on the color item."	03/May/16 1:29 PM;mse;Dirty fix works for now. Better solution will be implemented in the context of [#ITERAPLAN-4545].																																																					

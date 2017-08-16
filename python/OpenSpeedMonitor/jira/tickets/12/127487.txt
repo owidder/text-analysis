@@ -1,5 +1,0 @@
-Immediate changes of customization	"All changes of the customizations are applied immediately without any refresh or re-login.
-
-
-
-Simplify the service, because with the immediate apply of changes we don't need to keep separately two sets of settings. E.g. now we have separate getSessionCorporateDesign() and getCorporateDesign() methods – the first one can be removed and the second one can always be used."		Improvement	iteraplan Speedbird	18/Jul/17 5:23 PM	25/Jul/17 1:07 PM																																																																				

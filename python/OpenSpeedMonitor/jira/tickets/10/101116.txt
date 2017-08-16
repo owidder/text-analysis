@@ -1,5 +1,0 @@
-Treemap: no items to display	"Display message when there're not items to display (all filtered out, all numeric values are nulls/negative)
-
-
-
-E.g. create a numeric attribute and assign it to some building block type and open treemap diagram for this attribute"		Improvement	iteraplan Speedbird	01/Nov/16 2:21 PM	03/Nov/16 10:38 AM					TreeMap																																																															

@@ -1,9 +1,0 @@
-REST-Schnittstelle zur ad-hoc Ausführung eines Jobs bereitstellen	"Für diese Schnittstelle werden wir zumindest die folgenden beiden Methoden benötigen: 
-
- * runJob(jobId)
-
-Diese Methode muss die Test-ID des ausgeführten Tests (de.iteratec.osm.result.JobResult#testId) zurückliefern.
-
- * getResult(resultId)
-
-Gibt das Result, bzw. dessen Status wieder."	121161	Sub-task	OpenSpeedMonitor	11/May/17 5:24 PM																																																																					

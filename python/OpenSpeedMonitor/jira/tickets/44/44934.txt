@@ -1,5 +1,0 @@
-Successor/Predecessor list for technical components	"In analogy to Information System Successor/Predecessor lists, such report list are desired for Technical components.
-
-For both building block types, it shall be possible to create a report for *all* available elements, not just one. Such an all-in-one report is just a concatenation of all reports that are available for individual elements."		New Feature	iteraplan PO	16/May/11 10:33 AM	20/Jun/11 2:49 PM					successor_report									"20/Jun/11 1:09 AM;sry;Documentation has been added/updated in the [https://www.iteraplan.de/wiki/display/iteraplan/Successor+Reports|Wiki].
-
-Successor lists can now be generated for all available releases at once."																																																						

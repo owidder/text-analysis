@@ -1,5 +1,0 @@
-Create User Guide for Attribute Groups	"Create one page in the User Guide for Attribute Groups incl. edit
-
-
-
-https://doc.iteraplan.de/display/iteraplan60/Attribute+Groups"		New Feature	iteraplan Speedbird	02/Mar/17 4:01 PM	21/Mar/17 5:15 PM																																																																				

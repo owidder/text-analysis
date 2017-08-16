@@ -1,4 +1,0 @@
- Filter automatically changes selection	"Bei jeder Veränderung des Filters (Hinzufügen/Ändern von Filter), wechselt bei bereits erstellten Filtern die Checkbox von oben nach unten….
-Dh. Damit eine gewünschte Kombination zustande kommt, muss man am Ende bei allen Filtern die Wertebox wieder anklicken (damit die Checkbox wieder oben ist)
-"		Bug	iteraplan PO	01/Dec/14 10:28 AM	05/Dec/14 1:19 PM														"05/Dec/14 1:19 PM;fam;Tested fix successful. No swapping of radio button detected.
-closed."																																																						

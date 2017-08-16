@@ -1,1 +1,0 @@
-Fehlende Job-Konfiguration persistieren	Beim Persistieren der Job-Konfiguration in ElasticSearch werden nicht alle Job-Einstellungen berücksichtigt. Daher sollten die fehlenden Einstellungen der Persistierung hinzugefügt werden.		Story	secureCodeBox	21/Apr/16 4:14 PM		secureBoxEngine				iteratec																																																															

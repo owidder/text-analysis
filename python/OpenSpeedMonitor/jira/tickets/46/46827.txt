@@ -1,1 +1,0 @@
-Usage of illegal characters break iteraplan's functionality	Collects all tickets in which illegal characters break the functionality of iteraplan such as the search function, iteraQL or can be used to include javascript. 		Epic	iteraplan PO	11/Aug/14 10:22 AM	11/Jun/17 12:54 PM														11/Jun/17 12:54 PM;fka;All done																																																						

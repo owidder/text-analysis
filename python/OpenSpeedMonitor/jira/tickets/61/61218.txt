@@ -1,3 +1,0 @@
-Deactivate Context Menu in the LSD	Deactivate Context Menu in the LSD	61215	Sub-task	iteraplan PO	23/Oct/15 11:24 AM	27/Oct/15 2:18 PM														"26/Oct/15 4:43 PM;dam;removed context menu from LSD.
-
-Created a ticket for renaming & ""cleaning"" ->https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-4062"	27/Oct/15 2:18 PM;msr;Ok.																																																					

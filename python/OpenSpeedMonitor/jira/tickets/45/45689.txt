@@ -1,5 +1,0 @@
-Persistence / save and load of Dashboard-Instances	"Enable to save and load dashboard-instances permanently.
-Expand therefor the GUI under Custom Dashboard"".
-
-Detailed description follows.
-"	45668	Sub-task	iteraplan PO	18/Apr/13 2:38 PM	22/May/13 1:45 PM					dashboard									22/May/13 1:45 PM;bra;implemented along with ITERAPLAN-1529																																																						

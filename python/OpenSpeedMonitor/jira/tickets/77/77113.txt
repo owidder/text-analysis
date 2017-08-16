@@ -1,1 +1,0 @@
-iteraSpider Ergebnisse im korrekten Format (analog zap) für elasticsearch aufbereiten		75551	Sub-task	secureCodeBox	15/Mar/16 6:14 PM	24/Mar/16 9:57 AM																																																																				

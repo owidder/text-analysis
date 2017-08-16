@@ -1,1 +1,0 @@
-Release iteraplan 5.3			Task	iteraplan Quickfox	02/Aug/16 11:56 AM	24/Aug/16 5:44 PM					release									09/Aug/16 9:39 AM;tam;See https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess	24/Aug/16 5:44 PM;fka;Reviewed & Closed																																																					

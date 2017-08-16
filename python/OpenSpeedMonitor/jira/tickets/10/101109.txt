@@ -1,1 +1,0 @@
-Geb Tests fixen	Durch die maßgeblichen UI Änderungen funktionieren die Geb-Tests auf dem bootstrap3 Branch nicht mehr. Dies sollte in Ordnung gebracht werden.		Bug	OpenSpeedMonitor	01/Nov/16 10:40 AM	09/Nov/16 7:52 AM																																																																				

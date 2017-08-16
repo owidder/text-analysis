@@ -1,1 +1,0 @@
-Gridlines, X-/Y-Achsen ein-/ausblendbar machen			New Feature	OpenSpeedMonitor	05/Dec/16 3:23 PM	12/Dec/16 8:26 PM																																																																				

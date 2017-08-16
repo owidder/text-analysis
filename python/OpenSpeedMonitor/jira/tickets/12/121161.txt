@@ -1,5 +1,0 @@
-Ad-hoc Performance-Tests für CI-Pipes ermöglichen	"Wir wollen eine Schnittstelle bereitstellen, über welche sich ad-hoc Performance-Tests aus CI-Pipelines heraus automatisch starten lassen. Ein solcher Test muss dann möglichst schnell ein Ergebnis liefern, anhand dessen eine Performance-Bewertung der getesteten Seiten möglich ist.
-
-
-
-In der CI-Pipe, aus welcher die Messung gestartet wurde kann dann auf der Grundlage des Mess-Ergebnisses entschieden werden, ob der Software-Stand so live gehen kann oder nicht. Ob er also den gestellten Performance-Anforderungen gerecht wird."		Story	OpenSpeedMonitor	11/May/17 5:17 PM																																																																					

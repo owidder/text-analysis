@@ -1,4 +1,0 @@
-Change startpage to reflect relations better	"Change startpage to reflect relations better, especially:
- * Business Function with direct relation to IS
- * Projects with direct relation to IS
- * Grouping BusinessMapping related Entities BP/BU/Prod together"		Improvement	iteraplan PO	06/Dec/11 10:56 AM	08/Dec/11 11:17 AM														06/Dec/11 10:59 AM;kvo;Please also adjust the ordering in the Navigation etc.	08/Dec/11 11:17 AM;lci;Works fine.																																																					

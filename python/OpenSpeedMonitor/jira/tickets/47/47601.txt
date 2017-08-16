@@ -1,1 +1,0 @@
-Incomplete list of self-relations	The method "updateNameId" in common.js/objectsListProcessor uses an incomplete list of self-relations (only 3 of 4). Please complete the list.		Bug	iteraplan PO	13/Apr/15 11:28 AM	13/Apr/15 1:45 PM																																																																				

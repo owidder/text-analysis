@@ -1,1 +1,0 @@
-Passwort Anzeige mit fixer Maskierung	Das Passwort sollte ausschließlich maskiert dargestellt werden. Die Maskierung sollte dabei stets eine fixe Länge haben, unabhängig des dahinter liegenden Passworts. 		Improvement	OpenSpeedMonitor	18/Oct/16 1:34 PM																																																																					

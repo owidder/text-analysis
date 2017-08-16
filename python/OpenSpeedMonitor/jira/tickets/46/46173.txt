@@ -1,2 +1,0 @@
-Nesting Cluster: select-dropdown-menu for visualized relationship to short [IE8]	"When trying to ""Select the relationship that is visualized by the nesting of outer and inner element"" most of the elements in the dropdown-menu are to long to be fully displayed.
-(Does not happen FF24, so it probably won't happen with a newer version of the IE either )"		Bug	iteraplan PO	21/Oct/13 4:12 PM	30/Dec/15 4:54 PM																																																																				

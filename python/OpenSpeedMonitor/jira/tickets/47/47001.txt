@@ -1,5 +1,0 @@
-Name instead of "200" in breadcrumb in single element view	"The single element view shows a ""200"" in the text of the breadcrumb component (between the arrow icons).
-
-This must be the name of the information system, possbly shortened if the name is too long.
-
-"	47009	Sub-task	iteraplan PO	29/Sep/14 1:04 PM	09/Jun/15 5:05 PM																																																																				

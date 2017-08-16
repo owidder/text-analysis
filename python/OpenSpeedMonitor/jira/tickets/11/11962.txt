@@ -1,4 +1,0 @@
-Pending-JobResult verschwindet nicht nach erfolgreichem Test	"Auf der seu-Version werden Jobs, die bereits durchgelaufen sind für den IE-Testjob weiter als Running angezeigt:
-http://seu.hh.iteratec.de:8070/iteraSpeedMonitor-Jobsteuerung/job/index
-
-Für den FF-Job funktioniert dies."		Bug	OpenSpeedMonitor	24/Feb/14 2:28 PM	27/Feb/14 5:33 PM														27/Feb/14 2:09 PM;drieger;Sollte durch IT-310 behoben sein.																																																						

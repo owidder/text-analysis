@@ -1,9 +1,0 @@
-remove unused icons	"affected folders:
-
-images/icons
-
-images/icons-black/white/colored...
-
-
-
-dont remove unused icons in images/glyphicons"		Task	iteraplan PO	28/Oct/15 9:36 AM	04/Nov/15 2:53 PM														04/Nov/15 2:12 PM;ach;- we want to use different resoluitions in diefferent parts of code. So we need both 43x and 15x icons (compare start screen and ncd).	04/Nov/15 2:23 PM;dam;revert deleted 15x icons																																																					

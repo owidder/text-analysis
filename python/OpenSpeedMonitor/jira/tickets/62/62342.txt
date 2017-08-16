@@ -1,9 +1,0 @@
-Split module definitions in separate js-files	"As discussed with [~wfr]:
-
-
-
-Split all module definitions of modules.bootstrap.js in separate files (lsd.js, ifd.js, ...) and put them in their respective subfolders.
-
-
-
-Aim: Better separation for unit tests."		Improvement	iteraplan PO	02/Nov/15 4:21 PM	04/Nov/15 9:53 AM					test																																																															

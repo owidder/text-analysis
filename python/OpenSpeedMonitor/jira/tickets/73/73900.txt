@@ -1,3 +1,0 @@
-mehrere makierte Jobs löschen	"Aktuell muss man jeden Job den man löschen möchte in diesen hineingehen und auf ""löschen"" klicken.
-
-Schön wäre eine Möglichkeit mehrere Jobs auf einmal zu löschen, zumal die Funktionalität des Auswählens und auf der Auswahl eine Aktion ausführen schon gegeben ist (aktivieren/deaktivieren)"		Improvement	OpenSpeedMonitor	17/Feb/16 4:56 PM	11/Jan/17 10:15 AM																																																																				

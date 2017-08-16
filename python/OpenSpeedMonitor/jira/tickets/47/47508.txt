@@ -1,5 +1,0 @@
-In the end: Check all code for classes to be adjusted	"Last thing to do in the course of MMX extension Spring 2015:: Use the script GPH has already prepared and check the complete code base for places that might still need adjustements
-
-Create a separate ticket with findings (things to adjust) should there still be some "		Task	iteraplan PO	18/Mar/15 8:07 AM	26/Mar/15 10:06 AM														"20/Mar/15 12:13 PM;gph;Findings to be reviewed and rated (in attachment ""Remains from ITService MM change.txt"").
-
-Used the program ""FindOccurencesOfBBTs.java"" to analyze files, dirs or content, where BuildingBlockTypes are listed (Ugly code warning!)."	24/Mar/15 9:49 AM;gph;Follow-up ticket for all remaining issues is ITERAPLAN-3045  (checked with sfe and fka).																																																					

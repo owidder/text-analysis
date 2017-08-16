@@ -1,1 +1,0 @@
-CSV Export Button ist auf dem CSI-Dashboard verschwunden	Der CSV Export Button sollte wieder verfügbar sein und wie auf dem EventResultDashboard dargestellt werden.		Bug	OpenSpeedMonitor	22/Feb/17 10:47 AM	22/Feb/17 11:06 AM																																																																				

@@ -1,8 +1,0 @@
-Neighbourhood Diagram EE/Win7/FF24/MySQL/German	"Test the new Neighbourhood Diagram of iteraplan in accordance with the current test specification in the following environment:
- * iteraplan EE
- * Windows 7 (64 bit)
- * Firefox 24.0
- * MySQL Server
- * German"	46148	Sub-task	iteraplan PO	21/Oct/13 3:49 PM	23/Oct/13 9:23 AM					test									"22/Oct/13 1:48 PM;kgo;Everyting seems fine. Two notes:
- * Tested only with Visio 2010.
- * Diagram Title is exported, whereas it is not exported for other context visualizations (e.g. Information Flow)"	23/Oct/13 9:23 AM;sfe;Nothing special to remark as every test was finished with result "ok".	24/Oct/13 4:17 PM;gph;Works with Visio 2003.																																																				

@@ -1,5 +1,0 @@
-Redirect from classic client to login and back	"*Summary:*
-
-If you are not authorised and try to access a url of the classic client directly, please redirect to the login-page (send redirected-from-url to login-page) and after login please redirect back to the initial url."		New Feature	iteraplan Speedbird	19/Dec/16 11:06 AM	30/Dec/16 7:19 PM														22/Dec/16 10:28 AM;roia;[~mada], we'll need to distinguish the type of "redirect back" url - whether it's redirect to classic or new client. So, before you start working on this, discuss this with me.	29/Dec/16 2:13 PM;roia;Current version redirects to login even when user is authorized when trying to open the root page of application. E.g. {{localhost:8080/iteraplan}}	"30/Dec/16 7:19 PM;ants;Review done:
-
-https://iteraweb.iteratec.de/fisheye/cru/IP-272"																																																				

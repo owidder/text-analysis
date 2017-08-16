@@ -1,7 +1,0 @@
-Insufficient log message in XMI importer on first step	"When the first step (=plausibility check) in the XMI importer fails, only the first line of the stack trace is shown (...IteraplanTechnicalException). This doesn't give any hints to the error reason. (see attachement ""XmiImportErrorMessage.jpg"").
-
-Increasing the logging level has no effect, because the error is caught in the code and hence doesn't show up in the log.
-
-At least, the full error stack trace should appear in the log."		Improvement	iteraplan PO	14/Mar/13 5:06 PM	22/Mar/13 2:19 PM					import	xmi								18/Mar/13 4:34 PM;gph;In the current solution, the stack trace appears only in the log. The message in the browser is still very brief and not helpful for the user to find out, what went wrong. For example "...IteraplanTechnicalException" or something like this.	"22/Mar/13 2:19 PM;sfe;Full stacktraces can be found in the logs now.
-This fulfills the minimum requirement of this issue.
-But better reporting to the user would be nice."																																																					

@@ -1,9 +1,0 @@
-MeasuredValue ResultId refactoring	"Aktuell werden die EventResults der MeasuredValues als String abgespeichert, also als kommaseparierte Liste von EventResultIds.
-
-Dieses soll der Art geändert werden, dass MeasuredValue eine Collection<EventResult> mit einer hasMany Beziehung besitzt.
-
-Die Collection sollte äquivalen zu IT-728 folgenden Namen haben:
-
-
-
-Collection<EventResult> underlyingEventResultByDocComplete"		Improvement	OpenSpeedMonitor	08/Feb/16 3:42 PM																																																																					

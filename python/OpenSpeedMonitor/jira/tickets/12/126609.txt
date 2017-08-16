@@ -1,5 +1,0 @@
-[Security] Admin kann sich selber zum ROOT machen	"Aktuell kann ein osm user, der nur ADMIN ist in der Benutzerverwaltung sich selber der Rolle ROOT zuordnen.
-
-
-
-Auch wenn unsere Nutzer-/Rechteverwaltung nur rudimentär ist (oder gerade deshalb) sollten wir momentan allen Kunden-Accounts nur ADMIN-Rechte geben. Admins sollten sich in der Benutzerverwaltung erstmal nur ein- und ausloggen können."		Bug	OpenSpeedMonitor	07/Jul/17 10:37 AM																																																																					

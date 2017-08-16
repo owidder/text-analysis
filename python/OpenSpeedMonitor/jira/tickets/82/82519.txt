@@ -1,5 +1,0 @@
-Improve color picker integration in GoJS diagram legends	"* Display color picker directly on the left side of the clicked bar.
-
-* Disable color picker for not to color bars, e.g. headline bars and 25%, 50% and 75%-bars for numeric coloring
-
-* Disable color picker for legend areas that are not color bars"		Improvement	iteraplan PO	29/Apr/16 9:17 AM																																																																					

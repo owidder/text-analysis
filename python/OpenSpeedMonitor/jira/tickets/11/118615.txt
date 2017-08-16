@@ -1,1 +1,0 @@
-Zeitvergleich in Charts einführen			Story	OpenSpeedMonitor	13/Apr/17 11:50 AM	09/May/17 7:35 AM																																																																				

@@ -1,3 +1,0 @@
-Wechsel zwischen Dashboards funktioniert nicht bei "letzte X Tage"	"Da werden hässliche kleine Stacktraces sichtbar in der WebGUI.
-
-Es geht um die Wechsel zwischen den verschiedenen _Ergebnis_-Dashbooards. "		Bug	OpenSpeedMonitor	31/Jan/17 4:00 PM	01/Feb/17 12:24 PM																																																																				

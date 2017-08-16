@@ -1,7 +1,0 @@
-Ergebnisse werden bei Erhalt keiner Gruppe zugeordnet	"Nach der Installation der Testumgebung, wie beschrieben in IT-14, und dem Erhalt eines Ergebnisses, werden die Daten zwar korrekt persistiert, aber keiner Jog-Gruppe (DB: ""job_group"", GORM: ""JobGroup"") zugeordnet. Hierdurch sind die Ergebnisse nicht an der UI sichtbar. Es wird jedoch eine Job-Konfiguration (DB: ""job_config"", GORM: ""JobConfig"") angelegt. 
-
-Durch das manuelle erstellen einer Verbindung in der Art:
-    ""INSERT INTO job_group_wpt_job_config (job_group_wpt_job_configs_id, wpt_job_config_id) VALUES (1,2)""
-kann dies nachträglich erfolgen. Anschließend sind die Messung der jeweiligen Gruppe zugeordnet.
-
-Erwartungsverhalten: Die Zuordnung geschieht automatisch."		Bug	OpenSpeedMonitor	17/Jul/13 10:19 AM	05/Aug/13 11:24 AM														05/Aug/13 11:24 AM;jwerschmoeller;Wird mit der Realisierung der Job-Steuerung automatisch mit abgeschlossen sein. Daher hier geschlossen.																																																						

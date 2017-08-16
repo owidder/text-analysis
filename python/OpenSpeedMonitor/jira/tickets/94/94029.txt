@@ -1,3 +1,0 @@
-JobSet durch Tags ersetzen	"Die Domain JobSet ist nicht mehr benötigt, wenn man stattdessen allen ausgewählten Jobs ein Tag vergeben könnte.
-
-In dem Fall müsste es auch eine Funktionalität geben alle gewählten Jobs wieder ein bestimmtes Tag zu entfernen."		Improvement	OpenSpeedMonitor	24/Aug/16 12:02 PM	07/Sep/16 12:11 PM														07/Sep/16 12:11 PM;mmi;Duplicate from [IT-931]																																																						

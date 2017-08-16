@@ -1,3 +1,0 @@
-Create reorder by drag&drop-toolarea-entry	Create reorder by drag&drop-toolarea-entry		Improvement	iteraplan Speedbird	14/Oct/16 11:41 AM	18/Oct/16 11:33 AM														"18/Oct/16 11:32 AM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-82.
-
-We could also specify a CTRL button for selecting multiple rows."	18/Oct/16 3:22 PM;msr;Good idea, we'll do that in the user guide.																																																					

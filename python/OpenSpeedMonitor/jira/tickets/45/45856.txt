@@ -1,7 +1,0 @@
-Description field is quite small on the bulkupdate table	"to reproduce:
-# select a few elements for bulkupdate and choose 3-4 attributes to edit.
-# select description for bulkupdate
-# click onto 'define bulkupdate for the selected elements'
-=> the table for bulkupdate contains a small textarea for the description.
-
-even if one only selects description for bulkupdate, the textarea becomes wider but is always limited to 2 rows."		Improvement	iteraplan PO	05/Jul/13 4:11 PM	30/Dec/15 2:42 PM					bulkupdate	massupdate	ui	usability																																																												

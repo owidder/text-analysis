@@ -1,9 +1,0 @@
-Create system tests for the Landscape Diagram	"Create system tests for the Landscape Diagram with the help of Protractor.
-
-
-
-Cover all major functionalities.
-
-
-
-Use only the toolarea and *not* the context menu."		New Feature	iteraplan PO	22/Oct/15 10:34 AM	18/Jan/16 12:23 PM					test																																																															

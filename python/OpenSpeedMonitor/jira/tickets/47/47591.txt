@@ -1,8 +1,0 @@
-Cleanup "substFilter"	"Please cleanup ""substFilter"":
-
-substFilter was replaced by filter.name during implementing text-filterings by all text attributes - code was not cleaned up everywhere because text-filtering story was not completed fully that moment.
-
-Previously that variable was responcible for filtering inner elements by name from searchfield in context menu.
-"		Bug	iteraplan PO	09/Apr/15 2:27 PM	09/Jun/15 5:05 PM														"15/Apr/15 11:27 AM;wfr;Reporter may decide for himself
-
-Commenter cannot assess."	22/May/15 1:06 PM;dasm;Verified (rev 1147)																																																					

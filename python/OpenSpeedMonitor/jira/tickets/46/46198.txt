@@ -1,3 +1,0 @@
-Custom Dashboards  EE / WinXP / IE8 / mssql	Test the Custom Dashboards with the given parameters	46148	Sub-task	iteraplan PO	23/Oct/13 2:45 PM	24/Oct/13 2:48 PM														23/Oct/13 4:38 PM;jmi;All template-tests OK	"24/Oct/13 1:29 PM;jmi;Most instance-tests ok, but when I try to change the saved query of an existing dashboard it will not return me to the edit-page of the dashboard I want to edit. Instead I have to select the template again, too, and are then returned to the edit-page of a new dashboard (query and template as chosen but name and description are gone). Saving will create a new dashboard.
-
-Known issue: ITERAPLAN-2028"																																																					

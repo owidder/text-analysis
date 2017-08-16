@@ -1,9 +1,0 @@
-Remove time series functionality	"Remove the time series functionality completely, but keep the DB data tables.
-
-
-
-Check if migration scripts are necessary and add them if necessary.
-
-
-
- "		New Feature	iteraplan Thunderduck	28/Jun/17 11:48 AM															24/Jul/17 2:32 PM;aan;Commit 27460 belongs here. The comment should be "Removing the attribute "temporal" from attributes and adapting models"																																																						

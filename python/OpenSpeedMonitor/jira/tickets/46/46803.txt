@@ -1,8 +1,0 @@
-Make a configured bootstrap css file	Make a configured bootstrap css file in product color palette http://pikock.github.io/bootstrap-magic/	46774	Sub-task	iteraplan PO	06/Aug/14 5:30 PM	18/Aug/14 4:34 PM														"18/Aug/14 4:34 PM;wfr;OK
-
-What file holds which style? How do they depend on each other?
-Please add a short comment in the beginning of each CSS (or LESS) file.
-
-For example: magic-bootstrap.css has colors for lists, buttons, ...
-app.css has colors for tiles in start page, 
-"																																																						

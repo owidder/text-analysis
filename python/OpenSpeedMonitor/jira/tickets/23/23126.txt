@@ -1,3 +1,0 @@
-Charting-library soll zur Laufzeit pro User wechselbar sein	"Die Charting-Bibliothek (Highcharts oder Rickshaw) wird derzeit in der Applikations-Config gesetzt und steht dann für die Lebensdauer der Anwendung fest (siehe IT-407).
-
-Dies soll geändert werden, so dass jeder User für sich alleine zur Laufzeit die Charting-Bibliothek ändern kann. Zu lösen über ein Cookie, dass der User setzen kann."		Task	OpenSpeedMonitor	22/Oct/14 3:22 PM	02/Mar/15 10:31 AM																																																																				

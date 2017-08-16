@@ -1,9 +1,0 @@
-Alle Einstellungen im benutzerdefinierten Dashboard wiederherstellen	"Diese Anforderung kommt von Erik Seidel.
-
-
-
-Alle Einstellungen, die auf Result- und CSI-Dashboard auswählbar sind sollen beim Aufrufen entsprechend gespeicherter benutzerdefinierter Dashboards auch wiederhergestellt werden.
-
-
-
-Also auch Einstellungen wie ob Datapoints angezeigt werden oder nicht. Dieses sind JS-Features. Diese Settings müssten beim Speichern mit versendet und persistiert werden und beim Laden des Dashboards initial korrekt eingestellt werden (per JS beim Laden der Seite)."		Task	OpenSpeedMonitor	22/Jan/16 6:33 PM	05/Feb/16 9:27 AM																																																																				

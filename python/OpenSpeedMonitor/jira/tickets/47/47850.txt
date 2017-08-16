@@ -1,2 +1,0 @@
-Context Overview Diagram does not show relations to IE	Relations to IE (Isr2Ie) are no longer displayed in the Context Overview Diagram.		Bug	iteraplan PO	22/Jun/15 7:54 AM	23/Jun/15 10:19 AM					diagram									"23/Jun/15 10:19 AM;fam;The fix fits the problem of the changed IS-IE relation.
-Ticket closed."																																																						

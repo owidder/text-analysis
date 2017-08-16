@@ -1,3 +1,0 @@
-Check List View perfomance with angular template	"check list view performance with large data using many relationship-Columns
-
-angular template for each cell will be generated many times."		Improvement	iteraplan PO	15/Jun/16 4:27 PM	22/Jun/16 10:40 AM																																																																				

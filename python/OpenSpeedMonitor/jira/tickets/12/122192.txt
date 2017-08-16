@@ -1,9 +1,0 @@
-Fix Classic Client Excel-Import	"*Summary:*
-
-The excel import in the classic client does not work because there is a newly added step 6
-
-
-
-*Details:*
-
-* Adapt the excel-import-jsp to deal with the new step 6"		Improvement	iteraplan Speedbird	23/May/17 5:04 PM	31/May/17 4:36 PM																																																																				

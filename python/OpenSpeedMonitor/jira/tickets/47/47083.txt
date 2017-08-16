@@ -1,6 +1,0 @@
-Custom Dashboards: Edit of "Saved Query" deletes all Dashboard information	"-Edit a custom Dashboard (e.g. ""Future Information Systems"")
--Delete the saved query
--Select any saved query
-
-Now you have to re-select the template and re-enter the name and description of the dashboard.
-SHOULD: The originally used template as well as the name and description of the Dashboard should be saved and do not need to be re-entered."		Bug	iteraplan PO	23/Oct/14 9:31 AM	23/Oct/14 4:46 PM					dashboard	query	savedquery							23/Oct/14 11:53 AM;iteraplan;Clarify with SFE or WFR what the desired behaviour is	23/Oct/14 2:50 PM;msr;As agreed with SFE and WFR: I adapted the documentation accordingly to this functionality: https://www.iteraplan.de/wiki/display/upcomingIteraplan/Custom+Dashboard																																																					

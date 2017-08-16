@@ -1,9 +1,0 @@
-MeasuredEvent.name unique ???	"Das genannte Attribut ist unique. In der OTTO-Instanz können aber über eintreffende Messungen zu mehreren MeasuredEvents mit dem selben Namen kommen. Kann daran liegen, dass der unique-Constraint irgendwann eingeführt wurde und in den OTTO-Daten nie eingeführt wurde, da hibernate diese Änderung nicht durchführt. Kann auch sein, dass der unique-Constraint in der mysql gar nicht zu einem unique-key führt.
-
-
-
-Das ist zu prüfen und dann ggf. die OTTO-DB manuell anzupassen. "		Improvement	OpenSpeedMonitor	08/Oct/15 11:20 AM	06/Feb/17 4:31 PM														"01/Feb/17 1:30 PM;jwi;Prüfen:
-
-* Gibts den Constraint in der Otto-DB?
-
-* Wird der Constraint durch Liquibase erstellt?"	06/Feb/17 4:31 PM;mmi;Unique Constraints sind sowohl durch Grails in der Domain definiert, als auch durch Liquibase in die DB geschrieben. Auch in der aktuellen OTTO-DB ist dieser vorhanden.																																																					

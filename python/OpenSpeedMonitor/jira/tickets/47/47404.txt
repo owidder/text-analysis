@@ -1,8 +1,0 @@
-"Nest by" menu entries for inner elements	Menu for nesting should has only available items for nesting according to used inner type		Bug	iteraplan PO	10/Feb/15 1:19 PM	13/Apr/15 11:00 AM														"26/Mar/15 4:20 PM;wfr;assumption, to be clarified with Daria (author of ticket):
-
-OR by retesting
-
-defect: There are more relationship (end) names in the menu as really available
-
-if so, todo:
-create list of relationship names dynamically (from the metamodel), depending on th current (inner) type."	10/Apr/15 9:17 AM;tam;Reviewed and tested	13/Apr/15 10:45 AM;isc;add "specialisations" and "generalisation"to the list of self relationships																																																				

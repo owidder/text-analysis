@@ -1,2 +1,0 @@
-Disable plugin API in Lite Edition	"discussed with [~fka] 
-disable REST resource for Plugin API in the lite customization"		Bug	iteraplan Thunderduck	22/Aug/16 2:11 PM	23/Aug/16 9:51 AM																																																																				

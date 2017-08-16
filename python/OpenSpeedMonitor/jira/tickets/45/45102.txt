@@ -1,5 +1,0 @@
-Excel-Import for attribute definitions	"The functionality for importing the enumeration attributes already exist. For the other attribute types the import should still be implemented. 
-Firstly the enum attributes import should be integrated in GUI and then import for other attribute types should be implemented (better something then nothing). "		New Feature	iteraplan PO	29/Aug/11 9:20 AM	15/Sep/11 1:26 PM					attribute	excel	import							"13/Sep/11 2:48 PM;uba;Functionality works, documentation is correct. Please check code.
-
-Only the headline is wrong. It should be ""Excel Import of Attributes (Beta)""
-But currently it says: ""Excel Import of Enumeration Attributes (Beta)"""																																																						

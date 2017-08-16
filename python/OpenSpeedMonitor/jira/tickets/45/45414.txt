@@ -1,6 +1,0 @@
-Copying a ResponsibilityAT does not copy its assigned values	When copying a responsibility attribute, even though "copy attribute values" is checked, the new attribute does not have the desired attribute values.		Bug	iteraplan PO	06/Mar/12 4:27 PM	26/Nov/12 6:14 PM					attribute	copy								06/Mar/12 4:30 PM;lci;getCopyMemBean() in AttributeTypeFrontendServiceImpl is rightfully called, but the values are somehow lost when saveNewComponentModel() is called in the end. 	17/Sep/12 8:27 PM;sry;no longer applicable to new elastic-based impl	26/Nov/12 6:14 PM;thf;(/) Seems to be working fine. Code looks good.	29/Nov/12 1:21 PM;sry;Thx!	"20/Mar/13 5:34 PM;gph;This bug has a relation to ITERAPLAN-1457, because the ResponsibilityAV created in
-UserEntityManyAssociationComponentModelResponsibilityAT.initializeFrom(ResponsibilityAT)
-with id==null appear as ""duplicates"" in
-ResponsibilityAttributeValuesComponentModel.dereferenceRemovedAttributeValues(ResponsibilityAT, List<ResponsibilityAV>).
-
-This prevents deleting of attribute values, because the difference between ComponentModel and AttributeType's values can't be determined. A clean solution for both bugs must be found."																																																		

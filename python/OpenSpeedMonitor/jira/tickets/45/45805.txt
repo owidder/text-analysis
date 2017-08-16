@@ -1,4 +1,0 @@
-Self-Relations are not displayed consistently in the Web-Interface for TechnicalComponents	"The self-relations Uses, Specialization, Successor are not properly displayed in the Web-Interface for {{TechnicalComponents}}.
-
-For {{TechnicalComponents}} only predecessors and used components are shown, but not successors and components by which they are used.
-"		Bug	iteraplan PO	28/Jun/13 6:34 PM	06/Aug/13 10:39 AM					consistency	usability								06/Aug/13 10:39 AM;sfe;looking good	20/Aug/13 6:16 PM;psc;Reviewed with Bernhard. Solution accepted.																																																					

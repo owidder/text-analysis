@@ -1,5 +1,0 @@
-PAPI - Performance improvement	"Don't calculate diffs and performe model merge every time the plugin component recieves event. 
-
-Do it only if the model was actually changed.
-
-Add dirty flag to flatModel, check it in recieveEvent"		Improvement	iteraplan Thunderduck	17/Aug/16 9:38 AM	17/Aug/16 3:24 PM																																																																				

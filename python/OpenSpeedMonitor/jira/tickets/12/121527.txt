@@ -1,1 +1,0 @@
-Geb-Test für das Redirecting zur InfrastructureSetup View schreiben/fixen	Der bestehende Test ist rot. Zudem testet dieser bisher nur den Redirect zur LandingPage. Es fehlt das Testen, das der Redirect zum Wizard funktioniert wie er soll.		Task	OpenSpeedMonitor	16/May/17 12:18 PM																																																																					

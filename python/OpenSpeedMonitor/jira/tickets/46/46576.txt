@@ -1,9 +1,0 @@
-Building block overview page query error with attribute selection	"Reproduce (example with sample data):
-# Navigate to iteraplan -> EA Data -> Information System
-# Select ""Queries"" tab
-# Select attribute ""Complexity"" and ""no value""
-# Search
-# De-select the attribute and wait for page refresh
-# Select ""Complexity"" again
-
-=> Error page"		Bug	iteraplan PO	11/Apr/14 12:31 PM	25/Apr/14 10:39 AM					queryform									11/Apr/14 12:34 PM;sfe;Attached problem report	25/Apr/14 10:39 AM;gph;Fix works and solution looks correct.																																																					

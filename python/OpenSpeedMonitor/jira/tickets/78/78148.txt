@@ -1,7 +1,0 @@
-[REST-API] CSI-Methode _csi_ wird nicht korrekt berechnet	"Von OTTO berichtet: 
-
-http://iteraspeedmonitor.otto.wpt.iteratec.de/rest/otto.de_Desktop/csi/20160323T031007Z/20160323T071007Z
-
-
-
-Liefert eine Fehlermeldung zurück."		Bug	OpenSpeedMonitor	23/Mar/16 1:44 PM	29/Mar/16 3:49 PM																																																																				

@@ -1,3 +1,0 @@
-Queue-Status: Anzahl Messschritte, die in der nächsten Stunde ausgeführt werden anzeigen	"Anzahl Messsschritte, die in der nächsten Stunde ausgeführt werden werden als zusätzliche Spalte in der Queue-Status-Tabelle anzeigen: 
-
-(Ausführungshäufigkeit in der fraglichen Stunde) * (Anzahl Messschritte) * (Anzahl Runs) * (2 falls First View Only == false, sonst 1)"		Task	OpenSpeedMonitor	25/Feb/14 5:39 PM	13/Mar/14 7:05 PM																																																																				

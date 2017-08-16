@@ -1,8 +1,0 @@
-Job bearbeiten TypeError (tags funktionieren noch nicht)	"Es werden drei JavaScript Error ausgegeben:
-* Uncaught TypeError: b.widget is not a function(anonymous function) @ tag-it.min.js?compile=false:1(anonymous function) @ tag-it.min.js?compile=false:17
-edit.js?compile=false:20 
-* Uncaught TypeError: $(...).tagit is not a functiondoOnDomReady @ edit.js?compile=false:20(anonymous function) @ 472:2033
-edit.js?compile=false:20 
-* Uncaught TypeError: $(...).tagit is not a functiondoOnDomReady @ edit.js?compile=false:20(anonymous function) @ 472:2390
-
-Evtl. besteht ein Zusammenhang zu den fehlerhaften Tags aus IT-686"		Bug	OpenSpeedMonitor	20/Jul/15 10:20 AM	27/Jul/15 10:56 AM														27/Jul/15 10:56 AM;bwo;Asset import über die job/edit.gsp für prettycron funktionierte nicht. Der Import befindet sich nun in der _editOrCreate.gsp. 																																																						

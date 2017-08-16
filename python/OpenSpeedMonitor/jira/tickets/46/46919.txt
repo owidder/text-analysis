@@ -1,2 +1,0 @@
-Remove spreadsheet report export formats MS Project & GANTT	"Remove the feature and all then unused code & libraries associated with it
-Adjust the user documentation"		Improvement	iteraplan PO	25/Aug/14 6:47 PM	01/Sep/14 3:20 PM														29/Aug/14 1:04 PM;dop;Deleted all references for MS Project and Gantt in documentation and added a hint, that MS Project is deleted since iteraplan 3.4. 																																																						

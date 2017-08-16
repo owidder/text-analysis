@@ -1,8 +1,0 @@
-NCD: Marking in bold type (coloring text by black color) for used options	"Summary: Use marking in bold type (coloring text by black color) for used options instead of hiding them from context menu.
-Actual for Grouping, Filtering, Coloring, Path Connections
-(approved by Marcel 05.03.2015)
-
-"		New Feature	iteraplan PO	06/Feb/15 2:13 PM	19/Jan/16 1:57 PM														"05/Mar/15 2:59 PM;dasm;Use marking in bold type (coloring text by black color) for used options instead of hiding them from context menu.
-Actual for Grouping, Filtering, Coloring, Path Connections
-
-(approved by Marcel 05.03.2015)"																																																						

@@ -1,7 +1,0 @@
-Deleting attributes does not delete them from selection lists of information flows	"How to reproduce:
-
-Start information flow diagram until you reach second screen.
-Delete an attribute valid for ""line type"" (and maybe colour).
-Go back in information flow diagram (go to first screen) and then go to second screen.
-
-while the attribute is removed from the selection list of colouring the building blocks, it is still available in the selection list of line types."		Bug	iteraplan PO	12/Jul/11 7:58 AM	12/Jul/11 10:45 AM					reports									12/Jul/11 10:45 AM;kvo;wontfix - rare usecase with easy workaround																																																						

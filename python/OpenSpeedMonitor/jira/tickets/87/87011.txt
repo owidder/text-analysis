@@ -1,5 +1,0 @@
-Java8 Update: Datum kann nicht augewählt werden (CRUD)	Wie bereits bei den Dashboards gibt es auch in den CRUD-Oberflächen Probleme mit dem Java Date nach dem Update auf Java 8.		Bug	OpenSpeedMonitor	13/Jun/16 10:11 AM	13/Jun/16 11:02 AM														"13/Jun/16 10:12 AM;mmi;Betroffene Controller sind:
-
-
-
-* csTargetValue"																																																						

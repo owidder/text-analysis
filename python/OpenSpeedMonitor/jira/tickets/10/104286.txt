@@ -1,1 +1,0 @@
-Fix headline of saved queries list	The german translation of the headline is wrong.		Bug	iteraplan Thunderduck	29/Nov/16 4:49 PM	02/Dec/16 9:37 AM																																																																				

@@ -1,6 +1,0 @@
-[Portfolio Diagram] Text size does not scale correctly	"The customer T-101 reported the following observation:
-
-""Eine Portfolio-Grafik mit dem Ausgabeformat Visio erstelle (Elemente skalieren aufgrund der Merkmalsauswahl nicht), dann ist die Beschriftung zu lang.
-
-In einem anderen Ausgabeformat ist das (nur wenig) besser gelöst:
-"""		Improvement	iteraplan PO	13/Jan/15 6:08 PM	19/Jan/16 10:35 AM					diagrams																																																															

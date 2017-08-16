@@ -1,3 +1,0 @@
-Permission handling on startscreen and listview	"On the start screen, don't show tiles for types which are not contained in the metadata.
-
-For list views nothing needs to be done, since they can't be accessed by the startscreen anymore."	62613	Sub-task	iteraplan PO	05/Nov/15 9:57 AM	10/Nov/15 1:09 PM																																																																				

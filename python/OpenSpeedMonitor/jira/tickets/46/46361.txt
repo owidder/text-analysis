@@ -1,3 +1,0 @@
-Selenium: POC for Create/Delete/Update on EA Data	"It should be a short-term goal to have a selenium test that checks whether basic create/delete/update activities are working correctly for each Building Block type. 
-
-In the course of this task, we are aiming at a first proof-of-concept. Therefore a test-prototyp is to be created, that creates, updates and deletes an instance of a selected pilot BBT, say IS, whereas ""updates"" stands for a managable amount of changes on existing attributes."		Task	iteraplan PO	25/Nov/13 10:01 AM	09/Dec/13 11:36 AM														16/Dec/13 9:46 AM;psc;Ticket will be closed.																																																						

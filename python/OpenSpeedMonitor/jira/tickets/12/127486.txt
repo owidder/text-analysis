@@ -1,1 +1,0 @@
-Customization: Colors-Hover-effect (Client)	Calculate darker color for the hover effect of colors and tiles (client - [~olal]) each time when the client gets the colors from the server		Improvement	iteraplan Speedbird	18/Jul/17 5:21 PM	26/Jul/17 10:33 AM																																																																				

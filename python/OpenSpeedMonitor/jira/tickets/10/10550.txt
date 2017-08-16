@@ -1,1 +1,0 @@
-Darstellung der Location-Informationen (Location/Browser sollte normiert werden) 	analog zur Serverdarstellung		Task	OpenSpeedMonitor	25/Sep/13 9:38 AM	18/Jan/17 2:43 PM														25/Sep/13 11:15 AM;jwerschmoeller;Agent und Browser sollte im Datenmodell auseinandergezogen werden																																																						

@@ -1,3 +1,0 @@
-Text steht zu nah an Checkboxen	"Auf Messungen > Jobs ( http://localhost:8080/OpenSpeedMonitor/job/list )
-
-in IE, FF, Chrome"		Bug	OpenSpeedMonitor	18/Feb/15 10:37 AM	19/Feb/15 10:06 AM																																																																				

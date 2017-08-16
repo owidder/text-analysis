@@ -1,1 +1,0 @@
-CreateCsTargetValue Datum Fehler	Versucht man über die CRUD-View des CsTargetValue ein neues zu erstellen und wählt ein gültiges Datum aus, so erscheint trotzdem die Fehlermeldung "Bitte ein gültiges Datum auswählen".		Bug	OpenSpeedMonitor	29/Jun/16 9:33 AM	29/Jun/16 10:33 AM																																																																				

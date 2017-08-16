@@ -1,3 +1,0 @@
-Remove duplicated code from business logic services subscribe() method	"There is a lot of duplicate code in such methods. They are all very similar and can be shrinked to one method. For example de.iteratec.iteraplan.businesslogic.service.BusinessUnitServiceImpl.subscribe(Integer id, boolean subscribe) method.
-The all required functionality must be placed in AbstractBuildingBlockService.doSubscribe() method (later it must be renamed to subscribe()). The improvement details will be explained by word :)
-Also please write JUnit tests for each building block."		Improvement	iteraplan PO	09/Aug/11 4:36 PM	17/Aug/11 2:44 PM					subscriptions																																																															

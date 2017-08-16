@@ -1,4 +1,0 @@
-Edit button in lists of elements	"In lists containing all available elements of a certain type, e.g. all Information Systems, there should be an edit button for each listed element. This feature would enable users to switch directly into the edit mode of the corresponding element.
-
-Original ticket in Trac: https://iteraplan.iteratec.de/projects/iteraplan/ticket/2316
-"		Improvement	iteraplan PO	30/Oct/11 10:55 AM	08/Jun/12 10:56 AM					button	edit																																																														

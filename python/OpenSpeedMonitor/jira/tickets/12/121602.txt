@@ -1,9 +1,0 @@
-Assimilate Mass Update-Button to Export-Button when inactive	"The buttons MASS UPDATE and EXPORT are inactive when Tree-View is chosen. EXPORT has grey background and dark-grey icon and text, MASS UPDATE has grey background and _light-_grey icon (no text).
-
-
-
-1. Please add the Text ""MASS UPDATE"" to the button (in all views).
-
-
-
-2. When inactive: the icon and text of MASS UPDATE should be the same dark-grey as in the EXPORT button. The background-colour should be equal for both buttons."		Improvement	iteraplan PO	17/May/17 8:25 AM	31/May/17 2:02 PM														31/May/17 2:02 PM;sbu;See ticket 5320																																																						

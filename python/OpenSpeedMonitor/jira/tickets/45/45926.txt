@@ -1,2 +1,0 @@
-Find all occurrences of "Attribut" in the german localization and replace it with "Merkmal"	"English: attribute
-German: Merkmal (NOT: Attribut!)"		Task	iteraplan PO	25/Jul/13 11:22 AM	30/Dec/15 2:53 PM					gui	localization																																																														

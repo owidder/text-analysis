@@ -1,6 +1,0 @@
-Aktualisierung der Locations beim Eintreffen von Results korrigieren	"Beim Eintreffen von Results werden Änderungen an Locations nicht korrekt verarbeitet. Es wird für neue Locations immer der Browser ""unknown"" gesetzt. In der Result-xml ist der Browsername auch nicht enthalten.
-
-Lösungsvorschlag: Im Fall einer neuen Location wird listenToLocations getriggert (HTTP-Request gegen den Server und listenToLocation aufrufen). Dadurch würde dann ein update der Location ausgelöst (siehe unten).
-
-de.iteratec.ispc.LocationAndResultPersisterService.listenToResult(String, GPathResult, String, WebPageTestServer)"		Bug	OpenSpeedMonitor	25/Oct/13 11:16 AM	05/Nov/13 11:58 AM														"28/Oct/13 8:02 AM;rhe;Duplicat von IT-181 ?
-"	04/Nov/13 5:54 PM;rhe;Nicht trivial!, location String nicht eindeutig!	05/Nov/13 10:01 AM;rhe;Die Location bekommt ein extra Feld: -uniqueXMLIdentifier- uniqueIdentifierForServer																																																				

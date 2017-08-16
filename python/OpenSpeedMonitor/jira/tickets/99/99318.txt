@@ -1,9 +1,0 @@
-Migrate history.enabled setting	The migration tool is to read the history.enabled property of the provided iteraplan.properties and, if it says "true", adds a "history enabled" entry in the history state database with the migration time as timestamp.	96257	Sub-task	iteraplan Thunderduck	17/Oct/16 10:51 AM	18/Oct/16 3:09 PM														"17/Oct/16 1:57 PM;sfe;Changeset [iteraplan-helper 1277|https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-helper?cs=1277] belongs to this issue. Its commit comment is also wrong and should be as follows:
-
-{quote}
-
-If the iteraplan property {{history.enabled}} is set to true, the according database entry is set by the history migration tool now.
-
-unrelated: set different jvm system library for the project in an attempt to make it work on all developer machines
-
-{quote}"																																																						

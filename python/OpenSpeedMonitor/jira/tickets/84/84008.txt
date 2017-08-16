@@ -1,1 +1,0 @@
-Handle Url for attributes and self-relations		83118	Sub-task	iteraplan PO	12/May/16 9:30 AM	03/Jun/16 1:54 PM														23/May/16 3:46 PM;roia;@marcel there's no need in any specific implementation. I think, this task can be closed.																																																						

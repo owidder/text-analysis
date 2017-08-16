@@ -1,3 +1,0 @@
-delete BrandNavBar-Controller from controllers.js	"BrandNavBar-Controller in controllers.js is only used for commonHeaderTemplate.
-
-Use CommonHeaderController there instead and remove BrandNavBar-Controller."		Bug	iteraplan PO	09/Nov/15 9:26 AM	11/Mar/16 1:41 PM														11/Mar/16 1:41 PM;abo;Reviewed.																																																						

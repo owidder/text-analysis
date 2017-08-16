@@ -1,1 +1,0 @@
-Browser Edit View fixen	In der Edit View werden die Aliase unter dem Label angezeigt, gewollt ist jedoch, dass sie neben dem Label stehen.		Bug	OpenSpeedMonitor	12/May/16 10:40 AM	12/May/16 12:22 PM																																																																				

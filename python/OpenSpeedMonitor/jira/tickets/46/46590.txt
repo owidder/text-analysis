@@ -1,6 +1,0 @@
-Test general import / export capabilities via test sheet	"Short documentation of results in this ticket
-Findings in a new bug / task ticket"		Task	iteraplan PO	24/Apr/14 11:21 AM	28/Apr/14 5:36 PM					export	import	test							"28/Apr/14 10:54 AM;isc;Findings:
-* ITERAPLAN-2477
-* ITERAPLAN-2478
-* ITERAPLAN-2481
-* ITERAPLAN-2485"																																																						

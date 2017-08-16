@@ -1,5 +1,0 @@
-Undeploy of a demo instance should be attempted for 7 days	"Currently, if a demo instance is expired and to be undeployed, in case the application could not be undeployed, an email is sent to iteraplan support.
-
-
-
-To be: Further attempts to undeploy the applications are made, and only if it still did not work after 7 days, support is notified."	93358	Sub-task	iteraplan Speedbird	31/Oct/16 11:08 AM	03/Nov/16 2:52 PM																																																																				

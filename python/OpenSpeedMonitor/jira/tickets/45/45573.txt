@@ -1,7 +1,0 @@
-Excel Import wrongly classifies addition of new enumeration literals as unapplicable change	"Example with example bank data:
-1. Export data or template
-2. Add a literal on one of the enum sheets, for example for Complexity
-3. Try to import the file
-=> unapplicable changes detected
-
-The import should be able to apply added enumeration literals."		Bug	iteraplan PO	16/Aug/12 3:37 PM	15/Jan/13 12:40 PM					excel	import								15/Jan/13 12:40 PM;gph;Works good.																																																						

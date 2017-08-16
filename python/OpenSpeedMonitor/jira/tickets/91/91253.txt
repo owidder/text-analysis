@@ -1,1 +1,0 @@
-Aktuelle Viewpoint-Sicht für Kartierungen erkennen	Wenn ein Upload für eine neue Kartierung gemacht wird, muss die aktuelle Viewpoint-Ansicht (otto / Himalaya in den Beispieldaten) berücksichtigt werden.	90744	Sub-task	EAM-Visualisierung	22/Jul/16 2:46 PM																																																																					

@@ -1,1 +1,0 @@
-Beschreibung für den Schritt "Set Job Group" erstellen	Um dem (Erst-)Nutzer das Erstellen einer Job Gruppe zu vereinfachen sollte eine Beschreibung existieren was die Job Gruppe ist und wozu sie dient.	111352	Sub-task	OpenSpeedMonitor	08/Feb/17 3:02 PM	27/Mar/17 12:13 PM																																																																				

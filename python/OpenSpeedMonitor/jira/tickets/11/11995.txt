@@ -1,1 +1,0 @@
-fixed-table-header funktioniert im FF nicht	Im IE und Chrome geht es.		Bug	OpenSpeedMonitor	18/Mar/14 11:32 AM	18/Mar/14 2:44 PM																																																																				

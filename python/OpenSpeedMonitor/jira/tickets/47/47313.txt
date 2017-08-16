@@ -1,4 +1,0 @@
-Customizing for U-100	"Change the default locale to english.
-Currently the default locale is set to german.
-
-Remove also the customized startscreen. U-100 like to use all BBT."		Task	iteraplan PO	22/Jan/15 4:50 PM	23/Jan/15 11:29 AM																																																																				

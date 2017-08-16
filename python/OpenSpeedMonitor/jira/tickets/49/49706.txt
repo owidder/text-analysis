@@ -1,1 +1,0 @@
-I18N in interactive client	Implement internationalization for the interactive client, including metamodel element names and static texts.		Epic	iteraplan PO	02/Jul/15 9:12 AM	19/Jan/16 3:59 PM					client																																																															

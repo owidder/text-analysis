@@ -1,1 +1,0 @@
-Verbindung zwischen Schnittstelle und Informationssystem doppelt	Die Verbindung zwischen Schnittstelle und Informationssystem ist auf dem Startbild doppelt eingezeichnet.		Bug	iteraplan PO	11/Dec/12 3:32 PM	11/Dec/12 3:43 PM														11/Dec/12 3:43 PM;fka;Das soll so sein ;-)																																																						

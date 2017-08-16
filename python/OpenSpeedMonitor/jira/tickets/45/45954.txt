@@ -1,6 +1,0 @@
-Check wording on hierarchy	"""Hierarchy"" is used inconsistently on multiple places in iteraplan:
-
-# InformationSystems are marked as hierarchic but there is no possibility to display them as tree
-# the hierarchy tab in BBs detail pages does not only contain hierarchy informations but all to-many self-relationship information
-# even technical component, not marked as hierarchically on the startscreen, has a tab for hierarchy displaying the self-relationships
-"		Task	iteraplan PO	05/Aug/13 12:58 PM	30/Dec/15 3:17 PM																																																																				

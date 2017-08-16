@@ -1,3 +1,0 @@
-IE8: Searchable Edit dropdown disappear after only a few seconds scrolling	"Users with MS IE8 cannot use the dropdown boxes of IE8 properly, as they close automatically after only a few seconds of scrolling. The behaviour is not completely deterministic, but has been observed on several PCs.
-
-So far, I could only reproduce the issue with IE8 on WinXP. IE8 on Vista works normally, as well as IE9 and IE9 in IE8-compat-mode and all other (real) browsers."		Bug	iteraplan PO	18/May/12 3:00 PM	08/Jun/12 10:28 AM					IE																																																															

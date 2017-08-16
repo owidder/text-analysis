@@ -1,7 +1,0 @@
-Building Block List: Treeview [Browser: IE11]		124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:12 PM	19/Jun/17 4:48 PM														"15/Jun/17 6:28 PM;naba;For smoke test please use the [https://doc.iteraplan.de/display/iteraplan60/List+view] (examples and tips).
-
- Please be creative and progressive.
-
-
-
-*Note*: work with documentation is still in progress."																																																						

@@ -1,5 +1,0 @@
-Queues-Seite zeigt nicht alle WPT-Server	"Ich sehe hier nicht alle WPT-Server:
-
-https://iteraspeedmonitor.otto.wpt.iteratec.de/queueStatus/list
-
-"		Bug	OpenSpeedMonitor	24/Oct/16 10:11 AM	22/Dec/16 11:12 AM																																																																				

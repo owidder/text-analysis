@@ -1,3 +1,0 @@
-Reintegrate filter branch into trunk	"-Merge the filter branch into trunk
-
--Rename files if necessary, e. g. ""combinedFilter_2"""		Task	iteraplan PO	02/Mar/16 10:46 AM	27/Mar/17 2:25 PM																																																																				

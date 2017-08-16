@@ -1,3 +1,0 @@
-List columns have misplaced [x] buttons in Firefox	See the attached !x-buttons.jpg|thumbnail!		Bug	iteraplan Speedbird	25/Jan/17 4:09 PM	30/Jan/17 1:36 PM														"30/Jan/17 11:59 AM;roia;also fixed unnnecessary horizontal scroll bar
-
-!list-horz-scroll.jpg|thumbnail!"	30/Jan/17 1:05 PM;mse;I removed the changes made to ipList-component.js again because a fix to the horizontal scroll bar problem was implemented in IPTT-354.	30/Jan/17 1:36 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-311																																																				

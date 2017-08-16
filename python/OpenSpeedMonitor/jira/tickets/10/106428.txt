@@ -1,7 +1,0 @@
-Edit-Button in right-aligned columns	"*Problem:* When a right-aligned cell (i.e number or date column) is hovered, the edit button moves the cell content to the left when it appears.
-
-
-
-*Expected behaviour:* The cell content stays where it is and the edit button is overlaid (as for left-aligned columns)
-
-"	102732	Sub-task	iteraplan Thunderduck	22/Dec/16 11:58 AM	09/Jan/17 9:22 AM																																																																				

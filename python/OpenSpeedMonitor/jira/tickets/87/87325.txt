@@ -1,3 +1,0 @@
-Replace patched angular-input-dropdown with the bower_component	"The version 1.0.0 is patched.
-
-The library to replace can be found here: app/js/libs/patched/angular-input-dropdown"		Improvement	iteraplan PO	15/Jun/16 1:25 PM																																																																					

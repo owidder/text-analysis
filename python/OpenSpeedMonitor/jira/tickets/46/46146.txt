@@ -1,1 +1,0 @@
-Create Test Specification for Import Export		46121	Sub-task	iteraplan PO	16/Oct/13 5:00 PM	23/Oct/13 12:07 PM														21/Oct/13 6:23 PM;svo;Import test spec does not specify any test cases	22/Oct/13 10:42 AM;kgo;Test cases can be found in the second sheet, after revision 21612.	23/Oct/13 12:07 PM;sfe;seems fine																																																				

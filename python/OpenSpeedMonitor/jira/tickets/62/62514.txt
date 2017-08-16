@@ -1,1 +1,0 @@
-Animiertes gif auf der Jobliste fehlt			Bug	OpenSpeedMonitor	04/Nov/15 4:39 PM	05/Nov/15 4:11 PM														05/Nov/15 4:11 PM;hmettendorf;Habe Pfad undjob/list.css entsprechend angepasst.																																																						

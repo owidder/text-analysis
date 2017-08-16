@@ -1,7 +1,0 @@
-Sinnvolles Springen bei Interaktion auf PageAggregation Seite	"Wenn man im Moment z.B. auf ""Add Measurand Series"" klickt, dann springt man wieder auf der Seite nach oben, was schnell nervig für den Nutzer werden kann.
-
-Tipp: Keine Links für Buttons benutzen, wenn nichts verlinkt wird. Stattdessen lieber ein ""button"" Element mit ""type='button'"" nutzen und richtig per CSS stylen.
-
-
-
-Wenn man auf ""Show"" drückt, sollte man jedoch nach oben springen, da dort der Graph aktualisiert wird."		Bug	OpenSpeedMonitor	19/Dec/16 11:27 AM	04/Jan/17 9:03 AM																																																																				

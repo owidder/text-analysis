@@ -1,6 +1,0 @@
-Basic structure of IFD	"Create the basic structure of the information flow diagram
-according to https://iteraweb.iteratec.de/confluence/display/ITPL/Architektur+IFD
-
-* just the class structure with basic connections / injections / dependencies
-* without any functionality"		New Feature	iteraplan PO	15/Jun/15 4:50 PM	01/Jul/15 12:33 PM					ifd									"19/Jun/15 3:53 PM;msr;Open TODO:
-Create 2 directives analogue to filesPane.js and adapt folder-structure accordingly"																																																						

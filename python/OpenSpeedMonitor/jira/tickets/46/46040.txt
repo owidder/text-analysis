@@ -1,8 +1,0 @@
-Extention to Landscape Diagram	"A user wants to configure a landscape diagram in which the same building block type that must be hierarchic is used as element on the y-axis and as content.
-
-Application example: business landscape diagram
-x-axis: business processes of level 1 and 2
-y-axis: products including all hierarchy levels
-cells: business processes of level 3 and 4
-
-"		New Feature	iteraplan PO	29/Aug/13 4:42 PM	30/Dec/15 3:17 PM																																																																				

@@ -1,5 +1,0 @@
-Kibana neues TimeSeries Dashboard  mit Team-Filter erweitern	"Das neue ""Team""-Filterkriterum soll bei der Integration Camunda <-> Kibana im Dashbooard berücksichtig werden können.
-
-
-
-Beispielhaft sollten zwei verschiedene Team Dashboards aufgesetzt werden, um die jeweiligen Ergebnisse anzuzeigen."	82237	Sub-task	secureCodeBox	27/Apr/16 1:06 PM	06/May/16 1:07 PM																																																																				

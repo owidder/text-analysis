@@ -1,4 +1,0 @@
-Make content element name in visualizations adjustable	"Ausbaustufe 1:
-Instead of name of BBT an arbitrary other attribute might be chosen and its value is displayed instead of the name.
-
-"		New Feature	iteraplan PO	10/Jun/15 1:47 PM	19/Jan/16 4:06 PM					lsd	ncd																																																														

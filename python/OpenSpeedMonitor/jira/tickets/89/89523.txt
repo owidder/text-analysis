@@ -1,5 +1,0 @@
-Use adapter in plugin container (write)	"Plugin code should be able to read/write elastic model values:
-* use flatModel adapter
-* *writing* methods should be available within plugin code
-
-* extend PluginApi(Java) and api (javascript adapter: ...classes/scripts/api.js)"	89432	Sub-task	iteraplan Thunderduck	06/Jul/16 11:06 AM	01/Aug/16 4:29 PM																																																																				

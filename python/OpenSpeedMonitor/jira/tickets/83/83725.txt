@@ -1,5 +1,0 @@
-Add regular text property column	"Add button and column selector.
-
-The elements of column selector are contained in the listConfiguration.
-
-Recaltulate columnDefs and rowData when column added."		New Feature	iteraplan PO	10/May/16 11:02 AM	30/May/16 10:06 AM														18/May/16 10:01 AM;mwe;In ag-grid every cell is able to contain text values.																																																						

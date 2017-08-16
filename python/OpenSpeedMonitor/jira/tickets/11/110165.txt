@@ -1,5 +1,0 @@
-Saved Queries are immediately saved to the database with transformed parameters	"Extend the legacy-url-parameter-service (IPTS-532):
-
-* Check if the loaded query is a saved query
-
-* If yes, immediately save the saved query with transformed parameters to the database"	110038	Sub-task	iteraplan Speedbird	31/Jan/17 5:17 PM	10/Feb/17 5:43 PM																																																																				

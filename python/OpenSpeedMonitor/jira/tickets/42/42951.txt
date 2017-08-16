@@ -1,9 +1,0 @@
-Custom Dashboards löschen	"Custom Dashboards sollen gelöscht werden können auf zwei unterschiedliche Arten:
-
-
-
-1. Via gescaffoldeter CRUD-View
-
-2. Mittels eines Buttons auf dem Dashboard selbst (nur sichtbar für angemeldete Admins oder später für den Besitzer des Dashboards)
-
-"		Bug	OpenSpeedMonitor	08/Jun/15 4:41 PM	09/Jun/15 12:03 PM																																																																				

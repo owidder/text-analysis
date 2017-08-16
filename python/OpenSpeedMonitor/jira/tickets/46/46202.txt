@@ -1,4 +1,0 @@
-Custom Dashboards: Improve the exception handling for too long descriptions	"The description for Dashboards Templates and Instances are limited to 4000 characters. If you enter a description that is longer, an error page is displayed.
-We should validate the length and warn the user in case of error and improve the error message.
-
-In Nightly, the problem does not occur. Behaves the HSQLDB differently?"		Bug	iteraplan PO	23/Oct/13 4:38 PM	19/Aug/14 11:23 AM					Dashboard									25/Oct/13 10:50 AM;svo;Encountered no problem for CE/hsqldb when entering an extremely long description.																																																						

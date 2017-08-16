@@ -1,1 +1,0 @@
-Rückgabe der Rest-Api-Methode resultsbetween um URL's zu Details und har erweitern			New Feature	OpenSpeedMonitor	17/Jul/14 3:54 PM	17/Jul/14 3:56 PM																																																																				

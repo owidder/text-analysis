@@ -1,9 +1,0 @@
-Improve Test-Setup for E2E-Tests	"*IS:*
-
-To run the tests locally it is necessary to adapt _conf.js_ (or _local.conf.js_), run the application (classic client + nic) plus configure and run a webserver that serves the downloaded files (see _download-LS-diagram-spec.js_).
-
-
-
-*SHOULD:*
-
-Find a way to reduce the effort for local test-setup. Proposal: install Jenkins in the Windows-VM that is executing the UI-Tests, which is configured as slave. The current Jenkins is the master that delegates the complete deployment and job-run to the slave. Then it no longer would be necessary to have the additional webserver and it probably makes _local.conf.js_ obsolete (because the setup on the Jenkins slave and on a dev-machine can be identical)"		Improvement	iteraplan PO	08/Mar/16 10:54 AM																																																																					

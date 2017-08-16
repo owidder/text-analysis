@@ -1,2 +1,0 @@
-"Show lsd" and "Show ncd" buttons on the NCD page	Summary: If user goes to the NCD page from List view page - "Show landscape diagram"  and "Show nested clusted diagram" buttons appear	47647	Sub-task	iteraplan PO	27/Apr/15 10:19 AM	05/May/15 2:09 PM													"Workspace: Windows 8.1
-revision: 1034"	27/Apr/15 4:40 PM;dasm;Verified (rev 1036)																																																						

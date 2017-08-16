@@ -1,3 +1,0 @@
-Bewertung von Mozilla HTTP-Observatory	Mozilla hat seit eingen Tagen nun ein Security Tool bzw. eine Sammlung veröffentlich, welche zahlreiche Security Tests umfasst. Es ist zu überprüfen, ob dieses Tool ebenfalls einen Mehrwert für die Securebox bietet und sich somit eine Einbindung lohnen würde.		Task	secureCodeBox	30/Aug/16 2:15 PM	12/Sep/16 8:29 AM					students									"30/Aug/16 6:31 PM;jbo;Das Tool kann unter [https://github.com/mozilla/http-observatory] erreicht werden und die cli-Version ist unter : [https://github.com/mozilla/http-observatory-cli] zu finden.
-
-Die Web-Api kann ebenfalls direkt per [https://observatory.mozilla.org/] angesteuert werden"																																																						

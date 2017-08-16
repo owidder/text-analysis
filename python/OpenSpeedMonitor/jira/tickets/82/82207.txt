@@ -1,3 +1,0 @@
-Prepare and release client	See https://iteraweb.iteratec.de/confluence/pages/viewpage.action?title=Release-Prozess&spaceKey=ITPL#Release-Prozess-2.3interaktivienClientreleasen		Task	iteraplan PO	27/Apr/16 9:27 AM	09/May/16 3:18 PM														"09/May/16 3:18 PM;abo;Reviewed together with ITERAPLAN-4529.
-
-Review ok."																																																						

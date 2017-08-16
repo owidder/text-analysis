@@ -1,9 +1,0 @@
-Add reset button to header	"Create a button in the header that resets the configured view to the default config. Without functionality when clicked.
-
-
-
-Button value:
-
-* en: ""Reset View""
-
-* de: ""Ansicht zurücksetzen"""		New Feature	iteraplan Quickfox	03/Aug/16 2:26 PM	12/Aug/16 9:44 AM																																																																				

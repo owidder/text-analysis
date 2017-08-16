@@ -1,5 +1,0 @@
-split SingleFilterObject and incl predicateBuilder	"build for every use case of the singleFilterObject a new .js (text,enum,date,duration,num,level)
-
-
-
-these classes should contain the whole translation and predicateBuilder function, incl operator but without effect on the filter!"	65408	Sub-task	iteraplan PO	04/Dec/15 1:23 PM	14/Dec/15 10:02 AM																																																																				

@@ -1,1 +1,0 @@
-Refactoring der d3 Chart Utilities	Da wir jetzt viele Charts bauen und gleiche Funktionalitäten in verschiedenen Charts benötigen, sollten wir so viele Funktionalitäten wie möglich extrahieren um diese überall verwenden zu können.		Story	OpenSpeedMonitor	10/Mar/17 8:36 AM																																																																					

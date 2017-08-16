@@ -1,5 +1,0 @@
-Detail-Analyse-Service kann nicht mit OSM-Instanzen über HTTPS kommunizieren	"Liegt am eingesetzten http-builder. 
-
-
-
-Diesen sollten wir durch `http-builder-ng` ersetzen. "		Bug	OpenSpeedMonitor	20/Jun/17 11:37 AM																																																																					

@@ -1,5 +1,0 @@
-Installer should create a response file	"The installer for the enterprise edition should be able to create a response file.
-
-if this response file is present, the installer will pre-fill all fields with the values entered in the first run. 
-
-The user should be able to choose if he wants to generate a response file. The installer should display in the first step, if he found a response file and uses it."		New Feature	iteraplan PO	02/Apr/14 3:57 PM	19/Jan/16 11:08 AM					installer																																																															

@@ -1,7 +1,0 @@
-Warnings beim Starten der Anwendung beheben	"Da kommen eine Reihe von Warnings aus folgenden Gründen:
-
-
-
-* Commands sollen keine inneren Klassen sein. -> Wo das noch so ist diese bitte rausziehen und nach /src/groovy legen und eindeutig benennen.
-
-* Einige GET-Parameter werden an Felder vom Typ DateTime gebunden und für diese ist keine Validierung möglich (oder so ähnlich) -> Ggf. in Date umwandeln oder sehen, wie man das mit DateTime hinbekommt"		Task	OpenSpeedMonitor	23/Mar/16 9:09 AM	04/Apr/16 4:39 PM																																																																				

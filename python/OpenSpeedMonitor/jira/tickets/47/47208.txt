@@ -1,7 +1,0 @@
-"Switch" button don't work for added columns on Information system page	"IPNINE-229
-Steps to reproduce:
-1.Go to Recent view page-> Click on  Information System tile
-2. Click on ""Add column"" button-> Choose any two columns
-3. Navigate to added column and click on ""Switch"" button
-Actual result: Error is appear http://prntscr.com/5anxio
-Expected result: Column should be switched "		Bug	iteraplan PO	28/Nov/14 2:11 PM	22/Dec/14 10:55 AM					IE									22/Dec/14 10:55 AM;dasm;verified																																																						

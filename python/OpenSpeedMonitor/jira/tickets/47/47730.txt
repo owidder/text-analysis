@@ -1,6 +1,0 @@
-First login with new user shows license issues	"_Reproduce:_
-# Create a user in iTURM (or LDAP) which is not existent in the iteraplan user list. Alternatively delete a user in iteraplan user management.
-# Log in with that user
-
-_Expected:_ License information shown in the iteraplan footer, iteraplan working fine.
-_Actual:_ License information is absent and iteraplan shows errors/wrong behavior on many/most functions."		Bug	iteraplan PO	29/Apr/15 2:32 PM	29/Apr/15 3:01 PM					license																																																															

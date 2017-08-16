@@ -1,7 +1,0 @@
-Wrong title of diagram for ISD+IS	"Steps to reproduce:
-
-1.  Go to NCD page
-Actual: Wrong title (Nested Cluster Diagram - BD with IS)
-Expected: Should be displayed  ""Nested Cluster Diagram - ISD with IS""
-
-"		Bug	iteraplan PO	13/Jan/15 1:29 PM	15/Jan/15 2:23 PM														15/Jan/15 2:23 PM;alvo;It's not a bug, this tail just simulate already saved NCD with user defined name.																																																						

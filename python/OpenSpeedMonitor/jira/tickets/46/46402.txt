@@ -1,9 +1,0 @@
-Maintenance report bars not sorting by size	"Running a maintenance report (all IS, all attributes, show maintenance)
-
- Advanced settings
-show empty bars
-Show number of assigned elements per bar
-show segment labels
-Order of bars: Size
-
-The report comes out not sorted by bar size, but alphabetical (nearly)."		Bug	iteraplan PO	09/Jan/14 5:41 PM	19/Jan/16 11:33 AM																																																																				

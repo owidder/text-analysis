@@ -1,3 +1,0 @@
-Legende zu hoch	Die Größe der Legende skaliert mit dem Inhalt. Wird dieser jedoch auch zwei Spalten geteilt, so bleibt die höhe für eine Spalte erhalten. Siehe Screenshot		Bug	OpenSpeedMonitor	19/Feb/16 9:37 AM	22/Sep/16 2:22 PM														19/Feb/16 9:43 AM;bwo;Der Bug scheint nur in Chrome aufzutreten :/	"13/Sep/16 11:43 AM;msk;Tritt das Problem immernoch auf? Momentan kann ich es nicht reproduzieren:
-
-!noproblem.png|thumbnail!"	22/Sep/16 2:22 PM;msk;Konnte nicht reproduziert werden																																																				

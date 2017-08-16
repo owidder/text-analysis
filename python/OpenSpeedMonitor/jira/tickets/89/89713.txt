@@ -1,5 +1,0 @@
-Create Api-Object	"* api object is a part of plugin container
-
-* will be injected into js environment (and used there as interface object)
-
-* should provide method getModel, that returnselastic model adapter "	89427	Sub-task	iteraplan Thunderduck	07/Jul/16 10:02 AM	12/Jul/16 11:27 AM														12/Jul/16 11:27 AM;mse;Review ok.																																																						

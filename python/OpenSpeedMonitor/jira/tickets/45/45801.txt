@@ -1,9 +1,0 @@
-Contributed localized labels do not fit in building block symbols in start screen - OK in DE and EN	"If all of the contributed localizations the labels are wider than the text area of the building block symbols.
-
-Minor, but affects the brand value ""hochwertig"".
-
-Bulgarian: 5 labels too long
-French: 3
-Hungarian: 1
-Spanish: 3 slightly
-Swedish: 1 "		Bug	iteraplan PO	26/Jun/13 3:47 PM	08/Aug/13 4:43 PM					language									07/Aug/13 2:12 PM;sry;Maybe it's enough to add proper line breaks? Tweaking the font size may be a bit too heavy - or it should be reduced for all boxes and in all languages.	08/Aug/13 4:43 PM;bra;looks good to me although i cannot verify the new shortened translations																																																					

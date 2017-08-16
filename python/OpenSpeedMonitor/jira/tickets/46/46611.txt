@@ -1,5 +1,0 @@
-Sessions are not serializable	"Currently we store instances of class Method in a session. This class is not serializable which causes NotSerializableExceptions when sessions are deserialized.
-
-The methods most likely come from the hibernate bridge which maps features to methods. A more detailed analysis is required on that
-
-"		Improvement	iteraplan PO	28/Apr/14 2:19 PM	19/Jan/16 11:08 AM																																																																				

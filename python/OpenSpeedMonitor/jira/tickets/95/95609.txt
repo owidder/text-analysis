@@ -1,3 +1,0 @@
-Plugin API with global permissions	"Actions done by PAPI should have global model sucess permissions and can modify the whole model not depending on permissions of user who's changes initiated the script.
-
-It should be enough to switch the active UserContext for one with supervisor role directly before the merge of model changes made by the plugin, and then switch back to the original UserContext afterwards."		Improvement	iteraplan Thunderduck	08/Sep/16 4:11 PM	27/Sep/16 3:33 PM														27/Sep/16 11:49 AM;ach;already fixed with commit 25962 for IPTT-94																																																						

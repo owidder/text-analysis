@@ -1,1 +1,0 @@
-UserspecificDashboards Rechte nicht korrekt	Wird "Jede/r ist berechtigt, diese Dashboard-Ansicht zu verwenden". gesetzt, ist das Dashboard dennoch von nicht eingeloggen Usern einsehbar		Bug	OpenSpeedMonitor	29/Apr/16 9:42 AM	03/May/16 9:42 AM																																																																				

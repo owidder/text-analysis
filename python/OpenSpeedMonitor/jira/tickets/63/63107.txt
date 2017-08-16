@@ -1,3 +1,0 @@
-Nach "aktiver " Anmeldung landet man immer auf der Homepage	"Wenn man von irgendeiner Seite aus aktiv auf ""Anmelden"" klickt landet man nach der Anmeldung immer auf der Homepage.
-
-Besser wäre es, man landet wieder auf der Seite, auf der man vorher war."		Bug	OpenSpeedMonitor	11/Nov/15 9:36 AM	18/Jan/17 4:20 PM																																																																				

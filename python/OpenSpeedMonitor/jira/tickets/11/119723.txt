@@ -1,5 +1,0 @@
-Fix nightly build	"Nightly build was broken and fixed temporarily. Revision is 27065.
-
-
-
-Should be fixed finally."		Bug	iteraplan Thunderduck	27/Apr/17 10:42 AM	08/May/17 9:04 AM																																																																				

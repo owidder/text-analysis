@@ -1,1 +1,0 @@
-Basic Auth Zugangsdaten der Prod Instanz ändern	Die Basic Auth Zugangsdaten sollten geändert werden, da wir diese für den Workshop per Mail an die Teilnehmer geschickt haben.		Task	OpenSpeedMonitor	30/Mar/17 5:21 PM	26/Jul/17 7:58 AM														26/Jul/17 7:58 AM;sbr;Mit Umzug in Docker Container																																																						

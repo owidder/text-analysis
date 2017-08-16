@@ -1,3 +1,0 @@
-Hide empty legend when user gets "No permissions" error message.	"When user tries to open URL with element type that he has no permissions to access to, he gets error message, but currently empty legend is also displayed.
-
-The suggestion is not to display this empty legend is this case."		Improvement	iteraplan PO	19/Aug/16 10:43 AM																																																																					

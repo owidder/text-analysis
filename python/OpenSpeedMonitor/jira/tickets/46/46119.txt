@@ -1,3 +1,0 @@
-IE10 warning on main-page should show up in selected language	"Currently the warning only shows up in german language.
-At minimum it should be displayed in english whenever a language different from german was selected."		Improvement	iteraplan PO	11/Oct/13 1:18 PM	11/Oct/13 7:05 PM														11/Oct/13 7:05 PM;sry;Fixed the bug initially introduced in ITERAPLAN-1928 and reverted the changes made here.	"11/Oct/13 7:18 PM;psc;Reviewed. Solution works.
-Ticket will be closed."																																																					

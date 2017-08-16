@@ -1,3 +1,0 @@
-Change Building Block Type	"* Take first 2 num or enum attributes for axes (*single valued*)
-
-* If only 1 num or enum attribute: take this attribute for both axes"		New Feature	iteraplan Speedbird	05/Aug/16 10:07 AM	08/Aug/16 6:23 PM														08/Aug/16 10:08 AM;roia;Nothing to change in scope of this task. The functionality has been implemented in the scope of IPTS-69	08/Aug/16 6:23 PM;dmkh;As error handling (cases wit less then 1 attribute for building block type) is in scope of another ticket (IPTS-68) - this one is completed.																																																					

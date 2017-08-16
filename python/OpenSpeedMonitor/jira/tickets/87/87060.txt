@@ -1,9 +1,0 @@
-Dockerfile überarbeiten	"Das Docker-Image soll bereits die Grails3-Version mit Java8 verwenden. Außerdem soll das Image ohne einen gesonderten tomcat lauffähig sein. Hier soll der Embedded tomcat (s.http://docs.grails.org/latest/guide/deployment.html) verwendet werden.
-
-
-
-Das Dockerfile soll außerdem in das OSM-Repo verschoben werden."		Task	OpenSpeedMonitor	13/Jun/16 5:07 PM	23/Jun/16 3:49 PM														"22/Jun/16 1:36 PM;bka;Das Docker-Image wird so konstruiert, dass es nicht ohne Datenbank laufen kann. Es wird ein simples Docker-Compose-file bereitgestellt, dass einen OSM mit einer MySQL zusammenkonfiguriert. So kann man einen OSM ""einfach"" testen.
-
-
-
-Man könnte das Docker-Image auch so konstruieren, dass es, wenn man keinen MYSQL_HOST angibt, mit einer H2-Datenbank gestartet wird. Wenn man dann allerdings ein neues Konfigurationsfile ausprobieren möchte, muss man den Docker-Container neustarten, wobei die flüchtige Datenbank komplett zurückgesetzt wird. Dies ist daher nicht zu empfehlen, weil es das Testen eines OSM's verkompliziert."																																																						

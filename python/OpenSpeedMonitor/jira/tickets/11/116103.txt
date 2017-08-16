@@ -1,1 +1,0 @@
-Fall behandeln: Noch keine Location oder Connectivities vorhanden	Im JobCreationWizard (Step 3) werden die Locations und Connectivities gelistet. Der Fall, dass noch keine Vorhanden sind, sollte behandelt werden.	116644	Sub-task	OpenSpeedMonitor	24/Mar/17 9:07 AM																																																																					

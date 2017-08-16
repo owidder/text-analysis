@@ -1,9 +1,0 @@
-Dashboard does not correctly redirect	"to reproduce:
-# navigate to the dashboard
-# click onto the pie-section of plan
-=> start page with context menu and breadcrumbs is displayed
-
-I would expect to get to spreadsheet reports, configured for information systems in status plan"		Bug	iteraplan PO	05/Jul/13 3:27 PM	10/Jul/13 12:54 PM					dashboard	ui								"05/Jul/13 8:08 PM;sry;This is related to the ""interchange"" implementation, which still worked ok in v3.0.
-
-Konstantin, can you pls look at it?"	"10/Jul/13 12:54 PM;bra;(/) works now
-(/) interchange from iteraQl Console is still working"	10/Jul/13 1:22 PM;sry;great, thx!																																																				

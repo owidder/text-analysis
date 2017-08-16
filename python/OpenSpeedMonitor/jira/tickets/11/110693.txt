@@ -1,9 +1,0 @@
-Empty elements in Cluster Diagram	"- open Cluster Diagram
-
-- choose header -> attribute -> CRUD
-
-- shown element has no captions 
-
-
-
-reason: element's name is shown. CRUD is attribute of associative building block type, that have no name. Find a appropriate alternative for captions (e.b. see cluster diagram in classic client)"		Bug	iteraplan PO	03/Feb/17 3:36 PM	06/Feb/17 12:02 PM																																																																				

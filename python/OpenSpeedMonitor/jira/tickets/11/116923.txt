@@ -1,1 +1,0 @@
-All rows selected	After clicking Mass Update button, all filtered rows should be selected. (checkboxes from -IPTS-602-)		Improvement	iteraplan Speedbird	29/Mar/17 8:58 AM	29/Mar/17 1:30 PM																																																																				

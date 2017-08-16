@@ -1,7 +1,0 @@
-Create new content filtering test case	"please edit the e2e-test tracability excel sheet located in e2etest subfolder after implementing the tests
-
-
-
-- filter by text
-
-- remove the filter "	62908	Sub-task	iteraplan PO	09/Nov/15 9:15 AM	16/Nov/15 5:02 PM					LSD	Test								16/Nov/15 11:29 AM;lwi;accidently the first commit to this ticket was commited to another ticket ITERAPLAN-4132 (commit number 5)	16/Nov/15 5:41 PM;lwi;commit 1922 and 1923 belong to ITERAPLAN-4138 ... 																																																					

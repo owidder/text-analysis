@@ -1,5 +1,0 @@
-Vergleich/Analyse gefundene URLs/relevante URLs	"Analyse, wie gut der Spider ist. Werden alle relevanten Bereiche erfasst?
-
-Spider state ausgeben (599/2574 URLS vom letzten mal) 
-
-"		Task	secureCodeBox	06/Oct/14 2:01 PM															10/Oct/14 11:00 AM;bpf;Niedrige Prio. Wird im Lauf der Spiderevaulation betrachtet.																																																						

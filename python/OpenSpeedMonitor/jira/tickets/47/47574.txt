@@ -1,1 +1,0 @@
-Implement toolbar with controls (text, date, slider)	description in IPNINE-379		New Feature	iteraplan PO	06/Apr/15 11:59 AM	22/Apr/15 4:07 PM																																																																				

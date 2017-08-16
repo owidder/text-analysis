@@ -1,3 +1,0 @@
-NCD Coloring (numeric) 	"Numeric coloring isnt working in NCD. 
-
-Legend has the right colors, but the nested elements are not colored."		Bug	iteraplan PO	14/Sep/15 1:24 PM	16/Sep/15 10:13 AM					coloring	ncd																																																														

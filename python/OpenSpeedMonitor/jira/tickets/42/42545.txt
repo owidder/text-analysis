@@ -1,9 +1,0 @@
-[4-A] Bereitstellung alternativer CSI basierend auf „Visually Complete“	"Bisher werden Performance-Messungen im OSM in einen prozentualen Kundenzufriedenheitswert umgerechnet. Diese Umrechnung erfolgt auf der Grundlage des Zeitpunkts „doc ready“ aus WebPageTest.
-
-
-
-Neben doc ready wird eine Umrechnung des visually complete-Werts (siehe letzter Abschnitt) in eine Kundenzufriedenheit umgesetzt. Basierend auf diesen Prozent-Werten werden alternative aggregierte Werte für den Kundenzufriedenheit-Index ermittelt.
-
-Die CSI-Werte basierend auf doc ready und auf visually complete werden sich vergleichend gegenüberstellen und auch getrennt voneinander darstellen lassen.
-
-"		Epic	OpenSpeedMonitor	03/Jun/15 5:32 PM	19/Jan/17 10:23 AM																																																																				

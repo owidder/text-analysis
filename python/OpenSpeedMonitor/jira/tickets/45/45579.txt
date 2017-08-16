@@ -1,4 +1,0 @@
-XMI import doesn't respect relations defined in the xmi file	"Example: If you export the example bank data with XMI export, then try to import that file via XMI import into a initial database, the import won't be possible due to constraint violations for InformationSystemInterfaces.
-These violations happen because the necessary relations to InformationFlows of InformationSystemInterfaces aren't set. Other relations aren't set either.
-
-This way a proper import of data from an XMI file is impossible once relationships are involved."		Bug	iteraplan PO	24/Sep/12 1:20 PM	26/Sep/12 12:05 PM					import	relation	xmi							24/Sep/12 1:22 PM;sfe;This problem is already fixed in the current trunk as part of issue ITERAPLAN-599, Changeset [16659|https://iteraplan.iteratec.de/projects/iteraplan/changeset/16659].	26/Sep/12 12:05 PM;vsh;Works fine, relations imported	27/Sep/12 7:52 PM;sry;thx																																																				

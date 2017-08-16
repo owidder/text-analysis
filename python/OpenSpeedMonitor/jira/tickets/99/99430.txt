@@ -1,9 +1,0 @@
-History table columns "added_value" and "removed_value" are too small	"Since changes of relationship assignments are saved as a json array of the names of all added or removed elements, the current column type of varchar(255) is to small to hold some of those changes.
-
-
-
-Model the added and removed values as java set in the history change entity.
-
-Split the resulting tables for added and removed values according to building block type.
-
-Adjust migration scripts accordingly."		Bug	iteraplan Thunderduck	17/Oct/16 5:51 PM	19/Oct/16 9:03 AM																																																																				

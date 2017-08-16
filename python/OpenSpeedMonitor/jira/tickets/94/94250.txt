@@ -1,7 +1,0 @@
-[Integrationtest] CsiAggregationUpdateEventCleanupServiceSpec fixen 	"Der folgende Integrationstest lag noch unter _test/_ (Strunktur vor Grails 3):
-
-de.iteratec.osm.csi.CsiAggregationUpdateEventCleanupServiceSpec
-
-
-
-Bitte einmal sichten, ob der Test fachlich noch korrekt ist / benötigt wird und dann Fixen/uumstellen auf aktuelle Datenstrukturen usw. oder eben entfernen."		Bug	OpenSpeedMonitor	26/Aug/16 4:43 PM	30/Aug/16 10:47 AM																																																																				

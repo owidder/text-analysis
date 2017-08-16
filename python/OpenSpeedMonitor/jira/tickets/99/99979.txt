@@ -1,1 +1,0 @@
-Deactivate multi-value attributes as line type for the Landscape Diagram	Deactivate multi-value attributes as line type for the Landscape Diagram		Bug	iteraplan Speedbird	20/Oct/16 5:12 PM	21/Oct/16 4:16 PM														21/Oct/16 4:16 PM;dmkh;Review is done, no comments: https://iteraweb.iteratec.de/fisheye/cru/IP-101																																																						

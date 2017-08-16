@@ -1,1 +1,0 @@
-ant-installer does not include iteraplanData.xmi	the ant-installer does not include the iteraplanData.xmi containing the initial data for iteraplan. Therefore the ant-installer fails if the initialize database option for iteraplan is selected.		Bug	iteraplan PO	27/Feb/13 1:08 PM	27/Feb/13 2:26 PM					installer																																																															

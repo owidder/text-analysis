@@ -1,2 +1,0 @@
-Long attribute names in title of Bar chart legend are partially outside of table	"Reproduce:
-Execute saved diagram query ""4. Operating expenses for Business Units"" in bar/Pie charts. (see screenshot)"		Bug	iteraplan PO	24/Oct/13 11:19 AM	30/Dec/15 4:54 PM					diagram	visualization																																																														

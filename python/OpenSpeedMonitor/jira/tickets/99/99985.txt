@@ -1,9 +1,0 @@
-JS exception when choosing date attribute as row in classic cluster diagram	"Steps to reproduce:
-
-1. Create new information system in classic client with name only.
-
-2. Open CCD - reset view.
-
-3. Choose any date attribute as row.
-
-See attachments."		Bug	iteraplan PO	20/Oct/16 10:47 PM	21/Oct/16 2:43 PM														21/Oct/16 2:08 PM;ants;I suppose that cells with empty dates be not be shown.	21/Oct/16 2:43 PM;ants;Review done. https://iteraweb.iteratec.de/fisheye/cru/IP-94																																																					

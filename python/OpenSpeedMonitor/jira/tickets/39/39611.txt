@@ -1,5 +1,0 @@
-Refactoring BatchActivities	"Observer-Pattern einbauen:
-
-* Domain BatchActivity wird das zu beobachtende Objekt.
-
-* Der BatchActivityService ist Observer."		Bug	OpenSpeedMonitor	04/May/15 10:36 AM	05/May/15 2:03 PM														05/May/15 2:03 PM;bwo;Funktionert soweit, bei Tests die den BatchActivityService nutzen sollte nur darauf geachtet werden, dass diese den Timer canceln. Passiert das nicht laufen die Tests zwar durch, es wird jedoch eine Exception geworfen, da nach Ende des Tests noch auf die Applikation zugegriffen wird.																																																						

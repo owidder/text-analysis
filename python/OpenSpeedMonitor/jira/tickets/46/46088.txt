@@ -1,7 +1,0 @@
-Implement a automatic word wrapping SVG-Shape	"In the current implementation of word wrapping in Svg is still not working correctly. If the text is wrapped, the last blank in the last line of the text will be removed. Also due to a not working wrapping implementation the text overlaps many shapes.
-
-What we need:
-- a word wrapping that wrapps the text automatically
-- can be disabled and enabled
-- the alignment of the text should be also the same in each line of the text
-- no removed blanks or anything else"		Improvement	iteraplan PO	27/Sep/13 1:33 PM	30/Dec/15 3:34 PM					SVG	Word	Wrapping																																																													

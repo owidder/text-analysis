@@ -1,3 +1,0 @@
-The copying and creating of new ISR releases happens in more than one transaction	The copying of the TCR should be also checked.		Bug	iteraplan PO	13/May/11 8:48 AM	28/Jun/11 11:44 AM					hibernate									19/May/11 5:28 PM;kvo;Copy should be changed to align with all other elements, and not align with the newrelease functionality	"15/Jun/11 9:14 AM;agu;The functionality is fine. Some other notes:
- * Please add some comments to StoreNewReleaseCallback class for other developers to know, why we have to use this callback (because of transactions)
- * The notification functionality code is gone from InformationSystemReleaseFrontendServiceImpl and TechnicalComponentReleaseFrontendServiceImpl"																																																					

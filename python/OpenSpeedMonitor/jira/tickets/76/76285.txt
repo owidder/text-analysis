@@ -1,1 +1,0 @@
-Kritische Nmap Port-Scan Parameter filtern	Die REST-Schnittstelle sollte kritische Nmap-Parameter filtern und nicht an nmap weiterleiten.		Improvement	secureCodeBox	08/Mar/16 5:58 PM		secureBoxNmap				students																																																															

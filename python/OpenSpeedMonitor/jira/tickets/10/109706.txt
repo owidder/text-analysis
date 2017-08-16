@@ -1,5 +1,0 @@
-DetailAnalysis Service auf Produktiv-Instanz funktioniert nicht	"Für die BCG Messung auf der Prod-Instanz sollten eigentlich die Assets im DAS persistiert werden. Allerdings findet man derzeit keine Ergebnisse.
-
-Wenn ich jetzt als Admin auf ""Load Assets"" klicke, kommt nur ein Fehler zurück, dass der Download nicht gestartet werden konnte.
-
-http://openspeedmonitor.wpt.iteratec.de/detailAnalysis/show?_action_show=Anzeigen&selectedTimeFrameInterval=259200&selectedFolder=40&selectedPages=50&selectedPages=49&selectedPages=51"		Bug	OpenSpeedMonitor	26/Jan/17 9:39 AM	26/Jan/17 11:44 AM														26/Jan/17 11:44 AM;sbr;Zu Grunde liegen die Issues IT-1489 und IT-1488.																																																						

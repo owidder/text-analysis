@@ -1,6 +1,0 @@
-Large JPEG and PNG exports cause exception	The export of large diagrams to PNG or JPEG causes an exception. This happens when the area of the image exceeds the maximal Integer value of Java.		Bug	iteraplan PO	11/Apr/12 2:58 PM	12/Apr/12 12:04 PM					export	jpeg	png	reports	svg					12/Apr/12 10:48 AM;gph;Sorry. Just wanted to test, not to assign.	"12/Apr/12 12:02 PM;gph;No exceptions or heap space errors found anymore. 
-
-Two little things in Landscape Diagrams (don't know, if these are ""issues""?):
-
-* Text can be much too small to read for huge datasets.
-* If you choose ""Use an extra legend for long names"" and ""vertical"" orientation, then only half of the width is used for contents."																																																					

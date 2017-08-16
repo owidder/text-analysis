@@ -1,9 +1,0 @@
-Chart implementieren: Waagerechte Balken mit DocComplete und TTFB-Zeiten	"Darstellung ähnlich 
-
-
-
-!Ladezeit Entry Folgeseite.png|thumbnail!
-
-
-
-Zur Info: Diese Anforderung kommt hauptsächlich aus den Audi-Quickchecks."		Story	OpenSpeedMonitor	10/Feb/17 5:14 PM	20/Apr/17 3:12 PM																																																																				

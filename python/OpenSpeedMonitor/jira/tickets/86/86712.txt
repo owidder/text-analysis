@@ -1,8 +1,0 @@
-Iteraplan Enterprise installer 	"good morning!
-
-1. just to make sure, the iteraplan installer only create a WAR file - we need install tomcat by ourself and copy the WAR to tomcat/webapp folder? 
-
-2. for a running iteraplan instance, which file contains the database link configurations? we want switch to another DB instance(with populated iteraplan tables and data) "		Technical question	iteraplan Support	08/Jun/16 9:57 AM	28/Jun/16 7:00 AM														"09/Jun/16 11:15 AM;sfe;Hello!
-
-1. Yes, you need to install Tomcat yourself, and then copy the WAR file to tomcat/webapps.
-2. In the _WEB-INF/classes_ sub directory of the iteraplan application folder, the file _iteraplan-db.properties_ contains the database link configuration. If you use iTURM as authentication provider, then the iTURM database link configuration can be found in the _META-INF_ sub directory in the file _context.xml_."																																																						

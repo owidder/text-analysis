@@ -1,9 +1,0 @@
-Export user list	"Create functionality to export the users table.
-
-
-
-{color:#d04437}UPDATE: {color}place the export button on the right side of ""create user"" button
-
- * as seconadry text button
-
- * with an icon before text: *file download*"		Improvement	iteraplan Speedbird	19/Apr/17 1:25 PM	04/May/17 8:30 AM														04/May/17 8:30 AM;olal;Code review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-558																																																						

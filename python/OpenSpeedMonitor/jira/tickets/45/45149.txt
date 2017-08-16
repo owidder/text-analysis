@@ -1,4 +1,0 @@
-Duplicate primary key during Excel Import	"1) Export the IS ""Clearing Inland # 3.0"" to an Excel file
-2) Import the generated file
-
-SQL Exception"		Bug	iteraplan PO	14/Sep/11 3:50 PM	22/Sep/11 1:38 PM					excel	import								21/Sep/11 1:25 PM;sfe;Seems to work now after Changeset #14341 from ITERAPLAN-204																																																						

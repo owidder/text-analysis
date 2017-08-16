@@ -1,5 +1,0 @@
-Please, fix zoom in the url to have correct values	"Currently, after ""Reset view"" zoom parameter in the url have incorrect values. (For example: 1,12345678).
-
-Please, reduced to two decimal places.
-
-When open url setup zoom level from url."		Bug	iteraplan Speedbird	06/Oct/16 9:12 AM	12/Oct/16 10:53 AM														10/Oct/16 11:39 PM;viol;Fixed in revision #4597	12/Oct/16 10:53 AM;dmkh;Review is done, bug is fixed: https://iteraweb.iteratec.de/fisheye/cru/IP-73																																																					

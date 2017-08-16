@@ -1,9 +1,0 @@
-Check thread section in user docu regarding Tomcat settings	"The section ""Limit Maximum Number of Request-processing Threads"" in 
-
-https://www.iteraplan.de/doc/display/iteraplan54/Tomcat+Configuration
-
-might be outdated. The Tomcat on the demo server e.g. says that it ignores this setting.
-
-
-
-Review this section and adjust (or even delete) it. Maybe we need to distinguish between Tomcat versions. Keep in mind, that we only support Tomcat 7 and 8, no older versions."		Improvement	iteraplan PO	17/Oct/16 10:57 AM	30/Dec/16 2:14 PM														30/Dec/16 2:06 PM;sfe;https://www.iteraplan.de/doc/display/iteraplan55/Tomcat+Configuration has been updated	30/Dec/16 2:14 PM;fka;Perfect!																																																					

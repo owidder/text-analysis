@@ -1,1 +1,0 @@
-Attribute-Information icon misplaced in IE8	see screenshot		Bug	iteraplan PO	03/Jul/13 3:43 PM	04/Jul/13 11:32 AM														04/Jul/13 11:32 AM;sry;Thx for reporting, but not worth any effort.																																																						

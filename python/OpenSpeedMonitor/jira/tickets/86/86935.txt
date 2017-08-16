@@ -1,3 +1,0 @@
-QueueAndJobStatusServiceSpec Tests funktionieren nicht	Die Betamax tests in QueueAndJobStatusServiceSpec funktionieren noch nicht. Aus irgendeinem Grund findet er keine Aufzeichnung dazu und startet dann einen echten Request, welcher auch fehlschlägt.		Bug	OpenSpeedMonitor	10/Jun/16 1:44 PM															29/Jun/16 11:30 AM;nku;Bug bei den Entwicklern von Betamax aufmachen.	"06/Jul/16 1:56 PM;nku;Fassen wir wieder an, wenn es von Betamax etwas neues gibt.
-
-Solange bleiben diese beiden Tests @Ignored."																																																					

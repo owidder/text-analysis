@@ -1,1 +1,0 @@
-Columns in MPD		110804	Sub-task	iteraplan PO	08/Feb/17 12:08 PM	13/Feb/17 11:20 AM														08/Feb/17 12:27 PM;dmkh;For developer: use already included {{alertService}} in {{mpdConfiguration.js}} and localized message {{NON_EXISTING_ATTRIBUTE_OR_LITERAL_MESSAGE}}.																																																						

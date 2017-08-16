@@ -1,3 +1,0 @@
-Import/Export test: EE/Win7/IE9/oracle	Testing according to Import/Export test sheet.	46148	Sub-task	iteraplan PO	25/Oct/13 9:53 AM	25/Oct/13 4:46 PM					export	import	test						iteraplan EE / Win7 / IE9 / Oracle / default language: english	25/Oct/13 3:38 PM;sfe;Errors found in import test, TC4 step 15 and TC5 step 17 -> ITERAPLAN-2104	"25/Oct/13 6:07 PM;psc;All test steps performed and mentioned identified issues documented in dedicated tickets. 
-
-This test-ticket can be closed."																																																					

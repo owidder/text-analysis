@@ -1,7 +1,0 @@
-[REST]  Changes in the parent relationship are not imported	"If you try to import an IE vie PUT and set an parent relationship but leaves the children element away, no changes were imported.
-You can reproduce this with following json:
-{noformat}{""result"": [ {""description"": [""Test Dell Power Edge T 110 II Serv-er""],""name"":[""server200""],""Accountability"":[""walter 1.0""],""parent"": [{""id"":343}]} ]}{noformat}
-If you use the parent relationship in the JSON, the children element is mandatory.
-With the following JSON the changes were successful imported:
-{noformat} {""result"": [ {""description"": [""Test Dell Power Edge T 110 II Serv-er""],""name"":[""server200""],""Accountability"":[""walter 1.0""],""children"": [],""parent"": [{""id"":343}]} ]}{noformat}
-"		Bug	iteraplan PO	22/Dec/14 3:16 PM	12/Jan/15 11:09 AM																																																																				

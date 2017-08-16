@@ -1,5 +1,0 @@
-Error in migration scripts for IT Service	"In the ""3.4 to 5"" migration scripts, the statements to migrate an existing database adding the new IT Service entity are not completely correct.
-
-Two issues:
-* Adding the functional permission for IT Service: The according SQL statements calculate the ID of the new permission from the previously existing permission entries. Correct would be to use the table hibernate_sequences to determine the next ID value, and to then update the sequence accordingly.
-* The migration scripts don't create the virtual root element in the table ITS, which is necessary for iteraplan to work correctly."		Bug	iteraplan PO	08/Apr/15 2:37 PM	16/Apr/15 8:15 AM					IT-Service	migration																																																														

@@ -1,1 +1,0 @@
-Check that Edit is also possible for public Saved Queries	The shared entry should not be changed.		New Feature	iteraplan Quickfox	20/Sep/16 2:31 PM	04/Oct/16 12:34 PM																																																																				

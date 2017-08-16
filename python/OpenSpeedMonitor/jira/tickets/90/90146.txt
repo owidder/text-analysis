@@ -1,1 +1,0 @@
-download files		80573	Sub-task	iteraplan Quickfox	11/Jul/16 2:33 PM	19/Jul/16 12:34 PM														19/Jul/16 11:06 AM;tsu;See also the commits of IPTQ-3	19/Jul/16 11:12 AM;tsu;IPTQ-3: especially look at commit 25580 for the server side and commit 3822 for client side																																																					

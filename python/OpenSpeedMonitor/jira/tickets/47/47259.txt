@@ -1,8 +1,0 @@
-Wrong name of highlighting action for outer element	"Steps to reproduce:
-
-1. Go to NCD page
-2. Open Context menu for outer elements
-
-Actual: Highlighting action has name ""Highlight this Item""
-Expected: Highlighting action has name ""Highlight this Domain""
-"		Bug	iteraplan PO	24/Dec/14 2:48 PM	21/Jan/15 4:33 PM														21/Jan/15 4:33 PM;alvo;it's not a bug																																																						

@@ -1,7 +1,0 @@
-Möglichkeiten der Job-Variablen-Belegung erweitern	"Konkrete Anforderung: 
-
-Wir würden gerne eine Skript-Variable in einem Job statt mit einem einzelnen Wert mit einer Liste von Werten belegen, von denen zum Ausführungszeitpunkt des Jobs per Zufall einer ausgewählt wird.
-
-
-
-Idealerweise wird der Code in de.iteratec.osm.measurement.script.PlaceholdersUtility#getParsedNavigationScript so angepasst, dass man statt einem Wert auch eine Groovy-Closure als Variable setzen kann. Dann wären wir in Zukunft frei mit der Belegung der Variablen."		Task	OpenSpeedMonitor	04/Jun/15 5:05 PM						idea																																																															

@@ -1,5 +1,0 @@
-Bamboo Deployment ist grün, wenn der OSM nicht startet	"Wenn alles funktioniert nur der OSM nicht vernünftig hoch kommt bekommt das Bamboo-Deployment das momentan nicht mit und ist grün.
-
-
-
-Als Kriterium zum Erkennen dieses Umstands kann die response der abschließenden REST API Calls verwendet werden."		Bug	OpenSpeedMonitor	30/Sep/16 11:33 AM	01/Mar/17 8:55 AM																																																																				

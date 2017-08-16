@@ -1,7 +1,0 @@
-Legende im D3 Liniendiagramm klickbar	"Bei einem ersten Klick auf einen Legendeneintrag wird die dazugehörige Linie hervorgehoben.
-
-Ein zweiter Klick auf die selektierte Linie hebt die Hervorhebung wieder auf."		Task	OpenSpeedMonitor	06/Jan/16 12:24 PM	07/Jan/16 1:19 PM														06/Jan/16 5:40 PM;bwo;Das Select muss noch entfernt werden und die Auswahl muss mit dem Löschbutton verknüpft werden.	"07/Jan/16 1:19 PM;bwo;Solange keine Kurve ausgewählt ist, wird der Text der Legende schwarz angezeigt.
-
-Beim Hovern über einen Eintrag wird dieser dann fett dargestellt. Wird ein Eintrag angeklickt, werden die Anderen grau. 
-
-Beim Hovern mit einem ausgewählten Eintrag, wird der Eintrag über dem sich die Maus befindet schwarz, jedoch nicht fett dargestellt. Alle anderen Einträge bleiben grau."																																																					

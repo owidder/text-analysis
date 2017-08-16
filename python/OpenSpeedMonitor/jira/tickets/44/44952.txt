@@ -1,5 +1,0 @@
-Subscribers on building block type do not appear in subscription list of building block	"When subscribing to a building block type (i.e. ""global"" subscribers), e.g. Informationsystems, the subscription is not shown when displaying a single IS.
-
-Would propose the following change:
-
-For the building blocks, show the number of subscribers as ""Subscribers (X / Y)"" where X is the number of subscribers to this particular building block and Y is the number of ""global"" subscribers to the building block type. When displaying the list of subscribers, there should be a separate line for the ""global"" subscribers."		Improvement	iteraplan PO	19/May/11 7:50 AM	04/Sep/11 8:46 PM					subscriptions									04/Sep/11 8:46 PM;kvo;These are two different subscription types, so this is invalid.																																																						

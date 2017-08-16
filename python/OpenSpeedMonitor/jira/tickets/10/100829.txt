@@ -1,9 +1,0 @@
-Treemap: coloring	"Implement coloring of boxes by numeric and enumeration-type attributes.
-
-* implement tool area entries for coloring
-
-* applied coloring is displayed in the legend
-
-* applied coloring is saved in the URL
-
-* coloring with color picker"		New Feature	iteraplan Speedbird	27/Oct/16 10:49 AM	02/Nov/16 1:30 PM					TreeMap																																																															

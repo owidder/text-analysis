@@ -1,1 +1,0 @@
-Docker-Compose auf Version 2.0 umstellen			Improvement	secureCodeBox	20/Mar/16 2:21 PM	25/Apr/16 9:17 AM																																																																				

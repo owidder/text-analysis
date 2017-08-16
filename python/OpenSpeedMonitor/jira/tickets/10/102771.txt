@@ -1,9 +1,0 @@
-Chart customizing	"Es soll eine Möglichkeit geben, dass Chart nach eigenen Wünschen anzupassen.
-
-Bspw.:
-
-* Farbe
-
-* Achsenbeschriftung
-
-* ..."		Task	OpenSpeedMonitor	16/Nov/16 5:23 PM	05/Dec/16 12:36 PM																																																																				

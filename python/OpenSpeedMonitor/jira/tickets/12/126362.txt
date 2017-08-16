@@ -1,9 +1,0 @@
-OSM-Instanz Apetito einrichten	"Die Messungen von Apetito sollen in einer eigenen Instanz weiterlaufen. Hierfür muss eine neue, dockerisierte Instanz aufgebaut werden und anschließend ein aktueller Dump der prod-Instanz importiert werden.
-
-
-
-In dieser Instanz wird dann alles außer Apetito gelöscht. 
-
-
-
-In der prod wird anschließend alles von Apetito gelöscht."		Task	OpenSpeedMonitor	05/Jul/17 12:05 PM																																																																					

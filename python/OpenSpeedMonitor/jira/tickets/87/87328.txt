@@ -1,5 +1,0 @@
-Replace patched ng-slider with the bower_component	"There are minor changes in the ng-slider.min.js.
-
-Please replace ng-slider with awesome-angular-slider. It is the same library but it has been renamed.
-
-The library to be replaced can be found here: app/js/libs/patched/ng-slider"		Improvement	iteraplan PO	15/Jun/16 2:01 PM																																																																					

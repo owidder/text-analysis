@@ -1,3 +1,0 @@
-DB-Indices prüfen	"Wir sollten prüfen, ob die Indices, die wir haben noch die besten sind für die schwergewichtigen Abfragen die wir haben.
-
-Um diese Abfragen zu ermitteln sollten wir eine größere Instanz mit mysqldumpslow überwachen. Für alle lang dauernden Statements sollten wir existierende Indices prüfen und ggf. optimieren."		Task	OpenSpeedMonitor	11/Nov/15 9:02 AM	30/Nov/15 12:47 PM																																																																				

@@ -1,6 +1,0 @@
-Description in list view needs multiline text area for editing	"To-be: description in edit mode in list view is a 3-line text area
-
-As-is: 1-line text field.
-
-The text area must overlap and hide the next row(s). It must not push the rest of the list down."	47009	Sub-task	iteraplan PO	29/Sep/14 1:11 PM	09/Jun/15 5:06 PM														"29/Sep/14 1:45 PM;wfr;WFr will look into the test data, maybe fix it if needed.
-No text filtering needed in the JS client code."																																																						

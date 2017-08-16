@@ -1,5 +1,0 @@
-Elastic model cannot be loaded due to timeout	"Reported by customer: Elastic load was cancelled after several minutes with a timeout exception.
-
-
-
-Solution for now: Increase timeout value from 10 to 30 minutes."		Bug	iteraplan Thunderduck	13/Mar/17 2:08 PM	15/Mar/17 9:54 AM																																																																				

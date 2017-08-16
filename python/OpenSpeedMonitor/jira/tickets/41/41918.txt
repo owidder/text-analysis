@@ -1,1 +1,0 @@
-Global sichtbare Events ohne JobGruppe werden nicht angezeigt 			Bug	OpenSpeedMonitor	27/May/15 2:28 PM	27/May/15 4:35 PM																																																																				

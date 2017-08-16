@@ -1,8 +1,0 @@
-Attribute not available in the drop-down list after removing it from an ATG	"Repro:
-
-1. Edit an ATG
-2. Delete an attribute
-
-Result:
-
-The removed element is not visible in the drop-down list of all available elements"		Bug	iteraplan PO	14/Oct/11 5:11 PM	19/Oct/11 10:07 AM														19/Oct/11 10:07 AM;kvo;rare usecase and filtering of dropdowns should change anyway.	19/Oct/11 4:26 PM;vsh;Not rare at all, it affects for example the children association in all building block type. Once you remove a selection for a child element, you cannot re-add it, because the removed element doesn't appear in the drop down list.																																																					

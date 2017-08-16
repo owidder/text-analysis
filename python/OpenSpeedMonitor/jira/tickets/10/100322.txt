@@ -1,7 +1,0 @@
-Fehlgeschlagene JobResults regelmäßig aufräumen	"Es verbleiben zu viele JobResults im Status Pending/Running. Wir brauchen einen Mechanismus, der diese als Failed wegräumt.
-
-Bzw. wir sollten uns im JobProcessingService ansehen, warum der bestehende Mechanismus nicht greift.
-
-
-
-Möglicherweise entstehen die verbeibenden Results auch beim Wiederherstellen der JobResults mit dem Hochfahren der Anwendung."		Task	OpenSpeedMonitor	24/Oct/16 10:26 AM	22/Dec/16 11:12 AM																																																																				

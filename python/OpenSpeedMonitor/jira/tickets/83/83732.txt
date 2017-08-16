@@ -1,5 +1,0 @@
-Add boolean column			New Feature	iteraplan PO	10/May/16 11:02 AM	06/Jun/16 3:24 PM														"25/May/16 12:55 PM;mwe;Add button is already implemented.
-
-Check that all boolean values can be added as columns.
-
-The complete rowData will be built when loading the list page. You have to make sure that all possible boolean values are set into the rowData in RowDataBuilder."	06/Jun/16 1:52 PM;mse;Can easily be reviewed together with ITERAPLAN-4581.	06/Jun/16 3:24 PM;abo;Review OK.																																																				

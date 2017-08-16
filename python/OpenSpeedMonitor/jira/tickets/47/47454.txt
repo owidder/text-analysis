@@ -1,9 +1,0 @@
-too big size of inner boxes (Interface+TC)	"Steps to reproduce:
-
-1. Use Interface as outer type and Technical Component as inner type
-
-Actual result: too big size of inner boxes"		Bug	iteraplan PO	02/Mar/15 9:53 AM	19/Jan/16 1:56 PM														"10/Apr/15 9:04 AM;sfe;This is most likely an issue with very long names for outer elements in general.
-Please check."	"06/May/15 12:50 PM;sfe;WFr:
-
-Outer boxes could have a 2- or 3-line title, but this changes the overall layout grid.
-More design needed."																																																					

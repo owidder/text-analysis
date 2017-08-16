@@ -1,2 +1,0 @@
-Select-Dropdowns always add first element after clicking on them	"Select-Dropdowns always add first element after clicking on them.
-In relations as well as enumeration attributes"		Bug	iteraplan PO	12/Jul/12 10:19 PM	16/Jul/12 11:32 AM																																																																				

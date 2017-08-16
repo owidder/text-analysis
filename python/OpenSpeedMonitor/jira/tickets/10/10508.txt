@@ -1,3 +1,0 @@
-Sprachumschaltung prüfen oder Sperren	"Beim Umschalten der Sprache wird eine Anfrage abgeschickt, die sofort Fehlermeldungen zeigt. Der controller erkennt nicht mehr, dass es sich um die erste Anfrage handelt, die natürlich noch keine Eingaben hat.
-
-Entweder Sprachumschaltung sperren oder dafür sorgen, dass der controller auch nach Umschaltung bemerkt, ob  es eine erste Anfrage der leeren Seite ist (keine Fehler zeigen) oder nicht."	10010	Sub-task	OpenSpeedMonitor	03/Sep/13 9:33 AM	05/Sep/13 2:55 PM														05/Sep/13 2:52 PM;mzeimer;Der Parameter lang wird bei der Entscheidung ob erster oder folgender Request nun ignoriert,																																																						

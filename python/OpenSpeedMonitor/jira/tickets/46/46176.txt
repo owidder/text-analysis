@@ -1,5 +1,0 @@
-Cleanup orphaned named queries in Hibernate mapping files	"Some of the predefined Hibernate(Template)/HQL named queries in the *.hbm.xml mapping files may not be referenced any longer in the code.
-
-Find these orphaned queries and check (with caution), if query names are constructed in another way, so that a fulltext search can't find them. Maybe mark those queries as ""DEPRECATED"" in a first step, if it is not sure. In a second step, these queries can be removed.
-"		Task	iteraplan PO	21/Oct/13 4:35 PM	07/Nov/14 1:40 PM														06/Nov/14 6:14 PM;tam;Queries-Overview	"07/Nov/14 1:40 PM;fam;Checked about 15 cases of ""not used and deleted"" and ""in use and not deleted"".
-All okey, so ticket closed."																																																					

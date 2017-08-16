@@ -1,8 +1,0 @@
-Create a custom type for Highchart-Map	"Derzeit ist die Highchart-Map eine Map von String auf List<HighchartPoint>.
-
-Ursprünglich war es eine Map auf eine Map von long auf double.
-
-Besser wäre:
-Ein Datentyp Highchart-Map der nur relevant Zugriffsoperationen bietet und nur intern (verborgen) eine Map enthält.
-
-Bitte in Java realisieren!"		Improvement	OpenSpeedMonitor	12/Sep/13 4:41 PM	18/Jan/17 2:44 PM																																																																				

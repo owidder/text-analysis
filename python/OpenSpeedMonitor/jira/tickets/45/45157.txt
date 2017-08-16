@@ -1,1 +1,0 @@
-XMI tabular reports ignore attributes	Attributes and attribute values assignments are omitted in XMI tabular reports.		Bug	iteraplan PO	20/Sep/11 3:54 PM	21/Sep/11 2:20 PM					reports	tabular	xmi							21/Sep/11 2:20 PM;kvo;Works for me. They are inline there, not as extra entries.																																																						

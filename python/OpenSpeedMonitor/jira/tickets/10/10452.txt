@@ -1,3 +1,0 @@
-Unit-Tests für Hourly, Weekly-Page und Weekly-Shop verschärfen bzw. erstellen	"Ziel ist eine verbesserte Testüberdeckung der Berechnungsverfahren durch Unit-Tests. Die Integrationstests gegen die Kundendaten sollten dann nur noch als Pre-Release-Test genutzt werden.
-
-Berechnungen müssen hierzu ggf. isoliert werden (siehe auch IT-22)."		Improvement	OpenSpeedMonitor	14/Aug/13 10:53 AM	23/May/16 5:04 PM														23/May/16 5:04 PM;nku;Wir haben inzwischen unit-Tests. 																																																						

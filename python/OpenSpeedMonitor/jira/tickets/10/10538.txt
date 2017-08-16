@@ -1,2 +1,0 @@
-Result-Dashboard: Deaktivierung selects	"Uwe:
-Checkbox für ""Alle Messschritte"" deaktiviert Auswahl des Messschritts nicht dito bei Browser und Location"		Bug	OpenSpeedMonitor	23/Sep/13 9:40 AM	23/Sep/13 2:14 PM																																																																				

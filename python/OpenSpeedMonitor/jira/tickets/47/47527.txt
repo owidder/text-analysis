@@ -1,4 +1,0 @@
-Add date attributes to axis (sub-)menu	"To the existing menu that selects the type or property of the axis elements (implemented in IPNINE-376),
-add all date attributes, too.
-
-Put both kinds of attributes (enum and date) in the _same_ list, sorted alfabetically, not in two separate lists."		New Feature	iteraplan PO	26/Mar/15 1:43 PM	05/May/15 8:16 AM														05/May/15 8:16 AM;msr;Duplicate of IPNINE-305																																																						

@@ -1,4 +1,0 @@
-Fluent in-place editing	"The user must be able to edit model elements in a fluent way.
-He can view elements in lists or as single elements, and edit them without saving. The system must accept the edit without blocking, and gives feedback asynchronously, for example a message about a (domain logic) constraint violation. The user can undo an edit, and possibly redo it.
-
-Which features of the Fluent Edit are implemented in the prototype, which are demonstrated as a mock, and which are left out completely, see the tickets."		Epic	iteraplan PO	09/Jul/14 2:51 PM	30/Dec/15 12:06 PM																																																																				

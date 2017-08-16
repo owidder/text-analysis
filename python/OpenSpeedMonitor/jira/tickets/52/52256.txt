@@ -1,5 +1,0 @@
-Run protractor tests from gruntfile	"Run protractor tests from gruntfile locally (for developer build on local machine) and on the Jenkins/Hudson Server.
-
-
-
-Comment [~wfr] : At the moment deferred."		Improvement	iteraplan PO	30/Jul/15 4:45 PM						webtests																																																															

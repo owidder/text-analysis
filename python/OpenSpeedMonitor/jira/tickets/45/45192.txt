@@ -1,1 +1,0 @@
-Dashboard not shown in the menu navigation if an user has functional permissions only for dashboard	If an user has functional permissions only for the dashboard and no other reports (e.g spreadsheet reports) then the dashboard it's not shown in the menu.		Bug	iteraplan PO	14/Oct/11 3:05 PM	28/Oct/11 10:17 AM																																																																				

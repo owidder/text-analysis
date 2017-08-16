@@ -1,1 +1,0 @@
-Aus breits vorhanden JobGruppen auswählen können	Damit man zwei Mesjobs an die gleiche JobGruppe hängen kann, sollte es im Wizard die Möglichkeit geben, aus bereits vorhanden JobGruppen auszuwählen	111352	Sub-task	OpenSpeedMonitor	23/Mar/17 3:22 PM	23/Mar/17 6:20 PM																																																																				

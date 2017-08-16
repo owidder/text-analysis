@@ -1,3 +1,0 @@
-GoJs Textblock with Partial-Diagram warning	Add a warning "Not all elements can be displayed" if some elements got cut away.	50814	Sub-task	iteraplan PO	17/Sep/15 3:04 PM	21/Sep/15 2:43 PM														"22/Sep/15 3:03 PM;fro;checked in 2 commits accidentally to this ticket. 
-
-commit #1513 and #1514 belong to ticket ITERAPLAN-3861"																																																						

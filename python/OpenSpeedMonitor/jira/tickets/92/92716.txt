@@ -1,1 +1,0 @@
-Execute Test Sheet Building Block Lists	../Building Block Lists/buildingblocklist-test-specification.xlsx 		Bug	iteraplan PO	08/Aug/16 10:17 AM	09/Aug/16 6:20 PM														09/Aug/16 4:30 PM;mwe;Fixed some typos in the test sheet.	09/Aug/16 4:47 PM;mwe;Everything ok!																																																					

@@ -1,3 +1,0 @@
-Fehlerhafte Kontakt-Email	"Auf der Startseite für die WPT-Umgebung von OTTO ist eine fehlerhafte Mailkontaktadresse angegeben: wpt-support@iteratec.de
-
-Bei Nutzung dieser Mailadresse erhält man die abgesandte Mail als unzustellbar zurück."		Bug	OpenSpeedMonitor	30/Oct/13 10:11 PM	31/Oct/13 11:27 AM													http://wpt.otto.iteratec.de/	31/Oct/13 11:26 AM;mzeimer;Der entsprechende Mail-Verteiler ist bei den Admins angefordert.	31/Oct/13 11:27 AM;mzeimer;Die Adresse wird beibehalten, falls sie bei Otto bekannt ist. Die Seite wird also nicht geändert.																																																					

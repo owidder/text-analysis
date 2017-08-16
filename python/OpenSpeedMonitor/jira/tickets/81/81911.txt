@@ -1,9 +1,0 @@
-Requesting Excel Sheet via Rest with parameters	"For several test cases data should be requested as excel (which is specified in a header). When I request it via the url parameter like ?format=xlsx, then I can open the Excel file with my browser by entering the url.
-
-
-
-If I want to add some headers, I need a tool to modify the sent headers. With all tools I used for testing (Firefox Plugin HttpRequester and Chrome Extensions Advanced REST Client and Postman), I retrieve some kind of binary data. I tried various ways to open it in Excel so that I can check if the contents are actually correct but I found (with limited effort) no possibility to open it. Maybe there is some kind of encoding added by the  REST Clients?
-
-
-
-Find a way how the Excel can be retrieved with using headers. Additionally, find out why the Content retrieved by the mentioned REST Clients cannot be opened with Excel. If it is actually the Clients' fault because they add some kind of encoding we may need to deal with that too....?"		Bug	iteraplan PO	25/Apr/16 2:49 PM															21/Sep/16 9:51 AM;fka;More detailed analysis first, time box 2h																																																						

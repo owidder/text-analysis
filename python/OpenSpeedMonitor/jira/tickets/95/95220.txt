@@ -1,6 +1,0 @@
-Get single BB History REST	"for Interactive Client:
-Make it possible to get history entries via REST.
-
-* GET history for single building block by it's id. (e.g. _/api/history/InformationSystem/402_)
-
-return history entries as JSON-Array for using by user and by interactive client"		Improvement	iteraplan Thunderduck	05/Sep/16 10:30 AM	13/Oct/16 1:38 PM														12/Oct/16 12:20 PM;mse;Commits 26252 and 26262 do not belong here, sorry!	13/Oct/16 1:38 PM;mse;Review for all sub-tasks ok. See also there for commits during review.																																																					

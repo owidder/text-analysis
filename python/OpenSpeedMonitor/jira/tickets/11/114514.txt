@@ -1,1 +1,0 @@
-Fein-Tuning des Distribution Charts	Das Distribution Chart ist momentan in einem funktionierenden Zustand, hängt aber noch an ein paar Kleinigkeiten (funktional wie auch UI/UX), die in den hier angehängten Sub-Tasks beschrieben werden.		Improvement	OpenSpeedMonitor	10/Mar/17 10:05 AM																																																																					

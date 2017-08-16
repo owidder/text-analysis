@@ -1,3 +1,0 @@
-Check IteraQl	check whether the iteraql is working correctly. Try different queries from rather simple ones to quite complex ones.		Task	iteraplan PO	21/Jan/14 4:24 PM	27/Apr/14 3:43 PM					iteraQl									"22/Jan/14 1:43 PM;fka;Some kind of test plan/concept needed before starting with this task.
-
-@[~bra]: Please list potential queries /query types to test"	27/Apr/14 3:43 PM;fka;Done with the release tests																																																					

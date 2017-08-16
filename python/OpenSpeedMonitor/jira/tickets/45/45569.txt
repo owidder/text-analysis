@@ -1,7 +1,0 @@
-When using the French UI, some Javascript code is broken	"Some of the French texts contain unescaped apostrophes, which tend to break Javascript. They are considered string terminators in that context and that leads to invalid Javascript syntax.
-
-In particular, relations cannot be deleted (this is only one aspect, but an easily tested one).
-
-All apostrophes in properties should rather be unicoded-encoded as \u2019 in our properties files, regardless of the language. In typographic terms, this is actually the most appropriate character, not to be confused with the single quote character that is often used (see http://de.wikipedia.org/wiki/Apostroph#Digitale_Typografie)."		Bug	iteraplan PO	07/Aug/12 11:50 AM	14/Aug/12 8:54 AM					language	localization	unicode							"13/Aug/12 7:35 PM;sry;Replaced single quote characters ' with typographically correct apostrophes and quotation marks for each language. Each language has its own conventions, so a brief explaining comment header has been added to each locale's file.
-
-This solution avoids trouble with JavaScript syntax (in particular string delimiters) and is typographically nicer."	13/Aug/12 7:37 PM;sry;For the 3.0 branch you can test the effect with French UI by trying to remove a relation from any building block. Because of broken JavaScript syntax, that did not work in 3.0.3 - clicks on X for removal were simply ignored. Its works now.																																																					

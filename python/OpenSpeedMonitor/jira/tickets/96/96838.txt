@@ -1,9 +1,0 @@
-Make ChangeBuilder multi-phase enabled	"This should be possible:
-
-# ChangeBuilder accumulates changes from events sent by ModelChangeEventListener
-
-# ChangeBuilder creates a ModelChange object
-
-# ChangeBuilder records further changes and stores them in a new ModelChange object
-
-# ChangeBuilder returns this second ModelChange object that contains all changes made by the plugins."	96255	Sub-task	iteraplan Thunderduck	21/Sep/16 1:46 PM	28/Sep/16 9:12 AM														27/Sep/16 11:16 AM;mse;Commit 26122 from ticket IPTT-155 belongs to this ticket.																																																						

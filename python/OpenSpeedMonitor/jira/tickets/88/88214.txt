@@ -1,5 +1,0 @@
-List View. Show number of elements	"show the number of currently shown elements
-
-like in classic client
-
-Final position to be decided"		New Feature	iteraplan PO	23/Jun/16 10:31 AM	28/Jun/16 10:03 AM														28/Jun/16 10:03 AM;mse;Review ok.																																																						

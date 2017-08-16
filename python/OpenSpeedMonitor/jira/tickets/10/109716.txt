@@ -1,5 +1,0 @@
-DetailAnalysis API Key besser verwalten	"Entweder durch einen Controller verwaltbar machen, oder nur den API Key aus der Konfiguration verwenden, und nicht aus der Datenbank.
-
-
-
-Im Moment muss man den API Key AFAIK manuell in der Datenbank ändern."		Task	OpenSpeedMonitor	26/Jan/17 10:46 AM																																																																					

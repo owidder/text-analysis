@@ -1,5 +1,0 @@
-DataService implementieren	"- DataService und Schnittstelle implementieren (+Unit Tests)
-
-
-
-- in eigenes Java-Projekt auslagern, als Bibliothek in spiddar reinladen"		Task	EAMV15	23/Nov/15 2:58 PM	30/Nov/15 4:07 PM														30/Nov/15 4:07 PM;pkh;Data Service ist wie besprochen implementiert und wird vom Front-End benutzt.																																																						

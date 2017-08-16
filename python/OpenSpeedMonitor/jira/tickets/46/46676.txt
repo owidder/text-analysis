@@ -1,5 +1,0 @@
-Timezone in Last Modification is confusing	"Since iteraplan 3.3 the attribute ""Last Modification"" contains the timezone in the XLS(X) export. Besides, a user-defined format is applied for the attribute to display it correctly.
-
-This implementation can be confusing, because the timezone is not display in the GUI and its manifestation seems not to depend on the timezone of the iteraplan server (it is always UTC).
-
-To prevent unnecessary discussions the timezone information should be removed."		Improvement	iteraplan PO	06/Jun/14 10:35 AM																																																																					

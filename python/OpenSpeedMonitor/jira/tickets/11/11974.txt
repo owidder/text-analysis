@@ -1,2 +1,0 @@
-Link zu Messergebnissen des letzten Jobs zeitlich anpassen	"Bisher werden nach IT-293 standardmäßig die Ergebnisse der letzten zwölf Stunden angezeigt.
-Liegt die letzte Ausführung eines Jobs länger zurück, sollte automatisch auf einen passenden längeren Zeitraum geschaltet werden."		Task	OpenSpeedMonitor	26/Feb/14 12:39 PM	27/Feb/14 2:46 PM																																																																				

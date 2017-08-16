@@ -1,1 +1,0 @@
-GPS-Infos einblendbar	über Menü soll die GPS-Info plus ggf. weitere Infos zum Debuggen ein/ausgeblendet werden können		Task	EAMV15	07/Dec/15 3:29 PM	15/Dec/15 10:23 AM														15/Dec/15 10:23 AM;fbe;Per Schalter im Konfigurationsdialog können die GPS-Position in das Kamerabild eingeblendet werden.																																																						
