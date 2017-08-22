@@ -1,4 +1,0 @@
-Test import/export partial	"Test sheets in {{doc/test/importexport-partial}}.
-
-* Install iteraplan using one of the not yet or lesser tested configurations in the installer test sheet
-* Perform the testcases from the test sheets and attach the results to this ticket"	47060	Sub-task	iteraplan PO	17/Oct/14 2:15 PM	22/Oct/14 4:54 PM					export	import	partial	release	test					22/Oct/14 9:30 AM;msr;Test Cases Sheets and results	22/Oct/14 9:32 AM;msr;All ok.																																																					

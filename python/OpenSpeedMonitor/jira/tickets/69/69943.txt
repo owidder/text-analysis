@@ -1,7 +1,0 @@
-HourOfDay-Refactoring	"Mit der Einführung der Domain-Klasse ""Day"" sind die ""Hour_of_day"" überflüssig geworden.
-
-Stattdessen sollte ein ""Day"" 24 Felder haben, die die einzelnen Stunden repräsentieren.
-
-
-
-Die Klasse ""hour_of_day"" wird als deprecated makiert und kann in einem späteren release entfernt werden."		Task	OpenSpeedMonitor	18/Jan/16 2:56 PM	20/Jan/16 2:53 PM																																																																				

@@ -1,9 +1,0 @@
-Persistenz/Datenmodell CsiConfiguration	"de.iteratec.osm.csi.CsiConfiguration
-
-* String: label
-
-* List<de.iteratec.osm.csi.HourOfDay>: hoursOfDay
-
-* List<de.iteratec.osm.csi.BrowserConnectivityWeight>: browserConnectivityWeights
-
-* List<PageWeight> pageWeights"		New Feature	OpenSpeedMonitor	24/Sep/15 1:44 PM	10/Dec/15 1:18 PM																																																																				

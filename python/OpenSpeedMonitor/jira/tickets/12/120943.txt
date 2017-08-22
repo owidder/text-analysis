@@ -1,3 +1,0 @@
-Zeitvergleich sollte andere LocalStorage Werte schreiben	Bei dem neuen Auswahl zum Zeitvergleich scheint der Datepicker die gleiche LocalStorage Werte zu schreiben wie der Datepicker des normalen Zeitraums. Diese sollten getrennt werden.		Bug	OpenSpeedMonitor	09/May/17 11:30 AM	14/Jun/17 11:08 AM														14/Jun/17 10:34 AM;nku;Wir wollen nur den Haupt-Zeitraum in den storage schreiben. Der Vergleichszeitraum soll diesen nicht mehr überschreiben.	"14/Jun/17 11:08 AM;sbr;Code für Zeitvergleich schien nie LocalStorage-Werte geschrieben zu haben.
-
-Konte mit einfachen Tests kein fehlerhaftes reproduzieren."																																																					

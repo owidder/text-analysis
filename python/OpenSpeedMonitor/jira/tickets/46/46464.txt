@@ -1,3 +1,0 @@
-Last access time and user for saved queries and custom dashboards	"As iteraplan user I'd like to know the last time a saved query or custom dashboard was accessed (executed, displayed, edited..) and possibly the user who was accessing the query/dashboard.
-
-This will help with the decision whether a saved query or dashboard instance is still in use or can be discarded."		New Feature	iteraplan PO	12/Feb/14 1:22 PM						dashboard	savedquery																																																														

@@ -1,3 +1,0 @@
-Umzug Javascript-Dashboard	"Der JS-Teil des Detail-Dashboards soll in den neuen Microservice verlagert werden.
-
-Dieses wird erstmal aus dem Result-Dashboard als externer Link aufgerufen werden."	85408	Sub-task	OpenSpeedMonitor	25/May/16 4:55 PM	10/Jun/16 1:48 PM														27/May/16 10:13 AM;bwo;Die entsprechenden Klassen liegen nun in dem Microservice. Der Code muss allerdings noch(an beiden Seiten) angepasst werden.																																																						

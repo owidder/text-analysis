@@ -1,2 +1,0 @@
-REST CE / WinXP / IE8 / hsql / english	Testing if the Rest-interface does not work in the CE version	46148	Sub-task	iteraplan PO	24/Oct/13 4:15 PM	25/Oct/13 10:22 AM														"25/Oct/13 9:31 AM;jmi;As expected both GET and POST requests return a 401 in the CE version
-(also some tests could not be done, since CR only has one user and thus logging out or switching to a user with limited rights is not possible)"	25/Oct/13 10:22 AM;lba;(/) REST Interface does not work in the CE																																																					

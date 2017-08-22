@@ -1,3 +1,0 @@
-Tests schreiben für das Senden nach Graphite	"Wir haben für das via Quartz getriggerte Senden von Daten nach Graphite keine Tests.
-
-"		Task	OpenSpeedMonitor	18/May/16 6:10 PM	23/May/16 4:45 PM																																																																				

@@ -1,9 +1,0 @@
-Business Mapping: Combi Create - {Firefox}		124266	Sub-task	iteraplan Speedbird	16/Jun/17 11:53 AM	20/Jun/17 10:52 AM														"16/Jun/17 11:54 AM;naba;https://doc.iteraplan.de/display/iteraplan60/User+Guide (examples and tips).
-
-Please be creative and progressive.
-
-
-
-*Note*: work with documentation is still in progress."	"20/Jun/17 10:52 AM;naba;Ticket was tested in FF.
-
- The following issues were found during testing: ITERAPLAN-5418, ITERAPLAN-5423"																																																					

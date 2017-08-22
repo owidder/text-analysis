@@ -1,6 +1,0 @@
-Impact Analysis can be improved	"When creating an information flow diagram using the Microsoft Visio format, the impact analysis doesn't work in all cases.
-
-Right-clicking an information system, then selecting the impact analysis only highlights this information system, even when there are outgoing interfaces.
-Right-clicking an interface, then selectingt the impact analysis only highlights the interface and each information system which has this interface as ingoing interface, but doesn't go further, even if these information systems have outgoing interfaces.
-
-"		Improvement	iteraplan PO	07/Dec/11 5:28 PM	30/Dec/15 2:32 PM					analysis	impact	visio							12/Dec/11 2:26 PM;kvo;Visualising different LineTypes causes the Impact Analysis to not function properly.																																																						

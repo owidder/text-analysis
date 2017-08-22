@@ -1,3 +1,0 @@
-Javascript Error beim Erstellen eines Scripts	"Vergisst man beim Erstellen eines neuen Scripts den Namen des Scripts anzugeben, kommt es zu einem Javascript-Error:
-
-{{Unexpexted Token...}}"		Bug	OpenSpeedMonitor	21/Dec/16 1:48 PM	30/Dec/16 4:50 PM														30/Dec/16 4:50 PM;msk;Beim rendern von Fehlermeldungen fehlten Parameter.																																																						

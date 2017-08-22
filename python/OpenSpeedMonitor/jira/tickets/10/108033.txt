@@ -1,5 +1,0 @@
-Time Series Graph asynchron aktualisieren	"Wenn man auf ""Show"" drückt, sollten die neuen Daten einfach per AJAX geholt und der Graph aktualisiert werden.
-
-
-
-Die URL muss dann natürlich auch entsprechend dynamisch angepasst werden."		Bug	OpenSpeedMonitor	11/Jan/17 1:36 PM																																																																					

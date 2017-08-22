@@ -1,8 +1,0 @@
-de.iteratec.isr.ResultType löschen	"Die Klasse de.iteratec.isr.ResultType wird nicht mehr verwendet.
-
-Usages:
-de.iteratec.isr.EventResultHelperServiceTests (ggf. auch löschen)
-de.iteratec.isr.EventResultHelperService (ggf. auch löschen)
-de.iteratec.isr.ResultMeasuredValueTagService
-de.iteratec.isr.ResultMeasuredValueTagServiceTests
-"		Improvement	OpenSpeedMonitor	16/Oct/13 11:25 AM	26/May/15 10:45 AM																																																																				

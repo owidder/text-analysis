@@ -1,1 +1,0 @@
-Filter Extension	Epic for extending the filters in interactive client with composition and selectable operators.		Epic	iteraplan PO	01/Dec/15 10:54 AM																																																																					

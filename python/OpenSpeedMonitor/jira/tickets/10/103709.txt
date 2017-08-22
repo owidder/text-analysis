@@ -1,1 +1,0 @@
-Erstellen der Abfragen im Controller dynamischer machen		97661	Sub-task	OpenSpeedMonitor	23/Nov/16 5:47 PM	08/Dec/16 1:13 PM																																																																				

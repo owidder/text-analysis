@@ -1,2 +1,0 @@
-Confusing message when initial storing of a diagram.	"Every time when I create and save a new diagram, I get the message that a new copy of the query is created.
-It would be nice if this message does not come at initial storing."		Improvement	iteraplan PO	15/Sep/14 3:51 PM	15/Sep/14 5:07 PM														15/Sep/14 5:07 PM;fka;By design																																																						

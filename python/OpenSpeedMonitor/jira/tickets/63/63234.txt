@@ -1,1 +1,0 @@
-Filter-/Suchfunktion bei Skripten für den Inhalt des Skripts	Es wäre sinnvoll nach Skripten suchen zu können, die einen bestimmten String enthalten.		New Feature	OpenSpeedMonitor	12/Nov/15 4:05 PM																																																																					

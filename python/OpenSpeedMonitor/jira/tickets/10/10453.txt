@@ -1,8 +1,0 @@
-Release-Test suite erstellen (langlaufende Tests umbauen)	"Einige Integrationtests zu Releasetests ""umbauen"", was bedeutet: 
-Neue suite (neuer Ordner test/release).
-
-So z.B.
-de.iteratec.isocsi.WeeklyPageIntTests
-dorthin verschieben. 
-
-Release-Tests werden mind. vor einem Release, bestenfalls jede Nacht automatisch, ausgeführt."		Improvement	OpenSpeedMonitor	14/Aug/13 11:03 AM	24/Feb/16 11:06 AM														24/Feb/16 11:06 AM;nku;Wird mit der IT-863 berücksichtigt/durch dieses ersetzt.																																																						

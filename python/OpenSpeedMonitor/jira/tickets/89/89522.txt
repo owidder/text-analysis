@@ -1,5 +1,0 @@
-Plain Elastic Adapter (write)	"plugins can only act with simple methods (parameters and return values as primitive types):
-
-therefore:
-
-extend elastic model (or better: create an elastic model adapter) with functionality for *writing* model values with no elastic types as  parameters (or return values)"	89432	Sub-task	iteraplan Thunderduck	06/Jul/16 11:04 AM	01/Aug/16 12:52 PM														01/Aug/16 12:52 PM;mse;Review ok.																																																						

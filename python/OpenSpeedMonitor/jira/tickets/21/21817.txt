@@ -1,9 +1,0 @@
-Serverconfig über Jenkins parametrisierbar	Um Die Serverconfig einfach auf andere Umgebungen anpassbar zu machen, soll der Pfad dazu nicht fest im gradle Script stehen, sondern über einen Jenkinsparameter anpassbar sein.		Task	secureCodeBox	10/Oct/14 2:45 PM	15/Oct/14 3:47 PM														"15/Oct/14 3:47 PM;bwo;Default wird die serverConfig.cnf benutzt.
-
-Soll eine andere benutzt werden, so muss in Jenkins unter 
-
-Build Verfahren-> Invoke Gradle script->Tasks 
-
-z.B: folgendes angegeben werden:
-
-run --project-prop configPath=src/main/config/iteratecServerConfig.cnf"																																																						

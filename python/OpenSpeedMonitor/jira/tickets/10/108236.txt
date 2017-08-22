@@ -1,3 +1,0 @@
-Bei erneutem Klicken auf 'Show' zeigt die Filter by Customer Journey Liste die Einträge mehrfach an	"Bei jedem Klicken auf den Show Button werden der Liste im Filter DropDown Menü die für die ausgewählten Daten verfügbaren Customer Journeys dazuaddiert.
-
-Dadurch kommt es zu Duplikaten in der Liste"		Bug	OpenSpeedMonitor	12/Jan/17 3:21 PM	12/Jan/17 4:22 PM														12/Jan/17 4:22 PM;jwi;Wurde bereits gefixed.																																																						

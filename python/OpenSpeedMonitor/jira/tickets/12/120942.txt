@@ -1,1 +1,0 @@
-URL Handling an neue 'from' und 'to' Parameter anpassen	Die beiden Parameter sind jetzt ISO Timestrings, fromHour und toHour brauchen wir nicht mehr. Auch selectAll* brauchen wir nicht mehr.		Task	OpenSpeedMonitor	09/May/17 11:27 AM	31/May/17 10:50 AM														31/May/17 10:50 AM;nku;Duplicate von IT-1721																																																						

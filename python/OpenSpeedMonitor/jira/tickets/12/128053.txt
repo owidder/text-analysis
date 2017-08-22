@@ -1,5 +1,0 @@
-Unimplemented pages in the backend should leasd to error pages	"When calling an unknown page, for example /start/start.do iteraplan should redirect to the errorpage /client/#/error. Currently a 500 pages is shown in the browser.
-
-
-
- "		Bug	iteraplan Thunderduck	26/Jul/17 2:29 PM																																																																					

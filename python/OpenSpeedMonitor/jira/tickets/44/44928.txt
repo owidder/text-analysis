@@ -1,7 +1,0 @@
-missing warning message when loading tabular reports containing deleted attributes	"When loading a graphical report containing an attribute which doesn't exist anymore, users are warned that they should check the setting of the report, because the data it was based on changed or doesn't exist anymore.
-
-A similar warning should be displayed when loading a tabular report containing an attribute which doesn't exist anymore. In fact in the method ""getNewMemBeanFromReport"" of the class ""ReportBaseFrontendServiceImpl"" the according flag for the memory bean to invoke such a warning is set, only for the old memory bean instead of the new one.
-
-This should be corrected and an appropriate message displayed in the cases as described above."		Improvement	iteraplan PO	11/May/11 1:41 PM	23/Sep/11 11:39 AM					query									22/Sep/11 5:00 PM;vsh;The scenario applies to mass updates too.	"22/Sep/11 6:02 PM;vsh;Implemented behaviour (consistent with the one observed for graphical reports):
-1) deleting an attribute used in the query forms -> error message on both tabular reporting and mass update site
-2) deleting an attribute used as additional column -> error message only on tabular reporting site"																																																					

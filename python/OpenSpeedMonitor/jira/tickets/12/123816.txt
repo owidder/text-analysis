@@ -1,5 +1,0 @@
-Scrollbar for lists legend	"If legend for lists it very high it does not adjust its height to the available window height. The whole window scrollbar is displayed.
-
-
-
-I think, the separate scroll bar for a legend would look better (like it is implemented in diagram's legends)."		Bug	iteraplan Speedbird	08/Jun/17 2:45 PM	23/Jun/17 1:11 PM																																																																				

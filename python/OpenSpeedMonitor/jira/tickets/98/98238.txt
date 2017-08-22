@@ -1,9 +1,0 @@
-Schema adjustment	"time boxed 1 day, if there is a simple java solution. Else discuss with [~sfe]
-
-- create Tables for new history
-
-- drop old history Tables (in migration script)"	96257	Sub-task	iteraplan Thunderduck	05/Oct/16 1:35 PM	17/Oct/16 11:48 AM														13/Oct/16 1:22 PM;aan;Only creating tables, add dropping to migration script	"17/Oct/16 11:48 AM;sfe;Requirements have changed and the migration tool will no longer create the history tables, and the old history tables won't be dropped during the migration, thus this issue is closed as ""won't fix"".
-
-
-
-The implemented code seems to work, except the script files cannot be read when the tool is built as jar file."																																																					

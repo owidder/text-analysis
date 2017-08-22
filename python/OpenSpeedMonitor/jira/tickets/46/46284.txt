@@ -1,1 +1,0 @@
-Nesting cluster: Long names are shortened improperly	Long names end with "..." instead of reference number in square brackets, and are not deciphered in a legend for long names		Improvement	iteraplan PO	28/Oct/13 4:46 PM	30/Dec/15 4:54 PM					nesting								Windows 7 & Chrome																																																							

@@ -1,1 +1,0 @@
-Filter Checkboxes Job/list	In der Job-View werden die einzelnen Checkboxen zum Filtern untereinander, statt nebeneinander angezeigt.		Bug	OpenSpeedMonitor	20/Jul/15 10:08 AM	21/Jul/15 10:16 PM																																																																				

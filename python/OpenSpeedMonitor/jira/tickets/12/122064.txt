@@ -1,9 +1,0 @@
-Delete attribute: More confirmation than now	"Whenever an attribute is deleted, the confirmation dialog should require to enter the word ""DELETE"" / ""LÖSCHEN"" (or similar), like it is the case for a mass delete confirmation dialog.
-
-
-
-Maybe reuse the dialog.
-
-
-
- "		Improvement	iteraplan Speedbird	22/May/17 5:40 PM	02/Jun/17 5:41 PM																																																																				

@@ -1,3 +1,0 @@
-Gültiges Zertifikat für VPN Zugang benötigt	"Für den Zugriff auf die VPN Gateways MUC und FRA benötige ich ein gültiges Zertifikat (oder benötige ich dafür weiterhin mehrere?)
-
-"		Task	Infrastruktur	16/Jan/17 11:34 AM	17/Jan/17 9:28 AM	Sonstiges													17/Jan/17 9:28 AM;kti;Zertifikat per Mail weitergeleitet	24/Jan/17 9:43 AM;tsh;Zertifikat funktioniert. Ticket kann geschlossen werden. Danke.																																																					

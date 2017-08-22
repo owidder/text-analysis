@@ -1,7 +1,0 @@
-No empty space if not enough columns are visible	"No empty space on the right half of the table should be shown if not enough columns are visible: 
-
-
-
-* One column (default: ""description"") should get the remaining space
-
-* If too many columns are added, a horizontal scrollbar should appear at the bottom"	83773	Sub-task	iteraplan PO	29/Jun/16 4:25 PM	05/Jul/16 11:43 AM														30/Jun/16 10:27 AM;tsu;The first commit 3681 belongs to the ticket ITERAPLAN-4603.																																																						

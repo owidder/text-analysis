@@ -1,3 +1,0 @@
-Footer auch auf kurzen Seiten am unteren Rand positionieren	"Der sogenannte ""sticky footer"", wie im offiziellem Bootstrap-Beispiel:
-
-https://getbootstrap.com/examples/sticky-footer/"		Bug	OpenSpeedMonitor	22/Nov/16 9:24 AM	22/Nov/16 9:35 AM																																																																				

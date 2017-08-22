@@ -1,9 +1,0 @@
-LSD Legend, "Property of"-Filter. Wrong Name	"*How to reproduce*: 
-
-LSD Legend, Content Items -> ""Property of"" Assigned Interfaces
-
-
-
-*Legend shows* filtered by _Interfaces_
-
-*should be* filtered by _Assigned Interfaces_"		Bug	iteraplan PO	21/Dec/15 2:13 PM	22/Dec/15 1:47 PM														21/Dec/15 3:21 PM;ach;.- fixed																																																						

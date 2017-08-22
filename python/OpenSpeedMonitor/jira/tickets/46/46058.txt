@@ -1,6 +1,0 @@
-History initialization runs with constraint violations	"After disabling the history caused by some errors (https://www.iteraplan.de/issues/browse/ITERAPLAN-1916) during mass deletion, we tried to enable it after the the deletion and the succeeding data import.
-
-We run the initialization script again to create a base line. The script could be executed but reports some errors (constraint violations).
-
-The details can be found in the attached log file. "		Bug	iteraplan PO	09/Sep/13 10:34 AM	11/Oct/13 10:32 AM					core									"11/Oct/13 10:32 AM;sfe;Tested by Sebastian Fritsch: script works fine
-sql reviewed by kgo."																																																						

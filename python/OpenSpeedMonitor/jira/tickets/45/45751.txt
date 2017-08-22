@@ -1,6 +1,0 @@
-False "duplicate name" error during Excel Import	"Error appears when attempting to import an Excel file with at least two enumerations named in the following fashion:
-
-xxx (some text in a bracket)
-xxx (some other text in a bracket)
-
-Apparently the brackets and their contents are ignored during import, resulting in the false ""duplicate name"" error due to the identical prefixes of the attribute names."		Bug	iteraplan PO	06/Jun/13 9:27 AM	21/Jun/13 3:39 PM					AttributeType	Excel	ExcelImport	name						21/Jun/13 3:39 PM;svo;Code Review ok, manual test ok																																																						

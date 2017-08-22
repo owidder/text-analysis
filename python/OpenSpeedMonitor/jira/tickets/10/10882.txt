@@ -1,5 +1,0 @@
-Inkonsistenz bei der Persistierung neuer MeasuredValues	"Bei der Persistierung neuer hourly event-MeasuredValues während des Eintreffens neuer EventResults wird die Location anhand des im assoziierten JobResult gespeicherten Attributs Location.location ermittelt: {code}Location location = Location.findByLocation(jobResult.locationLocation){code}
-
-In der Methode de.iteratec.isocsi.EventMeasuredValueService.createOrUpdateHourlyValue(DateTime hourlyStart, EventResult newResult) müssten JobGroup, Browser und Location eigentlich anhand des tags des EventResults ermittelt werden. Wenn die Location weiterhin anhand des assoziierten JobResults ermittelt werden soll (was unnötig ist) müsste das Attribut Location.uniqueIdentifierForServer verwendet werden und nicht Location.location. Location.uniqueIdentifierForServer wird aber bisher gar nicht im JobResult persistiert.
-
-Bevor dieser Bug gefixt wird habe ich für alle Locations in mysql location = uniqueIdentifierForServer gesetzt."		Bug	OpenSpeedMonitor	30/Jan/14 10:27 AM	18/Feb/14 2:14 PM																																																																				

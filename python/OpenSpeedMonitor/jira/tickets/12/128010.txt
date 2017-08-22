@@ -1,1 +1,0 @@
-Umzug in Docker-Container auf OSM Server		128009	Sub-task	OpenSpeedMonitor	26/Jul/17 6:59 AM															26/Jul/17 7:03 AM;sbr;Umzug des DNS Eintrags durch Admins steht noch aus.																																																						

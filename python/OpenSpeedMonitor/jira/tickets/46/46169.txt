@@ -1,6 +1,0 @@
-History EE/Win7/FF24/MySQL/German	"Test the iteraplan History feature against the current test specification with the following environment:
- * iteraplan EE
- * Windows 7 (64 bit)
- * Firefox 24.0
- * MySQL Server
- * German"	46148	Sub-task	iteraplan PO	21/Oct/13 3:47 PM	22/Oct/13 12:58 PM					test									21/Oct/13 5:24 PM;kgo;Test results: All specified tests could be perfomed without issues in the test environment defined for this ticket.	22/Oct/13 2:43 PM;kgo;Also tested test case 4.																																																					

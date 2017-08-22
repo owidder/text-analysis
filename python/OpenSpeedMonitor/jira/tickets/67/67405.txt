@@ -1,3 +1,0 @@
-In d3.js-Linien-Diagrammen die Legende interaktiv machen	"In allen Linien-Diagrammen (CSI-Mappings im modalen Dialog und auf der CSI-Configuration-Seite) sollten wir die Namen der Kurven in der Legende klickbar machen. Beim Klicken sollten die Kurven unsichtbar und wieder sichtbar werden. 
-
-Genau wie in den Rickshaw-Diagrammen."		Task	OpenSpeedMonitor	18/Dec/15 2:46 PM	18/Jan/17 3:54 PM																																																																				

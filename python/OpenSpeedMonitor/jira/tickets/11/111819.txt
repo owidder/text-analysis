@@ -1,5 +1,0 @@
-Saved Query Migration: No timestamp in query name 	"Currently in the Saved Query Migration the system timestamp will be added to the name of the query in the new client.
-
-
-
-Please remove this timestamp, and add ' (2)', ' (3)' etc. whenever necessary. Don't add ' (1)', of course. It is important, that the query name is unchanged if there is no query by that name in the new client."		Improvement	iteraplan PO	15/Feb/17 10:27 AM	15/Feb/17 1:08 PM														15/Feb/17 12:54 PM;aan;commit 26805 also belongs here																																																						

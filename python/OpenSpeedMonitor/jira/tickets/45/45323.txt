@@ -1,6 +1,0 @@
-Refactor class CheckBuildingBlocksWithMandatoryAttributeTypesNotAssigned	"The class CheckBuildingBlocksWithMandatoryAttributeTypesNotAssigned has a number of points that can be improved:
-* use services instead of DAOs
-* use BuildingBlockServiceLocator to obtain services
-* reformat code comments inside methods from pseudo Javadoc style to normal one-line comments
-* use StringBuilder instead of StringBuffer
-* get rid of the explicit type-switch in method verifyAttributesNotSet by exploiting object orientation --> work on AttributeValue class, not its subclasses"		Improvement	iteraplan PO	05/Jan/12 11:31 AM	16/Jan/12 12:14 PM					refactoring																																																															

@@ -1,4 +1,0 @@
-InformationFlow: Background color of JPEG and PNG is different	"(At least) with the InformationFlows the background color of the JPEG and PNG output is yellow. 
-All others have a white background.
-
-Suggestion: use one color for all output formats"		Improvement	iteraplan PO	23/Jul/13 10:21 AM	30/Dec/15 2:53 PM					visualization								Windows 7, Google Chrome, trunk Rev. 20894																																																							

@@ -1,9 +1,0 @@
-Gewichtungs-Seite mit Visualisierung statt Tabellen 	Die langweiligen und wenig anschaulichen tabellarischen Darstellungen der Gewichtungs-Faktoren sollten mit rickshaw visualisiert werden. Dies kann z.B. mit Torten- oder Balkendiagrammen erfolgen.		Improvement	OpenSpeedMonitor	12/Jun/15 12:01 PM	01/Dec/15 9:52 AM														"24/Sep/15 1:42 PM;nku;Müsste nicht mit Rickshaw geschehen.
-
-Ist optional, bzw. eher mein Wunsch. Steht so nicht im OTTO-Angebot."	"30/Nov/15 1:32 PM;nku;Duch Marcus bereits umgesetzt.
-
-Noch offen:
-
-
-
-Alle Tabellen bitte rausnehmen."																																																					

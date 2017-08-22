@@ -1,5 +1,0 @@
-Neue Pages automatisch mit weight=0 persistieren	"Neue Pages müssen beim Eintreffen entsprechender Results mit einem Gewicht 0 persistiert werden. Die CSI-Berechnungslogik muss mit 0-Gewichten für Pages zurechtkommen. Dies ist zu prüfen bzw. sicherzustellen.
-Auch mit fehlenden TimeToCsMappings für eine Page muss die Logik zurechtkommen. Das Fehlen von TimeToCsMappings muss dazu führen, dass Messungen dieser Page nicht in der CSI-Berechnung berücksichtigt werden.
-
-siehe:
-de.iteratec.isocsi.TimeToCsMapping"		New Feature	OpenSpeedMonitor	10/Jan/14 2:11 PM	23/May/16 5:32 PM														23/May/16 5:32 PM;nku;Das weight an der Page ist bereits deprecated und fällt demnächst komplett weg.																																																						

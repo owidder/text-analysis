@@ -1,6 +1,0 @@
-Initiales Kibana-Setup beim ersten Erzeugen der SecureBox vorsehen	"Wenn der Kibana-Container erstellt wird, sollte ein Default-Dashboard eingerichtet werden.
-
-Ziel ist den heutigen manuellen impot/export zu ersetzen durch einen automatischen initialisierungsschritt.
-
-Merker (Robert):
-Es gibt ein Docker basierten Service, um elasticsearch indizes zu importieren und exportieren"		Improvement	secureCodeBox	04/Mar/16 1:17 PM	11/Jul/16 6:17 PM	secureBox				iteratec									11/Jul/16 6:17 PM;rfe;./startup_ctrl.sh bootstrap development																																																						

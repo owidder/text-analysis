@@ -1,7 +1,0 @@
-Lokale karma-config einführen	"Idealerweise würde diese die Standard-config (die z.B. im Jenkins greifen soll) überschreiben.
-
-Nutzen könnte man dies für separate Browser oder autoWatch."		Task	OpenSpeedMonitor	16/Dec/15 9:17 AM	18/Jan/17 3:55 PM														"16/Dec/15 1:40 PM;mmi;Mergen von mehreren config files nicht ohne weiteres möglich.
-
-
-
-Im Jenkins Job config file ersetzen, bzw. teile ersetzen/hinzufügen?"																																																						

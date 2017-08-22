@@ -1,5 +1,0 @@
-Integrationstest für CsiSystemMeasuredValueService erstellen	"In diesem Integrationstest sollen alle Stufen der Aggregation durchlaufen werden.
-
-
-
-Die Testdaten sollen stündliche nicht-aggregierte MeasuredValues sein. Diese werden durch einen Aufruf im CsiSystemMeasuredValueService über alle Stufen anschließend aggregiert."		Task	OpenSpeedMonitor	05/Feb/16 11:48 AM	09/Feb/16 3:33 PM																																																																				

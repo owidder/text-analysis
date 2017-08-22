@@ -1,1 +1,0 @@
-Automatische SVG-Koordinaten-Umrechnung	SVG-Koordinaten sollten auf dem Zoomstufe 0 in die GEO.json Daten abgelegt werden. Die Umrechnung in die jeweiligen Zoomstufen erfolgt dann später in der Business-Logik.	90745	Sub-task	EAM-Visualisierung	22/Jul/16 3:22 PM																																																																					

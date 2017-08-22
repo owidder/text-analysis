@@ -1,2 +1,0 @@
-Support Single Sign On (SSO)	"iteraplan draws user authentication from a central or decentral identity management solution in the enterprise. iteraplan can also access a token indicating successful logon to the SSO infrastructure.
-"		New Feature	iteraplan PO	08/Aug/13 12:59 PM	17/Jul/14 6:18 PM														19/Dec/13 4:30 PM;sry;The specific constellation SSO with Kerberos in cooperation with IIS is realized in ITERAPLAN-2269	17/Jul/14 6:18 PM;fka;Nothing more to do here																																																					

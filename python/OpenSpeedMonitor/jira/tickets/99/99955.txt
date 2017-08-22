@@ -1,1 +1,0 @@
-Make database connection configurable	The database configuration of a new container should be configured via environment variables on start.		Task	iteraplan PO	20/Oct/16 2:14 PM	05/Apr/17 1:22 PM														05/Apr/17 1:22 PM;fka;Done by SFE																																																						

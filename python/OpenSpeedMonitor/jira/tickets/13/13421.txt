@@ -1,7 +1,0 @@
-MariaDB-connector ausprobieren	"Da mysql-connector GPL ist (doof), sollten wir als Alternative den MariaDB-connector (LGPL) ausprobieren.
-
-
-
-Nils: Ich entwickle inzwischen lokal mit einer MariaDB-Instanz (und dem mysql-connector). Daher gehe ich davon aus, dass es funktioniert.
-
-Wir wollen aber ja inzwischen vermutlich mit H2 open source gehen. "		Task	OpenSpeedMonitor	27/Jun/14 5:00 PM	14/Nov/14 3:14 PM														14/Nov/14 3:14 PM;nku;Wir veröffentlichen mit H2																																																						

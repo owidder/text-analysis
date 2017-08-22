@@ -1,1 +1,0 @@
-Unify tooltips / wrapping in all diagrams	Unify tooltips (only, if text is cropped) and same wrapping in all diagrams		Epic	iteraplan PO	24/Jan/17 3:51 PM																																																																					

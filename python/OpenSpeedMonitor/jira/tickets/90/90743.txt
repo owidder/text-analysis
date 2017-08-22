@@ -1,9 +1,0 @@
-user documentation for new graphics reactor	the user documentation has to be adjusted for the new graphics reactor		New Feature	iteraplan Quickfox	18/Jul/16 11:36 AM	08/Aug/16 5:00 PM														"08/Aug/16 11:28 AM;mwe;https://www.iteraplan.de/doc/display/iteraplan53/Graphics+Reactor
-
-I edited the following parts:
-
-* Introduction
-
-* User Interface
-
-* Using Graphics Reactor "	08/Aug/16 5:00 PM;fka;Made some adjustments and removed duplications.	06/Sep/16 3:31 PM;mwe;Moved Rest API to sub page: https://www.iteraplan.de/doc/pages/viewpage.action?pageId=8127688																																																				

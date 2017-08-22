@@ -1,3 +1,0 @@
-JDBC connector jar unnecessarily deployed with application	"In our build process, the JDBC connector of the currently configured database vendor is included in the _WEB-INF/lib_ directory when building the application.
-
-This can possibly cause memory leaks and other issues. The JDBC connectors should only be provided in the _lib_ directory of the tomcat."		Bug	iteraplan Thunderduck	12/Sep/16 9:08 AM	12/Sep/16 10:57 AM					build_process																																																															

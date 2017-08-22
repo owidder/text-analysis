@@ -1,3 +1,0 @@
-Einzelergebnisse nach Job filtern können	"Neue Filtermögichkeit: Man wählt einen bestimmten Job aus und es werden standardmäßig für einen kurzen Zeitraum (z.B. letzte 12 Stunden) alle Ergebnisse angezeigt, die zum gewählten Job gehören.
-Die EventResults müssen folgende Bedingung erfüllen: median_value = true
-In der Darstellung eine Zeile für first, eine Zeile für repeated view (falls vorhanden)"		Task	OpenSpeedMonitor	19/Feb/14 11:29 AM	26/Feb/14 12:38 PM																																																																				

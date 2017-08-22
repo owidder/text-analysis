@@ -1,3 +1,0 @@
-First Pie Chart Segment starts at the top (0 Degree)	"*Summary:*
-
-The first Pie Chart Segment should start at the top (0 Degree)"		Improvement	iteraplan Speedbird	07/Oct/16 2:52 PM	14/Oct/16 1:44 PM														14/Oct/16 1:44 PM;msr;Already fixed																																																						

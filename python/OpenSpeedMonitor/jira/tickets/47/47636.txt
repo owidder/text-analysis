@@ -1,4 +1,0 @@
-Wrong default combination (according to IP9-302) for IS as content type	"Summary: Information System as content type displayed not according to default combination's list in the IPNINE-302
-
-"	47520	Sub-task	iteraplan PO	20/Apr/15 11:55 AM	22/Apr/15 3:52 PM													"Workspace: Windows 8.1
-Revision: 955"	20/Apr/15 5:41 PM;dasm;Verified (rev 966)																																																						

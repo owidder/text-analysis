@@ -1,1 +1,0 @@
-SVN & Git in Stuttgart nicht erreichbar	SVN und Git ist in Stuttgart nicht erreichbar.		Task	Infrastruktur	17/May/17 12:53 PM	17/May/17 1:15 PM	svn													17/May/17 1:15 PM;dsh;Es funktioniert wieder																																																						

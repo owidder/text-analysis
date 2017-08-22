@@ -1,9 +1,0 @@
-List view and Property names with a point	"- rename a property into something with a point in it 
-
-(in Classic Client: Administration->Attributes -> edit one, e.g. ""Complexity"" to ""Com.plexity"")
-
-- open the list view in IC. 
-
-- add Column for new property. 
-
-- PROPBLEM: Values for this property don't appear."		Bug	iteraplan PO	13/Jun/16 11:30 AM	15/Jun/16 1:50 PM														14/Jun/16 5:08 PM;sfe;Revision [3471|https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-9?cs=3471] belongs here, was committed wrongly in ITERAPLAN-4704.	15/Jun/16 1:50 PM;ach;- deleted forgotten unused constant while review																																																					

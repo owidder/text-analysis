@@ -1,6 +1,0 @@
-Make default state of switch "Elements with status 'Inactive' are shown." configurable	"On the configuration dialog, there is a switch ""Elements with status 'Inactive' are shown."" which is enabled by default.
-For many customers it makes sense to have it disabled by default
-
-Add an optional property to {{iteraplan.properties}} which allows to set the default state of that switch. The property should default to ""switch is enabled"", even if the property is not found in the file."		Improvement	iteraplan PO	09/Jul/13 11:15 AM	18/Jul/13 10:21 AM					configuration									"16/Jul/13 4:35 PM;svo;Should be fixed now; new property {{configuration.show.inactive}} now defines default value.
-Tested with both values in iteraplan.properties as well as an overriding value in iteraplan_local.properties.
-Choice in web-interface is not saved between sessions, but must be adjusted by manipulation one of the .properties files."	18/Jul/13 10:21 AM;lba;Works fine.	18/Jul/13 11:49 PM;sry;Perfect, thx!																																																				

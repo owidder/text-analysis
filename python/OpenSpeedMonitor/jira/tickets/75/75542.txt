@@ -1,5 +1,0 @@
-NMAP Konfigurationsparameter im Prozess definieren	"Als User möchte ich die NMAP Konfigurationsparameter im Prozess definieren können.
-
-
-
-=> Ein Eingabefeld für alle Parameter."		Bug	secureCodeBox	03/Mar/16 3:01 PM	09/Mar/16 2:28 PM																																																																				

@@ -1,5 +1,0 @@
-Spreadsheet Reports: Describe the filling of sheets in the template for Excel 2007 with data in the documentation of the upcoming iteraplan version	"A good place to start would be:
-
-http://www.iteraplan.de/wiki/display/iteraplan/Customizing+Spreadsheet+Reports
-
-Describe the necessary recalculation of the formulas in Excel, triggered by the user (Ctrl-Alt-F9)."	45993	Sub-task	iteraplan PO	13/Aug/13 10:26 AM						documentation																																																															

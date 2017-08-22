@@ -1,1 +1,0 @@
-Delete "recently used"-entry in LSD and IFD	Delete "recently used"-entry in all filter dialogs of LSD and IFD 		New Feature	iteraplan PO	29/Sep/15 1:12 PM	01/Oct/15 9:07 AM																																																																				

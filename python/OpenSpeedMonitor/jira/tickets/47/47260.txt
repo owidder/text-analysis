@@ -1,7 +1,0 @@
-UI bug on Information System page for all browsers	"IP9-229
-
-Steps to reproduce:
-1. Go to Information System page
-2. Click on ""Complexity"" column
-
-Actual: UI bug with header menu"		Bug	iteraplan PO	25/Dec/14 1:52 PM	09/Jan/15 4:34 PM														09/Jan/15 4:34 PM;dasm;Verified (revision 499)																																																						

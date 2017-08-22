@@ -1,7 +1,0 @@
- Misleading validation message when one creates a new attribute	If you create an new attribute with an „#“ in the name for example, you get the message “The value entered is not valid.”. It is nevertheless possible to create the attributes. The User's Guide is only against the use of "." and "@" warned. Either the validation message is incorrect / misleading or the creation of the attribute should be prevented.		Bug	iteraplan PO	28/Apr/14 11:41 AM	19/Jan/16 11:08 AM					attribute	gui								"28/Apr/14 12:57 PM;wfr;Generally, special characters in names that may be used as identifiers in various other naming systems are a problematic idea at best.
-Of course, one could mask all these charactes in the respective target naming systems, but even then the resulting name with escaped special character is hard to read.
-
-Recommendation
-
-* Add hash sign to list of unwanted characters in Guide.
-* Follow-up ticket (low prio) to prevent creation of attribute; BUT ONLY AFTER checking existing known metamodels and providing a migration."																																																						

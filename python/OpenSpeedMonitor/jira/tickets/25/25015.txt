@@ -1,1 +1,0 @@
-Crawljax stoppt nicht richtig	Nach Abschluss des Crawls wird der Browser/WebDriver nicht vollständig geschlossen und die Ausführung wird nicht ordnungsgemäß beendet.		Bug	secureCodeBox	12/Nov/14 11:00 AM						ITMC																																																															

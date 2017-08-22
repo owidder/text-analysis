@@ -1,7 +1,0 @@
-Link from Saved Queries to Migrate Saved Queries (Client)	"*Summary:*
-
-Create a button on the Saved Queries page in the New Client which links to the Classic Client Migrate Saved Queries Page (show/savedqueriesexport).
-
-The button should be placed on the top right side.
-
-It should be called ""Migrate saved queries"" / GER: ""Gespeicherte Abfragen migrieren"""		Improvement	iteraplan Speedbird	01/Jun/17 1:55 PM	14/Jun/17 3:07 PM																																																																				

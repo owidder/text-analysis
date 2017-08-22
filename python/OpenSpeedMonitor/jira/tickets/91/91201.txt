@@ -1,9 +1,0 @@
-Create a architecture documentation for diagrams (in this case for portfolio)	"Create a generic architecture documentation for diagrams based on the Portfolio Diagram. Use the existing architecture documentation as blueprint.
-
-
-
-*Goal:*
-
-* Either the documentation is so generic so it can be used for any diagram in the future
-
-* or at least it can be reused with very small adapations for future diagrams"		New Feature	iteraplan Speedbird	22/Jul/16 8:28 AM	31/Aug/16 10:45 AM																																																																				

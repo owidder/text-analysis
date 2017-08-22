@@ -1,5 +1,0 @@
-Trennung von Location und Browser überdenken.	"Durch die Trennung von Location und Browser im ISM und die Erstellung der Tags mit deren DB-Ids entstanden Fehlzuordnungen bei Änderung der Browser.
-
-Solange die Verwaltung der Jobs nicht im ISM stattfindet, ggf. die Trennung aufheben. Nur Locations verwenden und diese an der UI nach Browsern filtern. Wäre das hilfreich? -> Diskutieren.
-
-Ferner: Tags ggf. mit Namen statt IDs? (pro: für browser stabiler, contra: lange tags)"		Improvement	OpenSpeedMonitor	25/Oct/13 12:23 PM	18/Jan/17 2:55 PM																																																																				

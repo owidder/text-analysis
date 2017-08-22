@@ -1,5 +1,0 @@
-Execute Test Sheet Import Export	"..\licensegenerator\iteraplan\doc\test\excel-export-test-specification.xlsx
-
-..\licensegenerator\iteraplan\doc\test\excel-import-test-specification.xlsx
-
-"		Bug	iteraplan PO	09/Aug/16 10:03 AM	09/Aug/16 1:27 PM														09/Aug/16 10:25 AM;cst;Export manuel test was successful	09/Aug/16 10:52 AM;cst;Import manuel test was successful																																																					

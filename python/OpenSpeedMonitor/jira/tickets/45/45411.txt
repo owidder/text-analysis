@@ -1,7 +1,0 @@
-Inconsistent behaviour when elements are closed	"Wird ein nicht aktives, offenes Element geschlossen, wird beim neu laden der Seite der aktuelle Kontext auf das Root-Element des soeben geschlossenen Elements gewechselt, sodass der Benutzer den Kontext, in dem er sich befand u.U. nicht wiederfindet.
-
-Zur Reproduktion:
-- einen Business Processes öffnen, sodass sie in den open elements angezeigt werden.
-- nach ""EA Data"" > ""Products"" wechseln
-- den geöffneten Business Process in den open elements schließen
-=> Es wird die ""Suche nach Geschäftsprozessen"" angezeigt, obwohl der Nutzer sich bei der Suche nach Produkten befand."		Improvement	iteraplan PO	02/Mar/12 6:41 PM	13/Mar/12 3:14 PM														09/Mar/12 6:27 PM;lci;New behaviour: closing the active element works as before (redirects to bb-"main page"), otherwise the user remains on the current page	15/Mar/12 9:19 AM;kvo;Technical Solution might need some rework																																																					

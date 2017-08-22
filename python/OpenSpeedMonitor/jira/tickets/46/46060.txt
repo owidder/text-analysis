@@ -1,1 +1,0 @@
-Fix spelling error	[DE, Bulk upload] "untergeodneten" should be "untergeordneten" and "Elementen" should be "Elemente"		Bug	iteraplan PO	10/Sep/13 11:47 AM	16/Sep/13 1:43 PM					gui									16/Sep/13 1:42 PM;sry;Reject the ticket, because it didn't follow the proper workflow.	16/Sep/13 1:43 PM;sry;fine, thx!																																																					

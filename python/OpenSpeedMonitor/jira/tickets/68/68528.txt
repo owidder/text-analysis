@@ -1,3 +1,0 @@
-JobGroup kann keine CsiConfiguration zugeordnet werden	"Beim Auswählen einer CsiConfiguration für eine JobGroup gibt es eine Exception.
-
-Desweiteren sollte es möglich sein, keine CsiConfiguration auszuwählen, da dieses im Zuge der Entwicklung von Epic [3-B] nötig ist."		Bug	OpenSpeedMonitor	04/Jan/16 4:33 PM	18/Jan/16 2:09 PM														12/Jan/16 11:26 AM;nku;Bitte von Marcus noch mal zeigen lassen, was hier das Problem ist.  																																																						

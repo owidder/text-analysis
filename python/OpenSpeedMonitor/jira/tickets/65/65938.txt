@@ -1,5 +1,0 @@
-GPS-Quelle umschaltbar	"Über Menü kann die GPS-Quelle konfiguriert werden:
-
-- GPS-Sensorwerte
-
-- fester GPS-Wert, Eingabe über Eingabefeld"		Task	EAMV15	07/Dec/15 2:43 PM	15/Dec/15 10:20 AM														15/Dec/15 10:20 AM;fbe;Im Konfigurationsdialog gibt es nun Felder zum Eintragen von Längen- und Breitengraden. Bei ausgefüllten Feldern werden GPS-Sensorinformationen ignoriert.																																																						

@@ -1,1 +1,0 @@
-Add hint how many additional columns could be inserted in Master plan diagram	It would be good if there is a hint about the maximum number of additional columns an user can add to the master plan diagram.		Improvement	iteraplan PO	14/Nov/11 4:04 PM	08/Jun/12 11:22 AM																																																																				

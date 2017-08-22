@@ -1,4 +1,0 @@
-Write Userdocumentation on Context Visualizations	"There is no documentation on the Context Visualizations available on the BuildingBlock detail pages. 
-
-Include the semantics of the visualization
-* e.g. why are more IS drawn in an InformationFlow diagram of an IS-Domain than contained in the domain..."		Task	iteraplan PO	31/Jul/13 5:06 PM	30/Dec/15 2:53 PM																																																																				

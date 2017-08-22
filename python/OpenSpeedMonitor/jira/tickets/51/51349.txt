@@ -1,9 +1,0 @@
-Controller Coordination Service	"*Summary:*
-
-Create a Controller Coordination Service to exchange the ifdConfig and events between the common Header Controller and the IFD Controller.
-
-
-
-*Architecture:*
-
-This service is injected in the common Header and IFD Controller and both controllers are registered in the service."	47838	Sub-task	iteraplan PO	20/Jul/15 10:50 AM	28/Jul/15 11:45 AM					ifd																																																															

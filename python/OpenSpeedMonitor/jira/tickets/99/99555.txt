@@ -1,1 +1,0 @@
-Passwörter Salten	Wir sollten die gehasten Passwörter zusätzlich salten.		Improvement	OpenSpeedMonitor	18/Oct/16 1:21 PM																																																																					

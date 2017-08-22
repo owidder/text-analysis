@@ -1,3 +1,0 @@
-Loading indicator for NCD		47856	Sub-task	iteraplan PO	22/Jun/15 5:00 PM	30/Jun/15 10:40 AM														"30/Jun/15 10:40 AM;fam;Code okey, function working.
-
-Ticket closed."																																																						

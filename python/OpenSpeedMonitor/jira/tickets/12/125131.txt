@@ -1,5 +1,0 @@
-"Copy as" für Jobs kann bestehenden Job-Name nicht mehr lesen	"Ist wohl mit der Umstellung der Formular-Felder/Verlegung des Namens nach unten kaputt gegangen.
-
-
-
-Klick man aktuell den Button ""Speichern unter"" wird im JS-Alert ""undefned(Copy)"" angezeigt."		Bug	OpenSpeedMonitor	23/Jun/17 10:21 AM																																																																					

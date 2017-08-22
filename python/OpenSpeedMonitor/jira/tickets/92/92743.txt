@@ -1,7 +1,0 @@
-link to xsd file in saved queries from example database does not work	"check if the link to the xsd file is set correctly if a new query is saved.
-
-
-
-link from example query:
-
-http://iteratec.iteraplan.com//schemas/QueryXML.xsd"		Bug	iteraplan PO	08/Aug/16 3:55 PM	25/Aug/16 10:23 AM														11/Aug/16 12:53 PM;fka;Saved Queries will be migrated to the new client in the near future...																																																						

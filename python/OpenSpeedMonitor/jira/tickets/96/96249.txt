@@ -1,3 +1,0 @@
-Asset Tabelle ausblenden, wenn neue Filter gewählt werden	"Klick man in dem Graphen einen Datenpunkt an, so wird die Tabelle der einzelnen Aassets eingeblendet.
-
-Ändert man nun bspw in den PieCharts seine Filter oder wählt eine andere anzuzeigende Kurve, so ist kein Datenpunkt mehr gewählt. Die Tabelle wird aber weiterhin angezeigt."		Task	OpenSpeedMonitor	16/Sep/16 1:19 PM	16/Jan/17 3:12 PM														16/Jan/17 3:12 PM;mmi;Hat sich erledigt, da die Tabelle nun als modaler Dialog angezeigt wird.																																																						

@@ -1,9 +1,0 @@
-RICKSHAW Farbpalette erste 20 Kurven optimieren	"Momentan sind die Farben unglücklich (z.B. zweimal gelb):
-
-https://iteraspeedmonitor.otto.wpt.iteratec.de/eventResultDashboard/showAll?selectedInterval=-1&selectedTimeFrameInterval=1209600&from=19.05.2015&fromHour=9%3A16&to=02.06.2015&toHour=9%3A16&selectedFolder=2&selectedPages=3&selectedBrowsers=3&_selectedAllBrowsers=&_selectedAllMeasuredEvents=&selectedAllMeasuredEvents=on&_selectedAllLocations=&selectedAllLocations=on&selectedAggrGroupValuesUnCached=docCompleteTimeInMillisecsUncached&trimBelowLoadTimes=&trimAboveLoadTimes=5000&trimBelowRequestCounts=&trimAboveRequestCounts=&trimBelowRequestSizes=&trimAboveRequestSizes=&_action_showAll=Anzeigen&selectedChartType=0
-
-
-
-D3 bietet schon fertige Paletten:
-
-https://github.com/mbostock/d3/wiki/Ordinal-Scales#categorical-colors"		Bug	OpenSpeedMonitor	02/Jun/15 10:00 AM																																																																					

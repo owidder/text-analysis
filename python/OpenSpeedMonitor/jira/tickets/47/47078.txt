@@ -1,2 +1,0 @@
-"Generate" in nested cluster graphic makes icons disappear in IE11	"IS: A click on ""Generate graphic"" additionally refreshes the page where ALL icons disappeared.
-Should: icons should be shown as usual."	47147	Sub-task	iteraplan PO	21/Oct/14 5:26 PM	08/Dec/14 10:18 AM					ie11	nested	nesting						Win7, IE 11, iteraplan Build-v3.4.SNAPSHOT-r23851 	22/Oct/14 9:39 AM;fka;IE11 not supported	22/Oct/14 10:37 AM;abo;Retest with IE9 is fine!																																																					

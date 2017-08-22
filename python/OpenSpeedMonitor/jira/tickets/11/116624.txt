@@ -1,7 +1,0 @@
-Visualizations, legend: Show it next to the diagram	"In Visualisations, the legend should no longer overlap the diagram, but have its separate space right of the visualization whenever the legend is visible.
-
-
-
-The size should stay as it is now for active legend."		Improvement	iteraplan Speedbird	27/Mar/17 10:21 AM	05/May/17 6:11 PM														13/Apr/17 2:35 PM;roia;How about MPD diagram which currently consists of 4 GoJS diagrams and has independent scrollable parts?	13/Apr/17 2:37 PM;fka;Should work there too... "Simply" make all parts smaller, so that the legend can be positioned right of them. ;)	"25/Apr/17 1:34 PM;dmkh;[~fka], [~msr], as I understand the legend will always be displayed as separate part next to the diagram (see my example below)? 
-
- !Separate parts.png|width=1440,height=584!"	04/May/17 6:05 PM;mash;If diagram and legend have scrollbars, legend overlaps a little bit on the diagram scrollbar (Screenshot added)	05/May/17 12:11 PM;dmkh;[~mash], added some more indention (the easiest solution) in revision *6772*	05/May/17 6:11 PM;mash;Review is done																																																	

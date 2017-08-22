@@ -1,3 +1,0 @@
-Automatisches Laden von Assets geht auf Prod-Instanz nicht	"Für die BCG-JobGroup wurde ""PersistDetailData"" auf true gesetzt, dennoch wurden keine Assets automatisch persistiert (werden gerade per Batch Job nachgeladen).
-
-Dies sollte untersucht und behoben werden"		Bug	OpenSpeedMonitor	26/Jan/17 11:36 AM	08/Feb/17 3:32 PM														08/Feb/17 3:32 PM;mmi;mehrere Probleme identifiziert. Diese werden in serperate Tickets geschrieben.																																																						

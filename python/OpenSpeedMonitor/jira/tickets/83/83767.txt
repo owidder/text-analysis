@@ -1,3 +1,0 @@
-responsive layout of column widths	"Define a min- and max-width for every property that can be shown in the list and store it in the view model.
-
-Set the width of the columns according to the stored min- and max-width values and content of columns (column title and data content)."		New Feature	iteraplan PO	10/May/16 12:53 PM	22/Jun/16 2:10 PM																																																																				

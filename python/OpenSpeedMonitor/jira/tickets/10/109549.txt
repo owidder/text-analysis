@@ -1,5 +1,0 @@
-Detaildaten-Dashboard nicht in Sidebar verlinkt	"Auch wenn der Detaildaten-Service per Config aktiviert ist ist der Link nicht da. Per URL ist das Board erreichbar. Nur es gibt keinen Link in der neuen Sidebar.
-
-Siehe zum Beispiel in der Demo-Instanz:
-
-http://demo.openspeedmonitor.org/detailAnalysis/show"		Bug	OpenSpeedMonitor	24/Jan/17 5:58 PM	25/Jan/17 2:54 PM																																																																				

@@ -1,5 +1,0 @@
-[Integrationstests] fix GraphiteEventServiceSpec	Das ist ein UNIT-Test, der in den Integrationstests liegt.Es muss geprüft werden, welcher Test es ist. Falls es ein Integrationstest ist, muss er umgeschrieben werden!		Bug	OpenSpeedMonitor	05/Apr/16 11:26 AM	05/Apr/16 5:36 PM														"05/Apr/16 5:36 PM;msk;Der Test mocket alles weg und es wird auch nicht mit einer echten OSM-Instanz gearbeitet.
-
-
-
-Daher habe ich ihn in die Unit-Test Sektion verschoben"																																																						

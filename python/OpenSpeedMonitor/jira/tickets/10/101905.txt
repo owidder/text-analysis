@@ -1,1 +1,0 @@
-Add permission handling for attribute group REST endpoint	Attribute group REST endpoint should returns attribute groups and attribute that are allowed for current user.		Task	iteraplan Speedbird	08/Nov/16 9:23 AM	19/Dec/16 5:34 PM														19/Dec/16 5:34 PM;ants;Review done: https://iteraweb.iteratec.de/fisheye/cru/IP-240																																																						

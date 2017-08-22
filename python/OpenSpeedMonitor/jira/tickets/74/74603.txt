@@ -1,1 +1,0 @@
-Mapping und Weights verlinkbar machen	Die beiden Bereiche _Mappings_ und _Weights_ der CSIConfiguration-Seite sollten per Link separat ansteuerbar sein.		Improvement	OpenSpeedMonitor	24/Feb/16 9:12 AM	18/Jan/17 4:26 PM																																																																				

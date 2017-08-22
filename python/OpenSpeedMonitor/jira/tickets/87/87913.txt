@@ -1,3 +1,0 @@
-Komplette UI unter IE11 zerschossen	"Wenn man die OSM-Webseite mit dem IE11 besucht, wird keine benutzbare Oberfläche aufgebaut. Siehe Bild im Anhang
-
-!Zerschossenes UI IE11.png|thumbnail!"		Bug	OpenSpeedMonitor	20/Jun/16 9:43 AM	19/Jan/17 4:51 PM														18/Jan/17 3:25 PM;sbr;Bitte überprüfen.	19/Jan/17 4:51 PM;bwo;Das Problem scheint nicht mehr zu existieren. Unter Windows10/IE11 wird die Oberfläche wie gewohnt dargestellt.																																																					

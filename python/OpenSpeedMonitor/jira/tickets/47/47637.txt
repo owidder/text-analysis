@@ -1,8 +1,0 @@
-The range slider should disappears with any other action	"Steps to reproduce:
-1. Go to LSD
-2. Use any filtering by numeric properties, for example, for Content elements
-(Actual: range slider appears in the Menu bar)
-3. Use any filtering for Content type by enumeration properties
-Actual: Range slider stays opened
-Expected: Range slider should disappears with any other option"	47574	Sub-task	iteraplan PO	20/Apr/15 10:26 AM	22/Apr/15 10:09 AM													"Workspace: Windows 8.1
-Revision: 951"	21/Apr/15 11:10 AM;sepr;Done as on NCD - disappears for changed filter or changed content/axises	21/Apr/15 11:25 AM;dasm;not fixed	22/Apr/15 10:09 AM;dasm;duplicate of IP9-476	22/Apr/15 10:09 AM;dasm;duplicate of IP9-476																																																			

@@ -1,7 +1,0 @@
-It is possible to enter letters instead of numbers to the Date range	"Steps to reproduce:
-1. Go to LSD
-2. Use any  filtering by date properties for content elements
-3. Enter ""Test"" to the ""from""/""until"" field
-Actual: It is possible to enter letters instead of numbers to the Date range
-Expected: It is impossible to enter letters instead of numbers to the Date range"	47574	Sub-task	iteraplan PO	20/Apr/15 11:24 AM	22/Apr/15 3:53 PM													"Workspace: Windows 8.1
-revision: 591"	22/Apr/15 10:45 AM;dasm;verified (rev 992)																																																						

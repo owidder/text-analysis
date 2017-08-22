@@ -1,3 +1,0 @@
-Moving the Attribute Type Group up and down causes the NonUniqueObjectException	"* When the second-level cache is off, the moving AT causes NonUniqueObjectException.
-* After creating a new attribute type group, it has the same POS value in the database as the previously last group. This can lead to cumbersome behaviour when positions are swapped.
-"		Bug	iteraplan PO	09/Sep/11 10:29 AM	13/Sep/11 9:58 AM					attribute																																																															

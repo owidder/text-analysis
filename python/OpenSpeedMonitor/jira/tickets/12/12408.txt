@@ -1,5 +1,0 @@
-Export Highchart-Bitmaps mit eigenem Server funktioniert nicht mehr	"Der Export funktioniert bei wenigen Daten im Diagramm aber nicht bei mehr Daten. Zum Beispiel das Default-CSI-Dashboard lässt sich nicht mehr exportieren. 
-
-Grund ist der folgende Apache2-Bug:
-https://issues.apache.org/bugzilla/show_bug.cgi?id=12355
-Siehe zur Lösung auch http://blog.bombcar.com/2008/01/apache-413-error-problems.html"		Bug	OpenSpeedMonitor	28/May/14 3:47 PM	28/May/14 5:16 PM														28/May/14 5:16 PM;nkuhn;in puppet gelöst (commit 4544f5e21b119e88402d65a900f17cf14863d193)																																																						

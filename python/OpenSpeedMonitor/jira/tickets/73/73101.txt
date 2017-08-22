@@ -1,9 +1,0 @@
-Bamboo-Job der sicherstellt, dass der OSM mit Blanko-DB startet	"Die zahlreichen Changelogs testen wir beim Entwickeln meistens nur mit Dumps bestehender Datenbanken (OTTO).
-
-
-
-Da kann es schon mal durchrutschen, dass die Changelogs nicht mehr zu einer Blanko-DB passen und dann lässt sich der OSM von Github nicht mehr clonen und starten.
-
-
-
-Bitte den Job (wie alle TEST-Jobs) auch nach Slack reporten."		Task	OpenSpeedMonitor	12/Feb/16 9:34 AM	03/Jun/16 2:48 PM														03/Jun/16 2:48 PM;nku;Ist durch die Integration-Tests sichergestellt.																																																						

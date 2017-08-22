@@ -1,1 +1,0 @@
-MarshallingException while loading saved landscape diagram query	Our public server logs an (Un)MarshallingException from time to time. The XML query definition and the stacktrace can be found in the attached file.		Bug	iteraplan PO	29/Jun/11 4:56 PM	15/Jul/11 11:27 AM					query																																																															

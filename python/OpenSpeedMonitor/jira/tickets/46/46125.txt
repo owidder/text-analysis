@@ -1,3 +1,0 @@
-Masterplan diagram does not show used Infrastructure Elements	Masterplan configured for IS at lvl1, IE at lvl 2 and used IE at lvl3 does not show used IE at least in SVG and Visio formats.		Bug	iteraplan PO	14/Oct/13 5:31 PM	17/Nov/14 10:14 AM					masterplan									"15/Oct/13 2:07 PM;psc;Apparently this issue already occured with 3.1. 
-For now, it will be put on the roadmap."	07/Nov/14 2:17 PM;fka;Is this still applicable with 3.4?	10/Nov/14 4:01 PM;isc;Yes it's still applicable with 3.4.	"17/Nov/14 10:14 AM;fam;Checked code and function and it works regularly, now.
-closed"																																																			

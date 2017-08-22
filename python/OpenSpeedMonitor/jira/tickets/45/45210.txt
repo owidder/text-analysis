@@ -1,4 +1,0 @@
-Generic landscape diagram leads to error message	Try to create a landscape diagram for IS, top OrgUnits, left Processes. Choose Visio or SVG as output. Executing the report leads to error message. Please see the 3 screenshots attached.		Bug	iteraplan PO	20/Oct/11 1:51 PM	20/Oct/11 3:06 PM					diagram									"20/Oct/11 3:06 PM;sry;Cannot reproduce on other systems. 
-The demo system on iteraplan.de was not completely initialized last night, had a hickup, so this coudl be the reason.
-
-I triggered a reinitialization and will check back when it's finished."	20/Oct/11 3:11 PM;kvo;cannot reproduce either																																																					

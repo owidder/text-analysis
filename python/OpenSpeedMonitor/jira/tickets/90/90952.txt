@@ -1,3 +1,0 @@
-Berücksichtigung Multistep-2016 in WPT-Ergebnis-Persistenz 	"Die aktuelle Neu-Entwicklung der Multistep-Funktionalität im WPT-Server Core bedingt eine Veränderung der xmlResult-Schnittstelle.
-
-Der OSM nutzt diese Schnittstelle beim Persistieren von Results. Der Code muss hier so angepasst werden dass er auch mit dem neuen Format umgehen kann und dessen Results sauber persistiert.  "		Story	OpenSpeedMonitor	20/Jul/16 1:04 PM	27/Jul/16 10:23 PM																																																																				

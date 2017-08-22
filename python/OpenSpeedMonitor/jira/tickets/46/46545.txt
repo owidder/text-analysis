@@ -1,7 +1,0 @@
-Migration from 3.1 to 3.2 fails if there are duplicate relations between ISR and BF in the BM and HIST_BM tables	"As, in iteraplan 3.1, there is no unique constraint in the database tables BM and HIST_BM for relations between Information System Releases and Business Functions, some customers seem to have duplicate entries there.
-
-The migration to iteraplan 3.2 moves the relation between Information System Releases and Business Functions into a separate table (+ history table), where a unique constraint is present.
-This results in the migration script failing if the customer's data is corrupted with above mentioned duplicates.
-
-Create a script to remove such duplicates before running the migration script."		Bug	iteraplan PO	26/Mar/14 4:02 PM	27/Mar/14 11:25 AM					migration									"26/Mar/14 4:08 PM;sfe;Created an oracle version of the clean-up script.
-Adaption of the script to use for MySQL databases can be done once an actual case with a MySQL database appears."																																																						

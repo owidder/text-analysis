@@ -1,3 +1,0 @@
-Alle def-Deklarationen entfernen und Typen explizit nennen	"Derzeit werden viele def-Deklarationen bei Variablen und Operationsergebnissen verwendet. Dieses schränkt den ohnehin geringen refactoring support unnötig weiter ein.
-
-Im Rahmen dieses Tickets sollen ALLE def-Deklarationen gegen explizite Typ-Deklarationen ersetzt werden. Bei Collections sollen, zum Zwecke des besseren Code-Verständnis, die Typ-Parameter gemäß des Inhalts gesetzt werden."		Improvement	OpenSpeedMonitor	22/Jul/13 4:21 PM	18/Jan/17 2:49 PM																																																																				

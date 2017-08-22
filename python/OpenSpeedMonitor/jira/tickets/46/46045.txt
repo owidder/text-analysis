@@ -1,8 +1,0 @@
-Attributed Relationship IS to IE	"The user should be enabled to further specify the relationship between an information system (IS) and an infrastructure element (IE)  by attributes. 
-
-Therefore the following changes need to be implemented:
-- Extension of the relationship between IS and IE to be attributable
-- The administration page should be enhanced in a way that a new attribute can be assigned to the relation between IS and IE
-- Under the menu option EA data -> IS -> Relations -> Infrastructure Architecture should not only show the related IEs but also the value of the attributed relationship (the same is true for the other end of the attributed relationship at the IE side)
-- The edit mode at the EA data screen should support editing of the attribute value
-"		New Feature	iteraplan PO	03/Sep/13 1:05 PM	30/Dec/15 3:15 PM																																																																				

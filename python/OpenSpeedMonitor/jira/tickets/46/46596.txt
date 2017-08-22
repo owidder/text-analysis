@@ -1,7 +1,0 @@
-Test XMI | ecore via test sheet	"Short documentation of results in this ticket
-Findings in a new bug / task ticket
-
-NOT to be done by ISC, who created the test sheet"		Task	iteraplan PO	24/Apr/14 11:25 AM	28/Apr/14 4:37 PM					ecore	export	import	test	XMI					28/Apr/14 11:45 AM;kgo;EMF Export Test Sheet	"28/Apr/14 3:37 PM;kgo;Following tickets created to address issues which have occured during the testing of the EMF Import:
- * ITERAPLAN-2486
- * ITERAPLAN-2487
- * ITERAPLAN-2488"	28/Apr/14 3:52 PM;kgo;EMF Import Tests Result.																																																				

@@ -1,1 +1,0 @@
-Page Aggregation Chart funktioniert nicht richtig	Wenn man im Page Aggregation Chart von einem Messwert ohne Ampel auf einen mit Ampel wechselt, werden Ampel und Legende nicht richtig angezeigt. (z.B.: von bytes doc complete auf doc complete)		Bug	OpenSpeedMonitor	04/Jul/17 5:06 PM																																																																					

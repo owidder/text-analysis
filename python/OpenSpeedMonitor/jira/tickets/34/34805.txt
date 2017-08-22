@@ -1,7 +1,0 @@
-MySQL-Dump OTTO automatisiert ziehen	Jenkins-Job einrichten, der das Dump Tool nutzt (siehe IT-453)		New Feature	OpenSpeedMonitor	16/Mar/15 9:59 AM	09/Apr/15 3:25 PM														"09/Apr/15 3:25 PM;nku;Hier findet man die Dumps der letzten 30 Tage:
-
-http://seu.hh.iteratec.de:8081/view/OpenSpeedMonitor/job/DUMP_OTTO_OSM_DB_LAST_30_DAYS/
-
-Hier findet man die Dumps der letzten 90 Tage:
-
-http://seu.hh.iteratec.de:8081/view/OpenSpeedMonitor/job/DUMP_OTTO_OSM_DB_LAST_90_DAYS/"																																																						

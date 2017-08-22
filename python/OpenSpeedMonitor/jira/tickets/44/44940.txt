@@ -1,1 +1,0 @@
-Excel import on-screen log in english	... regardless of the language set for iteraplan UI. Would prefer to have the log messages in the language set for the UI as well.		Improvement	iteraplan PO	19/May/11 7:39 AM	30/Dec/15 2:32 PM					excel	import								27/Jun/12 1:27 PM;tse;Still applies with the new Excel importer.																																																						

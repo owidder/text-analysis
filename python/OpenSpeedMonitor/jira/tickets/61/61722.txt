@@ -1,9 +1,0 @@
-Add info text to diagram pages	"See attached example.
-
-
-
-LSD: ""Configuration by left click on an element"" - ""Konfiguration durch Links-Klick auf ein Element""
-
-NCD: ""Configuration by right click on an element"" - ""Konfiguration durch Rechts-Klick auf ein Element""
-
-IFD: ""This diagram is still work in progress"" - ""Dieses Diagramm ist noch work in progress"""		Improvement	iteraplan PO	28/Oct/15 2:27 PM	29/Oct/15 2:20 PM																																																																				

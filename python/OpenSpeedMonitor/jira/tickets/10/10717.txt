@@ -1,7 +1,0 @@
-Bug in der Validierung des ausgewählten Zeitraums im CSI Dashboard bei von=... 0 Minuten	"Sobald man bei der Auswahl des Zeitraums im CSI Dashboard für die Angabe des von-Zeitpunkts den Beginn der Stunde angibt, also die Minutenauswahl auf 0 stellt, Gibt es statt der Darstellung der Erebnisse eine Fehlermeldung, die behauptet, die Miutenanzahl für den bis-Zeitpunkt wäre ungültig. 
-
-Der Fehler tritt unabhängig von den gewählten Stunden und der gewählten bis-Miuten auf, aber nur dann wenn von-Datum und bis-Datum identisch sind.
-
-In dem angehängten ScreenShot ist irreführenderweise als von-Minutenangabe 48 zu sehen. Das liegt aber an dem bekannten Bug, dass der Minuteneintrag bei Fehlermeldungen auf seinen Ausgangswert verstellt wird.
-
-Wenn dieser Bug gefixt wird sollten wir möglichst die Minutenangaben ganz und gar als Eingabefelder eliminieren (erst gar nicht anzeigen). Bei der Auswahl von Stunden oder gar Wochenmittelwerten macht die Angabe von Minuten als Ausgangs- oder Endzeit ohnehin keinen Sinn. Stattdessen sollte der von-Minutenwert fest mit 0 und der bis-Minutenwert fest mit 59 vorbelegt sein."		Bug	OpenSpeedMonitor	30/Oct/13 9:02 PM	31/Oct/13 12:15 PM													http://iteraspeedmonitor.wpt.otto.iteratec.de/csiDashboard/showAll	31/Oct/13 12:14 PM;mzeimer;Äquivalent zu IT-175 (null Prüfung)																																																						

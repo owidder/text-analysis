@@ -1,5 +1,0 @@
-Sometimes context menu doesn't appear	"Summary:
-Sometimes when user changes Content element type several times - Context menu doesn't appear"	47460	Sub-task	iteraplan PO	16/Mar/15 5:03 PM	19/Mar/15 2:09 PM													"Workspace:  Windows 8.1
-Browser: Google Chrome 39.0
-revision: 765"	"19/Mar/15 2:09 PM;dasm;Verified
-revision: 791"																																																						

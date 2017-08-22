@@ -1,5 +1,0 @@
-Mass update documentation	When implementation is complete and we can make proper screenshots, write the documentation for mass update feature.		Bug	iteraplan Speedbird	21/Mar/17 1:30 PM	24/Apr/17 5:37 PM														"13/Apr/17 10:57 AM;roia;Updated documentation page: [https://doc.iteraplan.de/display/iteraplan60/List+view]
-
-
-
- "																																																						

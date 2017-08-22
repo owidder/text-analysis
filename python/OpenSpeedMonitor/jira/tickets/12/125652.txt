@@ -1,1 +1,0 @@
-Remove libraries	Remove all now unneeded libraries. Update the 3rd party library overview and the list of used open source licenses.		New Feature	iteraplan Thunderduck	28/Jun/17 11:50 AM																																																																					

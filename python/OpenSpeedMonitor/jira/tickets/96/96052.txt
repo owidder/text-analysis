@@ -1,1 +1,0 @@
-Mandantenfähigkeit 1.0	In einer ersten Version soll eine _tenantId_ von Camunda an Kibana weitergereicht werden um dem Basis UI (SDO-268) die Filterung zu ermöglichen.	95598	Sub-task	secureCodeBox	14/Sep/16 3:16 PM		secureBoxEngine				Energy																																																															

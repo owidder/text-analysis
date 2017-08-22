@@ -1,5 +1,0 @@
-Create integration test for translation maps in IC	"create a karma test, which compares if all the translation maps (app/locales/locale-xx.json) have the same key structure.
-
-
-
-"		Improvement	iteraplan PO	20/Aug/15 11:11 AM																																																																					

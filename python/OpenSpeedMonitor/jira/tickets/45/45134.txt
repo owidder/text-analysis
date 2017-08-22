@@ -1,8 +1,0 @@
-The JavaScript takes long to sort the select lists used for BusinessMappings	"Especially this problem can be seen for big data sets and in Internet Explorer (8 and 9). For example 3000 Information systems require 10 seconds to sort the whole list.
-Is it possible to improve the sortList() function in ListUtils.js?
-
-How to reproduce:
-1. Open Product
-2. Click on Edit
-3. Go to Relations Tab
-4. Move any Information System from right to left"		Improvement	iteraplan PO	12/Sep/11 1:20 PM	22/Sep/11 2:35 PM					javascript	mapping								22/Sep/11 2:35 PM;agu;very good :)																																																						

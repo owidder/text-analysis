@@ -1,5 +1,0 @@
-Berücksichtung der Connectivity beim Laden der Assets	"de.iteratec.osm.da.persistence.AssetRequestPersistenceService#getRequestAssets
-
-
-
-Diese Methode sollte so erweitert werden, dass auch nach der Connectivity gefiltert werden kann. Das sollte jedoch optional sein."		Improvement	OpenSpeedMonitor	31/Jul/16 9:33 PM	11/Aug/16 2:16 PM																																																																				

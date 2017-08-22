@@ -1,7 +1,0 @@
-N3CD doesn't work with missing permissions	ask [~sfe]		Bug	iteraplan PO	27/Apr/16 11:20 AM	27/Apr/16 2:26 PM														"27/Apr/16 1:02 PM;mse;In general, the fix looks good to me. Two small comments:
-
-
-
-* Copying of the URL *does* work, although I expected it not to work. That's great!
-
-* If the user has only permissions for two building block elements which are not connected (e.g. IS domains and products), there is an error message when the NCD is opened. Could this be caught somehow?"	27/Apr/16 1:35 PM;pzi;probably the same reason in ITERAPLAN-4164 as well as ITERAPLAN-4534 so the fix could potentially be applied for LSD and IFD too?	27/Apr/16 2:26 PM;sfe;Follow-up ticket created, so all is fine																																																				

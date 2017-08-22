@@ -1,6 +1,0 @@
-xml-result anpassen, was an den WPTMonitor geht	"Der WPTMonitor wird bisher beim Aufruf der xmlResult-action im WptProxyController des ism auf wptserverUrl/xmlResult.php?f=xml&test=resultId redirected. Hier muss stattdessen der entsprechende wptserver-Aufruf im ism abgefangen werden und das xml vorm Senden an den WPTMonitor angepasst werden. Das zurückgesendete xml muss in die Form vor multistep gebracht werden. Die angezeigten Zeiten und sonstigen Messwerte werden nicht sinnvoll belegt werden können. Die Anpassung des XML's dient nur dazu, dass die REPORTS-Seite des Monitors überhaupt noch in der Lage ist, Results anzuzeigen.
-
-Idealerweise sollte ein neuer Result-Status eingeführt werden, der auf der REPORTS-Seite angezeigt wird.
-z.B.
-status 9991='Results werden im iteraSpeedMonitor angezeigt'
-oder so ähnlich."		Bug	OpenSpeedMonitor	15/Aug/13 11:55 AM	28/Oct/13 9:02 AM														19/Aug/13 5:00 PM;rhe;Fällt vermutlich weg	10/Sep/13 4:31 PM;mzeimer;WPTMonitor wird für Ergebnisse abgelöst. Hat sich daher nach Sprint 3 erledigt. Der Status im WPTMonitor ist "other", dass ist OK.	28/Oct/13 9:02 AM;jwerschmoeller;Wir verzichten auf Result-Darstellungen im WPT-Monitor																																																				

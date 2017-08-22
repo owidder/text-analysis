@@ -1,2 +1,0 @@
-Graphite: Tagesmittelwerte einer Page aus Rohdaten	"Regelmäßige Übermittlung der UNGEWICHTETEN Tagesmittelwerte aus Rohdaten an Graphite. 
-Die Logik wird aus dem  Reports-Dashboard herausgelöst und dann gemeinsam gentutzt.. (Cron-Job)"		Task	OpenSpeedMonitor	06/Nov/13 1:02 PM	18/Jan/17 3:01 PM																																																																				

@@ -1,1 +1,0 @@
-Sichersetllen, dass Instanz nur über HTTPS erreichbar ist	Es sollte immer ein redirect von HTTP auf HTTPS erfolgen. 	128009	Sub-task	OpenSpeedMonitor	26/Jul/17 7:00 AM															26/Jul/17 7:04 AM;sbr;Umzug des DNS Eintrags steht noch aus, sollte ggf. abgewartet werden.																																																						

@@ -1,7 +1,0 @@
-Insert Icons for Customizing, save, save as	"#  I have created the icon for *Customizing*. Please add the icon in the attachment to the tile.
-
- # The *Save* and *Save-as* icon do not have the same size. The diskette of save is smaller. Two files attached contain two icons which have the same size of diskette. 
-
-Please resize the icons or use the new ones.
-
-Contact [~sbu] if you need any other format etc. "		Improvement	iteraplan Speedbird	24/Jul/17 2:10 PM																																																																					

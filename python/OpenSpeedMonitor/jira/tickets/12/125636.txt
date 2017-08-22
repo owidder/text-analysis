@@ -1,5 +1,0 @@
-Testen ob bei Job-Duplizierung die richtige Location übernommen wird	Es sollte getestet werden (am besten direkt per Unit-Test), dass beim duplizieren eines Jobs (mit "Saves as") alle Attribute richtig übernommen werden. Insbesondere geht es um die richtige Location. Es kann sein, das dies einmal nicht geklappt hat.		Task	OpenSpeedMonitor	28/Jun/17 11:27 AM															28/Jun/17 11:36 AM;nku;Auch das `tag` wird definitiv nicht übernommen. Also bitte auf alle Attribute testen!	"11/Jul/17 9:47 AM;bwo;Ich konnte den Fehler lokal nicht reproduzieren. Sowohl die Tags als auch die Location wurden korrekt übernommen. Die entsprechenden Tests wurden implementiert. Zusätzlich habe ich auch Tests für die anderen CRUD Methoden eingefügt.  
-
-
-
-Mit welchem Browser bzw. welcher Version des Browsers trat der Fehler auf? Evtl. werden unter einem bestimmten Browser die Parameter nicht korrekt übermittelt."																																																					

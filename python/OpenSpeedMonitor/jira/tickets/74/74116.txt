@@ -1,9 +1,0 @@
-Jobsets ersetzen durch Tags	"Das Jobset soll ausgebaut werden.
-
-
-
-Die Funktionalität, für die das Jobset gedacht war, lässt sich durch Tags besser abbilden. Dadurch kann man am Job sehen, zu welchem Tag/Jobset ein Job gehört.
-
-
-
-In diesem Rahmen soll, das Jobset von der Job-Oberfläche verschwinden. Statt dem Jobset soll in der Zeile (s.Screenshot) ein ""Füge Tag hinzu"" stehen. Damit soll man den markierten Jobs ein Tag hinzufügen können. Anschließend kann man durch das bereits vorhandene Tag-Filter-Feld nach diesen Jobs filtern."		Improvement	OpenSpeedMonitor	19/Feb/16 10:12 AM	03/Jan/17 3:42 PM																																																																				

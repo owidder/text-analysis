@@ -1,3 +1,0 @@
-Die Log4J Config über einen Jenkinsparameter konfigurierbar	Um die Debugausgabe leichter zu aktivieren, soll die log4j Config für ZAP über einen Jenkinsparameter ggf. mit Debugsettings konfigurierbar sein.		Task	secureCodeBox	10/Oct/14 2:43 PM	18/Nov/14 2:15 PM														"18/Nov/14 2:15 PM;bwo;Es existiert nun die Möglichkeit unser Programm mit dem Parameter
-
---debug zap=DEBUG zu starten, um ein entsprechendes Level für den ZAP Log zu setzen. Das führt dazu, dass der Eintrag in der log4j.propertis gespeichert wird. Folglich bleibt die Einstellung auch nach entfernen des Parameters."																																																						

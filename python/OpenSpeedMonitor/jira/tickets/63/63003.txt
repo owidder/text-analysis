@@ -1,1 +1,0 @@
-Analyse scope for unit tests in New Client	Analyse the scope for unit tests in the New Client by (to be defined) criteria.		Task	iteraplan PO	10/Nov/15 10:26 AM	27/Nov/15 2:34 PM					test																																																															

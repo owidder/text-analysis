@@ -1,1 +1,0 @@
-Sprachauswahl funktioniert im Firefox nicht	Interessanterweise funktioniert die Sprachauswahl allerdings in Chrome.		Bug	OpenSpeedMonitor	20/May/16 11:39 AM	23/May/16 10:48 AM																																																																				

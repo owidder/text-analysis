@@ -1,7 +1,0 @@
-Treemap: layout update	"* Text labels centered inside the box,
-
-* -Remove the debug information (key, size)-
-
-* -Truncation on long text in the box, full text in the tooltip-
-
-* -Update tooltip background color-"		New Feature	iteraplan Speedbird	28/Oct/16 3:47 PM	04/Nov/16 9:31 AM					TreeMap																																																															

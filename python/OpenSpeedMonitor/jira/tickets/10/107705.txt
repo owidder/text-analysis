@@ -1,7 +1,0 @@
-TimeToInteractive als Measurand aufnehmen	"In WebPagetest wird eine neue Metrik entwickelt, die TTI (Time to Interactive):
-
-https://github.com/WPO-Foundation/webpagetest/issues/781
-
-
-
-Wir sollten diese in OSM mit als Measurand aufnehmen."		New Feature	OpenSpeedMonitor	09/Jan/17 8:35 AM	18/Jul/17 3:32 PM																																																																				

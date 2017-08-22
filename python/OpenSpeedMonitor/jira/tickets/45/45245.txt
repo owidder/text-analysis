@@ -1,7 +1,0 @@
-Show/edit self relations of InformationSystems in both directions	"Show/edit usage relation of InformationSystems in both directions.
-Currently it is only ""uses the following Information Systems"". Missing is ""used by the following Information Systems""
-
-Show/edit successor and predecessor relation of InformationSystems in both directions.
-Currently it is only ""Predecessor"". Missing is ""Successor"""		New Feature	iteraplan PO	09/Nov/11 6:08 PM	13/Jan/12 1:57 PM					usability									"09/Jan/12 12:21 PM;bsi;Please update the documentation. Perhaps it'll be good to add a JUnit test for the new relation.
-
-Currently it's not possible to add successors using Bulk Update."	12/Jan/12 3:59 PM;lci;The relation isn't "actually" new, only the access and display via the InformationSystemReleaseComponentModel is. The relations (e.g. cycle-behavior) and the component models are already covered by present tests.	13/Jan/12 1:57 PM;vsh;it's OK now.																																																				

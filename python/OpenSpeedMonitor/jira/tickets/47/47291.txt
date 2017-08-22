@@ -1,5 +1,0 @@
-UI bug with Context menu for outer element	"Steps to reproduce:
-1. Go to NCD page
-2. Open context menu for outer element
-
-Actual result: UI bug"		Bug	iteraplan PO	15/Jan/15 4:48 PM	06/May/15 1:34 PM																																																																				

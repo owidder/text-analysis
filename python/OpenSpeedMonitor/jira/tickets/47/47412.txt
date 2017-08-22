@@ -1,8 +1,0 @@
-Saved landscape visualisation within IS does not show error	"When viewing any IS on the detail page, go to the visualisation tab and choose landscape diagram, first option.
-
-Expected: Visualisation is rendered or an error string is displayed
-
-Actual: In the end in a small frame the page itself is shown again. Before this the following error is shown for a very short time:
-""Diesem Bebauungselement fehlen die Beziehungen für die gewählte Grafik. Fügen Sie die entsprechenden Beziehungen hinzu oder wählen Sie eine andere Grafik.""
-"		Bug	iteraplan PO	11/Feb/15 8:26 PM	17/Feb/15 1:41 PM														"17/Feb/15 1:41 PM;sfe;Seems to be Chrome only issue (worked in Firefox and IE11).
-Chrome is not supported."																																																						

@@ -1,1 +1,0 @@
-Migrate Attribute Filter for CCD	(to be analysed and if needed implemented		Improvement	iteraplan PO	03/Feb/17 2:01 PM	07/Feb/17 2:07 PM														06/Feb/17 2:47 PM;ach;see revision 26746																																																						

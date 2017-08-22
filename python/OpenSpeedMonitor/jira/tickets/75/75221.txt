@@ -1,5 +1,0 @@
-OsmConfiguration zum Singleton machen	"Mit dem Ticket IT-947 wurde die OsmConfiguration so modifiziert, dass es immer nur eine Instanz davon geben.
-
-Noch besser wäre es, wenn man die OsmConfiguration zu einem Singleton macht, denn genau das soll sie sein. Dies lässt sich bspw. durch das Plugin http://grails.org/plugin/settings machen."		Improvement	OpenSpeedMonitor	01/Mar/16 10:33 AM															"01/Mar/16 12:52 PM;nku;Das Plugin wird seit 2010 nicht mehr gepflegt, ich würde vom Einsatz eher absehen.
-
-Zudem können wir mit recht einfachen Mitteln dafür sorgen, dass immer genau ein Objekt existiert."	01/Mar/16 12:58 PM;bka;Ich habe bereits dafür gesorgt, dass immer nur ein Objekt dafür existiert. Allerdings ist es nicht Sinn und Zweck einer Domain-Class daraus ein Singleton zu machen. Das geht mit Sicherheit auch schöner.																																																					

@@ -1,1 +1,0 @@
-Long names of IS not shortened, when element in a "Business-Support-Map-like" visualization	When you choose Business Objects and Business Processes as axis in a Business support map and put IS in the middle, the long names of IS are not shortened.		Bug	iteraplan PO	16/Dec/13 4:30 PM	19/Jan/16 11:33 AM																																																																				

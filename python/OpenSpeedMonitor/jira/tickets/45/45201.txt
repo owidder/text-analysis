@@ -1,4 +1,0 @@
-LDAP passwords with umlauts prevent successful login	"One customer reported that users with umlauts in their passwords cannot login to iteraplan. They have their installation configured for LDAP authentication against an Active Directory.
-
-I have not yet reproduced that issue.
-Note that their Tomcat connector seemed to be misconfigured and did not use UTF-8 encoding (though I believe that this is unrelated)"		Bug	iteraplan PO	18/Oct/11 4:24 PM	24/Oct/11 10:01 AM					authenication									20/Oct/11 10:48 AM;sry;The reason is that the CharacterEncodingFilter is called too late, after Spring Security. Hence, the password is decoded incorrectly	21/Oct/11 12:22 PM;bsi;In iteraplan funktioniert dagegen das Einloggen problemlos.																																																					

@@ -1,9 +1,0 @@
-Query Console {Firefox}		124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:19 PM	20/Jun/17 11:12 AM														"15/Jun/17 6:37 PM;naba;For smoke test please use https://doc.iteraplan.de/display/iteraplan60/Query+Console (examples and tips).
-
-Please be creative and progressive.
-
-*Note*: work with documentation is still in progress."	"20/Jun/17 11:14 AM;vadm;Tested in FF.
-
-
-
-Issues: https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-5427, https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-5425"																																																					

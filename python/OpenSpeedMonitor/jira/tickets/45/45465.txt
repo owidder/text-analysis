@@ -1,6 +1,0 @@
-Relations to Information Systems get lost when a Technical Component is copied or released	"Reproduction:
-# Open an existing Technical Component. It should already have some relations to Information Systems. Choose ""Copy"" or ""New Release"" from the More-menu
-# Check the Relations tab, verify that these IS relations are taken over.
-
-Result: They are lost, in contrast to most other relations in other building block types."		Bug	iteraplan PO	10/Apr/12 10:52 AM	13/Apr/12 11:25 AM					copy									12/Apr/12 10:40 AM;gph;Is it really unwanted behaviour? These relations are explicitly removed in TechnicalComponentReleaseFrontendServiceImpl.getCopyReleaseMemBean(). Compare with ticket ITERAPLAN-155 and sub-issues.	"12/Apr/12 2:04 PM;kvo;yes, IS are missing. Interfaces should be removed and are not copied.
-No urgent issue, since this behaviour is already in 2.9"	13/Apr/12 11:25 AM;vsh;OK.																																																				

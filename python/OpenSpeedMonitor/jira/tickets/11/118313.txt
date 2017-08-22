@@ -1,5 +1,0 @@
-Enter/Update/Exit in DistributionChart verwenden	"Derzeit wird beim Neuzeichnen des DistributionCharts immer das gesamte SVG weg geschmissen und neu erstellt. Dies ist ineffizient und lässt auch keine Transitionen zu.
-
-
-
-Wir sollten auch hier auf das ""normale"" Enter/Update/Exit Verhalten von D3 umstellen."	114501	Sub-task	OpenSpeedMonitor	11/Apr/17 10:35 AM																																																																					

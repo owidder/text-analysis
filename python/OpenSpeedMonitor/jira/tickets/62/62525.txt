@@ -1,9 +1,0 @@
-Messungen mit Custom-Anbindung werden nicht immer angezeigt	"Trägt man einen regex ein werden die Messungen mit entsprechender Custom-Anbindung nur dann angezeigt, wenn man die Checkboxen ""Alle Anbindungs-Profile auswählen"" und ""Messungen mit nativer Anbindung anzeigen"" nicht angehakt hat.
-
-
-
-Das sollte additiv angezeigt werden.
-
-
-
-Zudem wird die gewählte Einstellung der beiden Checkboxen nicht übernommen. Hakt man bspw. ""Alle Anbindungs-Profile auswählen"" nicht an und klickt auf anzeigen, so ist bei der Anzeige der Haken default-mäßig wieder gesetzt."		Bug	OpenSpeedMonitor	04/Nov/15 5:37 PM	05/Nov/15 9:54 PM														04/Nov/15 5:51 PM;nku;Auch Messergebnisse mit Anbindung _native_ werden nicht angezeigt, wenn man weitere Häkchen setzt.																																																						

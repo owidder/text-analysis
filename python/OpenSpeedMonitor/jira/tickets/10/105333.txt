@@ -1,7 +1,0 @@
-Geb-Tests für dynamische Parameterauswahl erstellen			Task	OpenSpeedMonitor	12/Dec/16 11:43 AM															"21/Dec/16 10:26 AM;sbr;Zuerst muss das generelle Geb-Test Problem gefixt werden.
-
-Viele der jetzt existierenden Geb-Tests sind bereits so umgeschrieben, dass die dynamische Parameterauswahl teilweise getestet wird.
-
-
-
-Es werden ggf nur noch ein/Zwei extra Tests benötigt die das gegenseitige Filtern der Formular-Elemente besser testen."																																																						

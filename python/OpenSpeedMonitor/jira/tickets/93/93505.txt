@@ -1,5 +1,0 @@
-Change style of alert-message	"Create two different css-styles for the alert-message in the new client:
-
-1. for reactor with indention
-
-2. for the rest of the application without any indention"		Improvement	iteraplan Thunderduck	18/Aug/16 8:55 AM	25/Jan/17 10:50 AM														25/Jan/17 10:50 AM;fka;Fixed with some other ticket																																																						

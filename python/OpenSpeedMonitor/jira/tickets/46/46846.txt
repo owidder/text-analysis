@@ -1,1 +1,0 @@
-Make functionality for Business Objects grouping	Re-render the diagram with outer-boxes grouping by business objects	46838	Sub-task	iteraplan PO	13/Aug/14 10:07 PM	29/Sep/14 10:00 AM														29/Sep/14 10:00 AM;fka;Original intention will be implemented in another ticket																																																						

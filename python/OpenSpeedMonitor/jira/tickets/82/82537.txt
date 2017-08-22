@@ -1,3 +1,0 @@
-Filter-Refactoring			Improvement	iteraplan PO	29/Apr/16 10:54 AM	02/May/16 9:59 AM					nic									"29/Apr/16 10:57 AM;abo;Refactoring according ITERAPLAN-4520.
-
-Created a new Ticket, because the other one was reviewed and closed already."																																																						

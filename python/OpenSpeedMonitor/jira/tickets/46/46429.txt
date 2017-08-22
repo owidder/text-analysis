@@ -1,1 +1,0 @@
-Migrate Excel Export to ElasticMI	The ExcelExportFrontendService and ExcelExportService must be updated. The used Metamodel and Model has to be changed therefore to a ElasticMI RMetamodel and Model for Excel export. 		Task	iteraplan PO	23/Jan/14 1:41 PM	29/Jan/14 2:29 PM					Excel	Export								29/Jan/14 2:29 PM;sfe;seems fine																																																						

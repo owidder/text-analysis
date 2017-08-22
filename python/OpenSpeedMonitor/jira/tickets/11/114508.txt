@@ -1,5 +1,0 @@
-Konzeption und Dokumentation des Designs unserer UI Elemente	"Momentan schwirren z.B. viele verschiedene Schreibweisen auf unseren Buttons, Labels, Bezeichnungen, ... im OSM herum.
-
-
-
-Um eine Vereinheitlichung zu erzielen, sollten wir anfangen Guidelines für Design, Schreibweisen, ... festzulegen und einfach zugänglich zu dokumentieren."		Task	OpenSpeedMonitor	10/Mar/17 8:52 AM																																																																					

@@ -1,7 +1,0 @@
-Sort by number column	"Attention: Make sure ID column is treated as number column.
-
-
-
-Attention: 10 not before 1."		New Feature	iteraplan PO	10/May/16 11:11 AM	01/Jun/16 2:59 PM														"25/May/16 10:18 AM;mwe;Add custom comparator: See the comparator implementation in [ITERAPLAN-4576] and [https://www.ag-grid.com/javascript-grid-sorting/index.php]
-
-Add the num comparator to feature columns with type num."	01/Jun/16 2:59 PM;mse;See ITERAPLAN-4567 for review comments.																																																					

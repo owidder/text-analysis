@@ -1,8 +1,0 @@
-Attribute value changes are sometimes not applied when using IE9	"Reproduce with sample data:
-# Open iteraplan in IE9
-# Open Information System *Account-Sys RB # 3.1*
-# Set {{Complexity}} to *low* and {{System size}} to *big* and save
-# Set {{Complexity}} and {{System size}} both to *average* and save
-=> In step 3 and/or 4 one or more of the changes may not have been applied. If everything worked correctly, try different changes of those two attributes for a few more times.
-
-Assumption due to browser dependent behavior: May be javascript related, possible culprit: combobox"		Bug	iteraplan PO	20/Nov/13 10:20 AM	19/Feb/14 2:52 PM					attribute	change	value																																																													

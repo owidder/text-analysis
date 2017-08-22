@@ -1,9 +1,0 @@
-Resize of editor pop-up via drag	"The editor pop-ups shuold be resizeable by dragging the corner of the editor.
-
-
-
-@[~ach] Clarify if needed with [~fka] 
-
-
-
-*UPD:* implemented vertical resizing for textareas (Rost)"		New Feature	iteraplan Thunderduck	10/Jan/17 10:45 AM	03/Feb/17 12:31 PM														03/Feb/17 12:31 PM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-331																																																						

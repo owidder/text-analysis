@@ -1,1 +1,0 @@
-Ein-/Ausklappen der Navigationsleiste bewirkt Sprung auf die Dashboard-Seite	Das Ein-/Ausklappen der Navigationsleiste bewirkt einen Sprung auf die Dashboard-Seite. Dabei sollte die aktuelle Ansicht erhalten bleiben.		Bug	EAM-Visualisierung	27/May/16 4:41 PM	02/Jun/16 10:27 AM																																																																				

@@ -1,3 +1,0 @@
-Mappings für alle Daten des DC-Dashboards	"Die Methode DetailAnalysisDashboardController#fillWithLabelAliases muss noch fertig implementiert werden.
-
-"		Improvement	OpenSpeedMonitor	05/Aug/16 9:17 AM	10/Aug/16 10:20 AM																																																																				

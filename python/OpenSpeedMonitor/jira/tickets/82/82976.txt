@@ -1,1 +1,0 @@
-BodgeIT Login-Seite spidern	Damit der Zap-Scanner sich authentifizieren kann, muss die Loginseite zuvor gespidert werden. Ansonsten funktioniert der authentifiziert Scan nicht.	75552	Sub-task	secureCodeBox	03/May/16 11:57 AM	21/Aug/16 12:56 PM	secureBoxZap				iteratec																																																															

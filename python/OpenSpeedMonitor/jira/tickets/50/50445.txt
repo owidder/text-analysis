@@ -1,1 +1,0 @@
-Jira mit Bamboo, FishEye und Crucible verknüpfen			Story	secureCodeBox	10/Jul/15 4:21 PM	06/May/16 1:06 PM																																																																				

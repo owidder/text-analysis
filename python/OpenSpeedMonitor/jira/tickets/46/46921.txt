@@ -1,1 +1,0 @@
-Enable Clipping for Nesting Cluster diagram	Enable clipping in Nesting Cluster diagram for output format SVG. 	46784	Sub-task	iteraplan PO	04/Sep/14 3:12 PM	16/Sep/14 8:53 AM														08/Sep/14 11:25 AM;dop;Updated documentation: http://www.iteraplan.de/wiki/display/upcomingIteraplan/Nesting+Cluster+Diagram																																																						

@@ -1,5 +1,0 @@
-Initiale BrowerConnectivityWeights per changelog erzeugen	"Es soll für jeden Browser mit weight > 0 für jedes existierende ConnectivitProfile ein neues BrowerConnectivityWeight erzeugt werden. Jedes dieser neuen Weights bekommt pro Browser das selbe Gewicht (das des Browsers). Das alte Attribut Browser.weight wird deprecated.
-
-
-
-Damit ergibt sich nach der Umstellung auf Gewichtung nach BrowerConnectivityWeight statt Browser exakt die selbe CSI-Gewichtung wie vorher."		Bug	OpenSpeedMonitor	04/Jan/16 2:55 PM	05/Jan/16 9:03 AM																																																																				

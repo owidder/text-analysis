@@ -1,4 +1,0 @@
-Location-Auswahl CSI-Dashboard	"Die Auswahl der Location enthält laut Text jede Location mehrfach (z.B. 9-mal ""Agent 1: Offizielles Monitoring"")
-Die Auswahl der Location enthält auch einen leeren Eintrag  (insgesamt 6-mal)
-
--> Bitte im Result-Dashboard mit prüfen."		Bug	OpenSpeedMonitor	23/Sep/13 9:29 AM	23/Sep/13 5:07 PM														23/Sep/13 5:07 PM;mzeimer;Erledigt im CSI Dashboard, da anschließend die Auswahl rausgezogen wurde, wird sich dies automatisch auch im ResultDashboard sich auswirken																																																						

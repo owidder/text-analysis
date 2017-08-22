@@ -1,7 +1,0 @@
-OSM gegen CSRF absichern 	"Grails bietet mit dem useToken-Attributs im <g:form> eine Möglichkeit, sehr einfach Cross Site Request Forgery-Angriffe zu vermeiden.
-
-Zur Info zu CSRF: https://de.wikipedia.org/wiki/Cross-Site-Request-Forgery
-
-
-
-Diese nutzen wir bisher nicht."		Task	OpenSpeedMonitor	15/Jan/16 5:06 PM																																																																					

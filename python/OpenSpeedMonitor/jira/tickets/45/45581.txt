@@ -1,8 +1,0 @@
-The Excel Export does not work with customizations 	"If you change the ""ApplicationResources.properties"" the export does not work anymore.
-For Example I have change several names of building blocks and glossary entries. 
-
-When I start the excel export I get the following error message: ""The query framework has experianced a fatal error (error code: {0}).""
-Sometimes it works, but I just get a default metamodel.
-"		Bug	iteraplan PO	16/Oct/12 10:33 AM	30/Apr/13 2:43 PM					excel									08/Mar/13 6:32 PM;sry;I think I've seen that work successfully several times already. Can you still reproduce the issue?	"30/Apr/13 12:08 PM;isc;I could reproduce the error.
-But now I think that is no problem with the customizations.
-I get this error only after the first login in iteraplan. To a later time, this error doesn’t occur. I suppose that iteraplan needs several time to load the data. "	30/Apr/13 2:43 PM;sry;Yes, iteraplan needs some time (depending of number BBs in the DB) to build the in-memory elastic representation, before Excel bulk operations work. This transformation is triggered by a login, or after some data has been modified (with a little delay)																																																				

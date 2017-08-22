@@ -1,3 +1,0 @@
-"general technical error" when importing data	Please find the iteraplan error report attached		Bug	iteraplan PO	20/Jun/14 11:12 AM	30/Jun/14 4:01 PM														30/Jun/14 4:01 PM;gph;Answered in support box.	"09/Jul/14 10:50 AM;frank.reiter;In case anybody is interested what happened: The error thrown because iteraplan ran out of memory.
-
-To bad iteraplan does not provide a meaningful error message and one has to involve the iteraplan support team to get this information!"																																																					

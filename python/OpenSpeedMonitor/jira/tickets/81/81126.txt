@@ -1,7 +1,0 @@
-[Integrationstests] Code aus setupSpec()/beforeClass() nach setup() verschieben	"In Grails 3 ist die Grails-Applikation in setupSpec() noch nicht initialisiert.
-
-Egentlich ist es auch besserer Stil, wenn jede Testmethode ihre Testdaten komplett selber initialisiert, da es so nicht zu Abhängigkeiten zwischen den Testmethoden kommen kann.
-
-
-
-Wir verschieben daher alle Logik von setupSpec() oder BeforeClass() nach setup()."		Task	OpenSpeedMonitor	20/Apr/16 11:20 AM	26/Apr/16 4:40 PM																																																																				

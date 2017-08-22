@@ -1,1 +1,0 @@
-Interface PersistenceProvider aus bestehenden InterfaceManager extrahieren		51760	Sub-task	secureCodeBox	24/Jul/15 8:03 PM	07/May/16 8:04 PM																																																																				

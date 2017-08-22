@@ -1,1 +1,0 @@
-iteraSpider Project in einem Docker Container verpacken		50434	Sub-task	secureCodeBox	24/Jul/15 12:40 PM																																																																					

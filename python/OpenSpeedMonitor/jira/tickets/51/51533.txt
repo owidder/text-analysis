@@ -1,7 +1,0 @@
-Inhalts-Hash im Namen von Ressourcen	"Es ist zu klären, wie man mit der Asset-Pipeline dafür sorgt, dass (in produktiven Deployments) bei weit in der Zukunft liegender Cache-Gültigkeit im Browser ein  Hash im Namen der Ressourcen dafür sorgt, dass bei Veränderungen die Ressource neu geladen wird. 
-
-
-
-Vielleicht ist das bereits so, vielleicht brauchen wir dafür auch ein weiteres Plugin."		Improvement	OpenSpeedMonitor	22/Jul/15 10:30 AM	30/Sep/15 5:23 PM														"30/Sep/15 5:23 PM;nku;Ist der default für prod environment im asset-pipeline plugin:
-
-http://bertramdev.github.io/asset-pipeline/guide/usage.html"																																																						

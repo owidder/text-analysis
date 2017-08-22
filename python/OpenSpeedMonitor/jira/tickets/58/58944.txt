@@ -1,5 +1,0 @@
-Calculated tool area menu width	"Calculate the width of a tool area menu based on its contents, instead of having one single fixed width for all tool area menus.
-
-Ensure, that the beginning of the second level menu is on this new dynamic width."		New Feature	iteraplan PO	02/Oct/15 3:32 PM	22/Oct/15 9:08 AM														"05/Oct/15 3:02 PM;msr;Idea: What happens if no width is set in CSS? Possible automatic adjustment.
-
-Possible problem: sub menu position"	22/Oct/15 9:08 AM;msr;Works fine in IE 9, FF and Chrome																																																					

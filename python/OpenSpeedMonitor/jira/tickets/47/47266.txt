@@ -1,7 +1,0 @@
-"Download" button should be removed from Recent View page	"IP9-230
-
-Steps to reproduce:
-1. Go to Recent view page
-
-Actual result: There is ""Download"" button in the Header menu
-Expected result: ""Download"" button should be removed"		Bug	iteraplan PO	29/Dec/14 5:28 PM	05/Jan/15 11:32 AM														05/Jan/15 11:32 AM;dasm;Verified (revision 488)																																																						

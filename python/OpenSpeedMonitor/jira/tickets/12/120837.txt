@@ -1,5 +1,0 @@
-Performance TimeSeries-Dashboard	"Diese lässt ist im Moment in der OTTO-Instanz deutlich zu Wünschen übrig:
-
-
-
-[http://iteraspeedmonitor.otto.wpt.iteratec.de/eventResultDashboard/showAll?graphName=&alias=&_action_showAll=Anzeigen&selectedInterval=-1&selectedTimeFrameInterval=604800&selectedFolder=48&selectedFolder=49&selectedPages=1&_selectedAllMeasuredEvents=&selectedAllMeasuredEvents=on&_selectedAllBrowsers=&selectedAllBrowsers=on&_selectedAllLocations=&selectedAllLocations=on&_selectedAllConnectivityProfiles=&selectedAllConnectivityProfiles=on&selectedAggrGroupValuesUnCached=docCompleteTimeInMillisecsUncached&trimBelowLoadTimes=&trimAboveLoadTimes=&trimBelowRequestCounts=&trimAboveRequestCounts=&trimBelowRequestSizes=&trimAboveRequestSizes=]"		Task	OpenSpeedMonitor	08/May/17 1:30 PM																																																																					

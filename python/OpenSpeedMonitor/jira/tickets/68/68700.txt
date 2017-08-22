@@ -1,5 +1,0 @@
-CsiDefaults Highlighting ist falsch	Es werden die falschen Kurven hervorgehoben.		Bug	OpenSpeedMonitor	06/Jan/16 10:16 AM	06/Jan/16 11:07 AM														06/Jan/16 10:29 AM;bwo;Außerdem funktioniert das Ausgrauen nicht mit Firefox.	"06/Jan/16 11:07 AM;bwo;Im Javascript wurden den Kurven falsche IDs zugeordnet. Es wird nun für jede Kurve eine ID festgelegt, welche genutzt wird um die Farbe zu ermitteln. Wir können hierfür nicht die Namen nutzen, da diese nicht erlaubte Zeichen enthalten und das Entfernen/Ersetzen der Zeichen dazu führen könnte, dass zwei verschiedene Kurven den gleichen Namen erhalten könnten.
-
-
-
-Der Grund für das nicht vorhandene Ausgrauen im Firefox lag daran, dass ich den Hex-Wert ohne führendes # geschrieben habe. Chrome interpretierte diesen String dennoch als Hex-Wert, Firefox hingegen nicht. "																																																					

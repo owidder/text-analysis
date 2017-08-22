@@ -1,5 +1,0 @@
-Update copyrights	See https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-2.2LizenzenundREADMEs	92213	Sub-task	iteraplan Quickfox	09/Aug/16 9:41 AM	11/Aug/16 11:24 AM														"10/Aug/16 2:41 PM;mse;There was nothing to do on all license template files as the year was already 2016 in those (due to release 5.2 in spring).
-
-
-
-But the copyright header in all java files in trunk was not up-to-date -> 2239 changed files"	10/Aug/16 2:52 PM;fka;Please also update the copyright haeder in the elastic branch																																																					

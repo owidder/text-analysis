@@ -1,5 +1,0 @@
-Chrome Trace Kategorien fehlen	"Wenn man Chrome Traces aktiviert, kann man auf webpagetest.org die Kategorien übergeben, wobei sinnvolle Defaults gesetzt sind.
-
-
-
-Bei uns kann man gar keine Kategorien angeben, und ich frage mich, was überhaupt dann mit drin ist."		Bug	OpenSpeedMonitor	15/Jun/17 4:41 PM	28/Jun/17 9:44 AM																																																																				

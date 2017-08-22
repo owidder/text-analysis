@@ -1,7 +1,0 @@
-Filterbereich "Jobs filtern" nicht mehr vertikal scrollen	"Da die selects mitunter sehr viele Options haben (z.B. die Locations) hat man  dann einen inneren Scroll-Balken im select und einen äußeren im ""Jobs filtern""-Bereich.
-
-
-
-Besser wäre es, den ""Jobs filtern""-Bereich automatisch in der Höhe anzupassen. Dann wäre der gesamte Inhalt eines ausgeklappten Selects auch gleich sichtbar.
-
-"		Improvement	OpenSpeedMonitor	12/Jun/15 11:59 AM	18/Jan/17 4:17 PM																																																																				

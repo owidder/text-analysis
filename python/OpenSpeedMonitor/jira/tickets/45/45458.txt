@@ -1,3 +1,0 @@
-Error page display broken in BB visualisation tab	"When an error occurs during the graphic generation in the fast export, the error page is displayed in a very creative location.
-
-Reproduction: select Masterplan Diagram -> Predecessors and Successors (follow up question: why doesn't a saved diagram's configuration fit the standard settings?)"		Bug	iteraplan PO	02/Apr/12 3:43 PM	11/Apr/12 7:24 PM					buildingblock	fastexport	gui							02/Apr/12 3:43 PM;lci;This may be related to ITERAPLAN-590	11/Apr/12 7:24 PM;kvo;location in general ok, rare case -> wontfix																																																					

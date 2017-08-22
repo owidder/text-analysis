@@ -1,3 +1,0 @@
-Put connect/disconnect changes - simpleDiffWriter	"add relationship writing functionality
-
-use relationship setter"	93950	Sub-task	iteraplan Thunderduck	23/Aug/16 3:57 PM	31/Aug/16 10:09 AM																																																																				

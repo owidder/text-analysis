@@ -1,3 +1,0 @@
-Wrong date format for Y axis	"Summary: wrong date format for date attribute as Y axis
-(yyyy-mm-dd instead of dd.mm.yyyy) "	47323	Sub-task	iteraplan PO	14/May/15 12:37 PM	14/May/15 2:25 PM													"Workspace: Windows 8.1
-revision: 1119"	14/May/15 2:25 PM;dasm;Was added as comment to  IP9-305																																																						

@@ -1,7 +1,0 @@
-List view page: Page title	"Summary: all List view pages for systems haven't special title (except of Information System)
-
-Steps to reproduce:
-1. Go to List view page for Business Function
-Actual: empty title
-Expected: should be displayed ""Business Function"" as title"		Bug	iteraplan PO	02/Apr/15 2:34 PM	23/Apr/15 9:22 AM														"15/Apr/15 9:09 AM;msr;Take in April-Release 2015?
-Maybe, if we take list view in the relase"	23/Apr/15 9:22 AM;fka;No longer reproducible as of 2015-04-23 in trunk																																																					

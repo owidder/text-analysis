@@ -1,3 +1,0 @@
-JobResults nach Erreichen des timeouts auf failed setzen			Task	OpenSpeedMonitor	24/Feb/14 2:16 PM	27/Feb/14 12:51 PM														"25/Feb/14 10:32 AM;drieger;Der Trigger der diese Aufgabe übernimmt wird einmalig ausgeführt (falls er nicht aufgrund rechtzeitiger Testbeendung gelöscht wurde) und muss als Misfire Instruction MISFIRE_INSTRUCTION_FIRE_NOW erhalten.
-
-Als httpStatusCode nach einem Timeout bietet sich evtl. 504	Gateway Time-out an."																																																						

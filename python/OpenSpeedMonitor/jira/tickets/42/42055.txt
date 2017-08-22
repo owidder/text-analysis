@@ -1,1 +1,0 @@
-REST API function resultsbetween lässt sich nicht mehr auf locations einschränken			Bug	OpenSpeedMonitor	28/May/15 1:05 PM	01/Jun/15 4:32 PM																																																																				

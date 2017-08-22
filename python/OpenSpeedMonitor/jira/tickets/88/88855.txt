@@ -1,9 +1,0 @@
-No 2 vertical scrollbars 	"There shouldn't be 2 scrollbars on the right side.
-
-
-
-*Solution*: Resize grid div to take the remaining space in the browser window
-
-
-
--> Vertical scrollbar of thr browser window disappears, the scrollbar of the grid remains. This way, we are using the virtual scrolling feature of ag-grid."	83773	Sub-task	iteraplan PO	29/Jun/16 4:21 PM	04/Jul/16 1:50 PM														04/Jul/16 9:39 AM;mse;The directive in the file autoheight-directive.js was added together with Rost from the Ukrainian team and not all commits are correctly assigned to this ticket. But if you look at the last version of the file during review (as in svn now), you will cover all changes. 																																																						

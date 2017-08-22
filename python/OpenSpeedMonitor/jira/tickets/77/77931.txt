@@ -1,1 +1,0 @@
-secureBox Logo ersetzen	Das Logo in der Tasklist der SecureBox Engine trägt noch einen alten Arbeitstitel "SecurityTestBox" dieser ist zu ersetzen gegen einen neuen Arbeitstitel "SecureCodeBox".	77928	Sub-task	secureCodeBox	22/Mar/16 1:31 PM	25/Apr/16 9:16 AM																																																																				

@@ -1,7 +1,0 @@
-SQL/Migrations-Skript: Schema-Abgleich	Wichtige Notiz: Nach Migration müssen nach Start der Applikation die Indizes noch überprüft werden!	10321	Technical task	OpenSpeedMonitor	05/Aug/13 11:44 AM	14/Aug/13 12:18 PM														05/Aug/13 11:48 AM;jwerschmoeller;Test auch auf fehlende Referenzen etc.	05/Aug/13 12:04 PM;jwerschmoeller;Hinweis: Dump sollte eine Teilmenge sein, um die Durchlaufzeiten gering zu halten. 	05/Aug/13 2:27 PM;rhe;Aktuelle Datenbank nach dem Refactoring.	05/Aug/13 3:18 PM;rhe;Die Startdatenbank vom Kunden	"06/Aug/13 11:48 AM;rhe;Die Datenbank nach der Strukturanpassung.
-
-Nach Migration müssen nach Start der Applikation die Indizes noch überprüft werden!"	06/Aug/13 1:02 PM;rhe;Migrationsskript liegt in iteraSpeedDocumentation\Scripts	"06/Aug/13 4:04 PM;mzeimer;Die MeasuredValue müssen vom AggregatorType 'job' auf den AggregatorType 'measuredEvent' umgehängt werden. 
-Dieser muss zuvor erstellt werden."	08/Aug/13 5:57 PM;rhe;Es ist eine neue Column angelegt worden von Nils am JobResult (jobGroupName) diese muss auch migriert werden!	12/Aug/13 1:47 PM;rhe;Abgeschlossen, wartet auf Testergebnisse	"12/Aug/13 2:01 PM;rhe;Strukturänderungen benötigen ~50 Minuten, Erzeugung der MeasuredEvents und weitere Anpassungen der Daten: 35 Minuten
-
-Anpassung MeasuredValues bleibt abzuwarten."	"12/Aug/13 3:04 PM;rhe;Komplette Script läuft ca. 2 h
-"																																												

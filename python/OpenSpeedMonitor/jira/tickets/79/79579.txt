@@ -1,9 +1,0 @@
-Fix Jenkins-Job MySQL-Dump	"Zwei Bugs sind hier zu fixen:
-
-
-
-* Der Job liefert seit ca. 1 Woche keine Ergebnisse mehr
-
-* Der Job erzeugt die user-Tabelle ohne einen not null Constraint für das Passwort-Feld. So möchte Liquibase anschließend immer diesen Constraint erzeugen"		Bug	OpenSpeedMonitor	08/Apr/16 1:36 PM	13/Apr/16 5:21 PM														"13/Apr/16 5:21 PM;nku;Lag an einer fehlenden shell des seu_jenkins_iteratec os users auf der otto-wpt5 maschine.
-
-Gefixt in ansible."																																																						

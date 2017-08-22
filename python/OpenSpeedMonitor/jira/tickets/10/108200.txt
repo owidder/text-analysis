@@ -1,5 +1,0 @@
-Seiten-templates vereinheitlichen	"Die templates ""kickstart"" und ""kickstart_osm"", sowie ""_content"" und ""_content_osm"" sollten vereinheitlicht werden, sodass Seitenparameter ausreichen um entsprechende unterschiede zu erreichen.
-
-
-
-Außerdem sollte das verinheitlichte Template endlich einen sinnvollen Namen erhalten wie ""layoutOsm.gsp"""		Improvement	OpenSpeedMonitor	12/Jan/17 8:30 AM																																																																					

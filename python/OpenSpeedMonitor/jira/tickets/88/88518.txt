@@ -1,3 +1,0 @@
-Make the update of the add column dropdown entries faster	"There is a visible delay in updating the ""add column"" dowpdown entries after opening it for the first time after a column is deleted or added.
-
-This delay should not be visible."		Improvement	iteraplan PO	27/Jun/16 10:30 AM																																																																					

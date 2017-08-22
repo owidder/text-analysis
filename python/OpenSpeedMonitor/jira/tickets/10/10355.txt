@@ -1,3 +1,0 @@
-Undefined Page per NULL statt String UNDEFINED	"Derzeit wird das Fehlen einer Zuweisung zu einer Page mit der Page mit Namen ""undefined"" (Siehe de.iteratec.isj.Page.UNDEFINED) zugeordnet, dies ist nicht so schön, da so die Zuordnung existiert, schöner ist ""null"" (keine Referenz) da dies dann wirklich nicht zugeordnet ist. :)
-
-Umbauen: ""undefined""-Page weg, zu Gunsten der Verwendung von null bzw. NULL in DB."		Improvement	OpenSpeedMonitor	01/Aug/13 12:13 PM	18/Jan/17 2:42 PM																																																																				

@@ -1,1 +1,0 @@
-Add Graph Alias Button in Time Series Dialog fixen	type="button" setzen, damit der Button kein Submit auslöst.		Bug	OpenSpeedMonitor	18/Jan/17 3:33 PM	20/Jan/17 4:33 PM														19/Jan/17 10:22 AM;jwi;Für Layout-Änderungen siehe auch IT-1467																																																						

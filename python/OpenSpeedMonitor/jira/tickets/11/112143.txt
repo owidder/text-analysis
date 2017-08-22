@@ -1,7 +1,0 @@
-Extend "triggerDataReset" to support #/attributeGroups	"*Summary:*
-
-Extend ""triggerDataReset"" to support #/attributeGroups, i.e.
-
-
-
-* as soon as the user changes his route (which is not #/attributeGroups) or closes the browser window the triggerDataReset is called"		New Feature	iteraplan Speedbird	17/Feb/17 3:47 PM	01/Mar/17 2:12 PM														21/Feb/17 4:01 PM;roia;There's no need in any extension, just emit the {{triggerDataReset}} event after attributeGroup is updated/deleted/created.																																																						

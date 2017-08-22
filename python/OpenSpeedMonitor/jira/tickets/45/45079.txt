@@ -1,4 +1,0 @@
-Cluster Diagramm with Attributes criterion	"If you try to create a new cluster diagramm with a (random) attributes criterion (not building blocks), the generation fails with:
-
-The following errors occurred:
-The Cluster Diagram cannot be generated, unless at least one BuildingBlock has been selected. It may also be the case that the result list has become empty by deleting elements."		Bug	iteraplan PO	11/Aug/11 10:16 AM	22/Aug/11 5:40 PM					diagram	visualization								12/Aug/11 2:11 PM;rbe;cluster diagram ist jetzt erstellt wenn Merkmale als Kriterium gewählt sind	18/Aug/11 1:30 PM;rbe;  neu webtest added for covering the error described in this ticket 	22/Aug/11 4:23 PM;kgo;It might be more efficient to check if the graphic is in building block mode at the place where the exception is thrown (SvgExportServiceImpl).																																																				

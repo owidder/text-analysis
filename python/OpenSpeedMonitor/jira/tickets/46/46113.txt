@@ -1,3 +1,0 @@
-History Improvements	"Collect Improvements on History within this ticket
-
-# show an ajax indicator when changing pagesize as the user might not notice the change has been applied"		Improvement	iteraplan PO	10/Oct/13 10:05 AM	30/Dec/15 3:34 PM					history																																																															

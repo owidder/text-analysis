@@ -1,5 +1,0 @@
-REST-API falscher Eintrag markiert	"Getestet im Chrome und Firefox, angemeldet als Admin.
-
-
-
-Beim sichten der REST-API unter http://dev.openspeedmonitor.wpt.iteratec.de/rest/man sollte immer nur der Eintrag markiert werden, über den man gerade scrollt. Es wird aber nur noch der letzte Eintrag markiert, egal wo man gerade scrollt! (Screenshot)"		Bug	OpenSpeedMonitor	19/Feb/16 11:36 AM	25/Feb/16 7:37 PM														25/Feb/16 7:37 PM;bka;Wurde offenbar bereits gefixt. Fehler tritt nicht mehr auf																																																						

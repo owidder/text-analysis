@@ -1,7 +1,0 @@
-Color picker does not open in Firefox and Internet Explorer	"In the New Client in the Nested Cluster Diagram the colorpicker does not open in Firefox and in Internet Explorer (but in Chrome). The Landscape Diagram is not affected.
-
-"		Bug	iteraplan PO	08/Oct/15 4:44 PM	20/Oct/15 1:53 PM					colorpicker									16/Oct/15 2:41 PM;sfe;Where? New Client? Old Client? All diagrams? Only some?	16/Oct/15 2:51 PM;msr;See updated description.	"20/Oct/15 11:30 AM;lwi;no test created as there would be a e2e Test necessary .
-
-
-
-Problem was: colorpicker window position in NCD was not calculated correctly which lead to problems in IE and Firefox. Chrome handled the used undefined value as a 0 and so the problem did not exist there. "																																																				

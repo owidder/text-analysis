@@ -1,1 +1,0 @@
-BY FILTER-EPIC: Filter extension: Query Extensions (Filter by connected elements)			New Feature	iteraplan PO	02/Sep/15 2:42 PM	19/Jan/16 4:20 PM					filter	ifd																																																														

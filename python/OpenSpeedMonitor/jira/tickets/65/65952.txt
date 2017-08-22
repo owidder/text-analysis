@@ -1,3 +1,0 @@
-URL iteraplan konfigurierbar	Konfigurationsdatei auf der SD-Card ablegen		Task	EAMV15	07/Dec/15 3:23 PM	16/Dec/15 10:22 AM														"16/Dec/15 10:22 AM;mno;Default Konfiguration liegt in den assets der zwei Apps ""default.properties"".
-
-Diese kann überschrieben werden mit ""spiddar.properties"", wenn diese im Root-Ordner des Handys (interner Speicher) liegt."																																																						

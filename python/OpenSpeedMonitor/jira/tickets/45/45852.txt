@@ -1,6 +1,0 @@
-Cursor on Nesting Cluster Diagram configuration page is not reset after drop of an element	"to reproduce:
-# navigate to nesting cluster config page
-=> when hovering over a candidate, the mouse has an _edit cursor_, but it should be a 'move' cursor
-# drag n drop an outer element
-=> cursor changes to 'move' on drag
-=> the cursor should be changed back to 'default' after drop"		Bug	iteraplan PO	05/Jul/13 2:38 PM	15/Jul/13 9:13 AM					nesting	ui																																																														

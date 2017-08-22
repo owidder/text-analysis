@@ -1,9 +1,0 @@
-spelling errors	"I found two spelling errors:
-
- # in Administration>Anwender:
-
-The title of the page says Anwender*en.* Please change to ""Anwender""
-
- # List View: In the Dropdown of ""Subscriptions""-Button the German version is misspelled:
-
-it says ""abonieren"", should be ""abo*nn*ieren"""		Bug	iteraplan PO	06/Jun/17 9:46 AM	11/Jun/17 1:38 PM																																																																				

@@ -1,9 +1,0 @@
-rest-API-URL's generell erlauben	"Alle rest-API-Methoden sind bis auf weiteres frei.
-
-Eine Authentifizierung erfolgt vorerst nur mittels API-Keys.
-
-Daher können die alle ""permittet"" werden.
-
-
-
-"		Task	OpenSpeedMonitor	04/May/15 11:17 AM	05/May/15 8:59 AM																																																																				

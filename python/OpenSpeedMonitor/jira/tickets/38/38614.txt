@@ -1,3 +1,0 @@
-BatchActivities erzeugen für alle Quartz-Jobs	Wir haben eine Reihe von Quartz-Jobs. Alle, die größere Datenmengen betreffen/bearbeiten sollten BatchActivities erzeugen.		Task	OpenSpeedMonitor	23/Apr/15 10:58 AM	22/May/15 9:11 AM														"04/May/15 10:06 AM;nku;Noch zu testen wenn deployt.
-
-"	04/May/15 10:18 AM;nku;Für den Stündlichen Job erstmal wieder rausnehmen (bis IT-567 umgesetzt ist). 	11/May/15 11:04 AM;bwo;Close and Calculate MeasuredValues hat seinen Fortschritt falsch berechnet. Da mein Rechner mit der Auslastung nicht zurecht kommt, konnte ich die Änderung lokal nicht testen, es sollte jetzt jedoch korrekt berechnet werden.																																																				

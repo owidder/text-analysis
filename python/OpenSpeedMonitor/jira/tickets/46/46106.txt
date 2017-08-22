@@ -1,1 +1,0 @@
-Mismatch between ordering of legend-entries in Nesting-Cluster and ordering of respective entries during configuration	The ordering of legend-entries seems to be reversed compared to the configuration list.		Improvement	iteraplan PO	08/Oct/13 6:36 PM	30/Dec/15 3:34 PM																																																																				

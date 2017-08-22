@@ -1,5 +1,0 @@
-Detailanalyse Filterkriterien abwählbar machen	"Aktuell können initial keine Filterkriterien abgewählt werden in der Detailanalyse.
-
-
-
-Wünschenswert wäre, wenn ich nicht erst alle Kriterien auswähle und sie dann erst abwählen kann."		Improvement	OpenSpeedMonitor	19/Jul/17 11:17 AM																																																																					

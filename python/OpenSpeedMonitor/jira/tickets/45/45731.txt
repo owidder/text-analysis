@@ -1,2 +1,0 @@
-Offer a rich editor for dashboard templates	"Implement a rich editor for the dashboard templates. Use jQuery Markup Editor ""markItUp"".
-"	45668	Sub-task	iteraplan PO	24/May/13 2:01 PM	12/Jun/13 11:25 AM					dashboard	usability																																																														

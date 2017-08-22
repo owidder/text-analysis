@@ -1,9 +1,0 @@
-Logging in Changelogs	"Für die  lokale Ausführung beim Entwickeln funktioniert ein println.
-
-Beim Deployment im tomcat sieht man die Ausgaben aber nicht.
-
-
-
-Wir sollten uns ansehen, wie man in Grails-Changelogs vernünftig logt."		Task	OpenSpeedMonitor	12/Feb/16 10:50 AM	17/Feb/16 12:08 PM														"17/Feb/16 12:08 PM;nku;Weder mehrere confirms in einem grailsChange noch das manuelle Erzeugen eines log4j-Loggers haben bei mir funktioniert.
-
-Habe deshalb entschieden diese Task zu schließen und mit den println's zu leben. "																																																						

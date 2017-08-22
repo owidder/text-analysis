@@ -1,5 +1,0 @@
-Outdoor und Indoor über Menü starten / wechseln	"- beide Module werden über die selbe Main-Activity geladen
-
-- beim Start wird erstmal einfach übers Menü die entsprechende Visualisierung geladen (später Wegweiser)
-
-"		Task	EAMV15	20/Nov/15 5:38 PM																																																																					

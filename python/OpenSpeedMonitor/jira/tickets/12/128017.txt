@@ -1,7 +1,0 @@
-Cleanup	"* Tomcat services deaktivieren oder löschen
-
- * alte Mysql DB löschen
-
- * Ansible für Projekt Server aufräumen
-
- * Alte Bamboo Jobs/Deployments löschen"	128009	Sub-task	OpenSpeedMonitor	26/Jul/17 8:00 AM																																																																					

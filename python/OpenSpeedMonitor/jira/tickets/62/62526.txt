@@ -1,1 +1,0 @@
-[Job-Schedule-Ansicht] Inaktive Jobs nicht mit anzeigen	Jobs mit active=false werden derzeit noch mit angezeigt.		Bug	OpenSpeedMonitor	04/Nov/15 5:54 PM	05/Nov/15 4:53 PM																																																																				

@@ -1,7 +1,0 @@
-Don't display "no known changes" entries on history tab	"Keep it simple:
-
-* Keep loading revisions (maybe in chunks of 10 or 20) until enough ""real"" changes have accumulated to fill the history tab page
-
-* Do not display the paging numbers anymore (1-10 of 123)
-
-* Don't check whether there are more changes after the currently displayed ones. If ""next page"" is clicked, and there are no more changes, THEN deactivate the ""next"" button. But don't look ahead."		Improvement	iteraplan PO	15/Dec/15 2:49 PM	12/Jan/16 1:45 PM					history																																																															

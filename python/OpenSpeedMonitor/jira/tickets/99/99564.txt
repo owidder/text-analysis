@@ -1,1 +1,0 @@
-Begrenzung der Tokens bei Registrierung	Die bei der Registrierung erzeugten Tokens sollten sowohl in ihrere Anzahl als auch in ihrer zeitlichen Gültigkeit begrenzt werden. 		Improvement	OpenSpeedMonitor	18/Oct/16 1:42 PM																																																																					

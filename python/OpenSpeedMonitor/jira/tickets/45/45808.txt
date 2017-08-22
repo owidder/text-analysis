@@ -1,3 +1,0 @@
-needs re-write http://www.iteraplan.de/wiki/display/upcomingIteraplan/Links+to+other+resources	"Needs to be re-written in a step-by-step procedure what can be done and how, and what cannot be done and why, BUT as two separate parts of text (on one wiki page).
-
-As is: even if I know the facts, I am very confused."		Improvement	iteraplan PO	01/Jul/13 2:41 PM	12/Jul/13 3:09 PM					documentation									12/Jul/13 3:09 PM;wfr;Now the explanation is in the right order.	16/Jul/13 8:28 PM;sry;Thx!																																																					

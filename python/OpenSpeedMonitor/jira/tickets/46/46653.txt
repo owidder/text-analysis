@@ -1,2 +1,0 @@
-Broken layout in InformationFlow diagram with KK-Force and Circle layouts	"In InformationFlow diagram, 2nd page, advanced options:
-If KK-Force or Circle layout are selected, then the layout looks broken (see attachment)"		Bug	iteraplan PO	16/May/14 1:02 PM	19/Jan/16 11:08 AM					diagram	informationflow	visualization																																																													

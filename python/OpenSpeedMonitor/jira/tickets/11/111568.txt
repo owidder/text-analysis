@@ -1,9 +1,0 @@
-Chart implementieren: Ladezeite einzelner Seiten als waagerechte Balken	"Ladezeiten-Mittelwerte einzelne Seiten der eigenen Anwendung als waagerechte 
-
-
-
-Darstellung analog zu:
-
-
-
-Balken.!Ladezeiten WB.png|thumbnail!"		Story	OpenSpeedMonitor	10/Feb/17 5:09 PM	03/Mar/17 5:40 PM																																																																				

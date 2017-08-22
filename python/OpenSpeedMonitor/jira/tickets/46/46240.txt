@@ -1,8 +1,0 @@
-Import: error page when trying to import changes to building blocks without update permission	"Reproduce (sample data):
-# Login with user which has read permission for Business Processes, but no update/create permissions (for example standard user ""Tom"" of role ""IT Architect"")
-# Export Excel data
-# Change value in ""Strategic value"" of a Business Process
-# Import Excel file => step 1-4 ok, Error page in step 5
-
-What should happen:
-Errors should not happen in step 5. So either the missing permission error should be reported earlier (step 4, most likely) or no error should appear."		Bug	iteraplan PO	25/Oct/13 3:37 PM	30/Apr/14 4:26 PM					import	permissions								25/Oct/13 3:59 PM;sfe;In step 5 of the import, when changes to the Business Process should be saved, the AbstractHierarchicalBuildingBlockService#saveOrUpdate method is called. This method performs a permission check, which fails in the described case and throws an exception.																																																						

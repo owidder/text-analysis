@@ -1,7 +1,0 @@
-Create Multi-Line Editor with XWiki-Syntax	"*Summary:*
-
-Create a multi line text editor field on the top of the custom dashboard page to insert XWiki-Syntax and embed diagrams."		New Feature	iteraplan Speedbird	27/Mar/17 3:54 PM	05/Apr/17 5:09 PM														"04/Apr/17 10:41 AM;mash;Is done in the ticket: IPTS-720 . Close this ticket, when IPTS-720 is done
-
-
-
-Functional part is ticket: IPTS-738"																																																						

@@ -1,5 +1,0 @@
-Mandantenfähigkeit implementieren	"Es muss möglich sein bestimmte Scans/Projekte nur für bestimmte Mandaten sichtbar zu machen. Die Mandanten und die zugehörigen Projekte sollen aus LDAP ausgelesen werden.
-
-
-
-Es muss eine Möglichkeit geschaffen werden, das Kibana Dashboard so vom Benutzer abzuschotten, dass er nicht die Ergebnisse anderer Projekte (für die er nicht berechtigt ist) einsehen kann."		Story	secureCodeBox	08/Sep/16 3:22 PM		secureBoxEngine				Energy	Kundenwunsch																																																														

@@ -1,5 +1,0 @@
-UI test (extra?)	"Write smoke e2e tests.
-
-
-
-Tbd: Define scope."		New Feature	iteraplan PO	10/May/16 12:58 PM	20/Jun/16 1:47 PM																																																																				

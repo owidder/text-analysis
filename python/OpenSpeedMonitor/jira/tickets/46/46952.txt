@@ -1,1 +1,0 @@
-Create abstract directive for nested panels editing (editing handler)		46937	Sub-task	iteraplan PO	10/Sep/14 1:54 PM	29/Sep/14 10:36 AM																																																																				

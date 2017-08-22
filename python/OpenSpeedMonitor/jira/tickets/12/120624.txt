@@ -1,1 +1,0 @@
-Performance Verbesserung der Integrations-Tests	Um die Performance der Integrations-Tests zu beschleunigen sollen die langsamen/-sten Tests identifiziert und optimiert werden.		Improvement	OpenSpeedMonitor	05/May/17 11:22 AM																																																																					

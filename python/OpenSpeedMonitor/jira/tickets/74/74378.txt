@@ -1,1 +1,0 @@
-Anwendung starten mit aktuellem 30-Tage-Dump 	Testen, ob das durchläuft.		Task	OpenSpeedMonitor	22/Feb/16 3:59 PM	22/Feb/16 4:56 PM														22/Feb/16 4:57 PM;mmi;Lokal ca. 30 Minuten, mit einer LoopZeit von ca. 1.5 bis 3 Minuten																																																						

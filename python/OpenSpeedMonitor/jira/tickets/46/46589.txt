@@ -1,4 +1,0 @@
-Test partial import / export via test sheet	"Short documentation of results in this ticket
-Findings in a new bug / task ticket
-
-NOT to be done by LBA, who created the test sheet"		Task	iteraplan PO	24/Apr/14 11:20 AM	28/Apr/14 10:50 AM					export	import	partial	test																																																												

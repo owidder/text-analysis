@@ -1,3 +1,0 @@
-[wptserver] ansible-modul docker_container statt docker benutzen	"Das Playbook zeigt eine WARNING, da `docker` deprecated ist und irgendwann entfernt wird.
-
-Sollte keine große Sache sein stattdessen `docker_container` zu verwenden."		Task	OpenSpeedMonitor	16/Feb/17 10:33 AM																																																																					

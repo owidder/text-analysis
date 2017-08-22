@@ -1,9 +1,0 @@
-Add user groups to REST	"Currently there are no user groups available in the IC.
-
-
-
-TODO:
-
-* Add the user groups to the responsibility attributes REST interface (de.iteratec.iteraplan.presentation.rest.representation.ResponsibilityAttributesRepresentationHandler)
-
-* Add the user groups to the attributes REST interface (de.iteratec.iteraplan.presentation.rest.representation.AttributesRepresentationHandler)"		New Feature	iteraplan Thunderduck	28/Nov/16 1:16 PM	02/Dec/16 11:00 AM														28/Nov/16 1:20 PM;mwe;Added Todos where to add the code.	01/Dec/16 3:13 PM;mwe;For the review please look into commit [26494|https://iteraweb.iteratec.de/fisheye/changelog/iteraplan?cs=26494].																																																					

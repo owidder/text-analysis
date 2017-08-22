@@ -1,7 +1,0 @@
-Unset values in list edit	"Check if relevant
-
-
-
-The user should be able to unset values by removeing the current value from the editor and applying the changes.
-
-"		Improvement	iteraplan Thunderduck	16/Nov/16 2:27 PM	15/Dec/16 9:05 AM														06/Dec/16 10:17 AM;ach;can not reproduce	14/Dec/16 9:17 AM;ach;Client model is not updated. Change to single view immediately after applying changes																																																					

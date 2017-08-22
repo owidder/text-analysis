@@ -1,5 +1,0 @@
-numerical attributes for ranged coloring in NC	"For numerical attributes (date and number): Two numbers/dates selectable, thereby defining a range of items. Four colour values selectable: Below range, Between/In range, Above range and unspecified
-
-Realize within the new client, for landscape and nested cluster, content elements
-
-For UI ask WFR"		New Feature	iteraplan PO	10/Jun/15 1:34 PM	19/Jan/16 4:06 PM					lsd	ncd																																																														

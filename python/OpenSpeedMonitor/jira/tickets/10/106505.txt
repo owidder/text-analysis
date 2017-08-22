@@ -1,3 +1,0 @@
-Improve UI of messages in filter dialog	"See the attached filter-with-messages.jpg.
-
-If the second row is added to filter, then the message is covered by this row."		Improvement	iteraplan Speedbird	23/Dec/16 11:39 AM	25/Jan/17 10:59 AM					UI									27/Dec/16 1:38 PM;fka;Will probably be done (message removed) while implementing IPTS-433	25/Jan/17 10:59 AM;fka;no longer relevant																																																					

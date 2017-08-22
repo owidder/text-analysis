@@ -1,1 +1,0 @@
-Vergleichszeitraum auf der GUI nur erlauben wenn nur ein Measurand ausgewählt ist	Umgekehrt sollte dies genauso funktionieren.		Task	OpenSpeedMonitor	04/May/17 10:22 AM	04/May/17 2:01 PM																																																																				

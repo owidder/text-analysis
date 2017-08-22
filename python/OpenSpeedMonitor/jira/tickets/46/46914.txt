@@ -1,6 +1,0 @@
-Simple Excel Export not working in some customizations	"The simple export can be used via the ""start download"" button in the upper right corner of result lists of spreadsheet reports or building block overview pages.
-When selecting an Excel format from the appearing dropdown list, the name of the building block type is used as name of the Excel-Sheet with the building block data.
-
-In some customer customizations names of building block types can contain characters which are not allowed in Excel sheet names, thus causing errors.
-
-Please fix the simple excel export by making sure the sheet names are normalized, see also {{de.iteratec.iteraplan.businesslogic.exchange.elasticExcel.util.ExcelUtils#makeSheetNameValid}}."		Bug	iteraplan PO	27/Aug/14 2:37 PM	28/Aug/14 11:36 AM					excel	export	simple							28/Aug/14 10:30 AM;dop;I've tried different cases such as *#äöüä-:.,§$/ and the name got accepted by excel. Any other tests necessary?																																																						

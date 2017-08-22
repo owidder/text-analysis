@@ -1,1 +1,0 @@
-[CI] Deployment dev-Umgebung	Das Deployment der dev-OSM-Instanz muss in Bamboo integriert werden.		Task	OpenSpeedMonitor	25/Feb/16 10:44 AM	07/Mar/16 6:13 PM																																																																				

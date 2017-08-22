@@ -1,7 +1,0 @@
-Business Function doesn't work as content type	"Summary: It is impossible to use Business Function as content type
-
-Steps to reproduce:
-1. Go to LSD page
-2. Select Business Function as content type
-Actual: The diagram isn't updated according to selected content type
-Expected: The diagram should be updated according to selected content type"		Bug	iteraplan PO	31/Mar/15 10:57 AM	31/Mar/15 11:55 AM														31/Mar/15 11:55 AM;dasm;not a bug																																																						

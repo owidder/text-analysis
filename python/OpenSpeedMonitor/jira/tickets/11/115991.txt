@@ -1,5 +1,0 @@
-FieldValidation auf den einzelnen Cards	"Es sollte bereits Clientseitig eine Validierung für die eingegeben Daten geben und im Fehlerfall der Submit Button deaktiviert, sowie entsprechende Felder gehighlightet werden.
-
-
-
-Siehe dazu auf der ersten Karte das validieren des JobGroup-Namens."	111352	Sub-task	OpenSpeedMonitor	23/Mar/17 6:23 PM	24/Mar/17 10:51 AM																																																																				

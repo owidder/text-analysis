@@ -1,9 +1,0 @@
-The ids of the connected elements for Business Mappings should be unique	Via single element-Api it is possible to add more than one BM that connect the same elements. This should not be possible. Sugestion of [~sfe]: Add a constraint in the data base so the combination of the ids is unique.		Bug	iteraplan Thunderduck	06/Oct/16 9:36 AM	07/Nov/16 12:53 PM														"04/Nov/16 2:58 PM;mse;Review comments:
-
-
-
-* Database migration scripts are needed.
-
-
-
-Otherwise, the implementation is fine and works as expected."																																																						

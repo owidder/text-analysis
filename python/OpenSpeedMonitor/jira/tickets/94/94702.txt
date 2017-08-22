@@ -1,3 +1,0 @@
-addToQueue optimieren	"In der Methode addToQueue wird für jede ID eine Datenbankabfrage gestartet um zu überprüfen, ob diese bereits existiert. Es wäre sinnvoller alle IDs in einem Rutsch zu überprüfen und anschließend über die nicht vorhandenen zu iterieren.
-
-"		Improvement	OpenSpeedMonitor	31/Aug/16 8:28 AM	31/Aug/16 3:25 PM																																																																				

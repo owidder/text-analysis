@@ -1,5 +1,0 @@
-Beim Aufrufen der CSI Konfigurationsseite erscheinen kurz Warnungen 	"Wenn man die [Seite|http://dev.openspeedmonitor.wpt.iteratec.de/csiConfiguration/configurations] mit den CSI Konfigurationen aufruft, erscheinen ganz kurz 2 Fehlermeldungen. Dies geschieht noch während sich die Seite aufbaut. Danach sind die Meldungen wieder verschwunden.
-
-
-
-Eine Meldung ist gelb, eine rot. "		Bug	OpenSpeedMonitor	10/Nov/16 4:16 PM	11/Nov/16 3:04 PM																																																																				

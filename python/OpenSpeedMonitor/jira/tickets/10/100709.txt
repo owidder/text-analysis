@@ -1,3 +1,0 @@
-Range size indicators	"Implement range size indicators if it is possible. 
-
-See attached screenshot from classic client for example."		New Feature	iteraplan Speedbird	26/Oct/16 6:25 PM	08/Nov/16 4:28 PM														07/Nov/16 4:14 PM;dmkh;Please, don't forget to add new screenshots with indicators to the user guide documentation of BCD!	08/Nov/16 1:55 PM;dmkh;Review done: add unit tests for layouter and fix issues with displaying of bars and labels after applying filter (see screenshots)																																																					

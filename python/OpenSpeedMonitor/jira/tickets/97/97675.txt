@@ -1,9 +1,0 @@
-Testausführung mit nicht mehr existentem Script	"Das folgende Verhalten wurde bereits mehrfach beobachtet: 
-
-
-
-# Ein Script wurde bearbeitet.
-
-# Die Bearbeitung war erfolgreich.
-
-# Nach der Bearbeitung wurden (z.T. mehrere Tage lang) weiterhin Jobs an den WPT-Server abgesetzt mit dem alten Script."		Bug	OpenSpeedMonitor	28/Sep/16 3:46 PM	30/Sep/16 9:16 AM														30/Sep/16 9:16 AM;nku;Eine neue Hibernate Session aufmachen pro Quartz-Job-Ausführung hat das Problem gelöst. Eigentlich ein Grails-/Hibernate-Bug.																																																						

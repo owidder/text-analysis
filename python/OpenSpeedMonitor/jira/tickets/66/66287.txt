@@ -1,5 +1,0 @@
-Event: Leere Beschreibung führt zu Fehlerseite	Wird keine Beschreibung für ein Event definiert, so führt das Messergebnis-Diagramm zu einer Fehlerseite. 		Bug	OpenSpeedMonitor	10/Dec/15 5:11 PM	10/Dec/15 5:25 PM														"10/Dec/15 5:25 PM;bwo;Die Description kann Null sein, ein entsprechender Check fehlte in:
-
-de.iteratec.osm.util.AnnotationUtil#fillWithAnnotations
-
-Ein entsprechende Prüfung wurde hinzugefügt."																																																						

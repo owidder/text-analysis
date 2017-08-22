@@ -1,3 +1,0 @@
-blank cells in excel are not recognised as such	"All attribute cells in the excel export are counted as if they had content even if they are empty. This causes reports the count emtpy cells to fail.
-
-There are no characters in the cells and double clicking them clears them. This behavior can be reproduces manually by writing the ""formula"" ="""" in a cell, copying it and pasting it again as value."		Improvement	iteraplan PO	13/May/15 9:40 AM	19/Jan/16 1:55 PM					excel	export																																																														

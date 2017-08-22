@@ -1,5 +1,0 @@
-Dynamic text filter in IS list view and NCD instead of "on blur"	"In the existing list view of information systems and in the nesting cluster diagram, make the text filtering more dynamic.
-
-When the user edits the search text in the text field, the system should *immediately* show only the matching items in the list and the diagram.
-
-As-is behavior: the user clicks the search icon or clicks another component of the screen, then (on blur), the list and the diagram are updated."	47009	Sub-task	iteraplan PO	29/Sep/14 11:18 AM	09/Jun/15 5:05 PM																																																																				

@@ -1,7 +1,0 @@
-Manuelle Umstellung auf BY_MAPPING in der OTTO-Instanz	"Nur als Reminder: 
-
-Wenn IT-794 umgesetzt ist und IT-795 durch ist muss das Mapping in der Anwendung umgestellt werden."		Task	OpenSpeedMonitor	30/Nov/15 1:28 PM	05/Jan/16 11:24 AM														"14/Dec/15 4:16 PM;nku;* Default-Mappings importieren (siehe IT-794)
-
-* Default-Mappings auf die richtigen Pages übertragen
-
-* Umrechnung Ladezeit->Kundenzufriedenheit auf BY_MAPPING umstellen"																																																						

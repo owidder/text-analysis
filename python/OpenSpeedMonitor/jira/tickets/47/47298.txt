@@ -1,9 +1,0 @@
-No status column on technical components overview	"_Reproduce (with sample data):_
-# Navigate to iteraplan's technical component overview page
-# Click ""add column"" and select Status
-
-_Expected:_ Status added as new column to the overview
-_Actual:_ Accountability (or whatever attribute was first in the list of available attributes) added as new column to the overview. Subsequent clicks on ""add column"" do not show Status as available column anymore.
-
-Please fix so that adding and removing Status as column on technical components overview works.
-Preferably Status should be one of the standard columns, as it is in case of information system overview."		Bug	iteraplan PO	16/Jan/15 9:48 AM	19/Jan/15 11:43 AM					overview	status								19/Jan/15 9:57 AM;fam;Bug is fixed. Also added status as standard column in technical component. 	19/Jan/15 11:43 AM;gph;Works																																																					

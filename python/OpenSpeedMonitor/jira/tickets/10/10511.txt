@@ -1,6 +1,0 @@
-Trennstreifen zwischen bestimmten Auswahlboxen zeichnen	"Zwischen den Auswahlboxen, die sich NICHT gegenseitig beeinflussen sollen Trennstreifen gezeichnet werden, um Blöcke zu kennzeichnen. 
-
-Die Blöcke, um die ""herum"" die Streifen zu ziehen sind:
-- Page + Measured Step
-- Browser + Location
-- System"	10010	Sub-task	OpenSpeedMonitor	03/Sep/13 9:49 AM	18/Sep/13 3:50 PM														05/Sep/13 3:03 PM;mzeimer;Leider nicht so trivial wie erwartet: Durch die Verwendung von Kickstart statt core CSS muss hier etwas mehr gemacht werden. Prio ist niedrig, daher erst einmal zurückgestellt.	18/Sep/13 3:49 PM;rhe;Die Trennstriche sind irgendwie verloren gegangen	18/Sep/13 3:50 PM;rhe;iteratec.less in twitter bootrstrap.less hinzugefügt. Trennstriche sind wieder da.																																																				

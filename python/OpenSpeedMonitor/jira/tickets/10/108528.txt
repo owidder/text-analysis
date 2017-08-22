@@ -1,3 +1,0 @@
-Docs for History REST	"History REST functionality will be published in upcomming release. Create documentation for it
-
-- only history for single element is in scope of this ticket"		Improvement	iteraplan Thunderduck	16/Jan/17 11:38 AM	23/Jan/17 10:04 AM														19/Jan/17 10:24 AM;pma;Can be found here: https://www.iteraplan.de/doc/display/iteraplan55/Historization	20/Jan/17 1:49 PM;mse;I have made quite a few changes to the first draft of the doc page during review. Please, review again.																																																					

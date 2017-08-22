@@ -1,6 +1,0 @@
-Infoflow: enable multiple sources for line caption 	"Infoflow: enable multiple sources for line caption
-Changing the Radiobutton to a Checkbox
-Set abbreviations before the text: (BO:Customer; Ratings; TC:Excel; N:InterfaceName; Desc:Description; Att: AttributeValue)"		New Feature	iteraplan PO	19/Dec/11 2:37 PM	24/Jan/12 2:51 PM														02/Jan/12 2:37 PM;sip;Export for visio will not show any connections.	"09/Jan/12 9:28 AM;sfe;Connections are shown for me in visio export, too.
-Maybe a problem with macro permissions of the local visio installation? Macro execution is required to display the connection lines."	"16/Jan/12 3:14 PM;sfe;There are two small issues left:
-In Visio Export interfaces without transported business object display an arrow even if business objects are selected for line caption.
-In SVG export the ""fading out""-area of the connection line isn't placed correctly behind the line caption."	24/Jan/12 2:51 PM;lci;Everything works fine.																																																			

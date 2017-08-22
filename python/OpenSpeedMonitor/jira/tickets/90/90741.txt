@@ -1,1 +1,0 @@
-Javascript API doesn't behave correctly with java 8u92	Nashorn seems to have changed some things with update 92, like the removal of "long" as automatically converted and supported data type.		Bug	iteraplan Thunderduck	18/Jul/16 11:35 AM	20/Jul/16 3:27 PM																																																																				

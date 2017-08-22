@@ -1,1 +1,0 @@
-Aufsetzen einer iteraplan-Instanz	Eine iteraplan-Instanz muss auf der VM installiert und der Kernapplikation zugänglich gemacht werden. Die Instanz sollte geeignete Daten enthalten, die zum dargestellten Bildmaterial passen.	82744	Sub-task	EAM-Visualisierung	02/May/16 1:40 PM																																																																					

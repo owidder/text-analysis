@@ -1,9 +1,0 @@
-Test import strategies via test sheet	"Short documentation of results in this ticket
-Findings in a new bug / task ticket
-
-NOT to be done by LBA, who created the test sheet"		Task	iteraplan PO	24/Apr/14 11:20 AM	28/Apr/14 5:52 PM					import	strategy	test							"28/Apr/14 12:51 PM;gph;Found in TC1:
-ITERAPLAN-2482
-
-Found in TC4:
-ITERAPLAN-2489
-"																																																						

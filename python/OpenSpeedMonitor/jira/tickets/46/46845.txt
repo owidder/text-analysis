@@ -1,5 +1,0 @@
-Create context menu on outer box click with grouping variants	"Create context menu on outer box click with grouping variants:
-
-Group by Information System Domains (selected by default)
-Group by Business Objects (active, working)
-Group by Business Processes (disabled)"	46838	Sub-task	iteraplan PO	13/Aug/14 10:03 PM	29/Sep/14 9:59 AM																																																																				

@@ -1,1 +1,0 @@
-Fill the function to create element and work with UI and send request to server		101407	Sub-task	iteraplan Thunderduck	22/Nov/16 11:39 AM	12/Dec/16 10:11 AM																																																																				

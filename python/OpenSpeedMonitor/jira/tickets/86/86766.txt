@@ -1,1 +1,0 @@
-Date intervals - Clientside/Metamodel 	process metamodel JSON in Metamodel JS class, giving Interval-typed (or so) attributes 	85416	Sub-task	iteraplan PO	08/Jun/16 4:01 PM	14/Jun/16 4:31 PM					date-intervals																																																															

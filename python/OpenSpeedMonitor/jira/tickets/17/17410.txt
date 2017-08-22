@@ -1,7 +1,0 @@
-Dashboards via url für die letzte Woche aufrufbar machen	"Derzeit führt die Auswahl einer Zeitraum-Vorauswahl 'letzte Woche', 'letzter Tag' o.ä. nur dazu, dass die select's für Start- und Endzeitraum gesetzt  werden. 
-
-Gewünscht ist, dass die Vorauswahlen Server-seitig ausgewertet werden und dann auch exakt der genannte Zeitraum geliefert/angezeigt wird. Dadurch ließe sich das Dashboard mit ausgewählter Vorauswahl automatisch refreshen und es würde als Endzeitpunkt immer der aktuelle Zeitpunkt verwendet werden.
-
-
-
-Soll in Result- und CSI-Dashboard greifen."		New Feature	OpenSpeedMonitor	20/Aug/14 3:59 PM	27/Aug/14 2:53 PM														25/Aug/14 6:18 PM;nku;Im Zuge der Realisierung wird die Zeitauswahl in ein template ausgelagert. Somit lösen wir IT-372 gleich mit.																																																						

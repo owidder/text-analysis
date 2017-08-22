@@ -1,5 +1,0 @@
-Datepicker Layout bei Erstellung von Events	Der Datepicker scheint zu klein für den Inhalt zu sein, bzw. der Inhalt zu groß. Siehe Bild		Bug	OpenSpeedMonitor	01/Jun/15 12:10 PM	18/Jan/17 3:59 PM														"25/Feb/16 4:58 PM;bka;In der aktuellen Version ist das Feld scheinbar größer geworden. Selbst wenn man das Fenster kleinzieht (um kleine Bildschirmauflösungen zu simulieren), bleibt die Feld-Größe.
-
-
-
-Ist das Ticket noch aktuell?"	23/May/16 5:30 PM;nku;Tritt leider in beiden Branches immer noch auf.																																																					

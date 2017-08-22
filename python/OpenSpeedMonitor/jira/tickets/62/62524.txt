@@ -1,5 +1,0 @@
-Custom-Connectivity-Filter anpassen	"Der Filter unter ""Measurement results"" -> ""Filter jobs"" -> ""Connectivity"" -> ""Show measurements with custom connectivity: "" ist uneindeutig.
-
-
-
-Der User kann den Zweck des Textfeldes nicht eindeutig zuordnen. Bessere wäre eine Checkbox, welche die Custom-Connectitiy-Profiles neben den vordefinierten Connectivity-Profiles ausdrücklich hinzunimmt und anschließend erst das Textfeld als zusätzliche Filtermöglichkeit hinzu nimmt."		Change Request	OpenSpeedMonitor	04/Nov/15 5:37 PM	08/Nov/15 7:26 PM																																																																				

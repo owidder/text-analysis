@@ -1,5 +1,0 @@
-Content (i.e. Contentcontroller + Pipeline) incl. configuration		98457	Sub-task	iteraplan Speedbird	09/Nov/16 10:11 AM	24/Nov/16 3:32 PM														"09/Nov/16 3:35 PM;dmkh;Try not changing the last step of pipeline (diagramBuilder, in LSD called lsdTableBuilder). The GoJS template building approach here is quite complex to refactor, the only way is to create the diagram builder from very beginning.
-
-
-
-[~msr], what do you think about  this suggestion?"	11/Nov/16 10:21 AM;msr;Ok, I'm fine with it. Keep it simple where possible	24/Nov/16 3:32 PM;ants;Review comments was sent by skype and will be put to follow-up ticket.																																																				

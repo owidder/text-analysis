@@ -1,7 +1,0 @@
-Anchors für einzelne Tabs auf der CSI Configuration-Seite setzen	"Follow up zu [IT-1349]:
-
-
-
-Anchors für die einzelnen Tabs auf der CSI Configuration-Seite setzen, sodass wir einen Link zu z.B. den PageWeights einer bestimmten CsiConfiguration hätten."		New Feature	OpenSpeedMonitor	11/Nov/16 10:41 AM	23/Nov/16 4:51 PM														"21/Nov/16 11:37 AM;jwi;Lokal umgesetzt in der {{_confDetails.gsp}}.
-
-Falls erwünscht kann eine globale Variante für weitere Fälle umgesetzt werden."																																																						

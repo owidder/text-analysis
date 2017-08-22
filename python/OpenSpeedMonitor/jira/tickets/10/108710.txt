@@ -1,1 +1,0 @@
-Komplette Asset URL in Tabelle anzeigen	Wenn man sich die verschiedenen Assets in eines Punktes in der Tabelle anschaut findet man immer die Spalte "urlWithoutParams". Diese Spalte ist aber uninteressant. Interessant wäre die URL *mit* Parametern.		Improvement	OpenSpeedMonitor	18/Jan/17 10:21 AM																																																																					

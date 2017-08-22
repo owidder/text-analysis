@@ -1,9 +1,0 @@
-Export / Import		124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:19 PM	20/Jun/17 10:52 AM														"20/Jun/17 10:51 AM;aan;Some improvements in ticket ITERAPLAN-5424.
-
-
-
-Tested Export for different combinations of type and model and partial.
-
-
-
-Tested import and two users that are on the import page at the same time."																																																						

@@ -1,6 +1,0 @@
-UI-Improvement in Massupdate	"Mass Data -> Bulk Updates -> Define bulk update...
-
-* Select Listen für die Auswahl eines Standardwertes bei Beziehungen sind leer
-* Select Listen, die nach oben aufklappen, können teilweise hinter der Navigationsleiste verschwinden
-* Klickt man auf einen Button zum Übernehmen eines Standardwertes für die entsprechende Spalte, werden Select Listen mit davor gewähltem Eintrag beim folgenden Refresh der Seite geleert.
-* Die ganze Seite sieht allgemein nicht sehr hübsch aus."		Improvement	iteraplan PO	08/Mar/12 11:44 AM	09/Mar/12 1:51 PM														09/Mar/12 1:51 PM;kvo;work done in ITERAPLAN-543																																																						

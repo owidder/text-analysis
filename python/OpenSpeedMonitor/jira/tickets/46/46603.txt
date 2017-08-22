@@ -1,8 +1,0 @@
-Reload of the elastic sometimes to slow	"I worked with the user “system”.
-I have created a new Attribute Type Group and have given explicit permissions to one role different from IT Architect. For the new attribute type group, I have created new attributes. After that I generated a full XLSX Data export.
-But the new attributes from the new attribute type group were missing.
-In the UI, I could see the new attributes and edit, but in excel they are missing.
-"		Improvement	iteraplan PO	28/Apr/14 10:33 AM	19/Jan/16 11:08 AM					excel	permissions								"28/Apr/14 11:23 AM;isc;In a later export the fields were then still there.
-Probably I had not waited long enough.
-
-Perhaps the reload of the elastic should be performed faster?"																																																						

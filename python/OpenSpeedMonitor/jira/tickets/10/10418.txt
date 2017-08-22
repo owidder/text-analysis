@@ -1,2 +1,0 @@
-Jedem Job-Result ein HTTP-Archive-File zuordnen	"Hängt bisher am Event-Result (dupliziert)
-Cleanup zum späteren Zeitpunkt (nicht Task-Bestandteil)"	10321	Technical task	OpenSpeedMonitor	05/Aug/13 11:55 AM	06/Aug/13 3:07 PM																																																																				

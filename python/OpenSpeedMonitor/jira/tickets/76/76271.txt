@@ -1,3 +1,0 @@
-[Persistenz] Domain-Klassen Ressourcen	"Mit der neuen Version des mongodb-Plugins (siehe IT-983) können wir wieder GORM-Logik für CRUD-Operationen schreiben.
-
-Für die Persistenz der Wasserfall-Ressourcen brauchen wir Domain-Klassen."		Task	OpenSpeedMonitor	08/Mar/16 5:48 PM	25/Mar/16 2:53 PM														25/Mar/16 2:53 PM;bwo;Ich habe die Struktur von meiner BA so angepasst, dass nun pro Dokument die Assets für eine Page eines JobResults persistiert werden. So können wir mit einer Query sämtliche Assets für einen Page-Aufruf laden.																																																						

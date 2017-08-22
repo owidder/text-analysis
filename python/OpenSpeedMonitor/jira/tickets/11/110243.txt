@@ -1,1 +1,0 @@
-Bei Eingabe des Cron-Strings soll direkt eine Validierung erfolgen	Evaluierung des Strings zusätzlich bei `key-up`		Improvement	OpenSpeedMonitor	01/Feb/17 1:38 PM	06/Feb/17 2:33 PM																																																																				

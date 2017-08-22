@@ -1,8 +1,0 @@
-Add log statements to existing client	"Use $log to add some log statements to the existing code of the interactive client.
-Apply generous amounts of common sense to decide where and what to log."	47303	Sub-task	iteraplan PO	18/May/15 1:09 PM	03/Jun/15 2:33 PM														"19/May/15 11:46 AM;ach;Because of decoration of the standart angular service please use only the following methods: debug, info, warn, error, fatal.
-
-*notice:* 
-- default severity level for logger (console output): _INFO_ (debug messages won't be printed per default)
-- default severity level for appender (sending log messages to the server): _ERROR_ (only errors and fatal errors sending per default)"	"22/May/15 10:43 AM;ach;*Inclarification:*
-
-See https://docs.angularjs.org/misc/faq last question"																																																					

@@ -1,1 +1,0 @@
-Release 5.3	All tasks related to build, test and deploy the release to our customers		Epic	iteraplan Quickfox	26/Jul/16 8:59 AM	24/Nov/16 10:04 AM														22/Aug/16 11:36 AM;mse;Commit 25918 belongs to IPTT-49.	24/Nov/16 10:04 AM;fka;All done																																																					

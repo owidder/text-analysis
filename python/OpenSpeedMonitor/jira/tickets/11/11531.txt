@@ -1,9 +1,0 @@
-Skripteditierung erweitern	"# Anzeigen, dass Felder mit einem Stern nicht leer sein dürfen
-# Erklärung, wie man Variablen einsetzt anzeigen
-# Variablen auch visuell hervorheben, wenn vor ihnen kein Leerzeichen steht (z.B. http://example.com/$targeturl)
-# Skripte ohne Code nicht zulassen. D.h. navigationScript muss auf nullable: false gesetzt werden und bei der Migration müssen bestehende Skripte ohne Code einen Defaulttext erhalten.
-# Beim Speichern eines Skripts als Kopie auch Warnung anzeigen, falls setEventName fehlt
-# Auto-Complete der EventNames: Keine EventNames anzeigen, die Leerzeichen im Namen haben
-# Breite des Code-Editors begrenzen
-# --
-# ""Aktualisieren"" -> ""Speichern"""		Task	OpenSpeedMonitor	05/Feb/14 4:20 PM	20/Feb/14 2:24 PM														13/Feb/14 3:07 PM;drieger;4 ist in develop-Zweig implementiert																																																						

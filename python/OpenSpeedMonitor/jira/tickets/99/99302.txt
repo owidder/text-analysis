@@ -1,5 +1,0 @@
-Add drop of old history tables to migration of release 5.5 or later	"The old history tables of the envers-based history will not be removed in the database migration for release 5.4. This is to have an easier time to fix history data in case the migration to the new history proves faulty in some overlooked cases.
-
-
-
-However, at a later time, those old tables should be removed."		Improvement	iteraplan PO	17/Oct/16 9:25 AM						history	migration																																																														

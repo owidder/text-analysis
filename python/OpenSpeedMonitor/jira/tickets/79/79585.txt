@@ -1,1 +1,0 @@
-Alternativen Browser im iteraSpider verwenden	Da sich der PhantomJS als etwas instabil erwiesen hat, sollte der iteraSpider intern einen alternativen Browser verwenden können wie z. B. Firefox oder Chrome.		Story	secureCodeBox	08/Apr/16 2:09 PM		secureBoxSpider				iteratec	students																																																														

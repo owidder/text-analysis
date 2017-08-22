@@ -1,7 +1,0 @@
-Excel Import: handle exceptions during the import of a row without error page, but log-warning and skipping of the erroneous row	"Various cases of erroneous data in an excel sheet still cause exceptions and abort of the import, resulting in an error page. In these cases there should be an appropriate warning displayed in the log and the row be skipped.
-These cases include (but probably aren't restricted to):
-
- * Rows with a given ID but nothing else
- * Rows introducing a hierarchy-cycle
-
-Also building-block names and possible attribute names aren't trimmed consistently, so during the import of a row containing a building block name with whitespace at the start or end, an already existing building block with the same name (without the whitespace) will not be recognized. This results in a constraint violation upon saving (where the name will be trimmed before)."		Improvement	iteraplan PO	18/Jul/11 2:35 PM	26/Jul/11 5:16 PM					excel	import																																																														

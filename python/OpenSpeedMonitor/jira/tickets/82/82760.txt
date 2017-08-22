@@ -1,1 +1,0 @@
-HUB-Viewports (CRUD)	Als Benutzer möchte ich unterschiedliche Sichten auf die Applikationslandschaften haben, um unterschiedliche Fragen beantworten zu können.		Story	EAM-Visualisierung	02/May/16 1:53 PM																																																																					

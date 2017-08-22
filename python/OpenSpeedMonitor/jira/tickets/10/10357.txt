@@ -1,8 +1,0 @@
-Scaffold-UI für domains sperren	"Die automatisch erstellten Oberflächen zum Bearbeiten von technischen Datensätzen (scaffold-UI) wie Browser, Page etc. wird mittels spring-security-plugin gesperrt (später gemäß IT-38 angepasst und zum Teil wieder freigegeben).
-
-Hintergrund: Vor der Umsetzung von IT-38 dürfen Benutzer Elemente wie Page etc. nicht ändern!
-
-Dieser Task ist als Erweiterung von IT-59 zu verstehen."		Bug	OpenSpeedMonitor	01/Aug/13 12:26 PM	06/Sep/13 3:16 PM														"05/Sep/13 5:28 PM;mzeimer;Spring sec plugin vorhanden. UI wird reduziert wenn nicht admin.
-Login ""admin"":""start123""
-
-Die controller müssen nun noch geschützt werden."																																																						

@@ -1,9 +1,0 @@
-Accountability Saved Query of Nesting Cluster Diagram Leads to an Error	"Executing the second saved query for Nesting Cluster Diagrams of the Bank Data causes an error. To reproduce:
-1. Log into iteraplan
-2. Make sure that iteraQl is loaded (wait or test through console).
-3. Open Nesting Cluster Diagram
-4. Click the play button of the second saved query (""Accountability for Information Systems"")
-The result is an error page.
-
-Note: If the query is loaded and then executed, no error occurs. Also, configuring the same diagram and saving it as another query produces no error either (both when loading and executing and when directy executing)."		Bug	iteraplan PO	11/Oct/13 9:42 AM	11/Oct/13 1:44 PM					cluster	diagram	nested	nesting	objectify	savedquery				11/Oct/13 10:02 AM;kgo;The problem was caused by a broken query: The relationship outer2inner was set to 'isValueOf(Accontability)', but the actual RelationshipEnd which relates an ObjectifiedModelExpression to its origins is called only 'isValueOf'.	"11/Oct/13 5:43 PM;psc;Reviewed with Konstantin.
-Ticket will be closed."																																																					

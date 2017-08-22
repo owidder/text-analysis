@@ -1,3 +1,0 @@
-Edit Date values in List view 	"- appropriate Date picker directive
-
-- use it in list view"	101345	Sub-task	iteraplan Thunderduck	03/Nov/16 11:36 AM	22/Nov/16 9:15 AM																																																																				

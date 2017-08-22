@@ -1,9 +1,0 @@
-Ansible-Role für MongoDB schreiben	"Im Infrastruktur-HH Repo soll eine Role geschrieben werden, mit der sich ein MongoDB-Vontainer deployen lässt.
-
-Die Daten sollen in einem separaten data-Container landen.
-
-
-
-Wir benötigen eine Authentifizierung für die osm-DB, die dem Container mitgegeben werden kann.
-
-Wir benötigen eine initiale DB und einen User."		Task	OpenSpeedMonitor	04/Apr/16 10:40 AM	29/Apr/16 10:06 AM														29/Apr/16 10:06 AM;nku;Hat Stefan umgesetzt.																																																						

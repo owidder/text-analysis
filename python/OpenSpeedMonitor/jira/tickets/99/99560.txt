@@ -1,2 +1,0 @@
-HTTPS überall einetzen	"Jede Seite sollte über HTTPS erreichbar sein.
-Das zählt auch für den Link zur Registrierung."		Improvement	OpenSpeedMonitor	18/Oct/16 1:36 PM																																																																					

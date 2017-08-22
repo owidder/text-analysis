@@ -1,1 +1,0 @@
-The default width of the date column should be smaller	Change the value date in  listTemplateUtils.COLUMN_WIDTHS to make the default width smaller.		Improvement	iteraplan Quickfox	05/Jul/16 4:36 PM	26/Jul/16 3:18 PM														05/Jul/16 4:37 PM;tsu;see ITERAPLAN-4688																																																						

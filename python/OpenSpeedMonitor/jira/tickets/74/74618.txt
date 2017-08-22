@@ -1,1 +1,0 @@
-Sicherstellen, dass der OSM mit Blanko-DB startet	Es dürfen keine Inkonsistenzen in den Changelogs sein.		Task	OpenSpeedMonitor	24/Feb/16 10:48 AM	24/Feb/16 4:21 PM																																																																				

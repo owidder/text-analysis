@@ -1,7 +1,0 @@
-Treemap: show hierarchical names	"Toolarea: Display -> Hierarchical/Non-hierarchical names (like in CCD)
-
-The state of switch is saved in URL
-
-Nothing is shown in the legend
-
-Diagram should show the names respectively to the configurations."		New Feature	iteraplan Speedbird	27/Oct/16 11:21 AM	02/Nov/16 4:40 PM					TreeMap																																																															

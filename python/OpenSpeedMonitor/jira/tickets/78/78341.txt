@@ -1,3 +1,0 @@
-[REST] Neue Methode zur Berechnung von CSI pro Page	"Bisher haben wir nur eine REST-API-Methode, die einen CSI für eine JobGruppe für beliebige Zeiträume berechnet. 
-
-Wir benötigen eine neue Methode, die einen CSI pro Page für einen beliebigen Zeitraum berechnet. "		New Feature	OpenSpeedMonitor	24/Mar/16 2:31 PM	29/Mar/16 3:49 PM																																																																				

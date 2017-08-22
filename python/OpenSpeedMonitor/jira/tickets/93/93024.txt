@@ -1,5 +1,0 @@
-Save configuration timer based into the database	"Service storing current configuration to localStorage and for checking the timer. Check how long it would take to do it with a timer. Then decide if the timer will be implemented or every change will be saved to the database.
-
-
-
-Save current configuration at routeChange."		New Feature	iteraplan Quickfox	11/Aug/16 1:39 PM	01/Sep/16 11:31 AM																																																																				

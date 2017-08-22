@@ -1,3 +1,0 @@
-no import in basic bundle possible	"An iteraplan-basic-bundle-5.0.0 refuses to process the excel import, even with the simple sample data and after waiting a few minutes after startup.
-
-Maybe there is no model to validate against?"		Bug	iteraplan PO	13/May/15 10:48 AM	13/May/15 11:21 AM					bundles	excel	import							13/May/15 11:21 AM;sfe;Please contact [~sfe] for more details, reproduction of the issue etc.	13/May/15 12:11 PM;dne;Couln't reproduce either, guess have to wait more then a few minutes :)																																																					

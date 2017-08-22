@@ -1,1 +1,0 @@
-Sortierung auf der JobListe läuft in Fehler	Funktioniert nicht mehr im HEAD von Branch hotfix-otto		Bug	OpenSpeedMonitor	09/Sep/15 9:48 AM	28/Sep/15 5:41 PM														28/Sep/15 5:41 PM;nku;funktioniert in develop-since-github																																																						

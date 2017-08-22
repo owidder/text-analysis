@@ -1,1 +1,0 @@
-Esc on Rich Text editing	Escape should cancel rich text edit		Improvement	iteraplan Thunderduck	07/Mar/17 4:49 PM	20/Mar/17 3:20 PM																																																																				

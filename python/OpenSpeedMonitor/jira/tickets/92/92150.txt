@@ -1,1 +1,0 @@
-Figure out how saved queries are executed		80576	Sub-task	iteraplan Quickfox	01/Aug/16 1:46 PM	10/Aug/16 10:02 AM														10/Aug/16 10:02 AM;mse;No review, as all code changes were commited under main task IPTQ-78.																																																						

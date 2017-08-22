@@ -1,5 +1,0 @@
-Chrome Lighthouse Test-Option überdenken	"Beim ersten Testen von Lighthouse beschwert sich WebPagetest, dass dies nicht mit custom scripts möglich sei.
-
-
-
-Wir sollten Lighthouse und die Mess-Option genau untersuchen und entweder WebPagetest anpassen oder die Option wieder rausschmeißen, wenn sie für uns inhaltlich nicht relevant ist."		Task	OpenSpeedMonitor	15/Jun/17 4:43 PM																																																																					

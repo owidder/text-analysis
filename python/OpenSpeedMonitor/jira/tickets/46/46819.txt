@@ -1,3 +1,0 @@
-Add sorting for Name column	"Sorting by Name column should be active from start. All items should be sorted from A to Z. And near the column title an arrow should be displayed.
-
-If user clicks the title of the column - sorting should change its order from Z to A and an arrow also should change its direction"	46789	Sub-task	iteraplan PO	08/Aug/14 10:45 AM	29/Sep/14 10:45 AM																																																																				

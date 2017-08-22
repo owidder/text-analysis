@@ -1,6 +1,0 @@
-Documentation: Revision of the structure of the Installation Guide	"The structure of the Installation Guide is very unstructured.
-Some contents do not fit to the structure under which they depend.
-The aim should be to see the Red Thread, from the installation prerequisites over the installation and the configuration.
-
-How the structure should look ultimately, is to be discussed in detail.
-"		Improvement	iteraplan PO	29/Oct/13 11:59 AM	30/Dec/15 4:52 PM					documentation																																																															

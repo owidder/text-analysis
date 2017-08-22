@@ -1,1 +1,0 @@
-Copy / New Release copies unselected options	Deselecting interfaces, relations or attribute has no impact on a copy. Everything is copied.		Bug	iteraplan PO	19/Jul/11 10:14 AM	19/Jul/11 2:30 PM					copy	release								19/Jul/11 2:30 PM;sry;The whole process will be changed as part of ITERAPLAN-155																																																						

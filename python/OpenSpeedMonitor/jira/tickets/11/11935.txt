@@ -1,3 +1,0 @@
-Job-Queue-Übersicht: Detailinformationen	In der Job-Queue-Übersicht (IT-296) soll es möglich sein, auf eine Queue zu klicken. Daraufhin wird eingeblendet, welche Jobs zur Zeit in dieser Queue eingestellt sind mit aktuellem Status. Die Jobs werden daraufhin nach dem Erstellen der JobResults sortiert.		Task	OpenSpeedMonitor	20/Feb/14 9:46 AM	27/Feb/14 11:28 AM														"26/Feb/14 4:55 PM;drieger;* Code aufräumen (erledigt)
-* Status anzeigen wie in Jobtabelle (erledigt)
-* Gruppierung nach WPT-Server (erledigt)"																																																						

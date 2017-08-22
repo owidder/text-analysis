@@ -1,9 +1,0 @@
-Adapt the new client to the new error "Matamodel is reloading" 	"In IPTT-130 a new error is added for changes that cannot be saved as there is currently a complete reload.
-
-
-
-It is indicated with the value 13 in the response.
-
-
-
-Change this value, as 13 is also used for other errors, and add a corresponding message to the new client."		Bug	iteraplan Thunderduck	20/Apr/17 2:08 PM	08/May/17 10:34 AM																																																																				

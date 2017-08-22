@@ -1,8 +1,0 @@
-Legend for continuous attribute color ranges contains "null" instead of a label text	"When a diagram is created with continuous coloring and ""Use color values from a range"" selected, then the legend contains two ""null"" labels. (see attachment ""legend_colorrange_null.jpg"")
-
-To reproduce:
-* In Portfolio diagram (or any other diagram with continuous range coloring) on the 2nd page, choose (for example) ""Costs"" as coloring option.
-* Select ""Use color values from a range""
-* Generate the diagram.
-=> The legend for coloring displays ""null"" labels
-"		Bug	iteraplan PO	14/Jun/13 2:18 PM	20/Jun/13 1:58 PM					diagram	visualization								20/Jun/13 1:58 PM;lba;The legend of colors is now displayd correct.																																																						

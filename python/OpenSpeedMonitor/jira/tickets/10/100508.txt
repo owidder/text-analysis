@@ -1,1 +1,0 @@
-OSM Detail Analysis auf Bootstrap3/Widescreen updaten	Nachdem der OSM nun Bootstrap3 und Widescreen unterstützt muss der OSMDetailAnalysis auch angepasst werden		Task	OpenSpeedMonitor	25/Oct/16 6:39 PM	01/Nov/16 1:20 PM																																																																				

@@ -1,6 +1,0 @@
-Issue with the spelling of path names	"After the specification, the first Letter of each separated word should be uppercase. 
-
-Expected for example:  “Business Objects”
-
-Actual: „Business objects“ 
-"		Bug	iteraplan PO	16/Apr/15 8:38 AM	16/Apr/15 4:22 PM																																																																				

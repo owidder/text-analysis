@@ -1,5 +1,0 @@
-Assigning the same type for inner and outer doesn't work properly in N3CD	"It should work with:
-
-* Self relations as selection of inner-outer/outer-inner path
-
-* The same self relations as outer-outer and inner-inner nesting"		Bug	iteraplan PO	27/Apr/16 2:35 PM	28/Apr/16 1:17 PM														28/Apr/16 1:17 PM;mse;Tested successfully.																																																						

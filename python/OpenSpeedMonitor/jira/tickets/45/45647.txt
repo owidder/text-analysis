@@ -1,4 +1,0 @@
-Information Flow Diagram: SVG-Export sometimes doesn't display all the elements visible in the Visio-Export	"This happens when there are Information Systems to be displayed which have a superordinate IS not in the list of the selected Information Systems.
-The Visio-Export explicitely adds the parent systems to the set of systems to be displayed.
-
-SVG should do the same thing."		Bug	iteraplan PO	21/Mar/13 3:50 PM	30/Dec/15 2:32 PM					diagram	InformationFlow	svg	visio																																																												

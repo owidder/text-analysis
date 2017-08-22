@@ -1,1 +1,0 @@
-har-Archive werden nicht korrekt persistiert	Im ProxyService liefert 'as String' für den InputStream des http-Aufrufs der export.php des WPT-Servers nicht das har als json. Die Groovy-Methode getText() sollte dies tun.		Bug	OpenSpeedMonitor	21/Feb/14 11:30 AM	11/Mar/14 2:24 PM																																																																				

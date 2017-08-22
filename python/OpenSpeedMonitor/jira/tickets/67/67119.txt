@@ -1,9 +1,0 @@
-Ersten Jasmine-Tests schreiben, der mit dem DOM interagiert	"Es geht erst mal darum herauszufinden, wie das geht und wie aufwändig das ist.
-
-
-
--> Abgrenzung zu Geb-Tests beachten (siehe IT-371)
-
-
-
-Was wir mit GUI-Tests/Geb abdecken können sollten wir nicht mit Jasmine-Tests testen."		Task	OpenSpeedMonitor	16/Dec/15 9:37 AM	23/Jun/16 4:27 PM																																																																				

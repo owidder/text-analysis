@@ -1,9 +1,0 @@
-Daten-Austausch zwischen OSM-Instanzen	"Im Zusammenhang mit dem Betrieb von OSM im internen Netz der LHT kam die Frage auf, ob man Daten dieser Instanz mit anderen Instanzen teilen könnte.
-
-
-
-Dies ist noch keine konkrete Story die umzusetzen ist, sondern mehr als Idee für eine Diskussion zu verstehen:
-
-
-
-Unabhängig von der Implementierung einer Mandantenfähigkeit innerhalb einer OSM-Instanz wäre es wünschenswert Mess-Ergebnisse einer anderen Instanz integrieren zu können. So könnte man z.B. Wettbewerber-Daten einer öffentlichen Instanz zuspielen oder auch die Ergebnisse aus der internen Instanz  verfügbar machen."		Open Point	OpenSpeedMonitor	28/Feb/17 1:48 PM																																																																					

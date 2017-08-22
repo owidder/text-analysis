@@ -1,7 +1,0 @@
-Edit Direction	"For interfaces
-
- For transported business objects
-
-
-
-take direction edit in list as blue print"		New Feature	iteraplan Thunderduck	07/Dec/16 5:43 PM	20/Mar/17 1:31 PM																																																																				

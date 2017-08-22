@@ -1,3 +1,0 @@
-CRUD für die osm_configuration entfernen/ersetzen	"Die osm_configuration darf es immer nur einmal geben.
-
-Daher machen die Standard-CRUD-Views hier keinen Sinn. Statt dieser Views innerhalb des Menüpunkts _Administration >> All Controllers_ sollte es einen Punkt _Administration >> Configuration_ geben. Hier sollte man auf einer View zum Editieren der einzigen OsmConfiguration gelangen (im Prinzip die show-View aus CRUD). Es darf nichts anderes möglich sein als die einzig existierende OsmConfiguration zu editieren."		Improvement	OpenSpeedMonitor	19/Feb/16 11:35 AM	01/Mar/16 10:30 AM																																																																				

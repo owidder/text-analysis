@@ -1,7 +1,0 @@
-RICKSHAW: Annotationen werden doppelt angezeigt	"Aufgetreten bei einem nicht global sichtbaren Event, welches zwei JobGruppen zugeordnet ist:
-
-https://iteraspeedmonitor.otto.wpt.iteratec.de/eventResultDashboard/showAll?selectedInterval=-1&selectedTimeFrameInterval=259200&from=13.06.2015&fromHour=10%3A10&to=16.06.2015&toHour=10%3A10&selectedFolder=24&selectedFolder=25&selectedPages=1&_selectedAllBrowsers=&selectedAllBrowsers=on&_selectedAllMeasuredEvents=&selectedAllMeasuredEvents=on&_selectedAllLocations=&selectedAllLocations=on&selectedAggrGroupValuesUnCached=docCompleteTimeInMillisecsUncached&trimBelowLoadTimes=&trimAboveLoadTimes=&trimBelowRequestCounts=&trimAboveRequestCounts=&trimBelowRequestSizes=&trimAboveRequestSizes=&_action_showAll=Anzeigen&selectedChartType=0
-
-
-
-Vielleicht liegt's an den beiden Gruppen. Wird allerdings auch dann doppelt angezeigt, wenn nur eine der beiden JobGruppen zur Anzeige im Dashboard ausgewählt wurde. "		Bug	OpenSpeedMonitor	16/Jun/15 10:16 AM	18/Jan/17 4:17 PM																																																																				

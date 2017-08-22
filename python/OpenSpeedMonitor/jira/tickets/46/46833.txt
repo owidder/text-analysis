@@ -1,6 +1,0 @@
-Add colors support to diagramm.	"Colors should be used the same as home tiles colors.
-Outer box should be lighter, innerboxes should be darker"	46787	Sub-task	iteraplan PO	12/Aug/14 3:15 PM	18/Sep/14 3:45 PM														"22/Aug/14 11:24 AM;sepr;Please do next minor improvements:
-1. Add a page title before the diagram
-2. Make outer boxes light-red (very-light)
-3. Sort both outer and inner boxes by name from start
-4. Make correct scrolling on the page (only container with diagram should scroll, not the whole page)"																																																						

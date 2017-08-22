@@ -1,4 +1,0 @@
-MeasuredValue-Berechnungen für Multistep anpassen	Die Berechnungen zur Aggregation der Messwerte sollen für die Multistep-Messungen angepasst werden.		Story	OpenSpeedMonitor	05/Aug/13 10:57 AM	19/Aug/13 11:44 AM														"19/Aug/13 11:44 AM;rhe;Die Berechnung ist abgeschlossen, jedoch bleiben einige Tests offen:
-
-WeeklyShopMultiCSIGroupsIntTest
-WeeklyPageMultiCSIGroupsIntTest"																																																						

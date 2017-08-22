@@ -1,8 +1,0 @@
-Respect user's permissions when rendering Dashboard views	"The dashboard page does always show statistics for *all* building block types, regardless of the actual permissions of the current user.
-
-* The bar charts at the top should only display bars for accessible building block types.
-* The building block type drop-down selection for the pie charts in the middle should only include accessible building block types.
-* The complex IS should only appear if Information Systems are accessible.
-* The Top 5 list of TC should only appear if Technical Component are accessible."		Bug	iteraplan PO	28/Jun/11 1:59 PM	08/Jul/11 11:00 AM					dashboard	permissions								"04/Jul/11 5:48 PM;rbe;  * The building block type drop-down selection for the pie charts in the middle only includes accessible building block types.
-  * The IS table only appears if Information Systems are accessible.
-  * The TC table and the Top 5 list of TC only appear if Technical Component are accessible."	07/Jul/11 4:26 PM;rbe;The bar chart graphic at the top displays bars only for the accessible building block types.	01/Oct/11 10:04 AM;kvo;Permission check about attribute groups done in ITERAPLAN-283																																																				

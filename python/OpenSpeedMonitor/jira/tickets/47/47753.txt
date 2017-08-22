@@ -1,5 +1,0 @@
-*.xls templates cannot be selected for spreadsheet reports	"*.xls templates can be upload to iteraplan but cannot be selected for spreadsheet reports. So there is no way to use excel templates that contain macros!
-
-Proposed fix (by [~sfe]):
-For now remove possibility to upload *.xls Excel templates."		Bug	iteraplan PO	13/May/15 9:58 AM	22/May/15 11:11 AM					excel	macro	template							13/May/15 11:19 AM;sfe;We don't support *.xls anymore. If you wish this to be changed, please talk to [~fka].	18/May/15 11:52 AM;fka;Right, support for *.xls has ended.	"20/May/15 11:27 AM;isc;The possibility to upload *.xls Excel templates is removed and the documentation is adapted.
-http://www.iteraplan.de/wiki/display/iteraplan51/Customizing+Spreadsheet+Reports"																																																				

@@ -1,1 +1,0 @@
-Im TimeSeries-Chart MB statt KB anzeigen	In allen anderen Charts ist das schon so.		Task	OpenSpeedMonitor	26/Apr/17 9:57 AM																																																																					

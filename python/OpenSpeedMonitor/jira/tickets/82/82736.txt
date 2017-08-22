@@ -1,1 +1,0 @@
-Technischer Durchstich	Als Benutzer möchte ich die Architekturschichten der IT-Landschaft sehen, damit ich mir einen Überblick darüber verschaffen kann.		Story	EAM-Visualisierung	02/May/16 1:24 PM	18/Jul/16 10:10 AM																																																																				

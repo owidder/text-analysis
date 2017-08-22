@@ -1,1 +1,0 @@
-"initial data set" of iteraplan is not initial...	... but contains attributes and saved queries. Maybe "initial" should be really "initial", i.e. empty?		Improvement	iteraplan PO	12/Jul/11 8:02 AM	18/Jul/11 10:24 AM														18/Jul/11 10:24 AM;sry;sieht gut aus.																																																						

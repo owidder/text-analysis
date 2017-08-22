@@ -1,5 +1,0 @@
-Treemap: permissions handling 	"When configuration is restored from URL or UserSettings service, check that current user has permissions to configured building block types.
-
-If he does not, show the appropriate message, like in the other diagrams (the {{PERMISSION_WARNING}} message)"		New Feature	iteraplan Speedbird	27/Oct/16 10:45 AM	04/Nov/16 10:02 AM														02/Nov/16 2:40 PM;madu;#4979	03/Nov/16 2:44 PM;roia;Review: https://iteraweb.iteratec.de/fisheye/cru/IP-158	"03/Nov/16 4:10 PM;madu;Thanks for reviewing, Rost.
-
-Please, check rev #5008"																																																				

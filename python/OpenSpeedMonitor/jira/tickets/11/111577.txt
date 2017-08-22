@@ -1,1 +1,0 @@
-Reporting-Komponente HTML entwickeln	Das Reporting soll nicht open source werden. Dieses Feature müssen wir also in einem eigenen, nicht öffentlichen git-repo entwickeln.		Story	OpenSpeedMonitor	10/Feb/17 5:20 PM																																																																					

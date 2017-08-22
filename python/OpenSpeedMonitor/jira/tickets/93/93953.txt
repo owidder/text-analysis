@@ -1,1 +1,0 @@
-Put connect/disconnect changes - simpleDiff	add connect and disconnect calculation to microEditUpdateDiff	93950	Sub-task	iteraplan Thunderduck	23/Aug/16 3:57 PM	29/Aug/16 12:37 PM																																																																				

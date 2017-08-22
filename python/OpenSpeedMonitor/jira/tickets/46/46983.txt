@@ -1,3 +1,0 @@
-GXL2Visio Code Cleanup	"Due to the migration of gxl2visio into the iteraplan project, there are a lot of classes and other files which aren't needed anymore. 
-
-Delete this unused files and improve the code quality of the gxl2visio code. It is located in /src/java/graphics/gxl2visio"		Task	iteraplan PO	18/Sep/14 4:42 PM	08/Feb/15 10:51 PM														08/Feb/15 10:51 PM;fka;Code will be dropped anyway after Visio 2013 format becomes available																																																						

@@ -1,1 +1,0 @@
-Deployment release umstellen auf NONPERSISTENT		113504	Sub-task	OpenSpeedMonitor	01/Mar/17 11:55 AM																																																																					

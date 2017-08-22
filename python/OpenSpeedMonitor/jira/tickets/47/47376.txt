@@ -1,8 +1,0 @@
-Wrong buttons appear in the Header menu for Building block detail view 	"Summary: When user goes to NCD page and came back to BB detail view - ""Download"" and ""Save/Share"" buttons appear 
-
-Steps to reproduce:
-1. Go to any BB detail view page
-2. Click on ""Show nested diagram"" button
-3. Use ""Go to previous"" browser button
-Actual: ""Download"" and ""Save/Share"" buttons appear
-Expected: ""Show nested diagram"" button appear"		Bug	iteraplan PO	30/Jan/15 2:33 PM	03/Aug/15 11:23 AM														26/Mar/15 4:32 PM;wfr;view "single item" is not in scope of April release	01/Jun/15 1:19 PM;sfe;Needs to be considered once single item view is implemented	03/Aug/15 11:23 AM;msr;Already fixed																																																				

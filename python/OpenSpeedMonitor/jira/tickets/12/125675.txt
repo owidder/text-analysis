@@ -1,1 +1,0 @@
-Kilobyte Anzahl in Zeitreihe falsch	Der Wert für Kilobyte im Chart entspricht nicht dem tatsächlichen Ergebnis von WPT (zB aus 431 kb werden 441kb)		Bug	OpenSpeedMonitor	28/Jun/17 3:55 PM																																																																					

@@ -1,1 +1,0 @@
-Underscores on Interface names in Interface section of IS/TC are not shown properly	Due to enabled wiki text processing, underscores are rendered wrong in IS/TC. Attached a patch, which fixes the problem.		Bug	iteraplan PO	20/Aug/12 5:44 PM	21/Aug/12 4:18 PM					wiki									21/Aug/12 5:03 PM;kvo;thx																																																						

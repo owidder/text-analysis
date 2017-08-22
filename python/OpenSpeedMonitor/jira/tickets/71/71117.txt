@@ -1,5 +1,0 @@
-Lite edition does not allow to create/edit IT service elements	"Seems to be a permission issue with the deafult lite user
-
-
-
-IT service should be editable like all other building block types"		Bug	iteraplan PO	29/Jan/16 11:50 AM	25/Feb/16 4:06 PM					itservice	lite	role							25/Feb/16 9:11 AM;abo;Also the default bundle is missing the permissions to edit/create IT Services for role _mainUser_. This should also be corrected.	25/Feb/16 9:17 AM;fka;Yes, we should do this. Might be done via this ticket, too.	25/Feb/16 10:11 AM;abo;Fixed in trunk.	25/Feb/16 4:06 PM;gph;Works now.																																																			

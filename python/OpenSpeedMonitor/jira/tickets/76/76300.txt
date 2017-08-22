@@ -1,7 +1,0 @@
-[dc.js Dashboard] Erste einfache Version	"In einer ersten Version eines dc.js-Dashboards soll folgendes möglich sein:
-
-
-
-* Auswahl von MIME-Types und Domains der auszuwertenden Ressourcen via Tortendiagrammen
-
-* Anzeige einer ersten WPT-Messgröße als Line-Chart (z.B. TTFB)"		Task	OpenSpeedMonitor	08/Mar/16 6:27 PM	06/Apr/16 2:35 PM																																																																				

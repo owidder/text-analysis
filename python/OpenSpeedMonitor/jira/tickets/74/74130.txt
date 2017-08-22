@@ -1,5 +1,0 @@
-Scroll-Header kann nicht alle Jobs markieren	"Getestet im Chrome und als Admin angemeldet.
-
-
-
-Im Scroll-Header gibt es ganz links einen Haken mit dem man vermeintlich alle Jobs markieren kann. Klickt man allerdings diesen Haken, passiert nichts -> Es werden keine Jobs markiert."		Bug	OpenSpeedMonitor	19/Feb/16 11:05 AM	09/Dec/16 3:38 PM																																																																				

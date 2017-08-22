@@ -12,3 +12,5 @@ OpenSpeedMonitor
 /python/OpenSpeedMonitor/gitlab
 *.utf8
 node/osm
+python/OpenSpeedMonitor
+

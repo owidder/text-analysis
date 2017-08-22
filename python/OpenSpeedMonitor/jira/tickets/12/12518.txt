@@ -1,1 +1,0 @@
-Deployable mit embedded servlet container	Könnte für nicht-Entwickler auf github Sinn machen.		New Feature	OpenSpeedMonitor	04/Jun/14 11:47 AM	24/Oct/14 2:13 PM														24/Oct/14 2:13 PM;nku;bietet grails schon (run-war)																																																						

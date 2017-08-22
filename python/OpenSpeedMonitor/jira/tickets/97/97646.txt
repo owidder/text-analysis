@@ -1,1 +1,0 @@
-Attribut Valid aus Location entfernen	Das Attribut wird nicht genutzt und sieht in der CRUD-View seltsam aus.		Task	OpenSpeedMonitor	28/Sep/16 2:21 PM	18/Jan/17 9:33 AM																																																																				

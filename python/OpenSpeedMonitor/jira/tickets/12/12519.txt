@@ -1,8 +1,0 @@
-Domain sichern	"z.B. openspeedmonitor.org
-"		New Feature	OpenSpeedMonitor	04/Jun/14 11:56 AM	07/Oct/14 10:14 AM														30/Jun/14 9:14 AM;nkuhn;ggf. mit SSL-Zertifikat	"07/Oct/14 10:14 AM;nku;Laut Elke gehören uns die folgenden Domains:
-
-* openspeedmonitor.org
-
-* openspeedmonitor.de
-
-* openspeedmonitor.com"																																																					

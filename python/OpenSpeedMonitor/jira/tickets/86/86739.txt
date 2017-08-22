@@ -1,1 +1,0 @@
-Include the application sources and libraries automatically into the index.html			Improvement	iteraplan PO	08/Jun/16 11:55 AM																																																																					

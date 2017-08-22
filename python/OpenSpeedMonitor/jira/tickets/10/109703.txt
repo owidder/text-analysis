@@ -1,1 +1,0 @@
-Location crud view produziert 500	In der crud view wird noch das valid-Attribut angezeigt, was es mittlerweile nicht mehr gibt.		Bug	OpenSpeedMonitor	26/Jan/17 9:10 AM	26/Jan/17 9:12 AM																																																																				

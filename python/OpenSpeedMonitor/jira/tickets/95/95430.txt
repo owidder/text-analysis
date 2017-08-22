@@ -1,1 +1,0 @@
-RELEASE: Create Documentation for Saved Queries	Create Documentation for private and public saved queries.		Task	iteraplan Quickfox	07/Sep/16 10:09 AM	18/Oct/16 1:25 PM														27/Sep/16 11:19 AM;mwe;The documentation can be found on this page: https://www.iteraplan.de/doc/display/iteraplan54/Saved+Queries																																																						

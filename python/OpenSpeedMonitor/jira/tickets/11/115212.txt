@@ -1,5 +1,0 @@
-Analyse current export/import implementation on the server	"To prepare IPTS-642
-
-
-
-Timebox: 1 day"		Improvement	iteraplan Speedbird	17/Mar/17 10:52 AM	22/Mar/17 2:03 PM																																																																				

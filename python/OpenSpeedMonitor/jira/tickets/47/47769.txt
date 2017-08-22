@@ -1,7 +1,0 @@
-Filters by date attributes "Last modification time" and "runtime period" don't work for relation properties	"Steps to reproduce:
-1. Use IS as content type
-2. Open context menu for X/Y axis or content elements
-3. Select menu for filtering ""Show with properties of""
-4. Use ""Last modification time"" and ""runtime period"" from any relation
-Actual: The date picker doesn't appear, filters don't work
-Expected: The date picker appears, filters can be applied"		Bug	iteraplan PO	14/May/15 1:53 PM	14/Jul/15 1:50 PM																																																																				

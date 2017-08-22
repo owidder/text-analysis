@@ -1,7 +1,0 @@
-Anpassung Abfrage-Methoden der EventResult-MeasuredValues	"Der ResultMeasuredValueService stellt die Methoden zur Abfrage der hourly, daily und weekly Result-MV's bereit. Diese Methoden sind noch nicht vollständig auf MeasuredEvent statt Job(Config) als Abfrage-Kriterium umgestellt.
-
-Die Abfrage-Methoden zur Abfrage der EventResult-Rohdaten müssen um die Möglichkeit ergänzt werden, Messwerte oberhalb oder unterhalb eines bestimmten Grenzwertes auszuschließen. Alternativ könnte man diese Einschränkungen auch per Javascript cleint-seitig machen und die Highchart-Map anpassen."	10005	Sub-task	OpenSpeedMonitor	05/Aug/13 5:47 PM	24/Sep/13 3:21 PM														"15/Aug/13 10:03 AM;mzeimer;Für die tatsächlichen DB-Anfrage sollte das DAO verwendet werden:
-
-de.iteratec.isocsi.MeasuredValueDaoService
-
-(Bitte den Kommentarblock ""Design-Note zu IT-60"" unten beachten)"	19/Aug/13 4:56 PM;rhe;Aufzurufende Methode am EventResult-MeasuredValues																																																					

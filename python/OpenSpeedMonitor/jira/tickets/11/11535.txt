@@ -1,1 +1,0 @@
-Jobtabelle: Jobgruppen-Spalte und Filterung	In der Jobtabelle soll pro Job auch seine Jobgruppe angezeigt werden. Zusätzlich soll man nach Jobgruppen filtern können.		Task	OpenSpeedMonitor	05/Feb/14 4:30 PM	25/Feb/14 11:44 AM																																																																				

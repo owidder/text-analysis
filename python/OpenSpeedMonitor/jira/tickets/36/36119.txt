@@ -1,1 +1,0 @@
-default.back.top.lablel wird auf Server nicht ausgeliefert	Siehe Screenshot von http://openspeedmonitor.wpt.iteratec.de/job/list		Bug	OpenSpeedMonitor	30/Mar/15 11:19 AM	14/Apr/15 3:52 PM																																																																				

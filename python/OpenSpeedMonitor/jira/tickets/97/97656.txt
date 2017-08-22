@@ -1,1 +1,0 @@
-Extend DecoratorFactory to work with attributes on relations or Business Mappings		96139	Sub-task	iteraplan Speedbird	28/Sep/16 2:36 PM	07/Oct/16 2:19 PM																																																																				

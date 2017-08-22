@@ -1,3 +1,0 @@
-Can not create new interface	"check also if interface editing is working properly
-
-fix if needed"		Bug	iteraplan Thunderduck	14/Dec/16 9:29 AM	23/Jan/17 9:58 AM																																																																				

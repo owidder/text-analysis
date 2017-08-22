@@ -1,5 +1,0 @@
-Aggregation pro Job Gruppe Anzeige fehlerhaft	"Wenn bei der Aggregation pro Job Gruppe ein Messgröße gewählt wird, welcher nicht vorhanden ist, wird nichts angezeigt (soweit korrekt). Wenn anschließend eine Messgröße gewählt wird die vorhanden ist, wird trotzdem nichts angezeigt.
-
-
-
-Vgl: DEV, Jobgruppe ""undefined"", Messgröße: ""doc complete"" wird angezeigt. Wechsel auf ""Kundenzufriedenheit (visually complete"") (Es wird nichts angezeigt). Wechsel zurück auf doc complete und es wird nichts mehr angezeigt."		Bug	OpenSpeedMonitor	29/Jun/17 11:16 AM																																																																					

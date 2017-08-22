@@ -1,9 +1,0 @@
-Execute Excel import tests	"Test cases see in attached Excel file.
-
-Please document the results of the tests in the Excel file and attach the file with the results to this issue."		Task	iteraplan PO	20/Apr/16 4:36 PM	25/Apr/16 3:54 PM					test									"25/Apr/16 10:05 AM;mse;* Tests completed (see attached file), one defect ticket created.
-
-* Updated test specifications in svn for better readability.
-
-
-
-"	25/Apr/16 3:54 PM;pzi;1 failed test, ticket was created: ITERAPLAN-4494																																																					

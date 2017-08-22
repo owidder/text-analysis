@@ -1,1 +1,0 @@
-Index im WaterfallEntry mit persistieren	Die Position im Wasserfall sollte für Auswertungen auf jeden Fall mit persistiert werden.		Improvement	OpenSpeedMonitor	18/Mar/14 6:05 PM	29/Feb/16 11:35 AM														29/Feb/16 11:35 AM;nku;Passiert in der mongodb-Persistenz bereits.																																																						

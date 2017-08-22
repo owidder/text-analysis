@@ -1,3 +1,0 @@
-Config anpasen für dev/release/prod	"Im Rahmen von [IT-1490] wurde der Microservice einheitlich im OSM benannt.
-
-Dabei wurden auch die config-Dateien geändert und müssen nun entsprechen der beispiel-config angepasst werden."	111439	Sub-task	OpenSpeedMonitor	15/Feb/17 2:42 PM	08/Mar/17 4:00 PM																																																																				

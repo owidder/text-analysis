@@ -1,3 +1,0 @@
-Job Schedule view filterbar machen	"Die Job Schedule View sollte filterbar werden.
-
-In einem ersten Schritt sollte man in einem input-Feld einen Freitext eingeben können und die angezeigten locations würden danach gefiltert werden."		Task	OpenSpeedMonitor	23/Dec/16 4:41 PM	23/Dec/16 4:41 PM																																																																				

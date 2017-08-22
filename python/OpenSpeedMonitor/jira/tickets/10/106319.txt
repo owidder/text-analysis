@@ -1,3 +1,0 @@
-Information Flow Diagram		105406	Sub-task	iteraplan Speedbird	21/Dec/16 9:50 AM	03/Jan/17 6:44 AM														23/Dec/16 2:52 PM;dmkh;There is only edge line type in IFD, please specify toolarea for line types for IFD (are line types for nodes needed?).	27/Dec/16 10:14 AM;fka;No line types for nodes needed. In IFD only edge line type exist. Implement attribute ranges only for the already existing edge line type.	"03/Jan/17 6:44 AM;viol;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-277
-
-no any comments"																																																				

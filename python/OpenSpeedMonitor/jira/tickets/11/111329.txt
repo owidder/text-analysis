@@ -1,7 +1,0 @@
-Exception bei Wechsel von TimeSeries auf DetailAnalysis	"Folgender Link wird erzeugt, und die Exception fliegt:
-
-
-
-http://openspeedmonitor.wpt.iteratec.de/detailAnalysis/show?selectedFolder=40&selectedAllBrowsers=on&selectedAllLocations=on&selectedAllConnectivityProfiles=on&selectedPages=50&fromHour=undefined&toHour=undefined&selectedInterval=60&selectedTimeFrameInterval=0&selectedAggrGroupValuesUnCached=docCompleteTimeInMillisecsUncached&includeNativeConnectivity=false&includeCustomConnectivity=false"		Bug	OpenSpeedMonitor	08/Feb/17 12:09 PM	09/Feb/17 12:58 PM														"09/Feb/17 12:58 PM;mmi;bereits gefixt.
-
-Noch nicht produktiv deployed."																																																						

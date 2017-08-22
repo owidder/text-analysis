@@ -1,9 +1,0 @@
-Tabular reportings Xmi-Export: the availableForInterfaces attribute is not exported	"By refactoring the issue ITERAPLAN-303 if found a bug, which was already there, but not found :)
-How to reproduce:
-
-1. Go to Spreadsheet Reports
-2. Select Technical Components
-3. Choose the XML result type 
-4. Click on SendQuery
-
-In the exported XMI the Technical Component Release does not have the the attribute available for interfaces"		Bug	iteraplan PO	20/Oct/11 5:20 PM	21/Nov/11 4:08 PM					export	technicalComponent	xmi							21/Nov/11 11:43 AM;vsh;It's not possible to create queries with Available For Interface as search criterion.	21/Nov/11 4:08 PM;vsh;OK.																																																					

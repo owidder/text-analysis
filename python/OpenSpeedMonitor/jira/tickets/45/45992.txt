@@ -1,5 +1,0 @@
-Specify behaviour for Attribute Type Groups without an associated role	"Attribute Type Groups can be created without any role associated. Even if there are roles, a user has some and he is not administrator, he can access the Attribute Type Groups that have no associated roles. Hence, the default permission is true.
-
-There is no clear documentation whatsoever about this fact (at least not when referring to Attribute Type Groups). If this behaviour is intended, it should be stated somewhere explicitly in order to avoid confusion among customers who might assume that the default permission is false.
-
-The checks for permissions are made at {{UserContext#userHasAttrTypeGroupPermission}}."		Task	iteraplan PO	12/Aug/13 6:22 PM	30/Dec/15 2:58 PM														30/Dec/15 2:58 PM;fka;Works as designed																																																						

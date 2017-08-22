@@ -1,1 +1,0 @@
-Make RowDataBuilder less dependend of the actual list type	 * Make RowDataBuilder less dependend of the actual list type	111840	Sub-task	iteraplan PO	23/Jun/17 1:44 PM																																																																					

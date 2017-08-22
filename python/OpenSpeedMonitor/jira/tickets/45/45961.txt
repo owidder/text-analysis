@@ -1,8 +1,0 @@
-Create analysis SQL script to find Building Block Elements with reserved characters in name	"For Building Block Elements, two characters are reserved and thus forbidden:
-1) Colon "";""
-2) Hash sign ""#""
-
-The browser prevents users from creating elements with these characters in name, but the (Excel) import <= 3.0.4 doesn't. Since 3.1 the Excel import stops correctly with a ""name constraint violation"". When users migrate from 3.0.4 to 3.1, there should be an analysis script to find affected elements. Automatic renaming is NOT desirable, because you never know if the new name would be unique, or if the result fits with customer's conventions.
-
-Update migration guide and deploy the scripts to the ""Migration"" section in EAM Community."		Task	iteraplan PO	06/Aug/13 2:08 PM	14/Aug/13 10:59 AM					database	mysql	oracle						Oracle, MySQL	"07/Aug/13 1:07 PM;lba;(/) Script for MySQL works
-(/) Migration Guide correct updated"	08/Aug/13 4:46 PM;lba;(x) Not tested with Oracle yet	14/Aug/13 10:59 AM;sfe;(/) Oracle script works.	10/Oct/13 4:03 PM;sry;Fine, thx.																																																			

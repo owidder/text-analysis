@@ -1,9 +1,0 @@
-Creation of the index under Filesystem "CIFS" does not work	"According to our customers I-102 the creation of the index under the File System ""CIFS"" dose not work.
-
-The following mail wrote the customer to the support:
-{code}Wir haben unsere Infrastruktur von Windows auf Linux (Cent OS) umgestellt.
-Bei Filesystem CIFS bekommen wir Fehler beim Index generieren. Sobald wir auf NFS umstellen geht es viel schneller und ohne Probleme.
-{code}
-
-
-We should analyze the problem and noted as a limitation in the manual."		Task	iteraplan PO	10/Jun/15 1:48 PM	19/Jan/16 4:06 PM														22/Jun/15 2:00 PM;sfe;First ask customer for exact errors.																																																						

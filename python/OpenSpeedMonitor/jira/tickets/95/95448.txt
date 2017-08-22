@@ -1,9 +1,0 @@
-Reaction Listener to M3CEL	"M3CEL = Metamodel and Model Changes event listener
-
-
-
-reaction listener of plugin api should be generalized to new ""global"" changes listener, that manages not only reaction relevant events.
-
-
-
-use action queue instead of synchronization object"		Task	iteraplan Thunderduck	07/Sep/16 11:58 AM	16/Sep/16 11:25 AM					M3CEL																																																															

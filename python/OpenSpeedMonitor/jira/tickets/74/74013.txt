@@ -1,3 +1,0 @@
-Update enterprise data and adjust tests	"* As described in super-issue, update the sample data (not LITE data)
-
-* Adjust protractor tests where necessary"	73633	Sub-task	iteraplan PO	18/Feb/16 10:54 AM	10/Mar/16 10:15 AM														02/Mar/16 3:15 PM;abo;This is the first of 2 subtasks. Maybe a reviewer should work on both of them together.																																																						

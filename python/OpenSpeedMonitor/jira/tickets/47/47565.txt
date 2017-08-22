@@ -1,8 +1,0 @@
-NCD: "Default coloring" in the Context menu	"Summary: ""Default coloring"" coloring options should appear in the Context menu only after applying any coloring options.
-
-Steps to Reproduce:
-1. Go to NCD page
-2. Open Context menu for inner/outer elements
-Actual: ""Default coloring"" coloring options appear in the Context menu
-Expected: ""Default coloring"" coloring options should appear in the Context menu only after applying any coloring options"		Bug	iteraplan PO	01/Apr/15 3:41 PM	19/Jun/15 11:46 AM														"02/Apr/15 12:53 PM;dasm;Or maybe better if we just mark  this option? ( as applied Default color scheme)
-according to approved behavior in IP9-331"																																																						

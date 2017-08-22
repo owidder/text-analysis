@@ -1,1 +1,0 @@
-Load setting on diagram page loading	See IPTQ-84	92344	Sub-task	iteraplan Quickfox	24/Aug/16 12:57 PM	06/Sep/16 12:06 PM														24/Aug/16 12:58 PM;pma;The commits 4155, 4156, 4157 and 4158 (committed in IPTQ-84) relate to this subtask 																																																						

@@ -1,1 +1,0 @@
-Edit Line should stay after create failure	give user the second chanse to create a proper element		Bug	iteraplan Thunderduck	14/Dec/16 9:33 AM	22/Dec/16 1:42 PM																																																																				

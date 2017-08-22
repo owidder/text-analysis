@@ -1,5 +1,0 @@
-Nesting Cluster Diagram doesn't properly restore all of the saved settings when loading a saved report	"The setting for route/relationship (outer2inner) and the outer element recursive setting (outer2outer) are set to the default/start value after loading a saved report, even if they were saved differently.
-The settings are written into the saved report xml under the viewpointConfig element as entries with the keys ""outer.outer2inner"" and ""outer.outer2outer"", but don't seem to be read and/or set from there properly.
-
-These two settings also don't persist when you switch to another page of iteraplan and back, or refresh the page.
-In this case, outer and inner element selection also is reverted to the state of the last saving or loading or executing of a nesting cluster diagram."		Bug	iteraplan PO	25/Jan/12 4:16 PM	02/Apr/12 9:46 AM					diagram	VBB	visualization																																																													

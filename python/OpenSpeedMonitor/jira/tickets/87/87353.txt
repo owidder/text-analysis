@@ -1,1 +1,0 @@
-Create ESLint watcher			Improvement	iteraplan PO	15/Jun/16 4:07 PM	21/Jun/16 9:47 AM														20/Jun/16 11:56 AM;mwe;Execute {code}grunt watchJsErrors{code}. The eslint watcher task will be executed with the task serveDev, too.																																																						

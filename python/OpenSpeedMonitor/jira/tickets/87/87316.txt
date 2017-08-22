@@ -1,1 +1,0 @@
-Gehe zu ... Queue 500	http://localhost:8080/queueStatus/list funktioniert nicht		Bug	OpenSpeedMonitor	15/Jun/16 11:52 AM	15/Jun/16 12:03 PM														15/Jun/16 12:03 PM;msk;fixed typo in method name																																																						

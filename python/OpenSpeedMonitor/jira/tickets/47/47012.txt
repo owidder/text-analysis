@@ -1,5 +1,0 @@
-All groups should flow into a multi-column layout	"For example: the attribute groups should flow into 2 columns on a narrow screen, and into 3 or more columns in a wide screen.
-
-Same for groups that are lists of connected items.
-
-"		New Feature	iteraplan PO	30/Sep/14 4:44 PM	19/Jan/16 10:35 AM																																																																				

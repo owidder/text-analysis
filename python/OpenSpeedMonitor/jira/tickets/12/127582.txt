@@ -1,1 +1,0 @@
-Deployment OSM / OSMDA	Um die OsmDetailAnalysis-Version mit HTTPS-Support deployen zu können muss auch der OSM in der aktuellsten Version deployt werden.		Task	OpenSpeedMonitor	19/Jul/17 4:47 PM																																																																					

@@ -1,9 +1,0 @@
-Extend Filtering-text-spec.js in IFD 	"please edit the e2e-test tracability excel sheet located in e2etest subfolder after implementing the tests
-
-
-
-todo:
-
-- extend Filtering-text-spec.js : create the name filter, then create a version filter, apply it and UNDO it (this test should test ""undo"")
-
-"	62900	Sub-task	iteraplan PO	09/Nov/15 8:12 AM	17/Nov/15 7:44 AM					IFD																																																															

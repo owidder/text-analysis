@@ -1,2 +1,0 @@
-Problems with PAPI and History	"check if relevant
-Changes made by Plugin API don't modify the history of building blocks"		Bug	iteraplan Thunderduck	25/Aug/16 10:15 AM	02/Nov/16 1:53 PM																																																																				

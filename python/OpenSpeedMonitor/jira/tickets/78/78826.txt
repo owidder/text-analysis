@@ -1,5 +1,0 @@
-Authentifizierung des ZAP Scanners für BCG überprüfen	"Die Testinstanz von BCG ist unter dieser URL erreichbar: https://cex.iteratec.de/
-
-
-
-*TODO*: Klären wo die Login-Daten hinterlegt werden sollen."		Story	secureCodeBox	31/Mar/16 2:37 PM		secureBoxZap				iteratec																																																															

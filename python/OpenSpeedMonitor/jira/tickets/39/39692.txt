@@ -1,3 +1,0 @@
-Rickshaw-Slider wird bei Doppelklick nicht wieder maximiert	"Durch das Doppelklicken des Sliders wird der Content des Zooms wieder auf die gesamte Ausdehnung des Diagramms gestellt.
-
-Das passiert mit dem sichtbaren Haupt-Ausschnitt im Diagramm auch. Nur der Slider selbst behält nach dem Doppelklick seine kleine Ausdehnung bei und ist nicht mehr synchron mit dem sichtbaren Bereich im Diagramm."		Bug	OpenSpeedMonitor	04/May/15 11:15 PM	05/May/15 9:50 AM														05/May/15 9:53 AM;rkr;Commit 8cd192b4ba64871490c579c61a3ee61b8ff43992																																																						

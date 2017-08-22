@@ -1,3 +1,0 @@
-ITLURP	Updated the list of the used libraries	92213	Sub-task	iteraplan Quickfox	09/Aug/16 9:40 AM	10/Aug/16 12:32 PM														"10/Aug/16 10:08 AM;tam;Updated excel overview (See https://iteraweb.iteratec.de/confluence/display/ITPL/Used+Libraries)
-
-Updated licenses and added new license (CC BY 4.0) text "																																																						

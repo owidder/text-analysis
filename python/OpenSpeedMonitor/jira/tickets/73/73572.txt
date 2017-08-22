@@ -1,1 +1,0 @@
-Rickshaw ersetzen durch d3 raw			Task	OpenSpeedMonitor	15/Feb/16 4:00 PM	18/Jan/17 2:38 PM																																																																				

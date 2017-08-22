@@ -1,5 +1,0 @@
-Echte GPS-Daten nutzen	"Aktuell wird eine fixe GPS-Position genutzt.
-
-Ziel: Die tatsächliche GPS-Position wird verwendet und aktualisiert sich.
-=> Auswirkung auf die Darstellung
-"		Task	EAMV15	20/Nov/15 5:15 PM	07/Dec/15 2:32 PM														30/Nov/15 11:11 AM;fbe;Die Genauigkeit der GPS-Positionen des Smartphones ist für die Anzeige von Sensoren aktuell zu ungenau																																																						

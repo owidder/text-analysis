@@ -1,5 +1,0 @@
-Löschen von Skript "null"	"Getestet in Firefox und angemeldet als Admin.
-
-
-
-In der Detail-Ansicht eines Skripts, das von einem Job verwendet wird, auf ""Löschen"" klicken. Anschließend wird man gefragt, ob man das Skript ""null"" löschen möchte. Siehe Screenshot."		Bug	OpenSpeedMonitor	19/Feb/16 9:39 AM	25/Feb/16 7:34 PM														25/Feb/16 7:34 PM;bka;Wurde bereits durch das Fixing eines anderen Tickets erledigt.																																																						

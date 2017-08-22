@@ -1,9 +1,0 @@
-[CsiConfiguration] Löschen eines einzelnen Page-Mappings	"Wählt man in der csiConfiguration/configuration/1 eine page-mapping aus und will dieses Entfernen, scheint es so, als wird nicht das PageMapping gelöscht, sondern die CsiConfiguration kopiert. Das zu löschende Mapping ist hinterher weg, aber es dauert ewig lange.
-
-Wie erkannt wurde, dass die configuration kopiert wird:
-
-Man wählt löschen bei einem pageMapping. Es erscheint der Spinner, dass gerade gelöscht wird.
-
-Ruft man nun mit einem andern Browser/Tab die Seite der CsiConfiguration wieder auf, so sind alle PageMappings verschwunden und werden nacheinander der Configuration wieder hinzugefügt.
-
-Dieses Phänomen ist auch in IT-862 beschrieben."		Bug	OpenSpeedMonitor	19/Feb/16 10:18 AM	22/Feb/16 3:44 PM																																																																				

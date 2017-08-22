@@ -1,9 +1,0 @@
-Fix chips	"Currently, our use of the ""chips"" widget shows some weaknesses:
-
-* awkward user experience for single value select (maybe use simple dropdown/combobox for this?) (/)
-
-* on enum columns, the selection does not appear until something was typed in the search field (/)
-
-* bad layout: search input field right of the selected values instead of below, for example (/)
-
-* dropdown field blocks apply/cancel buttons (x) "	102732	Sub-task	iteraplan Thunderduck	13/Dec/16 10:22 AM	22/Dec/16 2:24 PM																																																																				

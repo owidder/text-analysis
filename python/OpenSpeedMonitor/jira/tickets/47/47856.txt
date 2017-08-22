@@ -1,3 +1,0 @@
-Display loading indicator for diagram	When a diagram in the interactive client is calculated, display a loading indicator meanwhile.		Improvement	iteraplan PO	22/Jun/15 3:56 PM	30/Jun/15 10:41 AM					diagram									"30/Jun/15 10:41 AM;fam;Subtickets finished.
-
-Epic closed."																																																						

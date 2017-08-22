@@ -1,1 +1,0 @@
-Add new element in ag-grid (IE10)	While adding new element in ag-grid, user cannot open editors to edit name, description or other properties of new BB list item or new attribute list item (IE10).		Bug	iteraplan Speedbird	10/Mar/17 1:05 PM	13/Apr/17 11:36 AM																																																																				

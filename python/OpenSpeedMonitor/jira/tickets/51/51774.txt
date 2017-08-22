@@ -1,9 +1,0 @@
-REST-Interface für die secureBox zur Anlage, Konfiguration und Steuerung von Jobs	"__Als Benutzer/Kunde möchte ich die Funktionalität der secureBox über ein definiertes REST-Interface ansprechen können. __
-
-
-
-Aktuell wird die secureBox noch auch Basis von gradle auf der Kommandozeile gestartet und benutzt, zukünftig soll die gleiche funktionalität ebenfalls via REST angeboten werden, um ein verbinden mit dem Container zu vermeiden."		Story	secureCodeBox	24/Jul/15 7:58 PM	29/Feb/16 9:23 PM														"29/Feb/16 9:23 PM;rfe;Wurde im Rahmen des Frei-Day 2 umgesetzt.
-
-
-
-Beispielcode findet sich hier: https://iteragit.iteratec.de/iterasecurity/secureBoxUI"																																																						

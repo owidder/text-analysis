@@ -1,7 +1,0 @@
-Document Bar Chart Diagram in the User Guide	"Please, document all new features you have added to Bar Chart Diagram: https://www.iteraplan.de/doc/display/iteraplan55/Bar+Chart+Diagram
-
-
-
-"		Bug	iteraplan Speedbird	07/Oct/16 3:46 PM	03/Nov/16 12:11 PM														"22/Oct/16 10:03 AM;msr;Task for Monday, 24th October:
-
-Please finish this ticket on Monday."																																																						

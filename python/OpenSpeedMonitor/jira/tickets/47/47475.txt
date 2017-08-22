@@ -1,4 +1,0 @@
-Add attributes as axis as an variant of the legend	"still read only, no interaction
-
-"		New Feature	iteraplan PO	04/Mar/15 3:36 PM	07/Apr/15 1:29 PM														"02/Apr/15 5:32 PM;dasm;Verified
-revision 866"	09/Apr/15 11:08 AM;alvo;All commits provided on IPNINE-373 implementation, thea're no additional changes required.																																																					

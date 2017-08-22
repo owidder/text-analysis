@@ -1,5 +1,0 @@
-[CRUD] MeasuredEvent -> Create führt zu einem 500er Serverfehler	"Unter http://localhost:8080/measuredEvent/create kommt es zum Serverfehler.
-
-
-
-Name kann per edit scheinbar auf null gesetzt werden, aber die Änderung schlägt nicht durch."		Improvement	OpenSpeedMonitor	12/May/16 12:44 PM	12/May/16 6:25 PM																																																																				

@@ -1,5 +1,0 @@
-Localization for Excel export doesn't work	"Reproduce:
-* Export an Excel (partial or normal) with locale ""deutsch""
-
-=> All type names, sheet names and headings are in english."		Bug	iteraplan PO	25/Feb/14 10:55 AM	06/Mar/14 3:01 PM					excel	export								"04/Mar/14 11:07 AM;sfe;Seems to be related to missing updates of ElasticMiContext's locale.
-The ""setLocale"" method seems to be called only by tests."																																																						

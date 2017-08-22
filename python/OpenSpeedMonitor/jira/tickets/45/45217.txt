@@ -1,3 +1,0 @@
-Saved query "Future information systems" loaded with errors	"An error message referring to a missing or erroneous attribute is displayed when the query is loaded (-> Spreadsheet reports).
-
-The problem is that the ID of 'Accountability' has changed, so the saved query contains the old ID (id 87 changed to 348)."		Bug	iteraplan PO	21/Oct/11 5:13 PM	24/Oct/11 2:14 PM														21/Oct/11 5:16 PM;vsh;see ITERAPLAN-175 for a similar case	24/Oct/11 2:15 PM;bsi;OK																																																					

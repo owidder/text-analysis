@@ -1,9 +1,0 @@
-Simple String Edit	"first spike implementation for list edit
-
-- edit of simple string value
-- use colDef.editable = true for string properties
-- register own handling function with api.addEventListener(""cellValueChanged"", funname);
-- use edit service
-
-- check the performance for large data!!
-"		New Feature	iteraplan Thunderduck	05/Oct/16 12:43 PM	07/Nov/16 10:00 AM														04/Nov/16 2:34 PM;mse;Text columns are now editable. A failure callback which reverts the changes is already in place.																																																						

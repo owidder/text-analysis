@@ -1,3 +1,0 @@
-Treemap: download	"Implement download as in the other diagrams.
-
-There will be no separate ""Download"" and ""Full download"" because we always have the full data."		New Feature	iteraplan Speedbird	27/Oct/16 10:43 AM	03/Nov/16 2:48 PM					TreeMap									03/Nov/16 2:48 PM;madu;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-155																																																						

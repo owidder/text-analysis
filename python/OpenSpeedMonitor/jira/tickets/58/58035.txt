@@ -1,1 +1,0 @@
-Remove content spanning in LSD	Remove from context menu and from diagram creation.		Improvement	iteraplan PO	23/Sep/15 1:29 PM	25/Sep/15 1:54 PM														25/Sep/15 11:38 AM;sfe;There is some code left to be removed in lsdTableModelBuilder.	25/Sep/15 1:54 PM;sfe;seems fine																																																					

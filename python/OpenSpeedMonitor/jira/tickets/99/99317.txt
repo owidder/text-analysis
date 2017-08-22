@@ -1,3 +1,0 @@
-Add linux startscript for the migration tool and add support for all databases	"Currently we only have a startscript for windows systems and it only supports mysql database connectors.
-
-Add support for Oracle and MS SQL databases and an according script for linux systems."	96257	Sub-task	iteraplan Thunderduck	17/Oct/16 10:50 AM	18/Oct/16 11:08 AM														18/Oct/16 11:08 AM;mse;Review ok.																																																						

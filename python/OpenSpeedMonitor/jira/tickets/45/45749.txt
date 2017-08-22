@@ -1,9 +1,0 @@
-Actions on search result list cause the search to be reset	"All of the actions available to be performed on a search result cause the active search to be reset and all buildingblocks being displayed.
-
-To reproduce;
-* navigate to the BP Overview page
-* execute a fulltextsearch on BPs => search is executed and results are reduced to matching ones
-* switch to tree-view
-=> search is reset and all BBs are displayed as result
-
-the same happens if one changes sort-order of the results, moves columns, adds columns, removes columns, etc."		Bug	iteraplan PO	05/Jun/13 6:30 PM	27/Jun/13 4:33 PM					3.0.5-candidate	gui	search							27/Jun/13 4:33 PM;sfe;seems fine																																																						

@@ -1,1 +1,0 @@
-Check and fix places where attribute groups are used	IPTQ-184 changes the attribute groups in the metamodel so the places where attribute groups are used have to be checked and fixed if necessary.		Task	iteraplan Thunderduck	10/Nov/16 5:53 PM	15/Nov/16 5:58 PM																																																																				

@@ -1,9 +1,0 @@
-i18n ENG und DE abgleichen	"Die sind nicht identisch und können mit folgendem Skript abgeglichen werden:
-
-{code}
-
-git clone ssh://git@git.hh.iteratec.de:10022/utilities
-
-groovy web/i18n/Main.groovy
-
-{code}"		Task	OpenSpeedMonitor	22/Oct/14 3:31 PM	30/Oct/14 4:47 PM																																																																				

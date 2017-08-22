@@ -1,1 +1,0 @@
-CRUD views: die delete Modals gehen nicht	Bei Klick auf die PopUp-Buttons werden keine Modal Layer geöffnet.		Bug	OpenSpeedMonitor	28/May/15 10:53 AM	28/May/15 10:57 AM														28/May/15 10:57 AM;rkr;Problem war nur lokal, verursacht durch Erstellen weiterer Modals																																																						

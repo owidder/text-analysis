@@ -1,7 +1,0 @@
-edit lsd and ifd pipeline integration tests	"- remove spies which are on the ""window"" variable by creating an inject function in the lsdMain / ifdMain
-
-
-
-- remove properties in the expected variables, that are not necessary for the tests to be checked"		Improvement	iteraplan PO	24/Feb/16 3:17 PM	29/Feb/16 12:59 PM					IFD	LSD								"29/Feb/16 12:59 PM;mag;Acceptance criteria met.
-
-Code sufficiently documented."																																																						

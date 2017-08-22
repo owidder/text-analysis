@@ -1,5 +1,0 @@
-Attribute value ranges not deleted after switching to uniformly distributed values	"1) Create a number attribute with the ranges ""1"", ""2"", ""3""
-2) Edit the attribute and set the ""values uniformly distributed"" property to true, then save
-3) Edit the attribute again, after unchecking the ""values uniformly distributed"" checkbox the old value ranges appear
-
-Old attribute value ranges should be deleted upon selecting ""values uniformly distributed""."		Bug	iteraplan PO	07/Nov/11 2:22 PM	25/Jun/14 4:56 PM					attribute	number	ranges							25/Jun/14 4:56 PM;fka;By design																																																						

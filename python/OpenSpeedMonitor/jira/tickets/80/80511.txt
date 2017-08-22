@@ -1,1 +1,0 @@
-Alternativen Shop hinzufügen	Einen weiteren Shop zum secureBox-Stack hinzufügen, um die Authentifizierung des Spiders/Scanners besser testen zu können.	78821	Sub-task	secureCodeBox	14/Apr/16 10:24 AM	14/Apr/16 10:24 AM																																																																				

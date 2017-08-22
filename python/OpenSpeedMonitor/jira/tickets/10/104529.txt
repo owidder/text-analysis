@@ -1,1 +1,0 @@
-Diagrams complete	Complete the New Client Diagrams for the migration of saved queries.		Epic	iteraplan Speedbird	02/Dec/16 1:27 PM																																																																					

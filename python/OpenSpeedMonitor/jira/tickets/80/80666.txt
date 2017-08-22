@@ -1,5 +1,0 @@
-Quick improvements for saving building blocks	"There are two quick improvements to be done to the performance of saving building blocks:
-
-* Instead of using ""merge"" in {{TimeseriesCMBaseFrontendService#saveComponentModel}} and similar methods, use load to load the building block to update.
-
-* Check in the saveOrUpdate methods of our services, whether steps like {{removeOrphanedAttributeValuesAndAssignments}} are called too often, and remove unnecessary calls. One such case is in {{InformationSystemReleaseServiceImpl}}, for example"		Improvement	iteraplan PO	15/Apr/16 5:39 PM	02/May/16 3:22 PM														02/May/16 3:22 PM;tam;Reviewed and tested																																																						

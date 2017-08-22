@@ -1,5 +1,0 @@
-Transaction-Handling EventResult-Persistenz	"Beim Speichern von EventResults sollen Fehler in nachgelagerten Schritten (z.B. CSI-Berechnung, Graphite-Reporting) nicht dazu führen, dass die Transaktion des Speicherns von Job- und EventResults zurückgerollt werden.
-
-
-
-Aktuell funktioniert dass nicht."		Bug	OpenSpeedMonitor	15/Mar/16 10:36 AM	15/Mar/16 4:34 PM																																																																				

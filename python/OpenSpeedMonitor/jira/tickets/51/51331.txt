@@ -1,1 +1,0 @@
-Icons zu dunkel	Die icons im Hauptmenü sind seit der Umstellung viel zu dunkel, sie sollten deutlich heller sein, vgl. http://openspeedmonitor.wpt.iteratec.de/eventResultDashboard/showAll		Bug	OpenSpeedMonitor	20/Jul/15 10:04 AM	20/Jul/15 3:08 PM																																																																				

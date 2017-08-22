@@ -1,1 +1,0 @@
-Löschen eines Graphite-Servers aus JobGroup	Über den JobGroup-Controller können die Graphite-Server beim Bearbeiten der JobGroup nicht mehr entfernt werden.		Bug	OpenSpeedMonitor	29/Jul/16 9:38 AM	29/Aug/16 4:31 PM																																																																				

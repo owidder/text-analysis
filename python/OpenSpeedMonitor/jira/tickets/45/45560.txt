@@ -1,1 +1,0 @@
-Massupdate cannot edit text attributes (freely defined ones)	Beim Massenupdate sind die (selbst definierten) Freitext Felder nicht editierbar, bzw. werden auch nicht geladen.		Bug	iteraplan PO	12/Jul/12 10:17 PM	16/Jul/12 4:27 PM																																																																				

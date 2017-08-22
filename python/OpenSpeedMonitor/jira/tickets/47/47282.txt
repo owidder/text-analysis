@@ -1,6 +1,0 @@
-Name legends in visualizations: move index number to the front of the label	"If a label in a visualization is too long and the use of name legends is activated, the label will be shorted and a number index added to refer to the name legend entry.
-
-Currently, this index is added to the end of the shortened label.
-In extreme cases this results in unreadable index numbers.
-
-Please move the index number to the front of the label, to avoid this issue"		Improvement	iteraplan PO	13/Jan/15 1:09 PM	13/Jan/15 2:00 PM					visualization									13/Jan/15 2:00 PM;gph;Looks good.																																																						

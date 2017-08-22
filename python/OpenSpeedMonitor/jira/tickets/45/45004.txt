@@ -1,7 +1,0 @@
-Reduce page size + load time for building blocks with lots of business mappings	"Whenever a building block is part of *lots of business mappings* (in the current case 172 business mappings on one business unit!), it becomes almost impossible to load the edit mode page for that element. This is because the HTML for editing all the business mappings is currently so massive that it takes more than minute to load and is likely to crash the browser in one way or the other.
-
-We need a solution that loads faster and is more digestible for browsers. 
-* For instance, it could be possible to fill the select-box options via Javascript from an array that is transferred once. At the moment, the server generated these lists as often as there are business mappings. 
-* The HTML might also easier to process if it comes with less tables.
-* We could consider pagination with AJAXy background loading
-* more?"		Improvement	iteraplan PO	21/Jun/11 5:30 PM	29/Jun/11 11:55 AM					performance								Build ID: Enterprise Edition Build-v2.9.M1-r13665 (2011-06-06-15-50-18)	29/Jun/11 11:55 AM;kvo;fixed with ITERAPLAN-118																																																						

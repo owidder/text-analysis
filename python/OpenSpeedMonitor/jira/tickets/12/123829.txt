@@ -1,5 +1,0 @@
-Make all relations (not self relations) attributable	"This is the new standard, there should no longer be a distinction between attributable and non-attributable realtions. All relations between BBTs are attributable.
-
-
-
-Self relations within a BBT stay as they are. Also: The Business Mapping stays as it is, relations from a BBT ""to the Business Mapping"" are not changed."		New Feature	iteraplan Thunderduck	08/Jun/17 5:28 PM																																																																					

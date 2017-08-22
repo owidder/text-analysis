@@ -1,1 +1,0 @@
-TBD: Unify urls of REST-APIs (e.g. all same route)			Improvement	iteraplan Speedbird	12/Jan/17 4:44 PM	14/Jun/17 1:16 PM														14/Jun/17 1:16 PM;fka;Nice idea... But not for now.																																																						

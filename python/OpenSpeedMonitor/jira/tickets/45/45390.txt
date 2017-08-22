@@ -1,1 +1,0 @@
-Attribute eine Gruppe lassen sich in der Reihenfolge nicht manuel sortieren	Wenn das letzte angelegte Attribut einer Gruppe an erste Stelle erscheinen soll wird bei speichern dieses einfach ignoriert. In der DB bleibt die alte Reihenfolge.		Bug	iteraplan PO	27/Feb/12 3:46 PM	28/Feb/12 9:16 AM																																																																				

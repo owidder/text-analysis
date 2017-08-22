@@ -1,1 +1,0 @@
-Create automatic permission tests	On every release step, permissions should be tested systematically. Such "stupid" job steps should be done (more) automatically.		Task	iteraplan PO	05/Aug/13 1:14 PM						permissions																																																															

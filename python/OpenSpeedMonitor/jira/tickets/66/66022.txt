@@ -1,1 +1,0 @@
-ensure line-coverage in lsdItemDecorator.js with unit tests		65042	Sub-task	iteraplan PO	08/Dec/15 9:12 AM	15/Dec/15 10:48 AM					LSD	Test																																																														

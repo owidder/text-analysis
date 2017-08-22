@@ -1,1 +1,0 @@
-BatchActivity-Seite ist noch nicht im card-Layout	Siehe z.B. [hier|http://demo.openspeedmonitor.org/batchActivity/list?max=100]		Bug	OpenSpeedMonitor	25/Jan/17 11:12 PM	31/Jan/17 3:50 PM														26/Jan/17 11:46 AM;sbr;Gerne auch im `AllControllers` Menü mit aufnehmen.																																																						

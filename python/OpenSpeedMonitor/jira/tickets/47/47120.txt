@@ -1,1 +1,0 @@
-Sprint 6? Grouping with 2- and 3-step connections	Add the functionality to group building blocks via two- and three-step connections, which are all predefined/precomputed.		New Feature	iteraplan PO	04/Nov/14 8:15 AM	26/Jan/15 4:45 PM														26/Jan/15 4:45 PM;msr;IPNINE-308																																																						

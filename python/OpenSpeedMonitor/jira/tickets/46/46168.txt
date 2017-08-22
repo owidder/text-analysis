@@ -1,7 +1,0 @@
-Import/Export:  EE / WinXP / IE8 / mssql	"Test the Import/Export with the given parameters
-
-(/)  ITERAPLAN-2037"	46148	Sub-task	iteraplan PO	21/Oct/13 10:16 AM	22/Oct/13 6:54 PM														"22/Oct/13 10:11 AM;jmi;All export-tests ok
-When downloading the data after updating the Business Mapping it could take up to two minutes for the excel-data to show the new BMs"	"22/Oct/13 3:37 PM;jmi;all import-tests ok.
-(TC3 step 4 fails already during the first import-step but wit the same explanation;
-TC4 step 12 could mention that the Strategic value is supposed to changed in an instance of IS;
-TC6 step 6 is hard to understand)"																																																					

@@ -1,2 +1,0 @@
-[Context Overview Diagram]  NPE when no permissions for BM	I-102 reports the defect, when you creates an Context Overview Diagram and you have not all permissions, you get an technical error.		Bug	iteraplan PO	03/Dec/14 2:56 PM	05/Dec/14 2:48 PM														"05/Dec/14 2:48 PM;fam;Could reconstruct the error and fix.
-Solution okey. Ticket closed."																																																						

@@ -1,1 +1,0 @@
-Refactoring von EventResultDashboardShowAllCommand und CsiDashboardShowAllCommand	Doppelten Code eliminieren, Parameter optiomieren, Tests sinnvoll machen.		Task	OpenSpeedMonitor	27/Apr/17 12:04 PM	30/May/17 5:28 PM														04/May/17 3:02 PM;sbr;Auf Code-Review warten																																																						

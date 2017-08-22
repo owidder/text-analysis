@@ -1,5 +1,0 @@
-Add User Guide and Installation Guide to installation package	"The iteraplan User Guide and Installation Guide should automatically be included in the installation package built with the ant target ""dist"".
-
-
-
-Also adjust release process documentation, if necessary."		Improvement	iteraplan PO	10/Feb/16 3:59 PM	11/Feb/16 10:24 AM														11/Feb/16 10:24 AM;lwi;checked the zip file and the pdfs are there																																																						

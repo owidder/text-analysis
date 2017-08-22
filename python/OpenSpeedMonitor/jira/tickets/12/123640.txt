@@ -1,9 +1,0 @@
-prepend/append in MULTI MODE/MASS UPDATE	"List View > Multi Mode (former Mass Update)
-
-
-
-If you change the name, you can click either prepend or append. 
-
-
-
-Please switch the two buttons --> ""prepend"" on the left then ""append"" on the right."		Improvement	iteraplan PO	06/Jun/17 4:47 PM	11/Jun/17 2:46 PM																																																																				

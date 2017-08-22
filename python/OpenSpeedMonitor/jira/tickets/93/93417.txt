@@ -1,3 +1,0 @@
-"Missing permission"- message for url	"If diagram is loaded from the url, check if user has the permission for this Building Block Type. If not, display a message (no dialog) instead of the diagram (like in the Masterplan Diagram).
-
-Use the same message like in the Masterplan Diagram."		New Feature	iteraplan Speedbird	17/Aug/16 11:04 AM	18/Aug/16 5:35 PM														18/Aug/16 5:26 PM;ants;The functionality was already implemented and some changes related to this ticket are committed with IPTS-57	18/Aug/16 5:35 PM;dmkh;Review was done in scope of IPTS-57.																																																					

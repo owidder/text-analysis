@@ -1,6 +1,0 @@
-JobView Tabelle	"Die Tabelle in der JobView besitzt folgende Fehler:
-* Keine Linien zur Trennung der Zellen/Zeilen/Spalten
-* Tags werden untereinander gelistet, anstatt nebeneinander als Tag-Icons dargestellt zu werden
-* der Fixierte Header der Tabelle verliert beim Scrollen seine Formatierung, sodass die Überschriften der Spalten zusammenrücken
-
-Die fehlerhaften Tags hängen evtl. mit IT-688 zusammen."		Bug	OpenSpeedMonitor	20/Jul/15 10:13 AM	21/Jul/15 10:16 PM																																																																				

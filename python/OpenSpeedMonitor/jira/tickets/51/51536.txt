@@ -1,3 +1,0 @@
-glyphicons herausnehmen	"In Bootstrap 2.3.2 werden die glyphicons als Sprite eingebunden. Wir nutzen aber die Icons von Font awesome. 
-
-Wir sollten daher das glyphicon-sprite-png nicht laden."		Improvement	OpenSpeedMonitor	22/Jul/15 10:35 AM	27/Jul/15 1:38 PM														27/Jul/15 1:38 PM;bwo;Es wurde noch ein glyphicon in einer View benutzt, nachdem ich dieses durch ein FA Icon ersetzt habe, wurde das Sprite nicht mehr geladen.																																																						

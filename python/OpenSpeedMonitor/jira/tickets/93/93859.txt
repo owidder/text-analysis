@@ -1,3 +1,0 @@
-Disable Reactor in Lite Edition	"withdraw reactor permissions for lite user (main user in lite data)
-
-ensure permission check is handled by reactor properly"		Bug	iteraplan Thunderduck	22/Aug/16 2:15 PM	23/Aug/16 10:04 AM																																																																				

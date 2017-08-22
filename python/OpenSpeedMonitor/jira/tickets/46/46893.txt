@@ -1,1 +1,0 @@
-Implement highlighting for all box types	+ remove highlight and "Remove all highlights" functionality	46884	Sub-task	iteraplan PO	21/Aug/14 11:06 AM	29/Sep/14 10:11 AM																																																																				

@@ -1,5 +1,0 @@
-Check x509 authentication configuration	"Test how the x509 authentication configuration of iteraplan works with the new client authentication, and fix what doesn't work.
-
-Known issues:
-
-* Login page instead of error message on access attempts with missing client certificate. Login (correctly) doesn't work with that login page, though."		Improvement	iteraplan PO	01/Feb/17 11:04 AM																																																																					

@@ -1,3 +1,0 @@
-Context overview diagram empty	"In the current nightly build the context overview diagram for an IS is empty, although there is multiple data to show.
-Tested with ""CRM#3.1"" from the sample data set
-"		Bug	iteraplan PO	29/Jul/14 11:39 AM	04/Aug/14 2:26 PM					context	diagram																																																														

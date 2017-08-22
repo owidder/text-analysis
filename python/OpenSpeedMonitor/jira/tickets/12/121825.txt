@@ -1,1 +1,0 @@
-customer satisfaction Werte werden auf PageAggregation nicht angezeigt	Wählt man `customer satisfaction (visually complete)` oder `customer satisfaction (docComplete)` als Messgröße aus, werden keine Balken mehr angezeigt.		Bug	OpenSpeedMonitor	19/May/17 10:59 AM	15/Jun/17 3:55 PM																																																																				

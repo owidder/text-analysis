@@ -1,9 +1,0 @@
-Filter entry in the legend for blank string value	"Filter like ""Name"" starts with is displayed in the legend.
-
-
-
-I think, it's unfinished filter which does not have to be displayed in the legend.
-
-
-
-The same for: ""ends with <nothing>"", ""contains <nothing>"""		Bug	iteraplan PO	21/Jun/17 1:00 PM																																																																					

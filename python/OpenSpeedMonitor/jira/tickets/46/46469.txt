@@ -1,1 +1,0 @@
-Impact Analysis in MS Visio does not work	Impact analysis as described in section "Impact Analysis" does not work. "Marking" an IS does result in a highlighted information system but related interfaces and information systems aren't highligted at all.		Bug	iteraplan PO	14/Feb/14 9:42 AM	19/Jan/16 11:33 AM																																																																				

@@ -1,1 +1,0 @@
-[CRUD] GraphitePath -> Save nicht aufrufbar	Sowohl save, als auch delete führen zu einem 500er-Server error.		Bug	OpenSpeedMonitor	12/May/16 11:33 AM	12/May/16 6:13 PM																																																																				

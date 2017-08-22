@@ -1,1 +1,0 @@
-Highlighting of the toolarea for coloring in the ifd is not correct	if you choose a numeric attribute, coloring "from dark to light", and refresh the site, the same attribtue is highlited but "from red to green"		Bug	iteraplan PO	26/Apr/16 5:45 PM	27/Apr/16 10:43 AM																																																																				

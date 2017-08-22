@@ -1,8 +1,0 @@
-Take-over of iteraQL query results to diagrams causes error page	"_Reproduce (with sample data):_
-# Navigate to iteraplan, Reports -> Query Console
-# Execute Query ""InformationSystem;""
-# Click ""Switch"" to use the results in an Information Flow Diagram
-
-_Expected:_ Information Flow Diagram configuration page 2 with the information systems from the query result as selected information systems to display. This worked in version 3.2.
-
-_Actual:_ Error page (see attachment). This happens in current trunk."		Bug	iteraplan PO	14/Apr/14 1:35 PM	15/Apr/14 9:04 AM					iteraQl									15/Apr/14 9:04 AM;gph;Works. Code and solution look ok.																																																						

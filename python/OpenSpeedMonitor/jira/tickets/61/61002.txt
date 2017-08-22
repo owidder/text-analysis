@@ -1,1 +1,0 @@
-Add "Java8" to Documentation & create migration guide	Add "Java8" to Documentation & create a new migration guide to iteraplan 5.1.0 including Java8		Task	iteraplan PO	22/Oct/15 8:42 AM	22/Oct/15 3:20 PM					java									22/Oct/15 3:12 PM;msr;http://www.iteraplan.de/doc/display/iteraplan51/Installation+Prerequisites																																																						

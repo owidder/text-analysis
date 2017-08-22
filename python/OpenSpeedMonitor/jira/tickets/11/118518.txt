@@ -1,1 +1,0 @@
-SpeedIndex in die Zeit-MeausrandGruppe aufnehmen.	Statt in "Other" sollte es in der "time" measurand group sein		Task	OpenSpeedMonitor	12/Apr/17 10:56 AM	15/Jun/17 3:55 PM														26/Apr/17 9:56 AM;nku;Im TimeSeries-Chart noch nachziehen.																																																						

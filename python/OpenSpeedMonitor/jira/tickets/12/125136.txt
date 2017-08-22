@@ -1,1 +1,0 @@
-Cached View ausbauen	Wenn sich durch IT-1751 zeigt, dass wir WPT's repeated view nicht mehr unterstützen müssen, sollten wir diesen auch komplett ausbauen.		Task	OpenSpeedMonitor	23/Jun/17 10:40 AM																																																																					

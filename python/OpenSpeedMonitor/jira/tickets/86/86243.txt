@@ -1,3 +1,0 @@
-Log-Verarbeitung OSM	Zur Analyse und Überwachung der Logfiles des OSM's wollen wir eine Lösung aufbauen. Diese soll die Log-Daten mehrerer OSM-Instanzen durchsuchbar und auswertbar machen.		Epic	OpenSpeedMonitor	03/Jun/16 2:56 PM															"03/Jun/16 2:58 PM;nku;Das Schreiben einer Ansible-Rolle zum Aufsetzen eines ELK-Stacks wird bereits im folgenden Issue eines anderen Jira-Projekts (IT-HH) bearbeitet:
-
-https://iteraweb.iteratec.de/jira/browse/ITHH-84"																																																						

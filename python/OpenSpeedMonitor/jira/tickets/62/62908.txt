@@ -1,9 +1,0 @@
-Create new Protractor tests for LSD	"please edit the e2e-test tracability excel sheet located in e2etest subfolder after implementing the tests
-
-
-
-create new protractor tests and test cases for LSD.
-
-
-
-please see the sub-task tickets for more informations."		Improvement	iteraplan PO	09/Nov/15 8:56 AM	08/Jan/16 2:15 PM					LSD	Test																																																														

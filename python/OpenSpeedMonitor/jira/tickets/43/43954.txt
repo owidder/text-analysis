@@ -1,9 +1,0 @@
-crud-edit-View zur Bearbeitung bereits erzeugter Events funktioniert nicht korrekt 	"Beim Bearbeiten sind die folgenden beiden Dinge aufgetreten:
-
-
-
-# Die bereits persistierte Uhrzeit wird beim Aufrufen der edit-View auf die aktuelle Uhrzeit gesetzt. So verändert man diese leicht ungewollt :(
-
-# Beim Bearbeiten werden die assoziierten Events dupliziert. Mit jeder Bearbeitung werden die bereits assoziierten JobGruppen also noch einmal angehängt."		Bug	OpenSpeedMonitor	16/Jun/15 10:19 AM	18/Jan/17 3:38 PM														"25/Feb/16 7:26 PM;bka;1. kommt aus grails-app/assets/javascripts/date-time-picker/osm-date-time-picker.js:140
-
-2. tritt in der aktuellen Version nicht mehr auf"																																																						

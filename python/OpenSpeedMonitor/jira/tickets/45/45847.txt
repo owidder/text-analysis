@@ -1,3 +1,0 @@
-refactor buildingblock tables to make better code reuse	"currently there are multiple implementations of tables displaying a list of buildingblocks with different behavior.
-
-There are (at least)  Building block overview pages, relation lists on BB detail views, spreadsheet reports and bulk updates."		Improvement	iteraplan PO	05/Jul/13 11:42 AM	30/Dec/15 2:53 PM																																																																				

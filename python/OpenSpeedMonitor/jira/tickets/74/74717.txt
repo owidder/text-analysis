@@ -1,1 +1,0 @@
-[CI] Deployment prod-Umgebung	Das Deployment der prod-OSM-Instanzen muss in Bamboo integriert werden.		Task	OpenSpeedMonitor	25/Feb/16 10:45 AM	18/Mar/16 12:01 PM																																																																				

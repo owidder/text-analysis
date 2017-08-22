@@ -1,5 +1,0 @@
-Saved Cluster Diagram can't be loaded when Seal was used for colouring of clustered elements	"Example:
-* Create a cluster diagram of the type IS-domain.
-* Choose the Seal attribute to colour the information systems to be clustered by their IS-domains.
-* Save the diagram.
-* Try to load the saved diagram => error page"		Bug	iteraplan PO	16/Apr/12 12:36 PM	08/May/12 3:20 PM					cluster	savedquery	seal																																																													

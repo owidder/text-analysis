@@ -1,5 +1,0 @@
-Falscher Titel auf "Über uns"-Seite	"Getestet im Chrome und als Admin angemeldet.
-
-
-
-Besucht man die [Über uns Seite|http://dev.openspeedmonitor.wpt.iteratec.de/about], steht im Browser-Titel lediglich ""default.about.title"", was nicht korrekt ist."		Bug	OpenSpeedMonitor	19/Feb/16 11:38 AM	25/Feb/16 4:05 PM																																																																				

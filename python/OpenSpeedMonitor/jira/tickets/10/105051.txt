@@ -1,1 +1,0 @@
-Migration for Information Flow Diagram			New Feature	iteraplan Thunderduck	08/Dec/16 4:38 PM	03/Feb/17 11:42 AM														02/Feb/17 8:05 AM;aan;The coloring is not working anymore																																																						

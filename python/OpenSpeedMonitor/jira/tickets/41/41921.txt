@@ -1,5 +1,0 @@
-Erzeugung/Entwurf erforderlicher Domain-Objekte/-Klassen	"Zur Speicherung der benutzerdefinierten Dashboard-Sichten.
-
-Müssen alle zur Anzeige von CSI- oder Rawdata-Dashboards erforderlichen Daten speichern können.
-
-Erst mal alle öffentlich, d.h. für jedermann (selbst unangemeldete Gäste) sichtbar. Ggf. schon mal boolean-flag vorsehen. "		Task	OpenSpeedMonitor	27/May/15 2:40 PM	03/Jun/15 4:11 PM																																																																				

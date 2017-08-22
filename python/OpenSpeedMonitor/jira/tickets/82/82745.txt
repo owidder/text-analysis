@@ -1,1 +1,0 @@
-Virtuelle Maschine als Referenzumgebung einrichten	Bei den Admins ist die Einrichtung einer virtuellen Maschine (VM) anzufordern. Betriebs-system: Ubuntu 16.04 LTS	82744	Sub-task	EAM-Visualisierung	02/May/16 1:32 PM																																																																					

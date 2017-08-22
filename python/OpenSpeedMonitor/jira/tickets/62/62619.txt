@@ -1,5 +1,0 @@
-Hover-Info bei CSI-Mapping-Kurven funktioniert nicht richtig	"Im Firefox lassen sich die Hover-Infos gar nicht anzeigen. Im Chrome schlecht. Der Info-Text flackert ständig und lässt sich kaum stabil anzeigen. Vielleicht auch nur unter Linux? 
-
-Siehe hier:
-
-http://dev.openspeedmonitor.wpt.iteratec.de/page/edit/2"		Bug	OpenSpeedMonitor	05/Nov/15 10:46 AM	05/Nov/15 5:44 PM																																																																				

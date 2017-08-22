@@ -1,9 +1,0 @@
-Changing inner element doesn't cancels nesting options in some cases	"Summary: When user changes inner type with any applied nesting - the next inner type saves applied nesting
-
-Steps to reproduce:
-1. Use IS as outer type and Product as inner type
-2. Use nesting by children for inner elements
-3. Change inner element to Project
-
-Actual: new inner type saves applied nesting
-Expected: Changing inner element cancels all aplied inner-element-options"		Bug	iteraplan PO	29/Jan/15 2:56 PM	30/Jan/15 12:05 PM														30/Jan/15 12:05 PM;dasm;Verified (revision 578)																																																						

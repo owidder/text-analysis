@@ -1,4 +1,0 @@
-Filter content building blocks in cluster diagrams	"Currently, if building blocks are selected as content of cluster diagrams, the resultset of the building blocks cannot be filtered. E.g. if information system are selected to be displayed, all information systems currently in the database are part of the cluster diagram. No further limitation according to specific criteria of the elements to be displayed are possible.
-
-Feature Request: implement the same filter possibility for building blocks in cluster diagrams as currently already available for content elements of landscape diagrams.
-"		New Feature	iteraplan PO	17/Feb/12 2:30 PM	30/Dec/15 2:32 PM																																																																				

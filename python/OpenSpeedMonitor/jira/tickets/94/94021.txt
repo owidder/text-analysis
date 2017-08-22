@@ -1,1 +1,0 @@
-Assettabelle muss sortierbar werden	Momentan werden die Daten einfach in die Assettabelle gefüllt, sind aber nicht sortierbar. Das muss implementiert werden.		Improvement	OpenSpeedMonitor	24/Aug/16 11:08 AM	25/Aug/16 11:26 AM																																																																				

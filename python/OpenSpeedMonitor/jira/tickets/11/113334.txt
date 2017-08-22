@@ -1,7 +1,0 @@
-Include all user entities in api/attributes and api/attributes/ID (server + client)	"*Summary:*
-
-As suggested by [~roia] : please include all user entities as literals for responsibility attributes in api/attributes and api/attributes/ID (server)
-
-
-
-and ensure the client can handle this (client)"		Improvement	iteraplan Speedbird	27/Feb/17 1:15 PM	01/Mar/17 9:57 AM														01/Mar/17 9:57 AM;msr;Done in scope of IPTS-591																																																						

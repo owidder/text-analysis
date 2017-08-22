@@ -1,7 +1,0 @@
-Sensible Daten aus dem Logging erntfernen	"Es sollten sämtliche sensible Daten aus den Logs entfernen dazu zählen u.A.:
-
-* JSESSIONID
-
-* Passwärter
-
-* Username"		Improvement	OpenSpeedMonitor	18/Oct/16 1:44 PM																																																																					

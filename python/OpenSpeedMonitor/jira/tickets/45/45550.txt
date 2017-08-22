@@ -1,4 +1,0 @@
-UI: Show active datasource	"Show active datasource in UI.
-Within Breadcrumbs navigation, next to ""Home""-icon would be a good fit."		Improvement	iteraplan PO	06/Jun/12 4:32 PM	13/Jun/12 2:33 PM					usability									"07/Jun/12 1:18 PM;tse;I would do as little changes to the old UI as possible, rather focus on new UI.
-I don't see this as ""major"" priority; don't think we need this for 3.0.2.
-"	08/Jun/12 11:38 AM;kvo;perfectly fine																																																					

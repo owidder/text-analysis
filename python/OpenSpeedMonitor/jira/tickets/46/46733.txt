@@ -1,8 +1,0 @@
-IIS SSO configuration: login name is not always correctly extracted from request header	"In our SSO configuration iteraplan relies on the login name of the authenticated user being sent as value of a request header field.
-A typical value for that field is {{DOMAIN\login_name}}.
-
-iteraplan then separates the login name from the DOMAIN to perform a LDAP search for the user.
-
-For some values of {{login_name}} this separation doesn't work, as the code in {{RequestHeaderAuthenticationFilterWithSuccessHandler}} assumes the login name only consists of ""word"" characters, meaning alphanumeric or underscore characters.
-
-Fix this so login with values like {{DOMAIN\firstname.lastname}}, containing dots or other non-word characters, work as well."		Bug	iteraplan PO	10/Jul/14 3:00 PM	14/Jul/14 10:26 AM					sso									14/Jul/14 10:26 AM;gph;Solution looks valid. The regex pattern for the user principal name now finds all characters and not only alphanumeric characters like before.																																																						

@@ -1,4 +1,0 @@
-Change sorting order for Complexity by weight	"1. [empty]
-2. low
-3. average
-4. high"	46866	Sub-task	iteraplan PO	18/Aug/14 7:39 PM	29/Sep/14 9:51 AM																																																																				

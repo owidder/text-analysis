@@ -1,3 +1,0 @@
-Horizontal scrollbar is duplicated 	summary: Horizontal scrollbar is duplicated  when user changes the page size		Bug	iteraplan PO	24/Apr/15 10:08 AM	24/Jun/15 9:55 AM														"23/Jun/15 3:59 PM;fam;Fix is okey, but FF seem to have another related problem.
-When refreshing or first time loading ncd on a not very big screen, a 2nd scrollbar appears, even if it just disappeared after enlarging screen size.
-Please take a look at this. "	24/Jun/15 8:19 AM;isc;Now it should work.																																																					

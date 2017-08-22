@@ -1,5 +1,0 @@
-Filter "Nur offene anzeigen" auf der BatchActivity-Seite funktioniert nicht mehr	"Wirft auf der dev-Instanz zumindest folgenden JS-Fehler und tut nix.
-
-!bug_batchActivityPage.png|thumbnail!
-
-"		Bug	OpenSpeedMonitor	13/Jan/17 4:45 PM	16/Jan/17 11:26 AM														16/Jan/17 11:26 AM;mmi;Geb Test added for this bug																																																						

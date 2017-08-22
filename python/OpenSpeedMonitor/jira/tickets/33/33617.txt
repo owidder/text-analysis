@@ -1,1 +1,0 @@
-Solche Events sollen im OSM verwaltet und dargestellt werden können.			Epic	OpenSpeedMonitor	02/Mar/15 11:21 AM																																																																					

@@ -1,1 +1,0 @@
-Don't allow user to enter login page after authentication(redirect to home page)	If logged-in user tries to navigate to login page, redirect him to home page.		Improvement	iteraplan Speedbird	19/Dec/16 10:48 AM	24/Jan/17 4:31 PM																																																																				

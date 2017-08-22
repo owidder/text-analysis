@@ -1,7 +1,0 @@
-New enum attribute type with LDAP query filling functionality	"See related demand DM-508. In this scope: Minimal solution
-
-New attribute type should have a distinct name and be listed by this name. Everything else different to the classic enum attribute should only happen on the edit page for this attribute. The view page will be slightly different, as it shows the new type and some LDAP-related information.
-
-LDAP connection like the one used for authentication. If LDAP is not configured or not working, error message. Query string construction like the drawing in the demand ticket. Two ""construction"" boxes for the value name and value description. Name is single line, description multiple lines. Line break in description by line break in ""construction"" box.
-
-After clicking ""query"" the new values will be shown. No manual editing or adding of values. No comparison of existent and newly queried values. Color assignments possible. ""Multiple"" and ""mandatory"" possible."		New Feature	iteraplan PO	29/Aug/14 4:54 PM																																																																					

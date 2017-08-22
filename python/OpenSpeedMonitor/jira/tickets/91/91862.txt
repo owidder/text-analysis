@@ -1,3 +1,0 @@
-Delete - simpleDiffWriter	"implement simpleDeleter or enrich simple Update diff writer (ask [~sfe])
-
-use InstanceDeleter"	91841	Sub-task	iteraplan Thunderduck	28/Jul/16 4:39 PM	02/Sep/16 10:46 AM																																																																				

@@ -1,4 +1,0 @@
-(LMT) no display of AM/PM in English localization	"In the English localization AM/PM does not get displayed after the LMT (last modification time).
-(see JPGs of German, English and French locale for comparison)"		Bug	iteraplan PO	06/Dec/13 4:34 PM	19/Jan/16 11:33 AM					gui									"06/Dec/13 4:37 PM;jmi;German: afternoon
-English: no PM
-French: has the correct PM"																																																						

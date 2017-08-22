@@ -1,4 +1,0 @@
-Switch JDBC connection pool implementation from DBCP to c3p0	"According to several sources on the internet, the c3p0 implementation is considered to be more stable and have less issues with blocking.
-
-Switch the Spring configuration for the conenction pool DataSource bean ""masterDataSource"" to the new implementation. Clarify, which parameters have equivalents in c3p0 and need to be set / are still necessary.
-"		Improvement	iteraplan PO	03/Jul/14 11:26 AM						c3p0	connectionpool	database	DBCP	JDBC					03/Jul/14 11:31 AM;gph;Maybe realizes ITERAPLAN-1773 (needs to be proven).																																																						

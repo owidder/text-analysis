@@ -1,7 +1,0 @@
-Test customisable Information Flow	"* Open the Information Flow Diagram
-
-* Click on ""Show Customizable Information Flow""
-
-* Read carefully full description (typos?, unclear statements?)
-
-* Perform instructions and check, if it works"		Task	iteraplan PO	09/Aug/16 10:59 AM	09/Aug/16 11:20 AM																																																																				

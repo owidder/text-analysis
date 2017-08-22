@@ -1,7 +1,0 @@
-Cleanup coloring properties in N3CD configuration	"The treatment of various properties concerning coloring should be improved:
-
-
-
-* In n3dc/ncdConfiguration.js: Several methods make changes to the object's properties directly, but also call updateConfiguration() with an almost identical configuration. It seems this is done, to push changes to the URL, too, but not all properties should be serialized to the URL. Duplication of code should be avoided.
-
-* In n3dc/ncdController.js in the applyColorPickerValue function: For enum coloring, the current pallette is first retrieved from the configuration, then altered and handed back to the configuration (see solution for defect [ITERAPLAN-4547]). The separation between controller and configuration should be improved, so that the coloring palette property is changed in the configuration directly."		Task	iteraplan PO	13/May/16 12:25 PM						cleanup																																																															

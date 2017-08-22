@@ -1,7 +1,0 @@
-Wrong reaction with applying numeric filers for content and axis	"Steps to reproduce:
-1. Go to LSD with IS as content type
-2. Use filtering by ""Value added"" for content type and select any range
-3. Use filtering by ""Cost"" for x axis
-Actual: Incorrect range
-Expected: Range slider should appear with full range for new selected attribute"	47576	Sub-task	iteraplan PO	21/Apr/15 4:41 PM	22/Apr/15 4:07 PM													"Workspace: Windows 8.1
-Revision: 983"	22/Apr/15 4:03 PM;sepr;Duplicates IPNINE-491																																																						

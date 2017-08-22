@@ -1,1 +1,0 @@
-Dimple-Abhängigkeiten rausschmeißen	Wir benutzen kein dimple mehr, also sollten wir es noch gesamtheitlich los werden (keine Hits mehr, wenn ich im Projekt danach suche)		Task	OpenSpeedMonitor	11/Apr/17 8:58 AM	11/Apr/17 3:37 PM																																																																				

@@ -1,7 +1,0 @@
-F: Directly load saved query	"For all visualizations and list views: Provide a (searchable) drop down with all saved queries that match the current type of visualization/list. Consider only those accessible for the current user, i.e. private saved queries of the user and public saved queries.
-
-
-
-[~sbu] to provide GUI layout.
-
-"		New Feature	iteraplan Thunderduck	12/Jul/17 10:28 AM																																																																					

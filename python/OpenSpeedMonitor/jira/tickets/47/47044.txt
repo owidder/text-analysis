@@ -1,1 +1,0 @@
-Cover API communication service by JSDoc		47039	Sub-task	iteraplan PO	13/Oct/14 11:25 AM	09/Jun/15 5:05 PM																																																																				

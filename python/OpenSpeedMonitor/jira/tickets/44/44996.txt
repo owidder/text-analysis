@@ -1,8 +1,0 @@
-Changing language while on a configuration page for a report can cause error-message saying a date was out of the allowed range	"example to reproduce:
-1. go to Cluster Diagrams, choose some Information Systems and confirm your selection.
-2. at step two of the configuration change the language
-3. try to save => error
-
-only happens with queries which are related to some kind of date, like the productive timespan of Information Systems, Projects or Technical Components.
-
-Workaround: If you need to change the language while configuring a report, you can save the report in your current language settings, then close the flow, change language, and load the report in the new language to continue."		Bug	iteraplan PO	16/Jun/11 11:10 AM	17/Jun/11 9:58 AM					language	reports								17/Jun/11 9:58 AM;kvo;rare usecase																																																						

@@ -1,1 +1,0 @@
-Dashboard attribute selection not ordered	Attributes in the dropdown list on the dashboard should be ordered alphabetically.		Improvement	iteraplan PO	09/Sep/11 10:56 AM	12/Sep/11 7:22 PM					dashboard	eon								12/Sep/11 7:22 PM;bsi;The elements are sorted.																																																						

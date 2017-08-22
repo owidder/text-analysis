@@ -1,3 +1,0 @@
-CsiConfiguration Name und Beschreibung	"* Die Beschreibung einer CSI-Configuration soll sichtbar sein.
-
-* Name und Beschreibung einer CSI-Configuration sollen editierbar werden."		Task	OpenSpeedMonitor	18/Jan/16 2:25 PM	27/Jan/16 4:01 PM																																																																				

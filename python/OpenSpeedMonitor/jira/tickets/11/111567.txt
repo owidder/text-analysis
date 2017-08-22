@@ -1,7 +1,0 @@
-Chart implementieren: Ladezeiten gesamter Anwendung als waagerechte Balken	"Ladezeiten-Mittelwerte gesamter Anwendung als waagerechte Balken. 
-
-Für die egene Anwendung und für Wettbewerber.
-
-
-
-!Ladezeiten_waagerechte_Balken.png|thumbnail!"		Story	OpenSpeedMonitor	10/Feb/17 5:08 PM	16/Mar/17 8:01 AM																																																																				

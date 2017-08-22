@@ -1,3 +1,0 @@
-Uncatched server-side exception is thrown when user tries to access non-existing page in classic client	"Please see attachments.
-
-In earlier builds of iteraplan an error page was shown to user."		Bug	iteraplan Speedbird	11/Jan/17 5:44 PM	24/Jan/17 4:08 PM																																																																				

@@ -1,3 +1,0 @@
-RICKSHAW In der X-Achsenbeschriftung Wochentag statt 0:00	"Wenn die Skalierung der X-Achsenbeschriftung auf Tagen ist, d.h. jeder Tick ein Tag ist (0:00 Uhr) erfolgt derzeit eine zwei-Zeilige Beschriftung der Ticks (siehe Screenshot).
-
-Hier soll in der oberen Zeile statt ""0:00"" jeweils der Wochentag stehen. Idealerweise internationalisiert (also z.B. ""Mittwoch"" oder ""Wednesday"")."		Task	OpenSpeedMonitor	29/May/15 4:06 PM	01/Jun/15 11:37 AM																																																																				

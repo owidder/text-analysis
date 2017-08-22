@@ -1,1 +1,0 @@
-Sprechende Benennung Methoden und Variablen	Bitte Methoden und Variablen in den von Dir geschriebenen Artefakten klarer benennen.		Task	OpenSpeedMonitor	26/Feb/14 9:55 AM	27/Feb/14 12:27 PM																																																																				

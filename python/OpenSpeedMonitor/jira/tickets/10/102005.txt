@@ -1,1 +1,0 @@
-Spring Boot + Docker + Java - Performance Optimierung	https://medium.com/@cl4r1ty/docker-spring-boot-and-java-opts-ba381c818fa2#.yjqifshap		Improvement	secureCodeBox	08/Nov/16 10:32 PM						iteratec																																																															

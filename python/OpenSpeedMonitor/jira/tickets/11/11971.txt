@@ -1,2 +1,0 @@
-Eigene Datentypen verwenden	"Bitte für die Rückgabewerte von Service-Methoden eigene Datentypen verwenden, wenn diese komplexerer Natur sind.
-Beispiel: Map<String, Map<String, Map<String, ... >>>"		Task	OpenSpeedMonitor	26/Feb/14 9:58 AM	26/Feb/14 2:02 PM																																																																				

@@ -1,7 +1,0 @@
-Range slider		56430	Sub-task	iteraplan PO	08/Sep/15 1:20 PM	16/Sep/15 10:57 AM														14/Sep/15 2:15 PM;dam;commited with ticket id Iteraplan-3905	"14/Sep/15 4:49 PM;dam;i commited wrong. 
-
-please check for review Iteraplan-3905 (dialogTemplate.html & toolAreaController.js)"	"15/Sep/15 7:55 AM;isc;There occurred an exception: j.diagramConfiguration.minMax is undefined
-
-Did you have forgot to commit something?
-
-"																																																				

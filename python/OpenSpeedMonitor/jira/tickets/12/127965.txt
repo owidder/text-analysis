@@ -1,7 +1,0 @@
-Single Element View	"go to ->information systems -> Account-Sys RB #3.1 -> Change name to 255x ""M"" 
-
-
-
-Current behavior: text without line break due to no distance between the letters
-
-Expected behavior: line break for all types of names"		Bug	iteraplan PO	25/Jul/17 3:56 PM																																																																					

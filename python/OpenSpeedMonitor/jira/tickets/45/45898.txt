@@ -1,9 +1,0 @@
-Metamodell Erweiterung: Ziele als neuer Bebauungselementtyp	"Erweiterung des iteraplan Metamodells um einen neuen Bebauungselementtyp ""Ziel"" (engl. ""Goal"") zur Pflege von Zielen und Risiken mit Hierarchiebeziehung. Bereitstellung einer entsprechenden Datenpflegeseite. Der neue Bebauungselementtyp ""Ziel"" wird unterstützt bei:
-- den Listen- und Detailansichten unter dem Menüpunkt EA Data (Erstellen, Ansehen, Bearbeiten, Löschen) sowie Berechtigungsvergabe und -prüfung,
-- Filterungsabfragen im Sinne der tabellarischen Auswertungen,
-- iteraQL-Abfragen,
-- Cluster-Grafiken und Nesting Cluster Diagramme.
-
-Abfrenzung: Der neue Bebaungselemnttyp steht *nicht* zur Verfügung in den Grafiken Bebauungsplan, Informationsfluss und Masterplan. Ebenso werden Portfolio und Torten-/Balkendiagramme sowie die Funktion von Massendaten (Export-/Importschnittstellen und Massenupdates) nicht unterstützt. 
-
-Wichtige Hinweise: Die Unterscheidung zwischen Unternehmenszielen und Risikokategorien ist lediglich über ein zusätzliches Merkmal möglich. Dies hat Implikationen unter anderem auf die Übersichtsliste, Zugriffrechte, Abfragen und Auswertungen sowie Merkmale dieser Elemente."		New Feature	iteraplan PO	17/Jul/13 1:27 PM	11/Jun/17 1:04 PM														11/Jun/17 1:04 PM;fka;Currently no longer in focus																																																						

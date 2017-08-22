@@ -1,7 +1,0 @@
-Encapsulate filter dialog with own controller and scope	"* Write a filter dialog controller
-
-* combine it with the existing template upon ""openDialog"" call
-
-* The dialog gets its own scope and only modifies the combined filter object.
-
-* The filter dialog controller can cause the tool area controller to send actions as appropriate"	57925	Sub-task	iteraplan PO	05/Feb/16 10:55 AM	09/Feb/16 3:58 PM																																																																				

@@ -1,1 +1,0 @@
-Permission warning for rows in CCD	Add permission handling for rows in CCD. If at least one row has no permission - show permission warning.		Bug	iteraplan PO	25/Oct/16 5:38 PM	26/Oct/16 10:54 AM														25/Oct/16 6:32 PM;madu;#4840	26/Oct/16 10:53 AM;mash;Review is Done: https://iteraweb.iteratec.de/fisheye/cru/IP-119																																																					

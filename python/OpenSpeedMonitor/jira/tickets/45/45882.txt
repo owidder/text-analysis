@@ -1,3 +1,0 @@
-Use of non-existent CSS class for error messages	"The CSS class ""errorHeader"" is used in many places, but can't be found in the code. The message looks like in attachment ""ErrorMsg missing css class.jpg"".
-
-Keep error messages consistent! Use bootstrap alerts (http://twitter.github.io/bootstrap/components.html#alerts) with x-close button!"		Bug	iteraplan PO	12/Jul/13 9:44 AM	27/Aug/13 9:46 AM					gui									19/Aug/13 5:32 PM;jmi;Now a bootstrap alert	27/Aug/13 9:46 AM;isc;Test was OK	05/Sep/13 5:37 PM;psc;Reviewed with Jana. Ticket will be closed.																																																				

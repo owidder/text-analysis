@@ -1,4 +1,0 @@
-Dao refactorings	"Improve the Dao classes:
- * Remove unused methods
- * Remove the ""filter"" parameters from methods. In most cases they are not used any more
- * Look for rarely used methods and removed them if they are redundant. For example AttributeTypeDAO.getEnumAttributes() is used only in one place and could be removed. Firstly load BuildingBlockType and then call getAttributeTypes() method. The attributes types are cached, so the performance will be improved also."		Improvement	iteraplan PO	05/Sep/11 9:25 AM	12/Sep/11 2:44 PM					refactoring									08/Sep/11 4:42 PM;bsi;I think, right now the classes are cleaned up.																																																						

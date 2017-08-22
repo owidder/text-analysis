@@ -1,5 +1,0 @@
-Custom Dashboard [Browser - FF]		124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:19 PM	19/Jun/17 5:19 PM														"15/Jun/17 6:38 PM;naba;For smoke test please use the https://doc.iteraplan.de/pages/viewpage.action?pageId=10322159 (examples and tips).
-
-Please be creative and progressive.
-
-*Note*: work with documentation is still in progress."																																																						

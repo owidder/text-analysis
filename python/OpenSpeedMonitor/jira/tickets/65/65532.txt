@@ -1,7 +1,0 @@
-move supportForIE.js 	"supportForIE.js is at the moment in the NCD folder.
-
-But it contains mostly functions for DataModel. 
-
-move it to a commonFolder? 
-
-maybe adjust or move tests"		Improvement	iteraplan PO	02/Dec/15 3:22 PM	23/Feb/16 2:59 PM																																																																				

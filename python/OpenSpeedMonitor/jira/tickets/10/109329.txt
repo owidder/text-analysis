@@ -1,1 +1,0 @@
-Auf der Seite der fehlgeschlagenen Messungen ist der Job nicht selektiert	Wenn man aus der Jobliste per Link auf die Seite der fehlgeschlagenen Messungen springt sollte der Job im select ausgewählt sein, von dessen Link man kommt.		Bug	OpenSpeedMonitor	23/Jan/17 9:59 AM	15/Feb/17 11:07 AM																																																																				

@@ -1,6 +1,0 @@
-scaffold-Oberfläche für WebPageTestServer funktioniert nicht	"führt zu 404, obwohl in de.iteratec.issc.WebPageTestServerController
-{code}
-static scaffold = true
-{code}
-steht.
-Vielleicht, weil Server ein Sclüsselwort ist??"		Bug	OpenSpeedMonitor	26/Sep/13 1:30 AM	25/Aug/14 5:57 PM														25/Aug/14 5:57 PM;nku;Funktioniert in der aktuell verwendeten Grails-Version (2.3.7).																																																						

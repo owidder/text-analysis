@@ -1,7 +1,0 @@
-Masterplan diagram: selecting IS connected via interfaces results in exception	"What I did?
-
-Selecting masterplan diagram; choosing ""projects""; In ""rework query results"" selected ""Include Information Systems that are connected over an Interface to Information Systems in the result set"".
-
-Result: see attached log."		Bug	iteraplan PO	01/Jul/11 9:57 AM	01/Jul/11 1:39 PM					diagram									"01/Jul/11 1:39 PM;kvo;""rework query results"" isn't valid for projects, it shouldn't be available with projects selected.
-
-Which Browser was it happening in?"																																																						

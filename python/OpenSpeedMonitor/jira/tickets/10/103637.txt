@@ -1,7 +1,0 @@
-Wrapping for all cells and the legend	"*Summary:*
-
-Wrap all cells incl. the legend up to 3 lines.
-
-No other tooltips except for the description."		Improvement	iteraplan Speedbird	23/Nov/16 10:42 AM	19/Dec/16 10:25 PM														"19/Dec/16 10:25 PM;ants;Review done.
-
-https://iteraweb.iteratec.de/fisheye/cru/IP-245"																																																						

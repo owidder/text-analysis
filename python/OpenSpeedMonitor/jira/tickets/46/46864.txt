@@ -1,9 +1,0 @@
-Error message for Key "LOGIN_DB_SCHEMA_NOT_AVAILABLE" is not shown in login screen	"The error message for the key *LOGIN_DB_SCHEMA_NOT_AVAILABLE* is not shown in the login screen. Currently only the messages for 
-
-{noformat}
-login.error.badCredentials
-login.error.datasourceNotAvailable
-login.error.passwordExpired
-{noformat}
-
-are shown. Add the key listed above in the login.jsp to display the error message. "		Bug	iteraplan PO	18/Aug/14 10:33 AM	26/Aug/14 4:42 PM														26/Aug/14 4:42 PM;gph;Found even more cases for error message keys. Added them to the login page(s). Looks complete now.																																																						

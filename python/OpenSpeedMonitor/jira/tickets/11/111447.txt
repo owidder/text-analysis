@@ -1,5 +1,0 @@
-logback-Konfiguration entsprechend ELK-Anforderungen anpassen	"Ziel soll es sein, dass die Anwendungslogs direkt zu einem logstash-Shipper geschrieben werden.
-
-
-
-Hierbei sollten wir auch sicherstellen, dass keine logfiles in den Containern anwachsen können. Wir haben im Detail-Datenservice mehrfach einen Komplett-Absturz des Containers gehabt, bei dem das Log-Volumen der Applikation als mögliche Ursache gilt. Hier konnte der docker-Daemon nicht mal mehr `docker ps` ausführen, bzw. lief dabei in ein timeout."	111439	Sub-task	OpenSpeedMonitor	09/Feb/17 5:31 PM																																																																					

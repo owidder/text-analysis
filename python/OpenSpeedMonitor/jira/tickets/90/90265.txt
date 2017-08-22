@@ -1,7 +1,0 @@
-docker-compose für OsmDetailAnalysis	"Ich habe Deinen Docker(-compose)-Content aus dem osm bereits übernommen und angefangen das anzupassen.
-
-
-
-* Bitte führe das zuende.
-
-* Bitte einen Bamboo-Plan schreiben für das Bauen und Pushen des Docker-Images des Microservices zu Dockerhub."		Task	OpenSpeedMonitor	12/Jul/16 11:31 PM	23/Aug/16 3:15 PM																																																																				

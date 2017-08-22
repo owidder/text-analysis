@@ -1,5 +1,0 @@
-Defect context menu on glossary page	"If you open an page on iteraplan, where you have an context menu and switch to glosar page (about iteraplan > Definitions) the context menu contains the options from the last page.
-
-Also the breadcrumb show a wrong content.
-
-Clarify if the context menu should be disabled on the glosar page."		Bug	iteraplan PO	07/Nov/14 12:56 PM	17/Nov/14 12:45 PM														12/Nov/14 4:09 PM;tam;The breadcrumb still shows a wrong path.	12/Nov/14 4:10 PM;tam;The breadcrumb still shows a wrong path.	17/Nov/14 11:53 AM;iteraplan;FKA: Ignore breadcrumbs																																																				

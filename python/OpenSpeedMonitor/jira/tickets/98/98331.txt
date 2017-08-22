@@ -1,1 +1,0 @@
-Use Integer instead of BigInteger in the database			Bug	iteraplan Thunderduck	06/Oct/16 2:22 PM	07/Oct/16 11:34 AM														07/Oct/16 11:34 AM;mse;Review ok.																																																						

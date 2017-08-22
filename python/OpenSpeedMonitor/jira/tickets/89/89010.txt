@@ -1,5 +1,0 @@
-Update screenshots of user docs for list	"in the current user docs, you find screenshots of older designs of the list.
-
-User guide: Main Features -> New Client -> List
-
-(https://www.iteraplan.de/doc/display/iteraplan53/List)"		Task	iteraplan Quickfox	01/Jul/16 11:57 AM	11/Aug/16 2:40 PM																																																																				

@@ -1,3 +1,0 @@
-Improve JSON-structure of history-API	"* Please include the ""identifier"" (concated names of related elements) as new field for all changesets attributable relationship-instances
-
-* Please change the name in the ""relation""-field for attributable relations from hard-coded string (like ""isr2Bo"") to the name of the relationship End"		Improvement	iteraplan PO	18/Oct/16 11:57 AM	19/Oct/16 2:25 PM																																																																				

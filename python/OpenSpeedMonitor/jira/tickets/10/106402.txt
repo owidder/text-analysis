@@ -1,7 +1,0 @@
-Prototype for Client-Server-Synchronisation (WebSocket)	"*Summary:*
-Create a prototype to actively broadcast changes of the datamodel (e.g. Information System A has a new attribute value B) to all clients (""push""). The trigger is a change on the server. See ModelChangeEventListener
-The Client receives these changes formatted like by the Single-Element-REST-API (https://www.iteraplan.de/doc/display/iteraplan55/Single+Element+API ).
-
-The goal of this prototype is to find a good *solution on the server* to broadcast changes (client is not in scope of this ticket). Initial idea is ""WebSocket"".
-
-Please consult first [~sfe] for his initial thoughts."		New Feature	iteraplan Speedbird	22/Dec/16 8:23 AM	15/Feb/17 12:20 PM																																																																				

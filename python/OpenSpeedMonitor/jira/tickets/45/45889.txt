@@ -1,8 +1,0 @@
-Twitter Bootstrap Modals do not work with IE-10	"Flow:
-- open ""Mass Data"" -> ""Bulk Updates"" on IE-10
-- click ""Save Query"". You get just a black shadow but the Modal is not appearing. If you click again on the screen, the balck shadow disappears but the whole page in now frozen."		Bug	iteraplan PO	12/Jul/13 3:12 PM	21/Nov/13 2:33 PM					cfnr									15/Jul/13 6:23 PM;sry;Will probably need to update Twitter bootstrap for that --> 3.2	"06/Aug/13 4:40 PM;ase;I have tried to replace the bootstrap.css, bootstrap-responsive.css, and bootstrap.js with version 2.3.2 but I have encountered a StackOverflowError with the CSSServlet (JAWR library).
-I have found the same problem described on this forum: http://stackoverflow.com/questions/14580656/jawr-cssservlet-throwing-stackoverflowerror
-Unfortunatelly, we are already using the latest version of the JAWR library (3.3.3).
-The problem is that the bootstrap CSS names are too long for the CSSServlet parser. Shortening the CSS names in bootstrap.css could solve the problem but are we going to do and maintain this?"	"23/Aug/13 12:52 PM;lba;We can't use the latest version of twitter bootstrap because:
--we have to modify the custom javascript
--we have to modify our jsps"	21/Nov/13 2:33 PM;isc;The problem was solved with the ticket ITERAPLAN-2171.																																																			

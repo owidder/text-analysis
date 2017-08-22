@@ -1,1 +1,0 @@
-review maven dependencies	take a look at the dependencies that we declare and remove obsolete dependencies.		Improvement	iteraplan PO	20/Nov/12 10:31 AM	27/Apr/14 4:22 PM														27/Apr/14 4:22 PM;fka;Done together with reviewing all third party library dependencies before release 3.3																																																						

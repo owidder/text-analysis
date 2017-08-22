@@ -1,9 +1,0 @@
-Documentation of the last release	"* (/) NCD: Attributes as inner and outer: https://www.iteraplan.de/doc/display/iteraplan54/Nested+Cluster+Diagram
-
-* (/) Filter: Manual selection: https://www.iteraplan.de/doc/display/iteraplan54/Filtering
-
-* (x) Single element view: https://www.iteraplan.de/doc/display/iteraplan55/Single+Element+View
-
-* (/) Tree Map: https://www.iteraplan.de/doc/display/iteraplan55/Tree+Map+Diagram"		Bug	iteraplan Speedbird	07/Oct/16 3:45 PM	02/Dec/16 2:54 PM														"22/Oct/16 10:03 AM;msr;Task for Monday, 24th October:
-
-Please finish this task on Monday."	16/Nov/16 4:00 PM;msr;Please update the Single Element View according to the new changes. Please show a UI reference.																																																					

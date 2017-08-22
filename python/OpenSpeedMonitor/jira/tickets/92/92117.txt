@@ -1,1 +1,0 @@
-Change execute file icon in context menu	Should be a play icon: glyphicon glyphicon-play		Bug	iteraplan Quickfox	01/Aug/16 11:14 AM	02/Aug/16 10:17 AM																																																																				

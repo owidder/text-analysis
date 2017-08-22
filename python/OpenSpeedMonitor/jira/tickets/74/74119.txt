@@ -1,5 +1,0 @@
-CRUD-Views GraphitePath: Liste der Measurands enthält noch _customerSatisfactionInPercent_	"Hier dollte statt des alten Attributs das neue Attribut _csByWptDocCompleteInPercent_ als measurand auftauchen.
-
-
-
-Wahrscheinlich assoziiert mit IT-918."		Bug	OpenSpeedMonitor	19/Feb/16 10:29 AM	22/Feb/16 11:23 AM																																																																				

@@ -1,7 +1,0 @@
-Excel Import: InformationSystemReleases and TechnicalComponentReleases with non-standard formatted names on relation sheets are not found during import	"When an Excel file contains, for example, an InformationSystemRelease named ""IS#1.0"" instead of the standard formatting ""IS # 1.0"" and that ISR is referenced in a relation sheet with the same ""wrongly"" formatted name ""IS#1.0"", the importer does not find the ISR the relation points to and consequently reports an error when the import is attempted.
-This is inconsistent behaviour which might confuse users.
-
-Reason is that release names on type sheets (SubstantialTypes and RelationshipTypes) are normalized when imported, while this is not yet done for relation sheets.
-
-The normalization should happen on relation sheets, too."		Bug	iteraplan PO	28/Feb/13 9:35 AM	05/Apr/13 11:31 AM					3.0.5-candidate	ExcelImport								"05/Apr/13 11:31 AM;gph;Since dropdowns are re-enabled in relationship sheets, users can only select existent (= correctly formatted) IS/TC or new IS/TC, which were created at the same time. For those newly created & incorrectly formatted IS/TC, the import of relationship sheets works fine now.
-"																																																						

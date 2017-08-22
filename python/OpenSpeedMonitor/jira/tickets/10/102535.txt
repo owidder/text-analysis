@@ -1,9 +1,0 @@
-Distrigation-Bug in Release 5.4	Distrigation-Bug in Release 5.4		Fault	iteraplan Support	14/Nov/16 2:09 PM	06/Dec/16 7:00 AM														14/Nov/16 2:10 PM;msr;Status: Testen den Fix gerade und wollen den Fix Ende der Woche ausrollen	"17/Nov/16 2:06 PM;msr;Wir spielen den Distrigation-Patch am
-
-
-
-Freitag, 18.11. zwischen 12:30 Uhr und 14:00 Uhr
-
-
-
-ein. In diesem Zeitraum kann es immer wieder zu Downtimes kommen. [~ogr]: Kannst du bitte den Kunden darüber informieren."																																																					

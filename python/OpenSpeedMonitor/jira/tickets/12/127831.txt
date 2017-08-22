@@ -1,1 +1,0 @@
-Remove Legacy Excel from old client	In the backend there is a functionality called "Legacy Excel" please remove the corresponding code. The normal excel without the word "legacy" is still needed.		New Feature	iteraplan Thunderduck	24/Jul/17 1:29 PM																																																																					

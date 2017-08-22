@@ -1,5 +1,0 @@
-Matermost-Integration github erstellen 	"Github hat leider keinen expliziten Slack-Webhook, sondern nur einen generischen. In Slack ist ein funktionierender Endpunkt implementiert. Leider funktioniert daher der (Slack-kompatible) Incoming Webhook in Matermost nicht out of the box. Man benötigt für die github-Integration in Mattermost einen Middleware-Service.
-
-
-
-Hierfür sollten wir folgende Komponente via Ansible als Docker-Service auf der seu einrichten: https://github.com/softdevteam/mattermost-github-integration "		Task	OpenSpeedMonitor	26/Jun/17 10:56 AM																																																																					

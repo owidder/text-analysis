@@ -1,3 +1,0 @@
-Add permission check for Attribute-Group-permission-REST-API	"Add permission check for Attribute-Group-permission-REST-API.
-
-Check only for the permission ""Configure attributes and attribute groups"" "		New Feature	iteraplan Thunderduck	12/Jul/17 3:30 PM	18/Jul/17 2:25 PM														18/Jul/17 11:58 AM;tsc;Additionally fixed a bug, that permission without View/Edit-Flags were saved in the db.																																																						

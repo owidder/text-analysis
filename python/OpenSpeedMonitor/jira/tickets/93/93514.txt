@@ -1,5 +1,0 @@
-include remove into plugin api	"* reinclude remove method into api.js (see svn history)
-
-* reinclude test case (see svn history)
-
-* adjust docu"		Improvement	iteraplan Thunderduck	18/Aug/16 9:35 AM	18/Aug/16 3:05 PM														18/Aug/16 3:05 PM;mse;Review ok.																																																						

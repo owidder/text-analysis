@@ -1,4 +1,0 @@
-Update  slightly outdated Screenshot in User Guide	"Real start screen lacks
-- breadcrumbs with only home icon
-- empty menu column
-Screenshot still has those."		Bug	iteraplan PO	26/Jun/13 1:10 PM	05/Jul/13 8:53 AM					documentation									05/Jul/13 6:04 PM;sry;Thx!																																																						

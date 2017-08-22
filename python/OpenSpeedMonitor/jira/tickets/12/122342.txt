@@ -1,1 +1,0 @@
-Create backend-functionality for mass create for Business Mapping	[~mada] or [~vadm]: Please define JSON-structure	116156	Sub-task	iteraplan Speedbird	24/May/17 2:52 PM	01/Jun/17 4:51 PM														01/Jun/17 4:51 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-633																																																						

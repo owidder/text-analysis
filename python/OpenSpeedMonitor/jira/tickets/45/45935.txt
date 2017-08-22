@@ -1,6 +1,0 @@
-LDAP upgrade install package	"Björn W. suggests:
-
-Was schön wäre: ich hatte anfangs das normale iteraplan EE installiert (ohne die LDAP-Dateien). Das ist mir dann später bei der LDAP-Anbindung aufgefallen. Ich habe dann einfach sechs Dateien aus dem LDAP-Installer (Spring-Config-File, Spring LDAP libraries und drei Properties-Dateien) in das Tomcat Installationsverzeichnis übernommen. Warum haben wir eigentlich kein „LDAP Update Package"", wo ein bestehendes „iTurm  iteraplan EE"" auf „LDAP iteraplan EE"" aufgewertet werden kann?
-
-If possible and useful.
-"		Improvement	iteraplan PO	30/Jul/13 8:52 AM	30/Dec/15 2:53 PM																																																																				

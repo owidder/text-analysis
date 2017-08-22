@@ -1,4 +1,0 @@
-Do not allow to rename the [Default Attribute Group]	"Renaming the [Default Attribute Group] causes no exception. But after that, open the Attribute Groups, will cause an Exception:
-Fundamental application data, that is required for the operation of iteraplan, could not be found in the database. Please initialize the database.
-
-We have to avoid a database state, without an attribute group named [Default Attribute Group]."		Bug	iteraplan PO	29/Feb/12 11:09 AM	09/Mar/12 11:52 AM																																																																				

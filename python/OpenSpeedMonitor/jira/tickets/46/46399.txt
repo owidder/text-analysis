@@ -1,5 +1,0 @@
-Fix saved tabular report "Future information systems"	"When you go to spreadsheet reports and try to open or run the saved query ""Future information systems"", then it doesn't run and an inappropriate error message appears on top of the page (screenshot): 
-
-""One or more Attributes were deleted or changed. Please check your attribute selection and color assignment."" 
-
-Fix the saved report and/or the code logic (and error message)."		Bug	iteraplan PO	03/Jan/14 10:10 AM	22/Apr/14 5:45 PM					reporting	reports	sampledata	savedquery	tabular					22/Apr/14 5:45 PM;lba;The saved query works now, code looks fine too.																																																						

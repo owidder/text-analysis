@@ -1,1 +1,0 @@
-Backend part		117765	Sub-task	iteraplan Speedbird	26/Apr/17 2:47 PM	08/May/17 1:15 PM														03/May/17 10:28 AM;mada;Looks like back-end functionality already implemented. 																																																						

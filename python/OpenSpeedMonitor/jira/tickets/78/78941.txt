@@ -1,9 +1,0 @@
-[Integrationstests] Wenn alle Tests einzeln laufen ganze Suite lauffähig machen	"Aktuell räumen offensichtlich nicht alle Integrationstest-Klassen die Datenbank wieder auf, nachdem sie gelaufen sind.
-
-Dadurch schlagen Tests fehl, wenn sie in der ganzen Suite laufen, während sie einzeln Grün sind."		Task	OpenSpeedMonitor	01/Apr/16 4:53 PM	07/Apr/16 8:56 AM														"04/Apr/16 11:26 AM;nku;Hier das Script, um herauszubekommen, welche Testklasse das Problem verursacht:
-
-http://naleid.com/blog/2012/05/22/fixing-grails-tests-that-pass-in-isolation-but-fail-when-run-as-a-suite"	"07/Apr/16 8:56 AM;nku;Aus meiner Sicht ist das erledigt.
-
-
-
-@birger  Wenn hier doch noch ein todo offen ist mach das Ticket einfach wieder auf."																																																					

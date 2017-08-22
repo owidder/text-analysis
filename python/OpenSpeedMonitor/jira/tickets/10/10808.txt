@@ -1,8 +1,0 @@
-Update des DataBinding-Mechanismus	"Nach dem Grails update auf 2.3.3 benutzen wir den Legacy SpringDataBinder: (Config.groovy: grails.databinding.useSpringBinder=true)
-um den CustomDateEditor nutzen zu können http://grails.1312388.n4.nabble.com/backward-compatability-of-Grails-2-3-0-databinder-td4650325.html
-
-Der DataBinder ist jedoch nicht mit Urls die Variablen enthalten und dem Mapping auf CommandObjekte kompatibel. Daher wurde im RestApiController eine fixCommand()-Methode eingefügt. 
-
-Insgesamt sollte auf den neuen DataBinder migriert und die Methode entfernt werden, da die neueren Grails-Features von dem neuen DataBinder abhängen.
-"		Improvement	OpenSpeedMonitor	04/Dec/13 11:49 AM	26/May/15 10:45 AM														"06/Dec/13 11:44 AM;mzeimer;API des ValueConverter's  - leider ohne Doku... :(
-http://grails.org/doc/latest/api/org/grails/databinding/converters/ValueConverter.html"	26/May/15 10:45 AM;nku;Ist umgestellt.																																																					

@@ -1,5 +1,0 @@
-Discovery Optimale Spider/Scan Settings	"Um die Zeit eines Scans zu verkürzen, sollten die optimalen Scanwerte (Anzahl Spidersessions, Anzahl Scanthreads, Anzahl threadPoolSize) als Empfehlungen dokumentiert werden.
-
-
-
-Abhängig von der CPU/Speicherkapazität des Hosts."		Improvement	secureCodeBox	09/Oct/14 11:39 AM																																																																					

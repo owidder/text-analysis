@@ -1,9 +1,0 @@
-Defective options in masterplan diagram column selection	"In Masterplan diagram, on page 2 in section ""Level 1"", the ""... additional columns ..."" dropdown offers options, which cause an error when generating the diagram.
-
-Reproduce:
-* Go to masterplan diagram configuration page
-* Click ""Send query & use results""
-* on 2nd page, section ""Level 1"": Choose ""IS ID"" in the dropdown for additional columns at the bottom of the section and click ""+"" to add the option.
-* Generate the diagram
-=> error
-"		Bug	iteraplan PO	01/Dec/14 10:23 AM	01/Dec/14 11:21 AM					diagram	diagrams	masterplan	visualization																																																												

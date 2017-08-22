@@ -1,8 +1,0 @@
-Order in which attributes of an attributegroup are presented in detail pages changes between view and edit mode	"to reproduce:
-# ensure a bunch of attributes are assigned to an attribute group and a bbt
-# navigate to a bb of the bbt
-# open attributes tab and expand the attribute group
-# change to edit mode
-=> order of attributes within the attributegroup changed
-# switch back to view mode
-=> order of attributes within the attributegroup changed again, it seems to be neither the one in edit mode nor the one in former view mode."		Bug	iteraplan PO	05/Jul/13 11:08 AM	21/Aug/13 10:37 AM					attribute	ui								17/Jul/13 3:51 PM;sry;Cannot reproduce on Nightly Build with sample data. Looking at IS "CRM # 3.2", the order of attributes always corresponds to the order in the attribute groups.	18/Jul/13 11:29 PM;sry;Allocating for 3.2 only to avoid losing this issue out of sight. Requires further investigation.	21/Aug/13 10:37 AM;jmi;Was unable to reproduce with IE8 and FF23	05/Sep/13 5:49 PM;psc;Closed in accordance with reporter, since the described issue cannot be reproduced.																																																			

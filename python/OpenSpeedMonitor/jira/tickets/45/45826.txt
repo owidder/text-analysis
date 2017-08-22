@@ -1,5 +1,0 @@
-Moving a column in Lists and TreeViews sorts the data by the moved column	"to reproduce:
-# navigate to a list of BBs (e.g. BusinessDomain)
-# ensure data is sorted by name
-# move column description to the left
-=> (/) description column is moved to the left; (x) data is no longer sorted by name but by description"		Bug	iteraplan PO	03/Jul/13 3:34 PM	30/Dec/15 2:53 PM					gui																																																															

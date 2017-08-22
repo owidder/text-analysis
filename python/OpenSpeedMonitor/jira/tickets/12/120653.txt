@@ -1,9 +1,0 @@
-Attribute list does not show newly created attribute	"Admin -> Attributes: Create a new attribute of any type and save it.
-
-
-
-Actual: The list will not show it, unless you press F5.
-
-
-
-Expected: The list will immediately show the newly created attribute"		Bug	iteraplan Speedbird	05/May/17 5:45 PM	17/May/17 3:27 PM																																																																				

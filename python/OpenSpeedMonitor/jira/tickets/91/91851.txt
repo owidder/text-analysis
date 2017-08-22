@@ -1,5 +1,0 @@
-Put single change - simpleDiff	"Estimation 4/15
-
-Clarify the structure of existing Diffs
-
-Changes for simple attributes (num, string) should be possible More in other tickets"	91839	Sub-task	iteraplan Thunderduck	28/Jul/16 4:30 PM	23/Aug/16 7:54 AM																																																																				

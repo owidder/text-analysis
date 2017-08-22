@@ -1,9 +1,0 @@
-Darstellung und Datengrundlage  der Messschritte optimieren	"- Scripte statt JOB-Namen als Eventnames der Altdaten darstellen (Browser und Location würden dadurch wegfallen)
-- Bereinigung der Alt-Daten durchführen"		Task	OpenSpeedMonitor	25/Sep/13 9:29 AM	01/Oct/13 7:16 PM														"25/Sep/13 11:51 AM;rhe;- Migrations-Skript anpassen (2h Analyse einrechnen)
-- -LocationAndResultPersisterService Abwärtskompatibilität behalten/anpassen-"	"30/Sep/13 4:25 PM;nkuhn;Der LocationAndResultPersisterService wird nicht angepasst. Results, die von MultiStep-Servern kommen, haben den EventName im Script gesetzt und dieser kann aus der Result-XML entnommen werden. Results, die von nicht-MultiStep-Servern kommen, haben keinen EventName. In diesem Fall müssen wir aber weiterhin initial den Jobnamen als EventName nehmen, da ein Script nicht gegeben/bekannt ist.
-
-Im Migrations-Skript soll aber für alle zu erzeugenden Events der Skriptname als Eventname verwendet werden."	"01/Oct/13 2:39 PM;nkuhn;Aus den folgenden Gründen wird die erforderliche Anpassung (Script- statt Job-Label als Eventname setzen) nicht im Migrations-Skript eingebaut:
-* Performance des Migrations-Skripts
-* Die Skripte in der mysql sind veraltet. Sie stammen noch aus der Migration sqlite -> mysql.
-
-Nach der Daten-Migration erfolgt eine Aggregation der erzeugten MeasuredEvents mittels eines Java-Tools. Es wird für jedes MeasuredEvent in der aktuellen sqlite des WPTMonitors nach einem Job geschaut, dessen Label dem name des MeasuredEvents entspricht. Wird einer gefunden, so wird das label des zum Job gehörenden Skripits als neuer EventName gesetzt. Nach diesem Vorgang werden doppelte MeasuredEvents mit gleichem Namen gelöscht. EventResults, die an den doppelten Events hingen, müssen dem verbleibenden Event (des entsprechenden Namens) zugeordnet werden."																																																				

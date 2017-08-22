@@ -1,9 +1,0 @@
-Add example in user documentation: REST access via Excel	The information from the attached file should be included in the user documentation as an example for REST usage. Include a note, that the solution is not supported by iteratec.		Improvement	iteraplan PO	30/Jun/14 5:07 PM	10/Oct/16 4:00 PM					documentation									"16/Sep/16 12:46 PM;cst;Link to the 5.4 User Guide:
-
-
-
-https://www.iteraplan.de/doc/display/iteraplan54/REST+access+via+Excel
-
-
-
-"																																																						

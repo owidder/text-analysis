@@ -1,7 +1,0 @@
-outdated screenshot on sourceforge	"http://sourceforge.net/projects/iteraplan/
-shows a screen shot from version 2.6.0
-
-Idea: when releasing 3.1 update with a current start screen
- 
-
-"		Bug	iteraplan PO	18/Jun/13 1:35 PM	26/Jul/13 12:02 PM														22/Jul/13 4:34 PM;lba;Added a new Screenshot on [http://sourceforge.net/projects/iteraplan/]	26/Jul/13 12:02 PM;svo;Screenshot is fine	21/Aug/13 9:22 AM;jmi;Updated screenshot to fix a spelling-mistake																																																				

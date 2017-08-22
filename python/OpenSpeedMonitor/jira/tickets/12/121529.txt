@@ -1,9 +1,0 @@
-New client in (headless) chrome	"Execute the new client code in chrome.
-
-
-
-Use headless if the system is not windows.
-
-
-
- "		Improvement	iteraplan Thunderduck	16/May/17 12:51 PM																																																																					

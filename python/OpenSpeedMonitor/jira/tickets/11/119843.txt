@@ -1,5 +1,0 @@
-Loading Indicator for Custom Dashboards	"Implement a loading indicator, if the custom dashboard is rendered,
-
-
-
-i.e. after clicking on ""Show"" or after 10 seconds without any user interaction. -This loading can be aborted-"		New Feature	iteraplan Speedbird	28/Apr/17 5:01 PM	04/May/17 4:25 PM																																																																				

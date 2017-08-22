@@ -1,5 +1,0 @@
-Excel Import: Performance for importing landscape	"The performance of landscape import is not satisfying. Especially its ""setup""-time (even for empty sheets the import takes around 10 seconds) seems to be relatively high.
-
-The usability is also problematic, biggest concerns being the lack of a progress bar and proper error explanation to the user (dependency from the log).
-
-See ITERAPLAN-474 for more details."		Bug	iteraplan PO	31/Jan/12 2:24 PM	26/Jun/12 2:05 PM														26/Jun/12 2:05 PM;tse;This is regarding the old excel import. Not applicable in the new excel import.																																																						

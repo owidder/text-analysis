@@ -1,7 +1,0 @@
-HUB-Suche	"Als Nutzer möchte ich innerhalb der unterschiedlichen Viewpoints und Layer auf allen verfügbaren Informationen suchen können. Die Suche sollte dabei die sichtbaren als auch nach Möglichkeit die Detailbeschreibungen enthalten und in der Ergebnisanzeige zwischen den Viewpoints, Layern und Fundstellen unterscheiden (Beschreibung versus Name).
-
-
-
-Mockup siehe
-
-* https://www.draw.io/?client=1#DSIH-BF-HUB-Suche.html"		Story	EAM-Visualisierung	18/Jul/16 11:35 AM																																																																					

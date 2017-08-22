@@ -1,5 +1,0 @@
-Excel-Import fails if BB names in file are not unique	"For some reason, the validation logic on imported data has become imcomplete. If a file contains an ID-less Building blocks with a name that exists already, the import fails with a database constraint violation.
-
-The uniqueness check is only present in _ExcelImportUtilities#getDbCopy_ which is hardly any longer used. In fact, that validation should be part of the _#saveOrUpdate_ implementations in each Building Block service. At the moment, validation is performed for interactive editing only, in _CMBaseFrontendServiceImpl_
-
-Task: push validation down into each building block service, and verify that Excel import logic does in fact benefit from it"		Bug	iteraplan PO	05/Mar/12 5:25 PM	10/Apr/12 12:38 PM					excel	import	validation							05/Mar/12 6:26 PM;sry;test file that fails to import with trunk, because of a duplicate name	10/Apr/12 12:38 PM;kvo;no work on old excel import will be done. New issues have to be filed after first draft of new excel-import is working																																																					

@@ -1,7 +1,0 @@
-Javascript-Fehler beim Hovern über Graphen	"Tritt in [diesem Beispiel|http://demo.openspeedmonitor.org/eventResultDashboard/showAll?selectedInterval=-1&selectedTimeFrameInterval=0&_setFromHour=&from=05.06.2016&fromHour=20%3A58&_setToHour=&to=06.06.2016&toHour=20%3A58&selectedFolder=3&selectedFolder=34&selectedPages=2&selectedPages=20&_selectedAllMeasuredEvents=&selectedAllMeasuredEvents=on&_selectedAllBrowsers=&selectedAllBrowsers=on&_selectedAllLocations=&selectedAllLocations=on&_selectedAllConnectivityProfiles=&selectedAllConnectivityProfiles=on&_includeNativeConnectivity=&_includeCustomConnectivity=&selectedAggrGroupValuesUnCached=docCompleteTimeInMillisecsUncached&trimBelowLoadTimes=&trimAboveLoadTimes=&trimBelowRequestCounts=&trimAboveRequestCounts=&trimBelowRequestSizes=&trimAboveRequestSizes=&_action_showAll=Anzeigen&selectedChartType=0] auf.
-
-
-
-Hier lassen sich die Datenpunkte nicht mehr hovern/anklicken. Vielleicht wegen des Prozent-Zeichens in der Graphen-Bezeichnung.
-
-"		Bug	OpenSpeedMonitor	06/Jun/16 9:01 PM	08/Jun/16 11:16 AM														08/Jun/16 11:16 AM;msk;Auf dem detailAnalysis-Branch gefixt																																																						

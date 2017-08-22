@@ -1,3 +1,0 @@
-Bamboo Versionsnummer hochzählen	Das Hochzählen der Versionsnummer im Bambopo funktioniert aktuell nicht richtig. Es werden weiterhin War-Files mit der Version 3.5.0 erstellt.		Bug	OpenSpeedMonitor	07/Sep/16 8:27 AM	20/Sep/16 1:45 PM														"16/Sep/16 3:29 PM;mmi;Das Hochzählen funktioniert, jedoch muss die Versionsnummer aktuell noch händisch wieder in den Develop-Branch gemerged werden.
-
-Die sollte (wenn möglich) automatisch geschehen."																																																						

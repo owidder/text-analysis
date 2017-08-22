@@ -1,7 +1,0 @@
-Im Dropdown des Anzeigen-Buttons eine Info anzeigen, wenn keine Auswahl-Möglichkeiten enthalten sind	"Wenn auf dem TimeSeries-Board keine benutzerdefinierten Dashboards existieren gibt's im Dropdown nur den Eintrag _Als Dashboard speichern_.
-
-Wenn man nicht angemeldet ist gibt's gar keine Einträge. Das sieht recht buggy aus. Besser wäre ein Hinweis _Aktuell sind keine Dashboards gespeichert._ oder so ähnlich."		Improvement	OpenSpeedMonitor	01/Feb/17 4:09 PM	09/Mar/17 11:42 AM														"08/Feb/17 11:12 AM;sbr;Die aktuelle Änderung sieht immer noch Buggy aus, nur anders :D
-
-!buggy.png|thumbnail!
-
-Am besten dann den Menu-Separator ersetzen, dann ist der Text auch schön formatiert."																																																						

@@ -1,5 +1,0 @@
-Threadfix als "Reporting" Komponente in der SecureBox integrieren.	"Threadfix als ""Reporting"" Komponente in der SecureBox integrieren, so dass die Zap Ergebnisse automatisch importiert werden. Die Konfiguration dafür (falls notwendig) kann aus dem Prozessmodel kommen, mit entsprechendem User Task.
-
-
-
-Auch der bestehende User Task Reporting kann hierfür angepasst werden."	82236	Sub-task	secureCodeBox	07/May/16 8:39 PM	11/May/16 10:02 AM																																																																				

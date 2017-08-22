@@ -1,1 +1,0 @@
-WARN beim Starten der Anwendung wegen Interval-Parameter in Controllern	Diese Fehlermeldung sollten wir beheben.		Bug	OpenSpeedMonitor	30/Sep/16 11:53 AM	04/Oct/16 8:57 AM																																																																				

@@ -1,7 +1,0 @@
-Mockito Ablösen	"Das Mocking-Framework Mockito wird noch in wenigen Tests benutzt. Wir sollten überall die gleichen Ansätze zum Mocking nehmen, sprich grails oder spock Mocking-Methoden.
-
-
-
-Daher sollten wir die wenigen Mockito-Mocks in andere Mocks umschreiben und das Framework aus OSM rausschmeißen.
-
-"		Bug	OpenSpeedMonitor	17/Nov/16 9:21 AM	11/Jan/17 8:58 AM																																																																				

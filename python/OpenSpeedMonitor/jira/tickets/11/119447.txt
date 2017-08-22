@@ -1,1 +1,0 @@
-PageAggregation: Seitengröße in MB mit richtiger Metrik anzeigen	Im Moment ist die Metrik kb, und die Zahl ist in bytes...		Bug	OpenSpeedMonitor	24/Apr/17 2:42 PM	24/Apr/17 5:46 PM																																																																				

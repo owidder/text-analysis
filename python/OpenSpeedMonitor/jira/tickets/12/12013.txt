@@ -1,4 +1,0 @@
-Queuetabelle erweitern	"# Die Queue-Tabelle soll sich erst beim Aktivieren einer Checkbox automatisch aktualisieren
-# Es soll in der Tabelle auch die Anzahl fehlerhafter Jobruns in der letzten Stunde angezeigt werden
-# Die Überschrift Event Results soll auch in Messschritte geändert werden
-# Pending und Running Jobs sollen Links werden. Beim Klick auf einen dieser Links klappen laufende Jobs der jeweiligen Sorte aus (also nur pending oder nur running). Ein- und Ausklappen sollen visuell z.B. durch ein Pfeilsymbol verdeutlicht werden."		Improvement	OpenSpeedMonitor	24/Mar/14 6:49 PM	25/Mar/14 3:53 PM														25/Mar/14 3:53 PM;drieger;Die automatische Aktualisierung wurde auskommentiert, da mit der neuen Logik (4.) Probleme auftraten.																																																						

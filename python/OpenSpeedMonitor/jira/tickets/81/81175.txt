@@ -1,7 +1,0 @@
-Execute REST write access tests	"Test cases see in attached Excel file.
-
-Please document the results of the tests in the Excel file and attach the file with the results to this issue."		Task	iteraplan PO	20/Apr/16 4:38 PM	26/Apr/16 1:39 PM					test									"26/Apr/16 11:43 AM;mse;* All tests completed
-
-* The expected return status is different from the actual return status  in many tests, but the behaviour of the request is *correct* in most cases!
-
-* Two bugs found, defect tickets created"																																																						

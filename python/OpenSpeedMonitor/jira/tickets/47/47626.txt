@@ -1,3 +1,0 @@
-Long filter names (like paths) are not fully displayed in the legend	"Long filter names (like paths) are not fully displayed in the legend.
-
-Implement a new message with the full path displayed as soon as the user hovers over the shortened path."		Bug	iteraplan PO	17/Apr/15 1:40 PM	20/Aug/15 9:36 AM					legend	lsd								20/Aug/15 9:36 AM;msr;Already fixed in actual trunk in NCD as well as in LSD (20.08.15)																																																						

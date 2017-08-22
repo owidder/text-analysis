@@ -1,7 +1,0 @@
-Tree View - Drag and Drop 	"When you use drag and drop in the Tree - View (e.g. with the name-column). Every time when you change the order with drag and drop the single element view of the changed elements opened. This happens on every dragged element.
-
-
-
-*Expected:*
-
-The Single Element View should not be opened."		Bug	iteraplan Speedbird	03/Jul/17 10:21 AM	19/Jul/17 11:26 AM														19/Jul/17 11:26 AM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-784																																																						

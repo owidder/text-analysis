@@ -1,5 +1,0 @@
-Fix CRUD-View von CsiSystem	"Wenn ein zu hoher Prozentwert unter http://localhost:8080/csiSystem/create -> add JobGroupWeight  eingestellt wird, wird eine falsche Fehlermeldung ausgegeben. Die Fehlermeldung lautet, es muss ein double in das Feld, dabei ist die Zahl nur zu groß.
-
-
-
-Das Editieren/Löschen von einem bestehenden CsiSystem führt zu einem 405 - Method nicht allowed Fehler. Warscheinlich kann man hier einfach den Action-Type  von POST auf PUT bzw POST auf DELETE setzen."		Bug	OpenSpeedMonitor	12/May/16 11:10 AM	12/May/16 2:07 PM																																																																				

@@ -1,3 +1,0 @@
-Further improvements on import performance	see further steps in ITERAPLAN-1926		Improvement	iteraplan PO	27/Sep/13 10:18 AM	25/Jun/14 4:20 PM														"25/Jun/14 4:20 PM;wfr;The follow-up actions in ITERAPLAN-1926 are resolved.
-
-Incidentially, performance improvement is an ongoing area of interest. No reminder needed."																																																						

@@ -1,3 +1,0 @@
-Configuring and saving an informationflow starting with the visualization context of an IS does not preserve the corresponding IS selection.	"Configuring and saving an informationflow starting with the visualization context of an IS does not preserve the corresponding IS selection. When executing the saved visualization, all IS are used to generate the output.
-
-Expected behavior: the output should be the same as it is when generating the output directly"		Bug	iteraplan PO	23/Jan/13 9:54 AM	01/Mar/13 4:58 PM					3.0.5-candidate	informationflow	visualization																																																													

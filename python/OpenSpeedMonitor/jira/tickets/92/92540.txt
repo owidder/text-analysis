@@ -1,9 +1,0 @@
-URL Robustheit/Konsistenz	"Der Microservice speichert URLs vom OSM und WPT.
-
-Dabei sollte es egal sein, ob der letzte Schrägstrich beim speichern oder abfragen mit übergeben wird.
-
-Also sollten folgende URLs gleich sein.
-
-""http://localhost:8080""
-
-""http://localhost:8080/"""		Improvement	OpenSpeedMonitor	05/Aug/16 1:35 PM	11/Aug/16 9:32 AM																																																																				

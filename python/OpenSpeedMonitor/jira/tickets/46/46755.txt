@@ -1,6 +1,0 @@
-NCD Web tests fail because they are too fast.	The Seleniumtests for NCD are too fast in some places, so that some asserts repeatedly fail.		Bug	iteraplan PO	24/Jul/14 8:17 AM	25/Jul/14 8:14 AM														"24/Jul/14 4:07 PM;isc;Single parts of the selenium tests do sometimes problems.
-
-In agreement with fka:
-We fix only this single problems. 
-If the problems pile up, we are looking for a comprehensive solution. 
-"																																																						

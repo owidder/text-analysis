@@ -1,5 +1,0 @@
-Scaffold-UI für domains schwerer zugänglich machen	"Die Scaffolding-UI soll nicht mehr so leicht erreichbar sein. Hierfür soll:
-* das Menü der Domain-Scaffolding-Oberflächen aus der Twitter Bootstrap-Titelzeile heraus genommen werden (Menüs ""Browse"" und ""Admin"").
-* der Link hinter dem Grails-Logo soll direkt auf das CSI-Dashboard zeigen (http://iteraspeedmonitor.wpt.otto.iteratec.de/csiDashboard/showAll), statt auf die Homepage der Anwendung.
-
-Siehe auch IT-41"		Task	OpenSpeedMonitor	05/Aug/13 5:28 PM	10/Sep/13 4:29 PM														10/Sep/13 4:29 PM;mzeimer;Hat sich durch IT-41 erledigt.																																																						

@@ -1,3 +1,0 @@
-Menu bar overflows in a narrow browser window and with a long user name	"If you have only a small screen (1024x786) and the user has a slightly longer user name, parts of the menu are floated out of the menu bar and overlap parts of the main page contents.
-
-See attachment for an example"		Bug	iteraplan PO	24/Oct/13 4:35 PM	30/Dec/15 4:54 PM																																																																				

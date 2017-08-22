@@ -1,5 +1,0 @@
-changelog für de.iteratec.osm.report.chart.MeasuredValue#connectivityProfile schreiben	Das müsste vor dem deployment im develop-since-github-Branch noch passieren.		Task	OpenSpeedMonitor	14/Dec/15 3:00 PM	15/Dec/15 11:54 AM														"15/Dec/15 11:54 AM;bwo;Der Changelog wurde erzeugt, außerdem habe ich einen merge in den Branch csi_configuration""  durchgeführt.
-
-
-
-Name des Changelogs: 2015-12-15-SCHEME-measured-value-and-connectivity-profile.groovy"																																																						

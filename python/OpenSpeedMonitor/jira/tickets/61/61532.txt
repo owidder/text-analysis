@@ -1,9 +1,0 @@
-1.4.3 Dokumentation exportieren als PDF	"1.4.3  Exportieren als PDF
-
-
-
-    Den Installation Guide und den User Guide separat nach PDF exportieren (Doku siehe: https://confluence.atlassian.com/display/CONF32/Confluence+to+PDF ). Release Notes nicht vergessen! Bei Bedarf das PDF Stylesheet in den PDF Export Options anpassen, um die korrekte Version und das korrekte Datum anzuzeigen.
-
-   
-
-Anwenderhandbuch unter WebContent\manuals\UsersGuide.pdf ablegen. Dabei die Versions-/Datums-Kennung auf dem Deckblatt prüfen/aktualisieren und nur benötigte Seiten exportieren (z.B. kein InstallationGuide)!"		Task	iteraplan PO	26/Oct/15 4:08 PM	30/Oct/15 5:29 AM														29/Oct/15 5:06 PM;fka;User Guide ist im SVN, InstallationGuide hier am Ticket dran																																																						

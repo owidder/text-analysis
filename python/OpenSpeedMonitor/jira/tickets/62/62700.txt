@@ -1,1 +1,0 @@
-Create local configuration for Protractor	Create a method to include local configuration for Protractor		New Feature	iteraplan PO	06/Nov/15 8:30 AM	18/Nov/15 7:51 AM					protractor									10/Nov/15 6:58 AM;msr;Added a grunt task to create local conf-file																																																						

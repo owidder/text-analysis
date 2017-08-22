@@ -1,1 +1,0 @@
-REST-Service (Producer) für die Steuerung von Jobs implementieren 		51774	Sub-task	secureCodeBox	24/Jul/15 8:02 PM	19/Jun/16 1:08 PM														19/Jun/16 1:08 PM;rfe;Durch den Einsatz von Camunda bereits vorhanden.																																																						

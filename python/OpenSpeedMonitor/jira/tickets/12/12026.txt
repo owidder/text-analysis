@@ -1,1 +1,0 @@
-Jobs: Standardwert für maxDownloadTime über IsmConfiguration setzen	Bisher ist der Standardwert eine Konstante in der Job-Domäne.		Improvement	OpenSpeedMonitor	28/Mar/14 9:58 AM	28/Mar/14 11:27 AM																																																																				

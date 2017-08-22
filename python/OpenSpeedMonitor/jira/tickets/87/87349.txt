@@ -1,3 +1,0 @@
-Changelog 3.4.9 aus Divergenz master/feature-Branch bilden	"1) develop-Branch in den feature mergen.
-
-2) Im feature-Branch alles, was es im 3.4.8er-Changelog auf dem master noch nicht gibt in ein neues 3.4.9er-Changelog verschieben."		Task	OpenSpeedMonitor	15/Jun/16 3:50 PM	17/Jun/16 9:59 AM																																																																				

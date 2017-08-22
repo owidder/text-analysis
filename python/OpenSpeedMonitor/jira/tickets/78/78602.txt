@@ -1,3 +1,0 @@
-Add hierarchy filtering to IFD	"* Add tool area entry just as in LSD.
-
-* Combined Filter is already used in IFD, so the rest of the functionality should work once tool area entry is properly connected."		New Feature	iteraplan PO	29/Mar/16 9:48 AM																																																																					

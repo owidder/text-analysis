@@ -1,5 +1,0 @@
-Arachni Docker Container bereitstellen	"Auch für Arachni benötigen wir einen geeigneten Docker Container. Im Idealfall können wir erstmal einen benutzen der bereits über die Docker Community bereitgestellt wird, oder wir bauen einen eigenen.
-
-
-
-https://hub.docker.com/r/k0st/debian-arachni/"	83300	Sub-task	secureCodeBox	07/May/16 9:08 PM	12/May/16 1:42 PM																																																																				

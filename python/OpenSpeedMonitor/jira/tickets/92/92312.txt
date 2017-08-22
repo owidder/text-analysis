@@ -1,3 +1,0 @@
-Only 1 Scrollbar in the IFD	"*Summary:*
-
-* Remove second scrollbar in the Information Flow Diagram"		Bug	iteraplan Speedbird	03/Aug/16 8:48 AM	03/Aug/16 3:48 PM																																																																				

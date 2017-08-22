@@ -1,9 +1,0 @@
-[PageAggregationChart] Beschriftung in kleinen Balken nicht mehr lesbar	"Wenn die Balken sehr kurz werden ist die Beschriftung aktuell nicht mehr lesbar:
-
-
-
-https://iteraspeedmonitor.otto.wpt.iteratec.de/pageAggregation/show?setFromHour=&setToHour=&from=23.02.2017&fromHour=0%3A00&to=09.03.2017&toHour=17%3A13&selectedFolder=120&selectedFolder=2&selectedPages=4&selectedPages=1&selectedPages=3&measurand=%7B""values""%3A%5B""firstByteInMillisecsUncached""%5D%7D#
-
-
-
-In diesem Falll sollte die Beschriftung (in blau?) außerhalb des Balkens positioniert werden."		Bug	OpenSpeedMonitor	09/Mar/17 6:02 PM	20/Mar/17 8:21 AM														20/Mar/17 8:21 AM;mmi;Mit -IT-1621- wurde implementiert, dass die Labels ausgeblendet werden, wenn sie nicht mehr in den Balken passen.																																																						

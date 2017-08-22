@@ -1,9 +1,0 @@
-Customized ApplicationResources properties affecting all languages instead of only one	"Currently you cannot create a customization with specific renamings only affecting one language, because the properties in the ApplicationResourcesCustom???.properties overwrite the properties of all language files, not just the one with matching language suffix.
-
-Example: having an ApplicationResourcesCustom_de.properties not only changes the displayed values when using the German localization, but also all other localizations."		Bug	iteraplan PO	04/Jul/13 11:08 AM	07/Aug/13 2:30 PM					customization	localization								06/Aug/13 11:04 AM;bra;does not work for english locale if no english customized resources file present	"06/Aug/13 3:46 PM;svo;The reason for this is that files that do not contain the locale language as suffix have to be filtered in order to prevent languages without a file to be overriden by custom languages. For english locale this is disabled though, since the language needs not be a filename suffix here.
-A possible fix would be to filter all filenames that contain some kind of language suffix which is not equal to the english locale language. This could be done by checking for the ""\_"" character. It is impossible though, because there are resource files that should not be filtered which contain a ""\_"" in their normal name. 
-This kind of filter must thus be applied to files that start with ""ApplicationResources"" only.
-Is this fix sufficient?"	"07/Aug/13 1:54 PM;lba;Tested with customization: wacker
-The following problem occured: 
-- German language custimization was correctly applied, but the english wasn't
-"	07/Aug/13 2:30 PM;lba;Works now as expected.	03/Sep/13 1:37 PM;psc;Reviewed with Sebastian. Ticket will be closed.																																																		

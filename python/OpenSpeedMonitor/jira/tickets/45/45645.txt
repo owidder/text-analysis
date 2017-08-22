@@ -1,3 +1,0 @@
-Wrong size order in Portfolio diagrams 	"The biggest attribute value (>850 in the attached diagram) is associated with the second-smallest size, where it should have been the largest.
-
-This and ITERAPLAN-542 are of interest for customer acquisition in CH."		Bug	iteraplan PO	14/Mar/13 4:01 PM	22/May/13 7:58 PM					portfolio									15/Mar/13 12:01 PM;sry;Currently we suspect that the problem is related to inconsistent behaviour when iteraplan 3.0.x runs on Java 7 (ITERAPLAN-645)	15/Mar/13 5:25 PM;sry;dependency confirmed	22/May/13 7:58 PM;sry;Fixed in ITERAPLAN-645, this ticket here described only one symptom.																																																				

@@ -1,9 +1,0 @@
-Execute IFD-Test	ifd-test-specification.xlsx		Task	iteraplan Quickfox	29/Jul/16 8:31 AM	11/Aug/16 2:40 PM														"29/Jul/16 4:43 PM;cst;Test was not succesful.  
-
-Ticket 4803
-
-Ticket 4804
-
-
-
-Test-Protocol attached on the Ticket "	11/Aug/16 1:30 PM;cst;Tested again - Protocol attached on the Ticket 																																																					

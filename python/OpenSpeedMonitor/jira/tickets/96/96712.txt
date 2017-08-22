@@ -1,7 +1,0 @@
-BatchActivity-Filter erweitern	"Bitte die Filter-Funktionalität der BatchActivities folgendermaßen anpassen/erweitern:
-
-
-
-1) Checkbox ""Show just open activities"" / ""Nur Offene anzeigen"" hinzufügen. Bei Aktivierung sollen nur noch nicht abgeschlossene Activities angezeigt werden.
-
-2) Label ""Filter:"" des Filter-Feldes entfernen. Stattdessen als Placeholder-Text ""Filter by name/Filter nach Name"" je nach Sprache."		Task	OpenSpeedMonitor	20/Sep/16 11:19 AM	22/Sep/16 2:19 PM																																																																				

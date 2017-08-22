@@ -1,5 +1,0 @@
-NCD: Show chosen path in legend	Also remove inner & outer nesting in the legend, if not configured		Improvement	iteraplan Thunderduck	27/Mar/17 10:22 AM	06/Jun/17 12:51 PM														"31/May/17 8:18 AM;aan;When changing the path while to outer element is active, the name of the path outer-to-inner is shown.
-
-
-
-When reloading the page or the inner element is choosen it works correct. Also showing the nestings only if necessery is working."																																																						

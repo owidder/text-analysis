@@ -1,7 +1,0 @@
-Test import/export strategies	"Test sheet in {{doc/test/importexport-strategies}}.
-
-* Add test cases to test the new ""conservative"" import strategy
-** Similar to overwrite (cud) strategy, but does not delete standalone building blocks
-
-* Install iteraplan using one of the not yet or lesser tested configurations in the installer test sheet
-* Perform the testcases from the test sheet and attach the results to this ticket"	47060	Sub-task	iteraplan PO	17/Oct/14 2:03 PM	24/Oct/14 4:03 PM														23/Oct/14 4:37 PM;isc;Tests were ok!	24/Oct/14 3:59 PM;fam;Agree, also tested successful																																																					

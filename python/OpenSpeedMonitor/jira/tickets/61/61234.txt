@@ -1,5 +1,0 @@
-NCD cannot be loaded from Building Block List	"The NCD is not loaded when it is accessed via the ""Show nested cluster diagram"" button on top of the Building Block lists *with any filter applied*. This is true both for a text filter via the search box as well as for a filter on the Status attribute (e.g. in case of Information Systems). See the message you get in the browser in the attached screen shot.
-
-
-
-The tests of the building block lists (as specified in *buildingBlocks-test-specification.xlsx*) should be *updated* accordingly, as soon as this bug is fixed!"		Bug	iteraplan PO	23/Oct/15 1:55 PM	02/Nov/15 4:34 PM														02/Nov/15 11:20 AM;fro;see ITERAPLAN-4035																																																						

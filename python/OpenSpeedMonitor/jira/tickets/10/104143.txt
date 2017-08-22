@@ -1,3 +1,0 @@
-Actions column should not be exportable	"Don't include Actions column into CSV and Excel Export of list view
-
-test with custom attributes with the same name (""Actions"")"		Bug	iteraplan Thunderduck	28/Nov/16 3:16 PM	02/Dec/16 2:00 PM																																																																				

@@ -1,1 +1,0 @@
-Number format with two decimals	Show all numbers in the format with two decimals e.g. 32,00 (German) or 32.00		Improvement	iteraplan Speedbird	07/Nov/16 2:42 PM	17/Nov/16 11:18 AM														17/Nov/16 11:18 AM;ants;Review done: https://iteraweb.iteratec.de/fisheye/cru/IP-178																																																						

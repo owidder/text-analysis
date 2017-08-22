@@ -1,1 +1,0 @@
-Recreate Index: show status	Disable the button, while recreation is running. Also show a message, when the recreation has started.		Improvement	iteraplan Speedbird	27/Mar/17 10:14 AM	01/Jun/17 3:13 PM																																																																				

@@ -1,9 +1,0 @@
-Fix installer to support Oracle Service Name	"The iteraplan installer creates a wrong database-url for Oracle Databases with a Service Name,
-
-i.e. the Service Name is wrongly separated with a "":"" instead of ""/"" in the database.url within the iteraplan-db.properties-file.
-
-Please fix this.
-
-See also: https://www.iteraplan.de/doc/pages/viewpage.action?pageId=8126481
-
-to clarify: only service name? or choise  between service name/service id? "		Bug	iteraplan Thunderduck	13/Jun/16 1:54 PM	16/Sep/16 3:23 PM																																																																				

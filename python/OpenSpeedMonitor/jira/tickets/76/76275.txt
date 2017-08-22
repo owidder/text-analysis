@@ -1,5 +1,0 @@
-[Persistenz] GUI Detail-Daten im Nachhinein holen/persistieren 	"Für das Persistieren von Detail-Ergebnissen für Jobs (siehe IT-988) muss es eine GUI im OSM geben.
-
-Neben dem Job muss man noch den Zeitraum auswählen und dann wird genau dieser Zeitraum im detaildaten-Service persistiert.
-
-"		Task	OpenSpeedMonitor	08/Mar/16 5:56 PM	05/Sep/16 5:17 PM																																																																				

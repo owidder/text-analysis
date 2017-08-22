@@ -1,3 +1,0 @@
-Change version footer in new client	"New text:
-
-© iteratec GmbH 2015 | iteraplan Corporate Edition Release 5"		Improvement	iteraplan PO	16/Apr/15 1:56 PM	23/Apr/15 4:10 PM					newClient																																																															

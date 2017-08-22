@@ -1,5 +1,0 @@
-[Job Scheduling view] Tatsächliche Ausführungen in der Vergangenheit mit darstellen	"Es sollte möglich sein, sich auf Knopfdruck pro Location die tatsächlichen Ausführungs-Zeitpunkte der Jobs in den letzten 2,3,6,12,24 h anzeigen zu lassen. Hierfür wären per AJAX die letzten erfolgreichen JobResults pro Job zu holen.
-
-
-
-Hintergrund: Im Moment sehe ich zwar, wann die Messungen konfiguriert sind. Wenn ich aber z.B. viele Jobs 4mal am Tag immer alle 6 Stunden konfiguriert habe weiß ich nicht, wie lange die Abarbeitung der aufgestauten Queue 4mal am Tag jeweils dauert."		Improvement	OpenSpeedMonitor	01/Dec/15 5:35 PM						idea																																																															

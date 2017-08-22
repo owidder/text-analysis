@@ -1,3 +1,0 @@
-Optimierung: Berechnung der ShopMeasuredValues erzeugt unnötige PageMeasuredValues	"Aktuell werden beim Berechnen der ShopMeasuredValues für jede JobGroup für alle Seiten die es in der Datenbank gibt PageMeasuredValues erstellt. Dadurch werden viele MeasuredValues mit value=null erstellt.
-
-Das kann man bestimmt noch optimieren ;-)"		Improvement	OpenSpeedMonitor	13/Jan/16 4:38 PM															13/Jan/16 4:40 PM;mmi;Ein Problem, da dieses jede Nacht mit dem Job "MeasuredValueUpdateEventCleanupJob" passiert.																																																						

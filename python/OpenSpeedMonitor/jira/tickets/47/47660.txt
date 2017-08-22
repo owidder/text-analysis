@@ -1,1 +1,0 @@
-Fix unittest for lsdLegendBuilder class		47639	Sub-task	iteraplan PO	22/Apr/15 4:16 PM	23/Apr/15 6:19 PM																																																																				

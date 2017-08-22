@@ -1,1 +1,0 @@
-Constraint auf CustomCennectivityName setzen	CustomConnectivityNames dürfen nicht nur aus einer Zahl bestehen oder 'native' heißen		Improvement	OpenSpeedMonitor	01/Feb/17 1:55 PM																																																																					

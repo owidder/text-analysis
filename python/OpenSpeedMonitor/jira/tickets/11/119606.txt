@@ -1,1 +1,0 @@
-Editors are sometimes not working	Sometimes editors cannot be closed, and it looks as if there is no controler or something like that		Bug	iteraplan Thunderduck	26/Apr/17 9:52 AM	27/Apr/17 8:48 AM														27/Apr/17 8:46 AM;aan;Is the same problem that was fixed in IPTS-801.																																																						

@@ -1,5 +1,0 @@
-List-Export: CSV contains separator "!###!"	"*Summary:*
-
-In the list export (of all lists) the CSV contains the characters  ""!###!"". Please remove it."		Bug	iteraplan Speedbird	31/Jan/17 11:52 AM	14/Feb/17 12:49 PM														14/Feb/17 11:10 AM;mash;Revision #6001	"14/Feb/17 12:49 PM;ants;Review done.
-
-https://iteraweb.iteratec.de/fisheye/cru/IP-372"																																																					

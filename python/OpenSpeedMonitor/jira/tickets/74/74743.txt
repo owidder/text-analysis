@@ -1,1 +1,0 @@
-JobGroup.groupType ausbauen	Statt des groupTypes soll zukünftig nur noch das Vorliegen einer assoziierten CsiConfiguration darüber entscheiden, ob für eine JobGruppe ein CSI berechnet wird oder nicht.		Task	OpenSpeedMonitor	25/Feb/16 4:44 PM	26/Feb/16 2:38 PM																																																																				

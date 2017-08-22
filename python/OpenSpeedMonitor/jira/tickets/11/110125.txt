@@ -1,9 +1,0 @@
-Filter: Numeric input field should support Comma in the German localisation	Filter: Numeric input field should support Comma in the German localisation		Bug	iteraplan Speedbird	31/Jan/17 11:27 AM	14/Feb/17 1:45 PM														"01/Feb/17 3:33 PM;roia;[~msr], should this be independent of the user's system locale settings (e.g., if user has dot set as decimal separator)? If so, then we should not use 
-
-{code}
-
-<input type=""number"" ...
-
-{code}
-
-but implement custom input validation., because number input works a bit differently in different browsers"																																																						

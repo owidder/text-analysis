@@ -1,7 +1,0 @@
-Adjust to new deployment method	"Implement the two suggestions from [~sfe] :
-
-* Whenever the expirydate of an instance has been changed (via the admin GUI), generate a new license key and update the instance with it
-
-* Use the database initialization feature from the installer instead of the script createInitialData.sql
-
-"	93358	Sub-task	iteraplan Speedbird	02/Sep/16 11:39 AM	26/Sep/16 6:01 PM														26/Sep/16 6:00 PM;sfe;Still necessary adjustments to create new license keys on changes to expiry dates will be done in IPTS-174																																																						

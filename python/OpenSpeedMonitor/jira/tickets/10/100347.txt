@@ -1,7 +1,0 @@
-User Timings anzeigen	"Wir sollten dieses github-Issue umsetzen:
-
-https://github.com/iteratec/OpenSpeedMonitor/issues/21
-
-
-
-Es wäre super, wenn wir auch per User Timing API gesetzte Marks darstellen könnten. Die Anforderung/das Issue kommt von OTTO. "		Story	OpenSpeedMonitor	24/Oct/16 3:19 PM																																																																					

@@ -1,1 +1,0 @@
-CSI Merge	Die Domainklassen für die CSI-Configration befinden sich aktuell auf einem extra Branch. Die Branches können nun gemerged werden.		Task	OpenSpeedMonitor	22/Dec/15 12:38 PM	22/Dec/15 1:13 PM														22/Dec/15 1:13 PM;bwo;Gemacht!																																																						

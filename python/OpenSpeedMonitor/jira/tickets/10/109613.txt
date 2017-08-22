@@ -1,1 +1,0 @@
-JSON Generator für Scans für UI	Als Nutzer möchte ich im UI mittels einem Formular ein JSON Dokument zum starten eines Scan via HTTP erstellen können, um es nict mehr händisch tun zu müssen.		New Feature	secureCodeBox	25/Jan/17 9:05 AM						Energy																																																															

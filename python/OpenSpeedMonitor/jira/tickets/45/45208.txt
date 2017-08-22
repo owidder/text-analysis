@@ -1,5 +1,0 @@
-CommunityEdition startup script does not work on MacOS	"The startup scripts bundled with the Community Edition do not work on MacOS X (because that was never tested...)
-
-iteraplan should be easily launchable & stoppable on MacOS. Please review & update README files etc. as well."		Improvement	iteraplan PO	19/Oct/11 3:09 PM	24/Oct/11 10:12 AM					MacOS								MacOS X 10.7 (Lion)	19/Oct/11 11:03 PM;pac;Unfortunately, I could not test the changes properly as I have some problems with the build scripts. Please check that I did not break something.	"20/Oct/11 7:49 PM;kvo;funktioniert bei mir auf MacBook nicht. Kommt ""... JAVA_HOME not set. Exiting.""
-Wenn ich die ganzen IF tests bezüglich JAVA HOME lösche geht es!
-Java wird implizit gefunden, ohne dass die Variablen explizit da sind."	23/Oct/11 10:39 AM;kgo;Tested with Linux (Ubuntu 11.04). Works fine.																																																				

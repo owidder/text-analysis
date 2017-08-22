@@ -1,7 +1,0 @@
-Edit Service for Date intervals	"- JSmodel changes
-
-- REST calls
-
-- Rollback on error"	101350	Sub-task	iteraplan Thunderduck	03/Nov/16 11:37 AM	22/Nov/16 9:36 AM														"11/Nov/16 11:33 AM;mse;At the moment, the standard ag-grid text editor is used to edit date intervals. The following input format is expected: ""MM/DD/YYYY - MM/DD/YYYY"".
-
-The correct editor for date intervals (possibly with two date pickers) will be implemented in IPTT-212."	18/Nov/16 10:43 AM;mse;It was decided that date interval columns won't be editable for the time being. So I set the editable flag in the column definition to false again. Please, review the code nonetheless, as it might be needed in the future.																																																					

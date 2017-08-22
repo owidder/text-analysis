@@ -1,3 +1,0 @@
-Bubbles over grid	"*Summary:*
-
-Show the bubbles over the grid, i.e. in front of the grid, if they overlap."		Improvement	iteraplan Speedbird	07/Oct/16 3:36 PM	07/Nov/16 3:41 PM														07/Nov/16 3:41 PM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-166																																																						

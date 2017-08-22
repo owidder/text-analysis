@@ -1,1 +1,0 @@
-Responsibility attribute values not copied	The values of a responsibility attribute are not copied when copying a responsibility attribute.		Bug	iteraplan PO	23/Feb/12 10:30 AM	12/Mar/12 11:27 AM																																																																				

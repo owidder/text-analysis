@@ -1,3 +1,0 @@
-Link to deleted saved query results in an error page	"If a saved query is deleted and somebody has to link to it and clicks it, a error page is shown. In my opinion, the user does not know if had made a mistake or why this error has happened. 
-
-Implement an error message, which indicates, that the saved query has been deleted or never existed. "		Bug	iteraplan PO	07/Aug/14 8:22 AM	19/Aug/14 3:36 PM														18/Aug/14 3:53 PM;dop;depends on ITERAPLAN-2655																																																						

@@ -1,9 +1,0 @@
-Besseres Exception Handling für Login Error implementieren	"Bei einem Loginfehler bricht der Build ab.
-
-
-
-Die OTTO Umgebung kann sich so ändern, dass das standardmäßige Username/Passwort nicht funktionieren.
-
-
-
-Der Login soll so verändert werden, dass alternative Credentials angegeben werden können, die automatisch bei einem ersten Fehlversuch benutzt werden."		Improvement	secureCodeBox	10/Oct/14 2:29 PM																																																																					

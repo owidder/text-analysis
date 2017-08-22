@@ -1,1 +1,0 @@
-Neighborhood Diagram test EE / Win7 / IE9 / oracle / default language: english	Perform and document test for constellation mentioned in summary.	46148	Sub-task	iteraplan PO	25/Oct/13 10:42 AM	25/Oct/13 2:58 PM														25/Oct/13 2:58 PM;svo;All test cases ok, nothing to check here.																																																						

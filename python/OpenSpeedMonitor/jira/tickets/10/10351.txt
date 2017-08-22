@@ -1,7 +1,0 @@
-Systemtest-suite im Nightly-build einrichten und vollständig lauffähig	"Der Integrationstest
-  de.iteratec.isocsi.WeeklyPageIntTests
-arbeitet mit einem großen, kundenseitig gestellten Datenbestand. Das Einlesen der Fixtures dauert zu lange, daher ist dieser Test auf Ignore.
-
-Dieser Test muss wieder laufen, also: Nightly build mit Jenkins für diese Systemtestsszenarien einrichten."		Bug	OpenSpeedMonitor	29/Jul/13 2:21 PM	29/Oct/13 10:58 AM														28/Oct/13 9:36 AM;jwerschmoeller;Test-Fixing ist hier NICHT Bestandteil. Es geht nur um die Stabilität der Testausführung der vorhandenen Tests.	"29/Oct/13 10:58 AM;rhe;Tests sind mit Grails 2.3.1 stabil
-
-Nightly Build für Tests ist eingerichtet."																																																					

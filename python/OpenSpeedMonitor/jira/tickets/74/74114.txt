@@ -1,3 +1,0 @@
-CsvUpload Browser-Connectivity-Weights funktioniert nicht	"Der CsvUpload Browser-Connectivity-Weights funktioniert nicht. 
-
-Nach dem Klick auf ""Hochladen"" wird die Seite neu geladen, aber die neuen Werte sind nicht da"		Bug	OpenSpeedMonitor	19/Feb/16 10:06 AM	19/Feb/16 1:05 PM																																																																				

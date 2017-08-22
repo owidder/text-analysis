@@ -1,5 +1,0 @@
-Der Bamboo Healthcheck gibt false-positives	Der Bamboo Healthcheck setzt den Test auf "successful", wenn die Antwortzeit überschritten wurde.		Bug	secureCodeBox	29/Jul/16 11:24 AM	03/Aug/16 5:12 PM	Buildserver (Bamboo)				students									"03/Aug/16 4:53 PM;jbo;Der Test überprüft nun, ob 5 mal ""Status : UP"" in dem Curl erscheint, wenn dies nicht der Fall ist wird eine Fehlermeldung ausgegeben. Bei der Einführung eines neue Tests muss der Wert innerhalb des Integration-Tests entsprechend geändert werden.
-
-
-
-Es wäre auch eine Variant mit 2 Abfragen möglich, wobei die erste auf ""DOWN"" Meldungen überpürft. Im Anschluss wird eine Untersuchung nach den ""UP""s gestartet, wodurch eine Nichterreichbarkeit des Containers als False-Positive ausgeschlossen wird"																																																						

@@ -1,7 +1,0 @@
-[CRUD] JobGroup View - Navigationsleiste falsch nach nicht erfolgreichem Update	Wenn eine JobGroup angelegt wird und dann im Edit-Menü der Name auf null gesetzt wird, wird die Navigationsleiste falsch angezeigt.		Bug	OpenSpeedMonitor	12/May/16 12:31 PM	18/May/16 2:32 PM														"17/May/16 11:53 AM;bka;Es ist insofern falsch, dass weniger Menüpunkte angezeigt werden als es sollten. Dies liegt daran, dass er angefangen hat, die index-view zu render (s. URL in Browser).
-
-
-
-Dieses Problem hat allerdings nicht nur die JobGroup sondern auch andere Domains wie bspw. CsiSystem."	"18/May/16 2:32 PM;bka;Das grundlegende Problem war, dass das Template _subMenuBar_ prüft ob die aktuelle _action_ den Wert _create_ oder _edit_ hat. Sobald man allerdings auf den Aktualisieren-Update auf der CRUD-View klickt, wird die Action _update_ gestartet.
-
-Ich habe die Abfrage erweitert, sodass auch geprüft wird, ob es die Action _update_ ist."																																																					

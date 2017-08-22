@@ -1,3 +1,0 @@
-Bildmaterial und Positionsdaten manuell erzeugen	"Manuelle Erzeugung der Bilddaten (Kacheln) und des zugehörigen geo.json.
-
-Bereitstellung in einem designierten Ordner für die Verwendung in der App."	82736	Sub-task	EAM-Visualisierung	02/May/16 1:26 PM																																																																					

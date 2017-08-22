@@ -1,7 +1,0 @@
-Ergebnisse als False Positive markieren	"_Als Kunde möchte ich in der Weboberfläche einzelne Ergebnisse als False Positive markieren, sodass diese beim nächsten Scan nicht mehr reportet werden._
-
-Die Einstellungen zu False Positives sollen auf einer separaten View dargestellt werden. Hier können sie auch wieder gelöscht werden.
-
-Akzeptanzkriterien:
-* Einzelne Ergebnisse des Reports können konfigurierbar als False Positive markiert werden.
-* Hierbei soll Methode (PUT,POST,GET, ...), Protokoll (HTTP,HTTPS), URL mit Wildcards konfigurierbar sein."		Story	secureCodeBox	14/Aug/15 3:06 PM		secureBoxElasticsearch	secureBoxEngine	secureBoxKibana		Energy	iteratec	OTTO																																																													

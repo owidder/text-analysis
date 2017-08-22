@@ -1,7 +1,0 @@
-Issues with deletions during import	"_Example (with sample data):_
-* Import empty Excel template with overwrite strategy
-
-_Expected:_ All building blocks are deleted.
-_Actual:_ Hibernate Exceptions or Database Exceptions
-
-This error seems to be related to the deletion of building blocks connected to each other, especially in larger numbers."		Bug	iteraplan PO	17/Mar/15 8:58 AM	08/Apr/15 3:01 PM					import									08/Apr/15 3:01 PM;nle;While trying to delete all data (load an empty template) some excepitons (only in the eclipse console) appeared. Seems to be related to "continuous loading", which is in process already.																																																						

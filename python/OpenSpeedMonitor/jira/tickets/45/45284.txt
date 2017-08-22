@@ -1,8 +1,0 @@
-XMI Export lacks values of date attributes	"The output file of an XMI export does not contain the values of date attributes.
-For reproduction, create a date attribute type, edit one building block to assign a value for that date attribute, and create an XMI export.
-The exported file will only contain a line like the following, i.e. it lacks the actual date.
-{code}
-  <content xsi:type=""attribute:DateAV"" id=""DateAV_371"" olVersion=""0"" attributeType=""DateAT_270""/>
-{code}
-
-When such a file is reimported, the date value column is set to null, which causes a number of other problems subsequently."		Bug	iteraplan PO	29/Nov/11 11:47 AM	12/Dec/11 2:25 PM					attribute	export	xmi							08/Dec/11 12:27 PM;lci;Another problem may be that the XMI-import was actually able to write a null as value of the DateAV into the database in the first place. A constraint should be added to at least assure some kind of fail-fast behaviour.	12/Dec/11 2:25 PM;bsi;OK																																																					

@@ -1,1 +1,0 @@
-Piechart in Dashboard is missing empty values	The pie-charts in the Dashboard should also show empty/no-value/unspecified entries, so the parts are compared to total sum, not only to the ones maintained.		Bug	iteraplan PO	20/Jul/11 4:53 PM	01/Aug/11 5:44 PM					dashboard									01/Aug/11 5:44 PM;vsh;OK																																																						

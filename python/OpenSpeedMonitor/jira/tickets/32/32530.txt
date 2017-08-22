@@ -1,1 +1,0 @@
-IE: Messungen > Jobs: Filter kann nicht gelöscht werden	Im IE können unter Messungen > Jobs die Filter nicht wieder gelöscht werden.		Bug	OpenSpeedMonitor	18/Feb/15 2:19 PM	19/Feb/15 11:29 AM														19/Feb/15 11:28 AM;rkr;Erledigt - ich habe bei den Input-Feldern das oninput-Attribut ergänzt.																																																						

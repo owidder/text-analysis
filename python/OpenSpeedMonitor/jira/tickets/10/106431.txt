@@ -1,3 +1,0 @@
-Microservice liefert unter bestimmten Voraussetzungen falsche Werte	"Bei der MongoDB Abfrage wird weder die OSM-Instanz, noch TestID, noch WptURL verifiziert. Wenn die Daten von nur einem OSM kommen, ist das nicht weiter schlimm, da wir da die Daten durch JobGroup/Page/Zeitraum auseinander halten können. Wenn aber mehrere OSMs Daten an den Microservice liefern, können sie im gleichen Zeitraum, mit der gleichen JobGroup-ID und Page-ID  Daten zu verschiedenen JobRuns ablegen. 
-
-Diese würden dann bei der Abfrage in der gleichen Kurve landen."		Bug	OpenSpeedMonitor	22/Dec/16 12:46 PM	23/Dec/16 5:41 PM														23/Dec/16 5:41 PM;msk;Ich check jetzt auch die OsmInstance																																																						

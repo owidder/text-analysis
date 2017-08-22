@@ -1,7 +1,0 @@
-Develop Selenium test for EA Data on BBT Interfaces	"Create a Selenium test for operations in EA Data on BBs of type Interface.
-
-Test operations on attributes (predefined and user-defined) and attribute groups.
-Cover all types of attrbutes (numeric, text, ...)
-
-https://iteraplan.iteratec.de/svn/iteraplan/trunk-3.x/doc/test/selenium/selenium-test.xlsx"		Improvement	iteraplan PO	16/Dec/13 10:43 AM	16/Jan/14 10:58 AM					gui	test								03/Jan/14 1:59 PM;lba;Test works with Firefox, but internet explorer has somtimes issues that a button is not clicked.	08/Jan/14 2:51 PM;wfr;Clarified title and description, contents unchanged.	"16/Jan/14 10:58 AM;gph;(!) Changed character encoding from UTF-8 to project's default encoding ISO 8859 (except ""NavigationTest"").
-(/) The test itself works like expected."	17/Jan/14 11:04 AM;fka;Ticket closed																																																			

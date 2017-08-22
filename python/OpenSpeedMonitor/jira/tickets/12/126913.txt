@@ -1,5 +1,0 @@
-Language when changing form new to old client	"When my iteraplan is in English and I switch to the old client for migrating saved queries the language of the old client is German (probably because my browser is german).
-
-
-
-In case this should be changed one can probably add the ?locale=en or ?locale=de to the link depending of the language choosen in the new client"		Improvement	iteraplan PO	12/Jul/17 9:29 AM																																																																					

@@ -1,4 +1,0 @@
-interation-Tests im Jenkins zum Laufen bekommen.	"Derzeit werden diese nicht ausgeführt.
-"		Bug	OpenSpeedMonitor	19/Feb/14 3:16 PM	21/Feb/14 12:20 PM														"21/Feb/14 12:20 PM;nkuhn;War ein Bug in JDK Version 1.7.0_u25
-Ich habe auf der SEU das Oracle-JDK Version 1.7.0_u51 installiert.
-Zuvor war das openJDK installiert."																																																						

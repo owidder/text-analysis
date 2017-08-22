@@ -1,5 +1,0 @@
-Add "no connection" option to relationship end filter	Similar to the classic queries, when adding a relationship end filter an option to only include elements which have no connection for the selected relationship end should be offered.	65407	Sub-task	iteraplan PO	01/Mar/16 2:52 PM	06/Apr/16 1:42 PM														"05/Apr/16 11:06 AM;sfe;* method naming improvements
-
-* ""unnecessary"" position parameter
-
-* apply filters when adding relationship end on first time, too"																																																						

@@ -1,1 +1,0 @@
-Setup an automatic browser tab refreshing through browsersync	https://www.browsersync.io/		Improvement	iteraplan PO	08/Jun/16 12:01 PM	20/Jun/16 5:12 PM														20/Jun/16 12:01 PM;mwe;See https://iteraweb.iteratec.de/confluence/display/ITPL/Development+Environment+for+New+Interactive+Client for the documentation.																																																						

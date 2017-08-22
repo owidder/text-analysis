@@ -1,3 +1,0 @@
-Fehler beim Refreshen der Seite	"Folgt man einem Link von der JobListe zum PageAggregationBarchart so wird zunächst ein korrektes Chart angezeigt.
-
-Beim refreshen der Seite kommt es jedoch zu einer Fehlermeldung."		Task	OpenSpeedMonitor	12/Dec/16 10:44 AM	12/Dec/16 11:53 AM																																																																				

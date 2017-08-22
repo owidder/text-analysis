@@ -1,4 +1,0 @@
-The writeable REST API throws exception when creation via POST fails	"This is due to a check in the MicroImportProcessElementResult which requires an id in order to write the json response. Simply making the MicroImportProcessResult null safe by not writing an id if there is no id should be sufficient here.
-
-Expected:
-Th writeable REST API should not crash but report the error (status code and error message in response)"		Bug	iteraplan PO	16/Apr/14 10:11 AM	16/Apr/14 2:40 PM																																																																				

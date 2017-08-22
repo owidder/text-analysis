@@ -1,1 +1,0 @@
-Rickshaw: X-Achse fehlt in exportierter Grafik	Rickshaw: X-Achse fehlt in exportierter Grafik		Bug	OpenSpeedMonitor	22/May/15 11:09 AM	22/May/15 12:42 PM																																																																				

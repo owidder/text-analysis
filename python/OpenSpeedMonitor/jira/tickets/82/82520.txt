@@ -1,5 +1,0 @@
-Encoding in der Job list.gsp	"Nachdem ein Job geupdatet wurde, wird die Meldung des Updates nicht korrekt dargestellt.
-
-
-
-<br />Job Der Testjob wurde geändert"		Bug	OpenSpeedMonitor	29/Apr/16 9:18 AM	02/May/16 6:06 PM																																																																				

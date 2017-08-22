@@ -1,1 +1,0 @@
-User without roles can't login in iteraplan	Create an User without roles in iTurm. This User can't login in iteraplan. 		Bug	iteraplan PO	03/Aug/11 2:17 PM	11/Aug/11 1:24 PM														11/Aug/11 1:24 PM;kvo;Verhalten passt																																																						

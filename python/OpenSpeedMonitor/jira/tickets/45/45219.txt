@@ -1,2 +1,0 @@
-Option for Excel Export: Export Building Block IDs for relations	At the moment, building block relations are always expressed with names. For further processing of Excel export files, it would be helpful to (optionally) export building block IDs (Instead of names, or in addition?)		New Feature	iteraplan PO	25/Oct/11 2:55 PM	08/Jun/12 10:47 AM					excel	export								"08/Jun/12 10:47 AM;kvo;IDs are used for the relations with attributes.
-The new ExcelExport should be a lot easier to deal with relations now."																																																						

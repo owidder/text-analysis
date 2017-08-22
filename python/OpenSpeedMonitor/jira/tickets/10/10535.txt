@@ -1,2 +1,0 @@
-Encoding Dashboards	"Alle Dashboards:
-Encoding Probleme bei Umlauten (z.B. ""Alle Messschritte ausw�hlen"")"		Bug	OpenSpeedMonitor	23/Sep/13 9:30 AM	23/Sep/13 3:57 PM																																																																				

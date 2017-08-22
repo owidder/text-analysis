@@ -1,1 +1,0 @@
-CSI > Gewichtung: Dateinamen sind identisch beim Download von Browser und Page Weights	CSI > Gewichtung: Dateinamen sind identisch beim Download von Browser und Page Weights		Bug	OpenSpeedMonitor	18/Feb/15 2:38 PM	25/Feb/15 5:04 PM																																																																				

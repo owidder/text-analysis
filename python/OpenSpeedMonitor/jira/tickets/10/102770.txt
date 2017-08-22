@@ -1,1 +1,0 @@
-Bars ausblendbar machen	Da es manchmal nötig ist, von einigen Pages nur bestimmte Balken anzeigen zu lassen, soll es eine Möglichkeit geben die Balken auszublenden.		Task	OpenSpeedMonitor	16/Nov/16 5:22 PM	18/Jan/17 3:12 PM																																																																				

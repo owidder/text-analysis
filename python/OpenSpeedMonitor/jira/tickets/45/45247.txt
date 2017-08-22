@@ -1,8 +1,0 @@
-Object related permission import doesn't respect permissions	"A user can change (or at least add to, until ITERAPLAN-373 is implemented) object related permissions of building blocks, even if the user doing the import has neither of the following:
-
- 1. The functional permission to see the according building block type
- 2. The permission to edit elements of the according building block type
- 3. The permission to see the ""Object related permissions"" menu item
- 4. An object related permission for the according building blocks, while object related permissions for other users are set.
-
-Each of these items should prevent the possibility to change the object related permissions of the according building blocks (except maybe item 3, since the inability to see the object related permission page does not prevent a user to change the object related permissions of a building block directly, if the other conditions are met)."		Bug	iteraplan PO	10/Nov/11 1:00 PM	07/Aug/14 3:30 PM					import	object	permissions	related						26/Jan/12 3:12 PM;sfe;Also, if you have permission for the menu entry "object related permissions", you can add any user to the list of "owning users" for any building block you wish, even those you don't have write or even read permissions for the building blocks in question.	13/Aug/12 10:43 AM;kvo;Object related permission obsoleted -> no bugfixing in this area	07/Aug/14 3:30 PM;fka;No more work an old import functionality planned.																																																				

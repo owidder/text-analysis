@@ -1,8 +1,0 @@
-Relationships for removed building blocks remain intact during Excel import	All updated building blocks have their relationships overwritten by the Excel import. If you want to keep the relationships, don't delete them from the from Excel file. Yet, this rule applies only to those building blocks that have not changed their name. If a building block has changed its name, its relationships remain intact, even they are removed from the Excel file.		Improvement	iteraplan PO	19/May/11 8:18 AM	26/Jun/12 2:22 PM					excel	import								15/Sep/11 5:26 PM;agu;Recently we implemented the partial Excel-Import: ITERAPLAN-205. Does it solve the problem?	08/Jun/12 10:59 AM;kvo;Probably fixed. Tobe verified by Tilman	"26/Jun/12 2:22 PM;tse;The new Excel importer works like this:
-
-* all building blocks are mapped by their ID. This means that if you change the name in the Excel file, it will be changed in the database.
-* the import only adds data, it doesn't remove any data. I.e. if you remove relationships in the Excel file, no relationships will be deleted in the database. 
-  ** Note: technically that would be possible. But we opted for a solution that's (in our opinion) easier to explain and comprehend.
-  ** Exception: For to-one-relations: if the Excel file contains another relation, we do delete the first relation in order to be able to set the given relation.
-
-"																																																				

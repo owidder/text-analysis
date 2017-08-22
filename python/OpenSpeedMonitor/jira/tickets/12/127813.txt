@@ -1,5 +1,0 @@
- User exits Custom Dashboard and edit-mode but button stays active 	"*Reproduce:* Go to Custom Dashboard, click edit and go back to the tile-view. Then go back to Custom Dashboard. The edit-Button is still ""active"" but the textfield has closed.
-
-
-
-*Expectation:* Set the Button-status back to normal (gray) when the user exits the page."		Bug	iteraplan Speedbird	24/Jul/17 11:48 AM																																																																					

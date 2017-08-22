@@ -1,2 +1,0 @@
-Applied filtering/coloring  should be marked  in the Context menu	Each filtering or coloring which were applied should be marked  in the Context menu		Bug	iteraplan PO	12/Jan/15 1:33 PM	04/Feb/15 1:54 PM														"04/Feb/15 1:54 PM;dasm;Will be implemented other behavior 
-(In discussion between Marcel&Daria on 02/04/2015)"																																																						

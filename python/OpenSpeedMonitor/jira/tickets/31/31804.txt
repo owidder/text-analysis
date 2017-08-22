@@ -1,7 +1,0 @@
-Deployment-Vorgang refaktorieren	"* Der reverse-Proxy vhost für den OSM sollte weiterhin in Puppet erstellt, nicht aber aktiviert werden. Das heißt die conf unter /etc/apache2/sites-available soll geschrieben werden, nicht aber der symbolische link unter /etc/apache2/sites-enabled. In Puppet soll die Aktivierung für einen reverse-Proxy optional werden (Parameter mit true als default). Für den OSM wird diese dann nicht gesetzt.
-
-* Es wird dann für jeden OSM ein reverse Proxy pro Port/tomcat erstellt (blue/green-Switch).
-
-* Der Jenkins-Job für das Deployment soll den symbolischen Link auf den Tomcat schreiben, auf dem der OSM deployt wurde. Besser wäre ein separater Job, der nur diesen symbolischen Link schreibt. Dann könnte man zuerst das Deployment auf den tomcat vornehmen und wenn dieses erfolgreich gelaufen ist kann der Wechsel erfolgen.
-
-* Es soll einen Jenkins-Job pro Deployment-Umgebung geben (z.B. OTTO, Projektserver, GKH). Dadurch müssen weniger Variablen übergeben werden und die Gefahr, in eine falsche Umgebung zu deployen sinkt."		Task	OpenSpeedMonitor	10/Feb/15 8:53 AM	30/Mar/15 9:15 AM																																																																				

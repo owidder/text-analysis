@@ -1,5 +1,0 @@
-Edit Service - simple Relations	"- JSmodel changes
-
-- REST calls
-
-- Rollback on failure"	101353	Sub-task	iteraplan Thunderduck	03/Nov/16 11:41 AM	24/Nov/16 1:49 PM																																																																				

@@ -1,7 +1,0 @@
-Display hierarchy filtering (IFD) in legend	"* Filters are already displayed in Legend in IFD
-
-* Hierarchy level filter should work out-of-the-box
-
-* This ticket is for minor adjustments, if necessary
-
-* Should major changes be necessary, talk to [~sfe]"		New Feature	iteraplan PO	29/Mar/16 9:57 AM																																																																					

@@ -1,9 +1,0 @@
-Filter Extension: Change Layout of manual filter	"*Summary:*
-
-Filter Extension: Change Layout of manual filter:
-
-
-
-* Add additional text to the tab ""Manual Selection (X / Y)"" (German: ""Direkte Auswahl"")
-
-Scope: Building Block & Attribute Filter"		Improvement	iteraplan Speedbird	02/Dec/16 2:27 PM	05/Jan/17 4:11 PM														05/Jan/17 4:11 PM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-284																																																						

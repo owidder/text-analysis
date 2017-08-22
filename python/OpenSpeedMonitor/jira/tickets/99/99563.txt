@@ -1,5 +1,0 @@
-Brute Force Detection bei der Registrierung	"Mit Hilfe der Logs/Kibana sollten wir eine Brute Force Detection für die Registrierung implementieren. 
-
-Sollte ein Angriff festgestellt werden, so sollte manuell eine komplette Sperrung gesetzt werden können.
-
-Zusätzlich würde sich eine Captcha anbieten."		Improvement	OpenSpeedMonitor	18/Oct/16 1:40 PM																																																																					

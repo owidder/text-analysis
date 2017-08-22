@@ -1,3 +1,0 @@
-"MutationObserver is undefined" angular marterial only in ie10			Bug	iteraplan Quickfox	11/Oct/16 5:59 PM	13/Oct/16 1:08 PM														"11/Oct/16 6:03 PM;mwe;Rost mentioned this Link: https://github.com/angular/material/issues/9395
-
-This error will be fixed in the next angular material version 1.2. But till then there is another fix: https://github.com/megawac/MutationObserver.js/tree/master"	11/Oct/16 6:12 PM;mwe;This commit corresponds to the fix: https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-9?cs=4630	13/Oct/16 1:09 PM;roia;Not reproducable anymore																																																				

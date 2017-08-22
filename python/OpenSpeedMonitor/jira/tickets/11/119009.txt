@@ -1,1 +1,0 @@
-Move export history button	Move export button for the history from the top left of the quick-search-field		New Feature	iteraplan Speedbird	19/Apr/17 10:00 AM	02/May/17 5:31 PM																																																																				

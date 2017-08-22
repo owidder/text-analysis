@@ -1,5 +1,0 @@
-Smooth rendering of context menus in list view	"The context menu in the list view should appear without changing the layout of the rest of the view.
-
-When the user clicks a column header in the list view, the header row and the list below ""jumps"": it is rendered with more height temporarily.
-
-Note that this jumping happens also when the menu is dismissed and disappears."	47009	Sub-task	iteraplan PO	29/Sep/14 11:24 AM	09/Jun/15 5:06 PM																																																																				

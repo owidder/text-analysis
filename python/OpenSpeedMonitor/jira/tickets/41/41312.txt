@@ -1,7 +1,0 @@
-RICKSHAW Legendeneinträge werden abgeschnitten	"Aufgetreten in Chrome unter Linux beim Ergebnis-Dashboard.
-
-Siehe Screenshot.
-
-
-
-Bitte zuerst testen, in welchen Browsern das unter Windows reproduziert werden kann."		Bug	OpenSpeedMonitor	21/May/15 10:54 AM	27/May/15 11:08 AM														22/May/15 10:52 AM;rkr;Bei welchen Filtereinstellungen tritt das auf? Schick mir mal die URL von der Ergebnis-Seite, auf welcher das auftrat.	27/May/15 11:00 AM;rkr;Unter Windows nur reproduzierbar mit Chrome.																																																					

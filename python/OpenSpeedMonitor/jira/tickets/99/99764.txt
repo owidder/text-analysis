@@ -1,1 +1,0 @@
-Swimlanes should work with Attribute rows in the Cluster Diagram	Swimlanes should work with Attribute rows in the Cluster Diagram		Improvement	iteraplan PO	19/Oct/16 3:19 PM	21/Oct/16 11:42 AM																																																																				

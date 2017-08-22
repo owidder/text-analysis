@@ -1,6 +1,0 @@
-Document metamodel localization special cases	"Localization of our (elastic) metamodel is incomplete. While, for example, the ""last modification"" property has a localized name, ""runtimePeriod"" does not. Relationship end names generally are not localized, either. These things are visible, for example, in Excel files downloaded from the Export/Import page.
-
-The reason for this lies with the Metamodel export of our ""to elastic"" bridge.
-In future iteraplan versions, when the elastic core may be replaced with an improved version, this issue will likely be gone.
-
-In the meantime, these peculiarities should be mentioned in the user documentation."		Task	iteraplan PO	25/Oct/13 11:13 AM	19/Jan/16 11:33 AM					documentation	elastic	metamodel																																																													

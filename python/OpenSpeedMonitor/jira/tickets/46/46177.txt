@@ -1,3 +1,0 @@
-Import/Export test EE/Win7/FF24.0/Mysql	Execute and document Import/Export test sheet with configuration stated above.	46148	Sub-task	iteraplan PO	21/Oct/13 4:30 PM	25/Oct/13 2:56 PM														"24/Oct/13 4:12 PM;svo;Found minor changes: Differences in Metamodel cause Import to fail on step 1, not on step 2 as specified. This should not be a problem though, test worked fine in general.
-
-However, TC5#17 fails. See ITERAPLAN-2085 for further information."																																																						

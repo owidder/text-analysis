@@ -1,7 +1,0 @@
-Selective Elastic Model Validation	"Currently on each REST PUT or POST and each import the whole elastic model is validated, regardless of the amount of actual changes.
-
-This can be improved by providing the ModelDiff object to the model validators and let them decide, based on the diffs, which part of the model they need to validate.
-
-Examples:
-* Unique constraint validator needs to validate all object expressions of a type where there was at least one change in a property with the ""unique"" flag. Validation doesn't need to be done for all other types.
-* Cardinality constraint validation only needs to be done for those object expressions where feature values/assignments were changed, and only for those changed features."		Improvement	iteraplan PO	18/Feb/15 10:05 AM						elasticmi	validation																																																														

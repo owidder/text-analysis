@@ -1,7 +1,0 @@
-Minor improvements for query migration	"* Mouse curser should not be a forbidden symbol but the usual text mouse curser when the textbox is hovered (on migration page)
-
-** *Possible solution*: add css property ""cursor: text;"" to textbox element
-
-
-
-* The log level for the QueryMigrationLogger class could be set to INFO so that messages like ""Starting Migration for Spreadsheet Report for Type InformationSystem ""Plausi - VVZ-Relevant ohne VVZ-ID / Briefkasten und Gruppe"" (id: 104)"" are also logged to tomcat log file and not only displayed in UI"		Improvement	iteraplan PO	10/Feb/17 12:55 PM	14/Feb/17 9:48 AM																																																																				

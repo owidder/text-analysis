@@ -1,7 +1,0 @@
-Iteraplan-Schnittstelle ansehen	"Wie sieht die Datenstruktur der Informationssysteme in Iteraplan aus?
-
-
-
-Akzeptanzkriterien:
-
-* Liste aller Informationssysteme aus einer iteraplan-Instanz (Hamburg-Demo) abrufen per Rest"		Task	EAMV15	20/Oct/15 12:20 PM	21/Oct/15 12:20 PM														21/Oct/15 12:20 PM;pkh;REST-Abfrage erfolgreich durchgeführt. Fotos sind im Wiki.																																																						

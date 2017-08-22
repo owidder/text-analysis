@@ -1,9 +1,0 @@
-In the nightly only the data tiles are clickable	"Go to the homepage of iteraplan and try to click a tile that is not on the data tab (Visualize, Report or Administration tab).
-
-
-
-Current behaviour: Nothing happened
-
-
-
-Expected behaviour: the corresponding page opens"		Bug	iteraplan PO	21/Jun/17 8:18 AM	22/Jun/17 5:25 PM																																																																				

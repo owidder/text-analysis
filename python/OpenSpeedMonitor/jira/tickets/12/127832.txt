@@ -1,1 +1,0 @@
-Remove Visio	The visio that is currently implemented in the old backend is replaced by a new implementation. Please remove all the code of visio in the backend, this is all code. Check if something is checked in on ticket IPTS-1099.		New Feature	iteraplan Thunderduck	24/Jul/17 1:30 PM																																																																					

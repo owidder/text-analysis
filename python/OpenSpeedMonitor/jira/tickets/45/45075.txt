@@ -1,4 +1,0 @@
-No error report, when saving with deleted attributes	"Edit an responsibility attribute of information systems (don't save).
-Change the view to the attribute and delete one user.
-Go back to the information system, select the deleted user, and save.
-There is no error report."		Bug	iteraplan PO	05/Aug/11 1:35 PM	08/Aug/11 10:46 AM														08/Aug/11 10:46 AM;kvo;Ist fachlich ok.																																																						

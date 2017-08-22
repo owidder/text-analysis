@@ -1,2 +1,0 @@
-Disable hierarchical names for Landscape diagram		46781	Sub-task	iteraplan PO	08/Sep/14 12:58 PM	26/Sep/14 11:28 AM														"26/Sep/14 11:28 AM;gph;Checkbox has the desired effect. Saving, loading and executing works.
-Adjusted the caption."																																																						

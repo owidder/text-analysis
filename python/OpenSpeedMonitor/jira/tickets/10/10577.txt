@@ -1,4 +1,0 @@
-Manueller Abgleich CSV/Excel-Werte für die berechneten CSI-Werte auf Seitenebene	"Eventl. Zuordnung von Jobs zu CSI-Groups prüfen
-Prüfung auf Seitenebene"		Task	OpenSpeedMonitor	08/Oct/13 3:56 PM	28/Oct/13 9:42 AM														"08/Oct/13 5:04 PM;mzeimer;Ziel: 
-Entweder Abweichungen erkennen und vermeiden ODER klar begründen können."	08/Oct/13 5:33 PM;mzeimer;Von Systemebene runter auf Seiten, dann auf Stunden. Kleine Zeitbereiche nutzen.	"28/Oct/13 9:42 AM;jwerschmoeller;Aktuelle Abweichungen sind nach Abstimmung mit Uwe i.O.
-"																																																				

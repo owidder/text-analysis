@@ -1,9 +1,0 @@
-UI bug with IS as Content type	"Steps to reproduce:
-1. Use IS as content type
-2. Scroll page to down
-Actual: 1) Systems name is croped
-            2) UI bug with scrolling of page "	47460	Sub-task	iteraplan PO	16/Mar/15 5:10 PM	19/Mar/15 2:43 PM													"Workspace: Windows 8.1
-Browser: Google Chrome 39.0
-Revision: 765"	18/Mar/15 1:18 PM;dasm;and one more thing: The additional scrolling appeared when browser's zoom enabled	"19/Mar/15 2:42 PM;dasm;When user makes diagram size bigger (zoom 150%) than default size - all elements are losing their colors.
-(in discussion with Alex - we can't fix it)"	"19/Mar/15 2:43 PM;dasm;Verified
-revision: 794"																																																				

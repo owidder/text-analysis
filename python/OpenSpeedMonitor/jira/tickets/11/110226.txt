@@ -1,1 +1,0 @@
-ResultSelection wirft Exceptions auf Grund der neuen Connectivity-Struktur			Bug	OpenSpeedMonitor	01/Feb/17 11:02 AM	01/Feb/17 12:24 PM																																																																				

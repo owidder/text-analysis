@@ -1,3 +1,0 @@
-[CRUD] Pagination buttons klickbar, obwohl ausgegraut	"Wenn man zu wenige Elemente hat um damit mehrere Seiten zu füllen, werden die Buttons zum Blättern ausgegraut. Ich würde erwarten, dass die Buttons dann auch deaktiviert werden bzw. zumindest nicht auf eine leere Seite blättern, wenn man sie klickt. 
-
-Beispiel: dev.openspeedmonitor.wpt.iteratec.de/graphiteServer/list auf ""next"" klicken -> leere Seite"		Bug	OpenSpeedMonitor	26/May/16 11:34 AM	30/Dec/16 4:58 PM														30/Dec/16 4:58 PM;msk;Die CRUD Listen sind jetzt von uns selber gemacht (responsiveTable). Daher tritt das Problem nicht mehr auf.																																																						

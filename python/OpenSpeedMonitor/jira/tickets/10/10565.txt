@@ -1,2 +1,0 @@
-Datumsauswahl anpassen	"- Bisherige Datumsauswahl anpassen auf ""letzte...""
-- Liste für gewünschte Auswahl kommt von Uwe"		Task	OpenSpeedMonitor	25/Sep/13 12:24 PM	01/Oct/13 4:37 PM																																																																				

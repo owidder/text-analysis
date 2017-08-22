@@ -1,3 +1,0 @@
-RICKSHAW Export funktioniert im IE nicht	Bitte testen und -ggf. fixen.- Button in IE deaktivieren und per Tooltip (Mouseover) darauf hinweisen, daß der Export in anderen Browsern verfügbar ist.		Bug	OpenSpeedMonitor	20/May/15 1:53 PM	26/May/15 10:16 AM														"22/May/15 1:24 PM;rkr;-@TODO: Klären ob das geändert werden soll.-
-
-Ursache: Restriktive Umsetzung von CORS; http://stackoverflow.com/a/18113025/2067690"																																																						

@@ -1,9 +1,0 @@
-Error handling for REST for Reactor Script Config 	In case of error REST doesn't return the right message.		Bug	iteraplan Quickfox	02/Aug/16 11:31 AM	09/Aug/16 1:07 PM														04/Aug/16 4:40 PM;tam;Please also look on commit from Revision: 25709	"08/Aug/16 5:13 PM;tam;Modified according to review comments: added a published name to the error message.
-
-
-
-Unfortunately commited without description :(
-
-
-
-Please see for review the revision: 25742"	09/Aug/16 1:07 PM;mse;Review ok.																																																				

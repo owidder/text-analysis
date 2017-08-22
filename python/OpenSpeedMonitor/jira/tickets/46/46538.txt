@@ -1,2 +1,0 @@
-Remove SoapUI from svn	Remove the soap ui from the svn. Ensure soapui is installed on iteraplan.iteratec.de to enable jenkins to execute the "test performance" job.		Task	iteraplan PO	24/Mar/14 2:35 PM	14/Apr/14 3:56 PM														"09/Apr/14 2:04 PM;bra;removed from svn.
-to be done: enable jenkins to execute soapui loadtestrunner without having soapui in the workspace"																																																						

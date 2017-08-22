@@ -1,9 +1,0 @@
-DA Service ist nicht von allen OSM Instanzen zu erreichen	"Demo und Dev Instanz erreichen den DA Service, die anderen Instanzen nicht.
-
-
-
-Anfrage resultiert in einem 403 Server und es kommt die Fehlermeldung, dass der API Key nicht richtig wäre.
-
-
-
-Vermutung: Nachdem die neuen Instanzen HTTPS können, sind die aktuellen API Keys nicht mehr valide."		Bug	OpenSpeedMonitor	26/Jul/17 4:33 PM																																																																					

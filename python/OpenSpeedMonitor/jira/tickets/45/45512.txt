@@ -1,3 +1,0 @@
-Color picker in nesting cluster sometimes hard to use	"Color picker in nesting cluster sometimes hard to use.
-Scrolling on the page results in not easy to pick colors.
-Stay on top -> color picking works, scroll down -> color picking has an offset"		Bug	iteraplan PO	27/Apr/12 11:38 AM	04/May/12 12:36 PM														03/May/12 11:36 AM;vsh;This is clearly a bug in the Farbtastic plug-in.	03/May/12 12:16 PM;vsh;The issue is only present in Firefox as it does not support the offsetX/offsetY properties. Older versions of IE that also do not support these properties may also be affected.	07/May/12 2:48 PM;kvo;thx. fine.																																																				

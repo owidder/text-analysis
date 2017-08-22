@@ -1,7 +1,0 @@
-XSS Problem in Nesting Cluster	nesting cluster configuration is vulnerable for XSS because the recommendation contains javascript if an attribute has javascript code as name		Bug	iteraplan PO	02/Oct/13 1:28 PM	17/Jul/14 4:13 PM														"25/Oct/13 12:31 PM;sfe;Missing escaping not only causes problem with XSS in this case. A double quote in an attribute name breaks the html, for example. This example causes Firefox to not display the attribute in the ""values of""-list of its building block type, and the Internet Explorer to display broken html.
-This should also be fixed with proper escaping."	"16/Jul/14 3:45 PM;isc;For the names and ids of drag and drop elements an HTML escaping was implemented. XSS should no longer be possible.
-
-I tested the problem with the following attribute names: <script>alert('Hi!')</script>
-And I came across the problem that the iteraQL can not handle characters ""<"" and "">"" . For that I have added the user manual for the 3.4.
-http://www.iteraplan.de/wiki/display/upcomingIteraplan/Building+Block+Attributes
-"																																																					

@@ -1,1 +1,0 @@
-iteraplan 3.2	Build iteraplan release 3.2		Task	iteraplan PO	17/Oct/13 2:40 PM	30/Oct/13 6:50 PM														28/Oct/13 5:52 PM;sry;reminder: Add e-mail address from LDAP retrieval to X.509 authentication setup	30/Oct/13 6:50 PM;sry;Looks all good, merci!	30/Oct/13 11:18 PM;psc;Ticket will be closed.																																																				

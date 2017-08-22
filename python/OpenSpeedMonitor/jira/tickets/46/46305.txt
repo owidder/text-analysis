@@ -1,1 +1,0 @@
-Update mainpage-screenshot in user-guide	Please update the main page screenshot on page 8. See ITERAPLAN-1875 for reason.		Bug	iteraplan PO	31/Oct/13 9:09 AM	22/Apr/14 10:28 AM														22/Apr/14 10:28 AM;lba;spelling mistake fixed																																																						

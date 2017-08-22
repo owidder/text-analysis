@@ -1,1 +1,0 @@
-Auth von Script zu Job verlegen	Die Felder Benutzername und Passwort hängen bisher an der Script-Domain, machen aber an der Job-Domäne Sinn. Die Domänen müssen geändert werden und abhängiger Code im JobProcessingService geändert werden.		Improvement	OpenSpeedMonitor	28/Mar/14 9:57 AM	28/Mar/14 12:19 PM																																																																				

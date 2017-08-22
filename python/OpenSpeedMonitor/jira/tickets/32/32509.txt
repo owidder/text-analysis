@@ -1,7 +1,0 @@
-Messungen > Queues braucht sehr lange zum Laden	Messungen > Queues braucht sehr lange zum Laden		Bug	OpenSpeedMonitor	18/Feb/15 11:31 AM															27/Apr/15 9:54 AM;nku;Abhängig von den konfigurierten  Servern / Queues braucht die Seite noch immer deutlich zu lange.	"25/Feb/16 6:29 PM;bka;Was bedeutet das Ticket? Mir erschließt sich aus den gegebenen Stichwörtern nicht ganz worum es sich handelt.
-
-Welche Queue dauert lange zu laden? Eine Queue im OSM, oder eine im WPT? Ist es eine View? Oder auf der Job-Liste? Oder irgendwo versteckt im System?
-
-
-
-Evtl. ist das Ticket auch gar nicht mehr aktuell?"																																																					

@@ -1,1 +1,0 @@
-Docker-Deployment ohne MySQL-Volume ermöglichen	Details siehe Story.	113504	Sub-task	OpenSpeedMonitor	01/Mar/17 9:09 AM	08/Mar/17 2:46 PM																																																																				

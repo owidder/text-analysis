@@ -1,1 +1,0 @@
-Release Notes Github verlinken	Den Link zu den Release Notes in den OSM einbauen.		Task	OpenSpeedMonitor	05/Nov/15 10:32 AM	05/Nov/15 10:19 PM																																																																				

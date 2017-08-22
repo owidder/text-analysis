@@ -1,7 +1,0 @@
-Dropdown options on enter (multivalue enum)	"- for multivalue enum editor (and similar editors with chips) dropdown suggestions should be shown immediately after edit beginning.
-
-- you click on edit button and get options suggested"		Bug	iteraplan Thunderduck	16/Jan/17 11:44 AM	24/Jan/17 9:47 AM														"20/Jan/17 11:10 AM;mse;* Input field is auto-focused when editing is started
-
-* Dropdown shoul open automatically, but sometimes this doesn't work
-
--> To be followed-up in IPTT-378."																																																						

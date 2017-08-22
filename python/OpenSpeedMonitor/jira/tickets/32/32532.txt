@@ -1,1 +1,0 @@
-IE: Schriftzug rechts außen im Scrollbalken	Im IE wird der Github-Link so weit rechts angezeigt daß er sich mit dem Scrollbalken überschneidet.		Bug	OpenSpeedMonitor	18/Feb/15 2:27 PM	26/Feb/15 2:54 PM																																																																				

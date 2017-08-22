@@ -1,5 +1,0 @@
-Execute Test Sheet Masterplan Diagram	..\tests\manualTests\Masterplan\masterplan-test-specification.xlsx		Bug	iteraplan PO	08/Aug/16 10:16 AM	09/Aug/16 4:43 PM														"09/Aug/16 2:15 PM;mse;Tests successful: [^masterplan-test_results.xlsx]
-
-
-
-I have also adjusted the tests slightly and commited the changed xlsx file to svn."																																																						

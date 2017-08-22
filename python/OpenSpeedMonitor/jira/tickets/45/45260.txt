@@ -1,1 +1,0 @@
-Attributes for Business Mappings can not be expanded / collapsed	When clicking on the "+" or "-" sign, the attribute box for business mappings, will not collapse or expand.		Bug	iteraplan PO	15/Nov/11 2:19 PM	27/Jan/12 10:45 AM					attribute	business	mapping							24/Jan/12 4:57 PM;gph;Mit Steffen besprochen																																																						

@@ -1,5 +1,0 @@
-CsiDashboard Geb Tests: EventResults für dynamische Datenauswahl benötigt	"Damit die dynamische Datenauswahl auf dem CsiDashboard funktioniert, müssen nicht nur CsiAggregations existieren, sondern auch entsprechende EventResults für den ausgewählten Zeitraum.
-
-
-
-Da im Moment nur CSIAggregations vorliegen, funktioniert die Datenauswahl im Test nicht."		Bug	OpenSpeedMonitor	20/Jun/17 2:13 PM																																																																					

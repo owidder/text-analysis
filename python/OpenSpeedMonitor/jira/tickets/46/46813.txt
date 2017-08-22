@@ -1,6 +1,0 @@
-Tabular reports defect in one special case	"When trying to find InfrastructureElements that have no TechnicalComponent assigned, the following iteraQL query works and shows correct results:
-InfrastructureElement[count(/technicalComponentReleaseAssociations)=0];
-
-The corresponding tabular report query configuration nevertheless leads no results. See the attached screenshot.
-
-Check and fix the tabular report for this case."		Bug	iteraplan PO	07/Aug/14 3:05 PM	15/Sep/14 2:15 PM					iteraQl	tabular								02/Sep/14 12:48 PM;sfe;Also affected Information Systems with no Business Objects assigned, Infrastructure Elements with no Technical Components assigned and Business Objects with no Information Systems assigned.																																																						

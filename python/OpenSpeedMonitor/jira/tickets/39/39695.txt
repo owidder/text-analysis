@@ -1,3 +1,0 @@
-Export-PNG Default-CSI-Dashboard: Legende überlagert Beschriftung X-Achse	"Die Datums-Angaben der X-Achse lassen sich nicht mehr lesen, da die Legenden-Box diese überlagert.
-
-Siehe Screenshots."		Bug	OpenSpeedMonitor	04/May/15 11:35 PM	05/May/15 10:04 AM														05/May/15 10:04 AM;rkr;Ich habe die Legende im Export auf Verdacht um 15px verschoben.																																																						

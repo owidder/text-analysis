@@ -1,9 +1,0 @@
-Parameterauswahl für CSI Ergebnisse dynamisch machen	"Das für [IT-1299] entwickelte System sollte für CSI Ergebnisse angepasst/erweitert werden, sodass auch dort die Parameterauswahl dynamisch ist.
-
-
-
-Es wird bereits der gleiche Code verwendet, jedoch werden die live-Updates der controls bisher noch unterbunden (siehe noAutoUpdate Variable beim rendern der GSPs der Karten).
-
-
-
-Das Problem ist das serverseitig nur nach EventResults gesucht wird, wir aber in diesem Fall nach CSI Aggregationen gucken müssen."		Bug	OpenSpeedMonitor	12/Dec/16 8:35 PM	23/Jan/17 12:20 PM																																																																				

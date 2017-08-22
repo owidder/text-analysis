@@ -1,7 +1,0 @@
-Visible timespan download is not working	"When downloading MPD diagram with specific timespan, it is ignored and full timespan is loaded.
-
-Also full download is working incorrectly (timespan table is empty).
-
-
-
-*Expected result*: only visible timespan is used for diagram download, the same is for full download."		Bug	iteraplan Speedbird	26/Apr/17 4:57 PM	04/May/17 12:11 PM														04/May/17 12:11 PM;viol;Review is done. No any comments																																																						

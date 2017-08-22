@@ -1,1 +1,0 @@
-Field Wrapper für  Dropdownmenü erstellen	Das Dropdownmenü unter http://localhost:8080/csTargetGraph/create sollte neben und nicht unter Point One * sein.		Bug	OpenSpeedMonitor	12/May/16 10:40 AM	12/May/16 11:04 AM																																																																				

@@ -1,7 +1,0 @@
-Validierung der WPT Server URL ist nicht gut	"Wenn ich einen WPTServer in Docker laufen lasse, ist die URL oft ""http://wptserver/"" o.ä.
-
-Wenn ich so einen WPT Server im WebPageTestController eintrage bekomme ich allerdings einen Fehler, dass die URL nicht valide ist.
-
-
-
-Mein Docker Container heißt jetzt ernsthaft osm-wpt-server.de <,< :D"		Bug	OpenSpeedMonitor	23/Mar/17 4:26 PM																																																																					

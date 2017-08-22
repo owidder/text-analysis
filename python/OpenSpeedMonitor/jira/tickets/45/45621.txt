@@ -1,3 +1,0 @@
-Modify the ant-installer to not build the war in the target directory, use the installers working directory instead	"Currently the ant-installer zips the war file in the user-selected target-directory (defaulted to CATALINA_HOME/webapps). This may lead to erroneous deployment when tomcat polls its webapps dir for autodeploy.
-
-Let the installer create the war in its working dir instead an copy it after successful creation."		Improvement	iteraplan PO	26/Feb/13 5:48 PM	31/May/13 2:49 PM					3.0.5-candidate	installer								31/May/13 2:49 PM;sry;Thx																																																						

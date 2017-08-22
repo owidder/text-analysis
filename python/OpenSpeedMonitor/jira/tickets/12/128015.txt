@@ -1,9 +1,0 @@
-Supervisor Group	"Hallo,
-
-
-
-wie kann ich DB-seitig prüfen, ob eine AD-Gruppe in der Iteraplan-Supervisor Gruppe enthalten ist?
-
-
-
-Falls diese dort nicht vorhanden ist, wie kann ich diese in der DB hinzufügen?"		Technical question	iteraplan Support	26/Jul/17 7:43 AM																																																																					

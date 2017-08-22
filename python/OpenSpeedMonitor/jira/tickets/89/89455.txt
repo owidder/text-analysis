@@ -1,5 +1,0 @@
-GoJS scrollbars got broken after GoJS library update	"To display scrollbars GoJS library has been using two <div>s in the diagram container after the <canvas> element -- one div for horizontal scrolling and one for vertical.
-
-The updated version uses one div instead of two, so display of scroll bars and resizing got broken."		Bug	iteraplan Speedbird	05/Jul/16 2:45 PM	08/Jul/16 4:37 PM														"08/Jul/16 4:36 PM;dmkh;Great, code review is complete without any comments, bug is fixed. 
-
-Review is here https://iteraweb.iteratec.de/fisheye/cru/IP-56."																																																						

@@ -1,1 +1,0 @@
-NCD: Different position for "orphan"-toolarea-Entry	Put the "orphan"-toolarea-entry to a different position, i.e. to Outer-Element-Toolarea\Settings		Improvement	iteraplan PO	10/Aug/16 8:53 AM	10/Aug/16 11:31 AM														10/Aug/16 11:31 AM;mse;Review ok.																																																						

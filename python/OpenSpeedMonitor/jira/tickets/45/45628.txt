@@ -1,6 +1,0 @@
-Search saved queries (spreadsheet and graphical)	"The list of saved queries can become rather lengthy, which makes it tedious to find a particular list entry. 
-
-Thus, implement a search mechanism for the typical list of saved queries. It should perform a full-text search on names and descriptions of saved queries. The list should simply be reduced to the matching list entries.
-
-Consider that the list of saved queries may be as long as ~500 entries, and searching should work quickly even on IE8. This may or may not rule out a pure Javascript implementation."		New Feature	iteraplan PO	04/Mar/13 2:16 PM	09/Apr/13 11:30 AM					savedquery	search								18/Mar/13 2:51 PM;smo;Solved on JS-Level with JQuery. Tested also on IE8.	"26/Mar/13 4:07 PM;sfe;Is very slow on my PC with Firefox. Takes around 5-10 minutes to filter large saved query lists, when searching for a term commonly included in the saved query names/descriptions.
-Maybe someone else should test this again."	09/Apr/13 11:30 AM;sfe;works fine now	10/Apr/13 11:17 AM;sry;great, thx to all!																																																			

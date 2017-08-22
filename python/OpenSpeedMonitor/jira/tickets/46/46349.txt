@@ -1,1 +1,0 @@
-No hyperlinks in Visio landscape diagrams	Landscape diagrams in Visio format do not contain hyperlinks. In contrast landscape diagrams in other formats (PDF, jpg)  contain them. There are also hyperlinks in the Visio informationflow diagrams. 		Bug	iteraplan PO	20/Nov/13 1:33 PM	30/Dec/15 4:54 PM					visualization																																																															

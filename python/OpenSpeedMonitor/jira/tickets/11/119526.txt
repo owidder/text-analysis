@@ -1,9 +1,0 @@
-PageAggregationChart: Animationen können falschen Zustand erzeugen	"Hat man ein Chart angezeigt und ändert anschließend die Sortierung, so kann es passieren dass man kurz danach über eine Bar hovert. In diesem Moment wird die alte Transition abgebrochen. Das führt dazu dass die Bar nicht mehr die korrekte Größe hat und somit kleiner darstellt wird, ohne dass es dem Nutzer bewusst ist -> sehr gefährlich.
-
-
-
- 
-
-
-
- "		Bug	OpenSpeedMonitor	25/Apr/17 1:51 PM	25/Apr/17 3:57 PM														25/Apr/17 3:57 PM;bwo;Die Elemente hatten keine ID und wurden somit bei jedem Update neuzugwiesen. Das führte dazu dass die Breite der Bars veränderte. Nun hat jedes Element eine ID und wird somit wiederbenutzt, ohne dass die Breite angepasst wird.																																																						

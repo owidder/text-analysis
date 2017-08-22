@@ -1,9 +1,0 @@
-Delete a Buildingblock	"service:
-- remove an existing building block from jsModel
-- send REST requests
-ui:
-- to clarify -> how to delete elements from ui. (mouse over, button...)
-
-action column with delete button
-
-- modify js model on successful rest call (onSucessCallBack function)"		New Feature	iteraplan Thunderduck	03/Nov/16 3:25 PM	28/Nov/16 10:31 AM																																																																				

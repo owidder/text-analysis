@@ -1,1 +1,0 @@
-Tests implementieren	Prüfen, ob die Tests 'de.iteratec.osm.da.fetch.FetchBatchSpec' und 'de.iteratec.osm.da.fetch.FetchFailureSpec' implementiert werden sollen, ansonsten bitte löschen.		Task	OpenSpeedMonitor	07/Sep/16 7:53 AM	07/Sep/16 11:55 AM														07/Sep/16 11:55 AM;msk;Keine Tests nötig																																																						

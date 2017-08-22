@@ -1,9 +1,0 @@
-Analyse current Building Block Lists	"Analyse current Building Block Lists, e.g.
-
-
-
-* AG-Grid framework
-
-* common ip-list-component
-
-* ..."		New Feature	iteraplan Speedbird	20/Jan/17 10:59 AM	22/Mar/17 4:10 PM														22/Mar/17 1:56 PM;dmkh;For reviewer: please close this ticket even without commit. The result of analysis is the initial implementation of IPTS-563.																																																						

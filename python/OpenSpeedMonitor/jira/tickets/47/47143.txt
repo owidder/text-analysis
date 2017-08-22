@@ -1,7 +1,0 @@
-Installer does not work	"Installer, which are built from the trunk, do not work correctly.
-You can run it, but you can not get further than as to the DB configuration.
-From this point, you just can not continue and get no error message.
-
-Please Note:
-This only affects the trunk. The version 3.4 is not affected."		Bug	iteraplan PO	07/Nov/14 12:27 PM	10/Nov/14 1:56 PM														07/Nov/14 1:32 PM;sfe;Additional information: Running the "dist" target from Trunk on my local machine produces, for me, a working installer. Using the installer built by Jenkins, I get the described issue.	"07/Nov/14 4:43 PM;fam;Problem found. The version property of Jenkins is not enterprise edition.
-This leads to not copying of libs and security folders."																																																					

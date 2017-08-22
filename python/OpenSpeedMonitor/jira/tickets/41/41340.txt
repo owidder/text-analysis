@@ -1,3 +1,0 @@
-Events dürfen nur bei Anzeige der Job-Gruppen angezeigt werden, denen sie zugeordnet sind			Task	OpenSpeedMonitor	21/May/15 4:37 PM	26/May/15 4:33 PM														26/May/15 12:11 PM;rkr;Soll dabei das globallyVisible-Attribut berücksichtigt werden? Ich vermute: Events mit globallyVisible=true werden immer angezeigt.	"26/May/15 1:41 PM;nku;korrekt
-
-"																																																					

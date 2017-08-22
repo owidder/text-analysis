@@ -1,1 +1,0 @@
-Auf den Dashboards sichtbar machen, mit welchen Browsern in einer JobGruppe gemessen wird	Diese Information fehlt Erik Seidel.		Improvement	OpenSpeedMonitor	29/May/15 4:13 PM	18/Jan/17 4:16 PM																																																																				

@@ -1,2 +1,0 @@
-massupdate cannot change Description	"With the function massupdate it is not possible to change the description of a building block
-"		Bug	iteraplan PO	03/Jun/13 7:09 PM	30/Dec/15 2:31 PM					bulkupdate									25/Jun/14 4:36 PM;fka;Not yet fixed																																																						

@@ -1,5 +1,0 @@
-JobGroup kann nicht erstellt werden	"Beim Versuch eine JobGroup zu erstellen, erhält man folgende Meldung in der View:
-
-
-
-""Could not find matching constructor for: de.iteratec.osm.csi.CsiConfiguration(java.lang.String)"""		Bug	OpenSpeedMonitor	17/Feb/16 2:14 PM	17/Feb/16 3:07 PM																																																																				

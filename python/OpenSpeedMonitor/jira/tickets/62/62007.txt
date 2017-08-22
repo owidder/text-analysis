@@ -1,5 +1,0 @@
-make startScreenDialog closeable & set timeout	"In rare cases, when the data model is loaded very quickly, the loading screen in the new client doesn't close anymore.
-
-Please fix by delaying the closing of the dialog. ~1 second should be enough.
-
-To be sure also make the loading screen manually closable."		Bug	iteraplan PO	30/Oct/15 11:44 AM	02/Nov/15 8:54 AM																																																																				

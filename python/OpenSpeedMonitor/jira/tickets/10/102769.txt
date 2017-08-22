@@ -1,1 +1,0 @@
-Trim Values ermöglichen	Der Karte "Trim Values" muss noch eine Funktionalität gegeben werden.		Task	OpenSpeedMonitor	16/Nov/16 5:20 PM																																																																					

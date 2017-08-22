@@ -1,1 +1,0 @@
-Automatisierbaren Workflow definieren	Einen Workflow definieren, der ohne weitere Interaktion mit dem Benutzer ausführbar ist.	83946	Sub-task	secureCodeBox	11/May/16 3:04 PM	11/May/16 5:45 PM																																																																				

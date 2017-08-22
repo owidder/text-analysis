@@ -1,9 +1,0 @@
-"Shows all 13 Business Units"	"The Text ""Shows all 13 Business Units"" which is displayed above the table should be erased.
-
-
-
-Instead we display this information right behind the search-field as in this example: 13 out of 13 are listed:
-
-
-
-!image-2017-05-29-13-38-46-849.png!"		Improvement	iteraplan PO	29/May/17 1:39 PM	31/May/17 8:30 AM														31/May/17 8:30 AM;sbu;I've added this issue to Ticket 5320 																																																						

@@ -1,3 +1,0 @@
-Neue WPT-Messoptionen einbauen	"In WPT werden laufend neue Mess-Optionen implementiert.
-
-Wir sollten die wichtigsten (wenn nicht alle) in unseren Mess-Jobs ebenfalls setzen können."		Story	OpenSpeedMonitor	25/Jan/17 10:33 AM	15/Jun/17 3:56 PM																																																																				
