@@ -12,6 +12,7 @@ var zlib = require('zlib');
 var lsiIndex = require('./server/lsiIndex');
 var vector = require('./server/vectors');
 var forceMgr = require('./server/forceMgr');
+var tb = require('./trace');
 
 var router = express.Router();
 
@@ -205,10 +206,14 @@ router.get('/getNodesAndLinks/*', function (req, res) {
 });
 
 router.get('/nextNodesAndLinksChunk/*', function (req, res) {
+    var $ = tb.in("server.nextNodesAndLinksChunk");
+
     var forceId = req.originalUrl.substr("/api/nextNodesAndLinksChunk".length + 1);
     var chunkObj = forceMgr.nextNodesAndLinksChunk(forceId, true);
 
     res.json(chunkObj);
+
+    tb.out($);
 });
 
 router.get('/getNodes/*', function (req, res) {
