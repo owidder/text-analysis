@@ -1,0 +1,7 @@
+All controls should disappear from toolbar with changing content type/axis	Summary: All controls (range slider, date range, text input bar) should disappear from toolbar with each  changing Content type/axis 	47574	Sub-task	iteraplan PO	20/Apr/15 11:32 AM	22/Apr/15 3:52 PM													"Workspace: Windows 8.1
+revision: 591"	21/Apr/15 4:27 PM;dasm;Verified (revision 983)	21/Apr/15 4:34 PM;dasm;not fixed. All Controls should disappear from toolbar with changing controls too (or any other action)	"22/Apr/15 9:40 AM;dasm;All  filtering options which were applied for axis should be canceled with each changing axis.
+Filters for content stay applied
+
+All filtering options which were applied for axis/content should be canceled with each changing content.
+
+(in discussion with Sergey)"	22/Apr/15 10:06 AM;sepr;fixed in rev 988	22/Apr/15 10:41 AM;dasm;Verified (revision 992)																																																		

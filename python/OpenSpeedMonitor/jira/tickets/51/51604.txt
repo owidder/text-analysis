@@ -1,0 +1,45 @@
+Dialog for Toolarea: modal/popup dialog	"Please contact [~msr] before starting with development of this ticket because the interaction design is not yet finalised.
+
+
+
+*Scope for this ticket:*
+
+Create an empty modal/popup dialog including a button for closing this dialog.
+
+
+
+
+
+*Full description:*
+
+*Summary:*
+
+Create a dialog for the filtering within the toolarea. This directive should provide the possibility to filter by enumeration in the style of
+
+""Attribute"" = ""Value"".
+
+
+
+*Architecture:*
+
+This directive inherits from the MenuDirective (by ""require"").
+
+The attribute list and its values are provided by the ToolareaViewModelBuilder and injected by the toolareaDirective and MenuDirective.
+
+
+
+*Interaction:*
+
+The dialog is openened from the menu ( ITERAPLAN-3811 ). To select an attribute, you enter letter by the letter the name of the attribute in a text input field. During typing the attribute list (appears under the input field) is filtered immediately. Finally the user selects one attribute of the list. The list of possible values is displayed on the right hand side. After selecting a value the diagram is filtered immediately in the background.
+
+Create a button to revert any filtering. Create a button to close the dialog.
+
+
+
+*Keep in mind, that this dialog will be extended with a numeric range slider and date picker in the future.*
+
+"	47838	Sub-task	iteraplan PO	23/Jul/15 10:18 AM	29/Jul/15 10:56 AM														"29/Jul/15 8:34 AM;isc;I've implemented the solution of ngDialog and a smal example.
+
+For more details look at the website of ngDialog.
+
+http://likeastore.github.io/ngDialog/#"																																																						

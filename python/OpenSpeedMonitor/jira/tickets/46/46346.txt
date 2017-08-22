@@ -1,0 +1,5 @@
+Tree view for Information Systems	"All building block types with a hierarchic relationship should have the option to be displayed in a tree view. Since iteraplan 3.1 the tree view option is available for all BBTs except the information system.
+As IS have a slightly different notion of hierarchy, which is more a ""part-of"" relation in which the sub-elements are not positioned relative to each other.
+Therefore, the tree view of IS must behave slightly differently from the tree view of other BBTs:
+- Rearragning IS in a tree view would only affect the correllation to the ""Super IS"". 
+- Rearranging IS would not affect the positioning of IS."		New Feature	iteraplan PO	19/Nov/13 12:28 PM	19/Jan/16 11:33 AM																																																																				

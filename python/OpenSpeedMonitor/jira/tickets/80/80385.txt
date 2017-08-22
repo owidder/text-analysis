@@ -1,0 +1,291 @@
+Liquibase hat Probleme mit PrimaryKeys, die global gleich benannt wurden	"Beim Ausführen der ChangeLogs in einer H2-Datenbank ( nicht in einer MySQL-Datenbank!) kommt es zu Fehlern im initialen ChangeLog 2015-11-18-SCHEME-initial-liquibase.groovy beim ChangeSet 1447946152150-33. Hierbei scheint die H2-Datenbank eine gleiche Benennung eines PrimaryKeys nicht zu akzeptieren. 
+
+
+
+Fehlermeldung:
+
+
+
+{code}
+
+INFO 13.04.16 15:41: liquibase: changelog.groovy: 2015-11-18-SCHEME-initial-liquibase.groovy::1447946152150-32::nkuhn (generated): ChangeSet 2015-11-18-SCHEME-initial-liquibase.groovy::1447946152150-32::nkuhn (generated) ran successfully in 1ms
+
+SEVERE 13.04.16 15:41: liquibase: changelog.groovy: 2015-11-18-SCHEME-initial-liquibase.groovy::1447946152150-33::nkuhn (generated): Change Set 2015-11-18-SCHEME-initial-liquibase.groovy::1447946152150-33::nkuhn (generated) failed.  Error: Bedingung ""MEASURED_VALUPK"" besteht bereits
+
+Constraint ""MEASURED_VALUPK"" already exists; SQL statement:
+
+CREATE TABLE PUBLIC.measured_value_interval (id BIGINT AUTO_INCREMENT NOT NULL, version BIGINT NOT NULL, interval_in_minutes INT NOT NULL, name VARCHAR(255) NOT NULL, CONSTRAINT measured_valuPK PRIMARY KEY (id)) [90045-191] [Failed SQL: CREATE TABLE PUBLIC.measured_value_interval (id BIGINT AUTO_INCREMENT NOT NULL, version BIGINT NOT NULL, interval_in_minutes INT NOT NULL, name VARCHAR(255) NOT NULL, CONSTRAINT measured_valuPK PRIMARY KEY (id))]
+
+liquibase.exception.DatabaseException: Bedingung ""MEASURED_VALUPK"" besteht bereits
+
+Constraint ""MEASURED_VALUPK"" already exists; SQL statement:
+
+CREATE TABLE PUBLIC.measured_value_interval (id BIGINT AUTO_INCREMENT NOT NULL, version BIGINT NOT NULL, interval_in_minutes INT NOT NULL, name VARCHAR(255) NOT NULL, CONSTRAINT measured_valuPK PRIMARY KEY (id)) [90045-191] [Failed SQL: CREATE TABLE PUBLIC.measured_value_interval (id BIGINT AUTO_INCREMENT NOT NULL, version BIGINT NOT NULL, interval_in_minutes INT NOT NULL, name VARCHAR(255) NOT NULL, CONSTRAINT measured_valuPK PRIMARY KEY (id))]
+
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:301)
+
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:55)
+
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:107)
+
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1251)
+
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1234)
+
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:554)
+
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:51)
+
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:73)
+
+	at liquibase.Liquibase.update(Liquibase.java:212)
+
+	at liquibase.Liquibase.update(Liquibase.java:192)
+
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:434)
+
+	at org.grails.plugins.databasemigration.liquibase.GrailsLiquibase.performUpdate(GrailsLiquibase.groovy:80)
+
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:391)
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766)
+
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361)
+
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+
+	at grails.boot.GrailsApp.run(GrailsApp.groovy:55)
+
+	at grails.boot.GrailsApp.run(GrailsApp.groovy:365)
+
+	at grails.boot.GrailsApp.run(GrailsApp.groovy:354)
+
+	at grails.boot.GrailsApp$run.call(Unknown Source)
+
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+
+	at openspeedmonitor.Application.main(Application.groovy:17)
+
+Caused by: org.h2.jdbc.JdbcSQLException: Bedingung ""MEASURED_VALUPK"" besteht bereits
+
+Constraint ""MEASURED_VALUPK"" already exists; SQL statement:
+
+CREATE TABLE PUBLIC.measured_value_interval (id BIGINT AUTO_INCREMENT NOT NULL, version BIGINT NOT NULL, interval_in_minutes INT NOT NULL, name VARCHAR(255) NOT NULL, CONSTRAINT measured_valuPK PRIMARY KEY (id)) [90045-191]
+
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+
+	at org.h2.message.DbException.get(DbException.java:179)
+
+	at org.h2.message.DbException.get(DbException.java:155)
+
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:98)
+
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:72)
+
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:171)
+
+	at org.h2.command.CommandContainer.update(CommandContainer.java:98)
+
+	at org.h2.command.Command.executeUpdate(Command.java:258)
+
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:184)
+
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:299)
+
+	... 35 more
+
+INFO 13.04.16 15:41: liquibase: 2015-11-18-SCHEME-initial-liquibase.groovy::1447946152150-33::nkuhn (generated): Successfully released change log lock
+
+o.s.b.SpringApplication Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springLiquibase_dataSource': Invocation of init method failed; nested exception is liquibase.exception.MigrationFailedException: Migration failed for change set 2015-11-18-SCHEME-initial-liquibase.groovy::1447946152150-33::nkuhn (generated):
+
+     Reason: liquibase.exception.DatabaseException: Bedingung ""MEASURED_VALUPK"" besteht bereits
+
+Constraint ""MEASURED_VALUPK"" already exists; SQL statement:
+
+CREATE TABLE PUBLIC.measured_value_interval (id BIGINT AUTO_INCREMENT NOT NULL, version BIGINT NOT NULL, interval_in_minutes INT NOT NULL, name VARCHAR(255) NOT NULL, CONSTRAINT measured_valuPK PRIMARY KEY (id)) [90045-191] [Failed SQL: CREATE TABLE PUBLIC.measured_value_interval (id BIGINT AUTO_INCREMENT NOT NULL, version BIGINT NOT NULL, interval_in_minutes INT NOT NULL, name VARCHAR(255) NOT NULL, CONSTRAINT measured_valuPK PRIMARY KEY (id))]
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766)
+
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361)
+
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+
+	at grails.boot.GrailsApp.run(GrailsApp.groovy:55)
+
+	at grails.boot.GrailsApp.run(GrailsApp.groovy:365)
+
+	at grails.boot.GrailsApp.run(GrailsApp.groovy:354)
+
+	at grails.boot.GrailsApp$run.call(Unknown Source)
+
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+
+	at openspeedmonitor.Application.main(Application.groovy:17)
+
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for change set 2015-11-18-SCHEME-initial-liquibase.groovy::1447946152150-33::nkuhn (generated):
+
+     Reason: liquibase.exception.DatabaseException: Bedingung ""MEASURED_VALUPK"" besteht bereits
+
+Constraint ""MEASURED_VALUPK"" already exists; SQL statement:
+
+CREATE TABLE PUBLIC.measured_value_interval (id BIGINT AUTO_INCREMENT NOT NULL, version BIGINT NOT NULL, interval_in_minutes INT NOT NULL, name VARCHAR(255) NOT NULL, CONSTRAINT measured_valuPK PRIMARY KEY (id)) [90045-191] [Failed SQL: CREATE TABLE PUBLIC.measured_value_interval (id BIGINT AUTO_INCREMENT NOT NULL, version BIGINT NOT NULL, interval_in_minutes INT NOT NULL, name VARCHAR(255) NOT NULL, CONSTRAINT measured_valuPK PRIMARY KEY (id))]
+
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:590)
+
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:51)
+
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:73)
+
+	at liquibase.Liquibase.update(Liquibase.java:212)
+
+	at liquibase.Liquibase.update(Liquibase.java:192)
+
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:434)
+
+	at org.grails.plugins.databasemigration.liquibase.GrailsLiquibase.performUpdate(GrailsLiquibase.groovy:80)
+
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:391)
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+
+	... 21 common frames omitted
+
+Caused by: liquibase.exception.DatabaseException: Bedingung ""MEASURED_VALUPK"" besteht bereits
+
+Constraint ""MEASURED_VALUPK"" already exists; SQL statement:
+
+CREATE TABLE PUBLIC.measured_value_interval (id BIGINT AUTO_INCREMENT NOT NULL, version BIGINT NOT NULL, interval_in_minutes INT NOT NULL, name VARCHAR(255) NOT NULL, CONSTRAINT measured_valuPK PRIMARY KEY (id)) [90045-191] [Failed SQL: CREATE TABLE PUBLIC.measured_value_interval (id BIGINT AUTO_INCREMENT NOT NULL, version BIGINT NOT NULL, interval_in_minutes INT NOT NULL, name VARCHAR(255) NOT NULL, CONSTRAINT measured_valuPK PRIMARY KEY (id))]
+
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:301)
+
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:55)
+
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:107)
+
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1251)
+
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1234)
+
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:554)
+
+	... 30 common frames omitted
+
+Caused by: org.h2.jdbc.JdbcSQLException: Bedingung ""MEASURED_VALUPK"" besteht bereits
+
+Constraint ""MEASURED_VALUPK"" already exists; SQL statement:
+
+CREATE TABLE PUBLIC.measured_value_interval (id BIGINT AUTO_INCREMENT NOT NULL, version BIGINT NOT NULL, interval_in_minutes INT NOT NULL, name VARCHAR(255) NOT NULL, CONSTRAINT measured_valuPK PRIMARY KEY (id)) [90045-191]
+
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+
+	at org.h2.message.DbException.get(DbException.java:179)
+
+	at org.h2.message.DbException.get(DbException.java:155)
+
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:98)
+
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:72)
+
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:171)
+
+	at org.h2.command.CommandContainer.update(CommandContainer.java:98)
+
+	at org.h2.command.Command.executeUpdate(Command.java:258)
+
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:184)
+
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:299)
+
+	... 35 common frames omitted
+
+Java HotSpot(TM) Client VM warning: TieredCompilation is disabled in this release.
+
+
+
+FAILURE: Build failed with an exception.
+
+
+
+* What went wrong:
+
+Execution failed for task ':bootRun'.
+
+> Process 'command 'C:\Program Files (x86)\Java\jdk1.8.0_73\bin\java.exe'' finished with non-zero exit value 1
+
+
+
+* Try:
+
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+Error |
+
+Failed to start server (Use --stacktrace to see the full trace)
+
+Java HotSpot(TM) Client VM warning: TieredCompilation is disabled in this release.
+
+
+
+{code}"		Bug	OpenSpeedMonitor	13/Apr/16 3:46 PM	18/Apr/16 1:51 PM																																																																				

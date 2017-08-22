@@ -1,0 +1,15 @@
+Continuous elastic update works inconsistently with large transactions	"_Reproduce (using sample data):_
+# Download complete Excel data and save the file.
+# Download empty Excel template and save the file.
+# Import empty Excel template with overwrite strategy to delete all building blocks
+# Import complete Excel data file
+
+_Expected:_ Import successful, elastic model completely updated.
+
+_Actual:_ The import finishes successfully, but the elastic model is corrupted. Can be checked by downloading Excel data again: Sheets for relationship types are filled incompletely; Invalid Business Mappings and only partially assigned Associations can be seen.
+
+_Why?_
+The order in which the continuous elastic update handles the hibernate events from the import leads to some changes reverting parts of originally fully constructed association objects.
+
+_Solution:_
+Perform the updates in the right order."		Bug	iteraplan PO	16/Apr/15 2:47 PM	21/Apr/15 4:34 PM					elastic									17/Apr/15 5:29 PM;sfe;I also added scheduling of a controlled elastic reload to the "clear cache" button on iteraplan's Configuration page to allow for easy reloading of the complete elastic model.																																																						

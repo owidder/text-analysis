@@ -1,0 +1,83 @@
+Tool Area for Linestyle	"Create a new entry in the toolarea on level 0 called ""Edge line type"".
+
+Level 1 entries are called:
+
+* ""Default line type""
+
+* ""Enumeration line type""
+
+
+
+List all enumeration attributes in the ""Enumeration line type""-menu.
+
+
+
+After clicking on an attribute, the new configuration is set and a full diagram redraw is started.
+
+"	55844	Sub-task	iteraplan PO	15/Mar/16 4:24 PM	26/Apr/16 10:09 AM														"18/Mar/16 2:48 PM;pma;The following 4 links describe the changes:
+
+* 2495: https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-9?cs=2495
+
+(changed item names)
+
+* #2494: https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-9?cs=2494
+
+(refractored, deleted ""COLORING_BY"": ""Coloring by {{attributeName}}"" while it was overwritten by ""COLORING_BY"": ""Coloring by"")
+
+* #2483: https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-9?cs=2483&_redir=login"	24/Mar/16 5:29 PM;pma;changed name of "Enum Line Type" to "Enum Property" in Tool Area	"25/Apr/16 6:02 PM;pzi;Comments of first review on 05.04.2016 (by [~msr]):
+
+
+
+Naming of ToolareaEntry:
+
+* Please call it in German ""Kanten Linientyp nach""
+
+
+
+* If Value is not assigned (undefined), this ""category undefined"" is not shown in the legend.
+
+
+
+ifdConfiguration - getType: The general description of the method is missing in JSDoc
+
+ifdConfiguration - getType can be deleted - is never called
+
+
+
+ifdToolAreaViewModelBuilder: 
+
+* Does ""computeStyleForToolAreaItem"" have to be public? Or is private enough?
+
+* computeStyleForToolAreaItem is defined within private function ""getNodeColoring""
+
+* computeStyleForToolAreaItem: For the parameter ""toolAreaPart"" there is just selectedIndex used. Please handover only this
+
+* computeStyleForToolAreaItem: JSDoc: Type of first parameter is missing
+
+* getLineType: return-Type is wrong: selectedLevel1Index, selectedIndex is missing
+
+* Comment 359 is wrong
+
+* getAllAttributesTypeEnum: JSDoc: public and function is missing
+
+* getAllAttributesTypeEnum: JSDoc: the type of ""type"" is missing
+
+* getDepth2ItemsForEnum: JSDoc: private and method is missing
+
+* getDepth2ItemsForEnum: JSDoc: return-Type: onClick-field is missing, Object is too generic - please specify
+
+* lineTypeEntryClick: JSDoc: Object is too generic
+
+* updateSelectHighlighting: Does this have to be public or is private enough?
+
+* updateSelectHighlighting: JSDoc: Object is too generic - please specify e.g. with typedef of JSDoc
+
+
+
+
+
+ifdToolAreaViewModelBuilder-spec:
+
+* line 477: ifdToolAreaViewModelBuilder constructed with 5 instead of 4 arguments
+
+"																																																				

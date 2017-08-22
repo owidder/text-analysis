@@ -1,0 +1,21 @@
+Import does not read attributes with square brackets in their name	"_Reproduce:_
+
+# Create new attribute with square brackets in its name, for example ""test [test]""
+
+# Assign the attribute to a building block type, for example Architectural domain
+
+# Export Excel data
+
+# In the Excel file, enter some valid values in the column of the new attribute and save
+
+# Import Excel file
+
+
+
+_Expected:_ Attribute values set for the according building blocks
+
+_Actual:_ Attribute values were ignored
+
+
+
+_Reason:_ In {{XlsStructuredTypeMapper#findFeatureIndices(Sheet)}}, square brackets are not handled correctly. It is assumed, that there is exactly one pair of square brackets in a Excel column feature header, for the cardinality meta information."		Bug	iteraplan PO	11/Mar/16 10:54 AM	05/Apr/16 10:32 AM																																																																				

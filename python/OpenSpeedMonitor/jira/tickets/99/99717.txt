@@ -1,0 +1,53 @@
+Migration: Implement Entity factories	"Implement factories for history entities
+
+*CURRENT STATE* 
+
+There are EntityFactories to convert old history changeset (HistoryBBChangeset) to Set of StandaloneBuildingBlockHistoryEntities:
+
+* *GeneralEntityFactory* migrate common changes of buildingblock types (name, description...)
+
+* *HierarchicalEntityFactory* (extends GeneralEntityFactory)
+
+* *IEEntityFactory* - factory for old history entries for IE. Take as a blue print.
+
+
+
+*TODO*
+
+Implement Factories for:
+
+- [~sfe]: ARCHITECTURALDOMAIN  - extends HierarchicalEntityFactory (/)
+
+- [~mse]: BUSINESSDOMAIN  - extends HierarchicalEntityFactory (/)
+
+- [~mse]: BUSINESSFUNCTION  - extends HierarchicalEntityFactory (/)
+
+- [~mse]: BUSINESSOBJECT  - extends HierarchicalEntityFactory (/)
+
+- [~sfe]: BUSINESSPROCESS - extends HierarchicalEntityFactory (/)
+
+- [~mse]: BUSINESSUNIT  - extends HierarchicalEntityFactory (/)
+
+- [~ach] INFORMATIONSYSTEMDOMAIN  - extends HierarchicalEntityFactory (/)
+
+- [~sfe]: INFORMATIONSYSTEMRELEASE - extends GeneralEntityFactory (/)
+
+- [~ach] INFRASTRUCTUREELEMENT - extends HierarchicalEntityFactory (/)
+
+- [~sfe]: INFORMATIONSYSTEMINTERFACE - extends GeneralEntityFactory (/)
+
+- [~ach] PRODUCT - extends HierarchicalEntityFactory (/)
+
+- [~ach] PROJECT - extends HierarchicalEntityFactory (/)
+
+- [~sfe]: TECHNICALCOMPONENTRELEASE - extends GeneralEntityFactory (/)
+
+- [~sfe]: ITSERVICE - extends HierarchicalEntityFactory (/)
+
+
+
+implement migration for 
+
+- simple relations (see parent-children in HierarchicalEntityFactory as example)
+
+- associative relations"		Task	iteraplan Thunderduck	19/Oct/16 11:22 AM	24/Oct/16 11:20 AM																																																																				

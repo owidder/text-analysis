@@ -1,0 +1,5 @@
+Kartierung-Skalierungsfähigkeit (-Grenzen) sicherstellen	"Der aktuelle Speicherverbrauch des Kartierungsdienstes ist bereits bei einfachen Bildern 8GB und unverhältnismäßig. Dies muss refactored werden!
+
+
+
+Zielgröße: Max. 500MB pro Kartierungslauf"	90744	Sub-task	EAM-Visualisierung	22/Jul/16 2:45 PM																																																																					

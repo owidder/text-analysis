@@ -1,0 +1,50 @@
+Audit logging: download + format	"Hallo,
+
+
+
+zwei Fragen zum Audit Logging:
+
+1) Nachdem es erfolgreich aktiviert wurde (audit-log-datei wird geschrieben) und die Berechtigungen vergeben wurden: wo findet man die erwähnte audit-download-möglichkeit in der webapp? Im User manual ist dazu nichts zu finden, in den Menüs habe ich den Punkt ebensowenig gefunden.
+
+
+
+2) Bei log-level DEBUG wird viel geschrieben, aber es ist nicht gerade übersichtlich. Gibt es eine Möglichkeit, inhaltlich nur das Delta zu loggen? Also inhaltlich in etwa wie für eine Änderung in der History.
+
+
+
+Wir evaluieren, ob wir das Audit logging verwenden können um basierend darauf Qualitätssicherung für Änderungen durch Tochtergesellschaften durchzuführen. 
+
+
+
+Optimal wäre: 
+
+- Abfrage a'la Which Building Blocks of type xy (z.B. All Building Block Types) have been updated or changed in the last n days? (aus Consistency Checks)
+
+- Zusätzliche Selektion, z.B. by user(s) x, y, ...
+
+
+
+und Anzeige der Änderungen wie in der ""History"" pro Bebauungselement und Änderung.
+
+
+
+lg
+
+Stefan Neubauer"		Technical question	iteraplan Support	14/Mar/16 11:24 PM	18/Apr/16 2:43 PM														"17/Mar/16 11:18 AM;tam;Hallo Herr Neubauer,
+
+beim Audit Logging handelt es sich um ein Feature, das wir nicht weiterentwickeln.
+
+Ich werde klären, ob die Dokumentation an dieser Stelle veraltet ist oder es sich um einen Bug handelt. Soweit ich mehr weiß, melde ich mich bei Ihnen.
+
+Zu Ihrer zweiten Frage. Es gibt keine Möglichkeit die Log-Ausgaben des Audit Loggings anzupassen.
+
+
+"	"23/Mar/16 11:39 AM;tam;Hallo Herr Neubauer,
+
+falls Audit Logging für Sie noch in Frage kommt: Sie können die Audit-Log-Datei über GUI über folgenden Link herunterladen:
+[iteraplan-adresse]/miscellaneous/init.do
+
+Bitte beachten Sie, dass der Nutzer, mit dem Sie sich einloggen, das entsprechende Recht ""Herunterladen von Audit Logfiles"" haben muss.
+
+Mit freundlichen Grüßen
+Timur Ametov"																																																					

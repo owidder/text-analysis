@@ -1,0 +1,13 @@
+Change Titles for actions in the Context menu	"Summary: Several actions have wrong titles
+
+Steps to reproduce:
+
+1. Open Context menu for outer element
+Actual: Moving actions has ""Move Domain"" title
+            Highlighting actions hasn't any title
+Expected: Moving actions has ""Moving options"" title
+                 Highlighting actions has "" Highlighting options"" title
+
+2. Open context menu for inner elements
+Actual: Highlighting actions hasn't any title
+Expected:  Highlighting actions has "" Highlighting options"" title"		Bug	iteraplan PO	14/Jan/15 2:34 PM	29/Jan/15 5:20 PM														29/Jan/15 5:20 PM;dasm;Verified (revision: 575)																																																						

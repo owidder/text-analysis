@@ -1,0 +1,7 @@
+Ausgeblendete Jobs im Job-Liste filter bleiben ausgewählt	"Beispiel:
+
+Man wählt Jobs aus und deaktiviert diese. Im Standard-Filter sind diese dann nicht mehr sichtbar.
+
+Dennoch bleiben sie ausgewählt, sodass Folge-Operationen auch die unsichtbaren Jobs betreffen.
+
+Der Job-Filter sollte also Jobs die ausgeblendet werden auch abwählen."		Bug	OpenSpeedMonitor	26/Jan/17 9:47 AM	13/Feb/17 12:35 PM																																																																				

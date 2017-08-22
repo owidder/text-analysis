@@ -1,0 +1,41 @@
+Landscape - "Not Found" error is shown when setting the "Content Filter" - "Hierarchy Level Filter"	"h4. Problem Description:
+
+
+
+Landscape - ""Not Found"" error is shown when setting the ""Content Filter"" - ""Hierarchy Level Filter""
+
+h4. Reproduction Steps:
+
+ * Open application and navigate to Data>Landscape Diagram
+
+ * Set ""Level 1"" for the ""Content Filter"" - ""Hierarchy Level Filter""
+
+
+
+h4. Observed Results:
+
+
+
+Hierarchy Level Filter is set but ""Not Found"" error messages are shown in console.
+
+
+
+ 
+
+h4. Expected Results:
+
+
+
+Hierarchy Level Filter is set without any errors.
+
+
+
+ 
+
+h4. Note:
+
+ * See attached screenshot
+
+ * Used dev and #330 in FF
+
+ * The same error occurs for Edit Filter"		Bug	iteraplan PO	31/May/17 4:12 PM	05/Jun/17 6:59 PM														05/Jun/17 6:59 PM;fka;Does not appear in current nightly build																																																						

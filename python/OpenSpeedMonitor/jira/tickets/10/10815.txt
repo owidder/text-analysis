@@ -1,0 +1,3 @@
+Überwachungsskript für ISM	"Derzeit merken wir den Ausfall einer ISM-Seite nur durch Meldung des Kunden - dies ist unschön.
+
+Da bei einem Fehler der HTTP-Status 500 gesendet wird, sollten wir ein Skript einrichten, dass alle 15 Minuten alle öffentlich zugänglichen Seiten ""leer"" und die Rest-API für ein Beispiel aufruft und überprüft, ob der HTTP-Status 200 (OK) ist. Bei Abweichungen sollte dieses Skript eine Mail an unseren internen Otto-Testcenter-Verteiler senden."		Improvement	OpenSpeedMonitor	06/Dec/13 2:15 PM	23/Oct/15 11:25 AM														23/Oct/15 11:25 AM;nku;Ist mit Graphite/Rearview bereits umgesetzt.																																																						

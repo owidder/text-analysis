@@ -1,0 +1,23 @@
+Building Block List Edit (Testlink) - {Browser: Chrome}	"Testlink: List View / Edit
+
+*no Mass Update*"	124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:10 PM	19/Jun/17 4:00 PM														"15/Jun/17 10:02 AM;naba;Test cases: Business Mappings ip-57
+
+ Interfaces ip-58
+
+ ip-47,48,49,50,52,53,55,111
+
+ For smoke test please use
+
+ [https://doc.iteraplan.de/display/iteraplan60/List+view]
+
+ and
+
+ [https://doc.iteraplan.de/display/iteraplan60/List+Edit]
+
+
+
+Please be creative and progressive.
+
+
+
+*Note*: work with documentation is still in progress."																																																						

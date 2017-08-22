@@ -1,0 +1,4 @@
+Custom Dashboard: SQL Exception when creating the first dashboard	"I migrated a Database from 3.1 to 3.2 a tested the custom Dashboard.
+The first time you create a dashboard, you get an SQL Exception.
+The problem is that the migration scripts don’t initialize the hibernate_sequence table for the new dashboard tables.
+"		Bug	iteraplan PO	23/Oct/13 11:19 AM	24/Oct/13 1:30 PM					dashboard	migration								24/Oct/13 1:30 PM;lba;(/) Tested the new migration script with MySQL and Oracle, it works!	24/Oct/13 2:48 PM;sry;ok, thx																																																					

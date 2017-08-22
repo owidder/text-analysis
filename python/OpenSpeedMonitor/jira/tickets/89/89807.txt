@@ -1,0 +1,16 @@
+Retired Technical Components are included in drop down menues	selecting relationships to Technical components, the dropdown list also included technical components that were retired. This is also true when selecting applications in a relationship		Fault	iteraplan Support	08/Jul/16 10:36 AM	27/Jul/16 7:00 AM														"08/Jul/16 3:18 PM;cst;Dear Mr. Zindl,
+Dear Mr. Robinson, 
+
+thank you for your enquiry. 
+
+The behaviour of displaying the entire ""technical components"" in the dropdown list is intended.
+A concrete attribute like ""retired""  has no influence on the drop down list.
+
+ The following can be done: rename a retired technical components like TC1 to Z_RETIRED_TC1.
+ Afterwards the renamed Z_RETIRED_TC1 is displayed in the dropdown list.
+
+You can also delete the ""retired"" objects to clear the list of technical components. 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"																																																						

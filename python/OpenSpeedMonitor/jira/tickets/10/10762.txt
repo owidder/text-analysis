@@ -1,0 +1,1 @@
+Graphite: Tagesmittelwerte einer Job-Gruppe / eines Systems aus Rohdaten	Sendet (Service aus 1) die UNGEWICHTETEN Tagesmittelwerte aus Rohdaten an Graphite. Die Logik wird aus dem  Reports-Dashboard herausgelöst und dann gemeinsam gentutzt. (Cron-Job)		Task	OpenSpeedMonitor	06/Nov/13 1:03 PM	18/Jan/17 3:01 PM																																																																				

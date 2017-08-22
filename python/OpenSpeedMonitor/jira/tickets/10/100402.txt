@@ -1,0 +1,1 @@
+Gemeinsamer Filter für Job Liste	Für ein einfacheres User-Interface wäre es ggf. besser nur einen Filter für die Job Liste anzubieten, welcher alle Spalten durchsucht (wie in CRUD Views zB)		Task	OpenSpeedMonitor	25/Oct/16 9:06 AM	16/Nov/16 5:09 PM														16/Nov/16 5:09 PM;sbr;Duplicate of [IT-1372]																																																						

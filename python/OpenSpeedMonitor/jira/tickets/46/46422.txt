@@ -1,0 +1,3 @@
+No elastic model error after server start & login	"Currently the elastic model is created after server start and user login. During the creation time access to iteraplan components using the elastic model leads to an error. Therefore tools / scripts using the export/import via API this behavior must be handeled. To make integration easier import/export access during elastic model creation should not lead to an error in future.
+
+"		Improvement	iteraplan PO	20/Jan/14 1:29 PM	19/Jan/16 11:17 AM					elasticeam	export	import																																																													

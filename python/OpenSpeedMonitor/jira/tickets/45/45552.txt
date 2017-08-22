@@ -1,0 +1,11 @@
+Excel-Import: check for duplicate names not always working for Information Systems and Technical Components	"Name and version properties of technical component releases and information system releases are merged to one release name in our elastic metamodel.
+Examples:
+Information System A # 1.0
+Technical Component B # r1234
+
+""#"" serves as separator and when the release name is written to iteraplan instances, the information is split accordingly and the parts are trimmed (to get rid of trailing and leading whitespace).
+
+The check for duplicate names takes place before this split, though, and this means that an Excel file with two systems named ""Information System A # 1.0"" and ""Information System A#1.0"" will create, after the trim, two releases of ""Information System A"" both with the version ""1.0"". This shouldn't happen.
+
+Possible solution:
+Intercept the setting of release names in the Excel Importer, when the model to import is created, and ""normalize"" the name to the standard format of ""name # version"" (with one space both before and after the ""#""), so the names of the model to import fit the standard format of the names in the model exported from the iteraplan instances."		Bug	iteraplan PO	13/Jun/12 12:59 PM	17/Jul/12 5:23 PM					excel	import								13/Jun/12 12:59 PM;sfe;A workaround to avoid problems with excel imports is to make sure releasenames always fit the standard format, meaning "name # version" for releases with version number and "name" for those without.	19/Jun/12 2:13 PM;sfe;There might be a similar problem because of case-sensitivity of names, which would affect all building block types. This could be fixed, for example, by making the check for duplicate names case insensitive.	05/Jul/12 10:04 PM;kvo;This should be solved within elasticModel and releasable concept	17/Jul/12 5:23 PM;sry;Described problem is now prevented. Log messages could be improved, but that seems secondary.	17/Jul/12 5:25 PM;sry;Note that I could only test as a supervisor user, because of ITERAPLAN-834 preventing restricted user to import.																																																		

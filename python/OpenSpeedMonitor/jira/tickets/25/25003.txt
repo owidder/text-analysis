@@ -1,0 +1,5 @@
+Erstellung/Anpassung eines Webcrawlers zur Erzeugung von URL-Listen	"Der Webcrawler soll in der Lage sein, eine Webseite vollständig zu erfassen und eine Liste einzigartiger Seiten als Resultat auszugeben. Einzigartige Seiten sollen dabei Seiten sein, die sich im Aufbau deutlich voneinander unterscheiden.
+
+
+
+Als Crawler soll Crawljax eingesetzt werden."		Epic	secureCodeBox	12/Nov/14 10:38 AM																																																																					

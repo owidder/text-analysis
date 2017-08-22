@@ -1,0 +1,7 @@
+UI bug with settings line for filtering in the legend	"Steps to reproduce:
+1. Go to NCD
+2. Use ISD as outer type and IS as inner type
+3. Use any filtering by date attribute for inner/outer type
+4. Select range
+Actual: UI bug with settings line in the legend"	47646	Sub-task	iteraplan PO	23/Apr/15 4:06 PM	05/May/15 2:07 PM													"Workspace: Windows 8.1
+revision: 1004"	28/Apr/15 5:05 PM;dasm;Verified (rev 1061)																																																						

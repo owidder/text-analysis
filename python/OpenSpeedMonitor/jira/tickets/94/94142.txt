@@ -1,0 +1,11 @@
+Filtering for Specialised and Superordinate broken	"The filtering in the new client is defunct for two special cases:
+
+Filtering according to relations, then select Specialised or Superordinate. 
+
+
+
+Errors are shown in the console, the filtering does not take effect. This happens independently of the chosen base type of the filter.
+
+
+
+The bug is probably caused by the fact, that persistentName and not persistentTypeName is used."		Bug	iteraplan Quickfox	25/Aug/16 5:09 PM	02/Sep/16 2:41 PM																																																																				

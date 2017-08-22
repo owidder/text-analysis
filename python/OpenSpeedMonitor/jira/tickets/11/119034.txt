@@ -1,0 +1,1 @@
+Hide admin tab if no tiles are in it	If the any tab of the home screen has no tiles in it, please fully hide it.		Improvement	iteraplan Speedbird	19/Apr/17 1:36 PM	04/May/17 1:11 PM																																																																				

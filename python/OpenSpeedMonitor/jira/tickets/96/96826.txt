@@ -1,0 +1,5 @@
+Update installation process.	"During installation new demo instance demo user should get two mails:
+
+One that request to prepare demo is started and second when installation process finished with credential to demo.
+
+"	93358	Sub-task	iteraplan Speedbird	21/Sep/16 12:00 PM	12/Oct/16 1:29 PM														26/Sep/16 5:16 PM;sfe;I receive the second email almost immediately after the first one, but the application is only deployed afterwards. It seems the email is sent as soon as the installer is finished, but then tomcat still needs time to deploy the application.																																																						

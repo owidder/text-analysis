@@ -1,0 +1,25 @@
+Relation filter deserialisation causes empty filter form	"Reproducer:
+
+
+
+# Go to LSD
+
+# Add content filter
+
+# Select relationship and click AND to add a relationship filter
+
+# Close dialog
+
+# Copy url and paste to new tab
+
+# Open filter dialog again
+
+
+
+Result: empty relationship filter section (see screenshot)
+
+
+
+Expected: empty filter row is shown to be able to configure filter
+
+"		Bug	iteraplan PO	20/Apr/16 3:02 PM	21/Apr/16 2:10 PM																																																																				

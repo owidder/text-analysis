@@ -1,0 +1,4 @@
+iteraQL example does not work	"BusinessProcess[@name.contains(""Mgmt"")].unfold(/children);
+-> ""Can not retrieve one from none or one from many.""
+
+See attached error report."		Bug	iteraplan PO	04/Mar/14 4:55 PM	07/Mar/14 9:30 AM																																																																				

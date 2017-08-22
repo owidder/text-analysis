@@ -1,0 +1,19 @@
+Creating new Attribute without Group throws Error	"Using: iteraplan 6.0.0 corporate installer, mysql, initial data
+
+
+
+Recreate:
+
+ # Administration/ Attributes/New attribute
+
+ # Set Attribute name and BBT
+
+ # Save
+
+ # Error: ""The chosen entity was not found. Another user may have deleted it in the meantime or it may be not visible due to a filter. Please select another building block."" in API call and ""*The modification could not be saved.*  Unknown error. See logs for further information."" displayed
+
+ # Set Group to ""[Default Attribute Group]""
+
+ # Save
+
+ # Success"		Bug	iteraplan Thunderduck	23/Jun/17 8:21 AM	03/Jul/17 1:01 PM					attribute									03/Jul/17 1:02 PM;mash;Was fixed by Dima in some other ticket																																																						

@@ -1,0 +1,123 @@
+Datenbankmigration Oracle nach MSSQL	"Quelle: 
+
+iteraplan 3.2 mit Oracle 11.2.0.2.0
+
+
+
+Ziel: 
+
+iteraplan 5.3 mit MS SQL Server 2014"		Technical question	iteraplan Support	22/Sep/16 12:32 PM	04/Oct/16 8:19 AM														"22/Sep/16 12:32 PM;dne;
+
+[^dump.zip] _(475 kB)_"	"26/Sep/16 9:54 AM;cst;Datenbank - Dump konnte eingespielt werden, mit dem Hinweis das er es nicht gut findet,
+
+wenn man Dumps als ""SYSDBA"" erstellt. 
+
+
+
+""Do not invoke Export as SYSDBA"" :-)
+
+
+
+Prüfe jetzt die Daten, weißt du zufällig, in welchem Bereich die meisten Daten angelegt wurden?
+
+
+
+!3.2.PNG|thumbnail!
+
+
+
+Grüße,
+
+
+
+Christoph "	27/Sep/16 9:36 AM;dne;Auch wenn die Antwort nun wohl etwas zu spät ist, aber bei Informationssystemen wirst du immer fündig. Die Frage welches Budget wir dafür hernehmen klärt sich bei der Swiss Life morgen. Bis Monatsende hast du dann auch ein passendes Paket.	27/Sep/16 1:13 PM;dne;Hi Christoph, wie läuft's bei Dir? Schon mit ersten Problemen zu kämpfen oder noch alles gut?	"27/Sep/16 1:35 PM;cst;Wird sich im laufe des Nachmittags zeigen.
+
+Grüße,
+
+Christoph "	27/Sep/16 4:21 PM;dne;No news are good news?	"27/Sep/16 4:37 PM;cst;Bad News - kann es sein das die von einer älteren Version kommen? 
+
+Hier scheinen Datenbank Updatesvor 3.2 ausgelassen worden zu sein und die fliegen mir jetzt um die Ohren.
+
+
+
+Wenn ich den Fehler finde, sind die Daten in 10 Minuten fertig. 
+
+
+
+Bin dran und habe schon einen Verdacht. "	27/Sep/16 4:47 PM;dne;Das kann durchaus sein. Habe die Swiss Life in der Vergangenheit allerdings nicht betreut, also kA ob sie bei den früheren Migrationen gepfuscht haben...	"28/Sep/16 9:10 AM;cst;Daniel mir wäre es lieber - wenn ich die Fehlerursache herausfinde und wir dann mit einer erneuten Datensicherung den Fall angehen. 
+
+Grüße,
+
+Christoph 
+"	28/Sep/16 9:56 AM;dne;Was meinst du mit einer erneuten Datensicherung? Den Dump, der am Ticket hängt ist ja unverändert seit Ende letzter Woche.	"28/Sep/16 2:12 PM;cst;Hallo Daniel - läuft!
+Es waren mehrere Punkte die einfach den Datenbanken geschuldet sind:
+
+History kann nicht übernommen werden, aber diese ist leer.
+
+Sonst schaut es sehr gut aus, teste das noch ausführlich und gebe nochmals Rückmeldung.
+
+Yeah!
+
+
+
+"	"28/Sep/16 2:58 PM;dne;genial! Hervorragend :) Musstest du nun tatsächlich den Weg über Excel gehen? Oder hast du mit Stephan gemeinsam noch eine Lösung gefunden die Daten sauber zu migrieren?
+
+Anyway, teste erst einmal zu Ende :)"	"28/Sep/16 3:09 PM;cst;Also es liegt an den Tools + generelle Strukturelle Unterschiede zwischen Oracle und Microsoft SQL 
+
+
+
+z.B. HIBERNATE_SEQUENCES wird im Oracle groß geschrieben, wie die Spaltennamen.
+
+In Microsoft SQL sind diese generell klein geschrieben und verursacht den Fehler:
+
+
+
+""Das Schema ist nicht im Wörterbuch vorhanden"" 
+
+
+
+Und das herauszufinden hat etwas gedauert, da die Fehlermeldung auch im Internet so nicht beschrieben wird. 
+
+Waren noch andere Punkte.
+
+
+
+Aber meine Tools sind jetzt konfiguriert, um die Datenbank jetzt Zeitnah zu migrieren.
+
+
+
+Schicke mir einfach einen Termin, dann leere ich die Datenbanken und warte auf den aktuellen Dump. "	"28/Sep/16 4:44 PM;dne;Haha, ich bin so froh das nicht selbst versucht zu haben :D
+
+Du kannst den Dump vom Ticket nehmen, in der Zwischenzeit hat sich nichts verändert."	"29/Sep/16 8:25 AM;cst;Okay, hier der Dump. 
+
+Bitte beachte, das ich beim User ""lohrerw"" das Passwort ändern musste.
+
+Hier sollte im iturm ein neues gesetzt werden. 
+
+
+
+Sonst musste ich an den Daten nix ändern. 
+
+
+
+Sollte es noch Problem, oder Fragen geben einfach melden.
+
+
+
+Grüße,
+
+
+
+Christoph "	"29/Sep/16 11:10 AM;cst;So der aktuelle Dump
+
+[^SL53MSQL.sql]
+
+und dieser kann wie folgt eingespielt werden.
+
+# Microsoft SQL Server Managment Studio öffnen 
+# Die Datei mit Drag and Drop in die Oberfläche ziehen (oder Datei - Öffnen und danach den Dump auswählen)
+# Anschließend USE [migration] so anpassen das hier dann die Datenbank steht wo der Dump eingespielt werden soll z.B. USE [ITERAPLAN]
+# Skript ausführen 
+
+"	"30/Sep/16 9:47 AM;dne;Yes! Done! :) Gruppen sind angepasst, Dump ist erfolgreich eingespielt, Kunde ist glücklich.
+Noch einmal an herzliches Dankeschön an dich Christoph!"																																						

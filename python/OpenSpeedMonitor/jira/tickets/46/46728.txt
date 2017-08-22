@@ -1,0 +1,11 @@
+Fresh user interface base 	"The system must have a fresh and modern user interface.
+As a base for concrete use cases, the client needs a modern screen layout, modern colors, navigation (menu bar and buttons), and views for the home screen, lists of elements, views of elements.
+
+The look and feel of the UI must be consistent.
+It must be possible to show a complete path from the start (login, home) to the use cases. The navigation must implement this path. 
+Most other features and their screens can be mocked.
+The navigation should implement a few other paths to give the impression of a wider implementation.
+
+The UI must use Twitter Bootstrap for Layout and CSS.
+All modifications (colors, sizes, layout, ...) must be done by a Twitter Bootstrap theme.
+"		Epic	iteraplan PO	09/Jul/14 2:34 PM	19/Jan/16 10:28 AM																																																																				

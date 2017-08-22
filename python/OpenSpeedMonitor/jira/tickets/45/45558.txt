@@ -1,0 +1,7 @@
+Excel Import is only possible with supervisor user	Currently the attempt to execute an Excel Import with a non-supervisor user, even if this user's roles have all available permissions, ends in a error page caused by permission problems.		Bug	iteraplan PO	10/Jul/12 8:46 AM	17/Jul/12 4:59 PM					excel	import	permissions							"17/Jul/12 2:00 PM;sry;Are the changes to ExcelImporter only meant to be temporary (until old persistence disappears), or permanent? I'm not sure whether it has any security implications.
+
+And, somewhat unrelated: I'd like to see an explanatory comment on the regex in TypeExpressionReader.java, at least an example string that it matches and what the matching groups mean. 
+
+Please merge the changes on that file into the release branch too, please."	"17/Jul/12 4:59 PM;sry;Confirmed that changes have no security implications.
+
+Logging improvements have been merged, improvement comments in FeatureExpressionReader and TypeExpressionReader were too difficult to merge meaningfully, because of other changes"																																																					

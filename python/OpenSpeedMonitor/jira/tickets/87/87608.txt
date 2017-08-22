@@ -1,0 +1,21 @@
+REST-calls ignore time of date-time-attributes	"*Summary:*
+
+REST-calls ignore time of date-time-attributes, e.g.
+
+
+
+{
+
+  ""query"": ""InformationSystem[@lastModificationTime\u003c\u003d\""Mon Jun 06 00:00:00 CEST 2016\""]"",
+
+  ""result"": []
+
+}
+
+
+
+iteraQl does not ignore it, which is the desired behaviour.
+
+
+
+Please fix this - only for Modification Time. All other date attributes and the handling of them stay as they are."		Bug	iteraplan Thunderduck	17/Jun/16 9:11 AM	14/Jul/16 1:52 PM					rest									14/Jul/16 1:52 PM;ach;reviewed changes from [~sfe]																																																						

@@ -1,0 +1,9 @@
+Provide possibility to set treeview as default view for Building Blocks	"Any building block except _Business Mapping_, _Information System_, _Interfaces_ and _Technical Component_ can be displayed as tree view in the Building Block's overview page. The default view is List View. 
+
+Scope of this ticket is to provide a system-wide possibility to enable tree view as default view for all building blocks. 
+
+*Solution:* The easiest configurable solution would be a property value, which toggles the treeview and the listview as default view. This property can be adjusted easily for customer's customization. "		New Feature	iteraplan PO	04/Aug/14 2:59 PM	18/Aug/14 3:16 PM														"18/Aug/14 9:16 AM;dop;Review:
+
+* Deactivate the default tree view, because it should only be enabled if it is required by the customer.
+* Rename the tree view flag, so that the name indicates what this flag does without reading the comment (besides that, the key visualization does not fit in this context). An example would be: *buildingblock.defaultview.treeview* or *buildingblock.defaultview=[list|tree]*"	"18/Aug/14 10:55 AM;fam;Changed to buildingblock.defaultview with list/tree as String.
+Default is now list."	18/Aug/14 3:09 PM;dop;The commit 23431 from Ticket ITERAPLAN-2652 contains files for this ticket. 	18/Aug/14 3:11 PM;dop;And the commit 23433 also from ITERAPLAN-2652 belongs to this ticket. 																																																			

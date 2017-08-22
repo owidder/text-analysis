@@ -1,0 +1,11 @@
+Create data model repository as angular service	"Angular service with:
+
+* getDataModel() method, returns a data model instance
+
+* If the repository does not have a data model instance, it uses current json data to create a data model instance and caches it.
+
+** For this, the repository most likely needs objectsListProcessor
+
+
+
+Use this repository service in each controller which needs the data model, including LSD controller, IFD controller, etc."		Improvement	iteraplan PO	10/Feb/16 5:03 PM	10/Mar/16 4:08 PM																																																																				

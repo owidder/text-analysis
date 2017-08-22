@@ -1,0 +1,22 @@
+ElasticMI and iteraplan UI have a different understanding of uniqueness of enumeration attribute values	"In iteraplan it is possible to create, for a single enumeration attribute, multiple attribute values which are only different in their case.
+Example:
+# Create new enumeration attribute
+# Create attribute values ""TEST"" and ""test""
+# Save
+=> Successful
+
+ElasticMI model load throws an exception in this case, however, as it interprets those values case-insensitive. See where in {{WNominalEnumerationExpressionImpl#createEnumerationLiteral}} {{#findLiteralByPersistentName}} is called.
+
+The behavior here should be consistent, so make iteraplan check for duplicate enumeration value names in a case insensitive manner, too.
+The alternative to adjust elasticMI in this regard most likely should be avoided."		Bug	iteraplan PO	09/May/14 11:34 AM	21/May/14 10:34 AM					elasticmi									"09/May/14 1:41 PM;fka;iteraplan should check for enumeration attributes, do not adjust elasticMI.
+
+Please provide a SQL migration script (to be included in the general 3.4 migration script), which
+diagnoses if the problem is existent in the current dataset
+fixes the problem by changing the attribute values (append ""_1"", ""_2"")
+reports to the user that both things have happend
+
+Please update the user documentation."	"14/May/14 5:42 PM;gph;How should existing inconsistencies be handled in the GUI?
+If multiple enum literals with equals=false and equalsIgnoreCase=true exist (like ""high"" and ""High""), and the enum is edited and saved, should there be a warning for these existing literals?
+Or shall only new literals be prevented from adding & saving?"	"15/May/14 10:31 AM;sfe;In my opinion, saving should not be possible if there are conflicting literals, whether they were newly created or already existing.
+The latter case should not happen anyway, if the migration is done properly with the script Fabian mentioned above."	"20/May/14 9:58 AM;gph;Current solution appends ""_"" and position value, because it is much easier to implement.
+This means that the numbers may not be consecutive. It can be ""_2"" and ""_5"" or something like that."																																																			

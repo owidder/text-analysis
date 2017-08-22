@@ -1,0 +1,26 @@
+Tags für MeasuredValue anpassen (notwendig für IT-5)	"Für IT-5 müssen die Erstellung und Verarbeitung der Tags in 
+  de.iteratec.isocsi.MeasuredValueTagService
+  de.iteratec.isr.ResultMeasuredValueTagService (für Result-Dashboard)
+bereits angepasst sein.
+
+Zielformat:
+- Für Hourly (damals AggregatorType JOB): „JobGroup-ID;MeasuredEvent-ID“;Page-ID;Browser-ID;Location-ID""
+- Für Weekly-Page: „JobGroup-ID;Page-ID“
+- Für Shop: „JobGroup-ID“
+"	10414	Sub-task	OpenSpeedMonitor	01/Aug/13 12:21 PM	06/Aug/13 11:49 AM														"05/Aug/13 11:38 AM;jwerschmoeller;Tag-Service anpassen
+Testfälle prüfen"	"05/Aug/13 3:44 PM;mzeimer;Neue Operation hinzugefügt um hourly tags zu erstellen:
+ - de.iteratec.isocsi.MeasuredValueTagService.createHourlyAggregatorTag(JobGroup, MeasuredEvent, Page, Browser, Location)
+
+Neue Operationen hinzugefügt, um hourly tags auszuwerten:
+ - de.iteratec.isocsi.MeasuredValueTagService.findJobGroupOfHourlyAggregatorTag(String) 
+ - de.iteratec.isocsi.MeasuredValueTagService.findPageOfHourlyAggregatorTag(String)
+ - de.iteratec.isocsi.MeasuredValueTagService.findMeasuredEventOfHourlyAggregatorTag(String)
+ - de.iteratec.isocsi.MeasuredValueTagService.findBrowserOfHourlyAggregatorTag(String)
+ - de.iteratec.isocsi.MeasuredValueTagService.findLocationOfHourlyAggregatorTag(String)"	"05/Aug/13 4:24 PM;mzeimer;Neue Operation zum Erstellen eines Patterns zum Auffinden passender hourly measured values:
+ - de.iteratec.isocsi.MeasuredValueTagService.getTagPatternForHourlyMeasuredValues(MvQueryParams)"	06/Aug/13 10:33 AM;mzeimer;Für zukünftige Änderungen: IT-62 beachten!	"06/Aug/13 11:38 AM;mzeimer;Weitere Tags:
+
+de.iteratec.isocsi.MeasuredValueTagService.createWeeklyPageAggregatorTag(JobGroup, Page)
+
+de.iteratec.isocsi.MeasuredValueTagService.createWeeklyShopAggregatorTag(JobGroup)"	"06/Aug/13 11:48 AM;mzeimer;Der Dienst:
+  de.iteratec.isr.ResultMeasuredValueTagService
+arbeitet mit anderen Tags, für dieses Ticket nicht relevant."																																																	

@@ -1,0 +1,13 @@
+Events können nicht ohne JobGroup angelegt werden 	"Es kommt folgende Fehlermeldung:
+
+
+
+{code}
+
+Die Eigenschaft [jobGroups] des Typs [Ereignis] darf nicht null sein
+
+{code}
+
+
+
+Diese sollte nur kommen, wenn das Event _nicht_ global sichtbar ist (Attribut de.iteratec.osm.report.chart.Event#globallyVisible. Kommt aber auch dann."		Bug	OpenSpeedMonitor	08/Feb/17 8:41 AM	08/Feb/17 9:57 AM																																																																				

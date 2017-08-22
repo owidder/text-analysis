@@ -1,0 +1,1 @@
+Weite der Acoordeon Komponente aus dem Template _chart.gsp ist zu groß 	hängt wohl mit bootstrap (v 2.32) Klassen zusammen		Task	OpenSpeedMonitor	06/Nov/14 8:33 AM	18/Jan/17 4:01 PM														15/Apr/15 4:13 PM;rkr;Sieht ok aus - ist das noch akut?																																																						

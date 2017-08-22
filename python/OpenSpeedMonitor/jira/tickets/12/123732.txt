@@ -1,0 +1,65 @@
+Mass update - select all again is impossible	"h4.Problem Description:
+
+
+
+Mass update - select all again is impossible
+
+
+
+ 
+
+
+
+h4.Reproduction Steps:
+
+ * Open application and navigate to ""Information System"" page
+
+ * Press on ""Mass update"" button
+
+- ""Name"" and all Systems should be selected
+
+ * Unselect the ""Name""
+
+- All Systems are unselected
+
+ * Select ""Name""
+
+
+
+ 
+
+
+
+h4.Observed Results:
+
+
+
+ All Systems are still unselected. Only ""Name"" is selected. See attached .gif file.
+
+
+
+ 
+
+
+
+h4.Expected Results:
+
+
+
+ All Systems should be selected.
+
+
+
+ 
+
+
+
+h4.Note:
+
+
+
+ - Unselected works properly.
+
+
+
+ - Used dev and #339 build in FF"		Bug	iteraplan PO	07/Jun/17 11:32 AM	08/Jun/17 11:45 AM																																																																				

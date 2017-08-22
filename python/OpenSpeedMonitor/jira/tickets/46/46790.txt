@@ -1,0 +1,3 @@
+Setup Enviroment. Development Preparation	"- Check if all software installed.
+- Check if all resources are accessible by your credentials
+- Start with AngularJS"		New Feature	iteraplan PO	05/Aug/14 11:39 AM	08/Aug/14 3:10 PM														05/Aug/14 6:37 PM;sepr;to change status for Done	08/Aug/14 3:10 PM;wfr;OK																																																					

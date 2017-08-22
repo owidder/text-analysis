@@ -1,0 +1,17 @@
+Extend Coloring-spec.js in LSD	"please edit the e2e-test tracability excel sheet located in e2etest subfolder after implementing the tests
+
+
+
+
+
+extend the existing test cases and create new ones. There should be at least the following test cases:
+
+- coloring by numeric (from red to green)
+
+- default coloring
+
+- colorpicker at numeric
+
+
+
+"	62908	Sub-task	iteraplan PO	09/Nov/15 9:42 AM	17/Nov/15 8:53 AM					LSD	Test																																																														

@@ -1,0 +1,9 @@
+phantomJS kann nicht mit jQuery custom Events umgehen	"Seit IT-1299 werden viele custom-events per jquery's ""trigger"" Funktion gefeuert. Diese funktionieren in Firefox, Opera, Chrome, auch per Geb, aber nicht mit phantomJS.
+
+
+
+https://github.com/ariya/phantomjs/issues/13966
+
+
+
+Man könnte es mit dem normalen ""dispatchEvent"" probieren."		Bug	OpenSpeedMonitor	14/Dec/16 11:24 AM	19/Jul/17 10:03 AM																																																																				

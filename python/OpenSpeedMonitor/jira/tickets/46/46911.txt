@@ -1,0 +1,10 @@
+Changing attribute types from multivalue to non-multivalue can corrupt the database	"_Reproduce (with sample data):_
+# Log into iteraplan and make sure at least one building block has at least two values for the attribute ""Accountability"" assigned.
+# Now edit the attribute ""Accountability"" in Administration->Attributes and change it from multivalue to single value
+
+_Expected:_ Either the change is rejected due to the current data contradicting the new setting, or the multivalue attribute value assignments are removed.
+
+_Actual:_ Change is performed and the multivalue assignments are still present in the database, for example causing the elasticMI model load to fail, see attached problem report.
+
+_To be done:_
+Clear the exact desired behaviour, then fix it accordingly."		Bug	iteraplan PO	25/Aug/14 9:54 AM	29/Aug/14 1:29 PM					attribute	multivalue								29/Aug/14 10:23 AM;sfe;Desired behavior: When attempting to change an attribute type from multivalue to singlevalue, first check whether there are still multiple assignments present. If not, allow the change, if yes, display an according message and do not allow the change.																																																						

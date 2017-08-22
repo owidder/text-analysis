@@ -1,0 +1,98 @@
+VIG - Fehler im neuem Client nach Update auf iteraplan 5.5	"Hallo Christoph,
+
+
+
+
+
+wie bereits am Mittwoch telefonisch besprochen, gibt es
+
+bei der VIG nach einem Update Probleme.
+
+
+
+Was haben sie gemacht:
+
+Sie haben iteraplan von der Version 3.1 auf die Version 5.5 geupdatet. 
+
+Die Migrationsskripte wurden alle eingespielt. 
+
+Beim Skript von 3.4 auf 5 gab es wohl eine Fehlermeldung. Mein Ansprechpartner
+
+hatte gemeint, dass da was mit „rev“ und historie stand. Sie haben die Historie
+
+aber glaube ich nicht aktiviert.
+
+
+
+Ein Problem konnten wir schon beheben. Ein out of memory Problem ;-)
+
+
+
+ 
+
+
+
+Wie äußert sich das derzeitige Problem:
+
+Im neuem Client werden nach dem Login keine Daten angezeigt.
+
+Bei der Netzwerkanalyse bekomme ich bei „attributes“ ein 500 zurück.
+
+
+
+
+
+
+
+Das Log deutet darauf hin, dass es, wie du auch schon
+
+vermutet hattest, ein „Null“-Value nicht verarbeiten kann.
+
+
+
+ 
+
+
+
+Anbei sende ich dir die Logdateien. Im
+
+eam55vig-stderr.2017-04-12.log findest du zur Uhrzeit 14:45:07.171 den Fehler,
+
+den ich meine.
+
+
+
+Zusätzlich habe ich auch noch den DB Dump angehängt :-)
+
+
+
+ 
+
+
+
+Viele Grüße,
+
+Ingo
+
+
+
+"		Fault	iteraplan Support	14/Apr/17 8:01 AM	19/Apr/17 3:20 PM														"14/Apr/17 8:01 AM;isc;
+
+[^vig-iteraplan55-logs.zip] _(67 kB)_
+
+[^vig_ea_5.5.sql] _(1,41 MB)_"	"18/Apr/17 10:13 AM;cst;Hallo Ingo,
+
+habe den Übeltäter entlarvt. 
+
+In der Tabelle ""av_enum"" gibt es folgende drei Einträge ""A"" / ""B"" und ""C"".
+Hier darf bei ""DEF_COLOR"" keine ""NULL"" stehen, würdest du hier einfach eine Farbe hinterlegen z.B. ""AFCEA8"", oder ""FFFFFF"". 
+
+!Taeter.PNG!
+
+Nach neustarten der ""Instanz"" öffnet sich der interaktive Client wie gewünscht. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+ "																																																					

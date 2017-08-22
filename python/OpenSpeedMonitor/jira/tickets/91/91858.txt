@@ -1,0 +1,3 @@
+Put multiple changes - simpleDiffWriter		91840	Sub-task	iteraplan Thunderduck	28/Jul/16 4:38 PM	30/Aug/16 3:41 PM														"29/Aug/16 1:14 PM;ach;- works with multiple property values.
+
+- to check (after complition of IPTT-95), if mixing of properties and relends works properly"																																																						

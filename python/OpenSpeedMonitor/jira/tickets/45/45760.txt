@@ -1,0 +1,7 @@
+Informationflow diagram content may overlap with QR-Code	"see attached output
+
+to reproduce:
+# select Account Sys and BI for the creation of an informationflow diagram
+# save the query
+# execute the saved query
+=> diagram content overlaps QR-Code"		Bug	iteraplan PO	14/Jun/13 11:07 AM	30/Dec/15 2:53 PM					informationflow																																																															

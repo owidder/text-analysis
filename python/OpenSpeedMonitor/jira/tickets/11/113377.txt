@@ -1,0 +1,5 @@
+Rename tile "Users" and remove link to Classic Client (Client)	"*Summary:*
+
+Rename tile ""Users and Groups"" to ""Users"" and remove link to Classic Client, but link to new route {{#/users}}
+
+"		New Feature	iteraplan Speedbird	27/Feb/17 4:15 PM	06/Mar/17 11:35 AM																																																																				

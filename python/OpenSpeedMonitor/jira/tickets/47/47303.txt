@@ -1,0 +1,36 @@
+New Client: Logging	"*Summary:*
+Implement a detailed logging of relevant activities for the new client.
+
+*As-Is:*
+There exists no logging.
+
+*To-Be:*
+A logging is implemented and can be used for e.g. problem analysis.
+
+*Affected parts of the system:*
+New client:
+* All parts of the system
+
+If you have any questions, please contact WFR or MSR.
+
+*Unsorted Notes*
+* use the angular $log service
+* start _now_ with $log,
+* later: inject the remote log service instead of $log
+
+* cave: angular has only a single switch for debug on/off. All higher levels are written always.
+* use a query parameter in the start URI to switch on debug messages. default is no debug messages.
+* error only on 
+* in parallel, log into a server log
+* create a (micro) service 
+* better: find a ready-made micro service running on tomcat, and a matching angular service
+* logging to the server should be asynchronous
+* logging is not required to be authenticated, the DOS risk is minimal, and we want to see client-side problems with authentication in the log on the server.
+* write half a page of log level guide.
+
+3 Subtasks (to be generated)
+* Enrich Javascript code with $log
+* Create server-side service
+* Add Angular service talking to server
+ 
+"		New Feature	iteraplan PO	20/Jan/15 10:41 AM	09/Jun/15 11:23 AM					logging	newClient																																																														

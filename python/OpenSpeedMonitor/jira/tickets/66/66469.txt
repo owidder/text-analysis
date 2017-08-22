@@ -1,0 +1,1 @@
+Page-edit-view wirft fehler	Lässt sich nicht mehr aufrufen.		Bug	OpenSpeedMonitor	11/Dec/15 6:07 PM	25/Feb/16 7:30 PM														25/Feb/16 7:30 PM;bka;Ist in der aktuellsten Version nicht mehr reproduzierbar. scheinbar bereits gelöst.																																																						

@@ -1,0 +1,51 @@
+Bitte externe Mitarbeiter und Studenten für iteraplan-Kalender freischalten	"Hallo Admins,
+
+
+
+könnt ihr bitte folgende Kollegen für den iteraplan-Sharepoint-Kalender https://iterasp.iteratec.de/Allgemein/Geschaeftsbereich-iteraplan/Lists/Kalender/calendar.aspx (nur den Kalender nicht die anderen iteraplan-Bereiche) freischalten:
+
+
+
+Vielen Dank
+
+
+
+----
+
+
+
+Phuong-Mai.Mai@iteratec.de
+
+
+
+mada - maksym.darmohval@edvantis.com
+
+vadm - vasyl.dmytriv@edvantis.com
+
+madu - maksym.dudik@edvantis.com
+
+ivgu - ivan.gudak@edvantis.com
+
+roia - rostyslav.yanevych@edvantis.com
+
+dmkh - dmytro.khomych@edvantis.com
+
+viol - vitaliy.oleksyn@edvantis.com
+
+mash - maksym.shpak@edvantis.com
+
+ants - anatolii.tsaruk@edvantis.com
+
+"		Task	Infrastruktur	09/Dec/16 10:19 AM	12/Dec/16 2:46 PM	Sharepoint													"12/Dec/16 2:46 PM;kti;Hallo Marcel,
+
+
+
+ich habe die Freischaltung in SharePoint vorgenommen.
+
+Anmeldedaten werden über das PMO weitergeleitet.
+
+
+
+Viele Grüße
+
+Kathrin"																																																						

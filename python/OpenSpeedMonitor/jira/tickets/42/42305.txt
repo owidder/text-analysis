@@ -1,0 +1,27 @@
+Fehler DailReports Quartzjob	"listeners.ExceptionPrinterJobListener Exception occurred in job: Grails Job
+
+org.quartz.JobExecutionException: java.lang.IllegalArgumentException: Unknown name value for enum class de.iteratec.osm.measurement.environment.wptserverproxy.Protocol:  [See nested exception: java.lang.IllegalArgumentException: Unknown name value for enum class de.iteratec.osm.measurement.environment.wptserverproxy.Protocol: ]
+
+	at grails.plugins.quartz.GrailsJobFactory$GrailsJob.execute(GrailsJobFactory.java:111)
+
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+
+Caused by: java.lang.IllegalArgumentException: Unknown name value for enum class de.iteratec.osm.measurement.environment.wptserverproxy.Protocol: 
+
+	at de.iteratec.osm.report.external.GraphiteEventService.fetchGraphiteEvents(GraphiteEventService.groovy:60)
+
+	at de.iteratec.osm.report.external.GraphiteEventCollectorJob.execute(GraphiteEventCollectorJob.groovy:17)
+
+	at grails.plugins.quartz.GrailsJobFactory$GrailsJob.execute(GrailsJobFactory.java:104)
+
+	... 2 more
+
+Caused by: java.lang.IllegalArgumentException: No enum constant de.iteratec.osm.measurement.environment.wptserverproxy.Protocol.
+
+	at java.lang.Enum.valueOf(Enum.java:236)
+
+	... 5 more
+
+"		Bug	OpenSpeedMonitor	01/Jun/15 10:13 AM	18/Jan/17 3:58 PM																																																																				

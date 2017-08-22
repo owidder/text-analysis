@@ -1,0 +1,16 @@
+Incorrect saving of an interface with an inactive information system	"# Go to Administration => Configuration => and uncheck ""Elements with status 'Inactive' are shown"".
+# Open an Interface and then one of its information systems
+# Change the status of the selected informations system to ""inactive""
+# Go back to the interface and edit it
+
+The main issue
+- *Actual:*
+The modified Information System won't be on the list, but the first Information System from the list instead.
+- *Expected:*
+Also if the system of the interface is inactive, this should be displayed.
+
+The consequent issue:
+- *Actual:*
+If you change for examle only the description of the interface, also the information system will be replaced by the first infromation system.
+- *Expected:*
+Changes on the description shouldn't cause changes on information system."		Bug	iteraplan PO	23/Jan/15 2:25 PM	28/Jan/15 2:10 PM																																																																				

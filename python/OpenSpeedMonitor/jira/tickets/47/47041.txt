@@ -1,0 +1,14 @@
+Directive for file download button.	"Create a directive that encapsulates the download of a file.
+
+The directive calls a method to get the content of the file as characters and does all the encoding, creation of anchor element, clicking it, ...
+
+The directive has paramenters:
+* display name fo button/action 
+* method to compute file name
+* method to create file contents
+
+The code for the creation of the file content is not part of the directive.
+
+Research if the file API from HTML 5 helps here. 
+Keep browser issues in mind. Should work with a modern IE, too.l 
+The important part of this ticket is encapsulation, not finding the best library."		New Feature	iteraplan PO	10/Oct/14 10:01 AM	09/Jun/15 5:06 PM														13/Oct/14 10:35 AM;wfr;to be discussed with the team	13/Oct/14 12:01 PM;sepr;Est 4 PD																																																					

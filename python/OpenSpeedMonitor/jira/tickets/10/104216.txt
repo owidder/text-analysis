@@ -1,0 +1,21 @@
+TBD: Full text search for dates show wrong results	"*Problem:*
+
+Hibernate Search stores date fields in GMT time.
+
+In this case date ""01/01/2017 00:00:00"" in Munich time (+1 UTC) is stored as ""20161231230000"".
+
+So, when user searches for ""2017"", he gets empty search results.
+
+
+
+*Solution:*
+
+Implements custom bridge class for searching date fields.
+
+
+
+Implement custom bridge to convert date <==> string that handles timezone differences.
+
+[link Custom Bridges|https://access.redhat.com/documentation/en-US/JBoss_Enterprise_Web_Platform/5/html/Hibernate_Search_Reference_Guide/ch05s02s02.html]"		Bug	iteraplan PO	29/Nov/16 10:52 AM															06/Jan/17 3:00 PM;roia;What if user's and server's time zones are different?	"17/Feb/17 9:36 AM;msr;Open questions to clarify with [~fka]
+
+Search on date and on numeric needed at all?"																																																					

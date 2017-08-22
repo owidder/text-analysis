@@ -1,0 +1,21 @@
+Enum attribute can't be saved after trying to add an already existing attribute value	"To reproduce (using bank data):
+
+1. Open the attribute ""Complexity""
+2. Edit
+3. Try to add and save the new attribute value ""high"" => Error because the value already exists. Everything alright so far
+4. Change the new value to ""high2"" or anything else and try to save.
+
+Result:
+{quote}
+The following errors occurred:
+This element cannot be saved successfully anymore. This may be due to the following reasons:
+
+1. The element has been modified by another user.
+2. Attributes have been modified by another user or in the dialog Attributes.
+3. Explicit permissions have been modified by another user or in the dialog Object-related Permissions.
+4. Associated elements have been deleted by another user or in the corresponding dialog.
+
+To continue, please click Close or Cancel, or clear the current session.
+{quote}
+
+It should be possible to save at this point, since no actual changes by another user were made."		Bug	iteraplan PO	01/Mar/12 10:32 AM	30/Dec/15 2:11 PM					attribute																																																															

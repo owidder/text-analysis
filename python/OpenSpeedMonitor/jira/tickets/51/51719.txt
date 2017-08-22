@@ -1,0 +1,1 @@
+Allgemeines REST-Interface für Spider Komponenten definieren		50434	Sub-task	secureCodeBox	24/Jul/15 12:41 PM																																																																					

@@ -1,0 +1,18 @@
+A virtual InformationFlow has no URL field in JSON output	"A virtual InformationFlow (elastic) results from a InformationSystemInterface (classic) without a Transport (classic), that is inserted to connect the two InformationSystems (elastic, ISR classic) with the ISInterface (elastic).
+
+This virtual element needs a deterministic and fresh ID, so that the Bridge takes the negative ID from the ISI. 
+
+The logic to exclude synthetic objects (nullify, power...) from being referenced by URI tests if the ID is negative.
+They are excluded, because they do not have a stabel ID and thus no stable URI.
+
+This logic suppresses the URI for virtual objects as well.
+
+
+Suggestion: Do not fix for 3.2, re-implement JSON for 3.3.
+
+
+Differential Diagnosis
+
+1) If one builds the URI of a InformationFlow manually with a negative ID, the JSON API returns the JSON description for the element (only without the URI field).
+
+2) All regular, non-virtual InformationFlows work as expected."		Bug	iteraplan PO	29/Nov/13 2:49 PM	01/Jun/15 1:33 PM					elasticeam																																																															

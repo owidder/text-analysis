@@ -1,0 +1,17 @@
+LSD. Wrong legend entries for date range filters	"* Open LSD
+
+* Add new content filter for productive period.
+
+
+
+-if no from-date is entered, user will see 'Productive period from *{color:red}5/1/2005{color}* to ...'-
+
+if no to-date is entered, user will see 'Productive period from 5/1/2005 to *{color:red}NaN/NaN/NaN{color}*'"		Bug	iteraplan PO	26/Apr/16 9:03 AM	26/Apr/16 1:36 PM														26/Apr/16 10:55 AM;msr;Agreed with [~tam] : First "if"-condition is not reproducable, as from-date has initially set the minimum value.	"26/Apr/16 1:36 PM;tam;Some notes: if there are items with no productive period end no default date will be added to 'to'-date field.
+
+
+
+However it seems that 'from'-default-value will be computed different. If there are items with no productive period begin the minimum value will be shown.
+
+
+
+Maybe it makes sense to handle these both cases equally"																																																					

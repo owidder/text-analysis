@@ -1,0 +1,51 @@
+Invalid or missing license	"Hi,
+
+
+
+We have got the licence number for our installation about one month ago and uploaded it in the production environment via the interface.
+
+
+
+We now try to use our test environment after a few months and we get the following message : ""Invalid or missing license"", so we cant' log in.
+
+
+
+Could you please tel us how to fix this ?
+
+
+
+Best regards.
+
+
+
+Claude Lamy
+
+Loto Quebec
+
+
+
+P.S. It's not too late : Happy New Year !
+
+;-)
+
+
+
+
+
+"		Technical question	iteraplan Support	18/Jan/17 4:15 PM	04/Feb/17 9:17 AM														"19/Jan/17 8:05 AM;cst;Hello Lamy, 
+
+same to you, too. 
+
+Here your current license key:
+
+TG90byBRdcOpYmVjADMxLjAzLjIwMTcANThBNTY3MkEyOTFCOTI1NDA1MkM5N0U4QjRFQUEyQzlBNEU2NzU2NzUzMTQ3QURDQTVCNUFBODJDMjQ0NTc3OA==
+
+Use the separate license key upload page of iteraplan. If you try to login to an iteraplan installation lacking a valid license, the page is linkend from the login screen error message. The address is: http://[HOST]/[iteraplanContext]/licensing/update.do 
+
+Greetings,
+
+Christoph Stanlg - iteraplan Support
+
+
+
+"	03/Feb/17 4:55 PM;SupportITERAPLAN@loto-quebec.com;Everything is ok.																																																					

@@ -1,0 +1,1 @@
+Auswahl Graph-Type ausblenden (Beschränkung auf Linie ausreichend)			Task	OpenSpeedMonitor	25/Sep/13 9:57 AM	30/Sep/13 10:34 AM														30/Sep/13 10:38 AM;rhe;Button per css ausgeblendet und die Auswahlmöglichkeit auf einen ChartTypen reduziert.																																																						

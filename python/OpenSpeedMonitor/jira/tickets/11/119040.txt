@@ -1,0 +1,27 @@
+role single view: show blue and magenta checkbox at one (half-half)	"Checkboxes in role single view.
+
+
+
+Now:
+
+ * checkboxes are either magenta or blue depending on checked option
+
+
+
+To be done:
+
+ * showing both colours at once if both options are checked
+
+ * how to show them:
+
+ ** divided half/half vertically
+
+ ** as gradient 
+
+
+
+                   !two colours.png!
+
+
+
+{color:#ff0000}_to be discussed with Fabian_{color}"		Improvement	iteraplan Speedbird	19/Apr/17 1:42 PM	21/May/17 2:57 PM																																																																				

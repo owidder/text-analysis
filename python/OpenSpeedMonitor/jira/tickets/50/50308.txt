@@ -1,0 +1,51 @@
+Filter Information Systems by enumeration attributes	"*Summary*
+
+Filter Information Systems by enumeration attributes with operator ""is"" with list of possible values.
+
+
+
+*Affected parts*
+
+* (/) Toolarea (done by TAM)
+
+* (/) Legend (read-only)
+
+* (/) URL
+
+* (/) ifdDataService
+
+* (/) ifdConfiguration
+
+
+
+*Approach*
+
+* (/) Filter Information Systems by enumeration attributes directly in the ifdDataService.
+
+* (/) Use ifdConfiguration to notice other components about filtering.
+
+* (/) Please keep in mind, that this solution should work for further filterings by numeric, date and text.
+
+
+
+*UI*
+
+* Set the filter either in the toolarea (same entries).
+
+* Delete the actual set filter via the toolarea (current filter -> dialog -> show current filter in dialog and change or delete it)."		New Feature	iteraplan PO	09/Jul/15 9:50 AM	16/Sep/15 8:31 AM					filter	ui								23/Jul/15 7:58 AM;msr;First commit under ITERAPLAN-3757	"29/Jul/15 1:35 PM;fam;ifdDataService.js is implemented with mock data.
+
+Still open:
+
+
+
+- Unit test for ifdDataService (can be implemented similar to current mock implementation)
+
+- Implement filter in Legend (like LSD)
+
+- Adapt Url
+
+- Handle Toolarea-Events (done by TAM)
+
+- Adjust configuration
+
+- Delete the actual set filter via the toolarea (current filter -> dialog -> show current filter in dialog and change or delete it)."	14/Sep/15 2:08 PM;isc;5 files committed under a wrong ticket number: ITERAPLAN-3257: refactoring Subversion: Committed revision 1457.																																																				

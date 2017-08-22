@@ -1,0 +1,8 @@
+Adjustments building block lists	"* Description edit popout: Remove space between input field and Save-/Discard-Button
+* Date edit:
+** Remove the arrow down on the right of the input field
+* The actions column should show the navigator button and the delete button"		Bug	iteraplan Thunderduck	29/Nov/16 4:54 PM	02/Dec/16 9:24 AM														"01/Dec/16 4:03 PM;mwe;(/) Description edit popout: Removed space between input field and Save-/Discard-Button
+
+(/) Date edit: Remove the arrow down on the right of the input field"	"01/Dec/16 4:44 PM;mwe;According to [~msr] the navigator button should not be visible on the business mapping list.
+
+(/) Fixed the width: the propertyType is not set correctly"																																																					

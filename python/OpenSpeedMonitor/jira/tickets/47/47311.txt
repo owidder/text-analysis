@@ -1,0 +1,25 @@
+Wrong options of highlighting	"Steps to reproduce:
+
+1. Use Technical Components as outer type and Information System as inner type
+2. Use ""Highlight all modified in"" highlighting option
+3. Verify that the all inner elements was highlighted
+4. Open context menu for any inner element
+
+Actual: ""Highlight this item"" options appears
+Expected: Should be ""Remove highlighting"" options
+
+"		Bug	iteraplan PO	21/Jan/15 3:26 PM	07/Apr/15 2:07 PM														"02/Apr/15 10:37 AM;isc;To remove highlightings, which based on a date range, we need an additional array to save these elements, which are in a date range but should not be highlighted.
+Currently, we have two arrays for highlighting:
+# “{{highlightedItems}}”: this array contains all elements, which were selected over the option “Highlight this item”
+# “{{modificationDateRangeHightlight}}”: this array contains the date range in this the elements/items should be highlighted.
+
+To detect these elements, which are in the chosen date range but should not be selected, I have created a third array: {{dateRangeExclusions}}
+
+
+h6. A few words about the other changes:
+* If you change the date range, the array {{ dateRangeExclusions}} should be cleared. You choose a new data, thus re-select all items in this range.
+* You have an elemen/item which you have selected first over “highlight this item” and it is highlighted over a date range and you will remove it, it should removed from both arrays. 
+* Outer elements should not be affected by the changes.
+"	"07/Apr/15 2:07 PM;fam;Checked function and works fine.
+Code is also good.
+Ticket closed."																																																					

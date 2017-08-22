@@ -1,0 +1,5 @@
+Metrik Farben global definieren und den verschiedenen Charts zur Verfügung stellen	"Um im OSM eine einheitliche Farbgestaltung und damit eine einfache Orientierung für den User zu ermöglichen, sollten die Farben der einzelnen Metriken in allen Charts gleich sein.
+
+
+
+Dazu sollte eine globale LESS Datei erstellt werden in der die Farben definiert werden."		Task	OpenSpeedMonitor	10/Mar/17 10:40 AM	20/Apr/17 11:17 AM																																																																				

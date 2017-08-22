@@ -1,0 +1,9 @@
+AFTER-RELEASE: 4.1  Public-Umgebung updaten	"4.1.1 Public Demo Instanz updaten
+
+4.1.2 Personal Demo updaten"		Task	iteraplan PO	19/Oct/16 2:18 PM	07/Nov/16 11:37 AM														"31/Oct/16 1:49 PM;mse;* Der Installer der Personal-Demo wurde auf 5.4 geupdated
+
+* Außderdem wurde der Download-Bereich für die Lite-Version (https://www.iteraplan.de/editionen/download/) geupdated.
+
+** Dieser Schritt war nicht im Release-Guide beschrieben (oder ich habe es nicht gefunden...), deswegen habe ich dort das Kapitel 4.2.3 eingefügt, das die notwendigen Schritte beschreibt:
+
+https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-4.2.3Lite-EditionDownloadupdaten"																																																						

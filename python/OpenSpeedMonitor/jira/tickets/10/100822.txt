@@ -1,0 +1,25 @@
+Zooming in Bar Chart	"*Summary*
+
+Add GoJS zooming for bar Chart diagram (Same as in Portfolio diagram). 
+
+
+
+*Implementation details*
+
+* Initially diagram is scaled to whole window size ({{initialAutoScale}} property is set to {{go.Diagram.Uniform}}), but not bigger then 100%.
+
+* If user starts zooming diagram - zoom value is saved in URL.
+
+
+
+*UI*
+
+Legend: 
+
+* Zoom is always shown in the legend with percents. 
+
+* As in all diagrams, in the last position, before timestamp. 
+
+* Default 100% Zoom is not shown in the legend."		New Feature	iteraplan Speedbird	27/Oct/16 9:54 AM	01/Nov/16 6:47 PM														"01/Nov/16 1:55 PM;ants;Review: https://iteraweb.iteratec.de/fisheye/cru/IP-137
+
+See screenshot and review comments."	01/Nov/16 6:47 PM;ants;Review done.																																																					

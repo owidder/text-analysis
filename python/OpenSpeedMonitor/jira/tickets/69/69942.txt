@@ -1,0 +1,9 @@
+Read properties files in one place only	"Currently, we read iteraplan's properties files at two locations:
+
+* applicationContext.xml
+
+* class IteraplanProperties
+
+
+
+Change this so the class IteraplanProperties also uses spring mechanisms to read the properties files to avoid inconsistencies."		Improvement	iteraplan PO	18/Jan/16 2:55 PM	21/Jan/16 1:57 PM																																																																				

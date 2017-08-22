@@ -1,0 +1,19 @@
+Legend is overlapping diagram	"Summary:
+
+After user changes diagram configuration diagram is resized and is overlapped by previously opened legend.
+
+
+
+Steps to reproduce:
+
+1) Open default Masterplan diagram
+
+2) Open legend (diagram is resized so now legend is not overlapping the diagram)
+
+3) Change Content type to Project
+
+
+
+Actual result: content type is changed, diagram is resized to full width of window, legend is overlapping the diagram
+
+Expected result: content type is changed, diagram width stays, legend still is not overlapping the diagram (same applies to all config changes)"		Bug	iteraplan Speedbird	19/Jun/17 1:30 PM	29/Jun/17 2:57 PM																																																																				

@@ -1,0 +1,5 @@
+Treemap: filtering	"Implement filtering by building blocks.
+
+Filter saved in URL, shown in legend."		New Feature	iteraplan Speedbird	27/Oct/16 10:40 AM	02/Nov/16 4:51 PM					TreeMap									"02/Nov/16 11:33 AM;roia;review: https://iteraweb.iteratec.de/fisheye/cru/IP-142
+
+"	02/Nov/16 4:31 PM;vadm;Updated according to review: revision #4990.																																																					

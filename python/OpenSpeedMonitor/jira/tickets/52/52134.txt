@@ -1,0 +1,13 @@
+Translate IFD	"Include Metamodel-Translation-Service and static text translations.
+
+
+
+Affected parts:
+
+* legend (static headline and dynamic metamodel entries)
+
+* toolarea: static texts and dynamic metamodel entry"		Improvement	iteraplan PO	30/Jul/15 10:33 AM	18/Aug/15 3:05 PM														"18/Aug/15 3:05 PM;ach;*two small fixes while reviewing:*
+
+* width of tool area menu element (german text was too large for it)
+
+* resolve translation key as late as possible (not in _ifdLegendMain_, but in _ifdLegendBuilder_)"																																																						

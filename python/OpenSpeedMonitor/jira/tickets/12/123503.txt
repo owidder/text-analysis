@@ -1,0 +1,5 @@
+Saved Query page no longer working after some time	"In the demo instance on the EAMKon trade fair (trunk from 31.5.2017) - after some time - the saved query page stopped working. Besides the header with the iteraplan logo nothing was shown. The URL was:
+
+
+
+[http://localhost:8080/iteraplan/client/#/savedQueries?loadedSQs=ALL&columns=fieldK%2FsharedP%2FwidthK%2F70P%2FpropertyTypeK%2FsavedQueryIsSharedB%2FfieldK%2FnameP%2FpropertyTypeK%2FstringP%2FsortK%2FascP%2FsortedAtK%2F0P%2FwidthK%2F210B%2FfieldK%2FdescriptionP%2FpropertyTypeK%2FrichtextP%2FwidthK%2F300B%2FfieldK%2FreportTypeTranslatedP%2FpropertyTypeK%2FstringP%2FwidthK%2F210B%2FfieldK%2FbbTypeP%2FpropertyTypeK%2FstringP%2FwidthK%2F210&treeViewMode=list]"		Bug	iteraplan Speedbird	05/Jun/17 5:50 PM	08/Jun/17 11:28 AM																																																																				

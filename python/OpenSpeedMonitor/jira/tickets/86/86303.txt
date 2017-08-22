@@ -1,0 +1,51 @@
+Minify row count for multiple date intervals	"*Summary:*
+
+Minify row count for multiple date intervals
+
+
+
+*As-Is:*
+
+* Every timespan-bar is in a new row
+
+
+
+*To-Be:*
+
+* The timespan-bars are in as less rows as possible, i.e. multiple bars are in one row if they do not overlap
+
+
+
+*Implementation Details:*
+
+* No url interaction
+
+* Algorithm to stack bars for one element-row:
+
+** Sort all bars by begin-date
+
+*** If two bars have the same begin date, take the one first with smaller end date (= narrower)
+
+*** i.e. Sorty by (start-date, end-date, name)
+
+** Start in the first row with the ""first"" bar
+
+** If the next bar fits right of any the previous bars (starting from top) (i.e. begin-date next bar > end-date any previous bar), add it to this row. Otherwise start a new row
+
+
+
+
+
+*UI:*
+
+* No legend
+
+* No toolarea
+
+"		Improvement	iteraplan PO	04/Jun/16 3:55 PM	30/Jun/16 5:19 PM														"28/Jun/16 9:10 PM;msr;!screenshot-1.png!
+
+
+
+Bug: Replacement Interval should be in the first line right after live interval and not in the second line"	"28/Jun/16 9:30 PM;msr;Review complete:
+
+A very good implementation. Please check my review comments: https://iteraweb.iteratec.de/fisheye/cru/IP-38"	29/Jun/16 5:55 PM;roia;[~msr] bug fixed, review comments implemented	30/Jun/16 5:19 PM;msr;Good implementation																																																			

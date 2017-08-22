@@ -1,0 +1,19 @@
+Stabilisierung	"Technische Schulden der App abbauen:
+
+- Liste im Menü (Nebenläufigkeitsproblem)
+
+- Aktualisierung von iteraplan in Echtzeit
+
+- Dataset Radiobutton
+
+- Architektur / Refactoring (sonstiges
+
+
+
+Testen
+
+
+
+Timebox:2PT
+
+"		Task	EAMV15	07/Dec/15 3:06 PM	16/Dec/15 10:18 AM																																																																				

@@ -1,0 +1,55 @@
+execute scripts		80573	Sub-task	iteraplan Quickfox	11/Jul/16 2:35 PM	28/Jul/16 5:09 PM														13/Jul/16 5:12 PM;mwe;Remove the automatic download of default output file. (Coming from IPTQ-6)	"28/Jul/16 11:29 AM;tam;Review omments
+
+
+
+{noformat}
+
+filemanager/entities/item.js
+
+	  Item.prototype.isExecutable = function () {
+
+        return this.model.name.indexOf('.xslt', this.length - '.xslt'.length) !== -1
+
+            || this.model.name.indexOf('.xsl', this.length - '.xsl'.length) !== -1;
+
+    };	
+
+=> That code just checks if .xsl(t) in the name, but it should check if it ends with .xsl(t) 
+
+	=> so test.xslt.txt has menu entry execute
+
+	=> endsWith() maybe helps
+
+{noformat}
+
+
+
+{noformat}
+
+filemanager/services/apihandler.js
+
+	ApiHandler.prototype.execute
+
+		""?path="" will be used several times. Probably it makes sense to create a constant
+
+		self.deferredHandler(data, deferred, code, $translate.instant('error_copying')); => error copying is probably wrong?
+
+
+
+{noformat}
+
+
+
+{noformat}
+
+locale-de.json
+
+locale-en.json
+
+	As yesterday. do these strings come from Michael or Fabian? If not, are they ok for Michael or Fabian?
+
+{noformat}
+
+
+
+"																																																					

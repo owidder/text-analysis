@@ -1,0 +1,21 @@
+Option to show/hide empty bars 	"*Summary:*
+
+Add an option in toolarea to show/hide empty bars (bars with no elements).
+
+
+
+*Implementation details:* 
+
+* Initially this option is active (show empty bars)
+
+* State is saved in URL
+
+* State is not reset after content type change or attribute change
+
+
+
+*UI:*
+
+Toolarea: add new ""Display"" entry (German: ""Anzeige"") with toggle button in it - ""Hide empty bars/Show empty bars"" (German: ""Blende leere Barren aus/Zeige leere Barren"")
+
+Legend: nothing to show"		New Feature	iteraplan Speedbird	27/Oct/16 10:54 AM	31/Oct/16 10:55 AM														31/Oct/16 9:49 AM;dmkh;Review is done, few comments here: https://iteraweb.iteratec.de/fisheye/cru/IP-130																																																						

@@ -1,0 +1,1 @@
+FailedJobs nicht hart auf letzten 150 limiteiren	Derzeit kann man sich nur die Job-Fehlschläge der letzten 150 JobResults angucken. Es wäre cool, wenn man sich auch ältere angucken könnte. Ggf mit DateTime-Picker		Improvement	OpenSpeedMonitor	07/Jul/17 9:18 AM																																																																					

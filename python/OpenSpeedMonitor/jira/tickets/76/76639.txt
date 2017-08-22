@@ -1,0 +1,35 @@
+Enum Coloring	"Add coloring by enum attributes to outer and inner type elements.
+
+* Tool area entry
+
+* Actual coloring in pipeline
+
+* Legend entry
+
+
+
+Refactor and use according code from IFD.
+
+Simple protractor test."	76613	Sub-task	iteraplan PO	10/Mar/16 12:01 PM	15/Apr/16 5:31 PM														"24/Mar/16 4:42 PM;mwe;Current status:
+
+
+
+* Done
+
+** Tool area entry
+
+** Actual coloring in pipeline
+
+** Legend entries
+
+* TODO
+
+** Multiple Coloring (see TODO mwe in ncdItemDecorator.js)
+
+** Refactoring with code from IFD
+
+** Simple protractor test"	"13/Apr/16 2:39 PM;mwe;ncdConfiguration: No easy understandable refactoring found
+
+ncdContentMain: Formatted and removed unused parameters
+
+NcdItem: Removed unused typeDefinitions-parameter"																																																					

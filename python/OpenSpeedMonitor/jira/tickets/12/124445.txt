@@ -1,0 +1,51 @@
+New permission for Customizing	"*Summary*
+
+
+
+New permission for admins to manage Customizing tile
+
+
+
+*Server*
+
+
+
+Extend REST-API: api/administration/permissions
+
+{code:java}
+
+{""customizing"": true OR false}{code}
+
+*Details*
+
+
+
+While having this permission assigned user can:
+
+ * see customizing tile on his screen
+
+ * make changes in all customizing tabs
+
+ * his changes apply to all users from his company / group
+
+
+
+*Client*
+
+ * On initial load of the New Client, check this permission
+
+ * If this permission is false, hide the Customizing tile
+
+ * If the url to the Customizing tile is directly entered, display a no-permission-warning
+
+ * POST and PUT for {color:red}the existing 2{color} customising-REST-APIs are not allowed if the user does not have this permission
+
+ * Disable this permission for the lite-user (mainuser)
+
+
+
+ {color:red}UPDATE:{color} On roles and permissions please call it ""Edit Customization"" / GER: ""Customising bearbeiten"""		New Feature	iteraplan Speedbird	14/Jun/17 4:53 PM	17/Jul/17 6:09 PM														"13/Jul/17 10:26 AM;mash;Please include Revision 27378(back end) to review. Was accidentally done to IPTS-928
+
+
+
+ "	17/Jul/17 6:09 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-777																																																					

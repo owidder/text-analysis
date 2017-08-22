@@ -1,0 +1,5 @@
+Nesting Cluster EE / WinXP / IE8 / mssql	Testing the Nesting Cluster Diagrams for Win XP, IE8 and the Microsoft SQL	46148	Sub-task	iteraplan PO	21/Oct/13 4:15 PM	22/Oct/13 12:02 PM					cluster	diagram	nesting							"21/Oct/13 4:27 PM;jmi;Everything okay, only the last step of TC4 seems wrong (action identical with the step before and the Expected Result expects an NCG from a step where none is created)
+
+Also the last step of TC6 had to be confirmed through Firefox (see ITERAPLAN-2041)"	22/Oct/13 12:02 PM;bra;ok, TC4-21 is fine. it is expected to not change the configuration if one executes a saved query directly.	"22/Oct/13 3:53 PM;psc;The row of the test specification that was discussed, has been checked by Konstantin. Apparently, it was just a duplicated row. Therefore it was removed from the test-specification template.
+
+Thus, the test was successful. Ticket will be closed."																																																				

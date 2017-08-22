@@ -1,0 +1,4 @@
+Use Hierachy in Nesting Cluster Grafic	"Nesting Cluster like demonstrated in attachment (business processes which are part of other processes) should use hierarchical structure: if process is subprocess there should only be one element of it. Also elements in 3rd instance should been showed as sub elements of 2nd instance-processes an so on... 
+Use the hierarchical relations of entities would improve expressiveness, multiple presentment of elements will amount to wrong interpretation of data.
+
+Same Feature is interesting for visualization of informations systems and subsystems... "		Improvement	iteraplan PO	02/Jan/12 9:59 AM	16/Feb/12 10:47 AM					graphical	hierarchy	nesting						https://iteraplan.iteratec.de/iteraplan_nightly_build/	13/Jan/12 3:19 PM;kvo;See also ITERAPLAN-429	16/Feb/12 10:47 AM;kvo;Word done in ITERAPLAN-429																																																					

@@ -1,0 +1,27 @@
+CRUD Views funktionieren nicht	Es scheint so, als würden keine CRUD-Views funktionieren. 404 - Seite nicht gefunden!		Bug	OpenSpeedMonitor	29/Apr/16 8:51 AM	17/May/16 9:59 AM														"29/Apr/16 12:32 PM;bwo;Das Scaffolding Plugin war falsch eingebunden, es musste als compile dependency eingetragen sein.
+
+
+
+Zwar erscheint nun eine Seite, jedoch entspricht diese nicht unserem Design, bzw. es fehlen alle js/css Dateien."	"02/May/16 10:22 AM;msk;Es mussten neue Templates generiert werden. Dabei war zu beachten, dass auf das Layout ""kickstart"" anstatt auf das Layout ""main"" referenziert wird. 
+
+
+
+Außerdem habe ich eine veraltete Einstellung aus der application.yml entfernt"	"06/May/16 3:26 PM;bwo;Beim Scaffolding hat sich einiges geändert. Anstelle der ""renderEditor.template
+
+"" wird nun das Field Plugin verwendet, dieses kommt mit dem Scaffolding Plugin. Mit diesem Plugin ist es möglich das Scaffolding für einzelne Properties feiner zu gestalten. Siehe auch https://grails-fields-plugin.github.io/grails-fields/guide/customizingFieldRendering.html
+
+Ich habe damit begonnen für boolean, strings und numbers entsprechende Tempaltes zu erstellen.
+
+
+
+Wir haben bisher in dem ScaffoldingController den Aufruf von index auf list redirected. Es ist nun nicht mehr möglich diese Controller zu ändern:
+
+""Right, in previous versions of the scaffolding plugin we took the Controller.groovy template and dynamically compiled it. This had a number of problems (startup time, unpredictable permgen usage, volatility etc.). The new version of the plugin in 3.x uses AST transformations to create the scaffolded controller and does not use the template. So yes this small piece of functionality has been lost, but frankly it wasn't worth it for the hassle."" -Graem Rocher
+
+https://github.com/grails/grails-core/issues/9155
+
+
+
+
+
+"	11/May/16 8:41 AM;bwo;In Bezug auf meinen letzten Kommentar: Hatte es einen speziellen Grund dass Aufrufe von scaffold index.gsp auf die list.gsp redirected wurden? Bzw. wäre es problematisch darauf zu verzichten und die index.gsp so anzupassen, dass sie der list.gsp entspricht?	11/May/16 2:19 PM;bwo;Ich habe es so implementiert, dass nun die index.gsp genutzt wird. Somit könnte das Ticket geschlossen, sofern dieses Verhalten gewünscht ist.																																																		

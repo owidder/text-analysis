@@ -1,0 +1,5 @@
+[Lizenz] Apache-2.0-Lizenz full text ins Projekt einfügen.	Der Lizenz-Text sollte beim bauen heruntergeladen werden.		Task	OpenSpeedMonitor	22/Oct/14 2:15 PM	04/Nov/14 5:41 PM														"03/Nov/14 9:32 AM;nku;LICENSE und NOTICE eingefügt.
+
+
+
+TODO: Die Lizenz-Dateien sollten beim Bauen eines wars auch in diesem landen. "																																																						

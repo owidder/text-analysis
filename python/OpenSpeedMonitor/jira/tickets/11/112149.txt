@@ -1,0 +1,13 @@
+Drag and Drop of attributes within attribute groups (vertical)	"*Summary:*
+
+Drag and Drop of attributes within attribute groups (vertical) triggers a change of the order *within* the Attribute Group itself or to another attribute group.
+
+
+
+*{color:red}UPDATE: {color} Move of an attribute from one group to another and change position should be done by attributes-REST-API and not by atg-REST-API
+
+
+
+*Technology:*
+
+* Save the updated state with a REST call and in success handler trigger reload-service using {{$scope.$emit(""triggerDataReset"");}} (IPTS-549)"		New Feature	iteraplan Speedbird	17/Feb/17 3:55 PM	27/Apr/17 11:54 AM														27/Mar/17 7:23 PM;vadm;Drag and drop doesn't work correctly in case if user doesn't have permission to configure attributes. We get permission error from server after dropping, but attribute position on UI is not reverted.	27/Apr/17 11:54 AM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-466																																																					

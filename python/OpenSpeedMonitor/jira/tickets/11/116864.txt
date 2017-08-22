@@ -1,0 +1,5 @@
+Element List View: Copy Element	"Add possibitily to copy an element in the List View. Use icon and tooltip from IPTT-452 .
+
+
+
+Just link to the functionality of IPTT-452 and only use it. No new logic to be implemented."		New Feature	iteraplan Speedbird	28/Mar/17 2:31 PM	16/Jun/17 1:41 PM														14/Jun/17 6:12 PM;mash;For reviewer: Linked functionality from IPTT-452 with some minor changes																																																						

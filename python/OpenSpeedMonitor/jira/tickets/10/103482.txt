@@ -1,0 +1,31 @@
+Coloring by attribute	"*Summary:*
+
+Implement coloring by numeric and enumeration (incl. multi-value) attributes. Every Building Block Type has its own coloring.
+
+
+
+*User Story:*
+
+* User selects an element.
+
+* A toolarea entry for coloring appears
+
+* The user selects a numeric or enumeration coloring
+
+* All elements of this Building Block Type are colored
+
+* The legend shows a coloring for this Building Block Type.
+
+
+
+*Implementation details:*
+
+* Save coloring info in URL
+
+* Implement the colorpicker
+
+* Use ""old"" approach for numeric coloring, i.e. min+%-values,max and not calculated ranges
+
+* Legend shows all coloring under each other, sort them alphabetically by localised Building Block Type name
+
+* Coloring applies to *all* Building Blocks of this type (independantly of the sub-tree)"		New Feature	iteraplan Speedbird	22/Nov/16 4:59 PM	13/Jan/17 3:55 PM																																																																				

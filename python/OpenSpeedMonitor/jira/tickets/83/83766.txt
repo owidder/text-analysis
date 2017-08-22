@@ -1,0 +1,7 @@
+text filter by all attributes	"Use {code}gridOptions.api.setQuickFilter(value);{code} in ag-grid
+
+See [https://www.ag-grid.com/javascript-grid-filtering/index.php] for an example."		New Feature	iteraplan PO	10/May/16 12:52 PM	17/Jun/16 2:11 PM														"17/Jun/16 10:16 AM;mse;This ticket should be covered by the implementation of ITERAPLAN-4587.
+
+
+
+Please, check this during review."	17/Jun/16 2:11 PM;abo;Closed the ticket, because the work is done in (and commits are associated to) ITERAPLAN-4587.																																																					

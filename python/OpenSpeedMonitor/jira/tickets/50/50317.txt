@@ -1,0 +1,45 @@
+Filter Information Systems by version	"*Summary*
+
+Filter Information Systems by their release version.
+
+
+
+*Affected parts*
+
+* Toolarea
+
+* Text input bar in the filtering dialog
+
+* URL
+
+* Legend (read-only)
+
+* ifdDataService
+
+* ifdConfiguration
+
+
+
+*Approach*
+
+Filter Information Systems by release version directly in the ifdDataService. Create a helper class in the commons-module, which parses the name of Information Systems and use "" # "" as seperator for the version.
+
+Use ifdConfiguration to notice other components about filtering.
+
+
+
+*UI*
+
+Set the filter either in the toolarea dialog and then proceed with the text input bar within this dialog.
+
+"		New Feature	iteraplan PO	09/Jul/15 10:02 AM	19/Oct/15 11:22 AM					filter	ui	version							14/Jul/15 8:57 AM;msr;The text filtering is used for the version filtering.	"15/Oct/15 11:33 AM;lwi;Ticket is sent to review but unit tests still missing (an extra ticket will be created): ITERAPLAN-4000 . 
+
+Edited the doc at http://www.iteraplan.de/doc/display/iteraplan51/Building+Block+Attributes and added the following:
+
+In addition: Using a custom attribute named 'version' can lead to unexpected results when filtering for the version of Information Systems or Technical Components in the interactive client. We recommend to use a different name."	"15/Oct/15 11:41 AM;lwi;Ticket is sent to review but unit tests are still missing (an extra ticket will be created). 
+
+Edited the doc at http://www.iteraplan.de/doc/display/iteraplan51/Building+Block+Attributes and added the following:
+
+In addition: Using a custom attribute named 'version' can lead to unexpected results when filtering for the version of Information Systems or Technical Components in the interactive client. We recommend to use a different name."	"15/Oct/15 4:13 PM;msr;Review-Comments:
+
+Please use for-loop instead of forEach as it is faster ( https://coderwall.com/p/kvzbpa/don-t-use-array-foreach-use-for-instead ). Please use a ""break"" to leave the loop as soon you have found the fitting entry."	16/Oct/15 12:41 PM;lwi;tests are an extra ticket																																																		

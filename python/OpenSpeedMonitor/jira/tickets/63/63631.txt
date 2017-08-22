@@ -1,0 +1,41 @@
+LSD Colorpicker e2e test	"Write an e2e test to check whether color picker can be opened multiple times in succession in LSD.
+
+search ""ITERAPLAN-4168"" in ""lsdPage.js"" to find the colorpicker test 
+
+---
+
+was: 
+
+
+
+Select any coloring
+
+Click on legend to open colorpicker
+
+Select a different color
+
+
+
+Actual:
+
+Try again to open colorpicker -> doesnt work
+
+
+
+Exptected:
+
+Try again to open colorpicker -> colorpicker opens
+
+
+
+
+
+After ticket change e2e test to check if colorpicker can be opened multiple times
+
+search ""ITERAPLAN-4168"" in ""lsdPage.js"" to find the colorpicker test "		Improvement	iteraplan PO	16/Nov/15 1:04 PM	11/Jun/17 12:53 PM					colorpicker	lsd								"20/Jan/16 5:26 PM;msr;Result of my analysis:
+
+
+
+If you delete the property ""colorpicker-is-open=""colorPicker"""", then the colorpicker is opened by any click on this div (=legend). That's not what we want.
+
+If you leave the property ""colorpicker-is-open=""colorPicker"""" in, then the colorpicker is only opened by the first click. Afterwards never. The reason could be (I'm not 100% sure), that the ng-click-event changes the state of colorpicker to late (i.e. after the watch on $scope.colorPicker watched on it). But I'm not sure."	18/Feb/16 1:52 PM;sfe;use estimation as time box. If exceeded, more discussion is needed.	11/Jun/17 12:53 PM;fka;Currently not relevant																																																				

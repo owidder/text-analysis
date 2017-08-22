@@ -1,0 +1,25 @@
+Bulksubscribe for already subscribed elements causes exception	"_Reproduce (with sample data):_
+
+# Log into iteraplan with system/password
+
+# Open Information System _CRM # 3.1_ in classic client and subscribe to it.
+
+# Log out
+
+# Log into iteraplan with mainuser/password and subscribe _CRM # 3.1_ as well
+
+# Log out
+
+# Log into iteraplan with system/password again
+
+# Open bulk updates and choose the Information System query ""Watchers contains not system"" => _CRM # 3.1_ should be in the result set
+
+# Select _CRM # 3.1_
+
+# Select ""Bulk subscribe"" from the ""more options"" button
+
+
+
+_Expected:_ Subscription to the already subscribed element is ignored
+
+_Actual:_ Error page due to a database constraint"		Bug	iteraplan Thunderduck	14/Sep/16 2:40 PM	20/Sep/16 11:21 AM														20/Sep/16 11:21 AM;mse;Review ok.																																																						

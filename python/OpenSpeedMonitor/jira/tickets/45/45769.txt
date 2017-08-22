@@ -1,0 +1,38 @@
+runIteraplan.bat fails because a registry key or value was not found	"Nach Aufruf von runIteraplan.bat läuft das Skript direkt auf einen Fehler (s. Attachment).
+
+Nach Drücken von Enter wird zwar ein Browserfenster mit ""http://localhost:8080/iteraplan"" geöffnet, der Aufruf von iterplan ist jedoch nicht möglich (""Verbindung fehlgeschlagen"").
+
+Der Java-Home Pfad ist meiner Ansicht nach korrekt gesetzt (s. Attachment) 
+"		Bug	iteraplan PO	17/Jun/13 10:25 AM	10/Jul/13 1:55 PM					bundles									"17/Jun/13 11:34 AM;sry;The first screenshot shows an error, but Tomcat still seems to have started, according the following lines. Also, the Tomcat output states the same JRE path as the environment variable you showed in the second screenshot.
+
+Do you have more details? Just looking at it, I'd suspects that it works regardless of the error message."	17/Jun/13 11:42 AM;sfr;Where can I find more details? It there a log which I can provide?	"17/Jun/13 1:34 PM;dne;Having the same issue I can at least tell that Tomcat is not running... Gerhard will dig a bit deeper now.
+Using the old start script from 3.0.4 is an option (if the Tomcat version is updated to 7.0.39)."	24/Jun/13 3:31 PM;kvo;windows 32-bit; JAVA_HOME to JDK 6; JRE 7 installed as well	24/Jun/13 3:32 PM;kvo;maybe it is better to first test the ENV-Variables like in the old script and use the registry as a fallback?	"01/Jul/13 11:08 AM;gph;Uses (in this order):
+* Own shipped JRE.
+* JRE_HOME environment variable for Java Runtime Environment
+* JAVA_HOME environment variable for Java Development Kit
+* Java Runtime Environment from registry
+* 32-bit Java Runtime Environment from registry
+* Java Development Kit from registry
+* 32-bit Java Development Kit from registry
+
+Works on Win7 and WinXP. Should be tested with Win8, too!"	"09/Jul/13 1:05 PM;bra;tested on WIN7:
+(/) uses own JRE if present at %cd%\Jre\Windows
+(/) uses JRE_HOME environment variable
+(/) uses JAVA_HOME environment variable
+(/) extracts jre home from registry
+(/) extracts 32-bit jre home from registry
+(/) extracts jdk home from registry
+(/) extracts 32-bit jdk home from registry
+(/) fails if none of the above mentioned is present
+
+(?) checks in the above mentioned order. it might be more convenient to first check all the 64-bit versions (jre and jdk) and fallback to 32-bit only if no 64-bit jre could be found
+"	"10/Jul/13 1:41 PM;lba;Tested with Windows XP
+
+(/) uses own JRE if present (%cd%\Jre\Windows)
+(/) uses JRE_HOME enviroment variable if present
+(/) uses JAVA_HOME enviroment variable if present
+(/) extracts JavaHome from registry (32-Bit)
+(/) extracts JdkHome from registry (32-Bit)
+(/) fails if none of the above mentioned is present 
+(?) fails if the used one has a wrong value -- SRY: OK, no problem
+"	10/Jul/13 1:55 PM;lba;All test cases worked -> see comment	25/Jul/13 4:24 PM;kvo;New script did not work on a prospect's Laptop. Old 3.0.4 works, 3.1RC1 CE with changed .bat files from SVN did not work.																																													

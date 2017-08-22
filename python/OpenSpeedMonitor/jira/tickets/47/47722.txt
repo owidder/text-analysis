@@ -1,0 +1,6 @@
+Overlap of controls  	"Steps to reproduce:
+1. Go to NCD page
+2. Use any numeric/date/text filters
+3. Scroll page to down
+Actual: Overlap of controls
+Expected: Is it expected behavior?"		Bug	iteraplan PO	27/Apr/15 10:50 AM	19/Jan/16 1:57 PM																																																																				

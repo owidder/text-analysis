@@ -1,0 +1,5 @@
+Charts refactorn	"Als ordentliches d3 + render Funktion.
+
+
+
+Gemeinsame Funktionalität aus allen Charts extrahiert und als Utility bereit gestellt werden."		Story	OpenSpeedMonitor	10/May/17 9:15 AM																																																																					

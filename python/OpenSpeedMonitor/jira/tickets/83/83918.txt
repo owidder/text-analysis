@@ -1,0 +1,5 @@
+Update Legend to support Level 2 and 3		82723	Sub-task	iteraplan Speedbird	11/May/16 10:36 AM	26/Jan/17 5:34 PM														"18/May/16 10:00 AM;mada;Was implemented in scope of 	
+
+ITERAPLAN-4522:Create legend for Masterplan Diagram"	"23/May/16 1:27 PM;msr;First review comment:
+
+Please use localised names instead of persistent names."																																																					

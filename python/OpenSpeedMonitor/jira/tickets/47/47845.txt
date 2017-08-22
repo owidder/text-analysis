@@ -1,0 +1,8 @@
+Add use cases for reactor to wikipage	"Related to ITERAPLAN-3171
+* simple examples needed. Ask [~fka] or Daniel Neuer
+
+Also add passage ""We expect all files to be UTF-8"""		Improvement	iteraplan PO	18/Jun/15 2:00 PM	13/Jul/15 1:53 PM														"06/Jul/15 5:15 PM;ach;Added Use case example from Daniel Neuer. 
+
+
+
+Wiki-page: https://www.iteraplan.de/wiki/display/iteraplan51/XSL+Reactor"																																																						

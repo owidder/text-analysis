@@ -1,0 +1,29 @@
+Correct sorting for texts with German umlauts	"At the moment, German umlauts are not treated very well when a text column is sorted because texts are just sorted by their ASCII values (all capital letters are lowered first so that at least capital letters are sorted correctly). This means, that ""äpfel"" is put behind ""zebra"" when sorted which is not what most users would expect.
+
+
+
+German umlauts should be sorted either
+
+* ""ä"" as ""a"", ""ü"" as ""u"" and ""ö"" as ""o""
+
+or
+
+* ""ä"" as ""ae"", ""ü"" as ""ue"" and ""ö"" as ""oe""
+
+
+
+Both ways are ok and if possible some library code or code snippet for correct sorting of German texts should be used (if the library is not too large or complex. If in doubt, pleaser ask [~wfr])."		Improvement	iteraplan PO	07/Jun/16 11:12 AM	23/Jun/16 9:50 AM														"22/Jun/16 2:29 PM;abo;Implemented a fix.
+
+
+
+Attention: *this change may decrease performance!*
+
+* Doing 100.000 comparisons using compare-operators (<, >, =) takes ~1ms vs. ~2.000ms using the current implementation. (See patched unit-tests from _ITERAPLAN-4682_sorting_withSpecialTreatmentForAscii.patch_)
+
+* As of the grid-requirements we should be able to show  up to 1 Mio. rows containing up to 100 columns, that potentially _all_ do a string comparison.
+
+* Using Intl.Collator (as suggested at [Mozilla Doc|https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare#Performance]) is not easily possible, because not all browsers in all versions implement it. PhantomJS does not! That would break already existing unit tests.
+
+* There exist alternative implementations like [Intl.js|https://github.com/andyearnshaw/Intl.js/] or the [polyfill service|https://cdn.polyfill.io/], which have downsides , too (e.g. library size or using an internet-service from within a standalone application)
+
+* The attachment _ITERAPLAN-4682_sorting_withSpecialTreatmentForAscii.patch_ shows an alternative approach, that improves the performance a bit (~ factor 2)."	23/Jun/16 9:50 AM;ach;Sorting according to DIN 5007-1																																																					

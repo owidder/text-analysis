@@ -1,0 +1,15 @@
+Attribute - Attribute Group Field is to small IE 11	"Reproduce with trunk and only in the IE 11
+
+ # Open ""Administration"" and ""Attributes""
+
+ # Create a attribute a or edit one of the existing ones
+
+ # Open the edit mode for ""Group"" 
+
+ # Now it is reall hard to read the existing attribute groups
+
+
+
+Expected: That you can read the full names of the attribute groups
+
+ Actual: The field is too short "		Bug	iteraplan PO	11/Apr/17 2:48 PM	21/Apr/17 4:23 PM														21/Apr/17 4:23 PM;fka;Editing in the list of attributes has been intentionally removed completely																																																						

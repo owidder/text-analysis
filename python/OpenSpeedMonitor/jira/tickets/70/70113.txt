@@ -1,0 +1,5 @@
+findPageOfPage aufräumen	"Im MeasuredValueTagService gibt es zwischen den Funktionen findPageOfDailyPageTag() und findPageOfWeeklyPageTag() keinen Unterschied.
+
+
+
+Diese sollen zu einer Funktion zusammengefasst werden und dann 'deprecated' werden."		Improvement	OpenSpeedMonitor	20/Jan/16 10:07 AM	20/Jan/16 4:47 PM																																																																				

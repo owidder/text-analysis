@@ -1,0 +1,21 @@
+iteratec service desk GUI	"when clicking on the ""iteratec Service Desk"" label at the top-left of the screen, the options to report an issue are not shown (see attached screenshot).  I have to logout and then login to be able to submit a request.
+
+We are using IE9, if that means anything.
+
+"		Fault	iteraplan Support	08/Mar/16 12:59 PM	10/Mar/16 9:38 AM														"08/Mar/16 12:59 PM;hannes.callisen@boehringer-ingelheim.com;
+
+[^iteratec service desk.pdf] _(27 kB)_"	"08/Mar/16 2:09 PM;tam;Hello Hannes, thank you for screenshot. 
+
+
+
+You don't need to log out. If you click on 'iteraplan support', you will be able to see all options and send a report."	"08/Mar/16 2:45 PM;hannes.callisen@boehringer-ingelheim.com;hello Timur .. understood.  thanks.
+but then why does it say on the screen ""You can raise a support request from the options provided below"" and there are no options and i'm supposed to click on ""iteraplan support""?  
+just a suggestion to clean-up the wording.  you can close this ticket."	"08/Mar/16 2:52 PM;tam;Thank you for your suggestion. 
+
+
+
+Unfortunately the same message will be used both on the page from your screenshot and on the support page itselfs.
+
+
+
+"	10/Mar/16 12:08 AM;hannes.callisen@boehringer-ingelheim.com;the ticket says "waiting for customer".   how do i close this request?	10/Mar/16 9:38 AM;sfe;We'll close the issue for you.																																																	

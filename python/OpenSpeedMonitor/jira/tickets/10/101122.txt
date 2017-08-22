@@ -1,0 +1,15 @@
+REST-API Methode resultsbetween um ID-Params erweitern	"Es sollen die folgenden neuen Parameter eingeführt werden:
+
+
+
+* pageId - Die ID der page, deren Ergebnisse abgefragt werden sollen. Wenn übergeben hat eine gleichzeitige Übergabe des Parameters _page_ keinen Effekt.
+
+* stepId - Die ID des steps, dessen Ergebnisse abgefragt werden sollen. Wenn übergeben hat eine gleichzeitige Übergabe des Parameters _step_ keinen Effekt.
+
+* browserId - Die ID des browsers, dessen Ergebnisse abgefragt werden sollen. Wenn übergeben hat eine gleichzeitige Übergabe des Parameters _browser_ keinen Effekt.
+
+* locationId - Die ID der location, deren Ergebnisse abgefragt werden sollen. Wenn übergeben hat eine gleichzeitige Übergabe des Parameters _location_ keinen Effekt.
+
+
+
+Der URL-Parameter sollte ebenfalls auch als ID statt als Name der JobGruppe verwendet werden können. Hier müsste dann eine Prüfung erfolgen, ob der Parameter numerisch oder als String übergeben wurde."		Task	OpenSpeedMonitor	01/Nov/16 4:13 PM	10/Nov/16 12:53 PM																																																																				

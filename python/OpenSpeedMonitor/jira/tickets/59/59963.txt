@@ -1,0 +1,7 @@
+Extend ifdDataservice-spec and ifdItemDecorator-spec	"Extend the following ifd-Unit-Tests (if necesssary) to ensure that they completely cover all functionality of the underlying ifd-files:
+
+
+
+* ifdDataservice
+
+* ifdItemDecorator (create a new test file)"		Improvement	iteraplan PO	12/Oct/15 5:15 PM	18/Jan/16 12:22 PM					test									26/Oct/15 10:23 AM;fka;Please postpone after release 5.1																																																						

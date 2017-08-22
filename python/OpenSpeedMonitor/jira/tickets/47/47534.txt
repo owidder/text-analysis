@@ -1,0 +1,5 @@
+NCD: System's names are croped in some cases	"Summary: system's names are croped with some combination inner and outer types
+
+Example: Use Information System as outer type and Technical Component as inner type"		Bug	iteraplan PO	26/Mar/15 3:37 PM	19/Jan/16 1:56 PM														"15/Apr/15 11:01 AM;wfr;Recommendation: defer
+
+cosmetic, not now"																																																						

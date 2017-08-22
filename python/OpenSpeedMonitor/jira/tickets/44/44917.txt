@@ -1,0 +1,8 @@
+IndexOutOfBoundsException at iteraplan Dashboard	"When trying to open the iteraplan dashboard while the database doesn't have any entries for, for example, technical component releases, you get an IndexOutOfBoundsException.
+The reason in this example is following part of the DashboardController's code which apparently is used to determine the BuildingBlockType:
+
+{code}
+[...] elements.getTcrList().get(0).getBuildingBlockType() [...]
+{code}
+
+Since the list of technical component releases in our example is empty, the exception occurs."		Bug	iteraplan PO	06/May/11 10:02 AM	18/May/11 10:10 AM					dashboard									11/May/11 11:47 AM;rbe;  the situation also occurs by information systems and interfaces	11/May/11 3:39 PM;rbe;  error IndexOutOfBoundsException by technical components, information systems and interfaces corrected	12/May/11 11:28 AM;rbe;  small correction for dashboard	12/May/11 6:16 PM;rbe;  attributes are displayed in drop-down for the types that have no element data (yet)																																																			

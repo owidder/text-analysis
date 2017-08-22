@@ -1,0 +1,33 @@
+Missing message for out-of-range attribute of TC-IE in first row	"Cute.
+
+User enters an out-of-range value for a numeric attribute of a relation.
+
+Expected: iteraplan displays error message in all cases
+
+Actual: iteraplan does not display serror message if entered in the input filed in the first row. It works as expected for the second row.
+Not tried for three or more rows.
+
+steps to reproduce
+
+prepare:
+1) start with an EE edition
+2) add a numeric attribute type with lower/upper limits  to the TC-IE relationship. Foir example strategic value in sample data.
+3) open a TC for edit, for example ABAP 
+4) if it has less than two connected IEs, add some.
+5) save
+
+test:
+1) open the prepared TC for edit
+2) enter a out-of-range value into the input fielld in the first row.  Example for strategic value: 11
+3) expected: message. actual: no error message
+4) save
+5) as expected: value is highlighted red
+6) open for edit again
+7) enter out-of-range value in text field in _second_ row
+8) as expected: error mesage.
+
+
+Found  with Chrome, not tried to reproduce with other browsers.
+
+TC-IE has CRUD AT as well, ""strategic value"" is second/last 
+"		Bug	iteraplan PO	27/Jan/14 10:18 AM	19/Jan/16 11:33 AM																																																																				

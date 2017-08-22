@@ -1,0 +1,9 @@
+Refactor version directive	"Currently the version directive (app\js\directives\version\*) has some technical debt. It still contains a <footer> element which is actually not required and misleading (as the information is displayed in the header now instead of the footer).
+
+
+
+The CSS styles to format the Release are based on the footer so this should be taken into account too. Additionally, the build information (as well as the howUseDiagramKey) are part of the ""to-classic-client-navbar"" which is misleading too. Please change this.
+
+
+
+Note that HTML5 has a <footer> element!"		Improvement	iteraplan Thunderduck	26/Apr/16 3:47 PM	14/Sep/16 11:15 AM														27/Aug/16 11:02 AM;fka;"Diagram how to use" no longer exists.	14/Sep/16 11:15 AM;mse;Review ok.																																																					

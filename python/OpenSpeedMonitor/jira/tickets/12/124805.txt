@@ -1,0 +1,17 @@
+Exception after searching on Start tab	"Steps to reproduce:
+
+1) Open Start tab
+
+2) Enter text ""sap""
+
+3) Click Enter
+
+
+
+Actual result: 14 elements are shown, exception in console appears (see screenshots)
+
+Expected result: 14 elements are shown, no exceptions
+
+
+
+Note: exception appears on bundle, no exceptions on Dev version. check if this is not a minification issue in search component"		Bug	iteraplan PO	20/Jun/17 8:58 AM															20/Jun/17 9:28 AM;roia;Fixed	20/Jun/17 11:35 AM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-707																																																					

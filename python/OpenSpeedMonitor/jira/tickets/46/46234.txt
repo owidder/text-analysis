@@ -1,0 +1,22 @@
+Make import respect hierarchical positions - find and implement quick solution	"Currently the ""position"" values found as property of hierarchical elements in Excel or XMI templates/exports are ignored by the importer.
+
+This means the importer does not respect the ordering of hierarchical elements (position values represent the ordering within the sibling list of an element).
+
+
+
+Currently, when importing, the position values of iteraplan entities are set according to the import file, but then ignored when saved into the database, since hibernate determines the position value directly from the ordering of the according list of elements (children list).
+
+
+
+In elastic merge, it is enough to set the position values and normalize them to be a 0 to n enumeration.
+
+For hibernate entities, the children lists of parents of affected elements need to be sorted according to their position values before saving the parent elements. Even if there are technically no changes for the parent element itself."		Improvement	iteraplan PO	25/Oct/13 2:59 PM	24/Mar/16 10:37 AM					import	ordering								"12/May/14 4:59 PM;gph;(!)  Clarify if there should be a validation for valid position values (0 to x, no gaps, no duplicates) after property changes. For example: position values changed or relocate an element to another position in the hierarchy.
+
+If the validation fails, what should happen?
+* Cancel the import and write a error message which explains why.
+* Correct the positions, continue with the import and write a info message.
+* ...
+
+"	16/Nov/15 4:23 PM;msr;Send to backlog because implementation has too much effort. Solution needs to be redesigned by [~sfe].	"17/Mar/16 2:53 PM;sfe;Documentation was adjusted, see here:
+
+http://www.iteraplan.de/doc/display/iteraplan52/Order+of+a+building+block's+children+elements"	24/Mar/16 10:37 AM;tam;Reviewed and tested. Everything works as expected																																																			

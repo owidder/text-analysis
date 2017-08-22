@@ -1,0 +1,3 @@
+Ermitteln der Request-URL im RequestFilter korrigieren	"Damit der Proxy auch für https-Verbindungen verwendet werden kann, muss das Ermitteln der Request-URLs im RequestFilter angepasst bzw. korrigiert werden.
+
+Bei http-Verbindungen kann die URL einfach aus dem HttpRequest-Objekt übernommen werden. Wenn allerdings eine https-Verbindung verwendet wird, muss z. B. der Host aus dem Connect-Request übernommen und mit dem Pfad der folgenden Get- bzw. Post-Requests ergänzt werden. "	77707	Sub-task	secureCodeBox	05/Apr/16 2:45 PM	05/Apr/16 4:45 PM																																																																				

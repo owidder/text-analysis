@@ -1,0 +1,9 @@
+User list edit	"*Summary:*
+
+ Make all cells of the user-list editable (except for lastModTime and lastModUser, Id)
+
+
+
+*Details:*
+
+ * Re-use list-edit of the Building Block List"		New Feature	iteraplan Speedbird	27/Feb/17 4:17 PM	13/Mar/17 11:37 AM														13/Mar/17 11:36 AM;dmkh;Good job, review is done :)																																																						

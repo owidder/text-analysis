@@ -1,0 +1,3 @@
+Improve Nesting Cluster Diagram	"Issue to register the various improvements for the Nesting Cluster diagram under.
+All Improvements for Release 3.1
+For issues done in release 3.0 please check ITERAPLAN-392"		Improvement	iteraplan PO	04/Apr/12 10:51 AM	30/Dec/15 2:32 PM					cluster	diagram	VBB	visualization																																																												

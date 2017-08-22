@@ -1,0 +1,7 @@
+Aggregation nach MIME-type	"Die einzelnen Attribute der Wasserfall-Einträge (z.B. TTFB oder SSL negotiation time) sollen aggregiert nach dem MIME-type auswertbar sein. So sollen für die TTFB aller image/jpeg-requests gegen assets.cdn-otto.de z.B. über zahlreiche Wasserfälle hinweg die folgenden statistischen Größen ermittelt werden können:
+
+* arithmetisches Mittel
+* Median
+* 25- und 75% Quantil
+
+"		Task	OpenSpeedMonitor	18/Feb/14 10:59 AM	26/Feb/14 12:40 PM														26/Feb/14 12:40 PM;mkrueger;Über den WaterfallAnalyzerService implementiert																																																						

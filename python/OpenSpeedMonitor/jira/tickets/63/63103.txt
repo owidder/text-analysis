@@ -1,0 +1,7 @@
+Seiten-Performance-kritische Persistenz prüfen/refaktorieren	"Wir sollten alle Codestellen an denen Daten gelesen und/oder geschrieben werden auf performance-Optimierungen hin prüfen.
+
+Besonders betroffen sind vermutlich die Stellen, an denen die folgenden Entitäten persistiert / gelesen werden:
+
+* de.iteratec.osm.result.EventResult
+
+* de.iteratec.osm.report.chart.MeasuredValue"		Task	OpenSpeedMonitor	11/Nov/15 9:05 AM	18/Jan/17 3:03 PM																																																																				

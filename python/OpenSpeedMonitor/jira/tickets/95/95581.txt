@@ -1,0 +1,49 @@
+Display of new client's info flow diagram in FF 45 ESR not possible for iteraplan 5.3	When I try to open the infoFlow diagram iteraplan 5.3 in FF 45 ESR Firefox display "Keine Rückmeldung" in window title		Fault	iteraplan Support	08/Sep/16 1:29 PM	19/Sep/16 8:18 AM														"09/Sep/16 8:27 AM;cst;Dear Mr. Liskwo,
+
+thank you for your enquiry.
+
+Can you please check the infoFlow diagram with the internet explorer,
+or occurs the same problem as in firefox?
+
+Greetings,
+
+Christoph Stangl - iteraplan Support 
+
+
+"	"09/Sep/16 8:40 AM;thomas.liskow@coface.com;It works in IE 11. Because we have a lot of building blocks/information system (433 overall, thereof 322 current and productive) the message ""In your actual browser only the first 250 elements are displayed"" appears.
+
+Regards,
+Thomas Liskow"	"09/Sep/16 2:22 PM;cst;Hello Liskow, 
+
+for the firefox the maximal displayed elements are 500. 
+Appears the diagram, when you wait a little bit?
+
+At the moment this is the default limit for the shown elements. 
+This limit cant be changed
+
+In the future it is possible to change this limit, but in iteraplan 5.3 this feature is not implement.
+As work a round you can use the internet explorer to create the diagram.
+
+Greetings
+
+Christoph Stangl - iteraplan Support"	"09/Sep/16 2:47 PM;thomas.liskow@coface.com;Hello Mr. Stangl,
+yes, if I wait some minutes the diagram appears. But if I try to add a node filter FF doesn't response any more. It's frozen and must be closed (see attached screenshot)
+Regards,
+T. Liskow
+
+!FF_iteraplan_newclient_infoflow_nodefilter_20160909.png|thumbnail!"	"12/Sep/16 10:30 AM;cst;Hello Mr. Liskow,
+
+the problem is, that your computer can not handle the 433 elements of the diagram.
+I have created a improvement ticket for this issues, to set the displayed elements.  
+
+Would you please check following Troubleshooting article to improve the performance in interactive client:
+
+https://www.iteraplan.de/doc/display/IKB/Poor+performance+in+the+interactive+client 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	12/Sep/16 10:54 AM;thomas.liskow@coface.com;I will check it with our operations teams for desktop and server. I created the approbriate service requests for our user acceptance system. If this would work I will do it also for production system	"19/Sep/16 8:13 AM;thomas.liskow@coface.com;We made an upgrade to 5.3 and enabled the communication compression as mentioned in the document. Now the problem is solved and the flow diagram is displayed in a short time.
+Please close the incident
+
+Kind regards,
+Thomas Liskow"																																																

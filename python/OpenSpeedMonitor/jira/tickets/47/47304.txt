@@ -1,0 +1,22 @@
+New Client: PoC for automated testing	"*Summary:*
+Execute a proof of concept of the automated test concept for the new client.
+
+*Approach:*
+Use the environment of the new client.
+
+If you have any questions, please contact WFR or MSR.
+
+
+Notes
+
+input from Munich to Brightgrove team: example and guidelines
+
+goal: show that example/guidelines work for the team
+
+output: one or more automated tests
+
+basis: exisiting manual test cases
+
+open: how many tests?
+
+open: unit/component, E2E, both kinds?"		Task	iteraplan PO	20/Jan/15 10:54 AM	09/Feb/15 11:41 AM					newClient	test																																																														

@@ -1,0 +1,7 @@
+Broken Layout in Building Block edit mode	"Im Editiermodus eines Elements wird der Dialog unter die ""save"" und ""cancel"" Buttons geschoben.
+Ursache: falsches Eingabefeld für den Namen des Elements.
+Vgl. Editiermodus eines Attributs: Hier wird das richtige Eingabefeld verwendet und das Layout passt
+
+Zur Reproduktion:
+- in den Editiermodus eines Bebauungselements wechseln. Das Eingabefeld für den Namen ist nicht im richtigen Design.
+- zum Vergleich in den Editiermodus eines Attributs wechseln."		Improvement	iteraplan PO	02/Mar/12 6:35 PM	09/Mar/12 2:51 PM																																																																				

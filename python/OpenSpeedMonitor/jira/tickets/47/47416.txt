@@ -1,0 +1,5 @@
+Remove unused images from documentation	"From the user documentation (upcoming space)
+Remove all image attachments from all pages that are no longer referenced on the page
+
+Might help:
+https://ffeathers.wordpress.com/2013/06/02/how-to-manage-attachment-usage-in-confluence-wiki-with-some-python-scripts/"		Task	iteraplan PO	17/Feb/15 6:55 PM	26/Mar/15 10:33 AM					documentation																																																															

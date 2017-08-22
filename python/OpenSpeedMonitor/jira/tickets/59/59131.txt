@@ -1,0 +1,27 @@
+Client-side	"* New service based on $http-service for POST-Request to REST (use Reactor service as template)
+
+* Exception handling: Show error message as pop-up
+
+* ..."	55882	Sub-task	iteraplan PO	05/Oct/15 1:33 PM	29/Oct/15 4:06 PM														"21/Oct/15 3:24 PM;ach;please check out the latest version of server
+
+
+
+*ready:*
+
+* export of all 3 diagrams. REST-angular-Service
+
+* logging and message on error.
+
+
+
+*not ready:*
+
+* current solution works for all 3 diagrams in chrome. (lsd needs 70 sec. to render a pdf) but doesn't work properly in firefox and ie.
+
+* still not sure if sended svg is fully compatible with batik.
+
+* there are no tests for the new service"	"28/Oct/15 11:42 AM;ach;the current solution works on Chrome and Firefox. New Ncd export works in all browsers.
+
+IE get a 500 error (for lsd and ifd). Caused by batik - in ie exported svg is not batik-compatible (batik bridge error because of clip-path see ITERAPLAN-3969 or https://issues.apache.org/jira/browse/BATIK-1127)
+
+We already sent an email to goJS support team"																																																					

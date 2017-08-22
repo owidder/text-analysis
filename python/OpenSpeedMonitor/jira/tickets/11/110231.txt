@@ -1,0 +1,3 @@
+Starten von Tests mit apiKey funktionert nicht	"Getestet mit webpagetest.org als WPTServer und apiKey von Stefan. Es wird ein Test mit einem Hash-Wert als Test-ID erzeugt/angezeigt.
+
+Der Link aus der Job-Liste führt nicht zu einem validen Test."		Bug	OpenSpeedMonitor	01/Feb/17 11:39 AM	08/Feb/17 2:21 PM														01/Feb/17 11:46 AM;sbr;"A.d7c47d8d3dd00e46a7c0aec4502e9c21" kann als API Key zum Testen mit WebpageTest genutzt werden.																																																						

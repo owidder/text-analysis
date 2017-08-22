@@ -1,0 +1,5 @@
+Removing iTurm hint in the User Management when LDAP is activated	"Mit aktiviertem LDAP-Login wird im Benutzerprofil der Text
+""Anwender müssen in der externen Applikation iTurm angelegt und gepflegt werden."" angezeigt.
+
+Bei der Verwendung von LDAP sollte diese Meldung entsprechend angepasst bzw. ausgebaut werden.
+"		Bug	iteraplan PO	04/Dec/13 2:06 PM																																																																					

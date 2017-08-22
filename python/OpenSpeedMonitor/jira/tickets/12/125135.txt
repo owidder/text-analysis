@@ -1,0 +1,5 @@
+Messung fv/rv auswerten	"[Diese Vergleichs-Messung|http://demo.openspeedmonitor.org/eventResultDashboard/showAll?graphName=&alias=&_action_showAll=Show&selectedInterval=-1&selectedTimeFrameInterval=259200&from=2017-06-19T22%3A00%3A00.000Z&to=2017-06-23T21%3A59%3A00.000Z&selectedFolder=55&selectedPages=2&selectedPages=20&selectedBrowsers=4&selectedLocations=23&selectedConnectivities=1&selectedAggrGroupValuesUnCached=docCompleteTimeInMillisecsUncached&selectedAggrGroupValuesCached=docCompleteTimeInMillisecsCached&trimBelowLoadTimes=&trimAboveLoadTimes=&trimBelowRequestCounts=&trimAboveRequestCounts=&trimBelowRequestSizes=&trimAboveRequestSizes=] sollte ausgewertet werden. 
+
+
+
+Wenn wir zeigen können, dass WPT's repeated view sich nicht wesentlich von einer Folgeseite in der customer journey unterscheidet können wir `de.iteratec.osm.result.CachedView` komplett ausbauen."		Task	OpenSpeedMonitor	23/Jun/17 10:39 AM																																																																					

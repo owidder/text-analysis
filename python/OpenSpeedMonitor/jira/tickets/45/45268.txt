@@ -1,0 +1,11 @@
+Wrong coloring in pie charts	"If visualizing a 100%-proportion for enumeration attributes in pie charts the resulting diagram is white instead of being colored in the color choosen for this particular attribute value (see attachement).
+
+The folowing steps were made to create the attached pie chart:
+# select ""pie charts"" and ""information systems""
+# check only the ""current""-box for information systems
+# ""send query & use results""
+# select ""attributes"" for coloring
+# select ""Status"" as attribute to be used
+# select ""Attribute Values"" to be analyzed
+# check the ""show segment labels""-box in advanced settings
+# generate diagram"		Bug	iteraplan PO	16/Nov/11 10:58 AM	09/Mar/12 1:31 PM					chart	color	pie							09/Mar/12 1:30 PM;kvo;Duplicate solved																																																						

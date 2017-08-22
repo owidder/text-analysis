@@ -1,0 +1,13 @@
+JobGroup-Name führt zu fehlerhaftem Senden nach Graphite	"Habe eine Jobgruppe umbenannt:
+
+""live"" -> ""live www.otto.de""
+
+Das hat dazu geführt, dass keine Daten mehr in Graphite angekommen sind. Kann am Leerzeichen liegen oder auch an den zusätzlichen Punkten (Nodes in Graphite-Paths)."		Bug	OpenSpeedMonitor	09/Sep/14 5:45 PM	23/May/16 4:59 PM														"25/Feb/16 7:08 PM;bka;Leerzeichen sind in Graphite-Metriknamen nicht erlaubt. Die Punkte sorgen dafür, dass zusätzliche Metriknodes erzeugt werden.
+
+
+
+Dazu wird üblicherweise eine sanitize-Funktion eingesetzt. Diese Funktion schreibt dann jedes Leerzeichen und jeden unerwünschten Punkt in ein '_' um, sodass aus dem Jobnamen 'live www.otto.de' ein 'live_www_otto_de' wird.
+
+
+
+In welcher Code-Stellt wird die JobGroup an Graphite übergeben? Dann baue ich es dort ein."	23/May/16 4:59 PM;nku;Ist bereits gefixt.																																																					

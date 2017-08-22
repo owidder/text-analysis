@@ -1,0 +1,8 @@
+Hierarchical Navigation erzeugt JavaScript Fehler im Opera	"Der Aufbau der hierarchical navigation erzeugt folgende JavaScript Exception im Opera:
+
+""'parent.addChild' is not a function""
+
+Die hierarchical navigation wird dementsprechend nicht fertig aufgebaut und meldet auch beim Klick auf das noch angezeigte ""-"" o.g. Fehler.
+
+Zur Reproduktion:
+Mit Opera auf ""EA Data"" > ""Business Processes"" surfen. Beim Aufbauen der Seite wird der Fehler gemeldet."		Bug	iteraplan PO	02/Mar/12 6:06 PM	02/Mar/12 9:29 PM														02/Mar/12 9:29 PM;kvo;Opera not supported by iteraplan. Firefox and IE (8 and 9) are a must, Chrome and Safari nice to have and Opera of no interest	05/Mar/12 9:04 AM;vsh;Anyway, I just migrated the hierarchical navigation from Dojo to Bootstrap so now it works in Opera too.																																																					

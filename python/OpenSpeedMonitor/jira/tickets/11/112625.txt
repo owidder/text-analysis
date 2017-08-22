@@ -1,0 +1,264 @@
+Upgrade 5.4 to 5.5	"nein, wir verwenden kein iturm...LDAP via Active Directory
+
+
+
+
+
+*****
+
+Sehr geehrter Herr Laeser,
+
+
+
+ 
+
+
+
+vielen Dank für Ihre Anfrage. 
+
+
+
+ 
+
+
+
+Die Meldung deutet darauf hin, dass die Datenbank nicht zur Verfügung steht. 
+
+
+
+Wenn Sie „iturm“ benutze,  wird die Verbindung für diese „context.xml“ unter „[TOMCAT]/WEBAPPS/META-INF/*“ eingetragen. 
+
+
+
+ 
+
+
+
+Sollte dies nicht die Ursache des Problems sein, erstellen Sie bitte ein Ticket in unserem Service Desk:
+
+
+
+ 
+
+
+
+www.iteraplan.de/support 
+
+
+
+unseren neuen iteraplan Service Desk. 
+
+
+
+ 
+
+
+
+Damit ersetzen wir den bisherigen iteraplan Support via E-Mail und vereinfachen die Kommunikation: 
+
+
+
+-          Über unseren Service Desk können Sie jederzeit den Status Ihrer Anfrage nachvollziehen.
+
+
+
+-          Auch können Sie Kollegen einbinden, die ebenfalls Zugriff auf das eröffnete Ticket haben. 
+
+
+
+-          Es ist außerdem möglich, Dateien einfach hochzuladen. 
+
+
+
+-          Nachdem Sie sich einmalig registriert haben, können Sie nach Lösungen suchen, eine Frage stellen oder ein Problem melden. 
+
+
+
+ 
+
+
+
+ 
+
+
+
+Bitte nutzen Sie für weitere Anfragen den neuen Service Desk.
+
+
+
+ 
+
+
+
+Mit freundlichen Grüßen
+
+
+
+
+
+
+
+Christoph Stangl
+
+
+
+____________________________________________
+
+
+
+ 
+
+
+
+iteratec GmbH 
+
+
+
+Inselkammerstraße 4 
+
+
+
+82008 München-Unterhaching 
+
+
+
+Germany 
+
+
+
+  
+
+
+
+mailto: iteraplan.support@iteratec.de
+
+____________________________________________
+
+
+
+Sitz und Registergericht München: HRB 113 519 
+
+
+
+Geschäftsführer: Klaus Eberhardt, Mark Goerke, Michael Schulz
+
+
+
+Signatur_GPTW16_20Jahre
+
+
+
+ 
+
+
+
+Von: Moritz Laeser [mailto:laeser.moritz@ch.sika.com] 
+
+Gesendet: Mittwoch, 22. Februar 2017 11:30
+
+An: iteraplan.support <iteraplan.support@iteratec.de>
+
+Betreff: Iteraplan Upgrade 5.4 to 5.5 - kein Login mehr
+
+
+
+ 
+
+
+
+Guten Tag 
+
+
+
+Ich habe Iteraplan von 5.4 auf 5.5 aktualisiert. Folgendes habe ich gemacht (2x!): 
+
+
+
+- Upgrade gemäss Upgrade Guide Kapitel 1 bis 3 
+
+- Am Ende folgende Files zurück kopiert: log4J / iteraplan-db / iteraplan-auth 
+
+
+
+
+
+
+
+- Apache wieder gestartet, wollte mich einloggen, aber es passiert nichts und nach einigen Minuten kommt folgender Fehler: 
+
+
+
+
+
+
+
+
+
+Dann habe ich weiter Folgendes gemacht: 
+
+- BrowserCache gelöscht, hilft nicht, weder bei IE noch bei FF 
+
+- folgendes Verzeichnis gelöscht: apache-tomcat-7.0.59\work\Catalina\localhost\iteraplan > hilft nicht 
+
+
+
+Ich habe die Logs angeschaut, da fällt mir auf, dass für Version 5.4 ebenfalls immer noch neue Logs angelegt werden, wenn ich den Apache neu starte 
+
+
+
+
+
+
+
+
+
+- komisch finde ich, dass es einmal einen Login attempt gab bzw. geschrieben wurde... 
+
+
+
+- ich habe dann auch meinen Backup Job ausprobiert, funktioniert ebenfalls nicht 
+
+
+
+
+
+
+
+Haben Sie eine Idee was ich noch prüfen könnte? 
+
+
+
+Danke und freundliche Grüsse 
+
+
+
+
+
+"		Fault	iteraplan Support	22/Feb/17 12:29 PM	23/Feb/17 9:06 AM														"22/Feb/17 12:58 PM;cst;Sehr geehrter Herr Laeser,
+
+vielen Dank für Ihre Anfrage.
+
+Würden Sie mir bitte noch die folgende Log-Dateien zur weiteren Prüfung zukommen lassen:
+“catalina.out” und die “localhost.log” aus dem Tomcat Server Log-Verzeichnis.  
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"23/Feb/17 8:44 AM;laeser.moritz@ch.sika.com;Hallo Herr Stangl
+Vielen Dank für Ihre Antwort.
+Seit heute morgen funktioiert das Login, keine Ahnung warum, auch die JObs sind in der Nacht gelaufen. Also scheint sich dies gelöst zu haben :-)
+
+Was ich aber komisch finde ist, dass sämtliche Login Logs für Version 5.4 geschrieben werden...? 
+Ich habe alle Logs angehängt...
+Vielen Dank
+
+[^Logs.zip] _(1.75 MB)_"	"23/Feb/17 8:48 AM;cst;Guten Morgen,
+
+vielen Dank für Ihre Antwort.
+
+In der ""log4j.properties"" sind die Pfade zu den LOG-Dateien eingetragen. 
+Wenn Sie diese von 5.4 kopieren, werden in der Version 5.5 die Informationen in die eingestellte Log-Dateien geschrieben. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"23/Feb/17 9:05 AM;laeser.moritz@ch.sika.com;stimmt :-) blöd...somit funktioniert alles wieder wie s soll..Danke für Ihre Hilfe, ticket kann geschlosen werden.
+Freundliche Grüsse"																																																			

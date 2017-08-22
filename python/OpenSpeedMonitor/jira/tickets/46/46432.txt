@@ -1,0 +1,3 @@
+Unpredictable display of attribute description	"On an element detail page inside the ""attributes"" section, sometimes the description value beyond the dropdown field is shown (see screenshot), and sometimes not.
+
+Tested with enum attribute ""compexity"", but the behavior varies arbitrary with different values and/or iteraplan instances."		Bug	iteraplan PO	27/Jan/14 5:40 PM	19/Jan/16 11:33 AM					attribute	gui																																																														

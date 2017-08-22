@@ -1,0 +1,63 @@
+Partial diagram for NCD	"For LSD, see ITERAPLAN-3793
+
+
+
+In the NCD, add a limitation for the number of elements displayed.
+
+If the limitation triggers, show ""51342 elements left out"" pseudo element.
+
+
+
+In the NCD diagram element processor, 
+
+whenever the filters change, 
+
+that is in the watch function in the controller,
+
+after the regular load, 
+
+call the new function $scope.el.limitYourself() (function working title) of DiagramElement
+
+
+
+limitYourself counts outer and inner (and nested inner) elements.
+
+and finds the last outer element that falls below the limitations threshold.
+
+
+
+After that last element, remove all other (outer) elements (and their children) 
+
+and add a pseudo element with text, but without sub-items.
+
+
+
+To find the actual threshold value, experiment in adverse environment, that is IE.
+
+Then put it into the code. No config.
+
+
+
+The limit for the elements is hard-coded and the exact limit needs to be tested during this ticket.
+
+
+
+*SVG-Download is out of scope for this ticket. Do not touch the download within this ticket.*"		New Feature	iteraplan PO	04/Nov/14 8:23 AM	14/Sep/15 10:14 AM														"25/Aug/15 3:03 PM;sfe;* First build the complete Diagram Element tree and remember the number of elements
+
+* ""limit"" method in Diagram Element determines the cut-off point, throws away all outer diagram elements which don't fit anymore and creates the artificial ""x elements not displayed"" element."	02/Sep/15 9:50 AM;fro;Wolfgang wants to review this ticket.	"14/Sep/15 8:22 AM;fro;||Browser||200||500||1000||
+
+|IE 9|-|-|-|
+
+|IE 11|16s|56s|270s|
+
+|Firefox|11s|19s|21s|
+
+|Chrome|12s|21s|33s|
+
+
+
+"	"14/Sep/15 10:14 AM;wfr;The main part of this ticket is solved: render only a limited number of SVG boxes.
+
+
+
+Other optimizations are needed, for example min/max of numeric attributes, but not in this ticket."																																																			

@@ -1,0 +1,10 @@
+Login Screen Sprache	Die Login Seite zeigt als Labels Username und Password an, obwohl mein Betriebssystem und Browser auf deutsch eingestellt sind. Nach dem Login erscheint auch alles auf deutsch.		Fault	iteraplan Support	16/Mar/17 11:06 AM	08/Apr/17 7:00 AM														"20/Mar/17 12:42 PM;cst;Sehr geehrter Herr Patterer,
+
+vielen Dank für Ihre Anfrage.
+
+Wir konnten das Verhalten nachvollziehen und haben dies als Verbesserung für zukünftigen Versionen hinterlegt. 
+Das in zukünftigen Versionen wieder beide Sprachen als Login-Screen zur Verfügung stehen.  
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"																																																						

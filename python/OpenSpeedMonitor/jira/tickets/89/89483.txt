@@ -1,0 +1,35 @@
+Improve zoom	"Improve the existing zooming-feature:
+
+
+
+*1. No shifting*
+
+During the zooming in and out the scroll position of the column in the middle of the screen should be fixed, e.g. if April 2012 is in the middle of the screen, it is still in the middle of the screen after the zooming.
+
+
+
+*2. Help in the toolarea*
+
+* Remove the explanation ""and Zoom by Ctrl + mousewheel"" from the howToUseDiagram-key
+
+* Create a new Toolarea-subentry:
+
+** Main entry ""Display""
+
+** Sub-Entry below levels ""Zoom""
+
+** Sub-Sub-Entry: ""Zoom by Ctrl + mousewheel"" (German: ""Zoom mit Strg + Mausrad"")
+
+
+
+*3. Change zoom-limits:*
+
+* Change zoom-limits from 5% to 150%
+
+* Below 50%: Remove months from header and show column lines only for years (*not* for months)
+
+
+
+*4. Make bars day-precise*
+
+* Refactor implemenation for bar-width and bar-offset to show the bars on a position where they should be placed with correct starting-day and not starting month"		Improvement	iteraplan Speedbird	05/Jul/16 9:02 PM	18/Jul/16 1:00 PM																																																																				

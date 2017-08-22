@@ -1,0 +1,17 @@
+Anforderungen aufschreiben	"Alle bekannten Anforderungen/Rahmenbedingungen im Wiki formulieren
+
+
+
+z.B. Die Anwendung soll auf allen gängigen mobilen Plattformen lauffähig sein.
+
+
+
+Offene Fragen aufnehmen.
+
+
+
+Akzeptanzkriterien:
+
+
+
+* Liste im Wiki"		Task	EAMV15	20/Oct/15 12:03 PM	21/Oct/15 11:35 AM														21/Oct/15 11:35 AM;pkh;Anforderungen im Wiki aufgeführt																																																						

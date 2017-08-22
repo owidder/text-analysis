@@ -1,0 +1,21 @@
+Boolean editor does not display change immediatly	"* Open the Technical Components list view
+
+* Add the column Available for Interfaces
+
+* Change for one component from yes to no (order!)
+
+
+
+CURRENTLY:
+
+* ""No"" is not displayed (after a refresh of the site it is)
+
+
+
+EXPECTED:
+
+* ""No"" is displayed immediatly
+
+
+
+Note: If you change from ""no"" to ""yes"" the change *is* displayed immediatly"		Bug	iteraplan Thunderduck	19/Jan/17 11:59 AM	23/Jan/17 10:08 AM																																																																				

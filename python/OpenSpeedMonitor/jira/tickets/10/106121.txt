@@ -1,0 +1,9 @@
+Fehler beim Parsen von Date-Werten bei Job-Result Tabelle	"Im Workshop hat jemand über die tabularResultPresentation einen Stack-Trace bekommen.
+
+Folgende URL wurde über das Formular generiert, welches deterministisch den Stacktrace generiert:
+
+http://openspeedmonitor.wpt.iteratec.de/tabularResultPresentation/listResults?_action_listResults=Anzeigen&selectedTimeFrameInterval=3600&selectedFolder=38&selectedFolder=32&selectedPages=4&_selectedAllMeasuredEvents=&selectedAllMeasuredEvents=on&_selectedAllBrowsers=&selectedAllBrowsers=on&_selectedAllLocations=&selectedAllLocations=on&_selectedAllConnectivityProfiles=&selectedAllConnectivityProfiles=on&includeNativeConnectivity=false&includeCustomConnectivity=false&customConnectivityName=
+
+
+
+"		Bug	OpenSpeedMonitor	19/Dec/16 11:14 AM	21/Dec/16 1:16 PM														21/Dec/16 1:16 PM;msk;Wenn man im tabularResultPresentation einen relativen Zeitraum (last 24h) angiebt, sind to und from nicht gesetzt. Der Fehler trat auf, weil trotzdem versucht wurde die beiden Parameter zu parsen.																																																						

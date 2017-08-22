@@ -1,0 +1,13 @@
+ goJS evaluierung information on Demo Server	"The goJS evaluation information is shown for all visualizations on the [demo server|https://www.iteraplan.de/iteraplan_ee_release/].
+
+
+
+The war file works correctly in a local environment (after adapting the db configuration). Building a new client with goJS 1.14 doesn't work either."		Bug	iteraplan Thunderduck	03/Jul/17 10:36 AM	05/Jul/17 9:26 AM														"03/Jul/17 4:23 PM;tsc;Obviously goJS checks the domain against the license. Since the license is created for iteratec.de and the demo server runs on iteraplan.de the evaluation message is shown.
+
+
+
+In this case we need either
+
+- a license for every customer (respectively for every domain iteraplan runs on)
+
+- another license without domain restrictions (""unlimited Applications"", see http://www.nwoods.com/store/p-82-gojs-oem.aspx)"	04/Jul/17 3:56 PM;tsc;iteraplan 6.0.2 deployed with correct license ([howto|https://iteraweb.iteratec.de/confluence/display/ITPL/GoJS+Lizenz+verwenden]).																																																					

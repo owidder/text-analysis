@@ -1,0 +1,1 @@
+RICKSHAW: dataLabels werden nur für erste Daten-series ausgegeben			Bug	OpenSpeedMonitor	21/May/15 5:08 PM	21/May/15 5:25 PM																																																																				

@@ -1,0 +1,3 @@
+Move edit configuration to list configuration	"Currently, we cannot configure which columns are editable and how they look. Instead, there's a fixed look and editability per ""column type"".
+
+Move decision about editability and editors of a column to the list configuration objects."		Improvement	iteraplan Thunderduck	17/Nov/16 2:20 PM	24/Nov/16 1:58 PM																																																																				

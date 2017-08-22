@@ -1,0 +1,15 @@
+Saving the ordering of colums in spreadsheet reports	We want save the ordering of the columns in a spreadsheet Report in iteraplan. Changing the is possible, e.g. moving the JiRA column to the left in the screenshot, but these changes are not saved in the query. After reloading the query the changes are lost. Is it possible to save the column order in the reports? Thanks!		Technical question	iteraplan Support	02/Jun/17 11:09 AM	26/Jun/17 7:00 AM														"02/Jun/17 11:09 AM;matheus.hauder@allianz.de;
+
+!Screenshot.png|thumbnail!"	"02/Jun/17 1:37 PM;msr;Dear Mr. Hauder.
+
+Thank you for your inquiry.
+
+The order of the columns is not saved in the Spreadsheet Report - Simple List.
+
+But the interactive client spreadsheet report (list view) saves the order of the columns in the URL and as saved query. This feature is available since iteraplan version 5.3: https://doc.iteraplan.de/display/iteraplan53/List+view
+A workaround in the classic client could be to use an excel-template with a certain order of the columns.
+
+Kind regards,
+
+Marcel Schrumpf - iteraplan Support
+"																																																					

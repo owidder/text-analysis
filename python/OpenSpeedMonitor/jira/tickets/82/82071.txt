@@ -1,0 +1,26 @@
+Interaktiver Client	"Hallo,
+
+
+
+in unserem Metamodell sind aktuell nicht alle Objekte vorgesehen. Wenn ich mit dem Interaktiven Client eine Landscape Visualisierung erstellen will, kann ich keine ""Row association"" auswählen. Der Klick auf ""Assigned Information System Domain"" läuft ins Leere und es kommt kein Menü. Die anderen beiden Menüs - ""column association"" und ""content element type"" funktionieren problemlos. Ich habe dann in jedem Bereich den wir aktuell nicht vorgesehen haben ein ""Dummy"" Objekt angelegt. Also ein Projekt, IS-Domäne, Fachliche Domäne usw.
+
+
+
+Jetzt kann ich im interaktiven Client die ""row association"" auswählen. Es scheint fast so, als ob der Menüpunkt ""row association"" nur erscheint, wenn bestimmte Daten im System gepflegt sind. Welche das sind (Projekt, IS.Domäne usw.) konnte ich nicht rausfinden, es soll ja auch noch Arbeit für euch da sein ;-) Soll ich die ""Dummy"" Daten jetzt im System belassen oder könnt Ihr mir sagen welche Datenobjekte vorhanden sein müssen damit die ""row"" ausgewählt werden kann?
+
+
+
+
+
+Gruß,
+
+Simon Gripskamp
+
+
+
+"		Fault	iteraplan Support	26/Apr/16 1:41 PM	03/May/16 11:02 AM														"29/Apr/16 4:13 PM;sfe;Hallo,
+bitte entschuldigen Sie die späte Antwort.
+Sie haben Recht, die Konfiguration für einen entsprechenden Diagrammbereich funktioniert nur, wenn es auch Objekte für den aktuell zugewiesenen Typen gibt. Dies ist ein Fehler, der uns seit einiger Zeit bekannt ist, und den wir in der iteraplan-Version 5.2.0 behoben haben.
+
+Viele Grüße,
+Stephan Feroudj"																																																						

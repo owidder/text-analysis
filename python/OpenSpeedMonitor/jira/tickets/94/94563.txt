@@ -1,0 +1,17 @@
+MPD: Icon for infrastructure too large	"In the MPD the wrong (large) instead of the small icon is used. This disturbs the whole layout.
+
+
+
+See screenshot.
+
+
+
+Please exchange the icon to the proper one."		Bug	iteraplan Speedbird	29/Aug/16 4:50 PM	19/Sep/16 1:22 PM														"16/Sep/16 5:46 PM;ants;Currently correct small icon is used for Infrastructure element. But it is 15 pixels wide and 28 pixels high (app/images/icons-15-white/12-Infrastructure-element.png).
+
+Big icon is 23 pixels wide and 43 pixels high.
+
+Currently used small icon is higher than default diagram header row height (20 pixels), so row height is adjusted by goJS to fit icon height.
+
+To resolve issue, described in current ticket, icon for infrastructure was resized to 10x18 pixels and then its canvas size changed to 15x18.
+
+"	19/Sep/16 1:21 PM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-43																																																					

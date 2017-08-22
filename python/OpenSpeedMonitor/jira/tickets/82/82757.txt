@@ -1,0 +1,5 @@
+Quantitative Darstellung der Merkmale in der GUI	"Die Merkmale sollen anhand ihrer Ausprägungen qualitativ dargestellt werden
+
+
+
+Offen: Darstellung, wie?"	82751	Sub-task	EAM-Visualisierung	02/May/16 1:49 PM																																																																					

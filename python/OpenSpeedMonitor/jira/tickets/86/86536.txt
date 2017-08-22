@@ -1,0 +1,23 @@
+Include link to InformationFlowScript of Reactor	"*Summary:*
+
+
+
+1. Create a new Button in the IFD (left next to the ""version""): ""Show Corporate Information Flow"" (=Link) to a new static HTML-site (route: #/reactorCorporateInfoFlow)
+
+2. Static HTML-site:
+
+* Same header as in all other diagram pages
+
+* Localised text either in German or in English (from attached text.txt) split in two paragraphs
+
+* 1. paragraph: picture on the left, text with title on the right
+
+* 2. paragraph: text with title left, picture on the right
+
+* 1 Download-Button  in grey layout centered below to download the attached for zip-file (xls and xml-files)"		New Feature	iteraplan Speedbird	06/Jun/16 4:22 PM	22/Jul/16 9:56 AM														21/Jul/16 10:15 AM;msr;Show Corporate Information Flow = German "Zeige die Corporate Informationsfluss-Grafik"	21/Jul/16 11:15 AM;msr;I've updated the text (replaced the name of the file and used "extract" instead of "save". That's it.	"22/Jul/16 9:56 AM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-81
+
+
+
+[~msr], please, ensure that there are no typos in German version of the created page."	"22/Jul/16 10:32 AM;msr;I can't access the review in fisheye, but I find at least one typo: ""Information*s*fluss-Grafik""
+
+[~dmkh]: Thank you for your comment. Do you see any other typos?"	22/Jul/16 10:48 AM;dmkh;[~msr], there are no typos left, please contact [~roia] to fix the one you have found or just commit a change by your own. Thanks.																																																		

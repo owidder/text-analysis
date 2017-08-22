@@ -1,0 +1,21 @@
+Exceptions after resizing/minimizing window	"Summary:
+
+Resizing, minimizing and maximizing of window causing console errors
+
+
+
+Steps to reproduce:
+
+1) Open home page
+
+2) Click ""Minimize"" button on browser window
+
+
+
+Actual result: an exception appears (see screenshot)
+
+Expected result: window is resized without exceptions
+
+
+
+Note: after short investigation, noticed that after resizing there are no md-cols attributes in material gridlist present."		Bug	iteraplan Speedbird	19/Jun/17 10:14 AM	18/Jul/17 8:55 AM																																																																				

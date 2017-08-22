@@ -1,0 +1,61 @@
+Description view is broken	"h4.Problem Description:
+
+
+
+Description has broken view
+
+
+
+h4.Reproduction Steps:
+
+ * Open application and navigate to Information System page
+
+ * Select any System and update Description with big data that doesn't have formatting
+
+
+
+ 
+
+
+
+h4.Observed Results:
+
+
+
+Description is updated but it has broken view: only one row of text is displayed, the rest of space that is reserved for text is empty. See attached screenshot.
+
+
+
+
+
+h4.Expected Results:
+
+
+
+Description is updated and data should be displayed properly.
+
+
+
+ 
+
+
+
+h4.Note:
+
+
+
+- Used dev and #330 build in FF
+
+- When update Description with text that has formatting more than one row is shown.
+
+
+
+{color:red}UPDATE: {color} Please implement wrapping only for the richtext-fields."		Bug	iteraplan Speedbird	02/Jun/17 2:54 PM	30/Jun/17 9:07 AM														"23/Jun/17 1:35 PM;roia;[~mash], now all cells in the grid have wrapped text (e.g., names, duraions, etc).
+
+
+
+[~msr], should we have wrapping for all column types or for richtexts only?
+
+
+
+!wrapping.png!"																																																						

@@ -1,0 +1,3 @@
+Deletion of log and index directories uses wrong location	"When log and index directories are to be deleted, the application looks for them within the tomcat installation directory right now.
+
+These directories are configured as property though, and per default not within the tomcat installation directory, that's why they are not actually cleaned up at the moment."	93358	Sub-task	iteraplan Speedbird	02/Nov/16 10:28 AM	03/Nov/16 3:41 PM																																																																				

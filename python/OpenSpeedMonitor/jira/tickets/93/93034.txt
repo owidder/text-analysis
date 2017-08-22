@@ -1,0 +1,5 @@
+Add security to DetailAnalysis	"Momentan ist der Mikroservice komplett ungesichert. 
+
+
+
+Man könnte z.B. die Kommunikation zwischen OSM und Mikroservice mit einem API-Key absichern. "		Improvement	OpenSpeedMonitor	11/Aug/16 2:45 PM															12/Aug/16 7:44 AM;mmi;Es sollte auch ein Login-System zumindest für Admins geben, damit bspw das Console-Plugin abgesichert werden kann.																																																						

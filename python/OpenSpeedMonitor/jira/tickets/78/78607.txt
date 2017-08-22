@@ -1,0 +1,1 @@
+Spiderlauf auf die Target-Domain einschränken	Der iteraSpider sollte nur die Target-Domain crawlen und nicht den Links auf externe Domains folgen. Bzw. sollten vielleicht Redirects von dem Spider ignoriert / gefiltert werden.	78657	Sub-task	secureCodeBox	29/Mar/16 9:56 AM	18/Apr/16 5:26 PM																																																																				

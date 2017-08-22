@@ -1,0 +1,16 @@
+History Migration von 5.2 auf 5.5	"Wir haben bei uns in einer Testumgebung unsere Produktionsdaten auf 5.5 gehoben und dabei die History ebenfalls migriert. Die Laufzeit von 63 Stunden sprengt hierbei jeglichen Rahmen.
+
+Wie kann man das Beschleunigen ?"		Fault	iteraplan Support	05/Apr/17 3:08 PM	25/Apr/17 7:00 AM														"06/Apr/17 9:40 AM;cst;Guten Morgen Herr Zerrer,
+
+
+
+vielen Dank für Ihre Anfrage.
+
+Für die History-Migration wurde dieses Tool eigens programmiert und es kann hier zu längeren Wartezeiten kommen. Eine ""performance"" Patch, oder ähnliches wird es hierfür nicht geben.
+
+
+ Wenn die Migration auf dem System durchgeführt wird, auf dem die Datenbank installiert ist, kann dies die History-Migration beschleunigen. Es ist auch möglich die History Migration mit einem Datenbank-DUMP lokal auf einem Separaten Rechner durch zu führen und die migrierten History-Daten in das live System zusammen zu führen. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "																																																						

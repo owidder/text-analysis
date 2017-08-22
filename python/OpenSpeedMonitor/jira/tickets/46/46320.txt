@@ -1,0 +1,36 @@
+POC Selenium smoke test for menu navigation to screen	"Develop a Selenium smoke test that asserts for each item of the menu bar that it leads to the expected screen.
+
+First step in this ticket - POC:
+ * use one type of browser, locally (different browsers on remote VMs later)
+ * login only (logout later) as superuser (use fixed name/pw of demo)
+ * check only 3 different screens (1 in EA Data, Visualisations, Configuration each) (more later)
+ * configuration for start URI
+ * ignore the non-navigation menu items (language, help, logout...)
+ * assert the target screen by its document title (window title). write some utility to ignore changing object IDs. (assert more later)
+ * run Selenium (JUnit) test locally only, on IDE (on Jenkins later)
+ * Ignore screens that are not directly accessible from the menu, for example modals, or later steps in multi-step flows.
+
+After this ticket is done, create and discuss follow-up tickets"		Improvement	iteraplan PO	08/Nov/13 1:42 PM	19/Dec/13 12:03 PM					gui									"12/Nov/13 2:44 PM;jmi;WFr (guest user here)
+
+Login should take the driver as a constructor parameter and a final field.
+
+All interaction with browser should use the Driver object, not the Selenium object.
+
+Compare.compare should assert, and be named so.
+SeleniumUtils.assertPageTitle( String )
+This class has a driver, by construction, as above.
+To assert, use JUnit's Assert.assertEquals, but not here :-)
+assertTrue( <comparison goes here > )
+
+SeleniumUtils.clickMenuItem(menuId, menuItemId)
+
+Login and Logout in one class, but keep that separate from Utils
+
+"	"09/Dec/13 10:25 AM;mba;The TODOs, mentioned in the description of this issue have all been resolved except for the configuration of the start URI. This must currently be done by manually changing the field baseurl withinSeleniumMultipleBrowserTest.java. This should be made configurable somewhere outside the source code (e.b. property-files)
+
+In Addition I found several little issues regarding the source-code:
+* NavigationTest.testStartpageSearch() fails
+* ConsistencyCheckTest: we should discuss alternative solutions for identifying the correct Buttons with wrf, as I'm not sure whether the index is appropriate here
+* Each subclass of SeleniumMultipleBrowserTest has a field logInOut (of type LogInOut) => shouldn't we move the field up to the superclass?
+* Error in CompareTitlesTest.testWithNull(): Since the first assert already throws a NPE (@line: 42), the remaining is never called! This leads to another error within the SeleniumAssertions.comparePageTitle(): Here, the isEmpty() check is done before a Null-Check => NPE where there shouldn't be one"	"09/Dec/13 2:31 PM;jmi;wfr said the indexes for the consistency-check are ok, since the Selenium IDE only offers Xpath for these buttons and the ""//input[@value='Ausführen'])[someNumber]"" is the best alternative.
+Also I'll talk with lba about changing the baseURL in a properties-file."	16/Dec/13 2:27 PM;jmi;Created a subtask for the base-URI-part of mba's comment.	17/Dec/13 4:29 PM;mba;start URI configuration is handled in ITERAPLAN-2263	09/Jan/14 6:51 PM;fka;Reviewed with JMI																																																	

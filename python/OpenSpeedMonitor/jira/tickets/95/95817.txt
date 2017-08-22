@@ -1,0 +1,1 @@
+Set only the name by default	# In the create diff some mandatory values are set. Remove the values of all other than the name, as only the name is necessary. 		Improvement	iteraplan Thunderduck	12/Sep/16 10:14 AM	14/Sep/16 10:46 AM														14/Sep/16 10:46 AM;mse;Review ok.																																																						

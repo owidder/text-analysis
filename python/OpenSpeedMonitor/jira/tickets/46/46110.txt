@@ -1,0 +1,17 @@
+Assigning elements to the "uses" relation in Infrastructure Elements can lead to error page	"This happens if you assign two or more elements to the ""uses"" relation.
+
+Excample (with iteraplan sample data):
+
+# Open IE *Cluster 1* and click edit
+# Select *IBM Host 1* in the *uses the following Infrastructure Elements* dropdown
+# Click the plus sign for adding another element
+# Assign *IBM Host 2* in the *uses the following Infrastructure Elements* dropdown
+# Either click the plus sign again, or the save button
+=> Error page
+
+If you add the relationship between those elements by editing *IBM Host 1* and *IBM Host 2* to each add *Cluster 1* in the *used by* relation, it works.
+
+Reason is the sorting of the added elements which causes a call to get all children of the parents of the elements to add (to determine their position in the children list), see {{OrderedHierarchicalEntityCachingComparator}}.
+Since the children list of the newly added elements is not loaded into the entity at that point, and no database session is available, an Exception is thrown.
+
+Possible solution: Use different comparator (as in the ""used by"" side of the relation)."		Bug	iteraplan PO	09/Oct/13 9:55 AM	09/Oct/13 12:52 PM					edit	relation								10/Oct/13 2:33 PM;psc;Reviewed. Ticket will be closed.																																																						

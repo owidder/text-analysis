@@ -1,0 +1,5 @@
+PageAggregation Chart	"Es soll ein neues ""PresentationModule"" angelegt werden, welches Durchschnittswerte bestimmter Kategorien als Barchart anzeigen kann. So zum Beispiel die durschnittliche doc-complete Zeit verschiedener Seiten, zB aggregiert nach Device-Typ oder Browser. Später soll auch der Vergleich zu anderen Job-Groups im Barchart möglich sein.
+
+
+
+Dieses PresentationModule soll wie in IT-1316 beschrieben als neues grails web-plugin entwickelt wird welches ein ""core"" plugin nutzt, das wir erst extrahieren müssen"		Epic	OpenSpeedMonitor	26/Oct/16 1:34 PM																																																																					

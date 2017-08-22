@@ -1,0 +1,1 @@
+Create REST interface (backend)	See IPTQ-82 for API definition.		New Feature	iteraplan Quickfox	03/Aug/16 2:22 PM	01/Sep/16 11:52 AM														11/Aug/16 5:49 PM;mwe;See IPTQ-26 for an example.																																																						

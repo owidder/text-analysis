@@ -1,0 +1,15 @@
+2. Help in the toolarea	"* Remove the explanation ""and Zoom by Ctrl + mousewheel"" from the howToUseDiagram-key
+
+* Create a new Toolarea-subentry:
+
+** Main entry ""Display""
+
+** Sub-Entry below levels ""Zoom""
+
+** Sub-Sub-Entry: ""Zoom by Ctrl + mousewheel"" (German: ""Zoom mit Strg + Mausrad"")
+
+
+
+No click handling, just static text"	89483	Sub-task	iteraplan Speedbird	06/Jul/16 9:41 AM	11/Jul/16 10:28 AM														"08/Jul/16 2:05 PM;roia;Review complete: https://iteraweb.iteratec.de/fisheye/cru/IP-53
+
+Have a few questions, [~msr] could you please answer them."																																																						

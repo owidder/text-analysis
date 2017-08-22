@@ -1,0 +1,9 @@
+Numeric Attribute Filter corrupted	"- Open CCD
+
+- Header -> Attribute -> Costs
+
+- add a between-filter (e.g. between 100-200)
+
+
+
+- filter doesn't work, see console errors"		Bug	iteraplan PO	06/Feb/17 2:07 PM	06/Feb/17 3:29 PM																																																																				

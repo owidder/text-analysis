@@ -1,0 +1,13 @@
+LV & SEV UI: Subscriptions Dropdown	"In *List View* and *Single Element View*: Click on the button ""*BLABLA SUBSCRIPTIONS*"".
+
+ The Dropdown opens. But it doesn't really dropdown. It's rather a popup over the original button.
+
+
+
+ToDo: 
+
+ 1. {color:#14892c}Rename{color} the button to just ""SUBSCRIPTIONS"" / GER: ""ABONNEMENTS"" without the name of the List/Element (the star-icon and the dropdown-arrow remain as they are).
+
+ 2. Place the {color:#14892c}dropdown-menu beneath the button{color} (not over it), the dropdown should be aligned with the right border of the button.
+
+ 3. The style of the Dropdown-menu should match the {color:#14892c}style{color} of e.g ""Diagrams""-Dropdown (in LV). Please take the exact values from our Style guide: [https://iteraweb.iteratec.de/confluence/display/ITPL/Buttons] (Dropdown-menu)"		Improvement	iteraplan Speedbird	26/Jun/17 3:40 PM	21/Jul/17 1:33 PM					subscriptions	UI																																																														

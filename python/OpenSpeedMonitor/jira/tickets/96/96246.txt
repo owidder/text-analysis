@@ -1,0 +1,11 @@
+PieChart hover info	"Im Pie Chart selbst werden nicht alle Namen (aus Platz gründen) angezeigt.
+
+Beim Hovern über ein einzelnes Segment taucht dann ein Info Fenster auf.
+
+In diesem steht jedoch die ID des Sements, nicht das Mapping.
+
+Beispiel:
+
+Man hovert über das PieChart für Page. Im auftauchenten Infofeld steht ""1: 124"" anstatt von ""HP_entry: 124"".
+
+"		Task	OpenSpeedMonitor	16/Sep/16 12:57 PM	16/Jan/17 3:13 PM																																																																				

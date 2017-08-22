@@ -1,0 +1,7 @@
+Test iteraQL console via test sheet	"Short documentation of results in this ticket
+Findings in a new bug / task ticket
+
+NOT to be done by GPH, who created the test sheet"		Task	iteraplan PO	24/Apr/14 11:23 AM	25/Apr/14 10:11 AM					iteraQL	test								"24/Apr/14 2:33 PM;isc;Findings:
+* ITERAPLAN-2471
+* ITERAPLAN-2472"	"25/Apr/14 8:30 AM;isc;I have only the two above-mentioned bugs found. Everything else was OK.
+Tested with IE 11 and FF 28"																																																					

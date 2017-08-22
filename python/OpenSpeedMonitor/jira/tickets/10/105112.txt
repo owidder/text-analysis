@@ -1,0 +1,7 @@
+[PageAggregation] Balken eines zweiten Messwertes werden falsch angezeigt	"Ich habe 2 Attribute ausgewählt und die Balken waren verschoben. Will sagen, der eine hing in der Luft. Hier die URL zur lokalen Instanz:
+
+http://localhost:8080/pageAggregation/show?selectedInterval=-1&selectedTimeFrameInterval=0&from=24.11.2016&fromHour=04%3A03&to=1.12.2016&toHour=04%3A04&selectedFolder=2&selectedPages=7&selectedPages=1&selectedPages=2&selectedPages=8&selectedPages=3&selectedPages=4&selectedPages=6&measurand=%7B""stacked""%3A""notStacked""%2C""values""%3A%5B""docCompleteTimeInMillisecsUncached""%5D%7D#
+
+
+
+Mit einem 30d-Dump von OTTO aufgetreten. "		Bug	OpenSpeedMonitor	09/Dec/16 10:38 AM	12/Dec/16 12:09 PM																																																																				

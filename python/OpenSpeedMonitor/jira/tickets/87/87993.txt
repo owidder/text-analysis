@@ -1,0 +1,7 @@
+Headless Browser für Bamboo	"Da der Bamboo keine grafische Oberfläche hat, benötigt er einen Headless Browser für die Geb-Tests.
+
+Ein solcher muss noch in der build.gradle konfiguriert werden.
+
+Da auch die Karma Tests einen Headless Browser nutzen, kann evtl dieser auch für die Geb-Tests verwendet werden.
+
+Alternativ kann auch ein Headless-Firefox konfiguriert werden."		Task	OpenSpeedMonitor	20/Jun/16 10:37 PM	29/Jul/16 5:17 PM														13/Jul/16 4:50 PM;nku;Bitte schließen, wenn hier nichts mehr zu tun ist.																																																						

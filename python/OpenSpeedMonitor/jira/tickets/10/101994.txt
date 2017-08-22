@@ -1,0 +1,13 @@
+Location wird nicht richtig angeleget	"Wenn man den WPT-Server prod.server03.otto.wpt.iteratec.de hinzufügt und automatisch die Locations updatet, wird zumindest eine Location falsch angelegt.
+
+
+
+Angelegt wird die Location mit dem Unique Identifier For Server otto-prod-iPhone5, richtig scheint aber otto-prod-iPhone5:iPhone5 zu sein.
+
+
+
+Wenn ein Job mit der Location gestartet wird, kommt es zu folgender Fehlermeldung:
+
+
+
+Error: Location not found for LocationIdentifier: otto-prod-iPhone5:iPhone5"		Bug	OpenSpeedMonitor	08/Nov/16 3:04 PM	12/Dec/16 6:28 PM														12/Dec/16 6:28 PM;msk;Das Format in dem der WPT die Locations veröffentlicht scheint sich geändert zu haben. Der Osm kann jetzt sowohl mit dem altem, als auch mit dem Neuen umgehen.																																																						

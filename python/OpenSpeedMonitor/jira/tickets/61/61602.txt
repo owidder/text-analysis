@@ -1,0 +1,37 @@
+2.3  iteraplan Branch ziehen	"2.3  iteraplan Branch ziehen
+
+
+
+Es gilt folgende Namenskonvention:
+
+
+
+    * Branch: RB_<major>_<minor>_<maintenance> (z.B. RB_3_1_0) bzw. for Milestone Releases Milestone_<major>_<minor>_<milestone> (z.B.Milestone_3_1_M2)
+
+
+
+*    Erstellung aus dem Trunk:
+
+ **       Dies ist die einfachste Variante, die verwendet werden kann, wenn der Trunk dem Stand entspricht, der released werden soll.
+
+   **     Property ""common-base.version"" in der pom.xml auf die weiter oben für iteraplan-common-base gesetzte Version setzen (in dem Beispiel auf 1.1.0). Falls seit dem letzten Release keine Änderungen an iteraplan-common-base durchgeführt wurden, hier die Versionsnummer, die im letzten Release gesetzt war (z.B. 1.0.0) eintragen, falls dies nicht schon so ist.
+
+     **   Property ""elasticMI.version"" in der pom.xml auf die weiter oben für Elastic MI gesetzte Version setzen (in dem Beispiel auf 4.1.0). Falls seit dem letzten Release keine Änderungen an elastic MI durchgeführt wurden, hier die Versionsnummer, die im letzten Release gesetzt war (z.B. 4.0.0) eintragen, falls dies nicht schon so ist.
+
+       ** genauso für: SpringSecurityExtensions
+
+       ** Der Branch wird direkt aus dem Trunk erstellt
+
+       ** Danach Build-ID und Version in build.properties im Branch anpassen und committen.
+
+       ** Versionsnummer in pom.xml entsprechend der Build-Version in der build.properties anpassen und committen.
+
+
+
+*    Im Trunk die Build version in build.properties und pom.xml auf die nächste gültige ""-SNAPSHOT""-Version setzen.
+
+*    Nur im Branch: Anpassen der Migrationsinfo
+
+ **       in build.properties die Properties scripts.last, scripts.secondLast und scripts.thirdLast entsprechend der zu integrierenden Migrationsskript-Ordner anpassen
+
+   **     Konvertieren der Migrationsanleitungen in diesen Ordnern zu PDF. Die *.docx Dateien können anschließend entfernt werden"		Task	iteraplan PO	27/Oct/15 8:38 AM	02/Nov/15 8:49 AM																																																																				

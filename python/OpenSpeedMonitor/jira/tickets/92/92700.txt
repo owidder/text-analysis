@@ -1,0 +1,17 @@
+Improve wrapping	"1. Always ""active"" without a left click on the header, i.e.
+
+* Ensure, that it is always ""active"" without any click: Immediately highlight the border line in the header and change the mouse icon
+
+
+
+2. Always show light grey column grid line in the dataDiagram (see Screenshot)
+
+
+
+3. Improve interaction with the resizer:
+
+* If the columns are more narrow (by changing the column width), change the column widht of the whole DataDiagram with the help of the resizer, i.e. there exists no white space
+
+* Set the minimum column width for the column wrapping and for the resizing of the whole data diagram to 10 pixel.
+
+"		Improvement	iteraplan Speedbird	08/Aug/16 7:48 AM	08/Aug/16 3:06 PM																																																																				

@@ -1,0 +1,5 @@
+RICKSHAW Spinner beim Export anzeigen	"Für den Export von Diagrammen als png werden die (SVG-)Elemente auf der Seite temporär verschoben und in ihrer Größe verändert. Das sieht etwas merkwürdig aus. 
+
+Vielleicht sollten wir hier für die Dauer des Exports einen Spinner einblenden. 
+
+Unabhängig vom Spinner: Bekommt man das auch unbemerkt hin? "		Improvement	OpenSpeedMonitor	20/May/15 12:54 PM	20/May/15 1:30 PM																																																																				

@@ -1,0 +1,13 @@
+Chrome Tracing und DevTools in Job-Konfiguration ermöglichen	"WPT bietet folgende Chrome-spezifischen Möglichkeiten:
+
+* Capture Dev Tools Timeline
+
+* Capture Chrome Trace (about://tracing)
+
+
+
+Diese zeigen z.B. die JavaScript Ausführungszeiten im Browser an.
+
+Wir sollten in der Job-Konfiguration zumindest auch diese beiden Einstellungen unterstützen.
+
+"	109622	Sub-task	OpenSpeedMonitor	30/Nov/16 10:51 AM	21/Jun/17 8:31 AM														18/Jan/17 4:42 PM;sbr;Siehe auch IT-736																																																						

@@ -1,0 +1,31 @@
+Change content of "relation" field in JSON for changes in association elements	"Currently, if there are changes to the relation between IS and IE, a json fragment might look like this:
+
+
+
+{noformat}
+
+        {
+
+          ""relation"": ""isr2Ie"",
+
+          ""changesOfRelations"": [
+
+            {
+
+              ""idOfRelatedBB"": 350,
+
+              ""changetype"": ""INSERT"",
+
+              ""changes"": [ ... ]
+
+...
+
+{noformat}
+
+
+
+Change the content of the field ""relation"" to the actual path to the related type.
+
+In this case to ""/infrastructureElementAssociations/infrastructureElement"".
+
+For this, adjust the constants used in {{HistoryEntriesBuilderVisitor}} and create new ones where necessary, to set the field differently dependent of the main type it is viewed from."		Bug	iteraplan Thunderduck	18/Oct/16 2:56 PM	20/Oct/16 2:16 PM														20/Oct/16 2:13 PM;pma;Review comments: OK																																																						

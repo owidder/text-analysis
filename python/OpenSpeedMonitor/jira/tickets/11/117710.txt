@@ -1,0 +1,22 @@
+Assigned Interfaces - Connected IS missing in IS view	"Assigned Interfaces in IS view:
+
+Connected IS is missing 
+
+only name, direction, transported BO and technical  component is listed. but the most important ""Connect IS"" is missing.
+
+"		Fault	iteraplan Support	05/Apr/17 10:22 AM	05/Apr/17 12:43 PM														"05/Apr/17 10:22 AM;ansgar.marsiske@coface.com;
+
+!2017-4-4-10-21-13-882.png|thumbnail!"	"05/Apr/17 11:06 AM;cst;Hello,
+
+thanks for your inquriy. 
+
+The ""Connected IS"" is found in the () of the ""Name"" column. 
+In your example (INCA - *Delivery Claims Reinsurance*). 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"05/Apr/17 12:02 PM;ansgar.marsiske@coface.com;sorry - my error - you are right
+thank you.
+
+best regards
+Ansgar Marsiske"																																																				

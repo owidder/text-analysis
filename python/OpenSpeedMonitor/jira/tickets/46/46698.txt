@@ -1,0 +1,3 @@
+"general technical error" when generating complex visualization	See attached iteraplan error logs.		Bug	iteraplan PO	23/Jun/14 1:45 PM	30/Jun/14 4:04 PM														30/Jun/14 4:04 PM;gph;Answered in support box.	"09/Jul/14 10:50 AM;frank.reiter;In case anybody is interested what happened: The error thrown because iteraplan ran out of memory.
+
+To bad iteraplan does not provide a meaningful error message and one has to involve the iteraplan support team to get this information!"																																																					

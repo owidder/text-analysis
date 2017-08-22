@@ -1,0 +1,6 @@
+Logging of unsuccessful login attempts	"Currently each successful login attempt is logged in a special logfile by {{UserContextInitializationService}}.
+Unsuccessful login attempts are not logged.
+
+Please add logging of unsuccessful login attempts into the same file.
+_Possible implementation:_
+Extend or wrap spring security's {{ExceptionMappingAuthenticationFailureHandler}} to add the logging functionality to the method {{#onAuthenticationFailure}} and use the new implementation as failure handler in the spring security configuration."		New Feature	iteraplan PO	01/Apr/15 3:16 PM						authenication	logging																																																														

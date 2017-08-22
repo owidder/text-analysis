@@ -1,0 +1,1 @@
+Mass delete confirmation message should be wrapped	!mass-delete-confirmation.jpg!		Bug	iteraplan Speedbird	16/May/17 10:10 AM	01/Jun/17 2:25 PM														01/Jun/17 2:25 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-635																																																						

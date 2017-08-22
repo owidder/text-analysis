@@ -1,0 +1,9 @@
+Zugangsberechtigung Jira	"Michael Knödler braucht Zugriffsberechtigung für das Wiki Bereich Daimler Digitale Fügefolge Projekt ""DiFF-Digitale Fügefolge""
+
+
+
+[https://iteraweb.iteratec.de/confluence/pages/viewpage.action?pageId=70910375]
+
+
+
+ "		Task	Infrastruktur	12/Jun/17 5:12 PM	13/Jun/17 9:04 AM	Confluence													13/Jun/17 9:04 AM;sas;Berechtigung erteilt /Gruß																																																						

@@ -1,0 +1,5 @@
+Den OSM mandantenfähig machen	"Um auf einer Instanz wie z.B. der Produktiv-Instanz iteratec (http://openspeedmonitor.wpt.iteratec.de) mehrere Kunden testen zu können wäre eine Mandantenfähigkeit hilfreich. Zumindest wenn man damit leben kann, die Daten aller Mandanten in einer Datenbank zu halten gibt es ein vielversprechend aussehendes Grails-Plugin:
+
+http://multi-tenant.github.io/grails-multi-tenant-single-db/docs/v0.8.3/
+
+"		Epic	OpenSpeedMonitor	29/Feb/16 10:13 AM																																																																					

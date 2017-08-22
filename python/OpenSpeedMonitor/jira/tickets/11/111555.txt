@@ -1,0 +1,19 @@
+Deactivate caching of GET-responses (especially for IE)	"Deactivate caching of GET-responses (especially for IE) either on the client or on the server.
+
+
+
+Ensure that your solution does not break the polling-mechanism using Etag-header and If-none-match-header-fields.
+
+
+
+See:
+
+https://github.com/jhipster/generator-jhipster/issues/777
+
+and
+
+http://stackoverflow.com/questions/49547/how-to-control-web-page-caching-across-all-browsers
+
+and
+
+http://stackoverflow.com/questions/16098430/angular-ie-caching-issue-for-http"		Bug	iteraplan PO	10/Feb/17 3:41 PM	14/Feb/17 11:51 AM																																																																				

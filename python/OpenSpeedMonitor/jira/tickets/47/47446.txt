@@ -1,0 +1,15 @@
+Names of inner boxes are cropped in some cases	"Steps to reproduce:
+
+1. Use Project as outer type and Project as inner type
+2. Use AD as outer type and TC as inner type
+
+Solution:
+* Add margin to avoid text being too close to bounds
+* Analyse whether the extra ""n"" in the second screenshot is related/the same issue. If not create a new defect ticket."		Bug	iteraplan PO	26/Feb/15 3:17 PM	16/Jun/15 2:13 PM														"26/Mar/15 2:26 PM;wfr;cosmetic, as long as text is readable.
+
+good/exact layout might be more complicated than expected."	"09/Jun/15 1:17 PM;fam;Fixed problem with too long strings. Adjusted to fit into boxes now.
+The issue with the extra ""n"" is another problem. Created ticket ITERAPLAN-3212 for this bug."	"12/Jun/15 1:02 PM;isc;With the changes in the „service.diagramElementProcessor.js“ the ncd with the configuration “Informationsystems” as outer elements and “Interfaces” as inner element doesn’t work anymore. 
+The browser cancels the creation of the diagram.
+"	"16/Jun/15 10:47 AM;fam;The new problem here was caused by long strings which could not be splitted.
+Fixed within ITERALAN-3206. 
+In this ticket, also the problem with the extra ""n"" was fixed."																																																			

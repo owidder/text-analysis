@@ -1,0 +1,11 @@
+Add numeric coloring to ItemDecorator	Implement numeric coloring options.		New Feature	iteraplan PO	04/Mar/15 11:17 AM	07/Apr/15 1:27 PM														24/Mar/15 1:11 PM;sepr;This story is dependent from IPNINE-370	"31/Mar/15 3:06 PM;dasm;verified
+revision 852"	"01/Apr/15 5:57 PM;tam;lsdMain.js
+why did you remove the drawLegend?
+the drawDiagram looks like it consists of configuration stuff and drawing table and legend.
+So maybe it's better to divide it in these parts?
+
+lsdConfiguration.js
+17. What is actually p? Does it mean property or parameter? Could you jsdoc it?"	"02/Apr/15 9:35 AM;tam;lsdItemDecorator.js
+I'm not sure, if we need a bit more jsDoc. On the one hand the code is understandable,but it's not really clear, why it's implemented like this
+applyLayoutFunction - there are different implementations with different functions. maybe at least short what they are doing
+collectValuesFunction - same here"																																																			

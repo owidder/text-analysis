@@ -1,0 +1,29 @@
+Rendering Html in List cells	"*Summary:*
+
+The list renders html instead of showing the plain source text.
+
+
+
+*Reproduce:*
+
+* Rename the name of any Information System in the list to <b>NAME</b>
+
+
+
+*Actual:*
+
+* The name is shown in *bold*
+
+
+
+*Expected:*
+
+* The cell should state ""<b>NAME</b>""
+
+
+
+*Idea:*
+
+* Escape all inputs in the list
+
+* Use an already existing library, e.g. $sanitize"		Bug	iteraplan PO	02/Feb/17 3:38 PM	03/Feb/17 2:53 PM														03/Feb/17 2:52 PM;dmkh;Bug is fixed, review is done.																																																						

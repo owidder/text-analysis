@@ -1,0 +1,11 @@
+Eingabe von HUB-Detail-Bewertungen für Merkmale durch Nutzer (User-Generated-Feedback)	"Der Nutzen möchte für Merkmale von Bebauungselemente Feedback d.h. Bewertungen abgegeben können z.B. über den Zusatz der Infrastruktur, Reifegrad oder NFA-Fähigkeit zur Abbildung von Performance-KPIs.
+
+
+
+Die Bewertungs-Raster werden als Tab innerhalb der HUB-Info-Details angezeigt. Hierbei werden im Minimum folgende Infos gezeigt:
+
+* Überschrift des Merkmals
+
+* Beschreibung des Merkmals
+
+* Bewertungs-Skala und -Auswahl zur Abgabe der eigenen Bewertung"		Story	EAM-Visualisierung	22/Jul/16 10:13 AM																																																																					

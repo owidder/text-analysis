@@ -1,0 +1,1 @@
+Make simple SVG diagram in one color with outer box and several inner boxes		46787	Sub-task	iteraplan PO	12/Aug/14 3:04 PM	18/Sep/14 3:45 PM																																																																				

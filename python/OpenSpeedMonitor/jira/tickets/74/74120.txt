@@ -1,0 +1,5 @@
+Rickshaw: Y-axis Adjustment funktioniert nicht	"Sämtliche Einstellungen führen zu falschen Ergebnissen.
+
+Wird ein Min-Wert gesetzt und Max auf Auto gelassen, so wird die Y-Achse gedreht.
+
+Wird der Max-Wert gesetzt, so werden vollkommen falsche Dinge dargestellt."		Bug	OpenSpeedMonitor	19/Feb/16 10:31 AM	24/Feb/16 10:48 AM														19/Feb/16 1:08 PM;mmi;Dieses Phänomen tritt nur beim Multi-Axis-Chart auf. Auf dem CsiDashboard (wo es nur eine Y-Achse gibt) ist alles in Ordnung.																																																						

@@ -1,0 +1,19 @@
+Visualisierung der EA-Daten	"Konzept und Umsetzung von:
+- Informationssysteme
+- Schnittstellen
+- Technische Bausteine
+- Cloud / Rechenzentrum
+(-> Ist/Plan)
+
+MVP:
+Uli möchte zeigen, wohin die Daten eines Sensors gesendet werden.
+Dazu werden zu den verbundenen Informationssystemen die zugehörigen Rechenzentren (konkret Aachen oder Hamburg) visualisiert. 
+D.h. Sensor =>(verwendet) Informationssystem (Host = wo)
+
+Schön wäre, wenn die Info nicht nur textuell, sondern auch grafisch dargestellt werden kann.
+
+Welche Daten werden versendet?
+Sensor => Informationssystem => Geschäftsobjekt
+
+Idee:
+Mit links/rechts-Tab durch die angezeigten Informationen (Sensoren oder EA-Details) durchklicken"		Task	EAMV15	07/Dec/15 2:29 PM	21/Dec/15 9:11 AM																																																																				

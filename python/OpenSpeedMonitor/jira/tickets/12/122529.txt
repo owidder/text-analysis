@@ -1,0 +1,9 @@
+User Guide: Document longrunning mass-update for a few hundred element	"Follow-up of IPTS-819:
+
+Document longrunning mass-update for a few hundred element:
+
+""This may take several minutes depending on the browser"""		Task	iteraplan Speedbird	26/May/17 5:18 PM	05/Jun/17 7:30 PM														"01/Jun/17 9:30 AM;aan;The warning is added on the following page at the end of mass update section
+
+
+
+https://doc.iteraplan.de/display/iteraplan60/List+view"	05/Jun/17 7:30 PM;fka;Looks good!																																																					

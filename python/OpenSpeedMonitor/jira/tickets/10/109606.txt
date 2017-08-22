@@ -1,0 +1,11 @@
+Dynamische Ergebnis-Auswahl auf tabularResults, pageAggregation, detailAnalysis kaputt	"Die AJAX Requests kommen mit Status Code 400 zurüc:
+
+{code}
+
+""Invalid parameters: Field error in object 'de.iteratec.osm.result.ResultSelectionCommand' on field 'caller': rejected value [null]; codes [de.iteratec.osm.result.ResultSelectionCommand.caller.nullable.error.de.iteratec.osm.result.ResultSelectionCommand.caller,de.iteratec.osm.result.ResultSelectionCommand.caller.nullable.error.caller,de.iteratec.osm.result.ResultSelectionCommand.caller.nullable.error.de.iteratec.osm.result.ResultSelectionCommand$Caller,de.iteratec.osm.result.ResultSelectionCommand.caller.nullable.error,resultSelectionCommand.caller.nullable.error.de.iteratec.osm.result.ResultSelectionCommand.caller,resultSelectionCommand.caller.nullable.error.caller,resultSelectionCommand.caller.nullable.error.de.iteratec.osm.result.ResultSelectionCommand$Caller,resultSelectionCommand.caller.nullable.error,de.iteratec.osm.result.ResultSelectionCommand.caller.nullable.de.iteratec.osm.result.ResultSelectionCommand.caller,de.iteratec.osm.result.ResultSelectionCommand.caller.nullable.caller,de.iteratec.osm.result.ResultSelectionCommand.caller.nullable.de.iteratec.osm.result.ResultSelectionCommand$Caller,de.iteratec.osm.result.ResultSelectionCommand.caller.nullable,resultSelectionCommand.caller.nullable.de.iteratec.osm.result.ResultSelectionCommand.caller,resultSelectionCommand.caller.nullable.caller,resultSelectionCommand.caller.nullable.de.iteratec.osm.result.ResultSelectionCommand$Caller,resultSelectionCommand.caller.nullable,nullable.de.iteratec.osm.result.ResultSelectionCommand.caller,nullable.caller,nullable.de.iteratec.osm.result.ResultSelectionCommand$Caller,nullable]; arguments [caller,class de.iteratec.osm.result.ResultSelectionCommand]; default message [Property [{0}] of class [{1}] cannot be null]""
+
+{code}
+
+
+
+Der neue ""Caller"" Parameter scheint daran Schuld zu sein. Dieser sollte per default auf ""EventResult"" stehen, damit dies nicht auf jeden Dashboard gesetzt werden muss (siehe resultSelection.js:31)."		Bug	OpenSpeedMonitor	25/Jan/17 8:18 AM	25/Jan/17 10:11 AM																																																																				

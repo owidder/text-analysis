@@ -1,0 +1,13 @@
+Layout von JobGroup CRUD-Formular kaputt	"Das Layout beim Anlegen von JobGroups ist derzeit total zerschossen und sollte daher an die anderen CRUD-Views angepasst werden.
+
+
+
+Kaputter JobGroup CRUD-View:
+
+http://openspeedmonitor.wpt.iteratec.de/jobGroup/create
+
+
+
+Beispiel für korrekten Style vom CRUD-View:
+
+http://openspeedmonitor.wpt.iteratec.de/location/create"		Bug	OpenSpeedMonitor	19/Dec/16 11:34 AM	22/Dec/16 4:05 PM																																																																				

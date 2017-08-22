@@ -1,0 +1,1 @@
+Execute Release-Builder-Jobs	https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-3.1Release-Jobausf%C3%BChren	92213	Sub-task	iteraplan Quickfox	19/Aug/16 8:40 AM	24/Aug/16 5:43 PM														24/Aug/16 5:43 PM;fka;Reviewed & Closed																																																						

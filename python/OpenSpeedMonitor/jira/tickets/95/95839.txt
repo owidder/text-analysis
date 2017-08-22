@@ -1,0 +1,71 @@
+Show attributable relations and business mappings in rows	"*Actual in interactive client*
+
+If user selects for header an attribute of an attributable relation (Apportionment) or business mapping (special case, attribute ""Support degree""), no content elements will be displayed
+
+
+
+*Expected*
+
+Relationships ends should be displayed.
+
+
+
+*Details*
+
+For now attributes of relations and business mappings are already selectable as header in the toolarea. However for them no content will be displayed.
+
+
+
+There three attributable relations: ISR-BO, ISR-IE, TC-IE
+
+
+
+If an attribute of such relations is selected for header, both relationship ends should be displayed as followed:
+
+* ISR<->BO
+
+* ISR<->IE
+
+* TC<->IE
+
+
+
+For example ""Account-Sys RB # 3.1 <-> Account""
+
+
+
+A special case is business mapping. Here all relationship ends should be displayed:
+
+ISR / BP / BU / Product
+
+
+
+If one of them is not setted, display '-' instead
+
+
+
+For example
+
+""Account-Sys RB # 3.1 / Core : Account & Contract Management / Funct. Departments : Finance / Credit card""
+
+
+
+or
+
+
+
+""BI # 1.0 / Support : R & D / - / -""
+
+
+
+*Example in classic client*
+
+You can find examples in the classic client for attributes ""Apportionment"" (relation ISR-IE) or ""Support degree"" (Business Mapping)"		New Feature	iteraplan Speedbird	12/Sep/16 3:13 PM	19/Sep/16 12:24 PM														"14/Sep/16 2:23 PM;tam;After discussion with Rost: 
+
+if user doesn't have enough permissions for relationshipends of a business mapping or an attributable relation:
+
+# An alert above of the diagram will be displayed, which informs user about missing permissions:
+
+Diagram can't be displayed completely due to missing permissions / Wegen fehlenden Berechtigungungen wird dieses Diagramm nicht vollständig angezeigt
+
+# [N/A] (same for English and German) will be shown instead of the persistent name of missing relationship end"	19/Sep/16 12:24 PM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-42																																																					

@@ -1,0 +1,27 @@
+Rename the labels for the various Excel exports to improve clarity for the user	Improving clarity for the average user: Please change the labels from "Excel" to "Excel 2003 (XLS)" and "Excel 2007" to "Excel (XLSX)". This affects at least the import/export page and the spreadsheet report output select box.		Improvement	iteraplan PO	19/Apr/13 9:19 AM	22/May/13 4:47 PM					excel	ui	usability							"19/Apr/13 9:27 AM;jme@iteratec.de;I disagree with the propesed names.
+Reason:
+In ticket ITERAPLAN-1482 is suggested, to rename the underlaying packages, such that the legacy excel export remains unchanged. 
+This means, that in the code the package ""excel"" means excel 2003. In the UI Excel means Excel 2007.
+
+This is not a big thing but considering the various existing excel export and imports (including timeline) the wrong naming leads to failure.
+
+I suggest to use different names for the packages, than proposed in the ticket ITERAPLAN-1482."	"02/May/13 5:34 PM;jme@iteratec.de;Affected pages:
+Tabular Reporting
+Successor Reports
+
+Not affected: 
+Export Template/Model"	"02/May/13 5:35 PM;jme@iteratec.de;Question:
+shall I change the order of appearance?
+
+Currently: 
+Excel 2003 (XLSX) 
+Excel (XLSX)
+
+Proposal:
+Excel (XLSX)
+Excel 2003 (XLS)
+
+SRY: Sorry, saw it only now. Yes, please change the order as you suggested.
+Please do also rename the labels on the Import/Export page."	"03/May/13 2:29 PM;jme@iteratec.de;Why isn't there a constant variable for graphicalExport.informationFlowDiagram?
+
+SRY: Not sure what you mean with ""constant variable"" ;-) - but if a message key is missing, please add it."	22/May/13 4:47 PM;bra;(/) looks good																																																		

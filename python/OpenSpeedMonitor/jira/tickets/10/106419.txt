@@ -1,0 +1,33 @@
+Edit on Single Attribute View - Possible Attribute Values for Responsibility (Client)	"*Summary:*-
+
+Create Edit-Functionality for ""Possible Attribute Values"" for Single Responsibility View.
+
+
+
+*Scope:*
+
+* In scope: ""Possible Attribute Values""-Table
+
+* In scope: Single Responsibility View
+
+
+
+*UI:*
+
+* Use UI and interactions from Building Block List as blueprint (including error-handling)
+
+* Following actions should be possible
+
+** Delete a row by adding action-row with delete-button and delete-dialog
+
+** Add a new row
+
+
+
+*Technology:*
+
+* Try to reuse common edit-components from Building Block List
+
+* Send REST-request to the correct REST-API (icresp)
+
+* Trigger reload-service (IPTS-447)"		New Feature	iteraplan Speedbird	22/Dec/16 9:20 AM	13/Mar/17 9:48 AM														13/Mar/17 9:47 AM;dmkh;Review is done																																																						

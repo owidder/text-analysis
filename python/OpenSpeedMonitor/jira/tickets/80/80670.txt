@@ -1,0 +1,1 @@
+Attribute Type - Building Block Type cache	Introduce an application wide cache which can answer which attribute types are assigned to which building block type, instead of using database queries for this each time.		Improvement	iteraplan PO	15/Apr/16 5:48 PM																																																																					

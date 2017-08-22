@@ -137,6 +137,7 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/js-url/url.js"></script>
 <script src="bower_components/handlebars/handlebars.js"></script>
+<script src="bower_components/pako/dist/pako.js"></script>
 
 <script src="js/util/simplePromise.js"></script>
 <script src="js/util/SimpleEvent.js"></script>
@@ -151,6 +152,7 @@
 <script src="js/proxy.js"></script>
 <script src="js/handlers.js"></script>
 <script src="js/words.js"></script>
+<script src="js/Stream.js"></script>
 
 <script src="bower_components/d3/d3.min.js"></script>
 <script src="js/util/stuff.js"></script>
@@ -388,7 +390,7 @@
     function clearSearch() {
         $("#search-input").val("");
 
-        bottle.container.handlers.showFiles([], SEARCH_RESULTS_SCRIPT_ID, SEARCH_RESULTS_ELEMENT_ID);
+        bottle.container.handlers.showFiles([], SEARCH_RESULTS_SCRIPT_ID);
     }
 
     var searchClicked = function () {};
@@ -396,7 +398,7 @@
     ready.promise.then(function () {
 
         searchClicked = function() {
-            bottle.container.handlers.searchClicked(nodesAndLinks, "#search-input", SEARCH_RESULTS_SCRIPT_ID);
+            bottle.container.handlers.searchClicked(nodesAndLinks, "#search-input", SEARCH_RESULTS_SCRIPT_ID, SEARCH_RESULTS_ELEMENT_ID);
         };
 
         moveToRelPath = function (relPath) {

@@ -1,0 +1,61 @@
+Globale Suche findet "zuviel"	"Schnittstellen hatten bei unserer Modellierung ein Merkmal ""Fachlicher Ansprechpartner"". Das Feld wird von mehreren Entitätsarten verwendet (z.B. IS).
+
+Später haben wir uns dazu entschlossen, dass wir das Feld bei Schnittstellen nicht mehr benötigen. Daher haben wir bei der Konfigurationsseite für dieses Merkmal die Schnittstellen von den freigeschalteten Bebauungselementen entfernt.
+
+Das hat auch insofern funktioniert, als das das Merkmal nicht mehr bei Schnittstellen angezeigt wird.
+
+
+
+Die globale Suche findet jedoch noch die fachlichen Ansprechpartner zu Schnittstellen. D.h. in der Ergebnismenge sind Schnittstellen enthalten, wenn ich nach einem Namen suche, der zu einem fachlichen Ansprechpartner gehört.
+
+"		Fault	iteraplan Support	19/Oct/16 5:04 PM	13/Dec/16 7:00 AM														"20/Oct/16 11:07 AM;cst;Sehr geehrter Herr Meyer,
+
+vielen DAnk für Ihre Anfrage.
+
+Würden Sie bitte den Suchindex neu erstellen, die können Sie über den Punkt ""Administration"" -> ""Konfiguration"" und ""Create new Index"" durchführen. 
+Anschließend sollten die Einträge wieder korrekt bei der Suche angezeigt werden.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	20/Oct/16 12:49 PM;johannes.meyer@easycredit.de;Das Problem besteht weiterhin.	"24/Oct/16 1:27 PM;cst;Hallo Herr Meyer, 
+
+der Vorgang wird im Moment geprüft und diese Prüfung wird sich durch die aktuellen Arbeiten am Release etwas verzögern. 
+Werde Ihnen hierzu Anfang nächster Woche eine Rückmeldung geben, wenn wir das Verhalten nachgestellt und vollständig analysiert haben. 
+
+Vielen Dank für Ihr Verständnis, 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	24/Oct/16 2:00 PM;johannes.meyer@easycredit.de;Ist ok.	"02/Nov/16 2:45 PM;cst;Hallo Herr Meyer,
+
+vielen Dank für Ihre Geduld. 
+
+Das Verhalten konnte nachvollzogen werden und es wurde hierzu ein BUG-Ticket angelegt.
+
+https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-4979 
+
+Dieses wird für zukünftige Versionen geprüft und umgesetzt. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"21/Nov/16 10:02 AM;johannes.meyer@easycredit.de;leider kann ich das bugticket nicht einsehen. 
+
+Wir planen die Version 5.4 zu installieren. Für diese Version benötige ich einen gefixten installer."	"21/Nov/16 10:08 AM;cst;In Version 5.4 wird für das Verhalten kein Service-Release erscheinen, oder geht es hier um etwas anderes? 
+Wann die Lösung für das oben genannte Problem durchgeführt wird, ist noch offen und kann dir hierzu keinen Zeitrahmen nennen.
+
+Wegen dem Zugang zum Bug-Ticket, lass ich prüfen und gebe dir hierzu bescheid. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+Christoph Stangl - iteraplan Support "	"24/Nov/16 10:51 AM;cst;Guten Morgen,
+
+der Benutzername zu unserem Entwickler-Board ist 
+""ip.johannes.meyer"" und dem gesetzten Passwort.
+
+Das Passwort kannst du  über den LOGIN dir erneut zusenden (solltest du es nicht mehr greifbar haben)
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "																																															

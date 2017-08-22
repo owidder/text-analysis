@@ -1,0 +1,17 @@
+Include self-defined columns in Masterplan diagrams	"Masterplan diagrams shall be enhanced with a couple of optional columns where the user can define the contents. The user shall be able to choose up to three columns and pick attributes for them. The additional columns shall appear both in Visio and in SVG-based reports.
+
+Meaningful attribute value types for such columns are
+* enum types (single-value and multi-value)
+* number types
+* date types
+* responsibility types  (single-value and multi-value)
+* text types (single line) Multi-line text cannot be displayed.
+
+Text values may need to be cropped after a certain number of character in order to avoid blowing up the layout."		New Feature	iteraplan PO	16/May/11 10:12 AM	07/Jun/11 1:21 PM					masterplan									"31/May/11 11:35 AM;kvo;Bzgl. Rahmen/Farben passt der momentane Stand.
+Bzgl. Spaltengröße: Bitte hier die Anpassung je nach Textlänge vornehmen."	31/May/11 12:05 PM;sry;Ich stelle gerade fest, dass dem Kunden auch Selbstreferenzen in diesen Spalten wichtig sind, vor allem Vorgänger/Nachfolger. War nur eine kleine Randnotiz, aber ist wohl entscheidend :-/	"31/May/11 2:57 PM;sry;two minor remarks, the rest looks fine already:
+* connected elements do never show attribute values, even if that particular attribute type is enabled for the building block type. It would be fine to have attribute values where available, and otherwise have the fields silently left empty (like now)
+* if I configure the graphics for one building block type (e.g. projects), and then click the back button later on and select a different building block type (e.g. technical components), then the second configuration page will still show the previously selected attribute types, even if they aren't enabled for technical components. The good news is, that graphics are nevertheless generated properly without crashing."	02/Jun/11 1:54 PM;kgo;Modifying implementation to also include relations, e.g. successors. Also the width of the custom columns is to be adjusted in accordance with the length of their values.	"07/Jun/11 1:21 PM;sfe;Relations are only available when choosing to create an Information System based Masterplan diagram.
+
+In case that's working as intended, everything seems fine."	"07/Jun/11 2:15 PM;sry;There is no option to display successors, only predecessors are offered. Could you add it?
+
+How much effort would it require to add relations for TCRs and Projects as well?"																																																	

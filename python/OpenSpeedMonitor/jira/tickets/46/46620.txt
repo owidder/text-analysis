@@ -1,0 +1,9 @@
+Update of multivalue attribute value in interface not possible	"_Reproduce (with sample data):_
+# Navigate to iteraplan -> Mass Data -> Export/Import
+# Download Excel Data
+# Open Excel file and change a value of attribute ""Data exchange"" on the Interfaces sheet (for example from ""Online"" to ""On demand batch job"")
+# Save and import into iteraplan with additive strategy
+
+_Expected:_ The interface shows both values, ""Online"" and ""On demand batch job"", as the import was with additive strategy.
+
+_Actual:_ Technical error page in step 5 of the import, related to a unique constraint violation."		Bug	iteraplan PO	02/May/14 3:02 PM	07/May/14 1:26 PM					import																																																															

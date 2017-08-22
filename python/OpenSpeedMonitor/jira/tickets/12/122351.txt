@@ -1,0 +1,5 @@
+Zwei aufeinanderfolgende logData 0 im Skript führen zu keiner Warnung	"Funktionalität wurde im ScriptParserTestSpec geprüft (vllt auch falsch?)
+
+
+
+Test wird zur Zeit irgnoriert"		Bug	OpenSpeedMonitor	24/May/17 4:09 PM															31/May/17 10:43 AM;nku;Bitte Test entfernen und dann Ticket schließen.																																																						

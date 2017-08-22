@@ -1,0 +1,7 @@
+Show Graph Button: 7 Tage seit letztem Run anzeigen	"Der neue Button in der Job-Liste zeigt den Graph für die Ergebnisse der letzten 7 Tage an.
+
+Bessere wäre es, die Ergebnisse der 7 Tage *vor dem letzten Run* anzuzeigen. Damit würde der Button auch bei alten Jobs Sinn machen.
+
+
+
+Jeder Job hat ""lastRun"" bereits als Attribut, sodass die Parameter für den richtigen Link einfach berechnet werden können."		Bug	OpenSpeedMonitor	01/Dec/16 8:22 AM	08/Dec/16 4:31 PM																																																																				

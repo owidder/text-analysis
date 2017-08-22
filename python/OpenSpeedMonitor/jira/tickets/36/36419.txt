@@ -1,0 +1,35 @@
+Option "Datenpunkte anzeigen" soll in Rickshaw auch labels einblenden	"Mail von Uwe:
+
+
+
+in der Highchart-Variante enthält die statische Ansicht (Menüpunkt csi und dann ""statische Ansicht"") die Datenpunkte mit direkt sichtbarem Wert. In der Rickshaw-Variante werden zwar Punkte angezeigt aber keine Werte.
+
+==> So bekommen wir garantiert kein GO von Erik. Am Besten wäre, wenn man diese Option („Datenbeschriftung“) separat im „Diagramm anpassen“ Bereich setzen kann."		New Feature	OpenSpeedMonitor	01/Apr/15 6:32 PM	08/Apr/15 4:28 PM														02/Apr/15 12:25 PM;rkr;Beim Umschalten der Charting Library wird immer der Wert für HIGHCHARTS gespeichert ... Wert für RICKSHAW: UklDS1NIQVc=	"07/Apr/15 1:14 PM;rkr;Hier ein Screenshot vom aktuellen Stand. Geht das so in Ordnung?
+
+Ich schlage vor, die Zahlen...
+
+ * ...horizontal auszurichten (dadurch sind sie leichter lesbar und für den Export einfacher handzuhaben) und
+
+ * ... _unter_ die Zeile zu schreiben, so daß visuell deutlich wird daß die Linie ganz an den oberen Rand entwickelt werden soll.
+
+Und: Im Moment würde ich vorziehen, daß wir den Graph-Parameter dataLabelsActivated _nicht_ konfigurierbar machen - die Werte sind derzeit berechnet aus der Lage der pointMarker in Relation zur Höhe von graph, weil ich bisher keine auslesbaren Daten finden konnte."	07/Apr/15 4:37 PM;rkr;Sag Bescheid sobald Du Zeit für eine Abnahme hast.	"07/Apr/15 4:49 PM;nku;Im Moment sind wir bei OTTO mit dem CSI i.d.R oberhalb der 90%-Linie. Daher sind die Zahlen besser lesbar, wenn diese oberhalb der Datenpunkte angezeigt werden. Damit die Beschriftung dann trotzdem innerhalb des Diagramms bleibt kann man ja die Y-Achse anpassen. 
+
+Um 270° gedreht haben wir die Beschriftungen, damit sie sich bei mehr Punkten nicht so leicht überlagern. Die Beschriftung haben wir als Option ja nicht nur bei Wochenwerten. 
+
+Morgen bin ich in der GS, dann können wir gerne noch mal darauf sehen."	07/Apr/15 5:10 PM;rkr;...siehe dazu aktuelle Attachments.	08/Apr/15 9:26 AM;rkr;Wie wollen wir die Werte formatieren? Derzeit werden sie in Rickshaw ohne Nachkommastellen angezeigt. Falls das genügt, dann brauchen wir keine Änderungen der X-Achse für die Anzeige von Werten nahebei der 100%-Linie - sie Screenshot zur Visualisierung.	"08/Apr/15 10:01 AM;nku;Bitte folgendes noch umsetzen:
+
+* Fix 2 Nachkomastellen in Popup und Labels der Punkte
+
+* Default Maximum für die Y-Achse 110
+
+* Labels und Datenpunkte separat sichtbar/unsichtbar machen
+
+* Performance Datenpunkte Markieren prüfen"	"08/Apr/15 10:42 AM;rkr;Status - Erledigt: 
+
+* Fix 2 Nachkomastellen in Popup und Labels der Punkte
+
+* Default Maximum für die Y-Achse 110
+
+* Performance Datenpunkte Markieren prüfen
+
+* Labels und Datenpunkte separat sichtbar/unsichtbar machen"																																															

@@ -1,0 +1,31 @@
+No function for the Relation - "Connected Information System" in the Landscape diagram 	"rummary:
+
+No function for the ""Connected Information System"" in the menu ""Relation"".
+
+
+
+Reproduce:
+
+◾Open the Landscape Diagram
+
+◾Click on the block ""based on technical components"" 
+
+◾Open the Menu  ""Change column association""
+
+◾Click on ""Connected Information System"" in the submenu ""Relation""
+
+◾The loading screen opens but nothing happens
+
+
+
+Actual:
+
+•The loading screen opens but nothing happens
+
+
+
+Expected:
+
+• Loading the relation ""Connected Information System"" for the Landscape diagram
+
+"		Bug	iteraplan PO	22/Jul/16 1:33 PM	10/Aug/16 8:47 AM														02/Aug/16 9:45 AM;cst;This error shows now up on the relation "Connected Information System". 																																																						

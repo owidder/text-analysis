@@ -1,0 +1,39 @@
+Check for shared attributes in date interval definitions and/or cycles in d.i. config dialog	"A user can configure two date intervals that share one (or both) date attributes.
+For example: DI A = (a, b), DI B = (a, c).
+This is not the intended use of date intervals and it complicates the validation of edits to the shared date attribute, here: a.
+
+Even better, a user can configure cycles of date intervals linked by shared date attributes.
+Minimal example: DI A = (a, b), DI B = (b, a).
+The values of a and b can only be equal.
+
+Avoiding shared attributes avoids cycles alltogether.
+
+Thanks to Lars B. for this destructive idea."		Improvement	iteraplan PO	01/Aug/13 1:54 PM	30/Dec/15 2:53 PM														05/Aug/13 9:54 AM;lba;An Excel validator is not implemented yet.	"26/Aug/13 1:10 PM;bra;# create 2 new dateintervals in different browser tabs
+# save one of the intervals (from a to b)
+# try to save the other interval as a cycle of the first one (from b to a)
+=> following NPE occurs:
+{code}
+Caused by: java.lang.NullPointerException
+	at de.iteratec.iteraplan.presentation.dialog.DateInterval.DateIntervalComponentModel$NameCM.getStringFromElement(DateIntervalComponentModel.java:169)
+	at de.iteratec.iteraplan.presentation.dialog.DateInterval.DateIntervalComponentModel$NameCM.getStringFromElement(DateIntervalComponentModel.java:1)
+	at de.iteratec.iteraplan.presentation.dialog.common.model.StringComponentModel.initializeFrom(StringComponentModel.java:74)
+	at de.iteratec.iteraplan.presentation.dialog.DateInterval.DateIntervalComponentModel.initializeFrom(DateIntervalComponentModel.java:79)
+	at de.iteratec.iteraplan.presentation.dialog.DateInterval.DateIntervalFrontendServiceImpl.getMemBean(DateIntervalFrontendServiceImpl.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.expression.spel.support.ReflectiveMethodExecutor.execute(ReflectiveMethodExecutor.java:69)
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:84)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:57)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getTypedValue(SpelNodeImpl.java:102)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:97)
+	at org.springframework.binding.expression.spel.SpringELExpression.getValue(SpringELExpression.java:84)
+	at org.springframework.webflow.action.EvaluateAction.doExecute(EvaluateAction.java:75)
+	at org.springframework.webflow.action.AbstractAction.execute(AbstractAction.java:188)
+	at org.springframework.webflow.execution.AnnotatedAction.execute(AnnotatedAction.java:145)
+	at org.springframework.webflow.execution.ActionExecutor.execute(ActionExecutor.java:51)
+	... 59 more
+{code}
+
+same occurs if one does not create the dateintervals as cycle. maybe this is a different issue but because of it i could not fully test this one..."	26/Aug/13 5:44 PM;lba;The NullPointerException happens, because the user acceses the same memory bean on the two different sites. This behaviour also occurs most likely on several pages in iteraplan.																																																				

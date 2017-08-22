@@ -1,0 +1,50 @@
+Failed to load History content	"Für die Architekturkomponente Backup/Restore sowie Betriebssystem-Client tritt der Fehler auf.
+
+Bei Archivierung/Anwendungen/Bibliothek erscheint der Fehler nicht.
+
+Screenshots und Log in der Anlage.
+
+
+
+Auf dem ersten Blick tritt der Fehler nicht in Iteraplan Version 5 auf.
+
+
+
+Verwendet wird:
+
+Apache Tomcat 7.0.70
+
+Java 1.7.0.80
+
+
+
+Folgender Fehler tritt im Iteraplan-Log auf:
+
+[dialog.History.HistoryController] During history retrieval, an error occurred
+
+de.iteratec.iteraplan.common.error.IteraplanTechnicalException: java.lang.NullPointerException
+
+	at de.iteratec.iteraplan.presentation.dialog.History.HistoryController.localHistory(HistoryController.java:124)
+
+"		Fault	iteraplan Support	30/Jun/16 7:34 AM	13/Jul/16 1:22 PM														"30/Jun/16 7:34 AM;christian.deichmueller@huk-coburg.de;
+
+!Anwendungen.jpg|thumbnail!
+
+!Archivierung.jpg|thumbnail!
+
+!BS.jpg|thumbnail!
+
+!backup.jpg|thumbnail!
+
+[^iteraplan-3.4.1.log] _(46 kB)_"	"30/Jun/16 11:10 AM;iteraplan-support;Sehr geehrter Herr Deichmüller,
+
+wir bieten für iteraplan Version 3.4.1 keinen Support mehr an. Es wird jeweils die aktuelle iteraplan-Version (momentan 5.2) und die beiden vorherigen Releases (momentan 5.0 und 5.1) supportet.
+
+Mit freundlichen Grüßen
+Manuel Schreyer - iteraplan Support"	"13/Jul/16 8:19 AM;christian.deichmueller@huk-coburg.de;Hallo Herr Schreyer,
+
+wenn das so ist, dann können Sie das Ticket schließen.
+
+Mit freundlichen Grüßen
+
+Christian Deichmüller"																																																				

@@ -1,0 +1,17 @@
+"Available for Interfaces" Attribute is missing on the Technical Component Single Element View	"*Summary:*
+
+""Available for Interfaces""-Attribute is missing on the Technical Component Single Element View
+
+
+
+Please include it with the ""on-off""-switch (e.g. from the attribute single element view)
+
+
+
+This is the only boolean attribute in iteraplan (user cannot create any).
+
+The Single Element View is read-only at the moment.
+
+
+
+{color:red}UPDATE{color} Place it on the top like other hard-coded attributes."		Bug	iteraplan Speedbird	29/Nov/16 5:48 PM	19/Dec/16 3:14 PM																																																																				

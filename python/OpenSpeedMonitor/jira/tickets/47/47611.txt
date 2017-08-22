@@ -1,0 +1,6 @@
+Minimization and Obfuscation ("uglify") of new client JS code	"Our Javascript code needs to be obfuscated before including it in the installation package.
+* Use Google Closure JS compiler
+* As first step in the new client build process (before executing tests)
+* All JS files obfuscated into one
+* Don't include used Javascript libraries"		Improvement	iteraplan PO	16/Apr/15 1:40 PM	25/Apr/15 3:01 PM					newClient									"25/Apr/15 3:01 PM;tam;Reviewed and tested.
+It works."																																																						

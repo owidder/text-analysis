@@ -1,0 +1,19 @@
+Create JUnit tests for saved query execution	"Create junit tests for the execution of the saved queries before a script is executed.
+
+
+
+*+Current implementation status :+*
+
+There is a first test function (testExecuteSavedQueries) in the integration test inXslTransformerServiceTest, which is ignored at the moment.
+
+
+
+There is also the function createSavedQuery(), to create a saved query, which can be stored into the database. In the initial database for the tests seem to be no saved queries. At least the savedQueryService.getSavedQuery(queryId) function in the executeSavedQueries function of the XslTransformerServiceImpl returns no query, if you don't save a query by yourself. Also the function savedQueryService.getAllSavedQueries() returns no queries (checked in debug mode).
+
+
+
+At the moment the saved query is executed before the script is executed and the file 1.xml is stored in the temporary folder, but there is a nullpointer exception when the script is executed because ElasticMiContext.getCurrentContext() in EmfExportServiceImpl returns null.
+
+
+
+At the moment there are also no assertions checked."		Improvement	iteraplan Quickfox	09/Aug/16 4:00 PM	22/Aug/16 11:35 AM														22/Aug/16 11:35 AM;mse;Review ok.																																																						

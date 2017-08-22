@@ -1,0 +1,2 @@
+Remove unnecessary refresh in EditMode - adding/removing relations or attributes	"Remove unnecessary refresh in EditMode - adding/removing relations or attributes
+Dropdowns can list all elements, even ones already added, and showing newly added elements can be done with simple JavaScript."		Improvement	iteraplan PO	16/Aug/11 5:33 PM	30/Dec/15 2:32 PM					gui	usability								17/Sep/12 8:46 PM;sry;This has been addressed implicitly with the Wicket-based UI re-implementation																																																						

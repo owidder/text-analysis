@@ -1,0 +1,23 @@
+Download standard output file of reactor doesnt work automatically	"Select ""publicDemo_simpleInfoFlow.xsl"" with no other files shown under ""All files"" -> Start Reactor
+
+
+
+Result:
+
+iteraplan.xml is not downloaded automatically although it is created among other files under ""All files""
+
+
+
+Expected:
+
+iteraplan.xml is downloaded automatically
+
+"		Bug	iteraplan PO	26/Oct/15 3:51 PM	28/Oct/15 2:07 PM					download	reactor								"28/Oct/15 12:50 PM;lwi;the iteraplan.xml that should be downloaded couldn't be found, because the list containing the file was refreshed after the file was searched (and not before). fixed it with a little workaround. 
+
+
+
+
+
+there is already a unit test (everything still green).
+
+"																																																						

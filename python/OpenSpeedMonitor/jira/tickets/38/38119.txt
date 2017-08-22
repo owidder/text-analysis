@@ -1,0 +1,41 @@
+[1-A] Auswahl Messungen nach Anbindungs-Profil im Ergebnis-Dashboard	"Im Ergebnis-Dashboard des OpenSpeedMonitors lässt sich der Umfang der darzustellenden Ergebnisse aktuell einschränken anhand der folgenden Größen:
+
+* Welches System wurde gemessen:
+
+Auswahl einer Job-Gruppe (z.B. LIVE oder DEVELOP)
+
+* Was wurde gemessen:
+
+Auswahl von Seiten und Messschritten
+
+* Wo wurde gemessen:
+
+Auswahl von Browser und Location
+
+
+
+Siehe Screenshot JobFilter.png
+
+
+
+In dieser Auswahl fehlt die Internet-Anbindung, mit der gemessen wurde. Im Rahmen der Einführung eines Device-übergreifenden CSI’s werden für mobile Geräte Messungen mit unterschiedlicher Anbindung relevant werden (z.B. EDGE, 3G, LTE). Die Internet-Anbindung lässt sich für jeden Mess-Job bereits im OpenSpeedMonitor konfigurieren und
+
+wird auf der messenden Hardware entsprechend eingestellt. Auf dem Ergebnis-Dashboard wird die Anbindung als neues Auswahl-Kriterium aufgenommen. Dieses wird in der Oberfläche  rechts von Browser und Location eingeführt.
+
+
+
+Im Job lassen sich bisher vorgegebene Anbindungs-Profile auswählen oder manuell die Parameter „Bandwidth down“, „Bandwidth up“, „latency“ und „packet loss rate“ auswählen. Zusätzlich wird bei manuell eingestellten Anbindungen ein Name der Anbindung als Textfeld vorgesehen. Dieser Name wird sinnvoll vorbelegt und lässt sich beliebig anpassen. In der GUI des Dashboards wird die Möglichkeit vorgesehen, Anbindungs-Profile auszuwählen.
+
+Wählt man hier „Custom“ aus, so werden alle Messungen, in denen manuell konfigurierte Anbindungen gesetzt sind, angezeigt. Es wird zusätzlich ein Textfeld vorgesehen, in dem sich über einen regulären Ausdruck Custom-Anbindungen entsprechender Namen auswählen lassen.
+
+
+
+
+
+
+
+
+
+
+
+"		Epic	OpenSpeedMonitor	17/Apr/15 10:17 AM	19/Jan/17 10:23 AM																																																																				

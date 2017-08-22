@@ -1,0 +1,7 @@
+Mass update - text size for messages	"Would be great to use similar text size for all messages for Mass Update.
+
+
+
+{{!message1.png|thumbnail!}}
+
+{{!message2.png|thumbnail!}}"		Improvement	iteraplan Speedbird	07/Jun/17 6:40 PM															14/Jun/17 1:10 PM;fka;Please align with the GUI efforts by [~sbu]	10/Jul/17 1:56 PM;roia;Also would be good to have consistent buttons: Yes/No, Ok/Cancel																																																					

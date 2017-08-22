@@ -1,0 +1,33 @@
+Wrong axes types in filter - Landscape Diagram	"Summary:
+
+Wrong axes types in filter by undo, reload, change the language, or navigate via back-button of browser
+
+
+
+Reproduce:
+
+◾Open the Landscape Diagram
+
+◾Click on the content Type ""Business Function"" in the toolarea
+
+◾Set content filter ""name contains a"" and apply
+
+◾Click on Undo 
+
+◾The header of axis filter is not ""Business Objects"" but ""Information System Domains""
+
+◾The same effect can you reproduce when you push F5, or navigate via back-button of browser"" when the filter is set .
+
+
+
+Actual:
+
+• Wrong axes types in filter by undo, reload, change the language, or navigate via back-button of browser when a filter is set
+
+
+
+Expected:
+
+• The correct axes types in filter
+
+"		Bug	iteraplan PO	29/Jul/16 10:49 AM	10/Aug/16 10:19 AM														09/Aug/16 1:57 PM;aan;A similar mistake in the ncd is also fixed	10/Aug/16 10:19 AM;mse;Review ok.																																																					

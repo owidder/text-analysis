@@ -1,0 +1,13 @@
+Move inner box one step left/right or first/last	"To the existing nesting cluster diagram, add a way to rearrange the inner boxes.
+
+(0) The user clicks an inner box.
+(1) The system shows (among others) in a context menu the actions 
+* move left
+* move right
+* move to start
+* move to end
+The system shows only the actions that are possible. Impossible actions are hidden (not deactivated).
+(2) The user selects an action.
+(3) The system moves the box to the target position and shifts the other boxes as needed.
+
+Note that this command must work both for boxes in outer boxes, and nested inner boxes in (base) inner boxes."		New Feature	iteraplan PO	17/Sep/14 4:57 PM	29/Sep/14 10:44 AM														18/Sep/14 9:43 AM;sepr;Est 2 PD																																																						

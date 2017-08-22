@@ -1,0 +1,6 @@
+Cosmetic issue with naming	"Steps to reproduce:
+1. Go to List view page with IS as content type
+2. Click on ""Add column"" button
+Actual: runtimePeriod
+"	47647	Sub-task	iteraplan PO	27/Apr/15 4:13 PM	05/May/15 2:10 PM													"Workspace: Windows 8.1
+revision: 1036"	30/Apr/15 5:29 PM;dasm;Verified (rev 1080)																																																						

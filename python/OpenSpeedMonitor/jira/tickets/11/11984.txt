@@ -1,0 +1,8 @@
+Jobliste benötigt extrem lange zum Laden	"Zur Zeit braucht die Joblisten-Seite extrem lange zum Laden, andere Seiten scheinen nicht betroffen zu sein.
+
+Bei Debugging-Tests zeigt sich folgendes Verhalten (siehe Screenshot von Netzverkehraufzeichnung):
+Nach Aufruf der Seite im Browser wird sofort der Breakpoint in de.iteratec.isj.JobController.list() ausgelöst und die Methode list() ist nach wenigen Millisekunden beendet, das heißt bis hierhin gibt es keine Performanceprobleme. Anschließend wartet der Browser zwischen 20 und 40 Sekunden bis schließlich auf ein Mal die Seite und alle weiteren Ressourcen (JS, CSS, ...) ausgeliefert werden."		Bug	OpenSpeedMonitor	28/Feb/14 11:25 AM	18/Mar/14 4:01 PM														28/Feb/14 11:47 AM;drieger;Nach einem Rechnerneustart war das Problem behoben :)	"28/Feb/14 2:17 PM;drieger;Nun tritt das Problem erneut auf. Nach dem letzten Rechnerneustart lief die Jobseite wieder flüssig (Ladezeiten von unter zwei Sekunden). Nach etwa zweistündiger Verwendung der Anwendung sind die Ladezeiten wieder plötzlich bei ca. 40 Sekunden.
+
+Ein Neustart nur der Anwendung oder auch von GGTS behebt das Problem nicht. Nach einem Rechner-Reboot lädt die Seite wieder eine Zeit lang flüssig, bis das Problem wieder auftritt.
+
+Es ist bisher unklar, was die Anwendung in den fast 40 Sekunden Wartezeit tut oder worauf sie wartet. Außerdem sind die Zeiten sehr konstant. Entweder läuft die Seite normal und lädt in < 2 Sekunden oder das Problem tritt auf und sie lädt reproduzierbar in ca. 40 Sekunden. Zeiten dazwischen oder darüber wurden bisher nicht beobachtet."																																																					

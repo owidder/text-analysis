@@ -1,0 +1,47 @@
+Problems with encoding	"Hi,
+
+
+
+We are having a problem with encoding of some characters when displayed in iteraplan. The characters are correct in the database and are displayed correctly when looking at the specific element in iteraplan. Still, when displaying search results, the characters are not correct and they cannot be used in searches. (Se attached screen shots)
+
+
+
+Do you know what the problem is? Perhaps we need to configure tomcat differently?
+
+
+
+Concerned characters: å, Å, ä, Ä, ö, Ö, nU1l and /n
+
+
+
+Best Regards,
+
+Sara Vickman
+
+Dewire Consultants AB"		Technical question	iteraplan Support	07/Jun/16 2:52 PM	22/Jun/16 11:43 AM														"07/Jun/16 2:52 PM;sara.vickman@dewire.com;
+
+!Screen Shot 2016-06-07 at 2.42.33 PM.png|thumbnail!
+
+!Screen Shot 2016-06-07 at 2.42.52 PM.png|thumbnail!"	"09/Jun/16 11:09 AM;sfe;Hi,
+
+just to be sure I am understanding this correctly:
+* In the first screenshot, showing search results, the display of characters is incorrect, showing their unicode denominator, for example *u00e5* instead of *ä*.
+* When you open the detail view of the building block _Documentnavet_, its description shows the correct character
+* When you enter for example *å* in the full text search input, after performing the search, incorrect characters are displayed, as in your second screenshot.
+* The search doesn't display the correct results in this case either
+* The characters in question are correctly saved in the database
+
+Did I understand this correctly so far?
+
+A few further questions:
+# When create a new building block or change an existing one, with those characters present, are they saved correctly?
+# When you display for example information systems in their overview list, are the characters displayed correctly there?
+# Can you please attach the _server.xml_ file of your tomcat configuration?
+
+Thank you and best regards
+Stephan Feroudj"	"22/Jun/16 8:25 AM;sara.vickman@dewire.com;Hi,
+
+Sorry for the delay. I think we have found the problem on our own. You can close this for now and then I will get back to you if the problem remains.
+
+Best Regards
+Sara Vickman"																																																				

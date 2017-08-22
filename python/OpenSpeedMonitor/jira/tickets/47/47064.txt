@@ -1,0 +1,7 @@
+Test nesting cluster diagram	"Test sheet in {{doc/test/nestingcluster}}.
+
+* Install iteraplan using one of the not yet or lesser tested configurations in the installer test sheet
+* Perform the testcases from the test sheet and attach the results to this ticket"	47060	Sub-task	iteraplan PO	17/Oct/14 2:04 PM	22/Oct/14 4:46 PM														21/Oct/14 5:27 PM;abo;Test-Environment: Win7, IE 11, iteraplan Build-v3.4.SNAPSHOT-r23851 	"21/Oct/14 7:18 PM;abo;Tested all test-cases where at least one step is not covered by Selenium-Tests.
+
+Environment: Win7, IE 11, iteraplan Build-v3.4.SNAPSHOT-r23851, MySQL 5.5
+Installer: created by ant-task"																																																					

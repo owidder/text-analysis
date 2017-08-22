@@ -1,0 +1,15 @@
+Toolarea Directive	"*Summary:*
+
+Create a ToolareaDirective as a directive for the commonHeader template. This directive builds a toolArea based on the toolarea items of the ToolAreaViewModelBuilder. It controls the subdirective for the menu ( ITERAPLAN-3811 ).
+
+
+
+*Architecture:*
+
+This directive inherits from the common Header directive (by ""require""). This directive initiats the ToolAreaViewModelBuilder.
+
+This directive builds up the toolArea dynamically (with ""ng-repeat"")."	47838	Sub-task	iteraplan PO	20/Jul/15 10:45 AM	09/Sep/15 2:21 PM					ifd									"04/Aug/15 9:23 AM;msr;Open TODOs:
+
+* ToolArea pops up from Selection of an element
+
+* Hand applied filter values over to commonHeaderController, then to ifdController"	01/Sep/15 9:58 AM;tam;Added: ToolArea pops up from selection on diagram	01/Sep/15 1:09 PM;tam;Implemented the second point: new filter values will be forwarded to ifdController	07/Sep/15 5:08 PM;tam;Modified according to review comments																																																			

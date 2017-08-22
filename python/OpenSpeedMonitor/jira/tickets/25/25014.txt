@@ -1,0 +1,1 @@
+Stabilität des Crawlers bei großen Webseiten	Bei sehr langen Crawls besteht die Möglichkeit, dass der Crawler abstürzt.		Bug	secureCodeBox	12/Nov/14 10:58 AM	01/Dec/14 4:42 PM					ITMC									01/Dec/14 4:42 PM;pkr;Crawler ist erstmals auf otto.de erfolgreich durchgelaufen. Die Durchlaufzeit betrug ca. 10 Stunden.																																																						

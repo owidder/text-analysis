@@ -1,0 +1,5 @@
+Menü überarbeiten	Das Menü kann wahrscheinlich deutlich einfach gestaltet werden, sodass man sich die ganze erste Tab-Reihe sparen kann und im schwarzen Balken Elemente unterbringen, die man auch öfter mal benutzt.		Improvement	OpenSpeedMonitor	19/Dec/16 11:43 AM	25/Jan/17 2:12 PM														"12/Jan/17 3:47 PM;jwi;Ein Mockup Vorschlag ist im Branch {code}remotes/origin/iteraColors{code} zu finden.
+
+
+
+"																																																						

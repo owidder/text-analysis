@@ -1,0 +1,5 @@
+MySQL-Dump in Bamboo zum Laufen bringen	"Der MySQL-Dump-Job ist der letzte, der noch nicht auf den Bamboo umgezogen ist. Der Job braucht einen MySQL-Server.  Der Jenknis hat bisher den auf unserer SEU verwendet. Der Bamboo sollte idealerweise berechtigt werden auf diese Instanz zuzugreifen.
+
+
+
+Zu prüfen ist, welche Rechte erforderlich sind. Diese sollten so klein wie möglich gesetzt werden."		Task	OpenSpeedMonitor	03/Jun/16 2:51 PM	22/Jun/16 6:27 PM																																																																				

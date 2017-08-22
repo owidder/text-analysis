@@ -1,0 +1,23 @@
+Fix Nesting-legend-spec.js NCD Protractor test	"fix above mentioned test and include it in conf.js!
+
+
+
+rename the file to nesting-spec.js
+
+
+
+under test:
+
+- nest by legend (through click on inner type)
+
+- remove nesting through legend
+
+- nesting started from inner box
+
+- nesting started from outer box
+
+
+
+
+
+you can use the existing code"	59959	Sub-task	iteraplan PO	06/Nov/15 10:08 AM	18/Jan/16 9:41 AM					NCD	Test								18/Jan/16 9:41 AM;msr;Won't fix SVG-NCD-Tests.																																																						

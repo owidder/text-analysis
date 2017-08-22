@@ -1,0 +1,7 @@
+LSD refactoring	Apply minor changes in LSD diagram, according to review comments.		Improvement	iteraplan Speedbird	24/Nov/16 4:33 PM	05/Dec/16 3:41 PM					lsd									"05/Dec/16 3:41 PM;ants;Reviews done:
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-199
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-201
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-209"																																																						

@@ -1,0 +1,6 @@
+Erweiterung GUI des CSI-Dashboards um Möglichkeit csi-doc-ready UND/ODER csi-vis-complete anzeigen zu lassen	"Die Auswahl der anzuzeigenden CSI-Werte sollte unterhalb des _Filter_-Bereichs als select auftauchen. Das wäre analog zum EventResult-Dashboard (Drei Bereiche: Aggregation, Filter, Measurands). 
+
+Per default sollte erst mal der CSI basierend auf WPT's doc ready ausgewählt sein. 
+
+Ergänzung:
+Dieses Ticket beinhaltet auch die Logik, um die Daten in die GUI zu bringen und jeweils einen Graphen für jede ausgewählte CS Basis darzustellen."		New Feature	OpenSpeedMonitor	24/Sep/15 1:59 PM	16/Feb/16 10:29 AM														10/Feb/16 5:14 PM;bwo;Es wurden Checkboxen für die entsprechende Auswahl hinzugefügt und der Validator wurde angepasst																																																						

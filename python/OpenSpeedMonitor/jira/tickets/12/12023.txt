@@ -1,0 +1,4 @@
+selects für Messschritt und Location zu choosen-select machen	"Im Template der Daten-Filterung, welches bisher auf Result- und CSI-Dashboard verwendet wird:
+Um die umfangreichen Daten in diesen selects komfortabler auswählen zu können macht hier das filterbare jquery-choosen-Multiselect sinn.
+
+Das ganze sollte im develop-Branch passieren."		Improvement	OpenSpeedMonitor	26/Mar/14 11:15 AM	23/Apr/14 10:24 AM																																																																				

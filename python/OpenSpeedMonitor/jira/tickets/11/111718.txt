@@ -1,0 +1,7 @@
+Exception opening LSD from the diagram-tile	"While opening default LSD from ""VISUALIZE + REPORT"" tab or using saved queries or URL, the exception appears (see attached screenshot).
+
+
+
+- Everything is OK when resetting the view.
+
+- Reproduced from revision *5993* (by [~aan])."		Bug	iteraplan PO	14/Feb/17 10:49 AM	14/Feb/17 10:51 AM																																																																				

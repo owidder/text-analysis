@@ -1,0 +1,4 @@
+Variablensyntax anpassen	"Bisher können Variablen in Skripten mit $Name eingebunden werden. Dadurch können z.B. keine Variablen aneinander gereiht werden. 
+Durch eine Syntax wie $(Name) ist dies möglich, z.B.:
+
+navigate http://example.com/$(var1)$(var2)"		Task	OpenSpeedMonitor	07/Feb/14 10:38 AM	07/Feb/14 2:17 PM														07/Feb/14 2:17 PM;drieger;Existiert bereits.																																																						

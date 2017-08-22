@@ -1,0 +1,3 @@
+Filters stay persistent	Summary: Filters stay persistent in URL with switching between content types 	47483	Sub-task	iteraplan PO	10/Apr/15 10:15 AM	22/Apr/15 3:54 PM													"Workspace: Windows 8.1
+Browser: Google Chrome 39.0
+revision: 915"	10/Apr/15 11:26 AM;dasm;Verified (revision 918)	10/Apr/15 1:17 PM;alvo;commited to IPNINE-387, rev #917																																																					

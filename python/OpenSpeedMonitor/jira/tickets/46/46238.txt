@@ -1,0 +1,4 @@
+Duplicate warning message in custom dashboard, when saved diagram query has been deleted	"When the diagram is show, duplicate warning messages (on top and bottom) are valid, but when the warning ""dialog does not exist anymore"" is shown, then one message is redundant. (see screenshot).
+
+To reproduce:
+Delete a saved diagram query of a custom dashboard and open the dashboard instance."		Improvement	iteraplan PO	25/Oct/13 5:14 PM	19/Jan/16 11:33 AM					dashboard																																																															

@@ -1,0 +1,8 @@
+color legend entries size exceeds color legend box when using "color values from a range"	"see screenshot
+
+to reproduce:
+# configure a portfolio diagram use values from a range for the configuration of the color
+# generate the diagram
+=> color legend is broken
+
+this also happens, although a bit different, for the landscape diagram. i did not check other diagrams but their legends may be broken too."		Bug	iteraplan PO	20/Jun/13 1:29 PM	30/Dec/15 2:53 PM					color	legend																																																														

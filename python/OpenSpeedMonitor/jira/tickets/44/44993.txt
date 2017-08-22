@@ -1,0 +1,7 @@
+TC-CNRAI-03 inheriting of predecessors relation for an IS fails	"Case ""TC-CreateNewRelease_AttributeInheritance-03"" tested from https://iteraplan.iteratec.de/projects/iteraplan/wiki/QualityAssurance/Testcases
+
+Creation of a new release of a (Sub) Information System. Field ""has the following predecessors"" remains empty despite checking appropriate checkbox when creating the new release. 
+
+Tested unsuccessfully for new IS release and for new release of a sub system, for both a newly created dummy _testIS or an IS already in the database. Tested with online hosted nightly build and locally installed version.
+
+All other attributes and connections seem to get copied/inherited from the predecessor correctly. "		Bug	iteraplan PO	15/Jun/11 12:07 PM	16/Jun/11 2:55 PM					new	predecessor	release																																																													

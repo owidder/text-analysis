@@ -1,0 +1,3 @@
+Unit-Tests an das "neue" Transactionhandling anpassen	"In Grails 2.5.0  waren Services standardmäßig  transactional. Dieses Verhalten hat sich in 3.1 auf not-transactional geändert. Das alte Verhalten haben wir wiederhergestellt. Dabei sind aber einige Unit-Tests, die diese Services benutzen rot geworden. 
+
+Es muss jetzt geprüft werden, ob einige Services wieder not-transactional sein können. Bei den anderen Unit-Tests müssen die Services weggemockt werden."		Bug	OpenSpeedMonitor	25/May/16 5:57 PM	01/Jun/16 3:53 PM														01/Jun/16 3:53 PM;msk;In den Unit-Tests werden jetzt die Services nicht mehr mit "new" instanziert sondern werden von Grails gemanaged. Ausnahmen sind TestUtils und ServiceMocker.																																																						

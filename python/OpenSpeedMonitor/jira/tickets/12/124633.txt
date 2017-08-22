@@ -1,0 +1,27 @@
+User settings saving bug	"Go to Admin -> Attributes
+
+
+
+Open an attribute page.
+
+
+
+Error in console:
+
+
+
+Should save user settings, but there's no featureName in scope /attributes
+
+
+
+ 
+
+
+
+Expected:
+
+
+
+No error. Discuss with [~msr]: User settings saved or no saving of user settings of the attribute page at all?"		Bug	iteraplan PO	16/Jun/17 6:01 PM	19/Jun/17 3:54 PM														"16/Jun/17 6:42 PM;vadm;Fixed.
+
+[~msr], user settings service is used there for saving quick-search filter text. Should I remove it, or leave it like it is?"	19/Jun/17 9:53 AM;msr;[~vadm]: Please remove the user service																																																					

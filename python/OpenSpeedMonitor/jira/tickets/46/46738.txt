@@ -1,0 +1,9 @@
+Landscape diagram with empty element set should leads to an empty diagram	"*Scenario:*
+* A Landscape diagram configuration is saved with a certain result set, like for example: InformationSystems that start with ""A"".
+* The link to this diagram is provided to other people, who bookmark this link.
+* In the meantime, all InformationSystems starting with ""A"" are deleted.
+* When the diagram link is used, nothing happens (you get no chart and no error).
+
+*Expected behavior:*
+Show an empty diagram as with the cluster diagram.
+"		Improvement	iteraplan PO	15/Jul/14 10:45 AM	19/Jan/16 10:35 AM																																																																				

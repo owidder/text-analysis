@@ -1,0 +1,1 @@
+Unit tests for numeric range coloring	This is a follow-up ticket for IPTS-156. Please, cover all new functionality with unit tests.		Task	iteraplan Speedbird	18/Oct/16 10:34 AM	31/Oct/16 2:10 PM														31/Oct/16 2:10 PM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-134																																																						

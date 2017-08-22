@@ -1,0 +1,10 @@
+Improve Changes Event Mechnism (Super ticket)	"iteraplan model changes events should be processed centrally and trigger following actions:
+* Elastic preview (for Plugin Api) 
+* Plugin Api processing
+* History (future)
+* Elastic model cont. update
+* Model changes push notifications (future)
+* E-Mail notifications (to clarify)
+see https://iteraweb.iteratec.de/confluence/display/ITPL/Improvement+of+changes+event+handling
+
+"		Improvement	iteraplan Thunderduck	05/Sep/16 10:24 AM	21/Sep/16 2:15 PM					M3CEL									21/Sep/16 2:15 PM;sfe;Was split into the three linked tickets																																																						

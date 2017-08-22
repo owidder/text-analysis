@@ -1,0 +1,12 @@
+Query extention "assigned Interfaces" of ISRs crashes	In diagram configurations or spreadsheet reports, the query extension "Properties of assigned Interfaces" fails if no criterion for the interfaces is configured. As soon as a restriction criterion is added, the query is evaluated successfully		Bug	iteraplan PO	13/Dec/12 4:52 PM	06/Aug/13 8:55 AM					3.0.5-candidate	3.1.1-candidate	reporting							"13/Dec/12 5:45 PM;sry;Stacktrace:{code}
+[ERROR] 06-Dez-2012 07:37:13 [presentation.flow.FlowExceptionHandler] Exception thrown executing [AnnotatedAction@1ad58af targetAction = [EvaluateAction@1994c12 expression = tabularReportingFrontendService.requestReport(flowScope.memBean, flowRequestContext, flowExecutionContext), resultExpression = [null]], attributes = map[[empty]]] in state 'show' of flow 'tabularreporting/start' -- action execution attributes were 'map[[empty]]'
+org.springframework.webflow.execution.ActionExecutionException: Exception thrown executing [AnnotatedAction@1ad58af targetAction = [EvaluateAction@1994c12 expression = tabularReportingFrontendService.requestReport(flowScope.memBean, flowRequestContext, flowExecutionContext), resultExpression = [null]], attributes = map[[empty]]] in state 'show' of flow 'tabularreporting/start' -- action execution attributes were 'map[[empty]]'
+	at org.springframework.webflow.execution.ActionExecutor.execute(ActionExecutor.java:60)
+	at org.springframework.webflow.engine.support.ActionTransitionCriteria.test(ActionTransitionCriteria.java:82)
+...
+Caused by: java.lang.ClassCastException: de.iteratec.iteraplan.businesslogic.reports.query.node.AssociatedLeafNode cannot be cast to de.iteratec.iteraplan.businesslogic.reports.query.node.ExtensionNode
+	at de.iteratec.iteraplan.businesslogic.reports.query.QueryTreeGenerator.processCombinedExtensionForm(QueryTreeGenerator.java:192)
+	at de.iteratec.iteraplan.businesslogic.reports.query.QueryTreeGenerator.generateQueryTree(QueryTreeGenerator.java:139)
+	at de.iteratec.iteraplan.presentation.dialog.ReportBaseFrontendServiceImpl.requestReport(ReportBaseFrontendServiceImpl.java:177)
+	at de.iteratec.iteraplan.presentation.dialog.ReportBaseFrontendServiceImpl.requestReport(ReportBaseFrontendServiceImpl.java:171)
+{code}"	05/Aug/13 3:09 PM;sfe;Please add JUnit-Test for this particular issue.	06/Aug/13 8:55 AM;sfe;looking good	17/Sep/13 9:59 AM;psc;Reviewed. Fix is working. Closing Ticket.																																																			

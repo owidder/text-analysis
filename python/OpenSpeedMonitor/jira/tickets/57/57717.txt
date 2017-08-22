@@ -1,0 +1,1 @@
+Boxplot	Boxplot zur Visualisierung der Assets implementieren	57713	Sub-task	OpenSpeedMonitor	21/Sep/15 11:09 AM	18/Jan/17 3:53 PM																																																																				

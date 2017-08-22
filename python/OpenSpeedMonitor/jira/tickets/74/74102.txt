@@ -1,0 +1,5 @@
+[UserspecificDashboards] Weiterleitung nach Löschen eines UserspecificCsiDashboards	"Nach dem Löschen eines UserspecificDashbaords auf dem CsiDashboard wird man auf eine 404-Seite weitergeleitet.
+
+Das eigentlich Löschen des Dashboards erfolgte aber korrekt."		Bug	OpenSpeedMonitor	19/Feb/16 9:16 AM	22/Feb/16 3:41 PM														"19/Feb/16 3:24 PM;bwo;Lokal konnte ich den Fehler nicht reproduzieren. Der Server leitet jedoch auf ""http://dev.openspeedmonitor.wpt.iteratec.de/OpenSpeedMonitor/csiDashboard/showAll""
+
+Der Teil ""/OpenSpeedMonitor"" ist zu viel."																																																						

@@ -1,0 +1,72 @@
+Keine Reaktion	"Hallo,
+
+
+
+beim Versuch in iteraplan 5.1 in der Nested Cluster Grafik eine Gruppierung nach Geschäftsprozessen vorzunehmen liefert die Anwendung kein Ergebnis zurück (Bild siehe Anhang)
+
+
+
+Beste Grüße
+
+
+
+Volker Simon
+
+
+
+"		Fault	iteraplan Support	07/Apr/16 1:36 PM	20/Apr/16 2:55 PM														"07/Apr/16 1:36 PM;volker.simon@huk-coburg.de;
+
+!iteraplan.PNG|thumbnail!"	"11/Apr/16 2:44 PM;tam;Hallo Herr Simon,
+
+können Sie in der Anwendung danach etwas machen oder ist ein Seitenrefresh notwendig?
+
+Könnten Sie bitte noch die Browser-Logs anhängen? (siehe dazu https://msdn.microsoft.com/de-de/library/gg589530%28v=vs.85%29.aspx)
+
+Vielen Dank im Voraus.
+
+Beste Grüße
+Timur Ametov"	"13/Apr/16 9:55 AM;volker.simon@huk-coburg.de;Hallo Herr Ametov,
+
+ in der Anwendung kann ich nichts mehr machen.
+
+Bis zum Browser-Log komme ich nicht (siehe Anhang)
+
+Beste Grüße
+
+Volker Simon
+
+
+
+!itera.PNG|thumbnail!"	"14/Apr/16 1:15 PM;sfe;Hallo Herr Simon,
+
+ich denke mein Kollege meinte folgendes:
+# Sie können das Browser-Logfenster öffnen, bevor Sie auf den Client zugreifen.
+# Dann öffnen Sie die Nested Cluster Grafik
+# und wählen die Gruppierung nach Geschäftsprozessen
+
+Zeigt das Browser-Logfenster in diesem Fall etwas an, und wenn ja, was?
+
+Viele Grüße
+Stephan Feroudj"	"15/Apr/16 1:20 PM;volker.simon@huk-coburg.de;Hallo Herr Feroudj,
+
+habe ich gemacht, dass Browser-Logfenster meldet hier keine Auffälligkeiten
+
+Viele Grüße
+
+Volker Simon"	"19/Apr/16 10:49 AM;sfe;Hallo Herr Simon,
+
+eine Möglichkeit ist, dass trotz unserer Vorsichtsmaßnahmen an der Stelle zu viele Elemente für die Anzeige existieren. Ein anderer Grund scheint, aufgrund der fehlenden Lognachrichten, unwahrscheinlich.
+Die Anzeige für viele Elemente ist natürlich etwas, was wir optimieren müssen.
+
+Wir überarbeiten im Moment das ganze Diagramm komplett, um es von der Benutzung her an die anderen Diagramme im interaktiven Client anzupassen, und werden dies dabei mit berücksichtigen.
+
+Für die aktuelle Version des Diagramms kann ich Ihnen leider keine Lösung anbieten.
+
+Viele Grüße
+Stephan Feroudj"	"20/Apr/16 12:31 PM;volker.simon@huk-coburg.de;Hallo Herr Feroudj,
+
+vielen Dank für die Info
+
+Beste Grüße
+
+Volker Simon"																																																

@@ -1,0 +1,11 @@
+Kundentermin mit OTTO am 07.08 vorbereiten.	"Fragestellungen und Themen für den Termin:
+
+
+
+* Welche Hypothesen haben wir zu unserem Produkt und wollen diese beim Kunden verproben?
+
+* Was wollen wir vom Kunden lernen?
+
+* Was müssen wir vorbereiten und mitbringen?
+
+* Wie sieht unsere Roadmap und Zielstellung aus?"		Story	secureCodeBox	24/Jul/15 8:23 PM	29/Feb/16 9:24 PM																																																																				

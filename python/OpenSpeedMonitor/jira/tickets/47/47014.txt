@@ -1,0 +1,18 @@
+Edit coloring property value in-place in diagram	"In the existing nesting cluster diagram, add editing to the property that is currently used for coloring.
+
+For example, if complexity is used for coloring, the context menu has an additional entry 
+* Change complexity to
+** high
+** medium
+** low
+** no value
+
+The sub-entries for the value should have background color as the boxes with that value.
+
+Same for status.
+
+If the coloring is by a numeric value, for example Cost, the context menu should have an entry with a text field. 
+When the user edits the text field, the box changes its color on change (not on blur). The textfield itself is not color coded.
+
+Same for Strategic Value.
+"		New Feature	iteraplan PO	30/Sep/14 4:52 PM	19/Jan/16 10:35 AM																																																																				

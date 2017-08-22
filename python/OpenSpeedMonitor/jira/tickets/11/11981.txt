@@ -1,0 +1,7 @@
+Statuscodes in Enum umwandeln	"Im Moment werden in Klassen wie JobProcessingService oder JobResult HTTP-Statuscodes als Konstanten verwendet. Daher sollte ein Enum erstellt werden, das die einzelnen Statuscodes repräsentiert. Momentan werden folgende Statuscodes verwendet:
+
+# 100 Pending
+# 101 Running
+# 200 Done
+# >=400 Error
+# 504 Timeout"		Task	OpenSpeedMonitor	27/Feb/14 1:51 PM	17/Mar/14 6:49 PM																																																																				

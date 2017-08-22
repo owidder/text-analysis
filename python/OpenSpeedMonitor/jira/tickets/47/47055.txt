@@ -1,0 +1,12 @@
+"Add column" on building block overview page does not take newly created attributes into account	"_Reproduce:_
+# Navigate to information systems overview page
+# Add an attribute column
+# Create a new attribute and assign it to information systems
+# Access the information systems overview page again
+# Add the new attribute as column
+
+_Expected:_ In both cases the selected attribute will be added to the list view as column, with the assigned values displayed
+_Actual:_ First adding of an attribute as column works fine, but the second time the new attribute cannot be found in the list to add.
+
+This only happens if the overview page was accessed at least once before. Relogging into iteraplan, or possible choosing to ""clear session"", will make the newly created attribute available in the selection of columns to add.
+The attribute list is probably only initialized on first access of the page."		Bug	iteraplan PO	14/Oct/14 8:56 AM	29/Oct/14 9:34 AM					attribute	column																																																														

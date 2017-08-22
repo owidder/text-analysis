@@ -1,0 +1,7 @@
+Searchable Plugin evaluieren	"Wenn die Datenbank-Anpassungen des Device-übergreifenden CSI-Angebots durch sind sollten wir testen, ob Compass + Lucene uns helfen bzgl. der Performance unserer GORM-Logik.
+
+
+
+Diese lassen sich mittels des searchable-Plugins integrieren:
+
+http://grails.org/plugin/searchable"		Task	OpenSpeedMonitor	11/Nov/15 8:58 AM	18/Jan/17 3:03 PM																																																																				

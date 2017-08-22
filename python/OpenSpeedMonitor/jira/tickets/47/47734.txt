@@ -1,0 +1,3 @@
+IE 11 Highlighting by modified items doesn't work	Summary:  Highlighting by modified items doesn't work	47646	Sub-task	iteraplan PO	29/Apr/15 3:14 PM	05/May/15 2:07 PM													"Workspace: Windows 8.1
+browser: IE 11
+revision: 1074"	30/Apr/15 2:52 PM;dasm;Verified (revision 1078)																																																						

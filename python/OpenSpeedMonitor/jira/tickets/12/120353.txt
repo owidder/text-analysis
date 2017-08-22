@@ -1,0 +1,15 @@
+Information Flow Diagram - Line Type names in Legend	"Reproduce with trunk and IE 11 
+
+ # Open the Information Flow Diagram
+
+ # Change the ""Edge Line Type by Degree of automation""
+
+ # Open the legend
+
+ # The names are e.g. ""metamodel..literals.manuel.name""
+
+
+
+Expected: That the legend shows the correct values
+
+ Actual: The values are not correct translated"		Bug	iteraplan Speedbird	03/May/17 1:57 PM	22/May/17 3:28 PM																																																																				

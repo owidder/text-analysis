@@ -1,0 +1,19 @@
+URLs in Attributen bei New Client	"Im Classic Client werden URLs in Attributen als Links dargestellt, beim New Client sind sie nur Text.
+
+
+
+Ist es geplant, dies zu ändern? 
+
+
+
+In der Beschreibung funktioniert dies weiterhin."		Fault	iteraplan Support	28/Apr/17 11:51 AM	17/May/17 7:00 AM														"28/Apr/17 11:51 AM;thomas.liskow@coface.com;
+
+[^URL in Old vs New Client.docx] _(28 kB)_"	"28/Apr/17 12:48 PM;cst;Sehr geehrter Herr Liskow,
+
+vielen Dank für Ihre Anfrage.
+
+In Version 6.0 werden diese wieder ordnungsgemäß angezeigt. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"																																																					

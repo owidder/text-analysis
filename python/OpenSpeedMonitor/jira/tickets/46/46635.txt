@@ -1,0 +1,14 @@
+Create a functional permission	"* add to data load XMI, add permission to the roles that should see the new feature in the demos.
+* create a micro migration script: add one row in ""permissions functional"" table
+* maybe nothing to do: check role page
+* message keys?
+* add methods to permissions class
+
+write a mini Junit test that tests the new functional permission.
+"	46567	Sub-task	iteraplan PO	07/May/14 4:06 PM	07/Jul/14 1:51 PM														"01/Jul/14 4:18 PM;dop;Review:
+
+ContextOverviewTests.java: 
+* assert on content, e.g. content of MetaModel, Model, ContextOverviewDiagram, Document
+* more tests: what happens with wrong metamodel/model, empty model, missing information, wrong configuration parameters... 
+
+Migration Script: does it work for all databases?"																																																						

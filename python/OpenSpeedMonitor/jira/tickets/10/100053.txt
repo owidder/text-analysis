@@ -1,0 +1,7 @@
+Coloring by attribute of building block in row	"When in header choose attribute, for row choose building block. We can not coloring this row by another attribute of this building blocks.
+
+
+
+IPTS-133
+
+"		Bug	iteraplan Speedbird	21/Oct/16 5:09 PM	25/Oct/16 10:02 AM														25/Oct/16 10:02 AM;viol;Review is done, no comments: https://iteraweb.iteratec.de/fisheye/cru/IP-113																																																						

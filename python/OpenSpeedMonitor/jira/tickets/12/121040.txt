@@ -1,0 +1,37 @@
+Bitte VPN-Zertifikat für "naba" erstellen	"Hallo liebe Admins,
+
+
+
+heute hat unsere neue Testerin vom ukrainischen Dienstleister angefangen. Sie soll mit dem Testtool auf unserem internen Server arbeiten.
+
+
+
+Könnt ihr deshalb bitte ein VPN-Zertifikat für ""naba"" erstellen?
+
+
+
+Wie heute besprochen bitte mit demselben Profil wie die anderen ukrainischen Dienstleister-Kollegen.
+
+
+
+Falls bereits eins im Rahmen des Onboardings letzte Woche erstellt wurde, bitte ihr erneut an natalya.bas@edvantis.com schicken.
+
+
+
+Danke
+
+
+
+Marcel"		Task	Infrastruktur	10/May/17 4:09 PM	12/May/17 10:49 AM	Routing													"12/May/17 10:49 AM;ehi;Hallo Marcel,
+
+
+
+ich habe das Zertifikat soeben rausgeschickt."	"12/May/17 11:14 AM;msr;Hallo Elke,
+
+
+
+danke schön
+
+
+
+Marcel"																																																					

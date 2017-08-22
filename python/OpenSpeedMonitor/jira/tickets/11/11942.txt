@@ -1,0 +1,12 @@
+Skript: Messschritte parsen	"Die einzelnen Messschritte in einem Skript sollen geparst werden:
+
+Vor jedem Seitenaufruf (execAndWait und navigate-Befehl) muss setEventName vorkommen, falls logData auf 1 gesetzt wurde. Damit ergibt sich ein Messschritt von logData = 1 bzw. dem Seitenaufruf des letzten Messschritts bis zum Seitenaufruf des aktuellen Schritts.
+Sonderfall: Kommt kein logData Statement im Skript vor, gilt automatisch global logData = 1
+
+Damit soll die Anzahl der Messschritte in einem Skript verfügbar gemacht werden und in den Skript- und Jobtabellen angezeigt werden. In der Skripttabelle soll bei jedem Skript außerdem angezeigt werden, welche Seiten gemessen werden. Diese Information ergibt sich aus de.iteratec.isr.MeasuredEvent.testedPage und ist 'undefined', falls kein MeasuredEvent mit dem durch setEventName gesetzten Namen existiert.
+
+Bei der Skripteditierung soll validiert werden, ob setEventName an den richtigen Stellen im Skript steht. Warnungen sollen in den folgenden Fällen erfolgen:
+# Ein wirklungsloses setEventName-Statement ohne anschließenden Seitenaufruf ist vorhanden.
+# Ein Seitenaufruf hat kein dazugehöriges setEventName-Statement."		Task	OpenSpeedMonitor	20/Feb/14 11:35 AM	13/Mar/14 6:32 PM														"28/Feb/14 6:22 PM;drieger;Erste Version des Parsers in de.iteratec.iss.ScriptParserService.getNumberOfMeasuredEvents(String) implementiert. Beim Test einiger Skripte ermittelte dieser korrekt die Anzahl der Messschritte. Die Position von setEventName-Statements validiert der Parser noch nicht, extrahiert aber den Namen des Events.
+
+In der Skriptliste wird in einer neuen Spalte die ermittelte Anzahl der Messschritte angezeigt."																																																						

@@ -1,0 +1,9 @@
+Multiple projects for a ISR are not separated in successor reports	"Reproduce:
+* Assign at least two projects to a ISR (which has successors or predecessors)
+* Display this ISR in ""Successor Reports""
+
+=> The projects in the right column are not separated (for example by semicolon)."		Bug	iteraplan PO	24/Nov/14 11:41 AM	25/Nov/14 4:32 PM					successor_report									"24/Nov/14 12:49 PM;wfr;Successor report is _not_ scheduled for the next release of the new client.
+
+Looks like a trivial fix.
+Do with timebox.
+"																																																						

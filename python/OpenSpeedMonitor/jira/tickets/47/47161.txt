@@ -1,0 +1,60 @@
+Sprint 6? Grouping by Business Mapping (abstract)	"{color:red}*To-Do Iteratec: Complete list of connections*{color}
+This story completes the story IPNINE-205 and IPININE-236 .
+
+*Summary:*
+To the existing NCD, add the function to use all connections to other building block types for grouping.
+
+*As-Is:*
+Direct or 2-step-connections and the Business Mapping from IS to BP, BU, P are implemented for grouping.
+
+*To-Be:*
+Direct, 2-step-connections or connections via Business Mapping for all Building Block Types are implemented for grouping. The list of connections is stated below.
+
+*Affected parts of the system:*
+* Nesting Cluster Diagram
+* Inner Elements
+
+*Approach:*
+Use a generic solution that uses the metamodel information for
+* determining the connections for a given inner building block type
+* access the model data for the connected elements and/or the grouping structure.
+
+List of connections:
+From Business Domain:
+* BP
+* BU
+* Prod
+* BO
+
+From BP:
+* BD
+* BU
+* Prod
+* IS
+
+From BU
+* BD
+* BP
+* Prod
+* IS
+
+From Prod
+* BD
+* BP
+* BU
+* IS
+
+From 
+...
+
+*Acceptance Criteria:*
+The user starts with the view of an open NCD with IS as inner elements.
+The user opens the context menu for inner boxes with secondary click. 
+The user hovers over ""Group elements"".
+A second level menu opens immediately on hover.
+The users clicks on ""Business Processes"" with primary click.
+The menu structure disappears.
+The diagram is filtered immediately.
+
+The steps above must work for any connection via Business-Mapping. The steps above must work independently of any grouping before or not.
+"		New Feature	iteraplan PO	11/Nov/14 3:03 PM	26/Jan/15 4:45 PM														26/Jan/15 4:45 PM;msr;IPNINE-308																																																						

@@ -1,0 +1,7 @@
+Filter for Accountability doesn't work	"Steps to reproduce:
+# Use “Accountability” for filtering by text attribute
+# Enter a name in the input box and submit
+
+Actual: nothing happens
+Expected: Filter is applied
+"		Bug	iteraplan PO	20/Apr/15 11:05 AM	21/Apr/15 3:18 PM					newClient																																																															

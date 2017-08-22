@@ -1,0 +1,17 @@
+Standard MeasuredEvent benutzen wenn nicht explizit im Script definiert	"Das bevorzugte Schema von EventNames im Script ist <Page>:::<MeasuredEvent>.
+
+
+
+Wenn der User nur ""setEventName Homepage"" schreibt, wird derzeit angenommen, dass 'Homepage' das MeasuredEvent ist. Nachdem der Job ausgeführt wurde, wird entweder <MeasuredEvent> unter Page ""undefined"" kategorisiert, oder es gibt bereits ein bestehendes Mapping zu einer Page.
+
+
+
+Das intuitivere Verhalten wäre jedoch, wenn ""setEventName Homepage"" dazu führt, dass das 'Homepage' auf jeden Fall die *Page* ist, und im Zweifelsfall einfach ein Standard MeasuredEvent namens ""Homepage"" angelegt wird. So kann ein unerfahrener Benutzer auch einfach seine Ergebnisse finden.
+
+
+
+Diese Änderungen müssen bei der Script-Validierung, beim Erstellen/Updaten von Scripts berücksichtigt werden. Gleiche EventNames sollten weiterhin im Script nicht doppelt vorkommen dürfen.
+
+
+
+Nach den Änderungen müssen wir auf unseren Instanzen und auf Otto die Scripte durchgehen und sichergehen, dass wir alle Scripte, die absichtlich nur MeasuredEvent im EventName gesetzt haben jetzt vollstäding mit Page ausgeschrieben werden."		Improvement	OpenSpeedMonitor	06/Jan/17 8:09 AM																																																																					

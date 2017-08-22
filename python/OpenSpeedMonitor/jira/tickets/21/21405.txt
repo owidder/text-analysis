@@ -1,0 +1,7 @@
+Iteratec SEU Jenkins job aufsetzen	Wir wollen bei iteratec eine Vergleichbare Umgebung wie bei OTTO schaffen. Hier soll auf der SEU ein Jenkins mit entsprechendem Job und Zugang zu lpt.otto.de		Story	secureCodeBox	06/Oct/14 10:04 AM	27/Oct/14 10:49 AM														"14/Oct/14 2:12 PM;bwo;Der Job läuft manchmal durch. Es ist mir noch nicht ganz klar wieso es nur manchmal funktioniert. Der Asyncclient lief scheinbar in timeouts, manchmal nach ca 300 Aufrufen, mal nach ca. 600 und ein anderes mal nach ca. 70. Es werden keine exceptions geworfen, jedoch gibt der Debug output Auskunft darüber dass alle 30 Sekunden neue results fertig sind, was unserer timeout Zeit entspricht. Sobald dies auftritt ist die letzte Ausgabe :  
+
+Call API-Url: http://localhost:18080/JSON/ascan/action/scan/?zapapiformat=JSON&url=https%3A%2F%2Flpt.otto.de&recurse=true&inScopeOnly=false
+
+Danach passiert nichts mehr.
+
+Auf meinem lokalen Rechner konnte ich den Fehler nicht reproduzieren, ich habe hier die gleiche config wie für den Server, sowie die gleiche .json Liste benutzt."	27/Oct/14 10:49 AM;bwo;Jenkins Job startet nur per Shell Script ZAP und ZAP nach jedem Build.																																																					

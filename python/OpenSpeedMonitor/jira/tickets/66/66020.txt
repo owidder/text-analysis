@@ -1,0 +1,19 @@
+ensure line-coverage in lsdItemBuilder.js with unit tests		65042	Sub-task	iteraplan PO	08/Dec/15 9:10 AM	14/Dec/15 9:42 AM					LSD	Test								"12/Dec/15 3:52 PM;msr;Review comments:
+
+
+
+* buildNoPermissionAxisItem in lsdItemBuilder is not covered
+
+
+
+* Testcase ""it(""should push an orphan coordinate at buildTernaryCoordinates"" ""-> why is the expected value undefined?"	"14/Dec/15 8:21 AM;lwi;1. really forgot buildNoPermissionAxisItem ! thanks for that!
+
+
+
+2. this test tests the following code in buildTernaryCoordinates :
+
+            ""coordinates.push(that.buildSingleCoordinate(undefined, undefined));""
+
+
+
+the code is reached by the function ""buildContentItem"" in which the function ""buildItemCoordinates"" is called. This function itself again calls ""buildTernaryCoordinates"" where the above line is tested. Called with undefined, undefined, the function ""buildSingleCoordinate"" creates an orphan content item whose attributes are undefined. Therefore, the resulting coordinates of ""buildTernaryCoordinates"" is an array containing a single itemcoordinate which has x = undefined and y = undefined"	14/Dec/15 9:42 AM;msr;Review-Comments implemented.																																																				

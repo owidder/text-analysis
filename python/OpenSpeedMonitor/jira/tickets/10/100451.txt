@@ -1,0 +1,3 @@
+Default relationships or attribute for axis in LSD.	"Currently first suitable relationship or attribute is selected for axis in lsd (according to user permissions) when content type is selected.
+
+Some algorithm or ordered list of relationships and attributes could be implemented, so initial diagram data could be more convenient."		Improvement	iteraplan PO	25/Oct/16 2:53 PM																																																																					

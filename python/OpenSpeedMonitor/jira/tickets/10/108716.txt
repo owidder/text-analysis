@@ -1,0 +1,1 @@
+Warnung/Fehler Anzeige vereinheitlichen	Warnungen und Fehler sollten konsistent angezeigt werden und nicht mal oben, unten, vor oder nach dem Inhalt eingebunden werden.		Improvement	OpenSpeedMonitor	18/Jan/17 10:50 AM																																																																					

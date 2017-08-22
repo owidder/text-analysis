@@ -1,0 +1,7 @@
+Weekly-Werte im CSI-Dashboard werden nicht angezeigt	"Die weekly-MeasuredValues für die Aggregatoren Page und Shop werden beim Aufruf des CSI-Dashboards nicht berechnet/angezeigt.
+
+Da Jan diese Werte im Dashboard immer Freitags abruft werde ich versuchen, noch heute einen Hotfix zu realisieren und zu deployen."		Bug	OpenSpeedMonitor	07/Nov/13 2:22 PM	08/Nov/13 1:15 PM														"08/Nov/13 1:15 PM;nkuhn;In den Services PageMeasuredValueService und ShopMeasuredValueService wurde über die anzuzeigenden Wochen-Intervalle iteriert, indem vom ersten Wochenstart, 00:00 Uhr jeweils die Minuten einer Woche hinzuaddiert wurden. Dies landet beim Ende der Sommerzeit dann bei 23:00 der Folgewoche :-(
+
+Habe ich umgestellt auf plusWeeks(1) von Jodatime.
+
+Info: Bitte beim Bauen eines wars immer den Java-Compiler-Compliance-Level auf 1.6 stellen, da tomcat6 nicht mit Java 1.7 zusammen geht !!!"																																																						

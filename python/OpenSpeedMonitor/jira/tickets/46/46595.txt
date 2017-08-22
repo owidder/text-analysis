@@ -1,0 +1,5 @@
+Test REST interface writing via test sheet	"Short documentation of results in this ticket
+Findings in a new bug / task ticket
+
+NOT to be done by BRA, who created the test sheet"		Task	iteraplan PO	24/Apr/14 11:22 AM	28/Apr/14 2:23 PM					rest	test								"28/Apr/14 2:00 PM;lba;(x) often the actual status code doesn't match expected status code
+(x) some tests could not be executed, because the specified input state could not be created (permissions: can not have DELETE permission when not having a READ, UPDATE and CREATE permission)"																																																						

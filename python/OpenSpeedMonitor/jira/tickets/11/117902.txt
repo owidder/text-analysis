@@ -1,0 +1,19 @@
+Drop Down Menu should appear automatically for Enumeration Attributes	"reproduce with trunk or 5.5.
+
+ # Open the interactive client
+
+ # Open the list view for the ""Information Systems""
+
+ # Add the ""column"" - ""Accountability""
+
+ # Create a new data set and open the edit dialog for ""Accountability"" 
+
+ # Nothing is shown
+
+ # After enter one ""character"" and delete them, the complete value is shown
+
+
+
+Expected: After opening the edit dialog, all values are shown (drop down)
+
+ Actual: Nothing is shown and you need to type something to show alle elements in the drop down"		Improvement	iteraplan PO	07/Apr/17 8:46 AM																																																																					

@@ -1,0 +1,33 @@
+Routing für ltb2vapp01.bmwgroup.net	"Hallo Admins,
+
+
+
+wie gerade angekündigt ...
+
+
+
+Könnt Ihr bitte eintragen, dass ltb2vapp01.bmwgroup.net (160.46.174.214) zu BMW geschickt wird.
+
+
+
+Der Name ist bereits auflösbar.
+
+
+
+Danke
+
+Jens"		Task	Infrastruktur	02/Nov/16 3:02 PM	02/Nov/16 3:42 PM	Routing													"02/Nov/16 3:39 PM;sas;Hallo Jens,
+
+
+
+die Routing und die FW-Regeln wurden eingerichtet.
+
+
+
+VG
+
+Sami"	"02/Nov/16 3:45 PM;jba;jep, funktioniert.
+
+
+
+Danke"																																																					

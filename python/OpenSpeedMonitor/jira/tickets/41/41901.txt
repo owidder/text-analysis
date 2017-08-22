@@ -1,0 +1,17 @@
+JavaScript-Fehler beim Aufruf der Ergebnis-Liste	"http://localhost:8080/OpenSpeedMonitor/tabularResultPresentation/showListResultsForJob?selectedTimeFrameInterval=0&job.id=475&from=18.05.2015&fromHour=01%3A32&to=19.05.2015&toHour=01%3A32
+
+wirft folgenden JavaScript-Fehler:
+
+ReferenceError: initChosenSelects is not defined
+
+initChosenSelects(noResultsTextForChosenSelects);
+
+listResult.js (Zeile 28, Spalte 1)"		Bug	OpenSpeedMonitor	27/May/15 9:43 AM	27/May/15 2:56 PM														"27/May/15 10:12 AM;rkr;In listResult.js:28 (gehört zu tabularResultPresentation) gibt es einen Aufruf von initChosenSelects – aber diese Funktion ist spezifisch für Elemente, welche in tabularResultPresentation nicht vorhanden sind. 
+
+
+
+Vorschlag zur Lösung: Init-Aufruf rausnehmen aus der lstResult.js – Grund: Auf der Seite sind keine Select-Boxen, welche wir mit chosen benutzerfreundlicher machen könnten.
+
+
+
+Ist das okay so?"	27/May/15 2:20 PM;nku;Kannst Du so machen.																																																					

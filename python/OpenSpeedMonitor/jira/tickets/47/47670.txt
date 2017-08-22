@@ -1,0 +1,7 @@
+UI bag with "BUSINESS OBJECT ASSOCIATIONS" column	"Steps to reproduce:
+1. Go to List view page with IS as content type
+2. Add ""BUSINESS OBJECT ASSOCIATIONS"" column
+Actual: UI bug
+"	47647	Sub-task	iteraplan PO	23/Apr/15 12:31 PM	05/May/15 2:09 PM													"Workspace: Windows 8.1
+Browser: Google Chrome 42.0, Mozilla Firefox 37.0.2
+revision: 1004"	28/Apr/15 4:57 PM;alvo;The Business Objects Associations column has been removed. Can't reproduse																																																						

@@ -1,0 +1,21 @@
+Download incl. legend as SVG, PNG, JPEG, PDF	"*Summary:*
+
+* Create download feature for diagram incl. legend for SVG, PNG, JPEG and PDF like in other diagrams
+
+* Scale for downloaded diagram is always 100% (see PFD diagram approach for scaling downloaded diagram)
+
+
+
+*Implementation Details:*
+
+* Use common class ""HeaderDownloadService.js""
+
+* Url: nothing to do
+
+
+
+*UI:*
+
+* Legend:nothing to do
+
+* Toolarea:nothing to do"		New Feature	iteraplan Speedbird	26/Oct/16 6:21 PM	07/Nov/16 3:49 PM														04/Nov/16 10:33 AM;dmkh;Review is done, few comments are here: https://iteraweb.iteratec.de/fisheye/cru/IP-162	04/Nov/16 2:54 PM;ants;Fixed in revisions 5016, 5026.	07/Nov/16 3:12 PM;ants;Code from review comments added in revision 5042.																																																				

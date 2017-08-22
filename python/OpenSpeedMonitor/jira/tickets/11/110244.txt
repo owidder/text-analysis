@@ -1,0 +1,1 @@
+Funktionalität Job beim erstellen zu testen soll ausgebaut werden	Beim erstellen eines Jobs kann man in der Button Group auf 'Testen' klicken, dies wird nicht mehr benötigt.		Task	OpenSpeedMonitor	01/Feb/17 1:43 PM	06/Feb/17 3:03 PM																																																																				

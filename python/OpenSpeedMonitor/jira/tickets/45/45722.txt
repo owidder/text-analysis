@@ -1,0 +1,3 @@
+Javascript validation of names for buildingblocks complains about invalid value, but server-side validation passes	"When adding a '#' character to the name of a buildingblock (not for ISR or TCR) the javascript validation complains about an invalid name.
+
+If one submits the changes ignoring the js-generated warning, saving the BB works nicely without any error or warning (see screenshots)."		Bug	iteraplan PO	22/May/13 5:17 PM	23/May/13 5:57 PM					validation									23/May/13 5:57 PM;sry;This is ok, being a bit more restrictive than really necessary doesn't hurt. Using that special character is a potential source of problems, and users should be warned about it.																																																						

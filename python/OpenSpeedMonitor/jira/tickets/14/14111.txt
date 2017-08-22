@@ -1,0 +1,1 @@
+rest-api-params für Methode resultsbetween funktionieren nicht alle	Die parameter page und step scheinen die Ergebnis-Menge nicht einzuschränken.		Bug	OpenSpeedMonitor	08/Jul/14 11:02 AM	17/Jul/14 3:56 PM														17/Jul/14 3:56 PM;nku;Funktionierte seit der Einführung von Multistep-Messungen nicht mehr.																																																						

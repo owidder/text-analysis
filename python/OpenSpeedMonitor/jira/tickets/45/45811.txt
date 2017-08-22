@@ -1,0 +1,9 @@
+Clarify: superuser has write access to objects, despite object related permissions restriction.	"A superuser, most notably the user named ""system"" in the demo instances, does have write access to an object, even if the access is restricted via object related permissions.
+
+This is intentional, and sensible, BUT it should be documented as it is.
+
+correct in 
+http://www.iteraplan.de/wiki/display/upcomingIteraplan/Object+related+permissions
+http://www.iteraplan.de/wiki/display/upcomingIteraplan/Permissions+for+individual+building+blocks
+
+"		Bug	iteraplan PO	01/Jul/13 2:51 PM	05/Jul/13 9:23 AM					documentation	permissions								10/Jul/13 9:58 PM;sry;ok, thx!																																																						

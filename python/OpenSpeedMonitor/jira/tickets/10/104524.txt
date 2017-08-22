@@ -1,0 +1,23 @@
+JavaScript Fehler bei Abruf von Audi 12/2016 Messungen	"Wählt man einen der Jobs aus der Audi Messung 12/2016 aus und dabei:
+
+* nur eine Variable und
+
+* nur eine Page
+
+
+
+wirft das Chart JavaScript Fehler in der Konsole und reagiert nicht mehr.
+
+
+
+Fehler:
+
+Uncaught Error: Syntax error, unrecognized expression: #graphAlias_fv\ visually\ complete\ \|\ Audi\ QuickCheck\ 12/2016\ \|\ Audi-Login-Live\ \|\ iteratec-prod-hetzner-win7\:Firefox\ \|\ DSL\ 6\.000
+
+
+
+URL:
+
+http://openspeedmonitor.wpt.iteratec.de/eventResultDashboard/showAll?selectedInterval=-1&selectedTimeFrameInterval=0&_setFromHour=&setFromHour=on&from=30.11.2016&fromHour=0%3A00&_setToHour=&to=02.12.2016&toHour=8%3A56&selectedFolder=21&selectedPages=39&_selectedAllMeasuredEvents=&selectedAllMeasuredEvents=on&_selectedAllBrowsers=&selectedAllBrowsers=on&_selectedAllLocations=&selectedAllLocations=on&_selectedAllConnectivityProfiles=&selectedAllConnectivityProfiles=on&_includeNativeConnectivity=&_includeCustomConnectivity=&selectedAggrGroupValuesUnCached=visuallyCompleteInMillisecsUncached&trimBelowLoadTimes=&trimAboveLoadTimes=&trimBelowRequestCounts=&trimAboveRequestCounts=&trimBelowRequestSizes=&trimAboveRequestSizes=&_action_showAll=Show&selectedChartType=0"		Bug	OpenSpeedMonitor	02/Dec/16 12:29 PM	13/Dec/16 12:34 PM														"05/Dec/16 11:09 AM;jwi;Der Fehler tritt nicht nur bei den Audi Messungen auf sondern bei allen Graphen deren Alias Sonderzeichen enthält. Der Alias wird als ID im HTML genutzt und dafür durch eine ""special character escape methode"" namens _makeValidSelector_ in _rickshawChartCreation.js_ bearbeitet.
+
+Im Audi Beispiel ist ein Slash im Jobgroup Namen welcher nicht in der _makeValidSelector_ abgefangen wird."	13/Dec/16 12:34 PM;msk;Ich habe makeValidSelector RickshawHtmlCreator so ergänzt, das jetzt auch die JobGroup Test ^!"§$%&/()[]={}?ß\`'¸,*+~'#-_.:,;<> akzeptiert wird																																																					

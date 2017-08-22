@@ -1,0 +1,18 @@
+Import progress and documentation improvements	"After an excel import has been started, the information/progress page is shown.
+
+* This page should show the previously chosen strategy. Put that information in the blue box at top. Ask WFR for a mockup.
+* if ""include metamodel changes"" is NOT checked, the two steps ""Determine Metamodel changes	"" and ""Write Metamodel changes"" should not have the text ""done"" next to them, but the text ""skipped"" (in black color, not iteragenta).
+
+Also make sure the following information is included in the user documentation for import, as it it very helpful for users:
+•	Importing an Excel file: I which case the enumeration attribute sheets have to be present in the file?
+When an attribute is present as a column in another sheet, the attribute sheet has to be there, too. If all columns with the attribute are deleted, the sheet with the attribute values can be safely deleted.
+•	Importing an Excel file: When are columns for mandatory attributes necessary?
+Only when new elements are to be created by the import. In all other cases the columns can be deleted from the file before import.
+•	Importing an Excel file: What is the minimal subset of columns to be present for an element?
+ID and name
+•	Importing an Excel file, changing/adding relations: Which elements representing the relationship endpoints have to be present in the file?
+All elements being a relationship endpoint in one of the mentioned relationships. Minimum information to be included for each element: Name and ID (see above)
+
+
+
+"		Improvement	iteraplan PO	24/Jul/14 10:24 AM	29/Aug/14 1:55 PM					import									29/Aug/14 10:30 AM;dop;Documentation updated: http://www.iteraplan.de/wiki/display/upcomingIteraplan/Excel+EA+Data+Format 																																																						

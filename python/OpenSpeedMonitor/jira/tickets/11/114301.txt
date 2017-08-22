@@ -1,0 +1,21 @@
+Permisson for export/import (Server + Client)	"*Summary:*
+
+Ensure the permission ""runImportExport"" is true, i.e.
+
+
+
+*Server:*
+
+* Extend {{/api/data/...}} and {{/api/metamodel}} to be accessible only if ""runImportExport"" is true
+
+* Extend {{/api/administration/permissions}} with new key ""runImportExport"" (see row no. 26 in https://iteraweb.iteratec.de/confluence/pages/viewpage.action?pageId=94798389 )
+
+
+
+*Client:*
+
+* Hide export-import-tile if permission was not granted
+
+* Prohibit direct url-access if permission was not granted"		New Feature	iteraplan Speedbird	08/Mar/17 5:09 PM	07/Apr/17 2:25 PM														"07/Apr/17 12:07 PM;ants;/api/metamodel is predecessor for /api/icmm, so restriction to use GET on it by runImportExport permission leads to restriction of using the whole interactive client.
+
+/api/data resource is processed by the same handler as /api/icd, so these are identical resources and restriction to use GET in them leads to restriction of using the whole interactive client."	07/Apr/17 2:25 PM;dmkh;Review is done																																																					

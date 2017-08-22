@@ -1,0 +1,19 @@
+IFD - Undefined coloring and empty boxes 	"Reproduce with trunk 
+
+
+
+# Create a Enumeration Attribute 
+
+# Open the IFD 
+
+# And change the coloring to the created Attribute 
+
+# Only text and conntection lines are appearing
+
+
+
+Actual: the color for ""Undefined"" will not be used 
+
+Expected: the color for ""undefined"" will be used
+
+"		Bug	iteraplan Speedbird	20/Feb/17 10:16 AM	10/Mar/17 1:55 PM														10/Mar/17 1:55 PM;dmkh;Review is done, bug is fixed																																																						

@@ -1,0 +1,2 @@
+UI: Show attribute details on click not mouse-over	"Show attribute details on click not mouse-over;
+Make URLS in description of attributes clickable in popup."		Improvement	iteraplan PO	06/Jun/12 3:19 PM	08/Jun/12 9:26 AM					usability									08/Jun/12 10:24 AM;kvo;Thx																																																						

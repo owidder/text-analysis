@@ -1,0 +1,23 @@
+[2-B1] Asurichtung iOS-Devices umschaltbar	"Die Ausrichtung soll sich per Skript-Command umschalten lassen:
+
+{code}
+
+setOrientation    landscape
+
+setOrientation    portrait
+
+{code}"		New Feature	OpenSpeedMonitor	26/Jun/15 1:56 PM	29/Sep/15 2:42 PM														"26/Jun/15 1:58 PM;nku;Durch Martin bereits umgesetzt.
+
+Job ist eingerichtet.
+
+Es müssen nur noch die Ergebnisse gesichtet werden. So z.B. hier für die Homepage:
+
+https://iteraspeedmonitor.otto.wpt.iteratec.de/eventResultDashboard/showAll?selectedInterval=-1&selectedTimeFrameInterval=86400&from=25.06.2015&fromHour=13%3A58&to=26.06.2015&toHour=13%3A58&selectedFolder=49&selectedPages=1&selectedBrowsers=7&_selectedAllBrowsers=&_selectedAllMeasuredEvents=&selectedAllMeasuredEvents=on&_selectedAllLocations=&selectedAllLocations=on&selectedAggrGroupValuesUnCached=docCompleteTimeInMillisecsUncached&trimBelowLoadTimes=&trimAboveLoadTimes=&trimBelowRequestCounts=&trimAboveRequestCounts=&trimBelowRequestSizes=&trimAboveRequestSizes=&_action_showAll=Anzeigen&selectedChartType=0
+
+"	"28/Sep/15 4:44 PM;nku;Neue Jobs eingerichtet mit aktuellem iPad-Script in portrait und landscape für das iPad mini:
+
+https://iteraspeedmonitor.otto.wpt.iteratec.de/eventResultDashboard/showAll?selectedInterval=-1&selectedTimeFrameInterval=43200&from=24.09.2015&fromHour=4%3A12&to=24.09.2015&toHour=16%3A12&selectedFolder=67&selectedPages=1&selectedBrowsers=7&_selectedAllBrowsers=&_selectedAllMeasuredEvents=&selectedAllMeasuredEvents=on&_selectedAllLocations=&selectedAllLocations=on&selectedAggrGroupValuesUnCached=docCompleteTimeInMillisecsUncached&trimBelowLoadTimes=&trimAboveLoadTimes=&trimBelowRequestCounts=&trimAboveRequestCounts=&trimBelowRequestSizes=&trimAboveRequestSizes=&_action_showAll=Anzeigen&selectedChartType=0
+
+
+
+Werde ich am Mittwoch sichten."	29/Sep/15 2:42 PM;nku;Funktioniert																																																				

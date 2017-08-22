@@ -1,0 +1,9 @@
+Last Run findet keine Results	"Wenn ich auf meinen Job klicke, der in den letzten Minuten gelaufen ist, bekomme ich eine Fehlermeldung, die entweder sagt, ich dürfe keine Start Datum nach dem End Datum wählen, oder dass keine Results gefunden werden.
+
+
+
+Die Url ist z.B. [https://osm-aviatar-osm.apps.lht.ham.dlh.de//tabularResultPresentation/showListResultsForJob?selectedTimeFrameInterval=0&job.id=11&from=04.04.2017&fromHour=12%3A14&to=05.04.2017&toHour=12%3A07] (vom Kontor aus nicht erreichbar)
+
+
+
+Job ist aktiv."		Bug	OpenSpeedMonitor	04/Apr/17 2:19 PM	27/Jun/17 8:16 AM																																																																				

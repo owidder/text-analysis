@@ -1,0 +1,13 @@
+Adaptation of Jenkins job "test_performance" to the new Excel import	"The Jenkins job  “test_performance” logs the execution time for the individual import steps.
+The log files can be found on the build server here:
+_/opt/hudson/jobs/test performance/workspace/tools/performanceTest/reports/load_
+
+With the new iteraplan version the import has been revised and the times are not detected correctly now.
+* Old version: HTTP response was sent once the import step was complete
+* New version: HTTP response is sent immediately and page is updated per polling when there are changes
+
+Therefore adjust the “Excel-Import-soapui-project.xml” to the new Excel import.
+Please note, that the test should still works also for the older iteraplan versions.
+
+Possibility: Check the displayed website for the success message on the last import step, if possible."		Bug	iteraplan PO	13/Nov/14 10:39 AM	15/Dec/14 9:34 AM														"15/Dec/14 9:34 AM;fam;Solution okey.
+Ticket closed"																																																						

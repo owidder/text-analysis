@@ -1,0 +1,3 @@
+Job mit Persistieren	"Damit die Assets den Jobs zugeordnet werden können, müssen diese mit persistiert werden.
+
+Zudem muss es auch hierfür ein Mapping geben."		Task	OpenSpeedMonitor	05/Aug/16 11:53 AM	05/Aug/16 2:23 PM																																																																				

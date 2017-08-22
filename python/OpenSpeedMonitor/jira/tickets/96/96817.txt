@@ -1,0 +1,57 @@
+Mappings and entities	"One table for each building block type
+
+For standalone types
+
+* One entity class
+
+* separate table per type
+
+* See http://stackoverflow.com/questions/16755260/hibernate-two-tables-per-one-entity for inspiration.
+
+* Schema as follows:
+
+** Timestamp
+
+** author - Name of the user which committed the changes
+
+** building block id - of affected building block
+
+** change type - update, insert, delete
+
+** feature id - if applicable, as for example for user-defined attributes
+
+** feature persistent name - display name of the relationship or attribute/property
+
+** removed value - for single value assignment features, this is equivalent to the ""from"" value
+
+** added value - for single value assignment features, this is equivalent to the ""to"" value
+
+
+
+For associative types (Isr2Bo, Transport, etc.):
+
+* One entity class per type
+
+* one table per type
+
+* Schema as above, plus two more columns: for example ID_IS and ID_BO for Isr2Bo
+
+
+
+For Business Mapping:
+
+* As for associative types, only one column for each of the business mapping relations: ID_IS, ID_BP, ID_BU, ID_PROD
+
+
+
+One table and entity for attribute changes:
+
+* Timestamp
+
+* attribute id
+
+* attribute name
+
+* change type - delete, assignment removed
+
+* building block type"	96255	Sub-task	iteraplan Thunderduck	21/Sep/16 11:12 AM	26/Sep/16 2:31 PM																																																																				

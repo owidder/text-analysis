@@ -1,0 +1,255 @@
+Informationsflussgrafik ohne inaktive IF	"Hallo
+
+Ich bin wieder mal daran, eine Informationsflussgrafik zu erstellen. In der Filterung habe ich ebenfalls eingefügt, dass alle dazugehörenden Schnittstellen, welche entweder Abgelöst oder Inaktiv sind, nicht berücksichtigt werden sollen.
+
+Nach dem erstellen der Grafik, sind die Schnittstellen trotzdem vorhanden.
+
+Wie kann ich dies erwirken, damit die inaktiven und abgelösten Schnittstellen nicht mehr in der Grafik erscheinen.
+
+Bisher musste ich zuerst in iteraplan nachschauen, welche den Status haben und diese dann von Hand aus der Grafik löschen."		Technical question	iteraplan Support	25/Apr/17 12:43 PM	18/May/17 12:37 PM														"25/Apr/17 12:43 PM;alfred.studer@emmi.com;
+
+[^Informationsflussgrafik - Schnittstellen.docx] _(81 kB)_"	"27/Apr/17 2:54 PM;cst;Sehr geehrter Herr Studer,
+
+vielen Dank für Ihre Anfrage.
+
+Ist das Verhalten im interactiven Client das selbe, die Filter können Sie in diesem identisch setzen.
+Wenn dies ein Problem mit dem classic Client sein sollte, können wir Ihnen hier keine Lösung anbieten. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"27/Apr/17 3:13 PM;alfred.studer@emmi.com;Das kann ich ihnen nicht beantworten. Wenn ich in den interaktiven Client will, kommt die Anmeldemaske und ich muss mich nochmals anmelden. Bekomme dann ein File (permission.json) um dieses abzuspeichern, zu öffnen. Bei Abbrechen geht dann gar nichts. Von daher kann ich ihnen dies nicht beantworten. Die Frage ist nun, warum muss ich mich interaktiven Client nochmals anmelden!
+
+Habe dies auf allen Instanzen versucht und alle zeigen das gleiche Verhalten, dass ich mich auf dem interaktiven Client anmelden muss.
+Alle drei haben eine unterschiedliche iteraplan Datenbank, lediglich die beiden Test Umgebungen haben die gleiche iTurm DB."	"28/Apr/17 7:34 AM;cst;Sehr geehrter Herr Studer,
+ 
+vielen Dank für Ihre Anfrage.
+
+Das von Ihnen gemeldete Verhalten, hat etwas mit dem gesetzten Einstellungen des Browsers zu tun.
+Da ich das Verhalten noch nicht mit dem Thema iterplan gesehen habe, habe ich nach dem Verhalten im Internet recherchiert und folgenden Lösungsansatz gefunden.
+
+Würden Sie bitte iteraplan nicht im Kompatibilitätsmodus des IE 11 ausführen. Dies können Sie über ""Extras"" und ""Einstellungen der Kompatibilitätsansicht"" konfigurieren.
+
+Sollte das nicht zum Ergebnis führen, schauen Sie sich bitte folgenden Link an:
+
+[link title|http://www.schieb.de/725247/internet-explorer-11-json-dateien-anzeigen-statt-herunterladen]
+(Bitte vorab ein Backup der Registryeinstellung machen)
+
+Es kann hier mit den Einstellungen zu tun haben, wie der Browser mit ""json""-Dateien umgeht.
+
+Sonst müsste geprüft werden was sich an Ihrer Infrastruktur geändert hat, dies verhalten kann nicht auf ein Problem von iteraplan zurück geführt werden und habe hierfür auch keine schnelle Lösung.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"02/May/17 7:37 AM;alfred.studer@emmi.com;Die Einstellungen der Kompatibilitätsansicht ist es definitiv nicht. Aber das ist nicht das wichtigste, im Moment.
+
+Da ich mit dem interaktiven Client nicht warm werde (zu langsam, bringt nicht das korrekte Resultat wenn ich die Informationsflussgrafik im interaktiven Client visualisieren möchte) bitte ich sie, dies in ihrer Installation zu testen.
+Im Classic Client geht diese Filterung definitiv nicht. 
+
+Ich nehme an, dass sie unseren DB Dump noch nicht gelöscht haben. Somit haben sie ja unsere Merkmale. Denn wir filtern auf das Merkmal ""Status im Lebenszyklus"".
+
+Gibt es irgendwo im weltweiten Netzwerk eine richtige Bedienungsanleitung vom interaktiven Client? Und wenn möglich in Deutsch?"	"02/May/17 8:00 AM;alfred.studer@emmi.com;Zum Thema Geschwindigkeit und bringt keine Resultate:
+Im Classic Client, habe ich ein Informationsflussgrafik aufbereitet. Dann auf den Button ""Visualisieren im interaktiven Client"" geklickt. 
+Nach etwa 10 bis 15 min. habe ich diesen Versuch abgebrochen. 
+Es stand nur: Please wait. Data loading..."	"08/May/17 11:33 AM;fka;Hallo Christoph,
+
+Doku auf Deutsch haben wir nicht, das kannst du freundlich, aber bestimmt sagen.
+
+Ansonsten gibt es zwei Probleme, wenn ich Herr Studer richtig verstanden habe:
+
+Zum einen ist bei ihm der neue Client wohl sehr langsam und teilweise nicht benutzbar. Zum anderen gibt es Probleme bei der Filterung in der Informationsflussgraphik. Die beiden Dinge sollten wir trennen. Also zum einen schauen, ob die Filterung im neuen Client wie gewünscht funktioniert. (Im alten Client fixen wir erstmal nichts, wir sollten uns komplett auf den neuen Client konzentrieren.) Und zum anderen den neuen Client bei Herrn Studer zum Laufen bekommen.
+
+Vielleicht zuerst das erste (fachliche) Filterproblem angehen, im neuen Client. Dann schauen, dass dieser auch performant läuft bei ihm.
+
+Danke dir & viele Grüße
+Fabian"	"08/May/17 12:03 PM;cst;Sehr geehrter Herr Studer,
+
+vielen Dank für Ihre Antwort. 
+
+Eine Anleitung auf deutsch haben wir nicht und können Ihnen diese somit hier auch nicht anbieten. 
+
+Das aufrufen eines Diagramms in interactiven Client, ist nur möglich, wenn sich der Client auch fehlerfrei öffnen lässt. Nach Ihrer Aussage von oben, ist dies nicht möglich, da der Browser versucht die ""permission.json"" zu speichern. Dies ist  aufEinstellungen im Browser / Domänenrichtlinien zurück zu führen. Wenn dieses Verhalten gelöst ist, lassen sich auch die Diagramme öffnen. 
+
+Im classic Client werden wie oben schon beschrieben, keine Änderungen mehr durchgeführt. 
+
+Um hier weiter vorgehen zu können, muss sich erstmal der interactive Client normal öffnen lassen. Wir können hier nur bedingt weiter helfen, da das von Ihnen beschriebene Verhalten nicht über iteraplan gelöst werden kann. Hier wird ein Download der ""permission.json"" nicht vorgesehen, da diese zum öffnen des interactiven Clients benötigt wird.
+
+Warum der Browser hier einen Download durchführt, müsste von Ihrer Seite geprüft werden.  "	"08/May/17 2:15 PM;cst;Sehr geehrter Herr Studer,
+
+vielen Dank für Ihre Antwort.
+
+Der User Guide steht nur in englischer Sprache zur Verfügung.
+
+Das aufrufen eines Diagramms in interactiven Client, ist nur möglich, wenn sich der Client auch fehlerfrei öffnen lässt. Nach Ihrer Aussage von oben, ist dies nicht möglich, da der Browser versucht die ""permission.json"" zu speichern. 
+
+Wenn dieses Verhalten gelöst ist, lassen sich auch die Diagramme öffnen.
+Um hier weiter prüfen zu können, würden Sie mir bitte die ""web.xml"" Ihres Tomcat-Servers und die ""web.xml"" aus dem WEB-INF Ordner von iteraplan zukommen lassen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	09/May/17 8:22 AM;alfred.studer@emmi.com;Wie gewünscht die beiden Dateien	"09/May/17 8:23 AM;alfred.studer@emmi.com;[^web - WEB-INF.xml] _(12 kB)_
+
+[^web - TomCat.xml] _(167 kB)_"	"09/May/17 8:38 AM;cst;Vielen Dank, 
+
+hier war der Fehler erstmal nicht zu finden. Schicken Sie mir bitte noch diese Dateien zu, dann prüfe ich hier, ob das auslösen des Downloads durch eine Problem mit der Konfiguration hervorgerufen wird:
+
+Aus dem conf-Verzeichnis Ihrer Tomcat-Installation:
+• server.xml
+
+Die catalina.out und localhost.log Logdateien Ihrer Tomcat-Installation aus dem Zeitraum, in dem der Fehler aufgetreten ist.
+Aus [Tomcat]/webapps/[iteraplan Installationsverzeichnis]/WEB-INF:
+
+• Sämtliche Dateien, deren Name mit applicationContext beginnt.
+
+ 
+
+Die iteraplan Logdatei bzw. Dateien aus dem Zeitraum, in dem der Fehler aufgetreten ist. Diese Dateien tragen üblicherweise den Namen iteraplan-[version].log (für den aktuellen Tag) bzw. iteraplan-[version].log.[TIMESTAMP] für vergangene Tage. Der Ablageort dieser Logdateien wurde bei der iteraplan-Installation angegeben und kann bei Bedarf in der Datei log4j.properties nachgesehen werden.
+
+Die iteraplan System-Info. Diese kann von iteraplan-Benutzern mit der Rolle „iteraplan_Supervisor“ direkt von der iteraplan-Oberfläche unter dem Menüpunkt Administration->Konfiguration abgerufen werden.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"09/May/17 1:07 PM;alfred.studer@emmi.com;Anbei die gewünschten Dateien
+
+[^Support 05-2017.zip] _(54 kB)_"	"09/May/17 3:58 PM;cst;Guten Tag Herr Studer,
+
+ich konnte das Problem nachstellen, unter folgenden Bedingungen.
+ * IE 11
+ * Aufruf des interactiven Clients über den Namen des Servers.
+
+Würden Sie bitte test weise mit der IP-Adresse auf den Server gehen.
+
+[http://IP-ADRESSE:8080/emmieam/client/#/home|http://ip-adresse:8080/emmieam/client/#/home] 
+
+Der Aufruf des interaktiven Client kann etwas dauern. 
+Im Chrome und Firefox funktioniert der Aufruf ohne weitere Probleme. 
+
+Zusätzlich habe ich mit Version 5.5. keinerlei Probleme hierzu feststellen können, hier wurde der Aufruf des interactiven Clients auch aktualisiert. 
+Warum der Aufruf im Internet Explorer über den Server Name zu diesem Verhalten führt, kann ich Ihnen im Moment nicht sagen. 
+
+Werde in diese Richtung weiter Recherchieren. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"09/May/17 4:40 PM;alfred.studer@emmi.com;Anbei meine Versuche in FireFox und IE
+
+Allgemeines Verständnis: Wenn ich im classic Client eine Visualisierung (Informationsflussgrafik) starte und den Filter setze und lediglich ein paar wenige IS auswähle und danach auf den Button ""Visualisieren im interaktiven Client"" klicke
+erwarte ich, dass der interaktive Client die Filterung, welche ich im classic Client vorgenommen hatte, übernimmt. Leider ist dies nicht erfolgt! Sondern es hat irgendwelche Daten zur Visualisierung genommen.
+
+Danke für die Erleuchtung in diesem Thema.
+
+
+Zum anderen Thema: Sowohl bei Firefox und bei IE hat dies keine Verbesserung gebracht. Siehe dazu das angehängte Dokument.
+
+[^Anzeige Fehlermeldung.docx] _(60 kB)_"	"11/May/17 2:25 PM;cst;_Allgemeines Verständnis: Wenn ich im classic Client eine Visualisierung (Informationsflussgrafik) starte und den Filter setze und lediglich ein paar wenige IS auswähle und danach auf den Button ""Visualisieren im interaktiven Client"" klicke_
+ _erwarte ich, dass der interaktive Client die Filterung, welche ich im classic Client vorgenommen hatte, übernimmt. Leider ist dies nicht erfolgt! Sondern es hat irgendwelche Daten zur Visualisierung genommen._
+
+Korrekt, da die Visualisierung des neuen Clients hier nur aufgerufen wird und keine Einstellungen des classic Clients übernimmt. Wenn Sie gespeicherte Abfrage zu Diagrammen haben, können diese in Version 5.5. in den neuen Client übertragen werden. 
+
+[https://doc.iteraplan.de/display/iteraplan55/Saved+query+migration] 
+
+ 
+
+Je nach Browser ist es möglich, dass es sich um Caching-Probleme oder Cookie-Probleme handelt.
+
+Insgesamt scheint die Version 5.4 mit ihrer lokalen Browser-Konfiguration nicht in allen Browsern das gewünschte Verhalten zu zeigen. Deshalb sollten Sie auf jeden Fall ein Update auf Version 5.5 durchführen. Wir haben bereits die Bestätigung von anderen Kunden, dass dieses Verhalten nicht mehr auftritt. Weiterhin gibt es in 5.5 eine Option nach wie vor im Classic Client zu starten.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"16/May/17 7:46 AM;cst;_Allgemeines Verständnis: Wenn ich im classic Client eine Visualisierung (Informationsflussgrafik) starte und den Filter setze und lediglich ein paar wenige IS auswähle und danach auf den Button ""Visualisieren im interaktiven Client"" klicke_
+ _erwarte ich, dass der interaktive Client die Filterung, welche ich im classic Client vorgenommen hatte, übernimmt. Leider ist dies nicht erfolgt! Sondern es hat irgendwelche Daten zur Visualisierung genommen._
+
+Korrekt, da die Visualisierung des neuen Clients hier nur aufgerufen wird und keine Einstellungen des classic Clients übernimmt. Wenn Sie gespeicherte Abfrage zu Diagrammen haben, können diese in Version 5.5. in den neuen Client übertragen werden. 
+
+[https://doc.iteraplan.de/display/iteraplan55/Saved+query+migration] 
+
+Je nach Browser ist es möglich, dass es sich um Caching-Probleme oder Cookie-Probleme handelt.
+
+Insgesamt scheint die Version 5.4 mit ihrer lokalen Browser-Konfiguration nicht in allen Browsern das gewünschte Verhalten zu zeigen. Deshalb sollten Sie auf jeden Fall ein Update auf Version 5.5 durchführen. Wir haben bereits die Bestätigung von anderen Kunden, dass dieses Verhalten nicht mehr auftritt. Weiterhin gibt es in 5.5 eine Option nach wie vor im Classic Client zu starten.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"17/May/17 5:23 PM;alfred.studer@emmi.com;Ihre Aussage:
+""Allgemeines Verständnis: Wenn ich im classic Client eine Visualisierung (Informationsflussgrafik) starte und den Filter setze und lediglich ein paar wenige IS auswähle und danach auf den Button ""Visualisieren im interaktiven Client"" klickeerwarte ich, dass der interaktive Client die Filterung, welche ich im classic Client vorgenommen hatte, übernimmt. Leider ist dies nicht erfolgt! Sondern es hat irgendwelche Daten zur Visualisierung genommen.Korrekt, da die Visualisierung des neuen Clients hier nur aufgerufen wird und keine Einstellungen des classic Clients übernimmt. Wenn Sie gespeicherte Abfrage zu Diagrammen haben, können diese in Version 5.5. in den neuen Client übertragen werden""
+
+Ich habe mir extra einen neuen Server geben lassen und dies ausgetestet.
+Ich erstelle eine kleine Visualisierung, mit ca. 5 IS. Speichere das ganze ab und übergebe diese Informationen an den interaktiven Client.
+Als Resultat erhalte ich: In ihrem Browser werden nur die ersten 250 Elemente angezeigt.
+
+Ihre Aussage:
+""Insgesamt scheint die Version 5.4 mit ihrer lokalen Browser-Konfiguration nicht in allen Browsern das gewünschte Verhalten zu zeigen. Deshalb sollten Sie auf jeden Fall ein Update auf Version 5.5 durchführen. Wir haben bereits die Bestätigung von anderen Kunden, dass dieses Verhalten nicht mehr auftritt. Weiterhin gibt es in 5.5 eine Option nach wie vor im Classic Client zu starten.""
+
+Hab den Update gemacht und doch geht es nicht! Jetzt verstehe ich das ganze definitiv nicht mehr! Hat iteraplan eine Einschränkung in der Wahl der Browser?
+
+[^Übergabe an interaktiven Client.docx] _(191 kB)_"	"18/May/17 9:59 AM;cst;Es gibt keine Schnittstelle zwischen classic Client und interaktiver Client.
+
+Frage 1:
+
+""Visualisieren im interaktiven Client"" bedeutet, das er das Diagram im interaktiven Client mit Standardwerten öffnet. 
+ Hier werden *keine* Einstellungen aus der Ansicht im Classic Client *übernommen.*
+
+Um Einstellungen für Diagramm in den interaktiven Client übernehmen zu können, gehen Sie wie folgt vor:
+ # Gehen Sie auf ""Visualisierungen"" und wählen das gewünschte Diagramm aus
+ # Wenn Sie eine gespeicherte Abfrage an dieser Stelle ausführen können Sie direkt mit dem Punkt 5 fortfahren 
+ # Jetzt stellen Sie die gewünschten Filter ein und klicken auf ""Abfrage abschicken und bestätigen""
+ # Auf der geöffneten Seite mit den Einstellungen für das Diagramm selbst z.B. Farbe klicken Sie auf ""Abfrage Speichern""
+ # Nachdem Sie die Abfrage gespeichert haben, öffnen Sie den Reiter ""Visualisierungen"" und ""Gespeicherte Abfrage migrieren""
+ # Auf dieser Seite können Sie gespeicherte Abfragen für Diagramme und Ihre Listenansichten in den interaktiven Client übertragen 
+ # Makieren Sie die gewünschten Abfragen und klicken Sie anschließen auf den Knopf ""Migration in den neuen Client"" 
+ # Nach Abschluss der Migration wechseln Sie in den interaktiven Client und wechseln in den Tab ""Diagramme und Auswertungen"" und öffnen den Punkt ""Alle gespeicherten Abfragen""
+ # Hier finden Sie die migrierten Abfragen die Sie nun im interaktiven Client öffnen können 
+
+Bitte beachten Sie das es bei manchen Abfragen keine 1 zu 1 Übernahme gibt. Unter unserer Dokumentation finden Sie alle Sonderfälle:
+
+[https://doc.iteraplan.de/display/iteraplan55/Saved+query+migration] 
+
+*-------------------------*
+
+In diesem Ticket ging es auch darum, das sich der interaktive Client in Version 5.4 sich gar nicht öffnen lässt. 
+Hier war die Lösung das Update auf die Version 5.5, welches dieses Problem behoben hat. 
+
+Wie ich sehe können Sie diesen jetzt öffnen und somit wurde dieses Problem gelöst. 
+
+*-------------------------* 
+
+Zu letzten Frage und die Einschränkungen im Browser. Hier folgenden Auszug aus unserer Dokumentation:
+h1. Partial Diagram
+
+When working with large sets of data only a subset is shown (actual number is depending on the browser). A note on top of the diagram will tell you when this happens. Whenever a partial diagram is shown, you can download the complete diagram via the ""Full Download"" button.
+
+!https://doc.iteraplan.de/download/attachments/8684215/PartialDiagram.png?version=1&modificationDate=1477482516000&api=v2|width=357,height=55!
+
+You can add more restrictive [filters|https://doc.iteraplan.de/display/iteraplan55/Filtering] to reduce the number of building blocks. 
+Always be careful with partal diagrams as important parts of the diagram might not be shown. 
+
+ 
+
+Im Firefox und Google Chrome werden mehr Elemente angezeigt als im Internet Explorer, da dieser an der Stelle einfach nicht Performant genug ist. Es handelt sich hier um ein in Echtzeit berechnetes Diagramm, das auf Änderungen reagiert. So können Sie z.B. Farben durchprüfen und ändern, ohne das jedes mal mit einem Download prüfen zu müssen, wie im classic client üblich war. 
+
+Mit dem Button ""Full Download"" wird hier das ganze Diagramm abgespeichert. 
+
+Sie haben Anfang dieser Woche eine Einladung zu unserem WEB-Cast nächste Woche bekommen. Hier wird der interaktive Client vorgestellt. 
+Hier können einige Ihrer Fragen bestimmt geklärt werden. 
+
+ Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"18/May/17 11:00 AM;alfred.studer@emmi.com;Ok, wenn man zum ursprünglichen Thema zurückkommt, so kann ich in der Version 5.5 eine Grafik erstellen. JA das geht.
+
+Auch die abgelösten Schnittstellen werden nicht angezeigt. Wunderbar
+
+Aber da fehlen mir doch definitiv einige Punkte:
+-> Ich erstelle nun ein Informationsflussgrafik mit allen Kriterien. Das Diagramm wird mir hübsch angezeigt.
+Aber,
+- das Diagramm kann nicht in ein Visio überführen
+- wenn ich ein Informationsflussgrafik zusammenstellen will und z.B. den Lebenszyklus auswählen will, dann bekomme ich die Auswahl (Ist ein Aufzählungs-Merkmal) nicht angezeigt.(Vielleicht mache ich das ja was falsch)
+- die Geschäftsobjekte auf den Schnittstellen werden nicht dargestellt, auch nicht wenn man dies als PDF ausgibt. Dies ist für uns wichtig
+
+Selbstverständlich gehören, die am Schluss erwähnten Punkte, nicht zu diesem Ticket und es kann somit geschlossen werden.
+Ach übrigens, eine Einladung für einen WEB-Cast habe ich nicht erhalten."	"18/May/17 12:37 PM;cst;Habe für Ihre Fragen zur Informationsflussgrafik ein neues Ticket eröffnet um nicht die Übersicht zu Verlieren.
+
+
+
+Die Einladung zum Webcast wird erneut an Sie versendet.
+
+
+
+https://iteraweb.iteratec.de/jira/browse/IPS-453 "																																		

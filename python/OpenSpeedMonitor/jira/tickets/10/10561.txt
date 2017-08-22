@@ -1,0 +1,1 @@
+CSI-Tabelle von Highchart-Diagramm trennen			Task	OpenSpeedMonitor	25/Sep/13 10:32 AM	30/Sep/13 11:13 AM														25/Sep/13 12:20 PM;rhe;Annahme: Button JS-Wechsel zwischen Tabelle und Chart	30/Sep/13 11:13 AM;rhe;Realisiert als JS-Toggle-Button.	01/Oct/13 4:47 PM;rhe;Lösung ist von Uwe abgenommen und damit final!																																																				

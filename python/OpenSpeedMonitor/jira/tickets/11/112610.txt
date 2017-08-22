@@ -1,0 +1,1 @@
+Reset-Button für die Datenauswahl fehlt auf dem CSI-Dashboard	Dieser sollte auch hier angezeigt werden.		Bug	OpenSpeedMonitor	22/Feb/17 10:06 AM	24/Feb/17 2:03 PM																																																																				

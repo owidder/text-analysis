@@ -1,0 +1,4 @@
+Custom Dashboards EE / Win7 / IE9 / Oracle		46148	Sub-task	iteraplan PO	23/Oct/13 11:24 AM	28/Oct/13 2:33 PM					test									"25/Oct/13 6:52 PM;gph;TC1-4: Landscape (ITERAPLAN-2025), Portfolio (ITERAPLAN-2024) and Bar chart (ITERAPLAN-2108) doesn't work with empty results.
+TC1-4: Uneven diagrams results: ITERAPLAN-2109"	25/Oct/13 6:54 PM;gph;In TC1-4 "Excpeted": Shouldn't it be "with the exception of the cluster diagram." instead of "with the exception of the nesting cluster diagram."?	28/Oct/13 10:41 AM;gph;Wrong test case in TC2 step 17 bis 19.	"28/Oct/13 2:40 PM;psc;All test-steps performed. All identified issues documented in dedicated tickets. 
+
+This test-ticket will be closed."																																																			

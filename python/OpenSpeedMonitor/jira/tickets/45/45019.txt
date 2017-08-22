@@ -1,0 +1,4 @@
+User not always showing in the "show subscribers" list of an element, after subscribing to that element	"If a user subscribes to a building block, the ""show subscribers""-list correctly updates and shows said user, as well as the option to unsubscribe.
+However if you switch to another page within iteraplan and return to the newly subscribed-to building block afterwards, the list doesn't show the user anymore, and instead of ""unsubscribe"" you're offered to subscribe. The same happens when you hit the browser's page refresh button.
+
+The ""show subscribers""-list only shows the correct state again after either closing and reopening the building block's flow, or after click of ""refresh""."		Bug	iteraplan PO	29/Jun/11 3:36 PM	20/Sep/11 3:58 PM					subscriptions									19/Sep/11 3:24 PM;vsh;OK now																																																						

@@ -1,0 +1,19 @@
+NCD: Range slider blocks title, diagram, legend (Filtering)	"Summary:
+Range slider blocks title, diagram, legend when user reduces the page size or scrolls page to down
+
+Before: Use IS as outer type and TC as inner type
+Steps to reproduce:
+1. Go to NCD page
+2. Open Context menu for inner element
+3. Use any filtering by numeric properties
+4. Reduce the page size
+5. Scroll page to dows
+
+Actual: Range picker blocks title
+Expected: What is the expected behavior?"		Bug	iteraplan PO	06/Feb/15 12:20 PM	30/Jul/15 2:30 PM														"15/Apr/15 10:35 AM;wfr;Recommendation: defer
+
+because title is only temporarily blocked (really?)
+and title is not essential for the current task
+
+think of a layout with minimal blocked elements in general
+as the first step of fixing this issue"	30/Jul/15 2:30 PM;msr;The overlapping by the range slider is not a perfect behaviour, but just temporary during filter selection. Afterwards the range slider disappears again.																																																					

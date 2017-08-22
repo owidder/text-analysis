@@ -1,0 +1,1 @@
+CRUD: EventController: Save-Methode schlägt fehl			Bug	OpenSpeedMonitor	26/May/15 10:47 AM	26/May/15 10:54 AM														26/May/15 10:54 AM;rkr;lokale Datenbanktabelle hatte wegen Versionswechsel eine veraltete Struktur																																																						

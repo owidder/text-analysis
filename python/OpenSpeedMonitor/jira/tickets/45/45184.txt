@@ -1,0 +1,18 @@
+Improve page load speed by reducing the resources count	"Some pages take more time to load, because of the many JavaScript and CSS files. We already use JAWR to reduce the count of those files. We should improve the JAWR configuration. 
+One example is the Dashboard page. To get the page itself takes about 500ms, but to load the whole page about 3 seconds. "		Improvement	iteraplan PO	12/Oct/11 10:45 AM	28/Oct/11 11:16 AM					css	dashboard	javascript							"25/Oct/11 5:16 PM;agu;In Dashboard page the loading of the dojo scripts takes a long time because of 
+{code}
+dojo.require()
+{code}
+To load Dashboard page about 80 request are required. And this takes time. One possible optimisation could be by making the profiles as described under http://dojotoolkit.org/reference-guide/build/index.html. But each time we need additional dojo modules, we have to create a new profile. 
+Are there other good options?"	"26/Oct/11 2:33 PM;agu;I created 2 minified JavaScript files. One for Dashboard, another one for common Dojo modules like Menu. 
+An introduction quote about the Dojo Build System:
+{quote}
+Dojo, in its source distribution, contains thousands of separate files and resources which are available to any app via the package system. Normally each “dojo.require” statement results in a synchronous HTTP call to the server to retrieve a resource (dojo.require avoids re-requesting resources that have already been loaded, but the module needs to be loaded before it can be used).
+
+Because browsers wait for each synchronous web call to finish before allowing anything else to happen, this can substantially impair performance. Large apps that have many dependencies can take a very long time to load when a build isn’t used, or flash and redraw several times.
+
+Furthermore, in the source distribution, files are not minified, and larger files require more time and bandwidth to download to the page.
+
+Dojo does not include a single file containing every possible dojo function, since this would be very large (especially with optional modules from Dijit and Dojox); instead, the build system allows the creation of customized Dojo builds tailored to the needs of your particular web site. Better yet, the build system works with the packaging tools to allow you to make your modules faster too.
+{quote}"	"26/Oct/11 4:39 PM;agu;Another bug fixed. 
+Each time the building block containing the visualisation tab was loaded, the site was loaded twice. I removed the data attribute from object element. The data attribute will be set using JavaScript."																																																				

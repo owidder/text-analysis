@@ -1,0 +1,11 @@
+RELEASE: User Settings: Handle loading of usersettings and simultanously loading of a not any more existing SQ			Bug	iteraplan Quickfox	05/Oct/16 10:41 AM	20/Oct/16 2:36 PM														"14/Oct/16 11:57 AM;mwe;There are the following cases:
+
+* Link to SQ:
+
+** Click onto the link in the SQ list -> Check for SQ -> IsAvailable: 
+
+** Open a link to the SQ
+
+* SQ is open -> Reload page"	"20/Oct/16 2:09 PM;aan;Now the SQ are not shown even if they are not deleted
+
+But this is ok."																																																					

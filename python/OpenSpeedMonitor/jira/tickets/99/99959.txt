@@ -1,0 +1,17 @@
+Interface History shows unnecessary "empty" entries	"_Reproduce:_
+
+# Activate history if not already
+
+# Create a new Interface between two Information Systems
+
+# Query the history of the Interface via REST
+
+
+
+_Expected:_ INSERT change for the Interface showing the connection to the two selected Information Systems, also setting of Direction
+
+_Actual:_ As above, but in addition changes for name and description, although nothing was set there. The changes also don't show added or removed values.
+
+
+
+Those ""non"" changes should not be written to the database."		Bug	iteraplan PO	20/Oct/16 2:23 PM	21/Oct/16 8:14 AM																																																																				

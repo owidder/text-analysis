@@ -6,8 +6,8 @@ var cors = require('cors');
 var bodyParser = require('body-parser');
 var app = express();
 var fs = require('fs');
-var path = require('path');
 var _ = require('lodash');
+var zlib = require('zlib');
 
 var lsiIndex = require('./server/lsiIndex');
 var vector = require('./server/vectors');
@@ -96,8 +96,11 @@ function readFolder(relFolder) {
 
 function readContent(relPath) {
     var absPath = path.join(BASE_FOLDER, relPath);
-    var content = fs.readFileSync(absPath, 'utf8');
-    return content;
+    if(fs.existsSync(absPath)) {
+        var content = fs.readFileSync(absPath, 'utf8');
+        return content;
+    }
+    return "";
 }
 
 function readIgnore() {
@@ -188,11 +191,24 @@ router.get('/getSvg/*', function (req, res) {
     res.json({svg: svg});
 });
 
+router.get('/nextSvgChunk/*', function (req, res) {
+    var forceId = req.originalUrl.substr("/api/nextSvgChunk".length + 1);
+    var chunkObj = forceMgr.nextSvgChunk(forceId, true);
+    res.json(chunkObj);
+});
+
 router.get('/getNodesAndLinks/*', function (req, res) {
     var forceId = req.originalUrl.substr("/api/getNodesAndLinks".length + 1);
     var nodesAndLinks = forceMgr.getNodesAndLinks(forceId);
 
     res.json(nodesAndLinks);
+});
+
+router.get('/nextNodesAndLinksChunk/*', function (req, res) {
+    var forceId = req.originalUrl.substr("/api/nextNodesAndLinksChunk".length + 1);
+    var chunkObj = forceMgr.nextNodesAndLinksChunk(forceId, true);
+
+    res.json(chunkObj);
 });
 
 router.get('/getNodes/*', function (req, res) {
@@ -240,10 +256,23 @@ router.get('/ping', function (req, res) {
     res.send("pong");
 });
 
+router.get('/testzip', function (req, res) {
+    var text = _.repeat('abcdef', 1e+3);
+    var zipped = zlib.gzipSync(text);
+    var base64 = zipped.toString('base64');
+
+    res.json({
+        len: base64.length,
+        base64: base64
+    });
+});
+
 ignoreList = readIgnore();
 
 app.use('/api', router);
 
-server.listen(80, function () {
-    console.log('text-analysis server is listening on 80!')
+var port = process.argv.length > 2 ? process.argv[2] : 80;
+
+server.listen(port, function () {
+    console.log('text-analysis server is listening on ' + port)
 });

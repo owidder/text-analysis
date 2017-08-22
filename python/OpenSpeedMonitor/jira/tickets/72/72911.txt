@@ -1,0 +1,5 @@
+Umbenennen von 'MeasuredValue'-Klassen zu 'CsiAggregation'-Klassen	"Einige Services haben 'MeasuredValue' im Namen und in vielen Testklassen werden 'mv'-Variablen verwendet. Im Rahmen von IT-878 wurde MeasuredValue zu CsiAggregation umbenannt.
+
+
+
+Alle Services und Variablen müssen nun ebenfalls umbenannt werden!"		Improvement	OpenSpeedMonitor	10/Feb/16 2:38 PM	15/Feb/16 11:02 AM																																																																				

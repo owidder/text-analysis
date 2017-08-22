@@ -1,0 +1,3 @@
+Möglichkeit um JobGroup bei Job-Konfiguratuion zu erstellen	"Beim Erstellen oder Editieren von Jobs sollte man on-the-fly neue Job-Groups erstellen können.
+
+Ein modaler Dialog wäre dazu eine gute und einfach umzusetzende Möglichkeit."		Bug	OpenSpeedMonitor	30/Nov/16 10:53 AM	09/Jan/17 10:31 AM																																																																				

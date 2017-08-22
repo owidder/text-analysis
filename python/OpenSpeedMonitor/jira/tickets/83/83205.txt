@@ -1,0 +1,5 @@
+Als Productowner möchte ich das das iteraSpider Docker Image kleiner wird	"Aktuell ist das Docker Image des iteraSpiders noch zu groß, da es den Buildprozess für das jar file enthält. Dieser sollte nicht im Container sondern durch den Bamboo build Server durchgeführt werden: analog zu dem NMAP Build, wo erst das Jar gebaut wird und dieses anschließen in das Image kopiert wird. Dieses vorgehen ist deutlich effizienter und soll für den Spider ebenfalls angewendet werden.
+
+
+
+Unter Alpine ist eine Einbindung von PhantomJS momentan nicht ohne größeren Aufwand möglich, jedoch würde dies in einer erheblichen Verringerung des Speicherbedarf resultieren. Ein möglicher Ansatz ist dieser : [https://hub.docker.com/r/fgrehm/phantomjs2/] "		Story	secureCodeBox	06/May/16 1:18 PM	15/Aug/16 4:30 PM	secureBox	secureBoxSpider			iteratec	students																																																														

@@ -1,0 +1,29 @@
+Vision als Paper Prototype formulieren	"
+
+Ausgangspunkt: Ulis Trucker-Story
+
+
+
+* Welche Sichten soll es in der einfachsten Version geben?
+
+  * Welche Informationen werden dargestellt?
+
+  * Welche Interaktionsmöglichkeiten gibt es?
+
+  * Welche Visualisierungsmethode wird genutzt?
+
+* Umfang des Paper Prototypes: max 10 Seiten
+
+
+
+Akzeptanzkriterien
+
+
+
+* Paper Prototype ist interaktiv erlebbar
+
+* Vision wird allen beteiligten deutlich
+
+* Prototyp ist im Wiki abgelegt
+
+"		Task	EAMV15	20/Oct/15 11:48 AM	23/Oct/15 4:58 PM														23/Oct/15 4:58 PM;pkh;Fotos zum Paper Prototype sind im Wiki (mit weiteren Anmerkungen) zu sehen. 																																																						

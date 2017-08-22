@@ -1,0 +1,17 @@
+Better error handling for N3CD	If a user has only permissions for building block elements which are not connected (e.g. IS domains and products), there is a unspecific error when the N3CD is opened (see screen shots). The error message in this edge case should be improved.		Improvement	iteraplan Speedbird	27/Apr/16 1:29 PM	13/Apr/17 2:15 PM														04/Apr/17 12:51 PM;msr;Please check, if still valid in the actual trunk?	"13/Apr/17 2:15 PM;roia;At the moment I'm getting this diagram (no errors in the console):
+
+
+
+!ncd.jpg!
+
+
+
+ 
+
+
+
+Marking this task as ""Cannot Reproduce""
+
+
+
+ "																																																					

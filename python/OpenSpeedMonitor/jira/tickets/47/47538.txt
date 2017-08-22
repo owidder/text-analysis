@@ -1,0 +1,19 @@
+If 'permissions' are changed for a BuildingBlock, a history entry occurs.	"Reproduce:
+* change permissions for a BuildingBlock (for ex. IT-Services)
+* go to history
+
+Actual
+* The entry ""No known changes"" occurs
+
+Expected
+* No additional entry is shown"		Improvement	iteraplan PO	30/Mar/15 9:26 AM	19/Jan/16 1:44 PM					history									10/Apr/15 1:02 PM;fka;Maybe consider cleaning up already existent but useless database entries at users installations via an addition to the 3.4->5 DB migration script	"13/Apr/15 3:29 PM;isc;In a first analysis I have found the following things:
+With the annotation “@NotAudited” at the method “getOwningUserEntities” in the class “BuildingBlock”, you can prevent that ""Enverse"" create an history entry in the DB for permission changes. 
+But at the same time, you change also the “lastModificationUser” and the “lastModificationTime”.  So it could be that you also have to annotate these properties. 
+In a first test I have annotated all this elements, but ""Enverse"" has still created a new DB entry after saving although nothing has changed. 
+So I could not fix the problem.
+
+Furthermore, there is the same problem with the seal.
+It is to analyze whether the problem persists even at other places.
+
+Another solution to the problem would be, these entries do not show in the history. The problem is that we read the history entries page by page from the DB. If the user wants displayed only 20 entries at once, and we hide a few Faulty, he get always less than he actually wanted.
+"																																																					

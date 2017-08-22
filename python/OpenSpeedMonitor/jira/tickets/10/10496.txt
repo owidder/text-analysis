@@ -1,0 +1,20 @@
+Prüfung der Performance (aus IT-61)	"Es ist zu prüfen, ob und bei welchen darzustellenden Datenmengen/Zeiträumen die Performance beim Aufbau des Dashboards in die Knie geht. Zu große Datenmengen sollten nach der Auswahl der Kriterien durch den Anwender erkannt werden. Zumindest sollte in diesem Fall eine Warnung erfolgen. 
+Es gibt zu diesem Thema eine Excel-Auswertung: Hierzu bei Sabine Schalch oder Uwe Bessle nachfreagen."		Task	OpenSpeedMonitor	02/Sep/13 10:32 AM	09/Oct/13 5:27 PM														"24/Sep/13 11:31 AM;nkuhn;Bei Abfrage größerer Datenmengen dauert die folgende Abfrage sehr lange:
+{code}
+def criteria = EventResult.createCriteria()
+		return criteria.list {
+			eq('medianValue', true)
+			between('jobResultDate', fromDate, toDate)
+			'in'('cachedView', cachedViews)
+			rlike('tag', rlikePattern)
+		}
+{code}
+Man sollte noch mal mit der Reihenfolge der Attribute im DB-Index experimentieren."	08/Oct/13 5:02 PM;mzeimer;Betrachtet wird nur noch das CSI Dashboard.	"09/Oct/13 4:21 PM;mzeimer;Die teuerste Operation ist nicht das Laden der Daten, auch nicht das Aktualisieren Dieser (warum auch immer das hier noch mal gemacht wird), sondern:
+
+de.iteratec.isocsi.CustomerSatisfactionHighChartService.convertToHighChartMap(List<MeasuredValue>, AggregatorType)
+
+Dies ist das Aufbereiten für das Highchart. Bin am durchsteppen und suche nach Verbesserungen..."	"09/Oct/13 4:39 PM;mzeimer;- Die Highchart-Points wurden mehrfach sortiert -> Entfernt.
+- Die Graphen wurden sortiert -> Überflüssig, da eine SortedMap verwendet wird, die die Graphen bereits beim Einfügen sortiert -> Entfernt.
+- Die Berechnung des URL war viel zu kompliziert, es geht jetzt immer auf die Listenansicht. Wenn nur ein Wert vorhanden ist, könnte man ein direktes Redirekt machen, aber das wäre im Verhalten nicht Erwartungskonform, da der Benutzer ""fast immer"" die Liste sieht (kaum ein Wert hat im CSI Dashboard nur eine zu grunde liegende Messung -> Geändert.
+
+Das CSI Dashboard ist jetzt schneller."	09/Oct/13 5:27 PM;mzeimer;Version 2.1.5 is auf der SEU zum Test durch Uwe.																																																		

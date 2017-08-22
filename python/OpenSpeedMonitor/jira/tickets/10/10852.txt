@@ -1,0 +1,67 @@
+Statische Ansicht des CSI-Dashboards ohne aktuelle Woche ermöglichen	"CR-Anfrage von Raike Westmann von OTTO per Mail am 20.01.2014:
+
+... Klar können wir versuchen, nun immer Donnerstagnachmittag die Grafik zu ziehen – aber sicherstellen können wir dies nicht 100%ig.  In diesen Fällen ist der Zug für uns leider angefahren und wir müssen uns dann am Freitag wieder die Frage stellen lassen, was das für schräge Werte in der Grafik sind. Zudem kommt hinzu, dass der Wochenreport immer auf Daten von Freitag 00:00 – Donnerstag 24:00 basieren soll.
+
+ Daher nun meine Bitte an euch, nochmals eine Runde zu drehen und die Darstellung so aufzuarbeiten, dass die Werte samt Grafik zu jeder Zeit in sich stimmig sind."		Improvement	OpenSpeedMonitor	20/Jan/14 10:24 AM	22/Apr/15 2:28 PM														20/Jan/14 10:27 AM;nkuhn;In der statischen Ansicht des CSI-Dashboards sollte es die Möglichkeiteit geben, die aktuelle Woche nicht mit anzeigen zu lassen. Ob dies die Standard-Ansicht ist oder nicht muss noch geklärt werden. Am komfortabelsten wäre es, wenn das Diagramm ohne Neuladen der Seite den letzten Punkt ein- oder ausblenden würde. Wenn dies aber zu viel Aufwand macht dann mit Neuladen.	"08/Apr/15 10:32 AM;nku;Per default sollen aktuelle, noch nicht abgeschlossene, Intervalle nicht mit geladen/angezeigt werden. Dies gilt für das gesamte CSI-Dashboard (auch die statische Ansicht).
+
+Es soll eine Checkbox geben ""include actual interval / auch aktuelles Intervall anzeigen"", die per default nicht gesetzt ist. Nur wenn jemand diese explizit setzt soll das aktuelle Intervall mit angezeigt werden."	09/Apr/15 6:08 PM;rkr;Status: Checkbox ist drin, aktuell ohne Funktion.	14/Apr/15 3:55 PM;rkr;Siehe  getSelectedTimeFrame im CsiDashboardController	"15/Apr/15 9:36 AM;rkr;Ich brauche die Regeln, bis zu welchem Zeitpunkt bei welcher Voreinstellung wieviel abgezogen werden soll.
+
+
+
+Zum besseren Verständnis hier der soweit vorbereitete Code zur Berechnung des Intervalls:
+
+{code}
+
+if(includeInterval) {
+
+    end = new DateTime()
+
+    start = end.minusSeconds(this.selectedTimeFrameInterval)
+
+} else {
+
+    end = new DateTime()
+
+    start = end.minusSeconds(this.selectedTimeFrameInterval)
+
+
+
+    switch (this.selectedTimeFrameInterval) {
+
+        case 3600: // last hour
+
+            break
+
+        case 43200: // last 12 hours
+
+            break
+
+        case 86400: // last day
+
+            break
+
+        case 259200: // last 3 days
+
+            break
+
+        case 604800: // last week
+
+            break
+
+        case 1209600: // last 2 weeks
+
+            break
+
+        case 2419200: // last 4 weeks
+
+            break
+
+    }
+
+}
+
+{code}"	"15/Apr/15 11:26 AM;nku;Bitte pushe alles, was Du hierzu gemacht hast und lass mich das übernehmen.
+
+Ich glaube, ich bin da einfach schneller an der richtigen Stelle."	"22/Apr/15 2:28 PM;nku;Statische Ansicht immer ohne aktuelle, nicht abgeschlossene Woche.
+
+Auf dem ""normalen"" CSI-Dashboard per default ohne."																																																

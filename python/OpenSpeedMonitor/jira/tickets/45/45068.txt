@@ -1,0 +1,9 @@
+Error after deleting two elements of an enumeration atribute 	"If you delete two enum values then the building blocks who were assigned the second value prior to the deletion cannot be opened anymore. To reproduce proceed as follows:
+
+1.) Delete the value ""decision required"" for attribute ""Compliance to guidelines""
+2.) The TC ""Adabas D # 13"" can be opened without problems, the value for the attribute is set to null as expected.
+3.) Delete the value ""compliant"" for the same attribute
+4.) The TC ""ABAP # 4"" cannot be opened anymore as it was assigned ""compliant"" prior to the deletion
+5.) The TC ""Adabas D # 13"" can still be opened without problems"		Bug	iteraplan PO	01/Aug/11 1:24 PM	07/Sep/11 10:18 AM					attribute	delete	enum							01/Aug/11 1:28 PM;vsh;I think the problem might be caused by the incomplete cascade of the enum value deletion.	02/Aug/11 12:59 PM;kvo;Please check which versions are affected. 2.8? 2.9M2?	28/Aug/11 4:40 PM;vsh;The Hibernate cache doesn't get synchronized properly somehow.	28/Aug/11 5:01 PM;vsh;The 2nd Level Cache is not properly updated after the second deletion. After the specified timeToLiveSeconds=600 has passed, the second TCR can be opened without any problems.	"31/Aug/11 11:49 AM;agu;Very strange. The 2nd Level Cache is really not updated - the deleted entities are still in cache. See http://forums.terracotta.org/forums/posts/list/4413.page
+The NONSTRICT_READ_WRITE cache doesn't fit for us. I couldn't find a better solution, so the fix of Valentin is OK."	"31/Aug/11 3:19 PM;agu;Finally the reason was found :)
+The AttributeValueAssignment was not dereferenced from AttributeValue. AVA is the owner of this reference and this reference must be updated (dereferenced) by AVA explicitelly. "	07/Sep/11 10:14 AM;vsh;The same problem occurs with responsibility attributes.																																																

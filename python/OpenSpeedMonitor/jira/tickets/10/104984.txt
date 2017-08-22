@@ -1,0 +1,7 @@
+Edit Enumeration values	"* use ipEnumEditor component (ipPropertyEditor-component)
+
+ * multivalues
+
+ * also consider topLevelAttributes
+
+ * attributes of attributable relations"		New Feature	iteraplan Thunderduck	07/Dec/16 5:30 PM	22/Mar/17 12:48 PM														15/Mar/17 10:56 AM;pma;Commit 6288 does not belong to this ticket and will be discussed with [~fka]																																																						

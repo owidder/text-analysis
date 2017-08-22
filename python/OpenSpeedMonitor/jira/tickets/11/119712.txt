@@ -1,0 +1,3 @@
+Neue CSI Konfiguration anlegen ist in der GUI nicht mehr zu finden	"Man findet in der GUI keinen Button oder ähnliches um eine neue CSI Konfiguration anzulegen.
+
+ Im CsiConfigurationController gibt es die Action saveCopy() und in _confDetails.gspeine Funktion prepareConfigurationListAndCopy. Diese Funktion wird aber nirgends verwendet, scheint also irgendwann verloren gegangen zu sein."		Bug	OpenSpeedMonitor	27/Apr/17 9:17 AM																																																																					

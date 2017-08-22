@@ -1,0 +1,3 @@
+Check filemanager data timestamp	"The timestamp is not the current one.
+
+The output of the REST-Service is 2016-08-01 03:45:11 AM instead of ...05:45:11 PM"		Bug	iteraplan Quickfox	01/Aug/16 5:55 PM	02/Aug/16 10:25 AM														01/Aug/16 6:00 PM;mwe;Use {code}translateDateTime(moment(MILLISECONDS), $translate){code} to format in JavaScript code.																																																						

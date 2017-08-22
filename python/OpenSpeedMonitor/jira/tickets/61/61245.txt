@@ -1,0 +1,27 @@
+Empty rows are shown in combination with level-filter	"*Summary:*
+
+Empty rows are shown in combination with level-filter (although ""hide empty rows"").
+
+
+
+*Reproduce:*
+
+* Open a Landscape Diagram
+
+* Set Business Function as content type
+
+* Horizontal axis hierarchy level 2-3
+
+
+
+*Actual:*
+
+Empty rows (e.g Invoice) are shown
+
+
+
+*Expected:*
+
+All empty rows are hidden."		Bug	iteraplan PO	23/Oct/15 3:35 PM	26/Oct/15 10:41 AM														"24/Oct/15 4:35 PM;sfe;The same happens for ""normal"" column filters, too.
+
+Also the reverse case, where empty columns are shown when rows are filtered."																																																						

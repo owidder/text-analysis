@@ -1,0 +1,21 @@
+Ensure line-coverage for LSD with unit tests	"* Step 1: Analyse actual coverage for affected methods and functions in LSD
+
+* Step 2: Create subtasks for each class
+
+----
+
+
+
+Analysis:
+
+- dataservice
+
+- itembuilder
+
+- tablemodelbuilder
+
+- itemdecorator
+
+- toolareviewmodelbuilder
+
+"		New Feature	iteraplan PO	27/Nov/15 2:41 PM	15/Dec/15 1:25 PM																																																																				

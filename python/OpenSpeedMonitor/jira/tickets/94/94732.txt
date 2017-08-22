@@ -1,0 +1,1 @@
+Abstand zwischen Linechart und Tabelle  variable gestalten	Die Legende des Linecharts muss dynamisch mit derAnzahl der angezeigten Kurven skalieren.		Bug	OpenSpeedMonitor	31/Aug/16 1:41 PM	18/Jan/17 2:13 PM																																																																				

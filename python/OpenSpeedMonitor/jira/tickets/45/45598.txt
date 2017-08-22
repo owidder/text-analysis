@@ -1,0 +1,3 @@
+Umlauts in names of saved queries not correctly displayed in dropdown choices "filter by saved query" on building block overview pages	Umlauts are displayed in UTF-8 code, for example Ü as \u00DC.		Bug	iteraplan PO	10/Jan/13 2:11 PM	26/Apr/13 4:46 PM					encoding									16/Apr/13 7:25 PM;smo;Ticket set back, see comment on commit, revision #20038.	18/Apr/13 10:41 AM;lba;PMD fixed, see commit [#20038]	"18/Apr/13 2:09 PM;sry;Why that lock? Also, you separated Javadoc from method body.
+
+Please Add a comment where that code comes from and put in the original Licence header."	26/Apr/13 4:46 PM;sfe;looks fine	26/Apr/13 7:22 PM;sry;Merged into 3.0 branch and tested successfully.																																																		

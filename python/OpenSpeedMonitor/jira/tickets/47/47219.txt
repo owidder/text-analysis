@@ -1,0 +1,6 @@
+Adjust the start screen	"Adjust the relations-line (add the star marker to show the ability to have attributes) between 
+* TCR and IE
+* ISR and BO
+* ISR and IE
+
+Make sure the *.ai and *.png files in folder doc/startscreen are up to date as well."	47165	Sub-task	iteraplan PO	01/Dec/14 4:11 PM	23/Dec/14 8:41 AM					startpage	ui								11/Dec/14 4:28 PM;msr;Hint by ISC: Take care on customisatisations.	17/Dec/14 2:31 PM;msr;Added all customised startscreen - still missing: startscreens with text and ITSV- start screen.	18/Dec/14 1:30 PM;msr;Decision by FKA: Close the ticket as the start screens with text need to be adapted again with the new metamodel changes and not now.																																																				

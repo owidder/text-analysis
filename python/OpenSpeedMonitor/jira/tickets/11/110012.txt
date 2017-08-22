@@ -1,0 +1,35 @@
+Die REST-API in der OTTO-Instanz ist in Version 4 sehr langsam	"Die REST-API scheint sehr langsam zu sein. Folgende URL dauert bei OTTO sehr lange (z.T. > 30 Sekunden!):
+
+http://iteraspeedmonitor.otto.wpt.iteratec.de/rest/otto.de_Tablet/csi/20170118T000000Z/20170125T235959Z/?page=PL&step=OTTO_Produktliste_schuhe_L&browser=iPad4&locationId=157
+
+
+
+Kann an Indices liegen, die in der OTTO-Instanz nicht dem entsprechen, was Liquibase erzeugen würde."		Bug	OpenSpeedMonitor	30/Jan/17 9:50 AM	31/Jan/17 3:19 PM														"31/Jan/17 9:28 AM;nku;Auf der otto-wpt5-Maschine, auf dem der OSM für OTTO läuft liefen viele tomcat-Prozesse. Das Deployment-Skript soll eigentlich den tomcat neu starten. Das hat nicht mehr funktioniert und so liefen neben den mit jedem Deployment neu gestarteten tomcat auch noch mehrere alte Instanzen (aus 2016) parallel. Dadurch waren die 32G RAM der Maschine fast vollständig verbraucht und vermutlich lief bereits ein Swapping. Ich habe den OSM gestoppt, bzw. undeployt und alle alten tomcat-Prozesse manuell entfernt und den tomcat manuell wieder gestartet.
+
+
+
+Danach hat das Deployment des OSM den laufenden tomcat korrekt neu gestartet. Es sind nun wieder 25 der 32G RAM frei.
+
+
+
+Danach benötigt der obige REST-Call konstant knapp 5 Sekunden.  "	"31/Jan/17 9:29 AM;nku;Zudem habe ich auf der Maschine das mysql slow query logging aktiviert. Das kann ohne einen Neustart des mysqld erfolgen durch das Setzen von globalen Variablen:
+
+
+
+{code:sql}
+
+mysql -uroot -p -e ""SET @@global.long_query_time=1;"" # in seconds
+
+mysql -uroot -p -e ""SET @@global.slow_query_log_file=<path-to-slow-query-logfile>;""
+
+mysql -uroot -p -e ""SET @@global.slow_query_log=1;"" # enables slow query log
+
+{code}
+
+
+
+Eine Auswertung sollte dann in einigen Tagen mittels [mysqldumpslow|https://dev.mysql.com/doc/refman/5.7/en/mysqldumpslow.html] erfolgen.
+
+"	"31/Jan/17 3:19 PM;nku;Weitere Performance-Optimierungen sollen über die DB-Indices in der OTTO-DB erfolgen:
+
+https://iteraweb.iteratec.de/jira/browse/IT-1391"																																																				

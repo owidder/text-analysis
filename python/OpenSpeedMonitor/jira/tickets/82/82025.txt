@@ -1,0 +1,15 @@
+BM is not changable via REST API	"Reproduce:
+
+
+
+# User with no create but update and delete permissions to Business Mapping
+
+# PUT a change to an existing Business Mapping
+
+
+
+Expected: BM is changed, return status is 200
+
+
+
+Result: return status is 200, but *no* changes applied"		Bug	iteraplan PO	26/Apr/16 10:52 AM	26/Apr/16 2:31 PM																																																																				

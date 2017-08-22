@@ -1,0 +1,17 @@
+LIST-VIEW: Column "Actions" has unnecessary hover-effects (mouse-pointer changes)	"Timebox: 2 hours (if possible)
+
+
+
+ 
+
+
+
+In List View you can order columns by drag and drop, click on the column-name to ""sort by"" or change the width of a column.
+
+ *But:* Column ""Actions"" cannot be dragged/clicked or made wider. It's fixed to the end of the table in a static width and has no sorting-functionality.
+
+ When you hover over this column, the cursor changes to drag&drop symbol, hand or resize-symbol although the actions are not possible.
+
+
+
+*ToDo:* Remove the hover-effects over ""Actions"". The cursor should not change since there are no actions."	125416	Sub-task	iteraplan Speedbird	26/Jun/17 1:36 PM	21/Jul/17 4:11 PM														21/Jul/17 10:56 AM;mash;Review is done with 1 comment: https://iteraweb.iteratec.de/fisheye/cru/IP-795#general-comments																																																						

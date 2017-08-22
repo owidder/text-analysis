@@ -1,0 +1,105 @@
+Clarify semantics of unfold property	"Estimation meeting 18 Feb: for either WFr or ACh. The developer should present the result in a 2-3 minute slot in the daily stand-up.
+
+
+
+----
+
+This is either a defect of the specification paper, or of the implementations (plural! 3.x, 4.x, ...).
+
+
+
+
+
+Summary
+
+ 
+
+Is there a domain specific reason for the definition of unfold level with a maximum path length? See paper ""elastic MI"", as of 2013-03-19, by Christian Schweda.
+
+Or is the current implementation (based on the minimum) correct?
+
+ 
+
+ 
+
+Details
+
+ 
+
+The derived property unfoldLevel is, intuitively, the level of the element in a tree, where root is the current element and the edges are the base relationship.
+
+If the relationship (starting from the current element) is a tree, this is trivial, because there is only one traversal of the tree if one ignores the order of the subtrees.
+
+If the relationship is a DAG there are more than one traversals, resulting in different spanning trees, and different levels for a given element.
+
+If there are cycles, infinite recursion must be avoided, currently implemented by marking elements as visited and visiting them only once.
+
+Especially this strategy to avoid infinite cycles leads to different spanning trees, depending on the order of the children.
+
+ 
+
+The best available written specification is the paper (in progress/submitted?) elastic MI, as of 2013-03-19, by Christian Schweda, section ""Unfold"" p. 27:
+
+The formula specifies the maximum unfold level of all connected elements, plus one. 
+
+This means the length of the _longest_ path from the current element to the target element.
+
+ 
+
+For a distance-like measure, the definition of a maximum is unusual and might be surprising for a naïve user of iteraQL.
+
+ 
+
+In addition, the implementation of the specification with the maximum is more complex as with the minimum, because not even a depth-first traversal guarantees the longest path, in the context of a simple cycle detection and avoidance.
+
+
+
+
+
+Extracted from the code docs of the current implementation (4.1 trunk):
+
+
+
+// there are several possible definitions for the foldLevel property:
+
+    //1. minimal distance
+
+    //2. maximal finite distance (non-repeating over cyclic paths)
+
+    //3. maximal potentially infinite distance
+
+    //4. multi-valued finite distance (non-repeating over cyclic paths, but measuring distance over all possible finite paths)
+
+    // for now, we use the minimum distance (nr.1), as it is the simplest
+
+    // to implement and the one that makes most sense (from a technical perspective).
+
+    // Note that the minimum distance is not the distance described in the elasticMI specification.
+
+
+
+and maybe even more possible definitions...
+
+
+
+Idea:
+
+Choose the one that meets the expectations and needs of the typical iteraQL user, not the most complete or most elegant!
+
+"		Bug	iteraplan PO	09/Jul/13 1:58 PM	16/Sep/16 1:43 PM					iteraQL	itreraQl	query							30/Dec/15 2:43 PM;fka;Only document the current behaviour	"16/Sep/16 1:00 PM;wfr;Solution: document as follows:
+
+
+
+Well defined only for tree-like structures, recommended for statically defined hierarchies.
+
+
+
+Changed https://www.iteraplan.de/doc/display/iteraplan54/Operators
+
+"	"16/Sep/16 1:00 PM;wfr;https://www.iteraplan.de/doc/display/iteraplan54/Operators
+
+
+
+added para to foldLevel operator.
+
+"	16/Sep/16 1:43 PM;fka;(y)																																																			

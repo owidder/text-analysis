@@ -1,0 +1,9 @@
+Buttons overlap Name editor on single page	"Open single page for some building block. 
+
+
+
+Hover mouse in place where the button's top is visible - button appears above the editor.
+
+
+
+!button-over-editor.png!"		Bug	iteraplan Speedbird	12/Jun/17 3:01 PM	23/Jun/17 12:58 PM																																																																				

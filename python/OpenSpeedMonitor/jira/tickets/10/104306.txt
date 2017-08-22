@@ -1,0 +1,7 @@
+No Error without server connection	"build a time out in REST-Responses
+
+
+
+- after 30 sec. without response edit should be rollbacked with appropriate error message
+
+"		Bug	iteraplan Thunderduck	30/Nov/16 9:08 AM	14/Dec/16 9:24 AM																																																																				

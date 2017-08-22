@@ -1,0 +1,8 @@
+Improve general error message	"The current error message is misleading, because there are no Close or Cancel buttons:
+""A general technical error occurred. To continue, please click Close or Cancel, or clear the current session.""
+
+Remove the second sentence. Don't forget to adjust the translations.
+
+"		Improvement	iteraplan PO	28/Apr/14 11:04 AM	14/Nov/14 11:12 AM					error									"10/Nov/14 2:46 PM;tam;The second part of the error message ""To continue, please click Close or Cancel, or clear the current session."" was removed.
+
+Also two customizations were modified."																																																						

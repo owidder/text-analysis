@@ -1,0 +1,35 @@
+Fill ReactionsEvent with change information	"The ReactionsEvent sent by the ReactionsEventListener has to be filled with teh information about the changes on building blocks. This means the changes have to be pulled out from the different hibernate events. The following cases have to be consideres:
+
+
+
+* Deletion of a building block element
+
+* Insertion of a new building block element
+
+* Update of an existing building block element:
+
+** Change of attribute values/relationships
+
+** Deletion of attribute values/relationships
+
+** Insertions of attribute values/relationships
+
+
+
+"		New Feature	iteraplan Thunderduck	15/Jul/16 10:38 AM	01/Aug/16 4:19 PM														"28/Jul/16 1:13 PM;mse;There were a lot of changes back and forth in all the commits. So please review only the current version of:
+
+
+
+* ReactionsEventListener.java
+
+* ReactionsEventListenerTest.java
+
+
+
+I have also updated the two example JS-scripts from the last Scrum review which might be helpful for testing:
+
+
+
+* exampleFlatModel.js
+
+* exampleSubscribeFor.js"	01/Aug/16 2:34 PM;mse;Please review only the last 4 commits.																																																					

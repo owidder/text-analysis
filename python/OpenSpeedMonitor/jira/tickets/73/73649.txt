@@ -1,0 +1,20 @@
+Johannes Meyer	User		Access	iteraplan Support	16/Feb/16 1:19 PM	06/Apr/16 7:00 AM														18/Feb/16 8:58 AM;sfe;Was bedeutet "User" in diesem Zusammenhang? Geht es um einen Forum-Account oder um einen Jira-Zugang?	"18/Feb/16 9:09 AM;johannes.meyer@easycredit.de;Am besten beides :)
+
+Ich konnte da nichts auswählen, hatte keinen Hinweis was ich eingeben kann und die Maske scheint alles zu akzeptieren. "	"18/Feb/16 9:44 AM;sfe;In Ordnung. Ich kümmere mich darum, und nehme auch mal mit, dass man die Maske in der Hinsicht besser gestaltet.
+Gerade der Zugang zum Jira kann aber noch bis nächste Woche dauern, leider."	"23/Feb/16 8:14 AM;sfe;Ich kann leider keinen Forumsbenutzer finden, um ihm die entsprechenden Rechte für den Communitybereich zu geben.
+
+Hast Du bereits einen Benutzer für das Forum registriert?
+
+Ansonsten kannst Du das hier: http://forum.iteraplan.de/register
+
+Falls ich den Benutzer nur nicht finden kann, bitte nenne mir den Benutzernamen."	"29/Feb/16 3:04 PM;sfe;Ein Jira-Zugang wurde angelegt:
+
+User: ip.johannes.meyer
+Initiales Passwort: iteraStart1!
+
+Adresse des Jira: https://iteraweb.iteratec.de/jira"	"14/Mar/16 12:39 PM;johannes.meyer@easycredit.de;Der link zum jira stimmt nicht. Ich werde immer auf die Portalseite weitergeleitet.
+"	"14/Mar/16 1:34 PM;sfe;Welche Portalseite meinst du? Das iteraweb-Portal?
+Ich kann dir noch den Direktlink zum iteraplan-Projekt in dem Jira geben:
+https://iteraweb.iteratec.de/jira/projects/ITERAPLAN/summary
+
+Ich hoffe damit kommst du weiter."	29/Mar/16 8:26 AM;sfe;Falls es immer noch nicht geht: Unter Umständen bist du noch mit dem Service-Desk Account eingeloggt und wirst deshalb weitergeleitet. Ich bin mir da nicht sicher. Versuche mal, dich direkt mit dem ip.johannes.meyer Benutzer einloggen, und dann auf den Link zu wechseln.																																															

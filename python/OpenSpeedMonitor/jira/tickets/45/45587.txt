@@ -1,0 +1,6 @@
+Excel Import: Some errors are not reported on the UI	"Example: Error messages coming up in the {{EntityDataImporter}}, for example when a cell value is not of the expected type (see error message written in {{getCellValueOfType}}) correctly appear in the log, but are ignored by the import process.
+The process continues, and might complete with a success message, while in fact some properties may not be set.
+
+These errors should be reported on the import page as in iteraplan 3 and prevent the continuation to the next import step.
+
+Please also investigate whether this happens in other import steps/classes."		Bug	iteraplan PO	13/Nov/12 4:03 PM	19/Aug/14 10:44 AM					error	excel	import	message						25/Jun/13 10:36 PM;sry;First task: Verify whether that problem relates to iteraplan 3.1 too. If not, close it.	07/Aug/14 3:43 PM;fka;Is this still applicable?	13/Aug/14 1:16 PM;dop;This ticket is deprecated. The {{EntityDataImport}} is not used for Excel Imports anymore.	19/Aug/14 10:43 AM;isc;This concrete case no longer exists but the problem still exists. I have created a new ticket: ITERAPLAN-2687																																																			

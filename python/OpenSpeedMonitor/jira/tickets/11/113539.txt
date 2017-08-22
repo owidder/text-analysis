@@ -1,0 +1,67 @@
+Fisheye: Exception beim Hinzufügen von zusätzlichen Revisionen zu bestehendem Review	"Liebe Admins,
+
+
+
+seit dem Upgrade von Jira/Fisheye besteht bei den ukrainischen Kollegen (Accounts: dmkh und viol) folgendes Problem:
+
+
+
+1. Sie öffnen ein bestehendes Review in Fisheye
+
+2. Sie fügen einen weiteren Commit über ""Edit Details\Add Content"" hinzu
+
+3. Eine Exception fliegt: Siehe Screenshot
+
+
+
+Könnt ihr euch das bitte anschauen?
+
+
+
+Danke
+
+
+
+Marcel"		Task	Infrastruktur	01/Mar/17 4:36 PM	02/Mar/17 11:40 AM	Sonstiges													01/Mar/17 5:11 PM;sas;Hallo Marcel, was passiert, wenn ihr die Schritte von oben durchführt? habt ihr auch eine Exception? Wäre es möglich diese Schritte auch von ausserhalb des Unternehmen durchzuführen (ohne VPN)? Danke	"02/Mar/17 9:50 AM;msr;Hi Sami.
+
+Danke für die schnelle Antwort.
+
+Weder Andrea noch ich bekommen diese Exception, wenn wir die selben Schritte hier im Intranet ausführen.
+
+Ich frage die ukrainischen Kollegen, ob sie es auch VPN-Verbindung testen können (sofern Fisheye ohne VPN erreichbar ist).
+
+
+
+Ich geb dir wieder Bescheid."	02/Mar/17 10:19 AM;sas;Fisheye ist sicher ohne VPN erreichbar./Gruß	"02/Mar/17 10:50 AM;msr;Hi Sami.
+
+Er bekommt dieselbe Fehlermeldung mit VPN-Verbindung und ohne VPN-Verbindung. (siehe neuer Screenshot).
+
+Können wir noch etwas Weiteres testen?
+
+
+
+VG
+
+
+
+Marcel"	"02/Mar/17 11:19 AM;msr;Hi Sami.
+
+
+
+Du wirst es nicht glauben, im Firefox geht es. Und nach einem Neustart und Cache-Clear auch im Chrome.
+
+
+
+Danke für deine Hilfe und entschuldige, dass ich vorausgesetzt hatte, dass er schon den Cache geleert hatte (hatte er ja nicht :( )
+
+
+
+Marcel"	"02/Mar/17 11:40 AM;sas;Hallo Marcel, danke für die Info, du brauchst dich nicht zu entschuldigen, das ist halt so in der IT..
+
+
+
+ich schließe jetzt das Ticket /Gruß
+
+
+
+ "																																																	

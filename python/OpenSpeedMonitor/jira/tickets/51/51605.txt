@@ -1,0 +1,47 @@
+Dialog for Toolarea: Attribute Selection	"Please contact [~msr] before starting with development of this ticket because the interaction design is not yet finalised.
+
+
+
+*Scope of this ticket:*
+
+Create a text input field. To select an attribute, you enter letter by the letter the name of the attribute in a text input field. During typing the attribute list (appears under the input field) is filtered immediately. Finally the user selects one attribute of the list.
+
+Look, if there are some plugins.
+
+The estimation is only valid if there exists a plugin.
+
+
+
+*Full description:*
+
+
+
+*Summary:*
+
+Create a dialog for the filtering within the toolarea. This directive should provide the possibility to filter by enumeration in the style of
+
+""Attribute"" = ""Value"".
+
+
+
+*Architecture:*
+
+This directive inherits from the MenuDirective (by ""require"").
+
+The attribute list and its values are provided by the ToolareaViewModelBuilder and injected by the toolareaDirective and MenuDirective.
+
+
+
+*Interaction:*
+
+The dialog is openened from the menu ( ITERAPLAN-3811 ). To select an attribute, you enter letter by the letter the name of the attribute in a text input field. During typing the attribute list (appears under the input field) is filtered immediately. Finally the user selects one attribute of the list. The list of possible values is displayed on the right hand side. After selecting a value the diagram is filtered immediately in the background.
+
+Create a button to revert any filtering. Create a button to close the dialog.
+
+
+
+*Keep in mind, that this dialog will be extended with a numeric range slider and date picker in the future.*
+
+"	47838	Sub-task	iteraplan PO	23/Jul/15 10:18 AM	31/Jul/15 4:13 PM														"31/Jul/15 7:58 AM;isc;I've implemented the solution of ""angular-input-dropdown"".
+
+https://github.com/hannaholl/angular-input-dropdown"	31/Jul/15 4:13 PM;tam;Reviewed																																																					

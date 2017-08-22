@@ -1,0 +1,13 @@
+Als Entwickler möchte ich bei Fund des Dependencycheckers eine Flag setzen	"Bamboo soll während der Ausführung die Logfiles überwachen und feststellen, ob der DependencyChecker eine Schwachstelle ausfindig gemacht hat.
+
+
+
+Vorgehen:
+
+1. Logs überwachen / durchsuchen
+
+2. Variable für Schwachstelle auf true setzen
+
+3. Schwere der Schwachstelle, gemäß CVSS hinterlegen
+
+4. Schwachstellen-Log separat speichern"		Task	secureCodeBox	29/Jul/16 11:22 AM		Buildserver (Bamboo)				students																																																															

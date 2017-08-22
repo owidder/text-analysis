@@ -1,0 +1,17 @@
+Pie Chart Diagram (Testlink)		124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:18 PM	19/Jun/17 3:57 PM														"15/Jun/17 9:30 PM;naba;Test cases: Diagrams/ Pie Chart Diagram ip-19, 20
+
+ For smoke test please use
+
+https://doc.iteraplan.de/display/iteraplan60/Pie+Chart+Diagram (examples and tips)
+
+
+
+Please be creative and progressive.
+
+
+
+*Note*:
+
+ - Work with documentation is still in progress
+
+ - Due to some technical issues some test cases are still out of date."	19/Jun/17 3:55 PM;aan;Both tests in test link where executed.																																																					

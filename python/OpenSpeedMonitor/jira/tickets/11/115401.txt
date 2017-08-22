@@ -1,0 +1,10 @@
+tabellarische Auswertung funktioniert nicht	"Guten Morgen,
+
+
+
+stecke immer noch in der Installation bei E.ON und habe ein neues Problem mit den tabellarischen Auswertungen. Habe noch nicht genau erfahren, wann der Fehler auftritt, aber liefere das nach. Log ist angehängt."		Fault	iteraplan Support	20/Mar/17 9:13 AM	20/Mar/17 12:33 PM														"20/Mar/17 9:13 AM;dne;
+
+[^iteraplan-3.4.0EON-170320-0913.log] _(114 kB)_"	20/Mar/17 9:24 AM;dne;Konkretisierung: Der Excel-Export der Auswertung verursacht den Fehler	"20/Mar/17 10:09 AM;cst;Daniel prüft ob es hier ein Timeout Problem zur Datenbank ist.
+Das Verhalten ist bei EON schon aufgetreten und sollte nach aufsetzen der neuen Instanz gegen geprüft werden. "	"20/Mar/17 11:54 AM;dne;Problem war eine zu lange Laufzeit der Ausführung gepaart mit einer zu geringen TimeOut Grenze des Reverse Proxy. Diese musste in der httpd config hochgesetzt werden.
+
+Ticket kann geschlossen werden."																																																			

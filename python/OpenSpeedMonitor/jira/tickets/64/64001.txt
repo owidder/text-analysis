@@ -1,0 +1,13 @@
+Prozente persistieren im Bereich zwischen 0 und 100	"Beim Umstieg auf Liquibase müssen folgende SQL-Statements beachtet/getestet werden:
+
+
+
+{code}
+
+update event_result set customer_satisfaction_in_percent = customer_satisfaction_in_percent * 100;
+
+
+
+update measured_value set value = value * 100;
+
+{code}"		Task	OpenSpeedMonitor	19/Nov/15 9:24 AM	23/May/16 4:30 PM														25/Feb/16 7:28 PM;bka;Ist dieses Ticket noch aktuell? Der Sprung auf Liquibase ist ja schon ein Stück alt....																																																						

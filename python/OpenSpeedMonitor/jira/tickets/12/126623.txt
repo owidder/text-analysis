@@ -1,0 +1,1 @@
+Script löschen scheitert, wenn das Script eine Historie hat	Wenn es assoziierte ArchivedScripts gibt lässt sich das Script nicht mehr löschen.		Bug	OpenSpeedMonitor	07/Jul/17 12:22 PM																																																																					

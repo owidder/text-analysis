@@ -1,0 +1,49 @@
+Query Console: editing of the list leads to an error	"*Reproduce:*
+
+* Open Query Console
+
+* Execute some query
+
+* Try to edit some value from result table
+
+
+
+*Actual:* alert ""Error of internal representation. See logs for further information."" is shown, error in console
+
+*Expected:* editing should be fixed/disabled (discuss with [~msr])
+
+*{color:red}UPDATE:{color}* it should be disabled on query console
+
+
+
+*Stack trace:*
+
+{code}
+
+angular.js:14525 Edit Service could not apply model changes: 
+
+Error code: 3
+
+Messages: Invalid building block type qc
+
+(anonymous) @ angular.js:14525
+
+$delegate.warn @ logger.js:70
+
+logFailure @ editService.js:540
+
+(anonymous) @ editService.js:485
+
+processQueue @ angular.js:16832
+
+(anonymous) @ angular.js:16876
+
+$digest @ angular.js:17971
+
+$apply @ angular.js:18269
+
+done @ angular.js:12387
+
+completeRequest @ angular.js:12613
+
+requestLoaded @ angular.js:12541{code}"		Bug	iteraplan PO	20/Jun/17 11:02 AM																																																																					

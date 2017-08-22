@@ -1,0 +1,15 @@
+BBT list view: zero values does not display correctly	"Steps to reproduce:
+
+1. Access BBT list view page
+
+2. Add some numeric column
+
+3. Open edit menu in some column cell and set ""0"" value
+
+4. Apply changes
+
+
+
+Expected: ""0"" value is displayed in cell
+
+Actual: cell is empty"		Bug	iteraplan Speedbird	28/Mar/17 2:55 PM	11/Apr/17 3:43 PM														11/Apr/17 3:43 PM;dmkh;Is already fixed in duplicate-ticket IPTS-737																																																						

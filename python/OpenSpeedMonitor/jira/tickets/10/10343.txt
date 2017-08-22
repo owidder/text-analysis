@@ -1,0 +1,8 @@
+Vermeiden von raw-Types (Code Duplikationen) -> Refactoring	"Durch die Verwendung von raw-types wie String, entstehen code-Duplikationen, welche die Wartbarkeit erheblich einschränken.
+
+Beispiel: Die Measured-Value-Tags (Variablen heißen meist: ""mvTag""):
+In diesem Tag werden Indentifikationen verschiedenen Entity codiert, um einen Wert wieder zu erkennen bzw. Ergebnisse grupieren zu können.
+Sowohl die Erstellung als auch das Auslesen, sind in meherere Klassen und Methoden, so z.B. auch in MeasuredValueTagService, verteilt. Änderungen am Tag-Format oder Inhalt sind sehr aufwendig -> Aufgefallen beim refactoring IT-9 entfernen der Referenz von Job auf Page).
+
+Siehe zum Begriff custom value types:
+https://miniframes.googlecode.com/svn/trunk/de.miniframes.minivalues/doc/javadoc/de/miniframes/minivalues/Value.html"		Improvement	OpenSpeedMonitor	24/Jul/13 12:18 PM	25/Feb/16 6:58 PM														25/Feb/16 6:58 PM;bka;Durch das Ticket IT-62 wird diese Verbesserung überflüssig.																																																						

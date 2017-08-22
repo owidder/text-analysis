@@ -1,0 +1,5 @@
+Revision of the page for dashboard instances	"Currently, the configuration page for custom dashboards is not really intuitive.
+Do you thoughts, how we can rework this page.
+Maybe insert a little description between the two tables to explain the table for the saved queries.
+Additionally, a bookmark link was missing.
+"	45668	Sub-task	iteraplan PO	24/May/13 2:32 PM	20/Jun/13 12:25 PM					dashboard	usability								20/Jun/13 12:25 PM;bra;(/) fixed																																																						

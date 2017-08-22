@@ -1,0 +1,31 @@
+Complete Nesting Cluster Diagram	"*Priority 1*
+
+Add all remaining features to the NCD.
+
+Remaining features are 
+* those present in the traditional Web UI and missing in the new client.
+* new in the new client, but not yet available in all expected places, or not yet working in combination.
+
+Examples, *not* limited to this list:
+ * all types of building blocks as inner elements
+ * all connections and (connected) types for grouping (all predefined) and outer elements.
+ * use two- and three-step connections for grouping  (all predefined / precomputed)
+ * coloring inner elements by all properties (predefined and user defined)
+ * coloring outer element by all properties, dito
+ * filter on elements for outer boxes
+ * partial diagram (left upper corner) for large number of elements
+ * saving *all* view state in URL, including highlight, exclusion, order of elements, with compact/encoded parameter
+ * extra group for ""orphans"", inner elements without an outer element
+ * nesting for outer boxes
+ * 3-level nesting for inner and outer (not in scope: n-level nesting)
+ * more color swatches
+ * user-defined colors for enumerations
+ * ? user defined colors for continuous coloring
+ * min/max-value in continuous coloring
+ * improvements on legend (Tanyas idea with number badges, gray-scale printing)
+ * vector format for PDF (so that magnified PDF has no visible pixels)
+ * settings (filter, coloring, ...) in title and/or legend
+
+Additional issues:
+ * long names in boxes: clip only, or wider boxes, or more lines? NOT: smaller font size.
+"		Epic	iteraplan PO	30/Oct/14 11:33 AM	12/Jul/16 5:44 PM														07/Nov/14 3:46 PM;sepr;RE ~100SP	12/Jul/16 5:44 PM;fka;All done																																																					

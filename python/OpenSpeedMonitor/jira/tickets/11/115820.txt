@@ -1,0 +1,13 @@
+Embedded Report Architecture	"Get ideas/suggestions for the following topics:
+
+
+
+How tho include the client: the complete code? only parts? A new interface that works with the client and on the server?
+
+
+
+How to obtain the data, for example the datamodel, via REST on ther server itself, or on a different way on the server?
+
+
+
+How to obtain the data neede for the query, for example the configuration form the saved query(uui)? By adding this data from the server or via REST?"		Task	iteraplan Thunderduck	22/Mar/17 11:44 AM	24/Apr/17 12:54 PM																																																																				

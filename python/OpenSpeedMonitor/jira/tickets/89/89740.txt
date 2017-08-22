@@ -1,0 +1,68 @@
+Additiver Import	"Guten Tag
+
+Wir haben vor einiger Zeit, wegen dem Additiver Import auf die Version 5.2 gewechselt. Nun habe ich wieder einen Import versucht. Folge, alle Informationen in ""Teil-Informationssystem von"" sind gelöscht worden.
+
+Das heisst für mich, ich muss wieder einen Restore der ganzen Datenbank durchführen.
+
+
+
+Ihr habt geschrieben, dass durch die Version 5.2 dieses Problem behoben sei. In meinen Augen ist dies nicht so! Ich habe nun in ca. 732 Informationssystemen diese Beziehung verloren.
+
+
+
+Das heisst mich langsam aber sicher keinen Massen Import mehr durchzuführen. Das heisst schlussendlich, dass ich jedes einzelne IS von Hand anpassen muss. Dafür habe ich echt keine ZEIT!
+
+
+
+Danke für die rasche Behebung!
+
+
+
+Freundliche Grüsse
+
+ A. Studer
+
+"		Fault	iteraplan Support	07/Jul/16 2:29 PM	29/Jul/16 8:12 AM														"08/Jul/16 11:06 AM;msr;Hallo Herr Studer,
+
+wir verstehen sehr gut, dass Sie als Kunde durch diesen Fehler in der Software in Ihrer täglichen Arbeit eingeschränkt werden. Deshalb werden wir als Support-Team alles daran setzen, um dieses Problem schnellstmöglich zu beheben.
+
+Wir möchten möglichst nah an Ihre Situation vor Ort kommen, um das Software-Verhalten exakt nachstellen zu können und damit ein Fehlverhalten vollständig beheben zu können. Um Ihre Vor-Ort-Situation exakt nachstellen zu können, möchten wir Sie um Folgendes bitten:
+
+•	Könnten Sie uns einen Datenbank-Dump zur Verfügung stellen - zu dem Zeitpunkt, bevor der Import Beziehungen fälschlicherweise entfernt hat?
+•	Außerdem bräuchten wir die zu-importierende Excel-Datei, die auf dem obigen Datenbank-Dump zum Enfernen der Beziehungen geführt hat.
+
+Wir beginnen schnellstmöglich mit der Analyse, sobald uns Ihre Daten-Umgebung vorliegt und wir das Problem vollständig nachstellen können.
+
+Bei weiteren Fragen unterstütze ich Sie gerne.
+
+Mit freundlichen Grüßen aus München
+
+Marcel Schrumpf - iteraplan Support"	"11/Jul/16 11:43 AM;alfred.studer@emmi.com;Link zum DB Dump habe ich per Mail versendet.
+An: Fabian Kainzinger, Lothar Weber, iteraplan.support"	11/Jul/16 11:44 AM;alfred.studer@emmi.com;Da wir einen Restore der DB einspielen mussten, haben wir die aktuelle Version genommen.	11/Jul/16 3:25 PM;alfred.studer@emmi.com;Zip File wie gewünscht	"11/Jul/16 3:26 PM;alfred.studer@emmi.com;Hier noch das File
+
+[^ProblemReport_2016-07-11_152459.zip] _(7 kB)_"	"11/Jul/16 3:29 PM;alfred.studer@emmi.com;Als File noch das Excel Import File für die Testumgebung
+
+[^Import_Auswirkung-Ausrichtung_Test.xlsx] _(460 kB)_"	"11/Jul/16 5:08 PM;cst;Sehr geehrter Herr Studer,
+
+vielen Dank für die Bereitstellung der Dateien.
+
+Der Vorgang wurde hier geprüft und das von Ihnen beschriebene Verhalten konnte nachvollzogen und analysiert werden.
+Es handelt sich hier um kein technisches Problem der Importschnittstelle von iteraplan Version 5.2. 
+
+Im angehängten Excel-Dokument ist die Spalte ""Übergeordnetes Informationssystem"" angelegt, die unsere ""Teil-Informationssystem von: "" Beziehung bestimmt. 
+
+Wenn diese Spalte da ist, aber nicht befüllt, werden die Beziehungen gelöscht. Dies wird auch in unserem User-Guide beschrieben:
+
+[iteraplan Userguide 5.2 |https://www.iteraplan.de/doc/display/iteraplan52/Import+Strategies]
+
+Würden Sie bitte in Ihrer Import-Datei die Spalten ""Übergeordnetes Informationssystem"" und ""Full parent Name"" entfernen und den Import erneut durchführen. Ich habe Ihnen zusätzlich, die von mir verwendete Excel-Datei zum geschickten Dump an das Ticket mit angehangen. 
+
+Wir haben Sie intern getestet mit Ihrem bereitgestellten Datenbank-Dump. Diese Import-Datei entfernt nicht die Beziehung zum ""Übergeordnetes Informationssystem"".
+
+Bei Fragen stehen ich Ihnen gerne zur Verfügung.
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+
+"																																																

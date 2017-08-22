@@ -1,0 +1,9 @@
+Job Mocking in Unit Tests	"In sehr vielen Unit Tests kommt folgende Exception:
+
+java.lang.NullPointerException: Cannot invoke method unscheduleJob() on null object
+
+
+
+Scheinbar wird der Service innerhalb des Jobs nicht korrekt gemockt.
+
+Den Fehler konnte ich erst mit Java 8 beobachten."		Bug	OpenSpeedMonitor	10/Jun/16 1:46 PM	15/Jun/16 8:18 AM														15/Jun/16 8:18 AM;bwo;Die Fehler treten nicht mehr auf, scheinbar wurde der Fehler gewollt oder ungewollt behoben.																																																						

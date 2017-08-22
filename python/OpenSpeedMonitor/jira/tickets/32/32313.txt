@@ -1,0 +1,69 @@
+Dump mit limitiertem Datenumfang erzeugen können	"Meine Lösung:
+
+Ein Shell Skript, das in der Konsole angesteuert wird, so ähnlich wie mysqldump.
+
+
+
+Algorithmus:
+
+- Skript kopiert alle Daten der DB in eine neue temp. DB
+
+- Tabellen mit vielen Daten* werden anhand von Datum eingeschränkt in die temp. DB kopiert
+
+- temp. DB wird exportiert und gelöscht
+
+
+
+Parameter können über die Konsole übergebene werden: Db-User, Passwort, Startdatum, Enddatum,..
+
+
+
+Grobe Messzeiten zur Performance (in VM gemessen):
+
+- Ein Monat an Daten: ca 16s
+
+- Drei Monate an Daten: ca 48s
+
+- Sechs Monate an Daten: ca 103s
+
+- zum Vergleich, kompletter Dump mit mysqldump: ca 114s
+
+
+
+* Tabellen mit vielen Daten: measured_value, measured_value_update_event, job_result, http_archive, event_result"		Bug	OpenSpeedMonitor	16/Feb/15 10:15 AM	08/Apr/15 2:47 PM														02/Mar/15 9:32 AM;nku;@Nils: Bitte Testen	"31/Mar/15 10:27 AM;nku;Das Shell-Script von Thomas liegt in folgendem repo:
+
+git clone ssh://git@seu.hh.iteratec.de:10022/iteraSpeedDocumentation
+
+Unter Scripts/fast-dump/fast-dump.sh
+
+"	31/Mar/15 4:57 PM;rhc;Gibt es eine Doku, wie das Script genutzt wird?	"31/Mar/15 5:44 PM;nku;Hi Roman,
+
+das Tool hat  unser Kollege Thomas Heigl <Thomas.Heigl@iteratec.de> geschrieben. Kannst ihn also ansprechen. 
+
+*WICHTIG:* Ich habe das Tool in ein anderes repo verlegt (das Documentation war zu groß):
+
+git clone ssh://git@seu.hh.iteratec.de:10022/utilities"	"08/Apr/15 2:16 PM;rhc;* Gegebenheiten:
+
+** Aktueller Otto-Dump (Stand: 31.03.2015)
+
+* Befehl:
+
+** {{./fast-dump.sh datenbankname -u dbRootUser -p rootPasswort -temp_db tempDbName -min 2015-03-07 -max 2015-04-07 to exportFileName.sql}}
+
+* Dauer: *ca. 1 Std.* 
+
+** DELL Latitude E6420
+
+** i7-2620M
+
+** Samsung SSD 840
+
+** 8GB RAM
+
+* Ergebnis:
+
+** Alle Tabellen wurde erzeugt
+
+** Originale Datenbank bleibt unberührt (nur SELECTS)
+
+** Sehr lange Wartezeit bis ein dump erzeugt wurde"																																																		

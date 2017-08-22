@@ -1,0 +1,1 @@
+IDs in der Assettabelle Mappen	Momentan werden die blanken IDs angezeigt. Diese sollen aufglöst werden.		Improvement	OpenSpeedMonitor	24/Aug/16 10:59 AM	26/Aug/16 4:53 PM																																																																				

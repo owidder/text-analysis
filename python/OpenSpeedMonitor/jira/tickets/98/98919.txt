@@ -1,0 +1,7 @@
+Document Pie Chart Diagram in the User Guide	"Document the Pie Chart in the User Guide.
+
+Use the Portfolio Diagram as template: https://www.iteraplan.de/doc/display/iteraplan54/Portfolio+Diagram
+
+
+
+If you have questions (e.g. section ""Limitations""), contact [~msr]"	98460	Sub-task	iteraplan PO	12/Oct/16 10:01 AM	25/Oct/16 10:47 PM																																																																				

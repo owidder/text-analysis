@@ -1,0 +1,3 @@
+CreateJobView nicht erreichbar	Beim Versuch einen neuen Job auf der Dev-Instanz anzulegen, wird eine Exception angezeigt		Bug	OpenSpeedMonitor	30/Jun/16 9:00 AM	07/Jul/16 6:18 PM														"30/Jun/16 9:09 AM;mmi;Dieses passiert auch beim Erstellen eines Skriptes.
+
+Es scheint, als wären die benötigten gsp-files nicht im war-file vorhanden."																																																						

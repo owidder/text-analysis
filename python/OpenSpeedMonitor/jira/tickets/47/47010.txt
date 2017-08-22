@@ -1,0 +1,16 @@
+2-column name/description for lists of connected elements	"In the exisiting Information System single item view, change all lists of connected elements to a 2-column tabular layout.
+
+Name has normal font size, description a slightly smaller font size.
+Name cell should be one line for typical names, description is multiline typically.
+
+No column headers ""Name"" nor ""Description"". 
+No lines, no color striping, only space for grouping.
+
+"		New Feature	iteraplan PO	30/Sep/14 4:39 PM	09/Jun/15 5:05 PM														"09/Oct/14 9:58 AM;wfr;Sorry, the ticket was incomplete.
+
+For the connected BOs we need a 3-column layout list 
+* name
+* description
+* CRUD
+
+Please to this in the same ticket. Reject means: incomplete spec, so my fault. "	09/Oct/14 10:43 AM;alvo;done, but this layout (with GRUD field) is not so clear as for me.																																																					

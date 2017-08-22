@@ -1,0 +1,13 @@
+Remove audit logging option from all installers	"Currently the installer asks whether to enable audit logging and then sets the option in the property file accordingly.
+
+The installer should no longer ask regarding audit logging, audit logging should be disabled by default. The user documentation should instead mention this option, what it does and how to manually enable it."		Improvement	iteraplan PO	19/Feb/15 10:32 AM	26/Mar/15 10:27 AM					audit									"23/Feb/15 8:02 AM;wfr;*Rationale*
+
+Most clients do not use this feature in their installations, because it is zustimmungspflichtige Überwachung iSd. BetrVG.
+This change simplifies the installer for most clients, and it keeps the feature available for those who use it.
+
+
+Wolfgang: OK
+
+Stephan said OK in an e-mail on 18. Feb."	16/Mar/15 11:40 AM;gph;Audit logging installer-page is still included in installer with "MS SQL Server" support.	"26/Mar/15 10:27 AM;fam;Checked code, documentation and function.
+All okey, ticket closed.
+"																																																				

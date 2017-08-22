@@ -1,0 +1,21 @@
+Unhandled Exceptions in ImportProcessRegistry and ExcelImporter	"The method  {{cleanupOldProcess()}} in {{ImportProcessRegistry}} iterates over a Collection and modifies it during iteration. This will result in a ConcurrentModificationException whenever the Collection is not empty.
+It should instead use a copy of that collection for iteration.
+
+The method importMetamodelTypes() in class EcxelImporter allows a NullPointerException to be thrown if a call of {{sheet.getRow(SHEET_TYPE_ROW_NO)}} returns null. This should be handled an an according error message should be logged.
+
+"		Bug	iteraplan PO	21/Jun/13 10:38 AM	28/Jun/13 1:35 PM					excel	import								"27/Jun/13 3:19 PM;bra;(/) cleanUpOldProcess works w/o ConcurrentModificationException
+(/) getRow() == null is handled appropriately
+(x) however, if getRow()!=null but getCell(0) == null there is still an NPE inside the TypeExpressionReader (because of typeString == null)
+use the attached excel to reproduce the error"	"27/Jun/13 3:21 PM;bra;stacktrace of above mentioned NPE:
+
+{code}
+Caused by: java.lang.NullPointerException
+	at java.util.regex.Matcher.getTextLength(Matcher.java:1234)
+	at java.util.regex.Matcher.reset(Matcher.java:308)
+	at java.util.regex.Matcher.<init>(Matcher.java:228)
+	at java.util.regex.Pattern.matcher(Pattern.java:1088)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticExcel.excelimport.util.TypeExpressionReader.<init>(TypeExpressionReader.java:65)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticExcel.excelimport.ExcelImporter.importMetamodelTypes(ExcelImporter.java:210)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticExcel.excelimport.ExcelImporter.importMetamodel(ExcelImporter.java:146)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticExcel.excelimport.ExcelImporter.importExcel(ExcelImporter.java:123)
+{code}"	27/Jun/13 4:45 PM;svo;Added additional check. With the given Excel sheet, the importer now correctly states that there is an error in the business domain sheet and for later references that business domain does not exist.																																																				

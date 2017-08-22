@@ -1,0 +1,18 @@
+IE8 cannot download saved Excel reports over HTTPS connections	"A customer found that bookmarked links to saved reports cannot be downloaded, because IE show an error message. 
+
+""Internet Explorer was not able to open this Internet site. The requested site is either unavailable or cannot be found.""
+
+This is most probably related to the behaviour documented in http://support.microsoft.com/kb/316431/en-us, though it's slightly different. Surprisingly, the error message does not appear if the report is requested from within the application. It shows only when the URL is pasted into a new tab, and only for the first request in that tab. Subsequent request within that tab work fine...
+
+After a similar problem last year, we have modified the headers already to be like this:
+{code}
+Pragma: token-prevent-IE-from-hickup
+Cache-Control: private, no-store, max-age=1800
+{code}
+
+The trouble seems to be caused by ""no-store"" this time. If I change the headers with a proxy to be
+{code}
+Pragma: token-prevent-IE-from-hickup
+Cache-Control: private, must-revalidate, max-age=1800
+{code}
+then it works. So, iteraplan should send above headers for the comfort of IE8."		Improvement	iteraplan PO	29/May/12 2:52 PM	08/Jun/12 10:21 AM					IE									01/Jun/12 2:58 PM;sry;Waiting for test result from customer.	01/Jun/12 3:11 PM;sry;customer confirmed effectiveness and has deployed it	08/Jun/12 10:21 AM;sfe;Works with IE9 in IE8 compatibility mode	08/Jun/12 10:25 AM;kvo;Needs to be merged in RB3																																																			

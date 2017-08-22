@@ -1,0 +1,77 @@
+Bug Report	"Im Bereich Informationssystem werden geänderte kundenspezifische Merkmalwerte(!) nicht in den Excel Download übernommen. Erst ein Neustart des Tomcat bringt einen korrekten Download.
+
+
+
+Dies ist ein Bug der Sorte NOGO!!!!"		Fault	iteraplan Support	19/Jun/17 11:17 AM	11/Jul/17 7:00 AM														20/Jun/17 9:41 AM;Karl-Hermann.Hoefkens@RAG.de;Ergänzung: werden gleichzeitig Standard Merkmalwerte geändert (Zum Beispiel der Name der Applikation), werden auch die kundenspezifischen Merkmalwerte korrekt in den Excel Download übernommen.  	"21/Jun/17 10:20 AM;msr;Sehr geehrter Herr Höfkens,
+
+
+
+danke für Ihre Meldung.
+
+Könnten Sie bitte das Verhalten nochmal genauer beschreiben, damit wir es in unserem Testsystem nachstellen und analysieren können?
+
+
+
+* Sie ändern einen Merkmalswert eines kundenspezifischen Merkmals. Findet dies im Classic Client oder im Interactive Client statt?
+
+* Danach gehen Sie direkt zu Export / Import. Handelt es sich hier um den Classic Client Export / Import oder den Interactive Client Export / Import?
+
+* Geht es um einen kompletten Export oder um einen partiellen Export?
+
+
+
+Zum exakten Nachstellen Ihrer Umgebung benötigen wir auch die System Information. Diese finden Sie im Interactive Client unter Administration \ System Info.
+
+
+
+Mit freundlichen Grüßen
+
+
+
+M. Schrumpf"	"21/Jun/17 11:43 AM;Karl-Hermann.Hoefkens@RAG.de;Sie ändern einen Merkmalswert eines kundenspezifischen Merkmals. Findet dies im Classic Client oder im Interactive Client statt? im Classic Client
+
+Danach gehen Sie direkt zu Export / Import. Handelt es sich hier um den Classic Client Export / Import oder den Interactive Client Export / Import? im Classic Client
+Geht es um einen kompletten Export oder um einen partiellen Export? Kompletter Export
+Zum exakten Nachstellen Ihrer Umgebung benötigen wir auch die System Information. Diese finden Sie im Interactive Client unter Administration \ System Info. siehe Anlage
+
+[^IteraplanSystemInfo_2017_06_21_111815.zip] _(7 kB)_"	"22/Jun/17 4:22 PM;msr;Sehr geehrter Herr Höfkens,
+
+
+
+danke für das Bereitstellen der Daten.
+
+
+
+Ihre Systemkonfiguration wird von iteraplan nicht unterstützt und wurde nie getestet: Laut der System Information verwenden Sie als Datenbank Microsoft SQL Server  10.50. iteraplan 5.5 unterstützt nur Microsoft SQL Server Version 2012 ( siehe https://doc.iteraplan.de/display/iteraplan55/Installation+Prerequisites ). Dies kann, muss aber nicht mit dem Fehlerbild zusammenhängen. Ich möchte Sie bitten, auf eine unterstützte Version zu gehen, damit wir dieses Problem ausschließen können. Nur in einem unterstützten Umfeld können wir Support liefern.
+
+
+
+Damit wir keine Zeit verlieren, schlage ich vor, dass wir parallel weiter analysieren. Dazu wäre es hilfreich zu wissen,
+
+* wieviel Zeit zwischen Datenpflege und Export vergeht (eher Sekunden oder Minuten)
+
+
+
+Hintergrund ist, dass im Hintergrund ein Export-Modell neu gebaut wird, dass je nach Umfang mehrere Minuten dauern kann.
+
+Weiterhin würden mich die Log-Dateien interessieren, ob es Auffälligkeiten hinsichtlich des Modell-Neubaus gibt. Könnten Sie mir bitte den
+
+* iteraplan-Log
+
+* localhost-Log
+
+* catalina-Log
+
+* host-manager-Log
+
+
+
+zur Verfügung stellen?
+
+
+
+Vielen Dank
+
+
+
+Marcel Schrumpf"																																																			

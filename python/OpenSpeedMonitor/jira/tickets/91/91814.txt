@@ -1,0 +1,17 @@
+Change partial limit from business objects to cells	"*Summary:*
+
+Change partial limit from business objects to cells
+
+
+
+*Implementation details:*
+
+* Leave partial limit check in the mpdDataService
+
+* Count additional Columns of configuration
+
+* All columns = additional columns + 1 (for ""name""-column)
+
+* New limit refers to (number of Business Objects) * (all columns) = number of cells
+
+* Please test new limit for Internet Explorer and other browsers"		Improvement	iteraplan Speedbird	28/Jul/16 11:18 AM	01/Aug/16 2:16 PM																																																																				

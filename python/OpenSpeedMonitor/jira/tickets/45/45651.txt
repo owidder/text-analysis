@@ -1,0 +1,9 @@
+Rename the packages for the excel-export and -import	"Suggestion:
+
+instead of excel and excel2 there should be 3 different packages:
+ - elasticExcel (for the import/export into/from the elastic model aka excel2)
+ - timeseriesExcel (for the import of the timeseries attributes; currently included in the excel-package)
+
+ - excel (unchanged, for the ""old"" excel-stuff)
+"		Improvement	iteraplan PO	22/Mar/13 10:21 PM	22/May/13 5:30 PM					excel									19/Apr/13 9:30 AM;jme@iteratec.de;The name of the packages should be harmonized with the UI-Names (see ticket ITERAPLAN-1532).	"19/Apr/13 2:38 PM;jme@iteratec.de;Decision (Steffen):
+rename ""excel"" in ""legacyExcel"""	30/Apr/13 6:40 PM;lba;The test case testIsFileExistingAndDelete() in the test class  ExcelRoundtripTest depends on the test case testExcelExport() in the same class. Since junit doesn't execute tests in a fixed order, this can result in a test failure. (Also remember that test should be isolated and not depend on any other test cases.)	07/May/13 9:12 AM;jme@iteratec.de;I agree with that.																																																			

@@ -1,0 +1,17 @@
+Landscape Diagram: Business Mapping Einfärbung angeboten trotz kein BM auf Achsen	"*Reproduce:*
+
+* Start with initial Landscape Diagram
+
+* Change x-axis to Superordinate Information System
+
+
+
+*Actual:*
+
+* For content: Coloring by Business Mapping -Support Degree is offered
+
+
+
+*Expected:*
+
+* For content: Coloring by Business Mapping -Support Degree is not offered"		Fault	iteraplan Support	11/Jan/17 4:35 PM	31/Jan/17 7:00 AM														11/Jan/17 5:02 PM;msr;Bug Ticket: IPTS-484	12/Jan/17 8:21 AM;cst;Bug Ticket: IPTS-484																																																					

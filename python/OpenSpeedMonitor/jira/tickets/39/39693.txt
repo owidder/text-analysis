@@ -1,0 +1,5 @@
+CRUD-View für Events persistiert Zeit nicht korrekt	"Egal welche Zeit ich eingebe. Es wird immer das eingegebene Datum mit 0:00 Uhr -gespeichert.- angezeigt.
+
+
+
+@Benjamin: Bitte stimme Dich ggf. mit Rainer ab. Der wird die Atribute date und time aus der Event-Domain noch umbenennen."		Improvement	OpenSpeedMonitor	04/May/15 11:26 PM	05/May/15 4:51 PM														05/May/15 3:15 PM;rkr;Subtask von IT-514 - bitte Hinweise zur Verbesserung an mich als Ticketinhaber zuweisen																																																						

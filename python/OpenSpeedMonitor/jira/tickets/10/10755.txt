@@ -1,0 +1,4 @@
+Graphite: Job-Gruppen und graphite-Server-UI zur Pflege durch den Anwender	"Eine UI, in der ein Anwender ""Monitoring-Server (Graphite)"" anlegen und verwalten kann. Hierbei können auch Basispfade für Graphite (wie „wpt.“) sowie Templates für die Metriknamen (wie ""$\{jobgroup\}.$\{page\}.$\{browser\}.$\{job\}.$\{location\}.$\{metric\}"") gepflegt werden.
+
+Eine UI zur Pflege der Job-Gruppen, bei der einer Job-Gruppe beliebig viele Monitoring-Server zugeordnet werden können, an die Messwerte verschickt werden sollen. 
+2 UIs, beides sollten handgestrickte Oberflächen sein, damit a) die Bedienung einfach ist und b) unsere Architektur (mit DAOs)  eingehalten wird."		Task	OpenSpeedMonitor	06/Nov/13 1:00 PM	18/Jan/17 3:01 PM																																																																				

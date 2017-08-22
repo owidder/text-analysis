@@ -1,0 +1,29 @@
+LSD: Positioning ignores filter for related elements	"*Summary:*
+
+LSD: Positioning ignores filter for related elements
+
+
+
+*Reproduce:*
+
+* Open the default Landscape Diagram
+
+* Put Business Unit on the rows
+
+* Filter Content by ""Connected Products"" ""Name is Saving book""
+
+i.e.
+
+https://www.iteraplan.de/iteraplan_ee_release/client/#/lsd?E25=A13&F0=businessMappings%2FbusinessProcess&F1=businessMappings%2FbusinessUnit&partiallyConnectedItems=ternary&rows=hide&columns=hide&featureName=%2Flsd&contentFilter=C%2FflatC%2FC%2FbusinessMappings%2FproductR%2F1R%2FtextS%2FnameS%2FisS%2FSavings%20book
+
+
+
+*Actual:*
+
+* CRM # 3.1 is shown on in several boxes, e.g. ""Corporate Customers"" - ""Product Management""
+
+
+
+*Expected:*
+
+* CRM # 3.1 is shown only in one box, i.e. ""Retail Customers"" - ""Product Management"""		Bug	iteraplan Speedbird	14/Nov/16 3:56 PM	17/Nov/16 2:02 PM														17/Nov/16 2:02 PM;msr;No a defect, but a correct behaviour.																																																						

@@ -1,0 +1,455 @@
+Iteraplan installation issues	"Hi.
+
+
+
+I am having some issues with iteraplan after installation. I have discussed this matter with Olga at Iteratec, who urged me to file a ticket.
+
+I've installed iteraplan on Ubuntu 14.04, according to the installation guide here: https://www.iteraplan.de/doc/display/iteraplan53/Installation+Guide.
+
+
+
+I was not sure about all the prompts during installation, as not everything was explicitly defined in the install guide.
+
+
+
+After installation I see no sign of iteraplan on standard port 8080, nor any reference to this webapp in server.xml.
+
+The file iteraplan.war was placed on the root folder (/) during installation, I suppose that was not supposed to happen. I tried to change the <connector> portion in server.xml to reflect the root folder, but that just generated a whole bunch of error messages - so it's been reverted.
+
+
+
+Current tomcat logs attached.
+
+
+
+Here is a sumup of the variable values entered during installation:
+
+
+
+	- Authentication - LDAP only
+
+	- LDAP host: 10.67.50.53
+
+	- Base DN: dc=nte,dc=local
+
+	- User DN: CN=Servicekonto iteraplan,OU=Spesialkontoer,OU=Brukere,DC=nte,DC=local
+
+	- Password (password for user svc_iteraplan)
+
+	- Users search filter (default)
+
+	- Role membership filter (default)
+
+	- Deployment name: iteraplan (default)
+
+	- Address of the DB server: nteitpdb01.nte.local
+
+	- Port of the DB server: (default)
+
+	- User name for the DB: iteraplan
+
+	- Password for the DB: (password for DB-user 'iteraplan')
+
+	- Name of the DB: iteraplan (default)
+
+	- Enable last modification info: true (default)
+
+	- Allow HTTP or require HTTPS?: Enforce HTTPS (SSL)
+
+	- Name of supervisor group: iteraplan-Supervisors
+
+	
+
+	
+
+Installation local folders
+
+	- technical logfile: /var/log/iteraplan/
+
+	- search indexes: /var/opt/iteraplan/
+
+	- JDBC Connector directory: /usr/share/tomcat7/lib/
+
+Output folder: (default)
+
+"		Fault	iteraplan Support	09/Sep/16 11:43 AM	22/Sep/16 12:48 PM														"09/Sep/16 11:43 AM;jorn.lukassen@evry.com;
+
+[^catalina.2016-09-09.log] _(5 kB)_
+
+[^catalina.out] _(5 kB)_
+
+[^localhost.2016-09-09.log] _(5 kB)_"	"12/Sep/16 8:47 AM;cst;Dear Mr. Lukassen,
+
+
+
+thank you for your enquiry.
+
+
+
+This is not a problem with the iteraplan installation or configuration. 
+
+
+
+In this log-files iteraplan.war was not found by the Tomcat Server.
+
+
+
+""INFO: *Deploying web application directory /var/lib/tomcat7/webapps/ROOT*
+
+Sep 09, 2016 11:31:15 AM org.apache.coyote.AbstractProtocol start
+
+INFO: Starting ProtocolHandler [""http-bio-8080""]
+
+Sep 09, 2016 11:31:15 AM org.apache.catalina.startup.Catalina start
+
+*INFO: Server startup in 2483 ms*"" 
+
+
+
+Would you please check, that the iteraplan.war is available in the folder ""webapps"".
+
+After deploying the iteraplan.war, the Tomcat Server creates the folder iteraplan in this path. 
+
+
+
+ !Example.PNG|thumbnail!
+
+
+
+Greetings,
+
+
+
+Christoph Stangl - iteraplan Support
+
+
+
+"	"12/Sep/16 9:08 AM;jorn.lukassen@evry.com;Hi.
+
+As stated, the iteraplan.war file was placed on the root folder ( / ) during installation.
+How should I proceed to fix this ? Just simply move it to /var/lib/tomcat7/webapps ?
+
+Thank you.
+"	"12/Sep/16 9:14 AM;cst;Hello Mr. Lukasse,
+
+you can copy/move the iteraplan.war to webapps path.
+After that, Tomcat can find the file and deploy it. 
+
+Greetings, 
+
+Christoph Stangl - iteraplan Support"	"12/Sep/16 9:26 AM;jorn.lukassen@evry.com;Hi.
+
+Ok, moving the file and restarting Tomcat seemed to create the folder/file-structure.
+
+However, the manual states that at this point I should be able to navigate directly to ""http://*servername*:8080/iteraplan/"".
+
+I am presented with an error message
+
+HTTP Status 404 - /iteraplan/
+
+--------------------------------------------------------------------------------
+
+type Status report
+
+message /iteraplan/
+
+description The requested resource is not available.
+
+
+Is there a reference that needs to be changed ? Anything else ?"	"12/Sep/16 10:02 AM;cst;Hello Mr. Lukassen,
+
+please check the LOG-Files of your Tomcat and the logfilges from iteraplan for the concrete errors.
+
+When you open iteraplan with ""HTTP:"", your Tomcat Server must connect to ""HTTPS"".
+The installation of iteraplan was Enforce HTTPS (SSL). 
+
+For ""HTTPS"" and iterplan check the following page:
+
+https://www.iteraplan.de/doc/display/iteraplan53/Other+Configuration+Options+and+Notes 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support 
+"	"12/Sep/16 10:19 AM;jorn.lukassen@evry.com;Hi.
+
+Sorry, forgot to mention that I am indeed connecting through SSL.
+The problem has to reside somewhere else.
+
+iteraplan log attached.
+
+Snippets from the Tomcat log:
+
+SEVERE: Unable to create initial connections of pool.
+java.sql.SQLException: Access denied for user '${iturm.database.login}'@'nteitpa01.nte.local' (using password: YES)
+
+WARNING: Unexpected exception resolving reference
+java.sql.SQLException: Access denied for user '${iturm.database.login}'@'nteitpa01.nte.local' (using password: YES)
+
+WARNING: Failed to register in JMX: javax.naming.NamingException: Access denied for user '${iturm.database.login}'@'nteitpa01.nte.local' (using password: YES)
+
+
+Sep 12, 2016 10:13:20 AM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error listenerStart
+Sep 12, 2016 10:13:20 AM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/iteraplan] startup failed due to previous errors
+Sep 12, 2016 10:13:20 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/iteraplan] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Sep 12, 2016 10:13:20 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/iteraplan] created a ThreadLocal with key of type [com.sun.xml.bind.v2.ClassFactory$1] (value [com.sun.xml.bind.v2.ClassFactory$1@35515ed8]) and a value of type [java.util.WeakHashMap] (value [{class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmListIndexType=java.lang.ref.WeakReference@7129d240, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmManyToManyCollectionElementType=java.lang.ref.WeakReference@70aaa1ca, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmDiscriminatorSubclassEntityType=java.lang.ref.WeakReference@52640e8f, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmColumnType=java.lang.ref.WeakReference@26f7f88b, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmCompositeKeyBasicAttributeType=java.lang.ref.WeakReference@61de81a9, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmNamedQueryType=java.lang.ref.WeakReference@5712b071, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmGeneratorSpecificationType=java.lang.ref.WeakReference@bfdf760, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmTypeSpecificationType=java.lang.ref.WeakReference@4e7bc5c6, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmSimpleIdType=java.lang.ref.WeakReference@1ff5726b, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmVersionAttributeType=java.lang.ref.WeakReference@2b2adf31, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmCacheType=java.lang.ref.WeakReference@ba3201b, class org.hibernate.boot.jaxb.hbm.spi.Adapter6=java.lang.ref.WeakReference@290d295, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmCompositeIdType=java.lang.ref.WeakReference@71f13583, class org.hibernate.boot.jaxb.hbm.spi.Adapter7=java.lang.ref.WeakReference@12f065e6, class org.hibernate.boot.jaxb.hbm.spi.Adapter2=java.lang.ref.WeakReference@64b1e8c0, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmListType=java.lang.ref.WeakReference@5c27c8e5, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmJoinedSubclassEntityType=java.lang.ref.WeakReference@37f661a7, class org.hibernate.boot.jaxb.hbm.spi.Adapter9=java.lang.ref.WeakReference@108537a5, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmCompositeKeyManyToOneType=java.lang.ref.WeakReference@1a083a1c, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmRootEntityType=java.lang.ref.WeakReference@121f119e, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmEntityDiscriminatorType=java.lang.ref.WeakReference@35bda55d, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmBasicAttributeType=java.lang.ref.WeakReference@35b3983b, class java.util.ArrayList=java.lang.ref.WeakReference@21cf6508, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmConfigParameterType=java.lang.ref.WeakReference@36f2018f, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmKeyType=java.lang.ref.WeakReference@4a446f77, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmSetType=java.lang.ref.WeakReference@52f213b8, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmCompositeAttributeType=java.lang.ref.WeakReference@12ecbf93, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmManyToOneType=java.lang.ref.WeakReference@75155599, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmOneToManyCollectionElementType=java.lang.ref.WeakReference@4ba6ebdc, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmTypeDefinitionType=java.lang.ref.WeakReference@3bc6df51, class org.hibernate.boot.jaxb.hbm.spi.JaxbHbmHibernateMapping=java.lang.ref.WeakReference@7d6f5d7f}]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Sep 12, 2016 10:13:20 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/iteraplan] created a ThreadLocal with key of type [com.sun.xml.bind.v2.runtime.Coordinator$1] (value [com.sun.xml.bind.v2.runtime.Coordinator$1@1a637d2f]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@79afa631]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+
+
+Thanks.
+
+Jorn.
+
+[^iteraplan-5.3.0.log] _(18 kB)_"	"12/Sep/16 11:08 AM;cst;In your first post DB-Server is ""nteitpdb01.nte.local"" - in this Error we have a problem with ""nteitpa01.nte.local"",
+is this your active directory?
+
+Check the file ""iteraplan-db.properties"" for your database login.
+The path to the  iteraplan-db.properties is "" /var/lib/tomcat7/webapps/iterplan/WEB-INF/classes"".
+---------------------
+*[ERROR] 12-Sep-2016 10:13:20 [web.context.ContextLoader] Context initialization failed *
+For this problem, please stop the tomcat7 service and check the permissions for the tomcat user on this path:
+
+search indexes: /var/opt/iteraplan/
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+"	"12/Sep/16 12:41 PM;jorn.lukassen@evry.com;Hi.
+
+The deployment consists of two servers
+ - nteitpa01 - application server (tomcat, iteraplan, etc)
+ - nteitpdb01 - database server
+
+I did a recursive permissions change for /var/opt/iteraplan/, and things look good now from what I can tell. The web UI shows up, I'm able to log in with an AD user, and have registered the serial key. Good stuff !
+
+A couple of things are still at rest
+1) There seems to be no filtering of AD accounts at the moment. I am using my own AD account to log in. Where can I filter this ?
+
+2) For convenience, we would like the users to only have to type in https://name_of_server. In order to complete this, my plan is to do local forwarding of port 8443 to 443 using iptables. Is there anything else that needs to be done to have iteraplan chosen as the default web application ?
+
+3) During restart of Tomcat and iteraplan web application deployment I still get these error messages in Tomcat's log (don't know if they're relevant or can be ignored):
+
+Sep 12, 2016 12:31:49 PM org.apache.tomcat.jdbc.pool.ConnectionPool init
+SEVERE: Unable to create initial connections of pool.
+java.sql.SQLException: Access denied for user '${iturm.database.login}'@'nteitpa01.nte.local' (using password: YES)
+
+
+Sep 12, 2016 12:31:49 PM org.apache.naming.NamingContext lookup
+WARNING: Unexpected exception resolving reference
+java.sql.SQLException: Access denied for user '${iturm.database.login}'@'nteitpa01.nte.local' (using password: YES)
+
+Sep 12, 2016 12:31:49 PM org.apache.catalina.core.NamingContextListener addResource
+WARNING: Failed to register in JMX: javax.naming.NamingException: Access denied for user '${iturm.database.login}'@'nteitpa01.nte.local' (using password: YES)
+
+Sep 12, 2016 12:32:18 PM org.apache.catalina.session.StandardManager doLoad
+SEVERE: ClassNotFoundException while loading persisted sessions: java.lang.ClassNotFoundException: de.iteratec.iteraplan.presentation.GuiContext
+java.lang.ClassNotFoundException: de.iteratec.iteraplan.presentation.GuiContext
+
+
+Thank you.
+
+Jorn."	"12/Sep/16 12:55 PM;cst;Hi Jorn
+
+1) Do you have no permissions in iteraplan, or what do you mean with filter accounts? 
+2) No, not that I know of. 
+3) Please copy the MySQL binary jar to tomcat lib folder or add it to the application folder WEB-INF/lib . 
+
+Greetings,
+
+Christoph Stangl"	"12/Sep/16 2:48 PM;jorn.lukassen@evry.com;Hi.
+
+1) I would like to limit access to iteraplan (supervisor role) only for a specific AD security group. Now I can login with any AD account.
+
+2) The optimal would be if users only type the hostname, without the need to add port number and/or folder/resource. In detail - rather http://servername than http://servername:8080/iteraplan.
+
+3) Is this related to MySQL ? The error message states access denied for '${iturm.database.login}'@'nteitpa01.nte.local'. Server nteitpa01 does not have any SQL instance
+
+Jorn"	"12/Sep/16 3:28 PM;cst;Hi, 
+
+1) The permissions are linked to the ""Active Directory Groups"". 
+
+# When you create in iteraplan a role with the name ""NTETest"" and have a Active Directory Group with the same name ""NTETest"", after the login with a user of this group, the user has the setted permissions. 
+# When the role ""iteraplan-Supervisors"" is linked with a AD group where all Users are integrate, than all these users have the iteraplan-Supervisors role. 
+
+2) Thats no problem, but we can not help you by problemes/error because thats not part of our support 
+3) I googled the warnings, because the warnings were created from the tomcat server and not from iteraplan. 
+
+The last answers from following link could help:
+
+    https://forums.alfresco.com/comment/145885
+
+Greetings, 
+
+Christoph Stangl - iteraplan Support 
+    
+"	"12/Sep/16 4:18 PM;jorn.lukassen@evry.com;Hi.
+
+1) I see. Is there an xml-file I can alter to change this, or does it have to be done via the web gui ?
+
+2) Ok, I'll sort that one out myself.
+
+3) It it indeed Tomcat producing the error messages. 
+
+The MySQL jar is already in both folder /usr/share/tomcat7/lib/ and /var/lib/tomcat7/webapps/iteraplan/WEB-INF/lib.
+
+The only reference I can find is within an iteraplan file - /var/lib/tomcat7/webapps/iteraplan/META-INF/context.xml.
+The content of this file is as follows (no reference to nteitpa01 here):
+
+<Context path=""/iteraplan"" useHttpOnly=""true"">
+
+  <Valve
+    className=""org.apache.catalina.authenticator.FormAuthenticator""
+    disableProxyCaching=""false"" />
+
+        <Resource name=""jdbc/iteraplan_login/datasource""
+          type=""javax.sql.DataSource""
+          auth=""Container""
+          maxActive=""100""
+          maxIdle=""30""
+          maxWait=""10000""
+          username=""${iturm.database.login}""
+          password=""${iturm.database.password}""
+          driverClassName=""com.mysql.jdbc.Driver""
+          url=""jdbc:mysql://nteitpdb01.nte.local:3306/${iturm.database.name}""
+          testOnBorrow=""true""
+          validationQuery=""SELECT 1 FROM DUAL""/>
+
+    <!-- Uncomment the following line to disable session persistence across Tomcat restarts.
+    <Manager pathname="""" /> -->
+
+</Context>
+
+"	"13/Sep/16 8:43 AM;cst;Goood Morning,
+
+
+
+1) This must be changed in the Web UI or in the database, when you want I send you a step for step description. 
+
+3) I talked with our developers and can you please change the parameter username and password in the ""context.xml""  
+
+
+
+*username=""""*
+
+*password=""""*
+
+
+
+We dont need a username and password in this file, when we use LDAP.
+
+Thats the reason why the warning appears.
+
+
+
+Greetings,
+
+
+
+Christoph Stangl - iteraplan Support 
+
+"	"13/Sep/16 12:37 PM;jorn.lukassen@evry.com;Hi.
+
+1) I am ready :)
+
+2) Tried altering the file with blanks for username and password. Still get a lot of error messages. The question is if these matter in any way, or if they can be ignored.
+
+The MySQL server shows active connections from the appserver
+mysql> show processlist;
++-----+-----------+---------------------------+-----------+---------+------+----------+------------------+
+| Id  | User      | Host                      | db        | Command | Time | State    | Info             |
++-----+-----------+---------------------------+-----------+---------+------+----------+------------------+
+|  96 | iteraplan | nteitpa01.nte.local:47867 | iteraplan | Sleep   |  546 |          | NULL             |
+|  99 | iteraplan | nteitpa01.nte.local:47870 | iteraplan | Sleep   |  492 |          | NULL             |
+"	"13/Sep/16 12:50 PM;jorn.lukassen@evry.com;Oh - one more thing. ( A lot of questions, I know... )
+
+NTE wishes to have SSO. Is it possible to reconfigure the current installation without too much hassle, or is a reinstall preferrable ?
+Also - is a Windows server with IIS mandatory, or can this be done directly from Linux ?
+
+Thanks.
+"	"13/Sep/16 1:38 PM;cst;# Open the table ""ROLE"" in the database, here see you all created roles. 
+
+# please insert the name of the Active Directory Group, later this group will have all permissions in iterplan 
+
+# Note the ID from the this group (e.g. 5) and the id of the iteraplan_Supervisor (e.g. 2) 
+
+# Open the table ""ROLE_ROLE"" and link both ID´s together. First comes the id of the ADG and the second ID is the iteraplan_Supervisor
+
+   5 - 2
+
+# When another group is linked with the iteraplan_Supervisor group who you dont want, delete the row. 
+
+
+
+2) This can be ignored, because we have no iturm with a installation of iterplan + LDAP 
+
+
+
+-------------------
+
+For a SSO and Tomcat/Linux environment have we no experience with that.
+
+
+
+In our example
+
+
+
+https://www.iteraplan.de/doc/display/iteraplan53/Single+Sign+On
+
+
+
+we are using a Windows Server for the configuration.
+
+
+
+We cannot support you with the setup of a Linux System and SSO because we can only support issues within iteraplan and not in the surrounding environment. 
+
+But in principle a SSO-setup on Linux could be possible to authenticate users in iteraplan. But we have no experience with that.
+
+
+
+When you want to change the authentification from ""LDAP"" to ""SSO and LDAP"" download the applicationContext-spring-security.xml form this ticket.
+
+
+
+[^applicationContext-spring-security.xml]
+
+
+
+Afterwards, you change this file in following path
+
+
+
+""<Tomcat instance iteraplan>\WEB-INF\"".
+
+
+
+At last you must configure the SSO in the file ""iteraplan-auth.properties"".
+
+
+
+Greetings,
+
+
+
+Christoph Stangl - iteraplan Support "	"13/Sep/16 4:02 PM;jorn.lukassen@evry.com;Hi.
+
+1) Did a rename of the group in AD to match the default in the DB, seems to work :)
+
+2) Ok, good :)
+
+Discussed SSO with the customer, we're skipping it for now.
+
+I've received DB-dump from your team and imported it. 
+I have asked the customer to test and verify - can we leave the support case open until he is satisfied ?"	"13/Sep/16 4:06 PM;cst;Hi, 
+
+sounds great.
+The ticket stays open and we wait on your response. 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "																																				

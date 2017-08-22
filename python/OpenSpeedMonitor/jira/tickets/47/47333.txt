@@ -1,0 +1,21 @@
+Checkpoint/Reference - Coloring for content elements	"*Summary:*
+Implement the coloring for inner elements.
+
+*As-Is:*
+There exists just default coloring.
+
+*To-Be:*
+Inner Elements can be coloured by enumeration and numeric attributes.
+
+*Affected parts of the system:*
+* Landscape Diagram
+
+*Approach:* 
+Implement the same coloring options for enumeration and numeric attributes *of the inner boxes only* as in the Nested Cluster Diagram (pre-defined and user-defined). Use the same legend options, context menu and url.
+
+*Acceptance Criteria:*
+The user can do exactly the same coloring of inner elements as in the Nested Cluster Diagram, i.e. same context menu actions, same legend, same url, ..."		New Feature	iteraplan PO	27/Jan/15 1:22 PM	24/Mar/15 1:00 PM					color	colorpicker	context	landscape	legend	url				"24/Feb/15 2:37 PM;wfr;estimation in two parts
+
+coloring (including menu, location...) : 8 story points
+
+coloring legend (including menu), reusing the NCD legend: 5"																																																						

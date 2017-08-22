@@ -1,0 +1,25 @@
+Test bundles	"Test all bundles:
+
+
+
+* (/) [~aan] basic with initial data
+
+* (/) [~ach] basic with sample data
+
+* (/) [~pma] lite with initial data
+
+* (/) [~mwe] lite with sample data
+
+
+
+*Important: Please check if the new client code has been uglified!*
+
+
+
+The bundles are located on our build server in /var/iteraplan/releases/5.4.0/bundle/build
+
+
+
+See also:
+
+https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-3.2.1Bundles"	98906	Sub-task	iteraplan PO	12/Oct/16 9:14 AM	27/Oct/16 3:11 PM																																																																				

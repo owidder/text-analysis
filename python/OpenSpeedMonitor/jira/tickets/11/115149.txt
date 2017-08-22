@@ -1,0 +1,7 @@
+Job ausführen funktioniert nicht in OTTO-Instanz	"Die Messungen laufen. Beim Auswählen von _Jetzt Ausführen_ passiert aber nichts. Zudem fällt auf, dass es zwar _Pending_ und _Running_ Results in der Liste gibt aber keine mit dem Status _Finished_.
+
+
+
+Scheint nur bei OTTO zu sein, auf der Demo tritt das nicht auf."		Bug	OpenSpeedMonitor	16/Mar/17 2:31 PM	14/Jun/17 5:30 PM														"27/Mar/17 10:40 AM;sbr;Kann von der Geschäftsstelle aus nicht reproduziert werden.
+
+Bitte einmal aus dem Otto VPN versuchen den Bug zu reproduzieren."	14/Jun/17 5:30 PM;nku;Tritt nicht mehr auf.																																																					

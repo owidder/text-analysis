@@ -1,0 +1,17 @@
+Backend functionality for "Abfrageerweiterung" from the toolarea	"Backend functionality for ""Abfrageerweiterung"" from the toolarea.
+
+
+
+Take care on:
+
+* Legend
+
+* Functionality to delete current filter"	61215	Sub-task	iteraplan PO	23/Oct/15 11:24 AM	27/Oct/15 10:45 AM														"27/Oct/15 9:40 AM;dam;please don´t use in lsdViewModelBuilder default for case ""enum""
+
+update the docu for property_of_filter in tool area
+
+
+
+current filter contain localicationKey by interfaces-degree of automation, product-rollout date ..."	"27/Oct/15 10:19 AM;msr;* Documentation updated
+
+* ""Switch"" refactored"																																																					

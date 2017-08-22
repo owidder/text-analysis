@@ -1,0 +1,86 @@
+Benutzergruppen aus LDS kommen nicht an	"Hallo,
+
+
+
+bei der Umstellung, von IBM Tivoli auf MS LDS (über LDAP Protokoll) kommen für Iteraplan die Gruppen nicht an für die ein Benutzer berechtigt ist. Für andere Applikationen funktioniert schon alles bestens (ist auch schon mit MS LDS in Produktion).
+
+
+
+Bitte um Unterstützung für die korrekte Konfiguration bzw. um Tipps dazu.
+
+
+
+Aus iteraplan-5.0.5-login.csv (gleiches mit iteraplan 5.1.0):
+
+2016-03-09 23:56:44 ;vhhns01;;MASTER;de_DE
+
+
+
+mit IBM Tivoli:
+
+2016-03-10 12:40:36 ;vhhns01;APP-EAM-ADMIN APP-EAM-EDITOR_ALL APP-EAM-READER_BASIC ;MASTER;de_DE
+
+
+
+Unsere Einstellungen siehe Anhang iteraplan-auth.test20160309.properties.
+
+
+
+Versuchte Varianten: 
+
+- ldap.roles.searchbase: leer oder DC=UNIQA
+
+- ldap.roles.membershipfilter: mit member oder uniqueMember, mit oder ohne äußere runde Klammern
+
+
+
+Letzte Rückmeldung meines internen Ansprechpartners dazu:
+
+{quote} Wahrscheinlich wird nach Gruppen mit der falschen Objectclass gesucht. Aber das ist leider nicht konfigurierbar (zumindest im properties File nicht zu finden) {quote}
+
+
+
+Viele Grüße
+
+Stefan Neubauer"		Technical question	iteraplan Support	14/Mar/16 8:48 PM	20/Apr/16 3:39 PM														"14/Mar/16 8:48 PM;stefan.neubauer@hackhofer.at;
+
+[^iteraplan-auth.test20160309.properties] _(4 kB)_"	"16/Mar/16 2:25 PM;sfe;Hallo Herr Neubauer,
+
+Wenn im Membership-Filter keine Einschränkungen zur Objectclass gesetzt sind, sollte diese bei der Suche an und für sich keine Rolle spielen.
+Ist es möglich, dass Sie uns ein Beispiel für ein Gruppen-Objekt aus Ihrem MS LDS zur Verfügung stellen?
+
+Viele Grüße
+Stephan Feroudj"	"22/Mar/16 1:53 PM;stefan.neubauer@hackhofer.at;Hallo,
+
+wir haben ""alt"" und ""neu"" verglichen:
+
+ldapusim: Neues MS-LDS LDAP - die Rollen werden nicht übernommen:
+[eam-ldapusim-request.txt], [eam-ldapusim-response.txt]
+ldapw: Altes IBM Tivoli LDAP - die Rollen werden übernommen
+[eam-ldapw-request.txt], [eam-ldapw-response.txt]
+
+Eine EAM Gruppe aus dem LDS: [app-eam-reader_basic.ldif]
+
+Eine Vermutung ist, dass es an der unterschiedlichen Groß/Kleinschreibung der Gruppen liegt. Im Tivoli sind alle CN attribute Uppercase, im LDS Mixes Case (so wie im DN ""verlangt"")
+
+lg Stefan Neubauer
+
+[^app-eam-reader_basic.ldif] _(275 kB)_
+
+[^eam-ldapusim-request.txt] _(0,3 kB)_
+
+[^eam-ldapusim-response.txt] _(13 kB)_
+
+[^eam-ldapw-request.txt] _(0,3 kB)_
+
+[^eam-ldapw-response.txt] _(10 kB)_"	"24/Mar/16 10:58 AM;sfe;Hallo Herr Neubauer,
+
+Groß-/Kleinschreibung könnte tatsächlich ein Grund sein. Die Namen der in iteraplan angegebenen Rollen müssen exakt wie die der LDAP-Gruppen geschrieben sein (inklusive Groß-/Kleinschreibung), damit die Rollenzuweisung korrekt funktioniert.
+
+Viele Grüße
+Stephan Feroudj"	"18/Apr/16 2:42 PM;sfe;Hallo Herr Neubauer,
+
+gibt es zu diesem Problem Neuigkeiten? Lag es tatsächlich an der Groß-/Kleinschreibung, oder konnte es inzwischen anders gelöst werden?
+
+Viele Grüße
+Stephan Feroudj"																																																		

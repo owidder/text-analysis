@@ -1,0 +1,5 @@
+Status Code 500 when trying to import invalid json via REST	"To reproduce:
+Try to import an invalid json via REST
+--> Status 500
+
+Respond with a 422 (Unprocessable entity) instead of a 400 (Bad Request) to malformed Json, because not the HTTP request is wrong, but its content."		Bug	iteraplan PO	28/Apr/14 6:08 PM	14/May/14 9:48 AM					REST																																																															

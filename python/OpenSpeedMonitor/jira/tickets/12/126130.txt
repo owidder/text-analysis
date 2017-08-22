@@ -1,0 +1,34 @@
+Untergeordente Rolle per SQL	"Sehr geehrte Damen und Herren,
+
+
+
+ist es möglich per SQL auf der Datenbank eine untergeordnete Rolle einzufügen?
+
+Ich möchte bei der Rolle ""SLG-Iteraplan-Admin"" die Rolle iteraplan_Supervisor als untergeordnete Rolle einfügen. Das Ergebnis soll wie in dem angehängten Bild aussehen.
+
+
+
+Vielen Dank im Voraus!
+
+
+
+Mit freundlichen Grüßen
+
+Waldemar Lohrer
+
+Swiss Life AG Niederlassung für Deutschland"		Technical question	iteraplan Support	03/Jul/17 12:37 PM	22/Jul/17 7:00 AM														"03/Jul/17 12:37 PM;waldemar.lohrer@swisslife.de;
+
+!UntergeordneteRolle.PNG|thumbnail!"	"03/Jul/17 2:00 PM;cst;Sehr geehrter Herr Lohrer,
+
+vielen Dank für Ihre Anfrage.
+ # Öffnen Sie Ihre Datenbank
+ # Gehen in die Tabelle „role“
+ # Hier sollte der Datensatz „SLG-Iteraplan-Admin“ und „iteraplan_Supervisor“ angelegt sein
+ # Notierten Sie sich von beiden die ID´s
+ # Jetzt gehen Sie in die Tabelle „role_role“ und erzeugen einen neuen Eintrag
+ # Die erste ID ist die von ""SLG-Iteraplan-Admin“ und danach die ID des „iteraplan_Supervisor“
+ # Damit ist die Rolle ""iteraplan_Supervisor"" der Rolle ""SLG-iteraplan"" untergeordnet
+
+Viele Grüße,
+
+Christoph Stangl "																																																					

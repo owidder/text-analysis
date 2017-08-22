@@ -1,0 +1,7 @@
+ServerBaseURL ist null	"Startet man den OSM, so liefert grailsLinkGenrator.serverBaseURL im AssetRequestPersisterService null.
+
+Über das Console-Plugin wird die richtige Url (http://localhost:8080) zurückgegeben."		Bug	OpenSpeedMonitor	29/Jul/16 1:03 PM	10/Aug/16 2:14 PM														"10/Aug/16 2:14 PM;msk;Der Server weiß von Haus aus nicht, unter welcher URL er zu erreichen ist. Das kann man aber in der appilcation.yml (bzw. OpenSpeedMonitor-config.yml) über die property grails.serverURL definieren.
+
+
+
+Ich hab das Template angepasst."																																																						

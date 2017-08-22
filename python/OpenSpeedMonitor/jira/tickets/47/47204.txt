@@ -1,0 +1,6 @@
+Wrong place of drop-down menu for Complexity	"IPNINE-229
+Steps to reproduce: 
+1. Go to Recent view page -> Click on  Information System tile 
+2. Click on Complexity title
+Actual result: drop-down menu is appear under the title Complexity
+Expected result: drop-down menu should be on the right of Complexity title"		Bug	iteraplan PO	28/Nov/14 2:03 PM	23/Dec/14 10:29 AM					IE																																																															

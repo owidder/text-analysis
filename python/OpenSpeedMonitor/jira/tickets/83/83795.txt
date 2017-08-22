@@ -1,0 +1,61 @@
+Synchronize current configuration with URI	"All feature tickets (add column, filter by ...), the configuration must be written into the URI.
+
+
+
+Things to write to the URI:
+
+* -type of architecture element- (not necessary, because it's part of the route)
+
+* list of columns in order of columns
+
+* -filter settings- (should be handeled in the Ticket ITERAPLAN-4604)
+
+* sorting: name and/or number or sort column, direction 
+
+* later: selection...
+
+
+
+
+
+"		New Feature	iteraplan PO	10/May/16 2:22 PM	20/Jun/16 6:52 PM														11/May/16 3:25 PM;tgo;Soll im nächsten Sprint als erstes angegangen werden, allerdings soll es nicht zum Auffüllen des aktuellen Sprints benutzt werden. Das betrifft die Planung vom 12. Mai 2016 bis zum 25. Mai 2016.	"30/May/16 1:19 PM;wfr;Unit tests for cases like
+
+
+
+* given a configuration state (for example ""sorted by first column ascending""), the query part of the URI (that is after the ""?"") must be (or contain) ""...""
+
+* given an URI with query part ""..."", the state of the configuration must be (or contain) ""...""
+
+
+
+Do not write tests for cases like:
+
+""if the user drags a column left, ...""
+
+"	10/Jun/16 1:31 PM;tsu;The commits 3393 and 3379 are commits for the ticket ITERAPLAN-4583. I commited them with the wrong ticket number.	"10/Jun/16 3:12 PM;abo;*Review Comments:*
+
+* You _must_ add a filter on column-properties and (de-)serialize only necessary fields to prevent injection/XSS.
+
+** deserialize with caution to prevent injection methods! Check which columns could be injected! (only the comparator, or the field-property, too?)
+
+** currently for columns with a custom comparator, the whole comparator is serialized to URI!
+
+** for columns with default comparator: when changing the sorted column several times (e.g. from name to id to description), all columns define properties ('sort', 'sortedAt'), which are empty for all but the currently sorted column. Should we filter those empty properties?
+
+** The default configuration of column is also serialized to URI - is that intended? I would have expected that this case does _not_ a URI part for column-config. If it was intended, a test for that case would be nice.
+
+* for _listConfiguration-spec.js_
+
+** The tests are too lax. There is not one test, neither unit nor E2E, that tests the _format_ of the URI (the part concerning the column-config). On the one hand this is cumbersome when changing the format, on the other hand I also want to check exactly that. When I made a iteraplan-release and change the format for the next one, I'd like to tell the users that they have to update their bookmarks.
+
+** What the current implementation tests is whether setting a field to a certain value actually sets the field to the certain value. That's not of much help.
+
+** I'd rather create tests where I setup a specific config, serialize them to URI, and compare that string (-part) with an expected string. And vice-versa.
+
+* for _uri-configuration-synchronization-spec.js_
+
+** Improve readability by inlining short method-calls and using different test-methods:
+
+instead of {{expect(indexCosts > -1).toEqual(true);}} use this: {{expect(url.indexOf('Costs')).toBeGreaterThan(-1);}}
+
+** just doing a {{url.indexOf('asc')}} is too lax. If you do a click on column 3, then you should check whether column 3 is sorted in the way you expect. Otherwise you only check whether _any_ column is sorted the way you expect."																																																			

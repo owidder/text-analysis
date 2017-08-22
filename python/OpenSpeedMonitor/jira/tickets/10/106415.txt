@@ -1,0 +1,43 @@
+Edit on Single Attribute View - Possible Attribute Values of Enum (Client)	"*Summary:*-
+
+Create Edit-Functionality for ""Possible Attribute Values"" for Single Enumeration View.
+
+
+
+*Scope:*
+
+* In scope: ""Possible Attribute Values""-Table
+
+* In scope: Single Enumeration View
+
+
+
+*UI:*
+
+* Use UI and interactions from Building Block List as blueprint (including error-handling)
+
+* Following actions should be possible
+
+** Edit Name-field (Single-Line Text)
+
+** Edit Description-field (Multi-line Text)
+
+** Change order of rows (change numbers and ensure they are correct): {color:red}UPDATE: {color} Use ""+""-icon for add a new element
+
+** Delete a row by adding action-row with delete-button and delete-dialog
+
+** Add a new row
+
+
+
+*Technology:*
+
+* Try to reuse common edit-components from Building Block List
+
+* Send REST-request to the correct REST-API (attributesi)
+
+* Trigger reload-service (IPTS-447)
+
+
+
+{color:red}UPDATE: {color} No copying or sorting (only in scope change the order)"		New Feature	iteraplan Speedbird	22/Dec/16 9:11 AM	14/Mar/17 8:31 AM														25/Feb/17 1:13 PM;roia;[~msr] I think, the UI should be discussed before the implementation starts. The link to the REST-API (attributes) documentation would be very useful too.	10/Mar/17 12:24 PM;dmkh;Review is done, few comments a here: https://iteraweb.iteratec.de/fisheye/cru/IP-415#general-comments	13/Mar/17 10:07 AM;dmkh;Still some comments are opened: https://iteraweb.iteratec.de/fisheye/cru/IP-415																																																				

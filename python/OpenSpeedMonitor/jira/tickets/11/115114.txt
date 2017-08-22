@@ -1,0 +1,140 @@
+Problem mit Reaction von Northern Trust	"Die Reaction für Northern Trust hat auf iteraplan 5.3 funktioniert. Jetzt bei 5.5 funktioniert sie beim Kunden nicht mehr. Die Reaction hat schon mal Probleme gemacht (siehe IPS-229). 
+
+
+
+Es handelt sich um eine Reaction, die automatisch die Schnittstellen kopiert, wenn neue Releases angelegt werden. 
+
+
+
+Gleichzeitig erscheint immer wieder eine Fehlermeldung, wenn neue Release angelegt werden. Unabhängig, ob die Reaction hochgeladen ist. Diese Fehlermeldung erscheint laut dem Kunden erst seit dem Update auf 5.5."		Fault	iteraplan Support	16/Mar/17 11:05 AM	03/Apr/17 1:39 PM														"16/Mar/17 11:05 AM;msl;
+
+!Unbenannt.png|thumbnail!"	"20/Mar/17 10:13 AM;cst;Hallo Michelle,
+
+prüfe den Vorgang im Moment, bei Antwort werde ich dich umgehend informieren.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"20/Mar/17 3:38 PM;cst;Hallo Michelle,
+
+es hat erstmal nichts mit der REACTION. Wir müssen hier erstmal prüfen woher das Verhalten kommt das der Fehler nicht mehr auftaucht.
+
+Kannst du mir bitte den Problem Report zu schicken, welcher Erzeugt wird? 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"20/Mar/17 3:59 PM;msl;Werde beim Kunden nach dem Report anfragen.
+
+VG
+Michelle "	"22/Mar/17 3:56 PM;msl;Hier der Problem Report.
+VG, Michelle 
+
+
+[^ProblemReport_2017-03-21_122414.zip] _(8 kB)_"	"24/Mar/17 8:40 AM;cst;Hallo Michelle,
+
+vielen Dank für die Zusendung der Dateien.
+ # Stoppen des Tomcat Servers
+ # Löschen Sie das work-Verzeichnis (temporäres Verzeichnis) des Tomcats unter [TOMCAT]work\Catalina\localhost[ITERAPLAN]
+ # Fahren Sie den Tomcat Server wieder hoch
+ # Über ""Administration"" - ""Konfiguration"" den Punkt ""Index neu erstellen"" ausführen 
+ # Nach erfolgreicher Erstellung von diesem, das Element erneut aufrufen 
+
+Eine Frage nebenbei, wie hat sich geäußert das die Reaction nicht funktioniert hat? Der Stracktrace bezieht sich auf ein Problem mit dem Suchindex, gibt es bei der Reaction ein anderes Fehlerbild?
+
+Viele Grüße,
+
+Christopg Stangl - iteraplan Support"	"27/Mar/17 2:09 PM;msl;Hallo Christoph,
+
+ich habe das mal so weiter gegeben.
+
+Im Prinzip hat sich das so geäußert, dass die Reaction einfach nicht ausgeführt wurde. Sprich, die Schnittstellen wurden nicht automatisch kopiert. Ob es jetzt funktioniert kann ich noch nicht sagen, da ich noch kein Feedback bekommen habe.
+
+Viele Grüße
+Michelle"	"27/Mar/17 8:48 PM;msl;Hallo Christoph,
+Leider funktioniert die Reaction immer noch nicht.
+Grüße Michelle"	"28/Mar/17 8:13 AM;cst;Hallo Michelle,
+
+tritt der Fehler nach wie vor auf, den du mir oben geschickt hast? 
+Wurde die Reaction korrekt in die Software geladen, gab es einen Hinweis in der Konsole? 
+
+Ich tue mir im Moment schwer einen Ansatzpunkt zu finden, werde die Reaction in meinem System nochmal gegen prüfen. 
+(Gebe die mein Ergebnis in dem Ticket bescheid) 
+
+Können deinen Ansprechpartner auch gerne in das Ticket verlinken und du musst nicht als Vermittler agieren :)
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+ "	"28/Mar/17 4:05 PM;msl;Hallo,
+
+der Fehler tritt nicht mehr auf. Reaction ist korrekt geladen. Habe ich per WebEx überprüft. Es zeigt auch an ""Reaction wurde erfolgreich hochgeladen"" 
+In die Reaction ist auch eine Ausgabe codiert, an der erkenntlich ist, dass sie startet, aber dann abbricht. 
+
+Die Reaction funktioniert in meiner iteraplan Instanz (in mehreren getestet). Ich habe die aktuelle Version auch noch mal angehangen. Das ist auch die die Northern Trust verwendet. (hat kleine Änderungen) - evtl liegt es doch an der Reaction? Dazu sind aber meine Kenntnisse leider nicht ausreichend. 
+
+Ansprechpartner ist:  Jill Nabonsal -  jtn2@ntrs.com (auf englisch kontaktieren), mich gerne in CC, da ich sonst der Ansprechpartner bin. 
+
+Vielen Dank für die Hilfe
+Michelle
+
+[^automatic-interface-copy.js] _(11 kB)_"	"29/Mar/17 8:21 AM;cst;Hallo Michelle, 
+
+jetzt sind wir an dem Punkt wo wir keinen Support mehr leisten.
+
+Die Software bringt keinen Fehler mehr, das Skript wird geladen und es gibt keinen technischen Fehler welches auf ein Problem mit iteraplan schließen lässt. 
+Hier hört unser Support auf, da wir keine Prüfung von Skripten durchführen (welches auch nicht notwendig ist, da alles funktioniert). 
+
+Wie du, konnte ich das original Skript positiv testen, ohne Abbruch.
+Auch das neue Skript funktioniert ohne Probleme. 
+ 
+Kann dir an der Stelle jetzt schwer weiterhelfen. Steht zum Zeitpunkt des Fehlers irgend etwas in den Log-Dateien? 
+ * The “*catalina.out”* and “*localhost.log”* files from your tomcat installation (just for the period, when the error occurred).
+
+ * The iteraplan log files from the period, when the error occurred. The files are called “*iteraplan-[version].log*” (for today) or „*iteraplan-[version].log.[TIMESTAMP]*” (for past days). The location of these file was specified during installation and is documented in the file “log4j.properties”.
+ * The iteraplan *System-Info*. A user with the role “_iteraplan_Supervisor_” can download this file directly in the iteraplan-GUI in the menu Administration/Configuration.
+
+Dann lassen wir das jetzt weiter über dich laufen. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+ "	"31/Mar/17 12:07 PM;msl;Hallo,
+Hier die Log-Dateien.
+VG Michelle
+
+[^manager.2017-03-27.zip] _(44 kB)_"	"31/Mar/17 12:17 PM;cst;Die benutzen ein anders Skript - hier treten Fehler die auf Probleme in dem Skript hinweisen. Wenn das der Fall ist, würden die Fehler bei uns auch auftauchen. Wir haben die gleiche Version wie der Kunde. Also hat dieser eine Datenkonfiguration, welche vom dem Skript nicht berücksichtigt wird.
+
+Kann also hier nicht weiter helfen, können auch gerne nach dem Abendessen kurz sprechen. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+ 
+
+ "	"03/Apr/17 1:39 PM;cst;Hallo Michelle, 
+
+
+
+werde das Ticket hier schließen. Es ist nach unserer Analyse kein technischer Fehler von iteraplan und wir leisten, wie oben geschrieben, kein Support für Reactions die von / für Kunden erstellt wurden.
+
+
+
+Weitere Rückfragen bitte ausschließlich an Fabian erfolgen.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support 
+
+
+
+ 
+
+
+
+ "																																									

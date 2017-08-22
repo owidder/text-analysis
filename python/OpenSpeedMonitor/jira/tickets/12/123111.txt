@@ -1,0 +1,5 @@
+Ampel in Charts: Helle Farben statt Transparenz verwenden	"Statt den Hintergrund der Ampel etwa Halbtransparent zu machen, sollten wir einfach hellere Farben verwenden.
+
+
+
+Damit hat das PNG keine Halbtransparenz, welche bei den von PowerPoint 2016 exportierten PDFs zu seltsamen Farb-Darstellungen in manchen PDF-Readern führt."		Bug	OpenSpeedMonitor	01/Jun/17 10:04 AM	20/Jun/17 10:54 AM																																																																				

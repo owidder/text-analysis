@@ -1,0 +1,52 @@
+User locked in infinite loop during data import	"A normal data import found an error and the user cannot clear the export/import screen.  It is locked in an infinte loop.  How can the user clear this situation without the help from a system support person to restart the tomcat server?
+
+
+
+Here is the situation.
+
+
+
+Created an export on 4/16/16  5:33 CET … ok
+
+
+
+Started the import on 4/16/16  5:58 CET … error …see attached screenshot: import screen 1.
+
+
+
+Usually, this error occurs when something is wrong with the import file.  In this case, all I did is enter a few dates in the Rp_to column for some systems.  I have done this many times before without any issues.
+
+
+
+Tried to return to normal operation by clcking on the “back to export/import main page” button … usually, this works, but today (also on 3/4/16) I get the following “… you can’t start a new” import message …see attached screenshot: import screen 2.  At this moment, I don’t want to start a new import.  I just want to clear the screen.  
+
+
+
+If I click on the “view status” button, I get the first screen.  I can click back-and-forth. I can refresh the IE screen. I can logout at the client.  I can restart IE, as well as Chrome.  I can wait 8 hours.  The only thing I can do is go back-and-forth between these two screens.  
+
+
+
+Other interactive operations with iteraplan seem to work fine.  For example, i can view and edit an element using the classic client.  I just cannot clear the export/import screen and start a new import later.  The only workaround that I know is to ask system support to restart the tomcat server and, of course, it is now the weekend and they cannot be reached ... and I cannot complete my work.
+
+
+
+Please recommend a workaround that a user can conduct.
+
+
+
+Regards, hannes"		Fault	iteraplan Support	16/Apr/16 2:23 PM	07/May/16 7:00 AM														"16/Apr/16 2:23 PM;hannes.callisen@boehringer-ingelheim.com;
+
+!import screen 1.jpg|thumbnail!
+
+!import screen 2.jpg|thumbnail!"	"18/Apr/16 1:56 PM;sfe;Hello,
+please attach the iteraplan log files of the day this issue happened.
+Unfortunately as of now I don't know of a workaround you could use.
+
+Best regards
+Stephan"	"18/Apr/16 2:29 PM;sfe;Hello,
+additional news: I still cannot reproduce the issue ""normally"", but found a way to do so with some artificially created errors.
+I fixed at least that potential cause of your issue, so that a user is not caught in an unrecoverable error state.
+I would still like to verify, with help of your log files, whether this was in fact the cause in your case as well.
+
+Best regards
+Stephan"																																																				

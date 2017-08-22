@@ -1,0 +1,1 @@
+Wiki syntax for text attributes out of function	In the search view of building blocks and in spreadsheets reports, the wiki syntax does not resolve for text attributes.		Bug	iteraplan PO	21/Sep/12 1:32 PM	09/Oct/12 3:56 PM																																																																				

@@ -1,0 +1,5 @@
+Remove property "sv.group" from iteraplan-auth.properties	"This property ""sv.group"" is important at install time to initialize the superuser group in the database, but the entry in iteraplan-auth.properties doesn't seem to be used by iteraplan.
+
+
+
+When this is true, the property should be removed from the iteraplan-auth.properties.template files (all customizations!) and from the build process, because it is rather confusing."		Improvement	iteraplan PO	02/Nov/15 4:42 PM	04/Nov/15 9:41 AM					installer	ldap								04/Nov/15 9:41 AM;tam;Reviewed and tested. There is no property anymore. Installer works. Iteraplan works.																																																						

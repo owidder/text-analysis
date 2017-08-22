@@ -1,0 +1,31 @@
+Marketingbotschaften auf Produkt Webseite platzieren	"unter securebox.iteratec.de bzw.:  securebox.iteratec.de/wp-admin/
+
+
+
+* Welches Problem versucht die secureBox zu lösen?
+
+* Was kann die secureBox leisten?
+
+* Was ist der Wertbeitrag der secureBox für die Kunden?
+
+* Wie funktioniert die secureBox?
+
+* Wer/Welche Kunden nutzen die secureBox?
+
+"		Story	secureCodeBox	24/Jul/15 8:18 PM															"14/Aug/15 1:58 PM;jwr;Hi, woher bekomme ich die Zugangsdaten für die Wordpress-Seite?
+
+"	"15/Aug/15 12:34 AM;rfe;Hi Jens,
+
+
+
+ich habe das Wordpress inzwischen mit unserem LDAP verknüpft.
+
+Du solltest dich mit deinem LDAP Account (Kürzel + Passwort) anmelden können und automatisch Redakteur werden...
+
+
+
+Bitte noch mit etwas Vorsicht und Bedacht im Wordpress redaktionell arbeiten, ich bin mir noch nicht sicher wie gut die Backups wirklich funktionieren ;)
+
+
+
+VG Robert"	17/Aug/15 8:53 AM;jwr;Danke!																																																				

@@ -1,0 +1,15 @@
+Release interactive client	"https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-2.3interaktivienClientreleasen
+
+
+
+* Create branch and tag
+
+* Build release"	92213	Sub-task	iteraplan Quickfox	09/Aug/16 9:56 AM	19/Aug/16 9:51 AM														"11/Aug/16 5:07 PM;tam;Created a branch
+
+Changed the url of the portfolio diagramm
+
+Created tag
+
+We had to change parameter ""Archive the artifacts"" from {noformat}*/target/iteraplan*.jar{noformat}  to {noformat}target/iteraplan*.jar{noformat}
+
+Interactive client released, see build http://iteraplan.iteratec.de/jenkins/view/Release%20Jobs/job/Client%20-%20Releasebuild/2/"																																																						

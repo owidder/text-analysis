@@ -1,0 +1,1 @@
+Find out, how "Productive Periode"-attribute is saved in the database and if you can easily add a color there		116405	Sub-task	iteraplan Speedbird	11/May/17 9:24 AM	24/May/17 2:32 PM																																																																				

@@ -1,0 +1,9 @@
+Font can't be loaded in NIC resulting in error message in console			Bug	iteraplan Thunderduck	12/May/16 11:05 AM	13/Sep/16 9:58 AM					nic									13/Sep/16 9:58 AM;aan;Can not reproduce	20/Sep/16 1:07 PM;fka;Still present in the nightly as of now, cf. with Michael	"20/Sep/16 1:10 PM;mwe;Happens in the following pages:
+
+* list page (http://iteraplan.iteratec.de:8080/iteraplan-devel/client/fonts/glyphicons-halflings-regular.woff2)
+
+* graphics reactor (http://iteraplan.iteratec.de:8080/iteraplan-devel/client/css/MaterialIcons-Regular.woff2)
+
+
+
+Looks like there is something wrong with serving woff2-files."	22/Sep/16 11:26 AM;mse;Commit 26098 in ticket IPTT-108 belongs to this ticket.	"26/Sep/16 1:16 PM;mse;There were a lot of changes back and forth to test the bundle build with jenkins. Please review only the last three commits (26110, 	26111, 26112)."																																																		

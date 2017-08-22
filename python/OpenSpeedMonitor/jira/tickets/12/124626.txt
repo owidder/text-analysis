@@ -1,0 +1,7 @@
+Some fixes for anonymous login	"This ticket collects bugfixes for anonymous access sind the main ticket IPTS-680 is already reviewed.
+
+
+
+- SQLException concerning the sql statements for user  and roles (revisions 27282 and 27283)
+
+- missing unique constraint in ApplicationSetting hibernate mapping (revision 27284)"		Bug	iteraplan Speedbird	16/Jun/17 3:48 PM	16/Jun/17 4:52 PM														16/Jun/17 3:50 PM;tsc;Please also review revisions 27282, 27283 and 27284, committed for IPTS-680.																																																						

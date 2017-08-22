@@ -1,0 +1,5 @@
+[Integrationstest] DB-Reset statt Testdaten-Rollback	"Der Testdaten-Rollback-Mechanismus von Grails sorgt dafür, dass in der in-memory h2 die in jeder Testmethode geschriebenen Testdaten nach der Ausführung wieder ge-rollbackt werden. Dieser Mechanismus hat in der Vergangenheit nicht immer zuverlässig funktioniert. Vor allem dort, wo wir in das Hibernate-Session und Transaktions-Handling selber eingegriffen haben. Um diese Probleme zu beheben haben wir eine Basisklasse, die in allen Integrationstests verwendet werden sollte und in der ein Testdaten-Handling geschieht.
+
+
+
+Um dieses Problem zu beheben wollen wir versuchen statt dem Rollback ein DB-Reset zu machen. Zur Verifizierung, um dies Probleme behebt sollte vorab gecheckt werden, ob die Probleme überhaupt noch irgendwo bestehen."		Task	OpenSpeedMonitor	05/May/17 1:59 PM																																																																					

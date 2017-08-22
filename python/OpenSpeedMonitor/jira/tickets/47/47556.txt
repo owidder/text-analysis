@@ -1,0 +1,4 @@
+The Context menu doesn't open immediately (IE11)	"Summary: Sometimes the Context menu doesn't open immediately after several changing the content type and applying different coloring options.
+"		Bug	iteraplan PO	01/Apr/15 10:43 AM	15/Apr/15 2:43 PM														"15/Apr/15 11:21 AM;wfr;ASK Daria for specifics
+
+or keep on a watch list of pending problems"	15/Apr/15 2:43 PM;msr;Duplicate of IPNINE-431																																																					

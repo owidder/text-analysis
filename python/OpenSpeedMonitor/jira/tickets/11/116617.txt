@@ -1,0 +1,105 @@
+Filter: Implement new layout	"During implemenation of the new layout please ensure that magic bootstrap is not used anymore in the filters
+
+Implement layout of UI presentation for filter template and all legends.
+
+
+
+ 
+
+
+
+This ticket is only about new layout of filter dialog, no functionalities should be changed.
+
+
+
+*Layout of Filter dialog:*
+
+ * Two tabs possible to choose (Filter, Manual selection) in Material Design Style and should be located at the top in the middle of the dialog
+
+ * active tab underlined and coloured: #A70075
+
+ * inactive tab grey: #DDDDDD
+
+ * +filter+ tab layout as in the attachement  !iteraplan Desktop - Filter Tab Filter.png|width=44,height=26,thumbnail!
+
+ ** for OR buttons and text use colour: #FF6B5B (hover: #E14E3E)
+
+ ** for AND buttons and text use colour: #69C395 (hover: #57B283)
+
+ ** both OR and AND buttons should have dotted border
+
+ ** [X] icons:
+
+ *** to delete subfiltering: round with x inside (""*cancel*"" from Angular Material)
+
+ *** to delete subsection: plain x (""*close*"" from Angular Material)
+
+ *** to delete section (relation or BB): plain x coloured as BB name (#329DC / hover: #2484C7)
+
+ ** BB or relation name: #329DC / hover: #2484C7
+
+ ** at the bottom two buttons:
+
+ *** secondary text button for ""Undo""
+
+ *** primary text button for ""Apply""
+
+ * +manual selection+ tab layout   !iteraplan Desktop - Filter Tab Manual Selection.png|width=44,height=29,thumbnail!
+
+ ** next to the name of this tab there should be showed number of selected out of number of all elements
+
+ ** select all / select none as primary text buttons
+
+ ** in the same row as select all / none there should be search field with ""*search*"" icon coloured #A70075
+
+ ** at the bottom two buttons:
+
+ *** secondary text button for ""Undo""
+
+ *** primary text button for ""Apply""
+
+ * +legend+ in the list view  !iteraplan Desktop - Liste Show Filter Open.png|width=47,height=32,thumbnail!
+
+ ** stays on the right side (not on the left as on screen)
+
+ ** possible to hide, an arrow with #A70075 colour and two icons depending on status of legend view
+
+ *** *keybord arrow left* - when closed
+
+ *** *keybord arrow right* - when opened
+
+ ** BB name
+
+ ** (Icon - Filter list) Filters applied
+
+ ** table containing all filters applied
+
+ ** colours:
+
+ *** BB name: #329DC
+
+ *** AND: #69C395
+
+ *** OR: #FF6B5B"		Improvement	iteraplan Speedbird	27/Mar/17 10:12 AM	05/May/17 11:42 AM														"27/Apr/17 1:18 PM;roia;When there're many filter conditions, [Apply] and [Cancel] buttons are not visible and user has to scroll down to have access to them:
+
+
+
+!no_apply_cancel.jpg|thumbnail!
+
+
+
+ I think, would be better when buttons are always visible at the bottom of the window and only filter conditions part is scrollable. [~mkt], [~msr], what do you think?"	27/Apr/17 1:43 PM;roia;[~vadm], please update the documentation https://doc.iteraplan.de/display/iteraplan60/Filtering	27/Apr/17 1:47 PM;msr;I fully agree with your suggestion, [~roia]. Please implement it like that.	"27/Apr/17 1:55 PM;roia;Empty filters are displayed in the legend, which is different than in old implementation. [~msr], should we fix this, or leave as it is?
+
+
+
+!empty-filters.jpg|thumbnail!"	27/Apr/17 2:36 PM;msr;Good, that you saw it. Please fix it.	"27/Apr/17 2:39 PM;roia;Review: [https://iteraweb.iteratec.de/fisheye/cru/IP-541]
+
+
+
+ "	"28/Apr/17 3:28 PM;roia;[~msr], how the unfinished filters should be handled and displayed in the legend (see below)?
+
+
+
+!unfinished_filters.jpg|width=1124,height=371!"	"28/Apr/17 4:41 PM;msr;Thanks for double-checking.
+
+I don't see any reason to change the behaviour of unfinished filters compared to the functionality of iteraplan 5.5. In 5.5 the filters started to be shown in the legend as soon as an operator appeared. Can we implement it similiarly?"																																															

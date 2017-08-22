@@ -1,0 +1,3 @@
+Extra menu item for coloring for numeric attributes	"For all numeric attributes for coloring on PFD, CCD diagrams duplicate ""dark to light"" item.
+
+"		Bug	iteraplan Speedbird	30/Dec/16 4:32 PM	03/Feb/17 11:16 AM														24/Jan/17 4:34 PM;fka;Check, if this is still valid after the implementation of IPTS-399	03/Feb/17 11:16 AM;dmkh;Was fixed as part of IPTS-399																																																					

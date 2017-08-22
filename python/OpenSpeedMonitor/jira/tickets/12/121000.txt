@@ -1,0 +1,17 @@
+Fulldownload of MPD is not working	"Go to the Masterplan Diagram and try to download it via full download as SVG (either by using large data or by reducing the partial limit, it is not caused by the size of the data).
+
+
+
+expected behaviour: The file is downloaded
+
+
+
+current behaviour: The ""Please wait. Downloading..."" alert appears, and stays there, in the console there is the following error: 
+
+
+
+Uncaught TypeError: Cannot read property 'documentBounds' of null
+
+    at getDiagramAsSVG (headerDownloadService.js:252)
+
+    at saveDiagram (headerDownloadService.js:415)"		Improvement	iteraplan Speedbird	10/May/17 9:10 AM	25/May/17 7:15 PM														25/May/17 7:15 PM;ants;Review done: https://iteraweb.iteratec.de/fisheye/cru/IP-627																																																						

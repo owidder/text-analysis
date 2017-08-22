@@ -1,0 +1,20 @@
+Excel Importer fails to move a child element to the parent level	"Reproduce:
+
+* Export data as xls
+* Go to a sheet of a hierarchical type
+* Remove the content of ""parent"" cell (trying) to move it from child to top-level
+* Save excel and import it
+
+=> Importer runs without error messages (sometime with 1, sometimes with 2 changes).
+=> The change doesn't affect the database/data store
+=> Only 3.x: In some cases a ""A server error has occured"" messages appears afterwards in the browser, if you navigate to the related overview page in iteraplan."		Bug	iteraplan PO	15/Jan/13 3:43 PM	30/Sep/13 4:26 PM					3.0.5-candidate	excel	import							"27/Jun/13 10:41 AM;svo;First attempt: changed the ""Financial"" domain of the bankdata model to having no parent. First import resulted in having 1 changed business domain and 9 changed information systems. Change did not show up in the web interface though. Later import attempts found no changes.
+
+SRY: This effect may be related to ITERAPLAN-1641. Workaround may be to export to Excel 2003 format."	"27/Jun/13 11:10 AM;svo;Second attempt using a model containing only two business domains, one of which is parent of the other yielded no changes on re-import.
+Debugging isolated DiffBuilderImpl.java, line 243 as a reason:
+
+If the diff mode is set as ADDITIVE (which it is in this case), empty connections in the right model (here: the updated model) are simply ignored."	"27/Jun/13 2:03 PM;svo;Check for additive mode is now irrelevant for 0..1 relationships. Thus, a change of these values to null is possible via excel import now. If these relationships are empty for already existing elements, this is assumed to be a desired effect.
+
+That allows the excel importer to move child elements to the root level."	"27/Jun/13 4:49 PM;svo;It should be noted that with this change, the now possible changes in hierarchy may lead to gaps in the POS coloumn if a child element is moved to the top if there are children with a higher POS for the same parent.
+Related with ITERAPLAN-1663"	"27/Jun/13 5:07 PM;kvo;what about running a ""clean all positions"" procedure at the end?
+There exists already a SQL-Script for this."	"28/Jun/13 7:47 PM;ase;I was able to reproduce all miss-behaviors described in the ticket with old versions.
+The new version works properly."																																																	

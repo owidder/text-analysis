@@ -1,0 +1,3 @@
+Import custom attributes	"Would it be possible to import custom attributes via the Excel import feature where those custom attributes are not defined in iteraplan?
+
+This could be realized adding a worksheet in Excel where to define the meta data for such custom attribute, i.e. its name, data type, selection items for data type ""selection list"", etc."		Improvement	iteraplan PO	19/May/11 10:29 AM	04/Sep/11 11:54 AM					excel	import								04/Sep/11 11:54 AM;agu;Duplicates ITERAPLAN-207																																																						

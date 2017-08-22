@@ -1,0 +1,11 @@
+Develop Selenium Test for C(R)UD on BO	"Create  Selenium Test 
+Create
+Update
+Delete
+on Busisness Object
+
+Test Case Construction see Ticket at JMi
+TODO store in SVN."		Task	iteraplan PO	05/Dec/13 11:33 AM	02/Jan/14 5:33 PM														06/Dec/13 11:41 AM;jmi;FYI: I stared a wiki-entry on how to write a Selenium-test: https://iteraweb.iteratec.de/confluence/display/iwiki/Recipe%3A+How+to+write+a+Selenium+test	"02/Jan/14 1:11 PM;lba;Change the WebDriverWait to Object.
+Documentation of the testscenario is to short and not comprehensible. (Appearantly it is not that necessary)
+Some private methods are called with local variables which never change. Change the variables to class variables and remove the parameters in the methods."	"02/Jan/14 4:06 PM;jmi;Comment for changeset  22000 (02/Jan/14 3:56 PM):
+I also changed the local-variables to class-variables as suggested, updated the testsheet a little and fixed a typo in the SeleniumAssertion-class."	09/Jan/14 6:52 PM;fka;Reviewed with JMI																																																			

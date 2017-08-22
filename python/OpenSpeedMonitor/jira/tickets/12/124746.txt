@@ -1,0 +1,23 @@
+Single view error message is not appear	"Single view in error message is not appear
+
+
+
+Step to reproduces:
+
+ # Open 'Data' -> 'Information System' -> 'Intranet # 2.0'
+
+ # Change ""Costs"" in ""Strategic measurement categories""
+
+ # Put invalid date (some text) and click with the left mousekey out of editor
+
+
+
+Actual result: The editor is closed and the ""Costs"" is set to ""not assigned""
+
+
+
+Expected result: The error message appear, the editor is closed and the ""Costs"" is set to previous or nothing happens(like with ""enter"" button)
+
+
+
+Comments: reproduces for for all editors"		Bug	iteraplan Speedbird	19/Jun/17 2:17 PM	01/Jul/17 3:58 PM														29/Jun/17 3:58 PM;mash;Review is done. Few comments here: https://iteraweb.iteratec.de/fisheye/cru/IP-736#general-comments																																																						

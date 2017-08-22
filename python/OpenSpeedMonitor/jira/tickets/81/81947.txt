@@ -1,0 +1,9 @@
+Static Spider implementieren	"Für den Fall das bereits eine Liste an URLs für den Scan-Vorgang vorgegeben werden soll muss es möglich sein den Spider durchlauf ""zu überspringen"" bzw. eine manuell aufbereitete Liste an URLs zu übergeben.
+
+
+
+Hierfür soll der sogenannte ""static spider"" wieder reaktiviert werden, der bereits in einer früheren Version für genau dieses Zweck implementiert wurde. 
+
+
+
+Der Static Spider soll als Spider in der Engine im Spider User Task auswählbar sein und die Liste der URLs als einfache JSON Datei in ein Textfeld eingetragen werden können. Das JSON muss hierbei (manuell sichergestellt) das gleiche Format haben wie die Ergebnissmenge eines Spider durchlaufs."		Story	secureCodeBox	25/Apr/16 10:35 PM	07/May/16 8:55 PM																																																																				

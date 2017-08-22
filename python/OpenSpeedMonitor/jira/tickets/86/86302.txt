@@ -1,0 +1,31 @@
+Custom Coloring with Colorpicker	"*Summary:*
+
+Create a colour picker for enumeration and numeric (min, max and undefined) colouring.
+
+
+
+*Approach:*
+
+* Use ITERAPLAN-3395 and ITERAPLAN-3868 as blueprint.
+
+
+
+*UI:*
+
+Use ITERAPLAN-3395 and ITERAPLAN-3868 as blueprint.
+
+
+
+*Acceptance criteria:*
+
+* Use primary click on a legend box (either an enumeration literal or numeric min, numeric max or numeric undefined)
+
+* The color picker opens on the left side of the selected legend box
+
+* Select a color in the color picker
+
+* *After* closing the color picker the diagram, the legend and the url gets updated"		New Feature	iteraplan PO	04/Jun/16 3:51 PM	01/Jul/16 2:34 PM														23/Jun/16 9:50 AM;msr;Please do not redraw the diagram if the color did not change.	28/Jun/16 9:47 AM;msr;Please get in contact with [~ach] to check his solution for the colorpicker.	"30/Jun/16 1:42 PM;roia;Review complete
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-41"	01/Jul/16 1:01 PM;roia;Reviewed. No comments now.	"01/Jul/16 2:34 PM;msr;I like the spy :)
+
+Done"																																																		

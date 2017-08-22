@@ -1,0 +1,26 @@
+Exception in Pie Chart saved queries	"Go to ""Bar or Pie Chart"" and try to execute one of the first two queries => Exception
+
+The stacktrace was (abbreviated):
+
+{code}
+[ERROR] [2012-05-10 14:58:01] (presentation.flow.FlowExceptionHandler) Exception thrown executing [AnnotatedAction@770a7587 targetAction = [EvaluateAction@4faa2f1f expression = compositeGraphicFrontendService.generateGraphicFileResponse(flowScope.memBean, flowRequestContext, flowExecutionContext), resultExpression = [null]], attributes = map[[empty]]] in state 'manage' of flow 'graphicalreporting/compositediagram/start' -- action execution attributes were 'map[[empty]]'
+org.springframework.webflow.execution.ActionExecutionException: Exception thrown executing [AnnotatedAction@770a7587 targetAction = [EvaluateAction@4faa2f1f expression = compositeGraphicFrontendService.generateGraphicFileResponse(flowScope.memBean, flowRequestContext, flowExecutionContext), resultExpression = [null]], attributes = map[[empty]]] in state 'manage' of flow 'graphicalreporting/compositediagram/start' -- action execution attributes were 'map[[empty]]'
+	...
+
+Caused by: java.lang.NumberFormatException: For input string: ""null""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+	at java.lang.Integer.parseInt(Integer.java:449)
+	at java.lang.Integer.valueOf(Integer.java:528)
+	at java.lang.Integer.decode(Integer.java:958)
+	at java.awt.Color.decode(Color.java:707)
+	at de.iteratec.iteraplan.businesslogic.exchange.common.dimension.ColorDimension.setDefaultValue(ColorDimension.java:61)
+	at de.iteratec.iteraplan.businesslogic.exchange.DimensionExport.createColorDimension(DimensionExport.java:112)
+	at de.iteratec.iteraplan.businesslogic.exchange.svg.SvgPieDiagramExport.initializeColors(SvgPieDiagramExport.java:140)
+	at de.iteratec.iteraplan.businesslogic.exchange.svg.SvgPieDiagramExport.createDiagram(SvgPieDiagramExport.java:95)
+	at de.iteratec.iteraplan.businesslogic.exchange.svg.SvgCompositeDiagramExport.createSubDiagram(SvgCompositeDiagramExport.java:142)
+	at de.iteratec.iteraplan.businesslogic.exchange.svg.SvgCompositeDiagramExport.createSubDiagrams(SvgCompositeDiagramExport.java:123)
+	at de.iteratec.iteraplan.businesslogic.exchange.svg.SvgCompositeDiagramExport.createDiagram(SvgCompositeDiagramExport.java:86)
+	at de.iteratec.iteraplan.businesslogic.service.SvgExportServiceImpl.generateSvgCompositeDiagramExport(SvgExportServiceImpl.java:336)
+	
+	... 63 more
+{code}"		Bug	iteraplan PO	10/May/12 3:25 PM	10/May/12 3:48 PM					diagram									10/May/12 3:48 PM;gph;Has been fixed in the meantime while creating this ticket. 																																																						

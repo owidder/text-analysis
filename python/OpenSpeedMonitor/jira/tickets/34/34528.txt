@@ -1,0 +1,1 @@
+Infos zum Quartz-Ausdruck statt als Popup als ausklappender Bereich	Dann würde die job-edit-view nicht mehr "springen" und der Layer kann die nachfolgenden Controls nicht mehr überlagern.		New Feature	OpenSpeedMonitor	12/Mar/15 5:15 PM	16/Mar/15 9:02 AM																																																																				

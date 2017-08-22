@@ -1,0 +1,5 @@
+Duplicate xmi tabular reportings ecore model file	"The IteraplanModelForTabularReporting.ecore model can be found at 2 different places:
+* /iteraplan/src/java/main/de/iteratec/iteraplan/businesslogic/exchange/xmi/exporter/ecore/IteraplanModelForTabularReporting.ecore
+* /iteraplan/WebContent/WEB-INF/classes/IteraplanModelForTabularReporting.ecore
+
+One of them should be removed, because no one knows, which will be used."		Improvement	iteraplan PO	12/Oct/11 1:59 PM	14/Oct/11 10:48 AM					xmi																																																															

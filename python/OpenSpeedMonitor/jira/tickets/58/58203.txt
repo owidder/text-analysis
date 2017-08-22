@@ -1,0 +1,7 @@
+Rename Reactor	"* new English name: ""Graphics Reactor""
+
+* new German name: ""Grafik-Reaktor""
+
+
+
+Adjust iteraplan and also the documentation."		Improvement	iteraplan PO	25/Sep/15 9:39 AM	28/Sep/15 10:41 AM					reactor																																																															

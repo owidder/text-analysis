@@ -1,0 +1,9 @@
+Link Attribute Groups-Tile and route to classic client	"*Summary:*
+
+
+
+1. Link Attribute Groups-Tile and route ""/attributeGroups"" to classic client attribute group menu
+
+2. Set font color of attribute groups tile to red and extend it with "" (Classic Client)""
+
+"		Improvement	iteraplan PO	26/Jan/17 5:42 PM	31/Jan/17 8:42 AM																																																																				

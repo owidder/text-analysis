@@ -1,0 +1,7 @@
+Deployment auf otto-wpt5	"Nach dem Neu-Aufsetzen des Servers muss ein Deployment erfolgen, welches den temporären OSM bei OTTO von der osm-otto1 wieder ersetzt.
+
+
+
+Hierfür muss der Merge der IT-875 getestet und abschließend produktiv durchgeführt werden.
+
+"		Task	OpenSpeedMonitor	08/Feb/16 9:09 AM	13/Feb/16 6:52 PM														12/Feb/16 3:59 PM;hmettendorf;Slacktest	12/Feb/16 4:00 PM;hmettendorf;Slacktest2	12/Feb/16 4:05 PM;hmettendorf;Slacktest3	12/Feb/16 4:12 PM;hmettendorf;WACKA WACKA																																																			

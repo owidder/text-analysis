@@ -1,0 +1,35 @@
+license issue	"Dear support,
+
+
+
+Our customer Ronalgroup cannot access anymore to the application.
+
+
+
+It shows following error. 
+
+
+
+Could you please support on that?
+
+
+
+Your license is invalid or expired. Please provide a new license.
+
+
+
+==> iteraplan-5.5.0.log <==
+
+[WARN ] 27-Apr-2017 07:27:14 [iteraplan.presentation.UserContextInitializationServiceImpl] Tried to log in without a valid license.
+
+"		Technical question	iteraplan Support	27/Apr/17 7:29 AM	16/May/17 7:00 AM														"27/Apr/17 8:19 AM;cst;Good Morning,
+
+thanks for your inquiry.
+
+Here is the current license key for the Ronal AG.
+
+[^license.txt]
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"																																																						

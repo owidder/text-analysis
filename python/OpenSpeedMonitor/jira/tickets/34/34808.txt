@@ -1,0 +1,3 @@
+Selects zur Auswahl der Messgrößen auf den Dashboards muss wieder höher werden	Entweder height: auto oder via fixer Höhe		Task	OpenSpeedMonitor	16/Mar/15 10:16 AM	23/Mar/15 10:32 AM														"23/Mar/15 9:44 AM;nku;Bitte in der deployten Version noch mal testen:
+
+http://dev.openspeedmonitor.wpt.iteratec.de/eventResultDashboard/showAll"																																																						

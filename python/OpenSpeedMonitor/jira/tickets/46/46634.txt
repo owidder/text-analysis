@@ -1,0 +1,5 @@
+Add selenium smoke test	"Add a simple selenium smoke test that navigates to the diagram.
+Assert that something is displayed, but not an error page.
+
+Smoke test only: Do not try to verify the content or the structure of the diagram.
+"	46567	Sub-task	iteraplan PO	07/May/14 4:08 PM	07/Jul/14 1:32 PM																																																																				

@@ -1,0 +1,1 @@
+Add quicksearch over all fields (SQ overview table)	like in the list view		New Feature	iteraplan Quickfox	07/Sep/16 11:27 AM	28/Sep/16 5:00 PM																																																																				

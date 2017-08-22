@@ -1,0 +1,7 @@
+Highchart-Klasse erzeugen	"Highchart Beinhaltet:
+* HighchartGraphs
+** HighchartPoints
+** Achse
+** Einheit Achse
+** Label
+** ...?"		Task	OpenSpeedMonitor	25/Sep/13 12:13 PM	21/Sep/16 3:07 PM														25/Sep/13 12:17 PM;nkuhn;Als Bereinigung für IT-132	21/Sep/16 3:07 PM;nku;nicht mehr relevant																																																					

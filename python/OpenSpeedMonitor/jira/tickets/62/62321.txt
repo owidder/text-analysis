@@ -1,0 +1,7 @@
+Tool area can't be opened for "empty" types	"_Reproduce (with sample data):_
+
+# In classic client, delete all Information System Domains
+
+# In interactive client, open default LSD: InformationSystems by Technical Components and Information System Domains
+
+# Attempt to open the y-axis tool area by clicking the information system domain label"		Bug	iteraplan PO	02/Nov/15 1:11 PM	03/Nov/15 11:07 AM														03/Nov/15 10:13 AM;dam;changed the check for hierarchy from an item into a check with metaTypeDefinition.features																																																						

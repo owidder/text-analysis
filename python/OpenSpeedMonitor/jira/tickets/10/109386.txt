@@ -1,0 +1,47 @@
+Reactor-Skripte lassen sich nicht ausführen	"Beim Versuch auf E.ON Playground ein Reactor-Skript zu starten erhalte ich folgenden Fehler:
+
+There was an error during saving the configuration: 500 Internal Server Error (An internal server error has occurred.)
+
+
+
+Werft doch mal einen Blick in die Logs von  ~20:00 und versucht herauszufinden, wieso es da Probleme gibt."		Fault	iteraplan Support	23/Jan/17 8:25 PM	26/Jan/17 2:57 PM														"24/Jan/17 8:41 AM;cst;Hallo Daniel,
+
+habe etwas geändert, würdest du bitte das erneut testen.
+
+Grüße,
+
+Christoph "	"24/Jan/17 9:53 AM;dne;Die Einzige Änderung ist, dass die Fehlermeldung jetzt auf deutsch erscheint. Log dich einfach selbst ein, das macht die Sache vmtl. einfacher:
+https://www.iteraplan.de/iteraplan_eon540/
+system
+F9:06qok<0F
+"	"24/Jan/17 10:20 AM;cst;So jetzt läuft es :-) 
+Habe es getestet und jetzt läuft der Graphics Reactor. 
+
+Es gab ein kleines Problem in der Datenbank, sollte nicht mehr auftreten.
+
+Grüße,
+
+Christoph "	"24/Jan/17 12:08 PM;dne;Läuft teilweise würde ich sagen. Beim Versuch das Dadhboard über https://www.iteraplan.de/iteraplan_eon540/published/dashboard anzubieten bekomme ich nach einigen Sekunden warten einen Fehler ""keine Datei"" (Download in Chrome).
+
+!fehler.PNG|thumbnail!"	"24/Jan/17 3:32 PM;cst;Hallo Daniel,
+
+ist es möglich, das wir den Graphics Reaktor komplett bereinigen und das Skript frisch hochladen.
+Möchte ausschließen, das dass Verhalten was mit dem Datenbank-""Problem"" zu tun hatte.
+
+Gerne kannst du mir das Skript an das ticket mit anhängen.
+
+Grüße,
+
+Christoph "	"24/Jan/17 3:46 PM;dne;ok, Skript ist angehängt
+
+[^corporate_dashboard.xsl] _(354 kB)_"	"25/Jan/17 8:08 AM;cst;Würdest du dir das bitte nochmals anschauen, sollte jetzt klappen.
+Er hat sich bei dem Skript über die Cache-Time beschwert, wie das zusammenhängt muss ich erst Nachfragen.
+
+https://www.iteraplan.de/iteraplan_eon540/api/reactor/published/dashboard.html
+"	26/Jan/17 1:11 PM;dne;Danke Christoph, sieht nun gut aus. Kannst du mir kurz beschreiben, was das Problem war?	26/Jan/17 1:16 PM;dne;Neues Problem: Ich komme nicht über den "Please wait. Data loading..." Dialog hinaus. Der hält sich nun schon über eine Minute :( 	"26/Jan/17 1:16 PM;cst;So wie es aussieht ein Problem mit der Cache-Time ist mit Version 5.5 gefixt worden.
+Soll ich dir die EON Instanz nach dem Release auf Version 5.5 hochheben? 
+
+Grüße,
+
+Christoph "	"26/Jan/17 1:18 PM;dne;Ich denke das macht Sinn. Würde aber gerne vorher wissen, was in der 5.5 so alles drin steckt :)
+Meine Data Loading Anzeige konnte ich einfach schließen und dann weiterarbeiten. War nur etwas irritierend"																																												

@@ -1,0 +1,52 @@
+Elemente mit Status 'Außer Betrieb' werden angezeigt	"Administration - Konfiguration - Elemente mit Status 'Außer Betrieb' werden angezeigt
+
+
+
+Wir wollen nicht, dass die Objekte mit dem Status ""Ausser Betrieb"" weiterhin in der Auswahl angezeigt werden. Dazu, ist diese Konfiguration da. Das wäre eine super Einstellung. Jedoch aktiviert sich diese immer wieder selber. Ich hatte sie gestern ausgeschalten. Heute Morgen ist sie wieder aktiviert!
+
+Wie geht dies?
+
+Vermutlich wurde der Server in der Nacht automatisch neu gestartet.
+
+Was braucht ihr um dies zu analysieren?"		Fault	iteraplan Support	04/Oct/16 7:56 AM	06/Oct/16 9:52 AM														"04/Oct/16 8:36 AM;cst;Sehr geehrter Herr Studer,
+
+vielen Dank für Ihre Anfrage.
+
+Wie in unserem User Guide beschrieben, ist das Verhalten so gewünscht. 
+
+_The Configuration page provides options with which every user can choose whether to display or to hide elements with the status Inactive. With the default setting, elements in Inactive status are included in information displays. Any change to this setting is valid only for one session; if you wish to exclude inactive elements from the display, you have to make the change explicitly each time you log on.
+In many diagrams and the search, this option has no effect.
+
+https://www.iteraplan.de/doc/display/iteraplan53/Configuration
+
+Es gibt hier keinen work a round, um die Option dauerhaft aktiv zu stellen.  
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+
+"	"04/Oct/16 9:44 AM;alfred.studer@emmi.com;Das heisst, dass ich jedes Mal, wenn ich die Session verlasse und mich wieder neu anmelde das Flag wieder setzen muss!
+Bei der Emmi ist dieses Feld lediglich dem Administrator zugeordnet. Dies heisst somit, dass ich jedem Benutzer, diese Möglichkeit geben müsste, damit er diese Möglichkeit hätte. Das Element wäre dann ""Konfigurieren von iteraplan"". Ist das wirklich die Meinung von iteratec, dass alle Benutzer iteraplan konfigurieren können!
+
+Ich weiss ja nicht wie andere Firmen damit arbeiten. Wir haben im Moment 131 Benutzer. Davon sind 2 Benutzer Administratoren.
+
+Da frage ich mich wirklich, für was wir ""Rollen und Rechte"" eingestellt haben. 
+Für mich ist die Konfiguration eine feste Einstellung, wie wir iteraplan in der Emmi betreiben wollen. Dazu gehören auch die Einstellungen der Rollen und Rechte."	"06/Oct/16 9:01 AM;cst;Sehr geehrter Herr Studer,
+
+vielen Dank für Ihre Antwort. 
+
+So wie Sie es beschrieben haben, ist es das aktuelle Vorgehen. 
+Zusätzlich hat der Haken ""Außer Betrieb"" im classic Client nur eine bedingte Auswirkung auf Diagramme und wird nicht konsequent in der Anwendung berücksichtigt.
+
+Es wird an dieser Funktion nichts weiter angepasst werden. Mit der Umstellung auf den neuen Client fällt die Funktion auch weg. Für den neuen Client steht das Feature globale Filter auf der Roadmap (nach aktuellem Stand für 2017 geplant), welches dann viel bessere Möglichkeiten bieten wird, Elemente global zu filtern.
+ 
+Eine andere Lösung, kann ich Ihnen hier aktuell nicht anbieten.  
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"06/Oct/16 9:50 AM;alfred.studer@emmi.com;Alles klar!
+
+Es geht ja nicht darum, dass dies eine Auswirkung auf die Diagramm haben muss. Dies lösen wir anders. Sondern eher im Aufbau eines neuen Systems. Wenn ich dann immer alte IS oder TC zur Auswahl habe, weiss doch der Benutzer nicht, welche Version nun die aktuelle ist. Und mit dem Flag ""Ausser Betrieb"" hätte es die Arbeit des Benutzers etwas erleichtert. Schade!
+
+Somit kann das Ticket geschlossen werden. "																																																			

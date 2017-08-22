@@ -1,0 +1,40 @@
+Massenupdate Abfrage speichern schlägt fehl	"Hallo,
+
+ich verändere eine Abfrage und möchte sie dann speichern, und bekomme:
+
+Ein allgemeiner technischer Fehler ist aufgetreten.
+
+
+
+Und wenn man mal Iteraplan 5.3 statt nur 5.2 auswählen könnte wäre das auch nett :-)
+
+
+
+Beste Grüße
+
+Armin Joachimsmeyer
+
+"		Fault	iteraplan Support	05/Sep/16 12:50 PM	19/Sep/16 10:15 AM														"05/Sep/16 12:50 PM;armin.joachimsmeyer@axa.de;
+
+[^ProblemReport_2016-09-05_124539.zip] _(16 kB)_"	"05/Sep/16 1:19 PM;cst;Sehr geehrter Herr Joachimsmeyer,
+
+vielen Dank für Ihre Anfrage.
+
+Das von Ihnen geschickte Fehlerbild, deutet auf einen veralteten Datenbanktreiber hin. 
+Würden Sie bitte diesen, durch folgenden austauschen:
+
+https://www.iteraplan.de/doc/display/iteraplan53/Database+drivers 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"05/Sep/16 4:39 PM;armin.joachimsmeyer@axa.de;Hallo,
+besten Dank, ich habe jetzt den neuen Treiber genommen und der Fehler ist verschwunden. Allerdings hat das ändern einer Abfrage ca. 60 Sekunden gedauert, das Neu anlegen geht aber in unter 5 Sekunden."	"06/Sep/16 8:34 AM;cst;Hallo Herr Joachimsmeyer,
+
+ist für den Vorgang für Sie noch ein Punkt offen, sonst würde ich das Ticket schließen. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"19/Sep/16 10:02 AM;armin.joachimsmeyer@axa.de;Hallo, 
+Sie können das Ticket jetzt schließen.
+Beste Grüße
+Armin Joachimsmeyer"																																																		

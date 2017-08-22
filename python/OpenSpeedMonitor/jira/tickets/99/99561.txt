@@ -1,0 +1,1 @@
+Cookie-Settings: Sichtbarkeit	In den Cookies liege die Daten im Klartext vor, auch ohne Login. Die Einstellungen sollten entsprechend angepasst werden, dass dies nicht mehr der Fall ist.		Improvement	OpenSpeedMonitor	18/Oct/16 1:37 PM																																																																					

@@ -1,0 +1,20 @@
+Adjust nesting cluster diagram configuration to IE-IS metamodel change	"Current configuration of Nesting Cluster diagram configuration is like this:
+
+When one type is selected as inner or outer type, then the options for the other type are determined by retrieving all types within a scope of ""2 1/2 hops"" in the metamodel. Every ""relationship path"" has a certain weight, which is:
+
+* 1 for normal relations (directly from one type to another) and self relations (from one type to itself).
+* 1 1/2 hops for relations over a ""relationship type"" like BM or one of the ""association types"" (like Isr2BoAssociation ...).
+
+With the current metamodel change from ITERAPLAN-2823, the weight for the path between IS and IE increases from 1 hop to 1 1/2 hops. 
+
+Consequence: The distance from IE to the types of the business layer (BU, BP, PROD) increases to 3 hops (= 2 x 1 1/2 hops). This means, that the business layer types would be out of scope for the type selection, when IE is selected as inner or outer (the other way it works the same, of course).
+
+Relations between IEs and business layer types are a valid issue for the customers, so this relation must work in Nesting Cluster diagram.
+
+Choose, which approach is easier to implement:
+* Increase the relationship path's scope from 2 1/2 hop to 3 hops.
+* Decrease the weight for relations over a relationship type from 1 1/2 hops to 1 hop.
+
+"	47165	Sub-task	iteraplan PO	10/Dec/14 11:19 AM	08/Jan/15 1:32 PM					diagram	diagrams	metamodel	nesting	visualization					"10/Dec/14 11:25 AM;sfe;I'd prefer the second variant, if you make sure that for example InformationSystem->InformationFlow->InformationSystem is counted as 1 hop, too, to avoid possible infinite loops.
+
+Likely needed database migration for saved nesting cluster diagrams should be handled in ITERAPLAN-2853"																																																						

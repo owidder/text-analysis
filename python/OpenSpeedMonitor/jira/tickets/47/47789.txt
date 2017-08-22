@@ -1,0 +1,6 @@
+New Client: building block icons on overview page sometimes vanish	"Sometimes in chrome (not in IE) the icon on the BuildingBlock overview Page vanishes when the mouse courser hovers over the tile. Probably the icon color does not change to white.
+
+Whenever this behaviour can be observed, it happens with some titles and with some not, but this is consistent and stays the same while moving the mouse over the page tiles again and again.
+
+Observed by Oliver Flöricke and FKA in the ee_release_demo
+"		Bug	iteraplan PO	21/May/15 6:15 PM	22/May/15 11:49 AM														22/May/15 11:44 AM;isc;Currently the problem cannot be reproduced in several browsers. In consultation with FKA the ticket is therefore closed.																																																						

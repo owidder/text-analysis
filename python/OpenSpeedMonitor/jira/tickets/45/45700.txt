@@ -1,0 +1,11 @@
+Wiki syntax for text attributes out of function	"In in spreadsheets reports, the wiki syntax is not resolve for text attributes.
+
+The similar problem was documented in ITERAPLAN-987."		Bug	iteraplan PO	30/Apr/13 2:16 PM	30/Apr/13 7:10 PM					attribute	gui								"30/Apr/13 7:10 PM;sry;Now it behaves in a way that Wiki syntax is transformed to plain text, not rendered into HTML. This is consistent, but is it what the customer expected?
+
+If yes, all fine; if no, let's discuss it, pls. I think this is the correct solution/ behaviour now.
+
+Thx @Silvia for testing!"	"02/May/13 9:19 AM;isc;Yes, I think that is what the customer wants.
+In iteraplan 2.9.1 the Wiki syntax was also transformed to plain text.
+Only after the changes for iteraplan 3, Wiki syntax wasn't transformed anymore.
+
+I think, that transformation to html is not meaningful, because it doesn't look good in a table."																																																					

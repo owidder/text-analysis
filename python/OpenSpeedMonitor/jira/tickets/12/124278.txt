@@ -1,0 +1,33 @@
+Masterplan Diagram (Testlink) {Browser: IE11}		124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:17 PM	19/Jun/17 3:29 PM														"15/Jun/17 9:26 PM;naba;Test cases: Diagrams/ Masterplan Diagram ip-32, 33, 34
+
+ For smoke test please use
+
+ [https://doc.iteraplan.de/display/iteraplan60/Masterplan+Diagram] (examples and tips)
+
+
+
+Please be creative and progressive.
+
+
+
+*Note*:
+
+ - Work with documentation is still in progress
+
+ - Due to some technical issues some test cases are still out of date."	"19/Jun/17 3:25 PM;dmkh;Tested in IE11, created bugs related to test cases and not only to them:
+
+IPTS-990: minimum scale is breaking diagram
+
+IPTS-993: invisible months in timespan header
+
+IPTS-995: Legend overlapping diagram after content type change
+
+IPTS-996: Empty space on the bottom 
+
+IPTS-999: empty space in timespan header when adding columns
+
+IPTS-1000: descriptions are cut in cells
+
+IPTS-1001: zoom level is shown in downloaded files
+
+IPTS-1002: multiple values are not placed correctly in the cell"																																																					

@@ -1,0 +1,2 @@
+Graphite: Tagesmittelwerte einer Page aus CSI	"Regelmäßige Übermittlung der gewichteten Tagesmittelwerte für den CSI pro Page an Graphite
+Berechnung ist NEU. (Cron-Job)"		Task	OpenSpeedMonitor	06/Nov/13 1:02 PM	11/Dec/13 11:23 AM																																																																				

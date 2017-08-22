@@ -1,0 +1,3 @@
+Querreferenzen der Daten vervollständigen, Kopien von Einzeldaten in Stringfelder verzichten.	"Ziel: Wir referenzieren alle Daten direkt! Keine Kopien von Einzeldaten in Stringfelder mehr. 
+
+Die Kopien existierten als Stabilität bei Änderungen. Hierzu wird zukünftig ein anderes Verfahren angesetzt, wie beschrieben in IT-38. Dieses ist aber NICHT Bestandteil dieser Story."		Story	OpenSpeedMonitor	05/Aug/13 10:51 AM	23/May/16 5:12 PM														23/May/16 5:12 PM;nku;Wo wir statt Assoziationen "duplizierte" String-Attribute verwenden tun wir das explizit aus Performance-Gründen (z.B in Job- und EventResult). 																																																						

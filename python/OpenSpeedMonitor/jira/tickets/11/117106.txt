@@ -1,0 +1,85 @@
+New Client doesn't display all attributes for interfaces and technical components	New Client doesn't display all attributes for interfaces and technical components. If I switch to classic client all attributes are displayed		Fault	iteraplan Support	30/Mar/17 10:05 AM	09/May/17 7:00 AM														30/Mar/17 10:05 AM;thomas.liskow@coface.com;Only default attribute group is displayed.	"30/Mar/17 1:34 PM;cst;Dear Mr. Liskow,
+
+thank you for your inquiry. 
+ # Download the data: [^iteraplan-client-5.5.1.jar]
+ # Shut down the Tomcat-Server 
+ # Open the path [TOMCAT]\webapps[ITERAPLAN]\WEB-INF\lib
+ # Check if  ""iteraplan-client-5.5.1.jar"" or ""iteraplan-client-5.5.2.jar"" is exist
+ # Delete the old data and copy the downloaded service release in the current path (if the old data is ending on 5.5.2, rename these to 5.5.2 too)
+ # Delete the work directory (temporary directory) of the Tomcat server in the path [TOMCAT]work\Catalina\localhost[ITERAPLAN]
+ # Start up the Tomcat server
+ # Clear your browser cache (!)
+ # Check the attributes again
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "	"07/Apr/17 9:54 AM;thomas.liskow@coface.com;Hallo Herr Stangl,
+
+der Austausch hat nicht geholfen. Nur bei den Informationssystemen sieht man die Attribute. Bei den anderen Bausteinen jeweils nur die Default Attribute Group mit den nicht einer Attributgruppe zugeordneten Attributen.
+
+Viele Grüße
+Thomas Liskow"	"07/Apr/17 10:01 AM;cst;Guten Morgen Herr Liskow,
+
+ahh ok, bin von einem anderen Verhalten hier ausgegangen. 
+Werde das mit unseren Entwicklern nochmal genau prüfen und Ihnen am Montag hierzu Feedback geben.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"07/Apr/17 10:30 AM;cst;Eine Sache habe ich vergessen, würden Sie bitte einmal die Browserkonsole öffnen, um zu prüfen ob bei Ihnen in der Übersicht ein Fehler auftritt? 
+ Habe jetzt mit unserem großen Test-Datenbestand das obere Verhalten geprüft und konnte dies nicht nachvollziehen. 
+
+Bevor ich weitere Tests mache, möchte ich ausschließen das nicht etwas anderes schief läuft.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"07/Apr/17 10:50 AM;thomas.liskow@coface.com;Die Browserkonsole zeigt keinen Fehler. Nicht in IE11 und auch nicht in Firefox 45.6 ESR
+
+Viele Grüße
+Thomas Liskow"	"07/Apr/17 11:41 AM;thomas.liskow@coface.com;Ich habe in Firefox nochmals den Konsolenoutput nach einem Seitenrefresh mit STRG + F5 gesammtl.
+
+Viele Grüße
+Thomas Liskow
+
+[^Firefox Konsolenausgabe - InterfaceSIngleView-Refresh mit STRG + F5.txt] _(40 kB)_"	"19/Apr/17 1:54 PM;thomas.liskow@coface.com;Hallo Herr Stangl,
+leider habe ich zu diesem Incident bisher nichts mehr gehört. 
+Viele Grüße,
+Thomas LIskow"	"19/Apr/17 1:57 PM;cst;Sehr geehrter Herr Liskow,
+
+würden Sie mir bitte hierzu zwei Screenshots machen.
+
+Alter Client - neuer Client?
+
+Welche Attribute Typen werden nicht korrekt gezeigt, oder geht es hier um eine Attributgruppe?
+
+Im Moment kann das Verhalten nicht nachvollziehen und in die Logs haben mit der Thematik leider nichts zu tun.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+ "	"19/Apr/17 2:25 PM;thomas.liskow@coface.com;Hallo Herr Stangl,
+
+ich habe mal einen Screenshot neuer und alter Client (Interfaces ) angehängt. Ich sehe bei diversen Bebauungselementen wie Interfaces, Technical Components, Business processes nur Attribute, die nicht Attributgruppen zugeordnet sind (also in Default Attribute Group stehen). Alle anderen Attribute bzw. Attributgruppen sind nicht zu sehen.
+
+So wie es aussieht, funktioniert es nur korrekt für die Informationssysteme.
+
+[^iteraplan55_problem_with_attributes_in_newClient_LIST_20170419.docx] _(388 kB)_"	"19/Apr/17 2:26 PM;thomas.liskow@coface.com;Ich hoffe, dass Sie damit weiterkommen.
+
+Viele Grüße
+Thomas Liskow"	"20/Apr/17 9:07 AM;cst;Guten Morgen Herr Liskow,
+
+das von Ihnen beschriebene Verhalten ist mit dem oben genannten Patch gelöst worden.
+Habe Ihnen deshalb einen aktualisierten Setup hochgeladen, der alle Service-Release enthält. 
+
+Damit sollte das Problem gelöst werden. 
+Würden Sie bitte nach Installation das Tomcat - Workverzeichnis (iteraplan instanz) bereinigen, um eine Vermischung ausschließen zu können. 
+Der Link zum Download lautet wie folgt:
+
+[https://www.iteraplan.de/downloads/corporate/5.5.0/iteraplan-5.5.4-corporate-installer.zip] 
+
+Login: corporate
+Password: nbAT01Qx
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"																																											

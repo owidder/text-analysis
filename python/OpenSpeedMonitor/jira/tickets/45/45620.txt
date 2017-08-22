@@ -1,0 +1,21 @@
+Legend in Visualization can be placed outside the visible area	"It has been reported, that the legend in a landscape diagram has disappeared (see attachment). The legend exists is the source code, but it is not visible, because the legend is placed outside the page dimensions.
+
+Make sure that legend blocks are always placed within the page boundaries, so that they are visible."		Bug	iteraplan PO	26/Feb/13 6:00 PM	12/Aug/13 3:57 PM					visualization									06/Aug/13 2:57 PM;sfe;There are still instances where the color legend is placed right from the diagram but the viewbox not extended accordingly. Seems to happen when no names legend is needed (thus not displayed), but the checkbox for using a names legend is checked.	"07/Aug/13 9:53 AM;lba;There appear still some problems when creating a landscape diagram, following options lead to them:
+
+- The colour legend is an enum attribute with values < 8
+- A legend for line types is available
+- There is no legend for abbreviations (all the names fit in their textframe)
+
+
+- Value for Column association is Business-Processes and value for Row association is system size
+
+Remove the check mark for the following options: 
+-Show elements which don’t reference both axes. 
+-Span content elements between neighbouring cells.
+-Scale down content elements to fit into a single axis element. 
+-In case the graphic is too big, scale it down to fit into a DIN A1 page.
+
+
+
+=>The legend for line types is not fully visible"	"10/Oct/13 3:17 PM;psc;Reviewed with Bernhard. Fix is working. 
+Ticket will be closed."																																																				

@@ -1,0 +1,33 @@
+Information Flow diagram: menu bar	see attached		Fault	iteraplan Support	20/Jul/17 11:16 AM	21/Jul/17 11:29 AM														"20/Jul/17 11:16 AM;ansgar.marsiske@coface.com;
+
+[^iteraplan 6 menue.docx] _(21 kB)_"	"21/Jul/17 11:29 AM;cst;Dear Mr. Marsiske,
+
+
+
+thank you for your inquiry. 
+
+
+
+The UI will be overworked in the diagrams with version 6.1. 
+
+Our developer will check the point for the menu ""Edge Line Type"". 
+
+
+
+*_For “Display” the selection on “Hide Sub Information Systems” does not change to “Show Sub Information Systems”_* 
+
+
+
+You right this is a bug and will be fixed in Version 6.1. 
+
+
+
+Greetings,
+
+
+
+Christoph Stangl - iteraplan Support 
+
+
+
+ "																																																					

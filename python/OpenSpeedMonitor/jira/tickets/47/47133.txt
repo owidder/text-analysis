@@ -1,0 +1,42 @@
+Sprint 6? User-defined colours for continous colouring	"*Requested by B-108 and FKA:*
+Interpolation algorithm can be provided from Java code.
+
+*Summary:*
+Add user-defined colours for continuous colouring.
+
+*As-Is:*
+Colouring of attributes cannot be changed by the user.
+
+*To-Be:*
+The user can change the colouring of numeric attributes directly in the diagram and add to url.
+
+*Affected parts of the system:*
+* Nesting Cluster Diagram
+* Inner Elements
+* Outer Elements
+* Colouring legend
+
+*Approach:*
+Use a colour picker directly in the colouring legend to change the colouring. The user can select the colours for ""undefined"", the maxium and the minium value. All colours in between the maximum and minimum value colour are calculated directly with an algorithm.
+
+*Acceptance Criteria:*
+The user starts with the view of an open NCD with IS as inner elements and ISD as outer elements. Colouring by costs is activated.
+The user clicks with primary click on the colouring legend on the colour for ""undefined parameter"".
+A colour picker windows opens immediately.
+The users selects a colour with primary click.
+The colour picker window disappears immediately.
+The diagram is updated immediately: The colouring legend and all boxes with undefined parameter are newly coloured.
+The user clicks with primary click on the colouring legend on the colour for the minimum value.
+A colour picker windows opens immediately.
+The users selects a colour with primary click.
+The colour picker window disappears immediately.
+The diagram is updated immediately: The colours ""between"" the new colour for the minimum value and the old colour are ""calculated"" immediately. The colouring legend and all boxes are newly coloured.
+The user clicks with primary click on the colouring legend on the colour for the maximum value.
+A colour picker windows opens immediately.
+The users selects a colour with primary click.
+The colour picker window disappears immediately.
+The diagram is updated immediately: The colours ""between"" the new colour for the maximum value and the old colour are ""calculated"" immediately. The colouring legend and all boxes are newly coloured.
+
+The steps above must work for all colours and all numeric attributes.
+"		New Feature	iteraplan PO	04/Nov/14 8:34 AM	09/Feb/15 4:16 PM					nesting									"09/Feb/15 4:16 PM;dasm;Verified
+Revision 631"																																																						

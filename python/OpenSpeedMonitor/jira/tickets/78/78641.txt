@@ -1,0 +1,13 @@
+Not landscape layout for some N3CD configuration	"The layout of N3CD is not landscape A-Format.
+
+
+
+Examples:
+
+Nested Cluster Diagram – Infrastructure Elements clustered by Information System Domains
+
+Nested Cluster Diagram – Business Objects clustered by Information System Domains
+
+
+
+[~sfe] knows more :) Problems with wraping and scrolling?"		Bug	iteraplan PO	29/Mar/16 3:50 PM	14/Jul/16 1:51 PM					ncd																																																															

@@ -1,0 +1,5 @@
+Remove fallback data in new client	"_as-is:_ When accessing the new client and the REST request to access data from the server fails, fallback data is used.
+
+_to-be:_ A message the data cannot be accessed is displayed. Message should state state the correct login procedure.
+
+Remove the fallback data files/code."		Improvement	iteraplan PO	16/Apr/15 2:21 PM	20/Apr/15 1:59 PM					newClient									17/Apr/15 3:11 PM;msr;Remove "green" message on success.																																																						

@@ -1,0 +1,184 @@
+Interactive Client: Anzeige IS über IS-Liste funktioniert nicht	siehe Screenshot. Das Problem tritt immer auf, damit ist der Interaktive Client nicht sinnvoll verwendbar.		Fault	iteraplan Support	28/Feb/17 1:02 PM	16/Mar/17 12:57 PM														"28/Feb/17 1:02 PM;stefan.neubauer@hackhofer.at;
+
+!iteraplan55-show-is.jpg|thumbnail!"	"28/Feb/17 3:25 PM;cst;Sehr geehrter Herr Neubauer,
+
+vielen Dank für Ihre Anfrage.
+
+Würden Sie bitte die IE Konsole öffnen und die Seite erneut aufrufen?
+Werden hier Warnungen, oder ähnliches in die Browser-Konsole geschrieben?
+
+Zusätzlich benötigen wir für die weiter Analyse die Log-Dateien ""iteraplan-5.5-nc.log"", ""iteraplan-5.5.log"", catalina.log, localhost.log und der Zeitpunkt, an dem Sie die Seite öffnen.
+
+Haben Sie nach der Installation das Work-Verzeichnis des Tomcats geleert, wenn Nein, kann auch dies die Ursache für dieses Verhalten sein.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+ "	"28/Feb/17 4:06 PM;stefan.neubauer@hackhofer.at;Logfiles siehe Anhang, Zugriff 28-Feb-2017 15:57
+Von der Konsole:
+Error: An exception occurred: [$parse:syntax] Syntax Error: Token '[' invalid key at column 2 of the expression [{[[] starting at [[[].
+http://errors.angularjs.org/1.5.3/$parse/syntax?p0=%5B&p1=invalid%20key&p2=2&p3=%7B%5B%5B&p4=%5B%5B
+    at combinedBower1487251956170.js:19
+    at nf.throwError (combinedBower1487251956170.js:23)
+    at nf.object (combinedBower1487251956170.js:23)
+    at nf.primary (combinedBower1487251956170.js:23)
+    at nf.unary (combinedBower1487251956170.js:23)
+    at nf.multiplicative (combinedBower1487251956170.js:23)
+    at nf.additive (combinedBower1487251956170.js:23)
+    at nf.relational (combinedBower1487251956170.js:23)
+    at nf.equality (combinedBower1487251956170.js:23)
+    at nf.logicalAND (combinedBower1487251956170.js:23)
+
+mfg
+Stefan Neubauer
+
+[^iteraplan-5.5.0.log] _(11 kB)_
+
+[^catalina.out] _(90 kB)_
+
+[^iteraplan-5.5.0-nc.log] _(9 kB)_
+
+[^localhost_access_log.2017-02-28.txt] _(10 kB)_"	"01/Mar/17 9:23 AM;cst;Sehr geehrter Herr Neubauer,
+
+vielen Dank für Ihre Antwort.
+
+Tritt das Verhalten an mehreren Clients auf? Es deutet erstmal alles auf ein Problem mit dem Browser Cache hin. 
+Würden Sie diesen bitte am Client wo das Problem auftritt löschen. 
+
+
+
+In seltenen Fällen kann hier auch die Ursache im ""Work-Verzeichnis"" des Tomcats zu finden sein. Wenn Sie diesen schon geleert haben, können Sie diesen Punkt ignorieren. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"01/Mar/17 2:54 PM;stefan.neubauer@hackhofer.at;Sehr geehrter Herr Stangl,
+
+das Verhalten tritt bei allen Clients und unabhängig vom Browser auf. Browser-Cache leeren bringt leider keine Änderung.
+
+Das Tomcat work-Verzeichnis ist aufgeräumt, wüsste nicht was wir da noch bereinigen könnten.
+
+Auf dem gleichen Tomcat-Server noch eine zweite Iteraplan-Instanz (version 5.4). Der Fehler tritt jedoch auf wenn diese zweite Instanz nicht läuft.
+
+mfg
+Stefan Neubauer
+
+[^java.txt] _(8 kB)_"	"02/Mar/17 9:40 AM;cst;Guten Morgen Herr Neubauer,
+
+vielen Dank für Ihre Antwort.
+
+Würden Sie bitte testweise die Tabelle ""USER_SETTINGS"" in der Datenbank bereinigen, Ihren Browserchache leeren und den Aufruf der Liste erneut durchführen.
+Damit prüfen wir, ob nicht eine gespeicherte Ansicht das Problem hier verursacht. 
+
+Sollte dies nicht zum gewünschten Ergebnis führen, ist es möglich das Sie uns zur weiteren Prüfung einen Datenbank-DUMP zur Prüfung zukommen lassen?
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"03/Mar/17 11:17 AM;stefan.neubauer@hackhofer.at;Hallo Herr Stangl,
+
+leider hat das auch nicht geholfen. Anbei unser DB-Inhalt, passwort für entpacken: iteraplan-uniqa-55
+
+lg Stefan Neubauer
+
+[^dbdump_iteraplan52_201703021705.7z] _(523 kB)_"	"06/Mar/17 10:57 AM;cst;Sehr geehrter Herr Neubauer,
+
+vielen Dank für die Bereitstellung Ihrer Datenbank.
+
+Dadurch konnten wir das Problem analysieren. Unsere Entwickler arbeiten im Moment an einer Lösung. 
+Bei neuen Informationen, werde ich Sie umgehend informieren.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"09/Mar/17 4:42 PM;cst;Sehr geehrter Herr Neubauer,
+
+vielen Dank für Ihre Geduld. 
+
+Wir testen im Moment ein Service-Release um das oben beschriebene Verhalten zu lösen.
+Wenn dieser Test erfolgreich ist, werden wir Ihnen diesen in diesem Ticket hinterlegen.
+
+Dies sollte Morgen, spätestens Montag passieren.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"10/Mar/17 2:10 PM;msr;Sehr geehrter Herr Neubauer,
+
+wir haben nun ein Patch erstellt, der das Problem beheben sollte.
+Hier das Vorgehen zum Einspielen des Patches:
+
+1. Laden Sie die angehängte Datei herunter: ""iteraplan-client-5.5.1.jar"" [^iteraplan-client-5.5.1.jar]
+2. Fahren Sie Ihren Tomcat-Server herunter
+3. Öffnen Sie das Verzeichnis [TOMCAT]\webapps\[ITERAPLAN]\WEB-INF\lib
+4. Prüfen Sie, ob in diesem Verzeichnis eine Datei mit dem Namen ""iteraplan-client-5.5.1.jar"" oder ""iteraplan-client-5.5.2.jar"" existiert
+5. Löschen Sie die alte Datei und kopieren Sie die heruntergeladene Datei in das Verzeichnis (falls die alte Datei auf 5.5.2 geendet hat, benennen Sie bitte die heruntergeladene Datei auch auf 5.5.2 um)
+6. Löschen Sie das work-Verzeichnis (temporäres Verzeichnis) des Tomcats unter [TOMCAT]work\Catalina\localhost\[ITERAPLAN]
+7. Fahren Sie den Tomcat wieder hoch
+8. Löschen Sie den Browsercache (!)
+
+Viele Grüße
+
+M. Schrumpf - iteraplan Support
+ "	"13/Mar/17 7:57 AM;cst;Sehr geehrter Herr Neubauer,
+
+wir haben nun ein Patch erstellt, der das Problem beheben sollte.
+Hier das Vorgehen zum Einspielen des Patches:
+
+1. Laden Sie die angehängte Datei herunter: ""iteraplan-client-5.5.1.jar"" [^iteraplan-client-5.5.1.jar]
+2. Fahren Sie Ihren Tomcat-Server herunter
+3. Öffnen Sie das Verzeichnis [TOMCAT]\webapps[ITERAPLAN]\WEB-INF\lib
+4. Prüfen Sie, ob in diesem Verzeichnis eine Datei mit dem Namen ""iteraplan-client-5.5.1.jar"" oder ""iteraplan-client-5.5.2.jar"" existiert
+5. Löschen Sie die alte Datei und kopieren Sie die heruntergeladene Datei in das Verzeichnis (falls die alte Datei auf 5.5.2 geendet hat, benennen Sie bitte die heruntergeladene Datei auch auf 5.5.2 um)
+6. Löschen Sie das work-Verzeichnis (temporäres Verzeichnis) des Tomcats unter [TOMCAT]work\Catalina\localhost[ITERAPLAN]
+7. Fahren Sie den Tomcat wieder hoch
+8. Löschen Sie den Browsercache (!)
+
+Viele Grüße
+
+Christoph Stangl - iteraplan Support"	"16/Mar/17 12:21 AM;stefan.neubauer@hackhofer.at;Sehr geehrter Herr Stangl,
+
+leider happert es immer noch. Siehe log-Files *2017-03-16* im Anhang
+
+Anzeige im GUI nach klick auf ein IS:
+{quote}
+{{$ctrl.element.name}} [{{'READ_ONLY' | translate}}] 
+{{'SINGLE_VIEW.BACK_TO_LIST' | translate}}
+{quote}
+
+[^iteraplan-5.5.0.2017-03-16.log] _(3 kB)_
+
+[^iteraplan-5.5.0-nc.2017-03-16.log] _(2 kB)_
+
+[^localhost_access_log.2017-03-16.txt] _(11 kB)_
+
+[^catalina.2017-03-16.out] _(18 kB)_"	"16/Mar/17 12:24 AM;stefan.neubauer@hackhofer.at;Anzeige im GUI gleich wie am Screenshot vom 28.02.2017.
+
+lg Stefan Neubauer"	"16/Mar/17 7:54 AM;cst;Sehr geehrter Herr Neubauer,
+
+vielen Dank für Ihre Antwort.
+
+Werde den Vorgang nochmal prüfen, bei antwort werde ich Sie umgehend informieren.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+ "	"16/Mar/17 11:00 AM;cst;Habe zu diesem Thema eine aktualisierte Version der Service-Datei bekommen und diesen mit Ihrer Datenbank DUMP gegen getestet. 
+Es ließen sich alle getesteten Informationssysteme in der Singel Element View korrekt aufrufen. 
+
+Würden Sie bitte die Schritte mit der aktualisierten Datei erneut durchführen:
+ # Laden Sie die angehängte Datei herunter: ""iteraplan-client-5.5.1.jar^!/jira/images/icons/link_attachment_7.gif|width=7,height=7!^""
+2. Fahren Sie Ihren Tomcat-Server herunter
+3. Öffnen Sie das Verzeichnis [TOMCAT]\webapps[ITERAPLAN]\WEB-INF\lib
+4. Prüfen Sie, ob in diesem Verzeichnis eine Datei mit dem Namen ""iteraplan-client-5.5.1.jar"" oder ""iteraplan-client-5.5.2.jar"" existiert
+5. Löschen Sie die alte Datei und kopieren Sie die heruntergeladene Datei in das Verzeichnis (falls die alte Datei auf 5.5.2 geendet hat, benennen Sie bitte die heruntergeladene Datei auch auf 5.5.2 um)
+6. Löschen Sie das work-Verzeichnis (temporäres Verzeichnis) des Tomcats unter [TOMCAT]work\Catalina\localhost[ITERAPLAN]
+7. Fahren Sie den Tomcat wieder hoch
+8. Löschen Sie den Browsercache (!)
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"16/Mar/17 12:24 PM;stefan.neubauer@hackhofer.at;Sehr geehrter Herr Stangl,
+
+das jar war gut versteckt, aber habe es gefunden, und noch besser: es funktioniert!
+
+Besten Dank, lg
+Stefan Neubauer & Kollegen"																																							

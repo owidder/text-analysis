@@ -1,0 +1,17 @@
+iTurm Angaben	"Hallo
+
+In welchem Verzeichnis finde ich die Angaben von iTurm (DB Name, Passwort, etc.).
+
+
+
+Danke für die Info."		Technical question	iteraplan Support	16/May/17 9:17 AM	18/May/17 8:44 AM														"16/May/17 9:20 AM;cst;Sehr geehrter Herr Studer,
+
+vielen Dank für Ihre Anfrage.
+
+Die Anmeldeinformation zum iturm, finden Sie unter
+
+_TOMCAT/iteraplan/META-INF/_ in der Datei ""context.xml"".
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	17/May/17 5:14 PM;alfred.studer@emmi.com;erledigt																																																					

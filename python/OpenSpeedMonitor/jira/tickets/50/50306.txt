@@ -1,0 +1,17 @@
+Output IFD as svg	"*Summary*
+Create a possibility to download the full diagram (diagram incl. legend) as an SVG.
+
+*Affected JS-Files*
+* ifdController
+* ifdTemplate
+* ifdContentController
+* ifdLegendController
+* ifdContentMain
+* ifdLegendMain
+
+*Approach*
+Use the GoJS-functionality ""makeSVG"". Combine ""both"" GoJS-diagrams (diagram and legend) into one and create a SVG-file out of that.
+Have a look at the same solution at the Landscape Diagram.
+If there is some time left (of the estimate), try to outsource the code in a common helper class."		New Feature	iteraplan PO	09/Jul/15 9:30 AM	21/Jul/15 12:52 PM					download	svg								21/Jul/15 10:16 AM;msr;In the filename special characters like ":" are transformed to "-". This transformation is done by the FileSaver.js library. You can test it on: http://eligrey.com/demos/FileSaver.js/	"21/Jul/15 12:52 PM;fam;Checked Code and function successful.
+
+Ticket closed"																																																					

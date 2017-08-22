@@ -1,0 +1,43 @@
+Information System - wrong error message when creating new element	"h4. Problem Description:
+
+
+
+ Wrong error message is shown when creating the new element of Information System with the same Name.
+
+
+
+ 
+
+h4. Reproduction Steps:
+
+ *  Open an app and navigate to Data>Information System
+
+ * Click on the ""New"" button
+
+ * Input the ""Treasury # 1.0"" into the Name field
+
+
+
+h4. Observed Results:
+
+
+
+The wrong error message is displayed: ""An error occurred during creating the element: User name already exists.""
+
+
+
+ 
+
+h4. Expected Results:
+
+
+
+The following error message is displayed and nothing happens
+
+
+
+""An error occurred during creating the element: Element name already exists."" 
+
+h4. Note:
+
+ - Used dev and #329 with FF"		Bug	iteraplan PO	30/May/17 11:33 AM	01/Jun/17 11:58 AM														30/May/17 5:31 PM;pma;Renamed errorcode 7 because it also occurs when you add an attribute group with an existing name																																																						

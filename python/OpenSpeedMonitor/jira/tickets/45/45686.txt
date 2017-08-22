@@ -1,0 +1,13 @@
+Expand the XWiki Syntax for a own graphic macro	"In addition to the XWiki Syntax, it should be possible to interpret own syntax definitions / macros:
+
+The following macro is scheduled:
+* Diagram: <Diagram>[ID]</Diagram>
+
+In preparation for an further use, the following element/macro is to consider:
+* Filter: <Filter></Filter>
+
+"	45668	Sub-task	iteraplan PO	18/Apr/13 2:32 PM	23/May/13 10:23 AM					dashboard									"30/Apr/13 10:14 AM;isc;The syntax for to embed diagrams is integrated.
+The following syntax element can be used for the dashboard: <Diagram>[ID]</Diagram>
+Example:
+<Diagram>7</Diagram>
+Currently there is no support for an automatic integration and selection of a saved query. So the user must find out the id of an saved query by him self. "	16/May/13 3:57 PM;bra;looks ok and works although i am not sure why you put the css rules into the custom.css	22/May/13 8:47 PM;sry;Pls remove the css rules from the {{custom.css}} and put them into one of the files in {{/iteraplan/WebContent/ui/bootstrap/css}} (iteraplanContentLayout.css ??). That file is intended to be _overwritten_ by customizations	23/May/13 9:22 AM;isc;Resolved. Now, the css rules are in the right file.																																																			

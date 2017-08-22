@@ -1,0 +1,7 @@
+List views. Storing user defined column width	"Storing user defined column width. [~fka] discusses it with [~wfr] and [~sfe]
+
+
+
+serialize to url and vice versa
+
+update url on width change "		New Feature	iteraplan PO	08/Jun/16 11:20 AM	27/Jun/16 12:50 PM														23/Jun/16 4:19 PM;tsu;This Ticket should be reviewed together with ITERAPLAN-4688 , because I changed things I did in that ticket.	27/Jun/16 12:50 PM;mse;Review ok.																																																					

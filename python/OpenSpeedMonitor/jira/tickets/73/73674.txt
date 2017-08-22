@@ -1,0 +1,20 @@
+Johannes Eltgen	Zugriff zu beidem bitte :-)		Access	iteraplan Support	16/Feb/16 4:10 PM	25/Feb/16 10:42 AM														"18/Feb/16 9:10 AM;sfe;Hallo Johannes,
+
+
+
+Du solltest eigentlich schon Zugriff zum Forum haben, mir wird jedenfalls angezeigt, dass der Benutzer ""Johannes Eltgen"" mit der Email ""johannes.eltgen@iteratec.ch"" Mitglied der entsprechenden Benutzergruppe ist.
+
+Was fehlt dir noch am Forums-Zugang?
+
+
+
+Zugang zum Jira wird vermutlich noch bis nächste Woche dauern. Wir halten dich auf dem Laufenden."	"18/Feb/16 9:37 AM;jel;Hallo Stephan
+Danke für deine Antwort. Zum Forum habe ich bereits Zugriff. Ich dachte hier könnte ich separat den Zugriff zu a) Kundentickets und b) iteraplan Dev-Stand anfragen. In dem Fall warte ich noch.
+Viele Grüsse
+Johannes"	"23/Feb/16 6:23 PM;sfe;Hallo Johannes,
+
+
+
+sorry für die Verzögerung. Ich habe gerade nochmal nachgefragt, und als iteratec Mitarbeiter kannst du Zugang zu unserem Jira bei Sami von den Admins bekommen, sagt Fabian.
+
+Für dich legen wir keinen extra Benutzer an, sondern Sami wird dir deinen iteratec Domänenbenutzer für das iteraplan-Projekt im Jira freischalten."																																																				

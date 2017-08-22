@@ -1,0 +1,21 @@
+User hat keine sudo Rechte	"Hallo,
+
+
+
+auf tacose.iteratec.de hat der User iteratec keine root Rechte. Wir sind gerade mit einem externen Experten bei einer PAI-Installation und können nicht installieren. Bitte möglichst in der nächsten Stunde freischalten.
+
+
+
+Viele Grüße und danke!
+
+David"		Task	Infrastruktur	19/Apr/17 12:52 PM	19/Apr/17 1:53 PM	Hardware													"19/Apr/17 1:27 PM;sas;das hinterlegte Passwort für iteratec stimmt nicht mehr?
+
+
+
+Was habt ihr jetzt von einem Passwort?
+
+
+
+Login: iteratec/r8bohuluaoq+"	19/Apr/17 1:37 PM;dsh;wir haben an dem Passwort nichts geändert. Per ssh kommen wir mit dem Login auch auf die Maschine. Nur installieren funktioniert nicht. 	19/Apr/17 1:41 PM;sas;Funktioniert jetzt die Installation? Ich habe iteratec die benötigten Rechte gegeben.	"19/Apr/17 1:49 PM;dsh;Hallo Sami,
+
+bei der Eingabe von ""sudo su"" wird nach dem root-Passwort gefragt. Wenn wir das Passwort von dem login eingeben, kommt die Meldung: ""Das hat nicht funktioniert"". Oder brauchen wir ein anderes root-Passwort?"																																																			

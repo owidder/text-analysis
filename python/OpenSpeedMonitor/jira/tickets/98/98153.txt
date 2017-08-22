@@ -1,0 +1,2 @@
+Auto-discover at tomact restart	"check if dubl.
+The plugins should be discovered automatically when tomcat is re-started."		Task	iteraplan Thunderduck	04/Oct/16 1:50 PM	02/Nov/16 1:52 PM					PluginAPI																																																															

@@ -1,0 +1,10 @@
+Set specific tab as global default for an Building Block Type	"If you open a the detail view page of a Building Block, several views organized in tabs are offered to you (Hierarchy, Relations, ..). The default tab, which is shown if any Building Block is opened, is always the _Hierarachy-Tab_ and can't be changed at the moment. 
+
+Scope of this ticket is to implement the possibility to change the default tab for a Building Block Type (e.g. default for Information System is _Relations_ and for Architectural Domain it's _Visualizations_).
+
+*Solution:* Add new properties to config property file, which enable to set the default view per Building Block Type, for example like this:
+
+{noformat}
+defaultView.InformationSystem=Relations
+defaultView.ArchitecturalDomains=Visualizations
+{noformat}"		New Feature	iteraplan PO	04/Aug/14 3:01 PM	22/Aug/14 11:27 AM														21/Aug/14 10:14 AM;fam;Implemented and successful manually tested.	22/Aug/14 10:14 AM;fam;Documentation modified, see http://www.iteraplan.de/wiki/display/upcomingIteraplan/iteraplan+config+files																																																					

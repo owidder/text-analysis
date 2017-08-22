@@ -1,0 +1,7 @@
+Less obtrusive link to attribute detail information	"In the tab ""Attributes"" of each Building Block view, the attribute descriptions are shown on mouseover over ""(Details i)"" placed near each attribute name. This makes the attribute titles extremely bulky and obscures the overview, especially when more than just several attributes per Building Block are involved.
+
+The information icon ""i"" alone is enough to indicate the link to the description. The word ""Details"" and the brackets should please be deleted."		Improvement	iteraplan PO	24/Jan/13 4:26 PM	01/Feb/13 8:42 AM					3.0.5-candidate	attribute								"28/Jan/13 4:21 PM;sry;See attached screenshot for a suggested implementation in 3.0.x. 
+iteraplan 4.1 will look similar. Comments/feedback welcome."	28/Jan/13 4:45 PM;npa;This definitely looks better. But I could imagine the fat black dots becoming too "in your face" as soon as the list of attributes gets longer. A lighter, airier version of the icon (possibly gray circle instead of black or something in the lines of http://vector.us/browse/394040/universal_information_symbol) should make the list look even cleaner.	"31/Jan/13 4:50 PM;isc;If the list of attributes gets longer, the icons are too concisely (see attached screenhot ""Details Icon.png"").
+A lighter, airier version of the icon is better.
+
+Otherwise it looks good."																																																				

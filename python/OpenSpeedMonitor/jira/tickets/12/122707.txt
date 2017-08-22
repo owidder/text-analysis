@@ -1,0 +1,23 @@
+Page-Filter-Card zeigt nicht alle Pages an bei "Manuellem Zeitraum"	"Ich habe bei OTTO die Messungen erweitert und auch zwei neue Pages aufgenommen. Im TimeSeries-Chart sehe ich diese beiden neuen Seiten auch:
+
+
+
+[https://iteraspeedmonitor.otto.wpt.iteratec.de/eventResultDashboard/showAll?graphName=&alias=&_action_showAll=Anzeigen&selectedInterval=-1&selectedTimeFrameInterval=259200&from=2017-05-25T22%3A00%3A00.000Z&to=2017-05-29T21%3A59%3A00.000Z&selectedFolder=7&selectedPages=24&selectedPages=23&selectedAggrGroupValuesUnCached=fullyLoadedTimeInMillisecsUncached&trimBelowLoadTimes=&trimAboveLoadTimes=&trimBelowRequestCounts=&trimAboveRequestCounts=&trimBelowRequestSizes=&trimAboveRequestSizes=]
+
+
+
+Im PageAggregation-Chart kann ich die neuen Pages _Merkzettel_ und _AddToMerkzettel_ nur auswählen, wenn bei der Zeitauswahl ein vordefinierter Zeitraum ausgewählt wurde (z.B. letzte Woche oder letzte 3 Tage). Wenn man _Manuelle Auswahl_ auswählt verschwinden die Pages. Dieser Fehler tritt auf dem TimeSeries-Chart nicht auf."		Bug	OpenSpeedMonitor	29/May/17 10:21 AM	31/May/17 10:42 AM														"29/May/17 10:28 AM;sbr;Kann ich nicht reproduzieren. Habe folgendes probiert:
+
+1. [https://iteraspeedmonitor.otto.wpt.iteratec.de/pageAggregation/show] aufrufen
+
+2. ""Last 3 days"" asuwählemn -> Ich sehe die beiden Seiten
+
+3. ""Manual selection"" auswählen -> Ich sehe beide Seiten immernoch
+
+4. Zeitraum ändern (Start & Ende um einen Tag nach hintern verlegt) _> Ich sehe beide Seiten immernoch auf der Karte.
+
+
+
+Geben die DevTools Hinweise? (304-Requests o.ä.?)
+
+Bist du ""normal"" auf die Seite gegangen oder über den Chart-Switch oben?"																																																						

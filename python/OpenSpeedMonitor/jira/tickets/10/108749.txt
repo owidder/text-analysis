@@ -1,0 +1,33 @@
+Beabauungsplangrafik als Visio in Internet Explorer 11 öffnen	"Hallo Herr Stangl,
+
+
+
+wir führen aktuell Tests unter Windows 10 mit iteraplan 5.1 in Verbindung mit Firefox und IE 11 durch. Dabei stoßen wir mit dem IE 11 auf Probleme beim Öffnen von Bebauungsplänen im Visio-Format.
+
+
+
+Beim ersten Öffnen eines Bebauungsplans im Visio-Format erscheint unten ganz kurz ein Hinweisfeld ""Sicherheitsüberprüfung wird ausgeführt..."", schließt sich automatisch wieder und die Grafik wird im IE in einem neuen Tab angezeigt (vorausgesetzt, Visio-Dateien sind wie in diesem Fall mit dem IE verknüpft). Öffnet man die Grafik allerdings in derselben iteraplan-Session erneut, so bleibt die Meldung ""Sicherheitsüberprüfung wird ausgeführt..."" manchmal stehen und schließt sich nicht wieder, da die Grafik im Internet-Cache gespeichert wird und die Interneteinstellungen für Zone Internet – geschützter Modus aktiv ziehen. Das offene Browsertab ist in diesem Fall blockiert. Das Verhalten ist allerdings nicht immer reproduzierbar. Als Hinweis: Im IE werden bei uns die Interneteinstellungen jeweils global relativ restriktiv weitestgehend nach der Microsoft-Empfehlung auch für local Intranet / local Machine vorgenommen.
+
+
+
+Bei einem Aufruf der Bebauungspläne aus Firefox heraus im IE konnte ich das Verhalten übrigens nicht nachstellen. Es kommt hier zwar die Meldung ""Das Ausführen von Skripts bzw. ActiveX-Steuerelementen wurde für diese Webseite eingeschränkt"", diese lässt sich aber mit Klick auf ""Geblockte Inhalte zulassen"" bestätigen.
+
+
+
+Können Sie uns dabei weiterhelfen, wie die Interneteinstellungen im IE zu konfigurieren sind, dass das beschriebene Verhalten unter IE 11 nicht auftritt?
+
+
+
+Besten Dank für die Unterstützung.
+
+
+
+Viele Grüße
+
+Matthias Habermann"		Technical question	iteraplan Support	18/Jan/17 5:45 PM	20/Feb/17 9:28 AM														"18/Jan/17 5:45 PM;matthias.habermann@wacker.com;
+
+!Bebauungsplan_Visio_aus_FF_geblockt.PNG|thumbnail!
+
+!Bebauungsplan_Visio_aus_IE_Sicherheitsueberpruefung.PNG|thumbnail!
+
+!Internetoptionen_IE.PNG|thumbnail!"																																																						

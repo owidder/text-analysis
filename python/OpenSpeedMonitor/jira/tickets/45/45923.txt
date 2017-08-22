@@ -1,0 +1,22 @@
+XMI export can not handle some special characters	"Example: A customer could not download the XMI&Ecore bundle from the mass data page of iteraplan. The error message (in IE8) said the file could not be downloaded.
+The error happend in the emf.ecore conversion and the reason was ""Caused by: java.lang.RuntimeException: An invalid XML character (Unicode: 0xb) was found..."".
+That character was part of the description of an enumeration value.
+
+Our XMI export apparently can't handle certain special characters, especially control characters.
+There should be either a meaningful error message when an export containing elements with such characters is attempted, or some sort of escaping should be applied."		Bug	iteraplan PO	24/Jul/13 4:42 PM	01/Jul/14 12:51 PM					character	xmi								25/Jul/13 8:39 AM;tdi;Related issue: when the user clicks on export button, but cancels the download dialog and then clicks on the export button again, there is a general error and the download does not start. Again clicking on export results in correct output.	25/Jun/14 4:24 PM;fka;Is this still applicable?	"27/Jun/14 12:50 PM;dop;At first, related to the issue that [~tdi] reported in his comment, I can't reproduce that (IE 11). 
+
+To the main issue: The above reported error message will appear, if the XML document is *not* valid and contains some special unicode character. In this case, the character 0xB is a Vertical Tab. I can't image, how that character got into the database. I have tried to insert it in textboxes in the iteraplan webui and with the excel import. In these two cases, it is not possible to insert this character. 
+
+Then I have inserted the char in the XML zip and uploaded it. Iteraplan has crashed with the following (in my opinion appropriate) error message:
+
+{noformat}
+An error occurred while processing your request.
+
+The file to import is corrupt and could not be read.
+{noformat}
+
+Further information about valid and invalid characters in XML files can be found here (Section 2.2): http://www.w3.org/TR/REC-xml/
+
+Is there any need to care about this?"	"30/Jun/14 2:11 PM;dop;I've updated the documentation and added the section, which describes the allowed and restricted unicode characters. 
+
+http://www.iteraplan.de/wiki/display/upcomingIteraplan/XMI+EA+Data+Format"																																																			

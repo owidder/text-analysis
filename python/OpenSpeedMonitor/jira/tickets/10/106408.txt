@@ -1,0 +1,47 @@
+Create new attribute and redirect to Single Attribute View (Client)	"*Summary:*
+
+Create the possibility to create a new attribute
+
+
+
+*User Story:*
+
+* On the attribute list page create a new button ""Create Element"" (like on the Building Block List)
+
+* After clicking on this button a dropdown is opened and the user selects the attribute type
+
+* After selecting the type the user gets redirected to the Single Attribute View of type with a fake-id
+
+* The Name-field is already selected, so the user can start typing
+
+* The Name-field is the only mandatory field which needs to be entered
+
+* The rest of the fields can be edited by using the ""normal"" edit-features
+
+* All changes are collected and after any route-change the REST-API is called with all changes
+
+* Then trigger reload-service automatically (IPTS-447)
+
+* {color:red}UPDATE: {color} Implement ""Cancel""-Button instead of ""Delete""-Button during creation-process
+
+
+
+*Special Case: Date Intervals*
+
+* For this type all three field (start date attribute, end date attribute and color) are mandatory
+
+* Ensure all three fields are filled before allowing any route change
+
+* Everything else is the same as above 
+
+
+
+
+
+* {color:red}UPDATE:{color} If no name is enter, please display ""EDIT_SERVICE_ERROR_MESSAGES.-10""
+
+"		New Feature	iteraplan Speedbird	22/Dec/16 8:53 AM	20/Mar/17 4:21 PM														09/Mar/17 2:21 PM;dmkh;Review is done, few comments here: https://iteraweb.iteratec.de/fisheye/cru/IP-406#general-comments	10/Mar/17 9:36 AM;dmkh;There are still some issues reproduced.	"10/Mar/17 2:01 PM;dmkh;Everything is fixed, except initial focus on name editor in IE. 
+
+
+
+Please investigate this bug, if no result - put ticket to On hold till Tuesday."	17/Mar/17 11:04 AM;mash;Current IE bug was accepted within ticket and put to bug list																																																			

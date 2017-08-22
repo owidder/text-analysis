@@ -1,0 +1,7 @@
+Error page when loading saved landscape diagrams under special circumstances	"example to reproduce:
+1. Create a landscape diagram with arbitrary options, but choose only one information system for the content
+2. Save the diagram
+3. Delete the chosen information system
+4. When trying to load the saved query now, a JSPException will be thrown, resulting in an Error Page (trunk) or broken page (2.8), making it impossible to edit the saved query.
+
+It would be better if you could load the query and got an error only when trying to create the actual diagram. That way you could edit the query to adjust to changed data."		Bug	iteraplan PO	09/Jun/11 3:17 PM	17/Jun/11 4:04 PM					diagram	query								16/Jun/11 9:44 AM;rbe; - the problem is solved (with loading the saved query whose IS is currently deleted), query can be adjusted but there exist errors (ActionExecutionException, HibernateObjectRetrievalFailureException, ObjectNotFoundException) when clicking the generate diagram button for the landscape diagram (same query). Same holds for technical components.																																																						

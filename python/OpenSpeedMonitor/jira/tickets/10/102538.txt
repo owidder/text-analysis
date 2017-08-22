@@ -1,0 +1,12 @@
+Filter-Umstellung von "FR" zu "US" führt zu Absturz	"Link: https://www.iteraplan.de/BMW-RBA-GB/client/#/savedQueries/100556a7-24b7-4e77-8469-9fec32ea7e20
+
+Das gleiche „Loading diagram“ und leider keine Ergebnisse passiert, wenn man in der Abfrage „B1-FR landscape and TYPE“ den Filter für die Applikationen von „B1-FR“ auf „B2-US“ umstellt. Wenn auf andere Märkte umgestellt wird, geht’s. Scheint nur mit US ein Problem zu sein. Interessanterweise funktioniert der Filter, wenn man die erwünschte Konstellation (Prozesse, Produktgruppen, Apps von US) manuell nochmal zusammenklickt."		Fault	iteraplan Support	14/Nov/16 2:14 PM	05/Apr/17 1:31 PM														"14/Nov/16 2:52 PM;msr;*Analyse-Ergebnis:*
+Wieder ein Fehler, der nur im Internet Explorer auftaucht und nicht im Firefox. Workaround: Firefox benutzen.
+Interessanterweise selbe Fehlermeldung in der Konsole: 
+{code:java}
+SCRIPT5022: GraphObject.columnSpan is not in the range >= 1: 0
+{code}
+
+*Nächste Schritte:*
+Bug-Ticket für Internet Exporer anlegen und fixen.
+"	14/Nov/16 3:00 PM;msr;Lässt sich nicht mit Demo-Daten nachstellen	24/Nov/16 9:53 AM;msr;Der nächste Patch wird die technische Architektur des Landscape Diagramms grundsätzlich ändern. Deshalb teste ich nach dem Einspielen des Patches, ob dieses Problem noch weiterhin besteht.																																																				

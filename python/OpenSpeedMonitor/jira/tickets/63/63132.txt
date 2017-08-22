@@ -1,0 +1,5 @@
+EAM-Daten in iteraplan-Testinstanz einbinden	"- Testinstanz aufsetzen / Link in Wiki
+
+- Daten von HPA importieren
+
+- Datenmodell verstehen (siehe Word-Datei von Uli)"		Task	EAMV15	11/Nov/15 11:21 AM	23/Nov/15 3:47 PM																																																																				

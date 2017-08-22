@@ -1,0 +1,33 @@
+Link zum Script in der Jobliste funktioniert nicht immer	"Die Links zu den Scripten der Jobs sind relativ und führen zu /script/edit/[script-id].
+
+Zum Beispiel:
+
+https://iteraspeedmonitor.otto.wpt.iteratec.de/script/edit/180
+
+
+
+Manchmal funktioniert dies und die Links sind korrekt. Manchmal ist das Ziel der Links stattdessen:
+
+https://iteraspeedmonitor.otto.wpt.iteratec.de/*OpenSpeedMonitor*/script/edit/180
+
+
+
+Kann ein Fehler im createLink im OSM sein. Kann auch ein Problem beim Betrieb als Reverse Proxy hinterm Apachen sein."		Bug	OpenSpeedMonitor	15/Oct/15 5:23 PM	29/Oct/15 4:02 PM														"29/Oct/15 4:02 PM;hmt;Habe nun mehrere Kombinationen aus Login/Logout und Filtern versucht. Ich konnte das Verhalten nicht nach stellen.
+
+
+
+Getestete Plattformen:
+
+dev.openspeedmonitor.hh.iteratec.de
+
+iteraspeedmonitor.otto.wpt.iteratec.de
+
+Lokale Testinstanz"	"29/Oct/15 4:28 PM;hmt;Interessante Erkenntnis am Rande:
+
+Die Links zu den Jobs werden absolut auf ""HTTPS"" gesetzt, während die Links zu den Scripts relativ sind.
+
+
+
+In den vHosts für den iterspeedmonitor gibt es je für HTTP und HTTPS eine identische Konfiguration. Eine permanente Umleitung von HTTP auf HTTPS wäre ratsam.
+
+Ersparnis in der Wartung und Vermeidung einer Fehlerquelle. "																																																					

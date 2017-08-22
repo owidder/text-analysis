@@ -1,0 +1,13 @@
+Masterplan diagram doesn't show some element types on 3rd level	"When you create a masterplan diagram with the levels
+
+1st: InformationSystem
+2nd: Interface
+3rd: InformationSystem
+
+or
+
+1st: Information System
+2nd: Interface
+3rd: BusinessObject
+
+then the 3rd level elements are not displayed."		Bug	iteraplan PO	11/Aug/14 6:22 PM	13/Aug/14 9:29 AM					diagram	masterplan	visualization																																																													

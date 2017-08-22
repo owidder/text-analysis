@@ -1,0 +1,7 @@
+Warnung für page selection nicht bei ausgewählten MeasuredEvents anzeigen	"Wenn man zum Beispiel über die JobListe zum EventResultDashboard kommt, sind die MeasuredEvents, nicht aber die Pages ausgewählt.
+
+Der Graph wird zwar korrekt dargestellt, allerdings gibt es noch eine ""No page selected."" Warnung, sodass man den Graph nicht erneut anzeigen lassen kann, ohne vorher alle Seiten auszuwählen.
+
+
+
+Die Warnung, bzw. der ausgegraute ""Show"" Button sollten also nicht erscheinen, wenn MeasuredEvents ausgewählt sind."		Bug	OpenSpeedMonitor	19/Dec/16 10:45 AM	09/Jan/17 9:07 AM																																																																				

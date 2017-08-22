@@ -1,0 +1,7 @@
+Navigation als Progress Bar realisieren	"Um eine schöne User-Führung im Wizard zu ermöglichen sollen die Nav-Tabs im Wizard in eine Progress Bar umgewandelt werden.
+
+Weitere Anforderung: Schritte bei denen der Nutzer noch nicht war, können nicht angeklickt werden sondern man kann nur über den ""Next"" Button weitergeführt werden. Zurückspringen sollte möglich sein.
+
+Beispiel:
+
+!wizardNavigation.png|thumbnail!"	111352	Sub-task	OpenSpeedMonitor	08/Feb/17 3:16 PM	10/Feb/17 3:31 PM																																																																				

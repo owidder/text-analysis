@@ -1,0 +1,2 @@
+In der Jobliste die tags aller Jobs vor dem Iterieren holen	"-> Performance
+data.tags-Attribut in der <tr> noch erforderlich?"		Improvement	OpenSpeedMonitor	18/Mar/14 11:44 AM	18/Mar/14 4:01 PM														18/Mar/14 2:50 PM;drieger;Das data-tags speichert die Tags eines Jobs als kommaseparierte Liste und wird zum Filtern verwendet.																																																						

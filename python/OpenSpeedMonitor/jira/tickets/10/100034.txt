@@ -1,0 +1,57 @@
+Multiple history changesets cause exception	"*Summary:*
+
+Multiple history changesets cause exception
+
+
+
+*Reproduce:*
+
+* Edit an Information System (e.g. DSS)
+
+* Add multiple relations with attributes on the relation (in my example 9) OR add one business mapping with an attribute (alternative reproducer - please fix also)
+
+* Click on the Single Element View in the New Client (of DSS)
+
+
+
+*Actual:*
+
+Excpeption is thrown:
+
+{code:javascript}
+
+angular.js:13424 TypeError: An exception occurred: Cannot read property 'length' of undefined
+
+    at http://localhost:8080/branches/app/bbtSingle/singleBBView-controller.js:74:98
+
+    at Array.forEach (native)
+
+    at http://localhost:8080/branches/app/bbtSingle/singleBBView-controller.js:72:72
+
+    at Array.forEach (native)
+
+    at http://localhost:8080/branches/app/bbtSingle/singleBBView-controller.js:54:75
+
+    at Array.forEach (native)
+
+    at http://localhost:8080/branches/app/bbtSingle/singleBBView-controller.js:45:57
+
+    at Array.forEach (native)
+
+    at http://localhost:8080/branches/app/bbtSingle/singleBBView-controller.js:43:48
+
+    at processQueue (http://localhost:8080/branches/app/bower_components/angular/angular.js:15757:28)(anonymous function) @ angular.js:13424$delegate.error @ logger.js:70(anonymous function) @ angular.js:10137(anonymous function) @ app.js:224processQueue @ angular.js:15765(anonymous function) @ angular.js:15773$eval @ angular.js:17025$digest @ angular.js:16841$apply @ angular.js:17133done @ angular.js:11454completeRequest @ angular.js:11652requestLoaded @ angular.js:11593
+
+{code}
+
+
+
+*Expected:*
+
+No exception is thrown in the console
+
+"		Bug	iteraplan PO	21/Oct/16 1:25 PM	24/Oct/16 3:57 PM														"21/Oct/16 1:37 PM;msr;*Another bug or it is related to this bug:*
+
+If you add a Business Mapping (or just many changes), the column ""Changes"" is not filled for History activated/deactivated anymore and the timestamps are not formatted.
+
+See second screenshot. !Change_column_not_filled.png|thumbnail!"	21/Oct/16 3:31 PM;roia;Issue is related to backend changes - previously, if there were no changes in the relation attributes we got empty arrays in addedValue, removedValue properties. Now we just don't have these properties in the JSON.																																																					

@@ -1,0 +1,112 @@
+permission problem	"A customer has problems to use a function in our iteraplan application.  The screenshot means it is a permission problem.  I have no idea, the Kind of permission I have to set.
+
+
+
+I attached the iteraplan log.
+
+Could you find out the reason for it.
+
+
+
+Regards, "		Fault	iteraplan Support	20/Jan/17 11:11 AM	09/Feb/17 7:37 AM														"20/Jan/17 11:11 AM;matthias.roth@dekra.com;
+
+[^iteraplan-5.2.0.log.2017-01-10] _(51 kB)_
+
+!screenshot.jpg|thumbnail!"	"23/Jan/17 8:34 AM;cst;Dear Mr. Roth,
+
+thank you for your inquiry.
+
+The iteraplan error log can only be executed by the ""iteraplan_supervisor"". 
+When a user has the role ""iteraplan_supervisor"", then the error log´s will be created. 
+
+You can add users into the groups with ""iturm"". When you use LDAP for your user managment, please reply on this ticket. 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"31/Jan/17 8:22 AM;matthias.roth@dekra.com;Hello Stephan,
+
+sorry, I was out of office last week.
+
+The users and groups are managed in a remote ldap server.
+Till now, we have only configured 3 groups for the customer who has the problem.
+
+cn=itera_Admin
+cn=itera_EA_Technology
+cn=itera_Reader
+
+Should we include the user to the ""cn=iteraplan_Supervisor"" group?
+
+Regards Matthias
+
+"	"31/Jan/17 8:42 AM;cst;Good Morning,
+
+thank you for your reply. 
+
+To check the problem, it is enough when one Group has the ""iteraplan_Supervisor"" role.
+You can do following steps to connect the roles in the database.
+
+# Open the table ""ROLE"" in the database, here see you all created roles.
+# Note the ID from one of the ""cn"" above (e.g. 5) and the id of the iteraplan_Supervisor (e.g. 2)
+# Open the table ""ROLE_ROLE"" and link both ID´s together. First comes the id of the ""cn"" and the second ID is the iteraplan_Supervisor
+e.g 5 - 2
+
+After that steps, the group has the ""iteraplan_Supervisor"" rights and you can create the error logs. 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support 
+"	"02/Feb/17 1:10 PM;matthias.roth@dekra.com;Hello,
+
+sorry, I was first checking the database settings at our test environment and yesterday in the evening, I configured our production system.
+Now, I have a problem peport. 
+
+Greetings 
+Matthias Roth
+
+[^ProblemReport_2017-02-02_110952.zip] _(10 kB)_"	"06/Feb/17 8:30 AM;cst;Good Morning, 
+
+thank you for your reply.
+
+I checked the log files and your environment is using ""openjdk"". 
+We don't support ""openjdk"" with iteraplan, because it can happen that random side effects will be appear.
+
+You find this part in our online ""Prerequisites"" for version 5.2. 
+
+https://www.iteraplan.de/doc/display/iteraplan52/Installation+Prerequisites
+
+Greetings,
+
+Christoph Stangl - iteraplan Support 
+
+"	"06/Feb/17 2:27 PM;matthias.roth@dekra.com;Hello Christoph,
+
+thank you. We will try it with Oracle Java 1.8.0. But I have to wait for a downtime tomorrow morning. I've checked the requirements for Version 5.3. It is the same there. Is there a future plan to Support openjdk too. We would prefer it, because we use the whole RedHat stack.
+
+I will update the ticket tomorrow.
+
+Regards Matthias
+"	"07/Feb/17 8:34 AM;matthias.roth@dekra.com;Good Morning,
+
+now we have a stacktrace with Oracle jdk 1.8.
+
+Regards Matthias
+
+[^ProblemReport_2017-02-07_082411.zip] _(9 kB)_"	"07/Feb/17 8:40 AM;cst;Good Morning,
+
+thank you for your reply. 
+
+The reason for the problem is described in our ""Knowledge Base"".
+
+https://www.iteraplan.de/doc/display/IKB/Saving+a+diagram+in+the+Classic+Client+not+possible 
+
+Greetings,
+
+Chrsitoph Stangl - iteraplan Support "	"08/Feb/17 5:15 PM;matthias.roth@dekra.com;Hello,
+
+thank you. 
+My colleague testet it and it works now.
+
+We can close the ticket.
+
+Regards, 
+Matthias Roth"																																													

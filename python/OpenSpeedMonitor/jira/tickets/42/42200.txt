@@ -1,0 +1,11 @@
+Nach Deployments gehen job_variables verloren	"Bei parametrisierten Mess-Jobs werden die Parameter-Werte für den Job in der Tabelle job_variables gespeichert. In GORM Logik bedeutet dies, der Job hat ein Attribut {code}Map<String, String> variables{code}.
+
+Bei einem Deployment kommt es gelegentlich vor, dass einzelne Jobs ihre Parameter-Belegung verlieren. Hier steht dann die id des Jobs in allen Parameter-Inputs in der Job/edit-GUI.
+
+
+
+In der DB steht die ID des Jobs dann außer in job_variables.variables (hier gehört sie rein) auch noch in job_variables.variables_elt (hier gehört eigentlich der Wert der belegten Variable rein).
+
+
+
+Dies geschieht nicht bei jedem Deployment und wenn, dann nur für einzelne Jobs. Irgend etwas scheint beim Herunterfahren oder Starten der Anwendung zu dieser Inkonsistenz führen. Dies wird keine GUI-Aktion sein, da es gerade bei einem OTTO-Deployment aufgetreten ist und heute Samstag ist. Ich gehe davon aus, dass niemand gerade die GUI auf hatte. "		Bug	OpenSpeedMonitor	30/May/15 5:53 PM	18/Jan/17 4:16 PM																																																																				

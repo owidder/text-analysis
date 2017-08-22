@@ -1,0 +1,3 @@
+Full text search results do not show IS release changes for interfaces	"After changing the release information of an Information System this change does not appear in the interface results of a full text search. The results of for Information Systems are correct (s. attached scrennshot).
+
+This effect can be reproduced and only disappears with the creation of a new full text search index."		Bug	iteraplan PO	24/Jun/14 5:26 PM	04/Jul/14 4:04 PM														04/Jul/14 4:04 PM;gph;Solution works. Code looks correct.																																																						

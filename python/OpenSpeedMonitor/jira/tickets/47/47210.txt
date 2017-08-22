@@ -1,0 +1,17 @@
+"Switch" and "Remove" buttons have wrong place on Information System page	"IPNINE-229
+
+Steps to reproduce:
+1. Go to Recent view page-> Click on Information System tile 
+2. Click on ""Add column"" button-> Choose any column
+3. Navigate to added column
+Actual result: ""Switcht"" and ""Remove"" buttons are appear in the center of the page http://prntscr.com/5ayxrn
+Expected result: ""Switcht"" and ""Remove"" buttons should appear under of the column title which was added
+Comments: I can't sort and remove columns which was added "		Bug	iteraplan PO	28/Nov/14 3:09 PM	22/Dec/14 10:27 AM					FireFox									19/Dec/14 12:26 PM;dasm;Wasn't fixed	"19/Dec/14 12:54 PM;dasm;Steps to reproduce:
+
+1. Go to Recent view page-> Click on Information System tile 
+2. Click on ""Add column"" button-> Choose  ""Last Modification User"" and ""State of health"" columns
+3. Navigate to added columns
+
+Actual result: ""Switcht"" and ""Remove"" buttons appear with the different lines
+(look at the attached screenshot ""columns"")
+Expected result: ""Switcht"" and ""Remove"" buttons should appear with the same  lines"	22/Dec/14 10:27 AM;dasm;verified.																																																				

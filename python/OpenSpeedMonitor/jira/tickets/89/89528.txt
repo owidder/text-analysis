@@ -1,0 +1,33 @@
+New Client: Add poll transformation status (Graphics Reactor)	"Add polling of transformation status in the new client.
+
+Architecture details by [~sfe] or [~ach]"		Bug	iteraplan PO	06/Jul/16 11:45 AM	25/Oct/16 4:47 PM														"13/Jul/16 4:23 PM;mwe;Maybe use Websockets:
+
+http://stackoverflow.com/questions/1253683/what-browsers-support-html5-websocket-api
+
+https://tomcat.apache.org/tomcat-7.0-doc/web-socket-howto.html
+
+https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API"	18/Jul/16 2:57 PM;mwe;[~sfe] said that the functionality of the classic import page is not available on the graphics reactor page.	"27/Jul/16 4:30 PM;mwe;According to  [~sfe] the user had the following problem:
+
+# She executed a script that lasted very long.
+
+# The reactor got into an undefined status.
+
+# The user didn't recognize that.
+
+
+
+With a websocket the server can send immediate feedback about the reactor status to the user."	"25/Oct/16 2:16 PM;aan;Respond with 200 
+
+{code}
+
+{running: true/false,
+
+message: ""responseMessage""}
+
+{code}
+
+If reactor is running and user and name of running script.
+
+If ready and the last script was started by the user the result is returned
+
+Otherwise only running = false"																																																			

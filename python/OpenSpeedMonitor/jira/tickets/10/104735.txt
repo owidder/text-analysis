@@ -1,0 +1,23 @@
+Export of List view	"- go to List view (e.g. Information Systems)
+
+- add a rich text column (e.g. Description) with multiline content (e.g. bullets)
+
+- add a group column (e.g. Business Mappings)
+
+
+
+- export the table as Excel
+
+
+
+ Bug:
+
+- lines of discription are in IS-Name column
+
+- business mapping group is not exportet at all
+
+
+
+!screenshot-1.png|thumbnail!
+
+!screenshot-2.png|thumbnail!"		Bug	iteraplan Thunderduck	05/Dec/16 2:48 PM	14/Dec/16 2:10 PM																																																																				

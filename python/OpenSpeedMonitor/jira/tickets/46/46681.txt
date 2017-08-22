@@ -1,0 +1,88 @@
+Jenkins Job "test performance" fails	"The jenkins job ""test performance"" fails since 09.06.2014. The last successful run was on Friday, 06.06.2014. Through an analysis the following facts has been detect:
+
+* The log output from soapui shows, that during the whole test an ""internal server"" error occur 8 times. {noformat}05:43:12,001 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.0 500 Internal Server Error{noformat}
+* This internal server error is sent by iteraplan everytime if the Excelsheet ""tools/performanceTest/trunk-connect-113.xlsx"" is loaded for execution and always in teststep {noformat}
+Sending request: POST http://sql-iteraplan.iteratec.de:8443/iteraplan-trunk/show/import?execution=e1s5&_eventId=writeModel HTTP/1.1
+{noformat}
+
+
+* A comparison between the errors in the soapui log and the tomcat log had shown, that around same time the error in the soapui log appears a NPE has been thrown. 
+
+The stacktrace of the NPE looks like this
+
+{noformat}
+Jun 12, 2014 5:43:16 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet springmvc threw exception
+java.lang.NullPointerException
+	at de.iteratec.iteraplan.presentation.flow.IteraplanBusinessExceptionHandler.handle(IteraplanBusinessExceptionHandler.java:107)
+	at org.springframework.webflow.engine.FlowExecutionExceptionHandlerSet.handleException(FlowExecutionExceptionHandlerSet.java:113)
+	at org.springframework.webflow.engine.Flow.handleException(Flow.java:608)
+	at org.springframework.webflow.engine.impl.FlowExecutionImpl.tryFlowHandlers(FlowExecutionImpl.java:645)
+	at org.springframework.webflow.engine.impl.FlowExecutionImpl.handleException(FlowExecutionImpl.java:601)
+	at org.springframework.webflow.engine.impl.FlowExecutionImpl.resume(FlowExecutionImpl.java:260)
+	at org.springframework.webflow.executor.FlowExecutorImpl.resumeExecution(FlowExecutorImpl.java:169)
+	at org.springframework.webflow.mvc.servlet.FlowHandlerAdapter.handle(FlowHandlerAdapter.java:183)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:953)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:829)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at de.iteratec.iteraplan.presentation.ContextFilter.doFilter(ContextFilter.java:112)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:118)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:154)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:199)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:563)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at com.googlecode.psiprobe.Tomcat60AgentValve.invoke(Tomcat60AgentValve.java:30)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:722)
+
+{noformat}
+
+The soapui log and the tomcat log from 12.06.2014 are attached at this ticket. "		Bug	iteraplan PO	13/Jun/14 8:34 AM	07/Jul/14 1:53 PM					jenkins	load	performance	soapui	test					"13/Jun/14 8:38 AM;dop;I tried to reproduce the error while I was executing the test steps locally on my pc:
+
+1. Stop Tomcat
+2. Clear database and execute the script ""trunk-113-loadtestdump.sql"" which could be found in tools/performanceTest
+3. Start Tomcat
+4. Perform all steps for an Excel Import and import the file ""trunk-connect-113.xlsx""
+
+But the error did not occur."	13/Jun/14 8:46 AM;dop;added file attachments	"07/Jul/14 9:12 AM;sfe;Deploying the trunk version for performance tests with ehcache deactivated seems to have fixed the issue.
+Multiple imports of sql dumps between import runs, without server-restart or cache-clearing had lead to exceptions.
+
+Jenkins job ""deploy_performance"" was adjusted to use the new customization module ""nocache""."																																																				

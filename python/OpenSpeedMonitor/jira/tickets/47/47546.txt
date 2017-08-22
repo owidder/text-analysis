@@ -1,0 +1,16 @@
+Too big diagrams aren't displayed	"Summary: too big diagrams aren't displayed completely, coloring options don't work
+
+Steps to reproduce:
+1. Go to LSD
+2. Use TC as content type, use ISInterfaces as x axis and ISReleases as y axis
+
+(http://localhost:8080/ip9/app/#/lsd?E21=C8&E22=F10&E23=A9&E25=false&F13=5&F16=Landscape%20Diagram%20-%20Information%20Systems%20by%20Technical%20Components%20and%20Infrastructure%20Elements&F1=F5&E24=B9)
+
+Actual: The diagrams aren't displayed, inner elements aren't colored
+Expected: The diagram should be displayed completely, inner elements should be colored"		Bug	iteraplan PO	31/Mar/15 11:46 AM	11/Jun/15 1:27 PM														"15/Apr/15 11:19 AM;wfr;Recommendation: defer
+
+big diagrams are a hard problem, no easy fix expected
+
+avoidable if the user applies strong filters
+
+"	01/Jun/15 11:02 AM;sfe;Please check whether this can be reproduced right now. Doesn't seem to happen on public demo anymore.	11/Jun/15 1:17 PM;isc;It seems that the problem no longer exists. I could not reproduce the error.																																																				

@@ -1,0 +1,5 @@
+REST-API: Remove ids of attribute-ranges (Server)	"*Summary:*
+
+REST-API ""/api/attributes"":
+
+* Remove the ids of number ranges for numeric attributes"		Improvement	iteraplan Speedbird	12/Jan/17 4:47 PM	15/Feb/17 10:55 AM																																																																				

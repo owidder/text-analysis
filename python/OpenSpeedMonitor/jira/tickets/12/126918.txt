@@ -1,0 +1,9 @@
+Merge "lite-restrictions" to branch of Release 6.0	"Merge ""lite-restrictions"" to branch of Release 6.0: https://svn.iteratec.de/repos/projects/iteraplan/branches/RB_6_0_0 (ticket IPTT-503)
+
+
+
+{color:red}UPDATE: {color} Link to new Client Release Branch 6.0: https://svn.iteratec.de/repos/projects/iteraplan-9/branches/RB_6_0_0
+
+
+
+Please test if the Jenkins Job ""Single Bundle Build"" correctly builds a bundle"		Task	iteraplan Speedbird	12/Jul/17 9:48 AM	20/Jul/17 9:44 AM														14/Jul/17 5:05 PM;mash;[~msr], I need link to front end release branch also to merge error message about limit of 10 attributes.	17/Jul/17 9:00 AM;msr;[~mash]: New Client Release Branch: https://svn.iteratec.de/repos/projects/iteraplan-9/branches/RB_6_0_0	19/Jul/17 1:57 PM;dmkh;[~msr], who is responsible for checking(reviewing) this ticket?																																																				

@@ -1,0 +1,5 @@
+Als User möchte ich im Prozess sehen welche URLs der Spider gefunden hat.	"Nach dem Joblauf sollen die URLs angezeigt werden, die der Spider gefunden hat.
+
+
+
+Um als Nutzer sicherzustellen, ob der Spider korrekt läuft."		Story	secureCodeBox	14/Aug/15 3:11 PM		secureBoxEngine	secureBoxZap			iteratec	OTTO																																																														

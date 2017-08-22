@@ -1,0 +1,9 @@
+Remove "Working copy" functionality	"* Update Entity Component Models
+* Update MassUpdateService
+* Update ExcelImportService
+* Remove saveOrUptedeEntity() and other ralated Methods
+* Write JUnit and Integration tests for the new functionality"		Task	iteraplan PO	01/May/11 8:15 PM	08/Jun/11 11:19 AM					hibernate	workingcopy								11/May/11 12:38 PM;agu;I have already updated all services and removed saveOrUptedeEntity() and other related methods. Also removed business version handling in Frontend services and flows.	13/May/11 4:08 PM;agu;Removed getBusinessVersion() methods and related functionality	13/May/11 4:10 PM;agu;Because of the new functionality, i had to remove the subscriptions functionality in FrontendService classes. I suggest, that we improve subscriptions by using Spring AOP. More about it in ITERAPLAN-31	"08/Jun/11 11:19 AM;sfe;I created new issues for things I noticed while testing and may have to do with this issue:
+
+ITERAPLAN-87
+ITERAPLAN-89
+ITERAPLAN-90"																																																			

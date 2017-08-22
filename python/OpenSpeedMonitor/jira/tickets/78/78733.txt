@@ -1,0 +1,17 @@
+[REST-API] Methode resultUrls liefert inkorrekte URL's	"Beispiel:
+
+http://demo.openspeedmonitor.org/rest/job/97/resultUrls/20160325T000000Z/20160325T230000Z?pretty=true
+
+
+
+Die erste URL für das Ergebnis-Dashboard stimmt noch: results-chart-url
+
+Die beiden anderen funktionieren nicht mehr"		Bug	OpenSpeedMonitor	30/Mar/16 11:24 AM	05/Apr/16 11:39 AM														"05/Apr/16 11:39 AM;msk;The aggrGroupAndInterval expected measured_event but the resultUrls method provided measuredEvent
+
+
+
+We need to provide at least one CSI Type - I set doc complete as standard
+
+
+
+eventResult was renamed to tabularResultPresentation"																																																						

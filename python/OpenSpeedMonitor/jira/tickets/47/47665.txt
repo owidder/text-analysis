@@ -1,0 +1,1 @@
+Fix unittest for lsdItemDecorator class		47639	Sub-task	iteraplan PO	22/Apr/15 4:18 PM	24/Apr/15 11:10 AM																																																																				

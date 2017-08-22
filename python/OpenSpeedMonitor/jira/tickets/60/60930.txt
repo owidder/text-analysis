@@ -1,0 +1,27 @@
+Tools zur automatischen DB-Migration evaluieren	"Mit dem ersten automatisch erzeugten Release auf github geben wir SQL-Update-Skripte raus für die Aktualisierung der DB von alten Versionen (bzw. dem vorherigen minor release).
+
+
+
+Komfortabler wäre natürlich ein automatisches, Tool-basiertes Update. Hierfür sollten wir uns die folgenden Tools/Grails-Plugins mal ansehen:
+
+
+
+http://grails-plugins.github.io/grails-database-migration/docs/manual/index.html
+
+http://flywaydb.org/ -> https://grails.org/plugin/gflyway2
+
+http://www.liquibase.org/"		Task	OpenSpeedMonitor	21/Oct/15 2:48 PM	20/Nov/15 10:13 AM														"16/Nov/15 5:08 PM;nku;Links zu Tools, die on-the-fly Datenbank-Anpassungen machen (von Uwe):
+
+
+
+Hier sind Beispiele für eine Lösungen, die für on-the-fly Schemaänderungen eingesetzt werden können.
+
+* openark: http://openarkkit.googlecode.com/svn/trunk/openarkkit/doc/html/oak-online-alter-table.html
+
+* SoundCloud Large Hadron Migrator: https://github.com/soundcloud/lhm
+
+* Facebook Online Schema Change for MySQL: https://www.facebook.com/note.php?note_id=430801045932
+
+* TableMigrator: https://github.com/freels/table_migrator
+
+* Percona Toolkit: https://www.percona.com/doc/percona-toolkit/2.1/pt-online-schema-change.html"																																																						

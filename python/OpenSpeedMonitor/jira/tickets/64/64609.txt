@@ -1,0 +1,23 @@
+DataService-Schnittstelle definieren	"Ergebnis:
+
+- Ziel-Datenformat (Klassen und Attribute => Sensoren, Verbindungen, Informationssysteme, Rechenzentrums-Infos)
+
+- Schnittstellen-Methoden
+
+  - GIS-Adapter
+
+  - iteraplan-Adapter
+
+  - DataService
+
+- Quellformat (was kommt von der Schnittstelle)
+
+
+
+Meeting mit Frank, Philipp, Daniel
+
+
+
+Ziel der Aufgabe:
+
+- Inhalte klären und Wiki-Doku"		Task	EAMV15	23/Nov/15 2:57 PM	25/Nov/15 2:02 PM														25/Nov/15 2:02 PM;pkh;Meeting wurde abgehalten und Dokumentation im Wiki unter technischer Architektur abgelegt.																																																						

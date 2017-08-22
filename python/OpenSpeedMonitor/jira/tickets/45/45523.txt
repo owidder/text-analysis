@@ -1,0 +1,13 @@
+Create user documentation for new Excel Ex-/Import	"Create user documentation for new Excel Ex-/Import
+* based on existing docs
+* How to download template or full data
+* explain new Excel template format
+* explain import options:
+  ** full import into a database which contains all attributes but no real data
+  ** full import into an empty database
+  ** incremental import, i.e. import of data that is either new or updated
+     *** explain that only Excel files which are consistent can be imported
+     *** explain what ""consistent"" means.
+
+See: http://www.iteraplan.de/wiki/display/iteraplan/MassData+-+Import+and+Export
+"		Task	iteraplan PO	03/May/12 5:38 PM	21/May/12 1:32 PM					excel	export	import																																																													

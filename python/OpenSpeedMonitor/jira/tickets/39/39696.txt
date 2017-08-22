@@ -1,0 +1,3 @@
+Annotations zu dicht an Beschriftung X-Achse	"Die Leiste der Annotations müsste etwas tiefer. Momentan überlagert sie fast die Datums-Angaben an der X-Achse.
+
+Siehe http://dev.openspeedmonitor.wpt.iteratec.de/csiDashboard/showDefault"		Bug	OpenSpeedMonitor	05/May/15 12:06 AM	05/May/15 10:08 AM																																																																				

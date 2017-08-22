@@ -1,0 +1,1 @@
+Remove element itself from selfrelation	The element itself has to be removed from the possibilities in selfrelations		Improvement	iteraplan Thunderduck	20/Jan/17 3:01 PM	23/Jan/17 3:16 PM																																																																				

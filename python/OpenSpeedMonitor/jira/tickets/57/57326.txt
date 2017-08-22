@@ -1,0 +1,23 @@
+Reduce amounts of drawn elements	"Idea:
+
+* During table model build, count and remember the number of elements which would be displayed in a partial diagram, depending on the diagram size. Example:
+
+|| |1|2|3||
+
+||I|x| | ||
+
+||II| |x|xx||
+
+||III| |x|x||
+
+=> numbers = \[1,1,4\]
+
+_Meaning:_
+
+** If only first row and column are displayed (size 1), one content element is displayed.
+
+** If only first two rows and columns are displayed (size 2), one additional content element is displayed, for a total of 2.
+
+** If the three first rows and columns are displayed (size 3), 4 additional content elements are displayed, for a total of 6.
+
+* Add a ""limit"" function to the table model, which removes all rows and columns above the desired size. The desired size can be determined by comparing the content element limit to the number of displayed elements as above."	50814	Sub-task	iteraplan PO	16/Sep/15 1:49 PM	18/Sep/15 2:40 PM																																																																				

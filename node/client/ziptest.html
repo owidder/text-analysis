@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.css"
+          media="screen,projection"/>
+
+    <style>
+
+        circle.zoom {
+            stroke-width: 1;
+            stroke: white;
+            opacity: .5;
+        }
+
+        div.container {
+            width:100%;
+            margin: 0;
+        }
+
+        .viewfinder {
+            stroke: black;
+            stroke-width: 1;
+            fill: none;
+            opacity: .3;
+        }
+
+        div.slider-input, div.statistics {
+            font-size: .5em;
+        }
+
+        line.viewfinder {
+            stroke: black;
+            stroke-width: 1;
+            opacity: .2;
+        }
+
+        line.guideline {
+            stroke: black;
+            stroke-width: 2;
+            opacity: .2;
+        }
+
+        g.move rect {
+            fill: red;
+        }
+
+        g.no-move rect {
+            fill: grey;
+        }
+
+        line.link.zoom {
+            stroke: black;
+            opacity: .3;
+            stroke-width: 1px;
+        }
+
+        div.search-results, div.words {
+            line-height: 1.2em;
+            font-size: .4em;
+        }
+
+        a.filename {
+            color: black;
+            font-weight: bolder;
+        }
+
+        span.legend {
+            display: flex;
+            font-size: .3em;
+            line-height: 1em;
+            height: 1em;
+            margin: auto;
+        }
+
+        div.search imput {
+            font-size: small;
+            margin: 0;
+            height: 1rem;
+        }
+
+        div.input-field, div.input-field input {
+            padding: 0;
+            height: 1em;
+            margin:0;
+        }
+
+        span.search {
+            font-size: .5em;
+        }
+
+        span.link {
+            font-size: .6em;
+        }
+
+        span.link:hover, span.search:hover {
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        div.odd {
+            background-color: lightgrey;
+        }
+
+        div.search-entry {
+            border-bottom: solid 1px;
+            border-top: solid 1px;
+        }
+
+        line.svgborder {
+            stroke: grey;
+            stroke-width: 1px;
+        }
+
+        #words-elements {
+            height: 4em;
+            background-color: lightgrey;
+            border-width: 1px;
+        }
+
+        span.total {
+            font-size: 2em;
+            font-weight: bolder;
+        }
+
+        span.all {
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+<script src="bower_components/bottlejs/dist/bottle.js"></script>
+<script>var bottle = new Bottle();</script>
+<script src="bower_components/lodash/dist/lodash.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/js-url/url.js"></script>
+<script src="bower_components/handlebars/handlebars.js"></script>
+<script src="bower_components/pako/dist/pako.js"></script>
+
+<script src="js/util/simplePromise.js"></script>
+<script src="js/util/SimpleEvent.js"></script>
+<script src="js/util/util.js"></script>
+<script src="js/util/svgUtil.js"></script>
+<script src="js/util/github.js"></script>
+<script src="js/legend.js"></script>
+<script src="js/BirdsviewRenderer.js"></script>
+<script src="js/NodesAndLinks.js"></script>
+<script src="js/Viewfinder.js"></script>
+<script src="js/ZoomArea.js"></script>
+<script src="js/proxy.js"></script>
+<script src="js/handlers.js"></script>
+<script src="js/words.js"></script>
+<script src="js/Stream.js"></script>
+
+<script src="bower_components/d3/d3.min.js"></script>
+<script src="js/util/stuff.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/spinner.css">
+<link rel="stylesheet" type="text/css" href=" css/material-icons.css"/>
+
+<script>
+
+    $.ajax({
+        type: 'GET',
+        url: '/api/testzip',
+        success: function (data) {
+            console.log(data);
+        }
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+Permission Handling with list of Building Blocks	"*Actual status as of 14th July:*
+
+*Template already prepared, but functionality in controller needs to be implemented*
+
+
+
+*Summary:*
+
+Include permission handling in the Portfolio Diagram
+
+
+
+*As-Is:*
+
+* No permission handling, i.e. 
+
+** the Portfolio Diagram always starts with Information Systems, even if the user has no permission for this Building Block Type
+
+** any Building Block Type can be selected, even if the user has no permission for this Building Block Type  
+
+
+
+*To-Be:*
+
+* The Portfolio Diagram starts with the first Building Block Type from a list of all Building Block Types, for which the user has the permission
+
+* Building Block Types without a permission do not appear in the element-type selection in the ToolArea 
+
+
+
+*Implementation Details:*
+
+* Please check the Masterplan Diagram implemenation.
+
+
+
+*Ordered list of Building Block Types: (same as Masterplan)*
+
+""InformationSystem"",
+
+ ""Project"",
+
+""TechnicalComponent"",
+
+""InfrastructureElement"",
+
+""ITService"",
+
+""InformationSystemInterface"",
+
+""BusinessObject"",
+
+""BusinessProcess"",
+
+""BusinessUnit"",
+
+""Product"",
+
+""BusinessFunction"",
+
+""BusinessDomain"",
+
+""InformationSystemDomain"",
+
+ ""ArchitecturalDomain""
+
+
+
+*Unit Test:*
+
+* Not in controllers
+
+* Only for new functions in the pipeline"		New Feature	iteraplan Speedbird	13/Jul/16 4:59 PM	18/Aug/16 5:34 PM														"18/Aug/16 5:23 PM;ants;Moved common code for list of building block types to {{Constants.js}}.
+
+Refactored {{mpdConfiguration.js}} in accordance with changes in {{Constants.js}}.
+
+"	18/Aug/16 5:33 PM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-12																																																					

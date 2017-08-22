@@ -1,0 +1,39 @@
+Edit of user defined ranges throws excpetion	"*Summary:*
+
+Edit of user defined ranges throws excpetion
+
+
+
+*Reproduce:*
+
+* Edit a user-defined range and press ""enter""
+
+
+
+*Actual:*
+
+* The following exception is thrown:
+
+
+
+{code:java}
+
+ipPropertyEditor-component.js:535 Uncaught TypeError: Cannot read property 'value' of null
+
+    at ipPropertyEditorController.apply (ipPropertyEditor-component.js:535)
+
+    at HTMLElement.<anonymous> (ipPropertyEditor-component.js:467)
+
+    at defaultHandlerWrapper (angular.js:3417)
+
+    at HTMLElement.eventHandler (angular.js:3405)
+
+{code}
+
+
+
+*Expected:*
+
+* The user-defined range is edited
+
+"		Bug	iteraplan Speedbird	20/Apr/17 4:34 PM	27/Apr/17 2:08 PM																																																																				

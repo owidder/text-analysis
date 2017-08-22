@@ -1,0 +1,4 @@
+Die Rest-Dokumentation auf der WPT-Einstiegsseite aktualisieren	 http://wpt.otto.iteratec.de/restfull-api.html ist veraltet.		Bug	OpenSpeedMonitor	31/Oct/13 12:04 AM	31/Oct/13 11:21 AM														"31/Oct/13 10:40 AM;mzeimer;Die Doku wurde umgezogen und sollte nach Fertigstellung des roll-outs verlegt werden. Die Doku befindet sich unter:
+https://iteraspeedmonitor.wpt.otto.iteratec.de/rest/man
+
+Der Verweis in der Index-Seite muss angepasst werden."																																																						

@@ -1,0 +1,5 @@
+Remove JPEG and PNG-Full Download entries	"Remove JPEG and PNG-Full Download entries,
+
+but do not remove the code in the headerDownloadService. Just write a comment in the headerDownloadService, that these parts are not used right now."		Improvement	iteraplan Speedbird	22/Jul/16 8:18 AM	01/Aug/16 9:59 AM														"01/Aug/16 10:00 AM;roia;Review done. no comments.
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-92"																																																						

@@ -1,0 +1,17 @@
+Graphics Reactor (Testlink)		124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:19 PM	20/Jun/17 9:12 AM														"15/Jun/17 9:35 PM;naba;Test cases: Graphics Reactor ip-21, 59, 60, 61
+
+ For smoke test please use
+
+ [https://doc.iteraplan.de/display/iteraplan60/Graphics+Reactor] (examples and tips)
+
+
+
+Please be creative and progressive.
+
+
+
+*Note*:
+
+ - Work with documentation is still in progress
+
+ - Due to some technical issues some test cases are still out of date."	20/Jun/17 9:12 AM;aan;Did the tests, they worked besides a error message that was not shown. This is hopefully fixed in ITERAPLAN-5419.																																																					

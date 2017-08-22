@@ -1,0 +1,9 @@
+resources-plugin durch asset-pipeline-plugin ersetzen	"asset-pipeline: http://grails.org/plugin/asset-pipeline
+
+doku: http://bertramdev.github.io/asset-pipeline/guide/
+
+
+
+Scheint klarer strukturiert und einheitlicher zu sein.
+
+UND: Verspricht on-the-fly-Kompilierung von less->css"		Improvement	OpenSpeedMonitor	27/Jun/14 4:53 PM	30/Nov/15 12:50 PM														30/Nov/15 12:50 PM;nku;Mit dem Update auf die 2.5 bereits umgesetzt.																																																						

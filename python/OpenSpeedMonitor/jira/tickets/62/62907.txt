@@ -1,0 +1,7 @@
+Create new URL test cases in IFD	"please edit the e2e-test tracability excel sheet located in e2etest subfolder after implementing the tests
+
+
+
+
+
+in this ticket, you should edit existing files of IFD in a way that URL setter and getter are tested. you can add a test case in every file where the url is changed. you should at least make the page refresh and check if the diagram is the same as before."	62900	Sub-task	iteraplan PO	09/Nov/15 8:43 AM	17/Nov/15 7:55 AM					IFD	Test																																																														

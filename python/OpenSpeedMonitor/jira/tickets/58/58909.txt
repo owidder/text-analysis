@@ -1,0 +1,23 @@
+filter for attribute productive period don´t work	"*Reproduce*
+
+select LSD
+
+choose content_menu on content -> show with date properties ->productive period
+
+
+
+*Expect*
+
+Date picker pops up at the right upper corner 
+
+
+
+*Actual*
+
+nothing happens
+
+
+
+it doesn´t matter which diagram or which menu you choose (toolArea or Context_menu). productive period is defect.
+
+maybe a problem with duration"		Bug	iteraplan PO	02/Oct/15 1:08 PM	15/Oct/15 12:49 PM																																																																				

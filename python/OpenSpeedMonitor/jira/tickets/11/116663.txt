@@ -1,0 +1,44 @@
+Fehler 'Ein allgemeiner technischer Fehler ist aufgetreten' beim Versuch, eine neue fachliche Funktion abzuspeichern.	"Hallo,
+
+
+
+bei dem Versuch, eine neue fachliche Funktion abzuspeichern, bekommen wir immer den Fehler 'Ein allgemeiner technischer Fehler ist aufgetreten'.
+
+
+
+Ich habe einen ProblemReport attached.
+
+
+
+Mit freundlichen Grüßen
+
+Dominik Wagner"		Fault	iteraplan Support	27/Mar/17 2:08 PM	28/Mar/17 3:39 PM														"27/Mar/17 2:08 PM;dominik.wagner@axa.de;
+
+[^ProblemReport_2017-03-27_134943.zip] _(16 kB)_"	"28/Mar/17 1:13 PM;cst;Hallo Herr Wagner,
+
+würden Sie bitte folgenden Befehl in Ihrer Datenbank ausführen, das sollte das Problem beheben.
+
+*Alter table HISTORY_BM MODIFY IDENTIFIER_BB varchar2(1050char);* 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+ 
+
+ "	"28/Mar/17 3:04 PM;dominik.wagner@axa.de;Hallo Herr Stangl,
+
+super danke, jetzt funktioniert wieder alles.
+Haben wir da was bei einem Upgrade übersehen?
+
+Mit freundlichen Grüßen
+Dominik Wagner"	"28/Mar/17 3:39 PM;cst;Hallo Herr Wagner,
+
+vielen Dank für Ihre Antwort.
+
+Dies wird mit dem Upgrade-Skript in Version 6.0 hinzugefügt. Es handelt sich hier um ein Szenario, das wir beim Update nicht bedacht haben
+Sie haben korrekt die Version 5.5 eingespielt :-) 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "																																																			

@@ -1,0 +1,11 @@
+Extend Coloring-spec.js in IFD 	"please edit the e2e-test tracability excel sheet located in e2etest subfolder after implementing the tests
+
+
+
+test multivalue drawing in IFD! 
+
+
+
+you will have to change the properties of some building block instances to enable multi value.
+
+you can see ifd-test-specification.xlsx TC 1 for detailed steps."	62900	Sub-task	iteraplan PO	09/Nov/15 8:15 AM	09/Nov/15 3:39 PM					IFD	Test																																																														

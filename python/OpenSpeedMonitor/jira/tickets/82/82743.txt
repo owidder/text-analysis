@@ -1,0 +1,1 @@
+Darstellung des Bildmaterials in der GUI	Übernahme der GUI aus dem Click-Dummy mit Anbindung an die Kernapplikation.	82736	Sub-task	EAM-Visualisierung	02/May/16 1:30 PM	23/May/16 3:15 PM																																																																				

@@ -1,0 +1,2 @@
+Unit-Tests for ITERAPLAN-3001	Create Unit-Tests for ticket ITERAPLAN-3001	47569	Sub-task	iteraplan PO	05/May/15 11:04 AM	18/May/15 11:40 AM					newClient									"12/May/15 11:19 AM;fam;Legend attribute list is depending on a directive.
+Clarification of how to test directives necessary."																																																						

@@ -1,0 +1,29 @@
+Remove of quickfilter is not serialized to URL in list view	"Timebox: 0.5 days
+
+
+
+Reproduce: 
+
+
+
+* Go to list view
+
+* Set quick filter
+
+* Refresh page
+
+* Remove quickfilter by clicking on ""x""
+
+* Refresh page again
+
+
+
+Expect:
+
+* Quickfilter is not there anymore
+
+
+
+Actual:
+
+* Quickfilter is reset to the value it was set before"		Bug	iteraplan Speedbird	16/Nov/16 2:33 PM	24/Jan/17 2:30 PM														24/Jan/17 2:30 PM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-303																																																						

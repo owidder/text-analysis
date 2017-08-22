@@ -1,0 +1,1 @@
+Check if bootstrap-colorpicker-module-Patched.js is needed	Check if the code from bootstrap-colorpicker-module-Patched.js is used. If not, remove this file and cleanup dependencies where it it referenced (e.g. commons-module.js).		Improvement	iteraplan PO	17/Jul/17 10:40 AM																																																																					

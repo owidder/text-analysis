@@ -1,0 +1,20 @@
+Übernahme von Parametern bei Upgrades	"Bei der Installation von Upgrades müssen die bereits vorhandenen Parameter für Webapp-Name, DB-Parameter und LDAP-Parameter erneut eingegeben werden. 
+
+
+
+Eine Übernahme der bestehenden Informationen aus der vorhandenen Intallationen wäre wünschenswert."		Technical question	iteraplan Support	18/May/17 7:28 AM	06/Jun/17 11:58 AM														"18/May/17 8:43 AM;cst;Sehr geehrter Herr Meister,
+
+vielen Dank für Ihre Anfrage.
+
+Nach ausführen des Setups wird in dem Installationsverzeichnis die Datei ""ant.install.properties"" erstellt. 
+
+
+Wenn Sie diese vor starten des Updates z.B. in das Installationsverzeichnis kopieren, werden die 
+
+eingetragenen Informationen beim Setup eingetragen.
+
+Dies funktioniert nur, wenn sich am Setup nichts ändert, was jetzt aber erstmal nicht der Fall sein wird. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	03/Jun/17 12:11 AM;Gerd.Meister@f-i-solutions-plus.de;Sie können das Ticket gerne schließen. Vielen Dank																																																					

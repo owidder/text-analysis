@@ -1,0 +1,19 @@
+Execute Testsheet Pie Chart Diagram	"*Summary:*
+
+Execute Testsheet
+
+
+
+*Details:*
+
+* Ensure you have all the actual branch code
+
+* Perform all steps carefully
+
+* If the system is different than the testcases, check, if it is a bug or if the testsheet needs to be corrected.
+
+** If it is a bug, create immediately a bugticket in the epic ""Release 5.4""
+
+** If it is not a bug, correct the testsheet. "		Task	iteraplan PO	14/Oct/16 1:33 PM	21/Oct/16 11:17 AM														"21/Oct/16 10:22 AM;cst;Test sheet was succeeded without any bugs / problems
+
+"																																																						

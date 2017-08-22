@@ -1,0 +1,21 @@
+Lizenzschlüssel Iteraplan 3.3.0	"Wir haben den Lizenzschlüssel für 2016 erhalten.
+
+Haben in der Vergangenheit noch nie einen Key verwenden müssen und haben in der aktuellen Version 3.3.0 auch nicht die Möglichkeit, diesen Key einzugeben, wie es in der Mail beschrieben ist (Administration/Konfiguration).
+
+Müssen wir in der für uns aktuellen Version 3.3.0 etwas unternehmen?
+
+Bitte um Info. Vielen Dank.
+
+Johannes Wagner-Höss
+
+Premium AEROTEC GmbH, Augsburg"		Technical question	iteraplan Support	16/Feb/16 7:38 AM	16/Feb/16 3:04 PM														"16/Feb/16 3:04 PM;fka;Sehr geehrter Herr Wagner-Höss,
+
+
+
+ich kann Sie beruhigen, in der Version 3.3 ist kein Lizenzkey erforderlich. Dieser wird erst ab dem Release 5 für den Betrieb von iteraplan benötigt. Nach einem Update auf 5 oder neuer muss der Schlüssel einmalig eingegeben werden,
+
+
+
+Mit besten Grüßen
+
+Fabian Kainzinger"																																																						

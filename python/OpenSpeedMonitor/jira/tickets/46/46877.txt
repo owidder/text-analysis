@@ -1,0 +1,21 @@
+Move outer box one step or to first/last	"Move an outer box one step eft or right by swapping its position with the adjacent box in that direction, or to the first or last position by insertion (not by swapping). Moving left or right works also on line breaks, swapping boxes with the row above or below, respectively.
+Add actions to the context menu of the outer box.
+
+Add a group of actions to the context menu of the outer box:
+* Move left
+* Move right
+* Move to start
+* Move to end
+
+The actions must be present only if they are possible. If not, they are not in the menu (not inactive), to save menu space.
+
+The box changes places with its neighbor. The other elements stay where they are, that is in the lexicographical order.
+
+There must be a simple slide transition for the current box (the one where the user opened the context menu).
+
+The other box (the neighbor) is not required to have an transition. If it has one, it should be ""in the background"" or ""starting later and faster"", not the same transition as the current box.
+
+Note after clarification:
+The directions ""up"" and ""down"" are not well-defined in a diagram with rows. They would be defined in a grid of outer boxes, but we do not have this kind of diagram here.
+This ticket was simplified from the first version according to a suggestion by Sergii.
+"		New Feature	iteraplan PO	20/Aug/14 11:02 AM	29/Sep/14 10:10 AM														21/Aug/14 11:02 AM;sepr;Est. 1 PD																																																						

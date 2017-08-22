@@ -1,0 +1,19 @@
+Zugang zu iteraplan-9 repo verboten	"Liebe Admins,
+
+
+
+ich habe leider keinen Zugriff auf das Repo: https://svn.iteratec.de/repos/projects/iteraplan-9
+
+Mein Username: pma
+
+Könnt ihr euch das bitte anschauen?
+
+
+
+Liebe Grüße 
+
+Mai"		Task	Infrastruktur	28/Feb/17 11:27 AM	28/Feb/17 11:41 AM	svn													"28/Feb/17 11:31 AM;sas;Bitte vresuche es nochmal, ich habe dich berechtigt.
+
+
+
+ "	28/Feb/17 11:34 AM;pma;Danke, hat geklappt!																																																					

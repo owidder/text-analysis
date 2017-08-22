@@ -1,0 +1,23 @@
+Dashboard container horizontal scrollbar missing	"Steps:
+
+ # Open Custom Dashboard.
+
+ # Add some diagram.
+
+ # Put some width value big enough so Rendering container is wider that page.
+
+
+
+Actual:
+
+
+
+Rendered container has horizontal scroll bar missing. Instead, whole page has this scroll bar. (Screenshot attached)
+
+
+
+Expected:
+
+
+
+Rendered container has a scroll bar, not a whole page."		Bug	iteraplan Speedbird	19/Jun/17 4:49 PM	14/Jul/17 10:36 AM														03/Jul/17 10:08 AM;dmkh;[~viol], don't forget to double-check download feature for Dashboard	04/Jul/17 9:02 AM;mash;Download is not working properly, check with big diagrams (width > 2000)																																																					

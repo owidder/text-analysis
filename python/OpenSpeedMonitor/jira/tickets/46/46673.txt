@@ -1,0 +1,15 @@
+Import does not set last modification info	"_Reproduce (with iteraplan EE 3.3.0 bundle with sample data)_
+# Navigate to iteraplan -> Mass Data -> Export/Import
+# Download Excel data
+# Edit Excel file and change a value in some building block, for example change Complexity in Information System ""Deposits-Mgr # 2.0"" from high to low
+# Import Excel file with either import strategy
+# Check the changed building block
+
+_Expected:_ Changes to the building block were applied and last modification user and time updated
+
+_Actual:_ Changes were applied, but last modification time and user were not updated.
+
+Update of last modification information works fine when changes are done via GUI. {{lastmodification.logging.enabled}} is set to true."		Bug	iteraplan PO	04/Jun/14 1:52 PM	12/Jun/14 9:47 AM					import	lastmodification								"04/Jun/14 5:52 PM;sfe;Given building block A, if an import changes only the value of a user-defined attribute of A, then no saveOrUpdate is called for A.
+Saving of the attribute value and creation of the attribute value assignment seem to be sufficient. See also {{MiIteraplanDiffWriter#updateExistingObjectExpressions}} and {{AttributeValueSetter}}.
+
+In this case, the {{LastModificationUpdateInterceptor}} usually responsible to set the updated last modification info does not affect A."																																																						

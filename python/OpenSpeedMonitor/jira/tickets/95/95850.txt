@@ -1,0 +1,19 @@
+Forgot password of system account in UAT system	I forgot the password of the system account of our UAT system. Is it possible to reset it? If yes, how?		Fault	iteraplan Support	12/Sep/16 3:54 PM	12/Sep/16 4:23 PM														"12/Sep/16 4:10 PM;cst;Hello Mr. Liskow,
+
+with this post you become the crypted password  for the column ""password"" in the iturm table ""im_user"". 
+
+5F4DCC3B5AA765D61D8327DEB882CF99 
+
+After that, you can login with your account and the password:
+
+ ""password"". 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support 
+"	"12/Sep/16 4:19 PM;thomas.liskow@coface.com;Hello Mr. Stangl,
+
+Our DBA could reset it with the crypted pwd.  Please close the incident.
+
+Regards,
+T. Liskow"																																																					

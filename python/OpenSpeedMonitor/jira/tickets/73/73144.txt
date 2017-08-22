@@ -1,0 +1,75 @@
+CsiAggregations für CsiSysteme als OUTDATED markieren funktioniert nicht	"In der db migration fliegt in der folgenden Methode eine JDBC Exception:
+
+de.iteratec.osm.csi.CsiSystemMeasuredValueService#markMvAsOutdated
+
+
+
+Exception:
+
+{code}
+
+No value specified for parameter 1
+
+liquibase Change Set next-release-DATA.groovy::1453106072000-9::bka failed.  Error: could not execute query; SQL [select this_.id as id30_0_, this_.version as version30_0_, this_.label as label30_0_ from csi_system this_ where this_.id=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id30_0_, this_.version as version30_0_, this_.label as label30_0_ from csi_system this_ where this_.id=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+
+        at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:105)
+
+        at de.iteratec.osm.csi.CsiSystemMeasuredValueService.markMvAsOutdated(CsiSystemMeasuredValueService.groovy:98)
+
+        at de.iteratec.osm.csi.MeasuredValueUpdateService.markMvs(MeasuredValueUpdateService.groovy:67)
+
+        at de.iteratec.osm.csi.MeasuredValueUpdateService.createOrUpdateDependentMvs(MeasuredValueUpdateService.groovy:56)
+
+        at Script1$_run_closure1$_closure9$_closure30$_closure31$_closure32$_closure33$_closure34$_closure35.doCall(Script1.groovy:182)
+
+        at Script1$_run_closure1$_closure9$_closure30$_closure31$_closure32$_closure33$_closure34.doCall(Script1.groovy:179)
+
+        at Script1$_run_closure1$_closure9$_closure30$_closure31$_closure32$_closure33.doCall(Script1.groovy:149)
+
+        at Script1$_run_closure1$_closure9$_closure30$_closure31$_closure32.doCall(Script1.groovy:148)
+
+        at Script1$_run_closure1$_closure9$_closure30$_closure31.doCall(Script1.groovy:139)
+
+        at grails.plugin.databasemigration.GrailsChange.generateStatements(GrailsChange.groovy:159)
+
+        at liquibase.database.AbstractDatabase.executeStatements(AbstractDatabase.java:1073)
+
+        at liquibase.changelog.ChangeSet.execute(ChangeSet.java:317)
+
+        at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:27)
+
+        at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:58)
+
+        at liquibase.Liquibase.update(Liquibase.java:114)
+
+        at grails.plugin.databasemigration.MigrationRunner$_runMigrations_closure2.doCall(MigrationRunner.groovy:117)
+
+        at grails.plugin.databasemigration.MigrationRunner.runMigrations(MigrationRunner.groovy:109)
+
+        at grails.plugin.databasemigration.MigrationRunner$_autoRun_closure1.doCall(MigrationRunner.groovy:76)
+
+        at grails.plugin.databasemigration.MigrationUtils.executeInSession(MigrationUtils.groovy:133)
+
+        at grails.plugin.databasemigration.MigrationRunner.autoRun(MigrationRunner.groovy:56)
+
+        at DatabaseMigrationGrailsPlugin$_closure2.doCall(DatabaseMigrationGrailsPlugin.groovy:96)
+
+        at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+
+        at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+
+        at com.googlecode.psiprobe.Tomcat70AgentValve.invoke(Tomcat70AgentValve.java:44)
+
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+
+        at java.lang.Thread.run(Thread.java:745)
+
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+
+{code}
+
+"		Task	OpenSpeedMonitor	12/Feb/16 5:32 PM	16/Feb/16 2:24 PM																																																																				

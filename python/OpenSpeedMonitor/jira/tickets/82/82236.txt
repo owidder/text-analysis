@@ -1,0 +1,21 @@
+Als User möchte ich Threadfix als eigenen Reporting Komponente nutzen.	"Als User mchte ich Threadfix als eigene Reporting-Komponente nutzen, um effektiver verschiedene Scan-Ergebnisse integriert auswerten zu können. Threadfix ist als Werkzeug darauf spezialisiert verschiedene Scanner Ergebnisse zu aggregieren und in einem eigenen Dashboard nach Team oder Applikation anzuzeigen. Zudem hat es eine vielzahl an Schnittstellen zu bekannten Tools und Produkten.
+
+
+
+Threadfix Homepage:
+
+* http://www.threadfix.it/
+
+* https://github.com/denimgroup/threadfix/wiki (Dokumentation)
+
+
+
+Für Threadfix gibt es ebenfalls Docker Container:
+
+* https://hub.docker.com/r/bitslayer/threadfix_fullstack/
+
+
+
+Hierfür müsste eine Art Adapterkonzept dafür sorgen das die Reporting-Ergebnisse der einzelnen Scanner in einem geeigneten Format an die REST-API von Threadfix weitergegeben werden können (als XML oder JSON):
+
+* https://github.com/denimgroup/threadfix/wiki/ThreadFix-REST-Interface"		Story	secureCodeBox	27/Apr/16 12:53 PM	11/May/16 10:02 AM					OTTO																																																															

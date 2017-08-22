@@ -1,0 +1,17 @@
+Include creation of new history tables in migration scripts	"The creation of the tables for the new history should be done in the normal iteraplan migration script, so that the migration process looks as follows:
+
+
+
+# Execute iteraplan migration script
+
+# If history is in use, also execute the history migration tool
+
+
+
+The old history tables are not removed in this migration, see also ITERAPLAN-4907.
+
+The history migration tool assumes that the new history tables already exist."	96257	Sub-task	iteraplan Thunderduck	17/Oct/16 10:48 AM	18/Oct/16 10:20 AM														"17/Oct/16 1:41 PM;sfe;See also following changesets for related changes:
+
+[iteraplan 26303|https://iteraweb.iteratec.de/fisheye/changelog/iteraplan?cs=26303]
+
+[iteraplan-helper 1271|https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-helper?cs=1271]"	17/Oct/16 1:58 PM;sfe;Changeset [iteraplan-helper 1277|https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-helper?cs=1277] does not belong here, but to IPTT-188. It also has a wrong comment text.																																																					

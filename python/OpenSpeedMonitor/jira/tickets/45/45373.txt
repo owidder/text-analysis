@@ -1,0 +1,3 @@
+Wrong success message in XMI import	"After doing an XMI export, then deleting some information systems, then importing the XMI file again, I got the following message:
+bq. Import of the XMI-File successful. No new elements have been created.
+Clearly there have been elements created, though, as the information systems were imported."		Bug	iteraplan PO	15/Feb/12 11:32 AM	30/Dec/15 2:09 PM					import	xmi								07/Aug/14 3:33 PM;fka;Is this still applicable?	30/Dec/15 2:09 PM;fka;Reworked with new import mechanism																																																					

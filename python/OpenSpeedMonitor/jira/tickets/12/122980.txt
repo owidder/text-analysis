@@ -1,0 +1,55 @@
+Error messages are shown in console for Login/Logout	"h4. Problem Description:
+
+
+
+Error messages are displayed in console for Login and Logout.
+
+
+
+ 
+
+h4. Reproduction Steps:
+
+ *  Open application and Login
+
+
+
+h4. Observed Results:
+
+
+
+Error messages are shown in console.
+
+ * Logout
+
+
+
+h4. Observed Results:
+
+
+
+Error messages are shown in console.
+
+
+
+ 
+
+h4. Expected Results:
+
+
+
+User should Login and Logout without any errors.
+
+
+
+ 
+
+h4. Note:
+
+ * Error messages also are displayed when refreshing Login page.
+
+ * Used dev and #330 build in FF
+
+ * Check attached .gif file"		Bug	iteraplan PO	31/May/17 3:36 PM															"19/Jun/17 10:21 AM;roia;# XML parsing errors - I suspect, we get this error because backend returns 401 responses with HTML body. Returning JSON body could resolve this issue (probably have different URLs for client or some parameters/headers in the request, which wold help to distinguish if we need response in JSON or HTML).
+
+ # Response with 401 status is not error, but correct behavior. Reducing number of requests can be implemented after anonymous login task is completely finished: after, or in scope of ITERAPLAN-5387. Or just don't care about them, because it will require refactoring of most of pages, which use $routes' resolve property to preload data from multiple URLs"																																																						

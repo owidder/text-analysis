@@ -1,0 +1,9 @@
+Update row height after column resizing	"You can find the following described bugs attached:
+
+* Information Systems list view: add a column and resize the description column in the way that the text is too long for one row. The current behavior breaks the line and writes the rest of the text into the next line without changing the height. 
+
+* Attributes list view: same user story as described above. The current behavior does not break the line and cuts the text without changing the height as well.
+
+
+
+Update row heights after column resizing (if not too expensive in terms of performance)"		Bug	iteraplan Speedbird	11/Jul/17 10:30 AM																																																																					

@@ -1,0 +1,8 @@
+List of type Business Mapping	"add list view for business mapping instances:
+* accessable from start screen (and from ""no permissions"" dialog)
+* default 5 columns: id, IS, BP, BU, Prod
+* ability to add bm-properties as column
+* only one building block name for one grid cell! discussed with [~wfr]
+* deactivate ""show in * diagram"" buttons for business mappings list"		New Feature	iteraplan PO	10/May/16 11:15 AM	15/Jun/16 1:29 PM														"15/Jun/16 12:49 PM;ach;- default configuration for bm and other bbt's is in configuration contructor now. We may move it out later, if configuration code become to large
+
+- please see revision 3489 for review"																																																						

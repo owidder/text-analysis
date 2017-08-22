@@ -1,0 +1,25 @@
+Relationship distrigation	"For a hierarchical building block type (for example IS), distribute or aggregate connections to building blocks of lower or higher levels in the hierarchy, respectively.
+
+Use these computed connections in NCD, LSD, MPD and IFD, and only for content elements. 
+
+
+
+Distrigate only along the parent-child relationship (PCR). Do not distrigate PCR itself. Aggregate PCR upwards cumulative and&or distribute cumulative PCR downwards.
+
+
+
+[Two border levels should be configurable idependently. Level x, i.e. all level 0 to x-1 PCRs are distributed downwards cumulative to level x and/or level y i.e. level infinite to level y+1 are aggregated upwards to level y. Distrigation should only be available when a level filter has been set previously. When a previously set level filter is cleared, the distrigation(s) are automatically removed, too.]
+
+
+
+Save within the diagram configuration.
+
+Everything in New Client only.
+
+
+
+Caution: make sure that an aggregated or distributed self-relation on a type, might have unusual semantics and might not be a hierarchy. Consder excluding these cases if they cannot be explained to a human user.
+
+
+
+Note that distrigation is an implicit effect caused by excluding elements by hierarchy level. There is no extra switch for distrigation, nor extra level controls."		Epic	iteraplan PO	10/Jun/15 3:05 PM						diagrams	relation								10/Feb/16 5:15 PM;fka;Thanks to [~wfr] for some clarifications :-)																																																						

@@ -1,0 +1,37 @@
+List view shows "undefined" as cell content	"Reproduce:
+
+
+
+# Go to list view
+
+# Add many columns so that a horizontal scrollbar appears
+
+# Add few more columns without scrolling to them!
+
+# After enough columns have been added, scroll to the las columns
+
+
+
+Expected:
+
+* All columns are there and are filled properly
+
+
+
+Actual:
+
+* The first row contains ""undefined"" values for the columns that were not visible before (see screenshot)"		Bug	iteraplan PO	13/Feb/17 11:36 AM	14/Feb/17 9:04 AM														"13/Feb/17 11:42 AM;sfe;This ""undefined"" issue also happens in this case:
+
+# Create some filter in list view
+
+# deselect all elements in ""manual selection""
+
+# save the view under some name
+
+# load the saved query
+
+# open filter and add some or all of the elements in ""manual selection""
+
+
+
+=> first line in the list shows ""undefined"" everywhere."																																																						

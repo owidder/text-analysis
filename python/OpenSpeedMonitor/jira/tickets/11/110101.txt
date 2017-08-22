@@ -1,0 +1,45 @@
+Analysis Ticket for excel import 	"Could you please check following ""Excel""-File that stops on the import in iteraplan 5.4 / 5.5. 
+
+
+
+Following customer ticket have been created:
+
+
+
+https://iteraweb.iteratec.de/jira/browse/IPS-281
+
+
+
+Following hint on the import appears:
+
+
+
+""Business Process ""6-Support"" could not be found in the database. Connection from Business Process ""6-15-Orga"" to that building block will be ignored."" 
+
+
+
+When the checkbox ""Include Metamodel changes"" is checked on, but the importer skip this step. 
+
+
+
+After that we downloaded the current excel template and entered the data for the import, the imports starts without problems. 
+
+
+
+Greetings,
+
+
+
+Christoph
+
+
+
+estimated 3sp"		Bug	iteraplan Thunderduck	31/Jan/17 8:15 AM	08/May/17 1:55 PM														"03/May/17 10:08 AM;aan;The problem is the following:
+
+
+
+In the Excel-File some sheets are hidden. One of them contains business processes with the same name as the BP that should be added, but these have already ids.
+
+
+
+During the import the visibility of the sheets doesn't matter and all sheets are imported. Only the elements without id are added to the model, but sometimes one of other ids is used as parent id and then it is not found in the model, as it is not there."	08/May/17 1:55 PM;tsc;Works as it should work.																																																					

@@ -1,0 +1,22 @@
+Zusätzliches Daily-Intervall für CSI-Werte	"Die CSI-Werte sollen auch in weiteren Intervallen betrachtet werden können (explizit Daily). 
+
+Achtung:
+- -Aggregator-Type- _MeasuredValueInterval_ muss dafür gebaut werden
+- Measured-Values müssen neu geschrieben werden
+- -Tags/Tag-Querys müssen aufgebaut werden- Bleibt wie bei Weekly, nur neue Methode
+- Berechnungslogik für Weekly darf NICHT umgebaut werden
+- Controller-Methoden müssen angelegt werden"		New Feature	OpenSpeedMonitor	02/Sep/13 6:08 PM	12/Nov/13 10:27 AM														"05/Nov/13 12:49 PM;rhe;Daily wird implementiert für:  
+* Page
+* Shop
+"	"05/Nov/13 6:00 PM;rhe; Aktueller Stand:
+
+Die Logik für Page und Shop sollte vollständig von _MeasuredValueInterval_ abhängen. Die Tests und Integration Tests in OttoCSI sind grün (bis auf Nightly). Damit sollte die Weekly-Logik nicht beeinträchtigt sein. 
+
+Es fehlt momentan noch: 
+
+* Tests für das Daily Interval
+* Controller-Anpassungen
+* GUI-Anpassungen (GSP)
+
+Einstiegspunkt ist Line (269): de.iteratec.isocsi.CsiDashboardController#fillWithAproximatgeMeasuredValueData(Map<String, Object> modelToRender, ShowAllCommand cmd, boolean withTargetGraph) ("	06/Nov/13 4:13 PM;jwerschmoeller;Bitte Restaufwand nochmals prüfen! 	"11/Nov/13 4:35 PM;rhe;Aufwand ist realistisch...
+Testen ist in diesem Zusammenhang das Komplizierteste."	12/Nov/13 10:23 AM;rhe;läuft lokal in der Dev-Umgebung auf der SEU siehts komisch aus...																																																		

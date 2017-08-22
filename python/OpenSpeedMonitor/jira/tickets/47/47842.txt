@@ -1,0 +1,7 @@
+Fetch relevant parts from existing datamodel	"*Affected js-files:*
+* ifdContentMain
+* ifdDataService"	47836	Sub-task	iteraplan PO	17/Jun/15 4:08 PM	15/Jul/15 11:05 AM														"15/Jul/15 11:05 AM;fam;Checked code and function.
+
+All working.
+
+Ticket closed."																																																						

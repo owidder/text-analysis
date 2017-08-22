@@ -1,0 +1,6 @@
+Design and use favicon	"After demo --- Design and use a favicon, that is the small icon in the browser address line.
+
+Rest of ITERAPLAN-8.
+
+Design to Tanya, then integration by dev team.
+"		New Feature	iteraplan PO	06/Oct/14 11:41 AM	19/Jan/16 10:14 AM														19/Jan/16 10:14 AM;fka;Not for now																																																						

@@ -1,0 +1,35 @@
+Create first rudimentary spike solution ("Durchstich")	"Create first rudimentary spike solution (""Durchstich""), i.e.
+
+implement basic n3cd diagram with hard-coded inner and outer types without any configuration or legend or toolarea or title:
+
+
+
+* inner type = Information System
+
+* outer type = Information System Domain
+
+* direct path
+
+
+
+* No nesting
+
+* No filtering
+
+* No coloring
+
+* No other settings
+
+
+
+*Expected result:*
+
+Basic N3CD shown on the screen without any configuration - just the diagram itself
+
+
+
+Create subtasks if necessary"		New Feature	iteraplan PO	15/Jan/16 4:55 PM	05/Feb/16 12:17 PM														"01/Feb/16 10:53 AM;mag;Inner Type is ""IS""; Outer Type is ""ISD""
+
+Some coloring is already applied, but this will be changed.
+
+No other configuration yet."																																																						

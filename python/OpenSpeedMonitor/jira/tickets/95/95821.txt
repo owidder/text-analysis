@@ -1,0 +1,11 @@
+Release Guide	"""Hier ist die Notiz zu den Punkten 2.1 und 2.4
+Release-Guide anpassen. Release-Verantwortlicher muss prüfen, ob die Helper-Projekt sich geändert haben oder nicht:
+Wenn ja, SNAPSHOT entfernen. Wenn nicht vorherige Release-Version nehmen.
+
+Allerdings nach dem ich den Punkt 2.4 erneut gelesen habe, war es mir klar, dass nur die iteraplan Version gemeint war und nicht die von den Helper-Projekten.
+
+Ich denke, es ist sinnvoll den Punkt mit Fabian und Stephan erneut zu besprechen und ggf. den Release-Guide anzupassen. Ich habe erstmals so gemacht, wie in der Anleitung drin steht. D.h. evtl. muss dann auch pom.xml angepasst werden."""	93506	Sub-task	iteraplan Thunderduck	12/Sep/16 11:09 AM	13/Sep/16 1:31 PM														"13/Sep/16 9:56 AM;aan;The changes are made in the beginning of 2.1
+
+
+
+https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess"																																																						

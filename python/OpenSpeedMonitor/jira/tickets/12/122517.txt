@@ -1,0 +1,1 @@
+Server: Include "Change-Type" in the REST-response of /api/history/BUILDINGBLOCKTYPE		116633	Sub-task	iteraplan Speedbird	26/May/17 2:25 PM	07/Jun/17 1:14 PM														07/Jun/17 1:14 PM;dmkh;After short investigation of the type history implementation on the server - this ticket is no longer needed.																																																						

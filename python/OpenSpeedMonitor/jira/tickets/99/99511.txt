@@ -1,0 +1,55 @@
+Mehrere Iteraplan Instanzen auf einem Tomcat	"Hallo,
+
+
+
+ist es möglich, dass mehrere Iteraplan Webapps auf einem Tomcat zu installieren sind.
+
+Wie muss dann die Server.xml konfiguriert werden, dass dies funktioniert.
+
+Hr. Neuer ist am Freitag bei uns im Haus und könnte uns das genauer erklären, falls es möglich ist."		Technical question	iteraplan Support	18/Oct/16 10:12 AM	07/Nov/16 8:38 AM														"18/Oct/16 11:44 AM;cst;Sehr geehrter Herr Deichmüller,
+
+vielen Dank für Ihre Anfrage.
+
+Generell muss hier nichts konfiguriert werden, da man die Instanzen ja über den gleichen weg aufruft. 
+Wichtig ist bei der Anlage der Zweiten iteraplan Instanz einen anderen Namen zu verwenden und ein anderes Index Verzeichnis. 
+(Wird beim Setup abgefragt)
+
+Dann werden nach start des Tomcats zwei iteraplan Anwendungen erstellt und diese sind dann über z.B. ""iteraplan1"" oder ""iteraplan2"" aufrufbar.
+Was natürlich nicht funktioniert, ist wenn Sie von HTTP zu HTTPS wechseln, hier müssten weitere Einträge in der Konfiguration erfolgen.
+
+Aber generell kann man mehrere Instanzen von iteraplan über den gleichen Tomcat laufen lassen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+"	20/Oct/16 12:22 AM;dne;War der Plan nicht eigene Tomcat-Instanzen aufzusetzen?	20/Oct/16 8:17 AM;cst;Was wir hier grundsätzlich empfehlen, siehe Installationsanleitung. 	"21/Oct/16 10:44 AM;christian.deichmueller@huk-coburg.de;Hallo Herr Stangl,
+
+wie ist die Vorgehensweise, wenn bei uns ein IIS mit Boncode vorgelagert ist?
+Dort müssen vermutlich weitere Webseiten hinzugefügt werden?
+Benötigen wir weitere Anwendungspools?
+Da wir mit SSL arbeiten, benötigen wir dann weitere Zertifikate für die jeweilige Instanz.
+Wie viel RAM empfehlen Sie bei 4-5 Instanzen?
+Welcher Wert muss im Tomcat (Java) für die Speichererweiterung angepasst werden?
+Vielen Dank im Voraus.
+
+Beste Grüße
+Christian Deichmüller"	"24/Oct/16 8:54 AM;cst;Sehr geehrter Herr Deichmüller,
+
+vielen Dank für Ihre Anfrage.
+
+Für die Fragen zur Systemumgebung schauen Sie bitte unter folgenden Link, hier sind die benötigten Voraussetzungen für ""eine"" iteraplan Instanz aufgelistet:
+
+https://www.iteraplan.de/doc/display/iteraplan53/Installation+Prerequisites 
+
+Für Java empfehlen wir folgende Einstellungen:
+
+https://www.iteraplan.de/doc/display/iteraplan53/Tomcat+Configuration
+
+Zum Thema IIS mit Boncode für mehreren Instanzen haben wir keinerlei Erfahrung, da wir ein ""Tomcat"" für eine iteraplan instanz empfehlen. 
+Sollte aber von der Logik her, genau so sein wie Sie beschreiben - für jede Instanz eine IIS Eintrag und bei SSL für jede instanz eine eigene Konfiguration (Zertifikat).
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+"	07/Nov/16 7:44 AM;christian.deichmueller@huk-coburg.de;Request kann geschlossen werden																																																	

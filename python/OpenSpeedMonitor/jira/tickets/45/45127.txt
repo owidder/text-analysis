@@ -1,0 +1,9 @@
+Spreadsheet reports (Information Systems): List of possible outputs decreases by marking "Include Information Systems that are connected over... [...]"	"Reports --> Spreadsheet reports --> choose: Information Systems 
+
+Open the tag ""Rework query results"" and select: ""Include Information Systems that are connected over an Interface to Information Systems in the result set.""
+
+After clicking on one possible output in the list, the list is reduced to three possible options: Simple list, Excel, CSV
+
+Actually, the whole list should appear.
+
+"		Bug	iteraplan PO	08/Sep/11 5:44 PM	26/Sep/11 1:40 PM					reports	spreadsheet								23/Sep/11 5:19 PM;vsh;What about "Show only the top level Information Systems of the Information Systems in the result set". Same problem!																																																						

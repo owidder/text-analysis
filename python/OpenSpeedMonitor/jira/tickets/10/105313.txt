@@ -1,0 +1,9 @@
+Neue Connectivity Auswahl mit Formular funktionsfähig machen.	"Die neue Connectivity-Auswahl beinhaltet direkt ""Native"" und mehrere ""Custom"" connectivities, falls vorhanden. Deshalb wurden die alten checkboxen (include native, include custom + regex) abgeschafft.
+
+
+
+Dies funktioniert für die dynamische Auswahl, aber noch nicht wenn man auf ""Show"" klickt um den eigentlichen Graphen zu sehen.
+
+Es muss mit hidden fields gearbeitet werden, damit dies wieder funktioniert."		Bug	OpenSpeedMonitor	12/Dec/16 9:23 AM	31/Jan/17 2:19 PM														"12/Dec/16 11:34 PM;sbr;Es sollten danach die ignorierten Geb-Tests für das Event-Result Dashboard angepasst und aktiviert werden.
+
+Ggf. müssen die anderen Tests auch angepasst werden, damit immer der richtige Graph (der mit dem ConnectivityProfile) gezeigt wird, und nicht alle."	31/Jan/17 2:19 PM;mmi;Ebenso wurde in diesem Zuge die rLike Suche nach Connectivites abgelöst.																																																					

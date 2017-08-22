@@ -1,0 +1,36 @@
+Ab dem 34. Wert für ein Attribut vom Typ Enum läuft iteraplan auf einen Fehler	"Hallo,
+
+
+
+wenn ich ein Attribut vom Typ Enum pflegen möchte und die Anzahl der Werte größer als 33 ist, läuft iteraplan auf einen Fehler."		Fault	iteraplan Support	21/Nov/16 1:51 PM	22/Nov/16 12:57 PM														"22/Nov/16 8:45 AM;cst;Sehr geehrter Herr Haberhauer,
+
+
+
+vielen Dank für Ihre Anfrage. 
+
+
+
+Wenn der Fehler auftritt, haben Sie die Möglichkeit eine ZIP-Datei (mit enthaltenen Log-Dateien und Fehlerbild) zu Downloaden. 
+
+Würden Sie mir bitte dieses zur weiteren Bearbeitung an dieses Ticket mit anhängen.
+
+
+
+Generell ist es möglich Werte größer als 34 Anzulegen, hier gibt es keine softwaretechnische Beschränkung.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support "	"22/Nov/16 12:40 PM;Kurt.Haberhauer@dvbbank.com;Hallo Herr Stangl,
+
+ich habe das Problem gefunden. Es lag an der Paketgröße der Message.
+Folgendes steht im Log File:
+java.lang.IllegalArgumentException: Header message of length [8,487] received but the packetSize is only [8,192]] with root cause
+
+Nach Erhöhung der Packetgröße, funktioniert es nun.
+
+Vielen Dank für Ihre Hilfe
+Kurt Haberhauer"																																																					

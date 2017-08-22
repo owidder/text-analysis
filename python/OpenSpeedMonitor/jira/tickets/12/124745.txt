@@ -1,0 +1,13 @@
+Related elements are without links	"Steps to reproduce:
+
+1) Open Masterplan diagram
+
+2) Add column Successor
+
+3) Hover and click any element in Successor column
+
+
+
+Actual result: tooltip is shown
+
+Expected result: tooltip is shown, after clicking on element name user is redirected to corresponding element single view page"		Bug	iteraplan Speedbird	19/Jun/17 2:09 PM	30/Jun/17 10:18 AM																																																																				

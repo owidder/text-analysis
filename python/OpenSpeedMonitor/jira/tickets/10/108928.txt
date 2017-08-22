@@ -1,0 +1,61 @@
+feca hat (noch) keinen iteraWiki Zugriff	"Hallo Admins,
+
+
+
+gestern hat der neue externe Mitarbeiter mit AD-Kürzel ""feca"" seine Zugangsdaten von Marion erhalten. Aber er bekommt noch einen ""Not Permitted""-Fehler, sobald er die iteraplan-Wiki-Seite öffnet (siehe Screenshot). Möglicherweise ist sein Onboarding noch gar nicht abgeschlossen.
+
+
+
+Ein schönes Wochenende
+
+
+
+Marcel
+
+"		Task	Infrastruktur	20/Jan/17 3:09 PM	23/Jan/17 12:18 PM	Confluence													"20/Jan/17 3:11 PM;kti;Hallo Marcel,
+
+
+
+bitte nochmal testen (lassen), eine Gruppenzugehörigkeit hat noch gefehlt.
+
+
+
+VG
+
+Kathrin"	"20/Jan/17 3:17 PM;msr;Danke schon mal. Kollege testet es gleich Montagfrüh.
+
+
+
+VG
+
+
+
+Marcel"	"23/Jan/17 10:24 AM;msr;Hallo Kathrin,
+
+
+
+danke erst mal. Confluence insgesamt geht jetzt, aber der iteraplan-Bereich  noch nicht. Kannst du da was machen?
+
+
+
+VG
+
+
+
+Marcel"	"23/Jan/17 10:34 AM;kti;Hallo Marcel,
+
+
+
+die Berechtigungen für den iteraplan-Bereich werden von euch selbst gepflegt.
+
+
+
+VG
+
+Kathrin"	"23/Jan/17 11:59 AM;msr;Danke, Kathrin.
+
+Das hatte ich nicht auf dem Schirm. Fabian hat es angepasst. Du kannst das Ticket schließen.
+
+
+
+VG"																																																		

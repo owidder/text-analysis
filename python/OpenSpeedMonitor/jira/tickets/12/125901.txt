@@ -1,0 +1,27 @@
+Grid is broken after adding many columns	"*Steps to reproduce:*
+
+1) Open Information Systems list
+
+2) Add columns (e.g. more then 10)
+
+
+
+*Actual result:*
+
+- Texts are are overlapping each other on the left part
+
+- Empty space on the right
+
+- Column groups contain not related sub-columns (Business mapping has no Id or Last Modification Time sub-columns)
+
+
+
+*Expected result:*
+
+Columns are added correctly, no empty spaces
+
+
+
+*Note:*
+
+After refresh grid is rendered correctly"		Bug	iteraplan PO	30/Jun/17 10:05 AM	05/Jul/17 9:11 AM														05/Jul/17 9:11 AM;msr;Duplicate IPTS-1055																																																						

@@ -1,0 +1,161 @@
+Include permission handling in the Masterplan Diagram	"*Summary:*
+
+Include permission handling in the Masterplan Diagram.
+
+
+
+*As-Is:*
+
+* No permission handling, i.e. 
+
+** the Masterplan Diagram always starts with Information Systems, even if the user has no permission for this Building Block Type
+
+** any Building Block Type can be selected, even if the user has no permission for this Building Block Type  
+
+
+
+*To-Be:*
+
+* The Masterplan Diagram starts with the first Building Block Type from a list of all Building Block Types, for which the user has the permission AND it has at least one duration attribute
+
+* Building Block Types without a permission do not appear in the type selection in the ToolArea for Level 1, 2 or 3
+
+* If the user does not have to right for any Building Block type, display a warning
+
+
+
+*Implementation Details:*
+
+* You can check the permission implementation in the Information Flow Diagram and in the Landscape Diagram.
+
+* Do not refactor LSD and IFD.
+
+* Add field ""userHasPermission"" to metamodel\type.js and use it in the MPD implementation.
+
+
+
+*UI:*
+
+* Use the same warning text like in the Information Fow Diagram: ""diagram can't be displayed due to permissions"".
+
+
+
+*Ordered list of Building Block Types:*
+
+""InformationSystem"",
+
+ ""Project"",
+
+""TechnicalComponent"",
+
+""InfrastructureElement"",
+
+""ITService"",
+
+""InformationSystemInterface"",
+
+""BusinessObject"",
+
+""BusinessProcess"",
+
+""BusinessUnit"",
+
+""Product"",
+
+""BusinessFunction"",
+
+""BusinessDomain"",
+
+""InformationSystemDomain"",
+
+ ""ArchitecturalDomain""
+
+
+
+*Unit Test:*
+
+* Not in controllers
+
+* Only for new functions in the pipeline"		New Feature	iteraplan Speedbird	10/May/16 3:00 PM	26/Aug/16 3:52 PM														"13/May/16 2:06 PM;msr;Thank you for mentioning that case: „Permission for at least one Building Block Type exists, but none of the permitted Building Block Types has a duration attributed”.
+
+
+
+This is a new case and we need a new message for that:
+
+
+
+locale-en.json:
+
+MPD.NO_DURATION_ATTRIBUTE : “Please create a duration attribute to display the Masterplan Diagram“
+
+
+
+
+
+locale-de.json:
+
+MPD.NO_DURATION_ATTRIBUTE : “Bitte erstellen Sie ein Zeitspannen-Merkmal, damit die Masterplan-Graphik angezeigt werden kann“
+
+
+
+"	"18/May/16 5:35 PM;abo;*Review-Comments:*
+
+* in {{mpdDataService.js}}
+
+** You _must not_ use the prototype to assign instance variables: {{MpdDataService.prototype.dataModel = dataModelInstance;}}. 
+
+*** This sets the datamodel for _all_ instances (even if there should be only 1 for a service)
+
+*** use {{this}} instead, or better don't assign it at all, but use the parameter as is.
+
+*** try this unit test:
+
+{code}
+
+    it(""prototype should not be used to store instance variables"", function() {
+
+        // create a new service that modifies the prototype for all other instances.
+
+        var serviceUnderTest2 = new MpdDataService();
+
+
+
+        var dataModel1 = serviceUnderTest.dataModel;
+
+        var dataModel2 = serviceUnderTest2.dataModel;
+
+
+
+        // now both services have an undefined datamodel
+
+        expect(dataModel1).toBe(dataModel2);
+
+        expect(dataModel1).toBeFalsy();
+
+        expect(dataModel2).toBeFalsy();
+
+    });
+
+{code}
+
+** only checking the length of the array to deduce permission information seems odd, please verify and at least document why this is sufficient. And please document the param type properly (Object is too broad).
+
+* in {{mpdDataService-spec.js}}
+
+** I'd split the test into two - 1) ""should have permission"" 2) ""should not have permission""
+
+* in {{mpdConfiguration-spec.js}} don't commit commented code as it is not refactoring-safe. 
+
+** Rather use x (e.g. xit(...)) to deactivate a unit test. Or better {{pending('this is why it is pending');}} as first line of the test to specify the reason why you deactivated it. (see: http://jasmine.github.io/2.4/introduction.html)
+
+* in {{mpdConfiguration.js}}
+
+** line 76 - an else-block would be nicer than a break (a reader does not a break here and it is easily overseen).
+
+** there are a lot of getter, e.g. {{getToolAreaViewState()}}, {{hasDurationAttributes()}} - why define getters instead of directly accessing the property? (AFAIK, this is the standard way in JS, while it is discouraged in Java or C#)
+
+* in {{mpdTemplate.html}}
+
+** good use of _ng-if_ for the content block, because ng-if does not evaluate the content if falsy. I think negation of properties improves readability over evaluations - i.e. {{ng-if=""permission && !hasDurationAttributes""}} vs. {{ng-if=""permission && hasDurationAttributes == false""}}
+
+** You should always use === instead of == (except for special cases, but then it should be documented)"	20/May/16 3:19 PM;dmkh;Thanks, especially for {{mpdDataService.js}} and {{mpdTemplate.js}} comments!																																																				

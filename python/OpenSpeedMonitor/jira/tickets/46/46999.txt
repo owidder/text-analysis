@@ -1,0 +1,54 @@
+2-level context menu for NCD	"The context menu of the nesting cluster diagram must use submenus.
+
+As-is: Groups in a flat, 1 level menu.
+
+To-be
+
+* [Search]
+* Only with complexity
+** High
+** Average
+** Low
+** No value
+** No filter ((1))
+* Only with status
+** Target
+** Planned
+** Current
+** Inactive
+** No filter ((1))
+* Show as color
+** Default ((1))
+** Complexity
+** Status
+** Cost
+** From red to green
+** From green to red
+** From dark to light
+** From light to dark
+* Group elements
+** No groups ((1))
+** Children
+** Parent
+** Successors
+** Predecessors
+** Using
+** Used
+* Move item
+** Left
+** Right
+** To start
+** To end
+* Highlight ((2))
+* Remove all hightlights ((3))
+
+((1)) In the initial status, when nothing is selected, the menu does not show the various ""reset actions"" marked with ((1))
+If in a group an item is selected, the ""reset"" action, for example ""No filter"" is shown.
+
+The selected item, for example ""High"" in ""Show only complexity"" is marked as selected, for example with a tick mark.
+
+((2)) The menu item ""Highlight"" is replaced by ""Remove highlight"", if the current item is highlighted.
+
+The item ""Remove all highlights"" is only shown if there are one or more hightlights in the diagram. Initially, it is not shown.
+
+"	47009	Sub-task	iteraplan PO	29/Sep/14 11:35 AM	09/Jun/15 5:06 PM																																																																				

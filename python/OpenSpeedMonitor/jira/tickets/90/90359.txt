@@ -1,0 +1,101 @@
+Option: Scaling: "Activated" or "Deactivated"	"*Summary:*
+
+Implement scaling-option, i.e. Scaling active means: if a diagram is filtered and does not have all values from minimum to maximum, use the *minium value of the result set* as new minimum and the *maximum value of the result set* as new maximum.
+
+
+
+*Implementation Details:*
+
+* Default is deactivated
+
+* Url: Save option in url
+
+* If scaling is active, deactive the fixed initial number of sections
+
+
+
+*UI:*
+
+* Legend: Only show in the legend if it is activated: ""Display"" \n ""Scaling is active"" (German: ""Anzeige"" \n ""Skalierung ist aktiv"")
+
+* Toolarea:
+
+** Main entry (last position): ""Display"" (German: ""Anzeige"")
+
+** Subentry: Toggle-Button ""Activate scaling vs ""Deactivate scaling"" (German: ""Skalierung aktivieren"" vs. ""Skalierung dekativieren"")"		New Feature	iteraplan Speedbird	13/Jul/16 5:05 PM	29/Aug/16 2:54 PM														"11/Aug/16 11:45 AM;dmkh;* {quote}If scaling is active, deactive the fixed initial number of sections{quote}
+
+[~msr], please, specify this requirement: you mean *_recalculate number of sections after applying new ranges for numeric axis_*?
+
+
+
+* {quote}Legend: Only show in the legend if it is activated: ""Display"" \n ""Scaling is active""{quote}
+
+There already exist Settings section in the legend with _""Including Information Systems connected over an Interface""_ option. Can we also add _""Scaling is active""_ to this section or is it needed to create separate Display section?
+
+
+
+* *Special case:* scaling is activated, we have filtered our set and only one element is left (min=max). What shall we do in this situation? I'd suggest to have some default scaling range for such case but which one (maybe depending on size of the bubble)?
+
+
+
+* *Also*: are enum attributes in scope of this ticket? If yes, should we *_remove section for appropriate value of enum attribute without any element in it_* (as was discussed on sprint planning)? And please, update ticket description with details mentioned above.
+
+
+
+Thanks.
+
+"	"16/Aug/16 1:46 PM;msr;1. Answer:
+
+* Yes, recalculate the number of sections with new min and new max values. Minimum and maxium of sections is still 3 to 12. Please remove ""unspecified""-section for active scaling.
+
+
+
+2. Answer: Yes, put it to settings
+
+
+
+3. Answer: Use value-1 as new minimum and value+1 = new maximum
+
+
+
+4. Answer: Yes, please remove section for appropriate value of enum attribute without any element in it (this also applies to unspecified-column)."	"23/Aug/16 2:18 PM;roia;review: https://iteraweb.iteratec.de/fisheye/cru/IP-14
+
+There're some questions."	"23/Aug/16 2:30 PM;dmkh;[~msr], there are some points needed to be specified in this ticket to close it:
+
+# What should we show for enum attribute on both axes if scaling is active and all items are filtered (currently nothing but axes are shown)?
+
+# Are negative numeric values available for items?
+
+# Which min\max range for numeric attribute must be shown if all items are filtered (currently *_from 0 to 1_*)?
+
+# Which min\max range for numeric attribute must be shown if min = max (currently *_from (min - min = 0) to (2 * min)_*, so items are in the middle of the grid)?
+
+# Which min\max range for numeric attribute must be shown if min = max = 0 (currently *_from 0 to 1_*)?"	"25/Aug/16 8:42 AM;msr;[~dmkh]: Here are my answers:
+
+
+
+1. The current behaviour looks like that the diagram is broken. I would prefer, that we show an empty diagram like without scaling (i.e. the scaling-option does not have any effect in this special case)
+
+2. No
+
+3. Let's use the same behaviour like in 1. (for enums): The min and max remain unchanged in this special case.
+
+4. That's ok.
+
+5. That's ok"	"25/Aug/16 9:03 AM;msr;[~dmkh]: Additional requirement:
+
+Rename this feature from ""scaling"" to ""cropping"", i.e.
+
+
+
+* Legend: Only show in the legend if it is activated: ""Display"" \n ""Cropping is active"" (German: ""Anzeige"" \n ""Achsen sind zugeschnitten"")
+
+* Toolarea:
+
+** Main entry (last position): ""Display"" (German: ""Anzeige"")
+
+** Subentry: Toggle-Button ""Activate cropping vs ""Deactivate cropping"" (German: ""Zuschneiden der Achsen"" vs. ""Achsen komplett zeigen"")
+
+
+
+"	29/Aug/16 2:01 PM;dmkh;All improvements after code review and final requirements are in *revision 4192*.																																																

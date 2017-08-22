@@ -1,0 +1,42 @@
+configured file:[C:\Program Files\Apache Software Foundation\Tomcat 7.0\./conf/.keystore] does not exist.	"Guten Tag
+
+Ich kann mich nicht mehr in der iteraplan Test Umgebung einloggen. Gemäss Logfile ist das Keyfile nicht verfügbar.
+
+Wir kann ich den Key eingeben, ohne mich in iteraplan einzuloggen?
+
+
+
+Besten Dank für die Rückmeldung.
+
+Freundliche Grüsse
+
+A. Studer"		Fault	iteraplan Support	22/Feb/16 1:35 PM															"22/Feb/16 1:35 PM;alfred.studer@emmi.com;
+
+[^catalina.2016-02-22.log] _(18 kB)_"	"23/Feb/16 2:34 PM;tam;Sehr geehrter Herr Studer,
+
+
+
+es handelt sich um die Konfiguration Ihres Tomcat-Servers. Iteraplan macht keine Änderungen daran.
+
+
+
+Wenn ich das den Logs richtig entnehme, ist der Pfad zu dem keystore nicht korrekt eingetragen.
+
+
+
+Sie können diesen in der $TOMCAT_HOME/conf/server.xml korrigieren.
+
+
+
+Mehr Informationen dazu finden Sie unter
+
+http://www.iteraplan.de/doc/display/iteraplan51/Tomcat+Configuration
+
+
+
+Mit freundlichen Grüßen
+
+Timur Ametov"	"07/Apr/16 2:44 PM;alfred.studer@emmi.com;Dieses Ticket kann ebenfalls geschlossen werden. 
+Freundliche Grüsse
+A. Studer
+"																																																				

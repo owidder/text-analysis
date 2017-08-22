@@ -1,0 +1,6 @@
+Default color configuration not working in all cases	"In the {{iteraplan-gui.properties}} the property {{defaultColor}} is supposed to define the color used in graphical reports for ""unspecified"" values.
+However, in {{de.iteratec.iteraplan.common.Constants}} there is a constant {{DEFAULT_GRAPHICAL_EXOPORT_COLOR}} [sic] defined which is also used for this purpose.
+
+In case the property is changed from the default value ""D3CFD1"", this means, that in some cases the re-defined value is used, but in other cases still the color value ""D3CFD1"".
+
+The constant should be removed and the value from {{SpringGuiFactory#getDefaultColor()}} used instead."		Bug	iteraplan PO	19/May/14 11:44 AM	19/Jan/16 11:08 AM					color	properties																																																														

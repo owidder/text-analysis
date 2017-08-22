@@ -1,0 +1,3 @@
+Edit mode for roles show incorrect data	"Anzeige der Berechtigungen für Bebauungselement-Typen für eine Rolle entspricht im Änderungsmodus  nicht der tatsächlichen Zuordnung
+Getestet für ""Application-Enterprise-Architect""
+"		Bug	iteraplan PO	27/Mar/12 7:16 PM	30/Mar/12 11:27 AM														30/Mar/12 11:25 AM;gph;Tested with serveral roles in read/edit mode. Looks good.																																																						

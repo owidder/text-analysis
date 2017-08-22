@@ -1,0 +1,3 @@
+Create links from Attribute Group View to Single Attribute Page	"*Summary:*
+
+* Create links from Attribute Group View to Single Attribute Page"		New Feature	iteraplan Speedbird	17/Feb/17 3:53 PM	24/Feb/17 2:43 PM																																																																				

@@ -1,0 +1,21 @@
+BM Edit bugs	"go to BM list view
+
+
+
+*edit*
+
+- try to change the assigned IS to empty value. (/)
+
+- to fix: proper error message should be shown. The value should be rolled back. No request to server sent. (/)
+
+
+
+*edit and create*
+
+- create of a BM with only IS assigned (just as editing of an existing BM to this state) should not be possible and  return an appropriate error message (/)
+
+
+
+*create*
+
+- new BM-instances do not apper in the list immediatly after creation. (/)"		Bug	iteraplan Thunderduck	16/Jan/17 11:48 AM	23/Jan/17 2:38 PM																																																																				

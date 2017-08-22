@@ -1,0 +1,26 @@
+Add user-chosen columns to building block type overview pages	"The user shall have an option to add columns with additional details to the search result page on each element's overview page. This should work in a way very similar to spreadsheet reports. The set of available columns to add should be identical with the set offered in spreadsheet reports.
+It should also be possible to remove and to reorder columns.
+
+Result list and behaviour between spreadsheet reports and Element overview should be merged/same everywhere.
+
+In a first step the column selection needs to be retained for the current session only; no persistence/permanent configuration required.
+As a second step the configuration - together with filter/search can be saved in a user profile for each building block overview page.
+"		New Feature	iteraplan PO	02/Mar/12 9:38 AM	03/Apr/12 10:33 AM														02/Mar/12 9:43 AM;kvo;Splitted from sorting ticket, see ITERAPLAN-471	22/Mar/12 4:39 PM;lci;*Note:* Should the "adding column" functionality be again available _before_ sending the query, the javascript disabled in revision #15894 has to be enabled again!	27/Mar/12 6:16 PM;kvo;Add-Button geht in MassUpdate nicht.	28/Mar/12 6:49 PM;gph;Add-Column button removed on pages, where the functionality is not available. It is now on tabluar reports and overview pages.	"29/Mar/12 3:53 PM;gph;TODOs:
+* Zusätzliche Spalten aus  Tabular Reports auf Overview Pages (z.B. „Used by“, „Status“…)
+* Tabular Reports sortieren.
+* Korrekte Formatierungen und Ausrichtung für Datums-, Zahlen- und Währungswerte
+* Pfeile für Interface-Directions in TabReports als Bilder wie in OverviewPages (sind noch als Text dargestellt)
+
+Schwierigkeiten:
+* Geht nicht so einfach, da die beiden Implementierungen sehr verschieden sind. Refactoring sehr schwierig, da die Implementierung der Tabular Reports bis tief ins Reporting sowie in die Presentation verflochten ist.
+* Unüberdachtes und unflexibles Typsystem für Tabellenspalten in TabReports (z.B. ATTRIBUTE, DATE obwohl ein Attribute  auch ein Datum sein kann uvm.)
+* In OverviewPages bisher nur rudimentäres Typsystem (Unterscheidung zw. „normal“ und „Attribut“)
+"	"29/Mar/12 5:00 PM;kvo;Open Todos moved to new ticket: ITERAPLAN-612
+Current state functionally ok"	"30/Mar/12 2:11 PM;kgo;Several minor issues might be of relevance:
+ * The first and second column of the result page (both in the building block overview pages and in tabular reports) seem to be very wide. For example, if the attribute Costs is added as a column and positioned first or secnd, the column is much wider than any of the actual entries.
+ * Adding the Child column to a result page in tabular reports produces a table which is about twice wider than the iteraplan page itself, possibly because no line breaking for this column is allowed.
+ * In the documentation page for tabular reports the screenshot and text do not entirely correspond to the current presentation."	02/Apr/12 3:32 PM;gph;Saving of overview configuration is not yet implemented.	02/Apr/12 3:41 PM;kvo;Saving is postponed.	"04/Apr/12 1:39 PM;fma;Ich habe mir das Resultat angeschaut und es gefällt mir schon sehr gut. Ich habe aber auch folgende Anmerkungen:
+- Merkmale wie ""Status"", ""Gültig von .. bis .."", ""Siegel"" sollte ebenfalls wählbar sein. Beispielsweise will ich mir in der Projektliste die Projekte nach dem Startdatum (Gültig von) sortiert auflisten lassen.
+- Darüber hinaus hat man in der Merkmalsliste beim Filtern noch zusätzliche Merkmale ""letzter Benutzer"", ""abonnierte Benutzer"", ""letzte Änderung"". Um durchgängig zu sein, sollten diese ebenfalls als weitere Spalte wählbar sein.
+- In dem ursprünglichen 471-Ticket gabs noch den folgenden, vom Kunden geforderten Aspekt: * UI changes to the overview pages: While scrolling, the filter and sort criteria section should always remain visible. Only the table contents should be scrolled up/down. For an inspiration look at how JIRA makes the ticket action buttons permanently visible (most probably via CSS). Was ist damit passiert?"	"04/Apr/12 2:22 PM;fma;2. Feedback:
+Unter ""Tabellarische Auswertungen"" finden sich unter der ""Spalte Hinzufügen""-Funktion noch weitere Möglichkeiten (Vorgänger, Nachfolger etc. UND auch das Siegel; Status & Gültigkeit fehlt ebenfalls). Aber es fehlt die Sortierbarkeit der resultierenden Liste. Bitte die verschiedenen Umsetzungen harmonisieren :-)"	04/Apr/12 6:32 PM;kvo;Zu aufwändig für 3.0, Verbesserungen kommen vmtl mit 3.1																																											

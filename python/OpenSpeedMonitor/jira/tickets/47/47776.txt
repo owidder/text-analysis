@@ -1,0 +1,7 @@
+Allow upload and usage of .xlsm files as spreadsheet report Excel templates	"According to this [post|http://stackoverflow.com/questions/18350178/write-to-xlsm-excel-2007-using-apache-poi], it is possible to open .xlsm files with macros in Apache POI, to change the workbook, and to output the resulting file while preserving the macros.
+
+Please add the possibility to upload .xlsm files on the iteraplan document templates page, and the usage of these in spreadsheet reports with Excel output format.
+
+*Note:*
+* Do not treat .xlsm files as a different Excel format, meaning they should be uploaded using the same dialog and to the same place as .xlsx files, and be offered as templates next to .xlsx templates.
+* However, the resulting downloaded file has to have the proper file extension."		Improvement	iteraplan PO	18/May/15 1:55 PM	19/Jan/16 1:56 PM					Excel	report	spreadsheet																																																													

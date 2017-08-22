@@ -1,0 +1,44 @@
+WPT-Status-Codes als enums hinterlegen	"Derzeit werden die WPT-Status-Code direkt im Code verwendet.
+
+Besser wäre es, auch zur besseren Verständlichkeit der Bedeutung der Codes, ein Enum anzulegen, welches diese codes hält:
+
+// Für das JobResult 
+public enum WebPageTestJobResultStatusCode {
+	PENDING(100),
+	COMPLETE(200) /*... MORE....*/;
+	
+	private final int statuscode;
+
+	private WebPageTestJobResultStatusCode(int statuscode) {
+		this.statuscode = statuscode;
+	}
+	
+	public int getStatuscode() {
+		return statuscode;
+	}
+}
+
+// Für das EventResult:
+public enum WebPageTestEventResultStatusCodes {
+ 	SUCCESSFUL_TEST(0),
+ 	/* ... MORE ... */
+ 	TEST_COMPLETED_SUCCESSFULLY_BUT_INDIVIDUAL_REQUESTS_FAILED(99999);
+	
+	private final int statuscode;
+
+	private WebPageTestEventResultStatusCodes(int statuscode) {
+		this.statuscode = statuscode;
+	}
+	
+	public int getStatuscode() {
+		return statuscode;
+	}
+}
+
+Die codes sind unter folgenden URLs aufgeführt:
+
+Codes des gesammten JobResult (run):
+https://www.webpagetest.org/forums/showthread.php?tid=10416
+
+Codes des EventResult:
+https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/result-codes"		Improvement	OpenSpeedMonitor	01/Aug/13 1:59 PM																																																																					

@@ -1,0 +1,49 @@
+Make configuration for timespans in table and for bars dynamic, not only runtime period	"*Summary:*
+
+Replace hard-coded timespan in the mpdConfiguration by dynamic min/max depending on all selected duration attributes.
+
+
+
+*As-Is:*
+
+* mpdConfiguration.configurationParameters.timeSpan is hard-coded
+
+
+
+*To-Be:*
+
+* The timeSpan-from and -to-Dates are dynamically calculated.
+
+* The from-Date is the minimum value of all selected duration attributes
+
+* The to-Date is the maximum value of all selected duration attributes
+
+
+
+*Implementation Details:*
+
+* Special case: If all selected duration attributes have no values, use actual month as backup-timespan for this special case.
+
+* -Although the min/max values are used for the timeSpan, *for the actual viewport* (=what is actual shown on the screen without scrolling) show-
+
+-**the actual month - 1 year as start and actual month + 1 year as end.-
+
+* Have a look at the ifdDataService (line 20): with dataModel.getMinMaxByJson() you get all min and max values."		Improvement	iteraplan PO	01/Jun/16 5:02 PM	30/Jun/16 4:07 PM														03/Jun/16 9:10 AM;dmkh;As for me it is better when we have a masterplan diagram displayed on the whole screen with current month in the middle of timespan part (second attachment). If we set two-month width then white space in the right side appears in case when the left part is too narrow (first attachment).	"03/Jun/16 11:43 AM;msr;I prefer to use the whole screen with the actual month in the middle.
+
+
+
+Thanks for your idea."	03/Jun/16 4:12 PM;msr;Please fix failing unit tests in mpdConfiguration-spec and mpdToolAreaViewModelBuilder-spec and activate them afterwards again.	"03/Jun/16 4:12 PM;msr;Problem in the unit tests is the following:
+
+
+
+[16:03:23] Marcel Schrumpf: I see the problem
+
+[16:03:42] Marcel Schrumpf: the dataModel-mock in the mpdConfiguration-spec has only one field called ""metamodel""
+
+[16:04:02] Marcel Schrumpf: but this dataModel-mock does not have a function called ""getMinMaxByJson()""
+
+[16:04:18] Marcel Schrumpf: but this function is needed in line 75 in the mpdConfiguration
+
+[16:05:51] Marcel Schrumpf: Same for the mpdToolAreaViewModelBuilder ..."	"06/Jun/16 4:52 PM;msr;* Please ensure this works when you change the content type for level 1, 2 or 3.
+
+* Please ensure the solution works with other duration attributes than runTimePeriod."	08/Jun/16 9:48 AM;wfr;put back, after the next munich sprint that provides the REST API for the configuration	28/Jun/16 9:46 AM;msr;Review completed. Please see one comment: https://iteraweb.iteratec.de/fisheye/cru/IP-36#CFR-22842	30/Jun/16 1:09 PM;roia;[~msr] updated implementation - if all dateIntervals are from "NaNNaNNaN" to "NaNNaNNaN" then current year is used as time span.																																															

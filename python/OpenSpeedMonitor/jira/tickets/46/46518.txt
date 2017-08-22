@@ -1,0 +1,3 @@
+Pie Chart: Incomplete Legend	"Bei den Kuchendiagrammen fehlt in der Legende der Name des Merkmals, nach welchem das Diagramm aufgebaut wird. Gerade im Kontext der Dashboards ist es teilweise sehr schwer zu erkennen, was man in dem Diagramm gerade sieht. 
+
+Siehe Anhang."		Bug	iteraplan PO	07/Mar/14 1:47 PM	17/Jul/14 5:31 PM																																																																				

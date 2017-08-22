@@ -1,0 +1,69 @@
+Switch between list and visualization	"Whenever in a list or in a visualization there should be the possibility to switch to the respective other view.
+
+
+
+Use the current filter settings including manual selection.
+
+
+
+Quickfilter in list convert it to a manual selection filter.
+
+
+
+While searching for / filtering elements in the list view using Quicksearch - it should be considered while switching to visualization. Only displayed elements should be shown in visualization.
+
+
+
+*From visualization to list view:*
+
+ * 'Show [dropdown list] in list' (german: [dropdown list] als Liste zeigen)
+
+ * dropdown list should consist of element specific for active diagram
+
+ ** +example+: if Landscape diagram is active, in dropdown list there should be:
+
+ *** X axis
+
+ *** Y axis
+
+ *** Content
+
+
+
+*From List view to visualization:*
+
+ * 'Show in diagram: {color:#14892c}[dropdown list 1]{color}, as {color:#59afe1}[dropdown list 2]{color}' (german: Im Diagramm [dropdown list 1], als [dropdown list 2] zeigen)
+
+ * in {color:#14892c}dropdown list 1{color} there should be list of all diagrams (9) - with translations for german version:
+
+ ## Landscape Diagram
+
+ ## Nested Cluster
+
+ ## Information Flow
+
+ ## Masterplan Diagram
+
+ ## Portfolio Diragram
+
+ ## Cluster Diagram
+
+ ## Pie Chart Diagram
+
+ ## Bar Chart Diagram
+
+ ## Tree Map Diagram
+
+ * in {color:#59afe1}dropdown list 2{color} should be shown depending on chosen diagram from first dropdown list
+
+ ** +example+: if Landscape diagram was chosen, in dropdown list 2 there should be:
+
+ *** X axis
+
+ *** Y axis
+
+ *** Content
+
+
+
+ "		New Feature	iteraplan Speedbird	27/Mar/17 10:45 AM	08/Jun/17 2:38 PM																																																																				

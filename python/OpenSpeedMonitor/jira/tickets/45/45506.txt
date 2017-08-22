@@ -1,0 +1,51 @@
+Permission management and enforcement	"see ITERAPLAN-622, also for screenshots!
+
+* The menu is not displayed properly (see attached screenshot ""menu bug"")
+* Breadcrumb ""EA Daten"" links to overview-page, even when the user does not have the appropriate permissions -> error message
+* On the detail pages, there is one warning for each permission (Create/Update/Delete) that the user does not have (see attached screenshots ""warnings"" and ""edit messages"")
+* On the detail pages there are relations linked, even when the user does not have the appropriate read-permissions -> error message
+
+* The permission ""Ausführen von gespeicherten Abfragen für Grafische Auswertungen"" leads to the menu displaying ""Auswertungen"" and ""Visualisierungen"" -> ""Auswertungen"" is empty and should not be shown 
+* The permissions ""Bearbeiten (erstellen, aktualisieren und löschen) und Ausführen von Abfragen für Grafische Auswertungen"" or ""Erstellen und Ausführen von Abfragen für Grafische Auswertungen"" lets appear the empty (!) menu ""Auswertungen"" but not ""Visualisierungen"" 
+* The permissions ""Bearbeiten (erstellen, aktualisieren und löschen) und Ausführen von Abfragen für Grafische Auswertungen"" and ""Erstellen und Ausführen von Abfragen für Grafische Auswertungen"" do not let the menu ""Visualisierungen"" appear 
+
+* Deletion of project ""eOffice"" leads to error message when I try to navigate to the projects via ""EA-Data"" (see attached screenshot ""project overview bug""). On the overview-page, there are three (top level) projects left and can be viewed normally. After a session-cleanup, the project-overview-page is accessible again. 
+* If I create a ""Pflegeberechtigung"" for an instance, an other user (system) can still edit this specific instance
+* Mass Update: If I change a -Business Process- hierarchical element and select to update the superordinate element, I do only get the current superior process as a value in the select-box. So no possibility to update it.
+
+
+* The following permissions don't seem to have any effect:
+  ** ""Create and execute queries for Spreadsheet Reports and Bulk Updates"" and/or ""Edit (create, update and delete) and execute queries for Spreadsheet Reports and Bulk Updates"". The menu options for Spreadsheet Reports and Bulk Updates are still hidden, and accessing these pages with bookmarks leads to an ""You are not entitled to access this page"" message.
+
+* Query Console page can be accessed without the functional permission, if you have a bookmark. The menu point is hidden correctly, and the queries don't work (correct as well). But accessing of the page is not prevented.
+
+Not related:
+* Headlines should look the same on all pages -> overview, dashboard, data, visualizations, ...
+
+"		Bug	iteraplan PO	19/Apr/12 7:06 PM	30/Apr/12 10:44 AM					permissions									"19/Apr/12 11:08 PM;kvo;Two remarks:
+* On the detail pages there are relations linked, even when the user does not have the appropriate read-permissions -> error message - unclear. Might be ok.
+* If I create a ""Pflegeberechtigung"" for an instance, an other user (system) can still edit this specific instance - ok, system user can always edit (superuser concept)"	26/Apr/12 10:57 AM;gph;* Mass Update: If I change a Business Process hierarchical element and select to update the superordinate element, I do only get the current superior process as a value in the select-box. So no possibility to update it.  -> Ok. Seemed to be a misunderstanding: The option is just for filtering the results, not for updating the superordinate elements.	"27/Apr/12 11:53 AM;gph;Current state:
+
+* The menu is not displayed properly (see attached screenshot ""menu bug"")  - *DONE* (conditional deviders)
+* Breadcrumb ""EA Daten"" links to overview-page, even when the user does not have the appropriate permissions -> error message  - *DONE* (Link does nothing)
+* On the detail pages, there is one warning for each permission (Create/Update/Delete) that the user does not have (see attached screenshots ""warnings"" and ""edit messages"") - *DONE* (all messages in one alert box)
+* On the detail pages there are relations linked, even when the user does not have the appropriate read-permissions -> error message  - *Leave it as it is*
+
+* The permission ""Ausführen von gespeicherten Abfragen für Grafische Auswertungen"" leads to the menu displaying ""Auswertungen"" and ""Visualisierungen"" -> ""Auswertungen"" is empty and should not be shown  - *Can't reproduce. Already fixed?*
+* The permissions ""Bearbeiten (erstellen, aktualisieren und löschen) und Ausführen von Abfragen für Grafische Auswertungen"" or ""Erstellen und Ausführen von Abfragen für Grafische Auswertungen"" lets appear the empty (!) menu ""Auswertungen"" but not ""Visualisierungen"" - *Can't reproduce. Already fixed?*
+* The permissions ""Bearbeiten (erstellen, aktualisieren und löschen) und Ausführen von Abfragen für Grafische Auswertungen"" and ""Erstellen und Ausführen von Abfragen für Grafische Auswertungen"" do not let the menu ""Visualisierungen"" appear - => *Correct behaviour (although misleading), according to:*
+http://www.iteraplan.de/wiki/display/iteraplan/Functional+permissions
+https://iteraplan.iteratec.de/projects/iteraplan/changeset/12909
+
+* Deletion of project ""eOffice"" leads to error message when I try to navigate to the projects via ""EA-Data"" (see attached screenshot ""project overview bug""). On the overview-page, there are three (top level) projects left and can be viewed normally. After a session-cleanup, the project-overview-page is accessible again.  - *Can't reproduce*
+
+* The following permissions don't seem to have any effect:
+  ** ""Create and execute queries for Spreadsheet Reports and Bulk Updates"" and/or ""Edit (create, update and delete) and execute queries for Spreadsheet Reports and Bulk Updates"". The menu options for Spreadsheet Reports and Bulk Updates are still hidden, and accessing these pages with bookmarks leads to an ""You are not entitled to access this page"" message. => *Correct behaviour (although misleading), according to:*
+http://www.iteraplan.de/wiki/display/iteraplan/Functional+permissions
+https://iteraplan.iteratec.de/projects/iteraplan/changeset/12909
+
+* Query Console page can be accessed without the functional permission, if you have a bookmark. The menu point is hidden correctly, and the queries don't work  (correct as well). But accessing of the page is not prevented.  - *DONE* (permission enforced in controller)
+
+Not related:
+* Headlines should look the same on all pages -> overview, dashboard, data, visualizations, ...  - *Leave it as it is*
+"																																																				

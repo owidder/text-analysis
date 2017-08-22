@@ -1,0 +1,39 @@
+Filter for inner boxes (enumeration attributes)	"*Summary:*
+Create a filter on elements for inner boxes of the Nesting Cluster Diagram. Filter options are *enumeration attributes* of the elements. Filters must be implemented for all available *enumeration* parameters
+
+*As-Is:*
+Inner Boxes can be filtered by status, complexity and last modification date.
+
+*To-Be:*
+Inner Boxes can be filtered by all available *enumeration* attributes.
+
+*Affected parts of the system:*
+- Nesting cluster diagram
+- context menu
+
+*Approach:* 
+The values can be text type, enumeration (like in status), dates (like in ""last modification date) or numeric (like in costs). For this ticket only enumeration attributes are in scope. The other 3 types follow in follow-up tickets.
+
+Adapt context menu: Create a new submenu (2nd level) for all filters to avoid too long context menu (see attached mockup). This mockup informs about positioning, it is no styleguide for the layout. Leave the current layout as is.
+
+Special-case: Multi-value attributes: If an attribute has multiple values, this is not an issue for the simple filtering. If any of the values matches the filtering, then the other values can be ignored.
+
+The solution uses the metamodel information from the REST API.
+
+*Acceptance Criteria:*
+The user starts with the view of an open NCD with IS as inner elements.
+The user opens the context menu for inner boxes with secondary click. 
+In the menu, he hover over ""Show with ..."" (Note: with ellipsis ""...""). 
+A second level menu opens immediately on hover. 
+The hover over ""State of Health"".
+A third level menu opens immediately on hover.
+The user selects ""Good"".
+The menu structure disappears.
+The diagram is filtered immediately.
+
+The steps above must work with every *enumeration* attribute defined for all building block types available for the inner boxes, and for every value of these attributes.
+The steps must work starting with no filtering by attribute, or starting with an existing filtering by attribute.
+
+
+
+"		New Feature	iteraplan PO	11/Nov/14 3:32 PM	23/Dec/14 10:28 AM																																																																				

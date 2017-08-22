@@ -1,0 +1,25 @@
+Mass Update - Mass Subscribe dont work in IE 11 (and switched symbols)	"Reproduce with trunk, IE 11 and big data 
+
+ # Open ""Architectural Domains"" 
+
+ # Open the Mass Update
+
+ # Click on the Mass Subscribe symbol (Black Star)
+
+ # Nothing happens 
+
+
+
+Addittional in the IE 11 the symbols are switched in contrast to Chrome:
+
+
+
+IE  !image-2017-04-25-13-34-18-849.png!  Chrome    !image-2017-04-25-13-35-26-673.png!
+
+
+
+ 
+
+ Expected: That the symbols are the same and the function is working in the IE 11
+
+ Actual: That the symbols are ordered in every browser the same and that Mass Subscribe works in IE 11"		Bug	iteraplan PO	25/Apr/17 1:37 PM	23/May/17 5:55 PM														23/May/17 5:55 PM;fka;Work with current nightly build																																																						

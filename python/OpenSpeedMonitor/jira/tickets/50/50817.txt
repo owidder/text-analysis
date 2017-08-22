@@ -1,0 +1,11 @@
+Font of NCD not availaible in IE	"When opening NCD, there is not the right Font shown.
+
+When watching Script-Console in Browser, a error message might occur that means, that the Browser don't accept Font Style. 
+
+Please fix the issue.
+
+
+
+The message is:
+
+""CSS3114: Fehler bei der Berechtigungsprüfung für die OpenType-Einbettung in ""@font-face"". Die Berechtigung muss ""Installable"" sein."""		Bug	iteraplan PO	14/Jul/15 1:41 PM	28/Oct/15 2:40 PM														28/Oct/15 2:10 PM;dam;add new fonts data for IE9+																																																						

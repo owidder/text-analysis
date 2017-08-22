@@ -1,0 +1,17 @@
+Multiple Values dont show correct status - Enumeration Attribute	"Reproduce with trunk
+
+ # Open ""Administration"" and ""Attributes""
+
+ # Open the attribute ""CRUD""
+
+ # Change the ""Multiple Values"" slider to ""No""
+
+ # A error message appears and the slider is setted to no 
+
+ # After reloading the page the slider is correct again
+
+
+
+Expected: That the slider stays on yes
+
+Actual: The slider changes to no"		Bug	iteraplan Speedbird	15/Mar/17 8:40 AM	04/Apr/17 10:44 AM														04/Apr/17 10:44 AM;mash;Review is done																																																						

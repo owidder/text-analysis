@@ -1,0 +1,21 @@
+Struktur der Report.json mit FalsePositiveList abgeleichen	"Im Report werden findings folgendermaßen gemeldet:
+
+{
+
+        ""alertName"": ""Application Error disclosure"",
+
+        ""param"": ""N/A"",
+
+        ""url"": ""https://lpt.otto.de/order-system/customerBonusAccount/amount""
+
+    }
+
+
+
+Die FalsePositive List verwendet ""alert"" statt ""alertName"" als Syntax.
+
+
+
+Bei einem FP wird idR. wird die Liste meist nur per Copy&Paste aktualisiert => Fehlerquelle"		Improvement	secureCodeBox	05/Nov/14 9:09 AM	24/Nov/14 11:37 AM														"24/Nov/14 11:37 AM;bwo;Die FalsePositives sollten nun ""alertName"" statt ""alert"" verwenden.
+
+Alle anderen Outputs wurden der Syntax angepasst"																																																						

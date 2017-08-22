@@ -1,0 +1,1 @@
+Speichern von userspezifischen Dashboards: HTML in Fehlermeldungen wird nicht gerendert	Speichern von userspezifischen Dashboards: HTML in Fehlermeldungen wird nicht gerendert		Bug	OpenSpeedMonitor	08/Jun/15 2:10 PM	08/Jun/15 4:40 PM																																																																				

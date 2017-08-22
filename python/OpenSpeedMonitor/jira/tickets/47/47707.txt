@@ -1,0 +1,3 @@
+Icons on the Recent view page	Summary: Icons for tiles don't displayed on the Resent view page with browser Google Chrome 42.0	47647	Sub-task	iteraplan PO	24/Apr/15 4:34 PM	05/May/15 2:09 PM													"Workspace: Windows 8.1
+revision 1021"	30/Apr/15 3:58 PM;alvo;Resolved under another ticket	"30/Apr/15 3:59 PM;dasm;Verified (rev 1078)
+"																																																					

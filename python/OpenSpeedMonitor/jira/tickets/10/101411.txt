@@ -1,0 +1,9 @@
+Incorrect download as JPEG and PNG for LSD and NCD.	"As is:
+
+Only screen visible part of diagram is saved in file.
+
+
+
+To be:
+
+Full diagram is saved."		Bug	iteraplan Speedbird	03/Nov/16 3:32 PM	08/Nov/16 1:25 PM														08/Nov/16 1:33 PM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-170																																																						

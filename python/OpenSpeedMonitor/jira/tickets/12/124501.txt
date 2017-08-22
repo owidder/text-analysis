@@ -1,0 +1,13 @@
+showLastResultForJob ist kaputt	"* unterstützt noch keine ISO-Zeiten
+
+ * der erzeugte Command validierte die selectedPages nicht
+
+
+
+Beispiel:
+
+[http://demo.openspeedmonitor.org/job/showLastResultForJob/108]
+
+
+
+-> ""Property [selectedPages] of class [class de.iteratec.osm.result.EventResultDashboardShowAllCommand] with value [[]] does not pass custom validation"""		Bug	OpenSpeedMonitor	15/Jun/17 9:24 AM	20/Jul/17 1:52 PM																																																																				

@@ -1,0 +1,1 @@
+Erweiterung der GUI um Popovers	Die Kernapplikation nimmt von der GUI eine Bebauungselement-ID entgegen und liefert dafür Typ und Beschreibung. Diese Information soll in Popovers angezeigt werden, nachdem ein Benutzer auf ein Bebauungselement geklickt hat.	82744	Sub-task	EAM-Visualisierung	02/May/16 1:41 PM																																																																					

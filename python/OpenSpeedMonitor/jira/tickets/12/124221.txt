@@ -1,0 +1,77 @@
+Alexander Zindl	E.ON		Access	iteraplan Support	13/Jun/17 12:09 PM	23/Jun/17 3:51 PM														"14/Jun/17 2:32 PM;fka;Hallo,
+
+
+
+es existiert bereits ein Account für das Entwicklungs-Ticket-System:
+
+
+
+Username:ip.daniel.robinson
+
+Full name:Alexander Zindl
+
+Email:[alexander.zindl@eon.com|mailto:alexander.zindl@eon.com]
+
+
+
+Soll ich diesen löschen und einen neuen Account mit ip.alexander.zindl anlegen?
+
+
+
+Viele Grüße
+
+Fabian Kainzinger"	"15/Jun/17 4:39 PM;ip.daniel.robinson;Hallo Fabian,
+
+das letzte mal habe ich mit der ID eine Fehlermeldung erhalten ich sollte Zugang beantragen...
+
+Ich verusche es spaeter nochmal.
+
+Danke und Gruss
+ALex
+"	16/Jun/17 2:39 PM;fka;https://iteraweb.iteratec.de/confluence/display/ITPL/Kunden-Accounts+im+Jira	"16/Jun/17 4:01 PM;msr;Hallo Herr Zindl,
+
+
+
+bitte geben Sie einfach Bescheid, wenn Sie die Gelegenheit hatten, es nochmal zu testen.
+
+
+
+Viele Grüße
+
+
+
+Marcel Schrumpf - iteraplan Support"	"20/Jun/17 11:56 AM;ip.daniel.robinson;Hallo,
+
+nope, become immernoch eine Fehlermeldung wenn ich versuche IPS-470 zu oeffnen.
+
+Versuche es ueber den Direktlink https://iteraweb.iteratec.de/jira/servicedesk/customer/portal/2/IPS-470
+
+Bekomme: You do not have permission to view this request
+
+Insgesammt sind 2 tickets von Daniel Neuer fuer uns offen: 469 und 470
+
+Danke und Gruss
+Alex"	"22/Jun/17 4:45 PM;msr;Hallo Herr Zindl,
+
+
+
+ich vermute, es könnte sich hier um ein Missverständnis handeln. Die Zugangsdaten weiter oben sind für das Entwicklungs-System, um die aktuelle Entwicklung zu verfolgen.
+
+
+
+Die beiden Tickets 469 und 470 sind Support-Tickets. Hier gibt es keine Beschränkungen an Accounts: Jeder kann sich selbst registrieren und dann auf jedes seiner Tickets beliebig viele ""Requested Participants"" hinzufügen. Ich habe sie nun auf die beiden Support-Tickets 469 und 470 hinzugefügt, so dass sie nun als ""alexander.zindl@eon.com"" Zugriff haben sollten.
+
+
+
+Viele Grüße
+
+
+
+Marcel Schrumpf"	22/Jun/17 4:45 PM;msr;!image-2017-06-22-16-45-41-892.png|thumbnail!	"23/Jun/17 9:23 AM;ip.daniel.robinson;Hallo,
+
+ja, ich hatte die falschen Zugangsdaten.
+
+Ticket kann geschlossen warden.
+
+Danke und Gruss
+Alex Zindl"																																															

@@ -1,0 +1,65 @@
+Client for element-type history		116633	Sub-task	iteraplan Speedbird	02/Jun/17 12:18 PM	16/Jun/17 5:56 PM														13/Jun/17 10:38 AM;dmkh;Added paragraph related to type history here: https://doc.iteraplan.de/display/iteraplan60/List+view	"16/Jun/17 4:53 PM;roia;Review: [https://iteraweb.iteratec.de/fisheye/cru/IP-694|https://iteraweb.iteratec.de/fisheye/cru/IP-694#CFR-48572]
+
+
+
+ "	"16/Jun/17 6:02 PM;roia;[~dmkh], 
+
+
+
+Good way to set class methods:
+
+{code}
+
+function SomeClass($log, $translate...) {
+
+   this.$translate = $translate;
+
+   ....
+
+}
+
+
+
+// We define method outside of constructor, so each time when we create instance of this class (new SomeClass()) we'll just execute the constructor code, but not re-define class method(s)
+
+SomeClass.prototype.someMethod = function(){
+
+}
+
+{code}
+
+ 
+
+not so good way to set class methods:
+
+{code}
+
+function SomeClass($log, $translate...) {
+
+   this.$translate = $translate;
+
+   ....
+
+   // defining method in constructor is not a good way, because each time when you call
+
+   //  var someInstance = new SomeClass(...);
+
+   // the code below will be executed and you will define someMethod again and again
+
+   SomeClass.prototype.someMethod = function(){
+
+   }
+
+}
+
+{code}
+
+ 
+
+
+
+ 
+
+
+
+ "																																																				

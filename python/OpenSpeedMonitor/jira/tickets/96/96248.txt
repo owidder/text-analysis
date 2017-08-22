@@ -1,0 +1,3 @@
+Tabelle der Assets verkleinern	"Da die Tabelle der einzelnen Assets immernoch relativ groß ist, sollten Spalten für die alle Werte gleich sind auch noch entfernt werden.
+
+Bspw könnte die Spalte ""firstViewInStep"" überall true sein und kann dann in der Zusammenfassung angezeigt werden."		Task	OpenSpeedMonitor	16/Sep/16 1:16 PM	16/Jan/17 3:13 PM														16/Jan/17 3:13 PM;mmi;Hat sich erledigt, seitdem die Tabelle als modaler Dialog angezeigt wird.																																																						

@@ -1,0 +1,5 @@
+Create a index page that is working after the gui of the old client is deleted	"Create a index page that is working after the gui of the old client is deleted.
+
+
+
+i.e. when calling /iteraplan redirect to the login page (and afterwards to the new client, as the old one is removed)"		New Feature	iteraplan Thunderduck	03/Jul/17 10:41 AM	10/Jul/17 9:48 AM														10/Jul/17 9:45 AM;aan;Commit 27345																																																						

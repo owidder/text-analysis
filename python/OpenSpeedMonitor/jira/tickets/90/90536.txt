@@ -1,0 +1,41 @@
+Performance of full PDF download	"In case if user tries to download full PDF of Masterplan diagram (which is fully configured: 2 or 3 levels, colorings are set, big date range, more date intervals selected, some additional columns added) the time of processing SVG on the server and getting it as PDF is too long.
+
+
+
+This can take *up to 10 minutes*."		Bug	iteraplan PO	15/Jul/16 12:40 PM	04/Nov/16 9:03 AM														"31/Oct/16 3:19 PM;mse;The attached (fairly complicated) diagram [^iteraplan-MasterPlanDiagram-2016-10-31__15_07_52.pdf] took about 90 sec to download on my system. The (CPU) time was spent in the follwing methods:
+
+
+
+* 49.5% - 1,779 ms - 1 inv. org.apache.batik.transcoder.SVGAbstractTranscoder.transcode
+
+* 44.2% - 1,589 ms - 1 inv. java.lang.System.gc
+
+
+
+The first method is called from the ScgGraphicWriter write() method and seems to create the PDF. So I am not sure if we can do much about it.
+
+The second method is called from org.restlet.engine.adapter.ServerAdapter.commit and seems to delete a file. Maybe we can improve here?
+
+The strange thing is that both methods together take only about 3.5 seconds according to JProfiler. So where are the other 86 seconds lost?"	"03/Nov/16 4:38 PM;mse;The time was actually after the response came back from the server, but before the frontend opened the download dialog for the pdf file. Over 90% of the time was spent in the shallowClearAndCopy() method which is called inside angular $resource.
+
+
+
+Instead of using $resource, $http.post() is now used directly. The config, the transformResponse and the success callback functions have been modified accordingly.
+
+
+
+I tested the pdf download in 
+
+
+
+* Chrome
+
+* Firefox
+
+* IE 10&11
+
+
+
+and it is much faster now (takes some seconds usually...).
+
+"																																																					

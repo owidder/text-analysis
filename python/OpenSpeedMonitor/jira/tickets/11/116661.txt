@@ -1,0 +1,30 @@
+Log Level	"Hi
+
+
+
+Is there a way to re-configure the Log Level of the general log like for Javascript & Ajax?
+
+https://doc.iteraplan.de/display/iteraplan55/Increase+log+level
+
+
+
+My interest is to change e.g. 
+
+log4j.logger.org.springframework=DEBUG
+
+without a restart of the Tomcat.
+
+
+
+Thanks Martin"		Technical question	iteraplan Support	27/Mar/17 1:18 PM	05/Apr/17 1:53 PM														"27/Mar/17 1:28 PM;cst;Hello Martin,
+
+it is possible to open the tomcat manager stop the iteraplan instance, change the loglevel of iteraplan and restart the iteraplan instance. 
+At this moment the changed settings will be used. 
+
+For this change is no restart of the tomcat server necessary.
+
+Greetings,
+
+Christoph Stangl - iteraplan support
+
+ "	05/Apr/17 1:51 PM;martin.eberle@zumtobelgroup.com;You can close this ticket. Thx																																																					

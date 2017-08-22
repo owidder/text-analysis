@@ -1,0 +1,113 @@
+Add date-interval definitions to REST metamodel	"Currently, the interactive client cannot know which date attributes are combined into date intervals. So these date intervals are not available for configuration of the interactive masterplan diagram.
+
+
+
+Add the date interval configuration from the classic side to the metamodel information. Transport it via the /metamodel REST resource, and make it available in the Metamodel JS class.
+
+
+
+Decide the course of action from (at least) these two options:
+
+* add the date intervals as extra derived attributes of a complex type, both in the elastic model and metamodel. 
+
+* add the date interval info as an addendum to the metamodel JSON structure and bypass the Java Elastic component totally (leave the bridge as it is, do not build artificial read-only attribute values, ...)
+
+
+
+The latter is probably easier, BUT adds yet another special case (mirroring the special case on the server side). Analyse any unwanted effects and discuss with [~wfr].
+
+
+
+Goal: the code for the MPD can 
+
+* access all possible date intervals for configuration
+
+* access all date interval values for diagram generation
+
+both in a uniform way, that is: the productive period and all user defined date intervals have the same ""type"" and behavior for the MPD code (and any other future code).
+
+
+
+Apparent subtasks and/or steps (assuming the lighter option)
+
+- -definition of JSON structure for intervals- see comments
+
+- -add intervals to metamodel resource (server)-
+
+- -process metamodel JSON in Metamodel JS class, giving Interval-typed (or so) attributes-
+
+- -add a way to access the endpoints of date intervals via the artificial values-
+
+
+
+and then, after this ticket: use this in MPD.
+
+
+
+Please correct the terrible misnomer - ""duration"" on the client side. Leave it on the server side. "		Improvement	iteraplan PO	25/May/16 11:09 AM	14/Jun/16 4:31 PM														"08/Jun/16 2:30 PM;wfr;intervals := array of interval
+
+
+
+interval := { ""name"": name, ""from"": attribute, ""to"" attribute, ""color"": color }
+
+
+
+name: String, name of the interval
+
+attribute: String, name of a date attribute
+
+color: String like ""rgb(123,123,123)""
+
+
+
+We call an interval definition short interval, if it cannot be confused with an interval value.
+
+
+
+Note that the intervals may have start/end-point attributes that are not visible for a given user.
+
+In this case, the interval itself is not visible. 
+
+
+
+"	"08/Jun/16 2:40 PM;wfr;Example with 2 definitions
+
+
+
+[
+
+{
+
+""name"": ""Hugo"", 
+
+""from"": ""hugo (start)"",
+
+""to"": ""hugo (end)"",
+
+""color"": ""rgb(1,2,3)""
+
+},
+
+{ 
+
+""name"": ""Otto"",
+
+""from"": ""otto (start)"",
+
+""to"": ""otto (end)"",
+
+""color"": ""rgb(3,4,5)""
+
+}
+
+]
+
+
+
+
+
+The name pattern is only to make this example pretty. There is no business logic that leads to any kind of name pattern."	"08/Jun/16 2:56 PM;wfr;The classic UI for date intervals look like this:
+
+https://iteraplan.iteratec.de/iteraplan-devel/dateinterval/init.do
+
+"																																																				

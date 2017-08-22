@@ -1,0 +1,12 @@
+Deletion of a building block using REST or Import doesn't cascade to children	"_Reproduce (with sample data):_
+Delete Business Process *Marketing* using iteraplan's REST API:
+DELETE request to {{...iteraplan/api/data/businessprocess/26}}
+(ID may have to be adjusted)
+
+_Expected:_ When using the GUI to delete a building block with children, the children (and their children...) are deleted as well after a confirmation dialog.
+This should also happen when using REST or Import to delete (minus the confirmation dialog), so Business Processes *Product Mgmt* and *PR* should be deleted as well.
+
+_Actual:_ Only the Business Process *Management* is deleted. *Product Mgmt* and *PR* still exist but without parent assigned (not even the virtual root element)
+
+Please fix so that children/descendants of deleted building blocks are deleted as well.
+Please also adjust the documentation (if necessary) to make this behavior clear."		Bug	iteraplan PO	16/Apr/15 7:28 AM	21/Apr/15 9:03 AM					import	REST																																																														

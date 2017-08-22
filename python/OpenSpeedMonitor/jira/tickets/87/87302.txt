@@ -1,0 +1,5 @@
+[Unit-Tests] CustomerSatisfactionHighChartServiceTests schlagen fehl	"Alle Tests failen beim Speichern von CsTargetValues:
+
+
+
+ Field error in object 'de.iteratec.osm.csi.CsTargetValue' on field 'date': rejected value [Wed Jul 17 00:00:00 CEST 2013]"		Bug	OpenSpeedMonitor	15/Jun/16 8:21 AM	15/Jun/16 8:48 AM														15/Jun/16 8:48 AM;bwo;Es war noch ein Fehler im Binding des Dates in CsTargetValue, wodurch nur String als Date genutzt wurden, jedoch keine echten Dates.																																																						

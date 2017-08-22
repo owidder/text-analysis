@@ -1,0 +1,17 @@
+Administration - System (Testlink) [Browser FF]		124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:20 PM	20/Jun/17 2:13 PM														"15/Jun/17 9:38 PM;naba;Test cases: Administration/ Administration System ip-1, 4-14
+
+ For smoke test please use
+
+ [https://doc.iteraplan.de/display/iteraplan60/System+Administration] (examples and tips)
+
+
+
+Please be creative and progressive.
+
+
+
+*Note*:
+
+ - Work with documentation is still in progress
+
+ - Due to some technical issues some test cases are still out of date."																																																						

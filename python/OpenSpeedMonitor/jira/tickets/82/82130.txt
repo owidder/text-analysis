@@ -1,0 +1,25 @@
+Create iteraplan main branch and prepare release	"* Update license and readme files
+
+* create iteraplan branch
+
+
+
+see also:
+
+* https://iteraweb.iteratec.de/confluence/pages/viewpage.action?title=Release-Prozess&spaceKey=ITPL#Release-Prozess-2.2LizenzenundREADMEs
+
+* https://iteraweb.iteratec.de/confluence/pages/viewpage.action?title=Release-Prozess&spaceKey=ITPL#Release-Prozess-2.4iteraplanBranchziehen"		Task	iteraplan PO	26/Apr/16 6:04 PM	06/Jun/16 10:01 AM														"09/May/16 1:58 PM;abo;Review-Comments:
+
+* The download on the iteraplan-homepage is v5.1.0 (instead of 5.2.0). Please make v5.2 the default download!
+
+** The according docker container shows a push a few days (~7) ago, but I can't see whether it means that it is serving v5.2 now. Please verify!
+
+* I can't see a job specific for serving the online demo in v5.2 / and no job building the branch. Please check, whether these tasks are done in another Job!"	"20/May/16 11:16 AM;sfe;* Lite edition download on iteraplan homepage was updated
+
+** The docker container is the responsibility of colleagues from Hamburg. Communication to get a status was initiated.
+
+* Jobs specific to the online demo can be found here: https://iteraplan.iteratec.de/hudson/view/Demoserver%20Jobs/
+
+With each release their SVN paths are updated so they build the latest release.
+
+I am not sure what you mean with ""no job building the branch"". If you mean for building the release artifacts, there is a parametrized job that lets you select the branch on execution: https://iteraplan.iteratec.de/hudson/view/Release/job/BuildRelease/"	06/Jun/16 10:01 AM;abo;Review OK.																																																				

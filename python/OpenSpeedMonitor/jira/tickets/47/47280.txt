@@ -1,0 +1,6 @@
+Lower case table names in ant installer task	"In the ant installer, in target ""superGroup"", there is a self-defined ant task called ""supervisorGroup"". Inside the Java class of this task (de.iteratec.iteraplan.antinstaller.SupervisorGroupTask), the (pre)defined SQL-Statements use lower-case table names. This can cause problems with MySQL databases running on Linux/Unix machines, when the superuser group is initialized.
+
+The rule is:
+ALL tables must have upper case table names.
+Only exception: The table ""hibernate_sequences"" must have lower case table name.
+"		Bug	iteraplan PO	13/Jan/15 11:24 AM	13/Jan/15 12:48 PM					ant	database	installer	mysql																																																												

@@ -1,0 +1,13 @@
+Show Top Level attribute Groups on top	"*Summary:*
+
+Show Top Level attribute Groups on top of Single Element View
+
+
+
+*Implementation Details:*
+
+* Show these attribute group on top (if the attribute group is activated for that)
+
+* See attached screenshot how to activate it
+
+* Do not show them in the normal attribute section"		New Feature	iteraplan Speedbird	07/Oct/16 1:47 PM	15/Nov/16 5:29 PM														15/Nov/16 5:28 PM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-176																																																						

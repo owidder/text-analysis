@@ -1,0 +1,71 @@
+Partial IFD	"*Summary:*
+
+Create a partial Information Flow Diagram for many elements in the diagram.
+
+
+
+*Affected parts:*
+
+* ifdDataService (for filtering)
+
+* ifdTemplate or ifdDiagramBuilder (to show warning)
+
+
+
+*Approach:*
+
+Filter as early as possible, i.e. in the ifdDataService to improve performance. In the ifdDATAService:
+
+* Get all Information Systems (fullfilling the filter criteria of the user).
+
+* AFTER you have these ""relevantInformationSystems"" sort them alphabetically ascending
+
+* Use the first x Information Systems for the diagram (there is no limit for the Information Flows)
+
+* One exception: If the user has pinned some Information Systems (saved in the ifdConfiguration) (see ITERAPLAN-3867 ), these pinned are always shown in any partial diagram.
+
+
+
+The download is disabled for a partial diagram. (check again with [~wfr] if download should be disabled or not).
+
+Analyse and implement the best limit for elements shown (feedback to this limit by [~sfe] or [~wfr] ).
+
+
+
+*UI:*
+
+Use same UI as Nested Cluster Diagram, i.e. show a red text saying this is only a partial diagram.
+
+
+
+*Acceptance criteria:*
+
+* Starting point: An Information Flow Diagram is open with some active filters and pinned elements. It is not a partial diagram, i.e. not too many Information Systems on the screen.
+
+* The user deletes a filter and now too many Information Systems would be shown
+
+* A warning (like in the NCD) appears on the top left corner of the diagram
+
+* The updated diagram still contains all pinned elements as well as the ""alphabetically first"" Information Systems (starting with ""a"")
+
+* The download is disabled (=greyed out)
+
+* The user sets another filter with the resulting Information Systems are lower than the limit
+
+* The warning for partial diagram disappears and all elements are shown again.
+
+* The download works again."		New Feature	iteraplan PO	02/Sep/15 11:31 AM	21/Sep/15 11:39 AM					ifd	partial								"18/Sep/15 11:13 AM;isc;In agreement with WFR:
+
+* Download is no need to disable
+
+* In the downloaded diagram,  the information must be clearly recognizable, that the diagram is partial
+
+
+
+In agreement with SFR:
+
+* the pin function is currently not implemented 
+
+* pinned elements are not yet considered in this ticket
+
+"	21/Sep/15 8:59 AM;fro;JPEG and PNG download doesnt work																																																					

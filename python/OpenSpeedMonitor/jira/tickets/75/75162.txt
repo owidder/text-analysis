@@ -1,0 +1,201 @@
+Error while opening view for object related permissions	"When i try to open the view for the object related permissions i get the following error:
+
+An error occurred while processing your request.
+
+Cannot instantiate abstract class or interface: de.iteratec.iteraplan.model.user.UserEntity; nested exception is org.hibernate.InstantiationException: Cannot instantiate abstract class or interface: de.iteratec.iteraplan.model.user.UserEntity
+
+
+
+I have tried to analyse the problem with the additional logging commands from the following page: http://www.iteraplan.de/doc/display/IKB/First+name,+last+name+and+email+address+are+not+set+during+LDAP+login
+
+There were no additional output to the iteraplan-logfile. I have attached the corresponding stacktrace from the logfile.
+
+"		Fault	iteraplan Support	29/Feb/16 3:24 PM	23/Mar/16 10:12 AM														"29/Feb/16 3:24 PM;manuel.straesser@continentale.de;
+
+[^stacktrace.txt] _(15 kB)_"	"01/Mar/16 10:54 AM;manuel.straesser@continentale.de;To clarify: the meaning of ""There were no additional output to the iteraplan-logfile"" is that around the time the error occured there were no additional output. Before that there were the following output:
+
+[INFO ] [iteraplan.presentation.ContextListener] Build ID is 'Corporate Edition v5.1.0-r25160'
+[INFO ] [iteraplan.presentation.ContextListener] Audit logging is deactivated.
+[INFO ] [iteraplan.presentation.ContextListener] Last modification logging is activated.
+[DEBUG] [iteraplan.presentation.IteraplanLdapUserDetails] Reading user attributes from context..
+[INFO ] [iteraplan.presentation.IteraplanLdapUserDetails] Attribute  could not be read from the LDAP directory, check correctness of property ldap.attribute.firstname
+[DEBUG] [iteraplan.presentation.IteraplanLdapUserDetails] Setting lastName ""Sträßer"".
+[INFO ] [iteraplan.presentation.IteraplanLdapUserDetails] Attribute  could not be read from the LDAP directory, check correctness of property ldap.attribute.email
+[DEBUG] [iteraplan.presentation.UserContextInitializationServiceImpl] Created initial GuiContext.
+[DEBUG] [iteraplan.presentation.UserContextInitializationServiceImpl] User has role iteraplan_Supervisor
+[DEBUG] [iteraplan.presentation.UserContextInitializationServiceImpl] User context created and stored in user's session.
+[DEBUG] [iteraplan.presentation.UserContextInitializationServiceImpl] Found IteraplanLdapUserDetails
+[INFO ] [businesslogic.service.DataSourceServiceImpl] Validating data source with the key 'MASTER'.
+
+Because of our LDAP-structure we cannot read the firstname und the email-address from LDAP easily.
+"	"02/Mar/16 2:17 PM;tam;I guess, there are some incosintencies in your database. Could you please send us results of this query?
+
+
+
+{code:java}
+
+select * from ue
+
+where ue.id not in (select id_ue from users)
+
+and ue.id not in (select id_ue from ug_ue);
+
+{code}
+
+
+
+The reason why you don't see no additional logs is because the problem is not with the ldap authentification.
+
+
+
+Thank you in advance"	"03/Mar/16 3:26 PM;manuel.straesser@continentale.de;I have attached the result of the query as csv-file.
+The first entry is shown in the original sql output as following:
+6, 0, (null), (null)
+
+I have anonymized the usernames.
+
+[^export.csv] _(1 kB)_"	"03/Mar/16 5:08 PM;tam;I'm really sorry. There was a mistake in my analysis script. The correct script is
+
+{code:java}
+select id from ue
+where ue.id not in (select id_ue from users)
+and ue.id not in (select id_ue from ug);
+{code}
+
+Could you please run this new script again and send us the results.
+
+Sorry again and thank you in advance"	"04/Mar/16 8:06 AM;manuel.straesser@continentale.de;The script generates the following output:
+4
+6
+8
+14
+19
+20
+22
+23
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+37
+39
+40
+41
+42
+43
+45
+46
+48
+56"	"07/Mar/16 1:55 PM;tam;Hello,
+
+
+
+if I've seen correct, you are using ORACLE DB. If yes, please run the script below. This should fix database inconsistences.
+
+
+
+Here are some explanations to this script. The UE table (UserEntity) is kind of parent table, so for each entry in this table there should exist a corresponding entry either in the table Users or UG (UserGroups). But there are some entries in the UE table without corresponding entries.
+
+
+
+The script below just removes inconsistent entries and all dependencies in other tables.
+
+
+
+{code:java}
+
+delete from AV_RESP
+
+where id_ue not in (select id_ue from users)
+
+and id_ue not in (select id_ue from ug);
+
+
+
+delete from BB_UE
+
+where id_ue not in (select id_ue from users)
+
+and id_ue not in (select id_ue from ug);
+
+
+
+delete from UG_UE
+
+where id_ue not in (select id_ue from users)
+
+and id_ue not in (select id_ue from ug);
+
+
+
+delete from UE
+
+where id not in (select id_ue from users)
+
+and id not in (select id_ue from ug);
+
+
+
+commit;{code}
+
+
+
+Could you please tell me, if this script fixes your issue?
+
+
+
+Thank you in advance
+
+
+
+"	14/Mar/16 8:43 AM;manuel.straesser@continentale.de;Before testing the script i have a question. We are using the history feature of iteraplan. Will this effect the history entries?	15/Mar/16 9:40 AM;manuel.straesser@continentale.de;How is it possible that this inconsistencies exist and how can we avoid future inconsistencies?	"15/Mar/16 10:58 AM;tam;Please sorry for late answer.
+
+I tried several ways to cause these inconsistenses on my local iteraplan installation, but unfortunately I couldn't.
+
+Maybe you can help us by providing more information. 
+
+Were some users deleted in the past? 
+Is it possible that some users were deleted directly on the database side?
+What Oracle DB Version do you use?
+
+Back to you question about history. Since I don't know the way to reproduce the inconsistence I can't give a guarantee that history won't be effected.
+
+Before run last script we can try another simple script.
+
+Do these sql queries return any result? If yes, could you please send me them then.
+
+{code:java}
+select * from AV_RESP
+where id_ue not in (select id_ue from users)
+and id_ue not in (select id_ue from ug);
+
+select * from BB_UE
+where id_ue not in (select id_ue from users)
+and id_ue not in (select id_ue from ug);
+
+select * from UG_UE
+where id_ue not in (select id_ue from users)
+and id_ue not in (select id_ue from ug);
+{code}
+
+Thank you in advance"	"15/Mar/16 1:48 PM;manuel.straesser@continentale.de;The mentioned sql queries doesn't return any result. It is possible that we have deleted users in iteraplan. We have not deleted user directly in the database. Our oracle database version is 11.2.0.4. We have migrated iteraplan from the test environment to the production environment and some users are only available in the test environment. The usernames resulting from the query you gave me on 02/Mar/16 2:17 PM consists of users from the production environment and some users only present in the test environment.
+
+Is it possible to check all history entries against the usernames resulting from the above mentioned query?
+"	"15/Mar/16 2:32 PM;tam;Just to be clear, I understood it right.
+You created a database dump and restored it on your productive DB?
+And then you deleted some users, which don't exist in the production environment?
+How did you delete these users?
+
+I thought again about your question, if history will be effected. I also spoke with a workmate of mine. It shouldn't be affected. And if your history is working now, so it should also work after you run the skript I sent you. The reason: history entries in the database don't have any dependencies over foreign keys to UE table.
+"	15/Mar/16 4:06 PM;manuel.straesser@continentale.de;We copied the oracle database into production environment. In iteraplan within the production environment i deleted some not all users, which are only available in the test environment, via Governance => User Management => user X => More => Delete.	"15/Mar/16 4:18 PM;tam;That was also the way I tried. Before deletion I assigned some permissions to the user.
+
+But I couldn't reproduce the issue."	17/Mar/16 1:31 PM;manuel.straesser@continentale.de;Is there a way to get or extract a list from iteraplan itself or the oracle database to determine all persons which had edited something in iteraplan and are listed in the history of an element in iteraplan?	17/Mar/16 4:06 PM;manuel.straesser@continentale.de;Are you sure you have answered the right ticket?	"17/Mar/16 4:16 PM;tam;I'm sorry. Wrong ticket indeed.
+To your question: there is no direct possibility on the GUI to get list of the user who had edited (created, edited, removed) something in iteraplan.
+On the database you can use the field LOGIN_NAME of the DB table HISTORE_REV_ENTITY."	21/Mar/16 10:42 AM;manuel.straesser@continentale.de;Thank you for your reply. We have executed the given oracle database script in our test environment. We now have access to the object related permissions page in iteraplan. We tried to give object related permissions for an informationsystem to a user but it didn't work. This user had only reading permissions via ldap-role for this informationsystem before giving him the object related permission.	22/Mar/16 1:16 PM;tam;By adding users to permissions list you restrict posibilities to modify an object. I.e. only users from the permssions list who have already permissions to modify an object will be able to modify it. Other users won't be able to do so.	22/Mar/16 3:41 PM;manuel.straesser@continentale.de;Thanks for the clarification it works as you described it.																																			

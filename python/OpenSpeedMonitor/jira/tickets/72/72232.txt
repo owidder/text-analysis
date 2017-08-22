@@ -1,0 +1,7 @@
+Die Böse Spalte "idx"	"Definiert man in eiener ""hasMany""-Beziehung explizit den Typ ""List<E>"", dann persistiert Gorm die Reihenfolge der Liste mit.
+
+Dieses ist nicht von nöten und kann bei allen Domain-Klassen entfernt werden.
+
+Alternativ entweder ein ""Set<E>"" definieren oder auf diese Definition ganz weglassen.
+
+Dann wird ein HibernateBag erstellt. Dieser darf Duplikate enthalten, hat aber keine Reihenfolge."		Improvement	OpenSpeedMonitor	05/Feb/16 2:56 PM	17/Feb/16 10:47 AM														08/Feb/16 8:51 AM;nku;Für alle Änderungen muss es einen Liquibase-Changelog geben.																																																						

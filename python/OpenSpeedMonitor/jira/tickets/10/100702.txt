@@ -1,0 +1,27 @@
+Option "Include Information Systems that are connected over an Interface to Information Systems in the result set."	"*Summary:*
+
+Add this option to Bar Chart diagram, use Pie Chart diagram and 	IPTS-154 as a blueprint.
+
+
+
+*Implementation details:*
+
+* Save the state if user changes attribute of Information System, reset if user changes content type.
+
+* Store the state in URL
+
+
+
+*UI:*
+
+* Toolarea: add a localized toggle button in the end of content types list *IF* Information system is selected
+
+* Legend: if this option is activated show a message in Settings panel of the legend (position it before Zoom level and actual timestamp)
+
+
+
+"		New Feature	iteraplan Speedbird	26/Oct/16 5:40 PM	02/Nov/16 12:40 PM														"02/Nov/16 12:40 PM;ants;Review done.
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-140
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-146"																																																						

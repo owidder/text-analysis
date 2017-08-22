@@ -1,0 +1,21 @@
+Create working titlebar of N3CD	Title should show current inner and outer elements of the N3CD, similar to the NCD		New Feature	iteraplan PO	01/Feb/16 12:04 PM	11/Feb/16 9:09 AM														"10/Feb/16 12:31 PM;mag;Test with changing the string variables {{outerType}} and {{innerType}} in {{ncdContentMain.createGoJSDiagram}}.
+
+The title text should contain the correctly pluralized type names.
+
+
+
+* First test:
+
+** {{outerType}} = 'InformationSystemDomain'
+
+** {{innerType}} = 'InformationSystem'
+
+** Title should show ""Nested Cluster Diagram - Information Systems clustered by Information System Domains (current date)""
+
+* Second test:
+
+** {{outerType}} = 'Project'
+
+** {{innerType}} = 'BusinessProcess'
+
+** Title should show ""Nested Cluster Diagram - Business Processes clustered by Projects (current date)"""	11/Feb/16 9:09 AM;lwi;jsdocs were checked in with another ticket. Title works																																																					

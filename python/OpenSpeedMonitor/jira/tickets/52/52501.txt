@@ -1,0 +1,5 @@
+Docker-Compose Konfigurationen für die verschiedenen Umgebungen und Stacks erstellen	"Für die verschiedenen Umgebungen: lokale entwicklung, Integrationstest (später), und Produktion (securebox.iteratec.de) sollte es jeweils eigene docker-compose files geben, die sich inhaltlich unterscheiden können.
+
+
+
+Hintergrund: für die lokale Entwicklung ist es effizienter die Configuration files in den Container zu mounten und nicht zu kopieren, um einen schnelleren Entwicklungszyklus zu erreichen (roundtrip). Zudem werden lokal nicht immer alle Container benötigt und es kenn ressourcen gespart werden."		Story	secureCodeBox	02/Aug/15 10:10 AM	23/Mar/16 12:39 AM																																																																				

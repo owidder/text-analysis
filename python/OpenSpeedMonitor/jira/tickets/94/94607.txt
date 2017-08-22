@@ -1,0 +1,3 @@
+Fehlermeldung wenn Microservice nicht erreichbar	"Wählt man im OSM die DetailAnalyse aus und der microservice ist nicht erreichbar, so wird eine falsche Fehlermeldung dem Nutzer angezeigt: ""Es würde der Api Key fehlen"".
+
+Stattdessen sollte eine aussagekräftigere Meldung kommen."		Task	OpenSpeedMonitor	30/Aug/16 10:18 AM	30/Aug/16 11:21 AM																																																																				

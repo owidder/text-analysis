@@ -1,0 +1,199 @@
+Informationssysteme werden nicht angezeigt.	Nachdem Login erscheint die Übersicht, mit den Bebauungselementen. Beim Klicken auf diese passiert nichts. Ein Wechsel in die Classic Client und dann zurück in den Interactive Client löst dieses Problem. Dann kann z.B. auf die Informationssysteme zugegriffen werden. Hier wurde mir zunächst immer direkt nur ein gefilterter Auszug der Informationssysteme angezeigt. Keine Ahnung, warum der Filter genau auf diesen Wert gesetzt war. Jedensfalls habe ich um alle Systeme zu sehen auf "Ansicht zurücksetzen" geklickt. Seitdem sehe ich keine Informationssysteme mehr. Auch nicht, wenn ich den Filter ändere. Ich habe inzwischen diverse Maßnahmen ausprobiert (Iterplan Cache löschen, Firefox Cache löschen, es im IE anzeigen lassen, den Tomcat neu gestartet), jedoch bleibt die Anzeige weiterhin leer. Wenn man die Excel-Export-Funktion nutzt, werden alle Systeme exportiert. D.h. die Daten sind grundsätzlich vorhanden, sie werden nur nicht angezeigt. Die Log-Einträge zum Fehler habe ich Ihnen angehängt.		Fault	iteraplan Support	06/Mar/17 11:41 AM	21/Mar/17 8:51 AM														"06/Mar/17 11:41 AM;martin.weidemann@l-bank.de;
+
+[^Informationssysteme Anzeige Fehler Log Einträge.txt] _(20 kB)_"	06/Mar/17 12:07 PM;martin.weidemann@l-bank.de;!Iteraplan leere Anzeige.jpg|thumbnail!	"06/Mar/17 1:23 PM;cst;Guten Morgen Herr Neydek,
+
+vielen Dank für Ihre Anfrage.
+
+Würden Sie bitte testweise die Tabelle ""USER_SETTINGS"" in der Datenbank bereinigen, Ihren Browserchache leeren und den Aufruf der Liste erneut durchführen.
+ Damit prüfen wir, ob nicht eine gespeicherte Ansicht das Problem hier verursacht. 
+
+Welchen Browser setzen Sie im Moment ein? Gerne können Sie uns hierzu über die Administration und System die ""System Info"" erstellen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"06/Mar/17 1:34 PM;martin.weidemann@l-bank.de;Hallo Herr Stangl,
+
+ich habe Ihren Lösungsvorschlag an unseren DBA weitergegeben. Das Problem trat allerdings auch bei anderen Nutzern auf, ich habe die Ansicht quasi für alle ""zerschossen"". 
+
+Gruß
+Martin Neydek
+
+[^IteraplanSystemInfo_2017_03_06_133346.zip] _(7 kB)_"	"06/Mar/17 1:37 PM;cst;Hallo Herr Neydek,
+
+vielen Dank für Ihre Antwort.
+
+Könnten Sie mir zusätzlich noch bitte den eingesetzten Browser mitteilen, der ist in den iteraplan System infos nicht mit eingetragen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"06/Mar/17 1:44 PM;martin.weidemann@l-bank.de;Standardmäßig nutzen wir den Firefox ESR, aber im IE 11 ging es auch nicht. Anbei die genauen Versionsnummern als Screenshot.
+
+!firefox esr.jpg|thumbnail!
+
+!IE 11.jpg|thumbnail!"	"06/Mar/17 2:22 PM;martin.weidemann@l-bank.de;Hallo Herr Stangl,
+
+unsere DBAs wollen wissen, was sie genau mit ""Tabelle bereinigen"" meinen. Könnten Sie uns kurz das entsprechende SQL-Skript zur Verfügung stellen?
+
+Mit freundlichen Grüßen
+Martin Neydek"	"06/Mar/17 2:41 PM;cst;Hallo Neydek,
+
+kein Problem.
+
+TRUNCATE TABLE USER_SETTINGS;
+
+Grüße,
+
+Christoph Stangl - iteraplan Support"	"06/Mar/17 4:08 PM;martin.weidemann@l-bank.de;Hallo Herr Stangl,
+
+vielen Dank. Der Auftrag wurde inzwischen ausgeführt. Das Problem bleibt leider bestehen.
+
+Gruß
+Martin Neydek
+
+
+!2017-3-2-16-7-10-62.png|thumbnail!"	"07/Mar/17 8:31 AM;cst;Guten Morgen Herr Nydek,
+
+vielen Dank für Ihre Antwort.
+
+Bitte beachten Sie, das wir die von Ihnen eingesetzte Systemumgebung nicht unterstützen.  
+Tomcat 6 wird mit Version 5.5 nicht mehr getestet und freigegeben. Dies trifft auch auf die eingesetzte JAVA-IBM Version zu.
+
+Um ein Problem durch diese Komponenten ausschließen zu können, prüfen Sie unsere Systemvoraussetzungen die für einen reibungslosen Einsatz von iteraplan vorausgesetzt werden:
+
+[https://doc.iteraplan.de/doc/display/iteraplan55/Installation+Prerequisites] 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"15/Mar/17 11:55 AM;martin.weidemann@l-bank.de;Hallo Herr Stangl,
+
+wir haben unser System geupdatet. Es ist nun wieder möglich
+Informationssysteme anzusehen. Dennoch verhielt sich die Funktion sehr „zickig“
+(Details hierzu s. Screenshots). 
+
+""Ansicht zurücksetzen"" führte weiterhin zu einer
+leeren Ansicht. Das Gleiche passierte, wenn ich über ""Filter ändern""
+alle Informationssysteme anzeigen wollte. 
+
+Wählte ich dort ""alle-1"" (in unserem Testsystem 434
+von 435) aus, dann erhielt ich eine Liste mit fast allen Informationssystemen. 
+
+Sobald ich den Fehler „produzierte“, konnte ich ihn auch
+nicht durch Ändern des Filters „live“ wieder beheben. Ich muss dann den Filter
+ändern, ins „Hauptmenü“ wechseln und von dort wieder Informationssysteme anwählen. Dann zeigt die Änderung Wirkung. Sobald ich wieder Informationssysteme sehe, funktionieren Anpassungen des Filters auch wieder „live“.  
+
+Ich hatte es inzwischen auch geschafft, von der Anzeige der
+434 Informationssysteme ausgehend, alle anzeigen zu können, ohne dass die
+Ansicht leer bleibt. Allerdings werden aus irgendeinem Grund, die ersten
+Systeme nicht angezeigt (s. Screenshot). 
+
+Inzwischen konnte ich mich der Ursache annähern. Das IS „ABC“
+ist der Auslöser der Probleme (D.h. die Probleme verschwinden, wenn ich dieses
+System nicht anzeigen lasse, ansonsten tauchen sie auf). Soweit ich es jetzt
+ermitteln konnte, sind die Formatierungen schuld. Ich habe den
+Beschreibungstext nun angepasst und dadurch das Problem behoben. (Ich habe
+Ihnen das betreffende System mal angehängt, übrigens wäre es schön, wenn im
+neuen Iteraplan der Ausdruck besser aussehen würde (kann man ja noch nicht ausprobieren)
+ 
+Es wäre nett gewesen, wenn Iteratec auf die Problematik mit
+den Formatierungen hingewiesen hätte. Dann hätte ich mir mehrere Stunden
+Fehlersuche erspart.
+
+Mit freundlichen Grüßen
+Martin Neydek
+
+
+
+!Iteraplan IS Beispieldaten.jpg|thumbnail!
+
+!Iteraplan IS Anzeige fehlerhaft.jpg|thumbnail!
+
+!Iteraplan IS 434 Systeme mit ABC Filter.jpg|thumbnail!
+
+!Iteraplan IS 434 Systeme ohne ABC Filter.jpg|thumbnail!
+
+!Iteraplan IS 434 Systeme mit ABC.jpg|thumbnail!
+
+!Iteraplan IS 434 Systeme ohne ABC.jpg|thumbnail!
+
+!Iteraplan ABC new Client.jpg|thumbnail!
+
+!Iteraplan IS Ansicht Classic Client.jpg|thumbnail!
+
+[^Informationssysteme _ ABC (2646) - iteraplan.pdf] _(27 kB)_"	"16/Mar/17 9:46 AM;cst;Sehr geehrter Herr Neydek,
+
+vielen Dank für Ihre Antwort. 
+
+Ich habe mir das Verhalten angeschaut und Ihnen hierzu einen Service-Release bereit gestellt. 
+ Das sollte die beschriebene Verhalte lösen. 
+
+1. Laden Sie die angehängte Datei herunter: ""[^iteraplan-client-5.5.1.jar]"" 
+ 2. Fahren Sie Ihren Tomcat-Server herunter
+ 3. Öffnen Sie das Verzeichnis [TOMCAT]\webapps[ITERAPLAN]\WEB-INF\lib
+ 4. Prüfen Sie, ob in diesem Verzeichnis eine Datei mit dem Namen ""iteraplan-client-5.5.1.jar"" oder ""iteraplan-client-5.5.2.jar"" existiert
+ 5. Löschen Sie die alte Datei und kopieren Sie die heruntergeladene Datei in das Verzeichnis (falls die alte Datei auf 5.5.2 geendet hat, benennen Sie bitte die heruntergeladene Datei auch auf 5.5.2 um)
+ 6. Löschen Sie das work-Verzeichnis (temporäres Verzeichnis) des Tomcats unter [TOMCAT]work\Catalina\localhost[ITERAPLAN]
+ 7. Fahren Sie den Tomcat wieder hoch
+ 8. Löschen Sie den Browsercache (!)
+
+Zum Thema ausdruck, um welchen Ausdruck geht es bei Ihnen im speziellen? 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+ "	"16/Mar/17 10:04 AM;martin.weidemann@l-bank.de;Sehr geehrter Herr Stangl,
+
+danke für Ihre Rückmeldung. Wir werden das ausprobieren. Bezüglich Druck:
+Wir erfassen auch Anwendungen von Kollegen aus den Fachbereichen (sog. IDV), die zu unseren IT-Anwendungen Schnittstellen haben. Wenn ich die Kollegen frage, ob sich etwas geändert hat, dann sende ich den IT-Kollegen einfach einen Iteraplan-Link. Die Kollegen im Fachbereich haben aber keinen Zugang zu Iteraplan, daher nutze ich die ""Drucken-Funktion"" bei Informationssystemen und Schnittstellen. Grundsätzlich gilt, dass konsequent am linken Rand Platz verschwendet wird. Bei den Informationssystemen werden die Schnittstellen-Informationen nur unvollständig dargestellt. Bei beiden Ausdrucken kann es teilweise dazu kommen, dass der Ausdruck nicht am oberen Seitenrand beginnt (s. angehängte Schnittstelle)."	"16/Mar/17 10:05 AM;martin.weidemann@l-bank.de;da habe ich gerade den falschen Button gedrückt... Hier ist der Anhang.
+
+Gruß
+Martin Neydek
+
+[^Informationssysteme _ FACT Ratingplattform (711) - iteraplan.pdf] _(33 kB)_
+
+[^Schnittstellen _ FACT Ratingplattform _-_ ext-Orbis Bank Focus (1428) - iteraplan.pdf] _(12 kB)_"	"16/Mar/17 10:38 AM;cst;Hallo Herr Neydek,
+
+vielen Dank für Ihre Antwort. 
+
+Korrekt, der Ausdruck im classic Client verschiebt den Seitenrand nach rechts. Es wird an dem Ausdruck nicht mehr im classic Client angepasst.
+ Habe in Version 5.5 den Ausdruck bei der ""Single Element View"" mit STRG + P getestet und das Ergebnis an das Ticket angehängt. 
+
+[^Test55.pdf]
+
+Zusätzlich werde ich das Thema ausdruck, nochmals an unserer Produktentwicklung weiter geben, Änderungen werden hier nur den interaktiven Client betreffen. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+ "	16/Mar/17 10:38 AM;cst;[^Test55.pdf]	"17/Mar/17 12:15 PM;martin.weidemann@l-bank.de;Hallo Herr Stangl,
+
+das Update ist inzwischen eingespielt. Ich habe allerdings immer noch Anzeige-Probleme. Wobei ich es nun noch weiter eingrenzen konnte.
+Um zu verhindern, dass ""--"" gleich durchgestrichen bedeutet, haben wir gem. Vorgabe ein ""~"" davor gesetzt. Und genau hier scheint das Problem zu liegen. Klingt unbedeutend, aber leider verwenden wir das tatsächlich in den produktiven Daten und zwar im Beschreibungstext bei den Geschäftsobjekten. Und dort treten die Anzeigeprobleme auch auf (da hatte ich bisher noch nicht nachgeschaut).
+
+Im neuen Client scheint aber ""--"" nicht mehr dazu zu führen, dass der Wert durchgestrichen wird. ""----"" wird komplett ignoriert. Hatte gedacht, dass er sich evtl. an diesem Befehl aufhängt.
+
+
+"	"17/Mar/17 12:21 PM;martin.weidemann@l-bank.de;Hier scheint das mit dem Durchstreichen noch zu funktionieren...
+Ich brauche jetzt nicht unbedingt für Version 5.5 eine Lösung, da wir produktiv sicherlich bis zum Erscheinen von der nächsten Version weiter mit dem Classic Client arbeiten werden. Dann wäre eine Lösung interessant oder alternativ zumindest ein Hinweis auf die Probleme mit Lösungsvorschlag (per Massenupdate habe ich die ~ ja einigermaßen zügig entfernt).
+
+Gruß
+Martin Neydek
+
+
+
+!Test Formatierung.jpg|thumbnail!
+
+!Test Formatierung Eingabe.jpg|thumbnail!
+
+!Test Formatierung 2.jpg|thumbnail!
+
+!Test Formatierung Eingabe 2.jpg|thumbnail!"	"21/Mar/17 8:51 AM;cst;Werden den Vorgang weiter prüfen und diesen in Version 6.0 lösen.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support"																																				

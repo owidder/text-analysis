@@ -1,0 +1,7 @@
+Wrong color for Architectural Domain in the legend	"Steps to reproduce:
+1. Go to LSD page
+2. Select Technical Component as content type
+Actual:  Wrong color for Architectural Domain in the legend
+Expected: Architectural Domain should has color as Technical component (according to Original system)
+"	47458	Sub-task	iteraplan PO	24/Mar/15 9:20 AM	24/Mar/15 1:02 PM													"Workspace: Windows 8.1
+Browser: Google chrome 39.0"																																																							

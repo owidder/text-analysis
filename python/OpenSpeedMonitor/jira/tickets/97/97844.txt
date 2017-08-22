@@ -1,0 +1,59 @@
+Single Element View of Attribute (Read-only)	"*Summary:*
+
+Create a Single Element View for attributes
+
+
+
+*Details:*
+
+* Use Angular Material Design
+
+* Use Card Layout
+
+* Same page should be applicable to all attribute types: Enumeration, Numeric, Text, Date, Responsibility, best would be Date Interval, too
+
+* REST-API and JSON-structure will be defined in: IPTQ-164
+
+* Fully localised
+
+* User setting: all activated features of the lists are stored only one time for all attributes
+
+* No REST-Request, but gets its data from the ""attribute-service""
+
+
+
+*Structure:*
+
+NAME
+
+DESCRIPTION FIELD
+
+""Attribute Type:"" ATTRIBUTE TYPE (all attribute types)
+
+""Attribute Group:"" ATTRIBUTE GROUP (all attribute types)
+
+""Mandatory Attribute:"" YES/NO (all attribute types)
+
+(specific fields for certain types)
+
+""activated for the following Building Block Types:"" (all attribute types)
+
+LIST OF BBTYPES AND RELATIONS (just in new lines, no ag-grid)
+
+""Possible Attribute Values:"" (specific for enum and responsibility type)
+
+COMMON LIST-COMPONENT WITH 4 COLUMNS"		New Feature	iteraplan Thunderduck	30/Sep/16 5:02 PM	23/Nov/16 1:10 PM														"11/Nov/16 11:40 AM;pma;DONE:
+
+* Detail view of attribute
+
+
+
+TODO:
+
+* Specify getAttribute from metamodel
+
+* now name and description is localized in the controller (see variable attributeLocalized). Please change that if both properties are given already localized
+
+* Possible Values table: currently, the first column is called ""Number"" while only enum attributes have numbers. if we have a detailed overview of a resposibility attribute, the first column should be called ""Type"" (see old client). Please ask the type property of the metamodel and configure the columns in admin/attributes/detail/detailListConfiguration.js"	"17/Nov/16 11:54 AM;mwe;The responsibility attribute possible values type column will be done in IPTQ-186.
+
+Currently the translationKey is shown."																																																					

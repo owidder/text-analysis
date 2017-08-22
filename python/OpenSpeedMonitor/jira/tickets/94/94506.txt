@@ -1,0 +1,1 @@
+Spinner im Design des OSM	Damit alles schön einheitlich aussieht, sollte der Spinner beim Laden des DetailDatenDashvboards der gleiche sein wie im OSM.		Task	OpenSpeedMonitor	29/Aug/16 9:19 AM																																																																					

@@ -1,0 +1,9 @@
+Check performance µedit vs µimport	for 3000 on TEST3 or TEST5		Task	iteraplan Thunderduck	08/Mar/17 5:04 PM	13/Mar/17 1:03 PM														"09/Mar/17 3:12 PM;ach;changing a string property for 3300 BusinessObects via parallel sending of 3300 /api/element requests : ~22min
+
+
+
+changing a string property for 3300 BusinessObects via excel import (mass import) : ~4min
+
+
+
+conclusion: the best way is to modify element resource to be able to change several bb's with one single request. Do not use several single change requests!"																																																						

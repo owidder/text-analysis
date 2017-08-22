@@ -1,0 +1,17 @@
+Incorrect error when configuring a query form under certain constellations with the "no value" operator	"To reproduce:
+
+1. Go to spreadsheet reports - InformationSystem
+2. Select ""Complexity"" as attribute to filter by, and select ""no value"" as operator
+3. Add another query part by click on ""OR""
+4. Select ""Costs"" as attribute to filter by in the new query part.
+5. Try to save the query.
+=>
+{quote}
+The following errors occurred:
+The entered number for high has an incorrect format. A valid number consists of an optional sign, an integer part (at most 13 places) and an optional decimal point with at most two decimal places (e.g. -99.99).
+{quote}
+
+It seems when using the ""no value"" operator (or probably any operator which doesn't use an argument) and you extend the query by another part via the ""OR"" button, the selected (although inactive) value-argument of the previous query part is copied to the new one on the backend, although it seems differently from the displayed values on the UI.
+When trying to save the query, this value is treated like a number, because it's found in a query part for a number attribute, although it shouldn't need to be handled at all (since ""no value"" doesn't need an argument).
+
+Workaround: Change the operator of the number attribute query part to something like ""greather than"", then back to ""no value"". Now the argument value has been refreshed and the query can be saved."		Bug	iteraplan PO	22/Nov/12 4:39 PM	30/Dec/15 2:19 PM					query																																																															

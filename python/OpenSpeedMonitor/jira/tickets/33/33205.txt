@@ -1,0 +1,5 @@
+Double: eingegebene Dezimalkommata und –punkte werden nicht berücksichtigt	"In Nutzereingaben vorhandene Dezimalkommata und –punkte werden beim Speichern immer behandelt als seien sie nicht da. Zum Beispiel wird eine Zahl wie 1999,2000 gespeichert als 19992000
+
+Tritt z.B. bei BrowserController, Feld weight auf"		Bug	OpenSpeedMonitor	26/Feb/15 11:47 AM	27/Feb/15 4:37 PM														"27/Feb/15 4:37 PM;rkr;Gelöst über http://stackoverflow.com/questions/14877602/grails-databinding-with-decimal-delimiter und Einbau der CustomDoubleRegistrar.java
+
+Anzeige der Zahlen erfolgt nun in Locale.English - Editieren erfolgt in ausgewählter Locale."																																																						

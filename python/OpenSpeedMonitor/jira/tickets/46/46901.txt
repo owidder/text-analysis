@@ -1,0 +1,5 @@
+Make sort oder of rectangles deterministic in NestingCluster diagram	"Currently, the order of rectangle symbols in NCD is determined by their order inside the model.
+
+The desired behavior is:
+The rectangle symbols on top level or nested inside another rectangle should be sorted alphabetically (case-insensitive).
+"		Improvement	iteraplan PO	22/Aug/14 12:50 PM	19/Jan/16 10:35 AM					diagram	nesting	visualization																																																													

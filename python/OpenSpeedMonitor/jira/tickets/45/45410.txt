@@ -1,0 +1,11 @@
+Inkonsistente Warnungen vor dem Löschen von Elementen	"Die Warnungen, die den Benutzer vor dem Löschen von Elementen, die Teil-Bebauungselemente enthalten, unterscheiden sich je nach Ort der Löschanfrage:
+
+- Wird aus der Ergebnisstabelle einer Suche direkt über die Aktionen gelöscht, wird der Nutzer nicht vor den evtl. Folgen der Löschung gewarnt. Es wird nur gefragt, ob das Element gelöscht werden soll: ""Wollen Sie wirklich das Element löschen?""
+- Wird aus der Detailansicht eines Elements gelöscht, wird der Nutzer auf die Löschung der Teil-Elemente hingewiesen: ""Wenn Sie dieses Bebauungselement löschen, werden alle direkten und indirekten Teil-Bebauungselemente gelöscht (direkte Teil-Bebauungselemente: x). Möchten Sie fortfahren?""
+
+Zur Reproduktion:
+- In den Business Processes der Bank-Datenbank über die Aktionen Spalte der Ergebnistabelle das Element ""Management processes"" löschen. Die erstgenannte Abfrage erscheint. > Abbrechen.
+- In die Detailansicht des ""Management processes"" Elements gehen. Das Element über ""Mehr"" > ""Löschen"" löschen. Die zweitgenannte Abfrage erscheint.
+
+Für den Benutzer sollte auch beim Löschen aus der Tabelle erkennbar sein, welche Auswirkungen das Löschen u.U. auch auf weitere Elemente hat."		Improvement	iteraplan PO	02/Mar/12 6:23 PM	11/Apr/12 6:03 PM														"04/Apr/12 10:24 AM;kvo;Vereinheitlichen ohne Information über Anzahl Teilelemente:
+Wenn Sie dieses Bebauungselement löschen, werden alle direkten und indirekten Teil-Bebauungselemente gelöscht. Möchten Sie fortfahren?"	11/Apr/12 6:03 PM;kvo;Funktioniert wie gewünscht																																																					

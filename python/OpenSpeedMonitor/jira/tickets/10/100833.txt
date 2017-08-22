@@ -1,0 +1,7 @@
+Log errors during write process in plugin API	"At the moment, no error is logged when a plugin fails to write its changes to db (e.g. due to database constraints).
+
+
+
+* Add a try-catch block around the writeChanges method call in ScriptServiceImpl.java (line 139) or at appropriate place.
+
+* Catch any exception, log it and throw it further"		Improvement	iteraplan PO	27/Oct/16 10:59 AM	03/Nov/16 3:14 PM																																																																				

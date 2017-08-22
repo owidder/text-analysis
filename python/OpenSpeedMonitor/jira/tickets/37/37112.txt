@@ -1,0 +1,17 @@
+Löschen größerer Datenbestände Lasttesten	"Unter Last sollen mit einer aktuellen OTTO-DB alle Daten > 13 Monate gelöscht werden. Dies soll in einem deployten OSM unter Einsatz des nächtlichen Quartz-Jobs geschehen. 
+
+Parallel dazu sollen alle Messungen gegen den WptServerMock weiterlaufen. 
+
+
+
+# OSM mit live-Datenstand OTTO deployen und gegen Mock laufen lassen
+
+# Nächtlichen Quartz-Job aktivieren
+
+# Prüfen
+
+## Wie schnell kommt der Lösch-Job voran
+
+## Werden alle Ergebnisse weiter persistiert
+
+## CPU-Last der Maschine, auf der der OSM läuft"		Task	OpenSpeedMonitor	08/Apr/15 10:14 AM	14/Apr/15 3:49 PM														14/Apr/15 3:49 PM;nku;duplicates IT-539																																																						

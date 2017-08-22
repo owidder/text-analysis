@@ -1,0 +1,3 @@
+Bar and Pie charts don't work with large data sets	"* When the result set is too large, and the button ""Send query & use results"" is clicked, then a java.lang.StackOverflowError appears. This was tested with multiple memory settings.
+* The error same occurs, if a large saved query is loaded by clicking on its name.
+* After this error, the associated user transaction cannot be closed, and the ""clear session"" link doesn't work either. (same error repeats)"		Bug	iteraplan PO	27/Jan/12 2:00 PM	22/Feb/12 8:13 PM					diagram									22/Feb/12 8:13 PM;sry;ok																																																						

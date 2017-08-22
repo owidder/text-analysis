@@ -1,0 +1,3 @@
+AuditLog should not contain call of BusinessMappingService#deleteOrphanedBMs()	"The Auditlog Interceptor relies on method naming conventions when it determines which operation should be logged.
+The method BusinessMappingService#deleteOrphanedBMs() (kind of) violates these conventions, leading to misleading entries in the audit log.
+The method should be renamed."		Bug	iteraplan PO	15/Nov/11 1:45 PM	04/Apr/12 7:21 PM					audit									04/Apr/12 7:21 PM;kvo;AuditLog of no interest																																																						

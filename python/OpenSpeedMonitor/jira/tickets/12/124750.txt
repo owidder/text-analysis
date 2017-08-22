@@ -1,0 +1,15 @@
+Zoom level is shown in downloaded files	"Steps to reproduce: 
+
+1) Open Masterplan
+
+2) Zoom diagram 
+
+3) Press download button and select SVG
+
+4) Open downloaded file
+
+
+
+Actual result: zoom level is shown in the legend of downloaded file
+
+Expected result: legend is displayed without zoom level in downloaded files"		Bug	iteraplan Speedbird	19/Jun/17 2:48 PM	29/Jun/17 3:25 PM																																																																				

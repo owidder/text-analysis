@@ -1,0 +1,39 @@
+Zooming bugs in cluster diagram	"1.Zoom level does not appear in legend after diagram initialization
+
+Steps to reproduce: 
+
+  1.1 open ""Cluster Diagram"" (do not apply any actions)
+
+  1.2 open legend
+
+Only after first action (for example click) on diagram zoom level will appear in the legend
+
+
+
+2. Diagram fit action sometimes has strange behavior
+
+Steps to reproduce: 
+
+ 2.1 open ""Cluster Diagram"" 
+
+ 2.2 change headers
+
+ 2.3 click on diagram
+
+  
+
+"		Bug	iteraplan Speedbird	24/Oct/16 5:11 PM	01/Nov/16 3:34 PM					cluster									31/Oct/16 9:26 PM;ants;Please specify what means "strange behavior" in order to define that it's fixed.	"31/Oct/16 9:38 PM;ants;Zoom level does not appear in legend correctly in case of changing browser windows size using default zoom (without user changing it by user).
+
+Steps to reproduce:
+
+
+
+1. Open CCD in half-sized browser window.
+
+2. Reset view.
+
+3. Select some header/rows - diagram automatically fits to window size, zoom level is displayed in legend correctly.
+
+4. Maximize browser window - diagram automatically increase zoom to fit maximized window, but zoom level in the legend is not changed.
+
+See screenshots for details."	01/Nov/16 8:57 AM;viol;Fixed in revision #4943, #4946	01/Nov/16 12:45 PM;mash;When changing header on initial loading we have 100% zoom, the legend still builds empty panel for zoom. (attached)	01/Nov/16 1:32 PM;viol;Fixed in revision #4956	01/Nov/16 3:34 PM;mash;Review is Done: https://iteraweb.iteratec.de/fisheye/cru/IP-138																																																	

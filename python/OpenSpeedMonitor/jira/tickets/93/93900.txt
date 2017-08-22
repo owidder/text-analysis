@@ -1,0 +1,1 @@
+DNS Metrik persistieren	Aktuell werden für die Assets nicht die DNS Zeiten persistiert. Die entsprechenden Daten finden sich unter runs[i].firstView.steps[n].requests.dns_ms		Bug	OpenSpeedMonitor	23/Aug/16 8:09 AM	23/Aug/16 8:43 AM																																																																				

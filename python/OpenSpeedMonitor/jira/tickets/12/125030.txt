@@ -1,0 +1,63 @@
+Same user with small and captial letters breaks iteraplan (server)	"*Scope:*
+
+* Users being created in administration\users (client + server)
+
+* Users being created by iTurm
+
+* LDAP is out of scope
+
+
+
+*Reproduce:*
+
+* Create two almost identical users:
+
+** 'Joachim.Vogt'
+
+** 'joachim.vogt'
+
+* Try to login with any user
+
+
+
+*Actual:*
+
+* Login is not possible
+
+* Excpetion:
+
+
+
+{code:java}
+
+> ""[ERROR] 21-Jun-2017 17:05:09
+
+> [springframework.security.LoginInitializationSuccessHandler] Data 
+
+> source is not available
+
+> de.iteratec.iteraplan.elasticmi.exception.ElasticMiSecurityException: 
+
+> A user with the login name joachim.vogt already exists or the 
+
+> persistent name is invalid""
+
+{code}
+
+
+
+*Expected:*
+
+* Login is possible
+
+
+
+*Solution idea:*
+
+Ensure it is no longer possible to create two users which only differ in the capital or small letters
+
+
+
+"		Bug	iteraplan Speedbird	22/Jun/17 4:36 PM															"20/Jul/17 8:55 AM;dmkh;[~msr], cannot reproduce neither on client or iTurm instance (current versions)
+
+!screenshot-1.png|thumbnail! "																																																						

@@ -1,0 +1,5 @@
+Graphics Reactor: Let the client/browser decide what to do with a published download	"As-is:
+All files published via the Graphics Reactor are downloaded and saved to disk, even if they are .html or .xml files which the browser could (and should) display and not save.
+
+Should be:
+The browser settings should determine how the content delivered by the Graphics Reactor is handeled."		Improvement	iteraplan Quickfox	26/Aug/16 9:39 AM	06/Sep/16 12:05 PM																																																																				

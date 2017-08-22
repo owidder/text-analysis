@@ -1,0 +1,7 @@
+Produktidee weiterentwickeln	"Fachliche Epics für das Product Backlog pflegen.
+
+
+
+In welche Richtung soll unser Produkt entwickelt werden?
+
+Welche fachlichen Komponenten in welcher Ausprägung benötigt das Produkt, um am Markt angeboten werden zu können?"		Story	secureCodeBox	14/Aug/15 2:54 PM															17/Aug/15 8:56 AM;jwr;Würde gerne einige Backlog-Ideen aufschreiben, die in Richtung Weiterentwicklung gehen insb. auf Basis des Ix-Artikels und dem Bedarf in den Dev-Teams. Arbeitsweise ist vorerst Best-Guess vor den ersten Kundenterminen																																																						

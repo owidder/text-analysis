@@ -1,0 +1,35 @@
+CLONE - Attribute - Enumeration Attribute - Possible Values edit fields are defect	"Reproduce with trunk
+
+ # Create a ""Enumeration"" attribute
+
+ # Click on ""New"" in the part ""Possible Values"" 
+
+ # Try to open the edit dialog for e.g. ""Name"" or ""Description""
+
+ # The edit dialog will not shown correctly
+
+
+
+When you open a existing ""Enumeration"" attribute, the problem is the same. The edit dialog will not be opened correctly.
+
+
+
+Expected: That is it possible to edit a ""Enumeration"" attribute
+
+ Actual: It is not possible to edit a ""Enumeration"" attribute
+
+
+
+ 
+
+
+
+ 
+
+
+
+!image-2017-05-23-17-46-08-551.png!"		Bug	iteraplan Speedbird	13/Jul/17 2:15 PM															"26/Jul/17 1:55 PM;olal;Scroll appears after opening editor
+
+Reproducable in all browsers 
+
+!screenshot-1.png|thumbnail! "																																																						

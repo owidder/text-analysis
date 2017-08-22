@@ -1,0 +1,5 @@
+Auswahl eines CSI-Mappings für eine Page: Andere Kurven noch zu kräftig	"Die grauen Kurven sind aktuell noch so kräftig, dass sie die ausgewählte Kurve (die ja eigentlich besonders hervorgehoben werden soll) überlagern.
+
+
+
+Bitte ein deutlich helleres Grau nehmen und die dann einzig farbige Kurve vielleicht auch leicht dicker zeichnen."		Improvement	OpenSpeedMonitor	18/Dec/15 2:36 PM	22/Dec/15 12:43 PM														22/Dec/15 12:43 PM;bwo;Das Grau wurde deutlich heller gewählt, zusätzlich ist die ausgewählte Kurve nun um den Faktor 2.5 breiter. Außerdem wird nun die aktuelle Kurve nach vorne geschoben, sodass diese vor allen anderen Kurven liegt.																																																						

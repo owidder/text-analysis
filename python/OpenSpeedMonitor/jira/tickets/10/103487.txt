@@ -1,0 +1,59 @@
+Show / Hide	"*Summary:*
+
+Show or hide elements
+
+
+
+*User Story Show:*
+
+* By double click on a related element within a group, all related elements of this related elements are shown again in groups (like initial diagram in IPTS-348) (=expand this element) *{color:green}DONE{color}*
+
+** Alternative: Select an element and click on the toolarea ""Show related elements"" (German: ""Zeige alle verbundenen Elemente"") *{color:green}DONE{color}*
+
+* The link starts (like for the first element in IPTS-348) from the selected Building Block to the groups *{color:green}DONE{color}*
+
+* Change the viewport that the selected element is in the middle of the screen *{color:green}DONE{color}*
+
+
+
+*User Story Hide:*
+
+* By double click on an already expanded element, hide this element and all related elements (i.e. close the whole subtree) *{color:green}DONE{color}*
+
+** Alternative: Select an element and click on the toolarea -""Hide this element"" (German: ""Blende dieses Element aus"")- ""Hide related elements"" (German: ""Blende alle verbundenen Elemente aus"") *{color:green}DONE{color}*
+
+** Exception: If this is the route element, it can not be hidden *{color:green}DONE{color}*
+
+* Change the viewport that the element, which is the element *before* the hidden element, is in the middle of the screen *{color:green}DONE{color}*
+
+
+
+Cycles: If easy to implement: Link back to the group of the existing elements in the diagram. *{color:green}DONE{color}*
+
+- {color:red}UPDATE{color}: Cycles: Do not include any cycles. Always create new groups for the expanded elements even if the IDs of the elements already appear in some other groups.
+
+-Limit: If there are more than 200 (200 for IE, 500 for other browsers) elments on the screen  (save it in a constant), make the next element on the path as route element and hide the old route element. Test the limits, if they fit.- *{color:green}DONE{color}*
+
+
+
+{color:red}UPDATE{color} Show an element multiple times in multiple groups if the element is related multiple times
+
+{color:red}UPDATE{color} order of expanded elements in the legend by selection date from top to bottom
+
+
+
+No unit tests."		New Feature	iteraplan Speedbird	22/Nov/16 5:03 PM	19/Dec/16 3:32 PM														02/Dec/16 4:39 PM;ants;I suggest that "Hide" button in toolarea should be named "Hide related elements" instead of "Hide this element".	02/Dec/16 5:09 PM;msr;Good idea: "Hide related elements" (German: "Blende alle verbundenen Elemente aus")	02/Dec/16 6:49 PM;ants;Legend details should be specified.	"05/Dec/16 6:15 PM;ants;Position of the ""Show/Hide"" button in the tool area should be specified.
+
+Currently it is located in ""Display"" tool area entry."	"05/Dec/16 8:00 PM;msr;Toolarea:
+
+1. position: ""Single Element View""
+
+2. position: Show/Hide-Toggle-Button on first level
+
+3. position: ""Coloring"""	"05/Dec/16 8:02 PM;msr;I like your suggestion regarding the legend:
+
+Legend:
+
+""Expanded elements"" / German: ""Erweiterte Elemente"""	07/Dec/16 1:03 PM;msr;order of expanded elements in the legend by selection date from top to bottom	"19/Dec/16 3:32 PM;viol;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-217
+
+no any comments"																																															

@@ -1,0 +1,45 @@
+Single Attribute View: save is broken for Numeric type with new rages	"*Reproduce:*
+
+* Open ""Administration"" -> ""Attributes""
+
+* Create a ""Numeric Attribute""
+
+* Click on ""Range uniform distributed:"" No
+
+* Click on ""Add a new range"" and set some ranges
+
+* Click on ""Save"" button
+
+
+
+*Actual:*
+
+* Nothing to save and show error message ""The modification could not be saved.  A model constraint is violated: Either the name of the element is not unique or the cardinality of a relation is violated.""
+
+* Also an exception is thrown:
+
+{code:javascript}
+
+angular.js:13424 TypeError: An exception occurred: Cannot read property 'persistentName' of undefined
+
+    at Scope.$scope.getAttributeGroup (attributesDetail-controller.js:298)
+
+    at fn (eval at compile (angular.js:14268), <anonymous>:4:242)
+
+    at Scope.$digest (angular.js:16860)
+
+    at Scope.$apply (angular.js:17133)
+
+    at angular.js:18962
+
+    at completeOutstandingRequest (angular.js:5824)
+
+    at angular.js:6100
+
+{code}
+
+
+
+*Expected:*
+
+* Success message is appear ""SUCCESS: Saved successfully"" and go back to the list "		Bug	iteraplan PO	25/Apr/17 3:36 PM	05/May/17 5:41 PM														25/Apr/17 3:37 PM;anhv;Please check this bug for another attribute types	05/May/17 5:41 PM;fka;Works with current trunk																																																					

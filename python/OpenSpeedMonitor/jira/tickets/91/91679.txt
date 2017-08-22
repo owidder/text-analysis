@@ -1,0 +1,3 @@
+CSI Messpunkte mit Wert 0 werden nicht angezeigt	"Für Ladezeiten und alle anderen Mess-Größen im OSM ist das korrekt, da Null als Wert nicht valide ist und nur bei Messfehlern auftritt.
+
+Für den CSI darf dies aber nicht so sein. Aktuell kann man weder im Ergebnis- noch im CSI-Dashboard CSI-Kurven für sehr schlechte Ladezeiten sehen."		Bug	OpenSpeedMonitor	26/Jul/16 4:36 PM	23/Jan/17 5:11 PM																																																																				

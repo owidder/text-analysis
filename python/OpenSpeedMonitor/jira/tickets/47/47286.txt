@@ -1,0 +1,17 @@
+Diagram stays unchanged when we use "Next"/"Previous" buttons after any grouping/filtering	"Steps to reproduce:
+
+SetUp: Use Architectural Domain as auter type, IS as inner type (for example)
+1. Go to NCD page
+2. Open Context menu for inner element
+3. Select ""Infrastructure elements"" as inner type
+4. Open Context menu for inner element
+5. Select ""Interface"" as inner type
+6. Navigate to Header menu 
+7. Click on ""Previous"" button
+8. Click on ""Previous"" button again
+Actual: URL link is  changes, but diagram is not
+Expected: What is the expected behavior?
+
+
+Wolfgang: The address and the view state must be in synch all the time.
+"		Bug	iteraplan PO	13/Jan/15 2:48 PM	16/Jan/15 11:36 AM														16/Jan/15 11:36 AM;dasm;Will be implemented in future when we get requirements for expected behavior of "Next" and "Previous" buttons in different cases (using of  changing outer/inner types or filtering/coloring)																																																						

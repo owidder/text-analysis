@@ -1,0 +1,13 @@
+Loading indicator for all diagram-downloads	"*Summary:*
+
+Please include a loading indicator for all diagram-downloads
+
+
+
+* especially Full-Downloads
+
+* especially PDF
+
+
+
+At the moment (28.02.17) the navigator has no loading indicator and some other diagrams have a loading indicator which disappears *some time before* the download is offered."		Improvement	iteraplan PO	28/Feb/17 1:50 PM																																																																					

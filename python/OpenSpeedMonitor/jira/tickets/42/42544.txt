@@ -1,0 +1,7 @@
+[3-C] Einführung CSI-System	"Es wird im OSM eine neue Entität CSI-System eingeführt. Für diese wird wie für die Job-Gruppen ein CSI berechnet. Das CSI-System stellt eine übergeordnete Job-Gruppe dar. Im System lassen sich beliebig viele Job-Gruppen vereinen, denen dann für dieses CSI-System jeweils ein Gewicht zugeordnet werden kann. Der Gesamt-CSI des Systems wird dann durch eine gewichtete Mittelwert-Bildung der Teil-CSI’s der beteiligten Job-Gruppen. So könnte beispielsweise ein CSI-System „otto.de“ berechnet werden aus den gewichtet gemittelten Job-Gruppen CSI’s für „live desktop“, „live tablet“ und „live mobile“.
+
+Es werden Oberflächen zur Erzeugung, Darstellung und Bearbeitung von CSI-Systemen im OSM implementiert. Im CSI-Dashboard lassen sich neben den CSI-Daten der bisherigen
+
+Job-Gruppen auch die aggregierten Daten von CSI-Systemen zur Anzeige bringen.
+
+"		Epic	OpenSpeedMonitor	03/Jun/15 5:30 PM	19/Jan/17 10:22 AM																																																																				

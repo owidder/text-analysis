@@ -1,0 +1,3 @@
+MultilineChart Highlighting	"Bei dem Zufügen eines CSI Mappings, beim bearbeiten einer Seite, sollte das ausgewählte Mapping hervorgehoben werden.
+
+Die Hervorhebung soll auch für den Löschvorgang genutzt werden."		Task	OpenSpeedMonitor	16/Dec/15 1:22 PM	18/Dec/15 9:02 AM														16/Dec/15 3:11 PM;bwo;Die Hervorhebung existiert nun. Bei Aufruf des Dialoges sollte jedoch noch kein Wert ausgewählt sein.	18/Dec/15 9:02 AM;bwo;Alle nicht ausgewählten Werte werden nun grau. Außerdem ist am Anfang kein Wert ausgewählt und auch der Apply Button wird erst dann aktiv, sobald ein Wert gewählt wurde.																																																					

@@ -1,0 +1,33 @@
+Filter value dissapears	"Timebox: 1 day
+
+
+
+how to reproduse
+
+* go to lsd
+
+* open filter dialog
+
+* filter by name - contains - ""crm""
+
+* close and reopen dialog
+
+
+
+filter value is not set and not present in URI.
+
+Create ticket to add appropriate tests. Decision what ""apropriate"" means depends on results from this defect."		Bug	iteraplan PO	25/May/16 1:35 PM	20/Jun/16 10:10 AM					filter									27/May/16 9:10 AM;sfe;Does this affect release 5.2? I could not reproduce the issue in the online demo so far. Using Firefox.	27/May/16 9:35 AM;ach;defect reproduced in actual trunk with chrome.	"13/Jun/16 10:04 AM;abo;Changes in the context of ITERAPLAN-4511 cause this defect - see my review-comments: https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-4511?focusedCommentId=113043&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-113043
+
+"	14/Jun/16 3:08 PM;abo;Follow-up Ticket: ITERAPLAN-4713	"15/Jun/16 10:29 AM;mse;There are two different problems now (not sure if they were really caused by this bug fix):
+
+
+
+# Select an attribute or an operator in the filter dialog: If you try to change the selection, the dropdown menu only contains the selected value. It is not possible to change the filter (see screenshot 1)
+
+# Make the steps from the ticket description: After reopening the filter dialog, the text field contains ""CRM"" but the attribute and operator selection has disappeared (see screenshot 2).
+
+
+
+Both issues seem to be connected with patches in external libraries.
+
+"	16/Jun/16 9:59 AM;abo;[~mwe] resolved issues accroding libs, Ticket can be reviewed now.																																																	

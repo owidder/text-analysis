@@ -1,0 +1,11 @@
+Update-service for mass-update (client)	"*Summary:*
+
+Create an update-service for mass-updates on the client which
+
+1. sends REST-requests
+
+2. updates the datamodel with the changes from the server-response
+
+
+
+This service is used from all editors/components of the mass-update."		New Feature	iteraplan Speedbird	21/Mar/17 5:16 PM	07/Apr/17 2:53 PM																																																																				

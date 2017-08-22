@@ -1,0 +1,1 @@
+Attributable Association: ISR-BO	It should be possible to add attributes on the association between InformationSystemRelease and BusinessObject.		New Feature	iteraplan PO	15/Nov/11 2:28 PM	14/Dec/11 11:02 AM					attribute																																																															

@@ -1,0 +1,7 @@
+Skript lässt sich nicht löschen 	"Auch wenn der Job bereits gelöscht wurde. Liegt vermutlich daran, dass wir Jobs nicht mehr löschen sondern nur noch als gelöscht markieren.
+
+Entweder wir müssen in diesem Fall die Referenz auf das Skript wegnehmen oder wir müssen das Skript analog als gelöscht markieren und überall von der Anzeige/Auswahl ausschließen. "		Bug	OpenSpeedMonitor	19/Dec/16 11:29 AM	20/Dec/16 4:39 PM														"20/Dec/16 4:39 PM;msk;#Jobs verlieren jetzt die Referenz zu ihrem Skript, wenn sie gelöscht werden.
+
+#Es gibt ein Changelog für bereits gelöschte Jobs.
+
+#Das Feld script in Job ist jetzt nullable."																																																						

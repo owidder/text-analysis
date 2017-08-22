@@ -1,0 +1,1 @@
+bootstrap-validator bei script/create und -edit einführen	Analog zur Job-View.		Task	OpenSpeedMonitor	21/Jun/17 10:00 AM																																																																					

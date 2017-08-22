@@ -1,0 +1,7 @@
+Rickshaw: show Datamarkers	"data markers an jedem Punkt im Chart anzeigen;
+
+soll ein/ausschaltbar sein:
+
+* im eventResultDashboard default aus
+
+* im CSIDashboard default ein"		Task	OpenSpeedMonitor	13/Nov/14 11:52 AM	14/Nov/14 3:15 PM																																																																				

@@ -1,0 +1,17 @@
+xAxis height in LSD not correct when hierarchy level e.g. "only level 3"	"Reproduction:
+
+- in LSD change x Axis to connected business processes
+
+- show with hierarchy level ""only level 3"" (also with ""only level 2"" and 1 )
+
+
+
+Expected:
+
+- the height of the xAxis title and the height of the xAxisgroups is the same (just change the size of the box)
+
+
+
+Actual:
+
+- the height of the xAxisgroups is greater"		Bug	iteraplan Speedbird	22/Feb/16 1:28 PM	25/Jul/16 12:12 PM					LSD									25/Jul/16 12:12 PM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-84.																																																						

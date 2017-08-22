@@ -1,9 +1,12 @@
 'use strict';
 
+/* global LZString */
+
 bottle.factory("NodesAndLinks", function (container) {
 
     var SimplePromise = container.SimplePromise;
     var proxy = container.proxy;
+    var Stream = container.Stream;
 
     function NodesAndLinks(forceId) {
 
@@ -55,7 +58,11 @@ bottle.factory("NodesAndLinks", function (container) {
         }
 
         function loadNodesAndLinks() {
-            proxy.getNodesAndLinks(forceId).then(function (nodesAndLinks) {
+            var stream = new Stream(function () {
+                return proxy.nextNodesAndLinksChunk(forceId);
+            });
+            stream.isReady().then(function (nodesAndLinksStr) {
+                var nodesAndLinks = JSON.parse(nodesAndLinksStr);
                 nodes = nodesAndLinks.nodes;
                 links = deserializeLinks(nodesAndLinks.links, nodesAndLinks.nodes);
                 addLinksToNodes();

@@ -1,0 +1,3 @@
+DB Update bei Deployment durchführen	"Beim Ausliefern der nächsten Version nach 2.2 muss das DB-Update-Skript
+/iteraSpeedDocumentation/Scripts/UpdateDB-versions-after-2.2.sql
+ausgeführt werden."		Bug	OpenSpeedMonitor	28/Nov/13 6:17 PM	03/Dec/13 8:19 AM														03/Dec/13 8:19 AM;nkuhn;Mit der Auslieferung von Version 2.2.5 gelaufen.																																																						

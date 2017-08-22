@@ -1,0 +1,44 @@
+Read data for LSD content and axes	"Create the JS class LSD data service and integrate in the LSD main class.
+
+In the scope of the super-ticket IPNINE-300, the data service does not yet take parameters or filter settings.
+
+Details:
+* the data service reads data from the data model, so inject it like this:
+** inject into the LSD controller by angular injection
+** pass it by constructor parameter into the LSD main class
+** and pass it by constructor parameter into the LSD data service class
+* For testing, pass either a simple mock class, or the real api data from the angular runtime.
+* the data service provides three accessors for the three lists of business objects:
+** elements of the content matrix (here in -300: Information Systems)
+** elements of the vertical axis  (here in -300: Technical Components)
+** elements of the horizontal axis (here in -300: Information System Domains)
+* all lists are already in the correct sort order: 
+** alfabetically ascending, if the building block type is not hierarchical, that is has no parent/children relationship (here in -300: Technical Component)
+** hierarchically ascending in tree-preorder, if the building block is hierarchical (here in -300: Information System Domain)
+* hierarchical order is defined like this:
+** first level of the tree are all elements without a parent, that is the parent property is an empty array
+** these elements in the first level are sorted by the position attribute
+** after each element of the first level, the next element in pre-order are the direct children, that is the elements in the children property.
+** recurse downwards until an element has no more children
+** NOTE: implementing the hiearchy sorting could be sliced off into an extra substask.  @Andrii: give me (Wolfgang) feedback if it helps splitting this off.
+* TO BE DISCUSSED: we could group the content elements right here in this service, because we know all what we need to know
+** instead of returning a flat list of business objects of the content elements, return a list of ""content groups""
+** each content group has 
+*** x-coodinate: business object of the x-axis
+*** y-coordinate: business object of the y-axis
+*** content elements: array of business objects in this group
+** the order of these groups is be the usual matrix order: left to right, top to bottom
+** groups with empty content are OK, missing groups in the list are not OK.
+** grouping  could be split off into a different task and/or in a different component/class
+
+* unit tests primarily for sorting and grouping. Direct access to all elements of a given type is not worth testing.
+
+* Idea for intermediate ""integration"" into the main program
+** the LSD main class creates and calls the LSD data service
+** the data service collects the data
+** the main class reads the data and logs a short form into the console, for example ""x-axis: 5 elements, y-axis 6 elements, content 539 elements in 30 groups, 8 groups empty.""
+
+* not yet: settings for differnt types, filter criteria
+* not yet: accessor for different levels of hierarchical axis elements
+* not yet: access via attributed connections (isr2bo) or muli-ended (business mapping)"	47318	Sub-task	iteraplan PO	26/Feb/15 4:13 PM	11/Mar/15 4:44 PM														"11/Mar/15 4:44 PM;wfr;Basic LSD ticket now split in a different way.
+"																																																						

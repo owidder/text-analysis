@@ -1,0 +1,49 @@
+List for roles (Client)	"*Summary:*
+
+Create a list page for the roles. Use the new styles attached.
+
+
+
+*Details:*
+
+* Use attribute-page as blueprint (with new styles)
+
+* Use the ipListComponent
+
+* Incl. Quick Search
+
+* All columns: Name, Description, Subordinate Roles
+
+* Name is link to the single role view
+
+* No url-interaction needed
+
+
+
+*New Styles:*
+
+* Use new buttons for ""Save As"" and ""Reset View"" (see Screenshot for Desktop-list)
+
+* Use new style for quick search and add column
+
+* Implement all new buttons in new css-class:
+
+** default-button white
+
+** action-button violet
+
+** secondary text button
+
+** primary text button
+
+
+
+*Font of buttons:*
+
+In Material Design, ist die Beschriftung der Buttons mit font-weight: 500; (Roboto Medium) formatiert, das macht es leichter lesbar.?Die Schriftgröße empfehle ich etwas zu reduzieren auf font-size: 12px, das gibt dem Text mehr Raum und sorgt außerdem für bessere Lesbarkeit. Zusätzlich, sollte die Beschriftung recht und links mehr Spacing haben. padding: 0px 10px;
+
+"		New Feature	iteraplan Speedbird	22/Feb/17 5:51 PM	10/Mar/17 8:49 AM														"09/Mar/17 5:26 PM;dmkh;Nice job!
+
+
+
+Review is done, few comments here: https://iteraweb.iteratec.de/fisheye/cru/IP-413"																																																						

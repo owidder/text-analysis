@@ -1,0 +1,11 @@
+POST without payload results in NullPointerException	"When I am logged in and POST to http://localhost:8080/iteraplan/api/data without adding any payload, then a NullPointerException occurs. This should be handled in another way! Additionally the client should not get any exceptions for security reasons.
+
+
+
+Note: the request was created with the Firefox Plugin HttpRequester with the following steps:
+
+# adding the URL
+
+# tab Content to Send: ContentType = application/json (was preselected); RadioButton File but no file selected
+
+# submitting the Request as POST"		Bug	iteraplan PO	25/Apr/16 12:35 PM																																																																					

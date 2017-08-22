@@ -1,0 +1,15 @@
+"next run"-Anzeige ist defekt	Die zeigt mitunter Zeiten in der Vergangenheit an. Screenshot ist von http://osm.lht.iteratec.de		Bug	OpenSpeedMonitor	24/Feb/17 9:08 AM	08/Mar/17 3:14 PM														"27/Feb/17 8:54 PM;nku;Wie in Slack beschrieben:
+
+
+
+UTC ist der default für docker-Container
+
+habe mal die timezone des hosts in den container gemounted: `-v /etc/timezone:/etc/timezone:ro`
+
+Und tatsächlich behebt das den Fehler :)
+
+
+
+
+
+@bwo Würde Dich bitten trotzdem nochmal nachzusehen, warum diese library (dachte das wäre js) von der serverseitigen timezone abhängig ist und dies dann hier zu dokumentieren oder ggf. noch zu fixen."																																																						

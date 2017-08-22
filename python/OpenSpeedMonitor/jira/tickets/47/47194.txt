@@ -1,0 +1,11 @@
+Icon for new Building Block Type: IT-Service	Create a new icon for the new building block type "IT-Service".		New Feature	iteraplan PO	24/Nov/14 5:21 PM	19/Jan/16 10:06 AM														"05/Dec/14 5:28 PM;wfr;I have shown the icons to a few guys here in the Munich office, but not yet to someone official.
+Reactions:
+
+Left one could be a printed circuit board.
+
+Middle one (computer or video screen) ist something else, but no service.
+
+right one (box with studs) is abstract, but could be a service with connections.
+
+I will gather more word associations that might be a source for visual ideas.
+"	15/Dec/14 4:13 PM;tala;contract icon																																																					

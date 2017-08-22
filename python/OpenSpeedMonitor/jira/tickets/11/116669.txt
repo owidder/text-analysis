@@ -1,0 +1,11 @@
+Update Migration Guide for Release 6.0	"Please update the Migration Guide for Release 6.0 with:
+
+ # Import-Process: Filename is not shown
+
+ #  Attribute Group Page: Permission are not shown and are not editable here anymore => now you need another permission to edit these
+
+ #  Metamodel changes do not trigger the reactions
+
+ # Usergroup-permissions (explicit permissions to Building Blocks) are lost because the user groups have been migrated to ""normal"" users (IPTS-889)
+
+ # ..."		Task	iteraplan Speedbird	27/Mar/17 2:24 PM	19/Jun/17 2:31 PM																																																																				

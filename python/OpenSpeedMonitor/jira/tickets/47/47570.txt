@@ -1,0 +1,13 @@
+NCD: Change the  value for coloring by numeric properties	"Summary: Colors were implemented as from green to red and from light to dark instead of from red to green and from dark to light
+
+Steps to reproduce:
+1. Go to NCD page
+2. Use Information System as inner type
+3. Use any coloring by numeric properties from red to green
+4. Use any coloring by numeric properties from dark to light
+Actual: Color scheme displayed as from green to red
+            Color scheme displayed as from light to dark 
+Expected: Color scheme displayed as from red to green
+                 Color scheme displayed as from dark to light
+"		Bug	iteraplan PO	02/Apr/15 3:37 PM	07/Apr/15 10:56 AM														"07/Apr/15 10:56 AM;dasm;not a bug.
+(see comment for IP9-370)"																																																						

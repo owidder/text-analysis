@@ -1,0 +1,27 @@
+Visio-Installationsdatei benötigt	"Hallo zusammen,
+
+
+
+könnt ihr mir bitte einen Link zu einer Installationsdatei für Visio schicken 8 (Windows 10)?
+
+
+
+Ich habe einen Key für Visio 2010 (von meinem alten Laptop); ich würde allerdings Visio 2016 bevorzugen, wenn wir das haben (dazu bräuchte ich allerdings auch einen neuen Key).
+
+
+
+Besten Dank im Voraus
+
+Harald"		Task	Infrastruktur	15/Nov/16 5:36 PM	18/Nov/16 2:35 PM	Sonstiges													"15/Nov/16 7:14 PM;ehi;Hallo Harald,
+
+
+
+der Key für Visio 2016 lautet: 2VX6C-NGKX6-DFG9G-GFVX9-2YVCB
+
+
+
+Die Installationsdateien findest du unter \\printsrv-muc\instdir\Systemsoftware\_Microsoft\Visio-2016-Pro
+
+
+
+Grüße, Elke"																																																						

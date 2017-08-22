@@ -1,0 +1,27 @@
+INCLUDE FEATURE: Line style by numeric attribute of interface	"*Summary:*
+
+Add a new feature to the Information Flow Diagram: Change the linestyle of edges by numeric attribute.
+
+
+
+*Details:*
+
+* The dotting of the line and the legend should be the same as the line type in the Landscape diagram
+
+* The configuration must be saved in the url
+
+* The naming of the entries in the toolarea should be similar to the toolarea in the Landscape Diagram
+
+* Put the calculation of numeric line style in a common function which should be used for the Landscape Diagram and the Information Flow Diagram"		New Feature	iteraplan PO	02/Sep/15 1:56 PM	26/Apr/16 3:45 PM					ifd									"26/Apr/16 11:33 AM;mwe;* ifdItemDecorator
+
+** Line 146: Function collectBorderLineValuesFunction() sets two only for this outer function global variables. Please resolve function.
+
+* Use ValueType.PRESENTATION.ENUM and ...NUM instead of ""enum"" and ""num""
+
+** ifdItemDecorator lines 229, 231
+
+** ifdToolAreaViewModelBuilder lines 431, 435
+
+* ""Numeric Property"" should only be shown if there are any numeric attributes (Please check the ""Enumeration Property"", too)
+
+* What should happen when there is only one numeric attribute set and so the min and max is the same."	26/Apr/16 1:47 PM;pma;If only one numeric attribute is set, it will have the linestyle of 50% of that numeric attribute.	26/Apr/16 3:45 PM;mwe;"Casted" percentValue to a string else it would always has one decimal place.																																																				

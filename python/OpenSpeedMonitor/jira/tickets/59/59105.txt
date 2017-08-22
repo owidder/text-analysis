@@ -1,0 +1,17 @@
+Fix header of IFD	Fix the header (incl. Toolbar) of the Information Flow Diagram so it does not scroll down or left-right any more.		Bug	iteraplan PO	05/Oct/15 8:30 AM	14/Oct/15 12:50 PM					ifd	position								"06/Oct/15 4:56 PM;ach;used lsd as blueprint
+
+
+
+(?) *BUT*: is it a good solution?
+
+
+
+*disadvantages*:
+
+* hard coded height difference.
+
+* explicit recalculating of the height on each window resize
+
+
+
+why not using bootstrap grid?"																																																						

@@ -1,0 +1,5 @@
+Bamboo Integration Tests starten manchmal nicht	"Hin und wieder kommt es auf dem Bamboo beim Ausführen der Integrationstest zu folgender Fehlermeldung:
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+
+Führt man den gleichen build noch einmal manuell aus, ist wieder alles in Ordnung."		Bug	OpenSpeedMonitor	30/Jun/16 9:04 AM	18/Jan/17 4:27 PM																																																																				

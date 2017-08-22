@@ -1,0 +1,8 @@
+Overview page - building block count is non-intuitive	"Go to EA data -> overview.
+
+The virtual root element seems to be counted, which leads to non-intuitive results. 
+
+* E.g. if there are no Products, the count says total: 1 
+* In case there are no Technical Components, the count says total: 0 "		Bug	iteraplan PO	05/Jul/13 2:16 PM	07/Aug/14 4:16 PM					aggregation	overview								"05/Jul/13 5:40 PM;sry;IMHO, Little relevance in reality, as hardly any customer works with an empty database. As soon as there are some elements, the discrepancy becomes irrelevant (I suppose).
+
+Recommendation: Have unused BB types removed from the overview page (like in startscreen)."	07/Aug/13 4:10 PM;aer;Hm, I don't know if it becomes more intuitive if there are elements. The count displayed is the real number of items of a BB type but the list displays only the hierarchically top-level elements. This is quite confusing, I think.																																																					

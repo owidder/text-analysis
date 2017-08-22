@@ -1,0 +1,5 @@
+Upgrading manuel Tests for Listview and Diagrams - User Profile 	"Upgrading the manuel tests with the ""User Profile"" input
+
+
+
+"		Task	iteraplan PO	11/Oct/16 2:02 PM	17/Oct/16 12:43 PM														11/Oct/16 3:03 PM;cst;Added User Profile Testcaste for the Building Block Lists	11/Oct/16 3:31 PM;cst;Added User Profile testcaste for Color Picker	11/Oct/16 3:40 PM;cst;Added User Profile testcaste for the Filters	11/Oct/16 3:47 PM;cst;Added User Profile testcaste for the Landscape Diagram	11/Oct/16 3:51 PM;cst;Added User Profile testcaste for the Masterplan Diagram																																																		

@@ -1,0 +1,29 @@
+Bamboo-Job mongodb Dump erstellen	"Analog zur MySQL sollten auch die Daten der Detail-Auswertung regelmäßig gesichert werden.
+
+
+
+Es gibt nur eine einzige Instanz des Detail-Datenservice.
+
+
+
+Diese läuft auf der folgenden Maschine:
+
+
+
+osm.hh.iteratec.de (addr:88.99.28.131)
+
+
+
+Die Container des Services heißen:
+
+ * Service: osmdetailanalysis_osm_da_1
+
+ * mongdb: osmdetailanalysis_osm_mongodb_1
+
+
+
+In diesem Repository sollten ggf. erforderliche Credentials untergebracht werden: git@iteragit.iteratec.de:webperformance-private/osm_credentials.git "		Task	OpenSpeedMonitor	12/Jul/17 10:22 AM															"26/Jul/17 8:45 AM;bwo;Ich habe den entsprechenden Plan erstellt: [https://iteraweb.iteratec.de/bamboo/browse/OSMDA-MP]
+
+
+
+Da ich keinen Zugriff auf den Server habe, konnte ich lediglich die Ausführung des Dumps lokal testen. Bevor wir den Plan aktivieren, sollte das Script von jemanden mit Zugriffsrechten manuell getestet werden."																																																						

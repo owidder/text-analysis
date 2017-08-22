@@ -1,0 +1,8 @@
+It is impossible to change content type after applying border line types	"Steps to reproduce:
+1. Go to LSD
+2. Use any border line types
+3. Try to change content type
+Actual: It is impossible to change content type after applying border line types
+Expected: Content type was changed"	47594	Sub-task	iteraplan PO	20/Apr/15 8:34 AM	22/Apr/15 3:53 PM													"Workspace: Windows 8.1
+revision: 951"	"20/Apr/15 4:07 PM;dasm;Verified
+(revision 960)"																																																						

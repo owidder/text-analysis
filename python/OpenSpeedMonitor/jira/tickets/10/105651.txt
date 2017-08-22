@@ -1,0 +1,69 @@
+Cannot create new index	"Hi,
+
+
+
+After upgrading from 5.0 to 5.4, the quick search utility was no longer working. 
+
+
+
+I tried to select ""Create new index"" as well as ""purge index before rebuilding"", however I receive the following error ""Could not get property value"". I've attached the Anonymized problem report that the error page allows me to generate."		Fault	iteraplan Support	13/Dec/16 10:38 PM	14/Feb/17 7:00 AM														"13/Dec/16 10:38 PM;mbennett@torontohydro.com;
+
+[^ProblemReport_2016-12-13_163717.zip] _(9 kB)_"	"19/Dec/16 9:23 AM;cst;Dear Mr. Bennet,
+
+thank you for your inquiry.
+
+Could you please check following points:
+
+# Go into the menue ""Administration"" - ""Configuration"" and click on the button ""Clear Cache""
+# On the path ""[TOMCAT7]\work\Catalina\localhost\"" clear the iteraplan instance folder
+# Clear the the index path, which was defined in the setup of iteraplan
+# Restart you TOMCAT Server 
+# As last step, create the index again
+
+When the error shown up again, we need the iteraplan.log and the catalina.log for the next analyse steps.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"19/Dec/16 3:15 PM;mbennett@torontohydro.com;Hi,
+
+I've followed these steps and attached the log files. 
+
+
+Regards,
+Matt
+
+[^logs_Dec19.zip] _(7 kB)_"	"22/Dec/16 9:04 AM;cst;We going to check this problem too, with the DUMP of your database.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "	"04/Jan/17 3:14 PM;mbennett@torontohydro.com;Hi,
+
+As stated in my other ticket, we cannot provide a dump of the database.
+
+I will try running the new migration tool to see if this resolves the issue. 
+
+
+Regards,
+Matt"	"04/Jan/17 4:48 PM;fka;Hi Matt,
+
+thank you, we will then wait for your feedback on the index issue.
+
+Best regards
+Fabian"	"09/Jan/17 10:45 PM;mbennett@torontohydro.com;hi,
+
+I ran the new migration tool, but unfortunately it did not resolve this issue.
+
+
+Regards,
+Matt"	"26/Jan/17 9:00 AM;cst;Hi Matthew, 
+
+we have loacated the problem with the creation of the index.
+
+The reason is a problem with a older versions of Oracle 12c. There is a bug which has been fixed in newer versions. 
+Could you please check following ""Trouble Shooting"" Articel we created for this problem:
+
+https://www.iteraplan.de/doc/display/IKB/Search+Index+creation+fails
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"																																															

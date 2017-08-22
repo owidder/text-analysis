@@ -1,0 +1,42 @@
+Oracle JRE - license check	"Hello Support,
+
+
+
+At a maintenance check of our infrastructure, we found a topic, where we need some input.
+
+
+
+Oracle Java (1.7 and higher) has features includes, at the moment we use it, we need a separate license for it. Because of your system requirements, we must use Oracle JRE.
+
+
+
+So can you comment the question, if you use one of the features, the customer has to license?
+
+
+
+ http://www.oracle.com/technetwork/java/javase/terms/products/index.html
+
+
+
+Licensing Considerations and Restricted-Use Licensing    Commercial Feature Availability by Product Edition        Table 1-1 - Commercial Features in Java SE Product Editions (and Oracle Java SE Embedded)
+
+
+
+Regards 
+
+Matthias Roth"		Technical question	iteraplan Support	28/Apr/17 7:55 AM	28/Apr/17 12:41 PM														"28/Apr/17 11:56 AM;fka;Hello Mr Roth,
+
+iteraplan only uses the freely available features of the Oracle JRE. No features listed in the table 1-1 are needed.
+
+So no Oracle JRE license is required for running iteraplan.
+
+Best regards
+Fabian Kainzinger"	"28/Apr/17 12:11 PM;matthias.roth@dekra.com;Hello Mr Kainzinger,
+
+thank you for the answer.
+So we are save.
+You can close the ticket.
+
+Have a nice weekend.
+Regards,
+Matthias"																																																					

@@ -1,0 +1,25 @@
+Lizenzkey	"Für die Aktivierung einer Test-Installation von iteraplan bei Swiss Life benötige ich einen gültigen Lizenzschlüssel. Könnt
+
+ihr mir den bitte zukommen lassen?
+
+
+
+Tausend Dank & herzliche Grüße
+
+Daniel Goetze
+
+
+
+"		Technical question	iteraplan Support	12/Jul/17 7:48 AM	12/Jul/17 8:24 AM														"12/Jul/17 7:51 AM;cst;Sehr geehrter Herr Götze,
+
+vielen Dank für Ihre Anfrage.
+
+Wie gewünscht, hier der Lizenzschlüssel: 
+
+U3dpc3MgTGlmZSBBRywgTmllZGVybGFzc3VuZyBmw7xyIERldXRzY2hsYW5kADMxLjEyLjIwMTcANzI3OTU1NDE3OEUzMUNFRTE3M0VFQTgwODQ5NjUxOTMxOEZBNTI3NzJBMkE3NTc3MkY1MzM5MDg0QjkzQTM5RA==
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+ "	12/Jul/17 8:23 AM;daniel.goetze@swisslife.de;Vielen Dank, iteraplan läuft jetzt (wieder).																																																					

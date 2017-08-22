@@ -1,0 +1,15 @@
+phantomJS durch chrome headless ablösen	"phantomJS wird nicht mehr weitergeführt.
+
+Wir sollten auf chrome headless zum ausführen unserer integration tests wechseln:
+
+[https://hub.docker.com/r/selenium/node-chrome/]  oder
+
+[https://hub.docker.com/r/selenium/standalone-chrome/]
+
+
+
+
+
+
+
+Dies löst wahrscheinlich auch IT-1427, sodass wir diverse Tests wieder aktivieren können."		Task	OpenSpeedMonitor	03/May/17 5:59 PM	27/Jun/17 9:49 AM																																																																				

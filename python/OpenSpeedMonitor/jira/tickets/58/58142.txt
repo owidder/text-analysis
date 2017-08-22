@@ -1,0 +1,1 @@
+Persistenz/Datenmodell Browser-, Page- und HourOfDay-Gewichtung pro CsiConfiguration			New Feature	OpenSpeedMonitor	24/Sep/15 1:45 PM	10/Dec/15 1:19 PM																																																																				

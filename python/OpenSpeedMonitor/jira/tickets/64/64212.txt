@@ -1,0 +1,11 @@
+Refactoring of metamodel.js	"adjust existing functionality for useing new metamodel implementation as far as possible
+
+
+
+"	63140	Sub-task	iteraplan PO	20/Nov/15 11:19 AM	03/Dec/15 1:54 PM														"23/Nov/15 4:01 PM;ach;tried to reimplement getMetaTypeDefinition() -> this methode is used on several places in code (thereby some of them should use getFeaturesListByName insetad of getMetaTypeDefinition). 
+
+so refactoring of getMetaTypeDefinition causes refatoring of other methods, which should be refactored too. 
+
+Is it not the better way to define a new fixed API, implement it in dataModel.js and use it consistently instead of switching old functionality to new implementation (method by method) and adjust it's usage?"	"27/Nov/15 8:25 AM;dam;should metaModel be in use at all diagramms, delete enumBy() in metaModel.js
+
+"	01/Dec/15 3:46 PM;dam;adjust of exisiting functionality is no longer important. we made a "hard" refactoring and adjust the diagrams directly.	03/Dec/15 1:54 PM;ach;[~dam] commited to ITERAPLAN-4162																																																			

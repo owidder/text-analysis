@@ -1,0 +1,11 @@
+Feedback - QS (Chris Ticket) 	"Monday 15.05.2017 
+
+ * (x) From my point of view would be nice to do the Legend over the Diagram. 
+
+ * (/) For Legend needs to change mouse cursor colorpicker to hand icon when clicking on the field with name. Because, at least for first time, it is not trivial to find and understand where is the colorpicker (WIll be in the next review)
+
+ * (?) Filterdialog: This case is only valid for monitors over than 13 inches. Since ""Filter"" dialog is not movable, it is not possible to see result of filtering on 13 inches (Talking to Fabian)
+
+ * (x) Download Name which is generated is really strange (Format)
+
+ *"		Task	iteraplan PO	15/May/17 11:40 AM																																																																					

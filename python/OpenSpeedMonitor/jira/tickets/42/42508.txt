@@ -1,0 +1,17 @@
+GUI Job-Bearbeitung	"Die Umsetzung ist fachlich im Epic beschrieben.
+
+
+
+In den Views zum Erzeugen und Bearbeiten von Jobs soll die Internet-Connectivity erweitert werden. Im Einzelnen soll folgendes passieren:
+
+* Die Domain de.iteratec.osm.measurement.schedule.Job soll um ein neues Attribut customConnectivityName (String) erweitert werden. Dieses ist not nullable, wenn {code}customConnectivityProfile = true{code}.
+
+* In der Job-GUI werden die Felder für custom connectivities derzeit sichtbar, wenn man ""Native: no synthetic traffic shaping"" auswählt. Dies soll geändert werden: Wenn man native auswählt bleiben die Felder nicht sichtbar. Dann sollte eine Messung ohne Traffic Shaping erfolgen. Zusätzlich benötigen wir einen Eintrag ""Custom Connectivity"". Wird dieser ausgewählt werden die custom Felder (wie die Attribute bandwidthDown, -Up, latency, ...) sichtbar und man kann sie setzen.
+
+* Zudem gibt es ein neues Feld für den Namen der custom connectivity (siehe oben). Dieses wird ebenfalls erst sichtbar, wenn man ""Custom Connectivity"" auswählt.
+
+* Das neue Attribut CustomConnectivityName wird sinnvoll vorbelegt: 
+
+Custom ([bandwidthDown]/[bandwidthUp] Kbps, [latency]ms Latency, [packetLoss] plr)
+
+Diese Vorbelegung sollte sich automatisch anpassen, wenn man die Einzelwerte verändert. Das Feld für den Namen sollte disabled sein (per Default). Zudem sollte es eine Checkbox ""Set Name manually"" geben. Diese ist per Default nicht gesetzt und wenn man diese setzt kann man den Namen manuell bearbeiten und dieser wird auch nicht mehr per Javascript verändert."		Task	OpenSpeedMonitor	03/Jun/15 9:54 AM	22/Jun/15 2:46 PM																																																																				

@@ -1,0 +1,13 @@
+Makros können nicht in Confluence eingefügt werden	"Wenn ich in Confluence ein Makro einfügen möchte, z.B. das ""Info""-Makro, so passiert rein gar nichts mehr. Wenn ich ""Other macros"" auswähle, so kommt der Pop-up-Dialog nicht mehr hoch, in dem alle Makros auswählbar waren.
+
+
+
+Einige Makros der Vorauswahl funktionieren sogar noch, aber nicht alle. Leider nicht die, die ich brauche.
+
+
+
+Da unsere Seiten natürlich schon diese Makros teilweise verwendet haben, lassen sich diese nicht mehr korrekt darstellen.
+
+
+
+Was muss getan werden, damit die Makros wieder auswählbar sind, wieder eingefügt werden können, und auch wieder ausgeführt werden?"		Task	Infrastruktur	20/Apr/17 4:41 PM	27/Apr/17 12:26 PM	Confluence													27/Apr/17 12:26 PM;kti;Makro-Browser wieder funktionsfähig																																																						

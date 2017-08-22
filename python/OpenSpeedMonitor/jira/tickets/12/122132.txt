@@ -1,0 +1,91 @@
+Mass Delete: Exception	"*Summary:*
+
+Mass Delete functionality throws exception
+
+
+
+Reproducible in minified (built) version
+
+
+
+*Reproduce:*
+
+* Open the list of Information Systems
+
+* Click on ""Mass Update""
+
+* Select 2 Information Systems
+
+* Click on the Mass Delete
+
+
+
+*Actual:*
+
+* No dialog appears, just an exception:
+
+
+
+
+
+{code:java}
+
+http://iteraplan.iteratec.de
+
+:8080/iteraplan-devel/client/#/list/InformationSystem?columns=fieldK%2FnameP%2FpropertyTypeK%2FstringP
+
+%2FwidthK%2F210P%2FsortK%2FascP%2FsortedAtK%2F0B%2FfieldK%2FdescriptionP%2FpropertyTypeK%2FrichtextP
+
+%2FwidthK%2F1169&filter=&quickfilter=&treeViewMode=list"",""message"":""Error: An exception occurred: [$injector
+
+:unpr] Unknown provider: aProvider <- a\r\nhttp://errors.angularjs.org/1.5.3/$injector/unpr?p0=aProvider
+
+%20%3C-%20a"",""userAgent"":""Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0"",""exception""
+
+:""d/<@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633.js:22:12236
+
+\r\neb/w.$injector<@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:23:1011\r\nd@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:22:31938\r\neb/B<@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:23:1094\r\nd@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:22:31938\r\ne@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:23:237\r\ng@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:23:439\r\ntb/this.$get</</q<@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:23:25755\r\ne@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:29:2865\r\nq@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:29:16810\r\nm/</<@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:29:15894\r\nh@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:24:14976\r\ni/<@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:24:15148\r\n$eval@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:24:22657\r\n$digest@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:24:21161\r\n$apply@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:24:22942\r\ncompile/</<@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:26:25642\r\nYa@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:22:29249\r\nc@http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1495466356633
+
+.js:22:29198
+
+{code}
+
+
+
+*Expected:*
+
+* No exception and a confirmation dialog appears"		Bug	iteraplan Speedbird	23/May/17 11:46 AM	01/Jun/17 3:42 PM														01/Jun/17 3:42 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-636																																																						

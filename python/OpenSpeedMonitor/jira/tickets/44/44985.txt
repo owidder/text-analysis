@@ -1,0 +1,13 @@
+Creation of new Attribute Type Group not possible when assigning access rights for certain roles at creation time	"If you create a new Attribute Type Group and choose roles for ""Access only with the following roles"", you'll get a NullPointerException related to Roles when trying to save.
+This also happens when trying to assign such roles for already existing Attribute Type Groups."		Bug	iteraplan PO	08/Jun/11 10:58 AM	30/Jun/11 1:52 PM					AttributeTypeGroup									23/Jun/11 4:21 PM;bsi;OK	"23/Jun/11 4:36 PM;bsi;There is a {{ConcurrentModificationException}} when try to delete an ATG with both included Attributes and Roles assigned. But there should be at least 2 assigned Roles.
+
+Reproduction:
+1. Create new ATG with 1 {{Included Attributes}} and 2 {{Access Roles}}
+2. Delete that ATG
+3. -> {{ConcurrentModificationException}}
+
+{noformat}
+Caused by: java.util.ConcurrentModificationException
+        at de.iteratec.iteraplan.businesslogic.service.AttributeTypeGroupServiceImpl.removeAllPermissionsRolesFromATG(AttributeTypeGroupServiceImpl.java:98)
+        at de.iteratec.iteraplan.businesslogic.service.AttributeTypeGroupServiceImpl.deleteEntity(AttributeTypeGroupServiceImpl.java:90)
+{noformat}"																																																					

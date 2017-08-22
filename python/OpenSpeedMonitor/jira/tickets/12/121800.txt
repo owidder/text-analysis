@@ -1,0 +1,31 @@
+History - Having or creating a seal crashes classic client (server)	"Reproduce with trunk and version 5.5
+
+ # Open ""Administration"" and ""System""
+
+ # Activate the History 
+
+ # Change to the classic client
+
+ # Edit a Information System and click on ""More"" and choose ""Create new seal""
+
+ # A error appears + Stacktrace
+
+ # The same happens when you try to open a seal
+
+
+
+Expected: That you can use seal and history together
+
+ Actual: The software crashes with seal und active history
+
+
+
+Please contact [~aan] or [~tsc] for questions regarding the history-hibernate-event-listeners.
+
+
+
+Please commit the changes to trunk and to the  branch of Release 5.5.
+
+
+
+Please create a patch for release 5.5 for that"		Bug	iteraplan Speedbird	19/May/17 8:09 AM	06/Jun/17 9:48 AM														23/May/17 5:10 PM;fka;Maybe a patch for 5.5 is needed, too.	01/Jun/17 3:21 PM;msr;Send patch to     IPS-444	06/Jun/17 9:48 AM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-644																																																				

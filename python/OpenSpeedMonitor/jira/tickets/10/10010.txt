@@ -1,0 +1,7 @@
+Anpassung Job-Auswahl CSI-Dashboard	"Nach der Auswahl eines CSI-Systems und von Pages werden derzeit die entsprechenden WptJobConfigs zur Auswahl angeboten. Diese Auswahl muss zukünftig neben den bisherigen Single-Step-Jobs auch die Steps der neuen Multi-Step-Jobs enthalten.
+Die Auswahl dieser Elemente muss an das angepasste Datenmodell (siehe IT-9) angepasst werden."		Story	OpenSpeedMonitor	28/May/13 5:29 PM	10/Sep/13 2:53 PM														"09/Jul/13 5:44 PM;jwerschmoeller;Rüdiger: Scheint noch nicht begonnen
+
+Geschätzter Aufwand: 4-6 PT"	"01/Aug/13 12:31 PM;mzeimer;Neuer Design Vorschlag vom 1.8.2013:
+!20130801_Balsamique_CsiDashboard.png!
+
+Von Jan Vogel (Kunde/Otto) noch nicht genehmigt!"																																																					

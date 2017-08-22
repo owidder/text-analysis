@@ -1,0 +1,94 @@
+After Migration to 6.0 - Error message when conecting	"After the Migration of our Iteraplan Test Database to version 6.0, we get an error message while connecting -> see screenshot
+
+
+
+The login credentials to the database have not been changed.
+
+Access to the old productive database is still working, only the connection to 6.0 doesn't work.
+
+
+
+
+
+ "		Technical question	iteraplan Support	07/Jul/17 12:03 PM	10/Jul/17 1:37 PM														"07/Jul/17 12:03 PM;tobias.jansen@ifm.com;
+
+!Screenshot Iteraplan login.png|thumbnail!"	"07/Jul/17 12:47 PM;cst;Hallo Mr.  Jansen,
+
+vielen Dank für Ihre Anfrage.
+
+Würden Sie mir bitte die aktuellen Log-Dateien hierzu zukommen lassen, dann prüfe ich das weitere vorgehen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"07/Jul/17 1:18 PM;tobias.jansen@ifm.com;[^iteraplan-6.0.0.log] _(18 kB)_
+
+[^catalina.2017-07-07.log] _(52 kB)_
+
+[^iturm.log] _(10 kB)_"	"07/Jul/17 1:19 PM;tobias.jansen@ifm.com;
+Hallo Herr Stangl,
+
+vielen Dank für Ihre email.
+
+Anbei die gewünschten Logs der Iteraplan Ver.6 Installation.
+
+Kurze Zusatzinformation:
+Die Test-Datenbank ipln600tst befindet sich auf dem gleichen Server wie die
+produktive Datenbank ipln510prd.
+
+Auf die produktive Datenbank (Version5.1) ist der Zugriff jedoch möglich.  
+
+ 
+
+ 
+
+"	"07/Jul/17 1:25 PM;cst;Guten Tag Herr Jansen,
+
+ist es möglich, das wir am Montag hierzu einen Termin machen und uns das über ein Fernwartungstool anschauen? 
+Die Meldung ist direkt jetzt kein Problem von iteraplan, sondern hat die Ursache bei der Verbindung zur Datenbank. 
+
+Denke das wir hier Schritt für Schritt die Fehlerquellen prüfen und die Ursache für das Verhalten zu finden.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"07/Jul/17 1:40 PM;tobias.jansen@ifm.com;Hallo Herr Stangl,
+
+sehr gerne können wir für Montag einen Termin ausmachen, ich habe lediglich von 10 - 11 Uhr einen Termin.
+Wann würde es bei Ihnen passen?
+Alternativ wäre ich heute noch bis 18 uhr im Haus.
+
+Als Remote-Tool kann ich Teamviewer oder eine Bomgar Session anbieten.
+
+Wir hatten zuerst auch die Verbindung auf die SQL Datenbank in Verdacht.
+Allerdings:
+- wurde die Datenbank kopiert und Schritt für Schritt auf 6 migriert -> das bedeutet alle Zugriffsrechte / Passwörter sind gleich geblieben
+- Der Server hat verschiedene Iteraplan Datenbanken:
+Iteraplan Test, Iteraplan Prod, Iturm Test, Iturm Prod. Lediglich auf die 6er Datenbanken ist der Zugriff nicht möglich, die Web-Anmeldung der anderen Datenbanken ist möglich.
+- Anmelden auf die Iteraplan Datenbank mittels MSSQL Datenbank Manager direkt auf dem SQL Server mit dem Login ist problemlos möglich.
+- Login Daten wurden in den verschiedenen Dateien iteraplan-db.properties und context.xml abgeglichen und sind korrekt. Auch der Servername und der Port sind identisch.
+
+Gerne können wir dies aber noch einmal zusammen durchgehen.
+
+Viele Dank für Ihre Unterstützung.
+
+Viele Grüße
+
+Tobias Jansen"	"07/Jul/17 2:25 PM;cst;Hallo,
+
+machen wir Montag um 13:00 Uhr mit dem Tool Teamviewer.
+Wir haben für den Team-Viewer auch eine Lizenz im Haus, somit ist das kein Problem.
+
+Dann rufe ich Sie um 13:00 am Montag an. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+ "	"10/Jul/17 1:37 PM;cst;Konnte durch das Telefonat gelöst werden.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support"																																															

@@ -1,0 +1,7 @@
+Error in spreadsheet reports for information systems when using business mapping extension	"To reproduce with sample data:
+# Open to iteraplan
+# Navigate to spreadsheet reports
+# Select ""Properties of assigned Business Mappings - Business Processes/Business Units/Products""
+# Check the ""No associations"" checkbox
+# Send query
+=> General error page"		Bug	iteraplan PO	07/Jan/14 10:41 AM	10/Jan/14 4:45 PM					extension	queryform								10/Jan/14 6:39 PM;fka;Reviewed, nightly build																																																						

@@ -1,0 +1,21 @@
+Attribute - Attribute Group field do not work	"Reproduce with trunk
+
+ # Open ""Administration"" and ""Attributes""
+
+ # Open the attribute ""Accountability""
+
+ # Open the edit of Groupd
+
+ # Choose a other ""Group"" then setted
+
+ # The new attribute group will be shown, but after F5 the value of group = ""Default Attribute Group""
+
+
+
+ 
+
+
+
+Expected: The setted attribute group will be saved
+
+Actual: The setted group will not be saved"		Bug	iteraplan Speedbird	05/May/17 9:51 AM	20/May/17 11:09 AM														15/May/17 1:13 PM;olal;This bug is related to BE side	20/May/17 11:09 AM;mash;Review is done																																																					

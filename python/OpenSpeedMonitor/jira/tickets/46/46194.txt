@@ -1,0 +1,3 @@
+Minimum size of Nesting Cluster Diagram causes increased width of Clusters	"outer clusters of a nesting cluster diagram get drawn with increased width if there are only a few of them (see attachment).
+sometimes the clusters are directly attached to each others instead of being drawn with some sort of margin"		Bug	iteraplan PO	22/Oct/13 4:54 PM	24/Oct/13 1:41 PM														24/Oct/13 1:41 PM;lba;The drawing of few clusters no longer leads to a "broken" (wrong margin etc.) diagram, the clusters are now displayed correctly.	"24/Oct/13 6:10 PM;psc;Reviewed. Solution works. 
+Ticket will be closed."																																																					

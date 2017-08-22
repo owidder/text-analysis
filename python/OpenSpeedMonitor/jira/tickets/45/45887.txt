@@ -1,0 +1,3 @@
+consistency check "Are there any Building Block of the type All Building Block Types which do not have any association to other building blocks?" returns relators	"if one executes the above mentioned consistency check, the result contains relators that definitely have associations to other buildingblocks.
+
+Aolso, all the InformationSystems are without the releases, Links are not working, since they are the BaseInformationSystem type and not the release type."		Bug	iteraplan PO	12/Jul/13 10:30 AM	30/Dec/15 2:53 PM					consistency_check									07/Aug/14 4:27 PM;fka;Needs to be clarified what the desired behaviour should be.																																																						

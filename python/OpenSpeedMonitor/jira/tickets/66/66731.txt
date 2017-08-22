@@ -1,0 +1,55 @@
+Analyse Hibernate 4.3.x to 5.0 migration	"Collection information from migration guides and articles about the necessary steps end effort to migrate iteraplan from Hibernate 4.3.x to 5.0.
+
+
+
+This includes migrating the Spring Framework to a newer version, because the current version (4.1.7)  of the module ""spring-orm"" does not have Hibernate 5 support."	63118	Sub-task	iteraplan PO	14/Dec/15 9:55 AM	22/Dec/15 10:27 AM					hibernate	library	migration	spring						"16/Dec/15 11:35 AM;gph;*Migration from Hibernate 4.3 to Hibernate 5.0 issues:*
+
+* Hibernate patch needs to be adjusted for empty string handling (Oracle DB)
+
+* Some package changes (=> ""Organize imports"")
+
+* Rename all Spring ORM package names from "".hibernate4."" to "".hibernate5.""
+
+* Adjust Integrators' integrate() signature(s)
+
+* Hibernate Core 5.0.5 with Hibernate Search ORM 5.3.0 => AbstractMethodError on Spring container startup!
+
+	HibernateSearchIntegrator has wrong integrate() signature. Not compatible??
+
+* Some Configuration methods have been removed:
+
+{code}
+
+configuration.getClassMappings();
+
+configuration.generateDropSchemaScript(dialect);
+
+configuration.generateSchemaCreationScript(dialect);
+
+{code}
+
+	=> Should be replaced with Hibernate 5 Bootstrapping API
+
+	=> access to Metadata object can be difficult
+
+	Two possible hacks:
+
+		1. (MetadataSources) FieldUtils.readField(configuration, ""metadataSources"", true)
+
+			http://stackoverflow.com/questions/32090535/hibernate-5-and-spring-generate-ddl-using-schemaexport
+
+		2. Customize StandardServiceRegistryBuilder to hold and expose Metadata object
+
+			http://stackoverflow.com/questions/32780664/hibernate-migration-from-4-3-x-to-5-x-for-method-org-hibernate-cfg-configuration/33181827#33181827
+
+	Better solution(s) to be found...
+
+	Spring has a ticket: https://jira.spring.io/browse/SPR-13710
+
+	Even more ""solutions"": http://www.coderhelps.xyz/code/32178041-where-did-configuration-generateschemacreationscript-go-in-hibernate-5.html
+
+
+
+
+
+Nothing more to do at the moment. Hibernate 5 migration will not be done now."																																																						

@@ -1,0 +1,37 @@
+Fix Permission check on loading stored queries	"Permission check on loading stored queries has a wrong behaviuor. (see sqListView-controller.js)
+
+
+
+hasPermissionForBBType (called in savedQueriesService.setCurrentSavedQuery and in callback of nameCellRenderer) should check if user has permissions for *every* for calling diagram relevant BBT. E.g. for NCD check inner and outer type (only outer type check is implemented now).
+
+
+
+attributeIsContentType should check, if user have permissions to access corresponding attribute/attributes.
+
+
+
+ {color:#ff0000}UPDATE: {color} In case of missing permission for the content (all or some of the building blocks) display instead of the content-types: ""Permission is missing"" /GER: ""Fehlende Berechtigung""
+
+
+
+ 
+
+ # {color:#14892c}LSD: content type, rows, columns - DONE{color}
+
+ # {color:#14892c}NCD: inner type, outer type, path to inner elements, path to outer elements - DONE{color}
+
+ # {color:#14892c}MPD: content types for 3 levels - DONE{color}
+
+ # {color:#14892c}PFD: content type - NO UPDATES NEEDED{color}
+
+ # CCD: header (if headerCriteria.type === ""contentType""), rows (where type === ""contentType"") - DONE
+
+ # PCD: content type  - NO UPDATES NEEDED
+
+ # BCD: content type - NO UPDATES NEEDED
+
+ # TMD: content type - NO UPDATES NEEDED"		Bug	iteraplan Speedbird	10/Feb/17 3:07 PM	13/Mar/17 11:13 AM														"28/Feb/17 6:16 PM;roia;[~msr], should we handle the situation if the query has some filters with relations and current user has no permissions to these related building blocks?
+
+
+
+ "	01/Mar/17 1:51 PM;msr;The situtation for filter of related elements without permissions is not in scope of this ticket.	13/Mar/17 11:13 AM;dmkh;Review is done																																																				

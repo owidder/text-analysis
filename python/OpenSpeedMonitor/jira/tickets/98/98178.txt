@@ -1,0 +1,90 @@
+Export / Import	"Hi,
+
+
+
+I try to test in release 5.3 the IMPORT problem fixed in 5.2 and and I get  another one. The test is as simple as downloading all the data contained in our database and trying to upload it without making any change. I get the message :""The value """" of property ""Date classification"" of the object of type ""Information System"" with id 18,069 is invalid and will be ignored"" for each line.
+
+
+
+Thanks
+
+
+
+Claude Lamy
+
+Loto-Québec"		Fault	iteraplan Support	04/Oct/16 9:28 PM	01/Nov/16 7:00 AM														"06/Oct/16 2:39 PM;cst;Dear Sir and Madam,
+
+thank you for your inquiry.
+
+When you import the same export in iteraplan without any changes, the software ignores the existing entrys.  
+
+https://www.iteraplan.de/doc/display/iteraplan53/Import+Strategies
+
+Would you please explain the bug you describe in the ticket? 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+"	"06/Oct/16 7:36 PM;SupportITERAPLAN@loto-quebec.com;Guten tag Christoph,
+
+I simply  downloaded data with filter « Information Systems » in an Excel file and uploaded back the same file the minute after without modifing it.
+
+Regards,
+
+Claude
+"	"10/Oct/16 11:57 AM;cst;Hallr Mr. Claude, 
+
+thank you for your reply.
+
+I checked the problem and here is the work a round for this behavior.
+
+The reason for the warning is the column type ""General"" in Excel.
+Would you please change the column type into ""date"", afterwards the warnings disappear on the import.
+
+I created a improvement ticket for this issues and it will be fixed in the upcoming versions. 
+
+Greetings,
+Christoph Stangl"	"11/Oct/16 9:44 PM;SupportITERAPLAN@loto-quebec.com;Hi Christoph,
+
+I still get the same messages even if i change the cells format to « date ».
+
+Regards,
+
+Claude
+"	"13/Oct/16 3:04 PM;cst;Hello Claude,
+
+thank you for your reply.
+
+Could you send me please your exported Excel-Sheet?
+With the Excel export, I can fix the issue. 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support 
+
+"	"14/Oct/16 2:24 PM;SupportITERAPLAN@loto-quebec.com;Hi Christoph,
+
+I first need the security department approval ...
+
+Thanks,
+
+Claude"	"14/Oct/16 2:35 PM;SupportITERAPLAN@loto-quebec.com;Hi Christoph,
+
+It's a bit complicated to send you an ""anonymous"" data file. Could you please tell me what could be your solution ?
+
+BEst regards.
+
+Claude"	"14/Oct/16 3:26 PM;cst;Hi Claude,
+
+I checked the work a round again and you can use the following steps to stop the warnings:
+
+# Change the column types in ""Date"", in every empty field where the warning appeared
+# Enter a fake Date, copy these in every changed field from step 1 (this is necessary!)
+# When this done, delete all dates which you copied in step 2
+
+This will be stop the warnings on the import because the fields have now  the correctly format.
+You can check this work a round on one empty field from the export. 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "																																															

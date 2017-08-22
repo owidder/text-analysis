@@ -1,0 +1,8 @@
+Technische Bausteine hierarchisch	"Guten Tag
+
+Es würde uns helfen, die Technischen Bausteinen ebenfalls hierarchisch abbilden zu können. Wenn wir KPI's definieren wollen und z.B. von einer Archiv Applikation 10 Module installiert haben, dann ist es trotzdem nur eine Archiv Applikation. Damit wir diese Aussage treffen könnten, wäre eine hierarchische Darstellung von hilfreich."		Technical question	iteraplan Support	30/May/17 2:55 PM	31/May/17 4:36 PM														"31/May/17 4:36 PM;msr;Guten Tag Herr Studer.
+
+Danke für Ihre Anfrage.
+Es handelt sich hierbei um einen Feature-Wunsch zum Umbau des Metamodells. Am besten kann diesen das Produkt Management Team bearbeiten und prüfen. Wäre es möglich, Ihren Wunsch direkt an die E-Mail-Adresse direct@iteraplan.de zu schicken?
+
+Vielen Dank."																																																						

@@ -1,0 +1,1 @@
+Dockerfile.test für Integrationstests die innerhalb des Containers laufen erstellen		93700	Sub-task	secureCodeBox	21/Aug/16 1:20 PM	07/Sep/16 9:55 PM	secureBoxZap				iteratec																																																															

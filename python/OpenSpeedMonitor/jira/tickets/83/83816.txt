@@ -1,0 +1,5 @@
+Implement multiple values for a single item in GoJS diagram	Display multiple values in one cell with multiple lines for each masterplan item	83118	Sub-task	iteraplan PO	10/May/16 4:49 PM	14/Jun/16 10:18 AM														04/Jun/16 2:18 PM;msr;Review done. Please have a look at the review comments: https://iteraweb.iteratec.de/fisheye/cru/IP-15	09/Jun/16 5:38 PM;mada;update unit tests	"10/Jun/16 2:02 PM;msr;Please implement comments to genericValue.js : https://iteraweb.iteratec.de/fisheye/cru/IP-15#CFR-21365
+
+"	"13/Jun/16 5:28 PM;mada;update JDoc
+
+strignify value before join in toString"	14/Jun/16 10:18 AM;msr;Looks good.																																																		

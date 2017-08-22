@@ -1,0 +1,2 @@
+Das Schreiben der Wochenwerte nach Graphite besser rausloggen	"Im OTTO-Graphite landen keine Werte.
+Zunächst sollten wir via Logging sehen, was hier passiert. Es könnte auch noch ein Problem mit der Aggregation im Graphite sein."		Task	OpenSpeedMonitor	17/Feb/14 5:09 PM	20/Feb/14 3:43 PM														20/Feb/14 3:43 PM;nkuhn;log4j-Logger für jedes Controller- und Service-package separat in die Config.groovy gelegt. So lässt sich in probe zur Laufzeit der LogLevel sehr gezielt verändern.																																																						

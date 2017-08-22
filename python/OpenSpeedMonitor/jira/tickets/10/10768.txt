@@ -1,0 +1,17 @@
+Design der MeasuredValues überdenken	"Wir haben mal diskutiert, wie die Referenzen der MeasuredValues sind und uns dann, damals auch zu recht, dazu entschlossen, erst einmal alles so zu belassen. Allerdings fiel uns dies in IT-208 schon wieder auf den Fuß. Die Referenz auf MeasuredValueInterval und AggregatorType führen zu schwer verständlichen code. Es wird viel zu viel durch die Gegend gereicht Z.B. muss das CSI dashboard Daten nach unten reichen, die eigentlich nur einer zeitlichen Auswahl dienlich sind, ferner entstehen hier Datenbankanfragen (nach MeasuredValueInterval) an Stellen, wo sie eigentlich überflüssig wären.
+
+Das Intervall ist eigentlich für den MeasuredValue nicht relevant und der AggregatorType auch nicht. Die MeasuredValue muss nur wissen, zu welcher ""value group"" sie gehört. Diese könnte zum Beispiel eine ""weekly shop csi""-Gruppe sein.
+
+Das Design der MeasuredValue sollten wir bei einem Review mal diskutieren und schauen, was wir zukünftig daraus machen."		Improvement	OpenSpeedMonitor	06/Nov/13 1:57 PM	23/May/16 5:21 PM														"25/Feb/16 6:57 PM;bka;Man könnte das CsiAggregationInterval aus der CsiAggregation herausnehmen, und stattdessen an den AggregatorType ranhängen.
+
+
+
+Ein AggregatorType wäre dann in Zukunft etwas wie:
+
+* page daily
+
+* shop weekly"	"23/May/16 5:21 PM;nku;Dieses Issue werden wir nicht umsetzen, da es aus meiner Sicht nicht wirklich zu einem  fachlich klareren Modell führt. Das Umwandeln der AggregatorTypes und der CsiAggregationIntervals in Enums macht deutlich mehr Sinn. 
+
+
+
+Siehe hierfür IT-36"																																																					

@@ -1,0 +1,39 @@
+Language icon	"
+
+*Summary*
+
+
+
+Overall the iteraplan tool, instead of language icon from Angular Material.
+
+
+
+*Scope*
+
+
+
+Use flag from [http://www.flaticon.com/packs/countrys-flags]
+
+
+
+Next to the flag there should be shortcut from specific country, for example:
+
+ * DE (german flag)
+
+ * EN (english / british flag - to be discussed)
+
+
+
+*UI*
+
+
+
+There should be a dropdown list allowing the user to pick from different languages
+
+
+
+ 
+
+
+
+ "		New Feature	iteraplan Speedbird	15/Mar/17 1:09 PM	22/Mar/17 7:32 PM														22/Mar/17 7:32 PM;mash;Review is done																																																						

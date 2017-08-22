@@ -1,0 +1,35 @@
+NCD: Inner/Outer Nesting by Interfaces	"*Summary:*
+
+Extend the inner and outer nesting functionality with the path Information System -> Interfaces (like in the classic client)
+
+Nest InformationSystems via Interfaces. Direction does not matter.
+
+
+
+*Actual:*
+
+* No nesting by Interfaces is possible for Information Systems
+
+
+
+*Expected:*
+
+* Nesting by Interfaces is possible for Information Systems (inner and outer)
+
+
+
+*UI*
+
+* {color:red}UPDATE:{color} -Aggregate the InformationFlows1 and InformationFlows2 to one entry-
+
+* {color:red}UPDATE:{color} Create two seperate entries ""Connected Information Systems 1"" and 2
+
+
+
+-{color:red}UPDATE:{color} Call it ""Connected Information System""-"		Improvement	iteraplan Speedbird	13/Dec/16 10:28 AM	14/Jan/17 2:17 PM														"13/Jan/17 2:35 PM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-294
+
+
+
+One thing to clarify with [~msr]: case when Interface is both inner and outer type, does it make sense (see attached screenshot)? "	"13/Jan/17 2:47 PM;msr;Thanks for this suggestion.
+
+No, we do not need any nesting if interfaces are inner and outer type. The actual implementation is ok."	13/Jan/17 3:02 PM;dmkh;[~msr], but it is already in current implementation. So this needs to be fixed?																																																				

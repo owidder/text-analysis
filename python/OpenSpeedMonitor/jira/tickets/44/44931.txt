@@ -1,0 +1,4 @@
+Fast export menus not shown under unknown circumstances	"Sometimes, under so far unknown circumstances, the menu for creating graphical exports, which normally is displayed on the visualisation tab of the building block mask (see iteraplan-OK.jpg), is missing (see iteraplan-Error.jpg).
+This problem seems to occur more frequently (if not exclusively) when using the Microsoft Internet Explorer, and the possible reason might be javascript-related.
+
+The same seems to apply to the menu for directly executing saved graphical report queries from the graphical reports' starting page."		Bug	iteraplan PO	11/May/11 1:27 PM	07/Jun/11 12:27 PM					fastexport									07/Jun/11 10:11 AM;sfe;might be related to ITERAPLAN-67	07/Jun/11 12:27 PM;vsh;cannot be reproduced, it was probably a duplicate ot ITERAPLAN-67																																																					

@@ -1,0 +1,15 @@
+Attribute Groups - No horizontal scrollbar in IE 11	"Reproduce with trunk, IE 11 and big data 
+
+ # Open ""Attribute Groups"" 
+
+ # I have twenty attribute groups 
+
+ # In the IE 11 I cannot scroll horizontally
+
+ # I see only 5 Attribute groups 
+
+
+
+Expected: That I can scroll to right for the other attribute groups
+
+ Actual: There is no possible to scroll to the other attribute groups"		Bug	iteraplan PO	19/Apr/17 2:45 PM	21/Apr/17 3:47 PM																																																																				

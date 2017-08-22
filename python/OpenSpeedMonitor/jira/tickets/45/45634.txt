@@ -1,0 +1,3 @@
+Masterplan enhancements for lifecycle modelling	"Umbrella ticket for Enhancements to the masterplan diagram:
+* Show lifecycle phases, i.e. the bar in a masterplan row can have more than one segment
+* Allow 3-level reporting on connected elements, e.g. Product --> connected Information Systems --> connected Technical Components"		New Feature	iteraplan PO	08/Mar/13 1:23 PM	10/Jul/13 3:27 PM					masterplan																																																															

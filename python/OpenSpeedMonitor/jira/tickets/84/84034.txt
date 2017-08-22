@@ -1,0 +1,9 @@
+Constraints werden bei Updates nicht geprüft	"In den dynamisch gescaffoldeten Controllern werden illigale Updates akzeptiert und als erfolgreich dargestellt, obwohl sie (korrekterweise) nicht ausgeführt werden. Das Problem tritt nicht bei statisch generierten Controllern auf.
+
+Wir haben dafür einen [Bug-Report|https://github.com/grails3-plugins/scaffolding/issues/24] aufgemacht.
+
+
+
+Beispiel:
+
+Wenn man 2 Browser mit den Namen ""1"" und ""2"" (das Feld name ist unique) erstellt und dann den Browser ""2"" zu ""1"" umbennent, fliegt im OSM ne Exception während der Browser anzeigt, dass das update erfolgreich ist. "		Bug	OpenSpeedMonitor	12/May/16 10:49 AM	01/Jun/16 3:55 PM														13/May/16 1:42 PM;bka;Die Tickets IT-1078, IT-1080, IT-1084 und IT-1086 hängen zusammen. Das Problem ist, dass der gescaffoldete Controller auftretende Validation-Fehler nicht mehr an die View weitergibt.	01/Jun/16 3:55 PM;msk;Der Bug-Report ist immernoch offen und wurde in dem Ticket IT-1072 mit aufgenommen.																																																					

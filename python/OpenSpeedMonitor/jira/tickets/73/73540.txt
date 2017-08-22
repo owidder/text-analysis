@@ -1,0 +1,183 @@
+Ausführung XSLT Skripte im Graphics Reaktor / Carl Zeiss	"- XSLT Skripte lauten einwandfrei lokal im Filesystem
+
+- Kleinere XSLT Skripte werden vom Reaktor der iteraplan-Instanz von der Carl Zeiss (CZ) problemlos durchgeführt
+
+- Grössere XSLT Skripte führen zum inkonsistenten Verhalten (GUI aktualisiert sich nach 5-6 Min. nicht mehr; nach 1-2 Versuchen hängt sich die Ausführung auch auf)"		Fault	iteraplan Support	15/Feb/16 1:47 PM	10/Mar/16 4:09 PM														"15/Feb/16 1:49 PM;iko;Hallo Ivan,
+(@Daniel Hallo auch CC)
+
+1)	Speichereinstellungen sind unauffällig, 
+2)	bitte Ticket anlegen
+3)	bitte XSLT-Entwicklung mit Daniel N.
+4)	Logs 
+
+zu 1) Speichereinstellungen sind unauffällig, 
+konkret
+
+-Xms512m -Xmx4096m
+
+Entsprechen der Empfehlung „4 GB, more is better“ hier: http://www.iteraplan.de/doc/display/iteraplan51/Installation+Prerequisites in Tabelle zu RAM und Recommended Value
+
+Zu 2) bitte Ticket anlegen
+Bitte leg doch ein Ticket an. Wir haben den Service Desk gerade live genommen.
+Einfach hier: iteraplan.de/support
+Dein Vorteil ist, dass du und dein Kunde immer und unmittelbar den aktuellen Stand sehen.
+
+Herr Wortmann bekommt heute noch per Mail auch die Info mit der Bitte, sich zu registrieren.
+Dann können wir in ganz einfach CC informiert halten.
+
+Zu 3) Zur XSLT-Entwicklung und Problemanalyse hilft dir Daniel methodisch besser weiter als ich. Die Idee mit dem „Ergebnis aufspalten in Excel-Blätter“ oder „Rechenaufwand im Skript schrittweise halbieren“ hätte er sicher auch gehabt, und dazu vermutlich noch viele weitere mehr.
+
+Zu 4) Ich warte auf die Logs, und schau mal, welcher Fehler sich da zeigt.
+
+Servus
+Wolfgang Frech – iteraplan Support
+"	"15/Feb/16 3:24 PM;wfr;Now officially in English so that MCon can be in the loop:
+
+We at the support team side need the logs of yesterday, Sunday 14 Feb, between 19.00 and 23.00 CET, when the last known problems occurred.
+
+PS: thanks for moving the mail to the ticket."	15/Feb/16 4:37 PM;sfe;I agree with Wolfgang. We need the log files to be able to say more about this issue.	15/Feb/16 4:52 PM;iko;Wurde bereits bei der MCON nachgefragt?	15/Feb/16 5:00 PM;wfr;@Ivan: did you mention our request re log files this morning when you talked to Mr. Wortmann? If so, we could contact the MCon helpdesk directly.	15/Feb/16 5:09 PM;iko;@Wolfgang: nach Absprache mit Wolfgang Wortmann, sollen wir bei MCON direkt die Logfiles anfragen. Darf ich dich bitten, das asap zu tun!?	"15/Feb/16 5:29 PM;wfr;email incoming: 
+
+Hallo Wolfgang
+
+Vielen herzlichen Dank für die Hilfe.
+
+Zu Punkt 1): soll ich CZ bitten, bei RAM höher zu gehen?
+Zu Punkt 2): erledigt, habe dich mitaufgenommen
+Zu Punkt 3): mache ich
+Zu Punkt 4): Wolfgang Wortmann schickt uns die Kontaktdaten von MCON, wir dürfen direkt die Logfiles anfordern
+
+Beste Gruesse
+Ivan 
+
+----
+
+email outgoing:
+
+Dear Helpdesk,
+
+for your customer Zeiss, we need to analyse the log files of iteraplan and the Tomcat instance it runs on.
+
+The Tomcat instance has the catalina base
+/srv/tomcat/zeiss-iteraplan-live.zeiss.mcon.net
+
+Of interest are the logs of yesterday, Sunday Feb 14, between 19.00 and 23.00 CET.
+
+Mr. Wortmann has agreed to this request this morning in a call with Mr. Kovynyov.
+
+Thank you in advance
+Wolfgang Frech – iteraplan Support
+
+[... signature]"	"16/Feb/16 8:59 AM;iko;MCON Kontaktdaten: iteraplan.support@iteratec.de (Borja Minyana)
+
+"	"16/Feb/16 9:07 AM;wfr;@Ivan: This seems to be a combination of our (iteratec's) support mailbox, and our partner's name at MCON. 
+
+I asked for the logs yesterday, see below.
+
+According to an (automatic) reply from MCON, there is a ticket open at their side, no questions so far, so we are expecting the logs, waiting for (delegated) customer input."	"16/Feb/16 10:06 AM;iko;Anbei sind die Logfiles. Bitte prüfen :-)
+
+[^zeiss-iteraplan-20160214.logs.tgz] _(70 kB)_"	"16/Feb/16 12:47 PM;sfe;According to the log files, at least one of the xslt scripts attempts to either create a file, or read from a file with a colon in its filename. The colon seems to be part of a time information in the file name. Colons are not allowed in valid file names.
+Please check whether the problematic scripts contain this issue."	16/Feb/16 12:50 PM;iko;@Stephan: kannst du es spezifizieren. merci	16/Feb/16 12:51 PM;iko;Habe es überprüft. In der Version, welche daraufhin ausgeführt wurde, hab es diesen Fehler nicht. Die Filenamen enthalten aktuell keine Datumsanzeigen	"16/Feb/16 3:08 PM;sfe;Die Logdateien melden ansonsten keine Probleme auf Seiten iteraplans.
+Folgende Informationen kann ich aus den Logs lesen:
+* Die Tomcat Logs berichten, dass es am 14.2. 13 Grafik-Reaktor-Transformationen gab, zwischen 20:50 Uhr und 22:00 Uhr.
+* Bei einer Transformation um 20:58 wurde das angesprochene Problem mit dem Dateinamen berichtet.
+* In allen Fällen hat iteraplan mit einem ""technischen"" Erfolg geantwortet (Code 200)
+* Der Client meldet in 8 Fällen, dass die Transformation (fachlich) nicht erfolgreich war, allerdings ohne weitere Informationen, die auf eine Exception am Server hindeuten würde.
+* Es gibt weder auf iteraplan Server-Seite noch im Client-Log Hinweise auf Speicherprobleme oder Timeouts.
+
+Wie davor einmal besprochen, sehe ich die weitere Analyse nun bei Daniel."	16/Feb/16 3:09 PM;sfe;Noch eine Bemerkung: Wir werden ein Ticket anlegen, um das Logging und die Rückmeldung an den Benutzer wenn möglich zu verbessern.	16/Feb/16 3:42 PM;iko;@Stephan: was bedeutet genau der letzte Punkt (Client meldet dass die Transformation fachlich nicht erfolgreich war)?	"16/Feb/16 8:05 PM;iko;ich habe die unten erwähnten Fehlermeldungen rausgesucht: 
+
+Hier ist ein Beispiel:
+[ERROR] 14-Feb-2016 20:58:02 [iteraplan.presentation.NCLogServlet] Error while running trans2Excel_EAM_KPI.xsl @[2016-02-14 20:58:11] -- Logged from: https://zeiss-iteraplan-live.mcon.net/iteraplan/client/#/reactor?locale=en
+
+Was ist iteraplan.presentation.NCLogServlet?"	"17/Feb/16 8:32 AM;sfe;Das NCLogServlet ist die serverseitige Stelle an die der Client seine Lognachrichten sendet.
+
+Was ich mit ""fachlich nicht erfolgreich"" meine, und der Ausdruck war ungeschickt, gebe ich zu, ist folgendes: Der Server hat nach der Transformation eine Antwort an den Client geschickt, und der Client hat darin nicht die Informationen gefunden, die er gebraucht hat. Daher hat der Client den von dir gefundenen Fehler gemeldet.
+
+Ich habe mir den Code angesehen, der zu diesem Zustand führen kann, und ich sehe keinen Weg, wie das durch einen Fehler bei der Transformation geschehen kann, ohne dass eine Exception im Log vermerkt wird. Ein Beispiel dafür ist z.B. der Eintrag von 20:58:02: Für diese Meldung siehst du auch eine entsprechende Exception bei der Transformation wegen des Doppelpunkts im Namen.
+
+Ohne die Logausgaben zu erweitern oder den Fall in einer von uns kontrollierten Umgebung nachstellen zu können lässt sich hier leider von meiner Seite nicht mehr herausfinden."	17/Feb/16 8:58 AM;iko;Hallo Stephan, was brauchst Du um den Fall in einer kontrollierten Umgebung nachstellen zu können? 	17/Feb/16 12:57 PM;sfe;Hallo Ivan. Wie gesagt, ich sehe die weitere  Analyse erst einmal bei Daniel. Der würde sich zum Nachstellen sicherlich über das fragliche Skript und eventuell auch die Daten freuen, aber frag ihn dazu am besten selbst.	17/Feb/16 1:17 PM;dne;Eine Idee wäre, erst einmal ein paar Statusmeldungen über <xsl:message> im Skript selbst auszugeben, am besten an Stellen die in "kurzen" Abständen wiederholt durchlaufen werden. Dann sieht man zumindest, ob das Skript noch läuft.	"18/Feb/16 8:11 AM;iko;Habe mit Daniel gepsrochen. Die Idee geht leider nicht, weil die Status-Meldungen über <xsl:message> im Reaktor erst am Ende nach einer erfolgreichen Transformation rausgegeben werden. Lokal gibt der XSLT Prozessor solche Meldungen zur Laufzeit aus.
+
+Weitere Ideen?"	"18/Feb/16 8:21 AM;dne;Ich habe das gleiche Problem bei Boehringer. Auch dort läuft das Skript sehr lange (bei mir lokal ~30 Minuten) und spuckt nie ein Ergebnis oder eine Fehlermeldung aus. Ich werde zusehen, dass ich den Fall mit den Demodaten nachstellen kann, denn das Problem scheint klar auf Seiten von iteraplan zu bestehen.
+Hilfreich wäre noch zu wissen, in wie weit iteraplan das Skript anders abarbeitet als ein lokaler Prozessor. Da der ja der gleiche ist, muss iteraplan vorher oder nachher noch etwas Dummes damit anstellen."	"18/Feb/16 8:50 AM;sfe;Was iteraplan tut, ist dem Prozessor einen ""MessageCollector"" mitzugeben. Dieser sammelt, laut Prozessor API, alle Nachrichten auf, die der Prozessor sonst zur Laufzeit in eine Konsole schreiben würde.
+Nach der Transformation werden diese gesammelten Messages in der Response mitgegeben.
+Wenn bei der Transformation eine Exception passiert, werden ebenfalls alle bis dahin gesammelten Messages in die Response mitgegeben. In dem Fall wird die Exception außerdem geloggt.
+
+Das ist der Grund weshalb ich im Moment keine Möglichkeit sehe, dass die Transformation mit einer Exception abbricht, ohne dass etwas im Log steht.
+Das heisst nicht, dass es nicht irgendwie möglich ist, aber ohne einen nachstellbaren Fall, den ich debuggen kann, komme ich selbst hier auch nicht weiter."	18/Feb/16 9:04 AM;iko;@Stephan: was brauchst Du um den Fall in deiner Umgebung nachstellen zu können?	"18/Feb/16 9:41 AM;dne;Habe mal ein Skript geschrieben, bei dem man über zwei Schleifen die Dauer einstellen kann (1 to 60 und 1 to 600 im Moment). Konnte es aber noch nicht im Reaktor laufen lassen und habe jetzt keine Zeit mehr dafür. Versucht doch beide mal das Problem damit mit den Demodaten nachzustellen. Melde mich später wieder.
+
+[^privateDemo_longRunner.xsl] _(2 kB)_"	18/Feb/16 11:53 AM;iko;FYI: habe heute Vormittag weitere Tests gemacht und die Logfiles bei MCON nachgefragt.	"18/Feb/16 12:08 PM;iko;Gents, folgende neue Erkenntnisse:
+
+ich habe heute Vormittag erneut die Transformationen (Lifecycle Liste, EAM KPI Report) in der produktiven Instanz von CZ auszuführen. 
+
+Die gute Nachricht: mir ist tatsächlich gelungen, die Transformationen im Reaktor erfolgreich durchzuführen. Siehe Protokoll anbei..
+
+Die schlechte Nachricht: zweimal wurde die Transformation erfolgreich (sic!) durchgeführt, aber die GUI hat sich aufgehängt. Nach Neuladen der GUI (mit F5) konnte ich das korrekte Ergebnis herunterladen.
+
+Ich habe mir bei MCON die Logfiles für den Zeitraum meiner Tests besorgt. Zu den Zeiten, wo ich diesen Fehler beobachten konnte, hat iteraplan einen Error-Log gemacht. 
+
+Bitte kurz auswerten + Feedback.
+
+[^catalina.2016-02-18.log] _(38 kB)_
+
+[^iteraplan-5.1.0.log] _(4 kB)_
+
+[^20160218_Testing_Protocoll.xlsx] _(8 kB)_"	"19/Feb/16 11:40 AM;bal;Hallo zusammen,
+
+ich möchte mich als primärer Ansprechpartner von Herrn Wortmann auch kurz zu Wort melden. 
+@Stephan, Wolfgang, Fabian: Nachdem die Logfile Analyse nicht wirklich zum Ziel geführt hat - weil möglicherweise der Error Log nicht aussagefähig genug ist -, halte ich es jetzt für angezeigt, dass ihr die iteraplan Instanz von Zeiss bei euch nachstellt und dann dort Ivans Skripte laufen lasst und hinein debugged, was da genau los ist.
+
+Dass die XLST-Transformationen im Offline Modus ja funktionieren (außerhalb von iteraplan mit .bat-File) und dass sie manchmal, aber eben oft nicht, funktionieren im iteraplan Reaktor deutet doch auf einen Fehler im Laufzeitverhalten hin, den das iteraplan Team in den Griff bekommen muss. Zumindest muss die Ursache herausgefunden werden, dann kann man immer noch entscheiden, ob und wie man es lösen kann.
+
+Und wenn es in der nachgestellten Umgebung dann funktionieren sollte, nur bei mcon nicht, ist man auch eine Erkenntnis weiter, dass man nun in den Settings von mcon weiter nachforschen muss.
+
+Also, @iteraplan-support: Bitte mit dem Carl-Zeiss Installer eine Carl-Zeiss-iteraplan-Instanz hochziehen, dann via Excel-Export von Zeiss und Import in eure Instanz, oder über MySQL-Datenbankabzug und -Einspielung diese Umgebung herstellen und lokal bei euch die Transformationen von Ivan debuggen und dabei bitte gleichzeitig aussagekräftigere Fehlermeldungen einbauen, falls möglich. So etwas erwartet Herr Wortmann auch von einem Produkt, für das er nach dem Lizenzupdate jetzt signifikant mehr Geld ausgegeben muss als vorher.
+
+Vielen Dank!"	"19/Feb/16 12:48 PM;sfe;Ich habe inzwischen versucht, das Problem mit Daniels Skript nachzustellen, in der Hoffnung, mit übersichtlichen Daten an die Sache herangehen zu können. Leider ist mir das nicht gelungen.
+
+
+
+Ich sehe das nun ähnlich wie Bernd: Wir brauchen die Daten und Skripte, wie sie bei Zeiss verwendet werden.
+
+@Ivan: Kannst du uns bitte die Skripte zur Verfügung stellen? Und ein MySQL-Dump der Datenbank wäre am besten, was die Daten angeht. Möchtest das auch du machen?
+
+
+
+Danke"	"19/Feb/16 1:25 PM;bal;Hallo zusammen,
+ich habe gerade den Dump requested bei mcon.
+@Stephan: könnt ihr bitte Herrn Wortmann in der Loop halten, was gerade so passiert. Er betrachtet das Ganze mit etwas Sorge und möchte einfach informiert sein über die laufenden Aktivitäten / Erkenntnisse.
+@Ivan: Bitte deine Skripte den iteraplan Kollegen zur Verfügung stellen, falls noch nicht geschehen.
+Danke!"	"19/Feb/16 2:37 PM;dne;@Stephan: Ich habe das Problem mit meinem Skript in Teilen nachstellen können. Mit einer Kombination von 200/2000 der Schleifen habe ich die Ausführung um 13:27 gestartet. Um 14:18 war das Skript fertig, die GUI wurde jedoch nicht aktualisiert. Nicht zu wissen, ob die Transformation fertig ist, ist hier natürlich unbefriedigend. Generell wäre eine kontinuierliche Rückmeldung wie auf Konsole sehr wünschenswert.
+
+!issue.PNG|thumbnail!
+
+!issue2.PNG|thumbnail!"	"19/Feb/16 3:28 PM;iko;here you go...
+
+[^trans2Excel_EAM_KPI.xsl] _(72 kB)_
+
+[^trans2Excel_Lifecycle_Liste.xsl] _(22 kB)_"	19/Feb/16 5:21 PM;sfe;Danke! Ich werde es heute nicht mehr schaffen, mich aber Montags darum kümmern und auch Herrn Wortmann auf dem Laufenden halten.	"22/Feb/16 1:21 PM;sfe;Ich konnte nun ein Problem zumindest nachstellen:
+
+* Transformation startet, aber
+
+* Wenn Transformation ended, wird der Client nicht aktualisiert
+
+
+
+Mit den zwei unschönen Folgen:
+
+# Man weiss nicht, wann die Transformation fertig ist
+
+# Man muss den Client neu laden, um das Ergebnis herunterladen zu können, und verliert damit die Einträge im Logfenster
+
+
+
+Für beide Probleme haben wir Lösungsideen, ich kann aber noch nicht sagen, wann diese implementiert sein werden. Höchstwahrscheinlich nicht vor dem kommenden Release.
+
+
+
+Ich würde nun Herrn Wortmann auch eine entsprechende E-Mail schreiben, da er nicht diesem Ticket beizuwohnen scheint."	"07/Mar/16 9:13 AM;bal;Hi Stephan,
+Ja, bitte Herrn Wortmann aktiv informieren. Danke .
+
+Bernd"	"07/Mar/16 1:27 PM;sfe;Hallo Bernd,
+
+Herr Wortmann hat eine entsprechende E-Mail bekommen. Ich werde dieses Ticket dann schließen, falls es nicht noch weitere Fragen zu dem Thema gibt.
+Ich werde auch einbringen, dass die entsprechenden Verbesserungen am Grafik-Reaktor möglichst bald in der Entwicklung berücksichtigt werden."																		

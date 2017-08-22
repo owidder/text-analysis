@@ -1,0 +1,25 @@
+Wrong HTTP status code for history switch ON/OFF requests with mistakes	"Reproduce:
+
+
+
+* Switch the history on or off via a REST PUT request to
+
+-> api/historystate?enable=true/false
+
+* Make a mistake in the request
+
+** Mispelled request parameter (e.g. ""enabled"" instead of ""enable"")
+
+** Missing parameter true or false
+
+
+
+Result:
+
+* HTTP status code 204 (success) is returned
+
+
+
+Expected:
+
+* An error is returned"		Bug	iteraplan PO	19/Oct/16 11:21 AM	25/Oct/16 10:21 AM																																																																				

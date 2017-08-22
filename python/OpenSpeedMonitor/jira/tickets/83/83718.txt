@@ -1,0 +1,11 @@
+Architecture sketch			New Feature	iteraplan PO	10/May/16 10:52 AM	13/Jun/16 3:02 PM														"07/Jun/16 10:30 AM;wfr;see wiki page for notes
+
+
+
+https://iteraweb.iteratec.de/confluence/pages/viewpage.action?title=Architecture+Sketch+on+List+with+ag-grid&spaceKey=ITPL"	"07/Jun/16 11:26 AM;abo;*Review Comments:*
+
+* Missing a link to the used lib 'ag-grid'
+
+* Missing infos on the license - free or commercial/enterprise? When to use Enterprise / what kind of features would qualify for Enterpise? What was the pricing at the moment the decision was made, and why do we implement features (e.g. show/hide columns, column-menu with e.g. filter options, etc.) instead of paying for the enterprise edition? (EE has other features that we don't have in our backlog yet, but may help power-users - e.g. Excel-like range-selection and copy-to-clipboard) - no offense, just missing documentation on the decisions made.
+
+* Missing the information that _rowData_ is filled by taking _all_ BB elements of a certain type and transforming them into ag-grid format before rendering. _columnDefs_, on the other hand, just toggles visibility of columns and their 'decoration' (sorting etc.) - the data is already there."	13/Jun/16 10:30 AM;wfr;gaps noted in review comments filled in	13/Jun/16 3:02 PM;mse;Review ok.																																																			

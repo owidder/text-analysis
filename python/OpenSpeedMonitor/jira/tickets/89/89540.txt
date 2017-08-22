@@ -1,0 +1,49 @@
+JPEG and PNG are not working for landscape diagrams	"If user selects JPEG as output format for a landscape diagram a general error occurs; in case of PNG no output is produced at all.
+
+
+
+To be tested: if the same behavior applies for other diagram types as well."		Fault	iteraplan Support	06/Jul/16 1:45 PM	08/Aug/16 7:00 AM														"06/Jul/16 3:02 PM;cst;Hallo Olga,
+
+
+
+würdest du mir bitte hierzu einen Screenshot der Fehlermeldung zur Verfügung stellen.
+
+Zusätzlich benötigen wir die System Infos, diese können über den Punkt ""Administration"" - ""Configuration""  und dem Punkt ""Create System Info"" in der Software erzeugt werden.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support  
+
+"	"06/Jul/16 9:15 PM;ogr;Hallo Christoph,
+
+bei JPEG kommt die allgemeine Fehlermeldung ""Ein allgemeiner technischer Fehler ist aufgetreten. "", bei PNG passiert wie gesagt gar nichts. Das Verhalten lässt sich auch auf der öffentlichen Demo nachstellen. Die System infos von der Öffentlichen habe ich angehängt
+
+
+
+[^ProblemReport_2016-07-06_211204.zip] _(7 kB)_"	"07/Jul/16 9:07 AM;cst;Hallo Olga,
+
+Danke für die Datei. 
+
+Habe den Vorgang im ""Classic Client"" geprüft und konnte im IE 11 das Verhalten zum JPG-Export nachstellen. 
+Tritt bei dir auch das Verhalten auf, wenn du iteraplan lokal startest, oder betrifft das nur die Onlinezugänge? 
+
+Um den Vorgang weiter prüfen zu können, benötige ich die lokal bei dir eingesetzte JAVA-Version.
+Dies kannst du wie folgt nachprüfen:
+
+# Klick auf Start um dir das Windows Menü anzeigen zu lassen
+# Klicke auf  Alle Programme
+# Gehen zu dem aufgeführten Programm Java 
+# Klicke auf ""Info zu Java"", um die Java-Version zu sehen
+
+Wenn du Windows 10 im Einsatz hast, einfach nach dem Programm ""Info zu Java"" suchen.
+
+Viele Grüße,
+
+Christoph Stangl 
+
+
+ "																																																				

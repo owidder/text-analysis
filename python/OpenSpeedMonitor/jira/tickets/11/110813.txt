@@ -1,0 +1,29 @@
+List View - New added columns are shown empty	"Reproduce with a fresh installation of iteraplan (trunk)
+
+
+
+# Open iteraplan
+
+# Change into the tab ""DATA"" and choose e.g. ""Information Systems"" 
+
+# Add a new column e.g.""Costs"" 
+
+# The column will be shown empty
+
+# In the single element view and edit the content will be shown 
+
+# After saving the changes, the column stays empty
+
+
+
+This problem appears on every new collumn, after reloading the page the content will be shown
+
+
+
+Expected: The content of new added columns are shown directly  (/)
+
+Actual: You need a reload for see the content of new added columns"		Bug	iteraplan PO	04/Feb/17 12:11 PM	10/Feb/17 8:53 AM														04/Feb/17 12:22 PM;cst;It happens not every time - please contact me that I can show you the problem	"07/Feb/17 11:16 AM;sfe;Other, possibly related, issues with columns in list view:
+
+* Information System Columns are empty after list or page is reloaded while the columns are already present. (/)
+
+* In Interface list, when attempting to change any property of an Interface, while the Information System columns have not been added to the list in this session, the attempt fails. The error message suggests that the interface needs to be connected to information systems. (/)"																																																					

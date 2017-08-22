@@ -1,0 +1,2 @@
+Median Algorithmus	"Die Strategy zum Herunterladen der Detaildaten muss den Medianrun bestimmen können. Die entsprechende Methode existiert schon, es fehlt jedoch die Logik.
+de.iteratec.oms.da.external.wpt.data.WptDetailResult#markMedianRuns"		Task	OpenSpeedMonitor	14/Jul/16 9:54 AM	27/Jul/16 10:27 AM																																																																				

@@ -1,0 +1,5 @@
+Passwort Einscränkungen	"In der Admin Oberfläche sollten Vorgaben für die Passwörter definiert werden können:
+
+* Zahlen + groß und klein
+
+* Zeichenlänge > 8"		Improvement	OpenSpeedMonitor	18/Oct/16 1:31 PM																																																																					

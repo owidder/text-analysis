@@ -1,0 +1,25 @@
+Exception getting Business Mapping history (server)	"*Steps to reproduce:*
+
+ Lists -> Business Mapping
+
+
+
+*Current result:* 
+
+
+
+Server error message appears (see screenshots).
+
+
+
+*Expected result:*
+
+
+
+Business Mapping list is loaded correctly, business mapping history is available
+
+
+
+Comments:
+
+ After short investigation I've probably found a reason: incorrect hibernate mapping template for Business mapping (see screenshots). Business mapping history is available in the DB."		Bug	iteraplan PO	13/Jun/17 12:07 PM	16/Jun/17 5:24 PM														14/Jun/17 10:30 AM;dmkh;There is another exception when deleting BU, BM, BP building blocks																																																						

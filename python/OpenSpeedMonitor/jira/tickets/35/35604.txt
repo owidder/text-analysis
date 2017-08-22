@@ -1,0 +1,113 @@
+REST API Funktion resultsbetween liefert doppelte Ergebnisse	"Alle Ergebnisse kommen doppelt vor.
+
+z.B. https://iteraspeedmonitor.otto.wpt.iteratec.de/rest/live/resultsbetween/20150319T060000Z/20150319T070000Z?browser=FF&page=MES&location=otto-prod-netlab:Firefox&pretty=true
+
+(nur erreichbar aus der Geschäftsstelle HH)"		Bug	OpenSpeedMonitor	24/Mar/15 10:24 AM	22/Apr/15 4:47 PM														"09/Apr/15 2:45 PM;nku;Diesen Bug kannst Du Dir nach der IT-438 ansehen.
+
+"	"09/Apr/15 5:14 PM;rkr;Ich kann das nicht reproduzieren. Die Angaben werden direkt aus der DB bezogen und es scheint keine doppelte Ausgabe zu geben. Sind sie vielleicht doppelt in der DB vorhanden?
+
+
+
+Beim lokalen Test bekomme ich mit http://localhost:8080/OpenSpeedMonitor/rest/live/resultsbetween/20141101T060000Z/20141101T230000Z?browser=IE&page=SE&location=otto-prod-netlab:IE&pretty=true erhalte ich den folgenden Fehler (welcher nicht auftritt wenn ich das page-Attribut entferne) - bitte Ticket dazu erstellen falls das ein Bug ist: 
+
+
+
+{code}
+
+
+
+Executing action [getResults] of controller [de.iteratec.osm.api.RestApiController] caused exception Executing action [getResults] of controller [de.iteratec.osm.api.RestApiController] caused exception RestApiController has problem at line 512
+
+Error Details
+
+Error 500 	Executing action [getResults] of controller [de.iteratec.osm.api.RestApiController] caused exception: Runtime error executing action
+
+Servlet 	grails
+
+URI 	/OpenSpeedMonitor/grails/restApi/getResults.dispatch
+
+Exception Message: 	could not resolve property: eventResults of: de.iteratec.osm.result.JobResult
+
+Caused by: 	could not resolve property: eventResults of: de.iteratec.osm.result.JobResult
+
+Class: 	RestApiController
+
+At Line: 	[512]
+
+Code Snippet: 	
+
+Stack Trace
+
+
+
+org.hibernate.QueryException: could not resolve property: eventResults of: de.iteratec.osm.result.JobResult
+
+
+
+	at grails.orm.HibernateCriteriaBuilder.invokeMethod(HibernateCriteriaBuilder.java:1689)
+
+
+
+	at de.iteratec.osm.result.JobResultService$_findJobResultsByQueryParams_closure1_closure3$$EP9N4nwS.doCall(JobResultService.groovy:126)
+
+
+
+	at grails.orm.HibernateCriteriaBuilder.invokeClosureNode(HibernateCriteriaBuilder.java:1854)
+
+
+
+	at grails.orm.HibernateCriteriaBuilder.invokeMethod(HibernateCriteriaBuilder.java:1663)
+
+
+
+	at de.iteratec.osm.result.JobResultService$_findJobResultsByQueryParams_closure1$$EP9N4nwS.doCall(JobResultService.groovy:104)
+
+
+
+	at grails.orm.HibernateCriteriaBuilder.invokeClosureNode(HibernateCriteriaBuilder.java:1854)
+
+
+
+	at grails.orm.HibernateCriteriaBuilder.invokeMethod(HibernateCriteriaBuilder.java:1553)
+
+
+
+	at de.iteratec.osm.result.JobResultService$$EP9N4nwS.findJobResultsByQueryParams(JobResultService.groovy:103)
+
+
+
+	at de.iteratec.osm.api.RestApiController$_getResults_closure6.doCall(RestApiController.groovy:513)
+
+
+
+	at de.iteratec.osm.util.PerformanceLoggingService.logExecutionTime(PerformanceLoggingService.groovy:45)
+
+
+
+	at de.iteratec.osm.api.RestApiController$$EP9Mzpcd.getResults(RestApiController.groovy:512)
+
+
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+
+
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+
+
+
+	at java.lang.Thread.run(Thread.java:745)
+
+{code}
+
+
+
+Mit http://localhost:8080/OpenSpeedMonitor/rest/live/resultsbetween/20141101T060000Z/20141101T230000Z?browser=IE&location=otto-prod-netlab:IE&pretty=true erhalte ich Ergebnisse ohne doppelte Einträge."	"17/Apr/15 11:19 AM;nku;Bitte noch mal exakt mit der URL aus der initialen Beschreibung dieses Tickets testen.
+
+"	17/Apr/15 1:35 PM;rkr;Hier der Code-Block, welcher das Problem verursacht. Kann der komplett raus?	"22/Apr/15 4:47 PM;nku;Ich habe zudem folgende Änderungen vorgenommen:
+
+* Abfrage EventResults an Umkehrung Dependency EventResults / JobResults angepasst
+
+* REST-Funktion liefert jetzt auch results ohne customer satisfaction zurück
+
+* Ergebnis-Menge lässt sich einschränken auf first oder repeated view "																																																		

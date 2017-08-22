@@ -1,0 +1,48 @@
+Basic static home screen	"Create a home screen for the application.
+ 
+For the start URI of the client, the system must display the home screen.
+
+The home screen must have the basic design (menu bar, footer, layout with 12 tiles, each tile witth colored icon, title, thumbnail in the backbround).
+
+The visual design can be preliminary, but in a way that the final design (that is the Bootstrap theme) can be applied with only small changes.
+
+The content of the home screen can be mocked. The list of tiles and content of each tile, that is title, type of tile (list/item/diagram/other, type of element), image, can be a hard coded list.
+
+The function to add a new recent view to the list comes later.
+
+The tile that leads to the list of information systems must be clickable.
+The other tiles may be clickable and lead to a dummy screen.
+
+All tiles must be active, that is react to mouse over. The reaction can be preliminary, but it must be visible, for example a change of background color, and it must be animated with ng-animate.
+
+Show these tiles:
+* Account & Contract Management, sngle item, business process, yellow
+* Business Processes, list of items, business process, yellow
+* IS by BU, diagram, nested cluster, two colors: yellow/red. Note: design  decision for two colors comes later. 
+* Compliance, single item, business unit, yellow
+* Functional Departments, list, business unit, yellow. Note for demo: this is a filtered list with a user defined name, not a ""list of all elements of type"" 
+* z/OS, single item, technical component, green (turquois)
+* Clearing Inland # 3.0, single item, information system, red
+* Planned Information Systems, list, information system, red
+* Information Systems, list, information system, red
+* last element, tutorial. will need a special look, maybe a boo,? For the scope of this ticket, make it different from item, list, diagram.
+
+Note that the home screen ist not full with 12 tiles. This helps to show that new recents are added in the front of the list, later, when this function is added to the prototype.
+
+((( Reserve items, maybe useful later, but not in this screen: 
+* Credit Card, single item, product, yellow
+* Business Products, list of items, business products, yellow
+)))
+
+Note on the design: 
+* the home screen has a list of at most (and normally) 12 tiles
+* all tiles are displayed on the screen, no more tiles partially visible on the right margin.
+* The gird numbering is as text reading: left to right, than next line.
+* the tiles are spaced to show the rows: horizontal distance is smaller than vertical distance. Details to discuss with Tanya, but not in the sope of this ticket. 
+
+Technical ideas, as guideline and for discussion, not as requirement:
+* the start URL and the URL .../home are mapped to the view of the home screen
+* the menubar and the footer are both directives
+* the content of the home screen, that is the list of tiles,can be a directive or a partial view.
+* the mouse over animation is a simple CSS3 transition
+* A staggered ""appear"" animation should be done with ng-animate."		New Feature	iteraplan PO	31/Jul/14 9:09 AM	18/Aug/14 4:13 PM														07/Aug/14 5:37 PM;sepr;rough estimate 2 PD from now, starting Friday	18/Aug/14 4:13 PM;wfr;OK																																																					

@@ -1,0 +1,14 @@
+show filter settings for content elements in the legend	"Depends on IPNINE-378, IPNINE-379 (configuration attributes names are required)
+========================
+
+read only, no interaction"		New Feature	iteraplan PO	04/Mar/15 3:38 PM	09/Jun/15 5:05 PM														"16/Apr/15 11:41 AM;msr;Use the same filter section in the legend
+Ordering: put first the ""direct"" filters then rank the ""related"" filters further down
+Use as a name the path\attribute = value, e.g. ""baseComponents\Complexity = high"""	"22/Apr/15 4:38 PM;tam;*lsdLegendBuilder.js*
+I tried to understand {code}var drawFilters = function (area){code} but I couldn't. Maybe because I don't know goJs.
+Please add comments to some steps within this function (e.g. what is area, what is partOf, why do we need copy of partOf, what's happen within foreach and why? ...)
+The function is too long. Is it possible to refactore it?
+
+*lsdTableModelBuilder.js*
+{code}var showFilteringOptions = function(filterType, filters, modelProperty){code}
+this function came indirectly from this ticket. please adjust code formating and add some comments. if possible, refactore it
+"																																																					

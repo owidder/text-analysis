@@ -1,0 +1,3 @@
+Coloring by date attribute values	"Handle date attributes like numerical attributes. Min and max are automatically calculated. Color picker with min/max/unspecified values.
+
+Implement with landscape and nested cluster diagram within the new client"		New Feature	iteraplan PO	10/Jun/15 1:29 PM	19/Jan/16 4:06 PM					lsd	ncd																																																														

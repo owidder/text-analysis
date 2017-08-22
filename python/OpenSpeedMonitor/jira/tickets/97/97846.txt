@@ -1,0 +1,47 @@
+Single Element View of Date Interval (Read-only)	"*Summary:*
+
+Create a Single Element View of Date Intervals.
+
+
+
+*Details:*
+
+* The single element view should look like the attributes details view (IPTQ-167, {{#/attributes/[idOfAttribute]}})
+
+* The dataModel.metamodel contains the date intervals data. Please use this data for the details page
+
+* The route should look like {{#/attributes/dateIntervals/[idOfDateInterval]}}
+
+* Currently there attributes list is broken so you have to use your route to access the details page (there is right now no link to click on to get to the attributes details page. I will implement it till Monday.)
+
+* Fully localised"		New Feature	iteraplan Thunderduck	30/Sep/16 5:06 PM	25/Nov/16 2:45 PM														14/Nov/16 7:13 PM;ants;Currently metamodel does not contain date interval values with id.	"14/Nov/16 7:17 PM;ants;Localization details (from classic client):
+
+
+
+EN:
+
+    ""TITLE"": ""Date Intervals"",
+
+    ""NAME"": ""Name"",
+
+    ""START"": ""Start date attribute"",
+
+    ""END"": ""End date attribute"",
+
+    ""COLOR"": ""Colour""
+
+DE:
+
+    ""TITLE"": ""Zeitspannen"",
+
+    ""NAME"": ""Name"",
+
+    ""START"": ""Startdatums-Merkmal"",
+
+    ""END"": ""Enddatums-Merkmal"",
+
+    ""COLOR"": ""Farbe""
+
+"	15/Nov/16 2:21 PM;ants;Date intervals will be integrated in the list of attributes.	18/Nov/16 3:30 PM;mwe;Please add the description to the details page like in the attributes details page.	"21/Nov/16 4:13 PM;ants;Please check the page with filled data for description column in database.
+
+"																																																		

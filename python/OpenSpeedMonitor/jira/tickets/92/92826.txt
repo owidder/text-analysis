@@ -1,0 +1,41 @@
+Test bundles and installers	"This subtask can be done in parallel by several people. Below you'll find possible parts. If you test or you are going to test a part, just write your short name to this part.
+
+
+
+We need to test bundles (see https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-3.2.1Bundles) and intstallers (see https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-3.2.2Installer)
+
+
+
+We test the *major functionalities*, i.e.
+
+* Edit and save a Building Block
+
+* Export and Import to/from excel (where possible)
+
+* Open a diagram in the interactive client (where possible)
+
+* Open a diagram in the classic client (not the Classic Nested Cluster Diagram)
+
+
+
+Possible test paths
+
+# Test bundles (see https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-3.2.1Bundles)
+
+## (/) Lite w/o ([~mse])
+
+## (/) Lite demo data ([~mse])
+
+## (/) Basis w/o ([~mse])
+
+## (/) Basis demo data ([~mse]) (on Build Server: /var/iteraplan/releases/5.3.0/bundle/build/iteraplan-basic-bundle-5.3.0.zip) 
+
+# (/) Test installer with MySQL and iTurm: Use Basis Installer: (On Build Server: var/iteraplan/releases/5.3.0/iteraplan-5.3.0-basis-installer.zip)([~cst])
+
+# (/) Test installer with Oracle and LDAP: Use Premium Installer (On Build Server: var/iteraplan/releases/5.3.0/iteraplan-5.3.0-premium-installer.zip)([~cst])
+
+# (/) Test installer with MS SQL and SSO (on the remote machine): Use Corporate Installer (On Build Server: var/iteraplan/releases/5.3.0/iteraplan-5.3.0-corporate-installer.zip)([~cst])
+
+# (/) Test installer with MS SQL and iTurm: Use Basis-MS Installer (On Build Server: var/iteraplan/releases/5.3.0/iteraplan-5.3.0-basis-ms-installer.zip)([~cst])"	92213	Sub-task	iteraplan Quickfox	09/Aug/16 11:10 AM	19/Aug/16 9:36 AM														11/Aug/16 7:39 PM;tam;Please ask [~fka] if an installer should be tried to run from linux console or not	17/Aug/16 2:03 PM;mse;The 4 bundle versions were tested and run fine. Only the *Plugin-Api has to be tested again* as soon as it is finished. 	"19/Aug/16 9:20 AM;msr;Review comment:
+
+In ApplicationResource_de.properties: There exist some more encoding problems. Please search for ""\u"""	19/Aug/16 9:31 AM;mse;Fixed all remaining encoding problems and merged the changes into the release branch.																																																			

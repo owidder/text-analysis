@@ -1,0 +1,11 @@
+Csi UserspecificDashboard Constraints	"Das Dashboard kann nicht geladen werden, einige Constraints müssen überprüft werden
+
+
+
+Die Eigenschaft [setToHour] des Typs [class de.iteratec.osm.csi.CsiDashboardShowAllCommand] darf nicht null sein
+
+Die Eigenschaft [setFromHour] des Typs [class de.iteratec.osm.csi.CsiDashboardShowAllCommand] darf nicht null sein
+
+Die Eigenschaft [csiAggregationUtilService] des Typs [class de.iteratec.osm.csi.CsiDashboardShowAllCommand] darf nicht null sein
+
+Die Eigenschaft [includeInterval] des Typs [class de.iteratec.osm.csi.CsiDashboardShowAllCommand] darf nicht null sein"		Bug	OpenSpeedMonitor	29/Apr/16 9:51 AM	02/May/16 6:57 PM														02/May/16 6:57 PM;msk;Angelehnt an die Werte aus dem  UserspecificCsiDashboard habe ich die Properties auf nullable gesetzt.																																																						

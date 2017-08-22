@@ -1,0 +1,5 @@
+Analyse&Implementation: UI Element for numeric filter	"TODO:
+
+* Wait for answer of developer of the rangeslider and analyse answer
+
+* Implement slider in ncd"		Improvement	iteraplan PO	25/Aug/15 10:40 AM	11/Sep/15 3:17 PM					filter	ranges																																																														

@@ -1,0 +1,11 @@
+"IS connected over IF" does not work in the building block list	"*Summary:*
+
+The filter option ""IS connected over IF"" does not work in the building block lists.
+
+Please fix it.
+
+
+
+{color:red}UPDATE:{color} use IPTS-388 as a blueprint (BB list was not included in the ticket)"		Bug	iteraplan Speedbird	20/Jan/17 4:35 PM	01/Feb/17 3:45 PM														"31/Jan/17 8:38 AM;roia;The ""Manual selection"" list is not updated when ""IS connected over IF"" checkbox is toggled.
+
+See attached !include-IS.jpg|thumbnail!"																																																						

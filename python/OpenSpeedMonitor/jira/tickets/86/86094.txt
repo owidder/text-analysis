@@ -1,0 +1,1 @@
+Find a concept to only load the necessary data when changing routes	Currently all data (including the data of all 15 building block types) will be loaded if the user changes to the list of InformationSystems. Only the necessary data should be loaded.		Improvement	iteraplan PO	01/Jun/16 5:30 PM																																																																					

@@ -1,0 +1,17 @@
+iteraQL has problems with certain characters when they appear in attribute names	"With the following characters the iteraQL have problems: 
+<, >, (, ) , .......
+The list is not exhaustive. There could be still further character.
+
+Here is an iteraQL example call. As attribute name is ""(@<script>alert('Hi!')</script>"" used.
+{quote}Product.objectify(@<script>alert('Hi!')</script>);{quote}
+"		Improvement	iteraplan Thunderduck	17/Jul/14 10:46 AM	14/Sep/16 10:48 AM														27/Aug/16 11:19 AM;fka;Update user documentation if necessary	"14/Sep/16 8:41 AM;aan;Changed the text about the names of attributes: 
+
+https://www.iteraplan.de/doc/display/iteraplan54/Building+Block+Attributes
+
+Added the characters not to add to the iteraQL page:
+
+https://www.iteraplan.de/doc/display/iteraplan54/Building+Blocks%2C+Relations+and+Properties
+
+
+
+"	14/Sep/16 10:48 AM;mse;Review ok.																																																				

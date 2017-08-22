@@ -1,0 +1,13 @@
+Legende von TimeSeriesChart überarbeiten	"Im Gegensatz zu Chrome unterstützt Firefox die Methode getBBox() nicht. Wir müssen jedoch die Breite aller Elemente berechnen um das breiteste zu finden und allen Einträgen die Breite zuweisen. 
+
+Die Breite wird genutzt, um das Hovern über die Einträge zu ermöglichen, ohne sich exakt auf dem Text befinden zu müssen. 
+
+Um die Funktionalität wiederherzustellen wird dort vorübergehend eine fixe Breite gesetzt, es sollte jedoch eine variable Breite berechnet werden können.
+
+
+
+Siehe TODO multiLineChart.js:181"		Improvement	OpenSpeedMonitor	25/Jan/16 12:53 PM	17/Feb/17 1:06 PM														01/Feb/17 1:24 PM;jwi;Mehrere Spalten mit flexibler Breite ermöglichen.	"07/Feb/17 5:56 PM;bwo;Wie besprochen habe ich eine neue Anordnung mit flexbox implementiert (Siehe Anhang). Es wird nun versucht möglichst viele Einträge in eine Reihe zu bekommen, anschließend wird umgebrochen. So sparen wir zwar extrem viel Platz ein, jedoch leidet die Übersichtlichkeit etwas. Außerdem ist nicht direkt ersichtlich welches Häkchen zu welcher Box gehört. 
+
+
+
+Soll ich das Ganze so pushen oder sollte eher an geordnet Spalten gearbeitet werden? Diese wären dann übersichtlicher, würden aber bereits bei einem langen Namen wieder zum 1. Spalten Layout führen."	08/Feb/17 2:05 PM;nku;Wenn die Legendeneinträge zu lang sind wird's eben einspaltig. Wir brauchen auf jeden Fall weiter Spalten!	17/Feb/17 1:06 PM;bwo;Es werden nun dynamisch mehrere Spalten erzeugt, sodass immer die Breite ausgenutzt wird. Außerdem habe ich noch einen Line-Wrap für die Labels eingefügt, sodass bei einem zu kleinem Fenster der Text nicht mehr abgeschnitten wird.																																																			

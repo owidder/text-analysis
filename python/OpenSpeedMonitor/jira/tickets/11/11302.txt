@@ -1,0 +1,7 @@
+Highchart-Graphen mit mehr als 1.000 Punkten ermöglichen	"Derzeit nutzen wir die default-Einstellung von Highcharts 3 für die maximale Anzahl an Punkten in einem Graphen. Diese beträgt 1.000 Datenpunkte.
+Mittels des folgenden Attributs lassen sich auch mehr als 1.000 Punkte darstellen:
+http://api.highcharts.com/highcharts#plotOptions.series.turboThreshold
+
+Wir sollten eine Einstellung finden, mit der sich deutlich mehr Punkte darstellen lassen. Diese müssen dann auch noch performant angezeigt werden können. 
+Zielvorgabe: 2 Wochen Daten mit 6 Kurven sollten möglich sein."		Improvement	OpenSpeedMonitor	03/Feb/14 2:03 PM	20/Feb/14 3:45 PM														"20/Feb/14 3:45 PM;nkuhn;die turboThreshold von Highcharts ist jetzt konfigurierbar via taglib.
+Wir verwenden 100.000 Punkte pro Graph."																																																						

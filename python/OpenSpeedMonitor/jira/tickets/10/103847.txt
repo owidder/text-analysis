@@ -1,0 +1,23 @@
+NCD: Not reachable Building Blocks for special permission configurations	"*Summary:*
+
+For special permission configurations (""islands""), e.g. only permission for Business Domain + Business Process and Architecture Domain + Technical Component, it is not possible to reach the other Building Block Type as inner or outer element.
+
+
+
+*Explanation:""
+
+* The toolarea for inner and outer elements only shows ""connected"" (over two steps connected) Building Block Types.
+
+* For certain permissions for Building Block Types the following can happen:
+
+** the inital diagram starts with one Building Block Type
+
+** You can choose all connected Building Block Types from the Toolarea
+
+** But if some Building Block Types in between are missing, it is not possible to reach all Building Block Types
+
+
+
+{color:red}UPDATE: {color} Please implement the following solution: If the user does not have all Building Block-Type permissions, show all available (not only connected ones) Building Block Types as outer elements."		Bug	iteraplan Speedbird	24/Nov/16 2:48 PM	04/Apr/17 6:21 PM														02/Mar/17 5:55 PM;fka;[~msr]: Do you have any solution in mind?	"03/Mar/17 2:19 PM;msr;To [~fka]: I'd suggest to use a simple solution as the situation above is a rare situtation:
+
+* If the user does not have all Building Block-Type permissions, show all available (*not* only connected ones) Building Block Types as outer elements."	04/Apr/17 6:21 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-481																																																				

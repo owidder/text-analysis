@@ -1,0 +1,91 @@
+Mass update - an exception occurs when "copy to clipboard" empty errors	"h4. Problem Description:
+
+
+
+Mass update - an exception occurs when ""copy to clipboard"" empty errors
+
+h4. Reproduction Steps:
+
+ * Open application and navigate to Technical Components page
+
+ * Add ""Available for Interfaces"" column
+
+ * Open ""Mass Update"" mode
+
+ * Try to set ""No"" for all Units to just added column
+
+- Summary: 2 failed but ""Errors"" column is empty
+
+ * Click on ""Copy to clipboard"" button
+
+
+
+h4. Observed Results:
+
+
+
+An error occurs in console: 
+
+_TypeError: An exception occurred: item.errors is undefined_
+
+_Stack trace:_
+
+_openSummaryDialog/<.controller</$scope.copyToClipboard/toClipboard<@http://localhost:8080/client/components/ipList/massUpdate/massUpdate-component.js:392:25_
+
+_openSummaryDialog/<.controller</$scope.copyToClipboard@http://localhost:8080/client/components/ipList/massUpdate/massUpdate-component.js:391:39_
+
+_fn@http://localhost:8080/client/bower_components/angular/angular.js line 15358 > Function:2:162_
+
+_callback@http://localhost:8080/client/bower_components/angular/angular.js:26994:17_
+
+_$eval@http://localhost:8080/client/bower_components/angular/angular.js:18161:16_
+
+_$apply@http://localhost:8080/client/bower_components/angular/angular.js:18261:20_
+
+_ngEventHandler/<@http://localhost:8080/client/bower_components/angular/angular.js:26999:17_
+
+_defaultHandlerWrapper@http://localhost:8080/client/bower_components/angular/angular.js:3734:3_
+
+_eventHandler@http://localhost:8080/client/bower_components/angular/angular.js:3722:9_
+
+h4. Expected Results:
+
+
+
+The errors should be shown in the ""Errors"" column when some update is failed.
+
+h4. Note:
+
+ - Used dev and #340 in FF
+
+ - See attached .gif file
+
+ - When try to update failed Components the following error is displayed in console: _""Edit Service could not apply model changes:_ 
+
+_Error code: -1_
+
+_Messages: The field Available for Interfaces cannot be reset. Interfaces using one or more releases of this Technical Component already exist!""_"		Bug	iteraplan PO	08/Jun/17 3:18 PM															"14/Jun/17 11:57 AM;roia;Copy feature is fixed.
+
+
+
+[~msr], the server errors are empty with status ""-1"". Shouldn't we create a follow-up ticket to return some meaningful errors from backend?
+
+
+
+!avfi-errors.png!"	"16/Jun/17 5:22 PM;fka;In current nightly build the multi mode (former mass update) summary screen is completely gone.
+
+
+
+I want my summary screen back!"	"16/Jun/17 6:44 PM;roia;Summary screen has been broken by revision 7092, task -IPTS-728-
+
+
+
+I have fixed it by updating the implementation of revision 7092. [~mash], please review my commit 7117, because I'm not fully familiar with the implementation of -IPTS-728-.
+
+
+
+[~fka], I think, you can try now to see the summary screen once more. "	19/Jun/17 6:51 PM;mash;I still get empty errors row and copy to clipboard also copies result to browser console	"20/Jun/17 10:27 AM;roia;In scope of this task: only copy feature.
+
+
+
+Proper error messages from backend: separate ticket https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-5380"																																																		

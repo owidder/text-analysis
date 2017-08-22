@@ -1,0 +1,39 @@
+Create skeleton for Bar Chart diagram and implement basic functionality	"Short description of Bar Chart diagram after discussion with [~msr]:
+
+- Only Diagram with ""Attribute Values""
+
+- Show segment labels and show empty bars is always active (IPTS-262, IPTS-271)
+
+- Labels: no percent number only absolute numbers
+
+- Always show aggregated total number right of the bar (no percent number)
+
+- Order by position or if not exists: by attribute value name
+
+- Zooming (IPTS-265)
+
+- Scrolling with GoJS-features (initially diagram size restricted to screen size)
+
+- No partial
+
+- Loading indicator
+
+- Include report date in legend
+
+- Legend slide in and out
+
+- Static Toolarea"		Task	iteraplan Speedbird	26/Oct/16 12:19 PM	07/Nov/16 4:04 PM														"01/Nov/16 3:30 PM;ants;JS Exception is thrown when building block without appropriate attributes is selected as diagram content type.
+
+See screenshot."	"01/Nov/16 3:43 PM;ants;Empty diagram is shown when all business objects of selected content type has only unspecified attribute value for selected attribute (reproduced for architectural domains without accountability values).
+
+
+
+Expected:
+
+Diagram with bar for unspecified attribute value end empty bars for specified attribute values.
+
+See screenshot."	"01/Nov/16 6:48 PM;viol;Review is done:
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-131
+
+Please fix bugs reported above"																																																				

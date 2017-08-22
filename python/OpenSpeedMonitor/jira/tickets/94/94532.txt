@@ -1,0 +1,1 @@
+Datapoints nicht anwählbar nachdem Filterung rückgängig gemacht wurde	Wenn man in dem MicroService in einem PieChart etwas auswählt und dann die Auswahl rückgängig macht, sind die Datenpunkte, die zwischendurch rausgefiltert wurden nicht mehr klickbar. 		Bug	OpenSpeedMonitor	29/Aug/16 12:03 PM	29/Aug/16 1:16 PM																																																																				

@@ -1,0 +1,83 @@
+Asset-Tabelle geht irgendwann beim Benutzen kaputt	"Muss mit aktueller Version nochmal nachvollzogen werden.
+
+
+
+
+
+Wenn ich das Detaildaten Dashboard benutze und öfter verschiedene Asset-Tabellen aufrufe, funktioniert dies irgendwann nicht mehr und ich muss die Seite neu laden. Auf der Console erscheint:
+
+{code}
+
+Uncaught TypeError: Cannot read property 'style' of undefined
+
+    at Zb (DcDashboardCreator.unminified.js:62)
+
+    at wa (DcDashboardCreator.unminified.js:13)
+
+    at oa.<anonymous> (DcDashboardCreator.unminified.js:126)
+
+    at oa.iterator (DcDashboardCreator.unminified.js:100)
+
+    at oa.<anonymous> (DcDashboardCreator.unminified.js:126)
+
+    at Function.adjust (DcDashboardCreator.unminified.js:102)
+
+    at oa.<anonymous> (DcDashboardCreator.unminified.js:125)
+
+    at oa.visible (DcDashboardCreator.unminified.js:102)
+
+    at oa.<anonymous> (DcDashboardCreator.unminified.js:137)
+
+    at oa.iterator (DcDashboardCreator.unminified.js:100)
+
+Zb @ DcDashboardCreator.unminified.js:62
+
+wa @ DcDashboardCreator.unminified.js:13
+
+(anonymous) @ DcDashboardCreator.unminified.js:126
+
+iterator @ DcDashboardCreator.unminified.js:100
+
+(anonymous) @ DcDashboardCreator.unminified.js:126
+
+(anonymous) @ DcDashboardCreator.unminified.js:102
+
+(anonymous) @ DcDashboardCreator.unminified.js:125
+
+(anonymous) @ DcDashboardCreator.unminified.js:102
+
+(anonymous) @ DcDashboardCreator.unminified.js:137
+
+iterator @ DcDashboardCreator.unminified.js:100
+
+(anonymous) @ DcDashboardCreator.unminified.js:137
+
+(anonymous) @ DcDashboardCreator.unminified.js:102
+
+removeAllRowsFromAssetDetailsTable @ DcDashboardCreator.unminified.js:1071
+
+success @ DcDashboardCreator.unminified.js:1009
+
+n @ application-6e80202276192835f84e3263bd07010e.js:63
+
+fireWith @ application-6e80202276192835f84e3263bd07010e.js:64
+
+b @ application-6e80202276192835f84e3263bd07010e.js:136
+
+(anonymous) @ application-6e80202276192835f84e3263bd07010e.js:146
+
+{code}
+
+
+
+Zum Reproduzieren:
+
+1. [Dashboard|http://openspeedmonitor.wpt.iteratec.de/detailAnalysis/show?includeCustomConnectivity=false&selectedAllBrowsers=on&selectedPages=21&selectedPages=10&selectedPages=20&selectedPages=14&selectedPages=41&selectedPages=13&selectedPages=11&selectedPages=7&selectedPages=30&selectedPages=15&selectedPages=31&selectedPages=5&selectedPages=8&selectedPages=6&selectedPages=1&selectedPages=12&selectedPages=9&trimAboveLoadTimes=&trimBelowRequestSizes=&_setFromHour=&selectedAllConnectivityProfiles=on&_setToHour=&trimAboveRequestSizes=&selectedAllLocations=on&trimBelowLoadTimes=&fromHour=10%3A00&setFromHour=on&_selectedAllConnectivityProfiles=&trimBelowRequestCounts=&to=13.12.2016&trimAboveRequestCounts=&selectedAggrGroupValuesUnCached=docCompleteTimeInMillisecsUncached&includeNativeConnectivity=false&selectedFolder=22&from=07.12.2016&customConnectivityName=&_selectedAllLocations=&selectedInterval=-1&selectedAllMeasuredEvents=on&_selectedAllBrowsers=&selectedTimeFrameInterval=0&toHour=23%3A59&_selectedAllMeasuredEvents=] aufrufen
+
+2. Auf TTFB/Max schalten
+
+3. Auf Application/Javascript und einen Host einschränken
+
+4. Nacheinander verschiedene Pages wählen und verschiedene Punkte für Asset-Tabellen aufrufen
+
+5. Irgendwann kommt keine Asset-Tabelle mehr"		Bug	OpenSpeedMonitor	19/Jan/17 9:57 PM																																																																					

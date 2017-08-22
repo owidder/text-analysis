@@ -1,0 +1,7 @@
+Chart implementieren: SpeedIndex einzelner Seiten als waagerechte Balken	"SpeedIndex-Mittelwerte einzelne Seiten der eigenen Anwendung als waagerechte Balken.
+
+
+
+Darstellung analog zu 
+
+!Ladezeiten WB.png|thumbnail!"		Story	OpenSpeedMonitor	10/Feb/17 5:11 PM	15/Mar/17 3:11 PM														15/Mar/17 3:11 PM;jwi;Ist bereits im Page Aggregation chart realisiert.																																																						

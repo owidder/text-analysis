@@ -1,0 +1,1 @@
+Konfiguration der Authentifizierung überarbeiten	Ein eigenes Formular für die Konfiguration der Authentifizierung in den Prozess einbauen.	78821	Sub-task	secureCodeBox	20/Apr/16 3:14 PM	21/Apr/16 5:38 PM																																																																				

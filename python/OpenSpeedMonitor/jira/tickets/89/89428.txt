@@ -1,0 +1,86 @@
+Iteraplan 5.2 startup mit REST connection	"Hallo,
+
+
+
+wir starten Iteraplan und den Iteraplan Viewer zusammen in einem Tomcat.
+
+Der Viewer holt sich beim Starten per REST die Daten von Iteraplan. Seit der Version 5.2 verursacht das wohl ein Lock oder Timeout, sodass es (genau) eine Stunde dauert, bis das Iteraplan gestartet ist und man es aufrufen kann.
+
+
+
+Mit freundlichen Grüßen
+
+Dominik Wagner und Armin Joachimsmeyer"		Fault	iteraplan Support	05/Jul/16 10:06 AM	20/Aug/16 7:00 AM														"06/Jul/16 11:00 AM;iteraplan-support;Hallo Herr Wagner, hallo Herr Joachimsmeyer,
+
+leider verstehe ich nicht ganz genau, wann die lange Wartezeit auftritt. Können Sie uns bitte Ihr Vorgehen genauer beschreiben?
+
+* Dauert das Starten des Tomcats bereits so lange?
+* Können Sie iteraplan alleine starten oder dauert auch das bereits sehr lange?
+* Dauert die Antwort auf den REST-Request so lange (also 1 Stunde)?
+* Oder benötigt der iteraplan Viewer zum Starten so lange?
+
+Da der iteraplan Viewer nicht von uns entwickelt wurde, können wir Probleme, die vom Viewer verursacht werden, allerdings nicht supporten.
+
+Mit freundlichen Grüßen
+Manuel Schreyer - iteraplan Support"	"06/Jul/16 12:28 PM;dominik.wagner@axa.de;Hallo Herr Schreyer,
+
+wenn wir nur Iteraplan starten, oder auch beides starten, aber bei dem Iteraplan Viewer den Aufruf der REST Schnittstelle nicht ausführen, startet alles innerhalb von wenigen Minuten. Nur wenn man beides zusammen startet, und der Aufruf der REST Schnittstelle eingeschaltet ist, dann dauert es genau eine Stunde, bis beides gestartet ist, vorher lässt sich Iteraplan, und so weit ich weiß auch der Viewer gar nicht erst aufrufen.
+
+Mit freundlichen Grüßen
+Dominik Wagner"	"07/Jul/16 9:19 AM;iteraplan-support;Hallo Herr Wagner,
+
+können Sie uns bitte die Log-Dateien Ihres Tomcats schicken, dass wir besser analysieren können, welche Requests geschickt werden? Konkret benötigen wir folgende Dateien (jeweils bitte für einen Zeitraum, in dem die lange Wartezeit auftrat):
+
+* Die iteraplan Logdatei bzw. Dateien aus dem Zeitraum, in dem der Fehler aufgetreten ist. Diese Dateien tragen üblicherweise den Namen iteraplan-[version].log (für den aktuellen Tag) bzw. iteraplan-[version].log.[TIMESTAMP] für vergangene Tage. Der Ablageort dieser Logdateien wurde bei der iteraplan-Installation angegeben und kann bei Bedarf in der Datei ""[Tomcat]/webapps/[iteraplan Installationsverzeichnis]/WEB-INF/classes/log4j.properties"" nachgesehen werden.
+* Aus dem Ordner [Tomcat]/logs die Dateien:
+** catalina.[DATUM].log
+** host-manager.[DATUM].log
+** localhost.[DATUM].log
+** localhost_access_log.[DATUM].txt
+** manager.[DATUM].log
+
+Vielen Dank.
+
+Mit freundlichen Grüßen
+Manuel Schreyer - iteraplan Support
+"	"07/Jul/16 12:26 PM;dominik.wagner@axa.de;Hallo Herr Schreyer,
+
+wir haben unser Testsystem nochmal heute um kurz nach 11 Uhr neu gestartet, zwischen 11:10Uhr und 12:10 Uhr gab es wieder das Problem beim Hochfahren.
+Ich habe die Logfiles als ZIP Datei angehängt.
+
+Mit freundlichen Grüßen
+Dominik Wagner
+
+[^Logfiles_Restart_1110_bis_1210_am_20160707.zip] _(8 kB)_"	"12/Jul/16 9:22 AM;iteraplan-support;Hallo Herr Wagner,
+
+laut Ihren Log-Dateien ist der Request, der so lange für die Antwort benötigt, folgender:
+
+{{10.174.120.8 - - [07/Jul/2016:12:10:24 +0200] ""GET /iteraplan/lbprobe HTTP/1.1"" 200 18}}
+
+Die URI ""iteraplan/lbprobe"" existiert aber in der iteraplan-REST-Schnittstelle nicht (siehe https://www.iteraplan.de/doc/display/iteraplan52/REST+API+Resource+Structure) und ist uns auch nicht bekannt. Kann es sich dabei um eine selbst entwickelte Schnittstelle handeln, die SIe im Rahmen des iteraplan Viewers hinzugefügt haben? 
+
+Mit freundlichen Grüßen
+Manuel Schreyer - iteraplan Support"	"25/Jul/16 7:04 AM;dominik.wagner@axa.de;Hallo Herr Schreyer,
+
+zu dem Thema kann leider nur mein Kollege genaueres sagen, der aber noch bis einschließlich Dienstag in Urlaub ist.
+
+Mit freundlichen Grüßen
+Dominik Wagner"	"27/Jul/16 3:45 PM;armin.joachimsmeyer@axa.de;Hallo Herr Schreyer,
+diese URL ist ein Loadbalancer Probe Servlet, das wir per jar und web.xml hinzugefügt haben.
+Dass läuft immer, da es keine Resourcen braucht, nur die Anwendung muss gestartet sein.
+Es ist also ein zusätzliches Indiz, dass Iteraplan zum Starten genau eine Stunde braucht, aber auf keinen Fall der Auslöser, da bei einer Unterdrückung der REST Anfrage dieses Servlet innerhalb von Minuten (eben nach dem Hochfahren) antwortet."	"01/Aug/16 11:44 AM;cst;Sehr geehrter Herr Joachimsmeyer, 
+sehr geehrter Herr Wagner,
+
+vielen Dank für Ihre Antwort. 
+
+Wir verstehen Sie so, dass Sie das iteraplan-Deployment im Tomcat durch weitere eigene Software ergänzt haben. 
+Wenn Sie eigene Lösungen in iteraplan mit integrieren, können wir für iteraplan generell keinen Support mehr leisten. 
+
+Wie Sie oben beschrieben haben, startet die Software ohne den von Ihnen eingesetzten ""Iteraplan Viewer"" ohne Komplikationen. Als weiteres Vorgehen schlagen wir vor, dass Sie iteraplan ohne Änderungen installieren. Generell empfehlen wir auch, iteraplan in einem eigenen Tomcat zu installieren, in dem keine weiteren Anwendungen deployed sind.
+
+Mit freundlichen Grüßen,
+
+Christoph Stangl - iteraplan Support
+
+
+"																																															

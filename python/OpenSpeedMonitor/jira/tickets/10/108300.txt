@@ -1,0 +1,9 @@
+TC single element view: available for interface shouldn't be a switch	"The property ""Available for Interfaces"" is shown as a switch on the single element view of the technical component, although editing is not possible yet in this view. Although toggling the switch has no effect, the switch should be removed and a simple ""Yes"" or ""no"" should be sufficient at the moment.
+
+
+
+See also screenshot...
+
+
+
+Same applies to all attribute single views."		Bug	iteraplan Speedbird	13/Jan/17 8:54 AM	24/Jan/17 2:34 PM														24/Jan/17 2:34 PM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-304																																																						

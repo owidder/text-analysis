@@ -1,0 +1,33 @@
+Filter-URL updating on operator selection but without value changing	"- go to N3CD
+
+- open Filter Dialog for inner elements
+
+- set attribute ""Costs""
+
+- set operator ""between""
+
+- DON'T change slider values 
+
+expected: defined filter row appears in url with max and min values
+
+actual: it don't
+
+
+
+So: 
+
+- filter is not applied. 
+
+- reload (or language change) removes the filter. 
+
+
+
+
+
+NOTE: the same behaviour with operator ""orbitary value"""		Bug	iteraplan Quickfox	11/May/16 6:11 PM	05/Aug/16 2:14 PM														"04/Aug/16 4:51 PM;pma;Ticket was already fixed
+
+URL before selecting aforementioned attributes: http://localhost:9002/#/ncd?locale=en&relationFromInnerToOuter=B19
+
+URL after selecting ""Costs"" and ""between"": http://localhost:9002/#/ncd?locale=en&relationFromInnerToOuter=B19&innerTypeCombinedFilter=numS%2FCostsS%2FbetweenS%2F1;5000C%2FflatC%2F
+
+URL after selecting ""Costs"" and ""arbitary value"": http://localhost:9002/#/ncd?locale=en&relationFromInnerToOuter=B19&innerTypeCombinedFilter=numS%2FCostsS%2Farbitrary_valueS%2F1;5000C%2FflatC%2F"																																																						

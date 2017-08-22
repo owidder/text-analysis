@@ -1,0 +1,5 @@
+Benutzerdefinierte Dashboards lassen sich nicht mehr löschen	"Wir haben in Version 3 einen Link zum Löschen aufgerufener benutzerdefinierter Dashboards gehabt. Der ist aktuell verloren gegangen.
+
+
+
+Wenn der User angemeldet ist, der das Dashboard auch angelegt hat und dieses aufruft sollte es einen Link geben, über den das Dashboard gelöscht werden kann."		Bug	OpenSpeedMonitor	30/Jan/17 9:45 AM	31/Jan/17 2:28 PM														31/Jan/17 2:28 PM;mmi;Die Buttons zum Löschen und Aktualisieren der Dashboards sind im Kontext-Menü des "Anzeigen-Buttons" versteckt, aber nutzbar.																																																						

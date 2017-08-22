@@ -1,0 +1,3 @@
+Timeseries XLS import shows error page for incompletely filled rows	"Rows have to be filled completely. Timeseries entries without either date or value are invalid and a timeseries needs to refer to a building block.
+
+Please show meaningful error messages instead of the general error page in cases which violate these constraints."		Bug	iteraplan PO	22/Apr/13 3:18 PM	13/May/13 7:44 PM					timeseries																																																															

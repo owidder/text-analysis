@@ -1,0 +1,8 @@
+Als Productowner möchte ich das alle Artefakte in Artifactory abgelegt werden	"Das iteratec Artifactory System findet sich unter artifactory.iteratec.de
+
+Beispielhaft ist dies bereits im secureBoxZap Projekt umgesetzt.
+
+Vorgehen:
+1) Gradle Build Datei entsprechend anpassen
+2) Bamboo Build Prozess erweitern um einen zusätzlichen Build Schritt (vgl. secureBoxZap Build)
+"		Story	secureCodeBox	11/Jul/16 1:07 AM	27/Jul/16 10:28 AM					students																																																															

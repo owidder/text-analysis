@@ -1,0 +1,11 @@
+Combine duration attributes in one column	"As suggested by [~roia]:
+
+
+
+* Put the duration attributes into one column (no Begin and End-columns).
+
+* If no start-date and end-date exist, display an empty string
+
+* If only no start-date exists, display ""ending "" + end date
+
+* If only no end-date exists, display ""starting "" + start-date"		Improvement	iteraplan PO	23/May/16 11:38 AM	16/Jun/16 8:52 AM														16/Jun/16 8:52 AM;msr;Not needed because of new implementation of dateIntervals																																																						

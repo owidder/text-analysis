@@ -1,0 +1,18 @@
+open dummy page when wrong link	"If you call an invalid link, the dummy page should be opened.
+Actuell: you get a broken site
+
+Furthermore, the link on the dummy page is wrong. Change it from ""recent"" to ""/"" 
+
+See also:
+{code}
+app.constant('ROUTES', (function () {
+    return {
+        RECENT: '/',
+        CATEGORY: '/:category',
+        NCD: '/diagram',
+        DUMMY: '/dummy',
+        LSD: '/lsd'
+    }
+})());
+{code}"		Bug	iteraplan PO	21/Apr/15 10:39 AM	22/Apr/15 12:56 PM					newClient									"22/Apr/15 12:56 PM;fam;Checked code and function.
+Solution okey, ticket closed."																																																						

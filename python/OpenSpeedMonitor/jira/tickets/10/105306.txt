@@ -1,0 +1,7 @@
+Linkvon Job-Liste zu PageAggregation mit falschem Datumsformat	"Beispielsweise folgender Link:
+
+http://demo.openspeedmonitor.org/pageAggregation/show?selectedInterval=-1&selectedTimeFrameInterval=0&from=5.12.2016&fromHour=08%3A00&to=12.12.2016&toHour=08%3A01&selectedFolder=9&selectedPages=2&measurand=%7B%22stacked%22%3A%22notStacked%22%2C%22values%22%3A%5B%22docCompleteTimeInMillisecsUncached%22%5D%7D
+
+
+
+hat einen fehlerhaften ""from"" Parameter, da er nicht im Format `dd.mm.yyyy` sondern `d.mm.yyyy` ist. Somit wird die Seite falsch initialisiert und kein Graph angezeigt."		Bug	OpenSpeedMonitor	12/Dec/16 8:43 AM	12/Dec/16 11:21 AM																																																																				

@@ -1,0 +1,11 @@
+Sending a saved query does not work in Mass Update	"*Reproduce:*
+
+* Open iteraplan and go to MassUpdate
+* Click on a saved query
+* Click on ""Send query""
+
+*Expected:*
+The query should be executed and a list of building block should be displayed. 
+
+*Actual:* A blank, white screen appears without Stacktrace in iteraplan. 
+"		Bug	iteraplan PO	26/Aug/14 4:06 PM	28/Aug/14 3:59 PM																																																																				

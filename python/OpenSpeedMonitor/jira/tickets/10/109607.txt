@@ -1,0 +1,42 @@
+Download Iteraplan 5.3	"Hallo, wir würden gerne noch die Version 5.3 bei uns testen.
+
+Wo kann ich die Enterprise Edition und die Lokal Standalone Version downloaden ?"		Technical question	iteraplan Support	25/Jan/17 8:19 AM	13/Feb/17 7:00 AM														"25/Jan/17 10:47 AM;cst;Guten Morgen Herr Zerrer,
+
+vielen Dank für Ihre Anfrage.
+
+Hier erhalten Sie die Zugangsdaten / Link zum Bundle für die Version 5.3.
+
+https://www.iteraplan.de/downloads/premium/5.3.0/iteraplan-premium-ldap-bundle-5.3.0.zip 
+
+Login: premium
+Password: 2rIustoA
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"25/Jan/17 11:34 AM;wolfgang.zerrer@festo.com;1. :Danke für den Link. Download funktioniert aber nicht. 
+2.: Standalone Version für lokalen Test"	"25/Jan/17 12:33 PM;cst;Hallo,
+
+vielen Dank für Ihre Antwort. 
+
+Habe den Downloadlink getestet und konnte kein Problem mit diesem feststellen.
+Tritt das gleiche Problem auch auf, wenn Sie den Link in Ihre Adressleiste kopieren?
+Zusätzlich noch der Link zur Installation:
+
+https://www.iteraplan.de/downloads/premium/5.3.0/iteraplan-5.3.0-premium-installer.zip 
+
+Bundle:
+
+https://www.iteraplan.de/downloads/premium/5.3.0/iteraplan-premium-ldap-bundle-5.3.0.zip 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+"	25/Jan/17 1:04 PM;wolfgang.zerrer@festo.com;Hallo, ich scheitere immer an der Authentifizierung	"25/Jan/17 1:08 PM;cst;Der Login ist gültig und aktiv:
+
+Login: premium
+Password: 2rIustoA
+
+Gerne können Sie den Vorgang auch in einem anderen Browser testen. 
+
+
+"																																																		

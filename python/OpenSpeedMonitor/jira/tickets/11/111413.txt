@@ -1,0 +1,1 @@
+Show Button deaktivieren wenn kein Measurand existiert	Wenn man beim Page Aggregation Chart alle Measureands weg klickt, sollte der "Show" Button auch deaktiviert sein.		Bug	OpenSpeedMonitor	09/Feb/17 12:16 PM	09/Feb/17 4:59 PM																																																																				

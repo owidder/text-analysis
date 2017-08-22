@@ -1,0 +1,11 @@
+Listview entries are not shown completely on large content	"The problem is really hard to describe, I added a Screenshot for this issue.
+
+
+
+!Error.PNG|thumbnail!
+
+
+
+Current: The content is not shown completely
+
+Expected: The whole content will be shown"		Bug	iteraplan Thunderduck	16/Nov/16 1:16 PM	09/Dec/16 1:48 PM														23/Nov/16 10:18 AM;fka;Possibly the multiplier for row height calculation is wrong in some ways...	09/Dec/16 9:20 AM;aan;Cannot reproduce (probably already fixed by [~sfe] while creating the multiline-editor)																																																					

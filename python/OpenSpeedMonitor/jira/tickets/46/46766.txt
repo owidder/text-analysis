@@ -1,0 +1,17 @@
+Get Model from REST API	"Write an angular service that 
+* reads the full model with GET<...>/data) from a local iteraplan server
+* parses the JSON response into a (big) JS object
+
+Write a unit test that checks if the model contains the expected number of elements for each building block type (for example IS, ISD, TC, IE ...).
+Get the expected numbers from the old iteraplan web UI.
+
+Write an angular service that returns only the information systems in the model. This service must use the first service for the full model.
+
+Add unit test for that service.
+
+Measure the time for reading the full model and discuss with Wolfgang.
+
+For UI, trigger the reading at client startup.
+After the reading is finished, show a simple popup message with the statistics as simple text in the form ""Model reading OK: 28 AD, 43 BP, BU""...419 total.""
+
+The message should fade after 2 seconds."		New Feature	iteraplan PO	29/Jul/14 11:36 AM	18/Sep/14 3:43 PM														06/Aug/14 10:34 AM;alvo;I've switch to angular-strap integration for popup implementation	06/Aug/14 1:42 PM;alvo;The data reading time from local (tomcat) server is 120-150ms, Total processing time for load models and draw menu items is 150-200ms. Measured in Chrome 36.0, under Ubuntu 12.0 64 bit. Mesurement stat displayed browser's in console.	28/Aug/14 3:04 PM;sepr;est 2 PD																																																				

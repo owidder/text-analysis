@@ -1,0 +1,19 @@
+Nightly-builds realisieren	"Auf der SEU soll eine Jenkins/Hudson jede Nacht einen build erstellen und dieses auf den Tomcat auf der SEU deployen.
+
+
+
+Zu diskutieren: Soll die DB immer zurückgesetzt und neu migriert werden?
+
+
+
+Wir sollten nach Realisierung des neuen Jenkins mit allen laufenden Test-Jobs (unit, jasmine, integration) nach erfolgreichen test-jobs den build-Job triggern, dann den deploy-job auf die dev-Instanz.
+
+
+
+Hier sollten Test-Jobs laufen. Die DB sollte nicht gelöscht werden.
+
+"		Story	OpenSpeedMonitor	03/Sep/13 9:45 AM	07/Mar/16 7:54 PM														25/Sep/13 10:46 AM;jwerschmoeller;Anforderung: Branch-Handling inkl. Building	08/Oct/13 4:48 PM;nkuhn;Hauke oder Martin?	15/Oct/13 12:31 PM;rhe;Bitte einen Job einrichten der alle Testklassen einzelnt ausführt, per Skript. Am Besten getrennt Unit / Integration. Leider sind die Test-Suits nicht stabil!	18/Oct/13 5:24 PM;rhe;Ein Jenkins Job läuft jetzt.	18/Oct/13 6:27 PM;rhe;SEU Mails müssen noch eingerichtet werden. Stand: MULTISTEP wird gebaut	21/Oct/13 7:01 PM;rhe;Testjob ist eingerichtet und scheint zu funktionieren (TestResults müssen noch getestet werden)	24/Oct/13 2:07 PM;hmettendorf;SEU Mails eingerichtet.	"07/Mar/16 7:54 PM;bka;Es läuft bereits seit einiger Zeit auf dem Bamboo ein nächtlicher Build-Job.
+
+
+
+Nun wird das nächtliche Build, direkt nach Fertigstellung, auf der dev.openspeedmonitor.wpt.iteratec.de deployed."																																															

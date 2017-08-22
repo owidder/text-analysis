@@ -1,0 +1,1 @@
+Create history initialization script for MS SQL Server (MS SQL)	Similar to initializations scripts for Oracle/MySQL.		Task	iteraplan PO	25/Oct/13 1:48 PM	06/Nov/13 1:56 PM					mssql	sql								06/Nov/13 1:56 PM;sfe;seems fine																																																						

@@ -1,0 +1,7 @@
+List Edit & IE	"- possible problems:
+
+-- async. scrolling: open informationSystem list view scroll down, action column scrolls faster than the rest (=> ag-grid problem)
+
+
+
+- Accept button causes errors (/)"		Bug	iteraplan Thunderduck	29/Nov/16 11:08 AM	19/Jan/17 12:54 PM																																																																				

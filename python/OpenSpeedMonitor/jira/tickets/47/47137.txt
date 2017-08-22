@@ -1,0 +1,2 @@
+Customizing for I-102	"The customer wants the display of unused building block types removed from the start screen.
+See also attached image."		Task	iteraplan PO	04/Nov/14 11:37 AM	07/Nov/14 9:53 AM					customizing									06/Nov/14 2:03 PM;sfe;Added customizing page in wiki: https://iteraweb.iteratec.de/confluence/pages/viewpage.action?pageId=41092868																																																						

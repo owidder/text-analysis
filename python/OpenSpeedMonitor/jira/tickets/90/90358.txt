@@ -1,0 +1,23 @@
+"Discrete Positioning" for enum attributes on both axes	"*Summary:*
+
+If enum attributes are on both axes, implement ""discrete positing"" instead of exact positiong, i.e.
+
+the elements are orderd by size.
+
+
+
+*Implementation Details:*
+
+* Ensure, that they do not overlap, but are all in the cell
+
+* If two elements have the same size, order them by localised name ascending
+
+* Url: nothing to do
+
+
+
+*UI:*
+
+* Legend: nothing to do
+
+* Toolarea: nothing to do"		New Feature	iteraplan Speedbird	13/Jul/16 5:05 PM	17/Aug/16 10:26 AM																																																																				

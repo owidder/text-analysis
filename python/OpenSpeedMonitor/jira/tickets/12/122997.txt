@@ -1,0 +1,123 @@
+Error bei Suche in Informationssystem	"
+
+
+
+Guten Tag
+
+
+
+ 
+
+
+
+Wir haben eine Iteraplan Installation im Einsatz und
+
+haben da ein kleines Problem:
+
+
+
+ 
+
+
+
+Eine kurze (also wenig Zeichen, z.B SAP) Volltextsuche in
+
+den Informationssystemen resultiert in folgender Fehlermeldung: Siehe bild
+
+
+
+
+
+
+
+Im Anhang finden Sie den Fehlerbericht (resp. die
+
+Dokumente dazu)
+
+
+
+ 
+
+
+
+Vielen Dank & Freundliche Grüsse
+
+
+
+Silvan Camenzind
+
+
+
+
+
+
+
+"		Fault	iteraplan Support	31/May/17 5:18 PM	02/Jul/17 7:00 AM														"31/May/17 5:18 PM;silvan.camenzind@gmz.migros.ch;
+
+[^ProblemReport_2017-05-30_174742.zip] _(9 kB)_
+
+[^_IE4DB3.tmp] _(51 kB)_"	"01/Jun/17 4:16 PM;msr;Guten Tag Herr Camenzind.
+
+Vielen Dank, dass Sie Ihre Anfrage hier im Service Desk stellen. Hier kann der jeweilige Ticketstatus, die Anhänge und der Verlauf gut überblickt werden.
+
+Nun zu Ihrem Problem:
+Haben Sie iteraplan vor Kurzem neu installiert oder die Datenbank umgezogen/migriert? Oder gibt es einen anderen spezifischen Anlass, seit wann dieser Fehler auftritt?
+
+Zusätzlich würde ich gerne ausschließen, dass es sich um ein Index-Problem handelt: Könnten Sie bitte den kompletten Index in iteraplan neu erzeugen lassen?
+* Dazu öffnen Sie bitte im Interaktiven Iteraplan Client den Tab ""Administration""
+* und dann die Kachel ""System"".
+* Nun klicken Sie bitte auf ""Cache leeren""
+* Nach geleertem Datenbank-Cache bitte auch den ""Index neu erstellen"" lassen
+* Danach bitte ausloggen
+* Und den Tomcat herunterfahren
+* Im heruntergefahrenen Tomcat bitte das temporäre work-Verzeichnis löschen: [TOMCAT]\work\Catalina\[iteraplan]
+* Und den Tomcat neu starten
+
+Bitte schreiben Sie mir die Resultate.
+Mit freundlichen Grüßen
+
+Marcel Schrumpf - iteraplan Support"	13/Jun/17 8:43 AM;silvan.camenzind@gmz.migros.ch;Hello why has this ticket changed to state "Waiting for customer"	"13/Jun/17 8:54 AM;msr;Guten Tag Herr Camenzind.
+
+
+
+Vielen Dank, dass Sie Ihre Anfrage hier im Service Desk stellen. Hier kann der jeweilige Ticketstatus, die Anhänge und der Verlauf gut überblickt werden.
+
+
+
+Nun zu Ihrem Problem:
+
+Haben Sie iteraplan vor Kurzem neu installiert oder die Datenbank umgezogen/migriert? Oder gibt es einen anderen spezifischen Anlass, seit wann dieser Fehler auftritt?
+
+
+
+Zusätzlich würde ich gerne ausschließen, dass es sich um ein Index-Problem handelt: Könnten Sie bitte den kompletten Index in iteraplan neu erzeugen lassen?
+
+
+
+    Dazu öffnen Sie bitte im Interaktiven Iteraplan Client den Tab ""Administration""
+
+    und dann die Kachel ""System"".
+
+    Nun klicken Sie bitte auf ""Cache leeren""
+
+    Nach geleertem Datenbank-Cache bitte auch den ""Index neu erstellen"" lassen
+
+    Danach bitte ausloggen
+
+    Und den Tomcat herunterfahren
+
+    Im heruntergefahrenen Tomcat bitte das temporäre work-Verzeichnis löschen: [TOMCAT]\work\Catalina[iteraplan]
+
+    Und den Tomcat neu starten
+
+
+
+Bitte schreiben Sie mir die Resultate.
+
+Mit freundlichen Grüßen
+
+
+
+Marcel Schrumpf - iteraplan Support
+
+"																																																			

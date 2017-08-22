@@ -1,0 +1,1 @@
+Add arrow buttons for reordering one column to the left/right.		83747	Sub-task	iteraplan PO	23/May/16 4:21 PM	25/May/16 4:05 PM														25/May/16 4:05 PM;mwe;Arrow buttons are not needed because drag'n'drop moving is enough.																																																						

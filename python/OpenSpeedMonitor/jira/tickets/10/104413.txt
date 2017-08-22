@@ -1,0 +1,1 @@
+SelectMeasurings responsive	Die Karte SelectMeasuring auf der Seite PageAggregation/show verhält sich beim verkleinern des Browser-Fensters eigenartig.		Task	OpenSpeedMonitor	01/Dec/16 10:01 AM	05/Dec/16 2:50 PM																																																																				

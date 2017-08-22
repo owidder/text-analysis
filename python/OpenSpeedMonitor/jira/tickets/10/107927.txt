@@ -1,0 +1,7 @@
+Update AG-Grid	"update AG-Grid to version 7.1.0
+
+
+
+the floating columns alignment issue (https://stackoverflow.com/questions/41342793/ag-grid-mismatch-between-header-cell-border-and-data-cell-border) is fixed since this version.
+
+"		Improvement	iteraplan Thunderduck	10/Jan/17 1:52 PM	12/Jan/17 12:26 PM																																																																				

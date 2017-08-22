@@ -1,0 +1,15 @@
+CRUD-Views: Assoziierte Domains lassen sich nicht entfernen	"Auch wenn man im Select der edit-View mit STRG+Klick den letzten Eintrag entfernt und anschließend auf _Speichern_ klickt bleibt die Assoziation enthalten.
+
+
+
+Lösung: 
+
+Entweder beim beschriebenen Entfernen aller Einträge wirklich alle assoziierten Domains entfernen oder einen Button hinzufügen _alle entfernen_.
+
+Lettzteres wäre wahrscheinlich intuitiver."		Bug	OpenSpeedMonitor	19/Feb/16 10:40 AM	11/Jan/17 12:00 PM														"25/Feb/16 11:24 AM;bka;Ist das Ticket noch aktuell?
+
+
+
+Falls ja, auf welche Domain bezieht sich das Ticket? Oder ist es ein mehrfach genutztes Template?"	"11/Jan/17 12:00 PM;mmi;Das Problem selbst trat nicht weiter auf.
+
+Jedoch wurden bereits zugeordnete Domains beim Editieren nicht angezeigt. Dieses ist jetzt gefixt."																																																					

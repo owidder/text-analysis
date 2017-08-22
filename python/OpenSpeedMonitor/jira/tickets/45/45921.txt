@@ -1,0 +1,12 @@
+Build iteraplan 3.1 release	"Prepare the release of iteraplan 3.1 Final:
+* Merge urgent fixes to release 3.1 branch  (/)
+* Update *all* customization sets so that they reflect all changes that were made between 3.0 and 3.1   (/) NOTE: zeiss customization split to ITERAPLAN-1818
+* Have localization files updated, where possible.  (/)
+* Review and update documentation, and build a fresh User Guide PDF.  (/)
+* Update release notes  (/)
+* One-time task: For the installer, change the process to create a file {{README.txt}} instead of only {{README}}. (This makes it easier for Windows users.)  (x)
+* Extract incremental migration scripts from the one-big-step scripts.  (/)
+* Update the iTURM distribution, if necessary   (gph: no changes in iturm since 29.3.12)  (/)
+
+
+Finally, build all release artefacts, according to the release process description.  (/)"		Task	iteraplan PO	24/Jul/13 5:54 PM	22/Aug/13 11:02 AM					release																																																															

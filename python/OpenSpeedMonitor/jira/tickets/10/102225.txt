@@ -1,0 +1,29 @@
+Input auf HTML überprüfen	"Alle möglichen Eingaben sollten auf HTML Inhalte überprüft werden, damit diese z.B. kein Javascript enthalten.
+
+
+
+Dies betrifft
+
+# normale Parameter die bei fehlerhafter Validierung mit in der Fehlermeldung ausgegeben werden.
+
+# Eingaben die in der Datenbank gespeichert werden, wie z.B. der Job Name. Dieser könnte wie folgt lauten: `=ontl77w<script>alert(String.fromCharCode(68,97,115,32,100,97,114,102,32,110,105,99,104,116,32,112,97,115,115,105,101,114,101,110,33))</script>rct6q`
+
+
+
+Somit würde überall, wo ein entsprechender Wert in HTML gerendert wird, dieses Script ausgeführt werden.
+
+
+
+Da wir nicht die einzigen mit diesem Problem sein sollten, sollten wir nach bestehenden grails-Lösungen gucken oder einer generellen Methode um Input zu validieren und HTML zu erkennen und ggf. einen Fehler zu schmeißen."		Bug	OpenSpeedMonitor	10/Nov/16 11:06 AM															"22/Nov/16 10:22 AM;sbr;Wir benutzen im Moment in jedem GSP `defaultCodec=""none""` was dazu führt, dass jeder String ""roh"" gerendert wird.
+
+Wenn wir stattdessen das defaultEncoding nicht verändert wird, würde HTML niemals in unsere Seiten gerendert werden. Ist dies an einer Stelle (z.B. beim rendern von JSON Daten in Javascript) nötig, sollten wir dort explizit das richtige encoding verwenden.
+
+
+
+Siehe auch
+
+http://docs.grails.org/latest/guide/security.html#codecs
+
+http://docs.grails.org/3.1.1/ref/Plug-ins/codecs.html
+
+http://stackoverflow.com/questions/23252891/sending-json-to-javascript-on-gsp"																																																						

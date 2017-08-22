@@ -1,0 +1,27 @@
+Edit Single Date Interval Page	"*Summary:*
+
+Edit Single Date Interval Page
+
+
+
+*Details:*
+
+* Edit Name (null is not allowed)
+
+* {color:red}UPDATE: {color} Edit description field (incl. JSCreole to display wiki-syntax)
+
+* Edit Start date attribute: Single Select Dropdown (null is not allowed) (Must be different than End date attribute)
+
+* Edit End date attribute: Single Select Dropdown (null is not allowed) (Must be different than Start date attribute)
+
+* Edit Color (colorpicker) incl. pencil-icon
+
+* A routchange away from attribue-list triggers a reload
+
+
+
+{color:red}UPDATE: {color} Show the following error message, if not all mandatory fields are set:
+
+""A Date Interval must have a name, a start date attribute, an end date attribute and a colour.""
+
+GER: ""Eine Zeitspanne muss einen Namen, ein Startdatums-Merkmal, ein Enddatums-Merkmal und eine Farbe haben."""		New Feature	iteraplan Speedbird	02/Mar/17 4:17 PM	09/Mar/17 9:27 AM																																																																				

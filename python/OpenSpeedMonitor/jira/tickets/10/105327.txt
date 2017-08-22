@@ -1,0 +1,11 @@
+Show unassigned Attribute-values as "not assigned" in Single Element View	"*Summary:*
+
+Show unassigned Attribute-values as ""not assigned"" (German: ""nicht gesetzt"") in the Single Element View
+
+
+
+*Details:*
+
+* for all attributes in all tabs
+
+* also on the top (e.g. for the description)"		Improvement	iteraplan Speedbird	12/Dec/16 11:18 AM	21/Dec/16 12:57 PM																																																																				

@@ -1,0 +1,19 @@
+Create new user in list (Client)	"*Summary:*
+
+* Create a new button on the top right side with the angular material icon ""add box"" and the text ""Create User"" / GER: ""Anwender erstellen""
+
+* Reuse ""create element"" of the building block list
+
+* After clicking on the button show the alert message using the alert service: ""Users are to be created and modified in the external application iTurm or in your active directory."" (German: ""Anwender müssen in der externen Applikation iTurm oder im Active Directory angelegt und gepflegt werden."") (message will disappear after a few seconds)
+
+* Create a new row on top of the table and ensure that the name is entered
+
+*  {color:red}UPDATE: {color}POST: ""loginName"", ""firstName"" and ""lastName"" are mandatory, all other fields not, ""id"", ""lastModUser"" and ""lastModTime"" to be set automatically by the backend"		New Feature	iteraplan Speedbird	27/Feb/17 4:18 PM	04/Apr/17 4:22 PM														"15/Mar/17 11:52 AM;olal;Give me correct locale strings (eng/ger)  for validation error. Examle on screen below
+
+!image-2017-03-15-12-51-15-133.png!"	20/Mar/17 11:35 AM;msr;GERMAN: "Folgende Felder werden benötigt"	20/Mar/17 4:41 PM;roia;Review: https://iteraweb.iteratec.de/fisheye/cru/IP-445#CFR-41990	21/Mar/17 1:30 PM;olal;Updates according to code review in  revision [6376|https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-9?cs=6376]	"27/Mar/17 12:27 PM;roia;Review updated
+
+[https://iteraweb.iteratec.de/fisheye/cru/IP-445]
+
+
+
+ "	28/Mar/17 2:43 PM;olal;fixed items counter in revision 6439	04/Apr/17 4:22 PM;vadm;Review https://iteraweb.iteratec.de/fisheye/cru/IP-480																																																

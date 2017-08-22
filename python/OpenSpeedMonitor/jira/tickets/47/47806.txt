@@ -1,0 +1,10 @@
+Warn message for user in transition between new and old client	"As Is:
+
+If the user switches over the textual links between the old and the new client, all possibly applied changes at the current screen will be lost. 
+He can return to the previous screen over the back button in the browser navigation, but users perhaps aren`t used to do so or they probably won´t do this beeing taught a long time not to use browser interaction in iteraplan.
+
+To Be:
+
+To improve this transition a warn message should appear that he now leaves the actual client and switches to the other one and data which seems to be lost, can be restored over the browser history.
+
+The way this warn message is displayed and how the whole transition should look like is still to discuss."		Improvement	iteraplan PO	02/Jun/15 5:23 PM	19/Jan/16 4:06 PM					newClient																																																															

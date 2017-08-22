@@ -1,0 +1,15 @@
+LSD Hide Attribute if none is available	"Set Content Element type to Business Domain
+
+Click on Axis
+
+
+
+Actual
+
+Change row/column association -> Attribute is shown but without values
+
+
+
+Expect
+
+Change row/column association -> Attribute isnt shown"		Improvement	iteraplan PO	19/Nov/15 2:16 PM	02/Dec/15 9:48 AM					attribute	lsd																																																														

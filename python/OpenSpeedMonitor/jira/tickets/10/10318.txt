@@ -1,0 +1,1 @@
+Erfolgreiche Testausführung nach dem Refactoring des Klassen-Datenmodells mit erfolgreicher Verarbeitung von bisherigen als auch neuen Multi-Step-Meßergebnissen (leere DB)			Story	OpenSpeedMonitor	22/Jul/13 10:06 AM	05/Aug/13 11:22 AM																																																																				

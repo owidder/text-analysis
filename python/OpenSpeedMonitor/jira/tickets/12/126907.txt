@@ -1,0 +1,44 @@
+Aus Strukturansicht lassen sich die Elemente nicht anwählen	"Hallo,
+
+Im Firefox 50.1.0 lassen sich auf der Strukturansicht die Elemente nicht anwählen. Im IE 11 funktioniert das. Was muss ggf. aktiviert werden, damit diese Funktion im Browser verfügbar wird?"		Fault	iteraplan Support	12/Jul/17 9:06 AM	13/Jul/17 8:46 AM														"12/Jul/17 9:22 AM;cst;Guten Tag,
+
+vielen Dank für Ihre Anfrage.
+
+Habe das Verhalten mit der von Ihnen eingesetzten Version des Firefox 50.1.0 nicht nachvollziehen können. 
+Würden Sie bitte über F12 den Entwickler-Modus öffnen, um zu prüfen ob hier eine Fehlermeldung / Hinweismeldung auftaucht wenn Sie auf eines der Elemente klicken.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"12/Jul/17 9:30 AM;a.ostenkoetter@bghw.de;Hallo, 
+das passiert...
+
+!grafik.png|thumbnail!"	"12/Jul/17 9:31 AM;a.ostenkoetter@bghw.de;genau das...
+
+!grafik.png|thumbnail!"	"12/Jul/17 9:42 AM;cst;Im Moment gibt es noch ein Fehlerbild, das die Ladebildschirme nicht ordnungsgemäß angezeigt werden (an einer Lösung wird im Moment gearbeitet).
+Dies hat zu folge, das in manchen Situationen keine sichtbare Reaktion auf einen Klick oder ähnliches erfolgt, aber im Hintergrund dieser durchgeführt wird.
+
+Die von Ihnen geschickten Meldungen, sind für das Verhalten nicht ausschlaggebend. 
+
+Wenn Sie in den Tab ""Netzwerkanalyse"" wechseln und erneut einen Klick durchführen, wird hier das Protokolliert?#
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"12/Jul/17 9:48 AM;a.ostenkoetter@bghw.de;Ich vermute, das die Reaktion auf den Klick die mit ""storedQueries"" ist. Die anderen Meldungen laufen permanent ein
+
+!grafik.png|thumbnail!"	"12/Jul/17 10:02 AM;cst;Eigentlich sollte hier das geklickte Element aufgerufen werden z.B. Informationssystem.
+Es könnte auch ein Problem mit den aktuellen gespeicherteren User-Settings in der Datenbank sein. 
+
+""TRUNCATE TABLE USER_SETTINGS;""
+
+Mit diesem Befehl wird diese Tabelle geleert, sollte Sie hier die Ursache sein.
+
+Für das weitere vorgehen, ich werde Ihnen nach erscheinen der Service-Datei diese zuschicken und anschließend prüfen wir den Vorgang erneut. 
+Im Moment kann ich das Problem nicht direkt an etwas fest machen, in den Log-Files werden wohl keine zusätzliche Informationen stehen? 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"13/Jul/17 7:03 AM;a.ostenkoetter@bghw.de;Hallo Herr Stangl,
+
+ich habe die Domäne nun bei uns in die Vertauenswürdigen Seiten eintragen lassen und siehe da die Ansicht funktioniert jetzt. Danke für den Hinweis!
+
+Regards A.O."																																																

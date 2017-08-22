@@ -1,0 +1,8 @@
+Generisches in das iteratecChart-Plugin verlegen	"Die folgenden Komponenten in das iteratecChart-Plugin verlegen:
+
+* Domain-Klassen
+** MeasuredValue
+** MeasuredValueInterval
+** AggregatorType
+* Service-Methoden (vom iteraSpeedOttoCsi-Plugin)
+** de.iteratec.isocsi.CustomerSatisfactionHighChartService.convertToHighChartMap(List<MeasuredValue> csiValues, AggregatorType aggregatorType)"		Improvement	OpenSpeedMonitor	28/May/13 3:54 PM	02/Jan/14 5:42 PM														28/May/13 4:10 PM;nkuhn;Static String-Konstanten für den Namen der verwendeten AggregatorTypes werden in das fachliche Plugin verlegt (z.B. 'job', 'page' und 'shop' in das iteraSpeedOttoCsi-Plugin)	09/Jul/13 5:08 PM;jwerschmoeller;Rüdiger: Sieht abgeschlossen aus	02/Jan/14 5:42 PM;mzeimer;Plug-in iteratecChart does not exists anymore.																																																				

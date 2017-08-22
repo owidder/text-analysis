@@ -1,0 +1,19 @@
+Warnings during fulltext search	"_Reproduce:_
+
+# In iteraplan, type in the search input field in the header an arbitrary search term
+
+# Click ""search"" or press enter
+
+
+
+The iteraplan log shows warnings similar to the following one:
+
+{noformat}
+
+[WARN ] [2016-09-08 11:10:47] (reader.impl.ManagedMultiReader) HSEARCH000289: Requested sort field(s) buildingBlockType.name are not configured for entity type de.iteratec.iteraplan.model.BusinessFunction mapped to index index.BusinessFunction, thus an uninverting reader must be created. You should declare the missing sort fields using @SortableField.
+
+{noformat}
+
+
+
+Please get rid of the warnings."		Bug	iteraplan Thunderduck	08/Sep/16 11:13 AM	08/Sep/16 2:42 PM					search																																																															

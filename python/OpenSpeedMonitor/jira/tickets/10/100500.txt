@@ -1,0 +1,5 @@
+Remove classic client code of classic dashboard	"Remove classic client code of classic dashboard.
+
+
+
+Follow-up-ticket of ITERAPLAN-4927"		Task	iteraplan Speedbird	25/Oct/16 5:32 PM	17/Nov/16 12:25 PM														17/Nov/16 12:25 PM;ants;Review done: https://iteraweb.iteratec.de/fisheye/cru/IP-179																																																						

@@ -1,0 +1,4 @@
+UI bug with page title with ISD as content type	"Steps to reproduce:
+1. Go to List view page with Information System Domain as content type
+Actual: UI bug with page title with ISD as content type"	47647	Sub-task	iteraplan PO	27/Apr/15 10:13 AM	05/May/15 2:10 PM													"Workspace: Windows 8.1
+revision: 1034"	28/Apr/15 11:50 AM;alvo;Now if you want to set custom bradcrumb title, you can add breadcrumbTitle field in appropriated typesDefinition's object	28/Apr/15 1:15 PM;dasm;Verified (rev 1059)																																																					

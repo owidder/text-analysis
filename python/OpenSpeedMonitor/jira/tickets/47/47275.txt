@@ -1,0 +1,11 @@
+NCD: Range picker blocks the title on NCD page (Filtering)	"Summary:
+Range picker blocks title on NCD page when user reduces the page size
+
+Steps to reproduce:
+1. Go to NCD page
+2. Open Context menu for inner element
+3. Select ""Highlight all modified in"" highlighting action
+4. To reduce the page size
+
+Actual: Range picker blocks title
+Expected: What is the expected behavior?"		Bug	iteraplan PO	08/Jan/15 5:24 PM	27/Mar/15 10:08 AM														12/Jan/15 1:15 PM;wfr;Ticket deferred because the range picker will be part the menu bar, and no longer beside the diagram tile.	27/Mar/15 10:08 AM;dasm;Duplicate of IP9-330																																																					

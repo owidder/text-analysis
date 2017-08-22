@@ -1,0 +1,53 @@
+Add functionality to display labels	"*Summary*
+
+Implement showing of the number of elements in a segment.
+
+
+
+*Details*
+
+Only number of elements in a segment will be shown, no percents in case of numeric values
+
+If the label doesn't match in the segment (in case of small segments) label should be shown outside of the pie chart
+
+Only if the values are inside the segment: Change text font to white if segment color is too dark (common functionality already exists).
+
+
+
+*Example*
+
+(taken from Excel)
+
+!screenshot-1.png!"		New Feature	iteraplan Speedbird	06/Sep/16 11:48 AM	18/Oct/16 10:29 PM														28/Sep/16 3:51 PM;msr;-Waiting for GoJS-support answer.-	"29/Sep/16 10:23 AM;dmkh;*Answer from GoJS support regarding labels in pie charts (also check attached file):*
+
+
+
+Attached is a modified version of the Dynamic Pie Chart sample with some basic TextBlocks as labels for the pie slices.
+
+To achieve this functionality, a few changes were necessary:
+
+1) The slices now use a Spot Panel, which will allow the TextBlock to be positioned relative to the slice
+
+2) The TextBlock has bindings on alignment and angle to determine its relative placement and to make sure the text is upright
+
+3) The Geometry for the slices now includes the top left and bottom right corners, which allows us to determine the relative position of the TextBlock within the pie
+
+Also check out the Radial Partition sample (https://gojs.net/latest/samples/radialPartition.html) which uses some similar concepts and may be a useful reference."	05/Oct/16 4:38 PM;dmkh;[~msr], how should we deal with overlapping of labels outside of Pie Chart? (see attached screenshot) As we see in Excel there are no handling for this case, so can we leave this as it is and use "show/hide labels" option (IPTS-158)? 	06/Oct/16 9:34 AM;msr;[~dmkh]: Do we have any alternative? Can we discuss that later on?	"06/Oct/16 10:00 AM;dmkh;[~msr], I thought about possible solutions:
+
+- Do not show overlapping values (duplicate all values in legend);
+
+- Allow user hide outer labels (inner labels stay displayed);
+
+- Show them in external table;
+
+- Use custom layout with links (arrows) to the outer labels (maybe forceDirectedLayout). Labels will be positioned by GoJS and will not overlap."	"06/Oct/16 11:57 AM;msr;Both, Fabian and me, do not like a solution with a table or the legend.
+
+Could you (or someone else familiar with GoJS) try to use a positioning of the labels that they do not overlap? The solution can be rather easy and it's ok, if it only works in 90% of all cases. Timebox for this analysis: 0.5 days. Backup-solution are tooltips."	"06/Oct/16 12:03 PM;dmkh;Also, I need a *maximum possible number of elements* for Pie Chart, so I can define a free space on the right and on the left side in case of displaying label outside of Pie Chart (see attachments). Such label should display some part of elements (it is small enough because of small segment , near 5°-10° of a pie, it is *2-3% of data*). So it is needed to know how big this 2-3% could be? Temporary solution could be 5 digits (for at least 500k elements).
+
+
+
+Because of specifics of Pie Chart template it is hard to make this free space flexible and related on the size of textblocks.
+
+
+
+"	06/Oct/16 1:51 PM;dmkh;Do we need showing labels for empty segments (0 elements)?	18/Oct/16 2:06 PM;dmkh;[~viol], some changes and improvements after code review in revision 4702.	18/Oct/16 10:29 PM;viol;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-74																																													

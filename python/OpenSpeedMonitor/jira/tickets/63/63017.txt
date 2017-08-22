@@ -1,0 +1,5 @@
+REST-API-Methode resultUrls liefert falsche URL	"Die folgende REST-Methode liefert für die tabellarische Darstellung der Ergebnisse des Jobs eine veraltete URL.
+
+
+
+[REST-base-path]/job/[job-id]/resultUrls/[timestampFrom]/[timestampTo]"		Bug	OpenSpeedMonitor	10/Nov/15 2:18 PM	08/Apr/16 1:38 PM														08/Apr/16 1:38 PM;nku;veraltet, funktioniert längst																																																						

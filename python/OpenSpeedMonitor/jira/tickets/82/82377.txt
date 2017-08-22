@@ -1,0 +1,65 @@
+Betamax updaten	"Die Entwicklung an Betamax wurde wieder aufgenommen, siehe https://github.com/betamaxteam/betamax/issues/142
+
+
+
+Aktuell benötigen wir für Betamax die spezielle Jetty Version, welche jedoch nicht kompatibel mit der Jetty Version aus Grails ist. Mit diesem Update sollte sich das Problem lösen.
+
+
+
+Somit sollten wir um Auge behalten, wann die neue Version released wird."		Bug	OpenSpeedMonitor	28/Apr/16 3:25 PM	15/Jun/16 8:43 AM														25/May/16 9:51 AM;bwo;Ich habe via Email nachgefragt, wann mit einem Release zu rechnen ist. Sobald ich eine Antwort habe, werde ich sie hier einfügen.	"25/May/16 3:15 PM;bwo;Hi Benjamin,
+
+
+
+First off, thank you for your interest in Betamax. It’s excellent to hear from developers interested in using it.
+
+
+
+If I’m being honest, we might still be a ways out from a final v2. There was a significant refactor that happened between 1 and 2, and we're still trying to mature the product. I think the biggest issue at hand right now is the SSL support is still a bit inconsistent, and we’re working to make that more straight forward. Also, the documentation needs significant updates, which takes time.
+
+
+
+Fortunately, I’m making a lot of time for it in the next couple weeks, so maybe I’ll get much closer soon. Feel free to watch GitHub and drop me an email with additional questions. In the mean time, if you can, check out our alpha release, which I hope to make a beta or release-candidate release soon.
+
+
+
+Thanks!
+
+
+
+Sean"	"25/May/16 4:48 PM;nku;Wir sollten einen ersten Versuch mit der alpha machen. Keinen großen Aufwand investieren. Nur testen ob überhaupt tests laufen und wie viel mit der neuenn Version kaputt ist.
+
+Aufwand max 2h"	01/Jun/16 11:59 AM;bwo;Betamax scheint aktuell nicht mit Spock zu funktionieren, die Alpha ist laut ihrer Seite nur für JUnit. Es wird zwar darauf hingewiesen, dass auch gerne Support für andere Frameworks implementiert wird, jedoch dürfte das wohl etwas Zeit beanspruchen. Wir suchend daher nach Alternativen.	"01/Jun/16 12:05 PM;bwo;Folgende Alternativen habe ich gefunden:
+
+
+
+* Mock-Server: http://www.mock-server.com/proxy/record_and_replay.html
+
+** Startet einen extra Server, welcher die Anfragen und Antworten in einem Log speichert
+
+** In den Testmethoden wird eine Konfiguration geladen, welche alle Anfragen an den Proxy sendet
+
+** Die Log-Dateien beinhalten Java Code, welcher dann in die Tests kopiert werden kann
+
+
+
+* Wiremock: http://wiremock.org/index.html
+
+** Scheint exakt wie Betamax zu funktionieren, die Anfragen werden lediglich beim ersten Durchlauf an den Server gesendet und später wieder abgerufen
+
+** Ermöglicht außerdem Manuell via Code die Antworten zu manipulieren
+
+** Benötigt Java 8
+
+
+
+* Rest Driver
+
+** Ermöglicht kein Aufzeichnen der Anfragen
+
+** Die Antworten müssen via Code manuell definiert werden
+
+** Benötigt Java 8
+
+
+
+Die scheinbar beste Alternative ist Wiremock. Da diese jedoch Java 8 voraussetzt, muss zunächst überprüft werden, wieso unsere Anwendung aktuell nicht unter Java 8 läuft."	08/Jun/16 8:49 AM;bwo;Ich habe noch einmal überprüft, ob ich Betamax zum Laufen bringen kann. Ich habe mir den SourceCode von Betamax 2 angesehen, die nutzen Java 8 Klassen, folglich scheint auch Betamax nun Java 8 vorauszusetzen.	15/Jun/16 8:43 AM;bwo;Die alte Version konnte durch die aktuelle Alpha ersetzt werden. Lediglich der Test  in IT-1144 schlägt noch fehl.																																																

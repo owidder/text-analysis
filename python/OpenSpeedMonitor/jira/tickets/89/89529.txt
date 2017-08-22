@@ -1,0 +1,23 @@
+Save configuration into database and get it			New Feature	iteraplan Quickfox	06/Jul/16 11:49 AM	19/Jul/16 12:26 PM														"11/Jul/16 5:09 PM;tam;1 Create DB table for configuration (e.g. REACTOR_SCRIPTS)
+
+   * id
+
+   * Config Name is unique but can be empty. If it's not empty, this name will be used in the URL
+
+   * name of output file to be available (eg. output.xml)
+
+   * saved_queries => comma separated list => in first implementation no check for correctness
+
+   * cache_time
+
+   * last_time_modification
+
+
+
+2 Create DAOs
+
+
+
+3 REST interface with CRUD https://sample.org/iteraplan/api/reactor/configs/{id}
+
+"	19/Jul/16 12:25 PM;mwe;REST interface exported to IPTQ-26	19/Jul/16 1:46 PM;tgo;Will only approved if the blocked stories or at least one of it can be approved, as nothing can be demonstrated or delivered here.																																																				

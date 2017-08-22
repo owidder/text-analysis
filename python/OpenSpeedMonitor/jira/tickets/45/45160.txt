@@ -1,0 +1,3 @@
+The function "Elements with status 'Inactive' are shown." does not work properly for Technical Components.	"1. Make sure that Technical Components with status ""inactive"" do exist.
+2. Go to Administration -> Configuration -> disable the function ""Elements with status 'Inactive' are shown.""
+3. Go to Technical Components. Inactive elements are still shown, but should disappear due to the recently changed function."		Bug	iteraplan PO	27/Sep/11 11:45 AM	29/Sep/11 11:49 AM					Configuration																																																															

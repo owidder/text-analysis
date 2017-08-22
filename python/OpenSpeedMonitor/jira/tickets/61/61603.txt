@@ -1,0 +1,35 @@
+2.4.1 Branch und Tag für neuen Client	"2.4.1 Branch und Tag für neuen Client
+
+
+
+Es gilt dieselbe Namenskonvention wie für iteraplan classic
+
+
+
+ *   Branch: ""RB_<majorVersion>_<minorVersion>_<maintenance>"" (z.B. RB_3_1_0) bzw. für Milestone Releases ""Milestone_<majorVersion>_<minorVersion>_<milestone>"" (z.B. Milestone_3_1_M2)
+
+
+
+Wir nehmen dazu die Version des iteraplan Servers (=iteraplan classic), für die der neue Client released wird. Sollte es doch einmal mehr als ein Release des neuen Clients für dieselbe classic Version geben, finden wir zu diesem Zeitpunkt dann eine passende Lösung.
+
+
+
+Sicherstellen, dass die Versionsnummer im Branch stimmt:
+
+
+
+ *   Zu finden in Datei package.json
+
+  *  Sollte immer dieselbe Version wie das iteraplan-Release sein
+
+
+
+Aus diesem Branch wird dann ebenfalls ein Tag erzeugt. Namenskonvention ebenfalls äquivalent zu iteraplan classic:
+
+
+
+ *   Tag: ""Release_<majorVersion>_<minorVersion>_<maintanance>"" (z.B. Release_3_0_3) bzw. ""Milestone_<majorVersion>_<minorVersion>_<milestone>"" (z.B. Milestone_3_0_M2)
+
+
+
+Jenkins-Job https://iteraplan.iteratec.de/hudson/view/Release%20/job/BuildInteractiveClient/ ausführen unter Angabe des oben erstellten Branches oder Tags."		Task	iteraplan PO	27/Oct/15 8:40 AM	02/Nov/15 8:51 AM																																																																				

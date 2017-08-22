@@ -1,0 +1,1 @@
+PageController versucht PageMapping anzuzeigen	Der PageController zeigt in Detail-Seite einer Page das zugewiesene TimeToCsMapping an. Dieses ist hier nicht mehr möglich/nötig, da das TimeToCsMapping abhängig von den verschiedenen CsiConfigurations ist.		Bug	OpenSpeedMonitor	17/Feb/16 11:05 AM	17/Feb/16 11:20 AM																																																																				

@@ -1,0 +1,3 @@
+Auf dem CSI-Default-Dashboard tritt ein Javascript-Fehler auf	"Dadurch funktioniert das Umschalten auf die Tabellenübersicht nicht mehr.
+
+Und auch das Anpassen der Diagramm-Größe funktioniert nicht mehr."		Bug	OpenSpeedMonitor	03/Feb/15 5:11 PM	18/May/15 11:28 AM														05/Mar/15 12:08 PM;rkr;Ich kann das nicht reproduzieren. Tritt der Fehler noch auf? Wenn ja, mit welchem Browser und welchem Diagramm-Plugin? 	18/May/15 10:41 AM;nku;Bitte mit dem aktuellen Stand noch einmal testen.																																																					

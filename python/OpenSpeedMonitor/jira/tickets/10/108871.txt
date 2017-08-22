@@ -1,0 +1,57 @@
+Technischen Benutzer "tumyaudi" anlegen	"Hallo Admins, wir bräuchten einen technischen Benutzer, der berechtigungstechnisch im AD angesiedelt ist, damit wir ihn sowohl für JIRA als auch Bamboo, SonarQube usw. für das Projekt ""myAudi"" bei AUDI verwenden können.
+
+
+
+User: tumyaudi
+
+Passwort: Nie ablaufend, bitte mitteilen.
+
+Gruppen: _JIRA_ALL, _JIRA_AUDI_MYAUDI, _JIRA_AUDI_MYAUDI_INT, _JIRA_Audi_MYAUDIUI_INT
+
+
+
+Herzlichen Dank!"		Task	Infrastruktur	19/Jan/17 6:05 PM	20/Jan/17 11:47 AM	Sonstiges													"20/Jan/17 9:03 AM;kti;Hallo Thorsten,
+
+
+
+ist es wirklich notwendig, für jedes einzelne Audi-Projekt einen technischen User anzulegen?
+
+
+
+Es gibt bereits nachfolgende technische User für Audi:
+
+tuaudiswapls
+
+tuaudicrum
+
+techbam (AD-Konto für Audi Git-Projekte)
+
+myAudi-QM
+
+tuaudialpos
+
+
+
+Kannst du davon keinen verwenden?
+
+Falls nein, dann leg ich dir natürlich die beiden neuen User an.
+
+
+
+Bitte gib mir kurz Bescheid, danke dir.
+
+
+
+VG
+
+Kathrin"	20/Jan/17 11:19 AM;tgo;Hallo Katrin, wie besprochen, die verschiedenen Benutzer sehen nur bestimmte Projekte (außer techbam), und ich muss das Passwort weitergeben für die Boards. (Habe ich hier nur dokumentiert, damit wir es später wissen.)	"20/Jan/17 11:47 AM;kti;Hallo Thorsten,
+
+
+
+ich habe dir die Anmeldedaten per Mail weitergeleitet.
+
+
+
+Viele Grüße
+
+Kathrin"																																																				

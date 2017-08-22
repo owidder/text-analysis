@@ -1,0 +1,99 @@
+Extend REST API for Responsibility	"Create new REST Resource (api/icresp) on the backend side to get all responsibility attributes as JSON.
+
+
+
+# Use AttributeTypeService and loadElementList() to get all Types
+
+# Filter Responsibilite Attributes
+
+# Create JSON-Response
+
+
+
+Note that ResponsibilityAT already contains also values. See getSortedAttributeValues() or getAttributeValues()
+
+
+
+*Check*
+
+Since Responsibility Attributes are very similar to enumeration attributes we can maybe use same JSON-Response as for enumerations.
+
+I.e.
+
+
+
+{noformat}
+
+  {
+
+    ""type"": ""EnumerationExpression"",
+
+    ""persistentName"": ""de.iteratec.iteraplan.model.attribute.EnumAT.State of health"",
+
+    ""name"": ""State of health"",
+
+    ""pluralName"": ""State of health"",
+
+    ""description"": ""State of health based on functionality of the given element."",
+
+    ""literals"": [
+
+      {
+
+        ""persistentName"": ""good"",
+
+        ""name"": ""good"",
+
+        ""pluralName"": ""good"",
+
+        ""description"": ""The component provides the expected functionality."",
+
+        ""color"": ""rgb(175,206,168)"",
+
+        ""index"": 0
+
+      },
+
+      {
+
+        ""persistentName"": ""average"",
+
+        ""name"": ""average"",
+
+        ""pluralName"": ""average"",
+
+        ""description"": ""There might be some logical inconsistences in the provided functionality."",
+
+        ""color"": ""rgb(246,223,149)"",
+
+        ""index"": 1
+
+      },
+
+      {
+
+        ""persistentName"": ""bad"",
+
+        ""name"": ""bad"",
+
+        ""pluralName"": ""bad"",
+
+        ""description"": ""Bad functional state of health requires action due to a high number of inconsistences in the corresponding component."",
+
+        ""color"": ""rgb(215,157,173)"",
+
+        ""index"": 2
+
+      }
+
+    ]
+
+  }
+
+{noformat}
+
+
+
+Index-Properties have to be created ""manually"", since reponsibilite attributes doesn't contain this property"	95843	Sub-task	iteraplan Speedbird	12/Sep/16 3:29 PM	05/Oct/16 2:58 PM														"15/Sep/16 9:52 AM;tam;Check the link to setup the java development environment
+
+https://iteraweb.iteratec.de/confluence/display/ITPL/Developer+Guide"																																																						

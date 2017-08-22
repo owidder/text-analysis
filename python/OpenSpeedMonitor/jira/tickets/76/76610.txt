@@ -1,0 +1,9 @@
+Implement proper layouting	"Based on the model and layouting decided on in ITERAPLAN-4388, implement the layouting for the diagram.
+
+* Input: Cluster Model
+
+* Add layout information to cluster model
+
+* Adjust graph builder to translate layout information into GoJS diagram model"		Improvement	iteraplan PO	10/Mar/16 9:24 AM	29/Mar/16 4:03 PM														"29/Mar/16 4:03 PM;tam;Sometimes the N3CD won't displayed in landscape A-Format
+
+See ticket ITERAPLAN-4426"																																																						

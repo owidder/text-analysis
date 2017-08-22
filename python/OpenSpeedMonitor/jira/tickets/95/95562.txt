@@ -1,0 +1,5 @@
+Update new client version	"Currently we have in nightly the old version of new client.
+
+
+
+To fix it, the version of the new client needs to be increase both in new client (package.json) and in classic client (pom.xml)"		Bug	iteraplan Quickfox	08/Sep/16 11:07 AM	16/Sep/16 4:39 PM																																																																				

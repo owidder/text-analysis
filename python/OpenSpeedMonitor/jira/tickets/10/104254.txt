@@ -1,0 +1,48 @@
+Adjustments for attribute groups page	"* reduce space between attribute names
+* Show one column for every group
+* Change color for attribute elements
+* Adjust page title to ""Showing all 42 attribute groups"" like the title on the building block list pages"		Improvement	iteraplan Thunderduck	29/Nov/16 1:54 PM	12/Dec/16 8:05 AM														"02/Dec/16 1:45 PM;pma;DONE
+
+* all the mentioned points in the description
+
+
+
+TODO:
+
+* -make vertical scrollbar always visible (the background color is only coloring the space which is as big as the window itself. by deleting the following line in the template-
+
+  
+
+{code:html}
+
+style=""overflow-x:scroll;
+
+{code}
+
+
+
+the content is bigger than the window which causes a color change vertically and looks weird)
+
+* -Place the toggle in the Information sector next to the text-
+
+* -Test the vertical dropping! Sometimes it does not seem to work, especially dropping to the right-
+
+* -Ask [~fka] whether the result it fine-"	"08/Dec/16 6:12 PM;pma;Right now the div is too big for the window so that the vertical scrollbar is only seen when the user scrolls down until the end of the page. Possible solution would be 
+
+{code:html}
+
+ position:absolute
+
+{code}
+
+
+
+As the header is not fixed for every  page, the main side with the header will be scrolled vertically as well. Due to the fact that the header may change in the future, I only implemented an
+
+{code:html}
+
+overflow-y:scroll
+
+{code}
+
+. "																																																					

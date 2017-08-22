@@ -1,0 +1,13 @@
+Umstellung von "Flat" zu "Level 1-3" führt zu Absturz	"
+
+Link: https://www.iteraplan.de/BMW-RBA-GB/client/#/lsd?featureName=%2Flsd&E25=A13&F0=businessMappings%2FbusinessProcess&F1=businessMappings%2Fproduct&partiallyConnectedItems=ternary&rows=hide&columns=hide&contentFilter=C%2FflatC%2FC%2FbusinessMappings%2FbusinessUnitR%2F1R%2FtextS%2FnameS%2FisS%2FB2-US
+
+
+
+Spalten: Prozesse (flach), Zeilen: Märkte (flach), Inhalt: Applikationen: die Applikationen verschwinden, sobald man bei Prozessen von flach auf Ebene 1-3 umstellt. Oben steht dann ""Loading diagram"" was nie verschwindet. Die Ergebnisse werden dementsprechend auch nicht angezeigt.
+
+"		Fault	iteraplan Support	14/Nov/16 2:11 PM	05/Apr/17 1:32 PM														"14/Nov/16 2:13 PM;msr;*Analyse-Ergebnis:*
+Bug tritt nur im Internet Explorer 10 und 11 auf, aber nicht im Firefox.
+
+*Nächste Schritte:*
+Bug im Internet Explorer fixen"	14/Nov/16 2:47 PM;msr;Kann es nicht im mit den Demo-Daten nachstellen.	24/Nov/16 9:53 AM;msr;Der nächste Patch wird die technische Architektur des Landscape Diagramms grundsätzlich ändern. Deshalb teste ich nach dem Einspielen des Patches, ob dieses Problem noch weiterhin besteht.																																																				

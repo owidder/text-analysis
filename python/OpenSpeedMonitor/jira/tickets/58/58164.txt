@@ -1,0 +1,11 @@
+Tool area coloring	"Improve the tool area coloring configuration to conform to the intended design.
+
+See also attached mockup.
+
+
+
+* Attribute selection: Dropdown or combo box? Something else?
+
+* Color bars can be clicked to customize the according color
+
+** Open question: How do we best show that they are clickable?"		Improvement	iteraplan PO	24/Sep/15 2:35 PM						coloring																																																															

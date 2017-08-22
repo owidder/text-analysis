@@ -1,0 +1,9 @@
+LSD: existing elements are treated as empty row	"Setup: Using Bank Data I got to the LSD. I change the row association of the left axis to attribute, status (IS). Then I add a content filter to get only Information Systems with a name containing insurance. For the axis on the right (Status), I switch to the Settings, show orphans option.
+
+
+
+Expected result: All Information Systems satisfying the filters are shown. These are Insurance and Contract Management and Insurance App.
+
+
+
+Actual result: No entries are shown. I only see the expected results when I enable additionally the show empty rows option for the Status axis."		Bug	iteraplan PO	24/Mar/16 11:04 AM	05/Apr/16 1:16 PM																																																																				

@@ -1,0 +1,27 @@
+Start screen improvement	"Rename the 'Search"" tab to 'Start'. Place it in the first position of all tabs.
+
+
+
+Include two rows of tiles below
+
+
+
+1. row: My watched elements
+
+
+
+(Moved to IPTT-495:
+
+
+
+2. row: Recently accesses saved queries (generally, not only from the user logged in))
+
+
+
+Maybe 5 or so tiles for each of the rows.
+
+
+
+ "		New Feature	iteraplan Thunderduck	26/Mar/17 5:58 PM	14/Jun/17 4:18 PM														13/Apr/17 2:31 PM;roia;What if there're no watched elements and no recent queries (no saved queries at all, no permissions to access some queries...)?	"13/Apr/17 2:41 PM;fka;[~roia]: empty row... Maybe some placeholder text: ""No watched elements"" / ""Keine abonnierten Elemente""
+
+""No recently accessed saved queries"" / ""Keine kürzlich ausgeführten gespeicherten Abfragen"""	13/Jun/17 9:40 AM;dmkh;[~sbu], please, check and fix broken unit tests, related to your ticket (see attached screenshot).																																																				

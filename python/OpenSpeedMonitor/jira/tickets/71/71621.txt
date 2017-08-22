@@ -1,0 +1,17 @@
+Decision: click selected GoJS vs. Windows	"Click on one selected item in a GoJS diagram with two or more selected items does not change the selection.
+
+In Windows (Explorer) this selects the clicked item only and deselects all others.
+
+
+
+For a single selected item, both GoJS and Windows show the same behaviour.
+
+
+
+Questions:
+
+- is this a problem for the user?
+
+- can we adjust GoJS selection strategy easily?
+
+"		Task	iteraplan PO	03/Feb/16 10:34 AM	27/Aug/16 11:11 AM																																																																				

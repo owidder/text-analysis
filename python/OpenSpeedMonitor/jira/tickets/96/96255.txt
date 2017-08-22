@@ -1,0 +1,41 @@
+Implement new History	"*TODO*: split to subtasks/subtickets (perhaps one per point)
+
+
+
+* create hibernate mappings and entities
+
+* create *DAO* for new hisotry (see new db table schema)
+
+* create *HistoryService* that writes history entries using DAO
+
+* history service should be used in general *Model Changes Event Listener*
+
+
+
+*New table in DB for history:*
+
+* one table (hibernate entity) for each Building Block Type (both standalone and assoc. building block types)
+
+* SCHEMA:
+
+** *Timestamp*
+
+** *building block id* - of affected building block
+
+** *change type* - update, insert, delete
+
+** *feature id* -  for not built in proerpties (leave null for default properties)
+
+** *feature persistent name* -  properties and relationship end points
+
+** for assoc. building blocks *id's of relation ends* (for referencing)
+
+** *from value* - for single and multivalues
+
+** *to value* - for single and multivalues
+
+
+
+(!) changes on associations (e.g. CRUD in Isr2BoAssociation or new relation creation) should be written only into the IS2BO-HIST table, but not into IS or Bo history!
+
+"		Improvement	iteraplan Thunderduck	16/Sep/16 2:58 PM	11/Oct/16 1:23 PM														11/Oct/16 1:23 PM;sfe;All sub tasks done, no own work in this issue.																																																						

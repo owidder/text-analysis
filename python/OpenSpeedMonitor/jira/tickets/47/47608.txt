@@ -1,0 +1,67 @@
+GoJS Lizenz einspielen	"For more background on the following messages from the go.js support, ask: [~wfr]: E-Mail by GoJS support
+Please try to act as instructed first.
+
+----
+Mail Mar 4 1651
+----
+Hello Team,
+
+Since you purchased our (Mult-Domain) option, you will require these special instructions for use of GoJS on unlimited domains.
+
+For Multi Domain OEM customers, we have a way of allowing Diagrams to draw on a page
+delivered from any web server, without a watermark. For both internal and OEM
+customers, the first step is the same: getting a copy of the ""go.js"" library
+that is customized for their web site. But GoJS Multi Domain OEM licensees should go to:
+
+    http://www.nwoods.com/app/activate.aspx?sku=gojs&serial=oem
+
+In the case of the OEM license the web site domain should just be their own
+corporate site’s domain, like “example.com”.
+
+The additional step for GoJS OEM customers is to add a specific CSS class to
+a .CSS file that applies to the page that the Diagram is in. This CSS class
+definition is generated at the same time the customized ""go.js"" library is
+created, and it is delivered in the e-mail that you get that tells you from
+where you can download the custom ""go.js"" library.
+Kind Regards,
+Jason
+----
+
+This seems to outdate the previous mail, which was for non-multi-domain stuff
+
+----
+Mail Mar 4 1649 
+----
+Thank you for your purchase of GoJS from Northwoods Software.
+A GoJS diagram will display a watermark unless its HTML page originates from a particular domain. If you need to distribute your application to your customer's websites, contact us for additional instructions.
+To get a go.js library file for use on your web site, go to http://www.nwoods.com/app/activate.aspx?sku=gojs
+and fill in the fields, including your web site's domain. The domain is typically something like ""example.com"".
+You will get back an email with links to go.js and go-debug.js files that are customized to run without a watermark on that domain.
+
+----"		Improvement	iteraplan PO	16/Apr/15 1:34 PM	23/Apr/15 11:00 AM					newClient									"22/Apr/15 2:34 PM;wfr;from Northwood by e-mail:
+----
+Northwoods Software Corporation License Certificate
+For OEM License
+Purchase Date: 3/4/2015             License Certificate No. i4671JS 
+This certifies that Northwoods Software Corporation (""Northwoods"") has granted to the Licensee named below a non-exclusive license to use the Licensed Software identified below, upon and subject to the provisions of the Software License Agreement referenced below (""SLA"") and the License-Specific Terms. Subject to the foregoing and the provisions of the SLA, the License-Specific Terms are as follows:
+Licensee:	  	iteratec GmbH 
+Licensed Group:	  	iteratec GmbH 
+Licensee Contact Name:	 	Wolfgang Frech 
+Licensee Contact Email:	 	wolfgang.frech@iteratec.de
+
+Address: 	 	Inselkammerstraße 4 
+City: 	 	München-Unterhaching
+State/Province:	 	
+Postal/Zip Code:	 	82008
+Country: 	 	Germany
+ 	 	 
+Licensed Software:	 	GoJS
+Type of License:	 	OEM License
+License Term:	 	3 Year Term
+Licensed Applications:	 	One Application 
+Licensed Application End Users:	 	Not limited
+Number of Developers:	 	3
+Source Code Rights:	 	No
+Licensed Domains:	 	Unlimited
+Software License Agreement: www.nwoods.com/Sales/Info/LicensesAll/SoftwareLicenseAgreement20150106.pdf
+"																																																						

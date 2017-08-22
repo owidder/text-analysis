@@ -1,0 +1,1 @@
+Check if Timeseries and DateIntervals should create history entires	Timeseries and DateIntervals are the only enitites without Hibernate Enver's "@Audited" annotation, which writes the history entries.		Task	iteraplan PO	05/Aug/13 1:07 PM	30/Dec/15 3:17 PM					history																																																															

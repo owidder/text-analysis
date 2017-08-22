@@ -1,0 +1,17 @@
+Check usage of Tiles-Attribute 'currentReportFormId'	"See e.g. StandardQueryForm.jsp and QPartForm.jsp (in the context of tabular reports of timeseries data)
+
+
+
+*IS:*
+
+# The tiles attribute _currentReportFormId_ is set to '0' in several JSP's. This id is used for the validation of input fields using JavaScript.
+
+# The frontend validation does not work!
+
+
+
+*SHOULD:* 
+
+# verify that it is correct to always set it to a fixed value.
+
+# Make the validation on the frontend work again."		Task	iteraplan PO	17/Feb/16 11:28 AM	31/Aug/16 4:27 PM														31/Aug/16 4:27 PM;fka;Will be reimplemented via the new client																																																						

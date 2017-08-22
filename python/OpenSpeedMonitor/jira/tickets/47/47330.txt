@@ -1,0 +1,19 @@
+Automatic text color based on background color	"In all diagrams with boxes with text and background color, text color should be selected automatically according to the background color: 
+* if the background color is dark, the text color is white 
+* if the background color is bright, the text color is black. 
+
+As a first solution, the dark/bright threshold is 0.5 brightness Iightness) in a HSL notation of the background color. 
+Starting with that, we test visually if this looks right. 
+At the same time, we ask Tanya for a good rule of thumb for that problem. 
+Maybe we change the threshold value to have more black or white text. 
+For text on background with fixed color, for example the diagram title or fixed text in the legend, the text color is still static, not computed. 
+
+*Priority note* 
+Even if the solution above is most elegant, we can release ip5 without it. 
+We could advise the user to choose appropriate background colors, or as an alternative to this ticket we could add a user operated switch for the background color, or several switches (inner, outer, maybe other box)
+"		New Feature	iteraplan PO	27/Jan/15 9:52 AM	11/May/15 1:14 PM														"26/Mar/15 4:39 PM;wfr;before all other measures: retest!
+
+please no extra switches for the user.
+automatic or nothing!
+
+"	11/May/15 10:18 AM;tam;Move function to an util class																																																					

@@ -1,0 +1,23 @@
+Performance des Result-Dashboard	"Die ist gefühlt wesentlich schlechter als lokal?!
+Das müssen wir prüfen.
+
+Erwartungshaltung: <=3s und keine deutliche Verschlechterung  zum WPTMonitor
+
+Mögliche Ansatzpunkte:
+- Refresh auf Domainklassen
+- Sortierung von Listen/Collections
+
+Bitte Timeboxing d.h. max. 6h"		Bug	OpenSpeedMonitor	25/Oct/13 9:54 AM	31/Oct/13 2:31 PM														"30/Oct/13 6:25 PM;mzeimer;Erste Analysen und Tests:
+- Die Geschwindigkeit geht bei der Query verloren.
+- Das erste Umstellen der Anfrage parameter (einfache Bedingungen mit simplen Parametern mit Index zuerst) brachte nur geringe Auswirkungen (ca. 2-3 s Schneller bei großer Anfrage).
+
+Nächste Schritte:
+- Neuer Index auf jobResultDate
+- Trim above/below ggf. nachgelagert ausführen (möglicherweise schneller).
+
+Testanfrage (im Original ca. 1,5 Min):
+
+http://seu.hh.iteratec.de:8070/iteraSpeedMonitor/eventResultDashboard/showAll?_overwriteWarningAboutLongProcessingTime=&overwriteWarningAboutLongProcessingTime=on&_action_showAll=Yes%2C+I+want+to+proceed+even+if+it+takes+some+time&selectTimeframe=0&from=16.10.2013&fromHour=12&selectedInterval=-1&to=19.10.2013&toHour=23&selectedFolder=8&selectedFolder=3&selectedFolder=2&selectedFolder=7&selectedFolder=1&selectedPage=4&selectedPage=1&selectedPage=2&selectedPage=3&selectedPage=6&selectedPage=5&_selectedAllBrowsers=&selectedAllBrowsers=on&_selectedAllMeasuredEvents=&selectedAllMeasuredEvents=on&_selectedAllLocations=&selectedAllLocations=on&selectedAggrGroupValuesUnCached=docCompleteTimeInMillisecsUncached&trimBelowLoadTimes=1&trimAboveLoadTimes=20&trimBelowRequestCounts=&trimAboveRequestCounts=&trimBelowRequestSizes=&trimAboveRequestSizes=&selectedChartType=0
+"	"30/Oct/13 6:41 PM;mzeimer;Der Index auf jobResultDate brachte keine signifikante Verbesserung.
+
+TODO: Mit JProfiler Anfragen vermessen!"	31/Oct/13 2:31 PM;mzeimer;Die Wartezeit wurde ca. halbiert.																																																				

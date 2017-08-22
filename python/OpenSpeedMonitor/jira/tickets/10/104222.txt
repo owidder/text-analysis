@@ -1,0 +1,19 @@
+Synchronize View model with changed JS model	"After discussion with [~sfe]
+
+
+
+* Success callback to REST microedit request sends changes to page header controller
+
+* Header controller has to know which page is active and calls update method of approriate controlller
+
+* This update methods:
+
+** Does nothing for admin pages at the moment
+
+** Updates properties of according building block on single element view
+
+** Updates all affected rows in list view
+
+** Does nothing for diagram pages at the moment
+
+"		Improvement	iteraplan Thunderduck	29/Nov/16 11:12 AM	13/Dec/16 11:16 AM														13/Dec/16 11:33 AM;aan;The remaining problem with the parents and chidren is treated in IPTT-333																																																						

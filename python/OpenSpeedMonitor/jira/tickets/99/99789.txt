@@ -1,0 +1,15 @@
+Ldap Timeout gibt 500er	"Wenn ich beim SSO ein Ldap Timeout oder auch andere Fehler bekomme (z.B. der Header ist nicht vorhanden), gibt es keine Fehlermeldung, sondern ein Stacktrace.
+
+Leider dadurch auch kein Basic auth oder Fallback auf Username/Password.
+
+"		Fault	iteraplan Support	19/Oct/16 5:57 PM	12/Nov/16 7:00 AM														"19/Oct/16 5:57 PM;armin.joachimsmeyer@axa.de;
+
+[^iteraplan_TEST_ldwappaf_30.2016-10-19(3).log] _(33 kB)_"	"24/Oct/16 1:09 PM;cst;Sehr geehrter Herr Joachimsmeyer,
+
+vielen Dank für Ihre Anfrage.
+
+Wir prüfen dieses Verhalten, um dies in Release 5.5 durch eine Fehlermeldung abfangen zu können. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "																																																					

@@ -1,0 +1,1 @@
+Prototypische Initialisierung der Zap-Session	Eine prototypische Implementierung zur Initialisierung einer Zap-Session umsetzen. Die Initialisierung soll sich dabei an dem Vorgehen in der GUI orientieren.	78821	Sub-task	secureCodeBox	13/Apr/16 10:28 AM	14/Apr/16 10:25 AM																																																																				

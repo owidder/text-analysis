@@ -1,0 +1,17 @@
+Job-Queue-Darstellung: Eine Lane pro Test-Agent	"Für jeden Server die /getTesters.php aufrufen und die Anzahl der Test-Agenten pro Server ermitteln (die, deren LastWork kleiner x Minuten ist). 
+
+Siehe z.B. http://dev.server02.wpt.iteratec.de/getTesters.php
+
+Diesen REST-Call sollte man statt beim Aufruf der Job-Queue-Darstellung regelmäßig tun und die Anzahl der Agenten oder auch die einzelen Agenten als eigene Domain persistieren.
+
+
+
+Pro Test-Agent innerhalb der Location-Darstellung eine hell farbig/grau hinterlegte Lane erzeugen.
+
+
+
+Alle Job-Ausführungs-rects für die Darstellung ohne Überschneidungen auf diesen Lanes beliebig verteilen. Wenn das nicht mehr möglich ist sollten die Überlappungen rot dargestellt werden. Je mehr rects sich überlagern, desto dunkler rot. 
+
+
+
+So würde man Locations, die überlastet sind noch besser erkennen."		Task	OpenSpeedMonitor	23/Oct/15 12:21 PM	02/Nov/15 9:17 AM																																																																				

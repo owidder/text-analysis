@@ -1,0 +1,9 @@
+Last column edited	"*Situation:*
+
+While editing last column (except for Action) in mass update, some buttons are not visible because there is not enough space on the right side for all of them
+
+
+
+*Solution:*
+
+we should adjust the input field from mass update and move it a bit to the left (so that all buttons fit to the grid). That means, align it to the right."		Improvement	iteraplan Speedbird	28/Mar/17 5:28 PM	31/Mar/17 2:05 PM																																																																				

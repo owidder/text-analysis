@@ -1,0 +1,10 @@
+Extend remembered user state: Save columns, positions and count  	"Extend the remembered view state from ITERAPLAN-2525:
+Remember (per user and per building block type) in the element list view which columns are shown, at which position they are shown, what the current sorting order is and the number of rows chosen from the drop down.
+
+Also add a ""reset to default"" button to reset the view to the default state, which is the currently (3.3) implemented state. Mockup to follow.
+
+As with ITERAPLAN-2525: Do not show the saved state anywhere. Users without a default ... see 2525. 
+
+Do not consider the tabular report view or the iteraQL result view in this ticket.
+
+Do not save which elements are unfolded in the tree view."		New Feature	iteraplan PO	15/May/14 4:37 PM	19/Jan/16 11:08 AM																																																																				

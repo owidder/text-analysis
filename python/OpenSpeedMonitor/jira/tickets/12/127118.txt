@@ -1,0 +1,31 @@
+Fisheye: Neue Fisheye-Reviews aus Jira laden nicht	"Liebe Admins,
+
+
+
+aktuell können die ukrainischen Kollegen aus den Jira-Tickets direkt keine Fisheye-Reviews erstellen oder Commits in Fisheye anschauen (siehe Screenshots).
+
+
+
+Könnt ihr euch das bitte anschauen?
+
+
+
+Danke
+
+
+
+Marcel"		Task	Infrastruktur	14/Jul/17 11:27 AM	14/Jul/17 11:30 AM	JIRA													"14/Jul/17 11:30 AM;kti;Hallo Marcel,
+
+
+
+Fisheye wurde aufgrund von Performanceproblemen vor 5 Minuten ungeplant neu gestartet.
+
+
+
+Sollte demnach gleich wieder funktionieren.
+
+
+
+VG
+
+Kathrin"	14/Jul/17 2:16 PM;msr;Danke, Kathrin. Ja, es geht jetzt wieder.																																																					

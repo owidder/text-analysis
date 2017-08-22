@@ -1,0 +1,14 @@
+Iteraplan Logo	"Im alten Cleint kann man das Logo durch tauschen des entsprechenden Images änder.
+
+Wie macht man das im neuen Client (welches file und wo ) ?"		Technical question	iteraplan Support	20/Mar/17 1:25 PM	06/Apr/17 7:55 AM														"20/Mar/17 2:18 PM;cst;Sehr geehrter Herr Zerrer,
+
+vielen Dank für Ihre Anfrage. 
+
+Das customizing des Logos wird in den kommenden Versionen umgesetzt werden. 
+Ein ändern des Logos in Version 5.5 ist nicht möglich, da diese im Moment nicht als Bilddatei hinterlegt ist. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+ "	05/Apr/17 2:56 PM;wolfgang.zerrer@festo.com;Danke, dann ist das klar (schliessen)																																																					

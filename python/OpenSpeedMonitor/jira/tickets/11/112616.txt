@@ -1,0 +1,23 @@
+MySQL-Backup beim Deployment	"Ich würde mit jedem Deployment gerne automatisch einen MySQL-Dump ziehen. Dieses sollte vor dem Abreißen der Container geschehen. Idealerweise könnte ich dem Namen des Dumps die OSM-Version und den timestamp entnehmen. Die Dumps sollten auf dem Host an einem definierten Ort liegen. 
+
+
+
+z.B. 
+
+/osm-dumps
+
+├── dev.openspeedmonitor.wpt.iteratec.de
+
+│   ├── 20161221_1035_v400.sql.gz
+
+│   ├── 20170113_1035_v411.sql.gz
+
+│   └── 20170222_1035_v412.sql.gz
+
+├── openspeedmonitor.wpt.iteratec.de
+
+└── osm.lht.iteratec.de
+
+
+
+Diese könnten dann für ein Rollback nach einem breaking Versions-Sprung genutzt werden."	111439	Sub-task	OpenSpeedMonitor	22/Feb/17 10:39 AM																																																																					

@@ -1,0 +1,60 @@
+ Zeitreihen in 5.1	"Hallo liebes Support-Team,
+
+
+
+wir haben den Fehler bei der DAK wieder rekonstruieren können, leider. 
+
+Anbei findet Ihr einen Dump der Datenbank sowie die Datei, die wir importieren wollten.
+
+In der iteraplanXXX.log steht leider nichts.
+
+
+
+Habt Ihr eine Idee, was das sein könnte?
+
+
+
+Zudem hatten wir auch einen Service mit dem Namen 21c|ng. Bei dem Namen scheint es auch Probleme mit dem ‚|‘ zu geben. Vielleicht hängen die Fehler ja zusammen,
+
+
+
+Danke für Eure Unterstützung
+
+
+
+Liebe Grüße
+
+Carsten"		Fault	iteraplan Support	23/Mar/16 3:56 PM	20/Apr/16 3:48 PM														"23/Mar/16 3:56 PM;msr;
+
+[^Import-Fehler.zip] _(832 kB)_"	"29/Mar/16 4:50 PM;tam;Hallo Carsten,
+
+
+
+danke für den Datenbank-Dump. Ich konnte diesen bei mir lokal einspielen und werde das Problem genauer analysieren.
+
+
+
+Ich melde mich, sobald ich mehr Information über das Problem habe.
+
+
+
+Viele Grüße
+
+Timur"	"31/Mar/16 1:19 PM;sfe;Das Problem scheint in {{TimeseriesExcelImporter#getValue(Row, boolean)}} zu liegen.
+Bei Zahlenmerkmalen wird beim Auslesen des Wertes aus der Excel-Zelle diese Zelle zuvor ins Textformat geändert. Dabei kann es zu Fließkomma-Ungenauigkeiten kommen, z.B. wird aus 0,07 dann der String 7,0000000000007E-2. Und das führt dann zu Folgefehlern."	"31/Mar/16 4:09 PM;sfe;Ich konnte das Problem bei mir lokal nachstellen und fixen.
+Hier ein Patch zum Download: [^timeseries510_patch_20160331.zip]
+
+Zum Einspielen des Patches bitte wie folgt vorgehen:
+# iteraplan herunterfahren
+# Patch-Datei relativ zum iteraplan Applikationsverzeichnis (welches sich innerhalb des Tomcat webapps Verzeichnisses befindet) entpacken.
+# Sicherstellen, dass sich folgende zwei Dateien im Ordner _WEB-INF/lib_ der iteraplan-Applikation befinden: _iteraplan-5.1.0f.jar_ und _iteraplan-elastic-converter-mi-4.10.1.jar_
+Falls die Dateien _iteraplan-5.1.0.jar_ (ohne ""f"") oder _iteraplan-elastic-converter-mi-4.10.0.jar_ sich in diesem Verzeichnis befinden, diese bitte löschen.
+# iteraplan neu starten"	"06/Apr/16 11:24 AM;cte;Hallo Zusammen,
+
+danke für Euren Support. Wir sind heute beim Kunden darüber gestolpert, dass der Server irgendwann bei den Update die JVM auf OpenJDK gewechselt hat (eine Oracle Version habe ich auch auf dem Server gefunden). Nach Umstellung auf das Oracle Java lief auch wieder der Import.
+
+Danke, wir können das Ticket dann schließen.
+
+LG
+Carsten
+ "																																																		

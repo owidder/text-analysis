@@ -1,0 +1,31 @@
+Single Element Edit - "Attribute" tab shows not the current values after edit on "all" tab	"Reproduce with trunk and IE 11 
+
+ # Change language to ""Deutsch""
+
+ # Open ""Geschäftsobjekte""
+
+ # Open the single element view of ""KPI""
+
+ # Edit the attribute ""Accountability"" to alice, max and walter
+
+ # Change into the tab ""MERKMALE""
+
+ # Edit the attribute ""Accountability"" 
+
+ # Now there will be only shown one element or nothing
+
+ # You can add the same values again (can be block the database)
+
+
+
+The same effect is when you add values on the ""Attrbute""-Tab first and change afterwards to all
+
+
+
+Expected That the correct values are shown
+
+Actual: The result is different"		Bug	iteraplan PO	03/May/17 11:29 AM	16/Jun/17 5:37 PM														05/May/17 5:54 PM;fka;Works with current trunk	"19/May/17 3:05 PM;cst;With the current trunk from 19.05.2017 the problem is back again in the IE 11 
+
+
+
+ "	05/Jun/17 6:36 PM;fka;Reproduced with current nightly build and IE 11	13/Jun/17 2:10 PM;dmkh;Same is reproduced when one user updates an attribute value, and single view screen is updated in the second user window.																																																			

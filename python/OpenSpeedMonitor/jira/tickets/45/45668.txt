@@ -1,0 +1,126 @@
+Custom-defined dashboards	"h3. First rough specification agreed with customer is as follows:
+
+# Konfiguration: Die Dashboard-Templates werden über eine Datei konfiguriert und es können die folgenden Parameter pro Template definiert werden:
+#* Bebauungselementtyp, für welchen das Dashboard-Template anwendbar ist (Abgrenzung: Für einen Bebauungselementtyp wird max. 1 Template unterstützt).
+#* Grundlayout des Dashboards (1- oder 2 spaltiges Layout im vorgegebenen Grundraster)
+#* Diagramme inkl. diagrammspezifischer Parameter für die einzelnen Inhaltsbereiche (Diagramme können sich über mehrere Zellen des Rasters erstrecken) und iteraQL-Query zur Befüllung des Diagramms (auf der Basis der später durch den Benutzer gewählten Grundmenge)
+#* Titel zu den einzelnen Inhaltsbereichen
+# Erstellen/Ansicht eines Dashboards in iteraplan
+#* Auswahl der Grundmenge anhand der gängigen Filtermechanismen.
+#* Basierend auf dem Bebauungselementtyp der Grundmenge wird automatisch das Dashboard-Template geladen (falls für den Typ bereits erstellt) und die Inhalte befüllt (Ausführung der iteraQL-Queries).
+#* Der Benutzer kann das Dashboard speichern und zukünftig ausführen.
+\\
+
+h3. Rough solution proposal (Based on the sponsoring text)
+ 
+ 
+h4. 1. Use cases / Sequence, according to sponsoring
+\\ 
+# The admin creates/stores some visualizations / diagrams for a Dashboard 
+# to a BB-Type the admin defines /stores an Dashboard-template (maximum  1 per BB-Type)
+# The user defines a filter for a BB-Type
+# With the defined filter, the user creates a Dashboard-instance.  On base of the defined filter the right template is chosen automatically.
+# The user stores the Dashboard-instance and executes it.
+# Later: The user loads the Dashboard-instance and executes it.
+
+* Implicitly: User deletes Dashboard-instance
+* Implicitly: User modified Dashboard-instance (e.g. description or filter)
+
+\\
+h4. 2. Dashboard Template
+\\
+Abstract structure for /content of a Dashboard-template, based on the sponsoring text:
+-	BB-type for dashboard-template
+-	Attribute to define 1 or 2 columns
+-	captions/title for content areas
+-	descriptions for content areas
+-	diagrams/visualizations
+
+Additional content, if necessary:
+-	title of the dashboard
+-	description of the dashboard
+-	title of  the filter
+-	description of the filter
+-       the filter result
+ 
+ 
+Creation of a diagrams /graphics:
+-	The graphics should be created and stored as usual. 
+-	Dashboard-template contains only references to saved graphics
+-	When creating the Dashboard-instance only the filtered data are exchanged in the graphic configuration
+-	saved queries / diagrams, which were created for the Dashboard, can be marked with a name convention.
+For a future implementation: It is possible to mark the stored graphics / diagrams with a flag -> So that only the admin can see the prepared diagrams.
+ 
+ 
+The creation of the Dashboard-templates should be implemented as an XWiki-syntax based solution.
+The use of the XWiki-syntax has the following advantages:
+-	XWiki-Syntax is better than XML, because later a better editor implementation is possible and we don't need an own/special XML parser.
+-	Tables are natively available in XWiki (with 1 or 2 columns, or even more)
+-	Text (title, description) are natively available in XWiki
+-	Only one XWiki-Macro is needed, which references a diagram configuration.
+-	If necessary, additional XWiki-Macros as placeholder for filter-title/description etc.
+
+Additional possibilitieswhen editing are OK, because the function is used only by trained, responsible admins.
+
+The creation of the template-editor takes place in several steps.
+# First: Only a Text-Area is used to editing an template
+# Later, but in scope 3.1: simple XWiki-Editor
+# Future option:  support for diagram macros
+
+The function for creating and managing templates is to integrate into the menu under ""Administration"" > ""Document Templates"". 
+
+\\
+h4. 3. Dashboard-Instanz
+\\
+Different places to integrate Dashboard-instance function were discussed. 
+It was decided to integrate the function of the Dashboard-instances within the menu item ""Visualizations"" as ""Custom Dashboard"".
+
+Use of filters:
+-	It must refer to saved filters. Filter may not be copied.
+-	If necessary, use name conventions, thus saved filters for dashboards be recognized as such and are not accidentally deleted.
+-	When defining a Dashboard-instance it should be shown all saved queries / filters, so that the user can select from any saved queries.
+-	The list of saved queries should be limited by browser means (Full text search over name, description and type). It shouldn't be created an additional filter for BB-types. 
+-	The correct template is selected automatically based on the selected filter.
+-	If no appropriate template exists, an error message is issued.
+
+Use of graphics:
+-	the graphics to be used are defined in the template
+-	the template contains only references to saved diagrams
+-	the graphic-configuration is as before stored as XML-Text in an DB-table
+-	the stored diagram must be performed with a different basic set / filter
+-	Therefor the http-service must be extended to include parameter for ""different basic sets""
+Caution: Diagrams could contains two or more ""basic sets"". Determine the varied basic sets by indexes.
+Example: Landscape Diagram
+-	Diagrams for the dashboard should be generated ""naked"" (without corners, legend, QR-Code).
+Therefore it exist already an option / function. -> see context-visualization
+
+Additional information to be stored: 
+-	creator / Author of the Dashboard- instance
+-	creation time
+-	last access to the Dashboard-instance
+
+\\
+h4. 4. Permissions
+\\
+Permissions for Dashboard-Templates: like document templates. 
+Permissions for Dashboard-Instance: possibly new permissions otherwise the same like saved Diagrams.
+
+\\
+h4. 5. Documentation
+\\
+Documenting the new function.
+"		New Feature	iteraplan PO	05/Apr/13 5:01 PM	10/Jul/13 7:23 PM					dashboard	visualization								"30/May/13 8:53 AM;isc;So that we don't forget the results from the analysis for the diagram-resizing - I have copied the comment of Bernhard into this ticket.
+{quote} 
+*Bernhard Radke hat einen Kommentar hinzugefügt - 28/Mai/13 11:23 AM*
+regarding the diagram-resizing:
+
+    to enable the browser resizing svg graphics on customDashboards the Container containing the chart to be resized needs to have an explicitly set or inherited width (e.g. via style=""width: 100%""). Unfortunately this is not the case with tables.
+    furthermore the container containing the chart needs to have the display css-attribute set to 'block'
+
+this also works for tables if they have the ""width: 100%"" attribute set.
+however the xwiki to html generation process renders tables to automatically grow with their content (default html behavior).
+
+A possible solution for this would be to create a css-rule that applies the ""width: 100%"" attribute on all tables within a dashboard (this has of course influence on the behavior of tables that are not used to layout different charts in a grid but to display data...)
+
+Furthermore the svg graphics are not allowed to have neither height nor width set explicitly, but they need to have the viewBox-attribute set to ""0 0 <w> <h>""
+{quote} "																																																						

@@ -1,0 +1,14 @@
+Add new client to installer package	"_as-is:_ New client is installed manually side by side with the iteraplan server (which includes the classic client)
+
+_to-be:_ New client (that is its {{index.html}} and other resources) is part of the overall web client served by one installed webapp only.
+No extra webapp for the new client.
+
+New client entry point moves one level down to:
+{{.../<context name, if any>/client/index.html}}
+
+Note that ""client"" is not used for the classic client nor the REST API.
+
+For the installation package, copy the new client's resources to the respective position in the web content folder.
+
+If no easy automatic solution can be found, for the initial release a manual copy step is ok. "		Improvement	iteraplan PO	16/Apr/15 1:47 PM	27/Apr/15 11:45 AM					newClient									"24/Apr/15 6:28 PM;sfe;""app"" folder of the new client still needs to be copied into the installer.jar file manually. It needs to be added into the folder ""application"" inside the jar file.
+It will then be installed correctly during the installation procedure of iteraplan."																																																						

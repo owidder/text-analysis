@@ -1,0 +1,8 @@
+Wrong behavoir of the Combobox-Widget	"Steps to reproduce:
+# Open an interface and edit it
+# Open the list for information system
+# Move mouse on the list and scroll through the items.
+
+=> Moving mouse through list items causes that the value of the input field will be empty on the first time
+
+"		Bug	iteraplan PO	26/Jan/15 5:39 PM	30/Jan/15 8:29 AM														28/Jan/15 5:33 PM;tam;Fixed mouse handling																																																						

@@ -1,0 +1,19 @@
+Filter for Attributes (header + rows)	"*Summary:*
+
+Activate the extended combinedFilter (of IPTS-140) for all attribute rows, header and/or rows below.
+
+
+
+*Implementation Details:*
+
+* Url: Save filtering in the url
+
+
+
+*UI:*
+
+* Legend: Use the extended LegendFilterBuilder, put the legend-filter-entry under the header or the respective row (like in the Masterplan Diagram)
+
+* Toolarea: *remember the header and each row have a separate toolarea and separate filter*
+
+** Mainentry (2nd position): ""Filter"" (German: ""Filter"") with filter-icon"		New Feature	iteraplan Speedbird	26/Aug/16 1:40 PM	06/Dec/16 9:47 AM														23/Sep/16 10:24 AM;fka;Ticket already discussed with team	05/Dec/16 2:58 PM;dmkh;Ticket is implemented in scope of IPTS-140																																																					

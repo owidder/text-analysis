@@ -1,0 +1,18 @@
+Massdelete fails with an error [Einfügen von NULL in ("ITERA"."HIST_ISR_BO"."ID_ISR") nicht möglich]	"Beim Massendelete läuft iteraplan in einen Fehler. Laut Log ist folgender Error die Ursache:
+
+Einfügen von NULL in (""ITERA"".""HIST_ISR_BO"".""ID_ISR"") nicht möglich
+
+Der Fehler trat beim Löschen von allen Anwendungen (Anzahl: 1111) auf. Nach dem Löschen von 12 Anwendung brach iteraplan ab. Danach trat der Fehler sofort beim Löschen auf. Zunächst stand im Log ein Error ""Speicherplatz-Zuteilung für Tablespace 'ITERA_DATA' überschritten"". Nach Verdopplung der Tablespace-Größe trat dann der Einfüge-Error auf.
+"		Bug	iteraplan PO	05/Sep/13 10:56 AM	08/Jan/14 6:05 PM					bulk	core	history							05/Sep/13 11:32 AM;sry;Workaround: Disable history	"05/Sep/13 1:24 PM;sfe;Die Historisierung legt beim Löschen von Elementen normalerweise eine Tabellenzeile an, in der außer ID, Revision und Rev-Type alle Einträge null sind.
+Deshalb sollten die entsprechenden Tabellenspalten für die Historisierung keine ""not null""-Constraints haben.
+Bei Kunden, die iteraplan vor der Version 2.9 benutzt haben, kann es allerdings sein, dass einige dieser Tabellenspalten dieses Constraint besitzen.
+Grund ist das Migrations-Skript von 2.8 nach 2.9, in dem die History-Tabellen angelegt wurden, und in dem teils diese Constraints angegeben sind.
+
+Kunden, die erst mit späteren Versionen von iteraplan hinzugekommen sind, sollten das Problem nicht haben, da die Datenbank-Schema-Initialisierung, welche vom Installer vorgenommen wird, die Constraints richtig anwenden sollte.
+Diesen Punkt aber bitte auch noch einmal prüfen.
+
+Mein Vorschlag wäre, ein Reparatur-Skript für iteraplan 3.1 zu schreiben, welches ""not null""-Constraints in History-Tabellen entfernt (bei Spalten die nicht REV oder REVTYPE oder im Falle von Entity-Tabellen die primary ID, wie z.B. ID_BB, sind). Dieses Skript sollte Teil der Migration von 3.1 nach 3.2 werden und ansonsten bei Bedarf an Kunden mit dem Fehler ausgehändigt werden.
+
+Zum Entfernen von ""not null""-Constraints:
+* [MySQL|http://stackoverflow.com/questions/5707492/removing-not-null-restriction-from-column-in-mysql]
+* [Oracle DB|http://stackoverflow.com/questions/2540615/how-can-i-drop-a-not-null-constraint-in-oracle-when-i-dont-know-the-name-of-t]"																																																					

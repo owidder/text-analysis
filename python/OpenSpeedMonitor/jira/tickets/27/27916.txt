@@ -1,0 +1,11 @@
+Spider: Doppelte Ergebnisse herausfiltern	"Der Filter soll so angepasst werden. dass er auch Parameter beachtet. 
+
+Bsp.: Im aktuellen manuellen Spiderlauf auf lpt.otto.de tauchen 70 Requests auf /user/loginArea/header auf. Die Parameterwerte sind unterschiedlich, da hier zufällig generierte IDs als Values genutzt werden.
+
+Für die Scantools sind allerdings nur die Keys interessant. Die Values generieren sie selbst."		Story	secureCodeBox	16/Dec/14 11:33 AM	24/Jul/15 12:09 PM														"24/Jul/15 12:09 PM;rfe;Es gab einen Bug im dublicateFilter() des OwaspZapSpiderBase in der getPattern(String url) Methode.
+
+siehe: Commit 0b92477b53740abb5e70b88766714c0c2fdce336
+
+
+
+Jetzt funktioniert es aus meiner Sicht wie gewünscht."																																																						

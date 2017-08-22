@@ -1,0 +1,9 @@
+Duplicates in Information Systems relations list of filter dialog	"*Summary:*
+
+There are duplicates in the relations list of filter dialog for Information Systems (see attached screenshots).
+
+Probably the *revision 5667* is the reason.
+
+
+
+*{color:red}UPDATE:{color}* also reproduced in BB type lists (e.g. in CCD, see attached screenshot)"		Bug	iteraplan Speedbird	13/Jan/17 4:52 PM	27/Jan/17 11:45 AM																																																																				

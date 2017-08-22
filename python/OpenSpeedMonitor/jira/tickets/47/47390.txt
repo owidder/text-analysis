@@ -1,0 +1,13 @@
+Add ability for changing coloring attribute in the settings dirrectly	"Preconditions:
+Use ISD as outer type
+Use IS as inner type
+
+Steps to reproduce:
+1. Use any coloring for inner element
+2. Navigate to coloring settings line in the legend
+
+Actual: User can't select another coloring attribute in settings line dirrectly
+Expected: User can change used coloring to other in settings line"	47134	Sub-task	iteraplan PO	05/Feb/15 3:24 PM	10/Feb/15 3:40 PM													"Workspace: windows 8.1
+Browser: Google Chrome 8.1
+Revision: 611"	"10/Feb/15 3:40 PM;dasm;Verififed
+Revision 639"																																																						

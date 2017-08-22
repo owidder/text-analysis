@@ -1,0 +1,31 @@
+RELEASE: Extend Homescreen with Admin-Tab	"Assume REST-API on server works as designed. If it is does not exist yet, use a mockup.
+
+
+
+*Summary:*
+
+Extend the existing Homescreen with a new tab ""Administration"" with the tiles:
+
+* ""System"" (German: ""System"")
+
+* ""Attributes"" (German: ""Merkmale"")
+
+* ""Attribute Groups"" (German: Merkmalsgruppen"")
+
+* ""Users and Groups"" (German: Anwender und Gruppen"")
+
+* ""Roles and Permissions"" (""Rollen und Rechte"")
+
+
+
+*Implementation Details:*
+
+* Permission handling (IPTS-233):
+
+** If the information does not exist in the JSON, it means that the user has not the permission to it.
+
+** In this case, please hide this tile and re-direct the uri to the home-screen
+
+* ""Reload Plug-in Scripts"" should be moved within the ""System""-Tile
+
+* As long as the functions in the tiles are not fully implemented, please redirect to the classic pages."		New Feature	iteraplan Quickfox	30/Sep/16 2:42 PM	19/Oct/16 4:20 PM														06/Oct/16 5:54 PM;pma;TODO: Permission handling	18/Oct/16 11:55 AM;mwe;Permission handling for system tile added.																																																					

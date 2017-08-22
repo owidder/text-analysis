@@ -1,0 +1,19 @@
+Extend Business Mapping with 3 BBT	"Extend the Business Mapping with IT Service, Business Function and Business Object.
+
+
+
+Remove the limitation that Information Systems are a mandatory element in each Business Mapping.
+
+
+
+Convert the current relations between xxx and yyy to a Business Mapping:
+
+ * Business Object - Business Function
+
+ * Business Object - IS
+
+ * IS - Business Function
+
+ * IT Service - IS
+
+ * IT Service - Business Function "		New Feature	iteraplan Thunderduck	09/Jun/16 4:37 PM						business	mapping	metamodel							20/Jul/17 1:04 PM;aan;Think also about migrating the attributes of the ISR-BO Relation																																																						

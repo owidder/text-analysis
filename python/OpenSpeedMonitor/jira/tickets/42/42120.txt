@@ -1,0 +1,17 @@
+RICKSHAW X-Achsenbeschriftung wird noch immer von Legendenbox überlagert	"Tritt auf z.B. beim Export auf dem dynamischen CSI-Dashboard:
+
+https://iteraspeedmonitor.otto.wpt.iteratec.de/csiDashboard/showAll?aggrGroup=daily_page&selectedTimeFrameInterval=604800&from=22.05.2015&fromHour=16%3A02&to=29.05.2015&toHour=16%3A02&_includeInterval=&selectedFolder=2&selectedPages=1&_selectedAllBrowsers=&selectedAllBrowsers=on&_selectedAllMeasuredEvents=&selectedAllMeasuredEvents=on&_selectedAllLocations=&selectedAllLocations=on&_action_showAll=Anzeigen
+
+
+
+Siehe png im Anhang dieses Tickets
+
+"		Bug	OpenSpeedMonitor	29/May/15 4:08 PM	02/Jun/15 3:59 PM														01/Jun/15 10:40 AM;rkr;Reproduzierbar unter Chrome und FF in Windows. Nicht lokal reproduzierbar. Habe die Position auf Verdacht geändert - bitte commiten und auf dem Server testen.	"01/Jun/15 4:32 PM;nku;_""Reproduzierbar unter Chrome und IE in Windows""_ heißt Du kannst  es in der live deployten Version reproduzieren, nur nicht, wenn Du den aktuellen HEAD lokal bei Dir startest?
+
+
+
+Ich kann den Fehler auf jeden Fall auch lokal reproduzieren. Auch inkl. Deiner aktuellen Änderung. "	"02/Jun/15 10:04 AM;rkr;Ja.
+
+Schick mir bitte einen Screenshot.  - Irgendeine Änderung solltest Du im Vergleich zu vorher feststellen können."	"02/Jun/15 3:59 PM;nku;Hast Recht, offensichtlich hatte ich noch nicht den aktuellen Stand.
+
+Funktioniert jetzt (aus meiner Sicht)."																																																			

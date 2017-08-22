@@ -1,0 +1,5 @@
+Deactive mass-update-REST-calls for children-relations (server)	"Deactive mass-update-REST-calls for children-relations, e.g. deactivate mass-update for ""Sub Information Systems""
+
+
+
+Server should return in these cases the http status code ""400"" and the error message is ""Mass update for children relations is not allowed"""		Bug	iteraplan Speedbird	06/Apr/17 3:38 PM	01/Jun/17 12:17 PM														24/May/17 2:44 PM;msr;[~mada] is ready to start. Requirements are clarified.	01/Jun/17 12:17 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-632																																																					

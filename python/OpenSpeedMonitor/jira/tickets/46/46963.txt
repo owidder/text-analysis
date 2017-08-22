@@ -1,0 +1,9 @@
+Wiki Syntax other than XWIKI does not work	"_Reproduce:_
+# Change the value of property {{wiki.syntax}} in file _iteraplan.properties_ to something different than {{XWIKI}}, for example {{CONFLUENCE}} (see also comment in the file).
+# Start iteraplan
+# Edit a building block and enter wiki formatted text into the description field, then save
+
+_Expected:_ The text is rendered according to the selected wiki syntax
+_Actual:_ Values other than XWIKI lead to warn messages in the log, stating the according parser could not be found. Text is displayed as entered, without formatting (for example {{\*text\*}} instead of *{{text}}* (strong))
+
+_Fix:_ Remove the property to set wiki syntax (and related code), only support XWIKI from now on."		Bug	iteraplan PO	17/Sep/14 12:57 PM	22/Sep/14 10:35 AM					syntax	wiki																																																														

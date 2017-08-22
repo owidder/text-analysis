@@ -1,0 +1,4 @@
+Webtests fail	"See jenkins:
+https://iteraplan.iteratec.de/hudson/job/nightly_webtests/
+
+Please investigate why the webtests are not executed properly anymore and fix it."		Bug	iteraplan PO	10/Mar/15 2:16 PM	11/Mar/15 9:15 AM					webtests																																																															

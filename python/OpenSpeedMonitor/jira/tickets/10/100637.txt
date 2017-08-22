@@ -1,0 +1,61 @@
+Create sceleton implementation of the Treemap diagram	"One Building Block Type
+
+One numeric attribute
+
+Number of Boxes = Number of Building Blocks with defined value
+
+Boxes with undefined values are not shown
+
+Negative values are allowed. The most negative value should be the minimum sized box
+
+No hierarchy - just flat: all Building Blocks in scope
+
+Labels show the name of the Building Block and the attribute value, e.g. ""Account Systems - 200""
+
+Coloring by numeric, multi-value enumeration and multi-value responsibility attributes independently of the box-sizing
+
+Borderline for each box (or padding?) to be able to distinguish two adjacent boxes with the same colors
+
+Optional: Option ""Hierachical name as content element's name.""
+
+
+
+Common diagram features:
+
+Fully localised
+
+Loading indicator
+
+Legend slide in and out. Legend should be drawn after the diagram to correctly display filter statistics
+
+Combined Filters
+
+No Title
+
+Static Toolarea
+
+Permission Handling
+
+Zooming
+
+Scrolling with GoJS-features (diagram size restricted to screen size)
+
+Download as SVG, PNG, JPEG, PDF
+
+Truncation of long names (but a tooltip)
+
+Include report date in legend
+
+Saved queries
+
+User settings
+
+
+
+*Also see the TreemapRequirements video* at
+
+https://iteraweb.iteratec.de/confluence/display/ITPL/Recorded+teamviewer+sessions
+
+
+
+GoJS example: http://gojs.net/latest/extensions/TreeMap.html"		New Feature	iteraplan Speedbird	26/Oct/16 12:58 PM	04/Nov/16 1:57 PM					TreeMap									31/Oct/16 2:02 PM;roia;Review: https://iteraweb.iteratec.de/fisheye/cru/IP-132	02/Nov/16 11:10 AM;roia;Please create "skeleton documentation": https://www.iteraplan.de/doc/display/iteraplan55/Tree+Map+Diagram																																																					

@@ -1,0 +1,5 @@
+GraphiteEventSourcePath	"Es ist möglich einen GraphiteEventSourcePath zu erstellen, der danach nicht in der Liste auswählbar ist. Das funktioniert, indem man kein Static Prefix beim Erstellen unter http://localhost:8080/graphiteEventSourcePath/create angibt. 
+
+
+
+Wahrscheinlich reicht es in der GraphiteEventSourcePath domain die Reihenfolge im Mapping zu ändern."		Bug	OpenSpeedMonitor	12/May/16 11:27 AM	12/May/16 6:13 PM																																																																				

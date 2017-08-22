@@ -1,0 +1,25 @@
+Create combined list of my and public saved queries	"Adjust the list of my saved queries to also show the public saved queries.
+
+
+
+* Add two checkboxes as first row in the list page:
+
+** My Saved Queries
+
+** Public Saved Queries
+
+* If one checkbox is changed or the page is loaded the corresponding saved queries should be loaded from the backend into the list. (default: both checkboxes checked)
+
+* See comment below--Remove additional ""My Saved Queries"" tile on start screen and link the tile ""All saved queries"" with the saved queries page of the new client.--
+
+* Add icons for my and public saved queries as first column: (See reactor filemanager ""Add folder""-icon integration)
+
+** Icon for my own saved queries: material icon ""person""
+
+** Icon for public saved queries: material icon ""people""
+
+* Add or adjust the available saved queries REST interface"		New Feature	iteraplan Quickfox	14/Sep/16 3:33 PM	04/Oct/16 12:33 PM														"30/Sep/16 2:11 PM;mwe;Discussed with [~msr]:
+
+Tile ""All Saved Queries"" will be renamed to ""Classic Saved Queries"" containing the saved queries in the classic client.
+
+Tile ""My Saved Queries"" will be renamed to ""All Saved Queries"" containing the saved queries of the new client. The link to the classic client goes to the saved queries in the classic client."																																																						

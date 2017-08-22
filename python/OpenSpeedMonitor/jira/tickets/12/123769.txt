@@ -1,0 +1,67 @@
+Business Object - error occurs when dragging column	"h4.Problem Description:
+
+
+
+Business Object - error occurs when dragging column.
+
+
+
+ 
+
+
+
+h4.Reproduction Steps:
+
+ * Open application and navigate to ""Information System Domains""
+
+ * Drag the ""Name"" column to the end of table
+
+
+
+h4.Observed Results:
+
+
+
+ As soon as the ""pin"" icon is shown - the error occurs in the console:
+
+
+
+""MoveColumnController</MoveColumnController.prototype.getNewIndexForColMovingRight http://localhost:8080/client/bower_components/ag-grid/dist/ag-grid.js:24087:14
+
+    MoveColumnController</MoveColumnController.prototype.workOutNewIndex http://localhost:8080/client/bower_components/ag-grid/dist/ag-grid.js:23963:21
+
+    MoveColumnController</MoveColumnController.prototype.attemptMoveColumns http://localhost:8080/client/bower_components/ag-grid/dist/ag-grid.js:24034:25
+
+    MoveColumnController</MoveColumnController.prototype.onDragging http://localhost:8080/client/bower_components/ag-grid/dist/ag-grid.js:24004:10
+
+    BodyDropTarget</BodyDropTarget.prototype.onDragging http://localhost:8080/client/bower_components/ag-grid/dist/ag-grid.js:23851:10
+
+    DragAndDropService_1</DragAndDropService.prototype.onDragging http://localhost:8080/client/bower_components/ag-grid/dist/ag-grid.js:21577:14
+
+    bound  self-hosted:914:17
+
+    DragService</DragService.prototype.onCommonMove http://localhost:8080/client/bower_components/ag-grid/dist/ag-grid.js:11695:10
+
+    DragService</DragService.prototype.onMouseMove http://localhost:8080/client/bower_components/ag-grid/dist/ag-grid.js:11708:10
+
+    bound ""
+
+
+
+h4.Expected Results:
+
+
+
+The column should be moved without any errors.
+
+
+
+ 
+
+
+
+h4.Note:
+
+ * Used dev and #339 build in FF
+
+ * se attached .giffile"		Bug	iteraplan Speedbird	07/Jun/17 7:18 PM	29/Jun/17 3:05 PM														29/Jun/17 3:05 PM;olal;After discussion it was decided to leave it as is.																																																						

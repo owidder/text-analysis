@@ -1,0 +1,29 @@
+Extend masterplan diagrams for more BB types	"Allow all Building Block types to be selected in Step 1, not only IS, TC and Projects (which have the RuntimePeriod property). Please offer also those types which have no {{DateIntervals}} assigned, because they can be useful for grouping over relations. Thus, it must be possible to have BBs which have no start or end time at all, nor have any bar displayed in the diagram. Their only purpose is to group related elements.
+
+For these other types (which do not have the RuntimePeriod property), allow selecting {{DateIntervals}} (if any are available).
+
+----
+Outlook: A further step will be that the user is allowed to explicitly select the {{DateIntervals}} to be shown for related elements, e.g. Product --> Information System. And, we want to show related elements of related elements along with their {{DateIntervasl}}, eventually."	45634	Sub-task	iteraplan PO	10/Apr/13 5:28 PM	15/May/13 4:51 PM					dateinterval	masterplan								22/Apr/13 1:32 PM;sry;I observed that I get a different diagram if I hit the "Generate" button a second (or third) time with the same configuration. It seems to omit the built-in runtime period information from the diagram.	"02/May/13 12:04 PM;sry;Encountered an NPE on Nightly Build:
+{code}
+[ERROR] 02-Mai-2013 11:57:01 [presentation.flow.FlowExceptionHandler] Exception thrown executing [AnnotatedAction@6717fc66 targetAction = [EvaluateAction@57bbc16a expr
+ession = masterplanGraphicFrontendService.generateGraphicFileResponse(flowScope.memBean, flowRequestContext, flowExecutionContext), resultExpression = [null]], attribu
+tes = map[[empty]]] in state 'secondstep' of flow 'graphicalreporting/masterplandiagram/start' -- action execution attributes were 'map[[empty]]'
+org.springframework.webflow.execution.ActionExecutionException: Exception thrown executing [AnnotatedAction@6717fc66 targetAction = [EvaluateAction@57bbc16a expression
+ = masterplanGraphicFrontendService.generateGraphicFileResponse(flowScope.memBean, flowRequestContext, flowExecutionContext), resultExpression = [null]], attributes =
+map[[empty]]] in state 'secondstep' of flow 'graphicalreporting/masterplandiagram/start' -- action execution attributes were 'map[[empty]]'
+        at org.springframework.webflow.execution.ActionExecutor.execute(ActionExecutor.java:60)
+....
+Caused by: java.lang.NullPointerException
+        at de.iteratec.iteraplan.businesslogic.service.SvgExportServiceImpl.generateSvgMasterplanExport(SvgExportServiceImpl.java:269)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+        at java.lang.reflect.Method.invoke(Method.java:597)
+...
+        at de.iteratec.iteraplan.presentation.dialog.GraphicalReporting.masterplan.MasterplanGraphicFrontendServiceImpl.generateGraphicFileResponse(MasterplanGraphicFrontendServiceImpl.java:311)
+        at de.iteratec.iteraplan.presentation.dialog.GraphicalReporting.GraphicalReportBaseFrontendServiceImpl.generateGraphicFileResponse(GraphicalReportBaseFrontendServiceImpl.java:165)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+{code}
+
+"	23/May/13 8:00 PM;sry;Thx!																																																				

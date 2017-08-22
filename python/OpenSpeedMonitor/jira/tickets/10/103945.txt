@@ -1,0 +1,17 @@
+Link back to Single Element View	"*Summary:*
+
+Create a link from the Toolarea to the Single Element View.
+
+
+
+*User Story:*
+
+* User selects an element in the Navigator with left click
+
+* In the toolarea a new option with the attached icon called ""Single Element View"" (German: ""Einzelansicht"") appears
+
+* When to user clicks on this button, he gets to the Single Element View of the selected element
+
+
+
+"		New Feature	iteraplan Speedbird	25/Nov/16 2:28 PM	06/Dec/16 9:46 AM																																																																				

@@ -1,0 +1,2 @@
+Main-Navigation ism umstellen	"Habe die Main-Navigation umgebaut.
+Ist mit Uwe abgestimmt."		Task	OpenSpeedMonitor	21/Nov/13 12:05 PM	21/Nov/13 12:06 PM														21/Nov/13 12:06 PM;nkuhn;done																																																						

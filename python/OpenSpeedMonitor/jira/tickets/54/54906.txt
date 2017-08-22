@@ -1,0 +1,21 @@
+Logic for Coloring (ItemDecorator & Configuration)	"*Summary:*
+
+Implement the coloring logic for the Information Flow Diagram *without* any user interaction or legend.
+
+
+
+*Affected parts of the system:*
+
+* ifdItemDecorator
+
+* ifdConfiguration
+
+
+
+*Approach:*
+
+Save the actual coloring configuration in the ifdConfiguration. The ifdConfiguration reads and writes the coloring configuration to the url.
+
+The ifdConfiguration is injected in the ifdItemDecorator. The ifdItemDecorator does the coloring of the Information Systems based on the ifdConfiguration."	54903	Sub-task	iteraplan PO	25/Aug/15 8:19 AM	23/Sep/15 1:02 PM					coloring									"22/Sep/15 3:03 PM;fro;checked in 2 commits accidentally in the wrong ticket. 
+
+commit #1513 and #1514 are in the ticket ITERAPLAN-3927"																																																						

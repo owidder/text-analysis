@@ -1,0 +1,3 @@
+Test newly built Lite-Bundle for Plugin-API	Download a newly built Lite-Bundle and test the Plugin-API with an example script	92213	Sub-task	iteraplan Quickfox	19/Aug/16 8:41 AM	23/Aug/16 8:19 AM														"19/Aug/16 11:41 AM;mse;The lite bundlo with inital data works for me.
+
+But the version with sampledata loads forever: The tomcat is up and running but the browser doesn't load iteraplan..."	22/Aug/16 2:04 PM;sfe;Fixed lite bundle with sample data, see commits.																																																					

@@ -1,0 +1,6 @@
+Benennung Result-Dashboard und -Listenansicht	"Uwe:
+Was soll ""Measuring results dashboard"" im Unterschied zu ""Measured steps results"" dem Benutzer sagen? Bei WPT-Monitor läuft das erste heute unter ""Reports"" und das zweite unter ""Results"". Ich würde vorschlagen, dass wir bei dieser Namensgebung bleiben.
+
+Measuring results dashboard -> Berichte/Reports
+Measured steps results -> Ergebnisse/Results"		Bug	OpenSpeedMonitor	23/Sep/13 9:36 AM	25/Sep/13 5:19 PM														"25/Sep/13 9:51 AM;jwerschmoeller;Inhalte umbenennen auf ""Letzte 2 Wochen"" ...
+Neue Liste kommt von Uwe ==> IT-142"																																																						

@@ -1,0 +1,49 @@
+INCLUDE FEATURE: Custom colouring with the help of a colour picker	"*Summary:*
+
+Create a colour picker for enumeration and numeric (min, max and undefined) colouring.
+
+
+
+*Affected parts:*
+
+* ifdTemplate (add colorpicker to template)
+
+* ifdConfiguration (save color in configuration)
+
+* ifdContentController (redraw diagram with new color)
+
+* ifdLegendBuilder (change color in the legend)
+
+* ifdItemDecorator (set new color)
+
+
+
+*Approach:*
+
+Use ITERAPLAN-3395 as blueprint.
+
+
+
+*UI:*
+
+Use ITERAPLAN-3395 as blueprint.
+
+
+
+*Acceptance criteria:*
+
+* Use primary click on a legend box (either an enumeration literal or numeric min, numeric max or numeric undefined)
+
+* The color picker opens on the left side of the selected legend box
+
+* Select a color in the color picker
+
+* *After* closing the color picker the diagram, the legend and the url gets updated
+
+"		New Feature	iteraplan Speedbird	02/Sep/15 11:33 AM	06/Jul/16 4:58 PM					colorpicker	ifd								"09/Jun/16 2:35 PM;mada;add functionality
+
+update unit tests"	"15/Jun/16 10:37 AM;mada;fix bug
+
+add unit tests"	"01/Jul/16 1:00 PM;dmkh;Revision 3353 is missing in commit history because of typo. Added files from it to the review.
+
+See the review with a few comments here: https://iteraweb.iteratec.de/fisheye/cru/IP-46"	01/Jul/16 3:10 PM;mada;Update code and unit test due review notes	01/Jul/16 3:28 PM;dmkh;All review comments are done, except this https://iteraweb.iteratec.de/fisheye/cru/IP-46#CFR-23399 with suggestion to create a follow-up ticket to fix it in other diagrams too.																																																		

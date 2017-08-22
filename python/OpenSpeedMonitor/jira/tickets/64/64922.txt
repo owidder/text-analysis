@@ -1,0 +1,43 @@
+MeasuredValueUpdateEvents werden nächtlich nicht gelöscht  	"Aktuell aus der OTTO-DB:
+
+
+
+{code}
+
+mysql> select cast(closed_and_calculated as unsigned) as closed,min(started),max(started),count(id) from measured_value group by closed;
+
++--------+---------------------+---------------------+-----------+
+
+| closed | min(started)        | max(started)        | count(id) |
+
++--------+---------------------+---------------------+-----------+
+
+|      0 | 2015-11-20 00:00:00 | 2015-11-25 00:00:00 |       652 |
+
+|      1 | 2014-10-25 03:00:00 | 2015-11-25 13:00:00 |   2178599 |
+
++--------+---------------------+---------------------+-----------+
+
+
+
+mysql> select update_cause,min(date_of_update),max(date_of_update),count(id) from measured_value_update_event group by update_cause;
+
++--------------+---------------------+---------------------+-----------+
+
+| update_cause | min(date_of_update) | max(date_of_update) | count(id) |
+
++--------------+---------------------+---------------------+-----------+
+
+| CALCULATED   | 2014-10-25 03:00:30 | 2015-11-25 13:09:32 |   7043574 |
+
+| OUTDATED     | 2015-11-20 00:01:00 | 2015-11-25 13:09:32 |    229314 |
+
++--------------+---------------------+---------------------+-----------+
+
+
+
+{code}
+
+
+
+Eigentlich sollten die nächtlich mit dem Schließen der zeitlich beendeten MeasuredValues gelöscht werden."		Bug	OpenSpeedMonitor	26/Nov/15 1:58 PM	13/Jan/16 4:47 PM														04/Jan/16 10:56 AM;mmi;[DONE] Trennung zwischen BerechnenUndSchließen und dem Löschen der nicht mehr benötigten UpdateEvents.	11/Jan/16 10:45 AM;mmi;Umstellen der CachingContainerFactory auf einen CachingContainerService	11/Jan/16 4:21 PM;mmi;Tests anpasen																																																				

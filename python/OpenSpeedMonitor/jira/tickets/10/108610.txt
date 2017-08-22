@@ -1,0 +1,15 @@
+Handle # and : in List Edit	"If more than one # are in the name of IS, the version is unsetted, or shortened after the second #.
+
+
+
+Try to use more than one # in a name.
+
+Expected: Error message.
+
+Real: Request is answered by 200, but version is invalid
+
+
+
+: should be completely forbidden in names, at the moment they are accepted and end up in the data base
+
+"		Improvement	iteraplan Thunderduck	17/Jan/17 9:57 AM	23/Jan/17 10:01 AM																																																																				

@@ -1,0 +1,16 @@
+DRINGEND - Unser Lizenzschlüssel ist nur bis 31.03.2016 gültig	"© iteratec GmbH 2015    Build ID: Corporate Edition v5.1.0-r25160
+
+Lizensiert für TeamBank AG  -  Gültig bis 31.03.2016. Nach Ablauf wird iteraplan nicht mehr funktionsfähig sein.
+
+
+
+Laut unserem Einkauf sind wir bis 31.12.2016 lizensiert."		Fault	iteraplan Support	30/Mar/16 10:48 AM	30/Mar/16 12:00 PM														"30/Mar/16 11:14 AM;sfe;Hallo Johannes,
+
+du solltest am 15. Februar eine E-Mail bekommen haben, in der neben der Ankündigung der Umstellung im Support auf den Service-Desk auch der neue Lizenzschlüssel für 2016 angefügt war.
+Für alle Fälle hier nochmal der aktuelle Lizenzschlüssel:
+
+{{VGVhbUJhbmsgQUcAMzEuMDMuMjAxNwAwMEZCOTg4NDFGRERBNzc0QjRGNUFCQ0RBQjQ5NDY0QkZCMDdDRkQxRENGQjUxRUFDOEM1MERDQ0Q0NkYzQjQ0}}
+
+Über die Seite Administration->Konfiguration in iteraplan kann der Schlüssel aktualisiert werden."	"30/Mar/16 11:21 AM;johannes.meyer@easycredit.de;Hatte ich gemacht.
+Das abmelden und wieder anmelden hat gefehlt #)"	"30/Mar/16 11:22 AM;johannes.meyer@easycredit.de;Passt alles, das Ticket kann geschlossen werden.
+Sorry und danke :)"																																																				

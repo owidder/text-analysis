@@ -1,0 +1,5 @@
+Massupdate: Attributes on relations: Additional checkboxes	"Those checkboxes should be activated when main checkbox (in first column) is active
+
+
+
+For relations we have several data separately editable and with mass update we probably don't want to change all of those to the same value (i.e. apportionment), that is why we need to have this possibility to choose which fields should be changed in the situation then there are more than one (in this case servers)"		Improvement	iteraplan PO	03/Apr/17 11:22 AM	12/Apr/17 10:10 AM					massupdate																																																															

@@ -1,0 +1,5 @@
+Umzug des Detail-Daten Codes auf das neue Projekt			Story	OpenSpeedMonitor	25/May/16 10:17 AM	27/Jul/16 4:47 PM														"27/May/16 11:03 AM;bwo;Der Code wurde umgezogen. Jedoch muss dieser noch angepasst werden, sodass die zwei Services miteinander kommunizieren können.
+
+
+
+Die Daten in der MongoDB, welche auf Domains in dem OSM verweisen, werden mit den IDs gespeichert, z.B. Browser. Um diese beim Laden wieder mit dem korrekten Namen darzustellen, muss der Microservice wissen, welche IDs, welcher Domains, welchen Namen haben. Hierfür, und für die spätere Zuordnung der Assets zu den Osm-Instanzen, wurde die Domain OSMInstance angelegt. In dieser sollte eine URL zum Erreichen der Rest-Api stehen und für jede Domain die Mappings der Namen. Für den OSM muss es dann möglich sein, seine Mappings anzupassen und der Microservice muss in der Lage sein fehlende Mappings abzufragen."																																																						

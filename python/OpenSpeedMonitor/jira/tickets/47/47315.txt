@@ -1,0 +1,10 @@
+Wrong position of Colour picker	"Sumamry: Colour picker has wrong position with diagram which have to many elements
+
+Steps to reproduce:
+1. Use IS as outer type and TC as inner type
+2. Use coloring by enumeration properties for outer element
+3. Click on enumeration parameter on the legend
+Actual: Colour picker appears in the right side of the legend
+Expected: colour picker should appears in the left side of the legend"	47128	Sub-task	iteraplan PO	23/Jan/15 12:19 PM	23/Jan/15 4:42 PM													"Workspace: Windows 8.1
+Browser: Google Chrome 39.0
+Revision: 538"	23/Jan/15 4:42 PM;dasm;Verified (revision 544)																																																						

@@ -1,0 +1,4 @@
+Sometimes Context menu stops opening in IE11	Summary: Sometimes Context menu stops opening after applying several similar options like changing content type or coloring several times		Bug	iteraplan PO	31/Mar/15 1:55 PM	16/Apr/15 3:52 PM					sporadic									"15/Apr/15 11:20 AM;wfr;ASK Daria for specifics if available
+
+then decide again"	"15/Apr/15 2:42 PM;msr;Like in IPNINE-415 . Difficult to reproduce.
+It is dependant on the ""workload"" of the IE."	15/Apr/15 2:54 PM;alvo;I think the context menu options should be preloaded for exact configuration of content type + x axis property + y axis property, it would be better in async process 																																																				

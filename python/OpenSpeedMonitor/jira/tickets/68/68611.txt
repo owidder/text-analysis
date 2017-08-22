@@ -1,0 +1,71 @@
+Ensure Oracle 12 compatibility	"Ensure that iteraplan ist Oracle 12 compatible
+
+
+
+Should there be any prerequisites from Oracle side (patch level etc.), then document this explicitely in the user guide / installation guide and in this ticket
+
+
+
+Inform all customers who have asked us about Oracle 12 compatibility. Patch release in accordance with the team lead: Seperate ticket.
+
+
+
+All internal Oracle instances should be patched, too. Inform Timur etc."		Improvement	iteraplan PO	05/Jan/16 11:52 AM	21/Jan/16 1:08 PM					oracle									"05/Jan/16 2:46 PM;gph;In early versions of Oracle 12c there is a bug which can lead to wrong results with LEFT JOINs as observed with customer L-102. Because the Hibernate framework uses LEFT OUTER JOINs to query the state for entities with inheritance type structure and calculates the to-be-instantiated Java type depending on this result, wrong results can lead to a wrong determined Java type of an entity. And because in that case the (""hydrated"") state and the Java type do not fit together, a NPE with uninitialized properties appears somewhere in the application.
+
+
+
+The Oracle main bug (has several duplicate ""sub-bugs"") is :
+
+_Bug 18430870_: ADAPTIVE PLAN AND LEFT JOIN GIVE WRONG RESULT
+
+
+
+The (adjusted) SQL query to reproduce the bug on the customer's data is:
+
+{code}
+
+select
+
+userentity.ID userentity_ID,
+
+benutzer.ID_UE benutzer_ID,
+
+gruppe.ID_UE gruppe_ID,
+
+case
+
+  when benutzer.ID_UE is not null then 1
+
+  when gruppe.ID_UE is not null then 2
+
+  when userentity.ID is not null then 0
+
+end as clazz_discriminator,
+
+benutzer.FIRST_NAME user_firstname
+
+from UE userentity
+
+left outer join USERS benutzer on userentity.ID=benutzer.ID_UE
+
+left outer join	UG gruppe on userentity.ID=gruppe.ID_UE
+
+where userentity.ID in (324, 258);
+
+{code}
+
+The result shows not-NULL result in both child tables' PK columns, which is wrong (see screenshot). Because the specialization from UE to USER and UG is both ""complete"" and ""disjunct"", exactly one of the child tables' PK columns must show a non-NULL value with the ID, by which it is connected (1:1) with the parent's PK column.
+
+
+
+There exists a Oracle DB patch with the same number (patch 18430870) for this bug for Linux/Unix systems and a ""Windows Bundle Patch"" with multiple bug fixes for Windows systems, where the fix for this bug is included. The Oracle DB instance must be at this patch level to ensure correct functionality with iteraplan. Recent versions of Oracle DB are possibly already on that level. At least the bug could not be reproduced with a recent ""12.1.0.1"" version of Oracle 12c but with an old version form Jan 2014.
+
+
+
+It has been successfully verified that the problem disappears after applying the patch on a Windows Oracle 12.1.0.1 Enterprise Edition instance.
+
+
+
+Oracle patches can be downloaded from support.oracle.com and applied with the ""OPatch"" utility, which is included in the Oracle installation directory. Afterwards the patch level can be checked with the command ""opatch lsinventory"". The bug 18430870 should be included in the list of fixed bugs.
+
+"	24/Jan/16 9:18 PM;fka;Customer communication done.																																																					

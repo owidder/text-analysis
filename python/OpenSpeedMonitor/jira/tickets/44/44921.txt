@@ -1,0 +1,10 @@
+Hierarchical Navigation of the building blocks on the main page	"Hierarchische Navigation auf den Übersichtsseiten mittels JavaScript-Blätterfunktion.
+Gilt für alle Elemente mit virtuellem Element (""-"").
+     -	
+GP1 GP2	GP3
+Klick auf oberstes Element (-): diese im Detail anzeigen
+
+Klick auf GP2 (sprich untere Zeile) - weiternavigieren:
+      GP2	
+GP2.1 GP2.2 GP2.3
+Zurück über ein Pfeil links."		New Feature	iteraplan PO	06/May/11 9:51 AM	07/Feb/12 3:03 PM														06/May/11 10:39 AM;rbe;  Hierarchical Navigation inserted on the main page	06/May/11 12:14 PM;rbe;  hibernate LazyInitializationException solved by Hierarchical Navigation	10/May/11 11:40 AM;rbe; problem of rendering solved (hierarchical navigation was not shown when choosing some attributes from drop-down boxes)	10/May/11 2:42 PM;rbe;  dcumentation in wiki added for this new feature	12/May/11 11:26 AM;rbe;   small temporary correction for hierarchical navigation	07/Feb/12 3:03 PM;kvo;Now implemented in ITERAPLAN-440																																																	

@@ -1,0 +1,1 @@
+Implement filter functionality		46969	Sub-task	iteraplan PO	18/Sep/14 9:49 AM	09/Oct/14 9:46 AM														09/Oct/14 9:46 AM;wfr;filtering works																																																						

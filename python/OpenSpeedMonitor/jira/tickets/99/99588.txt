@@ -1,0 +1,21 @@
+RELEASE: For association type history entries, do not create redundant change entries	"Currently, when a new attributable association is created, at least two history entries are written to the database.
+
+For example, if a Isr2IeAssociation is created between IS ""Broker"" and IE ""Server 2"", two history entries of type ""INSERT"" are created:
+
+# ""Broker"" added for feature ""informationSystemRelease""
+
+# ""Server 2"" added for feature ""infrastructureElement""
+
+
+
+After changes in IPTT-194, this information is redundant, as the building blocks connected by the association are already known via their own columns/fields.
+
+Instead only write a single INSERT entry with empty feature, added and removed fields, if no other feature was set initially. Else write only changes for that other feature.
+
+The same holds true for the equivalent DELETE case.
+
+
+
+Adjust Json generation accordingly (if empty changes are not supported yet).
+
+Adjust database schema if necessary due to not null constraints."		Bug	iteraplan Thunderduck	18/Oct/16 3:29 PM	20/Oct/16 10:01 AM																																																																				

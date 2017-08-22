@@ -1,0 +1,8 @@
+PrintView: Enable PrintViews especially of elements in redesigned UI	"PrintView: Enable PrintViews especially of elements in redesigned UI
+All Collapsables and tabs in Element detail should be expanded.
+Left ContextMenu should be omitted.
+Top-Navigation can be included or not -> how it is easier"		New Feature	iteraplan PO	29/Mar/12 2:54 PM	13/Apr/12 7:33 PM														12/Apr/12 10:43 AM;vsh;Unnecessary css themes removed. Please test as well.	"12/Apr/12 1:50 PM;sry;Idea for improving print output:
+* -Printed pages do always have a large white area above the element name, almost half the page- --*RECALL*: My browser had some old data in its cache. Now it works fine
+* The Visualisation tab could be hidden in print output -- the diagram doesn't show up anyway"	12/Apr/12 2:46 PM;sry;Printing works fine. Also check CSS Theme removal, no problem.	12/Apr/12 3:18 PM;sry;Works great. One idea that should be discussed is to hide the History tab -- is the history interesting in some cases, or not? --> @kvo & @tse	12/Apr/12 3:35 PM;kvo;Current behaviour with history is ok. Showing tab and content (only if loaded).	"13/Apr/12 7:04 PM;sry;Almost perfect: History is hidden when not loaded and print page looks fine.
+However, if you switch to the History tab and print again, you have this half-page empty space on the first page again. Seen in Chrome and Firefox.
+Is it easy to fix?"	13/Apr/12 7:33 PM;sry;bummer, it was again a caching issue. My bad...																																																

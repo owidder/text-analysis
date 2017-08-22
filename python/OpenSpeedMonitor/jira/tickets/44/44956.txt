@@ -1,0 +1,5 @@
+Importing new users for object related permissions does not create user account	"While the user is added to iteraplan, the user cannot login. First, the password of the user would be unknown. Second, the user is not created in the user account management system, e.g. iTurm or ldap.
+
+In this situation, the permission is not really useful, isn't it?
+
+Would request to provide a feature where newly created users in iteraplan are created as real users, and not just as ""placeholder"" for something."		Improvement	iteraplan PO	20/May/11 7:12 AM	24/May/11 4:11 PM					excel	import								24/May/11 4:11 PM;kvo;Separation of User/Role-Management system (e.g. LDAP or iTURM) and iteraplan is intended -> wontfix. 																																																						

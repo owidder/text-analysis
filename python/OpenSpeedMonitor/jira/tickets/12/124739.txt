@@ -1,0 +1,45 @@
+Clicking "X" right next to Attribute name in Filter doesn't apply change	"Steps to reproduce (Tested in IFD diagram):
+
+
+
+1. Open IFD diagram default.
+
+
+
+2. Set in Node filter name contains ""SAP""
+
+
+
+3. Set in OR Development End between 05/01/2000 and 12/01/2011.
+
+
+
+4. Apply filter -> diagram is changed.
+
+
+
+5. Open filter again.
+
+
+
+6. Click on ""X"" symbol right next to  ""Name"" and ""Development (END)""  (Screenshot-1).
+
+
+
+Actual result:
+
+
+
+Filter data is deleted
+
+
+
+But diagram in sot updated (Screen shot attached)
+
+
+
+Expected Result:
+
+
+
+Diagram is updated"		Bug	iteraplan Speedbird	19/Jun/17 1:26 PM	20/Jun/17 9:37 AM														19/Jun/17 2:45 PM;aan;I cannot reproduce this, when I tried it the diagram was updated. But I could not click the small x next to both or filters as it was only shown while two filters where there. I used the wrong x, compare image for the right one.																																																						

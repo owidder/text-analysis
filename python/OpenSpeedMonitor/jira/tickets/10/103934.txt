@@ -1,0 +1,11 @@
+Columns width will be ignored if description column has been removed	"What happens?
+
+If you remove the description column, the suppressSizeToFit=false will be removed with the description column, so all columns will be spread over the full grid size ignoring their default widths.
+
+
+
+How to fix?
+
+If the column with suppressSizeToFit=false is deleted another column has to get the suppressSizeToFit=false value.
+
+"		Bug	iteraplan Speedbird	25/Nov/16 11:41 AM	24/Jan/17 4:26 PM														24/Jan/17 4:24 PM;fka;Check, if still valid.																																																						

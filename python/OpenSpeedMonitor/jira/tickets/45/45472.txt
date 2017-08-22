@@ -1,0 +1,9 @@
+Ensure correct behaviour with JDK 7	"Some of iteraplan 3.0's code behaves differently on JDK7, resulting in 8 failing tests. The reason is a different {{Arrays.sort()}} implementation in Java 7, in combination with flawed compareTo() implementations in iteraplan. For reference, search for ""java.util.Arrays.sort"" in [Oracle's Java 7 Compatibility documentation|http://www.oracle.com/technetwork/java/javase/compatibility-417013.html] or [the related request for enhancement|http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6804124].
+
+As per that documentation, we can temporarily restore the previous sort behaviour by setting the system property {{java.util.Arrays.useLegacyMergeSort}} (probably in CATALINA_OPTS) and documenting it properly for customers. That is the scope of this issue.
+
+However, we should also fix our implementation to behave correctly with the new (and faster) sort implementation, see ITERAPLAN-1516.
+
+The goal is to gain sufficient certainty that iteraplan 3.1 and later are compatible with Java 7."		Task	iteraplan PO	11/Apr/12 4:48 PM	22/May/13 4:31 PM					java									02/May/13 11:25 AM;lba;Added a few lines in the iteraplan 3 wiki, how to use the old sorting algorithm to ensure correct behaviour with Java 7.	"22/May/13 4:19 PM;bra;there is no possibility to enable the legacyMergeSort within our application, as the property is read into a static final field once on classload of the packaged class {code}java.util.Arrays.LegacyMergeSort{code}
+
+At the time this is initialized, our application is not even running and any subsequent calls to {code}System.setProperty(""useLegacyMergeSort"", ""true"");{code} are not affecting the field used to decide whether to use legacyMergeSort or TimSort."	22/May/13 7:55 PM;sry;thx!																																																				

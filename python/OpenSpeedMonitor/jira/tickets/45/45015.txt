@@ -1,0 +1,1 @@
+Besonders lange Namen werden auch in Legende abgeschnitten	bzw. mit ... abgekürzt.		Bug	iteraplan PO	27/Jun/11 7:03 AM	29/Jun/11 12:42 PM					reports									29/Jun/11 12:42 PM;kvo;Otherwise the pagesize would cause an error -> therefore the limit -> wontfix																																																						

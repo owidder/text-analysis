@@ -1,0 +1,20 @@
+History: Wrong history entry (double-post on delete)	"*Reproduce:*
+* Activate history
+* Open an Information System
+* Add 2 new ""Used by Informationsystem""-Relationships
+* Delete 1 of the newly created relationships
+* Open the history tab of the other Information System, which is still connected by ""used by""-relationship
+
+*Actual:*
+* A history entry (""No known changes"") is created during the delete of the other element
+
+*Expected:*
+* No history entry is created for the deletion of another element
+
+*Hint:*
+* In the database no extra entry is created
+* You may start with the class ""HistoryServiceImpl.java"""		Bug	iteraplan PO	16/Mar/15 2:56 PM	31/Mar/15 2:40 PM					history									"26/Mar/15 1:50 PM;fam;Successful recreated defect and after update verified fix.
+Also checked code and fix function looks good.
+ticket closed. "	27/Mar/15 2:09 PM;isc;I could fix the follow problem with adjustments in the Hibernate mapping.	"31/Mar/15 2:40 PM;fam;Okey,... now really fixed.
+Checked again and now also this special case is solved.
+Ticket closed."																																																				

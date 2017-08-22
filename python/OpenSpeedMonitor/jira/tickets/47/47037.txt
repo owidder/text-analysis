@@ -1,0 +1,18 @@
+Component/class for model data	"Write a JS class that holds the complete model data and gives specific access to it.
+Working title for this class: ""Model"".
+
+The class should be used as a Angular service by other services and controllers.
+
+The contents of the class is initialized with a call to a service in the persistence layer, that in turn GETs the data from the REST API of the server.
+
+The class has access methods to:
+* get an element with a given ID.
+* get elements of a given type (starting with IS, ISD, BO)
+* ... and filtered by a given filter predicate
+* .... and sorted by a sort order
+
+The class has also method to 
+* put back a modified element back to server. For this, it calls the underlying component from the persistence layer.
+
+
+"		New Feature	iteraplan PO	09/Oct/14 10:53 AM	09/Jun/15 5:05 PM														13/Oct/14 10:34 AM;wfr;to be discussed witth the team	13/Oct/14 11:33 AM;sepr;Est 3 PD																																																					

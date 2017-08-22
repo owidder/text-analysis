@@ -1,0 +1,41 @@
+NCD: Multiple problems when inner equals outer element type	"To reproduce set inner element type equal to outer element type. Path via ""subordinate"" Nest inner by subordinate.
+
+See here for an afected configuration:
+
+https://iteraplan.iteratec.de/iteraplan-devel/client/#/diagram?locale=en&B25=E3&C0=E3&G7=A21
+
+
+
+First problem:
+
+Outer element filter (only tried with text filters) removes all elements, even if they should stay in the diagram. Effect occurs immediately after first key stroke.
+
+
+
+Second problem, probably related:
+
+Inner element filter (only tried with text filters) does not have any effect
+
+
+
+Expected in both cases:
+
+Correct filtering of the appropriate elements, no effect on other elements"		Bug	iteraplan PO	26/Oct/15 12:59 PM	28/Oct/15 4:03 PM														"27/Oct/15 10:48 AM;fka;Nesting inner / outer now (still?) broken
+
+
+
+To reproduce: 
+
+Set inner type and outer type to Business Domain. Path ""Subordinate Business Domain"". Inner nest by ""Superordinate..."".
+
+1. Then select outer nest by ""superordinate..."" -> no effect
+
+2. Then select outer nest by ""subordinate ..."" -> inner nest is changed, outer nest stays the same
+
+
+
+Excepted:
+
+Nesting applied as selected
+
+"	27/Oct/15 3:47 PM;dam;now fixed the second problem																																																					

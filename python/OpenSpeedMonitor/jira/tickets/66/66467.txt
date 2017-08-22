@@ -1,0 +1,25 @@
+Create XSL script to replace dashboard functionality	"The classic dashboard in iteraplan will be discontinued with 5.2 or 5.3.
+
+
+
+Users might still want to have that kind of functionality, so create a XSL script that more or less has the same functionality:
+
+one HMTL page
+
+all necessary data included
+
+on top static chart of element number distribution
+
+interaction possible: select BBT and then select attributes accordingly
+
+adjust pie chart dynamically
+
+deliver as part of iteraplan corporate only (in the download package or via the forum/customer restricted section)
+
+
+
+"		New Feature	iteraplan PO	11/Dec/15 6:02 PM	17/Feb/16 12:54 PM					reactor									"17/Feb/16 12:54 PM;fka;Script done by [~dne]
+
+
+
+Including of script and removing of dashbord funtionality from product via separate ticket."																																																						

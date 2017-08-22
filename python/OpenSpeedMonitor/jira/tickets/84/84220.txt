@@ -1,0 +1,5 @@
+GraphNameAliases werden nicht korrekt angezeigt	"Wenn man ein UserspecificDashboard aufruft, welches Alias für die Graphenbezeichnungen benutzt, werden diese nicht immer korrekt angezeigt.
+
+
+
+Aufgefallen ist mir das, bei einem Dashboard, welches vier Alias hat, aber nur noch zwei Kurven. Das führt zu seltsamen Ergebnissen."		Bug	OpenSpeedMonitor	13/May/16 12:01 PM	23/Jan/17 3:37 PM																																																																				

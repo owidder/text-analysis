@@ -1,0 +1,33 @@
+Recherche Mocking Grails 3	"Recherchieren wie genau die neue Mocking-Syntax in Grails 3 funktioniert (""new MockFor()"").
+
+Ziel wäre eine einheitliche Lösung für das Mocking.
+
+
+
+Diese Lösung sollte dann überall verwendetv werden 
+
+* wo wir jetzt Tests zu fixen haben
+
+* im ServiceMocker "		Task	OpenSpeedMonitor	15/Apr/16 10:15 AM	20/Apr/16 2:36 PM														"20/Apr/16 2:36 PM;mmi;Wir können die Lösung ""new MockFor(ZuMockendeKlasse)"" fast so übernehmen wie gedacht.
+
+Allerdings gilt folgendendes: ""[... by allowing a strictly ordered expectation of the behavior of collaborators to be defined.]""
+
+Wenn man also MockFor benutzt, muss man sich darüber Gedanken machen, wann welche Methode wie oft und in welcher Reihenfolge am gemockten Service aufgerufen wird.
+
+Dieses hatten wir schon einmal diskutiert und damals fiel uns glaube ich kein Fall ein, wo das von uns gewollt ist.
+
+Tauscht man jetzt ""new MockFor(ZuMockendeKlasse)"" durch ""new StubFor(ZuMockendeKlasse"") wird auf das prüfen des ""wie-oft"" etc. verzichtet und wir erhalten das gewünschte Verhalten.
+
+Zusammenfassend schlage ich also folgende Lösung vor:
+
+
+
+{code:java}
+
+def meinServiceMock = new StubFor(MeinService)
+
+meinServiceMock.demand.mockMethode {-> println ""Juhu""}
+
+serviceUnderTest.meinService = meinServiceMock.proxyInstance()
+
+{code}"																																																						

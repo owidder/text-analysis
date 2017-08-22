@@ -1,0 +1,8 @@
+"urlbuilder.application.address" has no effect on links for graphics	Changes of the "urlbuilder.application.address" in the iteraplan_local.properties.xml has no effect of bookmark links for graphics.		Bug	iteraplan PO	18/Aug/14 10:21 AM	26/Aug/14 4:25 PM														"25/Aug/14 9:49 AM;dop;The description of the ticket is a little bit misleading. The fact is, that for generating the bookmark links, the URL in the address bar of the browser is used for. This has following impacts:
+
+If a domain example.com/iteraplan is specified in the iteraplan.properties file and 
+
+* a user opens iteraplan with this URL, the generation of the bookmark links work fine (http://example.com/iteraplan/graphical...)
+* a user opens iteraplan with an other URL, e.g. localhost:8080 or by IP address, this address is used for bookmark link generation (http://localhost:8080/iteraplan... or http://192.168.1.1/iteraplan ..)
+
+The link generation for building blocks always uses the URL specified in iteraplan.properties and as a fallback the URL from the current request. This behavior has been applied to the generation for bookmark links for graphical reports too. "																																																						

@@ -1,0 +1,2 @@
+Showing ErrorMessage also inline where not applicable	"Currently in Elements with BusinessMappings the ErrorMessages are also shown inline above BusinessMappings.
+This should only happen for the error related to the BusinessMapping, not all errors"		Bug	iteraplan PO	31/Aug/11 2:53 PM	04/Sep/11 6:48 PM														04/Sep/11 6:48 PM;kvo;unwichtige Kosmetik																																																						

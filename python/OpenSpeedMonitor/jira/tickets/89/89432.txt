@@ -1,0 +1,7 @@
+Plugin API for model write operations	"See IPTT-7 for details which information should be available in the API.
+
+Model has to be cloned (with clone() method) before it is put into the adapter.
+
+
+
+Don't forget _tests_, _logging_, _exception handling_ !"		New Feature	iteraplan Thunderduck	05/Jul/16 10:22 AM	01/Aug/16 4:29 PM																																																																				

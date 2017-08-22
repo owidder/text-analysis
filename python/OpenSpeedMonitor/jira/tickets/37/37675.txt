@@ -1,0 +1,29 @@
+job/create view ist kaputt	Da funktioniert nichts mehr :(		Bug	OpenSpeedMonitor	14/Apr/15 12:03 AM	16/Apr/15 4:42 PM														14/Apr/15 12:03 AM;nku;Kannst Du bitte nachsehen, was da kaputt gegangen ist	14/Apr/15 10:21 AM;rkr;Ich kann das nicht reproduzieren. Bei mir lokal (mit einer up-to-date Version) arbeitet der Create View für Jobs normal. Kannst Du genauer spezifizieren, in welchem Browser das Problem auftritt, was genau statt der erwarteten Funktion geschieht und mit welcher Revision Du das Problem festgestellt hast? Bitte in Zukunft gerne gleich so ausführlich beschreiben, damit ich mir diese Rückfrage spare.	"14/Apr/15 4:06 PM;nku;Sorry, war gestern etwas gestresst aufgrund der Vorbereitung des Vortrags und als ich dann zu später Stunde gemerkt habe, dass ich keine deployte Version habe, in der ich zu Demonstrations-Zwecken einen Job anlegen kann war ich etwas genervt. Geht nicht gegen Dich.
+
+
+
+Unter http://openspeedmonitor.wpt.iteratec.de/job/create kannst Du das Problem sehen. Hier ist der aktuelle HEAD deployt.
+
+Da muss ein Javascript-Fehler beim Aufbau der Seite auftreten, denn nichts, was auf Javascript beruht funktioniert mehr:
+
+* cron-Ausdruck wird gar nicht mehr angezeigt, man kann auch keinen mehr eintragen und deshalb kann man auch keinen Job mehr speichern.
+
+* selects für die Auswahl der Connectivity funtioneren nicht mehr
+
+* jquery choosen select (Zur Auswahl des zu verwendenden Skripts) funktioniert nicht"	14/Apr/15 4:57 PM;rkr;Ich kann es mir unter der URL leider nicht anschauen weil ich keinen Account habe. Gib mir bitte Zugangsdaten, damit ich da drankomme.	"15/Apr/15 11:30 AM;nku;Zugangsdaten:
+
+user=admin
+
+pw=s4agG5vmJrTj
+
+
+
+Bitte installiere Dir Teamdrive (ähnlich dropbox nur mit client-seitiger Verschlüsselung) und keepass, dann kann ich Dich zu einem Space einladen.
+
+Wir haben für wpt und Infrastruktur-Themen eine gemeinsame keepass Datei. Können wir uns dann am Freitag ansehen (wenn Du die beiden genannten Tools installiert hast)."	"15/Apr/15 2:21 PM;rkr;-Ich kann lokal nur nachvollziehen, daß man keinen cron-Ausdruck eintragen und speichern kann, sofern vorher keiner vorhanden war.-
+
+
+
+Die JS-Funktion getExecutionScheduleSetButInactiveLabel aus views/Job/edit.gsp fehlt in den Daten, welche vom Server ausgeliefert werden. -Ich kann die Probleme lokal nicht reproduzieren.-"	"16/Apr/15 4:06 PM;nku;Fehler tritt in der aktuellen Version auch noch auf:
+
+http://dev.openspeedmonitor.wpt.iteratec.de/job/create"	16/Apr/15 4:43 PM;rkr;Habe das dort fehlende Script-Tag von Job/edit.gsp rüberkopiert.																																															

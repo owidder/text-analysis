@@ -1,0 +1,19 @@
+Job-Schedule-Ansicht: Angezeigten Zeitraum konfigurierbar machen	"Aktuell werden immer die Job-Ausführungen der kommenden 24 Stunden angezeigt. Wäre super, wenn man wählen könnte zwischen den folgenden Einstellungen:
+
+
+
+* 1 Stunde
+
+* 2 Stunden 
+
+* 4Stunden
+
+* 6 Stunden 
+
+* 12 Stunden
+
+* 24 Stunden
+
+
+
+Default sollten 6 Stunden sein, denke ich. Idealerweise kann man das konfigurieren."		Task	OpenSpeedMonitor	23/Oct/15 12:07 PM	28/Oct/15 2:45 PM																																																																				

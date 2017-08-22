@@ -1,0 +1,17 @@
+Manual tests	"testlink-credentials:
+
+
+
+[http://iteraplan.iteratec.de/testlink]
+
+
+
+User: iteraplan-Tester
+
+ PW: iteraplan
+
+
+
+Please add name of your browser to the test title.
+
+And leave a comment with result."		Task	iteraplan Speedbird	13/Jun/17 5:04 PM	22/Jun/17 10:20 AM																																																																				

@@ -1,0 +1,17 @@
+New error messages for user list	"Administration >> Users and Groups
+
+
+
+While editing / deleting users, error messages should appear:
+
+ * in case when it is not possible to delete user (because the user is part of a responsibility attribute)
+
+ ** User can't be deleted. (german: Der Anwender kann nicht gelöscht werden.)
+
+ * in case when there is user with same name
+
+ ** User name already exists. (german: Der Name des Anwenders ist bereits vergeben.)
+
+
+
+Show it as red alert message."		Improvement	iteraplan Speedbird	19/Apr/17 1:31 PM	16/May/17 1:54 PM																																																																				

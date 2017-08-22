@@ -1,0 +1,9 @@
+Toolarea View Model Builder	"*Summary:*
+
+Create a Toolarea View Model Builder for the IFD. This builder builds toolarea items for the toolarea. The toolarea items have content, style and a clickFunction.
+
+
+
+*Architecture:*
+
+This builder builds its toolarea items based on the ifdConfiguration. The ifdConfiguration is injected by toolAreaController (from the commonHeaderController and the coordinationService)."	47838	Sub-task	iteraplan PO	20/Jul/15 10:47 AM	28/Jul/15 3:37 PM					ifd																																																															

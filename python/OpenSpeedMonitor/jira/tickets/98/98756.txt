@@ -1,0 +1,37 @@
+Create a Testsheet for manual testing of Portfolio Diagram	"Create a Testsheet for manual testing of Portfolio Diagram.
+
+
+
+Use the Masterplan Diagram testsheet as template
+
+
+
+Show the result to [~cst]"		Task	iteraplan Speedbird	11/Oct/16 3:59 PM	19/Oct/16 3:25 PM														12/Oct/16 3:09 PM;vadm;Revision #4636: portfolio-test-specification.xlsx	"13/Oct/16 11:29 AM;cst;Hello Vasyl,
+
+
+
+the testsheet looks good. 
+
+I found 4 missing testcases.  
+
+
+
+- One testcase for checking the legend after setting the filters / colors   
+
+- One testcase for User Profiles, e.g. as last point in TC2 clicking on the iteraplan symbol and open the diagram again. Now the last settings for filter and coloring are be loaded. 
+
+- One testcase for ""Rest View"" e.g. in TC3 as first point, to reset the coloring settings and filters. 
+
+
+
+A little tip for the future - you can test when you change the language some functionality not only the download. 
+
+
+
+Greetings,
+
+
+
+Chris 
+
+"																																																					

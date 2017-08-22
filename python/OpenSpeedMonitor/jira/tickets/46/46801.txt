@@ -1,0 +1,1 @@
+Get the data from API using Angular service		46766	Sub-task	iteraplan PO	06/Aug/14 5:22 PM	18/Sep/14 3:44 PM																																																																				

@@ -1,0 +1,1 @@
+Auswahl-Controls in benutzerdefinierten Dashboards ausblendbar machen	Alle Auswahl-Controls sollten in benutzerdefinierten Dashboards ausblendbar sein.		Task	OpenSpeedMonitor	16/Feb/16 10:35 AM	18/Jan/17 2:28 PM																																																																				

@@ -1,0 +1,19 @@
+Marker-Selektion	"Ideen sammeln, wie die Zusatzinfos zum Marker angezeigt werden können
+
+Optionen:
+
+- Antippen
+
+- richtige Distanz
+
+- Menüauswahl
+
+- ?
+
+
+
+=> Variante prototypisch umsetzen und entscheiden"		Task	EAMV15	20/Nov/15 5:22 PM	15/Dec/15 10:17 AM														"07/Dec/15 11:39 AM;fbe;umgesetzte Variante: 
+
+Bei Bildschrimberührung werden die Infoboxen aller Sensoren aufgeklappt.
+
+"	15/Dec/15 10:17 AM;fbe;manuelle Auswahl, sowie Autofocus umgesetzt																																																					

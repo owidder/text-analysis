@@ -1,0 +1,4 @@
+Nesting Cluster Diagram: improve robustness	"To improve:
+
+ * Escaping: At the moment you cannot create Nesting Cluster diagrams with elements containing umlauts or other special characters in their names, as the result is a malformed document.
+ * Selecting BusinessMappings for outer or inner the element types results in an error page when creating the diagram: NullPointerException because BusinessMappings don't have a ""name"". Should they even be selectable here?"		Improvement	iteraplan PO	15/Nov/11 1:18 PM	27/Dec/11 4:25 PM					cluster	nesting	VBB	visualization						21/Nov/11 5:32 PM;vsh;OK.	21/Dec/11 4:12 PM;csh;Older versions of IE stall, if color is changed.																																																					

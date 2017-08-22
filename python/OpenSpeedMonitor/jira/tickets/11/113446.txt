@@ -1,0 +1,67 @@
+New text-type input	"*Summary:*
+
+
+
+Updatig text-type input except for lastModificationUser, lastModificationTime, Id (not editable)
+
+
+
+*Scope:*
+
+ * Buttons for action on chosen / all rows:
+
+ ** Set (german: Setzen) - change existing description to the new one
+
+ ** Append (german: Hinzufügen) - add text at the end, do not delete existing description
+
+ ** Prepend (german: Voranstellen) - add text at the beginning, do not delete existing description
+
+ ** Clear (german: Löschen) - remove existing description and leave fields empty (except for Name - not null)
+
+ * need to distinguish single- and multi-line values
+
+ ** for single-line values there is only possibility to add a single line
+
+ ** for multi-line values we need a text-box for longer input
+
+ * an [x] to cancel input
+
+ ** should be located next to input field (top right corner)
+
+ ** action for this button - closes input field and shows default view of a mass update
+
+ * Dialog [#IPTS-609] should appear 'Do you want to update chosen data?' ('Möchten Sie die ausgewählten Daten aktualisieren?')
+
+ ** Yes / No (german: Ja / Nein) answer
+
+ * after update shows summary screen [#IPTS-609]
+
+ * validation - input must string value
+
+
+
+*UI:*
+
+ * {color:#333333}after clicking input field in order to edit, shows all buttons in one row{color}
+
+ * {color:#333333}Underneath the text field there should be located buttons to implement action (described in [#IPTS-640]){color}
+
+ ** use primary text button for action *set*
+
+ ** {color:#333333}use seconadry text button for other actions{color}
+
+ * {color:#333333}loading dialog{color}
+
+ * mass update still active after reloading the list"		New Feature	iteraplan Speedbird	28/Feb/17 3:13 PM	24/Mar/17 2:04 PM														"16/Mar/17 4:09 PM;roia;{quote}Buttons for action on chosen
+
+{quote}
+
+[~mkt], [~msr], are that icons or text buttons? please, specify what icons should be used and translations
+
+
+
+ "	"22/Mar/17 2:32 PM;roia;[~mkt], [~msr], do we really need both ""Set"" and ""Clear"" buttons?
+
+
+
+Can't we leave the input blank and click [Set] and this would do the same job as ""Clear"" does."	24/Mar/17 2:04 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-462																																																				

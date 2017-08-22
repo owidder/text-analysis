@@ -1,0 +1,33 @@
+Create Mapping-Table for legacy-url-parameters	"* Create a Mapping-Table ({oldKey, oldValue} : {toBeTransformedToNewKey, toBeTransformedToNewValue}) for all attached changes
+
+* Connect it to the common legacy-url-parameter-service (IPTS-523)
+
+
+
+List of all old keys:
+
+
+
+* new Colorpicker has new url-parameters? [~vadm]
+
+* new *coloring* has new url-parameters [~dmkh]
+
+** Added coloring with use of decorator factory in NCD & IFD
+
+** Added user ranges coloring
+
+* ""*Include ISs connected over interface..*"" moved to Combined Filter [~dmkh]
+
+* new *Line type by* functionality for LSD, IFD (new line types by user defined ranges) [~dmkh] , [~mash]
+
+* new LSD level filter parameters (combined filter was changed); [~viol]
+
+* new CCD level filter parameters and combined filter parameters(updated)  [~viol]
+
+* IPTS-471 - some not working URLs could start working in release 5.5 [~roia]
+
+* IPTS-505 - Boolean filter added to Combined filter  [~mash]
+
+* Hierarchical names option was added to LSD and IFD  [~mash]
+
+* LSD architecture refactoring changed url parameters ?   [~mash]"	110038	Sub-task	iteraplan Speedbird	31/Jan/17 5:15 PM	09/Feb/17 3:15 PM																																																																				

@@ -1,0 +1,33 @@
+Excel Export: First Export Attempt after Datasource Switch Fails	"After logging into iteraplan, I switched the datasource (from MASTER to CZ) and attempted an Excel export. The export fails.
+
+The follwoing information is from the {{iteraplan-3.0.4.log}}:
+{code}
+[ERROR] 12-Jul-2013 09:27:42 [exchange.elasticeam.IteraplanMetamodelAndModelLoader] IteraQl model and data loading failed
+java.lang.IllegalStateException: Target data source for lookup key [CZ] cannot be determined.
+	at de.iteratec.iteraplan.persistence.RoutingDataSource.determineTargetDataSource(RoutingDataSource.java:360)
+	at de.iteratec.iteraplan.persistence.RoutingDataSource.getConnection(RoutingDataSource.java:199)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:446)
+	at org.hibernate.jdbc.ConnectionManager.getConnection(ConnectionManager.java:167)
+	at org.hibernate.jdbc.JDBCContext.connection(JDBCContext.java:160)
+	at org.hibernate.transaction.JDBCTransaction.begin(JDBCTransaction.java:81)
+	at org.hibernate.impl.SessionImpl.beginTransaction(SessionImpl.java:1473)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.IteraplanMetamodelAndModelLoader.call(IteraplanMetamodelAndModelLoader.java:100)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.IteraplanMetamodelAndModelLoader.call(IteraplanMetamodelAndModelLoader.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ] 12-Jul-2013 09:27:42 [businesslogic.service.DataSourceServiceImpl] Validating data source with the key 'CZ'.
+[INFO ] 12-Jul-2013 09:27:42 [businesslogic.service.DataSourceServiceImpl] Retrieving data source for the lookup key 'CZ'
+[INFO ] 12-Jul-2013 09:27:42 [iteraplan.persistence.RoutingDataSource] Adding key 'CZ' to the map of data sources.
+[ERROR] 12-Jul-2013 09:27:45 [elasticeam.concurrent.GlobalMetamodelAndModelManager] The execution of a load task has failed with an ExecutionException: 
+ java.util.concurrent.ExecutionException: de.iteratec.iteraplan.elasticeam.exception.ElasticeamException: IteraQl model and data loading failed: 
+java.lang.IllegalStateException: Target data source for lookup key [CZ] cannot be determined.
+{code}
+
+After clearing the session and re-attempting an export it is successful. Looks like the data source was accessed before it was validated."		Bug	iteraplan PO	12/Jul/13 9:39 AM	19/Aug/14 11:30 AM					excel	export								"15/Jul/13 6:18 PM;sry;After logging in (and switching data sources), iteraplan generates an in-memory (elastic) data model representation of the current data source contents in the background. This may take a few seconds, depending on the number of elements in that data source. Before that process has finished, you cannot perform any actions that require the elastic data model, i.e. Excel import/export, iteraQl query console and Nesting cluster diagrams.
+Please allow some time for loading the data before you trigger such actions.
+
+I see that the exception log entry occurs before the data source is actually validated. Does it have any visible negative effects, if you allowed for some time after data source switching?"	01/Aug/14 6:22 PM;fka;Is this still applicable?																																																					

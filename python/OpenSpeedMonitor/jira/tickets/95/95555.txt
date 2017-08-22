@@ -1,0 +1,19 @@
+Cannot delete all elements using Import	"_Reproduce (with sample data):_
+
+# Export empty Excel template
+
+# Import template with overwrite strategy
+
+
+
+_Expected:_ Successful import, all building blocks deleted afterward
+
+_Actual:_ Error during import, all building blocks remain
+
+
+
+Issue seems to be when PositionUpdater handles building blocks which are to be deleted.
+
+
+
+_Solution:_ Remove unnecessary handling of building blocks which are to be deleted from PositionUpdater"		Bug	iteraplan Thunderduck	08/Sep/16 10:55 AM	08/Sep/16 2:40 PM					import	position																																																														

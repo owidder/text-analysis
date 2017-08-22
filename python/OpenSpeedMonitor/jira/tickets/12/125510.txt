@@ -1,0 +1,21 @@
+Global Search and additional columns	"One of our customers want the option to add columns for the global search. 
+
+
+
+In his example he searches for e.g. ""SAP"" and want add the column ""responsible"" for the search result. 
+
+
+
+Now he can see all results for SAP and the associated ""responsible"". 
+
+
+
+ "		New Feature	iteraplan PO	27/Jun/17 10:37 AM															"12/Jul/17 5:25 PM;msr;[~cst]: The user flow was meant to be as follows:
+
+1. The user searchs for ""SAP""
+
+2. Then he takes over the result set to the Building Block List and can add any column there.
+
+
+
+Could this be a workaround?"																																																						

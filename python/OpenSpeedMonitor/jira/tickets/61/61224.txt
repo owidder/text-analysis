@@ -1,0 +1,1 @@
+Job-Queue-Darstellung: X-Achse auch oben	Bitte die X-Achse mit der Zeit oberhalb jedes Diagramms duplizieren.		Task	OpenSpeedMonitor	23/Oct/15 11:49 AM	26/Oct/15 11:56 AM																																																																				

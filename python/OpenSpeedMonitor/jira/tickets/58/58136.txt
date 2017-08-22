@@ -1,0 +1,1 @@
+Persistenz Gewichtungs-Matrix	Es muss eine Domain für das Gewicht pro Kombination Browser / ConnectivityProfile eingeführt werden.		New Feature	OpenSpeedMonitor	24/Sep/15 1:36 PM	13/Nov/15 10:11 AM																																																																				

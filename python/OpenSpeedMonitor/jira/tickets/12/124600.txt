@@ -1,0 +1,5 @@
+Refactore the header line for the list, maybe also for the diagrams	"At the moment the code for the headers of the list is not very clear, as a lot of functionality moved for the lower row to the upper row.
+
+
+
+It would be good if the header for list an diagrams where seperated (the code below the first row containing the ""iteraplan"" and the user) and the functions are accordingly moved."		Improvement	iteraplan PO	16/Jun/17 9:53 AM																																																																					

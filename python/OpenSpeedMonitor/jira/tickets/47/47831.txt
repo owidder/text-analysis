@@ -1,0 +1,7 @@
+Problem with Date format in history initialization scripts 	"The parte of ""…TO_DATE('01-JAN-1970','DD-MON-YYYY')…"" for the history initialization in the scripts migrattion_iteraplan_340_to_500_oracle.sql and iteraplan_5.0_initialize_history_oracle.sql cause problems by a customer in Canada. 
+
+The recommendation is to use NLS_DATE_FORMATs independent like DD/MM/YYYY.
+"		Bug	iteraplan PO	16/Jun/15 4:04 PM	23/Jun/15 3:35 PM														"22/Jun/15 4:29 PM;isc;* SQL scripts for Oracle updated
+* important note for sql scripts updated
+* sql scripts uploaded http://www.iteraplan.de/wiki/pages/viewpageattachments.action?pageId=28475480"	23/Jun/15 3:34 PM;fam;Adjusted date format also for migration script	"23/Jun/15 3:35 PM;fam;Solution fits the problem.
+Ticket closed."																																																				

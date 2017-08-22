@@ -1,0 +1,1 @@
+Löschen von zusätzlichen Messreihen	In der Karte "SelectMeasuring" auf der Seite pageAggregation/show können neue Messreihen hinzugefügt, aber nicht wieder entfernt werden.		Task	OpenSpeedMonitor	01/Dec/16 10:05 AM	05/Dec/16 2:50 PM																																																																				

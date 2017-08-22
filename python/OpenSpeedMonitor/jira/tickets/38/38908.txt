@@ -1,0 +1,51 @@
+Performance Rickshaw-Slider	"Der Slider ist zu langsam. In der live-OTTO-Umgebung kann man den Slider bei vier Kurven und 3 Tagen im Diagramm nicht mehr sinnvoll benutzen:
+
+https://iteraspeedmonitor.otto.wpt.iteratec.de/eventResultDashboard/showAll?selectedInterval=-1&selectedTimeFrameInterval=259200&from=24.04.2015&fromHour=10%3A30&to=27.04.2015&toHour=10%3A30&selectedFolder=2&selectedPages=1&_selectedAllBrowsers=&selectedAllBrowsers=on&_selectedAllMeasuredEvents=&selectedAllMeasuredEvents=on&_selectedAllLocations=&selectedAllLocations=on&selectedAggrGroupValuesUnCached=docCompleteTimeInMillisecsUncached&trimBelowLoadTimes=&trimAboveLoadTimes=&trimBelowRequestCounts=&trimAboveRequestCounts=&trimBelowRequestSizes=&trimAboveRequestSizes=&_action_showAll=Anzeigen&selectedChartType=0
+
+
+
+Bitte analysieren, was hier so viel Performance schluckt und optimieren."		Bug	OpenSpeedMonitor	27/Apr/15 11:07 AM	23/May/16 4:41 PM														27/Apr/15 3:13 PM;rkr;Performance ist okay wenn genug RAM frei ist. Reicht das als Lösung?	"28/Apr/15 1:06 PM;nku;Sorry, aber mein Rechner hat 16 GB RAM und ich kann das Zoomen nicht sinnvoll nutzen. Das Ausführen des Javascripts zum Zoomen im Browser sollte meinen Rechner nicht an den Rande seiner Leistungsfähigkeit bringen. 
+
+
+
+Bitte debuggen/analysieren, was beim zoomen mittels Mini-Map so lange dauert."	28/Apr/15 5:57 PM;rkr;Bei mir sind es nur 8GB und es läuft gut. Erst bei neun Kurven und vier Wochen (> 18.000 Datenpunkten und > 3,5MB Daten) reagiert der Slider nicht mehr in Echtzeit. Gib mir bitte eine genauere Beschreibung von Deinen Aktionen mit dem Diagramm (und auch vor Aufruf des Diagramms), damit ich das reproduzieren kann.	"29/Apr/15 10:31 AM;rkr;Status:
+
+ * offizieller Patch eingebaut: https://github.com/shutterstock/rickshaw/issues/470 (Der Graph wird jetzt nur aktualisiert, nachdem man den Slider wieder losgelassen hat.)
+
+ * Performance mit Firebug analysiert und an diversen Bottlenecks optimiert.
+
+
+
+Kannst Du mal schauen ob es jetzt besser läuft?"	"04/May/15 11:30 AM;rkr;Tritt nach nochmaliger Prüfung nur im Firefox auf. Unter Linux offensichtlich auch noch stärker als unter Windows. 
+
+
+
+TODO:
+
+* Patch bitte wieder ausbauen.
+
+* Auskommentierte Funktions-Aufrufe rausnehmen
+
+* Analyse Performance-Probleme Firefox: 
+
+** Welche JS-Funktion dauert hier so lange/länger als in den anderen Browsern?
+
+** Kann man da was dran machen?"	"04/May/15 11:43 AM;rkr;Status:
+
+* Erledigt:
+
+** Patch bitte wieder ausbauen.
+
+** Auskommentierte Funktions-Aufrufe rausnehmen
+
+* Noch offen:
+
+** Analyse Performance-Probleme Firefox: 
+
+*** Welche JS-Funktion dauert hier so lange/länger als in den anderen Browsern?
+
+*** Kann man da was dran machen?"	"23/May/16 4:41 PM;bka;Bug ist auch im Firefox nicht mehr reproduzierbar.
+
+
+
+Scheinbar wurde das Problem durch ein Firefox-Update behoben."																																																

@@ -1,0 +1,9 @@
+Ab und zu treten StaleObjectStateExceptions auf beim Persistieren von Results	"Der folgende StackTrace wird dann auch in der Job-Liste angezeigt.
+
+{code}
+
+Error: Object of class [de.iteratec.osm.measurement.schedule.Job] with identifier [470]: optimistic locking failed; nested exception is org.hibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [de.iteratec.osm.measurement.schedule.Job#470]
+
+{code}
+
+Beobachtet bei OTTO. Tritt erst seit der Umstellung des Transaktions-Handlings in LocationAndResultPersisterService und JobProcessingService auf."		Bug	OpenSpeedMonitor	12/Apr/16 4:35 PM	18/Jan/17 3:35 PM																																																																				

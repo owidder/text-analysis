@@ -1,0 +1,9 @@
+List view Edit for number values	"- use Edit Service
+
+- check if we need custom directive for edit"	101339	Sub-task	iteraplan Thunderduck	03/Nov/16 11:29 AM	14/Nov/16 10:09 AM														09/Nov/16 2:43 PM;mse;The same editor directive as for text will also be used for numbers. The directive is realized in IPTT-220.	"10/Nov/16 1:30 PM;ach;some notes:
+
+- id column not should be editable (sfe: all integer columns)
+
+- format after changing (e.g. new value 5 should be shown as 5.00 (or 5,00 for german loc.))"	"11/Nov/16 10:43 AM;mse;* Integer columns cannot be edited now
+
+* The number is formatted correctly now after editing (both in German and English locale)"																																																				

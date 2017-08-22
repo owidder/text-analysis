@@ -1,0 +1,17 @@
+UX Verbesserungen DetailAnalysis	"Sollte noch in Tickets geschnitten werden:
+
+
+
+* Statt ""records selected"" sollten ""assets selected"" da stehen. Also direkt multipliziert mit der Anzahl der Assets hinter jedem Punkt
+
+* Der Tooltip sollte die Anzahl der Assets und den aktuellen Wert beinhalten
+
+* Der Tooltip sollte ggf. auch die Assets die dahinter stehen Laden
+
+* Man sollte die y-Achse eingrenzen können, da Ausreißer die Skalierung so zerreißen können, dass man sonst nichts mehr nennenswertes erkennen kann.
+
+* Graue Farben sollten nicht in den Torten vorkommen, da diese schlecht con nicht-ausgewählten Tortenstücken unterschieden werden können
+
+* Es sollte ein Link zum passenden WPT-Wasserfall für die Assets bereitgestellt werden. Im Tooltip und unten drunter, wenn man auf ein Asset klickt.
+
+* Dies Auswahl der Ergebnisse sollte direkt über die OSM DA Seite erfolgen können."		Story	OpenSpeedMonitor	16/Nov/16 4:36 PM																																																																					

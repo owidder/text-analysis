@@ -1,0 +1,101 @@
+Anwendung startet nicht mit neuer Datenbank	"Wir scheinen eine Inkonsistenz in den Liquibase-Changelogs zu haben:
+
+
+
+{code}
+
+util.JDBCExceptionReporter Feld ""THIS_.password"" nicht gefunden
+
+Column ""THIS_.password"" not found; SQL statement:
+
+select this_.id as id1_0_, this_.version as version1_0_, this_.account_expired as account3_1_0_, this_.account_locked as account4_1_0_, this_.enabled as enabled1_0_, this_.""password"" as password6_1_0_, this_.password_expired as password7_1_0_, this_.username as username1_0_ from user this_ where this_.username=? limit ? [42122-176]
+
+context.GrailsContextLoaderListener Error initializing the application: could not execute query; SQL [select this_.id as id1_0_, this_.version as version1_0_, this_.account_expired as account3_1_0_, this_.account_locked as account4_1_0_, this_.enabled as enabled1_0_, this_.""password"" as password6_1_0_, this_.password_expired as password7_1_0_, this_.username as username1_0_ from user this_ where this_.username=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [select this_.id as id1_0_, this_.version as version1_0_, this_.account_expired as account3_1_0_, this_.account_locked as account4_1_0_, this_.enabled as enabled1_0_, this_.""password"" as password6_1_0_, this_.password_expired as password7_1_0_, this_.username as username1_0_ from user this_ where this_.username=?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:105)
+
+	at BootStrap.createUser(BootStrap.groovy:170)
+
+	at BootStrap.initUserData(BootStrap.groovy:156)
+
+	at BootStrap$_closure3.doCall(BootStrap.groovy:81)
+
+	at BootStrap$_closure1.doCall(BootStrap.groovy:59)
+
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:327)
+
+	at grails.util.Environment.executeForEnvironment(Environment.java:320)
+
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:296)
+
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+
+	at java.lang.Thread.run(Thread.java:745)
+
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+
+	... 12 more
+
+Caused by: org.h2.jdbc.JdbcSQLException: Feld ""THIS_.password"" nicht gefunden
+
+Column ""THIS_.password"" not found; SQL statement:
+
+select this_.id as id1_0_, this_.version as version1_0_, this_.account_expired as account3_1_0_, this_.account_locked as account4_1_0_, this_.enabled as enabled1_0_, this_.""password"" as password6_1_0_, this_.password_expired as password7_1_0_, this_.username as username1_0_ from user this_ where this_.username=? limit ? [42122-176]
+
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+
+	at org.h2.message.DbException.get(DbException.java:178)
+
+	at org.h2.message.DbException.get(DbException.java:154)
+
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:148)
+
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+
+	at org.h2.command.dml.Select.prepare(Select.java:831)
+
+	at org.h2.command.Parser.prepareCommand(Parser.java:248)
+
+	at org.h2.engine.Session.prepareLocal(Session.java:442)
+
+	at org.h2.engine.Session.prepareCommand(Session.java:384)
+
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188)
+
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:276)
+
+	... 12 more
+
+{code}"		Bug	OpenSpeedMonitor	17/Feb/16 11:33 AM	18/Feb/16 2:59 PM														"17/Feb/16 4:38 PM;nku;Folgende Fälle:
+
+
+
+*Es existiert eine bestehende Datenbank mit einem Feld user.password*
+
+
+
+Wir fügen ein neues Changeset hinzu zum Umbenennen des Feldes: user.password->user.passwd.
+
+
+
+*Die Anwendung wird ohne bestehende Daten neu gestartet mit relationaler DB wie z.B. MySQL*
+
+
+
+Wir fügen ein neues Changeset hinzu zum Umbenennen des Feldes: user.password->user.passwd.
+
+
+
+*Die Anwendung wird ohne bestehende Daten neu gestartet mit H2*
+
+
+
+Für diesen Fall prüft @bwo, ob ein Rename in einem neuen Changeset funktioniert."																																																						

@@ -1,0 +1,27 @@
+Wrong bubble sizes	"*Summary*:
+
+In some cases Enum sizing for bubbles is wrong in Portfolio diagram
+
+
+
+*Steps to reproduce:*
+
+1) Open default Portfolio diagram
+
+2) Set Accountability for X axis and Complexity as Y axis
+
+3) Set filter ""name contains CRM""
+
+4) Set Size by Complexity
+
+
+
+*Actual result:* 
+
+CRM #3.2 element in the bottom is bigger then cell for it (see attached screenshot)
+
+
+
+*Expected result: *
+
+All bubbles are contained in corresponded cells on grid"		Bug	iteraplan PO	14/Jul/17 9:37 AM																																																																					

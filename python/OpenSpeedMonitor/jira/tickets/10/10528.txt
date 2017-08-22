@@ -1,0 +1,4 @@
+Listenansicht EventResults erstellen	Detail-Auflistung der EventResults wie im WPTMonitor. Als Filter benötigen wir die 5 selects vom CSI-Dashboard und ein von/bis (Datum).		Task	OpenSpeedMonitor	16/Sep/13 10:35 AM	05/Nov/13 3:41 PM														"19/Sep/13 9:51 AM;nkuhn;Wenn sehr viele JobResults/EventResults angezeigt werden, könnten wir ein Problem bekommen.
+Möglicherweise brauchen wir Pagination (ggf. Client-seitig).
+
+Wird jetzt noch nicht realisiert. Maximal einmal  mit vielen Daten aufrufen und testen."																																																						

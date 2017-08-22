@@ -1,0 +1,15 @@
+Search causes error and shows incomplete results	"Go to the search tab and try to search one of the three following words:
+
+* cla
+
+* eam
+
+* broker
+
+
+
+CURRENTLY: incomplete search results (see attached)
+
+EXPECTED: full search results
+
+"		Bug	iteraplan Speedbird	23/May/17 1:59 PM	08/Jun/17 11:27 AM														23/May/17 5:01 PM;fka;Currently not reproducible	08/Jun/17 11:27 AM;fka;Still not reproducible																																																					

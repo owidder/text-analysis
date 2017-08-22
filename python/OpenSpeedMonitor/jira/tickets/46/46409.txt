@@ -1,0 +1,7 @@
+Include separate AtomicDataType.DateTime	"Currently, the elasticMi core contains the AtomicDataType as a single representation of date and dateTime. This implies the parallell usage of this DataType for both
+* Dates with a daily granularity (e.g. Project.rolloutDate)
+* Dates with a granularity of (milli/)seconds (e.g. *.lastModificationTime)
+
+In order to provide a clear separation of these data types, we should 
+# add a second DataType (like ""Time"", ""DateTime"", or sth. similar)
+# ensure a consistent usage among the elasticMi modules"		New Feature	iteraplan PO	14/Jan/14 3:33 PM	23/Jan/14 10:04 AM					core	elasticmi	valuetype							23/Jan/14 1:23 PM;fka;Ticket closed																																																						

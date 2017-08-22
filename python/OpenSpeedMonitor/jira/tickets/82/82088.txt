@@ -1,0 +1,77 @@
+Create legend for Masterplan Diagram	"*Summary:*
+
+Create the legend for the Masterplan Diagram.
+
+
+
+*As-Is:*
+
+* No Legend exists
+
+
+
+*To-Be:*
+
+* Legend displays actual configuration
+
+
+
+*Affected JS-Files:*
+
+* mpdLegendBuilder
+
+* mpdLegendMai
+
+* mpdLegendController
+
+
+
+*Implementation Details:*
+
+* Ensure the legend displays the actual configuration
+
+* Use GoJS
+
+* At the moment: Display the actual Building Block Types for all level set in the configuration
+
+
+
+*UI:*
+
+* Talk to [~msr] *before* starting this ticket
+
+* Use boxes in the style:
+
+** Level 1:
+
+** [Building Block Type for Level 1]
+
+** Level 2: (if exists)
+
+** [Building Block Type for Level 2]
+
+** Level 3: (if exists)
+
+** [Building Block Type for Level 3]
+
+
+
+*Acceptance Criteria:*
+
+* The user opens the Masterplan Diagram
+
+* The legend is displayed on the right top next to the diagram
+
+* It displays the actual configuration
+
+"		New Feature	iteraplan PO	26/Apr/16 3:35 PM	20/May/16 3:57 PM														"04/May/16 2:59 PM;mada;- split responsibility to build legend
+
+- class MpdLegendContextBuilder build legend context based on MpdConfiguration
+
+- class MpdLegendBuilder build legend with GoJS based on legend context
+
+- add unit tests"	"20/May/16 3:57 PM;abo;Closing the ticket, because review-comments are only minor improvements (not flaws).
+
+Please have still a look at the review-comments here: https://iteraweb.iteratec.de/fisheye/cru/IP-4
+
+(and make fixes with the Jira-Ticket-ID)"																																																					

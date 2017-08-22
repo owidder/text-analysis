@@ -1,0 +1,10 @@
+NCD: Wrong behavior for saving action with empty diagram name	"Steps to reproduce:
+1. Go to NCD page
+2. Click on ""Save/Share"" button
+3. Remove existed diagram title
+4. Enter multiple whitespace
+5. Click ""Save""
+Actual: Diagram was saved with uncorrect name
+Expected: Diagram can't be saved without name"		Bug	iteraplan PO	18/Mar/15 4:15 PM	19/Jan/16 1:56 PM														"15/Apr/15 10:46 AM;wfr;Recommendation: defer
+
+wrong, but avoidable"																																																						

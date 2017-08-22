@@ -1,0 +1,14 @@
+Multiline text attribute values can cause problems in Cluster Diagram	"_Reproduce (with sample data, on a windows pc):_
+# Create a new multiline text attribute in iteraplan and assign it for example to Business Processes
+# Download Excel data
+# In the Excel file, enter a value with several lines for the text attribute in at least one Business Process
+# Import the Excel file
+# Create a new Cluster Diagram (not nesting cluster) for Business Processes
+# On the second configuration page, check the checkbox in front of the row for the text attribute
+# Click ""Generate Diagram""
+
+_Expected:_ Diagram created and offered for download
+_Actual:_ Technical error page
+
+_Reason:_ The attribute value is used as key in a map for color selection. Setting the multi line value using Excel import apparently writes a single ""newline"" character as separator of the different lines. In the html code however, the line break is represented by a ""newline - carriage return"" combination, at least on my windows pc.
+On form submit, the value in the html code is used to access the map. That's why on submit for diagram generation the color mapping entry is not found and an exception happens."		Bug	iteraplan PO	25/Sep/14 2:36 PM	01/Oct/14 1:40 PM					color																																																															

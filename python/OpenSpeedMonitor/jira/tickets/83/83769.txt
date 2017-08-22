@@ -1,0 +1,11 @@
+selection	"Add a checkbox to the list item.
+
+
+
+Tbd:
+
+* How to remember the checked items if they disappear in the virtual repeat nirvana?
+
+* How should checked and filtered items been handled?
+
+* Check usability of checking the 500th item and the 1000th item. The user has to scroll to the checked items by hand. Is there an easier solution? (Maybe add a list of checked items?)"		New Feature	iteraplan PO	10/May/16 12:55 PM	20/Jul/16 9:39 AM														20/Jul/16 9:39 AM;fka;Checkboxes will be addressed when we implement the mass edit feature.																																																						

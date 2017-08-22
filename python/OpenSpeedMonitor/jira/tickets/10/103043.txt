@@ -1,0 +1,87 @@
+Adresse admins@iteratec.de nicht mehr erreichbar	"Ich bekomme folgende Antwort vom Mailserver:
+
+
+
+{noformat}
+
+Fehler bei der Nachrichtenzustellung an folgende Empfänger oder Gruppen:
+
+admins
+
+Die eingegebene E-Mail-Adresse konnte nicht gefunden werden. Überprüfen Sie die E-Mail-Adresse des Empfängers, und versuchen Sie, die Nachricht erneut zu senden. Wenden Sie sich an den Helpdesk, falls das Problem weiterhin besteht.
+
+
+
+
+
+
+
+
+
+
+
+Diagnoseinformationen für Administratoren:
+
+Generierender Server: CIPEXMB03N1.ci04.de
+
+IMCEAEX-_O=CI04_OU=EXCHANGE+20ADMINISTRATIVE+20GROUP+20+28FYDIBOHF23SPDLT+29_CN=RECIPIENTS_CN=ADMINSDE8465AE460D37F2B5F40E8EF85DCB495DF4A5@ci04.de
+
+Remote Server returned '550 5.1.1 RESOLVER.ADR.ExRecipNotFound; not found'
+
+Ursprüngliche Nachrichtenköpfe:
+
+Received: from CIPEXMB03N2.ci04.de (172.18.1.230) by CIPEXMB03N1.ci04.de
+
+ (172.18.1.229) with Microsoft SMTP Server (TLS) id 15.0.1210.3; Fri, 18 Nov
+
+ 2016 14:14:06 +0100
+
+Received: from CIPEXMB03N2.ci04.de ([fe80::5958:30bb:2135:1fb2]) by
+
+ CIPEXMB03N2.ci04.de ([fe80::5958:30bb:2135:1fb2%21]) with mapi id
+
+ 15.00.1210.000; Fri, 18 Nov 2016 14:14:06 +0100
+
+Content-Type: application/ms-tnef; name=""winmail.dat""
+
+Content-Transfer-Encoding: binary
+
+From: Danny Lade <Danny.Lade@iteratec.de>
+
+To: admins <admins@iteratec.de>
+
+Subject: =?iso-8859-1?Q?Outlook-Webclient:_Kennwort_=E4ndern_nicht_m=F6glich?=
+
+Thread-Topic: =?iso-8859-1?Q?Outlook-Webclient:_Kennwort_=E4ndern_nicht_m=F6glich?=
+
+Thread-Index: AdJBnD58yUM4JcK1Qc6AMaOaZxJbXgAAVWzw
+
+Date: Fri, 18 Nov 2016 14:14:05 +0100
+
+Message-ID: <68a5b06a864e4a2da4754d07bb279ed1@CIPEXMB03N2.ci04.de>
+
+Accept-Language: de-DE, en-US
+
+Content-Language: de-DE
+
+X-MS-Has-Attach: yes
+
+X-MS-TNEF-Correlator: <68a5b06a864e4a2da4754d07bb279ed1@CIPEXMB03N2.ci04.de>
+
+MIME-Version: 1.0
+
+X-MS-Exchange-Transport-FromEntityHeader: Hosted
+
+X-Originating-IP: [80.83.103.98]
+
+Return-Path: Danny.Lade@iteratec.de
+
+{noformat}
+
+"		Task	Infrastruktur	18/Nov/16 2:20 PM	18/Nov/16 3:32 PM	Mailserver													"18/Nov/16 2:33 PM;ehi;Hallo Danny,
+
+kürzlich wurde aus dem öffentlichen Ordner ein echtes Postfach gemacht. Deshalb kann dieser Fehler auftauchen. Bitte lösche die Adresse aus dem Adressen-Cache und tippe sie von Hand nochmal neu ein, dann sollte das funktionieren."	"18/Nov/16 3:31 PM;dla;Ich glaube Cache löschen hat in der Tat geholfen. Will euch jetzt bloss nicht mit einer Testmail belasten.
+
+;-)
+
+"																																																					

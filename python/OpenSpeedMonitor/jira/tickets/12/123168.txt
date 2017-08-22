@@ -1,0 +1,35 @@
+Date Filter improvements (Client)	"1. The open Colorpicker should not overlap with the colorpicker icon.
+
+!image-2017-06-01-13-58-38-286.png|thumbnail! 
+
+
+
+
+
+
+
+2. The remove-icon ""x"" should only remove the date directly left of it (not both):
+
+ !date-removes.png|thumbnail! 
+
+
+
+3. Add the ""leading"" zeros, e.g. 01/01/2017 instead of 1/1/2017 automatically after leaving the editor:
+
+ !missing_0s.png|thumbnail! 
+
+
+
+
+
+4.No other auto-completion features (except for 3)
+
+
+
+5. Start filtering *after* leaving the editor and not before
+
+
+
+6. Ensure that the text field for the operator is wide enough for all German translations. See screenshot: The operator name is cut although there is some white space not used. Please use this white space and try not to extend the width of the box. Please check it for all operator that they are shown:
+
+ !operator_cut.png|thumbnail! "		Improvement	iteraplan Speedbird	01/Jun/17 1:59 PM	13/Jun/17 3:38 PM																																																																				

@@ -1,0 +1,27 @@
+NullPointerException during XLS import	"*Reproduction:*
+
+# Log in as the default user joe.
+# Export the model as Excel File 
+# Import the Excel file. 
+# Assuming you have the bank data loaded, you should safely progress to the step where metamodel changes have been applied.
+
+*Effect:*
+
+* The dry-run step where changes are applied to the model fails with a technical error message.
+* internally, the following null pointer exception occurred: {code}
+Caused by: java.lang.NullPointerException
+	at de.iteratec.iteraplan.elasticeam.derived.AbstractInstanceStore.map(AbstractInstanceStore.java:100)
+	at de.iteratec.iteraplan.elasticeam.derived.AbstractInstanceStore.getValue(AbstractInstanceStore.java:220)
+	at de.iteratec.iteraplan.elasticeam.derived.QueryableModel.getValue(QueryableModel.java:175)
+	at de.iteratec.iteraplan.elasticeam.model.AModelElement.getConnecteds(AModelElement.java:113)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.validator.IteraplanModelValidator.checkForInformationFlowInconsistencies(IteraplanModelValidator.java:107)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.validator.IteraplanModelValidator.validate(IteraplanModelValidator.java:94)
+	at de.iteratec.iteraplan.businesslogic.exchange.common.ImportProcess.validateModel(ImportProcess.java:355)
+	at de.iteratec.iteraplan.businesslogic.exchange.common.ImportProcess.dryRun(ImportProcess.java:245)
+•		at de.iteratec.iteraplan.businesslogic.exchange.elasticExcel.excelimport.ImportServiceImpl.modelDryrun(ImportServiceImpl.java:84)
+{code}
+"		Bug	iteraplan PO	28/Aug/13 9:33 AM	05/Sep/13 4:56 PM					excel	import	permissions							"28/Aug/13 6:37 PM;sry;Suggested workaround: Grant more extensive permissions to the (technical) user that initiates the import process.
+
+The exception seems to be thrown in permission-sensitive part of the Elastic implementation in 3.1, which is problematic in general. I suppose this would require a larger rework of that code. We will need more time to get this right.
+
+For the time being, I would strongly suggest to use the proposed workaround."	05/Sep/13 4:56 PM;sry;Works. Please merge the additional change to the branch as well.	06/Sep/13 11:12 AM;psc;Reviewed. Implementation fixes the issue. Ticket will be closed.																																																				

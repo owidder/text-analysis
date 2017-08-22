@@ -1,0 +1,19 @@
+Show bounds in warning message	"Follow-up ticket for -IPTS-832-
+
+
+
+Please add actual bounds to the warning message for out if bounds values:
+
+ * ""Please enter a value within the bounds {color:#f79232}(bounds){color}"" / ""Bitte geben Sie einen Wert innerhalb der Schranken ein {color:#f79232}(bounds){color}""
+
+
+
+{color:red}UPDATE: {color} If there is one bound missing, rephrase to ""up to"" / ""bis "" or ""bigger than"" / ""größer als"""		Improvement	iteraplan Speedbird	17/May/17 9:29 AM	30/Jun/17 10:19 AM														"23/Jun/17 2:08 PM;roia;When only one bound is set the bounds looks like on screenshot
+
+
+
+!no-low-bound.png!
+
+
+
+[~msr], is it ok? Shouldn't we show some text if bound is not set?"																																																						

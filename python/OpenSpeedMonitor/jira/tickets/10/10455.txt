@@ -1,0 +1,5 @@
+Anpassung des Controllers	Der Controller passend zu IT-56 anpassen.	10010	Sub-task	OpenSpeedMonitor	19/Aug/13 11:14 AM	02/Sep/13 5:00 PM														27/Aug/13 9:26 AM;mzeimer;Im Rahmen dieses Tasks wurden auch die Tasks IT-44, IT-45 und IT-46 mit umgesetzt. Hieraus folgt die Änderung der Schätzung auf 3d 4h (aus den Tickets: 4h + 4h + 3h zzgl. diesem 2d 1h => 3d 4h).	"27/Aug/13 5:36 PM;mzeimer;[OFFEN]
+- showDefault() mit neuer Impl ausstatten
+- clean-up: remove old code
+- add missing documentations (see TODO Doc)"	30/Aug/13 3:17 PM;mzeimer;[OFFEN] TODO bei  de.iteratec.isocsi.CsiDashboardController.exceedsTimeframeBoundary(Date, Date, MeasuredValueInterval)	"30/Aug/13 3:18 PM;mzeimer;[OFFEN] Downloads prüfen und ""glatt ziehen"".
+(downloadBrowserWeights und Co)"																																																			

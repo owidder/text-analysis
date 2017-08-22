@@ -1,0 +1,5 @@
+[CI] Umziehen des UNIT-Test Job	"Die UNIT-Tests sollen nicht mehr auf dem Jenkins stattfinden, sondern auf dem Bamboo durchgeführt werden.
+
+
+
+Den Bamboo-Job gibt es bereits. Nur meldet der Job noch nichts ins Slack."		Task	OpenSpeedMonitor	25/Feb/16 10:46 AM	01/Mar/16 10:34 AM																																																																				

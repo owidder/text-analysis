@@ -1,0 +1,7 @@
+Inkonsistentes Tabbing in Search Dialogen	"Beim zusammenbauen einer Query in einem Search Dialog wird mit jedem Aufruf zum Server (z.B. Auswahl in einer ComboBox, Ausführen einer Query) in die Volltext-Suche zurückgetabbt.
+
+Zur Reproduktion:
+- Auf ""EA Data"" > ""Business Processes"" surfen.
+- In Queries tabben
+- In der ComboBox eine Auswahl treffen
+=> Die neu geladene Seite ist wieder auf Volltext-Suche getabbt."		Improvement	iteraplan PO	02/Mar/12 6:15 PM	09/Mar/12 11:43 AM																																																																				

@@ -1,0 +1,5 @@
+Job-/Script-Verwaltung im ISM: Scripte nicht als Text editieren	"Falls der ISM die Verwaltung der Jobs und Skripte übernimmt:
+
+Ggf. die Skripte nicht mit einem Texteditor bearbeiten sondern per UI (""UserScript""); z.B. Reihenfolge per drag-and-drop. Der Benutzer fügt dann einen ""Block"" für ""Seite laden"" hinzu, der die URL und den Event enthält. Daraus können dann die passenden Script-Komandos erstellt werden.
+
+Vorteil: Browser-spezifische Skripte aus dem selben ""UserScript""."		New Feature	OpenSpeedMonitor	25/Oct/13 12:28 PM	20/Feb/14 4:41 PM														20/Feb/14 4:41 PM;nkuhn;Wird in dieser Form nicht realisiert.																																																						

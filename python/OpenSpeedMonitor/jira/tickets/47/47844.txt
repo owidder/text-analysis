@@ -1,0 +1,17 @@
+Build FlowModelItems	"*Affected js-files:*
+
+
+
+* ifdContentMain
+
+* ifdItemBuilder
+
+* ifdFlowModelBuilder
+
+* ifdItemDecorator
+
+
+
+Input: Business Objects from DataService
+
+Output: FlowModelItems for gojs"	47836	Sub-task	iteraplan PO	17/Jun/15 4:11 PM	03/Jul/15 3:23 PM														02/Jul/15 7:58 AM;msr;No unit tests for FlowModelBuilder (not enough logic to test) and ItemDecorator (not yet implemented in base Information Flow Diagram) created.																																																						

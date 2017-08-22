@@ -1,0 +1,5 @@
+Exception when adding several building blocks with old v2.9 Excel import	"Example:
+Importing an Excel sheet containing only two new products, arbitrarily named, no ID (the products are supposed to be created on import), no attribute values, no relations, no other building blocks.
+The import attempt results in an error page with a hibernate exception as cause.
+
+Please investigate, fix and provide a patch for E-104."		Bug	iteraplan PO	18/Nov/13 11:32 AM	06/Dec/13 10:59 AM					excel	hibernate	import							17/Dec/13 3:17 PM;fka;Reviews and verified with SFE, PSC.																																																						

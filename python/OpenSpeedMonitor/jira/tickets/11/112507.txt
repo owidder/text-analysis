@@ -1,0 +1,9 @@
+Docker4iteraplan	"Take the Docker sample implementation from Hamburg and make it great (again)!
+
+* Include in build process
+
+* Add SSO (not yet done in Hamburg)
+
+* Provide User Documentation
+
+* Create necessary internal documentation"		New Feature	iteraplan Thunderduck	21/Feb/17 10:05 AM	21/Mar/17 11:39 AM														20/Mar/17 3:12 PM;sfe;User documentation: https://doc.iteraplan.de/display/iteraplan60/Docker																																																						

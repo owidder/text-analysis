@@ -1,0 +1,7 @@
+[CRUD] Bei Erstellen von JobGroups führt das hinzufügen von Tags zu Fehlern	"Wenn man eine JobGroup mit Tags erstellt, kommt die Fehlermeldung ""Cannot cast object Test with class java.lang.String to class java.util.List"".
+
+Die Fehlermeldung tritt nur unter Grails 3.1.5 auf.
+
+
+
+(http://localhost:8080/jobGroup/create)"		Bug	OpenSpeedMonitor	26/May/16 11:47 AM	26/May/16 2:04 PM																																																																				

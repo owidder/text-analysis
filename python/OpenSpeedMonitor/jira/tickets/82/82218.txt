@@ -1,0 +1,139 @@
+Loading indicator for MPD	"*Summary:*
+
+Implement a loading indicator for the Masterplan Diagram.
+
+
+
+*As-Is:*
+
+* No loading indicator exists.
+
+
+
+*To-Be:*
+
+* A loading indicator is shown during the diagram-redraw.
+
+
+
+*Affected JS-Files:*
+
+* mpdTemplate
+
+* mpdController
+
+* mpdContentController
+
+* locales-de
+
+* locales-en
+
+
+
+*Implementation Details:*
+
+* Use the IFD as blueprint.
+
+
+
+*UI:*
+
+* The localised term ""Loading diagram ..."" is shown on the top left side directly under the header (like in the IFD).
+
+
+
+*Acceptance Criteria:*
+
+*  The user opens the Masterplan Diagram.
+
+* During the rendering of the diagram a localised term ""Loading term ..."" is shown on the top left directly under the header.
+
+* As soon as the diagram appears, the term disappears.
+
+"		New Feature	iteraplan PO	27/Apr/16 10:42 AM	03/May/16 9:51 AM														"28/Apr/16 12:27 PM;mada;* add div block to mpdTemplate.html
+
+* add method setIsDrawing to mpdController
+
+* add unit test
+
+* refactoring: set one key in localization files to legend message for all diagrams"	"02/May/16 1:52 PM;tam;Little notes after review:
+
+
+
+/trunk/app/js/mpd/mpdContent/mpdContentController.js
+
+
+
+{code:java}
+
+	this.createGoJSDiagram = function () {
+
+		var cont = getMpdCtrl();
+
+		...
+
+	};
+
+{code}
+
+	The variable name probably not that good?! Better would be ctrl?
+
+	No need to store mpdCtrl in the variable
+
+
+
+/trunk/tests/unit/mpd/mpdController-spec.js
+
+
+
+
+
+{code:java}
+
+	//$log = angular.mock.$log;
+
+	$log = {
+
+		warn: function () {
+
+		}
+
+	};
+
+{code}
+
+
+
+	do we need // $log or can it be removed?
+
+
+
+
+
+{code:java}
+
+	it('should setIsDrawing', function () {
+
+		...
+
+    
+
+        // reset all the variables for another test
+
+        $applyHasBeenCalled = false;
+
+        $scope.isDrwaing = false;
+
+    });
+
+
+
+{code}
+
+	
+
+	Probably the wrong place for reset?
+
+	Is it not better to reset in beforeEach?
+
+"	02/May/16 1:52 PM;tam;See review comments	03/May/16 9:48 AM;mada;Apply notes from Timur	03/May/16 9:51 AM;tam;Reviewed and tested																																																		

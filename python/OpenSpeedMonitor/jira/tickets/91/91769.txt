@@ -1,0 +1,102 @@
+Check compatibility with Tomcat 8 & 9	"*Summary:*
+Check compatibility of actual iteraplan version with latest Tomcat 8 and latest 9 server.
+
+*Details:*
+* Download latest Tomcat 8
+* Check with the Tomcat doc for moving from 7 to 8
+* Build an installer from the actual trunk: http://iteraplan.iteratec.de/jenkins/job/Single%20Installer%20-%20Build/
+* Install iteraplan to Tomcat 8
+* Intensively check major functionalities of iteraplan on Tomcat 8
+* Afterwards check all logs for potential warnings or errors
+* If necessary create bug/analysis tickets
+* After all bugs are fixed, update all documentation, i.e.
+** Server requirements: https://www.iteraplan.de/doc/display/iteraplan53/Installation+Prerequisites
+** Check Tomcat Configuration: https://www.iteraplan.de/doc/display/iteraplan53/Tomcat+Configuration
+** Upgrade guide
+* Inform clients"		Task	iteraplan PO	27/Jul/16 5:17 PM	12/Sep/16 3:48 PM														"25/Aug/16 11:10 AM;cst;Apache Tomcat 8.5.4/9.0.0.M9:
+
+
+
+When the Tomcat starts, many warnings are displayed and sometimes after the server startup iteraplan can not be loaded. 
+
+
+
+Error: ""to the cache because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache"". Full error log is uploaded in the ticket.  
+
+
+
+[^Error.log]
+
+
+
+Solution: Tomcat starts iteraplan everytime and without errors, when the following part <Resources>  in the ""context.xml"" is included.
+
+
+
+*<Resources
+
+        cachingAllowed=""true""
+
+		cacheMaxSize=""30000"" (This is smallest setting iteraplan starts on my PC) 
+
+		/> *
+
+
+
+"	"29/Aug/16 10:55 AM;cst;Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+
+---------
+
+MaxPermSize is removed in JDK 8 - http://openjdk.java.net/jeps/122 
+
+Remove the permanent generation from the Hotspot JVM and thus the need to tune the size of the permanent generation. 
+
+
+
+
+
+"	"29/Aug/16 11:25 AM;cst;Apache Tomcat 8.5.4/9.0.0.M9:
+
+
+
+Warning: Could not get charToByteConverterClass!
+
+
+
+Appeared, after I created a ""Pie Chart"". 
+
+Cannot reproduce this Warning.
+
+
+
+In the Catalina.log / iterplan.log this Warning doesn't appears. 
+
+It happens after the first start of the tomcat server. "	"31/Aug/16 2:34 PM;cst;Tested Tomcat 8.5.4 with following installations: 
+
+
+
+* (/) LDAP 
+
+* (/) LDAP + SSO 
+
+* (/) iturm 
+
+
+
+Checked iteraplan with Tomcat 8.5.4 Core and as a Service installation. 
+
+"	"05/Sep/16 10:45 AM;cst;Tested Tomcat 9.0.0M9 with following installations:
+
+
+
+* (/) LDAP
+
+* (/) LDAP + SSO
+
+* (/) iturm 
+
+
+
+Checked iteraplan with Tomcat 9.0.0M9 Core and as a Service installation."	"05/Sep/16 10:52 AM;cst;Please Note - LDAP + SSO and problems with cookies crashing the interactive client. 
+
+Ticket? "	12/Sep/16 3:48 PM;fka;Follow-up ticket for adapting for Tomcat 8 will be created by CST																																																

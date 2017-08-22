@@ -1,0 +1,1 @@
+Persistierung der Wasserfalldaten als domains	Für eine performante Detail-Auswertung sollten die Wasserfall-Daten der WPT-Tests performanter zugreifbar sein als gezippte har-Archive als Blob.		Task	OpenSpeedMonitor	21/Feb/14 11:31 AM	27/Feb/14 3:18 PM																																																																				

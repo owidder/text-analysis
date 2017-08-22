@@ -1,0 +1,3 @@
+Resource-files and dashboard.png are missing in the client.jar	"Resource-files and dashboard.png are missing in the client.jar.
+
+Please fix it."		Bug	iteraplan PO	26/Oct/16 2:29 PM	26/Oct/16 4:03 PM																																																																				

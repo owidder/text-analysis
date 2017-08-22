@@ -1,0 +1,40 @@
+Save LSD as a tile in the home screen	as in NCD: with a given name and all settings.		New Feature	iteraplan PO	04/Mar/15 2:51 PM	07/Apr/15 1:28 PM														24/Mar/15 1:28 PM;sepr;Changing LSD title is also in scope of this story. Only changing by Save dialog.	"25/Mar/15 2:09 PM;msr;Default title (before changing):
+""Landscape Diagram - Information Systems by Technical Components and Infrastructure Elements""
+
+for the default LSD.
+Analogue for other Building Block Types."	02/Apr/15 8:46 AM;msr;The default name is too long for the existing size of the tiles on the recent view page. Please shrink the text size of the tiles a little bit and if necessary make the boxes of the tiles a little bit bigger.	02/Apr/15 1:17 PM;sepr;Made tiles width bigger in rev 874	"02/Apr/15 2:26 PM;dasm;Verified 
+revision 878"	"07/Apr/15 3:27 PM;tam;* There are no unit test
+
+* *queryProcessor.js*
+please comment / jsdoc it, because now it's complicated to understand code at the first view and comments would help
+jsdoc for the class
+comments for the methods within it
+
+* *controller.lsd.js*
+1.
+maybe separate scope variables and scope methods for better readability?
+scope variables first, scope methods then
+2. 
+does it make sense to create an init block and so separate the declaration and initialization? also for better readability
+3.
+comment / jsdoc some scope variables => lsd
+
+* *LSDConfiguration.js*
+why do we need the default private variable? can't we just use this.defaults?
+
+* *common.js*
+please comment the getAlias and getParamName within factory('queryAliasHandler'
+it will help every developer in the future to understand what they are for, why they implemented so
+for example: why we are doing this conversion
+_return String.fromCharCode(A + (aliasValue / N | 0)) + aliasValue % N;_
+or why we are using the second condition here:
+_if(!paramPosition || (alias.charCodeAt(0)-A) < 0) {_
+
+* *lsdHeaderService.js*
+please jsdoc and comment it"	"07/Apr/15 4:49 PM;sepr;{quote}
+LSDConfiguration.js
+why do we need the default private variable? can't we just use this.defaults?
+{quote}
+yes we need it. To make impossible not controlled modifications of parameters.
+You should use only set() / get() methods - and we will be able to avoid writing incorrect data etc.
+both methods allow to work with one parameter and with an params-object too."																																																

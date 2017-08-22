@@ -1,0 +1,117 @@
+Build Release 6.0	"See [https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess]
+
+
+
+0. Notizen konsultieren
+
+ # Allgemeine Vorbereitung
+
+ ## Infrastruktur und Kundeninformationen (?) @[~fka]: Kundeninformationen im CRM aktuell?
+
+ ## Datenbank-Migration
+
+ ### Skripte testen
+
+ ### Anleitung erstellen
+
+ ## Begleitende Informationen
+
+ ### Release Notes erstellen -> Fabian+Olga
+
+ ### Lizenzübersicht aktualisieren ->ITLURP
+
+ ### Ticketumfang festlegen
+
+ ## Dokumentation
+
+ ### Anpassen im Wiki
+
+ ### Known Bugs aktualisieren
+
+ ### Exportieren als PDF
+
+ # Code-Vorbereitung
+
+ ## Helper-Projekte
+
+ ### iteraplan common base
+
+ ### Elastic MI
+
+ ### Spring Security Extensions
+
+ ### iTurm
+
+ ### GetIteraplanDemo
+
+ ## Lizenzen und READMEs
+
+ ## interaktiven Client releasen
+
+ ### Branch und Tag für neuen Client
+
+ ### Release-Artefakt bauen
+
+ ## iteraplan Branch ziehen
+
+ ### Anpassen der Migrationsinfo
+
+ ### Datenbank-Initialisierungsskripte
+
+ # Release - intern
+
+ ## Release-Job ausführen
+
+ ## Testen
+
+ ### Bundles
+
+ ### Installer
+
+ ## Integrationsumgebung
+
+ ### Datenbank erstellen
+
+ ### Deployment-Jobs starten
+
+ ### Personal Demo System & GetIteraplanDemo
+
+ ### Test der Integrations-Umgebung
+
+ ## Release-Tag erstellen
+
+ ## Build-Artefakte auf Fileserver kopieren
+
+ # Release - öffentlich
+
+ ## Public-Umgebung
+
+ ### Demo-Instanzen
+
+ ### Personal Demo
+
+ ### GetIteraplanDemo
+
+ ## Download-Bereich
+
+ ### Zugangskontrolle aktualisieren
+
+ ### Build-Artefakte zum Download für Kunden bereitstellen
+
+ ### Lite-Edition Download updaten
+
+ ## EAM-Bereich
+
+ ### Migrationsskripte und -Anleitung online stellen
+
+ ### Dokumentations-Page anpassen
+
+ # Release-Abschluss
+
+ ## Jira
+
+ ### ""Fix Version"" in allen betroffenen Tickets setzen
+
+ ### Release abschließen
+
+ ### Custom field anpassen"		Task	iteraplan PO	09/Jun/17 1:46 PM	17/Jul/17 9:14 AM																																																																				

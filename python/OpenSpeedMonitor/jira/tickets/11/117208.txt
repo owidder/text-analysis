@@ -1,0 +1,9 @@
+E-Mail Adressen werden nicht erkannt (.energy als TLD)	siehe Screenshot		Fault	iteraplan Support	31/Mar/17 12:16 PM	19/Apr/17 7:00 AM														"31/Mar/17 12:16 PM;dne;
+
+!email-error-eon.png|thumbnail!"	"31/Mar/17 3:39 PM;cst;Hallo Daniel,
+
+werde hierzu ein BUG-Ticket erstellen, es wird in Version 6.0 gelöst sein.
+
+Viele Grüße,
+
+Christoph - iteraplan Support "																																																					

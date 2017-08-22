@@ -1,0 +1,14 @@
+In IE  (date range) filter for "last modification Time" doesn’t work	"*Reproduce:*
+# open an NCD
+# use the filter “Show with date properties” -> “letzte Änderung”
+# submit a date range
+
+*Expected result:*
+you get an reduced result of elements
+
+*Actual in IE:*
+no elements where found
+
+For other date properties the filter seems to work.
+"		Bug	iteraplan PO	25/Apr/15 6:30 AM	27/Apr/15 9:04 AM					NCD	newClient								"25/Apr/15 9:04 PM;msr;It works for IE11 in NCD,
+BUT for the date filter of the Landscape Diagram, it does not work. Maybe a similiar problem or a new one?"																																																						

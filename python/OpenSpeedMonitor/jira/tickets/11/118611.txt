@@ -1,0 +1,33 @@
+Migration iTURM to LDAP	"Hallo, 
+
+
+
+wir haben das Problem, dass wir von iTURM auf LDAP Auth migrieren wollen.
+
+Das Problem ist jetzt, dass es keine Supervisor Gruppe gibt, da bei der generierung des WAR Files die Option ja leider nur auswählbar ist, wenn man die DB initialisiert.
+
+Wir  würden aber ungern unsere Datern verlieren.
+
+Gibt es einen Weg die Gruppe dennoch in die DB (Oracle) zu bekommen?
+
+
+
+Wir haben einen offiziellen Firmenlizenzschlüssel für die Firma SüdLeasing GmbH, falls Sie diesen benötigen."		Technical question	iteraplan Support	13/Apr/17 10:45 AM	02/May/17 7:00 AM														"13/Apr/17 1:09 PM;cst;Hallo Herr Göötler,
+
+vielen Dank für Ihre Anfrage.
+
+Hier eine kleine Anleitung, wie Sie Ihre LDAP Gruppe eintragen und mit Supervisorrechten verknüpfen können.
+ # Öffnen Sie Ihre Datenbank
+ # Gehen in die Tabelle „role“
+ # Hier sollte der Datensatz „IhreAdminGruppe“ und „iteraplan_Supervisor“ angelegt sein
+ # Notierten Sie sich von beiden die ID´s
+ # Jetzt gehen Sie in die Tabelle „role_role“ und erzeugen einen neuen Eintrag
+ # Die erste ID ist die vom „IhreAdminGruppe“ und danach die ID des „iteraplan_Supervisor“
+ # Damit sind die Rollen miteinander verknüpft
+ # Gehen Sie in die Tabelle ""hibernate_sequences"" und setzen den Wert ""role"" eins höher 
+
+Nach diesem Eintrag hat die LDAP-Gruppe „IhreAdminGruppe“ die Rechte des „iteraplan_Supervisor“.
+
+Viele Grüße,
+
+Christoph Stangl - iteratech Support"																																																						

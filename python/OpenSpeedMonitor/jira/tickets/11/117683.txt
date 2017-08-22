@@ -1,0 +1,5 @@
+Oder for BM in the Single Element View	"In the moment the BM in the single element view are not ordered. Please add an ordering, for example according to the first, then the second, and so on name of the  connected building blocks
+
+
+
+Check also that elements added by the response of an edit (this means in the function ""updateView"") are added at the correct position."		Improvement	iteraplan PO	04/Apr/17 3:02 PM																																																																					

@@ -1,0 +1,43 @@
+multiple iteraplan app on one mySQL db	"dear iteraplan support,
+
+
+
+is it recommended to install multiple iteraplan application connected to 1 MySQL database (under different tablespace/schema) ? in case of not, please specify the reason and if there is a plan to support this.
+
+
+
+thank you,
+
+Hao Jiang"		Technical question	iteraplan Support	28/Jun/16 3:40 PM	23/Jul/16 7:00 AM														"30/Jun/16 9:20 AM;msr;Dear Hao.
+
+Thank you for your question.
+I'm not sure if I fully understand your question. iteraplan can be installed in a MySQL-database. In this database iteraplan creates several tables (like ""ad"", ""atg"", ""attr"", ...).
+If you install a second iteraplan application, another MySQL-database is needed. If you assign the same database to another iteraplan application, the second application will try to create the same tables (""ad"", ""atg"", ""attr"", ...) in the same database. As they already exist, the content of the tables will be overwritten by the installer of the second iteraplan application.
+
+But of course, it is possible to have multiple MySQL databases (e.g. iteraplan_PROD, iteraplan_DEV, ...) on 1 MySQL server with 1 MySQL user. 
+
+I hope, this answers your question. If not, please specify it again.
+
+Thanks
+
+Marcel"	"30/Jun/16 11:47 AM;hao.jiang@allianz.com;thank you Marcel!
+As you described, this is exactly the use case we need: 
+- having multiple MySQL databases (e.g. iteraplan_PROD1, iteraplan_PROD2, ...) on 1 MySQL server with 1 MySQL user.
+
+As we are deploying above for prod1, prod2.... please confirm Iteraplan is fully support above usage: there should be no problems for caching or cache performance under above use case. e.g.:
+- hibernate cache (2nd level cache enabled - if this is still mandatory for iteraplan as in the old versions) 
+- query cache?
+- other global cache mechanism if you are using?
+
+best regards,
+Hao"	04/Jul/16 12:08 PM;msr;DB-Admin noch als Sicherheit erwähnen	"04/Jul/16 5:34 PM;msr;Dear Hao.
+
+itearplan supports the describe usage of having multiple MySQL databases on 1 MySQL server with 1 MySQL user.
+Please ensure that you use the database configuration described in the installation guide: https://www.iteraplan.de/doc/display/iteraplan52/Installation+Guide
+
+Please double-check with your database admin that you do not use other caching mechanisms as described there.
+
+Thanks.
+Best regards,
+
+Marcel"																																																			

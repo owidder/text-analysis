@@ -1,0 +1,19 @@
+Plugin API (Testlink) {Browser: Firefox}		124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:23 PM	20/Jun/17 4:20 PM														"15/Jun/17 9:51 PM;naba;Test cases: Plugin API ip-17, 18
+
+For smoke test please use
+
+https://doc.iteraplan.de/display/iteraplan60/User+Guide (examples and tips)
+
+
+
+Please be creative and progressive.
+
+
+
+*Note*:
+
+ - Work with documentation is still in progress
+
+ - Due to some technical issues some test cases are still out of date."	"20/Jun/17 4:20 PM;naba;Ticket was tested in FF.
+
+ No issues found."																																																					

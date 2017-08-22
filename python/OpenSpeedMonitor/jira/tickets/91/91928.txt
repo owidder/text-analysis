@@ -1,0 +1,89 @@
+Fehlermeldungen beim Hochfahren.	"Hallo,
+
+Beim Hochfahren sehen wir immer irritierende 162 Zeilen mit Warnings.
+
+Wie kann man diese unterdrücken?
+
+Der Ausschnitt ist aus der 5.1 Version, aber in der 5.2 kommt es auch vor!
+
+
+
+2016-07-29 12:12:23,302 [WrapperStartStopAppMain] INFO  de.iteratec.iteraplan.presentation.ContextListener    info 143   - Last modification logging is activated.
+
+2016-07-29 12:12:38,262 [WrapperStartStopAppMain] WARN  org.directwebremoting.util.LocalUtil    toClass 1746   - Missing type info for merge(E). Assuming this is a map with String keys. Please add to <signatures> in dwr.xml
+
+2016-07-29 12:12:38,263 [WrapperStartStopAppMain] WARN  org.directwebremoting.util.LocalUtil    toClass 1746   - Missing type info for merge(E). Assuming this is a map with String keys. Please add to <signatures> in dwr.xml
+
+2016-07-29 12:12:38,264 [WrapperStartStopAppMain] WARN  org.directwebremoting.util.LocalUtil    toClass 1746   - Missing type info for getAvailableChildren(E, java.util.List<E>). Assuming this is a map with String keys. Please add to <signatures> in dwr.xml
+
+2016-07-29 12:12:38,264 [WrapperStartStopAppMain] WARN  org.directwebremoting.util.LocalUtil    toClass 1746   - Missing type info for getEntityResultsBySearch(E). Assuming this is a map with String keys. Please add to <signatures> in dwr.xml
+
+2016-07-29 12:12:38,265 [WrapperStartStopAppMain] WARN  org.directwebremoting.util.LocalUtil    toClass 1746   - Missing type info for doesObjectWithDifferentIdExist(T, class java.lang.String). Assuming this is a map with String keys. Please add to <signatures> in dwr.xml
+
+....
+
+2016-07-29 12:12:38,369 [WrapperStartStopAppMain] WARN  org.directwebremoting.util.LocalUtil    toClass 1746   - Missing type info for loadObjectById(T, java.lang.String[]). Assuming this is a map with String keys. Please add to <signatures> in dwr.xml
+
+2016-07-29 12:12:38,370 [WrapperStartStopAppMain] WARN  org.directwebremoting.util.LocalUtil    toClass 1746   - Missing type info for loadObjectByIdIfExists(T). Assuming this is a map with String keys. Please add to <signatures> in dwr.xml
+
+2016-07-29 12:12:38,370 [WrapperStartStopAppMain] WARN  org.directwebremoting.util.LocalUtil    toClass 1746   - Missing type info for loadObjectByIdIfExists(T). Assuming this is a map with String keys. Please add to <signatures> in dwr.xml
+
+"		Fault	iteraplan Support	29/Jul/16 12:32 PM	10/Sep/16 7:00 AM														"01/Aug/16 11:18 AM;cst;Sehr geehrter Herr Joachimsmeyer,
+
+vielen Dank für Ihre Anfrage.
+
+Der Vorgang wird geprüft und hierzu erhalten Sie im laufe der nächsten Woche eine Rückmeldung.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"15/Aug/16 11:49 AM;armin.joachimsmeyer@axa.de;Hallo,
+ist es vielleicht Doch besser, wenn ich mal anrufe?
+Beste Grüße
+Armin Joachimsmeyer
+Ps. was macht die 5.3 Version?"	"17/Aug/16 9:26 AM;cst;Habe mit dem Kunden gesprochen, es geht Ihm darum die Warnings zu unterdrücken, da Sie nur über den LOG die iteraplan Instanz prüfen können. 
+Dies fällt Ihnen alle 2 Wochen auf die Füße. 
+
+Wann die Version 5.3 kommt per Telefon mit geteilt. "	"17/Aug/16 11:17 AM;cst;Sehr geehrter Herr Joachimsmeyer,
+
+vielen Dank für das nette Gespräch.
+
+Um die Warnungen ausblenden zu lassen, müsste  Sie das Log-Level von ""Warning"" auf ""Error"" umstellen. 
+Hier werden keine Warnungen geschrieben, die für das betreiben von iteraplan relevant sind. 
+
+Die Einstellungen betreffen die  Klasse ""org.directwebremoting.util.LocalUtil"". 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"18/Aug/16 10:51 AM;cst;Sehr geehrter Herr Joachimsmeyer,
+
+wie telefonisch besprochen, habe ich den Vorgang mit unseren Entwicklern geprüft. 
+Die Warnungen werden durch die Kombination von DWR (Direct Web Remoting) und dem Spring Framework hervorgerufen. Beim Nachprüfen, ob iteraplan DWR korrekt einsetzt, haben wir keine Auffälligkeiten festgestellt. Daher liegt die Vermutung nahe, dass eine Inkonsistenz zwischen DWR und Spring vorliegt, die durch iteraplan nicht behoben werden kann.
+
+Deswegen ist das Log-Level bei einer aktuellen iteraplan Installation auf ""Error"" gestellt, um diese Warnungen zu ignorieren. 
+
+Der Work a Round mit dem anheben des LOG-Levels haben Sie ja schon selbst in Betracht gezogen.
+Um die Warnings ausblenden zu lassen, müsste dieser Schritt durchgeführt werden. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+"	"18/Aug/16 8:20 PM;armin.joachimsmeyer@axa.de;Hallo Herr Stangl,
+wo ich gerade dabei bin...
+es gibt 2 weitere Zeilen, die mehrfach als Warning ausgegeben werden.
+Wie sieht die ""Lösung"" hier aus?
+
+2016-08-18 14:59:56,626 [localhost-startStop-1] WARN  org.hibernate.orm.deprecation    bindProperty 2416   - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+2016-08-18 15:00:09,736 [localhost-startStop-1] WARN  org.hibernate.orm.deprecation    toColumns 432   - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.elements]; use collection function syntax instead [elements(null)].
+
+Allerbesten Dank
+Armin Joachimsmeyer
+"	18/Aug/16 8:21 PM;armin.joachimsmeyer@axa.de;Das ist jetzt nur in der 5.2 Version	"22/Aug/16 3:55 PM;cst;Sehr geehrter Joachimsmeyer,
+
+hier verhält es sich ähnlich wie im oberen Fall. 
+
+Durch ein Hibernateupgrade in der Version 5.2, wird diese Warnung erzeugt. Die Ursache hierfür sind ältere Codestellen die diese Hibernatemethoden verwenden.
+Es gibt hierfür keine zeitnahe Lösung, um die Warnungen zu ""lösen"". Wir nehmen das zum Anlass und werden die Warnings in den nächsten Versionen genauer analysieren. 
+
+Vielen Dank für Ihre Verständnis.
+
+Christoph Stangl - iteraplan Support "																																															

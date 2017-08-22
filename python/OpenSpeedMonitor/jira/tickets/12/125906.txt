@@ -1,0 +1,17 @@
+Save buttons are show before page is loaded	"Steps to reproduce (in IE this UI bug is more obvious):
+
+1) Go to Home page -> Data tab
+
+2) Click on any tile
+
+
+
+Actual result:
+
+White line appears on the top with 2 buttons (see screenshot) then List page is loaded
+
+
+
+Expected result:
+
+List page is loaded without breaking Home page on load"		Bug	iteraplan PO	30/Jun/17 10:26 AM	12/Jul/17 5:26 PM														12/Jul/17 5:26 PM;msr;The underlying problem is the missing loading indicator which is in scope of another ticket.																																																						

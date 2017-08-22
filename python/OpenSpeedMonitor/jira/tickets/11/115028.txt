@@ -1,0 +1,9 @@
+Ampel je nach Measurand anzeigen	"Die Ampel macht nicht für jeden Measurand Sinn.
+
+
+
+Je nach Measurand sollte eine andere oder keine Seite angezeigt werden.
+
+
+
+Hier könnte man auch noch ""offiziellen"" Konventionen/Richtlinien zB von Google suchen."		Bug	OpenSpeedMonitor	15/Mar/17 2:24 PM																																																																					

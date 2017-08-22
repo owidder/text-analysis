@@ -1,0 +1,9 @@
+Integrate attribute changes history in new history REST API	"Make sure that the history information about deletes and creates of attributes is written to the history REST API in a format suitable for the client:
+
+GET iteraplan/api/history/{buildingBlockType}/{id}
+
+
+
+This feature was possibly already implemented in IPTT-121. Please, double-check!
+
+"		Task	iteraplan Thunderduck	18/Oct/16 10:11 AM	03/Feb/17 9:30 AM														02/Feb/17 10:49 AM;aan;The changes are already shown																																																						

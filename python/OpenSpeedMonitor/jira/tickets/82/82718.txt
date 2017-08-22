@@ -1,0 +1,19 @@
+NCD: Color picker can only change one color for enum attributes	"Reproduce:
+
+
+
+# Color inner elements in NCD by a enum attribute (e.g. Complexity)
+
+# Change one of teh default colors (e.g. the color for ""low"")
+
+# Change another color (e.g. for ""medium"")
+
+
+
+Expected: Both colors are changed
+
+
+
+Result: Only the last change is applied (color for ""medium"" in the example above), while the color set in the step before is reset to the default value"		Bug	iteraplan PO	02/May/16 10:44 AM	13/May/16 12:44 PM														"11/May/16 11:30 AM;mse;* Defect fixed
+
+* Refactoring to be done in the context of ITERAPLAN-4430 and ITERAPLAN-4627"	13/May/16 12:43 PM;abo;Review-Comment: refactoring is necessary for maintainability of the code, this will be done in ITERAPLAN-4627 as agreed on with [~mse] and [~sfe]																																																					

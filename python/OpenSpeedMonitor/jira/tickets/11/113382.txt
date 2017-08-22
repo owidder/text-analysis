@@ -1,0 +1,1 @@
+TBD: Copy user in list (Client)	* Show hint only for responsibility-attribute used		New Feature	iteraplan Speedbird	27/Feb/17 4:19 PM	02/Mar/17 4:40 PM																																																																				

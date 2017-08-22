@@ -1,0 +1,19 @@
+Localised login	"*Summary:*
+
+Localise the login-page in German and English.
+
+
+
+*Details:*
+
+* Default is English
+
+* If url-parameter for German is handed over, show it in German
+
+* If no url-parameter exists, but browser language is German, show it in German, too
+
+* In all other cases, use English
+
+* {color:red}UPDATE: {color} URL-Parameter is taken over to the user setting as soon as the user logs in
+
+* {color:red}UPDATE: {color} Do not take over the browser language to the user settings"		New Feature	iteraplan Speedbird	22/Mar/17 5:03 PM	02/Jun/17 9:54 AM														30/May/17 11:07 AM;roia;[~msr], should the locale from URL be saved into the user settings after user logs in (to be used in next pages), or the previously saved locale setting should be used?	01/Jun/17 4:59 PM;roia;[~msr], we also have the  DEFAULT_LOCALE in constants.js. Should we take it into account in some cases?	02/Jun/17 9:36 AM;msr;Thanks for letting me know. I think, we do not have to take the "DEFAULT_LOCALE" into account.	02/Jun/17 9:54 AM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-639																																																			

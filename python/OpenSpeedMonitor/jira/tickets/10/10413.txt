@@ -1,0 +1,4 @@
+Querreferenzen JobResult 	"JobResult referenziert zusätzlich zum Job zu Gunsten der Performance als Kopie aus Job:
+- Browser
+- Location
+- JobGroup"	10411	Sub-task	OpenSpeedMonitor	05/Aug/13 10:54 AM	23/May/16 5:12 PM																																																																				

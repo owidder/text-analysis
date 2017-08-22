@@ -1,0 +1,15 @@
+Reset View is not working in MPD	"After you use the Reset View Button in the Masterplan Diagram the user is logged out from iteraplan and the Master Plan Diagram notes: Permission Denied.
+
+One idea for the root cause coud be:
+
+In the default MPD url it says ""BuildingBlockType=InformationSystem"". But if this property is deleted from the url by the reset-view-button, there is no building block type and the permission handling says permission denied.
+
+For information how this could be solved ask [~msr]."		Bug	iteraplan Quickfox	25/Aug/16 4:15 PM	16/Sep/16 9:15 AM														06/Sep/16 9:13 AM;pma;The problem also occurs in the pfd	"08/Sep/16 11:44 AM;pma;It may reasons on different method uses of the queryProcessor:
+
+* Mpd and pfd use the methods readObjectToUrl() and writeObjectToUrl(), which parse the objects to a string and write it in the url
+
+* all other diagrams and lists use the methods read() and setParametersToUrl(), which write objects directly in the url
+
+* The reset functionality uses read() 
+
+-> incompability with strings?"	15/Sep/16 5:52 PM;mwe;Cannot reproduce after completion of IPTQ-135																																																				

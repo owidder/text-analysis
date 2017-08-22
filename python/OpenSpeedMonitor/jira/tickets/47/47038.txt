@@ -1,0 +1,23 @@
+Unify clicks and menus in list view	"Unify the way the user works with clicks and menus, both technically and on the UI/UX level.
+In this ticket, refactor the list view  only.
+There will be other tickets on the home screen, the single item view and the diagram view.
+
+For background on the to-be concept of all gestures and actions, see http://www.iteraplan.de/wiki/display/IPNINE/Clicks+And+Menus
+Warning: this page is still under construction.
+
+Technical idea:
+
+The actions on a element (tile, row, cell, column header) should be defined in a  definition.
+This definition is used for
+* the actions in the menu bar (if the element is selected)
+* the items of the context menu
+* the handler for double click
+
+The definition of this action should be used both for the rendering of the menus and for the execution of the actions.
+
+The main goal is: 
+if we add an action to a element, it should be available in all the places, that is menu bar actions, context menu, and shortcut gestures.
+
+
+
+"		New Feature	iteraplan PO	09/Oct/14 4:30 PM	09/Jun/15 5:05 PM														13/Oct/14 10:28 AM;wfr;TBD WFR make ticket text more specific to list view	13/Oct/14 11:49 AM;sepr;Est 4 PD																																																					

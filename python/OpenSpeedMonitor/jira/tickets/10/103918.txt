@@ -1,0 +1,1 @@
+Make Actions Column independent from list configuration	show action column always for BBT-Lists, even if the saved user profile for list configuration don't contain it		Bug	iteraplan Thunderduck	25/Nov/16 11:03 AM	05/Dec/16 2:33 PM																																																																				

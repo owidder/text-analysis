@@ -1,0 +1,15 @@
+Create new item selection test cases	"please edit the e2e-test tracability excel sheet located in e2etest subfolder after implementing the tests
+
+
+
+create a new file.
+
+
+
+create the following test cases:
+
+- select different nodes
+
+- select different edges
+
+- select multiple elements (nodes, edges) e.g. by drag and drop (if it works)"	62900	Sub-task	iteraplan PO	09/Nov/15 8:21 AM	09/Nov/15 3:47 PM					IFD	Test																																																														

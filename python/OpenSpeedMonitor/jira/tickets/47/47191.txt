@@ -1,0 +1,47 @@
+Filter for inner boxes (text attributes)	"Follow-Up ticket to IPNINE-226
+
+*Summary:*
+Create a filter on elements for inner boxes of the Nesting Cluster Diagram. Filter options are *text attributes* of the elements. Filters must be implemented for all available *text* parameters
+
+*As-Is:*
+Inner Boxes can be filtered by status, complexity and last modification date.
+
+*To-Be:*
+Inner Boxes can be filtered by all available *text* attributes.
+
+*Affected parts of the system:*
+- Nesting cluster diagram
+- context menu
+- text input bar (new)
+
+*Approach:* 
+The values can be text type, enumeration (like in status), dates (like in ""last modification date) or numeric (like in costs). For this ticket only text attributes are in scope. The other 3 types follow in follow-up tickets. The text type attribute uses new ""text input bar"" ""near"" the context menu (to be created)
+
+Adapt context menu: Use new ""text input bar"" to filter for text (see attached mockup). This mockup informs about positioning and content, it is no styleguide for the layout. Leave the current layout as is.
+
+Leading or trailing whitespace of the search text is ignored. Case is ignored.
+
+Special-case: Multi-value attributes: If an attribute has multiple values, this is not an issue for the simple filtering. If any of the values matches the filtering, then the other values can be ignored.
+
+The solution uses the metamodel information from the REST API.
+
+*Acceptance Criteria:*
+The user starts with the view of an open NCD with IS as inner elements.
+The user opens the context menu for inner boxes with secondary click. 
+In the menu, he hover over ""Show with ..."" (Note: with ellipsis ""...""). 
+A second level menu opens immediately on hover. 
+The user clicks on any text attribute with primary click.
+A text input bar open immediately.
+The user starts typing.
+After each letter the diagram is filtered immediately.
+The users does a primary click next to menu structure.
+The menu structure (incl. text input bar) disappears.
+
+The steps above must work with every *text* attribute defined for all building block types available for the inner boxes.
+The steps must work starting with no filtering by attribute, or starting with an existing filtering by attribute.
+
+
+
+"		New Feature	iteraplan PO	24/Nov/14 2:45 PM	26/Feb/15 10:56 AM					context	filtering	nesting							"23/Jan/15 8:36 AM;msr;1. Yes, the context menu should disappear, when user selects any filtering attribute. (Good idea) And the range slider/text input bar/date picker should appear immediately after selection of a filtering attribute. And they should all be on the same position in the screen.
+2. Yes, the range slider/text input bar/date picker should show the last used data, only if this filter is active. The can change the active filter.
+3. The range slider/text input bar/date picker appears only after selection of a filtering attribute. And it disappears with any other action."																																																						

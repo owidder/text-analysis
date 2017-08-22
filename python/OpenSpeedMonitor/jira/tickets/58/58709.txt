@@ -1,0 +1,23 @@
+LSD. Clicks on diagram after zooming in in Chrome shows wrong or no toolarea.	"Steps to reproduce:
+
+# Open LSD diagram.
+
+# Zoom in in Chrome
+
+# Click within content somewhere on the top left 
+
+
+
+*Expected:*
+
+Toolarea for content will be shown
+
+
+
+*Actual:*
+
+Toolarea for axes or no toolarea will be shown"		Bug	iteraplan PO	30/Sep/15 1:08 PM	01/Oct/15 9:31 AM					chrome	lsd								"30/Sep/15 2:44 PM;tam;By fixing another bug was found.
+
+The same behaviour is for color picker in LSD, but the solution doesn't work for color picker"	"30/Sep/15 4:56 PM;tam;I did some refactoring and used solution suggested by gojs support.
+
+Now toolarea and colorpicker will be shown correctly"	01/Oct/15 9:31 AM;dam;click on content diagram works fine. a small border with no functionality by click on the legend panels still exist																																																				

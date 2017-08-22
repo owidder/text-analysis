@@ -1,0 +1,11 @@
+ZAP Home Directory konfigurierbar	"ZAP läuft standardmäßig im User Home und legt im .ZAP verzeichnis seine temporären Dateien an (inkl. License und Zertifikat).
+
+
+
+Über das Konfigfile soll das Home Directory konfigurierbar gemacht werden (Bsp.: Startparameter: -dir /var/opt/jenkins_slave/zap/zapHome)
+
+
+
+Der License Check geht zur Zeit noch von einem festen Path (user.home) aus. Dieser muss auf den konfigurierbaren Path angepasst werden."		Task	secureCodeBox	27/Oct/14 5:02 PM	13/Nov/14 3:13 PM														"13/Nov/14 3:13 PM;bwo;Der Pfad kann nur in der config unter zap.basedir angegeben werden.
+
+Wird hier ""default"" angegeben, so wird der normale Pfad von ZAP unter home/user/.ZAP/ benutzt"																																																						

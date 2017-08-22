@@ -1,0 +1,16 @@
+Simple explanation for Overview panel	"The explanation text of the Overiew screen could be simpler:
+
+As is
+Overview - shows first hierarchy level or most used elements
+
+Simpler 
+Overview - Top Level Elements and Top Five Used/Connected Elements
+
+Note: use title case in screen title, no sentence
+
+As is: one footnote {1] für both Information System and Technical Component
+
+Simpler
+Two specific footnotes:
+[1] Top five with the most number of interfaces
+[2] Top five most frequently used by information systems "		Bug	iteraplan PO	26/Jun/13 4:25 PM	19/Jul/13 1:56 PM					gui									19/Jul/13 3:15 PM;sry;Thx																																																						

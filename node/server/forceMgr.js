@@ -1,12 +1,19 @@
 var Force = require('./Force');
+var Stream = require('./Stream');
 
-var forceArray = [];
+var forceContextArray = [];
 
 function start(width, height, threshold, forceRefresh) {
-    var forceId = forceArray.length;
+    var forceId = forceContextArray.length;
     var force = new Force(forceId, width, height, forceRefresh);
     var startResult = force.start(threshold);
-    forceArray.push(force);
+    forceContextArray.push({
+        force: force
+    });
+
+    setTimeout(function () {
+        remove(forceId);
+    }, 3600e+3);
 
     return {
         id: forceId,
@@ -15,19 +22,40 @@ function start(width, height, threshold, forceRefresh) {
 }
 
 function getSvg(forceId) {
-    return forceArray[Number(forceId)].getSvg();
+    return forceContextArray[forceId].force.getSvg();
+}
+
+function nextSvgChunk(forceId, zipped) {
+    var forceContext = forceContextArray[forceId];
+    if(!forceContext.svgStream) {
+        forceContext.svgStream = new Stream(function () {
+            return forceContext.force.getSvg();
+        }, 1e+7, zipped);
+    }
+    return forceContext.svgStream.nextChunk();
 }
 
 function getNodesAndLinks(forceId) {
-    return forceArray[Number(forceId)].getNodesAndLinks();
+    return forceContextArray[Number(forceId)].getNodesAndLinks();
+}
+
+function nextNodesAndLinksChunk(forceId, zipped) {
+    var forceContext = forceContextArray[forceId];
+    if(!forceContext.nodesAndLinksStream) {
+        forceContext.nodesAndLinksStream = new Stream(function () {
+            var nodesAndLinks = forceContext.force.getNodesAndLinks();
+            return JSON.stringify(nodesAndLinks);
+        }, 1e+7, zipped);
+    }
+    return forceContext.nodesAndLinksStream.nextChunk();
 }
 
 function stop(forceId) {
-    return forceArray[Number(forceId)].stop();
+    return forceContextArray[forceId].force.stop();
 }
 
 function remove(forceId) {
-    forceArray.splice(forceId, 1);
+    forceContextArray[forceId] = undefined;
 }
 
 module.exports = {
@@ -35,5 +63,7 @@ module.exports = {
     stop: stop,
     getSvg: getSvg,
     getNodesAndLinks: getNodesAndLinks,
-    remove: remove
+    remove: remove,
+    nextSvgChunk: nextSvgChunk,
+    nextNodesAndLinksChunk: nextNodesAndLinksChunk
 };

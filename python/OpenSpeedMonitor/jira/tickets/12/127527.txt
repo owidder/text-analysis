@@ -1,0 +1,38 @@
+iTurm steht jeden Tag	"Ich habe jeden Morgen das Problem, das die Anmeldung an iTurm nicht funktioniert. Erst nachdem ich den Tomcat Dienst neu gestartet habe geht es wieder. Letzter erfolgloser Versuch Heute 19.07.17 11:24Uhr. Danach erfolgte kein Neustart.
+
+
+
+MfG A.O."		Fault	iteraplan Support	19/Jul/17 11:29 AM															"19/Jul/17 11:29 AM;a.ostenkoetter@bghw.de;
+
+[^iturm.zip] _(5 kB)_"	"21/Jul/17 3:27 PM;cst;Guten Tag,
+
+vielen Dank für Ihre Anfrage.
+
+Diese Fehlermeldung kann mehrere Ursachen haben:
+ # JDBC Treiber ist zu alt, könnte man testweise durch einen neuen ersetzten 
+ # In  der MYSQL configuration ist eine ""skip-networking"" Zeile enthalten, dies müsste auskommentiert werden
+ # Auch kann folgende Einstellungen in der MYSQL Konfigurationszeile zu Problemen führen 
+*change ""wait_timeout""* und *""interactive_timeout""*
+ # Also letztes kann es die bind-address das Problem verursachen, hier wird dazu geraten die bind-address = 192.X.X.X zu bind-address = 127.0.0.1 ändern
+
+Sollte dies nicht die Fehlerursache sein, könnte man einen auto reconnect im iTurm hinterlegen
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"26/Jul/17 9:18 AM;a.ostenkoetter@bghw.de;Hallo Herr Stangl,
+
+ich habe jetzt den JDBC von Version 5.1.38 auf 5.1.43 upgedated. Dabei den Tomcat neu gestartet. Kann also erst morgen sagen, ob das geholfen hat.
+
+Die mysqld.cnf:
+---snip---
+# Instead of skip-networking the default is now to listen only on
+# localhost which is more compatible and is not less secure.
+
+bind-address            = 127.0.0.1
+#
+---snap---
+Das Keyword ""skip-networking"" ist in der Datei nur in obigem Kommentar enthalten. Die Keywords ""wait_timeout"" und ""interactive_timeout"" gibt es dort ebenfalls nicht
+
+MfG
+A. Ostenkötter"	"26/Jul/17 9:19 AM;a.ostenkoetter@bghw.de;Kommentar: Das Portal hat aus dem ""#"" eine Aufzählung mit 1. und 2. gemacht....
+"	26/Jul/17 9:41 AM;a.ostenkoetter@bghw.de;Hängt schon wieder!																																																		

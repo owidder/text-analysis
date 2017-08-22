@@ -1,0 +1,5 @@
+Quartz-Konfiguration funktioniert auf manchen Arbeitsplätzen nicht	"Die neue Konfiguration funktioniert auf der SEU, bei David lokal nicht. Dort löst sie die folgende Exception aus:
+com.mchange.v2.resourcepool.CannotAcquireResourceException: A ResourcePool could not acquire a resource from its primary factory or source.
+Mit der alten Konfiguration (quartz.properties und in QuartzConfig.groovy autoStartup=false) funktioniert run-app problemlos.
+
+Siehe IT-327"		Bug	OpenSpeedMonitor	28/Mar/14 5:37 PM	18/Jan/17 4:12 PM																																																																				

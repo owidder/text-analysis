@@ -1,0 +1,9 @@
+select-measurings controls auf csi-dashboards initialisieren	"Die Checkboxen ""Alle auswählen"" müssen hier noch initial gesetzt werden.
+
+Connectivities müssen noch vom Controller übergeben werden.
+
+Da für MeasuredValues noch gar keine Connectivity gespeichert wird muss die Connectivity-Auswahl erstmal frei bleiben.
+
+
+
+Für MeasuredValues machen auch nur die predefined Connectivities Sinn (andere Einstellungen landen gar nicht im CSI). Das select-measurings-template muss hier also in 2 Varianten ausgespielt werden können. "		Task	OpenSpeedMonitor	20/Oct/15 11:47 PM	04/Nov/15 2:11 PM																																																																				

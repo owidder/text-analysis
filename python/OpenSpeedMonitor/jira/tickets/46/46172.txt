@@ -1,0 +1,11 @@
+MS SQL Server Attribute Group unreachable	"On the MS SQL version of iteraplan:
+login and try to go to Administration ->Attribute Groups.
+A error will occur, saying: 
+""Fundamental application data, that is required for the operation of iteraplan, could not be found in the database. Please initialize the database.""
+
+Then go to Administration -> Attributes and click on any value in the ""Attribute Group""-column. Only now you'll be able to  reach the Attribute Groups (and from now on you'll also be able to reach the Attribute Groups from the Administration-DropDown-Menu)
+
+"		Bug	iteraplan PO	18/Oct/13 4:57 PM	22/Oct/13 10:01 AM														"21/Oct/13 11:11 AM;gph;The problem exists, because the square brackets '[' and ']' are special characters in the SELECT-statement's LIKE-clause of SQL Server's T-SQL (unlike other DBMS, where only '%' and '_' are used). This causes problems with the ""[Default attribute group]"" value.
+
+The same error may occur during Excel Import."	22/Oct/13 10:01 AM;sfe;seems fine	"22/Oct/13 10:18 AM;psc;Reviewed. Fix is working.
+Ticket will be closed."																																																				

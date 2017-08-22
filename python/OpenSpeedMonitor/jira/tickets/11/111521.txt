@@ -1,0 +1,21 @@
+Scroll bars in list view description cells	"_Reproduce:_
+
+# Go to list view for an arbitrary type
+
+# Change a description and/or the width of the description column so the description does not fit inside the cell
+
+
+
+_Result:_ Scroll bars appear inside the description cell. If the description is only one line, the horizontal scroll bar prevents reading the text at all.
+
+
+
+_To do:_ Change the display to ""overflow: hidden"" so no scroll bars appear and the cell content is clipped instead.
+
+
+
+(Possible priority 2: Add ellipsis dots like in name columns when the name is too long. There seems to be a css style for that, ""text-overflow: ellipsis"")"		Bug	iteraplan PO	10/Feb/17 11:07 AM	13/Feb/17 1:05 PM														"13/Feb/17 1:05 PM;viol;Code review is done:
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-360
+
+No any comments."																																																						

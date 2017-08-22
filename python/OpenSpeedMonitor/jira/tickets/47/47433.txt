@@ -1,0 +1,14 @@
+XMI-Export bei Nutzung von Zeitreihen-Aufzählungs-Merkmalen nicht möglich	"Vorbedingungen:
+* Zeitreihen aktiviert
+* Aufzählungsmerkmal angelegt als Zeitreihe
+
+Schritte zum Erzeugen des Fehlers:
+* Aufruf des XMI-Exports
+
+Fehlermeldungen:
+* Frontend wird mit Timeout-Fehler beendet
+* Erzeugte Log-Ausgaben anbei
+
+
+Dringlichkeit:
+* Die betroffenen Attribute sind bei OTTO wieder zurückgebaut, so dass aktuell keine Dringlichkeit dahinter steht, da bekannt war, dass das Feature im BETA-Stadium ist"		Bug	iteraplan PO	19/Feb/15 4:22 PM	09/Mar/16 11:42 AM					timeseries																																																															

@@ -1,0 +1,3 @@
+Berücksichtigung der gewählten Uhrzeit	"Aktuell wird nur das gewählte Datum, nicht aber die gewählte Uhrzeit berücksichtigt.
+
+Das sollte geändert werden."		Task	OpenSpeedMonitor	12/Dec/16 11:06 AM	12/Dec/16 1:14 PM																																																																				

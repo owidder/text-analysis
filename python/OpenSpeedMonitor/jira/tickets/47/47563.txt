@@ -1,0 +1,18 @@
+NCD: Saving options of  nesting and highlighting 	"Summary: Changing of outer type should not cancel applied options for inner type (if they still connect to each other)
+
+Steps to reproduce:
+1. Go to NCD page
+2. Use ISD as outer type and IS as inner type
+3. Highlight any inner element
+4. Use Nesting by children
+5. Change outer type to Architectural Domain (or to any other)
+Actual: Options of Nesting and highlighting  were canceled
+Expected: All applied options for inner elements should be saved with changing outer type (if used inner type still connected to new outer)
+
+Comments: 
+Correct behavior:
+1. All used options for inner elements should be canceled only with changing inner type.
+2. All used options for outer type should be canceled only with changing outer type
+3. All used options for inner/outer type should be canceled with changing inner/outer type to other which doesn't connect to used inner/outer type
+
+(in discussion with Marcel 01/04/15)"		Bug	iteraplan PO	01/Apr/15 3:29 PM	19/Jan/16 1:57 PM														15/Apr/15 1:50 PM;msr;Defer after April 2015																																																						

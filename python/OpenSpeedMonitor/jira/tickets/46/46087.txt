@@ -1,0 +1,16 @@
+Import: cycle checks not executed in first import step	"The current implementation of the {{ModelValidator}} performs, among others, checks for cycles in self referencing relationships which are marked as acyclic. Found cycles are reported as violations.
+
+Since the acyclic-flag is *not* represented in the Excel template, relationships like {{parent-children}}, {{used-uses}} and {{generalization-specialization}} do not have this flag set in the metamodel which is built from the Excel file.
+Therefore the cycle checks are not performed.
+Whether the same issue exists for the XMI import needs to be ascertained.
+
+This is of low severity, as the checks will be performed in the 4th import step, where we have an updated metamodel with the correct flags.
+
+Enabling the check in the first step could improve user feedback, however, as cycles would be reported sooner.
+It'd be also possible for the user to distinguish between import files which contain a whole cycle (reported in first step) and import files which close a cycle only together with existing data (reported in fourth step)."		Bug	iteraplan PO	25/Sep/13 9:50 AM	27/Sep/13 2:06 PM					cycle	Excel	import	validation						"25/Sep/13 11:34 AM;wfr;After a discussion with SFe:
+
+The problem has _priority_ trivial, because the constraint is checked, only later as possible.
+
+The solution is not that easy: Add metamodel info to Excel format, or (better);
+use the constraints of the ""real"" metamodel for validiation in step 1.
+"	27/Sep/13 2:06 PM;sfe;Issue doesn't appear in trunk. The observation this issue report was based on was incorrect.																																																					

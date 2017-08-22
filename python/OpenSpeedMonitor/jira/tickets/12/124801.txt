@@ -1,0 +1,21 @@
+Graphics reactor page- error page when loading not accessable results	"Upload the attatched file and execute it once.
+
+
+
+Configure the published files as follows:
+
+{color:#666666}Output Filename{color}publicDemo_strategicBuildingBlock.html
+
+{color:#666666}URL{color}[/published/TestURL|http://localhost:8080/iteraplan/published/TestURL]
+
+{color:#666666}Access Roles{color}Test1234
+
+{color:#666666}Cache Time{color}10 hours
+
+ 
+
+Try opening [/published/TestURL.|http://localhost:8080/iteraplan/published/TestURL]
+
+Expected behaviour: An error is shown
+
+Current behaviour : the page does not stop loading and there are stacktraces in the backend"		Bug	iteraplan PO	20/Jun/17 8:07 AM															20/Jun/17 9:20 AM;aan;Commit 27288 also belongs to this ticket.																																																						

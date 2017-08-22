@@ -1,0 +1,27 @@
+Remove diagram title (also from all downloads)	"*For all existing diagrams: N3CD, IFD, LSD (in MPD it was already removed):*
+
+
+
+* Remove the diagram title from diagram and all downloads
+
+* Put the actual timestamp (date + time) to the bottom of the legend in a small font
+
+
+
+I would prefer a clean solution by removing all occurences of the title
+
+"		Improvement	iteraplan Speedbird	05/Jul/16 9:20 PM	22/Jul/16 9:57 AM														"13/Jul/16 11:05 AM;dmkh;Estimated scope of work is:
+
+* remove GoJS diagram for title and related code from all four diagrams;
+
+* remove titles from html templates;
+
+* add timestamp to legends;
+
+* remove all unnecessary usage of title-divs in {{headerDownloadService.js}};
+
+* reorder and modify positioning of diagram(s)\legend for SVG\image download;
+
+* manual testing."	"21/Jul/16 1:11 PM;roia;I like that we've removed lots of code :).
+
+Have just one comment to remove even more: https://iteraweb.iteratec.de/fisheye/cru/IP-75#CFR-24758"	22/Jul/16 8:54 AM;dmkh;[~roia], I have made some changes due to your comment, take a look.																																																				

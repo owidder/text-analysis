@@ -1,0 +1,9 @@
+Neben dem Wasserfall auch auf andere WPT-Server-Features verlinken	"Per Kontext-Menü soll auf Connection-View, Timeframe-Ansicht, usw verlinkt werden. 
+
+Die URL's sollten nicht persistiert werden (wie die detailsUrl bisher) sondern dynamisch zusammengebaut. Dafür müsste die WPT-Server-Version mit im EventResult persistiert werden, da die URL's unterschiedlich sind je nach Version.
+
+
+
+Für das Kontext-Menü könnten wir dieses verwenden:
+
+http://swisnl.github.io/jQuery-contextMenu/"		New Feature	OpenSpeedMonitor	04/Oct/16 9:58 AM	02/Nov/16 3:15 PM																																																																				

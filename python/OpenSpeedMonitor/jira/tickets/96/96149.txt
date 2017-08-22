@@ -1,0 +1,61 @@
+LSD. Permissions check by loading from URL doesn't work	"*Steps to reproduce*
+
+# Sign in as system user
+
+# Change permissions for a user (by excluding for example permission for product)
+
+# Open LSD in interactive client and change row association to ""connected product"" and save URL
+
+# Sign out and sign in with the user you modified permissions for
+
+# Open the saved link
+
+
+
+*Expected*
+
+* Diagram will be shown, but incompletely
+
+* User gets a warning
+
+
+
+*Actual*
+
+* Only ""loading diagram"" will be shown and doesn't disappear
+
+* In browser's console you see following error 
+
+
+
+{noformat}
+
+""Error: Invalid axis assignment path 'NO_PERMISSION_FOR_AXIS': neither a property of content type, nor a relationship path to a visible axis type
+
+LSDDataService.prototype.getAxisAssignmentType()""
+
+
+
+{noformat}
+
+
+
+"		Bug	iteraplan PO	15/Sep/16 1:56 PM	25/Oct/16 12:07 PM														"21/Oct/16 12:55 PM;msr;Implement permission handling in the LSD.
+
+
+
+Case 1:
+
+If the diagram is loaded from a url and the user has not the permission for one (or more) of the three Building Block Types, show a message: ""PERMISSION_WARNING""
+
+
+
+Case 2:
+
+If the user opens the default diagram and has not the permission for one (or more) of the Building Block Types, use an ordered list of all Building Block Types (from the Masterplan Diagram) for the content type. As soon as you found a content Building Block Type, find related Building Block Types or attributes for the axes.
+
+If this does not work, show the message ""PERMISSION_WARNING"""	"25/Oct/16 12:07 PM;madu;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-114
+
+
+
+The only one thing remarkable is ESLint errors for lsdItemDecorator.js on some functions that are used before they're declared. By this wasn't introduced by commits in scope of this ticket thus ignored"																																																					

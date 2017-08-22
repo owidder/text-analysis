@@ -1,0 +1,18 @@
+Add to context menu submenu for filtering content elemnts by non-enum attributes	"BEFORE STARTING: split this along kinds of attribute types: numeric, text, date if major development is needed.
+
+No splitting needed if existing context menu and controls can be reused.
+
+by attributes with a type other than enumeration, that is numeric, text, date.
+
+otherwise as in 378
+
+controls for the input value (text field, slider, date picker) are in the scope of this ticket. 
+
+They may be reused or must be copied from NCD."		New Feature	iteraplan PO	04/Mar/15 3:27 PM	07/Apr/15 1:12 PM														"04/Mar/15 3:46 PM;wfr;effort depends on reuse: with reuse more like 5, without up to 13
+"	"07/Apr/15 9:07 AM;msr;-Use the following wording for menu entries:-
+
+* -Show from Default attribute group-
+* -Show from Strategic measurement categories-
+* -.. (all availabe attribute groups)-
+
+-Use second level menu for attribute names like in the Nested Cluster Diagram and the third level menu for attribute values like in the Nested Cluster Diagram.-"	07/Apr/15 1:12 PM;sepr;It was splited in smaller issues and close	09/Apr/15 2:31 PM;msr;Please use existing sub-menu entries from Nested Cluster Diagram instead of my previous comment.																																																			

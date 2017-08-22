@@ -1,0 +1,21 @@
+Create new coloring test cases in NCD	"please edit the e2e-test tracability excel sheet located in e2etest subfolder after implementing the tests
+
+
+
+
+
+create new file(s) or extend both/one of the following files :
+
+- Coloring-by-enumeration-properties-spec.js
+
+- Coloring-by-numeric-properties-spec.js
+
+
+
+add new test cases which test the following:
+
+- use colorpicker to choose new colors 
+
+- remove coloring by context menu (click on inner/outer box)
+
+- remove coloring by legend's ""x"" icon"	62712	Sub-task	iteraplan PO	06/Nov/15 10:57 AM	18/Jan/16 9:42 AM					NCD	Test								18/Jan/16 9:42 AM;msr;Won't fix SVG-NCD-Tests.																																																						

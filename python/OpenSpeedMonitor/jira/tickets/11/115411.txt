@@ -1,0 +1,1 @@
+Make ElasticMiContext available	ElasticMiContext needs to be available for anonymous access		Improvement	iteraplan Thunderduck	20/Mar/17 11:00 AM	22/Mar/17 8:22 AM														22/Mar/17 8:22 AM;aan;The images should only be available if one is logged in, so this is not necessary right now.																																																						

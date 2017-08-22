@@ -1,0 +1,1 @@
+Vertical scrolling in legend is not possible	Please activate vertical scrolling for the legend if the legend height is bigger than the screen size.		Bug	iteraplan PO	23/Jun/16 4:10 PM	24/Jun/16 4:08 PM																																																																				

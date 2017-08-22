@@ -1,0 +1,9 @@
+UpdateEvents werden nicht gelöscht	"Ein Blick in die Datenbank zeigte, dass wir 7 Mio CsiAggregationUpdateEvents haben, von denen 2 Mio eigentlich gelöscht sein sollten, da sie zu CsiAggregations gehören, die als closed_and_calculated makiert sind.
+
+"		Bug	OpenSpeedMonitor	21/Apr/16 9:31 AM	17/Jun/16 11:15 AM														"12/May/16 2:25 PM;mmi;Der Service, der für das Berechnen und Löschen zuständig ist, wurde refactored.
+
+Außerdem wurde ein Try-Catch-Block hinzugefügt, sodass beim Auftreten eines Fehlers mit den nächsten CsiAggregations fortgefahren wird, anstatt komplett abzubrechen.
+
+Vor dem Deployment soll die Funktion noch einmal mit dem gesamten Dump getestet werden."	"24/May/16 2:19 PM;mmi;Lokaler Test lief in ca 3h mit dem komplett Dump durch.
+
+Muss noch auf Dev-Instanz getestet werden."																																																					

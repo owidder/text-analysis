@@ -1,0 +1,89 @@
+Attributes as diagram-basis (=header)	"*Summary:*
+
+Extend the existing Cluster Diagram to be based on attributes (i.e. as header) instead of Building Block Types (at the moment).
+
+All attributes are possible except for date interavals
+
+
+
+*As-Is:*
+
+* Only Building Block Types can be selected as basis for the diagram
+
+
+
+*To-Be:*
+
+* Attributes or Building Block Types can be selected as basis for the diagram
+
+
+
+*Implementation Details:*
+
+* After selecting the attribute all possible values are shown as header (values = columns)
+
+* Default there is the alphabetically first Building Block Type row selected (Fallback: alphabetically first relation)
+
+* Url: Save selected attribute and selected row to the url
+
+
+
+*UI:*
+
+* Legend: ""Header"" (German ""Kopfzeile"") \n Attribute name
+
+* Legend: ""Row(s)"" (German: ""Zeile(n)"") \n localised name of selected row
+
+* Toolarea:
+
+** Main entry on first position: ""Header"" (German ""Kopfzeile"")
+
+** Sub-entries of Header: ""Building Block Type"" (German: ""Bebauungselement"")
+
+** Sub-entries of Header: ""Attribute"" (German: ""Merkmal"")
+
+** Sub-entries of attributes: All attribute names sorted alphabetically"		New Feature	iteraplan Speedbird	25/Aug/16 11:12 AM	13/Sep/16 8:38 AM														26/Aug/16 10:21 AM;msr;Ticket already discussed on 26th August	"07/Sep/16 3:08 PM;tam;As already discussed:
+
+# Also date time should be displayed
+
+# Empty columns are allowed. That mean if for some header values there are no data, so the empty column will be displayed"	"07/Sep/16 3:20 PM;tam;About range for numeric values.
+
+
+
+Let look at all possible cost values from the bank data. The list is already sorted
+
+1.00, 10.00, 15.00, 38.00, 40.00, 50.00, 80.00, 100.00, 300.00, 400.00, 500.00, 600.00, 700.00, 800.00, 900.00, 1000.00, 2000.00, 4000.00, 5000.00
+
+
+
+In the old client we have following range: <38, 38-100, 100-600, 600-700, > 700
+
+
+
+Here is the implementation idea to create ranges for numeric values in the new client.
+
+# Get count of the elements in the list. If there are just 5 or less values, just display this values
+
+# otherwise compute delta = count / 5
+
+# For range values get element at positions delta, 2*delta, 3*delta, 4*delta
+
+
+
+So for the costs we have delta = 19 / 5 = 3.8. We would take the element at position 3, 7, 11, 15 => these are 15, 80, 500, 900
+
+The range is then < 15, 15-80, 80-500, 500-900, >900
+
+We use the computed ranges as follow: the lower bound is included, the upper bound is excluded. In our case that means => v<15, 15<=v<80, 80<=v<500, 500<=v<900, v>=900
+
+
+
+Please note, we will need this computation also in other diagrams => that's why it should be kind of common functionality."	"07/Sep/16 4:54 PM;tam;Since responsibility attributes are not contained in the metamodel, they won't be handled in this sprint.
+
+A follow-up ticket is created IPTS-165"	08/Sep/16 4:53 PM;tam;Please add handling to filter out 'the direction' attribute	"12/Sep/16 3:17 PM;tam;For now attributes of relations and business mappings are already selectable in the toolarea. However for them no content will be displayed.
+
+
+
+That's why there is a follow-up ticket for attributes of relations and business mappings: IPTS-167"	"12/Sep/16 6:00 PM;ants;Unit tests added according to Review comments.
+
+Revisions 4320, 4321."	13/Sep/16 8:37 AM;dmkh;Review is done, all requirements are implemented, unit tests added: https://iteraweb.iteratec.de/fisheye/cru/IP-38																																															

@@ -1,0 +1,4 @@
+future improvements on metamodel edit ui	"this is an umbrella ticket to collect ideas for improvements on the metamodel edit ui
+
+* make the persistentname editable until a created metaobject is merged into the applications metamodel.
+* allow better distinction of the different subtypes of UniversalType"		Improvement	iteraplan PO	20/Nov/12 4:40 PM	30/Dec/15 2:32 PM					gui	metamodel	usability																																																													

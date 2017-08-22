@@ -1,0 +1,1 @@
+Date Picker and Range Slider	Make Date Picker and Range Slider widgets work in the single filter directive.	71661	Sub-task	iteraplan PO	12/Feb/16 12:32 PM	25/Feb/16 1:19 PM					filter																																																															

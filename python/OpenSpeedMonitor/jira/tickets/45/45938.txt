@@ -1,0 +1,11 @@
+revamp build server	"Java 7
+Tomcat 7
+other?
+
+1) what is running now
+2) how can we migrate what, step by step
+3) can we revert?
+4) when is a low-risk time window for migration (and reverting, if needed)
+5) do it
+
+first build server, after that demo server"		Task	iteraplan PO	30/Jul/13 3:10 PM	14/Jul/16 2:22 PM																																																																				

@@ -1,0 +1,21 @@
+NCD: Text lenght (text input bar for filtering by text properties)	"Summary: Uncorrect seraching behavior with several keywords in the Text input bar
+
+Steps to reproduce: 
+1. Go to NCD (ISD+IS)
+2. Use filter by ""Description"" text properties for inner elements
+3. Enter ""Account management system for * check accounts * savings accounts * money market accounts in the **regional** branch status"" in the Text input bar
+4. Click on ""Search"" button
+Actual: Empty diagram
+Expected: Should be displayed  ""Account-Sys RB # 3.1"" 
+
+Comment: Maybe better to add  lenght validation for text?
+"		Bug	iteraplan PO	27/Mar/15 9:53 AM	19/Jan/16 1:56 PM														"15/Apr/15 11:17 AM;wfr;Recommendation: defer
+
+AND LATER
+analyze
+
+first idea: this has to do with multiline text and line breaks
+so searching needs a kind of normal form of both item values and search value
+
+test case is valid, but somewhat atypical. 
+I expect users to search for single words in the description, not for whole multiline sections."																																																						

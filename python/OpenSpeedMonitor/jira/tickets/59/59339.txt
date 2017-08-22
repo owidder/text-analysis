@@ -1,0 +1,3 @@
+Extend ifdItemBuilder-spec for coloring	"* Extend the ifdItemBuilder-spec for the ""coloringPropertyValues"" and test lines 103-105 in ifdItemBuilder (version 1440).
+
+* Create a new test in ifdItemBuilder-spec for the special cases with two equal names, ..."		Improvement	iteraplan PO	07/Oct/15 3:37 PM	12/Oct/15 10:43 AM					test																																																															

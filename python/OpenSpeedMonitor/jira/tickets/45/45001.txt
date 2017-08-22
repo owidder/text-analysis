@@ -1,0 +1,21 @@
+Improve Dashboard page load time	"The dashboard page needs too much time to load when there are many building blocks with many attributes. In one sample case, it took about 30s until the server sent a response.
+
+One major reason is probably, that the data for all available diagrams is retrieved and prepared up-front, before the page is even sent to the user. More asynchronousness would probably help here, so that only data for the pie charts is loaded when it's actually needed."		Improvement	iteraplan PO	20/Jun/11 3:29 PM	20/Sep/12 2:52 PM					dashboard	performance	reports						Enterprise Edition Build-v2.9.M1-r13665 (2011-06-06-15-50-18)	25/Jul/11 9:56 PM;agu;The issue ITERAPLAN-167 should also dramatically improve the performance, till caches are not filled.	02/Aug/11 11:23 AM;tng;Hi Arturas, are u working on this issue? Im on analysing this... if theres no conflict with what u are doing... i will take it, maybe:)	02/Aug/11 12:41 PM;agu;I am not working on this issue. Go ahead :)	"08/Aug/11 6:18 PM;tng;Hello all,
+
+i write this message to set the ticket status back to TODO. More time should be invested on this ticket as i was previously estimated. The allowance of asynchronous calls, which will reduce the response time of the dash board, requires many changes in source code (esp. in the class DashBoardController). The init-method of this class should be reconstructed so that asynchronous calls to become possible.
+
+On the dashboard page, there is to find the overall chart-diagram, where system building blocks are grouped into related types. This chart should be shown all of the time when dashboard menu is selected. Based on the logic of the current init-method, this overall chart-diagram can only be shown when the init-method runs to its end. It means, its not possible by simply stopping some parts of the init-method, those will be asynchronously called later when needed, still to have the dashboard page with overall chart-diagram shown.     
+
+Some kind of tests were made with the following results, on how long each method inside init-method runs:
+1. around  0ms - super.init(model, session, request); 
+2.      3280ms - DashboardElementLists elements = dashboardService.getElementLists();
+3. around 50ms - each of the set...Map();  
+4.      2078ms - addDashboardAttributes(model, elements);
+5. other methods wont take long.
+
+Refactoring, reconstruction of the method 2. and 4. is therefore necessary for improving dashboard load time.
+
+Thanks for the time and tschüss,
+Minh
+
+"	22/Sep/11 4:54 PM;agu;I think the main problem is that ALL available Building Blocks will be loaded into heap and then the calculations will be performed. A much better solution would be to let the DB to do the job :)	20/Sep/12 2:52 PM;sry;The dashboard is being re-implemented in a completely different fashion. The old impl won't be updated any more.																																																	

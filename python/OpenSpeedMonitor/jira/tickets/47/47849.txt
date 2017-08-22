@@ -1,0 +1,45 @@
+New Client does not work with SSO	"The new client does not work with SSO. Depending on the browser (Internet Explorer, Firefox or Chrome) either an empty page, an empty page with header or a frozen page is displayed.
+
+To reproduce the defect use the following iteraplan instance (login with iteratec-credentials):
+http://sql-iteraplan.iteratec.de/iteraplanSSO/
+
+Please analyse and fix the error.
+Most likely REST api is the issue."		Bug	iteraplan PO	22/Jun/15 9:39 AM	07/Jul/15 9:55 AM					newClient	sso								"24/Jun/15 11:21 AM;fam;Faced some problems during analyzing.
+Obviously all request get rejected with 401.
+When trying wrong credentials, with status 401 right behaviour occours and login-popup gets reloaded.
+When trying right credentials, response also contains 401 but not getting rendered as app hang up. 
+Clarification about how to continue necessary."	"06/Jul/15 12:49 PM;tam;Some more steps to better reproduce:
+
+1. Open classic iteraplan of SSO instance
+
+2. Open new client. The first start works, but after some page refreshs (F5) IIS seems to hang up.
+
+
+
+Restart of IIS helps.
+
+
+
+Note:
+
+* This problem seems not to be caused by REST request over REST API, but by new client. If you only send REST requests IIS continues to work as expected.
+
+* Also the Tomcat itselfes runs normally after IIS hanged up.
+
+* When IIS is hanging the IIS restart also takes more time"	"06/Jul/15 2:48 PM;tam;After update of the Boncode Connector to version 1.0.24 this behaviour seems to be gone.
+
+Maybe the fix came with the version 1.0.23 since our remote server is running on Windows 2012 with IIS8: 
+
+
+
+{quote}Version 1.0.23 Updates:
+
+* Fix: IIS InstanceId determination on certain computers would throw errors.
+
+* Fix: Windows 2012 flexgateway receiving out of order packets.
+
+* Fix: Windows 2012 flexgateway empty packets from tomcat would cause connection abort.{quote}"	"07/Jul/15 9:55 AM;fam;The Update obviously fixed the Bug.
+
+Checked function now and it's working.
+
+Ticket closed."																																																			

@@ -1,0 +1,19 @@
+Das aktuelle OTTO-CSI-Mapping manuell als TimeToCsMappings erzeugen.	"Die Übersetzung Ladezeit->Kundenzufriedenheit soll für auf BY_MAPPING statt BY_RANK umgestellt werden. 
+
+Hierfür muss das aktuelle CSI-Mapping aus der angehängten Excel in de.iteratec.osm.csi.TimeToCsMapping's übersetzt werden und diese müssen für alle relevanten Pages manuell einmalig erzeugt werden."		Task	OpenSpeedMonitor	30/Nov/15 1:24 PM	14/Dec/15 4:13 PM														"03/Dec/15 12:55 PM;mmi;Die Ladezeiten in der Tabble ""CSI-Desktop"" bis 20.000 ergänzt.
+
+Die Einträge bei denen 0% rauskamen, bspw ""HP"" ab 9600ms mussten manuell auf 0% gesetzt werden, da die Formel sonst zu 100% ausgewertet wird."	"09/Dec/15 11:58 AM;nku;* In der Excel von Uwe habe ich die Mapping-Tabellen für Desktop und Mobile bis 20.000ms erweitert.
+
+* Im Anhang findet sich...
+
+** das Groovy-Script, mit dem sich aus dem CSV der Excel das CSV für den Import von DefaultTimeToCsMappings erzeugen lässt.
+
+** Die CSV's für den Import von Desktop- und Mobile-DefaultTimeToCsMappings
+
+
+
+Die entsprechenden Dateien finden sich auch im teamdrive: 
+
+_iteraSpeed/OSM/CRs/20151202_Import_CSI_Mapping_OTTO/_
+
+"	11/Dec/15 5:51 PM;mmi;Kommata durch Punkte ersetzt (amerikanisches Zahlenformat)	16/Dec/15 1:33 PM;nku;Der finale Stand der zu importierenden CSV's																																																			

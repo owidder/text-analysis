@@ -1,0 +1,5 @@
+iteraplan-Daten-Schnittstelle in Outdoor anbinden	"Ggf. bestehende Indoor-Lösung nutzen
+
+
+
+Statt Fake-Daten die iteraplan-Daten anfragen und verwenden."		Task	EAMV15	20/Nov/15 5:16 PM	30/Nov/15 11:59 AM														30/Nov/15 11:59 AM;fbe;using DataSerive (with underlying GIS and iteraplan datas) in outdoor scenario																																																						

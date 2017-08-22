@@ -1,0 +1,5 @@
+REST API should return 404 Not Found when trying to access a single BB that does not exist	"When trying to access a single Building Block via the REST API (example URL: iteraplan/api/data/InformationSystem/1), but no Building Block with the given ID exists for the given Type, an empty result is returned. 
+It would be more RESTful if instead a 404 not found error was returned.
+In the world of REST, the Information System with the ID 1 is a resource, and if no Information System with that ID can be found, a 404 is the logical response."		Bug	iteraplan PO	21/Oct/13 5:25 PM	23/Oct/13 5:33 PM														23/Oct/13 5:33 PM;kgo;Works fine.	"23/Oct/13 5:55 PM;psc;Reviewed. Now existing ids lead to json while non-existing lead to error message. One remark: if no numerical id but something else is used as identifier on access, the error message currently looks different. I had a brief discussion with Wolfgang about it. This is regarded a feature, since one error message informs that no such element can exist, the other informs that it could exist but is not available. 
+
+Solution works. Ticket will be closed."																																																					

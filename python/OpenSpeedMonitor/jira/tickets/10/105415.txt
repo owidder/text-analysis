@@ -1,0 +1,55 @@
+VPN funktioniert nicht	"Ich habe gestern mehrfach versucht mich per VPN in München anzumelden, das war nicht möglich.
+
+
+
+Laut ""Checkpoint Security ..."" Client funktioniert das angeblich. Ich kann dann aber weder auf das Internet noch auf iteratec-Seiten zugreifen. Kurz danach bricht ausserdem die Verbindung zusammen und es wird neu verbunden.
+
+
+
+Laut Wiki ist alles korrekt eingerichtet. Über diese Probleme konnte ich im Wiki nichts finden.
+
+"		Task	Infrastruktur	12/Dec/16 5:45 PM	16/Jan/17 9:53 AM	Sonstiges													"13/Dec/16 8:13 AM;kti;Hallo Danny,
+
+
+
+dazu gab es einen Eintrag im iteraHub - https://iterahub.iteratec.de/#/thread/6721
+
+
+
+Bitte stell sicher, dass die aktuellste Version auf deinen Rechner installiert ist und richte die Site neu ein.
+
+
+
+Klappt es dann weider?
+
+
+
+VG
+
+Kathrin"	"13/Dec/16 9:15 AM;dla;Achso ... dann habe ich falsch gesucht. Wäre schön wenn ihr das im Confluence bei der Installation mit unterbringt.
+
+Ich schaue mal zuhause nach - Antwort morgen."	"21/Dec/16 11:32 AM;kti;Hallo Danny,
+
+
+
+hast du weiterhin noch Probleme mit deiner VPN-Verbindung oder funktioniert jetzt wieder alles?
+
+
+
+Viele Grüße
+
+Kathrin"	"16/Jan/17 9:53 AM;kti;Hallo Danny,
+
+
+
+nachdem wir nichts mehr gehört haben, gehen wir davon aus, dass das Problem behoben ist.
+
+
+
+Wir schließen daher das Ticket.
+
+
+
+VG
+
+Kathrin"																																																			

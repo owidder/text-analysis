@@ -1,0 +1,7 @@
+Update 3rd party library dependencies	"Update iteraplan's depedencies on 3rd party libraries:
+* Spring Framework 3.1.4.RELEASE
+* Spring Security 3.1.4.RELEASE
+* Spring Webflow 2.3.2.RELEASE
+* Hibernate ORM 3.6.10.Final
+* Hibernate Search 3.4.2.Final
+"		Task	iteraplan PO	31/May/13 2:25 PM	03/Jun/13 11:37 AM					update																																																															

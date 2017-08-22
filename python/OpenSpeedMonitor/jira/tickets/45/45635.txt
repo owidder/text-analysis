@@ -1,0 +1,5 @@
+Spelling mistakes in an Exception	"The error message ""The query framework has experianced a fatal error (error code: {0})."" contains a spelling mistake.
+The word ""experianced"" must be changed to ""experienced"".
+"		Bug	iteraplan PO	07/Mar/13 10:30 AM	11/Apr/13 5:42 PM														09/Apr/13 2:57 PM;sry;Please remember to check that spelling in all languages' files.	"11/Apr/13 5:42 PM;sry;Thx.
+
+@Ingo: Just do it! This was a really small ticket."																																																					

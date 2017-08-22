@@ -1,0 +1,1 @@
+Crawljax Veränderungen veranlassen	Die Veränderungen in Crawljax sollen offiziell vom Entwickler unterstützt werden, damit diese in zukünftigen Builds berücksichtigt werden. Damit wäre die Möglichkeit zukünftiger Aktualisierungen von Crawljax gegeben.		Story	secureCodeBox	12/Nov/14 10:51 AM						ITMC																																																															

@@ -1,0 +1,2 @@
+Teile dieses Jiras veröffentlichen?	"Oder in den github-Bugtracker übernehmen?
+Dann müsste man allerdings ins Englische übersetzen."		Task	OpenSpeedMonitor	03/Jun/14 12:20 AM	24/Oct/14 2:14 PM														24/Oct/14 2:14 PM;nku;Erst mal zurück gestellt.																																																						

@@ -1,0 +1,5 @@
+Erweiterung des Zap-Scanners, um Authentifizierungs-Funktionalität	"Ziel dieses Leistungspaketes ist die Umsetzung einer Authentifizierungsmöglichkeit auf der ot- to.de Plattform für die Spider Komponente (iteraSpider) und den Scanner (zapScanner).
+
+
+
+Aktuell unterstützen die Spider- und Scanner-Komponenten für die Sicherheitsüberprüfung des otto.de Shops nur öffentlich erreichbare Seiten. Für eine vollständige Abdeckung der sicherheits- relevanten Seiten des Shops sollten auch die Seiten berücksichtigt werden können, für die ein Kunden-Login notwendig ist (Bestellprozess, Aftersales)."		Story	secureCodeBox	03/Mar/16 3:36 PM	21/Aug/16 12:57 PM	secureBoxEngine	secureBoxZap			iteratec	OTTO																																																														

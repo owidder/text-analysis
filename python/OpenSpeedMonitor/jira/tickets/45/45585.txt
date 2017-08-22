@@ -1,0 +1,4 @@
+provide an isModifiable() method for MixinTypeExpression	"to allow a distinction between mixins that can be modified by the user (via metamodel edit) and mixins that the user is not allowed to edit (e.g. builtin mixins) the MixinTypeExpression interface should provide an isModifiable() method.
+
+This method is a candidate to be pulled up into the NamedExpression interface step by step as needed."		New Feature	iteraplan PO	13/Nov/12 4:20 PM	18/Jul/14 7:48 AM														"18/Jul/14 7:48 AM;wfr;""edit metamodel"" is no longer on the roadmap.
+"																																																						

@@ -1,0 +1,9 @@
+Deletion of Attribute and Reaction get in each other's way	"A metamodel change (observed with an deletion of an attribute) and a running Reaction can get in each other's way. The reaction might see different/inconsistent states of the metamodel, which might lead to an exception.
+
+
+
+Please prohibit this. A solution might be, that every metamodel change has to finish before some reaction starts running and vice versa.
+
+
+
+Please contact [~cst] for the database and the script to reproduce the problem. Please also check, if there are any other metamodel changes which could lead to potential problems for reactions."		Bug	iteraplan Thunderduck	05/Apr/17 12:47 PM	04/May/17 9:52 AM														28/Apr/17 8:59 AM;aan;Support-Ticket: IPS-354																																																						

@@ -1,0 +1,15 @@
+Flussrichtung als filtern property für Massenupdates, Schnittstellen, Tabelarische Auswertungen	Es soll möglich sein die Flussrichtung als property beim filtern zu wählen (besonders ISI, MU, TR)		New Feature	iteraplan PO	28/Apr/11 3:20 PM	07/Jun/11 11:27 PM														"30/May/11 2:07 PM;bsi;Bulk Update of Interfaces fails with {{NullPointerException}}
+
+{noformat}
+java.lang.NullPointerException
+        at de.iteratec.iteraplan.model.Transport.getIdentityString(Transport.java:98)
+        at de.iteratec.iteraplan.model.BuildingBlock.toString(BuildingBlock.java:509)
+{noformat}
+
+Repro scenario:
+ * search filter: {{""Direction is not}} ->""
+ * select all found results
+ * select update properties for update: {{Direction}} and {{Transported Business Objects}}
+ * in step 2: select, but not add, standard value for BO
+ * select {{Direction}} for each element
+ * update"	03/Jun/11 2:38 PM;sfe;The option to use a standard value (as possible for relations and attributes) for the interfaces' direction when defining a bulk update would be nice, in my opinion.	07/Jun/11 5:12 PM;bsi;There are no errors now, but the option for standard value is still missing.	07/Jun/11 11:27 PM;kvo;standard option not required																																																			

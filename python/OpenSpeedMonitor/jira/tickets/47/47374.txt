@@ -1,0 +1,4 @@
+Adjust REST-interface and Import to take advantage of continuous model reload	"Currently, the micro import used by the REST-API and the Excel/XMI-Import use some explicit reloads of the complete elastic model.
+
+Most of these explicit reloads are not necessary anymore with the continuous elastic model update.
+Please adjust."		Improvement	iteraplan PO	02/Feb/15 1:42 PM	13/Apr/15 10:00 AM					elastic	update																																																														

@@ -1,0 +1,21 @@
+ABR Zugriff für SBK-Repo	"Hi,
+
+
+
+könnt ihr bitte Anton Brass Lese/Schreib-Zugriff auf das SBK-SVN-Repo geben?"		Task	Infrastruktur	07/Jun/17 2:40 PM	21/Jun/17 8:37 PM	svn													"07/Jun/17 3:27 PM;ehi;Folgende Rechte-Einträge sind für Projekt SBK definiert.
+
+
+
+[groups]
+
+SBK-group = tdi,sas,ehi,jec,kti,tusbk,amr,sdo,spi,thf,fkn,fbo,afe,abr
+
+...
+
+[SBK:/]
+
+@SBK-group = rw
+
+	
+
+Beste Grüße, Elke"																																																						

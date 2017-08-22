@@ -1,0 +1,1 @@
+Tags für Jobs	Mittels des Grails-taggable-Plugins werden Jobs tagbar gemacht. Bei der Jobeditierung lassen sich Tags definieren, ändern und löschen. In der Jobtabelle werden die Tags angezeigt und es lassen sich bei der Filterung Tags an- und abwählen.		Task	OpenSpeedMonitor	20/Feb/14 9:54 AM	26/Feb/14 4:51 PM																																																																				

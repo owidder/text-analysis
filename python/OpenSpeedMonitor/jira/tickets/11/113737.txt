@@ -1,0 +1,11 @@
+Remove tables "ug" and "ug_ue", in iteraplan 6.1	"*Summary:*
+
+Delete no longer used tables ""ug"" and ""ug_ue"" for iteraplan 6.1
+
+
+
+*Details:*
+
+* The usergroup-functionality which used these tables was removed in iteraplan 6.0 and the data of these tables was already migrated in scope of this task: IPTS-616
+
+* So these tables can now safely being removed"		Task	iteraplan Speedbird	03/Mar/17 1:13 PM	03/Jul/17 9:56 AM														04/Jul/17 9:34 AM;aan; commit [27329 |https://iteraweb.iteratec.de/fisheye/changelog/iteraplan?cs=27329]does belong to ticket IPTT-544																																																						

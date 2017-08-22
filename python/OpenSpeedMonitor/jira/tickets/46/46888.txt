@@ -1,0 +1,6 @@
+Add context menu items for displaying nested boxes	"Show children as nested boxes
+Show parent as nested boxes
+Show predecessors as nested boxes
+Show successors as nested boxes
+Show used elements as nested boxes
+Show using elements as nested boxes"	46876	Sub-task	iteraplan PO	21/Aug/14 10:31 AM	29/Sep/14 10:07 AM																																																																				

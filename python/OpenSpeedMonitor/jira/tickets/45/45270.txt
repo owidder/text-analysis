@@ -1,0 +1,33 @@
+"IllegalArgumentException: duplicate key" when saving a greater range value than the upper bound of a number attribute 	"Repro:
+
+1. Create a new number attribute
+2. Set lower(e.g 5) and upper(e.g 45) bound
+3. Set user defined ranges (e.g 35, 45 and 55)
+4. Save the attribute
+
+Result:
+
+{noformat}
+java.lang.IllegalArgumentException: duplicate key: RangeValue[id=<null>,value=55,attributeType=<null>]
+at de.iteratec.iteraplan.persistence.dao.RangeValueDAOImpl.reload(RangeValueDAOImpl.java:68)
+at de.iteratec.iteraplan.businesslogic.service.AttributeTypeServiceImpl.reloadRangeValues(AttributeTypeServiceImpl.java:243)
+at de.iteratec.iteraplan.presentation.dialog.AttributeType.model.RangeValuesComponentModel.configure(RangeValuesComponentModel.java:180)
+at de.iteratec.iteraplan.presentation.dialog.AttributeType.model.RangeValuesComponentModel.configure(RangeValuesComponentModel.java:69)
+at de.iteratec.iteraplan.presentation.dialog.AttributeType.model.NumberAttributeTypeComponentModel.configure(NumberAttributeTypeComponentModel.java:84)
+at de.iteratec.iteraplan.presentation.dialog.AttributeType.model.NumberAttributeTypeComponentModel.configure(NumberAttributeTypeComponentModel.java:54)
+at de.iteratec.iteraplan.presentation.dialog.AttributeType.model.AttributeTypeComponentModel.configure(AttributeTypeComponentModel.java:173)
+at de.iteratec.iteraplan.presentation.dialog.AttributeType.AttributeTypeFrontendServiceImpl.saveComponentModel(AttributeTypeFrontendServiceImpl.java:156)
+{noformat}"		Bug	iteraplan PO	17/Nov/11 11:23 AM	24/Apr/12 1:25 PM					gui	usability								"23/Apr/12 6:28 PM;gph;I couldn't figure out yet, when this error occurs exaclty. Sometimes it happens, sometimes it doesn't. I think the problem has nothing to do with the boundaries, because it happend with values inside the boundaries, too.
+
+Anyway, I found a few related problems in the code:
+
+de.iteratec.iteraplan.presentation.dialog.AttributeType.model.RangeValuesComponentModel.configure(NumberAT)  Line 193:
+A List with non-unique (=> all ""id""s are null) RangeValues is passed to the Service/DAO-Layer. This likely causes the Exception (see next point).
+
+de.iteratec.iteraplan.persistence.dao.RangeValueDAOImpl.reload(Collection<RangeValue>)  Line 68:
+A List with multiple elements is passed to com.google.common.collect.Ordering.explicit(), which causes the ""IllegalArgumentException"".
+=> http://docs.guava-libraries.googlecode.com/git-history/v11.0.1/javadoc/com/google/common/collect/Ordering.html#explicit%28java.util.List%29
+
+de.iteratec.iteraplan.model.attribute.RangeValue.hashCode()  Line 151 f:
+In the case of getId()==null, the hashCode() returns Object's hashCode() and hence breaks the contact, that for equals()==true, hashCode() must return the same values. This can lead to a Set with multiple ""equal"" RangeValue objects, whose the keys (id) are all ""null"", because they have not yet been persisted.
+"	24/Apr/12 11:15 AM;gph;The bug is most likely fixed through adjusting the equals method of class RangeValue, which broke the equals-hashCode-contract for the case, that both ids were null.	24/Apr/12 1:25 PM;lci;Works fine.																																																				

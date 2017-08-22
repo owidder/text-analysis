@@ -1,0 +1,25 @@
+Translation for the headers of the list and the number of shown elements is not working at once  	"Load iteraplan and open a list, then change the language.
+
+The headers for list elements and the line ""showing all...elements"" are not translated (seems to happen only for english->german)
+
+
+
+compare also ITERAPLAN-4720"		Bug	iteraplan Speedbird	27/Jun/16 11:51 AM	19/Sep/16 12:46 PM														"15/Sep/16 3:05 PM;tam;Unfortunately commited solution doesn't work for me
+
+
+
+Steps to reproduce:
+
+# Switch to interactive client
+
+# If language is German switch to English and refresh page (F5)
+
+# open list view and change language
+
+
+
+=> You'll get same defect"	"15/Sep/16 4:31 PM;viol;Was found problem in ""app\js\common\commonHeader\commonHeaderController.js""
+
+In ""changeLocale"" function.
+
+For some reason, I could not override previous language with ""$translate.use(key);"""	16/Sep/16 12:55 PM;viol;Was found final solution.	19/Sep/16 12:46 PM;tam;The commited solution works.																																																			

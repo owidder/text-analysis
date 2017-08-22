@@ -1,0 +1,1 @@
+RICKSHAW Export: Legende überlagert X-Achse bei Export in Standard-Größe	RICKSHAW Export: Legende überlagert X-Achse bei Export in Standard-Größe		Bug	OpenSpeedMonitor	12/May/15 10:02 AM	12/May/15 1:37 PM																																																																				

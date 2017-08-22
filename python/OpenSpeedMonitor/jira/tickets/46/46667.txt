@@ -1,0 +1,18 @@
+Selenium test for NCD	"Add a selenium test for the NCD configuration and diagram generation.
+
+* Take existing manual test construction (that is Excel) as a basis. Implement these test cases, if nothing prevents test automation.
+* Add NCD configuration page to the page object tree. 
+* Add support for drag and drop, NCD test is the first place to use dnd,
+* Test should be able to run on both the existing implementation and the new one. Run tests with feature toggle in both settings.
+* Test must run successfully on existing implementations.
+* Test must tolerate expected differences in new implementations. For example: no objectified types for @id.
+* Test must fail on unexpected differences."		Improvement	iteraplan PO	27/May/14 12:20 PM	11/Jul/14 10:14 AM														"04/Jul/14 8:42 AM;isc;A large part of the test described in Excel was to be implemented with Selenium.
+For the remaining test, the sub ticket ITERAPLAN-2590 was created."	"04/Jul/14 2:37 PM;dop;Review:
+
+# Implement dragAndDrop function not by Id. Use name of building block instead. it's more intuitive and more flexible (or use at least some constants with corresponding names). 
+# Avoid usage of wait functions in test (e.g. NestingClusterDiagramTest). Hide waiting in previous invoked methods (drag and drop..) of page object
+# Only use wait in cases, in which it is absolutely necessary and not in general (see: private void clickElement() in NestingClusterDiagramPage)
+# Method _isErrorsOccurred_ in NestingClusterDiagramPage: set the timeout for the webdriver to 5 sec, otherwise it will last up to 30 seconds to execute this method (see isDownloadStartedMessageVisible)
+# NestingClusterDiagramPage: use also constants for row's id to click
+# Extend the javadoc docmentation
+"																																																					

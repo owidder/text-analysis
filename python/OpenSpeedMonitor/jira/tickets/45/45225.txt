@@ -1,0 +1,13 @@
+Nesting Cluster graphic initialization fails with NullPointrException	"With one customer's data, loading the nesting cluster graphic page failed with following exception:
+{code}
+[WARN ] [2011-10-27 18:54:07] (directwebremoting.impl.DefaultRemoter) Method execution failed:
+java.lang.NullPointerException
+        at de.iteratec.iteraplan.businesslogic.service.ecore.MappedEPackage.createEAttribute(MappedEPackage.java:207)
+        at de.iteratec.iteraplan.businesslogic.service.ecore.MappedEPackage.createNewEAttribute(MappedEPackage.java:185)
+        at de.iteratec.iteraplan.businesslogic.service.ecore.BuildingBlocksToEcoreServiceImpl.createEPackage(BuildingBlocksToEcore
+ServiceImpl.java:101)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+{code}
+
+The reason seems to be that *Available For Interfaces* is treated as an EnumAT on Technical Components (not Release!). The eClass lookup for Building Block Type Technical Component returns null, hence it crashes."		Bug	iteraplan PO	27/Oct/11 7:01 PM	10/Nov/11 6:00 PM					nesting	xmi								"10/Nov/11 6:00 PM;sry;Later it turned out that there were some small DB inconsistencies which caused that NPE. It was not really bug, and fixing the corrupted TCR entries in the DB resolved the problem.
+... just forgot updating this ticket here."																																																						

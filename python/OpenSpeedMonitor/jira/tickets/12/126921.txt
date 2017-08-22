@@ -1,0 +1,29 @@
+SEV: feedback for user when add relation was successful	"User Story: The user adds a relation in Single Element View. The relation is successfully added and displayed in a box further down. The user cannot see the change he made, because the box is not shown in his window (he would have to scroll down to check where his relation was added).
+
+ We want to give clear feedback.
+
+
+
+ 
+
+
+
+*ToDo*: When addition was successful:
+
+
+
+1. textfield contains the name of the added Relation.
+
+
+
+2. Textfield ""glows"" or lights up in green (#4CAF50) and grows about 2-4px(?) in every direction. The borders are blurred. Have a look at the ppt attachment. 
+
+
+
+The effect should only last some milliseconds.
+
+3. The textfield is emptied afterwards.
+
+
+
+Make sure this effect also occurs in the Relation-Tab"		Improvement	iteraplan Speedbird	12/Jul/17 9:56 AM	26/Jul/17 11:31 AM														26/Jul/17 11:31 AM;mash;Review is done																																																						

@@ -1,0 +1,1 @@
+Artifactory als Cache für Bamboo Builds und Tests nutzen	Damit die Builds schneller werden, sollten die maven, npm, und bower repositories durch unser artifactory gecacht werden.		Task	OpenSpeedMonitor	19/Jun/17 12:19 PM	27/Jun/17 9:49 AM																																																																				

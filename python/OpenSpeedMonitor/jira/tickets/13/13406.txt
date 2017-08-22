@@ -1,0 +1,69 @@
+Umbau des Berechnungs-Status von MeasuredEvents	"Wie in IT-380 beschrieben, kann es bei dem jetzigen Mechanismus zu Race-Conditions kommen, wenn hochfrequent EventResults hereinkommen und MeasuredValues berechnet werden (letzteres passiert beim Aufrufen von CSI-Dashboards).
+
+
+
+Um das zu beheben wird das Attribut calculated der MeasuredValues entfernt. Auch die zugrunde liegende enum wird gelöscht. Statt dessen führen wir eine neue Domäne ein:
+
+*de.iteratec.ism.chart.MeasuredValueUpdateEvent*
+
+Objekte dieser Klasse beschreiben entweder die Berechnung eines MeasuredValues oder das Veralten eines values und tragen immer den Zeitstempel des Eintretens des Ereignisses. 
+
+
+
+MeasuredValues müssen ab sofort neu berechnet werden, wenn entweder noch gar kein update-event vorliegt oder das aktuellste event eine Veraltung ist. 
+
+
+
+Damit die update-event-Tabelle nicht so riesig wird: 
+
+Es läuft ein nächtlicher Job, der für alle MeasuredValues, deren Interval seit einigen Stunden abgelaufen ist alle MeasuredValueUpdateEvents löscht, den MeasuredValue berechnet und dessen neue Boolean-Eigenschaft closedAndCalculated auf true setzt."		Improvement	OpenSpeedMonitor	27/Jun/14 12:51 PM	27/Oct/14 11:08 AM														"02/Jul/14 4:58 PM;nkuhn;Nach dem Depoloyment der neuen Version des SpeeedMonitors sollten folgende Änderungen an der DB vorgenommen werden:
+
+
+
+*Vorbereitung*
+
+
+
+Nicht mehr benötigte alte MeasuredValues können gelöscht werden:
+
+{code}
+
+delete from measured_value where aggregator_id>4;
+
+{code}
+
+
+
+*Migration Daten*
+
+
+
+Zur Vorbeugung von Performance-Issues beim nächtlichen Berechnen sollten die folgenden Schritte manuell durchgeführt werden:
+
+* Alle MeasuredValues mit {code}calculated == Calculated.YES || Calculated.YESNoData {code}, deren Interval bereits abgelaufen ist manuell auf {code}closedAndCalculated=true{code} setzen:
+
+Übersicht Häufigkeit kalkulierter Werte: {code}select aggregator_id,interval_id,calculated,count(id),min(started),max(started) from measured_value group by aggregator_id,interval_id,calculated order by aggregator_id,interval_id,calculated;
+
+{code}
+
+Anzahl zu aktualisierender Wochen-Werte:{code}select cast(closed_and_calculated as unsigned),count(id) from measured_value where (calculated='Yes' or calculated='YesNoData') and interval_id=3 and started < DATE('2014-06-27') group by closed_and_calculated;{code}
+
+Anzahl zu aktualisierender Tages-Werte:{code}select cast(closed_and_calculated as unsigned),count(id) from measured_value where (calculated='Yes' or calculated='YesNoData') and interval_id=2 and started < DATE('2014-07-10') group by closed_and_calculated;{code}
+
+Aktualisieren wöchentliche Werte: {code}update measured_value set closed_and_calculated=true where (calculated='Yes' or calculated='YesNoData') and interval_id=3 and started < DATE('2014-06-27');{code}
+
+Aktualisieren tägliche Werte: {code}update measured_value set closed_and_calculated=true where (calculated='Yes' or calculated='YesNoData') and interval_id=2 and started < DATE('2014-07-10');{code}
+
+
+
+*Anpassung DB*
+
+
+
+Nach der Implementierung wird folgende strukturelle DB-Anpassung (manuell) erforderlich:
+
+{code}
+
+alter table measured_value drop column calculated;
+
+{code}"																																																						

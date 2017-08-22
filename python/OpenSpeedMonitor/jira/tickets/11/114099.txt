@@ -1,0 +1,5 @@
+Performance of Edit	"* check performance of edit in single element view
+
+ * probably all editors are initiated on page load. it should be done on demand
+
+ * speed up open and close for editors"		Improvement	iteraplan Thunderduck	07/Mar/17 4:44 PM	26/Apr/17 11:03 AM																																																																				

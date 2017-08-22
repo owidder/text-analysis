@@ -1,0 +1,3 @@
+Uri synchronization of the column widths does not work	"When you resize the columns and then refresh the page the columns change their widths
+
+Check listConfiguration.js"		Bug	iteraplan Speedbird	05/Jul/16 4:33 PM	22/Jul/16 8:58 AM														05/Jul/16 4:37 PM;tsu;see ITERAPLAN-4689	22/Jul/16 8:58 AM;dmkh;Review is completed: https://iteraweb.iteratec.de/fisheye/cru/IP-76. Bug is fixed.																																																					

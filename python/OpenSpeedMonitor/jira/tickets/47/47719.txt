@@ -1,0 +1,5 @@
+To big place between columns	"Steps to reproduce: 
+1. Go to List view page with Product as content type
+2. To add 5 columns
+Actual: To big place between columns"	47647	Sub-task	iteraplan PO	27/Apr/15 9:54 AM	05/May/15 2:09 PM													"Workspace: Windows 8.1
+revision: 1034"	30/Apr/15 4:53 PM;alvo;Fixed under IPNINE-520	30/Apr/15 5:28 PM;dasm;Verified (rev 1080)																																																					

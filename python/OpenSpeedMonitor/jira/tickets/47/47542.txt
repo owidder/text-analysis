@@ -1,0 +1,6 @@
+Wrong page title	"Steps to reproduce:
+1. Go to List View page 
+2. Click on ""Show landscape diagram""
+Actual: Wrong page title"	47325	Sub-task	iteraplan PO	31/Mar/15 10:05 AM	07/Apr/15 1:32 PM													"Workspace: Windows 8.1 
+Browser: Google chrome 39.0, IE 11,Mozilla Firefox 36.0.4 "	31/Mar/15 11:42 AM;sepr;Fixed in rev. 850	"31/Mar/15 12:47 PM;dasm;Verified.
+revision: 851"																																																					

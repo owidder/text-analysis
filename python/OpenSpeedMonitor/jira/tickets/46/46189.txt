@@ -1,0 +1,6 @@
+Nesting Cluster Diagram EE/Win7/FF24/MySQL/German	"Test the iteraplan Nesting Cluster Diagram against the current test specification with the following environment:
+ * iteraplan EE
+ * Windows 7 (64 bit)
+ * Firefox 24.0
+ * MySQL Server
+ * German"	46148	Sub-task	iteraplan PO	22/Oct/13 3:03 PM	23/Oct/13 9:25 AM					test									22/Oct/13 5:32 PM;kgo;All is well with this configuration.	23/Oct/13 9:25 AM;sfe;Nothing special to remark as every test was finished with result "ok".																																																					

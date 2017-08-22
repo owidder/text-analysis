@@ -1,0 +1,27 @@
+Download is broken in Custom Dashboard	"Steps:
+
+ # Open custom dashboard.
+
+ # Insert some diagram.
+
+ # Download it.
+
+
+
+Actual:
+
+
+
+Image is cropped and no general information added.
+
+
+
+Expected:
+
+
+
+Image is fully downloaded. General information added."		Bug	iteraplan PO	19/Jun/17 4:35 PM															"19/Jun/17 5:05 PM;dmkh;Probably was already fixed here: IPTT-506
+
+Or not?
+
+Browser?"	19/Jun/17 5:11 PM;mash;[~dmkh], for me still reproducible in Chrome, FF, IE 11.																																																					

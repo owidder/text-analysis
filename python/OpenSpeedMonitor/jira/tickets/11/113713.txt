@@ -1,0 +1,39 @@
+Implement proper XWiki-parsing for all multiline-textfields in the New Client	"*Summary:*
+
+ Implement proper XWiki-parsing for all multiline-textfields in the New Client
+
+
+
+*Actual:*
+
+ * JSCreole is used for parsing the XWiki-Syntax in the New Client
+
+ * BUT JSCreole parses the creole-syntax which is different than the XWiki-Syntax
+
+
+
+*Expected:*
+
+ * Ensure that XWiki-Syntax is properly displayed in the New Client
+
+ * [http://lod.springer.com/wiki/bin/view/XWiki/XWikiSyntax?syntax=2.0]
+
+
+
+*Solution:*
+
+ * Use XWiki-Parser on the server and take over server-result. This is already implemented in scope of -IPTS-738-
+
+ * Remove JSCreole completely
+
+ * Out of scope: The Building Block Lists and attribute lists: The prototype is built in scope of: -IPTS-837-
+
+
+
+*Additionally:*
+
+ * Ensure that the server-xwiki-parser ignores already included html/js-fragements and returns them as escaped characters (to stop XSS)
+
+
+
+{color:#ff0000}UPDATE: {color}3-lines restriction for tooltip"		New Feature	iteraplan Speedbird	03/Mar/17 9:57 AM	26/May/17 5:16 PM														15/May/17 12:25 PM;mash;JSCreole is not removed from the Client because it is still used in lists.	18/May/17 10:34 AM;mash;Review and Resolve this ticket when sub tasks is closed too	22/May/17 9:07 AM;dmkh;JsCreole for lists is out of scope for this ticket, it will be removed completely from the client in IPTS-837 or its follow-up ticket	22/May/17 9:40 AM;dmkh;Review is done, two comments are here: https://iteraweb.iteratec.de/fisheye/cru/IP-604#general-comments	26/May/17 5:16 PM;msr;Remaing subtask will be done in scope of tooltip-unification																																																		

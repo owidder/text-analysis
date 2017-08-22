@@ -1,0 +1,3 @@
+Konfiguration console-plugin ändern	"Das folgende Setting sollte (zumindest für die für productive-environment) gesetzt werden (steht derzeit auf true):
+
+grails.plugin.console.fileStore.remote.enabled = false"		Task	OpenSpeedMonitor	26/Aug/15 6:52 PM	28/Sep/15 5:29 PM														28/Sep/15 5:29 PM;nku;Umgesetzt																																																						

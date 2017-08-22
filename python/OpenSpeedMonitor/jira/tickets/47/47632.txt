@@ -1,0 +1,9 @@
+The range slider should appears with range according to selected numeric attribute	"Steps to reproduce:
+1. Go to LSD (with IS as content type)
+2. Use filtering by Value added
+3. Use filtering by Cost
+Actual: With second numeric attribute the range slider stays unchanged
+Expected: The range slider should appears with range according to selected numeric attribute"	47574	Sub-task	iteraplan PO	20/Apr/15 10:43 AM	22/Apr/15 4:06 PM													"Workspace: Windows 8.1
+Revision: 951"	"22/Apr/15 10:51 AM;dasm;not fixed (rev 994)
+
+If user selects range for first numeric attribute - the second appears with wrong range"	22/Apr/15 4:03 PM;sepr;Duplicates IPNINE-491																																																					

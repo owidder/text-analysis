@@ -1,0 +1,5 @@
+Edit Information systems in Interface SV	"Currently, you can remove the connected information systems in the Interface Single View. 
+
+* The connected Information systems should be not removable
+
+* Implement an editor for each information system"		Improvement	iteraplan Thunderduck	17/Mar/17 1:07 PM	22/Mar/17 12:45 PM																																																																				

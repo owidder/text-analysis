@@ -1,0 +1,13 @@
+Audit logfile download page is not accessible via menu	"If the property ""audit.logging.enabled"" in ""iteraplan.properties"" is set to true, and the functional permission ""Download audit logfile"" is assigned, then the menu entry for the download page is still not displayed (?).
+
+The page (/jsp/Miscellaneous/*) can be accessed manually:
+[host]:[port]/iteraplan/miscellaneous/init.do
+
+Or the direct link:
+[host]:[port]/iteraplan/miscellaneous/requestAuditLogFile.do
+
+Maybe the page needs a little styling."		Improvement	iteraplan PO	29/Apr/13 4:15 PM	30/Dec/15 2:32 PM					audit	gui	usability							"11/Jun/13 2:36 PM;sfe;Also: even if audit logging is activated by setting the according property to true, no audit log is created until you change (in the log4j.properties file) the log level of the following line to DEBUG instead of INFO:
+
+bq.{{log4j.logger.de.iteratec.iteraplan.businesslogic.common.AuditLogger=INFO, auditlogfile}}
+
+Maybe this additional configuration effort could be avoided, or at least should be documented."																																																						

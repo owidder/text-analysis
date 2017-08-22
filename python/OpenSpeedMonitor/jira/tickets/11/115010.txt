@@ -1,0 +1,83 @@
+Bulk subscribe & Bulk unsubscribe	"*Summary*
+
+
+
+This should be implemented in Mass Update row
+
+
+
+User can choose more elements from the list and subscribe / unsubscribe them
+
+ * depending on current status
+
+ * or just changing this status, then different elements are not a problem (3rd bullet point in Scope)
+
+
+
+*Scope*
+
+ * possibility for a user to carry out mass subscription / unsubscription for filtered elements
+
+ * Confirmation dialog:
+
+ ** {color:#ff0000}UPDATE: {color} ""Do you really want to subscribe selected elements?"" (german: ""Wollen Sie die ausgewählten Elemente wirklich abonnieren?"")
+
+ ** {color:#ff0000}UPDATE: {color} ""Do you really want to unsubscribe selected elements?"" (german: ""Wollen Sie wirklich die ausgewählten Elemente abbestellen?"")
+
+ * loading indicator (as by mass update)
+
+ * {color:#333333}message dialog: (top right corner of a screen){color}
+
+ ** Operation successful (german: Vorgang erfolgreich durchgeführt)
+
+ ** Operation unsuccessful (german: Vorgang fehlgeschlagen)
+
+
+
+*UI*
+
+ * two icons in Mass Update row in Action column
+
+ ** {color:#14892c}star{color}
+
+ ** {color:#f79232}star border{color}
+
+ * tooltips for buttons/icons
+
+ ** {color:#d04437}UPDATE:{color} {color:#14892c}Subscribe selected (german: Ausgewählte abonnieren){color}
+
+ *** after clicking button user is added to subscribers
+
+ ** {color:#d04437}UPDATE:{color} {color:#f79232}Unsubscribe selected (german: Ausgewählte abbestellen){color}
+
+ *** after clicking button user is deleted from subscribers"		New Feature	iteraplan Speedbird	15/Mar/17 10:20 AM	25/Apr/17 8:59 AM														"21/Apr/17 1:51 PM;roia;1. Currently implemented confirmation dialog is ""Do you want to update chosen elements?"", which is different than in the requirements: ""Do you really want to subscribe chosen elements?""
+
+
+
+Also, I'd replace the word ""chosen"" with ""selected"".
+
+
+
+2. For me the mass update icons are inconsistent with the icons in grid rows - the subscribed row has ""filled"" star icon, so it would be logically that ""Subscribe"" icon is filled icon and ""Unsubscribe"" - the empty one (with border).
+
+
+
+Code review: [https://iteraweb.iteratec.de/fisheye/cru/IP-520#CFR-43761]
+
+
+
+ "	24/Apr/17 9:39 AM;olal;Changes according to code review At revision: 6616	24/Apr/17 10:38 AM;olal;According to Rost comment, i think that tooltips for icons "Subscribe chosen"/"Unsubscribe chosen" should be also changed to "sub/unsub *selected*"	"24/Apr/17 10:54 AM;mkt;It should be as it is written in the ticket, but on the other way around as it is now, star is to subscribe and star border should be as button to unsubscribe.
+
+
+
+When it comes to tooltips, the star should show 'is' state and pointing changes the icon and tooltipp is then 'to be' state."	24/Apr/17 11:40 AM;msr;[~mkt] is right. Additionally, I have updated the texts for subscribe and unscubsribe	24/Apr/17 12:26 PM;roia;[~olal], review updated	"24/Apr/17 12:33 PM;roia;[~mkt],
+
+{quote}It should be as it is written in the ticket
+
+{quote}
+
+so, the dialog should use the word ""selected"" and the tooltip should use word ""chosen""? Right?"	"24/Apr/17 1:14 PM;mkt;Not really, good point Rost!
+
+
+
+I've done changes in this ticket, we should use 'selected' instead of 'chosen'."	25/Apr/17 8:59 AM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-534																																														

@@ -1,0 +1,5 @@
+Deletion of Attribute Type Groups can cause database corruption	"example reproducer (with BankData):
+1. Create a new Attribute Type Group and assign the Attribute ""Complexity"" to it. Save.
+2. Delete the Attribute Type Group.
+
+Now the Default Attribute Type Group cannot be viewed and edited anymore, because the ""Complexity""-Attribute, which was put back into Default Attribute Type Group when we deleted the new ATG before, has an invalid value assign in the ""POS"" column of the ""AT""-table in the database."		Bug	iteraplan PO	08/Jun/11 11:03 AM	14/Jun/11 9:09 AM					AttributeTypeGroup									10/Jun/11 10:09 AM;sfe;The corruption already happens when creating the new Attribute Type Group, apparently.	10/Jun/11 10:54 AM;sfe;Also happens if you assign an Attribute to a different Attribute Type Group, because the "POS"-values of the remaining Attributes aren't adjusted accordingly.																																																					

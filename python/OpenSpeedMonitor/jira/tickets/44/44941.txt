@@ -1,0 +1,11 @@
+NullPointerException while rendering results for consistency check 3 (Updated during x days)	"When you execute consistency check 3 (*Which Building Blocks of type Y have been updated or changed in the last x days?*), the results cannot be rendered completely and the general error page appears near the end of the page.
+
+The log show following lines:
+{noformat}
+[ERROR] 17-May-2011 10:23:20 [iteratecLogTag] Exception occured while inserting a tiles template: 
+[ERROR] 17-May-2011 10:23:20 [iteratecLogTag] org.apache.tiles.impl.CannotRenderException: JSPException including path '/jsp/ConsistencyCheck/Results.jsp'.
+[ERROR] 17-May-2011 10:23:20 [iteratecLogTag] Getting Root Cause of this exception: 
+[ERROR] 17-May-2011 10:23:20 [iteratecLogTag] org.apache.tiles.impl.CannotRenderException: JSPException including path '/jsp/ConsistencyCheck/Results.jsp'.
+[ERROR] 17-May-2011 10:23:20 [iteratecLogTag] org.apache.tiles.util.TilesIOException: JSPException including path '/jsp/ConsistencyCheck/Results.jsp'.
+[ERROR] 17-May-2011 10:23:20 [iteratecLogTag] java.lang.NullPointerException
+{noformat}"		Bug	iteraplan PO	18/May/11 11:08 AM	01/Jun/11 10:53 AM					reports									24/May/11 4:24 PM;kvo;Worksforme																																																						

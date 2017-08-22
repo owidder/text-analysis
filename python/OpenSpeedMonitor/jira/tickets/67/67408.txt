@@ -1,0 +1,7 @@
+Haupt Menü in die Menu-bar	"Die Haupt-Navigation (_Messungen_, _Mess-Ergebnisse_ und _CSI_) in die schwarze Bootstrap-Menü-Leiste verlegen und die zweite Ebene (Buttons) als oberste Navigations-Ebene auf den eigentlichen Views nehmen. Ob dies dann Buttons bleiben oder eine Tab-Struktur kann man ausprobieren/müsste man noch entscheiden.
+
+
+
+Dadurch würden wir vertikal Platz sparen.
+
+"		Improvement	OpenSpeedMonitor	18/Dec/15 3:20 PM	18/Jan/17 3:56 PM																																																																				

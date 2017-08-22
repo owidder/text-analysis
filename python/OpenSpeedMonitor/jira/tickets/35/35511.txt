@@ -1,0 +1,49 @@
+"Measurements generally enabled" nicht persistieren	"Statt diese Eigenschaft in der DB zu persistieren sollte sie im Speicher gehalten werden.
+
+Dadurch würden die Messungen nur in der gerade neu gestarteten Instanz stehen.  Nicht aber in der bereits deployten/live-Instanz.
+
+
+
+Realisierung:
+
+* Attribut measurementsGenerallyEnabled transient machen
+
+oder (wenn das nicht funktioniert)
+
+* Statisches Feld in einen Service legen."		Improvement	OpenSpeedMonitor	23/Mar/15 10:20 AM	08/Apr/15 2:01 PM														"31/Mar/15 11:08 AM;rhc;* {{measurementsGenerallyEnabled}} wurde in den {{InMemoryConfigService}} ausgelagert
+
+* Im {{InMemoryConfigService}} kann der Status von {{measurementsGenerallyEnabled}} geändert werden
+
+* -View für osmConfiguration erstellt und {{measurementsGenerallyEnabled}} eingebunden-
+
+* -{{OsmConfigurationController}} erzeugt und die update-Methode implementiert-
+
+
+
+Evtl. noch zu ändern:
+
+* {{measurementsGenerallyEnabled}} kann zudem immer noch im {{ConfigService}} abgerufen werden (Sinnvoll?)
+
+* InMemoryConfigServiceSpec sinnvoll ? In dem Service befindet sich keine Logik
+
+"	"01/Apr/15 8:51 AM;rhc;Weitere Auslagerung von:
+
+* {{maxDataStorageTimeInMonths}} in den {{InMemoryConfigService}}
+
+
+
+Neu dazugekommen:
+
+* {{databaseCleanupEnabled}} hat den Nutzen, dass bei live-Schaltung die Neuerung erst mal deaktiviert ist und den normal Betrieb nicht beeinflusst "	"08/Apr/15 9:46 AM;nku;Folgendes bitte noch umsetzen:
+
+* maxDataStorageTimeInMonths bitte wieder persistieren
+
+* Auf der BatchActivity-Liste Warn-Hinweis und (im angemeldeten Zustand) Button zum Aktivieren des nächtlichen Cleanups einrichten (Analog Job-Liste). "	"08/Apr/15 2:00 PM;rhc;* maxDataStorageTimeInMonths wieder persistiert
+
+** Attribut von osmConfiguration
+
+* Warn-Hinweis in der View erstellt
+
+** Nightly DB Cleanup kann unter dem BatchActivityController aktiviert und deaktiviert werden
+
+** i18n angepasst"																																																			

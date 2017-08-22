@@ -1,0 +1,16 @@
+Date validation in QueryForms is performed against the locale used at construction of the query form instead of the current locale	"The QueryForms hold the locale to use for validating and parsing dates as a private field instead of requesting the locale from the usercontext.
+
+this leads to false positives in validation when changing the locale on a dialog with query forms.
+
+to reproduce:
+# navigate to the spreadsheet reports configuration
+# select informationsystem as type
+# ensure the runtime fields are filled
+# change locale => date in query form is not reformatted to the new locales format
+# execute report => report is generated
+# change the dates in query form to conform to the new locales date-format
+# execute the report => error message complaining about the wrong date-format (The specified date is invalid. Please insert a valid date according to the format 'mm/dd/yyyy'.) although the date is formatted 'mm/dd/yyyy'.
+
+same for normal date inputs in query forms
+
+this is because all the query forms backing beans are constructed using the locale currently set. This locale is used for date-validation and -parsing."		Bug	iteraplan PO	12/Jun/13 5:03 PM	14/Jun/13 1:38 AM					date	dateinterval	gui	query	queryform	reporting	reports	ui		14/Jun/13 1:38 AM;sry;Rare corner case, too much effort that nobody will notice. Thanks for reporting nevertheless.																																																						

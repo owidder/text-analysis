@@ -1,0 +1,17 @@
+Selecting technical components not available for interfaces but are available?	"This is the case:
+
+(1) define technical component and mark it as ""not available for interfaces""
+(2) create new interface
+(3) open selector for technical components (""Is implemented by the following Technical Components"")
+(4) technical component created in (1) appears in list
+(5) select technical component from (1)
+(6) add some more technical components (randomly, whatever is available)
+(7) press save
+
+There will be the following error then:
+""The following errors occurred: The chosen Technical Component cannot be used in an Interface.""
+
+Two issues:
+(a) why technical components not available for interfaces do appear in selection list?
+(b) WHICH technical component cannot be used in an interface? At least show the names of the technical components not suitable so there does not need to be any try-and-error
+"		Bug	iteraplan PO	04/Oct/13 9:07 AM	30/Dec/15 3:34 PM																																																																				

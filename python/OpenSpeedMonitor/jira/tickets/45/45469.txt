@@ -1,0 +1,27 @@
+Missing color legend in Nesting Cluster Diagrams	Currently no color legend is included in Nesting Cluster Diagrams. Therefore it's not possible to "read" the colors in a diagram, i.e. to understand the diagram completely.		Bug	iteraplan PO	07/Apr/12 7:34 AM	19/Sep/13 10:35 AM					cluster	color	diagram	legend	nesting	VBB				19/Aug/13 10:51 AM;lba;The new legend is correctly displayed right to the nesting cluster diagram.	20/Aug/13 9:06 AM;lba;Instead of showing each value in the legend (where many of the values have the same colour), show the range of the values in the legend.	"22/Aug/13 1:57 PM;lba;Expected Behaviour: 
+  The Menu for colouring the legends should be the same as in the Masterplan-Diagram-Configuration.
+  That means:
+    - The User can choose between colouring system defined ranges
+    - or between the upper und lower ranges (needs clarification what is meant with that)*
+
+upper and lower ranges mean in masterplan graphic simple the min and max value that appear in the graphics, but upper and lower range could also mean the upper and lower range defined by the user for an NumericAT."	"23/Aug/13 5:20 PM;wfr;Discrete color coding is complicated, because the configuration element is more dynamic as usual.
+It would need to know how many colors to ask the user for, dependending on the number of discrete values to code by colors.
+
+So we will not do discrete, but _banded_ color coding.
+The input for that is: 
+- number of values or color ranges (from the data)
+- exactly two colors for the first and last value or range.
+The colors for the inner values or ranges are interpolated.
+
+Note that the interpolation should be done in the HSV space, not in RGB.
+
+Pro: needs only two colors from the user.
+
+Elements/blocks should be colored by interpolating the real value, not the rounded one.
+Entries of the legend should be colored using the mean of the range.
+For example:  value from 1 to 100.
+5 ranges: 1 to 20, 21 to 40 ... 81 to 100
+first range has color for value 10.5 last for 90.5
+
+"	"26/Aug/13 3:01 PM;bra;# please use the localized string for undefined as in other legends instead of just 'null'
+# is it possible to take non-fractioned numbers as borders of the intervals stated in the legend?"	26/Aug/13 5:37 PM;lba;The upper and lower bounds, which determine the range of the colors, are the lowest and highest occurent value of the selection.	27/Aug/13 1:19 PM;bra;the legend still contains an entry named 'null' instead of the localized entry 'undefined'	30/Aug/13 4:25 PM;bra;looks good. please ensure you cleanup the comments and todos when finished with the discrete coloring	06/Sep/13 10:08 AM;psc;Error showing up in legend header	06/Sep/13 10:09 AM;psc;Legend from landscape diagram	06/Sep/13 10:12 AM;psc;During inspection I noticed that some legend headers are not displayed correctly (see screenshot). Please investigate.	06/Sep/13 10:22 AM;psc;After consulting DemandManagement, it seems that there are some more clarifications needed when aiming at a more complex color legend. For 3.2, please reduce legend to "classic" format (see attachment from landscape diagram), meaning: Only 3 colors: undefined, upper bound with value, lower bound with value.																																											

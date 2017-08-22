@@ -1,0 +1,19 @@
+Landscape Diagram (Testlink) - [Browser: FF50]		124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:17 PM	19/Jun/17 1:37 PM														"15/Jun/17 9:22 PM;naba;Test cases: Diagrams/Landscape Diagram ip-62-67
+
+ For smoke test please use
+
+ [https://doc.iteraplan.de/display/iteraplan60/Landscape+Diagram] (examples and tips)
+
+
+
+Please be creative and progressive.
+
+
+
+*Note*:
+
+ - Work with documentation is still in progress
+
+
+
+ "	19/Jun/17 1:33 PM;roia;Tested in FF, issue found: https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-5399 (not related especially to LSD, but to all diagrams)																																																					

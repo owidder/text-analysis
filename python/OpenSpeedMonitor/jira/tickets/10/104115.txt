@@ -1,0 +1,5 @@
+Bootstrap 3.0 Theme für chosen-plugin verwenden	"Damit unsere chosen-select Boxen besser zu Bootstrap3 passen, sollte ein entsprechendes Theme eingebunden werden.
+
+Folgendes Repo per Bower hinzufügen und in unsere application.css einfügen:
+
+https://github.com/alxlit/bootstrap-chosen"		Bug	OpenSpeedMonitor	28/Nov/16 10:28 AM	10/Jan/17 10:21 AM																																																																				

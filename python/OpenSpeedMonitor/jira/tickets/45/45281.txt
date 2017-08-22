@@ -1,0 +1,10 @@
+System info pages	"It would be great, if we would create some pages containig the system information. It could facilitate the support and bug searching. What information could be interesting for us? I suggest the following pages:
+
+* Java system properties;
+* Java VM Memory Statistics;
+* EhCache information and statistics - configured caches, how much memory is used by the caches an so on;
+* iteraplan information - version, Build ID, database cofiguration
+* iteraplan properties
+* iteraplan logging - enable or disable logs
+
+"		New Feature	iteraplan PO	21/Nov/11 2:42 PM	27/Apr/14 4:28 PM					system									27/Apr/14 4:28 PM;fka;Almost everything done with the new downloadable error report in 3.3																																																						

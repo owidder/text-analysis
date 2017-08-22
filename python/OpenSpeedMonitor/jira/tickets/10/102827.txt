@@ -1,0 +1,98 @@
+ Reaction Automatic-Interface-Copy zu 	"Funktionsweise:
+
+
+
+Die Reaction „Automatic Interface Copy“ kopiert automatisch die Schnittstellen der Vorgänger, wenn ein Nachfolger (ein neues Informationssystem) angelegt wird. Es ist getriggert, wenn man in der Maske eines Informationssystems die Option ""Neues Release"" auswählt. Wenn der Informationssystem die Schnittstellen hat, werden diese auch für das neue Release kopiert.
+
+
+
+Dokumentation:
+
+
+
+Diese Reaction ist in iteraWiki unter iteraplan Reactions / Automatic-Interface-Copy dokumentiert:
+
+https://iteraweb.iteratec.de/confluence/display/ITM/iteraplan+Reactions 
+
+
+
+Code:
+
+
+
+Der aktuelle Stand der Code ist in iteraGIT verfügbar (und auch als Anhang in diesem Email):
+
+https://iteragit.iteratec.de/iteraplan-Plugin/iteraplan-Reactions/tree/master/Automatic-Interface-Copy 
+
+
+
+
+
+Status:
+
+
+
+Die Reaction ist Code-Technisch-Gesehen fertig (soweit es möglich war). Das Ausführen (zum Zwecke der Tests in einer nicht-produktiven Instanz) ist möglich, und die Schnittstellen sollen entsprechend kopiert werden. Nichtdestotrotz, es existiert ein Problem in iteraplan 5.4, der Fertigstellung der Reaction in dieser Version von interaplan verhindert.
+
+
+
+Solange „Partial Elastic Update“ Problem in iteraplan (ein generisches Problem, dass Reactions API oder Import/Export beeinflusst) nicht beseitigt wird, funktioniert diese Reaction inkorrekt und kann zum Problemen mit Datenbasis führen! Daher ist aktuell der Einsatz dieser Reaction in produktiven Umgebungen definitiv abzusehen! Auch wenn es scheint, dass der Code der Reaction korrekt ist (soweit man es testen konnte), ist es ein schwerwiegendes Problem, der nur durch die Korrektur von Partial Elastic Update (und dementsprechend Reaction API) beseitigt sein kann.
+
+
+
+Beachte: Das Problem ist erstmals schwierig zu merken. Wenn man die Reaction erstmals nutzt, scheint alles zu funktionieren. Nichtdestotrotz schon beim Kopieren der ersten Interface erstellt es aktuell (iteraplan 5.4) zwei Information Flows anstelle von einem (ein „richtiges“ und ein unnötiges, der ein negativer ID hat – verursacht durch den Problem in iteraplan selbst). Man kann es in iteraplan Client gar nicht merken, da Objekte mit negativer ID in iteraplan Interface nicht gezeigt werden (es ist aber z.B. in Excel-Export der Daten sichtbar). Nichtdestotrotz, schon beim ersten Nachfolger entsteht ein Problem in der Datenbasis. Dieser wird erst dann wirklich sichtbar, wenn man für so ein Nachfolger ein weiteres Nachfolger erstellen möchte – was zum Ausführungsfehler führen wird. 
+
+
+
+"		Technical question	iteraplan Support	17/Nov/16 12:41 PM	22/Dec/16 8:22 AM														"21/Nov/16 10:02 AM;cst;Hallo Kollegen und Kolleginnen,
+
+habe das dazugehörige Entwickler-Ticket verknüpft. 
+Bei weiteren Informationen / Zeitraum, werde ich euch hier informieren.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"02/Dec/16 10:37 AM;cst;Hallo Kollegen und Kolleginnen,
+
+
+
+im Moment wird das Ticket analysiert.
+
+Ihr bekommt hierzu am Montag eine Rückmeldung wie lange und wie aufwendig die Lösung des oben genannten Verhaltens ist.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl 
+
+
+
+"	"19/Dec/16 11:35 AM;msr;Hallo Michelle, hallo Christian,
+
+
+
+das Problem wurde behoben und ich schicke euch anbei einen Patch dafür.
+
+Bitte testet vorher lokal, ob der Patch bei eurem Reactions-Skript das gewünschte Resultat liefert, bevor ihr es an den Kunden ausliefert.
+
+Danke und schöne Feiertage
+
+
+
+Marcel
+
+
+
+*Anwendung des Patches:*
+
+[^iteraplan_Patch_5.4.0_Reactions_Interface_Copy.zip]
+
+Die zip-Datei im iteraplan-Verzeichnis entpacken. Diese sollte die entsprechende Datei ""iteraplan-5.4.0.jar"" ersetzen (ggfs. alte Version vorher löschen)."	"21/Dec/16 4:56 PM;msl;Hallo Marcel,
+
+habe nun alles durchgetestet und es funktioniert! 
+Vielen Dank dafür!!
+
+Viele Grüße
+Michelle"																																																			

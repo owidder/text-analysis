@@ -1,0 +1,6 @@
+Wrong HTTP status code in REST API when the format is not supported	"When you try to access the metamodel resource with format-Parameter or Accept-header ""xlsx"", then a 400 (Bad request) status code is returned.
+
+Shouldn't it be 415 (Unsupported Media Type), like the documentation claims?
+http://www.iteraplan.de/wiki/display/iteraplan/REST+API
+
+"		Bug	iteraplan PO	10/Dec/13 4:08 PM	22/Apr/14 11:30 AM					rest									22/Apr/14 11:22 AM;fka;Might already be fixed with ITERAPLAN-2205.	22/Apr/14 11:30 AM;bra;already fixed along with ITERAPLAN-2205																																																					

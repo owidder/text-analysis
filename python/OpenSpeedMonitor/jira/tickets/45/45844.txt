@@ -1,0 +1,15 @@
+Line Chart: Saved query with date from/to set does not work with different languages 	"Experienced behaviour: I did some testing with the dashboard and had two line chart diagrams (two times the same saved query) included in my dashboard template. Worked fine for a long time and I didn't change this configuration during testing. Suddenly I get an error messages for the line chart (cf. Screenshot). Same error when executing the saved query for the line chart directly from visualization menu.
+Expected behaviour: No problems ( :) ) as I didn't change the configuration at all. 
+
+Now I got the problem: I did one change, I changed the language from german to english and the different date format (german ""xx.xx.xxxx"" to english xx/xx/xxxx) from the input fields somehow cause the problem... So, apparently saving a line chart definition in german and executing it in english does not work!
+
+Master Plan Diagram is not affected by this problem..."		Bug	iteraplan PO	04/Jul/13 4:18 PM	18/Jul/13 3:22 PM					dashboard	timeseries								16/Jul/13 9:08 PM;sry;Is this ready to be tested, or will you do more here?	"18/Jul/13 11:08 AM;lba;(/) Problem with the Saved Querys is solved
+(x) There seems to be a problem with the date formats, when changing the language
+To Reproduce:
+1.) Select one diagram-type with a date selection
+2.) Change the language
+3.) Now update the date fields for the ""correct"" date format (click in them and select the same date again)
+4.) Send Query ---> Error
+The error messasge is the same as the one in the attached screenshot, the only difference is that you have entered the correct date format.
+The error does not appear when you use the old date format e.g. you had german language selected and switched to english, it accepts the date format dd.mm.jjjj, but not the english one dd/mm/yyyy."	"18/Jul/13 11:09 AM;lba;See previous comment.
+"	18/Jul/13 2:20 PM;smo;For the problem with changing the date that appears in several places in iteraplan another issue has been opened: ITERAPLAN-1772	18/Jul/13 3:22 PM;lba; (/) Problem with the Saved Querys is solved	18/Jul/13 11:56 PM;sry;Good, thx!																																																	

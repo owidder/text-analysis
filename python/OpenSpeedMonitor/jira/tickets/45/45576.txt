@@ -1,0 +1,9 @@
+Excel Export: hierarchical name and formatting incorrect in rows > 308	"When exporting data with more than 300 data rows (which is the default size for a sheet), hierarchical names may not be resolved correctly because the referenced parent is below line number 300.
+
+The fix is to change the formula which is used in the parent column and use the number of data rows which will be written.
+
+See also ITERAPLAN-707 (slightly different issue, but the solution should be similar)."		Bug	iteraplan PO	24/Aug/12 5:24 PM	06/Nov/12 8:00 PM					excel									17/Sep/12 7:39 PM;sry;for a screenshot of broken formatting, see similar issue	23/Oct/12 2:25 PM;bco;For 3.0.4, only a hotfix will be implemented, where the number of rows per sheet will be increased from 300 to 3000.	31/Oct/12 11:13 AM;bco;In version 4.0, at least 300 data rows will be formatted. Should a sheet contain more than 300 data rows, the additional ones will be formatted as well.	"02/Nov/12 3:06 PM;sfe;Tested with current trunk, export of data consisting of 400 Infrastructure elements without any relations and no other elements.
+
+* Empty sheets like the one for business processes show 300 fully formatted rows (8-307)
+* Infrastructure element sheet shows the solid table borders down to the last data row line, but dropdowns in the parent column don't list elements beyond row 307 and the ""full parent"" column doesn't have any formatting at all: no borders, no grey background, no formulas.
+* Rows after 307 don't have dropdowns."	06/Nov/12 8:00 PM;sry;I just changed the name formula range back to a large fixed value, so that rows added manually after generation will be taken into account as well.																																																		

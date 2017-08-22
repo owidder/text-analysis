@@ -1,0 +1,27 @@
+Toplevel attribute values should be under name	"*Summary:*
+
+Toplevel attribute values should be under name
+
+
+
+*Reproduce:*
+
+* Set Default Attribute Group as ""Show these attributes next to the core attributes""
+
+* Open the Single Element View of an Information System
+
+
+
+*Actual:*
+
+* All values of the default attribute group attribues are shown {color:red}UPDATE{color} *below* the names
+
+
+
+*Expected:*
+
+* All values of the default attribute group attribues are shown {color:red}UPDATE{color} *next to* the names"		Bug	iteraplan Speedbird	19/Apr/17 1:10 PM	27/Apr/17 1:12 PM														25/Apr/17 4:58 PM;olal;On "Default attribute group" option "Show these attributes next to the core attributes" is disabled by default. This bug related to default group only or to all groups in general? !image-2017-04-25-17-56-41-649.png!	"26/Apr/17 4:14 PM;roia;[~msr], should we make the values below the names for the top level groups or for the other groups too?
+
+
+
+!attributes.jpg|width=602,height=364,thumbnail!"	26/Apr/17 4:53 PM;msr;[~roia]: I've corrected the description: All next to	26/Apr/17 4:53 PM;msr;[~olal], there is a separate ticket for this behaviour.																																																			

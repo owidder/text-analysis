@@ -1,0 +1,13 @@
+Search Tab {Browsers: Chrome and IE11}		124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:07 PM	20/Jun/17 9:05 AM														"15/Jun/17 9:58 AM;naba;Search tab is the ""START"" tab now.
+
+ For smoke test please use the [https://doc.iteraplan.de/display/iteraplan60/Full+Text+Search] (examples and tips).
+
+ Please be creative and progressive.
+
+
+
+*Note*: work with documentation is still in progress."	"20/Jun/17 9:04 AM;dmkh;Tested in Chrome and IE11, two minor issues found:
+
+ITERAPLAN-5420
+
+ITERAPLAN-5421"																																																					

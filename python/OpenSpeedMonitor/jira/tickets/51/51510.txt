@@ -1,0 +1,1 @@
+Manueller Test nach Vorbereitung auf Grails 2.5	Nach dem Umsetzen aller noch offenen Tickets sollten wir alle Views noch mal manuell testen und auf Fehler prüfen.		Bug	OpenSpeedMonitor	22/Jul/15 10:06 AM	04/Nov/15 4:26 PM																																																																				

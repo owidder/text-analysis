@@ -1,0 +1,29 @@
+Fehlerbehandlung in den verschiedenen Charts wenn keine Daten vorhanden sind	"In den neuen Charts (bis auf Page Comparison) ist bisher keine Fehlerbehandlung implementiert wenn keine Daten zum Anzeigen vorhanden sind. Beispiel bzw. häufiger Fall:
+
+
+
+CSI Werte existieren nicht.
+
+
+
+Dann wird nur im TimeSeries und Page Comparison Chart angezeigt, dass keine Daten vorhanden sind. In den anderen Charts bleibt der Chart-Container weiß und d3 wirft viele Fehlermeldungen in der Konsole (z.B. [https://dev.openspeedmonitor.wpt.iteratec.de/pageAggregation/show?setFromHour=&setToHour=&from=22.03.2017&fromHour=14%3A57&to=19.04.2017&toHour=15%3A57&selectedFolder=3&selectedPages=5&measurand=%7B%22values%22%3A%5B%22csByWptVisuallyCompleteInPercentUncached%22%5D%7D#|https://dev.openspeedmonitor.wpt.iteratec.de/pageAggregation/show?setFromHour=&setToHour=&from=22.03.2017&fromHour=14%3A57&to=19.04.2017&toHour=15%3A57&selectedFolder=3&selectedPages=5&measurand=%7B%22values%22%3A%5B%22csByWptVisuallyCompleteInPercentUncached%22%5D%7D#).])
+
+
+
+Hier sollte im Idealfall der Measurand gar nicht erst auswählbar sein, aber auf jeden Fall eine Fehlermeldung angezeigt werden. Diese sollte jedoch einheitlich sein, denn aktuell existieren zwei unterschiedliche Varianten (siehe Screenshots unten).
+
+
+
+ 
+
+
+
+!image-2017-04-19-16-02-17-784.png!
+
+
+
+ 
+
+
+
+!image-2017-04-19-16-03-52-708.png!"		Task	OpenSpeedMonitor	19/Apr/17 4:04 PM																																																																					

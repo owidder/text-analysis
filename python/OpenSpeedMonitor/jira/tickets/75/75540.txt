@@ -1,0 +1,1 @@
+Kibana URL in der Prozess-Engine relativ angeben (nicht fix)			Bug	secureCodeBox	03/Mar/16 2:54 PM	08/Mar/16 11:07 AM																																																																				

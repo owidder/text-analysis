@@ -1,0 +1,155 @@
+new client -> error	"Starting in the old client and selecting an information system, then from the information system I click on the link ""show element in interactive client (History)"".
+
+This leads to an error. see screenshot.
+
+
+
+Attached you can find also the iteraplan log file (starting with the click)"		Fault	iteraplan Support	20/Mar/17 7:52 PM	03/Apr/17 1:07 PM														"20/Mar/17 7:52 PM;martin.eberle@zumtobelgroup.com;
+
+!2017-03-20 19_50_26-Element Details.png|thumbnail!
+
+!2017-03-20 19_50_38-Information Systems _ ADB (1818) - iteraplan.png|thumbnail!
+
+[^klick_iteraplan-5.5.0.log] _(88 kB)_"	"21/Mar/17 7:57 AM;cst;Dear Mr. Eberle,
+
+thank you for your inquiry. 
+ # Download the data: [^iteraplan-client-5.5.1.jar]
+ # Shut down the Tomcat-Server 
+ # Open the path [TOMCAT]\webapps[ITERAPLAN]\WEB-INF\lib
+ # Check if  ""iteraplan-client-5.5.1.jar"" or ""iteraplan-client-5.5.2.jar"" is exist
+ # Delete the old data and copy the downloaded service release in the current path (if the old data is ending on 5.5.2, rename these to 5.5.2 too)
+ # Delete the work directory (temporary directory) of the Tomcat server in the path [TOMCAT]work\Catalina\localhost[ITERAPLAN]
+ # Start up the Tomcat server
+ # Clear your browser cache (!)
+ # Check the single element view again
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "	"23/Mar/17 2:40 PM;martin.eberle@zumtobelgroup.com;Hi
+
+* there was a 5.5.2 version, it renamed the received one also to 5.5.2 and exchanged it (following your steps)
+
+* Same result on the screen (and NULL POINTER)
+
+==> /opt/iteraplan/log/iteraplan-5.5.0-nc.log <==
+[ERROR] [2017-03-23 14:37:49] (iteraplan.presentation.NCLogServlet) TypeError: An exception occurred: Unable to get property 'getValue' of undefined or null reference @[2017-03-23 14:37:49] -- Logged from: https://eam.zumtobelgroup.com/rep/client/#/single/InformationSystem/30781?activeTab=history&columns=fieldK%2FtimeP%2FsortK%2FdescP%2FsortedAtK%2F0B%2FfieldK%2FauthorB%2FfieldK%2FchangetypeB%2FfieldK%2Fchanges -- Exception: TypeError: An exception occurred: Unable to get property 'getValue' of undefined or null reference
+   at loadPropertyValues (https://eam.zumtobelgroup.com/rep/client/js/combined1489652920673.js:1:16993)
+   at n.prototype.getPropertyValues (https://eam.zumtobelgroup.com/rep/client/js/combined1489652920673.js:1:24190)
+   at getFormattedPropertyValue (https://eam.zumtobelgroup.com/rep/client/js/combined1489652920673.js:4:6652)
+   at Anonymous function (https://eam.zumtobelgroup.com/rep/client/js/combined1489652920673.js:4:11360)
+   at SingleElementController (https://eam.zumtobelgroup.com/rep/client/js/combined1489652920673.js:4:11275)
+   at g (https://eam.zumtobelgroup.com/rep/client/js/combinedBower1489652920673.js:20:915)
+   at Anonymous function (https://eam.zumtobelgroup.com/rep/client/js/combinedBower1489652920673.js:20:26216)
+   at o (https://eam.zumtobelgroup.com/rep/client/js/combinedBower1489652920673.js:20:13531)
+   at Anonymous function (https://eam.zumtobelgroup.com/rep/client/js/combinedBower1489652920673.js:20:19310)
+   at h (https://eam.zumtobelgroup.com/rep/client/js/combinedBower1489652920673.js:21:15431)
+
+==> /opt/iteraplan/log/iteraplan-5.5.0.log <==
+[ERROR] 23-Mar-2017 14:37:49 [iteraplan.presentation.NCLogServlet] TypeError: An exception occurred: Unable to get property 'getValue' of undefined or null reference @[2017-03-23 14:37:49] -- Logged from: https://eam.zumtobelgroup.com/rep/client/#/single/InformationSystem/30781?activeTab=history&columns=fieldK%2FtimeP%2FsortK%2FdescP%2FsortedAtK%2F0B%2FfieldK%2FauthorB%2FfieldK%2FchangetypeB%2FfieldK%2Fchanges -- Exception: TypeError: An exception occurred: Unable to get property 'getValue' of undefined or null reference
+   at loadPropertyValues (https://eam.zumtobelgroup.com/rep/client/js/combined1489652920673.js:1:16993)
+   at n.prototype.getPropertyValues (https://eam.zumtobelgroup.com/rep/client/js/combined1489652920673.js:1:24190)
+   at getFormattedPropertyValue (https://eam.zumtobelgroup.com/rep/client/js/combined1489652920673.js:4:6652)
+   at Anonymous function (https://eam.zumtobelgroup.com/rep/client/js/combined1489652920673.js:4:11360)
+   at SingleElementController (https://eam.zumtobelgroup.com/rep/client/js/combined1489652920673.js:4:11275)
+   at g (https://eam.zumtobelgroup.com/rep/client/js/combinedBower1489652920673.js:20:915)
+   at Anonymous function (https://eam.zumtobelgroup.com/rep/client/js/combinedBower1489652920673.js:20:26216)
+   at o (https://eam.zumtobelgroup.com/rep/client/js/combinedBower1489652920673.js:20:13531)
+   at Anonymous function (https://eam.zumtobelgroup.com/rep/client/js/combinedBower1489652920673.js:20:19310)
+   at h (https://eam.zumtobelgroup.com/rep/client/js/combinedBower1489652920673.js:21:15431)"	"23/Mar/17 3:15 PM;cst;Hi Mr. Eberle,
+
+could you please execute the following SQL-Statement:
+
+""TRUNCATE TABLE USER_SETTINGS;""
+
+When the error appears again, we need a database dump to analyse the reason of this problem.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+
+ "	"23/Mar/17 4:58 PM;martin.eberle@zumtobelgroup.com;the error is still here. It would be much easier to generate a certain log file with all required details, rather to send a dump of the db.
+
+Please let me know, if this is a valuable option."	"27/Mar/17 8:01 AM;cst;Good Morning Mr. Ebelere,
+
+could you please execute the following steps: 
+ # Open the Information System ADB in the classic client 
+ # Edit the Information System and open the ""Description"" field 
+ # Copy the value of the field in a seperat text document 
+ # Clear the ""Describtion"" and save
+ # Reopen the interactive client with the history in the new client button 
+
+When now the single element view of the element ""ADB"" will shown, please send us the text from ""Description"" for further analyse. 
+We need to check the Xwiki-Syntax. 
+
+Additonal please send us the iteraplan log files from the period, when the error occurred. The files are called “*iteraplan-[version].log*” (for today) and ""*iteraplan-version-nc.log*"". The location of these file was specified during installation and is documented in the file “log4j.properties”.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+
+ "	"27/Mar/17 11:55 AM;martin.eberle@zumtobelgroup.com;Hi
+
+I don't think it has todo with the description content itself.
+But I suspect, that it might have todo with the ""History"" function.
+
+Next I added a new IS with label ""test"" and also description ""test"" -> same error
+
+History is set, see screenshot, but in the classic UI I can't see the tab for the history.
+Following the docu, this there should be such tab: ""The remaining information is grouped into tabs: All, Attributes, Self-Relations, Relations, History.""
+
+
+Martin
+
+[^adb_description.txt] _(0,5 kB)_
+
+[^iteraplan-5.5.0-nc.log] _(1 kB)_
+
+[^iteraplan-5.5.0.log] _(1 kB)_
+
+!2017-03-27 11_51_11-System.png|thumbnail!
+
+!2017-03-27 11_51_54-Information Systems _ ADB (1818) - iteraplan.png|thumbnail!"	"28/Mar/17 5:53 PM;cst;Hi Martin,
+
+this problem is really unconventional. 
+ Can you please check the following points:
+ # Could you open the list view of the ""Information Systems"" in the interactive client - appears here a other error?
+ # If the list view opens, click on the the element ""ADB"" - appears here the same error like above?
+ # The error can appear when a database update script was not executed correctly. Could you check for following tables:
+-> is the table REACTOR_SCRIPT_CONFIG created? 
+-> and have you the column ""DESCRIPTION"" in the table ""DATE_INTERVAL""
+
+Please note that these are samples and help us to find the problem
+ # Are the problems in other lists e.g. ""Projects"" the same? 
+
+Without the database, the search for this problem is really hard.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"30/Mar/17 10:49 AM;martin.eberle@zumtobelgroup.com;* IC - Listview works
+* IC - from Listview to ADB => same error
+* REACTOR_SCRIPT_CONFIG is here, empty
+* DATE_INTERVAL with description is here
+* All other (not IS) detailed view in new IC work fine
+
+* db is attached, you'll have to treat this as confidential data
+
+[^iteraplan.2017-03-30.gz] _(1,21 MB)_"	"30/Mar/17 3:09 PM;cst;Thank you.
+
+I will check the database and analyse the error on the next monday. 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"03/Apr/17 10:49 AM;cst;Guten Morgen herr Eberle,
+
+wir konnten das Problem analysieren. 
+
+Es liegt an dem ""Attribute"" - ""GoLive"" und der Zeitspanne ""GoLive"". 
+Normalerweise, sollte es nicht möglich sein zwei Elemente mit dem gleichen Namen anzulegen. 
+
+Um das Problem schnell zu lösen, müssen Sie eines der beiden ""GoLive""´ umbenennen. Anschließend starten Sie den interactiven Client und der Inhalt wird Ihnen angezeigt. 
+Ich habe um das gegen zu prüfen, die Zeitspanne ""GoLive"" in ""GoLiveT"" umbenannt. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"03/Apr/17 12:37 PM;martin.eberle@zumtobelgroup.com;Passt. Danke
+"																																											

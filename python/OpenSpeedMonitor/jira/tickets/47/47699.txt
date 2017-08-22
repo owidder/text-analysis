@@ -1,0 +1,10 @@
+Search box in the context menu	"Summary: Searching with search box doesn't work in the context menu for inner elements.
+And Search box doesn't appear in the Context menu for outer elements. Is it correct?
+
+Steps to reproduce:
+1. Go to NCD with IS as inner type
+2. Open context menu for inner elements
+3. Enter ""CRM"" as keyword in the search box
+Actual: searching doesn't wokr
+Expected: Do we need search box in the context menu or it will be enough filtering by text properties?"	47646	Sub-task	iteraplan PO	24/Apr/15 9:37 AM	24/Apr/15 2:27 PM													"Workspace: Windows 8.1
+revision: 1013"	24/Apr/15 2:08 PM;msr;Please remove search box from the context menu.																																																						

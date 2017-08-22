@@ -1,0 +1,1 @@
+csiConfiguration/configurations überarbeiten	Die /csiConfiguration/configurations view ist teilweise kaputt und noch nicht optimal für Breitbild/Bootstrap3. Diese View sollte noch angepasst werden		Bug	OpenSpeedMonitor	01/Nov/16 10:41 AM	11/Nov/16 3:04 PM																																																																				

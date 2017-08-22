@@ -1,0 +1,1 @@
+Kurzbezeichnungen der Legendeneinträge (ResultDashboard-Graph) mit offiziellen Abkürzungen ergänzen (fv und rv anhängen)			Task	OpenSpeedMonitor	08/Oct/13 3:48 PM	15/Oct/13 3:02 PM														15/Oct/13 3:02 PM;rhe;Als I18N realisiert																																																						

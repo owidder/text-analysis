@@ -1,0 +1,7 @@
+Use of links in graphics, which are embedded in custom dashboards	"For each element in a diagram a link is deposited. If the diagrams are embedded into custom Dashboards the links are not clickable, because each diagram is embedded into an iFrame. The idea is to make links clickable in custom dashboards.
+The following scenario was outlined by BLA:
+{noformat}
+...
+Mein Kunde möchte die Custom Dashboards nutzen als Einstiegshilfe für die Berater. Die sollen auf einen Blick alle Applikationen / Infrastrukturelemente sehen und diese via Hyperlink verknüpft bekommen mit der Detail-Page zum Editieren, so dass sie nicht lange im System sich alle ihre zu verantwortenden Datenrecords zusammen suchen müssen.
+...
+{noformat}"		New Feature	iteraplan PO	29/Oct/14 7:22 AM						Dashboard	visualization																																																														

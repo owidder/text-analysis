@@ -1,0 +1,5 @@
+Tile title not visible	"On home screen, *Information System Domains* name is not fully visible (needs 3 lines and only two are visible on tile).
+
+
+
+Title should fit into two lines."		Bug	iteraplan PO	22/May/17 4:39 PM	23/May/17 6:00 PM																																																																				

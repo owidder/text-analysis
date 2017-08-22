@@ -1,0 +1,19 @@
+Mark attributes-list, attributes-single-element-view and building-block-single-element-view as "read only"	"*Summary:*
+
+Mark 
+
+
+
+1. attributes-list, (mark the tile as ""read-only"")
+
+2. attributes-single-element-view (next to the name in square brackets)
+
+3. and building-block-single-element-view (next to the name in square brackets)
+
+
+
+as ""read only"" (German: ""schreibgeschützt"")
+
+
+
+4. Replace all on-off-switches with plain text (""Yes"",""No"") (""Ja"",""Nein"")"		Improvement	iteraplan PO	26/Jan/17 5:47 PM	03/Feb/17 2:56 PM														01/Feb/17 3:50 PM;mash;Additionally link to Classic Client from Attribute single element view was fixed	03/Feb/17 2:56 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-335																																																					

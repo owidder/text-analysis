@@ -1,0 +1,1 @@
+Update the Single Element View	Update the single element view with the data that are sent from the server after editing something		Improvement	iteraplan Thunderduck	22/Mar/17 3:37 PM	26/Apr/17 11:11 AM														25/Apr/17 2:08 PM;aan;6646 belongs to IPTT-415																																																						

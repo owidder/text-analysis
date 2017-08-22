@@ -1,0 +1,55 @@
+New row appearing	"*Summary:*
+
+
+
+After clicking ""Mass update"" button, appears new row.
+
+
+
+*Scope:*
+
+ * Should be located over the table
+
+ * The row should consist of columns selected in current view
+
+ * Every data-type should have separate input field and appropriate buttons to carry out an action (will be described in tickets according to particular input-types)
+
+ * only one value at a time should be editable, other should be inactive
+
+ ** user can't edit further fields until he saves the first one, unless he wants to lose previous data
+
+ ** {color:#ff0000}UPDATE: {color} If user wants lose data, he can click on the cancel-button (described in [#IPTS-605] )
+
+ ** clicking on another filed or [x] shows popup dialog:
+
+ *** All input will be lost. Do you want to continue? (german: ""Die eingetragenen Daten gehen verloren. Möchten Sie fortfahren?"")
+
+ * {color:#ff0000}UPDATE: {color} width, add and remove column should be synchronised to the grid
+
+ * in case of uneditable fields (business mapping, id, last modification user, last modification time) - there is no possibility for user to open input field, those are inactive and grey (#E0E0E0)
+
+
+
+*UI:*
+
+ * Row should have another colour #F9E8C6 and be separated from the table"		New Feature	iteraplan Speedbird	28/Feb/17 3:12 PM	06/Apr/17 4:30 PM														"16/Mar/17 12:09 PM;roia;{quote}user can't edit further fields until he saves the first one, unless he wants to lose previous data
+
+{quote}
+
+[~mkt], [~msr], how this ""he wants"" should be implemented on UI?"	"28/Mar/17 4:51 PM;vadm;Width of ""Business Mapping"" column is not correct (see screenshot).
+
+ !screenshot-1.png|thumbnail! 
+
+Requirements not fully completed.
+
+{quote}
+
+* only one value at a time should be editable, other should be grey and inactive
+
+** user can't edit further fields until he saves the first one, unless he wants to lose previous data 
+
+{quote}
+
+User can edit only one value at a time, but another columns are not disabled, so he can edit further fields until he saves the first one.
+
+Also I'd suggest to disable columns, which are not editable (e.g. Business Mapping)."	06/Apr/17 4:30 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-471																																																				

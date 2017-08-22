@@ -1,0 +1,9 @@
+Metamodell Erweiterung: Attributierbare Beziehung zwischen Projekten und Geschäftseinheit	"Erweiterung des iteraplan Metamodells um eine Beziehung zwischen Geschäftseinheit und Projekt, welche zusätzlich mit Merkmalen (sogenannte attributierbare Beziehung) genauer spezifiziert werden kann. Die neue Beziehung Projekt zu Geschäftseinheit wird unterstützt bei:
+- den Listen- und Detailansichten unter dem Menüpunkt EA Data (Erstellen, Ansehen, Bearbeiten, Löschen) sowie Berechtigungsvergabe und -prüfung,
+- Filterungs-Abfragen im Sinne der Tabellarischen Auswertungen,
+- iteraQL-Abfragen,
+- Cluster-Grafiken und Nesting Cluster Diagramme
+
+Abgrenzung: steht *nicht* in der Grafik Masterplan zur Verfügung ebensowenig Funktionalitäten zur Bearbeitung von Massendaten (Export-/Import-Schnittstellen und Massenupdates).
+
+"		New Feature	iteraplan PO	06/Aug/13 12:09 PM	30/Dec/15 3:17 PM																																																																				

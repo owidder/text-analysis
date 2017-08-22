@@ -1,0 +1,13 @@
+Improve Tree-View-Drag & Drop	"Timebox: 1 PD
+
+
+
+1. Important: Activate scrolling during drag & drop
+
+ 2. Highlight element/row when you drag an element over this element to indicate that a new child is created
+
+ 3. Create a new landing position on the top between header and the first row
+
+
+
+landing position indicator - thin line with --#A70075-- ({color:red}*UPDATE*{color}) #9B9B9B color, same color for indicated line and white font for it"		Improvement	iteraplan Speedbird	20/Apr/17 11:58 AM	18/May/17 10:35 AM														15/May/17 3:52 PM;dmkh;One of commits was mistakenly committed to ticket IPTS-786 (revision *6821*)																																																						

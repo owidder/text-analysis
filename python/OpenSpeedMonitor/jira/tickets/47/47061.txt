@@ -1,0 +1,10 @@
+Test general import/export	"Test sheets in {{doc/test/importexport}}.
+
+* Add test cases to test the new asynchronous nature of the import
+** Immediate response after click on ""next""
+** Status-Update on reconnect after logout or timeout
+** Correct notification on import already running when connecting with a different user
+
+* Install iteraplan using one of the not yet or lesser tested configurations in the installer test sheet
+* Perform the testcases from the test sheets and attach the results to this ticket"	47060	Sub-task	iteraplan PO	17/Oct/14 2:02 PM	23/Oct/14 4:54 PM					export	import	test							"23/Oct/14 4:36 PM;fam;Finished with Failures,...
+Bug-Reports linked."																																																						

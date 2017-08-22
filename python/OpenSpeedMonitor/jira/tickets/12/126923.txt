@@ -1,0 +1,9 @@
+LIST-VIEW: Change gray List-header to colors of BBT	"Change the colour of the List-header in LV according to the building-block-type.
+
+
+
+(For colours of BBT consult the style guide [https://iteraweb.iteratec.de/confluence/display/ITPL/Colours]. 
+
+
+
+In IPTS-875  those colours will become customizable."		Improvement	iteraplan Speedbird	12/Jul/17 9:59 AM	24/Jul/17 1:11 PM														24/Jul/17 1:11 PM;olal;Review is done.																																																						

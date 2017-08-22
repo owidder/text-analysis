@@ -1,0 +1,13 @@
+Datenformat für DC optimieren	"Aktuell werden die Daten als JSON in die JavaScript-Funktion gegeben, das lässt sich noch optimieren (zum Beispiel in einer csv-ähnlichen struktur).
+
+So wird beim JSON beispielsweise immer der key für jedes objekt mit gepseichert:
+
+{{name: ""hans"", alter: 20}, {name: ""klaus"", alter: 50}}
+
+Besser wäre:
+
+name, alter
+
+Hans, 20
+
+Klaus, 50"		Improvement	OpenSpeedMonitor	05/Aug/16 8:44 AM	24/Aug/16 11:24 AM														24/Aug/16 11:24 AM;msk;Erstmal nicht wichtig, da wir momentan keine Performanceprobleme haben.																																																						

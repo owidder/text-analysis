@@ -1,0 +1,140 @@
+Datenbankmigration vor Deployment	"Vor einem Live-Deployment des Develop-Branch des ISM muss eine DB-Migration erfolgen, da Hibernate das Schema aufgrund bestehender Daten nicht automatisch anpassen kann.
+
+*MIGRATION von Master (Version 2.2.29) auf Develop (Commit d75621)*
+
+*1. script im job jetzt NOT NULL: Tabellen job und script:*
+
+Todos:
+* Einige ungenutzte Felder löschen 
+* Ein default-Script erzeugen
+* Allen Jobs ohne Script das Default-Script zuordnen
+
+Die ID des einzufügenden Default-Scripts muss zuvor ermittelt werden.
+
+Migration:
+{code}
+ALTER TABLE `script`
+	DROP `url`;
+ALTER TABLE `script`
+	DROP `multistep`;
+ALTER TABLE `script`
+	DROP `apply_validate_rule`;
+ALTER TABLE `script`
+	DROP `validation_markas`;
+ALTER TABLE `script`
+	DROP `validation_markaselse`;
+ALTER TABLE `script`
+	DROP `validation_request`;
+ALTER TABLE `script`
+	DROP `validation_type`;
+ALTER TABLE `script`
+	CHANGE COLUMN auth_password auth_password VARCHAR(255) NULL;	
+ALTER TABLE `script`
+	CHANGE COLUMN auth_username auth_username VARCHAR(255) NULL;	
+
+INSERT INTO script
+(`id`,
+`version`,
+`auth_password`,
+`auth_username`,
+`date_created`,
+`description`,
+`label`,
+`last_updated`,
+`navigation_script`,
+`provide_authenticate_information`
+)
+VALUES
+(
+[ID Default-Script],
+0,
+'',
+'',
+'2014-02-19',
+'This script is just a placeholder (for jobs without an assigned script)',
+'Placeholder-script',
+'2014-02-19',
+'// This script is just a placeholder (for jobs without an assigned script). Please do not edit this script, but replace it with a real navigation script in all Jobs.',
+0
+);
+
+update job set script_id = [ID Default-Script] where script_id is null;
+
+ALTER TABLE job
+       CHANGE COLUMN `script_id` `script_id` BIGINT(20) NOT NULL ;
+{code}
+
+*2. navigation_script im script jetzt NOT NULL: Tabelle script*
+
+Todos:
+* Allen Scripten, deren navigation_script NULL ist ein default-navigation_script hinzufügen
+
+Migration:
+{code}
+update script set navigation_script = '// Insert code here' where navigation_script is null;
+ALTER TABLE script
+       CHANGE COLUMN `navigation_script` `navigation_script` LONGTEXT NOT NULL ;
+{code}
+
+*3. Nicht verwedete Spalten in WptConfig löschen
+
+{code}
+ALTER TABLE wpt_config DROP COLUMN sitename , DROP COLUMN sitehomepagemessage , DROP COLUMN sitecontactemailaddress , DROP COLUMN sitecontact , DROP COLUMN sitealertmessage , DROP COLUMN sitealertfromname , DROP COLUMN sitealertfromemailaddress , DROP COLUMN jobprocessorauthenticationkey , DROP COLUMN enableregistration , DROP COLUMN defaultjobspermonth ;
+{code}"		Task	OpenSpeedMonitor	20/Feb/14 4:04 PM	10/Nov/14 4:16 PM														"21/Feb/14 2:24 PM;drieger;*MIGRATION von Develop (Commit d75621) auf Skriptverwaltung (Version 2.2.30-jobsteuerung)*
+
+{code}
+ALTER TABLE job
+DROP COLUMN download_result_xml,
+DROP COLUMN download_details,
+DROP COLUMN max_download_attempts,
+CHANGE COLUMN job_group_id job_group_id  BIGINT(20) NOT NULL,
+CHANGE COLUMN frequency_in_min frequency_in_min INT(11) NULL;
+
+ALTER TABLE job_result
+CHANGE COLUMN wpt_status wpt_status VARCHAR(255) NULL,
+ADD COLUMN http_status_code INT(11) NULL;
+
+UPDATE job_result SET http_status_code = CAST(wpt_status AS SIGNED) WHERE wpt_status REGEXP '[0-9]+';
+
+ALTER TABLE job_result
+CHANGE COLUMN http_status_code http_status_code INT(11) NOT NULL;
+
+UPDATE job_result SET wpt_status = null;
+
+ALTER TABLE job_result CHANGE COLUMN wpt_status wpt_status LONGTEXT NULL DEFAULT NULL;
+ALTER TABLE waterfall_entry CHANGE COLUMN path path LONGTEXT NULL DEFAULT NULL;
+{code}"	"17/Mar/14 6:26 PM;drieger;Um die neuen Skript-Felder für Anzahl Messschritte und gemessene Pages zu füllen, muss einmalig z.B. in der Bootstrap folgender Code ausgeführt werden:
+{code}
+de.iteratec.iss.Script.findAll().each {
+	it.navigationScript = it.navigationScript + ' '
+	it.save(failOnError: true)
+}
+{code}
+
+Außerdem müssen Standard-Konnektivitätsprofile angelegt werden (Domäne ConnectivityProfile)"	"21/Mar/14 1:47 PM;drieger;Für Job.maxDownloadTimeInMinutes ist der Wert 0 ungültig, die Constraints der Job-Domäne legen ein Minimum von 1 fest. Daher muss folgendes Skript ausgeführt werden:
+{code}
+UPDATE job SET max_download_time_in_minutes = 60 WHERE max_download_time_in_minutes = 0;
+{code}
+Außerdem muss in der IsmConfiguration der Standardwert (defaultMaxDownloadTimeInMinutes) gesetzt werden über
+{code}
+UPDATE `ism_configuration` SET `default_max_download_time_in_minutes`='60' WHERE `id`='1';
+{code}"	"28/Mar/14 3:23 PM;drieger;Einige Spalten aus den Skript- und Job-Tabellen sind nicht mehr aktuell und sollten gelöscht werden. Ebenso die Tabelle script_tested_page_names:
+
+{code}
+ALTER TABLE script
+	DROP COLUMN provide_authenticate_information,
+	DROP COLUMN auth_username,
+	DROP COLUMN auth_password,
+	DROP COLUMN apply_validate_rule,
+	DROP COLUMN validation_markas,
+	DROP COLUMN validation_markaselse,
+	DROP COLUMN validation_request,
+	DROP COLUMN validation_type;
+
+DROP TABLE script_tested_page_names;
+
+ALTER TABLE job
+	DROP COLUMN max_download_attempts,
+	DROP COLUMN placeholders,
+	DROP COLUMN variables;
+{code}"																																																			

@@ -1,0 +1,7 @@
+Subscription Mails not always correct	"Subscription mails contain wrong information:
+
+ * Sonderbehandlung von bestimmten Beziehungen
+
+ ** Änderungen an InformationFlow werden als Transport-Änderungen mitgeteilt
+
+ ** Löschen von InformationFlows enthalten nicht die verbundenen ISR"		Bug	iteraplan Thunderduck	19/May/17 10:48 AM															29/May/17 11:56 AM;fka;Will be done together with the MMX Upgrade Q3 2017																																																						

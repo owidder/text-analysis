@@ -1,0 +1,1 @@
+Add scope icon to toolarea	See also ITERAPLAN-3918		Improvement	iteraplan PO	24/Sep/15 2:00 PM	27/Aug/16 11:30 AM														27/Aug/16 11:30 AM;fka;Fixed with another ticket																																																						

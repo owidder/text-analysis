@@ -1,0 +1,7 @@
+Undo and Redo history by view	"+++++++++++++++++
+POSTPONED AFTER APRIL 2015
++++++++++++++++++
+
+For each view, keep a undo and redo history of all changes, that is to data and to view state.
+
+Maybe this is part of the edit epic."		Epic	iteraplan PO	03/Nov/14 4:17 PM	30/Dec/15 12:02 PM														07/Nov/14 6:14 PM;sepr;RE ~50 SP																																																						

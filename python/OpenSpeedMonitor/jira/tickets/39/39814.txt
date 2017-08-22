@@ -1,0 +1,5 @@
+Datenlabels anzeigen für alle Dashboards funktioniert nicht (RICKSHAW, HIGHCHARTS)	"Bei allen Diagrammen mit Rickshaw.
+
+Es sollte eine Grenze geben, ab der ein Hinweis erfolgt: ""Zu viele Datenpunkte sichtbar. Keine Beschriftung möglich""
+
+"		Bug	OpenSpeedMonitor	06/May/15 9:10 AM	11/May/15 3:09 PM																																																																				

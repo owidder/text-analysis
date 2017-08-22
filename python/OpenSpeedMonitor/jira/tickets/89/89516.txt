@@ -1,0 +1,7 @@
+Plugin discover UI	"* UI for plug in disover in IC
+
+* Add button to activate plug-ins (position of button to be discussed with [~wfr] and [~fka])
+
+  Result of discussion: On the Visualize+Reports Page at the bottom, together with ""Administration"" as heading and a description at the button. Success and Fail are reported with alerts.
+
+* front-end resource (better simple href-link)"	89425	Sub-task	iteraplan Thunderduck	06/Jul/16 10:27 AM	19/Jul/16 10:08 AM																																																																				

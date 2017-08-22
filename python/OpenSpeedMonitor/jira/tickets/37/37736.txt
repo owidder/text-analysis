@@ -1,0 +1,19 @@
+Result-Liste wirft Fehler	"Hauke hat einen Fehler berichtet: Man kann die Result-Liste nicht mehr aufrufen.
+
+
+
+Nachzustellen durch:
+
+-Als ""Admin"" anmelden
+
+-Den ""Measurement results"" Tab öffnen
+
+-Den ""Results"" Sub-Tab öffnen
+
+-Als Folder ""undefined"" auswählen
+
+-Als Page ""undefined"" auswählen
+
+-Checkbox ""Select all Browsers"" aktiviert lassen
+
+-Button ""Show"" anklicken"		Bug	OpenSpeedMonitor	14/Apr/15 3:42 PM	15/Apr/15 1:48 PM														15/Apr/15 1:48 PM;rkr;Erledigt. Die Änderung aus Commit d35a7a8f3029034f67e1b421b08181f076e51509 war dort nicht eingebaut worden.																																																						

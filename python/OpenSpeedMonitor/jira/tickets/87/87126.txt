@@ -1,0 +1,53 @@
+Export go.js library to private bower nexus repository	"# The nexus has to be configured to let the user upload libraries into a private bower repository located on the nexus. (TODO for [~tgo])
+
+# The go.js library (app/js/libs/) has to be exported and uploaded into the private bower repository on the nexus."		Task	iteraplan Speedbird	14/Jun/16 10:56 AM	20/May/17 11:29 AM														"22/Jun/16 5:45 PM;mwe;There is a new git repository for go.js: https://iteragit.iteratec.de/iteraplan/gojs-iteraplan.git
+
+The .bowerrc file was updated with the register URL (including the credentials for the deployer user): [Instructions|https://books.sonatype.com/nexus-book/3.0/reference/bower.html#bower-register]
+
+
+
+To register this lib in the nexus execute the following command:
+
+{code}
+
+bower register gojs-iteraplan https://iteragit.iteratec.de/iteraplan/gojs-iteraplan.git
+
+{code}
+
+
+
+Does not work by 22.06.2016, 17:45:
+
+{code}
+
+% bower register gojs-iteraplan https://iteragit.iteratec.de/iteraplan/gojs-iteraplan.git                                    :( 1 16-06-22 - 17:19:21
+
+bower gojs-iteraplan#*         resolve https://iteragit.iteratec.de/iteraplan/gojs-iteraplan.git#*
+
+Username for 'https://iteragit.iteratec.de': mwe
+
+Password for 'https://mwe@iteragit.iteratec.de':
+
+bower gojs-iteraplan#*        checkout 1.5.23
+
+Username for 'https://iteragit.iteratec.de': mwe
+
+? Registering a package will make it installable via the registry (http://deployer:34n78mk--6@iteraplan2.iteratec.de/nexus/repository/bower-internal), continue? Yes
+
+bower gojs-iteraplan          register https://iteragit.iteratec.de/iteraplan/gojs-iteraplan.git
+
+bower                       EDUPLICATE Duplicate package
+
+{code}
+
+
+
+To include this lib in the project add {code}""gojs-iteraplan"": ""1.5.23""{code} to the bower.json file and execute {code}bower install{code}."	"18/Jul/16 11:08 AM;mwe;go.js lib exported to private repo and made it accessible via bower.
+
+
+
+Can be proceeded when the Edvantis Team can access the Nexus. "	"25/Jul/16 11:14 AM;mwe;Authentication enabled by [~fka]. I adjusted the developer guide for the interactive client with the configuration of the credentials.
+
+[https://iteraweb.iteratec.de/confluence/display/ITPL/Development+Environment+for+New+Interactive+Client]"	"25/Jul/16 6:23 PM;mwe;The checkout from GIT is not working because of the login when the lib is not there in the nexus.
+
+Additionally if the Nexus is configured to not accept anonymous logins then bower and npm are not able to retrieve their dependencies (Error: Unauthorized 401)."	09/May/17 4:19 PM;msr;To be checked with @rost if this task is still necessary with the new licensing mechanism of GoJS.																																																		

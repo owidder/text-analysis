@@ -1,0 +1,5 @@
+Remove legend Filter in IE 9 causes a hang up  	"Use IE 9 and set two filter of any kind. Remove one of them with the remove button in the legend.
+Now, no more action is possible as the app hang up.
+Please fix the problem."		Bug	iteraplan PO	22/Apr/15 10:01 AM	23/Apr/15 8:26 AM														"22/Apr/15 1:11 PM;isc;The reported error based on the compatibility Mode in IE11.
+The new client doesn't work in IE9 and IE10.
+Bevor you can start with this Ticket, wait for the ticket ITERAPLAN-3062 and retest the reported error first."	23/Apr/15 8:26 AM;fka;IE 9 currently no longer in scope for new client.																																																					

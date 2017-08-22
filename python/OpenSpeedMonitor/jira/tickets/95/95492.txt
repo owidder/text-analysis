@@ -1,0 +1,27 @@
+Fix failing MPD unit test	"Ukrainian team reported, that a unit test is failed. On the german side this test is green.
+
+
+
+*mpdConfiguration-spec.js:337:33*
+
+_it('should fill the settings with the right parameters', function () ...)_
+
+{noformat}
+
+PhantomJS 2.1.1 (Windows 7 0.0.0) The MPD configuration should fill the settings with the right parameters FAILED
+
+ Expected Object({ timeSpan: Object({ from: Date(Sun Jan 01 2012 00:00:00 GMT+0200 (FLE Standard Time)), until: Date(Sat Dec 31 2016 00:00:00 GMT+0200 (FLE Standard Time)) }), level: [ Object({ hierarchical: false, buildingBlockType: 'InformationSystem', dateIntervals: [ 'anotherDurationField' ], selfRelations: [  ], additionalColumns: [  ], colorURI: 'colObj/InformationSystemS/ComplexityS/highK/rgb(175,206,168)S/averageK/rgb(246,223,149)S/lowK/rgb(215,157,173)S/defaultK/rgb(153, 153, 153)' }) ], includingConnectedIS: false, scaleFactor: 1, columnsMap: Object({ contentType: 180 }) }) to equal Object({ timeSpan: Object({ from: Date(Sun Jan 01 2012 01:00:00 GMT+0200 (FLE Standard Time)), until: Date(Sat Dec 31 2016 01:00:00 GMT+0200 (FLE Standard Time)) }), level: [ Object({ hierarchical: false, buildingBlockType: 'InformationSystem', dateIntervals: [ 'anotherDurationField' ], selfRelations: [  ], additionalColumns: [  ], colorURI: 'colObj/InformationSystemS/ComplexityS/highK/rgb(175,206,168)S/averageK/rgb(246,223,149)S/lowK/rgb(215,157,173)S/defaultK/rgb(153, 153, 153)' }) ], includingConnectedIS: false, scaleFactor: 1, columnsMap: Object({ contentType: 180 }) }).
+
+ D:/Iteratec/Code/SVN/repos/projects/iteraplan-9/trunk/tests/unit/mpd/mpdConfiguration-spec.js:337:33
+
+{noformat}
+
+
+
+An assumption is that the reason is different timezone.
+
+
+
+Probably the same or similar solution as in ITERAPLAN-4449 can be used.
+
+"		Bug	iteraplan Quickfox	07/Sep/16 4:47 PM	13/Sep/16 2:58 PM														08/Sep/16 3:03 PM;mwe;Waiting on verification of the fix from the Ukrainien team.	08/Sep/16 3:47 PM;mwe;Rost said the test is fixed.																																																					

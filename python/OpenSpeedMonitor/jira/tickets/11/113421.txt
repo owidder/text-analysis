@@ -1,0 +1,13 @@
+Change format in topLevelAttributeGroup	"In the single element view in the new client the topLevelAttributes are formatted different than the other attributes:
+
+
+
+The value is shown below instead of right of the name of the atttribute.
+
+
+
+(Create a attributeGroup with ""{color:#333333}Show these attributes next to the core attributes"" choosen and add some properties to it to see a top level attribute group{color})
+
+
+
+ "		Improvement	iteraplan Speedbird	28/Feb/17 11:39 AM	13/Mar/17 4:50 PM														13/Mar/17 4:50 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-433																																																						

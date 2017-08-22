@@ -1,0 +1,13 @@
+Various code improvements	"Gather code cleanup issues here.
+
+* Remove Java ""assert ..."" to check Preconditions. Because it can be switched on/off, it should never be used to ensure business logic.
+Alternatives are:
+com.google.common.base.Preconditions
+org.apache.commons.lang.Validate
+de.iteratec.iteraplan.common.util.Preconditions
+
+"		Improvement	iteraplan PO	24/Jun/13 3:37 PM	25/Jul/14 7:22 AM					code	quality	validation							"23/Jul/14 3:20 PM;isc;I have found one further affected class: WildcardReloadableResourceBundleMessageSource.java
+
+Additional:
+In the code, the AssertionError is used in some places. Maybe you should also be checked if a different error class should be used here.
+But clarify this with wfr."																																																						

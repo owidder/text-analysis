@@ -1,0 +1,7 @@
+Abfrage-Logik EventResults anpassen	"Diese muss angepasst werden für die Abfrage ohne tag entsprechend der neuen Datenstrukturen.
+
+
+
+Zentral wird hierbei der folgende Service sein:
+
+de.iteratec.osm.result.CsiAggregationTagService"	96849	Sub-task	OpenSpeedMonitor	21/Sep/16 4:32 PM	08/Nov/16 2:31 PM																																																																				

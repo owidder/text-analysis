@@ -1,0 +1,23 @@
+Filter: reset manual selection when all items are selected	"*Reproduce:*
+
+* Go to Information System
+
+* Open filter
+
+* Go to ""Manual selection tab""
+
+* Click ""SELECT NONE"" button and then ""SELECT ALL"" button
+
+* Click ""Apply"" button and close filter dialog
+
+
+
+*Actual*
+
+Manual selection data is stored in the URL and the legend shows ""User selection: 52 of 52""
+
+
+
+*Expected*
+
+Manual selection data is not affected on URL and legend"		Bug	iteraplan Thunderduck	08/May/17 11:14 AM	16/May/17 3:03 PM																																																																				

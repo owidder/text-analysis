@@ -1,0 +1,19 @@
+Projekte lassen sich nicht löschen	"Beim Versuch ein beliebiges Projekt zu löschen kommt ein technischer Fehler (siehe Anhang).
+
+
+
+Kunde: Uniper
+
+
+
+Wollte das Ticket schon einmal anlegen, damit ich die Infos dazu hier sammeln kann. Werden erst einmal den DB Server neu starten und prüfen, ob das Problem weiterhin besteht. Nachdem die Migration zu 5.5 parallel läuft behebt ggfs. auch das das Problem. Falls ihr die Meldung allerdings bereits kennt freue ich mich über Input dazu :)"		Fault	iteraplan Support	15/May/17 10:52 AM	08/Jun/17 2:06 PM														"15/May/17 10:52 AM;dne;
+
+[^ProblemReport_2017-05-15_102004.zip] _(9 kB)_"	"15/May/17 10:57 AM;cst;Hallo Daniel,
+
+danke für deine Anfrage.
+
+Hier dauert die Anfrage etwas länger und der Datenbank dauert das zu lange. Hier müsste man den Timeout hochsetzen. Bei MYSQL sollte es dir ""innodb_lock_wait_timeout"" sein, bei anderen Datenbanken müsste ich auch schauen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	30/May/17 2:38 PM;dne;Warte noch auf Rückmeldung von E.ON. Werden es hoffentlich diese Woche testen können.	06/Jun/17 11:50 AM;dne;Seit einem Restart ist das Problem nicht mehr aufgetreten. Ticket können wir erst mal schließen. Sollten vergleichbare Probleme wieder auftreten werde ich das hier wieder ausgraben ;)																																																			

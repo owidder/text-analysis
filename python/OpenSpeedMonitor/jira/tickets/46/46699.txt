@@ -1,0 +1,28 @@
+Fulltext search does not ignore illegal characters correctly	"Steps to reproduce:
+
+1. Perform a search for an element and add for example a ""+"". The search query string should look like this ""account +"" (but without the quotation marks).
+
+Iteraplan will display an error:
+
+{noformat}
+org.apache.lucene.queryParser.ParseException: Cannot parse 'account {': Encountered """" at line 1, column 9. Was expecting one of: ... ...
+{noformat}
+
+It is possible that the search engine expect an additional search parameter, e.g. account + system, but the second one is missing. 
+
+Fix this technical error message and display a meaningful error message for the user. 
+
+Additional Defect:
+
+When searching for example for 
+{noformat}
+""a
+{noformat}
+an alternative search with link for execution is suggested. This link doesn't work. 
+"		Bug	iteraplan PO	25/Jun/14 11:40 AM	07/Jul/14 10:14 AM					full-text	search								"02/Jul/14 8:44 AM;dop;Some examples for Search queries, that (could) produce errors
+
+ACT!
+acc + 
+(test)
+
+@Reviewer: It might be possible to insert slightly more sample data. I've just tried the search function on the nightly build (02.07.14) and the search for (test) will show results, whereas on my local build environment an error appears (""Die Suchanfrage ist zu allgemein. Versuchen Sie Platzhalter (* und ?) zu entfernen, oder geben Sie mehr Kontext rund um die Platzhalter ein."")"																																																						

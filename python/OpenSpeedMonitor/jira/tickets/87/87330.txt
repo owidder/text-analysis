@@ -1,0 +1,31 @@
+Filter does not behave well on intermediate language switch	"See comment from [~ach] in ITERAPLAN-4511:
+
+*Reproduce:*
+
+# keep english language
+
+# set a single filter (e.g. with ""between"" operator)
+
+# close dialog window
+
+# change language to german
+
+# open filter dialog window again
+
+# operator name is still in english.
+
+
+
+Comment by [~abo]:
+
+However, when you switch the language several times, this usecase is working / translation is done correctly with already set filters.
+
+
+
+*SHOULD:*
+
+* after switching language, and opening the filter dialog, the dialog itself uses the selected language
+
+* the values in drop-downs are translated, too
+
+* for already configured filters, their drop-down-values are translated, AND the dropdowns show the previously selected values in the selected language"		Bug	iteraplan PO	15/Jun/16 2:10 PM															15/Jun/16 2:11 PM;abo;This issue is the follow-up to ITERAPLAN-4511																																																						

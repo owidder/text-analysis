@@ -1,0 +1,1 @@
+Tests fixen	Die Tests, die durch die dynamische Selektion kaputt gegangen sind sollten gefixt werden.	97661	Sub-task	OpenSpeedMonitor	12/Dec/16 11:42 AM	21/Dec/16 10:23 AM														21/Dec/16 10:23 AM;sbr;Die ausstehenden Probleme sind in den Tickets IT-1427 und IT-1415 beschrieben.																																																						

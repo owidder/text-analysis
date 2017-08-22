@@ -45,6 +45,8 @@ var Force = function (id, width, height, forceRefresh) {
             startForce();
         }
 
+        setTimeout(stop, 6e+5);
+
         return ({
             loaded: loaded
         })

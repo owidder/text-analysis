@@ -1,0 +1,3 @@
+Neighbourhood Diagram CE/Win7/IE9/hsql/english	Testing neighbourhood diagram in iteraplan CE	46148	Sub-task	iteraplan PO	24/Oct/13 4:06 PM	25/Oct/13 1:17 PM					test								iteraplan CE / Win7 / IE9 / hsql / default language: english	25/Oct/13 11:00 AM;sfe;Everything according to test specification.	"25/Oct/13 2:14 PM;psc;All test steps have been performed and documented. No issues have been identified and therefore no follow-up ticket had to be created.
+
+Ticket can be closed."																																																					

@@ -1,0 +1,15 @@
+Subscribing for Events	"* scripts should have the _plugin container api object_ injected to the js scope
+
+* this _subscribeFor('buildingblockType', reactionFunction)_ method subscribes for change events on instances of buildingBlockType (like in continous elastic update)
+
+* on corresponding event: the specified reactionFunction should be invoked with change event (empty event at first)
+
+* event should contain information about changes
+
+
+
+see simple reaction script in wiki 
+
+
+
+Don't forget _tests_, _logging_, _exception handling_ !"		New Feature	iteraplan Thunderduck	05/Jul/16 10:09 AM	18/Jul/16 2:07 PM																																																																				

@@ -1,0 +1,19 @@
+Update toolarea to handle additional date intervals	"Toolarea:
+
+Main entry: ""Addtional date intervals""
+
+First sub-entries: ""Level 1"", ""Level 2"" (if exists), ""Level 3"" (if exists)
+
+Sub-sub-entry: All available date intervals (=duration attributes) ordered alphabetically
+
+The actual selected date interval is highlighted in bold
+
+When you re-click on an already selected date interval, this date interval is removed from the diagram
+
+You cannot remove all date intervals, i.e. one date interval is at least selected
+
+
+
+*See parent task for details*"	85219	Sub-task	iteraplan PO	15/Jun/16 2:42 PM	01/Jul/16 11:13 AM														"30/Jun/16 2:07 PM;dmkh;Well done, see one review comment here:
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-40"	30/Jun/16 2:17 PM;roia;reformatted mpdController code	30/Jun/16 3:59 PM;dmkh;All review comments are done.																																																				

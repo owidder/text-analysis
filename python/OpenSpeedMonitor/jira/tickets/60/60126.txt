@@ -1,0 +1,3 @@
+Add stable and unique IDs for enumeration properties in contextmenu	"The enumeration values in the context menu do not provide unique IDs (cf. attached screenshot). This makes automated testing with Protractor impossible.
+
+In the filtering section of the context menu, unique IDs have to be allocated."		Bug	iteraplan PO	14/Oct/15 1:34 PM	04/Nov/15 3:23 PM														04/Nov/15 1:23 PM;dam;fixed by msr in ITERAPLAN-3990 comit no.1735																																																						

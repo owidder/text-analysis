@@ -1,0 +1,17 @@
+Mass Update - Quick filter is ignored by update	"Reproduce with trunk
+
+ # Open ""Data"" and ""Information Systems""
+
+ # Open the Mass Update dialog 
+
+ # Search after the word ""CRM"" via quick filter
+
+ # Enter a word into the name field of mass update and click on ""Append"" 
+
+ # The summary dialog appears an the change was made on all elements in the list
+
+
+
+Expected: That only filtered/visible elements with activated checkbox will be updated
+
+ Actual: The quick filter is ignored"		Bug	iteraplan Speedbird	19/Apr/17 11:40 AM	02/May/17 6:51 PM														02/May/17 6:51 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-551																																																						

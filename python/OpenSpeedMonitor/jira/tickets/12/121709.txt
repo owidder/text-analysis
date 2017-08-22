@@ -1,0 +1,29 @@
+SEV: No generalisation possible when already one is choosen	"Like with parents each BO can only have on generalisation. Therfore it should not be possible to add a generalisation to a BO (the type, not the synonym of BBT) that already has a generalisation.
+
+
+
+The functionality is already implemented for parents, so implement the generalisation equivalent.
+
+
+
+Keep in mind that there are the addRelation/updateRelation function and the function for adding changes from the backend that also have to update this variable (besides the initialisation).
+
+
+
+*User story:*
+
+
+
+The user is in the SEV of a BO, for example Account.
+
+
+
+In the add relation dropdown chooses ""Contract"". The he chooses ""Specialised Business Object"". This relation is added to the view.
+
+
+
+Now when chooses to add the BO ""Customer"" the option ""Specialised Business Object"" is inactive and he knows that this cannot be added as there is already such a connection.
+
+
+
+When the relation to ""Contract"" is deleted the option has to be active again when choosing ""Customer"" and when choosing ""Contract""."		Improvement	iteraplan Thunderduck	18/May/17 8:13 AM	29/May/17 8:53 AM																																																																				

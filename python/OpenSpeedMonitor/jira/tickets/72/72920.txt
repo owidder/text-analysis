@@ -1,0 +1,13 @@
+Validierung von CsiAggregation bei Instanzierung	"Die CsiAggregation hat durch ihre unterschiedlichen Aggregations-Ebenen unterschiedliche Ausprägungen in der Belegung der Variablen.
+
+
+
+Bei einer hourly-Aggregation müssen beispielsweise Werte für JobGroup, MeasuredEvent, Page, Browser und Connectivity gegeben sein. Während bei einer CsiSystem-Aggregation nur JobGroup und CsiSystem belegt sein müssen.
+
+
+
+Bislang gibt es keine Validierung einer Aggregation bei Erstellung des Objekts. Das bedeutet, es kann passieren, dass eine hourly-CsiAggregation erstellt wird, die fälschlicherweise das ""Page""-Attribut nicht gesetzt hat. Diese hourly-CsiAggregation wäre also fehlerhaft und würde weitere Fehler im System verursachen.
+
+
+
+Es muss also eine Validierung der CsiAggregation auf Basis der Aggregations-Ebene in der Domänen-Klasse implementiert werden."		Improvement	OpenSpeedMonitor	10/Feb/16 3:46 PM	18/Jan/17 2:36 PM																																																																				

@@ -1,0 +1,1 @@
+Wiki Seite für GebTests	Da die GebTests einige OSM-spezifische Konfigurationen und Vererbungsmechanismen nutzen, sollte es für alle Entwickler zu den Geb-Tests eine Seite im Wiki geben.		Task	OpenSpeedMonitor	20/Jun/16 10:43 PM	24/Jun/16 8:44 AM																																																																				

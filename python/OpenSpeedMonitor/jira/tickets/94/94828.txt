@@ -1,0 +1,136 @@
+Interaktiver Client verlangt Authentifizierung	"Beim Aufruf des interaktiven Clients innerhalb von Iteraplan, erscheint ein Authentifizierungsfenster.
+
+Normalerweise sollte die Authentitifizierung über SSO erfolgen.
+
+Der Aufruf von Iteraplan erfolgt problemlos über SSO.
+
+Anbei die Logs von Tomcat und Iteraplan."		Fault	iteraplan Support	01/Sep/16 11:37 AM	26/Sep/16 8:36 AM														"01/Sep/16 11:37 AM;christian.deichmueller@huk-coburg.de;
+
+[^logs.zip] _(8 kB)_"	"01/Sep/16 3:40 PM;cst;Sehr geehrter Herr Deichmüller,
+
+vielen Dank für Ihre Anfrage.
+
+Ist es generell möglich, Abfragen an die REST Schnittelle zu schicken?
+Würden Sie bitte dies bitte testen.
+
+Zum Beispiel:
+
+localhost:8080/iteraplan/api/data/informationsystem
+
+Viele Grüße,
+
+Christoph Stangl - iteraplanSupport"	"01/Sep/16 3:47 PM;christian.deichmueller@huk-coburg.de;Hallo Herr Stangl,
+
+beim Aufruf:
+
+localhost:8443/iteraplan/api/data/informationsystem
+
+erscheint ebenfalls ein Authentifizierungsfenster.
+
+Auch an dem Server, bei dem der interaktive Client funktioniert.
+
+VG
+Christian Deichmüller"	"02/Sep/16 10:16 AM;cst;Hallo Herr Deichmüller,
+
+vielen Dank für Ihre Antwort. 
+
+Könnten Sie uns bitte die Version Ihres BonCode-Connectors mitteilen?
+
+Weiterhin würde Sie bitten, das BonCode-Logging ( https://www.iteraplan.de/wiki/display/iteraplan53/Single+Sign+On  ganz unten) einzuschalten. Dadurch können wir sehen, welche Requests an den Tomcat gesendet werden.
+
+Zusätzlich aktivieren Sie bitte das Tomcat Access Logging (https://geolevel.wordpress.com/2011/02/22/access-log-in-tomcat-aktivieren/ ), um zu verstehen, welcher Request beim Tomcat ankommt. Mit diesen beiden Log-Dateien ist es möglich, das Problem genauer zu analysieren.
+
+Wird bei Ihnen im IIS die Authentifizierung über die Windows Authentifizierung durchgeführt, oder setzen Sie die anonyme Authentifizierung ein?
+Bei der anonymen Authentifizierung wird ein Session Cookie angelegt, sollte dieser nicht korrekt gespeichert werden, kann es zu dem von Ihnen beschriebenen Verhalten kommen. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support  
+
+"	"02/Sep/16 1:48 PM;christian.deichmueller@huk-coburg.de;Hallo Herr Stangl,
+
+anbei erhalten Sie die gewünschten Logs.
+
+Wir verwenden die Windows-Authentifizierung.
+VG
+Christian Deichmüller
+
+[^logs.zip] _(159 kB)_"	"05/Sep/16 11:46 AM;cst;Hallo Herr Deichmüller,
+
+vielen Dank für Ihre Antwort. 
+
+Würden Sie mir bitte einen Termin nennen, wo wir weitere Fragen direkt telefonisch prüfen/klären können.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+"	"05/Sep/16 12:10 PM;christian.deichmueller@huk-coburg.de;Hallo Herr Stangl,
+
+Sie können mich heute von 13.00 - 14.30 Uhr erreichen.
+09561 / 96 - 61432
+
+Gruß"	"06/Sep/16 9:11 AM;christian.deichmueller@huk-coburg.de;Hallo Herr Stangl,
+
+wir haben den betreffenden User in eine andere Gruppe hinzugefügt, die andere Rollen hat und der Aufruf funktioniert.
+
+Anbei der Screenshot für den User mit den vorhandenen Rollen, bei dem es funktioniert.
+
+Welche Rolle(n) wird(werden) benötigt, damit der Aufruf des interaktiven Clients funktioniert?
+
+VG 
+Christian Deichmüller
+
+
+!2.jpg|thumbnail!"	"06/Sep/16 12:25 PM;cst;Hallo Herr Deichmüller,
+
+würden Sie bitte prüfen, ob Ihr Benutzer noch in weiteren Rollen vertreten ist? 
+Generell sollten diese Einstellungen für die Benutzer des interactiven Clients ausreichen. 
+
+Prüfe das zusätzlich noch nach. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"06/Sep/16 12:28 PM;christian.deichmueller@huk-coburg.de;Hallo Herr Stangl,
+
+das ist korrekt.
+Einer dieser Rollen ist es, damit funktioniert es.
+Aber welche davon'?
+
+VG
+
+Christian Deichmüller"	"06/Sep/16 2:09 PM;cst;Wie telefonisch besprochen,
+
+hier die Berechtigung, um sich den interaktiven Client anschauen zu können:
+
+""Nutzung der globalen Volltextsuche"".
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"07/Sep/16 9:02 AM;christian.deichmueller@huk-coburg.de;Hallo Herr Stangl,
+unser User (AP170S) hat die Rolle ""Nutzung der globalen Volltextsuche"" (siehe Screenshot).
+Trotz allem geht der Client nicht auf.
+VG
+Christian Deichmüller
+
+
+!interaktiverClient.jpg|thumbnail!"	"07/Sep/16 9:11 AM;cst;Hallo Herr Deichmüller,
+
+das ist jetzt der von den Usern genützte Account. 
+Hier fehlt die funktionale Berechtigung ""Auf iteraplan über die REST API zugreifen"". 
+
+Die Berechtigung: ""Nutzung der globalen Volltextsuche"" zeigt Ihnen den Button an 
+Die Berechtigung: ""Auf iteraplan über die REST API zugreifen"" wird benötigt um den interactiven Client zu öffnen 
+
+Alle anderen Einstellungen Lesen, schreiben usw. sind dann für die Bearbeitung der einzelnen Bereiche zuständig. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+"	"26/Sep/16 8:26 AM;christian.deichmueller@huk-coburg.de;Hallo Herr Stangl,
+
+das Ticket kann geschlossen werden.
+
+Mfg
+
+Christian Deichmüller"																																									

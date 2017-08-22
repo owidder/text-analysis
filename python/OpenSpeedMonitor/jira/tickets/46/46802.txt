@@ -1,0 +1,1 @@
+Implement header design		46774	Sub-task	iteraplan PO	06/Aug/14 5:35 PM	18/Aug/14 4:37 PM														12/Aug/14 11:10 AM;sepr;Back Inprogress to change elements sizes for 1024px screen																																																						

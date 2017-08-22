@@ -1,0 +1,13 @@
+Enhance color picker with Hex and RGB input possibilities	"As-is:
+
+The color picker in the new client only prsents a color area for choosing a color.
+
+
+
+Should be:
+
+The colorpicker should provide the possibility to select a color not only via a color area, but also via input of a hex value and via the input of a RGB value. All three ways should of course be synchronized. An OK and Cancel Button would be good, too.
+
+
+
+If a new library is used, don't forget to notify the ITLURP."		Improvement	iteraplan PO	26/Aug/16 10:20 AM																																																																					

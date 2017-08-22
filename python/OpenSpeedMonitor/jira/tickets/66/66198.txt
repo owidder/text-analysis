@@ -1,0 +1,55 @@
+Filter to URI and vice versa	"Add methods to create URI-components out of filters.
+
+Add methods to create a filters out of URI-components."	65407	Sub-task	iteraplan PO	09/Dec/15 6:51 PM	02/Feb/16 2:48 PM														"04/Jan/16 2:33 PM;ach;* please ignore first and second commits - uri structure was changed with third commit.
+
+* singleFilter constructors probably don't need so much arguments(translate service, owner Type, owner Key) 
+
+** semantically translate service doesn't belong to filter implementation at all
+
+** owner Type/Key should be handled by corresponding RelationshipEndFilter
+
+ -> may be refactored later
+
+
+
+* unit test.
+
+** may be we have to test more detailed later
+
+** creates a combined filter with complex primary filter, levelfilter and 3 relendFilters.(connected+filtered, connected+without filtering, without connection)
+
+** converts this filter to uri and back, compares input and output."	"04/Jan/16 2:56 PM;ach;Uri Structure:
+
+
+
+*combinedFilter* ::= *primaryFilter* ""C/"" *levelFilter* ""C/"" *relEndFilters*
+
+*primaryFilter*::= *andFilter*
+
+*levelFilter* ::= *operator* ""L/"" *filterValue*
+
+*relEndFilters* ::= *relEndFilter* ""C/"" *relEndFilter* ""C/""...
+
+*relEndFilter* ::= *relEndPersistentName* ""R/"" *connected*""R/"" *andFilter*
+
+*connected* ::= 0 | 1
+
+*andFilter* ::= *orFilter* ""A/"" *orFilter* ""A/"" ...
+
+*orFilter* ::= *singleFilter* ""O/"" *singleFilter* ""O/"" ...
+
+*singleFilter* ::= *filterType* ""S/"" *propertyPersistentName* ""S/"" *operator* ""S/"" *filterValues*
+
+*filterType*::= ""text"" | ""enum"" | ""num"" | ""date"" | ""duration""
+
+
+
+*for Example:* {{textS/mockedmockedNameS/isSA/bc1O/textS/mockedmockedNameS/isSA/bc2A/textS/mockedmockedNameS/isSA/bc3O/textS/mockedmockedNameS/isSA/bc4C/=L/2C/mockedProjectsR/1R/textS/mockedmockedNameS/isSA/bc5O/textS/mockedmockedNameS/isSA/bc6A/textS/mockedmockedNameS/isSA/bc7O/textS/mockedmockedNameS/isSA/bc8C/mockedProjectsR/0C/mockedProjectsR/1'}}"	"29/Jan/16 1:39 PM;wfr;Please add a EBNF grammar as an extra text file in the package folder.
+
+Add references to that file in all JSDoc comments of methods that convert to and from URI part
+
+
+
+References can be simple text, no JSDoc tool experiments for now."	"29/Jan/16 6:51 PM;ach;after review by [~wfr] - improvements done,
+
+please review last two comments (someone else, not [~wfr]) and confirm, whether txt-comment is understanable."	02/Feb/16 2:48 PM;lwi;checked only last 3 commits (as mentioned in the comments)																																																		

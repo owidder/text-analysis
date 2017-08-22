@@ -1,0 +1,3 @@
+DefaultMapping Pages zuordnen können - Firefox	"Bei einem Klick auf ""ausgewähltes Mapping einer Page zuordnen"" in der configuration view, soll in dem gezeigten modalen Dialog nur die ausgwählte Kurve, sowie die der Page sichtbar sein.
+
+Dieses Feature funktioniert mit Chrome, jedoch nicht mit Firefox."		Bug	OpenSpeedMonitor	18/Jan/16 9:13 AM	25/Jan/16 12:53 PM																																																																				

@@ -1,0 +1,46 @@
+Reports limited transitivity - We must developed our sql views	"For example, an Information system is running on an infrastructure element (jvm) that uses another infrastructure element (virtual machine) that is linked with a technical component Red Hat Enterprise Linux # 5.
+
+
+
+If we want to find information system involved with our infrastructure elements with Red hat Enterprise Linux # 5, we must used our sql views that we developed to make sql joins as we like.
+
+
+
+The Iteraplan reports focus on a bloc type and can make extensions with other bloc but it is not possible to make an extension within an extension to cover correctly the possibilities with hierarchy, uses, explicit links etc.
+
+
+
+iteraQl could have been interesting, but no possibily to save it or to export the result. We didn't experiment the Reactor yet.
+
+
+
+Do you plan improvement to extract information corresponding to the richness of your model (hierarchy, uses, links, transitivity)?"		Technical question	iteraplan Support	29/Feb/16 6:54 PM	19/Mar/16 7:00 AM														"01/Mar/16 1:02 PM;sfe;Wie wäre es mit partial export?
+Beispiel (liefert mit Sample Data aber keine Ergebnisse):
+
+InformationSystem[view(/infrastructureElementAssociations/infrastructureElement/baseComponents/technicalComponentReleaseAssociations/technicalComponentRelease@name)  .contains(""linux"")];
+
+Ausdruck in eckigen Klammern kann auf der Export/Import-Seite als partial filter verwendet werden."	"01/Mar/16 2:45 PM;tam;The iteraQL-Query for this could be:
+
+
+
+{code:java}
+
+InformationSystem[view(/infrastructureElementAssociations/infrastructureElement/baseComponents/technicalComponentReleaseAssociations/technicalComponentRelease@name).contains(""linux"")];
+
+{code}
+
+
+
+
+
+You can do partial export using iteraQL.
+
+# Go to ""Mass update"" => ""Export/Import""
+
+# Check 'partial' and select 'Information System' from the filter list
+
+# add {code:java}
+
+view(/infrastructureElementAssociations/infrastructureElement/baseComponents/technicalComponentReleaseAssociations/technicalComponentRelease@name).contains(""linux""){code}  to iteraQL field
+
+# Click download data"																																																					

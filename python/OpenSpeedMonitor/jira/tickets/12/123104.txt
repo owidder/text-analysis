@@ -1,0 +1,1 @@
+SpeedIndex wird noch nicht wirklich als Zeit behandelt in TimeSeries Chart	Wenn ich sowohl TTFB als auch Zeit auswähle bekomme ich zwei Achsen: Einmal "Others" und einmal "Load Time"		Bug	OpenSpeedMonitor	01/Jun/17 8:47 AM	15/Jun/17 10:22 AM																																																																				

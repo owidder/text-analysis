@@ -1,0 +1,21 @@
+Bitte neue Ticket Schema für Slab Tickets erstellen	"Hallo liebe Admins, 
+
+
+
+bitte ein neues Ticket Schema für die Slab Tickets erstellen. Wir bräuchten zusätzlich noch die Felder Due Date, Development und Agile. 
+
+
+
+https://confluence.atlassian.com/adminjiraserver072/issue-fields-and-statuses-828787757.html#Issuefieldsandstatuses-Issuefields 
+
+
+
+Danke euch im Voraus :-) "		Task	Infrastruktur	20/Jan/17 5:02 PM	15/Mar/17 4:33 PM	JIRA													"20/Jan/17 5:05 PM;ehi;Hallo Thorsten, kannst du Emiliyana hier bitte weiterhelfen?
+
+
+
+Grüße, Elke"	23/Jan/17 3:16 PM;tgo;Ja, kann ich, dauert nur einen Moment da ich noch andere Tickets in Progress habe, die diese Woche fertig werden müssen. Die Hamburger halt ...	25/Jan/17 9:12 AM;tgo;Terminiert für diesen Freitag.	"15/Feb/17 2:07 PM;tgo;Das Due Date wird jetzt eingeblendet. 
+
+
+
+[~eka]: ""Agile"" und ""Development"" verstehe ich leider nicht. Was ist damit gemeint? Das kenne ich nicht als Felder, sondern das erste als Modul, das zweite als Sektion, der sich mit Fisheye und Crucible verbindet. Wenn Ihr die Projekte dort eingerichtet habt."																																																			

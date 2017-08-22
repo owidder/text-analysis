@@ -1,0 +1,1 @@
+Enable Format Specification for Numeric Attributes	If a numeric attribute is defined I would like to be able to specify the position after decimal point that should be shown. An integer is thereby specified by "0" positions after decimal point. 		New Feature	iteraplan PO	10/Sep/13 1:00 PM	30/Dec/15 3:17 PM																																																																				

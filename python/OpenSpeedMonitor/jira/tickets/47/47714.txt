@@ -1,0 +1,1 @@
+Date picker for Last Modification Time does not open in Internet Explorer 11	Date picker for Last Modification Time does not open in Internet Explorer 11. Please analyse.		Bug	iteraplan PO	27/Apr/15 9:06 AM	05/May/15 2:04 PM					ie11									27/Apr/15 2:49 PM;dasm;Verified ( rev1036)																																																						

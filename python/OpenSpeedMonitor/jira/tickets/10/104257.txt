@@ -1,0 +1,9 @@
+Adjustments of attribute details page	"* Add some space between label and switch
+
+* ""Range uniform distributed"" should be a switch
+
+* Adjust translation of boundaries:
+
+** ""Lower bound for Attribute Values"" -> ""Lower bound""
+
+** ""Upper bound for Attribute Values"" -> ""Upper bound"""		Improvement	iteraplan Thunderduck	29/Nov/16 2:00 PM	02/Dec/16 9:38 AM														01/Dec/16 4:22 PM;pma;I also changed the german translation from "{Obere, Untere} Schranke für Merkmale" to "{Obere, Untere} Schranke" 																																																						

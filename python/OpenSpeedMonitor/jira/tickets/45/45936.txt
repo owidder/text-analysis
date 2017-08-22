@@ -1,0 +1,10 @@
+Better Oracle connection docs: DB Instance	"Be more clear about what to fill in into the database connection parameters.
+
+There must be no stolperstein in the procedure.
+
+Björn W. reports:
+
+Wesentlicher Stolperstein war Oracle (hat ca. 1,5 Stunden gedauert, bis ich das Dingens verstanden hatte und wusste was ich im iteraplan Installer angeben musste; DB ist ja nicht Schema und nicht Tablespace und Datenbank, sondern Oracle Instanz  ).
+
+"		Improvement	iteraplan PO	30/Jul/13 8:54 AM	11/Aug/14 8:42 AM														"01/Aug/14 4:09 PM;fam;Fixed within ITERAPLAN-197
+"	04/Aug/14 1:07 PM;dop;I can't find the specific section in the userguide. Please provide a Link in this ticket. 	05/Aug/14 11:36 AM;wfr;Spot review WFr FKa: after release, later	05/Aug/14 4:43 PM;fam;Added a note in the userguide	11/Aug/14 8:42 AM;dop;Link to changed userguide: http://www.iteraplan.de/wiki/display/upcomingIteraplan/Installing+iteraplan																																																		

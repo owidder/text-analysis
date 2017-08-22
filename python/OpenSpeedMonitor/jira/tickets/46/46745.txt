@@ -1,0 +1,8 @@
+Design mockup for list view	"Create a desing mockup for a list view.
+
+Use the base elements (menu bar, footer).
+Content of the list view is a table.
+
+Use data from screenshots of the exiting iteraplan Web UI.
+"		New Feature	iteraplan PO	18/Jul/14 1:51 PM	06/Oct/14 11:35 AM														"06/Oct/14 11:35 AM;wfr;Done successfully.
+Closed directly because work was before Kanban workflow set up."																																																						

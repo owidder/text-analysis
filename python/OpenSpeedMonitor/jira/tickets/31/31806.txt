@@ -1,0 +1,5 @@
+FTP in Jenkins-Plugin "Publish over SSH" funktioniert nicht	"Die Ausführung von shell-commands funktionert, nicht aber das Übertragen von Dateien. Ich nehme an dies müsste über FTP funktionieren.
+
+
+
+Siehe auch IT-449"		Task	OpenSpeedMonitor	10/Feb/15 9:01 AM	02/Mar/15 10:10 AM																																																																				

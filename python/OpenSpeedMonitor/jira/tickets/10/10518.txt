@@ -1,0 +1,5 @@
+Ein Job kann zu mehreren JobGroups gehören	"Ein Job (Messjob) soll mehreren JobGroups (i.d.R. CSI Gruppen wie Lhotse, Classic etc.) angehören können.
+
+Derzeit gehört ein Job zu genau einer JobGroup. Das Daten- und Objektmodell muss entsprechend angepasst werden."		New Feature	OpenSpeedMonitor	05/Sep/13 10:48 AM	18/Jan/17 2:40 PM														05/Sep/13 10:50 AM;mzeimer;Nils bat in seiner Mail vom 4. September 2013 16:09 um dieses Feature,	"05/Sep/13 12:16 PM;mzeimer;Alternativ:
+
+Eine UI schaffen um Jobs zu JobGruppen einfach zuzuordnen ohne jeden Job einzelnd zu ändern. Am besten in der JobGroup-Edit-Ansicht mit unterbringen. Eine Art Auswahl aller Jobs und Zuordnung per Auswahl. Ist der Job einer Gruppe zugeordnet, wird der Job nun neu zugeordnet. Diesen Effekt sollte die UI dem Benutzer deutlich kommunizieren (zum Beispiel bei den Jobs die aktuelle Zuordnung mit anzeigen)."	24/Sep/13 11:07 AM;nkuhn;Wir sollten aus der 1:n-Beziehung zwischen Job und JobGroup wieder eine n:m-Beziehung machen, da ein Job zu mehreren JobGroups gehören kann.																																																				

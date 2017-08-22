@@ -1,0 +1,11 @@
+Complete Migration for MPD	"- Logging,
+
+- Coloring
+
+- Include Filter migration
+
+- Migration of relations between levels needs to be fixed
+
+- Migration of additional columns needs to be fixed"		Improvement	iteraplan Thunderduck	14/Dec/16 9:22 AM	31/Jan/17 4:21 PM														"31/Jan/17 4:20 PM;mada;Review done
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-319#CFR-38351"																																																						

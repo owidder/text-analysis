@@ -1,0 +1,31 @@
+LIST-VIEW UI: Edit a content in list - dropdown-menus	"The User wants to change the content in a column of the list. He clicks on the pencil-icon to edit the content.
+
+
+
+In the columns like Compliance, status, technical state of health and Manufacturer where only one value can be chosen: At the moment there is a blue minus-icon which can be clicked.
+
+
+
+*ToDo:* Remove this icon and add the usual material design Dropdown-arrow on the right side of the textfiled as in the Screenshot. When the user clicks into the field or on the dropdown-arrow the list opens. 
+
+ The rest of the functionality stays the same: searchable dropdown, user can erase the text and save the empty string.
+
+
+
+ 
+
+
+
+This kind of Dropdown also appears in Admin> Attributes > Group
+
+
+
+Please make sure the changes are effective here, too. 
+
+
+
+Also consider the green row when you click ""new element"".
+
+
+
+ "		Improvement	iteraplan Speedbird	12/Jul/17 9:51 AM	21/Jul/17 9:11 AM																																																																				

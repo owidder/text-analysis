@@ -1,0 +1,9 @@
+Relation filter of filter dialog UI 	"- When all relations in ""Choose a relation"" dropdown list are selected the input field is still available (see the screenshot).
+
+Expected: when all possible relations are selected for filtering ""Choose a relation"" input filed dissappears.
+
+
+
+- The last selected relation name is displayed in ""Choose a relation"" input field (see the screenshot).
+
+Expected: after selecting a relation for filtering ""Choose a relation"" input field is cleared and ""Choose a relation"" hint-text is displayed"		Bug	iteraplan Speedbird	05/Jan/17 4:30 PM	10/Jan/17 3:00 PM														10/Jan/17 3:00 PM;dmkh;Review is done																																																						

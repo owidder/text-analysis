@@ -1,0 +1,1 @@
+HTML-Encoding Dashboards	HTML-Encoding funktioniert in den Zeit-Aggregations-Selects auf den beiden Dashboards nicht mehr.		Bug	OpenSpeedMonitor	15/Feb/16 3:39 PM	24/Feb/16 12:03 PM														24/Feb/16 12:03 PM;mmi;Changed File-Encoding to UTF-8																																																						

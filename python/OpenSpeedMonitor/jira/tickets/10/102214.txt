@@ -1,0 +1,83 @@
+Crawling iteraplan content	"Dear iterpaplan support, 
+
+
+
+as we want to integerate iteraplan into our companyinteral search, our colleagues tried to crawl the iteraplan content.
+
+What they are doing is to send HTTP-requests to our iteraplan instance (Tomcat with an IIS in front). The search system is a Sharepoint 2013. 
+
+
+
+What they are getting back is an unrecognized HTTP reponse. 
+
+
+
+Do you have any expierience with crawling iteraplan content? 
+
+
+
+
+
+Thanks in advance. 
+
+BR, 
+
+Benedikt"		Technical question	iteraplan Support	10/Nov/16 8:57 AM	03/Dec/16 7:00 AM														"10/Nov/16 8:57 AM;benedikt.schmaler@bshg.com;
+
+!Untitled.png|thumbnail!"	"11/Nov/16 1:24 PM;cst;Dear Benedikt,
+
+thank you for your inquiry.
+
+The REST interface of iteraplan need a authentification via cookie or REST command. 
+Would you please check following links:
+
+https://www.iteraplan.de/doc/display/iteraplan54/REST+API
+https://www.iteraplan.de/doc/display/iteraplan54/Automating+Data+Export+and+Import (For Basic Authentifications)
+
+It's not possible to use LDAP / SSO for the authentification of REST. 
+
+Additional we have no experience with Sharepoint 2013 and crawling with REST in iteraplan. 
+At the moment it is not possible to use the search of iteraplan with REST.
+
+We are planing to publish this in a future version. 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "	"14/Nov/16 11:42 AM;benedikt.schmaler@bshg.com;Hi Mr. Stangl, 
+
+could you please describe to me how to do the authentifiaction via cookie? 
+I cant find it in the documentation. 
+
+thanks, "	"14/Nov/16 11:47 AM;cst;Hi Mr. Schmaler,
+
+
+
+thanks for your reply.
+
+
+
+In our example for ""Automating Data Export and Import"" the authentication is described in following part:
+
+
+
+Example for ""form""-based authentication with cookies:
+
+
+
+#Login
+
+*curl -k -v --data ""j_username=<USERNAME>&j_password=<PASSWORD>"" <ITERAPLAN_URL>/j_iteraplan_security_check --cookie-jar cookies.txt*
+
+
+
+#Command 
+
+*curl -X POST -k -v --cookie cookies.txt* and the rest of your comamnd.
+
+
+
+Greetings,
+
+
+
+Christoph Stangl - iteraplan Support"																																																			

@@ -1,0 +1,16 @@
+date pick calendar in new release does not pop up when using IE 8	"When trying to create a new release, the date pick calendar does not show up when using Internet Explorer 8. There seems to be a script error / script loading error specifically for the new release page. In ""edit"" and ""new"", the JavaScript works, only ""new release"" is not ok. Attached is the screenshot, below the error details.
+
+Details zum Fehler auf der Webseite
+ 
+Benutzer-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; InfoPath.2)
+Zeitstempel: Thu, 12 Jan 2012 13:26:18 UTC
+ 
+ 
+Meldung: Das Steuerelement kann den Fokus nicht erhalten, da dieses unsichtbar oder nicht aktiviert ist oder keinen Fokus zulässt.
+Zeile: 720
+Zeichen: 5
+Code: 0
+URI: https://www.iteraplan.de/iteraplan-eon290/show/informationsystem/25118?execution=e8s1
+ "		Bug	iteraplan PO	12/Jan/12 2:33 PM	24/Jan/12 11:12 AM					gui									"17/Jan/12 10:52 AM;sry;It works, but I have two remarks.
+Why are both branches of the if statement identical? 
+Please use dojo.byId instead of document.getElementById for the branching condition."	24/Jan/12 11:12 AM;lci;Ok.																																																					

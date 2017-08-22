@@ -1,0 +1,23 @@
+Refactoring of setUrl in LSD & N3CD & IFD	"*Summary:*
+
+Refactor the setting of the url in the LSD and N3CD. Use therefore the new function in queryprocessor.js\setParametersToUrl.
+
+
+
+*Details:*
+
+During the implementation of ITERAPLAN-3817 a new function ""setParametersToUrl"" was centrally implemented. Use this function also in the LSD and NCD, e.g.
+
+* Refactor lsdConfiguration\this.set"		Improvement	iteraplan Speedbird	08/Sep/15 8:56 AM	27/Apr/17 1:08 PM					lsd	ncd	refactoring							27/Mar/17 2:36 PM;fka;Anything still to do?	12/Apr/17 10:57 AM;roia;I think, we should also refactor IFD and use {{queryProcessor.readUrlAsObject()/writeObjectToUrl()}} as we do in all other new diagrams, to be able to store complex objects and arrays, not just string values. 	12/Apr/17 10:59 AM;fka;Yes, lets do it.	"25/Apr/17 8:51 AM;viol;Please, update wiki page:
+
+
+
+https://iteraweb.iteratec.de/confluence/pages/viewpage.action?title=URL+parameters+for+new+client&spaceKey=ITPL"	"25/Apr/17 10:42 AM;roia;[~viol], wiki page updated: in IFD url the *borderLineProperty*, which contained object before now is called *borderLine* and contains string - persistent name of attribute. Old URLs are handled and reformatted to new ones when they are loaded and parsed.
+
+
+
+Also ""*isUserChangedZoom*"" parameter is removed: if ""zoom"" parameter is present it is used. If not, the automatic ""zoom-to-fit"" is used.
+
+
+
+ "																																																		

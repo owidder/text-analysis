@@ -1,0 +1,25 @@
+Triggered reaction and manual user change crash	"Reproduce with trunk
+
+ # Load the script cost.js
+
+ # Change a value in the attribute cost in the ""Information System"" 
+
+ # This field will be cleared from the reaction 
+
+ # Now try to change the value from ""Empty"" to e.g. ""10""
+
+ # A error occures and nothing happens 
+
+ # The same problem appears when you clear a field and he clears again
+
+
+
+Expected: That no error appears. What is the correct procced for this case? 
+
+
+
+ 
+
+
+
+ "		Bug	iteraplan PO	08/May/17 11:03 AM	14/Jun/17 1:56 PM														14/Jun/17 1:56 PM;fka;Script is wrong, clearValues only applicable for multi value enums																																																						

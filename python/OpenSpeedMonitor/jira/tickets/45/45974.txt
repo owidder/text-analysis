@@ -1,0 +1,14 @@
+runIteraplan.bat fails - Tomcat does not start successfully	"Nach Aufruf von runIteraplan.bat läuft das Skript erfolgreich durch.
+
+Nach Drücken der Leertaste wird zwar ein Browserfenster mit ""http://localhost:8080/iteraplan"" geöffnet, der Aufruf von iterplan ist jedoch nicht möglich (""Verbindung fehlgeschlagen"").
+
+"		Bug	iteraplan PO	07/Aug/13 4:06 PM	30/Oct/13 3:06 PM					bundles									"29/Oct/13 4:52 PM;sry;Rückfrage hierzu: Auf welchem Windows und mit welchem Java ist das passiert? 32 Bit oder 64 Bit?
+
+Nach Ausführung der {{runIteraplan.bat}} wird eine Datei {{java_dir.tmp}} geschrieben, in der das verwendete Java steht - so lässt sich ablesen ob es um 32 Bit oder 64 Bit geht.
+
+Hintergrund: Auf einigen Rechnern kann das 32-Bit-Java nicht so viel Speicher allokieren wie das Startskript verlangt. Die JVM weigert sich dann leider stillschweigend, zu starten.
+
+Für iteraplan 3.2 wird etwas weniger Speicher angefordert, so dass es auch auf 32-Bit-Java richtig laufen sollte. Ich wäre Dir trotzdem dankbar, wenn Du Feedback zu den Fragen oben geben könntest."	"30/Oct/13 2:18 PM;sfr;Windows 7 => 64 Bit
+Java => 32 Bit
+
+iteraplan 3.2 startet ohne Probleme"	30/Oct/13 2:29 PM;sry;Super, danke. Heißt also, das Ticket kann als "Fixed" geschlossen werden?	30/Oct/13 2:56 PM;sfr;Da iteraplan 3.2 startet, kann das Ticket aus meiner Sicht als "fixed" geschlossen werden.	30/Oct/13 3:06 PM;sry;Has been fixed with optimized memory parameters for iteraplan 3.2	31/Oct/13 8:44 AM;psc;Ticket will be closed.																																																	

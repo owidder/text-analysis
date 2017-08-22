@@ -1,0 +1,61 @@
+Layout of Cluster Diagram	"*Summary:*
+
+Implement the following layout changes:
+
+
+
+1. Loading indicator
+
+Implement the same Loading Indicator as in the Masterplan Diagram
+
+2. Sliding legend (should be already implemented in scope of other tickets)
+
+Legend should slide in and out
+
+3. No title (should be already implemented in scope of other tickets)
+
+4. Scrolling and zooming with GoJS-features
+
+The diagram-div is restricted to the screen size. Use native GoJS scrolling and zooming (as in the Portfolio Diagram).
+
+Save the zoom in the url
+
+5. Diagram is initially zoomed out
+
+The diagram is initially zoomed out to the see the full diagram (like the Portfolio Diagram)
+
+
+
+Before a zooming action of the user happens, always show the whole diagram (i.e. adjust the zoom level after each change to diagram.) After the first zooming of the user, the user ist repsonsible for adjusting the zoom, do not change the zoom level automatically any more.
+
+
+
+Show the zoom level in the legend (in %, only integer part, no fractional part).
+
+Don't show the zoom level in the legend if it's == 100%.
+
+Zoom limits: 1% - 200%
+
+
+
+6. Include a report date in the legend
+
+Like in the Portfolio Diagram
+
+7. Tabular layout
+
+Use an attractive tabular layout similiar to the Landscape Diagram
+
+
+
+*Implementation Details:*
+
+* Url: Save the zoom-factor in the url
+
+
+
+*UI:*
+
+* Legend: see above
+
+* Toolarea: nothing to do"		New Feature	iteraplan Speedbird	26/Aug/16 8:49 AM	12/Sep/16 10:42 AM														26/Aug/16 11:00 AM;msr;Ticket already discussed on 26th August	06/Sep/16 11:45 AM;dmkh;Review is done, 2 comments are here: https://iteraweb.iteratec.de/fisheye/cru/IP-27	06/Sep/16 1:26 PM;roia;[~dmkh], review comments fixed in revision 4255	12/Sep/16 10:48 AM;tam;The ticket for zooming is IPTS-166																																																			

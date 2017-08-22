@@ -1,0 +1,53 @@
+Filter by enum type attribute is weird	"*Bug 1*
+
+
+
+1. Open list of Information systems, reset view, click the [Edit filter] button.
+
+2. Select ""Complexity"" attribute and ""is"" operator.
+
+3. Note that ""value"" input has a dropdown with 3 values: ""high"", ""average"", ""low""
+
+4. Do not set any value and close the filter by clicking [Ok]
+
+5. Click ""Edit filter"" and expand the value dropdown.
+
+
+
+Expected result: dropdown has ""high"", ""average"", ""low"" values.
+
+Actual behavior: dropdown has the ""No matching results"" item
+
+!no-matching-results.jpg|thumbnail!
+
+----------------
+
+
+
+*Bug 2*
+
+1. Set attribute = ""Complexity"", operator ""contains"", leave value blank
+
+2. Result set is empty
+
+3. Now enter some character, remove it and click ""Apply""
+
+4. {color:red}UPDATE:{color}Result set shows all records
+
+
+
+*Bug 3*
+
+Repeat steps 1,2 from the previous step.
+
+3. Refresh the page and click the ""Edit filter"" button
+
+Result - the value input contains ""null"" string as value.
+
+
+
+Bugs 2 and 3 could be related. If necessary, split into subtasks. "		Bug	iteraplan Speedbird	25/Jan/17 4:07 PM	02/Feb/17 10:06 AM														"31/Jan/17 1:46 PM;roia;[~msr], after performing steps 1-4 from *Bug 1*, the list is filtered using ""Complexity is undefined"" filter. Is this correct behavior?
+
+
+
+!complexity_undefined.png|thumbnail!"	01/Feb/17 10:28 AM;msr;The actual implemented behaviour for "Complexity is undefined" is correct (it shows only 9 Information Systems where the value of Complexity is undefined). Please leave it like that.																																																					

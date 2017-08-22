@@ -1,0 +1,5 @@
+Index Optimieren	Bei der Performance Analyse vom OTTO full dump ist mir aufgefallen, dass der index `wJRD_and_wJRJCId_and_mV_and_cV_idx`  der `event_result` Tabelle 2,6GB groß ist bei 3.3GB Daten. Alle anderen Indizes sind deutlich kleiner (<120MB). Wir sollten überprüfen ob dieser optimiert werden kann.		Bug	OpenSpeedMonitor	24/Nov/16 3:42 PM															"24/Nov/16 3:49 PM;sbr;Außerdem sollten wir einmal für einen bestimmten Zeitraum die langsamen Queries mitloggen (https://dev.mysql.com/doc/refman/5.5/en/slow-query-log.html) und diese hinterher analysieren lassen mit bestimmten Tools:
+
+https://www.percona.com/doc/percona-toolkit/2.2/pt-index-usage.html
+
+https://www.percona.com/doc/percona-toolkit/2.2/index.html"	24/Nov/16 5:01 PM;sbr;Die Columns in `wJRD_and_wJRJCId_and_mV_and_cV_idx` sind in einer anderen Reihenfolge als im Namen. Ich bezweifle dass dieser dann wirklich richtig effizient ist.																																																					

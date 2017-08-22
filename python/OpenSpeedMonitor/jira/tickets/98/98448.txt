@@ -1,0 +1,75 @@
+LATER: Create REST-Interface for attribute Groups	"*Summary:*
+
+Create REST-Interface for attribute Groups
+
+
+
+*Details:*
+
+* The new REST resource structure should be:
+
+** /api/atg/
+
+
+
+* Use this REST interface as blueprint:
+
+https://www.iteraplan.de/doc/display/iteraplan54/Single+Element+API
+
+* Start with the GET for /api/atg/ as this is needed for the release
+
+** /api/atg/ provides all information all all attribute groups like /api/icd/
+
+* Ask [~ach] if you need some support
+
+* No permission shown in the JSON
+
+* Only show this information in the JSON for each attribute group:
+
+** ID
+
+** Name
+
+** Description
+
+** IS_TOPLEVEL_ATG
+
+** POS
+
+** LAST_MOD_USER
+
+** LAST_MOD_TIME
+
+** all included attributes of this attribute group"		New Feature	iteraplan Speedbird	07/Oct/16 2:06 PM	08/Nov/16 10:18 AM														25/Oct/16 1:41 PM;ants;JSON structure of attributes for attribute group is not clarified.	25/Oct/16 3:04 PM;mada;Need clarify with [~ants] and [~msr]	"03/Nov/16 4:39 PM;msr;Please use exactely the same JSON-structure and content like a property in the ""/api/icmm"".
+
+
+
+Stephan provided a mapping for the classic-Java-types to the Elastic-types. Please include this in the REST-interface
+
+
+
+*Classic -> Elastic*
+
+Number -> Decimal (normal numeric properties)
+
+Number -> Integer (System numeric properties: Id and position)
+
+Single text line -> text
+
+Mulit-line text -> richtext"	"07/Nov/16 6:18 PM;ants;Permission handling is not implemented for the resource.
+
+Steps to reproduce:
+
+1. Log in as user with no permissions for ""Configure attribute groups""
+
+2. In classic client there is no menu entry for Administration --> Attribute groups and user gets ""No permissions"" error via URL copying.
+
+3. But REST resource /api/atg is available without any error.
+
+
+
+See screenshots for details."	"07/Nov/16 6:31 PM;ants;Reviews done:
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-116
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-168"	08/Nov/16 9:27 AM;mada;Permission handling for this REST endpoint will implement in scope of task IPTS-314																																																	

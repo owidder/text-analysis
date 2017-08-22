@@ -1,0 +1,23 @@
+Anyonymer Zugriff	"Wir wollen den anonymen Zugriff aktivieren. Leider ist die Möglichkeit auf der AdminSeite nicht verfügbar.
+
+
+
+Was ist zu tun, um das zu aktivieren?"		Technical question	iteraplan Support	12/Jul/17 7:42 AM															"12/Jul/17 7:42 AM;thomas.liskow@coface.com;
+
+!AnonymerZugang.jpg|thumbnail!"	"12/Jul/17 8:14 AM;cst;Sehr geehrter Herr Liskow,
+
+vielen Dank für Ihre Anfrage.
+
+Wird Ihnen in der Browser-Konsole, oder in der Tomcat-Konsole ein Fehler hierzu angezeigt? 
+Sonst würde ich erstmals auf Tomcat-Workspace und Cache tippen, nicht das hier zu einer Vermischung von 5.5 / 6.0 kommt. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"26/Jul/17 10:29 AM;thomas.liskow@coface.com;Hallo Herr Stangl,
+
+leider warden in der TomCat Konsole und auch in den Logs keine Fehler angezeigt.
+Auch das Löschen von Cache und Workspace ändert nichts an dem Verhalten.
+
+Viele Grüße
+
+Thomas Liskow"																																																				

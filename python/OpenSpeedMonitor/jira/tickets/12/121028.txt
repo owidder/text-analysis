@@ -1,0 +1,53 @@
+über Reaktor veröffentlicher Report nicht anzeigbar	"Hi, ich habe für Zeiss einen HTML Report im Reaktor erstellt, dessen Erzeugung ca. 30 Sekunden dauert. Wenn ich diesen über eine URL veröffentliche, eine Cache Time von 0 einstelle und die URL dann aufrufe dauert es ca. 30 Sekunden, dann wird versucht ein Download zu starten mit dem Ergebnis ""keine Datei"" (Google Chrome). Rufe ich die URL erneut auf, wiederholt sich das eben beschriebene.
+
+
+
+Ändere ich nun die Cache Time auf >0 habe ich beim ersten Aufruf dasselbe Problem. Beim zweiten Aufruf (innerhalb der Cache Time) wird mir das Ergebnis direkt korrekt angezeigt.
+
+
+
+Any Ideas?
+
+
+
+An Log Files komme ich nicht selbst, müsste ich bei Bedarf anfordern. Werde das auch noch einmal in einer lokalen Umgebung nachstellen."		Fault	iteraplan Support	10/May/17 1:26 PM	15/May/17 10:43 AM														"10/May/17 2:01 PM;dne;Konnte das Szenario lokal in einem 5.5er Bundle nachstellen. Im iteraplan Log steht nur
+[WARN ] 10-Mai-2017 13:52:07 [rest.representation.XsltScriptResultRepresentationHandler] The execution was successful, but there is no output file with the name privateDemo_longRunner.html
+
+Das ausgeführte Skript habe ich angehängt. Ob es an der Laufzeit liegt habe ich noch nicht geprüft.
+
+[^test_longRunner.xsl] _(2 kB)_"	"10/May/17 2:04 PM;dne;Hängt nicht an der Laufzeit, sondern nur an der Cache Time von 0. Im angehängten Skript habe ich die Iterationen auf 1 gesetzt und immer noch das gleiche Ergebnis.
+
+[^test_longRunner.xsl] _(2 kB)_"	"11/May/17 8:25 AM;cst;Hallo Daniel,
+
+können wir hierzu heute kurz telefonieren?
+Wann kann ich dich am besten erreichen?
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"12/May/17 10:13 AM;cst;!image-2017-05-12-10-11-48-553.png!
+
+Mit dieser Konfiguration kann ich den Link immer aufrufen.
+
+!image-2017-05-12-10-12-45-734.png!
+
+ 
+
+--------------
+
+Arbeite aber auch mit einer Version 6.0 - Trunk werde das im Abschlusstest der Version 6.0 gegenprüfen. Oder habe ich das hier falsch verstanden? "	"12/May/17 1:05 PM;dne;Dann versuche bitte diesen Link aufzurufen: https://demo.iteraplan.de/iteraplan_ee_release/published/test4711
+
+In Chrome scheitere ich daran.
+
+!image.png|thumbnail!
+
+!image.png|thumbnail!"	"12/May/17 1:06 PM;dne;Hatte eigentlich die Config noch eingefügt, aber scheinbar hat da Jira einen Fehler... In der Vorschau waren es noch zwei unterschiedliche Bilder :p
+
+!image.png|thumbnail!"	"15/May/17 10:43 AM;cst;Werde das Verhalten nochmal in Version 6.0 gegen prüfen. Ein Fix für Version 5.5. wird es hier nicht geben.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support"																																																

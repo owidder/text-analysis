@@ -1,0 +1,27 @@
+Mess-Strecke meinapetito.de	"Für den folgenden von apetito vorgegebene Klick-Pfad sind Skript und Job einzurichten:
+
+ #  Login   
+
+jana.wernsmann@apetito.de   
+
+apetito123
+
+ # Menüpunkt „Produkte“ auswählen
+
+ # Kategorie auswählen (Geflügel)
+
+ # Produktdetailseite auswählen (Hähnchen „Tandoori“)
+
+ # Produkt zum Warenkorb hinzufügen (Klick auf den Einkaufswagen)
+
+ # Zur Kasse
+
+ # Weiter zu den Lieferanten
+
+
+
+ 
+
+
+
+ "	113727	Sub-task	OpenSpeedMonitor	03/Mar/17 11:21 AM	07/Mar/17 5:42 PM																																																																				

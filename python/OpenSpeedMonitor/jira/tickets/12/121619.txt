@@ -1,0 +1,141 @@
+Speichern eines Informationssystems schlägt fehl	"Folgende Fehlermeldung wird angezeigt, wenn ein bestehendes Informationssystem geändert wird und gespeichert werden soll:
+
+ Beim Ausführen Ihrer Anfrage trat ein Fehler auf.
+
+
+
+Ein allgemeiner technischer Fehler ist aufgetreten.
+
+			
+
+Mögliche Gründe:
+
+Sie haben mehrfach auf einen Knopf oder Link gedrückt, ohne die Antwort abzuwarten.Sie haben versucht, auf einen Link zuzugreifen, der in der 
+
+aktuellen Session nicht gültig ist. Insbesondere URLs mit einer Endung 
+
+wie ""?execution=e4s2"" gelten nur innerhalb einer Session.Ein anderer allgemeiner technischer Fehler ist aufgetreten.
+
+
+
+Der aktuelle Menüpunkts-Flow wurde geschlossen, um Inkonsistenzen oder 
+
+Beschädigungen am Datenbestand zu vermeiden. Falls der Fehler bei 
+
+erneuten Versuchen weiter auftritt, können Sie auch versuchen, sich ab- 
+
+und wieder anzumelden.
+
+
+
+Neu angelegte Systeme können allerdings gespeichert werden.Diese können dann auch geändert werden. Nur siegeln funktioniert bei diesen dann nicht (s. IPS-443)"		Fault	iteraplan Support	17/May/17 12:21 PM	01/Jul/17 7:00 AM														"17/May/17 12:21 PM;martin.weidemann@l-bank.de;
+
+[^ProblemReport_2017-05-17_121705.zip] _(10 kB)_"	"17/May/17 12:53 PM;cst;Sehr geehrter Herr Neydek,
+
+ich konnte die Ursache für das Problem herausfinden. Das Siegel-Feature wird nicht von der History abgedeckt. 
+Das bedeutet, wenn dieses Feature genutzt wird, führt das zum oben genannten Fehler. 
+
+Wird in Ihrem oberen Beispiel ein Siegel gebrochen?
+
+Werde dies hier intern prüfen und Ihnen zeitnah bescheid geben. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"17/May/17 12:57 PM;martin.weidemann@l-bank.de;Hallo Herr Stangl,
+
+mein Datenbank-Kollege hat gerade folgendes als Ursache ausgemacht:
+
+""Grund für den Fehler ist:
+
+ 
+ORA-01400:
+cannot insert NULL into
+(""ITERAPLAN"".""HISTORY_ISR"".""FEATURE_TYPE"")
+
+ 
+
+Die Spalte FEATURE_TYPE ist NOT
+NULL definiert. Dies wird auch in der Datei stacktrace.txt so rapportiert.
+
+Schauen Sie dazu in der
+Zip-Datei ProblemReport_2017-05-17_121705.zip nach.""
+
+Das Problem liegt also an der History. Allerdings nicht an der ID.
+
+Gruß
+Martin Neydek
+"	"17/May/17 12:59 PM;cst;Sehr geehrter Herr Neydek,
+
+(Sie waren einfach zu schnell :) Sie haben Recht ist mir auch aufgefallen)
+
+ich konnte die Ursache für das Problem herausfinden. Das Siegel-Feature wird nicht von der History abgedeckt. 
+Das bedeutet, wenn dieses Feature genutzt wird, führt das zum oben genannten Fehler. 
+
+Wird in Ihrem oberen Beispiel ein Siegel gebrochen?
+
+Werde dies hier intern prüfen und Ihnen zeitnah bescheid geben. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"17/May/17 12:59 PM;martin.weidemann@l-bank.de;Bei beiden Fehlerprotokollen taucht das gleiche Problem auf. Das Speichern und das Siegeln hängt also tatsächlich an der gleichen Ursache:
+Caused by: java.sql.BatchUpdateException: ORA-01400: cannot insert NULL into (""ITERAPLAN"".""HISTORY_ISR"".""FEATURE_TYPE"")"	"17/May/17 2:05 PM;martin.weidemann@l-bank.de;Hallo Herr Stangl,
+
+ja das Siegel wird bei der Änderung gebrochen.
+
+Jetzt ergibt es einen Sinn:
+Bei ungültigen oder nicht vorhandenen Siegeln ist speichern also deshalb möglich, weil dies bei den Siegeln keine Änderung herbeiführt.
+Bei veralteten und gesiegelten Anwendungen jedoch würde hier eine Änderung auftreten, die zu dem Fehler führt.
+
+Gruß
+Martin Neydek
+
+"	17/May/17 2:10 PM;martin.weidemann@l-bank.de;Da ich ab morgen Nachmittag Urlaub habe, würde ich gern wissen, wie ich dafür sorgen kann, dass ein Kollege von mir, informiert wird, sobald eine Lösung vorliegt. Bis dahin würde ich nämlich die History deaktivieren (unschön, aber dann funktioniert es wenigstens). 	"17/May/17 2:32 PM;cst; 
+
+Vielen Dank für Ihre Antwort.
+
+Werde Ihnen hierzu morgen früh Feedback geben. Habe hier folgendes getestet. 
+ * History deaktivieren 
+ * Siegel brechen oder setzen  
+ * History aktivieren 
+ * Änderungen durchführen um diese in die History zu schreiben 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"18/May/17 12:33 PM;martin.weidemann@l-bank.de;Hallo Herr Stangl,
+
+sobald Sie ein Ergebnis erzielt haben, wenden Sie sich bitte an Dr. Markus Kress (markus.kress@l-bank.de).
+
+Mit freundlichen Grüßen
+Martin Neydek"	"18/May/17 12:36 PM;cst;Hallo Herr Neydek,
+
+habe hierzu ein Bug-Ticket erstellt. Dies wird von unseren Entwicklern geprüft und bearbeit. 
+Wenn hierzu eine Service-Datei für Version 5.5. geben wird, werde ich es im Ticket wie auch an die oben genante Mail mitteilen. 
+
+Bitte entschuldigen Sie, das diese Antwort nicht wie versprochen im laufe des Vormittags kam. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+ "	08/Jun/17 2:08 PM;fka;Fix ist in 6.0 enthalten, bitte mit Kunden klären, ob Backport nach 5.5 (nach dem Release) nötig ist.	"08/Jun/17 2:31 PM;martin.weidemann@l-bank.de;Hallo Herr Stangl,
+
+gibt es einen neuen Stand?
+
+Etwas off-topic: Wie kann ich im Service Desk meine E-Mail-Adresse ändern? Habe nur den Namen anpassen können.
+
+Gruß
+Martin Weidemann"	"12/Jun/17 3:35 PM;fka;Hallo Herr Weidemann,
+
+
+
+wir konnten den Fehler finden und beheben. Im kommenden Release 6.0 wird der Bugfix enthalten sein.
+
+
+
+Das Release 6.0 erscheint in ca. 1 Woche. Wir empfehlen, die Fehlerbehebung durch die Installation dieses neuen Releases durchzuführen. Was meinen Sie?
+
+
+
+Mit besten Grüßen
+
+Fabian Kainzinger"																																										

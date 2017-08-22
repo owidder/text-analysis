@@ -1,0 +1,11 @@
+Plugin API for model read operations	"API should grant access to most of the information in elastic metamodel:
+
+* all building block types
+
+* their attributes
+
+* and their relations
+
+
+
+Don't forget _tests_, _logging_, _exception handling_ !"		New Feature	iteraplan Thunderduck	05/Jul/16 10:19 AM	13/Jul/16 1:24 PM																																																																				

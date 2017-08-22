@@ -1,0 +1,9 @@
+I try to delete unused attributes - then a general technical error occurs	"I deactivate/remove the attribute from the building block usage and try to delete it afterwards. Then always a general technical error occurs.
+
+
+
+Attached you will find the problem report zip file"		Fault	iteraplan Support	24/May/16 2:32 PM	21/Jun/16 8:26 AM														"24/May/16 2:32 PM;thomas.liskow@coface.com;
+
+[^ProblemReport_2016-05-24_142833.zip] _(8 kB)_"	"27/May/16 9:37 AM;sfe;Das Problem scheinen falsche constraints in einer History-Tabelle in iteraplan zu sein, welche verhindern, dass die Löschung des Attributs festgehalten werden kann. Und damit schlägt die Löschung selbst fehl.
+Diese falschen Constraints konnten in früheren iteraplan-Versionen auftreten. Ich habe hier für Sie ein SQL-Skript, welches das problematische Constraint in Ihrem Fall und mögliche weitere fehlerhaften Constraints aus den History-Tabellen des iteraplan-Datenbankschemas entfernt: [^fix_history_constraints_5.1_oracle.sql]"	30/May/16 4:22 PM;thomas.liskow@coface.com;Ich gebe das an unser System & Networkteam weiter und melde mich dann wieder.	13/Jun/16 1:47 PM;thomas.liskow@coface.com;Bin damit noch nicht fertig. Erst müssen wir IPS-82 (Update auf 5.2) abschließen, dann kann ich dies einspielen lassen und testen.	"15/Jun/16 12:29 PM;sfe;Sie sollten das Skript dann allerdings vor der Migration auf Version 5.2.0 in die Datenbank einspielen.
+Bei der Migration gibt es kleinere Änderungen am Datenbankschema, wegen denen das Skript, das ich Ihnen für Version 5.1.0 gegeben hatte, nicht funktionieren wird."	20/Jun/16 4:40 PM;thomas.liskow@coface.com;Konnte jetzt gelöst werden.																																																	

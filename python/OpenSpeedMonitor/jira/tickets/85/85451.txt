@@ -1,0 +1,1 @@
+Jenkins-Dump-Job liefert Dump ohne EventResults	Tabelle wird angelegt, enthäält aber keine Daten.		Bug	OpenSpeedMonitor	25/May/16 4:58 PM	26/May/16 10:51 AM														26/May/16 10:51 AM;mmi;Die Tabelle http_archive wurde noch versucht kopiert zu werden, jedoch gibt es die Domain nicht mehr.																																																						

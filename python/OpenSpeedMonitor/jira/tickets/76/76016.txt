@@ -1,0 +1,88 @@
+Full Data Export is no more possible as well partical Export for Systems	Export stops after some minutes		Fault	iteraplan Support	07/Mar/16 10:44 AM	08/Jul/16 10:00 AM														"07/Mar/16 10:44 AM;richard.hermle@boehringer-ingelheim.com;
+
+[^Error-FullExport.zip] _(10 kB)_
+
+[^Error-Partial-SystemSupport.zip] _(11 kB)_"	07/Mar/16 5:53 PM;richard.hermle@boehringer-ingelheim.com;Please be aware that my eMail Address has a typo. It should be richard.hermle@boehringer-ingelheim.com	"08/Mar/16 9:32 AM;sfe;Your email address should be fixed now (both in account name and actual email address).
+
+Does the error with your export happen independently from the expected size of the export? For example, if you attempt to download the empty Excel template, does the error still appear?
+Also: Please provide the iteraplan system info. You can download the system info from the Administration->Configuration page in iteraplan. Only users with the iteraplan role ""iteraplan_Supervisor"" or a role with ""iteraplan_Supervisor"" as subordinate role can download the system info."	08/Mar/16 9:55 AM;richard.hermle@boehringer-ingelheim.com;Partial Data Export of Business Objects works - Less data works	"08/Mar/16 9:56 AM;richard.hermle@boehringer-ingelheim.com;System Info Attached
+
+[^ProblemReport_2016-03-08_095429.zip] _(10 kB)_"	"08/Mar/16 12:48 PM;richard.hermle@boehringer-ingelheim.com;This monring one time full export was succesffull. After this a second time was not possible. We tried it 8 times an all failed. We uses as well differnt workstations and persons to do this.
+"	08/Mar/16 2:14 PM;tam;Siehe E-Mail von Wolfgang von 11.12.2015 (im Ordner 'Gesendet')	"08/Mar/16 2:39 PM;hannes.callisen@boehringer-ingelheim.com;Hello Stephan - more to your question on a partial export.   if i export only the 'project' building block (BB), then it works.  file size about 800 KB.  if i export only the 'systems' BB, then fail.  log file was attached with original problem report.  
+before switching to 5.1, the full DB export file was about 5,100 KB.  after making changes in the export file and preparing it for an import, the file size has, sometimes, reached 12,000 KB."	"08/Mar/16 5:42 PM;sfe;Hello - Thank you for the additional information. I am still analyzing this issue. As the error in the log file is explainable by an interrupted connection, my current suspicion is either a timeout issue, or a size issue.
+Is there any component in your infrastructure setup (such as for example proxy servers, web servers, IIS, or similar) that could close a connection due to a timeout, within the time frame an aborted export seems to take? Alternatively, is there any such component that could abort a connection if a certain size limit of transferred data is reached?
+Additionally: How much memory do you have assigned to the Tomcat on which iteraplan is running? Excessive download times of larger export files could be caused by memory scarcity."	"08/Mar/16 5:50 PM;richard.hermle@boehringer-ingelheim.com;We have 24GB Memory on the application Server available and we saw as well in the past the issue that the Memory Usage Growing and Growing and Growing. At the moment the tomcat uses already 15,7 GB of the memory. We restricted the tomcat to 20 GB and we are sure that this will be reached in the next days and we have to restart the tomcat.
+From our point of view the application must have a memory leak issue.
+As I was able to export one time with the full data export I would exclude the content size, but it could be a timing issue. We have in between an IIS Server as we use the SSO function. "	"09/Mar/16 10:03 AM;sfe;I agree, the Tomcat should never need that amount of memory with typical model sizes in iteraplan. In my experience even models with a few thousand building blocks and well-maintained relations and attributes should perform decently with 4-6 GB of memory.
+Can you please give an overview of how you typically use iteraplan? More specific questions in that regard:
+* How often (per day, or week) do you Export/Import data using the mass export/import functionality?
+* Do you use iteraplan's REST API, and if yes, how often do you access iteraplan that way, broken down between read access (GET) and write access (PUT/POST/DELETE)
+* How many users typically work with iteraplan concurrently
+* Do you use the interactive client, and if yes, which features?
+* Is there anything else that comes to your mind about iteraplan that you use/do frequently?
+
+Even aproximate answers to these questions may help out a great deal in tracking down a possible memory leak, as I have not experienced a memory issue of this magnitude with iteraplan before.
+
+Back to the full data export:
+I agree, if the full export worked once, it is most likely not a content size issue.
+As for the timing issue: Can someone on your side who knows the infrastructure you are using take a look at the setup for iteraplan and check for timeouts in the IIS Server and similar components? Specifically timeouts relevant for the case when an application takes several minutes to respond to a request from the browser.
+
+Thank you"	"09/Mar/16 3:47 PM;hannes.callisen@boehringer-ingelheim.com;Hello Stephan - first, thank you for following-up.  These system issues have been plaguing us for a year now and the workaround with application re-starts every week is certainly not best practice.  
+Last week we upgraded to vers. 5.1.  Since then, I cannot create a full DB export.  My users are getting anxious, that I cannot synchronize data for them nor update calculated attributes.  
+Now, allow me to address your questions.
+
+- I conduct most of the export/import in order to help architects upload mass changes to data.  I also use it to create values into attributes (e.g. place the system names related to a project into an attribute, so that it can be shown in a column of a masterplan diagram). The export/import frequency varies, depending on our initiatives.  At least once a week,  sometimes 10+ times in a week. Most changes are in the systems building block (BB).  Exporting just the system BB always causes a system error.
+
+- We use the REST API to synchronize data from our CMDB, primarily to update our iteraplan with data from CMDB (puts).  The exact breakdown of gets and puts I don't know.  On average, it seems to take about 45 sec. for one data element to be processed.  The synchronization is scheduled to run every night.  
+
+- I don't have actual data to show the number of concurrent users.  Based on my contacts, I would estimate about 3 to 6 concurrent users.
+
+- We would like to use the new interactive client, but I struggle with it.  I don't feel comfortable enough to promote it among our users.  To start, the initial data load takes minutes.  Some functions did not work for me.  The hierarchy display is gone.  The column widths are not adjustable. If I click on the systems button, it says ""Not all elements can be displayed. Use classic client, please!"".  Queries cannot be shared between the old and new client.  Or maybe ... I just don't know how to use it properly.  Also, it does not work with IE9, which is the standard in our company.
+
+You asked for ""anything else that comes to mind"" ...
+
+- We use the spreadsheet reports frequently and I have several templates.  If I make a change to a tempate and upload it, more often than not, the first time that I run that report will also create a server error message.  When I run the exact same report for a second time, then it's ok.  We also experience occasional server error messages on larger reports (even if I did not make a change to the template).  Reports with 5,000 KB Excel files is normal for us.  These reports are started via the URL from an intranet webpage.
+
+- We also use the bulk update feature.  If I make changes to say 300 elements in one bulk update, it takes time to process it.  It comes back with a server error message.  If I start the iteraplan client again and go back to the bulk update, it says that it completed the update.  So it seems to have worked, but it is annoying to get the error message and have to start the iteraplan client every time.
+
+- When performing an import, the status screen does not refresh to let me know of errors or if it passed that stage.  I have to repeatedly click on the browser refresh button to see what is going on.  Also annoying.  BTW, I don't know if it matters, but I work primarily remotely from my home office in the US.  Typical download is 15 Mbps, upload is 2 Mbps.
+
+- On the classic client, if I search the system BB for ""ces"", I get the message ""An error occurred while processing your request. ""  Probably, too many hits.
+
+Shall I continue ... I think this is enough feedback for now.  
+
+Regarding the possible IIS timeout, I need to rely on our technical staff.
+
+Greetings, hannes
+
+    
+"	10/Mar/16 10:36 PM;hannes.callisen@boehringer-ingelheim.com;is there a status?  i need to work on a mass-update of relations.  see technical question IPS-38.	"11/Mar/16 10:49 AM;sfe;As you mentioned earlier, the possible timeout needs to be investigated by your technical staff. We are currently waiting for the according new information.
+
+As for the possible memory leak: Thank you for taking your time to provide information in this much detail. It would probably be best if we kept these two issues separate. Please open a new ticket with regards to the memory leak issue."	"15/Mar/16 1:29 PM;hannes.callisen@boehringer-ingelheim.com;Update on the export issue:  after increasing various memory and timing limits, the full DB export currently works.  We are observing to see if it continuoues to work over time without exceeding the memory allocation and having to restart the application.
+
+However, the partial export of the Systems building block still does not work.  
+
+Now, I do not get an error message.  I get nothing.  I started the partial export, it displays the usual ""The download will start automatically"" message, and then nothing.  I waited for over an hour and no messages and no file.  When I did a screen refresh, the download message dissappeared.  I tried it again with the same no results.  If I perform a partial download of the Service building block (a small one), that works fine.
+
+More feedback:  We have a batch job now that synchronizes CMDB data with iteraplan using the REST API.  If I happen to start an import while the batch job is running, it seems that my import job hangs-up.  Hours later I get no updates on the import on the client AND I can no longer use iteraplan.  For example, I could not open the Systems screen, as if that building block had been locked-out somehow.  At the client, I could not abort my import job.  Clear Session, Logout and restarting IE didn't do anything.  I had to wait until the technical staff came on Monday to restart iteraplan on the server, just so that I could use it again.  Very frustrating."	"16/Mar/16 2:16 PM;sfe;Please tell me how long the full data export takes, approximately.
+Please also attach the iteraplan log files of this week. The folder for iteraplan log files was configured during the iteraplan installation and can be looked up in the file _log4j.properties_ in the _WEB-INF/classes_ sub folder of the iteraplan application directory.
+
+Also thank you for your additionial feedback. Performing updates via REST API and Import at the same time can indeed lead to issues, even though I have not yet witnessed these to the extend you observed. I'll look into possibilities to improve that behaviour."	"16/Mar/16 2:39 PM;richard.hermle@boehringer-ingelheim.com;See Log File [ERROR] 15-Mär-2016 11:52:37
+
+[^iteraplan-5.1.0.log.2016-03-15] _(108 kB)_"	17/Mar/16 10:05 PM;hannes.callisen@boehringer-ingelheim.com;if all works well, it takes about 2 to 3 minutes for a full DB export.	"21/Mar/16 1:39 PM;sfe;I've created a separate ticket for the reported memory leak and invited Richard Hermle and Hannes Callisen as participants to the ticket.
+I think it is best to focus on the memory leak, as it is probable that the Export issues are related to it.
+
+Furthermore, please provide an SQL dump of your iteraplan database, if possible. This will help the analysis of the memory leak issue a great deal and also help with the Export issue, should they prove unrelated.
+
+Thank you."	06/Apr/16 2:12 PM;sfe;Is there any new development in this matter? If you still experience issues with the partial Export for Systems, an SQL dump of your iteraplan database, as mentioned above, could help greatly in our analysis.	16/Jun/16 1:29 PM;tam;Derjenige, der sich das Ticket schnappt, sollte beim Berater nachfragen.	"23/Jun/16 10:13 AM;tam;Dear all,
+
+I've a mail from a workmate of us from 14.12.2015 to the similar problem. Unfortunately he didn't got any answer to his questions.
+
+In case this mail was lost, I've attached it here. [^AW max response length in IIS -- Excel export fails + Spreadsheet Report fails.msg]
+
+Your answers would help us a lot.
+
+Thank you in advance.
+
+Kind regards from Munich,
+Timur Ametov"	07/Jul/16 10:46 AM;richard.hermle@boehringer-ingelheim.com;This call can be closed. Response length adaption helped.																																

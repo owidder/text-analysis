@@ -1,0 +1,1 @@
+Job schedules-Ansicht soll nur aktive Jobs anzeigen	Bisher werden alle Jobs berücksichtigt.		Task	OpenSpeedMonitor	23/Oct/15 11:29 AM	26/Oct/15 11:13 AM																																																																				

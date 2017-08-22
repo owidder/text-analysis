@@ -1,0 +1,3 @@
+Tabular Reporting: additional column defined in saved queries isn't displayed after change of its attribute's name	"Example: create a tabular reporting query and add an additional column to display an attribute, like for example 'Accountability'. Then save the query, change the attribute's name, and execute the saved query again => the additional column is not displayed.
+
+Desired behaviour: additional column is displayed, with the changed name."		Bug	iteraplan PO	15/Jul/11 3:08 PM	20/Sep/11 4:22 PM					reports	tabular																																																														

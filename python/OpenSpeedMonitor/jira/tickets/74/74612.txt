@@ -1,0 +1,1 @@
+Zuordnung Page-Mapping funktioniert nicht	Wenn noch gar keiner Page ein Mapping zugeordnet ist lässt sich auch keiner Page eines zuordnen.		Bug	OpenSpeedMonitor	24/Feb/16 10:03 AM	24/Feb/16 11:38 AM																																																																				

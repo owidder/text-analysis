@@ -1,0 +1,171 @@
+REST API with iteraQL ist not working properly 	"api/data-Calls to iteraplan are working only if we send a call directly to a building block (see Screenshot1). But it want to call the API with an iteraQL for example: InformationSystem[@typeOfStatus=""Current""] we get an ""404 - File or directory not found."" back from the system. (see Screenshot 2).
+
+
+
+But after a look into the logfiles the request to iteraplan looks OK because the URI is transfered in the correct way as far is I can see that (see log.jpg)
+
+
+
+Do you have any information about what can be wrong here? 
+
+
+
+Thanks in advance, 
+
+Benedikt Schmaler 
+
+BSH Hausgeräte GmbH
+
+"		Fault	iteraplan Support	13/Jul/16 1:41 PM	20/Aug/16 7:00 AM														"13/Jul/16 1:41 PM;benedikt.schmaler@bshg.com;
+
+!Screenshot1.jpg|thumbnail!
+
+!Screenshot2.jpg|thumbnail!
+
+!log.jpg|thumbnail!"	"13/Jul/16 1:43 PM;benedikt.schmaler@bshg.com;Additional Information: The iteraQL is working fine in the QueryConsole (See iteraQL.jpg)
+
+!iteraQL.jpg|thumbnail!"	"14/Jul/16 10:11 AM;cst;Dear Mr Schmaler, 
+
+thank you for your enquiry.
+
+We checked your request and the cause for 404 error is the missing URL-Encoding.
+Woud you please send the API request as follows:
+
+..*/api/data/InformationSystem%5B@typeOfStatus=""Current""%5D
+
+Now the result of your query will appear.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support 
+
+
+
+"	"14/Jul/16 10:37 AM;benedikt.schmaler@bshg.com;Hello Mr. Stangl, 
+
+thank you for your quick response. Unfortunately it's not working with the encoding either (see Screenshots).
+
+BR, 
+Benedikt Schmaler
+
+!log.jpg|thumbnail!
+
+!postman.jpg|thumbnail!"	"14/Jul/16 11:17 AM;cst;Hello Mr. Schmaler, 
+
+thanks for your Reply.
+
+Can you please test the API request again as follows:
+
+..*/api/data/InformationSystem%5B%40typeOfStatus=%22Current%22%5D
+
+When the error 404 re-appear the problem may be that your tomcat Server dont decode UTF-8. 
+
+Woud you please open the ""Server.xml"" in your Tomcat directory.
+Which value is displayed for the attribute *URIEncoding=* for example *URIEncoding=""UTF-8""*?
+
+This Attribute specifies the character encoding used to decode the URI bytes, after %xx decoding the URL. 
+If not specified, ISO-8859-1 will be used and cant decode the API request as written above. 
+      
+Greetings,
+
+Christoph Stangl - iteraplan 
+
+
+"	"20/Jul/16 9:40 AM;benedikt.schmaler@bshg.com;Hello Mr. Stangl, 
+
+still the same problem with the 404. I've checked the server.xml and *URIEncoding=""UTF-8"" is set for all connectors. 
+Would it be possible that there's a problem with the IIS in front of the tomcat? We use it for SingleSignOn.
+
+BR, 
+Benedikt
+
+!iis-config.jpg|thumbnail!"	"20/Jul/16 10:19 AM;cst;Hello Mr Schmaler,
+
+
+
+yes this can cause the problem too. In our guide for version 5.2 receive you the configuration for REST and IIS. 
+
+
+
+https://www.iteraplan.de/doc/display/iteraplan52/Single+Sign+On 
+
+
+
+If this does not work, please send us following LOG-Files:
+
+
+
+From the conf-directory of your Tomcat-Installation:
+
+
+
+server.xml
+
+web.xml
+
+
+
+The “catalina.out”, “localhost.log” and ""localhost_access_log.[TIMESTAMP].txt"" the files from  your tomcat installation (just for the period, when the error occurred).  
+
+From [Tomcat]/webapps/[iteraplan directory]/WEB-INF/classes:log4j.properties
+
+
+
+From [Tomcat]/webapps/[iteraplan directory]/META-INF/context.xml (This file can contain passwords -> please remove the passwords)
+
+
+
+The iteraplan log files from the period, when the error occurred. 
+
+The files are called “iteraplan-[version].log” (for today) or „iteraplan-[version].log.[TIMESTAMP]” (for past days). 
+
+The location of these file was specified during installation and is documented in the file “log4j.properties”.
+
+
+
+Greetings,
+
+
+
+Christoph Stangl - iteraplan Support
+
+
+
+"	"01/Aug/16 1:18 PM;benedikt.schmaler@bshg.com;Hello Mr. Stangl, 
+
+sorry for the late respone. Attached you can find the requested log-files. 
+
+BR, 
+Benedikt Schmaler
+
+[^iteraplan-5.2.0.log] _(23 kB)_
+
+[^localhost_access_log.2016-08-01.txt] _(407 kB)_
+
+[^catalina.2016-08-01.log] _(1 kB)_
+
+[^localhost.2016-08-01.log] _(1 kB)_
+
+[^server.xml] _(7 kB)_
+
+[^context.xml] _(0,7 kB)_
+
+[^log4j.properties] _(5 kB)_
+
+[^web.xml] _(169 kB)_"	"01/Aug/16 4:23 PM;cst;Dear Mr. Schmaler,
+
+thank you for your LOG-files. 
+
+There is no problem with your iteraplan instance and the REST API.
+But with our test system, I can reproduce the error 404.
+
+We installed the Microsoft Internet Information Services on our test system. 
+
+With this constellation, the URI Encoding is changed. The reason is the configuration of the IIS. 
+We have no experience with the IIS and URI Encoding.
+
+Would you please check the configuration of your IIS to solve the problem.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support  "																																														

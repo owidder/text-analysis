@@ -1,0 +1,203 @@
+Upgrade von 5.3 auf 5.4 - DB Migration History läuft auf Fehler	"Hier die Mail von unserem DB/Systems Team:
+
+
+
+Von: BAUMGARTEN Andre 
+
+Gesendet: Freitag, 9. Dezember 2016 9:29
+
+An: LISKOW Thomas
+
+Betreff: Upgrade Iteraplan UAT von 5.3 auf 5.4
+
+
+
+Hallo Herr Liskow,
+
+
+
+bei der Migration der History ist ein Fehler aufgetreten.
+
+Anbei finden Sie die Logfiles.
+
+
+
+Zur Info:
+
+DB-Update wurde durchgeführt (ohne Fehler)
+
+Im Punkt 3.2 muss das Batchfile für die Migration ausgeführt werden, beim Ausführen kommt es dann zum angehängten Fehler.
+
+
+
+Laut Upgrade-Anleitung muss der Iteraplan Service eingebunden werden.
+
+
+
+Mit freundlichen Grüßen,
+
+
+
+Andre Baumgarten
+
+Team Network and Systems
+
+T.: +49 (0) 6131 / 323 - 513
+
+andre.baumgarten-ext@coface.com
+
+
+
+"		Fault	iteraplan Support	09/Dec/16 10:49 AM	13/Jan/17 8:27 AM														"09/Dec/16 10:49 AM;thomas.liskow@coface.com;
+
+[^errors.txt] _(10 kB)_
+
+[^iteraplan.log] _(4 kB)_"	"09/Dec/16 5:01 PM;cst;Sehr geehrter Herr Liskow,
+
+vielen Dank für Ihre Anfrage.
+
+Wann haben Sie das Migrations-Tool heruntergeladen? 
+Wir haben dieses schon aktualisiert, mit diesem der von Ihnen gemeldete Verhalten gefixt wurde.  
+
+https://www.iteraplan.de/downloads/basis/iteraplan-historyMigrationTool.zip 
+
+Hier noch die benötigten Zugangsdaten:
+
+Login: basis
+Password: joA9toup
+
+Sollten Sie die Datei aktuell heruntergeladen haben, werde ich den Fehler erneut von unseren Entwicklern prüfen lassen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"12/Dec/16 8:19 AM;thomas.liskow@coface.com;Hallo Herr Stangl,
+
+das war am 28.10.2016. Ich werde die Migration mit dem neuen Tool veranlassen und das Ergebnis in diesem Defect erfassen.
+
+Mit freundlichem Gruß
+
+Thomas Liskow"	"12/Dec/16 9:02 AM;msr;Hallo Herr Liskow,
+
+vielen Dank für Ihre Nachricht.
+
+Wie vereinbart melden Sie sich bitte, falls es nochmal zu Problemen kommen sollte.
+
+Mit freundlichen Grüßen
+
+M. Schrumpf"	"13/Dec/16 3:28 PM;thomas.liskow@coface.com;Hallo Herr Stangl,
+
+die Migration der History lief jetzt durch. Aber die historischen Daten sind im neuen Client anders als im alten. Siehe anhängende Hardcopy. Es fehlt der ganze Verlauf der Änderungen.
+
+Mit freundlichem Gruß
+
+Thomas Liskow
+
+!History_iteraplan-53_vs_iteraplan-54.jpg|thumbnail!"	"15/Dec/16 11:43 AM;thomas.liskow@coface.com;Hier noch die LogFiles migration.log und iteraplan.log. Im zweiten gibt es diverse Errors
+
+Gruß
+
+T. Liskow
+
+[^migration.log] _(64 kB)_
+
+[^iteraplan.log] _(700 kB)_"	"19/Dec/16 11:12 AM;cst;Sehr geehrter Herr Liskow,
+
+vielen Dank für Ihre Geduld. 
+
+Der Vorgang wurde mit unseren Entwicklern zusammen geprüft und wir benötigen für die weitere Analyse und
+Durchführung der Historymigration einen Dump Ihrer Datenbank. 
+
+In der LOG-Datei gibt es keine klare Fehlermeldung, warum die Migration abgebrochen wird, deswegen müssen wir den Vorgang direkt mit der 
+Datenbank prüfen.  
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"19/Dec/16 11:36 AM;thomas.liskow@coface.com;Sehr geehrter Herr Stangl,
+
+welchen DB Dump benötigen Sie den? Die UA-Datenbank ist jetzt im Zustand der nicht vollständigen History-Migration.
+
+Viele Grüße,
+
+Thomas Liskow"	"19/Dec/16 12:58 PM;cst;Hallo Herr Liskow,
+
+Sie können mir gerne diesen Stand zuschicken, dann bereinige ich die Tabellen der neuen History und führe die nächsten Schritte durch.
+Auch können Sie mir einen DUMP vor History-Migration zukommen lassen, dann sparen wir uns diesen Schritt.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"21/Dec/16 8:30 AM;thomas.liskow@coface.com;Hallo Herr Stangl,
+
+anhängend der Dump.
+
+Viele Grüße
+Thomas Liskow
+
+[^20122016180758_netekdua_1_o_iteraplan_expuser_01.dmp.gz] _(5,07 MB)_
+
+[^20122016180758_netekdua_1_o_iteraplan_expuser.log] _(19 kB)_"	"22/Dec/16 10:15 AM;cst;Guten Morgen Herr Liskow,
+
+vielen Dank für die Zusendung des DUMPS. 
+Dieser wird im Moment geprüft, um die Lösung für das Problem zu finden.
+
+Wenn dies passiert ist, wird es eine aktualisierte Version zum History-Migration Tool geben.
+
+Wegen der anstehenden Weihnachtszeit, kann diese Analyse bis ins nächste Jahr dauern. Bitte haben Sie hierfür Verständnis. 
+Sollte es neue Informationen hierzu geben, werden wir Sie zeitnah informieren. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	30/Dec/16 2:31 PM;sfe;Attached script to fix a minor database inconsistency which causes issues during history migration: [^cleanOrphanedBBEntries.sql]	"30/Dec/16 3:56 PM;fka;Hallo Herr Liskow,
+
+wir haben das Problem analysiert. Die Lösung besteht aus zwei Teilen:
+
+Zum einen haben wir in Ihren Datenbestand (vielen Dank für die Bereitstellung des DB-Dumps!) eine kleine Inkonsistenz entdeckt. Um diese zu beheben, führen sie bitte zuerst das folgende kurze DB-Skript aus: [^cleanOrphanedBBEntries.sql]
+
+Zum anderen haben wir das History Migration Tool aktualisiert. Bei einem Test bei uns mit Ihrem Datenbestand lief es ohne Probleme durch. Der Downloadlink ist derselbe wie früher: https://www.iteraplan.de/downloads/basis/iteraplan-historyMigrationTool.zip
+
+Login: basis
+Password: joA9toup
+
+Mit besten Grüßen
+Fabian Kainzinger"	"09/Jan/17 2:19 PM;thomas.liskow@coface.com;Hallo Herr Kainzinger,
+
+das Clean-Skript können wir so nicht laufen lassen. Wir haben keine Tabelle ITS -   ..... select ID_BB from ITS union .....
+
+Sollte die existieren? Was sollte sie beinhalten?
+
+Mit freundlichen Grüßen
+Thomas Liskow"	"09/Jan/17 2:32 PM;cst;Hallo Herr Liskow,
+
+ein gutes neues Jahr 2017. 
+
+In dem von Ihnen geschickten DUMP ist die Tabelle vorhanden, diese wird auch für den Betrieb von iteraplan benötigt. 
+Das ist wirklich sehr merkwürdig, auch im Export-Log wird diese erwähnt. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"09/Jan/17 3:29 PM;thomas.liskow@coface.com;Hallo Herr Stangl,
+
+vom mir auch ein gutes neues Jahr.
+
+Die Tabelle ist vorhanden. Es lag an den Rechten des verwendeten Oracle-Users, dass ich sie nicht sehen konnte.
+
+Mit freundlichen Grüßen,
+Thomas Liskow"	"11/Jan/17 9:34 AM;cst;Guten Morgen Herr Liskow,
+
+konnte die History Migration bei Ihnen schon erfolgreich durchgeführt werden,
+oder sind erneut Probleme bei dieser aufgetreten? 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"11/Jan/17 10:52 AM;thomas.liskow@coface.com;Hallo Herr Stangl,
+
+ich habe dies bei unserem internen Support-Team in Auftrag gegeben. Aufgrund von Engpässen wird es aber noch etwas dauern. Ich melde mich umgehend, sobald ich neue Informationen habe.
+
+Viele Grüße,
+Thomas Liskow"	"13/Jan/17 8:25 AM;thomas.liskow@coface.com;Hallo Herr Stangl,
+
+mit dem gelieferten Skript und dem neuen Migrationstool konnte die neue Historie aufgebaut werden und funktioniert auch. Sie können den Incident schließen.
+
+Leider lässt sich der Suchindex immer noch nicht aufbauen (Ich vermerke das in IPS-253).
+
+Viele Grüße,
+Thomas Liskow"																																				

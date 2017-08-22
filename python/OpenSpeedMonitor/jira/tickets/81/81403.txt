@@ -1,0 +1,23 @@
+N3CD Filter generates multiple undefined lines (should not)	"Reproduction:
+
+1. Go to N3CD diagram
+
+2. Click inner element (informationSystem)
+
+3. Add new Filter
+
+4. In filter modal dialog: select ""State of health"" or ""Complexity"" and ""is""
+
+Multiple undefined lines will be generated (in Firefox one by one, in Chrome multiple at a time)
+
+
+
+So there must be an endless loop anywhere."		Bug	iteraplan PO	21/Apr/16 5:01 PM	25/Apr/16 5:22 PM														21/Apr/16 5:48 PM;pzi;commit [2824|https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-9?cs=2824] - had wrong issue id in the commit message and is not related to this ticket	"21/Apr/16 6:47 PM;pzi;happens only for N3CD but not for IFD and LSD. In N3CD this occurs for inner type (State of Health is/Last Modification Time between) as well as for outer type (Last Modification Time between).
+
+
+
+For this reason it seems like N3CD does not deal with the filter properly.
+
+
+
+I noticed different behaviour between Last Modification Time (only 12 filters are created) and State of Health (an unlimited or a lot higher amount of filters is created)"																																																					

@@ -1,0 +1,19 @@
+Attribute - Attribute names can be cleared 	"Reproduce with trunk an
+
+ # Open ""Administration"" and ""Attributes""
+
+ # Open a random attribute
+
+ # Open the edit dialog for the attribute name 
+
+ # Clear the field and click outside the dialog
+
+ # The name will be cleared and changed to ""No Name specified""
+
+ # When you go back to list and reopen the attribute, the correct name will be shown
+
+
+
+Actual:  You can clear the attribute name field and save it
+
+Expected: That is not possible to clear the field and save it "		Bug	iteraplan Speedbird	16/May/17 3:04 PM	02/Jun/17 3:07 PM														25/May/17 6:44 PM;mash;Cannot reproduce for Attributes, but this issue was fixed for single Role view 	02/Jun/17 2:53 PM;viol;Can't reproduce. Can't save empty attribute name.																																																					

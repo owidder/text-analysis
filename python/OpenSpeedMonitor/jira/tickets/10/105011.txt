@@ -1,0 +1,19 @@
+Micro Edit sends strange response for invalid Business Mappings	"* Create an incorrect BM via REST or the new client (incorrect is for example only a Information System or no Information System).
+
+
+
+Expected: an Error-Message saying the BM could not be created
+
+Real: The error message is ""An ID equal to null is not allowed for deletion.""
+
+
+
+* Delete relations so that the BM becomes invalid (No ISR or only an ISR)
+
+
+
+Expected: an Errormessage the relation could not be changed and no changes
+
+Real: The server reponds with 200 and the BM is completely deleted
+
+"		Bug	iteraplan Thunderduck	08/Dec/16 10:27 AM	24/Jan/17 4:38 PM														24/Jan/17 4:38 PM;fka;Already fixed																																																						

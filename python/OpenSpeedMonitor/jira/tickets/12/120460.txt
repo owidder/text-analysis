@@ -1,0 +1,5 @@
+Saved queries page is not loading	"Saved queries page is not loading, an exception is shown (see attached screenshot).
+
+
+
+Also probably saved queries for lists are not loaded correctly."		Bug	iteraplan Speedbird	04/May/17 1:28 PM	08/May/17 11:20 AM														05/May/17 10:06 AM;vadm;See review comments https://iteraweb.iteratec.de/fisheye/cru/IP-579#general-comments	08/May/17 11:20 AM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-579																																																					

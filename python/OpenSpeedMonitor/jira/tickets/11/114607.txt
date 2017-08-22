@@ -1,0 +1,40 @@
+import error when date is blank	"When importing a file, a warning is displayed for every blank date field in the file.   This issue was reported with v.5.3 (IP-194).  It was promissed to be fixed in the next version.  It still exists with v.5.5.  
+
+
+
+The proposed workaround below is not practical with an import file of 5000+ elements times 6 dates per element .... trying to find all the blank dates ... rewrite them ... and repeat this process 4 times in a day.
+
+
+
+When can we expect this issue to be fixed?
+
+:-(  hannes
+
+
+
+Below from IP-194
+
+
+
+Hello Hannes,thank your for your feedback. I changed the column types in ""Date"" in every empty row, entered a fake Date, copied these in every row and delete it afterwards.  Why this is necessary, I dont know. It could be a Excel ""speciality"". For this issues I created a Bug-Ticket and it will be fixed in the upcoming versions. Greetings,Christoph Stangl - iteraplan Support"		Fault	iteraplan Support	12/Mar/17 1:45 PM	10/Apr/17 7:00 AM														"13/Mar/17 11:31 AM;cst;Dear Hannes,
+
+thank you for your inquiry. 
+
+In version 6.0 that issue will be fixed. 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "	21/Mar/17 7:53 PM;hannes.callisen@boehringer-ingelheim.com;thank you ... but i heard that the classic client will not be available in vers. 6.0 .... is this true ?  editing attributes, scrolling a pick-list, sharing a hyperlink to a report including the report format, etc. are issues in 5.5 .... will all of this be fixed / added in 6.0 ?	"22/Mar/17 9:32 AM;cst;Good Morning Mr. Callisen, 
+
+the classic client will be removed in version 6.0. 
+ * Editing Attributes will be possible  (6.0)
+ * Sharing a hyperlink to a report including the report format will be included (6.0)
+ * Your reported bugs will be fixed as stated in the ticket
+
+What do you exactly mean with ""scrolling a pick-list""?
+
+Greetings,
+
+Christoph Stanlg - iteraplan Support
+
+PS: wir können den Support Vorgang / Vorgänge auch gerne in deutsch Abhandeln"																																																				

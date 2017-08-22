@@ -1,0 +1,3 @@
+History Service for IC	"- service for getting history entries for single element and for whole bbtype from server
+
+- use ng-resource to access data via rest"		New Feature	iteraplan Thunderduck	05/Oct/16 12:53 PM	10/Oct/16 11:30 AM														10/Oct/16 11:30 AM;ach;moved to Speedbirds																																																						

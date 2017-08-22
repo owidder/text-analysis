@@ -1,0 +1,35 @@
+Unify breadcrump navigation in the header	"All ""Back to List"" buttons should be replaced with breadcrumb navigation.
+
+ * located in the same line as ""iteraplan"" logo, which is also homepage button, see attachement
+
+ * an icon from angular materials: *chevron right*
+
+ * icon used as first  element [>] (iteraplan logo > level1 > level 2 > ... > current location)
+
+ * every level should be a link to corresponding location, excluding current location
+
+ * default breadcrumb should be visible on:
+
+ ** Building Block Type
+
+ ** Building Block Attribute
+
+ ** Building Block Role
+
+ ** when using shortcuts (links):
+
+ *** from another single element
+
+ *** from diagram
+
+ *** from link
+
+ *** from list
+
+
+
+{color:red}UPDATE: {color} Do not show the tab-name, just show directly the list-name without tab
+
+{color:red}UPDATE: {color} For a new attribute use ""New attribute"" / GER: ""Neues Merkmal"" in the breadcrump
+
+{color:red}UPDATE: {color} For a new role use ""New role"" / GER: ""Neue Rolle"" in the breadcrump"		Improvement	iteraplan Speedbird	05/Apr/17 5:11 PM	08/May/17 4:59 PM																																																																				

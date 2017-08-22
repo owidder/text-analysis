@@ -1,0 +1,27 @@
+Selecting parent as second or third level leads to error	"*Summary:*
+
+Selecting parent as second or third level leads to error
+
+
+
+*Reproduce:*
+
+* Open Masterplan Diagram
+
+* Select ""Superordinate Information System"" as Level 2 or 3
+
+
+
+*Actual:*
+
+The diagram is not redrawn, but there occurs an error:
+
+
+
+{{mpdDataService.js:37 Uncaught TypeError: Cannot read property 'items' of null}}
+
+
+
+*Expected:*
+
+The diagram is redrawn with Superordinate Information System as Level 2 or 3"		Bug	iteraplan PO	05/Jun/16 4:48 PM	14/Jun/16 9:37 PM														08/Jun/16 1:47 PM;dmkh;Changed steps to reproduce in the description of the ticket.	13/Jun/16 3:48 PM;msr;Bug: No filtering was active for Level 2 and Level 3, if there were single elements and not arrays.	14/Jun/16 12:47 PM;msr;Review done: Please check: https://iteraweb.iteratec.de/fisheye/cru/IP-26																																																				

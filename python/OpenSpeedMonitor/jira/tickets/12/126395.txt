@@ -1,0 +1,13 @@
+Backend: Save picture on the server and save url in the database (same url)	"* Create new REST-API for uploading the image: /api/administration/customizing-logo
+
+* Publish it on a fixed url for the new client (no permission handling needed): [ITERAPLAN]/customizing/logo.jpg
+
+
+
+Same for the favIcon:
+
+
+
+* Create new REST-API for uploading the image: /api/administration/customizing-favicon
+
+* Publish it on a fixed url for the new client (no permission handling needed): [ITERAPLAN]/customizing/favicon.ico"	122163	Sub-task	iteraplan Speedbird	05/Jul/17 2:37 PM																																																																					

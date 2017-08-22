@@ -1,0 +1,1 @@
+Create Selenium Tests for the tabular & successor reports with Excel 2007		45630	Sub-task	iteraplan PO	05/May/13 9:13 PM	21/May/13 12:59 PM					excel	test								05/May/13 9:13 PM;jme@iteratec.de;like: <util:list id="isSuccessorReportExcelActions">	21/May/13 12:59 PM;bra;(/) looks good																																																					

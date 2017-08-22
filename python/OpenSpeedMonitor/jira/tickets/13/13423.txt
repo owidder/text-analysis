@@ -1,0 +1,43 @@
+Klartext-Passworte raus	"In den folgenden Config-Dateien stehen Passwörter, die so nicht nach github dürfen:
+
+* DataSource.groovy
+
+* Bootstrap.groovy
+
+* weitere ?"		Task	OpenSpeedMonitor	27/Jun/14 5:01 PM	03/Nov/14 9:01 AM														"30/Jun/14 9:13 AM;nkuhn;*Umsetzungsidee 1)*
+
+Durch System Properties ersetzen (können dann beim Start mit -D gesetzt werden)
+
+
+
+*Umsetzungsidee 2)*
+
+Separate CredentialsConfig.groovy mit den Passwörtern / Usern erzeugen und diese via gitignore nicht mit einchecken.
+
+
+
+*Gilt für alle Varianten:*
+
+In den Configs, in denen bisher die Passwörter stehen müssten default-Werte vergeben werden. Diese können von individuell gesetzten Werten überschrieben werden. CI-Server wie der Jenkins müssten dann diese Werte ebenfalls setzen (können). "	"31/Oct/14 9:58 AM;nku;Folgendermassen umgesetzt:
+
+
+
+* DB-Credentials in der DataSource.groovy
+
+In der DataSource.groovy steht ab sofort für alle drei environments nur noch eine H2 ohne alle Credentials drin. Diese Datei soll gar nicht mehr angefasst werden und hat im Header auch einen entsprechenden Hinweis bekommen. Stattdessen kann man an verschiedenen Stellen eine separate conf-Datei erzeugen, welche die Default-Datasources überschreibt. Die Orte wo man diese conf-Dateien ablegen kann sind in der Config.groovy unter dem Eintrag grails.config.locations zu finden. Dieser Mechanismus kann lokal beim Entwickeln und auch im Jenkins beim Bauen des wars verwendet werden.
+
+Siehe hierzu http://grails.org/doc/latest/guide/conf.html#configExternalized
+
+
+
+* DB-Credentials in der QuartzConfig.groovy
+
+Hier habe ich die Credentials erst Mal herausgenommen und {code}jdbcStore = false{code} gesetzt. Wir benötigen momentan keine Persistenz der Quartz-Jobs über die Lebensdauer der Anwendung hinaus. Bisher hatten wir zwar {code}jdbcStore = true{code} gesetzt, das hat aber gar  nicht gegriffen (Grund unklar).
+
+
+
+* Anwendungs-User OSM in der Bootstrap.groovy
+
+** In jedem environment kann man duch das Setzen entsprechender configs die Erzeugung je eines admin und root-users erzwingen. Dies ist der Standard-Weg, um erste user in einer produktiven Anwendung zu bootstrappen.
+
+** Wird die Anwendung im develop-Modus gestartet (z.B. via run-app) so wird je ein default-user mit admin- und mit root-Rolle erzeugt, wenn noch kein user mit entsprechendem default-username (""admin"" und ""root"") existiert. Im production-Modus werden diese Default-User NIEMALS angelegt."																																																					

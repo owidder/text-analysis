@@ -1,0 +1,15 @@
+Enumeration Attribute - Order of values cannot be changed 	"Steps to reproduce in trunk and IE 11
+
+ # Open Administration - Attributes 
+
+ # Create a enumeration attribute with 3 values
+
+ # Try to change the order of the values 
+
+ # Nothings happens 
+
+
+
+Actual: After change the order
+
+ Expected: Not to change the order on create, or change the order on create"		Bug	iteraplan PO	14/Jul/17 9:01 AM																																																																					

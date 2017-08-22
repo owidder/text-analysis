@@ -1,0 +1,19 @@
+JS Exception while opening IFD for user with limited permissions.	"Steps to reproduce.
+
+1. Log in with user that has limited permissions for building blocks (i.e. only for Business Process, Products and Information systems)
+
+2. Open IFD.
+
+
+
+See screenshots for more details."		Bug	iteraplan Speedbird	31/Oct/16 8:20 PM	09/Nov/16 10:56 AM														"07/Nov/16 6:40 PM;ants;Incorrect template is used to show ""No permissions error.""
+
+See screenshots for details."	"07/Nov/16 6:47 PM;ants;JS Exception while trying to open diagram with no permission to ""Information system"" building block type.
+
+See screenshots for details."	08/Nov/16 9:08 AM;vadm;Updated according to review: revision #5049	"08/Nov/16 2:06 PM;ants;JS Exception while copy URL for user without appropriate permissions.
+
+See screenshot for details."	"09/Nov/16 10:56 AM;ants;Review done.
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-171
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-172"																																																		

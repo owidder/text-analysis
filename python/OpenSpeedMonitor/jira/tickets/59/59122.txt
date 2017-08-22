@@ -1,0 +1,55 @@
+Filter by description throws an error	"The filter by description throws an error.
+
+
+
+*Reproduce:*
+
+* Open an Information Flow Diagram
+
+* Select a node and add a new filter
+
+* Select the description attribute
+
+* Enter any string like ""a""
+
+* Click ""Confirm""
+
+
+
+*Acutal:*
+
+An error is thrown.
+
+
+
+*Expected:*
+
+Filtering is done
+
+
+
+*Stacktrace:*
+
+
+
+TypeError: An exception occured: Cannot read property 'toLowerCase' of undefined
+
+    at ifdDataService.js:102
+
+    at Object.forEach (angular.js:323)
+
+    at filter (ifdDataService.js:93)
+
+    at ifdDataService.getBusinessObjects (ifdDataService.js:200)
+
+    at ifdContentMain.createGoJsDiagram (ifdContentMain.js:90)
+
+    at createGoJsDiagram (ifdContentController.js:26)
+
+    at redrawDiagram (ifdController.js:67)
+
+    at applyFilter (ifdController.js:81)
+
+    at transferAction (ifdController.js:112)
+
+    at transferAction (commonHeaderController.js:87)"		Bug	iteraplan PO	05/Oct/15 11:21 AM	06/Oct/15 4:54 PM					filter	ifd																																																														

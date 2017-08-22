@@ -1,0 +1,14 @@
+Mass Import - Zip file does not work	"Experienced Behavior:
+Test case XM-ImZ-001 (Export and then Import of a zip file) does not work. Error Message at step 1:
+    Error Loading XMI Content
+    de.iteratec.iteraplan.common.error.IteraplanTechnicalException:
+
+Expected Behavior:
+Export and Re-Import of the generated zip file is possible
+
+Additional Information:
+Either caused by error in the export or import method
+
+[edit] same behavior for MySQL too[/edit]"		Bug	iteraplan PO	22/Oct/13 1:26 PM	24/Oct/13 2:03 PM														22/Oct/13 5:22 PM;bra;seems to be data dependent, could you please attach the data you used	"23/Oct/13 10:33 AM;isc;The problem has already existed in version 3.1.
+The test data I have provided Bernhard.
+"	23/Oct/13 1:29 PM;sfe;Issue is caused by incorrect parsing of textual representations of runtime period on import (in {{de.iteratec.iteraplan.elasticeam.metamodel.emf.Mapping.IteraplanFactory#createFromString}})	24/Oct/13 2:03 PM;bra;works, code looks a lot cleaner than before	31/Oct/13 9:03 AM;isc;I have also tested the solution successfully with our test data.	31/Oct/13 9:14 AM;psc;Ingo Schulze just confirmed that issue is also solved from testcenter-perspective. Ticket will be closed.																																																	

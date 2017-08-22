@@ -1,0 +1,1 @@
+[CRUD] Location -> create führt zu einem 500er Serverfehler	Wenn man die Seite http://localhost:8080/location/create aufruft, kommt es zu dem Serverfehler.		Improvement	OpenSpeedMonitor	12/May/16 12:40 PM	12/May/16 6:25 PM																																																																				

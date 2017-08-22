@@ -1,0 +1,8 @@
+Add explanation to partial export GUI	"When selecting the ""partial"" checkbox on iteraplan's Import/Export page, a select box to choose the main building block type for the export appears.
+Additionally a text input field is displayed to allow entering of filter conditions in iteraQL syntax.
+
+Please add an info icon with a tooltip (similar as the explanation of import strategies of the same page) to explain the use of the dropdown and expecially the input field, as it is not clearly deducible without background knowledge.
+
+Information provided by the tooltip should include that the type selection determines the _main type_ of the export, and that the input field allows for _optional_ filtering of the main type using _iteraQL syntax_."		Improvement	iteraplan PO	23/Oct/14 11:29 AM	08/Dec/14 3:55 PM					export	partial	usability							"08/Dec/14 3:03 PM;tam;* What is the right form: IteraQl or IteraQL. The second one looks better, because both Q and L are abbreviations
+* There is a unused property"	"08/Dec/14 3:55 PM;tam;Tested in IE, FireFox and in Chrome.
+The solution works correctly"																																																					

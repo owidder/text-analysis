@@ -1,0 +1,7 @@
+Portfolio Diagram - use bigger font-size for axis-labeling	"In Portfolio Diagram the labels of rows and columns are hard to read because they are too small.
+
+
+
+There is enough space for bigger font-sizes (even if the names are longer than in the example). 
+
+ * Please use at least one or two font-sizes bigger. (More if possible)"		Improvement	iteraplan PO	17/May/17 8:38 AM	11/Jun/17 1:37 PM														11/Jun/17 1:36 PM;fka;Now it's really ... big. ;)																																																						

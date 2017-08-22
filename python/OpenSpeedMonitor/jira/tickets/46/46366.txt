@@ -1,0 +1,19 @@
+Bar and Pie diagrams don't work with enumeration attribute values with certain special characters	"To reproduce (with sample data):
+# Create new enumeration attribute type with two values ""te'st"" and ""test""
+# Assign the new attribute to business processes
+# Set for the new attribute the value ""te'st"" in at least one business process
+# Create pie chart for all business processes
+# Configure the new enumeration attribute for coloring
+# Set ""attribute values"" (instead of ""Maintenance"") in the select box below the attribute selection
+# Create diagram
+=> Error page
+
+Obviously, the expected behavior is for the diagram to be created instead.
+
+There is no known workaround, except renaming of enumeration attribute values to not contain the escaped characters, which are:
+|\ |(backslash)|
+|‘|(single quote)|
+|[|(square bracket)|
+|]|(square bracket)|
+|${|(dollar followed by opening curly bracket)|
+"		Bug	iteraplan PO	26/Nov/13 4:25 PM	30/Dec/15 4:54 PM					bar	escaping	pie																																																													

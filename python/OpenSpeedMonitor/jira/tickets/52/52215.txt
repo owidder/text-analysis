@@ -1,0 +1,49 @@
+OMITTED!! Include Business Objects in IFD	"*Summary:*
+
+Include (via direct Isr2Bo-Connection) connected Business Objects as inner boxes of Information Systems in the Information Flow Diagram.
+
+
+
+*Affected parts:*
+
+* Almost all parts (rendering pipeline, legend, configuration, toolarea)
+
+
+
+*UI:*
+
+For details to the UI ask [~wfr] .
+
+* Single Business Object:
+
+** Show a single nested box in the Information System outer box.
+
+
+
+* Multiple Business Objects:
+
+** Show all names of the Business Objects as text list in the first box (at the front). Each new Business Object is in a new line.
+
+** The list is limited: Show a maximum of 30 list entries. If the user has more than 30 Business Objects, display a text: ""... and X more business objects"". The user has no possibility to display the hidden items. But the diagram can be downloaded with this marker.
+
+** Behind this first box with the Business Objects show a ""Kästchen Stapel Symbol"" (similar to the attached symbol).
+
+
+
+
+
+* Activate the Business Objection inclusion in the toolarea as a new setting (see: https://iteraweb.iteratec.de/confluence/pages/viewpage.action?pageId=52134452#InformationFlowDiagram%28IFD%29-Toolarea )
+
+* Show the activated setting in the legend
+
+* Too long names of Business Objects are cropped.
+
+
+
+*Approach:*
+
+* Save the setting as new query parameter in the url
+
+
+
+"		New Feature	iteraplan PO	30/Jul/15 1:13 PM	19/Jan/16 4:06 PM																																																																				

@@ -1,0 +1,25 @@
+Singel Element Edit - Self-Relations and IE 11	"Reproduce with trunk and IE 11 
+
+ # Open ""Information Systems"" 
+
+ # Open the single element view from ""Broker # 5.1""
+
+ # Change into the tab ""RELATIONS""
+
+ # Click on ""Add relation"" and choose ""BI # 1.0"" as ""Sub Information Systems""
+
+ # Delete the new created relation click on ""Add Relation""
+
+ # Now choose ""BI # 1.0"" again and check available options
+
+ # The options are inconsistent 
+
+
+
+Expected That the correct options are availible
+
+Actual: The shown options are inconsistent
+
+
+
+ "		Bug	iteraplan Thunderduck	02/May/17 11:29 AM	02/May/17 2:31 PM																																																																				

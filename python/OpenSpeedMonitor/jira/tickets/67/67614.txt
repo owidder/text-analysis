@@ -1,0 +1,31 @@
+Filter on undefined values lead to error	"*Summary:*
+
+If you filter on an attribute, where the value is not set for some Building Blocks then you get an error.
+
+Reason: createTextPredicate does not work with undefined.
+
+
+
+*Reproduce:*
+
+* Open Landscape Diagram
+
+* Set content filter for description = ""a""
+
+
+
+*Expected*
+
+* Correct filtering by description = ""a""
+
+
+
+*Actual:*
+
+* Error
+
+
+
+*Analysis:*
+
+Open createTextPredicate() (line 38) in filterPredicateBuilder.js. If ""item"" is undefined, line item.indexOf returns an error."		Bug	iteraplan PO	21/Dec/15 11:35 AM	23/Dec/15 11:44 AM														22/Dec/15 2:19 PM;msr;No unit tests because function is deprecated																																																						

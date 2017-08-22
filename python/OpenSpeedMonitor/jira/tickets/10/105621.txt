@@ -1,0 +1,9 @@
+MPD: Limit timespan to 100 years	"*Summary:*
+
+Limit timespan to 100 years in the Masterplan Diagram,
+
+i.e. if timeSpan[until] - timeSpan[from] > 100 years, set timeSpan[until] = timeSpan[from]+100
+
+
+
+Do not use url-parameters because they will be deleted in scope of IPTS-413"		Improvement	iteraplan Speedbird	13/Dec/16 11:16 AM	29/Dec/16 12:29 PM														29/Dec/16 12:29 PM;fka;Will be done with IPTS-413																																																						

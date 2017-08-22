@@ -1,0 +1,21 @@
+Layout for small window sizes	"*Summary:*
+
+If the window size gets too small, the responsive layout for attribute groups looks strange, similar to a diagonal (see screenshot).
+
+Please correct this layout and ensure every column is filled ""from the top"".
+
+
+
+Is Bootstrap used (Bootstrap is deprecated for iteraplan and will be replaced by Angular Materials)?"		Bug	iteraplan Speedbird	22/Nov/16 3:32 PM	20/Dec/16 9:44 AM														06/Dec/16 4:01 PM;msr;Please consult [~mwe] for problems with bower. Thanks.	"19/Dec/16 11:34 AM;roia;Review: https://iteraweb.iteratec.de/fisheye/cru/IP-233#CFR-36190
+
+
+
+I'd prefer that items in the Relations-sections, which are links to single element views, looked more like links (underlined, some blue undertone). [~msr], could you please give your input on this."	19/Dec/16 11:42 AM;msr;In the nightly build the links look in some Magenta color without any underlining (see screenshot). That's ok for me.	"19/Dec/16 11:44 AM;roia;[~msr], please see the attached items-glued-together.jpg. The ""Proprietary DB # 2.0"" and ""SOAP"" are actually different items, but it is not clear from the UI and they look like one item.
+
+I think, we should make some UI updates to distinguish different items (maybe, have different background for even/odd items, increase right or margin...) or something else."	"19/Dec/16 1:46 PM;roia;[~vadm], OK, accourding to discussion above just move inline styles to CSS and for the items, which are very close to each other we'll create follow-up task, if [~msr] finds it necessary.
+
+
+
+[~msr], for the link styles I mean that they are different than, for example, links in the ipList component, which get underlined on mouse hover."	"19/Dec/16 2:33 PM;roia;The section title jumps up then section is collapsed. Please check if it's our issue, or the issue of angular-material component and create follow-up ticket if necessary
+
+!title-jumps-up.jpg|thumbnail!"																																																	

@@ -1,0 +1,61 @@
+FavIcon	"Second section in Corporate Design tab
+
+
+
+Name: FavIcon {color:#14892c}(german: FavIcon){color}
+
+
+
+showing one tile:
+
+* with current favIcon - either the default iterplan favicon or a custom one
+
+* with possibility to upload new FavIcon - icon on the tile *file upload* and tooltip ""Upload new FavIcon"" {color:#14892c}(german: ""Neues FavIcon hochladen""){color}
+
+
+
+Right of the tile a reset-button deletes the custom FavIcon and replaces it with the default iteraplan favicon
+
+
+
+Reuse cropping tool of the logo-upload
+
+ 
+
+
+
+Find a tool to convert an image to FavIcon (either client-side, if not easily possbie on the backend-side)
+
+ 
+
+
+
+restrictions according to:
+
+ * The image must have a size of {{16x16}}, {{24x24}}, {{32x32}}, {{48x48}}, {{64x64}}, {{128x128}} or {{256x256}}
+
+ ** cropping tool should have resizing only in square format possible (blocked as square)
+
+
+
+ * size: max 10 MB (check size on client side)
+
+
+
+*REST-API:*
+
+* PUT the custom favicon to the database
+
+* The reset button sends a DELETE which deletes the custom favicon from the database and publishes the default iteraplan favicon to the hardcoded url
+
+
+
+*Database:*
+
+* Two rows: One for the default iteraplan favicon (mandatory) and one for the custom favicon (optional)  - backend developer should decide if the default iteraplan favicon should be saved in the filesystem (current solution) or in the database (possible new solution?)
+
+
+
+
+
+All changes are saved and applied immediately."		New Feature	iteraplan Speedbird	23/May/17 3:03 PM																																																																					

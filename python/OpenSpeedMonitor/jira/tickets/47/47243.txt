@@ -1,0 +1,13 @@
+Error message on editing of ISR-IE-relation	"Reproduce:
+* Open detail view of an Infrastructure Element (e.g. IBM Host 1)
+* Edit relation to Information System (e.g. Broker #5.1)
+* Enter a number value like 30 for ""Apportionment""
+* Save
+* ""A general technical error occurred.""
+
+Problem report is attached"		Bug	iteraplan PO	18/Dec/14 9:57 AM	16/Jan/15 11:22 AM					attribute	relation								"18/Dec/14 12:46 PM;tam;Bug is fixed and commited.
+
+But there is no junit test for creation an infrastructure element with an relation to information systen and an attribute.
+"	"07/Jan/15 3:15 PM;tam;JUnit and according code modifications are commited. Unfortunately this commit went without comment.
+See changes in the revision 24162
+https://www.iteraplan.de/code/changelog/iteraplan-SVN?cs=24162"																																																					

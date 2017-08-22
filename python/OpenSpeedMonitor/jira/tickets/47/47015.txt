@@ -1,0 +1,33 @@
+Add Inner/Outer swap function	"For the NCD with IS grouped by BO, add an action ""Swap outer and inner"".
+
+
+
+The system should display BO as inner boxes, grouped by IS as outer boxes.
+
+
+
+No coloring or filtering of BOs for now in this ticket.
+
+
+
+
+
+rewrite of description:
+
+
+
+given a NCD with outer type O and inner type I, and filters and coloring,
+
+add an action ""swap..."" 
+
+so that I and O swap their position in the parameters of the NCD, including all coloring and filters
+
+
+
+triggers a  complete redraw.
+
+
+
+main point of implementation:
+
+swap the parameters "		New Feature	iteraplan PO	30/Sep/14 4:55 PM	19/Aug/15 1:31 PM																																																																				

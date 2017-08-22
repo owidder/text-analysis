@@ -1,0 +1,1 @@
+Bar/ pie chart with []-brackets	Selecting attribute values for coloring (one of the values has []) results in "Graphics generation failed" message. Same attribute values for x-axis in bar chart works fine.		Bug	iteraplan PO	06/Nov/13 1:20 PM	30/Dec/15 4:54 PM					bar	pie																																																														

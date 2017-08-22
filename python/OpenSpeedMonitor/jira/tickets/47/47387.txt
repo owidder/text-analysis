@@ -1,0 +1,11 @@
+Wrong behavior for changing filtering attributes	"Steps to reproduce:
+1. Use filtering by enumeration properties ""Type of status""
+2. Navigate to used filtering settings line
+3. Click on ""Type of status""
+4. Select ""Technical State Of Health""
+Actual: ""Type of status"" and ""Technical State Of Health"" appear in the legend settings
+
+Expected: ""Technical State Of Health"" appears instiad of ""Type of status"""	47134	Sub-task	iteraplan PO	05/Feb/15 3:30 PM	09/Feb/15 9:08 AM													"Workspace: Windows 8.1
+Browser: Google Chrome 39.0
+Revision: 611"	"09/Feb/15 9:07 AM;dasm;Verified
+Revision 621"																																																						

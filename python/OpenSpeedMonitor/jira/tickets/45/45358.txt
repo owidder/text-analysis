@@ -1,0 +1,11 @@
+NPE while exporting to Excel	"There is a NPE when exporting a large data set.
+
+see ITERAPLAN-474 for a stack trace and further information.
+
+"		Bug	iteraplan PO	31/Jan/12 2:21 PM	24/Feb/12 12:01 PM														21/Feb/12 5:07 PM;tse;Fixed in rev. 15310	"22/Feb/12 5:54 PM;sry;question re changeset [15310]: is it correct to call createCell() in DefaultTypeSheetGenerator all the time, or should you rather use something like getOrCreateCell()?
+
+other than that, fine"	"23/Feb/12 9:35 AM;tse;That is correct: The cells are not there and must be created.
+
+(NB: The method DefaultTypeSheetGenerator.initDataCells initially creates 300 empty data rows; the number 300 is defined in WorkbookContext as defaultDataSize.
+Therefore, ExcelExportServiceImpl must be careful: When filling in data, cells might be there or not; that's the reason for using getOrCreateCell() there.)
+"	24/Feb/12 12:01 PM;sry;fine, with Tilman's explanation																																																			

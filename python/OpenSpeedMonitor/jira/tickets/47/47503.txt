@@ -1,0 +1,9 @@
+Context menu for selecting content appears with x-axis and y-axis	"Steps to reproduce:
+1. Go to LSD
+2. Navigate to x-axis or y-axis
+3. Open Context menu for selecting Content type
+Actual: Context menu for selecting content appears with x-axis and y-axis
+Expected: Maybe better if Context menu for selecting content type will appear only when user clicks on used content"	47460	Sub-task	iteraplan PO	16/Mar/15 5:22 PM	17/Mar/15 5:23 PM													"Workspace: Windows 8.1
+Browser: Google Chrome 39.0
+Revision: "	"17/Mar/15 5:23 PM;dasm;Verified.
+revision: 678"																																																						

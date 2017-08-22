@@ -1,0 +1,1 @@
+Delete script config when script is deleted	If a XSL file is deleted from the reactor the saved config will also be deleted.		Improvement	iteraplan Quickfox	27/Jul/16 2:47 PM	02/Aug/16 12:29 PM														05/Aug/16 11:03 AM;tam;Created IPTQ-86																																																						

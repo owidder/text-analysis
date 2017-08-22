@@ -1,0 +1,59 @@
+Installer für 5.2	"Hallo,
+
+
+
+die Hamburger Hafen und Logistik AG möchte auf die Version 5.2 (incl. LDAP Unterstützung umstellen. Können Sie uns bitte einen entsprechenden Installer zur Verfügung stellen?
+
+
+
+Mit freundlichen Grüße
+
+Ansgar Rathke
+
+
+
+Informationssysteme
+
+HAMBURGER HAFEN UND LOGISTIK AG
+
+Bei St. Annen 1, 20457 Hamburg, www.hhla.de
+
+Tel: 040-3088-3485
+
+E-Mail: rathke@hhla.de
+
+---
+
+Hamburger Hafen und Logistik Aktiengesellschaft
+
+Sitz der Gesellschaft: Freie und Hansestadt Hamburg
+
+Registergericht: Hamburg HRB 1902
+
+Vorstand: Klaus-Dieter Peters (Vors.), Dr. Stefan Behn, Heinz Brandt, Dr. Roland Lappin
+
+Vorsitzender des Aufsichtsrates: Prof. Dr. Peer Witten"		Technical question	iteraplan Support	09/Jun/16 3:02 PM	28/Jun/16 7:00 AM														"09/Jun/16 9:27 PM;msr;Hallo Herr Rathke,
+
+danke für Ihre Anfrage.
+Laut unserem Kampagnen-Dienst wurde der Installer an Herrn Dr. Hagemann (hagemann@hhla.de) ausgeliefert. Gerne stelle ich Ihnen den Download-Link hier zur Verfügung.
+
+Mit freundlichen Grüßen
+
+M. Schrumpf
+
+""teraplan ist im Release 5.2 erschienen und steht zum Download bereit.
+
+Das Release bringt hauptsächlich Verbesserungen und Erweiterungen im Interaktiven Client mit sich. Neben einer Verbesserung der Performance haben wir vor allem die Filtermöglichkeiten in den Visualisierungen wesentlich ausgebaut. In den Release Notes (http://www.iteraplan.de/wiki/display/iteraplan/Release+Notes ) sind alle Änderungen für Sie zusammengefasst.
+
+Wir empfehlen allen Kunden das Upgrade von früheren iteraplan Releases. Sie können sich die Installationsdateien von folgender Adresse herunterladen: iteraplan Installer (https://www.iteraplan.de/downloads/corporate/5.2.0/iteraplan-5.2.0-corporate-installer.zip)  mit iTurm/LDAP/SSO Authentifizierung und MySQL/Oracle/MS SQL-Datenbank-Wahl.
+Login: corporate
+Passwort: I781voed
+
+Bitte beachten Sie, dass dies der Installer der Standarddistribution ist. Wenn Sie eine unternehmensspezifische Version nutzen, werden wir Ihnen diese in der Woche ab 9. Mai zur Verfügung stellen.
+
+Für das Upgrade von einer älteren iteraplan-Version muss Ihr Datenbestand migriert werden. Eine detaillierte Anleitung zum Upgrade samt der nötigen SQL-Skripte ist im Download-Paket enthalten. Ihr Firmen-Lizenzschlüssel bleibt unverändert.
+
+Bei Fragen stehen wir Ihnen jederzeit sehr gerne zur Verfügung: www.iteraplan.de/support
+
+Mit freundlichen Grüßen
+Fabian Kainzinger"""																																																						

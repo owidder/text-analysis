@@ -1,0 +1,7 @@
+Wrappers for JavaScript Api	"Make sure all change information form the ReactionEvents is wrapped correctly to JavaScript objects. Especially important for:
+
+
+
+* Dates and date-intervals
+
+* Lists"	90524	Sub-task	iteraplan Thunderduck	28/Jul/16 1:02 PM	03/Aug/16 9:34 AM																																																																				

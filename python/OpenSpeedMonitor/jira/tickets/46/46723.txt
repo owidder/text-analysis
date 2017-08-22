@@ -1,0 +1,17 @@
+Add possibility to enter a supervisor role to iteraplan-installer for LDAP variants	"Currently the recommended procedure to do a first installation of iteraplan with LDAP-based authentication is complicated.
+A second iteraplan instance with iTURM-based authentication needs to be installed to be used for initialization of some roles, so the users authenticating via LDAP can have roles assigned.
+See also [installation guide|https://www.iteraplan.de/wiki/pages/viewpage.action?pageId=32178582].
+
+To simplify the installation procedure, add an additional step to the installation of LDAP-based iteraplan versions.
+Here the customer can enter the name of a group from their LDAP directory whose users should have supervisor permissions.
+The installer then executes an SQL script which creates a role with that name in the iteraplan database and adds the role {{iteraplan_Supervisor}} as subordinate role.
+
+This way users who are member of that group can log into iteraplan with supervisor permissions without need of the second, iTURM-based installation.
+
+Important:
+* Not entering anything should result in the script not being executed
+* Adjust the user documentation
+* Make sure the script is executed *after* the database initialization step of the installer
+* Make sure the installer is fool-proof for ""upgrade"" installations as well, when there is a pre-existing database. One possibility is for the installer to only ask for said input if database initialization was selected."		New Feature	iteraplan PO	08/Jul/14 1:40 PM	05/Aug/14 2:49 PM					installer	ldap								31/Jul/14 11:44 AM;fam;Please review especially a completely new installation.	01/Aug/14 5:05 PM;fam;Bug fixed	"04/Aug/14 2:03 PM;dop;I think the SupervisorGroupTask does not work. I've tried it on a fresh DB an it only executes half of the script. It inserts the role in the DB, but it does not update the hibernate sequene nor add an entry to the table role_role. My assumption is, that the commit causes an error (see the installer error log) and after that it stops executed. The error results from a commit, where no commit is needed (autocommit). 
+
+Please check this behavior."	05/Aug/14 11:37 AM;wfr;Spot review FKa WFr: must be fixed before release.																																																			

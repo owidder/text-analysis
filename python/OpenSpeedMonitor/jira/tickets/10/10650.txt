@@ -1,0 +1,15 @@
+Grails-LinkGenerator erstellt falsche Links	Der Grails-LinkGenerator erstellt Links mit falschem Hostname für Highchart-Points (80.69.33.179:8080 statt DNS-Name).		Bug	OpenSpeedMonitor	23/Oct/13 6:11 PM	06/Nov/13 5:40 PM														"01/Nov/13 4:41 PM;mzeimer;Auf der SEU passiert dies nicht, auf LIVE (monitor1) schon.
+
+Hintergrund:
+Auf der SEU ist der hostname auf der Maschine korrekt gesetzt, auf LIVE nicht.
+
+Es gibt eine Möglichkeit, in der server.xml im Abschnitt Host dieses zu konfigurieren... sollte aber zuvor getestet werden."	"01/Nov/13 4:46 PM;mzeimer;Folgende Beschreibung am Montag (4.11.13) nochmals sichten und testen:
+http://tomcat.apache.org/tomcat-5.5-doc/config/host.html
+
+Der erste Test mit Abweiung vom Hostnamen war nicht erfolgreich. Möglicherweise gibt es Rückreferenzen über den Hostnamen in der Konfiguration."	06/Nov/13 4:09 PM;jwerschmoeller;Hostname auf dem Server (monitor1 muss voll qualifiziert werden) anpassen! Upgrade wenn früh morgens mit minimaler Downtime!	"06/Nov/13 5:40 PM;nkuhn;Die Änderung der tomcat-hostname-Konfiguration (in der server.xml) hat das Verhalten leider nicht geändert.
+
+Man könnte testen ob die folgenden Dinge etwas ändern:
+* hostname der Maschine ändern -> problematisch, da auf dieser andere Anwendungen laufen, Neustart
+* grails.serverURL in der config.groovy eintragen, ist eigentlich deprecated, unklar, ob das funktioniert 
+
+-> Da das ganze Thema aktuell nicht so wichtig ist, lassen wir es erstmal bestehen."																																																			

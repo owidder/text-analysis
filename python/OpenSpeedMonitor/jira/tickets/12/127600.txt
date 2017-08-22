@@ -1,0 +1,7 @@
+Graphics Reactor: Change colour of Search-Icon when active	"Activate the search in the Graphics reactor folders.
+
+The icon changes to pink.
+
+
+
+Please change this pink to #A70075"		Bug	iteraplan Speedbird	20/Jul/17 7:51 AM																																																																					

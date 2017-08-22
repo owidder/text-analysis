@@ -1,0 +1,47 @@
+Could not find bean 'userContext' in any scope	"Beim Aufruf der iteraplan-URL im Browser wird noch die PIN abgefragt, um den User zu identifizieren, danach folgt direkt die Fehlerseite (siehe Anhang).
+
+
+
+Die Authentifizierung klappt laut Logs, Rollen werden auch gefunden. Das Ergebnis geht dann wohl nicht an iteraplan zurück."		Fault	iteraplan Support	15/May/17 1:05 PM	15/May/17 3:20 PM														"15/May/17 1:05 PM;dne;
+
+[^logs.tgz] _(5 kB)_
+
+!screen.PNG|thumbnail!"	"15/May/17 1:18 PM;dne;Folgende Änderung haben wir nach der Installation noch vorgenommen:
+
+In Zeile 170 der applicationContext-spring-security.xml wurde ein weiterer Authentication-Provider konfiguriert:
+
+       <security:authentication-manager alias=""authenticationManager"">
+             <security:authentication-provider ref=""x509AuthenticationProvider"" />
+             <security:authentication-provider ref=""ldapAuthenticationProvider"" />    <-- Der hier
+       </security:authentication-manager>
+
+Und ab Zeile 196 bis Zeile 217 ist die Definition für den Provider:
+
+  <bean id=""ldapAuthenticationProvider"" class=""org.springframework.security.ldap.authentication.LdapAuthenticationProvider"">
+    <constructor-arg>
+      <bean class=""org.springframework.security.ldap.authentication.BindAuthenticator"">
+        <constructor-arg ref=""ldapContextSource"" />
+        <property name=""userSearch"" ref=""userSearch"" />
+      </bean>
+    </constructor-arg>
+    <constructor-arg ref=""ldapAuthoritiesPopulator"" />
+    
+    <property name=""authoritiesMapper"">
+      <bean class=""org.springframework.security.core.authority.mapping.SimpleAuthorityMapper"">
+        <property name=""convertToUpperCase"" value=""false"" />
+        <property name=""defaultAuthority"" value=""${ldap.roles.defaultrole}"" />
+        <property name=""prefix"" value=""${ldap.roles.nameprefix}"" />
+      </bean>
+    </property>
+    
+    <!-- Mapper responsible for transferring email adress, user name etc. from directory to iteraplan -->
+    <property name=""userDetailsContextMapper"">
+      <bean class=""de.iteratec.iteraplan.presentation.IteraplanLdapUserDetailsMapper"" />
+    </property>
+  </bean>"	"15/May/17 1:27 PM;cst;Wie telefonisch besprochen, bitte die Lizenz einspielen und den Vorgang nochmal testen.
+
+Viele Grüße,
+
+Christoph "	15/May/17 1:31 PM;dne;Warte gerade noch auf Alex, damit er die Lizenz einspielt. Wieso muss man die Lizenz bei einem Upgrade überhaupt neu einspielen? Ist das immer so?	"15/May/17 1:38 PM;dne;Kommen nicht dazu, die Lizenz einzugeben 
+
+!2017-5-2-13-38-56-922.png|thumbnail!"	15/May/17 3:20 PM;cst;Konnte über die WEB-EX gelöst werden.	15/May/17 3:28 PM;dne;Lösung: Lizenz direkt über Datenbank eingetragen. Das Migration von v3.4 lief, war die Lizenz dort noch nicht eingetragen.																																																

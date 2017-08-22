@@ -1,0 +1,116 @@
+Iturm hat Java Fehler	"Iturm lässt sich nicht aufrufen (HTTP Status 500 -
+
+java.lang.ClassNotFoundException: org.apache.jsp.jsp.Login_jsp)
+
+
+
+"		Fault	iteraplan Support	23/Jun/17 11:17 AM	05/Jul/17 9:20 AM														"26/Jun/17 8:49 AM;cst;Guten Morgen,
+
+vielen Dank für Ihre Anfrage.
+
+Ist es möglich, sich am iteraplan selbst anzumelden, oder tritt hier auch eine ähnliche Fehlermeldung auf. 
+Wenn dies möglich ist, benötige ich die ""System Info"", diese können Sie unter Administration und ""Konfiguration"" erstellen. 
+
+Zusätzlich schicken Sie mir bitte die ""catalina.log"" und die ""iteraplan.log"" des besagten Zeitpunktes. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"26/Jun/17 10:38 AM;a.ostenkoetter@bghw.de;Hallo H. Stangl,
+
+vielen Dank für ihre Kontaktaufnahme.
+
+Augenblicklich ist die Anmeldung an Iteraplan möglich. Die ""System Info"" habe ich ihnen schon einmal angehangen. Leider kann ich momentan keine Files vom Server kopieren, ich habe keinen securecopy-Client auf meinem Rechner ;-(
+Die Dateien kommen sobald ich einen Client auf meinem Rechner habe...
+
+Sovie vorab: in der Catalina.out und der Iteraplan-5.2.0.log steht eigentlich nichts was mit dem Problem zu tun haben könnte, in der ""localhost.2017-06-26.log"" steht der angezeigte Java Fehler (:
+root@siguv-iteraplan:/var/lib/tomcat7/logs# cat localhost.2017-06-26.log)
+
+Jun 26, 2017 9:57:44 AM org.apache.catalina.core.StandardWrapperValve invokeSEVERE: Servlet.service() for servlet [jsp] in context with path [/iturm] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.jsp.Login_jsp] with root causejava.lang.ClassNotFoundException: org.apache.jsp.jsp.Login_jsp        at java.net.URLClassLoader.findClass(URLClassLoader.java:381)        at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:132)        at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:63)        at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:145)        at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)        at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)        at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)        at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)        at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)        at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:118)        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)        at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)        at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:154)        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)        at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:199)        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)        at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)        at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)        at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)        at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)        at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)        at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)        at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)        at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:610)        at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)        at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)        at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)        at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)        at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)        at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)        at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:313)        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)        at java.lang.Thread.run(Thread.java:745)
+
+
+Hoffe das hilft.
+Beste Grüße aus Bonn
+Tel: +49 (0)228-5406-5734
+A.Ostenkötter
+
+
+[^ProblemReport_2017-06-26_095635.zip] _(6 kB)_"	"26/Jun/17 10:50 AM;cst;Guten Tag Herr Ostenkötter,
+
+vielen Dank für Ihre Antwort.
+
+Die Version 5.2 von iteraplan ist nicht für Java 1.8 ausgelegt und getestet.
+Dies kann auch schon die Ursache für das angegebene Fehlverhalten sein.
+
+Ist es möglich die Java-Version test weise auf Version 1.7 zurück zu setzen und den Aufruf erneut zu probieren. Zusätzlich empfehle ich Ihnen hier ein Update auf eine aktuelle Version durch zu führen. Die aktuelle Version ist der Stand 6.0 und dieser wurde letzte Woche released. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"26/Jun/17 11:48 AM;a.ostenkoetter@bghw.de;Hallo H. Stangl,
+leider kann ich die Installation meines Clients nicht beeinflussen. Da aber offensichtlich ein Update ohnehin sinnvoll erscheint, wäre ich dafür das durchzuführen. Was denken sie? Was muss ich tun, wie komme ich an die neue Software?....
+Regards A.O."	"26/Jun/17 12:57 PM;cst;Okay,
+
+ich kann Ihnen gerne den aktuellen Download zur Verfügung stellen. Mit Version 6.0 wurde die Software grundlegend neu designed. Es wäre hier zu empfehlen hier erstmal auf die Version 5.3 upzudaten (unterstützt Java 1.8) und sich Version 6.0 in Ruhe anzusehen. 
+
+Mit dieser Nachricht erhalten Sie beide:
+
+[https://www.iteraplan.de/downloads/corporate/6.0.0/iteraplan-6.0.0-corporate-installer.zip]
+
+und Version 5.3
+
+[https://www.iteraplan.de/downloads/corporate/5.3.0/iteraplan-5.3.0-corporate-installer.zip] 
+
+Login: corporate
+ Password: sa4Ekachu
+
+[https://doc.iteraplan.de/display/iteraplan53]
+
+Ihre Lizenz:
+
+QmVydWZzZ2Vub3NzZW5zY2hhZnQgSGFuZGVsIHVuZCBXYXJlbmxvZ2lzdGlrIEvDtnJwZXJzY2hhZnQgZGVzIMO2ZmZlbnRsaWNoZW4gUmVjaHRzADI4LjAyLjIwMTgARDNBREFCODgzMTdDREQyMzg5MkVCMjc4MzAyOEIzMDBDOEQwRENGQzRCNDU2NEU3RDY0ODU5REY0MTM3NjgyRQ==
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"26/Jun/17 1:19 PM;a.ostenkoetter@bghw.de;Danke, Download hat funktioniert.
+
+Sehe ich das richtig, dass ich das über die bestehende Installation drüber installieren kann? Ich habe jedenfalls nichts zum Thema ""Update"" im Benutzer oder Admin-Handbuch gefunden.
+MfG"	"26/Jun/17 1:25 PM;cst;Es muss erst die Version installiert werden und dann die Update-Skripte durchgeführt werden. Wenn Sie direkt auf Version 6.0 gehen möchten, installieren Sie die aktuelle Version und führen die Update-Skripte der Datenbank in korrekte Reihenfolge durch.
+
+[https://doc.iteraplan.de/display/iteraplan60/Upgrade+Guide]
+
+Bei 5.3 muss nur ein Update-Skript nach der Installation durchgeführt werden.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"26/Jun/17 2:44 PM;a.ostenkoetter@bghw.de;Hallo H. Stangl,
+
+Heureka; das Dokument zum Updaten sollte sich im Upgrade Verzeichniss des Downloads befinden. In der Version 5.3 ist dort aber nur der Userguide. Ich habe jetzt mal die Version 5.4 heruntergeladen und siehe da, dort gibt es die Upbrade Anleitung von 5.2 nach 5.3 und nicht den Userguide. Vielleicht korrigieren sie das, für den Fall, dass das noch einmal benötigt wird..."	"27/Jun/17 7:28 AM;a.ostenkoetter@bghw.de;Guten Morgen
+
+Beim Update der Iteraplanistanz bin ich bis zum Punkt 3.2 Configure the new Installation gekommen. Jetzt laufe ich in Probleme! Bei uns sind die Voraussetzungen für die Installation mehrerer Mandanten geschaffen worden. Unsere Instanz heißt ipln_52_bghw. Jedoch kann ich am die zu löschende iteraplan.xml nicht finden auch keine ipln_52_bghw.XML. Damals hat das ihr Herr Wüst bei uns eingerichtet, vielleicht weis er mehr oder ich lasse sie auf unser System? Oder sie haben eine andere Handlungsanweisung....
+Regards A. Ostenkötter"	"27/Jun/17 8:02 AM;cst;Guten Morgen Herr Ostenkötter,
+
+vielen Dank für Ihre Antwort.
+
+Um das weitere Vorgehen besprechen zu können, würden Sie mir bitte einen Termin und Telefonnummer nennen, an dem ich Sie anrufen kann. So lassen sich die Fragen schneller klären. Gerne können wir auch eine Remote-Sitzung durchführen, sollte dies nötig sein.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"27/Jun/17 8:13 AM;a.ostenkoetter@bghw.de;Hallo H. Stangl
+
+sie können mich gerne heute bis 11:30Uhr, zwischen 14:00 und 15:00Uhr oder Morgen zwischen 8:00 und 10:00Uhr unter 0228-5406-5734 anrufen. Für eine Remotesession muss ich zuvor wissen, mit welchem Tool wir das machen wollen, weil ich dafür erst eine Installationsfreigabe benötige. Alternativ könnten sie prüfen, ob sie die Systeme mit ssh erreichen können: iteraplan.siguv.de dann könnte ich ihnen einen Zugang einrichten
+
+MfG A.O.
+ 
+"	"27/Jun/17 10:15 AM;cst;Nächste Woche Dienstag - wird die Version mit Ihm zusammen auf die Version 6.0 hoch gehoben.
+
+Werden hierzu eine Sitzung durchführen. 
+
+Zusätzlich werde ich morgen mit Bernd das weitere abklären.
+
+--------------
+
+ "	"27/Jun/17 11:21 AM;a.ostenkoetter@bghw.de;Für unsere Konferenz am Di. 4.7. 8:00Uhr. Konferenzlink
+https://ssl.bghw.de/dana/meeting/meeting_weekly.cgi?t=1499148000
+Passwort: 4H3rKfsD 
+Bis dahin...
+
+MfG A. Ostenkötter"																																										

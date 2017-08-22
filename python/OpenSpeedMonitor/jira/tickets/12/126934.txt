@@ -1,0 +1,13 @@
+Transform responsiblity attributes of classic to enum attributes in elastic - frontend	"After the responsibility attribute is a enum in elastic, adjust Javascript-Model and it's using in interactive Client
+
+
+
+ 
+
+
+
+We assume: the metamodel already has the new data-format and only few additional changes needed
+
+
+
+ "		Improvement	iteraplan Thunderduck	12/Jul/17 11:14 AM																																																																					

@@ -1,0 +1,1 @@
+Selenium: Implement Smoke Test for links in main screen metamodel image	The smoke test of interest should check if all links that can be found in the main screen metamodel image can be followed to expected pages.		Task	iteraplan PO	22/Nov/13 3:48 PM	09/Dec/13 11:16 AM														16/Dec/13 9:47 AM;psc;Ticket will be closed.																																																						

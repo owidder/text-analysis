@@ -1,0 +1,17 @@
+Navigator: Improve Interactions	"*Summary:*
+
+Improve interaction design of the navigator.
+
+
+
+*Details:*
+
+* Remove the toolarea
+
+* Move ""Reset View""-Button as secondary button right next to ""Download""-Button
+
+* Extend all building block boxes for a toggle-button on the right end of these boxes:
+
+** Not expaned state (default): Icon ""center focus weak"" - on hover: ""Show related elements"" / GER: ""Zeige alle verbundenen Elemente""
+
+** After expanding an element: ** Expaned state: Icon ""center focus strong"" - on hover: ""Hide related elements"" / GER: ""Blende alle verbundenen Elemente aus"""		Improvement	iteraplan Speedbird	09/May/17 3:33 PM	18/May/17 11:47 AM														17/May/17 4:10 PM;dmkh;Review is done, few comments here: https://iteraweb.iteratec.de/fisheye/cru/IP-599	18/May/17 11:37 AM;viol;please add revisions #6846, #6845																																																					

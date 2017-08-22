@@ -1,0 +1,9 @@
+Datepicker not working with different formats	"Testresult from KGO in ITERAPLAN-615:
+Tested the edit pages of all building blocks. Only relevant issue is the setting of a new date for the runtime period when using iteraplan in English. The calender sets the new date in German formatting, which results in an error when trying to save the corresponding building block. Everything else seems to work fine."		Bug	iteraplan PO	02/Apr/12 11:03 PM	05/Apr/12 3:41 PM														"03/Apr/12 5:33 PM;kvo;Current implementation is from http://dl.dropbox.com/u/143355/datepicker/datepicker.html
+Better option might be: https://github.com/Aymkdn/Datepicker-for-Bootstrap based on http://www.eyecon.ro/bootstrap-datepicker/ but working with 2.0.2
+"	"04/Apr/12 4:46 PM;gph;Changed implementation to https://github.com/Aymkdn/Datepicker-for-Bootstrap plugin.
+
+The formatting pattern for the datepicker depends on the (lower case) message key ""DATE_FORMAT"", which is committed to the plugin in ""standard.jsp""
+
+Maybe the formatted date format can cause an exception, if the language is changed while editing a dialog. When the Locale object is stored during this operation (=> the field's value doesn't apply to the new locale after changing the language), a validation error may appear on submit.
+"	04/Apr/12 6:51 PM;kvo;If the language is changed while editing a dialog - Error is ok - no special treatment required for this very rare usecase.																																																				

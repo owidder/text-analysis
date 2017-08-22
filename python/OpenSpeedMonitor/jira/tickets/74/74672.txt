@@ -1,0 +1,5 @@
+Klicken auf Datenpunkte im CSI-Dashboard wirft Exception	"Seit der Einführung von cs by visually complete.
+
+Ist schon deployt bei OTTO. 
+
+Sollte schnell gefixt werden."		Bug	OpenSpeedMonitor	24/Feb/16 3:44 PM	02/Mar/16 12:29 AM																																																																				

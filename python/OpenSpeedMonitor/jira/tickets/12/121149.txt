@@ -1,0 +1,9 @@
+Calculating ids from saved queries in the new client	"The new client needs functionality to obtain uuids of saved queries of lists and then return an list of the ids of all elements that correspond to the given filter.
+
+
+
+Write the uuids to the initial URL.
+
+
+
+The result of the calculation should be written to the DOM, as it can be read from there."		Improvement	iteraplan Thunderduck	11/May/17 2:06 PM																																																																					

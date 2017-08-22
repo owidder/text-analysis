@@ -1,0 +1,11 @@
+Events werden doppelt angezeigt	"Wenn man ein Event nicht globallyVisible macht, sondern einzelnen Job-Gruppen zuordnet wird der Text beim Hovern über den Event-Punkt mehrfach angezeigt, einmal für jede Job-Gruppe.
+
+Das macht keinen Sinn, wir sollten sie nur einmal anzeigen. Auch wenn ein Event global sichtbar ist UND Job-Gruppen zugeordnet ist (keine Ahnung ob das per CRUD-GUI hinzubekommen ist) sollten Events auf einem Dashboard immer nur einmal angezeigt werden. "		Bug	OpenSpeedMonitor	01/Mar/16 10:48 AM	04/Mar/16 3:25 PM														"04/Mar/16 11:54 AM;mmi;Auf dem CsiDashboard werden ""nicht globale Events"" gar nicht angezeigt. Ist das korrekt?
+
+Ein Beispiel:
+
+Es gibt das Event ""Test"" für die JobGruppe otto.de_Desktop.
+
+Agrregiert man auf dem CsiDashboard nach Jobgroups und wählt nur diese JobGruppe aus, ist das Event trotzdem nicht sichtbar.
+
+Gewollt?"	04/Mar/16 11:58 AM;bka;Ich würde erwarten, dass die Events auf dem CSI-Dashboard auch zu sehen sind. Ich vermute, es ist ein Bug, dass sie dort nicht angezeigt werden.																																																					

@@ -1,0 +1,9 @@
+Neue DB-Indices entwickeln	"Wir brauchen neue DB-Indices für EventResult und CsiAggregation. Diese sollten optimiert sein auf die Zeit-intensivsten Abfragen beim Aufrufen der Dashboards nach der Umstellung der Abfrage-Logik auf ""ohne tags"".
+
+
+
+Diese Abfragen lassen sich mit mysqldumpslow herausbekommen:
+
+http://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html
+
+http://www.ducea.com/2006/11/06/identifying-mysql-slow-queries/"	96849	Sub-task	OpenSpeedMonitor	21/Sep/16 4:30 PM	18/Jan/17 2:34 PM																																																																				

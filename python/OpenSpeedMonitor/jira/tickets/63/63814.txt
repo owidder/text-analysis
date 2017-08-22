@@ -1,0 +1,3 @@
+encoding of interactive client 	"* Analyse the current encoding situation
+
+* Implement steps to ensure UTF8-encoding in all local IDEs and on the server"		Task	iteraplan PO	17/Nov/15 12:55 PM	19/Jan/16 4:20 PM					encoding																																																															

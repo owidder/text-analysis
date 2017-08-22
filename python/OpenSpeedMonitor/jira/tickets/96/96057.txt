@@ -1,0 +1,9 @@
+Add possibility to save public saved queries	"* Add a switch with label ""Public"" to the save as modal dialog: https://material.angularjs.org/latest/demo/switch
+
+* If the user activates the switch and clicks save the new REST interface shall be used (with added ""shared"": ""public"" entry).
+
+* If the user reloads the page nothing special should happen. The page should be reloaded normally and the name of the SQ should be shown --Wenn eine SQ geladen ist und der User ein Reload der Seite ausführt, soll folgendes passieren:--
+
+** --User hat keine Änderungen an der SQ vorgenommen: Falls die SQ geändert wurde, soll die aktuelle SQ-Version geladen werden--
+
+** --User hat Änderungen an der SQ vorgenommen: Soll die Seite normal gereloaded werden ohne Aktualisierung der Seite obwohl sich die SQ im Hintergrund geändert hat.--"		New Feature	iteraplan Quickfox	14/Sep/16 3:34 PM	30/Sep/16 3:53 PM																																																																				

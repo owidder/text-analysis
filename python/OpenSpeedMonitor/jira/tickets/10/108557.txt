@@ -1,0 +1,11 @@
+AND logic for quick filter in list view	"The quick filter in the list view shall have a simple kind of AND logic:
+
+
+
+* The user can enter multiple search keys separated by whitespace
+
+* Rows are shown:
+
+**  if any of the columns includes *all* search keys at once (e.g. user enters ""ABC XYZ"", row with description ""ABC DEF XYZ"" is shown)
+
+** or if any of the multi-value columns matches *all* search keys (e.g. user enters ""alice joe"", row with accountability ""alice,bob,joe"" is shown, but not with ""alice,walter"")"		Improvement	iteraplan Speedbird	16/Jan/17 1:55 PM	23/Feb/17 11:21 AM																																																																				

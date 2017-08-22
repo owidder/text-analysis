@@ -1,0 +1,5 @@
+Edit status and complexity in the list	"To the list view, add editing of status and complexity in in-place in the list.
+
+Editing is as in the single item view (drop down box).
+Start of edit is as for name and description."		New Feature	iteraplan PO	10/Sep/14 12:54 PM	29/Sep/14 10:31 AM														"10/Sep/14 2:05 PM;sepr;Est. 0.5 PD for editing status.
++ to Wolfgang: we do not have a ""state of health field"" in the list view"	10/Sep/14 3:38 PM;wfr;I meant the "other enumeration property", that is complexity. I changed it in the description and title.																																																					

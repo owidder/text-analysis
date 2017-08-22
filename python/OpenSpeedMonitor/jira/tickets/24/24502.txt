@@ -1,0 +1,3 @@
+Highcharts createChartHtml() und createChartMultipleAxis() zusammenführen	"Für Highcharts existieren zwei Funktionen um einen Graph zu bauen:
+
+createChartHtml() und createChartMultipleAxis(). Jedoch ist createChartHtml() ein Spezialfall von createChartMultipleAxis(). Um die Schnittstelle zu vereinheitlichen soll createChartMultipleAxis() createChartHtml() ablösen."		Task	OpenSpeedMonitor	06/Nov/14 8:31 AM																																																																					

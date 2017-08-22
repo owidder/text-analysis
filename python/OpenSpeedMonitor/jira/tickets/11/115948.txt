@@ -1,0 +1,13 @@
+Mobile Jobs umziehen	"Am wenigsten Aufwand wird ein manuelles Übertragen machen.
+
+
+
+Die zuvor angelegten Scripte müssen jeweils verwendet werden.
+
+
+
+Die Job-Gruppen müssen ebenfalls angelegt werden.
+
+
+
+Mess-Frequenz erstmal nicht so oft (4 mal am Tag)."	113721	Sub-task	OpenSpeedMonitor	23/Mar/17 3:50 PM																																																																					

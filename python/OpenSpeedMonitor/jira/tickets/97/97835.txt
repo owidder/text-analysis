@@ -1,0 +1,63 @@
+RELEASE: Fill "System" tile	"Assume REST-API on server works as designed. If it is does not exist yet, use a mockup.
+
+
+
+*Summary:*
+
+Fill ""System"" tile with the following functions:    
+
+
+
+* Reload Plug-In Scripts
+
+* Enable/Disable history (note by [~ach])
+
+* Recreate search index
+
+* Clear Database Cache
+
+* Create System Info
+
+* Upload license
+
+
+
+*Implementation details:*
+
+* Design new ""System"" configuration page in cooperation with [~mwe]
+
+* Review proposal with [~fka] or [~msr]"		New Feature	iteraplan Quickfox	30/Sep/16 3:37 PM	20/Oct/16 5:24 PM														"05/Oct/16 9:39 AM;ach;-""History enabled"" flag (e.g. checkbox)- -> -on change send PUT request to toggle history enabled state (for API see IPTT-150)
+
+on application start- -> get history enabled state via GET request from server.-"	"06/Oct/16 5:50 PM;pma;TODO:
+
+* -add modal dialog for history check box-
+
+* -text area for license update-
+
+* add information for history and plugin (Alex)
+
+* add functionality for all boxes except putting the history on/off"	07/Oct/16 2:38 PM;msr;-Purge index is not needed anymore. Please delete this checkbox, but leave create new index-button-	"07/Oct/16 4:21 PM;msr;* JSON-structure for REST-resource is defined here: IPTS-204
+
+* How to activate and deactivate history is defined here: IPTT-150"	"07/Oct/16 4:29 PM;msr;Update:
+
+* -Use card-layout for all bullet points-
+
+* -To enable and disable history a modal dialog pops up to ensure the user knows what he does-
+
+* -License-card shows licensee and end date, too-
+
+
+
+"	"17/Oct/16 5:22 PM;mwe;TODO:
+
+* -Reload Plug-In Scripts-
+
+* -Enable/Disable history (note by Alexej Chemissov)-
+
+* -Recreate search index-
+
+* -Clear Database Cache-
+
+* -Create System Info-
+
+* -Upload license-"	19/Oct/16 2:51 PM;msr;Please make buttons more visible on the system page (??? md-raced???)	19/Oct/16 3:00 PM;msr;Please make "License"-Field no required anymore and limit cards to 1000 pixel.	19/Oct/16 3:36 PM;aan;Review only the last three commits, the rest is reviewed																																														

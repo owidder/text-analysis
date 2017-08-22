@@ -1,0 +1,7 @@
+The "Line type by numeric properties" displayed as empty menu	"Steps to reproduce:
+1. Go to LSD
+2. Use Business Object as content type
+3. Open the Context menu for Content type
+Actual: The ""Line type by numeric properties"" displayed as empty menu
+Expected: Line type menu shouldn't be displayed for types which haven't numeric properties"	47594	Sub-task	iteraplan PO	20/Apr/15 8:25 AM	22/Apr/15 3:53 PM													"Workspace: Windows 8.1
+revision: 951"	20/Apr/15 11:35 AM;dasm;Verified (revision 955)																																																						

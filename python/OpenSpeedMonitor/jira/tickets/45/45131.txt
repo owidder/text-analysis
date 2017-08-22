@@ -1,0 +1,5 @@
+AttributeValue improvements	"The text, date and number AttributeValue entities can have null values for ""value"" property. I suggest that we set these properties as ""not null"". The following tasks are required:
+* update Hibernate mappings
+* write migration script which deletes the AttributeValue with ""null"" values and adds a ""not null"" constraint for ""value"" property
+
+Another problem is that after some time the DB contains unused AttributeValue entities. We cannot prevent this, so the explicit deletion must be provided. One solution could be the cron jobs using the Quartz framework (see http://www.quartz-scheduler.org/)"		Improvement	iteraplan PO	08/Sep/11 3:54 PM	30/Dec/15 2:32 PM					attribute	database	hibernate							17/Sep/12 8:42 PM;sry;no longer applicable with the new persistence mechanism																																																						

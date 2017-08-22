@@ -1,0 +1,1 @@
+Separators in More... menu are sometimes not hidden according to the permissions the user has			Bug	iteraplan PO	10/Jul/13 5:33 PM	30/Dec/15 2:53 PM					ui																																																															

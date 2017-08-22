@@ -1,0 +1,34 @@
+Create static legend for IS/ISD/TC 	"Create a static legend for the static settings IS/ISD/TC/no filters, no coloring.
+
+Legend can be a static  but in the same place as the real legend later, that is a seperate div-element or canvas, that is an extra go.js diagram (with static content).
+
+no user interaction with that legend.
+
+pretty (final) look.
+
+use go.js for that as well, but as a second diagram, and that diagram is drawn to a second div element in the template.
+
+The class for drawing the legend should be an extra class, not part of the table builder."		New Feature	iteraplan PO	03/Mar/15 4:17 PM	24/Mar/15 1:02 PM														"10/Mar/15 3:59 PM;wfr;Risk: Can two divs with two go.js diagram canvases be drawn side by side, horizontally?
+"	"18/Mar/15 1:11 PM;dasm;Verified
+(revision 770)"	"23/Mar/15 4:32 PM;tam;* Context menues don't work in FF
+
+* controller.lsd.js
+22:
+///var width = window.innerWidth - 25;
+We don't need it, right?
+
+not all jsdocs clear: what are params and return value types
+44 
+$scope.getContextMenuOptions = function(e)
+
+@param {Object} newParameters -> Instead of Object as param concrete type
+
+* lsdMain.js
+/**
+ * Configure and draw LSD diagram table
+ * @return {*|HTMLElement}
+ */
+ What could be the * as return? Why?
+ 
+* LsdLegendBuilder.js
+ More JsDocs e.g. for properties and methods within it and also for parts within methods why this or that implemented like this, but not for simple getters and setters"																																																				

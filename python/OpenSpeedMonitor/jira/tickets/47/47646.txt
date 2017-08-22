@@ -1,0 +1,10 @@
+Manual regression test for Nested Cluster Diagram	"Test major features of the Nested Cluster Diagram *always with the actual trunk*,
+e.g.
+
+* Clustering
+* Paths
+* Filtering (enumeration, text, date and numeric)
+* Coloring
+* Nesting
+* Moving
+* Highlighting"		New Feature	iteraplan PO	20/Apr/15 5:19 PM	05/May/15 2:07 PM					test																																																															

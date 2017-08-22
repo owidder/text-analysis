@@ -1,0 +1,5 @@
+Centered Text on Tiles	"At the moment: The text on our tiles is aligned to the left bottom margin of the tiles.
+
+ * Please show the name of all tiles centered (left-right) but still at the bottom of the tile
+
+ * Change this feature for the tiles in all tabs: data, visualize, report and admin !image-2017-05-30-09-27-24-404.png!   -->  !image-2017-05-30-09-28-37-758.png!"		Improvement	iteraplan PO	30/May/17 9:29 AM	11/Jun/17 2:46 PM														09/Jun/17 10:07 AM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-649																																																						

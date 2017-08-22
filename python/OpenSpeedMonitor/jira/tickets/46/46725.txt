@@ -1,0 +1,5 @@
+Project should have at least one issue.	"*Test*
+----
+This project should at least have one issue.
+----
+*Test*"		New Feature	iteraplan PO	08/Jul/14 10:06 PM	06/Aug/14 5:12 PM														31/Jul/14 8:56 AM;wfr;This is only a test issue.	31/Jul/14 8:56 AM;wfr;Nothing to do.	06/Aug/14 4:50 PM;wfr;do it again with new workflow and scheme																																																				

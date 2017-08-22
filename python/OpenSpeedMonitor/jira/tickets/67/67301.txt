@@ -1,0 +1,9 @@
+GPS-Korrektur für Demo-Modus	"Wenn sich der Nutzer in einem definierten Radius um eine konfigurierte GPS-Position befindet, soll die konfigurierte statt der gemessenen GPS-Position genutzt werden, um Messungenauigkeiten und Schwankungen bei einer Demo auszugleichen.
+
+
+
+Über eine Konfigurationsdatei sollen Positionen und Radius gesetzt werden können.
+
+
+
+Das Feature soll übers Menü aktiviert / deaktiviert werden können."		Task	EAMV15	17/Dec/15 10:57 AM	11/Jan/16 1:50 PM																																																																				

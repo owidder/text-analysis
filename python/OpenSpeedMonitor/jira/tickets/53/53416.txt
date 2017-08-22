@@ -1,0 +1,17 @@
+Multiple globalActions-Buttons in header	"*how to reproduce:*
+
+* go to the new client
+
+* go on any cathegory page (e.g. Business Units)
+
+""Show NCD"" and ""Show LSD"" buttons apear twice
+
+
+
+* probably depends by new function in headerScope - clearHeaderItems()
+
+* also see: _cathegoryController.js_ (lines 107-110)
+
+{quote}""$scope.$on(""$locationChangeSuccess"", function(event){""...{quote}
+
+check if it's necessary."		Bug	iteraplan PO	11/Aug/15 2:09 PM	25/Aug/15 11:42 AM																																																																				

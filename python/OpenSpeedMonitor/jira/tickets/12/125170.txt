@@ -1,0 +1,7 @@
+URI serialization 	"* Check URI serialization of the list configuration
+
+ ** Make sure no translation keys are serialized to URI
+
+ ** Saved queries page has url like: [http://localhost:8080/client/#/savedQueries?loadedSQs=ALL&columns=fieldK%2FsharedP%2FwidthK%2F70P%2FpropertyTypeK%2FsavedQueryIsSharedB%2FfieldK%2FnameP%2FpropertyTypeK%2FstringP%2FsortK%2FascP%2FsortedAtK%2F0P%2FwidthK%2F210B%2FfieldK%2FdescriptionP%2FpropertyTypeK%2FrichtextP%2FwidthK%2F300B%2FfieldK%2FreportTypeTranslatedP%2FpropertyTypeK%2FstringP%2FwidthK%2F210B%2FfieldK%2FbbTypeP%2FpropertyTypeK%2FstringP%2FwidthK%2F990&featureName=%2FsavedQueries] - do we really need to store the propertyType values?
+
+"	111840	Sub-task	iteraplan PO	23/Jun/17 1:45 PM																																																																					

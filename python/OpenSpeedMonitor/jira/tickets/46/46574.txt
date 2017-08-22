@@ -1,0 +1,23 @@
+Extra property changes for omitted _predefined_ properties in JSON PUT	"JSON PUT with a minimal OE JSON structure, example:
+{code}
+{
+  ""result"": [
+    {
+      ""description"": [
+        ""My super RESTful proj""
+      ]
+    }
+  ]
+}
+{code}
+
+Note: name and position missing, both are predefined and not technical.
+
+UpdateDiff contains changes for these properties, to EV.none.
+Later (validation?) exception, leading to a 500 response.
+
+Debugging shows: masking for missing fields is called, both for missing predefined and user defined properties, but only user defined properties are successfully masked.
+
+Hypothesis for root cause: quirk in masking and metamodel wrapping.
+Maybe problems with equals/hashcode for property expressions? Or different Strings? "		Bug	iteraplan PO	10/Apr/14 4:45 PM	13/Jan/15 9:40 AM					rest									10/Apr/14 6:50 PM;kgo;A possible fix for the issue.	28/May/14 9:39 AM;fka;Please verify, if this problem still exists with the final 3.3 release 	"17/Dec/14 3:40 PM;sfe;Check whether this issue is still existent, and if yes, fix it.
+See whether Konstantin's fix can be applied or whether it is better to implement your own."	23/Dec/14 9:44 AM;isc;The problem still exists in iteraplan 3.4	08/Jan/15 11:35 AM;isc;After the changes in the ticket ITERAPLAN-2876, the problem seems to be fixed.	13/Jan/15 9:40 AM;tam;As Ingo mentioned, this seems to exist anymore after fix ITERAPLAN-2876.																																																	

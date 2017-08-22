@@ -1,0 +1,35 @@
+Update diagram (incl. full pipeline) to support Level 2 and 3		82723	Sub-task	iteraplan Speedbird	11/May/16 10:36 AM	26/Jan/17 5:34 PM														"18/May/16 3:14 PM;abo;*Review-Comments:*
+
+* in {{mpdItemDecorator-spec.js}} 
+
+** the comment ""Unit test of MPD ItemDecorator"" can be deleted - this should be obvious from the filename (abc-spec.js is the unit test for abc.js)
+
+** I'd like to see corner cases tested, too, e.g. what happens to elements of level 5 (+ document, why this is not covered, yet). What happens if there is no matching type-definition? What if mpdTableModel only contains elements of level 2?
+
+* in {{mpdItemDecorator.js}} 
+
+** I think it's not a good idea to assign the logger to the prototype on every constructor-call. I even think it is not necessary to re-assign it at all. line 14: {{MpdItemDecorator.prototype.logger = logger;}}
+
+** there is an unresolved TODO: ""TODO: this is the template for the N3CD diagram. Refactor for MPD when the requirements are clear""
+
+** you can extract 2 methods - one for ""Time span bars styling"", one for ""Data items styling"" and call them from _applyItemStyle()_
+
+** code-duplication and if-else-cascade in method _applyItemStyle()_ - try to extract a common method
+
+** the indention should be a constant - please verify with [~msr] where's the best place to store it.
+
+** I think Array.find() would better fit, than Array.filter()\[0\].
+
+* in {{mpdDiagramBuilder.js}}
+
+** {{var myScrolling = false;  // synchronizing flag}} - is this really necessary? As far as I know, there is no threading in JavaScript.
+
+*** if it is necessary, please rename it and document it properly to state _why_ it is necessary, and how it should be used.
+
+*** global variables should be declared at the top of the function for readability - please move it up.
+
+* in {{mpdTableModel.js}} - good that youy introduced braces for the if (line 40). Please additionally format the code (CTRL + ALT + L).
+
+* in {{mpdConfiguration.js}}  _getTypes_ and _getRelatedTypes_ are duplicated - get rid of one of them.
+
+"	23/May/16 11:33 AM;msr;Put the indentions in "constants.js" as MPD.INDENTION.LEVEL1 : "XXXX"																																																					

@@ -1,0 +1,1 @@
+3.3 & 3.4 & 3.5 Integrationenvironment, Release-Tag, Fileserver	https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess#Release-Prozess-3.3Integrationsumgebung		Task	iteraplan Speedbird	13/Jun/17 5:01 PM	22/Jun/17 5:23 PM																																																																				

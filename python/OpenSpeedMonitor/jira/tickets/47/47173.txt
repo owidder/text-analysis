@@ -1,0 +1,6 @@
+When resetting a filter for InformationFlowDiagram, it is possible to resume without a selection	"# go to information flow diagram -> send query & user results
+# Relevant interfaces -> filter interfaces -> reset
+# Back
+# No interfaces select
+
+Same for Business Objects"		Bug	iteraplan PO	14/Nov/14 1:53 PM	17/Nov/14 3:27 PM					InformationFlow									17/Nov/14 3:25 PM;fam;This issue will be covered by new client, so no more developement for this issue.																																																						

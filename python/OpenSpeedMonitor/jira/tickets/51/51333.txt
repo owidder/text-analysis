@@ -1,0 +1,1 @@
+Tag-Filter in Job/list	Das Feld zum Filtern der Tags ist etwas nach unten versetzt, es sollte auf einer höhe mit den Feldern links sein		Bug	OpenSpeedMonitor	20/Jul/15 10:07 AM	21/Jul/15 10:17 PM																																																																				

@@ -1,0 +1,9 @@
+Vorzeitges Beenden des Zap-Scanners behandeln	"Bei der Ausführung des Edison-Jobs für den Zap-Scanner kommt es gelegentlich vor, dass der Job beendet wird, obwohl der Camunda Task nicht beendet wird und auch keine Fehler ersichtlich ist. Dies ist zwar nicht kritisch, weil einer der nachfolgenden Jobs den Task erneut auführen wird. Aber dies verzögert die Abarbeitung des Tasks. Außerdem sollte dieses Verhalten nicht auftreten bzw. ist es nicht nachvollziehbar wie dieses Verhalten zustande kommt. 
+
+Daher soll das Problem analysiert und nach Möglichkeit verhindert werden. 
+
+
+
+Anmerkung:
+
+Eine Vermutung ist, dass das Verhalten mit der Expiration Time der Task zusammenhängt."		Task	secureCodeBox	29/Jul/16 11:34 AM		secureBoxZap				students																																																															

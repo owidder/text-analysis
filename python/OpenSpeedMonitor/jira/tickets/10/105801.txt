@@ -1,0 +1,200 @@
+Nach der Migration von 5.3 auf 5.4 lässt sich der Suchindex nicht aufbauen	"Es kommt zu einem Fehler ""java.lang.IllegalStateException: Could not get property value"" (siehe ProblemReport).
+
+
+
+Vorgehen gemäß 
+
+
+
+Could you please check following points:
+
+1.	Go into the menue ""Administration"" - ""Configuration"" and click on the button ""Clear Cache"" 
+
+2.	On the path ""[TOMCAT7]\work\Catalina\localhost\"" clear the iteraplan instance folder 
+
+3.	Clear the the index path, which was defined in the setup of iteraplan 
+
+4.	As last step, create the index again 
+
+
+
+Brachte keine Verbesserung. Habe iteraplan und catalina Log angehängt.
+
+
+
+Mit freundlichem Gruß
+
+
+
+Thomas Liskow"		Fault	iteraplan Support	15/Dec/16 8:27 AM	24/Feb/17 8:20 AM														"15/Dec/16 8:27 AM;thomas.liskow@coface.com;
+
+[^ProblemReport_2016-12-15_081750.zip] _(9 kB)_
+
+[^logs.zip] _(15 kB)_"	"19/Dec/16 11:13 AM;cst;Sehr geehrter Herr Liskow,
+
+habe den Vorgang an unsere Entwickler zu weiteren Prüfung gegeben.
+Bei Antwort, werde ich Sie umgehend informieren.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"19/Dec/16 11:39 AM;thomas.liskow@coface.com;Sehr geehrter Herr Stangl,
+
+vielen Dank für Ihre Information. Ich erwarte dann Ihre Antwort.
+
+Mit freundlichem Gruß,
+Thomas Liskow"	"22/Dec/16 10:15 AM;cst;Guten Morgen Herr Liskow,
+
+wenn das Problem mit der History Migration gelöst wurde, den Vorgang 
+zur Index Erstellung prüfen. Wir gehen davon aus, das die Probleme miteinander zusammen hängen. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"04/Jan/17 5:12 PM;fka;Guten Tag Herr Liskow,
+
+das Problem mit der Indexerstellung konnten wir bisher nicht nachstellen. Bei uns tritt es - auch wenn wir Ihren DB Dump nutzen - nicht auf, weder vor noch nach der History-Migration. Die Fehlermeldung aus dem Problemreport hilft uns leider auch nicht weiter.
+
+Geben Sie uns bitte Bescheid, ob nach der History Migration das Problem bei Ihnen weiterhin besteht. Wir werden Anfang kommender Woche festlegen, welche weiteren Analyseschritte sinnvoll sind.
+
+Tut mir leid, dass ich aktuell keine besseren Neuigkeiten zu dem Problem habe.
+
+Mit besten Grüßen
+Fabian Kainzinger"	"13/Jan/17 8:27 AM;thomas.liskow@coface.com;Hallo Herr Kainzinger,
+
+mit den neuen Tool und Bereinigungsskript konnte das Problem der History-Migration gelöst werden. Leider lässt sich der Suchindex immer noch nicht aufbauen. Es kommt weiterhin der gleiche Fehler: Could not get property value
+
+Ich hänge nochmal den aktuellen Problemreport an.
+
+Viele Grüße,
+Thomas Liskow
+
+[^ProblemReport_2017-01-13_082635.zip] _(9 kB)_"	"13/Jan/17 12:53 PM;cst;Guten Morgen Herr Liskow,
+
+
+
+vielen Dank für Ihre Antwort.
+
+
+
+Wir haben, um den Fall besser prüfen zu können, eine Teil der Anwendung angepasst, die das LOG-Level bei der Index-Erstellung erhöht.
+
+Da wir mit den von Ihnen bereit gestellten Daten, das Problem nicht nachvollziehen können.
+
+
+
+[^indexPatch.zip]
+
+
+
+Würden Sie bitte folgende Schritte durchführen und die daraus erzeugten Log-Dateien uns zur Verfügung stellen:
+
+
+
+1.	Die ""iteraplan"" Anwendung herunterfahren
+
+2.     Ein Backup der Datei iteraplan-base-5.4.0.jar unter ""*ITERAPLAN*/WEB-INF/lib"" durchführen
+
+3.	Die Zip-Datei im ""*ITERAPLAN*/webapps/iteraplan""-Verzeichnis entpacken. Dabei sollte in ""WEB-INF/lib"" die Datei ""iteraplan-base-5.4.0.jar"" ersetzt werden
+
+4	In der Datei ""log4j.properties"" unter ""*ITERAPLAN*/WEB-INF/classes/"" folgende Zeile einfügen: log4j.logger.de.iteratec.iteraplan.model.BuildingBlock=DEBUG
+
+5.	Die ""iteraplan"" Anwendung starten
+
+6.	Einloggen und Suchindex erzeugen
+
+7.	Danach die erstellten Log-Dateien aus Ihrem LOG-Verzeichnis an das Ticket mit anhängen
+
+
+
+Mit diesen haben wir die Möglichkeit die Ursache des Verhaltens weiter zu prüfen.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support 
+
+
+
+
+
+"	"16/Jan/17 1:09 PM;thomas.liskow@coface.com;Hallo Herr Stangl,
+
+anhängend die gewünschten LogFiles.
+
+Mit freundlichem Gruß
+
+Thomas Liskow
+
+[^Iteraplan-all-logs-16-01-2017.zip] _(12 kB)_
+
+[^ProblemReport_2017-01-16_092124.zip] _(9 kB)_"	"16/Jan/17 1:59 PM;cst;Hallo Herr Liskow,
+
+vielen Dank für die Zusendung der Log-Dateien.
+
+Wir haben einen starken verdacht, woher das Problem mit Indexerstellung seine Ursache hat.
+Sie setzen eine Oracle Version 12c ein, wurde hier folgender Patch eingespielt:
+
+* Oracle 12c is only supported with the bug fix/patch No. 18430870 applied to the database. Without the patch iteraplan will not work correctly.
+We recommend to apply all patches available for Oracle 12c. With Oracle 12c there are defects similar to the one leading to the known problem with iteraplan, even if no specific iteraplan problems have been reported so far.
+
+Ohne den Patch, treten genau solche Fehlverhalten auf. Ein Problem mit den Daten schließen wir aus, wie auch ein Problem mit der Installation, da Ihre Daten  in der gleichen installieren Version keine Problem auftraten. 
+
+Für die Tests wurde ein aktuelles Oracle 12c installiert, wie auch die gleiche Tomcat und Java-Version.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"18/Jan/17 12:00 PM;thomas.liskow@coface.com;Hallo Herr Stangl,
+
+ich bekomme den Oracle Patch zu folgenden Daten:
+
+In UAT kommt er am 20-24 Februar 2017
+In PRO  im Februar 2017 NACH dem UAT PATCH
+
+Ich melde mich, wenn wir nach der Einspielung wieder testen konnten.
+
+Mit freundlichem Gruß
+
+Thomas Liskow
+"	"06/Feb/17 7:53 AM;cst;Sehr geehrter Herr Liskow,
+
+vielen Dank für Ihre Geduld. 
+
+Wenn Sie möchten können Sie folgenden Parameter deaktivieren und die Erzeugung des Indexes neu anstarten.
+
+[OPTIMIZER_ADAPTIVE_FEATURES|https://docs.oracle.com/database/121/REFRN/GUID-F5E53EFA-B395-4336-B046-1EE7AF12353B.htm#REFRN10344 ]
+
+Vorausgesetzt, Sie benötigen das Feature nicht für andere Produkte welche auf der Datenbank laufen. Für die Änderung der Einstellung, ist kein Oracle-Server neustart erforderlich. 
+Nach deaktivieren von diesem, funktioniert iteraplan wieder korrekt. Das wäre der Work an round für das Problem. 
+
+Nach einspielen des Patches von Oracle, könnte man anschließen diese Komponente wieder aktivieren. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+"	"20/Feb/17 8:25 AM;thomas.liskow@coface.com;Hallo Herr Stangl,
+
+wir haben die Lösung getestet, haben damit aber keinen Erfolg gehabt. Ich warte noch auf den von meinen franz. Kollegen in dieser Woche avisierten Patch und melde mich umgehend.
+
+Mit freundlichem Gruß
+
+Thomas Liskow"	"24/Feb/17 8:16 AM;thomas.liskow@coface.com;Hallo Herr Stangl,
+
+nach Einspielen des Patches und reboot von iteraplan funktioniert es jetzt mit dem Suchindexneuaufbau.
+Sie können den Incident schließen.
+
+Mit freundlichen Grüßen
+Thomas Liskow"	"24/Feb/17 8:20 AM;cst;Vielen Dank für Ihre Rückmeldung
+
+
+
+Ticket ist somit geschlossen. 
+
+
+
+Schönen Freitag noch, 
+
+
+
+Christoph Stangl - iteraplan Support"																																									

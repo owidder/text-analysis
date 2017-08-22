@@ -1,0 +1,2 @@
+Icons missing with mass update and interfaces	"See attached screenshot, the icons are missing.
+Maybe use the existing icon-[left|right] instead."		Bug	iteraplan PO	21/Aug/14 10:26 AM	29/Aug/14 9:59 AM																																																																				

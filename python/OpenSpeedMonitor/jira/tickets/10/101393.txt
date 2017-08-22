@@ -1,0 +1,57 @@
+Test Custom Installer	"Test all Custom Installer for
+
+
+
+* all customising-requirements included: https://iteraweb.iteratec.de/confluence/display/ITPL/iteraplan+Customizing
+
+* Open New Client
+
+* Create an empty Information System
+
+
+
+Installers to be tested:
+
+(/)  adidas (MYSQL)
+
+(/) BGHW (MYSQL)
+
+(/) BI (MYSQL)
+
+(/) -BKW- Bitte Customisation-Ordner im trunk löschen
+
+(/) -BKW-Test-  Bitte Customisation-Ordner im trunk löschen
+
+(/) BM (MYSQL)
+
+(/) BSH (MYSQL)
+
+(/) Electrabel (MYSQL)
+
+EON
+
+EON-Test-Env
+
+(/) Fielmann (Oracle) 
+
+(/) Fisp (Oracle)
+
+(/) HUK (Oracle) - Für 6.0 analysieren entfernte BBT tauchen im IC wieder auf 
+
+(/) Infineon-2 (Oracle) - Für 6.0 analysieren entfernte BBT tauchen im IC wieder auf 
+
+(/) Lhm (Oracle + LDAP)
+
+(/) Muc-Hyp (Oracle)
+
+(/) Schott (Oracle) 
+
+(/) SwissLife (MSQL) 	Historisierung aktiviert (On the interactive Client this option ""History enabled"" is not be set) - Information by mail 
+
+(/) Teambank (MSQL)
+
+(/) Tognum (RR Powersystem)(MSQL) 
+
+(/)  Visana (MSQL) Historisierung aktiviert (On the interactive Client this option ""History enabled"" is not be set) - Information by mail 
+
+(/) Zeiss (MSQL) Historisierung aktiviert (On the interactive Client this option ""History enabled"" is not be set) - Information by mail "		Task	iteraplan Speedbird	03/Nov/16 2:30 PM	04/Nov/16 3:40 PM																																																																				

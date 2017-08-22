@@ -1,0 +1,20 @@
+Wrapping of long names (incl. tooltip)	"*Summary:*
+Implement wrapping of all text boxes in diagram (incl. labels on axes and header) & legend and a tooltip with the full name for all textboxes
+
+*As-Is:*
+* Long textes are cut
+
+*To-Be:*
+* Long texts in the diagram and in the legend are wrapped up to 3 lines and afterwards cut (if they are longer than 3 lines).
+* Long texts are fully shown in the tooltip
+
+*Implementation Details:*
+* Use the Nested Cluster Diagram as blueprint
+* Use native GoJS-wrapping: http://gojs.net/latest/intro/textBlocks.html ( {{wrap: go.TextBlock.WrapDesiredSize}} )
+* Url: Nothing to save in URL
+* Please reuse/use the same code as in the portfolio diagram
+
+*UI:*
+* Toolarea: Nothing to do "		New Feature	iteraplan Speedbird	26/Aug/16 9:26 AM	09/Sep/16 1:47 PM														26/Aug/16 11:11 AM;msr;Ticket already discussed on 26th August	"09/Sep/16 1:47 PM;ants;Review done. https://iteraweb.iteratec.de/fisheye/cru/IP-30
+
+No comments."																																																					

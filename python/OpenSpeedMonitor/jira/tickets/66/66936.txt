@@ -1,0 +1,15 @@
+Additive import removes too many parent-child relations	"_Reproduce (with sample data):_
+
+# Export full Excel data
+
+# In Business Unit sheet, delete the row for ""Retail Cust.""
+
+# Delete sheets Business Mapping and BD-BU
+
+# Save and import the Excel file with additive strategy
+
+
+
+_Expected:_ no changes
+
+_Actual:_ The parent-child relation between ""Retail Cust."" and its former parent was removed."		Bug	iteraplan PO	15/Dec/15 1:51 PM	22/Dec/15 9:19 AM					import																																																															

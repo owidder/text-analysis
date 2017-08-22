@@ -1,0 +1,37 @@
+Anpassung Persistierung Results	Die Funktionalität für das Speichern von Results ist im iterSpeedProxyConfig-Plugin lokalisiert. Diese Funktionalität soll mit dem Eintreffen von xml-Results von Multi-Step-Jobs umgehen können.	10318	Technical task	OpenSpeedMonitor	28/May/13 4:57 PM	01/Aug/13 5:02 PM														"09/Jul/13 5:40 PM;jwerschmoeller;Rüdiger:
+Aufwand offen, Task begonnen evtl. bereits abgeschlossen. Muss getestet werden.
+
+Geschätzter Aufwand:
+1-2 PT"	"10/Jul/13 1:47 PM;mzeimer;Hierbei müssen wir noch beachten, ob wir die Einzelsteps wirklich, wie angedacht, als Einzelergebnisse ablegen können. Es muss zumindest eine Markierung eingeführt werden, über die zusammengehörige Einzelergebnisse gruppiert werden können, also diese der ursprünglichen Ausführung wieder zuzuordnen sind.
+Für die Umsetzung der Funktion an sich sollte die geschätzte Zeit reichen, aber dieses ist mehr eine Story als ein Task, weil die Randeffekte auf die Restsoftware nicht berücksichtigt sind. Es müssen sicher mehr Stellen angepasst werden um dann mit der ""neuen Fülle"" an Ergebnissen zu einem Job arbeiten zu können."	"10/Jul/13 3:11 PM;mzeimer;Skizze der an der Verarbeitung eines eintreffenden WptResults unmittelbar beteidigten Klassen
+!persistierungspfad-proxy.jpg!"	"23/Jul/13 5:17 PM;rhe;Änderung nach Auslesen eines Ergebnisses in der Datenbank:
+
+UPDATE `iteraspeedmonitor`.`job` SET `page_id`='1', `job_group_id`=1 WHERE `id`='1';
+
+Soll das so sein?"	"30/Jul/13 7:33 PM;rhe;Persistierung für die Testergebnisse ist abgeschlossen.
+
+Offen ist wie mit fehlerhaften Ergebnissen und den Runs in den JobResults umgegangen werden soll.
+
+In der System-Test-Konfiguration kommt es jedoch zu einer Exeption:
+
+Cannot invoke method getGroupType() on null object. Stacktrace follows:
+java.lang.NullPointerException: Cannot invoke method getGroupType() on null object
+	at de.iteratec.isj.JobService.getCsiJobGroupOf(JobService.groovy:125)
+	at de.iteratec.ispc.LocationAndResultPersisterService.persistNewMeasuredEvent(LocationAndResultPersisterService.groovy:366)
+	at de.iteratec.ispc.LocationAndResultPersisterService.getMeasuredEvent(LocationAndResultPersisterService.groovy:362)
+	at de.iteratec.ispc.LocationAndResultPersisterService.persistResultsOfOneTeststep(LocationAndResultPersisterService.groovy:202)
+	at de.iteratec.ispc.LocationAndResultPersisterService$_persistResultsForAllTeststeps_closure9.doCall(LocationAndResultPersisterService.groovy:179)
+	at de.iteratec.ispc.LocationAndResultPersisterService.persistResultsForAllTeststeps(LocationAndResultPersisterService.groovy:178)
+	at de.iteratec.ispc.LocationAndResultPersisterService.listenToResult(LocationAndResultPersisterService.groovy:94)
+	at de.iteratec.ispc.ProxyService$_fetchResult_closure2.doCall(ProxyService.groovy:115)
+	at de.iteratec.ispc.ProxyService.fetchResult(ProxyService.groovy:114)
+	at de.iteratec.ispc.WptProxyController.xmlResult(WptProxyController.groovy:83)
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:195)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)"	"01/Aug/13 1:42 PM;mzeimer;Zu ""Offen ist wie mit fehlerhaften Ergebnissen und den Runs in den JobResults umgegangen werden soll."":
+
+Ein Result das nicht im Status 200 (OK) (oder ""größer"") ist und das keine ""runs""-Angabe oder Job-Label-Angabe hat, wird nicht persistiert:
+Siehe:
+de.iteratec.ispc.ProxyService.fetchResult(WebPageTestServer, Map)"	01/Aug/13 2:43 PM;mzeimer;Zur NullPointerException oben: Behoben, im JobService fehlte eine Sicherheitsabfrage. Es ist möglich, dass ein Job noch keiner Gruppe zugeordnet ist.	01/Aug/13 5:02 PM;mzeimer;Persistierung läuft jetzt auch im Produktivbetrieb. Tests ergänzt. Die Dashboardanzeige zeigt keine Ergebnisse und hat bei weekly/shop Probleme mit den Tags, aber dies sind die Tickets: IT-5, IT-40 und IT-11																																															

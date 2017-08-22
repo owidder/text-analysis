@@ -1,0 +1,4 @@
+Plugins zusammenziehen	"Wir sollten alle Plugins außer vielleicht iteratecChart und iteratecJmx in die auflösen und alle Artefakte aus diesen Plugins in die app verlegen.
+
+Das würde die Arbeit stark vereinfachen (sowohl was die Dependency-Auflösung in Eclipse angeht, als auch was die git-repos angeht). 
+Das einzelne der Plugins in einem anderen Kontext einsetzbar sind ist eh unrealistisch. "		Improvement	OpenSpeedMonitor	21/Nov/13 11:29 PM	03/Dec/13 2:32 PM																																																																				

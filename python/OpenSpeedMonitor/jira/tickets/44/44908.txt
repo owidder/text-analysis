@@ -1,0 +1,26 @@
+New Diagram Report Type: Pie and Bar Charts	"Nach Vorbild anderer Grafiken soll zuerst mit der üblichen QueryForm die Datengrundlage an Bebauungselementen ausgewählt werden können.
+
+Dann sollen folgende Untertypen zur Verfügung gestellt werden:
+
+ * Balkendiagramm:
+   - Partitionierung nach einem der folgenden Kriterien:
+     + den zugewiesenen Werten einer Beziehung der Bebauungselemente
+     + den zugewiesenen Werten eines Merkmals der Bebauungselemente
+     + der Anzahl zugewiesener Werte einer Beziehung der Bebauungselemente (nur bei ""to many""-Beziehungen)
+     + der Anzahl zugewiesener Werte eines Merkmals der Bebauungselemente (nur bei Mehrfachzuordnungs-Merkmalen)
+     + allen Attributtypen der Bebauungselemente 
+   - Möglichkeiten für die Balken:
+     + Gesamtsumme (einfacher Balken)
+     + Summe nach zugewiesenen Werten eines (weiteren) Merkmals der Bebauungselemente (gestapelter Balken)
+     + Summe nach ""Attribut bzw. Beziehung gepflegt?"": ja/nein 
+ * Kuchendiagramm:
+   - Summe/Prozent nach Attributwerten eines Merkmales (nur Einfachzuordnungs-Merkmale)
+   - Summe/Prozent nach ""Attribut bzw. Beziehung gepflegt?"": ja/nein
+   - Summe/Prozent nach Anzahl zugewiesener Werte einer Beziehung/eines Merkmales (nur bei Mehrfachzuordnungs-Merkmalen bzw. ""to many""-Beziehungen) 
+
+Weitere Anforderungen:
+
+ * Ausgabe als SVG und den damit zusammenhängenden Formaten JPG, PNG, PDF
+ * Möglichkeit, mehrere Balken- und/oder Kuchendiagramme auf einer Seite zu platzieren und als eine Grafik auszugeben, sowie diese Konfiguration zu speichern/laden. 
+
+"		New Feature	iteraplan PO	28/Apr/11 3:19 PM	20/May/11 10:48 AM																																																																				

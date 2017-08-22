@@ -1,0 +1,3 @@
+Date intervals - Serverside	"Add intervals to metamodel resource (server)
+
+[~tam] will specify the description"	85416	Sub-task	iteraplan PO	08/Jun/16 4:00 PM	14/Jun/16 11:43 AM					date-intervals																																																															

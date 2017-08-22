@@ -1,0 +1,1 @@
+Wenn ein laufender Job abgebrochen wird, wird auf dem OSM eine Exception geworfen	Man kann jeden beliebigen Job der "Running" ist abbrechen. Grails versucht den View /job/cancelJobRun zu öffnen, welcher nicht existiert.		Bug	OpenSpeedMonitor	20/May/16 11:36 AM	23/May/16 1:16 PM																																																																				

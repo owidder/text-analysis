@@ -1,0 +1,5 @@
+Log building block deletions with name	"Log names of deleted building blocks.
+
+
+
+Extend logging in GenericBaseDAO to achieve this."		Improvement	iteraplan PO	10/Sep/15 1:11 PM	14/Sep/15 5:11 PM					logging									14/Sep/15 4:44 PM;dam;create new ticket Iteraplan-3916	14/Sep/15 5:11 PM;sfe;Changed resolution to fixed.																																																					

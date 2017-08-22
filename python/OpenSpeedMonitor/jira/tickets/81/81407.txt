@@ -1,0 +1,1 @@
+Set the tool area apart from surrounding elements	Add some sort of border or shadow to set the toolbar obviously apart from other surrounding elements.		Improvement	iteraplan PO	21/Apr/16 5:12 PM	27/Aug/16 11:27 AM																																																																				

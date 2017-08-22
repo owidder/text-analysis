@@ -1,0 +1,8 @@
+Import is missing uniqueness check for relationship types	"Example with iteraplan sample data:
+# Excel-Export data
+# Add to the Icr2IeAssociation sheet a relation between TC ""BS2000"" and IE ""IBM Host 1""
+# Add the same line a second time
+# Save and import this file
+=> Import progresses without errors past step 4, because we don't have a check for uniqueness of relationship type instances. In step 5 however we get an error page due to a database constraint violation.
+
+Solution: Add an according check to the ModelValidator or IteraplanModelValidator, whichever is more fitting, so this uniqueness violation is caught before the 5th step of the import."		Bug	iteraplan PO	10/Oct/13 10:43 AM	30/Dec/15 3:29 PM					import	relationshiptype	unique							10/Oct/13 10:45 AM;sfe;The same issue appears if you try to add a relationship type instance which relates two building blocks already related in the database.																																																						

@@ -1,0 +1,25 @@
+Add toolarea icon for "partially connected items"	"As part of ITERAPLAN-4177 an icon should be added to the toolarea.
+
+
+
+Configuration to see the missing icon:
+
+* Change column association -> Relation -> Connected Business Processes
+
+* Change row association -> Relation -> Connected Business Units 
+
+* The missing icon can be found here: Settings -> Icon should be placed in front of ""Show partially connected items""
+
+
+
+TODO:
+
+* Ask [~lme] to design the attached icon, looks similar to the following icon: app/images/glyphicons/glyphicons-424-git-create.png
+
+* Add the icon to the project
+
+* Add the path to toolarea item.
+
+
+
+A todo is already created. See app/js/lsd/lsdToolAreaViewModelBuilder.js (""TODO ITERAPLAN-4177: we need an icon for this entry"")"		Bug	iteraplan Quickfox	10/May/16 4:59 PM	09/Aug/16 12:49 PM														08/Aug/16 12:40 PM;mwe;Spoke to [~lme] and ordered the new icon. When the new icon is ready I add it to the code.	09/Aug/16 12:49 PM;mse;Review ok.																																																					

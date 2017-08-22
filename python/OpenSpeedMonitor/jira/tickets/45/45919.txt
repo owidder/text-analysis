@@ -1,0 +1,14 @@
+Timeseries: Decimal numbers can not be created.	"The customer U-100 has reported the following problem.
+He has tested the timeseries and has created an number attribute as timeseries. After this he has try to add the value 50,9 to this attribute and got an error message. Please see the attachment (Zeitreihe.png) for the error message.
+When I try to change the value again, I get the situation from the picture ""Fehlermeldung.png"".
+
+Concerns the German language setting. In the English version it works.
+"		Bug	iteraplan PO	24/Jul/13 1:51 PM	30/Jul/13 10:25 AM					timeseries									"24/Jul/13 2:06 PM;wfr;Spec: 
+accept decimal numbers for German local as in the error message, that is:
+ - optional minus sign
+ - 1 to 13 digits
+ - optional decimal comma
+ - and if with comma: 0 to 2 digits
+
+Note that at U-100 only the German locale is used. 
+Thus English or other locales are secondary in the scope of this ticket."	21/Aug/13 9:14 AM;psc;Reviewed with Stephan. Ticket can be closed.																																																					

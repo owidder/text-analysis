@@ -1,0 +1,15 @@
+Coloring by single value enumeration attributes	"*Summary*
+
+Color pie chart segments by the color of selected enum attribute values.
+
+One segment is for elements without values => undefined
+
+Multi value-attribute are not shown in the toolarea (=not able to select).
+
+
+
+Do not forget the colorpicker."	95425	Sub-task	iteraplan Speedbird	06/Sep/16 11:46 AM	11/Oct/16 6:19 PM														"05/Oct/16 2:47 PM;viol;[~msr], please, specify all requirements for coloring
+
+ToolArea: Do we need separate entry for ""Coloring"""	"06/Oct/16 10:07 AM;msr;* No toolarea entry for coloring
+
+* multi-value attributes are allowed"	10/Oct/16 9:35 AM;viol;Revisions: #4554, #4580	10/Oct/16 8:42 PM;viol;Review changes added on revision #4594	11/Oct/16 2:14 PM;viol;fixed in revision #4611																																																		

@@ -1,0 +1,21 @@
+Refactoring der Filtern nach Customer Journey Funktionalität in Charts	"Das sortieren/filtern der Violinen oder Balken (Stand 10.3.2017: im d3 pageAggregation chart im Frontend noch nicht wieder eingebaut) basiert auf den Daten die in den jeweiligen Controllern mit der Methode 
+
+{code:java}
+
+createFilterRules(...)
+
+{code}
+
+erzeugt werden. Da dies in beiden Controllern existiert wurde daraus der Service
+
+{code:java}
+
+FilteringAndSortingDataService.groovy
+
+{code}
+
+gebaut, der diese Funktionalität leistet.
+
+
+
+Nach dem Einbinden dieses Services wurden die Ladezeit extrem extrem langsam. Dies muss untersucht/behoben werden und der duplicate code anschließend entfernt werden durch einbinden des Services."		Task	OpenSpeedMonitor	10/Mar/17 10:37 AM																																																																					

@@ -1,0 +1,57 @@
+customer satisfaction lässt sich auf dem Ergebnis-Dashboard nicht mehr anzeigen	"Da kommt der folgende Stacktrace:
+
+
+
+{code}
+
+java.lang.IllegalArgumentException: The EventResult-attribute 'customerSatisfactionInPercent' doesn't exist
+
+
+
+	at de.iteratec.osm.result.ResultCsiAggregationService.getEventResultAttributeNameFromMeasurand(ResultCsiAggregationService.groovy:244)
+
+
+
+	at de.iteratec.osm.result.EventResultDashboardService$_getEventResultDashboardHighchartGraphs_closure7.doCall(EventResultDashboardService.groovy:174)
+
+
+
+	at de.iteratec.osm.result.EventResultDashboardService.getEventResultDashboardHighchartGraphs(EventResultDashboardService.groovy:173)
+
+
+
+	at de.iteratec.osm.result.EventResultDashboardController.fillWithCsiAggregationData(EventResultDashboardController.groovy:307)
+
+
+
+	at de.iteratec.osm.result.EventResultDashboardController.showAll(EventResultDashboardController.groovy:165)
+
+
+
+	at grails.plugin.springsecurity.web.filter.GrailsAnonymousAuthenticationFilter.doFilter(GrailsAnonymousAuthenticationFilter.java:53)
+
+
+
+	at grails.plugin.springsecurity.web.authentication.RequestHolderAuthenticationFilter.doFilter(RequestHolderAuthenticationFilter.java:53)
+
+
+
+	at grails.plugin.springsecurity.web.authentication.logout.MutableLogoutFilter.doFilter(MutableLogoutFilter.java:62)
+
+
+
+	at com.googlecode.psiprobe.Tomcat70AgentValve.invoke(Tomcat70AgentValve.java:38)
+
+
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+
+
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+
+
+
+	at java.lang.Thread.run(Thread.java:745)
+
+{code}"		Bug	OpenSpeedMonitor	17/Feb/16 10:24 PM	22/Feb/16 11:23 AM																																																																				

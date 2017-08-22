@@ -1,0 +1,10 @@
+Space in "add relationship" must show all candidates	"When the user searches for elements add to a list of connected elements, he must have a way to see the full list of all candidates.
+Candidates are all elements not yet connected.
+
+As-is: the user can enter a search string, and the system shows a list of all matching elements.
+
+To-be: when the user enters a space character, the system shows the full list.
+
+Note: as the search string should be trimmed in any case, the trimmed space is the empty string, which is ""part of"" any element name. 
+
+"	47009	Sub-task	iteraplan PO	29/Sep/14 1:16 PM	09/Jun/15 5:05 PM																																																																				

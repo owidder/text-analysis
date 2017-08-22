@@ -1,0 +1,27 @@
+Als Productowner möchte ich das Springboot Cloud Consul Framework nutzen können	"Integration des SpringBoot Cloud Consul Frameworks für die dezentrale Verwaltung von Application.Properties als Consul Key/Values.
+
+
+
+Relevant für alle SpringBoot basierten µServices wie nmap, sqlmap, sslyze,zap,...
+
+
+
+http://projects.spring.io/spring-cloud/ und davei insbsondere:
+
+http://cloud.spring.io/spring-cloud-consul/ (siehe ""_Distributed Configuration with Consul_"")
+
+
+
+Consul läuft bei der secureBox unter allen Umgebungen unter Port: 8500
+
+* localhost:8500 (lokal / ci )
+
+* consul:8500 (docker intern)
+
+* http://192.168.99.100:8500/ (docker ip)
+
+
+
+Erstmal ignorieren:
+
+* -Service Discovery with Consul-"		Story	secureCodeBox	11/Jul/16 1:00 AM						students																																																															

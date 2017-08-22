@@ -1,0 +1,3 @@
+Check for permissions when importing landscape data using the Excel Importer	"In the current version of the Excel Importer it's not check if an user has permissions (functional and edit as well) for BBEs. As a result he/she can import new data into BBE for which he/she has no permissions.
+
+Maybe it would be good to perform a check, if the user has permissions for BBEs and then import the new data."		Improvement	iteraplan PO	21/Oct/11 10:37 AM	04/Nov/11 11:39 AM																																																																				

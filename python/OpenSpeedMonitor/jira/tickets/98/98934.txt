@@ -1,0 +1,25 @@
+Fehler handling beim fetchen der Results	"Passiert beim Fetchen ein Fehler wird aktuell an verschiedenen Stellen geloggt, was schief gelaufen ist. Das ist unübersichtlich und es fehlen auch einige Fälle. Deswegen wollen wir nun selbstgeschriebene Exceptions an den entsprechenden Stellen werfen und zentral an einer Stelle mit diesen umgehen. Mögliche Fehler sind:
+
+- Osm nicht erreichbar
+
+- Osm kennt das Mapping nicht
+
+- Osm hat das Mapping nicht
+
+
+
+- Wpt ist nicht erreichbar
+
+- Wpt kennt die TestId nicht
+
+- Im Result fehlen einzelne Werte
+
+- Wpt Test hat den Status cancelled
+
+- WptResult hat keine Steps
+
+- Result existiert bereits
+
+
+
+"		Improvement	OpenSpeedMonitor	12/Oct/16 2:34 PM	01/Nov/16 8:41 AM																																																																				

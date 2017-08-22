@@ -1,0 +1,1 @@
+ensure line-coverage in lsdToolAreaViewModelBuilder.js with unit tests		65042	Sub-task	iteraplan PO	08/Dec/15 9:13 AM	15/Dec/15 1:12 PM					LSD	Test																																																														

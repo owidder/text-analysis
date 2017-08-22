@@ -1,0 +1,17 @@
+Jobtabelle erweitern	"# Buttons für aktivieren/.../ausführen in eigene Zeile
+# Filter: Zusatzauswahl, um nur eben geänderte Jobs anzuzeigen oder nur mit einem Haken markierte Jobs anzuzeigen. Die eingeschränkte Liste kann dann wiederum durch die Filterbox weiter reduziert werden.
+# Jobtabelle sortierbar machen
+# Oberen Bereich der Seite inkl. die Spaltenüberschriften der Tabelle beim Scrollen fest lassen und nur den Tabelleninhalt scrollen (falls möglich Bootstrap-Standardfunktionalität verwenden, sonst z.B. http://www.novasoftware.com/download/jquery_fixedtable/jquery_fixedtable.aspx)
+# Spalte ""Job / Skript""
+## Überschrift  analog formatieren zu Tabelleneinträgen (Job fett und in eigener Zeile)
+## Pending-Status bei laufenden Jobs anzeigen, unabhängig davon, ob diese zeitgesteuert oder manuell gestartet wurden.
+## Bei laufenden Jobs die Anzeige ""nächste Ausführung"" evtl. anpassen, um verwirrende Anzeigen zu vermeiden.
+# Spalte ""Aktiv / nächste Ausführung""
+## Spalte nur ""nächste Ausführung"" nennen
+## Zusätzlich zu ""nächste Ausführung"" noch die Ausführungsfrequenz pro Job angeben.
+# Spalte ""Runs"": Ist ""Repeated View"" gesetzt, bei diesem Job hinter der Run-Zahl ein ""R"" anzeigen
+# Mehrfachausführung visualisieren und Code dafür fit machen"		Task	OpenSpeedMonitor	05/Feb/14 4:02 PM	20/Feb/14 9:50 AM														"11/Feb/14 4:43 PM;drieger;1, 2, 3, 5abc, 6ab, 7, 8 implementiert
+
+Zu 6b könnte http://shawnchin.github.io/jquery-cron/ interessant sein.
+
+4 mit https://github.com/oma/table-fixed-header implementiert. Tabellenüberschriften bleiben fest, Filterbuttons nicht"																																																						

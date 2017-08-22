@@ -1,0 +1,6 @@
+Clarify documentation on how REST and Import permissions work	"REST permission allows access to all REST api features, including import and export, independently from Import permission. (see ITERAPLAN-2046)
+Read permissions for building block types still have effect when accessing the model or metamodel by REST.
+
+This should be part of the user documentation."		Task	iteraplan PO	25/Oct/13 10:43 AM	25/Oct/13 11:39 AM					documentation	REST								25/Oct/13 10:55 AM;sfe;Added to the descriptions of REST and import permissions in the online user docu: https://www.iteraplan.de/wiki/display/upcomingIteraplan/Functional+permissions	25/Oct/13 11:03 AM;sfe;Added the sentence "Read permissions for building block types, however, will affect the result of REST queries." to the main page of the REST API docu in the user guide: https://www.iteraplan.de/wiki/display/upcomingIteraplan/REST+API	25/Oct/13 11:39 AM;svo;Looks fine	"29/Oct/13 6:11 PM;psc;Wolfgang refactored the respective pages in the course of documentation finalization. I reviewed the new information regarding REST and permissions. Solution accepted.
+
+Ticket will be closed."																																																			

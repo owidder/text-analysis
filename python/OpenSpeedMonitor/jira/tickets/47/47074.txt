@@ -1,0 +1,8 @@
+Test REST interface	"Test sheets in {{doc/test/REST}}.
+
+* Install iteraplan using one of the not yet or lesser tested configurations in the installer test sheet
+* Perform the testcases from the test sheets and attach the results to this ticket"	47060	Sub-task	iteraplan PO	17/Oct/14 2:14 PM	22/Oct/14 4:52 PM														"22/Oct/14 1:52 PM;isc;Mistakes:
+ITERAPLAN-2773"	"22/Oct/14 4:50 PM;sfe;Edit: nevermind, I overlooked the comment referring to ITERAPLAN-2773
+----
+original comment:
+In TC6 step 6 of REST.xlsx, the result is reported as ""ok"", but the ""actual"" field contains the last line ""Information Systems added: 2"" which doesn't seem to agree with the test case (where one additional IS was inserted into the xls file)."																																																					

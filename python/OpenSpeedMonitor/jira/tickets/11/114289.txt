@@ -1,0 +1,19 @@
+OSM DA nutzt volle OSM URL zur OSM Instanz identifizierung	"Um eine OSM Instanz zu identifizieren (z.B. beim Vergleich für den API Key)
+
+wird immer die komplette OSM Url inklusive Protokol verwendet.
+
+
+
+Es sollte nur der Hostname zum identifizieren verwendet werden.
+
+
+
+Außerdem wird an schrecklich vielen Stellen sichergestellt, dass die OSM URL mit einem Slash endet:
+
+
+
+def osmUrl = apiKeyOsmTupel.osmUrl.endsWith(""/"") ? apiKeyOsmTupel.osmUrl : apiKeyOsmTupel.osmUrl + ""/""
+
+
+
+Das ganze sollte sauber an einer Stelle (z.B. in nem Service) gemacht werden in dem einfach nur der Hostname extrahiert und für den Vergleich genutzt werden."		Bug	OpenSpeedMonitor	08/Mar/17 4:03 PM																																																																					

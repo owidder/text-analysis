@@ -1,0 +1,9 @@
+Indicator to show landing position of drag&drop	"*Summary:*
+
+Create an Indicator (e.g. red marker) to show landing position of drag&drop in the Classic Cluster Diagram
+
+
+
+*Use Case:*
+
+* If you drag & drop a row in the Classic Cluster Diagram, a red marker at the left side of the page should indicate the new position after re-ordering"		New Feature	iteraplan PO	07/Oct/16 2:51 PM																																																																					

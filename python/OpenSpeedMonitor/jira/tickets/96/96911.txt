@@ -1,0 +1,7 @@
+RELEASE: Refactor header	"* Remove breadrumbs (including code)
+
+* In list view remove the buttons ""Show ... in ... diagram""
+
+* Position the language button to the right (left of ""To Classic Client"" button)
+
+* Restyle all buttons to Material Design style"		Improvement	iteraplan Quickfox	22/Sep/16 9:58 AM	13/Oct/16 5:46 PM														04/Oct/16 4:23 PM;mwe;Von [~fka] wurde das Design und der Style abgenommen.	13/Oct/16 1:13 PM;pma;Please delete the variable  $scope.globalActions in js/common/commonHeader/commonHeaderController.js as it is not used anymore	13/Oct/16 5:46 PM;mwe;I removed the globalActions array.																																																				

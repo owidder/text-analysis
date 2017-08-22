@@ -1,0 +1,3 @@
+Inaktive Jobs bei Redirect zu Jobtabelle berücksichtigen	"Wird ein Job neu gespeichert oder aktualisiert und ist nicht auf aktiv gesetzt, wird auf die Jobtabelle umgeleitet und der Job nicht grün hervorgehoben da inaktive Jobs standardmäßig nicht angezeigt werden.
+
+Es muss überlegt werden, was in diesem Fall auf der Jobliste angezeigt werden soll. "		Task	OpenSpeedMonitor	19/Mar/14 4:18 PM	21/Mar/14 3:14 PM																																																																				

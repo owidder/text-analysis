@@ -1,0 +1,25 @@
+Creating Interfaces with Transport over REST or Plugin or Import causes fake dummies	"_Reproduce (with sample data):_
+
+# Download Excel data from Export/Import page in iteraplan
+
+# Edit Excel and add a new Interface with transported Business Object:
+
+## Add new line in Interface sheet with a name ""New Interface"" and an arbitrary direction
+
+## Add new line in Information Flow sheet referencing ""New Interface"" and selecting two arbitrary Information Systems and an arbitrary Business Object
+
+# Import the Excel file
+
+# Download Excel data again
+
+
+
+_Expected:_ A new Interface with one Information Flow connecting the above selected Information Systems and transporting the selected Business Object
+
+
+
+_Actual:_ Two Information Flows attached to the newly created Interface, one of them a dummy flow (with negative ID and no Business Object).
+
+
+
+The issue seems to be with the continuous elastic update, as the database does not contain a ""dummy"" transport, and on reloading the elastic model, everything seems to be fine again."		Bug	iteraplan Thunderduck	11/Nov/16 10:27 AM	12/Dec/16 10:51 AM																																																																				

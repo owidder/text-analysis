@@ -1,0 +1,9 @@
+Sort cell values of multiple value columns	"multiple values in a single cell must be sorted ascending, 
+
+for example: 1, 14, 26,
+
+not: 14, 1, 26
+
+
+
+multiple values within one cell of type enum should be sorted by enum rank, and then (as text) joined with comma-space."		Improvement	iteraplan PO	25/May/16 4:30 PM																																																																					

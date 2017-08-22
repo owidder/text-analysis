@@ -1,0 +1,43 @@
+"Save" button is active, when insert more than 255 characters to "Edit" field	"h4. Problem Description:
+
+
+
+""Save"" button is active, when insert more than 255 characters to ""Edit"" field on the Single Element View.
+
+h4. Reproduction Steps:
+
+ * Open application and navigate to Data>Information Systems
+
+
+
+ * Open the Single Element View for ""DSS""
+
+ * Mouse over ""DSS"" and click with the left mouse key on the ""Pencil""-Symbol to open the edit function
+
+ * Insert more than 255 characters to ""Edit"" field
+
+
+
+h4. Observed Results:
+
+
+
+The underline and the counter for the maximum characters is red. The counter shows ""###/255"" and the ""Save"" button (✓) is active.
+
+h4. Expected Results:
+
+
+
+The underline and the counter for the maximum characters is red. The counter shows ""###/255"" and the ""Save"" button (✓) is inactive.
+
+h4. Note:
+
+ - Used Firefox with #313 build
+
+
+
+{color:red}UPDATE: {color} General message: ""The Value is not valid and could not be safed"" / ""Der Wert ist nicht gültig und konnte nicht gespeichert werden""
+
+"		Bug	iteraplan Speedbird	18/May/17 1:30 PM	29/Jun/17 4:10 PM					attribute									23/May/17 5:12 PM;fka;Also reproducible with Chrome	"14/Jun/17 8:31 AM;naba;For Attributes the following error is shown in this case:""Name may not be empty""
+
+!error_msg.png|width=335,height=72,thumbnail!"	29/Jun/17 4:10 PM;mash;Review is done																																																				

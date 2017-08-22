@@ -1,0 +1,9 @@
+Ersten Oberflächentest schreiben	"Wir haben schon länger vor Oberflächentests mit [geb|http://www.gebish.org] zu implementieren. Wir wollen jetzt damit starten das [geb-Plugin für Grails 3|https://github.com/grails3-plugins/geb] zu installieren und einen ersten Test zu schreiben.
+
+
+
+[Hier|https://github.com/grails/grails3-functional-tests/tree/master/app1/src/integration-test/groovy/functionaltests] findet man Beispiel-Tests aus Grails 3 core
+
+
+
+Als Beispiel könnten wir eine der Momentan problematischen CRUD-Oberflächen nehmen und testen, ob es eine Fehlermeldung gibt bei einem Validierungsfehler. "		Task	OpenSpeedMonitor	18/May/16 6:18 PM	23/Jun/16 4:25 PM														23/May/16 4:43 PM;bka;vgl. IT-371 und IT-815																																																						

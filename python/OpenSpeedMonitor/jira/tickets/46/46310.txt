@@ -1,0 +1,11 @@
+Invalid timestamp calculation in history init script for Oracle	"The timestamp calculation of the initial revision in the history init script for Oracle is (or can be) wrong. Due to this fact the initial timestamp may be greater (means: newer) than the following revisions from changes in the application (see screenshot).
+
+The calculation takes place in line 71 of ""iteraplan_3.2_initialize_history_oracle.sql"":
+{code}
+SELECT (sysdate - to_date('01-JAN-1970','DD-MON-YYYY')) * (86400000) as dt FROM dual
+{code}
+
+(i) Hibernate Envers uses ""System.currentTimeMillis()"" for the timestamps.
+
+(i) The calculation in the other scripts for MySQL and MS SQL Server returns the same correct value for the milliseconds since 1970/1/1.
+"		Bug	iteraplan PO	05/Nov/13 4:59 PM	19/Jan/16 11:25 AM					history	sql																																																														

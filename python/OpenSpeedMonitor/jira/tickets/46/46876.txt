@@ -1,0 +1,75 @@
+Nesting innner box (1 level)	"To the inner boxes of Nesting Cluster Diagram, add nesting inner boxes for connected elements. Make this an option in the context menu of the inner boxes.
+
+Initially the nested cluster diagram has 
+* outer boxes for all Information System Domains or Business Objects
+* inner boxes for all Information Systems connect to the element of the outer box,
+* inner elements (ISs) are filtered
+
+With the option nesting inner boxes, the NCD has
+* the same elements (ISDs or BOs) and therefore the same outer boxes
+* the same elements (ISs) for the inner boxes
+* the same grouping of inner in outer boxes
+* and additionally nesting inner boxes, for all elements connected to the element of the ""outer"" or ""main"" inner box.
+
+Note that the nesting is only one level deep. Together with the outer boxes, there are only three levels of boxes:
+outer containing main inner containing nesting inner.
+This is different from the existing iteraplan implementation, where nesting inner means multiple level of inner-in-inner boxes.
+
+There are several different connections of a given IS element to other (connected) elements.
+In the JSON structure, they have the following field names
+* children
+* parent
+* predecessors
+* successors
+* baseComponents
+* parentComponents
+
+All of the fields above have the same logical and JSON structure: array of objects with ID, name, URI, array can be emtpy.
+In addition, the parent field can have at most one element logically, but we do not have to handle this case in a special way..
+
+Add a group of actions in the context menu of a inner element:
+* Show children as nested boxes
+* Show parent as nested boxes
+* Show predecessors as nested boxes
+* Show successors as nested boxes
+* Show used elements as nested boxes
+* Show using elements as nested boxes
+
+Note that the base/parent components are called used/using in the menu.
+
+When the user has selected one of the options, the action item must be inactive, and the menu has an additional item ""Hide nested boxes"".
+Selecting this item goes back to the inital state. 
+
+The new group should be the last, after the coloring or other items.
+
+The layout of the inner boxes is now as follows:
+
+The diagram displays only 6 nesting inner elements.
+So there are 8 cases for the layout of a main inner box:
+* empty: as before
+* 1 nested inner: clear
+* 2 nested inner: one row
+* 3 nested inner: two rows, second incomplete
+* 4 nested inner: two rows, complete
+* 5 nested inner: two rows, 3 and 2 elements
+* 6 nested inner: two rows, complete
+* 7 or more inner: two rows, last element (bottom right) has text: ""2 more"" or ""3 more"" or ...
+
+Note that the case ""1 more"" cannot happen, because 6 elements are all displayed.
+
+With this layout of nesting inner in main inner boxes, we have different sizes of main inner boxes:
+* empty
+* inner 1x1 (one row, one element)
+* inner 1x2  
+* inner 2x2
+* inner 2x3
+
+These main inner boxes should be layed in the outer box in the same way as the outer boxes are layed out in the diagram:
+in a grid from left to right in rows, and from top to bottom.
+boxes in a row are aligned at the top, rows are left aligned.
+
+Transition: the elements must disappear if the ""Hide nested inner"" action is selected.
+No transition for appearing, because this looks to complicated for me at the moment.
+Only here as an idea for a later follow up ticket.
+
+"		New Feature	iteraplan PO	20/Aug/14 10:10 AM	29/Sep/14 10:09 AM														21/Aug/14 10:44 AM;sepr;Est. 2.5 PD	29/Sep/14 10:09 AM;fka;Used / Using currently not yet working																																																					

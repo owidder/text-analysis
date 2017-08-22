@@ -1,0 +1,3 @@
+Edit Enum			New Feature	iteraplan Thunderduck	03/Nov/16 11:31 AM	07/Dec/16 9:48 AM														"05/Dec/16 10:57 AM;ach;still have problems with grouped columns
+
+the same problem as for business mappings, Interfaces. Need further refactoring"																																																						

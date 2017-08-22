@@ -1,0 +1,1 @@
+Konfigurationsoberfläche für die Zap bezogene Authentifizierung ergänzen.		75552	Sub-task	secureCodeBox	29/Mar/16 5:35 PM	29/Apr/16 5:43 PM																																																																				

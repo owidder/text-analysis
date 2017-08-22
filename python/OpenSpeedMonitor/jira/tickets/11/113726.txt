@@ -1,0 +1,87 @@
+Merkmal "Zahl" ohne Nachkommastellen	"Hallo,
+
+
+
+ich möchte
+
+jedem Informationssystem ein eindeutiges Merkmal „App ID“ zuweisen. Die ID soll
+
+eine natürliche Zahl ohne Nachkommastellen sein.
+
+
+
+ 
+
+
+
+Wenn ich
+
+jetzt ein neues Merkmal „App ID“ vom Typ „Zahl“ anlege und dann einem
+
+Informationssystem die „App ID“ „1“ zuweise, wird mir die App ID in jeder Liste
+
+als „1.00“, also mit zwei Nachkommastellen angezeigt.
+
+
+
+ 
+
+
+
+Wie erreiche
+
+ich, dass nur „1“ angezeigt wird und keine Nachkommastellen?
+
+
+
+"		Technical question	iteraplan Support	03/Mar/17 11:11 AM	09/Mar/17 12:57 PM														"03/Mar/17 11:42 AM;cst;Guten Tag Herr Berger,
+
+vielen Dank für Ihre Anfrage.
+
+In dem Merkmal-Zahl können die Nachkommastellen nicht deaktiviert werden.
+
+Wenn Sie nur die ID´s eintragen möchten ohne spätere Sortierung, kann das Freitext-Merkmal verwendet werden.
+Es ist auch möglich, hier das Aufzählungs-Merkmal zu verwenden, aber hier müssten alle Zahlen z.B. 1 bis 1000 hinterlegt werden. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"03/Mar/17 11:53 AM;ulrich.berger@wir.ch;Hallo Herr Stangl,
+es ist definitiv mein Wunsch für eine neue Version, die Nachkommastellen einstellen zu können.
+Ich hatte die App ID bereits als Freitext angelegt. Das Problem ist nun die Sortierung. iteraplan sortiert so: ""1"", ""10"", ""100"", ""2"", 20"", ""200"". Das ist sehr unpraktisch und verwirrt andere Benutzer von iteraplan.
+Wie sortiert iteraplan denn das Aufzählungs-Merkmal? 
+Viele Grüsse
+Ulrich Berger"	03/Mar/17 12:09 PM;ulrich.berger@wir.ch;Ich habe es gerade schon ausprobiert. Ein Aufzählungsmerkmal mit den natürlichen Zahlen gefüllt hilft auch nicht. Das wird in Tabellen auch wie Text sortiert ...	"06/Mar/17 9:59 AM;cst;Guten Morgen Herr Berger,
+
+vielen Dank für Ihre Antwort.
+
+Mit dem Aufzählungsmerkmal lässt sich die gewünschte Sortierung umsetzen. 
+Hier müssen Sie beachten, das die Sortierung schon bei der Anlage des Merkmals korrekt ist:
+
+
+
+!Screen1.PNG!
+
+Hier wird dann die Sortierung korrekt übernommen.
+
+!Screen2.PNG!
+
+Zusätzlich habe ich Ihr anliegen als Verbesserungsvorschlag mit aufgenommen. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"09/Mar/17 11:45 AM;ulrich.berger@wir.ch;Hallo Herr Stangl,
+
+tatsächlich muss man bei der Eingabe darauf achten, ""nicht sortieren"" auszuwählen, dann funktioniert es. Das ist etwas irreführend. Es ist schon sehr mühsam ein Aufzählunsmerkmal mit einer Auswahlmöglichkeit von 1-200, so viele Applikationen habe ich zu erfassen, einzugeben.
+
+Es wäre auch gut, einen neuen Merkmalstyp ""ID-Merkmal"" einzuführen. Dieser sollte sich analog der ID in einer Datenbank verhalten. Natürliche Zahlen> 0, jede ID darf nur einmal vergeben werden ...
+
+Viele Grüsse
+Ulrich Berger"	"09/Mar/17 12:57 PM;cst;Habe dies als Verbesserungsvorschlag mit aufgenommen.
+
+
+
+Vielen Dank,
+
+
+
+Christoph Stangl - iteraplan Support"																																																	

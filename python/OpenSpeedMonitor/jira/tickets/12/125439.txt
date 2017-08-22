@@ -1,0 +1,24 @@
+Zusätzliche Spalten einfügen können	"Wir wollen iteraplan im Notfall iteraplan verwenden, um mögliche Akteure finden zu können. Dadurch müsste rasch möglichst und einfach die Informationen in iteraplan gefunden werden.
+
+
+
+Wenn man in der Volltextsuche nach einem System sucht, hat man keine Möglichkeit zusätzliche Spalten hinzufügen zu können. Ausser man geht über die Auswertung und stellt sich den Filter zusammen. Da wir MA haben, die nicht täglich in iteraplan arbeiten, wird mehrheitlich die Suche über der Volltextsuche erledigt.
+
+
+
+Von daher unsere Frage, könnte es diese Möglichkeit in irgendeiner Form geben, dass man einfach zusätzliche Spalten hinzufügen könnte?"		Technical question	iteraplan Support	26/Jun/17 2:08 PM	16/Jul/17 7:00 AM														"27/Jun/17 9:40 AM;cst;Guten Morgen Herr Studer,
+
+vielen Dank für Ihre Anfrage.
+
+Im classic Client gibt es hierzu keine Möglichkeit Spalten in der Volltextsuche hinzufügen. Dies ist auch nicht in der Volltextsuche des interactiven Client möglich. In Version 6.0 kann man sehr umfangreich über die einzelnen Listen Suchen.
+
+!image-2017-06-27-09-31-26-775.png|thumbnail!
+
+Hier gibt es auch die Möglichkeit schnell die Spalten hinzuzufügen, oder diese zu entfernen sollte diese nicht benötigt werden.
+Danach kann man dies als globale Abfrage speichern, um diese wieder schnell aufrufen zu können. 
+
+Ich nehme dies als Verbesserungsvorschlag mit auf und lass dies von unserem Produktmanagement prüfen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"																																																						

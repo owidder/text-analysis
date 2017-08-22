@@ -1,0 +1,23 @@
+Phantom JS entfernen	"Für die ursprünglich angedachte Lösung mit PhantomJS wurden bereits Änderungen vorgenommen.
+
+ * Phantom JS Sourcen entfernen
+
+ * PhantomJSService entfernen
+
+ * REST-Konfiguration bereinigen"		Improvement	iteraplan Thunderduck	19/May/17 10:41 AM	31/May/17 10:42 AM														"31/May/17 9:10 AM;aan;There is still some phantomJS code in test:
+
+
+
+/iteraplan/src/java/tests/resources/applicatonContext (9 matches of ""phantom"" and they are connected to phantomJS)
+
+
+
+and
+
+
+
+/iteraplan/src/java/test/resources/de/iteratec/iteraplan/businesslogic/service/resources/imagecreation/sample.js
+
+
+
+In case they are connected to a test case, this test case can probably also be deleted."																																																						

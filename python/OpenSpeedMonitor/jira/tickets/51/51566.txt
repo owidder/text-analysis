@@ -1,0 +1,11 @@
+Refactoring Benutzerdefinierte Dashboards 	"{color:green}Funktionalität muss wieder hergestellt werden.{color}
+
+
+
+Diese Funktion muss überarbeitet werden:
+
+* Unsauberer Controller-Code (Hier wird kein Command-Objekt erzeugt)
+
+* Ein Domain-Objekt für Result- und CSI-Dashboards. Alle Attribute nullable, einige sind für Result-, einige für CSI-Dashboards
+
+{color:green}* AJAX-Route sinnvoll?{color}"		Improvement	OpenSpeedMonitor	22/Jul/15 3:50 PM	10/Nov/15 4:46 PM																																																																				

@@ -1,0 +1,35 @@
+Create a Testsheet for manual testing of Pie Chart Diagram	"Create a Testsheet for manual testing of Pie Chart Diagram.
+
+
+
+Use the Masterplan Diagram testsheet as template
+
+
+
+Show the result to [~cst]"		Task	iteraplan Speedbird	11/Oct/16 4:00 PM	17/Oct/16 4:35 PM														13/Oct/16 4:02 PM;vadm;Revision #4655: piechart-test-specification.xlsx	"14/Oct/16 9:21 AM;cst;Good Morning Vasyl,
+
+
+
+thanks for your help on creating the test sheets.
+
+Could you please add a additonal test case for:
+
+
+
+- Change colors for the coloring
+
+- And a test case for ""PDF"" and ""JPG"" 
+
+
+
+On this ""smaller"" diagram we coud check it all :-) 
+
+
+
+Greetings,
+
+
+
+Chris 
+
+"																																																					

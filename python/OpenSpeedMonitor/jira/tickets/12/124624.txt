@@ -1,0 +1,27 @@
+Remove iteraplan Classic Client	"This is only the super-ticket!
+
+
+
+Permanentely remove the iteraplan Classic Client.
+
+
+
+Consider the following:
+
+ * Also remove all now unneeded libraries. Update the 3rd party library overview and the list of used open source licenses.
+
+ * Also remove the audit logging function, see here: [https://doc.iteraplan.de/display/iteraplan55/Other+Configuration+Options+and+Notes]
+
+ * Don't forget to remove the template directory and functionality.
+
+ * Also remove the XMI interface, which is used for importing demo data. Implement this import via a new way, e.g. DB dump. Be aware that the demo data contains saved queries, whoch can't be imported via Excel, REST or similiar as of now. Also convert the currently present saved queries in the bank demo date set from classic client to interactive client saved queries.
+
+ * The saved query migration page will stay for now, it will be removed some time later. The migration functionality should therefore stay. Strip the migration page from header  (menu) and maybe add a (new) ""Back to iteraplan"" button, which links to the iteraplan Interactive Client Saved Query page.
+
+ * Remove the time series functionality completely, but keep the DB data tables
+
+ * Remove the object related permissions completely, including DB tables/entries. Put it in a prominent place in the release notes!
+
+
+
+ "		Epic	iteraplan Thunderduck	16/Jun/17 3:13 PM															21/Jun/17 9:42 AM;aan;Should we also have new "no permission" pages and so on?																																																						

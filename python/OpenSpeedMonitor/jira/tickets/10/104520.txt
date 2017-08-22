@@ -1,0 +1,235 @@
+Extend attribute filter to support hardcoded attributes	"Extend attribute filter to support hardcoded attributes (e.g. Last modification time, Description, Version). Currently they are not in ""/api/attributes"" and not translated properly.
+
+However, attribute filter works with them (even without translation).
+
+
+
+*Technical solution:*
+
+* Only adapt localisationLoader ""app/js/common/mmLocalizationLoader.js"""		Improvement	iteraplan Speedbird	02/Dec/16 11:39 AM	14/Dec/16 10:41 AM														"13/Dec/16 12:32 PM;ants;Added localized values of {{name}}, {{pluralName}} and {{description}} for the following system attributes:
+
+- {{lastModificationTime}}
+
+- {{lastModificationUser}}
+
+- {{name}}
+
+- {{description}}
+
+- {{id}}
+
+- {{position}}
+
+{color:red}Update:{color}
+
+- {{version}}
+
+- {{direction}}
+
+- {{typeOfStatus}}"	13/Dec/16 4:17 PM;dmkh;Review is done, still some attributes are not translated: https://iteraweb.iteratec.de/fisheye/cru/IP-222#general-comments	"13/Dec/16 8:23 PM;ants;We have three definitions of {{Direction}} in metamodel ({{/api/icmm}}):
+
+
+
+1. As Enumeration type:
+
+{code}
+
+  {
+
+    ""type"": ""EnumerationExpression"",
+
+    ""persistentName"": ""de.iteratec.iteraplan.model.Direction"",
+
+    ""name"": {
+
+      ""en"": ""Direction"",
+
+      ""de"": ""Richtung""
+
+    },
+
+    ""pluralName"": {
+
+      ""en"": ""Directions"",
+
+      ""de"": ""Richtungen""
+
+    },
+
+    ""description"": {
+
+      ""en"": ""Call or transport direction of Interfaces and Information Flows"",
+
+      ""de"": ""Aufruf- oder Transport-Richtung von Schnittstellen und Informationsflüssen""
+
+    },
+
+    ...
+
+  }
+
+{code}
+
+
+
+2. As feature (property) of {{InformationFlow}}:
+
+{code}
+
+  {
+
+    ""type"": ""RelationshipTypeExpression"",
+
+    ""persistentName"": ""InformationFlow"",
+
+    ...
+
+    ""features"": [
+
+      ...
+
+      {
+
+        ""type"": ""de.iteratec.iteraplan.model.Direction"",
+
+        ""persistentName"": ""direction"",
+
+        ""name"": {
+
+          ""en"": ""Direction"",
+
+          ""de"": ""Richtung""
+
+        },
+
+        ""pluralName"": {
+
+          ""en"": ""Directions"",
+
+          ""de"": ""Richtungen""
+
+        },
+
+        ""description"": {
+
+          ""en"": ""The Direction Business Objects are transported in"",
+
+          ""de"": ""Die Richtung, in welche Geschäftsobjekte transportiert werden""
+
+        },
+
+        ""mandatory"": true,
+
+        ""multiple"": false
+
+      },
+
+      ...
+
+    ]
+
+  },
+
+{code}
+
+
+
+3. As feature (property) of {{InformationSystemInterface}}:
+
+{code}
+
+  {
+
+    ""type"": ""SubstantialTypeExpression"",
+
+    ""persistentName"": ""InformationSystemInterface"",
+
+    ...
+
+    ""features"": [
+
+      ...
+
+      {
+
+        ""type"": ""de.iteratec.iteraplan.model.Direction"",
+
+        ""persistentName"": ""interfaceDirection"",
+
+        ""name"": {
+
+          ""en"": ""Interface Direction"",
+
+          ""de"": ""Schnittstellen-Richtung""
+
+        },
+
+        ""pluralName"": {
+
+          ""en"": ""Call or transport direction of the complete Interface"",
+
+          ""de"": ""Die Aufruf- oder Transport-Richtung für die gesamte Schnittstelle""
+
+        },
+
+        ""description"": {
+
+          ""en"": """",
+
+          ""de"": """"
+
+        },
+
+        ""mandatory"": true,
+
+        ""multiple"": false
+
+      },
+
+      ...
+
+    ]
+
+  },
+
+{code}
+
+
+
+Which one should be hardcoded in localization map?
+
+Currently in {{Ccd}} (in toolarea, legend and content titles) is used last definition as it's used as attribute only for that BB type (but it seems to come from REST with defect - empty {{description}} and wrong {{pluralName}})"	"13/Dec/16 8:32 PM;ants;By now, the following {{direction}} definition was added to localization map (as it is the most general):
+
+{code}
+
+                    {
+
+                        ""persistentName"": ""interfaceDirection"",
+
+                        ""name"": {
+
+                            ""en"": ""Direction"",
+
+                            ""de"": ""Richtung""
+
+                        },
+
+                        ""pluralName"": {
+
+                            ""en"": ""Directions"",
+
+                            ""de"": ""Richtungen""
+
+                        },
+
+                        ""description"": {
+
+                            ""en"": ""Call or transport direction of Interfaces and Information Flows"",
+
+                            ""de"": ""Aufruf- oder Transport-Richtung von Schnittstellen und Informationsflüssen""
+
+                        }
+
+                    },
+
+{code}"	14/Dec/16 10:41 AM;dmkh;Thanks, we just needed the general one for localisation.																																																		

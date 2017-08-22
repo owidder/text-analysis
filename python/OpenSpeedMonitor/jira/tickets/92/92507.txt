@@ -1,0 +1,7 @@
+DC-Linechart	"Aktuell werden im DC-Linechart zwei Kurven angezeigt.
+
+Die sehen jedoch genau gleich aus, nur ein wenig versetzt.
+
+
+
+Hier ist also zu prüfen, ob die Daten tatsächlich so sind (dann müsste einmal geschaut werden warum) oder ob die Daten falsch angezeigt werden."		Bug	OpenSpeedMonitor	05/Aug/16 8:31 AM	05/Aug/16 11:12 AM																																																																				

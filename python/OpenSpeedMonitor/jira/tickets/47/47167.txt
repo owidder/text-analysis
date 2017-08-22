@@ -1,0 +1,4 @@
+Prohibit deleting saved queries used in dashboard	"Saved query (for diagrams) that are used within a dashboard shouldn't be deletable. 
+
+For saved queries of type ""Spreadsheet reports"" such a mechanism is already implemented resulting in the following error message: ""The following errors occurred:
+The saved query could not be deleted because it is used within a dashboard configuration. Please delete the corresponding custom dashboard first."""		Improvement	iteraplan PO	12/Nov/14 3:26 PM						dashboard	savedquery							Build ID: Enterprise Edition Build-v3.4.0-r23995 (2014-10-31-07-47-37)																																																							

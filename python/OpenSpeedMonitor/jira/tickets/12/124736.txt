@@ -1,0 +1,37 @@
+Administration - Lower/Upper bound and Unit have broken layout when editing them	"h4.Problem Description:
+
+
+
+Administration - Lower/Upper bound and Unit have broken layout when editing them 
+
+
+
+h4.Reproduction Steps:
+
+ * Open application and navigate to ""Administration > Attributes"" page
+
+ * Open Single Element View for Numeric Attribute (e.g.Apportionment)
+
+ * Try to edit Lower/Upper bound or Unit settings
+
+
+
+h4.Observed Results:
+
+
+
+ Settings layout is broken. See attached screenshot.
+
+
+
+h4.Expected Results:
+
+
+
+ Settings positions shouldn't move anywhere during editing.
+
+
+
+h4.Note:
+
+ * Used #354 and dev in FF"		Bug	iteraplan Speedbird	19/Jun/17 1:19 PM	30/Jun/17 10:30 AM																																																																				

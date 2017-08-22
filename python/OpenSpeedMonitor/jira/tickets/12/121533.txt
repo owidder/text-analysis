@@ -1,0 +1,61 @@
+Exception beim Wechsel auf die Import/Export Seite	"UseCase:
+
+ * auf den Report Tab wechseln
+
+ * auf Export/Import klicken
+
+
+
+Im Backend tritt eine NullPointerException auf.
+
+
+
+Log:
+
+{code:java}
+
+INFORMATION: 2017-05-16 13:30:21        127.0.0.1       system  127.0.0.1       9002    GET     /iteraplan/api/administration/roles     -       200     43109
+
+-       127     http://localhost:9002   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36
+
+http://localhost:9002/
+
+Mai 16, 2017 1:31:24 PM org.restlet.resource.ServerResource doCatch
+
+WARNUNG: Exception or error caught in server resource
+
+Internal Server Error (500) - The server encountered an unexpected condition which prevented it from fulfilling the request
+
+        at org.restlet.resource.ServerResource.doHandle(ServerResource.java:540)
+
+        at org.restlet.resource.ServerResource.get(ServerResource.java:743)
+
+        at org.restlet.resource.ServerResource.doHandle(ServerResource.java:618)
+
+        at org.restlet.resource.ServerResource.doNegotiatedHandle(ServerResource.java:679)
+
+        at org.restlet.resource.ServerResource.doConditionalHandle(ServerResource.java:357)
+
+        at org.restlet.resource.ServerResource.handle(ServerResource.java:1014)
+
+
+
+...
+
+
+
+Caused by: java.lang.NullPointerException
+
+        at de.iteratec.iteraplan.businesslogic.exchange.elasticImport.ImportProcessManager.getStepStatus(ImportProcessManager.java:252)
+
+        at de.iteratec.iteraplan.presentation.rest.resource.data.DataResource$InteractiveImportResult.<init>(DataResource.java:271)
+
+        at de.iteratec.iteraplan.presentation.rest.resource.data.DataResource$InteractiveImportResult.<init>(DataResource.java:209)
+
+        at de.iteratec.iteraplan.presentation.rest.resource.data.DataResource.doInteractiveGetResource(DataResource.java:330)
+
+        at de.iteratec.iteraplan.presentation.rest.resource.data.DataResource.doGetResource(DataResource.java:76)
+
+        at de.iteratec.iteraplan.presentation.rest.resource.AResource.getResource(AResource.java:132)
+
+        at sun.reflect.GeneratedMethodAccessor400.invoke(Unknown Source){code}"		Bug	iteraplan PO	16/May/17 1:33 PM	05/Jun/17 7:09 PM														05/Jun/17 7:09 PM;fka;Works in current nightly build.																																																						

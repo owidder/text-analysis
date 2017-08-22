@@ -1,0 +1,15 @@
+Portfolio Diagram: EnumerationATs are displayed in reverse order if they are on X-Axis or Y-Axis	"Example: Consider an EnumAT with the values A, B and C and one with X, Y, Z.
+Now we generate two diagrams, swapping the axis on which the EnumATs are shown. The results will look somewhat like this:
+
+X
+Y
+Z
+     A     B     C
+
+A
+B
+C
+     X      Y     Z
+
+Apparently, the ordering of the Enumeration Values is reversed.
+One would expect that the value which is considered ""smallest"", i.e. closest to the origin when on one Axis should also be closest to the origin when on the other Axis."		Improvement	iteraplan PO	27/Aug/13 10:48 AM	30/Dec/15 3:17 PM					diagram																																																															

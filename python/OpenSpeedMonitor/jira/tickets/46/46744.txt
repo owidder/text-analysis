@@ -1,0 +1,13 @@
+Import strategy text change	"Mass update, Import/Export, Strategies, Info popup:
+
+Header:
+Two -> Three
+
+Overwrite: performs the operations create, update and delete on relations and objects
+
+Conservative: performs the operations create and update; deletes relations but does not delete objects
+
+Additive: performs the operations create and update in an additive way, does neither delete relations nor objects
+
+Also adjust the German text!
+"		Bug	iteraplan PO	18/Jul/14 11:18 AM	22/Jul/14 7:38 AM					strategy																																																															

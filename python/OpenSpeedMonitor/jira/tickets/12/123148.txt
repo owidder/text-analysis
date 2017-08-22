@@ -1,0 +1,21 @@
+Filter: empty relation filter could not be initialized from the URL	"*Reproduce:*
+
+* Open filter dialog
+
+* Add some empty relation
+
+* Apply filter
+
+* Reload the page
+
+
+
+*Actual:*
+
+Error ""An attribute or value does not exist anymore and was removed from the query."" is shown in the right-top corner. Relation filter is removed from filter.
+
+
+
+*Expected:*
+
+No errors. Relation filter is saved."		Bug	iteraplan PO	01/Jun/17 12:45 PM	11/Jun/17 1:48 PM														09/Jun/17 10:31 AM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-651																																																						

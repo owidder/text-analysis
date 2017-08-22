@@ -1,0 +1,14 @@
+Inserting explicit permissions for attribute groups fails for a new or an existing role	"When defining explicit permissions for an attribute group for a new or an existing role {{LazyInitException}} occurs.
+
+
+{noformat}
+Caused by: org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: de.iteratec.iteraplan.model.attribute.AttributeTypeGroup.permissionsRole, no session or session was closed
+        at de.iteratec.iteraplan.model.user.Role.addPermissionsAttrTypeGroupTwoWay(Role.java:216)
+        at de.iteratec.iteraplan.model.user.Role.addPermissionsAttrTypeGroups(Role.java:221)
+        at de.iteratec.iteraplan.presentation.dialog.Role.RoleComponentModel$PermissionAtgPermissionAttributeTypeGroupcm.setConnectedElements(RoleComponentModel.java:421)
+        at de.iteratec.iteraplan.presentation.dialog.Role.RoleComponentModel$PermissionAtgPermissionAttributeTypeGroupcm.setConnectedElements(RoleComponentModel.java:382)
+        at de.iteratec.iteraplan.presentation.dialog.common.model.ManyAssociationSetComponentModel.configure(ManyAssociationSetComponentModel.java:370)
+        at de.iteratec.iteraplan.presentation.dialog.Role.RoleComponentModel.configure(RoleComponentModel.java:178)
+        at de.iteratec.iteraplan.presentation.dialog.Role.RoleFrontendServiceImpl.saveNewComponentModel(RoleFrontendServiceImpl.java:152)
+        at de.iteratec.iteraplan.presentation.dialog.Role.RoleFrontendServiceImpl$$FastClassByCGLIB$$f8106fbb.invoke(<generated>)
+{noformat}"		Bug	iteraplan PO	29/Aug/11 3:44 PM	06/Sep/11 10:15 AM																																																																				

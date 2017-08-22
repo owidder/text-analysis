@@ -1,0 +1,75 @@
+Docker	"iteraplan Corporate Edition should be delivered as Docker Image to customers, in addition to the current way (WAR-File, installer).
+
+
+
+Things to do / to take into consideration:
+
+* Build-Pipeline im iteraplan Jenkins erstellen.
+
+* Wie gehen wir damit um, dass wir drei unterschiedliche DBs unterstützen? Für die wir die JDBC-Connectoren aus Lizenzrechten nicht mitliefern dürfen?
+
+* Wie konfigurieren Kunden generell die iteraplan-Instanz, bzw. setzen Werte im Config-File?
+
+* Wie upgraden Kunden von einer Version zur nächsten? Wie werden dabei Dateien übertragen (siehe den Upgrade Guide, z.B. Dateien im Graphics Reactor).
+
+* Wie ermöglichen wir SSO?
+
+* Wie liefern wir genau an die Kunden aus?
+
+* Welche Dokumentation stellen wir den Kunden-Admins zur Verfügung? 
+
+"		Epic	iteraplan PO	10/Oct/16 2:32 PM															"10/Oct/16 3:04 PM;fka;First thoughts from [~tst]:
+
+Ziel des automatischen Docker-Builds:
+
+ - ganz unabhängig von Deployments beim Kunden deployen wir regelmäßig für iteratec Mitarbeiter zu Test- und Demozwecken iteraplan-Instanzen. Ein Docker-Image mit einer spezifischen Version zu erstellen ist für uns dabei ein nicht unerheblicher Aufwand
+
+ - bei uns gehen zudem des öfteren Anfragen von internationalen Interessenten ein, wann wir ein funktionierendes, aktuelles iteraplan Lite zur Verfügung stellen. Das auf dem offiziellen Dockerhub scheint derzeit nicht zu funktionieren.
+
+
+
+Unterstützung für unterschiedliche DBs:
+
+ - per Default könnte der Docker-Container immer mit einer internen HSQL-DB starten (wie bisher)
+
+ - über Links zu anderen Datenbanken-Containern und mit kann ein Start-Script im iteraplan-Image unter angabe weiterer Umgebungsvariablen automatisch eine alternative Datenbank verwenden. Ebenfalls zu nicht-Docker-Instanzen
+
+- das Lizenzproblem kann man Lösen, indem der Kunde das entsprechene .jar-File auf seiner Festplatte bereitstellt und dieses in den Container hineingemountet wird
+
+- alternativ kann der Kunde auf Basis des iteraplan-Docker-Images sein eigenes Sub-Image mit Connector erstellen
+
+
+
+Wie konfigurieren Kunden iteraplan / Konfiguration von SSO:
+
+- im einfachsten Fall liegt die Konfiguration auf dem Dateisystem des Hosts und wird als Volume in den Container eingebunden. So kann diese auch außerhalb des Container editiert werden
+
+- die Docker-Best-Practice ist es, die Konfiguration direkt in ein Image zu verpacken. Ausgehend vom iteraplan-Basis-Image wird ein Sub-Image mit allen benötigten Konfigurationen und Assets erstellt. Lediglich sensible Daten werden von außen per Umgebungsvariablen oder HashiCorp Vault hereingereicht
+
+- sind die Kunden 'cool', haben sie ihre eigene Build-Pipeline um das jeweils aktuelle Docker-Image mit ihrer Konfiguration zu verheiraten. Alternativ kann auch iteratec kundenspezifische Images ausliefern, welche der Kunde dann 'auf Knopfdruck' bei sich deployen kann
+
+
+
+Wie liefern wir genau an Kunde aus?
+
+- Mittlerweile haben wir ein funktionierendes Artifactory Docker Repository. Dies ist mit dem iteratec LDAP-Server verknüpft, alternativ können auch lokale Nutzer und Gruppen angelegt werden. Zudem kann man in Artifactory beliebig viele Docker Repositories anlegen.
+
+- Die Kunden bekommen Zugangsdaten zu dem entsprechenden iteraplan Docker Repository und können sich mit dem Deploymentwerkzeug ihrer Wahl (plain Docker, Docker Compose, Ansible, Puppet, Chef, Kubernetes, OpenStack, OpenShift, ...) ihr iteraplan-Image in ihrer Version pullen
+
+- für Offline-Server kann man Docker-Images auch als tar-Datei 'save'n und an anderer Stelle wieder 'load'en
+
+
+
+Welche Ifos stellen wir Kunden-Admins zur Verfügung?
+
+- Über welche URI erreicht man das iteraplan Docker Image
+
+- Wie werden alternative Datenbanken angebunden
+
+- Wie werden die Daten persistiert (Datenbank sowie Volumes für Konfiguration und Logs)
+
+- Welche Ports sind im Container erreichbar und haben welche funktion
+
+- Wie werden Backups erstellt
+
+"																																																						

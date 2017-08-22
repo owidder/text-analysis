@@ -1,0 +1,3 @@
+Scan Tree des Scanners nach jedem Durchlauf bereinigen	"Momentan wächst der Scan Tree des Zap-Spiders stetig an, weil er sich alle Targets merkt. Dadurch können sich verschiedene Durchläufe überlappen, da der Scanner bei jedem Durchlauf auch die Targets der vorherigen Läufe berücksichtigt.
+
+Um diesen Fehler zu beseitigen, sollte der Zap-Scanner seinen Scan Tree nach jedem Durchlauf bereinigen."		Bug	secureCodeBox	29/Mar/16 10:05 AM	21/Apr/16 2:30 PM														21/Apr/16 2:30 PM;kkt;Dieser Bug wurde durch die Implementierung der Zap-Authentifizierung (SDO-182) gefixt.																																																						

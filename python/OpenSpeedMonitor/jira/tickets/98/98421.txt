@@ -1,0 +1,87 @@
+MONDAY: Show History	"*Summary:*
+
+Show the new history at the bottom of the single element view in the tabs ""All"" and in the tab ""History""
+
+
+
+*REST resource:* https://iteraweb.iteratec.de/jira/browse/IPTT-121
+
+
+
+*Process:*
+
+1. Check, if history is active by asking global angular service ""historyActiveService"" (at the moment developed by [~pma] ) 
+
+2. Only if history is active, send a GET-request to get details of the history while opening the Single Element View 
+
+2. Prepare JSON-data from this REST-interface
+
+3. Display the whole history at the bottom of the tab: ""All"" and in the tab ""History""
+
+
+
+*Implementation details:*
+
+* Show the whole history (no paging)
+
+* No translation
+
+* If history is disabled, do not show the tab ""History"" at all
+
+* Use the order you get from REST"		New Feature	iteraplan Speedbird	07/Oct/16 11:31 AM	24/Oct/16 1:52 PM														"17/Oct/16 1:15 PM;msr;UI:
+
+ ""+"" and ""-"" for relations and multi value-attributes, but prefers ""old"" and ""new"" for single-valued-attribues"""	"17/Oct/16 1:18 PM;msr;Translations:
+
+""Time"" - ""Zeitpunkt""	
+
+""Author"" - ""Autor""
+
+""Change Type"" - ""Änderungstyp""
+
+""Changes"" -  ""Änderungen""
+
+""Old"" - ""Alter Wert""
+
+""New"" - ""Neuer Wert"""	"17/Oct/16 1:26 PM;msr; please take the ""relationshipEndsForDisplay""
+
+ they already contain the ""type"" of the substantial-type at the end of the relation
+
+ they already have ""BusinessProcess"" as type and not the relation ""BusinessMapping"" in between
+
+ do not show the business mapping, but the end points like business process, business unit, product or information system"	"18/Oct/16 9:55 AM;roia;{quote}""old"" and ""new"" for single-valued-attribues""{quote}
+
+
+
+I'd use something like [oldValue] ==> [newValue], which could fit better in one line and, IMO, is more convenient to read, but currently implemented as required with ""old"" and ""new"" words."	"18/Oct/16 10:00 AM;msr;*How to show attribute-changes on relations?*
+
+In the ""Changes"" column: NAME OF RELATION : NAME OF RELATED ELEMENT : _already implemented handling of attributes_ "	"18/Oct/16 10:02 AM;msr;*How to display changes in relations?* (added or deleted relations):
+
+NAME OF RELATION: _same behavior as already implemented handling of multi-value-attributes, i.e. ""+"" or ""-""_"	18/Oct/16 10:04 AM;msr;bq. Ok, I'm fine with your suggestion: [oldValue] ==> [newValue]	"19/Oct/16 10:39 AM;msr;For activating attributes use the following:
+
+NAME-OF-ATTRIBUTE ""attribute was assigned to"" BUILDING-BLOCK-TYPE-PLURALNAME, e.g.
+
+Costs attribute was assigned to Information Systems
+
+
+
+German: NAME-OF-ATTRIBUTE ""Merkmal wurde "" BUILDING-BLOCK-TYPE-PLURALNAME ""hinzufügt"", e.g."	"19/Oct/16 10:52 AM;msr;Localisation-keys for History enabled:
+
+
+
+English: ""History activated"" (German: ""Historie aktiviert"")
+
+English: ""History deactivated"" (German: ""Historie deaktiviert"")"	"19/Oct/16 11:20 AM;msr;For de-activating attributes use the following:
+
+NAME-OF-ATTRIBUTE ""attribute was removed from ""BUILDING-BLOCK-TYPE-PLURALNAME, e.g.
+
+Costs attribute was removed from Information Systems
+
+
+
+German: NAME-OF-ATTRIBUTE ""Merkmal wurde "" BUILDING-BLOCK-TYPE-PLURALNAME ""entfernt"", e.g.
+
+"	"19/Oct/16 2:58 PM;msr;[~roia]
+
+Please remove ""Save As""-Button on the Single Element View."	20/Oct/16 2:31 PM;roia;there's no -spoon- button	20/Oct/16 5:05 PM;msr;The actual trunk does not show Business Mappings in the history tab. Please include this functionality. Thanks.	"22/Oct/16 9:14 AM;msr;Task for Monday, 24th October:
+
+Please review this task and merge any potential review-commits."	24/Oct/16 1:51 PM;mash;Review is Done: https://iteraweb.iteratec.de/fisheye/cru/IP-105																																								

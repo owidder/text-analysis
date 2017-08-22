@@ -1,0 +1,22 @@
+GoJS evaluation license wird für iteraplan Diagramme verwendet	Es sieht mir so aus, als ob eine nicht für den Produktivbetrieb lizenzierte Javascript Library GoJS in der neuen iteraplan V6 Installation verwendet wird. 		Fault	iteraplan Support	12/Jul/17 7:58 AM	26/Jul/17 4:39 PM														"12/Jul/17 7:58 AM;thomas.liskow@coface.com;
+
+!GoJS evaluation in iteraplan 6.jpg|thumbnail!"	"12/Jul/17 8:04 AM;cst;Sehr geehrter Herr Liskow,
+
+vielen Dank für Ihre Anfrage.
+
+Mit diesem Ticket erhalten Sie die Austauschdatei für die GoJS Anzeige mit der Lizenzinformation.
+
+[^iteraplan-client-6.0.0.jar.zip]
+
+Die ""iteraplan-client-6.0.0.jar"" - Datei muss im Verzeichneis ""/tomcat/webapps/iteraplan instanz/WEB-INF/lib"" ausgetauscht werden.
+
+Zusätzlich haben wir einen neuen Installer online gestellt, in diesem wurde der Fix mit implementiert. 
+ Ein Eintag in unser Knowledge Base werde ich heute zusätzlich nachtragen. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"26/Jul/17 10:27 AM;thomas.liskow@coface.com;Der Hinweis erscheint nicht mehr. 
+
+Vielen Dank
+
+Thomas Liskow"																																																				

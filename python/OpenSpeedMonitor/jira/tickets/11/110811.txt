@@ -1,0 +1,35 @@
+Tree Map does not open with a empty database	"Reproduce with a fresh installation of iteraplan (trunk)
+
+
+
+# Open iteraplan
+
+# Change in the tab ""VISUALIZE + REPORT""
+
+# Click on the ""Tree Map Diagram"" 
+
+# A error appears ""Diagram can't be displayed due to permissions""
+
+
+
+Expected: A information like in the ""Pie Chart Diagram"" 
+
+Actual: A error with the permission (make no sense when I logged in with the user e.g. system) 
+
+
+
+{color:red}UPDATE:{color} ""TMD_HAS_NO_ATTRIBUTES"": ""Please create a numeric attribute to show a Tree Map Diagram."",
+
+""TMD_HAS_NO_ATTRIBUTES"": ""Bitte erstellen Sie ein Zahlmerkmal, um eine Tree Map Grafik anzuzeigen."",
+
+  "		Improvement	iteraplan PO	04/Feb/17 11:00 AM	09/Feb/17 9:51 AM														"08/Feb/17 1:52 PM;vadm;[~msr], could you specify message, that should be shown when attributes missing, 
+
+Current is imprecise for TMD, because of  'single-valued enumeration attribute' specified.
+
+{code}
+
+""HAS_NO_ATTRIBUTES"": ""Please create a numeric or a single-valued enumeration attribute for {{bbTypes}} to show a {{diagramName}}.""
+
+{code}
+
+"	09/Feb/17 9:51 AM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-352																																																					

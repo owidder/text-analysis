@@ -1,0 +1,7 @@
+PDF export in IFD fails	"The SVG content which is sent to the server contains image links. Apache Batik Framework tries to send requests for these resources, and hence causes a server error.
+
+
+
+Images in the SVG content should have embedded images as data URIs instead of resource paths.
+
+"		Bug	iteraplan PO	05/Nov/15 4:03 PM	28/Jan/16 9:58 AM					ifd	newClient	pdf																																																													

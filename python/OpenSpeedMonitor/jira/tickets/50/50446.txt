@@ -1,0 +1,1 @@
+Automatisiertes Testkonzept für die Infrastruktur und Software erarbeiten			Story	secureCodeBox	10/Jul/15 4:25 PM																																																																					

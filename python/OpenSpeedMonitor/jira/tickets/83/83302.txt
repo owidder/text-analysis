@@ -1,0 +1,3 @@
+Zap Scan Ergebnisse in Threadfix via API importieren (manuell)	"Um einen ersten Rountrip zu testen sollten wir *manuell* prüfen ob und wie wir die Ergebnisse aus dem Zap Scanner der SecureBox _per curl und Threadfix API_ importiert bekommen. 
+
+Ziel ist es hierbei herauszufinden was ein geeignetes Format ist und welche APIs (auf beiden Seiten) wir benutzen können."	82236	Sub-task	secureCodeBox	07/May/16 8:38 PM	09/May/16 6:03 PM																																																																				

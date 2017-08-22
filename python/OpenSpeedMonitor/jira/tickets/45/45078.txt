@@ -1,0 +1,6 @@
+Document syntax for full-text searches	"Our full-text search functionality uses Apache Lucene behind the scenes, which comes with a specific search query string syntax.
+
+This implies that query terms may be transformed, several special characters are dropped, or searches cannot be executed in the way most users would expect.
+
+The query syntax shall be concisely documented in iteraplan's documentation. A link to this docu and/or a summary of the syntax could be included in the search dialog (Reports -> Search).
+Generic documentation can be found here, but we should extract the relevant parts and adapt it to iteraplan."		Task	iteraplan PO	05/Aug/11 2:54 PM	06/Sep/11 4:09 PM					documentation																																																															

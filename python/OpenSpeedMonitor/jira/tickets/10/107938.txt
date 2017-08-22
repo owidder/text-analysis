@@ -1,0 +1,302 @@
+Iteraplan Interactive Client hängt sich ständig	"Hallo,
+
+wir haben gerade das Update auf Iteraplan Version 5.4 durchgeführt.
+
+Beim Aufruf von IS, TB, Projekten im Interactiven Client bleibt dieser stehen.
+
+Diese 3 Kategorien haben mehr als 100 Elemente.
+
+Beim Aufruf der Architekturdomänen (nur 10 Elemente) werden diese dargestellt.
+
+Der Fehler tritt mit dem IE 11, Google Chrome und Firefox in der aktuellen Version auf."		Fault	iteraplan Support	10/Jan/17 3:23 PM	28/Feb/17 7:41 AM														"10/Jan/17 3:23 PM;mjudek@vhv.de;
+
+[^IteraplanSystemInfo_2017_01_10_151108.zip] _(7 kB)_"	"11/Jan/17 9:39 AM;cst;Guten Morgen Herr Judek,
+
+wird die Liste geladen, wenn Sie einige Zeit warten, oder ""friert"" der Bildschirm bei Ihnen ein.
+Tritt dies nur bei Ihnen auf, oder auch bei anderen Kollegen? 
+
+Folgende Einstellungen können Sie prüfen, um das Verhalten zu beheben:
+
+https://www.iteraplan.de/doc/display/IKB/Poor+performance+in+the+interactive+client 
+
+Zusätzlich würde es sehr helfen, wenn Sie während des Aufrufs die Browser-Konsole öffnen und nachprüfen, ob hier Fehlermeldungen / Warnungen geschrieben werden.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"13/Jan/17 4:21 PM;cst;Hallo Iteraplan Support Team, 
+
+ich schreibe Ihnen direkt per E-Mail, weil ich bei jeder Anmeldung an der Iteraplan Supportseite das Passwort zurück setzen muss und mich erst dann anmelden kann. Das neue Passwort speichert das System nicht und bei erneuter Anmeldung muss ich es wieder zurück setzen.
+
+Die Probleme mit dem „interaktiven Client“ treten bei mir und meinem Kollegen auf (wir sind die einzigen, die die Testinstanz nutzen).
+
+Die Probleme treten mit dem IE11, Firefox und Chrome auf. Das Log der Firefox Konsole habe ich angehängt. Weitere Browser haben wir nicht.
+
+Seit vorgestern hat sich der Zustand aber etwas gebessert. Zu Beginn konnte kein Bebauungsplanelement angezeigt werden. Der Tab des Browsers reagierte nicht mehr, auch ein Refresh nimmt der Tab nicht mehr an... Aber seit vorgestern können wir fast alle Bebauungselemente aufrufe außer den „Technischen Bausteinen“. Die TB enthalten aber auch die meisten Elemente (ca. 950). Es deutet nach meiner Meinung auf ein Mengenproblem hin.
+
+Den von Herrn Stangl geschickten Link mit Lösungsmöglichkeiten habe ich geprüft.... diese sind sehr allgemeint. Ich denke nicht, dass einer der Punkte uns helfen wird.
+
+Mit freundlichen Grüßen
+
+VHV Gruppe 
+Michael Judek
+"	"16/Jan/17 9:40 AM;cte;Hallo, 
+
+
+
+zu dem Thema habe ich heute kurz mit Herrn Judek telefoniert. Hier noch ein paar ergänzende Infos. Das Laden der Daten soll in 2-3 Sekunden erfolgt sein. Anzahl der TB soll ca. 1000 erreichen, Anzahl der Schnittstellen liegt über 500.
+
+
+
+In den letzten Jahren konnte er auch den Effekt beobachten, dass gelöschten Attribute nach Neuanlage nach einem Jahr wieder die ""alten Werte"" hatten. ist das normal?
+
+
+
+VG Carsten"	"16/Jan/17 9:52 AM;cst;Hallo Carsten,
+
+was meinst du mit ""geschlauchten Attribute""?
+Wir testen die Listen mit ca. 1000 Elementen und das deckt sich eigentlich mit 2-3 Sekunden. 
+
+Haben Sie im Moment noch das Problem mit dem Laden der Liste, oder hat sich dies erledigt? 
+Ist mir gerade nicht ganz klar. 
+
+Viele Grüße,
+
+Christoph 
+"	16/Jan/17 10:04 AM;cte;gelöscht ;-) habe es korrigiert	"16/Jan/17 10:11 AM;cst;Sehr geehrter Herr Judek,
+
+vielen Dank für Ihre Antwort. 
+
+Zum Thema Support-Ticket System habe ich den Vorgang überprüft und es gab schon einen registrierten Benutzer. 
+Ihr aktueller Login besteht aus Ihrer E-Mailadresse: „MJudek@vhv.de“ .
+
+Nach setzen des Passworts, sollte dies auch gespeichert bleiben.
+
+Zu Ihrem Fall „Technische Bausteine“ habe ich die LOG-Datei geprüft und hier sind einigen Fehler die auf ein Problem mit dem 
+Browser-Cache hindeuten. Würden Sie diesen bitte löschen und  die Liste nach erneutem Login aufrufen. 
+
+Sollte dies zur keiner Verbesserung führen, leeren Sie bitte in der Datenbank die Tabelle „USER_SETTINGS“ um ein Fehlverhalten dieser ausschließen zu können.
+
+Mit freundlichen Grüßen
+
+Christoph Stangl
+"	"17/Jan/17 12:45 PM;mjudek@vhv.de;Hallo Herr Stangl,
+ich habe beide Vorschläge ausprobiert (""Löschen des Browser Cache"" und ""Löschen der Inhalte der Tabelle USER_SETTINGS""), leider ohne Erfolg.
+Ich habe nacheinander die Bebauungsplan Elemente ""Informationssysteme"" (135 Elemente), ""Schnittstellen"" (568 Elemente) und ""technische Bausteine"" (958) angeklickt. Für die ersten beiden bekomme ich die Ergebnisliste angezeigt, bei den ""technischen Bausteinen"" friert der Browser Tab ein und muss geschlossen werden.
+Dieses Problem tritt nur im ""Interaktiven Client"" auf. Der klassische Webclient zeigt die Liste der TB an.
+Das Problem kann ich im Firefox (Version 50.0.2), Chrome (Version 55.0.2883.87) und IE 10 nachstellen.
+Beim Chrome Browser kann ich leider keine Konsole öffnen (ist vielleicht per Gruppenrichtlinie gesperrt), sonst würde ich Ihnen auch das Log zukommen lassen.
+Was kann ich noch tun? Hilft Ihnen ggf. das Logfile der Iteraplan Anwendung?
+
+[^Iteraplan Log nach Löschen des Browser Cache.txt] _(11 kB)_
+
+[^Iteraplan Log nach Löschen Tabelle USER_SETTINGS .txt] _(11 kB)_"	"23/Jan/17 11:43 AM;cst;Guten Tag Herr Judek,
+
+ist es möglich, das wir uns die Thematik zusammen über TeamViewer einmal ansehen? 
+Dann schauen wir uns den Vorgang schritt für schritt nochmals an.
+
+Eine Idee hätte ich an der Stelle noch, aber das Verhalten ist normalerweise ein anderes. Wurde nach der Installation - Update auf die Version 5.4 das Work-Verzeichnis des Browsers gelöscht? 
+Gerne können Sie uns auch einen DUMP der Datenbank zukommen lassen, das wir das Verhalten hier nachtesten können.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"26/Jan/17 1:08 PM;mjudek@vhv.de;Hallo Herr Stangl,
+wir können Ihnen den Zugriff über eine WebEx Sitzung zur Verfügung stellen. Dafür muss ich einen Termin mit meinen Kollegen aus dem IT-Betrieb abstimmen.
+Würde es Ihnen am Mittwoch, 31.01.2017 ab 13:00 Uhr passen?
+Einen Dump der DB kann ich Ihnen leider so nicht zur Verfügung stellen, da auf der Test-Ebene ein Abbild der Produktionsdaten vorhanden ist, und davon sind Teile (z.B. die  Projektdaten) vertraulich.
+Die Fragestellung bezüglich dem Work-Verzeichnis des Browsers würde ich gerne innerhalb der WebEx Sitzung klären wollen.
+MfG Michael Judek"	"26/Jan/17 1:14 PM;cst;Hallo Herr Judek,
+
+ist eingetragen und Vermerkt. 
+Würden Sie mir vorab also am 31.01.2017 die benötigten Daten und Telefonnummer mitteilen, 
+dann rufen ich Sie hierzu um 13:00 Uhr zurück.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"31/Jan/17 11:48 AM;mjudek@vhv.de;Hallo Herr Stangl,
+können Sie mir bitte eine Rufnummer mitteilen, unter der wir Sie um 13:00 Uhr anrufen können? Den Link für die WebEx Sitzung stelle ich kurzfristig hier im Ticket ein.
+Vielen Dank.
+Mit freundlichen Grüßen
+Michael Judek"	"31/Jan/17 11:51 AM;cst;Hallo Herr Judek,
+
+meine Rufnummer lautet 
+Tel: +49 89 614551-468
+
+Grüße,
+
+Christoph Stangl - iteraplan Support"	"31/Jan/17 1:04 PM;mjudek@vhv.de;Link für die WebEx Sitzung:
+https://vhv.webex.com/vhv/j.php?MTID=m1b10b84174b9cd5ed38a2776d56cf5a8"	"31/Jan/17 2:25 PM;cst;Version 5.5 wird getestet.
+
+-> Java Script und Browser prüfen
+-> War Room einrichten und besprechen"	"01/Feb/17 10:26 AM;cst;Guten Tag Herr Judek,
+
+
+
+nach unserem Gespräch habe ich versucht noch zusätzliche Fehlerquellen ausfindig zu machen und bin auf folgendes gestoßen. 
+
+
+
+Würden Sie mir bitte folgenden Registry-Key prüfen, ob dieser bei Ihnen angelegt ist und wenn welcher Wert hier eingetragen ist:
+
+
+
+""HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Styles""
+
+
+
+Sollte dieser nicht vorhanden sein, ist dies als Fehlerquelle auszuschließen. 
+
+
+
+Der zweite Punkt ist unter den Internet Explorer 11 Einstellungen im Reiter ""Erweiter"" zu finden. 
+
+Hier geht es um die Kategorie ""Browsen"" und folgenden Einstellungen:
+
+
+
+!Screen1.PNG|thumbnail!
+
+
+
+Welche Sind bei Ihnen hier eingestellt, dann teste ich diese hier nach. 
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support "	"02/Feb/17 8:43 AM;mjudek@vhv.de;Hallo Herr Stangl,
+ich habe jeweils Screenshots für die IE 11 Einstellung und den Registry Eintrag angehängt.
+Der Registry Eintrag ist laut Aussage meines Kollegen aus dem IT-Betrieb nicht unter ""HKEY_Current_User"" zu finden, sondern unter ""HKEY_LOCAL_MACHINE"".
+VG
+Michael Judek
+
+!Registry.jpg|thumbnail!
+
+!IE11_Settings.jpg|thumbnail!"	"02/Feb/17 10:27 AM;cst;Vielen Dank,
+
+bevor wie an dieser Steller weiter machen, warten wir auf die Version 5.5
+und dem Performance-Boost für die Listview. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"20/Feb/17 1:42 PM;mjudek@vhv.de;Hallo Herr Stangl,
+ich habe das Update auf Version 5.5 letzte Woche Freitag eingespielt.
+Leider hat sich unser Problem mit dem Interaktiven Client danach verschlimmert.
+Beim Starten erscheint für ca. 2 Sekunden eine ""please wait - data loading"" Meldung und dann bleibt das Fenster leer (siehe Hardcopy im Anhang). Die vorhandenen Elemente sind aber auswählbar und funktionieren (Logout, wechsel zurück in den Standard Client).   Das Problem tritt mit allen Browsern auf (Firefox, Chrome, IE).
+Mein Kollege hat die Ausgabe der Firefox Console bereitgestellt (siehe Anhang).
+Können wir weitere hilfreiche Dokumente (z.B. Log-Dateien) zur Verfügung stellen?
+Mit freundlichen Grüßen
+Michael Judek
+
+!Firefox_Browser_Console.jpg|thumbnail!
+
+!Iteraplan5.5_interaktiveClient_Startbildschirm.jpg|thumbnail!"	"20/Feb/17 2:15 PM;cst;Hallo Herr Judek,
+
+vielen Dank für Ihre Antwort. 
+
+Wir haben uns die Fehlermeldung angeschaut und es deutet hier stark darauf hin, das hier eine Problem mit dem Proxy eine Ursache für das Problem sein kann. 
+In der Fehlermeldung wird eindeutig beschrieben, das eine Proxy-Authentifizierung notwendig ist. Der neue Client arbeitet an der Stelle nur über die REST-Schnittstelle, nicht das diese über den Proxy authentifiziert werden muss. 
+
+Der Classic Client benutzt Standardmäßig AJAX-Requests um mit dem Server zu kommunizieren.  
+
+Würden Sie bitte hierzu Ihre Proxy-Konfiguration des Browsers, wie auch im Tomcat gegenprüfen. Zusätzlich wäre hier zu klären, ob bei Ihnen REST-Abfrage generell blockiert werden. 
+Zusätzlich scheint er bei Ihnen Probleme mit dem HTTPS Protokoll zu haben, da Ihnen die Verbindung als nicht sicher angezeigt wird. Es kann auch ein zusammenspiel von problemen mit HTTPS und der REST Abfrage sein.
+
+Die Version 5.5 arbeitet jetzt im Vergleich zu Version 5.4 ausschließlich mit REST im interaktiven Client. Das wäre unser Ansatzpunkt das Problem weiter zu prüfen. Da dies erklärt, warum der Login nicht sauber funktioniert. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"21/Feb/17 8:27 AM;mjudek@vhv.de;Hallo Herr Stangl,
+danke für die Hinweise. Wir haben gestern Nachmittag und heute morgen unsere Iteraplan Testinstallation über HTTP und ohne Proxy (kein Proxy im Firefox gesetzt) ausprobiert, leider stoßen wir auf das exakt gleiche Problem.
+Grundsätzlich werden interne Webseiten bei uns nicht über den Proxy bedient.
+Ich habe Ihnen die Firefox Konsolen-Ausgabe angehängt.
+Da wir nicht genau nachvollziehen konnten, welche der Tomcat Einstellungen ggf. für die weitere Analyse interessant sein können, habe ich Ihnen sämtliche Dateien im ZIP Archiv angehängt.
+Ich kann Ihnen darüber hinaus auch eine Darstellung des DB Schemas schicken... vielleicht hilft das weiter. Leider kann ich Ihnen keinen Abzug der vollständigen DB mit den Datensätzen geben.
+Wünschen Sie ggf. eine erneute WebEx Session? Hierfür würde ich ein paar Tage Vorlaufzeit benötigen.
+Vielen Dank.
+Mit freundlichen Grüßen
+Michael Judek
+
+
+[^firefox_Konsole.txt] _(4 kB)_
+
+[^Tomcat_CFG.zip] _(26 kB)_
+
+[^Ergbnis Schema-Skript-Generator iteraplan T.txt] _(102 kB)_"	"21/Feb/17 11:24 AM;cst;Guten Tag Herr Judek,
+
+vielen Dank für Ihre Antwort.
+
+Wir benötigen für die weiter Analyse folgende Log-Dateien. 
+Einmal die ""org.apache.catalina.valves.AccessLogValve"" directory=""logs"" Datei und anschließend ändern Sie bitte die ""log4j.properties"" wie folgt:
+Fügen Sie die folgenden Zeilen in die Sektion ""Spring logging"" in der Datei ""log4j.properties""ein. Die ""log4j.properties"" finden Sie unter ""[TOMCAT]/WEBAPPS/Iteraplan/WEB-INF/classes"":
+
+log4j.logger.org.springframework.security.ldap=DEBUG 
+log4j.logger.org.springframework.security.ui.webapp=DEBUG
+ log4j.logger.org.springframework.security.web.authentication=DEBUG 
+log4j.logger.org.springframework.ldap=DEBUG
+
+Danach werden zusätzliche Informationen in die iteraplan.log-Datei geschrieben. Führen Sie bitte den Login in der Version 5.5 jetzt erneut durch.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+"	"21/Feb/17 12:02 PM;mjudek@vhv.de;Hallo Herr Stangl,
+ich habe die Parameter angepasst und vor dem Neustart des Tomcat die Logdateien bereinigt. Sie finden diese im Anhang.
+Mit freundlichen Grüßen
+Michael Judek
+
+[^logs.zip] _(11 kB)_"	"22/Feb/17 8:56 AM;cst;Vielen Dank, 
+
+wir analysieren gerade die Logs und geben Ihnen Zeitnah bescheid.
+
+Mit freundlichen Grüße,
+
+Christoph Stangl - iteraplan Support "	"22/Feb/17 11:22 AM;cst;Sehr geehrter Herr Judek,
+
+vielen Dank für Ihre Antwort. 
+
+Würden Sie uns bitte einen DUMP der Datenbank zukommen lassen, wir haben jetzt einen konkreten Verdacht woher das Problem kommt.
+Gerne können wir nach der Prüfung uns telefonisch verabreden um das weitere Vorgehen besprechen zu können. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"22/Feb/17 12:57 PM;mjudek@vhv.de;Hallo Herr Stangl,
+das hört sich gut an. Ich kann aber leider keinen DUMP der DB bereitstellen, da dort sensible Daten gespeichert sind, unter anderen auch personenbezogene Daten.
+Ich kann alternativ anbieten, dass ich eine WebEx Sitzung organisiere und Ihnen einen SQL Client zur Verfügung stelle. Wir nutzen AquaDataStudio.
+Wäre das eine mögliche Alternative?
+Mit freundlichen Grüßen
+Michael Judek"	"22/Feb/17 3:05 PM;cst;Hallo Herr Judek,
+
+wir brauchen nicht die ganze Datenbank es würden uns die Tabellen ""av_resp"" und ""av_enum"" reichen.
+Hier werden die Attribute von zwei verschiedenen Typen gespeichert.
+
+Sollte dies auch nicht möglich sein, werde ich für Sie ein Skript zur Prüfung schreiben.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+"	"23/Feb/17 2:48 PM;cst;Sehr geehrter Herr Judek,
+
+ist es möglich, das wir uns morgen telefonisch zusammenrufen um einige Punkte prüfen zu können.
+Hierzu brauche ich kein Zugriff über das Fernwartungstool, nur wäre ein Datenbankzugriff sehr zu empfehlen.
+
+Dann können ich einige Punkte, die wir heraus gefunden haben mit Ihnen durchsprechen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"23/Feb/17 3:10 PM;mjudek@vhv.de;Hallo Herr Stangl,
+können wir hierzu am Montag ab 13:00 Uhr telefonieren? Ich ziehe einen Kollegen mit Zugriff auf die DB hinzu. Wir würden Sie dann aus einem Besprechungsraum mit PC Arbeitsplatz anrufen, um andere Kollegen im Büro nicht zu stören.
+Vielen Dank.
+Mit freundlichen Grüßen
+Michael Judek"	"23/Feb/17 3:14 PM;cst;Hallo Herr Judek,
+
+können wir gerne so machen. 
+Eine Sache könnte das Problem mit dem Login schon beheben, alles andere machen wir dann am Montag um 13:00.
+
+Es geht um die Tabelle ""ATG"" und die Spalten ""LAST_MOD_USER"" und ""LAST_MOD_DATE"". In diesen zwei Spalten darf keine ""NULL"" stehen, sollte dies bei Ihnen der Fall sein fügen Sie bitte einen validen Wert in diese ein. Nach anschließendem Neustart der iteraplan Instanz sollte der Zugriff wieder möglich sein. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	27/Feb/17 1:44 PM;cst;[^iteraplan5.5.0_Patch_Single_Element_View_Attributes.zip]																								

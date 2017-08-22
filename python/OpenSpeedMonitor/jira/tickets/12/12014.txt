@@ -1,0 +1,4 @@
+Benennung First/Repeated View	"In der Jobeditierung soll statt ""First view only"" eine Darstellung der Form
+bq. First view X Repeated View X
+sein. In der Jobtabelle soll statt ""2X"" ""RV"" mit <abbr> stehen.
+First view only soll der Default-Wert für Jobs sein."		Improvement	OpenSpeedMonitor	24/Mar/14 6:52 PM	25/Mar/14 4:30 PM																																																																				

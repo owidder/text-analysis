@@ -1,0 +1,69 @@
+Outlook Login gesperrt (?)	"Könnt ihr bitte mein Outlook Login wieder freigeben bzw. das Passwort zurücksetzen?
+
+
+
+EMail in Outlook (auf meinem Laptop), Outlook-Web-Client und auf dem iPhone lesen ist derzeit nicht möglich - ""User or Password inkorrekt"".
+
+
+
+Scheinbar funktioniert Outlook auf meinem Laptop nicht mehr, denn mit dem gleichen Passwort konnte ich auf dem iPhone Emails lesen, aber mich in Outlook nicht anmelden.
+
+"		Task	Infrastruktur	12/Dec/16 5:41 PM	20/Dec/16 12:31 PM	Sonstiges													"12/Dec/16 5:48 PM;dla;Ich schaue regelmäßig in das Ticket, weil ich ja gerade keine EMail prüfen kann. 
+
+:-}"	"13/Dec/16 8:10 AM;kti;Hallo Danny,
+
+
+
+gestern Abend war keiner mehr hier, ein Anruf wäre vielleicht auch einfacher als die Ticketbeobachtung in JIRA. ;-)
+
+
+
+Das Konto entsperrt sich automatisch nach 30 Minuten, dass können wir vor Ort selbst auch nicht entsperren.
+
+
+
+Wie sieht es mit deinem Login heute aus? Hast du zuletzt das Kennwort geändert?
+
+
+
+VG
+
+Kathrin"	"13/Dec/16 9:12 AM;dla;Also von EOS aus (eigener PC) funktioniert alles. Gestern auf meinem Lappi ging das mit Outlook partout nicht. 
+
+
+
+Irgendwas stimmt mit meinem Outlook nicht ... aber egal, dann nutze ich das eben nicht mehr.
+
+"	"13/Dec/16 9:16 AM;kti;Hallo Danny,
+
+
+
+das beantwortet jetzt nicht meine Frage....
+
+Funktioniert es heute oder nicht? Kannst du dich im OWA anmelden? Wie sieht es mit SharePoint aus?
+
+
+
+Viele Grüße
+
+Kathrin"	"13/Dec/16 9:24 AM;dla;""Also von EOS aus (eigener PC) funktioniert alles."" (EOS == Firma in der ich arbeite)
+
+
+
+Also ja, OWA funktioniert. SharePoint brauche ich eigentlich nie, aber für dich getestet - geht auch.
+
+Outlook kann ich nicht prüfen, weil Laptop zuhause.
+
+"	"13/Dec/16 9:29 AM;kti;Hallo Danny,
+
+
+
+nachdem du das Problem an deinem eigenen Rechner hast und der zu Hause liegt:
+
+Bitte teste es zu Hause und melde dich nochmal.
+
+
+
+Das Problem liegt an dem Rechner und nicht an deinem Konto, das kurz zu Erklärung.
+
+Check bitte die Windows-Anmeldeinformationen und lösch den Eintrag für Outlook raus."	20/Dec/16 11:36 AM;dla;Das hat geholfen, danke.																																																

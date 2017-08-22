@@ -1,0 +1,33 @@
+Filter: Removing the attribute filter removes the whole relation-filter	"*Summary:*
+
+Filter: Removing the attribute filter removes the whole Business Mapping-Filter
+
+
+
+*Reproduce:*
+
+* Open the Information System List
+
+* Click on ""Edit Filter""
+
+* Add Filter Extension for ""Business Mappings""
+
+* Click on ""X"" next to the ""OR"" (see screenshot)
+
+
+
+*Actual:*
+
+* The whole Business Mapping filter is removed.
+
+
+
+*Expected:*
+
+* Only this line (the attribute filter) is reset.
+
+
+
+*Update:*
+
+This happens for any relation-type filter, not just for business mapping."		Bug	iteraplan Speedbird	30/Jan/17 1:08 PM	06/Feb/17 12:09 PM																																																																				

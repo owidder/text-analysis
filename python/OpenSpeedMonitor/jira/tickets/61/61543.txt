@@ -1,0 +1,1 @@
+Execute execel strategy test sheet			Task	iteraplan PO	26/Oct/15 6:57 PM	28/Oct/15 5:23 PM														26/Oct/15 7:00 PM;fka;Done with Java 8	26/Oct/15 7:00 PM;fka;Some changes not detected by the import	27/Oct/15 1:20 PM;fka;After removing a statement unintentionally left in the code before checkin now everything works fine!																																																				

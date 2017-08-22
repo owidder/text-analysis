@@ -25,11 +25,11 @@ bottle.factory("handlers", function (container) {
         fileListElement.append(filesHtml);
     }
 
-     function searchClicked(nodesAndLinks, inputId, scriptId) {
+     function searchClicked(nodesAndLinks, inputId, scriptId, elementId) {
         var searchFor = $(inputId).val();
         var relPaths = nodesAndLinks.searchRelPaths(searchFor);
         if(!_.isEmpty(relPaths)) {
-            showFiles(relPaths, scriptId);
+            showFiles(relPaths, scriptId, elementId);
         }
     }
 

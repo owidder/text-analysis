@@ -1,0 +1,45 @@
+Implement attribute group permission dialog	"For each attribute group there should be a dialog to set the role permissions for this group.
+
+
+
+The current person icon should bring up this pop up dialog, The dialog should have 3 columns: 
+
+ # View
+
+ # Edit
+
+ # Role
+
+
+
+For both the first and second column ""select all"" & ""select none"" should be available. Also provide a quick search (top right corner) which will search within the third column. ""Select all"" / ""select none"" will only apply to the visible entries (quicksearch will reduce them).
+
+
+
+For each role: View is necessary to be checked to check edit. Cf. the bottom of the role page
+
+
+
+Cancel & Ok button at the bottom right.
+
+
+
+Layout might be similiar to the manual selection tab of the general filter dialog. SBU to deliver the detailed layout."		Improvement	iteraplan Thunderduck	27/May/17 12:50 PM	12/Jul/17 11:56 AM														29/Jun/17 5:11 PM;scz;Documentation goes here: [https://doc.iteraplan.de/display/iteraplan61/Read+and+write+access+for+attribute+groups]	05/Jul/17 1:01 PM;scz;Waiting for IPTT-561	"10/Jul/17 2:49 PM;tsc;[~scz], please take a look at this use case:
+
+
+
+    create new attribute group
+
+    edit ""description"" or edit ""isTopLevelGroup""
+
+    Result:
+
+    an error ""You do not have the necessary permission to perform this action."" appears
+
+    Expected:
+
+    edit will be successful
+
+    Note: edit is successfull after reloading the attribute group page.
+
+    Note 2: if the fix would take too much time, create a new bug ticket"	12/Jul/17 12:51 PM;aan;Ticket for the problem in the comment is created																																																			

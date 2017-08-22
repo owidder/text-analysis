@@ -1,0 +1,3 @@
+Roles - get all names independently of permissions (server)	"Extend api/administration/roles/:id to get all names independently of permissions
+
+Extend {{bbtPermissions}} section of json to include name, pluralName and description of each building block type"		Improvement	iteraplan Speedbird	02/May/17 10:21 AM	22/May/17 7:42 PM																																																																				

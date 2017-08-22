@@ -1,0 +1,23 @@
+DNS und Routing zu BMW für CSBE-INT 	"Hi,
+
+
+
+für *csbe-int.bmwgroup.net* habe ich bei Jens bzgl. DNS schon bescheid gesagt. Jetzt fehlt glaube ich noch die Anpassung des Routings. Könntet ihr das bitte durchführen.
+
+
+
+Die Firewallfreischaltung bei BMW habe ich auch schon eingesteuert.
+
+
+
+Danke und Gruß
+
+Fabian"		Task	Infrastruktur	20/Dec/16 2:41 PM	22/Dec/16 1:29 PM	Routing													"21/Dec/16 10:26 AM;ehi;Hallo Fabian,
+
+
+
+die Namensauflösung funktioniert und am Routing muss nichts gemacht werden, das Netz ist an der Firewall bereits freigeschaltet. Die Maschine antwortet auf einen Ping. Bitte testet und gebt mir Rückmeldung, damit ich das Ticket schließen kann."	"21/Dec/16 2:26 PM;fkn;Passt, danke. Es funktioniert. 
+
+
+
+Eine Frage: muss man Jens immer bzgl. der Änderung am DNS extra informieren oder macht ihr das? In Trac konnte man ihn immer ins Ticket eintragen. In JIRA hab ich das nicht gefunden. "	21/Dec/16 2:34 PM;ehi;Hallo Fabian, wenn etwas am DNS gemacht werden muss, dann weisen wir das Ticket einfach Jens zu, der kümmert sich dann und gibt es uns dann zurück.	21/Dec/16 2:44 PM;fkn;Alles klar, dann danke für die Unterstützung.																																																			

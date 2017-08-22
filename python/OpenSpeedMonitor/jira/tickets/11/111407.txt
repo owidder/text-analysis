@@ -1,0 +1,5 @@
+Migrate deprecated Queryformat	"Old querys have a different format, where queryForms and selectedResultIds are not within the queryResults.
+
+These queries should also be correctly migrated. Compare also ITERAPLAN-5089 and ITERAPLAN-5101.
+
+"		Bug	iteraplan PO	09/Feb/17 11:15 AM	09/Feb/17 4:02 PM																																																																				

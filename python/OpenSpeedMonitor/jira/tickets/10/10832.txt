@@ -1,0 +1,252 @@
+Erweiterung der REST-API um Abfrage aggregierter CSI-Werte	"Die bestehenede REST-API soll um vier weitere Methoden erweitert werden:
+
+1)
+/rest/\[SYSTEM\]/csi/\[DateFrom\]/\[DateTo\]
+
+Für den übergebenen Zeitraum soll ein Gesamt-CSI-Wert berechnet werden. Die beinhalteten CSI-Rohdaten werden nach Page und Browser gewichtet. 
+Es erfolgt keine Gewichtung nach Uhrzeit des Tages.
+
+Rückgabe-Klasse:
+
+{code}
+package de.iteratec.ism.rest.response;
+
+/**
+ * <p>
+ * Der CSI Mittelwert eines Shops/Systems über einen definierten Zeitraum.
+ * </p>
+ * 
+ * <p>
+ * ANFRAGE: Name des Systems/Shop UND Zeitraum (wie bei resultsbetween).
+ * </p>
+ * 
+ * @author nkuhn
+ * @author mze
+ */
+public class SystemCSI {
+
+	/**
+	 * CSI Mittelwert eines Shops/Systems gewichtet nach Browser und Page.
+	 */
+	double csiValue;
+
+	/**
+	 * Der Zeil CSI Wert.
+	 */
+	double targetCSI;
+
+	/**
+	 * Das Delta der {@link #csiValue} zur {@link #targetCSI}.
+	 */
+	double delta;
+
+	/**
+	 * Anzahl der berücksichtigen Rohdaten.
+	 */
+	int countOfMeasurings;
+}
+{code}
+
+2)
+/rest/\[SYSTEM\]/csiPerBrowser/\[DateFrom\]/\[DateTo\]
+
+Für den übergebenen Zeitraum soll ein CSI-Wert pro Browser berechnet werden. Die beinhalteten CSI-Rohdaten werden pro Browser nach der gemessenen Page gewichtet. 
+Es erfolgt keine Gewichtung nach Uhrzeit des Tages.
+
+{code}
+package de.iteratec.ism.rest.response;
+
+/**
+ * <p>
+ * Die CSI Values von Systemen pro Browser.
+ * </p>
+ * 
+ * <p>
+ * ANFRAGE: Name des Systems/Shop UND Zeitraum (wie bei resultsbetween).
+ * </p>
+ * 
+ * @author nkuhn
+ * @author mze
+ */
+public class SystemBrowserCSIValues {
+
+	Collection<SystemBrowserCSI> systemBrowserCSIValues;
+	
+	/**
+	 * <p>
+	 * Der CSI Mittelwert eines Systems/Shop für einen bestimmten Browser über
+	 * einen definierten Zeitraum.
+	 * </p>
+	 * 
+	 * @author nkuhn
+	 * @author mze
+	 */
+	public static class SystemBrowserCSI {
+
+		/**
+		 * Der Name eines Browsers z.B. FF.
+		 */
+		String browserName;
+
+		/**
+		 * CSI Mittelwert des Shops/Systems für einen Browser gewichtet nach
+		 * Page.
+		 */
+		double csiValue;
+
+		/**
+		 * Der Zeil CSI Wert.
+		 */
+		double targetCSI;
+
+		/**
+		 * Das Delta der {@link #csiValue} zur {@link #targetCSI}.
+		 */
+		double delta;
+
+		/**
+		 * Anzahl der berücksichtigen Rohdaten.
+		 */
+		int countOfMeasurings;
+	}
+}
+{code}
+
+3)
+/rest/\[SYSTEM\]/csiPerPage/\[DateFrom\]/\[DateTo\]
+
+Für den übergebenen Zeitraum soll ein CSI-Wert pro Page berechnet werden. Die beinhalteten CSI-Rohdaten werden pro Page nach Browser gewichtet. 
+Es erfolgt keine Gewichtung nach Uhrzeit des Tages.
+
+{code}
+package de.iteratec.ism.rest.response;
+
+/**
+ * <p>
+ * Die Page CSI Werte eines Systems in einem bestimmten Zeitraum.
+ * </p>
+ * 
+ * <p>
+ * ANFRAGE: Name eines Systems UND Zeitraum
+ * </p>
+ * 
+ * @author nkuhn
+ * @author mze
+ */
+public class PageCSIValues {
+
+	/**
+	 * Die Page CSI Werte eines Systems.
+	 */
+	Collection<PageCSI> pageCSIValues;
+
+	/**
+	 * <p>
+	 * Der CSI Mittelwert einer Page über einen definierten Zeitraum.
+	 * </p>
+	 * 
+	 * @author nkuhn
+	 * @author mze
+	 */
+	public static class PageCSI {
+
+		/**
+		 * Der Name der Seite dieser {@link #csiValue}.
+		 */
+		String pageName;
+
+		/**
+		 * CSI Mittelwert einer Page gewichtet nach Browser.
+		 */
+		double csiValue;
+
+		/**
+		 * Der Zeil CSI Wert.
+		 */
+		double targetCSI;
+
+		/**
+		 * Das Delta der {@link #csiValue} zur {@link #targetCSI}.
+		 */
+		double delta;
+
+		/**
+		 * Anzahl der berücksichtigen Rohdaten.
+		 */
+		int countOfMeasurings;
+	}
+
+}
+{code}
+
+4)
+/rest/\[SYSTEM\]/csiPerPageAndBrowser/\[DateFrom\]/\[DateTo\]
+
+Für den übergebenen Zeitraum soll ein CSI-Wert pro Browser und Page berechnet werden. Für die beinhalteten CSI-Rohdaten werden ungewichtete Mittelwerte gebildet. 
+
+{code}
+package de.iteratec.ism.rest.response;
+
+/**
+ * <p>
+ * Die CSI Values von Pages pro Browser.
+ * </p>
+ * 
+ * <p>
+ * ANFRAGE: Name eines Systems UND Zeitraum
+ * </p>
+ * 
+ * @author nkuhn
+ * @author mze
+ */
+public class PageBrowserCSIValues {
+
+	Collection<PageBrowserCSI> pageBrowserCSIValues;
+	
+	/**
+	 * <p>
+	 * Der CSI Mittelwert einer Page für einen bestimmten Browser über einen
+	 * definierten Zeitraum.
+	 * </p>
+	 * 
+	 * 
+	 * 
+	 * @author nkuhn
+	 * @author mze
+	 */
+	public static class PageBrowserCSI {
+
+		/**
+		 * Der Name der Page.
+		 */
+		String pageName;
+
+		/**
+		 * Der Name eines Browsers z.B. FF.
+		 */
+		String browserName;
+
+		/**
+		 * CSI Mittelwert einer Page nicht gewichtet.
+		 */
+		double csiValue;
+
+		/**
+		 * Der Zeil CSI Wert.
+		 */
+		double targetCSI;
+
+		/**
+		 * Das Delta der {@link #csiValue} zur {@link #targetCSI}.
+		 */
+		double delta;
+
+		/**
+		 * Anzahl der berücksichtigen Rohdaten.
+		 */
+		int countOfMeasurings;
+	}
+
+}
+{code}"		New Feature	OpenSpeedMonitor	19/Dec/13 3:33 PM	21/Jan/14 5:02 PM														"19/Dec/13 4:10 PM;nkuhn;Zunächst wird nur die oben beschriebene Methode 1) implementiert.
+Methoden 2) bis 4) können bei Bedarf später ergänzt werden."																																																						

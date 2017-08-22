@@ -1,0 +1,67 @@
+Client zeigt falsche Lables	"Ähnlich wie im folgender Relase Note werden bei einem Client die Namen nicht korrekt dargestellt.
+
+https://doc.iteraplan.de/display/IKB/New+interactive+client+shows+wrong+%28technical%29+names+on+the+start+screen
+
+
+
+Trotz löschen sämtlicher Cookies, des Verlaufs, etc. und der Annahme des Cookies durch den Browser konnte der Fehler beim Client nicht behoben werden.
+
+
+
+Da der Fehler bisher nur bei einem Client aufgetreten ist wurde die Konfiguration am Tomcat nicht verändert. Darüberhinaus hat der User Berechtigungen für die REST API. 
+
+
+
+Bitte um Unterstützung. 
+
+Danke.
+
+
+
+"		Fault	iteraplan Support	20/Jun/17 8:46 AM	18/Jul/17 7:00 AM														"20/Jun/17 8:46 AM;johannes.behrendt@rrpowersystems.com;
+
+!iteraplanLabels.png|thumbnail!"	20/Jun/17 8:48 AM;johannes.behrendt@rrpowersystems.com;Eingesetzter Browser ist der IE 11	"22/Jun/17 4:58 PM;msr;Sehr geehrte Damen und Herren,
+
+
+
+danke für Ihre Anfrage.
+
+
+
+Es sieht tatsächlich wie ein Browser-Caching-Problem aus. Tritt das Problem bei selben Nutzer auf in einem anderen Browser, der iteraplan noch nicht geöffnet hatte, auf?
+
+
+
+Beim Cache-Löschen geht es uns weniger um die Cookies, als um die Fragmente von HTML und JavaScript, die als temporäre Internetdateien noch im Browser herumgeistern. Hat der entsprechende Nutzer alle Dateien (siehe Screenshot) komplett entfernt?
+
+
+
+Zusätzlich könnte ein Blick auf die Browser-Konsole mit ""F12"" zu öffnen auch hilfreich sein.
+
+
+
+Mit freundlichen Grüßen
+
+
+
+Marcel Schrumpf
+
+
+
+ !Löschen_Browserverlauf.png|thumbnail!  !Konsole.png|thumbnail! "	"27/Jun/17 10:48 AM;johannes.behrendt@rrpowersystems.com;Der selbe Nutzer hat an einem anderen Client die Anwendung unter IE11 ohne Fehler starten können. Jedoch wurde auf dem Client iteraplan bereits mit dem IE11 geöffnet.
+
+Ja, es wurden alle Daten, wie im Screenshot gezeigt, gelöscht.
+In unserer Testumgebung hat der User das Problem nicht, jedoch setzen wir dort auch mittlerweile die Version 6.0 ein. "	"29/Jun/17 8:54 AM;cst;Guten Morgen,
+
+vielen Dank für Ihre Antwort. 
+
+Das ist sehr merkwürdig, das von Ihnen geschilderte Problem deutet auf ein Cache und Cookie - Problem hin. 
+Deswegen, funktioniert die Anwendung auch auf einem frischen Client wie gewohnt, hier werden die Informationen ja frisch gezogen.
+
+Gibt es vll. hier andere Tools / Add Ons, oder Einstellungen auf dem Client die Seiten - Cookies etc. aus einem gespeicherten Zwischenstand laden? 
+
+Gehen die Benutzer über einen Proxy auf iteraplan, oder ist diese im Intranet gehostet und der Aufruf erfolgt intern (ohne das der Proxy hier aktiv wird). Es gibt in seltenen Fällen, manchmal den Nebeneffekt, das im Proxy-Cache Seiten gespeichert werden und dieser Stand wird dann beim aufrufen der Seite geladen. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"																																																		

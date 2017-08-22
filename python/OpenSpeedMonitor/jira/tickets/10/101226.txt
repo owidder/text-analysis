@@ -1,0 +1,25 @@
+Deleting a BBT from an Attribute - has no effect on search and database	"After set following scenario the database entry will not be deleted for attributes
+
+
+
+# Open ""Administration"" and ""Attributes""
+
+# Create a new ""Responsibility Attribute"" 
+
+# We need ""Name"" - ""Multiple Values"" - two ""Possible Attribute Values"" and ""Interface"" + ""Information System"" for ""activated for the following Building Block Types""
+
+# Save the attribute and add the attribute in one ""Interface"" and ""Information System"" 
+
+# Use the global search and search after the value of the attribute 
+
+# two hits are shown 
+
+# Delete ""Interfaces"" for the attribute ""activated for the following Building Block Types"" and save
+
+# Search again and you find again two hits 
+
+
+
+Expected: only one hit in the global search
+
+Actual: two hits for the global search, although the entry is deleted"		Bug	iteraplan Thunderduck	02/Nov/16 2:43 PM	07/Feb/17 8:44 AM														12/Jan/17 5:00 PM;msr;The bug IPTT-230 could be fixed by the new behaviour of ticket IPTS-445.																																																						

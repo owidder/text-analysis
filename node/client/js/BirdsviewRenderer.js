@@ -5,8 +5,12 @@
 
 bottle.factory("BirdsviewRenderer", function (container) {
 
+    var WAIT_TIME = 180000;
+    var TICK_TIME = 1000;
+
     var SimplePromise = container.SimplePromise;
     var proxy = container.proxy;
+    var Stream = container.Stream;
 
     function BirdsviewRenderer(birdsviewId, width, height, threshold, forceRefresh, extra) {
 
@@ -59,11 +63,25 @@ bottle.factory("BirdsviewRenderer", function (container) {
             });
         }
 
-        function waitAndDraw(id) {
-            wait(5, function () {
-                return draw(id);
-            }).then(function () {
-                stopAndDraw(id);
+        var timerReady = false;
+        function readStreamAndDraw(forceId) {
+            var stream = new Stream(function () {
+                return proxy.nextSvgChunk(forceId);
+            });
+
+            stream.isReady().then(function (svgString) {
+                drawBirdsViewFromSvgString(svgString);
+                if(timerReady) {
+                    proxy.stop(forceId).then(function () {
+                        extra.progressChangedCallback && extra.progressChangedCallback(100);
+                        readyPromise.resolve(id);
+                    });
+                }
+                else {
+                    setTimeout(function () {
+                        readStreamAndDraw(forceId);
+                    })
+                }
             });
         }
 
@@ -78,28 +96,14 @@ bottle.factory("BirdsviewRenderer", function (container) {
             return p.promise;
         }
 
-        function wait(maxTicks, funcDoEachTick) {
-            var p = new SimplePromise();
-
-            function waitOneTickOrStop(tickCtr) {
-                if(tickCtr > maxTicks) {
-                    p.resolve();
-                }
-                else {
-                    if(extra.progressChangedCallback) {
-                        extra.progressChangedCallback(tickCtr/maxTicks*100);
-                    }
-                    funcDoEachTick().then(function () {
-                        setTimeout(function () {
-                            waitOneTickOrStop(tickCtr+1);
-                        }, 10000);
-                    });
-                }
+        function doTicks() {
+            if(extra.progressChangedCallback) {
+                var ctr = 0;
+                return setInterval(function () {
+                    extra.progressChangedCallback(ctr / WAIT_TIME * 100);
+                    ctr += TICK_TIME;
+                }, TICK_TIME);
             }
-
-            waitOneTickOrStop(0);
-
-            return p.promise;
         }
 
         function start() {
@@ -107,13 +111,16 @@ bottle.factory("BirdsviewRenderer", function (container) {
             proxy.start(width, height, threshold, forceRefresh).then(function (result) {
                 id = result.id;
                 extra.loadEndedCallback && extra.loadEndedCallback();
+                timerReady = true;
                 if (result.loaded) {
-                    extra.progressChangedCallback && extra.progressChangedCallback(100);
-                    draw(result.id);
-                    readyPromise.resolve(result.id);
+                    readStreamAndDraw(result.id);
                 }
                 else {
-                    waitAndDraw(result.id);
+                    var interval = doTicks();
+                    setTimeout(function () {
+                        clearInterval(interval);
+                        readStreamAndDraw(result.id);
+                    }, WAIT_TIME);
                 }
             });
         }

@@ -1,0 +1,17 @@
+MONDAY: Show complete Business Mapping as one relation	"*Summary:*
+
+Show Business Process, Business Unit, Product and Information System - Relation as one combined Business Mapping (like in the classic Single Element View) for the Single Element View of the 4 Building Block Types above.
+
+
+
+Please merge this improvement to the RB_5_4_0 -branch"		Improvement	iteraplan Speedbird	20/Oct/16 5:10 PM	24/Oct/16 3:02 PM														"20/Oct/16 5:53 PM;roia;{quote}like in the classic Single Element View{quote}
+
+
+
+Classic view shows 3 parts, not 4. See the attachment
+
+"	"20/Oct/16 6:25 PM;roia;Fixed with rev. 4758 & 4760
+
+sorry, forgot to add log message to commit 4758"	21/Oct/16 5:26 PM;roia;OPEN TODO: show business mapping in the relation section	"22/Oct/16 10:00 AM;msr;Task for Monday, 24th October:
+
+Please complete this task and merge all commits to the Branch."																																																			

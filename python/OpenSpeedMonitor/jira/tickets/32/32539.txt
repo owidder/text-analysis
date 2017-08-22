@@ -1,0 +1,7 @@
+IE: Fehler-Tooltips haben keine Formatierung	"-In IE haben die Fehler-Tooltips keine Formatierung (z.B. bei Administration > All Controller > OsmConfigurationController)-
+
+
+
+-Neues Ziel: Tooltips internationalisieren falls möglich!- Diese Tooltips sind ein Feature von HTML (Attribut: required) und der Browser und werden. Ihre Sprachen lassen sich über die Spracheinstellung der Browser ändern.
+
+"		Bug	OpenSpeedMonitor	18/Feb/15 2:58 PM	26/Feb/15 11:53 AM														20/Feb/15 11:02 AM;rkr;Tooltips internationalisieren!falls möglich!																																																						

@@ -1,0 +1,11 @@
+Extension of selenium test for NCD	"A large part of the NCD test cases, which are documented in the Excel was covered with Seleniumtest. 
+
+Expand the Seleniumtests so that as 100% of the NCD test cases will be covered from the Excel.
+* Take existing manual test construction (that is Excel) as a basis. Implement these test cases, if nothing prevents test automation.
+* Test should be able to run on both the existing implementation and the new one. Run tests with feature toggle in both settings.
+* Test must run successfully on existing implementations.
+* Test must tolerate expected differences in new implementations. For example: no objectified types for @id.
+* Test must fail on unexpected differences.
+
+Look again on the existing test whether something can be refactored.
+"		Improvement	iteraplan PO	04/Jul/14 8:37 AM	19/Jan/16 10:35 AM																																																																				

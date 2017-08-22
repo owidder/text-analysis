@@ -1,0 +1,13 @@
+Loading Dialog for "Search" in the interactive client	"Reproduce with trunk and IE 
+
+ # Change into the tab ""SEARCH""
+
+ # Enter the word SAP and click on the search button 
+
+ # Nothing happens
+
+ # After while the search result is shown
+
+
+
+Expected: That I see, if the search is working"		Improvement	iteraplan Thunderduck	08/May/17 1:04 PM	30/May/17 4:23 PM														30/May/17 4:20 PM;aan;In the review there where errors in the console when searching. But with the current trunk of the new client there it is gone.																																																						

@@ -1,0 +1,23 @@
+Benutzergruppe "_JIRA_Stuttgart_DevOps" anlegen	"Die Stuttgarter Kollegen haben ein eigenes DevOps-Team, welches für entsprechende Themen zuständig ist. Diese werden noch einzeln in JIRA berechtigt. Das sollte aber natürlich über entsprechende Gruppen im Active Directory erfolgen.
+
+
+
+Könnt Ihr bitte eine Gruppe mit dem Namen ""_JIRA_Stuttgart_DevOps"" anlegen und die Benutzer dsh, sst, ysc, frwy dieser zuordnen?
+
+
+
+Danke sehr!"		Task	Infrastruktur	20/Jul/17 5:06 PM	21/Jul/17 11:06 AM	Sonstiges				Active-Directory									"21/Jul/17 10:52 AM;kti;Hallo Thorsten,
+
+
+
+ich habe die Gruppe _JIRA_STR-DevOps angelegt.
+
+Machst du die Zuordnung dann im Projekt oder soll ich das machen?
+
+
+
+VG
+
+
+
+Kathrin"	21/Jul/17 10:57 AM;tgo;Hallo Kathrin, danke Dir, die Zuordnung mache ich dann, da ich eh eine Mail an die Jungs schreiben darf ...	21/Jul/17 11:06 AM;tgo;Zuordnung ist geschehen, Verwaltung erfolgt nun bequem über die Gruppe.																																																				

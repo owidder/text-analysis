@@ -1,0 +1,9 @@
+Microservice kann WPT-Results von SingleStep Tests nicht interpretieren	Wenn es nur ein MeasuredEvent gibt, scheint der WPT ein anderes Format der Results zurück zu geben. DIeses kann nicht interpretiert werden, was dazu führt das nur ein Fehler NO_STEPS_FOUND persistiert wird.		Bug	OpenSpeedMonitor	22/Dec/16 3:30 PM	02/Jan/17 11:04 AM														"23/Dec/16 3:48 PM;msk;Es gibt einen Parameter _multiStepFormat_ , der den WPT dazu zwingen soll, immer im MultiStepFormat auszuliefern. Es scheint so, als ob das Feature nicht für jsonResult.php implementiert wurde. Die folgenden Requests liefern genau gleiche Ergebnisse (durch Diff Tool verifiziert):
+
+# http://prod.server04.otto.wpt.iteratec.de/jsonResult.php?test=161223_S2_112&requests=1
+
+# http://prod.server04.otto.wpt.iteratec.de/jsonResult.php?test=161223_S2_112&requests=1&multiStepFormat=1
+
+
+
+Der Parameter _multiStepFormat_ wird auch bereits mit ausgeliefert."	02/Jan/17 10:07 AM;sbr;Der richtige Parameter heißt "multistepFormat=1" (also mit kleinem s)	02/Jan/17 11:04 AM;msk;Hab den Parameter angepasst.																																																				

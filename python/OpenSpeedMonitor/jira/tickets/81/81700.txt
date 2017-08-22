@@ -1,0 +1,355 @@
+Excel Export via REST not localized for English	"Timebox:1 
+
+
+
+two things to do:
+
+# Change the test case in REST Read Access Tests Excel sheet, or remove it. Expecting a REST request to consider the locale set for a user session via UI is an over-engineered corner case.
+
+# Check whether setting the Export language via Accept-language header works as expected
+
+
+
+\#### old description (no longer valid, for reference purposes only ####
+
+
+
+based on ""initialData"" login as system, change locale to English and execute
+
+GET /api/data?format=xlsx
+
+
+
+Expected Result (cf. REST Read Access Tests): ""response code 200 xlsx file response without any BuildingBlocks localized strings are in locale en""
+
+
+
+Actual Result: I observed two different behaviours which are both wrong.
+
+# Resulting Excel Sheet is in German instead of English
+
+# An IllegalStateException occurs, see logging information/stacktrace below
+
+{code}INFORMATION: 2016-04-24	19:42:36	127.0.0.1	-	127.0.0.1	8080	GET	/iteraplan/api/data	format=xlsx	401	86	0	4	http://localhost:8080	Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0	-
+
+[ERROR] [2016-04-24 20:16:36] (resource.data.DataResource) java.lang.IllegalStateException: java.util.concurrent.ExecutionException: de.iteratec.iteraplan.elasticmi.exception.ElasticMiException: IteraQl model and data loading failed: 
+
+de.iteratec.iteraplan.elasticmi.exception.ElasticMiException: java.lang.IllegalStateException: Cannot set 2 values on property with upper bound 1
+
+de.iteratec.iteraplan.elasticmi.exception.ElasticMiException: java.lang.IllegalStateException: java.util.concurrent.ExecutionException: de.iteratec.iteraplan.elasticmi.exception.ElasticMiException: IteraQl model and data loading failed: 
+
+de.iteratec.iteraplan.elasticmi.exception.ElasticMiException: java.lang.IllegalStateException: Cannot set 2 values on property with upper bound 1
+
+	at de.iteratec.iteraplan.elasticmi.m3c.SimpleM3C$ErrorM3C.getRMetamodel(SimpleM3C.java:93)
+
+	at de.iteratec.iteraplan.elasticmi.m3c.FutureM3C.getRMetamodel(FutureM3C.java:71)
+
+	at de.iteratec.iteraplan.elasticmi.m3c.FutureOrSimpleM3C.getRMetamodel(FutureOrSimpleM3C.java:53)
+
+	at de.iteratec.iteraplan.elasticmi.m3c.SuccessorM3C.getRMetamodel(SuccessorM3C.java:105)
+
+	at de.iteratec.iteraplan.elasticmi.ElasticMiContext.updateContext(ElasticMiContext.java:83)
+
+	at de.iteratec.iteraplan.elasticmi.ElasticMiContext.getContextMetamodel(ElasticMiContext.java:134)
+
+	at de.iteratec.iteraplan.presentation.rest.representation.ExcelDataRepresentationHandler.process(ExcelDataRepresentationHandler.java:28)
+
+	at de.iteratec.iteraplan.presentation.rest.resource.AResource.process(AResource.java:126)
+
+	at de.iteratec.iteraplan.presentation.rest.resource.data.DataResource.getXLSX(DataResource.java:63)
+
+	at de.iteratec.iteraplan.presentation.rest.resource.data.ADataResource.getPermCheckedXLSX(ADataResource.java:68)
+
+	at de.iteratec.iteraplan.presentation.rest.resource.data.ADataResource.doGetResource(ADataResource.java:55)
+
+	at de.iteratec.iteraplan.presentation.rest.resource.AResource.getResource(AResource.java:147)
+
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+	at java.lang.reflect.Method.invoke(Method.java:497)
+
+	at org.restlet.resource.ServerResource.doHandle(ServerResource.java:524)
+
+	at org.restlet.resource.ServerResource.get(ServerResource.java:743)
+
+	at org.restlet.resource.ServerResource.doHandle(ServerResource.java:618)
+
+	at org.restlet.resource.ServerResource.doNegotiatedHandle(ServerResource.java:679)
+
+	at org.restlet.resource.ServerResource.doConditionalHandle(ServerResource.java:357)
+
+	at org.restlet.resource.ServerResource.handle(ServerResource.java:1014)
+
+	at org.restlet.resource.Finder.handle(Finder.java:246)
+
+	at org.restlet.routing.Filter.doHandle(Filter.java:159)
+
+	at org.restlet.routing.Filter.handle(Filter.java:206)
+
+	at org.restlet.routing.Router.doHandle(Router.java:431)
+
+	at org.restlet.routing.Router.handle(Router.java:648)
+
+	at org.restlet.routing.Filter.doHandle(Filter.java:159)
+
+	at org.restlet.routing.Filter.handle(Filter.java:206)
+
+	at org.restlet.routing.Filter.doHandle(Filter.java:159)
+
+	at org.restlet.routing.Filter.handle(Filter.java:206)
+
+	at org.restlet.routing.Filter.doHandle(Filter.java:159)
+
+	at org.restlet.engine.application.StatusFilter.doHandle(StatusFilter.java:155)
+
+	at org.restlet.routing.Filter.handle(Filter.java:206)
+
+	at org.restlet.routing.Filter.doHandle(Filter.java:159)
+
+	at org.restlet.routing.Filter.handle(Filter.java:206)
+
+	at org.restlet.engine.CompositeHelper.handle(CompositeHelper.java:211)
+
+	at org.restlet.engine.application.ApplicationHelper.handle(ApplicationHelper.java:84)
+
+	at org.restlet.Application.handle(Application.java:384)
+
+	at org.restlet.routing.Filter.doHandle(Filter.java:159)
+
+	at org.restlet.routing.Filter.handle(Filter.java:206)
+
+	at org.restlet.routing.Router.doHandle(Router.java:431)
+
+	at org.restlet.routing.Router.handle(Router.java:648)
+
+	at org.restlet.routing.Filter.doHandle(Filter.java:159)
+
+	at org.restlet.routing.Filter.handle(Filter.java:206)
+
+	at org.restlet.routing.Router.doHandle(Router.java:431)
+
+	at org.restlet.routing.Router.handle(Router.java:648)
+
+	at org.restlet.routing.Filter.doHandle(Filter.java:159)
+
+	at org.restlet.engine.application.StatusFilter.doHandle(StatusFilter.java:155)
+
+	at org.restlet.routing.Filter.handle(Filter.java:206)
+
+	at org.restlet.routing.Filter.doHandle(Filter.java:159)
+
+	at org.restlet.routing.Filter.handle(Filter.java:206)
+
+	at org.restlet.engine.CompositeHelper.handle(CompositeHelper.java:211)
+
+	at org.restlet.Component.handle(Component.java:406)
+
+	at org.restlet.Server.handle(Server.java:516)
+
+	at org.restlet.engine.connector.ServerHelper.handle(ServerHelper.java:72)
+
+	at org.restlet.engine.adapter.HttpServerHelper.handle(HttpServerHelper.java:152)
+
+	at org.restlet.ext.servlet.ServerServlet.service(ServerServlet.java:1118)
+
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.orm.hibernate5.support.OpenSessionInViewFilter.doFilterInternal(OpenSessionInViewFilter.java:151)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at de.iteratec.iteraplan.presentation.ContextFilter.doFilter(ContextFilter.java:83)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:118)
+
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:154)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
+
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:122)
+
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java)
+
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:614)
+
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:614)
+
+	at org.apache.catalina.core.StandardHostValve.__invoke(StandardHostValve.java:169)
+
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java)
+
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)
+
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:423)
+
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1079)
+
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:625)
+
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+
+	at java.lang.Thread.run(Thread.java:745)
+
+Caused by: java.lang.IllegalStateException: java.util.concurrent.ExecutionException: de.iteratec.iteraplan.elasticmi.exception.ElasticMiException: IteraQl model and data loading failed: 
+
+de.iteratec.iteraplan.elasticmi.exception.ElasticMiException: java.lang.IllegalStateException: Cannot set 2 values on property with upper bound 1
+
+	... 115 more
+
+Caused by: java.util.concurrent.ExecutionException: de.iteratec.iteraplan.elasticmi.exception.ElasticMiException: IteraQl model and data loading failed: 
+
+de.iteratec.iteraplan.elasticmi.exception.ElasticMiException: java.lang.IllegalStateException: Cannot set 2 values on property with upper bound 1
+
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+
+	at de.iteratec.iteraplan.elasticmi.m3c.FutureM3C.extractFromFuture(FutureM3C.java:95)
+
+	at de.iteratec.iteraplan.elasticmi.m3c.FutureM3C.isReady(FutureM3C.java:63)
+
+	at de.iteratec.iteraplan.elasticmi.m3c.FutureOrSimpleM3C.isReady(FutureOrSimpleM3C.java:65)
+
+	at de.iteratec.iteraplan.elasticmi.m3c.SuccessorM3C.replaceCurrentIfNeccessary(SuccessorM3C.java:138)
+
+	at de.iteratec.iteraplan.elasticmi.m3c.SuccessorM3C.isReady(SuccessorM3C.java:98)
+
+	at de.iteratec.iteraplan.elasticmi.ElasticMiContext.updateContext(ElasticMiContext.java:76)
+
+	at de.iteratec.iteraplan.elasticmi.ElasticMiContext.getContextMetamodel(ElasticMiContext.java:134)
+
+	at de.iteratec.iteraplan.presentation.rest.representation.JsonModelRepresentationHandler.process(JsonModelRepresentationHandler.java:30)
+
+	at de.iteratec.iteraplan.presentation.rest.resource.AResource.process(AResource.java:126)
+
+	at de.iteratec.iteraplan.presentation.rest.resource.data.DataResource.getJson(DataResource.java:50)
+
+	at de.iteratec.iteraplan.presentation.rest.resource.data.ADataResource.getDefault(ADataResource.java:85)
+
+	at de.iteratec.iteraplan.presentation.rest.resource.data.ADataResource.doGetResource(ADataResource.java:58)
+
+	... 104 more
+
+Caused by: de.iteratec.iteraplan.elasticmi.exception.ElasticMiException: IteraQl model and data loading failed: 
+
+de.iteratec.iteraplan.elasticmi.exception.ElasticMiException: java.lang.IllegalStateException: Cannot set 2 values on property with upper bound 1
+
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticmi.IteraplanMiLoadTask.call(IteraplanMiLoadTask.java:116)
+
+	at de.iteratec.iteraplan.elasticmi.load.ElasticMiLoadTask.call(ElasticMiLoadTask.java:1)
+
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+
+	... 1 more
+
+Caused by: de.iteratec.iteraplan.elasticmi.exception.ElasticMiException: java.lang.IllegalStateException: Cannot set 2 values on property with upper bound 1
+
+	at de.iteratec.iteraplan.persistence.iteraql.updater.PropertyValueUpdater.getValue(PropertyValueUpdater.java:177)
+
+	at de.iteratec.iteraplan.persistence.iteraql.updater.PropertyValueUpdater.updateOE(PropertyValueUpdater.java:85)
+
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticmi.MiModelLoader$LoadRun.createObjectExpressions(MiModelLoader.java:131)
+
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticmi.MiModelLoader$LoadRun.load(MiModelLoader.java:96)
+
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticmi.MiModelLoader.load(MiModelLoader.java:67)
+
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticmi.IteraplanMiLoadTask.loadModel(IteraplanMiLoadTask.java:138)
+
+	at de.iteratec.iteraplan.elasticmi.load.ElasticMiLoadTask.call(ElasticMiLoadTask.java:38)
+
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticmi.IteraplanMiLoadTask.call(IteraplanMiLoadTask.java:101)
+
+	... 5 more
+
+Caused by: java.lang.IllegalStateException: Cannot set 2 values on property with upper bound 1
+
+	at de.iteratec.iteraplan.persistence.iteraql.updater.PropertyValueUpdater.getValue(PropertyValueUpdater.java:178)
+
+	... 12 more{code}"		Bug	iteraplan Thunderduck	24/Apr/16 8:29 PM	06/Mar/17 1:06 PM														"06/Mar/17 10:50 AM;tsc;# Test case is not yet defined in the new test environment.
+
+ # Export language works as requested."																																																						

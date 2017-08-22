@@ -1,0 +1,4 @@
+Unstimmigkeiten mit Angabe zur letzten/nächsten Ausführung eines Jobs	"# Ist die Editierungsseite geöffnet und der nächste gültige Zeitpunkt für den eingegebenen Cron-String läuft ab, entstehen Ausgaben wie ""Nächste Ausführung vor 14 Minuten"". 
+# Jobtabelle
+## Ist ein Job beendet, steht nach wie vor die alte Zeit unter ""letzte Ausführung"".
+## Wird ein Job per Cron gestartet, verschwindet die Angabe zur nächsten Ausführung."		Task	OpenSpeedMonitor	13/Feb/14 3:01 PM	19/Feb/14 4:43 PM																																																																				

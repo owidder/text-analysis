@@ -1,0 +1,39 @@
+Save and search for public saved queries of lists and diagrams	"* Add possibility to save a list view configuration and a diagram configuration (including its filters) as public saved query. (Fields like in the Personal Saved Queries IPTQ-28)
+
+* Show a list of all public saved queries. (See IPTQ-28 for columns, e.g. make this list searchable by name, type, author...)
+
+
+
+Out of scope for now:
+
+* an iteraQL query (legacy)
+
+* Edit status of list or diagram (saved query)"		Epic	iteraplan Quickfox	21/Jan/16 1:23 PM	24/Nov/16 10:02 AM														"25/Jan/16 3:49 PM;wfr;Estimation notes [~sfe] [~wfr]
+
+
+
+UI one table with all metadata (kind of element: list, diagram, iql; author; modified)
+
+REST one resource with list of all (no filtering here)
+
+DAO
+
+TABLE one for everything, different payload kinds all as string
+
+
+
+included:
+
+* ""save as"" dialog, initiated by a view
+
+
+
+excluded
+
+* migration of saved things from classic client or server to new format
+
+
+
+existing
+
+* simple way to read from or write to a complete configuration of a view/query, even if it is too long for the $locatio"	24/Nov/16 10:02 AM;fka;All done																																																					

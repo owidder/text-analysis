@@ -1,0 +1,1 @@
+Add logging for created elements	Similar to ITERAPLAN-3916, add logging for created building blocks.		New Feature	iteraplan PO	02/Oct/15 10:06 AM	05/Oct/15 10:19 AM														02/Oct/15 3:06 PM;sfe;Documentation updated: http://www.iteraplan.de/doc/display/iteraplan51/Logging+of+created+and+deleted+building+blocks																																																						

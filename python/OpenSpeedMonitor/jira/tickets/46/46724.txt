@@ -1,0 +1,3 @@
+Defect in Migrationscript 3.2 -> 3.3	"The migration script changes unintentionally the column ""Version"" for ISR and TCR from varchar to int.
+
+Affected is only the mysql script."		Bug	iteraplan PO	07/Jul/14 11:35 AM	07/Jul/14 1:01 PM																																																																				

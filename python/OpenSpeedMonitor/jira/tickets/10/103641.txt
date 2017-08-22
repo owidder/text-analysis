@@ -1,0 +1,5 @@
+Enrich microedit responses with appliedChanges information	"each single element (micro edit) request should return the information about changes, that wer triggered by this request
+
+e.g. Last mod. time and user or Plugin Api changes.
+
+enrich response JSON with the field appliedChanges that contains structured information about model changes."		Improvement	iteraplan Thunderduck	23/Nov/16 11:33 AM	25/Nov/16 10:15 AM																																																																				

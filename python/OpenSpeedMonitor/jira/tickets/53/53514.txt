@@ -1,0 +1,13 @@
+Order of business processes changes after Excel reimport	"Steps:
+
+1. export current data as Excel file
+
+2. delete all business processes
+
+3. import the previously loaded Excel file
+
+
+
+Result:
+
+Order of processes is lost although mentioned in Excel (position)."		Bug	iteraplan PO	12/Aug/15 12:20 PM	25/Aug/15 11:46 AM					excel	import	position																																																													

@@ -1,0 +1,101 @@
+Create Building-Block-Type-Selection for Level 1	"*Summary:*
+
+Create Building-Block-Type-Selection for Level 1
+
+
+
+*As-Is:*
+
+* Information System is hard-coded in the configuration
+
+
+
+*To-Be:*
+
+* The user can select any Building Block Type for Level 1 in the ToolArea
+
+
+
+*Affected JS-Files:*
+
+* mpdConfiguration
+
+* mpdController (transferAction)
+
+* mpdLegendController
+
+* mpdLegendMain
+
+* mpdLegendBuilder
+
+* mpdToolAreaViewModelBuilder
+
+* mpdContentController
+
+* mpdContentMain
+
+* mpdDataService
+
+
+
+*Implementation Details:*
+
+* This is the first ticket with a need for a Tool Area.
+
+* Therefore, the main tasks to do in this ticket is about the Tool Area.
+
+* Ask [~mada] for the interaction between Tool Area and Controller and Configuration
+
+* The user-set configuration should be used in the mpdDataService and in the legend.
+
+* Use English terms also for the German localisation.
+
+
+
+*UI:*
+
+* Talk to [~msr] *before* starting this ticket
+
+* Create a new Tool Area Main Entry called ""Content element type""
+
+* Next level of the Tool Area (Drop-Down of Content element type) displays ""Level 1"", ""Level 2"" and ""Level 3""
+
+* When you hover over ""Level 1"" all Building Block Types are shown in an alphabetical order. The actual selection is highlighted in bold.
+
+* Information System is default value.
+
+* Legend is created in ITERAPLAN-4522
+
+
+
+*Acceptance Criteria:*
+
+* The user opens a Masterplan Diagram.
+
+* A default Masterplan Diagram is shown with Information System as Level 1
+
+* The user clicks with primary click on any diagram element in the content.
+
+* The Tool Area opens immediately
+
+* The user hovers over ""Content element type"" in the Tool Area
+
+* A Drop-Down opens immediately
+
+* The user hovers over ""Level 1""
+
+* Right of Level 1 an additional menu opens immediately which shows all Building Block Types
+
+* Information System is highlighted in bold
+
+* The user selects ""Projects""
+
+* The Tool Area is closed immediately, the diagram is redrawn
+
+* Projects are now shown as Level 1 elements, the legend is updated
+
+"		New Feature	iteraplan PO	26/Apr/16 3:52 PM	14/Jun/16 10:16 AM														04/May/16 3:56 PM;msr;This works only for Information Systems and Technical Components as all other Building Block Types do *not* have a predefined duration-attribute. => Need for a follow-up ticket.	"12/May/16 12:00 PM;mada;add implementation only for Level 1
+
+add unit tests"	"23/May/16 1:37 PM;msr;First review comment:
+
+Filter out all relations for Level 1 (in the toolarea)."	05/Jun/16 5:14 PM;msr;Review comments: https://iteraweb.iteratec.de/fisheye/cru/IP-21	08/Jun/16 9:53 AM;wfr;Discuss with Wolfgang: Unit test should not need clicks, how to test otherwise. [~wfr]	09/Jun/16 2:41 PM;mada;can't add unit tests for mpdDiagramBuilder.getSelectionType() function as there is limitation to simulate user activiti for GoJS diagram.	10/Jun/16 1:58 PM;msr;Please change JSDoc according to https://iteraweb.iteratec.de/fisheye/cru/IP-21#CFR-21457 . Thanks.	13/Jun/16 5:26 PM;mada;fix JDoc after review	14/Jun/16 10:16 AM;msr;Done.																																														

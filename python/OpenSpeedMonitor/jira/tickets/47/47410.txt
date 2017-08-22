@@ -1,0 +1,2 @@
+Open context menu items shouldn't go beyond screen	open context menu items in direction that opposite to nearest window's border		New Feature	iteraplan PO	11/Feb/15 10:52 AM	13/Feb/15 4:02 PM														"13/Feb/15 4:02 PM;dasm;Verified
+Revision 650"																																																						

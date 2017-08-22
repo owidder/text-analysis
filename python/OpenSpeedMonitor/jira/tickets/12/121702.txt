@@ -1,0 +1,21 @@
+Passwörtern in Konfigurationsdateien im Klartext gespeichert.	"Die Zugangspasswörter für die technischen Benutzer der Datenbank und des Firmen-LDAPs sind in den Dateien iteraplan-db.properties und iteraplan-auth.properties im Klartext abgelegt  ##
+
+
+
+Das stellt aus unserer Sicht - trotz Sicherung der entsprechenden Verzeichnisse über Berechtigungseingrenzuung ein Sicherheitsrisiko dar. Ist hier geplant, eine verschlüsselte Ablage einzuführen? "		Technical question	iteraplan Support	18/May/17 7:26 AM	19/May/17 1:13 PM														"19/May/17 1:13 PM;cst;Sehr geehrter Herr Meister,
+
+
+
+vielen Dank für Ihre Anfrage.
+
+
+
+Dies ist eine gute Anregung und für eine weitere Umsetzung von unserem Produktmanagement geprüft. 
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support"																																																						

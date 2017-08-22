@@ -1,0 +1,12 @@
+Partial Error Messages in Excel Import	"To reproduce:
+1. export the excel data
+2. create several errors(that our validator should detect) on different pages in the excel file
+3. try to import it
+ ==> import fails due to the erros in the excel file, but the error message doesn't contain every error that exist in the excel file.
+Expected behaviour is, that every single error in the excel file is listed in the error message."		Bug	iteraplan PO	23/May/13 10:22 AM	26/Jul/13 4:43 PM					error	excel	import	message	validation					"24/Jul/13 2:48 PM;lba;This problem appears, if you have errors in the excel import and errors in the validation part.
+Example:
+A date contains a String -> error in excel import.
+A forbidden character in a InformationSystem -> error in Validator."	"24/Jul/13 3:15 PM;lba;If someone has concerns about the solution (always run validator even if excelimport fails), feel free to bring them up.
+My biggest concern is: could errors which occur in the excel import, provoke errors in the validator? I talked with 
+Stephan about it, he came to the conclusion that errors in the excel import will usually not cause errors in the validator.
+"	26/Jul/13 4:43 PM;svo;fix works, validator now always runs, regardless of the result of the import.	20/Aug/13 3:49 PM;psc;Reviewed with Lars. Solution accepted.																																																			

@@ -1,0 +1,9 @@
+GET-Request on multiple sessions lead to out of memory	"Follow-up ticket to ITERAPLAN-2792
+
+As described in above ticket multiple sessions with many GET-Requests on a big dataset lead to a memory error (out of memory).
+Multiple sessions presumably are created due to the use of basic authentication for the requests, which results in a new session for each request.
+
+Analyse and fix this error (if possible with reasonable effort).
+
+First idea: Each sessions loads its own metamodel and, most importantly, model. This could be a possible reason for the high memory usage. In that case one possible fix is to find a way to discard the session after the response was sent, as the session won't be used anymore anyway (This is only true for the use of the basic authentication method.)
+See whether Restlet or Spring offer configuration options for such a case."		Bug	iteraplan PO	13/Nov/14 2:41 PM	03/Dec/14 3:30 PM					memory	metamodel																																																														

@@ -1,0 +1,1 @@
+Reporting-Job als Unteraufgabe von Job einführen		51767	Sub-task	secureCodeBox	24/Jul/15 8:30 PM	19/Jun/16 1:28 PM														19/Jun/16 1:28 PM;rfe;Durch den Einsatz der Camunda Engine und "externer service tasks" erstmal nicht notwendig.																																																						

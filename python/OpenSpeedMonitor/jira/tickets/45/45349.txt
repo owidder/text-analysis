@@ -1,0 +1,10 @@
+iteraQL permission problem with association building blocks	"Example:
+The query
+{{TC/tc2tcrieassociation/tcrieassociation2ie;}}
+when logged in with a not ""system"" user, leads to an error stating you don't have the permissions to execute this query.
+
+Reason is that the permission for TcrIeAssociation is checked with a call of the {{userHasPermissionForModelEntity}} method of {{IteraplanPermissionsProvider}}, but no entry for these association building blocks exists in the permissions map of the class {{Permissions}}, which is used for the permissions check.
+
+This also leads to problems with the nesting cluster graphic when trying to create a diagram involving a relationship-path including such an association building block."		Bug	iteraplan PO	27/Jan/12 11:27 AM	06/Apr/12 11:43 AM					iteraql	permissions								04/Apr/12 7:28 PM;kgo;Happens just the same with the new iteraQl.	"06/Apr/12 11:41 AM;isc;The language was changed.
+The new query is:
+{{TechnicalComponent /infrastructureElementAssociations /infrastructureElement;}}"																																																					

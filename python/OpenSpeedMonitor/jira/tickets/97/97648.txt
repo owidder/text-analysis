@@ -1,0 +1,3 @@
+Rest API für die Abfrage von Rohdaten hinzufügen	Es soll eine Rest API erstellt werden, über die eine AssetGroup mit allen zugehörigen Assets abgefragt werden kann. Als Parameter werden WptTestId und WptServerUrl benötigt.		Task	OpenSpeedMonitor	28/Sep/16 2:24 PM	29/Sep/16 11:29 AM														"29/Sep/16 11:29 AM;msk;Beispielaufruf:
+
+http://localhost:8081/restApi/getAssetRequestGroup?wptTestId=160916_V6_F8&wptServerBaseUrl=http://dev.server02.wpt.iteratec.de/"																																																						

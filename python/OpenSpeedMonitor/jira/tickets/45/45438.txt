@@ -1,0 +1,9 @@
+Attributes on relation between Technical Component and Infrastructure Element	"created new attribute (type: text attribute - see attachment) with name ""test"" and activated it for ""relation between technical component and infrastructure element"".
+
+After this, I found no way to add values for this attribute either in view of technical components when choose a infrastructure element nor in view of infrastructure (other direction).
+
+Attribute not accessible?
+
+Tested in nightly build and own installation (2.9.1, 2.9.0) and wont work!
+
+Have tested also relation between information system and business object: There this works after choosing a element for relationship, then saving and then going to edit-mode - not nice ... should be accessible at choosing the related object (choose object and add attribute)."		New Feature	iteraplan PO	28/Mar/12 9:47 AM	04/Jun/12 12:06 PM					attribute									28/Mar/12 9:59 AM;kvo;Attributes on this relation are planned, but currently not fully supported. We will remove the selection in the first place, enabling full support in a later release.	01/Jun/12 7:50 AM;vsh;Done.	04/Jun/12 12:06 PM;sry;well done, didn't expect to see such an elegant solution.																																																				

@@ -1,0 +1,1 @@
+Restrict width of description field in Single Element View	Restrict width of description field in Single Element View to the window size and enforce line breaks.		Bug	iteraplan Speedbird	27/Jan/17 4:42 PM	08/Feb/17 2:52 PM														08/Feb/17 2:52 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-347																																																						

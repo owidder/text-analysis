@@ -1,0 +1,55 @@
+Export/Import UI improvement part 2	"h2. Export section
+
+
+
+* Rename title from ""Download Data"" to ""Export Data"" (German is already correct)
+
+* Remove ""(Xlsx)""
+
+* Replace 4 download buttons with 2*2 radio-buttons, i.e.
+
+** ""Format"" /GER: ""Format"" with 2 radiobuttons with ""Excel"" and ""Xmi"" (Excel is default and already selected)
+
+** right of it: ""Model"" /GER: ""Modell"" with 2 radiobuttions with ""Datamodel"" and ""Metamodel"" (""Datamodel is default and already selected)
+
+* Button on the bottom right side of this tile: ""Start Export"" / GER: ""Export starten""
+
+* Only if partial is active the type and filter do appear (in all other case they are hidden):
+
+** Rename ""Filter"" to ""Select Type"" / GER: ""Typ auswählen""
+
+** Type-List should be dynamic depending on the actual metamodel and not hard-coded
+
+** Rename ""iteraQL filter"" to ""Optional filter"" / GER: ""Optionaler Filter""
+
+** Font color for ""Example: @costs > 1000"" should be black
+
+
+
+h2. Import section
+
+
+
+* Rename ""Import Strategies"" to ""Strategy"" / GER: ""Strategie""
+
+* Put the classic client descriptions after the strategies
+
+* Put ""Include Metamodel changes"" to a new line
+
+* Rename ""Upload"" to ""Select file and start import"" / GER: ""Datei auswählen und Import starten""
+
+* Color skipped entries with yellow (like massupdate-feature)
+
+* Remove ""done"", ""skipped"" and ""error""-words on the bottom
+
+* Put the log out of the import-tile into a new log-tile on the bottom of page with full screen width"		Improvement	iteraplan Speedbird	19/Apr/17 10:01 AM	10/May/17 9:11 AM														"02/May/17 12:00 PM;viol;it's my fault I committed to another ticket
+
+please add this revision #6718 for review"	"08/May/17 10:55 AM;mash;Review is done: Check screenshots.
+
+ # I uploaded wrong .zip file -> no error is shown. Nothing is shown.
+
+ # Please put radio buttons pairs in the right position for better look of UI.
+
+ # IT service if on top for select type dropdown. Sort all BB types properly.
+
+ # Ticket description says that : Button on the bottom right side of this tile: ""Start Export"" / GER: ""Export starten"". Move it properly"	08/May/17 2:34 PM;viol;please add this revision #6784 																																																				

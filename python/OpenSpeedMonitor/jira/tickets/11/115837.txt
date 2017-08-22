@@ -1,0 +1,27 @@
+Legend and Colors will not be updated correctly	"Reproduce with trunk and IE 11
+
+ # Open the Pie Chart Diagram 
+
+ # Set ""Content Type"" to ""Project"" and ""Attribute"" to ""Strategic value""
+
+ # Open the ""Legend""
+
+ # Change to ""DATA"" and ""Project"" 
+
+ # Add the column ""Strategic value"" and change one value to e.g 6000  
+
+ # Reopen the PIE Chart Diagram and the colors all the same and the legen is not correct
+
+
+
+Expected: That the Diagram will be reloaded and shows the correct coloring / legende
+
+Actual: The coloring does not work and the legend stays the same 
+
+
+
+The reason for this are the ranges which will be saved in the URL."		Bug	iteraplan Speedbird	22/Mar/17 2:13 PM	04/Apr/17 6:29 PM														"04/Apr/17 6:29 PM;mash;Review is done
+
+
+
+ "																																																						

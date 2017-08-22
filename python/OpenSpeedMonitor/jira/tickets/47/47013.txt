@@ -1,0 +1,3 @@
+REST interface doesn't support Accept-Language header	"Our REST interface doesn't support Accept-Language header.
+It should possible to use the Excel Export via REST with different languages. Therefore you can use the Accept-Language header, but it is not supported from our REST interface."		Bug	iteraplan PO	30/Sep/14 4:26 PM	17/Oct/14 1:20 PM														"03/Oct/14 9:31 AM;isc;I have extended the documentation for the language setting.
+http://www.iteraplan.de/wiki/display/upcomingIteraplan/Automating+Data+Export+and+Import"																																																						

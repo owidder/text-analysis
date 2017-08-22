@@ -1,0 +1,2 @@
+Analysis: Drag & Drop in the IFD	"Analyse the possibilities for drag & drop of nodes in the Information Flow Diagram.
+Use a seperate branch for a full ""Durchstich"" throughout the application."		New Feature	iteraplan PO	17/Jun/15 4:03 PM	08/Jul/15 3:06 PM														08/Jul/15 3:06 PM;msr;Already implemented by ITERAPLAN-3726																																																						

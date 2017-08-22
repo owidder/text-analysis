@@ -1,0 +1,36 @@
+Warum ist das AXA System so lahm?	"Hallo,
+
+Ich hatte die Historymigration (für Test, also ohne Prod-Last) bei uns auf einem Server im Rechenzentrum gestartet.
+
+Es dauert dort ca 4-5 mal so lange wie bei Ihnen.
+
+Die CPU war nur bei 10%.
+
+Was machen wir falsch, bzw. wie können wir messen, ob es bei uns noch Bremsen gibt.
+
+
+
+Besten Dank
+
+Armin Joachimsmeyer"		Technical question	iteraplan Support	24/Mar/17 11:29 AM	27/Mar/17 1:05 PM														"27/Mar/17 7:42 AM;cst;Guten Morgen Herr Joachimsmeyer,
+
+vielen Dank für Ihre Anfrage.
+
+Das Tool ist kein Kriterium Ihrer Performance für iteraplan / Server. Für die History-Migration wurde dieses Tool eigens programmiert und es kann hier zu längeren Wartezeiten kommen. Auch ist es verständlich das eine lokale durchgeführte Migration, welche ich auf meinen Rechner durchgeführt habe, schneller durchläuft. Da Datenbank lokal auf meinem System vorhanden ist und er sich nicht durch alle Infrastrukturelemente graben muss. Dies passiert bei der Migration eigentlich bei jedem Element.  
+
+Die History-Migration war eine einmalige Sache und es ist wirklich nicht notwendig hier die Server unter die Lupe zu nehmen. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+ 
+
+ "	"27/Mar/17 12:47 PM;armin.joachimsmeyer@axa.de;Hallo Herr Stangl,
+danke für die ausführliche Rückmeldung.
+Wir sind ja immer auf der Suche nach Performaceverbesserungen, in der Vergangenheit hatten wir ja auch schon einige Erfolge damit.
+
+Dann kann das Ticket ja geschlossen werden :-)
+
+Beste Grüße
+Armin Joachimsmeyer"																																																					

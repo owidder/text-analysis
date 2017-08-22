@@ -1,0 +1,13 @@
+Reduce number of attributes in (a new) demo data set	"In preparation of ticket ITERAPLAN-2958
+
+Establish a new (second) set of demo data, based on the current set after the extension with it services. This second set should be used only with the lite edition of iteraplan. The current set remaining unchanged should be used with the enterprise edition.
+
+Overall not more than 10 attributes should be in the new demo data set. As of now each of them might be assigned to more than one building block. All types of attributes should still be present. The reduction should be made in a reasonable way.
+"		Improvement	iteraplan PO	12/Mar/15 9:31 AM	18/May/15 11:00 AM					demo									"25/Mar/15 8:07 AM;msr;Still Open To-Dos:
+* Link remaining 10 attributes to other Building Block Types and set values
+* Adapt ""Gespeicherte Abfragen"", Visualisations and Dashboards
+* Create Jenkins-Job with new Database for Lite-Data, BUT DO NOT SET IT ACTIVE (wait for April-Release)
+* Rename Ant-Target to ""db.createBankDataLite"""	"13/May/15 9:27 AM;sfe;* Attribute assignments to building block types are confirmed as okay by fka
+* Saved queries for visualizations and spreadsheet reports, as well as custom dashboard template were adjusted to the new data
+* New jenkins job is not necessary, as the new data can be used in a bundle build by setting build properties accordingly.
+* Current ant tarbget name ""db.createLiteData"" was deemed to be okay, thus not changed"	18/May/15 10:07 AM;tam;Some building blocks could not be displayed (e.g. information systems, technical components, business objects).																																																				

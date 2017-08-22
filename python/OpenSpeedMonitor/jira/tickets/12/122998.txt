@@ -1,0 +1,49 @@
+Saved Queries - an exception occurs when showing query in any Diagram	"h4. Problem Description:
+
+
+
+Saved Queries - An exceptions occur when showing query in any Diagram except Nested Cluster
+
+
+
+ 
+
+h4. Reproduction Steps:
+
+ * Open application and navigate to Report> Saved Queries page
+
+ * Open any query
+
+ * Press ""Show in Diagram"" button
+
+
+
+ 
+
+h4. Observed Results:
+
+
+
+ For every Diagram an exception occurs.
+
+
+
+ 
+
+h4. Expected Results:
+
+
+
+ Diagram for query should be opened without any errors.
+
+
+
+ 
+
+h4. Note:
+
+ - Used dev and #330 in FF
+
+
+
+ - See attached screenshots"		Bug	iteraplan PO	31/May/17 5:19 PM	08/Jun/17 3:44 PM														08/Jun/17 11:54 AM;fka;Currenty not reproducible, no such button in the view 	08/Jun/17 3:43 PM;naba;I have updated steps, but looks like this ticket is not reproducible any more (checked with #340 build). Maybe it was something in developing.																																																					

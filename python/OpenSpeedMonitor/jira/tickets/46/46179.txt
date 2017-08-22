@@ -1,0 +1,1 @@
+Nesting Cluster EE / Win7 / IE9 / Oracle		46148	Sub-task	iteraplan PO	22/Oct/13 10:52 AM	24/Oct/13 4:01 PM					test									24/Oct/13 3:49 PM;lba;Only thing that i noticed while testing with IE9, Svg-Diagrams can not be scrolled horizontal with the mouse wheel.																																																						

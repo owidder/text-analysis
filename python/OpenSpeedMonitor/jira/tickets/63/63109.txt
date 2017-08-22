@@ -1,0 +1,13 @@
+Filter Unification in interactive diagrams	"Goal of this issue is to move the code for Filter configuration and execution to one place where all (goJS) diagrams can use it. This is to make filtering consistent across the diagrams, and the code easier to maintain.
+
+
+
+There are two parts to this, see subtasks.
+
+
+
+----
+
+Status planning Dec. 2: only review, code already in use.
+
+----"		Improvement	iteraplan PO	11/Nov/15 9:43 AM	15/Dec/15 10:00 AM					filtering																																																															

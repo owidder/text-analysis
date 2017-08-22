@@ -1,0 +1,107 @@
+Auswahl gespeicherter Abfragen beim Reactor schlägt fehl	"Schritte zum Nachstellen:
+
+1. neues System anlegen
+
+2. neue Abfrage erstellen, die nur dieses eine System filtert
+
+3. simples Reactor-Skript hochladen (z.B. das im Anhang)
+
+4. Bei den Einstellungen des Skripts die Abfrage-ID eintragen
+
+5. Skript ausführen
+
+
+
+Man kann natürlich auch ein bestehendes Skript und eine bestehende Abfrage, z.B. aus der Demo hernehmen. Der Fehler bleibt der gleiche.
+
+
+
+Beim zweiten Anlauf kam eben noch ein anderer Fehler, siehe 2. Logfile."		Fault	iteraplan Support	18/Nov/16 3:21 PM	19/Dec/16 8:35 AM														"18/Nov/16 3:21 PM;dne;
+
+[^iteraplan-5.4.log] _(15 kB)_
+
+[^iteraplan-5.4_2.log] _(11 kB)_
+
+[^simpleScript.xsl] _(0,4 kB)_"	"21/Nov/16 9:26 AM;cst;Hallo Daniel,
+
+funktioniert das Skript wieder, wenn du die ""Cache Time"" veränderst? 
+Weil nach dem ersten Mal scheint es ja zu funktionieren? 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+"	21/Nov/16 9:42 AM;dne;Der Teil mit der Cache Time war gar nicht aktiv. Die Ausführung der gespeicherten Abfragen, die 1.xml, 2.xml, ... erzeugen sollte funktioniert nicht. Weder im ersten noch im zweiten Anlauf.	"21/Nov/16 10:36 AM;cst;Okay, konnte das Verhalten 1 zu 1 nachvollziehen. 
+
+Ohne - saved queries lässt sich das ausführen.
+Prüfen das Verhalten weiter und gebe dir Bescheid, wenn ich dir Ursache gefunden habe.
+
+Viele Grüße,
+
+Christoph "	"21/Nov/16 11:26 AM;cst;Hallo Daniel,
+
+
+
+BUG-Ticket hierfür ist angelegt, wenn ich neue Informationen habe gebe ich dir bescheid.
+
+Wir konnten es hier mit mehreren Skripten und verschiedenen Saved Queries nachstellen. 
+
+
+
+https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-4994 
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support 
+
+
+
+
+
+
+
+"	21/Nov/16 12:02 PM;dne;Gibt es irgendeinen Schritt den man vorher noch machen muss, damit das funktioniert? Ihr habt das Feature doch schon mal erfolgreich getestet?! Bräuchte das für BMW, da ist momentan eh schon so vieles im Argen ...	"22/Nov/16 11:26 AM;cst;Hallo Daniel, 
+
+es gibt an der Stelle keinen Work a round und kann dir auch keine andere Lösung anbieten. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"13/Dec/16 5:19 PM;msr;Hallo Daniel, hallo Olga,
+
+
+
+wir haben einen Patch gebaut, der o.g. Problem beheben sollte.
+
+
+
+Vorschlag zum weiteren Vorgehen:
+
+[~dne] : Möchtest du den Patch bei dir lokal einspielen und testen, ob er mit deinem BMW-Reaktor-Skript funktioniert? Das wäre mir lieber, bevor wir es bei BMW einspielen und das Zusammenspiel mit deinem Skript läuft nicht.
+
+
+
+VG
+
+
+
+Marcel
+
+
+
+
+
+*Anwendung des Patches:*
+
+[^iteraplan_Patch_5.4.0_Reactor_SavedQueries.zip]
+
+Die zip-Datei im iteraplan-Verzeichnis entpacken. Diese sollte die entsprechende Datei ""iteraplan-5.4.0.jar"" ersetzen (ggfs. alte Version vorher löschen)."	"14/Dec/16 8:08 AM;dne;Guten Morgen zusammen,
+
+Test bei mir lokal war erfolgreich, Skript greift sich die Systeme der gespeicherten Abfrage sofern das in der Konfiguration angegeben ist.
+
+@Olga: Das Skript hat die Möglichkeit schon eingebaut, sollte ohne Änderungen also auch bei BMW funktionieren. Probiere das dort doch einmal mit einer beliebigen gespeicherten Abfrage aus, die IS enthält.
+
+Viele Grüße,
+Daniel"																																														

@@ -1,0 +1,62 @@
+Browser hangs while opening big list of objects in new client	"When opening any big list of objects in new client the browser hangs (same on IE 11 and Chrome).
+
+Attached with the screenshot of the error message, with an example of a list of applications where we have 2000 entries."		Fault	iteraplan Support	19/Oct/16 11:26 AM	21/Nov/16 7:00 AM														"19/Oct/16 11:26 AM;MayFei.Lim-EE@infineon.com;
+
+!error.jpg|thumbnail!"	"19/Oct/16 3:38 PM;cst;Dear Mrs. and Mr,
+
+thank you for your inquiry.
+
+Appears the diagram, when you wait a little bit?
+For Google Chrome the maximal displayed elements are 500. 
+
+At the moment this is the default limit for the shown elements. 
+
+This limit cant be changed.
+In the future it is possible to change this limit, but in iteraplan 5.3 this feature is not implement.
+
+Would you please check following Troubleshooting article to improve the performance in interactive client:
+
+https://www.iteraplan.de/doc/display/IKB/Poor+performance+in+the+interactive+client
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	"01/Nov/16 8:39 AM;MayFei.Lim-EE@infineon.com;Hi Christoph,
+
+Does it mean that we need to check the setting from client side?
+Will this be improved during the next release?
+
+Thanks and Regards,
+Daby"	"02/Nov/16 10:20 AM;cst;Hi Daby,
+
+thank you for your reply. 
+
+This settings are for the clients wich are using iteraplan. 
+
+Last week, we released the version 5.4 of iteraplan and did many improvements on the interactive client.
+You could update your version 5.3 to 5.4 and check for a better performance.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+
+
+"	"02/Nov/16 10:26 AM;MayFei.Lim-EE@infineon.com;Hi Christoph,
+
+Thanks for your reply.
+May I know are the improvements included the fix for our issue?
+
+Regards,
+Daby"	"02/Nov/16 10:38 AM;cst;Hi Daby,
+
+the feature to change the limits for the diagrams, is in iteraplan 5.4 not implement.
+
+Greetings,
+
+Christoph Stangl - iteraplan Support
+
+
+
+
+
+
+"																																																	

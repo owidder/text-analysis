@@ -1,0 +1,9 @@
+Refactor Queueing of FetchJobs	"Momentan werden beim Queueing zunächst sichergestellt, dass der FetchJob nicht bereits existiert, danach erstellt (und abgespeichert) und schlussendlich in die Queues hinzugefügt.
+
+
+
+Das dauert zu lange wenn sehr viele FetchJobs hinzukommen.
+
+
+
+Daher sollen FetchJobs ohne Prüfung direkt abgespeichert werden und nicht in die Queues aufgenommen werden. Der QueueWorker holt diese dann automatisch aus der DB und muss vorm Queueing sicherstellen, dass die FetchJobs unique sind."		Task	OpenSpeedMonitor	05/Sep/16 1:23 PM	05/Sep/16 6:04 PM																																																																				

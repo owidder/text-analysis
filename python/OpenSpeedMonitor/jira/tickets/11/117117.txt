@@ -1,0 +1,11 @@
+Im interaktiven Client wird die Link-Funjktionalität nicht unterstützt	Im Classic Client kann über Links auf entsprechende URLs zugegriffen werden. Diese Funktionalität wird im interaktiven Client nicht unterstützt		Fault	iteraplan Support	30/Mar/17 10:45 AM	19/Apr/17 7:00 AM														"30/Mar/17 2:15 PM;cst;Sehr geehrter Herr Klees,
+
+vielen Dank für Ihre Anfrage.
+
+Würden Sie bitte hier Ihre Anliegen spezifizieren
+
+Welche Links, aus welcher Seite funktionieren bei Ihnen nicht? Die Funktion wurde hier geprüft und die Links werden nach Anmeldung in iteraplan geladen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"																																																						

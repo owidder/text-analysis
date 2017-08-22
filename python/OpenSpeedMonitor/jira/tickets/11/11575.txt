@@ -1,0 +1,3 @@
+Auswertung Häufigkeit bestimmter Resourcen	"Es wäre hilfreich, für zwei Ladeverhalten A und B zu ermitteln:
+* welche Ressourcen nur in A oder nur in B geladen werden. 
+* welche Ressourcen in A und B mit stark abweichender Häufigkeit bis zum onload geladen werden"		Task	OpenSpeedMonitor	18/Feb/14 11:20 AM	29/Feb/16 11:34 AM																																																																				

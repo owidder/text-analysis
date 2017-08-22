@@ -1,0 +1,3 @@
+Container for line and color settings is broken	"It isn't possible to reduce containers for line and color settings. Often this has a bad effect.
+Affected are all visualizations (Step 2).  
+"		Bug	iteraplan PO	08/May/12 3:14 PM	10/May/12 10:12 AM					visualization									10/May/12 10:05 AM;tse;see also: ITERAPLAN-712 (probably duplicate?)	10/May/12 10:12 AM;vsh;Duplicate of ITERAPLAN-712																																																					

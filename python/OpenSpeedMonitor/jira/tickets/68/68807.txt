@@ -1,0 +1,23 @@
+Personal Demo (Management) System should do separate deployments instead of multiple data sources	"as is: Personal Demo System creates a new user and a new database / data source
+
+
+
+to be: PDS creates a new deployment with a separate database and soew  on:
+
+* deployment on Tomcat
+
+* new license key, with new expiry date
+
+* database
+
+* configuration to use new database
+
+* new user in (singleton/shared) iTurm
+
+
+
+simpler than as-is: user can be iteraplan superuser, because she has not to be prevented from changing the datasource. Yeah.
+
+
+
+Must be ready for 5.2, because the feature ""multiple data sources"" is removed as part of the  Hibernate upgrade"		Improvement	iteraplan PO	07/Jan/16 9:47 AM	27/Aug/16 11:44 AM																																																																				

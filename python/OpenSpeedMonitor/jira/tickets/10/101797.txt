@@ -1,0 +1,7 @@
+Save and load query for Query Console	"*Summary:*
+
+Save and load the iteraQl-Query as saved query (Report Type: ""iteraQl"", Content: ""-"")"		New Feature	iteraplan Speedbird	07/Nov/16 4:03 PM	29/Dec/16 4:17 PM														20/Dec/16 7:48 AM;madu;#5519	20/Dec/16 9:33 AM;mash;Review Coments: Report type in saved queries wrongly displayed(see screenshot 1)	22/Dec/16 2:23 PM;msr;Please translate pop-up message "query succeeded"	"27/Dec/16 3:37 PM;madu;Looks like some extra literals need to be translated.
+
+I'll specify all of them in IPTS-311.
+
+"	27/Dec/16 3:39 PM;madu;#5572	29/Dec/16 4:17 PM;mash;Review is done. No comments																																																	

@@ -1,0 +1,1 @@
+Admin All Controller Menü scrollbar und mit Zeitverzögerung beim Umschalten / Ausblenden	Admin All Controller Menü scrollbar und mit Zeitverzögerung beim Umschalten / Ausblenden		Bug	OpenSpeedMonitor	27/Feb/15 2:22 PM	02/Mar/15 4:35 PM														02/Mar/15 1:21 PM;rkr;Status: Scrollbar ist eingebaut.																																																						

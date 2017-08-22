@@ -1,0 +1,9 @@
+LATER: Undeploy demo instance with handle errors	"Implement a two-phase undeployment/cleanup for a demo instance:
+
+* Stop and undeploy the demo instance application as in IPTS-113
+
+* If demo instance application is successfully undeployed, drop demo instance database and delete logfiles and index files
+
+* Record current status of this process in the demo registration database
+
+* Only after cleanup step succeeded, remove the demo user from the demo registration database"	93358	Sub-task	iteraplan Speedbird	27/Sep/16 9:58 AM	27/Oct/16 8:41 AM														12/Oct/16 11:06 AM;sfe;The file {{deleteDemoInstanceDB.sql.template}} seems to be missing in the SVN repository	13/Oct/16 2:49 PM;mada;Add missed file																																																					

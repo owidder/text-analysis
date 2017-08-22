@@ -1,0 +1,73 @@
+Kundenspezifischer Text fehlt in 5.5.0	"Für unsere Anwendung haben wir die Entitäten mit speziellen Namen benannt. Dabei soll ""IT-Service"" als ""Vertrag"" angezeigt werden. In der Lieferung zur Version 5.5.0 ist der Text ""IT-Service"" auf der Übersichtseite des Interactive-Client fehlt dieser Text. Die anderen Entitäten haben unsere spezifische Anpassung (z.B. Applikation)
+
+
+
+Über welches Property im customer.properties-File kann man das denn Anpassen. "		Fault	iteraplan Support	18/May/17 7:19 AM	13/Jun/17 1:43 PM														"22/May/17 9:46 AM;cst;Sehr geehrter Herr Meister,
+
+vielen Dank für Ihre Anfrage.
+
+In der Datei ""ApplicationResourcesMM.properties"" können die Titel für den interactiven Client geändert werden. 
+Hier müssen singular und plural umbenannt werden, z.B.
+ * iteraplan.elastic.metamodel.BusinessMapping.singular=Test
+ * iteraplan.elastic.metamodel.BusinessMapping.plural=Tests
+
+Für die deutsche Oberfläche ist die Datei ""ApplicationResourcesMM_de.properties"" zuständig, beide finden SIe im Verzeichnis
+
+""*TOMCAT*\webapps\*ITERAPLAN*\WEB-INF\classes\de\iteratec\iteraplan\presentation\resources"".
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"03/Jun/17 12:10 AM;Gerd.Meister@f-i-solutions-plus.de;Hallo Herr Stangl,
+
+ich habe das probiert und es geht gut. Allerdings gibt es auf der Übersichtsseite des neuen Clients ein Feld, das scheinbar immer den englischen Wert des Properties nimmt:
+
+Ich vermute mal, es ist das Property
+
+itService.plural=Verträge
+
+(bei uns im Englischen mit Contracts belegt), dass mit dem englischen Inhalt angezeigt wird.
+
+Lässt sich da herausfinden, warum im Screenshot nicht Verträge steht statt Contracts?
+
+Viele Grüße,
+Gerd Meister
+
+
+!2017-6-7-0-9-0-464.png|thumbnail!"	"08/Jun/17 2:13 PM;fka;Hallo Herr Meister,
+
+wir schauen uns das in den nächsten Tagen an. Möglicherweise ist dies ein kleiner Fehler in der Anwendung.
+
+Mit besten Grüßen
+Fabian Kainzinger"	"12/Jun/17 3:41 PM;fka;Hallo Herr Meister,
+
+
+
+nach (doch recht kurzer) Suche können wir bestätigen: Es handelt sich um einen kleinen Fehler in iteraplan. Beim IT-Service-Element werden immer die englischen Texte/Labels genutzt.
+
+
+
+Trotz des anscheinend kleinen Fehlers ist das Beheben nicht trivial. Wir werden es daher bis zum Release 6.0 (erscheint in ca. 1 Woche) nicht schaffen. Bis zum Release danach ist die Korrektur auf jeden Fall mit enthalten.
+
+
+
+Mit besten Grüßen
+
+Fabian Kainzinger
+
+
+
+ 
+
+
+
+ 
+
+
+
+ "	"12/Jun/17 5:13 PM;Gerd.Meister@f-i-solutions-plus.de;Hallo Herr Kainzinger,
+
+das ist in Ordnung und stellt für uns kein Problem dar. Auf der Classic-Oberfläche ist der Text ja richtig angezeigt und wenn die Anpassung dann für eine spätere Version kommt, reicht das.
+
+Viele Grüße,
+Gerd Meister.
+"																																																		

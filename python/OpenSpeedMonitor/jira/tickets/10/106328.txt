@@ -1,0 +1,19 @@
+Events nach einem Fehler nicht persistieren/anzeigen	"Wenn in einer Customer Journey ein Fehler auftritt (z.B. Login funktioniert nicht), dann wird dieser Schritt oft auch als fehlerhaft erkannt (z.B. 401 als Status Code).
+
+Ein weiteres Fehlermerkmal, zusätzlich zu den Status Codes, kann eine nicht vorhandene ""First Byte"" Zeit sein.
+
+
+
+Allerdings kann dieser Fehler dazu führen, dass alle folgenden Schritte keine sinnvollen Ergebnisse mehr liefern, da sie zB auf eine andere Seite umgeleitet werden.
+
+
+
+Dies könnte man auf zwei Arten erreichen:
+
+# Als Filter beim Anzeigen von Ergebnissen, bei dem fehlerhafte Events und alle Folge-Events rausgefiltert werden
+
+# Als Einstellung im Job, sodass die Folge-Events nach fehlerhaften Events gar nicht erst persistiert werden.
+
+
+
+Hinweis: WPT hat auch Status Codes wie 99999 die *kein* Fehler sind, darum ist nicht automatisch alles > 200 ein Fehler."		Improvement	OpenSpeedMonitor	21/Dec/16 10:14 AM																																																																					

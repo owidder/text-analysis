@@ -1,0 +1,21 @@
+"this.toolAreaCtrl is null" on diagram reload	"h1. Strict timebox: 1.5 hours to find out, what is going on. If not possible, close this ticket
+
+
+
+1. Open any diagram (I was able to reproduce with NCD, LSD in Firefox).
+
+
+
+2. Refresh the page by pressing F5
+
+
+
+Sometimes diagram is not loaded and there's error in console. Second refresh usually loads diagram well.
+
+
+
+!toolarea_null.png!
+
+
+
+ "		Bug	iteraplan PO	19/Jun/17 12:42 PM															20/Jun/17 9:59 AM;roia;As temporary workaround timeouts have been added. Fix it properly after release 6.0.	17/Jul/17 9:52 AM;roia;[~msr], I -believe- hope, this issue has been fixed in scope of IPTS-1014																																																					

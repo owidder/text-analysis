@@ -1,0 +1,6 @@
+Legende der Mess-Charts zu lang	"Legende der angezeigten Messungen ist aktuell für Benutzer unbrauchbar. Wer soll etwas mit ""CSI Lhotse:::ADS:::FF_LH_Step01_ADS:::Firefox:::physNet02-Firefox"" anfangen können ?
+
+- Page kann als Name ausgeblendet werden
+- Anzeige der Location könnte  verhindert werden
+- Pipe-Symbol zur Trennung"		Task	OpenSpeedMonitor	25/Sep/13 9:42 AM	18/Dec/13 11:41 AM														"18/Dec/13 11:41 AM;jwerschmoeller;Wurde bereits umgesetzt.
+"																																																						

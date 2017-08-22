@@ -1,0 +1,4 @@
+One instead of two Scroll Bars	"In NCD, when Window size is reduced from full screen to smaller size a second pair of inner scroll bars occours.
+Happens (at least) with firefox.
+Fix to have only one pair of scroll bars
+"		Improvement	iteraplan PO	02/Apr/15 4:39 PM	24/Jun/15 10:18 AM																																																																				

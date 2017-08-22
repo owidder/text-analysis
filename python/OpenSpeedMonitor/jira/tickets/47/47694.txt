@@ -1,0 +1,6 @@
+Links to the Classic Client	"Summary: On the NCD we have two links for Classic client:
+- Show NCD in Classic Client
+- Back to Classic Client
+
+Do we need both of them?"	47646	Sub-task	iteraplan PO	23/Apr/15 5:17 PM	05/May/15 2:07 PM													"Workspace: Windows 8.1
+revision: 1010"	24/Apr/15 9:28 AM;dasm;Actual for LSD page too.	24/Apr/15 11:54 AM;dasm;There is only one link for Classic Client on the NCD and LSD pages in the browser Mozilla Firefox 37.0	24/Apr/15 2:20 PM;dasm;not a bug																																																				

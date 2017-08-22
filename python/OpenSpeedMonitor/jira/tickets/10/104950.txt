@@ -1,0 +1,3 @@
+EventResultDashboard nach MeasuredEvent Filterbar	"Wenn man auf dem EventResultDashboard nach einem MeasuredEvent filtert, muss trotzdem eine Page angegeben werden.
+
+Die Regel sollte aufgehoben werden, sodass der Nutzer ""JobGroup, MeasuredEvent"" auswählen kann und einen entsprechen Graphen anzeigen lassen kann."		Improvement	OpenSpeedMonitor	07/Dec/16 1:29 PM	08/Dec/16 4:31 PM																																																																				

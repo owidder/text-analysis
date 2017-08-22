@@ -1,0 +1,15 @@
+[2-B2] Ausrichtung Android-Devices umschaltbar 	"Die Ausrichtung soll sich per Skript-Command umschalten lassen:
+
+{code}
+
+setOrientation    landscape
+
+setOrientation    portrait
+
+{code}"		New Feature	OpenSpeedMonitor	26/Jun/15 1:57 PM	14/Sep/15 5:15 PM														"14/Sep/15 5:15 PM;hmettendorf;Wurde in Commit 2f8ce9e686493991f2dd652e332568bc6ad21a1e implementiert.
+
+
+
+Implementierung nur in Android-Zweig des NodeJS-Clienten und nur für Befehle ""landscape"" und ""portrait"".
+
+Setzt vorherige Deaktivierung von AutoRotate voraus."																																																						

@@ -1,0 +1,4 @@
+Menschenlesbare Fehlermeldungen für constraints in die i18n-Datei eintragen	"Für die Validatoren des commands bei showAll(...) müssen menschenlesbare Fehlermeldungen hinterlegt werden.
+
+Command-object Klasse:
+de.iteratec.isocsi.CsiDashboardController.ShowAllCommand"	10010	Sub-task	OpenSpeedMonitor	27/Aug/13 3:51 PM	06/Sep/13 4:24 PM																																																																				

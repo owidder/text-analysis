@@ -1,0 +1,69 @@
+Update screen shots on the following docu pages	"Update screen shots on the following docu pages. To unify the screen shots, their sizes etc. make all screen shots when the browser windows is 1000px wide. This is for overview screen shots.
+
+
+
+Sacling should be set to 100% always, also when making smaller screenshots.
+
+
+
+https://doc.iteraplan.de/display/iteraplan60/Building+Blocks+in+iteraplan
+
+•	Use new stucture data view from start screen
+
+
+
+https://doc.iteraplan.de/display/iteraplan60/Filter
+
+•	Only right side, new filter layout. Left side stays as it is!
+
+
+
+https://doc.iteraplan.de/display/iteraplan60/Full+Text+Search
+
+
+
+https://doc.iteraplan.de/pages/viewpage.action?pageId=8685872
+
+(This is the partial import/Export page)
+
+
+
+https://doc.iteraplan.de/display/iteraplan60/Single+Element+View
+
+•	The UI refernce screenshot is a very bad example of a screenshot. Too wide, scale not 100%, lots of white space, and too high.
+
+
+
+https://doc.iteraplan.de/display/iteraplan60/From+lists+to+visualizations+-+and+back
+
+
+
+https://doc.iteraplan.de/display/iteraplan60/Multi+Mode
+
+•	Top screen shot only
+
+
+
+https://doc.iteraplan.de/display/iteraplan60/Saved+Queries
+
+•	Second screen shot only
+
+
+
+https://doc.iteraplan.de/display/iteraplan60/Permissions+to+view+and+edit+data
+
+
+
+https://doc.iteraplan.de/display/iteraplan60/Users%2C+Roles+and+Permissions
+
+
+
+
+
+Be sure to always remove the old image(s) from the page. The images are stored as attachments to the page. Simply deleting the image in edit mode leaves it as an attachment to the page!
+
+"		Task	iteraplan Speedbird	19/Jun/17 9:46 AM	20/Jun/17 4:16 PM														19/Jun/17 4:11 PM;aan;[https://doc.iteraplan.de/display/iteraplan60/Navigator] has also old screenshots (and larger things changed)	20/Jun/17 2:45 PM;sbu;I have not only changed the screenshots but also the text where needed. (This was the case in Navigator, Search, Saved Queries, Single Element View and Multi Mode).	"20/Jun/17 3:33 PM;pma;Suggestions from review:
+
+* can we summarize the 3 really similar screenshots in https://doc.iteraplan.de/pages/viewpage.action?pageId=8685872 ?
+
+* is it necessary to mention or make a screenshot to only tell the user about the last modification time in https://doc.iteraplan.de/display/iteraplan60/Single+Element+View ?"	20/Jun/17 3:43 PM;sbu;I have also changed the first screenshot of this page because there are new buttons:  [https://doc.iteraplan.de/display/iteraplan60/Attributes] 																																																			

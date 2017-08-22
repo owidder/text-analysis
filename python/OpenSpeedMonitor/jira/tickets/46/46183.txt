@@ -1,0 +1,26 @@
+Visualization: default temporary-file directory doesn't exists	"When I create a diagram I get the following error message and a broken graphic (contains an error page):
+{code}
+javax.imageio.IIOException: Can't create output stream!
+	at javax.imageio.ImageIO.write(ImageIO.java:1560)
+	at de.iteratec.iteraplan.businesslogic.exchange.BitmapCodeGenerator.generateB64Png(BitmapCodeGenerator.java:88)
+	at de.iteratec.iteraplan.businesslogic.exchange.BitmapCodeGenerator.generateFastExportUrlCode(BitmapCodeGenerator.java:69)
+	at de.iteratec.iteraplan.businesslogic.exchange.svg.SvgExport.createSavedQueryInfo(SvgExport.java:1073)
+….
+Caused by: java.io.IOException: Das System kann den angegebenen Pfad nicht finden
+	at java.io.WinNTFileSystem.createFileExclusively(Native Method)
+	at java.io.File.checkAndCreate(File.java:1704)
+	at java.io.File.createTempFile(File.java:1792)
+	at java.io.File.createTempFile(File.java:1828)
+	at de.iteratec.iteraplan.presentation.responsegenerators.GraphicsResponseGenerator.generateResponse(GraphicsResponseGenerator.java:294)
+{code} 
+
+The problem is only on my local Tomcat.
+If I use the WTP Tomcat, the problem does not occur.
+"		Bug	iteraplan PO	22/Oct/13 12:17 PM	22/Oct/13 4:32 PM					visualization									"22/Oct/13 2:38 PM;psc;As discussed with Ingo:
+* Issue does not come up with 3.1 on the same system
+* It seems that creation of local temporary file is causing the problem
+* see code checked in for ITERAPLAN-1732"	"22/Oct/13 3:09 PM;sry;This problem cannot be related to ITERAPLAN-1732, because the exception is _also_ thrown while a QR code is generated - that code has not been touched for quite some time.
+
+My guess is rather that there is a problem with either environment variables or file system permissions. Java always tries to create temp file in that directory that is specified by the system property {{java.io.tmpdir}}, which is typically the Tomcat temp directory."	"22/Oct/13 4:32 PM;isc;At the start of the Tomcats, the property {{java.io.tmpdir}} is set to {{<tomcat path>/temp}}.
+In my configuration, the folder did not exist. That was the reason for the problem.
+"																																																				

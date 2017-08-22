@@ -1,0 +1,13 @@
+Refactor	"- JS Doc
+
+- Remove unused functions
+
+- Maybe rename some functions
+
+- Remove TODOs
+
+- change folder structure
+
+- *important*: put long scripts into the client code (create new folder and something like a e2eHelper.js file) and change the page objects to execute a script which then calls the methods in the client
+
+"	62908	Sub-task	iteraplan PO	17/Nov/15 8:24 AM	18/Nov/15 10:21 AM																																																																				

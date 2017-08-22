@@ -1,0 +1,119 @@
+nightly cleanup und Löschen von Jobs Lasttesten	"Vor dem Einsatz des *nächtlichen Löschens* soll diese neue Funktion mit einem aktuellen Datenstand der OTTO-Instanz unter Last getestet werden. Hierfür  wird:
+
+
+
+* Eine osm-Instanz deployt, die mit einem aktuellen Datenstand von OTTO läuft
+
+* Eine Instanz des WptServerMocks deployt (siehe IT-511)
+
+* Alle Jobs, die live für OTTO laufen, sollen auch hier laufen, allerdings gegen den Mock
+
+* Die Messungen müssen gegen den Mock ohne nightly cleanup Daten liefern / Kurven schreiben (auch CSI)
+
+* Dann muss der Nightly Cleanup-Job seinen Dienst tun. Überprüft werden müsste folgendes:
+
+** Sind hinterher wirklich alle Daten > 13 Monate weg
+
+** Sind alle Jobs weiter gelaufen und haben für den gesamten Zeitraum Daten / Kurven (auch CSI)
+
+** Was ist mit der CPU-Auslastung während des nightly Cleanup passiert?
+
+** Wird die Batch-Activity korrekt angezeigt?
+
+** Last but not least: Merkt man nach erfolgreichem Löschen aller älterer Daten einen Performance-Unterschied?
+
+
+
+Es sollte ein *Job mit umfangreichen Ergebnissen manuell gelöscht* werden
+
+* Während des Laufens und hinterher ist folgendes zu prüfen:
+
+** Wie lange dauert das Löschen?
+
+** Ist hinterher alles weg? 
+
+** CPU-Auslastung der Maschine?
+
+** Wird die Batch-Activity korrekt angezeigt?"		Task	OpenSpeedMonitor	09/Apr/15 3:14 PM	22/Apr/15 4:48 PM														"10/Apr/15 10:31 AM;rkr;Status:
+
+* -Eine osm-Instanz deployt, die mit einem aktuellen Datenstand von OTTO läuft-
+
+* -Eine Instanz des WptServerMocks deployt (siehe IT-511)-
+
+* -Alle Jobs, die live für OTTO laufen, sollen auch hier laufen, allerdings gegen den Mock-
+
+* Die Messungen müssen gegen den Mock ohne nightly cleanup Daten liefern / Kurven schreiben (auch CSI)
+
+* Dann muss der Nightly Cleanup-Job seinen Dienst tun. Überprüft werden müsste folgendes:
+
+** Sind hinterher wirklich alle Daten > 13 Monate weg
+
+** Sind alle Jobs weiter gelaufen und haben für den gesamten Zeitraum Daten / Kurven (auch CSI)
+
+** Was ist mit der CPU-Auslastung während des nightly Cleanup passiert?
+
+** Wird die Batch-Activity korrekt angezeigt?
+
+** Last but not least: Merkt man nach erfolgreichem Löschen aller älterer Daten einen Performance-Unterschied?
+
+
+
+Es sollte ein *Job mit umfangreichen Ergebnissen manuell gelöscht* werden
+
+* Während des Laufens und hinterher ist folgendes zu prüfen:
+
+** Wie lange dauert das Löschen?
+
+** Ist hinterher alles weg? 
+
+** CPU-Auslastung der Maschine?
+
+** Wird die Batch-Activity korrekt angezeigt?"	"14/Apr/15 3:39 PM;bwo;Liste der ausgeführten Tests, um die Auslastung zu vergleichen
+
+* zeitlgleich mit batchactivity update:
+
+** MeasuredValues Delete: 9:43-10:01
+
+** JobResults Delete: 9:44-9:47
+
+* zeitgleich ohne batchactivity update:
+
+** MeasuredValues Delete: 11:41-12:04
+
+** JobResults Delete: 11:42-11:46
+
+* nacheinander ohne batchactivity update:
+
+** RobResults Delete: 12:31-12:40
+
+** MeasuredValues Delete: 12:43-13:20
+
+* measuredValues Delete ohne letzte Schleife:
+
+14:16-14:47
+
+* measuredValues Delete nur mit letzter Schleife:
+
+14:57-14:59
+
+* measuredValues ganze Methode, mit Fix in der Schleifengröße
+
+15:31-15:33"	"14/Apr/15 3:58 PM;bwo;Es war zu beobachten dass das Löschen der JobResults konstant eine hohe wio Last erzeugt.
+
+
+
+Das Löschen der MeasuredValueUpdateEvents lastete stets mehr als 2 Kerne aus und hatte Spikes auf bis zu 5 Kerne. 
+
+Beim Löschen der MeasuredValues trat wieder eine wio Last auf, jedoch dauert diese nur wenige Minuten an.
+
+
+
+Scheinbar lag ein Fehler beim Löschen der MeasuredValues vor, wir wiederholen den Test, nachdem die alten Daten wieder eingespielt wurden."	"20/Apr/15 12:57 PM;nku;Aktueller Status:
+
+Nach wie vor erzeugt das komplette Löschen eine große io-Last.
+
+Vermutlich sollten wir für die OTTO-Datenbank die zu löschenden Daten schrittweise löschen.
+
+
+
+Ich stimme mich morgen dazu mit Uwe ab. "	22/Apr/15 4:48 PM;nku;Wir werden die Funktion deployen und dann alte Daten schrittweise löschen.																																																		

@@ -1,0 +1,7 @@
+Reactor enhancement: Result of filter execution saved as ID list	"Extend the reactor as follows
+
+Optionally before executing a XSLT file, an arbitrary saved query (from the classic client) might be executed and the result of the query will be saved as a XML file into the reactor containing only the IDs of the result. The file name should represent the building block type (e.g InformationSystem.xml). Overwrite files without warning. For structure of the XML file ask WFR.
+
+The list of possible queries should be presented as drop down field in the existing reactor UI. Selecting no query is of course possible. Selecting more than one is not possible. The reactor stays stateless, i.e. the combination of XSLT and selected query is not saved.
+
+"		New Feature	iteraplan Quickfox	10/Jun/15 2:56 PM	14/Apr/16 7:16 PM					filter	reactor																																																														

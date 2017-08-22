@@ -1,0 +1,5 @@
+[CRUD] Page -> Update / Delete führt zu 405 - Method not allowed	"Z.B. unter http://localhost:8080/page/edit/1 lässt sich die Page weder löschen noch editieren.
+
+
+
+Warscheinlich nur die form action von POST auf PUT / DELETE setzten."		Improvement	OpenSpeedMonitor	12/May/16 12:46 PM	12/May/16 6:29 PM																																																																				

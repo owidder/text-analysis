@@ -1,0 +1,25 @@
+Finer Permission Control - Distinguish between Create, Delete and Update	"Enable finer Permission Control - Distinguish between Create, Delete and Update
+Currently iteraplan permissions only differentiate between Read and Change (Create/Update/Delete).
+This should be enhanced to have extra rights for Create and Delete and Update and Read"		New Feature	iteraplan PO	18/Dec/11 1:44 AM	31/Jan/12 2:13 PM					permissions									18/Jan/12 12:04 PM;sip;I have implemented this feature for building blocks. What is with other Entities like roles or attributes, and some other functional permissions: "Create, save and delete queries for Diagram Reports" and "Create, save and delete queries for Spreadsheet Reports and Bulk Updates". Should this also be divided into separate CREATE, UPDATE AND DELETE permissions?	"18/Jan/12 3:58 PM;tse;Tested, functionality works as expected.
+
+However, please try to put the implementation in a base class of either Service or DAO (to be decided), to make sure that access permission checking is done in one central location, and no use case, dialog, importer or whatever is able to circumvent the check.
+
+{quote}
+_This is what I tested:_
+
+User John Doe als ""Application_Manager"" eingetragen, und mit den Rechten für 
+diese Gruppe verschiedene Varianten durchgespielt.
+
+OK:
+* Ändern-Knopf: nur für Elemente verfügbar, für die Recht ""Ändern"" gegeben ist.
+* Löschen-Knopf: ebenso.
+* Auf Haupt-Pflegeseiten: Knopf ""Neu anlegen"" ist nur bei den richtigen Elementen sichtbar.
+* Massenupdate: nur die Einträge enthalten, für die das Recht ""ändern"" gegeben ist. Nicht enthalten, wenn Ändern fehlt (auch wenn Erstellen und Löschen gegeben sind.)
+* Massendelete: ist auswählbar, aber dann richtige Fehlermeldung ""Ihre Rechte reichen nicht aus"" => OK.
+* Aggregieren von Rechten und korrekte Ansicht des Reiters: ""Zusammenfassung Berechtigungen"": OK.
+* Import: OK: Datensätze werden übernommen bzw. Fehlermeldung wird angezeigt. (Sehen nicht schön aus, aber funktional korrekt. Wenn ich das richtig sehe, ist das aber sowieso in Arbeit.)
+* Aggregieren von Rechten geprüft; stimmt in der Anzeige und funktioniert.
+{quote}
+"	"27/Jan/12 6:03 PM;sry;Suggestions for an even better user experience:
+ ** It would be a lot easier if checking a BB read permission for the first time leads to checking the other three permissions on that BB as well. This will save hundreds of clicks in the most common cases.
+ ** If a create permission is checked for the first time, it would make sense to check edit permission as well (but this might be a no longer needed if the previous suggestion is implemented)"	31/Jan/12 12:51 PM;lci;Another possibility following Steffen's suggestions would be a "check all" box (maybe placed besides the bb-name at the beginning of the line)	31/Jan/12 2:13 PM;lci;Ok.																																																		

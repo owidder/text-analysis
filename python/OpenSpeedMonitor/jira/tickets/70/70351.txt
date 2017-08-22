@@ -1,0 +1,21 @@
+ONLY CHECK: make sure the designed architecture for LSD is complied	"Timebox: 1 hour. Please check, if there is still something to do in this ticket.
+
+
+
+in LSDConfiguration there are three methods which do something that the lsdToolAreaViewModelBuilder.js should do. This is not conform to our LSD architecture which can be seen in app/js/lsd/_lsdArchitectureDiagram.svg .
+
+
+
+the three methods fill the toolarea entries and are called as follows:
+
+- getContentAxisPropertyOptions
+
+- getColoringOptions 
+
+- getEnumAndDateAxisPropertyOptions
+
+
+
+TODO:
+
+refactor in a way that the designed architecture is complied"		Improvement	iteraplan Speedbird	22/Jan/16 3:27 PM	24/May/17 3:20 PM					LSD	toolArea								28/Sep/16 3:11 PM;msr;Do not add any additional test.	05/Apr/17 1:31 PM;fka;Still something to do?	24/May/17 3:20 PM;roia;The methods mentioned in the description are already in the tool area builder. So, nothing to do.																																																				

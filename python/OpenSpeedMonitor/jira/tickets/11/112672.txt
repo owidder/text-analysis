@@ -1,0 +1,75 @@
+Edit role values on single role view (Client)	"*Summary:*
+
+ Edit all values on Single Role View.
+
+
+
+*Details:*
+
+ * Re-use UI of editing of attributes
+
+
+
+*Parts of the page:*
+
+ * Name: Single line text edit - unassigned is not allowed
+
+ * Description:
+
+ ** (using JSCreole)
+
+ ** multiline text
+
+ * Subordinate Roles
+
+ ** Multiple items select
+
+ * BB-Permissions
+
+ ** checks in the a matrix
+
+ * Functional Permissions
+
+ ** show always all available functional permissions with on-off-switches
+
+ * ATG-Permissions
+
+ ** checks in the a matrix
+
+
+
+*Inheritance:*
+
+ * Please check IPTS-580 for details
+
+ * Basically all directly assigned are show in magenta color and all inherited permissions are shown in grey (inactive)"		New Feature	iteraplan Speedbird	22/Feb/17 5:58 PM	30/Mar/17 12:41 PM														24/Mar/17 3:13 PM;mash;Review is done: some comments to fix - [https://iteraweb.iteratec.de/fisheye/cru/IP-463]	"27/Mar/17 2:57 PM;msr; configAttributeGroups - ""Configure attribute groups"" - ""Konfigurieren von Merkmalsgruppen""
+
+configAttributes - ""Configure attributes"" - ""Konfigurieren von Merkmalen""
+
+editPublicSavedQueries - ""Create, update and delete public saved queries"" - ""Erstellen, aktualisieren und löschen von öffentlichen gespeicherten Abfragen""
+
+system - ""Configure iteraplan"" - ""Konfigurieren von iteraplan""
+
+editRolesPerm - ""Edit roles and grant permissions"" - ""Bearbeiten von Rollen und Vergabe von Rechten""
+
+iteraQl - ""Execute iteraQL power queries"" - ""Ausführen von Anfragen mit iteraQL""
+
+useDiagrams - ""Use visualizations"" - ""Nutzung von Visualisierungen""
+
+manageUsers - ""Manage users"" - ""Verwalten von Anwendern""
+
+useNavigator - ""Use Navigator visualization"" - ""Nutzung des Navigators""
+
+runBulkUpdates - ""Execute Bulk Updates"" - ""Ausführen von Massenupdates""
+
+search - ""Run global search on Building Blocks"" - ""Nutzung der globalen Volltextsuche""
+
+runImportExport - ""Run import and export"" - ""Ausführen von Import und Export""
+
+useSubscribe - ""Subscribe to Building Blocks and view all personal subscriptions"" - ""Abonnieren von Bebauungselementen inkl. Übersicht der persönlichen Abonnements""
+
+useReactor - ""Use of the Graphics Reactor"" - ""Nutzung des Graphic Reactors""
+
+viewSubscribers - ""View all subscribers of a Building Block"" - ""Einsicht der Abonnenten eines Bebauungselements""
+
+viewHistory - ""View History"" - ""Einsicht der Historie"""	29/Mar/17 11:56 PM;mash;Review is done: comments are here: https://iteraweb.iteratec.de/fisheye/cru/IP-472#general-comments	30/Mar/17 12:41 PM;mash;Review is done																																																			

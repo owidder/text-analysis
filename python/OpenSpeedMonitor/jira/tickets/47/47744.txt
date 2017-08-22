@@ -1,0 +1,13 @@
+Server-side logging service	"Possible Frameworks for this:
+* [Logback|http://logback.qos.ch/] (under LGPL / EPL)
+** [Features compared to log4j|http://logback.qos.ch/reasonsToSwitch.html]
+** [Short blog describing REST service request and response logging|http://2mohitarora.blogspot.de/2013/03/request-and-response-logging-using.html]
+* [log4javascript|http://log4javascript.org/index.html] (under ASL)
+** [Blog about sending logs and exceptions to a server in AngularJS|http://statelessprime.blogspot.de/2013/10/send-logging-and-exceptions-to-server.html]
+
+==> log4javascript will be used for logging"	47303	Sub-task	iteraplan PO	07/May/15 9:31 AM	02/Jun/15 3:33 PM					logging									08/May/15 1:04 PM;mag;Did some first research on existing frameworks and added reference links to the description.	"19/May/15 9:49 AM;mag;The message that is to be logged will have the following format:
+\[{{LEVEL}}\] \[{{timestamp_server}}\] ({{logging_class}}) {{message}} \@\[{{timestamp_client}}\] -- Logged from: {{url_client}} -- Exception: {{exception}}
+
+whereas ""\@\[{{timestamp_client}}\]"", ""Logged from: {{url_client}}"" and ""Exception: {{exception}}"" are only present if the values are not null
+
+Is this format okay, or should it be changed?"	21/May/15 5:11 PM;mag;The url for the servlet was changed from {{/angularLog}} to {{/clientLog}}	22/May/15 11:41 AM;mag;Logs will look something like this [^iteraplan-5.1.SNAPSHOT-nc.log]																																																			

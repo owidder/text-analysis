@@ -1,0 +1,9 @@
+Incorrect naming of LSD legend parameters, axis	"#1 Steps to reproduce:
+1. Go to LSD page
+2. Use Technical Component as content type
+Actual: Incorrect naming of LSD legend parameters
+
+#2 Steps to reproduce:
+1. Go to LSD page
+2. Use Interface as content type
+Actual: Incorrect naming of LSD legend parameters (Information System Interface appears instead of Interface)"		Bug	iteraplan PO	15/Apr/15 4:25 PM	05/May/15 2:10 PM														23/Apr/15 4:53 PM;dasm;Verified (revision 1010)																																																						

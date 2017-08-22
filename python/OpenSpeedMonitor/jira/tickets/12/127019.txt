@@ -1,0 +1,13 @@
+F: SEV: Add an accountability in Attribute-Tab - hidden buttons	"*Scenario*: The user goes to Information System Domains > centrally managed Systems and changes to attribute-tab. Here the user changes value of ""accountability"".
+
+The buttons to add or discard the values are obscured by the bottom-div.
+
+
+
+*ToDo*: Adjust the space between the content (Default Attribute Group-box) and the text below (Last Modification)
+
+Please use approximately the same distance as in the ALL-tab. (about 2.5cm).
+
+
+
+Check whether this problem occurs in any more tabs."		Bug	iteraplan Thunderduck	13/Jul/17 12:41 PM																																																																					

@@ -1,0 +1,17 @@
+Embed Google fonts without using external links to Internet	"Find an alternative to embed google fonts without using an external http-link to the internet.
+
+
+
+At the moment the font is embedded in the index.html:
+
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic' type='text/css'>
+
+
+
+Look for an alternative. Discuss alternatives with [~fka]"		Bug	iteraplan PO	04/Dec/15 11:42 AM	24/Feb/16 2:30 PM														09/Dec/15 5:51 PM;fka;Loading from a local ressource or embedding the font directly seem some viable alternatives for me.	"19/Feb/16 2:51 PM;ach;* removed embeded google fonts from index.html
+
+* fonts are already stored in app/fonts and included in app/app.css by [~dam] in revision 1789 (ITERAPLAN-3794)"	"22/Feb/16 2:26 PM;abo;Currently the application does not use italic fonts and the regular font is included in _app.css_.
+
+When just setting the font to italic, the browser tries to change the font, but that looks differently than the original italic version (at least for _Open Sans_).
+
+If an italic font is needed, it must be included in the CSS."	22/Feb/16 2:29 PM;abo;According to [~sfe] the italic version of Open Sans should be included. Thus rejected.	24/Feb/16 2:30 PM;abo;Review ok.																																																		

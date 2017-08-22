@@ -1,0 +1,14 @@
+Custom Dashboard: Improve the exception handling for embedded graphics.	"If the content of a graphic couldn't be changed, an error message is shown.
+It is better to show the original graphic with an information, that the content couldn't be changed.  
+"	45668	Sub-task	iteraplan PO	24/Jun/13 4:49 PM	26/Jun/13 3:56 PM					dashboard									25/Jun/13 12:42 PM;bra;(/) works	"25/Jun/13 9:51 PM;sry;The code formatter did not run on the added lines, as it seems. 
+
+For the warning text, I'd love to see a clearer text, that leaves fewer users scratching their heads. Suggestion: 
+{quote}
+Note: This diagram was generated for an other set of building blocks than the other diagrams in this dashboard. This type of diagram does not support replacing the building block filter, or not suitable filter is available from this dashboard.
+{quote}"	"26/Jun/13 9:08 AM;isc;Ok, now I used the code formatter.
+
+I also changed the warning text as you suggested it but with a small change.
+
+{quote}
+Note: This diagram was generated for an other set of building blocks than as specified by the dashboard. This type of diagram does not support replacing the building block filter, or not suitable filter is available from this dashboard.
+{quote}"	26/Jun/13 3:56 PM;sry;Thx!																																																			

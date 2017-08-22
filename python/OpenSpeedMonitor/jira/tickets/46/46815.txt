@@ -1,0 +1,14 @@
+Display real data from model	Display real data from model in the table + page title etc.	46773	Sub-task	iteraplan PO	08/Aug/14 10:33 AM	29/Sep/14 10:46 AM														"18/Aug/14 4:49 PM;wfr;Sorry,
+
+I assume that this subtask was done by code commited on another ticket.
+This is OK, basically.
+
+As a reviewer, I would like to have short note pointing to the other ticket where I can find the commits that did this subtask as a side effect.
+
+Then I can review and close this subtask."	"21/Aug/14 3:56 PM;sepr;I'm not sure where exactly it was implemented but in fact in works next way:
+
+controllers.js
+we have fullObjectsList which is responcible to get data from API + we sketched the request result in code if API does not respond.
+So it takes data and save it to a $scope.categories
+
+And all over the project we use this variable without additional requests (at least untill we do not need to save or take newer data from API)."																																																					

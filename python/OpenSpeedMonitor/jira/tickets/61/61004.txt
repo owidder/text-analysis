@@ -1,0 +1,25 @@
+LSD: Coloring hides content elements of active filtering	"*Summary:*
+
+If you color by the same attribute as you have already filtered, then the filtered content elements disappear.
+
+
+
+*Reproduce:*
+
+* Open the Landscape Diagram
+
+* Filter the content elements by Costs :2300 - 5000
+
+* Color by Costs
+
+
+
+*Acutal:*
+
+* All content elements disappear
+
+
+
+*Expected:*
+
+* The content elements are colored."		Bug	iteraplan PO	22/Oct/15 8:47 AM	26/Oct/15 2:13 PM					coloring	filter	lsd							26/Oct/15 2:13 PM;lwi;tested and works in chrome, IE, firefox																																																						

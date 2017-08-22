@@ -1,0 +1,31 @@
+Masterplan PNG and JPEG exports do not work on Bundle with IE (7-8-9-10)	"Flow:
+- Create and Run iteraplan Bundle (Tomcat-7 Java-7 but probably it occurs on other combinations too)
+- Try to generate a graphic report (PNG or JPEG) for the Masterplan Diagram (any masterplan configuration)
+- You will see the partial download proceeding regularly (and the actual file is correct too). After a while, a message stating that the dowloand cannot be completed will appear on IE and the content of the partial download will be wrongly replaced with the HTML page of iteraplan."		Bug	iteraplan PO	09/Jul/13 11:33 AM	23/Oct/13 11:12 AM					diagram									"09/Jul/13 2:32 PM;sry;I tried with an IE10 in a Win7 Virtual Machine, and it worked. PDFs were downloaded promptly.
+Note one difference: I had the CE running on the host computer, not inside the VM."	16/Jul/13 5:23 PM;sry;Requires deeper investigation	30/Jul/13 3:47 PM;bra;cannot reproduce (using JRE7, Tomcat 7.0.39 and IE10), bundles loaded from iteraplan.iteratec.de/opt/releases/3.1.0	"06/Aug/13 4:48 PM;lba;could reproduce issue:
+bundle:  https://www.iteraplan.de/downloads/enterpriseedition/3.1.0/iteraplan-ee-bundle-sampledata-3.1.0.zip
+tomcat: 7.0.39
+jre: jdk1.6.0_31 & jdk1.7.0_25
+IE: 10
+OS: Windows 7
+"	"06/Aug/13 4:53 PM;lba;couldn't reproduce this behaviour with:
+bundle:  https://www.iteraplan.de/downloads/enterpriseedition/3.1.0/iteraplan-ee-bundle-sampledata-3.1.0.zip
+tomcat: 7.0.39
+jre: jre6.0.31
+IE: 8
+OS: Windows XP"	"07/Aug/13 10:30 AM;lba;The weird part of this ticket is that the download of the graphics work perfectly fine if you run a local tomcat.
+iteraplan: newest iteraplan version from trunk
+tomcat: 7.0.39
+jre: jdk1.6.0_31
+IE: 10
+OS: Windows 7
+
+The main difference is the database:
+bundle: hsqldb
+local: mysql 5.2"	"09/Aug/13 5:51 PM;lba;Appearently the problem is that IE 10 can't handle the ""Transfer-Encoding: chunked"" correctly, i and Andrea guess that is beacause it can't keep the connection alive (the reason that it works in https is that ssl enforces to keep the connection alive on a lower level). 
+The approach to fix this issue is:
+- redirect output stream to a local file on the system
+- read the size of the data
+- set the context length
+- send the data
+- delete the temporal data"	22/Oct/13 5:10 PM;sry;I'm not happy with the @Suppresswarning("PMD") in the changes. Will fix that.																																															

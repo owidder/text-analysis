@@ -1,0 +1,4 @@
+Improve behavior of InformationFlow diagram saved queries with regards to permissions	"Currently, you are allowed to configure a filter on BOs when configuring an information flow diagram. However, you are not allowed to load a saved configuration containing criteria on BO.
+SBU: Desired solution would be to load the information flow diagram without business object information.
+
+For further information see ITERAPLAN-2252"		Improvement	iteraplan PO	25/Apr/14 8:19 AM	19/Jan/16 11:08 AM					informationflow	permissions																																																														

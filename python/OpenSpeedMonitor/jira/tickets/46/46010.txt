@@ -1,0 +1,68 @@
+Enable different dashboard templates for the same building block type	"Admins in iteraplan should be able to create and manage different dashboard templates for the same building block type. 
+
+Therefore:
+* The configuration page available via menu ""administration --> document templates"", the table show below caption ""Dashboard templates"" should have an add column ""Template Name"". 
+* The selection-control at the end of the respective table should always make available each managed building block type. Particularly, building block types should still be selectable although there are existing dashboard templates for this type.
+* The Views for creating and editing a dashboard template should require an explicit name.
+* On page at ""visualizations --> custom dashboards"", when creating a new dashboard for a query of a specified building block type, the user needs to be able to select from all available dashboard template related to this building block type. Additionally, when editing a custom dashboard, the user should be able to change this configuration afterwards (with selection between these templates).
+"		New Feature	iteraplan PO	21/Aug/13 4:02 PM	18/Sep/13 1:20 PM														"10/Sep/13 2:07 PM;svo;Manual Functional Testing (nightly build, 10.9.2013):
+* dasboard templates now have names
+* names now must be set explicitly
+* can create 2 dashboard templates for one BB Type
+* when creating a dashboard, I can (and have to) choose which template to use, even if there is only one eligible template
+* can change the template to a new one for existing dashboards
+* can still delete dashboards
+* can delete dashboard templates
+* trying to delete a dashboard template for which a dashboard instance exists shows an according error message
+* correctly displays elements selected by query
+
+Conclusion: solution completely satisfies requirements as stated here.
+
+Code Review OK
+
+Tested functionality as described above again with a database that was migrated from 3.1 using the migration script. Result: OK.
+"	18/Sep/13 1:20 PM;sfe;After a small fix of the migration script, it worked with Oracle DB, too	"19/Sep/13 2:43 PM;sry;Loading the dashboard instance from the sample data, I ran into the following NPE:
+{code}
+[ERROR] [2013-09-19 14:37:44] (iteratecLogTag) Exception occured while inserting a tiles template:
+[ERROR] [2013-09-19 14:37:44] (iteratecLogTag) org.apache.tiles.util.TilesIOException: JSPException including path '/jsp/CustomDashboard/DashboardInst
+ance.jsp'.
+[ERROR] [2013-09-19 14:37:44] (iteratecLogTag) Getting Root Cause of this exception:
+[ERROR] [2013-09-19 14:37:44] (iteratecLogTag) org.apache.tiles.util.TilesIOException: JSPException including path '/jsp/CustomDashboard/DashboardInst
+ance.jsp'.
+[ERROR] [2013-09-19 14:37:44] (presentation.tags.IteratecDashboardTag) null
+java.lang.NullPointerException
+        at de.iteratec.iteraplan.businesslogic.service.wiki.IteraplanSyntaxParserServiceImpl.parseDiagramElement(IteraplanSyntaxParserServiceImpl.java:259)
+        at de.iteratec.iteraplan.businesslogic.service.wiki.IteraplanSyntaxParserServiceImpl.convertIteraplanSyntaxElements(IteraplanSyntaxParserServiceImpl.java:219)
+        at de.iteratec.iteraplan.businesslogic.service.wiki.IteraplanSyntaxParserServiceImpl.extractAndConvertIteraplanElements(IteraplanSyntaxParserServiceImpl.java:113)
+        at de.iteratec.iteraplan.businesslogic.service.wiki.IteraplanSyntaxParserServiceImpl.convertIteraplanSyntax(IteraplanSyntaxParserServiceImpl.java:103)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+        at java.lang.reflect.Method.invoke(Unknown Source)
+        at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:319)
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+        at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+        at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+        at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+        at com.sun.proxy.$Proxy136.convertIteraplanSyntax(Unknown Source)
+        at de.iteratec.iteraplan.presentation.tags.IteratecDashboardTag.doStartTagInternal(IteratecDashboardTag.java:98)
+        at org.springframework.web.servlet.tags.RequestContextAwareTag.doStartTag(RequestContextAwareTag.java:79)
+        at org.apache.jsp.jsp.CustomDashboard.DashboardInstance_jsp._jspx_meth_itera_005fdashboard_005f0(DashboardInstance_jsp.java:476)
+        at org.apache.jsp.jsp.CustomDashboard.DashboardInstance_jsp._jspx_meth_c_005fwhen_005f0(DashboardInstance_jsp.java:272)
+        at org.apache.jsp.jsp.CustomDashboard.DashboardInstance_jsp._jspx_meth_c_005fchoose_005f0(DashboardInstance_jsp.java:226)
+        at org.apache.jsp.jsp.CustomDashboard.DashboardInstance_jsp._jspService(DashboardInstance_jsp.java:98)
+
+{code}
+
+Enterprise Edition Build-v3.2.SNAPSHOT-r21363 (2013-09-19-14-01-53), MySQL with fresh sample data.
+Might also be related to ITERAPLAN-1841, not sure about that. Pls investigate.
+
+EDIT: seems to be caused by the embedded Nesting cluster diagram (changes from ITERAPLAN-1886). Removing that one from the sample dashboard template avoids the error."	"20/Sep/13 11:34 AM;sfe;Custom Dashboards can now handle diagrams without return type of building blocks, too.
+Diagrams like this are for example Composite Diagrams and, as of recently, Nesting Cluster Diagrams.
+
+A warning that the elements which these diagrams are based on are not the ones used for the custom dashboard is displayed in that case."	"20/Sep/13 6:23 PM;psc;Issue noticed by Steffen is currently being addressed. 
+It is - however - not directly related to this ticket according to Stephan.
+Ticket reviewed, solution for the described challenge works. Ticket will be closed."																																																		

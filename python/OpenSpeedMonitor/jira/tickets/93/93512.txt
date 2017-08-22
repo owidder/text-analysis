@@ -1,0 +1,5 @@
+Ignorieren von nicht erreichbaren WptResults	"Es kann vorkommen dass entweder der WPT-Server nicht erreichbar ist oder dieser das gewünschte Result nicht länger zur Verfügung steht. Ist dies der Fall wird der Job aktuell vom Worker wieder in die Queue gelegt. Somit wird der Job unendliche lange wiederholt, bis er irgendwann funktionieren sollte. Um dies zu vermeiden und erreichbaren Jobs eine Chance zu geben, sollte diese irgendwann ignoriert werden.
+
+
+
+Jeder FetchJob erhält einen Counter, bei einem Fehlversuch wird dieser inkrementiert. Es wird eine maximale Anzahl definiert, die dieser Wert erreichen sollte. Der WptQueueFillWorker wird beim Laden neuer Elemente in die Queue nur solche Jobs laden, die dieses Maximum nicht erreichen. Später sollte dann eine Möglichkeit existieren diese Jobs zu entfernen oder den Counter zu resetten."		Improvement	OpenSpeedMonitor	18/Aug/16 9:21 AM	18/Aug/16 10:56 AM																																																																				

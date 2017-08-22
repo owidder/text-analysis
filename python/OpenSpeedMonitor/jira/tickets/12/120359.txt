@@ -1,0 +1,27 @@
+Landscape Diagram - Row type cannot be changend	"Reproduce with trunk and IE 11 
+
+ # Open the ""Landscape Diagram""
+
+ # Change ""Column type"" to ""Based on technical Components""
+
+ # Switch language to german
+
+ # Click on ""Anzeige"" and ""Zeige nicht zugeordnete Elemente ein""
+
+ # Change ""Spaltentyp"" to ""Merkmal"" and ""Stratetic drivers""
+
+ # Change ""Spaltentyp"" to ""Beziehung"" and ""Verbundene Geschäftsprozesse""
+
+ # Set ""Inhalts-Filter"" - ""Filter ändern"" to ""Costs zwischen 1900 to 2500"", click on ""Anwenden"" and ""Ok""
+
+ # Set ""Inhalts-Filter"" - ""Filter ändern"" to ""Produktivzeitraum zwischen 02/05/2000 to 01/01/2001"" and click on ""Schließen""
+
+ # Change ""Zeiltentyp"" to ""Beziehung"" and ""Verbundene Produkte"" 
+
+ # This is not possible
+
+
+
+Expected: That you can change the row type 
+
+ Actual: There is problem with the row type on this scenario"		Bug	iteraplan Speedbird	03/May/17 3:18 PM	20/May/17 10:23 AM														05/May/17 5:58 PM;fka;Reproduced with IE11 and current trunk	20/May/17 10:23 AM;mash;Review is done																																																					

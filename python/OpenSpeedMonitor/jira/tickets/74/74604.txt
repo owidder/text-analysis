@@ -1,0 +1,3 @@
+CsiDashboard: Auswahl CsiType wird nicht gespeichert	"Wählt man auf dem CsiDashboard in der Kategorie ""CsiType"" beispielsweise beide Checkboxen aus und klickt auf anzeigen, wird die Anzeige korrekt erstellt, jedoch ist hinterher nur noch eine Checkbox ausgewählt.
+
+In den anderen Kategorien wird die Auswahl aber beibehalten. Dieses sollte hier auch geschehen, damit überall das gleiche Verhalten ist."		Bug	OpenSpeedMonitor	24/Feb/16 9:21 AM	24/Feb/16 1:42 PM														24/Feb/16 9:35 AM;mmi;Auch im UserspecificDashboard wird die aktuelle Auswahl nicht persistiert. Bzw. Es kann kein Dashboard mehr gespeichert werden, da der CsiTyp nicht mit gespeichert wird, er aber (laut Domain) auch nicht null sein darf.																																																						

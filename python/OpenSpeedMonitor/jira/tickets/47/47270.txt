@@ -1,0 +1,11 @@
+NPE by database constraint validation when micro import via PUT	"The problem is noticed when reproducing the problem of tickets ITERAPLAN-2447.
+The pre model validation (DatabaseConstraintsValidator) leads to an NPE if an OE in the Model contains no name. But this can be possible for micro imports. 
+"		Bug	iteraplan PO	08/Jan/15 11:07 AM	13/Jan/15 9:37 AM														"08/Jan/15 11:32 AM;isc;Additional to the problem above, I found two more small mistakes which I've fixed with this ticket.
+# In the class DatabaseConstraintsValidator.java method validate(…)
+In the “for loop” for the validation for the description, the property “valid” was overwritten and not logically linked.
+# in the langugage files “ApplicationResources.properties”
+
+Any unmatched quote is treated as closed at the end of the given pattern. For example, pattern string {noformat}“… reached it’s character limit (max: {3}, current: {4}).”{noformat} is treated as pattern {noformat}“… reached it's character limit (max: {3}, current: {4}).' ”{noformat}
+The attribute 3 and 4 were not replaced in the text, as they were commented out by the single qoute in ""it's"".
+
+"	13/Jan/15 9:37 AM;tam;The fix works																																																					

@@ -1,0 +1,7 @@
+Pro Job mehrere Skripte verwenden können 	"Pro Job sollte man mehrere Skripte verwenden können. Man müsste die Reihenfolge definieren können, in der diese Skripte zusammengefügt werden (bevor sie zur Ausführung an den wptserver gesendet werden).
+
+Alle Variablen, die in den Skripten verwendet werden müssten für die Job-Edit-View vereinigt werden. Wenn mehrere Skripte die selbe Variable verwenden dürfte für diese nur ein input angezeigt werden. 
+
+
+
+Einsatz-Zweck: So könnte man z.B. ein und dasselbe Warmup-Skript in verschiedenen Skripten verwenden.  "		New Feature	OpenSpeedMonitor	03/Dec/15 9:06 AM						idea																																																															

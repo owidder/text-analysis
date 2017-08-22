@@ -1,0 +1,1 @@
+Messungen generell en/-disablen per REST-Call	Das sollte per REST-Call funktionieren. Dann könnte der Jenkins-Job zum deployen dies gleich automatisch mit erledigen.		New Feature	OpenSpeedMonitor	18/May/15 1:57 PM	18/May/15 2:53 PM																																																																				

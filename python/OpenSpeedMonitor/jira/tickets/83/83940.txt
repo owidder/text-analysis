@@ -1,0 +1,1 @@
+User creates empty diagram, cannot remove filter because there is no diagram item that can be selected			Bug	iteraplan PO	11/May/16 2:27 PM	31/May/16 6:27 PM														30/May/16 5:37 PM;ach;rejected: make textfield unselectable	31/May/16 6:11 PM;ach;todo: adjust shown text																																																					

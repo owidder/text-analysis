@@ -1,0 +1,121 @@
+Menu bar	"The system must have a menubar on the top of the screen.
+
+The menubar should be easy to hit with the mouse, 
+It should have a font size of about 14 to 16, not the default Bootstrap 12 to 14 pixel.
+To have more space for the menubar, there are less top level items in it, or they are shortened or displayed as icons.
+
+The menubar has these parts
+* iteraplan 
+* current view
+* view actions
+* notfication
+* search
+* user
+
+The menubar must be fixed to the top and visible even if the view scrolls down.
+
+The menubar should use the available width in a browser window on a screen width of 1920 pixel (my notebook screen)
+The menubar should be usable at a screen width of 1280 pixel (projector resolution)
+(WFr: clarified projectors at iteratec for demo with Sami)
+
+menu iteraplan
+titel (text in the menubar): ""iteraplan"" with ""itera"" in black, and ""plan"" in iteragenta, that is the accent color of the iteratec color scheme.
+click on title opens a menu with submenus
+items in this menu:
+* Home
+* EA Data
+* Reports
+* Visualisations
+* Mass Data
+* Governence
+* Administration
+
+""Home"" brings the user back to the home view, that is to the start URL.
+
+The other items above are the menu titles of the menu bar in the existing web UI, see screen shot ""menubar old, left part""
+
+The items of the submenu of EA Data are
+* Overview
+* Search
+* ((divider))
+* Business Domains
+* Business Processes
+... and so on, all items of the corresponding menu in the existing web UI, see screen shot ""menu items of EA Data""
+
+In the same way, the other 5 submenus (Reports, ... Administration) have ithe same items as their corresponding menus in the existing web UI.
+See screenshots.
+
+Note that we simply push down the  menu structure one level,
+* menubar (old) becomes menu (iteraplan)
+* menu EA Data becomes sub-menu
+* menu item Overview becomes item in sub-menu
+
+For the scope of this ticket, the menu ""iteraplan"" and its submenus must be drop down and must be clickable, but only the Home menu must really work. All other menu items are clickable but they are ""blind"" (relative link to ""#"")
+
+
+h3. Menu for current view
+
+In the real, fully functional version, the user can switch to another recently visited view.
+In the scope of this ticket, the links are blind, that is they do not change the current view.
+
+This menu has three parts in the menubar:
+* left pointing arrow icon
+* title of the current view 
+* right pointing arrow icon
+
+The menu items of the menu are a list of view titles, in the scope of this ticket fixed
+* Treasury # 1.0
+* Decision Support
+* Operation & Execution
+* R & D
+* Support
+* Data processed by Business Processes
+* Landscape Diagrams
+* Landscape by Business Processes - Business Units
+* Account & Contract Mgmt 
+* Business Processes
+* EA Data Overview
+* Home
+
+
+Alternatve idea: use a ""Open Apps"" icon as the menu title, instead of the title of the current view. 
+Reason: The current view title could be quite long, so that you have to abbreviate/shorten it. 
+In this form it is no longer recognizable as view title.
+In this form, the current view title becomes the first menu item.
+
+
+
+h3. Actions
+
+The actions part of the menubar has a few actions as buttons.
+The concrete actions depend on the actual view.
+In the scope of this ticket, implement these buttons:
+* Show all
+* Tree
+* Add column
+and a ""button with dropdown"" with title ""Download"" and the menu items:
+* Excel (.xslx)
+* Excel 2003 (.xsl)
+* CSV
+
+
+h3. Notifications
+
+The notification part of the menubar is a shortened message text with a avatar/user image and a counter label.
+This part is only a demo placeholder.
+Text visible ""Doris edited CRM#.3.1"" 
+To the right of the text show a counter label, value 42, fix.
+
+
+h3. Search
+
+Standard Bootstrap search element, that is a text input field with a search (magnifying glass) icon.
+Only placeholder.
+
+h3. User
+Show a small avatar icon and a dropdown indicator.
+Items in menu (fixed):
+* Logout 
+* Profile
+* German"		New Feature	iteraplan PO	09/Jul/14 3:38 PM	06/Oct/14 11:34 AM														"06/Oct/14 11:34 AM;wfr;Done successfully.
+Closed directly because work was before Kanban workflow set up."																																																						

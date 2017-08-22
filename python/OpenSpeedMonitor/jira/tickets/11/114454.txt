@@ -1,0 +1,1 @@
+Filtern der Violinen im Distribution Chart ist kaputt			Bug	OpenSpeedMonitor	09/Mar/17 6:24 PM	10/Mar/17 9:58 AM																																																																				

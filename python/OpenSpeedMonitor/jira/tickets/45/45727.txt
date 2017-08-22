@@ -1,0 +1,4 @@
+Null entries in ID_PARENT column of hierarchical elements	"In some customer's data there were infrastructure elements found with null values in their ID_PARENT and also POS columns.
+This obviously shouldn't happen, as each building block of a type with a virtual root element should have a parent id set (except the virtual root element).
+
+Please investigate how such a state could occur (primary suspect here is the Excel Importer, especially IteraplanModelDiffWriter) and fix the issue."		Bug	iteraplan PO	23/May/13 12:57 PM	15/Jul/13 6:08 PM					excel	hierarchy	position							15/Jul/13 6:08 PM;sry;Most probably the same issue that was fixed in ITERAPLAN-1663																																																						

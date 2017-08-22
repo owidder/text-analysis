@@ -1,0 +1,3 @@
+Customization for ISO date format	"Some European customers are annoyed by the weird American date format in the English locale.
+
+Add a language customization that changes the date format to ISO standards, i.e. yyyy-mm-dd."		Improvement	iteraplan PO	28/Nov/13 5:54 PM	28/Nov/13 6:17 PM					customization	date								28/Nov/13 6:17 PM;sfe;seems fine																																																						

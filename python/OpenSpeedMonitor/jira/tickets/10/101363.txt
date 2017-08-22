@@ -1,0 +1,1 @@
+Edit for boolean Value types	- edit for boolean values		Improvement	iteraplan Thunderduck	03/Nov/16 11:59 AM	29/Nov/16 10:05 AM														28/Nov/16 1:54 PM;mwe;There is only one boolean value: Technical Components "Available for Interfaces"																																																						

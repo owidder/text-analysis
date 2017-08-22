@@ -1,0 +1,19 @@
+Error page after opening Configuration page	"Reproduce:
+1. Open an overview page.
+2. Open ""Administration/Configuration"" in another tab/window.
+3. On the overview page tab, perform a table action like ""full-text search"", ""add/delete/sort column"" ...
+
+=> error page with problem report showing:
+{code}
+java.lang.ClassCastException: de.iteratec.iteraplan.presentation.dialog.Configuration.ConfigurationDialogMemory cannot be cast to de.iteratec.iteraplan.presentation.memory.SearchDialogMemory
+	at de.iteratec.iteraplan.presentation.dialog.GuiSearchController.getOldDialogMemory(GuiSearchController.java:359)
+	at de.iteratec.iteraplan.presentation.dialog.GuiSearchController.initNewDialogMemoryFromGuiContext(GuiSearchController.java:344)
+	at de.iteratec.iteraplan.presentation.dialog.GuiSearchController.search(GuiSearchController.java:304)
+...
+{code}
+
+There might be some more ways to cause this error."		Bug	iteraplan PO	25/Mar/15 11:20 AM	31/Mar/15 3:39 PM					configuration	ui								"31/Mar/15 3:39 PM;fam;Could not recreate the error in any described way, as I already use fixed version.
+Checked code and fix seems to fit the problem. 
+The fact that GUI context is keeping Admin/Config Page as active dialog although working in previous window is a really interesting behaviour.
+However,... bug fixed, ticket closed.
+"																																																						

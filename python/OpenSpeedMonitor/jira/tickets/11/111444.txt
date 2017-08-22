@@ -1,0 +1,1 @@
+basic auth via ansible ermöglichen		111439	Sub-task	OpenSpeedMonitor	09/Feb/17 5:29 PM	22/Feb/17 9:00 AM																																																																				

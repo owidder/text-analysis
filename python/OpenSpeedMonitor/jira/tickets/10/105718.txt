@@ -1,0 +1,37 @@
+Dropdown for single values	"Updated after review meeting:
+
+- create dedicated dropdown with autofill field (without apply, cancel buttons -> apply on select / enter key with valid value, cancel on klick outside / escape key) - discuss with [~fka]
+
+- possible options list should be shown on enter edit mode (e.g. try it with for sub/super ordinate elements)
+
+-------
+
+
+
+build a dropdown editor instead of chips for *single* value enums
+
+
+
+* No cancel/apply buttons in the editor (x)
+
+* Dropdown with possible values opens when editing is started (/)
+
+* When the user selects a value from the drowdown -> Apply change (x)"		New Feature	iteraplan Thunderduck	14/Dec/16 9:28 AM	24/Jan/17 9:47 AM														11/Jan/17 11:02 AM;mse;Commit 5559 and 5560 from IPTT-331 belong to this ticket.	"13/Jan/17 10:02 AM;mse;TODO:
+
+
+
+Must have:
+
+* ""Old"" value (if present) initially appears in editor
+
+* Dropdown list opens when editor is opened
+
+
+
+Nice to have:
+
+* Dropdown menu does not overlap wth apply/cancle buttons"	"16/Jan/17 2:02 PM;mse;All TODO points have been implemented. Solution was discussed with [~fka] and is fine. 
+
+
+
+Issue with clear symbol is out-of-scope and might be follow-up in ITERAPLAN-5018."	20/Jan/17 11:09 AM;mse;Dropdown list does not open sometimes, when editing is started. This seems to be because the list of available items is created to slowly: http://stackoverflow.com/questions/35624977/md-items-is-not-updating-the-suggesion-list-properly-in-md-autocomplete-angular	23/Jan/17 3:18 PM;mse;Problem with dropdown is followed-up in IPTT-378.																																																		

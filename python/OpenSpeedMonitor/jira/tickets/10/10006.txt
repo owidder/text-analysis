@@ -1,0 +1,24 @@
+Darstellung der WptResults von Multistep-Jobs	"Im WptResultDashboard (siehe IT-6) sollen die Results von Multistep-Jobs angezeigt werden können. In der Auswahl-Liste der Jobs müssen (ggf. nach einer Einschränkung nach JobGroup und Page) sowohl die bisherigen single-step-jobs als auch die neuen Steps der Multistep-Jobs angezeigt werden.
+
+Entsprechend der angehängten Skizze sollen die folgenden Auswahl-Möglichkeiten gegeben sein:
+* Zeitraum
+** Feste Intervalle wie in der Skizze
+** Manuelle Auswahl
+* Interval
+** Rohdaten
+** Stündlich
+** Täglich
+** Wöchentlich
+* Messreihe
+** Select für CSI-Group
+** Select für Page
+** Select für MeasuredEvent
+** Select für Browser
+** Select für Location/Agent
+* Messwerte (jede der folgenden Gruppen sollte eine separate Y-Achse haben)
+** Zeiten in Sek. (z. B. TTFB, Doc Ready, Fully Loaded)
+** Size in KB (z. B. Page size)
+** Anzahlen (z. B. Anzahl Requests)"	10005	Sub-task	OpenSpeedMonitor	28/May/13 5:13 PM	25/Sep/13 8:34 AM														"10/Jul/13 1:57 PM;mzeimer;Duplikat von IT-6 !
+Es wäre nicht zielführend, das dashboard nicht unverzüglich mit einer multistep-Fähigkeit zu implementieren."	"05/Aug/13 3:53 PM;nkuhn;Ein Teil der beschriebenen Funktionalität ist bereits implementiert (vor der Einführung von Multistep-Messungen).
+-> Ansprechpartnerin Sabne Schalch"	"05/Aug/13 4:44 PM;nkuhn;Telefonat mit fachlichem Ansprechpartner bei OTTO:
+Die fünf Selects sind OK. Die Auswahl nach Job-Namen macht mit Multistep-Messungen keinen Sinn mehr und wird in der Form nicht mehr benötigt."	05/Aug/13 6:01 PM;nkuhn;Zur Einschränkung der Rohdaten muss es Filter "Trim above X msec" und "Trim below X msec" geben.	03/Sep/13 9:40 AM;mzeimer;Bei der oben stehenden Auswahl wird stets nur ein Auswahlelement aufgeklappt sein (Meeting 3.9.13).	03/Sep/13 10:08 AM;mzeimer;Die Auswahl von Aggregator und Intervall soll getrennt werden (2 Auswahlen) (Meeting 3.9.13).	03/Sep/13 10:12 AM;mzeimer;Zeitliche Aggregation der Daten wie im alten Monitor (5 Min., 30 Min., 1 Std…). Datenanzeige der nicht aggregierten Daten als Punkt “Rohdaten” ermöglichen (Meeting 3.9.13).																																																

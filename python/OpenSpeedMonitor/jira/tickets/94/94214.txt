@@ -1,0 +1,13 @@
+List export: Business Mapping value in separate rows	"As-is:
+
+In the export (CSV and Excel) of the list view in the new client business mappings of an element are all exported in one table/csv row, separated by a new line. This correponds to the way they are displayed in the list.
+
+
+
+Should be:
+
+In the export (CSV and Excel) all business mappings should be in a separate table/csv row. 
+
+
+
+Maybe the list view has to be adapted for this, too. After a quick analysis discuss with PO."		Improvement	iteraplan PO	26/Aug/16 10:25 AM																																																																					

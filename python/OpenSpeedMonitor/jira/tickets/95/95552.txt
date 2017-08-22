@@ -1,0 +1,17 @@
+LazyInitialization exception during Attribute Import	"_Reproduce:_
+
+# Export Excel data
+
+# Delete Attribute Type ""Costs"" in iteraplan
+
+# Import Excel data again, with ""Include metamodel changes"" selected
+
+
+
+_Expected:_ Third step of the import successful, attribute Costs was created
+
+_Actual:_ LazyInitializationException in third import step
+
+
+
+_Solution:_ Fix the ""importTxAdvice"" pointcut for AttributeTypeImporter methods to properly open a transaction."		Bug	iteraplan Thunderduck	08/Sep/16 10:50 AM	08/Sep/16 2:35 PM					aop	import																																																														

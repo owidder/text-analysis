@@ -1,0 +1,19 @@
+iframe inclusion shows blank space for ie11	"* go to the ifd page in the IE 11
+
+* configure it for example by coloring it
+
+* save the query 
+
+* go to saved queries and click on the image button in the ""Actions"" column
+
+* copy this tag into your source code and include it to your page
+
+
+
+currently: it shows a blank space
+
+expected: it shows the saved queries configuration
+
+
+
+note: in chrome it works as expected"		Bug	iteraplan Thunderduck	20/Jun/17 3:51 PM	18/Jul/17 3:18 PM														27/Jun/17 4:22 PM;pma;Analysis: this bug occured when copying the tag in an existing project (e.g. in attributes page of iteraplan) with parents which could hide the iframe due to css configurations (may work different in various browsers). But generally, it works fine when i included this tag in a new project.																																																						

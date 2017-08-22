@@ -1,0 +1,3 @@
+Feature-Branch umbenennen	"Von detailAnalysis -> grails3Update.
+
+Machen wir unmittelbar vor dem merge in den develop-Branch."		Task	OpenSpeedMonitor	15/Jun/16 4:01 PM	12/Jul/16 6:06 PM																																																																				

@@ -1,0 +1,16 @@
+Dojo calendar not working after changing the language	"After changing the language (e.g german to english) both the calender and deleting the current date in the input field are not working anymore.
+
+Repro:
+
+1. Open Master-plan diagram (using german language context)
+2. Switch to english language context
+
+Result:
+
+1. The date format isn't updated according to the current language context (german date format remains)
+2. After clicking in the date input field the calendar isn't shown
+3. Additionally after sending the query, confirming the selection and generating the diagram an error occurs:
+{noformat}
+The following errors occurred:
+One of the provided dates is not within the allowed range. Dates are considered valid between 1/1/1000 and 12/31/9999.
+{noformat} "		Bug	iteraplan PO	14/Nov/11 11:38 AM	16/Mar/12 8:57 PM					diagram	usability																																																														

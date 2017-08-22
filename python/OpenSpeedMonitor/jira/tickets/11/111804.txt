@@ -1,0 +1,113 @@
+Build Release 5.5	"See https://iteraweb.iteratec.de/confluence/display/ITPL/Release-Prozess
+
+
+
+  0. Notizen konsultieren (/) - nichts spezielles zu tun
+
+# Allgemeine Vorbereitung (/)
+
+## Infrastruktur und Kundeninformationen (/)
+
+## Datenbank-Migration (/)
+
+###  Skripte testen (/)
+
+###  Anleitung erstellen (/) - von fka erledigt
+
+##  Begleitende Informationen (/)
+
+###   Release Notes erstellen (/)
+
+### Lizenzübersicht aktualisieren (/)
+
+###  Ticketumfang festlegen (/) - trunk
+
+##  Dokumentation (/)
+
+###  Anpassen im Wiki (/) - von fka erledigt
+
+###  Known Bugs aktualisieren (/)
+
+###  Exportieren als PDF (/)
+
+#  Code-Vorbereitung (/)
+
+##  Helper-Projekte (/)
+
+###  iteraplan common base (/)
+
+###  Elastic MI (/) - keine Änderungen seit 5.4
+
+###  Spring Security Extensions (/) - keine Änderungen seit 5.4
+
+###  iTurm (/) - keine Änderungen seit 5.4
+
+###  GetIteraplanDemo (/) - nichts zu tun
+
+##  Lizenzen und READMEs (/)
+
+## interaktiven Client releasen (/)
+
+###  Branch und Tag für neuen Client (/)
+
+###  Release-Artefakt bauen (/)
+
+##  iteraplan Branch ziehen (/)
+
+#  Release - intern (/)
+
+##  Release-Job ausführen (/)
+
+##  Testen (/)
+
+###  Bundles (/)
+
+###  Installer (/)
+
+##  Integrationsumgebung (/)
+
+###  Datenbank erstellen (/)
+
+###  Deployment-Jobs starten (/)
+
+###  Personal Demo System & GetIteraplanDemo (/)
+
+###  Test der Integrations-Umgebung (/)
+
+##  Release-Tag erstellen (/)
+
+##  Build-Artefakte auf Fileserver kopieren (/)
+
+#  Release - öffentlich (/)
+
+##  Public-Umgebung (/)
+
+###  Demo-Instanzen (/)
+
+###  Personal Demo (/)
+
+###  GetIteraplanDemo (/) - nichts zu tun
+
+##  Download-Bereich (/)
+
+###  Zugangskontrolle aktualisieren (/) - von cst erledigt
+
+###  Build-Artefakte zum Download für Kunden bereitstellen (/) - von cst erledigt
+
+### Lite-Edition Download updaten (/) - von cst erledigt
+
+##  EAM-Bereich (/)
+
+###  Migrationsskripte und -Anleitung online stellen (/) - von cst erledigt 
+
+### Dokumentations-Page anpassen (/)
+
+#  Release-Abschluss (/)
+
+##  Jira (/)
+
+###  ""Fix Version"" in allen betroffenen Tickets setzen (/) - von fka erledigt
+
+###  Release abschließen (/) - von fka erledigt
+
+### Custom field anpassen (/) - von fka erledigt"		Task	iteraplan Thunderduck	15/Feb/17 8:23 AM	20/Feb/17 11:42 AM																																																																				

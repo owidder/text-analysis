@@ -1,0 +1,5 @@
+Microservice über Ansible dploybar machen	"Wir haben bereits die Build- und Deployment-Chain im Bamboo (ähnlich wie für den osm).
+
+
+
+Was noch fehlt ist das Deployment der Docker-Compose-Geschichte mit Ansible. Dafür wollen wir die roles aus dem ansible-infrastructure Projekt verwenden aber eigene Playbooks. Zudem wollen wir Ansible im Container einsetzen. Dafür könnten wir das Image von Thomas verwenden: https://hub.docker.com/r/thomass/ansible/  "		Task	OpenSpeedMonitor	27/Jul/16 4:41 PM	07/Dec/16 12:15 PM														16/Sep/16 3:30 PM;mmi;Die Pipeline steht soweit, jedoch gibt es aus dem Ansible-Container auf dem Bamboo Probleme mit den Zurgriffsrechten auf der Zielmaschine.	07/Dec/16 12:15 PM;nku;Das Deployment macht jetzt unser Jenkins.																																																					

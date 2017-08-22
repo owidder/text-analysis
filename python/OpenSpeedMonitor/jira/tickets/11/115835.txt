@@ -1,0 +1,1 @@
+Add the configuration to the creation of images	Use the configuration of a saved query for creating an image		Improvement	iteraplan Thunderduck	22/Mar/17 2:08 PM	24/Apr/17 1:01 PM																																																																				

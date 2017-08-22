@@ -1,0 +1,1 @@
+Refactor diagrams		124430	Sub-task	iteraplan Speedbird	05/Jul/17 10:15 AM	18/Jul/17 6:32 AM														13/Jul/17 8:57 AM;dmkh;Revisions 7270, 7287, 7292 were mistakenly added to ticket IPTS-1091																																																						

@@ -1,0 +1,1 @@
+Messungen auf der Prod-Instanz aktivieren	Sobald die neuen Agenten auf der Produktiv-Instanz verfügbar sind, sollen die Wettbewerber-Messungen aktiviert werden.	113721	Sub-task	OpenSpeedMonitor	24/Mar/17 1:52 PM																																																																					

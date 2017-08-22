@@ -1,0 +1,31 @@
+Execute Testsheet Information Flow Diagram	"*Summary:*
+
+Execute Testsheet
+
+
+
+*Details:*
+
+* Ensure you have all the actual branch code
+
+* Perform all steps carefully
+
+* If the system is different than the testcases, check, if it is a bug or if the testsheet needs to be corrected.
+
+** If it is a bug, create immediately a bugticket in the epic ""Release 5.4""
+
+** If it is not a bug, correct the testsheet. "		Task	iteraplan PO	14/Oct/16 1:32 PM	25/Oct/16 8:35 AM														21/Oct/16 11:38 AM;cst;No test possible becaue of IE 11 Bug 	"24/Oct/16 10:30 AM;cst;Testing the Information Flow Diagram - without clicking on elements.
+
+For the Test im using only the toolbar. 
+
+
+
+"	"24/Oct/16 11:50 AM;cst;Test sheet was successful but tested additional settings. 
+
+Look at ITERAPLAN-4949 
+
+
+
+
+
+"																																																				

@@ -1,0 +1,104 @@
+Umbenennung Produkte	"Guten Tag
+
+Ist es möglich, den Block Produkte in Geschäftsstandorte umzubenennen und dass dies dann bei allen möglichen Aktionen (Auswertungen, Mutation, etc.) immer dieser neuer Name verwendet wird?"		Technical question	iteraplan Support	30/May/17 2:35 PM	14/Jun/17 11:07 AM														"31/May/17 6:17 AM;cst;Guten Morgen Herr Studer,
+
+vielen Dank für Ihre Anfrage.
+
+Die Namen der Building Blocks können in den folgenden Dateien geändert werden:
+ * ApplicationResources.properties (englische Oberfläche)
+ * ApplicationResources_de.properties (deutsche Oberfläche)
+
+Beide Dateien finden Sie unter:
+
+""TOMCAT\webapps\iteraplan\WEB-INF\classes\de\iteratec\iteraplan\presentation\resources"".
+
+ 
+
+In diesen finden Sie den Bereich ""Projects"" 
+
+!image-2017-05-31-06-18-36-742.png|thumbnail!
+
+Hier können Sie den Namen für den ""Classc Client"" ändern. Für den interactiven Client muss dies zusätzlich in den Dateien  im gleichen Verzeichnis geändert werden:
+ * ApplicationResourcesMM.properties
+ * ApplicationResourcesMM_de.properties
+
+Es ist zu empfehlen die Dateien vor den Anpassungen zu sichern (Backup). Änderungen in diesen, werden erst nach neustart der iteraplan Instanz sichtbar. Zusätzlich, sollte nach dem Neustart der Cache geleert werden um die korrekte aktuelle Ansicht anzuzeigen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"31/May/17 11:00 AM;alfred.studer@emmi.com;Danke für die Information
+Kann es sein, dass die englische Version (ApplicationResources.properties) strukturiert ist und die deutsche Version ApplicationResources.properties_de) gar nicht strukturiert ist?"	"31/May/17 11:32 AM;alfred.studer@emmi.com;Habe versucht, den Eintrag ""Produkt"" in Geschäfts-Standort"" oder in Englisch ""Business-Location"" umzubenennen. Habe aber nicht alle Einträge gefunden, die dazu relevant sind.
+
+Wäre es möglich, dass sie mir in den beigelegten Dateien dies entsprechend anpassen könnten?
+Besten Dank
+
+[^ApplicationResources_de-Original.properties] _(158 kB)_
+
+[^ApplicationResources - Original.properties] _(148 kB)_"	"01/Jun/17 11:17 AM;msr;Hallo Herr Studer,
+
+ja, wir können hier die Umbenennungen für Sie vornehmen.
+Es gibt zwei Möglichkeiten:
+Entweder wir passen es hier einmalig an und sie kopieren es bei dem Update auf Release 6.0 selbst in das neue Verzeichnis
+oder wir erstellen einen Custom Installer, der alle Ihre Anpassungen enthält und den wir auch für Release 6.0 ausliefern würden. Möglichkeit zwei wäre zeitaufwendiger und würde wahrscheinlich jetzt kurz vor dem Release 6.0 mindestens 2,5 Wochen dauern.
+
+Welches Vorgehen würden Sie bevorzugen?
+
+Mit freundlichen Grüßen
+
+Marcel Schrumpf"	"01/Jun/17 1:46 PM;alfred.studer@emmi.com;Die erste Variante ist ok für mich. Werde dann für mich dokumentieren, wo die Einträge zu erfolgen sind.
+Besten Dank"	"02/Jun/17 4:36 PM;msr;Hallo Herr Studer,
+
+anbei die angepassten Dateien mit den Umbenennungen von ""Produkt"" zu ""Geschäfts-Standort"" und ""Product"" zu ""Business Location"".
+
+Bitte überprüfen Sie dies noch einmal, ob es Ihren Erwartungen entspricht, bevor Sie es einbauen.
+
+Wie mein Kollege, Herr Stangl, bereits geschrieben hat, beziehen sich die Änderungen nur auf den Classic Client. Um den interaktiven Client anzupassen müssen zwei andere Dateien editiert werden.
+
+Mit freundlichen Grüßen
+
+
+Marcel Schrumpf - iteraplan Support"	02/Jun/17 4:36 PM;msr;[^ApplicationResources - angepasst.properties] [^ApplicationResources_de-angepasst.properties]	"06/Jun/17 10:15 AM;alfred.studer@emmi.com;Super, das klappt wunderbar.
+Habe das Wort Geschäftsstandort nun zusammen geschrieben. Nun wird das Wort im Button auf dem Startseite ohne Bindestrich angezeigt und das Wort trennt sich jedoch nicht automatisch, damit dies auf dem Bild platz hat.
+Welcher Eintrag bestimmt, dass auf Button auf der Startseite ein Bindestrich zwischen Geschäfts & standort entsteht?"	"08/Jun/17 4:04 PM;fka;Hallo Herr Studer,
+
+
+
+eine automatische Worttrennung von zusammengeschriebenen Wörtern ist in HTML nicht möglich. Und wir haben aktuell nur einen Eintrag für die Benennung eines Elementes, der in der gesamten Anwendung verwendet wird. 
+
+
+
+Insofern müssen Sie sich entscheiden, ob Sie ""Geschäftsstandort"", ""Geschäfts-Standort"" oder ""Geschäfts Standort"" verwenden wollen.
+
+
+
+Mit besten Grüßen
+
+Fabian Kainzinger"	08/Jun/17 4:18 PM;alfred.studer@emmi.com;Das verstehe ich voll und ganz. Wenn ich aber das Wort Geschäftseinheit betrachte. So ist dieses Wort zusammengeschrieben. Aber in der Startseite des Classic Client wird dieses getrennt. Also muss es irgendetwas geben, welches dies beeinflusst. Das ist meine Frage dazu.	"12/Jun/17 3:48 PM;fka;Hallo Herr Studer,
+
+
+
+Sorry, es gab da ein Missverständnis, im neuen Client ist dies nicht möglich, im Classic Client (bei Ihnen im Einsatz) schon:
+
+
+
+Folgende Zeile in der Property-Datei legt die Anzeige fest:
+
+
+
+product.startscreen.label=Geschäfts-Standort<br />&nbsp;
+
+
+
+Viele Erfolg beim Anpassen!
+
+
+
+Mit besten Grüßen
+
+Fabian Kainzinger
+
+
+
+ "	"13/Jun/17 8:48 AM;alfred.studer@emmi.com;Super besten Dank.
+Musste noch ein Leerzeichen hinzufügen, damit die Trennung auch erfolgte.
+Ticket kann geschlossen werden"																																											

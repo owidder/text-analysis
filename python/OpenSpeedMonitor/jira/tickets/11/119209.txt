@@ -1,0 +1,9 @@
+Weird URL and  API request when creating new enum attribute	"Go to Administration - Attributes and create new attribute of Enumeration type.
+
+ # The URL has the parameter {{translationType=de.iteratec.iteraplan.model.attribute.EnumAT.}} I think, we don't need it.
+
+ # Invalid request to {{/api/attributes/NaN}} is performed
+
+
+
+!new_attr_enum.jpg!"		Bug	iteraplan Speedbird	21/Apr/17 10:02 AM	27/Apr/17 2:31 PM																																																																				

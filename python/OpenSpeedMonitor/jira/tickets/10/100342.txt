@@ -1,0 +1,29 @@
+Saved Queries List: "building block type" for CCDs with attribute headers	"_Example:_
+
+# Go to CCD in interactive client
+
+# Configure an attribute for the header
+
+# Save as
+
+# Go to all saved queries list
+
+
+
+The query saved above does not have a building block type as main content, instead an attribute is the main content. The saved queries list currently does not support this and just shows a dash as ""building block type"" of such a saved CCD configuration.
+
+
+
+As iteraplan user I'd like to see which attribute the saved CCD has as main type, or at least a clearer indication that an attribute is the main type.
+
+
+
+Difficulty with the first option (displaying the concrete attribute):
+
+Localization keys for attribute names are tied to a building block type. To display the configured attribute, one would have to search through the metamodel for a type that carries the attribute, to then build the localization key from both. This seems rather inelegant and potentially interferes with a graceful handling of building block types not visible due to missing permissions."		Improvement	iteraplan PO	24/Oct/16 1:26 PM	03/Nov/16 4:46 PM					cluster	savedquery								"31/Oct/16 2:48 PM;mse;In principle, the bug is fixed. Just two comments:
+
+
+
+* The was SavedQueries list code was refactored in ITERAPLAN-4960, and the modifications done in this ticket here can now be found in sqListView-controller.js (from line 53 onwards)
+
+* Is it really a good idea to show e.g. ""Complexity"" as building block type in the list of saved queries for the case described above? I guess this is also relevant for some other diagrams."	03/Nov/16 4:46 PM;mse;Review ok.																																																					

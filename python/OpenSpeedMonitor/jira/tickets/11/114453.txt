@@ -1,0 +1,15 @@
+In der Jobliste angezeigte Infos anpassen	"Mir fehlen v.a. die folgenden Job-Attribute in der Job-Liste:
+
+ * Connectivity
+
+ * Video an/aus
+
+
+
+Man könnte, um Platz zu sparen, dafür die folgenden Spalten zusammenfassen:
+
+ * Location / Browser
+
+ * Ausführungsplan / Nächste Ausführung
+
+ * Runs / RV"		Improvement	OpenSpeedMonitor	09/Mar/17 6:21 PM																																																																					

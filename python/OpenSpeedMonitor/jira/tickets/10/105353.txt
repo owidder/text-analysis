@@ -1,0 +1,23 @@
+Collapse groups with 6 and more items	"*Summary:*
+
+Add possibility to resize groups with more then 6 items.
+
+
+
+*Details:*
+
+- All groups with more then 6 items should be collapsed and show only first 6 items;
+
+- In the bottom right corner of a group there should be a button to show/hide additional items. (There are no such buttons for groups with 6 items and less);
+
+- Button is displayed with ""+"" symbol when additional items are hidden (group collapsed) and ""-"" symbol when additional items are shown.
+
+
+
+{color:red}UPDATE: {color} Please ensure, that only one group is opened at any time, i.e. as soon as the user expands the second group, please collapse the first group."	104943	Sub-task	iteraplan Speedbird	12/Dec/16 2:24 PM	16/Dec/16 4:12 PM														"16/Dec/16 4:12 PM;viol;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-226
+
+no any comments"	"16/Dec/16 5:57 PM;viol;[~msr] I think we need to create follow up ticket for next situation: 
+
+Every time when we use expand button, diagram is centered on last active element 
+
+I believe that we should cancel this behavior (only for expand button) because user will be confused when he expand some area and then did not see this part of diagram but will be moved to the last active element"																																																					

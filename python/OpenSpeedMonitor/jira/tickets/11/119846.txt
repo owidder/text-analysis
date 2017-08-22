@@ -1,0 +1,25 @@
+Mandatory & out of bounds	"h2. Mandatory
+
+Single Element View:
+
+If an attribute is mandatory and but has no value, write the ""not assigned"" with red font.
+
+With an open editor of a mandatory attribute and no value entered, show a warning ""Please enter a value"" / ""Bitte geben Sie einen Wert ein"". But allow the save-action anyway.
+
+
+
+h2. Out of bound
+
+Single Element View:
+
+If an attribute is numeric and has defined bounds and but the actual value is out of bounds, write this value with red font.
+
+With an open editor of a numeric attribute with defined bounds and a value out of bounds is entered, show a warning ""Please enter a value within the bounds"" / ""Bitte geben Sie einen Wert innerhalb der Schranken ein"". But allow the save-action anyway.
+
+
+
+*Out of scope: List, Massupdate*"		New Feature	iteraplan Speedbird	28/Apr/17 5:08 PM	16/May/17 11:52 AM														"16/May/17 11:21 AM;roia;[~msr], [~mkt], I think it would be useful to show the actual bounds in message. User may not remember them and have no access to attributes to see them. It is not in scope of this task, so please create follow-up task if this is necessary
+
+
+
+!out-of-bounds.jpg!"																																																						

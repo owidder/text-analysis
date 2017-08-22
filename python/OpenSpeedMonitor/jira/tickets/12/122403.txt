@@ -1,0 +1,73 @@
+An exception occurs when clicking in Legend	"h4.Problem Description:
+
+
+
+An exception occurs when clicking somewhere near the first raw in the Legend.
+
+
+
+ 
+
+
+
+h4.Reproduction Steps:
+
+ * Open application and navigate to any Diagram
+
+ * Open the Legend and click somewhere near the first raw in the Legend. For more information see the *null.gif* file.
+
+ * 
+
+
+
+h4.Observed Results:
+
+ * TypeError: An exception occurred: c is null
+
+Stack trace:
+
+a.showColorPicker@[http://localhost:8080/iteraplan/client/js/combined1495639456825.js:39:13814]
+
+or
+
+ * TypeError: An exception occurred: c is undefined
+
+Stack trace:
+
+b.showColorPicker@http://localhost:8080/iteraplan/client/js/combined1495639456825.js:40:7782
+
+
+
+are displayed in console.
+
+
+
+ 
+
+
+
+h4.Expected Results:
+
+
+
+Nothing should happen.
+
+
+
+
+
+ 
+
+
+
+h4.Note:
+
+
+
+- Used Firefox and DEV setup and #325 build
+
+
+
+
+
+ "		Bug	iteraplan PO	25/May/17 4:02 PM	05/Jun/17 6:24 PM														26/May/17 10:13 AM;roia;Fixed with commit [6893|https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-9?cs=6893]																																																						

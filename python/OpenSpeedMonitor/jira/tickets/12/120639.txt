@@ -1,0 +1,13 @@
+Mocking vereinheitlichen	"Aktuell sind Mocks in unseren (Grails-)Tests unterschiedlich realisiert:
+
+ * Mit Mockito
+
+ * Mit Grails-DSL (ohne Spock), siehe z.B. die meisten Mocks im TestDataUtil
+
+ * Mit Groovy's MetaClass-Logik
+
+ * Mit Spock-Syntax
+
+
+
+Wir wollen in Zukunft nur noch die letzte Variante benutzen und alle anderen Fälle jetzt einmalig umschreiben. "		Task	OpenSpeedMonitor	05/May/17 2:07 PM	31/May/17 10:57 AM																																																																				

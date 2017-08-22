@@ -1,0 +1,5 @@
+Write name instead of id to the history	"Use the simple building block
+
+Use the ID for the plugins
+
+Use the name for the history"		Improvement	iteraplan Thunderduck	17/Oct/16 1:16 PM	18/Oct/16 11:49 AM														18/Oct/16 11:49 AM;mse;Review ok.																																																						

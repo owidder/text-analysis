@@ -45,6 +45,14 @@ bottle.factory("proxy", function (container) {
         return callServer("GET", "/getSvg/" + forceId);
     }
 
+    function nextSvgChunk(forceId) {
+        return callServer("GET", "/nextSvgChunk/" + forceId);
+    }
+
+    function nextNodesAndLinksChunk(forceId) {
+        return callServer("GET", "/nextNodesAndLinksChunk/" + forceId);
+    }
+
     function stop(forceId) {
         return callServer("POST", "/stop/" + forceId);
     }
@@ -59,6 +67,8 @@ bottle.factory("proxy", function (container) {
         getSvg: getSvg,
         stop: stop,
         remove: remove,
-        getWordList: getWordList
+        getWordList: getWordList,
+        nextSvgChunk: nextSvgChunk,
+        nextNodesAndLinksChunk: nextNodesAndLinksChunk
     }
 });

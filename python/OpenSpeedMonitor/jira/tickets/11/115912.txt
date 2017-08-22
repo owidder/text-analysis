@@ -1,0 +1,62 @@
+Sortierung der History im interactiven Client nach Datum unlogisch, und der Author passt nicht zu dem letzten Änderer im classic Client.	"Hallo,
+
+
+
+bei der Sortierung der Historie nach Datum sortiert der interaktive Client erst nach Monat, dann Tag, dann Jahr, Sinnvoll wäre eigentlich nur Jahr - Monat - Tag.
+
+
+
+Außerdem steht beim 'Author' der letzten Änderung ein anderer Name als bei 'Letzte Änderung von' im classic Client. Zumindest ist das so, wenn die Änderung von PluginAPI kommt. Optimal wäre für uns, wenn auch im classic Client der echte Änderer stehen würde.
+
+
+
+Mit freundlichen Grüßen
+
+Dominik Wagner
+
+"		Fault	iteraplan Support	23/Mar/17 11:01 AM	03/Apr/17 1:26 PM														"27/Mar/17 11:48 AM;cst;Guten Tag Herr Wagner,
+
+zum ersten Punkt habe ich ein Ticket erstellt, dies wird mit Version 6.0 umgesetzt.
+Sie haben Recht, die Sortierung arbeitet nicht sinnvoll. 
+
+Zum zweiten Punkt, auch das konnte ich nachvollziehen. Hier arbeitet der classic client nicht korrekt. 
+Hier wird es keine Änderung mehr geben, da mit Version 6.0 der classic client aus der Software ausgebaut wird. 
+
+Wenn User A eine Änderung eingibt und eine Reaction auslöst, hat die letzte Änderung die PLUGIN-API durchgeführt.
+Somit wird es im interactiven client korrekt angezeigt.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+ 
+
+ "	"27/Mar/17 12:40 PM;armin.joachimsmeyer@axa.de;Hallo Herr Stangl.
+es mag zwar korrekt sein, dass der API User die letzten Änderungen durchgeführt hat, aber dadurch machen sie das Feld ""Letzte Änderung von"" fast wertlos.
+Da wir in Zukunft IMMER eine Plausi auf Elemente haben, und diese auch öfters zuschlägt und entsprechende Felder umsetzt, bzw anpasst, ist hier der Letzte Änderer nicht mehr zugreifbar (und dem würden wir ja in Zukunft gerne monatlich eine Mail senden, wenn eine Plausi nicht stimmt). 
+Und leider kann ich, soviel ich weiß, ja nicht die Historie der letzten Änderer auslesen.
+Und fachlich ist es ja der Auslöser der Plausi/Reactions, der für die Änderung verantwortlich ist.
+
+Beste Grüße
+Armin Joachimsmeyer"	"27/Mar/17 12:43 PM;armin.joachimsmeyer@axa.de;Und warum ist der interactive Client korrekt, wenn ich der Historie als Author der letzten änderung der Benutzer, als letzter Änderer aber der API User drinsteht?
+Zumindest ist das sehr verwirrend."	03/Apr/17 1:12 PM;fka;Anregung letzte Änderung durch "Plugin API (triggered by user xyz)" nehmen wir mit für eines der nächsten Releases.	"03/Apr/17 1:26 PM;cst;Hallo,
+
+
+
+vielen Dank für Ihre Rückmeldung.
+
+
+
+Es wird hier eine Änderung in den nächsten Releases geben. Die letzte Änderung durch ""Plugin API (triggered by user xyz)"" nehmen wir mit auf.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support
+
+
+
+ "																																																		

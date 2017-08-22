@@ -1,0 +1,63 @@
+Nesting Cluster diagram - initial view	"Add an initial nesting cluster diagram for information systems grouped by information system domains.
+
+When the user clicks the action ""Nesting Cluster"" in the screen ""Information Systems"" (list), the system displays a nesting cluster diagram with the currently displayed list of elements in an initial configuration.
+
+Only the elements that are visible in the list are used as inner boxes in the diagram.
+
+Title: ""Information System Domains with Information Systems""
+
+For the outer boxes, all information system domains are used,
+The outer boxes are sorted lexicographically, left to right and top to bottom.
+The outer boxes all have the same background color (light gray, details to design).
+
+No border color for outer or inner boxes.
+
+Inner boxes are all Information Systems  that are releated to the IS Domain.
+Note that this is a many-to-many relationship, so a IS can be an inner box in more than one ISD as outer box.
+
+The inner boxes have all the same color, a slightly darger gray (details to design). No colors yet.
+
+Inner boxes are sorted by name, left to right and top to bottom. 
+
+Neither outer nor inner boxes are clustered, there are only two levels so far: outer and inner boxes.
+
+The title of the inner boxes must be broken in to 2 or 3 lines, if it is too long for one line.
+If possible, the breaks are at spaces. If not, the breaks should be ""hard"". Out of scope: word breaks with a lexicon.
+
+Layout: to be discussed
+
+Important: the layout in particular and the overall diagram generation must be very fast. 
+The user should see the elements of the list as a diagram immediately.
+
+Basic idea for layout
+* inner and boxes are landscape-oriented rectangles.
+* inner boxes have a fixed format, similar to a A-format, but less tall.
+* inner boxes should be layed out so that the outer box has a similar aspect ratio as the inner box. Note that the outer box has a title in addition to the grid of inner boxes.
+* outer boxes are layed out into rows, so that the resulting diagram is similar to an A-format.
+* the last row of inner boxes in an outer box, and the last row of outer boxes can be incomplete.
+* there is no extra packing/stacking  of outer boxes in a row, because the boxes have to follow a sorting order.
+* the rows of outer boxes are arranged independently, outer boxes are not alligned vertically.
+
+This leads to a fixed pattern for inner boxes in outer boxes:
+1 inner box: trivial
+2 inner boxes: one column
+3 inner boxes: two lines, lower line incomplete
+4 inner boxes: two complete lines
+5 inner boxes: three lines, 
+...
+
+The diagram must be an embedded SVG element tree within the HTML document.
+The SVG elements must be styled by CSS, not directly, just as HTML elements.
+The SVG elements must be layed by computing their position in the view model.
+
+The SVG elements must be grouped as they are displayed logically: 
+* group with title text and rectangle (both for outer and inner boxes
+* group for an outer box and its inner boxes."		New Feature	iteraplan PO	04/Aug/14 6:13 PM	18/Sep/14 3:45 PM														08/Aug/14 9:35 AM;sepr;rough estimate 7 PD	"14/Aug/14 9:02 AM;wfr;subtasks are OK
+
+order/dependencies of subtasks
+
+Start with ""create simple SVG"",
+main task is ""make ... diagram in one color""
+finishing/polishing is ""add colors""
+
+"																																																					

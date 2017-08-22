@@ -1,0 +1,45 @@
+Add rich text property column	set row height for description		New Feature	iteraplan PO	10/May/16 11:02 AM	01/Jul/16 11:38 AM														25/May/16 8:47 AM;mse;TODO for rich text formatting added to ListRowDataBuilder.js	25/May/16 4:51 PM;mwe;Calculate height of row and add it to the columnDefs.	"22/Jun/16 11:10 AM;tsu;as discussed with sfe, the richtext should only be converted into plaintext without line breaks
+
+and should then be treated as normal text."	"22/Jun/16 1:50 PM;wfr;list of media wiki parsers, relevant only those in JS: https://www.mediawiki.org/wiki/Alternative_parsers
+
+
+
+Interesting, but not now: one in Scala, one in Haskell.
+
+
+
+"	"22/Jun/16 5:36 PM;tsu;[~wfr] 
+
+the linked media wiki parsers don't do the same as a XWiki parser should do. I couldn't find a real XWiki parser for Javascript. Now I could write a XWiki parser by myself or I could write something in the classic client with the Java XWiki parser where I can get the parsed rich text strings.
+
+
+
+[XWiki Syntax|http://platform.xwiki.org/xwiki/bin/view/Main/XWikiSyntax]
+
+[MediaWiki Syntax|https://www.mediawiki.org/wiki/Help:Formatting]"	"23/Jun/16 8:55 AM;wfr;For the moment, we want to strip the markup tags from the XWiki (source) text, and display the rest as plain text.
+
+In a tabular display, this is sufficient in my eyes.
+
+
+
+So what we need is basically  ""replace all tags, that is from < to >, ignoring escaped brackets in strings, that is from "" to "", ignoring escaped quotes, with a space"".
+
+
+
+Tactically, for the current sprint, I suggest to build the simple solution.
+
+Sorry, but the XWiki-to-HTML Parser is not in the scope of this ticket.
+
+"	"23/Jun/16 4:53 PM;tsu;results of conversation with [~wfr]:
+
+* a new XWiki to plain text javascript parser should be written
+
+* no enumeration marks should be displayed
+
+* links should be shown with the text to display and the link itself "	"01/Jul/16 11:15 AM;pma;*Review Comments*
+
+Everything is fine, 2 small notes:
+
+* ListRowDataBuilder.js: please delete the TODO statement 
+
+* listTemplateUtils.js: note that the parameter ""richtext"" in all the methods are not nullable"																																															

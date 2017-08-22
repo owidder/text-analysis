@@ -1,0 +1,8 @@
+Line Chart: Not all values ​​are drawn	"I have created a line chart with multiple values. 
+The first value was applied at all for the date 01.01.2008.
+The time axis of the line graph is defined for the period from 01.01.2008 to 01.07.2013.
+Actually, I would have to see the values from 01.01.2008, but they are not displayed.
+The lines are all drawn first from the second value.
+"		Bug	iteraplan PO	01/Jul/13 4:35 PM	09/Jul/13 11:07 AM					diagram	visualization								"03/Jul/13 4:23 PM;smo;The Line Chart is drawn with JFreeChar which does not display on the axis the exact dates given as range for the chart even though they are drawn in the graphic. 
+JFreeChart has the following mechanism when displaying the dates on the time axis: takes the given range and parts it into equal ""round"" (years if the interval goes over several years, or half a year, months if the interval goes over several months, or 1. and 15. of a month and so on..) intervals an displays them and draws the grid but the graphic itself is drawn taking the exact dates into consideration.
+Added the information about the exact range drawn and widened the graphic in order to have a finer granularity on the time axis. "	09/Jul/13 11:07 AM;bra;(/) works as approved by sry																																																					

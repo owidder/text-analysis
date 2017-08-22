@@ -1,0 +1,7 @@
+Error when deleting BP with a relation to BM	"If you try to delete a BP via Excel Import, you get an error in the last import step.
+This happened only if the BP has a relation to a BM.
+
+*Steps to reproduce (with sample data):*
+# create a partial export for BP
+# delete the BP “Account & Contract Mgmt” in the excel and import it again
+# in the last import step you get an error"		Bug	iteraplan PO	12/Jun/15 1:25 PM	09/Jul/15 6:07 PM														07/Jul/15 4:42 PM;fam;Update iteraplan-elastic-core-mi to review the change. 																																																						

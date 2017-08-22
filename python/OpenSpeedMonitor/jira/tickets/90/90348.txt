@@ -1,0 +1,17 @@
+Create Legend, which slides in and out	"*Summary:*
+
+Create a sliding legend (like in the Masterplan Diagram) which shows the actual configuration.
+
+
+
+*Implementation Details:*
+
+* Default: Legend is open
+
+* Color of Building Block Type from typesDefinition
+
+* timestamp at the bottom (like in the Masterplan Diagram)
+
+* Layout should look similar to Masterplan Diagram
+
+* Please ask [~msr] for missing localisation keys"		New Feature	iteraplan Speedbird	13/Jul/16 4:56 PM	27/Jul/16 11:24 AM														27/Jul/16 11:24 AM;dmkh;Review is here: https://iteraweb.iteratec.de/fisheye/cru/IP-87																																																						

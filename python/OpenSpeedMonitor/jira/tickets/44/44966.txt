@@ -1,0 +1,4 @@
+Spreadsheet reports: Output formats not working correctly	"The handling of Output formats got a couple of issues:
+ * CSV not working
+ * Saved reports only saving ""Simple List"", ""Excel"" and ""XML"". Other formats switch back to simple list
+ * Loading a saved report the output format cannot be changed to ""MS Project"", ""Gantt"", ""CSV"""		Bug	iteraplan PO	24/May/11 12:16 PM	29/May/11 6:06 PM					reports	tabular																																																														

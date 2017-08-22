@@ -1,0 +1,23 @@
+Add date column	Attention: date values have to be translated		New Feature	iteraplan PO	10/May/16 11:02 AM	08/Jun/16 1:40 PM														"25/May/16 12:50 PM;mwe;Add button is already implemented.
+
+Check that all date values can be added as columns.
+
+The complete rowData will be built when loading the list page. You have to make sure that all possible date values are set into the rowData in RowDataBuilder."	25/May/16 3:27 PM;mwe;Test the formats respecting the language.	"27/May/16 11:12 AM;mse;* Adding of date columns implemented and date format is correctly adjusted to the language.
+
+* Unit tests check that the translation key is correct. The translation service itself is *not* tested but mocked as usual."	"27/May/16 3:50 PM;pma;*Review Comment(s):*
+
+OK"	"06/Jun/16 4:59 PM;mwe;Translation does not working correctly: German date should look like: ""15.12.2015""
+
+
+
+Please check translation."	"07/Jun/16 10:19 AM;mse;The date format is specified in the locales files and there it say for German:
+
+
+
+""DATE_FORMAT"": ""{{day}}/{{month}}/{{year}}""
+
+
+
+I agree with Michael, that this not really a common date format in German texts, but that's what used in the whole new client at the moment. So if we change the date format for the list view, it will change in all diagrams as well."	08/Jun/16 10:59 AM;mwe;Start the review from commit [3322|https://iteraweb.iteratec.de/fisheye/changelog/iteraplan-9?cs=3322].	"08/Jun/16 11:55 AM;abo;*Review-Comments:*
+
+* German format is not applied for field _lastModificationTime_ - is: ""2016-06-02T 11:41:03.000+0200"", should: ""02.06.2016 11:41:03"""	08/Jun/16 1:36 PM;mwe;LastModificationTime refers to the issue "Add technical property columns" [ITERAPLAN-4572]. The format will not be changed.	08/Jun/16 1:40 PM;abo;Review Comment is obsolete - the column is a technical column and should not be formatted (at least not in that ticket).																																													

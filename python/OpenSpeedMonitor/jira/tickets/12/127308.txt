@@ -1,0 +1,17 @@
+Tooltips have different position in IE and other browsers.	"In IE they also overlap controls to the right of text.
+
+
+
+Browsers:
+
+
+
+!Other Browser.png|thumbnail!
+
+
+
+IE:
+
+
+
+!IE11.png|thumbnail!"		Bug	iteraplan PO	17/Jul/17 10:02 AM																																																																					

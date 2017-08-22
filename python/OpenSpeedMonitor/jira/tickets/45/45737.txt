@@ -1,0 +1,6 @@
+Full-text search results should also show name of found interfaces	"When using full-text search, the result table shows only the names of connected Information Systems of an Interface, but not the actual name of the interface.
+
+The result table should show both the Interface name and the names of the connected Information Systems, e.g. like
+{noformat}
+Name (ISR A # 1.0 <-> ISR B # 2.5)
+{noformat}"		Improvement	iteraplan PO	31/May/13 1:19 PM	30/Dec/15 2:32 PM					full-text																																																															

@@ -1,0 +1,1 @@
+Bisherige Configuration Objekte ablösen und durch Job ersetzen		51767	Sub-task	secureCodeBox	24/Jul/15 8:29 PM	19/Jun/16 1:27 PM														19/Jun/16 1:27 PM;rfe;Durch den Einsatz der Camunda Engine und "externer service tasks" erstmal nicht notwendig.																																																						

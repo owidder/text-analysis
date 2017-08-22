@@ -1,0 +1,10 @@
+enumeration attribute for axis	"first part of processing 
+* in data service (_not_ reading buisness objects for the axis) and 
+* in the item builder: using values of enum type for axis items.
+"		New Feature	iteraplan PO	04/Mar/15 3:08 PM	07/Apr/15 1:28 PM														"25/Mar/15 2:14 PM;msr;Clarification for Marcel:
+
+There is no second part of processing!
+It just means, only the first part of the rendering pipeline is affected."	"02/Apr/15 4:14 PM;msr;In discussion with Andrii we decided:
+
+In the legend the axis elements (Business Objects or Properties) are *not* displayed with a colour. The axis elements in the legend are displayed in white boxes."	"02/Apr/15 4:53 PM;dasm;Verified
+revision 885"	07/Apr/15 12:46 PM;isc;reviewed																																																			

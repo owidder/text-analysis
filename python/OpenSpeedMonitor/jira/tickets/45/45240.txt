@@ -1,0 +1,6 @@
+Page number not reset after reload	"1) Create more than 20 attributes (e.g. through Excel import)
+2) Open the attribute page
+3) Navigate to page number 2
+4) Click on the Attributes entry in the menu to the left
+
+The initial attribute page is displayed but the page number is still 2, the range of the attributes displayed and the navigation buttons are wrong too."		Bug	iteraplan PO	07/Nov/11 12:26 PM	16/Nov/11 9:28 AM					gui	paging								07/Nov/11 2:35 PM;bsi;The problem occurs also with BBEs.	16/Nov/11 9:28 AM;vsh;very good!																																																					

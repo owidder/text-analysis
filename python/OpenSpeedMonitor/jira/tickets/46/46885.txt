@@ -1,0 +1,1 @@
+[Custom Dashboards] The loading graphic is not hidden.	With IE9, in Custom Dashboards the loading graphic is not hidden after the images are finished loading. 		Bug	iteraplan PO	20/Aug/14 1:25 PM	29/Aug/14 9:50 AM																																																																				

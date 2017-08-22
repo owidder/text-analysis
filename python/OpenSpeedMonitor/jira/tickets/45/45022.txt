@@ -1,0 +1,32 @@
+Volltextsuche zeigt unvollständige Ergebnisse	"Betrifft iteraplan 2.8 .
+g
+Verwendet man bei der Übersicht der Informationssysteme die Volltextsuche, so werden nicht alle möglichen Suchtreffer angezeigt. So werden z.B. von ca. 25 Informationssystemen, deren Name mit SAP beginnt, nur 13 Systeme angezeigt."		Bug	iteraplan PO	29/Jun/11 5:42 AM	08/Jul/11 11:59 AM					query									"05/Jul/11 6:38 PM;bwu;Unfortunately I cannot make a screenshot of the behaviour, but I could repeat the same issue during a customer presentation today with the standard, unmodified demo data. Fortunately, I told the customer that I work on the latest development release to show the most complete set of features and he might forgive any bugs that we may encounter.
+
+Yet, I also have the following situation when setting a filter on any of the overview lists:
+
+[WARN ] 05-Jul-2011 17:34:14 [exporter.ecore.HbmXmlStore] The de.iteratec.iteraplan.model.Seal class is not configured in EntityClassStore.getEntityClasses() method
+[INFO ] 05-Jul-2011 17:34:14 [iteraplan.presentation.ContextListener] Build ID is 'Enterprise Edition Build-v2.9.SNAPSHOT-r13806 (2011-07-01-05-49-36)'
+[INFO ] 05-Jul-2011 17:34:14 [iteraplan.presentation.ContextListener] Audit logging is deactivated.
+[INFO ] 05-Jul-2011 17:34:14 [iteraplan.presentation.ContextListener] Last modification logging is activated.
+[ERROR] 05-Jul-2011 17:35:00 [iteratecLogTag] Exception occured while inserting a tiles template: 
+[ERROR] 05-Jul-2011 17:35:00 [iteratecLogTag] org.apache.tiles.impl.CannotRenderException: JSPException including path '/jsp/InformationSystem/Search.jsp'.
+[ERROR] 05-Jul-2011 17:35:00 [iteratecLogTag] Getting Root Cause of this exception: 
+[ERROR] 05-Jul-2011 17:35:00 [iteratecLogTag] org.apache.tiles.impl.CannotRenderException: JSPException including path '/jsp/InformationSystem/Search.jsp'.
+[ERROR] 05-Jul-2011 17:35:00 [iteratecLogTag] org.apache.tiles.util.TilesIOException: JSPException including path '/jsp/InformationSystem/Search.jsp'.
+[ERROR] 05-Jul-2011 17:35:00 [iteratecLogTag] org.apache.tiles.impl.CannotRenderException: JSPException including path '/jsp/common/SearchFormAndResults.jsp'.
+[ERROR] 05-Jul-2011 17:35:00 [iteratecLogTag] org.apache.tiles.util.TilesIOException: JSPException including path '/jsp/common/SearchFormAndResults.jsp'.
+[ERROR] 05-Jul-2011 17:35:00 [iteratecLogTag] javax.servlet.ServletException: javax.servlet.jsp.JspException: No getter method for property 'hierarchicalNameIfDifferent' of bean resultItem
+[ERROR] 05-Jul-2011 17:35:00 [iteratecLogTag] java.lang.NoSuchMethodException: Unknown property 'hierarchicalNameIfDifferent' on class 'class de.iteratec.iteraplan.model.TechnicalComponentRelease'
+[INFO ] 05-Jul-2011 17:35:15 [businesslogic.service.DataSourceServiceImpl] Validating data source with the key 'MASTER'.
+[ERROR] 05-Jul-2011 17:35:22 [iteratecLogTag] Exception occured while inserting a tiles template: 
+[ERROR] 05-Jul-2011 17:35:22 [iteratecLogTag] org.apache.tiles.impl.CannotRenderException: JSPException including path '/jsp/InformationSystem/Search.jsp'.
+[ERROR] 05-Jul-2011 17:35:22 [iteratecLogTag] Getting Root Cause of this exception: 
+[ERROR] 05-Jul-2011 17:35:22 [iteratecLogTag] org.apache.tiles.impl.CannotRenderException: JSPException including path '/jsp/InformationSystem/Search.jsp'.
+[ERROR] 05-Jul-2011 17:35:22 [iteratecLogTag] org.apache.tiles.util.TilesIOException: JSPException including path '/jsp/InformationSystem/Search.jsp'.
+[ERROR] 05-Jul-2011 17:35:22 [iteratecLogTag] org.apache.tiles.impl.CannotRenderException: JSPException including path '/jsp/common/SearchFormAndResults.jsp'.
+[ERROR] 05-Jul-2011 17:35:22 [iteratecLogTag] org.apache.tiles.util.TilesIOException: JSPException including path '/jsp/common/SearchFormAndResults.jsp'.
+[ERROR] 05-Jul-2011 17:35:22 [iteratecLogTag] javax.servlet.ServletException: javax.servlet.jsp.JspException: No getter method for property 'hierarchicalNameIfDifferent' of bean resultItem
+[ERROR] 05-Jul-2011 17:35:22 [iteratecLogTag] java.lang.NoSuchMethodException: Unknown property 'hierarchicalNameIfDifferent' on class 'class de.iteratec.iteraplan.model.TechnicalComponentRelease'
+"	08/Jul/11 11:37 AM;kgo;With the 2.8 release (v2.8.0-r13390) as well as with the trunk version of iteraplan(r13834) I could only reproduce the issue when the indexes were not up to date. If the index files are removed and the indexes reloaded, the searches seem to return the correct result (e.g. when searching with 'crm' in Information Systems there are five entities in the result set with the trunk version and six entities with v.2.8.0). Can you please test, if this solves the issue for the database and iteraplan versions you are working with (the indexes can be reloaded under Administration -> Configuration)?	"08/Jul/11 11:43 AM;bwu;Ok, this seems to work. Tested with the current nightly build.
+
+Yet, I discovered another behavior in the nightly. When selecting ""Business Processes"", doing a full-text search for ""pro"" it returns 13 entries. Among them is ""Loan"", which is a product and not a business process. Is this expected behavior?"	08/Jul/11 11:59 AM;kvo;Worksforme - probably an issue since CE and EE share a DB																																																			

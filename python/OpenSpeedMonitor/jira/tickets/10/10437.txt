@@ -1,0 +1,35 @@
+SQL-Script: hourly-MV's vorberechnen	"{color:red}*Important: 2013-09-17 customerSatisfactionInPercent wird noch nicht berücksichtigt!*{color}
+
+Wie bei den CSI-MeasuredValues werden auch bei den Result-MaesuredValues die stündlichen MeasuredValues aus Performance-Gründen nicht on-the-fly beim Aufruf des Dashboards berechnet. Da in der DB für die EventResults in der Vergangenheit noch keine MeasuredValues vorliegen müssen diese berechnet werden. 
+
+Und für jeden Result-AggregatorType!
+
+Es muss für jede Kombination ""JobGroup;Page;MeasuredEvent;Browser;Location"", für die es EventResults gibt ein hourly MeasuredValue berechnet werden. Es müssen nur für die Zeiträume Werte berechnet werden, in denen es EventResults gib. Page=undefined und JobGroup.groupType!=CSI können ebenfalls entfallen."		New Feature	OpenSpeedMonitor	08/Aug/13 9:12 AM	24/Sep/13 10:45 AM														"08/Aug/13 12:03 PM;mzeimer;Tag-format sollte an das für measured-events angelehnt werden:
+http://seu.hh.iteratec.de:8444/browse/IT-3?focusedCommentId=10335&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-10335"	"08/Aug/13 12:16 PM;nkuhn;Es muss für die folgenden Attribute der EventResults jeweils ein hourly-MV berechnet werden:
+
+* Integer docCompleteIncomingBytes
+* Integer docCompleteRequests
+* Integer docCompleteTimeInMillisecs
+* Integer domTimeInMillisecs
+* Integer firstByteInMillisecs
+* Integer fullyLoadedIncomingBytes
+* Integer fullyLoadedRequestCount
+* Integer fullyLoadedTimeInMillisecs
+* Integer loadTimeInMillisecs
+* Integer startRenderInMillisecs
+* Double customerSatisfactionInPercent
+
+Bisher ist der Typ des Wertes im tag codiert. Das würde ich gerne auf entsprechende AggregatorTypes umstellen (Präfix ""RESULT_VALUE_""). Zuvor analysieren, wieviel Aufwand diese Umstellung im Code (Berechnung der hourly-Event-MV's beim Eintreffen neuer EventResults) bedeutet."	"16/Sep/13 9:24 AM;mzeimer;Ggf. NICHT per SQL sondern in Grails, als Thread der 5 Minuten nach Anwendungstart startet und dann im Hintergrund die fehlenden Values nachberechnet. Jeweils eine Transaktion pro JobResult -> Nebenläufigkeitsrisiko niedrig. 
+
+Vorteile:
+ - Die Anwendung steht ohne große downtime wieder zur Verfügung. 
+ - Die Berechnungslogik muss nicht in SQL dupliziert werden.
+
+Nachteile: 
+ - Systemlast zeitweilig sehr hoch. 
+ - Thread müsste in späteren Versionen wieder entfernt werden."	"17/Sep/13 6:24 PM;rhe;Eine Möglichkeit dies als NightlyCronjob auszuführen wurde implementiert: 
+
+* NightlyCalculationController:calculateBetweenDates()
+* NightlyResultMvCalculationService
+
+Performanceoptimierung nötig und Anpassung an variables Intervall"	24/Sep/13 10:45 AM;nkuhn;Muss nicht mehr realisiert werden, da die aggregierten Daten (hourly, weekly, ...) on-the-fly berechnet werden.																																																		

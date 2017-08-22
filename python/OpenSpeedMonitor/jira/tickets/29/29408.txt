@@ -1,0 +1,31 @@
+Rickshaw-Diagramme: Lokal konvertieren nach PNG und speichern	"Diagramme, welche über Rickshaw erzeugt werden, sollen unterhalb der Grafik einen weiteren Button zum Speichern der angezeigten Rickshaw-Grafik in der aktuellen Form anzeigen. Beim Klicken wird die angezeigte SVG-Grafik as is als PNG lokal auf dem Rechner gespeichert. Die Konvertierung findet lokal im Client statt. Wenn dabei der File-Auswahldialog zur Auswahl des Speicherorts hochkommt, dann ist das super. Wenn die Datei einfach so unter einem festen Namen erzeugt wird, dann ist das auch gut. Vermutlich zieht die Browsereinstellung bzgl. des Download-Pfads.
+
+Vermutlich ist hierzu auch eine Anpassung an dem bislang erzeugten Grafik-Code vorzunehmen, da dabei die Achsen und die eigentliche Grafik in jeweils separaten SVG-Grafiken in unterschiedlichen div-Blöcken erzeugt werden, während wir bei der Speicherung natürlich ein zusammenhängendes Bild speichern wollen."		Task	OpenSpeedMonitor	14/Jan/15 10:41 AM	17/Feb/15 4:45 PM														"16/Jan/15 5:51 PM;rkr;Status:
+
+
+
+Ich bin dabei, die einzelnen Teile der Grafik in Canvas-Elemente zu rendern, um sie von dort in einen gemeinsamen Canvas zu schreiben und von da ein PNG zu erzeugen
+
+
+
+Das Rendern der DIV-Elemente klappt. -Das Rendern der SVG-Elemente klappt nicht, weil sie mit einem externen CSS-File gestyled sind. Ich bin dabei, herauszufinden wie das File im SVG eingebunden werden kann - die standardkonforme Variante ( Angabe eines xml-stylesheet Tag vor Beginn des SVG-Tag; http://tutorials.jenkov.com/svg/svg-and-css.html ) schlägt bisher fehl. Möglicherweise kann Rickshaw so konfiguriert werden, daß custom styles inline vorhanden sind (so wie bei Highcharts), das habe ich noch nicht geprüft.- *UPDATE:* Das Rendern der SVG-Elemente klappt. Es ging um unsere eigenen CSS-Dateien, welche extern vom SVG waren. Ich lasse sie jetzt vor dem Rendern per JS dem DOM der SVGs hinzufügen, wie beschrieben auf: http://stackoverflow.com/questions/21996847/rickshaw-css-axes-in-jsdom
+
+
+
+Sobald alles auf Canvas gerendert ist, besteht das nächste Problem, das Internet Explorer den W3C-Standard für Canvas-Elemente strikt umsetzt und deren clean-origin Attribute auf false setzt sobald sie Inhalte von dritten Servern enthalten. Möglicherweise läßt sich das beheben -indem der OSM CORS von anderen Servern erlaubt oder- indem auf dem Server von OSM ein Proxy eingerichtet wird, welcher die Inhalte von Seiten dritter beschafft.
+
+
+
+-Alternative Lösung wäre ein Rendering auf Serverseite - damit es so wie im Browser aussieht, kann das mit http://phantomjs.org/ vorgenommen werden, welcher ein per JavaScript API steuerbares Webkit (ohne Browser) bereitstellt.- "	"16/Jan/15 9:12 PM;ube;Rendern auf dem Server scheidet aus. Es geht ja genau darum eine Browser-lokale Möglichkeit zum Speichern der Grafik einzubauen.
+
+
+
+Welche externe CSS-Datei ist denn überhaupt in das SVG eingebunden? Aus meiner Sicht besteht kein Grund dafür, weiterhin third party content einzubinden. Da es sich um open source Software handelt, kann die CSS garantiert mit in den OSM integriert werden.
+
+
+
+Sollten dennoch weiterhin Probleme im IE bestehen, so würde ich das in Kauf nehmen. Jeder potentielle OSM-Nutzer beschäftig sich professionell mit Web-Performance und hat unter Garantie mehrere Browser im Zugriff."	"21/Jan/15 3:08 PM;rkr;Status: Das Rendern aller (in einzelne Canvas-Elemente konvertierte DIVs und SVGs) auf einen gemeinsamen Canvas klappt. Jetzt geht es um die Positionierung. Dazu werde ich die Positon der ursprünglichen Elemente messen.
+
+
+
+Ausgenommen vom Slider - das Rendern als Canvas der Elemente, aus welchen er besteht, schlägt fehl. Ist es in Ordnung, wenn ich den Slider beim Export als Grafik weglasse?"																																																				

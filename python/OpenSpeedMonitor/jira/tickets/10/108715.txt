@@ -1,0 +1,3 @@
+Export as CSV überarbeiten	"Das Format sollte sinniger sein, damit man damit auch Arbeiten kann (pro Variable/Wert Kombination eine Spalte).
+
+Dann sollte die Funktionalität auf die ResultList Seite ausgelagert werden, da sie dort mehr Sinn macht."		Improvement	OpenSpeedMonitor	18/Jan/17 10:40 AM	20/Feb/17 3:47 PM														17/Feb/17 10:54 AM;sbr;Beispiel für Daten für CSV export wie wir ihn an apetito als Beispiel versendet haben.																																																						

@@ -1,0 +1,46 @@
+Daten exportieren 	"Hallo,
+
+
+
+in unserer iteraplan-Version ist es nicht möglich Daten per Excel  zu exportieren/importieren 
+
+
+
+Beste Grüße
+
+
+
+Volker Simon"		Fault	iteraplan Support	08/Aug/16 8:41 AM	27/Aug/16 7:00 AM														"08/Aug/16 8:41 AM;volker.simon@huk-coburg.de;
+
+!fehler.png|thumbnail!"	"08/Aug/16 9:00 AM;cst;Sehr geehrter Herr Volker,
+
+vielen Dank für Ihre Anfrage.
+
+Das von Ihnen gemeldete Verhalten, ist kein Problem das durch iteraplan erzeugt wird.  
+
+Würden Sie bitte die Einstellungen des Internet Explorers und Ihres System prüfen, wenn Dateien direkt aus dem Browser geöffnet werden.
+Die Fehlermeldung tritt auf, da die Datei nicht aus dem temporären Verzeichnis ihres Browsers korrekt aufgerufen werden kann.
+
+Speichern Sie bitte die Datei testweise direkt auf dem Desktop, danach sollte sich der Export ohne weiteres öffnen lassen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+"	"08/Aug/16 9:24 AM;volker.simon@huk-coburg.de;Hallo Herr Stangl,
+
+danke für Ihren Tipp - ""Testweise Speichern"" auf Desktop bringt den gleichen Fehler 
+
+Beste Grüße
+
+Volker Simon"	"08/Aug/16 9:41 AM;cst;Sehr geehrter Herr Volker,
+
+vielen Dank für Ihre Antwort. 
+
+Wurden bei Ihnen Berechtigungen auf Ihrem Systemen geändert, wenn dies der Fall ist, 
+müssten man das mal von Ihrer lokale IT prüfen lassen. 
+
+Bei einer Fehlermeldung beim Export durch iteraplan, erscheint an dieser Stelle kein Zugriff verweigert.  
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "																																																			

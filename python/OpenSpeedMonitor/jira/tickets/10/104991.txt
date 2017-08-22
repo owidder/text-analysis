@@ -1,0 +1,49 @@
+Add Relation	"See pic.
+
+ * Auto compl. field over all relations with the following nformation in one list:
+
+
+
+ * 
+
+ ** The relationship end  
+
+ ** List of possible elements to connect.
+
+
+
+on click on the building block type the new connection appears.
+
+
+
+in both tabs- relations and selfrelations- all possible relations are shown. In case one adds a relation that belongs to the other tab, the active tab is changed to this tab.
+
+
+
+The type of the relationship end is shown in the first column, the background is a square with rounden corners (if round corners are not too much effort). The background color should be the color of the BBT, ask [~msr] for specification of the colors. The width of the column should be fitting to the length of the BBT-name (The technical short version, e.g. IS or Proj) if not too much effort. The should be central in this ""column"", in case all boxes have the same width the text should be central.
+
+
+
+Only relations where an additional relation is possible should be shown.
+
+
+
+Show only the first 25 fitting results (in alphabetical order), if the desired one is not include the user has to add more letters to the input. The dropdown height should be about 5 lines.
+
+
+
+For selfrelations: after choosing a building block, a popup/alert window opens. This window contains one button for each type of relation. The buttons of relations that are not possible are inactive. Relations that are not possible are those that are already set, so if an element is already the parent it cannot be the parent again. In this case it also cannot be the child, so this is also not possible. But there are no further validations in the new client, so if it is the ""grandparent"" the child option is still shown and the server will deal with this.
+
+
+
+This should be implemented ""straight forward"", in case of performace issues these are considered later
+
+
+
+ The UI element should be placed at the top of the relation and selfrelation ""page"""		New Feature	iteraplan Thunderduck	07/Dec/16 6:06 PM	21/Mar/17 11:51 AM														07/Mar/17 5:29 PM;msr;The color of the Building Block Types can be found in {{app/js/common/typesDefinitions.js}}.	17/Mar/17 9:47 AM;aan;At the moment not for Business Mappings and Information Flows	"20/Mar/17 5:05 PM;pma;*Review Comments:*
+
+* All in all the code looks fine (I have only reviewed until ~Commit 6261)
+
+* Details already discussed with Andrea
+
+* Tested add relation but NOT add self relations yet"																																																				

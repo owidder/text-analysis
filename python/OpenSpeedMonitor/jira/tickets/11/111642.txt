@@ -1,0 +1,3 @@
+JobGruppe mit anzeigen in der Queues-Ansicht	"In jeder Zeile zusätzlich zu Job-Namen und Browser.
+
+"		Improvement	OpenSpeedMonitor	13/Feb/17 11:52 AM																																																																					

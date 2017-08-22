@@ -1,0 +1,12 @@
+git-branches zusammenführen	"* Die multistep-Branches können überall aufgelöst werden (Merge in den master-Branch).
+* Wenn das Update auf die Grails-Version 2.3.1 erfolgreich ist und alles funktioniert können auch die hierfür angelegten Branches in den Master-Branch rückgeführt werden.
+* Für alles, was danach gemacht wird (außer Hotfixes) bitte einen neuen Feature-Branch anlegen und in diesem arbeiten."		Task	OpenSpeedMonitor	04/Nov/13 9:39 AM	07/Nov/13 2:12 PM														"07/Nov/13 2:12 PM;nkuhn;In jedem Repo gibt es jetzt die folgenden Branches:
+
+* master
+Hier ist der zuletzt live deployte Stand drin.
+Hotfixes werden entweder direkt hier gemacht oder in einem hotfix-Branch, der von hier aus gezogen wurde und danach wieder hier hinein gemergt wird.
+* develop
+Hier findet die aktuelle Entwicklung statt die dann zum nächsten live-Release führt. Hotfixes können, wenn es erforderlich ist hier übernommen werden. Vor dem livegang wird dieser Branch in den master übernommen (gemergt) und dann vom master aus getagt und das war gebaut.
+* multistep-grails-2-3-1
+Setzt auf dem master auf und beinhaltet alles, was Rüdiger unternommen hat, um die neue Grails-Version zu testen.
+"																																																						

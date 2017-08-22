@@ -1,0 +1,19 @@
+Fix Classic Client with new permissions	"*Summary:*
+
+Fix Classic Client with new permissions in scope of ITPS-790
+
+
+
+*Details:*
+
+* Two permissions were combined in scope of IPTS-790
+
+* That's why the classic client does not start at the moment
+
+* Fix this, i.e.
+
+** Ensure the classic client can deal with this new permission structure and that it is enforced in the classic client"		Improvement	iteraplan Speedbird	23/May/17 5:02 PM	01/Jun/17 8:07 AM														"31/May/17 2:04 PM;tsc;Fixed permissions API in the classic client.
+
+
+
+Other API changes were committed for IPTS-790 (revision 27207)."																																																						

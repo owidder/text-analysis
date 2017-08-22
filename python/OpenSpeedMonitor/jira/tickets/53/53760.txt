@@ -1,0 +1,9 @@
+Eine Markt und Wettbewerber Analyse durchführen	"Welche Wettbewerber gibt es?
+
+Welche Feature bieten diese an?
+
+Featurevergleich mit unserem Produkt.
+
+Wer ist die Zielgruppe der Wettbewerber?
+
+"		Story	secureCodeBox	14/Aug/15 2:55 PM	29/Feb/16 9:27 PM														17/Aug/15 8:57 AM;jwr;Erstüberblick Timeboxed																																																						

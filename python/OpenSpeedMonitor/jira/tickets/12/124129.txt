@@ -1,0 +1,15 @@
+Remove subscription function from Business Mapping	"Relationship types (and therefore also the Business Mapping) can not have any subscriptions.
+
+
+
+Permanentely remove the subscription from the Business Mapping list view:
+
+ * individual in each line (icon on the right)
+
+ * general above the table on the right side
+
+
+
+-{color:red}UPDATE: {color} REST-error-emssage""The subscribe-operation is not supported for Business Mappings.""-
+
+ "		Bug	iteraplan Thunderduck	12/Jun/17 3:24 PM	14/Jun/17 2:07 PM														14/Jun/17 2:07 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-685																																																						

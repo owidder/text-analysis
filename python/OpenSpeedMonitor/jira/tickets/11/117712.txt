@@ -1,0 +1,27 @@
+Edit Building block	"Building Block Views are read only.
+
+Is it planned to open edit mode for next version?"		Fault	iteraplan Support	05/Apr/17 10:34 AM	05/Apr/17 10:42 AM														"05/Apr/17 10:34 AM;ansgar.marsiske@coface.com;
+
+!2017-4-4-10-33-56-138.png|thumbnail!"	"05/Apr/17 10:42 AM;cst;Dear Mrs. Marsiske,
+
+
+
+thanks for your inquriy.
+
+
+
+The single view edit is not implemented in version 5.5. 
+
+It will be accessible with version 6.0
+
+
+
+Greetings,
+
+
+
+Christoph Stangl - iteraplan Support
+
+
+
+"																																																					

@@ -1,0 +1,14 @@
+Lookup-Table MV-tag -> Klartext-Bezeichnung	"Folgende domain sollte eingeführt werden:
+
+{code:title=MvTagLookup.java|borderStyle=solid}
+class MvTagLookup{
+   String tag
+   String name
+}
+{code}
+Bei jedem Schreiben eines MeasuredValue soll ein Eintrag für den tag erzeugt werden, wenn für diesen noch kein Eintrag existiert. Die domain-Objekte zu den ID's im tag sollen geladen werden und folgende Attribute zum name des entsprechenden MvTagLookup konkateniert werden:
+
+{code:title=Zusammensetzung MvTagLookup.name|borderStyle=solid}
+""${JobGroup.name}:::${Page.name}:::${MeasuredEvent.name}:::${Browser.name}:::${Location.location}""
+{code}
+"		Task	OpenSpeedMonitor	07/Aug/13 4:25 PM	25/Feb/16 6:40 PM														02/Jan/14 5:44 PM;mzeimer;Relevanz klären: Besteht noch Bedarf für diese Optimierung?	25/Feb/16 6:40 PM;bka;Das Tag wird mit IT-62 komplett durch Fachwerte ersetzt, sodass dieses Ticket nicht mehr notwendig ist.																																																					

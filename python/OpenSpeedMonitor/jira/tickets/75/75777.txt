@@ -1,0 +1,7 @@
+[REST] all*-Endpoints benutzen JSON*-Klassen			Improvement	OpenSpeedMonitor	04/Mar/16 3:48 PM	07/Mar/16 3:00 PM														"04/Mar/16 4:06 PM;nku;Bitte alle REST-Methoden umbauen, sofern die unkontrolliert Objekte rausrendern.
+
+Bitte so irgend möglich abwärtskompatibel bleiben.
+
+
+
+Carlos bei OTTO nutzt die REST-Schnittstelle mit einer Java-Anwendung und JAXB mit strenger Annotierung. Sprich: Bei ihm knallt's, wenn auch nur irgendwas sich ändert."																																																						

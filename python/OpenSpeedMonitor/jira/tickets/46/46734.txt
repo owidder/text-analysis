@@ -1,0 +1,16 @@
+Icon and favicon	"Design an icon and a favicon for iteraplan 9.
+
+The icon will be used as the image of the link to the applicaiton.
+
+The favicon will be displayed in the address line of the browser.
+
+The icon should be a abbreviation of the wordmark ""iteraplan""
+
+First idea: 
+letters i and p, i in black, p in iteragenta
+flat light grey background, square, 
+_no_ rounded corners
+"		New Feature	iteraplan PO	10/Jul/14 3:24 PM	06/Oct/14 11:37 AM														"06/Oct/14 11:37 AM;wfr;Done successfully.
+Closed directly because work was before Kanban workflow set up.
+
+Remaining with low prio: favicon"																																																						

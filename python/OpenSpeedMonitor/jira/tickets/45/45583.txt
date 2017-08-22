@@ -1,0 +1,7 @@
+Excel Template Export of a metamodel with enumeration properties with many and/or long literals can result in an Error	"Writing the header cell for the property column of an enum property with many and/or long literals can exceed the possible character-count threshold of an Excel cell.
+The content of an Excel cell can only be 32,767 characters long. Only 1024 are displayed in a cell (all of them in the formula bar). The maximum width of a column is 255 characters.
+
+Please abbreviate the header in question appropriately to enable the export of metamodels with huge enumeration properties."		Bug	iteraplan PO	12/Oct/12 3:38 PM	15/Jan/13 11:00 AM					enumeration	excel	export							"16/Oct/12 5:30 PM;sfe;Maybe we should think about changing the abbreviation in the data cells themselves.
+Currently the cell content there is cut to 255 characters length as well. This might lead to data loss when exporting in some cases, so maybe it'd be better to allow the full 32,767 characters, even if it's not easily readable in excel, but at least the data would be preserved."	"23/Oct/12 1:59 PM;sry;I think we should exploit the full available length in the technical header cells (the hidden rows), to avoid losing data in too many cases.
+
+Why are data cells truncated at 255 characters already, not the full 1024? It should definitely also be mentioned in the user docs that there is a limitation and data might be lost."																																																					

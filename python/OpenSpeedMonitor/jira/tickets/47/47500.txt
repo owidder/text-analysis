@@ -1,0 +1,8 @@
+Wrong color for BO tile on recent view page	"Steps to reproduce:
+1. Go to NCD page
+2. Change inner type to Business Object
+3. Save the diagram with ""Save/share"" button
+4. Go to Recent view page
+5. Navigate to new tale
+Actual: Tile colored by red color
+Expected: Tile should has yellow color as default color of BO as used inner type"		Bug	iteraplan PO	16/Mar/15 4:18 PM	23/Mar/15 9:12 AM														23/Mar/15 9:12 AM;dasm;not a bug																																																						

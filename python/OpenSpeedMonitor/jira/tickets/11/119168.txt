@@ -1,0 +1,33 @@
+Less updates for Elastic	"In this ticket just check the performance. If this is a good improvement, create an extra ticket for implementing the improvement.
+
+
+
+ 
+
+
+
+Please check if this improves the performance first.
+
+
+
+As the information about changes of BB is available in the when updating, only building blocks with real changes could be updated.
+
+
+
+E.g. at the moment, also all business mappings are updated when a IS is changed even though the business mappings themselves did not change.
+
+
+
+See TransactionBasedModelUpdater.persistInMemoryModel() around line 116 as starting point.
+
+
+
+Compare also comments in --IPTT-130--
+
+
+
+ 
+
+
+
+These changes now are available ModelChange object when updating the elastic model."		Improvement	iteraplan Thunderduck	20/Apr/17 3:50 PM															27/Jun/17 1:20 PM;aan;[~msr] Should this also become a part of the Elastic-Enhencements ticket?	12/Jul/17 9:45 AM;msr;[~aan]: Yes, good idea																																																					

@@ -1,0 +1,167 @@
+Manuelle Oberflächentests	"Liste wurde aus dem alten TIcket kopiert, bitte Datum usw. anpassen.
+
+
+
+||Komponente||Getestetes Feature||Tester||Datum Test/Auswertung||Browser||Angemeldet als||Beschreibung des Tests||Ergebnis||Reviewed||
+
+| CRUD Views | CRUD ApiKey  |  | 17.02.2016 | Firefox, Chrome | ROOT | create, read, update, delete getestet | Admin Zugriff ist nicht gestattet, gewollt?  | |
+
+| CRUD Views | CRUD Browser  |  | 19.02.2016 | Firefox, Chrome | ADMIN | create, read, update, delete getestet |   | |
+
+| CRUD Views | CRUD BrowserAlias  |  | 19.02.2016 | Firefox, Chrome | ADMIN | create, read, update, delete getestet |   | |
+
+| CRUD Views | CRUD CsTargetGraph |  | 19.02.2016 | Firefox, Chrome | ADMIN | create, read, update, delete getestet |   | |
+
+| CRUD Views | CRUD CsTargetValue |  | 19.02.2016 | Firefox, Chrome | ADMIN | create, read, update, delete getestet |   | |
+
+| CRUD Views | CRUD CsiSystem |  | 19.02.2016 | Firefox, Chrome | ADMIN | create, read, update, delete getestet |  |  |
+
+| CRUD Views | CRUD Event |  | 19.02.2016 | Firefox, Chrome | ADMIN | create, read, update, delete getestet |  | |
+
+| CRUD Views | CRUD GraphiteEventSourcePath |  | 19.02.2016 | Firefox, Chrome | ADMIN | create, read, update, delete getestet |  | |
+
+| CRUD Views | CRUD GraphitePath |  | 19.02.2016 | Firefox, Chrome | ADMIN | create, read, update, delete getestet |  | |
+
+| CRUD Views | CRUD GraphiteServer |  | 19.02.2016 | Firefox, Chrome | ADMIN | create, read, update, delete getestet |  | |
+
+| CRUD Views | CRUD JobGroup |  | 19.02.2016 | Firefox, Chrome | ADMIN | create, read, update, delete getestet | | |
+
+| CRUD Views | CRUD JobSet |  | 19.02.2016 | Firefox, Chrome | ADMIN | create, read, update, delete getestet |  | |
+
+| CRUD Views | CRUD Location |  | 19.02.2016 | Firefox, Chrome | ADMIN | create, read, update, delete getestet |  | |
+
+| CRUD Views | CRUD MeasuredEvent |  | 19.02.2016 | Firefox, Chrome | ADMIN | create, read, update, delete getestet |  | |
+
+| CRUD Views | CRUD OsmConfiguration |  | 19.02.2016 | Firefox, Chrome | ADMIN | create, read, update, delete getestet |  | |
+
+| CRUD Views | CRUD Page |  | 19.02.2016 | Firefox, Chrome | ADMIN | create, read, update, delete getestet |  | |
+
+| CRUD Views | CRUD WebPageTestServer |  | 19.02.2016 | Firefox, Chrome | ADMIN | create, read, update, delete getestet |  | |
+
+| Job-Übersicht | Erstellen von Job | bwo, msk |15.06.16| Firefox/Chrome | admin | Job ohne speziell ausgewähltes Script | (/) | |
+
+| Job-Übersicht | Aktivieren von Job | bwo, msk | 15.06.16|Firefox/Chrome | admin | Job ist aktiv und wird nochmal aktiviert | (/) | |
+
+| Job-Übersicht | Deaktivieren von Job |  bwo, msk | 15.06.16 | Firefox/Chrome | admin | Job ist aktiv und wird deaktiviert | (/) |  |
+
+| Job-Übersicht | Aktivieren von Job | bwo, msk | 15.06.16| Firefox/Chrome | admin | Job ist deaktiv und wird aktiviert |  (/) |  |
+
+| Job-Übersicht | Deaktivieren von Job | bwo,msk | 15.06.16 | Firefox/Chrome | admin | Job ist deaktiv und wird deaktiviert |  (/)| |
+
+| Job-Übersicht | Job starten |  bwo | 15.06.16 | Firefox/Chrome | admin | aktiver Job mit validen Parametern |  | |
+
+| Job-Übersicht | Job starten |  bwo | 15.06.16 | Firefox/Chrome | admin | deaktivierter Job mit validen Parametern | (/) | |
+
+| Job-Übersicht | Job starten |  bka | 03.05.16 | Firefox/Chrome | admin | Job mit invalidem Skript | (/) Job wird trotz invalidem Skript ausgeführt | |
+
+| Job-Übersicht | Job stoppen | bka | 03.05.16 | Firefox/Chrome | admin | Job mit validen Parametern | (/) | |
+
+| Job-Übersicht | Jobs nach Tags filtern | bwo,msk | 15.06.16 | Firefox/Chrome | admin | Jobs nach Tags filtern | (/) | |
+
+| Job-Übersicht | Letztes Einzelergebnis von Job | bwo  | 15.06.16 | Firefox/Chrome | admin | Letztes Einzelergebnis von Job |(/) |  |
+
+| Job-Übersicht | Scroll-Header Jobs markieren |  | 15.06.16 | Firefox/Chrome | admin | Über den Scroll-Header den Haken für alle Jobs aktivieren, sodass alle Jobs markiert werden | (/) | |
+
+| Statische Header-Leiste | Links durchklicken |  | 15.06.16 | Firefox/Chrome | admin | alle statischen Links aus dem Header durchprobieren | (/)  | |
+
+| Csi Dashboard | UserSpecificDashboard |  bwo | 15.06.16| Chrome, Firefox | admin, ohne | select, create, delete tested | (/) | |
+
+| Csi Dashboard | ConfigurationTab | bwo | 15.06.16 | Chrome, Firefox | admin | copy csiConfigurations tested | (/) | |
+
+| Csi Dashboard | ConfigurationTab | bwo | 15.06.16 | Chrome, Firefox | admin | show, change, rename, delete csiConfigurations tested | (/)  | |
+
+| Csi Dashboard | ConfigurationTab | bwo | 15.06.16| Chrome, Firefox | root | add, change, delete page-mappings tested | (/) | |
+
+| Csi Dashboard | ConfigurationTab | bwo | 15.06.16 | Chrome, Firefox | admin | csv download (different csiConfigurations) for all weights and mappings tested | (/) | |
+
+| Csi Dashboard | ConfigurationTab | bwo  | 15.06.16 | Chrome, Firefox | root | csv upload (different csiConfigurations) for all weights and mappings tested | (/)  |  |
+
+| Csi Dashboard | CsiDashboard | bwo | 15.06.16 | Chrome, Firefox | ohne | verschiedene Zeiträume getestet (auch manueller Zeitraum) | (/) | |
+
+| Csi Dashboard | CsiDashboard | bwo  | 15.06.16| Chrome, Firefox | ohne | verschiedene Aggregationen getestet | (/)   |  |
+
+| Csi Dashboard | CsiDashboard | bwo | 15.06.16 | Chrome, Firefox | ohne | verschiedene Filter getestet | (/)  | |
+
+| Csi Dashboard | CsiDashboard | bwo | 15.06.16 | Chrome, Firefox | ohne | csv download | (/)  | |
+
+| Csi Dashboard | CsiDashboard | bwo |15.06.16 | Chrome, Firefox | ohne | diagramm download und tabellendarstellung | (/) | |
+
+| Csi Dashboard | CsiDashboard |  bwo| 15.06.16| Chrome, Firefox | ohne | diagramm anpassen (groesse etc) |(/)  | |
+
+| Csi Dashboard | UserSpecificDashboard | bwo | 15.06.16 | Chrome, Firefox | admin | diagramm Anspassungen werden im UserspecificCsiDashboard mit persistiert | (/) | |
+
+|Mess-Ergebnisse|Show Load time, Raw Data, First View| bwo |29.04.16|Chrome|Admin|Es sollten Daten für den ausgewählten Zeitraum vorliegen| (/)| |
+
+|Mess-Ergebnisse|Show Load time, Raw Data, First View, Last Week, All Browser| bwo|29.04.16|Chrome, Firefox|None|Es sollten Daten für den ausgewählten Zeitraum vorliegen|(/) | |
+
+|Mess-Ergebnisse|Show Load time, Raw Data, First View, One Browser| bwo|29.04.16|Chrome, Firefox|None|Es sollten Daten für den ausgewählten Zeitraum vorliegen| (/)| |
+
+|Mess-Ergebnisse|Show Load time, Raw Data, First View and Second View, Last Week, One Browser| bwo, msk |29.04.16|Chrome, Firefox|None|First und Second View wird ausgewählt|(/) | |
+
+|Mess-Ergebnisse|Trim Load times| bwo,msk |29.04.16|Chrome, Firefox|None|Es wurden Daten mit Zeiten von 600-2400 ausgewählt. Trim Above=1500, Trim Below=100| (/)| |
+
+|Mess-Ergebnisse|Trim Count of requests times| bwo,msk|29.04.16|Chrome, Firefox|None|Es wurden Daten mit Werten von 6-8 ausgewählt. Trim Above=8, Trim Below=6| (/) | |
+
+|Mess-Ergebnisse|Trim Size of requests| bwo,msk |29.04.16|Chrome, Firefox|None|Es wurden Daten mit Werten von 60-770 ausgewählt. Trim Above=500, Trim Below=100| (/)| |
+
+|Mess-Ergebnisse|load time|bwo |29.04.16|Chrome|None|Es existieren Daten für den Messwert der ausgewählt wurde| (/)| |
+
+|Mess-Ergebnisse|Time to first byte|bwo |29.04.16|Chrome|None|Es existieren Daten für den Messwert der ausgewählt wurde|(/) | |
+
+|Mess-Ergebnisse|Start render| bwo|29.04.16|Chrome|None|Es existieren Daten für den Messwert der ausgewählt wurde| (/)| |
+
+|Mess-Ergebnisse|Doc complete| bwo|29.04.16|Chrome|None|Es existieren Daten für den Messwert der ausgewählt wurde| (/)| |
+
+|Mess-Ergebnisse|load time| bwo|29.04.16|Chrome|None|Es existieren Daten für den Messwert der ausgewählt wurde| (/)| |
+
+|Mess-Ergebnisse|visually complete|bwo |19.02.16|Chrome|None|Es existieren Daten für den Messwert der ausgewählt wurde|(/) | |
+
+|Mess-Ergebnisse|fully loaded time| bwo |29.04.16|Chrome|None|Es existieren Daten für den Messwert der ausgewählt wurde|(/) | |
+
+|Mess-Ergebnisse|count of requests to doc complete| bwo |29.04.16|Chrome, Firefox|None|Es existieren Daten für den Messwert der ausgewählt wurde| (/)| |
+
+|Mess-Ergebnisse|bytes until doc complete| bwo |29.04.16|Chrome|None|Es existieren Daten für den Messwert der ausgewählt wurde| (/) | |
+
+|Mess-Ergebnisse|bytes until fully loaded| bwo |29.04.16|Chrome|None|Es existieren Daten für den Messwert der ausgewählt wurde|(/) | |
+
+|Mess-Ergebnisse|Customer satisfaction| bwo |29.04.16|Chrome|None|Es existieren Daten für den Messwert der ausgewählt wurde|(/) |  |
+
+|Mess-Ergebnisse|Speed Index| bwo |29.04.16|Chrome|None|Es existieren Daten für den Messwert der ausgewählt wurde| (/)| |
+
+|Mess-Ergebnisse|CSV Export| bwo|29.04.16|Chrome, Firefox|None|Vorhandene Daten auswählen->Exportieren| (/)|  |
+
+|Mess-Ergebnisse|Adjust, korrekte Parameter| bwo|29.04.16|Chrome, Firefox|None|Vorhandene Daten auswählen->Adjust Width/Height| (/)| |
+
+|Mess-Ergebnisse|Adjust, Parameter keine Zahl|bwo |29.04.16|Chrome, Firefox|None|Es werden Buchstaben, anstatt Zahlen eingegeben| (/)| |
+
+|Mess-Ergebnisse|Adjust, Parameter zu klein| bwo|29.04.16|Chrome, Firefox|None|Es werden zu kleine Werte für die Höhe/Breite eingegeben|(/) | |
+
+|Mess-Ergebnisse|Show Data-markers| bwo|29.04.16|Chrome, Firefox|None|Es wurde ein Graph erzeugt und die Checkbox ""Show data-markers"" wurde aktiviert|(/) | |
+
+|Mess-Ergebnisse|Show Data-labels| bwo|29.04.16|Chrome, Firefox|None|Es wurde ein Graph erzeugt und die Checkbox ""Show data-labels"" wurde aktiviert|(/) | |
+
+|Mess-Ergebnisse|Hide Data-markers|bwo |29.04.16|Chrome, Firefox|None|Es wurde ein Graph erzeugt und die Checkbox ""Show data-markers"" wurde deaktiviert|(/) | |
+
+|Mess-Ergebnisse|Hide Data-labels| bwo|29.04.16|Chrome, Firefox|None|Es wurde ein Graph erzeugt und die Checkbox ""Show data-labels"" wurde deaktiviert|(/) | |
+
+|Mess-Ergebnisse|Download chart as PNG| bwo|29.04.16|Chrome, Firefox|None|Es wurde ein Graph erzeugt und der Button ""Download chart as PNG"" betätigt|(/) | |
+
+|Mess-Ergebnisse|Download chart as PNG, widescreen| bwo|29.04.16|Chrome, Firefox|None|Vor dem Download wurde die Box ""Optimize exporte for widescreen"" aktiviert|(/) |
+
+|Mess-Ergebnisse|Adjust Y-axis| bwo|29.04.16|Chrome, Firefox|None|Es werden neue Wert eingegeben|(/)  | |
+
+|Mess-Ergebnisse|Adjust Chart Title|bwo |29.04.16|Chrome, Firefox|None|Es wird der Titel verändert|(/) | |
+
+|Mess-Ergebnisse|Rickshaw Label Summary| bwo|29.04.16|Chrome, Firefox|None|Es werden mehrere Kurven angezeigt, welche alle der gleichen JobGroup angehören| (/)| |
+
+|Custom-Mess-Ergebnisse|Speichern neues Dashboards| msk |03.05.16|Chrome, Firefox|Admin|Es wurde ein Dashboard erstellt, mit einem Titel, anderere Höhe/Breite und gesetzen Checkboxen| (/) siehe IT-1066| |
+
+|Custom-Mess-Ergebnisse|Laden eines Dashboards| msk |03.05.16|Chrome, Firefox|Admin|Ein Dashboard mit gesetzten Adjustments wurde geladen| (/) siehe IT-1066|  |
+
+|UserspecificEventResultDashboard CRUD|Löschen eines Dashboards| bwo, msk |29.04.16|Chrome|Admin|Ein Dashboard wird gelöscht| (/) | |
+
+|UserspecificEventResultDashboard CRUD|Update eines Dashboards|  msk |03.05.16|Chrome|Admin|Daten wurden aktuallisiert und gespeichert|(/) siehe IT-1066 | |"		Task	OpenSpeedMonitor	29/Apr/16 8:38 AM	16/Jun/16 10:37 AM														"29/Apr/16 11:20 AM;bwo;Sollte bei den Tests schlechte Performance auffallen, sollten wir diese noch einmal auf der der dev Instanz testen:
+
+
+
+* Löschen eines PageMappings"																																																						

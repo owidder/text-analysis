@@ -1,0 +1,19 @@
+Single page for a missing business object	"# Open single page for a business object
+
+ # Delete this BO in some other tab
+
+ # Refresh the page
+
+
+
+Actual result: broken page, exceptions in console
+
+
+
+Expected result: friendly message that object is not found, probably has been deleted or there're no permissions. Maybe link to list (if building block type is valid and permitted)
+
+
+
+{color:red}UPDATE: {color} Message: ""The object is not found. Probably it has been deleted or there's no permission"" / GER: ""Das Objekt konnte nicht gefunden werden. Wahrscheinlich wurde es gelöscht oder es fehlen Berechtigungen.""
+
+Put a link to the list of this Building Block Type below. Title of the link: ""Back to list"" / GER: ""Zurück zur Liste"""		Bug	iteraplan PO	30/May/17 5:19 PM	16/Jun/17 5:48 PM														08/Jun/17 12:03 PM;roia;[~msr], [~fka], could you please specify the desired behavior in this case.	09/Jun/17 4:15 PM;msr;Done :)	14/Jun/17 12:58 PM;vadm;See review comments https://iteraweb.iteratec.de/fisheye/cru/IP-684	14/Jun/17 1:59 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-684																																																			

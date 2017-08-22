@@ -1,0 +1,40 @@
+Local Iteraplan 5.5 instALLATION FILE	"Wo bekomme ich die 5.5 für eine lokale Testinstallation auf meinem Laptop
+
+her. Erste Tests werden bei uns immer auf einer lokalen Umgebung gemacht.
+
+
+
+Die Lizenz für 2017 muß auch in eine 5.2 eingespielt werden ?"		Technical question	iteraplan Support	16/Feb/17 6:17 PM	13/Mar/17 7:00 AM														"17/Feb/17 8:11 AM;cst;Sehr geehrter Herr Zerrer,
+
+vielen Dank für Ihre Anfrage.
+
+Der Link und die Zugangsdaten zum Bundle lauten wie folgt:
+
+https://www.iteraplan.de/downloads/basis/5.5.0/iteraplan-basic-bundle-5.5.0.zip
+
+Login: basis
+Password: YUAT12uP
+
+Bitte beachten Sie, dass wir für Probleme mit dem Basic Bundle keinen Support leisten.
+
+Viele Grüße,
+
+Christop Stangl - iteraplan Support"	"22/Feb/17 1:35 PM;wolfgang.zerrer@festo.com;Danke für die Antwort.
+
+Wie ist es mit der 2-ten Frage? Muß ich die Lizenz für 2017 in die Produktion einspielen ?
+Wenn ja, in welchem Zeitraum ? Muß Iteraplan dazu gestoppt sein ?"	"22/Feb/17 3:08 PM;cst;Sehr geehrter Herr Zerrer, 
+
+vielen Dank für Ihre Antwort.
+
+Die Lizenz muss bis zum 31.03.2017 eingespielt werden, danach läuft die alten Lizenz ab. 
+Sie können die Lizenz über die Admin-Oberfläche von iteraplan einspielen. 
+
+Nach logout und login wird Ihnen die Lizenz angezeigt. 
+
+Ein neustart des Tomcats ist hier nicht notwendig.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+"																																																				

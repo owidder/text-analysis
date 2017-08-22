@@ -1,0 +1,13 @@
+Breadcrumbs show name of saved visualization	"In all visalizations: When user saves the configuration, the given name appears somewhere between the buttons at the top. 
+
+ # Erase the name between the buttons
+
+ # Insert the name in the breadcrumbs in the following style (see also example in attachment). The name is not cklickable
+
+
+
+{code:java}
+
+<Visualisation-Name>/<Name of saved configuration>{code}
+
+The name of the current configuration stays in the breadcrumbs until user cklicks ""RESET"" - or another saved configuration is loaded, then it's replaced."		Improvement	iteraplan PO	11/Jun/17 3:14 PM	16/Jun/17 5:06 PM														13/Jun/17 1:33 PM;olal;Review is done, tested on Chrome/IE11/Firefox, no comments																																																						

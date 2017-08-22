@@ -1,0 +1,42 @@
+SQL Fehler beim Reset eines gesetzten Attributes	"Hallo, wir prüfen Attribute per Reactions und setzen sie eventuell auch mit:
+
+print(""Reset "" + tPropertyName + "" for "" + aObject.getValue(""name"")+ "" because it is the same as in parent AWS"");	
+
+aObject.clearValues(tPropertyName);
+
+zurück.
+
+Das knallt aber, wenn die Reaction den Wert in dem Moment zurücksetzt, in dem der Anwender ihn gesetzt hat. 
+
+Sonst funktioniert es.
+
+Im ersten Log wurde erst der Fehler erzeugt, dann die Reactions ausgeschaltet und der Wert gesetzt, dann Reactions wieder aktiviert und ein anderer Change gemacht, der den Wert ohne Probleme rücksetzten konnte.
+
+Im zweiten Log derselbe Fehler nach dem Einspielen des Oracle Scripts.."		Fault	iteraplan Support	03/May/17 1:14 PM	27/Jun/17 10:39 AM														"03/May/17 1:14 PM;armin.joachimsmeyer@axa.de;
+
+[^app_iteraplan_KOMO_ARMINS_RECHNER_1.2017-05-03 - erster.log] _(52 kB)_
+
+[^app_iteraplan_KOMO_ARMINS_RECHNER_1.2017-05-03 zweiter.log] _(95 kB)_
+
+[^stdout  zu  erstem.log] _(22 kB)_"	"03/May/17 2:15 PM;cst;Hallo Herr Joachimsmeyer,
+
+habe hierfür eine Analyse Ticket für unsere Entwickler erstellt. 
+Bei Antwort werde ich Sie umgehend informieren.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"27/Jun/17 10:39 AM;cst;Sehr geehrter Herr Joachimsmeyer,
+
+
+
+dieses Verhalten ist mit Version 6.0 gelöst worden.
+
+Sollte es unerwartete Problem damit geben, sollten wir hierzu ein neues Ticket eröffnen. 
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support"																																																				

@@ -1,0 +1,19 @@
+Unify zoom URL parameter value in MPD, PFD, BCD	"Please, unify zoom URL parameter value in MPD, PFD, BCD
+
+Follow-up ticket for IPTS-364
+
+
+
+*Actual:*
+
+Value like ""0.38264045571462496""
+
+
+
+*Expected:*
+
+Two decimal places, like for example ""0.15""
+
+
+
+After fixing please check if zoom working correctly."		Bug	iteraplan Speedbird	25/Nov/16 5:33 PM	05/Dec/16 3:05 PM														05/Dec/16 3:05 PM;dmkh;Review is done, defect is fixed: https://iteraweb.iteratec.de/fisheye/cru/IP-207																																																						

@@ -1,0 +1,8 @@
+Refactor iteraQL-grammar	"The iteraQL-grammar should be extended to support all available operators and value types. Further, we must ensure that the grammar remains extensible.
+
+In addition, it should be capable of partial parsing, so that it can support edit completion suggestions.
+
+Further ideas, not necessarily part of this ticket:
+* variables in expressions
+* arithmetic aggregation operators
+* compatibility checks between data types"		Task	iteraplan PO	02/Jul/12 11:33 AM	30/Dec/15 2:32 PM					iteraQL									05/Jul/12 10:14 PM;kvo;Maybe we should also have a list of all control characters and where we need to have validations/escaping to keep them from causing trouble (e.g. property names).																																																						

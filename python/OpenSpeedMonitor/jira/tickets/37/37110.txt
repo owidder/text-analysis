@@ -1,0 +1,7 @@
+Methoden in den InMemoryConfigService versschieben	"Methoden-Rümpfe in den InMemoryService verlagern.
+
+Testmethoden ebenfalls verlegen (testSomething()-Methode löschen)."		Improvement	OpenSpeedMonitor	08/Apr/15 9:48 AM	08/Apr/15 1:58 PM														"08/Apr/15 1:58 PM;rhc;* Methoden-Rümpfe in den InMemoryService verlagert
+
+** Alle betroffenen stellen angepasst
+
+** Alle betroffenen Tests angepasst"																																																						

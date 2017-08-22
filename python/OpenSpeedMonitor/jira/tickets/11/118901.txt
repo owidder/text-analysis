@@ -1,0 +1,9 @@
+LocationHealthChecks schreiben 	"Um den Zustand der Mess-Locations und -Queues überwachen zu können sollten wir regelmäßig Health Checks schreiben. Diese sollten in ein Graphite geschrieben werden und hier Dashboards ermöglichen.
+
+
+
+Zudem könnten diese HealthChecks verwendet werden, um
+
+ * die Location-Queues-Seite schneller zu machen.
+
+ * beim Starten neuer Messungen zu checken, ob eine Mess-Queue gerade überlastet ist und dann entsprechend zu reagieren. "		New Feature	OpenSpeedMonitor	18/Apr/17 9:07 AM	18/Apr/17 9:08 AM																																																																				

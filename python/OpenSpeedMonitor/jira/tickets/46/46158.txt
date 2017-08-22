@@ -1,0 +1,11 @@
+Custom Dashboard Copy On Edit	"Editing a Custom Dashboard results in a new Custom Dashboard instance.
+
+To reproduce: Edit a Custom Dashboard. Remove current saved query -> selection dialogue for saved query. After the selection of a saved query, a new template must be selected. After the selection of the template (even if same template as before), name and description of the dashboard are gone.
+
+Expected: Changing of saved query leaves the rest of the Custom Dashboard intact. Offered saved queries are constrained in accordance with the type of the dashboard template (recommendation in the opposite direction compared to standard creation wizzard for Custom Dashboards)."		Bug	iteraplan PO	17/Oct/13 4:39 PM	30/Dec/15 3:34 PM					dashboard	edit								"24/Oct/13 3:31 PM;isc;That is a feature.
+The saved query is the basic for dashboard instance.  On the basis of the return type (from the saved query) is decided which templates are available. If you change the query, the BBT can also modify and thus the selection of templates. Therefore, when you delete the saved query, a new dashboard is created. Because it's a totally different dashboard. 
+That time I had discussed this issue with Patrick.
+
+So I think that this is not a bug.
+If a different behavior is desired, we should discuss this again with Patrick or Sabine.
+"																																																						

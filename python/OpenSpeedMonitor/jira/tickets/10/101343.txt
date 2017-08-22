@@ -1,0 +1,5 @@
+Edit Service Enum	"- JSModel changes
+
+- REST calls generation + rollback on error
+
+- use persistent names for values"	101342	Sub-task	iteraplan Thunderduck	03/Nov/16 11:32 AM	14/Nov/16 11:52 AM																																																																				

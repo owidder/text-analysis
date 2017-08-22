@@ -1,0 +1,29 @@
+Front end for Embeded Links	"At the moment only for the usage with the iframes. Only for saved queries of images, not for saved queries of lists!
+
+
+
+Add an appropriate icon to the actions column on the right in the saved queries list. When clicking on his icon a field with the necessary code snippet appears in an dialog where one can copy it to insert it to the website.
+
+
+
+*User Story:*
+
+
+
+The user is on the saved queries-list. He chooses a saved query of an diagram and clicks on the icon. Then he can copy the code snippet and insert it in his page so the other people can see the corresponding image after logging in.
+
+
+
+ 
+
+
+
+Example Code-Snippet:
+
+
+
+{color:#333333}<iframe width=""90%"" height=""400px"" src=""/iteraplan/client/#/savedQueries/df44a9cf-50a5-43b3-8e64-563cc54685c3/SVG"" />{color}
+
+
+
+ "		Improvement	iteraplan Thunderduck	07/Mar/17 5:37 PM	29/May/17 1:02 PM														22/May/17 9:14 AM;tsc;[~aan]: please add/change documentation: [https://doc.iteraplan.de/display/iteraplan60/Saved+Queries]	29/May/17 1:00 PM;aan;Doku is added on the page suggested																																																					

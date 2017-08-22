@@ -1,0 +1,267 @@
+Installation + packages for Conoco	"Dear support,
+
+
+
+I would like to inform you than we would need support for a complete update package for Conoco iteraplan instance.
+
+
+
+The current version is 3.4.1 and this shall be updated to 5.3
+
+
+
+Need packages + license  and procedure manual
+
+
+
+Thanks in advance"		Technical question	iteraplan Support	30/Nov/16 7:14 AM	13/Dec/16 8:54 AM														"30/Nov/16 8:53 AM;cst;Good Morning, 
+
+thank you for your inquiry. 
+
+Would you please give me Name of our customer (or is Conoco a abbreviation)
+After that, I prepare the next steps for you. 
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "	01/Dec/16 11:44 AM;admin@mcongroup.net;Customer is JET Tankstellen Deutschland GmbH	"01/Dec/16 12:44 PM;cst;Thank you :-) 
+
+
+
+The first step is to update the database from version 3.4.1 to 5.3.
+
+In this ZIP-Achive you will find all upgrade scripts for that. 
+
+
+
+[^Scripts.zip]
+
+
+
+Please note, its important to update the database in a row. 
+
+ 
+
+After that, you can download /install the version 5.3 Basis from this link:
+
+
+
+https://www.iteraplan.de/downloads/basis/5.3.0/iteraplan-5.3.0-basis-installer.zip 
+
+
+
+Login: basis
+
+Password: joA9toup
+
+
+
+The License-Key as follows:
+
+
+
+SkVUIFRhbmtzdGVsbGVuIERldXRzY2hsYW5kIEdtYkgAMzEuMDMuMjAxNwBEMzdBRTlFQTFCNUI0MzA2QjQwNDdBNzg2MEU0NkY1QURDN0YxNkE1NUVGQTMzRTczODYwN0U1N0ZFMDgwNUE0 
+
+
+
+Greetings,
+
+
+
+Christoph Stangl - iteraplan Support "	"07/Dec/16 7:04 AM;admin@mcongroup.net;Dear Christoph,
+
+The first execution script it takes an error:
+
+migration_iteraplan_340_to_500_mysql.sql
+ERROR 1146 (42S02) at line 11: Table 'ip_conoco.BBT' doesn't exist
+
+also second script error:
+
+repair_pos_columns_34_mysql.sqlrepair_pos_columns_34_mysql.sql
+
+ERROR 1146 (42S02) at line 44: Table 'ip_conoco.AD' doesn't exist
+
+Please provide the propertly scripts or let us know how we continue, Thanks
+
+I stopped here"	"07/Dec/16 8:27 AM;cst;Good Morning,
+
+is the table BBT and AD in the database available? 
+
+When these are missing, you cannot have installed the Version 3.4.1.
+That's the reason why the script cannot be executed.
+
+Could you send me a Screenshot of your Tables? 
+
+When the Version 3.4.1 is correctly installed the tables are existing.
+
+Greetings,
+
+Christoph Stangl 
+
+"	"07/Dec/16 8:58 AM;admin@mcongroup.net;Dear Christoph,
+
+This are the current tables of iteraplan database:
+
+ad                     |
+| at                     |
+| at_bbt                 |
+| at_date                |
+| at_enum                |
+| at_num                 |
+| at_resp                |
+| at_text                |
+| atg                    |
+| av                     |
+| av_date                |
+| av_enum                |
+| av_num                 |
+| av_range               |
+| av_resp                |
+| av_text                |
+| ava                    |
+| ava_repair_dismiss_log |
+| ava_repair_log         |
+| ava_repair_old_ava     |
+| bb                     |
+| bb_su                  |
+| bb_ue                  |
+| bbt                    |
+| bbt_su                 |
+| bd                     |
+| bd_bu                  |
+| bf                     |
+| bf_bd                  |
+| bm                     |
+| bo                     |
+| bo_bd                  |
+| bo_bf                  |
+| bp                     |
+| bp_bd                  |
+| bu                     |
+| dashb_inst             |
+| dashb_templ            |
+| datasource             |
+| date_interval          |
+| hibernate_sequences    |
+| hist_ad                |
+| hist_at                |
+| hist_at_bbt            |
+| hist_at_date           |
+| hist_at_enum           |
+| hist_at_num            |
+| hist_at_resp           |
+| hist_at_text           |
+| hist_av                |
+| hist_av_date           |
+| hist_av_enum           |
+| hist_av_num            |
+| hist_av_range          |
+| hist_av_resp           |
+| hist_av_text           |
+| hist_ava               |
+| hist_bb                |
+| hist_bb_su             |
+| hist_bb_ue             |
+| hist_bd                |
+| hist_bd_bu             |
+| hist_bf                |
+| hist_bf_bd             |
+| hist_bm                |
+| hist_bo                |
+| hist_bo_bd             |
+| hist_bo_bf             |
+| hist_bp                |
+| hist_bp_bd             |
+| hist_bu                |
+| hist_ie                |
+| hist_ie_base           |
+| hist_ins               |
+| hist_isd               |
+| hist_isi               |
+| hist_isi_tcr           |
+| hist_isr               |
+| hist_isr_base          |
+| hist_isr_bf            |
+| hist_isr_bo            |
+| hist_isr_ie            |
+| hist_isr_isd           |
+| hist_isr_proj          |
+| hist_isr_succ          |
+| hist_isr_tcr           |
+| hist_prod              |
+| hist_prod_bd           |
+| hist_proj              |
+| hist_rev_entity        |
+| hist_seal              |
+| hist_tc                |
+| hist_tcr               |
+| hist_tcr_ad            |
+| hist_tcr_base          |
+| hist_tcr_ie            |
+| hist_tcr_succ          |
+| hist_transport         |
+| ie                     |
+| ie_base                |
+| im_id_table            |
+| im_user                |
+| im_user_has_role       |
+| ins                    |
+| isd                    |
+| isi                    |
+| isi_tcr                |
+| isr                    |
+| isr_base               |
+| isr_bf                 |
+| isr_bo                 |
+| isr_ie                 |
+| isr_isd                |
+| isr_proj               |
+| isr_succ               |
+| isr_tcr                |
+| perm_atg               |
+| perm_functional        |
+| prod                   |
+| prod_bd                |
+| proj                   |
+| role                   |
+| role_bbt               |
+| role_functional        |
+| role_role              |
+| saved_queries          |
+| seal                   |
+| tc                     |
+| tcr                    |
+| tcr_ad                 |
+| tcr_base               |
+| tcr_ie                 |
+| tcr_succ               |
+| timeseries             |
+| transport              |
+| ue                     |
+| ue_ro                  |
+| ug                     |
+| ug_ue                  |
+| users                  |
++------------------------+
+140 rows in set (0.00 sec)
+"	"07/Dec/16 9:15 AM;cst;Thanks, ok the tables were created.
+
+Which database do you use for iteraplan?
+
+Greetings,
+
+Christoph Stangl - iteraplan Support "	07/Dec/16 11:38 AM;admin@mcongroup.net;What do you mean which database?	07/Dec/16 11:38 AM;admin@mcongroup.net;we use mysql 	"07/Dec/16 12:44 PM;cst;This Problem has nothing to do with the scripts or iteraplan.
+Check your mysql server and fix the reason for the  ERROR 1146 (42S02)""
+
+My recommendation is:
+
+#  Export the database to file
+#  verify if exported file is really ok
+#  rename the database where I have issues
+#  create a new database with the same name that the last
+# import the file to the database
+# Execute the script again
+"	"13/Dec/16 4:32 AM;admin@mcongroup.net;Christoph, thanks for your support.
+
+We've solved the problem modifying the configuration of mysql.
+
+You can close the ticket"																																												

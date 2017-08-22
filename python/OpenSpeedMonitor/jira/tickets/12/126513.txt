@@ -1,0 +1,69 @@
+Visio iteraplan Shape	"Mit Win10 und Office 2016, haben wir neu auch Visio 2016. 
+
+In der vorherigen Visio Version, konnten wir dieses Shape noch verwenden.
+
+Gibt es für Visio 2016 ein Update dazu?
+
+Beim Ausführen erhalten wir eine Fehlermeldung. Siehe Doku"		Fault	iteraplan Support	06/Jul/17 10:44 AM															"06/Jul/17 10:44 AM;alfred.studer@emmi.com;
+
+[^Dok1.docx] _(22 kB)_"	"07/Jul/17 7:50 AM;cst;Sehr geehrter Herr Studer,
+
+vielen Dank für Ihre Anfrage.
+
+Haben Sie folgende Punkte schon geprüft:
+
+[https://forum.iteraplan.de/forum/client-area/technical-questions/123-microsoft-visio-copy-layout-from-existing-information-flow-diagram] 
+
+Von unser Seite gibt es hierzu kein ""Software"" Update.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"10/Jul/17 8:27 AM;alfred.studer@emmi.com;Habe viele Einstellungen in Visio versucht, aber keine führte schlussendlich zum erhofften Ziel. Welche Einstellungen müssen in Visio erfolgen, damit dies funktionieren würde?
+
+[^Dok2.docx] _(48 kB)_"	"10/Jul/17 8:32 AM;cst;Guten Morgen,
+
+hängen Sie mir bitte die Visio-Datei die Sie öffnen möchte an dieses Ticket an. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	10/Jul/17 4:42 PM;alfred.studer@emmi.com;[^iteraplanInformationFlowDiagram.vsdx] _(95 kB)_	"11/Jul/17 3:33 PM;cst;Guten Tag Herr Studer,
+
+die Datei lässt sich hier in Visio 2016 und den oben eingestellten Parameter ohne Fehlermeldung öffnen.
+
+!screenshot-1.png|thumbnail!
+
+Würden Sie das bitte intern von Ihrer IT-Abteilung prüfen lassen, da es sich nicht um ein Problem mit iteraplan handelt.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+ "	"11/Jul/17 3:41 PM;alfred.studer@emmi.com;Welche Einstellungen wurden bei ihnen vorgenommen, dass dies funktioniert. 
+
+Öffnen können wir das Visio ebenfalls ohne Probleme. Lassen es aus iteraplan generieren  und können es entsprechend bearbeiten. Aber erst, wenn ich das AddOn iteraplan verwenden und die Struktur von einer bestehenden Visio in ein neue Visio Grafik einfügen will, kommt die Fehlermeldung.
+
+Vielleicht haben wir uns da falsch verstanden."	"14/Jul/17 7:49 AM;cst;Guten Tag Herr Studer,
+
+jetzt verstehe ich das Problem, kann Ihnen hier aber nicht weiterhelfen.
+ Das Verhalten kann ich nachvollziehen, es gibt für das Visio-""Tool"" keinerlei Support oder Updates.
+
+Gerne gebe ich dies an unserer Produkt-Managment zur Prüfung weiter, eine technische Lösung kann Ich ihnen hier nicht anbieten.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"24/Jul/17 12:42 PM;alfred.studer@emmi.com;Von wem kommt dieses File?
+Hat dies iteratec generiert?"	"24/Jul/17 5:50 PM;msr;Sehr geehrter Herr Studer,
+
+
+
+diese Plugin wurde im Auftrag eines iteraplan-Kundens für iteraplan-Version 2.X oder 3.X ursprünglich entwickelt und nach dessen Freigabe der Allgemeinheit zur Verfügung gestellt. Daher ist es nicht Teil der iteraplan-Software selbst sondern ein Addon. Wie mein Kollege schon geschrieben hat, können wir deshalb für dieses Plugin keinen Support anbieten.
+
+Sollte es für Sie eine entscheidene Bedeutung habe, könnten Sie ein Update-Projekt initiieren.
+
+
+
+Mit freundlichen Grüßen
+
+
+
+Marcel Schrumpf"																																													

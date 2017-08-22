@@ -1,0 +1,17 @@
+Adapt new client to usage with iframes	"The idea is that one can include the images via iframe, so that code is executed and then the image is shown
+
+
+
+Therefore the new client needs a serperate URL such that the images is shown in the iframe. Hence it should not be downloaded but shown in the browser window. (Showing the intermediate steps is ok)
+
+
+
+The direct download should not be possible anymore.
+
+
+
+Please also add this function to the user docu.
+
+
+
+Please check all diagram types, in the moment it looks like LSD is not working."		Improvement	iteraplan Thunderduck	16/May/17 12:45 PM	31/May/17 10:42 AM																																																																				

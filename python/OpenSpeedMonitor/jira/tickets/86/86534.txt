@@ -1,0 +1,11 @@
+Change Layout of TimespanHeader	"*Summary:*
+
+Change Layout of TimespanHeader
+
+
+
+*Details:*
+
+* Remove all borderlines and check result with [~msr]"		Improvement	iteraplan PO	06/Jun/16 4:16 PM	14/Jun/16 10:21 AM														"10/Jun/16 11:20 AM;roia;Attached screenshots of diagrams with one and three levels configured.
+
+[~msr], please review them and approve or let me know about necessary updates"	13/Jun/16 2:57 PM;msr;Fabian likes it. We leave it like that.																																																					

@@ -1,0 +1,1 @@
+Script zur Ausführung der Geb-Tests schreiben	Unter scripts/test bitte ein Shell-Script schreiben, was analog zu den anderen Scripts dort (nur) die Geb-Tests ausführt und dann den Ergebnis-Report öffnet.		Task	OpenSpeedMonitor	28/Jul/16 4:50 PM	11/Jan/17 10:27 AM																																																																				

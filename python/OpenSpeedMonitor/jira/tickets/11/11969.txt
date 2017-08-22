@@ -1,0 +1,1 @@
+Javadocs schreiben	Für alle (zumindest aber die nicht privaten) Methoden und Klassen Javadocs schreiben.		Task	OpenSpeedMonitor	26/Feb/14 9:53 AM	27/Feb/14 12:35 PM														27/Feb/14 12:35 PM;mkrueger;Alles ist dokumentiert, außer trivialste Methoden																																																						

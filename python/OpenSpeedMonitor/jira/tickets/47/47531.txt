@@ -1,0 +1,16 @@
+NCD: Place for settings line in the legend (Filtering)	"Summary: sometimes settings lines change positions
+
+Steps to reproduce:
+1. Go to NCd page
+2. Use any filtering by enumeration properties for inner elements
+3. Use any filtering by  enumeration properties for inner elements
+4. Verify that the settings line for numeric filters displayed as first line
+    and for numeric - as second line
+5. Change applied enumeration filter to any other in the legend settings 
+Actual: Settings line for enumeration filters displayed as second line
+Expected: Settings line for enumeration filters displayed as first line
+"		Bug	iteraplan PO	26/Mar/15 2:48 PM	19/Jan/16 1:56 PM														"15/Apr/15 10:58 AM;wfr;Recommendation: defer
+
+cosmetic
+no comprehension/usage problem if two lines swap positions
+"																																																						

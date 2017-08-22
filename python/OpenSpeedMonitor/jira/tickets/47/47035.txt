@@ -1,0 +1,19 @@
+Error Messages during Import	"The following steps are made:
+
+# Choose *no* file for upload
+# Press upload button
+
+Expected behavior: An appropriate error message is shown. If user selects a file and presses the upload-button again, the previous error message disappears and the usual upload-message is shown. 
+
+Actual behavior: the error message remains and the upload message appears underneath. If user tries to start an upload without selecting an upload file again, no error message is shown at all. 
+
+Another case:
+
+# Choose a file for upload
+# Delete the name of the file from the input box
+
+Expected behavior: An appropriate error message is shown (file is missing or similar)
+
+Actual behavior: iteraplan starts an import with the file which has been selected.
+"		Bug	iteraplan PO	08/Oct/14 1:07 PM	22/Oct/14 2:48 PM					error	gui	import	messages						"10/Oct/14 10:23 AM;isc;The first described problem is resolved. 
+The second Problem  I think is special problem from the IE. I clarify with WFR if we can do anything. "	17/Oct/14 9:24 AM;fka;Second problem: We can't do anything about it																																																					

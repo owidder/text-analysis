@@ -1,0 +1,7 @@
+Create new URL test cases in NCD	"please edit the e2e-test tracability excel sheet located in e2etest subfolder after implementing the tests
+
+
+
+
+
+in this ticket, you should edit existing files of NCD in a way that URL setter and getter are tested. you can add a test case in every file where the url is changed. you should at least make the page refresh and check if the diagram is the same as before."	62712	Sub-task	iteraplan PO	06/Nov/15 11:38 AM	18/Jan/16 9:53 AM					NCD	Test								18/Jan/16 9:53 AM;msr;Won't fix SVG-NCD-Tests.																																																						

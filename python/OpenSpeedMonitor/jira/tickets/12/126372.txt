@@ -1,0 +1,65 @@
+Upgrade auf Iteraplan 6	"Guten Tag
+
+Ich habe ein Upgrade auf Iteraplan 6 gemacht. Hat alles wunderbar funktioniert...
+
+gemäss diesem Guide...
+
+https://doc.iteraplan.de/display/iteraplan60/Upgrade+Guide
+
+Gibt es eine Möglichkeit die gespeicherten Visualisierungen ebenfalls wieder zur Verfügung zu haben? Diese sind nun leider alle weg..."		Technical question	iteraplan Support	05/Jul/17 1:12 PM	07/Jul/17 10:41 AM														"05/Jul/17 1:36 PM;cst;Sehr geehrter Herr Läser,
+
+vielen Dank für Ihre Anfrage.
+
+Wenn Sie in den Classic Client wechseln, dies können Sie in Version 6.0 über die Eingabe in der Adressleiste ihres Browsers durchführen.
+Die Adresse hierfür lautet:
+
+""Tomcat:Port/iteraplan-Instanzname/start/start.do"" .
+
+Anschließend, können Sie folgende Punkte durchführen:
+
+[https://doc.iteraplan.de/display/iteraplan60/Saved+query+migration] 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"05/Jul/17 2:14 PM;laeser.moritz@ch.sika.com;Vielen Dank. Leider habe ich diese Funktion nicht zur Auswahl, obwohl ich im Iteraplan alle Berechtigungen habe. Habe es auch mit verschiedenen Usern probiert.
+was kanni ch noch probieren?
+
+!2017-07-05 13_57_11-All saved queries - iteraplan.png|thumbnail!"	"05/Jul/17 2:34 PM;cst;Sehr geehrter Herr Läser,
+
+um die Migration durchführen zu können, müssen Sie die iteraplan_supervisor rechte besitzen,
+da diese Rolle alle Rechte besitzt, um die Migration durchführen zu können.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"05/Jul/17 4:50 PM;laeser.moritz@ch.sika.com;Hallo Herr Stangl
+Ich habe das geprüft, wir machen die Authentisierung via AD/LDAP mit username und pw...
+
+in then auth.properties ist diese AD Gruppe mit diesen Rechten verknüpft...
+
+# Group with granted supervisor privileges
+sv.group=SIKA\CH-DL-AP-Iteraplan-C
+
+da ist mein user und auch ein verwendeter Service account drin...
+
+was könnte ich noch versuchen?
+
+Freundliche Grüsse"	"07/Jul/17 7:47 AM;cst;Sehr geehrter Herr Läser,
+
+vielen Dank für Ihre Antwort.
+
+Würden Sie dies bitte einmal in der Datenbank überprüfen. 
+ # Öffnen Sie Ihre Datenbank
+ # Gehen in die Tabelle „role“
+ # Hier sollte der Datensatz „Ihre LDAP Gruppe“ und „iteraplan_Supervisor“ angelegt sein
+ # Notierten Sie sich von beiden die ID´s
+ # Jetzt gehen Sie in die Tabelle „role_role“ und erzeugen einen neuen Eintrag
+ # Die erste ID ist die von ""Ihre LDAP Gruppe““ und danach die ID des „iteraplan_Supervisor“
+ # Damit ist die Rolle ""iteraplan_Supervisor"" der Rolle ""Ihre LDAP Gruppe“ untergeordnet
+
+Nachdem können Sie das Menü aufrufen und die Migration durchführen.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"07/Jul/17 10:40 AM;laeser.moritz@ch.sika.com;Hallo Herr Stangl
+es hat funktioniert...vielen Dank!
+Freundliche Grüsse"																																																	

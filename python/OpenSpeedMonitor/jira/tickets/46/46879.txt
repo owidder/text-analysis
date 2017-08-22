@@ -1,0 +1,18 @@
+Customized enum values in excel export/import	"Overall goal: Customized values with enum attributes should be importable via excel.
+
+Currently when exporting enum values in excel, there are two columns in the sheet defining the values of the enum attribute: ""name "" and ""persistent name"". Entries in both columns are always the same.
+
+The new behaviour should be as follows:
+In the excel sheet for the enum: The column ""persistent name"" stays as it is. The column ""Name"" is filled with the screen/customized name of the value. This is especially relevant with the ""type of status"" attribute.
+
+In all other sheets of the excel file, the values of the ""name"" column will be referenced/suggested in the dropdowns (should this not already be the case).
+
+When importing, values in data sheets are first checked against those in the ""name"" column. As a fall-back, values are checked against those in the ""persistent name"" column. Thereby excel files exported with earlier versions of iteraplan or persistent name stay compatible with the new behaviour.
+
+"		Improvement	iteraplan PO	19/Aug/14 7:01 PM	19/Oct/14 11:27 AM					excel	export	import							"09/Oct/14 2:48 PM;msa;Solution:
+
+* A new static util {{EnumValueCustomizerUtil}} was implemented. This utils holds the localized status enum values and the localized name of the status enum itself.
+* During metamodel export ({{WMetamodelExport}}) the typeOfStatus enum names are replaced by localized names instead of the persistent name
+* During (general) model import/export the typeOfStatus name (localized) is used instead of the persistent name.
+* As this feature is desired only on excel import/export, a dummy locale ""fb"" (fb=FooBar :-) ) is used during json and xmi import/export. (new util class {{DummyLocaleUtil}}) The localized typeOfStatus enum values of this dummy locale are equal to the persistent name. (As a consequence, most of the MiModel-Testcases must extend {{TestBaseWithElasticMiContext}}, as context information is now required for the test cases to run properly)"	"15/Oct/14 1:06 PM;sfe;Currently, in an exported excel file, the names displayed for the status enumeration sheets are ""Status"" and ""Status-002"", presumably because the original names for both are identical (""Status"").
+Please change the MetamodelExport so that the localized names for the enumerations (not for the properties) are different, for example ""Status (IS)"" and ""Status (TC)"". Structured types should be able to provide a localized abbreviation of their name, which could be used for this suffix."	15/Oct/14 5:36 PM;msa;Suggested change done: localized enum names in excel export now contain also the abbreviated component name.																																																				

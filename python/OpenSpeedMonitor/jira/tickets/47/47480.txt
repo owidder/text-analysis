@@ -1,0 +1,36 @@
+Names for all options should be displayed with the same wording	"Summary: 
+All names for controll options (filtering, coloring, grouping, nesting and so on) should be displayed with the same wording in the Context menu for inner and outer elements and in the legend.
+
+Also fix the similar issue in LSD (also related to type of status filtering)
+
+(in discussion with Marcel on 05.02.2015)
+"		Bug	iteraplan PO	05/Mar/15 10:57 AM	09/Jun/15 3:10 PM														01/Jun/15 11:53 AM;sfe;Use name, not persistent name.	"03/Jun/15 2:20 PM;fam;Result of analysis:
+Found a bunch of wrong ""name"" and ""persistentName"" uses. Also some string-lists found, that are still existing since prototyp stadium. Clarification should be done, if they are still necessary or can be removed.
+As necessary changes affect many files that should be adjusted according the internationalization, too, this changes shall be done within the Internationalization-Ticket.
+When doing the changes, take a look at the following list, as there is some relevant code that may or should be changed:
+
+miscellaneous:
+-categoryController.js 
+-category-page.html
+-fixedData.js
+-service.coloringOptions.js
+-queryAlias.js
+-common.js
+-all attributes list.txt
+-service.diagramElementProcessor.js
+
+Tests:
+-Filtering-enumeration-spec.js
+-Filtering-enumeration-legend-spec.js
+-LegendBuilder-spec.js
+-tableBuilder-spec.js
+-coloring-by-enumeration-properties-inner-spec.js
+-coloring-by-enumeration-properties-outer-spec.js
+-configuration-spec.js
+-contextMenuProcessor-spec.js
+-dataService-spec.js
+-lsdItemBuilder-spec.js
+-lsdItemDecorator-spec.js
+-tableModelBuilder-spec.js
+
+-Also many e2e-Tests affected (IP9-XY Test ... .txt)"	09/Jun/15 3:10 PM;sfe;Too much overlap with coming I18N for the new client. Will be fixed there.																																																				

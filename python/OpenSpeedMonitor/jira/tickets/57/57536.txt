@@ -1,0 +1,17 @@
+No Notification when building block is created via REST	"_Reproduce:_
+
+# Activate Notifications
+
+# Subscribe to, for example, building block type Business Process
+
+# Create a new Business Process using REST
+
+
+
+_Expected:_ Notification E-Mail as when a Building Block is created using the GUI
+
+_Actual:_ No Notification.
+
+
+
+_Reason:_ Notifications are implemented using AOP, and the pointcuts to intercept building block creation use methods in FrontendServices. Those methods, however, are not used when creating new Building Blocks using REST, and most likely when using Excel Import, too."		Bug	iteraplan PO	18/Sep/15 2:24 PM	16/Dec/15 9:29 AM					notification									10/Dec/15 4:06 PM;ach;notifications on creating new building block via UI dont work anymore.	16/Dec/15 9:28 AM;tam;No notification on updates by REST requests. As agreed with [~sfe] this will be fixed in the ticket ITERAPLAN-4222																																																					

@@ -1,0 +1,12 @@
+Landscape Diagram title should be updated accordingly to the diagram elements	"*As-Is:*
+The title of the Landscape Diagram is a hard-coded and never changes (independently of the diagram content).
+
+*To-Be:*
+With the change of a Building Block Type (either as content or as axes element) the title should be updated, e.g.
+
+* Default title is
+Landscape Diagram - Information Systems by Technical Components and Information System Domains
+* You change the content element to Business Function
+* The new title should be ""Landscape Diagram - Business Functions by Business Domains and Business Objects""
+
+The title is still read-only (no interaction with the user)."		New Feature	iteraplan PO	23/Apr/15 2:17 PM	27/Apr/15 8:43 AM					newClient									25/Apr/15 6:40 AM;isc;There is no title anymore in lsd.	27/Apr/15 8:43 AM;isc;It's OK!																																																					

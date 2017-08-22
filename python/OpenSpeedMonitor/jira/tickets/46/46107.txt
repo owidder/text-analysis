@@ -1,0 +1,1 @@
+Legend-Ordering in Nesting Cluster can be misleading	The legends ordering would be more intuitive, if the first displayed legend would concern the outer element, if two legends are displayed		Improvement	iteraplan PO	08/Oct/13 6:35 PM	30/Dec/15 3:34 PM																																																																				

@@ -1,0 +1,13 @@
+Sort x/y Axis headers	"Sort the axis headers by hierarchical ordering, if available.
+
+Sort enumeration values according to their ordering in the metamodel, see their index value.
+
+In the rest of the cases, sort alphabetically.
+
+
+
+For hierarchical elements this could/should already be done in ITERAPLAN-3791
+
+
+
+The axis item have at the moment no information about their parent/children."		Improvement	iteraplan PO	29/Sep/15 1:04 PM	26/Oct/15 8:57 AM					axis	lsd	sort							20/Oct/15 3:27 PM;sfe;All axis sorting already was done in ITERAPLAN-3791, except the correct sorting of enumeration values																																																						

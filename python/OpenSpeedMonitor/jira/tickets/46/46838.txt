@@ -1,0 +1,29 @@
+Group IS by BO in NCD	"Add an interaction to the nesting cluster diagram to change the type of elements for the outer boxes from ISD (information system domain) to BO (business objects).
+
+Add an interaction like this:
+
+User clicks on outer box.
+
+System shows context menu with items
+* group by Information System Domains (selected)
+* group by Business Objects (active, working)
+* group by Business Processes (this and following all mocks, disabled)
+* group by Business Units
+* group by Products
+* group by Business Functions
+* group by Projects
+* group by Interfaces
+* group by Infrastructure Elements
+* group by Technical Components
+(((complete list by WFr, done)))
+
+Only the first two entries are functional so far, the others are mocks without function.
+The first entry for ISDs is somehow marked as selected. Style to be discussed, close to standard bootstrap, please.
+
+The user clicks the entry ""group by BO"".
+
+The system redraws the diagram. The redraw is total, so no disappear/appear transistion."		New Feature	iteraplan PO	13/Aug/14 1:29 PM	29/Sep/14 10:00 AM														13/Aug/14 5:11 PM;wfr;est. 2 PD	"14/Aug/14 9:08 AM;wfr;Subtasks are OK for me.
+
+The second subtask ""group by ISDs"" might be trivial, as the grouping by ISDs is the initial grouping for the very first version of the NCDiagram.
+So it is more like: ""go back to the grouping we had before"", calling already existing functions.
+Nevertheless, it is a valid subtask, as the user can go back and forth between the two kinds of grouping."																																																					

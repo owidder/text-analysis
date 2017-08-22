@@ -1,0 +1,12 @@
+Remove test-relevant code from production-code	"check if up to date
+
+*IS:*
+Some js-objects define the method _injectBuildersForPipelineIntegrationTest()_, i.e. _lsdMain.js, ifdContentMain.js, ncdContentMain.js_ which is (should be) used for tests only.
+
+*SHOULD:*
+Methods that are used in tests only, should not be available in production code.
+
+*Hints:*
+I see two possible solutions:
+# use the appropriate properties to set the diagram-builder and the graph-builder.
+# define the method in a js-file that is loaded together with all the other tests (but not in a single test-spec-file, because it would force a certain test execution order)."		Improvement	iteraplan Thunderduck	12/Apr/16 4:05 PM	15/Sep/16 2:38 PM					nic	test																																																														

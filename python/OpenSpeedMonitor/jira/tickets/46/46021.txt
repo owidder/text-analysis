@@ -1,0 +1,53 @@
+Enable filtering of inner and outer elements for nesting cluster visualizations	"Elements of a nesting cluster visualization on one of the two levels (inner or outer) can be either instances of a particular (configured) building block type or objectified attributes values belonging to the building block type on the respective other existing level.
+
+For -both of these variations- building block types, filtering should be enabled.
+Details:
+* For filtering of configured building block types an attribute type needs to be selected in the first place. For attribute types, no further active step towards a filter-element is necessary. (=> filter button is disabled)
+* An arbitrary number of filter operations (<attr_value> <compare_operation> <compare_value>) can be applied.
+* Filtering is always optional.
+* When creating the filter for an inner or outer element, a single value (free text) should be basis for the comparison operation
+* The following comparison operations should be supported for numerical attributes: =, !=, <, >, >=, <=
+* The following comparison operations should be supported for enum attributes / strings: =, !=, beginsWith, endWith, contains
+* Filters should be saved within the saved queries.
+* Newly generated saved queries can't be loaded. This must be fixed.
+* Switching inner and outer types must switch the filters, too.
+* Outer2Outer and/or Inner2Inner doesn't work with filtering yet.
+* When a inner/outer type is removed (dragged out), its filter should be removed, too.
+* The links to the element's detail page inside the diagram must be correct and working (must not contain for example the filtering).
+* -GUI consistency: Nesting cluster uses a button with symbol instead of text (like in Landscape)-  (not relevant)
+* -GUI consistency: Landscape shows result elements; nesting cluster doesn't show anything-  (not relevant)
+
+-The filter configuration for each configured element of the visualization should be done within a dedicated popup. The popup should be accessable using a button next to the configured element.- (see comments)"		New Feature	iteraplan PO	23/Aug/13 6:59 PM	07/Oct/13 6:33 PM														05/Sep/13 9:18 AM;sbu;A filtered nesting cluster visualization should be storable.	06/Sep/13 2:08 PM;psc;This ticket will take care of filtering for Building Block Types. Filter for objectified Attributes will be taken care of in ITERAPLAN-1924.	"06/Sep/13 4:26 PM;gph;*Problem:*
+Nesting cluster configuration with "".objectified"" types lead to error page on saving.
+
+*Analysis:*
+For "".objectified"" type no query forms are set in the query result object. To set query forms, you'd need to set the result type as well, but "".objectified"" types don't have a corresponding building block type in the iteraplan static model. The problem is, that serialization of queries expects query forms in a query result object.
+"	"06/Sep/13 4:30 PM;gph;Old saved queries with "".objectified"" types most likely need a migration, because the name of the relation between the "".objectified"" type and its owner changed recently, so it has to be updated in the saved queries, too.
+
+For example:
+{{isValueOf(Accountability)}} changed to {{isValueOf}}."	16/Sep/13 5:58 PM;bra;-issue with the links to elements embedded into the svg output- (/) no links for objectified types, links to basetype otherwise	16/Sep/13 6:41 PM;bra;relationships for the objectified type did not change between 3.0.4 and 3.1 as far is i can see	"26/Sep/13 11:01 AM;lba;Filter button:
+1. No BB or ATs are selected in the Nesting Cluter Diagram
+2. Click on the switch button
+3. Now for a short period of time the filter buttons are enabled
+4. If you click now on the filter button an exception occurs.
+Wrongly displayed ATs.
+1. Select a BB(outer) and an AT(inner)
+2. Filter the BBTs
+3. Create a graphic-->The grapic is now correctly displayed and contains all the filtered BBTs and  their ATs
+4. Switch now outer and Inner
+5. Create a graphic --> The grapic shows now ALL the ATs which the selected BB contains. The filtered BBT are correctly displayed in their assigned AT, but there are also the ATs that don't have an inner BBT.
+
+Expected behaviour: only the ATs of the filtered inner BBTs are displayed.
+"	"26/Sep/13 1:10 PM;lba;NPE when trying to safe a filtered nesting cluster query.
+ - Outer type was an AT
+ - Inner type was a filtered BB"	"02/Oct/13 12:22 PM;psc;A short summary of some definitions made in accordance with demand-management regarding filtering:
+* In cases where parent/child-hierarchy should be displayed for an element (inner or outer), the active filter for this element should work as follows:
+** Every object that has been selected within the filter should be displayed (unless we are talking about an inner element with no fitting displayed outer element)
+** Objects within hierarchy that have not been selected by the active filter should not be displayed. Displayed object thereby loosing higher-leveled, surrounding clusters will fill emerging spaces. In other words: Filtered Nesting Cluster diagrams are not restricted to showing direct relations but - in fact - express transitive relations as well, if connecting levels have been removed from the diagram by the active filter. In particular, the level of a cluster in the filtered diagram does not express the absolute level within the unfiltered hierarchy. "	"07/Oct/13 9:31 AM;psc;During test some issues were identified, e.g.
+* If a BBT is set as element, filtered, removed and once again added, the filter-text on the main page is reset, the filter is not 
+* If a filter is loaded and a used BBT has been changed (for example, by adding a new instance) recently, the filter-text on the main page is not directly updated, the filter however is"	07/Oct/13 6:33 PM;kgo;Everything seems to be fine. Two issues have been identified while testing. Since these are not related with the topic of this ticket, they will be addressed in extra tickets and referenced in a further comment.	07/Oct/13 6:52 PM;kgo;The two issues discovered during the testing of this ticket are addressed in issues ITERAPLAN-1967 and ITERAPLAN-1968.	"08/Oct/13 4:42 PM;psc;Reviewed. Solution works as expected.
+Some remarks:
+* On change of language, the information regarding the current filtering (e.g. ""All elements"") remains in former language until the filter gets actively updated.
+* Unlike other fields, deactivation of the filter-button currently does not lead to a change of the related tooltip.
+
+This are, however smaller, rather non-functional issues that will be adressed in dedicated tickets."																																										

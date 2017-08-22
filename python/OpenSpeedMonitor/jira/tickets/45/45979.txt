@@ -1,0 +1,3 @@
+Portfolio-Diagramm: Interpretation von Auswahlmerkmalen	"Erwartetes Verhalten: Die Elemente werden gemäß der gepflegten Werte im Diagramm verortet.
+
+Tatsächliches Verhalten: Die Elemente werden nicht korrekt eingeordnet."		Bug	iteraplan PO	09/Aug/13 4:31 PM	25/Jun/14 4:19 PM					portfolio	visualization								09/Aug/13 4:34 PM;fma;data.zip findet ihr die HSQLDB für ein EE-Bundle.	25/Jun/14 4:19 PM;fka;Can not be reproduced any more																																																					

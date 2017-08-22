@@ -1,0 +1,31 @@
+Edit on Single Attribute View - Multi-Line Text field (Client)	"*Summary:*
+
+Create Edit-Functionality for Multi-Line-Text-Fields on all Single Attribute Views.
+
+
+
+*Scope:*
+
+* In scope: All text fields with multiple lines
+
+* In scope: All Single Attribute Views
+
+* Example: ""Description""-field
+
+
+
+*UI:*
+
+* Use UI and interactions from Building Block List and Single Building Block View as blueprint (including error-handling)
+
+* If user sets the string to the null-string, the text field shows ""not assigned"" (German: ""nicht zugeordnet"")
+
+
+
+*Technology:*
+
+* Try to reuse common edit-components from Building Block List and Single Building Block View
+
+* Send REST-request to the correct REST-API (attributes, icresp or icdi)
+
+* Trigger reload-service (IPTS-447)"		New Feature	iteraplan Speedbird	22/Dec/16 9:01 AM	09/Mar/17 4:02 PM														06/Mar/17 4:52 PM;dmkh;Description fields update in literals list is in scope of IPTS-456	09/Mar/17 4:02 PM;mash;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-405																																																					

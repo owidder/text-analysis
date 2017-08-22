@@ -1,0 +1,9 @@
+Visualizations: Make static coloring adjustable	"In all visualization make the coloring of elements adjustable, even if no coloring option has been chosen. Then a all elements will have the same color, but a different one than the default color.
+
+
+
+Standard color picker, save in URL etc.
+
+
+
+Prepare the standard color to be configurable in the future"		New Feature	iteraplan PO	27/Mar/17 10:56 AM																																																																					

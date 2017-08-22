@@ -1,0 +1,23 @@
+Konzept neue Graphen & Dashboards	"Erstellung und Recherche eines Konzepts/Frameworks/etc für die Erstellung
+
+* neuer Graphen
+
+* von Dashboards mit mehreren Graphen"		Task	OpenSpeedMonitor	18/Oct/16 11:18 AM	20/Oct/16 11:44 AM														"20/Oct/16 11:44 AM;sbr;Wir werden Dashboards selber Implementieren.
+
+* Kacheln können wir mit gridstack.js lösen.
+
+
+
+Jede Kachel kann ein Graph-Modul anzeigen.
+
+* Neue Graph-Module sind voneinander unabhängig und können eigene Frameworks nutzen.
+
+* Jedes Modul wird als grails web-plugin implementiert; im OSM Repo
+
+* Die OSM Domains werden in ein ""core"" plugin ausgelagert, welches die Graph-Module nutzen können, sodass keine zyklischen Abhängigkeiten zwischen OSM und den Plugins entstehen.
+
+
+
+
+
+"	21/Oct/16 3:34 PM;sbr;Übersicht über das neue Modul-System																																																					

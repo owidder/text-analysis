@@ -1,0 +1,18 @@
+Extend premium installer to handle supported authentication methods	"The premium installer should give the user an option to choose one of the following authentication methods in conjunction with LDAP, that are supported by iteraplan:
+
+* Username / Password
+* SingleSignOn against ActiveDirectory (Kerberos)
+* X.509 client certificate
+
+Extend/adjust the installer wizard's GUI and the underlying Ant build script(s) accordingly."		New Feature	iteraplan PO	12/May/14 11:05 AM	25/Jul/14 9:23 AM					authentication	authorization	installer	security						22/Jul/14 3:00 PM;fam;Please review source code and documentation	"24/Jul/14 10:19 AM;dop;Review:
+
+* antinstall-config.xml.template: delete ""alte version comment"" (same applies for sql-server file)
+* Installation with DB initialization but without specifying a path to a logfile fails (Path not found exception)
+* Installation with coping jdbc driver fails
+* The checkbox ""Install Iteraplan"" in the window ""What would you like to install?"" can be unchecked and it could be proceeded to the next step. (with previous selection of ldap, ldap sso, ldap x509). For iTurm everything works as expected. 
+"	"24/Jul/14 10:56 AM;dop;Inlinereview of documentation:
+
+http://www.iteraplan.de/wiki/display/upcomingIteraplan/Installing+iteraplan
+"	"24/Jul/14 1:57 PM;fam;-Comments and checkbox problem fixed
+-JDBC Drivers will be fixed soon in ITERAPLAN-197
+-DB initialization exception is ok,... user failure when thrown. Path to logfile must be specified, as obvious when reading exception.  "																																																			

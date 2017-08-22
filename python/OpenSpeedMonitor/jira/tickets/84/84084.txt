@@ -1,0 +1,1 @@
+[CRUD] UserSpecificDashboard -> FromDate & ToDate benötigen einen Wrapper	Die beiden Felder FromDate und ToDate sollen mittig sein und das alte Design haben. http://localhost:8080/userspecificCsiDashboard/create		Improvement	OpenSpeedMonitor	12/May/16 1:44 PM	12/May/16 4:19 PM																																																																				

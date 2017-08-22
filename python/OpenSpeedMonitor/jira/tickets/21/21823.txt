@@ -1,0 +1,11 @@
+Regulär nicht erreichbare Seiten spidern	"normalerweise nichterreichbare Seiten sollen dennoch gefunden weren (Bsp.: versteckte Adminseite)
+
+
+
+- Ansatz: Durch Toolunterstützung (bsp. Nikto), 
+
+- robots.txt einlesen und verfolgen
+
+- Nur Requests an Scantool weitergeben, die vom Server nicht mit einem Fehler beantwortet werden
+
+"		Story	secureCodeBox	10/Oct/14 3:24 PM						ITMC																																																															

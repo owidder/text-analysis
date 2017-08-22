@@ -1,0 +1,17 @@
+IS context overview (aka awesome profile)	"With the IS show name and description only. Description might be shortened to xx lines to fit in the layout. Do not use hierarchical names. Available only with IS. No hierarchy, no successor, but show used elements (IS related via the used relation) is separate section. Show both interfaces and connected IS (via interfaces), also in separate sections.
+
+Alphabetic ordering of elements in each section, explicitly show the top six or top five and ""xx more"". Note that xx is always greater or equal 2. Business mappings are not show, but the indirect projection to the relationship ends. These are listed independently.
+
+No configuration options for this diagram.
+
+General layout according to the start screen. Fixed layout, abbreviate all things if they would be to long. Optimized for one page DIN A4 printing, portrait mode. Exportable as PDF at least. No visio download. PNG etc. also welcome.
+
+See attachment for a mockup. Add the according iteraplan element icon to each section. 3 columns. Ask WFR for layout details, if unclear. Element names should be clickable (in PDF, as usual).
+
+Location: Single element view, tab ""visualizations"", drop down ""Selection"": As fifth element. ""Context overview diagram""
+
+Roles and rights: Only consider elements the current user has at least the read privilege for. Do not consider object-related permissions. Add a functional permission exclusively for this diagram. 
+
+iteraplan edition: Only available with the enterprise edition
+
+Use elasticMi model."		Epic	iteraplan PO	08/Apr/14 5:05 PM	08/Jul/14 10:07 AM														07/Jul/14 1:52 PM;dop;Will be closed if all sub-tickets are implemented. 																																																						

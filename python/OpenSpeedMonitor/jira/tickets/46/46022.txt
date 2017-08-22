@@ -1,0 +1,11 @@
+Nesting Cluster: Option to display group of elements that has configured inner elements type but no relationship to any outer element	"When configuring a nesting cluster diagram, two types of elements - inner and outer - are configured. The diagram then visualizes existing relationships between instances of these types.
+
+There should be a possibility for users during the configuration process (e.g. a checkbox) to ensure that a dedicated group/stack of inner elements will be displayed on the later diagram for those not having the specified relationship to any configured outer element.
+
+For example:
+* outer elements: information systems
+* inner elements: technical components
+* if there are technical components, that are not set in relationship with any information system, a dedicated group of these elements should be displayed on the diagram if the new configuration option was selected. The name of the additional stack, say something like ""no matching outer element"", should indicate its special purpose."		New Feature	iteraplan PO	26/Aug/13 9:00 AM	09/Oct/13 11:34 AM														18/Sep/13 9:58 AM;bra;behavior regarding applied filters needs clarification	19/Sep/13 11:02 AM;bra;sbu: elements that do not have a matching outer because the outer has been filtered out are to be placed within the no-matching-outer-cluster	20/Sep/13 10:00 AM;bra;if you select the outer to be recursively nested, you get a cluster for orphaned elements within each outer containing all orphaned inners. (see attachment)	"26/Sep/13 8:18 AM;isc;In agreement with Sabine, the designation of the ""orphan group"" should be adjusted as follows:
+* Deutsch: „Kein passendes äußeres Element“
+* Englisch: „No matching outer element“
+"	07/Oct/13 11:44 AM;sbu;To distinguish the "no matching outer element" cluster from the "normal" outer element clusters, the border should be displayed in dashed style.	08/Oct/13 5:28 PM;psc;For objectified Elements, the orphan-cluster should not show up for now. However, it can still be configured for those, making it a bit confusing. Please make sure, the configuration option acts like the filter button: When the selected element is objectified, the option should be disabled.	10/Oct/13 11:32 AM;psc;Reviewed. Ticket will be closed.																																																

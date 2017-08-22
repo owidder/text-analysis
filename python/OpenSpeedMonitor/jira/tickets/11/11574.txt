@@ -1,0 +1,7 @@
+Aggregation nach URL	"Die einzelnen Attribute der Wasserfall-Einträge (z.B. TTFB oder SSL negotiation time) sollen aggregiert nach dem ihrer kompletten URL, bzw. einem regex auswertbar sein. So sollen für die download-time aller requests einer konkreten URL z.B. über zahlreiche Wasserfälle/Messungen hinweg die folgenden statistischen Größen ermittelt werden können:
+
+* arithmetisches Mittel
+* Median
+* 25- und 75% Quantil
+
+"		Task	OpenSpeedMonitor	18/Feb/14 11:07 AM	26/Feb/14 1:46 PM														26/Feb/14 1:46 PM;mkrueger;Über den WaterfallAnalyzerService implementiert																																																						

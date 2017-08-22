@@ -1,0 +1,13 @@
+Test Job mit invalidem Skript	"Getestet im Firefox und als Admin angemeldet.
+
+
+
+Man nehme einen Job, der ein invalides Skript verwendet. Das Skript sei bspw.:
+
+""dingdong"".
+
+
+
+Anschließend klicke man in der Job-Detail-Ansicht auf ""Test"". Dann erhält man eine Ansicht, ähnlich dem angehängten Screenshot. Dabei ist zu beachten, dass eine Anzeige vom WPT-Server gezeigt wird, aber eine OSM-Url."		Bug	OpenSpeedMonitor	19/Feb/16 9:57 AM	01/Feb/17 1:42 PM					reevaluate									"31/Jan/17 12:27 PM;bwo;Der Fehler scheint weiterhin zu existieren. Ich erhalte jedoch einen Stacktrace mit ""Caused by: java.net.ConnectException: Connection timed out""
+
+Möglicherweise erscheint die von Birger gezeigte Seite dann, wenn der WPT Server erreichbar ist. Ich werde das vom Office aus erneut testen, jedoch sollte auch diese Exception schöner verpackt werden."																																																						

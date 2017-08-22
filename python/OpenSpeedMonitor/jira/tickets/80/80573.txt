@@ -1,0 +1,113 @@
+Better file browser for Graphics Reactor	"As a Graphics Reactor user I want to
+
+* use folders to organise my files
+
+* easily upload/download/delete files
+
+* have a state-of-the-art interface to all files and folders (tree-like structured interface, icons, collapse items etc.)
+
+* create and delete directories
+
+* no renaming so far
+
+* execute XSLT-Script
+
+
+
+* Use defined directory as root.
+
+* Add server component.
+
+
+
+
+
+For the GUI use a third party libary. Go to FKA with some suggestions."		New Feature	iteraplan Quickfox	14/Apr/16 6:51 PM	28/Jul/16 5:09 PM														22/Jun/16 10:28 AM;ach;- can server side handle folder structure?	04/Jul/16 4:38 PM;mwe;Checkout https://github.com/joni2back/angular-filemanager including the JAVA bridge.	19/Jul/16 2:29 PM;tsu;if we implement preview, we should check if it works with very big files	"20/Jul/16 4:38 PM;tsu;At the moment there is no preview implemented. If it is necessary in the future the following code can help to implement the server part for this. This was used in the XsltListRepresentationHandler (former ReactorListRepresentationHandler).
+
+
+
+{code:java}
+
+ public Representation getPreviewRepresentation(String path) {
+
+    Gson gson = new Gson();
+
+    JsonObject result = new JsonObject();
+
+
+
+    File file = xslTransformerService.getSandboxFile(path);
+
+    String content = getFileContent(file);
+
+
+
+    result.addProperty(""result"", content);
+
+
+
+    String jsonString = gson.toJson(result);
+
+    return new JsonRepresentation(jsonString);
+
+  }
+
+
+
+  public String getFileContent(File file) {
+
+    FileInputStream fis = null;
+
+    StringBuffer contentStrBuf = new StringBuffer();
+
+    try {
+
+      fis = new FileInputStream(file);
+
+
+
+      System.out.println(""Total file size to read (in bytes) : "" + fis.available());
+
+
+
+      int content;
+
+      while (fis.read() != -1) {
+
+        content = fis.read();
+
+        contentStrBuf.append((char) content);
+
+      }
+
+
+
+    } catch (IOException e) {
+
+      e.printStackTrace();
+
+    } finally {
+
+      try {
+
+        if (fis != null) {
+
+          fis.close();
+
+        }
+
+      } catch (IOException ex) {
+
+        ex.printStackTrace();
+
+      }
+
+    }
+
+    return contentStrBuf.toString();
+
+  }
+
+{code}
+
+"																																																			

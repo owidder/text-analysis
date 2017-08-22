@@ -1,0 +1,5 @@
+Dev Deployment bei Failed Tests	"Das Testen und das Deployment sind auf dem Bamboo in Branches unterteilt.
+
+Dabei gilt für das Deployment, das der Test grün sein muss.
+
+Das Deployment für die Dev-Instanz bezieht sich jedoch auch auf den Release-Branch des Tests. Somit wird auch auf der Dev-Instanz deployed, wenn Tests im Dev-Branch fehlschlagen."		Bug	OpenSpeedMonitor	12/Aug/16 7:57 AM	29/Aug/16 8:36 AM																																																																				

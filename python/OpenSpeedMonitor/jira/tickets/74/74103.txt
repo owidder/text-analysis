@@ -1,0 +1,1 @@
+[CRUD CsiSystem] Erzeugen eines neuen CSISystems ohne JobGruppe wirft Exception	Das sollte Clientseitig abgefangen werden.		Bug	OpenSpeedMonitor	19/Feb/16 9:31 AM	19/Feb/16 5:54 PM																																																																				

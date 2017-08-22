@@ -1,0 +1,8 @@
+Es müssten keine MeasuredValues für Results mehr geschrieben werden.	"Wir schreiben beim reinkommen von Results neben den MeasuredValues für CSI auch noch Result-MeasuredValues.
+Da wir aber beim Aufrufen des Result-Dashboards alle aggregierten Werte on-the-fly berechnen benötigen wir diese MeasuredValues gar nicht mehr. Wir verschwenden also Rechenzeit und Datenbank-Platz in der measured_value-Tabelle (und damit Performance beim Lesen)."		Improvement	OpenSpeedMonitor	24/Oct/13 9:01 AM	25/Oct/13 2:02 PM														"25/Oct/13 1:29 PM;mzeimer;In 
+
+de.iteratec.ispc.LocationAndResultPersisterService.saveResult(EventResult, JobResult, MeasuredEvent, CachedView, Integer, Boolean, GPathResult)
+
+entfernt."	"25/Oct/13 1:57 PM;mzeimer;Der Test funktioniert nicht. :(
+
+... aber ignoriere ich mal, da der Test sowieso defekt ist."																																																					

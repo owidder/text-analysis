@@ -1,0 +1,2 @@
+Graphite: Tagesmittelwerte einer Job-Gruppe / eines Systems aus CSI	"Regelmäßige Übermittlung der gewichteten Tagesmittelwerte für den CSI der Job-Gruppe an Graphite.
+Berechnung ist NEU. (Cron-Job)"		Task	OpenSpeedMonitor	06/Nov/13 1:03 PM	11/Dec/13 11:23 AM																																																																				

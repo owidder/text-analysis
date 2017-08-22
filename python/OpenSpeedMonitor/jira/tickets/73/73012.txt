@@ -1,0 +1,45 @@
+File Upload in Reactor doesn't work properly	"relevant for IE (9+) and Chrome (firefox works)
+
+
+
+*How to reproduce:*
+
+* go to IC, grafics reactor
+
+* upload any file via ""Upload File""
+
+* delete this file vie ""Delete File""
+
+* try to upload *the same* file on more time.
+
+
+
+*Expected*: file will be uploaded
+
+*Actual*: nothing happens
+
+
+
+possible reason: file picker dialog may keep the previous filename and do want to upload ""the same"" file two times."		Bug	iteraplan PO	11/Feb/16 11:33 AM	08/Mar/16 10:08 AM					reactor									18/Feb/16 11:39 AM;sfe;IE9 might possibly have another issue. That's another ticket.	"01/Mar/16 1:17 PM;fka;IE 9 not supported by New Client and Reactor
+
+
+
+Do not take into account IE9 "	"02/Mar/16 2:01 PM;gph;+Lessons learned:+
+
+* Firefox fires a change event, even if a file is uploaded a second time.
+
+* Chrome/IE do not fire a change event when the same file is uploaded a second time, because the file upload INPUT-tag's value doesn't change (correct behavior according to specification).
+
+* IE prevents resetting the value with jq/angular's ""element.val('')"", because it is readOnly=true and hence not editable programmatically.
+
+
+
++Solution which works in all browsers:+
+
+* Wrap the file upload INPUT-tag with a FORM-tag
+
+* Trigger a reset event on (=clear) the field after each upload programmatically.
+
+
+
+This way the element keeps its properties (listeners!) and the change event will be fired again when the same file is uploaded again."	07/Mar/16 3:47 PM;pzi;tested on FF 44, IE11 and Chrome 49. Works as expected and the changes seem to make sense																																																			

@@ -1,0 +1,15 @@
+REST API for iteraQl (Client)	"*Summary:*
+
+REST API for iteraQl in interactive Client
+
+
+
+*Details:*
+
+* Implement GET-Request for IPTS-307 and handle result of this request
+
+* Use $resource
+
+* Include error handling for bad requests, missing permissions or other server errors"		New Feature	iteraplan Speedbird	07/Nov/16 4:02 PM	28/Nov/16 9:17 AM														"28/Nov/16 9:17 AM;madu;Reviewed the code https://iteraweb.iteratec.de/fisheye/cru/IP-195
+
+I will further work on client's functionality in scope of IPTS-311"																																																						

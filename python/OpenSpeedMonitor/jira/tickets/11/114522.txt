@@ -1,0 +1,1 @@
+[BUG] Sortiert man die Violinen nach einer Customer Journey wird das Häckchen in der Dropdown Liste nicht angezeigt.		114514	Sub-task	OpenSpeedMonitor	10/Mar/17 10:25 AM																																																																					

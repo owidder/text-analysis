@@ -1,0 +1,5 @@
+Links from classic to interactive client should contain active locale	"Currently, when changing from classic to interactive client using the buttons in classic client, the interactive client is accessed with its default locale, which is English.
+
+
+
+Include the currently active locale of the classic client into the link to the interactive client, to stay within one locale when changing clients."		Improvement	iteraplan PO	03/Dec/15 9:24 AM	09/Mar/16 5:44 PM																																																																				

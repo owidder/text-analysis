@@ -1,0 +1,25 @@
+Improve columns of Interface list	"Currently, the Interface list offers the Information Systems connected by the Interface as part of the Information Flow column group.
+
+This matches the elastic metamodel which the client is based on, but does not make sense for the classic metamodel and for editing.
+
+*The reason:*
+
+One Interface can have multiple Information Flows. Each Information Flow contains the information which Information Systems are connected by the flow. However, all Information Flows belonging to the same Interface need to connect the same two Information System. Thus displaying the connected Information Systems separately for each Information Flow does not make sense.
+
+
+
+That's why the connected Information Systems should be displayed as single columns outside the Information Flow group and only once per Interface.
+
+To do:
+
+* Special treatment for Interface list when building column defs, to add Information System columns outside the Information Flow column group instead of inside the group.
+
+* Special treatment when building row data, according to the changed column defs
+
+* Change to the single element REST api, and the requests from the client, for this case:
+
+** When changing assigned Information Systems, the client sends a PUT request for the *Interface* to the server with the changed Information Systems in the body.
+
+** Rest resource server-side contains special treatment for this case to set the assigned Information Systems accordingly, and responds with (among other things) the changed Information Flows.
+
+* In Interface list view, the client reacts to responses with changed Information Flows by updating the Interface rows belonging to those Information Flows."		Improvement	iteraplan Thunderduck	10/Jan/17 3:28 PM	20/Jan/17 2:47 PM																																																																				

@@ -1,0 +1,7 @@
+Missleading error message when trying to generate a bar/pie chart without an attribute selection	"to reproduce:
+# configure a pie-chart
+# do not select any attributes in the second step
+# generate diagram
+=> missleading Error message: ""One ore more required fields are empty""
+
+the user might think some mandatory fields of the entities to display in the report are not set. but the error means that the attribute to use for graphics rendering is not set."		Bug	iteraplan PO	12/Jul/13 11:27 AM	18/Jul/13 5:20 PM					error	message								18/Jul/13 5:20 PM;svo;Looks good. Error message now displays what to select.	18/Jul/13 11:45 PM;sry;Thx																																																					

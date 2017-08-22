@@ -1,0 +1,22 @@
+Unable to log in to download latest iteraplan corporate	"The AESO paid annual support in Feb 2017. However when attempting to access the corporate portal to download 5.4 or 5.5 the credentials we were provided with do not work.
+
+
+
+Is this a problem with your download portal, or have you not registered the fact that we did pay our renewal? For that matter, it shouldn't have expired until 31 March 2017 so this situation is even harder to explain."		Fault	iteraplan Support	30/Mar/17 12:20 AM	03/Apr/17 7:38 AM														"30/Mar/17 1:23 PM;cst;Dear Mr. Conville,
+
+thank you for your inquiry.
+
+Here is your current key and the download details:
+
+https://www.iteraplan.de/downloads/corporate/5.5.0/iteraplan-5.5.0-corporate-installer.zip
+
+Login: corporate
+Password: nbAT01Qx
+
+Key:
+
+QWxiZXJ0YSBFbGVjdHJpYyBTeXN0ZW0gT3BlcmF0b3IAMjguMDIuMjAxOAA1MzUyOTg3RDRDMjlEOTc5OERDOTcwMDU1RjE2Qjc3NDY4OEE3MzAwNDE4ODI1Qzc2RDNGN0U3MTA4NzgyN0I5
+
+Greetings,
+
+Christoph Stangl - iteraplan Support"	31/Mar/17 7:15 PM;cameron.conville@aeso.ca;Thank you. That seems to have worked.																																																					

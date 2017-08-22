@@ -1,0 +1,5 @@
+Fix Jenkins Job to build bundles	"* Fix Jenkins job to build bundles, i.e.
+
+** build a basic/premium bundle *with* iTurm
+
+** build a lite bundle *without* iTurm"	92213	Sub-task	iteraplan Quickfox	16/Aug/16 9:34 AM	24/Aug/16 5:42 PM																																																																				

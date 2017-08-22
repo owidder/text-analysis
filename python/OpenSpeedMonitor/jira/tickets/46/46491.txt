@@ -1,0 +1,10 @@
+Excel Export: Built-in attributes are not localised	"In the current excel export (partial or traditional) internal built-in attributes are shown with their hierarchical/internal name, not their localised name. Should be the localised one.
+
+Affects the following three attributes:
+
+de.iteratec.iteraplan.model.Inf	de.iteratec.iteraplan.model.InformationSystemRelease$TypeOfStatus
+
+de.iteratec.iteraplan.model.Dir	de.iteratec.iteraplan.model.Direction
+
+de.iteratec.iteraplan.model.Tec	de.iteratec.iteraplan.model.TechnicalComponentRelease$TypeOfStatus
+"		Bug	iteraplan PO	25/Feb/14 4:22 PM	19/Jan/16 11:11 AM					excel	export	name																																																													

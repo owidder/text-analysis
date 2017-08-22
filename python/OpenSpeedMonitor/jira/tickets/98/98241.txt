@@ -1,0 +1,7 @@
+include history activation info in bb history data	"Information about switching the history ON/OFF should also be shown in the history of a single building block.
+
+The method ""visit(HistorySwitchEntity entity)"" in HistoryEntriesBuilderVisitor class has to be filled.
+
+
+
+Think about what to do with the initial value which is potentially created during the migration of the ""old"" to the ""new"" history!"	96262	Sub-task	iteraplan Thunderduck	05/Oct/16 1:52 PM	17/Oct/16 8:43 AM														12/Oct/16 12:18 PM;mse;Loading of HistoryState entries from database is missing in NewHistoryService.	17/Oct/16 8:43 AM;mse;Review ok.																																																					

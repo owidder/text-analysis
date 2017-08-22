@@ -1,0 +1,27 @@
+No text in header for same self-relation columns added fof multiple levels	"*Steps to reproduce:*
+
+1) Open default MPD
+
+2) Add Project as 2 level
+
+3) Add Superordinate Information System column
+
+4) Add Superordinate project column
+
+
+
+*Actual result:*
+
+No text for Superordinate project column.
+
+
+
+*Expected result:*
+
+Text in header is visible for all added additional columns.
+
+
+
+Looks like it is reproduced for all common attributes and self-relations (with same persistentNames), but which have different translations. E.g. same reproduced for Lifetime period column (Project) and Dev. Interval column (IS) - persistentName is runtimePeriod.
+
+Probably refactoring of mpdTableModel.js is needed for this case"		Bug	iteraplan PO	14/Jul/17 11:58 AM																																																																					

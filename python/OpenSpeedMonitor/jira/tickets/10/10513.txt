@@ -1,0 +1,43 @@
+Manueller Abgleich von CSV-Werten zwischen LIVE und SEU-Testumgebung	Die CSI-Werte für ausgewählte "Jobs" abgleichen, um sicherzustellen, dass die Berechnung mit neuem Modell zu gleichen Ergebnissen führt.		Task	OpenSpeedMonitor	03/Sep/13 10:00 AM	07/Oct/13 3:31 PM														"19/Sep/13 5:44 PM;mzeimer;Die beiden Dateien DEV.xlsx und LIVE.xlsx zeigen Abweichungen in der Zeitspanne trotz gleicher Auswahl an der UI: Auswahl.PNG
+
+LIVE: 
+http://iteraspeedmonitor.wpt.otto.iteratec.de/csiDashboard/showAll?group=&from=19.06.2013&fromHour=15&fromMinute=55&to=19.09.2013&toHour=15&toMinute=55&aggrGroup=shop&selectedCsiGroup=1&_action_showAll=Anzeigen
+
+DEV (lokaler Start):
+http://localhost:8080/iteraSpeedMonitor/csiDashboard/showAll?_overwriteWarningAboutLongProcessingTime=&overwriteWarningAboutLongProcessingTime=on&group=&from=19.06.2013&fromHour=15&fromMinute=55&to=19.09.2013&toHour=15&toMinute=55&aggrGroup=shop&selectedCsiGroup=1&_selectedAllMeasuredEvents=&selectedAllMeasuredEvents=on&_selectedAllBrowsers=&selectedAllBrowsers=on&_selectedAllLocations=&selectedAllLocations=on&_action_showAll=Show"	"19/Sep/13 5:55 PM;mzeimer;Der Test
+
+de.iteratec.isocsi.CustomerSatisfactionHighChartServiceTests.testGetCsRelevantStaticGraphsAsResultMapForChart()
+
+scheint diesen Fehler zu sehen."	"20/Sep/13 2:51 PM;mzeimer;Weekly shop fixed:
+Hintergrund: Die Zeiträume wurden im Service nochmal und falsch korrigiert. Dieses ist nun entfernt, der Service verwendet jetzt ausschließlich den übergebenen Zeitraum."	"20/Sep/13 2:52 PM;mzeimer;Nächster Test: Hourly:
+
+LIVE: 
+http://iteraspeedmonitor.wpt.otto.iteratec.de/csiDashboard/showAll?group=&from=19.06.2013&fromHour=15&fromMinute=55&to=20.06.2013&toHour=15&toMinute=55&aggrGroup=job&selectedCsiGroup=1&selectedPage=1&selectedPage=2&selectedCsiJobs=10&selectedCsiJobs=11&selectedCsiJobs=166&selectedCsiJobs=123&selectedCsiJobs=165&selectedCsiJobs=124&selectedCsiJobs=1&_action_showAll=Anzeigen
+
+DEV:
+http://localhost:8080/iteraSpeedMonitor/csiDashboard/showAll?group=&from=19.06.2013&fromHour=15&fromMinute=55&to=20.06.2013&toHour=15&toMinute=55&aggrGroup=measuredEvent&selectedCsiGroup=1&selectedPage=1&selectedPage=2&selectedMeasuredEvents=10&selectedMeasuredEvents=11&selectedMeasuredEvents=166&selectedMeasuredEvents=123&selectedMeasuredEvents=165&selectedMeasuredEvents=124&selectedMeasuredEvents=1&_selectedAllMeasuredEvents=&_selectedAllBrowsers=&selectedAllBrowsers=on&_selectedAllLocations=&selectedAllLocations=on&_action_showAll=Show"	"20/Sep/13 2:54 PM;mzeimer;CSV: Die Messwerte Werte sehen gut aus, aber die CSV hat eine andere Spaltenaufteilung!?
+Graphen: Optisch OK."	"20/Sep/13 2:56 PM;mzeimer;WEEKLY Page:
+- Target graph fehlt --> FIXED.
+- Tabelle unten ist bei DEV leer (Punkte sind aber da)
+
+LIVE:
+http://iteraspeedmonitor.wpt.otto.iteratec.de/csiDashboard/showAll?group=&from=19.06.2013&fromHour=15&fromMinute=55&to=30.06.2013&toHour=15&toMinute=55&aggrGroup=page&selectedCsiGroup=1&selectedPage=1&selectedPage=2&_action_showAll=Anzeigen
+
+DEV:
+http://localhost:8080/iteraSpeedMonitor/csiDashboard/showAll?group=&from=19.06.2013&fromHour=15&fromMinute=55&to=30.06.2013&toHour=15&toMinute=55&aggrGroup=page&selectedCsiGroup=1&selectedPage=1&selectedPage=2&selectedMeasuredEvents=10&selectedMeasuredEvents=11&selectedMeasuredEvents=166&selectedMeasuredEvents=123&selectedMeasuredEvents=165&selectedMeasuredEvents=124&selectedMeasuredEvents=1&_selectedAllMeasuredEvents=&_selectedAllBrowsers=&selectedAllBrowsers=on&_selectedAllLocations=&selectedAllLocations=on&_action_showAll=Show"	"27/Sep/13 5:08 PM;mzeimer;ACHTUNG: Abweichungen nach dem 16.9.?
+
+!Abweichungen nach dem 16.9.2013.PNG!
+
+Auswahl:
+
+!Abweichungen nach dem 16.9.2013 - Auswahl.PNG!
+"	"07/Oct/13 3:30 PM;mzeimer;Die Integrationstests liefern keine Indizien:
+
+de.iteratec.isocsi.WeeklyShopIntTests --> OK
+
+de.iteratec.isocsi.WeeklyShopMultipleCsiGroupsIntTests --> OK
+
+de.iteratec.isocsi.WeeklyPageIntTests --> OK
+Allerdings finden sich in den Tests teilweise erlaubte(!!!) Abweichungen vom Erwartungswert bis zu 5 (real bis zu 3.9945969389911795) !?? Damit ist dieser Test wenig hilfreich.
+
+de.iteratec.isocsi.WeeklyPageMultipleCsiGroupsIntTests --> OK"	07/Oct/13 3:31 PM;mzeimer;In Sprint 5 nochmals bewerten: siehe IT-148.																																														

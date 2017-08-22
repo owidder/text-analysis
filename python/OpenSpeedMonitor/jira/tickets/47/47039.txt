@@ -1,0 +1,9 @@
+Component for API access	"Implement a component that encapsulates the access to the REST API.
+This component may use the Angular library.
+
+All other components must use this component to read and write data from or to the REST API. No component may use the REST API directly.
+
+It must be possible to replace this component with a mock for testing (the other components),
+
+"		New Feature	iteraplan PO	10/Oct/14 9:54 AM	09/Jun/15 5:06 PM														"13/Oct/14 10:22 AM;wfr;clear, already in progress
+estimate possible after talking to team"	13/Oct/14 11:29 AM;sepr;Est 2 PD																																																					

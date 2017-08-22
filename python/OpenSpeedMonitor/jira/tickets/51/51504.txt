@@ -1,0 +1,1 @@
+Check Customized Installers	For Release 5.0.5, check customized installers and adjust where necessary.		Task	iteraplan PO	22/Jul/15 9:20 AM	30/Jul/15 3:43 PM					customizing																																																															

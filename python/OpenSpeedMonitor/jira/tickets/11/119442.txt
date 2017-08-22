@@ -1,0 +1,3 @@
+PageAggregation: Sortieren nach Customer-Journey kaputt	"Das Sortieren nach Customer Journey funktioniert nicht mehr.
+
+Getestet lokal mit Apetito Daten aus einer Job-Gruppe."		Bug	OpenSpeedMonitor	24/Apr/17 1:52 PM	25/Apr/17 1:42 PM																																																																				

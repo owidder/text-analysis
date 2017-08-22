@@ -1,0 +1,95 @@
+Loadtest the XLSX-Export to derive memory configuration parameters for the tomcat	"The standard tomcat memory configuration is not sufficient for the new xlsx-export.
+
+To derive new parameters for the tomcat a loadtest has to be created.
+
+Starting point are the non-functional requirements on how many parallel xlsx-exports should be supported."	45630	Sub-task	iteraplan PO	16/Apr/13 9:45 AM	18/Jul/13 6:46 PM					excel									"16/Apr/13 10:16 AM;jme@iteratec.de;Für die erfolgreiche Ausführung der JMeter-Tests muss man parallel mit dem Webbrowser an der gleichen Instanz von iteraplan angemeldet sein.
+
+Tomcat-Parameter:
+-Xms128m -Xmx1024m -XX:MaxPermSize=512m
+Max. 2 parallele Benutzer
+Ab dem 3. gibt es die folgende Exception: java.lang.OutOfMemoryError: Java heap space
+"	16/Apr/13 10:52 AM;sry;How many users does it handle with 1536 MB or 2048 MB heap size? Have you been testing with our sample data set, or larger?	"16/Apr/13 11:05 AM;jme@iteratec.de;I' ve tested with the ordinary sample data set.
+
+In order to test larger heap sizes I need to use a real server. So I need the permission to tamper with the nightly-build or something alike.
+Maybe we should wait until after the next Milestone-build.
+"	"19/Apr/13 10:07 AM;jme@iteratec.de;If you reduce the number of ""prepared"" lines when the metamodel is exported (required step before exporting the model data, see ITERAPLAN-1281), you don't run into memory problems any more and the export is much faster (JMeter test with 10 parallel exports was no problem).
+
+restriction: the exported modeldata is not formated and there are no dropdown-selection-boxes created. So we are not done analysing yet :)"	"18/Jul/13 12:36 AM;jme@iteratec.de;With the ticket ITERAPLAN-1281 the way, how the templates and exports are formatted got changed.
+Now for each generated sheet there are only 10 empty, preformatted rows.
+
+"	"18/Jul/13 9:31 AM;jme@iteratec.de;*iteraplan version: revision 20850*
+
+
+JMeter: 2.5.1
+
+
+Test settings:
+Ramp up period 1 sec
+Loop count: 1
+
+
+Environment: 
+Dell Latitude E6420 Laptop with SSD, 8 GB RAM, Windows 7 64 Bit
+
+iteraplan is running on a local Tomcat (6.0.36) (https).
+
+Testdata: the usual iteraplan bank-data example (a rather small set of data)
+
+XLSX: 
+
+||Label||Samples||Average||Min||Max||Std. Dev.||Error %||Throughput||KB/sec||Avg. Bytes||
+|Request Excel 2007 FullModel	|10	|11945	|11501	|12330	|285.18948087191376	|0.0	|0.7836990595611285	|104.8205145474138	|136961.0|
+|Request Excel 2007 FullModel	|20	|14565	|11722	|16532	|1610.518705262376	|0.0	|1.1678832116788322	|156.1348083941606	|136899.0|
+|Request Excel 2007 FullModel	|40	|23568	|16086	|28644	|2512.9967915568427	|0.0	|1.3635588886995056	|182.25675654082153	|136870.45|
+|Request Excel 2007 FullModel	|60	|29324	|18293	|36107	|4835.656711232601	|0.0	|1.6362595107584061	|218.63114215174946	|136823.21666666667|
+|Request Excel 2007 FullModel	|80	|27960	|*467*	|40212	|11067.279522199664	|0.0	|1.9195700163163452	|233.5668685214512	|124596.9|
+
+80 parallel requests: not all requests produced the expected results. This is plain to see by the ""Min"" time. 0,467 seconds for a full model export is not plausible."	"18/Jul/13 2:23 PM;jme@iteratec.de;*iteraplan version: revision 20850*
+
+
+JMeter: 2.5.1
+
+
+Test settings:
+Ramp up period 1 sec
+Loop count: 1
+
+
+Environment: 
+Dell Latitude E6420 Laptop with SSD, 8 GB RAM, Windows 7 64 Bit
+
+iteraplan is running on a local Tomcat (6.0.36) (https).
+
+Testdata: 600 entries per building block, highly interconnected
+
+XLSX: 
+
+||Label||Samples||Average||Min||Max||Std. Dev.||Error %||Throughput||KB/sec||Avg. Bytes||
+|Request Excel 2007 FullModel	|4	|17298	|16767	|17819	|393.4999205844901	|0.0	|0.22313957380341404	|151.12280172654246	|693511.0|
+|Request Excel 2007 FullModel	|10	|128101	|87193	|142341	|20501.750784750016	|0.0	|0.07017346881491046	|47.54492362933672	|693795.0|
+|Request Excel 2007 FullModel	|15	|923840	|360315	|1135698	|280691.38425970025	|0.06666666666666667	|0.01320355122713805	|4.368658822601927	|338810.86666666664|
+
+With 15 parallel downloads an out-of-memory-error occured."	"18/Jul/13 2:29 PM;jme@iteratec.de;Conclusion:
+With the new dynamic formatting feature and the current memory setting for the tomcat (Xmx:1024m XX:MaxPermSize=512m) it is possible to run several exports of a big and complex model in parallel. 
+There is currently no need to recommend higher values for the memory setting."	"18/Jul/13 6:46 PM;lba;JMeter 2.9r1437961
+
+Tested with dynamically formatted excel sheets
+
+Test settings:
+Ramp up period 1 sec
+Loop count: 1
+
+Environment:
+Dell PRECISION M4500 Laptop with HDD, 4 GB RAM, Windows 7 32 Bit
+
+iteraplan is running on a local Tomcat (7.0.39) (https).
+
+Testdata: 600 entries per building block, highly interconnected (sample data from ITERAPLAN-1281)
+
+||Label||Samples||Average||Min||Max||Std. Dev.||Error %||Throughput||KB/sec||Avg. Bytes||
+|Request Excel 2007 FullModel|10|2662|2321|3256|302.818|0.0|2.552|208.380|83603.0|
+|Request Excel 2007 FullModel|20||4916|3605|6318|661.537|0.0|2.993|244.437|83614.0|
+|Request Excel 2007 FullModel|40|9351|6820|11980|1192.387|0.0|3.061|249.994|83614.0|
+
+Note: I did not restart the tomcat between the single tests, nor did i clear the session. Maybe that leads to incorrect test results.
+"	18/Jul/13 10:57 PM;jme@iteratec.de;Lars: are you sure that the result of every single request was an entire xlsx-file? Either there are invalid responses or your computer is a hell lot of faster that mine (I am jealous).	23/Sep/13 10:17 PM;sry;Fine results, thx a lot. Effectively no changes in code, so nothing to review																																												

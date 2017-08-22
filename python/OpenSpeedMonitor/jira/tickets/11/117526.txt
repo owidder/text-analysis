@@ -1,0 +1,5 @@
+Make interfaces in information system SEV not deleteable	"The connections to InfoFlows should not be deletable in the SingleElementView of InformationSystems, as an Interface can no exist without the two InformationSystems at the moment.
+
+
+
+Remove the corresponding ""x"" so it cannot be deleted"		Improvement	iteraplan Thunderduck	03/Apr/17 1:53 PM	20/Apr/17 2:51 PM																																																																				

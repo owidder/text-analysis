@@ -1,0 +1,6 @@
+Return correct HTTP status code for unique name conflict in REST API	"If you try to create a BuildingBlock with an existing name (using a POST-Request), then the API should not answer with a 500 error.
+
+409 ""Conflict"" would be good.
+
+Documentation should be adjusted."		Bug	iteraplan PO	10/Apr/14 3:22 PM	19/Jan/16 11:08 AM					rest									"17/Dec/14 3:36 PM;sfe;Current answer in this case seems to be 400 - Bad Request.
+Is this issue still applicable?"																																																						

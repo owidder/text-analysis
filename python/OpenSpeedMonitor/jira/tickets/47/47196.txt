@@ -1,0 +1,3 @@
+2 iteraplan9 versions (1 minified)	"Create 2 versions of iteraplan9:
+- 1 ""full"" version for developers (actual trunk)
+- 1 minified version in a separate folder, which is a complete and executable version"		New Feature	iteraplan PO	26/Nov/14 8:08 AM	19/Jan/16 10:35 AM																																																																				

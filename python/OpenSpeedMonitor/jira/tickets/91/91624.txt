@@ -1,0 +1,7 @@
+Testsheet for Plugin-API		91619	Sub-task	iteraplan PO	26/Jul/16 1:16 PM	17/Oct/16 12:42 PM														"11/Oct/16 1:10 PM;cst;created the test sheet for the PLUGIN API
+
+Examples are in the folder of the manuel test
+
+
+
+"																																																						

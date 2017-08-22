@@ -1,0 +1,3 @@
+Hotkey is not working	"When I press Shift-n while I am at the InformationSystems overview page, nothing happens.
+
+The context menu shows me, that with this hotkey a new InformationSystem should be created."		Bug	iteraplan PO	23/Jul/13 10:11 AM	05/Aug/13 1:54 PM					gui,	usability								05/Aug/13 1:54 PM;sfe;looking good	03/Sep/13 1:23 PM;psc;Reviewed with Sebastian. Solution accepted.																																																					

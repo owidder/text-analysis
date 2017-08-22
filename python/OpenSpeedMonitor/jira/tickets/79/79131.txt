@@ -1,0 +1,3 @@
+"dateStringToCompactDateString" and "compareWithMinMaxAndSet" are not null-safe	"*Summary:*
+
+The methods ""dateStringToCompactDateString"" and ""compareWithMinMaxAndSet"" in dataModel.js are not null-safe. This leads to an error in the Information Flow Diagram, if one date (start or end date) of the runtime-Period or any other duration is not set."		Bug	iteraplan PO	05/Apr/16 3:12 PM	05/Apr/16 4:24 PM																																																																				

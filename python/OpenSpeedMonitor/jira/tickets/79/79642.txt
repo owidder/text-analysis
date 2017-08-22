@@ -1,0 +1,3 @@
+Lokale Zap-Instanz aufsetzen	"Eine lokale Instanz von Zap aufsetzen, um dessen Verhalten besser nachvollziehen zu können.
+
+Einige Authenitifzierungsversuche mit der lokalen Zap-Instanz unternehmen."	78821	Sub-task	secureCodeBox	08/Apr/16 4:17 PM	12/Apr/16 2:34 PM																																																																				

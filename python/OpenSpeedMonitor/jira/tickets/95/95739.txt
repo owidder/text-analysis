@@ -1,0 +1,1 @@
+Filter, range slider: UI defect	See attached screenshot, the two slider markers are missing		Bug	iteraplan Quickfox	09/Sep/16 6:06 PM	27/Sep/16 4:03 PM														27/Sep/16 4:03 PM;mwe;The range slider is visible again. Somebody fixed it.																																																						

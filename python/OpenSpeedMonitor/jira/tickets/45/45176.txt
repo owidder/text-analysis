@@ -1,0 +1,42 @@
+EhCache deadlock	"Under some circumstances the EhCache gets locked by it self and the whole application will be blocked. I could reproduce this bug with 2 cuncurrent users, one of them was reading from the cache, another was updating the cache. 
+This deadlock will be caused by our datasource cache decorator. The reading user uses one key, the writing user uses the original key, so the cache will be deadlocked. 
+I suggest that we remove the decorating cache for the final 2.9 release. The customers using the datasources feature should not use the cache.
+
+Stack trace of the first user:
+{code}
+sun.misc.Unsafe.park ( native code )
+java.util.concurrent.locks.LockSupport.park ( LockSupport.java:158 )
+java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt ( AbstractQueuedSynchronizer.java:811 )
+java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued ( AbstractQueuedSynchronizer.java:842 )
+java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire ( AbstractQueuedSynchronizer.java:1178 )
+java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock.lock ( ReentrantReadWriteLock.java:807 )
+net.sf.ehcache.store.compound.CompoundStore$ReadWriteLockSync.lock ( CompoundStore.java:894 )
+net.sf.ehcache.hibernate.regions.EhcacheTransactionalDataRegion.writeLock ( EhcacheTransactionalDataRegion.java:182 )
+net.sf.ehcache.hibernate.strategy.AbstractReadWriteEhcacheAccessStrategy.putFromLoad ( AbstractReadWriteEhcacheAccessStrategy.java:88 )
+net.sf.ehcache.hibernate.nonstop.NonstopAwareEntityRegionAccessStrategy.putFromLoad ( NonstopAwareEntityRegionAccessStrategy.java:180 )
+org.hibernate.engine.TwoPhaseLoad.initializeEntity ( TwoPhaseLoad.java:180 )
+org.hibernate.loader.Loader.initializeEntitiesAndCollections ( Loader.java:898 )
+org.hibernate.loader.Loader.doQuery ( Loader.java:773 ) 
+{code}
+
+Stack trace of the second user:
+{code}
+sun.misc.Unsafe.park ( native code )
+java.util.concurrent.locks.LockSupport.park ( LockSupport.java:158 )
+java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt ( AbstractQueuedSynchronizer.java:811 )
+java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireShared ( AbstractQueuedSynchronizer.java:941 )
+java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireShared ( AbstractQueuedSynchronizer.java:1261 )
+java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock.lock ( ReentrantReadWriteLock.java:594 )
+net.sf.ehcache.store.compound.Segment.get ( Segment.java:222 )
+net.sf.ehcache.store.compound.CompoundStore.get ( CompoundStore.java:169 )
+net.sf.ehcache.store.compound.CompoundStore.getQuiet ( CompoundStore.java:176 )
+net.sf.ehcache.Cache.searchInStoreWithoutStats ( Cache.java:1933 )
+net.sf.ehcache.Cache.get ( Cache.java:1555 )
+net.sf.ehcache.Cache.get ( Cache.java:1522 )
+de.iteratec.iteraplan.persistence.cache.DatasourceCacheDecorator.get ( DatasourceCacheDecorator.java:36 )
+net.sf.ehcache.hibernate.regions.EhcacheTransactionalDataRegion.get ( EhcacheTransactionalDataRegion.java:105 )
+net.sf.ehcache.hibernate.strategy.AbstractReadWriteEhcacheAccessStrategy.putFromLoad ( AbstractReadWriteEhcacheAccessStrategy.java:90 )
+net.sf.ehcache.hibernate.nonstop.NonstopAwareEntityRegionAccessStrategy.putFromLoad ( NonstopAwareEntityRegionAccessStrategy.java:180 )
+org.hibernate.engine.TwoPhaseLoad.initializeEntity ( TwoPhaseLoad.java:180 )
+org.hibernate.loader.Loader.initializeEntitiesAndCollections ( Loader.java:898 ) 
+{code}"		Bug	iteraplan PO	05/Oct/11 5:33 PM	17/Oct/11 12:23 PM					cache	hibernate								05/Oct/11 5:34 PM;agu;See also the issue ITERAPLAN-74	11/Oct/11 5:18 PM;agu;I could not found a solution for this bug, so I took out the decorator, which caused the deadlock. This means, that the caching for datasource will not work properly (we should write a note in Wiki). 	12/Oct/11 2:59 PM;agu;Created new ticket for this issue - ITERAPLAN-300 	13/Oct/11 3:23 PM;sry;I'd even suggest to make iteraplan fail startup if at least datasource is found and caches are active. Together with an instructive log message, this would make admins forcefully aware (and who reads the Wiki??).	17/Oct/11 12:23 PM;vsh;Deactivating the decorator hasn't introduced any negative side effects when only one data source is used. For multiple data sources, a new ticket ITERAPLAN-300 has been created.																																																		

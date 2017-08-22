@@ -1,0 +1,8 @@
+WPTMonitor-Jobs zur Überwachung des ism einrichten.	"Es sollen Mess-Jobs eingerichtet werden, welche diePerformance des ism selbst überwachen:
+
+* Aufruf der Homepage des ism
+* Script: 
+** Aufruf http://wpt.otto.iteratec.de/
+** Click auf 'Übersicht Kundenzufriedenheit'
+** Aufruf Diagramm Stundenmittel, live, letzter Tag, alle Seiten
+** Aufruf 'Statische Ansicht'"		Task	OpenSpeedMonitor	10/Jan/14 2:39 PM	14/Jan/14 3:44 PM																																																																				

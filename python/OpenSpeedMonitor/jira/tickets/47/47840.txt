@@ -1,0 +1,6 @@
+Pull metamodel configuration	"*Affected js-files:*
+* ifdConfiguration"	47836	Sub-task	iteraplan PO	17/Jun/15 4:06 PM	15/Jul/15 11:05 AM					configuration	metamodel								08/Jul/15 3:03 PM;msr;Same logic as for the dataModel	"15/Jul/15 11:05 AM;fam;Checked Code.
+
+No productive function to review, still.
+
+Ticket closed."																																																					

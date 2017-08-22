@@ -1,0 +1,49 @@
+Change information in microedit POST request for Association	"Reproduce:
+
+
+
+* Create assoication (e.g. Isr2BoAssociation) via microedit REST api:
+
+** POST http://localhost:8080/iteraplan/api/element/Isr2BoAssociation
+
+** Example request body:
+
+
+
+{code}
+
+{
+
+	informationSystemRelease: [{
+
+		id: ""206""
+
+	}],
+
+	businessObject: [{
+
+		id: ""4""
+
+	}]
+
+}
+
+{code}
+
+
+
+Expected:
+
+The response contains the changes for the Isr2Bo *and* the ISR *and* the BO.
+
+
+
+Actual:
+
+The response contains only changes for the Isr2Bo.
+
+
+
+Try to fix this on the server, so that the request response can be used by the client, to update the datamodel completely. Please, keep in mind, that the history database tables should still contain only the INSERT for the Isr2BoAssocation, but no additional entries in the ISR and/or BO history tables.
+
+"		Bug	iteraplan Thunderduck	05/Dec/16 1:47 PM	24/Jan/17 5:03 PM																																																																				

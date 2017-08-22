@@ -1,0 +1,5 @@
+Usability CSI-Dashboard-Filter	"Advanced-Filter für die hourly-event-measured-values:
+
+* selects für MeasuredEvents und Location werden nur in der Advanced-Sicht sichtbar
+* Die Advanced-Sicht wird mit einem twitter-bootstrap-toggle-button aktiviert; Die simple-Sicht ist der default
+* optional: 5-fach-select in template auslagern"		Task	OpenSpeedMonitor	16/Sep/13 10:51 AM	23/Sep/13 5:26 PM																																																																				

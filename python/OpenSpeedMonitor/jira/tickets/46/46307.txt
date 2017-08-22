@@ -1,0 +1,5 @@
+Remove old and unsued implementation of hierarchy view	"There are still some classes and JSPs of the old instable hierarchical view. It should be removed. 
+
+See the attached patch file for the necessary steps."		Task	iteraplan PO	31/Oct/13 9:12 PM	22/Apr/14 12:46 PM					cleanup	code	hierarchy							17/Apr/14 2:02 PM;fka;Patch has been supplied by SRY.	"22/Apr/14 12:46 PM;gph;Cleaned up orphaned key ""global.hierarchicalNavigation"".
+
+The rest looks ok."																																																					

@@ -1,0 +1,43 @@
+Use MediaWiki-Lib for description field in the Building-Block-List	"*Summary:*
+
+Use MediaWiki-Lib for description field in the Building-Block-List and remove old implementation of XWiki-Transformation in the new Client.
+
+Please apply the XWiki-Parser to the attributes-list, too.
+
+
+
+https://en.wikipedia.org/wiki/Creole_(markup)"		Improvement	iteraplan Speedbird	08/Nov/16 1:08 PM	10/Feb/17 10:55 AM														23/Nov/16 12:46 PM;msr;Please connect to [~sfe] to discuss the autoheight-feature.	24/Nov/16 10:42 AM;msr;Please apply the XWiki-Parser to the attributes-list, too.	"09/Feb/17 10:47 AM;dmkh;Review is done.
+
+
+
+Few comments related to Creole formatting for description field in the List:
+
+- when adding *heading* formatting - height of description cell is incorrect and bottom part is just cut;
+
+E.g.:
+
+{code}
+
+= Heading 1 =
+
+== Heading 2 ==
+
+=== Heading 3 ===
+
+==== Heading 4 ====
+
+{code}
+
+- same is for *lists* (numbered lists).
+
+E.g.:
+
+{code}
+
+# item1
+
+## item11
+
+# item2
+
+{code}"	09/Feb/17 4:16 PM;roia;Updated the height calculation																																																			

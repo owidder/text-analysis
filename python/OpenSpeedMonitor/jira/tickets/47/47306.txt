@@ -1,0 +1,6 @@
+Documentation of permissions	"The documentation of the permission for Run Imports and Exports (XMI and Excel) is currently a little bit inaccurate. 
+The permissions “Run export (XMI)”, “Run import (XMI)” and “Run import (Excel)” should be documented in more detail.
+
+Currently, they are documented as one.
+You can find the documentation here: http://www.iteraplan.de/wiki/display/upcomingIteraplan/Functional+permissions
+"		Bug	iteraplan PO	21/Jan/15 1:19 PM	27/Jan/15 5:59 PM					documentation	permissions																																																														

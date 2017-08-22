@@ -1,0 +1,65 @@
+Startscreen colours	"Fourth section in Corporate Design tab
+
+
+
+As text above text boxes (mentioned below):
+
+
+
+
+
+*Mandatory:*
+
+Data tab is devided into 4 sections:
+
+ * Business Group / GER ""Geschäftsgruppe""
+
+ * IT Group / GER: ""IT Gruppe""
+
+ * Technical Group / ""Technische Gruppe""
+
+ * Project Group / ""Projekt Gruppe""
+
+
+
+ * {color:#333333}Visualize{color}
+
+ * {color:#333333}Report{color}
+
+ * {color:#333333}Administration{color}
+
+
+
+*UI*
+
+
+
+those groups are shown in form of text box each with coloured background - colour as it is on data, visualize, report and administration screens,
+
+ * Visualize, Report and Admin as second column
+
+
+
+next to each text box there is colour picker icon, after changing colour - background changes and all tiles in changed section change to chosen colour
+
+
+
+Underneath all text boxes, there is *undo* icon with text next to it
+
+ * Reset all colours to default ({color:#14892c}german: Alle Farben zurücksetzen){color}
+
+ ** as secondary text button
+
+
+
+Those colors are automatically being applied to the respecitve building block table headers, too. 
+
+
+
+All changes are saved and applied imediately
+
+
+
+{color:red}UPDATE: {color}Just one improvement: When you click on the tile, please open the colorpicker and therefore remove the colorpicker icon below which is not needed anymore.
+
+Title for this section ""Colors for the startscreen"" / GER: ""Farben für den Startbildschirm"""		New Feature	iteraplan Speedbird	23/May/17 3:09 PM															12/Jul/17 3:27 PM;sbu;ITPS-1113 sets the default colours for the list header, that become customizable in ITPS-875																																																						

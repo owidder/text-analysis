@@ -1,0 +1,7 @@
+Loading time min-max slider value	"Loading time for the slider min-max value is to long (40 seconds++ with big data)
+
+
+
+Performance improvement:
+
+- dont use BusinessObjects, use JSON-data instead"		Improvement	iteraplan PO	11/Sep/15 1:25 PM	15/Sep/15 9:45 AM					filter	performance	ranges																																																													

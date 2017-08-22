@@ -1,0 +1,5 @@
+Integrationstests fixen			Improvement	OpenSpeedMonitor	06/Jan/14 4:34 PM	06/Feb/14 8:59 AM														"07/Jan/14 5:46 PM;drieger;Zwischen den Integrationstests besteht ein Isolationsproblem: Führt man eine der folgenden Testklassen isoliert aus, läuft sie erfolgreich durch. Lässt man alle Integrationstests in iteraSpeedOttoCsi laufen, schlagen in jeder dieser Testklassen einer oder mehrere Tests fehl.
+
+WeeklyPageMultipleCsiGroups 
+WeeklyShopIntTests 
+WeeklyShopMultipleCsiGroups"	23/Jan/14 4:10 PM;drieger;Jenkins-Tasks aktualisiert nach Entfernung von iteraSpeedScript-Plugin																																																					

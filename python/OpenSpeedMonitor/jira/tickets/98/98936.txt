@@ -1,0 +1,35 @@
+Public Queries cannot be opened after changing the user	"Summary:
+
+After following setup, the Saved Quierie cannot be loaded and the error 
+
+
+
+""An error occurred during loading the saved query: 404 Not Found""
+
+
+
+appears in the browser 
+
+
+
+# Create a Saved Querie with the user ""System"" 
+
+# Log out and Log in with the user ""Tom""
+
+# Open all ""Saved Queries"" in the interactive client
+
+# Try to open the created Quierie
+
+# The error 404 Not Found appears
+
+
+
+Expected:
+
+Its possible to load the public saved quieries"		Bug	iteraplan Quickfox	12/Oct/16 3:09 PM	25/Oct/16 10:14 AM														"21/Oct/16 11:14 AM;mse;I fixed the first problem (see commit 26358).
+
+
+
+To be clearified with [~mwe]:
+
+There is an additional PUT request to update the ""lastLoaded"" attribute of the stored query. This request also fails due when executed with another use. We could easily adjust the if statement as for the GET request. But then the author of the query would be changed in case another user loads the public query. Is that what we want?"	24/Oct/16 5:17 PM;mwe;To be clear: This should not happen. The author should not be possible to be changed.																																																					

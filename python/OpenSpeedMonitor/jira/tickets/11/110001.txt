@@ -1,0 +1,39 @@
+Dynamische Felder	"Seit längerer Zeit stelle ich fest, dass iteratec das Thema der Dynamischen Feldgrösse nicht sonderlich bearbeitet. Das ist sehr schade, denn daran wird auch die Akzeptanz der Software iteraplan gemessen. Bei Schulungen ist dies immer wieder ein Thema!
+
+
+
+Bei Visualisierungen, die nicht mit Visio bearbeitet werden können, werden die Feldgrösse nicht dynamisch angepasst. Entweder als Liste daneben oder wie bei der Masterplangrafik, werden dies durch das nachfolgende Feld abgedeckt. Lesbarkeit wird dann ziemlich eingeschränkt!
+
+
+
+Das zweite ist, wenn z.B. beim Massenupdate Merkmalsfelder ausgewählt werden sollen. Wenn ein Merkmal nicht kurz gehalten wird, überlappen die Namen die einzelnen Merkmalsnamen. Dies geht soweit, dass die einzelnen Merkmalsfelder fast nicht mehr gelesen werden können.
+
+
+
+Wäre froh, wenn dies angegangen wird.
+
+Danke für die Rückmeldung."		Fault	iteraplan Support	30/Jan/17 8:12 AM	26/Feb/17 7:00 AM														"30/Jan/17 4:20 PM;cst;Guten Tag Herr Studer,
+
+vielen Dank für Ihre Anfrage.
+
+Mit der Umstellung auf den interaktiven Client wird an dieser Stelle mit Version 5.5 schon einiges passieren. Sie haben die Möglichkeit in der List View die Spaltengröße dynamisch zu verändern. Für längeren Namen in Diagrammen wird ein dynamischer Tool-Tipp angezeigt.
+
+Am classic Client, wird an dieser Stelle nix mehr geänder.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+"	"06/Feb/17 9:40 AM;alfred.studer@emmi.com;Im Menu Massenupdates haben wir das Problem auch
+
+[^massenupdate.docx] _(31 kB)_"	"07/Feb/17 10:48 AM;cst;Guten Tag Herr Studer,
+
+vielen Dank für Ihren Hinweis. 
+
+Im ""Classic Client"" wird dies nicht mehr angepasst. 
+In Version 6.0 steht das Feature ""Massenupdates"" dann überarbeitet zur Verfügung. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support
+
+"																																																				

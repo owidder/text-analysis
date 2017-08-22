@@ -1,0 +1,3 @@
+Interfaces are copied together a copied Information System, even if interfaces are unchecked	"If you copy an information system (or create a new release), you can tick which data you want to have copied. If you uncheck all the interfaces connected to the information system, the interfaces are copied nevertheless.
+
+Keep in mind that the Copy function shall be [changed anyway|https://www.iteraplan.de/issues/browse/ITERAPLAN-32?focusedCommentId=10328&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-10328]"		Bug	iteraplan PO	30/Jun/11 7:18 PM	08/Jul/11 10:02 AM														08/Jul/11 10:02 AM;kvo;Copy function will get simplified!																																																						

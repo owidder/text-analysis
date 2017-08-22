@@ -1,0 +1,11 @@
+[Integrationstests] Tests in der Klasse WeeklyShopMultipleCsiGroupsIntTests fixen	"Fixen heißt hier:
+
+
+
+* Auf Spock umstellen
+
+* IntegrationSpec als Basisklasse verwenden
+
+* Tests fachlich fixen
+
+* Es sollten keine Exceptions mehr geworfen werden"		Task	OpenSpeedMonitor	30/Mar/16 11:39 AM	01/Apr/16 5:32 PM																																																																				

@@ -1,0 +1,7 @@
+9. editPublicSavedQueries	"Within a diagram/list:
+
+* hide switch in save-as-dialog *DONE*
+
+* hide save-button only for public queries *DONE*
+
+* restrict edit in quey-tile only for public queries *DONE*"	108102	Sub-task	iteraplan Speedbird	19/Jan/17 9:56 AM	24/Jan/17 4:45 PM														24/Jan/17 12:23 PM;mash;To test: Both: "Edit (create, update and delete) and execute queries for Diagram Reports" AND "Edit (create, update and delete) and execute queries for Spreadsheet Reports and Bulk Updates" should be removed from granted permissions in the Classic Client																																																						

@@ -1,0 +1,35 @@
+[3-A] Einführung Internet-Anbindung als weiterer Gewichtungs-Faktor	"*Ist-Zustand CSI-Auswertungen*
+
+
+
+Bisher wird der Kundenzufriedenheits-Index (CSI)  mehrstufig berechnet: 
+
+
+
+# Für jeden zu berücksichtigenden Mess-Schritt werden pro eindeutiger Kombination der folgenden fünf Attribute ungewichtete Stunden-Mittelwerte gebildet:
+
+## System
+
+## Page
+
+## Messschritt
+
+## Browser
+
+## Location 
+
+# Für die Tages- und Wochen-Mittelwerte pro Page werden die Stundenmittel aus 1. gewichtet gemittelt. Stunden, in denen auf otto.de mehr Umsatz generiert wird, werden stärker gewichtet als andere. Die Gewichtung der Browser richtet sich nach der Häufigkeit unter den otto.de-Usern. Je häufiger ein Browser vorkommt, desto stärker werden die Messungen mit diesem Browser gewichtet. Die mobilen Devices, auf denen gemessen wurde, sind im OpenSpeedMonitor als Browser abgebildet. Somit lassen sich Messungen auf unterschiedlichen Devices bereits jetzt gewichtet im CSI berücksichtigen.
+
+# Für die Tages- und Wochen-Mittelwerte für ein ganzes Shop-System (z.B. „live“) werden die Mittel pro Page gewichtet gemittelt. Die Gewichtung lässt sich im OpenSpeedMonitor konfigurieren und entspricht aktuell der Wichtigkeit der otto.de-Seiten für den Kunden.
+
+
+
+Die drei beschriebenen Gewichtungs-Faktoren Stunde des Tages, Browser und Page sind bisher voneinander unabhängig. 
+
+
+
+*Einführung Internet-Anbindung als weiterer Gewichtungs-Faktor*
+
+
+
+Für die neu einzuführende Gewichtung nach Internet-Anbindung ist diese Unabhängigkeit nicht mehr gegeben. Die Gewichtung der Anbindung sollte sich, wie alle bisherigen Gewichtungen, an der Verteilung unter den realen otto.de-Usern ausrichten. Diese Verteilung unterscheidet sich aber, je nachdem mit welchem Browser/Device ein User otto.de aufruft. Desktop-User werden niemals (oder nur sehr selten) mit einer EDGE-Anbindung surfen, während Smartphone-User dies durchaus tun. Die Gewichtung der Internet-Anbindung ist demnach abhängig vom Browser/Device. Aus diesem Grund wird eine Matrix Anbindung / Browser eingeführt. Für jede Zelle in dieser Matrix lässt sich dann in einer Oberfläche des OpenSpeedMonitors ein Gewichtungs-Faktor vorgeben. Das Default-Gewicht für Browser-Anbindungs-Kombinationen ist 0. Auf diese Weise werden bei Einrichtung neuer Browser/Devices und/oder Internet-Anbindungen die betroffenen Messungen zunächst nicht in der CSI-Berechnung berücksichtigt. Erst wenn der neuen Kombination ein Gewichtungs-Faktor zugewiesen wurde, gehen die neuen Mess-Ergebnisse auch in die Berechnung ein."		Epic	OpenSpeedMonitor	17/Apr/15 10:21 AM	19/Jan/17 10:24 AM																																																																				

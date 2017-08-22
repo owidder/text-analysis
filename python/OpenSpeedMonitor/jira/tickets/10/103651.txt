@@ -1,0 +1,5 @@
+Adapt REST-API on server	"Technical Architecture to be defined:
+
+* How to deal with REST-requests which are not authenticated? (anonymous authentication?)"	103469	Sub-task	iteraplan Speedbird	23/Nov/16 1:48 PM	19/Dec/16 6:06 PM														"19/Dec/16 6:06 PM;ants;Review done:
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-242"																																																						

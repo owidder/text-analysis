@@ -1,0 +1,5 @@
+Visualisierung der Merkmale/Merkmalsgruppen in der GUI	"Auf der GUI sollen die Merkmale und Merkmalsgruppen dargestellt werden
+
+
+
+Offen: Darstellung wie?"	82751	Sub-task	EAM-Visualisierung	02/May/16 1:46 PM																																																																					

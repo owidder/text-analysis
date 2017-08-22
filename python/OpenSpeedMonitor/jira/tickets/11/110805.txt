@@ -1,0 +1,27 @@
+Change from classic client to interactive client problem with IE 11 / 10	"Reproduce with a fresh installation of iteraplan (trunk)
+
+
+
+# Start the tomcat server
+
+# Open iteraplan
+
+# Change in the tab ""ADMINISTRATION""
+
+# Click on ""SHOW IN CLASSIC CLIENT"" 
+
+# When the classic client was loaded, click on ""Administration"" and ""Configuration""
+
+# The login screen opens from the interactive client 
+
+
+
+It is only on the first change from classic to interactiv, after that the transfer is ok. 
+
+
+
+Expected: No login when the user changes from classic to interactive
+
+Actual: In the IE a login screen appears by the change from classic to interactive"		Bug	iteraplan PO	04/Feb/17 10:11 AM	09/Feb/17 9:59 AM														04/Feb/17 11:32 AM;cst;The problem also appeared on the LDAP installation 	07/Feb/17 1:44 PM;mada;Doesn't reproduce on trunk, 26763 revision	"08/Feb/17 12:47 PM;cst;It is still reproducible on this machine with the actual trunk.
+
+@reviewer: Please check if you can reproduce it."	09/Feb/17 9:59 AM;sfe;Cannot reproduce in my environment, either.																																																			

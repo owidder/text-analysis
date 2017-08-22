@@ -1,0 +1,53 @@
+Color by cost, continuous coloring	"Add an interaction to the outer and inner boxes to set the background color according to a numeric value of a property, for example ""cost"" and ""strategic value"".
+
+(0) The system shows a nesting cluster diagram with some coloring, either static by architecture domain, or dynamic by complexity or status.
+
+(1) The user clicks on the box (outer or inner).
+
+(2) The system displays a context menu with (in addition to existing entries) a group with
+* show complexity as color
+* show strategic value as color
+
+(3) The user clicks ""... complexity ..."" 
+
+(4) The system changes the background color of all boxes (inner or outer, depending on (1)), to a color from the default color swatch.
+
+The default color swatch is a sequence of 8 colors, starting at green and going to red. Fine design later with Tanya.
+The value of an element is normalized to the range [minimum to maximum], and then the color is selected from the swatch.
+
+Example: if the minimum of the cost property is 100 and the maximum is 1100, and on element has a cost of 500, then the normalized value is
+(500 - 100) / (1100 - 100) * 100 = 40, on range from 0 to 100. 40 falls into the field for 37,5 to 50, that is the fourth field.
+The min and max are computed over all IS in the diagram, that is not all elements in the data, but only after filtering.
+
+
+Variants/additions, still in the scope of this ticket:
+
+(a) Other property, strategic  value: same with different property.
+
+(b) Use different swatch: 
+If the diagram uses a continous coloring, the context menu has entries:
+* colors from light to dark blue
+* colors from green to blue
+
+If the user selects one of these items, the background colors change, and the items change, so that the old coloring is displayed, and the current coloring is no longer displayed.
+
+(c) Flip swatch
+If the diagram uses a continuous coloring from green to red, the context menu has the entry:
+* flip colors: from red to green
+
+If selected, the system changes the colors (and the flip entry)
+
+Note that the flip entry is always for the current coloring.
+
+
+Later we may show the colors as colors and not only as words in the context menu, but not now in the scope of this ticket.
+"		New Feature	iteraplan PO	13/Aug/14 2:11 PM	29/Sep/14 10:06 AM														14/Aug/14 8:48 AM;sepr;RE 2 PD	"14/Aug/14 9:35 AM;wfr;subtasks reasonable, OK
+
+Note: I will have a look at the substask in the future, 
+BUT I would not comment on them, or ""sign off"" on the decomposition.
+I will raise my hand if  I find something strange, that might be the result of a misunderstanding.
+But in the regular ""OK"" case, I will not write a comment.
+
+So this means, that Sergii has not to wait for my comment, or that he could re-arrange the subtasks if he finds a better way to organize them.
+
+I will mention that in the ""formal planning meeting 2""  "	29/Sep/14 10:06 AM;fka;Flip colors will be implemented seperately																																																				

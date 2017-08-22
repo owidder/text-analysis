@@ -1,0 +1,63 @@
+Home Screen	"Home Screen in the new Client with three separate pages. A forth page regarding saved reports/visualisations & user profile will follow later.
+
+
+
+Page one, left most page:
+
+""Model""
+
+Prio 1: One tile per BBT arranged like the former start screen in a 4 row by 5 column grid without lines for relations. background color according to domain. See sketch 1 for details of the layout. Extra tiles for iteraQL and export/import in the bottom right corner. See sketch 2 for layout of an individual tile. Use cuurent NC icons. Each BBT links to the current BBT list screen. 
+
+Prio 2: Raise/Highlight via relations connected tiles when mouse over a tile.
+
+
+
+Page two, middle page:
+
+""Visualize & Report""
+
+See sketch 3. Page combines former visualisation and report entries. Use icons from NC as far as they are available.
+
+
+
+Pgae three, right most page:
+
+""Administration""
+
+See sketch 4.
+
+
+
+General layout of the application: Only small changes, discard the footer amongst others. See sketch 5 for details.
+
+ 
+
+
+
+"		Improvement	iteraplan PO	07/Apr/16 7:15 AM	27/Apr/16 2:22 PM														20/Apr/16 2:45 PM;tgo;Put on hold as [~wfr] is currently sick and no one else can take over.	"26/Apr/16 4:52 PM;wfr;OK for 5.2, still room for:
+
+
+
+* more reactive layout
+
+* extra icon for custom dashboard
+
+* more structure on visualize/report tab, two groups
+
+* factoring out of common features of data and diagram/referral tiles
+
+* refactoring of css
+
+* unit tests for JS classes and angular components
+
+* cleanup of dead code (JS, CSS, templates)
+
+* JSDoc
+
+* one file per class or component
+
+* adding ids to top level elements for E2E testing
+
+* more color for tiles on second tab
+
+* exclude tiles referring to server screens according to permissions"	26/Apr/16 4:53 PM;wfr;and more transitions for hover/rollover color changes and raising/lowering with shadows 	26/Apr/16 5:00 PM;wfr;as above, still things to do, but works as designed and pared down.	26/Apr/16 5:05 PM;pzi;Not all Texts are resolved, see ITERAPLAN-4527	27/Apr/16 2:22 PM;tam;Reviewed and created a follow-up ticket ITERAPLAN-4537																																																	

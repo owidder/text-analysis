@@ -1,0 +1,109 @@
+Nach Import: Metamodell in "invalid state"	"Beim Import in iteraplan Version 5.4 erscheint folgende Fehlermeldung:
+
+
+
+[WARN ] 15-Dec-2016 08:44:55 [elasticmi.read.InterfaceInformationFlowConsistencyValidator] Can't build instance of this validator, because not all required types are available.
+
+[WARN ] 15-Dec-2016 08:44:55 [elasticmi.read.InterfaceInformationFlowConsistencyValidator] Can't perform model validation! The metamodel is in invalid state for this validator.
+
+[ERROR] 15-Dec-2016 08:45:04 [exchange.elasticImport.ImportProcessManager] Error executing import step.
+
+java.util.concurrent.ExecutionException: java.lang.StackOverflowError
+
+    at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+
+    at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+
+    at de.iteratec.iteraplan.businesslogic.exchange.elasticImport.ImportProcessManager.extractStepResult(ImportProcessManager.java:141)
+
+    at de.iteratec.iteraplan.presentation.dialog.ExcelImport.ImportFrontendServiceImpl.updateImportSteps(ImportFrontendServiceImpl.java:113)
+
+........
+
+"		Fault	iteraplan Support	19/Dec/16 1:33 PM	12/Jan/17 8:49 AM														"19/Dec/16 1:38 PM;cst;Sehr geehrter Herr Wortmann,
+
+
+
+vielen Dank für Ihre Anfrage.
+
+Wir haben in Ihrem Namen dieses Support-Ticket angelegt. Würden Sie bitten überprüfen, ob wir den Sachverhalt richtig erfasst haben? Falls ja, würden Sie bitte die Beschreibung um das aktuelle Fehlerbild ergänzen?
+
+
+
+Ein kleiner Hinweis am Rande: Der ""invalide State"" des Metamodells lässt sich durch die Aktion ""Clear Cache"" unter Administration\Konfiguration zurücksetzen.
+
+
+
+Vielen Dank für Ihre Mitarbeit
+
+
+
+Christoph Stangl - iteraplan Support"	"28/Dec/16 10:16 AM;fka;Hallo Herr Wortmann,
+
+für die Analyse wäre es sehr hilfreich, wenn wir die komplette Fehlermeldung (iteraplan Log-File) erhalten könnten. Die ersten 8 Zeilen lassen leider noch keinen Rückschluss auf die Ursache zu.
+
+Interessant für uns wäre auch: Wurde bei dem Import die Option ""Metamodelländerungen übernehmen"" gewählt?
+
+Vielen Dank & beste Grüße
+Fabian Kainzinger"	"10/Jan/17 2:31 PM;wolfgang.wortmann@zeiss.com;Ein gutes neues Jahr wünsche ich Ihnen!
+Im Anhang finden Sie das Log-File zum Abbruch von MCON. Ich hoffe, das hilft weiter...
+Viele Grüße
+Wolfgang Wortmann 
+
+[^Zeiss-iteraplan-live-logs.zip] _(7 kB)_"	"10/Jan/17 2:42 PM;cst;Hallo Herr Stangl,
+hallo Herr Kainzinger,
+
+Ein gutes, gesundes neues Jahr.
+Ich habe keine Option zur Änderung des Metamodells angegeben…
+
+Mit freundlichen Grüßen / With kind regards
+Wolfgang Wortmann
+"	"11/Jan/17 1:54 PM;cst;Hallo Herr Wortmann,
+
+
+
+vielen Dank für die Zusendung der Log-Dateien.
+
+
+
+Würden Sie uns bitte zur weiteren Analyse die ""System Info“ über „Administration“ und Konfiguration an das Ticket mit anhängen. 
+
+Oben wird beschrieben es handelt sich um eine Version 5.4, aber in den Logs ist von Version 5.1 die Rede.
+
+
+
+Welche Version ist jetzt genau installiert und aus welcher Version wurde der Excel-Export getätigt. 
+
+
+
+Wie gehen Sie vor, das der Fehler bei Ihnen auftaucht?  z.B. Öffnen von iteraplan und dann direkt die Ausführung des Excel Imports? 
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support"	"11/Jan/17 3:45 PM;wolfgang.wortmann@zeiss.com;Hallo Herr Stangl, das Problem tritt in der in Produktions-Instanz Version v5.1.0-r25160 auf. Daneben haben wir auch noch eine Test-Instanz (QA) auf Version v5.4.0-r26432.
+Die Daten beziehen sich aber auf die Produktion
+
+[^ProblemReport_2017-01-11_154427.zip] _(6 kB)_"	11/Jan/17 3:47 PM;wolfgang.wortmann@zeiss.com;Die System Info habe ich angehängt, wie sende ich Ihnen die Konfiguration? Das System ist bei MCon gehostet, ich habe keinerlei Zugriff auf den Server	"11/Jan/17 3:53 PM;wolfgang.wortmann@zeiss.com;Beim Massenimport habe ich nur partiell Projekte laden wollen mit der Einstellung 'Konservativ'. Die Upload-Datei habe ich Ihnen angehängt. Ab Zeile 1460 werden neue Projekte hinzugefügt, davon werden einige Werte verändert.
+
+[^iteraplanImportProjects V1.xlsx] _(359 kB)_"	11/Jan/17 3:57 PM;wolfgang.wortmann@zeiss.com;Hallo Herr Stangl, meinten Sie mit der Aktion 'Clear Cache' den Menüpunkt Administration->Konfiguration->Datenbank-Cache 'Cache leeren'? 	"11/Jan/17 5:51 PM;wolfgang.wortmann@zeiss.com;Hallo Herr Stangl, ich hab nach längerem Suchen den Fehler gefunden: in der Import-Datei, die durch ein von Herrn Albersmann entwickeltes Scripting erzeugt wurde, wird ein Parent-Projekt referenziert, dass es mit diesem Namen nicht gibt (führende Null wird unterdrückt, da Excel eine Zahl anstatt einem Text daraus als Format macht).
+Als Anregung sollte in so einem Fall aber wenigstens eine Fehlermeldung erzeugt werden, die darauf hinweist, dass das Parent-Projekt so nicht existiert oder zumindest die Zeile der Excel-Datei ausgibt, wo das Problem liegt, ansonsten muss der Anwender lange suchen.
+Damit kann der Case geschlossen werden, ich möchte aber darauf bestehen, dass in diesem Fall eine aussagekräftige Fehlermeldung erzeugt wird.
+Vielen Dank!"	"12/Jan/17 8:49 AM;cst;Guten Morgen Herr Wortmann,
+
+
+
+vielen Dank für Ihren Hinweis. 
+
+Habe dies für zukünftigen Versionen mit aufgenommen, das hier eine Fehler/Hinweismeldung auftaucht. 
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support "																																												

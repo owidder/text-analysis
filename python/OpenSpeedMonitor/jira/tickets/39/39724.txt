@@ -1,0 +1,11 @@
+Lesen der Events aus der DB in einen eigenen Service auslagern	"Mit Lösungsweg meinst Du die folgende Funktion, nehme ich an?
+
+ de.iteratec.osm.csi.CsiDashboardController#fillWithAnnotations
+
+
+
+Folgendes hierzu:
+
+ Diese Methode, oder zumindest das Lesen der Events aus der DB würde ich gerne in einen eigenen Service auslagern: de.iteratec.osm.report.chart.EventDaoService oder sowas. Den Code wirst Du auch für das EventResultDashboard wieder benötigen. "	38318	Sub-task	OpenSpeedMonitor	05/May/15 4:48 PM	12/May/15 1:06 PM														"12/May/15 1:06 PM;bwo;Das Laden der Events wurde in den EventService verschoben.
+
+Dabei habe ich auch alle Methoden aus dem EventController so modifiziert, dass sämtliche Datenbankoperationen von dem neuen Service ausgeführt werden."																																																						

@@ -1,0 +1,12 @@
+Deep Links to Building Blocks should also contain the current view	"If a link to a Building Block is provided for example via email, this link does not contain the current view of this building block. View refers to the available tabs (Hierarchy, Relations, Attributes, ...) for this building block. 
+
+Scope of this ticket is to implement this behavior, so that a specific view can be displayed if the link to an building block is opened. 
+
+*Solution:* Add an parameter to the URL of an building block which opens the specific view. Be aware of if a user with privileged rights sends an link to an unprivileged user and this user doesn't have the rights to show this view. In this case, the ""default"" view (the hierarchy tab) should be displayed. 
+
+The folding/unfolding of the single groups (for example attribute groups) is not scope of this ticket and should *not* be implemented. "		New Feature	iteraplan PO	04/Aug/14 2:57 PM	02/Sep/14 3:06 PM														"28/Aug/14 4:23 PM;fam;Implemented.
+Manual tests had been successful (links, permissions and default config is working)."	29/Aug/14 1:16 PM;fam;Added Selenium Test	"01/Sep/14 12:57 PM;dop;Review:
+
+* More selenium tests (e.g. some negativ tests like TabView could not be set because of missing privileges or Tab does not exist anymore?). Ask [~fka] first. 
+* Prettify the formats of the *flow.xml files for better readability
+* Add some comments in TabgroupTag.java, especially in the case in which the activeTab is set (lines 121 - 135)"																																																				

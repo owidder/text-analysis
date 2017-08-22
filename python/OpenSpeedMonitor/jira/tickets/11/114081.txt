@@ -1,0 +1,65 @@
+Create new page "Export/Import" UI (Client)	"*Summary:*
+
+Create the User Interface of the new ""Export/Import""-screen
+
+
+
+*Details:*
+
+* no functionality - just UI
+
+* Export on the left half of the screen - Import on the right half
+
+
+
+Export:
+
+* Excel and XMI-Format
+
+* Metamodel and Datamodel
+
+* Switch between Full and Partial Export
+
+* If partial switch is active, activate iteraQl-filter (default deactivated)
+
+* ""iteraQL filter"": text input field with description afterwards
+
+* Show always description: ""Example: @costs  > 1000 \n (see documentation)"" / GER:  ""Beispiel: @costs  > 1000 \n (siehe Dokumentation)"" - Link to https://doc.iteraplan.de/pages/viewpage.action?pageId=8685564
+
+
+
+Import:
+
+* 3 import strategies (incl. description) as bullets (no dropdown)
+
+* Include metamodel changes as on-off-switch
+
+* Upload-file as dialog like in reactor
+
+
+
+Import-Progress:
+
+* Show progress on the bottom of this screen instead of a second screen
+
+* Show info-message about user and strategy
+
+* Show filename and timestamp
+
+* Show all 5 stages and actual status of the stages
+
+* ""Cancel"" and ""Next"" buttons (back to Export/Import main page is not needed anymore)
+
+* Show progress-bar in step 5
+
+* Show information log on bottom
+
+
+
+
+
+Busy-Screen:
+
+* If an import started by *another* user is running, please show a busy message only for the import part of the page and the name of the user
+
+* Show alert message ""Currently an import is running started by <USERNAME>. You can't start a new one."" \ German: ""Im Moment läuft ein Import, der von <USERNAME> angestoßen wurde. Sie können derzeit keinen neuen beginnen."""		New Feature	iteraplan Speedbird	07/Mar/17 11:25 AM	24/Apr/17 1:59 PM														06/Apr/17 10:45 PM;mash;Review is done, few comments are here: https://iteraweb.iteratec.de/fisheye/cru/IP-487	10/Apr/17 9:51 AM;dmkh;In addition to the code review: [~viol], please, replace constants out from the scope ({{[exportImportController.js|https://iteraweb.iteratec.de/fisheye/browse/iteraplan-9/trunk/app/js/exportImport/exportImportController.js?r=6380]}}) to {{constants.js}}.	20/Apr/17 10:37 AM;dmkh;Review is done, new comments are here: https://iteraweb.iteratec.de/fisheye/cru/IP-514																																																				

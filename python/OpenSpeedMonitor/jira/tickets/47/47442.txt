@@ -1,0 +1,9 @@
+Changing date using keyboard doesn't work properly	"Changing date using keyboard and not the date picker widget doesn't work properly.
+
+Everytime user changes a single character in a date, the date input field loses the focus.
+
+The only way to change other characters is to click the date input field again for every single change.
+
+Steps to reproduce:
+- Select for example an information system and press ""Edit""
+- Click the productive date field and start to change the date using keyboard"		Bug	iteraplan PO	24/Feb/15 2:35 PM	02/Mar/15 11:25 AM					gui																																																															

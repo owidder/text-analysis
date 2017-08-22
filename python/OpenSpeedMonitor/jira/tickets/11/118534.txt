@@ -1,0 +1,33 @@
+Attribute - Responsibility Attribute -  Cannot be created 	"Reproduce with trunk
+
+ # Open ""Administration"" and ""Attributes""
+
+ # Create a ""Responsibility Attribute""
+
+ # Edit the Name to ""Test"" 
+
+ # Click on ""NEW"" - the green row appears
+
+ # Choose the ""Name"" - ""Change the color"" and ""Save""
+
+ # Nothing happens and a error appears in the browser console 
+
+
+
+SCRIPT5007: Die Eigenschaft ""map"" eines undefinierten oder Nullverweises kann nicht abgerufen werden.
+
+attributesDetail-controller.js (214,13)
+
+
+
+
+
+
+
+When you click on the button ""Back to List"" the ""Attribute"" will created corrupt and the list view of the Attributes is broken too. After restart the tomcat server no login is possible. 
+
+
+
+Expected: That you can create ""Responsibility"" attribute
+
+Actual: The save of an ""Responsibility"" attribute crashes the software"		Bug	iteraplan Speedbird	12/Apr/17 1:17 PM	22/May/17 3:59 PM														21/Apr/17 4:43 PM;fka;Could not reproduce error because of ITERAPLAN-5209	27/Apr/17 3:17 PM;dmkh;Review is done, one comment is here: https://iteraweb.iteratec.de/fisheye/cru/IP-549#general-comments	08/May/17 6:37 PM;anhv;Review is done, one comment is here: https://iteraweb.iteratec.de/fisheye/cru/IP-592#general-comments	17/May/17 10:54 AM;mash;Additionally next defect was fixed: added handling for literal name uniqueness when creating new attribute and adding more than 1 literal with the same name																																																			

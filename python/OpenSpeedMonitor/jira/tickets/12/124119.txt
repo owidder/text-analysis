@@ -1,0 +1,133 @@
+Backend (incl. REST-API) for corporate design	"*Summary*
+
+
+
+Create back-end-functionality (incl. REST-API) for corporate design tab in customizing
+
+
+
+*Details*
+
+ * permission handling: described in ticket IPTS-980
+
+ * url: /api/administration/customizingcd
+
+ * GET, PUT
+
+ * Use HEX-format for the color codes
+
+
+
+{code:java}
+
+{
+
+""companyLogo"": ""default"" or ""picture-url"", (ONLY GET)
+
+""favIcon"": ""default"" or ""picture-url"", (ONLY GET)
+
+""colors"": 
+
+{
+
+""menuBar"": ""colorCode"",
+
+""actionButton"": {
+
+""background"": ""colorCode"",
+
+""text"":  ""colorCode""}
+
+""defaultButton"": {
+
+""background"":  ""colorCode"",
+
+""text"":  ""colorCode""}
+
+""primaryTextButton"": {
+
+""background"":  ""colorCode"",
+
+""text"":  ""colorCode""}
+
+""secondaryTextButton"": {
+
+""background"":  ""colorCode"",
+
+""text"":  ""colorCode""}
+
+""background"":  ""colorCode"",
+
+""link"":  ""colorCode"",
+
+""linkActive"":  ""colorCode"",
+
+""tableHeader"":  ""colorCode"",
+
+""tableBackground"":  ""colorCode"",
+
+""toolareaBackgroundInDiagramView"":  ""colorCode"",
+
+}
+
+""startScreenColors"":
+
+{
+
+""businessGroup"":  ""colorCode"",
+
+""itGroup"":  ""colorCode"",
+
+""technicalGroup"":  ""colorCode"",
+
+""projectGroup"":  ""colorCode"",
+
+""visualize"":  ""colorCode"",
+
+""report"":  ""colorCode"",
+
+""administration"":  ""colorCode"",
+
+}
+
+""visualisationSchemes"":
+
+[
+
+{
+
+""englishSchemeName"": STRING,
+
+""germanSchemeName"": STRING,
+
+""minColor"": colorCode,
+
+""maxColor"": colorCode,
+
+""undefinedColor"": colorCode
+
+},
+
+{
+
+""englishSchemeName"": STRING,
+
+""germanSchemeName"": STRING,
+
+""minColor"": colorCode,
+
+""maxColor"": colorCode,
+
+""undefinedColor"": colorCode
+
+},
+
+{...}
+
+]
+
+{code}"		New Feature	iteraplan Speedbird	12/Jun/17 1:44 PM	17/Jul/17 6:35 PM														"13/Jul/17 1:43 PM;roia;[~msr], question: could you please clarify in the description what are ""actionButton"", ""defaultButton"", ""primaryTextButton"", ""secondaryTextButton"" and the other options. The best would be a screenshot of some of current pages with arrow-pointers, what parts should be colored by the properties above.
+
+
+
+Another question: currently tiles have 2 different background colors: one for normal view and another one when mouse is hovered over the tile. Should both that colors be configurable by user, of we should use some other tile highlighting effect (e.g. box-shadow, etc...)?"	17/Jul/17 12:55 PM;msr;[~roia]: Let's move the discussion to the frontend-ticket IPTS-874	17/Jul/17 6:35 PM;mash;Review is done																																																				

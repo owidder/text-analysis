@@ -1,0 +1,3 @@
+Anzeigen von rejected wpt tests	"Wenn Tests vom Wpt-Server zurückgewiesen werden (bspw. mit 'unknown connectivity') gibt es keine test-id (Gab ja auch kein Test).
+
+Trotzdem wird eine (zufällige?) abgespeichert, die auf der FailedJobResults-View zu falscher Verlinkung führt."		Bug	OpenSpeedMonitor	13/Feb/17 9:50 AM																																																																					

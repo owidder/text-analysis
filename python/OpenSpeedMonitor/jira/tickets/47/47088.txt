@@ -1,0 +1,6 @@
+Excel-Import: Changes not recognized	"1)
+In TC4 modified instances are not recognized as changes.
+2)
+In TC5 the assumed failure ""unapplicable business domain type"" does not occure as assumed. Metamodel check should show error message
+
+Check Attachment"		Bug	iteraplan PO	23/Oct/14 4:29 PM	27/Oct/14 10:43 AM														23/Oct/14 4:35 PM;fam;Error recognized during Test-Ticket	24/Oct/14 10:53 AM;sfe;These are most likely issues due to out-of-date testcases.	27/Oct/14 10:42 AM;fam;New TC4 checked, and TC5 partial too. Refactoring is okey.																																																				

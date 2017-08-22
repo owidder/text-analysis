@@ -1,0 +1,19 @@
+Back Button of Filter Configuration Page does not revert changes	"The back button of a filter configuration page does not revert the changes made to the page since it was opened, i.e. the button does not have a 'Cancel' semantics. This can result in unexpected behaviuor, for example in the Landscape and Nesting Cluster Diagrams.
+
+To reproduce in the Landscape Diagram:
+1. Start configuring a new Landscape Diagram and select Information Systems as content.
+2. Navigate to the filter page for the content elements.
+3. Execute an arbitrary query which has some results and confirm the selection.
+4. On the main configuration page of the Landscape Diagram click the filter button again.
+5. In the filter page click the reset button. The query is reverted and no results are selected.
+6. Click the back button.
+Result: The main configuration page is displayed and a warning is shown, informing the user that no content elements have been selected.
+Expected Behaviuor: The modified query is reverted and the user is navigated to the main configuration page of the Landscape Diagram with the selection made in step 3.
+
+To reproduce in the Nesting Cluster Diagram (NCG):
+1. Select arbitrary outer and inner types.
+2. Navigate to the filter page for either the outer or the inner type.
+3. Make some non-empty selection and confirm.
+4. On the NCG main page navigate to the filter page again.
+5. Reset the query and click the back button.
+Result: The main configuration of the NCG still assumes that no change has been made to the selection and displays the results of the query made in step 3. If the diagram is generated, this results in a behaviuor such as the one described in ITERAPLAN-1967."		Bug	iteraplan PO	07/Oct/13 6:51 PM	30/Dec/15 3:34 PM					back	cancel	filtering	revert																																																												

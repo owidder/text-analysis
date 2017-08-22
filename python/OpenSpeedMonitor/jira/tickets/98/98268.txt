@@ -1,0 +1,11 @@
+Secrets und Passwörter überall in der UI maskieren	"Aktuell tun wir das für einige Secrets (z.B. OSM-User-PW, Basic Auth Passwort für Jobs), nicht aber für 
+
+* ApiKeys für OSM und OsmDetailService
+
+* ApiKeys für WptServer
+
+* Weitere ??? "		Task	OpenSpeedMonitor	06/Oct/16 12:10 AM	25/Oct/16 4:29 PM														"25/Oct/16 4:29 PM;msk;Es macht keinen Sinn die Api-Keys zu verstecken, dann kann man sie nicht ermitteln um sie in anderen Anwendungen zu verwenden.
+
+
+
+Das Passwort im Passwortfeld in User wird jetzt aber durch Sternchen ersetzt."																																																						

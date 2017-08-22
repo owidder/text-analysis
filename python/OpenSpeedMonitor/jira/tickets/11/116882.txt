@@ -1,0 +1,45 @@
+Unzureichende Fehlermeldung in Abfragekonsole im interaktiven Client	"Das folgende iterQL ist in unserer (Test)Installation ungültig, da der Aufzählungstyp Planungsjahr keine Element ""2017"" enthält:
+
+Project[@Planungsjahr=2017 & @Zuständiger Architekt =""Christian Schweer""];
+
+
+
+Die Abfragekonsole im interaktiven Client erzeugt hier keine vernünftige Fehlermeldung. 
+
+Die Abfragekonsole im klassischen Client gibt die korrekte Fehlermeldung ""The enumeration type de.iteratec.iteraplan.model.attribute.EnumAT.Planungsjahr does not have a literal identifiable through 2017""
+
+
+
+Erwartetes Verhalten:
+
+Die Abfragekonsole im interaktiven Client erzeugt die Fehlermeldung ""The enumeration type de.iteratec.iteraplan.model.attribute.EnumAT.Planungsjahr does not have a literal identifiable through 2017""
+
+
+
+Tatsächliches Verhalten:
+
+Die Abfragekonsole im interaktiven Client erzeugt die Fehlermeldung ""Internal Server Error 500"" (siehe Screenshot). Die korrekte Fehlermeldung ist nur in den Serverlogs zu finden."		Fault	iteraplan Support	28/Mar/17 4:19 PM	30/Mar/17 6:21 PM														"28/Mar/17 4:19 PM;CSchweer@VHV.de;
+
+!grafik.png|thumbnail!"	"30/Mar/17 6:21 PM;cst;Sehr geehrter Herr Schweer,
+
+
+
+danke für das Feedback.
+
+
+
+dies werden wir für den nächsten Releases prüfen.
+
+Ich habe hierfür ein Bug-Ticket aufgemacht. 
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support
+
+
+
+ "																																																					

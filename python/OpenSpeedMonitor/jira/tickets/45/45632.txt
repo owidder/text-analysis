@@ -1,0 +1,13 @@
+Cannot import Excel when there is a blank in the Release Number of an IS	"Rename the Release Number of an exisiting IS to something like "" Cloud"". Important is the blank as the first character.
+
+Export the model to Excel.
+
+Import it again.
+
+-> ERROR. 
+
+Guess: the whitespace is internally trimmed on some occasions.
+
+*Expected behaviour*: The application does not allow to save release identifier with leading or trailing (white)spaces. The are automatically trimmed, e.g. during import or via the web UI."		Bug	iteraplan PO	05/Mar/13 11:26 AM	05/Apr/13 12:09 PM					3.0.5-candidate	release	version	whitespace						"06/Mar/13 2:00 PM;sfe;The importer should be able to handle the described case. This is handled in ITERAPLAN-1445.
+
+However, the version of a release (Information System Release and Technical Component Release) should not be saved with trailing or leading whitespace either, but trimmed before written to the database, similar to how names are treated."	05/Apr/13 12:09 PM;gph;Reproduced the error in 3.0.x. Now it is gone, leading spaces are trimmed in IS & TC.																																																					

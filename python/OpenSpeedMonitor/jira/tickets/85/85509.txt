@@ -1,0 +1,13 @@
+Heap-Dump auswerten	"Das ziehen eines Heap Dumps der abgeschmierten tomcat-JVM mittels jmap ist mit einer Exception abgebrochen, weil es mit dem openjdk nicht wirklich zusammenarbeiten wollte. Trotzdem ist ein heap-dump von 16MB entstanden.
+
+Wir sollten einmal reinsehen, ob man damit etwas anfangen kann.
+
+
+
+Der Dump liegt hier in der owncloud: https://owncloud.hh.iteratec.de/s/Z1fDZXuwH7AW1uT"		Task	OpenSpeedMonitor	26/May/16 5:05 PM	08/Jun/16 4:57 PM														"30/May/16 1:50 PM;msk;Ich hab mir das mal mit jhat(Teil des JDK) angeschaut. Da waren keinerlei Infos zu finden. Es waren nur 3 Klassen geladen (String, Class, ClassLoader) und angeblich alles in allem 0 MB HeapSpace belegt.
+
+Auch [MAT|https://eclipse.org/mat/snapshotBuilds.php], ein auf Eclipse basierenden Analyseprogramm genau für sowas konnte mit dem Dump nichts anfange. MAT war der Ansicht, dass das File korrupt ist.
+
+
+
+Esi gibt [hier|https://www.holisticon.de/2014/01/java-heap-dump-analyse/] einen ganze netten Artikel zum Thema Heap.Dump-Analyse."																																																						

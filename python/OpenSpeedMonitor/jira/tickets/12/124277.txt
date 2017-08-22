@@ -1,0 +1,17 @@
+Information Flow Diagram (Testlink) {Browser: Firefox}		124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:17 PM	19/Jun/17 2:34 PM														"15/Jun/17 9:25 PM;naba;Test cases: Diagrams/ Information Flow Diagram ip-75, 82
+
+ For smoke test please use
+
+https://doc.iteraplan.de/display/iteraplan60/Information+Flow+Diagram (examples and tips)
+
+
+
+Please be creative and progressive.
+
+
+
+*Note*:
+
+ - Work with documentation is still in progress
+
+ - Due to some technical issues some test cases are still out of date."	19/Jun/17 2:34 PM;vadm;During testing was found one bug https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-5405																																																					

@@ -1,0 +1,3 @@
+Fehlende Tests	WeeklyReportsJobSpec, HourlyReportsJobSpec und DailyReportsJobSpec haben bereits Testklassen, diese sind jedoch noch leer. Seit Grails 3.1 führt das zu Fehlern. Auch unabhängig davon sollten die Tests noch implementiert werden.		Bug	OpenSpeedMonitor	14/Apr/16 2:43 PM	23/May/16 11:17 AM														"18/May/16 5:43 PM;nku;Testklsassen löschen. Wir machen ein Ticket auf für das Testen der Graphite-Funktionalität auf.
+
+"	23/May/16 11:17 AM;bka;Tests wurden gelöscht und es gibt nun ein Ticket, dass wir die tEsts noch erstellen müssen: IT-1110																																																					

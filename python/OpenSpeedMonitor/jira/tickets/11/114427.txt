@@ -1,0 +1,45 @@
+Singel Element Edit - Numeric field shows the false 	"Reproduce with trunk
+
+ # Open the list view for ""Information Systems""
+
+ # Open the single element view of eg ""Intranet # 2.0""
+
+ # Then open the edit dialog for costs 
+
+ # Enter the value ""500.30""
+
+ # Change the language to ""Deutsch""
+
+ # Now the costs are ""500,00"" 
+
+
+
+When you check it in the list view, the value is correct.
+
+
+
+Expected: The costs are ""500,30""
+
+Actual: The costs will be shown as ""500,00"""		Bug	iteraplan Speedbird	09/Mar/17 1:43 PM	04/May/17 5:08 PM														29/Mar/17 11:45 AM;vadm;[~msr], [~cst], this defect is not reproducible with trunk.	"03/May/17 10:56 AM;cst;At the current trunk the problem is still the same but it is a other way to reproduce:
+
+ # Open the list view for ""Information Systems""
+
+ # Open the single element view of eg ""Intranet # 2.0""
+
+ # Then open the edit dialog for costs 
+
+ # Enter the value ""500.30""
+
+ # Change the language to ""Deutsch""
+
+ # Now the costs are ""500,30"" 
+
+ # Open the edit dialog and push the enter key
+
+ # The value changes to 5003,00 and cannot be edited anymore 
+
+ # When you change to english, it is possible to change the value of the field costs 
+
+
+
+ "																																																					

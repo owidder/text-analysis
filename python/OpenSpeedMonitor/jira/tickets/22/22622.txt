@@ -1,0 +1,35 @@
+ConcurrentModificationException in ZAPs httpsessions extension	"Dieser Fehler tauchte auf dem OTTO Server auf. Der Scan bricht dadurch jedoch nicht ab. Könnte das mit den Timeout problemen beim HTTP aufruf zu tun haben?
+
+
+
+
+
+31731 [ZAP-ProxyThread-939] ERROR org.parosproxy.paros.network.HttpSender  -
+
+java.util.ConcurrentModificationException
+
+        at java.util.LinkedHashMap$LinkedHashIterator.nextEntry(LinkedHashMap.java:394)
+
+        at java.util.LinkedHashMap$KeyIterator.next(LinkedHashMap.java:405)
+
+        at org.zaproxy.zap.extension.httpsessions.HttpSessionsSite.isSessionNameUnique(Unknown Source)
+
+        at org.zaproxy.zap.extension.httpsessions.HttpSessionsSite.generateUniqueSessionName(Unknown Source)
+
+        at org.zaproxy.zap.extension.httpsessions.HttpSessionsSite.processHttpResponseMessage(Unknown Source)
+
+        at org.zaproxy.zap.extension.httpsessions.ExtensionHttpSessions.onHttpResponseReceive(Unknown Source)
+
+        at org.parosproxy.paros.network.HttpSender.notifyResponseListeners(Unknown Source)
+
+        at org.parosproxy.paros.network.HttpSender.sendAndReceive(Unknown Source)
+
+        at org.parosproxy.paros.network.HttpSender.sendAndReceive(Unknown Source)
+
+        at org.parosproxy.paros.core.proxy.ProxyThread.processHttp(Unknown Source)
+
+        at org.parosproxy.paros.core.proxy.ProxyThread.run(Unknown Source)
+
+        at java.lang.Thread.run(Thread.java:724)
+
+"		Bug	secureCodeBox	17/Oct/14 1:15 PM	21/Aug/16 1:11 PM														21/Aug/16 1:11 PM;rfe;Hat sich inzwischen erledigt durch die neue ZAP µService Implementierung.																																																						

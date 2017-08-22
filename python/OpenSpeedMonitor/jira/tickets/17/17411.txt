@@ -1,0 +1,7 @@
+Datum in der REST-API-Methode resultsbetween mit ausgeben	Für jedes result soll das Ausführungs-Datum des Tests mit ausgegben werden.		Improvement	OpenSpeedMonitor	20/Aug/14 4:01 PM	26/Aug/14 10:39 AM														"26/Aug/14 10:39 AM;nku;Neben dem der executionTime habe ich auch noch die folgenden Attribute mit aufgenommen:
+
+* docCompleteTimeInMillisecs
+
+* numberOfWptRun
+
+* cachedView"																																																						

@@ -1,0 +1,3 @@
+Dynamic validation for edits	"When the user edits a property, the system should validate the current value immediately.
+
+As-is: validate when the user leaves the field (""on blur"")."	47009	Sub-task	iteraplan PO	29/Sep/14 1:02 PM	09/Jun/15 5:05 PM																																																																				

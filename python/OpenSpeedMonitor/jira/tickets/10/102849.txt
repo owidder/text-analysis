@@ -1,0 +1,24 @@
+Zentrales Benutzerfeld	"Wir brauchen immer wieder einen Benutzer oder einen Verantwortlichen für ein IS, TC, etc. .
+
+Im Moment haben wir dafür ein Freitext-Merkmal. Da können die Namen in unterschiedlicher Form eingetragen werden.
+
+Mein Wunsch wäre, wenn ich für diese Anwendung jeweils ein zentrales Merkmalsfeld dazu verwenden könnte. Damit alle Namen immer gleich geschrieben sind und dementsprechend auch ausgewertet werden können.
+
+Danke für die Rückmeldung."		Technical question	iteraplan Support	17/Nov/16 2:59 PM	05/Dec/16 8:43 AM														"18/Nov/16 8:40 AM;msr;Hallo Lothar, hallo Ivan,
+
+Herr Studer hat eine eher fachliche Frage gestellt. Könnt ihr bitte dies übernehmen?
+
+Vielen Dank und ein schönes Wochenende
+
+Marcel"	"21/Nov/16 8:37 AM;cst;Sehr geehrter Herr Studer, 
+
+vielen Dank für Ihre Anfrage.
+
+Wir haben diese Frage an unsere Berater weiter gegeben. 
+Bei Antwort, werden die Kollegen, oder ich Sie umgehend informieren. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	05/Dec/16 8:16 AM;alfred.studer@emmi.com;Ist erledigt	"12/Dec/16 1:36 PM;alfred.studer@emmi.com;Hallo Yvan
+Hab das Ganze, gemäss deinen Angaben umgesetzt. Ich bekomme aber nicht die komplette Liste der Anwender angezeigt, sondern nur die einzelne Anwendergruppe zur Auswahl.
+"																																																			

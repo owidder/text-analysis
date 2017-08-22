@@ -1,0 +1,7 @@
+Rickshaw-Slider rechts nicht "bündig" mit Diagramm	"Auf der rechten Seite endet der Slider nicht bündig mit dem Diagramm, sondern ein Stück weiter links als der rechte Rand des Diagramms.
+
+Links sieht es nach deiner Änderung jetzt gut aus. Der Slider geht, ohne ""Balken zum Anfassen"" genau bis zum linken Rand von Diagramm und Legenden-Box. So sollte es rechts auch aussehen.
+
+
+
+Siehe Screenshot. "		Bug	OpenSpeedMonitor	04/May/15 11:11 PM	05/May/15 2:26 PM														05/May/15 9:36 AM;rkr;Die angehängte Grafik osm_csi_2015-4-22_13-27-27.png ist leer - sollte da etwas drin sein?	05/May/15 12:42 PM;nku;Screenshot hängt an																																																					

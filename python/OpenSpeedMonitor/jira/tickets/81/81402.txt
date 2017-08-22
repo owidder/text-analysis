@@ -1,0 +1,13 @@
+N3CD Filter Remove of all And/Or lines should not be possible	"Reproduction:
+
+1. Go to N3CD diagram
+
+2. Click inner element (InformationSystem)
+
+3. Add new Filter (nothing selected)
+
+4. Click Undo
+
+5. Add new Filter and click X in And/Or line
+
+There is no And/Or line anymore."		Bug	iteraplan PO	21/Apr/16 4:57 PM	22/Apr/16 12:41 PM														22/Apr/16 12:41 PM;sfe;Already fixed with ITERAPLAN-4489																																																						

@@ -1,0 +1,23 @@
+ModelLoader throws exception when running against oracle databases	"ModelLoader throws following exception when iteraplan runs against an oracle database and there are more than 1000 interfaces with at least one transported business object:
+
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:92)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.loader.Loader.doList(Loader.java:2545)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2276)
+	at org.hibernate.loader.Loader.list(Loader.java:2271)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:119)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1716)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:347)
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.ModelLoader$LoadRun.createInfoFlowsForInterfacesWithoutTransports(ModelLoader.java:250)
+
+...
+
+
+[WARN ] 16-Oct-2012 16:58:23 [hibernate.util.JDBCExceptionReporter] SQL Error: 1795, SQLState: 42000
+[ERROR] 16-Oct-2012 16:58:23 [hibernate.util.JDBCExceptionReporter] ORA-01795: maximum number of expressions in a list is 1000
+
+[ERROR] 16-Oct-2012 16:58:23 [exchange.elasticeam.IteraplanMetamodelAndModelLoader] IteraQl model and data loading failed
+de.iteratec.iteraplan.elasticeam.exception.ElasticeamException: IteraQl model and data could not be loaded in iteraplan due to an exception in hibernate: 
+ org.hibernate.exception.SQLGrammarException: could not execute query
+	at de.iteratec.iteraplan.businesslogic.exchange.elasticeam.IteraplanMetamodelAndModelLoader.call(IteraplanMetamodelAndModelLoader.java:110)"		Bug	iteraplan PO	23/Oct/12 2:45 PM	27/Nov/12 1:55 PM					migration									27/Nov/12 1:55 PM;sry;fine																																																						

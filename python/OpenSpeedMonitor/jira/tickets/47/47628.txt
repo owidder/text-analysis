@@ -1,0 +1,2 @@
+Suggestion for Context menu	Summary: Maybe better if "Default line type" appears inside "Border line type" menu instead of Context menu (according to "Coloring options")	47593	Sub-task	iteraplan PO	20/Apr/15 8:40 AM	22/Apr/15 3:53 PM														"20/Apr/15 12:46 PM;dasm;Verified
+(revision 956)"																																																						

@@ -1,0 +1,3 @@
+Entwicklung zu github umziehen	"Ich denke wir sollten direkt auf github umziehen.
+
+Sieht nicht so gut aus, wenn da immer wieder der letzte Commit Wochen zurückliegt obwohl wir fleißig arbeiten."		Epic	OpenSpeedMonitor	27/Jan/16 12:07 PM	19/Jan/17 10:25 AM																																																																				

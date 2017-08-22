@@ -1,0 +1,5 @@
+Menü für CRUD-Controller überabeiten	"Das doppelte Hover-Dropdown Menü um an die CRUD-Controller zu kommen ist nur sehr schwer zu erreichen (wegen Doppel-Hover).
+
+
+
+Dieses Ticket könnte ggf durch IT-1435 überflüssig werden und sollte nur bearbeitet werden, wenn für IT-1435 eine Entscheidung gefällt wurde."		Improvement	OpenSpeedMonitor	19/Dec/16 11:45 AM	18/Jan/17 4:43 PM																																																																				

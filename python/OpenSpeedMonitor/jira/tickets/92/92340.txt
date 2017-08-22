@@ -1,0 +1,55 @@
+Create DB table with DAO	"DB table (generic scheme, so that the db table have not to be altered when an additional feature config has to be saved) with DAO
+
+
+
+and as a starting point read this:
+
+
+
+Table usersettings (working name) has a two-part key and a single value column
+
+
+
+Key:
+
+* user id: String/VARCHAR
+
+* item key: String/VARCHAR
+
+
+
+The payload is in a single column.
+
+Settings: CLOB, or simply a long String
+
+The ""L"" is not really meant, because the settings are JSON objects, maybe a few screen pages long, but not as large as model data.
+
+
+
+NO foreign key constraint on the user ID. We might want to add values for user groups or other default stuff, so that the ID is not bound to be a ""real"" one.
+
+
+
+The DAO has methods for:
+
+* read a single item for given user ID and key
+
+* read all items for a given user ID
+
+* save or add an item for a given user ID and key
+
+
+
+Note that combining all items for a single user into a JSON object is not in the scope of the DAO.
+
+The DAO does not know the structure of the payload.
+
+
+
+In the long run, the table and DAO may not be part of the iteraplan database scheme, but implemented otherwise. So there should be no connections to other tables.
+
+"		New Feature	iteraplan Quickfox	03/Aug/16 2:22 PM	22/Aug/16 2:32 PM														"11/Aug/16 5:49 PM;mwe;See IPTQ-25 and IPTQ-42 as example.
+
+
+
+Migrationscript should be created, too."																																																						

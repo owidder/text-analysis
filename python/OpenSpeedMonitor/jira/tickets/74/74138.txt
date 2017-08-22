@@ -1,0 +1,1 @@
+[UserspecificDashboards] Adjustments checkbox	Jede Checkbox unter den Adjustments wird aktuell ignoriert beim Laden. Sie werden jedoch korrekt gespeichert.		Bug	OpenSpeedMonitor	19/Feb/16 11:45 AM	19/Feb/16 3:16 PM																																																																				

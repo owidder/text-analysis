@@ -1,0 +1,11 @@
+[Integrationstests] Tests in der Klasse ShopCsiServiceIntTests fixen	"Fixen heißt hier:
+
+
+
+* Auf Spock umstellen
+
+* IntegrationSpec als Basisklasse verwenden
+
+* Tests fachlich fixen
+
+* Es sollten keine Exceptions mehr geworfen werden"		Task	OpenSpeedMonitor	30/Mar/16 11:36 AM	30/Mar/16 6:11 PM																																																																				

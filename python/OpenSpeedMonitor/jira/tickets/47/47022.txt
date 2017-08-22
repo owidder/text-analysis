@@ -1,0 +1,14 @@
+Partial import with conservative strategy doesn't delete association objects	"_Reproduce (with sample data):_
+# On iteraplan's Export/Import page, check the ""partial"" checkbox and select Information System as type
+# Download data
+# Modify the data by removing one data row in the Isr2BoAssociation sheet
+# Upload the file with strategy ""Conservative""
+
+_Expected:_ One Isr2BoAssociation deleted, one Information System changed, one Business Object changed
+_Actual:_ No changes. It does, however, work when doing the same in a full import.
+
+_Reason:_
+In {{CUMergeStrategy#isApplicable(DeleteDiff)}}, the method {{existsInRightModel}} is called. The method checks the building blocks connected by the association to delete. If they are present on the right-side (the imported) model, then the deletion is assumed to be intentional, and allowed.
+Since this is a partial import, the business object connected to the association to delete is marked as reference object only, and thus not recognized as ""truly"" present in the right-side model => deletion is not allowed.
+
+This check for {{ObjectExpression#isReferenceOnly}} in method {{existsInRightModel}} is probably there for a reason, so before fixing this issue identify why it is needed and proceed accordingly."		Bug	iteraplan PO	01/Oct/14 8:48 AM	20/Oct/14 11:16 AM					conservative	import																																																														

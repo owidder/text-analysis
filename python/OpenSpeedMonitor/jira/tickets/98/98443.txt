@@ -1,0 +1,23 @@
+AFTER-RELEASE: Borderlines feature is not working after changing row/column association	"*Steps to reproduce:*
+
+1) Open default LSD
+
+2) Set Line type by enumeration property (e.g. Complexity) in the toolarea. Now cells have dashed lines on the border.
+
+3) Change row or column association
+
+
+
+*Current result:*
+
+Legend still show “Line type by” option, but cells are displayed without dashed lines (see second screenshot in attachments)
+
+
+
+*Expected result:*
+
+Cells are displayed with dashed lines, according to their property values.
+
+
+
+Please, ensure that borderlines feature works correct after changing row/column association. If needed - reset this feature if selected ""Line type by"" attribute is not supported for new row/column association."		Bug	iteraplan Speedbird	07/Oct/16 1:41 PM	21/Oct/16 5:49 PM														21/Oct/16 5:48 PM;dmkh;Review is done																																																						

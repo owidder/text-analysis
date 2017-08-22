@@ -1,0 +1,19 @@
+Design a solution for the import of the bank data	"Use SQL statements if possible (check if Blob or Clob are needed in the data, then SQL is not working), if this is not possible use JSON.
+
+
+
+For JSON add a data mapper,or check if there is already something to map JSON to the DB. SQL is probably easier.
+
+
+
+CLOBs are used in:
+
+ * user_settings
+
+ * timeseries
+
+ * saved queries (not in stored queries)
+
+ * dashb_templ
+
+ * application_settings"	125400	Sub-task	iteraplan Thunderduck	27/Jun/17 1:09 PM	28/Jun/17 11:58 AM														27/Jun/17 2:19 PM;aan;TODO: Talk to [~msr] about the tables containing CLOBs and if they are needed for the import.																																																						

@@ -1,0 +1,9 @@
+Fehlberechnung CSI-Aggregationen um 00:00	"Wenn man den Test ""_de.iteratec.osm.csi.CsiSystemMeasuredValueServiceIntegrationSpec#aggregate to 2 daily- and a single weekly-measuredValue if 2 hourlys on different days are existing_"" in der Zeile 269 anhält, kann man in der Datenbank sehen, dass Daily-CsiAggregationen falsch berechnet werden.
+
+
+
+Die Testdaten dort erzeugen Hourly-CsiAggregationen mit der Uhrzeit 00:00. Sobald die Funktion ""_pageMeasuredValueService.getOrCalculatePageMeasuredValues_"" aufgerufen wird, werden die Hourlys zu Dailys aggregiert. Dabei wird allerdings die Hourly-CsiAggregation für jeweils den Tag nach 00:00 sowie dem Tag vor 00:00 verwendet!!!
+
+
+
+Der angehängte Screenshot zeigt wie aus den ehemals 2 Hourly 4(!) Dailys aggregiert werden."		Bug	OpenSpeedMonitor	11/Feb/16 10:44 AM	11/Feb/16 12:22 PM																																																																				

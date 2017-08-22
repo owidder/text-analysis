@@ -1,0 +1,20 @@
+Load Test for History	"Test if the history feature has a negative impact on importing large datasets (as for E-104).
+
+Use a regular iteraplan build (trunk). It is not necessary to use a E-104 customization.
+
+1) 
+Load database dump from E-104 to have the user defined attributes, 
+export the data into Excel,
+delete about half of the IS, (or less)
+import the Excel.
+
+2) 
+Load DB dump,
+export data into Excel
+modify one column in IS sheet, for example, cost, with random values, or only for a part of the rows.
+import the Excel.
+
+Use your own discretion on how many elements to create or to write, so that the test case is realistic and meaningful.
+
+Do with trial configuration (history enabled) and comparison configuration (history disabled)."		Task	iteraplan PO	18/Nov/14 10:00 AM	16/Dec/14 9:32 AM														"04/Dec/14 12:41 PM;sfe;Case 1 (essentially creation of about 2000 IS) may take quite a while even without history.
+In case 2 there should not be an issue modifying values in a single attribute column for *all* IS, as past tests showed good performance for such a task."	05/Dec/14 12:03 PM;iteraplan;Maybe no longer necessary, talk to SFE/TDI	16/Dec/14 9:32 AM;isc;No longer necessary -> ticket is closed!																																																				

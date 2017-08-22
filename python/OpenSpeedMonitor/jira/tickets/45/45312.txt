@@ -1,0 +1,3 @@
+Nesting Cluster Diagram: Error when loading saved queries and with outer element selection	"Loading one of the saved nesting cluster reports of the example bank data results in an error (see attached screenshot) and the drop-down lists being empty.
+
+It's also not possible to select attributes as outer elements anymore."		Bug	iteraplan PO	27/Dec/11 4:25 PM	16/Feb/12 11:46 AM					cluster	nesting								16/Feb/12 11:46 AM;kvo;worksforme																																																						

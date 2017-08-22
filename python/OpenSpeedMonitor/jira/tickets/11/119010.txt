@@ -1,0 +1,13 @@
+On error during creation of an attribute stay on the page	"1. Always check uniqueness of name already in the frontend
+
+
+
+2. After clicking on ""Back to List"" (Please rename to button to ""Save"" / ""Speichern"") stay on the attribute page until you get the REST-response from the backend
+
+* If it is a success, please redirect to the attribute list
+
+* If it is an error message, please display the message in the alert service"		New Feature	iteraplan Speedbird	19/Apr/17 10:00 AM	05/May/17 6:16 PM														20/Apr/17 10:50 AM;dmkh;[~msr], please, specify warning message for this case.	20/Apr/17 12:17 PM;dmkh;Also created bug ticket for apply\cancel of name editor for new attribute: https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-5209	"04/May/17 5:31 PM;mash;When creating new Date Interval it is possible to give it the same name as Existing Attribute (not date interval). See screenshot.
+
+
+
+No any additional comments"	05/May/17 11:19 AM;dmkh;[~mash], fixed in revision *6770*	05/May/17 6:16 PM;mash;Review is done																																																		

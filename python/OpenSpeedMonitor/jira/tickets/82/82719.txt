@@ -1,0 +1,19 @@
+Remove old-new NCD from Codebase	"With Release 5.2 the NestedClusterDiagram (N3CD) was finished. For this reason the old-new implementation (NCD) is not needed anymore and is only dead weight that should be removed.
+
+
+
+Please remove
+
+# all code related to the NCD including possible references, links etc.
+
+# testcode related to the NCD (unit, e2e, mocks, helpers/utilities etc).
+
+# rename everything related to the N3CD to NCD - this is now the more appropriate name
+
+
+
+After completing this ticket there should not exist any evedince of the (old) NCD anymore.
+
+
+
+All code is probably dead code and unsed - if not or if you have any doubts contact [~sfe]"		Improvement	iteraplan PO	02/May/16 11:07 AM	17/Jun/16 12:44 PM														17/Jun/16 11:27 AM;abo;*Review-Comment:* the commit at Rev. 3513 broke the slider that is used in the filter-dialog.	17/Jun/16 11:42 AM;sfe;ngSlider module, previously only contained as transitive dependency via old ncd module, was now added as dependency of the iteraplan9 main module.	17/Jun/16 12:44 PM;abo;Review OK.																																																				

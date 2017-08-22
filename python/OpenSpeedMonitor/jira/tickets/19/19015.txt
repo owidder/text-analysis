@@ -1,0 +1,3 @@
+Main CSI-Graph konfigurierbar machen	"Momentan wird in der statischen Ansicht des CSI-Dasboards hart der CSI-Graph ""live"" als einziges sichtbar gesetzt.
+
+Dies müsste konfigurierbar sein. "		Improvement	OpenSpeedMonitor	09/Sep/14 4:37 PM	26/May/15 10:23 AM														26/May/15 10:23 AM;nku;Werden wir mit der Umsetzung des Epics IT-595 realisieren/überflüssig machen.																																																						

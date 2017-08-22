@@ -1,0 +1,21 @@
+Legend slides in and out	"*Summary:*
+
+* Let the legend slide in and out triggered by user clicks
+
+* Initially collapsed
+
+* Do *not* save state of legend in the url, but save in the configuration, i.e. if the diagram is redrawn, the legend is still shown (if it was open before)
+
+* The legend is still scrollable if it is higher than the window height
+
+* It should not change the width of the diagram - the legend will be above the diagram
+
+* Limit the width of the whole diagram to the window width to prevent double scrollbars.
+
+
+
+Open questions:
+
+* Do it just with css? (*preferred*)
+
+* Maybe there some components in combination with angular?"		Improvement	iteraplan Speedbird	24/Jun/16 1:40 PM	13/Jul/16 4:20 PM														12/Jul/16 2:02 PM;dmkh;Reviewed the ticket, two comments are here: https://iteraweb.iteratec.de/fisheye/cru/IP-62																																																						

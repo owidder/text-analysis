@@ -1,0 +1,7 @@
+Use Hibernate dialect MySQL5InnoDBDialect	"The advantage of that dialect over the currently used MySQL5Dialect is that it explicitly creates all tables with the {{engine = InnoDB}} postfix, thus avoiding any issues with MyISAM-configured DB servers.
+
+This is the only difference in the generated schema SQL script.
+
+In addition, it makes Hibernate aware of cascading delete support in MySQL, which may (or may may not) result in minimal performance improvements.
+
+Only one line needs to be changed in SVN: {{hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect}} in {{/config/database/mysql5/db.properties}}"		Improvement	iteraplan PO	19/Sep/13 2:30 PM						configuration	database	hibernate	sfe																																																												

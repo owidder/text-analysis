@@ -1,0 +1,7 @@
+Umstellung der DefaultTimeToCsMappings auf 20ms-Schrittweite	"Es müssen:
+
+
+
+* die bisher in der Datenbank stehenden DefaultTimeToCsMappings ersetzt werden. Das müsste in der Bootstrap passsieren. 
+
+* Die Umrechnung angepasst werden in de.iteratec.osm.csi.transformation.TimeToCsMappingService#getCustomerSatisfactionInPercentViaMapping"		Task	OpenSpeedMonitor	09/Dec/15 10:51 AM	16/Dec/15 5:29 PM																																																																				

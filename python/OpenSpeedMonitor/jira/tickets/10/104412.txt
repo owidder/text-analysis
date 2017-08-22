@@ -1,0 +1,25 @@
+Routing für nv01501340.bmwgroup.net	"Hallo,
+
+
+
+könntet Ihr bitte den Host nv01501340.bmwgroup.net (160.46.96.139) zu BMW routen.
+
+
+
+Hinweis: die Namensauflösung ist ischon eingetragen
+
+
+
+Danke
+
+Jens"		Task	Infrastruktur	01/Dec/16 9:54 AM	01/Dec/16 1:05 PM	Routing													"01/Dec/16 12:48 PM;sas;Hallo Jens,
+
+
+
+die Route und den Host wurde freigeschalten.
+
+
+
+Gruß
+
+Sami"																																																						

@@ -1,0 +1,1 @@
+Werte-Label die nicht in Balken/Ampel passen ausblenden	Wenn ein Balken zu klein ist, sodass das Werte-Label nicht mehr hinein passt, sollte das Label ausgeblendet (oder ggf dahinter geschrieben) werden.		Bug	OpenSpeedMonitor	15/Mar/17 2:25 PM	16/Mar/17 4:09 PM																																																																				

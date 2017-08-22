@@ -1,0 +1,15 @@
+Freischaltung frwy für Standort Stuttgart 	"Könntet ihr Frederic Wystup (frwy) für https://iteraweb.iteratec.de/confluence/display/iwiki/Standort+Stuttgart
+
+freischalten?"		Task	Infrastruktur	04/Apr/17 5:30 PM	10/Apr/17 10:37 AM	Confluence													"05/Apr/17 10:42 AM;ehi;Hallo David,
+
+
+
+das können wir leider momentan nicht machen, da ""Standort Stuttgart"" kein eigener Bereich ist, sondern lediglich eine Seite innerhalb des Bereichs iterawiki. Darauf geben wir Externen keinen Zugriff. Wir sind aber gerade dabei das neu zu organisieren, so dass die Standorte eigene Bereich bekommen und dann könne wir in Einzelfällen auch Externen Zugriff geben. Ich muss dich also vertrösten, aber wir werden das zeitnah in Angriff nehmen.
+
+
+
+ 
+
+
+
+Grüße, Elke"	09/Apr/17 6:05 PM;sst;Wir haben die Doku jetzt in ein Git-Repo verlagert. Dann ist das auch direkt bei den ganzne Shell-Scripten und da hat frwy einen Account. Ticket kann man zu machen.	10/Apr/17 10:37 AM;ehi;Alles klar, dann schließe das Ticket. Vielen Dank für die Rückmeldung.																																																				

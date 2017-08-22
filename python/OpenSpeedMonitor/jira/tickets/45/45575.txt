@@ -1,0 +1,11 @@
+Search for information systems with a minus or underscore doesn't work	"We have defined the following information systems:
+
+* SAP-HR
+* SAP-FICO
+
+If we now search in Quick Search or Full-text search for ""SAP-HR"" or ""SAP-FICO"", no results are displayed. When searching for SAP, all items will be displayed.
+The same behaviour for information systems with a underscore (e.g. SAP_HR, SAP_FICO)"		Bug	iteraplan PO	03/Sep/12 2:56 PM	17/Sep/12 7:21 PM					gui									"17/Sep/12 7:21 PM;sry;A text box with a warning appears as soon as you enter special characters like minus or underscore into a full-text search box. Such characters have special meaning for the embedded search engine and are not treated literally.
+
+It's possible to still get the desired results if you enclose your query in quotation marks, i.e. {{""SAP-HR""}}.
+
+iteraplan 4 is going to search with a different technology, and will treat minus etc. literally, so quotation marks won't be necessary."																																																						

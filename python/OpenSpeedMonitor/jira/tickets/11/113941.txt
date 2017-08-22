@@ -1,0 +1,33 @@
+Manual Filter - no automatlicy update on deleting filter	"Can be reproduced in version 5.5 and the current trunk 
+
+ # Open the List View of e.g Information Systems
+
+ # Click on the button ""EDIT FILTER""
+
+ # Set the filter ""complexity is high""
+
+ # Click on the button ""AND"" and set the filter to ""costs between 1 - 1500"" 
+
+ # Change into the tab ""Manual Selection"" and out the first checkbox
+
+ # Click on ""Apply"" and ""Ok"" 
+
+ # Click on the button ""EDIT FILTER""
+
+ # Click on the button ""X"" right next to ""Complexity is high""  
+
+ # Click on ""Ok""
+
+ # Now shows the list only 11 of 38 Elements
+
+ # Open the the edit dialog again and change into the tab ""Manual Filter""
+
+ # Click on ""None"" and then ""All""  - Apply and Ok 
+
+ # The list view is now updated correctly 
+
+
+
+Current: After deleting a filter the manual filter will be not updated 
+
+ Expected: The manual filter will be updated - that is reset to default"		Bug	iteraplan Speedbird	06/Mar/17 3:03 PM	16/Mar/17 1:21 PM																																																																				

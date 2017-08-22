@@ -1,0 +1,7 @@
+NumberFormatException in query filter	"Reproduce:
+* Open IS overview page
+* Select ""Queries"":
+""Name"" - ""contains"" - ""something""
+* Change to ""Strategic value""
+
+=> java.lang.NumberFormatException"		Bug	iteraplan PO	02/May/14 4:01 PM	07/May/14 1:42 PM					gui									07/May/14 1:42 PM;kgo;Ticket with similar problem: ITERAPLAN-2503																																																						

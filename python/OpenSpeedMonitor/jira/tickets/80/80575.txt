@@ -1,0 +1,17 @@
+Small Reactor improvements	"-Remove the automatic download of default output file- -> Moved to IPTQ-21
+
+* Remove the button to download the default output file
+
+* add a button/function to clear the shown log file
+
+* add a button/function to download the current log file
+
+
+
+Ask FKA for layout/position of the buttons -> See [^Graphics Reactor UI.png]
+
+
+
+-Poll transformation status (as with the classic import page)  Talk to [~sfe]- -> exported to [IPTQ-12]"		Improvement	iteraplan Quickfox	14/Apr/16 7:05 PM	18/Jul/16 6:06 PM														13/Jul/16 7:01 PM;mwe;Add a modal dialog to configure IPTQ-7 and IPTQ-8. The modal dialog will be opened when the user clicks the edit button in the file info container on the right. See [^Graphics Reactor UI.png]	18/Jul/16 2:33 PM;mwe;Removed button to download the default output file.	"18/Jul/16 3:36 PM;mwe;Added a button/function to clear the shown log file.
+
+Added a button/function to download the current log file."																																																				

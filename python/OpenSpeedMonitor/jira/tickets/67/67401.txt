@@ -1,0 +1,23 @@
+Migration bestehenden CSI-Mappings und Gewichtungen zur initialen CsiConfiguration	"Mit dem Deployment des abgeschlossenen Epic 3-B muss eine erste CsiConfiguration erzeugt werden.
+
+Dies sollte in der Bootstrap passieren. Die gesamte Methode BootStrap#initCsiData muss überarbeitet werden:
+
+
+
+*Wenn es noch gar keine de.iteratec.osm.csi.HourOfDay-Objekte gibt:*
+
+* Erzeugung/Persistenz der ersten 24 Objekte mit weight=1 wie es heute auch in der Bootstrap passiert.
+
+
+
+*Wenn es noch gar keine CsiConfiguration gibt.*
+
+* Erzeugung einer CsiConfiguration mit dem Namen _Initial CSI Configuration_.
+
+* Die bisher existierenden 24 persistierten de.iteratec.osm.csi.HourOfDay-Objekte müssten an diese CsiConfiguration gehängt werden (unidirektional von der CsiConfiguration navigierbar).
+
+* Für jede existierende Page ein Objekt pageWeight (oder wie Benjamin das genau genannt hat) erzeugen und an die CsiConfiguration hängen. Dies gilt nicht für die Page mit dem Namen Page.UNDEFINED. Diese muss nicht an der CsiConfiguration hängen.
+
+* Für jeden existierenden Browser mit weight > 0 pro ConnectivityProfile ein BrowserConnectivityWeight mit dem weight des Browsers erzeugen und an die CsiConfiguration hängen."		Task	OpenSpeedMonitor	18/Dec/15 12:05 PM	20/Jan/16 4:51 PM														"04/Jan/16 3:40 PM;nku;Die Bootstrrap muss auf jeden Fall überarbeitet werden.
+
+Die neue Logik kann aber auch ein liquibase-Changelog werden."	20/Jan/16 3:05 PM;mmi;In der Liste der Pages ohne Gewicht alle Pages auflisten, die in dieser CsiConfiguration kein PageWeight haben																																																					

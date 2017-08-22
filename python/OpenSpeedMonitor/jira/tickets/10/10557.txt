@@ -1,0 +1,1 @@
+Measuring Results Dashboard: Achsenbeschriftung - Ausnahme <1.2s	Ausnahme: Der größte Einzelwerte ist kleiner als 1,2 Sekunden, dann sind ms-Werte angenehmer		Task	OpenSpeedMonitor	25/Sep/13 10:06 AM	24/Feb/16 11:07 AM														29/Apr/15 4:36 PM;rkr;Sieht für mich erledigt aus - ist das noch akut?																																																						

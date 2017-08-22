@@ -1,0 +1,21 @@
+F: Handle ATG permission on single attribute views	"When disabling VIEW permission for any Attribute Group it is possible to still see it on Attribute list and all attributes that it has.
+
+
+
+Also when accessing single attribute page this disabled for VIEW Attribute Group is still shown.
+
+
+
+Remove this information from UI if user user doesn't have VIEW permission for ATG.
+
+
+
+Discuss further solution with [~msr],
+
+
+
+First idea:
+
+
+
+For Single attribute page: remove attribute group editor if this attribute has ATG with disabled VIEW permission"		New Feature	iteraplan Thunderduck	13/Jul/17 12:34 PM																																																																					

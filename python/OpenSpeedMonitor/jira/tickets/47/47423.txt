@@ -1,0 +1,10 @@
+" - " characteres croped in names for all inner elements	"Steps to reproduce:
+
+1. Use Information System as outer type
+    Use Interface as inner type
+Actual result:  "" - "" characteres croped in names for all inner elements
+Expected:  "" - "" characteres should be displayed in names for all inner elements"	47135	Sub-task	iteraplan PO	18/Feb/15 4:34 PM	25/Feb/15 11:48 AM													"Workspace: Windows 8.1
+Browser: Google Ghrome 39.0
+revision: 661
+"	"25/Feb/15 11:48 AM;dasm;Verified
+revision (677)"																																																						

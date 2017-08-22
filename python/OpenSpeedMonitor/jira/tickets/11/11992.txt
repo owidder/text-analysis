@@ -1,0 +1,1 @@
+Skriptparser: Bei nicht aufgezeichneten Messschritten warnen	Der Parser soll eine Warnung ausgeben bei Kombinationen von setEventName-Statement und Seitenaufruf-Statement in Bereichen, in denen logData auf 0 gesetzt ist.		Task	OpenSpeedMonitor	17/Mar/14 3:52 PM	18/Mar/14 11:00 AM																																																																				

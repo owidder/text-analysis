@@ -1,0 +1,35 @@
+Show 2 or more levels of hiearchy in the axes of an LSD	"When the axis of an LSD is a element type with a hierarchy (parent/child) relationship, the system should optionally show the elements as a tree-like structure of spanning row or column headers.
+
+
+
+The setting for the axes are independent of each other.
+
+
+
+options for levels as in content area:
+
+all
+
+1
+
+1-2
+
+1-3
+
+2
+
+2-3
+
+3
+
+
+
+Aggregate as in hierarchy filter for content elements.
+
+
+
+Note that the  parent element needs a row/column of the content of its own.
+
+
+
+Also sort the axis elements according to their hierarchy position."		New Feature	iteraplan PO	10/Jul/15 4:47 PM	24/Oct/15 4:13 PM																																																																				

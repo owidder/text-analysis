@@ -1,0 +1,57 @@
+Mass update - different color design for "Set" button	"h4.Problem Description:
+
+
+
+ Mass update - different color design for ""Set"" button for different columns.
+
+
+
+ 
+
+
+
+h4.Reproduction Steps:
+
+ * Open application and navigate to ""IT Services"" page
+
+ * Add all possible columns
+
+ * Activate Mass update mode
+
+ * Go through Edit Mass update for all added columns
+
+
+
+h4.Observed Results:
+
+
+
+""Set"" button has different color-design for different columns: pink and blue when move over  the button for some columns and white in all cases for other.
+
+
+
+ 
+
+
+
+h4.Expected Results:
+
+
+
+""Set"" button should have the same color-design for all columns.
+
+
+
+ 
+
+
+
+h4.Note: 
+
+- used dev and #340 build with FF
+
+- see attached .gif file"		Bug	iteraplan PO	08/Jun/17 12:44 PM	11/Jun/17 12:48 PM														"11/Jun/17 12:48 PM;fka;This is by design
+
+
+
+The default button/action is always highlighted. For multivalue enums, set is not the default action, but add"																																																						

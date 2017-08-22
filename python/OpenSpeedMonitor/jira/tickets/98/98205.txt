@@ -1,0 +1,39 @@
+Reihenfolge 	"Hallo,
+
+
+
+bei Auswertungen ""Bebauungsplan"" im interaktiven Client  gibt es in der Darstellung ein Problem mit der Reihenfolge (siehe Bild) 
+
+
+
+Wie können wir das beheben bzw. umgehen?
+
+
+
+Danke für Ihre Info im Voraus 
+
+
+
+Beste Grüße
+
+
+
+Volker Simon"		Fault	iteraplan Support	05/Oct/16 9:18 AM	14/Oct/16 3:49 PM														"05/Oct/16 9:18 AM;volker.simon@huk-coburg.de;
+
+!5.2.JPG|thumbnail!"	"06/Oct/16 3:44 PM;cst;Sehr geehrter Herr Volker,
+
+vielen Dank für Ihre Anfrage.
+
+Die Sortierung richtet sich nach folgender Reihenfolge. 
+
+# Gehen Sie im Classic Client z.B. Geschäftsprozessen
+# Danach klicken Sie Baumdarstellung 
+# Dann auf ""Umordnen Aktivieren"" 
+# Jetzt können Sie die Reihenfolge mit Drag and Drop ändern 
+
+Dies wird im interaktiven Client mit übernommen und angewandt. 
+Es gibt hier Ausnahmen wie z.B. Informationssysteme, hier wird nur Abgabetisch sortiert. 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	14/Oct/16 3:05 PM;dne;Ticket kann geschlossen werden :) Bin gerade live vor Ort																																																				

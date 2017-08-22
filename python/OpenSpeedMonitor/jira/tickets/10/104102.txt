@@ -1,0 +1,9 @@
+CodeMirror BowerDependency Problem	"Die Bower-Dependency CodeMirror kann nicht aufgelöst werden.
+
+Es kommt zu einem AuthenticationFailure."		Bug	OpenSpeedMonitor	28/Nov/16 8:27 AM	28/Nov/16 12:11 PM														"28/Nov/16 12:11 PM;mmi;Die URL von CodeMirror hat sich geändert, sodass es zu Problemen kommt, wenn CodeMirror noch im BowerCache vorhanden ist.
+
+Folgendes hat bei mir geholfen:
+
+* ""bower cache clean""
+
+* ""bower cache clean -g"""																																																						

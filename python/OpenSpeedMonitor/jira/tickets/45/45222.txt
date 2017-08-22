@@ -1,0 +1,16 @@
+Improve performance of list filter fields when thousands of elements are in the list	"If you have thousands of entries in a select box for relations, the filter box performs very poorly. After typing the first character you may have to wait up to 10 seconds until the next character is accepted/ the filter becomes effective.
+
+The filter should respond with typing speed, ideally."		Improvement	iteraplan PO	26/Oct/11 10:49 AM	16/Nov/11 4:17 PM					filtering	massdata	performance							"27/Oct/11 5:37 PM;agu;@Frederic: on which browser did you noticed the performance degradation?
+
+I have tested on Firefox and IE with 3000 entries. 
+FF: ~300ms for one letter
+IE: ~2,5s for one letter"	"28/Oct/11 4:45 PM;agu;I am so happy, that I could improve the performance ~10 times. for the IE browser. 
+I seems like the DOM access is very slow in IE. Firstly i needed to remove all options from the list. The resource http://www.somacon.com/p542.php helped me further. But then the problem was, that I needed to create the options by my selft, and it was also very slow. So I used the Document Fragments to add the options, and then updated DOM by calling 
+{code}
+myList.appendChild(fragment);
+{code}
+Check the file for the implementation details.
+
+The changes were made exclusively in FilterList.js JavaScript file. I attached this file for the case if earlier iteraplan versions must be updated. "	28/Oct/11 4:51 PM;agu;A good presentation for how to write eficient JavaScript code: http://www.slideshare.net/nzakas/writing-efficient-javascript	"31/Oct/11 10:14 AM;fma;Hi, 
+
+thanks for the quick fix. Regarding the browser I'm not sure-maybe it was IE... Soon I will install iteraplan 2.9 at ITSV. Then I will replace the filterlist.js from installation with the new version and give you feedback regarding the performance.   "	16/Nov/11 4:17 PM;vsh;I tested it with 2000 values. Very responsive in all browsers. 																																																		

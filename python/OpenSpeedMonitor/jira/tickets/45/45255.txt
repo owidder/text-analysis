@@ -1,0 +1,1 @@
+Scrolling fast export diagrams not possible in Google Chrome	Currently it's not possible to scroll fast export diagrams in Google Chrome.		Bug	iteraplan PO	15/Nov/11 9:14 AM	07/Feb/12 1:44 PM														07/Feb/12 1:44 PM;kvo;Chrome not a target for us, and probably rather a browser problem																																																						

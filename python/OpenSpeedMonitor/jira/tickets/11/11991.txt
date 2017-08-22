@@ -1,0 +1,18 @@
+Datenbankfelder als LONGTEXT	"WaterfallEntry.path wird als VARCHAR(255) gespeichert:
+
+Beim Durchlaufen eines Quartz-Jobs trat folgende Exception auf:
+
+JDBCExceptionReporter Data truncation: Data too long for column 'path' at row 1
+
+Es muss sich um die Spalte ""path"" von WaterfallEntry handeln. Diese wird trotz
+{code}
+static mapping = {
+    path(type: 'text')
+}
+{code}
+von MySQL als VARCHAR(255) gespeichert und ist zu kurz.
+
+
+JobResult.wptStatus wird ebenso noch als VARCHAR(255) gespeichert und muss LONGTEXT sein."		Bug	OpenSpeedMonitor	14/Mar/14 3:27 PM	17/Mar/14 3:47 PM														"17/Mar/14 3:47 PM;nkuhn;In Grails realisiert. 
+
+Da die Anpassung in der DB aber bei bereits vorhandenen Daten nicht automatisch passiert müssen die beiden Felder vor einem Deployment manuell angepasst werden. In IT-305 berücksichtigt."																																																						

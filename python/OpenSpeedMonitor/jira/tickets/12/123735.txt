@@ -1,0 +1,57 @@
+Deprecation warning when Mass Update the Live(Start/End) column 	"h4. Problem Description:
+
+
+
+Deprecation warning when Mass Update the Live(Start/End) column  
+
+
+
+ 
+
+h4. Reproduction Steps:
+
+ * Open application and navigate to ""Information system"" page
+
+ * Add Live(Start) or Live(End) column
+
+ * Mass update just added column
+
+
+
+ 
+
+h4. Observed Results:
+
+
+
+ The ""Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.
+
+Arguments: [object Object]
+
+deprecate/<@http://localhost:8080/client/bower_components/moment/min/moment-with-locales.js:265:105
+
+configFromString@http://localhost:8080/client/bower_components/moment/min/moment-with-locales.js:1163:13
+
+configFromInput@http://localhost:8080/client/bower_components/moment/min/moment-with-locales.js:1669:13
+
+prepareConfig@http://localhost:8080/client/bower_components/moment/min/moment-with-locales.js:1652:13."" warning is displayed in console. See attached screenshot.
+
+
+
+ 
+
+h4. Expected Results:
+
+
+
+Date should work without errors and warnings.
+
+
+
+ 
+
+h4. Note:
+
+
+
+ - Used dev and #339 build in FF"		Bug	iteraplan Speedbird	07/Jun/17 11:55 AM	23/Jun/17 1:03 PM																																																																				

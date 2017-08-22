@@ -1,0 +1,25 @@
+Check if CGlib dependency can be removed	"There is the following comment in iteraplan's pom.xml:
+
+{code:xml}
+<!-- Envers needs CGlib, so we have to include it anyway, but can state a newer version -->
+
+<dependency>
+   <groupId>cglib</groupId>
+   <artifactId>cglib</artifactId>
+   <version>2.2.2</version>
+</dependency>
+{code}
+
+As envers was removed in ITPP-185, please check if the comment is correct and cglib can be removed as well.
+
+remove it from 3.pr lib. list!"		Task	iteraplan Thunderduck	20/Oct/16 2:04 PM	04/Nov/16 1:20 PM														"03/Nov/16 4:55 PM;mse;The direct dependency to CGlib was removed from pom.xml.
+
+Transitive dependencies to CGlib were excluded up till now because of the direct dependency. These exclusion have been removed.
+
+All integration and unit tests succeeded after CGlib was removed, so it seems not to be used anymore.
+
+
+
+CGlib was also removed from the 3rd party list:
+
+https://iteraweb.iteratec.de/confluence/display/ITPL/Used+Libraries"																																																						

@@ -1,0 +1,3 @@
+Iteraplan baut Suchindex beim Start nicht automatisch auf	"In Version 3.3.1 und 3.3.2 wird beim Start des Application Servers scheinbar die DB Indizierung nicht automatisch gestartet. Damit liefert die Suchfunktion keine Ergebnisse.
+
+Manueller Workaround: Über die Funktion ""Administration"" / ""Konfiguration"" / ""Index neu erstellen"" kann der Index aufgebaut werden, danach liefert die Suche auch wieder Ergebnisse."		Bug	iteraplan PO	07/Aug/14 2:27 PM	22/Aug/14 8:14 AM																																																																				

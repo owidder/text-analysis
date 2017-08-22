@@ -1,0 +1,11 @@
+Hyperlinks in Excel spreadsheet reports don't work properly	"In created Excel reports (2003/2007), the links are inserted correctly, but clicking on the leads to the login page and then to the start page (after login) instead of the element page.
+
+This behavior happens most likely due to the ""Microsoft Office Protocol Discovery"" mechanism:
+http://support.microsoft.com/kb/838028
+
+Related information:
+http://support.microsoft.com/kb/899927
+http://support.microsoft.com/kb/2019105
+
+Check, if this behavior can be influenced by the iteraplan application or if it is an Excel issue, which can't be fixed in the iteraplan project. In the last case it should be clarified, if the link-column should be removed from the sheet.
+"		Bug	iteraplan PO	11/Aug/14 12:14 PM	03/Sep/14 1:07 PM					excel	spreadsheet																																																														

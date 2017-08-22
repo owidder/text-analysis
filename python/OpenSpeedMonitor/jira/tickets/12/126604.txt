@@ -1,0 +1,1 @@
+Filterbare Liste mit JobResults (nicht nur failed)	Statt der failedResults wäre eine allgemeine Liste der JobResults gut welche sich filtern lässt auf zB failed, bestimmte Agenten, Job, Datum, usw.		New Feature	OpenSpeedMonitor	07/Jul/17 9:20 AM																																																																					

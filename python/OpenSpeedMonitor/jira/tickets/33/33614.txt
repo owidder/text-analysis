@@ -1,0 +1,7 @@
+JobGroup-assoziierte Events in Diagrammen darstellen können 	"Events sollten als senkrechte Linien darstellbar sein. Diese Events können z.B. Deployments einer Umgebung sein oder auch Änderungen an Job-Konfigurationen o.ä..
+
+
+
+Diese Funktionalität muss nur in Rickshaw realisiert werden."		New Feature	OpenSpeedMonitor	02/Mar/15 11:16 AM	11/May/15 3:31 PM														"20/Apr/15 1:43 PM;rkr;* Parameter: annotations
+
+* Format: {x: 1414846610, text: ""rk1""}, {x: 1414846400, text: ""rk2""}"	20/Apr/15 1:54 PM;rkr;-Tests werden noch angepaßt.- Erledigt.	11/May/15 3:26 PM;rkr;Änderungen am Datenmodell müssen beim Vorbereiten zur Darstellung berücksichtigt werden. neues Datums- und Zeitformat aus der DB: "2015-04-17 00:00:00.0"																																																				

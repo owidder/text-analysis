@@ -1,0 +1,91 @@
+landscape diagram: unnecessary multiple occurance of content elements	"Hello,
+
+
+
+the landscape diagram in the interactive client shows multiple occurances of the same content elements (e.g. Applications) in one single cell. The classic client shows only one occurance.
+
+
+
+Explanation of the attached files:
+
+
+
+Test_App is an Application connected to the Business Processes ""PR"" and ""Product Management"" (3rd level in the hierarchy) and to the Business Unit ""Executive Board"". 
+
+
+
+1. Image: classic client with hierarchy level for processes 1-3
+
+2. Image: classic client with hierarchy Level for processes 1-2
+
+3. Image: interactive client with 1-3
+
+4. Image: interactive client with 1-2"		Fault	iteraplan Support	28/Sep/16 10:57 AM	04/Oct/16 11:11 AM														"28/Sep/16 10:57 AM;ogr;
+
+[^Landscape_doppelte_apps.zip] _(8 kB)_"	"28/Sep/16 12:54 PM;cst;Hallo Olga,
+
+ich vermute das Distrigation Feature  im Screenshot ""iteraplan-LandscapeDiagram-2016-09-28__10_55_07_interactive_1-2""
+Die Test_App hat Beziehungen zum mehreren Business Prozessen in der Hierarchie.
+
+Für jede Beziehung wird ein neues Kästchen angezeigt, wegen der Distrigation sind diese alle in der selben Zelle. 
+Im Classic Client gab es diese Feature noch nicht, deshalb kommt es nicht zu diesem Effekt. 
+
+https://www.iteraplan.de/doc/display/iteraplan54/Distrigation 
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+
+"	"28/Sep/16 1:13 PM;ogr;Hallo Christoph,
+
+ich sehe das genauso, dass dieser Effekt durch Distrigation zustande kommt. Technisch ist es wunderbar nachvollziehbar, jedoch fachlich ist dieses Verhalten nicht korrekt und für Kunden auch unverständlich. Somit muss es angepasst werden.
+
+Viele Grüße,
+Olga"	"04/Oct/16 9:34 AM;cst;Hallo Olga,
+
+um welchen Kunden geht es bei deiner Anfrage?
+
+Viele Grüße,
+
+Christoph "	"04/Oct/16 9:37 AM;fka;Hallo Olga,
+
+wir haben das Feature Distrigation auf Kundenwunsch implementiert und dabei das Verhalten auch mit dem Kunden abgestimmt. Das doppelte Auftreten von Elementen ist uns bewusst. Wir nehmen das aktuell in Kauf.
+
+Nach aktueller Planung werden wir im Frühjahr 2017 uns wieder der Distrigation widmen. Dann wird eine Möglichkeit eingebaut, die Distrigation abzuschalten.
+
+Viele Grüße
+Fabian"	"04/Oct/16 11:10 AM;ogr;Hallo Christoph,
+
+aktuell ist es im BMW-Projekt aufgefallen. Allerdings ist es nur noch eine Frage der Zeit, bis andere Kunden, die ähnliche Strukturen haben (BPs mit 3 Ebenen, Zuordnung zu IS auf der untersten Ebene), auf das selbe Thema kommen.
+
+Grüße
+Olga"	"04/Oct/16 11:23 AM;cst;Hallo Olga,
+
+wir haben das Feature Distrigation auf Kundenwunsch implementiert und dabei das Verhalten auch mit dem Kunden abgestimmt. Das doppelte Auftreten von Elementen ist uns bewusst. Wir nehmen das aktuell in Kauf.
+
+Nach aktueller Planung werden wir im Frühjahr 2017 uns wieder der Distrigation widmen. Dann wird eine Möglichkeit eingebaut, die Distrigation abzuschalten.
+
+Viele Grüße
+Fabian"	"05/Oct/16 10:12 AM;ogr;Hallo Fabian,
+
+danke für die Info!
+
+Das was BMW hier haben will ist, dass Distrigation funktioniert und dass das System nur einmal erscheint. Wird es mit Swimlanes (wenn sie dann eingebaut sind) möglich sein, nur ein System anzeigen zu lassen?
+
+Viele Grüße
+Olga"	"06/Oct/16 8:43 AM;fka;Hallo Olga,
+
+die Distrigation ist nur im Landscape Diagramm aktiv, siehe auch die Doku dazu. Swimlanes gibt es nur im Cluster Diagram, da gibt es bisher keine Distrigation...
+
+Viele Grüße
+Fabian"	"06/Oct/16 9:03 AM;cst;Hallo Olga,
+
+die Distrigation ist nur im Landscape Diagramm aktiv, siehe auch die Doku dazu. Swimlanes gibt es nur im Cluster Diagram, da gibt es bisher keine Distrigation...
+
+Viele Grüße
+Fabian"	"06/Oct/16 10:47 AM;ogr;Hallo Fabian,
+
+danke für die Info! Das mit den Swimlanes habe ich wohl durcheinander gebracht. Du hast vollkommen recht. 
+
+Viele Grüße
+Olga"																																												

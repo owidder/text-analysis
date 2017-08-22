@@ -1,0 +1,7 @@
+"Show only modified in" in the context menu for inner elements	"Steps to reproduce: 
+1. Go to NCD
+2. Open Context menu for inner elements
+Actual: ""Show only modified in""  appears as independent option
+Expected: Probably this menu option is duplicate of ""Last modification time"" of filtering by date properties
+Do we need both of them?"	47646	Sub-task	iteraplan PO	24/Apr/15 9:21 AM	05/May/15 2:07 PM													"Workspace: Windows 8.1
+revision: "	24/Apr/15 2:26 PM;dasm;to leave as is (in discussion with Marcel)																																																						

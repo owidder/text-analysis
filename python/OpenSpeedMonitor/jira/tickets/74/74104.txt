@@ -1,0 +1,7 @@
+Job-List-Header während Scrolling defekt	"Getestet im Firefox als Admin angemeldet.
+
+
+
+Wenn man die lange Liste der Jobs herunterscrollt, heftet sich irgendwann der Header der Jobliste oben an den Browser. Dabei geht der Header kaputt. Siehe Screenshot. Möglicherweise tritt dieser Fehler nur auf kleineren Bildschirmen auf.
+
+Ich habe noch einen zweiten Screenshot angehängt, der zeigt, dass die mitscrollenden Header nicht die gleiche Breite wie die darunterliegende Tabelle hat!"		Bug	OpenSpeedMonitor	19/Feb/16 9:32 AM	08/Mar/16 11:20 AM																																																																				

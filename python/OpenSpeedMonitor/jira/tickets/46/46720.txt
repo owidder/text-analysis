@@ -1,0 +1,10 @@
+Deletion of InformationFlow with negative ID in Excel File causes misleading Information in Import Summary	"Steps to reproduce:
+
+# Generate Excel Export
+# Delete rows with negative ID in Sheet InformationFlow
+#* If there are no row, you have to delete the BO in Interfaces in iteraplan
+# Import Excel File
+
+In Step 4 you'll see information about the updated and deleted building blocks. This information is wrong, because in Step 5 no updates or creation will be performed.
+
+Fix this misleading import summary, so that in step 4 the only the right changes are shown. "		Improvement	iteraplan PO	03/Jul/14 11:39 AM															03/Jul/14 11:39 AM;dop;This issue has been detected while fixing issue ITERAPLAN-2570. 																																																						

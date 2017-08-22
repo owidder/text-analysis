@@ -1,0 +1,7 @@
+Nesting Cluster Diagram: configuration and more	"see ITERAPLAN-619:
+
+* When loading a saved query with an attribute-based coloring, the wrong tab (static coloring) is opened when one opens the color configuration window.
+* Objectified values link to invalid URLs in the diagrams, which leads to an error message.
+* The switch-button in the configuration interface does only switch the selected elements and not the further configuration (e.g. the coloring, the hierarchy-attribute, ...)
+* Interfaces link to invalid URLs in the diagrams (using ""/informationsysteminterface/"" instead of ""/interface/""), which leads to an empty page.
+"	45464	Sub-task	iteraplan PO	19/Apr/12 6:24 PM	30/Dec/15 2:32 PM					cluster	diagram	VBB							21/Nov/12 10:42 PM;sry;No longer relevant, as impl changed dramatically by now																																																						

@@ -1,0 +1,43 @@
+Add "feature type" and "multivalue" columns to history table	"To allow for possible future reformatting/parsing of locale-dependent values even from history, add their ""feature type"" as column. Possible data types:
+
+* Decimal (number attributes)
+
+* Text (text attributes or fields like ""name"")
+
+* Richtext (multiline text attributes and for example ""description"")
+
+* Enumeration (userdefined enum attributes)
+
+* Responsibility (responsibility attributes)
+
+* Date (date attributes)
+
+* Datetime (for example last modification time)
+
+* Duration (runtime period)
+
+* Status (status of Information System and Technical Component)
+
+* Direction (Direction of Interfaces and Transports/InformationFlows)
+
+* Relationship (for all relationship assignments)
+
+
+
+Also add as additional column information whether the feature is multi assignment or not.
+
+
+
+To do:
+
+* create feature type enum
+
+* change history mapping
+
+* adjust history entity classes
+
+* add the feature type to SingleChange and set it in ModelChangeBuilder
+
+* write feature type to history entities
+
+* add feature type information to the json data returned by the history REST resource"		Improvement	iteraplan Thunderduck	07/Oct/16 2:07 PM	18/Oct/16 11:48 AM																																																																				

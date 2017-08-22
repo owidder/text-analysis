@@ -1,0 +1,8 @@
+Loading of saved Pie and Bar charts doesn't properly check for attributes which might not exist anymore	"Reproducer:
+ * Use bank data
+ * create a pie chart displaying the costs of information systems (for example) and save the report
+ * delete the attribute costs
+ * load the saved report: there is no warning/notice displayed, only the attribute selection is empty.
+ * directly execute report: executes without warning/error, shows empty diagram
+
+There should be, like in other reports, a warning message when attribute types which don't exist anymore are referred to in a saved report, when trying to load or execute said report."		Improvement	iteraplan PO	26/Jan/12 10:55 AM	30/Dec/15 2:32 PM					attribute	bar	pie	savedquery						17/Sep/12 8:33 PM;sry;no longer applicable, is being re-implemented anyway	17/May/13 10:00 AM;sbu;Still applicable for 3.x	25/Jun/14 4:37 PM;fka;Desired solution should be discussed in detail																																																				

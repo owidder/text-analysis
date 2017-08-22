@@ -1,0 +1,1 @@
+Chart-Switch Funktionalität für PageComparison-Chart übernehmen			Task	OpenSpeedMonitor	13/Mar/17 9:08 AM	15/Mar/17 11:56 AM																																																																				

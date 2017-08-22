@@ -1,0 +1,19 @@
+Filter "Productive Period" - Problem with the second date field	"Reproduce with trunk or nightly
+
+
+
+# Open the Landscape Diagram 
+
+# Change the ""Column type"" - ""Relation"" to ""Based technical Components""
+
+# Open the ""Column filter"" and set Productive period - between
+
+# Now try to enter a date in the second date field with the keyboard
+
+# nothing happens
+
+
+
+Expected: Its possible to enter the date 
+
+Actual: Nothing happens"		Bug	iteraplan PO	30/Jan/17 3:21 PM	07/Feb/17 10:23 AM														07/Feb/17 10:23 AM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-346																																																						

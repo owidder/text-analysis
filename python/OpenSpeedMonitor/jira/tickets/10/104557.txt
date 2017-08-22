@@ -1,0 +1,5 @@
+Distrigation: Implement Distrigation + Level-Filter in CCD	"*Summary:*
+
+Implement Distrigation + Level-Filter of IPTS-394 and IPTS-395 in the Classic Cluster Diagram for the header and all rows, if they are Building Blocks.
+
+No Flat-Option in the CCD"		New Feature	iteraplan Speedbird	02/Dec/16 4:30 PM	10/Feb/17 11:31 AM																																																																				

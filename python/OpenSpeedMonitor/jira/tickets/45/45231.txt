@@ -1,0 +1,7 @@
+Exception handling for functions with MVC-based UI	"Currently a separate exception handler for IteraplanExceptions is registred only in Webflow. If a MVC-based site throws an exception it is catched by Tomcat and the request ends in the general error page. 
+
+The following is desired:
+* a separate exception handler for our exception hierarchie which writes in our usual log file.
+* this handler must be active for all controllers.
+* the handler deletes the header _Content-disposition_ from the response. Otherwise browsers won't display the error page if 500 error code comes back while the download header is still set. The _Content-Type_ is reset by Tomcat during rendering of the JSP, therefore no ""manual"" reset of this header is necessary.
+"		Improvement	iteraplan PO	31/Oct/11 2:47 PM	08/Jun/12 10:40 AM					error	handler	mvc							08/Jun/12 10:40 AM;kvo;Enough fixed in 3.0, MVC might get obsolete anyway																																																						

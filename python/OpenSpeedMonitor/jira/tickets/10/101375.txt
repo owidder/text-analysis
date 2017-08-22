@@ -1,0 +1,11 @@
+Wettbewerber-Radar um mobile Messungen erweitern	"Anforderung kommt von Uwe:
+
+Wir sollten die WB-Messungen, die wir auf der Demo-Instanz durchführen um entsprechende Messungen auf mobile Devices erweitern. Hierfür verwenden wir erstmal die Hardware der OTTO-Messungen (Galaxy S4, Galaxy Tab4, iPhone 5 und iPad 4). 
+
+
+
+Die Mess-Frequenz darf dabei auf keinen Fall so hoch sein, dass die OTTO-Messungen beeinträchtigt werden.  "		Task	OpenSpeedMonitor	03/Nov/16 1:11 PM															"08/Nov/16 4:37 PM;msk;Alternate iPhone hat keine Ergebnisse im Warenkorb
+
+
+
+Amazon iPhone & iPad funktionieren noch nicht"	17/Feb/17 1:02 PM;msk;Es gibt weiterhin Probleme mit den IOS Messungen. 																																																					

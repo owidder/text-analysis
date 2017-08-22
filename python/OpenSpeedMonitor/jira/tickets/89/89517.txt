@@ -1,0 +1,7 @@
+Plugin Discover Resource	"* simple back-end restlett resource (e.g. api/discoverplugins - final name is to be discussed)
+
+** a request ti this resource will invoke discover method of plugin container
+
+** use the resource icdi as blueprint
+
+** discover method can be a mock method in the context of this ticket"	89425	Sub-task	iteraplan Thunderduck	06/Jul/16 10:28 AM	14/Jul/16 1:07 PM																																																																				

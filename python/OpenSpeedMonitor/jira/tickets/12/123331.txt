@@ -1,0 +1,23 @@
+Saving new attribute is not correct.	" 
+
+ # Open 'Administration' - 'Attributes'
+
+ # Click to Create Element
+
+ # Type attribute name and save the name.
+
+ # Open name editor again and change the name but don't close the editor.
+
+ # Click 'Save' button.
+
+
+
+Expected: Editor save new value and create attribute
+
+Actual: Editor create attribute with previous value
+
+
+
+!image-2017-06-02-13-03-40-759.png!
+
+ # !image-2017-06-02-13-04-16-221.png!"		Bug	iteraplan Speedbird	02/Jun/17 12:04 PM	07/Jun/17 2:05 PM														07/Jun/17 2:05 PM;fka;Behavior (text in open editor is not considered) is o.k.																																																						

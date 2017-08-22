@@ -1,0 +1,15 @@
+Permission Handling by loading from url	"If diagram is loaded from the url, check if user has the permission for this Building Block Type or attribute stored in the url. 
+
+
+
+If not, display a message (no dialog) instead of the diagram (like in the Masterplan Diagram).
+
+
+
+Use the same message like in the Masterplan Diagram.
+
+
+
+Permissions are not set to single attributes, but to whole attribute groups. If the user has no permission for the whole attribute group, all single attributes of this group are not available in the REST interface (i.e. in the New Client)."		New Feature	iteraplan Speedbird	06/Sep/16 11:48 AM	07/Oct/16 11:06 AM														"06/Oct/16 2:35 PM;mada;Need specify message when user has not permission for attribute.
+
+For MPD diagram we have next message ""Please create a duration attribute to display the Masterplan Diagram"", it isn't suitable for PCD diagram."	07/Oct/16 10:53 AM;dmkh;Review is done: https://iteraweb.iteratec.de/fisheye/cru/IP-62																																																					

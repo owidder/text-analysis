@@ -1,0 +1,27 @@
+RfE: Lesbarkeit interaktiver Client verbessern	"Die Lesbarkeit der Merkmale im interaktiven Client ist durch die fehlende Ausrichtung der Merkmalswerte eingeschränkt - zumindest im Vergleich zum klassischen Client.
+
+
+
+Wunsch: nicht nur die Merkmalnamen vertikal ausrichten, sondern auch die Merkmalswerte vertikal ausrichten (analog zum klassischen Client="		Fault	iteraplan Support	28/Mar/17 4:26 PM	29/Mar/17 7:51 AM														"28/Mar/17 4:26 PM;CSchweer@VHV.de;
+
+!grafik.png|thumbnail!"	"29/Mar/17 7:51 AM;cst;Sehr geehrter Herr Schweer,
+
+
+
+vielen Dank für Ihr Feedback. 
+
+
+
+Mit Version 6.0 wird die UI von iteraplan generell überarbeitet, hier ist auch die single element view mit einbegriffen. Wir haben Ihr Feedback mit aufgenommen. 
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support
+
+
+
+ "																																																					

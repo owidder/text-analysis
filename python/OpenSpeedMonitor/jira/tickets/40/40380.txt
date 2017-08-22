@@ -1,0 +1,1 @@
+RICKSHAW: data points mit exportieren falls sichtbar	RICKSHAW: data points mit exportieren falls sichtbar - Ausnahme ist die Achse "Target-CSI" / "Ziel-Kundenzufriedenheit"		Improvement	OpenSpeedMonitor	11/May/15 5:37 PM	12/May/15 1:14 PM																																																																				

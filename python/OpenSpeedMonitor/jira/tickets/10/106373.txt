@@ -1,0 +1,9 @@
+Login: Server Error 500 during login	"* Fix rootcause for this special 500-error
+
+* Additionally: New Client should process 500-http-status-code on login:
+
+** Show error message ""Login not possible. Please try again later"", German: ""Der Login ist gerade nicht möglich. Bitte versuchen Sie es später nochmal.""
+
+** Fill the document: https://iteraweb.iteratec.de/confluence/pages/viewpage.action?pageId=94798519"		Bug	iteraplan Speedbird	21/Dec/16 2:39 PM	30/Dec/16 3:53 PM														"29/Dec/16 8:06 PM;ants;Review done:
+
+https://iteraweb.iteratec.de/fisheye/cru/IP-260"																																																						

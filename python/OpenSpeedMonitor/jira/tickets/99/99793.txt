@@ -1,0 +1,37 @@
+Neue OSM-Version überall ausrollen	"Nachdem die WPT-Version überall ausgerollt wurde sollten wir dringend auch überall den OSM aktualisieren, da nur dann die Verlinkung zu den Results wieder funktioniert.
+
+
+
+*Zu beachten:*
+
+
+
+Vor dem Deployment mit Bamboo muss:
+
+* Per Puppet die reverse-Proxy-Config aller OSM-Instanzen so ausgerollt werden, dass der OSM im root des tomcats deployt wird / läuft. 
+
+* Der OSM zu Fuß undeployt werden, da das Deployment-Skript so abgeändert wurde, dass Deployment und Undeployment den OSM im root des tomcats erwarten. "		Task	OpenSpeedMonitor	19/Oct/16 6:13 PM	23/Oct/16 12:02 PM														"23/Oct/16 12:02 PM;nku;War ein ziemlicher Kampf...
+
+
+
+Ursache: 
+
+Die rules, die in visudo für einen user greifen überschreiben sich gegenseitig.
+
+Es war für den bamboo-user zwar eingetragen, dass er ohne Passwort-Eingabe das Deployment-Skript ausführen darf. Nach diesem Eintrag war in visudo aber für die group sudo eingetragen, dass user dieser Gruppe alles ausführen dürfen, aber eben MIT Passwort.
+
+Da der bamboo-user per Ansible zur sudo-Gruppe hinzugefügt wurde griff diese Regel und der Bamboo-Plan bekam ein 
+
+{code:bash}
+
+sudo: no tty present and no askpass program specified
+
+{code}
+
+beim Versuch das Deployment-Skript per remote auszuführen.
+
+
+
+Lösung:
+
+Ich habe die Zugehörigkeit zur sudo-Gruppe in Ansible herausgenommen."																																																						

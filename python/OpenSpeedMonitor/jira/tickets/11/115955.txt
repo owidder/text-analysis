@@ -1,0 +1,5 @@
+Optionale externe WPTServer URL einführen	"Wenn man den WPTServer in einem Docker-Netzwerk betreibt können die internen URLs (wie kommuniziert der OSM mit WPT) und die externen URLs (welche URL muss der User im Browser aufrufen) von WPT anders sein.
+
+Es wäre deshalb hilfreich eine optionale externe URL zu definieren, mit der man dann zB Links von TimeSeries Chart zu WPTServer generiert.
+
+Standardmäßig sollte dann interne URL = externe URL gesetzt werden."		Improvement	OpenSpeedMonitor	23/Mar/17 4:59 PM																																																																					

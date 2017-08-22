@@ -1,0 +1,13 @@
+Change next release version to 5	"Our next release will not be iteraplan 3.5, but *iteraplan 5*.
+
+* Change current SNAPSHOT version to 5.0-SNAPSHOT, both in pom and build.properties
+* The release should be displayed as *iteraplan 5*, not iteraplan 5.0 or 5.0.0. For this there need to be some changes:
+** Separate display of iteraplan version on login screen from build ID and set it accordingly to display *iteraplan 5*
+** Find whether there are other occasions where the iteraplan version is displayed, aside from the login screen and the footer, and change them to display *iteraplan 5* as well.
+** Continue to use detailed build ID for iteraplan footer
+** *maybe*: Change text on start screen from ""iteraplan - simple and effective IT Landscaping"" to ""iteraplan 5 - simple and effective IT Landscaping"". Check with [~fka] whether this should be done.
+** It should be possible to easily set the displayed version with a single additional property."		Task	iteraplan PO	10/Nov/14 1:25 PM	10/Dec/14 8:46 AM					version									11/Nov/14 10:10 AM;fka;Start screen text should be "iteraplan - simple effective EAM"	"21/Nov/14 2:47 PM;fam;Version change implemented. Startscreen text adjusted.
+Replaced full iteraplan version on login screen with new variable for major version.
+Did not find other (than mentioned) occasions of iteraplan version in the UI.
+Documentation not necessary, as this are just little UI adjustments."	24/Nov/14 10:13 AM;fka;On the login screen the version number is missing	"05/Dec/14 2:33 PM;fam;Found and fixed error. 
+Note: Build server is using JSP's from customization."																																																			

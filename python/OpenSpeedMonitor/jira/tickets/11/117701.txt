@@ -1,0 +1,29 @@
+Interactive Client crashes if date intervals and attributes have the same name (server)	"produce with trunk or 5.5.
+
+
+
+# Open the classic client
+
+# Create a date interval with the same name like an attribute
+
+# Open the interactive client and check the list view / single element view 
+
+# Strange things are happening, it is not always the same error 
+
+
+
+It happens, that the list view is white, single element view is white or shows not alle attributes usw. 
+
+
+
+Expected: That the views working correctly 
+
+Actual: The views makeing strange things "		Bug	iteraplan Speedbird	05/Apr/17 8:40 AM	25/May/17 6:23 PM														"12/Apr/17 10:00 AM;fka;Date intervals should not have the same name as an attribute and vice versa
+
+
+
+Please prohibit this naming conflict in the backend.
+
+
+
+Provide a DB migration script for renaming existing attributes/date intervals."	25/May/17 6:23 PM;ants;Review done: https://iteraweb.iteratec.de/fisheye/cru/IP-625																																																					

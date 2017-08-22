@@ -1,0 +1,85 @@
+Show active user in the header (Server + Client)	"*Summary:*
+
+Show active user in the header
+
+
+
+*Server:*
+
+* Extend existing REST-API {{api/administration/permissions}}
+
+* Extend existing JSON-Structure with the following object:
+
+
+
+{code:java}
+
+{
+
+  ""system"": BOOLEAN,
+
+  ""iteraQl"": BOOLEAN,
+
+  ""search"": BOOLEAN,
+
+  ""configAttributes"": BOOLEAN,
+
+  ""editPublicSavedQueries"": BOOLEAN,
+
+  ""useDiagrams"": BOOLEAN,
+
+  ""useNavigator"": BOOLEAN,
+
+  ""useReactor"": BOOLEAN,
+
+  ""viewHistory"": BOOLEAN,
+
+
+
+ ""user"":{
+
+     ""id"": NUM,
+
+     ""loginName"": STRING,
+
+     ""firstName"": STRING,
+
+     ""lastName"": STRING,
+
+     ""email"": STRING,
+
+     ""lastModUser"": STRING,
+
+     ""lastModTime"": STRING
+
+  }
+
+}
+
+{code}
+
+
+
+*Client:*
+
+* Create a global JavaScript-object ""userProfile""
+
+* Save all ""user""-information of the REST-API in this object
+
+* In the header:
+
+** Replace existing logout-button with icon ""account circle"" and the name of the user
+
+** After clicking on this button offer a drop-down with one entry for ""Logout"" (German: ""Logout"")"		New Feature	iteraplan Speedbird	22/Feb/17 5:54 PM	21/Mar/17 10:33 AM														"28/Feb/17 12:22 PM;roia;I suggest not to produce tons of tiny REST services. I think, it would be better to implement one, which would contain some more information.
+
+
+
+E.g. also include in the userProfile response the data, which is currently retrieved with permissionsService (user profile would also contain permissions data and other user-related data). (/)"	06/Mar/17 8:42 AM;msr;I think, that's ok. Let's include it there. I'll update the ticket description.	"16/Mar/17 10:31 AM;dmkh;??Replace existing logout-button with icon ""account circle"" and the name of the user??
+
+ [~msr], name of the user is login name or FirstName + LastName?
+
+
+
+Also, I placed {{userProfile}} to {{headerScope}}, so it is accessible in all controllers using {{headerScope}}."	"20/Mar/17 2:22 PM;msr;It is the login name.
+
+Good idea with the headerScope."																																																			

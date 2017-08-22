@@ -1,0 +1,19 @@
+Legend entry for relationship filter with "No Associations" enabled is wrong	"Reproduce:
+
+
+
+# Go to IFD
+
+# Add new node filter
+
+# Choose relationship filter on ""Affecting Projects""
+
+# Enable ""No Associations"" check box (see scrennshot)
+
+
+
+Result: Legend entry says ""Nodes filtered by having Affecting Projects"" (see screenshot)
+
+
+
+Expected: Legend entry ""Nodes filtered by *NOT* having Affecting Projects"""		Bug	iteraplan PO	21/Apr/16 1:12 PM	26/Apr/16 5:59 PM																																																																				

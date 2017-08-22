@@ -1,0 +1,7 @@
+Tests für Graphite-Funktionalität	"Dieses Ticket geht aus IT-1039 hervor.
+
+Es sollen (Unit-)Tests für die Schedule-Jobs WeeklyReportsJob, HourlyReportsJob, DailyReportsJob erstellt werden.
+
+Aus IT-1101:
+Wir haben für das via Quartz getriggerte Senden von Daten nach Graphite keine Tests.
+"		Improvement	OpenSpeedMonitor	23/May/16 11:17 AM																																																																					

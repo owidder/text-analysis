@@ -1,0 +1,14 @@
+Multistep-Messungen ermöglichen	"Die Messfrequenz, mit der mittels WPT gemessen werden kann, soll erhöht werden. 
+
+Um dies zu ermöglichen, soll eine einzelne Jobausführung mehrere Steps messen können.  Diese Steps werden im WPT-Script durch einen neu eingeführten Script-Command voneinander abgegrenzt. Aus dem xml-Result eines solchen Jobs lassen sich die Results der einzelnen Steps lesen und entsprechend persistieren.
+
+Dieses Feature umfasst Anpassungen an den folgenden Komponenten:
+* WptServer (PHP)
+* WptMonitor (PHP)
+* iteraSpeedMonitor (Grails)"		Epic	OpenSpeedMonitor	28/May/13 12:51 PM	19/Jan/17 9:32 AM														"10/Jul/13 2:37 PM;mzeimer;Vorschlag: Könnten wir zukünfig beginnen in einer Komplexitätsskala zu schätzen? Diese bildeten wir dann mit den Erfahrungen aus vergangenen Sprints auf PT ab. Eine initiale PT Schätzung fällt aufgrund der ""unbekannten code-Basis"" recht schwer.
+
+Hinzu kommt, dass das Datenmodell zyklisch ist. Besipiel: WptResult referenziert HttpArchive und HttpArchive referenziert WptResult. Dieses kann Änderungen ebenfalls erschweren. Idealerweise sollten wir nicht unmittelbar benötigte Zyklen bei den anstehenden Änderungen entfernen.
+
+!zyklisches-datenmodell.jpg!"	"10/Jul/13 4:04 PM;mzeimer;Anbei eine Skizze einer sehr simplem Architektur, auf die wir uns einigen könnten. Diese ist, zum Teil, so vorhanden. Das Auslagern der GORM-/Datenbankinteraktionen in dedizierte Dienste erleichtete das Testen (vor Allem eine testgetriebene Entwicklung) erheblich.
+Ferner sollten wir das zusammenführen zu einem Masterprojekt überdenken (ausgenommen chart).
+!simple-architecture.png!"																																																					

@@ -1,0 +1,3 @@
+Redirect the classic client login.jsp to new client login screen (Server)	"In Version 5.5. when you open the old login url a stacktrace will be produced. 
+
+Please redirect the classic client login.jsp to new client login screen."		Bug	iteraplan Speedbird	05/Apr/17 1:08 PM	04/May/17 2:22 PM														04/May/17 2:22 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-570																																																						

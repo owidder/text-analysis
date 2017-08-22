@@ -1,0 +1,5 @@
+Basic functionality of IFD	"Create the basic functionality for the Information Flow Diagram:
+
+* Draw an unfiltered diagram of all Information Systems and their interfaces"		New Feature	iteraplan PO	17/Jun/15 3:56 PM	15/Jul/15 11:07 AM														"15/Jul/15 11:07 AM;fam;All subtickets closed.
+
+Epic closed."																																																						

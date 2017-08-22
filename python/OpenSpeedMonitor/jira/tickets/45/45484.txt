@@ -1,0 +1,10 @@
+Saved Reports can be deleted by accident	"If you initiate the deletion of a saved report, but reconsider and attempt to cancel, the report can, under certain circumstances, still be deleted.
+
+Example:
+1. Navigate to an iteraplan page with saved queries, for example cluster diagrams.
+2. Click the 'delete' button for a saved query.
+3. Click 'Cancel'
+4. Now try to load the saved query
+
+=> after click on 'Ok' of the confirmation dialog for loading the query, it will be deleted instead.
+Doesn't happen if you refresh the page between step 3 and 4."		Bug	iteraplan PO	16/Apr/12 1:37 PM	18/Apr/12 2:17 PM					savedquery									17/Apr/12 1:45 PM;gph;The problem was, that with every ModalDialog, a new callback was bound to the OK-Button. Fixed it by unbinding event old handlers before binding a new Click-Event to the button.																																																						

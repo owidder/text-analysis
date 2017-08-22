@@ -1,0 +1,10 @@
+Wrong color for Business Object in the legend	"Steps to reproduce:
+1. Go to LSD page
+2. Use Business Function as content type
+Actual: Settings line for horizontal axis colored by red color
+Expected: Settings line should be colored by yellow color"	47562	Sub-task	iteraplan PO	31/Mar/15 4:55 PM	07/Apr/15 1:33 PM													"Workspace: Windows 8.1 
+Browser: Google chrome 39.0, IE 11,Mozilla Firefox 36.0.4 
+revision: 853"	"02/Apr/15 11:38 AM;dasm;Verified
+revision 870
+
+(color for Business Object was changed to red according to color for Business Object's  icon)"																																																						

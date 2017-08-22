@@ -1,0 +1,27 @@
+Highlight all appearances with one click	"*Summary:*
+
+Highlight all appearances of an element with one click.
+
+
+
+*As-Is:*
+
+If you highlight one element, which appears multiple times in the diagram, only the select one element is highlighted.
+
+
+
+*To-Be:*
+
+If you highlight one element, which appears multiple times in the diagram, all elements are highlighted.
+
+
+
+*Approach:*
+
+The same applies for the removal of highlighting.
+
+
+
+Added ""Highlighting all modified in..."" filter to legend
+
+"		New Feature	iteraplan PO	11/Dec/14 1:53 PM	17/Aug/15 11:06 AM														17/Aug/15 11:06 AM;ach;to do: use translater, now it is a part of ITERAPLAN-3835																																																						

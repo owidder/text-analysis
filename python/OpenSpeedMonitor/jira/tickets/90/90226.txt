@@ -1,0 +1,63 @@
+REST interface for Reactor Script Configurations	"REST interface with CRUD 
+
+* GET: {code}https://sample.org/iteraplan/api/reactor/configs?path='/folderName/subFolder/script.xslt'{code}
+
+* POST {code}https://sample.org/iteraplan/api/reactor/configs'{code} + content in body; Create new entry (Update corresponding to scriptFileName if already there)
+
+* PUT {code}https://sample.org/iteraplan/api/reactor/configs'{code} + content in body; Update corresponding to scriptFileName
+
+* DELETE {code}https://sample.org/iteraplan/api/reactor/configs?path='/folderName/subFolder/script.xslt'{code}"		New Feature	iteraplan Quickfox	12/Jul/16 11:48 AM	01/Aug/16 6:39 PM														"21/Jul/16 5:44 PM;tam;First draft for Json-Responses. Also important for IPTQ-43 ([~mwe])
+
+
+
+GET / POST / PUT
+
+{code:java}
+
+{
+
+	'publishedName':'test',
+
+	'scriptFileName':'test.xslt',
+
+	'outputFileName':'output.txt',
+
+	'savedQueries': '1,2,42',
+
+	'roles': 'admin, tom',
+
+	'cacheTime':1
+
+}
+
+{code}
+
+
+
+DELETE:
+
+{code:java}
+
+{
+
+	'scriptFileName':'/folderName/subFolder/script.xslt',
+
+}
+
+{code}
+
+
+
+
+
+If requests failed:
+
+{code:java}
+
+{
+
+	'message':'reason'
+
+}
+
+{code}"	28/Jul/16 4:24 PM;mwe;I did not check the code only the functionality. Please implement the PUT requests as written in the description. Update with same publishedName did not work.	01/Aug/16 6:25 PM;tsu;The commit 25701 of IPTQ-7 belongs to this ticket.																																																				

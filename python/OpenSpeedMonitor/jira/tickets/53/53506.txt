@@ -1,0 +1,27 @@
+Reactor result download IE11 only via "page source".	"Reported by MJo, thanks.
+
+
+
+Not yet retested.
+
+
+
+report follows:
+
+
+
+Using IE11, the download buttons of the reactor UI lead to a page that shows the file as text, not to a ""save as"" dialog. 
+
+With a work around via ""show page source"", ""save page"" and careful selection of the file type, the file content can be downloaded.
+
+
+
+Tested against local installation and demo on server.
+
+
+
+No problems with FF.
+
+
+
+If there is a solution by configuring the IE locally, please tell MJo, and all other users."		Bug	iteraplan PO	12/Aug/15 10:21 AM	02/Oct/15 10:07 AM																																																																				

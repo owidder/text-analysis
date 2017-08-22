@@ -1,0 +1,23 @@
+Verbesserung der Infromationen bei Script-Validierung	"1. Die Skriptvalidierung erkennt korrekt, wenn ein MeasuredEvent an der falschen Page hängt.
+
+Es sollte jedoch im Fehler direkt mit angezeigt werden, an welcher Page das MeasuredEvent wirklich hängt. Beispiel: http://dev.openspeedmonitor.wpt.iteratec.de/job/edit/573
+
+Gleich der erste Messchritt wirft einen Fehler, aber es wird nicht ersichtlich was eigentlich richtig wäre.
+
+
+
+2. Wenn ein neues  MeasuredEvent angelegt wird, sollte auch angezeigt werden an welche Page dieses gehängt wird. Wenn die Page auch neu ist, sollte man sich ggf. eine separate Information sparen.
+
+
+
+3. Die Fehleranzeige bei Validierungs-Fehlern solle besser formatiert sein (Das Popup wenn man das Ausrufezeichen-Icon hovered). Es gibt links sehr viel Whitespace und rechts wird der Text zentriert, was nicht schön ist. Wenn es mehr als einen Fehler gibt (z.B. falsches Mapping und MeasuredEvent doppelt verwendet), ist die Formatierung noch zerschossener.
+
+
+
+"		Improvement	OpenSpeedMonitor	06/Jan/17 8:20 AM	06/Jan/17 3:30 PM														"06/Jan/17 3:30 PM;msk;Fehlerfall falsche Page: Die richtige Page wird jetzt angezeigt
+
+Neue ME: Es wird angezeigt an welcher Page das neue ME hängt.
+
+Formatierung der Fehler: Der Whitespace wird jetzt genutzt, außerdem sind die Listenelemente Linksbündig und es werden keine ""a"" Elemente mehr erzeugt
+
+"																																																						

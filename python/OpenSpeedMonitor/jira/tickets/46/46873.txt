@@ -1,0 +1,11 @@
+Category page list search	"Search should work only for active (displayed) columns. All other data (in hidden columns) should be ignored.
+
+The text search field right of the ""Edit columns"" must hide all rows that do not match.
+An element (row) matches, if either the name, the description text or a value in another column contains the value of the search text.
+Leading or trailing whitespace of the search text is ignored.
+Case is ignored.
+The elements filtered out should disappear with a (preliminary) animation, implemented with ng-animate and a CSS transition.
+The number part must change into the form ""15 of 49 Information Systems"".
+When a search text is active, there should be a (preliminary) icon right of the search text box, for example a ""X"" or similar, that clears the search text and restores the full list.
+Note that this view is structurally identical for all types of elements (Technical Components, Projects, Business Processes, ...), but in the scope of this ticket only Information Systems are required.
+Note that in addition to filtering by simple text matching there are ""structured filters"" of the form ""status = current"", but this is in another ticket."		New Feature	iteraplan PO	18/Aug/14 7:55 PM	29/Sep/14 10:04 AM														28/Aug/14 3:10 PM;sepr;Est 2 PD	29/Sep/14 10:04 AM;fka;Visual transition has to be checked agein																																																					

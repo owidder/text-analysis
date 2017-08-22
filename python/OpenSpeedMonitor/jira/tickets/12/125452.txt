@@ -1,0 +1,29 @@
+List view: Cannot change width of last column after switching columns order	"1.Open Data-Business Domain
+
+
+
+2.Add column Accountability
+
+
+
+3.Resize Accountability column to left for maximum (see screenshot 1)
+
+
+
+4.Switch Accountability and Description (see screenshot 2)
+
+
+
+Actual:
+
+ Now last column cannot be resized
+
+ Expected:
+
+ Last column can be resized
+
+
+
+Hint:
+
+ Check the ""CorrectWidthOfLastColumn""-method."		Bug	iteraplan Speedbird	26/Jun/17 3:55 PM	26/Jul/17 2:17 PM														25/Jul/17 12:55 PM;olal;After switching columns it still cannot be resized correctly																																																						

@@ -1,0 +1,15 @@
+Springs ExceptionHandler does not work after Spring Update to 3.2.x	"After the Spring Update, the ExceptionHandler aren't invoked anymore. This leads to serious problems, because every Exception, which is not caught, will be forwarded to Tomcat and then displayed as error page (no vital sign of iteraplan anymore). 
+
+After a short analysis, the following facts have been collected:
+
+* With Spring 3.2.x a new Exception Handling Routine has been published. Instead of handling exceptions in every Controller, a global handler can be defined (Annotation *@ControllerAdvice*). 
+
+* Defining a global Exception handler with ControllerAdvice does not work, except the ControllerAdvice class is annotated with @EnableWebMvc. 
+
+* It seems, that with the second annotation, the config xml will be ignored (or partly ignored) and configuration is done by looking for annotated classes in a root package (which is defined in springmvc.xml)
+
+* Ignoring the xml configuration leads to Exceptions when any type of building block is opened (LazyInitializationException from Hibernate). Looking at springmvc.xml there is a section, which is an explicit workaround for this exception. 
+
+* Deleting the @EnableWebMvc Annotation and configuration of the ControllerAdvice or the ExceptionHandlers in the Controllers hasn't worked so far. I have added explicitly the ControllerAdvice to the scan path for annotations. 
+
+"		Bug	iteraplan PO	06/Aug/14 11:24 AM	20/Aug/14 11:02 AM																																																																				

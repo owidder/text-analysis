@@ -1,0 +1,1 @@
+BB-Hierarchy-changes through excel-import	Test and document what changes can and can't be done to the database by uploading new data via excel-import (e.g. import, update, delete), with special focus on the hierarchy of the elements.		Task	iteraplan PO	10/Sep/13 3:22 PM	30/Dec/15 3:17 PM					excel	import																																																														

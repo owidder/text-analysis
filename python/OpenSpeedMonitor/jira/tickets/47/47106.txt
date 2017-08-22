@@ -1,0 +1,1 @@
+Context-Infoflow faulty	Context-Infoflow visualisation in 3.4. results in a "general technical error".		Bug	iteraplan PO	31/Oct/14 1:02 PM	31/Oct/14 3:38 PM																																																																				

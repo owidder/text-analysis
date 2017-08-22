@@ -1,0 +1,1 @@
+iteraplan 3.0.RC1	Build iteraplan 3.0 Release Candidate 1		Task	iteraplan PO	29/Mar/12 11:55 AM	02/Apr/12 10:59 PM														29/Mar/12 2:55 PM;kvo;Preparations can be started; Final go probably either tomorrow or Monday	02/Apr/12 6:34 PM;sry;All artifacts have been deployed and distributed.																																																					

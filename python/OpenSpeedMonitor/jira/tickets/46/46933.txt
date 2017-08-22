@@ -1,0 +1,79 @@
+Edit name with validation	"To the single item view of IS, add editing for the IS name, complete with changing the loaded (JSON) data in the browser, and writing back the modified IS to the REST API.
+
+Note that in the scope of this ticket, only the IS name can be edited. Other fields of the IS will be made editable later.
+
+Steps:
+(0) Initially, the system shows a single information system in the single item view, with the name of the IS as simple HTML text. 
+(1) The user clicks the name text.
+(2) The system shows the name in a text input field. The focus is in the input field, the cursor is at the end of the name.
+(3) The user edits the name with the keyboard.
+(4) The system validates the current name after each change (not only on blur), and shows a validation message if needed.
+(5) The user clicks somewhere else, outside the text input field.
+(6) The system displays the modified name, again as a simple HTML text, possibly marked as invalid.
+(7) If the name is valid, the system writes the modified information system back to the iteraplan server, via a PUT on the REST API.
+
+Details:
+
+To (0): The name of the information system is only simple text, not visually different form other simple text. It may have a ""pointing finger"" cursor instead of a , just as a <a>-element. 
+
+To (2) The input field hides/replaces the plain text visually. The system may hide the text, or simply cover it with the field.
+
+To (3) The user can past a name from the clipboard, or press keys at the keyboard.
+
+To (4) A IS name must not contain a colon or a hash sign, it must not be empty (or only whitespace characters), it must not be a single dash.
+The system validates the name after each key (or paste).
+If the name is invalid, the system highlights the input field (red text, red frame, details maybe later with Tanya), and displays a message,
+Message is one of:
+* Must not contain a colon
+* Must contain a hash if it was present before editing and not contain otherwise.
+* Must not be empty.
+* Must not be a single dash.
+* Must be unique.
+
+The forbidden colon or hash signs should be ignored as key presses in the first place. So this invalid name can only be entered by copy and paste.
+
+To (5) The user can always leave the editing. The validiation does not block this.
+
+To (6) An invalid name is marked with red text color. An invalid empty name is displayed as ""[empty]"", so that there is something to click on.
+
+To (7): writing back is done only for valid names, because invalid names will lead to an error on the server side.
+The writing back is done asynchronously, without feedback for the user. It will even fail silently, in the scope of this ticket and the demo.
+Visual feedback on ""writing in progress"", ""writing OK"" or ""writing failure"" may be later tickets.
+ 
+In all cases, valid or invalid names, all other views of the information system display the edited name: list, diagram, view title.
+
+"		New Feature	iteraplan PO	09/Sep/14 2:21 PM	29/Sep/14 10:22 AM														"10/Sep/14 1:32 PM;sepr;Est. 3 PD
+
++ to Wolfgang:
+Please provide more information about API methods to update server data"	"10/Sep/14 3:33 PM;wfr;The client read the complete model with GET http://www.iteraplan.de/iteraplan_ee_demo/api/data
+in to a JSON with this simplified structure:
+
+[ <all business domains>, <all business functions>, ... <all information systems>, ... ]
+
+where <all information systems> has the form 
+
+{ ""query"": ""InformationSystem"", 
+""result"": [ <is1>, <is2>, <is3>, ... ] }
+
+If the information system is1 has the ID 42, and if its name is modified from ""Before"" to ""After"",
+then the client can write back the cange with a PUT on the resource name  
+
+http://www.iteraplan.de/iteraplan_ee_demo/api/data/informationSystem/42
+
+and the JSON structure as it was inside the complete model above (with all fields). 
+Fields that cannot be set from outside, for example last modfification timestamp, are ignored. 
+
+Even simpler: because we know that only the name is modified, we can PUT this structure:
+
+{ ""result"": [{ 
+""name"": [""After""] 
+} ] }
+
+The server leaves all fields that are not in the JSON structure unchanged.
+
+Please note that there are JSON array square brackets in there in two places, because in the general case, a query can return zero, one or more elements, so the result is an array, and a property can have no value (if optional) or multiple values (if multiple), so the value is an array, too. 
+
+Also note that the ""query"" in the JSON result is only for information, and PUT, only the ID from the resource name, that is the URL, is used, so you can leave the query alone.
+
+For more background, see at http://www.iteraplan.de/wiki/display/iteraplan/REST+API+Resource+Structure. The resource for PUTting back is called ""Building Block""
+"																																																					

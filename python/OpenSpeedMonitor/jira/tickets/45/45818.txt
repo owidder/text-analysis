@@ -1,0 +1,7 @@
+Line Chart: Unnecessary error page if I forget an input	"In the second configuration step for line charts:
+It is always necessary to specify a start and an end date.
+If I omit an indication, I come every time to an error page. It would be better when I get the information on the same page where I have forgotten the input.
+It would be even better, if you could omit the end date (as optional feature). 
+If there is no end date indicates, it should be used the current date.
+This would also correspond to the solution from version 4.0.
+"		Bug	iteraplan PO	01/Jul/13 4:23 PM	17/Jul/13 3:08 PM					usability	visualization								02/Jul/13 10:37 AM;aer;Would also be nice to have a suitable error message instead of an empty error box (cf. screenshot)	03/Jul/13 5:37 PM;smo;Changed the implementation for the end date so that it can be left empty without generating in error. In that case the current date is set as last date.	16/Jul/13 9:08 PM;sry;Is this ready to be tested, or will you do more here?	17/Jul/13 2:58 PM;smo;Fixed, except the content of the empty error box which has been moved to ITERAPLAN-1767.	17/Jul/13 3:08 PM;sry;Good, thx.																																																		

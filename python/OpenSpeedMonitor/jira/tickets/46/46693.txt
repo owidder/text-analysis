@@ -1,0 +1,10 @@
+Confusing warning when importing data 	"When trying to import data via the Mass Update functionality I'm getting this warning:
+
+""The value of property Unplanned Downtimes Occurence (S) for object expression with id 580 is not valid.""
+
+This is repeated for a couple IDs.
+
+""Unplanned Downtimes Occurence (S)"" is an attribute which can be given to Information Systems in our iteraplan model. But which IS is affected? Which value is not valid? What is ""object expression with id 580""?
+
+It would be really great if users would be given meaningful warnings and error messages which actually help to understand and resolve an issue rather than bothering users with iteraplan internal data which a user can not decipher. 
+"		Bug	iteraplan PO	20/Jun/14 10:35 AM	14/Jul/14 10:54 AM														20/Jun/14 10:44 AM;frank.reiter;Just found the reason of the warning: Although I used the new "overwrite" mode in iteraplan 3.3, enumeration attributes with changed values don't get overwritten / updated. I'll open a separate ticket for this.	20/Jun/14 11:06 AM;frank.reiter;Sorry, "Mass Update" is not the correct term. I'm talking about the "Export/Import" functionality in the "Mass Data" menu.	11/Jul/14 10:18 AM;dop;This issue is also realized by ITERAPLAN-2597. Now the actual reference in the excel sheet and the invalid value will be displayed. 	11/Jul/14 10:45 AM;frank.reiter;Sounds good, thanks!																																																			

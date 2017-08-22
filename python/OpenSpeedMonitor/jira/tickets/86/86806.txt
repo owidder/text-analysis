@@ -1,0 +1,41 @@
+Rename misleading export- import rights	"*Summary:*
+
+The naming of the export and import rights are wrong, please correct:
+
+
+
+* ""Run import (Excel)"" (as-is) = ""Run import and export"" (to-be)
+
+* ""Run import (XMI)"" (as-is) = ""Run legacy XMI-import"" (to-be)
+
+*  ""Run export (XMI)"" (as-is) = ""Run legacy XMI-export"" (to-be)"		Bug	iteraplan PO	09/Jun/16 9:35 AM	15/Jun/16 1:29 PM														"09/Jun/16 12:51 PM;msr;[~fka] : ""Dann bitte gleich machen!
+
+
+
+Danke
+
+Fabian""
+
+"	"14/Jun/16 5:15 PM;tam;There are still some properties, which need to be renamed.
+
+*ApplicationResourcesCustomBM.properties*
+
+role.permission.ExcelImport=Run import (Excel)  
+
+role.permission.XmiDeserialization=Run import (XMI)  
+
+role.permission.XmiSerialization=Run export (XMI)  
+
+
+
+*ApplicationResources_de.properties*
+
+role.permission.ExcelImport=Ausführen von Import (Excel)  
+
+
+
+Please clear if properties from iteraplan-common-base should be also renamed
+
+
+
+"	14/Jun/16 5:46 PM;aan;Renaming the  properties from iteraplan-common-base is not necessary in the moment																																																				

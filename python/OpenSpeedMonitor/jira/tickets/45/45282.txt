@@ -1,0 +1,6 @@
+Direct execution of saved queries fails to download with IE + HTTPS	"Reproduction: Use IE7/8 to do the following:
+# Make sure you are using a HTTPS connection to the server.
+# Create a spreadsheet report with Excel output and save the query
+# Click the triangle link to execute the query directly.
+
+Internet Explorer pops up an error message and refuses to download the Excel file, see attached screenshot. Other browsers do not cause any trouble."		Bug	iteraplan PO	24/Nov/11 12:58 PM	05/Dec/11 9:20 AM					reports	spreadsheet								24/Nov/11 2:39 PM;sry;Please test it in iteraplan 2.9.1 as well, as it was merged in there, too.																																																						

@@ -1,0 +1,98 @@
+Import von hierarchischen Strukturen funktioniert nicht korrekt	"Ich versuche Geschäftsprozesse, die Hierarchien haben, über Excel zu laden (Datei siehe Attachment). Es ist aber nicht komplett möglich, diese zu laden.
+
+
+
+Beim Laden kommen folgende WarnMeldungen und diese Hierarchien werden nicht erzeugt:
+
+
+
+Geschäftsprozess ""3-Single Risk"" konnte nicht in der Datenbank gefunden werden. Die Verbindung von Geschäftsprozess ""3-02-M Policies"" zu diesem Bebauungselement wird ignoriert.
+
+Geschäftsprozess ""1-Credit Insurance"" konnte nicht in der Datenbank gefunden werden. Die Verbindung von Geschäftsprozess ""1-05-M Risk Underwriting"" zu diesem Bebauungselement wird ignoriert.
+
+Geschäftsprozess ""5-Debt collection and Info for third parties"" konnte nicht in der Datenbank gefunden werden. Die Verbindung von Geschäftsprozess ""5-01-Info for third parties"" zu diesem Bebauungselement wird ignoriert.
+
+Geschäftsprozess ""1-Credit Insurance"" konnte nicht in der Datenbank gefunden werden. Die Verbindung von Geschäftsprozess ""1-02-CRM"" zu diesem Bebauungselement wird ignoriert.
+
+Geschäftsprozess ""1-Credit Insurance"" konnte nicht in der Datenbank gefunden werden. Die Verbindung von Geschäftsprozess ""1-04-Info"" zu diesem Bebauungselement wird ignoriert.
+
+Geschäftsprozess ""1-Credit Insurance"" konnte nicht in der Datenbank gefunden werden. Die Verbindung von Geschäftsprozess ""1-06-M Claims"" zu diesem Bebauungselement wird ignoriert.
+
+Geschäftsprozess ""3-Single Risk"" konnte nicht in der Datenbank gefunden werden. Die Verbindung von Geschäftsprozess ""3-03-M Claims"" zu diesem Bebauungselement wird ignoriert.
+
+Geschäftsprozess ""3-Single Risk"" konnte nicht in der Datenbank gefunden werden. Die Verbindung von Geschäftsprozess ""3-01-Single risk UW"" zu diesem Bebauungselement wird ignoriert.
+
+Geschäftsprozess ""1-Credit Insurance"" konnte nicht in der Datenbank gefunden werden. Die Verbindung von Geschäftsprozess ""1-03-M Policies"" zu diesem Bebauungselement wird ignoriert.
+
+Geschäftsprozess ""5-Debt collection and Info for third parties"" konnte nicht in der Datenbank gefunden werden. Die Verbindung von Geschäftsprozess ""5-02-Debt collection for third parties"" zu diesem Bebauungselement wird ignoriert.
+
+Geschäftsprozess ""1-Credit Insurance"" konnte nicht in der Datenbank gefunden werden. Die Verbindung von Geschäftsprozess ""1-01-GNB"" zu diesem Bebauungselement wird ignoriert.
+
+
+
+Mit freundlichem Gruß
+
+
+
+Thomas Liskow
+
+
+
+"		Fault	iteraplan Support	26/Jan/17 4:58 PM	31/Jan/17 8:17 AM														"26/Jan/17 4:58 PM;thomas.liskow@coface.com;
+
+[^ImportRGMProcesses_PART2_BusProc_LIST_20170126.xlsx] _(91 kB)_"	"27/Jan/17 9:13 AM;cst;Guten Morgen Herr Liskow,
+
+möchten Sie bestehende Geschäftsprozesse mit dem Excel import umsortieren, oder diese über den Excel import anlegen lassen? 
+Diese Information benötigen wir, um das Verhalten weiter prüfen zu können.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "	"27/Jan/17 9:27 AM;thomas.liskow@coface.com;Guten Morgen Herr Stangl,
+
+ich möchte die Geschäftsprozesse, die ich schon hierarchisch strukturiert bekomme, direkt neu in einem Schritt mit dieser Hierarchie anlegen.
+
+Viele Grüße,
+Thomas Liskow"	"30/Jan/17 10:00 AM;cst;Guten Morgen Herr Liskow,
+
+vielen Dank für Ihre Antwort.
+
+Wir haben das Problem nachstellen können und haben hierzu ein Analyse-Ticket angelegt.
+Als work a round können Sie die Geschäftsprozesse wie folgt anlegen. 
+
+Nehmen Sie ein leeres Template für den Excel-Import und fügen Sie die zu importierende Informationen hierzu ein. 
+Danach werden die Daten ohne die genannte Fehlermeldung angelegt und verknüpft.
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support  "	"30/Jan/17 10:23 AM;thomas.liskow@coface.com;Guten Morgen Herr Stangl,
+
+das hat wie beschrieben funktioniert.
+
+Vielen Dank
+Thomas Liskow"	"31/Jan/17 8:17 AM;cst;Hallo,
+
+
+
+vielen Dank für Ihre Antwort.
+
+
+
+Werde das Ticket für unserer Entwickler  hier verknüpfen und Ihren Request hierzu schließen. 
+
+Somit können Sie den aktuellen Stand zu diesem Fall prüfen. 
+
+
+
+https://iteraweb.iteratec.de/jira/browse/ITERAPLAN-5045 
+
+
+
+Dieser Fall wird nach dem Release 5.5 geprüft.
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support"																																																	

@@ -1,0 +1,16 @@
+Texts are not customized in non-supported locales	"_Reproduce:_
+# Install iteraplan with some customized texts, meaning with a file {{ApplicationResourcesCustomXYZ.properties}} in the according folder. This file should overwrite at least one of iteraplan's standard texts, for example the value of {{global.applicationname}} from ""iteraplan"" to ""iteraplan_test"".
+# Log into iteraplan, modifying the request header to accept locale ""en"" => The ui displays ""iteraplan_test"" as application name.
+# Log out and log into iteraplan again, this time modifying the request header to accept locale ""zh"".
+
+_Expected:_ Since ""zh"" is an unsupported locale, english should be used as fallback, thus also the english customizing => ""iteraplan_test""
+
+_Actual:_ Fallback to english works, the english UI is displayed, but the customizings are not applied => ""iteraplan""
+
+_Why?_
+The file {{ApplicationResourcesXYZ.properties}} is not included as valid resource file for locales other than ""en"", see {{WildcardReloadableResourceBundleMessageSource#isFilenameForLocale(String, Locale)}}.
+
+_Solution:_
+I see two possible solutions:
+# Change {{WildcardReloadableResourceBundleMessageSource}} to include the custom ApplicationResources files without language suffix the same way it is done with the non-customized files.
+# Subclass spring's SessionLocaleResolver. The custom implementation would have to know which locales are supported by iteraplan and explicitely return the locale EN if an unsupported locale was read from the request."		Bug	iteraplan PO	24/Jul/14 9:42 AM	05/Aug/14 9:59 AM					customization	localization																																																														

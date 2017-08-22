@@ -1,0 +1,3 @@
+Mark messages of REST-responses as error/warn/info	"Currently, if a response from a request using the writing REST-API contains messages, the message severity is not displayed.
+
+Better would be to return the messages with either a severity prefix or other markers to convey their severity."		Improvement	iteraplan PO	26/Jun/14 4:35 PM						message	REST																																																														

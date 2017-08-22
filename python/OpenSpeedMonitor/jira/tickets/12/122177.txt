@@ -1,0 +1,33 @@
+Visibility of editing elements in List View	"Fourth section in Metamodel tab
+
+
+
+Named: Visibility of elements in List View
+
+
+
+list of checkboxes, when marked - particular element is visible in List View
+
+
+
+by default all marked
+
+ * Export button
+
+ * Filter button
+
+ * Mass Update button
+
+ * Tree / List View button
+
+ * Quicksearch
+
+ * Add column option
+
+
+
+above the list: All / None {color:#14892c}(ger: Alle / Keine){color}
+
+
+
+All changes are saved imediately, users can see them after next log in."		New Feature	iteraplan Speedbird	23/May/17 3:13 PM																																																																					

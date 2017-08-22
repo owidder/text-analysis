@@ -1,0 +1,60 @@
+Customizing Münchener Hypothekenbank	"Im Customizing (welches im iterawiki liegt) scheinen ""Applikation"" und ""Technologie"" mit einem fehlerhaften nbsp abgegrenzt zu sein.
+
+
+
+Statt &nbsp; steht dort $nbsp; .
+
+
+
+Bitte korrigieren und dann zur MCON für die Anwendung in der QA-Umgebung schicken.
+
+
+
+Lieben Dank
+
+  Bjoern"		Fault	iteraplan Support	02/Aug/16 1:35 PM	16/Aug/16 3:27 PM														"05/Aug/16 10:00 AM;cst;Hallo Björn,
+
+
+
+haben die Änderungen umgesetzt.
+
+
+
+Hast du mir bitte den Ansprechpartner bei MCON welcher die Daten einspielt, oder E-Mailadresse?
+
+Habe zusätzlich die Daten mit an das Ticket hier angehängt. 
+
+
+
+[^MUC_HYP_Language.zip]
+
+
+
+Viele Grüße,
+
+
+
+Christoph Stangl - iteraplan Support"	"08/Aug/16 9:02 AM;bwu;Hallo Christoph,
+
+bitte direkt an Herrn Stefan Metko schicken. Bei der MCON kenne ich den festen Ansprechpartner nicht, sofern es den überhaupt gibt.
+
+Danke und Grüße
+  Bjoern"	"08/Aug/16 9:08 AM;cst;Hallo Bjoern,
+
+mache die Mail fertig und setz dich CC.
+
+Grüße,
+
+Christoph "	"08/Aug/16 9:41 AM;cst;Mail ging an den Kunden mit Daten raus.
+
+Viele Grüße,
+
+Christoph "	"16/Aug/16 3:27 PM;cst;MCON hat das Customizing eingespielt.
+
+
+
+Grüße,
+
+
+
+Christoph"																																																		

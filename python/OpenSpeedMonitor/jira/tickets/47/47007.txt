@@ -1,0 +1,1 @@
+Unset complexity in list view	In the list view, the dropdown list of values for "complexity" must have a "No value" entry.	47009	Sub-task	iteraplan PO	29/Sep/14 1:12 PM	09/Jun/15 5:06 PM																																																																				

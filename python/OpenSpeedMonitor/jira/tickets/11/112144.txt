@@ -1,0 +1,35 @@
+Edit Names of Attribute Groups	"*Summary:*
+
+Create Edit-Functionality for names of Attribute Groups.
+
+
+
+*Scope:*
+
+* Excluding Default Attribute Group
+
+* Excluding Toplevel Attribute Group
+
+* but all user specific names
+
+
+
+*UI:*
+
+* Use UI and interactions from Single Attribute View as blueprint (including error-handling)
+
+* The ""Name""-field is mandatory, i.e. do not allow to set the ""Name""-field to null-string
+
+
+
+*Technology:*
+
+* Try to reuse common edit-components from Single Attribute View
+
+* Trigger reload-service using {{$scope.$emit(""triggerDataReset"");}} (IPTS-549)
+
+"		New Feature	iteraplan Speedbird	17/Feb/17 3:50 PM	14/Mar/17 9:55 AM														13/Mar/17 11:46 AM;dmkh;Review is done, one comment here: https://iteraweb.iteratec.de/fisheye/cru/IP-428#c6956	"13/Mar/17 1:30 PM;roia;I think, the layout changes are in scope of the -IPTS-617-
+
+
+
+ And, looks like, is fixed now"																																																					

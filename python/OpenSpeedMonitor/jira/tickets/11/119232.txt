@@ -1,0 +1,15 @@
+Mass Update - Single Enumeration - Empty set 	"Reproduce with trunk
+
+ # Open ""Data"" and ""Information Systems""
+
+ # Add the column ""Service Provider""
+
+ # Let the value field empty and click on ""Set""
+
+ # In the summary 7 updates failed
+
+
+
+Expected: That the click on ""Set"" will clean the column ""Accountability"", as a click on clear would do
+
+ Actual: A empty ""Set"" cannot be executed"		Bug	iteraplan Speedbird	21/Apr/17 2:04 PM	27/Apr/17 12:11 PM														27/Apr/17 12:11 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-536																																																						

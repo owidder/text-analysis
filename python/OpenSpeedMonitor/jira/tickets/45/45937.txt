@@ -1,0 +1,7 @@
+Overview for single sign on - basics, supported options, possible options	"Draft an internal overview on single sign on that enables a consultant to discuss about the different options.
+Includes answers for:
+- what do we support already
+- what is possible with Toccat, Windows authentication, OAuth
+- what could be expensive
+- what infrastructure is the client supposed to have for which option
+"		Improvement	iteraplan PO	30/Jul/13 8:59 AM	30/Dec/15 2:51 PM														30/Dec/15 2:51 PM;fka;With some release prior to 3.4																																																						

@@ -1,0 +1,39 @@
+PUT Request über API schlägt fehl	"Bisher habe ich bloß die angehängte ""Fehlermeldung"" bekommen. Bin aber gerade dabei nachzuforschen, was genau sie gemacht haben.
+
+
+
+Zwischenstand:
+
+Schreiben wollen wir immer folgende Werte:
+
+ 
+
+-	""Confidentiality (Information Security (Ext. Data – ITSM WACtool))"" 
+
+-	""Integrity (Information Security (Ext. Data – ITSM WACtool))"" 
+
+-	""Availability (Information Security (Ext. Data – ITSM WACtool))"" 
+
+-	""Security Classification signed (Information Security (Ext. Data – ITSM WACtool))"" 
+
+-	""Information Security Comments (Information Security (Ext. Data – ITSM WACtool))"" 
+
+-	""BGW Categorization (BGW Categorization (Ext. Data – ITSM WACtool))"" 
+
+-	""BGW Categorization Date (BGW Categorization (Ext. Data – ITSM WACtool))""
+
+ 
+
+Derzeit habe ich auf QA 20 mal den Fall, dass der Fehler auftritt (anscheinend schon etwas länger). Ob der Fehler immer kommt, kann ich erst morgen prüfen.
+
+"		Fault	iteraplan Support	01/Jun/17 8:41 AM	26/Jun/17 7:00 AM														"01/Jun/17 8:41 AM;dne;
+
+[^QA_Iteraplan_Export_Error2.txt] _(2,33 MB)_"	"01/Jun/17 4:20 PM;msr;Hallo Daniel,
+
+verstehe ich es richtig, dass ein PUT-Request auf ""iteraplan/api/data/InformationSystem/73624"" diese Meldungen auslöst?
+Zur Analyse wäre das iteraplan-Logfile, der Tomcat-Log sowie der genaue PUT-Request sehr hilfreich.
+
+Viele Grüße
+
+Marcel
+"	01/Jun/17 4:33 PM;dne;Jep, I'm on it. Details folgen morgen																																																				

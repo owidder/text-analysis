@@ -1,0 +1,3 @@
+Farben stacked / voreinander	"Wenn Attribute Stacked sind sollten die Farben der Attribute stark unterschiedlich sein.
+
+Werden die Attribute voreinander dargestellt, sollten die Farben nur leicht unterschiedlich sein (bspw alle Blautöne)."		Task	OpenSpeedMonitor	07/Dec/16 1:57 PM	20/Apr/17 2:16 PM																																																																				

@@ -1,0 +1,15 @@
+E-Mailadress cannot be saved	"Reproduce with trunk
+
+ # Open the classic client
+
+ # Open ""Roles and Permission"" and ""User Managment""
+
+ # Edit one of the users and set the mail ""test@uniper.energy""
+
+ # This mail cannot be saved
+
+
+
+Expected: The mail will saved
+
+Actual: The mail will not be saved"		Technical question	iteraplan Support	04/Apr/17 1:51 PM	04/Apr/17 1:51 PM																																																																				

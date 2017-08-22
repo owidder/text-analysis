@@ -1,0 +1,1 @@
+Detail-Ergebnis in der Job-Liste verlinken	Link zum Detail-Ergebnis (WPT-Server) hinter das animierte GIF legen.		Bug	OpenSpeedMonitor	24/Feb/14 2:13 PM	24/Feb/14 4:32 PM																																																																				

@@ -1,0 +1,1 @@
+Improve legends for values with to lang names in graphical exports	Long value names are outside the legend boxes. This should be improved.		Improvement	iteraplan PO	16/Feb/12 9:36 AM	16/Feb/12 2:31 PM					export	graphical	legend							16/Feb/12 2:31 PM;kvo;Duplicates ITERAPLAN-445																																																						

@@ -1,0 +1,5 @@
+Fix CRUD-View von Event 	"Speichern eines Events führt zur NPE (http://localhost:8080/event/save)
+
+Editieren / löschen von Events führt zu einer 405 Method not allowed . Warscheinlich reicht es hier die action von POST -> PUT / DELETE zu ändern."		Bug	OpenSpeedMonitor	12/May/16 11:17 AM	12/May/16 3:31 PM														"12/May/16 3:31 PM;msk;The collection JobGroup in Event.groovy was nullable 
+
+"																																																						

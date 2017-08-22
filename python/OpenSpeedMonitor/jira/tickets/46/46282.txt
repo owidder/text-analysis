@@ -1,0 +1,4 @@
+Clean up unused web resources	"Over the years a couple of images, CSS files etc. have accumulated below the WebContent directory, but some of them aren't used/ referenced any longer. Those should be removed, because they are not maintained and may create confusion.
+
+One notable example are the two files {{WebContent/images/modelGerman.png}} and {{WebContent/images/modelEnglish.png}}. (NOTE: At least the german version is referenced by one of the customization sets, even though the diagram is outdated. It should be moved into the customization.)
+"		Task	iteraplan PO	28/Oct/13 4:38 PM	06/May/14 1:08 PM					cleanup																																																															

@@ -1,0 +1,6 @@
+New Client: Transition and hand-over automated test concept	"*Summary:*
+Hand-over the automated test concept for the new client to the Ukraine team. Explain, train, coach and support the Ukraine team for automated testing and review tests in the first weeks.
+
+Notes:
+
+Joint effort for Munich and Brightgrove team. Estimate and plan on both sides."		Task	iteraplan PO	20/Jan/15 10:57 AM	09/Feb/15 11:42 AM					newClient	test								09/Feb/15 11:42 AM;fka;Part of ITERAPLAN-2839																																																						

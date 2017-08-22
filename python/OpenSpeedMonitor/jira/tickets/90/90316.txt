@@ -1,0 +1,19 @@
+Benötigte Konfigurationsparameter	"Für IT-1199 ist es nötig zu wissen, welche Konfigurationsparameter (üblicherweise) durch den Nutzer gesetzt werden sollten.
+
+
+
+Beispielsweise:
+
+* OSM_URL
+
+* Adresse des SQL-Servers
+
+* Adresse der MongoDB
+
+* Credentials für MongoDB
+
+* etc...
+
+
+
+Hilfreich wäre es, wenn es - ähnlich wie im OSM - ein Config-Sample gibt, an dem man sich orientieren kann."		Task	OpenSpeedMonitor	13/Jul/16 10:48 AM	18/Aug/16 11:00 AM																																																																				

@@ -1,0 +1,16 @@
+Groovy/Grails-Update durchführen 2.3.3	"Bitte den Aufwand auf 6h beschränken und sonst gesondert freigeben
+"		Task	OpenSpeedMonitor	28/Oct/13 8:53 AM	10/Dec/13 5:12 PM														29/Oct/13 10:54 AM;rhe;+5h in Absprache mit Jens	"31/Oct/13 5:20 PM;rhe;Das Databinding wurde auf den Default SpringBinder zurückgesetzt:
+http://grails.1312388.n4.nabble.com/backward-compatability-of-Grails-2-3-0-databinder-td4650325.html"	"06/Nov/13 4:25 PM;jwerschmoeller;Es funktioniert auf DEV, aber nicht mit einem WAR-Deployment. Hier ist noch einiges an Research notwendig!
+
+Idee: IntelliJ Dependency-Graph nutzen"	"22/Nov/13 3:44 PM;nkuhn;Habe nach dem live-Deployment den master-Branch überall auf den develop rebased.
+Anschließend die 2.3.1-Branches auf den develop rebased."	26/Nov/13 5:57 PM;rhe;Anwendung läuft in Dev- und SEU-Umgebung,	"28/Nov/13 3:52 PM;mzeimer;ERLEDIGT
+
+Alle Plug-Ins auf eine Abhängigkeit zu einer alten Groovy-Version prüfen. Sollte eine Vorhandensein, das Plug-Ins aktualisieren und erneut prüfen. Führt dies nicht zum Ziel, dem Fehlen einer alten Abhängigkeit oder gibt es keine neuere Version, folgende Syntax bei dependency nutzen:
+
+compile ('THE.PLUG.IN:VERSION') {
+     excludes 'groovy'
+}
+
+Siehe hierzu auch:
+https://jira.grails.org/browse/GRAILS-10818"	"28/Nov/13 4:29 PM;mzeimer;Test Heute zeigte Fehler, siehe: 
+Testbericht SEU ISM 2013-11-28 - Grails 2.3.2-mze.docx"	29/Nov/13 4:11 PM;mzeimer;1. und 12. von Testbericht SEU ISM 2013-11-28 - Grails 2.3.2-mze.docx korrigiert.	29/Nov/13 5:00 PM;mzeimer;13. und 15. von Testbericht SEU ISM 2013-11-28 - Grails 2.3.2-mze.docx korrigiert.	29/Nov/13 6:23 PM;mzeimer;19. von Testbericht SEU ISM 2013-11-28 - Grails 2.3.2-mze.docx korrigiert.	03/Dec/13 2:13 PM;jwerschmoeller;Merge + 1xDeployment auf die SEU durchführen	10/Dec/13 5:12 PM;mzeimer;Test-Deployment war erfolgreich.																																											

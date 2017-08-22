@@ -1,0 +1,17 @@
+Nested Cluster Diagram (Testlink) [Browser - FF]		124266	Sub-task	iteraplan Speedbird	13/Jun/17 5:17 PM	19/Jun/17 2:56 PM														"15/Jun/17 9:23 PM;naba;Test cases: Diagrams/ Nested Cluster Diagram ip-78, 79
+
+ For smoke test please use
+
+[https://doc.iteraplan.de/display/iteraplan60/Nested+Cluster+Diagram] (examples and tips)
+
+
+
+Please be creative and progressive.
+
+
+
+*Note*:
+
+ - Work with documentation is still in progress
+
+ - Due to some technical issues some test cases are still out of date."	19/Jun/17 2:56 PM;mash;No issues found																																																					

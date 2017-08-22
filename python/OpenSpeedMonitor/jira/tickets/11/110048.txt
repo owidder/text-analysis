@@ -1,0 +1,60 @@
+Anpassung der URL in E-Mail-Template für Abonnements	"Hallo Herr Stangl,
+
+
+
+seit der Umstellung auf SSO haben wir das Problem, dass die Links in den Abo-Mails nicht passen. Die Links sehen z.B. so aus:
+
+https://ziteraplan.servers.wacker.corp:8443/iteraplan/show/informationsystem/34521
+
+
+
+Der Link führt allerdings ins Leere. Korrekt wäre es ohne Port:
+
+https://ziteraplan.servers.wacker.corp/iteraplan/show/informationsystem/34521
+
+
+
+Ich habe gesehen, dass man das vermutlich in der Datei <tomcat>/webapps/iteraplan/WEB-INF/classes/emails/common/link.ftl anpassen kann:
+
+<#macro createLink url><#if url??><#if (url?length > 0)> (${url})</#if></#if></#macro>
+
+
+
+Da ich mich allerdings nicht mit Freemarker auskenne, die Bitte an Sie, ob Sie oder die Kollegen mir evtl. eine angepasste Version ink. Abschneiden des Port-Teils zur Verfügung stellen könnten? Das wäre echt klasse.
+
+
+
+Vielen Dank für Ihre Unterstützung!
+
+
+
+Beste Grüße
+
+Matthias Habermann"		Technical question	iteraplan Support	30/Jan/17 11:32 PM	03/Feb/17 9:53 AM														"02/Feb/17 10:25 AM;cst;Guten Tag Herr Habermann,
+
+vielen Dank für Ihre Anfrage.
+
+Die Lösung ist etwas einfacher, in der iteraplan.properties finden Sie folgenden Eintrag:
+
+###############################################################################
+# Property to set an application address that is used for linking in exported
+# reports and graphics as well as bookmarks.
+# Should look like: https://<address>:<port>/<application deployment name>
+###############################################################################
+urlbuilder.application.address=
+
+Hier können Sie den Link hinterlegen. 
+
+urlbuilder.application.address=https://ziteraplan.servers.wacker.corp/iteraplan
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support 
+"	"03/Feb/17 9:52 AM;matthias.habermann@wacker.com;Hallo Herr Stangl,
+
+vielen Dank für den Hinweis - manchmal kann es so einfach sein :)
+
+Sie können den Request schließen.
+
+Beste Grüße
+Matthias Habermann"																																																					

@@ -1,0 +1,5 @@
+Update the PFD diagram to not require the legend to be drawn when diagram is beeing created	"Currently when the diagram is created it calls the {{zoomHandler}} to draw the proper size circles in the legend.
+
+
+
+So as we want the legend to be drawn after the diagram (see IPTS-184 ), we should refactor this."		Improvement	iteraplan Speedbird	28/Sep/16 12:53 PM	10/Oct/16 5:56 PM					portfolio									10/Oct/16 5:56 PM;dmkh;Review is done, please remove commented code: https://iteraweb.iteratec.de/fisheye/cru/IP-70																																																						

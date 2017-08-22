@@ -1,0 +1,1 @@
+Cron Hover funktioniert nicht	Hovert man in der JobList View über das Fragezeichen bei den Cron-Ausrücken, so geschieht nichts. Klickt man drauf, wird der Hinweis kurz sichtbar, dann wird die Seite neu geladen.		Bug	OpenSpeedMonitor	29/Jun/16 9:44 AM	30/Jun/16 8:34 AM																																																																				

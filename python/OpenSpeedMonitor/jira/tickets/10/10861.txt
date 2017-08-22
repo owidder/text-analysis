@@ -1,0 +1,34 @@
+Bug in der Persistierung der Locations 	"fetchLocations prüft auf Location.location und fetchResult auf Location.uniqueIdentifierForServer !!!
+
+Kann zu einer {code} org.hibernate.NonUniqueResultException at de.iteratec.ispc.LocationAndResultPersisterService.queryForLocation(LocationAndResultPersisterService.groovy:167) {code} führen. Tritt so live auf (Version 2.2.14).
+
+Stacktrace:
+{code}
+errors.GrailsExceptionResolver NonUniqueResultException occurred when processing request: [GET] /iteraSpeedMonitor/proxy/server7/xmlResult/140123_1F_857f0e04eba8a77208414c0e964b9141/
+query did not return a unique result: 2. Stacktrace follows:
+org.hibernate.NonUniqueResultException: query did not return a unique result: 2
+        at grails.gorm.DetachedCriteria$_get_closure2.doCall(DetachedCriteria.groovy:641)
+        at grails.gorm.DetachedCriteria$_withPopulatedQuery_closure10.doCall(DetachedCriteria.groovy:931)
+        at org.grails.datastore.gorm.GormStaticApi$_withDatastoreSession_closure20.doCall(GormStaticApi.groovy:680)
+        at org.grails.datastore.mapping.core.DatastoreUtils.execute(DatastoreUtils.java:302)
+        at org.grails.datastore.gorm.AbstractDatastoreApi.execute(AbstractDatastoreApi.groovy:37)
+        at org.grails.datastore.gorm.GormStaticApi.withDatastoreSession(GormStaticApi.groovy:679)
+        at grails.gorm.DetachedCriteria.withPopulatedQuery(DetachedCriteria.groovy:913)
+        at grails.gorm.DetachedCriteria.get(DetachedCriteria.groovy:640)
+        at grails.gorm.DetachedCriteria.get(DetachedCriteria.groovy:639)
+        at de.iteratec.ispc.LocationAndResultPersisterService.queryForLocation(LocationAndResultPersisterService.groovy:167)
+        at de.iteratec.ispc.LocationAndResultPersisterService.getOrFetchLocation(LocationAndResultPersisterService.groovy:142)
+        at de.iteratec.ispc.LocationAndResultPersisterService.updateLocationIfNeededAndPossible(LocationAndResultPersisterService.groovy:131)
+        at de.iteratec.ispc.LocationAndResultPersisterService.listenToResult(LocationAndResultPersisterService.groovy:109)
+        at de.iteratec.ispc.ProxyService$_fetchResult_closure2_closure3.doCall(ProxyService.groovy:133)
+        at de.iteratec.ispc.ProxyService$_fetchResult_closure2.doCall(ProxyService.groovy:132)
+        at org.grails.datastore.gorm.GormStaticApi.withTransaction(GormStaticApi.groovy:698)
+        at de.iteratec.ispc.ProxyService.fetchResult(ProxyService.groovy:131)
+        at de.iteratec.ispc.WptProxyController.xmlResult(WptProxyController.groovy:116)
+        at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:200)
+        at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+        at com.googlecode.psiprobe.Tomcat70AgentValve.invoke(Tomcat70AgentValve.java:38)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+        at java.lang.Thread.run(Thread.java:724)
+{code} "		Bug	OpenSpeedMonitor	23/Jan/14 11:46 AM	23/Jan/14 3:22 PM																																																																				

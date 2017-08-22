@@ -1,0 +1,35 @@
+Sprint 6? Use consistent terms: "nested cluster diagram", "nest" and "cluster"	"*Summary:*
+Use always the term ""nested cluster"" instead of ""nesting cluster"".
+
+*Affected parts of the system:*
+* Head of Nesting Cluster page
+* Building Block Type Liste Header: ""Show nested cluster diagram""
+* and so on
+
+Use the term ""cluster"" for the outer-to-inner relationship
+* for example ""Cluster Information Systems"" changes the type of the inner boxes to IS
+* for example ""Cluster by Business Processes"" changes the type of the outer boxes to BP
+
+Use the term ""nest"" for the outer-to-outer and inner-to-inner relationship
+* for example ""Nest by parent"" sets the self-relationship to the parent-direction of the parent/child self-relationship
+* in the context menu, the action is ""Nest by"" and affects the outer or inner element, depending on the element clicked.
+* if the action is outside of the context menu, it is ""Nest outer elements by"" or ""Nest inner elements by"", respectively.
+
+Note that the terminology must be used in all places consistently, including
+* menu and other actions
+* generated diagram titles
+* legend
+* sample data, pre-defined diagrams
+
+
+
+"		New Feature	iteraplan PO	26/Jan/15 8:24 AM	16/Feb/15 2:53 PM					nested									"16/Feb/15 10:03 AM;msr;* Legend: Please change the order of the elements: First the relation, then the grouping.
+* Legend: Use the term ""Path from outer to inner"" instead of ""Used relation""
+* Context menu: Use the term ""Use path"" instead of ""Use relationship"""	"16/Feb/15 10:36 AM;msr;Affected parts of the Nested Cluster Diagram:
+* Title of the page: ""Nested Cluster Diagram""
+* Title of the diagram: ""Nested Cluster Diagram: Product clusters Information Systems""
+* Context menu outer elements: ""Cluster by""
+* Context menu inner elements: ""Cluster"" and ""Nest by""
+* Legend: ""Nest inner elements by""
+
++ my first comment"	16/Feb/15 2:53 PM;msr;All terms are fixed																																																				

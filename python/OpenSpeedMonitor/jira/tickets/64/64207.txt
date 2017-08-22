@@ -1,0 +1,33 @@
+MySQL-Schema-Änderungen im laufenden Betrieb	"Wenn wir mit einem Deployment größere Änderungen am DB-Schema vornehmen, können wir diese seit der Einführung von Liquibase automatisch beim Starten der Anwendung vornehmen (lassen).
+
+Das Problem ist, dass während dieser Aktualisierung die Anwendung nicht läuft, bzw. wenn die live-Anwendung noch läuft sind ggf. einzelne Datenbank-Tabellen längere Zeit mit einem Lock belegt. Dies kommt einer Downtime ziemlich gleich.
+
+Um dieses Problem zu lösen müssten wir ein Tookl einführen, welches Schema-Änderungen _im Hintergrund_ und transparent durchführt.
+
+
+
+Diese Änderung sollten wir dann einplanen, wenn die nächste Anpassung am Schema ansteht, die vermutlich lange dauern würde.
+
+
+
+Links zu Tools, die on-the-fly Datenbank-Anpassungen machen (von Uwe):
+
+
+
+Hier sind Beispiele für eine Lösungen, die für on-the-fly Schemaänderungen eingesetzt werden können.
+
+
+
+    openark: http://openarkkit.googlecode.com/svn/trunk/openarkkit/doc/html/oak-online-alter-table.html
+
+    SoundCloud Large Hadron Migrator: https://github.com/soundcloud/lhm
+
+    Facebook Online Schema Change for MySQL: https://www.facebook.com/note.php?note_id=430801045932
+
+    TableMigrator: https://github.com/freels/table_migrator
+
+    Percona Toolkit: https://www.percona.com/doc/percona-toolkit/2.1/pt-online-schema-change.html
+
+
+
+"		Task	OpenSpeedMonitor	20/Nov/15 10:31 AM																																																																					

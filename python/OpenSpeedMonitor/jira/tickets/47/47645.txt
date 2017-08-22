@@ -1,0 +1,9 @@
+Manual regression test for Landscape Diagram	"Test major features of the Landscape Diagram *always with the actual trunk*,
+e.g.
+
+* Change Content Elements
+* Change axes elements
+* Filtering (enumeration, text, date, numeric and by related elements)
+* Coloring
+* Border line types
+* Orphans"		New Feature	iteraplan PO	20/Apr/15 5:20 PM	05/May/15 2:06 PM					test																																																															

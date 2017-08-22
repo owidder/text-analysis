@@ -1,0 +1,29 @@
+Filter PCD: cancel button desn't restore previous value in URL	"*Summary:*
+
+Cancel button in PCD diagram filter doesn't restore previous value in URL.
+
+
+
+*Reproduce:*
+
+* Set some filter value in PCD (e.g. ""Accountability is bob"")
+
+* Apply filter
+
+* Open filter again and change value (e.g. change ""bob"" to ""max"")
+
+* Click ""Cancel"" button
+
+* Refresh page and open filter
+
+
+
+*Actual:*
+
+* The value that we cancelled is set in filter (""Accountability is max"")
+
+
+
+*Expected:*
+
+* The value that we applied is set in filter (""Accountability is bob"")"		Bug	iteraplan PO	03/Feb/17 6:41 PM	06/Feb/17 5:18 PM														06/Feb/17 5:18 PM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-344																																																						

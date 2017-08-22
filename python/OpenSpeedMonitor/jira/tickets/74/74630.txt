@@ -1,0 +1,13 @@
+Umstellung CI-Server 	"Der Münchner Bamboo-Server ist sehr leistungsstark und es gibt eine sehr gute Unterstützung/Integration für Jira.
+
+
+
+Wir sollten daher unsere Jenkins-Jobs zu Bamboo migrieren.
+
+Das Ziel soll eine vollständige Ablösung der Jenkins-Build-Pipe durch Bamboo sein.
+
+
+
+Supporten können Rüdiger und Hauke.
+
+Letzterer hat bereits mit einigen Jobs angefangen."		Epic	OpenSpeedMonitor	24/Feb/16 11:40 AM	19/Jan/17 10:22 AM																																																																				

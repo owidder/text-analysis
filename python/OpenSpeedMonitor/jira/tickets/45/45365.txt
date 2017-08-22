@@ -1,0 +1,4 @@
+Create history initialization script for existing installations	"The history functionality is currently only usable if the database is created from the ground up and with historization enabled right from the start.
+For existing installations, we need a solution to initialize the history tables corresponding to the current state of the database.
+
+After that script (or small program) has run, history should be fully usable on that database (as usable as it currently is...)"		New Feature	iteraplan PO	30/Jan/12 6:10 PM	14/Feb/12 1:37 PM					history								MySQL, Oracle	30/Jan/12 7:59 PM;sry;ITERAPLAN-502 is the continuation of history integration activities.																																																						

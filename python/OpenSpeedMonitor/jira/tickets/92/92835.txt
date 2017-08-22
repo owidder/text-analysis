@@ -1,0 +1,82 @@
+Properties files for languaje	"Dear Support,
+
+
+
+I'm going to modify an iteraplan instance for MUC HYP, with two new properties files.
+
+
+
+ApplicationResourcesCustomMucHyp_de.properties
+
+ApplicationResourcesCustomMucHypMM_de.properties
+
+
+
+Could you please confirm to which folder and which files I have to modify?
+
+
+
+Thanks"		Technical question	iteraplan Support	09/Aug/16 12:12 PM	13/Sep/16 7:00 AM														"10/Aug/16 10:23 AM;cst;Dear Sir / Madam,
+
+thank you for your enquiry. 
+
+Both files must be copied in following path:
+
+""....\[Tomcat]\webapps\[iteraplan directory]\WEB-INF\classes\de\iteratec\iteraplan\presentation\resources"".
+
+Greetings, 
+
+Christoph Stangl - iteraplan Support"	"15/Aug/16 7:27 AM;admin@mcongroup.net;Dear Christoph,
+First of all, thanks for your support.
+Could you please confirm me how can I check after restarting the Tomcat if the files I added are having a good behavior insid the application?
+
+Regards,"	"16/Aug/16 8:43 AM;cst;Dear Sir / Madam,
+
+thanks for your Reply.
+
+We updated two names from the Building Block Types in iteraplan.
+Here was standing ""$"" instead of ""&"" in the customized properties. 
+
+When you start iteraplan, the following Building Block Types  ""Applikation"" and ""Technologie""  will be shown correctly.
+
+Greetings, 
+
+Christoph Stangl - iteraplan Support"	16/Aug/16 3:19 PM;admin@mcongroup.net;Thanks for your support	"25/Aug/16 12:53 PM;cst;Dear Sir / Madam, 
+
+
+
+Mr. Metko from the Münchener Hypothekenbank contacted us.
+
+At the moment iteraplan doesnt show the customized Building Block Type Names. 
+
+
+
+Would you please replace the folder ""resources"" with the attached folder on the path
+
+
+
+[^resources.zip]
+
+
+
+""[Tomcat]\webapps[iteraplan directory]\WEB-INF\classes\de\iteratec\iteraplan\presentation\"".
+
+
+
+and restart your tomcat. When iteraplan starts, you see following start screen. 
+
+
+
+!StartScreen.png|thumbnail!
+
+
+
+Greetings,
+
+
+
+Christoph Stangl, iteraplan Support
+
+
+
+"																																																		

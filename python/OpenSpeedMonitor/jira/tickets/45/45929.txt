@@ -1,0 +1,10 @@
+Leave out empty abbeviation table in diagram	"The screenshot shows, as is:
+In info flow, 
+business object labels are abbreviated, and a table with ref. numbers and long names is displayed.
+information sytem labels are not abbreviated, and an empty table is displayed, ie. only the header.
+
+Better:
+
+Do not display empty abbreviation table.
+
+by mail from HWi"		Improvement	iteraplan PO	26/Jul/13 1:52 PM	30/Dec/15 2:53 PM					diagram	visualization																																																														

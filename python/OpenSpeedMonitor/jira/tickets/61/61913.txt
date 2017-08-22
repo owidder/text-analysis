@@ -1,0 +1,35 @@
+JSDoc guidelines	"Create a short set of simple guildelines for JSDoc
+
+* when and where
+
+* which tags
+
+* what content
+
+* what NOT to write in a JSDoc comment
+
+* which option of there are more than one way to write it
+
+
+
+special questions of interest:
+
+* optional parameters with *Type or with [param] in WebStorm, or otherwise?
+
+* closure compiler compatible needed?
+
+* which cases are detected by the type checking of WebStorm?
+
+* ... and of closure?
+
+
+
+Resources
+
+* Closure subset: http://www.cheatography.com/killermonkeys/cheat-sheets/closure-jsdoc/
+
+* good overview: http://mareeba.petrogale.org/wp-content/uploads/sites/2/2013/09/jsdoc_cheat-sheet-v1.pdf
+
+* Reference for JSDoc 3 tool: http://usejsdoc.org/
+
+* Entry point in WebStorm docs: https://www.jetbrains.com/webstorm/help/creating-jsdoc-comments.html"		Task	iteraplan PO	29/Oct/15 3:01 PM	19/Jan/16 4:14 PM														19/Jan/16 4:14 PM;fka;See Wiki page																																																						

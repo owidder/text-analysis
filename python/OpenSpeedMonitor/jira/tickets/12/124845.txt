@@ -1,0 +1,31 @@
+Deleting element from single view without permission	"Steps:
+
+ # Disable DELETE permission for some building block
+
+ # Open single element view of this building block type
+
+ # Press delete icon
+
+
+
+Actual:
+
+
+
+User gets redirected to list view. Element is not deleted.
+
+
+
+Expected:
+
+
+
+Error message is shown the same when deleting some building block from list view.
+
+
+
+User in sot redirected"		Bug	iteraplan PO	20/Jun/17 2:50 PM															"20/Jun/17 6:40 PM;roia;Review: [https://iteraweb.iteratec.de/fisheye/cru/IP-716#CFR-48976]
+
+
+
+ "																																																						

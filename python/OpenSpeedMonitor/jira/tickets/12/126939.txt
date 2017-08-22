@@ -1,0 +1,352 @@
+Nutzung der REST-API bei InformationSystemInterfaces	"Sehr geehrtes iteraplan-Supportteam,
+
+bei der Nutzung der REST-API von iteraplan (in der Corporate Edition 
+
+v5.3.0-r25940) habe ich nach einigem Ausprobieren für drei 
+
+Aufgabenstellungen leider noch keine Lösung gefunden:
+
+
+
+wie benennt man per REST-API (JSON-Format) ein 
+
+InformationSystemInterface um,
+
+ändert die bei einem InformationSystemInterface die Referenz auf ein 
+
+anderes InformationSystem ab oder
+
+legt ein neues InformationSystemInterface an?
+
+
+
+das Ändern von 'normalen' Merkmalen eines InformationSystemInterfaces 
+
+per REST-API ist mir entsprechend den Beispielen im 
+
+iteraplan-Anwenderhandbuch problemlos gelungen, aber mir ist nicht klar, 
+
+wie bei neuen oder zu verändernden Objektbeziehungen zwischen
+
+InformationSystemInterface und den damit verbundenen
+
+InformationSystems
+
+vorzugehen ist (leider kein Beispiel im Anwenderhandbuch):
+
+
+
+ich habe zwei PUT-Versuche unternommen, um bei einem bestehenden 
+
+InformationSystemInterface die Beziehung 'Information System A' von 
+
+einem auf ein anderes Objekt abzuändern
+
+(Anlass: eine zentrale Fachanwendung der LHM wurde auf ein neues Release 
+
+gehoben; alle zum bisherigen Release geknüpften 
+
+Schnittstellen-Beziehungen sollen nun per Script / Rest-API auf das neue 
+
+Release 'umgezogen' werden):
+
+
+
+Beispiel:
+
+bei der Schnittstelle mit Id 5591 soll bei 'Information System A' von 
+
+""Felix-Web # 1"" auf ""Felix-Web # 2"" umkontiert werden:
+
+
+
+1. Versuch über schlichte Umbenennung des Namensfeldes beim InformationSystemInterface selbst:
+
+{
+
+  ""query"": ""InformationSystemInterface[@id\u003d\""5591\""]"",
+
+  ""result"": [
+
+    {
+
+      ""id"": [
+
+        ""5591""
+
+      ],
+
+      ""name"": [
+
+        ""Adressprüfung[Felix-Web # 2,GGD,5591]""
+
+      ]
+
+      ""elementURI"": 
+
+""http://iteraplanp001.srv.ha3.dir.muenchen.de/iteraplan/api/data/InformationSystemInterface/5591""
+
+    }
+
+  ]
+
+}
+
+
+
+2. Über die Änderung der 'InformationFlow'-Beziehung:
+
+{
+
+  ""query"": ""InformationFlow[@id\u003d\""-5591\""]"",
+
+  ""result"": [
+
+    {
+
+      ""id"": [
+
+        ""-5591""
+
+      ]
+
+      ""informationSystemRelease1"": [
+
+        {
+
+          ""id"": ""6263"",
+
+          ""name"": ""Felix-Web # 2"",
+
+          ""elementURI"": 
+
+""http://iteraplanp001.srv.ha3.dir.muenchen.de/iteraplan/api/data/InformationSystem/6263""
+
+        }
+
+      ],
+
+      ""informationSystemRelease2"": [
+
+        {
+
+          ""id"": ""1046"",
+
+          ""name"": ""GGD"",
+
+          ""elementURI"": 
+
+""http://iteraplanp001.srv.ha3.dir.muenchen.de/iteraplan/api/data/InformationSystem/1046""
+
+        }
+
+      ],
+
+      ""informationSystemInterface"": [
+
+        {
+
+          ""id"": ""5591"",
+
+          ""name"": ""Adressprüfung[Felix-Web # 2,GGD,5591]"",
+
+          ""elementURI"": 
+
+""http://iteraplanp001.srv.ha3.dir.muenchen.de/iteraplan/api/data/InformationSystemInterface/5591""
+
+        }
+
+      ],
+
+      ""elementURI"": 
+
+""http://iteraplanp001.srv.ha3.dir.muenchen.de/iteraplan/api/data/InformationFlow/-5591""
+
+    }
+
+  ]
+
+}
+
+
+
+
+
+
+
+beide Versuche führten weder zu einer Fehlermeldung noch zu einer Änderung:
+
+
+
+{
+
+  ""elementURI"": 
+
+""http://iteraplanp001.srv.ha3.dir.muenchen.de/iteraplan/api/data/InformationSystemInterface/5591"",
+
+  ""messages"": [
+
+    ""Following changes were applied:"",
+
+    ""No changes.""
+
+  ]
+
+}
+
+
+
+bzw.
+
+
+
+{
+
+  ""elementURI"": 
+
+""http://iteraplanp001.srv.ha3.dir.muenchen.de/iteraplan/api/data/InformationFlow/-5591"",
+
+  ""messages"": [
+
+    ""Following changes were applied:"",
+
+    ""No changes.""
+
+  ]
+
+}
+
+
+
+
+
+auch eine schlichte Namensänderung der Schnittstelle gelang mir nicht;
+
+
+
+wegen der InformationFlows-Beziehung ist mir auch unklar, was in dem 
+
+POST-Kommando für ein neu anzulegendes InformationSystemInterface angegeben werden 
+
+muss;
+
+
+
+
+
+um einen Tipp zur Problemlösung (evtl. gar einer Erweiterung der 
+
+Beschreibung in Ihrem Anwenderhandbuch bei künftigen Versionen) wäre ich 
+
+Ihnen dankbar und verbleibe mit freundlichen Grüßen,
+
+
+
+-- ********************************************************************
+
+
+
+Stefan Schönauer
+
+IT-Bebauungsplanung
+
+
+
+
+
+Landeshauptstadt München
+
+it@M - Dienstleister für Informations- und Telekommunikationstechnik
+
+
+
+Geschäftsbereich Anwendungen
+
+IT Bebauungsplanung und Anforderungsmanagement
+
+(ITM-A62)
+
+
+
+Büro:          Agnes-Pockels-Bogen 15, Raum I2.100, 80992 München
+
+Postanschrift: Agnes-Pockels-Bogen 21, 80992 München
+
+
+
+Telefon:       +49 89 233-782133
+
+Fax.:          +49 89 233-989-782133
+
+E-Mail:        stefan.schoenauer@muenchen.de
+
+
+
+**************************************************************
+
+(12.07.2017)
+
+"		Technical question	iteraplan Support	12/Jul/17 11:54 AM															"17/Jul/17 3:10 PM;cst;Sehr geehrter Herr Schönauer,
+
+vielen Dank für Ihre Anfrage.
+
+Habe diese zur weiteren Prüfung weiter gegeben, werde Sie hierzu am Mittwoch benachrichtigen.
+
+Vielen Dank und viele Grüße,
+
+Christoph Stangl - iteraplan Support"	"19/Jul/17 2:11 PM;cst;Guten Tag,
+
+nach Absprache mit unseren Entwicklern folgendes Ergebnis: 
+ * Ein Update ist nur über den Informationflow möglich 
+ * Das entscheidende Merkmal ist hier die ID  
+ * Mit Version 5.5. und 6.0 lies sich das ohne weiteres durchführen, sollte dies bei Ihnen immer noch nicht durchführbar sein, empfehlen wir hier ein Update auf Version 5.5, oder 6.0
+
+Hier ein Beispiel mit unseren Demo-Daten:
+
+PUT:
+
+\{
+ ""result"": [
+ \{
+ ""id"": [
+ ""384""
+ ],
+ ""lastModificationUser"": [
+ ""XmiImport""
+ ],
+ ""lastModificationTime"": [
+ ""2017-07-18 16:06:11""
+ ],
+ ""direction"": [
+ ""FIRST_TO_SECOND""
+ ],
+ ""iteraplan_InformationSystemInterfaceID"": [
+ 263
+ ],
+ ""informationSystemRelease2"": [
+ \{
+ ""id"": ""206"",
+ ""name"": ""Callcenter # 3.2"",
+ ""elementURI"": ""http://localhost:8080/iteraplan/api/data/InformationSystem/206""
+ }
+ ],
+ ""informationSystemRelease1"": [
+ \{
+ *""id"": ""211"" (dies ist unsere zu ändernden ID)* 
+ }
+ ],
+ ""informationSystemInterface"": [
+ \{
+ ""id"": ""263"",
+ ""name"": ""Customer Data[CRM # 3.1,Callcenter # 3.2,263]"",
+ ""elementURI"": ""http://localhost:8080/iteraplan/api/data/InformationSystemInterface/263""
+ }
+ ],
+ ""elementURI"": ""http://localhost:8080/iteraplan/api/data/InformationFlow/384""
+ }
+ ]
+}
+
+Viele Grüße,
+
+Christoph Stangl - iteraplan Support "																																																					

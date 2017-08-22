@@ -1,0 +1,4 @@
+technical components - available for Interfaces 	"Checking the box ""Available for interfaces"" ( technical componentes) does not have a effect on filtering the technical components that  are used to implement an interface. 
+
+In the building block interface you can choose technical components. Here are *all*  technical components are shown and not the ones that are ""available für interfaces"".  
+"		Bug	iteraplan PO	05/Sep/14 11:11 AM	11/Sep/14 1:15 PM																																																																				

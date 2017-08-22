@@ -1,0 +1,79 @@
+Push notifications Client side	"*Client*
+
+* The client saves the lastModificationTime global variable (/)
+
+* The client set the lastModificationTime initially with the reply of one of the first GET-requests (e.g. /api/icd) (/)
+
+* The client updates the lastModificationTime with every response of a PUT or POST or DELETE request to api/element/... (/)
+
+* The clients sends its lastModificationTime with every PUT or POST of DELETE request on api/element/... (/)
+
+* The client sends every -30- {color:red}(UPDATE){color} 5 seconds a GET-request with its lastModificationTime as ETag to /api/hasChanges (polling) (/)
+
+** For the answer 304, nothing is done (/)
+
+** For the answer 200, the client displays a modal dialog {color:red}UPDATE:{color}and an icon in the header until the data is refreshed again (/)
+
+* The modal dialog states:
+
+** EN: ""Please refresh your browser window to get updated data"" (/)
+
+** GER: ""Bitte laden Sie Ihr Browserfenster neu, um die aktuellen Daten zu erhalten"" (/)
+
+*** UPDATE: reloading is done via the refresh icon in the shown dialog
+
+* The user can close the dialog with any primary click without any refresh (/)
+
+* {color:red}UPDATE: {color} When the data is outdated, show the angular-material-icon ""update"" in the common header (see attachment). The tooltip for this icon says ""Please refresh"" (GER: ""Bitte neuladen""). Maybe use the headerScope-factory. (/)
+
+* {color:red}UPDATE:{color}After the dialog has been ignored for 3 times, do not display it anymore (/)
+
+* {color:red}UPDATE:{color} Please ensure the new client can handle REST-request *without* an ETag set (/)
+
+
+
+
+
+* polling should only be active if user is authenticated (/)
+
+* ensure it is working the ""built"" productive version (/)
+
+* Add the reload-icon (incl functionality and tooltip) to the modal dialog. (/)
+
+"	91838	Sub-task	iteraplan Thunderduck	28/Jul/16 4:28 PM	14/Feb/17 11:30 AM														08/Feb/17 10:46 AM;mse;Polling should only be active if an user is authenticated.	"08/Feb/17 5:12 PM;msr;In the built version there is actually no dialog shown, but instead you get 3 times the following error:
+
+
+
+actual trunk backend and frontend, clear cached, IE11, Chrome and Firefox:
+
+
+
+{code:java}
+
+Error: An exception occurred: [$injector:unpr] Unknown provider: aProvider <- a
+
+http://errors.angularjs.org/1.5.3/$injector/unpr?p0=aProvider%20%3C-%20a
+
+   at Anonymous function (http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1486504455961.js:20:1446)
+
+   at d (http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1486504455961.js:20:372)
+
+   at Anonymous function (http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1486504455961.js:20:1555)
+
+   at d (http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1486504455961.js:20:372)
+
+   at e (http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1486504455961.js:20:669)
+
+   at h (http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1486504455961.js:20:1069)
+
+   at Anonymous function (http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1486504455961.js:20:26326)
+
+   at Anonymous function (http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1486504455961.js:51:12759)
+
+   at h (http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1486504455961.js:21:15431)
+
+   at Anonymous function (http://iteraplan.iteratec.de:8080/iteraplan-devel/client/js/combinedBower1486504455961.js:21:15613)
+
+{code}
+
+"	10/Feb/17 8:34 AM;mse;Comment after discussion with [~sfe]: When a user logs out, the data are reset but the etag is not. Therefore, the client does notre-load the data when the user logs in again, because the /api/icd/ resource sends a 304 response. Please, reset etag in reset() method of objectsListProcessor in common.js.	10/Feb/17 12:27 PM;feca;@Manuel and I decided to simply take @Stephans solution :)																																																			

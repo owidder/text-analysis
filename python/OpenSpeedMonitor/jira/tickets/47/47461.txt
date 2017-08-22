@@ -1,0 +1,12 @@
+Create configuraiton for type of content element	"Create configuration class
+
+state (now) only type of content element, more later.
+
+read available types from metamodel service provide (simplified) list to menu.
+
+accept actions from context menu
+
+synchronize state with location via query param service
+
+provide  selected types and (hard code paths/types of axes) for data service and item builder
+and coloring to itemdecorator. "		New Feature	iteraplan PO	03/Mar/15 4:55 PM	20/Mar/15 12:55 PM														03/Mar/15 5:32 PM;wfr;overall: 8 to 13	20/Mar/15 12:55 PM;dasm;Verified																																																					

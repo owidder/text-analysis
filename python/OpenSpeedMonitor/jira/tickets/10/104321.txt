@@ -1,0 +1,3 @@
+JobGroup "Persist Detail Data" testen	"Im jetzigen Release ist der Schalter ""Persist Detail Data"" im JobGroup Controller immer auf ""Off"", sogar wenn das Property in der Datenbank auf ""On"" steht.
+
+Wir sollten testen ob dies auch den develop Branch mit bootstrap3 betrifft."	102758	Sub-task	OpenSpeedMonitor	30/Nov/16 10:34 AM	18/Jan/17 10:14 AM																																																																				

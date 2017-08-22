@@ -1,0 +1,17 @@
+Element descriptions are cut in the table	"Summary: description values are cut in data table
+
+
+
+Steps to reproduce:
+
+1) open Masterplan diagram
+
+2) set Information system as level 1
+
+3) add Description column
+
+
+
+Actual result: some descriptions are cut in the bottom of cell (see screenshot)
+
+Expected result: All descriptions are shown correctly, when cell content is bigger then cell - value is shown with ""..."" in the end"		Bug	iteraplan PO	19/Jun/17 2:35 PM															05/Jul/17 9:40 AM;msr;This ticket is blocked by the XWiki-Translation of the tooltips as the tooltips in the Masterplan Diagram have the same source like the additional columns.																																																						

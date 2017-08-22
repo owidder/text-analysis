@@ -1,0 +1,5 @@
+Mattermost plugin auf str-build Jenkins installieren	https://github.com/jenkinsci/mattermost-plugin		Task	Infrastruktur	21/Jun/17 4:44 PM	22/Jun/17 8:51 AM	Sonstiges													"22/Jun/17 8:51 AM;sas;Das ist ein Entwicklungsserver, der von den Entwickler aufgesetzt wurde. Damit haben wir nichts zu tun.
+
+
+
+Gruß/Sami"																																																						

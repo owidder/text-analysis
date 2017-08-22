@@ -1,0 +1,9 @@
+[dc.js Dashboard] Zeitraum-Filter	"Nachdem über die OSM-Dashboard-Standard-Funktion der Zeitraum der insgesamt darzustellenden Daten ausgewählt wurde soll es im dc-Dashboard möglich sein:
+
+
+
+* den Zeitraum der angezeigten Daten einzuschränken
+
+* Diese Auswahl soll interaktiv in einem Diagramm erfolgen können
+
+* Vermutlich macht eine klassifizierte Balkendarstellung Sinn wie in Max IPA"		Task	OpenSpeedMonitor	08/Mar/16 6:32 PM	26/Aug/16 11:52 AM																																																																				

@@ -1,0 +1,13 @@
+Visualizations, legend: Show where color picker can be opened	"Show an icon in legend in color bars, right end, whenever a color picker can be opened, as it is.
+
+
+
+Exclude this icon from exported file, don't show it.
+
+
+
+Suggested icon: 
+
+
+
+!colorpicker-icon.png|width=20,height=20!"		Improvement	iteraplan Speedbird	27/Mar/17 10:19 AM	23/May/17 10:08 AM														22/May/17 6:16 PM;vadm;See review comments https://iteraweb.iteratec.de/fisheye/cru/IP-618	23/May/17 10:01 AM;roia;[~vadm], main issues fixed. crosshair cursor needs to be discussed because it's not in the requirements	23/May/17 10:08 AM;vadm;Review is done https://iteraweb.iteratec.de/fisheye/cru/IP-618																																																				

@@ -1,0 +1,39 @@
+Add more links for IFD and Home Screen	"Add more links to the classic client:
+
+
+
+- from header (classic) to home screen (interactive)
+
+- from IFD classic to IFD interactive
+
+
+
+Switchable as all links in the classic client to the interactive client."		New Feature	iteraplan PO	06/Oct/15 11:00 AM	22/Oct/15 1:17 PM														"19/Oct/15 11:04 AM;lwi;to be clear: there already was a link from IFD classic to IFD interactive. So this has probably already been reviewed. 
+
+
+
+accidently didn't edit my commit-comment on this issue. Sorry! "	"19/Oct/15 11:21 AM;lwi;the link from IFD classic to IFD interactive has already been there and was not added by me (sorry about the commit comment)!
+
+
+
+
+
+added following lines to docs at http://www.iteraplan.de/doc/display/iteraplan51/New+Client:
+
+
+
+Access the new Home Screen over the link ""Switch to interactive client"" which can be found top-right of every page.
+
+Access the new Information Flow Diagram over the link “Visualize in interactive client” in the Information Flow Diagram configuration.
+
+
+
+
+
+
+
+"	"19/Oct/15 4:37 PM;msr;Review-Comment: Can't find link from interactive client to classic client. (revision 1688)
+
+The rest is fine."	20/Oct/15 1:22 PM;lwi;missing link is now implemented	"21/Oct/15 9:10 AM;lwi;please check if Button in classic client home screen works in IE, too!
+
+"	22/Oct/15 1:17 PM;msr;works in IE9 and FF																																																	

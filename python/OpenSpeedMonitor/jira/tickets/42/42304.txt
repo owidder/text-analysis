@@ -1,0 +1,599 @@
+Fehler nach Aktivierung von Messungen	"Nach Aktivierung der Messungen erhalte ich mehrere Fehler, bitte überprüfen ob es auch bei euch auftritt.
+
+
+
+
+
+|Server running. Browse to http://localhost:8080/OpenSpeedMonitor
+
+errors.GrailsExceptionResolver SocketException occurred when processing request: [POST] /OpenSpeedMonitor/job/list
+
+Datenübergabe unterbrochen (broken pipe). Stacktrace follows:
+
+java.net.SocketException: Datenübergabe unterbrochen (broken pipe)
+
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
+
+	at java.io.OutputStreamWriter.write(OutputStreamWriter.java:220)
+
+	at java.io.Writer.write(Writer.java:157)
+
+	at de.iteratec.osm.measurement.schedule.JobController.sendSimpleResponseAsStream(JobController.groovy:334)
+
+	at de.iteratec.osm.measurement.schedule.JobController.getListModel(JobController.groovy:104)
+
+	at de.iteratec.osm.measurement.schedule.JobController.list(JobController.groovy:111)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+
+	at java.lang.Thread.run(Thread.java:745)
+
+errors.GrailsExceptionResolver IllegalStateException occurred when processing request: [POST] /OpenSpeedMonitor/job/list
+
+getOutputStream() has already been called for this response. Stacktrace follows:
+
+org.codehaus.groovy.grails.web.pages.exceptions.GroovyPagesException: Error processing GroovyPageView: getOutputStream() has already been called for this response
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+
+	at java.lang.Thread.run(Thread.java:745)
+
+Caused by: java.lang.IllegalStateException: getOutputStream() has already been called for this response
+
+	... 3 more
+
+[/OpenSpeedMonitor].[grails] Servlet.service() for servlet grails threw exception
+
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+
+	at org.apache.catalina.connector.Response.getWriter(Response.java:636)
+
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:213)
+
+	at javax.servlet.ServletResponseWrapper.getWriter(ServletResponseWrapper.java:104)
+
+	at javax.servlet.ServletResponseWrapper.getWriter(ServletResponseWrapper.java:104)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageResponseWrapper$5.activateDestination(GrailsPageResponseWrapper.java:150)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageResponseWrapper$5.activateDestination(GrailsPageResponseWrapper.java:148)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsRoutablePrintWriter.activateDestination(GrailsRoutablePrintWriter.java:75)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsRoutablePrintWriter.write(GrailsRoutablePrintWriter.java:240)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer$AllocatedBuffer.writeTo(StreamCharBuffer.java:1562)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer.writeToImpl(StreamCharBuffer.java:620)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer.writeTo(StreamCharBuffer.java:611)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer.flushToConnected(StreamCharBuffer.java:989)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer.access$1300(StreamCharBuffer.java:245)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer$StreamCharBufferWriter.flushWriter(StreamCharBuffer.java:1255)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer$StreamCharBufferWriter.flush(StreamCharBuffer.java:1283)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer$StreamCharBufferEncodedAppender.flush(StreamCharBuffer.java:1303)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer.writeTo(StreamCharBuffer.java:601)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer.flushToConnected(StreamCharBuffer.java:989)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer.access$1300(StreamCharBuffer.java:245)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer$StreamCharBufferWriter.flushWriter(StreamCharBuffer.java:1255)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer$StreamCharBufferWriter.flush(StreamCharBuffer.java:1283)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer$StreamCharBufferEncodedAppender.flush(StreamCharBuffer.java:1303)
+
+	at org.codehaus.groovy.grails.support.encoding.EncodedAppenderWriter.flush(EncodedAppenderWriter.java:66)
+
+	at org.codehaus.groovy.grails.web.util.GrailsPrintWriter.flush(GrailsPrintWriter.java:143)
+
+	at org.codehaus.groovy.grails.web.util.GrailsPrintWriter.flush(GrailsPrintWriter.java:143)
+
+	at org.codehaus.groovy.grails.web.pages.GroovyPageOutputStack$GroovyPageProxyWriterGroup.flushActive(GroovyPageOutputStack.java:177)
+
+	at org.codehaus.groovy.grails.web.pages.GroovyPageOutputStack$GroovyPageProxyWriterGroup.activateWriter(GroovyPageOutputStack.java:170)
+
+	at org.codehaus.groovy.grails.web.pages.GroovyPageOutputStack$GroovyPageProxyWriterGroup.reset(GroovyPageOutputStack.java:165)
+
+	at org.codehaus.groovy.grails.web.pages.GroovyPageOutputStack.push(GroovyPageOutputStack.java:260)
+
+	at org.codehaus.groovy.grails.web.pages.GroovyPageOutputStack.currentStack(GroovyPageOutputStack.java:72)
+
+	at org.codehaus.groovy.grails.web.pages.GroovyPage.initRun(GroovyPage.java:216)
+
+	at org.codehaus.groovy.grails.web.pages.GroovyPageWritable.writeTo(GroovyPageWritable.java:187)
+
+	at org.codehaus.groovy.grails.web.servlet.view.GroovyPageView.renderWithTemplateEngine(GroovyPageView.java:149)
+
+	at org.codehaus.groovy.grails.web.servlet.view.GroovyPageView.renderMergedOutputModel(GroovyPageView.java:84)
+
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:264)
+
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1208)
+
+	at org.codehaus.groovy.grails.web.servlet.GrailsDispatcherServlet.doDispatch(GrailsDispatcherServlet.java:426)
+
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:953)
+
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:855)
+
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:829)
+
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:748)
+
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:486)
+
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:411)
+
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:338)
+
+	at org.codehaus.groovy.grails.web.util.WebUtils.forwardRequestForUrlMappingInfo(WebUtils.java:332)
+
+	at org.codehaus.groovy.grails.web.util.WebUtils.forwardRequestForUrlMappingInfo(WebUtils.java:297)
+
+	at org.codehaus.groovy.grails.web.util.WebUtils.forwardRequestForUrlMappingInfo(WebUtils.java:288)
+
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:217)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.executeFilterChainWithWrappedResponse(GrailsPageFilter.java:233)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.obtainContent(GrailsPageFilter.java:208)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.doFilter(GrailsPageFilter.java:153)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+
+	at org.grails.plugin.resource.DevModeSanityFilter.doFilter(DevModeSanityFilter.groovy:45)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:369)
+
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:109)
+
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:97)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:78)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:119)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:187)
+
+	at org.codehaus.groovy.grails.plugins.springsecurity.RequestHolderAuthenticationFilter.doFilter(RequestHolderAuthenticationFilter.java:40)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.codehaus.groovy.grails.plugins.springsecurity.MutableLogoutFilter.doFilter(MutableLogoutFilter.java:79)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:79)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:168)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+
+	at java.lang.Thread.run(Thread.java:745)
+
+[/OpenSpeedMonitor].[default] Servlet.service() for servlet [default] in context with path [/OpenSpeedMonitor] threw exception [Request processing failed; nested exception is org.codehaus.groovy.grails.web.pages.exceptions.GroovyPagesException: Error processing GroovyPageView: getOutputStream() has already been called for this response] with root cause
+
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+
+	at org.apache.catalina.connector.Response.getWriter(Response.java:636)
+
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:213)
+
+	at javax.servlet.ServletResponseWrapper.getWriter(ServletResponseWrapper.java:104)
+
+	at javax.servlet.ServletResponseWrapper.getWriter(ServletResponseWrapper.java:104)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageResponseWrapper$5.activateDestination(GrailsPageResponseWrapper.java:150)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageResponseWrapper$5.activateDestination(GrailsPageResponseWrapper.java:148)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsRoutablePrintWriter.activateDestination(GrailsRoutablePrintWriter.java:75)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsRoutablePrintWriter.write(GrailsRoutablePrintWriter.java:240)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer$AllocatedBuffer.writeTo(StreamCharBuffer.java:1562)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer.writeToImpl(StreamCharBuffer.java:620)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer.writeTo(StreamCharBuffer.java:611)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer.flushToConnected(StreamCharBuffer.java:989)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer.access$1300(StreamCharBuffer.java:245)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer$StreamCharBufferWriter.flushWriter(StreamCharBuffer.java:1255)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer$StreamCharBufferWriter.flush(StreamCharBuffer.java:1283)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer$StreamCharBufferEncodedAppender.flush(StreamCharBuffer.java:1303)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer.writeTo(StreamCharBuffer.java:601)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer.flushToConnected(StreamCharBuffer.java:989)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer.access$1300(StreamCharBuffer.java:245)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer$StreamCharBufferWriter.flushWriter(StreamCharBuffer.java:1255)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer$StreamCharBufferWriter.flush(StreamCharBuffer.java:1283)
+
+	at org.codehaus.groovy.grails.web.util.StreamCharBuffer$StreamCharBufferEncodedAppender.flush(StreamCharBuffer.java:1303)
+
+	at org.codehaus.groovy.grails.support.encoding.EncodedAppenderWriter.flush(EncodedAppenderWriter.java:66)
+
+	at org.codehaus.groovy.grails.web.util.GrailsPrintWriter.flush(GrailsPrintWriter.java:143)
+
+	at org.codehaus.groovy.grails.web.util.GrailsPrintWriter.flush(GrailsPrintWriter.java:143)
+
+	at org.codehaus.groovy.grails.web.pages.GroovyPageOutputStack$GroovyPageProxyWriterGroup.flushActive(GroovyPageOutputStack.java:177)
+
+	at org.codehaus.groovy.grails.web.pages.GroovyPageOutputStack$GroovyPageProxyWriterGroup.activateWriter(GroovyPageOutputStack.java:170)
+
+	at org.codehaus.groovy.grails.web.pages.GroovyPageOutputStack$GroovyPageProxyWriterGroup.reset(GroovyPageOutputStack.java:165)
+
+	at org.codehaus.groovy.grails.web.pages.GroovyPageOutputStack.push(GroovyPageOutputStack.java:260)
+
+	at org.codehaus.groovy.grails.web.pages.GroovyPageOutputStack.currentStack(GroovyPageOutputStack.java:72)
+
+	at org.codehaus.groovy.grails.web.pages.GroovyPage.initRun(GroovyPage.java:216)
+
+	at org.codehaus.groovy.grails.web.pages.GroovyPageWritable.writeTo(GroovyPageWritable.java:187)
+
+	at org.codehaus.groovy.grails.web.servlet.view.GroovyPageView.renderWithTemplateEngine(GroovyPageView.java:149)
+
+	at org.codehaus.groovy.grails.web.servlet.view.GroovyPageView.renderMergedOutputModel(GroovyPageView.java:84)
+
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:264)
+
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1208)
+
+	at org.codehaus.groovy.grails.web.servlet.GrailsDispatcherServlet.doDispatch(GrailsDispatcherServlet.java:426)
+
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:953)
+
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:855)
+
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:829)
+
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:748)
+
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:486)
+
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:411)
+
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:338)
+
+	at org.codehaus.groovy.grails.web.util.WebUtils.forwardRequestForUrlMappingInfo(WebUtils.java:332)
+
+	at org.codehaus.groovy.grails.web.util.WebUtils.forwardRequestForUrlMappingInfo(WebUtils.java:297)
+
+	at org.codehaus.groovy.grails.web.util.WebUtils.forwardRequestForUrlMappingInfo(WebUtils.java:288)
+
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:217)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.executeFilterChainWithWrappedResponse(GrailsPageFilter.java:233)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.obtainContent(GrailsPageFilter.java:208)
+
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.doFilter(GrailsPageFilter.java:153)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+
+	at org.grails.plugin.resource.DevModeSanityFilter.doFilter(DevModeSanityFilter.groovy:45)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:369)
+
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:109)
+
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:97)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:78)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:119)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:187)
+
+	at org.codehaus.groovy.grails.plugins.springsecurity.RequestHolderAuthenticationFilter.doFilter(RequestHolderAuthenticationFilter.java:40)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.codehaus.groovy.grails.plugins.springsecurity.MutableLogoutFilter.doFilter(MutableLogoutFilter.java:79)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:79)
+
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:381)
+
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:168)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+
+	at java.lang.Thread.run(Thread.java:745)
+
+listeners.ExceptionPrinterJobListener Exception occurred in job: Grails Job
+
+org.quartz.JobExecutionException: java.lang.IllegalArgumentException: Unknown name value for enum class de.iteratec.osm.measurement.environment.wptserverproxy.Protocol:  [See nested exception: java.lang.IllegalArgumentException: Unknown name value for enum class de.iteratec.osm.measurement.environment.wptserverproxy.Protocol: ]
+
+	at grails.plugins.quartz.GrailsJobFactory$GrailsJob.execute(GrailsJobFactory.java:111)
+
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+
+Caused by: java.lang.IllegalArgumentException: Unknown name value for enum class de.iteratec.osm.measurement.environment.wptserverproxy.Protocol: 
+
+	at de.iteratec.osm.report.external.MetricReportingService$_reportAllMeasuredValuesFor_closure11.doCall(MetricReportingService.groovy:366)
+
+	at de.iteratec.osm.report.external.MetricReportingService.reportAllMeasuredValuesFor(MetricReportingService.groovy:365)
+
+	at de.iteratec.osm.report.external.MetricReportingService$_reportPageCSIValues_closure6.doCall(MetricReportingService.groovy:287)
+
+	at de.iteratec.osm.report.external.MetricReportingService.reportPageCSIValues(MetricReportingService.groovy:272)
+
+	at de.iteratec.osm.report.external.MetricReportingService.$tt__reportPageCSIValuesOfLastDay(MetricReportingService.groovy:236)
+
+	at de.iteratec.osm.report.external.DailyReportsJob.execute(DailyReportsJob.groovy:45)
+
+	at grails.plugins.quartz.GrailsJobFactory$GrailsJob.execute(GrailsJobFactory.java:104)
+
+	... 2 more
+
+Caused by: java.lang.IllegalArgumentException: No enum constant de.iteratec.osm.measurement.environment.wptserverproxy.Protocol.
+
+	at java.lang.Enum.valueOf(Enum.java:236)
+
+	... 9 more"		Bug	OpenSpeedMonitor	01/Jun/15 10:12 AM	23/May/16 5:39 PM														25/Feb/16 4:55 PM;bka;Ich bekomme den Fehler in der aktuellsten Version nicht. Magst du einmal gucken, ob der Fehler noch aktuell ist?	23/May/16 5:39 PM;bka;Scheint mit einem anderen Bug gefixt worden zu sein.																																																					
