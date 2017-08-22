@@ -1,12 +1,15 @@
 var D3Node = require('d3-node');
 var fs = require('fs');
 var _ = require('lodash');
+var logger = require('tracer').colorConsole();
 
 var vector = require('./vectors');
 var fileNodeDb = require('./fileNodeDb');
 var SimplePromise = require('./SimplePromise');
+var tb = require('./trace');
 
 var Force = function (id, width, height, forceRefresh) {
+    var $ = tb.in("Force");
 
     var tickCtr = 0;
     var d3n = new D3Node();
@@ -22,6 +25,8 @@ var Force = function (id, width, height, forceRefresh) {
         .attr("class", "circles");
 
     function start(_threshold) {
+        var $ = tb.in("start");
+
         threshold = _threshold;
 
         var loaded;
@@ -47,6 +52,7 @@ var Force = function (id, width, height, forceRefresh) {
 
         setTimeout(stop, 6e+5);
 
+        tb.out($);
         return ({
             loaded: loaded
         })
@@ -55,12 +61,19 @@ var Force = function (id, width, height, forceRefresh) {
     var color = d3.scaleOrdinal(d3.schemeCategory20);
 
     function colorForNodeName(name) {
+        var $ = tb.in("colorForNodeName");
+
         var parts = name.split(".");
         var type = parts[parts.length-1];
-        return color(type);
+        var col = color(type);
+
+        tb.out($);
+        return col;
     }
 
     function getDimensions() {
+        var $ = tb.in("getDimensions");
+
         var minX = Number.MAX_VALUE;
         var minY = Number.MAX_VALUE;
         var maxX = -Number.MAX_VALUE;
@@ -81,6 +94,7 @@ var Force = function (id, width, height, forceRefresh) {
             }
         });
 
+        tb.out($);
         return {
             width: maxX - minX,
             height: maxY - minY,
@@ -101,6 +115,8 @@ var Force = function (id, width, height, forceRefresh) {
         .force("center", d3.forceCenter(width/2, height/2));
 
     function startForce() {
+        var $ = tb.in("startForce");
+
         simulation.nodes(nodes)
             .on("tick", ticked);
 
@@ -108,27 +124,44 @@ var Force = function (id, width, height, forceRefresh) {
             .links(links);
 
         simulation.alpha(1).restart();
+
+        tb.out($);
     }
 
     function stop() {
+        var $ = tb.in("stop");
+
         simulation.stop();
         save();
+
+        tb.out($);
     }
 
     function getFileId() {
-        return "t" + String(Math.round(threshold*100));
+        var $ = tb.in("getFileId");
+
+        var ret = "t" + String(Math.round(threshold*100));
+
+        tb.out($);
+        return ret;
     }
 
     function save() {
+        var $ = tb.in("save");
+
         fileNodeDb.save({
             _id: getFileId(),
             threshold: threshold,
             nodes: normalizeNodes(nodes),
             links: links
         });
+
+        tb.out($);
     }
 
     function normalizeNodes(_nodes) {
+        var $ = tb.in("normalizeNodes");
+
         var normalizedNodes = [];
         _nodes.forEach(function (node) {
             var normalizedNode = Object.assign({}, node);
@@ -137,10 +170,13 @@ var Force = function (id, width, height, forceRefresh) {
             normalizedNodes.push(normalizedNode);
         });
 
+        tb.out($);
         return normalizedNodes;
     }
 
     function denormalizeNodes(normalizedNodes) {
+        var $ = tb.in("denormalizeNodes");
+
         var denormalizedNodes = [];
 
         normalizedNodes.forEach(function (normalizedNode) {
@@ -150,10 +186,13 @@ var Force = function (id, width, height, forceRefresh) {
             denormalizedNodes.push(denormalizedNode);
         });
 
+        tb.out($);
         return denormalizedNodes;
     }
 
     function ticked() {
+        var $ = tb.in("ticked");
+
         var dimensions = getDimensions();
         var pinchX = width / dimensions.width;
         var pinchY = height / dimensions.height;
@@ -169,10 +208,14 @@ var Force = function (id, width, height, forceRefresh) {
             });
 
         currentSvg = d3n.svgString();
-        console.log(id + ": " + tickCtr++);
+        logger.log(id + ": " + tickCtr++);
+
+        tb.out($);
     }
 
     function drawNodes() {
+        var $ = tb.in("drawNodes");
+
         var selectionWithData = circlesG.selectAll("circle.node")
             .data(nodes, function (d) {
                 return d.name;
@@ -193,6 +236,8 @@ var Force = function (id, width, height, forceRefresh) {
             });
 
         selectionWithData.exit().remove();
+
+        tb.out($);
     }
 
     this.start = start;
@@ -208,7 +253,9 @@ var Force = function (id, width, height, forceRefresh) {
             nodes: nodes,
             links: fileNodeDb.serializeLinks(links)
         });
-    }
+    };
+
+    tb.out($);
 };
 
 module.exports = Force;
