@@ -30,7 +30,7 @@ function nextSvgChunk(forceId, zipped) {
     if(!forceContext.svgStream) {
         forceContext.svgStream = new Stream(function () {
             return forceContext.force.getSvg();
-        }, 1e+7, zipped);
+        }, 1e+6, zipped);
     }
     return forceContext.svgStream.nextChunk();
 }
@@ -45,7 +45,7 @@ function nextNodesAndLinksChunk(forceId, zipped) {
         forceContext.nodesAndLinksStream = new Stream(function () {
             var nodesAndLinks = forceContext.force.getNodesAndLinks();
             return JSON.stringify(nodesAndLinks);
-        }, 1e+7, zipped);
+        }, 1e+6, zipped);
     }
     return forceContext.nodesAndLinksStream.nextChunk();
 }
