@@ -9,7 +9,7 @@ var SimplePromise = require('./SimplePromise');
 var tb = require('./trace');
 
 var Force = function (id, width, height, forceRefresh) {
-    var $ = tb.in("Force");
+    tb.in();
 
     var tickCtr = 0;
     var d3n = new D3Node();
@@ -52,7 +52,7 @@ var Force = function (id, width, height, forceRefresh) {
 
         setTimeout(stop, 6e+5);
 
-        tb.out($);
+        tb.out();
         return ({
             loaded: loaded
         })
@@ -61,18 +61,15 @@ var Force = function (id, width, height, forceRefresh) {
     var color = d3.scaleOrdinal(d3.schemeCategory20);
 
     function colorForNodeName(name) {
-        var $ = tb.in("colorForNodeName");
-
         var parts = name.split(".");
         var type = parts[parts.length-1];
         var col = color(type);
 
-        tb.out($);
         return col;
     }
 
     function getDimensions() {
-        var $ = tb.in("getDimensions");
+        tb.in();
 
         var minX = Number.MAX_VALUE;
         var minY = Number.MAX_VALUE;
@@ -94,7 +91,7 @@ var Force = function (id, width, height, forceRefresh) {
             }
         });
 
-        tb.out($);
+        tb.out();
         return {
             width: maxX - minX,
             height: maxY - minY,
@@ -115,7 +112,7 @@ var Force = function (id, width, height, forceRefresh) {
         .force("center", d3.forceCenter(width/2, height/2));
 
     function startForce() {
-        var $ = tb.in("startForce");
+        tb.in();
 
         simulation.nodes(nodes)
             .on("tick", ticked);
@@ -125,29 +122,29 @@ var Force = function (id, width, height, forceRefresh) {
 
         simulation.alpha(1).restart();
 
-        tb.out($);
+        tb.out();
     }
 
     function stop() {
-        var $ = tb.in("stop");
+        tb.in();
 
         simulation.stop();
         save();
 
-        tb.out($);
+        tb.out();
     }
 
     function getFileId() {
-        var $ = tb.in("getFileId");
+        tb.in();
 
         var ret = "t" + String(Math.round(threshold*100));
 
-        tb.out($);
+        tb.out();
         return ret;
     }
 
     function save() {
-        var $ = tb.in("save");
+        tb.in();
 
         fileNodeDb.save({
             _id: getFileId(),
@@ -156,11 +153,11 @@ var Force = function (id, width, height, forceRefresh) {
             links: links
         });
 
-        tb.out($);
+        tb.out();
     }
 
     function normalizeNodes(_nodes) {
-        var $ = tb.in("normalizeNodes");
+        tb.in();
 
         var normalizedNodes = [];
         _nodes.forEach(function (node) {
@@ -170,12 +167,12 @@ var Force = function (id, width, height, forceRefresh) {
             normalizedNodes.push(normalizedNode);
         });
 
-        tb.out($);
+        tb.out();
         return normalizedNodes;
     }
 
     function denormalizeNodes(normalizedNodes) {
-        var $ = tb.in("denormalizeNodes");
+        tb.in();
 
         var denormalizedNodes = [];
 
@@ -186,12 +183,12 @@ var Force = function (id, width, height, forceRefresh) {
             denormalizedNodes.push(denormalizedNode);
         });
 
-        tb.out($);
+        tb.out();
         return denormalizedNodes;
     }
 
     function ticked() {
-        var $ = tb.in("ticked");
+        tb.in();
 
         var dimensions = getDimensions();
         var pinchX = width / dimensions.width;
@@ -210,11 +207,11 @@ var Force = function (id, width, height, forceRefresh) {
         currentSvg = d3n.svgString();
         logger.log(id + ": " + tickCtr++);
 
-        tb.out($);
+        tb.out();
     }
 
     function drawNodes() {
-        var $ = tb.in("drawNodes");
+        tb.in();
 
         var selectionWithData = circlesG.selectAll("circle.node")
             .data(nodes, function (d) {
@@ -237,7 +234,7 @@ var Force = function (id, width, height, forceRefresh) {
 
         selectionWithData.exit().remove();
 
-        tb.out($);
+        tb.out();
     }
 
     this.start = start;
@@ -255,7 +252,7 @@ var Force = function (id, width, height, forceRefresh) {
         });
     };
 
-    tb.out($);
+    tb.out();
 };
 
 module.exports = Force;

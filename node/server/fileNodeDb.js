@@ -8,13 +8,13 @@ var tb = require('./trace');
 var PATH = "./osm";
 
 function prepare() {
-    var $ = tb.in("fileNodeDb.prepare");
+    tb.in();
 
     if(!fs.existsSync(PATH)) {
         fs.mkdirSync(PATH);
     }
 
-    tb.out($);
+    tb.out();
 }
 
 function getDbPath(id) {
@@ -22,7 +22,7 @@ function getDbPath(id) {
 }
 
 function serializeLinks(links) {
-    var $ = tb.in("fileNodeDb.serializeLinks");
+    tb.in();
 
     var serializedLinks = links.map(function (link) {
         return ({
@@ -33,12 +33,12 @@ function serializeLinks(links) {
         })
     });
 
-    tb.out($);
+    tb.out();
     return serializedLinks;
 }
 
 function deserializeLinks(serializedLinks, nodes) {
-    var $ = tb.in("fileNodeDb.deserializeLinks");
+    tb.in();
 
     var deserializedLinks = serializedLinks.map(function (serializedLink) {
         return ({
@@ -49,12 +49,12 @@ function deserializeLinks(serializedLinks, nodes) {
         })
     });
 
-    tb.out($);
+    tb.out();
     return deserializedLinks;
 }
 
 function prepareNodes(nodes) {
-    var $ = tb.in("fileNodeDb.prepareNodes");
+    tb.in();
 
     var preparedNodes = nodes.map(function (node) {
         return ({
@@ -66,12 +66,12 @@ function prepareNodes(nodes) {
         })
     });
 
-    tb.out($);
+    tb.out();
     return preparedNodes;
 }
 
 function save(nodesLinksObj) {
-    var $ = tb.in("fileNodeDb.save");
+    tb.in();
 
     var preparedNodes = prepareNodes(nodesLinksObj.nodes);
     var serializedLinks = serializeLinks(nodesLinksObj.links);
@@ -84,11 +84,11 @@ function save(nodesLinksObj) {
     var dbPath = getDbPath(nodesLinksObj._id);
     fs.writeFileSync(dbPath, clob);
 
-    tb.out($);
+    tb.out();
 }
 
 function load(id) {
-    var $ = tb.in("fileNodeDb.load");
+    tb.in();
 
     var dbPath = getDbPath(id);
     var clob = fs.readFileSync(dbPath);
@@ -96,7 +96,7 @@ function load(id) {
     var nl = JSON.parse(clob);
     var deserializedLinks = deserializeLinks(nl.links, nl.nodes);
 
-    tb.out($);
+    tb.out();
 
     return {
         nodes: nl.nodes,
@@ -105,12 +105,12 @@ function load(id) {
 }
 
 function exist(id) {
-    var $ = tb.in("fileNodeDb.exist");
+    tb.in("fileNodeDb.exist");
 
     var dbPath = getDbPath(id);
     var _exist = fs.existsSync(dbPath);
 
-    tb.out($);
+    tb.out();
 
     return _exist;
 }

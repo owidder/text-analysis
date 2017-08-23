@@ -1,9 +1,12 @@
 var _ = require('lodash');
 var zlib = require('zlib');
 
+var tb = require('./trace');
+
 var DEFAULT_CHUNK_SIZE = 100000;
 
 function Stream(getContentFunc, chunkSize, zipped) {
+    tb.in();
     if(!chunkSize) {
         chunkSize = DEFAULT_CHUNK_SIZE;
     }
@@ -12,6 +15,7 @@ function Stream(getContentFunc, chunkSize, zipped) {
     var offset;
 
     function nextChunk() {
+        tb.in();
 
         if(_.isEmpty(content)) {
             content = getContentFunc();
@@ -34,12 +38,14 @@ function Stream(getContentFunc, chunkSize, zipped) {
         }
 
         if(zipped) {
+            tb.out();
             return {
                 zippedChunk: zlib.gzipSync(chunk).toString('base64'),
                 last: last
             };
         }
         else {
+            tb.out();
             return {
                 unzippedChunk: chunk,
                 last: last
@@ -49,6 +55,8 @@ function Stream(getContentFunc, chunkSize, zipped) {
     }
 
     this.nextChunk = nextChunk;
+
+    tb.out();
 }
 
 module.exports = Stream;

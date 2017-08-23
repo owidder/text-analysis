@@ -8,6 +8,7 @@ var app = express();
 var fs = require('fs');
 var _ = require('lodash');
 var zlib = require('zlib');
+var logger = require('tracer').colorConsole();
 
 var lsiIndex = require('./server/lsiIndex');
 var vector = require('./server/vectors');
@@ -193,7 +194,7 @@ router.get('/getSvg/*', function (req, res) {
 });
 
 router.get('/nextSvgChunk/*', function (req, res) {
-    var $ = tb.in("server.nextSvgChunk");
+    var $ = tb.in("nextSvgChunk");
 
     var forceId = req.originalUrl.substr("/api/nextSvgChunk".length + 1);
     var chunkObj = forceMgr.nextSvgChunk(forceId, true);
@@ -210,7 +211,7 @@ router.get('/getNodesAndLinks/*', function (req, res) {
 });
 
 router.get('/nextNodesAndLinksChunk/*', function (req, res) {
-    var $ = tb.in("server.nextNodesAndLinksChunk");
+    var $ = tb.in("nextNodesAndLinksChunk");
 
     var forceId = req.originalUrl.substr("/api/nextNodesAndLinksChunk".length + 1);
     var chunkObj = forceMgr.nextNodesAndLinksChunk(forceId, true);

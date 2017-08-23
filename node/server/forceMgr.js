@@ -1,9 +1,12 @@
 var Force = require('./Force');
 var Stream = require('./Stream');
+var tb = require('./trace');
 
 var forceContextArray = [];
 
 function start(width, height, threshold, forceRefresh) {
+    tb.in();
+
     var forceId = forceContextArray.length;
     var force = new Force(forceId, width, height, forceRefresh);
     var startResult = force.start(threshold);
@@ -15,6 +18,7 @@ function start(width, height, threshold, forceRefresh) {
         remove(forceId);
     }, 3600e+3);
 
+    tb.out();
     return {
         id: forceId,
         loaded: startResult.loaded
@@ -22,24 +26,41 @@ function start(width, height, threshold, forceRefresh) {
 }
 
 function getSvg(forceId) {
-    return forceContextArray[forceId].force.getSvg();
+    tb.in();
+
+    var svg = forceContextArray[forceId].force.getSvg();
+
+    tb.out();
+    return svg;
 }
 
 function nextSvgChunk(forceId, zipped) {
+    tb.in();
+
     var forceContext = forceContextArray[forceId];
     if(!forceContext.svgStream) {
         forceContext.svgStream = new Stream(function () {
             return forceContext.force.getSvg();
         }, 1e+6, zipped);
     }
-    return forceContext.svgStream.nextChunk();
+    var nextChunk = forceContext.svgStream.nextChunk();
+
+    tb.out();
+    return nextChunk;
 }
 
 function getNodesAndLinks(forceId) {
-    return forceContextArray[Number(forceId)].getNodesAndLinks();
+    tb.in();
+
+    var nodesAndLinks = forceContextArray[Number(forceId)].getNodesAndLinks();
+
+    tb.out();
+    return nodesAndLinks;
 }
 
 function nextNodesAndLinksChunk(forceId, zipped) {
+    tb.in();
+
     var forceContext = forceContextArray[forceId];
     if(!forceContext.nodesAndLinksStream) {
         forceContext.nodesAndLinksStream = new Stream(function () {
@@ -47,15 +68,26 @@ function nextNodesAndLinksChunk(forceId, zipped) {
             return JSON.stringify(nodesAndLinks);
         }, 1e+6, zipped);
     }
-    return forceContext.nodesAndLinksStream.nextChunk();
+    var nextChunk = forceContext.nodesAndLinksStream.nextChunk();
+
+    tb.out();
+    return nextChunk;
 }
 
 function stop(forceId) {
-    return forceContextArray[forceId].force.stop();
+    tb.in();
+    var ret = forceContextArray[forceId].force.stop();
+
+    tb.out();
+    return ret;
 }
 
 function remove(forceId) {
+    tb.in();
+
     forceContextArray[forceId] = undefined;
+
+    tb.out();
 }
 
 module.exports = {
