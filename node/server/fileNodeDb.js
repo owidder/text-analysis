@@ -1,6 +1,7 @@
 var fs = require('fs');
 var os = require('os');
 var path = require('path');
+var logger = require('tracer').colorConsole();
 
 var SimplePromise = require('./SimplePromise');
 var tb = require('./trace');
@@ -91,6 +92,7 @@ function load(id) {
     tb.in();
 
     var dbPath = getDbPath(id);
+    logger.info("dbPath: " + dbPath);
     var clob = fs.readFileSync(dbPath);
 
     var nl = JSON.parse(clob);
