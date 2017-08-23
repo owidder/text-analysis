@@ -12,7 +12,7 @@ var zlib = require('zlib');
 var lsiIndex = require('./server/lsiIndex');
 var vector = require('./server/vectors');
 var forceMgr = require('./server/forceMgr');
-var tb = require('./trace');
+var tb = require('./server/trace');
 
 var router = express.Router();
 
@@ -193,9 +193,13 @@ router.get('/getSvg/*', function (req, res) {
 });
 
 router.get('/nextSvgChunk/*', function (req, res) {
+    var $ = tb.in("server.nextSvgChunk");
+
     var forceId = req.originalUrl.substr("/api/nextSvgChunk".length + 1);
     var chunkObj = forceMgr.nextSvgChunk(forceId, true);
     res.json(chunkObj);
+
+    tb.out($);
 });
 
 router.get('/getNodesAndLinks/*', function (req, res) {
