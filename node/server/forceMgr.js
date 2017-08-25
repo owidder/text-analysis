@@ -66,7 +66,7 @@ function nextNodesAndLinksChunk(forceId, zipped) {
         forceContext.nodesAndLinksStream = new Stream(function () {
             var nodesAndLinks = forceContext.force.getNodesAndLinks();
             return JSON.stringify(nodesAndLinks);
-        }, 1e+6, zipped);
+        }, 1e+7, zipped);
     }
     var nextChunk = forceContext.nodesAndLinksStream.nextChunk();
 
