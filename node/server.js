@@ -28,7 +28,7 @@ var ignoreList;
 
 var SUMMARY_FILENAME = '_.csv';
 var FAKE_SUMMARY_FILENAME = '_SUMMARY_';
-var VALUE_FILE_SUFFIX = '.utf8.csv';
+var VALUE_FILE_SUFFIX = '.tfidf.csv';
 
 function isSummaryFile(filename) {
     return filename == SUMMARY_FILENAME;
